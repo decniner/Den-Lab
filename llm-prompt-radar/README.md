@@ -1,6 +1,6 @@
 # LLM Prompt Radar
 
-A daily Telegram digest that discovers up to five public LLM prompts, ranks them with visible evidence, and sends fewer when candidates do not meet the quality threshold. The scheduled GitHub Actions workflow runs at 10:00 UTC (19:00 Japan time) and reuses this repository's `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` secrets.
+A daily Telegram digest that discovers up to five public LLM prompts, ranks them with visible source evidence, and sends fewer when candidates do not meet the quality threshold. The scheduled GitHub Actions workflow runs at 01:00 UTC (10:00 Japan time) and reuses this repository's `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` secrets. Run **Actions → LLM Prompt Radar → Run workflow** and select **Send a Telegram test message** to test Telegram without querying sources or changing history.
 
 ## Sources and access
 
@@ -15,7 +15,7 @@ The `SourceAdapter` interface in `radar.py` keeps sources independent. Add sourc
 
 ## Ranking
 
-Each metric is normalized **within its source** so raw Reddit votes are never compared directly with GitHub stars. For engagement and trend, the candidate's percentile rank among that source's candidates is used (ties receive their average rank; a one-item source receives 0.5). The raw count is transformed with `ln(1 + x)` before ranking to reduce the effect of outliers.
+Each metric is normalized **within its source** so raw Reddit votes are never compared directly with GitHub stars. For engagement and trend, the candidate's percentile rank among that source's candidates is used (ties receive their average rank; a one-item source receives 0.5). The rank is multiplied by a log-volume factor, `min(1, ln(1+x)/ln(101))` for engagement and `min(1, ln(1+velocity)/ln(11))` for trend. This avoids granting a neutral half-score to an isolated low-activity candidate. The raw metric is transformed with `ln(1 + x)` before ranking to reduce the effect of outliers.
 
 Default score (weights can be overridden with the Actions variable `RADAR_WEIGHTS`, a JSON object):
 
@@ -33,9 +33,8 @@ score = 0.30 × engagement_percentile
 - **Recency:** `exp(−age_days / 45)`, a 45-day decay constant (the score is 0.368 at 45 days; its half-life is about 31 days).
 - **Usefulness:** A transparent 0–1 heuristic rewards structured instructions, examples, constraints/checklists, practical domain cues, and a usable prompt length. It is not an LLM judgment or a substitute for reader review.
 - **Confidence:** A descriptive evidence-volume label based on engagement count (High ≥500, Medium ≥80, otherwise Low). It is not a statistical probability.
-- **Independent corroboration:** Exact/near copies are clustered first. Two or more distinct source adapters referencing one cluster add up to 0.02 per extra source, capped at 0.04. Reposts within one source never count as separate sources. This small bonus is added after the weighted score.
 
-The default quality floor is `0.48` (`RADAR_MIN_SCORE`). The selector returns no more than five, caps any one source at three, and prefers no more than two prompts in a category. A third or later prompt in a category must score at least `0.85`, so a strong category is not mechanically excluded. It never lowers the floor to fill the digest. Adjust the floor using the Actions variable `RADAR_MIN_SCORE`. The score is a triage aid, not an objective measure of prompt quality. Reddit posts with an extreme score and almost no comments, or very high score in under an hour, receive a 75% multiplier reduction to both engagement and trend metrics and Low confidence. This simple anomaly check can miss coordinated activity or penalize legitimate viral posts.
+The default quality floor is `0.48` (`RADAR_MIN_SCORE`). The selector returns no more than five, caps any one source at three, and prefers no more than two prompts in a category. A third or later prompt in a category must score at least `0.85`, so a strong category is not mechanically excluded. It never lowers the floor to fill the digest. Adjust the floor using the Actions variable `RADAR_MIN_SCORE`. The score is a triage aid, not an objective measure of prompt quality. Duplicate sightings are shown as source links but never treated as independent validation: the available adapters do not reliably distinguish independent discussion from copied reposts. Reddit posts with an extreme score and almost no comments, or very high score in under an hour, receive a 75% multiplier reduction to both engagement and trend metrics and Low confidence. This simple anomaly check can miss coordinated activity or penalize legitimate viral posts.
 
 ## Safety, quality filters, and duplicate detection
 
@@ -45,19 +44,29 @@ Prompts are normalized to lowercase alphanumeric tokens with common filler and g
 
 ## Prompt text, attribution, and output
 
-The digest includes title, extracted prompt text when found, original source link, creator when available, target model when stated, inferred category, publication/discovery date, available engagement/review metrics, independent source links, selection rationale, score, and confidence. GitHub prompt extraction looks for substantial Markdown blocks under prompt-related headings, then falls back to substantial fenced blocks. Reddit uses the public post body. Extraction can miss prompts in unusual formats. No generated model claim is made when target model information is absent. A target-model name is inferred from text with a conservative pattern matcher; it may miss or misread mentions.
+The digest includes title, extracted prompt text when found (up to 10,000 characters), original source link, creator when available, target model when stated, inferred category, publication/discovery date, available engagement/review metrics, duplicate sightings, selection rationale, score, and confidence. Identical prompt sightings from different sites are not counted as independent validation because the adapters do not establish whether they are copied. GitHub prompt extraction looks for substantial Markdown blocks under prompt-related headings, then falls back to substantial fenced blocks. Reddit uses the public post body. Extraction can miss prompts in unusual formats. No generated model claim is made when target model information is absent. A target-model name is inferred from the title/prompt text with a conservative pattern matcher; it may miss or misread mentions.
 
-The sender splits long Telegram messages into safe-sized chunks. The digest explicitly says when fewer than five prompts pass the threshold and lists per-source candidate counts or access failures.
+The sender splits long Telegram messages into safe-sized chunks. The digest explicitly says when fewer prompts are selected by the score, repeat-suppression, and diversity rules, and lists per-source candidate counts or access failures. Trending themes are reported only from that day's selected prompts and appear at the end of the digest.
 
 ## Setup and operation
 
 1. Ensure `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` are configured in repository Actions secrets (the Netflix notifier already uses these names).
-2. Optionally register an authorized Reddit API app and add `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET`. Without these, Reddit is skipped; there is no unauthenticated `.json` fallback.
-3. Open **Actions → LLM Prompt Radar** to run it manually. Scheduled runs happen daily at 10:00 UTC.
-4. Optional repository Actions variables: `RADAR_MIN_SCORE` (default `0.48`) and `RADAR_WEIGHTS` (JSON, for example `{"engagement":0.3,"trending":0.25,"positive":0.2,"recency":0.15,"usefulness":0.1}`). Weights are normalized to sum to 1.
+2. Optionally register an authorized Reddit API app and add `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET`. Without these, Reddit is reported as skipped; there is no unauthenticated `.json` fallback.
+3. Open **Actions → LLM Prompt Radar** to run it manually, or select the test-message input to check Telegram without discovery/history changes. Scheduled runs happen daily at 10:00 Japan time (01:00 UTC).
+4. Optional repository Actions variables: `RADAR_MIN_SCORE` (default `0.48`), `RADAR_MAX_PROMPTS` (default `5`), `RADAR_SOURCES` (comma-separated source names), and `RADAR_WEIGHTS` (JSON, for example `{"engagement":0.3,"trending":0.25,"positive":0.2,"recency":0.15,"usefulness":0.1}`). Weights are normalized to sum to 1.
 
 ## Historical tracking
 
-`history.json` stores accepted candidates by source plus normalized-prompt hash, including normalized text, cluster ID, source URL, author, discovery and publication dates, category, model, latest metrics, rating/count, calculated/trending/quality scores, notification date, and timestamped engagement observations. Observations are retained for 90 days; records and notification suppression are retained for up to 365 days after last seen. Sensitive or quality-rejected content is deliberately not persisted. The workflow writes history only after Telegram accepts the digest, then commits only this project's history file. This gives at-least-once behavior if Telegram succeeds but the subsequent Git push fails.
+`history.json` stores accepted candidates by source plus normalized-prompt hash, including normalized text, cluster ID, source URL, author, discovery and publication dates, category, model, latest metrics, rating/count, calculated/trending/quality scores, notification date, and timestamped engagement observations. Observations are retained for 90 days; unnotified discovery records are retained for 365 days. Notification cluster IDs and their normalized text are retained indefinitely to prevent routine repeats. A prompt can resurface only after at least seven days and only if one source shows at least `max(100, 50% of notified engagement)` additional interactions, its recent rate is at least 3× its prior measured rate, and its current score is at least 0.85. This explicit rule is labeled in the message; the notification baseline resets after resurfacing. Sensitive or quality-rejected content is deliberately not persisted. The workflow records selections and baselines in memory before sending, writes history after Telegram accepts the digest, then commits only this project's history file. This gives at-least-once behavior if Telegram succeeds but the subsequent Git push fails.
 
-The workflow is separate from the Netflix notifier, uses GitHub-hosted Actions and the existing Telegram secrets, and writes only `llm-prompt-radar/history.json`. Never commit API credentials.
+## Configuration
+
+- Notification time: edit the workflow's `schedule.cron` (currently `0 1 * * *`, 10:00 JST). GitHub Actions cron syntax is UTC and must be configured in the workflow file.
+- Prompt count: Actions variable `RADAR_MAX_PROMPTS` (default `5`, range 1–10).
+- Minimum composite score: `RADAR_MIN_SCORE` (default `0.48`).
+- Ranking weights: `RADAR_WEIGHTS`, JSON such as `{"engagement":0.3,"trending":0.25,"positive":0.2,"recency":0.15,"usefulness":0.1}`.
+- Enabled sources: `RADAR_SOURCES`, comma-separated `github,reddit` (default both; Reddit still needs OAuth secrets).
+- Telegram destination: existing `TELEGRAM_CHAT_ID`, optionally overridden with secret `RADAR_TELEGRAM_CHAT_ID`; token remains `TELEGRAM_BOT_TOKEN`.
+- LLM provider/model: none. Discovery, analysis, quality explanations, and themes use deterministic code; no LLM is called, so no provider key is needed and popularity facts cannot be model-generated.
+
+Telegram uses plain text without Markdown/HTML parsing, strips control and bidirectional formatting characters, neutralizes embedded prompt URLs, and caps messages into safe UTF-16 sized chunks. Source text is never used as a shell command or configuration value. The workflow is separate from the Netflix notifier, uses GitHub-hosted Actions and the existing Telegram secrets, and writes only `llm-prompt-radar/history.json`. Never commit API credentials.

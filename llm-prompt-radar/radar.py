@@ -9,12 +9,13 @@ import json
 import math
 import os
 import re
+import statistics
 import sys
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
 
 
@@ -22,13 +23,19 @@ API = "https://api.github.com"
 NOW = datetime.now(timezone.utc)
 WEIGHTS = {"engagement": .30, "trending": .25, "positive": .20, "recency": .15, "usefulness": .10}
 try:
-    MIN_SCORE = max(0.0, min(1.0, float(os.getenv("RADAR_MIN_SCORE", ".48"))))
+    _minimum = float(os.getenv("RADAR_MIN_SCORE", ".48"))
+    MIN_SCORE = max(0.0, min(1.0, _minimum)) if math.isfinite(_minimum) else .48
 except ValueError:
-MIN_SCORE = .48
-MAX_PROMPT_CHARS = 3500
+    MIN_SCORE = .48
+try:
+    MAX_PROMPTS = max(1, min(10, int(os.getenv("RADAR_MAX_PROMPTS", "5"))))
+except ValueError:
+    MAX_PROMPTS = 5
+MAX_PROMPT_CHARS = 10000
 HISTORY_PATH = Path(__file__).with_name("history.json")
 HISTORY_DAYS = 365
 SNAPSHOT_DAYS = 90
+HISTORY_NORMALIZED_CHARS = 3000
 UA = "Den-Lab-LLM-Prompt-Radar/1.0 (daily personal digest)"
 
 
@@ -55,9 +62,10 @@ class Candidate:
     unique_id: str = ""
     cluster_id: str = ""
     normalized: str = ""
-    corroborating_sources: list[str] = field(default_factory=list)
-    corroborating_urls: list[str] = field(default_factory=list)
+    sighting_sources: list[str] = field(default_factory=list)
+    sighting_urls: list[str] = field(default_factory=list)
     quality_score: float = 0.0
+    resurface_reason: str = ""
 
 
 class SourceAdapter:
@@ -116,7 +124,7 @@ def category_for(text: str) -> str:
             ("Learning", ("learn", "tutor", "education", "study")),
             ("AI Agents", ("agent", "tool use", "function call", "multi-agent")),
             ("Automation", ("automation", "workflow", "automate")),
-            ("Productivity", ("productivity", "planning", "meeting", "business")),
+            ("Productivity", ("productivity", "planning", "meeting", "time management")),
             ("Business", ("business", "marketing", "sales", "strategy", "customer")),
             ("Image Generation", ("image", "visual", "art", "midjourney", "stable diffusion")),
             ("Creative Work", ("creative", "story", "fiction", "poem", "brainstorm")))
@@ -149,21 +157,27 @@ def useful_score(title: str, prompt: str, readme: str) -> float:
 SECRET_PATTERNS = (
     r"\bsk-[A-Za-z0-9_-]{16,}\b", r"\bgh[pousr]_[A-Za-z0-9]{20,}\b",
     r"\bgithub_pat_[A-Za-z0-9_]{20,}\b", r"\bxox[baprs]-[A-Za-z0-9-]{15,}\b",
-    r"\bAKIA[0-9A-Z]{16}\b", r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----",
+    r"\bAKIA[0-9A-Z]{16}\b", r"\bAIza[0-9A-Za-z_-]{30,}\b", r"\bglpat-[A-Za-z0-9_-]{20,}\b",
+    r"\b\d{8,12}:[A-Za-z0-9_-]{30,}\b", r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----",
     r"(?i)\b(?:password|passwd|api[_ -]?key|secret|token)\s*[:=]\s*['\"]?\S{8,}",
+    r"(?:APIキー|パスワード|アクセストークン)\s*[:=：]\s*\S{8,}",
 )
 PII_PATTERNS = (
     r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b",
     r"(?<!\d)(?:\+?\d[ .()-]?){9,15}(?!\d)",
     r"\b\d{3}-\d{2}-\d{4}\b",
+    r"〒?\d{3}-\d{4}",
 )
 HARMFUL_PATTERNS = (
     r"\b(?:jailbreak|DAN mode|ignore (?:all )?(?:previous|safety) instructions|bypass (?:the )?(?:safety|safeguards|policy)|disable (?:safety|guardrails)|reveal (?:the )?system prompt)\b",
+    r"\b(?:steal credentials|exfiltrate secrets|deploy ransomware|write a keylogger|phishing kit|evade antivirus|bypass endpoint detection)\b",
+    r"(?:前の指示を無視|すべての指示を無視|安全対策を回避|制限を解除|システムプロンプトを表示|内部指示を開示|認証情報を盗|秘密を流出)",
 )
 SPAM_PATTERNS = (
     r"\b(?:affiliate link|use my (?:link|code)|buy my prompt|limited time offer|guaranteed passive income)\b",
     r"\b(?:like and subscribe|smash that like|follow me for more prompts|giveaway)\b",
     r"https?://[^\s]*(?:aff(?:iliate)?|ref=|partner=)[^\s]*",
+    r"(?:アフィリエイトリンク|今すぐ購入|限定オファー|フォローして.*(?:いいね|登録))",
 )
 GENERIC_ROLE = re.compile(r"\b(?:act as|you are)\s+(?:an?\s+)?(?:expert|professional|specialist|consultant|assistant)\b", re.I)
 TECHNIQUE = re.compile(r"\b(?:step[- ]by[- ]step|few[- ]shot|chain of thought|tree of thought|rubric|schema|JSON|checklist|counterexample|verify|constraints?|assumptions?|evaluation criteria|ask me clarifying questions|cite sources)\b", re.I)
@@ -254,8 +268,9 @@ class GitHubAdapter(SourceAdapter):
                 published=parse_time(repo.get("updated_at")), prompt=prompt, engagement=stars,
                 velocity=stars / max(24.0, age_days * 24), positive_ratio=None, rating_count=0,
                 usefulness=useful_score(title, prompt, readme), category=category_for(title + " " + prompt),
-                model=model_for(title + " " + prompt + " " + readme), license_name=license_name,
+                model=model_for(title + " " + prompt), license_name=license_name,
                 signals={"stars": stars, "stars_per_day_since_repo_creation": round(stars / age_days, 3),
+                         "engagement_components": {"stars": stars},
                          "repository": full_name, "license": license_name or "not declared",
                          "age_hours": round(age_days * 24, 1),
                          "date_basis": "repository last updated; exact prompt publication date unavailable"},
@@ -308,6 +323,7 @@ class RedditAdapter(SourceAdapter):
                     category=category_for(title + " " + body), model=model_for(title + " " + body),
                     signals={"upvotes_score": score, "comments": comments,
                              "upvote_ratio": up_ratio, "age_hours": round(age_hours, 1),
+                             "engagement_components": {"post_score": score, "comments": comments},
                              "suspicious_engagement_pattern": suspicious_engagement},
                 ))
         return candidates
@@ -317,7 +333,7 @@ STOP_WORDS = set("a an and are as at be by for from in is it of on or that the t
 
 
 def normalized_prompt(text: str) -> str:
-    words = re.findall(r"[a-z0-9]+", text.lower())
+    words = re.findall(r"[^\W_]+", text.casefold(), flags=re.UNICODE)
     words = [word for word in words if word not in STOP_WORDS and len(word) > 1]
     return " ".join(words)
 
@@ -329,7 +345,13 @@ def prompt_similarity(left: str, right: str) -> float:
         return 1.0
     a, b = left.split(), right.split()
     if min(len(a), len(b)) < 3:
-        return 0.0
+        left_chars, right_chars = left.replace(" ", ""), right.replace(" ", "")
+        if min(len(left_chars), len(right_chars)) < 4:
+            return 0.0
+        a_shingles = {left_chars[i:i + 2] for i in range(len(left_chars) - 1)}
+        b_shingles = {right_chars[i:i + 2] for i in range(len(right_chars) - 1)}
+        union = a_shingles | b_shingles
+        return len(a_shingles & b_shingles) / len(union) if union else 0.0
     a_set, b_set = set(a), set(b)
     containment = len(a_set & b_set) / min(len(a_set), len(b_set))
     sequence = difflib.SequenceMatcher(None, a, b, autojunk=False).ratio()
@@ -366,7 +388,18 @@ def apply_historical_velocity(candidate: Candidate, history: dict) -> None:
                      if 0 < (current_time - float(item.get("timestamp", 0))) <= SNAPSHOT_DAYS * 86400), None)
     current_engagement = max(0.0, candidate.engagement)
     age_hours = max(1.0, float(candidate.signals.get("age_hours", 24)))
-    if previous:
+    components = candidate.signals.get("engagement_components", {})
+    component_rates = {}
+    previous_components = previous.get("components", {}) if previous else {}
+    if previous and previous_components:
+        elapsed_hours = max(1.0, (current_time - float(previous["timestamp"])) / 3600)
+        for key, current_value in components.items():
+            if key in previous_components:
+                component_rates[key] = max(0.0, float(current_value) - float(previous_components[key])) / elapsed_hours
+    if not component_rates:
+        component_rates = {key: max(0.0, float(value)) / age_hours for key, value in components.items()}
+    candidate.signals["component_velocity_per_hour"] = {key: round(value, 4) for key, value in component_rates.items()}
+    if previous and previous_components:
         elapsed_hours = max(1.0, (current_time - float(previous["timestamp"])) / 3600)
         delta = max(0.0, current_engagement - float(previous.get("engagement", 0)))
         candidate.velocity = delta / elapsed_hours
@@ -374,7 +407,18 @@ def apply_historical_velocity(candidate: Candidate, history: dict) -> None:
     else:
         candidate.velocity = current_engagement / age_hours
         candidate.signals["velocity_basis"] = "first observation; total source interactions divided by item age in hours"
+    if component_rates:
+        candidate.velocity = sum(component_rates.values()) if candidate.source == "GitHub" else component_rates.get("post_score", 0.0) + 2 * component_rates.get("comments", 0.0)
+    if candidate.positive_ratio is not None and previous and previous.get("positive_ratio") is not None:
+        candidate.signals["rating_change_percentage_points"] = round((candidate.positive_ratio - float(previous["positive_ratio"])) * 100, 2)
     candidate.signals["source_velocity_per_hour"] = round(candidate.velocity, 4)
+    previous_rates = [max(0.0, float(item.get("velocity_per_hour", 0))) for item in observations
+                      if item.get("velocity_per_hour") is not None]
+    if len(previous_rates) >= 2:
+        normal_rate = statistics.median(previous_rates)
+        if normal_rate > 0:
+            candidate.signals["velocity_multiple"] = round(candidate.velocity / normal_rate, 2)
+            candidate.signals["normal_velocity_per_hour"] = round(normal_rate, 4)
 
 
 def deduplicate(candidates: list[Candidate], history: dict) -> list[Candidate]:
@@ -388,7 +432,6 @@ def deduplicate(candidates: list[Candidate], history: dict) -> list[Candidate]:
             historical.append((cluster_id, normalized))
             seen_cluster_text.add((cluster_id, normalized))
     groups: dict[str, list[Candidate]] = {}
-    group_text: dict[str, str] = {}
     for candidate in candidates:
         normalized = normalized_prompt(candidate.prompt)
         candidate.unique_id = hashlib.sha256((candidate.source + "\0" + normalized).encode()).hexdigest()
@@ -398,21 +441,20 @@ def deduplicate(candidates: list[Candidate], history: dict) -> list[Candidate]:
         if best_score >= .78:
             cluster_id = old_cluster
         else:
-            match_cluster = next((cluster for cluster, text in group_text.items()
-                                  if prompt_similarity(normalized, text) >= .78), None)
+            match_cluster = next((cluster for cluster, members in groups.items()
+                                  if any(prompt_similarity(normalized, member.normalized) >= .78 for member in members)), None)
             cluster_id = match_cluster or hashlib.sha256(normalized.encode()).hexdigest()[:24]
         candidate.cluster_id = cluster_id
         groups.setdefault(cluster_id, []).append(candidate)
-        group_text.setdefault(cluster_id, normalized)
 
     leaders = []
     for cluster_id, group in groups.items():
         # Prefer a candidate with a useful extracted body; engagement is only a tie-break.
         group.sort(key=lambda item: (item.quality_score, math.log1p(item.engagement)), reverse=True)
         leader = group[0]
-        leader.corroborating_sources = sorted({item.source for item in group})
-        leader.corroborating_urls = list(dict.fromkeys(item.url for item in group if item.url))
-        leader.signals["independent_sources_in_cluster"] = len(leader.corroborating_sources)
+        leader.sighting_sources = sorted({item.source for item in group})
+        leader.sighting_urls = list(dict.fromkeys(item.url for item in group if item.url))
+        leader.signals["source_sightings"] = len(leader.sighting_sources)
         leader.signals["duplicate_cluster_size"] = len(group)
         leaders.append(leader)
     return leaders
@@ -428,12 +470,12 @@ def update_history(history: dict, candidates: list[Candidate], selected: list[Ca
             continue
         representative = representative_by_cluster.get(candidate.cluster_id, candidate)
         record = records.setdefault(candidate.unique_id, {
-            "normalized_prompt": getattr(candidate, "normalized", normalized_prompt(candidate.prompt)),
+            "normalized_prompt": getattr(candidate, "normalized", normalized_prompt(candidate.prompt))[:HISTORY_NORMALIZED_CHARS],
             "source": candidate.source, "original_url": candidate.url, "author": candidate.author,
             "discovery_date": NOW.date().isoformat(), "publication_date": candidate.published.date().isoformat(),
             "category": candidate.category, "model": candidate.model, "observations": [],
         })
-        record.update({"cluster_id": candidate.cluster_id, "normalized_prompt": getattr(candidate, "normalized", normalized_prompt(candidate.prompt)),
+        record.update({"cluster_id": candidate.cluster_id, "normalized_prompt": getattr(candidate, "normalized", normalized_prompt(candidate.prompt))[:HISTORY_NORMALIZED_CHARS],
                        "source": candidate.source, "original_url": candidate.url, "author": candidate.author,
                        "publication_date": candidate.published.date().isoformat(), "category": candidate.category,
                        "model": candidate.model, "engagement_metrics": candidate.signals,
@@ -444,17 +486,31 @@ def update_history(history: dict, candidates: list[Candidate], selected: list[Ca
         observations = record.setdefault("observations", [])
         if not observations or (NOW.timestamp() - float(observations[-1].get("timestamp", 0))) >= 20 * 3600:
             observations.append({"timestamp": NOW.timestamp(), "date": NOW.date().isoformat(),
-                                 "engagement": candidate.engagement, "velocity_per_hour": candidate.velocity})
+                                 "engagement": candidate.engagement, "velocity_per_hour": candidate.velocity,
+                                 "components": candidate.signals.get("engagement_components", {}),
+                                 "positive_ratio": candidate.positive_ratio, "rating_count": candidate.rating_count})
         record["observations"] = [item for item in observations
                                   if NOW.timestamp() - float(item.get("timestamp", 0)) <= SNAPSHOT_DAYS * 86400]
         if candidate.cluster_id in selected_clusters:
             record["notification_date"] = NOW.date().isoformat()
-    history["notified_clusters"].update({item.cluster_id: NOW.date().isoformat() for item in selected})
+    for item in selected:
+        previous_notice = history["notified_clusters"].get(item.cluster_id)
+        if isinstance(previous_notice, dict):
+            previous_notice["notified_at"] = NOW.isoformat(timespec="seconds")
+            previous_notice["resurface_count"] = int(previous_notice.get("resurface_count", 0)) + (1 if item.resurface_reason else 0)
+            previous_notice["resurface_reason"] = item.resurface_reason or previous_notice.get("resurface_reason", "")
+            previous_notice.setdefault("source_baselines", {})[item.source] = item.engagement
+            previous_notice["last_velocity_multiple"] = item.signals.get("velocity_multiple")
+        else:
+            history["notified_clusters"][item.cluster_id] = {
+                "notified_at": NOW.isoformat(timespec="seconds"), "source_baselines": {item.source: item.engagement},
+                "resurface_count": 0, "resurface_reason": "",
+                "last_velocity_multiple": item.signals.get("velocity_multiple"),
+            }
     cutoff = NOW.timestamp() - HISTORY_DAYS * 86400
     history["records"] = {key: record for key, record in records.items()
-                           if parse_time(record.get("last_seen", record.get("publication_date"))).timestamp() >= cutoff}
-    history["notified_clusters"] = {key: value for key, value in history["notified_clusters"].items()
-                                     if (NOW.date() - datetime.fromisoformat(value).date()).days <= HISTORY_DAYS}
+                           if record.get("cluster_id") in history["notified_clusters"]
+                           or parse_time(record.get("last_seen", record.get("publication_date"))).timestamp() >= cutoff}
 
 
 def save_history(history: dict) -> None:
@@ -485,17 +541,35 @@ def rank(candidates: list[Candidate]) -> list[Candidate]:
         by_source.setdefault(item.source, []).append(item)
     weights = dict(WEIGHTS)
     try:
-        override = json.loads(os.getenv("RADAR_WEIGHTS", "{}"))
-        weights.update({k: float(v) for k, v in override.items() if k in weights and float(v) >= 0})
+        override = json.loads(os.getenv("RADAR_WEIGHTS", "").strip() or "{}")
+        if not isinstance(override, dict):
+            raise ValueError
+        for key, value in override.items():
+            number = float(value)
+            if key in weights and math.isfinite(number) and number >= 0:
+                weights[key] = number
     except (ValueError, TypeError):
         print("WARNING invalid RADAR_WEIGHTS; using defaults", file=sys.stderr)
     weight_total = sum(weights.values()) or 1.0
+    if weight_total <= 0 or not math.isfinite(weight_total):
+        weights = dict(WEIGHTS)
+        weight_total = sum(weights.values())
     weights = {k: v / weight_total for k, v in weights.items()}
 
     for group in by_source.values():
+        engagement_values = [max(0, c.engagement) for c in group]
+        velocity_values = [max(0, c.velocity) for c in group]
+        engagement_ranks = percentile([math.log1p(value) for value in engagement_values])
+        velocity_ranks = percentile([math.log1p(value) for value in velocity_values])
         metrics = {
-            "engagement": percentile([math.log1p(max(0, c.engagement) * (.25 if c.signals.get("suspicious_engagement_pattern") else 1.0)) for c in group]),
-            "trending": percentile([math.log1p(max(0, c.velocity) * (.25 if c.signals.get("suspicious_engagement_pattern") else 1.0)) for c in group]),
+            # Percentile ranking handles source differences; a log volume factor prevents
+            # a lone/low-activity candidate from receiving a neutral 0.5 just by being alone.
+            "engagement": [rank * min(1.0, math.log1p(value) / math.log1p(100))
+                           * (.25 if candidate.signals.get("suspicious_engagement_pattern") else 1.0)
+                           for rank, value, candidate in zip(engagement_ranks, engagement_values, group)],
+            "trending": [rank * min(1.0, math.log1p(value) / math.log1p(10))
+                         * (.25 if candidate.signals.get("suspicious_engagement_pattern") else 1.0)
+                         for rank, value, candidate in zip(velocity_ranks, velocity_values, group)],
         }
         for i, candidate in enumerate(group):
             # Wilson lower bound prevents tiny samples from looking certain; if no review signal,
@@ -513,10 +587,8 @@ def rank(candidates: list[Candidate]) -> list[Candidate]:
                       "positive": positive, "recency": recency, "usefulness": candidate.usefulness}
             candidate.scores = scores
             base_score = sum(weights[key] * scores[key] for key in weights)
-            # Independent sources add a small tie-breaking bonus after reposts are clustered.
-            corroboration_bonus = min(.04, max(0, len(candidate.corroborating_sources) - 1) * .02)
-            candidate.scores["corroboration_bonus"] = corroboration_bonus
-            candidate.score = min(1.0, base_score + corroboration_bonus)
+            # Identical/near-identical prompt sightings are repost evidence, not independent validation.
+            candidate.score = base_score
             candidate.quality_score = candidate.usefulness
             volume = candidate.engagement
             candidate.confidence = ("Low" if candidate.signals.get("suspicious_engagement_pattern")
@@ -546,15 +618,49 @@ def why_interesting(candidate: Candidate) -> str:
         features.append("breaks the task into a repeatable process")
     if not features:
         features.append("contains a substantial, reusable instruction block")
-    return "; ".join(features).capitalize() + "."
+    feature_text = "; ".join(features)
+    return (f"The prompt {feature_text}. Its explicit structure makes the intended process easier to inspect and reuse;"
+            " this is a heuristic reading of the prompt text, not evidence of measured outcomes.")
 
 
-def choose(candidates: list[Candidate], notified_clusters: dict | None = None, limit: int = 5) -> list[Candidate]:
+def significant_new_development(candidate: Candidate, notified_clusters: dict | None) -> bool:
+    if not notified_clusters:
+        return False
+    notice = notified_clusters.get(candidate.cluster_id)
+    if not isinstance(notice, dict):
+        return False
+    try:
+        previous_time = datetime.fromisoformat(notice["notified_at"])
+        if previous_time.tzinfo is None:
+            previous_time = previous_time.replace(tzinfo=timezone.utc)
+        days_since_notice = (NOW - previous_time).total_seconds() / 86400
+    except (KeyError, ValueError, TypeError):
+        return False
+    baseline = notice.get("source_baselines", {}).get(candidate.source)
+    if baseline is None or days_since_notice < 7:
+        return False
+    growth = candidate.engagement - float(baseline)
+    multiple = candidate.signals.get("velocity_multiple")
+    # Require a material absolute increase, >3x this prompt's own prior pace, and a high current rank.
+    if growth < max(100.0, float(baseline) * .5) or multiple is None or multiple < 3.0:
+        return False
+    if candidate.score < .85 or candidate.quality_score < .65:
+        return False
+    candidate.resurface_reason = (f"new development: {growth:.0f} additional source interactions since the last notice "
+                                  f"and {multiple:.1f}× the prior observed velocity; this prompt was requalified at score {candidate.score:.2f}")
+    candidate.signals["new_interactions_since_notification"] = growth
+    candidate.signals["resurfacing_velocity_multiple"] = multiple
+    return True
+
+
+def choose(candidates: list[Candidate], notified_clusters: dict | None = None, limit: int = MAX_PROMPTS) -> list[Candidate]:
     # Avoid one source taking over the digest; preserve high-quality threshold.
     selected, source_counts, category_counts = [], {}, {}
     for item in rank(candidates):
+        already_notified = bool(notified_clusters and item.cluster_id in notified_clusters)
+        may_resurface = significant_new_development(item, notified_clusters) if already_notified else False
         if (item.score < MIN_SCORE or source_counts.get(item.source, 0) >= 3
-                or (notified_clusters and item.cluster_id in notified_clusters)
+                or (already_notified and not may_resurface)
                 or (category_counts.get(item.category, 0) >= 2 and item.score < .85)):
             continue
         selected.append(item)
@@ -565,40 +671,140 @@ def choose(candidates: list[Candidate], notified_clusters: dict | None = None, l
     return selected
 
 
+def clean_display(value: str) -> str:
+    # Telegram is sent without parse_mode; strip control/bidi formatting to keep content inert/readable.
+    return "".join(ch for ch in value if ch in "\n\t" or (ch.isprintable() and ord(ch) not in range(0x202A, 0x202F) and ord(ch) not in range(0x2066, 0x206A)))
+
+
+def single_line(value: str, limit: int = 250) -> str:
+    text = " ".join(clean_display(value).split())
+    text = re.sub(r"(?i)\b(https?)://", lambda match: match.group(1) + "[:]//", text)
+    return re.sub(r"(?i)\bwww\.", "www[.]", text)[:limit]
+
+
+def safe_source_url(value: str) -> str:
+    parsed = urlparse(value)
+    allowed_hosts = {"github.com", "www.reddit.com"}
+    return value if parsed.scheme == "https" and parsed.hostname in allowed_hosts else ""
+
+
+def prompt_facts(candidate: Candidate) -> list[str]:
+    facts = []
+    if candidate.source == "GitHub" and "stars" in candidate.signals:
+        facts.append(f"{candidate.signals['stars']:,} repository stars")
+    if candidate.source == "Reddit":
+        if "upvotes_score" in candidate.signals:
+            facts.append(f"Reddit post score {candidate.signals['upvotes_score']:,}")
+        if "comments" in candidate.signals:
+            facts.append(f"{candidate.signals['comments']:,} comments")
+        if candidate.positive_ratio is not None and candidate.rating_count > 0:
+            facts.append(f"{candidate.positive_ratio:.0%} upvote ratio (source vote count {candidate.rating_count:,})")
+    rates = candidate.signals.get("component_velocity_per_hour", {})
+    velocity_label = "Observed change" if candidate.signals.get("velocity_basis", "").startswith("observed") else "Age-adjusted first-observation estimate"
+    if candidate.source == "GitHub" and "stars" in rates:
+        facts.append(f"{velocity_label}: {rates['stars']:.2f} stars/hour")
+    elif candidate.source == "Reddit":
+        if "post_score" in rates:
+            facts.append(f"{velocity_label}: {rates['post_score']:.2f} post-score/hour")
+        if "comments" in rates:
+            facts.append(f"{velocity_label}: {rates['comments']:.2f} comments/hour")
+    if candidate.signals.get("velocity_multiple") is not None:
+        facts.append(f"{candidate.signals['velocity_multiple']:.1f}× its prior observed rate")
+    if candidate.signals.get("rating_change_percentage_points") is not None:
+        delta = candidate.signals["rating_change_percentage_points"]
+        facts.append(f"Upvote ratio change: {delta:+.2f} percentage points since prior snapshot")
+    facts.append(f"Published/updated {candidate.published.date().isoformat()} ({candidate.signals.get('date_basis', 'source post date')})")
+    return facts
+
+
+def trending_themes(items: list[Candidate]) -> list[str]:
+    categories: dict[str, int] = {}
+    techniques: dict[str, int] = {}
+    patterns = {"stepwise workflows": ("step by step", "step-by-step", "phase 1"),
+                "examples and few-shot guidance": ("example", "few-shot"),
+                "verification and quality checks": ("verify", "checklist", "rubric", "criteria"),
+                "tool-using agents": ("tool", "function call", "agent")}
+    for item in items:
+        categories[item.category] = categories.get(item.category, 0) + 1
+        prompt_lower = item.prompt.lower()
+        for label, terms in patterns.items():
+            if any(term in prompt_lower for term in terms):
+                techniques[label] = techniques.get(label, 0) + 1
+    ranked = [(count, f"{label} — present in {count} selected prompt(s)") for label, count in categories.items()]
+    ranked += [(count, f"{label} — present in {count} selected prompt(s)") for label, count in techniques.items()]
+    return [value for _, value in sorted(ranked, key=lambda row: (-row[0], row[1]))[:3]]
+
+
 def render(items: list[Candidate], source_status: list[str]) -> str:
-    now = NOW.strftime("%Y-%m-%d")
+    blocks = [f"LLM PROMPT RADAR\n{NOW:%Y-%m-%d}"]
     if not items:
-        lines = [f"LLM Prompt Radar — {now}", "No prompts met the quality threshold today."]
+        blocks.append(f"No prompts met the minimum quality score ({MIN_SCORE:.2f}) today.")
+        themes_block = "TRENDING THEMES — WITHIN TODAY'S QUALIFYING PROMPTS\n• No themes to report; no prompts qualified."
     else:
-        lines = [f"LLM Prompt Radar — {now}", f"Selected {len(items)} of up to 5 prompts."]
-        if len(items) < 5:
-            lines.append(f"Only {len(items)} prompts met the minimum quality threshold ({MIN_SCORE:.2f}); quality was not lowered.")
-        for i, c in enumerate(items, 1):
-            prompt_text = c.prompt
-            if c.source == "GitHub" and c.license_name not in {"MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "CC0-1.0", "Unlicense"}:
+        if len(items) < MAX_PROMPTS:
+            blocks.append(f"Only {len(items)} prompt(s) qualified for today's digest after the minimum score ({MIN_SCORE:.2f}), repeat-suppression, and diversity rules; the quality floor was not lowered.")
+        for i, candidate in enumerate(items, 1):
+            prompt_text = candidate.prompt
+            if candidate.source == "GitHub" and candidate.license_name not in {"MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "CC0-1.0", "Unlicense"}:
                 prompt_text = "Full text omitted because this repository does not declare a recognized reuse license. Open the source link to review it."
-            rating = "not provided" if c.positive_ratio is None or c.rating_count <= 0 else f"{c.positive_ratio:.0%} positive proxy ({c.rating_count} votes; confidence-adjusted in score)"
-            date_basis = c.signals.get("date_basis", "source post publication date")
-            other_links = [url for url in c.corroborating_urls if url != c.url]
-            corroboration_line = f"Independent corroboration: {', '.join(c.corroborating_sources) or c.source}"
-            if other_links:
-                corroboration_line += " | Other links: " + ", ".join(other_links)
-            lines.extend(["", f"{i}. {c.title}", f"Prompt: {prompt_text}", f"Source: {c.source} — {c.url}",
-                          corroboration_line,
-                          f"Creator: {c.author} | Model: {c.model} | Category: {c.category}",
-                          f"Date: {c.published.date().isoformat()} ({date_basis}) | Rating/reviews: {rating}",
-                          f"Engagement metrics: {json.dumps(c.signals, ensure_ascii=False)}",
-                          f"Why selected: {why_selected(c)}", f"Why interesting: {why_interesting(c)}",
-                          f"Confidence: {c.confidence} | Score: {c.score:.3f}"])
-    lines.extend(["", "Sources: " + ("; ".join(source_status) or "none available")])
-    return "\n".join(lines)
+            links = [safe_source_url(candidate.url)] + [safe_source_url(url) for url in candidate.sighting_urls if url != candidate.url][:3]
+            links = [url for url in links if url]
+            if not links:
+                links = ["Source link unavailable"]
+            sighting_note = "Same/near-copy sightings (not independent validation): " + ", ".join(candidate.sighting_sources or [candidate.source])
+            facts = "\n".join(f"• {fact}" for fact in prompt_facts(candidate))
+            resurfaced = f"\nResurfaced: {candidate.resurface_reason}" if candidate.resurface_reason else ""
+            prompt_text = re.sub(r"(?i)\b(https?)://", lambda match: match.group(1) + "[:]//", prompt_text)
+            prompt_text = re.sub(r"(?i)\bwww\.", "www[.]", prompt_text)
+            blocks.append(clean_display(
+                f"#{i} — {single_line(candidate.title, 180)}\n\nCategory: {single_line(candidate.category, 80)}\nModel: {single_line(candidate.model, 100)}\n"
+                f"Source: {candidate.source}\nCreator: {single_line(candidate.author, 100)}\n\n"
+                f"WHY IT SURFACED — SOURCE FACTS\n{facts}{resurfaced}\n\n"
+                f"RADAR ANALYSIS — HEURISTIC, NOT LLM GENERATED\n{why_interesting(candidate)}\n\n"
+                f"{sighting_note}\n\nPrompt:\n{prompt_text}\n\nSource URL(s):\n" + "\n".join(links) +
+                f"\n\nConfidence: {candidate.confidence.upper()} | Quality score: {candidate.quality_score:.2f} | Composite: {candidate.score:.3f}"))
+        themes_block = "TRENDING THEMES — WITHIN TODAY'S SELECTED PROMPTS\n" + "\n".join(f"• {theme}" for theme in trending_themes(items))
+    if source_status:
+        blocks.append("Source status: " + "; ".join(source_status))
+    blocks.append(themes_block)
+    return "\n\n".join(blocks)
 
 
 def send_telegram(text: str) -> None:
-    token, chat_id = os.getenv("TELEGRAM_BOT_TOKEN", "").strip(), os.getenv("TELEGRAM_CHAT_ID", "").strip()
+    token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
+    chat_id = os.getenv("RADAR_TELEGRAM_CHAT_ID", os.getenv("TELEGRAM_CHAT_ID", "")).strip()
     if not token or not chat_id:
         raise RuntimeError("Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in repository Actions secrets.")
-    chunks = [text[i:i + 3900] for i in range(0, len(text), 3900)]
+    chunks = []
+    current = ""
+    for paragraph in text.split("\n\n"):
+        pieces = [paragraph]
+        if len(paragraph.encode("utf-16-le")) // 2 > 3800:
+            pieces, segment, units = [], "", 0
+            prompt_prefix = "Prompt:\n" if paragraph.startswith("Prompt:\n") else ""
+            body = paragraph[len(prompt_prefix):]
+            continuation = "Prompt continued:\n" if prompt_prefix else ""
+            for char in body:
+                char_units = len(char.encode("utf-16-le")) // 2
+                prefix = prompt_prefix if not pieces else continuation
+                prefix_units = len(prefix.encode("utf-16-le")) // 2
+                if segment and units + char_units + prefix_units > 3700:
+                    pieces.append(prefix + segment)
+                    segment, units = "", 0
+                    prompt_prefix = ""
+                segment += char
+                units += char_units
+            if segment:
+                pieces.append((prompt_prefix if not pieces else continuation) + segment)
+        for piece in pieces:
+            combined = piece if not current else current + "\n\n" + piece
+            if current and len(combined.encode("utf-16-le")) // 2 > 3800:
+                chunks.append(current)
+                current = piece
+            else:
+                current = combined
+    if current:
+        chunks.append(current)
     for chunk in chunks:
         body = json.dumps({"chat_id": chat_id, "text": chunk, "disable_web_page_preview": True}).encode()
         request = Request(f"https://api.telegram.org/bot{token}/sendMessage", data=body,
@@ -613,10 +819,26 @@ def send_telegram(text: str) -> None:
 
 
 def main() -> int:
+    if "--test" in sys.argv:
+        send_telegram("LLM PROMPT RADAR\nTest message only. Source discovery and history updates were not run.")
+        print("Sent test message; source discovery and history were skipped.")
+        return 0
     history = load_history()
-    sources: list[SourceAdapter] = [GitHubAdapter(), RedditAdapter()]
+    registry: dict[str, SourceAdapter] = {"github": GitHubAdapter(), "reddit": RedditAdapter()}
+    source_setting = os.getenv("RADAR_SOURCES", "").strip() or "github,reddit"
+    requested = [name.strip().lower() for name in source_setting.split(",") if name.strip()]
+    unknown = [name for name in requested if name not in registry]
+    if unknown:
+        raise RuntimeError("Unknown RADAR_SOURCES value(s): " + ", ".join(unknown))
+    sources = [registry[name] for name in requested]
+    if not sources:
+        raise RuntimeError("RADAR_SOURCES must enable at least one source.")
     candidates, status = [], []
     for source in sources:
+        if source.name == "Reddit" and (not os.getenv("REDDIT_CLIENT_ID", "").strip()
+                                        or not os.getenv("REDDIT_CLIENT_SECRET", "").strip()):
+            status.append("Reddit skipped (official API credentials not configured)")
+            continue
         try:
             found = source.fetch()
             candidates.extend(found)
@@ -627,7 +849,6 @@ def main() -> int:
     accepted = []
     rejected: dict[str, int] = {}
     for candidate in candidates:
-        apply_historical_velocity(candidate, history)
         passed, score, reason = quality_gate(candidate)
         if not passed:
             rejected[reason] = rejected.get(reason, 0) + 1
@@ -635,20 +856,21 @@ def main() -> int:
         candidate.quality_score = score
         candidate.usefulness = score
         candidate.signals["quality_filter"] = reason
+        apply_historical_velocity(candidate, history)
         accepted.append(candidate)
     if rejected:
         status.append("Quality filter rejected " + str(sum(rejected.values())) + " candidate(s): "
                       + ", ".join(f"{count} {reason}" for reason, count in sorted(rejected.items())))
     leaders = deduplicate(accepted, history)
     for candidate in leaders:
-        candidate.corroborating_sources = candidate.corroborating_sources or [candidate.source]
-    chosen = choose(leaders, history["notified_clusters"])
+        candidate.sighting_sources = candidate.sighting_sources or [candidate.source]
+    chosen = choose(leaders, history["notified_clusters"], MAX_PROMPTS)
     message = render(chosen, status)
     if "--preview" in sys.argv:
         print(message)
         return 0
-    send_telegram(message)
     update_history(history, accepted, chosen, leaders)
+    send_telegram(message)
     save_history(history)
     print(f"Sent digest with {len(chosen)} qualifying prompt(s).")
     return 0

@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '0 1 * * *'
   workflow_dispatch:
+    inputs:
+      test_message:
+        description: Send a Telegram test message without discovering prompts
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -27,26 +33,37 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RADAR_TELEGRAM_CHAT_ID: ${{ secrets.RADAR_TELEGRAM_CHAT_ID }}
         run: |
-          if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ]; then
+          if [ -n "$TELEGRAM_BOT_TOKEN" ] && { [ -n "$RADAR_TELEGRAM_CHAT_ID" ] || [ -n "$TELEGRAM_CHAT_ID" ]; }; then
             echo "configured=true" >> "$GITHUB_OUTPUT"
           else
             echo "configured=false" >> "$GITHUB_OUTPUT"
             echo "::warning::Add TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in repository Actions secrets to enable notifications."
           fi
-      - name: Discover and send daily digest
-        if: ${{ steps.telegram.outputs.configured == 'true' }}
+      - name: Send test message
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.test_message && steps.telegram.outputs.configured == 'true' }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RADAR_TELEGRAM_CHAT_ID: ${{ secrets.RADAR_TELEGRAM_CHAT_ID }}
+        run: python llm-prompt-radar/radar.py --test
+      - name: Discover and send daily digest
+        if: ${{ steps.telegram.outputs.configured == 'true' && !(github.event_name == 'workflow_dispatch' && inputs.test_message) }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RADAR_TELEGRAM_CHAT_ID: ${{ secrets.RADAR_TELEGRAM_CHAT_ID }}
           GITHUB_TOKEN: ${{ github.token }}
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           RADAR_WEIGHTS: ${{ vars.RADAR_WEIGHTS }}
           RADAR_MIN_SCORE: ${{ vars.RADAR_MIN_SCORE }}
+          RADAR_MAX_PROMPTS: ${{ vars.RADAR_MAX_PROMPTS }}
+          RADAR_SOURCES: ${{ vars.RADAR_SOURCES }}
         run: python llm-prompt-radar/radar.py
       - name: Save prompt history
-        if: ${{ steps.telegram.outputs.configured == 'true' }}
+        if: ${{ steps.telegram.outputs.configured == 'true' && !(github.event_name == 'workflow_dispatch' && inputs.test_message) }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
