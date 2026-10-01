@@ -121,6 +121,12 @@ class RadarTests(unittest.TestCase):
                 radar.send_telegram("test")
         self.assertNotIn("fixture-secret", str(caught.exception))
 
+    def test_empty_optional_chat_override_falls_back_to_shared_destination(self):
+        with patch.dict(os.environ, {"RADAR_TELEGRAM_CHAT_ID": "", "TELEGRAM_CHAT_ID": "shared-chat"}, clear=False):
+            self.assertEqual(radar.telegram_chat_id(), "shared-chat")
+        with patch.dict(os.environ, {"RADAR_TELEGRAM_CHAT_ID": "radar-chat", "TELEGRAM_CHAT_ID": "shared-chat"}, clear=False):
+            self.assertEqual(radar.telegram_chat_id(), "radar-chat")
+
     def test_source_failure_is_logged_and_dry_run_continues_without_history_or_send(self):
         with patch.object(radar.GitHubAdapter, "fetch", side_effect=ValueError("malformed external response")), \
              patch.object(radar, "load_history", return_value=radar.empty_history()), \

@@ -851,9 +851,16 @@ def render(items: list[Candidate], source_status: list[str]) -> str:
     return "\n\n".join(blocks)
 
 
+def telegram_chat_id() -> str:
+    # An Actions env entry for an unset optional secret exists as an empty string;
+    # use the shared Telegram destination unless the radar override is nonempty.
+    return (os.getenv("RADAR_TELEGRAM_CHAT_ID", "").strip()
+            or os.getenv("TELEGRAM_CHAT_ID", "").strip())
+
+
 def send_telegram(text: str) -> None:
     token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
-    chat_id = os.getenv("RADAR_TELEGRAM_CHAT_ID", os.getenv("TELEGRAM_CHAT_ID", "")).strip()
+    chat_id = telegram_chat_id()
     if not token or not chat_id:
         raise RuntimeError("Set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in repository Actions secrets.")
     chunks = []
