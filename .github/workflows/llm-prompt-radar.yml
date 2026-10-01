@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: llm-prompt-radar
@@ -45,3 +45,13 @@ jobs:
           RADAR_WEIGHTS: ${{ vars.RADAR_WEIGHTS }}
           RADAR_MIN_SCORE: ${{ vars.RADAR_MIN_SCORE }}
         run: python llm-prompt-radar/radar.py
+      - name: Save prompt history
+        if: ${{ steps.telegram.outputs.configured == 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add llm-prompt-radar/history.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update LLM Prompt Radar history"
+            git push
+          fi
