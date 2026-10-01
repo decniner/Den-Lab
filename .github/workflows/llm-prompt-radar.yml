@@ -1,12 +1,22 @@
 name: LLM Prompt Radar
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'llm-prompt-radar/**'
+      - '.github/workflows/llm-prompt-radar.yml'
   schedule:
     - cron: '0 1 * * *'
   workflow_dispatch:
     inputs:
       test_message:
         description: Send a Telegram test message without discovering prompts
+        required: false
+        default: false
+        type: boolean
+      dry_run:
+        description: Discover and print the digest without sending or saving history
         required: false
         default: false
         type: boolean
@@ -19,7 +29,22 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Run offline unit tests
+        run: python -m unittest discover -s llm-prompt-radar/tests -v
+      - name: Compile Python sources
+        run: python -m compileall -q llm-prompt-radar
   daily-digest:
+    needs: test
+    if: ${{ github.event_name != 'push' }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -49,7 +74,7 @@ jobs:
           RADAR_TELEGRAM_CHAT_ID: ${{ secrets.RADAR_TELEGRAM_CHAT_ID }}
         run: python llm-prompt-radar/radar.py --test
       - name: Discover and send daily digest
-        if: ${{ steps.telegram.outputs.configured == 'true' && !(github.event_name == 'workflow_dispatch' && inputs.test_message) }}
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.test_message) && (steps.telegram.outputs.configured == 'true' || inputs.dry_run || vars.DRY_RUN == 'true') }}
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -61,9 +86,13 @@ jobs:
           RADAR_MIN_SCORE: ${{ vars.RADAR_MIN_SCORE }}
           RADAR_MAX_PROMPTS: ${{ vars.RADAR_MAX_PROMPTS }}
           RADAR_SOURCES: ${{ vars.RADAR_SOURCES }}
+          RADAR_LOOKBACK_DAYS: ${{ vars.RADAR_LOOKBACK_DAYS }}
+          RADAR_MAX_PER_SOURCE: ${{ vars.RADAR_MAX_PER_SOURCE }}
+          RADAR_DEDUP_THRESHOLD: ${{ vars.RADAR_DEDUP_THRESHOLD }}
+          DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN }}
         run: python llm-prompt-radar/radar.py
       - name: Save prompt history
-        if: ${{ steps.telegram.outputs.configured == 'true' && !(github.event_name == 'workflow_dispatch' && inputs.test_message) }}
+        if: ${{ steps.telegram.outputs.configured == 'true' && !(github.event_name == 'workflow_dispatch' && inputs.test_message) && !(inputs.dry_run || vars.DRY_RUN == 'true') }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

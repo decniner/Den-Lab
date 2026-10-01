@@ -6,6 +6,7 @@ import base64
 import difflib
 import hashlib
 import json
+import logging
 import math
 import os
 import re
@@ -17,6 +18,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
+import time
 
 
 API = "https://api.github.com"
@@ -37,6 +39,32 @@ HISTORY_DAYS = 365
 SNAPSHOT_DAYS = 90
 HISTORY_NORMALIZED_CHARS = 3000
 UA = "Den-Lab-LLM-Prompt-Radar/1.0 (daily personal digest)"
+
+def _bounded_int(name: str, default: int, minimum: int, maximum: int) -> int:
+    try:
+        return max(minimum, min(maximum, int(os.getenv(name, str(default)))))
+    except ValueError:
+        return default
+
+
+LOOKBACK_DAYS = _bounded_int("RADAR_LOOKBACK_DAYS", 7, 1, 365)
+MAX_PER_SOURCE = _bounded_int("RADAR_MAX_PER_SOURCE", 3, 1, 25)
+try:
+    DEDUP_THRESHOLD = float(os.getenv("RADAR_DEDUP_THRESHOLD", ".78"))
+    if not math.isfinite(DEDUP_THRESHOLD) or not 0 <= DEDUP_THRESHOLD <= 1:
+        DEDUP_THRESHOLD = .78
+except ValueError:
+    DEDUP_THRESHOLD = .78
+DRY_RUN = os.getenv("DRY_RUN", "false").strip().lower() in {"1", "true", "yes", "on"}
+
+logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stdout)
+LOGGER = logging.getLogger("prompt_radar")
+
+
+def log_event(event: str, **fields: object) -> None:
+    """Emit safe structured logs. Callers must pass counts/IDs, never credentials or raw prompts."""
+    LOGGER.info(json.dumps({"timestamp": datetime.now(timezone.utc).isoformat(), "event": event, **fields},
+                           ensure_ascii=False, sort_keys=True, default=str))
 
 
 @dataclass
@@ -75,7 +103,7 @@ class SourceAdapter:
         raise NotImplementedError
 
 
-def request_json(url: str, headers: dict[str, str] | None = None) -> dict:
+def _request_json_once(url: str, headers: dict[str, str] | None = None) -> dict:
     request_headers = {"User-Agent": UA, "Accept": "application/vnd.github+json, application/json"}
     request_headers.update(headers or {})
     request = Request(url, headers=request_headers)
@@ -84,12 +112,42 @@ def request_json(url: str, headers: dict[str, str] | None = None) -> dict:
             return json.loads(response.read().decode("utf-8"))
     except HTTPError as exc:
         retry = exc.headers.get("Retry-After", "")
-        raise RuntimeError(f"HTTP {exc.code}" + (f" (retry after {retry}s)" if retry else "")) from None
+        raise SourceHTTPError(exc.code, retry) from None
     except (URLError, TimeoutError, json.JSONDecodeError) as exc:
         raise RuntimeError(type(exc).__name__) from None
 
 
-def post_form_json(url: str, values: dict[str, str], headers: dict[str, str]) -> dict:
+class SourceHTTPError(RuntimeError):
+    def __init__(self, status: int, retry_after: str = ""):
+        super().__init__(f"HTTP {status}")
+        self.status, self.retry_after = status, retry_after
+
+
+def request_json(url: str, headers: dict[str, str] | None = None) -> dict:
+    for attempt in range(3):
+        try:
+            return _request_json_once(url, headers)
+        except SourceHTTPError as exc:
+            retryable = exc.status == 429 or 500 <= exc.status <= 599
+            if not retryable or attempt == 2:
+                raise RuntimeError(str(exc)) from None
+            delay = min(8, 2 ** attempt)
+            if exc.retry_after:
+                try:
+                    delay = float(exc.retry_after)
+                except ValueError:
+                    pass
+                if delay > 30:
+                    raise RuntimeError(f"HTTP {exc.status}; retry-after exceeds 30s retry budget") from None
+            time.sleep(max(0, delay))
+        except RuntimeError:
+            if attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
+    raise RuntimeError("Source request failed after retries")
+
+
+def _post_form_json_once(url: str, values: dict[str, str], headers: dict[str, str]) -> dict:
     body = urlencode(values).encode()
     request_headers = {"User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded"}
     request_headers.update(headers)
@@ -99,9 +157,32 @@ def post_form_json(url: str, values: dict[str, str], headers: dict[str, str]) ->
             return json.loads(response.read().decode("utf-8"))
     except HTTPError as exc:
         retry = exc.headers.get("Retry-After", "")
-        raise RuntimeError(f"HTTP {exc.code}" + (f" (retry after {retry}s)" if retry else "")) from None
+        raise SourceHTTPError(exc.code, retry) from None
     except (URLError, TimeoutError, json.JSONDecodeError) as exc:
         raise RuntimeError(type(exc).__name__) from None
+
+
+def post_form_json(url: str, values: dict[str, str], headers: dict[str, str]) -> dict:
+    for attempt in range(3):
+        try:
+            return _post_form_json_once(url, values, headers)
+        except SourceHTTPError as exc:
+            if (exc.status != 429 and not 500 <= exc.status <= 599) or attempt == 2:
+                raise RuntimeError(str(exc)) from None
+            delay = 2 ** attempt
+            if exc.retry_after:
+                try:
+                    delay = float(exc.retry_after)
+                except ValueError:
+                    pass
+                if delay > 30:
+                    raise RuntimeError(f"HTTP {exc.status}; retry-after exceeds 30s retry budget") from None
+            time.sleep(max(0, delay))
+        except RuntimeError:
+            if attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
+    raise RuntimeError("Source request failed after retries")
 
 
 def parse_time(value: str | None) -> datetime:
@@ -421,7 +502,7 @@ def apply_historical_velocity(candidate: Candidate, history: dict) -> None:
             candidate.signals["normal_velocity_per_hour"] = round(normal_rate, 4)
 
 
-def deduplicate(candidates: list[Candidate], history: dict) -> list[Candidate]:
+def deduplicate(candidates: list[Candidate], history: dict, threshold: float = DEDUP_THRESHOLD) -> list[Candidate]:
     """Cluster exact and near-copies, including cross-source reposts, without counting them twice."""
     historical = []
     seen_cluster_text = set()
@@ -438,11 +519,11 @@ def deduplicate(candidates: list[Candidate], history: dict) -> list[Candidate]:
         candidate.normalized = normalized
         matches = [(prompt_similarity(normalized, old_text), old_cluster) for old_cluster, old_text in historical]
         best_score, old_cluster = max(matches, default=(0.0, ""))
-        if best_score >= .78:
+        if best_score >= threshold:
             cluster_id = old_cluster
         else:
             match_cluster = next((cluster for cluster, members in groups.items()
-                                  if any(prompt_similarity(normalized, member.normalized) >= .78 for member in members)), None)
+                                  if any(prompt_similarity(normalized, member.normalized) >= threshold for member in members)), None)
             cluster_id = match_cluster or hashlib.sha256(normalized.encode()).hexdigest()[:24]
         candidate.cluster_id = cluster_id
         groups.setdefault(cluster_id, []).append(candidate)
@@ -659,7 +740,7 @@ def choose(candidates: list[Candidate], notified_clusters: dict | None = None, l
     for item in rank(candidates):
         already_notified = bool(notified_clusters and item.cluster_id in notified_clusters)
         may_resurface = significant_new_development(item, notified_clusters) if already_notified else False
-        if (item.score < MIN_SCORE or source_counts.get(item.source, 0) >= 3
+        if (item.score < MIN_SCORE or source_counts.get(item.source, 0) >= MAX_PER_SOURCE
                 or (already_notified and not may_resurface)
                 or (category_counts.get(item.category, 0) >= 2 and item.score < .85)):
             continue
@@ -738,7 +819,7 @@ def trending_themes(items: list[Candidate]) -> list[str]:
 def render(items: list[Candidate], source_status: list[str]) -> str:
     blocks = [f"LLM PROMPT RADAR\n{NOW:%Y-%m-%d}"]
     if not items:
-        blocks.append(f"No prompts met the minimum quality score ({MIN_SCORE:.2f}) today.")
+        blocks.append(f"No prompts qualified after the minimum score ({MIN_SCORE:.2f}), lookback, repeat-suppression, and diversity rules today.")
         themes_block = "TRENDING THEMES — WITHIN TODAY'S QUALIFYING PROMPTS\n• No themes to report; no prompts qualified."
     else:
         if len(items) < MAX_PROMPTS:
@@ -819,9 +900,13 @@ def send_telegram(text: str) -> None:
 
 
 def main() -> int:
+    log_event("execution_start", dry_run=DRY_RUN or "--dry-run" in sys.argv,
+              lookback_days=LOOKBACK_DAYS, max_prompts=MAX_PROMPTS,
+              max_per_source=MAX_PER_SOURCE, dedup_threshold=DEDUP_THRESHOLD)
     if "--test" in sys.argv:
         send_telegram("LLM PROMPT RADAR\nTest message only. Source discovery and history updates were not run.")
-        print("Sent test message; source discovery and history were skipped.")
+        log_event("notification_result", result="test_sent")
+        log_event("execution_end", success=True)
         return 0
     history = load_history()
     registry: dict[str, SourceAdapter] = {"github": GitHubAdapter(), "reddit": RedditAdapter()}
@@ -834,18 +919,30 @@ def main() -> int:
     if not sources:
         raise RuntimeError("RADAR_SOURCES must enable at least one source.")
     candidates, status = [], []
+    cutoff = NOW.timestamp() - LOOKBACK_DAYS * 86400
     for source in sources:
+        log_event("source_queried", source=source.name)
         if source.name == "Reddit" and (not os.getenv("REDDIT_CLIENT_ID", "").strip()
                                         or not os.getenv("REDDIT_CLIENT_SECRET", "").strip()):
             status.append("Reddit skipped (official API credentials not configured)")
+            log_event("source_skipped", source=source.name, reason="credentials_not_configured")
             continue
         try:
             found = source.fetch()
+            valid = [item for item in found if isinstance(item, Candidate) and isinstance(item.published, datetime)
+                     and item.published.timestamp() >= cutoff and len(item.prompt.split()) >= 35
+                     and item.url and item.title]
+            valid.sort(key=lambda item: (item.engagement, item.velocity), reverse=True)
+            found = valid[:MAX_PER_SOURCE]
             candidates.extend(found)
-            status.append(f"{source.name}: {len(found)} candidates")
-        except RuntimeError as exc:
-            status.append(f"{source.name}: unavailable ({exc})")
-            print(f"SOURCE {source.name} unavailable: {exc}", file=sys.stderr)
+            dropped = max(0, len(valid) - len(found))
+            status.append(f"{source.name}: {len(found)} candidates within lookback"
+                          + (f", {dropped} over source cap" if dropped else ""))
+            log_event("source_result", source=source.name, discovered=len(found), source_cap_dropped=dropped)
+        except Exception as exc:
+            status.append(f"{source.name}: unavailable ({type(exc).__name__})")
+            log_event("source_failure", source=source.name, error_type=type(exc).__name__)
+    log_event("candidates_collected", count=len(candidates))
     accepted = []
     rejected: dict[str, int] = {}
     for candidate in candidates:
@@ -858,21 +955,30 @@ def main() -> int:
         candidate.signals["quality_filter"] = reason
         apply_historical_velocity(candidate, history)
         accepted.append(candidate)
+    log_event("quality_filter", passed=len(accepted), rejected=sum(rejected.values()), reasons=rejected)
     if rejected:
         status.append("Quality filter rejected " + str(sum(rejected.values())) + " candidate(s): "
                       + ", ".join(f"{count} {reason}" for reason, count in sorted(rejected.items())))
-    leaders = deduplicate(accepted, history)
+    leaders = deduplicate(accepted, history, DEDUP_THRESHOLD)
+    log_event("deduplication", before=len(accepted), after=len(leaders), duplicates=len(accepted) - len(leaders))
     for candidate in leaders:
         candidate.sighting_sources = candidate.sighting_sources or [candidate.source]
     chosen = choose(leaders, history["notified_clusters"], MAX_PROMPTS)
+    for index, item in enumerate(rank(leaders), 1):
+        log_event("ranking", rank=index, source=item.source, title=single_line(item.title, 100),
+                  score=round(item.score, 4), quality=round(item.quality_score, 4), selected=item in chosen)
+    log_event("selection", count=len(chosen), requested=MAX_PROMPTS)
     message = render(chosen, status)
-    if "--preview" in sys.argv:
+    if DRY_RUN or "--dry-run" in sys.argv or "--preview" in sys.argv:
         print(message)
+        log_event("notification_result", result="dry_run_printed", history_updated=False)
+        log_event("execution_end", success=True)
         return 0
     update_history(history, accepted, chosen, leaders)
     send_telegram(message)
     save_history(history)
-    print(f"Sent digest with {len(chosen)} qualifying prompt(s).")
+    log_event("notification_result", result="sent", count=len(chosen))
+    log_event("execution_end", success=True)
     return 0
 
 
@@ -880,5 +986,6 @@ if __name__ == "__main__":
     try:
         raise SystemExit(main())
     except RuntimeError as exc:
+        log_event("execution_end", success=False, error_type=type(exc).__name__)
         print(f"ERROR: {exc}", file=sys.stderr)
         raise SystemExit(1)
