@@ -59,7 +59,7 @@ class RadarTests(unittest.TestCase):
 
     def test_near_duplicate_similarity_and_threshold(self):
         first = candidate(prompt="Analyze this document as a senior consultant. Build a checklist and verify each claim.")
-        rewritten = candidate(source="GitHub", prompt="As an experienced senior consultant, review the document. Create a checklist and check every claim.")
+        rewritten = candidate(source="GitHub", prompt="Review this document as an experienced senior consultant. Build a checklist and verify every claim, including the evidence.")
         normalized_a, normalized_b = radar.normalized_prompt(first.prompt), radar.normalized_prompt(rewritten.prompt)
         self.assertGreater(radar.prompt_similarity(normalized_a, normalized_b), .55)
         leaders = radar.deduplicate([first, rewritten], radar.empty_history(), threshold=.55)
