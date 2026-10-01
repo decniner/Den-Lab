@@ -86,7 +86,7 @@ class RadarTests(unittest.TestCase):
         self.assertLessEqual(sum(item.category == "Coding" for item in selected), 2)
         self.assertTrue(any(item.category == "Research" for item in selected))
         self.assertEqual(radar.choose([], limit=5), [])
-        self.assertIn("No prompts met", radar.render([], []))
+        self.assertIn("No prompts qualified", radar.render([], []))
 
     def test_malformed_source_candidate_is_not_trusted(self):
         malformed = candidate()
@@ -129,7 +129,7 @@ class RadarTests(unittest.TestCase):
              patch.dict(os.environ, {"RADAR_SOURCES": "github", "DRY_RUN": "true"}, clear=False), \
              patch.object(sys, "argv", ["radar.py"]), contextlib.redirect_stdout(io.StringIO()) as output:
             self.assertEqual(radar.main(), 0)
-        self.assertIn("No prompts met", output.getvalue())
+        self.assertIn("No prompts qualified", output.getvalue())
 
 
 if __name__ == "__main__":
