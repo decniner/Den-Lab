@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths:
+      - '02-my-profile/**'
       - '03-ai-agent-explorer/**'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
@@ -28,10 +29,15 @@ jobs:
         uses: actions/checkout@v6
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+      - name: Prepare site files
+        run: |
+          mkdir -p _site/02-my-profile
+          cp -R 03-ai-agent-explorer/. _site/
+          cp -R 02-my-profile/. _site/02-my-profile/
       - name: Upload site files
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./03-ai-agent-explorer
+          path: ./_site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
