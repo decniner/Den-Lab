@@ -78,7 +78,7 @@ class RadarTests(unittest.TestCase):
         self.assertEqual(radar.choose(leaders, history["notified_clusters"]), [])
 
     def test_diversity_selection_and_insufficient_results(self):
-        items = [candidate(title=f"Prompt {i}", category="Coding" if i < 4 else "Research",
+        items = [candidate(title=f"Prompt {i}", category="Research" if i == 0 else "Coding",
                            engagement=300-i, prompt=(candidate().prompt + f" Criterion number {i}.")) for i in range(5)]
         for item in items:
             item.quality_score = .8
