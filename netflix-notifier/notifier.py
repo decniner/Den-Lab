@@ -197,8 +197,22 @@ def trailer_url(title: Title) -> str:
 
 def main() -> int:
     if "--test" in sys.argv:
-        send_telegram("✅ Netflix Japan notifier is connected. I’ll message you when titles are released.")
-        print("Test message sent.")
+        today = datetime.now(TIMEZONE).date()
+        titles = get_catalog()
+        sample = min(
+            titles,
+            key=lambda title: abs((date.fromisoformat(title.release_date) - today).days),
+        )
+        trailer = trailer_url(sample)
+        trailer_kind = "matched Netflix-channel video" if "youtube.com/watch?v=" in trailer else "YouTube search link"
+        message = "\n".join((
+            "🧪 Netflix notifier test — history unchanged",
+            f"Sample release: {sample.name} ({sample.release_date})",
+            f"Netflix: {sample.url}",
+            f"Trailer: {trailer}",
+        ))
+        send_telegram(message)
+        print(f"Test message sent for {sample.name}; trailer result: {trailer_kind}.")
         return 0
 
     today = datetime.now(TIMEZONE).date()

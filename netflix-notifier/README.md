@@ -10,7 +10,7 @@ Checks Netflix's official Japanese “new to watch” page daily and sends a Tel
 4. In this GitHub repository, open **Settings → Secrets and variables → Actions → New repository secret** and add:
    - `TELEGRAM_BOT_TOKEN`: the token from BotFather
    - `TELEGRAM_CHAT_ID`: your numeric Telegram chat ID
-5. In **Actions**, open **Netflix Japan Telegram notifications → Run workflow**. Select **Send a Telegram test message** to verify the bot.
+5. In **Actions**, open **Netflix Japan Telegram notifications → Run workflow**. Select **Send a Telegram test message** to send a sample Netflix title and trailer link without changing the saved notification history.
 
 Optionally, enable the YouTube Data API in a Google Cloud project, create an API key, and add it as the `YOUTUBE_API_KEY` secret. When set, the notifier links a title-matched trailer from a Netflix YouTube channel when it can verify one. Without the key, it includes a YouTube search link instead. Keep the key private.
 

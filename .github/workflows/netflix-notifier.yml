@@ -45,6 +45,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python netflix-notifier/notifier.py --test
       - name: Check for today's Netflix titles
         if: ${{ steps.telegram.outputs.configured == 'true' && !(github.event_name == 'workflow_dispatch' && inputs.test_message) }}
