@@ -363,18 +363,26 @@ class RedditAdapter(SourceAdapter):
     """Official Reddit OAuth adapter; skipped unless registered API credentials are configured."""
     name = "Reddit"
 
+    @staticmethod
+    def user_agent(username: str) -> str:
+        username = username.strip().removeprefix("u/")
+        if not re.fullmatch(r"[A-Za-z0-9_-]{3,20}", username):
+            raise RuntimeError("Set REDDIT_USERNAME to your Reddit username in repository Actions variables.")
+        return f"python:den-lab-llm-prompt-radar:v1.0 (by /u/{username})"
+
     def fetch(self) -> list[Candidate]:
         client, secret = os.getenv("REDDIT_CLIENT_ID", "").strip(), os.getenv("REDDIT_CLIENT_SECRET", "").strip()
         if not client or not secret:
             print("SOURCE Reddit skipped: set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET for official API access.", file=sys.stderr)
             return []
+        user_agent = self.user_agent(os.getenv("REDDIT_USERNAME", ""))
         credentials = base64.b64encode(f"{client}:{secret}".encode()).decode()
         token_data = post_form_json("https://www.reddit.com/api/v1/access_token", {"grant_type": "client_credentials"},
-                                    {"Authorization": f"Basic {credentials}"})
+                                    {"Authorization": f"Basic {credentials}", "User-Agent": user_agent})
         access_token = token_data.get("access_token")
         if not access_token:
             raise RuntimeError("OAuth token was not returned")
-        headers = {"Authorization": f"Bearer {access_token}"}
+        headers = {"Authorization": f"Bearer {access_token}", "User-Agent": user_agent}
         candidates = []
         for community in ("ChatGPTPromptGenius", "PromptEngineering", "ChatGPT"):
             query = urlencode({"q": "prompt", "restrict_sr": "on", "sort": "top", "t": "week", "limit": 25})
@@ -933,6 +941,10 @@ def main() -> int:
                                         or not os.getenv("REDDIT_CLIENT_SECRET", "").strip()):
             status.append("Reddit skipped (official API credentials not configured)")
             log_event("source_skipped", source=source.name, reason="credentials_not_configured")
+            continue
+        if source.name == "Reddit" and not re.fullmatch(r"[A-Za-z0-9_-]{3,20}", os.getenv("REDDIT_USERNAME", "").strip().removeprefix("u/")):
+            status.append("Reddit skipped (REDDIT_USERNAME Actions variable not configured)")
+            log_event("source_skipped", source=source.name, reason="reddit_username_not_configured")
             continue
         try:
             found = source.fetch()

@@ -28,7 +28,7 @@ Each adapter can fail independently. Network calls use a 25-second timeout and r
 | Source | Interface | Limits |
 | --- | --- | --- |
 | GitHub | Official REST API repository search and README endpoint | Public repositories, stars, README prompt extraction. Uses the Actions `GITHUB_TOKEN`. No code search. |
-| Reddit | Official OAuth Data API search in selected prompt communities | Optional; requires a registered app and `REDDIT_CLIENT_ID` / `REDDIT_CLIENT_SECRET`. No unauthenticated scraping fallback. |
+| Reddit | Official OAuth Data API search in selected prompt communities | Optional; requires an authorized OAuth app, `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, and the `REDDIT_USERNAME` Actions variable for the required identifying User-Agent. No unauthenticated scraping fallback. |
 | PromptBase / FlowGPT | Not currently accessed | No documented public API/feed verified for this project. No scraping or access-control bypass. |
 
 The `SourceAdapter` interface isolates sources. New sources should use a documented API, RSS/feed, or clearly permitted structured public interface. If one source fails, the run continues with the others and reports the failure. Lookback filtering uses candidate publication time; for GitHub this is repository last-updated time because an exact prompt publication date is generally unavailable.
@@ -74,13 +74,14 @@ Set optional values as repository **Actions variables** unless marked as a secre
 | `RADAR_TELEGRAM_CHAT_ID` (secret) | unset | Optional destination override. |
 | `REDDIT_CLIENT_ID` (secret) | unset | Optional Reddit OAuth app ID. |
 | `REDDIT_CLIENT_SECRET` (secret) | unset | Optional Reddit OAuth app secret. |
+| `REDDIT_USERNAME` (Actions variable) | unset | Reddit account name, optionally with a leading `u/`; used in Reddit's required descriptive User-Agent. |
 | `GITHUB_TOKEN` | Actions token | Supplied automatically by GitHub Actions; not a manually configured key. |
 | LLM provider/model | none | No LLM is called; all analysis is deterministic. |
 
 ## Setup and running
 
 1. In **Repository Settings → Secrets and variables → Actions**, ensure `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` exist. Optionally set `RADAR_TELEGRAM_CHAT_ID` to direct this notifier elsewhere.
-2. Optionally configure authorized Reddit app credentials as the two Reddit secrets. Without these, Reddit is explicitly skipped.
+2. To enable Reddit, register an OAuth app at [Reddit's app settings](https://www.reddit.com/prefs/apps) using Reddit's documented process. Reddit's Help page points developers to that self-service registration, and its Data API requires a registered OAuth token; access can be limited by Reddit policy. Store the app's client ID and secret as the repository Actions secrets `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET`, and add your Reddit account name as the Actions variable `REDDIT_USERNAME`. Never paste the client secret into chat or commit it. If Reddit does not grant the app API access, leave the adapter skipped; the radar continues to use GitHub.
 3. To test Telegram alone, use **Actions → LLM Prompt Radar → Run workflow** and select **Send a Telegram test message**. It does not query sources or touch history.
 4. To preview a real discovery run without Telegram, select **Dry run** in the same workflow. It prints the complete digest in the Actions log and skips the Telegram secrets/history commit step.
 

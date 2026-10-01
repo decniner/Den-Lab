@@ -108,6 +108,12 @@ class RadarTests(unittest.TestCase):
             self.assertEqual(radar.request_json("https://api.github.com/test"), {"items": []})
         sleep.assert_called_once_with(1)
 
+    def test_reddit_user_agent_identifies_the_configured_account(self):
+        self.assertEqual(radar.RedditAdapter.user_agent("u/den_example"),
+                         "python:den-lab-llm-prompt-radar:v1.0 (by /u/den_example)")
+        with self.assertRaises(RuntimeError):
+            radar.RedditAdapter.user_agent("")
+
     def test_telegram_formatting_neutralizes_external_text(self):
         item = candidate(title="Injected\u202eTitle", prompt="Analyze https://evil.example/path with a checklist and verify all claims.")
         output = radar.render([item], [])
