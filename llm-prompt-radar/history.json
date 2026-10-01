@@ -1,5 +1,74 @@
 {
   "version": 1,
-  "records": {},
-  "notified_clusters": {}
+  "records": {
+    "edf5dbb92f3a203223e36fd9d5b7f3f5193b2520dd36d9cb5d1fd2b2f3ba653f": {
+      "normalized_prompt": "welcome one most extensive dynamic collections prompt engineering tutorials implementations available today repository serves comprehensive resource learning building sharing prompt engineering techniques ranging basic concepts advanced strategies leveraging large language models 22 hands tutorials covering everything basic prompt templates advanced techniques like chain thought self consistency tree thought prompting h2 align center prompts production h2 div align center prompt production https europe west1 rag techniques views tracker cloudfunctions net rag techniques tracker notebook prompt engineering readme click course free module cta target https 3a 2f 2fwww diamant ai com 2fcourses 3futm source 3dgithub 26utm medium 3dreadme 26utm campaign 3dprompt engineering retarget text course free module cta my full course building software ai way professionals do methods paradigms behind reliable efficient modular production systems taught systematically 17 modules each pairing video lecture hands lab first structured prompt working production system course live every module out lecture lab",
+      "source": "GitHub",
+      "original_url": "https://github.com/NirDiamant/Prompt_Engineering",
+      "author": "NirDiamant",
+      "discovery_date": "2026-10-01",
+      "publication_date": "2026-10-01",
+      "category": "Software Engineering",
+      "model": "Not specified",
+      "observations": [
+        {
+          "timestamp": 1790889904.061189,
+          "date": "2026-10-01",
+          "engagement": 7883,
+          "velocity_per_hour": 0.4552305604481275,
+          "components": {
+            "stars": 7883
+          },
+          "positive_ratio": null,
+          "rating_count": 0
+        }
+      ],
+      "cluster_id": "51a12f3d199953542c544442",
+      "engagement_metrics": {
+        "stars": 7883,
+        "stars_per_day_since_repo_creation": 10.926,
+        "engagement_components": {
+          "stars": 7883
+        },
+        "repository": "NirDiamant/Prompt_Engineering",
+        "license": "NOASSERTION",
+        "age_hours": 17316.5,
+        "date_basis": "repository last updated; exact prompt publication date unavailable",
+        "quality_filter": "passed heuristic quality filters",
+        "component_velocity_per_hour": {
+          "stars": 0.4552
+        },
+        "velocity_basis": "first observation; total source interactions divided by item age in hours",
+        "source_velocity_per_hour": 0.4552,
+        "source_sightings": 1,
+        "duplicate_cluster_size": 1,
+        "normalized_scores": {
+          "engagement": 0.5,
+          "trending": 0.078,
+          "positive": 0.5,
+          "recency": 0.999,
+          "usefulness": 0.62
+        },
+        "composite_score": 0.481
+      },
+      "rating": null,
+      "rating_count": 0,
+      "calculated_score": 0.48140526040736276,
+      "trending_score": 0.07822784279088661,
+      "quality_score": 0.62,
+      "last_seen": "2026-10-01",
+      "notification_date": "2026-10-01"
+    }
+  },
+  "notified_clusters": {
+    "51a12f3d199953542c544442": {
+      "notified_at": "2026-10-01T21:25:04+00:00",
+      "source_baselines": {
+        "GitHub": 7883
+      },
+      "resurface_count": 0,
+      "resurface_reason": "",
+      "last_velocity_multiple": null
+    }
+  }
 }
