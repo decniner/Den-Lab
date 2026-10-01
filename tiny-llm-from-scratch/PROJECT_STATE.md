@@ -1,10 +1,4 @@
-# Project State: Tiny LLM from Scratch
-
-## Preservation status
-
-- The recovered attachment `tiny_llm_from_scratch.py.txt` was copied to `simple_llm.py` without changing its source text.
-- This is a reconstruction from prior work. Byte-for-byte identity with an earlier original has not been established.
-- No unrelated project files were changed for this project.
+# Project : Tiny LLM from Scratch
 
 ## Current implementation
 
