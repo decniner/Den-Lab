@@ -170,11 +170,10 @@ def trailer_url(title: Title) -> str:
         "type": "video",
         "maxResults": 5,
         "regionCode": "JP",
-        "key": api_key,
     })
     request = Request(
         f"https://www.googleapis.com/youtube/v3/search?{params}",
-        headers={"User-Agent": USER_AGENT},
+        headers={"User-Agent": USER_AGENT, "x-goog-api-key": api_key},
     )
     try:
         with urlopen(request, timeout=20) as response:
