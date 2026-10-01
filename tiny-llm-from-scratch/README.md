@@ -12,6 +12,10 @@ py -3 simple_llm.py
 
 The script prints its initial `The` embedding and hidden state, the training loss and `P(quick)` after each pass through the eight examples, and a greedy generated sequence. The source currently uses fixed global parameters and starts training when run as a script.
 
+## Visual walkthrough
+
+Open [ds.tooltip.index.html](ds.tooltip.index.html) in a browser for the interactive visual companion. It walks through the token-to-update pipeline using the same sentence and several of the same checkpoint values. Its diagrams and animations are a separate explanatory presentation; they do not execute `simple_llm.py` or derive every displayed value from its training loop.
+
 ## The experiment
 
 The training sentence is:
