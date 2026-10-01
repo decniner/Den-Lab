@@ -12,6 +12,8 @@ Checks Netflix's official Japanese “new to watch” page daily and sends a Tel
    - `TELEGRAM_CHAT_ID`: your numeric Telegram chat ID
 5. In **Actions**, open **Netflix Japan Telegram notifications → Run workflow**. Select **Send a Telegram test message** to verify the bot.
 
+Optionally, enable the YouTube Data API in a Google Cloud project, create an API key, and add it as the `YOUTUBE_API_KEY` secret. When set, the notifier links a title-matched trailer from a Netflix YouTube channel when it can verify one. Without the key, it includes a YouTube search link instead. Keep the key private.
+
 The scheduled check runs daily at 06:00 Japan time. You can also start a regular check manually from the Actions page.
 
 ## Scope and limitations
@@ -20,3 +22,4 @@ The scheduled check runs daily at 06:00 Japan time. You can also start a regular
 - The first normal run only notifies titles dated today, then records earlier titles as already seen to avoid a backlog.
 - Release notices depend on Netflix maintaining the public page and its dated entries.
 - Never commit bot tokens to the repository or paste them into chat.
+- YouTube links are either a matching video from a Netflix channel or a search page; the notifier does not claim unverified videos are official trailers.

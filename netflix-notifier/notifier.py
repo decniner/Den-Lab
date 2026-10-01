@@ -1,4 +1,4 @@
-"""Send a Telegram message when Netflix Japan's official release page lists titles for today."""
+"""Notify Telegram when Netflix Japan's official release page lists titles for today."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from datetime import date, datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlparse
+from urllib.parse import quote_plus, urlencode, urlparse
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
@@ -158,6 +158,44 @@ def send_telegram(text: str) -> None:
         raise RuntimeError("Telegram rejected the message; check the bot token and chat ID.")
 
 
+def trailer_url(title: Title) -> str:
+    query = f"{title.name} Netflix official trailer"
+    api_key = os.environ.get("YOUTUBE_API_KEY", "").strip()
+    if not api_key:
+        return f"https://www.youtube.com/results?search_query={quote_plus(query)}"
+
+    params = urlencode({
+        "part": "snippet",
+        "q": query,
+        "type": "video",
+        "maxResults": 5,
+        "regionCode": "JP",
+        "key": api_key,
+    })
+    request = Request(
+        f"https://www.googleapis.com/youtube/v3/search?{params}",
+        headers={"User-Agent": USER_AGENT},
+    )
+    try:
+        with urlopen(request, timeout=20) as response:
+            result = json.loads(response.read().decode("utf-8"))
+    except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as exc:
+        print(f"WARNING: YouTube lookup unavailable ({type(exc).__name__}); using a search link.")
+        return f"https://www.youtube.com/results?search_query={quote_plus(query)}"
+
+    normalized_name = " ".join(title.name.casefold().split())
+    for item in result.get("items", []):
+        snippet = item.get("snippet", {})
+        video_title = " ".join(snippet.get("title", "").casefold().split())
+        channel = snippet.get("channelTitle", "").casefold()
+        video_id = item.get("id", {}).get("videoId")
+        is_trailer = any(word in video_title for word in ("trailer", "teaser", "予告", "特報"))
+        if video_id and "netflix" in channel and is_trailer and normalized_name in video_title:
+            return f"https://www.youtube.com/watch?v={video_id}"
+
+    return f"https://www.youtube.com/results?search_query={quote_plus(query)}"
+
+
 def main() -> int:
     if "--test" in sys.argv:
         send_telegram("✅ Netflix Japan notifier is connected. I’ll message you when titles are released.")
@@ -181,7 +219,7 @@ def main() -> int:
     if new_titles:
         lines = [f"🎬 New on Netflix Japan — {today.isoformat()}", ""]
         for title in new_titles:
-            lines.extend((f"• {title.name}", title.url, ""))
+            lines.extend((f"• {title.name}", f"Netflix: {title.url}", f"Trailer: {trailer_url(title)}", ""))
         send_telegram("\n".join(lines).strip())
         print(f"Sent {len(new_titles)} new title(s).")
     else:
