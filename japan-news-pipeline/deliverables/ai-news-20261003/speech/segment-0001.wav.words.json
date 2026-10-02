@@ -1,0 +1,56 @@
+﻿[
+    {
+        "text":  "First",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "Black",
+        "start":  1,
+        "index":  7,
+        "count":  5
+    },
+    {
+        "text":  "Forest",
+        "start":  1.305,
+        "index":  13,
+        "count":  6
+    },
+    {
+        "text":  "Labs",
+        "start":  1.78,
+        "index":  20,
+        "count":  4
+    },
+    {
+        "text":  "has",
+        "start":  2.0949999999999998,
+        "index":  25,
+        "count":  3
+    },
+    {
+        "text":  "released",
+        "start":  2.2849999999999997,
+        "index":  29,
+        "count":  8
+    },
+    {
+        "text":  "Flux",
+        "start":  2.695,
+        "index":  38,
+        "count":  4
+    },
+    {
+        "text":  "Three",
+        "start":  3.0949999999999998,
+        "index":  43,
+        "count":  5
+    },
+    {
+        "text":  "Image",
+        "start":  3.33,
+        "index":  49,
+        "count":  5
+    }
+]

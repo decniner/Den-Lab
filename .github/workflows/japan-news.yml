@@ -10,7 +10,7 @@ on:
       edition:
         description: Rendered edition for current mode
         type: choice
-        options: [japan-news-20261002-en, philippine-news-20261003-en, global-news-20261003-en]
+        options: [japan-news-20261002-en, philippine-news-20261003-en, global-news-20261003-en, ai-news-20261003-en]
         default: japan-news-20261002-en
   # Initially disabled. 22:00 UTC is 07:00 JST the following day.
   # schedule:

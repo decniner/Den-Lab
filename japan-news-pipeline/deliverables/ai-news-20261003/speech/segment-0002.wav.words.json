@@ -1,0 +1,98 @@
+﻿[
+    {
+        "text":  "The",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "company",
+        "start":  0.19999999999999998,
+        "index":  4,
+        "count":  7
+    },
+    {
+        "text":  "describes",
+        "start":  0.64,
+        "index":  12,
+        "count":  9
+    },
+    {
+        "text":  "images",
+        "start":  1.2,
+        "index":  22,
+        "count":  6
+    },
+    {
+        "text":  "up",
+        "start":  1.66,
+        "index":  29,
+        "count":  2
+    },
+    {
+        "text":  "to",
+        "start":  1.805,
+        "index":  32,
+        "count":  2
+    },
+    {
+        "text":  "four",
+        "start":  1.9049999999999998,
+        "index":  35,
+        "count":  4
+    },
+    {
+        "text":  "K",
+        "start":  2.1799999999999997,
+        "index":  40,
+        "count":  1
+    },
+    {
+        "text":  "targeted",
+        "start":  2.875,
+        "index":  43,
+        "count":  8
+    },
+    {
+        "text":  "edits",
+        "start":  3.3249999999999997,
+        "index":  52,
+        "count":  5
+    },
+    {
+        "text":  "and",
+        "start":  4.17,
+        "index":  59,
+        "count":  3
+    },
+    {
+        "text":  "bounding",
+        "start":  4.31,
+        "index":  63,
+        "count":  8
+    },
+    {
+        "text":  "boxes",
+        "start":  4.74,
+        "index":  72,
+        "count":  5
+    },
+    {
+        "text":  "for",
+        "start":  5.18,
+        "index":  78,
+        "count":  3
+    },
+    {
+        "text":  "placing",
+        "start":  5.33,
+        "index":  82,
+        "count":  7
+    },
+    {
+        "text":  "objects",
+        "start":  5.8199999999999994,
+        "index":  90,
+        "count":  7
+    }
+]

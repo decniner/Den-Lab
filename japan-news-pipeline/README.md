@@ -1,5 +1,19 @@
 # Reviewed news video pipeline
 
+The AI edition is in `deliverables/ai-news-20261003/ai-news-80s-tiktok.mp4`:
+80 seconds, 1080x1920, English synthetic narration and timed captions. Primary-source
+announcements dated October 1 cover FLUX 3 Image, Strands Decider 2B, and a proposed
+AI agent accountability bill. Vendor capabilities are attributed; the bill is
+described as proposed legislation. YouTube confirmed private ID `Bo7NSIMN3sM`:
+https://www.youtube.com/watch?v=Bo7NSIMN3sM.
+See [AI verification](docs/ai-verification.md).
+
+```powershell
+python -m news_pipeline upload-rendered --edition ai-news-20261003-en --bundle deliverables/ai-news-20261003
+```
+
+Retry only with the same durable state used for the confirmed upload below.
+
 The global edition is in `deliverables/global-news-20261003/global-news-80s-tiktok.mp4`:
 80 seconds, 1080x1920, English narration and timed captions. Its stories cover
 Ethiopia–Eritrea diplomacy, Europe's summer climate review and the international
@@ -37,7 +51,7 @@ required; the daily schedule starts disabled.
 The real 80-second Japan video is in `deliverables/japan-news-20261002/japan-news-80s-tiktok.mp4`.
 For uploading this exact render and configuring the private GitLab morning workflow,
 see [GitLab and OAuth setup](docs/gitlab-setup.md). Live scheduling still requires
-your account configuration; the two local private uploads are recorded above.
+your account configuration; the confirmed local private uploads are recorded above.
 
 Python CLI for making source-backed editions, rendering a captioned video, and
 uploading privately. Public publishing is a separate explicit command bound to

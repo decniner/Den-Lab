@@ -1,0 +1,92 @@
+﻿[
+    {
+        "text":  "Third",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "U",
+        "start":  0.89,
+        "index":  7,
+        "count":  1
+    },
+    {
+        "text":  "S",
+        "start":  1.065,
+        "index":  9,
+        "count":  1
+    },
+    {
+        "text":  "Senators",
+        "start":  1.295,
+        "index":  11,
+        "count":  8
+    },
+    {
+        "text":  "Josh",
+        "start":  1.785,
+        "index":  20,
+        "count":  4
+    },
+    {
+        "text":  "Hawley",
+        "start":  2.1149999999999998,
+        "index":  25,
+        "count":  6
+    },
+    {
+        "text":  "and",
+        "start":  2.4499999999999997,
+        "index":  32,
+        "count":  3
+    },
+    {
+        "text":  "Chris",
+        "start":  2.59,
+        "index":  36,
+        "count":  5
+    },
+    {
+        "text":  "Murphy",
+        "start":  2.8899999999999997,
+        "index":  42,
+        "count":  6
+    },
+    {
+        "text":  "announced",
+        "start":  3.2399999999999998,
+        "index":  49,
+        "count":  9
+    },
+    {
+        "text":  "the",
+        "start":  3.695,
+        "index":  59,
+        "count":  3
+    },
+    {
+        "text":  "AI",
+        "start":  3.86,
+        "index":  63,
+        "count":  2
+    },
+    {
+        "text":  "Agent",
+        "start":  4.26,
+        "index":  66,
+        "count":  5
+    },
+    {
+        "text":  "Accountability",
+        "start":  4.63,
+        "index":  72,
+        "count":  14
+    },
+    {
+        "text":  "Act",
+        "start":  5.4449999999999994,
+        "index":  87,
+        "count":  3
+    }
+]

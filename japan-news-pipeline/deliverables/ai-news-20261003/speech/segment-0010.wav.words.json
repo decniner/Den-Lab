@@ -1,0 +1,116 @@
+﻿[
+    {
+        "text":  "The",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "sponsors",
+        "start":  0.18,
+        "index":  4,
+        "count":  8
+    },
+    {
+        "text":  "say",
+        "start":  0.76,
+        "index":  13,
+        "count":  3
+    },
+    {
+        "text":  "developers",
+        "start":  0.96,
+        "index":  17,
+        "count":  10
+    },
+    {
+        "text":  "could",
+        "start":  1.555,
+        "index":  28,
+        "count":  5
+    },
+    {
+        "text":  "face",
+        "start":  1.7349999999999999,
+        "index":  34,
+        "count":  4
+    },
+    {
+        "text":  "liability",
+        "start":  2.0949999999999998,
+        "index":  39,
+        "count":  9
+    },
+    {
+        "text":  "for",
+        "start":  2.6799999999999997,
+        "index":  49,
+        "count":  3
+    },
+    {
+        "text":  "failing",
+        "start":  2.8449999999999998,
+        "index":  53,
+        "count":  7
+    },
+    {
+        "text":  "to",
+        "start":  3.2399999999999998,
+        "index":  61,
+        "count":  2
+    },
+    {
+        "text":  "add",
+        "start":  3.385,
+        "index":  64,
+        "count":  3
+    },
+    {
+        "text":  "reasonable",
+        "start":  3.605,
+        "index":  68,
+        "count":  10
+    },
+    {
+        "text":  "safeguards",
+        "start":  4.085,
+        "index":  79,
+        "count":  10
+    },
+    {
+        "text":  "when",
+        "start":  4.74,
+        "index":  90,
+        "count":  4
+    },
+    {
+        "text":  "they",
+        "start":  4.91,
+        "index":  95,
+        "count":  4
+    },
+    {
+        "text":  "know",
+        "start":  5.035,
+        "index":  100,
+        "count":  4
+    },
+    {
+        "text":  "of",
+        "start":  5.265,
+        "index":  105,
+        "count":  2
+    },
+    {
+        "text":  "hacking",
+        "start":  5.3649999999999993,
+        "index":  108,
+        "count":  7
+    },
+    {
+        "text":  "capabilities",
+        "start":  5.7299999999999995,
+        "index":  116,
+        "count":  12
+    }
+]

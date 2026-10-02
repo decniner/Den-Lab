@@ -1,0 +1,26 @@
+{
+  "fixture": false,
+  "checked_by": "assistant primary-source review; operator authorized private upload",
+  "timestamp_note": "Date-only announcements conservatively use UTC start of publication day; these are freshness bounds, not exact posting times.",
+  "sources": [
+    {
+      "id": "bfl-image",
+      "url": "https://bfl.ai/models/flux-3-image",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "timestamp_precision": "date",
+      "date_evidence": "https://gigazine.net/news/20261002-flux-3-image/"
+    },
+    {
+      "id": "strands-decider",
+      "url": "https://strandsagents.com/blog/introducing-strands-decider/",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "timestamp_precision": "date"
+    },
+    {
+      "id": "hawley-proposal",
+      "url": "https://www.hawley.senate.gov/senators-hawley-murphy-announce-bipartisan-ai-agent-accountability-act/",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "timestamp_precision": "date"
+    }
+  ]
+}

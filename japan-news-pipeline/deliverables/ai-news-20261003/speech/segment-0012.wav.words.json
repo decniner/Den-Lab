@@ -1,0 +1,68 @@
+﻿[
+    {
+        "text":  "Read",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  4
+    },
+    {
+        "text":  "the",
+        "start":  0.315,
+        "index":  5,
+        "count":  3
+    },
+    {
+        "text":  "original",
+        "start":  0.445,
+        "index":  9,
+        "count":  8
+    },
+    {
+        "text":  "source",
+        "start":  0.90499999999999992,
+        "index":  18,
+        "count":  6
+    },
+    {
+        "text":  "links",
+        "start":  1.3199999999999998,
+        "index":  25,
+        "count":  5
+    },
+    {
+        "text":  "in",
+        "start":  1.6099999999999999,
+        "index":  31,
+        "count":  2
+    },
+    {
+        "text":  "the",
+        "start":  1.7049999999999998,
+        "index":  34,
+        "count":  3
+    },
+    {
+        "text":  "description",
+        "start":  1.795,
+        "index":  38,
+        "count":  11
+    },
+    {
+        "text":  "for",
+        "start":  2.385,
+        "index":  50,
+        "count":  3
+    },
+    {
+        "text":  "more",
+        "start":  2.5349999999999997,
+        "index":  54,
+        "count":  4
+    },
+    {
+        "text":  "details",
+        "start":  2.7849999999999997,
+        "index":  59,
+        "count":  7
+    }
+]

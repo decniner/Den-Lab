@@ -41,17 +41,18 @@ with disposable state is not used for uploads.
 In Actions > News editions private upload > Run workflow choose:
 
 - `dry-run`: hosted offline tests and fixture validation; no YouTube credentials used.
-- `current`: choose `japan-news-20261002-en`, `philippine-news-20261003-en`, or `global-news-20261003-en`
+- `current`: choose `japan-news-20261002-en`, `philippine-news-20261003-en`, `global-news-20261003-en`, or `ai-news-20261003-en`
   in the edition input to privately upload that exact render. Its source freshness
   is limited to 48 hours, so this will fail after expiration rather than post old news.
 - `morning`: upload today's producer-reviewed bundle from the durable inbox.
 
 Use the inbox format and exact-video factual review fields in `gitlab-setup.md`.
-`japan-news-YYYYMMDD-en`, `philippine-news-YYYYMMDD-en`, and `global-news-YYYYMMDD-en` are accepted
+`japan-news-YYYYMMDD-en`, `philippine-news-YYYYMMDD-en`, `global-news-YYYYMMDD-en`, and `ai-news-YYYYMMDD-en` are accepted
 for today's date in Japan time. The inbox contains one prepared edition per day;
 place the chosen country edition there. For Philippine bundles set validation.json
 `video_file` to `philippine-news-80s-tiktok.mp4` and provide its accurate `title`.
 For global bundles use `global-news-80s-tiktok.mp4` and the global edition title.
+For AI bundles use `ai-news-80s-tiktok.mp4` and the AI edition title.
 Morning automation uploads prepared editions; it does not autonomously research,
 narrate or render fresh daily videos. Missing or invalid editions fail.
 

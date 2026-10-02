@@ -1,0 +1,126 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Graphic,Arial,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,7,80,180,0,1
+Style: Caption,Arial,56,&H00FFFFFF,&H00FFFFFF,&H00100A05,&H00100A05,-1,0,0,0,100,100,0,0,1,4,1,2,95,190,400,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,120)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,240)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,360)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,480)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,600)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,720)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,840)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,960)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1080)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1200)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1320)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1440)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1560)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1680)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1800)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(120,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(240,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(360,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(480,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(600,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(720,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(840,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(960,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,178)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 60 0 60 6 0 6{\p0}
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,110)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}AI TODAY
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,214)\fad(120,100)\fs24\b0\1c&HCEB9A6&\bord0\shad0}03 OCT 2026 / ANNOUNCEMENTS FROM OCT 1
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1615)\fad(120,100)\fs23\b0\1c&HCEB9A6&\bord0\shad0}Synthetic narration / Original graphics
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1545)\p1\1c&H4F3823&\bord0\shad0}m 0 0 l 800 0 800 5 0 5{\p0}
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,320)\fad(120,100)\fs28\b1\1c&HC7DC4C&\bord0\shad0}THREE VERIFIED UPDATES
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,420)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}AI NEWS\NIN 80 SECONDS
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,865)\fad(120,100)\fs110\b1\1c&H5D55FC&\bord0\shad0}01
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(275,910)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}IMAGE GENERATION
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,1050)\fad(120,100)\fs110\b1\1c&HC7DC4C&\bord0\shad0}02
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(275,1095)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}LOCAL AI MODEL
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,1235)\fad(120,100)\fs110\b1\1c&H66D1FF&\bord0\shad0}03
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(275,1280)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}AI POLICY
+Dialogue: 0,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 0,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 0,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,290)\fad(120,100)\fs27\b1\1c&H5D55FC&\bord0\shad0}01 / IMAGE GENERATION
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,375)\fad(120,100)\fs68\b1\1c&HFFFFFF&\bord0\shad0}FLUX 3 IMAGE\NNEW CONTROLS
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,650)\fad(120,100)\fs29\b0\1c&HCEB9A6&\bord0\shad0}BLACK FOREST LABS
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,755)\fad(120,100)\fs65\b1\1c&H5D55FC&\bord0\shad0}4K\NTARGETED EDITS
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,1020)\fad(120,100)\fs28\b1\1c&HFFFFFF&\bord0\shad0}Bounding boxes for image composition
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,1120)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}Capabilities described by the vendor
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,1250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: BLACK FOREST LABS / OCT 1
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,290)\fad(120,100)\fs27\b1\1c&HC7DC4C&\bord0\shad0}02 / LOCAL AI
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,375)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}STRANDS\NDECIDER 2B
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,650)\fad(120,100)\fs28\b0\1c&HCEB9A6&\bord0\shad0}A SMALL DECISION MODEL
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,755)\fad(120,100)\fs65\b1\1c&HC7DC4C&\bord0\shad0}2 BILLION\NPARAMETERS
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,1020)\fad(120,100)\fs31\b1\1c&HFFFFFF&\bord0\shad0}Selects options / assigns scores
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,1120)\fad(120,100)\fs30\b0\1c&HCEB9A6&\bord0\shad0}Runs locally / CPU or GPU
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,1250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: STRANDS AGENTS / OCT 1
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,290)\fad(120,100)\fs27\b1\1c&H66D1FF&\bord0\shad0}03 / U.S. AI POLICY
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,375)\fad(120,100)\fs65\b1\1c&HFFFFFF&\bord0\shad0}AI AGENT\NACCOUNTABILITY
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,650)\fad(120,100)\fs28\b0\1c&HCEB9A6&\bord0\shad0}HAWLEY / MURPHY PROPOSAL
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,755)\fad(120,100)\fs69\b1\1c&H66D1FF&\bord0\shad0}HACKING\NSAFEGUARDS
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,1020)\fad(120,100)\fs30\b1\1c&HFFFFFF&\bord0\shad0}Operator and developer liability
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,1120)\fad(120,100)\fs28\b0\1c&HCEB9A6&\bord0\shad0}Proposed legislation / not enacted
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,1250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: SENATOR HAWLEY / OCT 1
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,355)\fad(120,100)\fs59\b1\1c&HFFFFFF&\bord0\shad0}READ THE SOURCES
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,620)\fad(120,100)\fs32\b1\1c&H5D55FC&\bord0\shad0}BLACK FOREST LABS
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,705)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}FLUX 3 Image / October 1
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,850)\fad(120,100)\fs32\b1\1c&HC7DC4C&\bord0\shad0}STRANDS AGENTS
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,935)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}Decider 2B / October 1
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1080)\fad(120,100)\fs32\b1\1c&H66D1FF&\bord0\shad0}SENATOR HAWLEY
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1165)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}Bipartisan AI proposal / October 1
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1325)\fad(120,100)\fs26\b0\1c&HCEB9A6&\bord0\shad0}Source links in the video description
+Dialogue: 5,0:00:00.09,0:00:02.36,Caption,,0,0,0,,{\fad(35,35)}AI news in eighty\Nseconds.
+Dialogue: 5,0:00:02.36,0:00:04.74,Caption,,0,0,0,,{\fad(35,35)}Three verified updates,\Nchecked October
+Dialogue: 5,0:00:04.74,0:00:05.80,Caption,,0,0,0,,{\fad(35,35)}third.
+Dialogue: 5,0:00:06.10,0:00:08.28,Caption,,0,0,0,,{\fad(35,35)}First, Black Forest Labs\Nhas
+Dialogue: 5,0:00:08.28,0:00:10.51,Caption,,0,0,0,,{\fad(35,35)}released Flux Three\NImage.
+Dialogue: 5,0:00:10.61,0:00:12.31,Caption,,0,0,0,,{\fad(35,35)}The company describes\Nimages up
+Dialogue: 5,0:00:12.31,0:00:14.68,Caption,,0,0,0,,{\fad(35,35)}to four K, targeted\Nedits,
+Dialogue: 5,0:00:14.68,0:00:16.32,Caption,,0,0,0,,{\fad(35,35)}and bounding boxes for\Nplacing
+Dialogue: 5,0:00:16.32,0:00:17.70,Caption,,0,0,0,,{\fad(35,35)}objects.
+Dialogue: 5,0:00:17.80,0:00:19.90,Caption,,0,0,0,,{\fad(35,35)}Its demonstrations show\Nchanging part
+Dialogue: 5,0:00:19.90,0:00:21.28,Caption,,0,0,0,,{\fad(35,35)}of a picture while\Npreserving
+Dialogue: 5,0:00:21.28,0:00:23.42,Caption,,0,0,0,,{\fad(35,35)}the rest. These are\Nvendor
+Dialogue: 5,0:00:23.42,0:00:24.80,Caption,,0,0,0,,{\fad(35,35)}claims.
+Dialogue: 5,0:00:25.11,0:00:27.26,Caption,,0,0,0,,{\fad(35,35)}Second, the Strands team\Nhas
+Dialogue: 5,0:00:27.26,0:00:29.28,Caption,,0,0,0,,{\fad(35,35)}released Decider Two B, a
+Dialogue: 5,0:00:29.28,0:00:30.97,Caption,,0,0,0,,{\fad(35,35)}small decision model with\Ntwo
+Dialogue: 5,0:00:30.97,0:00:32.98,Caption,,0,0,0,,{\fad(35,35)}billion parameters.
+Dialogue: 5,0:00:33.09,0:00:34.71,Caption,,0,0,0,,{\fad(35,35)}The official announcement\Nsays it
+Dialogue: 5,0:00:34.71,0:00:35.84,Caption,,0,0,0,,{\fad(35,35)}can run locally on a
+Dialogue: 5,0:00:35.84,0:00:38.46,Caption,,0,0,0,,{\fad(35,35)}processor or graphics\Ncard.
+Dialogue: 5,0:00:38.56,0:00:40.38,Caption,,0,0,0,,{\fad(35,35)}It chooses from supplied\Noptions
+Dialogue: 5,0:00:40.38,0:00:42.49,Caption,,0,0,0,,{\fad(35,35)}or assigns scores, rather\Nthan
+Dialogue: 5,0:00:42.49,0:00:44.85,Caption,,0,0,0,,{\fad(35,35)}writing free form text.
+Dialogue: 5,0:00:44.96,0:00:47.26,Caption,,0,0,0,,{\fad(35,35)}Code, weights, and\Ntraining materials
+Dialogue: 5,0:00:47.26,0:00:48.80,Caption,,0,0,0,,{\fad(35,35)}are available.
+Dialogue: 5,0:00:49.10,0:00:51.20,Caption,,0,0,0,,{\fad(35,35)}Third, U S Senators Josh
+Dialogue: 5,0:00:51.20,0:00:52.85,Caption,,0,0,0,,{\fad(35,35)}Hawley and Chris Murphy\Nannounced
+Dialogue: 5,0:00:52.85,0:00:55.85,Caption,,0,0,0,,{\fad(35,35)}the AI Agent\NAccountability Act.
+Dialogue: 5,0:00:55.95,0:00:57.72,Caption,,0,0,0,,{\fad(35,35)}The proposal would hold\Noperators
+Dialogue: 5,0:00:57.72,0:00:59.68,Caption,,0,0,0,,{\fad(35,35)}and developers\Nresponsible for certain
+Dialogue: 5,0:00:59.68,0:01:01.56,Caption,,0,0,0,,{\fad(35,35)}hacking damage caused by\NAI
+Dialogue: 5,0:01:01.56,0:01:02.93,Caption,,0,0,0,,{\fad(35,35)}agents.
+Dialogue: 5,0:01:03.03,0:01:04.73,Caption,,0,0,0,,{\fad(35,35)}The sponsors say\Ndevelopers could
+Dialogue: 5,0:01:04.73,0:01:06.45,Caption,,0,0,0,,{\fad(35,35)}face liability for\Nfailing to
+Dialogue: 5,0:01:06.45,0:01:08.17,Caption,,0,0,0,,{\fad(35,35)}add reasonable safeguards\Nwhen they
+Dialogue: 5,0:01:08.17,0:01:10.59,Caption,,0,0,0,,{\fad(35,35)}know of hacking\Ncapabilities.
+Dialogue: 5,0:01:10.70,0:01:13.12,Caption,,0,0,0,,{\fad(35,35)}This is proposed\Nlegislation, not
+Dialogue: 5,0:01:13.12,0:01:14.80,Caption,,0,0,0,,{\fad(35,35)}an enacted law.
+Dialogue: 5,0:01:15.11,0:01:16.85,Caption,,0,0,0,,{\fad(35,35)}Read the original source\Nlinks
+Dialogue: 5,0:01:16.85,0:01:18.20,Caption,,0,0,0,,{\fad(35,35)}in the description for\Nmore
+Dialogue: 5,0:01:18.20,0:01:19.80,Caption,,0,0,0,,{\fad(35,35)}details.

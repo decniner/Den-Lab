@@ -1,0 +1,248 @@
+[
+  {
+    "start": 0.09041309431021043,
+    "end": 2.355261106780982,
+    "text": "AI news in eighty seconds.",
+    "story": "intro"
+  },
+  {
+    "start": 2.355261106780982,
+    "end": 4.742166796570538,
+    "text": "Three verified updates, checked October",
+    "story": "intro"
+  },
+  {
+    "start": 4.742166796570538,
+    "end": 5.799999999999999,
+    "text": "third.",
+    "story": "intro"
+  },
+  {
+    "start": 6.099946836788942,
+    "end": 8.283785220627326,
+    "text": "First, Black Forest Labs has",
+    "story": "image"
+  },
+  {
+    "start": 8.283785220627326,
+    "end": 10.507602339181286,
+    "text": "released Flux Three Image.",
+    "story": "image"
+  },
+  {
+    "start": 10.607549175970227,
+    "end": 12.31164274322169,
+    "text": "The company describes images up",
+    "story": "image"
+  },
+  {
+    "start": 12.31164274322169,
+    "end": 14.67538543328017,
+    "text": "to four K, targeted edits,",
+    "story": "image"
+  },
+  {
+    "start": 14.67538543328017,
+    "end": 16.324508240297714,
+    "text": "and bounding boxes for placing",
+    "story": "image"
+  },
+  {
+    "start": 16.324508240297714,
+    "end": 17.703774587985116,
+    "text": "objects.",
+    "story": "image"
+  },
+  {
+    "start": 17.803721424774057,
+    "end": 19.897607655502394,
+    "text": "Its demonstrations show changing part",
+    "story": "image"
+  },
+  {
+    "start": 19.897607655502394,
+    "end": 21.28187134502924,
+    "text": "of a picture while preserving",
+    "story": "image"
+  },
+  {
+    "start": 21.28187134502924,
+    "end": 23.420733652312602,
+    "text": "the rest. These are vendor",
+    "story": "image"
+  },
+  {
+    "start": 23.420733652312602,
+    "end": 24.8,
+    "text": "claims.",
+    "story": "image"
+  },
+  {
+    "start": 25.107231358414058,
+    "end": 27.257220094615903,
+    "text": "Second, the Strands team has",
+    "story": "decisions"
+  },
+  {
+    "start": 27.257220094615903,
+    "end": 29.283892768641586,
+    "text": "released Decider Two B, a",
+    "story": "decisions"
+  },
+  {
+    "start": 29.283892768641586,
+    "end": 30.972786663662987,
+    "text": "small decision model with two",
+    "story": "decisions"
+  },
+  {
+    "start": 30.972786663662987,
+    "end": 32.98337463392656,
+    "text": "billion parameters.",
+    "story": "decisions"
+  },
+  {
+    "start": 33.09060599234061,
+    "end": 34.709799504392876,
+    "text": "The official announcement says it",
+    "story": "decisions"
+  },
+  {
+    "start": 34.709799504392876,
+    "end": 35.83572876774048,
+    "text": "can run locally on a",
+    "story": "decisions"
+  },
+  {
+    "start": 35.83572876774048,
+    "end": 38.45753548096418,
+    "text": "processor or graphics card.",
+    "story": "decisions"
+  },
+  {
+    "start": 38.56476683937824,
+    "end": 40.38233836449651,
+    "text": "It chooses from supplied options",
+    "story": "decisions"
+  },
+  {
+    "start": 40.38233836449651,
+    "end": 42.49479612525344,
+    "text": "or assigns scores, rather than",
+    "story": "decisions"
+  },
+  {
+    "start": 42.49479612525344,
+    "end": 44.84852444244199,
+    "text": "writing free form text.",
+    "story": "decisions"
+  },
+  {
+    "start": 44.955755800856046,
+    "end": 47.255868438837574,
+    "text": "Code, weights, and training materials",
+    "story": "decisions"
+  },
+  {
+    "start": 47.255868438837574,
+    "end": 48.8,
+    "text": "are available.",
+    "story": "decisions"
+  },
+  {
+    "start": 49.10411622276029,
+    "end": 51.20205811138015,
+    "text": "Third, U S Senators Josh",
+    "story": "policy"
+  },
+  {
+    "start": 51.20205811138015,
+    "end": 52.84709443099273,
+    "text": "Hawley and Chris Murphy announced",
+    "story": "policy"
+  },
+  {
+    "start": 52.84709443099273,
+    "end": 55.845641646489106,
+    "text": "the AI Agent Accountability Act.",
+    "story": "policy"
+  },
+  {
+    "start": 55.949757869249396,
+    "end": 57.72493946731235,
+    "text": "The proposal would hold operators",
+    "story": "policy"
+  },
+  {
+    "start": 57.72493946731235,
+    "end": 59.682324455205816,
+    "text": "and developers responsible for certain",
+    "story": "policy"
+  },
+  {
+    "start": 59.682324455205816,
+    "end": 61.561622276029055,
+    "text": "hacking damage caused by AI",
+    "story": "policy"
+  },
+  {
+    "start": 61.561622276029055,
+    "end": 62.925544794188866,
+    "text": "agents.",
+    "story": "policy"
+  },
+  {
+    "start": 63.029661016949156,
+    "end": 64.73196125907991,
+    "text": "The sponsors say developers could",
+    "story": "policy"
+  },
+  {
+    "start": 64.73196125907991,
+    "end": 66.4498789346247,
+    "text": "face liability for failing to",
+    "story": "policy"
+  },
+  {
+    "start": 66.4498789346247,
+    "end": 68.16779661016949,
+    "text": "add reasonable safeguards when they",
+    "story": "policy"
+  },
+  {
+    "start": 68.16779661016949,
+    "end": 70.59370460048427,
+    "text": "know of hacking capabilities.",
+    "story": "policy"
+  },
+  {
+    "start": 70.69782082324457,
+    "end": 73.11852300242131,
+    "text": "This is proposed legislation, not",
+    "story": "policy"
+  },
+  {
+    "start": 73.11852300242131,
+    "end": 74.80000000000001,
+    "text": "an enacted law.",
+    "story": "policy"
+  },
+  {
+    "start": 75.11483253588517,
+    "end": 76.8488038277512,
+    "text": "Read the original source links",
+    "story": "outro"
+  },
+  {
+    "start": 76.8488038277512,
+    "end": 78.19808612440191,
+    "text": "in the description for more",
+    "story": "outro"
+  },
+  {
+    "start": 78.19808612440191,
+    "end": 79.8,
+    "text": "details.",
+    "story": "outro"
+  }
+]

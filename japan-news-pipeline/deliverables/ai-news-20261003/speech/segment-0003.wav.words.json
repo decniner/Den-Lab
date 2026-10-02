@@ -1,0 +1,98 @@
+﻿[
+    {
+        "text":  "Its",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "demonstrations",
+        "start":  0.305,
+        "index":  4,
+        "count":  14
+    },
+    {
+        "text":  "show",
+        "start":  1.165,
+        "index":  19,
+        "count":  4
+    },
+    {
+        "text":  "changing",
+        "start":  1.43,
+        "index":  24,
+        "count":  8
+    },
+    {
+        "text":  "part",
+        "start":  1.9,
+        "index":  33,
+        "count":  4
+    },
+    {
+        "text":  "of",
+        "start":  2.195,
+        "index":  38,
+        "count":  2
+    },
+    {
+        "text":  "a",
+        "start":  2.29,
+        "index":  41,
+        "count":  1
+    },
+    {
+        "text":  "picture",
+        "start":  2.3449999999999998,
+        "index":  43,
+        "count":  7
+    },
+    {
+        "text":  "while",
+        "start":  2.795,
+        "index":  51,
+        "count":  5
+    },
+    {
+        "text":  "preserving",
+        "start":  3.06,
+        "index":  57,
+        "count":  10
+    },
+    {
+        "text":  "the",
+        "start":  3.5799999999999996,
+        "index":  68,
+        "count":  3
+    },
+    {
+        "text":  "rest",
+        "start":  3.7049999999999996,
+        "index":  72,
+        "count":  4
+    },
+    {
+        "text":  "These",
+        "start":  4.995,
+        "index":  78,
+        "count":  5
+    },
+    {
+        "text":  "are",
+        "start":  5.2349999999999994,
+        "index":  84,
+        "count":  3
+    },
+    {
+        "text":  "vendor",
+        "start":  5.35,
+        "index":  88,
+        "count":  6
+    },
+    {
+        "text":  "claims",
+        "start":  5.72,
+        "index":  95,
+        "count":  6
+    }
+]

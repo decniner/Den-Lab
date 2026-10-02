@@ -1,0 +1,86 @@
+﻿[
+    {
+        "text":  "It",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  2
+    },
+    {
+        "text":  "chooses",
+        "start":  0.235,
+        "index":  3,
+        "count":  7
+    },
+    {
+        "text":  "from",
+        "start":  0.615,
+        "index":  11,
+        "count":  4
+    },
+    {
+        "text":  "supplied",
+        "start":  0.84,
+        "index":  16,
+        "count":  8
+    },
+    {
+        "text":  "options",
+        "start":  1.3199999999999998,
+        "index":  25,
+        "count":  7
+    },
+    {
+        "text":  "or",
+        "start":  1.795,
+        "index":  33,
+        "count":  2
+    },
+    {
+        "text":  "assigns",
+        "start":  1.94,
+        "index":  36,
+        "count":  7
+    },
+    {
+        "text":  "scores",
+        "start":  2.375,
+        "index":  44,
+        "count":  6
+    },
+    {
+        "text":  "rather",
+        "start":  3.29,
+        "index":  52,
+        "count":  6
+    },
+    {
+        "text":  "than",
+        "start":  3.5749999999999997,
+        "index":  59,
+        "count":  4
+    },
+    {
+        "text":  "writing",
+        "start":  3.7649999999999997,
+        "index":  64,
+        "count":  7
+    },
+    {
+        "text":  "free",
+        "start":  4.1,
+        "index":  72,
+        "count":  4
+    },
+    {
+        "text":  "form",
+        "start":  4.325,
+        "index":  77,
+        "count":  4
+    },
+    {
+        "text":  "text",
+        "start":  4.665,
+        "index":  82,
+        "count":  4
+    }
+]

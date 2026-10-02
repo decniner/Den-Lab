@@ -1,0 +1,104 @@
+﻿[
+    {
+        "text":  "Second",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  6
+    },
+    {
+        "text":  "the",
+        "start":  1.03,
+        "index":  8,
+        "count":  3
+    },
+    {
+        "text":  "Strands",
+        "start":  1.1099999999999999,
+        "index":  12,
+        "count":  7
+    },
+    {
+        "text":  "team",
+        "start":  1.615,
+        "index":  20,
+        "count":  4
+    },
+    {
+        "text":  "has",
+        "start":  1.9,
+        "index":  25,
+        "count":  3
+    },
+    {
+        "text":  "released",
+        "start":  2.105,
+        "index":  29,
+        "count":  8
+    },
+    {
+        "text":  "Decider",
+        "start":  2.51,
+        "index":  38,
+        "count":  7
+    },
+    {
+        "text":  "Two",
+        "start":  2.9899999999999998,
+        "index":  46,
+        "count":  3
+    },
+    {
+        "text":  "B",
+        "start":  3.2449999999999997,
+        "index":  50,
+        "count":  1
+    },
+    {
+        "text":  "a",
+        "start":  3.9299999999999997,
+        "index":  53,
+        "count":  1
+    },
+    {
+        "text":  "small",
+        "start":  3.9949999999999997,
+        "index":  55,
+        "count":  5
+    },
+    {
+        "text":  "decision",
+        "start":  4.37,
+        "index":  61,
+        "count":  8
+    },
+    {
+        "text":  "model",
+        "start":  4.83,
+        "index":  70,
+        "count":  5
+    },
+    {
+        "text":  "with",
+        "start":  5.175,
+        "index":  76,
+        "count":  4
+    },
+    {
+        "text":  "two",
+        "start":  5.34,
+        "index":  81,
+        "count":  3
+    },
+    {
+        "text":  "billion",
+        "start":  5.5699999999999994,
+        "index":  85,
+        "count":  7
+    },
+    {
+        "text":  "parameters",
+        "start":  5.93,
+        "index":  93,
+        "count":  10
+    }
+]

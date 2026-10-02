@@ -1,0 +1,50 @@
+﻿[
+    {
+        "text":  "This",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  4
+    },
+    {
+        "text":  "is",
+        "start":  0.305,
+        "index":  5,
+        "count":  2
+    },
+    {
+        "text":  "proposed",
+        "start":  0.425,
+        "index":  8,
+        "count":  8
+    },
+    {
+        "text":  "legislation",
+        "start":  0.955,
+        "index":  17,
+        "count":  11
+    },
+    {
+        "text":  "not",
+        "start":  2.195,
+        "index":  30,
+        "count":  3
+    },
+    {
+        "text":  "an",
+        "start":  2.425,
+        "index":  34,
+        "count":  2
+    },
+    {
+        "text":  "enacted",
+        "start":  2.53,
+        "index":  37,
+        "count":  7
+    },
+    {
+        "text":  "law",
+        "start":  3.0149999999999997,
+        "index":  45,
+        "count":  3
+    }
+]

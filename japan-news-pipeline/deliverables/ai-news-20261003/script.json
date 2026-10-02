@@ -1,0 +1,72 @@
+{
+  "edition": "ai-news-20261003-en",
+  "mode": "live-news",
+  "language": "en",
+  "source_checked_at": "2026-10-02T15:51:21.835954+00:00",
+  "public_approval": "not requested",
+  "segments": [
+    {
+      "story": "intro",
+      "text": "AI news in eighty seconds. Three verified updates, checked October third."
+    },
+    {
+      "story": "image",
+      "text": "First, Black Forest Labs has released Flux Three Image.",
+      "source": "bfl-image"
+    },
+    {
+      "story": "image",
+      "text": "The company describes images up to four K, targeted edits, and bounding boxes for placing objects.",
+      "source": "bfl-image"
+    },
+    {
+      "story": "image",
+      "text": "Its demonstrations show changing part of a picture while preserving the rest. These are vendor claims.",
+      "source": "bfl-image"
+    },
+    {
+      "story": "decisions",
+      "text": "Second, the Strands team has released Decider Two B, a small decision model with two billion parameters.",
+      "source": "strands-decider"
+    },
+    {
+      "story": "decisions",
+      "text": "The official announcement says it can run locally on a processor or graphics card.",
+      "source": "strands-decider"
+    },
+    {
+      "story": "decisions",
+      "text": "It chooses from supplied options or assigns scores, rather than writing free form text.",
+      "source": "strands-decider"
+    },
+    {
+      "story": "decisions",
+      "text": "Code, weights, and training materials are available.",
+      "source": "strands-decider"
+    },
+    {
+      "story": "policy",
+      "text": "Third, U S Senators Josh Hawley and Chris Murphy announced the AI Agent Accountability Act.",
+      "source": "hawley-proposal"
+    },
+    {
+      "story": "policy",
+      "text": "The proposal would hold operators and developers responsible for certain hacking damage caused by AI agents.",
+      "source": "hawley-proposal"
+    },
+    {
+      "story": "policy",
+      "text": "The sponsors say developers could face liability for failing to add reasonable safeguards when they know of hacking capabilities.",
+      "source": "hawley-proposal"
+    },
+    {
+      "story": "policy",
+      "text": "This is proposed legislation, not an enacted law.",
+      "source": "hawley-proposal"
+    },
+    {
+      "story": "outro",
+      "text": "Read the original source links in the description for more details."
+    }
+  ]
+}

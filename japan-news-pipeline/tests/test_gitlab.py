@@ -80,6 +80,13 @@ class RenderedTests(unittest.TestCase):
             with self.assertRaises(Failure): rendered.prepare(self.store,self.target,"other",NOW)
 
 class MorningTests(unittest.TestCase):
+    def test_today_prepared_ai_edition_can_be_selected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            today=Path(directory)/'2026-10-02'; today.mkdir()
+            (today/'bundle').mkdir()
+            (today/'ready.json').write_text(json.dumps({'edition':'ai-news-20261002-en','bundle':'bundle'}))
+            edition,path=morning.select_bundle(Path(directory),NOW)
+            self.assertEqual(edition,'ai-news-20261002-en')
     def test_today_prepared_global_edition_can_be_selected(self):
         with tempfile.TemporaryDirectory() as directory:
             today=Path(directory)/'2026-10-02'; today.mkdir()

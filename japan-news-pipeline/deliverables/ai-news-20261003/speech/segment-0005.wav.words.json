@@ -1,0 +1,86 @@
+﻿[
+    {
+        "text":  "The",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "official",
+        "start":  0.215,
+        "index":  4,
+        "count":  8
+    },
+    {
+        "text":  "announcement",
+        "start":  0.66499999999999992,
+        "index":  13,
+        "count":  12
+    },
+    {
+        "text":  "says",
+        "start":  1.2349999999999999,
+        "index":  26,
+        "count":  4
+    },
+    {
+        "text":  "it",
+        "start":  1.5,
+        "index":  31,
+        "count":  2
+    },
+    {
+        "text":  "can",
+        "start":  1.6099999999999999,
+        "index":  34,
+        "count":  3
+    },
+    {
+        "text":  "run",
+        "start":  1.815,
+        "index":  38,
+        "count":  3
+    },
+    {
+        "text":  "locally",
+        "start":  2.06,
+        "index":  42,
+        "count":  7
+    },
+    {
+        "text":  "on",
+        "start":  2.48,
+        "index":  50,
+        "count":  2
+    },
+    {
+        "text":  "a",
+        "start":  2.605,
+        "index":  53,
+        "count":  1
+    },
+    {
+        "text":  "processor",
+        "start":  2.6599999999999997,
+        "index":  55,
+        "count":  9
+    },
+    {
+        "text":  "or",
+        "start":  3.3049999999999997,
+        "index":  65,
+        "count":  2
+    },
+    {
+        "text":  "graphics",
+        "start":  3.445,
+        "index":  68,
+        "count":  8
+    },
+    {
+        "text":  "card",
+        "start":  3.96,
+        "index":  77,
+        "count":  4
+    }
+]

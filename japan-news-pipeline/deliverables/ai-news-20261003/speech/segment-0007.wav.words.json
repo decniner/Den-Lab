@@ -1,0 +1,44 @@
+﻿[
+    {
+        "text":  "Code",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  4
+    },
+    {
+        "text":  "weights",
+        "start":  0.58,
+        "index":  6,
+        "count":  7
+    },
+    {
+        "text":  "and",
+        "start":  1.13,
+        "index":  15,
+        "count":  3
+    },
+    {
+        "text":  "training",
+        "start":  1.26,
+        "index":  19,
+        "count":  8
+    },
+    {
+        "text":  "materials",
+        "start":  1.645,
+        "index":  28,
+        "count":  9
+    },
+    {
+        "text":  "are",
+        "start":  2.245,
+        "index":  38,
+        "count":  3
+    },
+    {
+        "text":  "available",
+        "start":  2.385,
+        "index":  42,
+        "count":  9
+    }
+]

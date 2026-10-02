@@ -1,0 +1,68 @@
+﻿[
+    {
+        "text":  "AI",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  2
+    },
+    {
+        "text":  "news",
+        "start":  0.45499999999999996,
+        "index":  3,
+        "count":  4
+    },
+    {
+        "text":  "in",
+        "start":  0.74,
+        "index":  8,
+        "count":  2
+    },
+    {
+        "text":  "eighty",
+        "start":  0.86,
+        "index":  11,
+        "count":  6
+    },
+    {
+        "text":  "seconds",
+        "start":  1.085,
+        "index":  18,
+        "count":  7
+    },
+    {
+        "text":  "Three",
+        "start":  2.605,
+        "index":  27,
+        "count":  5
+    },
+    {
+        "text":  "verified",
+        "start":  2.86,
+        "index":  33,
+        "count":  8
+    },
+    {
+        "text":  "updates",
+        "start":  3.42,
+        "index":  42,
+        "count":  7
+    },
+    {
+        "text":  "checked",
+        "start":  4.4049999999999994,
+        "index":  51,
+        "count":  7
+    },
+    {
+        "text":  "October",
+        "start":  4.6949999999999994,
+        "index":  59,
+        "count":  7
+    },
+    {
+        "text":  "third",
+        "start":  5.245,
+        "index":  67,
+        "count":  5
+    }
+]
