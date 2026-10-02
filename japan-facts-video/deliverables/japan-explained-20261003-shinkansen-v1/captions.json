@@ -1,0 +1,152 @@
+[
+  {
+    "start": 0.09999999999999999,
+    "end": 1.805,
+    "text": "Japan's bullet trains can begin"
+  },
+  {
+    "start": 1.805,
+    "end": 3.875,
+    "text": "braking before strong earthquake shaking"
+  },
+  {
+    "start": 3.875,
+    "end": 5.25,
+    "text": "arrives."
+  },
+  {
+    "start": 5.35,
+    "end": 7.07,
+    "text": "This is early warning, not"
+  },
+  {
+    "start": 7.07,
+    "end": 9.855,
+    "text": "prediction. The earthquake has already"
+  },
+  {
+    "start": 9.855,
+    "end": 11.1,
+    "text": "started."
+  },
+  {
+    "start": 11.2,
+    "end": 12.765,
+    "text": "J R East's system detects"
+  },
+  {
+    "start": 12.765,
+    "end": 14.684999999999999,
+    "text": "fast P waves, the first"
+  },
+  {
+    "start": 14.684999999999999,
+    "end": 16.77,
+    "text": "seismic vibrations."
+  },
+  {
+    "start": 16.87,
+    "end": 18.505,
+    "text": "Slower S waves and surface"
+  },
+  {
+    "start": 18.505,
+    "end": 21.405,
+    "text": "waves generally bring stronger shaking."
+  },
+  {
+    "start": 21.505000000000003,
+    "end": 22.755000000000003,
+    "text": "Imagine a sensor near the"
+  },
+  {
+    "start": 22.755000000000003,
+    "end": 25.305,
+    "text": "earthquake. It detects the first"
+  },
+  {
+    "start": 25.305,
+    "end": 27.055,
+    "text": "wave, then sends a warning"
+  },
+  {
+    "start": 27.055,
+    "end": 28.735,
+    "text": "toward the railway."
+  },
+  {
+    "start": 28.835,
+    "end": 30.48,
+    "text": "When the railway system decides"
+  },
+  {
+    "start": 30.48,
+    "end": 32.16,
+    "text": "action is needed, it cuts"
+  },
+  {
+    "start": 32.16,
+    "end": 34.555,
+    "text": "power, triggering the train's emergency"
+  },
+  {
+    "start": 34.555,
+    "end": 35.89,
+    "text": "brakes."
+  },
+  {
+    "start": 35.99,
+    "end": 38.12,
+    "text": "The electrical signal outruns seismic"
+  },
+  {
+    "start": 38.12,
+    "end": 40.62,
+    "text": "waves. That means braking can"
+  },
+  {
+    "start": 40.62,
+    "end": 42.305,
+    "text": "start while stronger shaking is"
+  },
+  {
+    "start": 42.305,
+    "end": 43.935,
+    "text": "still on its way."
+  },
+  {
+    "start": 44.035000000000004,
+    "end": 45.665,
+    "text": "But near the earthquake, the"
+  },
+  {
+    "start": 45.665,
+    "end": 47.995000000000005,
+    "text": "warning may arrive too late."
+  },
+  {
+    "start": 47.995000000000005,
+    "end": 49.730000000000004,
+    "text": "Braking early does not guarantee"
+  },
+  {
+    "start": 49.730000000000004,
+    "end": 51.82,
+    "text": "stopping before shaking."
+  },
+  {
+    "start": 51.92,
+    "end": 53.77,
+    "text": "The takeaway: detect what has"
+  },
+  {
+    "start": 53.77,
+    "end": 55.48,
+    "text": "started, then use the time"
+  },
+  {
+    "start": 55.48,
+    "end": 57.665,
+    "text": "difference to reduce risk."
+  }
+]

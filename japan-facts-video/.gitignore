@@ -8,3 +8,6 @@ state/
 *.log
 .tools/
 .test-tmp/
+deliverables/**/*.mp4
+deliverables/**/*.wav
+deliverables/**/*.mp3

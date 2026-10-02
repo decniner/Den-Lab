@@ -1,0 +1,260 @@
+{
+  "mode": "live",
+  "checked_at": "2026-10-02T17:08:16.495219+00:00",
+  "retrieval_provider": "reviewed-snapshot",
+  "retrieval_method": "Assistant browsing-tool retrieval of the actual publisher pages; short verbatim evidence anchors retained with editorial paraphrase. Direct shell HTTPS fetch failed under network restrictions and is not claimed successful.",
+  "fact_id": "shinkansen-wave-warning",
+  "semantic_key": "rail-earthquake-wave-warning",
+  "sources": [
+    {
+      "id": "jr-detection",
+      "url": "https://www.jreast.co.jp/e/press/20071102/index.html",
+      "publisher": "East Japan Railway Company",
+      "independence_group": "jr-east",
+      "authoritative": true,
+      "published_date": "2007-11-06",
+      "role": "Primary operator description of P-wave detection; established mechanism, not a new launch",
+      "excerpts": [
+        {
+          "id": "detect",
+          "quote": "detects preliminary earthquake tremors (P waves)"
+        },
+        {
+          "id": "warn",
+          "quote": "immediately issues earthquake warning information"
+        }
+      ],
+      "content_sha256": "b4b90af626644dbcaa99ce7a5111708029d72583ae1f1e5cd7b6f3e63251d127"
+    },
+    {
+      "id": "jr-brakes",
+      "url": "https://www.jreast.co.jp/e/press/20080202/index.html",
+      "publisher": "East Japan Railway Company",
+      "independence_group": "jr-east",
+      "authoritative": true,
+      "published_date": "2008-02-08",
+      "role": "Primary operator explanation of onboard power-cut detection and emergency braking",
+      "excerpts": [
+        {
+          "id": "brake",
+          "quote": "the emergency brake is applied"
+        },
+        {
+          "id": "power",
+          "quote": "the power cut is detected onboard"
+        }
+      ],
+      "content_sha256": "4b80ae232ac2f5bf24fd9a31fc749362bdd7e636401256441217a9a04135848e"
+    },
+    {
+      "id": "usgs-waves",
+      "url": "https://www.usgs.gov/programs/earthquake-hazards/science/earthquake-early-warning-overview",
+      "publisher": "US Geological Survey",
+      "independence_group": "usgs",
+      "authoritative": true,
+      "published_date": "2022-03-09",
+      "role": "Independent specialist explanation of seismic waves and fast telecommunications; US system examples are not asserted to be JR operating thresholds",
+      "excerpts": [
+        {
+          "id": "prediction",
+          "quote": "not earthquake prediction"
+        },
+        {
+          "id": "started",
+          "quote": "already started"
+        },
+        {
+          "id": "first",
+          "quote": "fastest-moving seismic waves"
+        },
+        {
+          "id": "stronger",
+          "quote": "slower moving, and generally more damaging"
+        },
+        {
+          "id": "signal",
+          "quote": "many times faster than seismic waves"
+        },
+        {
+          "id": "protect",
+          "quote": "slowing a train"
+        }
+      ],
+      "content_sha256": "4a95884a8712274efbeaa8b6f28c08c33d20695b808bc13e401edddf85170324"
+    },
+    {
+      "id": "jma-limits",
+      "url": "https://www.jma.go.jp/jma/en/Activities/eew3.html",
+      "publisher": "Japan Meteorological Agency",
+      "independence_group": "jma",
+      "authoritative": true,
+      "published_date": "2007-08-30",
+      "role": "Warning limitations, not a guarantee of advance notice",
+      "excerpts": [
+        {
+          "id": "late",
+          "quote": "the warning may not be transmitted before strong tremors hit"
+        }
+      ],
+      "content_sha256": "ad9dc5967ab166e299dc4d7cf9948679280fad796dd1f56fa9a4529c1fa3d0a9"
+    },
+    {
+      "id": "jr-current",
+      "url": "https://www.jreast.co.jp/en/company/csr/safe-cx/safety-efforts/disaster/earthquake/",
+      "publisher": "East Japan Railway Company",
+      "independence_group": "jr-east",
+      "authoritative": true,
+      "published_date": null,
+      "role": "Current operator page confirms continuing system improvements; undated page, not invented publication date",
+      "excerpts": [
+        {
+          "id": "current",
+          "quote": "Measures for Emergency Stopping of Trains"
+        }
+      ],
+      "content_sha256": "2744ddb9d76e34242498191961c74fd396414277f9400fd5ca370530d6558694"
+    }
+  ],
+  "claims": [
+    {
+      "id": "early-braking",
+      "text": "JR East's Shinkansen early warning can initiate braking before stronger earthquake shaking arrives; this is conditional, not guaranteed.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jr-detection",
+          "quote_ref": "detect"
+        },
+        {
+          "source": "jr-brakes",
+          "quote_ref": "brake"
+        },
+        {
+          "source": "usgs-waves",
+          "quote_ref": "signal"
+        }
+      ],
+      "scope": "USGS supports the physics, not the identity of JR East's control system."
+    },
+    {
+      "id": "detection-not-prediction",
+      "text": "Early warning detects an earthquake after it has started, rather than predicting one before it begins.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "usgs-waves",
+          "quote_ref": "prediction"
+        },
+        {
+          "source": "usgs-waves",
+          "quote_ref": "started"
+        }
+      ]
+    },
+    {
+      "id": "p-wave-first",
+      "text": "JR East's system detects preliminary P-wave tremors, which are the first seismic wave arrivals.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jr-detection",
+          "quote_ref": "detect"
+        },
+        {
+          "source": "usgs-waves",
+          "quote_ref": "first"
+        }
+      ]
+    },
+    {
+      "id": "slower-stronger",
+      "text": "S waves and surface waves are slower and generally more damaging than the initial P waves.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "usgs-waves",
+          "quote_ref": "stronger"
+        }
+      ]
+    },
+    {
+      "id": "sensor-warning",
+      "text": "Sensors detect earthquake motion and transmit warning information; the example is schematic, not a documented event.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jr-detection",
+          "quote_ref": "detect"
+        },
+        {
+          "source": "jr-detection",
+          "quote_ref": "warn"
+        }
+      ],
+      "scope": "The video gives a general illustrative sequence and does not claim JR uses the US processing architecture."
+    },
+    {
+      "id": "power-cut-brakes",
+      "text": "When earthquake control requires it, cutting power to overhead wires is detected onboard and applies emergency braking.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jr-brakes",
+          "quote_ref": "power"
+        },
+        {
+          "source": "jr-brakes",
+          "quote_ref": "brake"
+        },
+        {
+          "source": "jr-current",
+          "quote_ref": "current"
+        }
+      ],
+      "scope": "No universal trigger threshold, brake delay or stopping distance is asserted."
+    },
+    {
+      "id": "signals-outrun-waves",
+      "text": "Telecommunications travel faster than seismic waves and can provide time for earlier protective action.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "usgs-waves",
+          "quote_ref": "signal"
+        }
+      ]
+    },
+    {
+      "id": "warning-limit",
+      "text": "Near the earthquake focus, warning may not arrive before strong shaking; braking early is not a guarantee of a complete stop before shaking.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jma-limits",
+          "quote_ref": "late"
+        }
+      ]
+    },
+    {
+      "id": "takeaway",
+      "text": "The useful mechanism is early detection and exploiting the time difference to reduce risk, rather than predicting earthquakes.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "usgs-waves",
+          "quote_ref": "protect"
+        },
+        {
+          "source": "usgs-waves",
+          "quote_ref": "signal"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "reviewed_by": "Assistant primary-source editorial review for the operator-authorized Japan Explained project",
+    "reviewed_at": "2026-10-02T16:40:00+00:00",
+    "content_sha256": "3f3c47ae039692ac1a2ec3bd208f67394b600d1301544d39f888c2333b32a11b"
+  },
+  "support_check": "retrieved quotations matched; interpretation reviewed by named reviewer"
+}

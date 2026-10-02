@@ -1,0 +1,25 @@
+{
+  "edition": "japan-explained-20261003-shinkansen-v1",
+  "at": "2026-10-02T21:17:32.641157+00:00",
+  "mode": "live",
+  "video_sha256": "2c8bacc72367a270fc18a57fb72556c54ffd08c06b12874c5928012bd62bcb37",
+  "duration": 57.665,
+  "narration": "generated at normal speed",
+  "video_validation": "passed",
+  "visual_frames_inspected": [
+    2.88,
+    13.26,
+    27.1,
+    41.52,
+    53.63
+  ],
+  "media_inspection": {
+    "audio_listening": "pending; assistant audio input unavailable"
+  },
+  "upload": "not attempted",
+  "video_id": null,
+  "url": null,
+  "returned_visibility": null,
+  "paid_jobs": 0,
+  "schedule_enabled": false
+}

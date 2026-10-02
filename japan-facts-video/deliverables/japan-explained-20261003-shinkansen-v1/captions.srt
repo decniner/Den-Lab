@@ -1,0 +1,119 @@
+1
+00:00:00,100 --> 00:00:01,805
+Japan's bullet trains can begin
+
+2
+00:00:01,805 --> 00:00:03,875
+braking before strong earthquake shaking
+
+3
+00:00:03,875 --> 00:00:05,250
+arrives.
+
+4
+00:00:05,350 --> 00:00:07,070
+This is early warning, not
+
+5
+00:00:07,070 --> 00:00:09,855
+prediction. The earthquake has already
+
+6
+00:00:09,855 --> 00:00:11,100
+started.
+
+7
+00:00:11,200 --> 00:00:12,765
+J R East's system detects
+
+8
+00:00:12,765 --> 00:00:14,685
+fast P waves, the first
+
+9
+00:00:14,685 --> 00:00:16,770
+seismic vibrations.
+
+10
+00:00:16,870 --> 00:00:18,505
+Slower S waves and surface
+
+11
+00:00:18,505 --> 00:00:21,405
+waves generally bring stronger shaking.
+
+12
+00:00:21,505 --> 00:00:22,755
+Imagine a sensor near the
+
+13
+00:00:22,755 --> 00:00:25,305
+earthquake. It detects the first
+
+14
+00:00:25,305 --> 00:00:27,055
+wave, then sends a warning
+
+15
+00:00:27,055 --> 00:00:28,735
+toward the railway.
+
+16
+00:00:28,835 --> 00:00:30,480
+When the railway system decides
+
+17
+00:00:30,480 --> 00:00:32,160
+action is needed, it cuts
+
+18
+00:00:32,160 --> 00:00:34,555
+power, triggering the train's emergency
+
+19
+00:00:34,555 --> 00:00:35,890
+brakes.
+
+20
+00:00:35,990 --> 00:00:38,120
+The electrical signal outruns seismic
+
+21
+00:00:38,120 --> 00:00:40,620
+waves. That means braking can
+
+22
+00:00:40,620 --> 00:00:42,305
+start while stronger shaking is
+
+23
+00:00:42,305 --> 00:00:43,935
+still on its way.
+
+24
+00:00:44,035 --> 00:00:45,665
+But near the earthquake, the
+
+25
+00:00:45,665 --> 00:00:47,995
+warning may arrive too late.
+
+26
+00:00:47,995 --> 00:00:49,730
+Braking early does not guarantee
+
+27
+00:00:49,730 --> 00:00:51,820
+stopping before shaking.
+
+28
+00:00:51,920 --> 00:00:53,770
+The takeaway: detect what has
+
+29
+00:00:53,770 --> 00:00:55,480
+started, then use the time
+
+30
+00:00:55,480 --> 00:00:57,665
+difference to reduce risk.

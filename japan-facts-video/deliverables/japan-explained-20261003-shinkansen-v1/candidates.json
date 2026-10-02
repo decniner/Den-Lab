@@ -1,0 +1,218 @@
+{
+  "criteria": {
+    "surprise": 0.3,
+    "explanatory_value": 0.3,
+    "source_quality": 0.25,
+    "visual_potential": 0.15
+  },
+  "ranked": [
+    {
+      "fact_id": "shinkansen-wave-warning",
+      "semantic_key": "rail-earthquake-wave-warning",
+      "category": "engineering",
+      "title": "How a bullet train can brake before strong shaking",
+      "aliases": [
+        "bullet-train-earthquake-brakes",
+        "shinkansen-earthquake-detection"
+      ],
+      "scores": {
+        "surprise": 5,
+        "explanatory_value": 5,
+        "source_quality": 5,
+        "visual_potential": 5
+      },
+      "pack": "shinkansen-wave-warning.json",
+      "discovery_sources": [
+        "https://www.jreast.co.jp/en/company/csr/safe-cx/safety-efforts/disaster/earthquake/",
+        "https://www.usgs.gov/programs/earthquake-hazards/science/earthquake-early-warning-overview"
+      ],
+      "caution": "Conditional early braking, not earthquake prediction or guaranteed full stop.",
+      "score": 5.0
+    },
+    {
+      "fact_id": "dual-frequency-grid",
+      "semantic_key": "japan-electricity-two-frequencies",
+      "category": "infrastructure",
+      "title": "Why Japan's electricity has two frequencies",
+      "scores": {
+        "surprise": 5,
+        "explanatory_value": 5,
+        "source_quality": 5,
+        "visual_potential": 4
+      },
+      "discovery_sources": [
+        "https://www.kepco.co.jp/english/home/denki/01.html",
+        "https://www.japan.travel/en/plan/plug-and-electricity/"
+      ],
+      "caution": "Verify historical origin separately; distinguish frequency from voltage.",
+      "score": 4.85
+    },
+    {
+      "fact_id": "koji-enzyme-tools",
+      "semantic_key": "koji-enzymes-starch-protein-breakdown",
+      "category": "food-science",
+      "title": "Koji makes enzymes that turn starch into sugars",
+      "scores": {
+        "surprise": 5,
+        "explanatory_value": 5,
+        "source_quality": 5,
+        "visual_potential": 4
+      },
+      "discovery_sources": [
+        "https://www.maff.go.jp/j/pr/aff/2211/spe1_01.html",
+        "https://japan-food.jetro.go.jp/odan/us/about/index.html"
+      ],
+      "caution": "Exclude medical claims and fermentation-origin folklore.",
+      "score": 4.85
+    },
+    {
+      "fact_id": "snow-sea-effect",
+      "semantic_key": "japan-sea-winter-moisture-mountain-snow",
+      "category": "geography",
+      "title": "How a relatively warm sea helps make Japan's heavy snow",
+      "scores": {
+        "surprise": 5,
+        "explanatory_value": 5,
+        "source_quality": 5,
+        "visual_potential": 4
+      },
+      "discovery_sources": [
+        "https://www.bousai.go.jp/kaigirep/hakusho/r05/honbun/1b_1s_03_04.html",
+        "https://www.bosai.go.jp/seppyo/disaster/index.html"
+      ],
+      "caution": "Explain mechanism without claiming uniform snowfall across Japan.",
+      "score": 4.85
+    },
+    {
+      "fact_id": "underground-flood-diversion",
+      "semantic_key": "outer-tokyo-underground-flood-diversion",
+      "category": "engineering",
+      "title": "An underground system diverts floodwater near Tokyo",
+      "scores": {
+        "surprise": 5,
+        "explanatory_value": 5,
+        "source_quality": 5,
+        "visual_potential": 4
+      },
+      "discovery_sources": [
+        "https://www.ktr.mlit.go.jp/ktr_content/content/000812778.pdf",
+        "https://www.mlit.go.jp/river/basic_info/english/river.html"
+      ],
+      "caution": "Do not call it a sewer, a whole-city shield, or unlimited protection.",
+      "score": 4.85
+    },
+    {
+      "fact_id": "three-script-functions",
+      "semantic_key": "japanese-kanji-hiragana-katakana-functions",
+      "category": "language",
+      "title": "Japanese scripts do different jobs in the same sentence",
+      "scores": {
+        "surprise": 4,
+        "explanatory_value": 5,
+        "source_quality": 5,
+        "visual_potential": 4
+      },
+      "discovery_sources": [
+        "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L03_au.pdf",
+        "https://www.bunka.go.jp/seisaku/kokugo_nihongo/kyoiku/handbook/pdf/en_zensho.pdf"
+      ],
+      "caution": "Avoid world's-most-complex claims; validate translations and exceptions.",
+      "score": 4.55
+    },
+    {
+      "fact_id": "naruto-tidal-flow",
+      "semantic_key": "naruto-strait-tidal-level-whirlpools",
+      "category": "nature",
+      "title": "Naruto's whirlpools are driven by tidal level differences",
+      "scores": {
+        "surprise": 4,
+        "explanatory_value": 5,
+        "source_quality": 4,
+        "visual_potential": 5
+      },
+      "discovery_sources": [
+        "https://naruto-tourism.jp/en/spot/14864",
+        "https://www.pref.tokushima.lg.jp/en/japanese/tourism/spot/uzushio"
+      ],
+      "caution": "Avoid maximum-size superlatives; tourism sources need independent science corroboration.",
+      "score": 4.45
+    },
+    {
+      "fact_id": "woodblock-colour-registration",
+      "semantic_key": "ukiyoe-separate-colour-block-registration",
+      "category": "history",
+      "title": "Colour woodblock prints need carefully aligned layers",
+      "scores": {
+        "surprise": 4,
+        "explanatory_value": 5,
+        "source_quality": 4,
+        "visual_potential": 5
+      },
+      "discovery_sources": [
+        "https://www.dento-tokyo.metro.tokyo.lg.jp/english/items/36.html",
+        "https://www.viewingjapaneseprints.net/texts/topics_faq/faq_beginnings.html"
+      ],
+      "caution": "Verify registration mechanism and historical dates before scripting.",
+      "score": 4.45
+    },
+    {
+      "fact_id": "island-count-resolution",
+      "semantic_key": "japan-island-recount-map-resolution",
+      "category": "geography",
+      "title": "A better map changes how many islands are counted",
+      "scores": {
+        "surprise": 5,
+        "explanatory_value": 4,
+        "source_quality": 4,
+        "visual_potential": 4
+      },
+      "discovery_sources": [
+        "https://web1.gsi.go.jp/kihonjohochousa/islands_index.html",
+        "https://www.gsi.go.jp/kohokocho/FAQ2.html"
+      ],
+      "caution": "Same-agency pages are not independent sources; secure outside corroboration. Mapping did not suddenly create islands.",
+      "score": 4.3
+    },
+    {
+      "fact_id": "kintsugi-lacquer-joinery",
+      "semantic_key": "kintsugi-lacquer-structural-repair",
+      "category": "everyday-life",
+      "title": "The lacquer joins the pottery; the gold decorates the repair",
+      "scores": {
+        "surprise": 4,
+        "explanatory_value": 5,
+        "source_quality": 4,
+        "visual_potential": 4
+      },
+      "discovery_sources": [
+        "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202008/202008_07_en.html",
+        "https://folklife.si.edu/magazine/japanese-kintsugi-yuko-gunji"
+      ],
+      "caution": "Do not give DIY food-safety advice; distinguish traditional lacquer from epoxy kits.",
+      "score": 4.3
+    }
+  ],
+  "selected": {
+    "fact_id": "shinkansen-wave-warning",
+    "semantic_key": "rail-earthquake-wave-warning",
+    "category": "engineering",
+    "title": "How a bullet train can brake before strong shaking",
+    "aliases": [
+      "bullet-train-earthquake-brakes",
+      "shinkansen-earthquake-detection"
+    ],
+    "scores": {
+      "surprise": 5,
+      "explanatory_value": 5,
+      "source_quality": 5,
+      "visual_potential": 5
+    },
+    "pack": "shinkansen-wave-warning.json",
+    "discovery_sources": [
+      "https://www.jreast.co.jp/en/company/csr/safe-cx/safety-efforts/disaster/earthquake/",
+      "https://www.usgs.gov/programs/earthquake-hazards/science/earthquake-early-warning-overview"
+    ],
+    "caution": "Conditional early braking, not earthquake prediction or guaranteed full stop.",
+    "score": 5.0
+  }
+}
