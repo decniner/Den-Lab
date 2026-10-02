@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="A private, local-first journal for Codex usage snapshots and token activity.">
+  <title>Codex Usage | Den-Lab</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1220;
+      --panel: #111c2d;
+      --panel-raised: #152237;
+      --line: rgba(173, 194, 223, .13);
+      --text: #edf3fb;
+      --muted: #94a6bf;
+      --soft: #bdcbe0;
+      --mint: #80e1c1;
+      --blue: #83b8ff;
+      --amber: #f2c77d;
+      --red: #f08b94;
+      --radius: 18px;
+      --shadow: 0 22px 60px rgba(0, 0, 0, .22);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at 55% -15%, rgba(64, 114, 165, .19), transparent 48%), var(--bg);
+      color: var(--text);
+      font: 15px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .005em;
+    }
+    button, input, select, textarea { font: inherit; }
+    button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+    a { color: var(--blue); }
+    button { color: inherit; }
+    .shell { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 30px 0 56px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 48px; }
+    .brand { display: flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; font-weight: 650; letter-spacing: -.02em; }
+    .brand-mark { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid rgba(128, 225, 193, .28); border-radius: 12px; color: var(--mint); background: rgba(128, 225, 193, .08); font-size: 17px; }
+    .top-note { color: var(--muted); font-size: 12px; display: flex; align-items: center; gap: 8px; }
+    .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 12px rgba(128, 225, 193, .7); }
+    .eyebrow { margin: 0 0 10px; color: var(--mint); text-transform: uppercase; letter-spacing: .14em; font-size: 10px; font-weight: 750; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 12px; max-width: 780px; font-size: clamp(34px, 5vw, 56px); line-height: 1.04; letter-spacing: -.055em; font-weight: 630; }
+    h2 { margin: 0; font-size: 18px; letter-spacing: -.025em; font-weight: 620; }
+    h3 { margin: 0 0 8px; font-size: 14px; font-weight: 630; }
+    .lede { max-width: 680px; color: var(--muted); font-size: 16px; margin-bottom: 0; }
+    .hero { position: relative; overflow: hidden; padding: clamp(25px, 5vw, 48px); border: 1px solid rgba(161, 192, 228, .16); border-radius: 26px; background: linear-gradient(120deg, rgba(24, 42, 63, .97), rgba(17, 28, 45, .92) 65%, rgba(22, 49, 62, .86)); box-shadow: var(--shadow); }
+    .hero::after { content: ""; position: absolute; width: 360px; height: 360px; top: -230px; right: -80px; border-radius: 50%; border: 1px solid rgba(128, 225, 193, .12); box-shadow: 0 0 0 36px rgba(128, 225, 193, .025), 0 0 0 72px rgba(128, 225, 193, .02); pointer-events: none; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(230px, .6fr); align-items: end; gap: 36px; position: relative; z-index: 1; }
+    .hero-side { padding: 18px 20px; border: 1px solid var(--line); border-radius: 16px; background: rgba(9, 17, 29, .34); }
+    .hero-side strong { display: block; font-size: 14px; margin: 7px 0 4px; }
+    .hero-side p { margin: 0; color: var(--muted); font-size: 12px; }
+    .status-pill, .tag { display: inline-flex; align-items: center; gap: 7px; border: 1px solid rgba(128, 225, 193, .2); border-radius: 999px; padding: 5px 9px; color: var(--mint); background: rgba(128, 225, 193, .06); font-size: 10px; font-weight: 650; letter-spacing: .05em; text-transform: uppercase; }
+    .section { margin-top: 34px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin: 0 2px 14px; }
+    .section-head p { margin: 5px 0 0; color: var(--muted); font-size: 12px; }
+    .grid { display: grid; gap: 14px; }
+    .summary-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card { min-width: 0; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(145deg, rgba(21, 34, 55, .95), rgba(16, 27, 44, .96)); box-shadow: 0 10px 35px rgba(0, 0, 0, .12); }
+    .metric-card { padding: 19px 20px; min-height: 130px; }
+    .metric-label { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 11px; }
+    .metric-value { margin: 20px 0 3px; font-size: clamp(24px, 3vw, 32px); font-variant-numeric: tabular-nums; letter-spacing: -.05em; line-height: 1; }
+    .metric-foot { color: var(--muted); font-size: 11px; }
+    .large-card { padding: 22px; }
+    .card-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; margin-bottom: 18px; }
+    .card-heading p { color: var(--muted); font-size: 12px; margin: 5px 0 0; }
+    .snapshot-display { padding: 18px; border: 1px solid var(--line); border-radius: 15px; background: rgba(7, 16, 27, .28); }
+    .snapshot-empty { color: var(--muted); font-size: 13px; margin: 0; }
+    .snapshot-main { display: flex; align-items: baseline; flex-wrap: wrap; gap: 7px; margin: 0 0 11px; }
+    .snapshot-main strong { font-size: 31px; line-height: 1; letter-spacing: -.045em; font-variant-numeric: tabular-nums; }
+    .snapshot-main span { color: var(--muted); font-size: 13px; }
+    .bar { height: 8px; border-radius: 20px; overflow: hidden; background: rgba(170, 192, 220, .12); }
+    .bar > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #5ec9aa, #9be8bf); transition: width .25s ease; }
+    .snapshot-meta { display: flex; justify-content: space-between; gap: 10px; margin-top: 9px; color: var(--muted); font-size: 11px; }
+    .select-small { width: auto; max-width: 140px; padding: 8px 30px 8px 10px !important; font-size: 12px !important; }
+    .surface-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .surface { padding: 15px; border: 1px solid var(--line); border-radius: 14px; background: rgba(9, 17, 29, .28); }
+    .surface-name { color: var(--soft); font-size: 12px; }
+    .surface-value { margin: 11px 0 3px; font-size: 19px; font-variant-numeric: tabular-nums; letter-spacing: -.035em; }
+    .surface-sub { color: var(--muted); font-size: 10px; }
+    label { display: block; margin-bottom: 6px; color: var(--soft); font-size: 11px; font-weight: 600; }
+    input, select, textarea { width: 100%; color: var(--text); background: #0d1726; border: 1px solid rgba(173, 194, 223, .17); border-radius: 10px; padding: 11px 12px; outline: none; }
+    input:focus, select:focus, textarea:focus { border-color: rgba(128, 225, 193, .7); box-shadow: 0 0 0 3px rgba(128, 225, 193, .09); }
+    input::placeholder, textarea::placeholder { color: #70829a; }
+    .form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+    .field.full { grid-column: 1 / -1; }
+    .field-help { margin: 6px 0 0; color: var(--muted); font-size: 10px; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 17px; }
+    .btn { min-height: 40px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 9px 14px; border: 1px solid transparent; border-radius: 10px; font-weight: 650; font-size: 12px; cursor: pointer; text-decoration: none; transition: transform .15s ease, background .15s ease, border-color .15s ease; }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { color: #082019; background: var(--mint); }
+    .btn-primary:hover { background: #9cebd0; }
+    .btn-secondary { color: var(--soft); background: rgba(169, 191, 220, .06); border-color: var(--line); }
+    .btn-secondary:hover { background: rgba(169, 191, 220, .11); }
+    .btn-danger { color: var(--red); background: rgba(240, 139, 148, .06); border-color: rgba(240, 139, 148, .16); }
+    .text-button { border: 0; padding: 4px; background: none; color: var(--muted); font-size: 11px; cursor: pointer; }
+    .text-button:hover { color: var(--red); }
+    .records { display: grid; gap: 9px; }
+    .record { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 13px 14px; border: 1px solid var(--line); border-radius: 13px; background: rgba(9, 17, 29, .28); }
+    .record-title { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-bottom: 3px; font-size: 12px; font-weight: 650; }
+    .record-detail { color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
+    .record-number { text-align: right; font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; }
+    .record-number small { display: block; color: var(--muted); font-weight: 400; font-size: 10px; }
+    .empty { padding: 26px 12px; color: var(--muted); text-align: center; font-size: 12px; border: 1px dashed rgba(173, 194, 223, .17); border-radius: 13px; }
+    .privacy { margin-top: 18px; padding: 15px 17px; display: flex; align-items: flex-start; gap: 12px; border: 1px solid rgba(131, 184, 255, .17); border-radius: 14px; background: rgba(131, 184, 255, .045); color: var(--muted); font-size: 11px; }
+    .privacy strong { color: var(--soft); }
+    .privacy p { margin: 0; }
+    .foot { display: flex; justify-content: space-between; gap: 14px; margin-top: 28px; padding-top: 17px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
+    #notice { min-height: 20px; color: var(--mint); font-size: 11px; }
+    #notice.error { color: var(--red); }
+    .file-input { display: none; }
+    @media (max-width: 800px) {
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-grid { grid-template-columns: 1fr; gap: 23px; }
+      .hero-side { max-width: 390px; }
+    }
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 28px, 520px); padding-top: 18px; }
+      .topbar { margin-bottom: 29px; }
+      .top-note { font-size: 0; gap: 0; }
+      .top-note .pulse { margin-right: 8px; }
+      h1 { font-size: 38px; }
+      .lede { font-size: 14px; }
+      .hero { border-radius: 21px; }
+      .section { margin-top: 27px; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .summary-grid, .two-col { grid-template-columns: 1fr; }
+      .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+      .metric-card { padding: 14px; min-height: 112px; }
+      .metric-value { margin-top: 17px; font-size: 24px; }
+      .large-card { padding: 17px; }
+      .surface-grid { gap: 7px; }
+      .surface { padding: 11px 9px; }
+      .surface-value { font-size: 16px; }
+      .surface-name { font-size: 11px; }
+      .form-grid { grid-template-columns: 1fr 1fr; gap: 11px; }
+      .record { padding: 12px 10px; }
+      .record-number { font-size: 12px; }
+      .foot { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Den-Lab Codex Usage home"><span class="brand-mark" aria-hidden="true">D.</span><span>Den-Lab <span style="color:var(--muted);font-weight:450">/ Codex Usage</span></span></a>
+      <span class="top-note"><span class="pulse" aria-hidden="true"></span>Private journal · this browser only</span>
+    </header>
+
+    <section class="hero" id="top" aria-labelledby="title">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Usage, with context</p>
+          <h1 id="title">A clearer view of your Codex usage.</h1>
+          <p class="lede">Track the allowance snapshots you see in your account, and keep a separate token journal for Web, CLI, and Desktop sessions.</p>
+        </div>
+        <aside class="hero-side" aria-label="Data source status">
+          <span class="status-pill"><span class="pulse" aria-hidden="true"></span>Manual tracking</span>
+          <strong>No account connection</strong>
+          <p>This static page cannot read your ChatGPT account or Codex clients. Add figures from your official usage screen; no login or API key belongs here.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="overview-title">
+      <div class="section-head">
+        <div><p class="eyebrow">At a glance</p><h2 id="overview-title">Your overview</h2><p>Recorded here on this browser. Empty values mean no snapshot has been entered yet.</p></div>
+        <a class="btn btn-secondary" href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">Open ChatGPT ↗</a>
+      </div>
+      <div class="grid summary-grid">
+        <article class="card metric-card"><div class="metric-label">Latest allowance <span class="tag">Snapshot</span></div><div class="metric-value" id="metric-allowance">—</div><div class="metric-foot" id="metric-window">Add a snapshot below</div></article>
+        <article class="card metric-card"><div class="metric-label">Tokens recorded <span class="tag">Journal</span></div><div class="metric-value" id="metric-tokens">0</div><div class="metric-foot">Input + output in this browser</div></article>
+        <article class="card metric-card"><div class="metric-label">Sessions recorded</div><div class="metric-value" id="metric-sessions">0</div><div class="metric-foot">Across Web, CLI, and Desktop</div></article>
+        <article class="card metric-card"><div class="metric-label">Most recent entry</div><div class="metric-value" id="metric-recent">—</div><div class="metric-foot" id="metric-recent-detail">No activity recorded</div></article>
+      </div>
+    </section>
+
+    <section class="section grid two-col" aria-label="Allowance and surface summary">
+      <article class="card large-card">
+        <div class="card-heading"><div><p class="eyebrow">Account allowance</p><h2>Latest snapshot</h2><p>Choose a window to see the last value you recorded.</p></div><select id="window-filter" class="select-small" aria-label="Allowance window"><option value="5-hour">5-hour</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="custom">Custom</option></select></div>
+        <div class="snapshot-display" id="snapshot-display" aria-live="polite"><p class="snapshot-empty">No snapshot for this window yet. Add the values shown in your account usage screen.</p></div>
+        <p class="field-help" style="margin-top:11px">Usage allowance is distinct from the token counts in your session journal.</p>
+      </article>
+      <article class="card large-card">
+        <div class="card-heading"><div><p class="eyebrow">Session journal</p><h2>Tokens by surface</h2><p>Only sessions you manually record are included.</p></div></div>
+        <div class="surface-grid">
+          <div class="surface"><div class="surface-name">Web</div><div class="surface-value" id="surface-web">0</div><div class="surface-sub">recorded tokens</div></div>
+          <div class="surface"><div class="surface-name">CLI</div><div class="surface-value" id="surface-cli">0</div><div class="surface-sub">recorded tokens</div></div>
+          <div class="surface"><div class="surface-name">Desktop</div><div class="surface-value" id="surface-desktop">0</div><div class="surface-sub">recorded tokens</div></div>
+        </div>
+        <p class="field-help" style="margin-top:13px">These totals are not an estimate of account allowance consumed.</p>
+      </article>
+    </section>
+
+    <section class="section grid two-col" aria-label="Add usage data">
+      <article class="card large-card">
+        <div class="card-heading"><div><p class="eyebrow">Session activity</p><h2>Record token usage</h2><p>Use session statistics when available. Leave a count at zero if unknown.</p></div></div>
+        <form id="event-form">
+          <div class="form-grid">
+            <div class="field"><label for="event-date">Date and time</label><input id="event-date" type="datetime-local" required></div>
+            <div class="field"><label for="event-surface">Surface</label><select id="event-surface"><option value="Web">Web</option><option value="CLI">CLI</option><option value="Desktop">Desktop</option></select></div>
+            <div class="field"><label for="event-model">Model (optional)</label><input id="event-model" maxlength="60" placeholder="e.g. Codex model"></div>
+            <div class="field"><label for="event-input">Input tokens</label><input id="event-input" type="number" min="0" step="1" inputmode="numeric" value="0" required></div>
+            <div class="field"><label for="event-output">Output tokens</label><input id="event-output" type="number" min="0" step="1" inputmode="numeric" value="0" required></div>
+            <div class="field"><label for="event-note">Note (optional)</label><input id="event-note" maxlength="140" placeholder="Short, private note"></div>
+          </div>
+          <div class="actions"><button class="btn btn-primary" type="submit">＋ Add session</button></div>
+        </form>
+      </article>
+
+      <article class="card large-card">
+        <div class="card-heading"><div><p class="eyebrow">Plan limits</p><h2>Record an allowance snapshot</h2><p>Copy the values shown by your official account usage view.</p></div></div>
+        <form id="snapshot-form">
+          <div class="form-grid">
+            <div class="field full"><label for="snapshot-at">Checked at</label><input id="snapshot-at" type="datetime-local" required></div>
+            <div class="field"><label for="snapshot-window">Usage window</label><select id="snapshot-window"><option value="5-hour">5-hour</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="custom">Custom</option></select></div>
+            <div class="field"><label for="snapshot-unit">Unit shown</label><select id="snapshot-unit"><option value="credits">Credits</option><option value="tokens">Tokens</option><option value="requests">Requests</option><option value="tasks">Tasks</option><option value="other">Other</option></select></div>
+            <div class="field"><label for="snapshot-used">Used</label><input id="snapshot-used" type="number" min="0" step="any" inputmode="decimal" required></div>
+            <div class="field"><label for="snapshot-limit">Allowance</label><input id="snapshot-limit" type="number" min="0.000001" step="any" inputmode="decimal" required></div>
+            <div class="field full"><p class="field-help">The dashboard calculates the remaining amount from these two entries. It does not fetch or verify the account figures.</p></div>
+          </div>
+          <div class="actions"><button class="btn btn-primary" type="submit">＋ Save snapshot</button></div>
+        </form>
+      </article>
+    </section>
+
+    <section class="section" aria-labelledby="history-title">
+      <div class="section-head">
+        <div><p class="eyebrow">Your private records</p><h2 id="history-title">Recent activity</h2><p>Stored in this browser only. Export a backup to move it to another device.</p></div>
+        <div class="actions" style="margin:0">
+          <button class="btn btn-secondary" id="export-btn" type="button">Export backup</button>
+          <label class="btn btn-secondary" for="import-file" style="margin:0;cursor:pointer">Import backup</label>
+          <input id="import-file" class="file-input" type="file" accept="application/json,.json">
+          <button class="btn btn-danger" id="clear-btn" type="button">Clear all</button>
+        </div>
+      </div>
+      <p id="notice" role="status" aria-live="polite"></p>
+      <div class="grid two-col">
+        <article class="card large-card"><div class="card-heading"><div><h2>Token sessions</h2><p>Newest first · input and output counts</p></div></div><div id="event-list" class="records"></div></article>
+        <article class="card large-card"><div class="card-heading"><div><h2>Allowance snapshots</h2><p>Newest first · by usage window</p></div></div><div id="snapshot-list" class="records"></div></article>
+      </div>
+    </section>
+
+    <aside class="privacy">
+      <span aria-hidden="true">◇</span>
+      <p><strong>Private by design.</strong> Entries stay in this browser’s local storage. They do not sync to your computer, phone, GitHub, or OpenAI. Export a backup before changing devices. Never enter passwords, session cookies, or API keys here.</p>
+    </aside>
+    <footer class="foot"><span>Den-Lab · Codex Usage Dashboard</span><span>Manual journal · no tracking scripts · no external data requests</span></footer>
+  </main>
+
+  <script>
+    (() => {
+      'use strict';
+      const STORAGE_KEY = 'denlab-codex-usage-v1';
+      const emptyData = () => ({ version: 1, events: [], snapshots: [] });
+      const numberFormat = new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 });
+      let data = readData();
+      const $ = selector => document.querySelector(selector);
+
+      function readData() {
+        try {
+          const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+          if (!parsed || parsed.version !== 1 || !Array.isArray(parsed.events) || !Array.isArray(parsed.snapshots)) return emptyData();
+          return {
+            version: 1,
+            events: parsed.events.filter(validEvent).slice(-2000),
+            snapshots: parsed.snapshots.filter(validSnapshot).slice(-1000)
+          };
+        } catch (_) { return emptyData(); }
+      }
+      function validString(value, max) { return typeof value === 'string' && value.length <= max; }
+      function validEvent(item) {
+        return item && validString(item.id, 80) && validString(item.at, 40) && !Number.isNaN(Date.parse(item.at)) &&
+          ['Web', 'CLI', 'Desktop'].includes(item.surface) && Number.isFinite(item.input) && item.input >= 0 &&
+          Number.isFinite(item.output) && item.output >= 0 && validString(item.model || '', 60) && validString(item.note || '', 140);
+      }
+      function validSnapshot(item) {
+        return item && validString(item.id, 80) && validString(item.at, 40) && !Number.isNaN(Date.parse(item.at)) &&
+          ['5-hour', 'weekly', 'monthly', 'custom'].includes(item.window) &&
+          ['credits', 'tokens', 'requests', 'tasks', 'other'].includes(item.unit) &&
+          Number.isFinite(item.used) && item.used >= 0 && Number.isFinite(item.limit) && item.limit > 0;
+      }
+      function save() {
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); return true; }
+        catch (_) { showNotice('Could not save: browser storage may be full or disabled.', true); return false; }
+      }
+      function showNotice(message, error = false) {
+        const node = $('#notice'); node.textContent = message; node.classList.toggle('error', error);
+        if (message) window.setTimeout(() => { if (node.textContent === message) node.textContent = ''; }, 5000);
+      }
+      function localDateTime(date = new Date()) {
+        const pad = value => String(value).padStart(2, '0');
+        return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}`;
+      }
+      function fmt(value) { return numberFormat.format(value); }
+      function dateFmt(value) {
+        const date = new Date(value);
+        return Number.isNaN(date.getTime()) ? 'Unknown date' : new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(date);
+      }
+      function id() { return globalThis.crypto && crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(16).slice(2)}`; }
+      function element(tag, className, text) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+      function latestSnapshot(windowName) {
+        return data.snapshots.filter(item => item.window === windowName).sort((a, b) => Date.parse(b.at) - Date.parse(a.at))[0];
+      }
+      function renderSnapshot() {
+        const selectedWindow = $('#window-filter').value;
+        const latest = latestSnapshot(selectedWindow);
+        const display = $('#snapshot-display'); display.replaceChildren();
+        if (!latest) {
+          display.append(element('p', 'snapshot-empty', `No ${selectedWindow} snapshot yet. Add values from your account usage screen.`));
+          return;
+        }
+        const used = latest.used;
+        const remaining = Math.max(0, latest.limit - used);
+        const percent = Math.max(0, Math.min(100, (used / latest.limit) * 100));
+        const main = element('p', 'snapshot-main');
+        main.append(element('strong', '', `${fmt(used)} / ${fmt(latest.limit)}`), element('span', '', latest.unit));
+        const bar = element('div', 'bar'); bar.setAttribute('role', 'progressbar'); bar.setAttribute('aria-label', `${fmt(percent)} percent of allowance used`); bar.setAttribute('aria-valuemin', '0'); bar.setAttribute('aria-valuemax', '100'); bar.setAttribute('aria-valuenow', String(percent));
+        const fill = element('span'); fill.style.width = `${percent}%`; bar.append(fill);
+        const meta = element('div', 'snapshot-meta');
+        meta.append(element('span', '', `${fmt(remaining)} ${latest.unit} remaining · ${fmt(percent)}% used`), element('span', '', dateFmt(latest.at)));
+        display.append(main, bar, meta);
+      }
+      function renderLists() {
+        const eventList = $('#event-list'); eventList.replaceChildren();
+        const events = [...data.events].sort((a, b) => Date.parse(b.at) - Date.parse(a.at)).slice(0, 12);
+        if (!events.length) eventList.append(element('div', 'empty', 'No sessions recorded. Add a session above to begin.'));
+        for (const item of events) {
+          const row = element('div', 'record');
+          const info = element('div');
+          const title = element('div', 'record-title', `${item.surface}${item.model ? ` · ${item.model}` : ''}`);
+          const detail = element('div', 'record-detail', `${dateFmt(item.at)}${item.note ? ` · ${item.note}` : ''}`);
+          info.append(title, detail);
+          const count = element('div', 'record-number', fmt(item.input + item.output)); count.append(element('small', '', `in ${fmt(item.input)} · out ${fmt(item.output)}`));
+          const remove = element('button', 'text-button', 'Remove'); remove.type = 'button'; remove.setAttribute('aria-label', `Remove ${item.surface} session from ${dateFmt(item.at)}`); remove.addEventListener('click', () => { data.events = data.events.filter(entry => entry.id !== item.id); save(); render(); });
+          const right = element('div'); right.append(count, remove); row.append(info, right); eventList.append(row);
+        }
+        const snapshotList = $('#snapshot-list'); snapshotList.replaceChildren();
+        const snapshots = [...data.snapshots].sort((a, b) => Date.parse(b.at) - Date.parse(a.at)).slice(0, 12);
+        if (!snapshots.length) snapshotList.append(element('div', 'empty', 'No allowance snapshots recorded yet.'));
+        for (const item of snapshots) {
+          const row = element('div', 'record');
+          const info = element('div');
+          info.append(element('div', 'record-title', `${item.window} allowance · ${item.unit}`), element('div', 'record-detail', dateFmt(item.at)));
+          const count = element('div', 'record-number', `${fmt(item.used)} / ${fmt(item.limit)}`); count.append(element('small', '', `${fmt(Math.max(0, item.limit - item.used))} remaining`));
+          const remove = element('button', 'text-button', 'Remove'); remove.type = 'button'; remove.setAttribute('aria-label', `Remove ${item.window} allowance snapshot from ${dateFmt(item.at)}`); remove.addEventListener('click', () => { data.snapshots = data.snapshots.filter(entry => entry.id !== item.id); save(); render(); });
+          const right = element('div'); right.append(count, remove); row.append(info, right); snapshotList.append(row);
+        }
+      }
+      function render() {
+        const total = data.events.reduce((sum, item) => sum + item.input + item.output, 0);
+        const bySurface = { Web: 0, CLI: 0, Desktop: 0 };
+        for (const item of data.events) bySurface[item.surface] += item.input + item.output;
+        $('#metric-tokens').textContent = fmt(total);
+        $('#metric-sessions').textContent = fmt(data.events.length);
+        $('#surface-web').textContent = fmt(bySurface.Web);
+        $('#surface-cli').textContent = fmt(bySurface.CLI);
+        $('#surface-desktop').textContent = fmt(bySurface.Desktop);
+        const latest = [...data.snapshots].sort((a, b) => Date.parse(b.at) - Date.parse(a.at))[0];
+        $('#metric-allowance').textContent = latest ? `${fmt(Math.max(0, latest.limit - latest.used))} ${latest.unit}` : '—';
+        $('#metric-window').textContent = latest ? `${latest.window} · updated ${dateFmt(latest.at)}` : 'Add a snapshot below';
+        const recent = [...data.events].sort((a, b) => Date.parse(b.at) - Date.parse(a.at))[0];
+        $('#metric-recent').textContent = recent ? dateFmt(recent.at).split(',')[0] : '—';
+        $('#metric-recent-detail').textContent = recent ? `${recent.surface}${recent.model ? ` · ${recent.model}` : ''}` : 'No activity recorded';
+        renderSnapshot(); renderLists();
+      }
+
+      $('#event-date').value = localDateTime();
+      $('#snapshot-at').value = localDateTime();
+      $('#event-form').addEventListener('submit', event => {
+        event.preventDefault();
+        const input = Number($('#event-input').value); const output = Number($('#event-output').value);
+        if (!Number.isSafeInteger(input) || !Number.isSafeInteger(output) || input < 0 || output < 0 || input + output === 0) return showNotice('Enter a positive token count. If exact counts are unavailable, leave this session out.', true);
+        const item = { id: id(), at: new Date($('#event-date').value).toISOString(), surface: $('#event-surface').value, model: $('#event-model').value.trim(), input, output, note: $('#event-note').value.trim() };
+        if (!validEvent(item)) return showNotice('Check the session values and try again.', true);
+        data.events.push(item); if (!save()) return; $('#event-model').value = ''; $('#event-input').value = '0'; $('#event-output').value = '0'; $('#event-note').value = ''; $('#event-date').value = localDateTime(); showNotice('Session added to this browser.'); render();
+      });
+      $('#snapshot-form').addEventListener('submit', event => {
+        event.preventDefault();
+        const item = { id: id(), at: new Date($('#snapshot-at').value).toISOString(), window: $('#snapshot-window').value, unit: $('#snapshot-unit').value, used: Number($('#snapshot-used').value), limit: Number($('#snapshot-limit').value) };
+        if (!validSnapshot(item) || item.used > item.limit) return showNotice('Enter valid values; used must be no greater than the allowance.', true);
+        data.snapshots.push(item); if (!save()) return; $('#snapshot-used').value = ''; $('#snapshot-limit').value = ''; $('#snapshot-at').value = localDateTime(); showNotice('Allowance snapshot saved in this browser.'); render();
+      });
+      $('#window-filter').addEventListener('change', renderSnapshot);
+      $('#export-btn').addEventListener('click', () => {
+        const blob = new Blob([JSON.stringify({ ...data, exportedAt: new Date().toISOString() }, null, 2)], { type: 'application/json' });
+        const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = `codex-usage-backup-${new Date().toISOString().slice(0, 10)}.json`; link.click(); URL.revokeObjectURL(link.href); showNotice('Backup exported. Keep it somewhere private.');
+      });
+      $('#import-file').addEventListener('change', async event => {
+        const file = event.target.files && event.target.files[0]; if (!file) return;
+        try {
+          if (file.size > 2_000_000) throw new Error('Backup is larger than 2 MB.');
+          const imported = JSON.parse(await file.text());
+          if (!imported || imported.version !== 1 || !Array.isArray(imported.events) || !Array.isArray(imported.snapshots)) throw new Error('This file is not a supported dashboard backup.');
+          const events = imported.events.filter(validEvent); const snapshots = imported.snapshots.filter(validSnapshot);
+          if (events.length !== imported.events.length || snapshots.length !== imported.snapshots.length) throw new Error('Backup contains invalid or unsupported records. Nothing was imported.');
+          data.events = [...data.events, ...events].filter((item, index, all) => all.findIndex(candidate => candidate.id === item.id) === index).slice(-2000);
+          data.snapshots = [...data.snapshots, ...snapshots].filter((item, index, all) => all.findIndex(candidate => candidate.id === item.id) === index).slice(-1000);
+          if (!save()) return; showNotice(`Imported ${events.length} sessions and ${snapshots.length} snapshots.`); render();
+        } catch (error) { showNotice(error.message || 'Could not read that backup.', true); }
+        finally { event.target.value = ''; }
+      });
+      $('#clear-btn').addEventListener('click', () => {
+        if (!data.events.length && !data.snapshots.length) return showNotice('There are no saved records to clear.');
+        if (!window.confirm('Delete all usage sessions and allowance snapshots saved in this browser? Export a backup first if you may need them.')) return;
+        data = emptyData(); if (!save()) return; showNotice('All records cleared from this browser.'); render();
+      });
+      render();
+    })();
+  </script>
+</body>
+</html>

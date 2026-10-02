@@ -7,6 +7,7 @@ on:
       - '02-my-profile/**'
       - '03-ai-agent-explorer/**'
       - '04-career-guidance/**'
+      - '05-codex-usage-dashboard/**'
       - 'tiny-llm-from-scratch/ds.tooltip.index.html'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
@@ -36,11 +37,13 @@ jobs:
           mkdir -p _site/02-my-profile
           mkdir -p _site/03-ai-agent-explorer
           mkdir -p _site/04-career-guidance
+          mkdir -p _site/05-codex-usage-dashboard
           mkdir -p _site/tiny-llm-from-scratch
           cp -R 03-ai-agent-explorer/. _site/
           cp -R 03-ai-agent-explorer/. _site/03-ai-agent-explorer/
           cp -R 02-my-profile/. _site/02-my-profile/
           cp -R 04-career-guidance/. _site/04-career-guidance/
+          cp -R 05-codex-usage-dashboard/. _site/05-codex-usage-dashboard/
           cp tiny-llm-from-scratch/ds.tooltip.index.html _site/tiny-llm-from-scratch/
       - name: Upload site files
         uses: actions/upload-pages-artifact@v4
