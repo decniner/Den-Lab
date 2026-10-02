@@ -21,18 +21,30 @@
   }
 
   if (!reduceMotion && "IntersectionObserver" in window) {
-    document.documentElement.classList.add("js-motion");
-    const revealItems = document.querySelectorAll(".section-heading, .about-copy, .capability-layout, .project-card, .lab-group, .agent-note, .principle-list, .contact-section");
-    revealItems.forEach((item) => item.setAttribute("data-reveal", ""));
+    const revealItems = [...document.querySelectorAll(
+      ".section-heading, .about-copy, .capability-layout, .project-card, .lab-group, .agent-note, .principle-list, .contact-section"
+    )];
+    let revealObserver;
 
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
+    try {
+      revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px 48px 0px", threshold: 0.08 });
+
+      revealItems.forEach((item) => item.setAttribute("data-reveal", ""));
+      document.documentElement.classList.add("js-motion");
+      revealItems.forEach((item) => revealObserver.observe(item));
+    } catch {
+      if (revealObserver) revealObserver.disconnect();
+      document.documentElement.classList.remove("js-motion");
+      revealItems.forEach((item) => {
+        item.removeAttribute("data-reveal");
+        item.classList.remove("is-visible");
       });
-    }, { threshold: 0.12 });
-
-    revealItems.forEach((item) => revealObserver.observe(item));
+    }
   }
 })();
