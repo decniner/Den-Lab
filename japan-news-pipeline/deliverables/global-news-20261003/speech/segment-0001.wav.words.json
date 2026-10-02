@@ -1,0 +1,98 @@
+﻿[
+    {
+        "text":  "First",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "Eritrea",
+        "start":  1.005,
+        "index":  7,
+        "count":  7
+    },
+    {
+        "text":  "has",
+        "start":  1.53,
+        "index":  15,
+        "count":  3
+    },
+    {
+        "text":  "severed",
+        "start":  1.71,
+        "index":  19,
+        "count":  7
+    },
+    {
+        "text":  "diplomatic",
+        "start":  2.0749999999999997,
+        "index":  27,
+        "count":  10
+    },
+    {
+        "text":  "ties",
+        "start":  2.675,
+        "index":  38,
+        "count":  4
+    },
+    {
+        "text":  "with",
+        "start":  3.025,
+        "index":  43,
+        "count":  4
+    },
+    {
+        "text":  "Ethiopia",
+        "start":  3.17,
+        "index":  48,
+        "count":  8
+    },
+    {
+        "text":  "after",
+        "start":  3.915,
+        "index":  57,
+        "count":  5
+    },
+    {
+        "text":  "Ethiopia",
+        "start":  4.255,
+        "index":  63,
+        "count":  8
+    },
+    {
+        "text":  "ordered",
+        "start":  4.995,
+        "index":  72,
+        "count":  7
+    },
+    {
+        "text":  "its",
+        "start":  5.3199999999999994,
+        "index":  80,
+        "count":  3
+    },
+    {
+        "text":  "embassy",
+        "start":  5.495,
+        "index":  84,
+        "count":  7
+    },
+    {
+        "text":  "in",
+        "start":  5.97,
+        "index":  92,
+        "count":  2
+    },
+    {
+        "text":  "Asmara",
+        "start":  6.12,
+        "index":  95,
+        "count":  6
+    },
+    {
+        "text":  "closed",
+        "start":  6.665,
+        "index":  102,
+        "count":  6
+    }
+]

@@ -1,0 +1,56 @@
+﻿[
+    {
+        "text":  "Europe",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  6
+    },
+    {
+        "text":  "as",
+        "start":  0.435,
+        "index":  7,
+        "count":  2
+    },
+    {
+        "text":  "a",
+        "start":  0.585,
+        "index":  10,
+        "count":  1
+    },
+    {
+        "text":  "whole",
+        "start":  0.66499999999999992,
+        "index":  12,
+        "count":  5
+    },
+    {
+        "text":  "had",
+        "start":  0.945,
+        "index":  18,
+        "count":  3
+    },
+    {
+        "text":  "its",
+        "start":  1.1099999999999999,
+        "index":  22,
+        "count":  3
+    },
+    {
+        "text":  "third",
+        "start":  1.29,
+        "index":  26,
+        "count":  5
+    },
+    {
+        "text":  "warmest",
+        "start":  1.51,
+        "index":  32,
+        "count":  7
+    },
+    {
+        "text":  "summer",
+        "start":  1.9349999999999998,
+        "index":  40,
+        "count":  6
+    }
+]

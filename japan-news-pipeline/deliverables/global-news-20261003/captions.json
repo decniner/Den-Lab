@@ -1,0 +1,248 @@
+[
+  {
+    "start": 0.0906958561376075,
+    "end": 2.344487881157154,
+    "text": "Global news in eighty seconds.",
+    "story": "intro"
+  },
+  {
+    "start": 2.344487881157154,
+    "end": 4.738858483189992,
+    "text": "Three verified updates, checked October",
+    "story": "intro"
+  },
+  {
+    "start": 4.738858483189992,
+    "end": 5.8,
+    "text": "third.",
+    "story": "intro"
+  },
+  {
+    "start": 6.102592087312415,
+    "end": 8.744338335607093,
+    "text": "First, Eritrea has severed diplomatic",
+    "story": "africa"
+  },
+  {
+    "start": 8.744338335607093,
+    "end": 11.124474761255117,
+    "text": "ties with Ethiopia after Ethiopia",
+    "story": "africa"
+  },
+  {
+    "start": 11.124474761255117,
+    "end": 12.837762619372443,
+    "text": "ordered its embassy in Asmara",
+    "story": "africa"
+  },
+  {
+    "start": 12.837762619372443,
+    "end": 14.207366984993179,
+    "text": "closed.",
+    "story": "africa"
+  },
+  {
+    "start": 14.309959072305594,
+    "end": 16.566984993178718,
+    "text": "Reuters reports that Ethiopia also",
+    "story": "africa"
+  },
+  {
+    "start": 16.566984993178718,
+    "end": 18.511105047748977,
+    "text": "told ten Eritrean diplomats to",
+    "story": "africa"
+  },
+  {
+    "start": 18.511105047748977,
+    "end": 20.89637107776262,
+    "text": "leave within forty eight hours.",
+    "story": "africa"
+  },
+  {
+    "start": 20.998963165075036,
+    "end": 22.322401091405183,
+    "text": "The moves come amid renewed",
+    "story": "africa"
+  },
+  {
+    "start": 22.322401091405183,
+    "end": 24.8,
+    "text": "fighting in northern Ethiopia.",
+    "story": "africa"
+  },
+  {
+    "start": 25.10542635658915,
+    "end": 27.588217054263566,
+    "text": "Second, western Europe recorded its",
+    "story": "climate"
+  },
+  {
+    "start": 27.588217054263566,
+    "end": 29.564961240310076,
+    "text": "hottest summer, according to a",
+    "story": "climate"
+  },
+  {
+    "start": 29.564961240310076,
+    "end": 31.97922480620155,
+    "text": "new Copernicus review released October",
+    "story": "climate"
+  },
+  {
+    "start": 31.97922480620155,
+    "end": 33.32341085271318,
+    "text": "second.",
+    "story": "climate"
+  },
+  {
+    "start": 33.42883720930233,
+    "end": 34.49364341085271,
+    "text": "Europe as a whole had",
+    "story": "climate"
+  },
+  {
+    "start": 34.49364341085271,
+    "end": 36.60217054263566,
+    "text": "its third warmest summer.",
+    "story": "climate"
+  },
+  {
+    "start": 36.70759689922481,
+    "end": 38.49984496124031,
+    "text": "Reuters reports that fifty two",
+    "story": "climate"
+  },
+  {
+    "start": 38.49984496124031,
+    "end": 39.90201550387597,
+    "text": "percent of the continent had",
+    "story": "climate"
+  },
+  {
+    "start": 39.90201550387597,
+    "end": 41.56248062015504,
+    "text": "faced very strong heat stress",
+    "story": "climate"
+  },
+  {
+    "start": 41.56248062015504,
+    "end": 43.481240310077524,
+    "text": "by the end of summer.",
+    "story": "climate"
+  },
+  {
+    "start": 43.58666666666667,
+    "end": 46.13271317829458,
+    "text": "That figure describes affected land,",
+    "story": "climate"
+  },
+  {
+    "start": 46.13271317829458,
+    "end": 47.118449612403104,
+    "text": "rather than a count of",
+    "story": "climate"
+  },
+  {
+    "start": 47.118449612403104,
+    "end": 48.800000000000004,
+    "text": "people harmed.",
+    "story": "climate"
+  },
+  {
+    "start": 49.0972850678733,
+    "end": 51.286199095022624,
+    "text": "Third, four astronauts have reached",
+    "story": "space"
+  },
+  {
+    "start": 51.286199095022624,
+    "end": 53.1881221719457,
+    "text": "the International Space Station aboard",
+    "story": "space"
+  },
+  {
+    "start": 53.1881221719457,
+    "end": 55.7710407239819,
+    "text": "SpaceX's Crew Thirteen mission.",
+    "story": "space"
+  },
+  {
+    "start": 55.8683257918552,
+    "end": 57.63891402714932,
+    "text": "NASA confirms Dragon docked on",
+    "story": "space"
+  },
+  {
+    "start": 57.63891402714932,
+    "end": 60.56719457013574,
+    "text": "October first, Eastern time, after",
+    "story": "space"
+  },
+  {
+    "start": 60.56719457013574,
+    "end": 62.084841628959275,
+    "text": "a flight lasting seven hours",
+    "story": "space"
+  },
+  {
+    "start": 62.084841628959275,
+    "end": 64.14242081447964,
+    "text": "and fifty five minutes.",
+    "story": "space"
+  },
+  {
+    "start": 64.23970588235294,
+    "end": 65.46549773755656,
+    "text": "The agency calls it the",
+    "story": "space"
+  },
+  {
+    "start": 65.46549773755656,
+    "end": 67.03665158371041,
+    "text": "fastest launch to docking by",
+    "story": "space"
+  },
+  {
+    "start": 67.03665158371041,
+    "end": 68.66131221719456,
+    "text": "a United States spacecraft in",
+    "story": "space"
+  },
+  {
+    "start": 68.66131221719456,
+    "end": 70.485407239819,
+    "text": "the station's history.",
+    "story": "space"
+  },
+  {
+    "start": 70.5826923076923,
+    "end": 72.34355203619909,
+    "text": "The crew includes astronauts from",
+    "story": "space"
+  },
+  {
+    "start": 72.34355203619909,
+    "end": 74.8,
+    "text": "NASA, Canada, and Russia.",
+    "story": "space"
+  },
+  {
+    "start": 75.11483253588517,
+    "end": 76.8488038277512,
+    "text": "Read the original source links",
+    "story": "outro"
+  },
+  {
+    "start": 76.8488038277512,
+    "end": 78.19808612440191,
+    "text": "in the description for more",
+    "story": "outro"
+  },
+  {
+    "start": 78.19808612440191,
+    "end": 79.8,
+    "text": "details.",
+    "story": "outro"
+  }
+]

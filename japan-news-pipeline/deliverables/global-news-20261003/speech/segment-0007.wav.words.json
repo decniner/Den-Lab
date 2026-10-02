@@ -1,0 +1,74 @@
+﻿[
+    {
+        "text":  "That",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  4
+    },
+    {
+        "text":  "figure",
+        "start":  0.305,
+        "index":  5,
+        "count":  6
+    },
+    {
+        "text":  "describes",
+        "start":  0.66999999999999993,
+        "index":  12,
+        "count":  9
+    },
+    {
+        "text":  "affected",
+        "start":  1.23,
+        "index":  22,
+        "count":  8
+    },
+    {
+        "text":  "land",
+        "start":  1.7,
+        "index":  31,
+        "count":  4
+    },
+    {
+        "text":  "rather",
+        "start":  2.5149999999999997,
+        "index":  37,
+        "count":  6
+    },
+    {
+        "text":  "than",
+        "start":  2.8,
+        "index":  44,
+        "count":  4
+    },
+    {
+        "text":  "a",
+        "start":  2.94,
+        "index":  49,
+        "count":  1
+    },
+    {
+        "text":  "count",
+        "start":  3.01,
+        "index":  51,
+        "count":  5
+    },
+    {
+        "text":  "of",
+        "start":  3.3449999999999998,
+        "index":  57,
+        "count":  2
+    },
+    {
+        "text":  "people",
+        "start":  3.4499999999999997,
+        "index":  60,
+        "count":  6
+    },
+    {
+        "text":  "harmed",
+        "start":  3.8299999999999996,
+        "index":  67,
+        "count":  6
+    }
+]

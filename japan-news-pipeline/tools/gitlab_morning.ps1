@@ -22,6 +22,9 @@ switch ($env:UPLOAD_MODE) {
         if ($env:CURRENT_EDITION -eq 'philippine-news-20261003-en') {
             $edition = 'philippine-news-20261003-en'
             $bundle = 'deliverables/philippine-news-20261003'
+        } elseif ($env:CURRENT_EDITION -eq 'global-news-20261003-en') {
+            $edition = 'global-news-20261003-en'
+            $bundle = 'deliverables/global-news-20261003'
         } elseif ($env:CURRENT_EDITION -and $env:CURRENT_EDITION -ne $edition) {
             throw 'Unsupported CURRENT_EDITION; use morning mode for a new reviewed edition.'
         }

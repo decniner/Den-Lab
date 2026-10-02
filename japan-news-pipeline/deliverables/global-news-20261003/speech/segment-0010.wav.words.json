@@ -1,0 +1,110 @@
+﻿[
+    {
+        "text":  "The",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "agency",
+        "start":  0.25,
+        "index":  4,
+        "count":  6
+    },
+    {
+        "text":  "calls",
+        "start":  0.765,
+        "index":  11,
+        "count":  5
+    },
+    {
+        "text":  "it",
+        "start":  1.16,
+        "index":  17,
+        "count":  2
+    },
+    {
+        "text":  "the",
+        "start":  1.27,
+        "index":  20,
+        "count":  3
+    },
+    {
+        "text":  "fastest",
+        "start":  1.3599999999999999,
+        "index":  24,
+        "count":  7
+    },
+    {
+        "text":  "launch",
+        "start":  1.94,
+        "index":  32,
+        "count":  6
+    },
+    {
+        "text":  "to",
+        "start":  2.2649999999999997,
+        "index":  39,
+        "count":  2
+    },
+    {
+        "text":  "docking",
+        "start":  2.385,
+        "index":  42,
+        "count":  7
+    },
+    {
+        "text":  "by",
+        "start":  2.78,
+        "index":  50,
+        "count":  2
+    },
+    {
+        "text":  "a",
+        "start":  2.9749999999999996,
+        "index":  53,
+        "count":  1
+    },
+    {
+        "text":  "United",
+        "start":  3.045,
+        "index":  55,
+        "count":  6
+    },
+    {
+        "text":  "States",
+        "start":  3.54,
+        "index":  62,
+        "count":  6
+    },
+    {
+        "text":  "spacecraft",
+        "start":  3.92,
+        "index":  69,
+        "count":  10
+    },
+    {
+        "text":  "in",
+        "start":  4.545,
+        "index":  80,
+        "count":  2
+    },
+    {
+        "text":  "the",
+        "start":  4.645,
+        "index":  83,
+        "count":  3
+    },
+    {
+        "text":  "station\u0027s",
+        "start":  4.72,
+        "index":  87,
+        "count":  9
+    },
+    {
+        "text":  "history",
+        "start":  5.27,
+        "index":  97,
+        "count":  7
+    }
+]

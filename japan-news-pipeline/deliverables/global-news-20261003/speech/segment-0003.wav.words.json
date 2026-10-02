@@ -1,0 +1,56 @@
+﻿[
+    {
+        "text":  "The",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "moves",
+        "start":  0.18,
+        "index":  4,
+        "count":  5
+    },
+    {
+        "text":  "come",
+        "start":  0.53,
+        "index":  10,
+        "count":  4
+    },
+    {
+        "text":  "amid",
+        "start":  0.75,
+        "index":  15,
+        "count":  4
+    },
+    {
+        "text":  "renewed",
+        "start":  1.03,
+        "index":  20,
+        "count":  7
+    },
+    {
+        "text":  "fighting",
+        "start":  1.39,
+        "index":  28,
+        "count":  8
+    },
+    {
+        "text":  "in",
+        "start":  1.77,
+        "index":  37,
+        "count":  2
+    },
+    {
+        "text":  "northern",
+        "start":  1.89,
+        "index":  40,
+        "count":  8
+    },
+    {
+        "text":  "Ethiopia",
+        "start":  2.2649999999999997,
+        "index":  49,
+        "count":  8
+    }
+]

@@ -1,0 +1,92 @@
+﻿[
+    {
+        "text":  "Reuters",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  7
+    },
+    {
+        "text":  "reports",
+        "start":  0.515,
+        "index":  8,
+        "count":  7
+    },
+    {
+        "text":  "that",
+        "start":  1.02,
+        "index":  16,
+        "count":  4
+    },
+    {
+        "text":  "Ethiopia",
+        "start":  1.2149999999999999,
+        "index":  21,
+        "count":  8
+    },
+    {
+        "text":  "also",
+        "start":  1.9549999999999998,
+        "index":  30,
+        "count":  4
+    },
+    {
+        "text":  "told",
+        "start":  2.3,
+        "index":  35,
+        "count":  4
+    },
+    {
+        "text":  "ten",
+        "start":  2.6399999999999997,
+        "index":  40,
+        "count":  3
+    },
+    {
+        "text":  "Eritrean",
+        "start":  2.875,
+        "index":  44,
+        "count":  8
+    },
+    {
+        "text":  "diplomats",
+        "start":  3.4549999999999996,
+        "index":  53,
+        "count":  9
+    },
+    {
+        "text":  "to",
+        "start":  4.06,
+        "index":  63,
+        "count":  2
+    },
+    {
+        "text":  "leave",
+        "start":  4.1949999999999994,
+        "index":  66,
+        "count":  5
+    },
+    {
+        "text":  "within",
+        "start":  4.43,
+        "index":  72,
+        "count":  6
+    },
+    {
+        "text":  "forty",
+        "start":  4.72,
+        "index":  79,
+        "count":  5
+    },
+    {
+        "text":  "eight",
+        "start":  5.095,
+        "index":  85,
+        "count":  5
+    },
+    {
+        "text":  "hours",
+        "start":  5.305,
+        "index":  91,
+        "count":  5
+    }
+]

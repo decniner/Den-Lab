@@ -1,5 +1,16 @@
 # Reviewed news video pipeline
 
+The global edition is in `deliverables/global-news-20261003/global-news-80s-tiktok.mp4`:
+80 seconds, 1080x1920, English narration and timed captions. Its stories cover
+Ethiopia–Eritrea diplomacy, Europe's summer climate review and the international
+Crew-13 space-station arrival. The source notes preserve attribution, dates,
+geographic scope and the U.S. spacecraft record qualifier.
+YouTube confirmed its private upload with video ID `1lfzd081OEM`.
+
+```powershell
+python -m news_pipeline upload-rendered --edition global-news-20261003-en --bundle deliverables/global-news-20261003
+```
+
 The Philippine edition is in `deliverables/philippine-news-20261003/philippine-news-80s-tiktok.mp4`:
 80 seconds, 1080x1920, English narration, timed captions and October 2 sources.
 It was privately uploaded to the operator-authorized channel and confirmed with

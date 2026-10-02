@@ -1,0 +1,56 @@
+﻿[
+    {
+        "text":  "The",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "crew",
+        "start":  0.19999999999999998,
+        "index":  4,
+        "count":  4
+    },
+    {
+        "text":  "includes",
+        "start":  0.495,
+        "index":  9,
+        "count":  8
+    },
+    {
+        "text":  "astronauts",
+        "start":  1.03,
+        "index":  18,
+        "count":  10
+    },
+    {
+        "text":  "from",
+        "start":  1.6849999999999998,
+        "index":  29,
+        "count":  4
+    },
+    {
+        "text":  "NASA",
+        "start":  1.91,
+        "index":  34,
+        "count":  4
+    },
+    {
+        "text":  "Canada",
+        "start":  2.505,
+        "index":  40,
+        "count":  6
+    },
+    {
+        "text":  "and",
+        "start":  3.11,
+        "index":  48,
+        "count":  3
+    },
+    {
+        "text":  "Russia",
+        "start":  3.2649999999999997,
+        "index":  52,
+        "count":  6
+    }
+]

@@ -1,0 +1,72 @@
+{
+  "edition": "global-news-20261003-en",
+  "mode": "live-news",
+  "language": "en",
+  "source_checked_at": "2026-10-02T15:39:32.089361+00:00",
+  "public_approval": "not requested",
+  "segments": [
+    {
+      "story": "intro",
+      "text": "Global news in eighty seconds. Three verified updates, checked October third."
+    },
+    {
+      "story": "africa",
+      "text": "First, Eritrea has severed diplomatic ties with Ethiopia after Ethiopia ordered its embassy in Asmara closed.",
+      "source": "reuters-africa"
+    },
+    {
+      "story": "africa",
+      "text": "Reuters reports that Ethiopia also told ten Eritrean diplomats to leave within forty eight hours.",
+      "source": "reuters-africa"
+    },
+    {
+      "story": "africa",
+      "text": "The moves come amid renewed fighting in northern Ethiopia.",
+      "source": "reuters-africa"
+    },
+    {
+      "story": "climate",
+      "text": "Second, western Europe recorded its hottest summer, according to a new Copernicus review released October second.",
+      "source": "copernicus-review"
+    },
+    {
+      "story": "climate",
+      "text": "Europe as a whole had its third warmest summer.",
+      "source": "copernicus-review"
+    },
+    {
+      "story": "climate",
+      "text": "Reuters reports that fifty two percent of the continent had faced very strong heat stress by the end of summer.",
+      "source": "reuters-climate"
+    },
+    {
+      "story": "climate",
+      "text": "That figure describes affected land, rather than a count of people harmed.",
+      "source": "reuters-climate"
+    },
+    {
+      "story": "space",
+      "text": "Third, four astronauts have reached the International Space Station aboard SpaceX's Crew Thirteen mission.",
+      "source": "nasa-docking"
+    },
+    {
+      "story": "space",
+      "text": "NASA confirms Dragon docked on October first, Eastern time, after a flight lasting seven hours and fifty five minutes.",
+      "source": "nasa-docking"
+    },
+    {
+      "story": "space",
+      "text": "The agency calls it the fastest launch to docking by a United States spacecraft in the station's history.",
+      "source": "nasa-docking"
+    },
+    {
+      "story": "space",
+      "text": "The crew includes astronauts from NASA, Canada, and Russia.",
+      "source": "nasa-docking"
+    },
+    {
+      "story": "outro",
+      "text": "Read the original source links in the description for more details."
+    }
+  ]
+}

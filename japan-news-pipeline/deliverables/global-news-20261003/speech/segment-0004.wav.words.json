@@ -1,0 +1,98 @@
+﻿[
+    {
+        "text":  "Second",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  6
+    },
+    {
+        "text":  "western",
+        "start":  1.03,
+        "index":  8,
+        "count":  7
+    },
+    {
+        "text":  "Europe",
+        "start":  1.4649999999999999,
+        "index":  16,
+        "count":  6
+    },
+    {
+        "text":  "recorded",
+        "start":  1.795,
+        "index":  23,
+        "count":  8
+    },
+    {
+        "text":  "its",
+        "start":  2.275,
+        "index":  32,
+        "count":  3
+    },
+    {
+        "text":  "hottest",
+        "start":  2.455,
+        "index":  36,
+        "count":  7
+    },
+    {
+        "text":  "summer",
+        "start":  2.85,
+        "index":  44,
+        "count":  6
+    },
+    {
+        "text":  "according",
+        "start":  3.67,
+        "index":  52,
+        "count":  9
+    },
+    {
+        "text":  "to",
+        "start":  4.125,
+        "index":  62,
+        "count":  2
+    },
+    {
+        "text":  "a",
+        "start":  4.265,
+        "index":  65,
+        "count":  1
+    },
+    {
+        "text":  "new",
+        "start":  4.33,
+        "index":  67,
+        "count":  3
+    },
+    {
+        "text":  "Copernicus",
+        "start":  4.54,
+        "index":  71,
+        "count":  10
+    },
+    {
+        "text":  "review",
+        "start":  5.305,
+        "index":  82,
+        "count":  6
+    },
+    {
+        "text":  "released",
+        "start":  5.6549999999999994,
+        "index":  89,
+        "count":  8
+    },
+    {
+        "text":  "October",
+        "start":  6.0749999999999993,
+        "index":  98,
+        "count":  7
+    },
+    {
+        "text":  "second",
+        "start":  6.62,
+        "index":  106,
+        "count":  6
+    }
+]

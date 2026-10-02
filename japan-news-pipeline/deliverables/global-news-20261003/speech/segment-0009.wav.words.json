@@ -1,0 +1,116 @@
+﻿[
+    {
+        "text":  "NASA",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  4
+    },
+    {
+        "text":  "confirms",
+        "start":  0.485,
+        "index":  5,
+        "count":  8
+    },
+    {
+        "text":  "Dragon",
+        "start":  1.03,
+        "index":  14,
+        "count":  6
+    },
+    {
+        "text":  "docked",
+        "start":  1.4649999999999999,
+        "index":  21,
+        "count":  6
+    },
+    {
+        "text":  "on",
+        "start":  1.755,
+        "index":  28,
+        "count":  2
+    },
+    {
+        "text":  "October",
+        "start":  1.92,
+        "index":  31,
+        "count":  7
+    },
+    {
+        "text":  "first",
+        "start":  2.465,
+        "index":  39,
+        "count":  5
+    },
+    {
+        "text":  "Eastern",
+        "start":  3.385,
+        "index":  46,
+        "count":  7
+    },
+    {
+        "text":  "time",
+        "start":  3.8,
+        "index":  54,
+        "count":  4
+    },
+    {
+        "text":  "after",
+        "start":  4.62,
+        "index":  60,
+        "count":  5
+    },
+    {
+        "text":  "a",
+        "start":  4.93,
+        "index":  66,
+        "count":  1
+    },
+    {
+        "text":  "flight",
+        "start":  4.975,
+        "index":  68,
+        "count":  6
+    },
+    {
+        "text":  "lasting",
+        "start":  5.345,
+        "index":  75,
+        "count":  7
+    },
+    {
+        "text":  "seven",
+        "start":  5.7799999999999994,
+        "index":  83,
+        "count":  5
+    },
+    {
+        "text":  "hours",
+        "start":  6.14,
+        "index":  89,
+        "count":  5
+    },
+    {
+        "text":  "and",
+        "start":  6.4899999999999993,
+        "index":  95,
+        "count":  3
+    },
+    {
+        "text":  "fifty",
+        "start":  6.63,
+        "index":  99,
+        "count":  5
+    },
+    {
+        "text":  "five",
+        "start":  6.9799999999999995,
+        "index":  105,
+        "count":  4
+    },
+    {
+        "text":  "minutes",
+        "start":  7.3249999999999993,
+        "index":  110,
+        "count":  7
+    }
+]

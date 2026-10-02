@@ -1,0 +1,122 @@
+﻿[
+    {
+        "text":  "Reuters",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  7
+    },
+    {
+        "text":  "reports",
+        "start":  0.515,
+        "index":  8,
+        "count":  7
+    },
+    {
+        "text":  "that",
+        "start":  1.02,
+        "index":  16,
+        "count":  4
+    },
+    {
+        "text":  "fifty",
+        "start":  1.2,
+        "index":  21,
+        "count":  5
+    },
+    {
+        "text":  "two",
+        "start":  1.545,
+        "index":  27,
+        "count":  3
+    },
+    {
+        "text":  "percent",
+        "start":  1.7999999999999998,
+        "index":  31,
+        "count":  7
+    },
+    {
+        "text":  "of",
+        "start":  2.23,
+        "index":  39,
+        "count":  2
+    },
+    {
+        "text":  "the",
+        "start":  2.33,
+        "index":  42,
+        "count":  3
+    },
+    {
+        "text":  "continent",
+        "start":  2.425,
+        "index":  46,
+        "count":  9
+    },
+    {
+        "text":  "had",
+        "start":  2.9499999999999997,
+        "index":  56,
+        "count":  3
+    },
+    {
+        "text":  "faced",
+        "start":  3.13,
+        "index":  60,
+        "count":  5
+    },
+    {
+        "text":  "very",
+        "start":  3.465,
+        "index":  66,
+        "count":  4
+    },
+    {
+        "text":  "strong",
+        "start":  3.7449999999999997,
+        "index":  71,
+        "count":  6
+    },
+    {
+        "text":  "heat",
+        "start":  4.115,
+        "index":  78,
+        "count":  4
+    },
+    {
+        "text":  "stress",
+        "start":  4.34,
+        "index":  83,
+        "count":  6
+    },
+    {
+        "text":  "by",
+        "start":  4.705,
+        "index":  90,
+        "count":  2
+    },
+    {
+        "text":  "the",
+        "start":  4.89,
+        "index":  93,
+        "count":  3
+    },
+    {
+        "text":  "end",
+        "start":  5.045,
+        "index":  97,
+        "count":  3
+    },
+    {
+        "text":  "of",
+        "start":  5.245,
+        "index":  101,
+        "count":  2
+    },
+    {
+        "text":  "summer",
+        "start":  5.35,
+        "index":  104,
+        "count":  6
+    }
+]

@@ -1,0 +1,127 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Graphic,Arial,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,7,80,180,0,1
+Style: Caption,Arial,56,&H00FFFFFF,&H00FFFFFF,&H00100A05,&H00100A05,-1,0,0,0,100,100,0,0,1,4,1,2,95,190,400,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,120)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,240)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,360)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,480)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,600)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,720)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,840)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,960)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1080)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1200)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1320)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1440)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1560)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1680)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1800)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(120,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(240,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(360,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(480,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(600,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(720,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(840,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(960,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,178)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 60 0 60 6 0 6{\p0}
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,110)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}GLOBAL TODAY
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,214)\fad(120,100)\fs24\b0\1c&HCEB9A6&\bord0\shad0}03 OCT 2026 / REPORTS FROM OCT 1-2
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1615)\fad(120,100)\fs23\b0\1c&HCEB9A6&\bord0\shad0}Synthetic narration / Original graphics
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1545)\p1\1c&H4F3823&\bord0\shad0}m 0 0 l 800 0 800 5 0 5{\p0}
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,320)\fad(120,100)\fs28\b1\1c&HC7DC4C&\bord0\shad0}THREE VERIFIED UPDATES
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,420)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}THE WORLD\NIN 80 SECONDS
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,865)\fad(120,100)\fs110\b1\1c&H5D55FC&\bord0\shad0}01
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(275,910)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}AFRICA DIPLOMACY
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,1050)\fad(120,100)\fs110\b1\1c&HC7DC4C&\bord0\shad0}02
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(275,1095)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}EUROPEAN CLIMATE
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,1235)\fad(120,100)\fs110\b1\1c&H66D1FF&\bord0\shad0}03
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(275,1280)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}SPACE STATION
+Dialogue: 0,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 0,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 0,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,290)\fad(120,100)\fs27\b1\1c&H5D55FC&\bord0\shad0}01 / HORN OF AFRICA
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,375)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}DIPLOMATIC\NTIES SEVERED
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,650)\fad(120,100)\fs30\b0\1c&HCEB9A6&\bord0\shad0}ETHIOPIA / ERITREA
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,760)\fad(120,100)\fs76\b1\1c&H5D55FC&\bord0\shad0}EMBASSY\NCLOSURE
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,1000)\fad(120,100)\fs31\b1\1c&HFFFFFF&\bord0\shad0}10 Eritrean diplomats told to leave
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,1110)\fad(120,100)\fs29\b0\1c&HCEB9A6&\bord0\shad0}48-hour deadline / Reuters report
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,1250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: REUTERS VIA SIGHT / OCT 2
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,290)\fad(120,100)\fs27\b1\1c&HC7DC4C&\bord0\shad0}02 / EUROPEAN CLIMATE
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,375)\fad(120,100)\fs62\b1\1c&HFFFFFF&\bord0\shad0}WESTERN EUROPE\NRECORD SUMMER
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,650)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}COPERNICUS SUMMER REVIEW
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,765)\fad(120,100)\fs70\b1\1c&HC7DC4C&\bord0\shad0}WARMEST\NON RECORD
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,985)\fad(120,100)\fs29\b1\1c&HFFFFFF&\bord0\shad0}Western Europe / summer 2026
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,1090)\fad(120,100)\fs26\b0\1c&HCEB9A6&\bord0\shad0}Europe overall: third-warmest summer
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,1250)\fad(120,100)\fs24\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: COPERNICUS / REUTERS / OCT 2
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,290)\fad(120,100)\fs25\b1\1c&H66D1FF&\bord0\shad0}03 / INTERNATIONAL SPACE STATION
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,375)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}CREW-13\NARRIVES AT ISS
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,650)\fad(120,100)\fs29\b0\1c&HCEB9A6&\bord0\shad0}NASA / CANADA / RUSSIA
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,785)\fad(120,100)\fs95\b1\1c&H66D1FF&\bord0\shad0}7 h 55 m
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,935)\fad(120,100)\fs30\b1\1c&HFFFFFF&\bord0\shad0}Launch to docking / NASA report
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,1040)\fad(120,100)\fs25\b1\1c&HFFFFFF&\bord0\shad0}Fastest U.S. spacecraft ISS docking trip
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,1130)\fad(120,100)\fs26\b0\1c&HCEB9A6&\bord0\shad0}Docked October 1 / Eastern time
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,1250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: NASA / OCT 1 EDT
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,355)\fad(120,100)\fs59\b1\1c&HFFFFFF&\bord0\shad0}READ THE SOURCES
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,620)\fad(120,100)\fs32\b1\1c&H5D55FC&\bord0\shad0}REUTERS VIA SIGHT
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,705)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}Diplomatic ties / October 2
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,850)\fad(120,100)\fs32\b1\1c&HC7DC4C&\bord0\shad0}COPERNICUS / REUTERS
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,935)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}Summer review / October 2
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1080)\fad(120,100)\fs32\b1\1c&H66D1FF&\bord0\shad0}NASA
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1165)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}Crew-13 docking / October 1 EDT
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1325)\fad(120,100)\fs26\b0\1c&HCEB9A6&\bord0\shad0}Source links in the video description
+Dialogue: 5,0:00:00.09,0:00:02.34,Caption,,0,0,0,,{\fad(35,35)}Global news in eighty\Nseconds.
+Dialogue: 5,0:00:02.34,0:00:04.74,Caption,,0,0,0,,{\fad(35,35)}Three verified updates,\Nchecked October
+Dialogue: 5,0:00:04.74,0:00:05.80,Caption,,0,0,0,,{\fad(35,35)}third.
+Dialogue: 5,0:00:06.10,0:00:08.74,Caption,,0,0,0,,{\fad(35,35)}First, Eritrea has\Nsevered diplomatic
+Dialogue: 5,0:00:08.74,0:00:11.12,Caption,,0,0,0,,{\fad(35,35)}ties with Ethiopia after\NEthiopia
+Dialogue: 5,0:00:11.12,0:00:12.84,Caption,,0,0,0,,{\fad(35,35)}ordered its embassy in\NAsmara
+Dialogue: 5,0:00:12.84,0:00:14.21,Caption,,0,0,0,,{\fad(35,35)}closed.
+Dialogue: 5,0:00:14.31,0:00:16.57,Caption,,0,0,0,,{\fad(35,35)}Reuters reports that\NEthiopia also
+Dialogue: 5,0:00:16.57,0:00:18.51,Caption,,0,0,0,,{\fad(35,35)}told ten Eritrean\Ndiplomats to
+Dialogue: 5,0:00:18.51,0:00:20.90,Caption,,0,0,0,,{\fad(35,35)}leave within forty eight\Nhours.
+Dialogue: 5,0:00:21.00,0:00:22.32,Caption,,0,0,0,,{\fad(35,35)}The moves come amid\Nrenewed
+Dialogue: 5,0:00:22.32,0:00:24.80,Caption,,0,0,0,,{\fad(35,35)}fighting in northern\NEthiopia.
+Dialogue: 5,0:00:25.11,0:00:27.59,Caption,,0,0,0,,{\fad(35,35)}Second, western Europe\Nrecorded its
+Dialogue: 5,0:00:27.59,0:00:29.56,Caption,,0,0,0,,{\fad(35,35)}hottest summer, according\Nto a
+Dialogue: 5,0:00:29.56,0:00:31.98,Caption,,0,0,0,,{\fad(35,35)}new Copernicus review\Nreleased October
+Dialogue: 5,0:00:31.98,0:00:33.32,Caption,,0,0,0,,{\fad(35,35)}second.
+Dialogue: 5,0:00:33.43,0:00:34.49,Caption,,0,0,0,,{\fad(35,35)}Europe as a whole had
+Dialogue: 5,0:00:34.49,0:00:36.60,Caption,,0,0,0,,{\fad(35,35)}its third warmest summer.
+Dialogue: 5,0:00:36.71,0:00:38.50,Caption,,0,0,0,,{\fad(35,35)}Reuters reports that\Nfifty two
+Dialogue: 5,0:00:38.50,0:00:39.90,Caption,,0,0,0,,{\fad(35,35)}percent of the continent\Nhad
+Dialogue: 5,0:00:39.90,0:00:41.56,Caption,,0,0,0,,{\fad(35,35)}faced very strong heat\Nstress
+Dialogue: 5,0:00:41.56,0:00:43.48,Caption,,0,0,0,,{\fad(35,35)}by the end of summer.
+Dialogue: 5,0:00:43.59,0:00:46.13,Caption,,0,0,0,,{\fad(35,35)}That figure describes\Naffected land,
+Dialogue: 5,0:00:46.13,0:00:47.12,Caption,,0,0,0,,{\fad(35,35)}rather than a count of
+Dialogue: 5,0:00:47.12,0:00:48.80,Caption,,0,0,0,,{\fad(35,35)}people harmed.
+Dialogue: 5,0:00:49.10,0:00:51.29,Caption,,0,0,0,,{\fad(35,35)}Third, four astronauts\Nhave reached
+Dialogue: 5,0:00:51.29,0:00:53.19,Caption,,0,0,0,,{\fad(35,35)}the International Space\NStation aboard
+Dialogue: 5,0:00:53.19,0:00:55.77,Caption,,0,0,0,,{\fad(35,35)}SpaceX's Crew Thirteen\Nmission.
+Dialogue: 5,0:00:55.87,0:00:57.64,Caption,,0,0,0,,{\fad(35,35)}NASA confirms Dragon\Ndocked on
+Dialogue: 5,0:00:57.64,0:01:00.57,Caption,,0,0,0,,{\fad(35,35)}October first, Eastern\Ntime, after
+Dialogue: 5,0:01:00.57,0:01:02.08,Caption,,0,0,0,,{\fad(35,35)}a flight lasting seven\Nhours
+Dialogue: 5,0:01:02.08,0:01:04.14,Caption,,0,0,0,,{\fad(35,35)}and fifty five minutes.
+Dialogue: 5,0:01:04.24,0:01:05.47,Caption,,0,0,0,,{\fad(35,35)}The agency calls it the
+Dialogue: 5,0:01:05.47,0:01:07.04,Caption,,0,0,0,,{\fad(35,35)}fastest launch to docking\Nby
+Dialogue: 5,0:01:07.04,0:01:08.66,Caption,,0,0,0,,{\fad(35,35)}a United States\Nspacecraft in
+Dialogue: 5,0:01:08.66,0:01:10.49,Caption,,0,0,0,,{\fad(35,35)}the station's history.
+Dialogue: 5,0:01:10.58,0:01:12.34,Caption,,0,0,0,,{\fad(35,35)}The crew includes\Nastronauts from
+Dialogue: 5,0:01:12.34,0:01:14.80,Caption,,0,0,0,,{\fad(35,35)}NASA, Canada, and Russia.
+Dialogue: 5,0:01:15.11,0:01:16.85,Caption,,0,0,0,,{\fad(35,35)}Read the original source\Nlinks
+Dialogue: 5,0:01:16.85,0:01:18.20,Caption,,0,0,0,,{\fad(35,35)}in the description for\Nmore
+Dialogue: 5,0:01:18.20,0:01:19.80,Caption,,0,0,0,,{\fad(35,35)}details.

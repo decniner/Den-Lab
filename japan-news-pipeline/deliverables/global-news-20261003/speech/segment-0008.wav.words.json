@@ -1,0 +1,86 @@
+﻿[
+    {
+        "text":  "Third",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "four",
+        "start":  0.89,
+        "index":  7,
+        "count":  4
+    },
+    {
+        "text":  "astronauts",
+        "start":  1.18,
+        "index":  12,
+        "count":  10
+    },
+    {
+        "text":  "have",
+        "start":  1.845,
+        "index":  23,
+        "count":  4
+    },
+    {
+        "text":  "reached",
+        "start":  2.02,
+        "index":  28,
+        "count":  7
+    },
+    {
+        "text":  "the",
+        "start":  2.35,
+        "index":  36,
+        "count":  3
+    },
+    {
+        "text":  "International",
+        "start":  2.5149999999999997,
+        "index":  40,
+        "count":  13
+    },
+    {
+        "text":  "Space",
+        "start":  3.195,
+        "index":  54,
+        "count":  5
+    },
+    {
+        "text":  "Station",
+        "start":  3.55,
+        "index":  60,
+        "count":  7
+    },
+    {
+        "text":  "aboard",
+        "start":  3.965,
+        "index":  68,
+        "count":  6
+    },
+    {
+        "text":  "SpaceX\u0027s",
+        "start":  4.305,
+        "index":  75,
+        "count":  8
+    },
+    {
+        "text":  "Crew",
+        "start":  5.06,
+        "index":  84,
+        "count":  4
+    },
+    {
+        "text":  "Thirteen",
+        "start":  5.31,
+        "index":  89,
+        "count":  8
+    },
+    {
+        "text":  "mission",
+        "start":  5.7799999999999994,
+        "index":  98,
+        "count":  7
+    }
+]

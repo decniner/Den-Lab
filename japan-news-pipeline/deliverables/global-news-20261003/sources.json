@@ -1,0 +1,26 @@
+{
+  "fixture": false,
+  "checked_by": "assistant web factual review; operator authorized private upload",
+  "sources": [
+    {
+      "id": "reuters-africa",
+      "url": "https://sightmagazine.com.au/news/eritrea-severs-diplomatic-ties-with-ethiopia-after-addis-ababa-orders-closure-of-embassy-in-asmara/",
+      "published_at": "2026-10-02T09:00:00+10:00"
+    },
+    {
+      "id": "copernicus-review",
+      "url": "https://climate.copernicus.eu/c3s-summer-review-2026-out",
+      "published_at": "2026-10-02T00:00:00+02:00"
+    },
+    {
+      "id": "reuters-climate",
+      "url": "https://www.aol.co.uk/articles/half-europe-faced-very-strong-021105000.html",
+      "published_at": "2026-10-02T02:15:00+00:00"
+    },
+    {
+      "id": "nasa-docking",
+      "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/dragon-docks-bringing-spacex-crew-13-to-station/",
+      "published_at": "2026-10-01T19:13:00-04:00"
+    }
+  ]
+}

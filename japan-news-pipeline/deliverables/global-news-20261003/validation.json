@@ -1,0 +1,66 @@
+{
+  "edition": "global-news-20261003-en",
+  "mode": "live-news",
+  "fixture": false,
+  "video_path": "C:\\Users\\DenDev\\Documents\\Codex\\2026-10-02\\check-current-youtube-requirements-for-synthetic-content\\deliverables\\global-news-20261003\\global-news-80s-tiktok.mp4",
+  "video_sha256": "f09afa5708f06ed043536bdaf69c71d8dad8b2e3c9555498772791a30aa06c97",
+  "duration_seconds": 80.0,
+  "width": 1080,
+  "height": 1920,
+  "frames": 2400,
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "decode_validation": "passed",
+  "caption_timing": "speech-event timestamps, adjusted with audio pacing",
+  "caption_groups": 41,
+  "mean_audio_db": -16.3,
+  "pacing": {
+    "intro": {
+      "raw_seconds": 6.395,
+      "target_seconds": 6,
+      "tempo_factor": 1.1025862068965517
+    },
+    "africa": {
+      "raw_seconds": 18.325,
+      "target_seconds": 19,
+      "tempo_factor": 0.9747340425531914
+    },
+    "climate": {
+      "raw_seconds": 22.575,
+      "target_seconds": 24,
+      "tempo_factor": 0.9485294117647058
+    },
+    "space": {
+      "raw_seconds": 26.52,
+      "target_seconds": 26,
+      "tempo_factor": 1.027906976744186
+    },
+    "outro": {
+      "raw_seconds": 4.18,
+      "target_seconds": 5,
+      "tempo_factor": 0.8708333333333333
+    }
+  },
+  "sources": "sources.json",
+  "source_review": "assistant factual review; operator authorized private upload in this session",
+  "public_approval": null,
+  "upload": "not attempted",
+  "video_id": null,
+  "url": null,
+  "returned_visibility": null,
+  "paid_jobs": 0,
+  "video_file": "global-news-80s-tiktok.mp4",
+  "title": "Global News in 80 Seconds | 2026-10-03",
+  "script_sha256": "cceb7e9e4e8d9e4c1225434e779e3fe54df0a8d69f0ed78904f4116ea651a7b6",
+  "sources_sha256": "424d8d364fa7693a9d74bd6516233039da3d6efcf029660552465d75fa2ee481",
+  "visual_preview_check": "passed",
+  "preview_seconds_checked": [
+    3,
+    12,
+    34,
+    60,
+    77
+  ],
+  "max_caption_characters_per_second": 22.32
+}
