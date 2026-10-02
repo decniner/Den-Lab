@@ -1,0 +1,16 @@
+{
+  "channel_id": "REPLACE_WITH_EXACT_UC_CHANNEL_ID",
+  "oauth_token": "token.json",
+  "research_provider": "reviewed-catalog",
+  "script_provider": "reviewed-template",
+  "tts_provider": "windows-sapi",
+  "voice": "Microsoft Zira Desktop",
+  "voice_license": "Installed voice under the operator's licensed Windows installation; no voice files redistributed",
+  "catalog": "facts/catalog.json",
+  "history_seed": "facts/history.seed.json",
+  "review_max_age_days": 30,
+  "ffmpeg": "ffmpeg",
+  "ffprobe": "ffprobe",
+  "font": "C:/Windows/Fonts/arial.ttf",
+  "schedule_enabled": false
+}

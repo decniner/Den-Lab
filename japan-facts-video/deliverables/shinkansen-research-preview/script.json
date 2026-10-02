@@ -1,0 +1,85 @@
+{
+  "title": "How Japan's Bullet Trains Get an Earthquake Head Start | Japan Explained",
+  "description": "Why earthquake early warning can give JR East's Shinkansen trains a head start on braking, how P waves and faster communications make it possible, and why it cannot guarantee warning near the earthquake. #JapanExplained #Shorts",
+  "segments": [
+    {
+      "phase": "hook",
+      "scene": "hook",
+      "text": "Japan's bullet trains can begin braking before strong earthquake shaking arrives.",
+      "claim_ids": [
+        "early-braking"
+      ]
+    },
+    {
+      "phase": "context",
+      "scene": "context",
+      "text": "This is early warning, not prediction. The earthquake has already started.",
+      "claim_ids": [
+        "detection-not-prediction"
+      ]
+    },
+    {
+      "phase": "context",
+      "scene": "waves",
+      "text": "J R East's system detects fast P waves, the first seismic vibrations.",
+      "claim_ids": [
+        "p-wave-first"
+      ]
+    },
+    {
+      "phase": "mechanism",
+      "scene": "waves",
+      "text": "Slower S waves and surface waves generally bring stronger shaking.",
+      "claim_ids": [
+        "slower-stronger"
+      ]
+    },
+    {
+      "phase": "mechanism",
+      "scene": "sensor",
+      "text": "Imagine a sensor near the earthquake. It detects the first wave, then sends a warning toward the railway.",
+      "claim_ids": [
+        "sensor-warning",
+        "p-wave-first"
+      ]
+    },
+    {
+      "phase": "mechanism",
+      "scene": "brakes",
+      "text": "When the railway system decides action is needed, it cuts power, triggering the train's emergency brakes.",
+      "claim_ids": [
+        "power-cut-brakes"
+      ]
+    },
+    {
+      "phase": "mechanism",
+      "scene": "signal",
+      "text": "The electrical signal outruns seismic waves. That means braking can start while stronger shaking is still on its way.",
+      "claim_ids": [
+        "signals-outrun-waves",
+        "early-braking"
+      ]
+    },
+    {
+      "phase": "limits",
+      "scene": "limits",
+      "text": "But near the earthquake, the warning may arrive too late. Braking early does not guarantee stopping before shaking.",
+      "claim_ids": [
+        "warning-limit"
+      ]
+    },
+    {
+      "phase": "takeaway",
+      "scene": "takeaway",
+      "text": "The takeaway: detect what has started, then use the time difference to reduce risk.",
+      "claim_ids": [
+        "takeaway"
+      ]
+    }
+  ],
+  "edition": "japan-explained-20261003-shinkansen-v1",
+  "mode": "live",
+  "language": "en",
+  "fact_id": "shinkansen-wave-warning",
+  "review_hash": "3f3c47ae039692ac1a2ec3bd208f67394b600d1301544d39f888c2333b32a11b"
+}

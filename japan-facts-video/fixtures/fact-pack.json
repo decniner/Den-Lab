@@ -1,0 +1,345 @@
+{
+  "fact_id": "shinkansen-wave-warning",
+  "semantic_key": "rail-earthquake-wave-warning",
+  "category": "engineering",
+  "title": "How a bullet train can brake before strong shaking",
+  "aliases": [
+    "bullet-train-earthquake-brakes",
+    "shinkansen-earthquake-detection"
+  ],
+  "sources": [
+    {
+      "id": "jr-detection",
+      "url": "https://www.jreast.co.jp/e/press/20071102/index.html",
+      "publisher": "East Japan Railway Company",
+      "independence_group": "jr-east",
+      "authoritative": true,
+      "published_date": "2007-11-06",
+      "role": "Primary operator description of P-wave detection; established mechanism, not a new launch",
+      "excerpts": [
+        {
+          "id": "detect",
+          "quote": "detects preliminary earthquake tremors (P waves)"
+        },
+        {
+          "id": "warn",
+          "quote": "immediately issues earthquake warning information"
+        }
+      ]
+    },
+    {
+      "id": "jr-brakes",
+      "url": "https://www.jreast.co.jp/e/press/20080202/index.html",
+      "publisher": "East Japan Railway Company",
+      "independence_group": "jr-east",
+      "authoritative": true,
+      "published_date": "2008-02-08",
+      "role": "Primary operator explanation of onboard power-cut detection and emergency braking",
+      "excerpts": [
+        {
+          "id": "brake",
+          "quote": "the emergency brake is applied"
+        },
+        {
+          "id": "power",
+          "quote": "the power cut is detected onboard"
+        }
+      ]
+    },
+    {
+      "id": "usgs-waves",
+      "url": "https://www.usgs.gov/programs/earthquake-hazards/science/earthquake-early-warning-overview",
+      "publisher": "US Geological Survey",
+      "independence_group": "usgs",
+      "authoritative": true,
+      "published_date": "2022-03-09",
+      "role": "Independent specialist explanation of seismic waves and fast telecommunications; US system examples are not asserted to be JR operating thresholds",
+      "excerpts": [
+        {
+          "id": "prediction",
+          "quote": "not earthquake prediction"
+        },
+        {
+          "id": "started",
+          "quote": "already started"
+        },
+        {
+          "id": "first",
+          "quote": "fastest-moving seismic waves"
+        },
+        {
+          "id": "stronger",
+          "quote": "slower moving, and generally more damaging"
+        },
+        {
+          "id": "signal",
+          "quote": "many times faster than seismic waves"
+        },
+        {
+          "id": "protect",
+          "quote": "slowing a train"
+        }
+      ]
+    },
+    {
+      "id": "jma-limits",
+      "url": "https://www.jma.go.jp/jma/en/Activities/eew3.html",
+      "publisher": "Japan Meteorological Agency",
+      "independence_group": "jma",
+      "authoritative": true,
+      "published_date": "2007-08-30",
+      "role": "Warning limitations, not a guarantee of advance notice",
+      "excerpts": [
+        {
+          "id": "late",
+          "quote": "the warning may not be transmitted before strong tremors hit"
+        }
+      ]
+    },
+    {
+      "id": "jr-current",
+      "url": "https://www.jreast.co.jp/en/company/csr/safe-cx/safety-efforts/disaster/earthquake/",
+      "publisher": "East Japan Railway Company",
+      "independence_group": "jr-east",
+      "authoritative": true,
+      "published_date": null,
+      "role": "Current operator page confirms continuing system improvements; undated page, not invented publication date",
+      "excerpts": [
+        {
+          "id": "current",
+          "quote": "Measures for Emergency Stopping of Trains"
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "early-braking",
+      "text": "JR East's Shinkansen early warning can initiate braking before stronger earthquake shaking arrives; this is conditional, not guaranteed.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jr-detection",
+          "quote_ref": "detect"
+        },
+        {
+          "source": "jr-brakes",
+          "quote_ref": "brake"
+        },
+        {
+          "source": "usgs-waves",
+          "quote_ref": "signal"
+        }
+      ],
+      "scope": "USGS supports the physics, not the identity of JR East's control system."
+    },
+    {
+      "id": "detection-not-prediction",
+      "text": "Early warning detects an earthquake after it has started, rather than predicting one before it begins.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "usgs-waves",
+          "quote_ref": "prediction"
+        },
+        {
+          "source": "usgs-waves",
+          "quote_ref": "started"
+        }
+      ]
+    },
+    {
+      "id": "p-wave-first",
+      "text": "JR East's system detects preliminary P-wave tremors, which are the first seismic wave arrivals.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jr-detection",
+          "quote_ref": "detect"
+        },
+        {
+          "source": "usgs-waves",
+          "quote_ref": "first"
+        }
+      ]
+    },
+    {
+      "id": "slower-stronger",
+      "text": "S waves and surface waves are slower and generally more damaging than the initial P waves.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "usgs-waves",
+          "quote_ref": "stronger"
+        }
+      ]
+    },
+    {
+      "id": "sensor-warning",
+      "text": "Sensors detect earthquake motion and transmit warning information; the example is schematic, not a documented event.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jr-detection",
+          "quote_ref": "detect"
+        },
+        {
+          "source": "jr-detection",
+          "quote_ref": "warn"
+        }
+      ],
+      "scope": "The video gives a general illustrative sequence and does not claim JR uses the US processing architecture."
+    },
+    {
+      "id": "power-cut-brakes",
+      "text": "When earthquake control requires it, cutting power to overhead wires is detected onboard and applies emergency braking.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jr-brakes",
+          "quote_ref": "power"
+        },
+        {
+          "source": "jr-brakes",
+          "quote_ref": "brake"
+        },
+        {
+          "source": "jr-current",
+          "quote_ref": "current"
+        }
+      ],
+      "scope": "No universal trigger threshold, brake delay or stopping distance is asserted."
+    },
+    {
+      "id": "signals-outrun-waves",
+      "text": "Telecommunications travel faster than seismic waves and can provide time for earlier protective action.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "usgs-waves",
+          "quote_ref": "signal"
+        }
+      ]
+    },
+    {
+      "id": "warning-limit",
+      "text": "Near the earthquake focus, warning may not arrive before strong shaking; braking early is not a guarantee of a complete stop before shaking.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jma-limits",
+          "quote_ref": "late"
+        }
+      ]
+    },
+    {
+      "id": "takeaway",
+      "text": "The useful mechanism is early detection and exploiting the time difference to reduce risk, rather than predicting earthquakes.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "usgs-waves",
+          "quote_ref": "protect"
+        },
+        {
+          "source": "usgs-waves",
+          "quote_ref": "signal"
+        }
+      ]
+    }
+  ],
+  "verification_notes": {
+    "numerical_claims": "No earthquake speeds, warning seconds, stopping distances, superlatives or event dates are spoken.",
+    "translations": "English-language primary and specialist sources; no unsupported Japanese translation.",
+    "folklore": "None. No proposed or disputed explanation is presented as established fact.",
+    "visual_license": "All diagram geometry, animation and typography authored for this edition; no documentary or generated photorealistic footage.",
+    "copyright": "Only short necessary supporting excerpts retained; spoken wording is original."
+  },
+  "script": {
+    "title": "How Japan's Bullet Trains Get an Earthquake Head Start | Japan Explained",
+    "description": "Why earthquake early warning can give JR East's Shinkansen trains a head start on braking, how P waves and faster communications make it possible, and why it cannot guarantee warning near the earthquake. #JapanExplained #Shorts",
+    "segments": [
+      {
+        "phase": "hook",
+        "scene": "hook",
+        "text": "Japan's bullet trains can begin braking before strong earthquake shaking arrives.",
+        "claim_ids": [
+          "early-braking"
+        ]
+      },
+      {
+        "phase": "context",
+        "scene": "context",
+        "text": "This is early warning, not prediction. The earthquake has already started.",
+        "claim_ids": [
+          "detection-not-prediction"
+        ]
+      },
+      {
+        "phase": "context",
+        "scene": "waves",
+        "text": "J R East's system detects fast P waves, the first seismic vibrations.",
+        "claim_ids": [
+          "p-wave-first"
+        ]
+      },
+      {
+        "phase": "mechanism",
+        "scene": "waves",
+        "text": "Slower S waves and surface waves generally bring stronger shaking.",
+        "claim_ids": [
+          "slower-stronger"
+        ]
+      },
+      {
+        "phase": "mechanism",
+        "scene": "sensor",
+        "text": "Imagine a sensor near the earthquake. It detects the first wave, then sends a warning toward the railway.",
+        "claim_ids": [
+          "sensor-warning",
+          "p-wave-first"
+        ]
+      },
+      {
+        "phase": "mechanism",
+        "scene": "brakes",
+        "text": "When the railway system decides action is needed, it cuts power, triggering the train's emergency brakes.",
+        "claim_ids": [
+          "power-cut-brakes"
+        ]
+      },
+      {
+        "phase": "mechanism",
+        "scene": "signal",
+        "text": "The electrical signal outruns seismic waves. That means braking can start while stronger shaking is still on its way.",
+        "claim_ids": [
+          "signals-outrun-waves",
+          "early-braking"
+        ]
+      },
+      {
+        "phase": "limits",
+        "scene": "limits",
+        "text": "But near the earthquake, the warning may arrive too late. Braking early does not guarantee stopping before shaking.",
+        "claim_ids": [
+          "warning-limit"
+        ]
+      },
+      {
+        "phase": "takeaway",
+        "scene": "takeaway",
+        "text": "The takeaway: detect what has started, then use the time difference to reduce risk.",
+        "claim_ids": [
+          "takeaway"
+        ]
+      }
+    ]
+  },
+  "review": {
+    "reviewed_by": "Offline fixture reviewer",
+    "reviewed_at": "2026-10-02T16:40:00+00:00",
+    "content_sha256": "96b593d157a967bcf5f6922bb443ff06a3930e1502da10578b10e1f72efbbd2a"
+  },
+  "fixture": true,
+  "fixture_only": true
+}

@@ -1,0 +1,49 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Graphic,Arial,36,&H00EAF0F1,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,7,80,180,0,1
+Style: Caption,Arial,52,&H00EAF0F1,&H00FFFFFF,&H000A100E,&H000A100E,-1,0,0,0,100,100,0,0,1,4,1,2,95,190,400,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,105)\p1\1c&HD0E87C&\bord0\shad0}m 0 0 l 6 0 6 55 0 55{\p0}
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(106,110)\fad(180,120)\fs31\b1\1c&HF1F0EA&\bord0\shad0}JAPAN EXPLAINED
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,202)\fad(180,120)\fs21\b0\1c&HBAAF96&\bord0\shad0}ENGINEERING / EARTHQUAKE EARLY WARNING
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(162,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(244,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(326,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(408,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(490,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(572,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(654,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(736,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(818,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 1 0 1 600 0 600{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,580)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 820 0 820 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,655)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 820 0 820 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,730)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 820 0 820 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,805)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 820 0 820 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,880)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 820 0 820 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,955)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 820 0 820 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,1030)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 820 0 820 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,1105)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 820 0 820 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,1180)\p1\1c&H2D2312&\bord0\shad0}m 0 0 l 820 0 820 1 0 1{\p0}
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,300)\fad(180,120)\fs64\b1\1c&HF1F0EA&\bord0\shad0}DETECT THE\NFIRST ARRIVAL.
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,505)\fad(180,120)\fs26\b0\1c&HBAAF96&\bord0\shad0}A sensor sends the warning.
+Dialogue: 1,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,645)\p1\1c&H2B2110&\bord0\shad0}m 0 0 l 800 0 800 510 0 510{\p0}
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(120,695)\fad(180,120)\fs29\b1\1c&HD0E87C&\bord0\shad0}EARLIER: P WAVE
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(120,935)\fad(180,120)\fs27\b1\1c&H6AB4FF&\bord0\shad0}LATER: STRONGER SHAKING
+Dialogue: 2,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(120,830)\p1\1c&H6D624E&\bord0\shad0}m 0 0 l 670 0 670 3 0 3{\p0}
+Dialogue: 3,0:00:00.00,0:00:03.00,Graphic,,0,0,0,,{\an7\p1\1c&HD0E87C&\bord0\shad0\move(150,802,660,802,0,3000)}m 0 0 l 8 0 8 56 0 56{\p0}
+Dialogue: 3,0:00:03.00,0:00:05.00,Graphic,,0,0,0,,{\an7\p1\1c&HD0E87C&\bord0\shad0\move(150,802,660,802,0,2000)}m 0 0 l 8 0 8 56 0 56{\p0}
+Dialogue: 2,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(120,1070)\p1\1c&H6D624E&\bord0\shad0}m 0 0 l 670 0 670 3 0 3{\p0}
+Dialogue: 3,0:00:00.00,0:00:03.00,Graphic,,0,0,0,,{\an7\p1\1c&H6AB4FF&\bord0\shad0\move(150,1042,450,1042,0,3000)}m 0 0 l 8 0 8 56 0 56{\p0}
+Dialogue: 3,0:00:03.00,0:00:05.00,Graphic,,0,0,0,,{\an7\p1\1c&H6AB4FF&\bord0\shad0\move(150,1042,450,1042,0,2000)}m 0 0 l 8 0 8 56 0 56{\p0}
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(735,770)\p1\1c&HF1F0EA&\bord0\shad0}m 0 0 l 9 0 9 94 0 94{\p0}
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(605,730)\fad(180,120)\fs25\b1\1c&HF1F0EA&\bord0\shad0}SENSOR
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,1220)\fad(180,120)\fs20\b0\1c&HBAAF96&\bord0\shad0}SCHEMATIC / NOT TO SCALE
+Dialogue: 4,0:00:00.00,0:00:05.00,Graphic,,0,0,0,,{\an7\pos(80,1630)\fs20\1c&HBAAF96&\bord0}Original diagrams / Synthetic narration

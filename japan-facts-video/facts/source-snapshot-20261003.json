@@ -1,0 +1,38 @@
+{
+  "mode": "live",
+  "captured_at": "2026-10-02T17:07:00+00:00",
+  "retrieval_method": "Assistant browsing-tool retrieval of the actual publisher pages; short verbatim evidence anchors retained with editorial paraphrase. Direct shell HTTPS fetch failed under network restrictions and is not claimed successful.",
+  "reviewed_by": "Assistant source/editorial review for authorized Japan Explained sample",
+  "pages": [
+    {
+      "source": "jr-detection",
+      "url": "https://www.jreast.co.jp/e/press/20071102/index.html",
+      "text": "Primary operator page checked: JR East uses preliminary earthquake tremors to provide Shinkansen warning information, which can also inform conventional train emergency stops. Evidence anchors: detects preliminary earthquake tremors (P waves). immediately issues earthquake warning information.",
+      "content_sha256": "b4b90af626644dbcaa99ce7a5111708029d72583ae1f1e5cd7b6f3e63251d127"
+    },
+    {
+      "source": "jr-brakes",
+      "url": "https://www.jreast.co.jp/e/press/20080202/index.html",
+      "text": "Primary operator investigation page checked: earthquake detection can cause overhead-line power interruption; equipment onboard detects the interruption and initiates an emergency stop. Evidence anchors: the emergency brake is applied. the power cut is detected onboard.",
+      "content_sha256": "4b80ae232ac2f5bf24fd9a31fc749362bdd7e636401256441217a9a04135848e"
+    },
+    {
+      "source": "usgs-waves",
+      "url": "https://www.usgs.gov/programs/earthquake-hazards/science/earthquake-early-warning-overview",
+      "text": "Independent USGS specialist page checked: early warning begins after rupture, rather than forecasting an earthquake. P waves arrive first. Stronger S/surface shaking can arrive later. Signals can arrive ahead of that shaking and initiate protective action. Evidence anchors: not earthquake prediction. already started. fastest-moving seismic waves. slower moving, and generally more damaging. many times faster than seismic waves. slowing a train.",
+      "content_sha256": "4a95884a8712274efbeaa8b6f28c08c33d20695b808bc13e401edddf85170324"
+    },
+    {
+      "source": "jma-limits",
+      "url": "https://www.jma.go.jp/jma/en/Activities/eew3.html",
+      "text": "JMA warning-limits page checked: usable warning time can be very short, especially close to the earthquake. Magnitude/intensity estimates also have limits. Evidence anchor: the warning may not be transmitted before strong tremors hit.",
+      "content_sha256": "ad9dc5967ab166e299dc4d7cf9948679280fad796dd1f56fa9a4529c1fa3d0a9"
+    },
+    {
+      "source": "jr-current",
+      "url": "https://www.jreast.co.jp/en/company/csr/safe-cx/safety-efforts/disaster/earthquake/",
+      "text": "Current JR East earthquake initiatives page checked: the operator describes ongoing improvements to seismometers, external information inputs and power-interruption response. No precise warning seconds are claimed in this video. Evidence anchor: Measures for Emergency Stopping of Trains.",
+      "content_sha256": "2744ddb9d76e34242498191961c74fd396414277f9400fd5ca370530d6558694"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "edition": "local-fixture-20261003",
+  "mode": "fixture",
+  "fixture_clock": "2026-10-02T16:40:00+00:00",
+  "candidates": 10,
+  "ranking": "passed",
+  "claim_support": "fixture evidence passed",
+  "script": "review checksum passed",
+  "topic_selection": "shinkansen-wave-warning",
+  "narration": "skipped",
+  "render": "skipped",
+  "actual_media_validation": "skipped; no dry-run video generated",
+  "upload": "skipped",
+  "public_publish": "blocked",
+  "video_id": null,
+  "url": null,
+  "returned_visibility": null,
+  "paid_jobs": 0,
+  "estimated_paid_api_usd": 0
+}

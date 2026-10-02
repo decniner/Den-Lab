@@ -1,0 +1,92 @@
+name: Japan Explained
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Offline checks, prepare a reviewed edition, or upload an inspected edition privately
+        type: choice
+        options: [dry-run, prepare, upload-private]
+        default: dry-run
+      edition:
+        description: Unique edition ID; required for private upload
+        type: string
+        default: ''
+  # Disabled until a real private end-to-end test succeeds and more fact packs are reviewed.
+  # schedule:
+  #   - cron: '0 22 * * *' # 07:00 Asia/Tokyo
+permissions:
+  contents: read
+concurrency:
+  group: japan-explained-${{ inputs.edition || github.run_id }}
+  cancel-in-progress: false
+jobs:
+  offline:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'dry-run'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: japan-facts-video
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+      - run: python -m japan_facts dry-run --edition github-fixture
+  production:
+    if: github.ref == 'refs/heads/main' && (inputs.mode == 'prepare' || inputs.mode == 'upload-private' || (github.event_name == 'schedule' && vars.JAPAN_EXPLAINED_DAILY_ENABLED == 'true'))
+    runs-on: [self-hosted, Windows, japan-explained-windows]
+    environment: youtube-upload
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: powershell
+        working-directory: japan-facts-video
+    env:
+      JAPAN_CONFIG: ${{ vars.JAPAN_EXPLAINED_CONFIG }}
+      JAPAN_STATE: ${{ vars.JAPAN_EXPLAINED_STATE_ROOT }}
+      EDITION: ${{ inputs.edition }}
+      MODE: ${{ inputs.mode || 'prepare' }}
+      SCHEDULED: ${{ github.event_name == 'schedule' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare or confirm a private upload
+        env:
+          OAUTH_TOKEN_JSON: ${{ secrets.YOUTUBE_OAUTH_TOKEN }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if (-not $env:JAPAN_CONFIG -or -not $env:JAPAN_STATE) { throw 'Set persistent JAPAN_EXPLAINED_CONFIG and JAPAN_EXPLAINED_STATE_ROOT repository variables.' }
+          if (-not $env:EDITION) {
+            if ($env:MODE -eq 'upload-private') { throw 'Private upload requires the exact inspected edition ID.' }
+            $env:EDITION = 'japan-explained-' + [DateTime]::UtcNow.ToString('yyyyMMdd') + '-' + $env:GITHUB_RUN_ID
+          }
+          if ($env:SCHEDULED -eq 'true') {
+            $config = Get-Content -LiteralPath $env:JAPAN_CONFIG -Raw | ConvertFrom-Json
+            $proofPath = Join-Path $env:JAPAN_STATE 'end-to-end.json'
+            if (-not $config.schedule_enabled -or -not (Test-Path -LiteralPath $proofPath)) { throw 'Daily schedule requires explicit enablement and a verified private end-to-end upload.' }
+            $proof = Get-Content -LiteralPath $proofPath -Raw | ConvertFrom-Json
+            if (-not $proof.private_upload_verified -or -not $proof.video_id) { throw 'Private end-to-end test has not succeeded.' }
+          }
+          $temporaryToken = Join-Path $env:RUNNER_TEMP ('japan-token-' + [guid]::NewGuid().ToString() + '.json')
+          $temporaryConfig = Join-Path $env:RUNNER_TEMP ('japan-config-' + [guid]::NewGuid().ToString() + '.json')
+          try {
+            $config = Get-Content -LiteralPath $env:JAPAN_CONFIG -Raw | ConvertFrom-Json
+            if ($env:MODE -eq 'upload-private') {
+              if (-not $env:OAUTH_TOKEN_JSON) { throw 'Missing YOUTUBE_OAUTH_TOKEN secret; API keys cannot upload.' }
+              [IO.File]::WriteAllText($temporaryToken, $env:OAUTH_TOKEN_JSON)
+              $config.oauth_token = $temporaryToken
+            }
+            $env:OAUTH_TOKEN_JSON = ''
+            [IO.File]::WriteAllText($temporaryConfig, ($config | ConvertTo-Json -Depth 20))
+            python -m japan_facts --config $temporaryConfig --state-root $env:JAPAN_STATE $env:MODE --edition $env:EDITION
+            if ($LASTEXITCODE -ne 0) { throw 'Japan Explained failed; inspect persistent edition events.jsonl. No production success inferred.' }
+          } finally {
+            Remove-Item -LiteralPath $temporaryToken,$temporaryConfig -Force -ErrorAction SilentlyContinue
+          }
+          # Public publishing is deliberately a separate local exact-edition command.
+          # Prepare stops for frame/audio inspection; it never uploads automatically.
