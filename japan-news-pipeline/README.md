@@ -1,5 +1,11 @@
 # Reviewed news video pipeline
 
+See [verified delivery, PowerShell setup and credential steps](docs/delivery-checklist.md)
+for the complete sample, test coverage, dry-run evidence and remaining runner setup.
+The AI sample includes a standalone `thumbnail.png`; it is saved locally, not uploaded.
+Latest read-only YouTube check returned `public` and `processed` for `Bo7NSIMN3sM`;
+the original upload was confirmed private. No visibility change ran in this verification.
+
 The AI edition is in `deliverables/ai-news-20261003/ai-news-80s-tiktok.mp4`:
 80 seconds, 1080x1920, English synthetic narration and timed captions. Primary-source
 announcements dated October 1 cover FLUX 3 Image, Strands Decider 2B, and a proposed

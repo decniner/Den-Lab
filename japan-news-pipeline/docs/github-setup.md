@@ -1,4 +1,4 @@
-# GitHub Actions setup for Japan, Philippine and global news in Den-Lab
+# GitHub Actions setup for Japan, Philippine, global and AI news in Den-Lab
 
 This project is under `japan-news-pipeline`; its repository workflow is
 `.github/workflows/japan-news.yml`. All uploads are private. No public-publishing

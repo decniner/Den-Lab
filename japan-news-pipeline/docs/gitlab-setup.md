@@ -1,6 +1,6 @@
 # Private YouTube upload and GitLab morning workflow
 
-The real edition is `deliverables/japan-news-20261002/japan-news-80s-tiktok.mp4` (80 seconds, 1080x1920). No upload or GitLab schedule has been performed: channel ID, Google OAuth authorization, and GitLab project are missing.
+The real Japan edition is `deliverables/japan-news-20261002/japan-news-80s-tiktok.mp4` (80 seconds, 1080x1920). Local OAuth and private uploads have been confirmed; see README for the edition IDs and API results. No GitLab deployment or live morning schedule has been verified. The provided repository is GitHub; use github-setup.md there.
 
 ## One-time local authorization
 

@@ -1,0 +1,16 @@
+{
+  "mode": "fixture",
+  "fixture_clock": "2026-10-02T00:00:00+00:00",
+  "news_validation": "passed",
+  "script_validation": "passed",
+  "caption_plan_validation": "passed",
+  "narration": "skipped (dry run)",
+  "render": "skipped (dry run)",
+  "video_validation": "skipped (no rendered media)",
+  "upload": "skipped (dry run)",
+  "public_publish": "blocked",
+  "video_id": null,
+  "url": null,
+  "returned_visibility": null,
+  "cost_usd": 0
+}
