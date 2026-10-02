@@ -1,0 +1,92 @@
+﻿[
+    {
+        "text":  "The",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "advisory",
+        "start":  0.22,
+        "index":  4,
+        "count":  8
+    },
+    {
+        "text":  "highlights",
+        "start":  0.765,
+        "index":  13,
+        "count":  10
+    },
+    {
+        "text":  "risks",
+        "start":  1.325,
+        "index":  24,
+        "count":  5
+    },
+    {
+        "text":  "of",
+        "start":  1.7,
+        "index":  30,
+        "count":  2
+    },
+    {
+        "text":  "below",
+        "start":  1.805,
+        "index":  33,
+        "count":  5
+    },
+    {
+        "text":  "normal",
+        "start":  2.1149999999999998,
+        "index":  39,
+        "count":  6
+    },
+    {
+        "text":  "rainfall",
+        "start":  2.495,
+        "index":  46,
+        "count":  8
+    },
+    {
+        "text":  "dry",
+        "start":  3.4699999999999998,
+        "index":  56,
+        "count":  3
+    },
+    {
+        "text":  "spells",
+        "start":  3.7049999999999996,
+        "index":  60,
+        "count":  6
+    },
+    {
+        "text":  "and",
+        "start":  4.64,
+        "index":  68,
+        "count":  3
+    },
+    {
+        "text":  "drought",
+        "start":  4.785,
+        "index":  72,
+        "count":  7
+    },
+    {
+        "text":  "in",
+        "start":  5.135,
+        "index":  80,
+        "count":  2
+    },
+    {
+        "text":  "some",
+        "start":  5.26,
+        "index":  83,
+        "count":  4
+    },
+    {
+        "text":  "areas",
+        "start":  5.495,
+        "index":  88,
+        "count":  5
+    }
+]

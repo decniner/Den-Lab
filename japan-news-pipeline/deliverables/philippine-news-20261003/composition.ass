@@ -1,0 +1,130 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Graphic,Arial,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,7,80,180,0,1
+Style: Caption,Arial,56,&H00FFFFFF,&H00FFFFFF,&H00100A05,&H00100A05,-1,0,0,0,100,100,0,0,1,4,1,2,95,190,400,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,120)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,240)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,360)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,480)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,600)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,720)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,840)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,960)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1080)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1200)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1320)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1440)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1560)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1680)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1800)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(120,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(240,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(360,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(480,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(600,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(720,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(840,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(960,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,178)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 60 0 60 6 0 6{\p0}
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,110)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}PHILIPPINES TODAY
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,214)\fad(120,100)\fs24\b0\1c&HCEB9A6&\bord0\shad0}03 OCT 2026 / REPORTS FROM OCT 2
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1615)\fad(120,100)\fs23\b0\1c&HCEB9A6&\bord0\shad0}Synthetic narration / Original graphics
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1545)\p1\1c&H4F3823&\bord0\shad0}m 0 0 l 800 0 800 5 0 5{\p0}
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,320)\fad(120,100)\fs28\b1\1c&HC7DC4C&\bord0\shad0}THREE VERIFIED UPDATES
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,420)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}PHILIPPINES\NIN 80 SECONDS
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,865)\fad(120,100)\fs110\b1\1c&H5D55FC&\bord0\shad0}01
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(275,910)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}GCASH IPO
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,1050)\fad(120,100)\fs110\b1\1c&HC7DC4C&\bord0\shad0}02
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(275,1095)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}CLIMATE READINESS
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(80,1235)\fad(120,100)\fs110\b1\1c&H66D1FF&\bord0\shad0}03
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\pos(275,1280)\fad(120,100)\fs32\b1\1c&HFFFFFF&\bord0\shad0}ASIAN GAMES GOLD
+Dialogue: 0,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 0,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 0,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,290)\fad(120,100)\fs27\b1\1c&H5D55FC&\bord0\shad0}01 / BUSINESS
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,375)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}MYNT SETS\NIPO PRICE
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,650)\fad(120,100)\fs26\b0\1c&HCEB9A6&\bord0\shad0}GCASH PARENT COMPANY
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,780)\fad(120,100)\fs95\b1\1c&H5D55FC&\bord0\shad0}PHP 6.60
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,910)\fad(120,100)\fs35\b1\1c&HFFFFFF&\bord0\shad0}PER SHARE
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,1050)\fad(120,100)\fs33\b1\1c&HFFFFFF&\bord0\shad0}Oct 20 / planned PSE listing
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,1130)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}Schedule remains subject to conditions
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,1250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: GMA NEWS / OCT 2
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,290)\fad(120,100)\fs27\b1\1c&HC7DC4C&\bord0\shad0}02 / CLIMATE PREPAREDNESS
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,375)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}PREPARE\NBEFORE IMPACTS
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,650)\fad(120,100)\fs26\b0\1c&HCEB9A6&\bord0\shad0}CLIMATE CHANGE COMMISSION
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,755)\fad(120,100)\fs54\b1\1c&HC7DC4C&\bord0\shad0}SCIENCE\NDATA\NRISK INFORMATION
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,1040)\fad(120,100)\fs35\b1\1c&HFFFFFF&\bord0\shad0}Possible stronger El Nino
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(120,1130)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}Risk varies by area / not a local forecast
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,1250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: PIA / CCC RELEASE / OCT 2
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,290)\fad(120,100)\fs27\b1\1c&H66D1FF&\bord0\shad0}03 / ASIAN GAMES
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,375)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}YAPE WINS\NVIRTUAL GOLD
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,650)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}JEUS GABRIEL DERICK YAPE
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,785)\fad(120,100)\fs110\b1\1c&H66D1FF&\bord0\shad0}GOLD
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,930)\fad(120,100)\fs30\b1\1c&HFFFFFF&\bord0\shad0}Mixed individual virtual taekwondo
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,1020)\fad(120,100)\fs29\b1\1c&HFFFFFF&\bord0\shad0}2-0 in the final / versus Vietnam
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(120,1110)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}Philippines' fourth gold at these Games
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,1250)\fad(120,100)\fs23\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: OLYMPIC COUNCIL OF ASIA / OCT 2
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,355)\fad(120,100)\fs59\b1\1c&HFFFFFF&\bord0\shad0}READ THE SOURCES
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,620)\fad(120,100)\fs32\b1\1c&H5D55FC&\bord0\shad0}GMA NEWS
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,705)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}Mynt IPO pricing / October 2
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,850)\fad(120,100)\fs32\b1\1c&HC7DC4C&\bord0\shad0}PHILIPPINE INFORMATION AGENCY
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,935)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}CCC preparedness / October 2
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1080)\fad(120,100)\fs32\b1\1c&H66D1FF&\bord0\shad0}OLYMPIC COUNCIL OF ASIA
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1165)\fad(120,100)\fs27\b0\1c&HCEB9A6&\bord0\shad0}Yape's gold medal / October 2
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1325)\fad(120,100)\fs26\b0\1c&HCEB9A6&\bord0\shad0}Source links in the video description
+Dialogue: 5,0:00:00.10,0:00:02.66,Caption,,0,0,0,,{\fad(35,35)}Philippine news in eighty\Nseconds.
+Dialogue: 5,0:00:02.66,0:00:05.80,Caption,,0,0,0,,{\fad(35,35)}Three updates, checked\NOctober third.
+Dialogue: 5,0:00:06.09,0:00:08.94,Caption,,0,0,0,,{\fad(35,35)}First, GCash parent\Ncompany Mynt
+Dialogue: 5,0:00:08.94,0:00:10.19,Caption,,0,0,0,,{\fad(35,35)}has set its initial\Npublic
+Dialogue: 5,0:00:10.19,0:00:11.87,Caption,,0,0,0,,{\fad(35,35)}offering price at six\Npesos
+Dialogue: 5,0:00:11.87,0:00:14.41,Caption,,0,0,0,,{\fad(35,35)}and sixty centavos per\Nshare.
+Dialogue: 5,0:00:14.51,0:00:16.21,Caption,,0,0,0,,{\fad(35,35)}GMA News reports the\Nplanned
+Dialogue: 5,0:00:16.21,0:00:18.10,Caption,,0,0,0,,{\fad(35,35)}Philippine Stock Exchange\Nlisting is
+Dialogue: 5,0:00:18.10,0:00:19.96,Caption,,0,0,0,,{\fad(35,35)}October twentieth.
+Dialogue: 5,0:00:20.05,0:00:21.59,Caption,,0,0,0,,{\fad(35,35)}The company says the\Ntimetable
+Dialogue: 5,0:00:21.59,0:00:23.19,Caption,,0,0,0,,{\fad(35,35)}remains subject to\Napprovals and
+Dialogue: 5,0:00:23.19,0:00:24.80,Caption,,0,0,0,,{\fad(35,35)}other conditions.
+Dialogue: 5,0:00:25.10,0:00:27.40,Caption,,0,0,0,,{\fad(35,35)}Second, the Climate\NChange Commission
+Dialogue: 5,0:00:27.40,0:00:29.30,Caption,,0,0,0,,{\fad(35,35)}is calling for stronger\Npreparation
+Dialogue: 5,0:00:29.30,0:00:30.82,Caption,,0,0,0,,{\fad(35,35)}as El Nino could\Nintensify
+Dialogue: 5,0:00:30.82,0:00:31.84,Caption,,0,0,0,,{\fad(35,35)}before the end of this
+Dialogue: 5,0:00:31.84,0:00:32.92,Caption,,0,0,0,,{\fad(35,35)}year.
+Dialogue: 5,0:00:33.03,0:00:34.60,Caption,,0,0,0,,{\fad(35,35)}In an October second\Nrelease
+Dialogue: 5,0:00:34.60,0:00:36.42,Caption,,0,0,0,,{\fad(35,35)}carried by the Philippine\NInformation
+Dialogue: 5,0:00:36.42,0:00:38.73,Caption,,0,0,0,,{\fad(35,35)}Agency, it urged\Ndecisions guided
+Dialogue: 5,0:00:38.73,0:00:40.51,Caption,,0,0,0,,{\fad(35,35)}by science, data, and\Nrisk
+Dialogue: 5,0:00:40.51,0:00:42.01,Caption,,0,0,0,,{\fad(35,35)}information.
+Dialogue: 5,0:00:42.11,0:00:43.82,Caption,,0,0,0,,{\fad(35,35)}The advisory highlights\Nrisks of
+Dialogue: 5,0:00:43.82,0:00:46.66,Caption,,0,0,0,,{\fad(35,35)}below normal rainfall,\Ndry spells,
+Dialogue: 5,0:00:46.66,0:00:48.80,Caption,,0,0,0,,{\fad(35,35)}and drought in some\Nareas.
+Dialogue: 5,0:00:49.11,0:00:51.48,Caption,,0,0,0,,{\fad(35,35)}Third, Jeus Gabriel\NDerick Yape
+Dialogue: 5,0:00:51.48,0:00:53.14,Caption,,0,0,0,,{\fad(35,35)}won gold in mixed\Nindividual
+Dialogue: 5,0:00:53.14,0:00:55.01,Caption,,0,0,0,,{\fad(35,35)}virtual taekwondo at the\NAsian
+Dialogue: 5,0:00:55.01,0:00:56.87,Caption,,0,0,0,,{\fad(35,35)}Games in Japan.
+Dialogue: 5,0:00:56.97,0:00:58.50,Caption,,0,0,0,,{\fad(35,35)}The Olympic Council of\NAsia
+Dialogue: 5,0:00:58.50,0:00:59.76,Caption,,0,0,0,,{\fad(35,35)}reports that he beat his
+Dialogue: 5,0:00:59.76,0:01:01.78,Caption,,0,0,0,,{\fad(35,35)}Vietnamese opponent two\Nrounds to
+Dialogue: 5,0:01:01.78,0:01:03.65,Caption,,0,0,0,,{\fad(35,35)}zero in the final.
+Dialogue: 5,0:01:03.75,0:01:04.92,Caption,,0,0,0,,{\fad(35,35)}He had won a poomsae
+Dialogue: 5,0:01:04.92,0:01:07.11,Caption,,0,0,0,,{\fad(35,35)}bronze the previous day.
+Dialogue: 5,0:01:07.22,0:01:08.71,Caption,,0,0,0,,{\fad(35,35)}This was the Philippines\Nfourth
+Dialogue: 5,0:01:08.71,0:01:10.71,Caption,,0,0,0,,{\fad(35,35)}gold medal at these\NGames,
+Dialogue: 5,0:01:10.71,0:01:12.43,Caption,,0,0,0,,{\fad(35,35)}after two from Carlos\NYulo
+Dialogue: 5,0:01:12.43,0:01:13.44,Caption,,0,0,0,,{\fad(35,35)}and one from E J
+Dialogue: 5,0:01:13.44,0:01:14.80,Caption,,0,0,0,,{\fad(35,35)}Obiena.
+Dialogue: 5,0:01:15.11,0:01:16.85,Caption,,0,0,0,,{\fad(35,35)}Read the original source\Nlinks
+Dialogue: 5,0:01:16.85,0:01:18.20,Caption,,0,0,0,,{\fad(35,35)}in the description for\Nmore
+Dialogue: 5,0:01:18.20,0:01:19.80,Caption,,0,0,0,,{\fad(35,35)}details.

@@ -1,0 +1,128 @@
+﻿[
+    {
+        "text":  "In",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  2
+    },
+    {
+        "text":  "an",
+        "start":  0.205,
+        "index":  3,
+        "count":  2
+    },
+    {
+        "text":  "October",
+        "start":  0.315,
+        "index":  6,
+        "count":  7
+    },
+    {
+        "text":  "second",
+        "start":  0.865,
+        "index":  14,
+        "count":  6
+    },
+    {
+        "text":  "release",
+        "start":  1.28,
+        "index":  21,
+        "count":  7
+    },
+    {
+        "text":  "carried",
+        "start":  1.67,
+        "index":  29,
+        "count":  7
+    },
+    {
+        "text":  "by",
+        "start":  2.0349999999999997,
+        "index":  37,
+        "count":  2
+    },
+    {
+        "text":  "the",
+        "start":  2.1999999999999997,
+        "index":  40,
+        "count":  3
+    },
+    {
+        "text":  "Philippine",
+        "start":  2.2849999999999997,
+        "index":  44,
+        "count":  10
+    },
+    {
+        "text":  "Information",
+        "start":  2.815,
+        "index":  55,
+        "count":  11
+    },
+    {
+        "text":  "Agency",
+        "start":  3.4899999999999998,
+        "index":  67,
+        "count":  6
+    },
+    {
+        "text":  "it",
+        "start":  4.4799999999999995,
+        "index":  75,
+        "count":  2
+    },
+    {
+        "text":  "urged",
+        "start":  4.595,
+        "index":  78,
+        "count":  5
+    },
+    {
+        "text":  "decisions",
+        "start":  4.91,
+        "index":  84,
+        "count":  9
+    },
+    {
+        "text":  "guided",
+        "start":  5.4399999999999995,
+        "index":  94,
+        "count":  6
+    },
+    {
+        "text":  "by",
+        "start":  5.795,
+        "index":  101,
+        "count":  2
+    },
+    {
+        "text":  "science",
+        "start":  5.965,
+        "index":  104,
+        "count":  7
+    },
+    {
+        "text":  "data",
+        "start":  6.635,
+        "index":  113,
+        "count":  4
+    },
+    {
+        "text":  "and",
+        "start":  7.1499999999999995,
+        "index":  119,
+        "count":  3
+    },
+    {
+        "text":  "risk",
+        "start":  7.305,
+        "index":  123,
+        "count":  4
+    },
+    {
+        "text":  "information",
+        "start":  7.5749999999999993,
+        "index":  128,
+        "count":  11
+    }
+]

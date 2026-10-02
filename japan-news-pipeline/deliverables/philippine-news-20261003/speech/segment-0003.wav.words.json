@@ -1,0 +1,74 @@
+﻿[
+    {
+        "text":  "The",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "company",
+        "start":  0.19499999999999998,
+        "index":  4,
+        "count":  7
+    },
+    {
+        "text":  "says",
+        "start":  0.64,
+        "index":  12,
+        "count":  4
+    },
+    {
+        "text":  "the",
+        "start":  0.945,
+        "index":  17,
+        "count":  3
+    },
+    {
+        "text":  "timetable",
+        "start":  1.04,
+        "index":  21,
+        "count":  9
+    },
+    {
+        "text":  "remains",
+        "start":  1.72,
+        "index":  31,
+        "count":  7
+    },
+    {
+        "text":  "subject",
+        "start":  2.145,
+        "index":  39,
+        "count":  7
+    },
+    {
+        "text":  "to",
+        "start":  2.605,
+        "index":  47,
+        "count":  2
+    },
+    {
+        "text":  "approvals",
+        "start":  2.735,
+        "index":  50,
+        "count":  9
+    },
+    {
+        "text":  "and",
+        "start":  3.2649999999999997,
+        "index":  60,
+        "count":  3
+    },
+    {
+        "text":  "other",
+        "start":  3.4099999999999997,
+        "index":  64,
+        "count":  5
+    },
+    {
+        "text":  "conditions",
+        "start":  3.635,
+        "index":  70,
+        "count":  10
+    }
+]

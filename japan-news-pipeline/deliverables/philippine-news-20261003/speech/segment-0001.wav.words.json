@@ -1,0 +1,122 @@
+﻿[
+    {
+        "text":  "First",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "GCash",
+        "start":  1.005,
+        "index":  7,
+        "count":  5
+    },
+    {
+        "text":  "parent",
+        "start":  1.4949999999999999,
+        "index":  13,
+        "count":  6
+    },
+    {
+        "text":  "company",
+        "start":  1.885,
+        "index":  20,
+        "count":  7
+    },
+    {
+        "text":  "Mynt",
+        "start":  2.355,
+        "index":  28,
+        "count":  4
+    },
+    {
+        "text":  "has",
+        "start":  3.0999999999999996,
+        "index":  33,
+        "count":  3
+    },
+    {
+        "text":  "set",
+        "start":  3.28,
+        "index":  37,
+        "count":  3
+    },
+    {
+        "text":  "its",
+        "start":  3.48,
+        "index":  41,
+        "count":  3
+    },
+    {
+        "text":  "initial",
+        "start":  3.6399999999999997,
+        "index":  45,
+        "count":  7
+    },
+    {
+        "text":  "public",
+        "start":  4.02,
+        "index":  53,
+        "count":  6
+    },
+    {
+        "text":  "offering",
+        "start":  4.42,
+        "index":  60,
+        "count":  8
+    },
+    {
+        "text":  "price",
+        "start":  4.8599999999999994,
+        "index":  69,
+        "count":  5
+    },
+    {
+        "text":  "at",
+        "start":  5.22,
+        "index":  75,
+        "count":  2
+    },
+    {
+        "text":  "six",
+        "start":  5.34,
+        "index":  78,
+        "count":  3
+    },
+    {
+        "text":  "pesos",
+        "start":  5.63,
+        "index":  82,
+        "count":  5
+    },
+    {
+        "text":  "and",
+        "start":  6.185,
+        "index":  88,
+        "count":  3
+    },
+    {
+        "text":  "sixty",
+        "start":  6.3249999999999993,
+        "index":  92,
+        "count":  5
+    },
+    {
+        "text":  "centavos",
+        "start":  6.755,
+        "index":  98,
+        "count":  8
+    },
+    {
+        "text":  "per",
+        "start":  7.4849999999999994,
+        "index":  107,
+        "count":  3
+    },
+    {
+        "text":  "share",
+        "start":  7.665,
+        "index":  111,
+        "count":  5
+    }
+]

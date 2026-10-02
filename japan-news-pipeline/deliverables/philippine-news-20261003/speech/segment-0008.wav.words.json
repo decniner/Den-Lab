@@ -1,0 +1,116 @@
+﻿[
+    {
+        "text":  "The",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "Olympic",
+        "start":  0.215,
+        "index":  4,
+        "count":  7
+    },
+    {
+        "text":  "Council",
+        "start":  0.65999999999999992,
+        "index":  12,
+        "count":  7
+    },
+    {
+        "text":  "of",
+        "start":  1.135,
+        "index":  20,
+        "count":  2
+    },
+    {
+        "text":  "Asia",
+        "start":  1.24,
+        "index":  23,
+        "count":  4
+    },
+    {
+        "text":  "reports",
+        "start":  1.535,
+        "index":  28,
+        "count":  7
+    },
+    {
+        "text":  "that",
+        "start":  2.045,
+        "index":  36,
+        "count":  4
+    },
+    {
+        "text":  "he",
+        "start":  2.1999999999999997,
+        "index":  41,
+        "count":  2
+    },
+    {
+        "text":  "beat",
+        "start":  2.335,
+        "index":  44,
+        "count":  4
+    },
+    {
+        "text":  "his",
+        "start":  2.57,
+        "index":  49,
+        "count":  3
+    },
+    {
+        "text":  "Vietnamese",
+        "start":  2.725,
+        "index":  53,
+        "count":  10
+    },
+    {
+        "text":  "opponent",
+        "start":  3.4,
+        "index":  64,
+        "count":  8
+    },
+    {
+        "text":  "two",
+        "start":  3.8699999999999997,
+        "index":  73,
+        "count":  3
+    },
+    {
+        "text":  "rounds",
+        "start":  4.125,
+        "index":  77,
+        "count":  6
+    },
+    {
+        "text":  "to",
+        "start":  4.515,
+        "index":  84,
+        "count":  2
+    },
+    {
+        "text":  "zero",
+        "start":  4.63,
+        "index":  87,
+        "count":  4
+    },
+    {
+        "text":  "in",
+        "start":  4.9849999999999994,
+        "index":  92,
+        "count":  2
+    },
+    {
+        "text":  "the",
+        "start":  5.1,
+        "index":  95,
+        "count":  3
+    },
+    {
+        "text":  "final",
+        "start":  5.175,
+        "index":  99,
+        "count":  5
+    }
+]

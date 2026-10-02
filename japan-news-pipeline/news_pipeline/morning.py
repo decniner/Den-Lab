@@ -12,8 +12,9 @@ def select_bundle(inbox,at):
     today=Path(inbox).resolve()/edition_date(at)
     ready=rendered.read(today/"ready.json")
     edition=ready["edition"]
-    if not edition.startswith("japan-news-"+edition_date(at).replace("-","")+"-"):
-        raise Failure("Morning inbox edition does not match today's Japan date.")
+    prefixes=tuple(country+"-news-"+edition_date(at).replace("-","")+"-" for country in ("japan","philippine"))
+    if not edition.startswith(prefixes):
+        raise Failure("Morning inbox edition does not match a supported country and today's Japan date.")
     bundle=(today/ready["bundle"]).resolve()
     if not bundle.is_relative_to(today) or bundle==today:
         raise Failure("Bundle path must stay inside today's inbox folder.")

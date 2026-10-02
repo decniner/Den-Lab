@@ -56,7 +56,12 @@ def check_bundle(bundle, at=None):
     script=read(bundle/"script.json"); sources=read(bundle/"sources.json")
     if report.get("fixture") is not False or report.get("mode")!="live-news" or script.get("mode")!="live-news" or report.get("edition")!=script.get("edition") or report.get("decode_validation")!="passed":
         raise Failure("Bundle is not a validated live-news edition.")
-    files={"video":bundle/"japan-news-80s-tiktok.mp4","script":bundle/"script.json","sources":bundle/"sources.json"}
+    filename=report.get("video_file","japan-news-80s-tiktok.mp4")
+    if not isinstance(filename,str) or Path(filename).name!=filename or '/' in filename or '\\' in filename or not filename.endswith('.mp4'):
+        raise Failure("Video filename must be a local MP4 basename.")
+    title=report.get("title","Japan News in 80 Seconds | "+report["edition"])
+    if not isinstance(title,str) or not title.strip() or len(title)>100: raise Failure("Video title must contain 1-100 characters.")
+    files={"video":bundle/filename,"script":bundle/"script.json","sources":bundle/"sources.json"}
     for key,path in files.items():
         if digest(path)!=report.get(key+"_sha256"): raise Failure(f"Bundle {key} checksum differs from its validation report.")
     ids=validate_sources(sources,at or now())
@@ -80,13 +85,13 @@ def prepare(store,bundle,channel,at=None):
             if digest(bundle/name)!=digest(store.path/"bundle"/name): raise Failure("Edition editorial artifacts changed.")
         return state
     target=store.path/"bundle"; target.mkdir(parents=True,exist_ok=True)
-    names=["japan-news-80s-tiktok.mp4","script.json","sources.json","captions.json","validation.json"]
+    names=[report.get("video_file","japan-news-80s-tiktok.mp4"),"script.json","sources.json","captions.json","validation.json"]
     if (bundle/"narration-80s.wav").exists(): names.append("narration-80s.wav")
     for name in names: shutil.copyfile(bundle/name,target/name)
     state={"edition":store.edition,"mode":"live","stage":"validated","created_at":now().isoformat(),"channel_id":channel,
            "source_metadata":sources,"video_path":str(target/names[0]),
-           "manifest":{"video_sha256":report["video_sha256"],"duration":80,"title":"Japan News in 80 Seconds | "+store.edition,
-                       "description":"Japan news. Synthetic narration; original graphics. Sources:\n"+"\n".join(s["url"] for s in sources["sources"]),
+           "manifest":{"video_sha256":report["video_sha256"],"duration":80,"title":report.get("title","Japan News in 80 Seconds | "+store.edition),
+                       "description":"Source-backed news. Synthetic narration; original graphics. Sources:\n"+"\n".join(s["url"] for s in sources["sources"]),
                        "containsSyntheticMedia":True,"artifacts":{str(target/name):digest(target/name) for name in names[1:]}}}
     state["render_manifest_sha256"]=manifest_hash(state); store.save(state)
     return state

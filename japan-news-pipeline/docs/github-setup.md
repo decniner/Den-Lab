@@ -1,4 +1,4 @@
-# GitHub Actions setup for Den-Lab
+# GitHub Actions setup for Japan and Philippine news in Den-Lab
 
 This project is under `japan-news-pipeline`; its repository workflow is
 `.github/workflows/japan-news.yml`. All uploads are private. No public-publishing
@@ -38,14 +38,19 @@ with disposable state is not used for uploads.
 
 ## Run and schedule
 
-In Actions > Japan news private upload > Run workflow choose:
+In Actions > Japan and Philippine news private upload > Run workflow choose:
 
 - `dry-run`: hosted offline tests and fixture validation; no YouTube credentials used.
-- `current`: privately upload the checked October 2 edition. Its source freshness
+- `current`: choose `japan-news-20261002-en` or `philippine-news-20261003-en`
+  in the edition input to privately upload that exact render. Its source freshness
   is limited to 48 hours, so this will fail after expiration rather than post old news.
 - `morning`: upload today's producer-reviewed bundle from the durable inbox.
 
 Use the inbox format and exact-video factual review fields in `gitlab-setup.md`.
+Both `japan-news-YYYYMMDD-en` and `philippine-news-YYYYMMDD-en` are accepted
+for today's date in Japan time. The inbox contains one prepared edition per day;
+place the chosen country edition there. For Philippine bundles set validation.json
+`video_file` to `philippine-news-80s-tiktok.mp4` and provide its accurate `title`.
 Morning automation uploads prepared editions; it does not autonomously research,
 narrate or render fresh daily videos. Missing or invalid editions fail.
 

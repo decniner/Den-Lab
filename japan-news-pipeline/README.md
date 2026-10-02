@@ -1,5 +1,23 @@
 # Reviewed news video pipeline
 
+The Philippine edition is in `deliverables/philippine-news-20261003/philippine-news-80s-tiktok.mp4`:
+80 seconds, 1080x1920, English narration, timed captions and October 2 sources.
+It was privately uploaded to the operator-authorized channel and confirmed with
+video ID `vmKakT9SqyU`. The earlier Japan edition was confirmed as `WKVIU_ne1Ow`.
+Uploaded visibility can subsequently be changed by the owner; these are the API
+results at upload time. Morning automation still requires OAuth secret/runner
+setup and a fresh reviewed inbox edition.
+
+To upload or reconcile the Philippine edition with its existing local state:
+
+```powershell
+python -m news_pipeline upload-rendered --edition philippine-news-20261003-en --bundle deliverables/philippine-news-20261003
+```
+
+**Do not upload an already uploaded edition from a different empty state root.**
+The local recovery state is deliberately excluded from Git. Configure the runner
+to use that same durable state before retrying either confirmed edition.
+
 For this Den-Lab repository use [GitHub Actions setup](docs/github-setup.md).
 The private upload workflow is at the repository root in
 `.github/workflows/japan-news.yml`. Google authorization and runner setup are
@@ -7,8 +25,8 @@ required; the daily schedule starts disabled.
 
 The real 80-second Japan video is in `deliverables/japan-news-20261002/japan-news-80s-tiktok.mp4`.
 For uploading this exact render and configuring the private GitLab morning workflow,
-see [GitLab and OAuth setup](docs/gitlab-setup.md). Neither an upload nor a live
-schedule has been confirmed; both require your account configuration.
+see [GitLab and OAuth setup](docs/gitlab-setup.md). Live scheduling still requires
+your account configuration; the two local private uploads are recorded above.
 
 Python CLI for making source-backed editions, rendering a captioned video, and
 uploading privately. Public publishing is a separate explicit command bound to

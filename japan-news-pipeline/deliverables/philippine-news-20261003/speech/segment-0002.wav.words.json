@@ -1,0 +1,74 @@
+﻿[
+    {
+        "text":  "GMA",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  3
+    },
+    {
+        "text":  "News",
+        "start":  0.61,
+        "index":  4,
+        "count":  4
+    },
+    {
+        "text":  "reports",
+        "start":  0.91999999999999993,
+        "index":  9,
+        "count":  7
+    },
+    {
+        "text":  "the",
+        "start":  1.415,
+        "index":  17,
+        "count":  3
+    },
+    {
+        "text":  "planned",
+        "start":  1.5,
+        "index":  21,
+        "count":  7
+    },
+    {
+        "text":  "Philippine",
+        "start":  1.89,
+        "index":  29,
+        "count":  10
+    },
+    {
+        "text":  "Stock",
+        "start":  2.4299999999999997,
+        "index":  40,
+        "count":  5
+    },
+    {
+        "text":  "Exchange",
+        "start":  2.7849999999999997,
+        "index":  46,
+        "count":  8
+    },
+    {
+        "text":  "listing",
+        "start":  3.33,
+        "index":  55,
+        "count":  7
+    },
+    {
+        "text":  "is",
+        "start":  3.7249999999999996,
+        "index":  63,
+        "count":  2
+    },
+    {
+        "text":  "October",
+        "start":  3.8899999999999997,
+        "index":  66,
+        "count":  7
+    },
+    {
+        "text":  "twentieth",
+        "start":  4.435,
+        "index":  74,
+        "count":  9
+    }
+]

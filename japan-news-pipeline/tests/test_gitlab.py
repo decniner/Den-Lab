@@ -27,6 +27,15 @@ def bundle(root):
     return target
 
 class RenderedTests(unittest.TestCase):
+    def test_country_specific_video_name_and_title(self):
+        name='philippine-news-80s-tiktok.mp4'
+        (self.target/'japan-news-80s-tiktok.mp4').rename(self.target/name)
+        report=json.loads((self.target/'validation.json').read_text())
+        report.update(video_file=name,title='Philippine News in 80 Seconds | 2026-10-03')
+        (self.target/'validation.json').write_text(json.dumps(report))
+        state=self.prepare()
+        self.assertEqual(Path(state['video_path']).name,name)
+        self.assertTrue(state['manifest']['title'].startswith('Philippine News'))
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory(); self.addCleanup(self.temp.cleanup)
         self.root=Path(self.temp.name); self.target=bundle(self.root)
@@ -71,6 +80,13 @@ class RenderedTests(unittest.TestCase):
             with self.assertRaises(Failure): rendered.prepare(self.store,self.target,"other",NOW)
 
 class MorningTests(unittest.TestCase):
+    def test_today_prepared_philippine_edition_can_be_selected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            today=Path(directory)/'2026-10-02'; today.mkdir()
+            (today/'bundle').mkdir()
+            (today/'ready.json').write_text(json.dumps({'edition':'philippine-news-20261002-en','bundle':'bundle'}))
+            edition,path=morning.select_bundle(Path(directory),NOW)
+            self.assertEqual(edition,'philippine-news-20261002-en')
     def test_morning_requires_exact_render_factual_approval(self):
         with tempfile.TemporaryDirectory() as directory:
             target=bundle(directory)

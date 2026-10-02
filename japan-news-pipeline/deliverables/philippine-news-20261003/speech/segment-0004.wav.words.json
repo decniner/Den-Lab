@@ -1,0 +1,128 @@
+﻿[
+    {
+        "text":  "Second",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  6
+    },
+    {
+        "text":  "the",
+        "start":  1.02,
+        "index":  8,
+        "count":  3
+    },
+    {
+        "text":  "Climate",
+        "start":  1.1199999999999999,
+        "index":  12,
+        "count":  7
+    },
+    {
+        "text":  "Change",
+        "start":  1.575,
+        "index":  20,
+        "count":  6
+    },
+    {
+        "text":  "Commission",
+        "start":  1.9349999999999998,
+        "index":  27,
+        "count":  10
+    },
+    {
+        "text":  "is",
+        "start":  2.4,
+        "index":  38,
+        "count":  2
+    },
+    {
+        "text":  "calling",
+        "start":  2.565,
+        "index":  41,
+        "count":  7
+    },
+    {
+        "text":  "for",
+        "start":  2.98,
+        "index":  49,
+        "count":  3
+    },
+    {
+        "text":  "stronger",
+        "start":  3.125,
+        "index":  53,
+        "count":  8
+    },
+    {
+        "text":  "preparation",
+        "start":  3.5949999999999998,
+        "index":  62,
+        "count":  11
+    },
+    {
+        "text":  "as",
+        "start":  4.29,
+        "index":  74,
+        "count":  2
+    },
+    {
+        "text":  "El",
+        "start":  4.465,
+        "index":  77,
+        "count":  2
+    },
+    {
+        "text":  "Nino",
+        "start":  4.625,
+        "index":  80,
+        "count":  4
+    },
+    {
+        "text":  "could",
+        "start":  4.935,
+        "index":  85,
+        "count":  5
+    },
+    {
+        "text":  "intensify",
+        "start":  5.1149999999999993,
+        "index":  91,
+        "count":  9
+    },
+    {
+        "text":  "before",
+        "start":  5.805,
+        "index":  101,
+        "count":  6
+    },
+    {
+        "text":  "the",
+        "start":  6.1499999999999995,
+        "index":  108,
+        "count":  3
+    },
+    {
+        "text":  "end",
+        "start":  6.305,
+        "index":  112,
+        "count":  3
+    },
+    {
+        "text":  "of",
+        "start":  6.505,
+        "index":  116,
+        "count":  2
+    },
+    {
+        "text":  "this",
+        "start":  6.6049999999999995,
+        "index":  119,
+        "count":  4
+    },
+    {
+        "text":  "year",
+        "start":  6.83,
+        "index":  124,
+        "count":  4
+    }
+]

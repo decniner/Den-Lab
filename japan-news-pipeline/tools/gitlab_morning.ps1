@@ -17,7 +17,15 @@ $configPath = Join-Path $env:NEWS_STATE_ROOT 'runner-config.json'
 @{channel_id=$env:YOUTUBE_CHANNEL_ID;oauth_token=$tokenPath} | ConvertTo-Json | Set-Content -LiteralPath $configPath -Encoding UTF8
 switch ($env:UPLOAD_MODE) {
     'current' {
-        python -m news_pipeline --state-root $env:NEWS_STATE_ROOT --config $configPath upload-rendered --edition japan-news-20261002-en --bundle deliverables/japan-news-20261002
+        $edition = 'japan-news-20261002-en'
+        $bundle = 'deliverables/japan-news-20261002'
+        if ($env:CURRENT_EDITION -eq 'philippine-news-20261003-en') {
+            $edition = 'philippine-news-20261003-en'
+            $bundle = 'deliverables/philippine-news-20261003'
+        } elseif ($env:CURRENT_EDITION -and $env:CURRENT_EDITION -ne $edition) {
+            throw 'Unsupported CURRENT_EDITION; use morning mode for a new reviewed edition.'
+        }
+        python -m news_pipeline --state-root $env:NEWS_STATE_ROOT --config $configPath upload-rendered --edition $edition --bundle $bundle
     }
     'morning' {
         python -m news_pipeline.morning --state-root $env:NEWS_STATE_ROOT --config $configPath --inbox $env:NEWS_INBOX

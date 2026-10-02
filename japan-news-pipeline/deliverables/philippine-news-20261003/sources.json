@@ -1,0 +1,26 @@
+{
+  "fixture": false,
+  "checked_by": "assistant web source review; exact edition requested by operator",
+  "sources": [
+    {
+      "id": "gma-mynt",
+      "url": "https://www.gmanetwork.com/news/money/companies/1004507/gcash-parent-mynt-sets-final-ipo-price-at-p6-60-per-share/story/",
+      "published_at": "2026-10-02T10:38:00+08:00"
+    },
+    {
+      "id": "mynt-primary",
+      "url": "https://mynt.com.ph/newsroom/gcash-parent-mynt-prices-proposed-ipo-at-6-60-per-share-following-strong-institutional-demand",
+      "published_at": "2026-10-02T00:00:00+08:00"
+    },
+    {
+      "id": "pia-ccc",
+      "url": "https://pia.gov.ph/press-release/ccc-pushes-predictive-governance-as-very-strong-el-nino-looms/",
+      "published_at": "2026-10-02T00:00:00+08:00"
+    },
+    {
+      "id": "oca-yape",
+      "url": "https://oca.asia/news/8141-philippines-poomsae-star-wins-first-virtual-taekwondo-title-of-asian-games.html",
+      "published_at": "2026-10-02T00:00:00+09:00"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+[
+  {
+    "start": 0.09682804674457426,
+    "end": 2.6627712854757926,
+    "text": "Philippine news in eighty seconds.",
+    "story": "intro"
+  },
+  {
+    "start": 2.6627712854757926,
+    "end": 5.8,
+    "text": "Three updates, checked October third.",
+    "story": "intro"
+  },
+  {
+    "start": 6.0949015648662295,
+    "end": 8.941948510853104,
+    "text": "First, GCash parent company Mynt",
+    "story": "business"
+  },
+  {
+    "start": 8.941948510853104,
+    "end": 10.19464916708733,
+    "text": "has set its initial public",
+    "story": "business"
+  },
+  {
+    "start": 10.19464916708733,
+    "end": 11.869661786976273,
+    "text": "offering price at six pesos",
+    "story": "business"
+  },
+  {
+    "start": 11.869661786976273,
+    "end": 14.413023725391216,
+    "text": "and sixty centavos per share.",
+    "story": "business"
+  },
+  {
+    "start": 14.507925290257445,
+    "end": 16.206663301362948,
+    "text": "GMA News reports the planned",
+    "story": "business"
+  },
+  {
+    "start": 16.206663301362948,
+    "end": 18.10469459868753,
+    "text": "Philippine Stock Exchange listing is",
+    "story": "business"
+  },
+  {
+    "start": 18.10469459868753,
+    "end": 19.955275113579,
+    "text": "October twentieth.",
+    "story": "business"
+  },
+  {
+    "start": 20.05017667844523,
+    "end": 21.587582029278142,
+    "text": "The company says the timetable",
+    "story": "business"
+  },
+  {
+    "start": 21.587582029278142,
+    "end": 23.191418475517413,
+    "text": "remains subject to approvals and",
+    "story": "business"
+  },
+  {
+    "start": 23.191418475517413,
+    "end": 24.799999999999997,
+    "text": "other conditions.",
+    "story": "business"
+  },
+  {
+    "start": 25.10018943380341,
+    "end": 27.404546411281835,
+    "text": "Second, the Climate Change Commission",
+    "story": "climate"
+  },
+  {
+    "start": 27.404546411281835,
+    "end": 29.29812671016628,
+    "text": "is calling for stronger preparation",
+    "story": "climate"
+  },
+  {
+    "start": 29.29812671016628,
+    "end": 30.815996632287938,
+    "text": "as El Nino could intensify",
+    "story": "climate"
+  },
+  {
+    "start": 30.815996632287938,
+    "end": 31.842938328772888,
+    "text": "before the end of this",
+    "story": "climate"
+  },
+  {
+    "start": 31.842938328772888,
+    "end": 32.92498421384971,
+    "text": "year.",
+    "story": "climate"
+  },
+  {
+    "start": 33.02517364765312,
+    "end": 34.59814775836666,
+    "text": "In an October second release",
+    "story": "climate"
+  },
+  {
+    "start": 34.59814775836666,
+    "end": 36.421595453588715,
+    "text": "carried by the Philippine Information",
+    "story": "climate"
+  },
+  {
+    "start": 36.421595453588715,
+    "end": 38.73096190275731,
+    "text": "Agency, it urged decisions guided",
+    "story": "climate"
+  },
+  {
+    "start": 38.73096190275731,
+    "end": 40.51433382445801,
+    "text": "by science, data, and risk",
+    "story": "climate"
+  },
+  {
+    "start": 40.51433382445801,
+    "end": 42.01216585981898,
+    "text": "information.",
+    "story": "climate"
+  },
+  {
+    "start": 42.112355293622386,
+    "end": 43.820585139970525,
+    "text": "The advisory highlights risks of",
+    "story": "climate"
+  },
+  {
+    "start": 43.820585139970525,
+    "end": 46.66095558829719,
+    "text": "below normal rainfall, dry spells,",
+    "story": "climate"
+  },
+  {
+    "start": 46.66095558829719,
+    "end": 48.79999999999999,
+    "text": "and drought in some areas.",
+    "story": "climate"
+  },
+  {
+    "start": 49.10610734114744,
+    "end": 51.482911782850096,
+    "text": "Third, Jeus Gabriel Derick Yape",
+    "story": "sport"
+  },
+  {
+    "start": 51.482911782850096,
+    "end": 53.143491671807524,
+    "text": "won gold in mixed individual",
+    "story": "sport"
+  },
+  {
+    "start": 53.143491671807524,
+    "end": 55.01098087600246,
+    "text": "virtual taekwondo at the Asian",
+    "story": "sport"
+  },
+  {
+    "start": 55.01098087600246,
+    "end": 56.86785934608267,
+    "text": "Games in Japan.",
+    "story": "sport"
+  },
+  {
+    "start": 56.97396668723011,
+    "end": 58.49660703269587,
+    "text": "The Olympic Council of Asia",
+    "story": "sport"
+  },
+  {
+    "start": 58.49660703269587,
+    "end": 59.7592843923504,
+    "text": "reports that he beat his",
+    "story": "sport"
+  },
+  {
+    "start": 59.7592843923504,
+    "end": 61.780629241209134,
+    "text": "Vietnamese opponent two rounds to",
+    "story": "sport"
+  },
+  {
+    "start": 61.780629241209134,
+    "end": 63.64811844540407,
+    "text": "zero in the final.",
+    "story": "sport"
+  },
+  {
+    "start": 63.754225786551515,
+    "end": 64.91610117211597,
+    "text": "He had won a poomsae",
+    "story": "sport"
+  },
+  {
+    "start": 64.91610117211597,
+    "end": 67.11252313386798,
+    "text": "bronze the previous day.",
+    "story": "sport"
+  },
+  {
+    "start": 67.21863047501542,
+    "end": 68.70943861813696,
+    "text": "This was the Philippines fourth",
+    "story": "sport"
+  },
+  {
+    "start": 68.70943861813696,
+    "end": 70.71486736582357,
+    "text": "gold medal at these Games,",
+    "story": "sport"
+  },
+  {
+    "start": 70.71486736582357,
+    "end": 72.42850092535471,
+    "text": "after two from Carlos Yulo",
+    "story": "sport"
+  },
+  {
+    "start": 72.42850092535471,
+    "end": 73.43652066625539,
+    "text": "and one from E J",
+    "story": "sport"
+  },
+  {
+    "start": 73.43652066625539,
+    "end": 74.8,
+    "text": "Obiena.",
+    "story": "sport"
+  },
+  {
+    "start": 75.11483253588517,
+    "end": 76.8488038277512,
+    "text": "Read the original source links",
+    "story": "outro"
+  },
+  {
+    "start": 76.8488038277512,
+    "end": 78.19808612440191,
+    "text": "in the description for more",
+    "story": "outro"
+  },
+  {
+    "start": 78.19808612440191,
+    "end": 79.8,
+    "text": "details.",
+    "story": "outro"
+  }
+]

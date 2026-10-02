@@ -1,0 +1,67 @@
+{
+  "edition": "philippine-news-20261003-en",
+  "mode": "live-news",
+  "language": "en",
+  "source_checked_at": "2026-10-02T15:25:22.307048+00:00",
+  "public_approval": "not requested",
+  "segments": [
+    {
+      "story": "intro",
+      "text": "Philippine news in eighty seconds. Three updates, checked October third."
+    },
+    {
+      "story": "business",
+      "text": "First, GCash parent company Mynt has set its initial public offering price at six pesos and sixty centavos per share.",
+      "source": "gma-mynt"
+    },
+    {
+      "story": "business",
+      "text": "GMA News reports the planned Philippine Stock Exchange listing is October twentieth.",
+      "source": "gma-mynt"
+    },
+    {
+      "story": "business",
+      "text": "The company says the timetable remains subject to approvals and other conditions.",
+      "source": "mynt-primary"
+    },
+    {
+      "story": "climate",
+      "text": "Second, the Climate Change Commission is calling for stronger preparation as El Nino could intensify before the end of this year.",
+      "source": "pia-ccc"
+    },
+    {
+      "story": "climate",
+      "text": "In an October second release carried by the Philippine Information Agency, it urged decisions guided by science, data, and risk information.",
+      "source": "pia-ccc"
+    },
+    {
+      "story": "climate",
+      "text": "The advisory highlights risks of below normal rainfall, dry spells, and drought in some areas.",
+      "source": "pia-ccc"
+    },
+    {
+      "story": "sport",
+      "text": "Third, Jeus Gabriel Derick Yape won gold in mixed individual virtual taekwondo at the Asian Games in Japan.",
+      "source": "oca-yape"
+    },
+    {
+      "story": "sport",
+      "text": "The Olympic Council of Asia reports that he beat his Vietnamese opponent two rounds to zero in the final.",
+      "source": "oca-yape"
+    },
+    {
+      "story": "sport",
+      "text": "He had won a poomsae bronze the previous day.",
+      "source": "oca-yape"
+    },
+    {
+      "story": "sport",
+      "text": "This was the Philippines fourth gold medal at these Games, after two from Carlos Yulo and one from E J Obiena.",
+      "source": "oca-yape"
+    },
+    {
+      "story": "outro",
+      "text": "Read the original source links in the description for more details."
+    }
+  ]
+}

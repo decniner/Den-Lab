@@ -1,0 +1,110 @@
+﻿[
+    {
+        "text":  "Third",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "Jeus",
+        "start":  0.89,
+        "index":  7,
+        "count":  4
+    },
+    {
+        "text":  "Gabriel",
+        "start":  1.2049999999999998,
+        "index":  12,
+        "count":  7
+    },
+    {
+        "text":  "Derick",
+        "start":  1.68,
+        "index":  20,
+        "count":  6
+    },
+    {
+        "text":  "Yape",
+        "start":  2.05,
+        "index":  27,
+        "count":  4
+    },
+    {
+        "text":  "won",
+        "start":  2.34,
+        "index":  32,
+        "count":  3
+    },
+    {
+        "text":  "gold",
+        "start":  2.58,
+        "index":  36,
+        "count":  4
+    },
+    {
+        "text":  "in",
+        "start":  2.8899999999999997,
+        "index":  41,
+        "count":  2
+    },
+    {
+        "text":  "mixed",
+        "start":  3.005,
+        "index":  44,
+        "count":  5
+    },
+    {
+        "text":  "individual",
+        "start":  3.315,
+        "index":  50,
+        "count":  10
+    },
+    {
+        "text":  "virtual",
+        "start":  3.905,
+        "index":  61,
+        "count":  7
+    },
+    {
+        "text":  "taekwondo",
+        "start":  4.3199999999999994,
+        "index":  69,
+        "count":  9
+    },
+    {
+        "text":  "at",
+        "start":  5.02,
+        "index":  79,
+        "count":  2
+    },
+    {
+        "text":  "the",
+        "start":  5.135,
+        "index":  82,
+        "count":  3
+    },
+    {
+        "text":  "Asian",
+        "start":  5.305,
+        "index":  86,
+        "count":  5
+    },
+    {
+        "text":  "Games",
+        "start":  5.665,
+        "index":  92,
+        "count":  5
+    },
+    {
+        "text":  "in",
+        "start":  6.01,
+        "index":  98,
+        "count":  2
+    },
+    {
+        "text":  "Japan",
+        "start":  6.14,
+        "index":  101,
+        "count":  5
+    }
+]

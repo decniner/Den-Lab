@@ -1,0 +1,62 @@
+﻿[
+    {
+        "text":  "Philippine",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  10
+    },
+    {
+        "text":  "news",
+        "start":  0.64,
+        "index":  11,
+        "count":  4
+    },
+    {
+        "text":  "in",
+        "start":  0.89999999999999991,
+        "index":  16,
+        "count":  2
+    },
+    {
+        "text":  "eighty",
+        "start":  1.02,
+        "index":  19,
+        "count":  6
+    },
+    {
+        "text":  "seconds",
+        "start":  1.2449999999999999,
+        "index":  26,
+        "count":  7
+    },
+    {
+        "text":  "Three",
+        "start":  2.75,
+        "index":  35,
+        "count":  5
+    },
+    {
+        "text":  "updates",
+        "start":  2.9949999999999997,
+        "index":  41,
+        "count":  7
+    },
+    {
+        "text":  "checked",
+        "start":  3.9749999999999996,
+        "index":  50,
+        "count":  7
+    },
+    {
+        "text":  "October",
+        "start":  4.265,
+        "index":  58,
+        "count":  7
+    },
+    {
+        "text":  "third",
+        "start":  4.8149999999999995,
+        "index":  66,
+        "count":  5
+    }
+]

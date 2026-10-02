@@ -1,4 +1,4 @@
-name: Japan news private upload
+name: Japan and Philippine news private upload
 on:
   workflow_dispatch:
     inputs:
@@ -7,6 +7,11 @@ on:
         type: choice
         options: [dry-run, current, morning]
         default: dry-run
+      edition:
+        description: Rendered edition for current mode
+        type: choice
+        options: [japan-news-20261002-en, philippine-news-20261003-en]
+        default: japan-news-20261002-en
   # Initially disabled. 22:00 UTC is 07:00 JST the following day.
   # schedule:
   #   - cron: '0 22 * * *'
@@ -46,6 +51,7 @@ jobs:
       NEWS_INBOX: ${{ vars.NEWS_INBOX }}
       YOUTUBE_CHANNEL_ID: ${{ vars.YOUTUBE_CHANNEL_ID }}
       UPLOAD_MODE: ${{ inputs.mode || 'morning' }}
+      CURRENT_EDITION: ${{ inputs.edition || 'japan-news-20261002-en' }}
     steps:
       - uses: actions/checkout@v4
         with:

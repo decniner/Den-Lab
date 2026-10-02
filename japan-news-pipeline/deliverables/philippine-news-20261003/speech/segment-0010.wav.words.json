@@ -1,0 +1,128 @@
+﻿[
+    {
+        "text":  "This",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  4
+    },
+    {
+        "text":  "was",
+        "start":  0.31,
+        "index":  5,
+        "count":  3
+    },
+    {
+        "text":  "the",
+        "start":  0.475,
+        "index":  9,
+        "count":  3
+    },
+    {
+        "text":  "Philippines",
+        "start":  0.565,
+        "index":  13,
+        "count":  11
+    },
+    {
+        "text":  "fourth",
+        "start":  1.165,
+        "index":  25,
+        "count":  6
+    },
+    {
+        "text":  "gold",
+        "start":  1.505,
+        "index":  32,
+        "count":  4
+    },
+    {
+        "text":  "medal",
+        "start":  1.8199999999999998,
+        "index":  37,
+        "count":  5
+    },
+    {
+        "text":  "at",
+        "start":  2.125,
+        "index":  43,
+        "count":  2
+    },
+    {
+        "text":  "these",
+        "start":  2.2399999999999998,
+        "index":  46,
+        "count":  5
+    },
+    {
+        "text":  "Games",
+        "start":  2.475,
+        "index":  52,
+        "count":  5
+    },
+    {
+        "text":  "after",
+        "start":  3.395,
+        "index":  59,
+        "count":  5
+    },
+    {
+        "text":  "two",
+        "start":  3.6799999999999997,
+        "index":  65,
+        "count":  3
+    },
+    {
+        "text":  "from",
+        "start":  3.9349999999999996,
+        "index":  69,
+        "count":  4
+    },
+    {
+        "text":  "Carlos",
+        "start":  4.1899999999999995,
+        "index":  74,
+        "count":  6
+    },
+    {
+        "text":  "Yulo",
+        "start":  4.725,
+        "index":  81,
+        "count":  4
+    },
+    {
+        "text":  "and",
+        "start":  5.01,
+        "index":  86,
+        "count":  3
+    },
+    {
+        "text":  "one",
+        "start":  5.1499999999999995,
+        "index":  90,
+        "count":  3
+    },
+    {
+        "text":  "from",
+        "start":  5.39,
+        "index":  94,
+        "count":  4
+    },
+    {
+        "text":  "E",
+        "start":  5.6099999999999994,
+        "index":  99,
+        "count":  1
+    },
+    {
+        "text":  "J",
+        "start":  5.745,
+        "index":  101,
+        "count":  1
+    },
+    {
+        "text":  "Obiena",
+        "start":  5.96,
+        "index":  103,
+        "count":  6
+    }
+]
