@@ -70,6 +70,19 @@
     .card-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; margin-bottom: 18px; }
     .card-heading p { color: var(--muted); font-size: 12px; margin: 5px 0 0; }
     .snapshot-display { padding: 18px; border: 1px solid var(--line); border-radius: 15px; background: rgba(7, 16, 27, .28); }
+    .window-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+    .quota-panel { padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: rgba(7, 16, 27, .3); }
+    .quota-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 14px; }
+    .quota-title { color: var(--soft); font-size: 12px; font-weight: 650; }
+    .quota-used { font-size: 25px; font-variant-numeric: tabular-nums; letter-spacing: -.045em; }
+    .quota-used small { color: var(--muted); font-size: 11px; font-weight: 450; letter-spacing: 0; }
+    .quota-foot { display: flex; justify-content: space-between; gap: 7px; margin-top: 8px; color: var(--muted); font-size: 10px; }
+    .source-dot { width: 7px; height: 7px; display: inline-block; border-radius: 50%; background: var(--amber); margin-right: 6px; }
+    .setup-guide { margin-top: 14px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 13px; background: rgba(9, 17, 29, .24); }
+    .setup-guide summary { color: var(--soft); cursor: pointer; font-size: 12px; font-weight: 650; }
+    .setup-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding-top: 14px; }
+    .setup-step { color: var(--muted); font-size: 11px; }
+    .setup-step strong { display: block; color: var(--text); font-size: 11px; margin-bottom: 5px; }
     .snapshot-empty { color: var(--muted); font-size: 13px; margin: 0; }
     .snapshot-main { display: flex; align-items: baseline; flex-wrap: wrap; gap: 7px; margin: 0 0 11px; }
     .snapshot-main strong { font-size: 31px; line-height: 1; letter-spacing: -.045em; font-variant-numeric: tabular-nums; }
@@ -142,6 +155,8 @@
       .record { padding: 12px 10px; }
       .record-number { font-size: 12px; }
       .foot { flex-direction: column; }
+      .window-grid { grid-template-columns: 1fr; }
+      .setup-steps { grid-template-columns: 1fr; }
     }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
@@ -172,7 +187,7 @@
 
     <section class="section" aria-labelledby="overview-title">
       <div class="section-head">
-        <div><p class="eyebrow">At a glance</p><h2 id="overview-title">Your overview</h2><p>Recorded here on this browser. Empty values mean no snapshot has been entered yet.</p></div>
+        <div><p class="eyebrow">Codex · Plan usage</p><h2 id="overview-title">Usage overview</h2><p>Compact session and weekly meters, with your latest recorded reset times.</p></div>
         <a class="btn btn-secondary" href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">Open ChatGPT ↗</a>
       </div>
       <div class="grid summary-grid">
@@ -185,9 +200,21 @@
 
     <section class="section grid two-col" aria-label="Allowance and surface summary">
       <article class="card large-card">
-        <div class="card-heading"><div><p class="eyebrow">Account allowance</p><h2>Latest snapshot</h2><p>Choose a window to see the last value you recorded.</p></div><select id="window-filter" class="select-small" aria-label="Allowance window"><option value="5-hour">5-hour</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="custom">Custom</option></select></div>
-        <div class="snapshot-display" id="snapshot-display" aria-live="polite"><p class="snapshot-empty">No snapshot for this window yet. Add the values shown in your account usage screen.</p></div>
-        <p class="field-help" style="margin-top:11px">Usage allowance is distinct from the token counts in your session journal.</p>
+        <div class="card-heading"><div><p class="eyebrow">OpenAI Codex</p><h2>Plan usage</h2><p><span class="source-dot" aria-hidden="true"></span>Manual snapshot source · no live account connection</p></div><span class="tag">Local</span></div>
+        <div class="window-grid" aria-live="polite">
+          <div id="meter-5-hour" class="quota-panel"></div>
+          <div id="meter-weekly" class="quota-panel"></div>
+        </div>
+        <details class="setup-guide" open>
+          <summary>Setup · connect your usage view</summary>
+          <div class="setup-steps">
+            <div class="setup-step"><strong>01 · Check your source</strong>Use CodexBar’s Codex provider meters or the official ChatGPT usage view on your computer.</div>
+            <div class="setup-step"><strong>02 · Record the limits</strong>Enter the used amount, allowance, and reset time in the snapshot form below. Choose the matching 5-hour or weekly window.</div>
+            <div class="setup-step"><strong>03 · Add session detail</strong>Use Codex CLI session statistics when available, and record Web, CLI, or Desktop token counts separately.</div>
+          </div>
+          <p class="field-help">This GitHub Pages site cannot read computer files or your ChatGPT browser session. Do not paste cookies, passwords, or API keys into it.</p>
+        </details>
+        <p class="field-help" style="margin-top:11px">Allowance meters and recorded token totals are separate measures, as in CodexBar’s plan-usage view.</p>
       </article>
       <article class="card large-card">
         <div class="card-heading"><div><p class="eyebrow">Session journal</p><h2>Tokens by surface</h2><p>Only sessions you manually record are included.</p></div></div>
@@ -220,7 +247,8 @@
         <div class="card-heading"><div><p class="eyebrow">Plan limits</p><h2>Record an allowance snapshot</h2><p>Copy the values shown by your official account usage view.</p></div></div>
         <form id="snapshot-form">
           <div class="form-grid">
-            <div class="field full"><label for="snapshot-at">Checked at</label><input id="snapshot-at" type="datetime-local" required></div>
+            <div class="field"><label for="snapshot-at">Checked at</label><input id="snapshot-at" type="datetime-local" required></div>
+            <div class="field"><label for="snapshot-reset">Next reset (optional)</label><input id="snapshot-reset" type="datetime-local"></div>
             <div class="field"><label for="snapshot-window">Usage window</label><select id="snapshot-window"><option value="5-hour">5-hour</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="custom">Custom</option></select></div>
             <div class="field"><label for="snapshot-unit">Unit shown</label><select id="snapshot-unit"><option value="credits">Credits</option><option value="tokens">Tokens</option><option value="requests">Requests</option><option value="tasks">Tasks</option><option value="other">Other</option></select></div>
             <div class="field"><label for="snapshot-used">Used</label><input id="snapshot-used" type="number" min="0" step="any" inputmode="decimal" required></div>
@@ -286,7 +314,8 @@
         return item && validString(item.id, 80) && validString(item.at, 40) && !Number.isNaN(Date.parse(item.at)) &&
           ['5-hour', 'weekly', 'monthly', 'custom'].includes(item.window) &&
           ['credits', 'tokens', 'requests', 'tasks', 'other'].includes(item.unit) &&
-          Number.isFinite(item.used) && item.used >= 0 && Number.isFinite(item.limit) && item.limit > 0;
+          Number.isFinite(item.used) && item.used >= 0 && Number.isFinite(item.limit) && item.limit > 0 &&
+          (item.resetAt === undefined || item.resetAt === '' || (validString(item.resetAt, 40) && !Number.isNaN(Date.parse(item.resetAt))));
       }
       function save() {
         try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); return true; }
@@ -315,24 +344,39 @@
       function latestSnapshot(windowName) {
         return data.snapshots.filter(item => item.window === windowName).sort((a, b) => Date.parse(b.at) - Date.parse(a.at))[0];
       }
+      function resetCountdown(value) {
+        if (!value) return 'Reset time not recorded';
+        const seconds = Math.floor((Date.parse(value) - Date.now()) / 1000);
+        if (seconds <= 0) return 'Reset time passed · update snapshot';
+        const days = Math.floor(seconds / 86400);
+        const hours = Math.floor((seconds % 86400) / 3600);
+        const minutes = Math.floor((seconds % 3600) / 60);
+        return `Resets in ${days ? `${days}d ` : ''}${hours}h ${minutes}m`;
+      }
       function renderSnapshot() {
-        const selectedWindow = $('#window-filter').value;
-        const latest = latestSnapshot(selectedWindow);
-        const display = $('#snapshot-display'); display.replaceChildren();
-        if (!latest) {
-          display.append(element('p', 'snapshot-empty', `No ${selectedWindow} snapshot yet. Add values from your account usage screen.`));
-          return;
+        for (const [windowName, selector, label] of [
+          ['5-hour', '#meter-5-hour', '5-hour session'],
+          ['weekly', '#meter-weekly', 'Weekly']
+        ]) {
+          const display = $(selector); display.replaceChildren();
+          const latest = latestSnapshot(windowName);
+          const head = element('div', 'quota-head');
+          head.append(element('span', 'quota-title', label), element('span', 'surface-sub', latest ? `Checked ${dateFmt(latest.at)}` : 'No snapshot'));
+          if (!latest) {
+            display.append(head, element('p', 'snapshot-empty', 'Add a snapshot below to show this meter.'));
+            continue;
+          }
+          const percent = Math.max(0, Math.min(100, (latest.used / latest.limit) * 100));
+          const remaining = Math.max(0, latest.limit - latest.used);
+          display.append(head, element('div', 'quota-used', `${fmt(percent)}%`));
+          const detail = element('p', 'field-help', `${fmt(latest.used)} of ${fmt(latest.limit)} ${latest.unit} used`);
+          detail.style.margin = '4px 0 13px';
+          const bar = element('div', 'bar'); bar.setAttribute('role', 'progressbar'); bar.setAttribute('aria-label', `${label}: ${fmt(percent)} percent used`); bar.setAttribute('aria-valuemin', '0'); bar.setAttribute('aria-valuemax', '100'); bar.setAttribute('aria-valuenow', String(percent));
+          const fill = element('span'); fill.style.width = `${percent}%`; bar.append(fill);
+          const foot = element('div', 'quota-foot');
+          foot.append(element('span', '', `${fmt(remaining)} ${latest.unit} left`), element('span', '', resetCountdown(latest.resetAt)));
+          display.append(detail, bar, foot);
         }
-        const used = latest.used;
-        const remaining = Math.max(0, latest.limit - used);
-        const percent = Math.max(0, Math.min(100, (used / latest.limit) * 100));
-        const main = element('p', 'snapshot-main');
-        main.append(element('strong', '', `${fmt(used)} / ${fmt(latest.limit)}`), element('span', '', latest.unit));
-        const bar = element('div', 'bar'); bar.setAttribute('role', 'progressbar'); bar.setAttribute('aria-label', `${fmt(percent)} percent of allowance used`); bar.setAttribute('aria-valuemin', '0'); bar.setAttribute('aria-valuemax', '100'); bar.setAttribute('aria-valuenow', String(percent));
-        const fill = element('span'); fill.style.width = `${percent}%`; bar.append(fill);
-        const meta = element('div', 'snapshot-meta');
-        meta.append(element('span', '', `${fmt(remaining)} ${latest.unit} remaining · ${fmt(percent)}% used`), element('span', '', dateFmt(latest.at)));
-        display.append(main, bar, meta);
       }
       function renderLists() {
         const eventList = $('#event-list'); eventList.replaceChildren();
@@ -390,11 +434,12 @@
       });
       $('#snapshot-form').addEventListener('submit', event => {
         event.preventDefault();
-        const item = { id: id(), at: new Date($('#snapshot-at').value).toISOString(), window: $('#snapshot-window').value, unit: $('#snapshot-unit').value, used: Number($('#snapshot-used').value), limit: Number($('#snapshot-limit').value) };
+        const resetValue = $('#snapshot-reset').value;
+        const item = { id: id(), at: new Date($('#snapshot-at').value).toISOString(), resetAt: resetValue ? new Date(resetValue).toISOString() : '', window: $('#snapshot-window').value, unit: $('#snapshot-unit').value, used: Number($('#snapshot-used').value), limit: Number($('#snapshot-limit').value) };
         if (!validSnapshot(item) || item.used > item.limit) return showNotice('Enter valid values; used must be no greater than the allowance.', true);
-        data.snapshots.push(item); if (!save()) return; $('#snapshot-used').value = ''; $('#snapshot-limit').value = ''; $('#snapshot-at').value = localDateTime(); showNotice('Allowance snapshot saved in this browser.'); render();
+        data.snapshots.push(item); if (!save()) return; $('#snapshot-used').value = ''; $('#snapshot-limit').value = ''; $('#snapshot-at').value = localDateTime(); $('#snapshot-reset').value = ''; showNotice('Allowance snapshot saved in this browser.'); render();
       });
-      $('#window-filter').addEventListener('change', renderSnapshot);
+      window.setInterval(renderSnapshot, 60000);
       $('#export-btn').addEventListener('click', () => {
         const blob = new Blob([JSON.stringify({ ...data, exportedAt: new Date().toISOString() }, null, 2)], { type: 'application/json' });
         const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = `codex-usage-backup-${new Date().toISOString().slice(0, 10)}.json`; link.click(); URL.revokeObjectURL(link.href); showNotice('Backup exported. Keep it somewhere private.');

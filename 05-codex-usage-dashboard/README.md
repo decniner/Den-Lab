@@ -1,14 +1,14 @@
 # Codex Usage Dashboard
 
-A small, mobile-friendly, local-first dashboard for keeping personal Codex usage notes and allowance snapshots.
+A compact, CodexBar-inspired, mobile-friendly dashboard for keeping personal Codex usage notes and allowance snapshots.
 
 ## What it tracks
 
 - Manually recorded input and output token counts for Web, CLI, and Desktop sessions.
-- Manually recorded allowance snapshots by 5-hour, weekly, monthly, or custom window.
+- Manually recorded allowance snapshots by 5-hour, weekly, monthly, or custom window, with optional reset countdowns.
 - Local summaries, recent history, JSON export, and JSON import.
 
-The page does not connect to ChatGPT, Codex clients, or OpenAI APIs. Personal ChatGPT plan limits are not fetched automatically. Record figures from the account usage view yourself. A session token count is not the same as remaining plan allowance.
+The page does not connect to ChatGPT, CodexBar, Codex clients, or OpenAI APIs. A static GitHub Pages site cannot read local CodexBar/CLI files or browser sign-in sessions. Personal ChatGPT plan limits are not fetched automatically. Copy figures from CodexBar or the account usage view into the snapshot form. A session token count is not the same as remaining plan allowance.
 
 ## Privacy and device behavior
 
@@ -21,4 +21,3 @@ The page makes no background data requests and uses no external libraries.
 Open `index.html` directly, or use the published GitHub Pages project URL:
 
 `https://decniner.github.io/Den-Lab/05-codex-usage-dashboard/`
-
