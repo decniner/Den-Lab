@@ -46,6 +46,39 @@
       opacity: 0.9;
     }
 
+    .language-switch {
+      display: inline-flex;
+      gap: 0.25rem;
+      margin-top: 1rem;
+      padding: 0.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .language-switch[hidden] { display: none; }
+
+    .language-switch button {
+      border: 0;
+      border-radius: 9999px;
+      padding: 0.45rem 0.9rem;
+      color: white;
+      background: transparent;
+      font: inherit;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .language-switch button[aria-pressed="true"] {
+      color: var(--primary);
+      background: white;
+    }
+
+    .language-switch button:focus-visible {
+      outline: 3px solid #fbbf24;
+      outline-offset: 2px;
+    }
+
     .container {
       max-width: 900px;
       margin: 2rem auto;
@@ -198,6 +231,10 @@
     <h1>3rd Grade Career Guidance Information</h1>
     <p>Kawagoe City Kasumigaseki Junior High School</p>
     <p>Date: October 2, 2026 (Friday) | Location: Gymnasium</p>
+    <div class="language-switch" role="group" aria-label="Page language" hidden>
+      <button type="button" data-language="en" aria-pressed="true">English</button>
+      <button type="button" data-language="ja" aria-pressed="false" lang="ja">日本語</button>
+    </div>
   </header>
 
   <div class="container">
@@ -448,5 +485,228 @@
 
   </div>
   <footer><p>Kawagoe City Kasumigaseki Junior High School — 3rd Grade Career Guidance Materials Translation</p></footer>
+  <script>
+    (() => {
+      const pageTranslations = {
+        page1: [
+          '行事：令和8年度 3年生進路説明会',
+          '日時：2026年10月2日（金）｜会場：体育館', '当日の予定（14:55～15:45）',
+          '<strong>14:55～15:00：</strong>校長あいさつ',
+          '<strong>15:00～15:10：</strong>学年主任あいさつ（岡田先生）',
+          '<strong>15:10～15:35：</strong>進路について（太田先生）',
+          '<strong>15:35～15:45：</strong>質疑応答'
+        ],
+        page2: [
+          '卒業後の進路決定', '進路指導の今後の予定', '近年の卒業生の進学先',
+          '公立高校と私立高校の入試制度の比較', '令和9年度公立高校入試問題の基本方針',
+          '令和9年度公立高校入試の主な変更点', '電子出願システムについて',
+          '調査書について', '調査書の記載内容の確認', '公立高校入試',
+          '私立高校入試', '今後の三者面談', 'おわりに'
+        ],
+        page3: [
+          '卒業後の進路を決めるにあたって',
+          '<strong>公立高校のみを受験：</strong>志望校の学校説明会や個別相談会に参加してください。',
+          '<strong>私立高校のみを受験：</strong>通知表（<em>通知書</em>）やテスト結果を持参して個別相談会に参加してください。単願（<em>単願</em>—第一志望として1校に出願）か併願（<em>併願</em>—すべり止めとして出願）を決めます。',
+          '<strong>公立が第一志望、私立を併願：</strong>公立高校の説明会に参加し、私立高校の個別相談会も予約してください。公立高校に出願できるのは1校のみです。',
+          '<strong>その他（専門学校・就職）：</strong>担任の先生または地域の公共職業安定所（ハローワーク）に相談してください。',
+          '今後の予定（2026年10月～2027年3月）',
+          '<strong>2026年10月：</strong>第2回川越市学力検査（10月6日）、中間テスト（10月8～9日）、確認書提出期限（10月16日）、第4回進路希望調査配布（10月23日、提出期限10月30日）。',
+          '<strong>2026年11月：</strong>三者面談（11月4～12日）、第3回川越市学力検査（11月9日）、期末テスト（11月19～20日）、電子出願練習の申込書配布（11月24日、提出期限12月3日）。',
+          '<strong>2026年12月：</strong>希望者を対象とした三者面談（12月10～16日）、成績・活動記録通知書の配布（12月24日）。',
+          '<strong>2027年1月：</strong>私立高校への出願、私立高校の主な入試日（1月22～23日）、公立高校の電子出願入力（1月26日～2月9日）。',
+          '<strong>2027年2月・3月：</strong>公立高校の志願先変更（2月17～18日）、公立高校学力検査（2月25日）、公立高校面接（2月26日）、合格発表（3月5日）。'
+        ],
+        page4: [
+          '近年の卒業生の進学先',
+          '<strong>埼玉県内の公立高校：</strong>川越、川越女子、川越西、川越初雁、川越南、坂戸、坂戸西、狭山清陵、鶴ヶ島清風、所沢北、日高、松山、松山女子、和光国際、市立川越、筑波大学附属坂戸など。',
+          '<strong>埼玉県内の私立高校：</strong>秋川学園、浦和学院、大宮開成、敬明、川越東、埼玉平成、秀明英光、城西大学付属川越、西武学園文理、西武台、東京農業大学第三、星野、山村学園、山村国際、早稲田大学本庄など。',
+          '<strong>その他：</strong>前橋育英、白梅学園、中央大学杉並、国際学院、飛鳥未来、第一学院、ヒューマンキャンパス、N高等学校、鹿島学園など。',
+          '公立高校と私立高校の入試比較', '項目', '公立高校（埼玉県立）', '私立高校',
+          '<strong>入試日</strong>', '2月25日（学力検査）、2月26日（面接）。<em>出願は1校のみ。</em>', '1月下旬～2月上旬（主な入試日：1月22～23日）。複数校に出願できます。',
+          '<strong>選抜方法</strong>', '学力検査＋面接＋調査書。', '筆記試験＋調査書＋面接。',
+          '<strong>試験科目</strong>', '国語、社会、数学、理科、英語（5教科）。', '国語、数学、英語（多くの学校で3教科）。',
+          '<strong>受験料</strong>', '全日制2,200円／定時制950円。電子納付。', '約20,000～30,000円（学校により異なります）。',
+          '<strong>合格発表</strong>', '3月5日（オンライン）。合格後の入学辞退はできません。', '1週間以内（オンライン、郵送、または校内掲示）。'
+        ],
+        page5: [
+          '令和9年度 公立高校入試問題の基本方針', '問題作成の基本方針',
+          '<strong>学習指導要領に準拠：</strong>中学校の学習指導要領に基づいて出題します。',
+          '<strong>学力の評価：</strong>基礎的な知識に加え、問題解決に必要な思考力、判断力、表現力などを評価します。',
+          '<strong>出題形式のバランス：</strong>各教科を公平に評価できるよう、さまざまな形式の問題をバランスよく出題します。',
+          '解答形式の内訳',
+          '<strong>マークシート式：</strong>主要教科の配点のおよそ<strong>90％</strong>を占めます。',
+          '<strong>記述式・短答式：</strong>配点のおよそ<strong>10％</strong>を占めます。'
+        ],
+        page6: [
+          '令和9年度公立高校入試の主な変更点',
+          '<strong>マークシート方式の導入：</strong>5教科（国語、社会、数学、理科、英語）すべてで統一形式のマークシートを導入します。',
+          '<strong>全校で面接を実施：</strong>すべての公立高校で面接を実施します。',
+          '<strong>調査書の簡素化：</strong>記録様式を簡素化し、出欠の評価方法を変更します。',
+          '電子出願システムについて',
+          '埼玉県立高校への出願は、パソコン、スマートフォン、タブレットからオンラインで行います。プリンターも必要です。',
+          '受検生と中学校を対象とした操作確認・練習を<strong>11月～12月</strong>に実施します。'
+        ],
+        page7: [
+          '調査書の様式',
+          '<strong>公立高校：</strong>県共通の様式を使用します。',
+          '<strong>私立高校：</strong>共通様式または各学校独自の様式を使用します。',
+          '評定と得点の計算',
+          '<strong>評定：</strong>9教科を5段階で評価します。',
+          '<strong>各学年の合計：</strong>5点×9教科＝各学年45点。',
+          '<strong>3年間の合計：</strong>45点×3年＝合計<strong>135点</strong>。',
+          '3年生の評定には、1学期と2学期の成績を反映します。'
+        ],
+        page8: [
+          '私立高校の標準様式で確認する項目',
+          '<strong>特別活動の記録：</strong>1～3年生の委員会・係活動（複数ある場合は各学年の主な役割を1つ）を確認します。学校での表彰と受賞年度も確認してください。',
+          '<strong>その他の記録：</strong>資格（英検、漢検、珠算など）、ボランティア活動、校外でのスポーツ・文化活動の実績を確認します。',
+          '<strong>訂正：</strong>記載漏れや追加事項は、確認用紙に赤ペンで記入してください。'
+        ],
+        page9: [
+          '学校選択問題',
+          '競争率の高い公立高校23校では、数学と英語に難度の高い問題を使用します。',
+          '<em>浦和、浦和第一女子、浦和西、大宮、春日部、川口北、<strong>川越</strong>、<strong>川越女子</strong>、狭山西、熊谷、熊谷女子、熊谷西、越谷、越谷北、所沢、所沢北、不動岡、和光国際、蕨、市立浦和、市立浦和南、市立大宮北、市立川口。</em>',
+          'マークシートの注意事項',
+          '解答欄の塗りつぶしにはHBの鉛筆を使用してください。',
+          '答えを変更するときは、機械で読み取れなくならないよう、消しゴムできれいに消してください。',
+          '数字や文字は、指定された記入欄の中にはっきり書いてください。'
+        ],
+        page10: [
+          '私立高校の募集区分',
+          '<strong>単願：</strong>第一志望として受験します。合格した場合は入学が必須です。',
+          '<strong>併願：</strong>公立高校を第一志望とし、私立高校をすべり止めとして受験します。',
+          '<strong>推薦：</strong>学校長推薦、自己推薦、奨学生資格など、各校の基準に基づく入試です。',
+          '<strong>一般入試：</strong>推薦の基準を満たさない場合などに受験し、主に学力試験の結果で選考します。',
+          '11月の三者面談で確認すること',
+          '<strong>志望校の選定：</strong>学校説明会・相談会への参加状況と合格の可能性を確認します。',
+          '<strong>出願区分の確認：</strong>公立・私立、単願・併願、希望する学科・コースを決めます。',
+          '<strong>書類の確認：</strong>調査書の記載内容と推薦書の対象となるかを確認します。'
+        ],
+        page11: [
+          '12月の三者面談（希望者）',
+          '<strong>志望校の最終決定：</strong>第一志望の学校・学科と併願校を決めます。',
+          '<strong>出願手続きと日程の確認：</strong>調査書の記載内容を再確認します。',
+          '<strong>12月24日：</strong>「成績・活動記録通知書」をご家庭に配布します。',
+          '生徒の皆さんへ',
+          '<strong>授業を大切に：</strong>授業で学ぶことに無駄なものはありません。',
+          '<strong>苦手分野の克服を目指す：</strong>得意分野を伸ばすことと同じくらい、苦手分野を減らすことも大切です。',
+          '<strong>具体的な目標を立てる：</strong>「この日までにこの点数を取る」など、期限を決めて目標を立てましょう。',
+          '<strong>規則正しい生活を送る：</strong>夜遅くまで勉強するより、早起きして勉強しましょう。',
+          '<strong>学習習慣をつくる：</strong>毎日2時間勉強する、または午後9時から始めるなど、時間を決めて取り組みましょう。',
+          '<strong>正確な進路情報を集める：</strong>自分の進路について、誰よりもよく理解しましょう。'
+        ],
+        page12: [
+          '私立高校出願用の顔写真',
+          '<strong>必要な人：</strong>私立高校の出願に必要です（公立高校では不要です）。',
+          '<strong>準備：</strong>今年度は学校で撮影しません。ご家庭で準備してください。',
+          '<strong>服装：</strong>中学校の制服を着用して撮影してください。',
+          '<strong>撮影方法：</strong>スマートフォン、デジタルカメラ、証明写真機、写真館などを利用できます。ウェブ出願時に画像データをアップロードします。',
+          '奨学金制度',
+          '<strong>古岡奨学会</strong>（公益財団法人古岡奨学会）',
+          '<strong>日本教育公務員弘済会 埼玉支部</strong>（公益財団法人日本教育公務員弘済会埼玉県支部）',
+          '<strong>あしなが育英会</strong>（一般財団法人あしなが育英会）',
+          '<em>利用を希望する場合は、学年主任に相談してください。</em>'
+        ],
+        page13: [
+          '<strong>川越市在住の3年生と保護者の皆さまへ：</strong><br><em>川越市立高校「地域特別選抜」について（令和9年度埼玉県公立高校入学者選抜）</em><br><strong>発信者：</strong>川越市立高校 校長',
+          '1. 目的',
+          '文化、スポーツ、生徒会、部活動、資格などで優れた力を発揮し、明確な目的意識を持つ生徒を受け入れます。地域に根ざした教育を通じて、川越市に誇りを持つ人材を育成します。',
+          '2. 求める生徒像',
+          '学力が十分にあり、学習意欲の高い生徒。',
+          '学校行事や部活動に積極的に参加する生徒。',
+          '生活習慣が整い、規則を守る生徒。',
+          '選択する学科・コースについて明確な志望動機がある生徒。',
+          '3. 出願資格',
+          '川越市内に在住し、川越市立高校を<strong>第一志望</strong>とする生徒で、学業、スポーツ、文化活動、生徒会活動などに実績や能力があること。',
+          '4. 必要書類',
+          '<strong>地域特別選抜志願書</strong>（地域特別選抜志願書）',
+          '<strong>出願資格証明書</strong>（出願資格証明書）。中学校長が発行します。',
+          '5. 募集人数',
+          '募集定員の約<strong>10％</strong>（募集定員280名の場合、約28名）。',
+          '<strong>問い合わせ先：</strong>川越市立高校<br><strong>電話：</strong>049-243-0800｜<strong>FAX：</strong>049-247-6828'
+        ]
+      };
+
+      const docTitle = document.title;
+      const titleJa = '3年生 進路説明会資料 - 川越市立霞ヶ関中学校';
+      const headerNodes = [...document.querySelectorAll('.header h1, .header p')];
+      const headerJa = [
+        '3年生 進路説明会資料', '川越市立霞ヶ関中学校',
+        '日時：2026年10月2日（金）｜会場：体育館'
+      ];
+      const tocTitle = document.querySelector('.nav-toc h2');
+      const tocNav = document.querySelector('.nav-toc');
+      const tocLinks = [...document.querySelectorAll('.toc-grid a')];
+      const tocJa = [
+        '資料の目次', '1ページ：表紙・当日の予定', '2ページ：目次',
+        '3ページ：進路決定と今後の予定', '4ページ：卒業生の進学先・入試比較',
+        '5ページ：公立高校入試問題の基本方針', '6ページ：公立入試の変更点・電子出願',
+        '7ページ：調査書', '8ページ：調査書の記載内容の確認',
+        '9ページ：公立入試の詳細・学校選択問題', '10ページ：私立入試・11月の面談',
+        '11ページ：12月の面談・進路指導', '12ページ：写真・奨学金',
+        '13ページ：川越市立高校「地域特別選抜」'
+      ];
+      const sections = [...document.querySelectorAll('.page-card')];
+      const englishPages = sections.map(section => ({
+        title: section.querySelector('.page-title').innerHTML,
+        content: [...section.querySelectorAll('h3,h4,p,li,th,td,.contact-card')].map(node => node.innerHTML)
+      }));
+      const footer = document.querySelector('footer p');
+      const footerEn = footer.innerHTML;
+      const footerJa = '川越市立霞ヶ関中学校 — 3年生進路説明会資料（翻訳）';
+      const switcher = document.querySelector('.language-switch');
+      const buttons = [...switcher.querySelectorAll('button')];
+
+      function setLanguage(language) {
+        const japanese = language === 'ja';
+        document.documentElement.lang = japanese ? 'ja' : 'en';
+        document.title = japanese ? titleJa : docTitle;
+        tocNav.setAttribute('aria-label', japanese ? '資料の目次' : 'Document navigation');
+        switcher.setAttribute('aria-label', japanese ? '表示言語' : 'Page language');
+        headerNodes.forEach((node, index) => { node.innerHTML = japanese ? headerJa[index] : [
+          '3rd Grade Career Guidance Information',
+          'Kawagoe City Kasumigaseki Junior High School',
+          'Date: October 2, 2026 (Friday) | Location: Gymnasium'
+        ][index]; });
+        tocTitle.innerHTML = japanese ? tocJa[0] : 'Document Navigation';
+        tocLinks.forEach((node, index) => { node.innerHTML = japanese ? tocJa[index + 1] : [
+          'Page 1: Title Page &amp; Agenda', 'Page 2: Table of Contents',
+          'Page 3: Career Decisions &amp; Schedule', 'Page 4: Graduate Placements &amp; Exam Comparison',
+          'Page 5: Public High School Exam Policies', 'Page 6: Public Exam Changes &amp; Electronic System',
+          'Page 7: Student Evaluation Reports (Chosasho)', 'Page 8: Verification of Report Items',
+          'Page 9: Public Exam Specifics &amp; Selection Questions', 'Page 10: Private Admissions &amp; Nov Consultations',
+          'Page 11: Dec Consultations &amp; Guidance Advice', 'Page 12: Photo Requirements &amp; Scholarships',
+          'Page 13: Kawagoe Municipal &quot;Community Selection&quot;'
+        ][index]; });
+
+        sections.forEach((section, index) => {
+          section.querySelector('.page-title').innerHTML = japanese
+            ? ['表紙・当日の予定','目次','進路決定と今後の予定','卒業生の進学先・入試比較',
+              '公立高校入試問題の基本方針（令和9年度）','公立入試の変更点・電子出願',
+              '調査書','調査書の記載内容の確認','公立入試の詳細・学校選択問題',
+              '私立入試・11月の面談','12月の面談・進路指導','写真・奨学金',
+              '川越市立高校「地域特別選抜」'][index]
+            : englishPages[index].title;
+          section.querySelector('.page-badge').textContent = japanese ? `ページ ${index + 1}` : `Page ${index + 1}`;
+          const nodes = [...section.querySelectorAll('h3,h4,p,li,th,td,.contact-card')];
+          const translations = pageTranslations[`page${index + 1}`];
+          if (nodes.length !== translations.length) throw new Error(`Translation count mismatch in page ${index + 1}`);
+          nodes.forEach((node, nodeIndex) => {
+            node.innerHTML = japanese ? translations[nodeIndex] : englishPages[index].content[nodeIndex];
+          });
+        });
+
+        footer.innerHTML = japanese ? footerJa : footerEn;
+        buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === language)));
+        try { localStorage.setItem('career-guidance-language', language); } catch (_) { /* Storage may be disabled. */ }
+      }
+
+      buttons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+      switcher.hidden = false;
+      let initialLanguage = 'en';
+      try { if (localStorage.getItem('career-guidance-language') === 'ja') initialLanguage = 'ja'; } catch (_) { /* Keep English by default. */ }
+      setLanguage(initialLanguage);
+    })();
+  </script>
 </body>
 </html>
