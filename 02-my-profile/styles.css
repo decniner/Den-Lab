@@ -121,6 +121,7 @@ details[open] .chevron { transform: rotate(45deg); }
 .contact-section .contact-placeholder { margin-top: 2rem; color: var(--quiet); font-size: .78rem; }
 .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 5rem; border-top: 1px solid var(--line); color: var(--quiet); font-size: .7rem; }
 .site-footer p { margin: 0; }
+.site-version { color: var(--quiet); font-size: .62rem; letter-spacing: .04em; }
 .back-top { color: var(--muted); text-decoration-color: var(--line); text-underline-offset: .25rem; }
 .js-motion [data-reveal] {
   opacity: 0;
