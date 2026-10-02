@@ -33,8 +33,10 @@ jobs:
       - name: Prepare site files
         run: |
           mkdir -p _site/02-my-profile
+          mkdir -p _site/03-ai-agent-explorer
           mkdir -p _site/tiny-llm-from-scratch
           cp -R 03-ai-agent-explorer/. _site/
+          cp -R 03-ai-agent-explorer/. _site/03-ai-agent-explorer/
           cp -R 02-my-profile/. _site/02-my-profile/
           cp tiny-llm-from-scratch/ds.tooltip.index.html _site/tiny-llm-from-scratch/
       - name: Upload site files
