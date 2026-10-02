@@ -28,5 +28,6 @@ if __name__=='__main__':
             'media_inspection':state.get('inspection',{'audio_listening':'pending; assistant audio input unavailable'}),
             'upload':'API-confirmed' if response else 'not attempted', 'video_id':response.get('id'),
             'url':'https://www.youtube.com/watch?v='+response['id'] if response else None,
-            'returned_visibility':response.get('status',{}).get('privacyStatus'),'paid_jobs':0,'schedule_enabled':False})
+            'returned_visibility':response.get('status',{}).get('privacyStatus'),
+            'upload_status':response.get('status',{}).get('uploadStatus'),'paid_jobs':0,'schedule_enabled':False})
         print(f'Copied verified sample to {destination}; no credential or resumable-state files included.')

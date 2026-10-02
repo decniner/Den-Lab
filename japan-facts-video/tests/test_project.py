@@ -135,6 +135,30 @@ class ProductionTests(unittest.TestCase):
             r=json.loads((Path(root)/'fixture'/'dry-run-report.json').read_text())
             self.assertIsNone(r['video_id']); self.assertEqual(r['mode'],'fixture')
 
+class PrivateAudioWaiverTests(unittest.TestCase):
+    def state(self):
+        from japan_facts.core import manifest_hash
+        s={'channel_id':'UCintended','manifest':{'video_sha256':'exact'}}
+        s['inspection']={'video_sha256':'exact','manifest_sha256':manifest_hash(s),'audio_listened':False,'private_audio_waiver':'Owner explicitly requested private upload without a listening check.'}
+        return s
+    def ready(self,allow=False):
+        from types import SimpleNamespace
+        from japan_facts.__main__ import require_ready
+        from japan_facts.core import now
+        with patch('japan_facts.__main__.check_artifacts'), patch('japan_facts.__main__.research.read',return_value={'checked_at':now().isoformat()}):
+            require_ready(SimpleNamespace(path=Path('.')),self.state(),{'channel_id':'UCintended'},allow_audio_waiver=allow)
+    def test_explicit_waiver_can_allow_only_private_upload(self):
+        self.ready(True)
+    def test_public_publish_cannot_use_audio_waiver(self):
+        with self.assertRaises(Failure): self.ready(False)
+    def test_waiver_is_not_recorded_as_listening(self):
+        from unittest.mock import MagicMock
+        from japan_facts.__main__ import inspection
+        store=MagicMock(); store.path=Path('.'); store.load.return_value=self.state()
+        with patch('japan_facts.__main__.check_artifacts'), patch('japan_facts.__main__.research.read',return_value={'preview_times':[1,2,3,4,5]}), patch.object(Path,'is_file',return_value=True):
+            result=inspection(store,'Owner','exact',False,private_audio_waiver='Explicit private upload authorization')
+        self.assertFalse(result['audio_listened']); self.assertTrue(result['private_audio_waiver'])
+
 class StateBoundaryTests(unittest.TestCase):
     def invoke(self,root,command='render'):
         from japan_facts.__main__ import main

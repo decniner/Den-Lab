@@ -1,6 +1,6 @@
 {
   "edition": "japan-explained-20261003-shinkansen-v1",
-  "at": "2026-10-02T21:17:32.641157+00:00",
+  "at": "2026-10-02T21:50:03.156398+00:00",
   "mode": "live",
   "video_sha256": "2c8bacc72367a270fc18a57fb72556c54ffd08c06b12874c5928012bd62bcb37",
   "duration": 57.665,
@@ -14,12 +14,25 @@
     53.63
   ],
   "media_inspection": {
-    "audio_listening": "pending; assistant audio input unavailable"
+    "reviewer": "Den: explicit upload instruction; assistant inspected frames",
+    "at": "2026-10-02T21:36:00.602556+00:00",
+    "video_sha256": "2c8bacc72367a270fc18a57fb72556c54ffd08c06b12874c5928012bd62bcb37",
+    "manifest_sha256": "8fe350bb2db973b544f4d5e7c16f643830b1aada12456770e1cb349275e2b245",
+    "audio_listened": false,
+    "frames": [
+      2.88,
+      13.26,
+      27.1,
+      41.52,
+      53.63
+    ],
+    "private_audio_waiver": "Owner said: Go ahead and upload. Proceed privately without the pending listening check; no listening is claimed."
   },
-  "upload": "not attempted",
-  "video_id": null,
-  "url": null,
-  "returned_visibility": null,
+  "upload": "API-confirmed",
+  "video_id": "I1RIgNF444k",
+  "url": "https://www.youtube.com/watch?v=I1RIgNF444k",
+  "returned_visibility": "private",
+  "upload_status": "processed",
   "paid_jobs": 0,
   "schedule_enabled": false
 }

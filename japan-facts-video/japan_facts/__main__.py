@@ -26,28 +26,30 @@ def content_failure_guard(store,command):
                 store.save(current)
         raise
 
-def require_ready(store,state,config):
+def require_ready(store,state,config,allow_audio_waiver=False):
     check_artifacts(state)
     if not config.get('channel_id','').startswith('UC') or config['channel_id']!=state['channel_id']:
         raise Failure('Configure the exact intended channel; this edition is bound to another or missing channel ID.')
     inspection=state.get('inspection',{})
-    if inspection.get('video_sha256')!=state['manifest']['video_sha256'] or inspection.get('manifest_sha256')!=manifest_hash(state) or not inspection.get('audio_listened'):
+    audio_approved=inspection.get('audio_listened') or (allow_audio_waiver and inspection.get('private_audio_waiver'))
+    if inspection.get('video_sha256')!=state['manifest']['video_sha256'] or inspection.get('manifest_sha256')!=manifest_hash(state) or not audio_approved:
         raise Failure('Inspect the representative frames and audio sample, then use inspect-media for this exact render before upload.')
     evidence=research.read(store.path/'claims-to-sources.json')
     checked=dt.datetime.fromisoformat(evidence['checked_at'])
     if checked.tzinfo is None or not dt.timedelta(minutes=-5)<=now()-checked<=dt.timedelta(days=config.get('review_max_age_days',30)):
         raise Failure('Live source verification expired; research and review a new edition.')
 
-def inspection(store,reviewer,approved,audio_listened):
+def inspection(store,reviewer,approved,audio_listened,private_audio_waiver=None):
     state=store.load(); check_artifacts(state)
     report=research.read(store.path/'validation.json')
-    if not reviewer or approved!=state['manifest']['video_sha256'] or not audio_listened:
-        raise Failure('Inspection must name the reviewer, confirm audio listening and approve this exact video SHA256.')
+    if not reviewer or approved!=state['manifest']['video_sha256'] or not (audio_listened or (private_audio_waiver and private_audio_waiver.strip())) or (audio_listened and private_audio_waiver):
+        raise Failure('Inspection requires an exact video hash and either actual listening or an explicit private-only audio waiver.')
     if not all((store.path/f'preview-{i}.jpg').is_file() for i in range(1,6)) or not (store.path/'audio-sample.mp3').is_file():
         raise Failure('Representative frames or audio sample are missing.')
     # Attestation is separate from immutable validation artifacts, so its binding is stable.
     state['inspection']={'reviewer':reviewer,'at':now().isoformat(),'video_sha256':approved,
-                         'manifest_sha256':manifest_hash(state),'audio_listened':True,'frames':report['preview_times']}
+                         'manifest_sha256':manifest_hash(state),'audio_listened':bool(audio_listened),'frames':report['preview_times']}
+    if private_audio_waiver: state['inspection']['private_audio_waiver']=private_audio_waiver.strip()
     store.save(state); return state['inspection']
 
 def dry_run(store):
@@ -74,6 +76,7 @@ def main(argv=None):
         p=sub.add_parser(name); p.add_argument('--edition',required=True)
     p=sub.add_parser('inspect-media'); p.add_argument('--edition',required=True); p.add_argument('--reviewer',required=True)
     p.add_argument('--approve-video',required=True); p.add_argument('--audio-listened',action='store_true')
+    p.add_argument('--private-audio-waiver',help='Explicit owner authorization to upload privately without a listening check; never authorizes public publishing.')
     p=sub.add_parser('publish-approved'); p.add_argument('--edition',required=True); p.add_argument('--approve-render',required=True)
     p=sub.add_parser('oauth-setup'); p.add_argument('--client-secrets',required=True); p.add_argument('--token',default='token.json')
     args=parser.parse_args(argv); store=None
@@ -97,9 +100,9 @@ def main(argv=None):
                 research.research_edition(store,config); production.create_script(store); result=production.render(store,config)
                 log('edition_prepared',**result,upload='pending exact-render media inspection')
             elif args.command=='inspect-media':
-                log('media_inspected',edition=args.edition,**inspection(store,args.reviewer,args.approve_video,args.audio_listened))
+                log('media_inspected',edition=args.edition,**inspection(store,args.reviewer,args.approve_video,args.audio_listened,args.private_audio_waiver))
             elif args.command in ('upload-private','publish-approved'):
-                state=store.load(); require_ready(store,state,config)
+                state=store.load(); require_ready(store,state,config,allow_audio_waiver=args.command=='upload-private')
                 api=youtube.API(config['oauth_token'])
                 item=youtube.upload(store,state,api) if args.command=='upload-private' else youtube.publish(store,state,api,args.approve_render)
                 log('video_confirmed',edition=args.edition,video_id=item['id'],url='https://www.youtube.com/watch?v='+item['id'],
