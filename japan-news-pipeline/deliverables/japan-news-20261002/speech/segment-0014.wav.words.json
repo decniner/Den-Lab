@@ -1,0 +1,56 @@
+﻿[
+    {
+        "text":  "Sources",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  7
+    },
+    {
+        "text":  "Associated",
+        "start":  1.125,
+        "index":  9,
+        "count":  10
+    },
+    {
+        "text":  "Press",
+        "start":  1.8499999999999999,
+        "index":  20,
+        "count":  5
+    },
+    {
+        "text":  "Reuters",
+        "start":  2.44,
+        "index":  27,
+        "count":  7
+    },
+    {
+        "text":  "and",
+        "start":  3.0549999999999997,
+        "index":  36,
+        "count":  3
+    },
+    {
+        "text":  "the",
+        "start":  3.1599999999999997,
+        "index":  40,
+        "count":  3
+    },
+    {
+        "text":  "Bank",
+        "start":  3.2399999999999998,
+        "index":  44,
+        "count":  4
+    },
+    {
+        "text":  "of",
+        "start":  3.55,
+        "index":  49,
+        "count":  2
+    },
+    {
+        "text":  "Japan",
+        "start":  3.67,
+        "index":  52,
+        "count":  5
+    }
+]

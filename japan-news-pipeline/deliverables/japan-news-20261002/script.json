@@ -1,0 +1,24 @@
+{
+  "edition": "japan-news-20261002-en",
+  "mode": "live-news",
+  "language": "en",
+  "source_checked_at": "2026-10-02T14:19:31+00:00",
+  "public_approval": "not requested",
+  "segments": [
+    {"story": "intro", "text": "Japan news in eighty seconds. Here are three updates, checked on October second."},
+    {"story": "drone", "source": "ap-drone", "text": "First, Japan has begun recovering a Global Hawk surveillance drone from the sea off Tottori."},
+    {"story": "drone", "source": "ap-drone", "text": "Associated Press reports that it disappeared in mid September."},
+    {"story": "drone", "source": "ap-drone", "text": "What may be its main body was located about two hundred to three hundred meters underwater."},
+    {"story": "drone", "source": "ap-drone", "text": "Details remain limited."},
+    {"story": "policy", "source": "reuters-policy", "text": "Second, Economy Minister Minoru Kiuchi says Japan no longer needs excessively loose monetary policy now that it has moved beyond deflation."},
+    {"story": "policy", "source": "reuters-policy", "text": "Reuters reports he stressed that interest rate decisions belong to the Bank of Japan."},
+    {"story": "policy", "source": "reuters-policy", "text": "He declined to say whether the government opposed additional rate increases."},
+    {"story": "policy", "source": "reuters-policy", "text": "That is a minister's position, not a new central bank rate decision."},
+    {"story": "tankan", "source": "boj-tankan", "text": "Third, business sentiment is mixed."},
+    {"story": "tankan", "source": "boj-tankan", "text": "In its October first Tankan release, the Bank of Japan reported large manufacturers at plus twenty four, up from plus twenty two in June."},
+    {"story": "tankan", "source": "boj-tankan", "text": "Large nonmanufacturers slipped from plus thirty seven to plus thirty five."},
+    {"story": "tankan", "source": "boj-tankan", "text": "These are sentiment index readings, not growth rates."},
+    {"story": "tankan", "source": "boj-tankan", "text": "The survey measures favorable responses minus unfavorable responses."},
+    {"story": "outro", "text": "Sources: Associated Press, Reuters, and the Bank of Japan."}
+  ]
+}

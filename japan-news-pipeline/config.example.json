@@ -1,0 +1,5 @@
+{
+  "channel_id": "REPLACE_WITH_YOUR_UC_CHANNEL_ID",
+  "source_hosts": ["www.nasa.gov"],
+  "oauth_token": "token.json"
+}

@@ -1,0 +1,128 @@
+﻿[
+    {
+        "text":  "Second",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  6
+    },
+    {
+        "text":  "Economy",
+        "start":  1.02,
+        "index":  8,
+        "count":  7
+    },
+    {
+        "text":  "Minister",
+        "start":  1.525,
+        "index":  16,
+        "count":  8
+    },
+    {
+        "text":  "Minoru",
+        "start":  1.9649999999999999,
+        "index":  25,
+        "count":  6
+    },
+    {
+        "text":  "Kiuchi",
+        "start":  2.4,
+        "index":  32,
+        "count":  6
+    },
+    {
+        "text":  "says",
+        "start":  2.985,
+        "index":  39,
+        "count":  4
+    },
+    {
+        "text":  "Japan",
+        "start":  3.31,
+        "index":  44,
+        "count":  5
+    },
+    {
+        "text":  "no",
+        "start":  3.735,
+        "index":  50,
+        "count":  2
+    },
+    {
+        "text":  "longer",
+        "start":  3.94,
+        "index":  53,
+        "count":  6
+    },
+    {
+        "text":  "needs",
+        "start":  4.305,
+        "index":  60,
+        "count":  5
+    },
+    {
+        "text":  "excessively",
+        "start":  4.58,
+        "index":  66,
+        "count":  11
+    },
+    {
+        "text":  "loose",
+        "start":  5.2,
+        "index":  78,
+        "count":  5
+    },
+    {
+        "text":  "monetary",
+        "start":  5.4849999999999994,
+        "index":  84,
+        "count":  8
+    },
+    {
+        "text":  "policy",
+        "start":  5.9899999999999993,
+        "index":  93,
+        "count":  6
+    },
+    {
+        "text":  "now",
+        "start":  6.5299999999999994,
+        "index":  100,
+        "count":  3
+    },
+    {
+        "text":  "that",
+        "start":  6.795,
+        "index":  104,
+        "count":  4
+    },
+    {
+        "text":  "it",
+        "start":  6.9499999999999993,
+        "index":  109,
+        "count":  2
+    },
+    {
+        "text":  "has",
+        "start":  7.05,
+        "index":  112,
+        "count":  3
+    },
+    {
+        "text":  "moved",
+        "start":  7.225,
+        "index":  116,
+        "count":  5
+    },
+    {
+        "text":  "beyond",
+        "start":  7.5299999999999994,
+        "index":  122,
+        "count":  6
+    },
+    {
+        "text":  "deflation",
+        "start":  7.97,
+        "index":  129,
+        "count":  9
+    }
+]

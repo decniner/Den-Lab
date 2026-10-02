@@ -1,0 +1,16 @@
+{
+  "fixture_clock": "2026-10-02T00:00:00+00:00",
+  "fixture_only": true,
+  "stories": [
+    {
+      "id": "fixture-observatory",
+      "title": "Fictional observatory update — test fixture",
+      "published_at": "2026-10-01T12:00:00+00:00",
+      "sources": [{"url": "https://example.org/fixture-observatory", "text": "The fictional observatory opened its visitor center on Thursday. The test facility has two demonstration telescopes."}],
+      "claims": [
+        {"text": "The fictional observatory opened its visitor center on Thursday.", "source": 0},
+        {"text": "The test facility has two demonstration telescopes.", "source": 0}
+      ]
+    }
+  ]
+}

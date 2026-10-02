@@ -1,0 +1,98 @@
+﻿[
+    {
+        "text":  "What",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  4
+    },
+    {
+        "text":  "may",
+        "start":  0.265,
+        "index":  5,
+        "count":  3
+    },
+    {
+        "text":  "be",
+        "start":  0.435,
+        "index":  9,
+        "count":  2
+    },
+    {
+        "text":  "its",
+        "start":  0.61,
+        "index":  12,
+        "count":  3
+    },
+    {
+        "text":  "main",
+        "start":  0.79499999999999993,
+        "index":  16,
+        "count":  4
+    },
+    {
+        "text":  "body",
+        "start":  1.055,
+        "index":  21,
+        "count":  4
+    },
+    {
+        "text":  "was",
+        "start":  1.385,
+        "index":  26,
+        "count":  3
+    },
+    {
+        "text":  "located",
+        "start":  1.5799999999999998,
+        "index":  30,
+        "count":  7
+    },
+    {
+        "text":  "about",
+        "start":  2.0549999999999997,
+        "index":  38,
+        "count":  5
+    },
+    {
+        "text":  "two",
+        "start":  2.33,
+        "index":  44,
+        "count":  3
+    },
+    {
+        "text":  "hundred",
+        "start":  2.585,
+        "index":  48,
+        "count":  7
+    },
+    {
+        "text":  "to",
+        "start":  2.9899999999999998,
+        "index":  56,
+        "count":  2
+    },
+    {
+        "text":  "three",
+        "start":  3.09,
+        "index":  59,
+        "count":  5
+    },
+    {
+        "text":  "hundred",
+        "start":  3.3649999999999998,
+        "index":  65,
+        "count":  7
+    },
+    {
+        "text":  "meters",
+        "start":  3.77,
+        "index":  73,
+        "count":  6
+    },
+    {
+        "text":  "underwater",
+        "start":  4.1499999999999995,
+        "index":  80,
+        "count":  10
+    }
+]

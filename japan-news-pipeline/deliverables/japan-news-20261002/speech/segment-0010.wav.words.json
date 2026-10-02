@@ -1,0 +1,146 @@
+﻿[
+    {
+        "text":  "In",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  2
+    },
+    {
+        "text":  "its",
+        "start":  0.22499999999999998,
+        "index":  3,
+        "count":  3
+    },
+    {
+        "text":  "October",
+        "start":  0.38999999999999996,
+        "index":  7,
+        "count":  7
+    },
+    {
+        "text":  "first",
+        "start":  0.93499999999999994,
+        "index":  15,
+        "count":  5
+    },
+    {
+        "text":  "Tankan",
+        "start":  1.295,
+        "index":  21,
+        "count":  6
+    },
+    {
+        "text":  "release",
+        "start":  1.72,
+        "index":  28,
+        "count":  7
+    },
+    {
+        "text":  "the",
+        "start":  2.635,
+        "index":  37,
+        "count":  3
+    },
+    {
+        "text":  "Bank",
+        "start":  2.73,
+        "index":  41,
+        "count":  4
+    },
+    {
+        "text":  "of",
+        "start":  3.04,
+        "index":  46,
+        "count":  2
+    },
+    {
+        "text":  "Japan",
+        "start":  3.1599999999999997,
+        "index":  49,
+        "count":  5
+    },
+    {
+        "text":  "reported",
+        "start":  3.5999999999999996,
+        "index":  55,
+        "count":  8
+    },
+    {
+        "text":  "large",
+        "start":  4.1049999999999995,
+        "index":  64,
+        "count":  5
+    },
+    {
+        "text":  "manufacturers",
+        "start":  4.4449999999999994,
+        "index":  70,
+        "count":  13
+    },
+    {
+        "text":  "at",
+        "start":  5.435,
+        "index":  84,
+        "count":  2
+    },
+    {
+        "text":  "plus",
+        "start":  5.555,
+        "index":  87,
+        "count":  4
+    },
+    {
+        "text":  "twenty",
+        "start":  5.8549999999999995,
+        "index":  92,
+        "count":  6
+    },
+    {
+        "text":  "four",
+        "start":  6.225,
+        "index":  99,
+        "count":  4
+    },
+    {
+        "text":  "up",
+        "start":  7.0249999999999995,
+        "index":  105,
+        "count":  2
+    },
+    {
+        "text":  "from",
+        "start":  7.225,
+        "index":  108,
+        "count":  4
+    },
+    {
+        "text":  "plus",
+        "start":  7.46,
+        "index":  113,
+        "count":  4
+    },
+    {
+        "text":  "twenty",
+        "start":  7.76,
+        "index":  118,
+        "count":  6
+    },
+    {
+        "text":  "two",
+        "start":  8.129999999999999,
+        "index":  125,
+        "count":  3
+    },
+    {
+        "text":  "in",
+        "start":  8.385,
+        "index":  129,
+        "count":  2
+    },
+    {
+        "text":  "June",
+        "start":  8.535,
+        "index":  132,
+        "count":  4
+    }
+]

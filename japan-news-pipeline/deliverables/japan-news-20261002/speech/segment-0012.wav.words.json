@@ -1,0 +1,50 @@
+﻿[
+    {
+        "text":  "These",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "are",
+        "start":  0.33499999999999996,
+        "index":  6,
+        "count":  3
+    },
+    {
+        "text":  "sentiment",
+        "start":  0.445,
+        "index":  10,
+        "count":  9
+    },
+    {
+        "text":  "index",
+        "start":  0.965,
+        "index":  20,
+        "count":  5
+    },
+    {
+        "text":  "readings",
+        "start":  1.395,
+        "index":  26,
+        "count":  8
+    },
+    {
+        "text":  "not",
+        "start":  2.3,
+        "index":  36,
+        "count":  3
+    },
+    {
+        "text":  "growth",
+        "start":  2.56,
+        "index":  40,
+        "count":  6
+    },
+    {
+        "text":  "rates",
+        "start":  2.8899999999999997,
+        "index":  47,
+        "count":  5
+    }
+]

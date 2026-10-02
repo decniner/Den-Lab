@@ -1,0 +1,13 @@
+{
+  "reviewed_by": "REPLACE_WITH_REVIEWER_NAME",
+  "reviewed_at": "REPLACE_WITH_ISO_8601_TIMESTAMP_WITH_TIMEZONE",
+  "stories": [
+    {
+      "id": "REPLACE_WITH_STABLE_STORY_ID",
+      "title": "REPLACE_WITH_REVIEWED_TITLE",
+      "published_at": "REPLACE_WITH_SOURCE_PUBLICATION_TIME_WITH_TIMEZONE",
+      "sources": [{"url": "https://www.nasa.gov/REPLACE_WITH_ARTICLE_PATH"}],
+      "claims": [{"text": "REPLACE_WITH_EXACT_REVIEWED_SOURCE_SENTENCE", "source": 0}]
+    }
+  ]
+}

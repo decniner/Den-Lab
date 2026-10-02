@@ -1,0 +1,2 @@
+# Editorial checksums bind original bytes, including JSON line endings.
+deliverables/** -text

@@ -1,0 +1,35 @@
+{
+  "edition": "japan-news-20261002-en",
+  "checked_by": "assistant web source review; operator review remains pending",
+  "checked_at": "2026-10-02T14:19:31+00:00",
+  "fixture": false,
+  "sources": [
+    {
+      "id": "ap-drone",
+      "publisher": "Associated Press",
+      "published_at": "2026-10-02T09:53:28+00:00",
+      "title": "Japan air force starts recovery of crashed Global Hawk drone",
+      "url": "https://apnews.com/article/f1735811188fc4e3dfb3e5b2a4630187",
+      "access": "Full AP search result; direct page open unavailable",
+      "corroborating_url": "https://alpha.japantimes.co.jp/article/national_news/20261002/141178/",
+      "claim_review": "Recovery began Friday; missing in mid-September off Tottori; apparent fuselage at 200–300 meters. Retain the qualification 'may be'."
+    },
+    {
+      "id": "reuters-policy",
+      "publisher": "Reuters via CNA",
+      "published_date_tokyo": "2026-10-02",
+      "title": "Japan does not need excessively loose monetary policy, economy minister says",
+      "url": "https://www.channelnewsasia.com/business/japan-does-not-need-excessively-loose-monetary-policy-economy-minister-says-6425961",
+      "claim_review": "Attribute the deflation and loose-policy position to Kiuchi. Monetary policy belongs to BOJ. Do not imply a rate change was announced."
+    },
+    {
+      "id": "boj-tankan",
+      "publisher": "Bank of Japan",
+      "published_at": "2026-10-01T08:50:00+09:00",
+      "title": "Tankan Summary (September 2026)",
+      "url": "https://www.boj.or.jp/en/statistics/tk/gaiyo/2026/tka2609.pdf",
+      "page": 1,
+      "claim_review": "Business conditions table: large manufacturing June +22, September +24; large nonmanufacturing June +37, September +35. DI is favorable minus unfavorable, in percentage points; not GDP growth."
+    }
+  ]
+}

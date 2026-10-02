@@ -1,0 +1,22 @@
+stages: [upload]
+
+variables:
+  UPLOAD_MODE: "dry-run"
+  MORNING_UPLOAD_ENABLED: "false"
+
+youtube_private:
+  stage: upload
+  tags: [japan-news-windows]
+  resource_group: japan-news-channel
+  timeout: 20m
+  interruptible: false
+  retry: 0
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule" && $MORNING_UPLOAD_ENABLED == "true" && $CI_COMMIT_REF_PROTECTED == "true"'
+      variables:
+        UPLOAD_MODE: "morning"
+    - if: '$CI_PIPELINE_SOURCE == "web" && $CI_COMMIT_REF_PROTECTED == "true"'
+      when: manual
+    - when: never
+  script:
+    - powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/gitlab_morning.ps1

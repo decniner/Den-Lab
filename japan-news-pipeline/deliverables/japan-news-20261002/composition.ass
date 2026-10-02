@@ -1,0 +1,156 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Graphic,Arial,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,7,80,180,0,1
+Style: Caption,Arial,56,&H00FFFFFF,&H00FFFFFF,&H00100A05,&H00100A05,-1,0,0,0,100,100,0,0,1,4,1,2,95,190,400,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,120)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,240)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,360)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,480)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,600)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,720)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,840)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,960)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1080)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1200)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1320)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1440)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1560)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1680)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,1800)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1080 0 1080 1 0 1{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(0,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(120,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(240,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(360,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(480,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(600,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(720,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(840,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(960,0)\p1\1c&H352211&\bord0\shad0}m 0 0 l 1 0 1 1920 0 1920{\p0}
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,178)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 60 0 60 6 0 6{\p0}
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,112)\fs32\b1\1c&HFFFFFF&\bord0\shad0}JAPAN TODAY
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,214)\fs25\b0\1c&HCEB9A6&\bord0\shad0}02 OCT 2026
+Dialogue: 2,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1615)\fs23\b0\1c&HCEB9A6&\bord0\shad0}Synthetic narration  /  Original graphics
+Dialogue: 0,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1545)\p1\1c&H4F3823&\bord0\shad0}m 0 0 l 800 0 800 5 0 5{\p0}
+Dialogue: 1,0:00:00.00,0:01:20.00,Graphic,,0,0,0,,{\an7\pos(80,1545)\p1\1c&H5D55FC&\bord0\shad0\clip(80,1545,80,1550)\t(0,80000,\clip(80,1545,880,1550))}m 0 0 l 800 0 800 5 0 5{\p0}
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\move(104,315,80,315,0,250)\fad(120,100)\fs28\b1\1c&HC7DC4C&\bord0\shad0}THREE UPDATES
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\move(104,415,80,415,0,250)\fad(120,100)\fs82\b1\1c&HFFFFFF&\bord0\shad0}JAPAN\NIN 80 SECONDS
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\move(104,695,80,695,0,250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}DEFENSE  /  POLICY  /  BUSINESS
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\move(104,865,80,865,0,250)\fad(120,100)\fs120\b1\1c&H5D55FC&\bord0\shad0}01
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\move(299,910,275,910,0,250)\fad(120,100)\fs35\b1\1c&HFFFFFF&\bord0\shad0}DRONE RECOVERY
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\move(104,1050,80,1050,0,250)\fad(120,100)\fs120\b1\1c&HC7DC4C&\bord0\shad0}02
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\move(299,1095,275,1095,0,250)\fad(120,100)\fs35\b1\1c&HFFFFFF&\bord0\shad0}MONETARY POLICY
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\move(104,1235,80,1235,0,250)\fad(120,100)\fs120\b1\1c&H66D1FF&\bord0\shad0}03
+Dialogue: 2,0:00:00.00,0:00:06.00,Graphic,,0,0,0,,{\an7\move(299,1280,275,1280,0,250)\fad(120,100)\fs35\b1\1c&HFFFFFF&\bord0\shad0}BUSINESS MOOD
+Dialogue: 0,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\move(104,290,80,290,0,250)\fad(120,100)\fs27\b1\1c&H5D55FC&\bord0\shad0}01 / DEFENSE
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\move(104,375,80,375,0,250)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}DRONE\NRECOVERY BEGINS
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\move(144,650,120,650,0,250)\fad(120,100)\fs28\b1\1c&HC7DC4C&\bord0\shad0}OFF TOTTORI
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(120,745)\p1\1c&HC7DC4C&\bord0\shad0}m 0 0 l 710 0 710 3 0 3{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(130,766)\p1\1c&H745828&\bord0\shad0}m 0 0 l 42 0 42 1 0 1{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(210,766)\p1\1c&H745828&\bord0\shad0}m 0 0 l 42 0 42 1 0 1{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(290,766)\p1\1c&H745828&\bord0\shad0}m 0 0 l 42 0 42 1 0 1{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(370,766)\p1\1c&H745828&\bord0\shad0}m 0 0 l 42 0 42 1 0 1{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(450,766)\p1\1c&H745828&\bord0\shad0}m 0 0 l 42 0 42 1 0 1{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(530,766)\p1\1c&H745828&\bord0\shad0}m 0 0 l 42 0 42 1 0 1{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(610,766)\p1\1c&H745828&\bord0\shad0}m 0 0 l 42 0 42 1 0 1{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(690,766)\p1\1c&H745828&\bord0\shad0}m 0 0 l 42 0 42 1 0 1{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(770,766)\p1\1c&H745828&\bord0\shad0}m 0 0 l 42 0 42 1 0 1{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,790)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,820)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,850)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,880)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,910)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,940)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,970)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,1000)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,1030)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(730,1060)\p1\1c&H7B6149&\bord0\shad0}m 0 0 l 3 0 3 14 0 14{\p0}
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\move(144,835,120,835,0,250)\fad(120,100)\fs74\b1\1c&HFFFFFF&\bord0\shad0}200-300 m
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\move(144,940,120,940,0,250)\fad(120,100)\fs29\b0\1c&HCEB9A6&\bord0\shad0}Apparent fuselage depth
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\move(144,1120,120,1120,0,250)\fad(120,100)\fs22\b0\1c&HCEB9A6&\bord0\shad0}SCHEMATIC / NOT EVENT FOOTAGE
+Dialogue: 1,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\pos(150,1040)\p1\1c&HC7DC4C&\bord0\shad0\move(150,1030,170,1060,0,18000)}m 0 25 l 55 18 83 0 102 0 92 17 170 30 170 40 92 34 101 56 83 56 55 38 0 35{\p0}
+Dialogue: 2,0:00:06.00,0:00:25.00,Graphic,,0,0,0,,{\an7\move(104,1250,80,1250,0,250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: ASSOCIATED PRESS / OCT 2
+Dialogue: 0,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\move(104,290,80,290,0,250)\fad(120,100)\fs27\b1\1c&HC7DC4C&\bord0\shad0}02 / MONETARY POLICY
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\move(104,375,80,375,0,250)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}KIUCHI ON\NJAPAN'S POLICY
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\move(144,650,120,650,0,250)\fad(120,100)\fs24\b0\1c&HCEB9A6&\bord0\shad0}THE ECONOMY MINISTER'S VIEW
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\move(144,750,120,750,0,250)\fad(120,100)\fs61\b1\1c&HC7DC4C&\bord0\shad0}NO NEED FOR\NEXCESSIVELY\NLOOSE POLICY
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\move(144,1080,120,1080,0,250)\fad(120,100)\fs31\b1\1c&HFFFFFF&\bord0\shad0}Rate decisions: Bank of Japan
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\move(144,1140,120,1140,0,250)\fad(120,100)\fs24\b0\1c&HCEB9A6&\bord0\shad0}A statement / no new rate announcement
+Dialogue: 2,0:00:25.00,0:00:49.00,Graphic,,0,0,0,,{\an7\move(104,1250,80,1250,0,250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: REUTERS VIA CNA / OCT 2
+Dialogue: 0,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H382210&\bord0\shad0}m 0 0 l 800 0 800 585 0 585{\p0}
+Dialogue: 1,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(80,610)\p1\1c&H5D55FC&\bord0\shad0}m 0 0 l 7 0 7 585 0 585{\p0}
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(104,290,80,290,0,250)\fad(120,100)\fs27\b1\1c&H66D1FF&\bord0\shad0}03 / BUSINESS SENTIMENT
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(104,375,80,375,0,250)\fad(120,100)\fs72\b1\1c&HFFFFFF&\bord0\shad0}FACTORY MOOD\NIMPROVES
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(144,650,120,650,0,250)\fad(120,100)\fs26\b0\1c&HCEB9A6&\bord0\shad0}LARGE MANUFACTURERS
+Dialogue: 1,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(200,824)\p1\1c&H7B6149&\bord0\shad0\fad(250,120)}m 0 0 l 150 0 150 176 0 176{\p0}
+Dialogue: 1,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\pos(535,808)\p1\1c&HC7DC4C&\bord0\shad0\fad(250,120)}m 0 0 l 150 0 150 192 0 192{\p0}
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(224,730,200,730,0,250)\fad(120,100)\fs58\b1\1c&HFFFFFF&\bord0\shad0}+22
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(559,705,535,705,0,250)\fad(120,100)\fs70\b1\1c&HC7DC4C&\bord0\shad0}+24
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(224,1030,200,1030,0,250)\fad(120,100)\fs24\b0\1c&HCEB9A6&\bord0\shad0}JUNE
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(524,1030,500,1030,0,250)\fad(120,100)\fs24\b0\1c&HCEB9A6&\bord0\shad0}SEPTEMBER
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(144,1095,120,1095,0,250)\fad(120,100)\fs23\b0\1c&HCEB9A6&\bord0\shad0}LARGE NONMANUFACTURERS
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(144,1140,120,1140,0,250)\fad(120,100)\fs39\b1\1c&H66D1FF&\bord0\shad0}+37  >  +35
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(104,1250,80,1250,0,250)\fad(120,100)\fs25\b0\1c&HCEB9A6&\bord0\shad0}SOURCE: BANK OF JAPAN / OCT 1
+Dialogue: 2,0:00:49.00,0:01:15.00,Graphic,,0,0,0,,{\an7\move(104,1290,80,1290,0,250)\fad(120,100)\fs23\b0\1c&HCEB9A6&\bord0\shad0}Sentiment index readings / not growth rates
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\move(104,355,80,355,0,250)\fad(120,100)\fs59\b1\1c&HFFFFFF&\bord0\shad0}READ THE SOURCES
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\move(104,625,80,625,0,250)\fad(120,100)\fs45\b1\1c&H5D55FC&\bord0\shad0}ASSOCIATED PRESS
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\move(104,700,80,700,0,250)\fad(120,100)\fs29\b0\1c&HCEB9A6&\bord0\shad0}Drone recovery / October 2
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\move(104,860,80,860,0,250)\fad(120,100)\fs45\b1\1c&HC7DC4C&\bord0\shad0}REUTERS VIA CNA
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\move(104,935,80,935,0,250)\fad(120,100)\fs29\b0\1c&HCEB9A6&\bord0\shad0}Minister's remarks / October 2
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\move(104,1095,80,1095,0,250)\fad(120,100)\fs45\b1\1c&H66D1FF&\bord0\shad0}BANK OF JAPAN
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\move(104,1170,80,1170,0,250)\fad(120,100)\fs29\b0\1c&HCEB9A6&\bord0\shad0}Tankan survey / October 1
+Dialogue: 2,0:01:15.00,0:01:20.00,Graphic,,0,0,0,,{\an7\move(104,1325,80,1325,0,250)\fad(120,100)\fs26\b0\1c&HCEB9A6&\bord0\shad0}Links in the accompanying source notes
+Dialogue: 5,0:00:00.09,0:00:02.34,Caption,,0,0,0,,{\fad(35,35)}Japan news in eighty\Nseconds.
+Dialogue: 5,0:00:02.34,0:00:04.02,Caption,,0,0,0,,{\fad(35,35)}Here are three updates,\Nchecked
+Dialogue: 5,0:00:04.02,0:00:05.80,Caption,,0,0,0,,{\fad(35,35)}on October second.
+Dialogue: 5,0:00:06.10,0:00:08.52,Caption,,0,0,0,,{\fad(35,35)}First, Japan has begun\Nrecovering
+Dialogue: 5,0:00:08.52,0:00:10.19,Caption,,0,0,0,,{\fad(35,35)}a Global Hawk\Nsurveillance drone
+Dialogue: 5,0:00:10.19,0:00:12.42,Caption,,0,0,0,,{\fad(35,35)}from the sea off Tottori.
+Dialogue: 5,0:00:12.52,0:00:14.41,Caption,,0,0,0,,{\fad(35,35)}Associated Press reports\Nthat it
+Dialogue: 5,0:00:14.41,0:00:16.77,Caption,,0,0,0,,{\fad(35,35)}disappeared in mid\NSeptember.
+Dialogue: 5,0:00:16.88,0:00:17.85,Caption,,0,0,0,,{\fad(35,35)}What may be its main
+Dialogue: 5,0:00:17.85,0:00:19.41,Caption,,0,0,0,,{\fad(35,35)}body was located about\Ntwo
+Dialogue: 5,0:00:19.41,0:00:21.01,Caption,,0,0,0,,{\fad(35,35)}hundred to three hundred\Nmeters
+Dialogue: 5,0:00:21.01,0:00:22.50,Caption,,0,0,0,,{\fad(35,35)}underwater.
+Dialogue: 5,0:00:22.60,0:00:24.80,Caption,,0,0,0,,{\fad(35,35)}Details remain limited.
+Dialogue: 5,0:00:25.10,0:00:27.98,Caption,,0,0,0,,{\fad(35,35)}Second, Economy Minister\NMinoru Kiuchi
+Dialogue: 5,0:00:27.98,0:00:29.58,Caption,,0,0,0,,{\fad(35,35)}says Japan no longer\Nneeds
+Dialogue: 5,0:00:29.58,0:00:31.79,Caption,,0,0,0,,{\fad(35,35)}excessively loose\Nmonetary policy now
+Dialogue: 5,0:00:31.79,0:00:32.97,Caption,,0,0,0,,{\fad(35,35)}that it has moved beyond
+Dialogue: 5,0:00:32.97,0:00:34.38,Caption,,0,0,0,,{\fad(35,35)}deflation.
+Dialogue: 5,0:00:34.48,0:00:36.11,Caption,,0,0,0,,{\fad(35,35)}Reuters reports he\Nstressed that
+Dialogue: 5,0:00:36.11,0:00:37.78,Caption,,0,0,0,,{\fad(35,35)}interest rate decisions\Nbelong to
+Dialogue: 5,0:00:37.78,0:00:39.61,Caption,,0,0,0,,{\fad(35,35)}the Bank of Japan.
+Dialogue: 5,0:00:39.71,0:00:40.95,Caption,,0,0,0,,{\fad(35,35)}He declined to say\Nwhether
+Dialogue: 5,0:00:40.95,0:00:42.65,Caption,,0,0,0,,{\fad(35,35)}the government opposed\Nadditional rate
+Dialogue: 5,0:00:42.65,0:00:44.11,Caption,,0,0,0,,{\fad(35,35)}increases.
+Dialogue: 5,0:00:44.21,0:00:46.04,Caption,,0,0,0,,{\fad(35,35)}That is a minister's\Nposition,
+Dialogue: 5,0:00:46.04,0:00:47.30,Caption,,0,0,0,,{\fad(35,35)}not a new central bank
+Dialogue: 5,0:00:47.30,0:00:48.80,Caption,,0,0,0,,{\fad(35,35)}rate decision.
+Dialogue: 5,0:00:49.10,0:00:52.04,Caption,,0,0,0,,{\fad(35,35)}Third, business sentiment\Nis mixed.
+Dialogue: 5,0:00:52.14,0:00:53.69,Caption,,0,0,0,,{\fad(35,35)}In its October first\NTankan
+Dialogue: 5,0:00:53.69,0:00:55.50,Caption,,0,0,0,,{\fad(35,35)}release, the Bank of\NJapan
+Dialogue: 5,0:00:55.50,0:00:57.66,Caption,,0,0,0,,{\fad(35,35)}reported large\Nmanufacturers at plus
+Dialogue: 5,0:00:57.66,0:00:59.49,Caption,,0,0,0,,{\fad(35,35)}twenty four, up from plus
+Dialogue: 5,0:00:59.49,0:01:01.34,Caption,,0,0,0,,{\fad(35,35)}twenty two in June.
+Dialogue: 5,0:01:01.43,0:01:03.39,Caption,,0,0,0,,{\fad(35,35)}Large nonmanufacturers\Nslipped from
+Dialogue: 5,0:01:03.39,0:01:04.79,Caption,,0,0,0,,{\fad(35,35)}plus thirty seven to plus
+Dialogue: 5,0:01:04.79,0:01:06.22,Caption,,0,0,0,,{\fad(35,35)}thirty five.
+Dialogue: 5,0:01:06.32,0:01:08.43,Caption,,0,0,0,,{\fad(35,35)}These are sentiment index\Nreadings,
+Dialogue: 5,0:01:08.43,0:01:10.15,Caption,,0,0,0,,{\fad(35,35)}not growth rates.
+Dialogue: 5,0:01:10.25,0:01:12.25,Caption,,0,0,0,,{\fad(35,35)}The survey measures\Nfavorable responses
+Dialogue: 5,0:01:12.25,0:01:14.80,Caption,,0,0,0,,{\fad(35,35)}minus unfavorable\Nresponses.
+Dialogue: 5,0:01:15.10,0:01:18.05,Caption,,0,0,0,,{\fad(35,35)}Sources: Associated\NPress, Reuters, and
+Dialogue: 5,0:01:18.05,0:01:19.80,Caption,,0,0,0,,{\fad(35,35)}the Bank of Japan.

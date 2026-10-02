@@ -1,0 +1,56 @@
+﻿[
+    {
+        "text":  "Associated",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  10
+    },
+    {
+        "text":  "Press",
+        "start":  0.815,
+        "index":  11,
+        "count":  5
+    },
+    {
+        "text":  "reports",
+        "start":  1.175,
+        "index":  17,
+        "count":  7
+    },
+    {
+        "text":  "that",
+        "start":  1.6849999999999998,
+        "index":  25,
+        "count":  4
+    },
+    {
+        "text":  "it",
+        "start":  1.8399999999999999,
+        "index":  30,
+        "count":  2
+    },
+    {
+        "text":  "disappeared",
+        "start":  1.9549999999999998,
+        "index":  33,
+        "count":  11
+    },
+    {
+        "text":  "in",
+        "start":  2.5349999999999997,
+        "index":  45,
+        "count":  2
+    },
+    {
+        "text":  "mid",
+        "start":  2.65,
+        "index":  48,
+        "count":  3
+    },
+    {
+        "text":  "September",
+        "start":  2.8449999999999998,
+        "index":  52,
+        "count":  9
+    }
+]

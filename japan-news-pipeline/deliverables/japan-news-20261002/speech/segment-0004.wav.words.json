@@ -1,0 +1,20 @@
+﻿[
+    {
+        "text":  "Details",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  7
+    },
+    {
+        "text":  "remain",
+        "start":  0.64,
+        "index":  8,
+        "count":  6
+    },
+    {
+        "text":  "limited",
+        "start":  1.03,
+        "index":  15,
+        "count":  7
+    }
+]

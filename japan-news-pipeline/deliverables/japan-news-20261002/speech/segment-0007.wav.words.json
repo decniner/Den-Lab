@@ -1,0 +1,68 @@
+﻿[
+    {
+        "text":  "He",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  2
+    },
+    {
+        "text":  "declined",
+        "start":  0.24,
+        "index":  3,
+        "count":  8
+    },
+    {
+        "text":  "to",
+        "start":  0.725,
+        "index":  12,
+        "count":  2
+    },
+    {
+        "text":  "say",
+        "start":  0.80999999999999994,
+        "index":  15,
+        "count":  3
+    },
+    {
+        "text":  "whether",
+        "start":  1.05,
+        "index":  19,
+        "count":  7
+    },
+    {
+        "text":  "the",
+        "start":  1.3399999999999999,
+        "index":  27,
+        "count":  3
+    },
+    {
+        "text":  "government",
+        "start":  1.4449999999999998,
+        "index":  31,
+        "count":  10
+    },
+    {
+        "text":  "opposed",
+        "start":  1.89,
+        "index":  42,
+        "count":  7
+    },
+    {
+        "text":  "additional",
+        "start":  2.31,
+        "index":  50,
+        "count":  10
+    },
+    {
+        "text":  "rate",
+        "start":  2.8,
+        "index":  61,
+        "count":  4
+    },
+    {
+        "text":  "increases",
+        "start":  3.04,
+        "index":  66,
+        "count":  9
+    }
+]

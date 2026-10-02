@@ -1,0 +1,80 @@
+﻿[
+    {
+        "text":  "Japan",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "news",
+        "start":  0.5,
+        "index":  6,
+        "count":  4
+    },
+    {
+        "text":  "in",
+        "start":  0.76,
+        "index":  11,
+        "count":  2
+    },
+    {
+        "text":  "eighty",
+        "start":  0.88,
+        "index":  14,
+        "count":  6
+    },
+    {
+        "text":  "seconds",
+        "start":  1.105,
+        "index":  21,
+        "count":  7
+    },
+    {
+        "text":  "Here",
+        "start":  2.625,
+        "index":  30,
+        "count":  4
+    },
+    {
+        "text":  "are",
+        "start":  2.885,
+        "index":  35,
+        "count":  3
+    },
+    {
+        "text":  "three",
+        "start":  2.9899999999999998,
+        "index":  39,
+        "count":  5
+    },
+    {
+        "text":  "updates",
+        "start":  3.235,
+        "index":  45,
+        "count":  7
+    },
+    {
+        "text":  "checked",
+        "start":  4.22,
+        "index":  54,
+        "count":  7
+    },
+    {
+        "text":  "on",
+        "start":  4.51,
+        "index":  62,
+        "count":  2
+    },
+    {
+        "text":  "October",
+        "start":  4.675,
+        "index":  65,
+        "count":  7
+    },
+    {
+        "text":  "second",
+        "start":  5.22,
+        "index":  73,
+        "count":  6
+    }
+]

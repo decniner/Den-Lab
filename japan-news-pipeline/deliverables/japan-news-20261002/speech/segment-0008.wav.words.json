@@ -1,0 +1,74 @@
+﻿[
+    {
+        "text":  "That",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  4
+    },
+    {
+        "text":  "is",
+        "start":  0.27999999999999997,
+        "index":  5,
+        "count":  2
+    },
+    {
+        "text":  "a",
+        "start":  0.40499999999999997,
+        "index":  8,
+        "count":  1
+    },
+    {
+        "text":  "minister\u0027s",
+        "start":  0.45499999999999996,
+        "index":  10,
+        "count":  10
+    },
+    {
+        "text":  "position",
+        "start":  0.965,
+        "index":  21,
+        "count":  8
+    },
+    {
+        "text":  "not",
+        "start":  1.9349999999999998,
+        "index":  31,
+        "count":  3
+    },
+    {
+        "text":  "a",
+        "start":  2.1599999999999997,
+        "index":  35,
+        "count":  1
+    },
+    {
+        "text":  "new",
+        "start":  2.215,
+        "index":  37,
+        "count":  3
+    },
+    {
+        "text":  "central",
+        "start":  2.425,
+        "index":  41,
+        "count":  7
+    },
+    {
+        "text":  "bank",
+        "start":  2.855,
+        "index":  49,
+        "count":  4
+    },
+    {
+        "text":  "rate",
+        "start":  3.195,
+        "index":  54,
+        "count":  4
+    },
+    {
+        "text":  "decision",
+        "start":  3.405,
+        "index":  59,
+        "count":  8
+    }
+]

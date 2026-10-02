@@ -1,0 +1,68 @@
+﻿[
+    {
+        "text":  "Large",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "nonmanufacturers",
+        "start":  0.44999999999999996,
+        "index":  6,
+        "count":  16
+    },
+    {
+        "text":  "slipped",
+        "start":  1.545,
+        "index":  23,
+        "count":  7
+    },
+    {
+        "text":  "from",
+        "start":  1.9,
+        "index":  31,
+        "count":  4
+    },
+    {
+        "text":  "plus",
+        "start":  2.135,
+        "index":  36,
+        "count":  4
+    },
+    {
+        "text":  "thirty",
+        "start":  2.465,
+        "index":  41,
+        "count":  6
+    },
+    {
+        "text":  "seven",
+        "start":  2.78,
+        "index":  48,
+        "count":  5
+    },
+    {
+        "text":  "to",
+        "start":  3.145,
+        "index":  54,
+        "count":  2
+    },
+    {
+        "text":  "plus",
+        "start":  3.2449999999999997,
+        "index":  57,
+        "count":  4
+    },
+    {
+        "text":  "thirty",
+        "start":  3.5999999999999996,
+        "index":  62,
+        "count":  6
+    },
+    {
+        "text":  "five",
+        "start":  3.9,
+        "index":  69,
+        "count":  4
+    }
+]

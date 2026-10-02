@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+.tools/
+state/
+client_secrets.json
+token.json
+config.json
+*.log

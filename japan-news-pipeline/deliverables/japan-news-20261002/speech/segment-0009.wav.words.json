@@ -1,0 +1,32 @@
+﻿[
+    {
+        "text":  "Third",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  5
+    },
+    {
+        "text":  "business",
+        "start":  0.89,
+        "index":  7,
+        "count":  8
+    },
+    {
+        "text":  "sentiment",
+        "start":  1.29,
+        "index":  16,
+        "count":  9
+    },
+    {
+        "text":  "is",
+        "start":  1.78,
+        "index":  26,
+        "count":  2
+    },
+    {
+        "text":  "mixed",
+        "start":  1.9149999999999998,
+        "index":  29,
+        "count":  5
+    }
+]

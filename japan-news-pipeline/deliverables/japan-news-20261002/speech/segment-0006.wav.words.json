@@ -1,0 +1,86 @@
+﻿[
+    {
+        "text":  "Reuters",
+        "start":  0.099999999999999992,
+        "index":  0,
+        "count":  7
+    },
+    {
+        "text":  "reports",
+        "start":  0.515,
+        "index":  8,
+        "count":  7
+    },
+    {
+        "text":  "he",
+        "start":  0.98,
+        "index":  16,
+        "count":  2
+    },
+    {
+        "text":  "stressed",
+        "start":  1.1099999999999999,
+        "index":  19,
+        "count":  8
+    },
+    {
+        "text":  "that",
+        "start":  1.525,
+        "index":  28,
+        "count":  4
+    },
+    {
+        "text":  "interest",
+        "start":  1.7249999999999999,
+        "index":  33,
+        "count":  8
+    },
+    {
+        "text":  "rate",
+        "start":  2.1999999999999997,
+        "index":  42,
+        "count":  4
+    },
+    {
+        "text":  "decisions",
+        "start":  2.395,
+        "index":  47,
+        "count":  9
+    },
+    {
+        "text":  "belong",
+        "start":  2.92,
+        "index":  57,
+        "count":  6
+    },
+    {
+        "text":  "to",
+        "start":  3.3049999999999997,
+        "index":  64,
+        "count":  2
+    },
+    {
+        "text":  "the",
+        "start":  3.405,
+        "index":  67,
+        "count":  3
+    },
+    {
+        "text":  "Bank",
+        "start":  3.4949999999999997,
+        "index":  71,
+        "count":  4
+    },
+    {
+        "text":  "of",
+        "start":  3.8049999999999997,
+        "index":  76,
+        "count":  2
+    },
+    {
+        "text":  "Japan",
+        "start":  3.925,
+        "index":  79,
+        "count":  5
+    }
+]

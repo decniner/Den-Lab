@@ -1,0 +1,254 @@
+[
+  {
+    "start": 0.08909370199692779,
+    "end": 2.3387096774193545,
+    "text": "Japan news in eighty seconds.",
+    "story": "intro"
+  },
+  {
+    "start": 2.3387096774193545,
+    "end": 4.018125960061443,
+    "text": "Here are three updates, checked",
+    "story": "intro"
+  },
+  {
+    "start": 4.018125960061443,
+    "end": 5.8,
+    "text": "on October second.",
+    "story": "intro"
+  },
+  {
+    "start": 6.101979929481963,
+    "end": 8.518904258204502,
+    "text": "First, Japan has begun recovering",
+    "story": "drone"
+  },
+  {
+    "start": 8.518904258204502,
+    "end": 10.191375101708706,
+    "text": "a Global Hawk surveillance drone",
+    "story": "drone"
+  },
+  {
+    "start": 10.191375101708706,
+    "end": 12.419636560889613,
+    "text": "from the sea off Tottori.",
+    "story": "drone"
+  },
+  {
+    "start": 12.521616490371576,
+    "end": 14.413344182262001,
+    "text": "Associated Press reports that it",
+    "story": "drone"
+  },
+  {
+    "start": 14.413344182262001,
+    "end": 16.77417954976946,
+    "text": "disappeared in mid September.",
+    "story": "drone"
+  },
+  {
+    "start": 16.876159479251424,
+    "end": 17.850067805804176,
+    "text": "What may be its main",
+    "story": "drone"
+  },
+  {
+    "start": 17.850067805804176,
+    "end": 19.41036072687822,
+    "text": "body was located about two",
+    "story": "drone"
+  },
+  {
+    "start": 19.41036072687822,
+    "end": 21.00634662327095,
+    "text": "hundred to three hundred meters",
+    "story": "drone"
+  },
+  {
+    "start": 21.00634662327095,
+    "end": 22.50035259018172,
+    "text": "underwater.",
+    "story": "drone"
+  },
+  {
+    "start": 22.602332519663683,
+    "end": 24.8,
+    "text": "Details remain limited.",
+    "story": "drone"
+  },
+  {
+    "start": 25.099958000839983,
+    "end": 27.983746325073497,
+    "text": "Second, Economy Minister Minoru Kiuchi",
+    "story": "policy"
+  },
+  {
+    "start": 27.983746325073497,
+    "end": 29.57807643847123,
+    "text": "says Japan no longer needs",
+    "story": "policy"
+  },
+  {
+    "start": 29.57807643847123,
+    "end": 31.792146157076857,
+    "text": "excessively loose monetary policy now",
+    "story": "policy"
+  },
+  {
+    "start": 31.792146157076857,
+    "end": 32.96665266694666,
+    "text": "that it has moved beyond",
+    "story": "policy"
+  },
+  {
+    "start": 32.96665266694666,
+    "end": 34.38105837883242,
+    "text": "deflation.",
+    "story": "policy"
+  },
+  {
+    "start": 34.481016379672404,
+    "end": 36.10533389332213,
+    "text": "Reuters reports he stressed that",
+    "story": "policy"
+  },
+  {
+    "start": 36.10533389332213,
+    "end": 37.78462830743385,
+    "text": "interest rate decisions belong to",
+    "story": "policy"
+  },
+  {
+    "start": 37.78462830743385,
+    "end": 39.61385972280554,
+    "text": "the Bank of Japan.",
+    "story": "policy"
+  },
+  {
+    "start": 39.713817723645526,
+    "end": 40.95329693406132,
+    "text": "He declined to say whether",
+    "story": "policy"
+  },
+  {
+    "start": 40.95329693406132,
+    "end": 42.652582948341035,
+    "text": "the government opposed additional rate",
+    "story": "policy"
+  },
+  {
+    "start": 42.652582948341035,
+    "end": 44.10697186056279,
+    "text": "increases.",
+    "story": "policy"
+  },
+  {
+    "start": 44.20692986140277,
+    "end": 46.041159176816464,
+    "text": "That is a minister's position,",
+    "story": "policy"
+  },
+  {
+    "start": 46.041159176816464,
+    "end": 47.30062998740025,
+    "text": "not a new central bank",
+    "story": "policy"
+  },
+  {
+    "start": 47.30062998740025,
+    "end": 48.8,
+    "text": "rate decision.",
+    "story": "policy"
+  },
+  {
+    "start": 49.09603573422669,
+    "end": 52.039530988274706,
+    "text": "Third, business sentiment is mixed.",
+    "story": "tankan"
+  },
+  {
+    "start": 52.135566722501395,
+    "end": 53.691345616973756,
+    "text": "In its October first Tankan",
+    "story": "tankan"
+  },
+  {
+    "start": 53.691345616973756,
+    "end": 55.49681742043551,
+    "text": "release, the Bank of Japan",
+    "story": "tankan"
+  },
+  {
+    "start": 55.49681742043551,
+    "end": 57.662423227247345,
+    "text": "reported large manufacturers at plus",
+    "story": "tankan"
+  },
+  {
+    "start": 57.662423227247345,
+    "end": 59.491903964265774,
+    "text": "twenty four, up from plus",
+    "story": "tankan"
+  },
+  {
+    "start": 59.491903964265774,
+    "end": 61.3357900614182,
+    "text": "twenty two in June.",
+    "story": "tankan"
+  },
+  {
+    "start": 61.43182579564489,
+    "end": 63.38615298715801,
+    "text": "Large nonmanufacturers slipped from",
+    "story": "tankan"
+  },
+  {
+    "start": 63.38615298715801,
+    "end": 64.79307649357901,
+    "text": "plus thirty seven to plus",
+    "story": "tankan"
+  },
+  {
+    "start": 64.79307649357901,
+    "end": 66.21920714684533,
+    "text": "thirty five.",
+    "story": "tankan"
+  },
+  {
+    "start": 66.31524288107202,
+    "end": 68.42802903405918,
+    "text": "These are sentiment index readings,",
+    "story": "tankan"
+  },
+  {
+    "start": 68.42802903405918,
+    "end": 70.15187046342825,
+    "text": "not growth rates.",
+    "story": "tankan"
+  },
+  {
+    "start": 70.24790619765494,
+    "end": 72.2502512562814,
+    "text": "The survey measures favorable responses",
+    "story": "tankan"
+  },
+  {
+    "start": 72.2502512562814,
+    "end": 74.8,
+    "text": "minus unfavorable responses.",
+    "story": "tankan"
+  },
+  {
+    "start": 75.0964824120603,
+    "end": 78.04884422110553,
+    "text": "Sources: Associated Press, Reuters, and",
+    "story": "outro"
+  },
+  {
+    "start": 78.04884422110553,
+    "end": 79.8,
+    "text": "the Bank of Japan.",
+    "story": "outro"
+  }
+]
