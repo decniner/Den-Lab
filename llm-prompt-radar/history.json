@@ -7,7 +7,7 @@
       "original_url": "https://github.com/NirDiamant/Prompt_Engineering",
       "author": "NirDiamant",
       "discovery_date": "2026-10-01",
-      "publication_date": "2026-10-01",
+      "publication_date": "2026-10-02",
       "category": "Software Engineering",
       "model": "Not specified",
       "observations": [
@@ -25,38 +25,38 @@
       ],
       "cluster_id": "51a12f3d199953542c544442",
       "engagement_metrics": {
-        "stars": 7883,
-        "stars_per_day_since_repo_creation": 10.926,
+        "stars": 7884,
+        "stars_per_day_since_repo_creation": 10.921,
         "engagement_components": {
-          "stars": 7883
+          "stars": 7884
         },
         "repository": "NirDiamant/Prompt_Engineering",
         "license": "NOASSERTION",
-        "age_hours": 17316.5,
+        "age_hours": 17326.0,
         "date_basis": "repository last updated; exact prompt publication date unavailable",
         "quality_filter": "passed heuristic quality filters",
         "component_velocity_per_hour": {
-          "stars": 0.4552
+          "stars": 0.1054
         },
-        "velocity_basis": "first observation; total source interactions divided by item age in hours",
-        "source_velocity_per_hour": 0.4552,
+        "velocity_basis": "observed 1 additional source interactions over 9.5h",
+        "source_velocity_per_hour": 0.1054,
         "source_sightings": 1,
         "duplicate_cluster_size": 1,
         "normalized_scores": {
           "engagement": 0.5,
-          "trending": 0.078,
+          "trending": 0.021,
           "positive": 0.5,
-          "recency": 0.999,
+          "recency": 0.998,
           "usefulness": 0.62
         },
-        "composite_score": 0.481
+        "composite_score": 0.467
       },
       "rating": null,
       "rating_count": 0,
-      "calculated_score": 0.48140526040736276,
-      "trending_score": 0.07822784279088661,
+      "calculated_score": 0.46689377142564714,
+      "trending_score": 0.020899373226349598,
       "quality_score": 0.62,
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-02",
       "notification_date": "2026-10-01"
     }
   },
