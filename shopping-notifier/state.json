@@ -96,12 +96,36 @@
       "reference_price": "19800",
       "sent_at": "2026-10-03T17:07:35+09:00",
       "url": "https://shaka-jp.com/products/sk-305-25ss-wander-around-sxl?variant=43627198677174"
+    },
+    "shaka:8101572640950:43592456077494": {
+      "sale_price": "8800",
+      "reference_price": "17600",
+      "sent_at": "2026-10-03T17:07:36+09:00",
+      "url": "https://shaka-jp.com/products/sk-238-25ss-neo-bungy-ex?variant=43592456077494"
+    },
+    "shaka:8101572575414:43592432976054": {
+      "sale_price": "7975",
+      "reference_price": "15950",
+      "sent_at": "2026-10-03T17:07:36+09:00",
+      "url": "https://shaka-jp.com/products/sk-185v2-25ss-chill-out-sf?variant=43592432976054"
+    },
+    "shaka:8101572804790:43592505983158": {
+      "sale_price": "7700",
+      "reference_price": "15400",
+      "sent_at": "2026-10-03T17:07:36+09:00",
+      "url": "https://shaka-jp.com/products/sk-247-25ss-neo-rally-slide-chunky?variant=43592505983158"
+    },
+    "shaka:8101573099702:43593377153206": {
+      "sale_price": "7700",
+      "reference_price": "15400",
+      "sent_at": "2026-10-03T17:07:36+09:00",
+      "url": "https://shaka-jp.com/products/sk-302v2-25ss-khazana-thong-ex?variant=43593377153206"
     }
   },
   "last_digest": {
     "date": "2026-10-03",
-    "coverage_key": "f5abce0beb1beee550841ea3cbeabd83b2a4bbdb64c6a30189bb108dd89bf4ac",
-    "completed_at": "2026-10-03T16:20:29+09:00",
-    "digest_hash": "5686f50c5f597386c652ea9c0015b89c9aae2339ea6433d87201eb455e0a9e1b"
+    "coverage_key": "42ad60391c9ed7382473c890c6bcc512cf4f2b653b21257e5a4a4a14922b9344",
+    "completed_at": "2026-10-03T17:07:36+09:00",
+    "digest_hash": "ab80ad337c0724ee128ed0e3a2d0ed6eb4515308f060dc40b10ec68610e39935"
   }
 }
