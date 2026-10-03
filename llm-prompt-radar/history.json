@@ -7,7 +7,7 @@
       "original_url": "https://github.com/NirDiamant/Prompt_Engineering",
       "author": "NirDiamant",
       "discovery_date": "2026-10-01",
-      "publication_date": "2026-10-02",
+      "publication_date": "2026-10-03",
       "category": "Software Engineering",
       "model": "Not specified",
       "observations": [
@@ -36,36 +36,38 @@
       ],
       "cluster_id": "51a12f3d199953542c544442",
       "engagement_metrics": {
-        "stars": 7886,
-        "stars_per_day_since_repo_creation": 10.909,
+        "stars": 7887,
+        "stars_per_day_since_repo_creation": 10.9,
         "engagement_components": {
-          "stars": 7886
+          "stars": 7887
         },
         "repository": "NirDiamant/Prompt_Engineering",
         "license": "NOASSERTION",
-        "age_hours": 17349.4,
+        "age_hours": 17366.2,
         "date_basis": "repository last updated; exact prompt publication date unavailable",
         "quality_filter": "passed heuristic quality filters",
         "component_velocity_per_hour": {
-          "stars": 0.0912
+          "stars": 0.0596
         },
-        "velocity_basis": "observed 3 additional source interactions over 32.9h",
-        "source_velocity_per_hour": 0.0912,
+        "velocity_basis": "observed 1 additional source interactions over 16.8h",
+        "source_velocity_per_hour": 0.0596,
+        "velocity_multiple": 0.22,
+        "normal_velocity_per_hour": 0.2732,
         "source_sightings": 1,
         "duplicate_cluster_size": 1,
         "normalized_scores": {
           "engagement": 0.5,
-          "trending": 0.018,
+          "trending": 0.012,
           "positive": 0.5,
-          "recency": 0.987,
+          "recency": 0.994,
           "usefulness": 0.62
         },
-        "composite_score": 0.465
+        "composite_score": 0.464
       },
       "rating": null,
       "rating_count": 0,
-      "calculated_score": 0.4645791405572622,
-      "trending_score": 0.018201590086052995,
+      "calculated_score": 0.4640987207336057,
+      "trending_score": 0.012077467663221436,
       "quality_score": 0.62,
       "last_seen": "2026-10-03",
       "notification_date": "2026-10-01"
