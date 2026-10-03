@@ -79,8 +79,23 @@ def main(argv=None):
     p.add_argument('--private-audio-waiver',help='Explicit owner authorization to upload privately without a listening check; never authorizes public publishing.')
     p=sub.add_parser('publish-approved'); p.add_argument('--edition',required=True); p.add_argument('--approve-render',required=True)
     p=sub.add_parser('oauth-setup'); p.add_argument('--client-secrets',required=True); p.add_argument('--token',default='token.json')
+    for name in ('speech-voices','voice-previews'):
+        p=sub.add_parser(name); p.add_argument('--output',default='voice-previews')
+    p=sub.add_parser('select-voice'); p.add_argument('--preview',required=True); p.add_argument('--approve-preview',required=True)
+    p.add_argument('--preview-root',default='voice-previews'); p.add_argument('--selection',default='voice-selection.json')
     args=parser.parse_args(argv); store=None
     try:
+        if args.command in ('speech-voices','voice-previews','select-voice'):
+            from . import speech
+            config=research.read(args.config)
+            if args.command=='speech-voices':
+                result=speech.voice_list(config,args.output); log('neural_voices_retrieved',provider=config['tts_provider'],voices=len(result),output=str(Path(args.output)/'voices.json'))
+            elif args.command=='voice-previews':
+                result=speech.previews(config,args.output); log('neural_previews_saved',**result)
+            else:
+                result=speech.select_preview(config,args.preview,args.approve_preview,args.preview_root,args.selection)
+                log('voice_selected',provider=result['provider'],voice=result['voice'],settings=result['settings'],selection=args.selection,full_regeneration='not started')
+            return 0
         if args.command=='oauth-setup':
             youtube.oauth(args.client_secrets,args.token); log('oauth_saved',token_file=args.token); return 0
         store=Store(args.state_root,args.edition)

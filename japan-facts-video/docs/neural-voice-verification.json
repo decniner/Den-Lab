@@ -1,0 +1,32 @@
+{
+  "verified_at": "2026-10-03T00:54:02+00:00",
+  "tests_passed": 69,
+  "fixture_dry_run": "passed; speech/render/upload skipped",
+  "live_provider": "edge-tts",
+  "available_voices": 322,
+  "previews": [
+    {
+      "voice": "en-US-JennyNeural",
+      "duration": 25.488,
+      "sha256": "f5828b17e8440c3162e9ed5e111e0954f63d308f2d754a9db27f613434b31baf",
+      "decoded_pcm": true
+    },
+    {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "duration": 23.976,
+      "sha256": "5173119d391f2f157f0f645486b1dd83d29b1cc3096b71dead3bd5c51192d4b8",
+      "decoded_pcm": true
+    },
+    {
+      "voice": "en-US-GuyNeural",
+      "duration": 25.416,
+      "sha256": "abb40e4d5c8e092e0e3176ee3fa82399b038498aa98df9417a31e9c0b2c3fdb0",
+      "decoded_pcm": true
+    }
+  ],
+  "azure_live": "blocked: missing credentials",
+  "listening_assessment": "pending user listening",
+  "new_video_rendered": false,
+  "youtube_upload_attempted": false,
+  "paid_jobs": 0
+}

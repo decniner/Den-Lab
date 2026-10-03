@@ -25,6 +25,7 @@ def review_hash(pack):
 def check_providers(config):
     expected={'research_provider':'reviewed-catalog','script_provider':'reviewed-template','tts_provider':'windows-sapi'}
     for key,value in expected.items():
+        if key=='tts_provider' and config.get(key,value) in ('azure-speech','edge-tts'): continue
         if key=='research_provider' and config.get(key,value)=='reviewed-snapshot': continue
         if config.get(key,value)!=value:
             raise Failure(f'Unsupported or paid {key}. No job started; configure the documented local provider.')
