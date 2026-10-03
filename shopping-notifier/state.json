@@ -64,8 +64,8 @@
   },
   "last_digest": {
     "date": "2026-10-03",
-    "coverage_key": "6b0a39200368f42b552342f3cd406bfed484bb4eca0274c92d5d72165ec0017d",
-    "completed_at": "2026-10-03T16:15:58+09:00",
-    "digest_hash": "9e2ab1f1265b8e248fcf17b61b306cce749dc89047f145333a88e806d48be200"
+    "coverage_key": "f5abce0beb1beee550841ea3cbeabd83b2a4bbdb64c6a30189bb108dd89bf4ac",
+    "completed_at": "2026-10-03T16:20:29+09:00",
+    "digest_hash": "5686f50c5f597386c652ea9c0015b89c9aae2339ea6433d87201eb455e0a9e1b"
   }
 }
