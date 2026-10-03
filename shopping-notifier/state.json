@@ -60,6 +60,42 @@
       "reference_price": "5998",
       "sent_at": "2026-10-03T16:15:58+09:00",
       "url": "https://classicalelf.shop/products/jm1050364?variant=47548515713245"
+    },
+    "classicalelf:9401365561565:47543862657245": {
+      "sale_price": "2998",
+      "reference_price": "7999",
+      "sent_at": "2026-10-03T17:07:35+09:00",
+      "url": "https://classicalelf.shop/products/jv1417002?variant=47543862657245"
+    },
+    "classicalelf:9402481344733:47548590391517": {
+      "sale_price": "2987",
+      "reference_price": "6999",
+      "sent_at": "2026-10-03T17:07:35+09:00",
+      "url": "https://classicalelf.shop/products/ce1417001?variant=47548590391517"
+    },
+    "classicalelf:9401365594333:47543863050461": {
+      "sale_price": "3699",
+      "reference_price": "7999",
+      "sent_at": "2026-10-03T17:07:35+09:00",
+      "url": "https://classicalelf.shop/products/jv1417003?variant=47543863050461"
+    },
+    "classicalelf:9402481508573:47548592095453": {
+      "sale_price": "3699",
+      "reference_price": "7999",
+      "sent_at": "2026-10-03T17:07:35+09:00",
+      "url": "https://classicalelf.shop/products/jm1417003?variant=47548592095453"
+    },
+    "shaka:7720238219446:42517030863030": {
+      "sale_price": "10450",
+      "reference_price": "20900",
+      "sent_at": "2026-10-03T17:07:35+09:00",
+      "url": "https://shaka-jp.com/products/sk-265-24ss-hike-purse-ex?variant=42517030863030"
+    },
+    "shaka:8110497431734:43627198677174": {
+      "sale_price": "9900",
+      "reference_price": "19800",
+      "sent_at": "2026-10-03T17:07:35+09:00",
+      "url": "https://shaka-jp.com/products/sk-305-25ss-wander-around-sxl?variant=43627198677174"
     }
   },
   "last_digest": {
