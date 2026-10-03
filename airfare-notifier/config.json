@@ -1,0 +1,11 @@
+{
+  "departure_months_min": 6,
+  "departure_months_max": 12,
+  "nights_min": 9,
+  "nights_max": 20,
+  "threshold_jpy": 25000,
+  "samples_per_day": 6,
+  "daily_summary": false,
+  "request_timeout_seconds": 45,
+  "request_attempts": 2
+}
