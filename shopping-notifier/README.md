@@ -19,7 +19,8 @@ python shopping-notifier/notifier.py
 
 In **GitHub Actions → Japan shopping discount notifier → Run workflow**, select:
 
-- **electronics_only**: for this manual run, scan Anker, Keychron, and UGREEN only; the daily schedule keeps its full coverage.
+- **electronics_and_shoes**: for this manual run, include the electronics stores, SHAKA, and shoe products from Classical Elf; clothing is excluded. Exact available sizes are shown.
+- **electronics_only**: for this manual run, scan Anker, Keychron, UGREEN, Edifier, and SOUNDPEATS only; the daily schedule keeps its full coverage.
 - **dry_run**: live verification report and preview, no delivery/history changes.
 - **test_digest**: one clearly labeled live digest, possibly multiple Telegram messages, history unchanged.
 - Neither: normal delivery, using isolated persistent history.
@@ -43,6 +44,10 @@ Shopping history lives at `shopping-notifier/state.json` on a **separate `shoppi
 | [Keychron Japan](https://keychron.jp) | `/products.json` | Keyboards and computer accessories | Retailer comparison, only with explicit reference and tax evidence |
 | [KINTO Japan](https://kinto.co.jp) | `/products.json` | Household/kitchen goods, drinkware | Retailer comparison, when displayed |
 | [UGREEN Japan](https://store.ugreen.jp) | `/products.json` | Electronics, NAS, chargers and accessories | Retailer comparison, when displayed |
+
+| [Edifier Japan](https://www.edifier.jp) | `/products.json` | Electronics, audio | Retailer displayed comparison, when documented |
+| [SOUNDPEATS Japan](https://jp.soundpeats.com) | `/products.json` | Earbuds, headphones | Retailer displayed comparison, when documented |
+| [SHAKA Japan](https://shaka-jp.com) | `/products.json` (50 per page) | Shoes, sneaker sandals, sandals | Retailer displayed original/list comparison; exact size and color |
 
 These are catalog sources, not a claim that every store has a qualifying deal daily. Fresh `.js` variant data and HTML offers must agree for any deal to appear. The initial live scan and deployment evidence are in [docs/validation.md](docs/validation.md).
 
@@ -99,3 +104,9 @@ Edit [config.json](config.json), or use `--config PATH`. No credentials belong i
 - **Schedule late/missing:** verify workflow state is active and inspect Actions queue/run history. GitHub may disable long-inactive scheduled workflows; re-enable the existing shopping workflow when needed. UTC cron does not observe daylight saving; Japan is UTC+9 year-round.
 
 Run reports include discovered counts, exclusions, limits/failures, exact selected evidence, delivery mode/status, and acknowledged message count. Reports and local history are gitignored; deployment acceptance evidence is documented separately.
+
+### Expanded coverage (2026-10-03)
+
+Live verification found 11 SHAKA footwear products at exactly 50% off; Edifier (50 products) and SOUNDPEATS (38 products) had no qualifying variants. SHAKA uses `catalog_page_size: 50` to remain below the bounded response limit; pagination still continues and caps remain explicit. Its current nationwide free-shipping policy is rechecked each run. No shoe size is assumed: alerts show the exact verified size.
+
+Additional probes: AUKEY and Focal public feeds returned 404; KEEN shipping policy was robots-restricted; several other domains redirected across origins and were not enabled. SwitchBot catalog includes promotional gift clones, so it was not enabled pending an adapter that proves unconditional purchase eligibility. Old event pages and search snippets were never used as deal evidence.

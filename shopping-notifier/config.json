@@ -24,7 +24,10 @@
       "reference_basis": "retailer_previous_price",
       "reference_pattern": "定価",
       "tax_pattern": "税込|消費税込",
-      "policy_paths": ["/pages/shopping-guide", "/pages/law"],
+      "policy_paths": [
+        "/pages/shopping-guide",
+        "/pages/law"
+      ],
       "japan_delivery_pattern": "沖縄県.*離島|全国一律",
       "shipping_rule": "classicalelf"
     },
@@ -37,7 +40,9 @@
       "reference_basis": "retailer_previous_price",
       "reference_pattern": "通常価格|通常販売価格|定価|参考価格",
       "tax_pattern": "税込",
-      "policy_paths": ["/pages/delivery"],
+      "policy_paths": [
+        "/pages/delivery"
+      ],
       "japan_delivery_pattern": "配送は日本国内に限ります",
       "shipping_rule": "anker"
     },
@@ -50,7 +55,9 @@
       "reference_basis": "retailer_previous_price",
       "reference_pattern": "通常価格|通常販売価格|定価",
       "tax_pattern": "税込価格|税金が含まれ|消費税を含|税込み|Taxes included",
-      "policy_paths": ["/pages/specified-commercial-transactions-law"],
+      "policy_paths": [
+        "/pages/specified-commercial-transactions-law"
+      ],
       "japan_delivery_pattern": "日本国内送料無料|日本国内",
       "shipping_rule": "keychron"
     },
@@ -63,7 +70,10 @@
       "reference_basis": "retailer_previous_price",
       "reference_pattern": "通常価格|通常販売価格|定価",
       "tax_pattern": "税込|消費税を含む商品",
-      "policy_paths": ["/pages/user-guide", "/policies/terms-of-service"],
+      "policy_paths": [
+        "/pages/user-guide",
+        "/policies/terms-of-service"
+      ],
       "japan_delivery_pattern": "配送先は日本国内のみ",
       "shipping_rule": "kinto"
     },
@@ -76,9 +86,58 @@
       "reference_basis": "retailer_previous_price",
       "reference_pattern": "通常価格|通常販売価格|定価",
       "tax_pattern": "税込|税込み|税金が含まれ",
-      "policy_paths": ["/policies/shipping-policy"],
+      "policy_paths": [
+        "/policies/shipping-policy"
+      ],
       "japan_delivery_pattern": "日本国内のほとんどの地域への配送",
       "shipping_rule": "unknown"
+    },
+    {
+      "enabled": true,
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税入|税金が含まれ",
+      "shipping_rule": "unknown",
+      "id": "edifier",
+      "name": "Edifier Japan",
+      "base_url": "https://www.edifier.jp",
+      "category": "electronics audio gadgets",
+      "policy_paths": [
+        "/pages/shipping-and-payment"
+      ],
+      "japan_delivery_pattern": "日本国内での発送のみ"
+    },
+    {
+      "enabled": true,
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税入|税金が含まれ",
+      "shipping_rule": "unknown",
+      "id": "soundpeats",
+      "name": "SOUNDPEATS Japan",
+      "base_url": "https://jp.soundpeats.com",
+      "category": "electronics audio gadgets",
+      "policy_paths": [
+        "/policies/shipping-policy"
+      ],
+      "japan_delivery_pattern": "配送は日本国内に限ります"
+    },
+    {
+      "enabled": true,
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税入|税金が含まれ",
+      "shipping_rule": "shaka",
+      "id": "shaka",
+      "name": "SHAKA Japan",
+      "base_url": "https://shaka-jp.com",
+      "category": "shoes footwear outdoor",
+      "policy_paths": [
+        "/policies/shipping-policy",
+        "/pages/guide"
+      ],
+      "japan_delivery_pattern": "全国一律：送料無料",
+      "catalog_page_size": 50
     }
   ]
 }

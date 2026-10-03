@@ -112,6 +112,8 @@ def _offers(value):
 
 def _shipping(store, policy_text, sale):
     rule = store.get("shipping_rule", "unknown")
+    if rule == "shaka" and re.search(r"全国一律：送料無料", policy_text):
+        return "JPY 0 (Japan; current published policy)"
     if rule == "classicalelf" and re.search(r"全品\s*送料無料キャンペーン実施中", policy_text):
         if re.search(r"沖縄県.*離島.*1,390円", policy_text):
             return "JPY 0 campaign; Okinawa/island parcel delivery +JPY 1,390; confirm destination"
@@ -214,8 +216,9 @@ def scan_store(store: dict, config: dict, client, now: datetime, *, history=None
         if not re.search(store["japan_delivery_pattern"], policy_text):
             raise SourceError("japan_shipping_policy_not_confirmed")
         candidates = {}
+        page_size = store.get("catalog_page_size", 250)
         for page_number in range(1, config.get("max_pages_per_store", 8) + 1):
-            data = json.loads(client.get(f"{base}/products.json?limit=250&page={page_number}"))
+            data = json.loads(client.get(f"{base}/products.json?limit={page_size}&page={page_number}"))
             products = data.get("products") if isinstance(data, dict) else None
             if not isinstance(products, list) or (page_number == 1 and not products):
                 raise SourceError("catalog_schema_missing_or_empty")
@@ -232,7 +235,7 @@ def scan_store(store: dict, config: dict, client, now: datetime, *, history=None
                 if good:
                     chosen = rank(good)[0]
                     candidates[chosen.product_id] = (chosen, product)
-            if len(products) < 250:
+            if len(products) < page_size:
                 break
         else:
             result.limits.append("catalog_page_limit")

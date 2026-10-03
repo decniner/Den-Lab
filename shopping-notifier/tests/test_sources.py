@@ -7,7 +7,7 @@ from urllib.error import HTTPError, URLError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from network import HttpClient, SourceError, robots_allowed
-from sources import scan_store, verify_product
+from sources import _shipping, scan_store, verify_product
 from test_deals import CONFIG, NOW, STORE, product, variant
 
 SOURCE = {**STORE, "reference_pattern": "List price", "tax_pattern": "Prices include tax",
@@ -167,6 +167,25 @@ class SourcesTests(unittest.TestCase):
         result = scan_store(SOURCE, SCAN_CONFIG, Working(), NOW)
         self.assertEqual(len(result.deals), 1)
         self.assertEqual(result.status, "partial")
+        self.assertIn("catalog_page_limit", result.limits)
+
+    def test_shaka_shipping_requires_live_explicit_free_shipping_policy(self):
+        self.assertEqual(_shipping({"shipping_rule": "shaka"}, "全国一律：送料無料", 10450), "JPY 0 (Japan; current published policy)")
+        self.assertEqual(_shipping({"shipping_rule": "shaka"}, "配送料はチェックアウト時に計算", 10450), "Unknown; confirm at checkout")
+
+    def test_small_catalog_pages_continue_and_report_cap(self):
+        calls = []
+        class SmallPages:
+            def get(self, url):
+                calls.append(url)
+                if "products.json" in url:
+                    return json.dumps({"products": [dict(product(), variants=[variant()])] * 50})
+                if url.endswith(".js"): return json.dumps(js_product())
+                if "/products/coat" in url: return html_page()
+                return POLICY
+        result = scan_store(dict(SOURCE, catalog_page_size=50), dict(SCAN_CONFIG, max_pages_per_store=2), SmallPages(), NOW)
+        self.assertEqual(result.products_scanned, 100)
+        self.assertTrue(any("limit=50&page=2" in url for url in calls))
         self.assertIn("catalog_page_limit", result.limits)
 
     def test_malformed_feed_does_not_become_no_deals(self):

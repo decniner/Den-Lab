@@ -11,6 +11,11 @@ on:
     - cron: '0 22 * * *'
   workflow_dispatch:
     inputs:
+      electronics_and_shoes:
+        description: Scan electronics, gadgets, and shoes only for this manual run
+        required: false
+        default: false
+        type: boolean
       electronics_only:
         description: Scan electronics and gadget stores only for this manual run
         required: false
@@ -68,18 +73,23 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GITHUB_TOKEN: ${{ github.token }}
+          ELECTRONICS_AND_SHOES: ${{ inputs.electronics_and_shoes || false }}
           ELECTRONICS_ONLY: ${{ inputs.electronics_only || false }}
           DRY_RUN: ${{ inputs.dry_run || false }}
           TEST_DIGEST: ${{ inputs.test_digest || false }}
         run: |
           args=(--github-state)
-          if [ "$ELECTRONICS_ONLY" = "true" ]; then
+          if [ "$ELECTRONICS_ONLY" = "true" ] || [ "$ELECTRONICS_AND_SHOES" = "true" ]; then
             python - <<'PY'
-          import json
+          import json, os
           from pathlib import Path
           config = json.loads(Path("shopping-notifier/config.json").read_text())
+          ids = {"anker", "keychron", "ugreen", "edifier", "soundpeats"}
+          if os.environ["ELECTRONICS_AND_SHOES"] == "true":
+              ids |= {"shaka", "classicalelf"}
+              config["categories"] = ["electronics", "computer accessories", "appliances", "shoes"]
           for store in config["stores"]:
-              store["enabled"] = store.get("enabled", True) and store["id"] in {"anker", "keychron", "ugreen"}
+              store["enabled"] = store.get("enabled", True) and store["id"] in ids
           Path("shopping-notifier/electronics-run.json").write_text(json.dumps(config))
           PY
             args+=(--config shopping-notifier/electronics-run.json)

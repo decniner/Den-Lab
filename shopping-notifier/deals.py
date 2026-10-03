@@ -21,6 +21,7 @@ BASIS_LABELS = {
 }
 
 CATEGORY_PATTERNS = {
+    "shoes": r"shoe|sneaker|sandal|footwear|boots?\b|スニーカー|シューズ|サンダル|ブーツ|靴",
     "clothing": r"clothing|\bcoat\b|shirt|dress|jacket|pants|knit|ニット|スカート|ワンピース|パンツ|ジャケット|トップス|カーディガン|服|シューズ",
     "computer accessories": r"keyboard|keycap|mouse|usb.?hub|docking|nas\b|キーボード|キーキャップ|マウス|ドッキング|ハブ|パソコン",
     "household": r"household|kitchen|glass|mug|cup|bottle|tableware|cookware|dish|カップ|マグ|グラス|食器|鍋|キッチン",
@@ -34,7 +35,7 @@ def product_categories(product, store):
     categories = {name for name, pattern in CATEGORY_PATTERNS.items() if re.search(pattern, text)}
     # These curated stores have narrow verified physical catalogs. Mixed stores such as
     # Anker do NOT gain every category merely from the store's advertised coverage.
-    if store["id"] in ("anker", "keychron", "ugreen"):
+    if store["id"] in ("anker", "keychron", "ugreen", "edifier", "soundpeats"):
         categories.add("electronics")
     if store["id"] == "keychron":
         categories.add("computer accessories")

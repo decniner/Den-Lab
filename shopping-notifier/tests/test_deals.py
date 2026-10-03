@@ -5,7 +5,7 @@ from decimal import Decimal
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from deals import Rejected, eligible, rank, validate_variant
+from deals import Rejected, eligible, rank, validate_variant, product_categories
 
 NOW = datetime(2026, 10, 3, 7, tzinfo=timezone(timedelta(hours=9)))
 STORE = {"id": "shop", "name": "Shop", "base_url": "https://shop.example",
@@ -31,6 +31,14 @@ def deal(**kwargs):
 
 
 class DealsTests(unittest.TestCase):
+    def test_footwear_filter_excludes_clothing_and_preserves_shoe_variants(self):
+        selected = dict(CONFIG, categories=["shoes"])
+        self.assertIn("shoes", product_categories(product(title="Sneaker sandal", product_type="Footwear"), STORE))
+        footwear = validate_variant(product(title="Sneaker sandal", product_type="Footwear"), variant(title="BLACK / 26cm"), STORE, selected, NOW)
+        self.assertEqual(footwear.variant, "BLACK / 26cm")
+        with self.assertRaisesRegex(Rejected, "excluded_category"):
+            validate_variant(product(), variant(), STORE, selected, NOW)
+
     def test_calculation_uses_exact_prices_and_keeps_variant_identity(self):
         d = deal(price="4999", compare_at_price="10000")
         self.assertEqual(d.discount_percent, Decimal("50.01"))

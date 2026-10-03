@@ -48,6 +48,9 @@ def load_config(path):
         if not stores or len(stores) > 10 or len({s["id"] for s in stores}) != len(stores):
             raise ValueError()
         for store in stores:
+            page_size = store.get("catalog_page_size", 250)
+            if isinstance(page_size, bool) or not isinstance(page_size, int) or not 1 <= page_size <= 250:
+                raise ValueError()
             parts = urlsplit(store["base_url"])
             if parts.scheme != "https" or not parts.hostname or parts.username or parts.password or parts.path not in ("", "/"):
                 raise ValueError()
