@@ -90,9 +90,9 @@ passed. Five representative frames were inspected; final listening remains
 pending under owner-authorized private review. API readback confirmed the exact
 destination channel and **private** visibility. Paid jobs: **0**.
 
-Tests: 76 passed before the final koji-scene/queue-filter additions. Pure date
-and reviewed-candidate regressions passed afterward. Koji diagram text bounds,
-fact-pack review checksum and next-unused-topic selection also passed. Final full-suite rerun was
-blocked by execution approval failure; sandbox execution hit temporary-directory
-ACL failures. Run `python -m unittest discover -s tests -v` locally or the manual
-`dry-run` Actions workflow before relying on unattended operation.
+Tests: **77 passed** in the final full-suite run at 2026-10-03 02:43 UTC.
+Koji diagram text bounds, fact-pack review checksum and next-unused-topic
+selection also passed. Earlier sandbox temporary-directory ACL failures were
+resolved by the authorized test run outside that sandbox. Runner startup still
+returned `approval request failed` on the final retry. Run the manual
+`daily-private` Actions workflow after starting the runner to verify scheduling.
