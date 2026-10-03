@@ -246,12 +246,36 @@
       "reference_price": "22000",
       "sent_at": "2026-10-03T19:28:24+09:00",
       "url": "https://toffy.jp/products/k-gp1?variant=47419932508434"
+    },
+    "toffyjapan:8889114067218:47440534405394": {
+      "sale_price": "2000",
+      "reference_price": "4400",
+      "sent_at": "2026-10-03T19:28:26+09:00",
+      "url": "https://toffy.jp/products/tb04-ffs?variant=47440534405394"
+    },
+    "toffyjapan:10095229665554:51142584533266": {
+      "sale_price": "1800",
+      "reference_price": "3960",
+      "sent_at": "2026-10-03T19:28:26+09:00",
+      "url": "https://toffy.jp/products/hw-ds4?variant=51142584533266"
+    },
+    "toffyjapan:10095229698322:51142584566034": {
+      "sale_price": "1800",
+      "reference_price": "3960",
+      "sent_at": "2026-10-03T19:28:26+09:00",
+      "url": "https://toffy.jp/products/hw-ds2?variant=51142584566034"
+    },
+    "toffyjapan:8927557124370:47553536983314": {
+      "sale_price": "1500",
+      "reference_price": "3300",
+      "sent_at": "2026-10-03T19:28:26+09:00",
+      "url": "https://toffy.jp/products/tb04-fb?variant=47553536983314"
     }
   },
   "last_digest": {
     "date": "2026-10-03",
-    "coverage_key": "927875c5ff0a0e767cb04a8910db552c3117868999b5db721cbf30fe0efddf3e",
-    "completed_at": "2026-10-03T18:32:28+09:00",
-    "digest_hash": "67299279998ab6fedb04c2ed6b0c8c86070ae3dad0f525a469fcf4e74120ccbf"
+    "coverage_key": "92eefc765cd766a01cb0ad02620011c8a672fe7291f5f4baa4f58edcd6532272",
+    "completed_at": "2026-10-03T19:28:26+09:00",
+    "digest_hash": "38fd67e1066e6ea36ded75dfdfe394142fca2b688ae3576d86b61634ce088262"
   }
 }
