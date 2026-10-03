@@ -64,7 +64,7 @@ def load_config(path):
         raise ValueError("Invalid shopping config; check documented types, enabled stores, HTTPS URLs, and bounds") from None
 
 
-def run(config, scanner, sender, state, now, report_path, *, dry_run=False, test=False):
+def run(config, scanner, sender, state, now, report_path, *, dry_run=False, test=False, delivery_clock=None):
     history = {"version": 1, "sent": {}} if test else state.load()
     results = []
     for store in config["stores"]:
@@ -107,7 +107,7 @@ def run(config, scanner, sender, state, now, report_path, *, dry_run=False, test
         report["telegram_messages_acknowledged"] += 1
         save_report()
     try:
-        deliver(chunks, history, state, acknowledged, now, test=test, coverage_key=coverage_key)
+        deliver(chunks, history, state, acknowledged, now, test=test, coverage_key=coverage_key, clock=delivery_clock)
     except Exception as exc:
         report["delivery_status"] = "failed_or_unconfirmed"
         report["delivery_error_type"] = type(exc).__name__
@@ -148,7 +148,7 @@ def main():
     scanner = bounded_scanner(config, client)
     with RunLock(args.state.parent / ".run.lock"):
         return run(config, scanner, send_telegram, state, datetime.now(JST), args.report,
-                   dry_run=args.dry_run, test=args.test_digest)
+                   dry_run=args.dry_run, test=args.test_digest, delivery_clock=lambda: datetime.now(JST))
 
 
 if __name__ == "__main__":

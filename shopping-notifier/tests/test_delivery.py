@@ -86,6 +86,15 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(state.saved[-1]["sent"][deal().key]["sale_price"], "5000")
         self.assertEqual(state.saved[-1]["last_digest"]["date"], "2026-10-03")
 
+    def test_deduplication_timestamp_is_delivery_acknowledgement_time(self):
+        from datetime import timedelta
+        acknowledged_at = NOW + timedelta(minutes=5)
+        history = {"version": 1, "sent": {}}
+        state = MemoryState()
+        deliver(format_digest([deal()], [], NOW), history, state, lambda _: None, NOW,
+                clock=lambda: acknowledged_at)
+        self.assertEqual(state.saved[-1]["sent"][deal().key]["sent_at"], acknowledged_at.isoformat(timespec="seconds"))
+
     def test_secret_errors_never_expose_tokens(self):
         import os
         from unittest.mock import patch

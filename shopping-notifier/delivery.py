@@ -108,21 +108,22 @@ def send_telegram(text, *, opener=urlopen, sleep=time.sleep):
     raise RuntimeError("Telegram rate-limit retries exhausted")
 
 
-def deliver(chunks, history, state, sender, now, *, test=False, dry_run=False, coverage_key=""):
+def deliver(chunks, history, state, sender, now, *, test=False, dry_run=False, coverage_key="", clock=None):
     if dry_run:
         return 0
     if not test:
         state.prepare()
     for index, chunk in enumerate(chunks):
         sender(chunk.text)
+        acknowledged_at = clock() if clock else now
         if test:
             continue
         for d in chunk.deals:
             history["sent"][d.key] = {"sale_price": str(d.sale_price), "reference_price": str(d.reference_price),
-                                       "sent_at": now.isoformat(timespec="seconds"), "url": d.url}
+                                       "sent_at": acknowledged_at.isoformat(timespec="seconds"), "url": d.url}
         if index == len(chunks) - 1:
             history["last_digest"] = {"date": now.date().isoformat(), "coverage_key": coverage_key,
-                                      "completed_at": now.isoformat(timespec="seconds"),
+                                      "completed_at": acknowledged_at.isoformat(timespec="seconds"),
                                       "digest_hash": hashlib.sha256("\n".join(c.text for c in chunks).encode()).hexdigest()}
         state.save(history)
     return len(chunks)

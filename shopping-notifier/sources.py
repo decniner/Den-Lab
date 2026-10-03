@@ -149,6 +149,7 @@ def verify_product(product, variant, html_page, store, config, now, policy_text)
                 deal.sale_price, deal.reference_price, deal.variant, deal.sku):
             raise Rejected("html_variant_disagrees")
     offers = []
+    structured_offers_seen = 0
     expected = urlsplit(deal.url)
     for kind, script in page.scripts:
         if kind != "application/ld+json":
@@ -157,6 +158,7 @@ def verify_product(product, variant, html_page, store, config, now, policy_text)
             candidates = list(_offers(json.loads(script)))
         except json.JSONDecodeError:
             continue
+        structured_offers_seen += len(candidates)
         for offer in candidates:
             parts = urlsplit(str(offer.get("url", "")))
             ids = parse_qs(parts.query).get("variant", [])
@@ -169,6 +171,8 @@ def verify_product(product, variant, html_page, store, config, now, policy_text)
                     offers.append(offer)
             elif deal.sku and offer.get("sku") == deal.sku:
                 offers.append(offer)
+    if not structured_offers_seen:
+        raise SourceError("page_offer_evidence_missing")
     if not offers:
         raise Rejected("matching_variant_offer_missing")
     for offer in offers:

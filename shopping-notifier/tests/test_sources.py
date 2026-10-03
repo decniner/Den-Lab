@@ -76,6 +76,12 @@ class SourcesTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 verify_product(p, p["variants"][0], page, SOURCE, CONFIG, NOW, policy)
 
+    def test_missing_structured_offers_is_a_source_verification_failure(self):
+        p = js_product()
+        page = '<h1>Coat</h1><p>List price 10,000. Prices include tax.</p><script>product=' + json.dumps(p) + ';</script>'
+        with self.assertRaisesRegex(SourceError, "offer_evidence_missing"):
+            verify_product(p, p["variants"][0], page, SOURCE, CONFIG, NOW, POLICY)
+
     def test_robots_wildcards_longest_rule_and_specific_agent(self):
         rules = "User-agent: *\nAllow: /\nDisallow: /policies/\nDisallow: /products/*-private\nAllow: /products/ok-private$\n"
         self.assertFalse(robots_allowed(rules, "https://shop.example/policies/shipping"))
