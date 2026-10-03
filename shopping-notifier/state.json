@@ -1,4 +1,41 @@
 {
   "version": 1,
-  "sent": {}
+  "sent": {
+    "classicalelf:8917338620125:46119014662365": {
+      "sale_price": "539",
+      "reference_price": "4998",
+      "sent_at": "2026-10-03T16:15:56+09:00",
+      "url": "https://classicalelf.shop/products/mi1019074?variant=46119014662365"
+    },
+    "classicalelf:9402470760669:47548520562909": {
+      "sale_price": "987",
+      "reference_price": "7999",
+      "sent_at": "2026-10-03T16:15:56+09:00",
+      "url": "https://classicalelf.shop/products/mi1139100?variant=47548520562909"
+    },
+    "classicalelf:9507570286813:47970737783005": {
+      "sale_price": "539",
+      "reference_price": "3999",
+      "sent_at": "2026-10-03T16:15:56+09:00",
+      "url": "https://classicalelf.shop/products/ce1010585?variant=47970737783005"
+    },
+    "classicalelf:8930888941789:46208089424093": {
+      "sale_price": "987",
+      "reference_price": "6999",
+      "sent_at": "2026-10-03T16:15:56+09:00",
+      "url": "https://classicalelf.shop/products/mi1019068?variant=46208089424093"
+    },
+    "classicalelf:8984517116125:46402399830237": {
+      "sale_price": "998",
+      "reference_price": "6999",
+      "sent_at": "2026-10-03T16:15:56+09:00",
+      "url": "https://classicalelf.shop/products/ce1070163?variant=46402399830237"
+    },
+    "classicalelf:8966515097821:46346028089565": {
+      "sale_price": "787",
+      "reference_price": "4998",
+      "sent_at": "2026-10-03T16:15:56+09:00",
+      "url": "https://classicalelf.shop/products/mi1029119?variant=46346028089565"
+    }
+  }
 }
