@@ -55,3 +55,14 @@ Final local verification: **57 shopping tests passed**, including 90-source capa
 Final edits added narrowly scoped Japanese official-store vendor aliases and fresh Toffy/Phenix standard shipping rules. A targeted follow-up live dry run checks those edits; normal Actions delivery also performs fresh verification of the complete final configuration. Local dry runs made no Telegram requests and did not create or alter sent state.
 
 The final focused review caught substring matching of increased shipping thresholds (15,500 versus 5,500; 110,000 versus 10,000). Numeric boundaries and regressions now reject these changed policies. Final fresh Toffy guide verification confirmed JPY 550 below JPY 5,500 and JPY 0 above it; Phenix standard rates and individual-item/island exceptions were confirmed in the targeted live scan.
+
+
+### Expanded deployment and Telegram acknowledgment
+
+Implementation commit `909e4af` was pushed to main. [Push CI 37113102313](https://github.com/decniner/Den-Lab/actions/runs/37113102313) passed. [Normal expanded delivery 37113113358](https://github.com/decniner/Den-Lab/actions/runs/37113113358) completed successfully, using the existing bot/chat/repository secrets and freshly verifying the final configuration. Report artifact: `shopping-verification-37113113358` (30-day retention).
+
+The deployed run started **18:27:49 JST**, scanned **59,038 entries across 58 sources**, and found **106 qualifying deals** before sent-history suppression. Five unchanged EcoFlow deals were suppressed; **ten new deals were sent in two Telegram messages, both acknowledged**. Report status: `sent_and_state_saved`; remote dedicated state increased **25 → 35 sent entries**. The selected digest contained Toffy/LADONNA and Phenix products, with verified comparison discounts 63–84.20% and fresh published standard shipping charges. Merrell/Saucony/Brooks deals were verified but ranked below the ten selected offers. No delivery is inferred merely from workflow success.
+
+Final source status was **45 complete, 13 partial, zero wholly failed**. The extra partial source compared with the first dry run was Toffy, after exact LADONNA vendor aliases enabled more candidates and the verification cap was reached. The digest clearly stated incomplete coverage, with the full Actions report link. Four new electronics catalogs worked but had no qualifying products in this scan; no offers were fabricated to fill categories.
+
+Daily workflow API readback remains **active**, and the deployed YAML contains **`0 22 * * *`**: 07:00 Asia/Tokyo, subject to GitHub Actions start/queue delays. Push runs test only; normal/manual and scheduled runs share the existing isolated shopping state. The original clearly labeled Telegram test digest was already acknowledged and left history unchanged; this expansion intentionally sent a normal digest so its delivered deals are deduplicated.

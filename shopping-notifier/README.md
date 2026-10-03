@@ -37,6 +37,8 @@ Shopping history lives at `shopping-notifier/state.json` on a **separate `shoppi
 
 ## Supported public sources
 
+The table below records the initial sources. Classical Elf and SHAKA are currently disabled by the established-brand preference. See [the current complete enabled-source register](docs/source-register.md) for all 58 stores.
+
 | Source | Catalog | Main coverage | Price basis when verified |
 | --- | --- | --- | --- |
 | [Classical Elf](https://classicalelf.shop) | `/products.json` | Clothing, footwear, accessories | Retailer displayed original/list comparison (定価), exact variant compare-at; not independently proven manufacturer MSRP or transaction history |
@@ -113,7 +115,7 @@ Run reports include discovered counts, exclusions, limits/failures, exact select
 
 Live verification found 11 SHAKA footwear products at exactly 50% off; Edifier (50 products) and SOUNDPEATS (38 products) had no qualifying variants. SHAKA uses `catalog_page_size: 50` to remain below the bounded response limit; pagination still continues and caps remain explicit. Its current nationwide free-shipping policy is rechecked each run. No shoe size is assumed: alerts show the exact verified size.
 
-Additional probes: AUKEY and Focal public feeds returned 404; KEEN shipping policy was robots-restricted; several other domains redirected across origins and were not enabled. SwitchBot catalog includes promotional gift clones, so it was not enabled pending an adapter that proves unconditional purchase eligibility. Old event pages and search snippets were never used as deal evidence.
+Additional probes: AUKEY and Focal public feeds returned 404; KEEN shipping policy was robots-restricted; several other domains redirected across origins and were not enabled. SwitchBot was initially excluded for promotional gift clones; it is now enabled with explicit gift/clone exclusions and the same unconditional-purchase checks. Old event pages and search snippets were never used as deal evidence.
 
 ### Brand preference
 
@@ -123,17 +125,17 @@ SHAKA, Classical Elf/JaVa, and other vendors outside the list are now excluded. 
 
 ### Broader brand and category coverage
 
-The watchlist now contains 87 brands. Actual enabled sources are Anker, Keychron, UGREEN, Edifier, SOUNDPEATS, KINTO, KEEN, EcoFlow, and Jackery. Classical Elf and SHAKA remain configured but disabled to respect the established-brand preference. Brand-watchlist entries such as Samsonite, Nike, and Dyson do not imply working store coverage.
+The first brand/category expansion used 87 brands and nine enabled sources: Anker, Keychron, UGREEN, Edifier, SOUNDPEATS, KINTO, KEEN, EcoFlow, and Jackery. Classical Elf and SHAKA remain configured but disabled to respect the established-brand preference. Brand-watchlist entries such as Samsonite, Nike, and Dyson do not imply working store coverage.
 
-Recognized configurable category names: electronics, computer accessories, audio, gaming, household, appliances, outdoor, shoes, clothing, sportswear, luggage, personal care, home office, tools, and other. The default empty category list includes all otherwise eligible physical products. Audio/accessories, KINTO household goods, and KEEN/EcoFlow/Jackery footwear and outdoor/power products have actual catalog coverage; luggage, personal care, home-office furniture, tools, and many listed brands remain watchlist-only until a permitted source is verified.
+Recognized configurable category names: electronics, computer accessories, audio, gaming, household, appliances, outdoor, shoes, clothing, sportswear, luggage, personal care, home office, tools, and other. The default empty category list includes all otherwise eligible physical products. Audio/accessories, KINTO household goods, and KEEN/EcoFlow/Jackery footwear and outdoor/power products have actual catalog coverage; at that stage, luggage, personal care, home-office furniture, tools, and many listed brands were watchlist-only. The October expansion below adds verified sources for several of these categories.
 
 Official-store vendor fields sometimes contain regional names or product-series names. `vendor_brand_aliases` is an explicit exact alias-to-brand map per store, based on public official catalog evidence. An alias is never applied to another source, and its mapped brand must still be allowed. KINTO series aliases exclude the ambiguous HERBAL TEA vendor; Keychron aliases exclude generic Others and switches from other manufacturers. Missing/unmapped vendors remain excluded.
 
 KEEN's robots-restricted shipping-policy endpoint is not accessed: its permitted terms-of-sale and legal-notice pages independently document Japan delivery, tax, and standard non-member shipping. Member shipping benefits are never assumed. EcoFlow and Jackery free shipping must appear in freshly checked policy text. Gift clones, refurbished items, and conditional offers remain excluded.
 
-Additional probes found no compatible public catalog at Coleman/Gregory (404), American Tourister (connection failure), Merrell (cross-origin redirect), and Birkenstock (robots-restricted redirect). These sources are not enabled. No access restrictions were bypassed.
+Additional probes found no compatible public catalog at Coleman/Gregory (404), American Tourister (connection failure), the original Merrell URL (cross-origin redirect), and Birkenstock (robots-restricted redirect). These original failed endpoints are not enabled. Merrell is now supported through its independently verified canonical merrell.jp origin. No access restrictions were bypassed.
 
-Live expansion validation scanned 4,506 products across the nine enabled stores without source failures or catalog caps. EcoFlow produced qualifying power-station, charging, and solar-bundle variants. A newsletter-only offer was excluded and has a regression test. Jackery candidates without an explicit comparison-price basis remained excluded. Product-label evidence now starts at the exact fresh product title rather than the navigation heading, with a test that rejects reference labels found only in navigation.
+The first expansion validation scanned 4,506 products across nine enabled stores without source failures or catalog caps. EcoFlow produced qualifying power-station, charging, and solar-bundle variants. A newsletter-only offer was excluded and has a regression test. Jackery candidates without an explicit comparison-price basis remained excluded. Product-label evidence now starts at the exact fresh product title rather than the navigation heading, with a test that rejects reference labels found only in navigation.
 
 
 ## Expanded scan (October 2026)
