@@ -10,7 +10,7 @@ from decimal import Decimal, InvalidOperation
 from html.parser import HTMLParser
 from urllib.parse import parse_qs, quote, urlsplit
 
-from deals import Deal, Rejected, eligible, rank, validate_variant
+from deals import Deal, Rejected, clean, eligible, rank, validate_variant
 from network import SourceError
 
 
@@ -112,6 +112,13 @@ def _offers(value):
 
 def _shipping(store, policy_text, sale):
     rule = store.get("shipping_rule", "unknown")
+    if rule == "keen" and re.search(r"2,999円以下：300円.*3,000円～13,999円：600円.*14,000円以上：送料無料", policy_text):
+        if sale >= 14000:
+            return "JPY 0 (item >=JPY 14,000; non-member)"
+        return ("JPY 300; Hokkaido/Okinawa JPY 400 (non-member)" if sale < 3000
+                else "JPY 600; Hokkaido/Okinawa JPY 800 (non-member)")
+    if (rule == "ecoflow" and re.search(r"送料：\s*無料", policy_text)) or (rule == "jackery" and re.search(r"全ての商品が送料無料", policy_text)):
+        return "JPY 0 (Japan; current published policy)"
     if rule == "shaka" and re.search(r"全国一律：送料無料", policy_text):
         return "JPY 0 (Japan; current published policy)"
     if rule == "classicalelf" and re.search(r"全品\s*送料無料キャンペーン実施中", policy_text):
@@ -129,11 +136,17 @@ def _shipping(store, policy_text, sale):
 def verify_product(product, variant, html_page, store, config, now, policy_text):
     page = Page(html_page)
     deal = validate_variant(product, _major_variant(variant), store, config, now)
+    # Start at the exact fresh product title, never the site's navigation heading.
+    text = page.text
+    title_start = text.find(clean(product.get("title") or "", 1000))
+    if title_start < 0:
+        raise Rejected("product_title_evidence_missing")
+    product_text = text[title_start:title_start + 3000]
     if not re.search(store["japan_delivery_pattern"], policy_text):
         raise Rejected("japan_delivery_not_confirmed")
-    if not re.search(store["tax_pattern"], page.main_text + " " + policy_text):
+    if not re.search(store["tax_pattern"], product_text + " " + policy_text):
         raise Rejected("tax_inclusive_not_confirmed")
-    if not re.search(store["reference_pattern"], page.main_text):
+    if not re.search(store["reference_pattern"], product_text):
         raise Rejected("ambiguous_reference_basis")
     matching = []
     for embedded in _page_products(page, product["id"]):

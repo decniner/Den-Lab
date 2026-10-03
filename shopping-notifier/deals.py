@@ -9,6 +9,7 @@ from decimal import Decimal, InvalidOperation
 from urllib.parse import quote
 
 DEFAULT_EXCLUSIONS = [
+    "メルマガ限定", "メール会員限定", "email-only", "newsletter-only", "freegift", "sca_clone", "-gift",
     "中古", "再生品", "整備済", "リファービッシュ", "used", "refurbished", "renewed",
     "subscription", "定期便", "定期購入", "下取り", "trade-in", "会員限定", "メンバー限定",
     "ログイン限定", "クーポン適用", "クーポン利用", "クーポンコード", "coupon",
@@ -21,6 +22,14 @@ BASIS_LABELS = {
 }
 
 CATEGORY_PATTERNS = {
+    "audio": r"headphones?|earbuds?|earphones?|speakers?|イヤホン|ヘッドホン|スピーカー",
+    "gaming": r"game.?controller|gamepad|gaming|ゲームパッド|ゲームコントローラー|ゲーミング",
+    "luggage": r"suitcase|luggage|travel.?bag|スーツケース|キャリーバッグ",
+    "personal care": r"electric.?toothbrush|hair.?dryer|electric.?shaver|電動歯ブラシ|ドライヤー|電気シェーバー",
+    "sportswear": r"running.?tights|sportswear|running.?shorts|スポーツウェア|ランニングタイツ",
+    "home office": r"standing.?desk|office.?chair|monitor.?arm|昇降デスク|オフィスチェア|モニターアーム",
+    "tools": r"cordless.?drill|power.?tool|tool.?kit|電動工具|電動ドリル|工具セット",
+
     "shoes": r"shoe|sneaker|sandal|footwear|boots?\b|スニーカー|シューズ|サンダル|ブーツ|靴",
     "clothing": r"clothing|\bcoat\b|shirt|dress|jacket|pants|knit|ニット|スカート|ワンピース|パンツ|ジャケット|トップス|カーディガン|服|シューズ",
     "computer accessories": r"keyboard|keycap|mouse|usb.?hub|docking.?station|nas\b|キーボード|キーキャップ|マウス|ドッキング(?:ステーション|ハブ)|usb.?ハブ|パソコン",
@@ -35,7 +44,7 @@ def product_categories(product, store):
     categories = {name for name, pattern in CATEGORY_PATTERNS.items() if re.search(pattern, text)}
     # These curated stores have narrow verified physical catalogs. Mixed stores such as
     # Anker do NOT gain every category merely from the store's advertised coverage.
-    if store["id"] in ("anker", "keychron", "ugreen", "edifier", "soundpeats"):
+    if store["id"] in ("anker", "keychron", "ugreen", "edifier", "soundpeats", "ecoflow", "jackery"):
         categories.add("electronics")
     if store["id"] == "keychron":
         categories.add("computer accessories")
@@ -113,7 +122,10 @@ class Deal:
 
 def validate_variant(product: dict, variant: dict, store: dict, config: dict, now: datetime) -> Deal:
     brands = config.get("allowed_brands", [])
-    if brands and clean(product.get("vendor") or "", 200).casefold() not in {b.strip().casefold() for b in brands}:
+    vendor = clean(product.get("vendor") or "", 200).casefold()
+    aliases = {k.strip().casefold(): v.strip().casefold() for k, v in store.get("vendor_brand_aliases", {}).items()}
+    brand = aliases.get(vendor, vendor)
+    if brands and brand not in {b.strip().casefold() for b in brands}:
         raise Rejected("brand_not_allowed")
     reference = yen(variant.get("compare_at_price"))
     sale = yen(variant.get("price"))

@@ -53,6 +53,9 @@ def load_config(path):
             page_size = store.get("catalog_page_size", 250)
             if isinstance(page_size, bool) or not isinstance(page_size, int) or not 1 <= page_size <= 250:
                 raise ValueError()
+            aliases = store.get("vendor_brand_aliases", {})
+            if not isinstance(aliases, dict) or not all(isinstance(k, str) and k.strip() and isinstance(v, str) and v.strip() for k, v in aliases.items()):
+                raise ValueError()
             parts = urlsplit(store["base_url"])
             if parts.scheme != "https" or not parts.hostname or parts.username or parts.password or parts.path not in ("", "/"):
                 raise ValueError()

@@ -31,6 +31,28 @@ def deal(**kwargs):
 
 
 class DealsTests(unittest.TestCase):
+    def test_newsletter_only_and_promotional_gift_clones_are_excluded(self):
+        for changed in [{"title": "【メルマガ限定】 Portable power"}, {"handle": "delta-email-only"}, {"handle": "item-sca_clone_freegift"}]:
+            with self.subTest(product=changed), self.assertRaisesRegex(Rejected, "excluded_keyword"):
+                validate_variant(product(**changed), variant(), STORE, CONFIG, NOW)
+
+    def test_official_store_vendor_aliases_are_explicit_and_scoped(self):
+        cfg = dict(CONFIG, allowed_brands=["UGREEN"])
+        official = dict(STORE, vendor_brand_aliases={"UGREEN-JP": "UGREEN"})
+        validate_variant(product(vendor="UGREEN-JP"), variant(), official, cfg, NOW)
+        with self.assertRaisesRegex(Rejected, "brand_not_allowed"):
+            validate_variant(product(vendor="UGREEN-JP"), variant(), STORE, cfg, NOW)
+        with self.assertRaisesRegex(Rejected, "brand_not_allowed"):
+            validate_variant(product(vendor="Unknown"), variant(), official, cfg, NOW)
+
+    def test_expanded_categories_follow_product_evidence(self):
+        cases = {"audio": "Wireless headphones", "gaming": "Game controller", "luggage": "Travel suitcase", "personal care": "Electric toothbrush", "sportswear": "Running tights", "home office": "Standing desk", "tools": "Cordless drill"}
+        for category, title in cases.items():
+            with self.subTest(category=category):
+                validate_variant(product(title=title), variant(), STORE, dict(CONFIG, categories=[category]), NOW)
+        with self.assertRaisesRegex(Rejected, "excluded_category"):
+            validate_variant(product(), variant(), STORE, dict(CONFIG, categories=["audio"]), NOW)
+
     def test_brand_allowlist_requires_exact_vendor_not_compatible_title(self):
         cfg = dict(CONFIG, allowed_brands=["Nike", "Sony"])
         accepted = validate_variant(product(vendor="NIKE", title="Running shoes"), variant(), STORE, cfg, NOW)

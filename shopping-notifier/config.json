@@ -1,6 +1,10 @@
 {
   "categories": [],
-  "excluded_keywords": [],
+  "excluded_keywords": [
+    "freegift",
+    "sca_clone",
+    "-gift"
+  ],
   "min_price_jpy": 0,
   "max_price_jpy": null,
   "max_deals": 10,
@@ -18,7 +22,7 @@
     {
       "id": "classicalelf",
       "name": "Classical Elf",
-      "enabled": true,
+      "enabled": false,
       "base_url": "https://classicalelf.shop",
       "category": "clothing shoes accessories",
       "reference_basis": "retailer_previous_price",
@@ -29,7 +33,8 @@
         "/pages/law"
       ],
       "japan_delivery_pattern": "沖縄県.*離島|全国一律",
-      "shipping_rule": "classicalelf"
+      "shipping_rule": "classicalelf",
+      "vendor_brand_aliases": {}
     },
     {
       "id": "anker",
@@ -44,7 +49,8 @@
         "/pages/delivery"
       ],
       "japan_delivery_pattern": "配送は日本国内に限ります",
-      "shipping_rule": "anker"
+      "shipping_rule": "anker",
+      "vendor_brand_aliases": {}
     },
     {
       "id": "keychron",
@@ -59,7 +65,31 @@
         "/pages/specified-commercial-transactions-law"
       ],
       "japan_delivery_pattern": "日本国内送料無料|日本国内",
-      "shipping_rule": "keychron"
+      "shipping_rule": "keychron",
+      "vendor_brand_aliases": {
+        "Keychron Japan": "Keychron",
+        "C Pro シリーズ": "Keychron",
+        "HE Series": "Keychron",
+        "K Max series": "Keychron",
+        "K Max シリーズ": "Keychron",
+        "K Pro シリーズ": "Keychron",
+        "K series": "Keychron",
+        "K シリーズ": "Keychron",
+        "Keychron": "Keychron",
+        "Keychron Portugal": "Keychron",
+        "L シリーズ": "Keychron",
+        "Q HE Series": "Keychron",
+        "Q HE シリーズ": "Keychron",
+        "Q Max シリーズ": "Keychron",
+        "Q Maxシリーズ (JIS配列)": "Keychron",
+        "Q Pro シリーズ": "Keychron",
+        "Q シリーズ": "Keychron",
+        "Switch-Keychron": "Keychron",
+        "Trackball Series": "Keychron",
+        "V Max シリーズ": "Keychron",
+        "V シリーズ": "Keychron",
+        "スイッチ-Keychron": "Keychron"
+      }
     },
     {
       "id": "kinto",
@@ -75,7 +105,82 @@
         "/policies/terms-of-service"
       ],
       "japan_delivery_pattern": "配送先は日本国内のみ",
-      "shipping_rule": "kinto"
+      "shipping_rule": "kinto",
+      "vendor_brand_aliases": {
+        "ACTIVE BOTTLE": "KINTO",
+        "ACTIVE TUMBLER": "KINTO",
+        "ALFRESCO": "KINTO",
+        "AQUA CULTURE VASE": "KINTO",
+        "AROMA OIL WARMER": "KINTO",
+        "ASADUKEBACHI": "KINTO",
+        "ATELIER TETE": "KINTO",
+        "BAUM": "KINTO",
+        "BAUM NEU": "KINTO",
+        "BONBO": "KINTO",
+        "BOTTLIT": "KINTO",
+        "CAPSULE": "KINTO",
+        "CARAT": "KINTO",
+        "CAST": "KINTO",
+        "CAST AMBER": "KINTO",
+        "CLK-151": "KINTO",
+        "CLK-211": "KINTO",
+        "DAY OFF TUMBLER": "KINTO",
+        "DRIP BAG": "KINTO",
+        "FOG": "KINTO",
+        "FORIS": "KINTO",
+        "FUTO": "KINTO",
+        "HIBI": "KINTO",
+        "KAKOMI": "KINTO",
+        "KIDS WATER BOTTLE": "KINTO",
+        "KINTO": "KINTO",
+        "KRONOS": "KINTO",
+        "LEAVES TO TEA": "KINTO",
+        "LIN": "KINTO",
+        "LOOP": "KINTO",
+        "LUCE": "KINTO",
+        "LUNA": "KINTO",
+        "LUX": "KINTO",
+        "MARK IT BY KINTO": "KINTO",
+        "MUI": "KINTO",
+        "NEST": "KINTO",
+        "NONSLIP TRAY": "KINTO",
+        "NORI": "KINTO",
+        "OCT": "KINTO",
+        "ONE TOUCH TEAPOT": "KINTO",
+        "OVA": "KINTO",
+        "PEBBLE": "KINTO",
+        "PLACE MAT": "KINTO",
+        "PLANT POT 191": "KINTO",
+        "PLANT POT 201": "KINTO",
+        "PLANT POT 211": "KINTO",
+        "PLAY TUMBLER": "KINTO",
+        "PLUG": "KINTO",
+        "PLUMP": "KINTO",
+        "POUR OVER KETTLE": "KINTO",
+        "RIM": "KINTO",
+        "RIPPLE": "KINTO",
+        "SACCO": "KINTO",
+        "SCHALE": "KINTO",
+        "SEPIA": "KINTO",
+        "SLOW COFFEE STYLE": "KINTO",
+        "SLOW COFFEE STYLE SPECIALTY": "KINTO",
+        "TAKU": "KINTO",
+        "TERRA": "KINTO",
+        "TO GO BOTTLE": "KINTO",
+        "TO GO TUMBLER": "KINTO",
+        "TOPO": "KINTO",
+        "TOTEM": "KINTO",
+        "TRAIL BOTTLE": "KINTO",
+        "TRAIL TUMBLER": "KINTO",
+        "TRAVEL TUMBLER": "KINTO",
+        "TRE": "KINTO",
+        "TUMBLER STRAP": "KINTO",
+        "UNITEA": "KINTO",
+        "WATER BOTTLE": "KINTO",
+        "WATER TUMBLER": "KINTO",
+        "WORKOUT BOTTLE": "KINTO",
+        "kinto-japan": "KINTO"
+      }
     },
     {
       "id": "ugreen",
@@ -90,7 +195,11 @@
         "/policies/shipping-policy"
       ],
       "japan_delivery_pattern": "日本国内のほとんどの地域への配送",
-      "shipping_rule": "unknown"
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "UGREEN-JP": "UGREEN",
+        "UGREEN NAS JP": "UGREEN"
+      }
     },
     {
       "enabled": true,
@@ -105,7 +214,10 @@
       "policy_paths": [
         "/pages/shipping-and-payment"
       ],
-      "japan_delivery_pattern": "日本国内での発送のみ"
+      "japan_delivery_pattern": "日本国内での発送のみ",
+      "vendor_brand_aliases": {
+        "EDIFIER JAPAN": "Edifier"
+      }
     },
     {
       "enabled": true,
@@ -120,10 +232,13 @@
       "policy_paths": [
         "/policies/shipping-policy"
       ],
-      "japan_delivery_pattern": "配送は日本国内に限ります"
+      "japan_delivery_pattern": "配送は日本国内に限ります",
+      "vendor_brand_aliases": {
+        "SOUNDPEATS JAPAN": "SOUNDPEATS"
+      }
     },
     {
-      "enabled": true,
+      "enabled": false,
       "reference_basis": "retailer_previous_price",
       "reference_pattern": "通常価格|通常販売価格|定価",
       "tax_pattern": "税込|税入|税金が含まれ",
@@ -137,7 +252,65 @@
         "/pages/guide"
       ],
       "japan_delivery_pattern": "全国一律：送料無料",
-      "catalog_page_size": 50
+      "catalog_page_size": 50,
+      "vendor_brand_aliases": {}
+    },
+    {
+      "enabled": true,
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価|参考価格",
+      "tax_pattern": "税込|消費税が含まれ|税込み|税金が含まれ",
+      "catalog_page_size": 250,
+      "shipping_rule": "keen",
+      "id": "keen",
+      "name": "KEEN Japan",
+      "base_url": "https://www.keenfootwear.jp",
+      "category": "shoes outdoor clothing",
+      "policy_paths": [
+        "/pages/terms-of-sale",
+        "/pages/legal-notice"
+      ],
+      "japan_delivery_pattern": "配送は日本国内のみ"
+    },
+    {
+      "enabled": true,
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価|参考価格",
+      "tax_pattern": "税込|消費税込み|税金が含まれ",
+      "catalog_page_size": 50,
+      "shipping_rule": "ecoflow",
+      "id": "ecoflow",
+      "name": "EcoFlow Japan",
+      "base_url": "https://jp.ecoflow.com",
+      "category": "electronics outdoor portable power appliances",
+      "policy_paths": [
+        "/policies/shipping-policy",
+        "/pages/online-store-policy"
+      ],
+      "japan_delivery_pattern": "日本国内\\s*に限ります",
+      "vendor_brand_aliases": {
+        "EcoFlow Japan": "EcoFlow"
+      }
+    },
+    {
+      "enabled": true,
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価|参考価格",
+      "tax_pattern": "税込|消費税が含まれ|税込み|税金が含まれ",
+      "catalog_page_size": 50,
+      "shipping_rule": "jackery",
+      "id": "jackery",
+      "name": "Jackery Japan",
+      "base_url": "https://www.jackery.jp",
+      "category": "electronics outdoor portable power",
+      "policy_paths": [
+        "/policies/shipping-policy",
+        "/pages/warranty-and-returns"
+      ],
+      "japan_delivery_pattern": "指定配送先（日本国内）に限ります",
+      "vendor_brand_aliases": {
+        "Jackery Japan": "Jackery"
+      }
     }
   ],
   "allowed_brands": [
@@ -172,6 +345,61 @@
     "Lenovo",
     "Bose",
     "JBL",
-    "Sennheiser"
+    "Sennheiser",
+    "UGREEN",
+    "Keychron",
+    "Edifier",
+    "SOUNDPEATS",
+    "KINTO",
+    "KEEN",
+    "EcoFlow",
+    "Jackery",
+    "Nebula",
+    "Salomon",
+    "Merrell",
+    "HOKA",
+    "Mizuno",
+    "Saucony",
+    "Under Armour",
+    "Columbia",
+    "The North Face",
+    "Patagonia",
+    "Montbell",
+    "Snow Peak",
+    "Coleman",
+    "Gregory",
+    "Osprey",
+    "Deuter",
+    "Samsonite",
+    "American Tourister",
+    "Delsey",
+    "Victorinox",
+    "T-fal",
+    "Le Creuset",
+    "Zwilling",
+    "Thermos",
+    "Tiger",
+    "Zojirushi",
+    "Iris Ohyama",
+    "Sharp",
+    "Toshiba",
+    "Hitachi",
+    "Dyson",
+    "Philips",
+    "Braun",
+    "Oral-B",
+    "Corsair",
+    "Razer",
+    "SteelSeries",
+    "HyperX",
+    "Belkin",
+    "TP-Link",
+    "Buffalo",
+    "Elecom",
+    "SanDisk",
+    "Western Digital",
+    "Seagate",
+    "Crucial",
+    "Kingston"
   ]
 }

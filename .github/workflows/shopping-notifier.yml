@@ -84,9 +84,9 @@ jobs:
           import json, os
           from pathlib import Path
           config = json.loads(Path("shopping-notifier/config.json").read_text())
-          ids = {"anker", "keychron", "ugreen", "edifier", "soundpeats"}
+          ids = {"anker", "keychron", "ugreen", "edifier", "soundpeats", "ecoflow", "jackery"}
           if os.environ["ELECTRONICS_AND_SHOES"] == "true":
-              ids |= {"shaka", "classicalelf"}
+              ids |= {"shaka", "classicalelf", "keen"}
               config["categories"] = ["electronics", "computer accessories", "appliances", "shoes"]
           for store in config["stores"]:
               store["enabled"] = store.get("enabled", True) and store["id"] in ids

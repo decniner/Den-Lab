@@ -35,6 +35,13 @@ def html_page(p=None, **offer_changes):
 
 
 class SourcesTests(unittest.TestCase):
+    def test_long_navigation_does_not_hide_product_price_evidence(self):
+        p = js_product()
+        navigation = '<h1>Navigation</h1>' + ('Menu ' * 1000)
+        verify_product(p, p["variants"][0], navigation + html_page(), SOURCE, CONFIG, NOW, POLICY)
+        with self.assertRaisesRegex(ValueError, "ambiguous_reference_basis"):
+            verify_product(p, p["variants"][0], '<h1>Navigation List price</h1>' + html_page().replace("List price", "Cost"), SOURCE, CONFIG, NOW, POLICY)
+
     def test_incomplete_analytics_product_is_not_variant_price_evidence(self):
         p = js_product()
         analytics = {"id": p["id"], "handle": p["handle"],
@@ -168,6 +175,15 @@ class SourcesTests(unittest.TestCase):
         self.assertEqual(len(result.deals), 1)
         self.assertEqual(result.status, "partial")
         self.assertIn("catalog_page_limit", result.limits)
+
+    def test_new_source_shipping_uses_standard_non_member_prices(self):
+        text = "2,999円以下：300円（北海道・沖縄 400円） 3,000円～13,999円：600円（北海道・沖縄 800円） 14,000円以上：送料無料"
+        self.assertEqual(_shipping({"shipping_rule": "keen"}, text, 13999), "JPY 600; Hokkaido/Okinawa JPY 800 (non-member)")
+        self.assertEqual(_shipping({"shipping_rule": "keen"}, text, 14000), "JPY 0 (item >=JPY 14,000; non-member)")
+        self.assertIn("JPY 300", _shipping({"shipping_rule": "keen"}, text, 2999))
+        self.assertEqual(_shipping({"shipping_rule": "ecoflow"}, "送料： 無料", 5000), "JPY 0 (Japan; current published policy)")
+        self.assertEqual(_shipping({"shipping_rule": "jackery"}, "全ての商品が送料無料", 5000), "JPY 0 (Japan; current published policy)")
+        self.assertEqual(_shipping({"shipping_rule": "ecoflow"}, "送料未確認", 5000), "Unknown; confirm at checkout")
 
     def test_shaka_shipping_requires_live_explicit_free_shipping_policy(self):
         self.assertEqual(_shipping({"shipping_rule": "shaka"}, "全国一律：送料無料", 10450), "JPY 0 (Japan; current published policy)")
