@@ -1,0 +1,89 @@
+name: Japan shopping discount notifier
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'shopping-notifier/**'
+      - '.github/workflows/shopping-notifier.yml'
+  schedule:
+    # 22:00 UTC = 07:00 next day Asia/Tokyo. Actions may start late.
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Live scan without Telegram delivery or history updates
+        required: false
+        default: false
+        type: boolean
+      test_digest:
+        description: Send one labeled live test digest; sent history unchanged
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: japan-shopping-discount-notifier
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Test shopping verifier, delivery, and history
+        run: python -m unittest discover -s shopping-notifier/tests -v
+      - name: Check existing notifier regressions
+        run: python -m unittest discover -s llm-prompt-radar/tests -v
+      - name: Compile notifier
+        run: python -m compileall -q shopping-notifier
+
+  digest:
+    needs: test
+    if: ${{ github.event_name != 'push' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Scan and deliver shopping digest
+        env:
+          # The exact same bot and destination as the existing Netflix notifier.
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ inputs.dry_run || false }}
+          TEST_DIGEST: ${{ inputs.test_digest || false }}
+        run: |
+          args=(--github-state)
+          if [ "$DRY_RUN" = "true" ] && [ "$TEST_DIGEST" = "true" ]; then
+            echo "::error::Choose either dry run or test digest, not both."
+            exit 1
+          fi
+          if [ "$DRY_RUN" = "true" ]; then
+            args+=(--dry-run)
+          elif [ "$TEST_DIGEST" = "true" ]; then
+            args+=(--test-digest)
+          fi
+          python -u shopping-notifier/notifier.py "${args[@]}"
+      - name: Preserve verification report and recovery history
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: shopping-verification-${{ github.run_id }}
+          path: |
+            shopping-notifier/run-report.json
+            shopping-notifier/state.json
+          if-no-files-found: warn
+          retention-days: 30

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.run.lock
+state.json
+state.json.tmp
+run-report.json
+tests/tmp*/
+tests/test-tmp-*/
