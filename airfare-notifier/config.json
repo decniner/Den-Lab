@@ -5,7 +5,7 @@
   "nights_max": 20,
   "threshold_jpy": 25000,
   "samples_per_day": 6,
-  "daily_summary": false,
+  "daily_summary": true,
   "request_timeout_seconds": 45,
   "request_attempts": 2
 }

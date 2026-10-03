@@ -25,7 +25,7 @@ Edit `config.json`:
 | `nights_min`, `nights_max` | 9, 20 | Nights from local Manila arrival to return departure |
 | `threshold_jpy` | 25000 | Source-displayed round-trip total threshold |
 | `samples_per_day` | 6 | Daily date pairs, spread across the window and rotating daily |
-| `daily_summary` | false | Alert only at/below threshold; true restores daily summaries including above-budget fallback/no verified fare |
+| `daily_summary` | true | Send a daily summary with the cheapest found fare, including above-budget fallback/no verified fare; false alerts only at/below threshold |
 | `request_timeout_seconds` | 45 | Per HTTP request timeout |
 | `request_attempts` | 2 | Bounded retries for read-only flight searches |
 
