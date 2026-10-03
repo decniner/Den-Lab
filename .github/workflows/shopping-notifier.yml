@@ -11,6 +11,11 @@ on:
     - cron: '0 22 * * *'
   workflow_dispatch:
     inputs:
+      electronics_only:
+        description: Scan electronics and gadget stores only for this manual run
+        required: false
+        default: false
+        type: boolean
       dry_run:
         description: Live scan without Telegram delivery or history updates
         required: false
@@ -63,10 +68,22 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GITHUB_TOKEN: ${{ github.token }}
+          ELECTRONICS_ONLY: ${{ inputs.electronics_only || false }}
           DRY_RUN: ${{ inputs.dry_run || false }}
           TEST_DIGEST: ${{ inputs.test_digest || false }}
         run: |
           args=(--github-state)
+          if [ "$ELECTRONICS_ONLY" = "true" ]; then
+            python - <<'PY'
+          import json
+          from pathlib import Path
+          config = json.loads(Path("shopping-notifier/config.json").read_text())
+          for store in config["stores"]:
+              store["enabled"] = store.get("enabled", True) and store["id"] in {"anker", "keychron", "ugreen"}
+          Path("shopping-notifier/electronics-run.json").write_text(json.dumps(config))
+          PY
+            args+=(--config shopping-notifier/electronics-run.json)
+          fi
           if [ "$DRY_RUN" = "true" ] && [ "$TEST_DIGEST" = "true" ]; then
             echo "::error::Choose either dry run or test digest, not both."
             exit 1

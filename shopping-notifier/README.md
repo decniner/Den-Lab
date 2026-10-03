@@ -19,6 +19,7 @@ python shopping-notifier/notifier.py
 
 In **GitHub Actions → Japan shopping discount notifier → Run workflow**, select:
 
+- **electronics_only**: for this manual run, scan Anker, Keychron, and UGREEN only; the daily schedule keeps its full coverage.
 - **dry_run**: live verification report and preview, no delivery/history changes.
 - **test_digest**: one clearly labeled live digest, possibly multiple Telegram messages, history unchanged.
 - Neither: normal delivery, using isolated persistent history.
