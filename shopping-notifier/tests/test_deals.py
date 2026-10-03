@@ -33,7 +33,7 @@ def deal(**kwargs):
 class DealsTests(unittest.TestCase):
     def test_docking_clothing_is_not_computer_accessory(self):
         selected = dict(CONFIG, categories=["electronics", "computer accessories", "appliances", "shoes"])
-        for title in ["ドッキングロングワンピース", "ドッキングヘンリートップス", "docking dress"]:
+        for title in ["ドッキングロングワンピース", "ドッキングヘンリートップス", "docking dress", "秋冬のマストハブ！ショルダーバッグ"]:
             with self.assertRaisesRegex(Rejected, "excluded_category"):
                 validate_variant(product(title=title), variant(), STORE, selected, NOW)
         self.assertIn("computer accessories", product_categories(product(title="USB ドッキングステーション"), STORE))
