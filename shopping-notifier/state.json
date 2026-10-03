@@ -120,12 +120,42 @@
       "reference_price": "15400",
       "sent_at": "2026-10-03T17:07:36+09:00",
       "url": "https://shaka-jp.com/products/sk-302v2-25ss-khazana-thong-ex?variant=43593377153206"
+    },
+    "ecoflow:14684998762863:51809553744239": {
+      "sale_price": "85800",
+      "reference_price": "196020",
+      "sent_at": "2026-10-03T18:00:18+09:00",
+      "url": "https://jp.ecoflow.com/products/delta-3-1500-portable-power-station?variant=51809553744239"
+    },
+    "ecoflow:7569353343137:52721651384687": {
+      "sale_price": "40000",
+      "reference_price": "88000",
+      "sent_at": "2026-10-03T18:00:18+09:00",
+      "url": "https://jp.ecoflow.com/products/river-2-pro-portable-power-station?variant=52721651384687"
+    },
+    "ecoflow:14718205198703:52003762471279": {
+      "sale_price": "3199",
+      "reference_price": "6990",
+      "sent_at": "2026-10-03T18:00:18+09:00",
+      "url": "https://jp.ecoflow.com/products/rapid-45w-gan-usb-c?variant=52003762471279"
+    },
+    "ecoflow:14631174177135:51670338208111": {
+      "sale_price": "8300",
+      "reference_price": "16910",
+      "sent_at": "2026-10-03T18:00:18+09:00",
+      "url": "https://jp.ecoflow.com/products/ecoflow-rapid-magnetic-power-bank-5000mah-rapid-65w-gan?variant=51670338208111"
+    },
+    "ecoflow:15062073803119:53384583217519": {
+      "sale_price": "165740",
+      "reference_price": "331480",
+      "sent_at": "2026-10-03T18:00:18+09:00",
+      "url": "https://jp.ecoflow.com/products/delta-3-max-white-portable-power-station?variant=53384583217519"
     }
   },
   "last_digest": {
     "date": "2026-10-03",
-    "coverage_key": "959ba2fe1fb60847c2e49bdd9c8c5dc218d5efb6e0280c065fb35cb7c427cb2b",
-    "completed_at": "2026-10-03T17:43:22+09:00",
-    "digest_hash": "9891a229a2d33703a8990a5894b610b8dcdcd061933cbd500a4192bc80782fd5"
+    "coverage_key": "fe4919d0298d8631b8ae2b5dd8c1b35ddbb11992a97c7aad9e0dac827546cfe4",
+    "completed_at": "2026-10-03T18:00:18+09:00",
+    "digest_hash": "68683e151dcb5b22b940281f17813292216adffd32a249c00eaadd46233a35c8"
   }
 }
