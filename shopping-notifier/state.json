@@ -180,12 +180,42 @@
       "reference_price": "10000",
       "sent_at": "2026-10-03T18:32:26+09:00",
       "url": "https://phenixstore.com/products/poz-23007w?variant=45140304003376"
+    },
+    "phenixstore-com:9578701586736:49016136302896": {
+      "sale_price": "6300",
+      "reference_price": "21000",
+      "sent_at": "2026-10-03T18:32:28+09:00",
+      "url": "https://phenixstore.com/products/poo-24052?variant=49016136302896"
+    },
+    "phenixstore-com:9616661709104:49132467192112": {
+      "sale_price": "2610",
+      "reference_price": "8700",
+      "sent_at": "2026-10-03T18:32:28+09:00",
+      "url": "https://phenixstore.com/products/esw24gl52?variant=49132467192112"
+    },
+    "toffyjapan:10095232319762:51142601113874": {
+      "sale_price": "1400",
+      "reference_price": "3960",
+      "sent_at": "2026-10-03T18:32:28+09:00",
+      "url": "https://toffy.jp/products/hw-ds3?variant=51142601113874"
+    },
+    "phenixstore-com:8634451231024:46618175537456": {
+      "sale_price": "16650",
+      "reference_price": "45000",
+      "sent_at": "2026-10-03T18:32:28+09:00",
+      "url": "https://phenixstore.com/products/esw23ot64?variant=46618175537456"
+    },
+    "phenixstore-com:8720368337200:46824032928048": {
+      "sale_price": "1332",
+      "reference_price": "3600",
+      "sent_at": "2026-10-03T18:32:28+09:00",
+      "url": "https://phenixstore.com/products/esw23hw50?variant=46824032928048"
     }
   },
   "last_digest": {
     "date": "2026-10-03",
-    "coverage_key": "fe4919d0298d8631b8ae2b5dd8c1b35ddbb11992a97c7aad9e0dac827546cfe4",
-    "completed_at": "2026-10-03T18:00:18+09:00",
-    "digest_hash": "68683e151dcb5b22b940281f17813292216adffd32a249c00eaadd46233a35c8"
+    "coverage_key": "927875c5ff0a0e767cb04a8910db552c3117868999b5db721cbf30fe0efddf3e",
+    "completed_at": "2026-10-03T18:32:28+09:00",
+    "digest_hash": "67299279998ab6fedb04c2ed6b0c8c86070ae3dad0f525a469fcf4e74120ccbf"
   }
 }
