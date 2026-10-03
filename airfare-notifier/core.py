@@ -112,28 +112,33 @@ def summary(fare: Fare | None, cfg: Config, now: datetime, errors: list[str], ch
         heading = '🎯 Target price found.' if fare.price <= cfg.threshold_jpy else 'Lowest fare found — above budget'
     else:
         heading = 'Search failed; no fare can be reported.' if errors else 'No verified fare found today.'
-    lines = [heading, 'NRT → MNL → NRT · 1 adult · economy · both flights nonstop',
-             'cheapest found among checked sources (OctoTrip; limited date sample)',
-             f'Scope: {add_months(now.date(), cfg.departure_months_min)}–{add_months(now.date(), cfg.departure_months_max)} departures; '
-             f'{cfg.nights_min}–{cfg.nights_max} nights; {checked} date pairs checked.']
-    if errors: lines.append('Coverage incomplete — ' + '; '.join(clean(e, 100) for e in sorted(set(errors))))
+    lines = ['✈  DEN–LAB  /  AIRFARE', 'NARITA  ⇄  MANILA', '', heading]
     if fare:
         raw = fare.raw
         airlines = sorted({leg['carrier'] for side in ('outbound', 'return') for leg in raw[side]['legs']})
-        lines.append('Airline(s): ' + clean(', '.join(airlines), 120))
-        for side, label, origin_zone, destination_zone in [('outbound', 'Outbound', 'JST', 'PHT'), ('return', 'Return', 'PHT', 'JST')]:
-            s = raw[side]
-            lines.append(f'{label}: {s["departure_date"]} {s["departure_time"]} {origin_zone} → '
-                         f'{s["arrival_date"]} {s["arrival_time"]} {destination_zone} ({clean(s["legs"][0]["flight_number"], 30)})')
-        lines.extend([f'Stay: {fare.nights} nights', f'Displayed round-trip total: ¥{fare.price:,.2f} JPY'])
+        lines.extend([f'¥{fare.price:,.2f} JPY · round-trip total',
+                      f'{fare.nights} nights · 1 adult · economy · both flights nonstop'])
         if fare.price > cfg.threshold_jpy:
             excess = (fare.price - cfg.threshold_jpy).to_integral_value(rounding=ROUND_CEILING)
             lines.append(f'Above ¥{cfg.threshold_jpy:,} budget by ¥{excess:,} (rounded up).')
-        lines.extend([f'Baggage (source-listed, unverified): {clean(raw.get("baggage") or "Not supplied")}',
+        else:
+            lines.append(f'Within your ¥{cfg.threshold_jpy:,} budget')
+        lines.extend(['', '──────────────', '', 'Airline(s): ' + clean(', '.join(airlines), 120)])
+        for side, label, origin_zone, destination_zone in [('outbound', 'Outbound', 'JST', 'PHT'), ('return', 'Return', 'PHT', 'JST')]:
+            s = raw[side]
+            lines.extend(['', f'{label.upper()}  ·  {clean(s["legs"][0]["flight_number"], 30)}',
+                          f'{s["departure"]}  {s["departure_date"]} · {s["departure_time"]} {origin_zone}',
+                          f'  → {s["arrival"]}  {s["arrival_date"]} · {s["arrival_time"]} {destination_zone}'])
+        lines.extend(['', '──────────────', '', 'BAGGAGE & FARE NOTES',
+                      f'Baggage (source-listed, unverified): {clean(raw.get("baggage") or "Not supplied")}',
                       'Confirm baggage allowance and fare restrictions with the seller.',
                       'Additional costs not independently checked; optional extras not added.',
-                      'Source: OctoTrip / ' + clean(raw.get('gate', 'seller not supplied'), 80), raw['booking_url'],
+                      '', 'BOOKING', 'Source: OctoTrip / ' + clean(raw.get('gate', 'seller not supplied'), 80), raw['booking_url'], '',
                       'Source availability and price refreshed before this alert; supplier checkout not verified.'])
+    lines.extend(['', 'SEARCH DETAILS', 'cheapest found among checked sources (OctoTrip; limited date sample)',
+                  f'Scope: {add_months(now.date(), cfg.departure_months_min)}–{add_months(now.date(), cfg.departure_months_max)} departures; '
+                  f'{cfg.nights_min}–{cfg.nights_max} nights; {checked} date pairs checked.'])
+    if errors: lines.append('Coverage incomplete — ' + '; '.join(clean(e, 100) for e in sorted(set(errors))))
     lines.append(f'Verification timestamp: {now.isoformat(timespec="seconds")} · Asia/Tokyo')
     lines.append('Booking links may expire in about 15 minutes. No reservations made.')
     return '\n'.join(lines)
