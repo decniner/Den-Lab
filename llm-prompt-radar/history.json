@@ -21,42 +21,53 @@
           },
           "positive_ratio": null,
           "rating_count": 0
+        },
+        {
+          "timestamp": 1791008306.689047,
+          "date": "2026-10-03",
+          "engagement": 7886,
+          "velocity_per_hour": 0.0912141917402175,
+          "components": {
+            "stars": 7886
+          },
+          "positive_ratio": null,
+          "rating_count": 0
         }
       ],
       "cluster_id": "51a12f3d199953542c544442",
       "engagement_metrics": {
-        "stars": 7884,
-        "stars_per_day_since_repo_creation": 10.921,
+        "stars": 7886,
+        "stars_per_day_since_repo_creation": 10.909,
         "engagement_components": {
-          "stars": 7884
+          "stars": 7886
         },
         "repository": "NirDiamant/Prompt_Engineering",
         "license": "NOASSERTION",
-        "age_hours": 17326.0,
+        "age_hours": 17349.4,
         "date_basis": "repository last updated; exact prompt publication date unavailable",
         "quality_filter": "passed heuristic quality filters",
         "component_velocity_per_hour": {
-          "stars": 0.1054
+          "stars": 0.0912
         },
-        "velocity_basis": "observed 1 additional source interactions over 9.5h",
-        "source_velocity_per_hour": 0.1054,
+        "velocity_basis": "observed 3 additional source interactions over 32.9h",
+        "source_velocity_per_hour": 0.0912,
         "source_sightings": 1,
         "duplicate_cluster_size": 1,
         "normalized_scores": {
           "engagement": 0.5,
-          "trending": 0.021,
+          "trending": 0.018,
           "positive": 0.5,
-          "recency": 0.998,
+          "recency": 0.987,
           "usefulness": 0.62
         },
-        "composite_score": 0.467
+        "composite_score": 0.465
       },
       "rating": null,
       "rating_count": 0,
-      "calculated_score": 0.46689377142564714,
-      "trending_score": 0.020899373226349598,
+      "calculated_score": 0.4645791405572622,
+      "trending_score": 0.018201590086052995,
       "quality_score": 0.62,
-      "last_seen": "2026-10-02",
+      "last_seen": "2026-10-03",
       "notification_date": "2026-10-01"
     }
   },
