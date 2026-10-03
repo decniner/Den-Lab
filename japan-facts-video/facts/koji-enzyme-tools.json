@@ -1,0 +1,166 @@
+{
+  "fact_id": "koji-enzyme-tools",
+  "semantic_key": "koji-enzymes-starch-protein-breakdown",
+  "category": "food-science",
+  "sources": [
+    {
+      "id": "nrib",
+      "url": "https://www.nrib.go.jp/English/sake/esakefaq02.html",
+      "publisher": "National Research Institute of Brewing",
+      "independence_group": "nrib",
+      "authoritative": true,
+      "published_date": null,
+      "role": "Authoritative specialist definition; no beverage health advice",
+      "excerpts": [
+        {
+          "id": "culture",
+          "quote": "Koji is cultured koji-mold on steamed rice"
+        },
+        {
+          "id": "enzymes",
+          "quote": "enzymes that break down the starch and protein"
+        }
+      ]
+    },
+    {
+      "id": "jetro",
+      "url": "https://japan-food.jetro.go.jp/odan/us/about/index.html",
+      "publisher": "Japan External Trade Organization",
+      "independence_group": "jetro",
+      "authoritative": true,
+      "published_date": null,
+      "role": "Independent government food-science explanation; health marketing claims excluded",
+      "excerpts": [
+        {
+          "id": "breakdown",
+          "quote": "break down proteins into amino acids and starch into sugar"
+        }
+      ]
+    },
+    {
+      "id": "maff",
+      "url": "https://www.maff.go.jp/e/policies/market/dento_syoku/bunrui/inryou.html",
+      "publisher": "Ministry of Agriculture Forestry and Fisheries",
+      "independence_group": "maff",
+      "authoritative": true,
+      "published_date": null,
+      "role": "Government description of koji amazake versus sake-lees amazake",
+      "excerpts": [
+        {
+          "id": "sweet",
+          "quote": "Its characteristic sweetness comes from"
+        },
+        {
+          "id": "lees",
+          "quote": "dissolving sake lees in hot water and adding sugar"
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "culture",
+      "text": "Koji is grain cultured with koji mould.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "nrib",
+          "quote_ref": "culture"
+        }
+      ]
+    },
+    {
+      "id": "enzymes",
+      "text": "Koji enzymes break starch into sugars and proteins into amino acids. Tiny cutters is an explanatory metaphor.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "nrib",
+          "quote_ref": "enzymes"
+        },
+        {
+          "source": "jetro",
+          "quote_ref": "breakdown"
+        }
+      ]
+    },
+    {
+      "id": "amazake",
+      "text": "Koji amazake sweetness comes from rice starch acted on by koji-derived enzymes. Sake-lees amazake may be made with added sugar.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "maff",
+          "quote_ref": "sweet"
+        },
+        {
+          "source": "maff",
+          "quote_ref": "lees"
+        }
+      ]
+    }
+  ],
+  "script": {
+    "title": "How Koji Turns Rice Starch into Sweetness | Japan Explained",
+    "description": "Koji supplies enzymes that break down starch and protein. Koji amazake gets characteristic sweetness from enzyme action on rice starch; sake-lees amazake is a different preparation. No health or home-brewing advice. Original illustrative diagrams. #JapanExplained #Shorts",
+    "segments": [
+      {
+        "phase": "hook",
+        "scene": "koji-hook",
+        "text": "Koji can make a rice drink sweet by breaking down its starch. The surprising part is where that sweetness comes from.",
+        "claim_ids": [
+          "enzymes",
+          "amazake"
+        ]
+      },
+      {
+        "phase": "context",
+        "scene": "koji-culture",
+        "text": "Koji is grain, such as steamed rice, cultured with a particular mould. It provides enzymes that help transform the food.",
+        "claim_ids": [
+          "culture",
+          "enzymes"
+        ]
+      },
+      {
+        "phase": "mechanism",
+        "scene": "koji-starch",
+        "text": "Think of those enzymes as tiny cutters. They break starch down into sugars. In koji amazake, that's what creates the drink's characteristic sweetness.",
+        "claim_ids": [
+          "enzymes",
+          "amazake"
+        ]
+      },
+      {
+        "phase": "mechanism",
+        "scene": "koji-protein",
+        "text": "Other enzymes break proteins down into amino acids. So koji works on more than one kind of ingredient inside the grain.",
+        "claim_ids": [
+          "enzymes"
+        ]
+      },
+      {
+        "phase": "limits",
+        "scene": "koji-limit",
+        "text": "But not every drink called amazake is made the same way. A version made with sake lees can have sugar added.",
+        "claim_ids": [
+          "amazake"
+        ]
+      },
+      {
+        "phase": "takeaway",
+        "scene": "koji-takeaway",
+        "text": "The takeaway: fermentation isn't just waiting. Koji supplies chemical tools that change what's already in the food.",
+        "claim_ids": [
+          "culture",
+          "enzymes"
+        ]
+      }
+    ]
+  },
+  "review": {
+    "reviewed_by": "Assistant current specialist NRIB and independent JETRO/MAFF source review; original wording; no health claims",
+    "reviewed_at": "2026-10-03T02:28:04.976947+00:00",
+    "content_sha256": "6b364fcfe96bdb13569f5d5ec4206140681c34900082d3caa9d5790299416f46"
+  }
+}

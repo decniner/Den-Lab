@@ -1,0 +1,208 @@
+{
+  "fact_id": "dual-frequency-grid",
+  "semantic_key": "japan-electricity-two-frequencies",
+  "category": "infrastructure",
+  "sources": [
+    {
+      "id": "tepco",
+      "url": "https://www.tepco.co.jp/en/hd/about/facilities/substations-e.html",
+      "publisher": "Tokyo Electric Power Company",
+      "independence_group": "tepco",
+      "authoritative": true,
+      "published_date": null,
+      "role": "Primary operator explanation; no historical capacities used",
+      "excerpts": [
+        {
+          "id": "split",
+          "quote": "50Hz in the eastern part of Japan and at 60Hz in the west"
+        },
+        {
+          "id": "conversion",
+          "quote": "Frequency conversion is therefore necessary when interchanging electric power between areas."
+        }
+      ]
+    },
+    {
+      "id": "jnto",
+      "url": "https://www.japan.travel/en/plan/plug-and-electricity/",
+      "publisher": "Japan National Tourism Organization",
+      "independence_group": "jnto",
+      "authoritative": true,
+      "published_date": null,
+      "role": "Independent government travel reference",
+      "excerpts": [
+        {
+          "id": "split",
+          "quote": "50 Hertz in eastern Japan and 60 Hertz in western Japan"
+        },
+        {
+          "id": "voltage",
+          "quote": "uniformly 100 volts"
+        }
+      ]
+    },
+    {
+      "id": "kepco",
+      "url": "https://www.kepco.co.jp/english/home/denki/01.html",
+      "publisher": "Kansai Electric Power Company",
+      "independence_group": "kepco",
+      "authoritative": true,
+      "published_date": null,
+      "role": "Primary appliance compatibility guidance",
+      "excerpts": [
+        {
+          "id": "manual",
+          "quote": "check the operating manual or consult with the manufacturer directly"
+        }
+      ]
+    },
+    {
+      "id": "eia",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=3990",
+      "publisher": "US Energy Information Administration",
+      "independence_group": "eia",
+      "authoritative": true,
+      "published_date": "2011-11-21",
+      "role": "Specialist definition of alternating-current frequency; no US policy claims transferred to Japan",
+      "excerpts": [
+        {
+          "id": "definition",
+          "quote": "60 cycles per second (hertz)"
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "split",
+      "text": "Eastern Japan uses 50 Hz and western Japan 60 Hz.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "tepco",
+          "quote_ref": "split"
+        },
+        {
+          "source": "jnto",
+          "quote_ref": "split"
+        }
+      ]
+    },
+    {
+      "id": "frequency",
+      "text": "Hertz measures cycles per second of alternating current. The illustrated 50/60 cycle comparison follows that definition.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "eia",
+          "quote_ref": "definition"
+        }
+      ]
+    },
+    {
+      "id": "conversion",
+      "text": "Frequency conversion is necessary for power interchange between the two regions.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "tepco",
+          "quote_ref": "conversion"
+        }
+      ]
+    },
+    {
+      "id": "voltage",
+      "text": "Common household supply is 100 volts; voltage is distinct from frequency. Not a claim about every Japanese outlet.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "jnto",
+          "quote_ref": "voltage"
+        }
+      ]
+    },
+    {
+      "id": "compatibility",
+      "text": "Appliance compatibility requires checking the manual or manufacturer, not assuming a matching plug is enough.",
+      "status": "established",
+      "evidence": [
+        {
+          "source": "kepco",
+          "quote_ref": "manual"
+        }
+      ]
+    }
+  ],
+  "script": {
+    "title": "Japan's Electricity Has Two Rhythms | Japan Explained",
+    "description": "Why eastern Japan uses 50 Hz, western Japan 60 Hz, and power interchange needs frequency conversion. Illustrative wave diagrams, not scale measurements. Common household voltage is distinct from frequency. #JapanExplained #Shorts",
+    "segments": [
+      {
+        "phase": "hook",
+        "scene": "grid-hook",
+        "text": "Japan's power grid doesn't run to one rhythm. The east and west use different electrical frequencies.",
+        "claim_ids": [
+          "split"
+        ]
+      },
+      {
+        "phase": "context",
+        "scene": "grid-split",
+        "text": "Eastern Japan uses fifty hertz. Western Japan uses sixty. Hertz means cycles per second.",
+        "claim_ids": [
+          "split",
+          "frequency"
+        ]
+      },
+      {
+        "phase": "mechanism",
+        "scene": "grid-waves",
+        "text": "Think of alternating current as a repeating rhythm. In one second, the eastern supply completes fifty cycles, while the western supply completes sixty.",
+        "claim_ids": [
+          "frequency",
+          "split"
+        ]
+      },
+      {
+        "phase": "mechanism",
+        "scene": "grid-convert",
+        "text": "So sharing electricity across those regions takes frequency conversion. The power has to match the receiving side's rhythm.",
+        "claim_ids": [
+          "conversion"
+        ]
+      },
+      {
+        "phase": "context",
+        "scene": "grid-voltage",
+        "text": "That's different from voltage. Japan's common household supply is one hundred volts, but frequency still depends on the region.",
+        "claim_ids": [
+          "voltage",
+          "split"
+        ]
+      },
+      {
+        "phase": "limits",
+        "scene": "grid-check",
+        "text": "A plug that fits doesn't settle compatibility. Check the appliance manual or ask its manufacturer.",
+        "claim_ids": [
+          "compatibility"
+        ]
+      },
+      {
+        "phase": "takeaway",
+        "scene": "grid-takeaway",
+        "text": "The takeaway: electricity has both a level and a rhythm. In Japan, understanding both matters.",
+        "claim_ids": [
+          "voltage",
+          "frequency",
+          "compatibility"
+        ]
+      }
+    ]
+  },
+  "review": {
+    "reviewed_by": "Assistant live primary operator and government source review, original wording, no historical-origin or converter-capacity claims",
+    "reviewed_at": "2026-10-03T01:28:52.327512+00:00",
+    "content_sha256": "ead3f05b56138e3330ff8996be5c9498bd471e4fb09b0905e0360ac3bcadb408"
+  }
+}

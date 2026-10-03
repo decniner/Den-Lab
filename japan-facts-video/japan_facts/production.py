@@ -190,7 +190,9 @@ def composition(path,duration,captions,spans,config):
         box(a,b,x,y+57,w-14,8,'7CE8D0',3)
     box(0,duration,80,105,6,55,'7CE8D0')
     text(0,duration,'JAPAN EXPLAINED',106,110,31)
-    text(0,duration,'ENGINEERING / EARTHQUAKE EARLY WARNING',80,202,21,'96AFBA',False)
+    topic=config.get('fact_id','shinkansen-wave-warning')
+    label={'dual-frequency-grid':'INFRASTRUCTURE / ELECTRICITY','koji-enzyme-tools':'FOOD SCIENCE / KOJI ENZYMES'}.get(topic,'ENGINEERING / EARTHQUAKE EARLY WARNING')
+    text(0,duration,label,80,202,21,'96AFBA',False)
     # Slow background grid pulses; entirely original vector geometry.
     for x in range(80,900,82): box(0,duration,x,580,1,600,'12232D',0)
     for y in range(580,1181,75): box(0,duration,80,y,820,1,'12232D',0)
@@ -203,6 +205,20 @@ def composition(path,duration,captions,spans,config):
       'signal':('THE SIGNAL\nGETS A HEAD START.','Communications outrun seismic waves.'),
       'limits':('LESS DISTANCE.\nLESS WARNING.','Close to the source, warning may be late.'),
       'takeaway':('USE THE\nTIME DIFFERENCE.','Earlier detection can reduce risk.')}
+    headings.update({
+      'grid-hook':('ONE COUNTRY.\nTWO RHYTHMS.','Electricity has a frequency.'),
+      'grid-split':('EAST: 50 Hz\nWEST: 60 Hz','Two different electrical rhythms.'),
+      'grid-waves':('COUNT THE\nCYCLES.','Hertz means cycles per second.'),
+      'grid-convert':('MATCH THE\nOTHER RHYTHM.','Power interchange needs frequency conversion.'),
+      'grid-voltage':('LEVEL AND\nRHYTHM.','Voltage and frequency are different.'),
+      'grid-check':('CHECK THE\nAPPLIANCE.','A matching plug is not the whole answer.'),
+      'grid-takeaway':('KNOW BOTH.\nLEVEL + RHYTHM.','Understand voltage and frequency.'),
+      'koji-hook':('SWEETNESS\nFROM STARCH.','Koji supplies enzymes.'),
+      'koji-culture':('GRAIN +\nKOJI MOULD.','Cultured grains provide chemical tools.'),
+      'koji-starch':('STARCH\nBECOMES SUGARS.','The source of koji amazake sweetness.'),
+      'koji-protein':('PROTEINS\nBREAK DOWN TOO.','Enzymes also produce amino acids.'),
+      'koji-limit':('SAME NAME.\nDIFFERENT RECIPE.','Koji amazake and sake-lees amazake differ.'),
+      'koji-takeaway':('CHEMICAL\nTOOLS AT WORK.','Koji transforms ingredients already present.')})
     for span in spans:
         a,b=span['start'],span['end']; scene=span['scene']
         if scene not in headings: raise Failure('This fact pack needs a supported reviewed diagram scene.')
@@ -210,7 +226,30 @@ def composition(path,duration,captions,spans,config):
         text(a,b,heading,80,300,64,height=180)
         text(a,b,subtitle,80,505,26,'96AFBA',False,height=80)
         box(a,b,80,645,800,510,'10212B',1)
-        if scene in ('hook','context','brakes','takeaway'):
+        if scene.startswith('koji-'):
+            for row,left,right,rgb in ((755,'STARCH','SUGARS','7CE8D0'),(995,'PROTEIN','AMINO ACIDS','FFB46A')):
+                text(a,b,left,120,row-75,30,rgb)
+                text(a,b,right,520,row-75,29,rgb)
+                for x in range(125,350,40): box(a,b,x,row,32,32,rgb,3)
+                box(a,b,368,row+14,111,4,'EAF0F1',3)
+                shape(a,b,469,row+4,'m 0 0 l 18 12 0 24','EAF0F1',3)
+                for x in range(525,765,60): box(a,b,x,row,18,18,rgb,3)
+            text(a,b,'ENZYME ACTION',120,875,28)
+        elif scene.startswith('grid-'):
+            text(a,b,'EAST: 50 Hz',120,695,32,'7CE8D0')
+            text(a,b,'WEST: 60 Hz',120,925,32,'FFB46A')
+            for row,cycles,rgb in ((805,5,'7CE8D0'),(1035,6,'FFB46A')):
+                box(a,b,125,row,660,2,'4E626D',2)
+                points=[(x,round(55*math.sin((x/650)*cycles*math.tau))) for x in range(0,651,5)]
+                outline=points+[(x,y+4) for x,y in reversed(points)]
+                drawing='m '+str(outline[0][0])+' '+str(outline[0][1])+' l '+' '.join(f'{x} {y}' for x,y in outline[1:])
+                shape(a,b,125,row,drawing,rgb,3)
+                for t in range(0,math.ceil(b-a),3):
+                    start=a+t; end=min(b,start+3)
+                    if end>start: shape(start,end,130,row-65,'m 0 0 l 3 0 3 130 0 130','EAF0F1',4,f'\\move(130,{row-65},775,{row-65},0,{int((end-start)*1000)})')
+            if scene=='grid-convert': text(a,b,'FREQUENCY CONVERSION',160,875,25)
+            if scene=='grid-voltage': text(a,b,'COMMON HOUSEHOLD SUPPLY: 100 V',120,875,22)
+        elif scene in ('hook','context','brakes','takeaway'):
             box(a,b,115,1000,700,5,'96AFBA',2)
             for x in range(130,820,40): box(a,b,x,1010,22,5,'4E626D',2)
             train(a,b,270,895)
@@ -270,6 +309,7 @@ def render(store,config):
     if digest(store.path/'script.json')!=state['script_sha256']: raise Failure('Reviewed script changed; start a corrected edition.')
     synthesize(store,config)
     script=read(store.path/'script.json'); duration,captions,spans=combine_speech(store,script)
+    config=dict(config,fact_id=state['fact_id'])
     composition(store.path/'composition.ass',duration,captions,spans,config)
     ffmpeg=tool(config,'ffmpeg'); video=store.path/'video.mp4'
     run([ffmpeg,'-y','-f','lavfi','-i',f'color=c=0x08151e:s=1080x1920:r=30:d={duration}',
@@ -322,6 +362,6 @@ def validate(store,config):
     state['manifest']={'title':script['title'],'description':script.get('description','Japan Explained: how it works and why it matters.')+
                        '\nOriginal illustrative diagrams, not documentary footage. Synthetic narration.\nSources:\n'+'\n'.join(s['url'] for s in evidence['sources']),
                        'video_sha256':digest(video),'duration':duration,'containsSyntheticMedia':True,'categoryId':'27',
-                       'tags':['Japan Explained','Japan','Shinkansen','earthquake early warning','engineering','Shorts'],
+                       'tags':['Japan Explained','Japan','Shorts']+({'dual-frequency-grid':['electricity','frequency','infrastructure'],'koji-enzyme-tools':['koji','food science','amazake']}.get(state['fact_id'],['Shinkansen','earthquake early warning','engineering'])),
                        'artifacts':{str(store.path/name):digest(store.path/name) for name in artifacts}}
     state['render_manifest_sha256']=manifest_hash(state); state.pop('inspection',None); store.save(state); return report

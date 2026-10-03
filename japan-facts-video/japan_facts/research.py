@@ -169,6 +169,15 @@ def snapshot_texts(snapshot,pack,at=None):
     except Failure: raise
     except (KeyError,ValueError,TypeError,AttributeError) as exc: raise Failure('Missing or malformed attributed source snapshot.') from exc
 
+def reviewed_candidates(ranked,catalog_path):
+    folder=Path(catalog_path).resolve().parent
+    eligible=[]
+    for candidate in ranked:
+        pack=(folder/candidate.get('pack',candidate['fact_id']+'.json')).resolve()
+        if not pack.is_relative_to(folder): raise Failure('Candidate fact pack must remain inside the fact catalog directory.')
+        if pack.is_file(): eligible.append(candidate)
+    return eligible
+
 def research_edition(store,config):
     check_providers(config)
     if (store.path/'edition.json').exists(): raise Failure('Edition already exists; inspect or resume its next stage.')
@@ -178,7 +187,9 @@ def research_edition(store,config):
     # Selection and reservation share a global lock across editions.
     gate=Store(store.path.parent,'research-selection')
     with gate.lock():
-        selected=choose(ranked,history(store.path.parent,seed),store.edition)
+        ready=reviewed_candidates(ranked,config.get('catalog','facts/catalog.json'))
+        if not ready: raise Failure('No reviewed fact packs are available; add verified original topics before daily generation.')
+        selected=choose(ready,history(store.path.parent,seed),store.edition)
         pack_path=Path(config.get('catalog','facts/catalog.json')).parent/selected.get('pack',f"{selected['fact_id']}.json")
         if not pack_path.is_file(): raise Failure(f"Selected topic {selected['fact_id']} needs a reviewed fact pack at {pack_path}. No script/render/upload attempted.")
         pack=read(pack_path)
