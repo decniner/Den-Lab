@@ -210,6 +210,42 @@
       "reference_price": "3600",
       "sent_at": "2026-10-03T18:32:28+09:00",
       "url": "https://phenixstore.com/products/esw23hw50?variant=46824032928048"
+    },
+    "phenixstore-com:9578701553968:49016135745840": {
+      "sale_price": "8800",
+      "reference_price": "22000",
+      "sent_at": "2026-10-03T19:28:24+09:00",
+      "url": "https://phenixstore.com/products/poo-24051?variant=49016135745840"
+    },
+    "phenixstore-com:9578700865840:49016132567344": {
+      "sale_price": "8000",
+      "reference_price": "20000",
+      "sent_at": "2026-10-03T19:28:24+09:00",
+      "url": "https://phenixstore.com/products/pob-24051?variant=49016132567344"
+    },
+    "phenixstore-com:9550566097200:48917577728304": {
+      "sale_price": "7200",
+      "reference_price": "18000",
+      "sent_at": "2026-10-03T19:28:24+09:00",
+      "url": "https://phenixstore.com/products/poo-24013?variant=48917577728304"
+    },
+    "toffyjapan:10095234187538:51142613270802": {
+      "sale_price": "9600",
+      "reference_price": "23100",
+      "sent_at": "2026-10-03T19:28:24+09:00",
+      "url": "https://toffy.jp/products/hw-vc2?variant=51142613270802"
+    },
+    "toffyjapan:10095236645138:51142624411922": {
+      "sale_price": "1230",
+      "reference_price": "2728",
+      "sent_at": "2026-10-03T19:28:24+09:00",
+      "url": "https://toffy.jp/products/hfn6?variant=51142624411922"
+    },
+    "toffyjapan:8883468894482:47419932508434": {
+      "sale_price": "10000",
+      "reference_price": "22000",
+      "sent_at": "2026-10-03T19:28:24+09:00",
+      "url": "https://toffy.jp/products/k-gp1?variant=47419932508434"
     }
   },
   "last_digest": {
