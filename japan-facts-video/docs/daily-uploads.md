@@ -90,6 +90,12 @@ passed. Five representative frames were inspected; final listening remains
 pending under owner-authorized private review. API readback confirmed the exact
 destination channel and **private** visibility. Paid jobs: **0**.
 
+A subsequent API readback at 2026-10-03 03:00 UTC returned **public** visibility;
+the private-upload command correctly refused to report it as private. No public
+publishing command was executed in this setup. The initial private upload is a
+historical observation; do not describe the later current visibility as private.
+Retain its upload state even if the owner changes visibility in YouTube Studio.
+
 Tests: **77 passed** in the final full-suite run at 2026-10-03 02:43 UTC.
 Koji diagram text bounds, fact-pack review checksum and next-unused-topic
 selection also passed. Earlier sandbox temporary-directory ACL failures were
