@@ -1,0 +1,76 @@
+name: NRT Manila airfare alerts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'airfare-notifier/**'
+      - '.github/workflows/airfare-notifier.yml'
+      - 'shopping-notifier/delivery.py'
+      - 'shopping-notifier/state.py'
+  schedule:
+    # 22:00 UTC = 07:00 next day Asia/Tokyo; Actions may run late or drop jobs.
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Live searches without Telegram or notification-state changes
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nrt-mnl-airfare-notifier
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Test airfare and existing notifier behavior
+        run: |
+          python -m unittest discover -s airfare-notifier/tests -v
+          python -m unittest discover -s shopping-notifier/tests -v
+          python -m unittest discover -s llm-prompt-radar/tests -v
+          python -m compileall -q airfare-notifier
+
+  notify:
+    needs: test
+    if: ${{ github.event_name != 'push' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Search and notify qualifying fare
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ inputs.dry_run || false }}
+        run: |
+          args=(--github-state)
+          if [ "$DRY_RUN" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python -u airfare-notifier/notifier.py "${args[@]}"
+      - name: Preserve state recovery backup
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: airfare-state-${{ github.run_id }}
+          path: airfare-notifier/state.json
+          if-no-files-found: ignore
+          retention-days: 30
