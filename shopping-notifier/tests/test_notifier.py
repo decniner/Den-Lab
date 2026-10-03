@@ -12,6 +12,59 @@ from test_deals import CONFIG, NOW, STORE, deal
 
 
 class NotifierTests(unittest.TestCase):
+    def test_large_source_config_requires_distinct_origins_and_bounded_workers(self):
+        baseline = json.loads((Path(__file__).resolve().parents[1] / "config.json").read_text(encoding="utf-8"))
+        template = next(s for s in baseline["stores"] if s.get("enabled", True))
+        stores = [dict(template, id=f"shop-{i}", base_url=f"https://shop-{i}.example") for i in range(90)]
+        with temporary_directory() as directory:
+            path = Path(directory) / "config.json"
+            cfg = dict(baseline, stores=stores, max_parallel_sources=4)
+            path.write_text(json.dumps(cfg), encoding="utf-8")
+            self.assertEqual(len(load_config(path)["stores"]), 90)
+            for bad in [dict(cfg, max_parallel_sources=5), dict(cfg, stores=stores + [dict(stores[0], id="duplicate")])]:
+                path.write_text(json.dumps(bad), encoding="utf-8")
+                with self.assertRaises(ValueError): load_config(path)
+
+    def test_parallel_scans_overlap_but_preserve_source_order_and_history(self):
+        from threading import Barrier, Lock
+        barrier, guard = Barrier(2, timeout=3), Lock()
+        active, peak = [0], [0]
+        stores = [dict(STORE, id=f"shop-{i}", name=f"Shop {i}") for i in range(4)]
+        def scanner(store, config, now, history):
+            with guard:
+                active[0] += 1
+                peak[0] = max(peak[0], active[0])
+            barrier.wait()
+            with guard: active[0] -= 1
+            return SourceResult(store["name"], products_scanned=1)
+        with temporary_directory() as directory:
+            report = Path(directory) / "report.json"
+            state = FileState(Path(directory) / "state.json")
+            run(dict(CONFIG, stores=stores, max_parallel_sources=2), scanner, lambda _: None, state, NOW, report, dry_run=True)
+            records = json.loads(report.read_text())["sources"]
+            self.assertEqual([r["store"] for r in records], [s["name"] for s in stores])
+            self.assertEqual(peak[0], 2)
+            self.assertFalse(state.path.exists())
+
+    def test_independent_scanner_gives_each_source_its_own_client_and_deadline(self):
+        from notifier import independent_scanner
+        from unittest.mock import patch
+        clients, current = [], [0.0]
+        class Client:
+            def __init__(self, **kwargs): clients.append(self); self.deadline = None
+        scanner = independent_scanner({"scan_budget_seconds": 180, "source_budget_seconds": 120,
+                                       "request_timeout_seconds": 15, "request_attempts": 1,
+                                       "request_interval_seconds": 1}, client_factory=Client, clock=lambda: current[0])
+        with patch("notifier.scan_store", return_value=SourceResult("Shop")) as checking:
+            scanner(STORE, {}, NOW, {})
+            current[0] = 100
+            scanner(STORE, {}, NOW, {})
+            self.assertEqual([c.deadline for c in clients], [120, 180])
+            self.assertIsNot(clients[0], clients[1])
+            current[0] = 181
+            self.assertEqual(scanner(STORE, {}, NOW, {}).status, "failed")
+            self.assertEqual(checking.call_count, 2)
+
     def test_overall_budget_marks_unscanned_sources_without_hiding_failure(self):
         from unittest.mock import patch
         from network import HttpClient

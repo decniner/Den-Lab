@@ -185,6 +185,20 @@ class SourcesTests(unittest.TestCase):
         self.assertEqual(_shipping({"shipping_rule": "jackery"}, "全ての商品が送料無料", 5000), "JPY 0 (Japan; current published policy)")
         self.assertEqual(_shipping({"shipping_rule": "ecoflow"}, "送料未確認", 5000), "Unknown; confirm at checkout")
 
+    def test_expanded_shipping_requires_fresh_rates_and_preserves_exceptions(self):
+        toffy = "5,500円（税込）以上のお買い上げで送料無料。未満の場合、送料は全国一律550円（税込）"
+        self.assertEqual(_shipping({"shipping_rule": "toffy"}, toffy, 5499), "JPY 550 (order <JPY 5,500)")
+        self.assertEqual(_shipping({"shipping_rule": "toffy"}, toffy, 5500), "JPY 0 (item >=JPY 5,500)")
+        self.assertEqual(_shipping({"shipping_rule": "toffy"}, toffy.replace("550円", "880円"), 5499), "Unknown; confirm at checkout")
+        self.assertEqual(_shipping({"shipping_rule": "toffy"}, toffy.replace("5,500円", "15,500円"), 5500), "Unknown; confirm at checkout")
+        phenix = "全国一律(沖縄、離島を除く) 490円 沖縄県 990円。1配送先につき ¥10,000(税込)以上お買い上げの場合は送料無料。送料個別商品の送料は対象となりません"
+        fee = _shipping({"shipping_rule": "phenix"}, phenix, 9999)
+        self.assertEqual(_shipping({"shipping_rule": "phenix"}, phenix.replace("10,000", "110,000"), 10000), "Unknown; confirm at checkout")
+        self.assertIn("JPY 490", fee)
+        self.assertIn("Okinawa JPY 990", fee)
+        self.assertIn("individual", _shipping({"shipping_rule": "phenix"}, phenix, 10000))
+        self.assertEqual(_shipping({"shipping_rule": "phenix"}, phenix.replace("490円", "600円"), 9000), "Unknown; confirm at checkout")
+
     def test_shaka_shipping_requires_live_explicit_free_shipping_policy(self):
         self.assertEqual(_shipping({"shipping_rule": "shaka"}, "全国一律：送料無料", 10450), "JPY 0 (Japan; current published policy)")
         self.assertEqual(_shipping({"shipping_rule": "shaka"}, "配送料はチェックアウト時に計算", 10450), "Unknown; confirm at checkout")

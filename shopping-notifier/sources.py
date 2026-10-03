@@ -112,6 +112,11 @@ def _offers(value):
 
 def _shipping(store, policy_text, sale):
     rule = store.get("shipping_rule", "unknown")
+    if rule == "toffy" and re.search(r"(?<![\d,])5,500円[（(]税込[）)]以上.*送料無料.*送料は全国一律550円", policy_text):
+        return "JPY 0 (item >=JPY 5,500)" if sale >= 5500 else "JPY 550 (order <JPY 5,500)"
+    if rule == "phenix" and re.search(r"全国一律[（(]沖縄、離島を除く[）)]\s*490円.*沖縄県\s*990円", policy_text) and re.search(r"(?<![\d,])10,000\(税込\)以上.*送料無料", policy_text):
+        base = "JPY 0 for standard items >=JPY 10,000" if sale >= 10000 else "JPY 490; Okinawa JPY 990"
+        return base + "; individual-item shipping/island exceptions unknown"
     if rule == "keen" and re.search(r"2,999円以下：300円.*3,000円～13,999円：600円.*14,000円以上：送料無料", policy_text):
         if sale >= 14000:
             return "JPY 0 (item >=JPY 14,000; non-member)"

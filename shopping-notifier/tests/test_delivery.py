@@ -19,6 +19,16 @@ class MemoryState:
 
 
 class DeliveryTests(unittest.TestCase):
+    def test_ninety_source_failures_remain_visible_in_mobile_sized_digest(self):
+        results = [SourceResult(f"Store {i} with a very long name", status="failed", errors=["HTTP 403"] * 4) for i in range(90)]
+        chunks = format_digest([deal()], results, NOW)
+        text = "\n".join(c.text for c in chunks)
+        self.assertIn("Coverage incomplete", text)
+        self.assertIn("90 sources", text)
+        self.assertIn("HTTP 403", text)
+        self.assertTrue(all(utf16_length(c.text) <= 3800 for c in chunks))
+        self.assertEqual(sum(len(c.deals) for c in chunks), 1)
+
     def test_mobile_digest_has_exact_details_and_split_product_blocks(self):
         from dataclasses import replace
         deals = [replace(deal(id=n + 1), name="Coat 😀" * 15, shipping="Unknown; confirm at checkout") for n in range(10)]

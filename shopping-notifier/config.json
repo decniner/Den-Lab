@@ -11,13 +11,13 @@
   "dedup_days": 7,
   "meaningful_drop_percent": 5,
   "meaningful_drop_jpy": 100,
-  "max_pages_per_store": 8,
+  "max_pages_per_store": 20,
   "max_products_verified_per_store": 20,
   "request_timeout_seconds": 15,
   "request_attempts": 3,
   "request_interval_seconds": 1.0,
-  "source_budget_seconds": 120,
-  "scan_budget_seconds": 600,
+  "source_budget_seconds": 180,
+  "scan_budget_seconds": 1200,
   "stores": [
     {
       "id": "classicalelf",
@@ -270,7 +270,8 @@
         "/pages/terms-of-sale",
         "/pages/legal-notice"
       ],
-      "japan_delivery_pattern": "配送は日本国内のみ"
+      "japan_delivery_pattern": "配送は日本国内のみ",
+      "vendor_brand_aliases": {}
     },
     {
       "enabled": true,
@@ -311,6 +312,921 @@
       "vendor_brand_aliases": {
         "Jackery Japan": "Jackery"
       }
+    },
+    {
+      "id": "salomon-jp",
+      "name": "salomon.jp",
+      "enabled": true,
+      "base_url": "https://salomon.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/faq",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "サロモン公式オンラインストア": "Salomon"
+      }
+    },
+    {
+      "id": "merrell-jp",
+      "name": "merrell.jp",
+      "enabled": true,
+      "base_url": "https://merrell.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/shopping-guide",
+        "/pages/law"
+      ],
+      "japan_delivery_pattern": "配送先は日本国内のみ",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "arcteryx-jp",
+      "name": "arcteryx.jp",
+      "enabled": true,
+      "base_url": "https://arcteryx.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/policies/terms-of-service",
+        "/policies/shipping-policy"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "Arcteryx": "Arc'teryx"
+      }
+    },
+    {
+      "id": "aandfstore-com",
+      "name": "aandfstore.com",
+      "enabled": true,
+      "base_url": "https://aandfstore.com",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/guide",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "配送は日本国内に限",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "kinetics-tokyo-com",
+      "name": "kinetics-tokyo.com",
+      "enabled": true,
+      "base_url": "https://kinetics-tokyo.com",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/policies/shipping-policy",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "販売は日本国内のみ",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "ASICS（アシックス）": "ASICS",
+        "MERRELL（メレル）": "Merrell",
+        "MIZUNO（ミズノ）": "Mizuno",
+        "NEW ERA（ニューエラ）": "New Era"
+      }
+    },
+    {
+      "id": "coverchord-com",
+      "name": "coverchord.com",
+      "enabled": true,
+      "base_url": "https://coverchord.com",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/delivery"
+      ],
+      "japan_delivery_pattern": "日本国内：ヤマト運輸",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "store-nanga-jp",
+      "name": "store.nanga.jp",
+      "enabled": true,
+      "base_url": "https://store.nanga.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/tokuteitorihiki"
+      ],
+      "japan_delivery_pattern": "北海道.*沖縄",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "NANGA ONLINE SHOP": "NANGA"
+      }
+    },
+    {
+      "id": "wildthings-jp",
+      "name": "wildthings.jp",
+      "enabled": true,
+      "base_url": "https://wildthings.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "定価",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/policies/shipping-policy",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "配送は日本国内に限",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "rimba-jp",
+      "name": "rimba.jp",
+      "enabled": true,
+      "base_url": "https://rimba.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/about-shipping",
+        "/policies/shipping-policy"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "shop-stridelab-jp",
+      "name": "shop.stridelab.jp",
+      "enabled": true,
+      "base_url": "https://shop.stridelab.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/delivery",
+        "/pages/tokusho"
+      ],
+      "japan_delivery_pattern": "北海道.*沖縄",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "Paagoworks": "Paago Works",
+        "XEROSHOES": "Xero Shoes"
+      }
+    },
+    {
+      "id": "saucony-jp",
+      "name": "saucony.jp",
+      "enabled": true,
+      "base_url": "https://saucony.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/faq"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "SAUCONY（サッカニー）公式オンラインストア": "Saucony"
+      }
+    },
+    {
+      "id": "altrafootwear-jp",
+      "name": "altrafootwear.jp",
+      "enabled": true,
+      "base_url": "https://altrafootwear.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/tokusho"
+      ],
+      "japan_delivery_pattern": "北海道.*沖縄",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "championstore-jp",
+      "name": "championstore.jp",
+      "enabled": true,
+      "base_url": "https://championstore.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/faq",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "cherry-fukuoka-com",
+      "name": "cherry-fukuoka.com",
+      "enabled": true,
+      "base_url": "https://cherry-fukuoka.com",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "Regular\\ price|定価",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/legal"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "topism-jp",
+      "name": "topism.jp",
+      "enabled": true,
+      "base_url": "https://topism.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/policies/shipping-policy"
+      ],
+      "japan_delivery_pattern": "北海道.*沖縄",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "mita-sneakers-co-jp",
+      "name": "www.mita-sneakers.co.jp",
+      "enabled": true,
+      "base_url": "https://www.mita-sneakers.co.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "brooksrunning-co-jp",
+      "name": "brooksrunning.co.jp",
+      "enabled": true,
+      "base_url": "https://brooksrunning.co.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/guide",
+        "/pages/faq",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "配送は日本国内に限",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "phenixstore-com",
+      "name": "phenixstore.com",
+      "enabled": true,
+      "base_url": "https://phenixstore.com",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/guide",
+        "/pages/shipping-payment",
+        "/pages/shoppingguide_henpin"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "phenix",
+      "vendor_brand_aliases": {
+        "+phenix": "Phenix",
+        "phenix": "Phenix"
+      }
+    },
+    {
+      "id": "roarkrevival-jp",
+      "name": "roarkrevival.jp",
+      "enabled": true,
+      "base_url": "https://roarkrevival.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/postage-settle-list"
+      ],
+      "japan_delivery_pattern": "北海道.*沖縄",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "ROARK日本公式サイト": "Roark"
+      }
+    },
+    {
+      "id": "carhartt-wip-jp",
+      "name": "carhartt-wip.jp",
+      "enabled": true,
+      "base_url": "https://carhartt-wip.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/shopguide",
+        "/pages/law"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "Carhartt WIP Japan": "Carhartt WIP"
+      }
+    },
+    {
+      "id": "levi-jp",
+      "name": "levi.jp",
+      "enabled": true,
+      "base_url": "https://levi.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/shopping-guide",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "shop-orange-info",
+      "name": "shop-orange.info",
+      "enabled": true,
+      "base_url": "https://shop-orange.info",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "定価",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/policies/shipping-policy",
+        "/pages/faq",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "北海道.*沖縄",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "Teton Bros": "Teton Bros."
+      }
+    },
+    {
+      "id": "berwickjapan-co-jp",
+      "name": "berwickjapan.co.jp",
+      "enabled": true,
+      "base_url": "https://berwickjapan.co.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/policies/legal-notice/"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "berwick-online": "Berwick",
+        "バーウィックジャパン オンラインストア": "Berwick"
+      }
+    },
+    {
+      "id": "peakperformance-jp",
+      "name": "peakperformance.jp",
+      "enabled": true,
+      "base_url": "https://peakperformance.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/faq"
+      ],
+      "japan_delivery_pattern": "全国一律",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "ピークパフォーマンス公式オンラインストア": "Peak Performance"
+      }
+    },
+    {
+      "id": "boardriders-co-jp",
+      "name": "Boardriders Japan",
+      "enabled": true,
+      "base_url": "https://boardriders.co.jp",
+      "category": "clothing shoes outdoor accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格",
+      "tax_pattern": "税込",
+      "policy_paths": [
+        "/pages/sct"
+      ],
+      "japan_delivery_pattern": "全国一律 660円",
+      "catalog_page_size": 250,
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "toffyjapan",
+      "name": "Toffy Japan",
+      "enabled": true,
+      "base_url": "https://toffy.jp",
+      "category": "household kitchen appliances",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/guide",
+        "/policies/shipping-policy",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "配送先は日本国内のみ",
+      "shipping_rule": "toffy",
+      "vendor_brand_aliases": {
+        "Toffy公式オンラインショップ": "Toffy",
+        "ラドンナ": "LADONNA"
+      }
+    },
+    {
+      "id": "mannen",
+      "name": "Mannen",
+      "enabled": true,
+      "base_url": "https://shop.mannen.co.jp",
+      "category": "household kitchen",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/user-guide",
+        "/pages/law"
+      ],
+      "japan_delivery_pattern": "全国一律|国内|北海道",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "【公式】mannenオンラインストア｜こだわりの鍋・フライパンメーカー 株式会社万年": "Mannen"
+      }
+    },
+    {
+      "id": "cotopaxijapan",
+      "name": "Cotopaxi Japan",
+      "enabled": true,
+      "base_url": "https://cotopaxi.jp",
+      "category": "bags outdoor clothing",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/policies/shipping-policy",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "全国一律400円",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "Cotopaxiオフィシャルサイト": "Cotopaxi"
+      }
+    },
+    {
+      "id": "coteetcieljapan",
+      "name": "Cote et Ciel Japan",
+      "enabled": true,
+      "base_url": "https://coteetciel.jp",
+      "category": "bags accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/%E9%85%8D%E9%80%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+      ],
+      "japan_delivery_pattern": "北海道・沖縄.*本州・四国・九州",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "cote＆ciel japan official": "Cote et Ciel",
+        "côte&ciel japan official": "Cote et Ciel"
+      }
+    },
+    {
+      "id": "uspoloassnjapan",
+      "name": "US Polo Assn Japan",
+      "enabled": true,
+      "base_url": "https://www.uspoloassn.jp",
+      "category": "bags clothing accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "レギュラー価格",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/policies/terms-of-service",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "日本国内",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "U.S. POLO ASSN. 公式オンラインストア": "U.S. POLO ASSN."
+      }
+    },
+    {
+      "id": "craftstore",
+      "name": "Craft Store",
+      "enabled": true,
+      "base_url": "https://craft-store.jp",
+      "category": "household kitchen",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "全国一律、880円",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "yukiwajapan",
+      "name": "YUKIWA Japan",
+      "enabled": true,
+      "base_url": "https://yukiwa-online.we-shop.jp",
+      "category": "household kitchen",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/policies/shipping-policy",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "北海道.*本州.*四国.*九州",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "YUKIWA（ユキワ）": "YUKIWA",
+        "厨房用品・ステンレス調理器具 専門店 | YUKIWA 公式通販": "YUKIWA"
+      }
+    },
+    {
+      "id": "kiyajapan",
+      "name": "Kiya Japan",
+      "enabled": true,
+      "base_url": "https://kiya-hamono.jp",
+      "category": "household kitchen",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/policies/shipping-policy",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "日本国内配送",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "木屋": "Kiya"
+      }
+    },
+    {
+      "id": "greenpanjapan",
+      "name": "GreenPan Japan",
+      "enabled": true,
+      "base_url": "https://greenpan.store",
+      "category": "household kitchen",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/aboutdelivery"
+      ],
+      "japan_delivery_pattern": "商品は日本国内",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "グリーンパン オフィシャルショップ": "GreenPan"
+      }
+    },
+    {
+      "id": "ichinennet",
+      "name": "Ichinen Net",
+      "enabled": true,
+      "base_url": "https://www.ichinennet.jp",
+      "category": "tools household outdoor",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/policies/terms-of-service",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "北海道.*沖縄",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "neosmartpenjapan",
+      "name": "Neo Smartpen Japan",
+      "enabled": true,
+      "base_url": "https://neosmartpenjp.com",
+      "category": "home office stationery",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "表示価格には、送料、消費税を含んでおります|税込",
+      "policy_paths": [
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "配送範囲 日本国内が対象です",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "Neo smartpen 公式オンラインストア": "Neo Smartpen"
+      }
+    },
+    {
+      "id": "hariojapan",
+      "name": "HARIO Japan",
+      "enabled": true,
+      "base_url": "https://shop.hariocorp.co.jp",
+      "category": "household kitchen",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/law",
+        "/policies/shipping-policy"
+      ],
+      "japan_delivery_pattern": "全国一律550円",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "HARIO NETSHOP": "HARIO",
+        "HARIO Lampwork Factory": "HARIO",
+        "HARIO PET": "HARIO",
+        "HARIO RELAXING": "HARIO",
+        "HARIO SCI": "HARIO"
+      }
+    },
+    {
+      "id": "delseyjapan",
+      "name": "Delsey Japan",
+      "enabled": true,
+      "base_url": "https://delsey.jp",
+      "category": "luggage bags",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/specified-commercial-transactions"
+      ],
+      "japan_delivery_pattern": "全国送料無料",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "DELSEY(デルセー) 公式ショップ 本店": "Delsey",
+        "delsey japan": "Delsey"
+      }
+    },
+    {
+      "id": "incasejapan",
+      "name": "Incase Japan",
+      "enabled": true,
+      "base_url": "https://incasejapan.com",
+      "category": "bags computer accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/policies/terms-of-service"
+      ],
+      "japan_delivery_pattern": "商品等の配送は、日本国内に限ります",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "Incase OFFICIAL ONLINE STORE": "Incase"
+      }
+    },
+    {
+      "id": "topologiejapan",
+      "name": "Topologie Japan",
+      "enabled": true,
+      "base_url": "https://topologie.jp",
+      "category": "bags accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/%E9%85%8D%E9%80%81-%E6%B1%BA%E6%B8%88%E6%96%B9%E6%B3%95-%E6%B6%88%E8%B2%BB%E7%A8%8E%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6"
+      ],
+      "japan_delivery_pattern": "国内送料無料",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "Topologie (トポロジー)": "Topologie"
+      }
+    },
+    {
+      "id": "ablecarryjapan",
+      "name": "Able Carry Japan",
+      "enabled": true,
+      "base_url": "https://ablecarry.jp",
+      "category": "bags accessories",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "消費税は商品価格に含まれています|税込",
+      "policy_paths": [
+        "/pages/support"
+      ],
+      "japan_delivery_pattern": "日本サイトablecarry.jpからのご注文は日本への配送に限らせていただいております",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "Able Carry (JP)": "Able Carry"
+      }
+    },
+    {
+      "id": "johnmastersorganicsjapan",
+      "name": "John Masters Organics Japan",
+      "enabled": true,
+      "base_url": "https://johnmastersorganics.jp",
+      "category": "personal care",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/terms",
+        "/pages/business-deal"
+      ],
+      "japan_delivery_pattern": "商品の配送は、日本国内に限るものとします",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "ジョンマスターオーガニック公式オンラインストア｜ナチュラル＆オーガニックコスメ": "John Masters Organics"
+      }
+    },
+    {
+      "id": "shumibunclub",
+      "name": "Shumibun Club",
+      "enabled": true,
+      "base_url": "https://club-shumibun.com",
+      "category": "home office stationery",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/policies/terms-of-service",
+        "/policies/legal-notice"
+      ],
+      "japan_delivery_pattern": "本サービスによる商品等の配送は、日本国内に限ります",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "phpstore",
+      "name": "PHP Store",
+      "enabled": true,
+      "base_url": "https://php-store.com",
+      "category": "home office stationery",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/%E3%81%94%E5%88%A9%E7%94%A8%E3%82%AC%E3%82%A4%E3%83%89",
+        "/pages/%E7%89%B9%E5%AE%9A%E5%95%86%E5%8F%96%E5%BC%95%E6%B3%95%E9%80%9A%E4%BF%A1%E8%B2%A9%E5%A3%B2%E6%B3%95%E3%81%AB%E5%9F%BA%E3%81%A5%E3%81%8F%E8%A1%A8%E8%A8%98"
+      ],
+      "japan_delivery_pattern": "日本国内|国内|北海道|全国",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "deentools",
+      "name": "DEEN Tools",
+      "enabled": true,
+      "base_url": "https://deentools.com",
+      "category": "tools",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価",
+      "tax_pattern": "税込|税込み|税金が含まれ|消費税を含",
+      "policy_paths": [
+        "/pages/tokushou"
+      ],
+      "japan_delivery_pattern": "送料は一律600円",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {}
+    },
+    {
+      "id": "switchbot",
+      "name": "SwitchBot Japan",
+      "enabled": true,
+      "base_url": "https://www.switchbot.jp",
+      "category": "electronics computer accessories appliances photography gadgets",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価|参考価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/payments-shipping-policy"
+      ],
+      "japan_delivery_pattern": "北海道・沖縄",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "SwitchBot (スイッチボット)": "SwitchBot",
+        "SwitchBot公式サイト": "SwitchBot"
+      },
+      "catalog_page_size": 250
+    },
+    {
+      "id": "kitcut",
+      "name": "Kitcut",
+      "enabled": true,
+      "base_url": "https://store.kitcut.co.jp",
+      "category": "electronics computer accessories appliances photography gadgets",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価|参考価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/guide"
+      ],
+      "japan_delivery_pattern": "全国一律送料|宅配便の配送料",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {},
+      "catalog_page_size": 250
+    },
+    {
+      "id": "cado",
+      "name": "cado Japan",
+      "enabled": true,
+      "base_url": "https://cado.com",
+      "category": "electronics computer accessories appliances photography gadgets",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価|参考価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/legal"
+      ],
+      "japan_delivery_pattern": "日本国内のみの発送",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {},
+      "catalog_page_size": 250
+    },
+    {
+      "id": "ulanzi",
+      "name": "Ulanzi Japan",
+      "enabled": true,
+      "base_url": "https://www.ulanzi.jp",
+      "category": "electronics computer accessories appliances photography gadgets",
+      "reference_basis": "retailer_previous_price",
+      "reference_pattern": "通常価格|通常販売価格|定価|参考価格",
+      "tax_pattern": "税込|税金が含まれ|Taxes included",
+      "policy_paths": [
+        "/pages/ulanzi-shipping-policy"
+      ],
+      "japan_delivery_pattern": "北海道、沖縄",
+      "shipping_rule": "unknown",
+      "vendor_brand_aliases": {
+        "UlanziJP": "Ulanzi"
+      },
+      "catalog_page_size": 250
     }
   ],
   "allowed_brands": [
@@ -400,6 +1316,109 @@
     "Western Digital",
     "Seagate",
     "Crucial",
-    "Kingston"
-  ]
+    "Kingston",
+    "Berwick",
+    "Peak Performance",
+    "AURALEE",
+    "COMOLI",
+    "nonnative",
+    "WACKO MARIA",
+    "Rick Owens",
+    "Needles",
+    "Schott",
+    "AVIREX",
+    "Callaway",
+    "NANGA",
+    "Wild Things",
+    "Klättermusen",
+    "Altra",
+    "Brooks",
+    "Champion",
+    "New Era",
+    "Marmot",
+    "Phenix",
+    "Carhartt WIP",
+    "Levi's",
+    "Roark",
+    "Spingle",
+    "Helinox",
+    "YETI",
+    "Outdoor Research",
+    "KAVU",
+    "Pendleton",
+    "GSI",
+    "Rab",
+    "Houdini",
+    "Teton Bros.",
+    "Xero Shoes",
+    "HUF",
+    "Gramicci",
+    "Darn Tough",
+    "MSR",
+    "NEMO",
+    "Evernew",
+    "Sea to Summit",
+    "Luna Sandals",
+    "Hyperlite Mountain Gear",
+    "Granite Gear",
+    "Gossamer Gear",
+    "Therm-a-Rest",
+    "La Sportiva",
+    "Topo Athletic",
+    "Arc'teryx",
+    "Billabong",
+    "Roxy",
+    "Quiksilver",
+    "DC Shoes",
+    "Element",
+    "RVCA",
+    "Volcom",
+    "Dakine",
+    "Reef",
+    "Spyder",
+    "Toffy",
+    "Mannen",
+    "Cotopaxi",
+    "Cote et Ciel",
+    "U.S. POLO ASSN.",
+    "YUKIWA",
+    "Kiya",
+    "GreenPan",
+    "Neo Smartpen",
+    "HARIO",
+    "Incase",
+    "Topologie",
+    "Able Carry",
+    "John Masters Organics",
+    "DEEN",
+    "Pilot",
+    "Pentel",
+    "Zebra",
+    "Lamy",
+    "Parker",
+    "Pelikan",
+    "Kaweco",
+    "Tombow",
+    "Staedtler",
+    "Faber-Castell",
+    "Kokuyo",
+    "Makita",
+    "Bosch",
+    "Knipex",
+    "Wera",
+    "Vessel",
+    "Snap-on",
+    "SwitchBot",
+    "Amazfit",
+    "Satechi",
+    "ESR",
+    "GameSir",
+    "UAG",
+    "cado",
+    "Ulanzi",
+    "Falcam",
+    "Paago Works",
+    "LADONNA"
+  ],
+  "max_parallel_sources": 4
 }

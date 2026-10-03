@@ -29,10 +29,20 @@ def format_digest(deals, results, now, *, test=False, suppressed=0):
     incomplete = [r for r in results if r.status != "ok"]
     if incomplete:
         lines.append("Coverage incomplete — failed or bounded sources:")
-        for r in incomplete:
+        for r in incomplete[:5] if len(results) > 12 else incomplete:
             details = ", ".join(r.errors + r.limits) or r.status
             lines.append(f"• {clean(r.store, 60)}: {clean(details, 180)}")
-    lines.append("Coverage: " + "; ".join(f"{clean(r.store, 50)} {r.products_scanned} products" for r in results))
+        if len(results) > 12 and len(incomplete) > 5:
+            lines.append(f"• {len(incomplete) - 5} more incomplete sources; see full verification report.")
+    if len(results) > 12:
+        lines.append(f"Coverage: {len(results)} sources ({len(results) - len(incomplete)} complete, {len(incomplete)} incomplete); "
+                     f"{sum(r.products_scanned for r in results):,} products scanned.")
+        repo, run_id = os.environ.get("GITHUB_REPOSITORY", ""), os.environ.get("GITHUB_RUN_ID", "")
+        import re
+        if re.fullmatch(r"[\w.-]+/[\w.-]+", repo) and run_id.isdigit():
+            lines.append(f"Full source report: https://github.com/{repo}/actions/runs/{run_id}")
+    else:
+        lines.append("Coverage: " + "; ".join(f"{clean(r.store, 50)} {r.products_scanned} products" for r in results))
     if deals:
         lines.append("Reference comparisons are not usual market-price savings. Shipping excluded from discount.")
     elif any(r.errors or r.status == "failed" for r in results):

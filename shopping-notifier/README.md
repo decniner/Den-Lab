@@ -19,8 +19,8 @@ python shopping-notifier/notifier.py
 
 In **GitHub Actions → Japan shopping discount notifier → Run workflow**, select:
 
-- **electronics_and_shoes**: for this manual run, include the electronics stores and KEEN footwear (plus any enabled legacy shoe stores); clothing is excluded. Exact available sizes are shown.
-- **electronics_only**: for this manual run, scan Anker, Keychron, UGREEN, Edifier, SOUNDPEATS, EcoFlow, and Jackery only; the daily schedule keeps its full coverage.
+- **electronics_and_shoes**: for this manual run, include the electronics stores and all enabled footwear sources; clothing is excluded. Exact available sizes are shown.
+- **electronics_only**: for this manual run, scan enabled stores whose configured coverage includes electronics, computer accessories, audio, gaming, or appliances; the daily schedule keeps its full coverage.
 - **dry_run**: live verification report and preview, no delivery/history changes.
 - **test_digest**: one clearly labeled live digest, possibly multiple Telegram messages, history unchanged.
 - Neither: normal delivery, using isolated persistent history.
@@ -55,9 +55,9 @@ Shopping history lives at `shopping-notifier/state.json` on a **separate `shoppi
 
 These are catalog sources, not a claim that every store has a qualifying deal daily. Fresh `.js` variant data and HTML offers must agree for any deal to appear. The initial live scan and deployment evidence are in [docs/validation.md](docs/validation.md).
 
-**Coverage is bounded, not exhaustive:** initially eight pages × 250 catalog products and twenty candidate products checked per store. The public feed's sort order determines which products fall inside the catalog window. Within that window, prioritize unsent/meaningfully cheaper candidates, then evidence, discount, and savings. Pick one exact variant per product; other colors/sizes may have different prices or stock. Limits are reported as incomplete coverage, including on no-result days. No general-web search snippets are used as evidence.
+**Coverage is bounded, not exhaustive:** up to twenty pages × 250 catalog products and twenty candidate products checked per store. The public feed's sort order determines which products fall inside the catalog window. Within that window, prioritize unsent/meaningfully cheaper candidates, then evidence, discount, and savings. Pick one exact variant per product; other colors/sizes may have different prices or stock. Limits are reported as incomplete coverage, including on no-result days. No general-web search snippets are used as evidence.
 
-Naturehike Japan's public product-feed URL redirected to HTML in discovery. Allbirds Japan migrated away from its former Shopify endpoint. Neither is supported initially. Amazon requires an authorized suitable API for reliable automated coverage; Rakuten/Yahoo APIs require configured application access, and unrestricted scraping is not substituted. No paid feeds, CAPTCHA workarounds, proxy rotation, or account creation. Dedicated outdoor-store coverage is not implemented; current outdoor coverage is limited to portable power and drinkware. Add other stores only after validating their public feed/pages, robots permissions, Japan delivery, tax-inclusive price evidence, and exact variants.
+Naturehike Japan's public product-feed URL redirected to HTML in discovery. Allbirds Japan migrated away from its former Shopify endpoint. Neither is supported initially. Amazon requires an authorized suitable API for reliable automated coverage; Rakuten/Yahoo APIs require configured application access, and unrestricted scraping is not substituted. No paid feeds, CAPTCHA workarounds, proxy rotation, or account creation. Dedicated footwear and outdoor stores are now enabled; see the expanded source register below. Add other stores only after validating their public feed/pages, robots permissions, Japan delivery, tax-inclusive price evidence, and exact variants.
 
 ## Verification and digest
 
@@ -134,3 +134,14 @@ KEEN's robots-restricted shipping-policy endpoint is not accessed: its permitted
 Additional probes found no compatible public catalog at Coleman/Gregory (404), American Tourister (connection failure), Merrell (cross-origin redirect), and Birkenstock (robots-restricted redirect). These sources are not enabled. No access restrictions were bypassed.
 
 Live expansion validation scanned 4,506 products across the nine enabled stores without source failures or catalog caps. EcoFlow produced qualifying power-station, charging, and solar-bundle variants. A newsletter-only offer was excluded and has a regression test. Jackery candidates without an explicit comparison-price basis remained excluded. Product-label evidence now starts at the exact fresh product title rather than the navigation heading, with a test that rejects reference labels found only in navigation.
+
+
+## Expanded scan (October 2026)
+
+The configuration now enables **58 distinct stores** and **189 established brand identities**, up from nine stores and 87 brands. This is 6.44× the store count. The live scan covered 59,038 catalog entries, **13.10×** the previous 4,506; entries include products rejected by subsequent filters and may overlap across retailers. This does not mean 90 working stores or ten times as many qualifying deals. Discovery investigated hundreds of additional origins; inaccessible catalogs, robots restrictions, missing Japan delivery/tax evidence, and ambiguous comparison prices prevented a supported 90-store configuration. No restricted endpoints are substituted or counted.
+
+See [the complete source register](docs/source-register.md) for every enabled store and its primary public policy URLs. All use permitted public `/products.json` catalogs and fresh product-page/variant checks. Sources without a current unconditional 50% offer remain useful catalog coverage, not guaranteed deals. Generic retailer vendor fields and private labels are rejected unless independently supported by an explicit established-brand alias. Cosmetics/personal care, stationery, luggage, tools, cookware, outdoor clothing, footwear, and photography accessories now have additional source coverage.
+
+Four distinct stores run concurrently, each with its own client, one-second minimum request interval, timeout/retry limits, and 180-second source budget. One source per origin is enforced. The shared scan budget is 1,200 seconds; queued sources that cannot start before it expires are explicitly reported failed. Existing 25-minute Actions job limit remains. Catalog caps, verification caps, and timeouts all mean incomplete coverage. Large Telegram digests summarize totals and show up to five incomplete sources, with the Actions run/report link for the full list. Sending and state persistence remain serial, after successful delivery acknowledgment.
+
+`max_parallel_sources` supports 1–4, and up to 100 distinct enabled source origins may be configured. `max_pages_per_store` remains capped at 20; increasing source count or catalog limits never weakens product verification, brand filtering, discount threshold, or seven-day deduplication. Scheduled delivery remains 07:00 JST and can start late on GitHub Actions.
