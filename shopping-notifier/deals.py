@@ -23,7 +23,7 @@ BASIS_LABELS = {
 CATEGORY_PATTERNS = {
     "shoes": r"shoe|sneaker|sandal|footwear|boots?\b|スニーカー|シューズ|サンダル|ブーツ|靴",
     "clothing": r"clothing|\bcoat\b|shirt|dress|jacket|pants|knit|ニット|スカート|ワンピース|パンツ|ジャケット|トップス|カーディガン|服|シューズ",
-    "computer accessories": r"keyboard|keycap|mouse|usb.?hub|docking|nas\b|キーボード|キーキャップ|マウス|ドッキング|ハブ|パソコン",
+    "computer accessories": r"keyboard|keycap|mouse|usb.?hub|docking.?station|nas\b|キーボード|キーキャップ|マウス|ドッキング(?:ステーション|ハブ)|ハブ|パソコン",
     "household": r"household|kitchen|glass|mug|cup|bottle|tableware|cookware|dish|カップ|マグ|グラス|食器|鍋|キッチン",
     "appliances": r"appliance|robot vacuum|robovac|projector|掃除機|家電|炊飯|洗濯|プロジェクター",
     "outdoor": r"outdoor|camping|portable power station|portable solar|solix|trail.?tumbler|キャンプ|アウトドア|登山|寝袋|トレッキング",
