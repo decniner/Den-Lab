@@ -135,6 +135,10 @@ def upload(store, state, api):
                 time.sleep(2 ** (failures - 1)); offset = None
 
 def publish(store, state, api, approval):
+    from .research import read
+    provenance=store.path/'speech-provider.json'
+    if provenance.exists() and read(provenance).get('publication_scope')=='private-review-only':
+        raise Failure('This edition is restricted to private review; public publishing requires verified provider rights and a new approved edition.')
     check_artifacts(state)
     if approval != approval_token(state): raise Failure("Approval does not match this exact rendered edition, video ID and channel.")
     api.check_channel(state["channel_id"])

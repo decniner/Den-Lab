@@ -83,6 +83,8 @@ def main(argv=None):
         p=sub.add_parser(name); p.add_argument('--output',default='voice-previews')
     p=sub.add_parser('select-voice'); p.add_argument('--preview',required=True); p.add_argument('--approve-preview',required=True)
     p.add_argument('--preview-root',default='voice-previews'); p.add_argument('--selection',default='voice-selection.json')
+    p=sub.add_parser('revise-edition'); p.add_argument('--edition',required=True)
+    p.add_argument('--parent',required=True); p.add_argument('--approve-parent',required=True)
     args=parser.parse_args(argv); store=None
     try:
         if args.command in ('speech-voices','voice-previews','select-voice'):
@@ -103,7 +105,11 @@ def main(argv=None):
             set_log_path(store.path/'events.jsonl')
             if args.command=='dry-run': log('dry_run_complete',**dry_run(store)); return 0
             config=research.read(args.config); research.check_providers(config)
-            if args.command=='research':
+            if args.command=='revise-edition':
+                from .revision import create_revision
+                result=create_revision(store,args.parent,args.approve_parent)
+                log('revision_created',edition=args.edition,parent=result['revision_of'],fact_id=result['fact_id'],topic_history='preserved')
+            elif args.command=='research':
                 state=research.research_edition(store,config); log('research_verified',edition=args.edition,fact_id=state['fact_id'],mode='live')
             elif args.command=='script':
                 result=production.create_script(store); log('script_created',edition=args.edition,segments=len(result['segments']),provider='reviewed-template')

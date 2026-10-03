@@ -164,11 +164,17 @@ def select_preview(config,label,approved,root='voice-previews',selection_path='v
     entry=dict(entry,selected_at=now().isoformat(),binding=selection_binding(entry['provider'],entry['voice'],entry['settings'],approved))
     write(selection_path,entry); return entry
 
-def edition_speech(store,config):
+def publication_scope(config):
+    if config.get('private_review_only') is True and config.get('private_review_authorization','').strip():
+        return 'private-review-only'
     key='edge_publication_rights' if config['tts_provider']=='edge-tts' else 'azure_publication_rights'
     rights=config.get(key,{})
     if not rights.get('reviewer') or not rights.get('terms_url') or not rights.get('permission_evidence'):
         raise Failure('Neural service publication rights are unverified. Full video synthesis is blocked. F0/private audition is not a publication-rights grant; document applicable permission without upgrading a tier.')
+    return 'publication-rights-reviewed'
+
+def edition_speech(store,config):
+    scope=publication_scope(config)
     selection=read(config.get('voice_selection','voice-selection.json'))
     voices=voice_list(config,config.get('voice_preview_root','voice-previews'))
     voice=find_voice(voices,config.get('voice','')); delivery=settings(config,voice,config['tts_provider'])
@@ -179,4 +185,5 @@ def edition_speech(store,config):
         wav,timing,_,_=cached_audio(config,segment['text'],voice,delivery,config.get('speech_cache','speech-cache'))
         target=folder/f'segment-{i:04}.wav'; shutil.copyfile(wav,target); shutil.copyfile(timing,str(target)+'.words.json')
     write(store.path/'speech-provider.json',{'provider':config['tts_provider'],'voice':voice['ShortName'],'settings':delivery,
-                                          'selection_binding':selection['binding'],'timing':'native neural word boundary events','fallback':False})
+                                          'selection_binding':selection['binding'],'timing':'native neural word boundary events','fallback':False,
+                                          'publication_scope':scope})

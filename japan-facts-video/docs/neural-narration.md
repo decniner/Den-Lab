@@ -58,12 +58,17 @@ rights; that forum answer is not a binding license. The
 [Microsoft Services Agreement](https://www.microsoft.com/en-us/servicesagreement)
 and applicable Edge/account terms must be reviewed for the actual use.
 
-For both providers, full-edition synthesis requires a named rights review with
+For editions intended for public publishing, synthesis requires a named rights review with
 `reviewer`, `terms_url` and `permission_evidence` in `azure_publication_rights`
 or `edge_publication_rights`. This is a record of verified applicable permission,
 not an automatic license check or permission grant. Do not fill it with an
 assumption, generic package license or the pricing page. Private audition does
-not create permission to publish its output. Unverified rights remain blocked.
+not create permission to publish its output. Public publishing with unverified
+rights remains blocked. An explicitly authorized private review may instead set
+`private_review_only: true` and `private_review_authorization` to the owner's
+actual instruction. Its immutable speech provenance records `private-review-only`;
+the public-publishing command rejects that edition before any API publishing call.
+This records private scope, not Microsoft permission or verified publication rights.
 
 ## Windows setup: official Azure Speech, F0 only
 
@@ -152,7 +157,18 @@ existing reviewed fact/script checks. Never overwrite the already uploaded
 Shinkansen edition or remove its upload state/topic reservation. A new rendition
 of the same fact needs an intentional edition/revision workflow; changing its
 topic identity to bypass history is not allowed. The current immutable-edition
-rule safely rejects rendering over the uploaded edition.
+rule safely rejects rendering over the uploaded edition. Create an explicit
+revision without resetting topic history:
+
+```powershell
+python -m japan_facts --config config.edge.local.json revise-edition --edition NEW_EDITION_ID --parent PATH_TO_PARENT_EDITION --approve-parent EXACT_PARENT_VIDEO_SHA256
+python -m japan_facts --config config.edge.local.json render --edition NEW_EDITION_ID
+```
+
+This verifies the parent artifacts, keeps the same fact identity and source
+review date, and copies only research inputs. Upload sessions, inspection and
+render artifacts are newly created. Retrying the same revision cannot overwrite
+an existing edition. Inspect and upload through the usual separate commands.
 
 Neural output regenerates final WAV, word-derived captions and scene spans via
 the existing render pipeline. It measures natural duration and still requires
