@@ -36,6 +36,36 @@
       "reference_price": "4998",
       "sent_at": "2026-10-03T16:15:56+09:00",
       "url": "https://classicalelf.shop/products/mi1029119?variant=46346028089565"
+    },
+    "classicalelf:9402471317725:47548526592221": {
+      "sale_price": "787",
+      "reference_price": "4998",
+      "sent_at": "2026-10-03T16:15:58+09:00",
+      "url": "https://classicalelf.shop/products/mi1329083?variant=47548526592221"
+    },
+    "classicalelf:9091542286557:46768971481309": {
+      "sale_price": "987",
+      "reference_price": "5999",
+      "sent_at": "2026-10-03T16:15:58+09:00",
+      "url": "https://classicalelf.shop/products/mi1029170?variant=46768971481309"
+    },
+    "classicalelf:9404635447517:47558973751517": {
+      "sale_price": "987",
+      "reference_price": "5999",
+      "sent_at": "2026-10-03T16:15:58+09:00",
+      "url": "https://classicalelf.shop/products/ce1070190?variant=47558973751517"
+    },
+    "classicalelf:9402470367453:47548515713245": {
+      "sale_price": "987",
+      "reference_price": "5998",
+      "sent_at": "2026-10-03T16:15:58+09:00",
+      "url": "https://classicalelf.shop/products/jm1050364?variant=47548515713245"
     }
+  },
+  "last_digest": {
+    "date": "2026-10-03",
+    "coverage_key": "6b0a39200368f42b552342f3cd406bfed484bb4eca0274c92d5d72165ec0017d",
+    "completed_at": "2026-10-03T16:15:58+09:00",
+    "digest_hash": "9e2ab1f1265b8e248fcf17b61b306cce749dc89047f145333a88e806d48be200"
   }
 }
