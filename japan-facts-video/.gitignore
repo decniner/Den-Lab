@@ -8,6 +8,10 @@ state/
 *.log
 .tools/
 .test-tmp/
+voice-previews/
+speech-cache/
+voice-selection.json
+config.*.local.json
 deliverables/**/*.mp4
 deliverables/**/*.wav
 deliverables/**/*.mp3

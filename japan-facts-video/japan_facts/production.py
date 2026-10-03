@@ -119,6 +119,9 @@ def create_script(store):
 
 def synthesize(store,config):
     check_providers(config)
+    if config.get('tts_provider') in ('azure-speech','edge-tts'):
+        from .speech import edition_speech
+        return edition_speech(store,config)
     if os.name!='nt': raise Failure('Default local narration requires Windows System.Speech and an installed voice. Supply a reviewed local narration adapter on other systems.')
     try:
         run(['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File',ROOT/'tools'/'narrate.ps1',
@@ -159,7 +162,7 @@ def combine_speech(store,script):
     check_duration(offset); check_captions(captions,offset)
     write(store.path/'captions.json',captions)
     write(store.path/'caption-sync.json',{'narration_sha256':digest(target),'script_sha256':digest(store.path/'script.json'),
-                                        'duration':offset,'segments':spans,'tempo_factor':1.0,'method':'native SAPI speech progress events on the final unchanged audio clock'})
+                                        'duration':offset,'segments':spans,'tempo_factor':1.0,'method':'native provider word boundary events on the final unchanged audio clock'})
     return offset,captions,spans
 
 def ass_time(value):
@@ -314,6 +317,7 @@ def validate(store,config):
             'video_sha256':digest(video),'tempo_factor':1.0,'preview_times':preview_times,'human_inspection':'pending','paid_jobs':0}
     write(store.path/'validation.json',report)
     artifacts=('fact-pack.json','claims-to-sources.json','candidates.json','script.json','captions.json','caption-sync.json','narration.wav','thumbnail.png','composition.ass','validation.json')
+    if (store.path/'speech-provider.json').exists(): artifacts+=('speech-provider.json',)
     state['stage']='validated'; state['video_path']=str(video); state['channel_id']=config.get('channel_id','')
     state['manifest']={'title':script['title'],'description':script.get('description','Japan Explained: how it works and why it matters.')+
                        '\nOriginal illustrative diagrams, not documentary footage. Synthetic narration.\nSources:\n'+'\n'.join(s['url'] for s in evidence['sources']),
