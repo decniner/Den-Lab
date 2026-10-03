@@ -112,6 +112,9 @@ class Deal:
 
 
 def validate_variant(product: dict, variant: dict, store: dict, config: dict, now: datetime) -> Deal:
+    brands = config.get("allowed_brands", [])
+    if brands and clean(product.get("vendor") or "", 200).casefold() not in {b.strip().casefold() for b in brands}:
+        raise Rejected("brand_not_allowed")
     reference = yen(variant.get("compare_at_price"))
     sale = yen(variant.get("price"))
     # Integer-price cross multiplication applies the threshold before any rounding/division.

@@ -31,6 +31,14 @@ def deal(**kwargs):
 
 
 class DealsTests(unittest.TestCase):
+    def test_brand_allowlist_requires_exact_vendor_not_compatible_title(self):
+        cfg = dict(CONFIG, allowed_brands=["Nike", "Sony"])
+        accepted = validate_variant(product(vendor="NIKE", title="Running shoes"), variant(), STORE, cfg, NOW)
+        self.assertEqual(accepted.name, "Running shoes")
+        for vendor in ["", "Unknown", "Nike-compatible", "SHAKA"]:
+            with self.assertRaisesRegex(Rejected, "brand_not_allowed"):
+                validate_variant(product(vendor=vendor, title="Compatible with Sony and Nike"), variant(), STORE, cfg, NOW)
+
     def test_docking_clothing_is_not_computer_accessory(self):
         selected = dict(CONFIG, categories=["electronics", "computer accessories", "appliances", "shoes"])
         for title in ["ドッキングロングワンピース", "ドッキングヘンリートップス", "docking dress", "秋冬のマストハブ！ショルダーバッグ"]:

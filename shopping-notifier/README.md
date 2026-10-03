@@ -110,3 +110,9 @@ Run reports include discovered counts, exclusions, limits/failures, exact select
 Live verification found 11 SHAKA footwear products at exactly 50% off; Edifier (50 products) and SOUNDPEATS (38 products) had no qualifying variants. SHAKA uses `catalog_page_size: 50` to remain below the bounded response limit; pagination still continues and caps remain explicit. Its current nationwide free-shipping policy is rechecked each run. No shoe size is assumed: alerts show the exact verified size.
 
 Additional probes: AUKEY and Focal public feeds returned 404; KEEN shipping policy was robots-restricted; several other domains redirected across origins and were not enabled. SwitchBot catalog includes promotional gift clones, so it was not enabled pending an adapter that proves unconditional purchase eligibility. Old event pages and search snippets were never used as deal evidence.
+
+### Brand preference
+
+`allowed_brands` now restricts every scheduled/manual run to the configured established-brand list. Matching uses an exact, case-insensitive product vendor, rechecked on fresh product data. A brand mentioned in a compatible accessory title or description does not qualify. Missing or unrecognized vendor fields fail closed. Edit the list to add verified vendor spelling aliases; an empty list disables this filter. This is a user preference, not an independent authenticity certification.
+
+SHAKA, Classical Elf/JaVa, and other vendors outside the list are now excluded. Current shoe catalogs do not provide supported listings for the requested Nike/Adidas/ASICS/New Balance brands; therefore shoe coverage for these brands is currently unavailable. An allowlisted brand does not mean its store is supported. Existing catalog sources and failures are still reported honestly. Previous Telegram messages remain historical; this preference applies to future runs.

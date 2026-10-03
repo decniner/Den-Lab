@@ -35,7 +35,9 @@ def load_config(path):
                 raise ValueError()
         if not 1 <= config["request_interval_seconds"] <= 10:
             raise ValueError()
-        for key in ("categories", "excluded_keywords"):
+        if "allowed_brands" not in config:
+            config["allowed_brands"] = []
+        for key in ("categories", "excluded_keywords", "allowed_brands"):
             if not isinstance(config[key], list) or not all(isinstance(x, str) and x for x in config[key]):
                 raise ValueError()
         for key in ("min_price_jpy", "meaningful_drop_jpy", "meaningful_drop_percent"):
