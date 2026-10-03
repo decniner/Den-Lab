@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "edition": "japan-explained-20261003-shinkansen-v1",
+    "fact_id": "shinkansen-wave-warning",
+    "semantic_key": "rail-earthquake-wave-warning",
+    "aliases": [
+      "bullet-train-earthquake-brakes",
+      "shinkansen-earthquake-detection"
+    ],
+    "claim_fingerprint": "ca24f9ff875ca8b82342a58e6d2078abf7e5b22fa369f8c7b5e60f118208ef46",
+    "category": "engineering",
+    "status": "reserved",
+    "at": "2026-10-02T17:08:16.493641+00:00"
+  }
+]

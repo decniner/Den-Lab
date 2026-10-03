@@ -85,8 +85,12 @@ def main(argv=None):
     p.add_argument('--preview-root',default='voice-previews'); p.add_argument('--selection',default='voice-selection.json')
     p=sub.add_parser('revise-edition'); p.add_argument('--edition',required=True)
     p.add_argument('--parent',required=True); p.add_argument('--approve-parent',required=True)
+    sub.add_parser('daily-private')
     args=parser.parse_args(argv); store=None
     try:
+        if args.command=='daily-private':
+            from .daily import run_daily
+            run_daily(args.state_root,research.read(args.config)); return 0
         if args.command in ('speech-voices','voice-previews','select-voice'):
             from . import speech
             config=research.read(args.config)
