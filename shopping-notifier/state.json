@@ -150,6 +150,36 @@
       "reference_price": "331480",
       "sent_at": "2026-10-03T18:00:18+09:00",
       "url": "https://jp.ecoflow.com/products/delta-3-max-white-portable-power-station?variant=53384583217519"
+    },
+    "toffyjapan:10341148459282:52224229409042": {
+      "sale_price": "605",
+      "reference_price": "3828",
+      "sent_at": "2026-10-03T18:32:26+09:00",
+      "url": "https://toffy.jp/products/cu-k-cm1-bfsbe?variant=52224229409042"
+    },
+    "toffyjapan:10095230255378:51142588825874": {
+      "sale_price": "2200",
+      "reference_price": "8800",
+      "sent_at": "2026-10-03T18:32:26+09:00",
+      "url": "https://toffy.jp/products/fn12?variant=51142588825874"
+    },
+    "toffyjapan:10095236743442:51142624706834": {
+      "sale_price": "980",
+      "reference_price": "3850",
+      "sent_at": "2026-10-03T18:32:26+09:00",
+      "url": "https://toffy.jp/products/fn19?variant=51142624706834"
+    },
+    "phenixstore-com:8342001811760:45140211990832": {
+      "sale_price": "7290",
+      "reference_price": "27000",
+      "sent_at": "2026-10-03T18:32:26+09:00",
+      "url": "https://phenixstore.com/products/esbh22p78?variant=45140211990832"
+    },
+    "phenixstore-com:8342011937072:45140304003376": {
+      "sale_price": "2700",
+      "reference_price": "10000",
+      "sent_at": "2026-10-03T18:32:26+09:00",
+      "url": "https://phenixstore.com/products/poz-23007w?variant=45140304003376"
     }
   },
   "last_digest": {
