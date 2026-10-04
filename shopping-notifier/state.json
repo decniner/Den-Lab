@@ -312,12 +312,30 @@
       "reference_price": "1320",
       "sent_at": "2026-10-04T09:17:34+09:00",
       "url": "https://toffy.jp/products/rx42-icl?variant=48726627746066"
+    },
+    "toffyjapan:9119202410770:48182674456850": {
+      "sale_price": "1000",
+      "reference_price": "2178",
+      "sent_at": "2026-10-04T09:17:36+09:00",
+      "url": "https://toffy.jp/products/tl-hw-uvb?variant=48182674456850"
+    },
+    "toffyjapan:8880113025298:47405993263378": {
+      "sale_price": "12880",
+      "reference_price": "27500",
+      "sent_at": "2026-10-04T09:17:36+09:00",
+      "url": "https://toffy.jp/products/rx39-sb?variant=47405993263378"
+    },
+    "cotopaxijapan:9242292977852:45979372814524": {
+      "sale_price": "31350",
+      "reference_price": "62700",
+      "sent_at": "2026-10-04T09:17:36+09:00",
+      "url": "https://cotopaxi.jp/products/fuego-max-down-hooded-jacket-womens-sale26ss?variant=45979372814524"
     }
   },
   "last_digest": {
-    "date": "2026-10-03",
-    "coverage_key": "92eefc765cd766a01cb0ad02620011c8a672fe7291f5f4baa4f58edcd6532272",
-    "completed_at": "2026-10-03T19:28:26+09:00",
-    "digest_hash": "38fd67e1066e6ea36ded75dfdfe394142fca2b688ae3576d86b61634ce088262"
+    "date": "2026-10-04",
+    "coverage_key": "e4b5a51ec7eb376a3a37e5cdc5dc6bb75dfacb9e8e6f11623f3b8530b15d2076",
+    "completed_at": "2026-10-04T09:17:36+09:00",
+    "digest_hash": "b4e74f868e649d77bcbf3122bc49e12d8f8c6ec490ccbe98c51cc81007cf89eb"
   }
 }
