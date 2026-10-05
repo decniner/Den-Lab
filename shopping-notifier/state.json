@@ -366,12 +366,36 @@
       "reference_price": "36300",
       "sent_at": "2026-10-05T09:22:54+09:00",
       "url": "https://cotopaxi.jp/products/cielo-rain-jacket-mens-sale26fw?variant=47301256052924"
+    },
+    "cotopaxijapan:9246627070140:45992675246268": {
+      "sale_price": "16500",
+      "reference_price": "33000",
+      "sent_at": "2026-10-05T09:22:55+09:00",
+      "url": "https://cotopaxi.jp/products/fuego-down-vest-mens-sale26ss?variant=45992675246268"
+    },
+    "cotopaxijapan:9246627659964:45992682881212": {
+      "sale_price": "16500",
+      "reference_price": "33000",
+      "sent_at": "2026-10-05T09:22:55+09:00",
+      "url": "https://cotopaxi.jp/products/fuego-down-vest-womens-sale26ss?variant=45992682881212"
+    },
+    "brooksrunning-co-jp:8456410333481:45733349130537": {
+      "sale_price": "15950",
+      "reference_price": "31900",
+      "sent_at": "2026-10-05T09:22:55+09:00",
+      "url": "https://brooksrunning.co.jp/products/bru0381-lbk?variant=45733349130537"
+    },
+    "cotopaxijapan:9246627758268:45992685994172": {
+      "sale_price": "15950",
+      "reference_price": "31900",
+      "sent_at": "2026-10-05T09:22:55+09:00",
+      "url": "https://cotopaxi.jp/products/trico-hybrid-hooded-jacket-womens-sale26ss?variant=45992685994172"
     }
   },
   "last_digest": {
-    "date": "2026-10-04",
-    "coverage_key": "e4b5a51ec7eb376a3a37e5cdc5dc6bb75dfacb9e8e6f11623f3b8530b15d2076",
-    "completed_at": "2026-10-04T09:17:36+09:00",
-    "digest_hash": "b4e74f868e649d77bcbf3122bc49e12d8f8c6ec490ccbe98c51cc81007cf89eb"
+    "date": "2026-10-05",
+    "coverage_key": "a479dae42f73d240df07d31d40c600a7cff29227440de4ac70811393262340ee",
+    "completed_at": "2026-10-05T09:22:55+09:00",
+    "digest_hash": "cefcad616e21e840cc5e7fec26289f40293a04cad0e37328ee2999fd80cbe2b6"
   }
 }
