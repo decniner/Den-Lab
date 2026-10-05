@@ -1,0 +1,921 @@
+PROJECT: DEN SANCHEZ — PROFESSIONAL CAPABILITY & LEADERSHIP PROFILE
+
+YOUR TASK
+
+Build a premium, polished, interactive professional profile web application for:
+
+DEN SANCHEZ
+
+Subtitle:
+
+Technical Leadership • SRE • Automation • Global Technology Operations
+
+Create three complete files:
+
+- "index.html"
+- "style.css"
+- "app.js"
+
+This application should function as an executive technology leadership and capability profile. It should help colleagues, managers, technology leaders, stakeholders, recruiters, and professional peers understand:
+
+- Who Den is professionally
+- How he thinks and approaches complex problems
+- His technical strengths and engineering philosophy
+- His SRE, automation, observability, and architecture capabilities
+- His leadership, communication, documentation, and mentoring approach
+- His cross-regional collaboration
+- His organisational impact and strategic thinking
+- The recurring themes in his supplied 360-degree feedback
+
+The central message is:
+
+Technical depth + strategic thinking + operational discipline + knowledge multiplication.
+
+The application must connect:
+
+Individual expertise → engineering solutions → automation → observability → documentation → knowledge sharing → organisational capability.
+
+Build the application itself. Do not stop at a design proposal or implementation plan.
+
+---
+
+1. REQUIRED FILE STRUCTURE
+
+Use this structure:
+
+den-sanchez-profile/
+├── index.html
+├── style.css
+└── app.js
+
+index.html
+
+Contains:
+
+- Semantic HTML
+- Complete profile content
+- Navigation
+- Accessible interactive controls
+- Inline SVG diagrams where appropriate
+- Metadata, page title, and description
+
+Reference the other files using relative paths:
+
+<link rel="stylesheet" href="./style.css">
+<script src="./app.js" defer></script>
+
+style.css
+
+Contains all application styling:
+
+- Design tokens and CSS custom properties
+- Typography
+- Colours
+- Layout
+- Responsive behaviour
+- Component styling
+- Focus states
+- Animations
+- Reduced-motion rules
+- Print styling where useful
+
+app.js
+
+Contains all application behaviour:
+
+- Navigation enhancements
+- Scroll progress
+- Interactive capability controls
+- Lifecycle interactions
+- Expandable evidence
+- Score animations
+- Scroll reveals
+- Other useful interface behaviour
+
+Use a normal deferred script. Do not use JavaScript modules, imports, or features that require serving the files over HTTP.
+
+Separation rules
+
+- Do not embed application CSS inside "<style>" tags.
+- Do not use inline "style" attributes.
+- Do not embed application JavaScript inside the HTML.
+- Do not use inline event handlers such as "onclick".
+- Attach event listeners from "app.js".
+- Inline SVG markup is allowed inside "index.html".
+- Keep substantive profile content in the HTML so it remains readable if JavaScript fails or is disabled.
+
+All three files must be complete and work together without modification.
+
+---
+
+2. RUNTIME REQUIREMENTS
+
+Use only:
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+The application must:
+
+- Run by opening "index.html" directly in a modern browser
+- Work using the "file://" protocol
+- Require no server, backend, database, build process, or npm
+- Require no React, Vue, Angular, or external framework
+- Require no external APIs or internet connection
+- Require no CDN resources
+- Require no external fonts, images, icon libraries, or scripts
+
+Use a professional system-font stack.
+
+Create visuals using local HTML, CSS, and inline SVG.
+
+Do not use "fetch()" to load local content, remote resources, or separate JSON files. Keep any necessary interaction data inside "app.js".
+
+Do not add analytics, tracking, service workers, or unnecessary dependencies.
+
+The email link is an intentional external action and may require an installed mail application.
+
+Optimise for:
+
+- Android browsers
+- iPhone browsers
+- Tablets
+- Desktop browsers
+
+Design mobile-first.
+
+---
+
+3. VISUAL DIRECTION
+
+Create a premium dark technology aesthetic that feels:
+
+- Intelligent
+- Calm
+- Precise
+- Technical
+- Minimal
+- Confident
+- Executive
+- Sophisticated
+
+Draw visual inspiration from enterprise engineering, architecture, SRE, observability, and executive technology reports.
+
+Avoid generic résumé layouts, corporate intranets, basic templates, gaming dashboards, cryptocurrency dashboards, and visually noisy SaaS pages.
+
+Colour system
+
+Use:
+
+- Near-black background
+- Deep charcoal surfaces
+- Restrained blue or indigo accents
+- Small amounts of cyan
+- Very limited purple highlights
+- Soft white primary text
+- Readable muted secondary text
+
+Use thin borders, subtle gradients, restrained glass effects, and deliberate whitespace.
+
+Do not make every element glow. Ensure secondary text remains readable against every surface.
+
+Typography
+
+Use:
+
+- Large editorial headings
+- Small uppercase section labels
+- Short explanatory paragraphs
+- Strong numerical typography
+- Clear hierarchy
+- Comfortable line lengths and spacing
+
+The application should feel like a carefully designed executive technology report.
+
+---
+
+4. INFORMATION ARCHITECTURE
+
+Use coherent navigation and group related sections into a readable journey.
+
+Do not create dozens of visually identical cards or repeat the same claims in every section.
+
+All important themes below must appear, but related material may share a section where that improves clarity.
+
+Suggested navigation groups:
+
+- Profile
+- Feedback
+- Engineering Loop
+- Capabilities
+- Leadership
+- Impact
+- Development
+- Contact
+
+The visitor should understand:
+
+- After 10 seconds: Den’s professional identity
+- After 30 seconds: his main strengths
+- After 2 minutes: how he works
+- After 5 minutes: his technical depth and leadership style
+- After full exploration: how his work becomes reusable organisational capability
+
+---
+
+5. HERO AND PROFESSIONAL IDENTITY
+
+Hero
+
+Display:
+
+DEN
+SANCHEZ
+
+Then:
+
+Technical Leadership • SRE • Automation • Global Technology Operations
+
+Primary statement:
+
+«A technically deep technology professional who turns complex operational problems into automation, observability, documentation and repeatable team capability.»
+
+Include an abstract technical visual connecting:
+
+- Problems
+- Systems
+- Strategy
+- Automation
+- Observability
+- Documentation
+- Knowledge
+- People
+
+Keep it subtle and ensure it does not interfere with reading.
+
+Show this engineering loop consistently throughout the application:
+
+UNDERSTAND → ANALYSE → PLAN → ENGINEER → AUTOMATE → OBSERVE → DOCUMENT → SHARE → SCALE
+
+Allow visitors to select a stage and read a short explanation.
+
+The Professional Profile
+
+Present a coherent identity based on the supplied feedback:
+
+- Analytical problem solver
+- Strategic thinker
+- Automation engineer
+- SRE practitioner
+- Endpoint and digital workspace subject-matter expert
+- Technical communicator and documenter
+- Dependable adviser
+- Mentor and knowledge sharer
+- Cross-regional contributor
+
+Core statement:
+
+«Den takes complexity, makes it understandable, automates what can be automated, documents what has been learned, and helps other people operate at a higher level.»
+
+Attribute these characterisations to the supplied feedback.
+
+---
+
+6. 360-DEGREE FEEDBACK DASHBOARD
+
+Display the following scores exactly:
+
+Capability| Score
+Explore Insights & Visions| 4.45 / 5
+Make Strategic Decisions| 4.55 / 5
+Inclusion| 4.09 / 5
+Inspire Entrepreneurship Among the Team| 4.09 / 5
+Elevate Organisational Objectives| 4.09 / 5
+
+Calculate the unweighted arithmetic mean:
+
+(4.45 + 4.55 + 4.09 + 4.09 + 4.09) / 5 = 4.254
+
+Display:
+
+4.25 / 5
+
+Label it:
+
+Mean of the five supplied category scores, rounded to two decimal places.
+
+Do not imply that it is an official weighted overall rating.
+
+Use a restrained visualisation, such as horizontal score bars with clearly readable numerical labels.
+
+Keep the visual scale consistent. Do not exaggerate differences by truncating or manipulating the scale.
+
+Provide an accessible text or table equivalent.
+
+Add:
+
+«These category scores were supplied as part of Den’s reported 360-degree feedback and are reproduced as provided. The displayed mean is calculated from those five scores.»
+
+Do not invent company averages, percentiles, rankings, or benchmarks.
+
+---
+
+7. HOW DEN WORKS — THE ENGINEERING LOOP
+
+Create an interactive lifecycle with nine stages.
+
+01 — Understand
+
+- Investigate the underlying problem
+- Understand system behaviour
+- Decompose complex issues
+- Look beyond visible symptoms
+
+02 — Analyse
+
+- Identify causes and dependencies
+- Understand constraints
+- Break problems into manageable components
+- Identify practical solutions
+
+The supplied prompt includes the reviewer wording:
+
+«“root out the causes of problems”»
+
+03 — Plan
+
+- Define targets and deliverables
+- Prepare before project initiation
+- Structure the work
+- Think ahead about execution and outcomes
+
+The supplied prompt includes the reviewer wording:
+
+«“remarkable clarity regarding project targets and deliverables”»
+
+04 — Engineer
+
+- Architecture
+- PowerShell
+- Windows engineering
+- Platform engineering
+- SRE
+- Operational tooling
+
+05 — Automate
+
+- Production automation
+- Process improvement
+- Operational efficiency
+- Reduction of repetitive manual work
+- Repeatable execution
+
+06 — Observe
+
+- Telemetry
+- Metrics
+- Monitoring
+- Proactive alerts
+- Reporting
+- Operational visibility
+
+07 — Document
+
+- Clear, concise explanations
+- Structured procedures
+- Tables and screenshots
+- Configuration and operational guidance
+- Reusable knowledge
+
+Central concept:
+
+«Documentation becomes organisational memory.»
+
+08 — Share
+
+- Mentoring
+- Technical advice
+- Knowledge sharing
+- Troubleshooting support
+- Connecting colleagues with experts
+- SRE capability development
+
+09 — Scale
+
+«Convert individual technical capability into organisational capability.»
+
+Explain that the value extends beyond what Den personally builds: tools, knowledge, and practices become reusable by others.
+
+---
+
+8. TECHNICAL CAPABILITY AND RELIANCE MAP
+
+Create interactive categories with concise explanations and supporting feedback themes.
+
+Automation & SRE
+
+PowerShell, production automation, SRE automation, operational efficiency, process improvement.
+
+Observability
+
+Telemetry, metrics, monitoring, proactive alerts, reporting, operational visibility.
+
+Endpoint & Digital Workspace
+
+Windows, endpoint technology, Digital Workspace, Windows VDI, endpoint platforms, workspace operations.
+
+Platform Engineering
+
+Platform architecture, production services, engineering solutions, scalability, performance improvement.
+
+Operations
+
+Production changes, upgrades, migration programmes, major incidents, service restoration.
+
+Technical Communication
+
+Documentation, presentations, technical explanations, English and Japanese communication, stakeholder communication.
+
+Include a capability map titled:
+
+WHAT PEOPLE RELY ON DEN FOR
+
+Cover:
+
+- Problem solving
+- Automation
+- Windows
+- SRE
+- Documentation
+- Troubleshooting
+- Architecture
+- Migration
+- Observability
+- Communication
+- Mentoring
+- Global collaboration
+
+Do not invent proficiency percentages, numerical skill rankings, or certifications.
+
+---
+
+9. GLOBAL COLLABORATION AND LEADERSHIP
+
+Global Technology Collaboration
+
+Represent these locations using accessible SVG, CSS, or a carefully designed regional diagram:
+
+- Japan
+- Hong Kong
+- Singapore
+- India
+- United Kingdom
+- Australia
+
+Explain that the supplied feedback describes collaboration involving:
+
+- Regional desktop support
+- Infrastructure
+- Workspace operations
+- Engineering
+- Global technology stakeholders
+- Production services
+- Migration programmes
+- Major incident management
+- Service restoration
+
+Describe collaboration with teams in these locations. Do not imply physical presence, formal regional ownership, or travel.
+
+Leadership Without Dependence on Hierarchy
+
+Create five pillars:
+
+- Lead by solving: demonstrate practical solutions
+- Lead by teaching: share expertise
+- Lead by documenting: make knowledge accessible
+- Lead by enabling: create tools that help others
+- Lead by connecting: connect people, teams, and expertise
+
+Include:
+
+«Technical leadership can emerge through expertise, trust, reliability, knowledge sharing and the ability to make other people more effective.»
+
+Do not infer a formal management role or reporting structure.
+
+---
+
+10. ENGINEERING IMPACT AND KNOWLEDGE MULTIPLICATION
+
+Include the following distinct themes without excessive repetition.
+
+Knowledge That Doesn’t Disappear
+
+Explain the reported documentation strengths:
+
+- Tables
+- Screenshots
+- System configuration
+- Architecture and context
+- Troubleshooting
+- Step-by-step procedures
+- General operational guidance
+
+Visualise:
+
+Individual knowledge → documented knowledge → shared knowledge → organisational capability
+
+From Manual Work to Engineered Capability
+
+Visualise:
+
+Manual process → automation → repeatability → consistency → observability → scalability
+
+One reviewer described Den as the highest achiever in the team for production automation delivery.
+
+Label that statement as reviewer feedback. Do not convert it into an independently established ranking.
+
+Do not invent automation counts, financial savings, or ROI.
+
+Make the System Visible
+
+Visualise:
+
+System → data → metrics → visibility → alerting → action → improvement
+
+Discuss reporting and observability only to the level supported by the supplied themes. No detailed reporting-framework implementation is supplied; do not fabricate one.
+
+How Complex Problems Become Practical Solutions
+
+Visualise:
+
+Problem → investigation → root cause → design → implementation → automation → monitoring → documentation → knowledge transfer
+
+From Incident to Architecture
+
+Present the reviewer-described example of addressing a performance bottleneck through a scalable microservices solution.
+
+The reviewer reported:
+
+- 40% reduction in latency
+- Capability to handle three times the transaction volume
+- Improved client satisfaction
+
+Display:
+
+REPORTED REVIEWER EXAMPLE
+
+Include:
+
+«These figures are reproduced from the supplied 360-feedback narrative and are not independently verified within this profile.»
+
+Do not invent the architecture, project name, measurement method, baseline, workload, or implementation details.
+
+Making Complex Technology Understandable
+
+Discuss clear explanations, presentations, documentation, stakeholder communication, and English and Japanese communication.
+
+Visualise:
+
+Complex system → structured explanation → clear documentation → shared understanding → better execution
+
+Knowledge Multiplication
+
+Discuss advice, guidance, troubleshooting support, PowerShell assistance, SQL assistance, SRE knowledge, and connections to experts as described in the supplied brief.
+
+Present this as an inferred mentoring principle:
+
+«Help other people become more capable so expertise can be shared across the team.»
+
+Impact Dashboard
+
+Use qualitative cards:
+
+- Automation
+- Reliability
+- Knowledge
+- Global collaboration
+- Strategy
+- Enablement
+
+Do not invent numerical impact scores.
+
+The Technical Multiplier
+
+Create a visually distinctive centerpiece:
+
+Individual expertise → engineering solution → automation → observability → documentation → knowledge sharing → team capability → organisational capability
+
+Make every diagram readable on small screens. Avoid oversized horizontal chains.
+
+---
+
+11. PROFESSIONAL DEVELOPMENT AND FUTURE INFLUENCE
+
+Continuous Learning
+
+Include:
+
+SRE Architect certification — referenced in supplied feedback
+
+Explain that a reviewer identified it as evidence of continuous learning and professional development.
+
+Do not invent the provider, date, score, level, exam details, or verification status.
+
+The Next Evolution
+
+Present opportunities to expand existing strengths:
+
+- Formal SRE strategy
+- Structured mentoring
+- Organisational visibility
+- Knowledge leadership
+- Broader technical influence
+
+Frame these as suggestions derived from the supplied brief, not verified deficiencies or direct reviewer quotations.
+
+Use:
+
+«Expansion of existing strengths.»
+
+---
+
+12. PROFESSIONAL SIGNATURE AND CLOSING PORTRAIT
+
+Professional Operating Principle
+
+Display:
+
+«Solve the problem properly, automate what should not remain manual, make the result observable, document what was learned, and leave the next person in a better position than you found them.»
+
+Label:
+
+Professional operating principle derived from the feedback
+
+Do not present it as a direct quote from Den.
+
+One-Sentence Profile
+
+Display prominently:
+
+«Den is a technically deep, strategically minded SRE and technology professional who turns complex operational problems into scalable engineering solutions, then makes those solutions durable through automation, observability, documentation and knowledge sharing.»
+
+Identify this as a synthesis of the supplied feedback.
+
+The Professional Portrait
+
+Summarise these recurring themes:
+
+- Analytical
+- Technical
+- Strategic
+- Reliable
+- Approachable
+- Automation-oriented
+- Documentation-driven
+- Collaborative
+- Global
+- SRE-minded
+- Knowledge-sharing
+- Architecture-aware
+
+Explain that the supplied themes consistently describe someone who investigates complexity, engineers practical solutions, automates repetitive work, makes systems observable, documents knowledge, and helps others reuse it.
+
+Do not invent the number of reviewers or claim statistical consensus.
+
+---
+
+13. DATA INTEGRITY AND SOURCE MATERIAL
+
+Use only the information supplied in this prompt.
+
+Do not invent:
+
+- Employers
+- Job titles
+- Dates
+- Awards
+- Projects
+- Performance metrics
+- Team sizes
+- Reporting structures
+- Certifications
+- Contact details
+- Benchmark comparisons
+
+Distinguish:
+
+1. Supplied category scores
+2. Calculated values
+3. Reviewer-reported observations
+4. Reviewer-reported quantitative claims
+5. Editorial interpretations or inferred principles
+
+Use attribution such as:
+
+- “Reviewers described…”
+- “The supplied feedback highlights…”
+- “One reviewer reported…”
+- “Reviewer-described impact”
+- “Derived from the supplied feedback”
+
+Supporting evidence controls must reveal paraphrases of the supplied themes. Do not fabricate quotations, reviewer identities, source documents, or evidence links.
+
+Supplied feedback themes
+
+Problem solving: analysing problems, identifying causes, selecting appropriate solutions, timely resolution.
+
+Documentation: frequent, clear, concise, step-by-step documentation with tables and screenshots explaining setup, configuration, and operations.
+
+Automation: PowerShell, production automation, SRE automation, process improvement, operational efficiency, multiple deliveries. One reviewer described Den as the team’s highest achiever in production automation delivery.
+
+SRE: telemetry, observability, metrics, monitoring, reporting, proactive alerts, capability development.
+
+Technical expertise: strong engineering, coding, PowerShell, Windows knowledge, and practical technical capability.
+
+Strategy: strategic vision, planning, clear targets, defined deliverables, forward preparation, architecture decisions.
+
+Mentoring: approachable, reliable, helpful, willing to advise, mentor, and connect colleagues with appropriate experts.
+
+Communication: English, Japanese, technical explanations, presentations, requirement understanding, stakeholder and cross-regional communication.
+
+Global collaboration: Japan, Hong Kong, Singapore, India, UK, Australia; desktop support, infrastructure, workspace operations, engineering, production services, migration, incidents, and restoration.
+
+Endpoint and Digital Workspace: Windows, endpoint technology, Windows VDI, endpoint platforms, workspace operations.
+
+Architecture: reviewer-described platform architecture leadership and a microservices example reporting 40% lower latency, three-times transaction-volume capability, and improved client satisfaction.
+
+Development: SRE Architect certification referenced by a reviewer as evidence of continuous learning and professional development.
+
+Methodology note
+
+Include near the bottom:
+
+«About this profile
+This profile synthesises 360-degree feedback themes supplied by Den Sanchez. It represents the perceptions and observations contained in that material. Quantitative examples supplied by individual reviewers are explicitly identified as reported claims rather than independently verified measurements. Editorial principles are identified as interpretations derived from the feedback.»
+
+---
+
+14. INTERACTION, ANIMATION, AND ACCESSIBILITY
+
+Implement useful interactions:
+
+- Reading progress indicator
+- Sticky section navigation
+- Expandable capability explanations
+- Interactive engineering lifecycle
+- Supporting feedback disclosures
+- Selectable collaboration locations
+- Subtle score and bar animations
+
+Use native buttons and disclosure controls where appropriate.
+
+Every interaction must support touch and keyboard input. Hover may enhance an interaction but must never be required.
+
+Provide:
+
+- Semantic landmarks and logical headings
+- Skip-to-content link
+- Visible keyboard focus
+- Accessible control names
+- Correct expanded states where needed
+- Text equivalents for charts and diagrams
+- Adequate contrast
+- Comfortable touch targets, approximately 44 × 44 CSS pixels
+- Logical focus order
+
+Animation requirements
+
+Use restrained fade-ins, small vertical movement, progress transitions, and hover elevation.
+
+Respect "prefers-reduced-motion" in both CSS and JavaScript.
+
+With reduced motion enabled:
+
+- Show final numerical values immediately
+- Disable non-essential reveals, movement, and counting
+- Avoid animated smooth scrolling
+
+Content must be visible by default. A JavaScript error or unavailable "IntersectionObserver" must not leave sections hidden.
+
+Score text must contain the final accurate values in the HTML. Visual counting effects must not repeatedly announce intermediate values to assistive technology.
+
+Do not hijack scrolling or create perpetual distracting animation.
+
+---
+
+15. RESPONSIVE UX AND PERFORMANCE
+
+Mobile
+
+- No page-level horizontal overflow
+- Readable typography
+- Comfortable spacing
+- Naturally stacked cards
+- Vertically readable diagrams
+- No hover-only behaviour
+- Navigation may scroll within its own clearly bounded container
+- Sticky elements must not cover content or focused controls
+
+Desktop
+
+- Controlled maximum content width
+- Balanced two-column layouts where appropriate
+- Editorial section spacing
+- Deliberate visual hierarchy
+- Avoid stretching phone layouts across the entire screen
+
+Performance
+
+- Keep SVGs and decorative effects lightweight
+- Avoid excessive blur and expensive effects
+- Avoid unnecessary scroll work
+- Use efficient event handling
+- Ensure the page remains usable on ordinary mobile devices
+
+---
+
+16. CONTACT AND FOOTER
+
+Closing identity:
+
+DEN SANCHEZ
+
+Technical Leadership • SRE • Automation • Global Technology Operations
+
+Closing statement:
+
+«Technical problems become more valuable when the solution survives the person who created it.»
+
+Contact:
+
+densanchez@gmail.com
+
+Create an accessible email button using:
+
+mailto:densanchez@gmail.com
+
+Footer:
+
+Den Sanchez — Professional Capability & Leadership Profile
+
+A synthesis of supplied 360-degree feedback.
+
+Offline professional profile built with HTML, CSS and JavaScript.
+
+Do not describe the application as a single-file profile.
+
+---
+
+17. VERIFICATION AND QUALITY BAR
+
+Before delivery, verify:
+
+- "index.html" references "./style.css" and "./app.js"
+- All three files exist and contain complete implementations
+- Local opening works without a server
+- No network resources are required
+- Navigation and interactive controls work
+- Numerical values and the calculated mean are correct
+- Reviewer-reported claims are labelled
+- Content remains readable without JavaScript
+- Reduced-motion behaviour works
+- Keyboard navigation works
+- Mobile and desktop layouts are readable
+- There is no page-level horizontal overflow
+- No console errors occur during tested interactions
+- No placeholder content or unfinished controls remain
+
+Inspect representative viewport widths such as 360, 390, 768, and 1440 pixels where tools allow.
+
+Report only checks actually performed. If browser rendering is unavailable, state that limitation and do not claim visual testing passed.
+
+The result should be credible, technically informed, strategically coherent, personal, and suitable for senior technology audiences.
+
+---
+
+18. FINAL OUTPUT REQUIREMENTS
+
+If you have filesystem access:
+
+1. Create "index.html", "style.css", and "app.js" in the target project directory.
+2. Complete and verify the implementation.
+3. Provide a concise summary identifying the files and checks performed.
+
+If you can only respond with text:
+
+Return the complete contents of all three files in this order:
+
+1. "index.html" in an HTML code block
+2. "style.css" in a CSS code block
+3. "app.js" in a JavaScript code block
+
+Clearly label each filename outside its code block.
+
+Do not return partial files, pseudocode, TODOs, placeholders, omitted sections, or instructions to continue.
+
+Do not combine the application into one HTML file.
+
+The visitor should leave understanding how Den thinks, works, engineers solutions, supports teams, and turns technical expertise into durable organisational capability.
+
+Make the information architecture as thoughtful as the visual design.
