@@ -426,12 +426,36 @@
       "reference_price": "29700",
       "sent_at": "2026-10-06T11:03:32+09:00",
       "url": "https://brooksrunning.co.jp/products/bru0426-lbk?variant=45789177250089"
+    },
+    "brooksrunning-co-jp:8707486384425:46790552256809": {
+      "sale_price": "14850",
+      "reference_price": "29700",
+      "sent_at": "2026-10-06T11:03:34+09:00",
+      "url": "https://brooksrunning.co.jp/products/bru0426-p?variant=46790552256809"
+    },
+    "brooksrunning-co-jp:9040208462121:47877884346665": {
+      "sale_price": "14850",
+      "reference_price": "29700",
+      "sent_at": "2026-10-06T11:03:34+09:00",
+      "url": "https://brooksrunning.co.jp/products/bmm0456-gry?variant=47877884346665"
+    },
+    "saucony-jp:8596869218456:45827081666712": {
+      "sale_price": "14025",
+      "reference_price": "28050",
+      "sent_at": "2026-10-06T11:03:34+09:00",
+      "url": "https://saucony.jp/products/progrid-triumph-4-n02?variant=45827081666712"
+    },
+    "saucony-jp:8596860502168:45827000467608": {
+      "sale_price": "13750",
+      "reference_price": "27500",
+      "sent_at": "2026-10-06T11:03:34+09:00",
+      "url": "https://saucony.jp/products/womens-tempus-2?variant=45827000467608"
     }
   },
   "last_digest": {
-    "date": "2026-10-05",
-    "coverage_key": "a479dae42f73d240df07d31d40c600a7cff29227440de4ac70811393262340ee",
-    "completed_at": "2026-10-05T09:22:55+09:00",
-    "digest_hash": "cefcad616e21e840cc5e7fec26289f40293a04cad0e37328ee2999fd80cbe2b6"
+    "date": "2026-10-06",
+    "coverage_key": "a4c010a876defcb2289238101a0ebd5c387184b16222727c6471bacaf1a59294",
+    "completed_at": "2026-10-06T11:03:34+09:00",
+    "digest_hash": "4dd6495d188a68bad790a580bbb752f9fa8be3311d738eb847f127644abd5fe0"
   }
 }
