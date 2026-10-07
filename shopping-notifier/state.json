@@ -486,12 +486,36 @@
       "reference_price": "26400",
       "sent_at": "2026-10-07T10:10:20+09:00",
       "url": "https://brooksrunning.co.jp/products/bmw4052-b-p?variant=47369901244713"
+    },
+    "brooksrunning-co-jp:9567621742889:49571475783977": {
+      "sale_price": "13200",
+      "reference_price": "26400",
+      "sent_at": "2026-10-07T10:10:22+09:00",
+      "url": "https://brooksrunning.co.jp/products/brw4232-w-cr?variant=49571475783977"
+    },
+    "saucony-jp:8596859945112:45826996469912": {
+      "sale_price": "13200",
+      "reference_price": "26400",
+      "sent_at": "2026-10-07T10:10:22+09:00",
+      "url": "https://saucony.jp/products/womens-endorphin-speed-4?variant=45826996469912"
+    },
+    "saucony-jp:8596861681816:45827010658456": {
+      "sale_price": "13200",
+      "reference_price": "26400",
+      "sent_at": "2026-10-07T10:10:22+09:00",
+      "url": "https://saucony.jp/products/mens-endorphin-speed-4?variant=45827010658456"
+    },
+    "saucony-jp:8825844301976:47078453510296": {
+      "sale_price": "12925",
+      "reference_price": "25850",
+      "sent_at": "2026-10-07T10:10:22+09:00",
+      "url": "https://saucony.jp/products/progrid-omni-9-n02?variant=47078453510296"
     }
   },
   "last_digest": {
-    "date": "2026-10-06",
-    "coverage_key": "a4c010a876defcb2289238101a0ebd5c387184b16222727c6471bacaf1a59294",
-    "completed_at": "2026-10-06T11:03:34+09:00",
-    "digest_hash": "4dd6495d188a68bad790a580bbb752f9fa8be3311d738eb847f127644abd5fe0"
+    "date": "2026-10-07",
+    "coverage_key": "cf678add1e7a21549f7d29db621c04646fafd4bfce30c42deab58e3f201986d2",
+    "completed_at": "2026-10-07T10:10:22+09:00",
+    "digest_hash": "c212b892e4f9b175f17c0062f539ee23e4d0674c2412b2d1e9d352f8e44b5a76"
   }
 }
