@@ -450,6 +450,42 @@
       "reference_price": "27500",
       "sent_at": "2026-10-06T11:03:34+09:00",
       "url": "https://saucony.jp/products/womens-tempus-2?variant=45827000467608"
+    },
+    "saucony-jp:8596861321368:45827008266392": {
+      "sale_price": "13750",
+      "reference_price": "27500",
+      "sent_at": "2026-10-07T10:10:20+09:00",
+      "url": "https://saucony.jp/products/hurricane-24?variant=45827008266392"
+    },
+    "saucony-jp:8596862468248:45827015671960": {
+      "sale_price": "13750",
+      "reference_price": "27500",
+      "sent_at": "2026-10-07T10:10:20+09:00",
+      "url": "https://saucony.jp/products/mens-tempus-2?variant=45827015671960"
+    },
+    "saucony-jp:8596866433176:45827052568728": {
+      "sale_price": "13750",
+      "reference_price": "27500",
+      "sent_at": "2026-10-07T10:10:20+09:00",
+      "url": "https://saucony.jp/products/progrid-triumph-4-gorpcore?variant=45827052568728"
+    },
+    "saucony-jp:8596869415064:45827083108504": {
+      "sale_price": "13750",
+      "reference_price": "27500",
+      "sent_at": "2026-10-07T10:10:20+09:00",
+      "url": "https://saucony.jp/products/progrid-triumph-4-artsy?variant=45827083108504"
+    },
+    "saucony-jp:8596870267032:45827087564952": {
+      "sale_price": "13750",
+      "reference_price": "27500",
+      "sent_at": "2026-10-07T10:10:20+09:00",
+      "url": "https://saucony.jp/products/progrid-omni-9-metallic?variant=45827087564952"
+    },
+    "brooksrunning-co-jp:8897620836649:47369901244713": {
+      "sale_price": "13200",
+      "reference_price": "26400",
+      "sent_at": "2026-10-07T10:10:20+09:00",
+      "url": "https://brooksrunning.co.jp/products/bmw4052-b-p?variant=47369901244713"
     }
   },
   "last_digest": {
