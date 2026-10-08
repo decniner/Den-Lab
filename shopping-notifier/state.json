@@ -510,6 +510,42 @@
       "reference_price": "25850",
       "sent_at": "2026-10-07T10:10:22+09:00",
       "url": "https://saucony.jp/products/progrid-omni-9-n02?variant=47078453510296"
+    },
+    "phenixstore-com:8342010429744:45140288831792": {
+      "sale_price": "5200",
+      "reference_price": "13000",
+      "sent_at": "2026-10-08T10:30:35+09:00",
+      "url": "https://phenixstore.com/products/esa88wz55rc?variant=45140288831792"
+    },
+    "brooksrunning-co-jp:8897616380201:47369879355689": {
+      "sale_price": "12650",
+      "reference_price": "25300",
+      "sent_at": "2026-10-08T10:30:35+09:00",
+      "url": "https://brooksrunning.co.jp/products/bmw4042-g-sx?variant=47369879355689"
+    },
+    "brooksrunning-co-jp:8897645773097:47370083598633": {
+      "sale_price": "12650",
+      "reference_price": "25300",
+      "sent_at": "2026-10-08T10:30:35+09:00",
+      "url": "https://brooksrunning.co.jp/products/brm4193-w?variant=47370083598633"
+    },
+    "brooksrunning-co-jp:9304337580329:48685122289961": {
+      "sale_price": "12650",
+      "reference_price": "25300",
+      "sent_at": "2026-10-08T10:30:35+09:00",
+      "url": "https://brooksrunning.co.jp/products/brw4082-pp?variant=48685122289961"
+    },
+    "coteetcieljapan:8516738744469:45119045140629": {
+      "sale_price": "12375",
+      "reference_price": "24750",
+      "sent_at": "2026-10-08T10:30:35+09:00",
+      "url": "https://coteetciel.jp/products/taro-komatsu?variant=45119045140629"
+    },
+    "aandfstore-com:10180374757663:50992744464671": {
+      "sale_price": "12100",
+      "reference_price": "24200",
+      "sent_at": "2026-10-08T10:30:35+09:00",
+      "url": "https://aandfstore.com/products/19811307117?variant=50992744464671"
     }
   },
   "last_digest": {
