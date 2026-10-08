@@ -546,12 +546,36 @@
       "reference_price": "24200",
       "sent_at": "2026-10-08T10:30:35+09:00",
       "url": "https://aandfstore.com/products/19811307117?variant=50992744464671"
+    },
+    "aandfstore-com:9431911432479:49211258011935": {
+      "sale_price": "12100",
+      "reference_price": "24200",
+      "sent_at": "2026-10-08T10:30:36+09:00",
+      "url": "https://aandfstore.com/products/19811522?variant=49211258011935"
+    },
+    "cotopaxijapan:9246623039676:45992623374524": {
+      "sale_price": "12100",
+      "reference_price": "24200",
+      "sent_at": "2026-10-08T10:30:36+09:00",
+      "url": "https://cotopaxi.jp/products/abrazo-fleece-full-zip-jacket-mens-sale25fw?variant=45992623374524"
+    },
+    "cotopaxijapan:9246623203516:45992626389180": {
+      "sale_price": "12100",
+      "reference_price": "24200",
+      "sent_at": "2026-10-08T10:30:36+09:00",
+      "url": "https://cotopaxi.jp/products/abrazo-fleece-full-zip-jacket-womens-sale25fw?variant=45992626389180"
+    },
+    "cotopaxijapan:9246629167292:45992712077500": {
+      "sale_price": "12100",
+      "reference_price": "24200",
+      "sent_at": "2026-10-08T10:30:36+09:00",
+      "url": "https://cotopaxi.jp/products/bacano-fleece-vest-mens-sale26ss?variant=45992712077500"
     }
   },
   "last_digest": {
-    "date": "2026-10-07",
-    "coverage_key": "cf678add1e7a21549f7d29db621c04646fafd4bfce30c42deab58e3f201986d2",
-    "completed_at": "2026-10-07T10:10:22+09:00",
-    "digest_hash": "c212b892e4f9b175f17c0062f539ee23e4d0674c2412b2d1e9d352f8e44b5a76"
+    "date": "2026-10-08",
+    "coverage_key": "7875492f7ea6c8d041f943991cadf13f79ce17aa74679c9026a4efb3c3b4fcce",
+    "completed_at": "2026-10-08T10:30:36+09:00",
+    "digest_hash": "99a6404117faabfa1b7c5cd31cf043e675aafbdf44527988e1d58fe75d80b3bf"
   }
 }
