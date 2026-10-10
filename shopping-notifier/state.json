@@ -660,12 +660,36 @@
       "reference_price": "42900",
       "sent_at": "2026-10-10T10:28:05+09:00",
       "url": "https://boardriders.co.jp/products/g0652511?variant=52412802695449"
+    },
+    "boardriders-co-jp:10631288914201:52412827762969": {
+      "sale_price": "21450",
+      "reference_price": "42900",
+      "sent_at": "2026-10-10T10:28:07+09:00",
+      "url": "https://boardriders.co.jp/products/g1352513?variant=52412827762969"
+    },
+    "boardriders-co-jp:10631289307417:52412832448793": {
+      "sale_price": "21450",
+      "reference_price": "42900",
+      "sent_at": "2026-10-10T10:28:07+09:00",
+      "url": "https://boardriders.co.jp/products/h1352508?variant=52412832448793"
+    },
+    "boardriders-co-jp:10631286587673:52412811247897": {
+      "sale_price": "20900",
+      "reference_price": "41800",
+      "sent_at": "2026-10-10T10:28:07+09:00",
+      "url": "https://boardriders.co.jp/products/erjtj03470?variant=52412811247897"
+    },
+    "boardriders-co-jp:10631288488217:52412824617241": {
+      "sale_price": "20900",
+      "reference_price": "41800",
+      "sent_at": "2026-10-10T10:28:07+09:00",
+      "url": "https://boardriders.co.jp/products/erjtj03472?variant=52412824617241"
     }
   },
   "last_digest": {
-    "date": "2026-10-09",
-    "coverage_key": "933f3f0d6c1ae9d5d79c7c0e68cf4b937f423bb9002ac86f5968db3006d56b08",
-    "completed_at": "2026-10-09T10:37:32+09:00",
-    "digest_hash": "023c78364c41f2279ea54ce426f05637d5cc8ebd9e8a9e139ecb93707308a40c"
+    "date": "2026-10-10",
+    "coverage_key": "71f835eb7e6a843651068cbcff26e3413dbc7026456e32aaa26ac7485c5a538d",
+    "completed_at": "2026-10-10T10:28:07+09:00",
+    "digest_hash": "27cd059a040866e159f51ad76ba724e38148e472f08cc3d66554509bc6fc4c1a"
   }
 }
