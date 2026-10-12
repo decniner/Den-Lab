@@ -7,7 +7,7 @@
       "original_url": "https://github.com/NirDiamant/Prompt_Engineering",
       "author": "NirDiamant",
       "discovery_date": "2026-10-01",
-      "publication_date": "2026-10-10",
+      "publication_date": "2026-10-12",
       "category": "Software Engineering",
       "model": "Not specified",
       "observations": [
@@ -120,44 +120,55 @@
           },
           "positive_ratio": null,
           "rating_count": 0
+        },
+        {
+          "timestamp": 1791789114.361839,
+          "date": "2026-10-12",
+          "engagement": 7898,
+          "velocity_per_hour": 0.08258621021726885,
+          "components": {
+            "stars": 7898
+          },
+          "positive_ratio": null,
+          "rating_count": 0
         }
       ],
       "cluster_id": "51a12f3d199953542c544442",
       "engagement_metrics": {
-        "stars": 7896,
-        "stars_per_day_since_repo_creation": 10.803,
+        "stars": 7898,
+        "stars_per_day_since_repo_creation": 10.791,
         "engagement_components": {
-          "stars": 7896
+          "stars": 7898
         },
         "repository": "NirDiamant/Prompt_Engineering",
         "license": "NOASSERTION",
-        "age_hours": 17542.1,
+        "age_hours": 17566.3,
         "date_basis": "repository last updated; exact prompt publication date unavailable",
         "quality_filter": "passed heuristic quality filters",
         "component_velocity_per_hour": {
-          "stars": 0.0831
+          "stars": 0.0826
         },
-        "velocity_basis": "observed 2 additional source interactions over 24.1h",
-        "source_velocity_per_hour": 0.0831,
-        "velocity_multiple": 1.01,
-        "normal_velocity_per_hour": 0.0819,
+        "velocity_basis": "observed 2 additional source interactions over 24.2h",
+        "source_velocity_per_hour": 0.0826,
+        "velocity_multiple": 1.0,
+        "normal_velocity_per_hour": 0.0825,
         "source_sightings": 1,
         "duplicate_cluster_size": 1,
         "normalized_scores": {
           "engagement": 0.5,
           "trending": 0.017,
           "positive": 0.5,
-          "recency": 0.991,
+          "recency": 0.998,
           "usefulness": 0.62
         },
-        "composite_score": 0.465
+        "composite_score": 0.466
       },
       "rating": null,
       "rating_count": 0,
-      "calculated_score": 0.4648532509506048,
-      "trending_score": 0.01663791998216274,
+      "calculated_score": 0.4658169294735573,
+      "trending_score": 0.0165463476547885,
       "quality_score": 0.62,
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-10-12",
       "notification_date": "2026-10-01"
     }
   },
