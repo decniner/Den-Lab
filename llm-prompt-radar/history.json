@@ -131,44 +131,55 @@
           },
           "positive_ratio": null,
           "rating_count": 0
+        },
+        {
+          "timestamp": 1791876922.526871,
+          "date": "2026-10-13",
+          "engagement": 7898,
+          "velocity_per_hour": 0.0,
+          "components": {
+            "stars": 7898
+          },
+          "positive_ratio": null,
+          "rating_count": 0
         }
       ],
       "cluster_id": "51a12f3d199953542c544442",
       "engagement_metrics": {
         "stars": 7898,
-        "stars_per_day_since_repo_creation": 10.791,
+        "stars_per_day_since_repo_creation": 10.776,
         "engagement_components": {
           "stars": 7898
         },
         "repository": "NirDiamant/Prompt_Engineering",
         "license": "NOASSERTION",
-        "age_hours": 17566.3,
+        "age_hours": 17590.7,
         "date_basis": "repository last updated; exact prompt publication date unavailable",
         "quality_filter": "passed heuristic quality filters",
         "component_velocity_per_hour": {
-          "stars": 0.0826
+          "stars": 0.0
         },
-        "velocity_basis": "observed 2 additional source interactions over 24.2h",
-        "source_velocity_per_hour": 0.0826,
-        "velocity_multiple": 1.0,
-        "normal_velocity_per_hour": 0.0825,
+        "velocity_basis": "observed 0 additional source interactions over 24.4h",
+        "source_velocity_per_hour": 0.0,
+        "velocity_multiple": 0.0,
+        "normal_velocity_per_hour": 0.0826,
         "source_sightings": 1,
         "duplicate_cluster_size": 1,
         "normalized_scores": {
           "engagement": 0.5,
-          "trending": 0.017,
+          "trending": 0.0,
           "positive": 0.5,
-          "recency": 0.998,
+          "recency": 0.988,
           "usefulness": 0.62
         },
-        "composite_score": 0.466
+        "composite_score": 0.46
       },
       "rating": null,
       "rating_count": 0,
-      "calculated_score": 0.4658169294735573,
-      "trending_score": 0.0165463476547885,
+      "calculated_score": 0.46024394312389916,
+      "trending_score": 0.0,
       "quality_score": 0.62,
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-13",
       "notification_date": "2026-10-01"
     }
   },
