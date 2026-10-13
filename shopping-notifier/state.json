@@ -136,7 +136,7 @@
     "ecoflow:14718205198703:52003762471279": {
       "sale_price": "3199",
       "reference_price": "6990",
-      "sent_at": "2026-10-03T18:00:18+09:00",
+      "sent_at": "2026-10-13T11:50:32+09:00",
       "url": "https://jp.ecoflow.com/products/rapid-45w-gan-usb-c?variant=52003762471279"
     },
     "ecoflow:14631174177135:51670338208111": {
@@ -316,13 +316,13 @@
     "toffyjapan:9119202410770:48182674456850": {
       "sale_price": "1000",
       "reference_price": "2178",
-      "sent_at": "2026-10-04T09:17:36+09:00",
+      "sent_at": "2026-10-13T11:50:32+09:00",
       "url": "https://toffy.jp/products/tl-hw-uvb?variant=48182674456850"
     },
     "toffyjapan:8880113025298:47405993263378": {
       "sale_price": "12880",
       "reference_price": "27500",
-      "sent_at": "2026-10-04T09:17:36+09:00",
+      "sent_at": "2026-10-13T11:50:32+09:00",
       "url": "https://toffy.jp/products/rx39-sb?variant=47405993263378"
     },
     "cotopaxijapan:9242292977852:45979372814524": {
@@ -687,9 +687,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-10-12",
-    "coverage_key": "3b99097ba3e0073d60db011485425fc92347c8422b6ba19f6ce623bf8c4e5c3b",
-    "completed_at": "2026-10-12T09:53:03+09:00",
-    "digest_hash": "a789a861fb275e913e1aa2f95f55a601c2e9a7a33ec1741294b684806c4ca9ae"
+    "date": "2026-10-13",
+    "coverage_key": "1052efb17944983d361a7b65c549ced6324d7238b13ac16557b06f1e46974529",
+    "completed_at": "2026-10-13T11:50:32+09:00",
+    "digest_hash": "0d9d0bb66f7d4494198d73b38886d3180be7559a7282802e1d9b93d8b4d3c674"
   }
 }
