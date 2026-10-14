@@ -346,7 +346,7 @@
     "cotopaxijapan:9246627201212:45992677146812": {
       "sale_price": "23100",
       "reference_price": "46200",
-      "sent_at": "2026-10-05T09:22:54+09:00",
+      "sent_at": "2026-10-14T09:48:05+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-jacket-womens-sale26ss?variant=45992677146812"
     },
     "merrell-jp:7268630593579:41168550395947": {
@@ -690,12 +690,36 @@
       "reference_price": "250800",
       "sent_at": "2026-10-14T09:48:03+09:00",
       "url": "https://jp.ecoflow.com/products/delta-3-plus-portable-power-station?variant=53470770168175"
+    },
+    "boardriders-co-jp:10631285047577:52412800925977": {
+      "sale_price": "19250",
+      "reference_price": "38500",
+      "sent_at": "2026-10-14T09:48:05+09:00",
+      "url": "https://boardriders.co.jp/products/erjtp03268?variant=52412800925977"
+    },
+    "boardriders-co-jp:10631287701785:52412819702041": {
+      "sale_price": "19250",
+      "reference_price": "38500",
+      "sent_at": "2026-10-14T09:48:05+09:00",
+      "url": "https://boardriders.co.jp/products/g0452506?variant=52412819702041"
+    },
+    "boardriders-co-jp:10631287931161:52412821668121": {
+      "sale_price": "19250",
+      "reference_price": "38500",
+      "sent_at": "2026-10-14T09:48:05+09:00",
+      "url": "https://boardriders.co.jp/products/erjtj03493?variant=52412821668121"
+    },
+    "boardriders-co-jp:10631289438489:52412833825049": {
+      "sale_price": "19250",
+      "reference_price": "38500",
+      "sent_at": "2026-10-14T09:48:05+09:00",
+      "url": "https://boardriders.co.jp/products/h1352507?variant=52412833825049"
     }
   },
   "last_digest": {
-    "date": "2026-10-13",
-    "coverage_key": "1052efb17944983d361a7b65c549ced6324d7238b13ac16557b06f1e46974529",
-    "completed_at": "2026-10-13T11:50:32+09:00",
-    "digest_hash": "0d9d0bb66f7d4494198d73b38886d3180be7559a7282802e1d9b93d8b4d3c674"
+    "date": "2026-10-14",
+    "coverage_key": "021b7db8d82dda0b68f183054dd4c022f97922bf82e26ad4a1c044df81f78dd6",
+    "completed_at": "2026-10-14T09:48:05+09:00",
+    "digest_hash": "e102b01abc8bd5603b15eec174ecaf5b074ed55075804d196ec34feae63f7e65"
   }
 }
