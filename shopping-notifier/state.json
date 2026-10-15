@@ -352,19 +352,19 @@
     "merrell-jp:7268630593579:41168550395947": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-05T09:22:54+09:00",
+      "sent_at": "2026-10-15T09:15:28+09:00",
       "url": "https://merrell.jp/products/womens_mtl-thermo-rogue-4-mid-gore-tex?variant=41168550395947"
     },
     "cotopaxijapan:9242280624316:45979357053116": {
       "sale_price": "18150",
       "reference_price": "36300",
-      "sent_at": "2026-10-05T09:22:54+09:00",
+      "sent_at": "2026-10-15T09:15:28+09:00",
       "url": "https://cotopaxi.jp/products/cielo-rain-jacket-womens-sale26ss?variant=45979357053116"
     },
     "cotopaxijapan:9507322527932:47301256052924": {
       "sale_price": "18150",
       "reference_price": "36300",
-      "sent_at": "2026-10-05T09:22:54+09:00",
+      "sent_at": "2026-10-15T09:15:28+09:00",
       "url": "https://cotopaxi.jp/products/cielo-rain-jacket-mens-sale26fw?variant=47301256052924"
     },
     "cotopaxijapan:9246627070140:45992675246268": {
@@ -714,6 +714,24 @@
       "reference_price": "38500",
       "sent_at": "2026-10-14T09:48:05+09:00",
       "url": "https://boardriders.co.jp/products/h1352507?variant=52412833825049"
+    },
+    "boardriders-co-jp:10631284392217:52412796240153": {
+      "sale_price": "16500",
+      "reference_price": "33000",
+      "sent_at": "2026-10-15T09:15:28+09:00",
+      "url": "https://boardriders.co.jp/products/adytj03077?variant=52412796240153"
+    },
+    "boardriders-co-jp:10631289110809:52412829696281": {
+      "sale_price": "16500",
+      "reference_price": "33000",
+      "sent_at": "2026-10-15T09:15:28+09:00",
+      "url": "https://boardriders.co.jp/products/g1352516?variant=52412829696281"
+    },
+    "boardriders-co-jp:10631289635097:52412836282649": {
+      "sale_price": "16500",
+      "reference_price": "33000",
+      "sent_at": "2026-10-15T09:15:28+09:00",
+      "url": "https://boardriders.co.jp/products/n0452500?variant=52412836282649"
     }
   },
   "last_digest": {
