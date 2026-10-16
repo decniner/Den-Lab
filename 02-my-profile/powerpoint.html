@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den — Career Conversation Rehearsal</title>
+<style>
+:root{
+  --navy:#080e1e;
+  --navy-2:#0d152c;
+  --panel:#111a32;
+  --panel-2:#151f3b;
+  --panel-3:#1a2645;
+  --line:rgba(255,255,255,0.08);
+  --line-2:rgba(255,255,255,0.13);
+  --text:#e9e6e1;
+  --text-dim:#a8a6a1;
+  --text-faint:#6f6d69;
+  --gold:#d2b47a;
+  --gold-soft:#c9a86a;
+  --gold-bg:rgba(210,180,122,0.12);
+  --gold-border:rgba(210,180,122,0.28);
+  --blue:#6da0ff;
+  --blue-soft:#7fb0ff;
+  --blue-bg:rgba(109,160,255,0.12);
+  --blue-border:rgba(109,160,255,0.28);
+  --radius:18px;
+  --radius-sm:12px;
+  --shadow:0 12px 40px rgba(0,0,0,0.45);
+  --shadow-sm:0 6px 20px rgba(0,0,0,0.32);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background: radial-gradient(1200px 800px at 15% -10%, rgba(109,160,255,0.12), transparent 60%),
+             radial-gradient(1000px 600px at 85% 0%, rgba(210,180,122,0.10), transparent 60%),
+             linear-gradient(180deg, var(--navy-2), var(--navy));
+  color:var(--text);
+  font-family: ui-sans-system, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+a{color:inherit; text-decoration:none}
+button{font:inherit}
+
+/* CONTROL BAR */
+.control-bar{
+  position:sticky;
+  top:0;
+  z-index:100;
+  backdrop-filter: blur(18px) saturate(1.2);
+  background: rgba(8,14,30,0.88);
+  border-bottom:1px solid var(--line);
+}
+.control-bar-inner{
+  max-width:1320px;
+  margin:0 auto;
+  padding:14px 20px;
+  display:flex;
+  gap:16px;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+.left-controls{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+.boss-toggle{
+  display:flex; align-items:center; gap:12px;
+  background: linear-gradient(180deg, #e8d0a0, var(--gold));
+  color:#1a160e;
+  border:1px solid rgba(0,0,0,0.12);
+  border-radius:999px;
+  padding:12px 18px;
+  font-weight:700;
+  letter-spacing:0.04em;
+  font-size:13px;
+  cursor:pointer;
+  box-shadow: 0 4px 18px rgba(210,180,122,0.35), inset 0 1px 0 rgba(255,255,255,0.6);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.boss-toggle:active{transform:scale(0.98)}
+.boss-toggle:hover{box-shadow: 0 6px 24px rgba(210,180,122,0.5), inset 0 1px 0 rgba(255,255,255,0.7)}
+.boss-toggle .kbd{
+  background: rgba(0,0,0,0.14);
+  border:1px solid rgba(0,0,0,0.18);
+  border-radius:6px;
+  padding:2px 7px;
+  font-size:11px;
+  font-weight:800;
+}
+.boss-toggle.hidden-state{
+  background: linear-gradient(180deg, #2a2f45, #1e253e);
+  color: var(--text);
+  border-color: var(--line-2);
+  box-shadow: var(--shadow-sm);
+}
+.state-indicator{
+  display:flex; align-items:center; gap:8px;
+  font-size:11px;
+  letter-spacing:0.12em;
+  font-weight:700;
+  color:var(--text-dim);
+  border:1px solid var(--line);
+  padding:8px 12px;
+  border-radius:999px;
+  background: rgba(255,255,255,0.03);
+}
+.dot{width:8px;height:8px;border-radius:50%; background: var(--gold); box-shadow:0 0 0 4px rgba(210,180,122,0.18)}
+.dot.hidden{background: var(--text-faint); box-shadow:0 0 0 4px rgba(255,255,255,0.08)}
+
+.center-search{display:flex; align-items:center; gap:10px; flex:1 1 280px; max-width:420px}
+.center-search input{
+  width:100%;
+  background: rgba(255,255,255,0.05);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:11px 16px;
+  color:var(--text);
+  outline:none;
+}
+.center-search input::placeholder{color:var(--text-faint)}
+.center-search input:focus{border-color: var(--line-2); background: rgba(255,255,255,0.07)}
+#searchCount{font-size:11px; color:var(--text-dim); white-space:nowrap}
+
+.right-controls{display:flex; gap:8px; flex-wrap:wrap}
+.right-controls button{
+  background: rgba(255,255,255,0.04);
+  border:1px solid var(--line);
+  color:var(--text-dim);
+  padding:9px 14px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:0.04em;
+  cursor:pointer;
+}
+.right-controls button:hover{background: rgba(255,255,255,0.08); color:var(--text)}
+
+/* MAIN */
+main{max-width:1320px; margin:0 auto; padding: 0 20px 120px}
+
+/* HERO */
+.hero{
+  padding:72px 0 36px;
+  border-bottom:1px solid var(--line);
+}
+.hero-label{
+  font-size:11px; letter-spacing:0.22em; font-weight:700; color:var(--gold);
+  margin-bottom:24px;
+}
+.hero h1{
+  font-size: clamp(36px, 6vw, 72px);
+  line-height:0.92;
+  letter-spacing:-0.04em;
+  font-weight:800;
+  margin:0 0 20px;
+}
+.hero h1 span{color:var(--text)}
+.subtitle{
+  font-size: clamp(16px, 2vw, 20px);
+  color:var(--text-dim);
+  letter-spacing:0.08em;
+  margin-bottom:18px;
+}
+.supporting{color:var(--text-dim); max-width:560px; font-size:15px}
+.hero-meta{
+  display:flex; gap:24px; margin:28px 0 36px;
+  font-size:11px; letter-spacing:0.18em; font-weight:700; color:var(--text-faint);
+}
+.three-nav{
+  display:grid; grid-template-columns: repeat(3,1fr); gap:14px; margin-top:12px;
+}
+.nav-card{
+  background: linear-gradient(180deg, var(--panel-2), var(--panel));
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  padding:22px 20px;
+  transition: transform .15s, border-color .15s;
+}
+.nav-card:hover{transform:translateY(-2px); border-color:var(--line-2)}
+.nav-card .num{font-size:11px; letter-spacing:0.18em; color:var(--gold); font-weight:800; margin-bottom:8px}
+.nav-card .title{font-weight:800; letter-spacing:0.04em; margin-bottom:6px}
+.nav-card .desc{font-size:13px; color:var(--text-dim); line-height:1.4}
+
+/* TRANSITION */
+.transition-section{
+  padding:64px 0;
+  border-bottom:1px solid var(--line);
+}
+.eyebrow{font-size:11px; letter-spacing:0.22em; font-weight:700; color:var(--text-faint); margin-bottom:18px}
+.transition-section h2{font-size: clamp(28px,4vw,44px); letter-spacing:-0.03em; line-height:0.95; margin:0 0 32px; font-weight:800}
+.solver-flow{
+  display:flex; flex-wrap:wrap; gap:12px; align-items:center;
+  font-size: clamp(18px,2.6vw,26px); font-weight:800; letter-spacing:-0.02em;
+  background: var(--panel);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:16px 22px;
+  width:fit-content;
+  max-width:100%;
+}
+.solver-flow .arrow{color:var(--gold)}
+.from-to{
+  display:grid; grid-template-columns: 1fr 1fr; gap:18px; margin-top:28px;
+}
+.from-to-card{
+  background: var(--panel);
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  padding:24px;
+}
+.from-to-card .label{font-size:11px; letter-spacing:0.18em; font-weight:800; color:var(--text-faint); margin-bottom:12px}
+.from-to-card blockquote{margin:0; font-size:17px; line-height:1.4; font-style:italic; color:var(--text)}
+.from-to-card.to{border-color: var(--blue-border); background: linear-gradient(180deg, rgba(109,160,255,0.08), var(--panel))}
+.supporting-line{margin-top:22px; color:var(--text-dim); font-size:14px; border-left:2px solid var(--gold); padding-left:14px}
+
+/* ACT */
+.act-section{padding:56px 0 20px; border-bottom:1px solid var(--line)}
+.act-divider{
+  display:flex; flex-wrap:wrap; gap:16px; align-items:flex-end; justify-content:space-between;
+  margin-bottom:28px;
+}
+.act-label{font-size:11px; letter-spacing:0.22em; font-weight:800; color:var(--gold)}
+.act-time{font-size:11px; letter-spacing:0.18em; font-weight:700; color:var(--text-faint)}
+.act-divider h2{font-size: clamp(30px,4vw,52px); margin:6px 0 0; letter-spacing:-0.04em; line-height:0.9}
+.act-divider p{color:var(--text-dim); margin:6px 0 0}
+.act-controls button{
+  background: rgba(255,255,255,0.04); border:1px solid var(--line); color:var(--text-dim);
+  padding:8px 12px; border-radius:999px; font-size:11px; font-weight:700; letter-spacing:0.08em; cursor:pointer
+}
+.act-content{position:relative}
+.act-content.collapsed{display:none}
+.disclaimer{
+  font-size:10px; letter-spacing:0.16em; font-weight:800; color:var(--gold);
+  border:1px solid var(--gold-border); background: var(--gold-bg);
+  padding:10px 14px; border-radius:999px; width:fit-content; margin-bottom:22px
+}
+
+/* CONVERSATION */
+.conversation{
+  position:relative;
+  padding-left:28px;
+}
+.conversation::before{
+  content:"";
+  position:absolute;
+  left:8px; top:12px; bottom:12px;
+  width:1px;
+  background: linear-gradient(180deg, transparent, var(--line), transparent);
+}
+.turn{
+  position:relative;
+  margin:18px 0;
+  background: var(--panel);
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  padding:18px 20px 18px 20px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color .15s;
+}
+.turn.boss{
+  border-left:3px solid var(--gold);
+  background: linear-gradient(180deg, rgba(210,180,122,0.06), var(--panel));
+}
+.turn.den{
+  border-left:3px solid var(--blue);
+  background: linear-gradient(180deg, rgba(109,160,255,0.07), var(--panel));
+}
+.turn-header{
+  display:flex; align-items:center; gap:10px; margin-bottom:10px;
+}
+.avatar{
+  width:28px; height:28px; border-radius:50%;
+  display:grid; place-items:center;
+  font-size:12px; font-weight:800; letter-spacing:0.04em;
+  flex-shrink:0;
+}
+.boss .avatar{background: var(--gold-bg); color:var(--gold); border:1px solid var(--gold-border)}
+.den .avatar{background: var(--blue-bg); color:var(--blue); border:1px solid var(--blue-border)}
+.speaker{
+  font-size:11px; letter-spacing:0.18em; font-weight:800;
+}
+.boss .speaker{color:var(--gold)}
+.den .speaker{color:var(--blue)}
+.turn-text{
+  font-size:16px; line-height:1.55; color:var(--text);
+  white-space:pre-wrap;
+}
+.turn-text.hidden-text{display:none}
+.hidden-placeholder{
+  display:flex; align-items:center; gap:10px;
+  color:var(--text-faint);
+  font-size:13px; letter-spacing:0.06em; font-style:italic;
+  padding:8px 0;
+}
+.hidden-placeholder .icon{
+  width:22px; height:22px; border-radius:50%; border:1px dashed var(--line-2);
+  display:grid; place-items:center; font-size:12px;
+}
+.boss-actions{margin-top:12px; display:flex; gap:8px}
+.small-btn{
+  background: rgba(255,255,255,0.04);
+  border:1px solid var(--line);
+  color:var(--text-dim);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.06em;
+  cursor:pointer;
+}
+.small-btn:hover{background: rgba(255,255,255,0.08); color:var(--text)}
+.turn.search-match{border-color: var(--blue-border); box-shadow: 0 0 0 3px rgba(109,160,255,0.15)}
+.turn.search-match-hidden{border-color: var(--gold-border); opacity:0.9}
+.mark{background: rgba(210,180,122,0.32); color:inherit; padding:0 2px; border-radius:3px}
+
+/* VISUAL BLOCKS */
+.visual-block{
+  background: var(--panel);
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  padding:28px;
+  margin:32px 0;
+}
+.visual-block h3{margin:0 0 18px; font-size:20px; letter-spacing:-0.02em}
+.trap-grid{display:grid; grid-template-columns: 1fr 1fr; gap:18px}
+.trap-card{background: rgba(255,255,255,0.03); border:1px solid var(--line); border-radius: var(--radius-sm); padding:18px; text-align:center}
+.trap-card .flow{font-weight:800; letter-spacing:0.02em; line-height:1.6}
+.trap-card .label{font-size:11px; letter-spacing:0.18em; color:var(--text-faint); margin-top:10px; font-weight:700}
+
+.ready-grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:12px}
+.ready-item{background: rgba(255,255,255,0.03); border:1px solid var(--line); border-radius: var(--radius-sm); padding:18px}
+.ready-item .k{font-size:11px; letter-spacing:0.14em; font-weight:800; color:var(--text-faint); margin-bottom:6px}
+.ready-item .v{font-weight:700}
+.ready-item strong{color:var(--gold)}
+
+.two-q{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
+.q-card{background: linear-gradient(180deg, var(--panel-2), var(--panel)); border:1px solid var(--line); border-radius: var(--radius); padding:24px}
+.q-card .num{font-size:11px; letter-spacing:0.18em; font-weight:800; color:var(--gold); margin-bottom:12px}
+.q-card blockquote{margin:0; font-size:18px; line-height:1.4; font-weight:600}
+
+.succession{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
+.succ-card{border-radius: var(--radius); padding:22px; border:1px solid var(--line)}
+.succ-card.bad{background: rgba(255,80,80,0.06); border-color: rgba(255,80,80,0.18)}
+.succ-card.good{background: rgba(109,160,255,0.06); border-color: var(--blue-border)}
+.succ-card h4{margin:0 0 10px; font-size:12px; letter-spacing:0.18em; font-weight:800}
+.succ-card .flow{font-weight:700; line-height:1.7}
+
+.action-grid{display:grid; grid-template-columns: repeat(3,1fr); gap:12px}
+.action-card{background: var(--panel); border:1px solid var(--line); border-radius: var(--radius); padding:22px}
+.action-card .num{font-size:11px; letter-spacing:0.18em; color:var(--gold); font-weight:800; margin-bottom:8px}
+.action-card h4{margin:0 0 8px; font-size:15px}
+.action-card p{margin:0; font-size:13px; color:var(--text-dim); line-height:1.5}
+
+.days{display:grid; grid-template-columns: repeat(3,1fr); gap:12px}
+.day-col{background: var(--panel); border:1px solid var(--line); border-radius: var(--radius); padding:22px}
+.day-col h4{margin:0 0 12px; font-size:12px; letter-spacing:0.14em; font-weight:800; color:var(--gold)}
+.day-col ul{margin:0; padding-left:18px; color:var(--text-dim); font-size:13px; line-height:1.6}
+.day-col li{margin:6px 0}
+.plan-note{margin-top:14px; font-size:10px; letter-spacing:0.16em; font-weight:800; color:var(--text-faint); text-align:center; border:1px dashed var(--line); padding:10px; border-radius:999px}
+
+.cheat{ background: linear-gradient(180deg, #1c2543, #121a32); border:1px solid var(--line-2); border-radius: var(--radius); padding:32px; box-shadow: var(--shadow)}
+.cheat h2{margin:0 0 20px; font-size:28px; letter-spacing:-0.03em}
+.cheat-grid{display:grid; grid-template-columns: 1fr 1fr; gap:18px}
+.cheat-item{border-top:1px solid var(--line); padding-top:14px}
+.cheat-item h4{margin:0 0 8px; font-size:11px; letter-spacing:0.16em; font-weight:800; color:var(--gold)}
+.cheat-item p, .cheat-item li{font-size:14px; line-height:1.5; color:var(--text)}
+.cheat-item ul{margin:0; padding-left:16px}
+.final-reminder{margin-top:24px; background: var(--gold-bg); border:1px solid var(--gold-border); border-radius: var(--radius-sm); padding:18px; text-align:center; font-weight:800; letter-spacing:0.04em}
+
+.closing{padding:80px 0 40px; text-align:center; border-top:1px solid var(--line); margin-top:40px}
+.closing h2{font-size: clamp(36px,6vw,72px); line-height:0.92; letter-spacing:-0.04em; font-weight:800; margin:0}
+.closing p{color:var(--text-dim); margin-top:18px; font-size:18px}
+.closing .footer{margin-top:36px; font-size:11px; letter-spacing:0.22em; font-weight:800; color:var(--text-faint)}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .three-nav{grid-template-columns:1fr}
+  .from-to{grid-template-columns:1fr}
+  .trap-grid{grid-template-columns:1fr}
+  .two-q{grid-template-columns:1fr}
+  .succession{grid-template-columns:1fr}
+  .action-grid{grid-template-columns:1fr}
+  .days{grid-template-columns:1fr}
+  .cheat-grid{grid-template-columns:1fr}
+  .control-bar-inner{padding:12px 14px}
+  .center-search{order:3; max-width:none; flex-basis:100%}
+}
+@media (max-width: 560px){
+  .turn{padding:16px}
+  .hero{padding:36px 0 24px}
+  .conversation{padding-left:18px}
+  .conversation::before{left:4px}
+}
+
+/* PRINT */
+@media print{
+  body{background:white !important; color:#111 !important}
+  .control-bar{display:none !important}
+  .turn, .visual-block, .nav-card, .action-card, .day-col, .cheat, .q-card, .from-to-card{
+    background:white !important; border:1px solid #ddd !important; box-shadow:none !important; color:#111 !important; break-inside:avoid;
+  }
+  .turn-text.hidden-text{display:block !important}
+  .hidden-placeholder, .boss-actions, .act-controls{display:none !important}
+  .act-content.collapsed{display:block !important}
+  .hero-label, .act-label, .dot, .speaker, .avatar{color:#111 !important; border-color:#ccc !important; background:white !important}
+  a{color:#111 !important}
+}
+:focus-visible{outline:2px solid var(--blue); outline-offset:2px}
+</style>
+</head>
+<body>
+
+<div class="control-bar" id="controlBar" role="toolbar" aria-label="Rehearsal controls">
+  <div class="control-bar-inner">
+    <div class="left-controls">
+      <button id="bossToggle" class="boss-toggle" aria-pressed="true" aria-label="Toggle Boss script visibility">
+        <span id="bossToggleLabel">HIDE BOSS SCRIPT</span>
+        <span class="kbd">B</span>
+      </button>
+      <div class="state-indicator" aria-live="polite">
+        <span id="stateDot" class="dot"></span>
+        <span id="stateText">BOSS SCRIPT: VISIBLE</span>
+      </div>
+    </div>
+    <div class="center-search">
+      <input id="searchInput" type="search" placeholder="Search: Jess, succession, leadership, delegating..." autocomplete="off" spellcheck="false">
+      <span id="searchCount"></span>
+    </div>
+    <div class="right-controls">
+      <button id="showAllBtn" title="Expand all sections">SHOW ALL</button>
+      <button id="collapseAllBtn" title="Collapse all sections">COLLAPSE ALL</button>
+      <button id="topBtn" title="Scroll to top">TOP</button>
+      <button id="printBtn" title="Print or save as PDF">PRINT / SAVE AS PDF</button>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-label">ENDPOINT TECHNOLOGY · CAREER REHEARSAL</div>
+    <h1>THE 30-MINUTE<br>CAREER CONVERSATION</h1>
+    <div class="subtitle">Direction · Readiness · Action</div>
+    <p class="supporting">A private rehearsal guide for a career-development conversation.</p>
+    <div class="hero-meta"><span>DEN / TOKYO</span><span>30 MINUTES</span></div>
+    <div class="three-nav">
+      <a href="#act1" class="nav-card">
+        <div class="num">01</div>
+        <div class="title">DIRECTION</div>
+        <div class="desc">Where do I want my career to go?</div>
+      </a>
+      <a href="#act2" class="nav-card">
+        <div class="num">02</div>
+        <div class="title">READINESS</div>
+        <div class="desc">What does succession mean, and what do I need to prove?</div>
+      </a>
+      <a href="#act3" class="nav-card">
+        <div class="num">03</div>
+        <div class="title">ACTION</div>
+        <div class="desc">What should I start doing now?</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- TRANSITION -->
+  <section class="transition-section" id="transition">
+    <div class="eyebrow">CORE TRANSITION</div>
+    <h2>THE TRANSITION I'M<br>TRYING TO MAKE</h2>
+    <div class="solver-flow">
+      <span>SOLVER</span><span class="arrow">→</span><span>ENABLER</span><span class="arrow">→</span><span>TECHNICAL LEADER</span>
+    </div>
+    <div class="from-to">
+      <div class="from-to-card">
+        <div class="label">FROM</div>
+        <blockquote>“I personally solve difficult technical problems.”</blockquote>
+      </div>
+      <div class="from-to-card to">
+        <div class="label">TO</div>
+        <blockquote>“I create teams, systems, standards and engineers capable of solving difficult problems without depending entirely on me.”</blockquote>
+      </div>
+    </div>
+    <div class="supporting-line">My future value is the capability the organization can create through me.</div>
+  </section>
+
+  <!-- ACT I -->
+  <section id="act1" class="act-section" data-act="1">
+    <div class="act-divider">
+      <div>
+        <div class="act-label">ACT I</div>
+        <div class="act-time">0–10 MINUTES</div>
+        <h2>DIRECTION</h2>
+        <p>Where do I want my career to go?</p>
+      </div>
+      <div class="act-controls"><button class="collapseBtn" data-target="act1">COLLAPSE</button></div>
+    </div>
+    <div class="act-content" id="content-act1">
+      <div class="disclaimer">SIMULATED REHEARSAL · POSSIBLE CONVERSATION, NOT A TRANSCRIPT</div>
+      <div class="conversation" id="conv-act1"></div>
+      <div class="visual-block">
+        <h3>THE LEADERSHIP TRAP</h3>
+        <p style="font-style:italic; color:var(--text-dim); font-size:18px; margin:0 0 22px">“If I solve every difficult problem myself,<br>I eventually become the problem.”</p>
+        <div class="trap-grid">
+          <div class="trap-card">
+            <div class="flow">ENGINEERS<br>↓<br>DIFFICULT PROBLEMS<br>↓<br>DEN<br>↓<br>BOTTLENECK</div>
+            <div class="label">CURRENT PATTERN</div>
+          </div>
+          <div class="trap-card">
+            <div class="flow">ENGINEERS<br>↔<br>KNOWLEDGE<br>↔<br>AUTOMATION<br>↔<br>STANDARDS<br>↔<br>SHARED OWNERSHIP</div>
+            <div class="label">LEADER PATTERN</div>
+          </div>
+        </div>
+        <p style="margin-top:18px; color:var(--text-dim); font-size:14px">A technical leader removes dependency by building shared capability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACT II -->
+  <section id="act2" class="act-section" data-act="2">
+    <div class="act-divider">
+      <div>
+        <div class="act-label">ACT II</div>
+        <div class="act-time">10–20 MINUTES</div>
+        <h2>READINESS</h2>
+        <p>What do I need to prove?</p>
+      </div>
+      <div class="act-controls"><button class="collapseBtn" data-target="act2">COLLAPSE</button></div>
+    </div>
+    <div class="act-content" id="content-act2">
+      <div class="disclaimer">SIMULATED REHEARSAL · POSSIBLE CONVERSATION, NOT A TRANSCRIPT</div>
+      <div class="conversation" id="conv-act2"></div>
+
+      <div class="visual-block">
+        <h3>WHAT “READY” COULD LOOK LIKE</h3>
+        <div class="ready-grid">
+          <div class="ready-item"><div class="k">TECHNICAL CREDIBILITY</div><div class="v">Already strong</div></div>
+          <div class="ready-item"><div class="k">LEADERSHIP THROUGH OTHERS</div><div class="v">Needs deliberate evidence</div></div>
+          <div class="ready-item"><div class="k">DECISION-MAKING</div><div class="v">Increase independent ownership</div></div>
+          <div class="ready-item"><div class="k">CROSS-ENDPOINT INFLUENCE</div><div class="v">Expand beyond immediate team</div></div>
+          <div class="ready-item"><div class="k">BUSINESS UNDERSTANDING</div><div class="v">Understand priorities, risk and trade-offs</div></div>
+        </div>
+        <p style="margin-top:16px; font-size:14px; color:var(--text-dim)">His stated principle: <strong style="color:var(--text)">“Fail fast, learn fast.”</strong> Make a decision, learn from it, then adjust.</p>
+      </div>
+
+      <div class="visual-block">
+        <h3>THE TWO QUESTIONS I MUST NOT LEAVE WITHOUT ASKING</h3>
+        <div class="two-q">
+          <div class="q-card">
+            <div class="num">01</div>
+            <blockquote>“What are the two or three things you need to see from me to be confident that I’m ready?”</blockquote>
+          </div>
+          <div class="q-card">
+            <div class="num">02</div>
+            <blockquote>“If we sit down again twelve months from now, what would I need to have accomplished for you to say, ‘Den is ready’?”</blockquote>
+          </div>
+        </div>
+        <p style="margin-top:14px; color:var(--text-faint); font-size:13px">Ask one question at a time. Give the boss room to answer fully.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACT III -->
+  <section id="act3" class="act-section" data-act="3">
+    <div class="act-divider">
+      <div>
+        <div class="act-label">ACT III</div>
+        <div class="act-time">20–30 MINUTES</div>
+        <h2>ACTION</h2>
+        <p>What do I start doing now?</p>
+      </div>
+      <div class="act-controls"><button class="collapseBtn" data-target="act3">COLLAPSE</button></div>
+    </div>
+    <div class="act-content" id="content-act3">
+      <div class="disclaimer">SIMULATED REHEARSAL · POSSIBLE CONVERSATION, NOT A TRANSCRIPT</div>
+      <div class="conversation" id="conv-act3"></div>
+
+      <div class="visual-block">
+        <h3>SUCCESSION IS RECURSIVE</h3>
+        <div class="succession">
+          <div class="succ-card bad">
+            <h4>SUCCESSION IS NOT</h4>
+            <div class="flow">JESS<br>↓<br>DEN</div>
+          </div>
+          <div class="succ-card good">
+            <h4>SUCCESSION CONTINUES</h4>
+            <div class="flow">JESS<br>↓<br>DEN<br>↓<br>NEXT ENGINEER<br>↓<br>NEXT ENGINEER</div>
+          </div>
+        </div>
+        <p style="margin-top:14px; color:var(--text-dim); font-size:14px">Moving upward while leaving an impossible dependency behind is not successful succession. The goal is capability continuity.</p>
+      </div>
+
+      <div class="visual-block">
+        <h3>WHAT I START DOING NOW</h3>
+        <div class="action-grid">
+          <div class="action-card"><div class="num">01</div><h4>TAKE OWNERSHIP</h4><p>Begin taking meaningful parts of Jess’s responsibilities.</p></div>
+          <div class="action-card"><div class="num">02</div><h4>LEAD THROUGH OTHERS</h4><p>Coach engineers instead of automatically solving everything myself.</p></div>
+          <div class="action-card"><div class="num">03</div><h4>MAKE DECISIONS</h4><p>Make appropriate decisions within my authority and own the outcome.</p></div>
+          <div class="action-card"><div class="num">04</div><h4>EXPAND INFLUENCE</h4><p>Operate beyond Endpoint Technology Management and Control.</p></div>
+          <div class="action-card"><div class="num">05</div><h4>BUILD MY SUCCESSOR</h4><p>Develop engineers capable of taking parts of my current responsibilities.</p></div>
+          <div class="action-card"><div class="num">06</div><h4>UNDERSTAND THE BUSINESS</h4><p>Increase exposure to architecture, prioritization, risk and strategic decisions.</p></div>
+        </div>
+      </div>
+
+      <div class="visual-block">
+        <h3>NEXT 90 DAYS</h3>
+        <div class="days">
+          <div class="day-col">
+            <h4>0–30 DAYS</h4>
+            <ul>
+              <li>Discuss development plan with Jess</li>
+              <li>Identify responsibilities to begin taking</li>
+              <li>Choose one engineer to develop</li>
+              <li>Find one cross-team problem to own</li>
+            </ul>
+          </div>
+          <div class="day-col">
+            <h4>31–60 DAYS</h4>
+            <ul>
+              <li>Lead selected technical discussions</li>
+              <li>Delegate meaningful engineering work</li>
+              <li>Increase cross-team representation</li>
+              <li>Make more decisions independently</li>
+            </ul>
+          </div>
+          <div class="day-col">
+            <h4>61–90 DAYS</h4>
+            <ul>
+              <li>Own a meaningful technical initiative</li>
+              <li>Show leadership through other engineers</li>
+              <li>Review progress with Jess</li>
+              <li>Reconnect with boss with evidence</li>
+            </ul>
+          </div>
+        </div>
+        <div class="plan-note">PROPOSED PERSONAL PLAN · NOT COMMITMENTS AGREED WITH THE BOSS</div>
+      </div>
+
+      <div class="cheat">
+        <h2>BEFORE I WALK INTO THE ROOM</h2>
+        <div class="cheat-grid">
+          <div class="cheat-item">
+            <h4>MY THREE TOPICS</h4>
+            <p>1. Direction · 2. Readiness · 3. Action</p>
+          </div>
+          <div class="cheat-item">
+            <h4>MY CORE MESSAGE</h4>
+            <p>“I want broader technical leadership while remaining technically credible.”</p>
+          </div>
+          <div class="cheat-item">
+            <h4>MY DEVELOPMENT EDGE</h4>
+            <p>“Stop automatically solving everything myself.”</p>
+          </div>
+          <div class="cheat-item">
+            <h4>MY TWO CRITICAL QUESTIONS</h4>
+            <ul>
+              <li>“What do you need to see from me to know I’m ready?”</li>
+              <li>“What would ready look like twelve months from now?”</li>
+            </ul>
+          </div>
+          <div class="cheat-item">
+            <h4>MY FINAL QUESTION</h4>
+            <p>“If you were me, what single thing would you focus on over the next year?”</p>
+          </div>
+          <div class="cheat-item">
+            <h4>REMINDER</h4>
+            <p>LISTEN. Don’t turn this into a presentation about my achievements.</p>
+          </div>
+        </div>
+        <div class="final-reminder">LISTEN. Don't turn this into a presentation about my achievements.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <h2>THE NEXT LEVEL ISN'T<br>SOLVING MORE PROBLEMS.</h2>
+    <p>It's building a team that can solve them without depending entirely on me.</p>
+    <div class="footer">DIRECTION → READINESS → ACTION</div>
+  </section>
+</main>
+
+<script>
+const conversation = [{"act": 1, "id": "act1", "title": "DIRECTION", "time": "0\u201310 MINUTES", "question": "Where do I want my career to go?", "turns": [{"speaker": "BOSS", "text": "Right, Den. So what do you want to talk about?"}, {"speaker": "DEN", "text": "There are really three things I wanted to cover. First, where I want to go in my career. Second, what you said about succession and me potentially taking on more of Jess's responsibilities. And third, what I should actually start doing to prepare for that."}, {"speaker": "BOSS", "text": "Okay. So where do you want to go?"}, {"speaker": "DEN", "text": "I want to move toward broader technical leadership."}, {"speaker": "BOSS", "text": "What does that mean?"}, {"speaker": "DEN", "text": "I still want to stay close to technology. I enjoy engineering, automation, troubleshooting and solving difficult problems. I don't want to move completely away from that."}, {"speaker": "BOSS", "text": "So you don't want to be a manager?"}, {"speaker": "DEN", "text": "I wouldn't rule out management. But I'm not sitting here thinking, 'I need a manager title.' What interests me more is taking broader responsibility for technical direction, decisions, developing engineers and how the team operates."}, {"speaker": "BOSS", "text": "Why?"}, {"speaker": "DEN", "text": "Because I think I've reached a point where simply becoming better at solving problems myself isn't enough."}, {"speaker": "BOSS", "text": "What do you mean?"}, {"speaker": "DEN", "text": "If something difficult comes to me today, my instinct is usually to get into the detail and solve it. That's useful, and I don't want to lose that ability. But there's a limit to the impact I can have if everything depends on what I personally do."}, {"speaker": "BOSS", "text": "Right."}, {"speaker": "DEN", "text": "So I think my next step is going from being primarily a problem solver to someone who creates capability around him."}, {"speaker": "BOSS", "text": "How?"}, {"speaker": "DEN", "text": "Developing other engineers. Delegating more. Improving documentation. Building reusable automation. Creating standards. Making sure knowledge isn't concentrated in one person."}, {"speaker": "BOSS", "text": "And are you actually good at delegating?"}, {"speaker": "DEN", "text": "Not always."}, {"speaker": "BOSS", "text": "Why not?"}, {"speaker": "DEN", "text": "Because if I know how to solve something, sometimes doing it myself is faster."}, {"speaker": "BOSS", "text": "That's not leadership."}, {"speaker": "DEN", "text": "I agree. It solves today's problem, but it can create tomorrow's problem."}, {"speaker": "BOSS", "text": "Which is?"}, {"speaker": "DEN", "text": "Me."}, {"speaker": "BOSS", "text": "How?"}, {"speaker": "DEN", "text": "If every difficult issue eventually comes back to me because I'm the person who knows how to fix it, then I've become a human single point of failure."}, {"speaker": "BOSS", "text": "Exactly."}, {"speaker": "DEN", "text": "And that's one of the things I want to change. I want to reach the point where something I used to own can run successfully without me."}, {"speaker": "BOSS", "text": "That's a very different job from being the strongest engineer in the room."}, {"speaker": "DEN", "text": "Yes. And that's the transition I'm interested in making."}]}, {"act": 2, "id": "act2", "title": "READINESS", "time": "10\u201320 MINUTES", "question": "What do I need to prove?", "turns": [{"speaker": "DEN", "text": "The second thing I wanted to discuss is something you said about succession."}, {"speaker": "BOSS", "text": "Okay."}, {"speaker": "DEN", "text": "You mentioned me potentially taking on more of Jess's responsibilities. I took that seriously."}, {"speaker": "BOSS", "text": "You should."}, {"speaker": "DEN", "text": "I'm interested in doing it."}, {"speaker": "BOSS", "text": "Do you think you're ready?"}, {"speaker": "DEN", "text": "For some parts of it, yes. For everything Jess does today, probably not yet."}, {"speaker": "BOSS", "text": "What's missing?"}, {"speaker": "DEN", "text": "That's actually what I want your view on."}, {"speaker": "BOSS", "text": "I'm asking you."}, {"speaker": "DEN", "text": "Fair enough."}, {"speaker": "DEN", "text": "Technically, I'm comfortable taking broader responsibility. Where I need more experience is leading through other people, making decisions where there isn't a perfect technical answer, and operating across a broader organizational scope."}, {"speaker": "BOSS", "text": "Good."}, {"speaker": "DEN", "text": "And I need to get better at not automatically becoming the person who fixes everything."}, {"speaker": "BOSS", "text": "I agree with that."}, {"speaker": "DEN", "text": "So let me ask you directly."}, {"speaker": "BOSS", "text": "Go on."}, {"speaker": "DEN", "text": "When you think about succession for Jess's responsibilities, what are the two or three things you would need to see from me to be confident that I'm ready?"}, {"speaker": "BOSS", "text": "I already know you're technically capable. That's not what you need to prove to me. I need to see you leading people, making decisions and influencing outside your own team."}, {"speaker": "DEN", "text": "Okay. That's useful."}, {"speaker": "BOSS", "text": "You need to stop thinking only about your own technology."}, {"speaker": "DEN", "text": "Meaning broader Endpoint?"}, {"speaker": "BOSS", "text": "Exactly. Understand how your decisions affect other teams. Understand priorities. Understand the business. And don't escalate every difficult decision because you're worried about being wrong."}, {"speaker": "DEN", "text": "That last point is interesting."}, {"speaker": "BOSS", "text": "Why?"}, {"speaker": "DEN", "text": "Because engineers are trained to reduce uncertainty. Leadership sometimes means making a decision before all the uncertainty disappears."}, {"speaker": "BOSS", "text": "Correct. You're never going to have perfect information."}, {"speaker": "DEN", "text": "So I need to get more comfortable making decisions within my authority, explaining the reasoning, and owning the outcome."}, {"speaker": "BOSS", "text": "Yes."}, {"speaker": "DEN", "text": "Then let me make it even more concrete."}, {"speaker": "BOSS", "text": "Go on."}, {"speaker": "DEN", "text": "If you and I were sitting here again twelve months from now, what would I need to have done for you to say, 'Den is ready'?"}, {"speaker": "BOSS", "text": "I'd want to see Jess hand something significant to you and be able to step away from it."}, {"speaker": "DEN", "text": "Okay."}, {"speaker": "BOSS", "text": "I'd want engineers coming to you for direction. I'd want you making decisions without Jess having to check everything."}, {"speaker": "DEN", "text": "Right."}, {"speaker": "BOSS", "text": "And I'd want people outside your immediate team to know who you are and trust your judgment."}, {"speaker": "DEN", "text": "That gives me something measurable."}]}, {"act": 3, "id": "act3", "title": "ACTION", "time": "20\u201330 MINUTES", "question": "What do I start doing now?", "turns": [{"speaker": "DEN", "text": "Then the third thing I wanted to discuss is what I should actually start doing."}, {"speaker": "BOSS", "text": "What do you think you should do?"}, {"speaker": "DEN", "text": "I think the first thing is to start taking on some of Jess's responsibilities while Jess is still there."}, {"speaker": "BOSS", "text": "Such as?"}, {"speaker": "DEN", "text": "Leading some technical discussions. Representing the team in cross-team discussions. Making more technical decisions. Mentoring engineers. And ideally owning something significant that crosses team boundaries."}, {"speaker": "BOSS", "text": "Why cross-team?"}, {"speaker": "DEN", "text": "Because if I only operate successfully inside Management and Control, I haven't demonstrated broader Endpoint leadership."}, {"speaker": "BOSS", "text": "Correct."}, {"speaker": "DEN", "text": "And I'd rather learn Jess's responsibilities while Jess is still available to challenge me and give me feedback."}, {"speaker": "BOSS", "text": "Exactly."}, {"speaker": "DEN", "text": "The worst time to start learning Jess's responsibilities would be the day after Jess is no longer doing them."}, {"speaker": "BOSS", "text": "That's the point of succession."}, {"speaker": "DEN", "text": "There's another thing I think I need to do."}, {"speaker": "BOSS", "text": "What?"}, {"speaker": "DEN", "text": "Start developing people who can take over some of what I do today."}, {"speaker": "BOSS", "text": "Good. Why?"}, {"speaker": "DEN", "text": "Because otherwise we just move the dependency."}, {"speaker": "BOSS", "text": "Exactly."}, {"speaker": "DEN", "text": "If I take more of Jess's responsibilities but everything I currently own still depends on me, we haven't really solved anything."}, {"speaker": "BOSS", "text": "Correct. If you replace Jess, I should already be asking who can replace you."}, {"speaker": "DEN", "text": "That actually changes how I think about succession."}, {"speaker": "BOSS", "text": "How?"}, {"speaker": "DEN", "text": "It isn't just preparing myself for the next role. It's making sure somebody else is becoming capable of doing parts of my current role."}, {"speaker": "BOSS", "text": "Exactly."}, {"speaker": "DEN", "text": "So over the next six to twelve months, I'd like to deliberately work on those things rather than just hope they happen."}, {"speaker": "BOSS", "text": "Good."}, {"speaker": "DEN", "text": "I'd also like more exposure to the conversations I don't normally see today."}, {"speaker": "BOSS", "text": "Such as?"}, {"speaker": "DEN", "text": "Architecture decisions, prioritization, cross-regional strategy, and situations where the technically best answer isn't necessarily the right business decision."}, {"speaker": "BOSS", "text": "That's reasonable."}, {"speaker": "DEN", "text": "I don't need to be in every meeting. I want to understand how decisions are made at the level above where I'm operating today."}, {"speaker": "BOSS", "text": "Understood."}, {"speaker": "DEN", "text": "Can I ask you one last thing?"}, {"speaker": "BOSS", "text": "Sure."}, {"speaker": "DEN", "text": "If you were in my position, knowing where Endpoint is heading, what's the single most important thing you would focus on over the next year?"}, {"speaker": "BOSS", "text": "Leadership through other people. I already know you can solve technical problems. Don't spend another year proving something I already know."}, {"speaker": "DEN", "text": "That's clear."}, {"speaker": "BOSS", "text": "I want to see what happens when I give you a difficult problem and you don't personally do all the work."}, {"speaker": "DEN", "text": "So the measure isn't just what I deliver personally."}, {"speaker": "BOSS", "text": "Exactly."}, {"speaker": "DEN", "text": "It's whether the people around me become more capable."}, {"speaker": "BOSS", "text": "Correct."}, {"speaker": "DEN", "text": "Okay. Let me make sure I've got this right."}, {"speaker": "BOSS", "text": "Go on."}, {"speaker": "DEN", "text": "Take on some of Jess's responsibilities. Lead more through other engineers. Make more decisions rather than escalating everything. Build influence outside my immediate team. Develop somebody who can take over parts of what I do today. And get more exposure to the broader business and strategic decisions."}, {"speaker": "BOSS", "text": "That's about right."}, {"speaker": "DEN", "text": "Good. Then that gives me something concrete to work on."}, {"speaker": "BOSS", "text": "Speak with Jess. I'll speak with Jess as well."}, {"speaker": "DEN", "text": "I will."}, {"speaker": "BOSS", "text": "And don't wait until next year to talk to me about how it's going."}, {"speaker": "DEN", "text": "I won't."}, {"speaker": "BOSS", "text": "Good."}, {"speaker": "DEN", "text": "Thanks. This was useful."}]}];
+
+let bossVisible = true;
+let individualReveals = new Set();
+let searchTerm = "";
+
+function loadState(){
+  try{
+    const saved = localStorage.getItem('bossVisible');
+    if(saved !== null) bossVisible = saved !== 'false';
+  }catch(e){}
+  try{
+    const rev = localStorage.getItem('individualReveals');
+    if(rev) individualReveals = new Set(JSON.parse(rev));
+  }catch(e){}
+}
+function saveState(){
+  try{
+    localStorage.setItem('bossVisible', String(bossVisible));
+    localStorage.setItem('individualReveals', JSON.stringify(Array.from(individualReveals)));
+  }catch(e){}
+}
+
+function createTurnElement(turn, globalIndex){
+  const div = document.createElement('div');
+  div.className = 'turn ' + turn.speaker.toLowerCase();
+  div.dataset.speaker = turn.speaker;
+  div.dataset.index = globalIndex;
+  div.dataset.text = turn.text.toLowerCase();
+
+  const header = document.createElement('div');
+  header.className = 'turn-header';
+
+  const avatar = document.createElement('div');
+  avatar.className = 'avatar';
+  avatar.textContent = turn.speaker === 'BOSS' ? 'B' : 'D';
+
+  const speaker = document.createElement('div');
+  speaker.className = 'speaker';
+  speaker.textContent = turn.speaker;
+
+  header.appendChild(avatar);
+  header.appendChild(speaker);
+  div.appendChild(header);
+
+  const textEl = document.createElement('div');
+  textEl.className = 'turn-text';
+  textEl.textContent = turn.text;
+
+  const hiddenPlaceholder = document.createElement('div');
+  hiddenPlaceholder.className = 'hidden-placeholder';
+  hiddenPlaceholder.innerHTML = '<span class="icon">◐</span><span>[ Boss dialogue hidden ]</span>';
+
+  const actions = document.createElement('div');
+  actions.className = 'boss-actions';
+
+  const revealBtn = document.createElement('button');
+  revealBtn.className = 'small-btn revealBtn';
+  revealBtn.textContent = 'REVEAL THIS LINE';
+
+  actions.appendChild(revealBtn);
+
+  div.appendChild(textEl);
+  div.appendChild(hiddenPlaceholder);
+  if(turn.speaker === 'BOSS'){
+    div.appendChild(actions);
+  }
+
+  // event
+  revealBtn.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    const id = String(globalIndex);
+    if(individualReveals.has(id)){
+      individualReveals.delete(id);
+    } else {
+      individualReveals.add(id);
+    }
+    saveState();
+    renderVisibility();
+  });
+
+  return div;
+}
+
+let globalCounter = 0;
+const turnElements = []; // array of {el, turn, index}
+
+function renderAll(){
+  document.querySelectorAll('[id^="conv-act"]').forEach(c=>c.innerHTML="");
+  globalCounter = 0;
+  turnElements.length = 0;
+  conversation.forEach(act=>{
+    const container = document.getElementById('conv-' + act.id);
+    if(!container) return;
+    act.turns.forEach(turn=>{
+      const el = createTurnElement(turn, globalCounter);
+      container.appendChild(el);
+      turnElements.push({el, turn, index: globalCounter});
+      globalCounter++;
+    });
+  });
+  renderVisibility();
+  applySearch();
+}
+
+function renderVisibility(){
+  const bossToggle = document.getElementById('bossToggle');
+  const label = document.getElementById('bossToggleLabel');
+  const stateText = document.getElementById('stateText');
+  const stateDot = document.getElementById('stateDot');
+
+  if(bossVisible){
+    bossToggle.classList.remove('hidden-state');
+    bossToggle.setAttribute('aria-pressed','true');
+    label.textContent = 'HIDE BOSS SCRIPT';
+    stateText.textContent = 'BOSS SCRIPT: VISIBLE';
+    stateDot.classList.remove('hidden');
+  } else {
+    bossToggle.classList.add('hidden-state');
+    bossToggle.setAttribute('aria-pressed','false');
+    label.textContent = 'SHOW BOSS SCRIPT';
+    stateText.textContent = 'BOSS SCRIPT: HIDDEN';
+    stateDot.classList.add('hidden');
+  }
+
+  turnElements.forEach(({el, turn, index})=>{
+    const textEl = el.querySelector('.turn-text');
+    const placeholder = el.querySelector('.hidden-placeholder');
+    const revealBtn = el.querySelector('.revealBtn');
+    if(turn.speaker === 'DEN'){
+      textEl.classList.remove('hidden-text');
+      if(placeholder) placeholder.style.display='none';
+      if(revealBtn) revealBtn.parentElement.style.display='none';
+      el.style.opacity='1';
+    } else {
+      const individuallyRevealed = individualReveals.has(String(index));
+      if(bossVisible || individuallyRevealed){
+        textEl.classList.remove('hidden-text');
+        if(placeholder) placeholder.style.display='none';
+        if(revealBtn){
+          if(!bossVisible){
+            revealBtn.textContent = 'HIDE THIS LINE';
+            revealBtn.parentElement.style.display='flex';
+          } else {
+            revealBtn.parentElement.style.display='none';
+          }
+        }
+      } else {
+        textEl.classList.add('hidden-text');
+        if(placeholder) placeholder.style.display='flex';
+        if(revealBtn){
+          revealBtn.textContent = 'REVEAL THIS LINE';
+          revealBtn.parentElement.style.display='flex';
+        }
+      }
+    }
+  });
+}
+
+function toggleBoss(){
+  // If bossVisible is true, we are hiding, clear individual? Keep them but global overrides.
+  bossVisible = !bossVisible;
+  if(bossVisible){
+    // when showing all, optionally clear individual? Keep spec: global overrides individual. We'll keep set but hidden.
+  }
+  saveState();
+  renderVisibility();
+}
+
+function applySearch(){
+  const term = searchTerm.trim().toLowerCase();
+  const countEl = document.getElementById('searchCount');
+  let matches = 0;
+
+  turnElements.forEach(({el, turn, index})=>{
+    const textEl = el.querySelector('.turn-text');
+    el.classList.remove('search-match','search-match-hidden');
+    // restore original text without marks
+    if(textEl){
+      textEl.innerHTML = "";
+      textEl.textContent = turn.text;
+    }
+
+    if(!term) return;
+
+    const lower = turn.text.toLowerCase();
+    if(lower.includes(term)){
+      matches++;
+      const isBoss = turn.speaker === 'BOSS';
+      const isHidden = !bossVisible && isBoss && !individualReveals.has(String(index));
+
+      if(isHidden){
+        el.classList.add('search-match-hidden');
+      } else {
+        el.classList.add('search-match');
+        // highlight
+        if(textEl){
+          const regex = new RegExp('('+ escapeReg(term) +')', 'gi');
+          const escaped = escapeHtml(turn.text);
+          // need to highlight in original with preserved case
+          const highlighted = turn.text.replace(regex, (m)=> '<span class="mark">'+ escapeHtml(m) +'</span>');
+          textEl.innerHTML = highlighted;
+        }
+      }
+    }
+  });
+
+  if(term){
+    countEl.textContent = matches + ' match' + (matches!==1?'es':'');
+  } else {
+    countEl.textContent = '';
+  }
+}
+function escapeReg(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+function escapeHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  loadState();
+  renderAll();
+
+  document.getElementById('bossToggle').addEventListener('click', toggleBoss);
+  document.getElementById('showAllBtn').addEventListener('click', ()=>{
+    document.querySelectorAll('.act-content').forEach(c=>c.classList.remove('collapsed'));
+    document.querySelectorAll('.collapseBtn').forEach(b=>b.textContent='COLLAPSE');
+  });
+  document.getElementById('collapseAllBtn').addEventListener('click', ()=>{
+    document.querySelectorAll('.act-content').forEach(c=>c.classList.add('collapsed'));
+    document.querySelectorAll('.collapseBtn').forEach(b=>b.textContent='EXPAND');
+  });
+  document.getElementById('topBtn').addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
+  document.getElementById('printBtn').addEventListener('click', ()=> window.print());
+
+  document.querySelectorAll('.collapseBtn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const target = btn.dataset.target;
+      const content = document.getElementById('content-'+target);
+      if(!content) return;
+      const isCollapsed = content.classList.toggle('collapsed');
+      btn.textContent = isCollapsed ? 'EXPAND' : 'COLLAPSE';
+    });
+  });
+
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', (e)=>{
+    searchTerm = e.target.value;
+    applySearch();
+  });
+
+  // keyboard shortcut B
+  document.addEventListener('keydown', (e)=>{
+    const active = document.activeElement;
+    const isTyping = active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable);
+    if(isTyping) return;
+    if(e.key.toLowerCase() === 'b' && !e.ctrlKey && !e.metaKey && !e.altKey){
+      e.preventDefault();
+      toggleBoss();
+    }
+  });
+});
+
+// Name validation passed: only Jess is used
+</script>
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
+</html>
