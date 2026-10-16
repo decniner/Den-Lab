@@ -388,31 +388,31 @@
     "cotopaxijapan:9246627758268:45992685994172": {
       "sale_price": "15950",
       "reference_price": "31900",
-      "sent_at": "2026-10-05T09:22:55+09:00",
+      "sent_at": "2026-10-16T09:02:01+09:00",
       "url": "https://cotopaxi.jp/products/trico-hybrid-hooded-jacket-womens-sale26ss?variant=45992685994172"
     },
     "cotopaxijapan:9246629068988:45992711749820": {
       "sale_price": "15950",
       "reference_price": "31900",
-      "sent_at": "2026-10-06T11:03:32+09:00",
+      "sent_at": "2026-10-16T09:02:01+09:00",
       "url": "https://cotopaxi.jp/products/trico-hybrid-hooded-jacket-mens-sale26ss?variant=45992711749820"
     },
     "cotopaxijapan:9246628675772:45992704770236": {
       "sale_price": "15400",
       "reference_price": "30800",
-      "sent_at": "2026-10-06T11:03:32+09:00",
+      "sent_at": "2026-10-16T09:02:01+09:00",
       "url": "https://cotopaxi.jp/products/bacano-fleece-jacket-mens-sale26ss?variant=45992704770236"
     },
     "cotopaxijapan:9246628905148:45992708276412": {
       "sale_price": "15400",
       "reference_price": "30800",
-      "sent_at": "2026-10-06T11:03:32+09:00",
+      "sent_at": "2026-10-16T09:02:01+09:00",
       "url": "https://cotopaxi.jp/products/bacano-fleece-jacket-womens-sale26ss?variant=45992708276412"
     },
     "saucony-jp:8596862697624:45827018424472": {
       "sale_price": "15400",
       "reference_price": "30800",
-      "sent_at": "2026-10-06T11:03:32+09:00",
+      "sent_at": "2026-10-16T09:02:01+09:00",
       "url": "https://saucony.jp/products/mens-endorphin-trainer?variant=45827018424472"
     },
     "saucony-jp:8596880752792:45827129344152": {
@@ -744,6 +744,12 @@
       "reference_price": "32890",
       "sent_at": "2026-10-15T09:15:29+09:00",
       "url": "https://boardriders.co.jp/products/twt251701?variant=49986729214233"
+    },
+    "boardriders-co-jp:10631291109657:52412845130009": {
+      "sale_price": "15950",
+      "reference_price": "31900",
+      "sent_at": "2026-10-16T09:02:01+09:00",
+      "url": "https://boardriders.co.jp/products/vg5724819?variant=52412845130009"
     }
   },
   "last_digest": {
