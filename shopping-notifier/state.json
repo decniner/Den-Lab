@@ -418,7 +418,7 @@
     "saucony-jp:8596880752792:45827129344152": {
       "sale_price": "15400",
       "reference_price": "30800",
-      "sent_at": "2026-10-06T11:03:32+09:00",
+      "sent_at": "2026-10-16T09:02:03+09:00",
       "url": "https://saucony.jp/products/womens-endorphin-trainer?variant=45827129344152"
     },
     "brooksrunning-co-jp:8467328172329:45789177250089": {
@@ -436,7 +436,7 @@
     "brooksrunning-co-jp:9040208462121:47877884346665": {
       "sale_price": "14850",
       "reference_price": "29700",
-      "sent_at": "2026-10-06T11:03:34+09:00",
+      "sent_at": "2026-10-16T09:02:03+09:00",
       "url": "https://brooksrunning.co.jp/products/bmm0456-gry?variant=47877884346665"
     },
     "saucony-jp:8596869218456:45827081666712": {
@@ -750,12 +750,24 @@
       "reference_price": "31900",
       "sent_at": "2026-10-16T09:02:01+09:00",
       "url": "https://boardriders.co.jp/products/vg5724819?variant=52412845130009"
+    },
+    "boardriders-co-jp:10631289700633:52412837298457": {
+      "sale_price": "14850",
+      "reference_price": "29700",
+      "sent_at": "2026-10-16T09:02:03+09:00",
+      "url": "https://boardriders.co.jp/products/n0452501?variant=52412837298457"
+    },
+    "boardriders-co-jp:10631285571865:52412804792601": {
+      "sale_price": "14300",
+      "reference_price": "28600",
+      "sent_at": "2026-10-16T09:02:03+09:00",
+      "url": "https://boardriders.co.jp/products/dpt243924?variant=52412804792601"
     }
   },
   "last_digest": {
-    "date": "2026-10-15",
-    "coverage_key": "a5ac7e84c0f0faef4357005d30b9ecdcfd48c9bd2377ee750a096c0899638a33",
-    "completed_at": "2026-10-15T09:15:29+09:00",
-    "digest_hash": "02c9f68ed5471a4ed515d4a738aba1f09ea5fa30c7d89f06b5ed9bdfeaab462e"
+    "date": "2026-10-16",
+    "coverage_key": "34ac3283330b6448186605bdad7109cb61cdaf60f09f23ea7cdbd53bd1735c45",
+    "completed_at": "2026-10-16T09:02:03+09:00",
+    "digest_hash": "6d10e694dcebef4b9f0a32073f04af4470b1eb94471c1a06b522450625b876ac"
   }
 }
