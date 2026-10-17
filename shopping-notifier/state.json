@@ -604,31 +604,31 @@
     "boardriders-co-jp:10631287374105:52412817244441": {
       "sale_price": "29700",
       "reference_price": "59400",
-      "sent_at": "2026-10-09T10:37:31+09:00",
+      "sent_at": "2026-10-17T09:06:01+09:00",
       "url": "https://boardriders.co.jp/products/g0652509?variant=52412817244441"
     },
     "boardriders-co-jp:10631289143577:52412830023961": {
       "sale_price": "29700",
       "reference_price": "59400",
-      "sent_at": "2026-10-09T10:37:32+09:00",
+      "sent_at": "2026-10-17T09:06:01+09:00",
       "url": "https://boardriders.co.jp/products/h0652502?variant=52412830023961"
     },
     "boardriders-co-jp:10631289176345:52412830679321": {
       "sale_price": "26950",
       "reference_price": "53900",
-      "sent_at": "2026-10-09T10:37:32+09:00",
+      "sent_at": "2026-10-17T09:06:01+09:00",
       "url": "https://boardriders.co.jp/products/h1252501?variant=52412830679321"
     },
     "boardriders-co-jp:10631288324377:52412823109913": {
       "sale_price": "25300",
       "reference_price": "50600",
-      "sent_at": "2026-10-09T10:37:32+09:00",
+      "sent_at": "2026-10-17T09:06:01+09:00",
       "url": "https://boardriders.co.jp/products/g0652516?variant=52412823109913"
     },
     "boardriders-co-jp:10631289012505:52412828942617": {
       "sale_price": "25300",
       "reference_price": "50600",
-      "sent_at": "2026-10-09T10:37:32+09:00",
+      "sent_at": "2026-10-17T09:06:01+09:00",
       "url": "https://boardriders.co.jp/products/g1352519?variant=52412828942617"
     },
     "phenixstore-com:9954444312880:50132889010480": {
@@ -765,9 +765,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-10-16",
-    "coverage_key": "34ac3283330b6448186605bdad7109cb61cdaf60f09f23ea7cdbd53bd1735c45",
-    "completed_at": "2026-10-16T09:02:03+09:00",
-    "digest_hash": "6d10e694dcebef4b9f0a32073f04af4470b1eb94471c1a06b522450625b876ac"
+    "date": "2026-10-17",
+    "coverage_key": "05d34130a222f4856d39d2b9065fad9a8a87be68fa279769b8d19caa38c668d3",
+    "completed_at": "2026-10-17T09:06:01+09:00",
+    "digest_hash": "c5d807963b5a5fdfcbe9db033ddf1f402c8ad3a30403678441fc72ab3c2cf939"
   }
 }
