@@ -184,7 +184,7 @@
     "phenixstore-com:9578701586736:49016136302896": {
       "sale_price": "8400",
       "reference_price": "21000",
-      "sent_at": "2026-10-11T09:38:42+09:00",
+      "sent_at": "2026-10-19T08:51:25+09:00",
       "url": "https://phenixstore.com/products/poo-24052?variant=49016136302896"
     },
     "phenixstore-com:9616661709104:49132467192112": {
@@ -202,19 +202,19 @@
     "phenixstore-com:8634451231024:46618175537456": {
       "sale_price": "16650",
       "reference_price": "45000",
-      "sent_at": "2026-10-11T09:38:42+09:00",
+      "sent_at": "2026-10-19T08:51:25+09:00",
       "url": "https://phenixstore.com/products/esw23ot64?variant=46618175537456"
     },
     "phenixstore-com:8720368337200:46824032928048": {
       "sale_price": "1332",
       "reference_price": "3600",
-      "sent_at": "2026-10-11T09:38:42+09:00",
+      "sent_at": "2026-10-19T08:51:25+09:00",
       "url": "https://phenixstore.com/products/esw23hw50?variant=46824032928048"
     },
     "phenixstore-com:9578701553968:49016135745840": {
       "sale_price": "8800",
       "reference_price": "22000",
-      "sent_at": "2026-10-11T09:38:42+09:00",
+      "sent_at": "2026-10-19T08:51:25+09:00",
       "url": "https://phenixstore.com/products/poo-24051?variant=49016135745840"
     },
     "phenixstore-com:9578700865840:49016132567344": {
@@ -771,9 +771,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-10-18",
-    "coverage_key": "4575a339f28522d178c1fe60cc998033bc35330c5d653ec6e879987b73b69bc7",
-    "completed_at": "2026-10-18T08:40:27+09:00",
-    "digest_hash": "aefbf8318d09936f0ad3b4c5a3150998d9c5cad11ece148b666a905ca12b6549"
+    "date": "2026-10-19",
+    "coverage_key": "24c4dfebad9d82ba6aace62a8bc77f3a5881788011de7fd341f5a901667df970",
+    "completed_at": "2026-10-19T08:51:25+09:00",
+    "digest_hash": "62aeeeb717d64258f4db89f716cab665b1f530fbec6850dc85158852d7f0528a"
   }
 }
