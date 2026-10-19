@@ -1,0 +1,13 @@
+{
+  "topic": "7 Interesting Facts About Japan",
+  "audience": "global adult audience",
+  "language": "English",
+  "duration_seconds": 60,
+  "format": "shorts",
+  "scenes": [
+    {"scene_id": "opening", "queries": ["Tokyo city aerial night", "Japan city street documentary"]},
+    {"scene_id": "rail", "queries": ["Japan bullet train station", "Shinkansen train landscape"]},
+    {"scene_id": "food", "queries": ["Japanese street food market", "Japan ramen preparation"]},
+    {"scene_id": "nature", "queries": ["Mount Fuji landscape", "Kyoto forest temple"]}
+  ]
+}

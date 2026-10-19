@@ -1,0 +1,4 @@
+interface:
+  display_name: Stock Footage Documentary
+  short_description: Make narrated videos from reviewed stock footage
+  default_prompt: Create a factual YouTube documentary using real, licensed stock video footage.

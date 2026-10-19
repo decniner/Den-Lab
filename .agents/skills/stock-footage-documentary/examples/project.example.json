@@ -1,0 +1,37 @@
+{
+  "title": "Documentary title",
+  "format": "shorts",
+  "fps": 30,
+  "transition_seconds": 0.25,
+  "narration_path": "audio/narration.wav",
+  "captions_path": "captions/narration.srt",
+  "scenes": [
+    {
+      "scene_id": "opening",
+      "clip_path": "footage/clip-001.mp4",
+      "provider": "pexels",
+      "asset_id": "replace-with-provider-asset-id",
+      "creator": "replace-with-creator-name",
+      "source_url": "https://www.pexels.com/videos/",
+      "acquisition_method": "manual-provider-download",
+      "download_url": "",
+      "downloaded_via_provider_ui": false,
+      "license_url": "https://www.pexels.com/license/",
+      "download_date": "2026-10-19",
+      "source_in_seconds": 0.0,
+      "duration_seconds": 6.25,
+      "review": {
+        "license_status": "pending",
+        "license_evidence_url": "https://www.pexels.com/license/",
+        "commercial_use_confirmed": false,
+        "third_party_rights": "pending",
+        "release_review": "pending human review",
+        "restrictions_checked": false,
+        "reviewer": "",
+        "reviewed_at": "",
+        "attribution": "check provider requirements",
+        "restrictions": []
+      }
+    }
+  ]
+}
