@@ -1,0 +1,4 @@
+interface:
+  display_name: "Token Refresh"
+  short_description: "Restore an expired OAuth connection safely"
+  default_prompt: "Use $token-refresh to restore the existing OAuth connection."

@@ -1,0 +1,27 @@
+# Local illustrated animation mode
+
+Use this mode for requests for animated drawings, marker handwriting, recurring cartoon characters or a reproducible vector pipeline. The bundled template is a tested finance-mechanics demonstration, not a universal finance script. Adapt the story, assets, numeric data and word cues to the actual brief. If the brief is truncated, build the reusable components and clearly labelled demonstration while clarifying any missing finished-film requirements; do not fabricate a requested full documentary scope.
+
+Copy the skill's `assets/vector-pipeline-template/` directory into a new project. The template's README explains legitimate local dependencies and reproduction commands. Existing youtube-create5 Kokoro George and stable caption mechanics are reused. Local setup paths are hints; inspect them, use supplied WAV/timings when available, and keep model/font licensing notes. No paid service, new credit use, trial or usage-limit bypass. Do not claim global skill installation when files were only saved inside the workspace.
+
+## Drawing and motion
+
+Use original vector geometry where practical. The same scene graph exports editable SVG snapshots and renders its supported primitives through Pillow; this is not a general SVG/CSS engine. CairoSVG or another legitimate free renderer may be used when available. Avoid requiring MoviePy when direct FFmpeg encoding is sufficient.
+
+Progressive handwriting must reveal successive stroke segments, using measured arc length, SVG dash offsets or an actual moving mask. A whole line fading in is not handwriting. The template uses original marker-stroke glyphs and pen lifts, including financial concepts and symbols. Unsupported glyphs raise an error rather than disappear. Keep consistent lettering size/weight, readable important quantities and a useful full-draw hold. Do not accelerate numerical narration unnaturally to accommodate drawing.
+
+Maintain stable cast proportions, clothing, colours and joint anchors across scenes: suited Billionaire, Banker behind counter, curious Questioner and adult Heirs. Use restrained facial changes, blinking and articulated gestures. Give each scene meaningful explanatory movement: progressive arrows, a finite series of money transfers, growing/crashing chart geometry, numeric counters, eased panning/zooming and paper-cutout moves. Reuse object identities for continuity. Do not substitute a moving progress bar for substantive animation or repeat a footage loop as filler. Prefer inexpensive geometry/camera changes to effects that add no understanding.
+
+## Narration, captioning and calculation
+
+Use free local British Kokoro bm_george with topic-appropriate delivery. Derive scene windows and cue times from the actual take; ambiguous or missing cue phrases must fail. Model timings are predictions, not independent acoustic validation. Preserve complete narration and measured trims, and retain meaningful pauses. Synthesized subtle effects may be authored locally; keep them below the voice and note their rights. Do not invent subjective listening verification.
+
+Retain fixed-position 64–76px white/gold karaoke captions, max two lines. Keep illustrations, handwriting, readable assumptions and numbers above a dedicated caption region. Validate every vector/text bound and intersection, not only scene thumbnails. Ensure mute viewing still explains the relationship between assets, loan principal, interest and risk.
+
+Compute every figure/counter/chart endpoint. For a one-year $10M loan at hypothetical 5% simple annual interest, interest is $500,000. With no payments, principal remains $10M but total owed is $10.5M; do not label principal as total debt. State hypothetical currency/rate/timing/fees/repayment/compounding assumptions. Distinguish securities-backed maintenance calls from margin-account calls. Inherited basis can step up or down; any US-specific treatment needs current authoritative verification and visible jurisdiction/qualifications. Debt does not magically disappear at death, and estate obligations do not imply heirs universally owe debts personally. Keep scientific/tax/investing claims appropriate to the actual topic.
+
+## Actual export checks
+
+Run unit tests for stroke progression, zero-ink start, complete final paths, easing, cue matching and independent math. Render the actual MP4. Fully decode it, validate duration/resolution/fps/audio, check every frame's text and shape bounds, glyph-core highlight colours, caption coverage and audio drift. Measure motion in the illustration region separately from captions and decorative progress elements. Produce contact sheets with scene early/mid/late samples and scene/caption boundary frames. Inspect the actual images for clipping, spelling, blank/frozen assets, readable values and transitions; repair and rerender when needed.
+
+Review the complete video and listen when available. Record subjective playback, independent phonetic alignment, physical phone/older-viewer checks as incomplete if not performed. Bind reports to the final MP4 hash; a renderer exit code does not prove quality. Deliver MP4, WAV, script, word timings/SRT, editable SVGs/cast/strokes, timeline, calculations, original-effect audio, sources/licenses, reproduction files, contact sheets, metadata and limitations. Verify archive integrity and embedded video hash. Do not upload or publish without separate authorization.

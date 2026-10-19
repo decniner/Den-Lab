@@ -1,0 +1,15 @@
+{
+  "currency": "USD",
+  "principal": 10000000,
+  "simple_annual_rate": 0.05,
+  "years": 1,
+  "annual_interest": 500000,
+  "principal_end": 10000000,
+  "total_due_after_one_unpaid_year": 10500000,
+  "initial_portfolio": 20000000,
+  "initial_loan_to_value": 0.5,
+  "illustrative_growth_value": 26000000,
+  "illustrative_crash_value": 12000000,
+  "final_principal_to_value": 0.8333333333333334,
+  "assumptions": "Hypothetical simple annual interest, one year, no fees, payments, added borrowing or compounding. Principal remains $10M; total owed after an unpaid year is $10.5M. Chart labels principal only, not total liability, and its illustrative prices have no specified time horizon. Asset values are not forecasts. No lender eligibility or universal loan limit implied."
+}

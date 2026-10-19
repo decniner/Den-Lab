@@ -1,0 +1,4 @@
+interface:
+  display_name: "youtube-createsg1"
+  short_description: "Create premium painterly drawing explainer videos"
+  default_prompt: "Use $youtube-createsg1 to create a narrated Studio Ghibli-inspired drawing explainer from my brief."

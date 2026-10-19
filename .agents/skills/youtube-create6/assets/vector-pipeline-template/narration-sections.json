@@ -1,0 +1,68 @@
+[
+  {
+    "start": 0,
+    "end": 5.61,
+    "text": "Borrowing against shares can fund spending without selling them. But a loan is still debt.",
+    "speed": 0.98,
+    "raw_duration": 6.225,
+    "trim_left_seconds": 0.23,
+    "trim_right_seconds": 0.385,
+    "acoustic_threshold_dbfs": -66.02059991327963,
+    "pause_after_seconds": 0.25
+  },
+  {
+    "start": 5.86,
+    "end": 11.22,
+    "text": "Imagine twenty million dollars in shares, securing a ten million dollar loan.",
+    "speed": 0.98,
+    "raw_duration": 5.975,
+    "trim_left_seconds": 0.21,
+    "trim_right_seconds": 0.405,
+    "acoustic_threshold_dbfs": -66.02059991327963,
+    "pause_after_seconds": 0.25
+  },
+  {
+    "start": 11.47,
+    "end": 20.67,
+    "text": "At a hypothetical five percent simple annual interest rate, one year costs five hundred thousand dollars. No fees or repayments.",
+    "speed": 0.96,
+    "raw_duration": 9.775,
+    "trim_left_seconds": 0.22,
+    "trim_right_seconds": 0.355,
+    "acoustic_threshold_dbfs": -66.02059991327963,
+    "pause_after_seconds": 0.25
+  },
+  {
+    "start": 20.92,
+    "end": 27.98,
+    "text": "Higher stock values do not erase the debt. Falling collateral can trigger a maintenance call and forced selling.",
+    "speed": 0.98,
+    "raw_duration": 7.675,
+    "trim_left_seconds": 0.21,
+    "trim_right_seconds": 0.405,
+    "acoustic_threshold_dbfs": -66.02059991327963,
+    "pause_after_seconds": 0.25
+  },
+  {
+    "start": 28.23,
+    "end": 37.2,
+    "text": "Under United States rules, inherited property generally receives a basis linked to its value at death. Exceptions matter.",
+    "speed": 0.96,
+    "raw_duration": 9.6,
+    "trim_left_seconds": 0.23,
+    "trim_right_seconds": 0.4,
+    "acoustic_threshold_dbfs": -66.02059991327963,
+    "pause_after_seconds": 0.25
+  },
+  {
+    "start": 37.45,
+    "end": 45.68000000000001,
+    "text": "Buy, borrow, die is the nickname. The debt survives. This animation demonstrates the mechanics, not a strategy to copy.",
+    "speed": 0.98,
+    "raw_duration": 8.85,
+    "trim_left_seconds": 0.24,
+    "trim_right_seconds": 0.38,
+    "acoustic_threshold_dbfs": -66.02059991327963,
+    "pause_after_seconds": 0
+  }
+]

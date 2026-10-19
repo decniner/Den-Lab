@@ -1,0 +1,12 @@
+{
+  "engine": "Kokoro native PyTorch CPU",
+  "voice": "bm_george",
+  "language": "British English",
+  "base_speed": 0.98,
+  "amount_sections_speed": 0.96,
+  "duration": 45.68,
+  "peak": 0.3789008855819702,
+  "timing_source": "Native predicted phoneme durations shifted after logged outer-padding trims; ends capped to acoustic section end",
+  "subjective_listening_verified": false,
+  "new_spending": 0
+}

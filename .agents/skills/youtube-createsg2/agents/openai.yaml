@@ -1,0 +1,4 @@
+interface:
+  display_name: "YouTube Create SG2"
+  short_description: "Distinct painterly scenes for narrated documentaries"
+  default_prompt: "Use $youtube-createsg2 to create a complete narrated video with unique premium Ghibli-inspired paintings and very few painted diagrams."
