@@ -262,13 +262,13 @@
     "toffyjapan:10095229698322:51142584566034": {
       "sale_price": "1800",
       "reference_price": "3960",
-      "sent_at": "2026-10-12T09:53:03+09:00",
+      "sent_at": "2026-10-20T09:51:40+09:00",
       "url": "https://toffy.jp/products/hw-ds2?variant=51142584566034"
     },
     "toffyjapan:8927557124370:47553536983314": {
       "sale_price": "1500",
       "reference_price": "3300",
-      "sent_at": "2026-10-12T09:53:03+09:00",
+      "sent_at": "2026-10-20T09:51:40+09:00",
       "url": "https://toffy.jp/products/tb04-fb?variant=47553536983314"
     },
     "toffyjapan:9036284985618:47879276134674": {
@@ -442,7 +442,7 @@
     "saucony-jp:8596869218456:45827081666712": {
       "sale_price": "14025",
       "reference_price": "28050",
-      "sent_at": "2026-10-06T11:03:34+09:00",
+      "sent_at": "2026-10-20T09:51:40+09:00",
       "url": "https://saucony.jp/products/progrid-triumph-4-n02?variant=45827081666712"
     },
     "saucony-jp:8596860502168:45827000467608": {
@@ -768,12 +768,18 @@
       "reference_price": "28600",
       "sent_at": "2026-10-18T08:40:27+09:00",
       "url": "https://boardriders.co.jp/products/eqytp03225?variant=52412814623001"
+    },
+    "ecoflow:8095101517985:51971819471215": {
+      "sale_price": "85660",
+      "reference_price": "182600",
+      "sent_at": "2026-10-20T09:51:40+09:00",
+      "url": "https://jp.ecoflow.com/products/delta-3-portable-power-station?variant=51971819471215"
     }
   },
   "last_digest": {
-    "date": "2026-10-19",
-    "coverage_key": "24c4dfebad9d82ba6aace62a8bc77f3a5881788011de7fd341f5a901667df970",
-    "completed_at": "2026-10-19T08:51:25+09:00",
-    "digest_hash": "62aeeeb717d64258f4db89f716cab665b1f530fbec6850dc85158852d7f0528a"
+    "date": "2026-10-20",
+    "coverage_key": "38759484cf56af76b2bd61a0f4529a27a72133f75882f94556cfaeba15295cec",
+    "completed_at": "2026-10-20T09:51:40+09:00",
+    "digest_hash": "5bfc6c9232e0012d2db96899b3ae81f31a2e0a981ad69319eee8d54518727661"
   }
 }
