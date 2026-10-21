@@ -64,21 +64,182 @@ function updatePlaceDialogSave(place) {
   button.setAttribute('aria-label', `${isSaved ? 'Remove' : 'Save'} ${place.name}`);
 }
 
-function showPlace(place, index) {
-  const image = document.querySelector('#place-dialog-image');
-  image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
-  image.alt = place.alt;
-  document.querySelector('#place-dialog-number').textContent = String(index + 1).padStart(2, '0');
-  document.querySelector('#place-dialog-region').textContent = `${place.region} / JAPAN FIELD GUIDE`;
-  document.querySelector('#place-dialog-title').textContent = place.name;
-  document.querySelector('#place-dialog-area').textContent = place.place;
-  document.querySelector('#place-dialog-description').textContent = place.description;
-  const tags = document.querySelector('#place-dialog-tags');
-  tags.replaceChildren(...place.tags.map(tag => { const pill = document.createElement('span'); pill.textContent = tag; return pill; }));
-  updatePlaceDialogSave(place);
-  document.querySelector('#place-dialog-save').onclick = () => toggleSavedPlace(place);
-  placeDialog.showModal();
+const PLACE_SPOTLIGHTS = {
+  'Tokyo Disney Resort': {
+    address:'1-1 Maihama, Urayasu-shi, Chiba-ken', officialUrl:'https://www.japan.travel/en/spot/1556/',
+    story:'Tokyo Disneyland and Tokyo DisneySea are two distinct parks connected by the Maihama resort. The main choice is whether you want classic storybook lands, DisneySea\'s waterfront worlds, or enough time to experience both across separate days.',
+    access:'JR Keiyo Line to Maihama Station is the easiest rail arrival. The parks are a short walk from the station; airport buses also serve the resort.',
+    points:['Tokyo Disneyland','Tokyo DisneySea','JR Maihama Station']
+  },
+  'Super Nintendo World': {
+    address:'2-1-33 Sakurajima, Konohana-ku, Osaka-shi, Osaka-fu', officialUrl:'https://www.japan.travel/en/spot/1111/',
+    story:'This game-inspired land sits inside Universal Studios Japan. The Mario Kart attraction and interactive details reward a slower look between rides; plan the park ticket and any timed-area entry before arriving.',
+    access:'Take the JR Yumesaki Line to Universal City Station, then walk to the park. JNTO lists about 11 minutes by train from Osaka Station.',
+    points:['Super Nintendo World entrance','Mario Kart: Koopa\'s Challenge','Universal City Station']
+  },
+  'Fuji-Q Highland': {
+    address:'5-6-1 Shin-Nishihara, Fujiyoshida-shi, Yamanashi-ken', officialUrl:'https://www.japan.travel/en/spot/1332/',
+    story:'Fuji-Q pairs major coasters with close views of Mount Fuji. Fujiyama, Takabisha, and Eejanaika are headline rides, while Thomas Land offers a gentler family area. Check the ride calendar and Fuji visibility before choosing the day.',
+    access:'From Tokyo, take the Chuo Line to Otsuki and transfer to the Fujikyu Line for Fujikyu-Highland Station. Direct highway buses also run from Shinjuku.',
+    points:['Fujiyama coaster','Takabisha coaster','Thomas Land']
+  },
+  'Ghibli Park': {
+    address:'Expo 2005 Aichi Commemorative Park, 1533-1 Ibaragabasama, Nagakute-shi, Aichi-ken', officialUrl:'https://www.japan.travel/en/spot/2072/',
+    story:'Ghibli Park spreads its film-inspired spaces through Expo 2005 Aichi Commemorative Park. Give the areas time between visits: Ghibli\'s Grand Warehouse, Hill of Youth, Dondoko Forest, Mononoke Village, and Valley of Witches each have their own atmosphere.',
+    access:'From Nagoya, take the Higashiyama Subway Line to Fujigaoka, then Linimo to Ai-Chikyuhaku-Kinen-Koen Station. Check current ticket and parking details on the official visitor page before travelling.',
+    points:['Ghibli\'s Grand Warehouse','Hill of Youth','Dondoko Forest','Valley of Witches']
+  },
+  'Tokyo Skytree': {
+    address:'1-1-2 Oshiage, Sumida-ku, Tokyo-to', officialUrl:'https://www.japan.travel/en/spot/1680/',
+    story:'The observatories make the skyline the main event: Tembo Deck at 350 metres and Tembo Galleria at 450 metres. Tokyo Solamachi, Sumida Aquarium, and the riverside walk add easy stops at ground level.',
+    access:'Arrive at Tokyo Skytree Station on the Tobu Skytree Line or Oshiage Station by subway and Keisei lines. The observatory entrance is inside Tokyo Skytree Town.',
+    points:['Tembo Deck','Tembo Galleria','Tokyo Solamachi','Sumida Aquarium']
+  },
+  'Tokyo Tower': {
+    address:'4-2-8 Shibakoen, Minato-ku, Tokyo-to', officialUrl:'https://www.japan.travel/en/spot/1709/',
+    story:'See the red-and-white tower from Shiba Park, then head up to the Main Deck or Top Deck for a different scale of Tokyo. Zojoji Temple and Shiba Park sit nearby and make a rewarding walk before or after sunset.',
+    access:'Onarimon, Kamiyacho, and Akabanebashi stations are each about a five-minute walk, depending on the exit and route. Hamamatsucho Station is roughly a 15-minute walk.',
+    points:['Tokyo Tower Main Deck','Tokyo Tower Top Deck','Zojoji Temple','Shiba Park']
+  },
+  'Kinkaku-ji, the Golden Pavilion': {
+    address:'1 Kinkakujicho, Kita-ku, Kyoto-shi, Kyoto-fu', officialUrl:'https://www.japan.travel/en/spot/1152/',
+    story:'The Golden Pavilion is best read from the garden path as it appears across Kyoko-chi Pond. Continue through the mossy garden and teahouse grounds; the reflected view changes with light, weather, and season.',
+    access:'From Kyoto Station, take Kyoto City Bus 205 to Kinkakuji-michi, then walk to the temple entrance. Check current admission details before setting out.',
+    points:['Golden Pavilion','Kyoko-chi Pond','Rokuon-ji garden']
+  },
+  'Osaka Aquarium Kaiyukan': {
+    address:'1-1-10 Kaigandori, Minato-ku, Osaka-shi, Osaka-fu', officialUrl:'https://www.japan.travel/en/spot/1113/',
+    story:'The visitor route spirals around the central Pacific tank, with whale sharks as the signature sight. Look for the Arctic seals and penguins as well, then continue to Tempozan Market Place or the giant Ferris wheel for a full bay-side outing.',
+    access:'Take the Chuo Subway Line to Osakako Station; the aquarium is about a five-minute walk. A short ferry also connects Universal City Port with the Tempozan area.',
+    points:['Pacific Ocean tank','Arctic zone','Tempozan Market Place','Tempozan Giant Ferris Wheel']
+  },
+  'Fukuoka Tower': {
+    address:'2-3-3 Momochihama, Sawara-ku, Fukuoka-shi, Fukuoka-ken', officialUrl:'https://www.japan.travel/en/spot/2256/',
+    story:'The mirrored seaside tower has three observation decks, with the highest looking across Fukuoka and Hakata Bay. Pair the view with a walk through Momochi Seaside Park and time your visit for the evening illuminations.',
+    access:'Buses 306 from Hakata Station and 302 from Tenjin stop at Fukuoka Tower. Nishijin Subway Station is about a 20-minute walk away.',
+    points:['Fukuoka Tower observation decks','Momochi Seaside Park','Fukuoka City Museum']
+  },
+  'Kumamoto Castle': {
+    address:'1-1 Honmaru, Chuo-ku, Kumamoto-shi, Kumamoto-ken', officialUrl:'https://www.japan.travel/en/spot/638/',
+    story:'Start at the reconstructed main keep, then follow the visitor route along the immense stone ramparts and restored Honmaru Goten Palace. Restoration work continues after the 2016 earthquakes, so check the current open areas before visiting.',
+    access:'From JR Kumamoto Station, take the tram to Kumamotojo-mae; the ride takes about 17 minutes, followed by a walk. The central location also makes a walk from downtown straightforward.',
+    points:['Castle main keep','Honmaru Goten Palace','Ninomaru Park','Sakura-no-baba Josaien']
+  }
+};
+
+const galleryCache = new Map();
+let placeDialogRequest = 0;
+
+function placeMapSearch(queryText) {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(queryText)}`;
 }
+function externalAnchor(label, url, className='') {
+  const link=document.createElement('a'); link.textContent=label; link.href=url; link.target='_blank'; link.rel='noopener noreferrer';
+  if(className) link.className=className;
+  return link;
+}
+function googleSearchUrl(queryText) { return `https://www.google.com/search?q=${encodeURIComponent(queryText)}`; }
+function placeStory(place, spotlight) {
+  if(spotlight) return spotlight.story;
+  const notes=[];
+  if(place.tags.includes('Nature')) notes.push('Choose one marked trail or viewpoint as your anchor, and check local weather and seasonal access before setting out.');
+  if(place.tags.includes('Culture')) notes.push('Give the main site time: notice its defining architecture, garden, or local tradition, and check entry hours and visitor guidance before arrival.');
+  if(place.tags.includes('Islands')) notes.push('Confirm ferry or flight times and leave a weather buffer for the return journey.');
+  if(place.tags.includes('Food')) notes.push('Explore the surrounding neighborhood on foot and check opening days or reservations for the places you want to try.');
+  if(place.tags.includes('Slow travel')) notes.push('Keep the day open enough for local transport, changing conditions, and an unplanned stop.');
+  return notes.slice(0,3).join(' ');
+}
+function renderPlacePoints(place, spotlight) {
+  const list=document.querySelector('#place-dialog-points');
+  const points=spotlight?.points?.length ? spotlight.points : [place.name, `Nearby sights around ${place.name}`];
+  list.replaceChildren(...points.map(point=>{const li=document.createElement('li');li.append(externalAnchor(point,placeMapSearch(`${point}, ${place.place}`)));return li;}));
+  const address=spotlight?.address || `${place.name}, ${place.place}`;
+  document.querySelector('#place-dialog-address-label').textContent=spotlight?.address ? 'VISITOR ADDRESS' : 'EXACT MAP PIN';
+  const addressLink=document.querySelector('#place-dialog-address');
+  addressLink.textContent=address; addressLink.href=placeMapSearch(address);
+}
+function renderPlaceRoutes(place) {
+  const destination=`${place.name}, ${place.place}`;
+  const directions=mode=>`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}&travelmode=${mode}`;
+  const routes=[
+    ['By car','Open a driving route',directions('driving')],
+    ['By train / transit','Open public-transit directions',directions('transit')],
+    ['By bus','Search current bus access',googleSearchUrl(`${place.name} ${place.place} bus access`)],
+    ['By air','Search flights to the area',`https://www.google.com/travel/flights?q=${encodeURIComponent(`flights to ${place.place}`)}`]
+  ];
+  document.querySelector('#place-dialog-routes').replaceChildren(...routes.map(([title,detail,url])=>{const link=externalAnchor('',url,'place-route');const strong=document.createElement('strong');strong.textContent=title;const span=document.createElement('span');span.textContent=detail;link.append(strong,span);return link;}));
+}
+function cleanAttribution(value) {
+  if(!value) return '';
+  return new DOMParser().parseFromString(String(value),'text/html').body.textContent.replace(/\s+/g,' ').trim();
+}
+async function findCommonsPhotos(place) {
+  const cacheKey=`${place.name}|${place.place}`;
+  if(galleryCache.has(cacheKey)) return galleryCache.get(cacheKey);
+  const params=new URLSearchParams({action:'query',generator:'search',gsrsearch:`${place.name} ${place.place}`,gsrnamespace:'6',gsrlimit:'16',prop:'imageinfo',iiprop:'url|extmetadata',iiurlwidth:'1000',format:'json',origin:'*'});
+  const response=await fetch(`https://commons.wikimedia.org/w/api.php?${params.toString()}`);
+  if(!response.ok) throw new Error('photo search unavailable');
+  const payload=await response.json();
+  const skip=/logo|map|flag|icon|diagram|poster|coat of arms|route map|location map|illustration|drawing/i;
+  const photos=Object.values(payload.query?.pages||{}).map(page=>{
+    const info=page.imageinfo?.[0], meta=info?.extmetadata||{};
+    return info?.thumburl ? {title:page.title.replace(/^File:/,''),url:info.thumburl,source:info.descriptionurl,artist:cleanAttribution(meta.Artist?.value),license:cleanAttribution(meta.LicenseShortName?.value)||'See license details'} : null;
+  }).filter(photo=>photo && !skip.test(photo.title) && /\.(jpe?g|png|webp)$/i.test(photo.title));
+  const unique=photos.filter((photo,index)=>photos.findIndex(other=>other.url===photo.url)===index).slice(0,3);
+  galleryCache.set(cacheKey,unique);
+  return unique;
+}
+function renderPlaceGallery(photos, requestId, place) {
+  if(requestId!==placeDialogRequest) return;
+  const gallery=document.querySelector('#place-dialog-gallery');
+  const status=document.querySelector('#place-dialog-gallery-status');
+  if(!photos.length){status.textContent='No additional photographs are available right now. Use the photo search to browse more.';gallery.replaceChildren();return;}
+  status.textContent=`${photos.length} additional ${photos.length===1?'photograph':'photographs'} from Wikimedia Commons. Credits and licenses are shown with each image.`;
+  gallery.replaceChildren(...photos.map(photo=>{
+    const figure=document.createElement('figure');figure.className='place-gallery-photo';
+    const link=externalAnchor('',photo.source||photo.url);link.className='place-gallery-image';
+    const image=document.createElement('img');image.src=photo.url;image.alt=`${photo.title} - ${place.name}`;image.loading='lazy';image.addEventListener('error',()=>figure.remove(),{once:true});link.append(image);
+    const caption=document.createElement('figcaption');
+    const title=document.createElement('span');title.textContent=photo.title;
+    const credit=document.createElement('small');credit.textContent=[photo.artist,photo.license].filter(Boolean).join(' / ');
+    caption.append(title,credit);figure.append(link,caption);return figure;
+  }));
+}
+async function loadPlaceGallery(place, requestId) {
+  const status=document.querySelector('#place-dialog-gallery-status');
+  const gallery=document.querySelector('#place-dialog-gallery');
+  status.textContent='Finding more photographs for this place...';gallery.replaceChildren();
+  try { renderPlaceGallery(await findCommonsPhotos(place),requestId,place); }
+  catch { if(requestId===placeDialogRequest) status.textContent='Photo search is temporarily unavailable. Use the photo search to browse more.'; }
+}
+function showPlace(place, index) {
+  const requestId=++placeDialogRequest;
+  const spotlight=PLACE_SPOTLIGHTS[place.name];
+  const image=document.querySelector('#place-dialog-image');
+  image.src=`https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
+  image.alt=place.alt;
+  document.querySelector('#place-dialog-number').textContent=String(index+1).padStart(2,'0');
+  document.querySelector('#place-dialog-region').textContent=`${place.region} / JAPAN FIELD GUIDE`;
+  document.querySelector('#place-dialog-title').textContent=place.name;
+  document.querySelector('#place-dialog-area').textContent=place.place;
+  document.querySelector('#place-dialog-description').textContent=place.description;
+  document.querySelector('#place-dialog-story').textContent=placeStory(place,spotlight);
+  const tags=document.querySelector('#place-dialog-tags');
+  tags.replaceChildren(...place.tags.map(tag=>{const pill=document.createElement('span');pill.textContent=tag;return pill;}));
+  renderPlacePoints(place,spotlight);
+  renderPlaceRoutes(place);
+  document.querySelector('#place-dialog-access-note').textContent=spotlight?.access || 'Route links open current map directions and transport searches for this exact place. Check seasonal schedules and local visitor notices before travelling.';
+  const photoQuery=`${place.name} ${place.place}`;
+  document.querySelector('#place-dialog-photo-search').href=`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(photoQuery)}`;
+  document.querySelector('#place-dialog-youtube').href=`https://www.youtube.com/results?search_query=${encodeURIComponent(`${place.name} ${place.place} travel walk`)}`;
+  const official=document.querySelector('#place-dialog-official');
+  official.href=spotlight?.officialUrl || googleSearchUrl(`site:japan.travel/en/ ${place.name} ${place.place}`);
+  document.querySelector('#place-dialog-save').onclick=()=>toggleSavedPlace(place);
+  updatePlaceDialogSave(place);
+  placeDialog.showModal();
+  loadPlaceGallery(place,requestId);
+}
+document.querySelector('#place-dialog-close').addEventListener('click',()=>placeDialog.close());
 
 function renderDestinations() {
   const normalized = query.trim().toLocaleLowerCase();
