@@ -1,33 +1,43 @@
 # Somewhere in Japan
 
-A cinematic, responsive field guide to 150 memorable places across Japan's nine regions, with a Tokyo-based day-trip field desk and five detailed, route-tested Tokyo day trips plus a 150-place nationwide guide.
+A responsive, editorial field atlas to 150 memorable places across Japan?s nine regions, with a separate, practical Tokyo day-trip planner.
 
-## Preview
+## Preview locally
 
-Open `index.html` in a modern browser. If your browser restricts local files, run a static server from this folder, such as `npx serve .`.
+From this directory, run:
+
+```powershell
+python -m http.server 8000
+```
+
+Then open http://localhost:8000/SomeWhereInJapan/ (or serve this directory directly and open /). The project is static HTML, CSS, and JavaScript; no build step or runtime API is required.
+
+## What is included
+
+- An editorial introduction and interactive map with all nine regions and direct story picks.
+- A Tokyo day-trip planner with month, budget, pace, transport preference, route comparison, linked field notes, save/share, and deep-link support.
+- A searchable 150-place destination archive with region and experience filters, month-aware recommendations, and local-find selections.
+- Five expanded Tokyo-area day-trip guides with specific stops, access notes, locator diagrams, sourced facts, and more reading.
+- A sitemap at /sitemap.xml.
+
+The five day-trip guides are a curated pilot set; their route cards use sourced estimates for one adult departing Tokyo Station. They are not live timetables, fares, or reservations. Nationwide destination stories include visitor-planning links, but do not claim a verified complete travel itinerary for all 150 places. Current hours, access and conditions should be confirmed with the linked destination sources.
 
 ## Content and imagery
 
-The destination collection loads from `destinations.js` and `destination-expansion.js`, for 150 unique places across all nine regions. The 40 added entries include major theme parks, museums, castles, city landmarks, hot springs, and natural sites. Each includes month-aware editorial guidance and a distinctive illustrated visual while verified photography is curated. The full search and month planner include these places. The Tokyo day-trip desk remains five researched, cost-estimated routes; it is not presented as pricing or route research for all 150 destinations. The destination collection is in `destinations.js`; search, region filters, device-local saved places, and shareable region links render from that data. Destination and experience photography is served from Unsplash using image IDs. The Kyoto Fushimi Inari and Miyajima Itsukushima images are verified against their pictured landmarks. The hero image is `photo-1743731852847-044ec22a00bc`; destination records list Unsplash as source. Image availability and licensing terms are governed by the source provider. Replace with licensed local assets before redistribution if your publishing policy requires it. Image cards retain a styled fallback when a remote image cannot load.
+Destination records are in `destinations.js`. The experience uses Unsplash image IDs from the existing project data; each image is remotely hosted and can fail to load. Story pages use credited Wikimedia Commons photographs where available and labeled schematic illustrations elsewhere. Confirm the applicable source and reuse terms before distributing image assets outside the hosted page. The Japan region map is generated from Natural Earth 10m cultural vectors; Natural Earth map data is public domain. The small projection/build script is `map-builder.mjs`.
 
-Planning links point to Japan National Tourism Organization guides. No live schedules, prices, reservations, or booking claims are provided.
+## Verification
 
-## Japan map
+Run the focused local checks from this project folder:
 
-The regional map uses coastlines from Natural Earth 10m cultural vectors. Natural Earth map data is public domain; see [Natural Earth's terms](https://www.naturalearthdata.com/about/terms-of-use/). `map-builder.mjs` documents the small projection and SVG generation step; no runtime data download is required.
+```powershell
+node --check app.js
+node --check atlas-ui.js
+node --check daytrip-app.js
+node --check daytrip-core.js
+node --test tests/*.test.cjs
+```
 
-## Published site
+The contest redesign was assessed against the project brief?s own editorial, usefulness, originality, accessibility, and completeness criteria. No official competition judging rubric or outcome is represented here.
 
-https://decniner.github.io/Den-Lab/SomeWhereInJapan/index.html
-
-## Month-by-month planning
-
-The destination guide offers month-specific place suggestions and flexible trip-length guidance. Seasonal windows can shift by region and year; confirm current conditions and forecasts before travel.
-
-## Tokyo day-trip field desk
-
-The day-trip finder starts estimates at Tokyo Station and filters five locally stored pilot routes (Kawagoe, Sawara, Mount Mitake, Narita and Odawara) by month, half/full-day time window, public transport/car availability, yen budget and interest. It presents ranges, not live fares or schedules. Estimates include listed transport, planned admission and a ¥1,500–¥2,500 meal allowance; they exclude lodging and optional purchases. Route sources and check dates are on each field note. Confirm current fares, opening days, trail/weather conditions and return service with the linked operators before leaving.
-
-Compare two or three routes, save the current choices in this browser, share a link that restores the choices, or use browser print. Saved plans stay on the current device. Unsupported car routes are intentionally omitted from matching rather than priced without research. Some route pages use CSS editorial artwork instead of unverified destination photography; verified photo credits appear on the specific record.
-
-Focused checks: `node --test-isolation=none --test tests/daytrip-core.test.cjs` and `node --check daytrip-core.js`, `node --check daytrips.js`, `node --check daytrip-app.js`.
+Published address (current hosted version): https://decniner.github.io/Den-Lab/SomeWhereInJapan/index.html

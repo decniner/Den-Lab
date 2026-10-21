@@ -33,7 +33,8 @@
       transport: source.transport === 'car' || source.transport === 'public' ? source.transport : DEFAULTS.transport,
       budget: Number.isFinite(budget) && budget >= 0 ? Math.min(Math.round(budget), 100000) : DEFAULTS.budget,
       interest: INTERESTS.has(source.interest) ? source.interest : DEFAULTS.interest,
-      compareIds: uniqueKnownIds(source.compareIds, validIds || [])
+      compareIds: uniqueKnownIds(source.compareIds, validIds || []),
+      selectedId: typeof source.selectedId === 'string' && (validIds || []).includes(source.selectedId) ? source.selectedId : null
     };
   }
 
@@ -129,18 +130,21 @@
       transport: params.get('transport'),
       budget: rawBudget === null ? NaN : Number(rawBudget),
       interest: params.get('interest'),
-      compareIds: tripIds
+      compareIds: tripIds,
+      selectedId: params.get('selected')
     }, validIds);
   }
 
   function buildShareUrl(baseUrl, state) {
     const url = new URL(baseUrl);
-    const safe = sanitizeState(state, state && state.compareIds);
+    const safe = sanitizeState(state, [...(state && state.compareIds || []), state && state.selectedId].filter(Boolean));
     url.searchParams.set('month', String(safe.month));
     url.searchParams.set('time', safe.time);
     url.searchParams.set('transport', safe.transport);
     url.searchParams.set('budget', String(safe.budget));
     url.searchParams.set('interest', safe.interest);
+    if (safe.selectedId) url.searchParams.set('selected', safe.selectedId);
+    else url.searchParams.delete('selected');
     url.searchParams.delete('trip');
     safe.compareIds.forEach((id) => url.searchParams.append('trip', id));
     return url.toString();
@@ -148,7 +152,7 @@
 
   function savePlan(storage, state) {
     try {
-      const safe = sanitizeState(state, state && state.compareIds);
+      const safe = sanitizeState(state, [...(state && state.compareIds || []), state && state.selectedId].filter(Boolean));
       storage.setItem(STORAGE_KEY, JSON.stringify(safe));
       return true;
     } catch (_error) {

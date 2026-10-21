@@ -42,6 +42,37 @@ const LOCAL_FIND_DETAILS = {
   'Tottori\u2019s shifting dunes': {spot:'Umanose · the “Horse’s Back” dune ridge', query:'Umanose, Tottori Sand Dunes, Tottori', story:'At Umanose, the dune rises like a long ridge between the visitor and the sea. Climb its soft slope and the Sea of Japan appears beyond the crest; below, wind has combed the sand into patterns that will be gone by tomorrow. These dunes are always moving, shaped by river sediment, currents, and coastal wind over thousands of years.', source:'https://www.japan.travel/en/spot/949/'},
   'Oshino Hakkai and Fuji views': {spot:'Waku Pond and the traditional waterwheel lanes', query:'Waku Pond, Oshino Hakkai, Yamanashi', story:'Oshino’s eight spring-fed ponds are part of a village landscape, not isolated viewpoints. At Waku Pond, look through exceptionally clear water to the stones below, then follow the narrow lanes past thatched roofs and turning waterwheels. On a clear day, Mt. Fuji completes the view beyond the rooftops. The springs are fed by water that travels underground from the mountain.', source:'https://www.japan.travel/en/spot/1327/'}
 };
+function renderRegionSpotlight(region) {
+  const places = DESTINATIONS.filter(place => region === 'All places' || place.region === region);
+  const title = document.querySelector('#region-spotlight-name');
+  const count = document.querySelector('#region-spotlight-count');
+  const copy = document.querySelector('#region-spotlight-copy');
+  const link = document.querySelector('#region-spotlight-link');
+  if (!title || !count || !copy || !link) return;
+  title.textContent = region === 'All places' ? 'Choose a region' : region;
+  count.textContent = region === 'All places' ? 'YOUR STARTING POINT' : `${String(places.length).padStart(2,'0')} PLACES IN THIS REGION`;
+  copy.textContent = region === 'All places'
+    ? 'Nine regions, from Hokkaido’s northern forests to Okinawa’s subtropical islands. Pick a number on the map or use the list.'
+    : places[0]?.description || 'Browse the places, stories and seasonal notes in this region.';
+  link.textContent = region === 'All places' ? 'Browse all 150 places ↗' : `Explore ${places.length} ${region} places ↗`;
+  link.href = '#destinations';
+  link.setAttribute('aria-label', region === 'All places' ? 'Browse all 150 places' : `Browse ${places.length} places in ${region}`);
+  const picks = document.querySelector('#region-spotlight-picks');
+  if (picks) {
+    const choices = region === 'All places' ? [...new Map(DESTINATIONS.map(place => [place.region, place])).values()].slice(0, 3) : places.slice(0, 3);
+    picks.replaceChildren(...choices.map(place => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'region-pick';
+      button.innerHTML = '<span></span><b></b><i aria-hidden="true">?</i>';
+      button.querySelector('span').textContent = place.region;
+      button.querySelector('b').textContent = place.name;
+      button.setAttribute('aria-label', `Open the story for ${place.name} in ${place.region}`);
+      button.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
+      return button;
+    }));
+  }
+}
 const saved = new Set(readSaved());
 
 function readSaved() {
@@ -64,6 +95,7 @@ function renderFilters() {
     button.addEventListener('click', () => {
       activeRegion = region;
       renderFilters();
+      renderRegionSpotlight(region);
       renderDestinations();
     });
     return button;
@@ -570,12 +602,19 @@ renderFilters();
 updateLocalFindsUI();
 renderDestinations();
 updateSavedUI();
-document.querySelectorAll('[data-map-region]').forEach(link => link.addEventListener('click', () => {
-  activeRegion = link.dataset.mapRegion;
-  renderFilters(); renderDestinations();
-}));
+document.querySelectorAll('[data-map-region]').forEach(link => {
+  const selectRegion = () => {
+    activeRegion = link.dataset.mapRegion;
+    renderFilters(); renderRegionSpotlight(activeRegion); renderDestinations();
+  };
+  link.addEventListener('click', event => {
+    if (link.tagName.toLowerCase() !== 'a') event.preventDefault();
+    selectRegion();
+  });
+});
 const initialRegion = decodeURIComponent(window.location.hash.replace(/^#region=/, ''));
-if (REGIONS.includes(initialRegion)) { activeRegion = initialRegion; renderFilters(); renderDestinations(); }
+if (REGIONS.includes(initialRegion)) { activeRegion = initialRegion; renderFilters(); renderRegionSpotlight(activeRegion); renderDestinations(); }
+else renderRegionSpotlight(activeRegion);
 document.querySelector('#place-dialog-close').addEventListener('click', () => placeDialog.close());
 placeDialog.addEventListener('click', event => { if (event.target === placeDialog) placeDialog.close(); });
 
