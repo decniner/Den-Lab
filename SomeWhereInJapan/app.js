@@ -416,8 +416,12 @@ savedToggle.addEventListener('click', () => { savedOnly = !savedOnly; updateSave
 document.querySelector('#share-guide').addEventListener('click', async event => {
   const button = event.currentTarget;
   const url = new URL(window.location.href);
+  url.searchParams.set('month', monthSelect.value);
+  url.searchParams.set('days', tripLengthSelect.value);
+  url.searchParams.set('region', journeyRegionSelect.value);
+  url.searchParams.set('style', journeyStyleSelect.value);
   if (activeRegion !== 'All places') url.hash = `region=${encodeURIComponent(activeRegion)}`;
-  const shareData = {title: 'Somewhere in Japan', text: 'Find a place that feels like yours.', url: url.href};
+  const shareData = {title: 'My Japan, my way', text: 'A season-shaped Japan shortlist, made for this trip.', url: url.href};
   try {
     if (navigator.share) await navigator.share(shareData);
     else { await navigator.clipboard.writeText(url.href); button.innerHTML = 'Link copied <span>✓</span>'; setTimeout(() => { button.innerHTML = 'Share this guide <span>↗</span>'; }, 2200); }
@@ -459,8 +463,15 @@ const MONTH_EXTRA_PLACES = [
 ];
 const monthSelect = document.querySelector('#travel-month');
 const tripLengthSelect = document.querySelector('#trip-length');
+const journeyRegionSelect = document.querySelector('#journey-region');
+const journeyStyleSelect = document.querySelector('#journey-style');
 monthSelect.replaceChildren(...MONTHS.map((month, index) => { const option = document.createElement('option'); option.value = String(index); option.textContent = month; return option; }));
-monthSelect.value = String(new Date().getMonth());
+const sharedPlan = new URLSearchParams(window.location.search);
+const requestedMonth = Number(sharedPlan.get('month'));
+monthSelect.value = sharedPlan.has('month') && requestedMonth >= 0 && requestedMonth < 12 ? String(requestedMonth) : String(new Date().getMonth());
+if (['short','week','long'].includes(sharedPlan.get('days'))) tripLengthSelect.value = sharedPlan.get('days');
+if ([...journeyRegionSelect.options].some(option => option.value === sharedPlan.get('region'))) journeyRegionSelect.value = sharedPlan.get('region');
+if ([...journeyStyleSelect.options].some(option => option.value === sharedPlan.get('style'))) journeyStyleSelect.value = sharedPlan.get('style');
 function getPlacesForMonth(monthIndex) {
   return new Set([...MONTH_GUIDE[monthIndex].places, ...MONTH_EXTRA_PLACES[monthIndex]].map(([name]) => name));
 }
@@ -483,7 +494,9 @@ function renderMonthGuide() {
   if (monthSearchEnabled) { visibleLimit = 12; renderDestinations(); }
   document.querySelector('#month-name-heading').textContent = MONTHS[monthIndex];
   document.querySelector('#month-summary').textContent = guide.summary;
-  document.querySelector('#month-timing-note').textContent = guide.note;
+  document.querySelector('#month-timing-note').textContent = journeyStyleSelect.value === 'local'
+    ? `${guide.note} Local Finds are a year-round editorial shortlist, not a seasonal guarantee; check current access and weather.`
+    : guide.note;
   const durationNotes = {
     short:'For 3–5 days, choose one compact region and enjoy it at an unhurried pace.',
     week:'For 6–9 days, pair two nearby bases and leave room for a day trip.',
@@ -492,8 +505,21 @@ function renderMonthGuide() {
   document.querySelector('#trip-length-guidance').textContent = durationNotes[tripLengthSelect.value];
   const recommendationLimit = {short:6, week:9, long:12}[tripLengthSelect.value];
   const picks = [...guide.places, ...MONTH_EXTRA_PLACES[monthIndex]];
-  const uniquePicks = picks.filter((pick, index) => picks.findIndex(item => item[0] === pick[0]) === index).slice(0, recommendationLimit);
-  const cards = uniquePicks.map(([name, reason]) => {
+  const uniquePicks = picks.filter((pick, index) => picks.findIndex(item => item[0] === pick[0]) === index);
+  let tailoredPicks = journeyStyleSelect.value === 'local'
+    ? DESTINATIONS.filter(place => LOCAL_FIND_NAMES.has(place.name)).map(place => {
+        const seasonalMatch = uniquePicks.find(([name]) => name === place.name);
+        const storyLead = LOCAL_FIND_DETAILS[place.name]?.story?.split(/[.!?]/)[0];
+        return [place.name, seasonalMatch?.[1] || (storyLead ? `${storyLead}.` : 'A quieter stop; check seasonal access before setting out.')];
+      })
+    : uniquePicks;
+  if (journeyRegionSelect.value !== 'all') tailoredPicks = tailoredPicks.filter(([name]) => DESTINATIONS.find(place => place.name === name)?.region === journeyRegionSelect.value);
+  if (journeyStyleSelect.value !== 'balanced' && journeyStyleSelect.value !== 'local') {
+    const matchesStyle = name => DESTINATIONS.find(place => place.name === name)?.tags?.includes(journeyStyleSelect.value) ? 1 : 0;
+    tailoredPicks.sort((a,b) => matchesStyle(b[0]) - matchesStyle(a[0]));
+  }
+  tailoredPicks = tailoredPicks.slice(0, recommendationLimit);
+  const cards = tailoredPicks.map(([name, reason]) => {
     const place = DESTINATIONS.find(item => item.name === name);
     if (!place) return null;
     const card = document.createElement('button'); card.type = 'button'; card.className = 'month-pick';
@@ -508,11 +534,20 @@ function renderMonthGuide() {
     card.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
     return card;
   }).filter(Boolean);
-  document.querySelector('#month-results-count').textContent = `${cards.length} PLACES TO EXPLORE IN ${MONTHS[monthIndex].toUpperCase()}`;
-  document.querySelector('#month-recommendations').replaceChildren(...cards);
+  const styleLabel = journeyStyleSelect.value === 'local' ? 'LOCAL FINDS' : journeyStyleSelect.value === 'balanced' ? 'SEASONAL PLACES' : `${journeyStyleSelect.value.toUpperCase()}-LED PLACES`;
+  const regionLabel = journeyRegionSelect.value === 'all' ? 'ALL JAPAN' : journeyRegionSelect.value.toUpperCase();
+  document.querySelector('#month-results-count').textContent = `${cards.length} ${styleLabel} · ${MONTHS[monthIndex].toUpperCase()} · ${regionLabel}`;
+  const results = document.querySelector('#month-recommendations');
+  if (!cards.length) {
+    const empty = document.createElement('p'); empty.className = 'journey-empty';
+    empty.textContent = journeyStyleSelect.value === 'local' ? `No Local Finds are listed for ${journeyRegionSelect.value}. Try All Japan or another region.` : `No ${journeyStyleSelect.value} picks are listed for ${MONTHS[monthIndex]} in ${journeyRegionSelect.value}. Try a different month or region.`;
+    results.replaceChildren(empty);
+  } else results.replaceChildren(...cards);
 }
 monthSelect.addEventListener('change', renderMonthGuide);
 tripLengthSelect.addEventListener('change', renderMonthGuide);
+journeyRegionSelect.addEventListener('change', renderMonthGuide);
+journeyStyleSelect.addEventListener('change', renderMonthGuide);
 renderMonthGuide();
 
 renderFilters();
