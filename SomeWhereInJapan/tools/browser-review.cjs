@@ -1,0 +1,111 @@
+'use strict';
+const fs = require('node:fs');
+const path = require('node:path');
+const out = path.resolve(__dirname, '..', '..', '..', 'artifacts', 'japan-atlas');
+fs.mkdirSync(out, { recursive: true });
+async function main() {
+  const target = await (await fetch('http://127.0.0.1:9223/json/new?about:blank', { method: 'PUT' })).json();
+  const ws = new WebSocket(target.webSocketDebuggerUrl);
+  await new Promise((resolve, reject) => { ws.onopen = resolve; ws.onerror = reject; });
+  let seq = 0;
+  const pending = new Map();
+  const runtimeErrors = [];
+  ws.onmessage = event => {
+    const msg = JSON.parse(event.data);
+    if (msg.id && pending.has(msg.id)) { pending.get(msg.id).resolve(msg); pending.delete(msg.id); }
+    if (msg.method === 'Runtime.exceptionThrown') runtimeErrors.push(msg.params.exceptionDetails.text);
+  };
+  const call = (method, params = {}) => new Promise((resolve, reject) => {
+    const id = ++seq; pending.set(id, { resolve, reject }); ws.send(JSON.stringify({ id, method, params }));
+  });
+  const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const navigate = async (url, width, height = 960) => {
+    await call('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: width < 600 });
+    await call('Page.navigate', { url }); await pause(1300);
+    await call('Runtime.evaluate', { expression: 'document.fonts.ready.then(()=>true)' }); await pause(500);
+  };
+  const evaluate = async expression => {
+    const response = await call('Runtime.evaluate', { expression, returnByValue: true, awaitPromise: true });
+    if (response.result.exceptionDetails) throw new Error(JSON.stringify(response.result.exceptionDetails));
+    return response.result.result.value;
+  };
+  const screenshot = async name => {
+    const metrics = await evaluate('({width:document.documentElement.clientWidth,height:document.documentElement.scrollHeight,scrollWidth:document.documentElement.scrollWidth})');
+    const shot = await call('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true, clip: { x: 0, y: 0, width: metrics.width, height: Math.min(metrics.height, 6000), scale: 1 } });
+    fs.writeFileSync(path.join(out, name), Buffer.from(shot.result.data, 'base64'));
+    const overflow = await evaluate('[...document.querySelectorAll("body,body *")].map(el=>({tag:el.tagName,cls:typeof el.className==="string"?el.className:"svg",id:el.id,left:Math.round(el.getBoundingClientRect().left),right:Math.round(el.getBoundingClientRect().right),width:Math.round(el.getBoundingClientRect().width)})).filter(el=>el.right>document.documentElement.clientWidth+1||el.left< -1).sort((a,b)=>b.right-a.right).slice(0,12)');
+    return { ...metrics, overflow };
+  };
+  const viewportShot = async name => {
+    const shot = await call('Page.captureScreenshot', { format: 'png' });
+    fs.writeFileSync(path.join(out, name), Buffer.from(shot.result.data, 'base64'));
+  };
+  await call('Page.enable'); await call('Runtime.enable');
+  const report = {};
+  for (const width of [390, 768, 1440]) {
+    await navigate('http://localhost:8000/day-trips/kawagoe/', width);
+    report[`guide${width}`] = await screenshot(`guide-${width}.png`);
+  }
+  report.mobileGuides = {};
+  for (const slug of ['kawagoe', 'sawara', 'mitake', 'narita', 'odawara']) {
+    await navigate(`http://localhost:8000/day-trips/${slug}/`, 390);
+    report.mobileGuides[slug] = await evaluate("({width:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,photoLoaded:document.querySelector('.route-visual-photo img').naturalWidth>0,stopCount:document.querySelectorAll('.route-stop-row').length,shortPlan:!!document.querySelector('.short-route-card')})");
+  }
+  await navigate('http://localhost:8000/index.html', 1440, 1000);
+  await evaluate("localStorage.removeItem('somewhereJapanTokyoDayTrips')");
+  await call('Page.reload'); await pause(1300);
+  report.atlasToFinder = await evaluate("(()=>{document.querySelector('#atlas-tab-tokyo').click();return document.querySelector('#atlas-tab-tokyo').getAttribute('aria-selected')==='true'&&!document.querySelector('#atlas-panel-tokyo').hidden})()");
+  report.planner = await evaluate(`(() => {
+    const origin=document.querySelector('#city-origin'); origin.value='osaka';origin.dispatchEvent(new Event('change',{bubbles:true}));
+    const osakaVisible=!document.querySelector('#city-origin-results').hidden && document.querySelectorAll('.city-origin-card').length>0;
+    origin.value='tokyo';origin.dispatchEvent(new Event('change',{bubbles:true}));
+    const month=document.querySelector('#daytrip-month');month.value='10';month.dispatchEvent(new Event('change',{bubbles:true}));
+    document.querySelector('#daytrip-budget').value='18000';document.querySelector('#daytrip-budget').dispatchEvent(new Event('input',{bubbles:true}));
+    const results=document.querySelectorAll('#daytrip-results [data-trip]');
+    const time=document.querySelector('#daytrip-time');time.value='half';time.dispatchEvent(new Event('change',{bubbles:true}));
+    const halfStopCount=document.querySelectorAll('#daytrip-selected-content [data-route-stop-row]').length;
+    const halfStopNames=[...document.querySelectorAll('#daytrip-selected-content [data-route-stop-row] strong')].map(node=>node.textContent);
+    const halfOmitsCastle=!halfStopNames.some(name=>name.includes('Honmaru Goten'));
+    time.value='full';time.dispatchEvent(new Event('change',{bubbles:true}));
+    const fullStopCount=document.querySelectorAll('#daytrip-selected-content [data-route-stop-row]').length;
+    const compareIds=[...document.querySelectorAll('#daytrip-results [data-compare]')].slice(0,2).map(button=>button.dataset.compare);
+    compareIds.forEach(id=>document.querySelector('#daytrip-results [data-compare="'+id+'"]')?.click());
+    const compareVisible=!document.querySelector('#daytrip-compare').hidden;
+    const pin=document.querySelector('#tokyo-route-map [data-stop-select="2"]');pin?.dispatchEvent(new MouseEvent('click',{bubbles:true}));
+    const synchronized=pin?.getAttribute('aria-pressed')==='true'&&document.querySelector('#daytrip-selected-content [data-stop-select="2"]')?.getAttribute('aria-pressed')==='true';
+    const q=new URL(location.href);q.searchParams.set('month','not-a-month');q.searchParams.set('origin','fukuoka');history.replaceState({},'',q);
+    document.querySelector('#daytrip-save').click();
+    const ids=window.TokyoDayTrips.DAY_TRIPS.map(trip=>trip.id);
+    const saved=window.TokyoDayTripCore.loadPlan(window.localStorage,ids);
+    const state={month:Number(month.value),time:document.querySelector('#daytrip-time').value,transport:document.querySelector('#daytrip-transport').value,budget:Number(document.querySelector('#daytrip-budget').value),interest:document.querySelector('#daytrip-interest').value,compareIds:[...document.querySelectorAll('#daytrip-results [data-compare][aria-pressed="true"]')].map(button=>button.dataset.compare),selectedId:document.querySelector('#daytrip-results [data-trip][aria-pressed="true"]')?.dataset.trip||null};
+    const shareUrl=window.TokyoDayTripCore.buildShareUrl(location.href,state);
+    const restored=window.TokyoDayTripCore.readSharedPlan(new URL(shareUrl).search,window.TokyoDayTrips.DAY_TRIPS);
+    return {osakaOriginWorked:osakaVisible,tokyoGuideCount:results.length,halfRouteStopCount:halfStopCount,halfRouteStops:halfStopNames,halfRouteOmitsCastle:halfOmitsCastle,fullRouteStopCount:fullStopCount,comparisonWorked:compareVisible,compareIds:state.compareIds,comparePressed:[...document.querySelectorAll('#daytrip-results [data-compare][aria-pressed="true"]')].map(button=>button.dataset.compare),mapItinerarySynchronized:synchronized,saveWorked:saved?.selectedId===state.selectedId,shareRestoresSelectedAndFilters:restored.selectedId===state.selectedId&&restored.month===state.month&&restored.compareIds.join(',')===state.compareIds.join(','),guideHref:document.querySelector('#daytrip-selected-route .daytrip-guide-link')?.getAttribute('href'),bodyScrollWidth:document.documentElement.scrollWidth,invalidMonthFallback:window.TokyoDayTripCore.readSharedPlan('?month=99',window.TokyoDayTrips.DAY_TRIPS).month};
+  })()`);
+  if (report.planner.guideHref) {
+    await navigate(new URL(report.planner.guideHref, 'http://localhost:8000/').href, 1440, 1000);
+    report.linkedGuide = await evaluate("({title:document.querySelector('h1')?.textContent.trim(),hasSources:!!document.querySelector('.route-sources'),hasStops:document.querySelectorAll('.route-stop-row').length===5,stylesLoaded:[...document.styleSheets].some(sheet=>sheet.href?.includes('styles.css'))})");
+  }
+  await navigate('http://localhost:8000/index.html#daytrips', 390, 900);
+  report.planner390 = await screenshot('planner-390.png');
+  report.touchTargets390 = await evaluate("({plannerMapPin:Math.round(document.querySelector('.tokyo-map-route-hit')?.getBoundingClientRect().width||0),itineraryControl:Math.round(document.querySelector('.route-itinerary-stop-links a')?.getBoundingClientRect().height||0)})");
+  await evaluate("document.querySelector('#daytrip-selected-route').scrollIntoView({block:'start',behavior:'instant'})"); await pause(300);
+  await viewportShot('planner-route-390.png');
+  await navigate('http://localhost:8000/day-trips/kawagoe/', 1440, 1000);
+  await evaluate("document.querySelector('.route-map-pin[data-stop-select=\\\"2\\\"]').focus({focusVisible:true})");
+  await call('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Enter', code: 'Enter' });
+  await call('Input.dispatchKeyEvent', { type: 'keyUp', key: 'Enter', code: 'Enter' });
+  report.keyboard = await evaluate("({mapAndItinerarySync:document.querySelector('.route-stop-row[data-stop-row=\\\"2\\\"]')?.getAttribute('aria-current')==='step',focusRemains:document.activeElement===document.querySelector('.route-map-pin[data-stop-select=\\\"2\\\"]'),visibleFocus:getComputedStyle(document.activeElement).outlineStyle!=='none'})");
+  await call('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-reduced-motion', value: 'reduce' }] });
+  report.reducedMotion = await evaluate("({enabled:matchMedia('(prefers-reduced-motion: reduce)').matches,transitionDuration:getComputedStyle(document.querySelector('.route-map-pin')).transitionDuration})");
+  report.imageLoaded = await evaluate("document.querySelector('.route-visual-photo img').naturalWidth>0");
+  await evaluate("document.querySelector('.route-visual-photo img').src='http://127.0.0.1:1/unavailable.jpg'"); await pause(700);
+  report.imageFailureFallback = await evaluate("document.querySelector('.route-visual-photo').classList.contains('is-image-missing')");
+  await call('Emulation.setEmulatedMedia', { media: 'print' }); await pause(300);
+  report.print = await screenshot('guide-print.png');
+  await fs.promises.writeFile(path.join(out, 'browser-review.json'), JSON.stringify(report, null, 2));
+  report.runtimeErrors = runtimeErrors;
+  console.log(JSON.stringify(report, null, 2));
+  ws.close();
+}
+main().catch(error => { console.error(error); process.exit(1); });

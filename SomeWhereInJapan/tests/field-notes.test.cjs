@@ -15,10 +15,10 @@ test('all five stable Tokyo field notes have distinct previews and linked route 
     assert.ok(title, `${slug} has a title`);
     assert.ok(canonical?.endsWith(`/day-trips/${slug}/`), `${slug} has its stable canonical URL`);
     assert.match(html, /property="og:title"/, `${slug} has a social title`);
-    assert.match(html, /class="route-visual"/, `${slug} has destination-specific visual treatment`);
-    assert.match(html, /class="guide-route-map"/, `${slug} explains its schematic route`);
+    assert.match(html, /class="route-visual\b/, `${slug} has destination-specific visual treatment`);
+    assert.match(html, /class="guide-route-map\b/, `${slug} explains its schematic route`);
     assert.match(html, /class="guide-decision"/, `${slug} states when to choose or skip the outing`);
-    assert.match(html, /class="route-points"[\s\S]*?google\.com\/maps/, `${slug} links its named points to maps`);
+    assert.match(html, /class="route-stops-list"[\s\S]*?google\.com\/maps/, `${slug} links its named points to maps`);
     canonicals.push(canonical);
   }
   assert.equal(new Set(canonicals).size, slugs.length);

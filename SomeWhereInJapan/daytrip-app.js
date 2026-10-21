@@ -7,11 +7,6 @@
   const form = $('#daytrip-form'), results = $('#daytrip-results'), status = $('#daytrip-status');
   const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   const ids = trips.map((trip) => trip.id);
-  const coordinates = {
-    kawagoe: {lat:35.9251,lon:139.4858}, sawara: {lat:35.897,lon:140.497},
-    mitake: {lat:35.801,lon:139.183}, narita: {lat:35.7765,lon:140.3188},
-    odawara: {lat:35.255,lon:139.159}
-  };
   const state = core.readSharedPlan(location.search, trips);
   const month = $('#daytrip-month');
   months.forEach((name,index)=>{const option=document.createElement('option');option.value=String(index+1);option.textContent=name;month.append(option);});
@@ -31,40 +26,60 @@
     if(push)history.pushState({},'',url);else history.replaceState({},'',url);
   }
   const escapeHtml=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-  const money=value=>'¥'+Number(value).toLocaleString('en-US');
+  const money=value=>'\u00a5'+Number(value).toLocaleString('en-US');
   function routeFor(trip){return trip&&trip.modes[state.transport]&&(trip.modes[state.transport].profiles?.[state.time]||trip.modes[state.transport])||null;}
-  function pointFor(trip) {
-    const point=coordinates[trip.id]||{lat:35.7,lon:139.8};
-    return {x:Math.round(70+(point.lon-139)*282),y:Math.round(26+(36.15-point.lat)*250)};
-  }
+  let visibleTrip=null;
+  let selectedStopIndex=0;
+  function routeFor(trip){return trip&&trip.modes[state.transport]&&(trip.modes[state.transport].profiles?.[state.time]||trip.modes[state.transport])||null;}
   function drawMap(trip) {
-    const path=$('#tokyo-route-path'),marker=$('#tokyo-map-destination'),description=$('#tokyo-route-map-desc');
-    if(!trip){path.setAttribute('visibility','hidden');marker.setAttribute('visibility','hidden');description.textContent='A schematic locator showing Tokyo Station. Choose a matching route to see its relative direction. It does not show rail or road alignment.';return;}
-    const point=pointFor(trip),origin={x:310,y:184};
-    path.setAttribute('visibility','visible');
-    path.setAttribute('d',`M${origin.x} ${origin.y} L${point.x} ${point.y}`);
-    marker.setAttribute('visibility','visible');
-    marker.querySelectorAll('circle').forEach(circle=>{circle.setAttribute('cx',point.x);circle.setAttribute('cy',point.y);});
-    const label=marker.querySelector('text');
-    label.setAttribute('x',Math.min(585,point.x+16));label.setAttribute('y',Math.max(44,point.y-10));label.textContent=trip.name.toUpperCase();
-    description.textContent=`Schematic locator: ${trip.name} is shown relative to Tokyo Station. The dotted line indicates direction only and is not a verified railway or road alignment.`;
+    const map=$('#tokyo-route-map');
+    const heading=map.parentElement.querySelector('.route-map-heading');
+    if(heading)heading.innerHTML='<span class="atlas-kicker">ROUTE STOP PLOT</span><span class="route-map-caveat">APPROXIMATE CONNECTORS · NOT WALKING DIRECTIONS</span>';
+    let note=map.parentElement.querySelector('.route-map-selection');
+    if(!note){note=document.createElement('p');note.className='route-map-selection';note.setAttribute('role','status');note.setAttribute('aria-live','polite');map.insertAdjacentElement('afterend',note);}
+    visibleTrip=trip;
+    if(!trip){map.setAttribute('viewBox','0 0 620 340');map.setAttribute('role','img');map.setAttribute('aria-label','Choose a trip to plot its stops.');map.innerHTML='<title>Route stop plot</title><desc>Choose a day trip to see its approximate geographic stop points.</desc><rect width="620" height="340" fill="#172421"/><text x="310" y="170" text-anchor="middle" fill="#efe4d2" font-size="16">Choose a route to plot its stops</text>';note.textContent='Select a trip to see stop locations and the order of the day.';return;}
+    const stops=routeFor(trip).stops;
+    const minLat=Math.min(...stops.map(stop=>stop.lat)),maxLat=Math.max(...stops.map(stop=>stop.lat));
+    const minLon=Math.min(...stops.map(stop=>stop.lon)),maxLon=Math.max(...stops.map(stop=>stop.lon));
+    const point=stop=>({x:Math.round(maxLon===minLon?310:52+((stop.lon-minLon)/(maxLon-minLon))*510),y:Math.round(maxLat===minLat?170:42+((maxLat-stop.lat)/(maxLat-minLat))*250)});
+    const points=stops.map(point);
+    const line=points.map(value=>`${value.x},${value.y}`).join(' ');
+    const pins=stops.map((stop,index)=>{const p=points[index];return `<g class="tokyo-map-route-stop${index===selectedStopIndex?' is-selected':''}" role="button" tabindex="0" data-stop-select="${index}" aria-pressed="${index===selectedStopIndex}" aria-label="Select stop ${index+1}: ${escapeHtml(stop.name)}"><circle class="tokyo-map-route-hit" cx="${p.x}" cy="${p.y}" r="28"/><circle class="tokyo-map-route-halo" cx="${p.x}" cy="${p.y}" r="19"/><circle class="tokyo-map-route-dot" cx="${p.x}" cy="${p.y}" r="12"/><text class="tokyo-map-route-number" x="${p.x}" y="${p.y+4}" text-anchor="middle">${String(index+1).padStart(2,'0')}</text></g>`;}).join('');
+    map.setAttribute('viewBox','0 0 620 340');map.setAttribute('role','group');map.setAttribute('aria-label',`${trip.name} stop plot. Select a numbered pin to highlight its itinerary entry.`);
+    map.innerHTML=`<title>${escapeHtml(trip.name)} route stop plot</title><desc>Approximate geographic stop points in visit order. Dashed connections are schematic and are not walking directions. Select a numbered point to highlight its itinerary entry.</desc><defs><pattern id="route-stop-grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#47605a" stroke-opacity=".28" stroke-width="1"/></pattern></defs><rect width="620" height="340" fill="#172421"/><rect width="620" height="340" fill="url(#route-stop-grid)"/><polyline class="tokyo-map-route-line" points="${line}"/>${pins}<text class="tokyo-map-route-disclaimer" x="18" y="321">APPROXIMATE STOP PLOT · DASHED CONNECTORS ARE NOT WALKING ROUTES</text>`;
+    note.textContent=`Selected stop 01: ${stops[0].name}`;
   }
+  function selectRouteStop(index) {
+    const route=routeFor(visibleTrip),selected=Number(index);
+    if(!route||!Number.isInteger(selected)||selected<0||selected>=route.stops.length)return;
+    selectedStopIndex=selected;
+    document.querySelectorAll('#tokyo-route-map [data-stop-select],#daytrip-selected-content [data-stop-select]').forEach(control=>control.setAttribute('aria-pressed',String(Number(control.dataset.stopSelect)===selected)));
+    document.querySelectorAll('[data-route-stop-row]').forEach(row=>{const active=Number(row.dataset.routeStopRow)===selected;row.classList.toggle('is-selected',active);if(active)row.setAttribute('aria-current','step');else row.removeAttribute('aria-current');});
+    document.querySelectorAll('#tokyo-route-map [data-stop-select]').forEach(pin=>pin.classList.toggle('is-selected',Number(pin.dataset.stopSelect)===selected));
+    const note=$('#tokyo-route-map').parentElement.querySelector('.route-map-selection');
+    if(note)note.textContent=`Selected stop ${String(selected+1).padStart(2,'0')}: ${route.stops[selected].name}`;
+  }
+  $('#daytrip-selected-route').addEventListener('click',event=>{const control=event.target.closest('[data-stop-select]');if(control)selectRouteStop(control.dataset.stopSelect);});
+  $('#daytrip-selected-route').addEventListener('keydown',event=>{const pin=event.target.closest('#tokyo-route-map [role="button"][data-stop-select]');if(pin&&(event.key==='Enter'||event.key===' ')){event.preventDefault();selectRouteStop(pin.dataset.stopSelect);}});
   function renderRoute(trip) {
     const target=$('#daytrip-selected-content');
-    if(!trip){target.innerHTML='<p class="route-empty">No outing matches all of these limits. Adjust the month, time, transport or budget, or open one of the five field notes below.</p>';drawMap(null);return;}
+    if(!trip){target.innerHTML='<p class="route-empty">No outing matches all of these limits. Adjust the month, time, transport or budget, or open one of the five field guides below.</p>';drawMap(null);return;}
     const route=routeFor(trip),seasonal=trip.seasonFit[state.month]||'Season-specific guidance is limited; confirm local conditions before travelling.';
-    const stats=[['TOTAL DAY',`${route.totalHours.min}–${route.totalHours.max} h`],['ESTIMATED SPEND',`${money(route.costYen.min)}–${money(route.costYen.max)}`],['TRAVEL TIME',`${route.roundTripHours.min}–${route.roundTripHours.max} h`]];
-    const stops=route.stops.map((stop,index)=>`<li><span>${String(index+1).padStart(2,'0')}</span><strong>${escapeHtml(stop)}</strong></li>`).join('');
-    target.innerHTML=`<div class="route-detail-heading"><p class="atlas-kicker">${escapeHtml(trip.region)} · ${escapeHtml(months[state.month-1])}</p><h3>${escapeHtml(trip.name)}</h3><p>${escapeHtml(trip.subtitle)}</p></div><dl class="route-detail-stats">${stats.map(([label,value])=>`<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl><div class="route-detail-why"><section><span>WHY THIS DAY</span><p>${escapeHtml(trip.subtitle)} ${escapeHtml(seasonal)}</p></section><section><span>THINK TWICE IF</span><p>${escapeHtml(trip.tradeoff)}</p></section></div><div class="route-itinerary"><div class="route-itinerary-heading"><div><p class="atlas-kicker">THE ORDER OF THE DAY</p><h4>${route.stops.length} planned stops</h4></div><span>Visit time varies by pace</span></div><ol>${stops}</ol><p class="route-arrival"><strong>First arrival:</strong> ${escapeHtml(route.arrival)}</p><p class="route-cost-note">Estimate includes transport ${money(route.costBreakdown.transport.min)}–${money(route.costBreakdown.transport.max)}, admissions ${money(route.costBreakdown.admissions.min)}–${money(route.costBreakdown.admissions.max)}, and a ${money(route.costBreakdown.meal.min)}–${money(route.costBreakdown.meal.max)} meal allowance. It is not a live fare quote.</p></div><a class="daytrip-guide-link" href="day-trips/${encodeURIComponent(trip.slug)}/">Open the full field note <span aria-hidden="true">↗</span></a>`;
+    selectedStopIndex=0;
+    const stats=[['TOTAL DAY',`${route.totalHours.min}-${route.totalHours.max} h`],['ESTIMATED SPEND',`${money(route.costYen.min)}-${money(route.costYen.max)}`],['TRAVEL TIME',`${route.roundTripHours.min}-${route.roundTripHours.max} h`]];
+    const stops=route.stops.map((stop,index)=>`<li data-route-stop-row="${index}" class="${index===0?'is-selected':''}" ${index===0?'aria-current="step"':''}><button type="button" class="route-itinerary-stop" data-stop-select="${index}" aria-pressed="${index===0}"><span>${String(index+1).padStart(2,'0')}</span><strong>${escapeHtml(stop.name)}</strong><small>${escapeHtml(stop.address)} · ${escapeHtml(stop.walk)} · ${escapeHtml(stop.duration)}</small><span>${escapeHtml(stop.story)}</span></button><div class="route-itinerary-stop-links"><a href="${escapeHtml(stop.maps)}" target="_blank" rel="noopener noreferrer">Open map ↗</a><a href="${escapeHtml(stop.walkMap)}" target="_blank" rel="noopener noreferrer">Walking directions ↗</a></div></li>`).join('');
+    target.innerHTML=`<div class="route-detail-heading"><p class="atlas-kicker">${escapeHtml(trip.region)} · ${escapeHtml(months[state.month-1])}</p><h3>${escapeHtml(trip.name)}</h3><p>${escapeHtml(trip.subtitle)}</p></div><dl class="route-detail-stats">${stats.map(([label,value])=>`<div><dt>${label}</dt><dd>${value}</dd></div>`).join('')}</dl><div class="route-detail-why"><section><span>WHY THIS DAY</span><p>${escapeHtml(route.stops[1]?.story||trip.subtitle)} ${escapeHtml(seasonal)}</p></section><section><span>PLAN AROUND</span><p>${escapeHtml(trip.tradeoff)}</p></section></div><div class="route-itinerary"><div class="route-itinerary-heading"><div><p class="atlas-kicker">THE ORDER OF THE DAY</p><h4>${route.stops.length} planned stops</h4></div><span>Select a stop to highlight its map point</span></div><ol class="route-itinerary-list">${stops}</ol><p class="route-arrival"><strong>First arrival:</strong> ${escapeHtml(route.arrival)}</p><p class="route-rain-plan"><strong>IF WEATHER CHANGES</strong> ${escapeHtml(route.rainPlan)}</p><aside class="route-short-plan"><strong>LESS TIME?</strong> ${escapeHtml(trip.guide.shortPlan.duration)} — ${escapeHtml(trip.guide.shortPlan.route)} Leave out: ${escapeHtml(trip.guide.shortPlan.omitted)}</aside><p class="route-cost-note">Estimate includes transport ${money(route.costBreakdown.transport.min)}-${money(route.costBreakdown.transport.max)}, admissions ${money(route.costBreakdown.admissions.min)}-${money(route.costBreakdown.admissions.max)}, and a ${money(route.costBreakdown.meal.min)}-${money(route.costBreakdown.meal.max)} meal allowance. Estimates are not live fare quotes.</p></div><a class="daytrip-guide-link" href="day-trips/${encodeURIComponent(trip.slug)}/">Open the full field guide <span aria-hidden="true">↗</span></a>`;
     drawMap(trip);
   }
-  function drawCompare() {
+  function drawCompare(){
     const box=$('#daytrip-compare'),selected=trips.filter(trip=>state.compareIds.includes(trip.id));
     box.hidden=selected.length<2;
     if(box.hidden){box.replaceChildren();return;}
     box.innerHTML=`<div class="compare-heading"><p class="atlas-kicker">COMPARE THE TRADE-OFFS</p><h3>Which day suits you?</h3></div><div class="daytrip-compare-grid">${selected.map(trip=>{
-      const route=routeFor(trip);
-      return `<article><button type="button" data-remove="${escapeHtml(trip.id)}" aria-label="Remove ${escapeHtml(trip.name)} from comparison">×</button><h4>${escapeHtml(trip.name)}</h4><p><strong>${route?`${route.totalHours.min}–${route.totalHours.max} hours · ${money(route.costYen.min)}–${money(route.costYen.max)}`:'No researched route fits the selected options'}</strong></p><p>${escapeHtml(trip.effort)}</p><p><span>THE TRADE-OFF</span>${escapeHtml(trip.tradeoff)}</p><a href="day-trips/${encodeURIComponent(trip.slug)}/">Read its field note ↗</a></article>`;
+      const route=routeFor(trip),seasonal=trip.seasonFit[state.month]||'Confirm seasonal conditions with the destination before travel.';
+      const planned=route?route.stops.map((stop,index)=>`<li><span>${String(index+1).padStart(2,'0')}</span>${escapeHtml(stop.name)}</li>`).join(''):'';
+      return `<article><button type="button" data-remove="${escapeHtml(trip.id)}" aria-label="Remove ${escapeHtml(trip.name)} from comparison">×</button><h4>${escapeHtml(trip.name)}</h4><p><strong>${route?`${route.totalHours.min}-${route.totalHours.max} hours · ${money(route.costYen.min)}-${money(route.costYen.max)}`:'No researched route fits the selected options'}</strong></p><p><span>SEASON</span>${escapeHtml(seasonal)}</p><p><span>EFFORT</span>${escapeHtml(trip.effort)}</p><p><span>PLAN AROUND</span>${escapeHtml(trip.tradeoff)}</p>${route?`<p class="route-short-plan"><strong>SHORTER DAY</strong> ${escapeHtml(trip.guide.shortPlan.duration)} — ${escapeHtml(trip.guide.shortPlan.route)}</p><details><summary>See the shared stop sequence</summary><ol>${planned}</ol><p>${escapeHtml(route.rainPlan)}</p></details>`:''}<a href="day-trips/${encodeURIComponent(trip.slug)}/">Read the full field guide ↗</a></article>`;
     }).join('')}</div>`;
   }
   function draw() {
@@ -72,7 +87,7 @@
     const matches=core.filterTrips(trips,state);
     const chosen=matches.find(trip=>trip.id===state.selectedId)||matches[0]||null;
     state.selectedId=chosen?chosen.id:null;
-    status.textContent=matches.length?`${matches.length} day${matches.length===1?'':'s'} fit your choices. Select one to see its stops and relative direction.`:core.createNoMatchMessage(trips,state);
+    status.textContent=matches.length?`${matches.length} day${matches.length===1?'':'s'} fit your choices. Select one to see its route stops and map plot.`:core.createNoMatchMessage(trips,state);
     results.innerHTML=matches.map((trip,index)=>{
       const route=routeFor(trip),selected=trip.id===state.selectedId,compared=state.compareIds.includes(trip.id);
       return `<article class="route-choice"><button class="route-choice-main" type="button" data-trip="${escapeHtml(trip.id)}" aria-pressed="${selected}" aria-label="Select ${escapeHtml(trip.name)}, estimated ${route.totalHours.min} to ${route.totalHours.max} hours and ${money(route.costYen.min)} to ${money(route.costYen.max)}"><span class="route-choice-number">0${index+1}</span><span class="route-choice-copy"><strong>${escapeHtml(trip.name)}</strong><small>${escapeHtml(trip.region)} · ${route.totalHours.min}–${route.totalHours.max} h · ${money(route.costYen.min)}–${money(route.costYen.max)}</small></span><span class="route-choice-actions"><span>${selected?'SELECTED':'VIEW ROUTE'}</span></span></button><button class="route-compare-toggle" type="button" data-compare="${escapeHtml(trip.id)}" aria-pressed="${compared}" aria-label="${compared?'Remove':'Add'} ${escapeHtml(trip.name)} ${compared?'from':'to'} comparison">${compared?'✓':'+'}</button></article>`;
