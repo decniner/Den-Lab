@@ -1,6 +1,6 @@
 # Somewhere in Japan
 
-A cinematic, responsive travel guide to memorable places across Japan's nine regions.
+A cinematic, responsive field guide to 67 memorable places across Japan's nine regions.
 
 ## Preview
 
@@ -19,5 +19,6 @@ The regional map uses coastlines from Natural Earth 10m cultural vectors. Natura
 ## Published site
 
 https://decniner.github.io/Den-Lab/SomeWhereInJapan/index.html
+
 
 

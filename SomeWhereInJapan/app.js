@@ -1,5 +1,6 @@
 const grid = document.querySelector('#destination-grid');
 const filters = document.querySelector('#region-filters');
+const moodFilters = document.querySelector('#mood-filters');
 const count = document.querySelector('#result-count');
 const search = document.querySelector('#place-search');
 const savedToggle = document.querySelector('#saved-toggle');
@@ -8,6 +9,8 @@ const savedNote = document.querySelector('#saved-note');
 let activeRegion = 'All places';
 let savedOnly = false;
 let query = '';
+let activeMood = 'All moods';
+let visibleLimit = 12;
 const saved = new Set(readSaved());
 
 function readSaved() {
@@ -37,6 +40,13 @@ function renderFilters() {
   document.querySelectorAll('[data-map-region]').forEach(link => {
     link.classList.toggle('is-current', link.dataset.mapRegion === activeRegion);
   });
+  moodFilters.replaceChildren(...MOODS.map(mood => {
+    const button = document.createElement('button');
+    button.className = 'mood-button'; button.type = 'button'; button.textContent = mood;
+    button.setAttribute('aria-pressed', String(mood === activeMood));
+    button.addEventListener('click', () => { activeMood = mood; visibleLimit = 12; renderFilters(); renderDestinations(); });
+    return button;
+  }));
 }
 
 function destinationLink(place) {
@@ -50,9 +60,11 @@ function renderDestinations() {
     const inRegion = activeRegion === 'All places' || place.region === activeRegion;
     const inSaved = !savedOnly || saved.has(place.name);
     const searchable = `${place.name} ${place.place} ${place.region} ${place.description}`.toLocaleLowerCase();
-    return inRegion && inSaved && (!normalized || searchable.includes(normalized));
+    const inMood = activeMood === 'All moods' || place.tags.includes(activeMood);
+    return inRegion && inSaved && inMood && (!normalized || searchable.includes(normalized));
   });
   count.textContent = `${String(places.length).padStart(2, '0')} ${places.length === 1 ? 'PLACE' : 'PLACES'}`;
+  document.querySelector('#show-more').hidden = places.length <= visibleLimit;
   if (!places.length) {
     const empty = document.createElement('p');
     empty.className = 'empty-state';
@@ -60,7 +72,7 @@ function renderDestinations() {
     grid.replaceChildren(empty);
     return;
   }
-  grid.replaceChildren(...places.map((place, index) => {
+  grid.replaceChildren(...places.slice(0, visibleLimit).map((place, index) => {
     const card = document.createElement('article');
     card.className = 'destination-card';
     const imageWrap = document.createElement('div');
@@ -92,7 +104,9 @@ function renderDestinations() {
     row.append(title, link);
     const area = document.createElement('p'); area.className = 'card-area'; area.textContent = place.place;
     const description = document.createElement('p'); description.className = 'card-description'; description.textContent = place.description;
-    copy.append(location, row, area, description);
+    const tags = document.createElement('div'); tags.className = 'card-tags';
+    place.tags.forEach(tag => { const pill = document.createElement('span'); pill.textContent = tag; tags.append(pill); });
+    copy.append(location, row, area, description, tags);
     card.append(imageWrap, copy);
     return card;
   }));
@@ -106,6 +120,7 @@ function updateSavedUI() {
 }
 
 search.addEventListener('input', () => { query = search.value; renderDestinations(); });
+document.querySelector('#show-more').addEventListener('click', () => { visibleLimit += 12; renderDestinations(); });
 savedToggle.addEventListener('click', () => { savedOnly = !savedOnly; updateSavedUI(); renderDestinations(); });
 document.querySelector('#share-guide').addEventListener('click', async event => {
   const button = event.currentTarget;
