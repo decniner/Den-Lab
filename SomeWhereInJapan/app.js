@@ -13,6 +13,15 @@ let query = '';
 let activeMood = 'All moods';
 let visibleLimit = 12;
 let monthSearchEnabled = false;
+let localFindsOnly = false;
+const LOCAL_FIND_NAMES = new Set([
+  'The blue of Biei','Oirase stream walk','Hiraizumi\u2019s quiet temples','Tazawa\u2019s clear blue',
+  'Aizu-Wakamatsu\u2019s samurai streets','Oze\u2019s open wetlands','Kiso Valley post towns',
+  'Lake Biwa\u2019s eastern shore','Onomichi\u2019s hillside lanes','Iwami Ginzan\u2019s forest paths',
+  'The Iya Valley','Cape Ashizuri\u2019s ocean edge','Konpira-san\u2019s long climb',
+  'Ouchi-juku\u2019s thatched lanes','Shakotan\u2019s blue coast','Kawagoe, the little Edo',
+  'Tottori\u2019s shifting dunes','Oshino Hakkai and Fuji views'
+]);
 const saved = new Set(readSaved());
 
 function readSaved() {
@@ -225,6 +234,11 @@ function showPlace(place, index) {
   document.querySelector('#place-dialog-area').textContent=place.place;
   document.querySelector('#place-dialog-description').textContent=place.description;
   document.querySelector('#place-dialog-story').textContent=placeStory(place,spotlight);
+  const localTip=document.querySelector('#place-dialog-local-tip');
+  localTip.hidden=!LOCAL_FIND_NAMES.has(place.name);
+  if(!localTip.hidden) document.querySelector('#place-dialog-local-tip-copy').textContent=place.tags.includes('Nature')
+    ? 'Keep the day simple with self-guided walks and time outdoors. Check local access rules, transport costs, and any seasonal fees before setting out.'
+    : 'Focus on wandering the historic streets and public spaces. Check admission prices for museums, monuments, or optional experiences before you go.';
   const tags=document.querySelector('#place-dialog-tags');
   tags.replaceChildren(...place.tags.map(tag=>{const pill=document.createElement('span');pill.textContent=tag;return pill;}));
   renderPlacePoints(place,spotlight);
@@ -289,14 +303,15 @@ function renderDestinations() {
     const searchable = `${place.name} ${place.place} ${place.region} ${place.description}`.toLocaleLowerCase();
     const inMood = activeMood === 'All moods' || place.tags.includes(activeMood);
     const inMonth = !monthSearchEnabled || getPlacesForMonth(Number(monthSelect.value)).has(place.name);
-    return inRegion && inSaved && inMood && inMonth && (!normalized || searchable.includes(normalized));
+    const inLocalFinds = !localFindsOnly || LOCAL_FIND_NAMES.has(place.name);
+    return inRegion && inSaved && inMood && inMonth && inLocalFinds && (!normalized || searchable.includes(normalized));
   });
   count.textContent = `${String(places.length).padStart(2, '0')} ${places.length === 1 ? 'PLACE' : 'PLACES'}`;
   document.querySelector('#show-more').hidden = places.length <= visibleLimit;
   if (!places.length) {
     const empty = document.createElement('p');
     empty.className = 'empty-state';
-    empty.textContent = savedOnly && !saved.size ? 'Your shortlist is waiting. Save a place with its heart to start one.' : monthSearchEnabled ? `No places match ${MONTHS[Number(monthSelect.value)]} and your other filters. Try clearing the month filter or broadening your search.` : 'No places match that search here. Try another region or a broader word.';
+    empty.textContent = savedOnly && !saved.size ? 'Your shortlist is waiting. Save a place with its heart to start one.' : localFindsOnly ? 'No local finds match these combined filters. Clear a filter or browse all places.' : monthSearchEnabled ? `No places match ${MONTHS[Number(monthSelect.value)]} and your other filters. Try clearing the month filter or broadening your search.` : 'No places match that search here. Try another region or a broader word.';
     grid.replaceChildren(empty);
     return;
   }
@@ -350,6 +365,24 @@ function updateSavedUI() {
   savedToggle.classList.toggle('is-active', savedOnly);
   savedNote.hidden = !savedOnly;
 }
+
+function updateLocalFindsUI() {
+  const button=document.querySelector('#local-finds-toggle');
+  button.setAttribute('aria-pressed',String(localFindsOnly));
+  button.firstChild.textContent=localFindsOnly?'Showing local finds ':'Explore local finds ';
+  document.querySelector('#local-finds-count').textContent=`${LOCAL_FIND_NAMES.size} PLACES`;
+  document.querySelector('#local-finds-clear').hidden=!localFindsOnly;
+  document.querySelector('#local-finds-description').textContent=localFindsOnly
+    ? 'The guide is showing quieter, cost-conscious stops. Combine with search, month, region, and experience filters; prices and transport costs vary.'
+    : 'Quieter walks, small-town streets, and open-air stops for a lighter-cost day. These are curated under-the-radar finds, not guaranteed secrets; transport and entry costs vary.';
+}
+document.querySelector('#local-finds-toggle').addEventListener('click',()=>{
+  localFindsOnly=!localFindsOnly;visibleLimit=12;updateLocalFindsUI();renderDestinations();
+  document.querySelector('#destination-grid').scrollIntoView({behavior:'smooth',block:'start'});
+});
+document.querySelector('#local-finds-clear').addEventListener('click',()=>{
+  localFindsOnly=false;visibleLimit=12;updateLocalFindsUI();renderDestinations();
+});
 
 search.addEventListener('input', () => { query = search.value; renderDestinations(); });
 document.querySelector('#show-more').addEventListener('click', () => { visibleLimit += 12; renderDestinations(); });
@@ -457,6 +490,7 @@ tripLengthSelect.addEventListener('change', renderMonthGuide);
 renderMonthGuide();
 
 renderFilters();
+updateLocalFindsUI();
 renderDestinations();
 updateSavedUI();
 document.querySelectorAll('[data-map-region]').forEach(link => link.addEventListener('click', () => {
