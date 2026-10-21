@@ -12,6 +12,7 @@ let savedOnly = false;
 let query = '';
 let activeMood = 'All moods';
 let visibleLimit = 12;
+let monthSearchEnabled = false;
 const saved = new Set(readSaved());
 
 function readSaved() {
@@ -248,14 +249,15 @@ function renderDestinations() {
     const inSaved = !savedOnly || saved.has(place.name);
     const searchable = `${place.name} ${place.place} ${place.region} ${place.description}`.toLocaleLowerCase();
     const inMood = activeMood === 'All moods' || place.tags.includes(activeMood);
-    return inRegion && inSaved && inMood && (!normalized || searchable.includes(normalized));
+    const inMonth = !monthSearchEnabled || getPlacesForMonth(Number(monthSelect.value)).has(place.name);
+    return inRegion && inSaved && inMood && inMonth && (!normalized || searchable.includes(normalized));
   });
   count.textContent = `${String(places.length).padStart(2, '0')} ${places.length === 1 ? 'PLACE' : 'PLACES'}`;
   document.querySelector('#show-more').hidden = places.length <= visibleLimit;
   if (!places.length) {
     const empty = document.createElement('p');
     empty.className = 'empty-state';
-    empty.textContent = savedOnly && !saved.size ? 'Your shortlist is waiting. Save a place with its heart to start one.' : 'No places match that search here. Try another region or a broader word.';
+    empty.textContent = savedOnly && !saved.size ? 'Your shortlist is waiting. Save a place with its heart to start one.' : monthSearchEnabled ? `No places match ${MONTHS[Number(monthSelect.value)]} and your other filters. Try clearing the month filter or broadening your search.` : 'No places match that search here. Try another region or a broader word.';
     grid.replaceChildren(empty);
     return;
   }
@@ -361,9 +363,25 @@ const monthSelect = document.querySelector('#travel-month');
 const tripLengthSelect = document.querySelector('#trip-length');
 monthSelect.replaceChildren(...MONTHS.map((month, index) => { const option = document.createElement('option'); option.value = String(index); option.textContent = month; return option; }));
 monthSelect.value = String(new Date().getMonth());
+function getPlacesForMonth(monthIndex) {
+  return new Set([...MONTH_GUIDE[monthIndex].places, ...MONTH_EXTRA_PLACES[monthIndex]].map(([name]) => name));
+}
+function updateMonthSearchUI() {
+  const monthName = MONTHS[Number(monthSelect.value)];
+  const toggle = document.querySelector('#month-filter-toggle');
+  document.querySelector('#month-filter-name').textContent = monthName;
+  toggle.setAttribute('aria-pressed', String(monthSearchEnabled));
+  toggle.textContent = monthSearchEnabled ? `Searching ${monthName} places` : `Add ${monthName} places to search`;
+  document.querySelector('#month-filter-clear').hidden = !monthSearchEnabled;
+  document.querySelector('#month-filter-description').textContent = monthSearchEnabled ? `The destination search is showing ${monthName} seasonal picks. Search words, region, mood, and saved filters still apply.` : 'Choose a travel month above, then include its seasonal places in the full destination search.';
+}
+document.querySelector('#month-filter-toggle').addEventListener('click', () => { monthSearchEnabled = !monthSearchEnabled; visibleLimit = 12; updateMonthSearchUI(); renderDestinations(); });
+document.querySelector('#month-filter-clear').addEventListener('click', () => { monthSearchEnabled = false; visibleLimit = 12; updateMonthSearchUI(); renderDestinations(); });
 function renderMonthGuide() {
   const monthIndex = Number(monthSelect.value);
   const guide = MONTH_GUIDE[monthIndex];
+  updateMonthSearchUI();
+  if (monthSearchEnabled) { visibleLimit = 12; renderDestinations(); }
   document.querySelector('#month-name-heading').textContent = MONTHS[monthIndex];
   document.querySelector('#month-summary').textContent = guide.summary;
   document.querySelector('#month-timing-note').textContent = guide.note;
@@ -397,6 +415,19 @@ function renderMonthGuide() {
 monthSelect.addEventListener('change', renderMonthGuide);
 tripLengthSelect.addEventListener('change', renderMonthGuide);
 renderMonthGuide();
+
+function setTextSize(size) {
+  const values = {small: '1', large: '1.12', larger: '1.24'};
+  const selected = values[size] ? size : 'small';
+  document.documentElement.style.setProperty('--page-scale', values[selected]);
+  document.documentElement.dataset.textSize = selected;
+  try { localStorage.setItem('somewhere-japan-text-size', selected); } catch { /* Text sizing remains available for this visit. */ }
+  document.querySelectorAll('[data-text-size]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.textSize === selected)));
+}
+let savedTextSize = 'small';
+try { savedTextSize = localStorage.getItem('somewhere-japan-text-size') || 'small'; } catch { /* Use standard size when storage is unavailable. */ }
+document.querySelectorAll('[data-text-size]').forEach(button => button.addEventListener('click', () => setTextSize(button.dataset.textSize)));
+setTextSize(savedTextSize);
 
 renderFilters();
 renderDestinations();
