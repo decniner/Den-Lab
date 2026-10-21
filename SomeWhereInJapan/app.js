@@ -417,19 +417,6 @@ monthSelect.addEventListener('change', renderMonthGuide);
 tripLengthSelect.addEventListener('change', renderMonthGuide);
 renderMonthGuide();
 
-function setTextSize(size) {
-  const values = {small: '1', large: '1.12', larger: '1.24'};
-  const selected = values[size] ? size : 'small';
-  document.documentElement.style.setProperty('--page-scale', values[selected]);
-  document.documentElement.dataset.textSize = selected;
-  try { localStorage.setItem('somewhere-japan-text-size', selected); } catch { /* Text sizing remains available for this visit. */ }
-  document.querySelectorAll('[data-text-size]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.textSize === selected)));
-}
-let savedTextSize = 'small';
-try { savedTextSize = localStorage.getItem('somewhere-japan-text-size') || 'small'; } catch { /* Use standard size when storage is unavailable. */ }
-document.querySelectorAll('[data-text-size]').forEach(button => button.addEventListener('click', () => setTextSize(button.dataset.textSize)));
-setTextSize(savedTextSize);
-
 renderFilters();
 renderDestinations();
 updateSavedUI();
