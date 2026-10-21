@@ -8,7 +8,7 @@ Open `index.html` in a modern browser. If your browser restricts local files, ru
 
 ## Content and imagery
 
-The destination collection is in `destinations.js`; region filters render from that data. Destination and experience photography is served from Unsplash using image IDs. The hero image is `photo-1743731852847-044ec22a00bc`; destination records list Unsplash as source. Image availability and licensing terms are governed by the source provider. Replace with licensed local assets before redistribution if your publishing policy requires it. Image cards retain a styled fallback when a remote image cannot load.
+The destination collection is in `destinations.js`; search, region filters, device-local saved places, and shareable region links render from that data. Destination and experience photography is served from Unsplash using image IDs. The Kyoto Fushimi Inari and Miyajima Itsukushima images are verified against their pictured landmarks. The hero image is `photo-1743731852847-044ec22a00bc`; destination records list Unsplash as source. Image availability and licensing terms are governed by the source provider. Replace with licensed local assets before redistribution if your publishing policy requires it. Image cards retain a styled fallback when a remote image cannot load.
 
 Planning links point to Japan National Tourism Organization guides. No live schedules, prices, reservations, or booking claims are provided.
 
@@ -19,4 +19,5 @@ The regional map uses coastlines from Natural Earth 10m cultural vectors. Natura
 ## Published site
 
 https://decniner.github.io/Den-Lab/SomeWhereInJapan/index.html
+
 
