@@ -23,3 +23,8 @@ https://decniner.github.io/Den-Lab/SomeWhereInJapan/index.html
 
 
 
+
+## Place videos
+
+Place stories load a YouTube privacy-enhanced embed only after the visitor chooses to watch. destinations.js stores curated video IDs where a matching destination video is available; other places offer a clearly labeled YouTube search. Embedded YouTube search playlists are deprecated, so the guide does not attempt to load search results inside an iframe. See [YouTube's player parameter documentation](https://developers.google.com/youtube/player_parameters).
+

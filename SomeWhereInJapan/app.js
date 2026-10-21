@@ -70,6 +70,7 @@ function updatePlaceDialogSave(place) {
 }
 
 function showPlace(place, index) {
+  resetPlaceVideo();
   const image = document.querySelector('#place-dialog-image');
   image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88`;
   image.alt = place.alt;
@@ -78,7 +79,23 @@ function showPlace(place, index) {
   document.querySelector('#place-dialog-title').textContent = place.name;
   document.querySelector('#place-dialog-area').textContent = place.place;
   document.querySelector('#place-dialog-description').textContent = place.description;
-  document.querySelector('#place-dialog-youtube').href = youtubeSearchUrl(place);
+  const moreVideos = document.querySelector('#place-dialog-youtube');
+  moreVideos.href = youtubeSearchUrl(place);
+  const watchButton = document.querySelector('#place-dialog-watch');
+  watchButton.textContent = place.videoId ? 'Watch featured video' : 'Search videos for this place';
+  const watchIcon = document.createElement('span'); watchIcon.textContent = place.videoId ? ' ▶' : ' ↗'; watchButton.append(watchIcon);
+  document.querySelector('#place-dialog-note').textContent = place.videoId
+    ? `${place.videoTitle}. Plays here in the place story.`
+    : 'No place-specific video is curated here yet. This opens matching YouTube results.';
+  watchButton.onclick = () => {
+    if (!place.videoId) { window.open(youtubeSearchUrl(place), '_blank', 'noopener'); return; }
+    document.querySelector('#place-dialog-video').src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(place.videoId)}?autoplay=1&rel=0`;
+    document.querySelector('#place-dialog-video').hidden = false;
+    image.hidden = true;
+    document.querySelector('#place-dialog-number').hidden = true;
+    watchButton.hidden = true;
+    document.querySelector('#place-dialog-return').hidden = false;
+  };
   const tags = document.querySelector('#place-dialog-tags');
   tags.replaceChildren(...place.tags.map(tag => { const pill = document.createElement('span'); pill.textContent = tag; return pill; }));
   updatePlaceDialogSave(place);
@@ -134,7 +151,7 @@ function renderDestinations() {
     const location = document.createElement('span'); location.className = 'card-place'; location.textContent = place.region;
     const row = document.createElement('div'); row.className = 'card-title-row';
     const title = document.createElement('h3'); title.className = 'card-title'; title.textContent = place.name;
-    const link = document.createElement('a'); link.className = 'card-arrow'; link.href = youtubeSearchUrl(place); link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', `Find YouTube videos of ${place.name}`); link.title = `Find YouTube videos of ${place.name}`; link.textContent = '▶';
+    const link = document.createElement('button'); link.className = 'card-arrow'; link.type = 'button'; link.setAttribute('aria-label', `Open ${place.name} story${place.videoId ? ' and featured video' : ' and video search'}`); link.title = `Open ${place.name} story`; link.textContent = place.videoId ? '▶' : '↗'; link.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
     row.append(title, link);
     const area = document.createElement('p'); area.className = 'card-area'; area.textContent = place.place;
     const description = document.createElement('p'); description.className = 'card-description'; description.textContent = place.description;
@@ -183,6 +200,17 @@ document.querySelectorAll('[data-map-region]').forEach(link => link.addEventList
 const initialRegion = decodeURIComponent(window.location.hash.replace(/^#region=/, ''));
 if (REGIONS.includes(initialRegion)) { activeRegion = initialRegion; renderFilters(); renderDestinations(); }
 document.querySelector('#place-dialog-close').addEventListener('click', () => placeDialog.close());
+function resetPlaceVideo() {
+  const frame = document.querySelector('#place-dialog-video');
+  if (!frame) return;
+  frame.src = ''; frame.hidden = true;
+  document.querySelector('#place-dialog-image').hidden = false;
+  document.querySelector('#place-dialog-number').hidden = false;
+  document.querySelector('#place-dialog-watch').hidden = false;
+  document.querySelector('#place-dialog-return').hidden = true;
+}
+document.querySelector('#place-dialog-return').addEventListener('click', resetPlaceVideo);
+placeDialog.addEventListener('close', resetPlaceVideo);
 placeDialog.addEventListener('click', event => { if (event.target === placeDialog) placeDialog.close(); });
 
 const menuToggle = document.querySelector('.menu-toggle');
