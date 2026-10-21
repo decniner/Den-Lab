@@ -50,9 +50,9 @@ function renderFilters() {
   }));
 }
 
-function destinationLink(place) {
-  const query = encodeURIComponent(`${place.name} ${place.place} Japan tourism`);
-  return `https://www.japan.travel/en/search/?q=${query}`;
+function youtubeSearchUrl(place) {
+  const query = encodeURIComponent(`${place.name} ${place.place} Japan travel`);
+  return `https://www.youtube.com/results?search_query=${query}`;
 }
 
 function toggleSavedPlace(place) {
@@ -78,7 +78,7 @@ function showPlace(place, index) {
   document.querySelector('#place-dialog-title').textContent = place.name;
   document.querySelector('#place-dialog-area').textContent = place.place;
   document.querySelector('#place-dialog-description').textContent = place.description;
-  document.querySelector('#place-dialog-official').href = destinationLink(place);
+  document.querySelector('#place-dialog-youtube').href = youtubeSearchUrl(place);
   const tags = document.querySelector('#place-dialog-tags');
   tags.replaceChildren(...place.tags.map(tag => { const pill = document.createElement('span'); pill.textContent = tag; return pill; }));
   updatePlaceDialogSave(place);
@@ -134,7 +134,7 @@ function renderDestinations() {
     const location = document.createElement('span'); location.className = 'card-place'; location.textContent = place.region;
     const row = document.createElement('div'); row.className = 'card-title-row';
     const title = document.createElement('h3'); title.className = 'card-title'; title.textContent = place.name;
-    const link = document.createElement('a'); link.className = 'card-arrow'; link.href = destinationLink(place); link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', `Explore ${place.name} on the Japan National Tourism Organization site`); link.textContent = '↗';
+    const link = document.createElement('a'); link.className = 'card-arrow'; link.href = youtubeSearchUrl(place); link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', `Find YouTube videos of ${place.name}`); link.title = `Find YouTube videos of ${place.name}`; link.textContent = '▶';
     row.append(title, link);
     const area = document.createElement('p'); area.className = 'card-area'; area.textContent = place.place;
     const description = document.createElement('p'); description.className = 'card-description'; description.textContent = place.description;
