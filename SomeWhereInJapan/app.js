@@ -17,6 +17,9 @@ function renderFilters() {
     });
     return button;
   }));
+  document.querySelectorAll('[data-map-region]').forEach(link => {
+    link.classList.toggle('is-current', link.dataset.mapRegion === activeRegion);
+  });
 }
 
 function renderDestinations() {
@@ -60,6 +63,14 @@ function renderDestinations() {
 
 renderFilters();
 renderDestinations();
+
+document.querySelectorAll('[data-map-region]').forEach(link => {
+  link.addEventListener('click', () => {
+    activeRegion = link.dataset.mapRegion;
+    renderFilters();
+    renderDestinations();
+  });
+});
 
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('#mobile-nav');

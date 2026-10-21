@@ -4,14 +4,19 @@ A cinematic, responsive travel guide to memorable places across Japan's nine reg
 
 ## Preview
 
-Open `index.html` in a modern browser, or serve this folder with a static server such as `npx serve .`.
+Open `index.html` in a modern browser. If your browser restricts local files, run a static server from this folder, such as `npx serve .`.
 
 ## Content and imagery
 
-Destination content and image source IDs are in `destinations.js`. Photos are served from Unsplash; image cards retain a styled fallback if a remote photo cannot load. Unsplash permits free commercial and non-commercial image use, with attribution appreciated. See the [Unsplash license](https://unsplash.com/license).
+The destination collection is in `destinations.js`; region filters render from that data. Destination and experience photography is served from Unsplash using image IDs. The hero image is `photo-1743731852847-044ec22a00bc`; destination records list Unsplash as source. Image availability and licensing terms are governed by the source provider. Replace with licensed local assets before redistribution if your publishing policy requires it. Image cards retain a styled fallback when a remote image cannot load.
 
 Planning links point to Japan National Tourism Organization guides. No live schedules, prices, reservations, or booking claims are provided.
+
+## Japan map
+
+The regional map uses coastlines from Natural Earth 10m cultural vectors. Natural Earth map data is public domain; see [Natural Earth's terms](https://www.naturalearthdata.com/about/terms-of-use/). `map-builder.mjs` documents the small projection and SVG generation step; no runtime data download is required.
 
 ## Published site
 
 https://decniner.github.io/Den-Lab/SomeWhereInJapan/index.html
+
