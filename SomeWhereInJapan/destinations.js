@@ -111,4 +111,7 @@ const DESTINATIONS = [
  {region:'Kansai',name:'Osaka Aquarium Kaiyukan',place:'Minato \u00b7 Osaka',description:'Follow a spiraling route around a vast central tank, meeting whale sharks, rays, and Pacific marine life along the way. Combine the visit with the Tempozan waterfront and allow time for the changing feeding schedule.',image:'photo-1753767624904-b51d80dfe63b',alt:'A school of fish moving through the deep blue waters of Osaka Aquarium Kaiyukan',tags:['Nature']},
  {region:'Kyushu',name:'Fukuoka Tower',place:'Momochihama \u00b7 Fukuoka',description:'Climb the mirrored seaside tower for broad views over Hakata Bay, then stroll the nearby beach and waterfront. The tower is especially atmospheric at dusk when the city lights begin to appear.',image:'photo-1574678505748-99e73cc7ee41',alt:'Fukuoka Tower illuminated against the evening sky',tags:['Culture','Islands']},
  {region:'Kyushu',name:'Kumamoto Castle',place:'Chuo \u00b7 Kumamoto',description:'Explore one of Japan\u2019s great hilltop castles, known for its formidable stone walls, black-and-white keep, and long restoration story after the 2016 earthquakes. Check current access areas before visiting.',image:'photo-1760222874080-ddecb226c65a',alt:'Kumamoto Castle framed by trees in the morning light',tags:['Culture']},
-];
+]
+window.DESTINATIONS=DESTINATIONS;
+window.REGIONS=REGIONS;
+window.MOODS=MOODS;

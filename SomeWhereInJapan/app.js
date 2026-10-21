@@ -248,8 +248,14 @@ function showPlace(place, index) {
   const requestId=++placeDialogRequest;
   const spotlight=PLACE_SPOTLIGHTS[place.name];
   const image=document.querySelector('#place-dialog-image');
-  image.src=`https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
-  image.alt=place.alt;
+  const visual=image.closest('.place-dialog-visual');
+  visual.classList.toggle('is-illustrated',!place.image);
+  visual.dataset.art=place.illustration||'place';
+  visual.dataset.title=place.name;
+  image.hidden=!place.image;
+  if(place.image) image.src=`https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
+  else image.removeAttribute('src');
+  image.alt=place.alt||'';
   document.querySelector('#place-dialog-number').textContent=String(index+1).padStart(2,'0');
   document.querySelector('#place-dialog-region').textContent=`${place.region} / JAPAN FIELD GUIDE`;
   document.querySelector('#place-dialog-title').textContent=place.name;
@@ -346,13 +352,19 @@ function renderDestinations() {
     card.className = 'destination-card';
     const imageWrap = document.createElement('div');
     imageWrap.className = 'card-image-wrap';
+    imageWrap.dataset.art=place.illustration||'place';
+    imageWrap.dataset.title=place.name;
     const image = document.createElement('img');
     image.className = 'card-image';
-    image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=950&q=82&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
-    image.alt = place.alt;
+    image.alt = place.alt||'';
     image.loading = index < 3 ? 'eager' : 'lazy';
     image.decoding = 'async';
-    image.addEventListener('error', () => { image.hidden = true; imageWrap.classList.add('image-fallback'); }, {once:true});
+    if(place.image){
+      image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=950&q=82&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
+      image.addEventListener('error', () => { image.hidden = true; imageWrap.classList.add('image-fallback'); }, {once:true});
+    }else{
+      image.hidden=true;imageWrap.classList.add('image-fallback','illustrated-place');
+    }
     const photoButton = document.createElement('button');
     photoButton.className = 'card-photo'; photoButton.type = 'button';
     photoButton.setAttribute('aria-label', `View ${place.name} place details`);
@@ -473,7 +485,8 @@ if (['short','week','long'].includes(sharedPlan.get('days'))) tripLengthSelect.v
 if ([...journeyRegionSelect.options].some(option => option.value === sharedPlan.get('region'))) journeyRegionSelect.value = sharedPlan.get('region');
 if ([...journeyStyleSelect.options].some(option => option.value === sharedPlan.get('style'))) journeyStyleSelect.value = sharedPlan.get('style');
 function getPlacesForMonth(monthIndex) {
-  return new Set([...MONTH_GUIDE[monthIndex].places, ...MONTH_EXTRA_PLACES[monthIndex]].map(([name]) => name));
+  const expanded=DESTINATIONS.filter(place=>place.months?.includes(monthIndex+1)).map(place=>[place.name,place.seasonReason||'A seasonal place; check local conditions before visiting.']);
+  return new Set([...MONTH_GUIDE[monthIndex].places, ...MONTH_EXTRA_PLACES[monthIndex], ...expanded].map(([name]) => name));
 }
 function updateMonthSearchUI() {
   const monthName = MONTHS[Number(monthSelect.value)];
@@ -504,7 +517,8 @@ function renderMonthGuide() {
   };
   document.querySelector('#trip-length-guidance').textContent = durationNotes[tripLengthSelect.value];
   const recommendationLimit = {short:6, week:9, long:12}[tripLengthSelect.value];
-  const picks = [...guide.places, ...MONTH_EXTRA_PLACES[monthIndex]];
+  const expanded=DESTINATIONS.filter(place=>place.months?.includes(monthIndex+1)).map(place=>[place.name,place.seasonReason||'A seasonal place; check local conditions before visiting.']);
+  const picks = [...guide.places, ...MONTH_EXTRA_PLACES[monthIndex], ...expanded];
   const uniquePicks = picks.filter((pick, index) => picks.findIndex(item => item[0] === pick[0]) === index);
   let tailoredPicks = journeyStyleSelect.value === 'local'
     ? DESTINATIONS.filter(place => LOCAL_FIND_NAMES.has(place.name)).map(place => {
@@ -524,7 +538,9 @@ function renderMonthGuide() {
     if (!place) return null;
     const card = document.createElement('button'); card.type = 'button'; card.className = 'month-pick';
     card.setAttribute('aria-label', `View ${place.name}: ${reason}`);
-    const image = document.createElement('img'); image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=600&q=80&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`; image.alt = ''; image.loading = 'lazy';
+    let image;
+    if(place.image){image=document.createElement('img');image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=600&q=80&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;image.alt='';image.loading='lazy';}
+    else{image=document.createElement('span');image.className='month-pick-art';image.dataset.art=place.illustration||'place';image.dataset.title=place.name;image.setAttribute('aria-hidden','true');}
     const copy = document.createElement('span'); copy.className = 'month-pick-copy';
     const region = document.createElement('span'); region.className = 'month-pick-region'; region.textContent = place.place;
     const title = document.createElement('span'); title.className = 'month-pick-title'; title.textContent = place.name;

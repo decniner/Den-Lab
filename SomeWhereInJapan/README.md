@@ -1,6 +1,6 @@
 # Somewhere in Japan
 
-A cinematic, responsive field guide to memorable places across Japan's nine regions, with a Tokyo-based day-trip field desk and five detailed pilot routes.
+A cinematic, responsive field guide to 150 memorable places across Japan's nine regions, with a Tokyo-based day-trip field desk and five detailed, route-tested Tokyo day trips plus a 150-place nationwide guide.
 
 ## Preview
 
@@ -8,7 +8,7 @@ Open `index.html` in a modern browser. If your browser restricts local files, ru
 
 ## Content and imagery
 
-The destination collection is in `destinations.js`; search, region filters, device-local saved places, and shareable region links render from that data. Destination and experience photography is served from Unsplash using image IDs. The Kyoto Fushimi Inari and Miyajima Itsukushima images are verified against their pictured landmarks. The hero image is `photo-1743731852847-044ec22a00bc`; destination records list Unsplash as source. Image availability and licensing terms are governed by the source provider. Replace with licensed local assets before redistribution if your publishing policy requires it. Image cards retain a styled fallback when a remote image cannot load.
+The destination collection loads from `destinations.js` and `destination-expansion.js`, for 150 unique places across all nine regions. The 40 added entries include major theme parks, museums, castles, city landmarks, hot springs, and natural sites. Each includes month-aware editorial guidance and a distinctive illustrated visual while verified photography is curated. The full search and month planner include these places. The Tokyo day-trip desk remains five researched, cost-estimated routes; it is not presented as pricing or route research for all 150 destinations. The destination collection is in `destinations.js`; search, region filters, device-local saved places, and shareable region links render from that data. Destination and experience photography is served from Unsplash using image IDs. The Kyoto Fushimi Inari and Miyajima Itsukushima images are verified against their pictured landmarks. The hero image is `photo-1743731852847-044ec22a00bc`; destination records list Unsplash as source. Image availability and licensing terms are governed by the source provider. Replace with licensed local assets before redistribution if your publishing policy requires it. Image cards retain a styled fallback when a remote image cannot load.
 
 Planning links point to Japan National Tourism Organization guides. No live schedules, prices, reservations, or booking claims are provided.
 
