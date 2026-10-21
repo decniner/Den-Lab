@@ -66,7 +66,7 @@ function updatePlaceDialogSave(place) {
 
 function showPlace(place, index) {
   const image = document.querySelector('#place-dialog-image');
-  image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88`;
+  image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
   image.alt = place.alt;
   document.querySelector('#place-dialog-number').textContent = String(index + 1).padStart(2, '0');
   document.querySelector('#place-dialog-region').textContent = `${place.region} / JAPAN FIELD GUIDE`;
@@ -105,7 +105,7 @@ function renderDestinations() {
     imageWrap.className = 'card-image-wrap';
     const image = document.createElement('img');
     image.className = 'card-image';
-    image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=950&q=82`;
+    image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=950&q=82&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
     image.alt = place.alt;
     image.loading = index < 3 ? 'eager' : 'lazy';
     image.decoding = 'async';
@@ -203,7 +203,7 @@ function renderMonthGuide() {
     if (!place) return null;
     const card = document.createElement('button'); card.type = 'button'; card.className = 'month-pick';
     card.setAttribute('aria-label', `View ${place.name}: ${reason}`);
-    const image = document.createElement('img'); image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=600&q=80`; image.alt = ''; image.loading = 'lazy';
+    const image = document.createElement('img'); image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=600&q=80&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`; image.alt = ''; image.loading = 'lazy';
     const copy = document.createElement('span'); copy.className = 'month-pick-copy';
     const region = document.createElement('span'); region.className = 'month-pick-region'; region.textContent = `${place.region} / ${place.region}`;
     const title = document.createElement('span'); title.className = 'month-pick-title'; title.textContent = place.name;
