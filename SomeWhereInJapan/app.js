@@ -371,7 +371,8 @@ function updateMonthSearchUI() {
   const toggle = document.querySelector('#month-filter-toggle');
   document.querySelector('#month-filter-name').textContent = monthName;
   toggle.setAttribute('aria-pressed', String(monthSearchEnabled));
-  toggle.textContent = monthSearchEnabled ? `Searching ${monthName} places` : `Add ${monthName} places to search`;
+  document.querySelector('#month-filter-prefix').textContent = monthSearchEnabled ? 'Showing' : 'Add';
+  document.querySelector('#month-filter-suffix').textContent = monthSearchEnabled ? 'seasonal places' : 'places to search';
   document.querySelector('#month-filter-clear').hidden = !monthSearchEnabled;
   document.querySelector('#month-filter-description').textContent = monthSearchEnabled ? `The destination search is showing ${monthName} seasonal picks. Search words, region, mood, and saved filters still apply.` : 'Choose a travel month above, then include its seasonal places in the full destination search.';
 }
