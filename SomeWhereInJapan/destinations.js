@@ -69,3 +69,4 @@ const DESTINATIONS = [
  {region:'Okinawa',name:'Cape Manzamo’s sea cliffs',place:'Onna · Okinawa',description:'A limestone headland rises above a brilliantly blue stretch of East China Sea.',image:'photo-1500375592092-40eb2168fd21',alt:'Blue sea meeting a rocky tropical coastline',tags:['Nature','Islands']},
  {region:'Okinawa',name:'Zamami’s island-blue days',place:'Kerama Islands · Okinawa',description:'Take a ferry to a small island for snorkeling coves, hillside lookouts, and long beach afternoons.',image:'photo-1500375592092-40eb2168fd21',alt:'Clear turquoise water around a tropical island',tags:['Islands','Nature','Slow travel']}
 ];
+
