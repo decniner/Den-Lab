@@ -54,9 +54,9 @@ function renderRegionSpotlight(region) {
   copy.textContent = region === 'All places'
     ? 'Nine regions, from Hokkaido’s northern forests to Okinawa’s subtropical islands. Pick a number on the map or use the list.'
     : places[0]?.description || 'Browse the places, stories and seasonal notes in this region.';
-  link.textContent = region === 'All places' ? 'Browse all 150 places ↗' : `Explore ${places.length} ${region} places ↗`;
+  link.textContent = region === 'All places' ? 'Browse all 180 places ↗' : `Explore ${places.length} ${region} places ↗`;
   link.href = '#destinations';
-  link.setAttribute('aria-label', region === 'All places' ? 'Browse all 150 places' : `Browse ${places.length} places in ${region}`);
+  link.setAttribute('aria-label', region === 'All places' ? 'Browse all 180 places' : `Browse ${places.length} places in ${region}`);
   const picks = document.querySelector('#region-spotlight-picks');
   if (picks) {
     const choices = region === 'All places' ? [...new Map(DESTINATIONS.map(place => [place.region, place])).values()].slice(0, 3) : places.slice(0, 3);
@@ -281,13 +281,17 @@ function showPlace(place, index) {
   const spotlight=PLACE_SPOTLIGHTS[place.name];
   const image=document.querySelector('#place-dialog-image');
   const visual=image.closest('.place-dialog-visual');
-  visual.classList.toggle('is-illustrated',!place.image);
+  const photoUrl=place.photo?.url || (place.image ? `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0` : '');
+  visual.classList.toggle('is-illustrated',!photoUrl);
   visual.dataset.art=place.illustration||'place';
   visual.dataset.title=place.name;
-  image.hidden=!place.image;
-  if(place.image) image.src=`https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
+  image.hidden=!photoUrl;
+  if(photoUrl) image.src=photoUrl;
   else image.removeAttribute('src');
-  image.alt=place.alt||'';
+  image.alt=place.photo ? (place.photo.alt || place.alt || place.name) : (place.alt||'');
+  const photoCredit=document.querySelector('#place-dialog-photo-credit');
+  photoCredit.hidden=!place.photo;
+  if(place.photo){photoCredit.href=place.photo.source;photoCredit.textContent=`Photo: ${place.photo.credit} | open file and license`;}
   document.querySelector('#place-dialog-number').textContent=String(index+1).padStart(2,'0');
   document.querySelector('#place-dialog-region').textContent=`${place.region} / JAPAN FIELD GUIDE`;
   document.querySelector('#place-dialog-title').textContent=place.name;
@@ -391,8 +395,8 @@ function renderDestinations() {
     image.alt = place.alt||'';
     image.loading = index < 3 ? 'eager' : 'lazy';
     image.decoding = 'async';
-    if(place.image){
-      image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=950&q=82&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
+    if(place.photo?.url || place.image){
+      image.src = place.photo?.url || `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=950&q=82&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
       image.addEventListener('error', () => { image.hidden = true; imageWrap.classList.add('image-fallback'); }, {once:true});
     }else{
       image.hidden=true;imageWrap.classList.add('image-fallback','illustrated-place');
@@ -410,7 +414,8 @@ function renderDestinations() {
     saveButton.setAttribute('aria-pressed', String(saved.has(place.name)));
     saveButton.textContent = saved.has(place.name) ? '♥' : '♡';
     saveButton.addEventListener('click', () => toggleSavedPlace(place));
-    imageWrap.append(photoButton, region, number, saveButton);
+    if(place.photo){const credit=document.createElement('a');credit.className='card-photo-credit';credit.href=place.photo.source;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent='PHOTO / COMMONS';credit.setAttribute('aria-label',`Open photo credit and license for ${place.name}`);imageWrap.append(photoButton,credit,region,number,saveButton);}
+    else imageWrap.append(photoButton, region, number, saveButton);
     const copy = document.createElement('div'); copy.className = 'card-copy';
     const location = document.createElement('span'); location.className = 'card-place'; location.textContent = place.region;
     const row = document.createElement('div'); row.className = 'card-title-row';
