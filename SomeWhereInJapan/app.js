@@ -6,6 +6,7 @@ const search = document.querySelector('#place-search');
 const savedToggle = document.querySelector('#saved-toggle');
 const savedCount = document.querySelector('#saved-count');
 const savedNote = document.querySelector('#saved-note');
+const placeDialog = document.querySelector('#place-dialog');
 let activeRegion = 'All places';
 let savedOnly = false;
 let query = '';
@@ -54,6 +55,37 @@ function destinationLink(place) {
   return `https://www.japan.travel/en/search/?q=${query}`;
 }
 
+function toggleSavedPlace(place) {
+  if (saved.has(place.name)) saved.delete(place.name); else saved.add(place.name);
+  persistSaved(); updateSavedUI(); renderDestinations();
+  if (placeDialog.open) updatePlaceDialogSave(place);
+}
+
+function updatePlaceDialogSave(place) {
+  const button = document.querySelector('#place-dialog-save');
+  const isSaved = saved.has(place.name);
+  button.textContent = isSaved ? '♥ Saved to your places' : '♡ Save this place';
+  button.setAttribute('aria-pressed', String(isSaved));
+  button.setAttribute('aria-label', `${isSaved ? 'Remove' : 'Save'} ${place.name}`);
+}
+
+function showPlace(place, index) {
+  const image = document.querySelector('#place-dialog-image');
+  image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88`;
+  image.alt = place.alt;
+  document.querySelector('#place-dialog-number').textContent = String(index + 1).padStart(2, '0');
+  document.querySelector('#place-dialog-region').textContent = `${place.region} / JAPAN FIELD GUIDE`;
+  document.querySelector('#place-dialog-title').textContent = place.name;
+  document.querySelector('#place-dialog-area').textContent = place.place;
+  document.querySelector('#place-dialog-description').textContent = place.description;
+  document.querySelector('#place-dialog-official').href = destinationLink(place);
+  const tags = document.querySelector('#place-dialog-tags');
+  tags.replaceChildren(...place.tags.map(tag => { const pill = document.createElement('span'); pill.textContent = tag; return pill; }));
+  updatePlaceDialogSave(place);
+  document.querySelector('#place-dialog-save').onclick = () => toggleSavedPlace(place);
+  placeDialog.showModal();
+}
+
 function renderDestinations() {
   const normalized = query.trim().toLocaleLowerCase();
   const places = DESTINATIONS.filter(place => {
@@ -84,6 +116,11 @@ function renderDestinations() {
     image.loading = index < 3 ? 'eager' : 'lazy';
     image.decoding = 'async';
     image.addEventListener('error', () => { image.hidden = true; imageWrap.classList.add('image-fallback'); }, {once:true});
+    const photoButton = document.createElement('button');
+    photoButton.className = 'card-photo'; photoButton.type = 'button';
+    photoButton.setAttribute('aria-label', `View ${place.name} place details`);
+    photoButton.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
+    photoButton.append(image);
     const region = document.createElement('span'); region.className = 'card-region'; region.textContent = place.region;
     const number = document.createElement('span'); number.className = 'card-index'; number.textContent = String(index + 1).padStart(2, '0');
     const saveButton = document.createElement('button');
@@ -91,11 +128,8 @@ function renderDestinations() {
     saveButton.setAttribute('aria-label', `${saved.has(place.name) ? 'Remove' : 'Save'} ${place.name}`);
     saveButton.setAttribute('aria-pressed', String(saved.has(place.name)));
     saveButton.textContent = saved.has(place.name) ? '♥' : '♡';
-    saveButton.addEventListener('click', () => {
-      if (saved.has(place.name)) saved.delete(place.name); else saved.add(place.name);
-      persistSaved(); updateSavedUI(); renderDestinations();
-    });
-    imageWrap.append(image, region, number, saveButton);
+    saveButton.addEventListener('click', () => toggleSavedPlace(place));
+    imageWrap.append(photoButton, region, number, saveButton);
     const copy = document.createElement('div'); copy.className = 'card-copy';
     const location = document.createElement('span'); location.className = 'card-place'; location.textContent = place.region;
     const row = document.createElement('div'); row.className = 'card-title-row';
@@ -106,7 +140,9 @@ function renderDestinations() {
     const description = document.createElement('p'); description.className = 'card-description'; description.textContent = place.description;
     const tags = document.createElement('div'); tags.className = 'card-tags';
     place.tags.forEach(tag => { const pill = document.createElement('span'); pill.textContent = tag; tags.append(pill); });
-    copy.append(location, row, area, description, tags);
+    const details = document.createElement('button'); details.className = 'card-details'; details.type = 'button'; details.textContent = 'View place story'; details.setAttribute('aria-label', `View ${place.name} place story`);
+    details.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
+    copy.append(location, row, area, description, tags, details);
     card.append(imageWrap, copy);
     return card;
   }));
@@ -146,6 +182,8 @@ document.querySelectorAll('[data-map-region]').forEach(link => link.addEventList
 }));
 const initialRegion = decodeURIComponent(window.location.hash.replace(/^#region=/, ''));
 if (REGIONS.includes(initialRegion)) { activeRegion = initialRegion; renderFilters(); renderDestinations(); }
+document.querySelector('#place-dialog-close').addEventListener('click', () => placeDialog.close());
+placeDialog.addEventListener('click', event => { if (event.target === placeDialog) placeDialog.close(); });
 
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('#mobile-nav');
