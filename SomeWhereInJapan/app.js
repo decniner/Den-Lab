@@ -22,6 +22,26 @@ const LOCAL_FIND_NAMES = new Set([
   'Ouchi-juku\u2019s thatched lanes','Shakotan\u2019s blue coast','Kawagoe, the little Edo',
   'Tottori\u2019s shifting dunes','Oshino Hakkai and Fuji views'
 ]);
+const LOCAL_FIND_DETAILS = {
+  'The blue of Biei': {spot:'Shirogane Blue Pond · lakeside boardwalk', query:'Shirogane Blue Pond, Biei, Hokkaido', why:'Mineral-rich water scatters light into the pond’s famous blue, set against standing larch trunks. Its color changes with weather and season.', source:'https://www.biei-hokkaido.jp/en/shirogane-blue-pond'},
+  'Oirase stream walk': {spot:'Ishigedo rest area to Ashura Rapids', query:'Ishigedo, Oirase Gorge, Aomori', why:'Follow the streamside path through forest to one of Oirase’s signature rapids; the longer trail continues for about 14 km between Yakeyama and Lake Towada.', source:'https://faq.japan-travel.jnto.go.jp/national-parks/parks/towada-hachimantai/see-and-do/oirase-trail/'},
+  'Hiraizumi\u2019s quiet temples': {spot:'Chūson-ji · Tsukimizaka approach and Konjikidō', query:'Chusonji Temple, Hiraizumi, Iwate', why:'Walk the cedar-lined approach to a temple complex preserving the 12th-century Golden Hall, one of Hiraizumi’s defining cultural treasures.', source:'https://www.chusonji.or.jp/language_en/'},
+  'Tazawa\u2019s clear blue': {spot:'Goza-no-ishi Shrine and lakeshore rock', query:'Goza-no-ishi Shrine, Lake Tazawa, Akita', why:'A vermilion torii frames the deep-blue lake from a rocky outcrop on the shore, with local legend adding a story to the view.', source:'https://www.city.semboku.akita.jp/en/sightseeing/spot/04_goza.html'},
+  'Aizu-Wakamatsu\u2019s samurai streets': {spot:'Nanukamachi-dōri · station-to-town stroll', query:'Nanukamachi-dori Street, Aizuwakamatsu, Fukushima', why:'A 700-metre walk past early-20th-century buildings, Aizu crafts, sweets shops, and sake breweries; begin at JR Nanukamachi Station.', source:'https://www.tohokukanko.jp/en/attractions/detail_1192.html'},
+  'Oze\u2019s open wetlands': {spot:'Hatomachi-tōge trailhead to Ozegahara Marsh', query:'Hatomachi-toge Pass, Oze National Park', why:'A beginner route reaches the broad marsh in about an hour, where boardwalks open onto mountain-backed wetlands. Stay on marked paths to protect the fragile marsh.', source:'https://oze-fnd.or.jp/wp4/wp-content/uploads/2023/04/english1_c.pdf'},
+  'Kiso Valley post towns': {spot:'Narai-juku · the old Nakasendō street', query:'Narai-juku, Shiojiri, Nagano', why:'Restored Edo-period buildings line a former post town on the historic route between Kyoto and Tokyo; pair the street with the Torii Pass trail if you want a longer walk.', source:'https://en.visitkiso.com/nakasendo/yabuhara-narai'},
+  'Lake Biwa\u2019s eastern shore': {spot:'Hikone Castle outer-moat walk', query:'Hikone Castle moat, Hikone, Shiga', why:'The moat-side route brings the old castle town and its surviving waterways into view. The city identifies surrounding moat-side areas as free-access, while the keep and other attractions have admission.', source:'https://japanheritage.jp/shiga/heritage/hikone-castle'},
+  'Onomichi\u2019s hillside lanes': {spot:'Senkoji Temple Path · Temple Walk', query:'Senkoji Temple Path, Onomichi, Hiroshima', why:'Climb and wander the sloping lanes linking old temples, stone paths, and views over Onomichi Channel; some sections are steep, so take your time.', source:'https://www.city.onomichi.hiroshima.jp/site/onomichikanko/1247.html'},
+  'Iwami Ginzan\u2019s forest paths': {spot:'Ōmori historic townscape to Ryūgenji Mabu mine tunnel', query:'Iwami Ginzan Park, Omori, Oda, Shimane', why:'Walk the preserved mining town and forest route to a publicly visitable mine tunnel. The tunnel is about 2.3 km one way from Iwami Ginzan Park, so allow time and wear walking shoes.', source:'https://www.ginzan-wm.jp/iwamiginzan_kankousyasama_oomori/'},
+  'The Iya Valley': {spot:'Ochiai Village viewpoint', query:'Ochiai Village Viewpoint, Miyoshi, Tokushima', why:'See a steep mountain settlement of thatched homes, stone walls, and terraced fields, an unusually intact picture of a remote valley village.', source:'https://www.japan.travel/en/spot/ma_188/'},
+  'Cape Ashizuri\u2019s ocean edge': {spot:'Cape Ashizuri Observatory and Lighthouse', query:'Cape Ashizuri Observatory, Tosashimizu, Kochi', why:'From Shikoku’s southern tip, the lookout opens across more than 270 degrees of Pacific horizon, with the white lighthouse as the landmark.', source:'https://kochi-tabi.jp/search_spot_infocenter.html?id=712'},
+  'Konpira-san\u2019s long climb': {spot:'Kotohira-gū · Omotesandō to the Main Shrine', query:'Kotohira-gu Main Shrine, Kotohira, Kagawa', why:'The approach climbs 785 stone steps through shrine gates, old lanterns, and smaller sanctuaries before reaching the main shrine. Pace the ascent and check current access notices.', source:'https://www.konpira.or.jp/articles/20200616_guide/article.htm'},
+  'Ouchi-juku\u2019s thatched lanes': {spot:'Ouchi-juku main street and Takakura Shrine first gate', query:'Ouchi-juku, Shimogo, Fukushima', why:'More than 30 preserved thatched-roof buildings line the former Edo-period post town; continue to the first shrine gate at the end of the street.', source:'https://www.tohokukanko.jp/en/attractions/detail_1546.html'},
+  'Shakotan\u2019s blue coast': {spot:'Shimamui Coast observation deck and Shirara Path', query:'Shimamui Coast, Shakotan, Hokkaido', why:'Look down over exceptionally clear blue water from the cliffside deck, then follow the coastal path toward Joro-ko Rock when conditions allow.', source:'https://www.visit-hokkaido.jp/en/spot/detail_10340.html'},
+  'Kawagoe, the little Edo': {spot:'Kurazukuri old town and Toki no Kane bell tower', query:'Toki no Kane, Kawagoe, Saitama', why:'The black storehouse-fronted street centers on Kawagoe’s time bell, which still rings four times a day and anchors the old merchant quarter.', source:'https://www.koedo.or.jp/en/kawagoe/'},
+  'Tottori\u2019s shifting dunes': {spot:'Umanose · the “Horse’s Back” dune ridge', query:'Umanose, Tottori Sand Dunes, Tottori', why:'Climb the shifting ridge for an uninterrupted view from the sand to the Sea of Japan; wind continually redraws the dune patterns.', source:'https://www.japan.travel/en/spot/949/'},
+  'Oshino Hakkai and Fuji views': {spot:'Waku Pond and the traditional waterwheel lanes', query:'Waku Pond, Oshino Hakkai, Yamanashi', why:'Waku Pond’s clear spring water, traditional thatched buildings, and nearby Mt. Fuji views make this a distinct stop among the village’s eight ponds.', source:'https://www.japan.travel/en/spot/1327/'}
+};
 const saved = new Set(readSaved());
 
 function readSaved() {
@@ -234,6 +254,18 @@ function showPlace(place, index) {
   document.querySelector('#place-dialog-area').textContent=place.place;
   document.querySelector('#place-dialog-description').textContent=place.description;
   document.querySelector('#place-dialog-story').textContent=placeStory(place,spotlight);
+  const localDetail=LOCAL_FIND_DETAILS[place.name];
+  const localGuide=document.querySelector('#place-dialog-local-guide');
+  localGuide.hidden=!localDetail;
+  if(localDetail){
+    document.querySelector('#place-dialog-local-spot').textContent=localDetail.spot;
+    document.querySelector('#place-dialog-local-why').textContent=localDetail.why;
+    const source=document.querySelector('#place-dialog-local-source');
+    source.href=localDetail.source;
+    const reviews=document.querySelector('#place-dialog-local-reviews');
+    reviews.href=placeMapSearch(localDetail.query);
+    reviews.setAttribute('aria-label',`Read current visitor reviews for ${localDetail.spot}`);
+  }
   const localTip=document.querySelector('#place-dialog-local-tip');
   localTip.hidden=!LOCAL_FIND_NAMES.has(place.name);
   if(!localTip.hidden) document.querySelector('#place-dialog-local-tip-copy').textContent=place.tags.includes('Nature')
@@ -256,7 +288,8 @@ function showPlace(place, index) {
   loadPlaceGallery(place,requestId);
 }
 function renderPlaceLocalGuide(place, spotlight) {
-  const destination=`${place.name}, ${place.place}`;
+  const localDetail=LOCAL_FIND_DETAILS[place.name];
+  const destination=localDetail?.query || `${place.name}, ${place.place}`;
   const listingUrl=placeMapSearch(destination);
   const contactNote=document.querySelector('#place-dialog-contact-note');
   const contactLinks=document.querySelector('#place-dialog-contact-links');
@@ -287,7 +320,7 @@ function renderPlaceLocalGuide(place, spotlight) {
   const list=document.querySelector('#place-dialog-highlights');
   list.replaceChildren(...highlights.slice(0,3).map(text=>{const item=document.createElement('li');item.textContent=text;return item;}));
 
-  const reviewsQuery=encodeURIComponent(`${place.name} ${place.place}`);
+  const reviewsQuery=encodeURIComponent(destination);
   document.querySelector('#place-dialog-review-links').replaceChildren(
     externalAnchor('Read recent Google Maps reviews',listingUrl,'place-info-link'),
     externalAnchor('Search TripAdvisor traveler reviews',`https://www.tripadvisor.com/Search?q=${reviewsQuery}`,'place-info-link')
