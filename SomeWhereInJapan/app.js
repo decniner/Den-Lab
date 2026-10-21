@@ -230,6 +230,7 @@ function showPlace(place, index) {
   renderPlacePoints(place,spotlight);
   renderPlaceRoutes(place);
   document.querySelector('#place-dialog-access-note').textContent=spotlight?.access || 'Route links open current map directions and transport searches for this exact place. Check seasonal schedules and local visitor notices before travelling.';
+  renderPlaceLocalGuide(place, spotlight);
   const photoQuery=`${place.name} ${place.place}`;
   document.querySelector('#place-dialog-photo-search').href=`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(photoQuery)}`;
   document.querySelector('#place-dialog-youtube').href=`https://www.youtube.com/results?search_query=${encodeURIComponent(`${place.name} ${place.place} travel walk`)}`;
@@ -239,6 +240,44 @@ function showPlace(place, index) {
   updatePlaceDialogSave(place);
   placeDialog.showModal();
   loadPlaceGallery(place,requestId);
+}
+function renderPlaceLocalGuide(place, spotlight) {
+  const destination=`${place.name}, ${place.place}`;
+  const listingUrl=placeMapSearch(destination);
+  const contactNote=document.querySelector('#place-dialog-contact-note');
+  const contactLinks=document.querySelector('#place-dialog-contact-links');
+  if(spotlight?.phone){
+    contactNote.textContent='Call the published visitor contact for questions about access, hours, or facilities.';
+    const call=document.createElement('a');call.className='place-info-link';call.href=`tel:${spotlight.phone.replace(/[^+\d]/g,'')}`;call.textContent=`Call ${spotlight.phone}`;
+    contactLinks.replaceChildren(call,externalAnchor('Check the official map listing',listingUrl,'place-info-link'));
+  }else{
+    contactNote.textContent='Open the place listing to see its published phone number and tap Call when the venue provides one. Natural sites may be managed by a local visitor center instead.';
+    contactLinks.replaceChildren(externalAnchor('View phone and contact details',listingUrl,'place-info-link'));
+  }
+
+  const locality=(place.place.split(/[·•]/)[0]||place.place).trim();
+  document.querySelector('#place-dialog-stay-note').textContent=`Use ${locality} as your starting search area. Compare travel time back to the place, the last return connection, and seasonal availability before booking.`;
+  const lodgingQuery=encodeURIComponent(`hotels and inns near ${destination}`);
+  const traditionalQuery=encodeURIComponent(`ryokan and guesthouses near ${destination}`);
+  document.querySelector('#place-dialog-stay-links').replaceChildren(
+    externalAnchor(`Find hotels and inns near ${locality}`,`https://www.google.com/maps/search/?api=1&query=${lodgingQuery}`,'place-info-link'),
+    externalAnchor(`Explore ryokan and guesthouses near ${locality}`,`https://www.google.com/maps/search/?api=1&query=${traditionalQuery}`,'place-info-link')
+  );
+
+  const highlights=[place.description];
+  if(place.tags.includes('Nature')) highlights.push('Scenery and outdoor time are central here; check weather, trail access, and seasonal conditions close to your visit.');
+  if(place.tags.includes('Culture')) highlights.push('Give the defining architecture, local history, or cultural site time instead of treating it as a quick photo stop.');
+  if(place.tags.includes('Food')) highlights.push('Leave room to explore the surrounding food scene and check opening days or reservations.');
+  if(place.tags.includes('Islands')) highlights.push('The island setting is part of the experience; confirm ferry or flight times and leave a buffer for weather.');
+  if(place.tags.includes('Slow travel')) highlights.push('A slower pace suits this stop; leave time for local transport and unplanned discoveries.');
+  const list=document.querySelector('#place-dialog-highlights');
+  list.replaceChildren(...highlights.slice(0,3).map(text=>{const item=document.createElement('li');item.textContent=text;return item;}));
+
+  const reviewsQuery=encodeURIComponent(`${place.name} ${place.place}`);
+  document.querySelector('#place-dialog-review-links').replaceChildren(
+    externalAnchor('Read recent Google Maps reviews',listingUrl,'place-info-link'),
+    externalAnchor('Search TripAdvisor traveler reviews',`https://www.tripadvisor.com/Search?q=${reviewsQuery}`,'place-info-link')
+  );
 }
 document.querySelector('#place-dialog-close').addEventListener('click',()=>placeDialog.close());
 
