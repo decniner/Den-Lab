@@ -50,11 +50,6 @@ function renderFilters() {
   }));
 }
 
-function youtubeSearchUrl(place) {
-  const query = encodeURIComponent(`${place.name} ${place.place} Japan travel`);
-  return `https://www.youtube.com/results?search_query=${query}`;
-}
-
 function toggleSavedPlace(place) {
   if (saved.has(place.name)) saved.delete(place.name); else saved.add(place.name);
   persistSaved(); updateSavedUI(); renderDestinations();
@@ -70,7 +65,6 @@ function updatePlaceDialogSave(place) {
 }
 
 function showPlace(place, index) {
-  resetPlaceVideo();
   const image = document.querySelector('#place-dialog-image');
   image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88`;
   image.alt = place.alt;
@@ -79,23 +73,6 @@ function showPlace(place, index) {
   document.querySelector('#place-dialog-title').textContent = place.name;
   document.querySelector('#place-dialog-area').textContent = place.place;
   document.querySelector('#place-dialog-description').textContent = place.description;
-  const moreVideos = document.querySelector('#place-dialog-youtube');
-  moreVideos.href = youtubeSearchUrl(place);
-  const watchButton = document.querySelector('#place-dialog-watch');
-  watchButton.textContent = place.videoId ? 'Watch featured video' : 'Search videos for this place';
-  const watchIcon = document.createElement('span'); watchIcon.textContent = place.videoId ? ' ▶' : ' ↗'; watchButton.append(watchIcon);
-  document.querySelector('#place-dialog-note').textContent = place.videoId
-    ? `${place.videoTitle}. Plays here in the place story.`
-    : 'No place-specific video is curated here yet. This opens matching YouTube results.';
-  watchButton.onclick = () => {
-    if (!place.videoId) { window.open(youtubeSearchUrl(place), '_blank', 'noopener'); return; }
-    document.querySelector('#place-dialog-video').src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(place.videoId)}?autoplay=1&rel=0`;
-    document.querySelector('#place-dialog-video').hidden = false;
-    image.hidden = true;
-    document.querySelector('#place-dialog-number').hidden = true;
-    watchButton.hidden = true;
-    document.querySelector('#place-dialog-return').hidden = false;
-  };
   const tags = document.querySelector('#place-dialog-tags');
   tags.replaceChildren(...place.tags.map(tag => { const pill = document.createElement('span'); pill.textContent = tag; return pill; }));
   updatePlaceDialogSave(place);
@@ -151,7 +128,7 @@ function renderDestinations() {
     const location = document.createElement('span'); location.className = 'card-place'; location.textContent = place.region;
     const row = document.createElement('div'); row.className = 'card-title-row';
     const title = document.createElement('h3'); title.className = 'card-title'; title.textContent = place.name;
-    const link = document.createElement('button'); link.className = 'card-arrow'; link.type = 'button'; link.setAttribute('aria-label', `Open ${place.name} story${place.videoId ? ' and featured video' : ' and video search'}`); link.title = `Open ${place.name} story`; link.textContent = place.videoId ? '▶' : '↗'; link.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
+    const link = document.createElement('button'); link.className = 'card-arrow'; link.type = 'button'; link.setAttribute('aria-label', `Open ${place.name} story`); link.title = `Open ${place.name} story`; link.textContent = '↗'; link.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
     row.append(title, link);
     const area = document.createElement('p'); area.className = 'card-area'; area.textContent = place.place;
     const description = document.createElement('p'); description.className = 'card-description'; description.textContent = place.description;
@@ -190,6 +167,58 @@ document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && document.activeElement === search) { search.value = ''; query = ''; renderDestinations(); search.blur(); }
 });
 
+const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const MONTH_GUIDE = [
+  {summary:'Find clear winter skies in the south, snow-country quiet in the north, and a warm soak between the two.',note:'Pack for very different temperatures between Hokkaido and Okinawa.',places:[['Ginzan after dark','Lantern-lit snow-country nights'],['Otaru by lamplight','A wintry canal and old port streets'],['Kerama blue','Mild island days in the far south']]},
+  {summary:'Winter is still in full color: drift ice and snow festivals up north, early blossoms and island light down south.',note:'Hokkaido is deeply wintry; Okinawa is much milder. Check local conditions before booking outdoor activities.',places:[['Shiretoko’s wild edge','Winter wilderness and drift-ice season'],['Ginzan after dark','Snowy onsen atmosphere'],['Naha, island time','Ryukyu culture in a gentler winter']]},
+  {summary:'Spring begins in the south and moves north. Catch the first warmth, gardens, and the season’s early color.',note:'Blossom dates shift each year and progress northward; use the latest regional forecast if sakura is your priority.',places:[['Naha, island time','A warm-weather start to spring'],['Kyoto at first light','Shrine paths before the busy season'],['Tokyo, in layers','Parks, neighborhoods, and city spring']]},
+  {summary:'A classic month for blossoms, garden walks, and long evenings outdoors, with color arriving at different times across Japan.',note:'Peak blossoms vary by region and year. Popular routes fill quickly around the spring holiday period.',places:[['Kyoto at first light','Temple lanes and spring gardens'],['Tokyo, in layers','City parks and neighborhood walks'],['Miyajima tide lines','Island scenery and a memorable shoreline']]},
+  {summary:'Fresh green landscapes and comfortable days make this a lovely month to explore beyond the big-city route.',note:'Japan’s Golden Week holiday falls in late April and early May; reserve transport and stays early or travel outside the busiest dates.',places:[['Kanazawa, unhurried','Garden paths and historic lanes'],['Matsushima Bay','Island-dotted coastal views'],['Yakushima, ancient green','Mossy forest trails in the subtropical south']]},
+  {summary:'A quieter, greener interlude for gardens, forest walks, and places that feel especially alive after rain.',note:'The rainy season affects much of Japan in June, though timing differs by region; Hokkaido is generally less affected.',places:[['Yakushima, ancient green','Rain-fed cedar forests'],['Kyoto at first light','Lush shrine paths and gardens'],['The blue of Biei','Hokkaido’s green interior before high summer']]},
+  {summary:'High summer opens the mountains and northern flower fields. Head north or uphill for cooler air and wide horizons.',note:'Furano’s lavender is usually a July highlight; mountain weather can change quickly. Check official trail and climbing openings.',places:[['Furano in bloom','Lavender fields in their summer window'],['Daisetsuzan high country','Alpine scenery in Hokkaido'],['Fuji, from the water','Lakeside views beneath the mountain']]},
+  {summary:'Festival nights, alpine escapes, and brilliant island water define the high summer mood.',note:'Expect heat and humidity in many cities; allow breaks, hydration, and flexible plans during very hot days.',places:[['Kerama blue','Clear-water island days'],['Daisetsuzan high country','Cooler trails and open mountain views'],['Miyajima tide lines','An island escape with changing tides']]},
+  {summary:'Summer lingers in the south while the northern highlands begin to turn toward fall. A month for flexible plans.',note:'Heat and typhoon risk can continue; check forecasts and transport advisories close to your travel dates.',places:[['Nikko in the cedars','Forest air and mountain scenery'],['Shiretoko’s wild edge','Remote northern landscapes'],['Yakushima, ancient green','A lush island for unhurried nature trips']]},
+  {summary:'Crisp walking weather arrives, with early autumn color in the north and high country and harvest flavors nationwide.',note:'Foliage appears first in colder northern and higher-altitude areas; central and southern cities usually change later.',places:[['Nikko in the cedars','Mountain forests entering autumn'],['Shiretoko’s wild edge','Northern wilderness in fall'],['Fuji, from the water','Clearer days around the Fuji Five Lakes']]},
+  {summary:'Autumn color moves into gardens, temple paths, and city parks, while the air turns crisp and clear.',note:'Peak foliage moves from north to south and changes year to year. Popular Kyoto sights are busiest around peak color.',places:[['Kyoto at first light','Historic paths and autumn gardens'],['Kanazawa, unhurried','Garden and teahouse-lane season'],['Nikko in the cedars','Mountain shrines among fall color']]},
+  {summary:'Choose your winter: northern snow scenes, cozy onsen towns, or a gentler island escape in the far south.',note:'The north can be snowy and cold while Okinawa stays relatively mild; plan clothing and transfers by region.',places:[['Ginzan after dark','A classic winter onsen atmosphere'],['Hakodate from above','Harbor lights on a cold clear night'],['Kerama blue','A slower, mild-weather island break']]}
+];
+const monthSelect = document.querySelector('#travel-month');
+const tripLengthSelect = document.querySelector('#trip-length');
+monthSelect.replaceChildren(...MONTHS.map((month, index) => { const option = document.createElement('option'); option.value = String(index); option.textContent = month; return option; }));
+monthSelect.value = String(new Date().getMonth());
+function renderMonthGuide() {
+  const monthIndex = Number(monthSelect.value);
+  const guide = MONTH_GUIDE[monthIndex];
+  document.querySelector('#month-name-heading').textContent = MONTHS[monthIndex];
+  document.querySelector('#month-summary').textContent = guide.summary;
+  document.querySelector('#month-timing-note').textContent = guide.note;
+  const durationNotes = {
+    short:'For 3–5 days, choose one compact region and enjoy it at an unhurried pace.',
+    week:'For 6–9 days, pair two nearby bases and leave room for a day trip.',
+    long:'For 10–14 days, combine two or three connected regions; allow time for longer transfers.'
+  };
+  document.querySelector('#trip-length-guidance').textContent = durationNotes[tripLengthSelect.value];
+  const cards = guide.places.map(([name, reason]) => {
+    const place = DESTINATIONS.find(item => item.name === name);
+    if (!place) return null;
+    const card = document.createElement('button'); card.type = 'button'; card.className = 'month-pick';
+    card.setAttribute('aria-label', `View ${place.name}: ${reason}`);
+    const image = document.createElement('img'); image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=600&q=80`; image.alt = ''; image.loading = 'lazy';
+    const copy = document.createElement('span'); copy.className = 'month-pick-copy';
+    const region = document.createElement('span'); region.className = 'month-pick-region'; region.textContent = `${place.region} / ${place.region}`;
+    const title = document.createElement('span'); title.className = 'month-pick-title'; title.textContent = place.name;
+    const detail = document.createElement('span'); detail.className = 'month-pick-reason'; detail.textContent = reason;
+    const action = document.createElement('span'); action.className = 'month-pick-action'; action.textContent = 'VIEW PLACE ↗';
+    copy.append(region,title,detail,action); card.append(image,copy);
+    card.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
+    return card;
+  }).filter(Boolean);
+  document.querySelector('#month-recommendations').replaceChildren(...cards);
+}
+monthSelect.addEventListener('change', renderMonthGuide);
+tripLengthSelect.addEventListener('change', renderMonthGuide);
+renderMonthGuide();
+
 renderFilters();
 renderDestinations();
 updateSavedUI();
@@ -200,17 +229,6 @@ document.querySelectorAll('[data-map-region]').forEach(link => link.addEventList
 const initialRegion = decodeURIComponent(window.location.hash.replace(/^#region=/, ''));
 if (REGIONS.includes(initialRegion)) { activeRegion = initialRegion; renderFilters(); renderDestinations(); }
 document.querySelector('#place-dialog-close').addEventListener('click', () => placeDialog.close());
-function resetPlaceVideo() {
-  const frame = document.querySelector('#place-dialog-video');
-  if (!frame) return;
-  frame.src = ''; frame.hidden = true;
-  document.querySelector('#place-dialog-image').hidden = false;
-  document.querySelector('#place-dialog-number').hidden = false;
-  document.querySelector('#place-dialog-watch').hidden = false;
-  document.querySelector('#place-dialog-return').hidden = true;
-}
-document.querySelector('#place-dialog-return').addEventListener('click', resetPlaceVideo);
-placeDialog.addEventListener('close', resetPlaceVideo);
 placeDialog.addEventListener('click', event => { if (event.target === placeDialog) placeDialog.close(); });
 
 const menuToggle = document.querySelector('.menu-toggle');
