@@ -11,11 +11,12 @@ vm.createContext(scope);
 vm.runInContext(fs.readFileSync(path.join(site, 'destinations.js'), 'utf8'), scope);
 vm.runInContext(fs.readFileSync(path.join(site, 'destination-expansion.js'), 'utf8'), scope);
 vm.runInContext(fs.readFileSync(path.join(site, 'destination-photo-expansion.js'), 'utf8'), scope);
+vm.runInContext(fs.readFileSync(path.join(site, 'destination-expansion-2.js'), 'utf8'), scope);
 
-test('nationwide destination catalogue has 180 unique entries across all regions', () => {
+test('nationwide destination catalogue has 230 unique entries across all regions', () => {
   const places = scope.DESTINATIONS;
-  assert.equal(places.length, 180);
-  assert.equal(new Set(places.map(place => place.name)).size, 180);
+  assert.equal(places.length, 230);
+  assert.equal(new Set(places.map(place => place.name)).size, 230);
   assert.deepEqual([...new Set(places.map(place => place.region))].sort(), [
     'Chubu', 'Chugoku', 'Hokkaido', 'Kansai', 'Kanto', 'Kyushu', 'Okinawa', 'Shikoku', 'Tohoku'
   ]);
@@ -23,7 +24,7 @@ test('nationwide destination catalogue has 180 unique entries across all regions
 
 test('each new destination has a region, story, season and visual treatment', () => {
   const added = scope.DESTINATIONS.slice(110);
-  assert.equal(added.length, 70);
+  assert.equal(added.length, 120);
   for (const place of added) {
     assert.ok(place.place && place.description && place.description.length > 80, place.name);
     assert.ok(place.tags.length > 0, place.name);
@@ -33,11 +34,28 @@ test('each new destination has a region, story, season and visual treatment', ()
   }
 });
 
-test('the 30 newest place stories use 30 distinct credited place photos', () => {
-  const additions = scope.DESTINATIONS.slice(150);
+test('the previous 30 place stories use 30 distinct credited place photos', () => {
+  const additions = scope.DESTINATIONS.slice(150, 180);
   assert.equal(additions.length, 30);
   const urls = additions.map(place => place.photo?.url);
   assert.ok(urls.every(Boolean));
   assert.equal(new Set(urls).size, 30);
   assert.ok(additions.every(place => place.photo.source.startsWith('https://commons.wikimedia.org/wiki/File:')));
+});
+
+test('the 50 new destinations have distinct credited photos, useful stories, and seasonal guidance', () => {
+  const additions = scope.DESTINATIONS.slice(180);
+  assert.equal(additions.length, 50);
+  const photoUrls = additions.map(place => place.photo?.url);
+  assert.ok(photoUrls.every(Boolean));
+  assert.equal(new Set(photoUrls).size, 50);
+  for (const place of additions) {
+    assert.ok(place.name && place.place && place.description.length > 80, place.name);
+    assert.ok(place.tags.length > 0, place.name);
+    assert.ok(place.months.length > 0 && place.months.every(month => month >= 1 && month <= 12), place.name);
+    assert.ok(place.seasonReason && place.illustration && place.alt, place.name);
+    assert.match(place.photo.url, /^https:\/\/(thumb|upload)\.wikimedia\.org\/wikipedia\/commons\//, `${place.name} photo is served by Wikimedia Commons`);
+    assert.match(place.photo.source, /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/, `${place.name} photo has a source page`);
+    assert.ok(place.photo.credit && place.photo.license && place.photo.licenseUrl, `${place.name} photo has complete attribution`);
+  }
 });

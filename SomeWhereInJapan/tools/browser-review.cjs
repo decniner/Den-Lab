@@ -56,6 +56,19 @@ async function main() {
   await evaluate("localStorage.removeItem('somewhereJapanTokyoDayTrips')");
   await call('Page.reload'); await pause(1300);
   report.atlasToFinder = await evaluate("(()=>{document.querySelector('#atlas-tab-tokyo').click();return document.querySelector('#atlas-tab-tokyo').getAttribute('aria-selected')==='true'&&!document.querySelector('#atlas-panel-tokyo').hidden})()");
+  await navigate(`${baseUrl}/index.html#destinations`, 1440, 1000);
+  report.destinationExpansion = await evaluate(`(async () => {
+    const newest=DESTINATIONS.slice(180);
+    const photoChecks=await Promise.all(newest.map(place=>new Promise(resolve=>{const img=new Image();const timer=setTimeout(()=>resolve({name:place.name,loaded:false}),12000);img.onload=()=>{clearTimeout(timer);resolve({name:place.name,loaded:img.naturalWidth>0});};img.onerror=()=>{clearTimeout(timer);resolve({name:place.name,loaded:false});};img.src=place.photo.url;})));
+    const search=document.querySelector('#place-search');search.value='Cape Soya';search.dispatchEvent(new Event('input',{bubbles:true}));
+    const card=document.querySelector('.destination-card');const image=card?.querySelector('.card-image');
+    if(image){image.loading='eager';await Promise.race([image.decode().catch(()=>false),new Promise(resolve=>setTimeout(resolve,8000))]);}
+    card?.querySelector('.card-details')?.click();
+    const hero=document.querySelector('#place-dialog-image');
+    if(hero?.src)await Promise.race([hero.decode().catch(()=>false),new Promise(resolve=>setTimeout(resolve,8000))]);
+    const credit=document.querySelector('#place-dialog-photo-credit');
+    return {catalogueCount:DESTINATIONS.length,matches:document.querySelectorAll('.destination-card').length,title:document.querySelector('#place-dialog-title')?.textContent,cardPhotoLoaded:(image?.naturalWidth||0)>0,storyOpened:document.querySelector('#place-dialog')?.open===true,storyPhotoLoaded:(hero?.naturalWidth||0)>0,hasCommonsCredit:!credit?.hidden&&credit.href.includes('commons.wikimedia.org/wiki/File:'),newPhotosLoaded:photoChecks.filter(photo=>photo.loaded).length,newPhotoCount:photoChecks.length,failedNewPhotos:photoChecks.filter(photo=>!photo.loaded).map(photo=>photo.name)};
+  })()`);
   report.planner = await evaluate(`(() => {
     const origin=document.querySelector('#city-origin'); origin.value='osaka';origin.dispatchEvent(new Event('change',{bubbles:true}));
     const osakaVisible=!document.querySelector('#city-origin-results').hidden && document.querySelectorAll('.city-origin-card').length>0;
