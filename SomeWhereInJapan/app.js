@@ -16,6 +16,7 @@ let monthSearchEnabled = false;
 let monthSearchManual = false;
 let localFindsOnly = false;
 let localFindsManual = false;
+let searchAnnouncementTimer = null;
 const LOCAL_FIND_NAMES = new Set([
   'The blue of Biei','Oirase stream walk','Hiraizumi\u2019s quiet temples','Tazawa\u2019s clear blue',
   'Aizu-Wakamatsu\u2019s samurai streets','Oze\u2019s open wetlands','Kiso Valley post towns',
@@ -365,7 +366,7 @@ function renderPlaceLocalGuide(place, spotlight) {
 }
 document.querySelector('#place-dialog-close').addEventListener('click',()=>placeDialog.close());
 
-function renderDestinations() {
+function renderDestinations(announceCompletion = false) {
   const normalized = query.trim().toLocaleLowerCase();
   const places = DESTINATIONS.filter(place => {
     const inRegion = activeRegion === 'All places' || place.region === activeRegion;
@@ -379,6 +380,19 @@ function renderDestinations() {
   });
   count.textContent = `${String(places.length).padStart(2, '0')} ${places.length === 1 ? 'PLACE' : 'PLACES'}`;
   document.querySelector('#show-more').hidden = places.length <= visibleLimit;
+  if (announceCompletion) {
+    const status=document.querySelector('#search-completion');
+    status.hidden=false;
+    status.textContent='Searching the field guide…';
+    clearTimeout(searchAnnouncementTimer);
+    const total=places.length;
+    const shown=Math.min(visibleLimit,total);
+    searchAnnouncementTimer=setTimeout(()=>{
+      status.textContent=total
+        ? `Search complete — ${total} ${total===1?'place':'places'} found. Showing ${shown}. Scroll down past the seasonal guide to browse your matches.`
+        : 'Search complete — no places matched. Try another term or clear a filter.';
+    },350);
+  }
   if (!places.length) {
     const empty = document.createElement('p');
     empty.className = 'empty-state';
@@ -482,7 +496,7 @@ function syncUnifiedSearch() {
   updateMonthSearchUI();
   updateLocalFindsUI();
   renderMonthGuide();
-  renderDestinations();
+  renderDestinations(true);
 }
 search.addEventListener('input', syncUnifiedSearch);
 document.querySelector('#show-more').addEventListener('click', () => { visibleLimit += 12; renderDestinations(); });
