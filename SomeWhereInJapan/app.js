@@ -668,7 +668,7 @@ function renderMonthRoute(picks, monthIndex) {
   const section = document.querySelector('#month-route-plan');
   if (!section || section.dataset.requested !== 'true') return;
   if (!picks.length) { section.replaceChildren(); section.hidden = true; return; }
-  const requestedDays = { short: 4, week: 7, long: 12 }[tripLengthSelect.value];
+  const stopsPerDay = 3;
   const areaOf = place => place.place.split(/[·,]/)[0].trim();
   const clusters = [];
   picks.forEach(item => {
@@ -677,13 +677,26 @@ function renderMonthRoute(picks, monthIndex) {
     if (!cluster) { cluster = { key, region: item.place.region, area: areaOf(item.place), items: [] }; clusters.push(cluster); }
     cluster.items.push(item);
   });
-  clusters.sort((a, b) => b.items.length - a.items.length || picks.indexOf(a.items[0]) - picks.indexOf(b.items[0]));
-  const itinerary = clusters.slice(0, requestedDays).map(cluster => ({ ...cluster, items: cluster.items.slice(0, 4) }));
+  clusters.sort((a, b) => picks.indexOf(a.items[0]) - picks.indexOf(b.items[0]));
+  const itinerary = [];
+  clusters.forEach(cluster => {
+    while (cluster.items.length) {
+      let day = itinerary.find(candidate => candidate.region === cluster.region && candidate.items.length < stopsPerDay && candidate.areas.has(cluster.area));
+      if (!day) day = itinerary.find(candidate => candidate.region === cluster.region && candidate.items.length < stopsPerDay);
+      if (!day) {
+        day = { region: cluster.region, area: cluster.area, areas: new Set(), items: [] };
+        itinerary.push(day);
+      }
+      day.areas.add(cluster.area);
+      day.items.push(cluster.items.shift());
+    }
+  });
+  itinerary.forEach(day => { day.area = [...day.areas].join(' · '); });
   const heading = document.createElement('div'); heading.className = 'month-route-heading';
   const copy = document.createElement('div');
   const kicker = document.createElement('p'); kicker.className = 'month-route-kicker'; kicker.textContent = 'YOUR SEASONAL ROUTE';
   const title = document.createElement('h4'); title.textContent = `${MONTHS[monthIndex]} · ${itinerary.length} ${itinerary.length === 1 ? 'day' : 'days'} in ${journeyRegionSelect.value === 'all' ? 'Japan' : journeyRegionSelect.value}`;
-  const intro = document.createElement('p'); intro.className = 'month-route-intro'; intro.textContent = 'A suggested order built from your seasonal picks. Each day stays within one named locality; longer transfers between areas are best treated as travel days. Open directions for current routes and schedules.';
+  const intro = document.createElement('p'); intro.className = 'month-route-intro'; intro.textContent = 'A fuller day plan, with up to three seasonal places to explore each day. Stops in the same locality are grouped first; when needed, the route pairs places across the same region. Check the map link before you commit to a day, since some regional transfers take longer.';
   copy.append(kicker, title, intro);
   const mapLink = document.createElement('a'); mapLink.className = 'month-route-map-link'; mapLink.href = monthRouteUrl(itinerary); mapLink.target = '_blank'; mapLink.rel = 'noopener noreferrer'; mapLink.textContent = 'Open full route in Google Maps ↗';
   heading.append(copy, mapLink);
@@ -719,7 +732,7 @@ function renderMonthRoute(picks, monthIndex) {
   });
   const note = document.createElement('p'); note.className = 'month-route-caveat';
   const included = itinerary.reduce((count, day) => count + day.items.length, 0);
-  note.textContent = `${picks.length} places matched your filters. This ${itinerary.length}-day route includes ${included} stops${picks.length > included ? `; ${picks.length - included} other matches remain in the shortlist above` : ''}. Day clusters use the locality shown in the guide; Japan’s intercity distances can be substantial. Travel time, opening hours, fares and seasonal access are not live-checked here. Confirm each leg before departure.`;
+  note.textContent = `${picks.length} places matched your filters. The route groups up to three stops per day, keeping shared localities together and pairing other stops within the same region. Regional distances vary: use each transit map to confirm that day’s travel is practical. Travel time, opening hours, fares and seasonal access are not live-checked here.`;
   section.hidden = false;
   section.replaceChildren(heading, grid, note);
 }
