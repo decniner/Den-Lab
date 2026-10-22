@@ -2,6 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const out = path.resolve(__dirname, '..', '..', '..', 'artifacts', 'japan-atlas');
+const baseUrl = (process.env.SITE_URL || 'http://localhost:8000').replace(/\/$/, '');
 fs.mkdirSync(out, { recursive: true });
 async function main() {
   const target = await (await fetch('http://127.0.0.1:9223/json/new?about:blank', { method: 'PUT' })).json();
@@ -43,15 +44,15 @@ async function main() {
   await call('Page.enable'); await call('Runtime.enable');
   const report = {};
   for (const width of [390, 768, 1440]) {
-    await navigate('http://localhost:8000/day-trips/kawagoe/', width);
+    await navigate(`${baseUrl}/day-trips/kawagoe/`, width);
     report[`guide${width}`] = await screenshot(`guide-${width}.png`);
   }
   report.mobileGuides = {};
   for (const slug of ['kawagoe', 'sawara', 'mitake', 'narita', 'odawara']) {
-    await navigate(`http://localhost:8000/day-trips/${slug}/`, 390);
+    await navigate(`${baseUrl}/day-trips/${slug}/`, 390);
     report.mobileGuides[slug] = await evaluate("({width:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,photoLoaded:document.querySelector('.route-visual-photo img').naturalWidth>0,stopCount:document.querySelectorAll('.route-stop-row').length,shortPlan:!!document.querySelector('.short-route-card')})");
   }
-  await navigate('http://localhost:8000/index.html', 1440, 1000);
+  await navigate(`${baseUrl}/index.html`, 1440, 1000);
   await evaluate("localStorage.removeItem('somewhereJapanTokyoDayTrips')");
   await call('Page.reload'); await pause(1300);
   report.atlasToFinder = await evaluate("(()=>{document.querySelector('#atlas-tab-tokyo').click();return document.querySelector('#atlas-tab-tokyo').getAttribute('aria-selected')==='true'&&!document.querySelector('#atlas-panel-tokyo').hidden})()");
@@ -82,16 +83,38 @@ async function main() {
     const restored=window.TokyoDayTripCore.readSharedPlan(new URL(shareUrl).search,window.TokyoDayTrips.DAY_TRIPS);
     return {osakaOriginWorked:osakaVisible,tokyoGuideCount:results.length,halfRouteStopCount:halfStopCount,halfRouteStops:halfStopNames,halfRouteOmitsCastle:halfOmitsCastle,fullRouteStopCount:fullStopCount,comparisonWorked:compareVisible,compareIds:state.compareIds,comparePressed:[...document.querySelectorAll('#daytrip-results [data-compare][aria-pressed="true"]')].map(button=>button.dataset.compare),mapItinerarySynchronized:synchronized,saveWorked:saved?.selectedId===state.selectedId,shareRestoresSelectedAndFilters:restored.selectedId===state.selectedId&&restored.month===state.month&&restored.compareIds.join(',')===state.compareIds.join(','),guideHref:document.querySelector('#daytrip-selected-route .daytrip-guide-link')?.getAttribute('href'),bodyScrollWidth:document.documentElement.scrollWidth,invalidMonthFallback:window.TokyoDayTripCore.readSharedPlan('?month=99',window.TokyoDayTrips.DAY_TRIPS).month};
   })()`);
+  await navigate(`${baseUrl}/index.html#daytrips`, 1440, 1000);
+  report.cityOriginPlans = await evaluate(`(() => {
+    const select=document.querySelector('#city-origin');
+    const cities=[...select.options].map(option=>option.value).filter(id=>id!=='tokyo');
+    const results=cities.map(id=>{
+      select.value=id;select.dispatchEvent(new Event('change',{bubbles:true}));
+      const panel=document.querySelector('#city-origin-results');
+      const plan=panel.querySelector('.city-origin-plan');
+      const route=new URL(panel.querySelector('.city-plan-actions a').href);
+      const origin=window.CityOrigins.CITY_ORIGINS.find(city=>city.id===id);
+      const expectedStops=window.CityOrigins.CITY_DAY_PLANS[id].stops.length;
+      const valid=!panel.hidden&&!!plan&&panel.querySelectorAll('.city-plan-stops>li').length===expectedStops&&route.searchParams.get('origin')===origin.station+', Japan';
+      const mode=panel.querySelector('#city-plan-mode');mode.value='car';mode.dispatchEvent(new Event('change',{bubbles:true}));
+      const driving=new URL(document.querySelector('#city-origin-results .city-plan-actions a').href).searchParams.get('travelmode')==='driving';
+      return {id,valid,stopCount:expectedStops,driving};
+    });
+    select.value='tokyo';select.dispatchEvent(new Event('change',{bubbles:true}));
+    return {cities:cities.length,allPlansWork:results.length===9&&results.every(item=>item.valid&&item.driving),results};
+  })()`);
   if (report.planner.guideHref) {
-    await navigate(new URL(report.planner.guideHref, 'http://localhost:8000/').href, 1440, 1000);
+    await navigate(new URL(report.planner.guideHref, `${baseUrl}/`).href, 1440, 1000);
     report.linkedGuide = await evaluate("({title:document.querySelector('h1')?.textContent.trim(),hasSources:!!document.querySelector('.route-sources'),hasStops:document.querySelectorAll('.route-stop-row').length===5,stylesLoaded:[...document.styleSheets].some(sheet=>sheet.href?.includes('styles.css'))})");
   }
-  await navigate('http://localhost:8000/index.html#daytrips', 390, 900);
+  await navigate(`${baseUrl}/index.html#daytrips`, 390, 900);
   report.planner390 = await screenshot('planner-390.png');
+  await navigate(`${baseUrl}/index.html?origin=osaka#daytrips`, 390, 900);
+  report.cityOriginPlan390 = await screenshot('city-origin-osaka-390.png');
+  report.cityOriginPlanDetails390 = await evaluate("({width:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,visible:!document.querySelector('#city-origin-results').hidden,stops:document.querySelectorAll('.city-plan-stops>li').length,mode:document.querySelector('#city-plan-mode')?.value})");
   report.touchTargets390 = await evaluate("({plannerMapPin:Math.round(document.querySelector('.tokyo-map-route-hit')?.getBoundingClientRect().width||0),itineraryControl:Math.round(document.querySelector('.route-itinerary-stop-links a')?.getBoundingClientRect().height||0)})");
   await evaluate("document.querySelector('#daytrip-selected-route').scrollIntoView({block:'start',behavior:'instant'})"); await pause(300);
   await viewportShot('planner-route-390.png');
-  await navigate('http://localhost:8000/day-trips/kawagoe/', 1440, 1000);
+  await navigate(`${baseUrl}/day-trips/kawagoe/`, 1440, 1000);
   await evaluate("document.querySelector('.route-map-pin[data-stop-select=\\\"2\\\"]').focus({focusVisible:true})");
   await call('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Enter', code: 'Enter' });
   await call('Input.dispatchKeyEvent', { type: 'keyUp', key: 'Enter', code: 'Enter' });

@@ -18,10 +18,10 @@ Then open http://localhost:8000/. The project is static HTML, CSS, and JavaScrip
 - A searchable guide to 180 places, seasonal and regional filters, and local-find selections.
 - A station-aware trip planner for Sapporo, Sendai, Tokyo, Nagoya, Kyoto, Osaka, Hiroshima, Takamatsu, Fukuoka, and Naha.
 - Five detailed Tokyo-origin pilot day-trip guides with shared planner and guide stop data, selectable route plots, source links and route-specific weather/short-day guidance.
-- For other origins, place suggestions with live Google Maps transit and driving directions. Those live routes do not claim fixed fares or travel times.
+- Nine non-Tokyo city origins have ordered, full-day plans with stop-by-stop notes, suggested visit windows, whole-route maps, and a transit or driving choice. Live routes do not claim fixed fares or travel times.
 - A sitemap at /sitemap.xml.
 
-The five researched routes are a pilot set, not live timetables, fares, or reservations. Current hours, access, prices, and conditions should be checked with destination sources.
+The five Tokyo routes are a pilot set with researched time and cost ranges, not live timetables or fare quotes. Plans for other city origins are editorial day sequences; visit windows are suggestions and Google Maps supplies current route options. Check venue hours, access, prices, and conditions with destination sources.
 
 ## Day-trip guide maintenance
 
