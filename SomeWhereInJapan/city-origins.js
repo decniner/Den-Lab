@@ -12,6 +12,20 @@ const CITY_ORIGINS=Object.freeze([
 {id:'fukuoka',city:'Fukuoka',station:'Hakata Station',region:'Kyushu'},
 {id:'naha',city:'Naha',station:'Naha Bus Terminal',region:'Okinawa'}
 ]);
+const AIRPORT_ORIGINS=Object.freeze([
+{id:'new-chitose-airport',city:'Sapporo',label:'New Chitose Airport Station · Sapporo',station:'JR New Chitose Airport Station',region:'Hokkaido',planId:'sapporo'},
+{id:'sendai-airport',city:'Sendai',label:'Sendai Airport Station · Sendai',station:'Sendai Airport Station',region:'Tohoku',planId:'sendai'},
+{id:'haneda-terminal-3',city:'Tokyo',label:'Haneda Airport · Terminal 3',station:'Haneda Airport Terminal 3 Station',region:'Kanto',planId:'tokyo'},
+{id:'haneda-terminal-1-2',city:'Tokyo',label:'Haneda Airport · Terminals 1–2',station:'Haneda Airport Terminal 1・2 Station',region:'Kanto',planId:'tokyo'},
+{id:'narita-terminal-1',city:'Tokyo',label:'Narita Airport · Terminal 1',station:'Narita Airport Station (Terminal 1)',region:'Kanto',planId:'tokyo'},
+{id:'narita-terminal-2-3',city:'Tokyo',label:'Narita Airport · Terminals 2–3',station:'Airport Terminal 2 Station (Narita)',region:'Kanto',planId:'tokyo'},
+{id:'chubu-centrair',city:'Nagoya',label:'Central Japan International Airport Station · Nagoya',station:'Central Japan International Airport Station',region:'Chubu',planId:'nagoya'},
+{id:'kansai-airport',city:'Osaka',label:'Kansai Airport Station · Osaka',station:'Kansai Airport Station',region:'Kansai',planId:'osaka'},
+{id:'hiroshima-airport',city:'Hiroshima',label:'Hiroshima Airport Bus Terminal',station:'Hiroshima Airport Bus Terminal',region:'Chugoku',planId:'hiroshima'},
+{id:'fukuoka-airport',city:'Fukuoka',label:'Fukuoka Airport Station',station:'Fukuoka Airport Station',region:'Kyushu',planId:'fukuoka'},
+{id:'naha-airport',city:'Naha',label:'Naha Airport Station',station:'Naha Airport Station',region:'Okinawa',planId:'naha'}
+]);
+const ALL_ORIGINS=Object.freeze([...CITY_ORIGINS,...AIRPORT_ORIGINS]);
 const CITY_DAY_PLANS=Object.freeze({
 tokyo:{title:'Tokyo: station streets, old Asakusa & Ueno',intro:'Begin at Tokyo Station and the Imperial Palace edge, then cross to Asakusa for the old-city streets and finish among Ueno’s museums, park paths and market lanes. This city-centre sequence follows GO TOKYO’s first-visit route logic; check opening days and current access before setting out.',pace:'One full day · Tokyo Station, central gardens and an east-side finish',source:{label:'GO TOKYO · Best of Tokyo in three days',url:'https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html'},stops:[
 {name:'Tokyo Station & Marunouchi',area:'Marunouchi, Chiyoda, Tokyo',timing:'Start · morning',duration:'30–45 min',story:'Start with the red-brick station façade, then step into Marunouchi’s broad avenues. It is a useful orientation point: old rail architecture, modern Tokyo and the palace district meet within a short walk.'},
@@ -78,7 +92,7 @@ naha:{title:'Naha: Ryukyu heritage to the night market streets',intro:'Start on 
 {name:'Kokusai-dori & Heiwa-dori',area:'Naha city centre',timing:'Late afternoon · evening stroll',duration:'60–90 min',story:'Finish among the central shopping streets and covered lanes. The neighbourhood is liveliest later in the day; Sundays may bring pedestrian-only activity on parts of the main street.'}
 ]}
 });
-function nearbyPlaces(places,originId){const origin=CITY_ORIGINS.find(item=>item.id===originId);return origin?(places||[]).filter(place=>place.region===origin.region):[];}
+function nearbyPlaces(places,originId){const origin=ALL_ORIGINS.find(item=>item.id===originId);return origin?(places||[]).filter(place=>place.region===origin.region):[];}
 function itineraryDays(stops,availability='one'){
  const places=Array.isArray(stops)?stops:[];
  if(availability==='half')return[{title:'A focused half-day',stops:places.slice(0,2)}];
@@ -90,5 +104,5 @@ function itineraryDays(stops,availability='one'){
 }
 function directionsUrl(origin,destination,mode='transit',from=null){const url=new URL('https://www.google.com/maps/dir/');url.searchParams.set('api','1');url.searchParams.set('origin',`${from||origin.station}, Japan`);url.searchParams.set('destination',`${destination}, Japan`);url.searchParams.set('travelmode',mode==='car'?'driving':'transit');return url.href;}
 function dayPlanDirectionsUrl(origin,stops,mode='transit'){const url=new URL('https://www.google.com/maps/dir/');const places=Array.isArray(stops)?stops:[];const query=stop=>`${stop.name}, ${stop.area}, Japan`;url.searchParams.set('api','1');url.searchParams.set('origin',`${origin.station}, Japan`);url.searchParams.set('destination',places.length?query(places[places.length-1]):`${origin.station}, Japan`);if(places.length>1)url.searchParams.set('waypoints',places.slice(0,-1).map(query).join('|'));url.searchParams.set('travelmode',mode==='car'?'driving':'transit');return url.href;}
-const api=Object.freeze({CITY_ORIGINS,CITY_DAY_PLANS,nearbyPlaces,itineraryDays,directionsUrl,dayPlanDirectionsUrl});if(typeof module!=='undefined'&&module.exports)module.exports=api;if(root)root.CityOrigins=api;
+const api=Object.freeze({CITY_ORIGINS,AIRPORT_ORIGINS,ALL_ORIGINS,CITY_DAY_PLANS,nearbyPlaces,itineraryDays,directionsUrl,dayPlanDirectionsUrl});if(typeof module!=='undefined'&&module.exports)module.exports=api;if(root)root.CityOrigins=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

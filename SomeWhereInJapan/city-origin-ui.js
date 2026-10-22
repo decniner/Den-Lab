@@ -22,14 +22,13 @@ tokyoDescription.textContent='Open the Tokyo route finder to compare the origina
 tokyoTools.append(tokyoSummary,tokyoDescription);
 let routeMode='transit';
 let availability='one';
-select.replaceChildren(...core.CITY_ORIGINS.map(city=>{
- const option=document.createElement('option');
- option.value=city.id;
- option.textContent=`${city.city} · ${city.station}`;
- return option;
-}));
+const cityGroup=document.createElement('optgroup');cityGroup.label='Major city stations';
+const airportGroup=document.createElement('optgroup');airportGroup.label='Airport stations';
+for(const origin of core.CITY_ORIGINS){const option=document.createElement('option');option.value=origin.id;option.textContent=`${origin.city} · ${origin.station}`;cityGroup.append(option);}
+for(const origin of core.AIRPORT_ORIGINS){const option=document.createElement('option');option.value=origin.id;option.textContent=origin.label;airportGroup.append(option);}
+select.replaceChildren(cityGroup,airportGroup);
 const urlOrigin=new URLSearchParams(location.search).get('origin');
-select.value=core.CITY_ORIGINS.some(city=>city.id===urlOrigin)?urlOrigin:'tokyo';
+select.value=core.ALL_ORIGINS.some(origin=>origin.id===urlOrigin)?urlOrigin:'tokyo';
 function escapeHtml(value){const el=document.createElement('span');el.textContent=String(value);return el.innerHTML;}
 function stopCard(stop,dayStops,origin,index){
  const photo=photos[stop.name];
@@ -40,9 +39,9 @@ function stopCard(stop,dayStops,origin,index){
 }
 function render(){
  if(tokyoTools.isConnected)tokyoTools.remove();
- const origin=core.CITY_ORIGINS.find(item=>item.id===select.value)||core.CITY_ORIGINS[2];
+ const origin=core.ALL_ORIGINS.find(item=>item.id===select.value)||core.CITY_ORIGINS[2];
  const isTokyo=origin.id==='tokyo';
- const plan=core.CITY_DAY_PLANS[origin.id];
+ const plan=core.CITY_DAY_PLANS[origin.planId||origin.id];
  cityLabel.textContent=origin.station;
  if(headingKicker)headingKicker.textContent=`A FULL DAY FROM ${origin.city.toUpperCase()} · CURATED CITY PLAN`;
  if(headingTitle)headingTitle.innerHTML=`A day in ${escapeHtml(origin.city)}.<br><em>Planned around you.</em>`;
@@ -84,7 +83,7 @@ select.addEventListener('change',()=>{
 });
 window.addEventListener('popstate',()=>{
  const value=new URLSearchParams(location.search).get('origin');
- select.value=core.CITY_ORIGINS.some(city=>city.id===value)?value:'tokyo';
+ select.value=core.ALL_ORIGINS.some(origin=>origin.id===value)?value:'tokyo';
  render();
 });
 render();

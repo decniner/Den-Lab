@@ -6,6 +6,20 @@ test('offers major regional city-centre origins and honest live directions',()=>
  const url=new URL(origins.directionsUrl(cities.find(x=>x.id==='osaka'),'Osaka Castle','transit'));assert.equal(url.hostname,'www.google.com');assert.equal(url.searchParams.get('travelmode'),'transit');assert.equal(url.searchParams.get('origin'),'Osaka Station, Japan');assert.equal(url.searchParams.get('destination'),'Osaka Castle, Japan');
 });
 
+test('offers real airport rail and bus terminals as origins for the matching city plans',()=>{
+ const airports=origins.AIRPORT_ORIGINS;
+ assert.ok(airports.length>=10);
+ assert.ok(airports.some(x=>x.id==='haneda-terminal-3'&&x.station==='Haneda Airport Terminal 3 Station'&&x.planId==='tokyo'));
+ assert.ok(airports.some(x=>x.id==='narita-terminal-1'&&x.station==='Narita Airport Station (Terminal 1)'&&x.planId==='tokyo'));
+ assert.ok(airports.some(x=>x.id==='kansai-airport'&&x.station==='Kansai Airport Station'&&x.planId==='osaka'));
+ for(const airport of airports){
+  assert.ok(origins.CITY_DAY_PLANS[airport.planId],`${airport.id} reuses a matching city plan`);
+  const route=new URL(origins.dayPlanDirectionsUrl(airport,origins.CITY_DAY_PLANS[airport.planId].stops,'transit'));
+  assert.equal(route.searchParams.get('origin'),`${airport.station}, Japan`);
+  assert.equal(origins.nearbyPlaces([{region:airport.region}],airport.id).length,1);
+ }
+});
+
 test('gives every origin including Tokyo a detailed ordered day plan and live route links',()=>{
  const cities=origins.CITY_ORIGINS;
  assert.equal(Object.keys(origins.CITY_DAY_PLANS).length,cities.length);
@@ -49,8 +63,11 @@ test('adapts each city route to a half day, one day, or two days',()=>{
 
 test('uses one shared itinerary renderer and preserves Tokyo day-trip tools as secondary content',()=>{
  const ui=require('node:fs').readFileSync(require('node:path').join(__dirname,'..','city-origin-ui.js'),'utf8');
+ const css=require('node:fs').readFileSync(require('node:path').join(__dirname,'..','styles.css'),'utf8');
  assert.match(ui,/city-origin-plan/);
  assert.match(ui,/city-plan-availability/);
+ assert.match(ui,/AIRPORT_ORIGINS/);
+ assert.match(css,/\.city-origin-picker select\{width:100%;min-width:0;box-sizing:border-box\}/);
  assert.match(ui,/city-plan-stop-photo/);
  assert.match(ui,/tokyo-route-tools/);
  assert.doesNotMatch(ui,/if\s*\(isTokyo\)\s*return/);

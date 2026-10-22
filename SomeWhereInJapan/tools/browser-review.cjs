@@ -94,8 +94,8 @@ async function main() {
       const panel=document.querySelector('#city-origin-results');
       const plan=panel.querySelector('.city-origin-plan');
       const route=new URL(panel.querySelector('.city-plan-actions a').href);
-      const origin=window.CityOrigins.CITY_ORIGINS.find(city=>city.id===id);
-      const expectedStops=window.CityOrigins.CITY_DAY_PLANS[id].stops.length;
+      const origin=window.CityOrigins.ALL_ORIGINS.find(city=>city.id===id);
+      const expectedStops=window.CityOrigins.CITY_DAY_PLANS[origin.planId||id].stops.length;
       const images=[...panel.querySelectorAll('.city-plan-stop-photo img')];
       images.forEach(image=>image.loading='eager');
       await Promise.all(images.map(image=>image.complete?Promise.resolve():new Promise(resolve=>{image.addEventListener('load',resolve,{once:true});image.addEventListener('error',resolve,{once:true});setTimeout(resolve,12000)})));
@@ -115,7 +115,7 @@ async function main() {
     select.value='tokyo';select.dispatchEvent(new Event('change',{bubbles:true}));
     const tokyoTools=document.querySelector('.tokyo-route-tools');
     const tokyoAdvancedWorks=!!tokyoTools&&tokyoTools.querySelector('.daytrip-layout')!==null&&!tokyoTools.open;
-    return {cities:cities.length,allPlansWork:results.length===10&&results.every(item=>item.valid&&item.driving&&item.halfDayWorks&&item.twoDayWorks),allPhotosLoad:results.every(item=>item.photosLoaded),allPlaceStoriesOpen:results.every(item=>item.storyOpens),tokyoAdvancedWorks,results};
+    return {origins:cities.length,airportOptions:document.querySelector('#city-origin optgroup[label="Airport stations"]').querySelectorAll('option').length,allPlansWork:results.length===21&&results.every(item=>item.valid&&item.driving&&item.halfDayWorks&&item.twoDayWorks),allPhotosLoad:results.every(item=>item.photosLoaded),allPlaceStoriesOpen:results.every(item=>item.storyOpens),tokyoAdvancedWorks,results};
   })()`);
   if (report.planner.guideHref) {
     await navigate(new URL(report.planner.guideHref, `${baseUrl}/`).href, 1440, 1000);
