@@ -16,7 +16,7 @@ const allForms=[standard,compare,directory,method];
 const tokyoTools=document.createElement('details');
 tokyoTools.className='tokyo-route-tools';
 const tokyoSummary=document.createElement('summary');
-tokyoSummary.textContent='Explore Tokyo’s five researched day trips';
+tokyoSummary.textContent='Compare Tokyo day trips';
 const tokyoDescription=document.createElement('p');
 tokyoDescription.textContent='Open the Tokyo route finder to compare the original day trips by month, travel mode, budget and interests.';
 tokyoTools.append(tokyoSummary,tokyoDescription);
