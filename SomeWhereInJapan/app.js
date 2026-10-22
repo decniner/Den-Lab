@@ -1,6 +1,11 @@
 const grid = document.querySelector('#destination-grid');
 const filters = document.querySelector('#region-filters');
 const moodFilters = document.querySelector('#mood-filters');
+function placeDisplayName(name) {
+  return name
+    .replace(/,\s*.*$/, '')
+    .replace(/\s+(?:in bloom|by lamplight|from above|after dark|in blossom|in the cedars|temple to tide|steam and springs|from the water|unhurried|under steep roofs|beneath the Alps|the mountain valley|at first light|after hours|between trees|after dusk|the old paths|a city of peace|land of old stories|art and sea|by bicycle|by river|steam rising|ancient green|harbor of many worlds|under Mount Yufu|island time|Ryukyu memory|by foot and bicycle|snow and neon|mirror of the sky|a mountain of steps|in every season|the little Edo|a temple town morning|the long way round|sea and sky|above Kyoto|at blue hour|at sunset|a sacred approach|Takamatsu|by boat|Japan’s far west|the Golden Pavilion)$/i, '');
+}
 const count = document.querySelector('#result-count');
 const search = document.querySelector('#place-search');
 const savedToggle = document.querySelector('#saved-toggle');
@@ -69,8 +74,8 @@ function renderRegionSpotlight(region) {
       button.className = 'region-pick';
       button.innerHTML = '<span></span><b></b><i aria-hidden="true">?</i>';
       button.querySelector('span').textContent = place.region;
-      button.querySelector('b').textContent = place.name;
-      button.setAttribute('aria-label', `Open the story for ${place.name} in ${place.region}`);
+      button.querySelector('b').textContent = placeDisplayName(place.name);
+      button.setAttribute('aria-label', `Open the story for ${placeDisplayName(place.name)} in ${place.region}`);
       button.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
       return button;
     }));
@@ -297,7 +302,7 @@ function showPlace(place, index) {
   if(place.photo){photoCredit.href=place.photo.source;photoCredit.textContent=`Photo: ${place.photo.credit} | open file and license`;}
   document.querySelector('#place-dialog-number').textContent=String(index+1).padStart(2,'0');
   document.querySelector('#place-dialog-region').textContent=`${place.region} / JAPAN FIELD GUIDE`;
-  document.querySelector('#place-dialog-title').textContent=place.name;
+  document.querySelector('#place-dialog-title').textContent=placeDisplayName(place.name);
   document.querySelector('#place-dialog-area').textContent=place.place;
   document.querySelector('#place-dialog-description').textContent=place.description;
   document.querySelector('#place-dialog-story').textContent=placeStory(place,spotlight);
@@ -440,7 +445,7 @@ function renderDestinations(announceCompletion = false) {
     if (contextBadges.childElementCount) copy.append(contextBadges);
     const location = document.createElement('span'); location.className = 'card-place'; location.textContent = place.region;
     const row = document.createElement('div'); row.className = 'card-title-row';
-    const title = document.createElement('h3'); title.className = 'card-title'; title.textContent = place.name;
+    const title = document.createElement('h3'); title.className = 'card-title'; title.textContent = placeDisplayName(place.name);
     const link = document.createElement('button'); link.className = 'card-arrow'; link.type = 'button'; link.setAttribute('aria-label', `Open ${place.name} story`); link.title = `Open ${place.name} story`; link.textContent = '↗'; link.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
     row.append(title, link);
     const area = document.createElement('p'); area.className = 'card-area'; area.textContent = place.place;
@@ -642,7 +647,7 @@ function renderMonthGuide() {
     }
     const copy = document.createElement('span'); copy.className = 'month-pick-copy';
     const region = document.createElement('span'); region.className = 'month-pick-region'; region.textContent = place.place;
-    const title = document.createElement('span'); title.className = 'month-pick-title'; title.textContent = place.name;
+    const title = document.createElement('span'); title.className = 'month-pick-title'; title.textContent = placeDisplayName(place.name);
     const detail = document.createElement('span'); detail.className = 'month-pick-reason'; detail.textContent = reason;
     const photoCredit=place.photo?.credit?document.createElement('span'):null;
     if(photoCredit){photoCredit.className='month-pick-credit';photoCredit.textContent=`PHOTO · ${place.photo.credit}`;}
@@ -722,7 +727,7 @@ function renderMonthRoute(picks, monthIndex) {
         if (place.photo?.credit) { const credit = document.createElement('span'); credit.className = 'month-route-photo-credit'; credit.textContent = `PHOTO · ${place.photo.credit}`; photo.append(credit); }
       } else { photo.classList.add('month-route-photo-missing'); photo.textContent = `Field note · ${place.place}`; }
       const meta = document.createElement('p'); meta.className = 'month-route-stop-meta'; meta.textContent = `STOP ${String(stopIndex + 1).padStart(2, '0')} · ${place.region.toUpperCase()}`;
-      const name = document.createElement('h6'); name.textContent = place.name;
+      const name = document.createElement('h6'); name.textContent = placeDisplayName(place.name);
       const season = document.createElement('p'); season.className = 'month-route-season'; season.textContent = `WHY ${MONTHS[monthIndex].toUpperCase()}: ${item.reason}`;
       const story = document.createElement('p'); story.className = 'month-route-story'; story.textContent = `${place.description} ${placeStory(place, PLACE_SPOTLIGHTS[place.name])}`.trim();
       const detail = document.createElement('button'); detail.type = 'button'; detail.className = 'month-route-detail-button'; detail.textContent = 'Read the place story & exact points ↗'; detail.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
