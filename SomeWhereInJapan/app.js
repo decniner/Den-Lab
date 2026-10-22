@@ -757,6 +757,11 @@ document.querySelector('#build-month-route')?.addEventListener('click', () => {
   document.querySelector('#build-month-route').textContent = 'Update my route ↗';
   document.querySelector('#build-month-route').setAttribute('aria-expanded', 'true');
 });
+monthSelect.addEventListener('change', () => {
+  monthSearchManual = true;
+  search.value = search.value.replace(/\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b/ig, ' ').replace(/\s+/g, ' ').trim();
+  syncUnifiedSearch();
+});
 tripLengthSelect.addEventListener('change', renderMonthGuide);
 journeyRegionSelect.addEventListener('change', renderMonthGuide);
 journeyStyleSelect.addEventListener('change', renderMonthGuide);
