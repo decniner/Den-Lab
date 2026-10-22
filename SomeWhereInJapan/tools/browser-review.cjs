@@ -60,6 +60,7 @@ async function main() {
     const origin=document.querySelector('#city-origin'); origin.value='osaka';origin.dispatchEvent(new Event('change',{bubbles:true}));
     const osakaVisible=!document.querySelector('#city-origin-results').hidden && document.querySelectorAll('.city-origin-card').length>0;
     origin.value='tokyo';origin.dispatchEvent(new Event('change',{bubbles:true}));
+    document.querySelector('.tokyo-route-tools summary').click();
     const month=document.querySelector('#daytrip-month');month.value='10';month.dispatchEvent(new Event('change',{bubbles:true}));
     document.querySelector('#daytrip-budget').value='18000';document.querySelector('#daytrip-budget').dispatchEvent(new Event('input',{bubbles:true}));
     const results=document.querySelectorAll('#daytrip-results [data-trip]');
@@ -86,7 +87,7 @@ async function main() {
   await navigate(`${baseUrl}/index.html#daytrips`, 1440, 1000);
   report.cityOriginPlans = await evaluate(`(() => {
     const select=document.querySelector('#city-origin');
-    const cities=[...select.options].map(option=>option.value).filter(id=>id!=='tokyo');
+    const cities=[...select.options].map(option=>option.value);
     const results=cities.map(id=>{
       select.value=id;select.dispatchEvent(new Event('change',{bubbles:true}));
       const panel=document.querySelector('#city-origin-results');
@@ -94,13 +95,15 @@ async function main() {
       const route=new URL(panel.querySelector('.city-plan-actions a').href);
       const origin=window.CityOrigins.CITY_ORIGINS.find(city=>city.id===id);
       const expectedStops=window.CityOrigins.CITY_DAY_PLANS[id].stops.length;
-      const valid=!panel.hidden&&!!plan&&panel.querySelectorAll('.city-plan-stops>li').length===expectedStops&&route.searchParams.get('origin')===origin.station+', Japan';
+      const valid=!panel.hidden&&!!plan&&panel.querySelectorAll('.city-plan-stops>li').length===expectedStops&&route.searchParams.get('origin')===origin.station+', Japan'&&(id==='tokyo'?!!panel.querySelector('.tokyo-route-tools'):!panel.querySelector('.tokyo-route-tools'));
       const mode=panel.querySelector('#city-plan-mode');mode.value='car';mode.dispatchEvent(new Event('change',{bubbles:true}));
       const driving=new URL(document.querySelector('#city-origin-results .city-plan-actions a').href).searchParams.get('travelmode')==='driving';
       return {id,valid,stopCount:expectedStops,driving};
     });
     select.value='tokyo';select.dispatchEvent(new Event('change',{bubbles:true}));
-    return {cities:cities.length,allPlansWork:results.length===9&&results.every(item=>item.valid&&item.driving),results};
+    const tokyoTools=document.querySelector('.tokyo-route-tools');
+    const tokyoAdvancedWorks=!!tokyoTools&&tokyoTools.querySelector('.daytrip-layout')!==null&&!tokyoTools.open;
+    return {cities:cities.length,allPlansWork:results.length===10&&results.every(item=>item.valid&&item.driving),tokyoAdvancedWorks,results};
   })()`);
   if (report.planner.guideHref) {
     await navigate(new URL(report.planner.guideHref, `${baseUrl}/`).href, 1440, 1000);
@@ -111,6 +114,8 @@ async function main() {
   await navigate(`${baseUrl}/index.html?origin=osaka#daytrips`, 390, 900);
   report.cityOriginPlan390 = await screenshot('city-origin-osaka-390.png');
   report.cityOriginPlanDetails390 = await evaluate("({width:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,visible:!document.querySelector('#city-origin-results').hidden,stops:document.querySelectorAll('.city-plan-stops>li').length,mode:document.querySelector('#city-plan-mode')?.value})");
+  await navigate(`${baseUrl}/index.html?origin=tokyo#daytrips`, 390, 900);
+  report.tokyoCityPlan390 = await evaluate("({width:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,visible:!document.querySelector('#city-origin-results').hidden,stops:document.querySelectorAll('.city-plan-stops>li').length,advanced:!!document.querySelector('.tokyo-route-tools'),advancedCollapsed:!document.querySelector('.tokyo-route-tools')?.open})");
   report.touchTargets390 = await evaluate("({plannerMapPin:Math.round(document.querySelector('.tokyo-map-route-hit')?.getBoundingClientRect().width||0),itineraryControl:Math.round(document.querySelector('.route-itinerary-stop-links a')?.getBoundingClientRect().height||0)})");
   await evaluate("document.querySelector('#daytrip-selected-route').scrollIntoView({block:'start',behavior:'instant'})"); await pause(300);
   await viewportShot('planner-route-390.png');

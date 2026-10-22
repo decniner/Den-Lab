@@ -5,8 +5,8 @@ test('offers major regional city-centre origins and honest live directions',()=>
  const url=new URL(origins.directionsUrl(cities.find(x=>x.id==='osaka'),'Osaka Castle','transit'));assert.equal(url.hostname,'www.google.com');assert.equal(url.searchParams.get('travelmode'),'transit');assert.equal(url.searchParams.get('origin'),'Osaka Station, Japan');assert.equal(url.searchParams.get('destination'),'Osaka Castle, Japan');
 });
 
-test('gives every non-Tokyo city a detailed ordered day plan and live route links',()=>{
- const cities=origins.CITY_ORIGINS.filter(city=>city.id!=='tokyo');
+test('gives every origin including Tokyo a detailed ordered day plan and live route links',()=>{
+ const cities=origins.CITY_ORIGINS;
  assert.equal(Object.keys(origins.CITY_DAY_PLANS).length,cities.length);
  for(const city of cities){
   const plan=origins.CITY_DAY_PLANS[city.id];
@@ -19,4 +19,11 @@ test('gives every non-Tokyo city a detailed ordered day plan and live route link
   assert.equal(route.searchParams.get('destination'),`${plan.stops.at(-1).name}, ${plan.stops.at(-1).area}, Japan`);
   assert.equal(route.searchParams.get('waypoints'),plan.stops.slice(0,-1).map(stop=>`${stop.name}, ${stop.area}, Japan`).join('|'));
  }
+});
+
+test('uses one shared itinerary renderer and preserves Tokyo day-trip tools as secondary content',()=>{
+ const ui=require('node:fs').readFileSync(require('node:path').join(__dirname,'..','city-origin-ui.js'),'utf8');
+ assert.match(ui,/city-origin-plan/);
+ assert.match(ui,/tokyo-route-tools/);
+ assert.doesNotMatch(ui,/if\s*\(isTokyo\)\s*return/);
 });
