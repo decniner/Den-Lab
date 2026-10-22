@@ -619,14 +619,36 @@ function renderMonthGuide() {
     const card = document.createElement('button'); card.type = 'button'; card.className = 'month-pick';
     card.setAttribute('aria-label', `View ${place.name}: ${reason}`);
     let image;
-    if(place.image){image=document.createElement('img');image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=600&q=80&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;image.alt='';image.loading='lazy';}
-    else{image=document.createElement('span');image.className='month-pick-art';image.dataset.art=place.illustration||'place';image.dataset.title=place.name;image.setAttribute('aria-hidden','true');}
+    const imageUrl=place.photo?.url || (place.image ? `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0` : '');
+    if(imageUrl){
+      image=document.createElement('img');
+      image.src=imageUrl;
+      image.alt=place.photo?.alt||place.alt||`${place.name} in ${place.place}`;
+      image.loading='lazy';
+      image.decoding='async';
+      image.addEventListener('error',()=>{
+        const fallbackUrl=place.image?`https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`:'';
+        if(place.photo?.url&&fallbackUrl&&!image.dataset.fallbackTried){image.dataset.fallbackTried='true';image.src=fallbackUrl;return;}
+        image.hidden=true;
+        card.classList.add('month-pick-photo-unavailable');
+      });
+    }else{
+      image=document.createElement('span');
+      image.className='month-pick-art';
+      image.dataset.art=place.illustration||'place';
+      image.dataset.title=place.name;
+      image.setAttribute('aria-hidden','true');
+    }
     const copy = document.createElement('span'); copy.className = 'month-pick-copy';
     const region = document.createElement('span'); region.className = 'month-pick-region'; region.textContent = place.place;
     const title = document.createElement('span'); title.className = 'month-pick-title'; title.textContent = place.name;
     const detail = document.createElement('span'); detail.className = 'month-pick-reason'; detail.textContent = reason;
+    const photoCredit=place.photo?.credit?document.createElement('span'):null;
+    if(photoCredit){photoCredit.className='month-pick-credit';photoCredit.textContent=`PHOTO · ${place.photo.credit}`;}
     const action = document.createElement('span'); action.className = 'month-pick-action'; action.textContent = 'VIEW PLACE ↗';
-    copy.append(region,title,detail,action); card.append(image,copy);
+    copy.append(region,title,detail);
+    if(photoCredit)copy.append(photoCredit);
+    copy.append(action); card.append(image,copy);
     card.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
     return card;
   }).filter(Boolean);
