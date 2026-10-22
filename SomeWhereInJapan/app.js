@@ -13,7 +13,9 @@ let query = '';
 let activeMood = 'All moods';
 let visibleLimit = 12;
 let monthSearchEnabled = false;
+let monthSearchManual = false;
 let localFindsOnly = false;
+let localFindsManual = false;
 const LOCAL_FIND_NAMES = new Set([
   'The blue of Biei','Oirase stream walk','Hiraizumi\u2019s quiet temples','Tazawa\u2019s clear blue',
   'Aizu-Wakamatsu\u2019s samurai streets','Oze\u2019s open wetlands','Kiso Valley post towns',
@@ -368,11 +370,12 @@ function renderDestinations() {
   const places = DESTINATIONS.filter(place => {
     const inRegion = activeRegion === 'All places' || place.region === activeRegion;
     const inSaved = !savedOnly || saved.has(place.name);
-    const searchable = `${place.name} ${place.place} ${place.region} ${place.description}`.toLocaleLowerCase();
+    const searchable = `${place.name} ${place.place} ${place.region} Japan ${place.description} ${(place.tags || []).join(' ')}`.toLocaleLowerCase();
     const inMood = activeMood === 'All moods' || place.tags.includes(activeMood);
     const inMonth = !monthSearchEnabled || getPlacesForMonth(Number(monthSelect.value)).has(place.name);
     const inLocalFinds = !localFindsOnly || LOCAL_FIND_NAMES.has(place.name);
-    return inRegion && inSaved && inMood && inMonth && inLocalFinds && (!normalized || searchable.includes(normalized));
+    const matchesQuery = !normalized || normalized.split(/\s+/).every(term => searchable.includes(term));
+    return inRegion && inSaved && inMood && inMonth && inLocalFinds && matchesQuery;
   });
   count.textContent = `${String(places.length).padStart(2, '0')} ${places.length === 1 ? 'PLACE' : 'PLACES'}`;
   document.querySelector('#show-more').hidden = places.length <= visibleLimit;
@@ -417,6 +420,10 @@ function renderDestinations() {
     if(place.photo){const credit=document.createElement('a');credit.className='card-photo-credit';credit.href=place.photo.source;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent='PHOTO / COMMONS';credit.setAttribute('aria-label',`Open photo credit and license for ${place.name}`);imageWrap.append(photoButton,credit,region,number,saveButton);}
     else imageWrap.append(photoButton, region, number, saveButton);
     const copy = document.createElement('div'); copy.className = 'card-copy';
+    const contextBadges = document.createElement('div'); contextBadges.className = 'destination-context-badges';
+    if (monthSearchEnabled && getPlacesForMonth(Number(monthSelect.value)).has(place.name)) { const badge=document.createElement('span'); badge.textContent=`SEASONAL · ${MONTHS[Number(monthSelect.value)]}`; contextBadges.append(badge); }
+    if (LOCAL_FIND_NAMES.has(place.name)) { const badge=document.createElement('span'); badge.textContent='LOCAL FIND'; contextBadges.append(badge); }
+    if (contextBadges.childElementCount) copy.append(contextBadges);
     const location = document.createElement('span'); location.className = 'card-place'; location.textContent = place.region;
     const row = document.createElement('div'); row.className = 'card-title-row';
     const title = document.createElement('h3'); title.className = 'card-title'; title.textContent = place.name;
@@ -444,7 +451,7 @@ function updateSavedUI() {
 function updateLocalFindsUI() {
   const button=document.querySelector('#local-finds-toggle');
   button.setAttribute('aria-pressed',String(localFindsOnly));
-  button.firstChild.textContent=localFindsOnly?'Showing local finds ':'Explore local finds ';
+  button.firstChild.textContent=localFindsOnly?'Local Finds · active ':'Local Finds ';
   document.querySelector('#local-finds-count').textContent=`${LOCAL_FIND_NAMES.size} PLACES`;
   document.querySelector('#local-finds-clear').hidden=!localFindsOnly;
   document.querySelector('#local-finds-description').textContent=localFindsOnly
@@ -452,14 +459,32 @@ function updateLocalFindsUI() {
     : 'Quieter walks, small-town streets, and open-air stops for a lighter-cost day. These are curated under-the-radar finds, not guaranteed secrets; transport and entry costs vary.';
 }
 document.querySelector('#local-finds-toggle').addEventListener('click',()=>{
-  localFindsOnly=!localFindsOnly;visibleLimit=12;updateLocalFindsUI();renderDestinations();
+  if(localFindsOnly){localFindsManual=false;search.value=search.value.replace(/\b(local|locals|quiet|quieter|hidden|secret|cheap|affordable)\b/ig,' ').replace(/\s+/g,' ').trim();}
+  else localFindsManual=true;
+  syncUnifiedSearch();
   document.querySelector('#destination-grid').scrollIntoView({behavior:'smooth',block:'start'});
 });
 document.querySelector('#local-finds-clear').addEventListener('click',()=>{
-  localFindsOnly=false;visibleLimit=12;updateLocalFindsUI();renderDestinations();
+  localFindsManual=false;search.value=search.value.replace(/\b(local|locals|quiet|quieter|hidden|secret|cheap|affordable)\b/ig,' ').replace(/\s+/g,' ').trim();syncUnifiedSearch();
 });
 
-search.addEventListener('input', () => { query = search.value; renderDestinations(); });
+function syncUnifiedSearch() {
+  const raw = search.value.toLocaleLowerCase();
+  const monthIndex = MONTHS.findIndex(month => new RegExp(`\\b${month.toLocaleLowerCase()}\\b`).test(raw));
+  const localIntent = /\b(local|locals|quiet|quieter|hidden|secret|cheap|affordable)\b/.test(raw);
+  monthSearchEnabled = monthIndex >= 0 || monthSearchManual;
+  localFindsOnly = localIntent || localFindsManual;
+  if (monthIndex >= 0) monthSelect.value = String(monthIndex);
+  let terms = raw;
+  if (monthIndex >= 0) terms = terms.replace(new RegExp(`\\b${MONTHS[monthIndex].toLocaleLowerCase()}\\b`, 'g'), ' ');
+  terms = terms.replace(/\b(local|locals|quiet|quieter|hidden|secret|cheap|affordable|find|finds|place|places|spot|spots|in|during|for|visit|visiting|seasonal|season|trip|travel|near|around|best|things|to|do|what|where|should|can|go|see|the|and|of|at|only|a|an|is|are|with)\b/g, ' ');
+  query = terms.replace(/\s+/g, ' ').trim();
+  updateMonthSearchUI();
+  updateLocalFindsUI();
+  renderMonthGuide();
+  renderDestinations();
+}
+search.addEventListener('input', syncUnifiedSearch);
 document.querySelector('#show-more').addEventListener('click', () => { visibleLimit += 12; renderDestinations(); });
 savedToggle.addEventListener('click', () => { savedOnly = !savedOnly; updateSavedUI(); renderDestinations(); });
 document.querySelector('#share-guide').addEventListener('click', async event => {
@@ -478,7 +503,7 @@ document.querySelector('#share-guide').addEventListener('click', async event => 
 });
 document.addEventListener('keydown', event => {
   if (event.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) { event.preventDefault(); search.focus(); }
-  if (event.key === 'Escape' && document.activeElement === search) { search.value = ''; query = ''; renderDestinations(); search.blur(); }
+  if (event.key === 'Escape' && document.activeElement === search) { search.value = ''; syncUnifiedSearch(); search.blur(); }
 });
 
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -530,13 +555,16 @@ function updateMonthSearchUI() {
   const toggle = document.querySelector('#month-filter-toggle');
   document.querySelector('#month-filter-name').textContent = monthName;
   toggle.setAttribute('aria-pressed', String(monthSearchEnabled));
-  document.querySelector('#month-filter-prefix').textContent = monthSearchEnabled ? 'Showing' : 'Add';
-  document.querySelector('#month-filter-suffix').textContent = monthSearchEnabled ? 'seasonal places' : 'places to search';
+  document.querySelector('#month-filter-prefix').textContent = monthSearchEnabled ? 'Showing' : 'Include';
+  document.querySelector('#month-filter-suffix').textContent = 'seasonal places';
   document.querySelector('#month-filter-clear').hidden = !monthSearchEnabled;
   document.querySelector('#month-filter-description').textContent = monthSearchEnabled ? `The destination search is showing ${monthName} seasonal picks. Search words, region, mood, and saved filters still apply.` : 'Choose a travel month above, then include its seasonal places in the full destination search.';
+  const help=document.querySelector('#search-intent-help');
+  const active=[monthSearchEnabled?`${monthName} seasonal picks`:null,localFindsOnly?'Local Finds':null].filter(Boolean);
+  help.textContent=active.length?`Unified results filtered by ${active.join(' + ')}. Add a place, region, or experience to narrow further.`:'One search for places, regions, experiences, Local Finds, and seasonal picks. Type a month or use the filters below.';
 }
-document.querySelector('#month-filter-toggle').addEventListener('click', () => { monthSearchEnabled = !monthSearchEnabled; visibleLimit = 12; updateMonthSearchUI(); renderDestinations(); });
-document.querySelector('#month-filter-clear').addEventListener('click', () => { monthSearchEnabled = false; visibleLimit = 12; updateMonthSearchUI(); renderDestinations(); });
+document.querySelector('#month-filter-toggle').addEventListener('click', () => { if(monthSearchEnabled){monthSearchManual=false;search.value=search.value.replace(new RegExp(`\\b${MONTHS[Number(monthSelect.value)]}\\b`,'ig'),' ').replace(/\s+/g,' ').trim();}else monthSearchManual=true; visibleLimit=12; syncUnifiedSearch(); });
+document.querySelector('#month-filter-clear').addEventListener('click', () => { monthSearchManual=false; if (search.value) { search.value = search.value.replace(new RegExp(`\\b${MONTHS[Number(monthSelect.value)]}\\b`, 'ig'), '').trim(); } visibleLimit = 12; syncUnifiedSearch(); });
 function renderMonthGuide() {
   const monthIndex = Number(monthSelect.value);
   const guide = MONTH_GUIDE[monthIndex];
@@ -597,7 +625,11 @@ function renderMonthGuide() {
     results.replaceChildren(empty);
   } else results.replaceChildren(...cards);
 }
-monthSelect.addEventListener('change', renderMonthGuide);
+monthSelect.addEventListener('change', () => {
+  monthSearchManual=true;
+  search.value=search.value.replace(/\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b/ig,' ').replace(/\s+/g,' ').trim();
+  syncUnifiedSearch();
+});
 tripLengthSelect.addEventListener('change', renderMonthGuide);
 journeyRegionSelect.addEventListener('change', renderMonthGuide);
 journeyStyleSelect.addEventListener('change', renderMonthGuide);
