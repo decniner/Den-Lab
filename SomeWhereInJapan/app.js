@@ -673,80 +673,32 @@ function renderMonthRoute(picks, monthIndex) {
   const section = document.querySelector('#month-route-plan');
   if (!section || section.dataset.requested !== 'true') return;
   if (!picks.length) { section.replaceChildren(); section.hidden = true; return; }
-  const stopsPerDay = 3;
-  const areaOf = place => place.place.split(/[·,]/)[0].trim();
-  const clusters = [];
-  picks.forEach(item => {
-    const key = `${item.place.region}|${areaOf(item.place)}`;
-    let cluster = clusters.find(group => group.key === key);
-    if (!cluster) { cluster = { key, region: item.place.region, area: areaOf(item.place), items: [] }; clusters.push(cluster); }
-    cluster.items.push(item);
-  });
-  clusters.sort((a, b) => picks.indexOf(a.items[0]) - picks.indexOf(b.items[0]));
-  const itinerary = [];
-  clusters.forEach(cluster => {
-    while (cluster.items.length) {
-      let day = itinerary.find(candidate => candidate.region === cluster.region && candidate.items.length < stopsPerDay && candidate.areas.has(cluster.area));
-      if (!day) day = itinerary.find(candidate => candidate.region === cluster.region && candidate.items.length < stopsPerDay);
-      if (!day) {
-        day = { region: cluster.region, area: cluster.area, areas: new Set(), items: [] };
-        itinerary.push(day);
-      }
-      day.areas.add(cluster.area);
-      day.items.push(cluster.items.shift());
-    }
-  });
-  itinerary.forEach(day => { day.area = [...day.areas].join(' · '); });
   const heading = document.createElement('div'); heading.className = 'month-route-heading';
   const copy = document.createElement('div');
-  const kicker = document.createElement('p'); kicker.className = 'month-route-kicker'; kicker.textContent = 'YOUR SEASONAL ROUTE';
-  const title = document.createElement('h4'); title.textContent = `${MONTHS[monthIndex]} · ${itinerary.length} ${itinerary.length === 1 ? 'day' : 'days'} in ${journeyRegionSelect.value === 'all' ? 'Japan' : journeyRegionSelect.value}`;
-  const intro = document.createElement('p'); intro.className = 'month-route-intro'; intro.textContent = 'A fuller day plan, with up to three seasonal places to explore each day. Stops in the same locality are grouped first; when needed, the route pairs places across the same region. Check the map link before you commit to a day, since some regional transfers take longer.';
-  copy.append(kicker, title, intro);
-  const mapLink = document.createElement('a'); mapLink.className = 'month-route-map-link'; mapLink.href = monthRouteUrl(itinerary); mapLink.target = '_blank'; mapLink.rel = 'noopener noreferrer'; mapLink.textContent = 'Open full route in Google Maps ↗';
-  heading.append(copy, mapLink);
-  const grid = document.createElement('div'); grid.className = 'month-route-days';
-  itinerary.forEach((day, dayIndex) => {
-    const article = document.createElement('article'); article.className = 'month-route-day';
-    const header = document.createElement('div'); header.className = 'month-route-day-head';
-    const label = document.createElement('span'); label.textContent = `DAY ${String(dayIndex + 1).padStart(2, '0')} · ${day.region.toUpperCase()}`;
-    const area = document.createElement('h5'); area.textContent = day.area;
-    const headCopy = document.createElement('div'); headCopy.append(label, area);
-    const dayMap = document.createElement('a'); dayMap.className = 'month-route-day-link'; dayMap.href = monthRouteUrl([day]); dayMap.target = '_blank'; dayMap.rel = 'noopener noreferrer'; dayMap.textContent = 'Route this day ↗';
-    header.append(headCopy, dayMap);
-    const stops = document.createElement('div'); stops.className = 'month-route-stops';
-    day.items.forEach((item, stopIndex) => {
-      const place = item.place;
-      const stop = document.createElement('article'); stop.className = 'month-route-stop';
-      const photo = document.createElement('div'); photo.className = 'month-route-stop-photo';
-      const src = place.photo?.url || (place.image ? `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0` : '');
-      if (src) {
-        const image = document.createElement('img'); image.src = src; image.alt = place.photo?.alt || place.alt || `${place.name} in ${place.place}`; image.loading = 'lazy';
-        image.addEventListener('error', () => { if (place.photo?.url && place.image && image.src === place.photo.url) image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`; else photo.classList.add('month-route-photo-missing'); }, { once: true });
-        photo.append(image);
-        if (place.photo?.credit) { const credit = document.createElement('span'); credit.className = 'month-route-photo-credit'; credit.textContent = `PHOTO · ${place.photo.credit}`; photo.append(credit); }
-      } else { photo.classList.add('month-route-photo-missing'); photo.textContent = `Field note · ${place.place}`; }
-      const meta = document.createElement('p'); meta.className = 'month-route-stop-meta'; meta.textContent = `STOP ${String(stopIndex + 1).padStart(2, '0')} · ${place.region.toUpperCase()}`;
-      const name = document.createElement('h6'); name.textContent = placeDisplayName(place.name);
-      const season = document.createElement('p'); season.className = 'month-route-season'; season.textContent = `WHY ${MONTHS[monthIndex].toUpperCase()}: ${item.reason}`;
-      const story = document.createElement('p'); story.className = 'month-route-story'; story.textContent = `${place.description} ${placeStory(place, PLACE_SPOTLIGHTS[place.name])}`.trim();
-      const detail = document.createElement('button'); detail.type = 'button'; detail.className = 'month-route-detail-button'; detail.textContent = 'Read the place story & exact points ↗'; detail.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
-      stop.append(photo, meta, name, season, story, detail); stops.append(stop);
-    });
-    article.append(header, stops); grid.append(article);
+  const kicker = document.createElement('p'); kicker.className = 'month-route-kicker'; kicker.textContent = 'SEASONAL INSPIRATION - NOT A DAY PLAN';
+  const title = document.createElement('h4'); title.textContent = `${picks.length} ${picks.length === 1 ? 'place' : 'places'} to explore in ${MONTHS[monthIndex]}`;
+  const intro = document.createElement('p'); intro.className = 'month-route-intro'; intro.textContent = 'These places match your season and interests. Each is shown individually; regional proximity does not confirm a practical same-day itinerary. Check access, opening times and transport before combining stops.';
+  copy.append(kicker, title, intro); heading.append(copy);
+  const grid = document.createElement('div'); grid.className = 'month-route-stops';
+  picks.forEach(item => {
+    const place = item.place;
+    const card = document.createElement('article'); card.className = 'month-route-stop';
+    const photo = document.createElement('div'); photo.className = 'month-route-stop-photo';
+    const src = place.photo?.url || (place.image ? `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0` : '');
+    if (src) { const img = document.createElement('img'); img.src = src; img.alt = place.photo?.alt || place.alt || `${place.name} in ${place.place}`; img.loading = 'lazy'; photo.append(img); }
+    else { photo.classList.add('month-route-photo-missing'); photo.textContent = `Field note | ${place.place}`; }
+    const meta = document.createElement('p'); meta.className = 'month-route-stop-meta'; meta.textContent = `${place.region} | ${place.place}`;
+    const name = document.createElement('h6'); name.textContent = placeDisplayName(place.name);
+    const season = document.createElement('p'); season.className = 'month-route-season'; season.textContent = `WHY ${MONTHS[monthIndex].toUpperCase()}: ${item.reason}`;
+    const story = document.createElement('p'); story.className = 'month-route-story'; story.textContent = `${place.description} ${placeStory(place, PLACE_SPOTLIGHTS[place.name])}`.trim();
+    const actions = document.createElement('div'); actions.className = 'month-place-actions';
+    const map = document.createElement('a'); map.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name}, ${place.place}, Japan`)}`; map.target = '_blank'; map.rel = 'noopener noreferrer'; map.textContent = 'Find this place on Google Maps';
+    const detail = document.createElement('button'); detail.type = 'button'; detail.className = 'month-route-detail-button'; detail.textContent = 'Read place story'; detail.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
+    actions.append(map, detail); card.append(photo, meta, name, season, story, actions); grid.append(card);
   });
-  const note = document.createElement('p'); note.className = 'month-route-caveat';
-  const included = itinerary.reduce((count, day) => count + day.items.length, 0);
-  note.textContent = `${picks.length} places matched your filters. The route groups up to three stops per day, keeping shared localities together and pairing other stops within the same region. Regional distances vary: use each transit map to confirm that day’s travel is practical. Travel time, opening hours, fares and seasonal access are not live-checked here.`;
+  const note = document.createElement('p'); note.className = 'month-route-caveat'; note.textContent = 'Map links open individual place searches, not a combined route. Only the five Tokyo outing guides contain sourced reference estimates; nationwide seasonal picks are inspiration without implied time or budget.';
   section.hidden = false;
   section.replaceChildren(heading, grid, note);
-}
-function monthRouteUrl(days) {
-  const stops = days.flatMap(day => day.items.map(item => `${item.place.name}, ${item.place.place}`));
-  if (!stops.length) return 'https://www.google.com/maps';
-  const params = new URLSearchParams({ api: '1', origin: stops[0], destination: stops[stops.length - 1], travelmode: 'transit' });
-  if (stops.length > 2) params.set('waypoints', stops.slice(1, -1).join('|'));
-  return `https://www.google.com/maps/dir/?${params.toString()}`;
 }
 document.querySelector('#build-month-route')?.addEventListener('click', () => {
   const section = document.querySelector('#month-route-plan');

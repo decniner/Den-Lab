@@ -32,11 +32,13 @@ test('each route profile includes precise, map-linked stops and practical route 
     assert.match(html, /<main[^>]+route-guide/);
     assert.match(html, /route-map-interactive/);
     assert.match(html, /short-route-card/);
-    assert.match(html, /A realistic time budget/);
+    assert.match(html, /Planning ranges with stated gaps/);
     assert.match(html, /WHEN YOU HAVE LESS TIME/);
     assert.match(html, /route-sources/);
     assert.match(html, /youtube\.com\/results\?search_query=/);
     assert.match(html, /2026-10-22/);
+    assert.match(html, /Return to the arrival station/);
+    if (trip.slug === 'kawagoe') assert.match(html, /Open the Kawagoe street map on OpenStreetMap/);
     assert.doesNotMatch(html, /EDITORIAL ROUTE SKETCH|EDITORIAL TYPOGRAPHY FALLBACK/);
     assert.doesNotMatch(html, /Map data © OpenStreetMap contributors/);
   }

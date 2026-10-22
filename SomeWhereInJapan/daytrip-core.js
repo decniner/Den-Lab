@@ -56,13 +56,24 @@
     return false;
   }
 
+  function hasCompleteBudget(route) {
+    if (!route || route.estimateStatus !== 'complete' || !route.costBreakdown || !route.costYen) return false;
+    const required = ['transport', 'admissions', 'meal'];
+    if (!required.every((key) => {
+      const part = route.costBreakdown[key];
+      return part && Number.isFinite(part.min) && Number.isFinite(part.max) && part.min >= 0 && part.max >= part.min;
+    })) return false;
+    const sum = (key) => required.reduce((total, name) => total + route.costBreakdown[name][key], 0);
+    return route.costYen.min === sum('min') && route.costYen.max === sum('max');
+  }
+
   function filterTrips(trips, criteria) {
     const state = sanitizeState(criteria);
     const found = (Array.isArray(trips) ? trips : []).filter((trip) => {
       if (!trip || !Array.isArray(trip.months) || !trip.months.includes(state.month)) return false;
       const route = routeFor(trip, state.transport, state.time);
       const maxCost = Number(route && route.costYen && route.costYen.max);
-      return Boolean(route) && fitsTime(route, state.time) && Number.isFinite(maxCost) && maxCost <= state.budget;
+      return hasCompleteBudget(route) && fitsTime(route, state.time) && Number.isFinite(maxCost) && maxCost <= state.budget;
     });
 
     found.sort((a, b) => {
@@ -75,6 +86,15 @@
       return String(a.slug || a.id).localeCompare(String(b.slug || b.id));
     });
     return found.slice(0, 3);
+  }
+
+  function findUnbudgetedTrips(trips, criteria) {
+    const state = sanitizeState(criteria);
+    return (Array.isArray(trips) ? trips : []).filter((trip) => {
+      if (!trip || !Array.isArray(trip.months) || !trip.months.includes(state.month)) return false;
+      const route = routeFor(trip, state.transport, state.time);
+      return Boolean(route) && fitsTime(route, state.time) && !hasCompleteBudget(route);
+    }).slice(0, 5);
   }
 
   function createNoMatchMessage(trips, criteria) {
@@ -96,14 +116,18 @@
       return nearest ? `No pilot route is listed for ${MONTH_NAMES[state.month - 1]}. Try ${MONTH_NAMES[nearest - 1]} or browse all five guides below.` : 'No routes are available for these choices. Browse all five guides below.';
     }
 
-    const windowTrips = sameMode.filter((trip) => {
+    const timeMatches = sameMode.filter((trip) => {
       const route = routeFor(trip, state.transport, state.time);
       return route && fitsTime(route, state.time);
     });
+    const windowTrips = timeMatches.filter((trip) => hasCompleteBudget(routeFor(trip, state.transport, state.time)));
+    if (!windowTrips.length && timeMatches.length) {
+      return 'A guide range overlaps your time selection, but costs are incomplete and detailed duration components are not verified. This is not a verified time or budget match; open the guide to review its gaps.';
+    }
     if (!windowTrips.length && state.time === 'half') {
       const fullDayTrips = sameMode.filter((trip) => {
         const route = routeFor(trip, state.transport, 'full');
-        return route && fitsTime(route, 'full');
+        return route && fitsTime(route, 'full') && hasCompleteBudget(route);
       });
       if (fullDayTrips.length) {
         const minimumBudget = Math.min(...fullDayTrips.map((trip) => Number(routeFor(trip, state.transport, 'full').costYen.max)));
@@ -174,6 +198,8 @@
     STORAGE_KEY,
     DEFAULTS,
     filterTrips,
+    findUnbudgetedTrips,
+    hasCompleteBudget,
     createNoMatchMessage,
     readSharedPlan,
     buildShareUrl,

@@ -9,15 +9,22 @@
     odawara: ['https://odawaracastle.com/info/', 'https://odawaracastle.com/access/', 'https://www.city.odawara.kanagawa.jp/kanko/service/tetudo.html']
   };
   const season = (months, text) => Object.fromEntries(months.map((m) => [m, text]));
-  const profile = (hMin, hMax, tMin, tMax, cMin, cMax, arrival, stops, sources, breakdown = {}) => ({
-    roundTripHours: { min: hMin, max: hMax }, totalHours: { min: tMin, max: tMax }, costYen: { min: cMin, max: cMax },
-    costBreakdown: {
-      transport: breakdown.transport || { min: cMin - 1500, max: cMax - 1500 },
-      admissions: breakdown.admissions || { min: 0, max: 0 },
-      meal: breakdown.meal || { min: 1500, max: 2500 }
-    },
-    arrival, stops, sources
-  });
+  const profile = (hMin, hMax, tMin, tMax, cMin, cMax, arrival, stops, sources, breakdown = {}, completeBudget = false, timeBudget = null) => {
+    const costBreakdown = completeBudget ? breakdown : null;
+    const costYen = completeBudget ? {
+      min: Object.values(costBreakdown).reduce((sum, part) => sum + part.min, 0),
+      max: Object.values(costBreakdown).reduce((sum, part) => sum + part.max, 0)
+    } : null;
+    return {
+      roundTripHours: { min: hMin, max: hMax }, totalHours: timeBudget ? {
+        min: Object.values(timeBudget).reduce((sum, part) => sum + part.min, 0),
+        max: Object.values(timeBudget).reduce((sum, part) => sum + part.max, 0)
+      } : { min: tMin, max: tMax }, timeBudget, costYen, costBreakdown,
+      estimateStatus: completeBudget ? 'complete' : 'incomplete',
+      estimateNote: completeBudget ? 'Tokyo Station origin; direct Tokyo-Sawara coach return, listed museum combination ticket and meal allowance. Duration is a planning range, not a date-specific timetable.' : 'Cost and detailed duration components are incomplete: one or more required transport legs, local transfers, admissions or activity-time components has not been verified.',
+      arrival, stops, sources
+    };
+  };
   const publicOnly = (half, full) => ({ public: { profiles: Object.assign({}, half ? { half } : {}, full ? { full } : {}) } });
   const DAY_TRIPS = [
     {
@@ -35,7 +42,7 @@
       id:'sawara', slug:'sawara', name:'Sawara', subtitle:'Canal-side merchant streets on the old Tone waterway', region:'Chiba · Kanto', months:[3,4,5,6,7,9,10,11], interests:['culture','food'],
       seasonFit:season([3,4,5,6,7,9,10,11],'The historic district works in most seasons; July and October festival periods bring extra atmosphere and heavier crowds.'), effort:'Easy town walking, with uneven historic paving in places.',tradeoff:'Direct highway buses are limited each day. Reserve around the published return departure; missing it can disrupt the return plan.',arrival:'Sawara (Suigo Sawara) highway-bus stop or JR Sawara Station.',checkedOn,
       image:{url:'',credit:'Editorial typography fallback',license:'No external image asset used'},
-      modes:publicOnly(null,profile(2.6,3.4,8,10.5,6100,7100,'Sawara (Suigo Sawara) bus stop; the historic center is a short walk away.',['Ono River and Chukei Bridge','Sawara Machiya-kan','Suigo Sawara Float Museum','Inoh Tadataka Museum and former residence'],src.sawara,{transport:{min:3800,max:3800},admissions:{min:800,max:800},meal:{min:1500,max:2500}})),sources:src.sawara
+      modes:publicOnly(null,profile(2.6,3.4,8,10.5,6100,7100,'Sawara (Suigo Sawara) bus stop; the historic center is a short walk away.',['Ono River and Chukei Bridge','Sawara Machiya-kan','Suigo Sawara Float Museum','Inoh Tadataka Museum and former residence'],src.sawara,{transport:{min:3800,max:3800},admissions:{min:800,max:800},meal:{min:1500,max:2500}},true,{'Travel (coach and transfers)':{min:2.6,max:3.4},walking:{min:1,max:1.5},visiting:{min:3,max:3.6},meal:{min:1,max:1},buffer:{min:0.4,max:1}})),sources:src.sawara
     },
     {
       id:'mitake',slug:'mitake',name:'Mount Mitake',subtitle:'A shrine village above the forested Ome valley',region:'Tokyo · Kanto',months:[4,5,6,7,8,9,10,11],interests:['nature','culture'],

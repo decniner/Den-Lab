@@ -14,8 +14,8 @@ test('field atlas offers nine region pins, direct picks, and independent Japan a
   assert.match(html, /id="destination-grid"/);
 });
 
-test('homepage advertises 230 places and loads the newest catalogue expansion before the app', () => {
-  assert.match(html, /230 places/);
+test('homepage advertises 310 places and loads the newest catalogue expansion before the app', () => {
+  assert.match(html, /310 places/);
   assert.match(html, /destination-expansion-2\.js\?v=20261022-1/);
   assert.ok(html.indexOf('destination-expansion-2.js') < html.indexOf('app.js'), 'the destination data loads before its renderer');
 });

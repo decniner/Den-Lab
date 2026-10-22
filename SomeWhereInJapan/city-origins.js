@@ -93,51 +93,16 @@ naha:{title:'Naha: Ryukyu heritage to the night market streets',intro:'Start on 
 ]}
 });
 function nearbyPlaces(places,originId){const origin=ALL_ORIGINS.find(item=>item.id===originId);return origin?(places||[]).filter(place=>place.region===origin.region):[];}
-function itineraryDays(stops,availability='one',regionalPlaces=[],originCity=''){
+function itineraryDays(stops,availability='one'){
  const places=Array.isArray(stops)?stops:[];
- if(availability==='half')return[{title:'A focused half-day',stops:places.slice(0,2)}];
+ if(availability==='half')return[{title:'A focused half-day ? suggested city highlights',stops:places.slice(0,2)}];
  const requested=availability==='two'?2:availability==='one'?1:Number.parseInt(availability,10);
  const dayCount=Number.isFinite(requested)?Math.max(1,Math.min(30,requested)):1;
- if(dayCount===1)return[{title:'One full day · city highlights',stops:places}];
- const normalize=value=>String(value||'').toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
- const coreNames=places.map(stop=>normalize(stop.name));
- const sameAttraction=(a,b)=>{const left=new Set(a.split(' ').filter(token=>token.length>2));const right=new Set(b.split(' ').filter(token=>token.length>2));const smaller=left.size<=right.size?left:right;const larger=smaller===left?right:left;return smaller.size>0&&[...smaller].filter(token=>larger.has(token)).length/smaller.size>=0.75;};
- const candidates=(Array.isArray(regionalPlaces)?regionalPlaces:[]).filter(place=>{const name=normalize(place.name);return name&&!coreNames.some(core=>sameAttraction(core,name));});
- const regionNames=new Set(['hokkaido','tohoku','kanto','chubu','kansai','chugoku','shikoku','kyushu','okinawa']);
- const prefectureNames=new Set(['hokkaido','aomori','iwate','miyagi','akita','yamagata','fukushima','ibaraki','tochigi','gunma','saitama','chiba','tokyo','kanagawa','niigata','toyama','ishikawa','fukui','yamanashi','nagano','gifu','shizuoka','aichi','mie','shiga','kyoto','osaka','hyogo','nara','wakayama','tottori','shimane','okayama','hiroshima','yamaguchi','tokushima','kagawa','ehime','kochi','fukuoka','saga','nagasaki','kumamoto','oita','miyazaki','kagoshima','okinawa']);
- const grouped=new Map();
- for(const place of candidates){
-  const parts=String(place.place||'').split(/[·,]/).map(part=>part.trim()).filter(Boolean);
-  if(parts.length<2)continue;
-  const last=parts[parts.length-1];
-  let locality=last;
-  if(regionNames.has(normalize(last))){
-   if(parts.length>=3)locality=parts[parts.length-2];
-   else if(normalize(parts[0])===normalize(originCity))locality=parts[0];
-   else if(!prefectureNames.has(normalize(parts[0])))locality=parts[0];
-   else continue;
-  }
-  const key=normalize(last)===normalize(originCity)?last:locality;
-  if(!key)continue;
-  if(!grouped.has(key))grouped.set(key,[]);
-  grouped.get(key).push({name:place.name,area:place.place,timing:'Suggested visit · check current access',duration:'60–90 min · planning estimate',story:place.description||`Explore ${place.name} and confirm current visitor information before setting out.`,photo:place.photo||null,image:place.image||'',alt:place.alt||`${place.name} in ${place.place}`});
- }
- const clusters=[];
- for(const [name,group] of grouped){
-  if(group.length<2)continue;
-  for(let index=0;index<group.length;){
-   const remaining=group.length-index;
-   const count=remaining===4?2:Math.min(3,remaining);
-   clusters.push({area:name,stops:group.slice(index,index+count)});
-   index+=count;
-  }
- }
- const days=[{title:'City center · full-day highlights',stops:places}];
- for(const cluster of clusters){if(days.length>=dayCount)break;days.push({title:`${cluster.area} · neighborhood day`,stops:cluster.stops});}
- while(days.length<dayCount)days.push({title:'Flexible day · choose your own pace',stops:[]});
+ const days=[{title:'Suggested city highlights ? check each connection',stops:places}];
+ while(days.length<dayCount)days.push({title:`Flexible day ${days.length+1} ? choose places individually`,stops:[]});
  return days;
 }
 function directionsUrl(origin,destination,mode='transit',from=null){const url=new URL('https://www.google.com/maps/dir/');url.searchParams.set('api','1');url.searchParams.set('origin',`${from||origin.station}, Japan`);url.searchParams.set('destination',`${destination}, Japan`);url.searchParams.set('travelmode',mode==='car'?'driving':'transit');return url.href;}
-function dayPlanDirectionsUrl(origin,stops,mode='transit'){const url=new URL('https://www.google.com/maps/dir/');const places=Array.isArray(stops)?stops:[];const query=stop=>`${stop.name}, ${stop.area}, Japan`;url.searchParams.set('api','1');url.searchParams.set('origin',`${origin.station}, Japan`);url.searchParams.set('destination',places.length?query(places[places.length-1]):`${origin.station}, Japan`);if(places.length>1)url.searchParams.set('waypoints',places.slice(0,-1).map(query).join('|'));url.searchParams.set('travelmode',mode==='car'?'driving':'transit');return url.href;}
+function dayPlanDirectionsUrl(origin,stops,mode='transit'){const places=Array.isArray(stops)?stops:[];return directionsUrl(origin,places.length?`${places[0].name}, ${places[0].area}`:origin.station,mode);}
 const api=Object.freeze({CITY_ORIGINS,AIRPORT_ORIGINS,ALL_ORIGINS,CITY_DAY_PLANS,nearbyPlaces,itineraryDays,directionsUrl,dayPlanDirectionsUrl});if(typeof module!=='undefined'&&module.exports)module.exports=api;if(root)root.CityOrigins=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

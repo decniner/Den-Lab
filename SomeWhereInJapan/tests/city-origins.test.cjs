@@ -16,6 +16,7 @@ test('offers real airport rail and bus terminals as origins for the matching cit
   assert.ok(origins.CITY_DAY_PLANS[airport.planId],`${airport.id} reuses a matching city plan`);
   const route=new URL(origins.dayPlanDirectionsUrl(airport,origins.CITY_DAY_PLANS[airport.planId].stops,'transit'));
   assert.equal(route.searchParams.get('origin'),`${airport.station}, Japan`);
+  assert.equal(route.searchParams.has('waypoints'),false);
   assert.equal(origins.nearbyPlaces([{region:airport.region}],airport.id).length,1);
  }
 });
@@ -31,8 +32,8 @@ test('gives every origin including Tokyo a detailed ordered day plan and live ro
   assert.ok(plan.stops.every(stop=>stop.name&&stop.area&&stop.duration&&stop.story),`${city.city} stops have useful detail`);
   const route=new URL(origins.dayPlanDirectionsUrl(city,plan.stops,'transit'));
   assert.equal(route.searchParams.get('origin'),`${city.station}, Japan`);
-  assert.equal(route.searchParams.get('destination'),`${plan.stops.at(-1).name}, ${plan.stops.at(-1).area}, Japan`);
-  assert.equal(route.searchParams.get('waypoints'),plan.stops.slice(0,-1).map(stop=>`${stop.name}, ${stop.area}, Japan`).join('|'));
+  assert.equal(route.searchParams.get('destination'),`${plan.stops[0].name}, ${plan.stops[0].area}, Japan`);
+  assert.equal(route.searchParams.has('waypoints'),false);
  }
 });
 
@@ -57,7 +58,8 @@ test('adapts each city route to a half day, one day, or two days',()=>{
   assert.equal(half.length,1,`${id} half-day plan`);assert.equal(half[0].stops.length,2,`${id} half-day plan is focused`);
   assert.equal(full.length,1,`${id} one-day plan`);assert.equal(full[0].stops.length,plan.stops.length,`${id} full-day plan includes every stop`);
   assert.equal(two.length,2,`${id} two-day plan has two days`);assert.equal(two.flatMap(day=>day.stops).length,plan.stops.length,`${id} two-day plan preserves every stop`);
-  assert.ok(two.every(day=>day.stops.length>=2),`${id} spreads visits across both days`);
+  assert.equal(two[0].stops.length,plan.stops.length,`${id} preserves the curated day sequence`);
+  assert.deepEqual(two[1].stops,[],`${id} keeps additional days flexible instead of inventing a grouped route`);
  }
 });
 
@@ -71,4 +73,6 @@ test('uses one shared itinerary renderer and preserves Tokyo day-trip tools as s
  assert.match(ui,/city-plan-stop-photo/);
  assert.match(ui,/tokyo-route-tools/);
  assert.doesNotMatch(ui,/if\s*\(isTokyo\)\s*return/);
+ assert.doesNotMatch(ui,/dayPlanDirectionsUrl\(origin,day\.stops/);
+ assert.match(ui,/individual directions/);
 });

@@ -16,6 +16,8 @@ const makeProfile = (slug, totalHours, costMax) => ({
   roundTripHours: { min: 2, max: 3 },
   totalHours: { min: totalHours - 1, max: totalHours },
   costYen: { min: 5000, max: costMax },
+  estimateStatus: 'complete',
+  costBreakdown: { transport: { min: 1000, max: costMax - 4500 }, admissions: { min: 500, max: 500 }, meal: { min: 3500, max: 4000 } },
   arrival: `${slug} Station`,
   sources: ['https://example.jp/route']
 });
@@ -50,14 +52,22 @@ test('pilotTripRecordsAreCompleteAndCosted', () => {
     assert.ok(Object.keys(trip.modes).length > 0, trip.slug + ' supported mode');
     for (const [mode, record] of Object.entries(trip.modes)) for (const [time, profile] of Object.entries(record.profiles)) {
       assert.ok(profile.totalHours.min > 0 && profile.totalHours.max >= profile.totalHours.min, trip.slug + ' ' + mode + ' ' + time + ' duration');
-      assert.ok(profile.costYen.max >= profile.costYen.min && profile.costYen.min > 0, trip.slug + ' ' + mode + ' ' + time + ' cost');
-      assert.ok(profile.costBreakdown && profile.costBreakdown.transport && profile.costBreakdown.admissions && profile.costBreakdown.meal, trip.slug + ' cost components');
-      const components = Object.values(profile.costBreakdown);
-      assert.equal(components.reduce((total, part) => total + part.min, 0), profile.costYen.min, trip.slug + ' minimum cost components sum');
-      assert.equal(components.reduce((total, part) => total + part.max, 0), profile.costYen.max, trip.slug + ' maximum cost components sum');
+      if (profile.estimateStatus === 'complete') {
+        assert.ok(profile.costYen.max >= profile.costYen.min && profile.costYen.min > 0, trip.slug + ' ' + mode + ' ' + time + ' cost');
+        const components = Object.values(profile.costBreakdown);
+        assert.equal(components.reduce((total, part) => total + part.min, 0), profile.costYen.min, trip.slug + ' minimum cost components sum');
+        assert.equal(components.reduce((total, part) => total + part.max, 0), profile.costYen.max, trip.slug + ' maximum cost components sum');
+        assert.ok(profile.timeBudget, trip.slug + ' complete estimate has explicit day-time components');
+        assert.equal(Object.values(profile.timeBudget).reduce((total, part) => total + part.min, 0), profile.totalHours.min, trip.slug + ' minimum time components sum');
+        assert.equal(Object.values(profile.timeBudget).reduce((total, part) => total + part.max, 0), profile.totalHours.max, trip.slug + ' maximum time components sum');
+      } else {
+        assert.equal(profile.costYen, null, trip.slug + ' incomplete total is not displayed');
+        assert.equal(profile.costBreakdown, null, trip.slug + ' unknown costs are not zero-filled');
+      }
       assert.ok(profile.arrival && Array.isArray(profile.stops) && profile.stops.length >= 2 && profile.sources.length > 0, trip.slug + ' route detail');
     }
   }
+  assert.deepEqual(trips.filter((trip) => trip.modes.public.profiles.full.estimateStatus === 'complete').map((trip) => trip.slug), ['sawara']);
 });
 
 test('filtersByMonthTransportDurationAndUpperBudget', () => {
@@ -78,6 +88,18 @@ test('filtersByMonthTransportDurationAndUpperBudget', () => {
   assert.deepEqual(matches.map((trip) => trip.slug), ['boundary-fit']);
 });
 
+test('incomplete or inconsistent cost estimates never qualify for a budget match', () => {
+  const incomplete = makeTrip('unknown-cost', { modes: { public: { profiles: {
+    half: { ...makeProfile('unknown-cost', 6, 1000), estimateStatus: 'incomplete', costBreakdown: { transport: { min: 0, max: 0 }, admissions: { min: 0, max: 0 }, meal: { min: 0, max: 0 } } }
+  } } } });
+  const inconsistent = makeTrip('bad-total', { modes: { public: { profiles: {
+    half: { ...makeProfile('bad-total', 6, 1000), estimateStatus: 'complete', costBreakdown: { transport: { min: 100, max: 100 }, admissions: { min: 0, max: 0 }, meal: { min: 100, max: 100 } } }
+  } } } });
+  assert.deepEqual(core.filterTrips([incomplete, inconsistent], { month: 4, time: 'half', transport: 'public', budget: 2000 }), []);
+  assert.deepEqual(core.findUnbudgetedTrips([incomplete, inconsistent], { month: 4, time: 'half', transport: 'public', budget: 2000 }).map((trip) => trip.slug), ['unknown-cost', 'bad-total']);
+  assert.match(core.createNoMatchMessage([incomplete], { month: 4, time: 'half', transport: 'public', budget: 2000 }), /costs are incomplete/i);
+});
+
 test('ranksInterestThenDurationThenSlugAndCapsAtThree', () => {
   assert.equal(typeof core.filterTrips, 'function', 'filterTrips export exists');
   if (typeof core.filterTrips !== 'function') return;
@@ -86,7 +108,8 @@ test('ranksInterestThenDurationThenSlugAndCapsAtThree', () => {
     interests,
     modes: { public: { profiles: { full: {
       ...makeProfile(`${slug} Station`, maxHours, 7000),
-      totalHours: { min: 7, max: maxHours }, costYen: { min: 4000, max: 7000 }
+      totalHours: { min: 7, max: maxHours }, costYen: { min: 4000, max: 7000 },
+      costBreakdown: { transport: { min: 500, max: 3000 }, admissions: { min: 0, max: 500 }, meal: { min: 3500, max: 3500 } }
     } } } }
   });
   const trips = [
