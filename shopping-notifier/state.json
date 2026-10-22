@@ -346,7 +346,7 @@
     "cotopaxijapan:9246627201212:45992677146812": {
       "sale_price": "23100",
       "reference_price": "46200",
-      "sent_at": "2026-10-14T09:48:05+09:00",
+      "sent_at": "2026-10-22T09:22:17+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-jacket-womens-sale26ss?variant=45992677146812"
     },
     "merrell-jp:7268630593579:41168550395947": {
@@ -694,25 +694,25 @@
     "boardriders-co-jp:10631285047577:52412800925977": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-14T09:48:05+09:00",
+      "sent_at": "2026-10-22T09:22:17+09:00",
       "url": "https://boardriders.co.jp/products/erjtp03268?variant=52412800925977"
     },
     "boardriders-co-jp:10631287701785:52412819702041": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-14T09:48:05+09:00",
+      "sent_at": "2026-10-22T09:22:17+09:00",
       "url": "https://boardriders.co.jp/products/g0452506?variant=52412819702041"
     },
     "boardriders-co-jp:10631287931161:52412821668121": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-14T09:48:05+09:00",
+      "sent_at": "2026-10-22T09:22:17+09:00",
       "url": "https://boardriders.co.jp/products/erjtj03493?variant=52412821668121"
     },
     "boardriders-co-jp:10631289438489:52412833825049": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-14T09:48:05+09:00",
+      "sent_at": "2026-10-22T09:22:17+09:00",
       "url": "https://boardriders.co.jp/products/h1352507?variant=52412833825049"
     },
     "boardriders-co-jp:10631284392217:52412796240153": {
@@ -783,9 +783,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-10-21",
-    "coverage_key": "09a78ea0a7d2457617ef67a70800cdde31692707ed45aba777fdcfa01694523f",
-    "completed_at": "2026-10-21T09:18:15+09:00",
-    "digest_hash": "74ebe58bbf6960d72959c671b0600e672d590a7a56eb65494aa5ec996401b53f"
+    "date": "2026-10-22",
+    "coverage_key": "e929256522749682f670cc0fd9c4adda77d6baf06be06964c13437c2d4927ed4",
+    "completed_at": "2026-10-22T09:22:17+09:00",
+    "digest_hash": "cd56ba9a43bcd30718833653db0f1049f69d113d13c7b6a7b029cc4479513b64"
   }
 }
