@@ -596,7 +596,7 @@ function renderMonthGuide() {
     long:'For 10–14 days, combine two or three connected regions; allow time for longer transfers.'
   };
   document.querySelector('#trip-length-guidance').textContent = durationNotes[tripLengthSelect.value];
-  const recommendationLimit = {short:6, week:9, long:12}[tripLengthSelect.value];
+  const recommendationLimit = {short:9, week:18, long:30}[tripLengthSelect.value];
   const expanded=DESTINATIONS.filter(place=>place.months?.includes(monthIndex+1)).map(place=>[place.name,place.seasonReason||'A seasonal place; check local conditions before visiting.']);
   const picks = [...guide.places, ...MONTH_EXTRA_PLACES[monthIndex], ...expanded];
   const uniquePicks = picks.filter((pick, index) => picks.findIndex(item => item[0] === pick[0]) === index);
@@ -613,6 +613,7 @@ function renderMonthGuide() {
     tailoredPicks.sort((a,b) => matchesStyle(b[0]) - matchesStyle(a[0]));
   }
   tailoredPicks = tailoredPicks.slice(0, recommendationLimit);
+  const routePicks = tailoredPicks.map(([name, reason]) => ({ place: DESTINATIONS.find(item => item.name === name), reason })).filter(item => item.place);
   const cards = tailoredPicks.map(([name, reason]) => {
     const place = DESTINATIONS.find(item => item.name === name);
     if (!place) return null;
@@ -661,11 +662,82 @@ function renderMonthGuide() {
     empty.textContent = journeyStyleSelect.value === 'local' ? `No Local Finds are listed for ${journeyRegionSelect.value}. Try All Japan or another region.` : `No ${journeyStyleSelect.value} picks are listed for ${MONTHS[monthIndex]} in ${journeyRegionSelect.value}. Try a different month or region.`;
     results.replaceChildren(empty);
   } else results.replaceChildren(...cards);
+  renderMonthRoute(routePicks, monthIndex);
 }
-monthSelect.addEventListener('change', () => {
-  monthSearchManual=true;
-  search.value=search.value.replace(/\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b/ig,' ').replace(/\s+/g,' ').trim();
-  syncUnifiedSearch();
+function renderMonthRoute(picks, monthIndex) {
+  const section = document.querySelector('#month-route-plan');
+  if (!section || section.dataset.requested !== 'true') return;
+  if (!picks.length) { section.replaceChildren(); section.hidden = true; return; }
+  const requestedDays = { short: 4, week: 7, long: 12 }[tripLengthSelect.value];
+  const areaOf = place => place.place.split(/[·,]/)[0].trim();
+  const clusters = [];
+  picks.forEach(item => {
+    const key = `${item.place.region}|${areaOf(item.place)}`;
+    let cluster = clusters.find(group => group.key === key);
+    if (!cluster) { cluster = { key, region: item.place.region, area: areaOf(item.place), items: [] }; clusters.push(cluster); }
+    cluster.items.push(item);
+  });
+  clusters.sort((a, b) => b.items.length - a.items.length || picks.indexOf(a.items[0]) - picks.indexOf(b.items[0]));
+  const itinerary = clusters.slice(0, requestedDays).map(cluster => ({ ...cluster, items: cluster.items.slice(0, 4) }));
+  const heading = document.createElement('div'); heading.className = 'month-route-heading';
+  const copy = document.createElement('div');
+  const kicker = document.createElement('p'); kicker.className = 'month-route-kicker'; kicker.textContent = 'YOUR SEASONAL ROUTE';
+  const title = document.createElement('h4'); title.textContent = `${MONTHS[monthIndex]} · ${itinerary.length} ${itinerary.length === 1 ? 'day' : 'days'} in ${journeyRegionSelect.value === 'all' ? 'Japan' : journeyRegionSelect.value}`;
+  const intro = document.createElement('p'); intro.className = 'month-route-intro'; intro.textContent = 'A suggested order built from your seasonal picks. Each day stays within one named locality; longer transfers between areas are best treated as travel days. Open directions for current routes and schedules.';
+  copy.append(kicker, title, intro);
+  const mapLink = document.createElement('a'); mapLink.className = 'month-route-map-link'; mapLink.href = monthRouteUrl(itinerary); mapLink.target = '_blank'; mapLink.rel = 'noopener noreferrer'; mapLink.textContent = 'Open full route in Google Maps ↗';
+  heading.append(copy, mapLink);
+  const grid = document.createElement('div'); grid.className = 'month-route-days';
+  itinerary.forEach((day, dayIndex) => {
+    const article = document.createElement('article'); article.className = 'month-route-day';
+    const header = document.createElement('div'); header.className = 'month-route-day-head';
+    const label = document.createElement('span'); label.textContent = `DAY ${String(dayIndex + 1).padStart(2, '0')} · ${day.region.toUpperCase()}`;
+    const area = document.createElement('h5'); area.textContent = day.area;
+    const headCopy = document.createElement('div'); headCopy.append(label, area);
+    const dayMap = document.createElement('a'); dayMap.className = 'month-route-day-link'; dayMap.href = monthRouteUrl([day]); dayMap.target = '_blank'; dayMap.rel = 'noopener noreferrer'; dayMap.textContent = 'Route this day ↗';
+    header.append(headCopy, dayMap);
+    const stops = document.createElement('div'); stops.className = 'month-route-stops';
+    day.items.forEach((item, stopIndex) => {
+      const place = item.place;
+      const stop = document.createElement('article'); stop.className = 'month-route-stop';
+      const photo = document.createElement('div'); photo.className = 'month-route-stop-photo';
+      const src = place.photo?.url || (place.image ? `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0` : '');
+      if (src) {
+        const image = document.createElement('img'); image.src = src; image.alt = place.photo?.alt || place.alt || `${place.name} in ${place.place}`; image.loading = 'lazy';
+        image.addEventListener('error', () => { if (place.photo?.url && place.image && image.src === place.photo.url) image.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`; else photo.classList.add('month-route-photo-missing'); }, { once: true });
+        photo.append(image);
+        if (place.photo?.credit) { const credit = document.createElement('span'); credit.className = 'month-route-photo-credit'; credit.textContent = `PHOTO · ${place.photo.credit}`; photo.append(credit); }
+      } else { photo.classList.add('month-route-photo-missing'); photo.textContent = `Field note · ${place.place}`; }
+      const meta = document.createElement('p'); meta.className = 'month-route-stop-meta'; meta.textContent = `STOP ${String(stopIndex + 1).padStart(2, '0')} · ${place.region.toUpperCase()}`;
+      const name = document.createElement('h6'); name.textContent = place.name;
+      const season = document.createElement('p'); season.className = 'month-route-season'; season.textContent = `WHY ${MONTHS[monthIndex].toUpperCase()}: ${item.reason}`;
+      const story = document.createElement('p'); story.className = 'month-route-story'; story.textContent = `${place.description} ${placeStory(place, PLACE_SPOTLIGHTS[place.name])}`.trim();
+      const detail = document.createElement('button'); detail.type = 'button'; detail.className = 'month-route-detail-button'; detail.textContent = 'Read the place story & exact points ↗'; detail.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
+      stop.append(photo, meta, name, season, story, detail); stops.append(stop);
+    });
+    article.append(header, stops); grid.append(article);
+  });
+  const note = document.createElement('p'); note.className = 'month-route-caveat';
+  const included = itinerary.reduce((count, day) => count + day.items.length, 0);
+  note.textContent = `${picks.length} places matched your filters. This ${itinerary.length}-day route includes ${included} stops${picks.length > included ? `; ${picks.length - included} other matches remain in the shortlist above` : ''}. Day clusters use the locality shown in the guide; Japan’s intercity distances can be substantial. Travel time, opening hours, fares and seasonal access are not live-checked here. Confirm each leg before departure.`;
+  section.hidden = false;
+  section.replaceChildren(heading, grid, note);
+}
+function monthRouteUrl(days) {
+  const stops = days.flatMap(day => day.items.map(item => `${item.place.name}, ${item.place.place}`));
+  if (!stops.length) return 'https://www.google.com/maps';
+  const params = new URLSearchParams({ api: '1', origin: stops[0], destination: stops[stops.length - 1], travelmode: 'transit' });
+  if (stops.length > 2) params.set('waypoints', stops.slice(1, -1).join('|'));
+  return `https://www.google.com/maps/dir/?${params.toString()}`;
+}
+document.querySelector('#build-month-route')?.addEventListener('click', () => {
+  const section = document.querySelector('#month-route-plan');
+  section.dataset.requested = 'true';
+  renderMonthGuide();
+  if (section.hidden) return;
+  section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.querySelector('#build-month-route').textContent = 'Update my route ↗';
+  document.querySelector('#build-month-route').setAttribute('aria-expanded', 'true');
 });
 tripLengthSelect.addEventListener('change', renderMonthGuide);
 journeyRegionSelect.addEventListener('change', renderMonthGuide);
