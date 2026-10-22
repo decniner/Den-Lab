@@ -79,7 +79,16 @@ naha:{title:'Naha: Ryukyu heritage to the night market streets',intro:'Start on 
 ]}
 });
 function nearbyPlaces(places,originId){const origin=CITY_ORIGINS.find(item=>item.id===originId);return origin?(places||[]).filter(place=>place.region===origin.region):[];}
+function itineraryDays(stops,availability='one'){
+ const places=Array.isArray(stops)?stops:[];
+ if(availability==='half')return[{title:'A focused half-day',stops:places.slice(0,2)}];
+ if(availability==='two'){
+  const midpoint=Math.ceil(places.length/2);
+  return[{title:'Day one · first light',stops:places.slice(0,midpoint)},{title:'Day two · a slower return',stops:places.slice(midpoint)}].filter(day=>day.stops.length);
+ }
+ return[{title:'One full day',stops:places}];
+}
 function directionsUrl(origin,destination,mode='transit',from=null){const url=new URL('https://www.google.com/maps/dir/');url.searchParams.set('api','1');url.searchParams.set('origin',`${from||origin.station}, Japan`);url.searchParams.set('destination',`${destination}, Japan`);url.searchParams.set('travelmode',mode==='car'?'driving':'transit');return url.href;}
 function dayPlanDirectionsUrl(origin,stops,mode='transit'){const url=new URL('https://www.google.com/maps/dir/');const places=Array.isArray(stops)?stops:[];const query=stop=>`${stop.name}, ${stop.area}, Japan`;url.searchParams.set('api','1');url.searchParams.set('origin',`${origin.station}, Japan`);url.searchParams.set('destination',places.length?query(places[places.length-1]):`${origin.station}, Japan`);if(places.length>1)url.searchParams.set('waypoints',places.slice(0,-1).map(query).join('|'));url.searchParams.set('travelmode',mode==='car'?'driving':'transit');return url.href;}
-const api=Object.freeze({CITY_ORIGINS,CITY_DAY_PLANS,nearbyPlaces,directionsUrl,dayPlanDirectionsUrl});if(typeof module!=='undefined'&&module.exports)module.exports=api;if(root)root.CityOrigins=api;
+const api=Object.freeze({CITY_ORIGINS,CITY_DAY_PLANS,nearbyPlaces,itineraryDays,directionsUrl,dayPlanDirectionsUrl});if(typeof module!=='undefined'&&module.exports)module.exports=api;if(root)root.CityOrigins=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

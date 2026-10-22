@@ -85,25 +85,37 @@ async function main() {
     return {osakaOriginWorked:osakaVisible,tokyoGuideCount:results.length,halfRouteStopCount:halfStopCount,halfRouteStops:halfStopNames,halfRouteOmitsCastle:halfOmitsCastle,fullRouteStopCount:fullStopCount,comparisonWorked:compareVisible,compareIds:state.compareIds,comparePressed:[...document.querySelectorAll('#daytrip-results [data-compare][aria-pressed="true"]')].map(button=>button.dataset.compare),mapItinerarySynchronized:synchronized,saveWorked:saved?.selectedId===state.selectedId,shareRestoresSelectedAndFilters:restored.selectedId===state.selectedId&&restored.month===state.month&&restored.compareIds.join(',')===state.compareIds.join(','),guideHref:document.querySelector('#daytrip-selected-route .daytrip-guide-link')?.getAttribute('href'),bodyScrollWidth:document.documentElement.scrollWidth,invalidMonthFallback:window.TokyoDayTripCore.readSharedPlan('?month=99',window.TokyoDayTrips.DAY_TRIPS).month};
   })()`);
   await navigate(`${baseUrl}/index.html#daytrips`, 1440, 1000);
-  report.cityOriginPlans = await evaluate(`(() => {
+  report.cityOriginPlans = await evaluate(`(async () => {
     const select=document.querySelector('#city-origin');
     const cities=[...select.options].map(option=>option.value);
-    const results=cities.map(id=>{
+    const results=[];
+    for(const id of cities){
       select.value=id;select.dispatchEvent(new Event('change',{bubbles:true}));
       const panel=document.querySelector('#city-origin-results');
       const plan=panel.querySelector('.city-origin-plan');
       const route=new URL(panel.querySelector('.city-plan-actions a').href);
       const origin=window.CityOrigins.CITY_ORIGINS.find(city=>city.id===id);
       const expectedStops=window.CityOrigins.CITY_DAY_PLANS[id].stops.length;
-      const valid=!panel.hidden&&!!plan&&panel.querySelectorAll('.city-plan-stops>li').length===expectedStops&&route.searchParams.get('origin')===origin.station+', Japan'&&(id==='tokyo'?!!panel.querySelector('.tokyo-route-tools'):!panel.querySelector('.tokyo-route-tools'));
+      const images=[...panel.querySelectorAll('.city-plan-stop-photo img')];
+      images.forEach(image=>image.loading='eager');
+      await Promise.all(images.map(image=>image.complete?Promise.resolve():new Promise(resolve=>{image.addEventListener('load',resolve,{once:true});image.addEventListener('error',resolve,{once:true});setTimeout(resolve,12000)})));
+      const photosLoaded=images.length===expectedStops&&images.every(image=>image.naturalWidth>0);
+      const placeStory=panel.querySelector('.city-plan-stop-guide');placeStory.open=true;
+      const storyOpens=!!placeStory.querySelector('.city-plan-visit-note');
+      const valid=!panel.hidden&&!!plan&&panel.querySelectorAll('.city-plan-stops>li').length===expectedStops&&route.searchParams.get('origin')===origin.station+', Japan'&&(id==='tokyo'?!!panel.querySelector('.tokyo-route-tools'):!panel.querySelector('.tokyo-route-tools'))&&photosLoaded&&storyOpens;
       const mode=panel.querySelector('#city-plan-mode');mode.value='car';mode.dispatchEvent(new Event('change',{bubbles:true}));
       const driving=new URL(document.querySelector('#city-origin-results .city-plan-actions a').href).searchParams.get('travelmode')==='driving';
-      return {id,valid,stopCount:expectedStops,driving};
-    });
+      const duration=panel.querySelector('#city-plan-availability');
+      duration.value='half';duration.dispatchEvent(new Event('change',{bubbles:true}));
+      const halfDayWorks=panel.querySelectorAll('.city-plan-stops>li').length===2&&panel.querySelectorAll('.city-plan-day').length===1;
+      duration.value='two';duration.dispatchEvent(new Event('change',{bubbles:true}));
+      const twoDayWorks=panel.querySelectorAll('.city-plan-day').length===2&&panel.querySelectorAll('.city-plan-stops>li').length===expectedStops&&panel.querySelectorAll('.city-plan-day .city-plan-actions a:first-child').length===2;
+      results.push({id,valid,stopCount:expectedStops,photosLoaded,storyOpens,driving,halfDayWorks,twoDayWorks});
+    }
     select.value='tokyo';select.dispatchEvent(new Event('change',{bubbles:true}));
     const tokyoTools=document.querySelector('.tokyo-route-tools');
     const tokyoAdvancedWorks=!!tokyoTools&&tokyoTools.querySelector('.daytrip-layout')!==null&&!tokyoTools.open;
-    return {cities:cities.length,allPlansWork:results.length===10&&results.every(item=>item.valid&&item.driving),tokyoAdvancedWorks,results};
+    return {cities:cities.length,allPlansWork:results.length===10&&results.every(item=>item.valid&&item.driving&&item.halfDayWorks&&item.twoDayWorks),allPhotosLoad:results.every(item=>item.photosLoaded),allPlaceStoriesOpen:results.every(item=>item.storyOpens),tokyoAdvancedWorks,results};
   })()`);
   if (report.planner.guideHref) {
     await navigate(new URL(report.planner.guideHref, `${baseUrl}/`).href, 1440, 1000);

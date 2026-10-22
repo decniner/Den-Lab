@@ -1,4 +1,5 @@
 const test=require('node:test');const assert=require('node:assert/strict');const origins=require('../city-origins.js');
+const photos=require('../city-stop-photos.js');
 test('offers major regional city-centre origins and honest live directions',()=>{
  const cities=origins.CITY_ORIGINS;assert.equal(cities.length,10);assert.ok(cities.some(x=>x.id==='tokyo'&&x.station==='Tokyo Station'));assert.ok(cities.some(x=>x.station==='Hakata Station'));
  const places=[{name:'A',place:'Sapporo ? Hokkaido',region:'Hokkaido'},{name:'B',place:'Osaka ? Kansai',region:'Kansai'}];assert.deepEqual(origins.nearbyPlaces(places,'sapporo').map(x=>x.name),['A']);
@@ -21,9 +22,36 @@ test('gives every origin including Tokyo a detailed ordered day plan and live ro
  }
 });
 
+test('gives every itinerary stop a unique, credited photograph of that place',()=>{
+ const stops=Object.values(origins.CITY_DAY_PLANS).flatMap(plan=>plan.stops);
+ const urls=stops.map(stop=>photos[stop.name]?.url);
+ assert.equal(urls.length,new Set(urls).size,'place photographs are distinct across the city routes');
+ for(const stop of stops){
+  const photo=photos[stop.name];
+  assert.ok(photo,`${stop.name} has a photo`);
+  assert.match(photo.url,/^https:\/\//,`${stop.name} photo uses HTTPS`);
+  assert.match(photo.source,/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/,`${stop.name} links its source file`);
+  assert.ok(photo.credit&&photo.license&&photo.alt,`${stop.name} photo has attribution and descriptive alt text`);
+ }
+});
+
+test('adapts each city route to a half day, one day, or two days',()=>{
+ for(const [id,plan] of Object.entries(origins.CITY_DAY_PLANS)){
+  const half=origins.itineraryDays(plan.stops,'half');
+  const full=origins.itineraryDays(plan.stops,'one');
+  const two=origins.itineraryDays(plan.stops,'two');
+  assert.equal(half.length,1,`${id} half-day plan`);assert.equal(half[0].stops.length,2,`${id} half-day plan is focused`);
+  assert.equal(full.length,1,`${id} one-day plan`);assert.equal(full[0].stops.length,plan.stops.length,`${id} full-day plan includes every stop`);
+  assert.equal(two.length,2,`${id} two-day plan has two days`);assert.equal(two.flatMap(day=>day.stops).length,plan.stops.length,`${id} two-day plan preserves every stop`);
+  assert.ok(two.every(day=>day.stops.length>=2),`${id} spreads visits across both days`);
+ }
+});
+
 test('uses one shared itinerary renderer and preserves Tokyo day-trip tools as secondary content',()=>{
  const ui=require('node:fs').readFileSync(require('node:path').join(__dirname,'..','city-origin-ui.js'),'utf8');
  assert.match(ui,/city-origin-plan/);
+ assert.match(ui,/city-plan-availability/);
+ assert.match(ui,/city-plan-stop-photo/);
  assert.match(ui,/tokyo-route-tools/);
  assert.doesNotMatch(ui,/if\s*\(isTokyo\)\s*return/);
 });
