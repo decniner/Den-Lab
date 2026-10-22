@@ -389,7 +389,7 @@ function renderDestinations(announceCompletion = false) {
     const shown=Math.min(visibleLimit,total);
     searchAnnouncementTimer=setTimeout(()=>{
       status.textContent=total
-        ? `Search complete — ${total} ${total===1?'place':'places'} found. Showing ${shown}. Scroll down past the seasonal guide to browse your matches.`
+        ? `Search complete — ${total} ${total===1?'place':'places'} found. Showing ${shown}. Scroll down to browse your matches.`
         : 'Search complete — no places matched. Try another term or clear a filter.';
     },350);
   }
@@ -555,6 +555,7 @@ const journeyRegionSelect = document.querySelector('#journey-region');
 const journeyStyleSelect = document.querySelector('#journey-style');
 monthSelect.replaceChildren(...MONTHS.map((month, index) => { const option = document.createElement('option'); option.value = String(index); option.textContent = month; return option; }));
 const sharedPlan = new URLSearchParams(window.location.search);
+document.querySelector('#month-planner').open = sharedPlan.has('month');
 const requestedMonth = Number(sharedPlan.get('month'));
 monthSelect.value = sharedPlan.has('month') && requestedMonth >= 0 && requestedMonth < 12 ? String(requestedMonth) : String(new Date().getMonth());
 if (['short','week','long'].includes(sharedPlan.get('days'))) tripLengthSelect.value = sharedPlan.get('days');
@@ -575,7 +576,7 @@ function updateMonthSearchUI() {
   document.querySelector('#month-filter-description').textContent = monthSearchEnabled ? `The destination search is showing ${monthName} seasonal picks. Search words, region, mood, and saved filters still apply.` : 'Choose a travel month above, then include its seasonal places in the full destination search.';
   const help=document.querySelector('#search-intent-help');
   const active=[monthSearchEnabled?`${monthName} seasonal picks`:null,localFindsOnly?'Local Finds':null].filter(Boolean);
-  help.textContent=active.length?`Unified results filtered by ${active.join(' + ')}. Add a place, region, or experience to narrow further.`:'One search for places, regions, experiences, Local Finds, and seasonal picks. Type a month or use the filters below.';
+  help.textContent=active.length?`Unified results filtered by ${active.join(' + ')}. Add a place, region, or experience to narrow further.`:'One search for places, regions, experiences, Local Finds, and months. Open Plan by month for seasonal ideas.';
 }
 document.querySelector('#month-filter-toggle').addEventListener('click', () => { if(monthSearchEnabled){monthSearchManual=false;search.value=search.value.replace(new RegExp(`\\b${MONTHS[Number(monthSelect.value)]}\\b`,'ig'),' ').replace(/\s+/g,' ').trim();}else monthSearchManual=true; visibleLimit=12; syncUnifiedSearch(); });
 document.querySelector('#month-filter-clear').addEventListener('click', () => { monthSearchManual=false; if (search.value) { search.value = search.value.replace(new RegExp(`\\b${MONTHS[Number(monthSelect.value)]}\\b`, 'ig'), '').trim(); } visibleLimit = 12; syncUnifiedSearch(); });
