@@ -523,7 +523,8 @@
             "sourceIds": [
               "furano-official-access"
             ]
-          }
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.3469%2C142.39166&destination=43.3206481%2C142.3770958&travelmode=driving"
         },
         {
           "id": "furano-leg-02",
@@ -548,7 +549,8 @@
             "sourceIds": [
               "furano-official-access"
             ]
-          }
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.3206481%2C142.3770958&destination=43.32343%2C142.35634&travelmode=driving"
         },
         {
           "id": "furano-leg-03",
@@ -573,7 +575,8 @@
             "sourceIds": [
               "furano-official-access"
             ]
-          }
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.32343%2C142.35634&destination=43.41935%2C142.4279&travelmode=driving"
         },
         {
           "id": "furano-leg-04",
@@ -598,7 +601,8 @@
             "sourceIds": [
               "furano-official-access"
             ]
-          }
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.41935%2C142.4279&destination=43.3469%2C142.39166&travelmode=driving"
         }
       ],
       "sources": [
