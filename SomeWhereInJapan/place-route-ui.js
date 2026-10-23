@@ -3,10 +3,10 @@
 let placeRegistryPromise;
 function fetchJson(path){return fetch(new URL(path,document.baseURI)).then(response=>response.ok?response.json():null).catch(()=>null);}
 function placeRegistry(){return placeRegistryPromise||(placeRegistryPromise=fetchJson(`${root.location.pathname.includes('/places/')?'../../':'./'}data/place-routes.json?v=20261023-5`));}
-function mount(host,route,mapData){
+function mount(host,route,mapData,viewOptions={}){
  if(!route||!mapData||!root.CityRouteUI)return null;
  route.cityId=route.cityId||'nikko';
- return root.CityRouteUI.mountCityRouteView(host,route,mapData,{origin:{station:route.origin?.name||route.cityId}});
+ return root.CityRouteUI.mountCityRouteView(host,route,mapData,{origin:{station:route.origin?.name||route.cityId},...viewOptions});
 }
 function placeIdForName(name){
  const normalized=String(name||'').trim().toLowerCase();
@@ -39,7 +39,7 @@ async function mountGuide(){
   if(route)mapData=data?.maps?.[route.placeId];
  }
  if(!route||!mapData)return;
- const controller=mount(host,route,mapData);requestAnimationFrame(()=>controller?.resize());
+ const controller=mount(host,route,mapData,host.dataset.compactRouteGuide==='true'?{compactGuide:true}:{});requestAnimationFrame(()=>controller?.resize());
 }
 root.PlaceRouteUI=Object.freeze({mountDialog,mountGuide});
 document.addEventListener('DOMContentLoaded',()=>{if(document.querySelector('[data-place-route-guide]'))mountGuide();},{once:true});
