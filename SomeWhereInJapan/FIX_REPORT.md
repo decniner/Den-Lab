@@ -77,4 +77,4 @@ The check enforces month membership and a non-empty rationale for every returned
 2. **Seasonal research:** all month-specific picks are withheld until supported rationale is added to destination data.
 3. **Field-guide depth:** no guide meets the generated completeness schema yet, so all 310 correctly display provisional status. This change does not invent missing costs, contacts, access details or other research.
 
-The map, carousel and corrected Share button were browser-checked locally. The report does not claim a live GitHub Pages deployment until the push and deployment check complete.
+The map, carousel and corrected Share button were browser-checked locally. The site is published at [Somewhere in Japan](https://decniner.github.io/Den-Lab/SomeWhereInJapan/index.html); the page and both new overlays returned HTTP 200 after the GitHub Pages workflow succeeded for commit `7fb352c`.
