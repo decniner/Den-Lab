@@ -1,0 +1,1058 @@
+{
+  "site": {
+    "name": "Tadaima!",
+    "nameJa": "ただいま！",
+    "edition": "Fujisawa",
+    "editionJa": "藤沢",
+    "researchedOn": "2026-10-23",
+    "area": "Fujisawa City, Kanagawa",
+    "areaJa": "神奈川県藤沢市"
+  },
+  "defaults": {
+    "budgetMan": 5000,
+    "maxWalkMin": 15
+  },
+  "benchmarks": {
+    "landPerTsuboManByStation": {
+      "Chogo": 50,
+      "Fujisawa": 95,
+      "Fujisawa-Honmachi": 70,
+      "Hon-Kugenuma": 95,
+      "Kugenuma": 85,
+      "Kugenuma-Kaigan": 90,
+      "Mutsuai-Nichidai-mae": 58,
+      "Shonandai": 90,
+      "Shonankaigan-koen": 75,
+      "Tsujido": 95,
+      "Yanagikoji": 90,
+      "Zengyo": 60
+    },
+    "note": "Land benchmarks: residential ¥/tsubo by station, triangulated from MLIT transaction data via Utinokati (multi-year, standardised) and 2026 official residential land-price points via Totinokati/tochidai: Fujisawa ~95 (transactions run 97–108 across three lenses and official points at 9–13 minutes run 98–142; the official whole-catchment residential average of ~78 is dragged down by 20+-minute fringe points, and the all-use station average of ~130 mixes station-front commercial plots — Minami-Fujisawa alone is ~704 — and is not used), Tsujido ~95 (official residential 96.3 on 11 points and the transaction regression 95.1 converge), Shonandai ~90 (official residential 90.9 on 14 points; its all-use district average of ~119 is station-front commercial and is not used), Hon-Kugenuma ~95, Kugenuma-Kaigan ~90, Fujisawa-Honmachi ~70 (official points 65.1, transaction regression 79.2), Zengyo ~60, Mutsuai-Nichidai-mae ~58, Chogo ~50. Katase-Enoshima is scored at ~110 as a flagged proxy blend, NOT its annual transaction prints of 133–186, which rest on roughly two deals a year in the Katase-Kaigan shore strip: shore-strip streets score at ~135 and inland Katase streets at ~85, because the coastal premium here is a separate market inside the same station catchment — the same split, smaller, applies in Kugenuma (Sakuragaoka/Matsugaoka and the Kugenuma-Kaigan shore streets run 10–25% above the station figures) and barely at all in Tsujido. The Enoden local stations are scored from multi-year transactions cross-checked against official points: Ishigami ~95 (proxy — Fujisawa station's south side; no residential official point is assigned to it), Yanagikoji ~90, Kugenuma ~85, Shonankaigan-koen ~75, Enoshima ~80 (proxy; no residential official point). Northern averages are scored in-zone only: urbanisation-control deals in Kuzuhara, Endo, Imada and Yoda trade at 2–27万円/坪 (the city's lowest official point is 1.5 in Kuzuhara, and its only falling 2026 residential point is Imada at 15.2) and are never used as residential comparables. Walk bands use Fujisawa's observed gradients — land falls about 35% by a 10-minute walk at Fujisawa station (−21.6% at Fujisawa-Honmachi) and about 45% by 16+ minutes city-wide (121.1万円/坪 within 5 minutes vs 66.3 at 16+); house prices fall only ~19% over the same range. Used houses transacted at about ¥158万/tsubo city-wide (floor-area basis): Kugenuma district ~195, Tsujido ~187, the Fujisawa centre ~165; by age, ≤10-yr stock ~183 falls to ~125 for 30+-yr stock — a shallow gradient, because in the shore districts the land is most of the price. The district prints of ~264 for Kugenuma-Tachibana houses and ~205 for its land blend station-front commercial streets with premium residential ones and are ignored as benchmarks. Official residential land prices rose +5.4% in the 2026 公示地価 survey (+4.8% in 基準地価， after +5.0% in 2025) — 55 of 56 residential points rose, with the coast and hub rising about twice as fast as the northern stations."
+  },
+  "properties": [
+    {
+      "id": "h01",
+      "type": "house-new",
+      "district": "Zenkozaka 1",
+      "districtJa": "善行坂1丁目",
+      "title": "New 3LDK development (2 units) — performance-evaluation certified",
+      "priceMan": 4190,
+      "priceFrom": false,
+      "landM2": 97.36,
+      "buildingM2": 79.38,
+      "layout": "3LDK",
+      "station": "Zengyo",
+      "stationJa": "善行",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 10,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Housing performance-evaluation certificate (design and construction) obtained",
+        "Parking for 2 cars; dish washer and bathroom dryer fitted"
+      ],
+      "cautions": [
+        "Two units with slightly different plots (97.36–97.40m²) at the same headline price",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6016/area_kanagawa/14205.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h02",
+      "type": "house-new",
+      "district": "Takakura",
+      "districtJa": "高倉",
+      "title": "New 3LDK development (2 units) — 12 min from Chogo",
+      "priceMan": 4290,
+      "priceFrom": false,
+      "landM2": 104.25,
+      "buildingM2": 84.56,
+      "layout": "3LDK",
+      "station": "Chogo",
+      "stationJa": "長後",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 12,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Housing performance-evaluation certificate obtained",
+        "Parking for 2 cars on 104–105m² plots"
+      ],
+      "cautions": [
+        "Plots vary slightly between the 2 units (104.25–105.15m²)",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6016/area_kanagawa/14205.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h03",
+      "type": "house-new",
+      "district": "Zenkozaka 2",
+      "districtJa": "善行坂2丁目",
+      "title": "New 3LDK development (4 units) on a large 145m² plot",
+      "priceMan": 4580,
+      "priceFrom": false,
+      "landM2": 145.02,
+      "buildingM2": 89.84,
+      "layout": "3LDK",
+      "station": "Zengyo",
+      "stationJa": "善行",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 11,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Largest new-build plot in this collection (145.0m²)",
+        "Roof balcony; parking for 2 cars"
+      ],
+      "cautions": [
+        "Development of 4 units — confirm which plots remain and their exact sizes",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6016/area_kanagawa/14205.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h04",
+      "type": "house-new",
+      "district": "Inari 1",
+      "districtJa": "稲荷1丁目",
+      "title": "New 4LDK (5-unit development, 2 left) — SE-facing, loft storage, LDK 20+ tatami",
+      "priceMan": 4980,
+      "priceFrom": false,
+      "landM2": 100.94,
+      "buildingM2": 96.88,
+      "layout": "4LDK",
+      "station": "Fujisawa-Honmachi",
+      "stationJa": "藤沢本町",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 14,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Flat 35S eligible; corner plot, parking for 2, walk-in closet and loft storage",
+        "Completion Oct 2026 per the listing page"
+      ],
+      "cautions": [
+        "Remaining units vary: land 100.94–123.14m², building 96.88–98.12m² at the same ¥4,980万 headline",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/14205/030/W/21983259.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "h05",
+      "type": "house-used",
+      "district": "Zengyo 1",
+      "districtJa": "善行1丁目",
+      "title": "Used 3SLDK built May 2025 — nearly new, 3 min from Zengyo Station",
+      "priceMan": 4480,
+      "priceFrom": false,
+      "landM2": 84.4,
+      "buildingM2": 91.49,
+      "layout": "3SLDK",
+      "station": "Zengyo",
+      "stationJa": "善行",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 3,
+      "built": "May 2025",
+      "ageYears": 1,
+      "highlights": [
+        "Shortest walk in this collection (3 min) in a house built in 2025",
+        "Second-floor living room on raised ground, 6.0m front road"
+      ],
+      "cautions": [
+        "Compact 84.4m² plot for the price — you are paying for age and station distance",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14205&sa_l=70&la_l=60&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h06",
+      "type": "house-used",
+      "district": "Kameino 4",
+      "districtJa": "亀井野4丁目",
+      "title": "Used 3LDK built Jan 2025, never occupied — loft, 2nd-floor living",
+      "priceMan": 4480,
+      "priceFrom": false,
+      "landM2": 120.34,
+      "buildingM2": 89.43,
+      "layout": "3LDK",
+      "station": "Mutsuai-Nichidai-mae",
+      "stationJa": "六会日大前",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 7,
+      "built": "Jan 2025",
+      "ageYears": 1,
+      "highlights": [
+        "Built Jan 2025 and listed as never occupied (築後未入居) — effectively new at a used listing",
+        "Generous 120.3m² plot; loft storage"
+      ],
+      "cautions": [
+        "One of a 4-unit development — a sister unit (91.5m² on 127.5m²) is listed at the same price; confirm which unit",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&la_l=60&by=5&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h07",
+      "type": "house-used",
+      "district": "Zengyo 1",
+      "districtJa": "善行1丁目",
+      "title": "Used 3LDK built Mar 2024 — 101m² house, 7 min from Zengyo",
+      "priceMan": 3780,
+      "priceFrom": false,
+      "landM2": 87.49,
+      "buildingM2": 101.18,
+      "layout": "3LDK",
+      "station": "Zengyo",
+      "stationJa": "善行",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 7,
+      "built": "Mar 2024",
+      "ageYears": 2,
+      "highlights": [
+        "Big 101.2m² building for ¥3,780万, built 2024",
+        "All rooms face SW with 2–3-sided light, per the listing"
+      ],
+      "cautions": [
+        "Building is larger than the 87.5m² plot (multi-storey) — check outdoor space",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&la_l=60&by=5&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h08",
+      "type": "house-used",
+      "district": "Zengyo 2",
+      "districtJa": "善行2丁目",
+      "title": "Used 3LDK built Jun 2024 — solar panels, ZEH-standard",
+      "priceMan": 4280,
+      "priceFrom": false,
+      "landM2": 93.67,
+      "buildingM2": 86.11,
+      "layout": "3LDK",
+      "station": "Zengyo",
+      "stationJa": "善行",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 7,
+      "built": "Jun 2024",
+      "ageYears": 2,
+      "highlights": [
+        "Solar panels on all units of the development; ZEH-standard 2nd-floor LDK",
+        "Shiina-dani Park 2 min walk"
+      ],
+      "cautions": [
+        "Portal feeds disagree on this house: layout shown as 2SLDK and 3LDK, build month as Jun/Jul/Aug 2024 — verify on the listing link",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&la_l=60&by=5&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h09",
+      "type": "house-used",
+      "district": "Takakura",
+      "districtJa": "高倉",
+      "title": "Used 4LDK (2017) — 20-tatami LDK, 4 min from Chogo",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 110.03,
+      "buildingM2": 98.53,
+      "layout": "4LDK",
+      "station": "Chogo",
+      "stationJa": "長後",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 4,
+      "built": "Feb 2017",
+      "ageYears": 9,
+      "highlights": [
+        "20-tatami LDK with counter kitchen; Low-E double glazing, shutters on most windows",
+        "110.0m² plot 4 min from an Odakyu express stop"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14205&sa_l=70&la_l=60&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h10",
+      "type": "house-used",
+      "district": "Takakura",
+      "districtJa": "高倉",
+      "title": "Used 4LDK built Feb 2025 — nearly new, parking for 2",
+      "priceMan": 4680,
+      "priceFrom": false,
+      "landM2": 120.03,
+      "buildingM2": 95.63,
+      "layout": "4LDK",
+      "station": "Chogo",
+      "stationJa": "長後",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 15,
+      "built": "Feb 2025",
+      "ageYears": 1,
+      "highlights": [
+        "Built Feb 2025 on a 120.0m² plot; shoe-in closet, pantry and storage throughout",
+        "Two parallel parking spaces"
+      ],
+      "cautions": [
+        "At the 15-minute walk limit of this collection",
+        "A second feed lists a near-identical Feb-2025 Takakura house (96.46m² / 120.89m²) at ¥5,080万 — confirm this price belongs to this unit",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=5000&la_l=60&pke=1&by=10",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h11",
+      "type": "house-used",
+      "district": "Fujisawa 4",
+      "districtJa": "藤沢4丁目",
+      "title": "Used 4SLDK (2019) on a 197m² plot — 8 min from Fujisawa-Honmachi",
+      "priceMan": 4490,
+      "priceFrom": false,
+      "landM2": 197.01,
+      "buildingM2": 97.59,
+      "layout": "4SLDK",
+      "station": "Fujisawa-Honmachi",
+      "stationJa": "藤沢本町",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 8,
+      "built": "Nov 2019",
+      "ageYears": 6,
+      "highlights": [
+        "Exceptional 197.0m² plot this close to a station; first-class low-rise residential zone",
+        "Independent kitchen, electronic key, double glazing"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14205&sa_l=70&la_l=60&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h12",
+      "type": "house-used",
+      "district": "Hon-Fujisawa 3",
+      "districtJa": "本藤沢3丁目",
+      "title": "Used 4LDK (2001) on a corner plot — renovated inside and out",
+      "priceMan": 4699,
+      "priceFrom": false,
+      "landM2": 125.63,
+      "buildingM2": 93.56,
+      "layout": "4LDK",
+      "station": "Fujisawa-Honmachi",
+      "stationJa": "藤沢本町",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 13,
+      "built": "Sep 2001",
+      "ageYears": 25,
+      "highlights": [
+        "Corner plot with roofed car space; plumbing renewed in the renovation",
+        "125.6m² of land — above the local norm"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14205&sa_l=70&la_l=60&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h13",
+      "type": "house-used",
+      "district": "Hatori 1",
+      "districtJa": "羽鳥1丁目",
+      "title": "Used 3LDK (1997), renovated — 14 min from Tsujido Station",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 78.13,
+      "buildingM2": 86.52,
+      "layout": "3LDK",
+      "station": "Tsujido",
+      "stationJa": "辻堂",
+      "line": "JR Tokaido Line",
+      "lineJa": "JR東海道本線",
+      "walkMin": 14,
+      "built": "Dec 1997",
+      "ageYears": 28,
+      "highlights": [
+        "Renovated with new plumbing fixtures and a terrace off the living room; immediate move-in",
+        "Terrace Mall Shonan retail area within walking distance"
+      ],
+      "cautions": [
+        "Portal feeds disagree on the layout (3LDK vs 4LDK) — verify on the listing link",
+        "Small 78.1m² plot with a 3-storey house — little garden or parking flexibility",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14205&sa_l=70&la_l=60&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h14",
+      "type": "house-used",
+      "district": "Zengyo 5",
+      "districtJa": "善行5丁目",
+      "title": "Used 3LDK (2007), renovated Apr 2026 — 3-sided-light LDK",
+      "priceMan": 3190,
+      "priceFrom": false,
+      "landM2": 100.1,
+      "buildingM2": 81.14,
+      "layout": "3LDK",
+      "station": "Zengyo",
+      "stationJa": "善行",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 13,
+      "built": "Jun 2007",
+      "ageYears": 19,
+      "highlights": [
+        "Full interior/exterior renovation completed Apr 2026 (kitchen fittings, flooring, exterior paint)",
+        "Living-stair plan with a 15.6-tatami LDK lit from 3 sides"
+      ],
+      "cautions": [
+        "Portal feeds disagree on the walk (12 vs 13 min) — scored here on 13",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14205&sa_l=70&la_l=60&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h15",
+      "type": "house-used",
+      "district": "Shirahata 3",
+      "districtJa": "白旗3丁目",
+      "title": "Used 2LDK (1998) — 18-tatami LDK on a 132.7m² plot, cheapest renovated pick",
+      "priceMan": 2650,
+      "priceFrom": false,
+      "landM2": 132.72,
+      "buildingM2": 83.63,
+      "layout": "2LDK",
+      "station": "Fujisawa-Honmachi",
+      "stationJa": "藤沢本町",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 13,
+      "built": "Oct 1998",
+      "ageYears": 28,
+      "highlights": [
+        "132.7m² plot and parking for 2 at ¥2,650万; building inspection report available (May 2025)",
+        "All rooms face SW; exterior renovated Nov 2023"
+      ],
+      "cautions": [
+        "Only 2LDK despite the 83.6m² building — layout may not suit larger families",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=4000&la_l=60&wm=15&fn=14&sa_l=80",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h16",
+      "type": "house-used",
+      "district": "Chogo",
+      "districtJa": "長後",
+      "title": "Used 5LDK (1975) on 249m² — defect liability waived, experts only",
+      "priceMan": 2480,
+      "priceFrom": false,
+      "landM2": 249,
+      "buildingM2": 107.64,
+      "layout": "5LDK",
+      "station": "Chogo",
+      "stationJa": "長後",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 10,
+      "built": "Apr 1975",
+      "ageYears": 51,
+      "highlights": [
+        "Huge 249m² plot in a first-class low-rise zone, 10 min from Chogo",
+        "Soundproofing/insulation works done 2022; water pipes replaced 2020, water heater 2023"
+      ],
+      "cautions": [
+        "Seller's defect liability is waived (契約不適合責任免責) — sold as-is",
+        "Built Apr 1975 — pre-1981 seismic standard",
+        "Unregistered underground garage of ~15m² (未登記地下車庫) on the plot",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14205&sa_l=70&la_l=60&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Katase 2",
+      "districtJa": "片瀬2丁目",
+      "title": "Used 3SLDK (1980) on a 302.9m² coastal plot — judge as land + location",
+      "priceMan": 2380,
+      "priceFrom": false,
+      "landM2": 302.88,
+      "buildingM2": 87.8,
+      "layout": "3SLDK",
+      "station": "Kugenuma",
+      "stationJa": "鵠沼",
+      "line": "Enoden",
+      "lineJa": "江ノ島電鉄線",
+      "walkMin": 11,
+      "built": "Aug 1980",
+      "ageYears": 46,
+      "highlights": [
+        "Exceptional 302.9m² plot near Katase/Enoshima with parking for 3 — the value is the land",
+        "Cheapest house in this collection"
+      ],
+      "cautions": [
+        "Built Aug 1980 — pre-1981 seismic standard; at this price the structure contributes little",
+        "Shore-side Katase plot — check the city tsunami and flood hazard maps before viewing",
+        "Portal feeds disagree on the price (¥2,380万 vs ¥2,480万) — scored here on the lower figure; verify",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14205&sa_l=70&la_l=60&pu=5000",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "l01",
+      "type": "land",
+      "district": "Shonandai 1",
+      "districtJa": "湘南台1丁目",
+      "title": "Small plot 5 min from Shonandai — three lines, building on site",
+      "priceMan": 3780,
+      "priceFrom": false,
+      "landM2": 68.1,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Shonandai",
+      "stationJa": "湘南台",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Three lines at Shonandai (Odakyu, Sotetsu Izumino, Yokohama Blue Line), flat walk",
+        "Regular-shaped plot (整形地) on a wide ~12m NE public road",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Headline area includes 2.8m² of private road — effective plot is about 68.1m²",
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "Quasi-fire zone (準防火地域)",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21749347/000389270/x1030Z21749347.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l02",
+      "type": "land",
+      "district": "Shonandai 4",
+      "districtJa": "湘南台4丁目",
+      "title": "Vacant 124m² lot 7 min from Shonandai — immediate handover",
+      "priceMan": 4980,
+      "priceFrom": false,
+      "landM2": 124,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Shonandai",
+      "stationJa": "湘南台",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 7,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 100%",
+      "highlights": [
+        "Vacant land (更地渡し), immediate handover (即引渡し可)",
+        "Three lines usable at Shonandai station",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Utilities (gas/water/sewer) are in the front road but NOT connected into the plot — connection works at the buyer's cost",
+        "The plot straddles two zoning areas (part 1種低層) — the FAR is a weighted average by area, not a flat 100%",
+        "Landscape Act and green-conservation ordinance restrictions noted",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21983932/048513004/x1030Z21983932.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l03",
+      "type": "land",
+      "district": "Kameino",
+      "districtJa": "亀井野",
+      "title": "Compact 93m² lot between Mutsuai-Nichidai-mae and Shonandai",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 93.19,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mutsuai-Nichidai-mae",
+      "stationJa": "六会日大前",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Two stations usable: Mutsuai-Nichidai-mae 9 min, Shonandai 15 min (3 lines there)",
+        "Regular-shaped plot (整形地), vacant-land delivery (更地渡し)",
+        "Full utilities: city gas, water, mains sewer",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Cultural Properties Protection Act and Landscape Act restrictions noted on the listing",
+        "West front road is ~4m",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21915039/005890004/x1030Z21915039.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l04",
+      "type": "land",
+      "district": "Kameino",
+      "districtJa": "亀井野",
+      "title": "Huge 345m² high-ground plot 6 min from Mutsuai-Nichidai-mae — 2m frontage",
+      "priceMan": 4180,
+      "priceFrom": false,
+      "landM2": 345.93,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mutsuai-Nichidai-mae",
+      "stationJa": "六会日大前",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 6,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Very large ~104-tsubo plot for this price band — lowest ¥/tsubo in this collection",
+        "High-ground site, immediate handover",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Only 2m of frontage onto the south 13m road — the legal minimum; access/flag-pole geometry constrains the buildable layout despite the huge headline area",
+        "Residential land development works are required (宅造要)",
+        "A building stands on the land (上物有り), sold as-is (現況渡し)",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z78080165/114291001/x1030Z78080165.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l05",
+      "type": "land",
+      "district": "Takakura",
+      "districtJa": "高倉",
+      "title": "Corner lot in Takakura, 12 min from Shonandai — provisional survey",
+      "priceMan": 4480,
+      "priceFrom": false,
+      "landM2": 154.66,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Shonandai",
+      "stationJa": "湘南台",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Corner lot (角地) fronting roads on two sides (north 3.5m / SE 4.1m)",
+        "Delivered vacant after the seller demolishes the building (更地渡し)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Stated area comes from a provisional survey (仮測量, ~154.76m², July 2026) — boundaries not yet confirmed with neighbours, so the area may change",
+        "Setback required (セットバック要)",
+        "Plot straddles two zoning areas (part quasi-residential 60%/200%) — coverage/FAR are weighted averages and the front-road width further limits FAR",
+        "City gas is in the front road but not connected into the plot — connection at the buyer's cost",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21478383/006050534/x1030Z21478383.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l06",
+      "type": "land",
+      "district": "Zengyo 5",
+      "districtJa": "善行5丁目",
+      "title": "Large vacant 218m² plot 13 min from Zengyo — at the ¥5,000万 cap",
+      "priceMan": 5000,
+      "priceFrom": false,
+      "landM2": 204.2,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Zengyo",
+      "stationJa": "善行",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Large vacant plot (更地渡し) — room for a house with garden and 2-car parking",
+        "Full utilities: city gas, water, mains sewer",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Headline area includes 14.36m² of private road — effective residential area is about 204.2m²",
+        "Setback required (セットバック要)",
+        "The listing states a disclosure matter exists (告知事項あり) without specifying it — must be confirmed before purchase",
+        "Narrow front road: 3.2m on the SW side",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21186164/000585007/x1030Z21186164.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "l07",
+      "type": "land",
+      "district": "Chogo",
+      "districtJa": "長後",
+      "title": "Cheapest lot here — 98m² by Chogo, defect liability waived",
+      "priceMan": 1490,
+      "priceFrom": false,
+      "landM2": 98.95,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Chogo",
+      "stationJa": "長後",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 8,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Cheapest land in this collection, on high ground with good sun",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "Seller's defect liability is waived (契約不適合責任免責)",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21355255/150914001/x1030Z21355255.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "l08",
+      "type": "land",
+      "district": "Chogo",
+      "districtJa": "長後",
+      "title": "100m² plot 4 min from Chogo station — old house on site",
+      "priceMan": 3300,
+      "priceFrom": false,
+      "landM2": 100.05,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Chogo",
+      "stationJa": "長後",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 4,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Just 4 minutes' walk from Chogo station in a quiet low-rise street",
+        "Full utilities: city gas, water, mains sewer",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A 2-storey old house stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "Site lies in a buried cultural-property area (埋蔵文化財包蔵地) and a land-development regulation zone — excavation/development procedures may apply",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21266168/000045103/x1030Z21266168.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l09",
+      "type": "land",
+      "district": "Katase 4",
+      "districtJa": "片瀬4丁目",
+      "title": "Coastal 134m² plot 4 min from Shonankaigan-koen — registered as forest land",
+      "priceMan": 4680,
+      "priceFrom": false,
+      "landM2": 134.46,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Shonankaigan-koen",
+      "stationJa": "湘南海岸公園",
+      "line": "Enoden",
+      "lineJa": "江ノ島電鉄線",
+      "walkMin": 4,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Enoden station 4 min; Katase-Enoshima (Odakyu) also 14 min",
+        "Seller demolishes the building before handover (更地渡し); definitive survey already done",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Registered land category is forest (地目：山林) despite the residential zoning — confirm conversion/registration handling",
+        "Setback required (セットバック要)",
+        "Subdivision registration still in preparation (分筆登記準備中); the listing text also quotes ~134.05m² against the 134.46m² headline — confirm the final registered area",
+        "Shore-side district of Katase — check the city's tsunami/flood hazard maps for this exact plot (not stated on the listing)",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21371462/000585007/x1030Z21371462.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "l10",
+      "type": "land",
+      "district": "Kugenuma-Fujigaya 2",
+      "districtJa": "鵠沼藤が谷2丁目",
+      "title": "184m² hilltop plot by Yanagikoji at the lowest coastal ¥/tsubo",
+      "priceMan": 2700,
+      "priceFrom": false,
+      "landM2": 184.58,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Yanagikoji",
+      "stationJa": "柳小路",
+      "line": "Enoden",
+      "lineJa": "江ノ島電鉄線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 80%",
+      "highlights": [
+        "Large 184.6m² plot — by far the cheapest ¥/tsubo on the coastal side",
+        "Seller demolishes the old house — vacant-land delivery (更地渡し)",
+        "High-ground site open to the south/east; Enoshima view possible from 2F height (per listing)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Only 2m of frontage onto the north 4m road — the legal minimum; the plot sits behind the frontage (flag-pole geometry)",
+        "Inside the No.3 Kugenuma scenic district (第3号鵠沼風致地区) — building/design restrictions apply, plus a buried cultural-property area",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21478746/006050881/x1030Z21478746.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l11",
+      "type": "land",
+      "district": "Hon-Kugenuma 3",
+      "districtJa": "本鵠沼3丁目",
+      "title": "Vacant conditional lot 5 min from Hon-Kugenuma — south road, 2-car plan",
+      "priceMan": 4680,
+      "priceFrom": false,
+      "landM2": 106.45,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Hon-Kugenuma",
+      "stationJa": "本鵠沼",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Vacant, regular-shaped flat plot (整形地) on a south 4m road, immediate handover",
+        "Hon-Kugenuma 5 min; Kugenuma-Kaigan also 15 min",
+        "Full utilities: city gas, water, mains sewer"
+      ],
+      "cautions": [
+        "Building-condition-attached (建築条件付き) — you cannot choose your own builder; the designated builder and plan must be agreed within about 3 months or the sale unwinds",
+        "Coastal Kugenuma district — check the city's tsunami/flood hazard maps for this exact plot (not stated on the listing)",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21969471/001025046/x1030Z21969471.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l12",
+      "type": "land",
+      "district": "Tsujido 6",
+      "districtJa": "辻堂6丁目",
+      "title": "Vacant 137m² lot at the edge of Tsujido's walk zone — immediate handover",
+      "priceMan": 4780,
+      "priceFrom": false,
+      "landM2": 137.34,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tsujido",
+      "stationJa": "辻堂",
+      "line": "JR Tokaido Line",
+      "lineJa": "JR東海道本線",
+      "walkMin": 15,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Vacant land (更地渡し), immediate handover (即引渡し可)",
+        "Full utilities: city gas, water, mains sewer; sea within 2km",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "At the very edge of the brief — 15 minutes' walk to Tsujido station",
+        "Narrow frontage: only 3.7m onto the south 4m road",
+        "Landscape Act restrictions noted; shore-side district — check the city's tsunami/flood hazard maps for this exact plot (not stated on the listing)",
+        "Verified on the listing page (information date 2026-10-19)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z20732665/048513000/x1030Z20732665.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadaima! ただいま！ — Koshigaya · Houses &amp; Land Worth a Look</title>
+<meta name="description" content="Tadaima! collates houses and land for sale in Koshigaya, Saitama, and ranks them with a transparent worth-a-look score, so you can decide what's worth viewing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Tadaima!<span class="jp">ただいま！</span></a>
+    <span class="edition">KOSHIGAYA 越谷</span>
+    <nav class="head-nav">
+      <a href="../">← All cities</a>
+      <a href="#properties">Properties</a>
+      <a href="#how">How the ranking works</a>
+      <a href="#market">Koshigaya market</a>
+      <span class="saved-pill">♥ Saved <span id="savedCount">0</span></span>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">HOUSES &amp; LAND · KOSHIGAYA, SAITAMA · 越谷の家と土地</p>
+    <h1>Find the place<br>you'll say <em>tadaima</em> to.</h1>
+    <p class="lede">Every house and lot for sale in Koshigaya that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked by one transparent score, so you can decide what's actually worth a viewing trip. This edition opens with an honest gap: the famous hub produced nothing in-brief. Walk-in houses around Shin-Koshigaya, Minami-Koshigaya and Koshigaya-Laketown all start over the cap (Laketown stock runs to ¥8,180万 and beyond), so the collection lives on the Skytree Line's local stations — Obukuro above all, then Gamo, Sengendai and Kita-Koshigaya — with the hub appearing only in the land list. Verification is mixed, as the cards show: five houses were verified on their listing pages and twelve are index-level; all 12 lots are detail-verified.</p>
+    <div class="stats">
+      <div class="stat"><b id="statTotal">–</b><span>properties collected</span></div>
+      <div class="stat"><b id="statHouses">–</b><span>houses 新築・中古</span></div>
+      <div class="stat"><b id="statLand">–</b><span>land / lots 土地</span></div>
+      <div class="stat wide"><b id="statTop">–</b><span>cheapest way in — the #1 ranked property's price &amp; area</span></div>
+    </div>
+    <p class="src" style="margin-top:16px">Researched 23 Oct 2026 from goo住宅・不動産 (incl. SUUMO feed) and OCN不動産. Prices and availability change — each card links to the original listing. We don't reuse listing photos; see them on the source site.</p>
+  </div>
+</section>
+
+<div class="controls" id="properties">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="Property type">
+      <button class="chip active" data-type="all">All</button>
+      <button class="chip" data-type="house-new">New houses</button>
+      <button class="chip" data-type="house-used">Used houses</button>
+      <button class="chip" data-type="land">Land</button>
+    </div>
+    <label>Max price
+      <select id="fPrice">
+        <option value="3000">¥3,000万</option>
+        <option value="4000">¥4,000万</option>
+        <option value="5000" selected>¥5,000万</option>
+      </select>
+    </label>
+    <label>Max walk
+      <select id="fWalk">
+        <option value="5">5 min</option>
+        <option value="10">10 min</option>
+        <option value="15" selected>15 min</option>
+      </select>
+    </label>
+    <label>Station
+      <select id="fStation"><option value="all">All stations</option></select>
+    </label>
+    <label>Sort
+      <select id="fSort">
+        <option value="score" selected>Worth a look</option>
+        <option value="price">Lowest price</option>
+        <option value="walk">Shortest walk</option>
+      </select>
+    </label>
+    <input type="search" id="fSearch" placeholder="Search district or station…" aria-label="Search district or station">
+    <button class="chip" id="fSaved">♥ Saved only</button>
+    <span id="count" role="status"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty"><p>No properties match those filters. Try widening the price or walk limit.</p></div>
+
+  <section class="section" id="how">
+    <h2>How the ranking works</h2>
+    <p>One score out of 100, built from four parts — the same maths for every property, with the reasons printed on each card. No paid placement, no hidden weighting. A major caution (for example land in an urbanisation-control area, or a house sold as a renovation project) subtracts 7 points and is always shown, never buried.</p>
+    <table class="score-table">
+      <tr><th>Part</th><th>Points</th><th>What it measures</th></tr>
+      <tr><td><strong>Value</strong></td><td>45</td><td>Land: price per tsubo against MLIT transaction averages for that station and walk band (via Utinokati). Houses: price per m² of floor area against the median for new / used houses in this collection.</td></tr>
+      <tr><td><strong>Location</strong></td><td>30</td><td>Walk minutes to the nearest station, plus a station tier — Shin-Koshigaya / Minami-Koshigaya (Tobu Skytree Line + JR Musashino twin hub) scores highest.</td></tr>
+      <tr><td><strong>Space</strong></td><td>15</td><td>Floor area for houses, plot size for land — with over-sized plots eased back, because very large usually means very restricted.</td></tr>
+      <tr><td><strong>Confidence</strong></td><td>10</td><td>Whether the facts were verified on the listing's own detail page, and how recent its information date is. Index-page finds score lower and say so.</td></tr>
+    </table>
+    <p class="src">Freshness chips: a green <strong>New this week</strong> chip marks a property added at the latest weekly check; a <strong>Price ↓</strong> chip marks a verified price cut since the previous check, with the amount. Both clear at the next weekly check — they describe the last seven days, not the property.</p>
+  </section>
+
+  <section class="section" id="market">
+    <h2>Koshigaya, in numbers</h2>
+    <p>Koshigaya is two markets sharing a name: the priced-up twin hub and Laketown in the south, and the older Skytree Line local-station streets in the north where this collection lives. Used houses transact at about ¥101万/tsubo city-wide (floor-area basis, regression on 2,150 deals): Akayamacho ~123 and the Koshigaya station districts ~116 at the top, Gamo ~104; by age (Gamo series as the shape proxy), stock under 10 years runs ~139 and 30+-year stock ~65. Land by station: Shin-Koshigaya and Minami-Koshigaya ~¥80万/tsubo (their all-use average of ~99 and commercial points at 156–180 are not residential levels), Koshigaya-Laketown ¥65万, Koshigaya ¥60万, Gamo ¥55万, Kita-Koshigaya ~¥50万 — not the official catchment average of ~39, which is dragged by control-area and farmhouse-fringe points — Sengendai ¥42万 and Obukuro ¥40万. Land falls steeply with distance here (~−30% by a 10-minute walk, −45–50% by 16+), so the walk bands are Matsudo-like, not gentle.</p>
+    <p>Direction: rising gently and broadly — official residential prices +3.2% in the 2026 公示地価 survey (30 of 32 points up, none down), the fifth straight year of acceleration, with station-side points up 5–6% and the adjustment-area fringe flat. The defining hazard is water: eight flood-forecast river reaches cross this lowland city and the city publishes an inland-water inundation map as well — Laketown itself is flood infrastructure, built around a regulating reservoir — so both maps are the check on every card. One house in this collection sits in an urbanisation-control area and is scored and labelled as such. Honest negatives: no Koshigaya-specific liquefaction ranking exists and none is claimed, and the Ayasegawa fault's southern section was evaluated as not active, so no fault caution is printed. One record carries a feed anomaly (a stated 320m² building on a 100m² plot) and is marked unverified on its card. Sources: MLIT transaction records and official land prices via Utinokati and Totinokati/tochidai, Ekitan for train times.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Tadaima! ただいま！</strong> — a personal research project in Den-Lab. Koshigaya edition; Kawagoe, Tokorozawa, Saitama City, Tachikawa, Matsudo and more cities on the home page.</span>
+    <span>Estimates and scores are a viewing shortlist tool, not financial or real-estate advice. All property facts come from the linked original listings; confirm price, availability, zoning and building conditions with the listing agent before acting.</span>
+  </div>
+</footer>
+
+<dialog id="detail" aria-labelledby="dBody">
+  <button class="d-close" id="dClose" aria-label="Close">✕</button>
+  <div id="dBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

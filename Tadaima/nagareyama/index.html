@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadaima! ただいま！ — Nagareyama · Houses &amp; Land Worth a Look</title>
+<meta name="description" content="Tadaima! collates houses and land for sale in Nagareyama, Chiba, and ranks them with a transparent worth-a-look score, so you can decide what's worth viewing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Tadaima!<span class="jp">ただいま！</span></a>
+    <span class="edition">NAGAREYAMA 流山</span>
+    <nav class="head-nav">
+      <a href="../">← All cities</a>
+      <a href="#properties">Properties</a>
+      <a href="#how">How the ranking works</a>
+      <a href="#market">Nagareyama market</a>
+      <span class="saved-pill">♥ Saved <span id="savedCount">0</span></span>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">HOUSES &amp; LAND · NAGAREYAMA, CHIBA · 流山の家と土地</p>
+    <h1>Find the place<br>you'll say <em>tadaima</em> to.</h1>
+    <p class="lede">Every house and lot for sale in Nagareyama that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked by one transparent score, so you can decide what's actually worth a viewing trip. Nagareyama is the Tsukuba Express growth city — the fastest-rising market in the Tokyo belt — and its famous node is entirely above the brief: Nagareyama-Otakanomori produced zero in-brief records (houses from ¥6,980万, lots from ¥7,400万). The collection lives where the budget still works: the Tobu side around Edogawadai, the Ryutetsu old town, Centralpark and the Minami-Nagareyama fringes. Verification is strong in this edition — all 12 lots and 15 of 17 houses were checked on their listing pages; the two index-level houses say so on their cards.</p>
+    <div class="stats">
+      <div class="stat"><b id="statTotal">–</b><span>properties collected</span></div>
+      <div class="stat"><b id="statHouses">–</b><span>houses 新築・中古</span></div>
+      <div class="stat"><b id="statLand">–</b><span>land / lots 土地</span></div>
+      <div class="stat wide"><b id="statTop">–</b><span>cheapest way in — the #1 ranked property's price &amp; area</span></div>
+    </div>
+    <p class="src" style="margin-top:16px">Researched 23 Oct 2026 from goo住宅・不動産 (incl. SUUMO and LIFULL HOME'S feeds). Prices and availability change — each card links to the original listing. We don't reuse listing photos; see them on the source site.</p>
+  </div>
+</section>
+
+<div class="controls" id="properties">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="Property type">
+      <button class="chip active" data-type="all">All</button>
+      <button class="chip" data-type="house-new">New houses</button>
+      <button class="chip" data-type="house-used">Used houses</button>
+      <button class="chip" data-type="land">Land</button>
+    </div>
+    <label>Max price
+      <select id="fPrice">
+        <option value="3000">¥3,000万</option>
+        <option value="4000">¥4,000万</option>
+        <option value="5000" selected>¥5,000万</option>
+      </select>
+    </label>
+    <label>Max walk
+      <select id="fWalk">
+        <option value="5">5 min</option>
+        <option value="10">10 min</option>
+        <option value="15" selected>15 min</option>
+      </select>
+    </label>
+    <label>Station
+      <select id="fStation"><option value="all">All stations</option></select>
+    </label>
+    <label>Sort
+      <select id="fSort">
+        <option value="score" selected>Worth a look</option>
+        <option value="price">Lowest price</option>
+        <option value="walk">Shortest walk</option>
+      </select>
+    </label>
+    <input type="search" id="fSearch" placeholder="Search district or station…" aria-label="Search district or station">
+    <button class="chip" id="fSaved">♥ Saved only</button>
+    <span id="count" role="status"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty"><p>No properties match those filters. Try widening the price or walk limit.</p></div>
+
+  <section class="section" id="how">
+    <h2>How the ranking works</h2>
+    <p>One score out of 100, built from four parts — the same maths for every property, with the reasons printed on each card. No paid placement, no hidden weighting. A major caution (for example land in an urbanisation-control area, or a house sold as a renovation project) subtracts 7 points and is always shown, never buried.</p>
+    <table class="score-table">
+      <tr><th>Part</th><th>Points</th><th>What it measures</th></tr>
+      <tr><td><strong>Value</strong></td><td>45</td><td>Land: price per tsubo against MLIT transaction averages for that station and walk band (via Utinokati). Houses: price per m² of floor area against the median for new / used houses in this collection.</td></tr>
+      <tr><td><strong>Location</strong></td><td>30</td><td>Walk minutes to the nearest station, plus a station tier — Nagareyama-Otakanomori (Tsukuba Express / Tobu hub) scores highest.</td></tr>
+      <tr><td><strong>Space</strong></td><td>15</td><td>Floor area for houses, plot size for land — with over-sized plots eased back, because very large usually means very restricted.</td></tr>
+      <tr><td><strong>Confidence</strong></td><td>10</td><td>Whether the facts were verified on the listing's own detail page, and how recent its information date is. Index-page finds score lower and say so.</td></tr>
+    </table>
+    <p class="src">Freshness chips: a green <strong>New this week</strong> chip marks a property added at the latest weekly check; a <strong>Price ↓</strong> chip marks a verified price cut since the previous check, with the amount. Both clear at the next weekly check — they describe the last seven days, not the property.</p>
+  </section>
+
+  <section class="section" id="market">
+    <h2>Nagareyama, in numbers</h2>
+    <p>Nagareyama (2025 Census population 215,086, +7.6% — among Japan's fastest-growing cities) is a two-speed market. Used houses standardise at about ¥133万/tsubo city-wide (floor-area basis), but the city figure describes almost nowhere: the Otakanomori catchment runs ~191, Minami-Nagareyama ~150, Centralpark ~143, Hatsuishi ~124 and Edogawadai ~103; by age, stock under 10 years runs ~160 and 30+-year stock ~75. Land by station: Nagareyama-Otakanomori ~¥125万/tsubo in its core phases (its all-use average of ~169 mixes station-front commercial points to ~410 and is not used), Minami-Nagareyama ¥88万 on the city's deepest land sample, Centralpark scored at ¥70万 — not its ~58 transaction average, because every official residential point in the catchment prints 66–77 — Hatsuishi ¥62万, Heiwadai ~¥68万 and the Ryutetsu old town ~¥55万 as flagged proxies, and Edogawadai ¥54万. Inside Otakanomori the premium falls off a cliff beyond about a kilometre (official points: ~125 core, ~79 at 980 m, ~52 at 1,600 m); house prices, by contrast, show no walk penalty inside 15 minutes.</p>
+    <p>Direction: exceptionally strong and accelerating — official residential prices +13.3% in both the 2026 基準地価 and 公示地価 surveys, the fastest of any Tokyo-metro city over 100,000 people for the second straight year, with every in-brief station up 10.8–14.3%. Standing cautions. The western lowland faces Edo River flooding, and a separate inland-water map colours the Edogawadai/Hatsuishi plateau drainage — check both, by address. The north-east (Komagidai, Kamikaizuka) is urbanisation-control land whose official points rose only ~1% against the city's 13% — the two-speed city in one statistic — and its ~¥18万/tsubo transactions are never blended into a benchmark. Landslide alert zones exist in the city (a Level-4 evacuation was issued in September 2026), and one house here carries a warning-zone caution from its listing. Researched negatives: no Nagareyama fault is evidenced and no city liquefaction ranking could be verified, so neither is printed. Sources: MLIT transaction records and official land prices via Utinokati and Tochidai/Totinokati, Ekitan for train times.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Tadaima! ただいま！</strong> — a personal research project in Den-Lab. Nagareyama edition; Kawagoe, Tokorozawa, Saitama City, Tachikawa, Matsudo and more cities on the home page.</span>
+    <span>Estimates and scores are a viewing shortlist tool, not financial or real-estate advice. All property facts come from the linked original listings; confirm price, availability, zoning and building conditions with the listing agent before acting.</span>
+  </div>
+</footer>
+
+<dialog id="detail" aria-labelledby="dBody">
+  <button class="d-close" id="dClose" aria-label="Close">✕</button>
+  <div id="dBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

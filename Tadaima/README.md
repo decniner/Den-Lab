@@ -9,16 +9,20 @@ viewing trip. The name is deliberately not place-specific.
 
 - **Brief for every collection:** houses (new + used) and land/lots,
   ≤ ¥5,000万, ≤ 15 minutes' walk from a station.
-- **Editions:** Kawagoe · Tachikawa · Tokorozawa · Saitama City · Matsudo · Kashiwa · Hachioji · Funabashi · Utsunomiya · Takasaki · Sagamihara · Yokohama · Machida (all live,
+- **Editions:** Kawagoe · Tachikawa · Tokorozawa · Saitama City · Matsudo · Kashiwa · Hachioji · Funabashi · Utsunomiya · Takasaki · Sagamihara · Yokohama · Machida · Maebashi · Mito · Oyama · Kumagaya · Kasukabe · Koshigaya · Ichikawa · Nagareyama · Fujisawa · Atsugi (23 cities, all live,
   researched 2026-10-23). More cities follow only when their research is done
-  to the same standard.
+  to the same standard. Tsukuba was researched and is held: its in-brief stock
+  is currently too thin for an edition, and it will be re-checked as stock
+  turns over rather than published thin.
 - **Home page:** a hub — search by city, station or district, with one card
   per city. Card counts and "from" prices are generated from each city's own
   data file (`build_registry.py`), so the hub can never contradict a city page.
 - **Why no Japan map (yet)?** With a handful of cities, a drill-down map is
   three taps to learn how much of Japan isn't covered yet. The map is planned
-  for when coverage reaches roughly ten cities across several prefectures;
-  until then, search is faster and more honest.
+  for when coverage reaches roughly ten cities across several prefectures.
+  That trigger has been reached (23 cities, 7 prefectures), so a List/Map view
+  is in design; the cards stay the default, because they carry the counts and
+  starting prices a map pin can't.
 
 ## The score (out of 100)
 

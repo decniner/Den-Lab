@@ -1,0 +1,1056 @@
+{
+  "site": {
+    "name": "Tadaima!",
+    "nameJa": "ただいま！",
+    "edition": "Koshigaya",
+    "editionJa": "越谷",
+    "researchedOn": "2026-10-23",
+    "area": "Koshigaya City, Saitama",
+    "areaJa": "埼玉県越谷市"
+  },
+  "defaults": {
+    "budgetMan": 5000,
+    "maxWalkMin": 15
+  },
+  "benchmarks": {
+    "landPerTsuboManByStation": {
+      "Gamo": 55,
+      "Kita-Koshigaya": 50,
+      "Koshigaya": 60,
+      "Koshigaya-Laketown": 65,
+      "Minami-Koshigaya": 80,
+      "Obukuro": 40,
+      "Sengendai": 42,
+      "Shin-Koshigaya": 80
+    },
+    "note": "Land benchmarks: residential ¥/tsubo by station, triangulated from MLIT transaction data via Utinokati (multi-year, standardised) and 2026 official residential land-price points via Totinokati/tochidai: Shin-Koshigaya/Minami-Koshigaya ~80 (official residential average 76.3 on 9 points, with core residential points at 73–91 within 5–8 minutes; the all-use station average of ~99 and the commercial-point average of ~156 — station-front plots at 157–180 with 400% floor-area ratio — are not used, because the listings are houses and residential lots on side streets), Koshigaya-Laketown ~65 (residential points 58.5–72.1; district averages of ~70–76 are not used because they include a single 95.5 point on a 391m² plot), Koshigaya ~60 (the official station average of ~52 pools points out to 25 minutes; points at 6–15 minutes run 57–91 and sampled transactions at 16 minutes print 55–59), Gamo ~55, Kita-Koshigaya ~50, Sengendai ~42, Obukuro ~40. Kita-Koshigaya is scored at ~50, NOT the official catchment average of ~39: that average is dragged down by urbanisation-control (調整区域) and farmhouse-fringe points and deals — control-area plots in its catchment trade at 4–26万円/坪 — while the Osawa district transaction regression is ~52 (23 deals) and its 15-minute official point is ~45. Higashi-Koshigaya (~55) and Osawa (~50) are districts, not stations — their nearest stations are Koshigaya and Kita-Koshigaya — and are scored from district official points and transactions, flagged as such. Walk bands use Koshigaya's observed land gradient — official points fall roughly 30% by a 10-minute walk and 45–50% by 16+ minutes (Koshigaya station: ~91 within 6 minutes vs ~41–44 beyond 20 minutes); house prices fall only ~20% over the same range. Used houses transacted at about ¥101万/tsubo city-wide (floor-area basis, regression on 2,150 deals): Akayamacho ~123 and the Koshigaya station districts ~116 at the top; by age (Gamo district series, used as the shape proxy), ≤10-yr stock ~139 falls to ~65 for 30+-yr stock. The Shin-Koshigaya district simple average of ~174 rests on a thin slice of new station-adjacent stock and is ignored as a level. Official residential land prices rose +3.2% in the 2026 公示地価 survey (30 of 32 points up, none down) — the fifth straight year of acceleration (+0.5% in 2022 to +3.5% in 2026) — with station-side points up 5–6% and the adjustment-area fringe flat."
+  },
+  "properties": [
+    {
+      "id": "h01",
+      "type": "house-new",
+      "district": "Fukuroyama",
+      "districtJa": "大字袋山",
+      "title": "New Libre Garden development (2 units) — 7 min to Obukuro, 130m²+ plots",
+      "priceMan": 4580,
+      "priceFrom": true,
+      "landM2": 130.95,
+      "buildingM2": 99.63,
+      "layout": "3LDK+S~4LDK",
+      "station": "Obukuro",
+      "stationJa": "大袋",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 7,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Shortest new-build walk here (7 min); also 14 min from Sengendai — two stations usable",
+        "Generous 130.95m² plot, 17-post LDK, housing performance-evaluation certificates, parking for 2+"
+      ],
+      "cautions": [
+        "Price is 'from' — the two units run ¥4,580–4,780万; building/land figures are for the cheaper unit",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6007/area_saitama/11222.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h02",
+      "type": "house-new",
+      "district": "Osawa 4",
+      "districtJa": "大沢4丁目",
+      "title": "New 4LDK designer house — ZEH-grade spec, 10 min to Kita-Koshigaya",
+      "priceMan": 4780,
+      "priceFrom": false,
+      "landM2": 117.99,
+      "buildingM2": 99.26,
+      "layout": "4LDK",
+      "station": "Kita-Koshigaya",
+      "stationJa": "北越谷",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 10,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Designer's house with a vaulted 17.8-post LDK (Meldia Kita-Koshigaya)",
+        "ZEH-grade specification; primary school ~3 min walk; parking for 2 in parallel"
+      ],
+      "cautions": [
+        "The same house is listed twice on the index under two descriptions at the same ¥4,780万 — deduplicated here",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6007/area_saitama/11222.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h03",
+      "type": "house-new",
+      "district": "Osato",
+      "districtJa": "大字大里",
+      "title": "New 4LDK — biggest new-build floor area here (111.6m²)",
+      "priceMan": 4499,
+      "priceFrom": false,
+      "landM2": 101.21,
+      "buildingM2": 111.58,
+      "layout": "4LDK",
+      "station": "Obukuro",
+      "stationJa": "大袋",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 13,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Largest new-build house in this set at 111.58m² on a 101.21m² plot",
+        "Barrier-free touches; parking for 2+"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6007/area_saitama/11222.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h04",
+      "type": "house-new",
+      "district": "Gamo",
+      "districtJa": "大字蒲生",
+      "title": "New 4LDK — 110.4m² house, 10 min to Gamo Station",
+      "priceMan": 4999,
+      "priceFrom": false,
+      "landM2": 99.9,
+      "buildingM2": 110.37,
+      "layout": "4LDK",
+      "station": "Gamo",
+      "stationJa": "蒲生",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 10,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Big 110.37m² floor plan — among the largest new houses in this collection",
+        "Walk-in closet; 10 min to Gamo on the Tobu Skytree Line"
+      ],
+      "cautions": [
+        "Top of this collection's budget at ¥4,999万",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6007/area_saitama/11222.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h05",
+      "type": "house-new",
+      "district": "Sengendai-Nishi 4",
+      "districtJa": "千間台西4丁目",
+      "title": "New 4LDK on a 124.9m² plot — Sengendai side",
+      "priceMan": 4199,
+      "priceFrom": false,
+      "landM2": 124.9,
+      "buildingM2": 105.75,
+      "layout": "4LDK",
+      "station": "Sengendai",
+      "stationJa": "せんげん台",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Cheapest new build in this set, on a generous 124.9m² plot",
+        "19-post living room, WIC and pantry; Sengendai primary school ~5 min walk; parking for 2 in parallel"
+      ],
+      "cautions": [
+        "Portal feeds disagree on price for the same spec (¥4,199万 vs ¥4,299万) — recorded at the lower figure; verify",
+        "At the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6016/area_saitama/11222.html?p=47",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h06",
+      "type": "house-new",
+      "district": "Akayamacho 3",
+      "districtJa": "赤山町3丁目",
+      "title": "New 4LDK near Koshigaya Station — south corner lot",
+      "priceMan": 4799,
+      "priceFrom": false,
+      "landM2": 96.26,
+      "buildingM2": 96.23,
+      "layout": "4LDK",
+      "station": "Koshigaya",
+      "stationJa": "越谷",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "South-east/south-west corner lot with good sun; pantry and dishwasher",
+        "Also 19 min from Minami-Koshigaya / Shin-Koshigaya — the Koshigaya Station side of the city"
+      ],
+      "cautions": [
+        "Other feeds list the same development/spec at ¥4,899万 and ¥4,999万 — recorded at the lowest opened figure (¥4,799万); verify which unit is which",
+        "At the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6016/area_saitama/11222.html?p=47",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h07",
+      "type": "house-used",
+      "district": "Sengendai-Nishi 1",
+      "districtJa": "千間台西1丁目",
+      "title": "Used 6LDK (1996) — huge 189m² house on 182m² of land, 6 min to Sengendai",
+      "priceMan": 4880,
+      "priceFrom": false,
+      "landM2": 182.08,
+      "buildingM2": 189.41,
+      "layout": "6LDK",
+      "station": "Sengendai",
+      "stationJa": "せんげん台",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 6,
+      "built": "Jan 1996",
+      "ageYears": 30,
+      "highlights": [
+        "By far the biggest package here: 189.41m² house on a 182.08m² (55-tsubo) plot, two-household capable",
+        "South garden plus courtyard, 19-post LDK, carport for 3+ cars; shops and hospital within 10 min"
+      ],
+      "cautions": [
+        "1996 timber 3-storey structure — at this size, check running/renovation costs carefully",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11222/030Z21696950/100647001/x1030Z21696950.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "h08",
+      "type": "house-used",
+      "district": "Kita-Koshigaya 1",
+      "districtJa": "北越谷1丁目",
+      "title": "Used 3LDK (1994) by Daiwa House — 156.9m² plot, 7 min to Kita-Koshigaya",
+      "priceMan": 4980,
+      "priceFrom": false,
+      "landM2": 156.89,
+      "buildingM2": 124.1,
+      "layout": "3LDK",
+      "station": "Kita-Koshigaya",
+      "stationJa": "北越谷",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 7,
+      "built": "Jan 1994",
+      "ageYears": 32,
+      "highlights": [
+        "Daiwa House-built; electric-shutter garage, WIC and extensive storage",
+        "Very large 156.89m² plot and 124.1m² house for a 7-minute station walk"
+      ],
+      "cautions": [
+        "1994 structure — judge the premium against rebuild/land value",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h09",
+      "type": "house-used",
+      "district": "Osawa 1",
+      "districtJa": "大沢1丁目",
+      "title": "Used 4LDK (2007) — 9 min to Kita-Koshigaya, all rooms south-facing",
+      "priceMan": 3180,
+      "priceFrom": false,
+      "landM2": 100.06,
+      "buildingM2": 320.36,
+      "layout": "4LDK",
+      "station": "Kita-Koshigaya",
+      "stationJa": "北越谷",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 9,
+      "built": "Aug 2007",
+      "ageYears": 19,
+      "highlights": [
+        "All rooms south-facing with a private garden; also 15 min from Koshigaya Station — two stations usable",
+        "Building-confirmation and inspection certificates noted on the listing"
+      ],
+      "cautions": [
+        "FEED ANOMALY: the listing states a 320.36m² building on a 100.06m² plot in a 200% FAR zone — physically implausible for a wooden 2-storey house; treat the building area as unverified and confirm on the ground",
+        "Commercial zoning (商業地域) despite the residential street feel",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11222/030Z21406311/160768001/x1030Z21406311.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "h10",
+      "type": "house-used",
+      "district": "Gamo Honcho",
+      "districtJa": "蒲生本町",
+      "title": "Used 3LDK (2017) Sekisui Heim — solar + battery, tile exterior",
+      "priceMan": 4990,
+      "priceFrom": false,
+      "landM2": 100.0,
+      "buildingM2": 95.54,
+      "layout": "3LDK",
+      "station": "Gamo",
+      "stationJa": "蒲生",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 9,
+      "built": "Aug 2017",
+      "ageYears": 9,
+      "highlights": [
+        "Sekisui Heim light-steel unit construction ('Parfe'); maintenance-free tile exterior and stainless roof",
+        "3.8kW solar plus 5.0kW battery, all-electric; 60-year maker support programme transferable; NW corner lot"
+      ],
+      "cautions": [
+        "Top of this collection's budget — priced for the maker/equipment, not the floor area",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h11",
+      "type": "house-used",
+      "district": "Shimomakuri",
+      "districtJa": "大字下間久里",
+      "title": "Used 6DK (1989) at ¥1,790万 — defect liability waived, experts only",
+      "priceMan": 1790,
+      "priceFrom": false,
+      "landM2": 109.0,
+      "buildingM2": 112.81,
+      "layout": "6DK",
+      "station": "Obukuro",
+      "stationJa": "大袋",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 9,
+      "built": "Mar 1989",
+      "ageYears": 37,
+      "highlights": [
+        "Cheapest house in this collection, with a big 112.81m² floor plan on 109m² of land",
+        "9-minute walk to Obukuro despite the price"
+      ],
+      "cautions": [
+        "Seller's defect liability is waived (契約不適合責任免責) — sold as-is",
+        "Boundaries not disclosed (境界非明示) — unsurveyed boundary risk",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "h12",
+      "type": "house-used",
+      "district": "Fukuroyama",
+      "districtJa": "大字袋山",
+      "title": "Used 4LDK (1993), renovated Oct 2026 — 8 min to Obukuro",
+      "priceMan": 2780,
+      "priceFrom": false,
+      "landM2": 121.3,
+      "buildingM2": 102.68,
+      "layout": "4LDK",
+      "station": "Obukuro",
+      "stationJa": "大袋",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 8,
+      "built": "May 1993",
+      "ageYears": 33,
+      "highlights": [
+        "Renovation completed Oct 2026 (wall coverings, washstand and toilet replaced, full cleaning)",
+        "1F Japanese room works as a kids' space or guest room; 121.3m² plot"
+      ],
+      "cautions": [
+        "Portal feeds disagree on price — another feed lists the same house at ¥2,980万; recorded at ¥2,780万 from the opened index; verify",
+        "1993 structure beneath the fresh interior work",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h13",
+      "type": "house-used",
+      "district": "Gamo Honcho",
+      "districtJa": "蒲生本町",
+      "title": "Used 3LDK built 2024 — near-new, 10 min to Gamo",
+      "priceMan": 3680,
+      "priceFrom": false,
+      "landM2": 77.55,
+      "buildingM2": 88.59,
+      "layout": "3LDK",
+      "station": "Gamo",
+      "stationJa": "蒲生",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 10,
+      "built": "Apr 2024",
+      "ageYears": 2,
+      "highlights": [
+        "Effectively new (built Apr 2024) at a used-house price; setback already done, two-road frontage",
+        "Storage shed and covered cycle space; nursery and primary school nearby"
+      ],
+      "cautions": [
+        "Headline land area sits alongside 8.5m² of private road on the detail page — if included, the effective plot is ~69.1m²; verify",
+        "Feeds disagree on parking (index says 2 cars; the detail page's parking field says none, its notes say 2 in parallel) — verify on the ground",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11222/030Z20027760/146855017/x1030Z20027760.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "h14",
+      "type": "house-used",
+      "district": "Sengendai-Higashi 1",
+      "districtJa": "千間台東1丁目",
+      "title": "Used 4LDK (2003) — 6 min to Sengendai, Seven Town shopping nearby",
+      "priceMan": 3899,
+      "priceFrom": false,
+      "landM2": 102.88,
+      "buildingM2": 103.91,
+      "layout": "4LDK",
+      "station": "Sengendai",
+      "stationJa": "せんげん台",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 6,
+      "built": "Jul 2003",
+      "ageYears": 23,
+      "highlights": [
+        "Short 6-minute walk to an express-stop station; Seven Town Sengendai shopping ~2 min walk",
+        "Renovated/reformed listing; primary and junior-high schools ~13 min walk"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h15",
+      "type": "house-used",
+      "district": "Minami-Ogishima",
+      "districtJa": "大字南荻島",
+      "title": "Used 3LDK (2008), fully reformed Sep 2026 — but in an urbanisation-control area",
+      "priceMan": 2899,
+      "priceFrom": false,
+      "landM2": 130.42,
+      "buildingM2": 87.77,
+      "layout": "3LDK",
+      "station": "Obukuro",
+      "stationJa": "大袋",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 14,
+      "built": "Jul 2008",
+      "ageYears": 18,
+      "highlights": [
+        "Full reform completed Sep 2026 (kitchen, bath, toilet and all interiors replaced); 2-year defect warranty via the agent",
+        "Large 130.42m² plot, parking for 2 in parallel, Flat 35S compatible per the listing"
+      ],
+      "cautions": [
+        "URBANISATION-CONTROL AREA (市街化調整区域): the detail page lists the city-planning zone as 調整区域 — rebuilding is heavily restricted; the existing house's legality/permissions are the whole value",
+        "Other feeds list the same house at ¥2,949万 — recorded at the detail-page price of ¥2,899万; verify",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11222/030Z21606992/160768001/x1030Z21606992.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "h16",
+      "type": "house-used",
+      "district": "Shimomakuri",
+      "districtJa": "大字下間久里",
+      "title": "Used 4SLDK (1986) at ¥1,880万 — regular plot, boundary not disclosed",
+      "priceMan": 1880,
+      "priceFrom": false,
+      "landM2": 112.2,
+      "buildingM2": 98.1,
+      "layout": "4SLDK",
+      "station": "Obukuro",
+      "stationJa": "大袋",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 14,
+      "built": "Sep 1986",
+      "ageYears": 40,
+      "highlights": [
+        "Regular-shaped 112.2m² plot fronting roads on two sides — good sun and ventilation",
+        "Vacant, immediate handover; supermarket within 10 min"
+      ],
+      "cautions": [
+        "Boundaries not disclosed (境界非明示) and an unregistered extension (増築未登記部分あり) — both stated on the listing",
+        "1986 structure — post-1981 seismic code by build date, but 40 years old",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11222/030Z21594589/006110007/x1030Z21594589.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Shichizacho 1",
+      "districtJa": "七左町1丁目",
+      "title": "Used 4LDK (1997) — south-facing, 15 min to Gamo",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 113.06,
+      "buildingM2": 93.28,
+      "layout": "4LDK",
+      "station": "Gamo",
+      "stationJa": "蒲生",
+      "line": "Tobu Isesaki Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 15,
+      "built": "Oct 1997",
+      "ageYears": 29,
+      "highlights": [
+        "South-facing 4LDK with a roomy feel, per the listing; system kitchen",
+        "113.06m² plot at under ¥3,000万 on the Gamo side"
+      ],
+      "cautions": [
+        "At the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3005/area_saitama/11222.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l01",
+      "type": "land",
+      "district": "Gamo Nishimachi 2",
+      "districtJa": "蒲生西町2丁目",
+      "title": "Small vacant plot 5 minutes from Gamo — south road, but a private-road portion is noted",
+      "priceMan": 2530,
+      "priceFrom": false,
+      "landM2": 56.67,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Gamo",
+      "stationJa": "蒲生",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "Vacant land (更地渡し), regular-shaped plot facing a south road",
+        "Full utilities: city gas, water, mains sewer",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Small 56.67m² plot",
+        "A private-road area of 12.61m² is noted on the listing (私道面積) — confirm whether it sits inside the headline area and what burden applies",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-21)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21316816/124126003/x1030Z21316816.html",
+        "verified": "detail",
+        "infoDate": "2026-10-21"
+      }
+    },
+    {
+      "id": "l02",
+      "type": "land",
+      "district": "Osawa 2",
+      "districtJa": "大沢2丁目",
+      "title": "Vacant 115m² plot 5 minutes from Kita-Koshigaya — immediate handover",
+      "priceMan": 3480,
+      "priceFrom": false,
+      "landM2": 115.69,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kita-Koshigaya",
+      "stationJa": "北越谷",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "近隣商業地域",
+      "coverageFar": "80% / 200%",
+      "highlights": [
+        "Vacant land (更地渡し), immediate handover (即引渡し可), 7.1m frontage onto a west 8.2m road",
+        "Kita-Koshigaya is a semi-express/terminating station — strong commute position",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Neighbourhood-commercial zoning (近隣商業地域) by the station — flexible, but not a quiet purely-residential street",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21736048/006110055/x1030Z21736048.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l03",
+      "type": "land",
+      "district": "Akayama-cho 1",
+      "districtJa": "赤山町1丁目",
+      "title": "Big plot 6 minutes from Koshigaya — defect-liability waiver and a 2.5m frontage",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 145,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Koshigaya",
+      "stationJa": "越谷",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 6,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Large plot this close to Koshigaya station; agent notes an effective residential portion of about 44 tsubo (~145m²)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "Defect-liability waiver for the existing building (建物契約不適合責任免責) — a major-caution candidate",
+        "Effective residential area is only about 44 tsubo (~145m²) against the 164.11m² headline, and frontage is just 2.5m onto the west 8m road — flag-pole-like access; score on the effective area",
+        "A boundary block encroaches onto the city-owned covered waterway to the north (越境, sold as-is, correction required); handover only after inheritance registration completes",
+        "No city-gas connection (LP gas now; the main is in the front road)",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21095844/006110142/x1030Z21095844.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "l04",
+      "type": "land",
+      "district": "Sengendai Higashi 2",
+      "districtJa": "千間台東2丁目",
+      "title": "Surveyed plot 9 minutes from Sengendai — seller demolishes, vacant delivery",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 129.42,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Sengendai",
+      "stationJa": "せんげん台",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "60% / 100%",
+      "highlights": [
+        "Survey completed (測量実施済み); seller demolishes and delivers vacant (解体更地渡し) — no demolition cost",
+        "South-west facing onto a public road in a low-rise zone",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Headline area 129.42m² is the registry figure while the completed survey measured 131.02m² — confirm which area the contract price is based on",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21830845/006110038/x1030Z21830845.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l05",
+      "type": "land",
+      "district": "Kita-Koshigaya 1",
+      "districtJa": "北越谷1丁目",
+      "title": "Huge 253m² plot 9 minutes from Kita-Koshigaya — vacant delivery, LP gas",
+      "priceMan": 3500,
+      "priceFrom": false,
+      "landM2": 253.28,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kita-Koshigaya",
+      "stationJa": "北越谷",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "By far the largest plot in this collection (253.28m², ~76 tsubo) at a low ¥/tsubo for the station distance",
+        "Vacant-land delivery (更地渡し), south 8m road frontage",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "LP gas (no city gas)",
+        "Oldest information date in this collection (2026-09-04) — re-confirm the listing is still live before relying on it",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-09-04)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z71880559/014220003/x1030Z71880559.html",
+        "verified": "detail",
+        "infoDate": "2026-09-04"
+      }
+    },
+    {
+      "id": "l06",
+      "type": "land",
+      "district": "Minami-Koshigaya 3",
+      "districtJa": "南越谷3丁目",
+      "title": "Regular-shaped south-road plot usable from three stations — building on site",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 98.75,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Shin-Koshigaya",
+      "stationJa": "新越谷",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 10,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Three stations / two lines within about 10-12 min: Shin-Koshigaya 10, Minami-Koshigaya (JR) 10, Koshigaya 12",
+        "Regular-shaped (整形地) plot with an 8m frontage onto a south 4m road — sunny and well ventilated",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z73135094/006050457/x1030Z73135094.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l07",
+      "type": "land",
+      "district": "Osawa 4",
+      "districtJa": "大沢4丁目",
+      "title": "Regular-shaped 99m² plot 11 minutes from Kita-Koshigaya — private-road portion noted",
+      "priceMan": 2480,
+      "priceFrom": false,
+      "landM2": 99.18,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kita-Koshigaya",
+      "stationJa": "北越谷",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 11,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "Regular-shaped (整形地) 30-tsubo plot with a wide 12m frontage onto a south-west 4m road",
+        "Quiet residential street with schools and shops on foot",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "A private-road area of 11.36m² is noted on the listing (私道面積) — confirm whether it sits inside the headline area and what burden applies",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21165712/006110007/x1030Z21165712.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l08",
+      "type": "land",
+      "district": "Fukuroyama",
+      "districtJa": "大字袋山",
+      "title": "Cheap vacant corner plot by Obukuro — but the agent text hides a building condition",
+      "priceMan": 1780,
+      "priceFrom": false,
+      "landM2": 98.18,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Obukuro",
+      "stationJa": "大袋",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant land (更地), corner plot (NE/NW, waterway on the NW side)",
+        "Low headline price for a vacant, buildable plot 12 min from a station"
+      ],
+      "cautions": [
+        "MAJOR: portal field says no building condition, but the agent's own text imposes a 3-month Polas building-contract suspensive condition — if no contract is signed the land sale is void; do not treat this as a clean no-condition lot",
+        "Registry area is 93.43m² against the 98.18m² headline — confirm the contract area",
+        "City-gas connection is at extra cost; whether corner-lot coverage relief applies is only decided after a small-scale development application",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21152554/006110007/x1030Z21152554.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "l09",
+      "type": "land",
+      "district": "Higashi-Osawa 1",
+      "districtJa": "東大沢1丁目",
+      "title": "Large vacant 192m² plot by Kita-Koshigaya — only 2.5m of road frontage",
+      "priceMan": 2380,
+      "priceFrom": false,
+      "landM2": 192.3,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kita-Koshigaya",
+      "stationJa": "北越谷",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant land delivered vacant (更地渡し), 58 tsubo at a low ¥40.9万/tsubo (computed)",
+        "Shops and schools within a 10-minute walk",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Only 2.5m of frontage onto the south-east 6m road despite the 192.3m² headline — a flag-pole / narrow-access shape; the usable building plot and car access need checking on the ground",
+        "City gas: the main is in the front road but no connection has been made — connection at the buyer's cost",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21979351/006110022/x1030Z21979351.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l10",
+      "type": "land",
+      "district": "Onma",
+      "districtJa": "大字恩間",
+      "title": "Cheapest lot here at ¥800万 — vacant, surveyed, but a neighbour's pipes cross it",
+      "priceMan": 800,
+      "priceFrom": false,
+      "landM2": 71.76,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Obukuro",
+      "stationJa": "大袋",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Cheapest land in this collection, and the lowest ¥/tsubo at ¥36.9万 (computed); vacant (更地渡し) with immediate handover",
+        "Definitive survey completed (確定測量済み)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Water and sewer pipes serving the north-east neighbour's land pass through the south-east side of this plot — a real constraint on building placement",
+        "Small 71.76m² plot",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21408964/176232001/x1030Z21408964.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l11",
+      "type": "land",
+      "district": "Noborito-cho",
+      "districtJa": "登戸町",
+      "title": "Big regular plot between Minami-Koshigaya and Shin-Koshigaya — quasi-industrial zone",
+      "priceMan": 4980,
+      "priceFrom": false,
+      "landM2": 156.8,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Minami-Koshigaya",
+      "stationJa": "南越谷",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "準工業地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Two lines usable: Minami-Koshigaya (JR Musashino) 13 min and Shin-Koshigaya (Tobu) 13 min",
+        "Regular-shaped (整形地) 47.4 tsubo with a 9.8m frontage; surveyed, seller demolishes and delivers vacant (解体更地渡し)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Quasi-industrial zoning (準工業地域) — light-industrial / warehouse neighbours are permitted, so this is not a purely residential street",
+        "Priced at the ¥5,000万 brief cap — the most expensive lot in this collection",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z20550050/006110022/x1030Z20550050.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l12",
+      "type": "land",
+      "district": "Sengendai Higashi 3",
+      "districtJa": "千間台東3丁目",
+      "title": "114m² low-rise-zone plot 14 minutes from Sengendai — building on site, no gas shown",
+      "priceMan": 1980,
+      "priceFrom": false,
+      "landM2": 114.71,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Sengendai",
+      "stationJa": "せんげん台",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "60% / 100%",
+      "highlights": [
+        "Regular-shaped (整形地) flat plot fronting roads on two sides (NW 4m / NE 4m) in a low-rise zone",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "No gas service is shown on the listing (equipment lists only water and mains sewer) — confirm gas availability and cost",
+        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21711921/006114031/x1030Z21711921.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadaima! ただいま！ — Ichikawa · Houses &amp; Land Worth a Look</title>
+<meta name="description" content="Tadaima! collates houses and land for sale in Ichikawa, Chiba, and ranks them with a transparent worth-a-look score, so you can decide what's worth viewing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Tadaima!<span class="jp">ただいま！</span></a>
+    <span class="edition">ICHIKAWA 市川</span>
+    <nav class="head-nav">
+      <a href="../">← All cities</a>
+      <a href="#properties">Properties</a>
+      <a href="#how">How the ranking works</a>
+      <a href="#market">Ichikawa market</a>
+      <span class="saved-pill">♥ Saved <span id="savedCount">0</span></span>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">HOUSES &amp; LAND · ICHIKAWA, CHIBA · 市川の家と土地</p>
+    <h1>Find the place<br>you'll say <em>tadaima</em> to.</h1>
+    <p class="lede">Every house and lot for sale in Ichikawa that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked by one transparent score, so you can decide what's actually worth a viewing trip. Ichikawa is inner Chiba — 19 minutes to Tokyo Station by rapid — in two landscapes: the bay-side Gyotoku plain in the south and the plateau in the north. Nothing in-brief exists within walking distance of Ichikawa or Motoyawata stations themselves (centre new builds start at ¥5,980万+), so the set lives at Ichikawa-Ono, along the Keisei line, and across the Gyotoku plain. All 17 houses are index-verified — detail pages returned rate-limit errors on research day — so their confidence scores sit a step lower, as the cards show; all 12 lots were verified on their listing pages.</p>
+    <div class="stats">
+      <div class="stat"><b id="statTotal">–</b><span>properties collected</span></div>
+      <div class="stat"><b id="statHouses">–</b><span>houses 新築・中古</span></div>
+      <div class="stat"><b id="statLand">–</b><span>land / lots 土地</span></div>
+      <div class="stat wide"><b id="statTop">–</b><span>cheapest way in — the #1 ranked property's price &amp; area</span></div>
+    </div>
+    <p class="src" style="margin-top:16px">Researched 23 Oct 2026 from goo住宅・不動産 (incl. SUUMO feed). Prices and availability change — each card links to the original listing. We don't reuse listing photos; see them on the source site.</p>
+  </div>
+</section>
+
+<div class="controls" id="properties">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="Property type">
+      <button class="chip active" data-type="all">All</button>
+      <button class="chip" data-type="house-new">New houses</button>
+      <button class="chip" data-type="house-used">Used houses</button>
+      <button class="chip" data-type="land">Land</button>
+    </div>
+    <label>Max price
+      <select id="fPrice">
+        <option value="3000">¥3,000万</option>
+        <option value="4000">¥4,000万</option>
+        <option value="5000" selected>¥5,000万</option>
+      </select>
+    </label>
+    <label>Max walk
+      <select id="fWalk">
+        <option value="5">5 min</option>
+        <option value="10">10 min</option>
+        <option value="15" selected>15 min</option>
+      </select>
+    </label>
+    <label>Station
+      <select id="fStation"><option value="all">All stations</option></select>
+    </label>
+    <label>Sort
+      <select id="fSort">
+        <option value="score" selected>Worth a look</option>
+        <option value="price">Lowest price</option>
+        <option value="walk">Shortest walk</option>
+      </select>
+    </label>
+    <input type="search" id="fSearch" placeholder="Search district or station…" aria-label="Search district or station">
+    <button class="chip" id="fSaved">♥ Saved only</button>
+    <span id="count" role="status"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty"><p>No properties match those filters. Try widening the price or walk limit.</p></div>
+
+  <section class="section" id="how">
+    <h2>How the ranking works</h2>
+    <p>One score out of 100, built from four parts — the same maths for every property, with the reasons printed on each card. No paid placement, no hidden weighting. A major caution (for example land in an urbanisation-control area, or a house sold as a renovation project) subtracts 7 points and is always shown, never buried.</p>
+    <table class="score-table">
+      <tr><th>Part</th><th>Points</th><th>What it measures</th></tr>
+      <tr><td><strong>Value</strong></td><td>45</td><td>Land: price per tsubo against MLIT transaction averages for that station and walk band (via Utinokati). Houses: price per m² of floor area against the median for new / used houses in this collection.</td></tr>
+      <tr><td><strong>Location</strong></td><td>30</td><td>Walk minutes to the nearest station, plus a station tier — Ichikawa and Motoyawata (JR Sobu rapid / Toei Shinjuku Line hubs) scores highest.</td></tr>
+      <tr><td><strong>Space</strong></td><td>15</td><td>Floor area for houses, plot size for land — with over-sized plots eased back, because very large usually means very restricted.</td></tr>
+      <tr><td><strong>Confidence</strong></td><td>10</td><td>Whether the facts were verified on the listing's own detail page, and how recent its information date is. Index-page finds score lower and say so.</td></tr>
+    </table>
+    <p class="src">Freshness chips: a green <strong>New this week</strong> chip marks a property added at the latest weekly check; a <strong>Price ↓</strong> chip marks a verified price cut since the previous check, with the amount. Both clear at the next weekly check — they describe the last seven days, not the property.</p>
+  </section>
+
+  <section class="section" id="market">
+    <h2>Ichikawa, in numbers</h2>
+    <p>Ichikawa's value is carried by its land, which is why its age gradient is shallower than Matsudo's. Used houses transact at about ¥139万/tsubo city-wide (floor-area basis, standardised): Gyotoku ~167, Myoden ~162, Motoyawata ~158 at the top and Ichikawa-Ono ~105 in the north; by age, stock under 10 years runs ~173 and 30+-year stock ~95. Land by station: Ichikawa-Mama and Sugano ~¥130万/tsubo (proxies from official points printing ~144), Ichikawa and Gyotoku ¥125万, Keisei-Yawata ~¥120万 (proxy), Myoden ¥120万, Minami-Gyotoku ¥115万, Motoyawata ¥110万 — its all-use average of ~306 is station-front commercial and is never used — Onigoe ~¥100万 (proxy), Baraki-Nakayama ¥78万, then the northern step-down: Ichikawa-Ono ¥45万 and Oomachi ¥28万. The walk gradient is steep, Tachikawa-class: land falls ~33% by a 10-minute walk and over 50% by 16+ minutes.</p>
+    <p>Direction: rising, broad, slightly decelerating — 2026 基準地価 residential +3.4% after +3.9% in 2025, with the listed station pockets up 4–6%. Standing cautions divide by landscape. South of the Edo River: river flooding plus inland water (the Ichikawa-Minami drainage district is chronic — Aug–Sep 2026 events flooded 200+ homes) and bay-side liquefaction, documented severely in the 2011 earthquake along the Urayasu–Ichikawa–Narashino strip; every Gyotoku-plain and Mama card carries the check. On the plateau edge: sediment-disaster zones (a Level-4 warning was issued for Ichikawa in September 2026), and in the north an urbanisation-control fringe whose averages are never blended into a benchmark. One researched negative: the Tokyo Bay Northern Edge Fault was formally evaluated in 2000 and judged not an active fault, so this page prints no fault caution. One house here is a stated no-rebuild (its plot does not front a Building Standards Act road) and is scored and labelled as a building-only purchase. Sources: MLIT transaction records and official land prices via Utinokati and Totinokati/tochidai, Ekitan for train times.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Tadaima! ただいま！</strong> — a personal research project in Den-Lab. Ichikawa edition; Kawagoe, Tokorozawa, Saitama City, Tachikawa, Matsudo and more cities on the home page.</span>
+    <span>Estimates and scores are a viewing shortlist tool, not financial or real-estate advice. All property facts come from the linked original listings; confirm price, availability, zoning and building conditions with the listing agent before acting.</span>
+  </div>
+</footer>
+
+<dialog id="detail" aria-labelledby="dBody">
+  <button class="d-close" id="dClose" aria-label="Close">✕</button>
+  <div id="dBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

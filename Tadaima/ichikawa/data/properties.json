@@ -1,0 +1,1066 @@
+{
+  "site": {
+    "name": "Tadaima!",
+    "nameJa": "ただいま！",
+    "edition": "Ichikawa",
+    "editionJa": "市川",
+    "researchedOn": "2026-10-23",
+    "area": "Ichikawa City, Chiba",
+    "areaJa": "千葉県市川市"
+  },
+  "defaults": {
+    "budgetMan": 5000,
+    "maxWalkMin": 15
+  },
+  "benchmarks": {
+    "landPerTsuboManByStation": {
+      "Baraki-Nakayama": 78,
+      "Gyotoku": 125,
+      "Ichikawa": 125,
+      "Ichikawa-Mama": 130,
+      "Ichikawa-Ono": 45,
+      "Keisei-Yawata": 120,
+      "Minami-Gyotoku": 115,
+      "Motoyawata": 110,
+      "Myoden": 120,
+      "Onigoe": 100,
+      "Oomachi": 28,
+      "Sugano": 130
+    },
+    "note": "Land benchmarks: residential ¥/tsubo by station, triangulated from MLIT transaction data via Utinokati (multi-year) and 2026 official residential land-price points via Totinokati/tochidai: Ichikawa ~125 (official residential points run 132–146 at a 9–15 minute walk and the tax-valuation series implies ~124; the raw station transaction average of ~95 pools 16+ minute fringe deals and is not used, and the district regression of ~137 rests on only 24 analysis deals), Ichikawa-Mama ~130 and Sugano ~130 (proxies from official points — Mama 2-chome and Sugano 3-chome both print ~144 — and Sugano-side district transactions ~125–132), Motoyawata ~110 (137 transactions average ~102 and the official series implies ~109; tochidai's all-use station average of ~306 is station-front commercial — Yawata 2-chome alone is ~919 — and is not used), Keisei-Yawata ~120 and Onigoe ~100 (proxies: Yawata district transactions print ~145 on 19 deals while Onigoe's ~132 rests on just 5 deals against an all-period ~93–97, so both are scored below the thin prints), Shimosa-Nakayama ~95, Baraki-Nakayama ~78, Gyotoku ~125 and Myoden ~120 (their raw transaction averages of ~164 and ~141 are small-lot, station-front-skewed prints on 25 and 17 deals — Gyotoku-Ekimae commercial deals reach ~211 — while the official series implies ~123–126 and Myoden district's own regression is ~105), Minami-Gyotoku ~115, Ichikawa-Ono ~45 (transactions ~42 on 48 deals and official points 44–50 converge), Oomachi ~28 (pear-farming fringe; the district's ¥22.5 基準地価 average includes farm and forest points). Ichikawa-Shiohama (~90) and Futamata-Shinmachi (~45) are flagged very-low-confidence proxies for Keiyo-line stations whose surroundings are industrial-exclusive zoning with no residential market — any listing there actually sits in a neighbouring district and should be scored there. City-wide, urbanisation-control （調整区域） deals average ~37万円/坪 (52 deals) and drag every northern catchment they touch. Walk bands use Ichikawa's observed gradient — land prices fall roughly 33% by a 10-minute walk (city regression) and over 50% by 16+ minutes (transactions: 134.3万円/坪 within 5 minutes vs 58.7 at 16+); house prices fall only ~15% by 10 minutes and ~35% by 16+. Used houses transacted at about ¥139万/tsubo city-wide (floor-area basis, standardised; 2025 simple average ~150): Gyotoku ~167, Myoden ~162, Motoyawata ~158 at the top, Ichikawa-Ono ~105 in the north; by age, ≤10-yr stock ~173 falls to ~95 for 30+-yr stock. The district house prints of ~316 for Futamata (13 deals) and ~233 for Takaya (17 deals) are mix artefacts and are ignored. Official residential land prices rose +3.4% in the 2026 基準地価 survey (station pockets +4–6%) — a steady, broad rise, slightly slower than 2025's +3.9%."
+  },
+  "properties": [
+    {
+      "id": "h01",
+      "type": "house-new",
+      "district": "Oonocho 3",
+      "districtJa": "大野町3丁目",
+      "title": "New 4LDK development (15 units) — 6 min from Ichikawa-Ono",
+      "priceMan": 4490,
+      "priceFrom": false,
+      "landM2": 110.31,
+      "buildingM2": 96.88,
+      "layout": "4LDK",
+      "station": "Ichikawa-Ono",
+      "stationJa": "市川大野",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 6,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Short 6-minute walk to Ichikawa-Ono on a 110.3m² plot",
+        "Performance-evaluation certified; parking for 2+, immediate move-in"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6016/area_chiba/12203/010.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h02",
+      "type": "house-new",
+      "district": "Oonocho 4",
+      "districtJa": "大野町4丁目",
+      "title": "New 2LDK+2S — at the 15-minute walk limit from Ichikawa-Ono",
+      "priceMan": 3880,
+      "priceFrom": false,
+      "landM2": 100.97,
+      "buildingM2": 97.29,
+      "layout": "2LDK+2S",
+      "station": "Ichikawa-Ono",
+      "stationJa": "市川大野",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Cheapest new build in this collection, with a full 97.3m² floor area",
+        "Two store-rooms give flexible 4-room use on a 101m² plot"
+      ],
+      "cautions": [
+        "At the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6016/area_chiba/12203/010.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h03",
+      "type": "house-new",
+      "district": "Mama 5",
+      "districtJa": "真間5丁目",
+      "title": "New 4LDK, last unit of 14 — south-facing road, Ichikawa-Mama side",
+      "priceMan": 4980,
+      "priceFrom": false,
+      "landM2": 118.15,
+      "buildingM2": 87.32,
+      "layout": "4LDK",
+      "station": "Ichikawa-Mama",
+      "stationJa": "市川真間",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 14,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Rare new build in the Mama/Ichikawa core at exactly the brief ceiling",
+        "118.2m² plot, south road frontage, performance-evaluation certified"
+      ],
+      "cautions": [
+        "At the brief's price ceiling (¥5,000万)",
+        "Mama sits on the Edo River lowland edge — check the city flood hazard map before viewing",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6002/area_chiba/12203.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h04",
+      "type": "house-new",
+      "district": "Kokufudai 1",
+      "districtJa": "国府台1丁目",
+      "title": "New 3LDK development (3 units), from ¥4,980万 — Yagiri 15 min",
+      "priceMan": 4980,
+      "priceFrom": true,
+      "landM2": 124.63,
+      "buildingM2": 89.42,
+      "layout": "3LDK",
+      "station": "Yagiri",
+      "stationJa": "矢切",
+      "line": "Hokuso Line",
+      "lineJa": "北総線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Largest plots of the new builds here (124.6–140.2m²) by the Kokufudai park/plateau",
+        "Parking for 2+"
+      ],
+      "cautions": [
+        "Price is 'from' — units run to ¥5,380万 and only the cheapest falls within this collection's brief",
+        "At the 15-minute walk limit; Kokufudai is a plateau edge — check slope/sediment-disaster zones on the city hazard map",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6002/area_chiba/12203.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h05",
+      "type": "house-new",
+      "district": "Shinai 1",
+      "districtJa": "新井1丁目",
+      "title": "New 3LDK+S development (4 units), from ¥4,980万 — bay-side south",
+      "priceMan": 4980,
+      "priceFrom": true,
+      "landM2": 54.26,
+      "buildingM2": 92.53,
+      "layout": "3LDK+S",
+      "station": "Urayasu",
+      "stationJa": "浦安",
+      "line": "Tokyo Metro Tozai Line",
+      "lineJa": "東京メトロ東西線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "New build within walk of the Tozai Line in the city's bay-side south",
+        "Compact but efficient 92.5–96.6m² plans"
+      ],
+      "cautions": [
+        "Price is 'from' — units run to ¥5,180万",
+        "Very small 54.3–56.0m² plots — priced for the new building, not the land",
+        "Shinai is low-lying bay-side land — check flood and liquefaction hazard maps; the walk is to Urayasu Station across the city border (Minami-Gyotoku is 16 min)",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6002/area_chiba/12203.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h06",
+      "type": "house-used",
+      "district": "Oonocho 3",
+      "districtJa": "大野町3丁目",
+      "title": "Used 3LDK (2022) with solar + battery — 5 min from Ichikawa-Ono",
+      "priceMan": 4380,
+      "priceFrom": false,
+      "landM2": 110.4,
+      "buildingM2": 94.76,
+      "layout": "3LDK",
+      "station": "Ichikawa-Ono",
+      "stationJa": "市川大野",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 5,
+      "built": "Jun 2022",
+      "ageYears": 4,
+      "highlights": [
+        "Shortest walk in this collection (5 min) and only 4 years old",
+        "Solar generation plus storage battery; wide roof balcony, 17.5-mat LDK, parking for 2"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h07",
+      "type": "house-used",
+      "district": "Oonocho 4",
+      "districtJa": "大野町4丁目",
+      "title": "Used 4LDK (2020) — 21.5-mat LDK on a 122.9m² plot",
+      "priceMan": 4198,
+      "priceFrom": false,
+      "landM2": 122.94,
+      "buildingM2": 103.68,
+      "layout": "4LDK",
+      "station": "Ichikawa-Ono",
+      "stationJa": "市川大野",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 11,
+      "built": "Mar 2020",
+      "ageYears": 6,
+      "highlights": [
+        "Big, recent package: 103.7m² house on 122.9m², SE frontage on a 6m public road",
+        "Vacant, immediate viewing; schools within walking distance"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h08",
+      "type": "house-used",
+      "district": "Kokufudai 6",
+      "districtJa": "国府台6丁目",
+      "title": "Used 4LDK built 2023 — nearly new, 9 min from Yagiri",
+      "priceMan": 4780,
+      "priceFrom": false,
+      "landM2": 122.15,
+      "buildingM2": 94.4,
+      "layout": "4LDK",
+      "station": "Yagiri",
+      "stationJa": "矢切",
+      "line": "Hokuso Line",
+      "lineJa": "北総線",
+      "walkMin": 9,
+      "built": "Apr 2023",
+      "ageYears": 3,
+      "highlights": [
+        "Effectively new (built Apr 2023) on a generous 122.2m² Kokufudai plot",
+        "20-year ground guarantee noted on the listing; parking for up to 3 (size-dependent)"
+      ],
+      "cautions": [
+        "One portal feed lists the same house at ¥4,980万 — confirm the current price with the agent",
+        "Plateau-edge district — check slope/sediment zones on the hazard map",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h09",
+      "type": "house-used",
+      "district": "Chugokubun 5",
+      "districtJa": "中国分5丁目",
+      "title": "Used 3LDK (2012), renovated Sep 2026 — cheapest solid family house here",
+      "priceMan": 3299,
+      "priceFrom": false,
+      "landM2": 110.86,
+      "buildingM2": 82.8,
+      "layout": "3LDK",
+      "station": "Yagiri",
+      "stationJa": "矢切",
+      "line": "Hokuso Line",
+      "lineJa": "北総線",
+      "walkMin": 14,
+      "built": "Dec 2012",
+      "ageYears": 13,
+      "highlights": [
+        "Lowest price for a post-2000 family house in this set, on a 110.9m² plot",
+        "Sep 2026 interior renovation (toilet, washstand, water heater, floors, wallpaper); all rooms 6 mats+, 16.7-mat LDK"
+      ],
+      "cautions": [
+        "Multiple agents list this house at ¥3,299–3,349万 — confirm which listing/price is live",
+        "Northern plateau fringe — check sediment-disaster zones; Hokuso Line fares are notably high",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h10",
+      "type": "house-used",
+      "district": "Kokufudai 5",
+      "districtJa": "国府台5丁目",
+      "title": "Used 5LDK (1998) by Sekisui House, fully renovated — big plateau plot",
+      "priceMan": 4180,
+      "priceFrom": false,
+      "landM2": 141.42,
+      "buildingM2": 113.8,
+      "layout": "5LDK",
+      "station": "Yagiri",
+      "stationJa": "矢切",
+      "line": "Hokuso Line",
+      "lineJa": "北総線",
+      "walkMin": 15,
+      "built": "Oct 1998",
+      "ageYears": 28,
+      "highlights": [
+        "Light-steel Sekisui House build, full interior renovation (kitchen, bath, washstand, toilets, wallpaper, water heater)",
+        "Large 141.4m² south-road plot and 113.8m² house; parking for 2"
+      ],
+      "cautions": [
+        "1998 structure beneath the renovation — check what the works actually covered and the frame's condition",
+        "At the 15-minute walk limit; plateau edge — check slope/sediment zones",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h11",
+      "type": "house-used",
+      "district": "Mama 4",
+      "districtJa": "真間4丁目",
+      "title": "Used 2DK (2015), interior renovated — three stations, Mama core",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 85.3,
+      "buildingM2": 60.03,
+      "layout": "2DK",
+      "station": "Ichikawa-Mama",
+      "stationJa": "市川真間",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 12,
+      "built": "Apr 2015",
+      "ageYears": 11,
+      "highlights": [
+        "The only in-brief house in the Ichikawa/Mama core itself; Ichikawa Station also 15 min",
+        "New interior renovation, vaulted entrance, floor heating; Mama Elementary ~210m"
+      ],
+      "cautions": [
+        "Compact 60.0m² / 2DK building — priced for location, not space",
+        "Mama lowland by the Edo River — check the flood hazard map",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3005/ensen/199/2199130.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h12",
+      "type": "house-used",
+      "district": "Hon-Gyotoku",
+      "districtJa": "本行徳",
+      "title": "Used 4LDK (1999) on a SE corner — Myoden 13 min, Gyotoku plain",
+      "priceMan": 4780,
+      "priceFrom": false,
+      "landM2": 91.3,
+      "buildingM2": 89.95,
+      "layout": "4LDK",
+      "station": "Myoden",
+      "stationJa": "妙典",
+      "line": "Tokyo Metro Tozai Line",
+      "lineJa": "東京メトロ東西線",
+      "walkMin": 13,
+      "built": "Jul 1999",
+      "ageYears": 27,
+      "highlights": [
+        "SE corner plot, all rooms two-side lit; movable partitions and loft give flexible space",
+        "Reformed (history incl. 2016 works on one feed); high-roof garage"
+      ],
+      "cautions": [
+        "Portal feeds disagree: headline land is 91.3m² but one agent's overview states 111.65m² registered and calls it 3LDK — verify the registry before pricing the land",
+        "Hon-Gyotoku is low-lying Gyotoku plain — check Edo River flood and liquefaction hazard maps",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h13",
+      "type": "house-used",
+      "district": "Haraki 2",
+      "districtJa": "原木2丁目",
+      "title": "Used 3LDK built 2019, 5 min from Baraki-Nakayama — NO-REBUILD",
+      "priceMan": 4180,
+      "priceFrom": false,
+      "landM2": 52.52,
+      "buildingM2": 75.68,
+      "layout": "3LDK",
+      "station": "Baraki-Nakayama",
+      "stationJa": "原木中山",
+      "line": "Tokyo Metro Tozai Line",
+      "lineJa": "東京メトロ東西線",
+      "walkMin": 5,
+      "built": "Aug 2019",
+      "ageYears": 7,
+      "highlights": [
+        "Nearly new (2019) and a genuinely short 5-minute walk to the Tozai Line",
+        "2nd-floor LDK (13.8 mats), dishwasher and water purifier"
+      ],
+      "cautions": [
+        "NO-REBUILD (再建築不可): the listing states the plot does not front a Building Standards Act road, so rebuilding is in principle impossible — only possible with an Art. 43(2)(ii) permission (building-review board consent). Price and finance it as a building-only purchase",
+        "Very small 52.5m² plot; 3-storey plan",
+        "Low-lying western lowland — check flood/liquefaction hazard maps",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "h14",
+      "type": "house-used",
+      "district": "Kitagata 2",
+      "districtJa": "北方2丁目",
+      "title": "Used 3LDK (2017) on a corner plot — Onigoe 7 min",
+      "priceMan": 3780,
+      "priceFrom": false,
+      "landM2": 60.05,
+      "buildingM2": 77.31,
+      "layout": "3LDK",
+      "station": "Onigoe",
+      "stationJa": "鬼越",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 7,
+      "built": "Jul 2017",
+      "ageYears": 9,
+      "highlights": [
+        "Recent 2017 build with a short walk to Onigoe; Motoyawata area also reachable",
+        "Corner plot, all rooms with storage, two toilets, ~15.2-mat LDK"
+      ],
+      "cautions": [
+        "Small 60.1m² plot — check parking provision on the ground (none stated on the index)",
+        "Northern lowland/plateau foot — check flood and slope hazard maps",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h15",
+      "type": "house-used",
+      "district": "Honshio",
+      "districtJa": "本塩",
+      "title": "Used 3LDK (1997) — 7 min from Myoden, bay-side",
+      "priceMan": 3780,
+      "priceFrom": false,
+      "landM2": 83.86,
+      "buildingM2": 79.27,
+      "layout": "3LDK",
+      "station": "Myoden",
+      "stationJa": "妙典",
+      "line": "Tokyo Metro Tozai Line",
+      "lineJa": "東京メトロ東西線",
+      "walkMin": 7,
+      "built": "Apr 1997",
+      "ageYears": 29,
+      "highlights": [
+        "Short 7-minute walk to Myoden (Tozai rapid stops) at the joint-cheapest southern price",
+        "Large supermarket nearby; quiet residential block"
+      ],
+      "cautions": [
+        "1997 structure — budget for age-related works; no renovation stated on the index",
+        "Honshio is reclaimed bay-side plain — liquefaction and flood risk: check the city hazard maps carefully",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h16",
+      "type": "house-used",
+      "district": "Gyotoku-Ekimae 3",
+      "districtJa": "行徳駅前3丁目",
+      "title": "Used 2SLDK (1999), 3-storey — 7 min from Gyotoku Station",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 50.77,
+      "buildingM2": 89.43,
+      "layout": "2SLDK",
+      "station": "Gyotoku",
+      "stationJa": "行徳",
+      "line": "Tokyo Metro Tozai Line",
+      "lineJa": "東京メトロ東西線",
+      "walkMin": 7,
+      "built": "Oct 1999",
+      "ageYears": 27,
+      "highlights": [
+        "Station-close (7 min) Gyotoku address under ¥4,000万; regular plot on a ~6m public road",
+        "89.4m² over 3 floors with a garage (size limits apply) and a 6.7-mat service room"
+      ],
+      "cautions": [
+        "Very small 50.8m² plot — the value is the station walk, not the land",
+        "Gyotoku plain is low-lying — check Edo River flood and liquefaction hazard maps",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Kakemama 1",
+      "districtJa": "欠真間1丁目",
+      "title": "Used 4LDK (2003) on a flag-pole plot by the school — Minami-Gyotoku 13 min",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 100.14,
+      "buildingM2": 92.32,
+      "layout": "4LDK",
+      "station": "Minami-Gyotoku",
+      "stationJa": "南行徳",
+      "line": "Tokyo Metro Tozai Line",
+      "lineJa": "東京メトロ東西線",
+      "walkMin": 13,
+      "built": "Apr 2003",
+      "ageYears": 23,
+      "highlights": [
+        "Beside the elementary school — the listing pitches the flag-pole depth as privacy and child safety",
+        "All-electric 3-storey, 92.3m²; open aspects to the school/kindergarten sides"
+      ],
+      "cautions": [
+        "Flag-pole plot (旗竿地): part of the headline 100.14m² is the access pole, so the effective building plot is smaller — measure it before pricing the land; car access/turning is constrained",
+        "Bay-side Gyotoku plain — check flood and liquefaction hazard maps",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/015.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l01",
+      "type": "land",
+      "district": "Hon-Kitakata 1",
+      "districtJa": "本北方1丁目",
+      "title": "Cheapest lot in this collection — 1986 house on site, 15 min from Onigoe",
+      "priceMan": 1700,
+      "priceFrom": false,
+      "landM2": 57.85,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Onigoe",
+      "stationJa": "鬼越",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 15,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "Lowest price in this Ichikawa collection by a wide margin",
+        "Full utilities listed: city gas, water, mains sewer",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A 1986 wooden house (58.24m², registry) stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "The access private road carries NO ownership share for this plot (私道の持分無し) — confirm passage and digging rights before buying",
+        "Small 57.85m² plot in a strict 50% / 100% low-rise zone",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z78943088/065555073/x1030Z78943088.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l02",
+      "type": "land",
+      "district": "Suwada 2",
+      "districtJa": "須和田2丁目",
+      "title": "Vacant Suwada plot by Ichikawa-Mama — a fifth of the headline area is setback",
+      "priceMan": 2940,
+      "priceFrom": false,
+      "landM2": 66.4,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Ichikawa-Mama",
+      "stationJa": "市川真間",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "Vacant land, vacant delivery (更地渡し) — no demolition cost",
+        "City gas and water listed",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Headline 86.57m² includes about 20.17m² of assumed setback / private-road area — effective buildable area is only about 66.40m², so the effective ¥/tsubo is far higher than the headline figure",
+        "Only road frontage is a narrow 2.7m road on the NW side — check the Building Standards Act road status and rebuilding position carefully",
+        "Sewer is a septic tank (浄化槽), not mains drainage",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21842490/000389230/x1030Z21842490.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l03",
+      "type": "land",
+      "district": "Sugano 2",
+      "districtJa": "菅野2丁目",
+      "title": "Small vacant corner lot 7 minutes from Sugano — setback inside the headline area",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 43.3,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Sugano",
+      "stationJa": "菅野",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 7,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant corner lot (角地) with immediate handover (即引渡し可), fronting an 11.0m NE road and a 2.7m south road, both public",
+        "Three stations usable: Sugano 7 min, Keisei-Yawata 12 min, JR Motoyawata 17 min",
+        "Full utilities: city gas, water, mains sewer; supermarket 4 min on foot",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Headline 47.93m² includes about 4.63m² of setback — effective area is about 43.30m², very small even for a compact house",
+        "The south front road is only about 2.7m wide",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21478826/006050B04/x1030Z21478826.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l04",
+      "type": "land",
+      "district": "Suwada 1",
+      "districtJa": "須和田1丁目",
+      "title": "117m² Suwada plot, seller demolishes — split zoning and a 42-2 road in front",
+      "priceMan": 3180,
+      "priceFrom": false,
+      "landM2": 115.32,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Ichikawa-Mama",
+      "stationJa": "市川真間",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 15,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "Seller demolishes and delivers vacant (売主にて解体更地渡し) — no demolition cost on the buyer",
+        "Generous 9.7m frontage onto the SE road; full utilities (city gas, water, mains sewer)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "The plot straddles two zones: the strip within about 10m of the SE road is 第1種住居地域 and the rest is 第1種低層住居専用地域 — the listing says coverage/FAR are area-weighted (it quotes an effective FAR of 160%), so the headline 50% / 100% must not be taken at face value",
+        "The SE front road (3.5m) is a Building Standards Act Art. 42-2 road; headline 117.72m² includes about 2.4m² of setback that cannot count as building site — effective area about 115.32m²",
+        "Height cap, shadow and landscape (景観法) restrictions noted",
+        "Verified on the listing page (information date 2026-10-18)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21126404/010174180/x1030Z21126404.html",
+        "verified": "detail",
+        "infoDate": "2026-10-18"
+      }
+    },
+    {
+      "id": "l05",
+      "type": "land",
+      "district": "Onocho 3",
+      "districtJa": "大野町3丁目",
+      "title": "2 minutes from Ichikawa-Ono Station — vacant-delivery plot on a 6m road",
+      "priceMan": 3200,
+      "priceFrom": false,
+      "landM2": 82.88,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Ichikawa-Ono",
+      "stationJa": "市川大野",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 2,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Closest station walk in this collection: 2 minutes to JR Ichikawa-Ono",
+        "Vacant delivery (更地渡し), immediate handover, 6m public road on the NE side with pavement on the west/south giving a corner-like openness",
+        "Generous 60% / 200% limits for an 82.88m² plot",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Only water is listed among utilities on the detail page (上水道) — confirm gas and sewer connections and any connection charges",
+        "Landscape Act (景観法), residential-land development regulation area and shadow restrictions noted",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21055501/063966063/x1030Z21055501.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l06",
+      "type": "land",
+      "district": "Kitakata 3",
+      "districtJa": "北方3丁目",
+      "title": "145m² vacant plot at the lowest ¥/tsubo here — 2.7m frontage, sloped site",
+      "priceMan": 3480,
+      "priceFrom": false,
+      "landM2": 145.86,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Onigoe",
+      "stationJa": "鬼越",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 11,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Lowest ¥/tsubo in this collection (¥78.9万, computed) for a large 145.86m² plot",
+        "Vacant, immediate handover, setback already completed (セットバック済); elementary school 3 min, shops within 9 min",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Frontage is only 2.7m onto the NW 4.8m road — a flag-pole style access that constrains design and car access",
+        "A level difference exists within the site (敷地内段差有) on this plateau-edge street — retaining/earthwork costs possible; check the cliff/ sediment-disaster (がけ条例) position",
+        "Sewer is a septic tank (浄化槽), not mains drainage; height district and Landscape Act restrictions noted",
+        "Verified on the listing page (information date 2026-10-18)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21085967/193572001/x1030Z21085967.html",
+        "verified": "detail",
+        "infoDate": "2026-10-18"
+      }
+    },
+    {
+      "id": "l07",
+      "type": "land",
+      "district": "Sugano 2",
+      "districtJa": "菅野2丁目",
+      "title": "117m² low-rise plot 5 minutes from Sugano — old house on site, provisional survey",
+      "priceMan": 3600,
+      "priceFrom": false,
+      "landM2": 117.51,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Sugano",
+      "stationJa": "菅野",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "Quiet low-rise street 5 minutes from Sugano Station; Keisei-Yawata 12 min and Toei Motoyawata 15 min also walkable",
+        "Listing states an effective residential area (有効宅地面積) of 117.51m²",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "An old vacant house stands on the land (古家有・空家), sold as-is (現況渡し) — demolition cost on the buyer",
+        "The stated area is from a provisional survey (仮測量) — it may change after a definitive survey",
+        "A private-road burden of about 21.02m² applies on top of the headline area, and the only road frontage is a 3.2m road on the east side",
+        "No mains sewer is listed (city gas and water only) — confirm drainage; absolute height limit 10m and shadow restrictions in this low-rise zone",
+        "Verified on the listing page (information date 2026-10-20)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z78647579/003647000/x1030Z78647579.html",
+        "verified": "detail",
+        "infoDate": "2026-10-20"
+      }
+    },
+    {
+      "id": "l08",
+      "type": "land",
+      "district": "Ichikawa 2",
+      "districtJa": "市川2丁目",
+      "title": "Small vacant plot 8 minutes from JR Ichikawa — setback required",
+      "priceMan": 3790,
+      "priceFrom": false,
+      "landM2": 49.92,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Ichikawa",
+      "stationJa": "市川",
+      "line": "JR Sobu Line",
+      "lineJa": "JR総武線",
+      "walkMin": 8,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "Vacant, regular-shaped plot (整形地) delivered vacant; two stations 8 min away — JR Ichikawa and Keisei Konodai",
+        "Ichikawa Elementary School is 1 minute on foot; full utilities (city gas, water, mains sewer)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Highest ¥/tsubo in this collection (¥251.0万, computed) for a small 49.92m² plot — a compact-house site only",
+        "Setback required (セットバック要) against the narrow NE 3.6m road (5.3m frontage), which will shrink the buildable area further",
+        "FAR is limited to 160% (below the zone's nominal 200%) and a height district applies",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21854569/100451199/x1030Z21854569.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l09",
+      "type": "land",
+      "district": "Tomihama 2",
+      "districtJa": "富浜2丁目",
+      "title": "147m² Myoden plot behind a 2m lane — two houses on site, flag strip inside the area",
+      "priceMan": 4380,
+      "priceFrom": false,
+      "landM2": 127.33,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Myoden",
+      "stationJa": "妙典",
+      "line": "Tokyo Metro Tozai Line",
+      "lineJa": "東京メトロ東西線",
+      "walkMin": 8,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Large plot for the Gyotoku/Myoden side at under ¥100万/坪 on the headline area",
+        "Full utilities (city gas, water, mains sewer); supermarket 3 min and a park 2 min on foot",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Headline 147.53m² includes about 20.2m² of flag-pole access strip (路地状敷地部分) — effective buildable area is about 127.33m², and the frontage onto the SW 6m road is only 2m, the legal minimum",
+        "Two wooden houses stand on the land, sold as-is (現況渡し) — demolition cost for both on the buyer",
+        "Low-lying Gyotoku plain south of the Edo River — check Ichikawa City's flood and liquefaction hazard maps for this address before buying",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z20006657/006050B03/x1030Z20006657.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l10",
+      "type": "land",
+      "district": "Yawata 6",
+      "districtJa": "八幡6丁目",
+      "title": "160m² Yawata plot 14 minutes from Keisei-Yawata — old house on site, 2.2m frontage",
+      "priceMan": 4450,
+      "priceFrom": false,
+      "landM2": 160.55,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Keisei-Yawata",
+      "stationJa": "京成八幡",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 80%",
+      "highlights": [
+        "Large 160.55m² plot in the quiet Yawata low-rise streets at ¥91.6万/坪 (computed)",
+        "Three lines usable: Keisei-Yawata 14 min, Toei Motoyawata 15 min, JR Motoyawata 18 min; supermarket 3 min, elementary school 4 min",
+        "Full utilities: city gas, water, mains sewer",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "An old house stands on the land (古家有), sold as-is (現況渡し) — demolition cost on the buyer",
+        "Frontage is only 2.2m onto the SW 5.4m road — a flag-pole style access despite the large plot behind it",
+        "Strict 40% / 80% low-rise limits cap the house size well below what the land area suggests",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21667050/006050B04/x1030Z21667050.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l11",
+      "type": "land",
+      "district": "Hon-Kitakata 1",
+      "districtJa": "本北方1丁目",
+      "title": "Big 187m² vacant plot by Onigoe — but a second listing warns an Art. 43 permit may be needed",
+      "priceMan": 4680,
+      "priceFrom": false,
+      "landM2": 187.57,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Onigoe",
+      "stationJa": "鬼越",
+      "line": "Keisei Main Line",
+      "lineJa": "京成本線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "Largest buildable plot in this collection: 187.57m², regular-shaped, vacant delivery and immediate handover from the seller",
+        "Frontage on two sides — west 4m road (15.7m) and SW 4m road (12.8m)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "MAJOR: a second agent's listing of this same 187.57m² plot (at ¥4,980–5,080万) states the frontage is NOT a Building Standards Act road and building requires an Art. 43-2-2 permit (法43条第2項第2号許可) — verify the road status with the city before relying on this seller listing's 4m-road description",
+        "Sewer is a septic tank (浄化槽), not mains drainage, despite the plot's size",
+        "The same land is listed by other agents at higher prices — confirm which listing/terms are current",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z20856122/168340001/x1030Z20856122.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "l12",
+      "type": "land",
+      "district": "Minami-Gyotoku 2",
+      "districtJa": "南行徳2丁目",
+      "title": "131m² vacant plot 8 minutes from Minami-Gyotoku — reached by a 2.2m private-road lane",
+      "priceMan": 4980,
+      "priceFrom": false,
+      "landM2": 131.47,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Minami-Gyotoku",
+      "stationJa": "南行徳",
+      "line": "Tokyo Metro Tozai Line",
+      "lineJa": "東京メトロ東西線",
+      "walkMin": 8,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant land delivered vacant (更地渡し) on a flat, quiet street; Socola Minami-Gyotoku shopping is about 300m away",
+        "Full utilities: city gas, water, mains sewer; measured area 131.35m² per the listing notes",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Access is flag-pole style: only 2.2–2.25m of frontage onto a non-through private road (通り抜け不可の私道) — car access is tight and vehicle-size limited, and a private-road area of 19.48m² is listed separately; confirm exactly what the price includes",
+        "Low-lying Gyotoku plain south of the Edo River — check Ichikawa City's flood and liquefaction hazard maps for this address before buying",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z73577055/006050B00/x1030Z73577055.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    }
+  ]
+}

@@ -1,0 +1,971 @@
+window.TADAIMA_DATA = {
+  "site": {
+    "name": "Tadaima!",
+    "nameJa": "ただいま！",
+    "edition": "Oyama",
+    "editionJa": "小山",
+    "researchedOn": "2026-10-23",
+    "area": "Oyama City, Tochigi",
+    "areaJa": "栃木県小山市"
+  },
+  "defaults": {
+    "budgetMan": 5000,
+    "maxWalkMin": 15
+  },
+  "benchmarks": {
+    "landPerTsuboManByStation": {
+      "Koganei": 8,
+      "Mamada": 10,
+      "Omoigawa": 4,
+      "Otabayashi": 7,
+      "Oyama": 18
+    },
+    "note": "Land benchmarks: adjusted in-zone residential ¥/tsubo by station, triangulated from MLIT transaction data via Utinokati (2023–2025 / multi-year) with 2026 official land-price points (Tochidai / Tochi-d): Oyama ~18 (raw catchment transactions 13.3 on 382 deals 2023–25, 12.8 multi-year, are NOT used — about 36% of classified city deals are urbanisation-control land at 6.7 and the average transacted lot is 136坪， so the raw average prices a market in-zone listings are not in; in-zone district transactions run 17.0–24.9 and 2026 official points 17–21 within ~2 km; the station-front official points at 43.6–45.6 and the commercial transaction average of 30.9 are commercial values and are rejected for residential), Mamada ~10 (transactions 8.6 on 183 deals; official total 9.74, 公示 10.86; station-front points 12.4–13.7 are the best streets, not the typical lot), Otabayashi ~7 as a low-confidence proxy (Tochidai's 12.04 average is rejected — its points sit in Oyama's Inuzuka/Nakakuki districts 3.2–3.7 km from Oyama station plus Yuki City; the only genuinely local official point is 6.84, flat for years; the station itself is in Yuki City, Ibaraki, serving Oyama's western fringe — Inuzuka/Nakakuki listings that name Otabayashi score against the Oyama-west band of ~16–17, not 7), Omoigawa ~4 (transactions 3.2 on just 16 deals; a single official point at 4.17, falling −1.56%/yr), Koganei ~8 as a proxy for Hagawa-district listings (transactions 6.7 on 50 deals; official 10.45; the station is in Shimotsuke City). Also rejected: Tochi-d's 2026 city 基準地価 average of 35.47, which rests on a single Arai point at 704.13 万円/坪， and a Totinokati series showing \"小山 住宅地 29.1\" — that is Natori City, Miyagi, not Oyama. Urbanisation-control land is scored only against control-zone comparables (city control average 6.7). Walk gradient is the flattest yet: about −5.6% per 10 minutes' walk on the city regression (transaction bands: ≤5 min 18.9 / 6–10 min 13.7 / 11–15 min 12.0 / 16+ min 10.7 — the raw band drop is zoning mix, not walking; the average transacted walk is 30.4 min). Used houses transacted at about ¥65万/tsubo city-wide (recent-3-year average, floor-area basis; Oyama station catchment 67.7, Mamada 56.3; districts 79–82 station-east/south down to 38.9 in the far west at Nakakuki). Official residential land prices rose +1.3% in the 2026 公示 survey — the fastest in Tochigi and the fifth straight rise — with commercial +2.0%; the growth is corridor-led and the Ryomo-line fringe is still falling."
+  },
+  "properties": [
+    {
+      "id": "h01",
+      "type": "house-new",
+      "district": "Akatsuki 3",
+      "districtJa": "暁3丁目",
+      "title": "New 3LDK by Noble Home — 8 min from Mamada, solar fitted",
+      "priceMan": 3080,
+      "priceFrom": false,
+      "landM2": 208.23,
+      "buildingM2": 97.61,
+      "layout": "3LDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 8,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Solar panels and air-conditioning included; roof balcony",
+        "Generous 208.2m² plot for a station-side new build; move-in ready"
+      ],
+      "cautions": [
+        "Listing copy elsewhere on the same page says a 9-minute walk — scored here on the 8 minutes in its data table",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h02",
+      "type": "house-new",
+      "district": "Otome 1",
+      "districtJa": "乙女1丁目",
+      "title": "New 4LDK (Five Is Home) on a 226m² plot — parking for 6",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 226.52,
+      "buildingM2": 109.3,
+      "layout": "4LDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 11,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Largest new-build plot here (226.5m², registered) with parking for up to 6 cars",
+        "All rooms 6 tatami or larger; seismic-damping high-performance build; one of 6 units"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h03",
+      "type": "house-new",
+      "district": "Higashi-Mamada 2",
+      "districtJa": "東間々田2丁目",
+      "title": "New 4LDK (Five Is Home) — all rooms south-facing, SW road",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 228.25,
+      "buildingM2": 112.05,
+      "layout": "4LDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 12,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "All rooms face south on a south-west road; near the old Route 4 for car access",
+        "Two units; plots run 202.17–228.25m² and buildings 107.92–112.05m² — figures here are the larger unit"
+      ],
+      "cautions": [
+        "Portal feeds disagree on the walk (12 min here, 13–14 min on LIFULL HOME'S) — verify on the ground",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h04",
+      "type": "house-new",
+      "district": "Otome",
+      "districtJa": "大字乙女",
+      "title": "New development from ¥2,760万 (Grandy House Gran Crest Mamada-eki Minami II)",
+      "priceMan": 2760,
+      "priceFrom": true,
+      "landM2": 204.88,
+      "buildingM2": 114.27,
+      "layout": "3LDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 14,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Cheapest new-build entry in this collection; large 38-unit development with design performance evaluation",
+        "'Mega-living' large-LDK concept; all-electric, parking for 2+"
+      ],
+      "cautions": [
+        "Price is 'from' — units run to ¥3,010万; layouts run 3LDK to 4LDK+S and buildings 114.27–119.13m², so the unit at this price differs from the largest figures",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h05",
+      "type": "house-new",
+      "district": "Otome",
+      "districtJa": "大字乙女",
+      "title": "New 4LDK (Grandy House Gran Excella Otome 5) — final unit",
+      "priceMan": 2790,
+      "priceFrom": false,
+      "landM2": 208.17,
+      "buildingM2": 112.61,
+      "layout": "4LDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Four bedrooms upstairs — one room per family member; design performance evaluation obtained",
+        "Move-in ready; marketed as the last unit of the phase"
+      ],
+      "cautions": [
+        "At the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h06",
+      "type": "house-used",
+      "district": "Ekihigashi-dori 1",
+      "districtJa": "駅東通り1丁目",
+      "title": "Used 4LDK (2004) — big 124m² house 9 min from Oyama Station",
+      "priceMan": 2550,
+      "priceFrom": false,
+      "landM2": 154.1,
+      "buildingM2": 124.2,
+      "layout": "4LDK",
+      "station": "Oyama",
+      "stationJa": "小山",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 9,
+      "built": "May 2004",
+      "ageYears": 22,
+      "highlights": [
+        "Largest used house near Oyama Station in this set (124.2m²) on the Shinkansen side of the city",
+        "South garden, corner plot, floor heating, parking for 2"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_tochigi/09208/024.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h07",
+      "type": "house-used",
+      "district": "Ekihigashi-dori 1",
+      "districtJa": "駅東通り1丁目",
+      "title": "Used 4DK (1963) 11 min from Oyama Station — judge it as land + location",
+      "priceMan": 880,
+      "priceFrom": false,
+      "landM2": 89.92,
+      "buildingM2": 75.2,
+      "layout": "4DK",
+      "station": "Oyama",
+      "stationJa": "小山",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 11,
+      "built": "May 1963",
+      "ageYears": 63,
+      "highlights": [
+        "Genuinely short walk to a Shinkansen hub at under ¥1,000万",
+        "Listing also pitches business/investment use; sold in current condition"
+      ],
+      "cautions": [
+        "Built May 1963 — pre-1981 seismic standard; at this age the structure contributes little, so judge it mainly as land + location",
+        "Small 89.9m² plot",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/101/2101080.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h08",
+      "type": "house-used",
+      "district": "Hanagaki-cho 2",
+      "districtJa": "花垣町2丁目",
+      "title": "Used 3LDK (1976) at ¥350万 — no-rebuild, defect liability waived, experts only",
+      "priceMan": 350,
+      "priceFrom": false,
+      "landM2": 171.27,
+      "buildingM2": 92.79,
+      "layout": "3LDK",
+      "station": "Oyama",
+      "stationJa": "小山",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 12,
+      "built": "Jul 1976",
+      "ageYears": 50,
+      "highlights": [
+        "Cheapest house in this collection, 12 min from Oyama Station",
+        "Marketed as a rental-investment renovation project in a first-class residential zone"
+      ],
+      "cautions": [
+        "No rebuild permitted (再建築不可) and the seller's defect liability is waived (契約不適合責任免責) — sold as-is, experts only",
+        "Built Jul 1976 — pre-1981 seismic standard",
+        "Feeds disagree on the land area: the index headline says 171.27m² while the listing text says 223.53m² including a 52.26m² flag-pole strip — the effective plot is ~171.27m²; price the land accordingly",
+        "Portal feeds disagree on the price (¥320万–¥420万 across feeds) — ¥350万 is the figure on this page",
+        "West-side district toward the Omoi River — check the Oyama City flood hazard map before viewing",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/ensen/110/2110010.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "h09",
+      "type": "house-used",
+      "district": "Otome 3",
+      "districtJa": "乙女3丁目",
+      "title": "Used 3SLDK (1988) at ¥780万 — 114m² house on 199m², 7 min from Mamada",
+      "priceMan": 780,
+      "priceFrom": false,
+      "landM2": 198.89,
+      "buildingM2": 114.27,
+      "layout": "3SLDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 7,
+      "built": "Feb 1988",
+      "ageYears": 38,
+      "highlights": [
+        "Outstanding space for the price: 114.3m² house on a 198.9m² south-road plot",
+        "All rooms 6 tatami or larger with storage; near Route 4 and daily shopping"
+      ],
+      "cautions": [
+        "1988 structure at a 1988 price — the low asking price suggests condition or other issues the index page does not explain; inspect carefully",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/101/2101075.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h10",
+      "type": "house-used",
+      "district": "Akatsuki 2",
+      "districtJa": "暁2丁目",
+      "title": "Used 4DK (1978) at ¥480万, 6 min from Mamada — disclosure items, sold as-is",
+      "priceMan": 480,
+      "priceFrom": false,
+      "landM2": 76.45,
+      "buildingM2": 74.41,
+      "layout": "4DK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 6,
+      "built": "Oct 1978",
+      "ageYears": 48,
+      "highlights": [
+        "Shortest walk in this collection (6 min) at the lowest Mamada-side price",
+        "Unusual split-level house with an inner garage on a small, neatly subdivided street; city gas"
+      ],
+      "cautions": [
+        "Built Oct 1978 — pre-1981 seismic standard",
+        "The listing flags disclosure items (告知事項あり) and, per the SUUMO feed text, is sold in current condition with defect liability waived and areas per the public record (現況有姿・契約不適合免責・公簿売買) — experts only",
+        "Very small 76.45m² plot and parking for only 1 car (size-dependent)",
+        "Portal feeds disagree on the price (¥480万 here, ¥500万 on another feed)",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3002/ensen/101/2101075.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "h11",
+      "type": "house-used",
+      "district": "Akatsuki 3",
+      "districtJa": "暁3丁目",
+      "title": "Used 3LDK (1982), renovated — 7 min from Mamada",
+      "priceMan": 1348,
+      "priceFrom": false,
+      "landM2": 164.43,
+      "buildingM2": 73.69,
+      "layout": "3LDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 7,
+      "built": "Jun 1982",
+      "ageYears": 44,
+      "highlights": [
+        "Renovation completed (floors, fittings, water systems, exterior/roof paint, layout change); immediate viewing",
+        "Supermarket and convenience store within a 10-minute walk; south road, parking for 2"
+      ],
+      "cautions": [
+        "Portal feeds disagree on the walk (7 min here, 12 min on LIFULL HOME'S) and on the layout (3LDK after renovation here, 5DK on LIFULL) — scored here on this page's figures; verify on the ground",
+        "Compact 73.7m² building despite the 5DK origins",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3002/ensen/101/2101075.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h12",
+      "type": "house-used",
+      "district": "Akatsuki 2",
+      "districtJa": "暁2丁目",
+      "title": "Used 4LDK (1994), renovated — 116m² house 8 min from Mamada",
+      "priceMan": 1699,
+      "priceFrom": false,
+      "landM2": 165.03,
+      "buildingM2": 116.34,
+      "layout": "4LDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 8,
+      "built": "Mar 1994",
+      "ageYears": 32,
+      "highlights": [
+        "Big 116.3m² renovated family house with the shortest practical walk on the Mamada side",
+        "Renovated / immediate handover per the listing"
+      ],
+      "cautions": [
+        "Portal feeds disagree on the price: ¥1,699万 on this page, ¥1,999万 on an older goo feed for the same house — confirm the current asking price first",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_tochigi/09208/024.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h13",
+      "type": "house-used",
+      "district": "Mamada",
+      "districtJa": "大字間々田",
+      "title": "Used 6DK (1982) on a corner plot — 11 min from Mamada",
+      "priceMan": 1400,
+      "priceFrom": false,
+      "landM2": 198,
+      "buildingM2": 116.76,
+      "layout": "6DK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 11,
+      "built": "Oct 1982",
+      "ageYears": 44,
+      "highlights": [
+        "Large 116.8m² house on a 198m² corner plot in a quiet residential street",
+        "Supermarket within 800m; carport fitted"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/chuko/tochigi/mamada_00934-st/list/",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h14",
+      "type": "house-used",
+      "district": "Higashi-Mamada 2",
+      "districtJa": "東間々田2丁目",
+      "title": "Used 3LDK (1982) on 200m² — renovation completed Mar 2026",
+      "priceMan": 1369,
+      "priceFrom": false,
+      "landM2": 200.29,
+      "buildingM2": 101.02,
+      "layout": "3LDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 12,
+      "built": "Feb 1982",
+      "ageYears": 44,
+      "highlights": [
+        "Full renovation completed Mar 2026 on a generous 200.3m² plot; all rooms 6 tatami or larger",
+        "City gas, parking for 2, shopping within walking distance"
+      ],
+      "cautions": [
+        "Portal feeds disagree on the price: ¥1,369万 on this page, ¥1,399万 on LIFULL HOME'S for the same house",
+        "The structure is from Feb 1982 despite the 2026 renovation — check what the works actually covered",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/101/2101075.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h15",
+      "type": "house-used",
+      "district": "Otome 1",
+      "districtJa": "乙女1丁目",
+      "title": "Used 3SLDK built 2016 — nearly modern, solar + all-electric, at the walk limit",
+      "priceMan": 2449,
+      "priceFrom": false,
+      "landM2": 240.29,
+      "buildingM2": 115.23,
+      "layout": "3SLDK",
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 15,
+      "built": "Jan 2016",
+      "ageYears": 10,
+      "highlights": [
+        "Newest used house here (built Jan 2016) on the biggest used plot (240.3m²); solar and all-electric",
+        "Walk-in closet, parking for 3; renovation works listed as completing Jul 2026"
+      ],
+      "cautions": [
+        "At the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_tochigi/09208/109.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l01",
+      "type": "land",
+      "district": "Hongo-cho 2",
+      "districtJa": "本郷町2丁目",
+      "title": "122m² vacant plot 9 minutes from Oyama — cheapest station-close land here",
+      "priceMan": 498,
+      "priceFrom": false,
+      "landM2": 122.54,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Oyama",
+      "stationJa": "小山",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "近隣商業地域",
+      "coverageFar": "80% / 200%",
+      "highlights": [
+        "Vacant land (更地) with mains sewer and city gas",
+        "No building conditions — any house builder allowed",
+        "Oyama is a Shinkansen hub — Tokyo in about 42 minutes",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Near-commercial zoning (近隣商業地域) by the station — flexible, but expect a busier street than a purely residential block",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tochigi/09208/108.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l02",
+      "type": "land",
+      "district": "Shiroyama-cho 1",
+      "districtJa": "城山町1丁目",
+      "title": "Large 350m² commercial-zone plot 9 minutes from Oyama station",
+      "priceMan": 1910,
+      "priceFrom": false,
+      "landM2": 350.72,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Oyama",
+      "stationJa": "小山",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "商業地域",
+      "coverageFar": "80% / 400%",
+      "highlights": [
+        "Very large 350.7m² plot for the station district",
+        "Vacant (更地), immediate handover (即引渡し可), mains sewer",
+        "No building conditions",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Commercial zoning (商業地域) in the station-front district — central and flexible, but not a quiet residential street",
+        "Portals disagree on the walk: 7 min on one goo feed, 9 min on another — 9 min used here",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産 (goo住宅・不動産)",
+        "url": "https://house.ocn.ne.jp/sp/tochi/ensen/108/2108010.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l03",
+      "type": "land",
+      "district": "Mitsumine 1",
+      "districtJa": "三峯1丁目",
+      "title": "171m² vacant plot 10 minutes from Oyama at the lowest ¥/tsubo near the station",
+      "priceMan": 390,
+      "priceFrom": false,
+      "landM2": 171.9,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Oyama",
+      "stationJa": "小山",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 10,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant land (更地), mains sewer — smooth handover per the listing",
+        "No building conditions — any house builder allowed",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Price conflict on the same index page: the identical 171.9m² plot is also listed at ¥480万 by another feed — confirm which price is current before relying on ¥390万",
+        "Check the Oyama City hazard map for Omoi River (思川) / Tagawa (田川) flood-inundation zones before purchase — not confirmed on the index page",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tochigi/09208/108.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l04",
+      "type": "land",
+      "district": "Ekihigashi-dori 3",
+      "districtJa": "駅東通り3丁目",
+      "title": "Sekisui House subdivision plot 12 minutes from Oyama — building condition attached",
+      "priceMan": 1890,
+      "priceFrom": false,
+      "landM2": 173.96,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Oyama",
+      "stationJa": "小山",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Planned subdivision (コモンステージ小山駅東通り3丁目III) — 3 of 7 plots on sale",
+        "Shinkansen hub station — Tokyo in about 42 minutes"
+      ],
+      "cautions": [
+        "Building condition attached (建築条件付) — you must build with Sekisui House",
+        "Price and area are ranges across plots (¥1,890万〜1,998万 / 173.96〜247.14m²); this record uses the cheapest, smallest plot",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (OCN feed)",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6009/ensen/108/2108020.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l05",
+      "type": "land",
+      "district": "Mitsumine 1",
+      "districtJa": "三峯1丁目",
+      "title": "Huge 418m² plot 13 minutes from Oyama — building condition and a building on site",
+      "priceMan": 1998,
+      "priceFrom": false,
+      "landM2": 418,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Oyama",
+      "stationJa": "小山",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Exceptionally large 418m² plot this close to Oyama station",
+        "Flat land (平坦地), mains sewer, immediate handover (即引渡し可)"
+      ],
+      "cautions": [
+        "Building condition attached (建築条件付)",
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost and effort on the buyer",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tochigi/09208/108.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "l06",
+      "type": "land",
+      "district": "Hachiman-cho 2",
+      "districtJa": "八幡町2丁目",
+      "title": "223m² south-road plot 13 minutes from Oyama — agent copy says building not possible",
+      "priceMan": 1200,
+      "priceFrom": false,
+      "landM2": 223.55,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Oyama",
+      "stationJa": "小山",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant (更地) on a south road in a quiet residential street",
+        "No building conditions stated",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "MAJOR: the agent's own text ends with 【建築不可】 (building not possible) — do not treat this as a buildable residential lot unless the agent confirms buildability in writing; likely a permit/road-access defect behind the wording",
+        "Contradictory listing copy (marketed as a home site, then flagged 建築不可) — written confirmation essential",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tochigi/09208/103.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "l07",
+      "type": "land",
+      "district": "Akatsuki 1",
+      "districtJa": "暁1丁目",
+      "title": "148m² regular-shaped plot just 5 minutes from Mamada — shortest walk in this set",
+      "priceMan": 700,
+      "priceFrom": false,
+      "landM2": 148.83,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Closest station walk in this collection — 5 minutes to Mamada",
+        "Vacant (更地), regular-shaped (整形地), mains sewer",
+        "No building conditions",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/101/2101075.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l08",
+      "type": "land",
+      "district": "Akatsuki 3",
+      "districtJa": "暁3丁目",
+      "title": "Seller-listed 198m² plot 6 minutes from Mamada, immediate handover",
+      "priceMan": 680,
+      "priceFrom": false,
+      "landM2": 198.34,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 6,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Seller listing (売主) — no agency commission in principle",
+        "Vacant (更地), immediate handover (即引渡し可), about 60 tsubo",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/la/special/4002/ensen/101/2101075.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l09",
+      "type": "land",
+      "district": "Otome 1",
+      "districtJa": "乙女1丁目",
+      "title": "Low-rise-zone corner plot 11 minutes from Mamada — building condition attached",
+      "priceMan": 1080,
+      "priceFrom": false,
+      "landM2": 229.41,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 11,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Corner lot (角地) on a south road in a low-rise residential zone",
+        "Vacant (更地), mains sewer"
+      ],
+      "cautions": [
+        "Building condition attached (建築条件付) — builder is designated by the seller",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/tochi/area_tochigi/09208/109.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l10",
+      "type": "land",
+      "district": "Minami-Otome 1",
+      "districtJa": "南乙女1丁目",
+      "title": "Very large 672m² flat plot 12 minutes from Mamada, no building conditions",
+      "priceMan": 2680,
+      "priceFrom": false,
+      "landM2": 672,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Huge 672m² (about 203 tsubo) flat plot — room for a large house, garden and parking, or a future split",
+        "Vacant (更地・平坦地), mains sewer, no building conditions",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Oversized for a single house — price reflects the full 672m²; check subdivision/development-permit implications if splitting",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/la/special/4001/ensen/159/2159300.html?p=2",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l11",
+      "type": "land",
+      "district": "Mamada",
+      "districtJa": "大字間々田",
+      "title": "451m² near-commercial plot 14 minutes from Mamada at a low ¥/tsubo",
+      "priceMan": 980,
+      "priceFrom": false,
+      "landM2": 451.5,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "近隣商業地域",
+      "coverageFar": "80% / 200%",
+      "highlights": [
+        "Low ¥/tsubo for a station-walk plot; 451.5m² suits a house plus parking or a small shop-home",
+        "Vacant (更地), mains sewer, immediate handover (即引渡し可)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Near-commercial zoning (近隣商業地域) and a quasi-fire zone (準防火区域) — fire-code construction costs apply",
+        "Register-based sale (公簿売買) across two lot numbers (1159-2: 199.94m² + 1161-2: 251.56m²) — no measured-area guarantee",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/101/2101075.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l12",
+      "type": "land",
+      "district": "Mamada",
+      "districtJa": "大字間々田",
+      "title": "Compact 100m² low-rise plot at Mamada's 15-minute limit — building on site",
+      "priceMan": 430,
+      "priceFrom": false,
+      "landM2": 100.43,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mamada",
+      "stationJa": "間々田",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 15,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 60%",
+      "highlights": [
+        "Cheapest Mamada-side lot; about 30 tsubo in a quiet low-rise zone",
+        "Mamada Elementary about 7 minutes on foot per the listing; no building conditions",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "Tight low-rise controls (40% coverage / 60% FAR) on a small 100.43m² plot — house plus parking will be tight",
+        "At the brief's walk limit (15 min)",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産 (goo住宅・不動産)",
+        "url": "https://house.ocn.ne.jp/sp/tochi/area_tochigi/09208/024.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    }
+  ]
+};

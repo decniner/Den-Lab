@@ -1,0 +1,1055 @@
+window.TADAIMA_DATA = {
+  "site": {
+    "name": "Tadaima!",
+    "nameJa": "ただいま！",
+    "edition": "Mito",
+    "editionJa": "水戸",
+    "researchedOn": "2026-10-23",
+    "area": "Mito City, Ibaraki",
+    "areaJa": "茨城県水戸市"
+  },
+  "defaults": {
+    "budgetMan": 5000,
+    "maxWalkMin": 15
+  },
+  "benchmarks": {
+    "landPerTsuboManByStation": {
+      "Akatsuka": 11,
+      "Higashi-Mito": 8,
+      "Hitachi-Aoyagi": 5,
+      "Hitachi-Tsuda": 6,
+      "Kairakuen": 14,
+      "Mito": 14,
+      "Tsunezumi": 7,
+      "Uchihara": 9
+    },
+    "note": "Land benchmarks: average transacted ¥/tsubo by station, MLIT transaction data via Utinokati (2023–2025 standardised unless noted), triangulated against 2026 official residential points: Mito scored at ~14 in-zone (the standardised transaction average of 11.7 on 420 deals is dragged down by the 382 urbanisation-control deals in the city set transacting at 7.2 and by 60–90-minute car catchments, and the official residential station average of 16.8 on 49 points is the ceiling, not the transaction level — established residential points themselves print 13.3 at Motoyoshida, 16.1 at Kami-Mito and 17.8 at Senba; the all-use / commercial figures are not used at all: Mito station-front commercial official is 33.5 and the top commercial points, Miyamachi at 67.4 and Izumicho at 41.0 in the 2026 基準地価, are a different asset), Akatsuka ~11 (transactions 8.9 on 239 deals; official residential 12.6 on 31 points; near-station points 12.0–14.7), Uchihara scored at ~9 in-zone, NOT its transaction print of 4.9 on 61 deals (its catchment runs to large fringe and control-zone lots; the station-front official point at 5.8 minutes is 10.2 and the Uchihara district transaction averages are 9.6–10.0, while Totinokati's wide-catchment official residential average of 7.6 folds in farm-fringe points — in-zone streets near the station sit at ~9), Higashi-Mito ~8 as a flagged proxy, NOT its transaction print of 1.1 on just 6 deals (a thin, fringe-dragged print that says nothing about the built-up streets 3.8 km from Mito station; no isolated official station average was verified in this pass, so the figure is interpolated between Mito in-zone and Tsunezumi and must be treated as provisional), Tsunezumi ~7 (transactions 6.9 on 10 deals and official residential 7.1 on 3 points agree — thin but consistent). Kairakuen is a temporary, plum-season-only station and is scored as Mito; the Suigun Line has no station in Mito City other than Mito itself. Walk bands apply Mito's exceptionally flat observed gradient — Utinokati's regression puts the fall at only ~0.9% by a 10-minute walk, the average transacted land walk is ~37 minutes and the average transacted house walk ~32 minutes; this is a car-and-bus city and walk minutes must be weighted gently, exactly as in Takasaki and the opposite of Tachikawa. Used houses transacted at about ¥61万/tsubo city-wide (floor-area basis; Utinokati city average information: ¥2,897万 average price, average age 19.5 years, 5,199 deals in the all-period area table). Official residential land prices were flat in 2026 (公示-based station averages: Mito +0.0%, Akatsuka +0.0%, Uchihara −0.1%; 基準地価 city average +0.2 to +0.5% depending on averaging method, with rises confined to station-front commercial points at +1.8 to +2.5% and fringe residential points at −0.8 to −0.9%) — a stable regional capital, not a rising Tokyo suburb. Two Suigun Line stations in Hitachinaka City also serve Mito districts in this collection and are scored as documented exceptions: Hitachi-Aoyagi ~5 as a flagged proxy, NOT its single-deal prints of 1.0 (2025, 1 deal) and 2.0 (2024, 1 deal) or its all-period standardised 3.2 on 25 deals (its walkable catchment — Mito's Aoyagi-cho and Hitachinaka's Edagawa, in the Naka River lowland — is entirely urbanisation-control, every zoning-attributed deal in the station set is control-zoned, and no in-zone figure exists to measure; ~5 is the level for buildable lots in the established anyone-may-build pockets, resting on the 2026 official residential points at Aoyagi-cho 7.7 and Edagawa 4.4 and on current buildable-lot asking prices centred around 5), Hitachi-Tsuda ~6 (the station average-information of 3.6 on 113 deals and the Oaza Tsuda district standardised 3.8 are dragged down by 200-tsubo-plus control and farmland-scale lots printing at 0.0–0.3; residential-sized buildable deals in 2023–2025 cluster at 4.7–8.1 with a median around 5.6, and the 2026 official point in Oaza Tsuda is 6.38; the genuinely in-zone Ichige subdivisions on the Katsuta side, transacting around 12.5, are a different product and are checked individually, never blended into the station figure)."
+  },
+  "properties": [
+    {
+      "id": "h01",
+      "type": "house-new",
+      "district": "Shiraume 4",
+      "districtJa": "白梅4丁目",
+      "title": "New 3LDK development (3 units) — large 120m² houses on 204m² plots, 15 min from Mito Station",
+      "priceMan": 3490,
+      "priceFrom": true,
+      "landM2": 203.77,
+      "buildingM2": 120.07,
+      "layout": "3LDK",
+      "station": "Mito",
+      "stationJa": "水戸",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Unusually large new houses (120.1m²) on 203.8m² plots close to the centre",
+        "Long-term quality housing (長期優良住宅), parking for 3 cars, walk-in closets"
+      ],
+      "cautions": [
+        "Price is 'from' — units run to ¥3,590万",
+        "At the 15-minute walk limit of this collection",
+        "Shiraume / Senba Lake side of Mito — check the city flood hazard map for the Naka River / Senba Lake area before buying",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h02",
+      "type": "house-new",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "New 3LDK–4LDK development (3 units) — all rooms south-facing, 10 min from Akatsuka Station",
+      "priceMan": 2999,
+      "priceFrom": true,
+      "landM2": 197.91,
+      "buildingM2": 104.47,
+      "layout": "3LDK",
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 10,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "All rooms south-facing; 20-post LDK, city gas",
+        "Generous ~198m² plots, parking for 2+ cars"
+      ],
+      "cautions": [
+        "Price is 'from' — units run to ¥3,080万",
+        "Listed by several agents at the same prices — the same development appears multiple times across feeds",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h03",
+      "type": "house-new",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "New 4LDK with roof balcony (2 units) — compact plots, immediate move-in",
+      "priceMan": 2899,
+      "priceFrom": false,
+      "landM2": 137.7,
+      "buildingM2": 108.88,
+      "layout": "4LDK",
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 13,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Cheapest new house within a station walk in this collection",
+        "Roof balcony, city gas, immediate move-in (即入居可)"
+      ],
+      "cautions": [
+        "Smaller 137.7m² plot than the other Akatsuka 1 developments — compare carefully, several new developments share this district name",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h04",
+      "type": "house-new",
+      "district": "Uchihara-machi",
+      "districtJa": "内原町",
+      "title": "New 3LDK–4LDK development (3 units) — big plots by Uchihara Station, from ¥2,699万",
+      "priceMan": 2699,
+      "priceFrom": true,
+      "landM2": 211.12,
+      "buildingM2": 102.34,
+      "layout": "3LDK",
+      "station": "Uchihara",
+      "stationJa": "内原",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 10,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Lowest 'from' price for a new house in this collection, on 211m²+ plots",
+        "Near Aeon Mall Mito-Uchihara; parking for 2+ cars"
+      ],
+      "cautions": [
+        "Price is 'from' — units run to ¥3,199万 and layouts/areas vary across the range",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h05",
+      "type": "house-new",
+      "district": "Nakamaru-cho",
+      "districtJa": "中丸町",
+      "title": "New 5LDK model house (Gran Excella) — 115.5m² house on a 193.5m² plot",
+      "priceMan": 3520,
+      "priceFrom": false,
+      "landM2": 193.49,
+      "buildingM2": 115.51,
+      "layout": "5LDK",
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 13,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Rare new 5LDK — room for multi-generational living or a home office",
+        "Housing performance evaluation included; immediate move-in"
+      ],
+      "cautions": [
+        "Priced as a show/model house — confirm what fixtures and specification are included",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h06",
+      "type": "house-new",
+      "district": "Himeko 2",
+      "districtJa": "姫子2丁目",
+      "title": "New 3LDK (Tama Town Ume-ga-oka) — long-term quality housing, all-electric with roof balcony",
+      "priceMan": 3540,
+      "priceFrom": false,
+      "landM2": 164.18,
+      "buildingM2": 98.53,
+      "layout": "3LDK",
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Long-term quality housing (長期優良住宅) with a 20-year initial guarantee campaign",
+        "All-electric, roof balcony, parking for 2+ cars"
+      ],
+      "cautions": [
+        "At the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h07",
+      "type": "house-used",
+      "district": "Miyamachi 1",
+      "districtJa": "宮町1丁目",
+      "title": "Used 4LDK (2014) — south-facing, 12 min from Mito Station in the city centre",
+      "priceMan": 2850,
+      "priceFrom": false,
+      "landM2": 132.78,
+      "buildingM2": 96.88,
+      "layout": "4LDK",
+      "station": "Mito",
+      "stationJa": "水戸",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 12,
+      "built": "Jun 2014",
+      "ageYears": 12,
+      "highlights": [
+        "One of very few used houses within walking distance of Mito Station itself",
+        "South-facing on a wide 7.9m front road; parking for 2, immediate handover"
+      ],
+      "cautions": [
+        "Portal feeds disagree on price (¥2,750万 vs ¥2,850万 for the same house) — scored here on the higher figure; confirm the current price",
+        "Compact 132.8m² plot for a 4LDK",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h08",
+      "type": "house-used",
+      "district": "Uchihara 1",
+      "districtJa": "内原1丁目",
+      "title": "Used 2SLDK (2020) — former model house with wood stove and garage, 5 min from Uchihara Station",
+      "priceMan": 4180,
+      "priceFrom": false,
+      "landM2": 256.51,
+      "buildingM2": 125.86,
+      "layout": "2SLDK",
+      "station": "Uchihara",
+      "stationJa": "内原",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 5,
+      "built": "Jan 2020",
+      "ageYears": 6,
+      "highlights": [
+        "Shortest walk in this collection (5 min) and a nearly-new 2020 build",
+        "Wood stove, garage and wood deck; Aeon Mall Mito-Uchihara ~220m away"
+      ],
+      "cautions": [
+        "Priced at the top of the used set — the value leans on condition and the model-house specification",
+        "2SLDK layout despite the 125.9m² floor area — check the room configuration suits you",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h09",
+      "type": "house-used",
+      "district": "Uchihara-machi",
+      "districtJa": "内原町",
+      "title": "Used 3LDK (2004) — Taisei Construction custom home with vaulted living room, 9 min from Uchihara",
+      "priceMan": 2460,
+      "priceFrom": false,
+      "landM2": 160.31,
+      "buildingM2": 101.56,
+      "layout": "3LDK",
+      "station": "Uchihara",
+      "stationJa": "内原",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 9,
+      "built": "Apr 2004",
+      "ageYears": 22,
+      "highlights": [
+        "Builder custom home (Taisei 'Kukan-O' series) — solid-wood floors, vaulted living room, whole-house ventilation",
+        "Supermarket and convenience store ~2 min walk; carport included"
+      ],
+      "cautions": [
+        "Bespoke specification can complicate renovation and resale comparisons",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h10",
+      "type": "house-used",
+      "district": "Uchihara-machi",
+      "districtJa": "内原町",
+      "title": "Used 6LDK (1991) on a huge 561.9m² plot — repainted 2016, plans and records kept",
+      "priceMan": 2290,
+      "priceFrom": false,
+      "landM2": 561.85,
+      "buildingM2": 149.1,
+      "layout": "6LDK",
+      "station": "Uchihara",
+      "stationJa": "内原",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 10,
+      "built": "Nov 1991",
+      "ageYears": 34,
+      "highlights": [
+        "Enormous 561.9m² plot and 149.1m² house — space no new build here matches at this price",
+        "Original and alteration plans plus repair/inspection records retained; parking for 3+"
+      ],
+      "cautions": [
+        "1991 structure — budget for ongoing maintenance despite the 2016 repaint",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h11",
+      "type": "house-used",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "Used 5LDK (1998) with sunroom — 148.6m² house, 8 min from Akatsuka Station",
+      "priceMan": 2570,
+      "priceFrom": false,
+      "landM2": 262.99,
+      "buildingM2": 148.64,
+      "layout": "5LDK",
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 8,
+      "built": "May 1998",
+      "ageYears": 28,
+      "highlights": [
+        "Big family house (148.6m² on 263.0m²) with a sunroom — flexible rooms for work or hobbies",
+        "Shopping within walking distance; city gas, parking for 2"
+      ],
+      "cautions": [
+        "1998 structure — check roof/exterior maintenance history",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h12",
+      "type": "house-used",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "Used 4LDK (1985) — 112.2m² house on a 226.7m² plot, 10 min from Akatsuka Station",
+      "priceMan": 1580,
+      "priceFrom": false,
+      "landM2": 226.65,
+      "buildingM2": 112.2,
+      "layout": "4LDK",
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 10,
+      "built": "Oct 1985",
+      "ageYears": 41,
+      "highlights": [
+        "Low price for a station-walk plot of this size in Akatsuka 1",
+        "Immediate handover (即入居可); parking for 2"
+      ],
+      "cautions": [
+        "1985 structure — 41 years old; judge condition carefully and budget for renewal of water systems",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_ibaragi/08201/117.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h13",
+      "type": "house-used",
+      "district": "Miwa 3",
+      "districtJa": "見和3丁目",
+      "title": "Used 5LDK (1986) — exterior re-clad 2023, boiler replaced 2024",
+      "priceMan": 1580,
+      "priceFrom": false,
+      "landM2": 200.36,
+      "buildingM2": 135.99,
+      "layout": "5LDK",
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 13,
+      "built": "Jul 1986",
+      "ageYears": 40,
+      "highlights": [
+        "Large 136.0m² house on a 200.4m² plot in a quiet residential area",
+        "Exterior siding replaced 2023 and water heater replaced 2024; parking for 2"
+      ],
+      "cautions": [
+        "1986 structure — the recent works are exterior/equipment only, per the listing",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_ibaragi/08201/102.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h14",
+      "type": "house-used",
+      "district": "Aoyagi-cho",
+      "districtJa": "青柳町",
+      "title": "Used 1SLDK flat (2012) by Ichijo Komuten — renovated, 2 min from Hitachi-Aoyagi Station",
+      "priceMan": 2180,
+      "priceFrom": false,
+      "landM2": 340.11,
+      "buildingM2": 92.09,
+      "layout": "1SLDK",
+      "station": "Hitachi-Aoyagi",
+      "stationJa": "常陸青柳",
+      "line": "JR Suigun Line",
+      "lineJa": "JR水郡線",
+      "walkMin": 2,
+      "built": "Feb 2012",
+      "ageYears": 14,
+      "highlights": [
+        "Shortest station walk here after Uchihara (2 min) — a single-storey Ichijo Komuten house on a 340.1m² plot",
+        "Renovation completed; all-electric, parking for 2"
+      ],
+      "cautions": [
+        "Suigun Line services are infrequent compared with the Joban Line — check the timetable for commuting",
+        "1SLDK layout will not suit larger families without alteration",
+        "Aoyagi-cho sits by the Naka River — check the city flood hazard map before buying",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3003/ensen/103/2103020.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h15",
+      "type": "house-used",
+      "district": "Aoyagi-cho",
+      "districtJa": "青柳町",
+      "title": "Used 4LDK (1978) under renovation — 6 min from Hitachi-Tsuda Station",
+      "priceMan": 1699,
+      "priceFrom": false,
+      "landM2": 195.02,
+      "buildingM2": 102.45,
+      "layout": "4LDK",
+      "station": "Hitachi-Tsuda",
+      "stationJa": "常陸津田",
+      "line": "JR Suigun Line",
+      "lineJa": "JR水郡線",
+      "walkMin": 6,
+      "built": "Feb 1978",
+      "ageYears": 48,
+      "highlights": [
+        "Parking expansion planned; station and convenience store within 10 min walk",
+        "Sold with renovation works — confirm the finished specification in writing"
+      ],
+      "cautions": [
+        "Built Feb 1978 — pre-1981 seismic standard (旧耐震); seismic diagnosis/reinforcement should be budgeted",
+        "Aoyagi-cho sits by the Naka River — check the city flood hazard map before buying",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_ibaragi/08201/117.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "h16",
+      "type": "house-used",
+      "district": "Aoyagi-cho",
+      "districtJa": "青柳町",
+      "title": "Used 6K (1974) at ¥550万 — sold as-is or as cleared land, 6 min from Hitachi-Tsuda Station",
+      "priceMan": 550,
+      "priceFrom": false,
+      "landM2": 166.23,
+      "buildingM2": 62.97,
+      "layout": "6K",
+      "station": "Hitachi-Tsuda",
+      "stationJa": "常陸津田",
+      "line": "JR Suigun Line",
+      "lineJa": "JR水郡線",
+      "walkMin": 6,
+      "built": "Feb 1974",
+      "ageYears": 52,
+      "highlights": [
+        "Cheapest house in this collection by a wide margin — effectively a land price",
+        "Listing notes anyone may rebuild on this established housing plot (conditions apply); land-only sale also offered"
+      ],
+      "cautions": [
+        "Built Feb 1974 — pre-1981 seismic standard (旧耐震); treat the structure as end-of-life",
+        "Sold as-is (現況渡し) or as cleared land by negotiation — demolition costs are on the buyer if cleared-land handover is not agreed",
+        "Aoyagi-cho sits by the Naka River — check the city flood hazard map before buying",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Shibui-cho",
+      "districtJa": "渋井町",
+      "title": "Used 4LDK (1983), fully renovated inside and out — 305m² plot, 14 min from Higashi-Mito Station",
+      "priceMan": 1729,
+      "priceFrom": false,
+      "landM2": 305.02,
+      "buildingM2": 115.75,
+      "layout": "4LDK",
+      "station": "Higashi-Mito",
+      "stationJa": "東水戸",
+      "line": "Kashima Rinkai Railway Oarai Kashima Line",
+      "lineJa": "鹿島臨海鉄道大洗鹿島線",
+      "walkMin": 14,
+      "built": "Mar 1983",
+      "ageYears": 43,
+      "highlights": [
+        "Comprehensive renovation: new kitchen/bath/toilet, exterior repaint, termite treatment — 2-year defect warranty described",
+        "Very large 305.0m² plot; parking for 3"
+      ],
+      "cautions": [
+        "1983 structure underneath the renovation — the frame is 43 years old",
+        "Kashima Rinkai Railway services are limited — check the timetable; feeds differ slightly on floor area (115.75 vs 115.76m²)",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_ibaragi/08201/117.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l01",
+      "type": "land",
+      "district": "Sakumachi 1",
+      "districtJa": "柵町1丁目",
+      "title": "184m² plot 9 minutes from Mito Station — building on site, quasi-industrial zoning",
+      "priceMan": 1200,
+      "priceFrom": false,
+      "landM2": 184.91,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mito",
+      "stationJa": "水戸",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "準工業地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Closest clean walk in this collection: about 650m to Mito Station",
+        "North side fronts a wide 7.9m road; full utilities (city gas, water, mains sewer)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost and effort on the buyer",
+        "Quasi-industrial zoning (準工業地域) — a mixed-use zone, not a protected quiet residential street; landscape-law and height-district restrictions also noted",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z77588843/048665039/x1030Z77588843.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l02",
+      "type": "land",
+      "district": "Sannomaru 2",
+      "districtJa": "三の丸2丁目",
+      "title": "Central Sannomaru plot 13 minutes from Mito — but in a 5–10m flood zone, read the cautions",
+      "priceMan": 1190,
+      "priceFrom": false,
+      "landM2": 221.6,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mito",
+      "stationJa": "水戸",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Central castle-town district: Sannomaru Elementary 10 min, Mito Red Cross Hospital 10 min",
+        "Three lines usable at Mito Station (Joban, Suigun, Kashima Rinkai)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Flood hazard: the listing itself states a 5–10m inundation-assumption area on the flood hazard map (Naka River side) — the deepest flood band in this collection",
+        "Inside a landslide / sediment-disaster warning zone (土砂災害警戒区域) as stated on the listing",
+        "Setback required (セットバック要); the front road is only 2.9m wide on the south-west side",
+        "A neighbouring shrine gate (torii) encroaches overhead (隣地鳥居の上空越境あり), and the water/sewer connections need re-doing (引込やり直しが必要) at the buyer's arrangement",
+        "LP gas (no city gas)",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z78121221/116141001/x1030Z78121221.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "l03",
+      "type": "land",
+      "district": "Minamimachi 3",
+      "districtJa": "南町3丁目",
+      "title": "Vacant city-centre commercial plot, 14 min from Mito Station — buried piles below",
+      "priceMan": 2950,
+      "priceFrom": false,
+      "landM2": 187.6,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mito",
+      "stationJa": "水戸",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "商業地域",
+      "coverageFar": "80% / 400%",
+      "highlights": [
+        "Vacant land (更地渡し), immediate handover (即引渡し可), on a 6m south-west road",
+        "Full utilities already drawn in: 20mm water, combined sewer, city gas",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Commercial zoning (商業地域) in the city centre — flexible, but not a quiet residential street; the highest ¥/tsubo in this collection",
+        "Part of a set of PC piles remains buried underground (PC杭一部地中埋設有) — foundation design and any removal cost to confirm",
+        "Quasi-fire zone (準防火地域) and a Type-5 height district (45m limit) apply",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z21247497/048665052/x1030Z21247497.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l04",
+      "type": "land",
+      "district": "Aoyagi-cho",
+      "districtJa": "青柳町",
+      "title": "Huge 803m² plot 4 minutes from Hitachi-Aoyagi — urbanisation-control, most buyers cannot build",
+      "priceMan": 600,
+      "priceFrom": false,
+      "landM2": 803.55,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Hitachi-Aoyagi",
+      "stationJa": "常陸青柳",
+      "line": "JR Suigun Line",
+      "lineJa": "JR水郡線",
+      "walkMin": 4,
+      "built": null,
+      "ageYears": null,
+      "zoning": "無指定",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "By far the lowest ¥/tsubo here, and the shortest walk — 4 minutes to Hitachi-Aoyagi Station",
+        "Vacant flat land (更地渡し), east side fronts a 5.2m road",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Urbanisation-control area (市街化調整区域): building is in principle NOT permitted — the listing says only people who qualify as existing-settlement residents (10+ years living in Suifu-machi, Nakagawachi-machi, Nemoto-machi or Yanagawa-machi) may build",
+        "No utilities are listed on the page (equipment field is blank) — water, sewer and gas connections to confirm",
+        "The very low price reflects the building restriction, not a bargain residential plot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z20862021/085120004/x1030Z20862021.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "l05",
+      "type": "land",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "Big headline area, but 56m² is private road — 310m² plot 8 min from Akatsuka",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 254.2,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 8,
+      "built": null,
+      "ageYears": null,
+      "zoning": "近隣商業地域",
+      "coverageFar": "80% / 300%",
+      "highlights": [
+        "Vacant land (更地渡し) over 90 tsubo near Akatsuka Station, supermarkets on foot",
+        "Neighbourhood-commercial zoning gives flexible use (home plus small shop/office)",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Private-road area of 56.04m² is noted on the listing — if it is included in the headline 310.26m², the effective usable area is only about 254.2m²; confirm what the price includes",
+        "Near-station neighbourhood-commercial zoning (近隣商業地域) — central and flexible, but not a quiet purely-residential street",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z77867701/085120047/x1030Z77867701.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l06",
+      "type": "land",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "Enormous vacant 684m² plot, 11 min from Akatsuka — lowest clean ¥/tsubo near a station",
+      "priceMan": 1980,
+      "priceFrom": false,
+      "landM2": 684.89,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 11,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant land (更地渡し), immediate handover, east side fronts a 7m road",
+        "Over 200 tsubo — room for a large house and garden, a two-generation home, or a future split",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "The listing also pitches the plot for shop/office use — it sits in a mixed residential street, not a low-rise-only zone",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z20895313/048665002/x1030Z20895313.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l07",
+      "type": "land",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "Cheap 219m² plot 13 min from Akatsuka — part still registered as farmland, no utilities listed",
+      "priceMan": 600,
+      "priceFrom": false,
+      "landM2": 219,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Low entry price for a 66-tsubo plot within walking distance of Akatsuka Station (about 740m per the listing)",
+        "Seller demolishes and delivers as vacant land (建物解体後更地渡し); joint purchase with the neighbouring plot is possible",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Registered land category is partly farmland (地目：一部畑) — a land-category change registration is required (地目変更登記要)",
+        "The listing states there are no public water, city gas or public sewer connections (公営水道・都市ガス・公共下水：無し) — connection costs to confirm",
+        "Fronts a position-designated road (位置指定道路): no share is held in one road parcel, and a 1/2 share of another is to be transferred — road rights need careful checking",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z75928530/085120009/x1030Z75928530.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l08",
+      "type": "land",
+      "district": "Kawawada 1",
+      "districtJa": "河和田1丁目",
+      "title": "181m² plot in a quiet street by Akatsuka — city gas, vacant delivery",
+      "priceMan": 1000,
+      "priceFrom": false,
+      "landM2": 181.69,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant-land delivery (更地渡し) in a developed subdivision, north side fronts a 5.8m road",
+        "Full utilities: city gas, water, mains sewer; Frespo/York Town Akatsuka shopping nearby",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z21574151/085120003/x1030Z21574151.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l09",
+      "type": "land",
+      "district": "Kawawada 1",
+      "districtJa": "河和田1丁目",
+      "title": "Large corner plot in Kawawada, 14 min from Akatsuka — seller's liability exempted",
+      "priceMan": 1380,
+      "priceFrom": false,
+      "landM2": 347,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Large 347m² regular-shaped corner lot (角地・整形地), vacant (更地), immediate handover",
+        "City gas and mains sewer, per the index listing",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Seller's contract non-conformity liability is exempted (売主の契約不適合責任免責), per the index listing",
+        "An advertising sign on the site needs about 3 months to cancel and remove (広告看板解約撤去に3ヶ月必要), per the index listing",
+        "Index listing only — the detail page was not verified (portal rate limit); confirm boundaries, road and liability terms with the agent before relying on this record"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/102/2102230.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "l10",
+      "type": "land",
+      "district": "Uchihara-cho",
+      "districtJa": "内原町",
+      "title": "Huge low-rise-zone plot 8 minutes from Uchihara Station, by Aeon Mall Mito-Uchihara",
+      "priceMan": 2350,
+      "priceFrom": false,
+      "landM2": 504.89,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Uchihara",
+      "stationJa": "内原",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 8,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 80%",
+      "highlights": [
+        "Vacant land (更地渡し) over 150 tsubo in a first-class low-rise residential zone (第1種低層)",
+        "Two road frontages (north-east 6m / north-west 4.3m); schools and Aeon Mall Mito-Uchihara in daily range",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "LP gas (no city gas)",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z21063399/085120003/x1030Z21063399.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l11",
+      "type": "land",
+      "district": "Uchihara-cho",
+      "districtJa": "内原町",
+      "title": "Headline 231m², but 161m² is private road — effective plot is only about 70m²",
+      "priceMan": 630,
+      "priceFrom": false,
+      "landM2": 70,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Uchihara",
+      "stationJa": "内原",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 11,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 80%",
+      "highlights": [
+        "Low headline price in a low-rise zone, 11 min from Uchihara Station and in range of Aeon Mall Mito-Uchihara",
+        "Mains sewer and public water are available, per the listing",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Private-road area of 161m² is stated against a headline area of only 231m² — if the road/access strip is included in the headline, the effective usable residential area is only about 70m², not 231m²; confirm the survey before anything else",
+        "Flag-pole / alley-shaped plot (路地状敷地): the frontage onto the north road is only about 1.8m wide with a 3.1m contact length — check car access and rebuilding rules carefully",
+        "Registered land category is farmland (地目：畑) — an Agricultural Land Act notification is required (農地法届出要) and conversion/registration work is needed before building",
+        "Setback required (セットバック要)",
+        "LP gas (no city gas)",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z20595315/085120009/x1030Z20595315.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l12",
+      "type": "land",
+      "district": "Yoshinuma-cho",
+      "districtJa": "吉沼町",
+      "title": "Very cheap 595m² plot 8 minutes from Higashi-Mito Station — index-only, check control-area status",
+      "priceMan": 580,
+      "priceFrom": false,
+      "landM2": 595,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Higashi-Mito",
+      "stationJa": "東水戸",
+      "line": "Kashima Rinkai Railway Oarai Kashima Line",
+      "lineJa": "鹿島臨海鉄道大洗鹿島線",
+      "walkMin": 8,
+      "built": null,
+      "ageYears": null,
+      "zoning": "無指定",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Enormous 595m² (about 180 tsubo) for ¥580万 — the cheapest headline price in this collection",
+        "Vacant land (更地) per the index listing, 8 min from Higashi-Mito on the Kashima Rinkai Railway",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Index listing only — the detail page was not verified (portal rate limit); the registered land category, road frontage, utilities and urban-planning status are all unconfirmed for this specific plot",
+        "Parts of Yoshinuma-cho lie in the urbanisation-control area and in Naka River lowlands — confirm the urban-planning designation and the flood hazard map for this exact plot before treating the low ¥/tsubo as value"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.ocn.ne.jp/sp/tochi/area_ibaragi/08201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    }
+  ]
+};
