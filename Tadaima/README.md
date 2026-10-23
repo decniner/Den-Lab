@@ -9,7 +9,7 @@ viewing trip. The name is deliberately not place-specific.
 
 - **Brief for every collection:** houses (new + used) and land/lots,
   ≤ ¥5,000万, ≤ 15 minutes' walk from a station.
-- **Editions:** Kawagoe · Tachikawa · Tokorozawa · Saitama City (all live,
+- **Editions:** Kawagoe · Tachikawa · Tokorozawa · Saitama City · Matsudo (all live,
   researched 2026-10-23). More cities follow only when their research is done
   to the same standard.
 - **Home page:** a hub — search by city, station or district, with one card
