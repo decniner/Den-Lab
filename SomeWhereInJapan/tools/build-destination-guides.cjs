@@ -26,8 +26,8 @@ function sourceLinks(place) {
   return `<p>Photo credit: ${escapeHtml(photo.credit || 'Image source')} ${photo.license ? `· ${escapeHtml(photo.license)} ` : ''}<a href="${escapeHtml(photo.source)}" target="_blank" rel="noopener noreferrer">Source</a></p>`;
 }
 
-function imageMarkup(place, researchedPhoto) {
-  const photo = researchedPhoto?.status === 'verified' ? researchedPhoto : place.photo;
+function imageMarkup(place, researchedPhoto, routePhoto) {
+  const photo = researchedPhoto?.status === 'verified' ? researchedPhoto : (place.photo || routePhoto);
   const illustrativeUrl = place.image ? `https://images.unsplash.com/${encodeURIComponent(place.image)}?auto=format&fit=crop&w=1400&q=85` : '';
   const imageUrl = photo?.url || illustrativeUrl;
   if (!imageUrl) return `<div class="destination-photo-gap" role="img" aria-label="Illustrated map card for ${escapeHtml(place.name)}"><span>${escapeHtml(place.region || 'Japan')}</span><strong>${escapeHtml(place.name)}</strong><small>Open the map to explore this place</small></div>`;
@@ -38,23 +38,73 @@ function imageMarkup(place, researchedPhoto) {
   return `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(alt)}" loading="eager" decoding="async"><figcaption>${attribution}</figcaption>`;
 }
 
-function pageHtml(template, record, details, completion) {
+function normalizeName(value) {
+  return String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function routeFor(record, placeRoutes, cityRoutes) {
+  const place = (placeRoutes.routes || []).find(route => route.placeId === record.id);
+  if (place) return { kind:'place', route:place };
+  const name = normalizeName(record.name);
+  const city = (cityRoutes.routes || []).find(route => (route.stops || []).some(stop => normalizeName(stop.name) === name));
+  return city ? { kind:'city', route:city } : null;
+}
+
+function guideSequence(details) {
+  const candidates = [details.walkingRoute, details.routeSections, details.highlights, details.points];
+  return candidates.find(items => Array.isArray(items) && items.length) || [];
+}
+
+function pointMapUrl(point, record) {
+  const coords = point.coordinates;
+  if (coords && Number.isFinite(coords.latitude) && Number.isFinite(coords.longitude)) {
+    return `https://www.openstreetmap.org/?mlat=${coords.latitude}&mlon=${coords.longitude}#map=17/${coords.latitude}/${coords.longitude}`;
+  }
+  return `https://www.openstreetmap.org/search?query=${encodeURIComponent(`${point.name || record.name} ${point.address || point.area || record.region} Japan`)}`;
+}
+
+function routeStopMarkup(stops, record) {
+  return stops.map((stop, index) => {
+    const photo = stop.photo;
+    const photoMarkup = photo?.url ? `<figure class="ng-stop-photo"><img src="${escapeHtml(photo.url)}" alt="${escapeHtml(photo.alt || stop.name)}" loading="lazy"><figcaption>Photo: ${escapeHtml(photo.credit || 'Contributor')} · <a href="${escapeHtml(photo.source || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(photo.license || 'Source')}</a></figcaption></figure>` : '';
+    const duration = stop.visitDuration?.status === 'known' ? `${stop.visitDuration.minMinutes}${stop.visitDuration.maxMinutes !== stop.visitDuration.minMinutes ? `–${stop.visitDuration.maxMinutes}` : ''} min suggested visit` : '';
+    return `<li class="ng-stop"><span class="ng-stop-number">${String(stop.order || index + 1).padStart(2,'0')}</span><article>${photoMarkup}<p class="ng-kicker">${escapeHtml(stop.area || record.region || 'JAPAN')}</p><h3>${escapeHtml(stop.name)}</h3>${stop.address ? `<p class="ng-stop-address">${escapeHtml(stop.address)}</p>` : ''}${stop.story ? `<p>${escapeHtml(stop.story)}</p>` : ''}${duration ? `<p class="ng-stop-time">${escapeHtml(duration)}</p>` : ''}<a class="ng-map-link" href="${pointMapUrl(stop, record)}" target="_blank" rel="noopener noreferrer">Open this stop in OpenStreetMap ↗</a></article></li>`;
+  }).join('');
+}
+
+function routeLegMarkup(route) {
+  const byId = new Map([[route.origin?.id, route.origin], ...(route.stops || []).map(stop => [stop.id, stop])]);
+  return (route.legs || []).map(leg => {
+    const from = byId.get(leg.fromId), to = byId.get(leg.toId);
+    if (!from || !to) return '';
+    const mode = leg.mode === 'walking' ? 'walking' : leg.mode === 'driving' ? 'driving' : 'transit';
+    const params = new URLSearchParams({api:'1', origin:from.address || from.name, destination:to.address || to.name, travelmode:mode});
+    const duration = leg.duration?.status === 'known' ? ` · ${leg.duration.minMinutes}${leg.duration.maxMinutes !== leg.duration.minMinutes ? `–${leg.duration.maxMinutes}` : ''} min` : '';
+    return `<li><span><strong>${escapeHtml(from.name)} → ${escapeHtml(to.name)}</strong><small>${escapeHtml(leg.mode)}${duration}</small></span><a href="https://www.google.com/maps/dir/?${params}" target="_blank" rel="noopener noreferrer">Directions ↗</a></li>`;
+  }).filter(Boolean).join('');
+}
+
+function sequenceLegMarkup(sequence, record) {
+  return (sequence || []).slice(0, -1).map((from, index) => {
+    const to = sequence[index + 1];
+    const fromName = typeof from === 'string' ? from : from.name || from.title;
+    const toName = typeof to === 'string' ? to : to.name || to.title;
+    if (!fromName || !toName) return '';
+    const origin = `${fromName}, ${record.region}, Japan`, destination = `${toName}, ${record.region}, Japan`;
+    const params = new URLSearchParams({api:'1', origin, destination, travelmode:'walking'});
+    return `<li><span><strong>${escapeHtml(fromName)} → ${escapeHtml(toName)}</strong><small>Walking directions</small></span><a href="https://www.google.com/maps/dir/?${params}" target="_blank" rel="noopener noreferrer">Directions ↗</a></li>`;
+  }).filter(Boolean).join('');
+}
+
+function pageHtml(template, record, details, completion, routeRecord) {
   const raw = record.raw;
+  const route = routeRecord?.route || null;
+  const hasRoute = Boolean(routeRecord);
+  const orderedRouteStops = route ? [...(route.stops || [])].sort((a,b) => (a.order || 0) - (b.order || 0)) : [];
+  const routeHeroStop = orderedRouteStops.find(stop => normalizeName(stop.name) === normalizeName(record.name));
+  const imagePhoto = routeHeroStop?.photo || null;
   const title = `${record.name} · Japan field guide`;
   const tags = (raw.tags || []).map(tag => `<span class="destination-tag">${escapeHtml(tag)}</span>`).join('');
-  const gapText = {
-    'stable id':'Stable destination identity','supported destination type':'Destination type review',
-    story:'Destination story and context',visitPlan:'A visit plan',access:'Arrival and local access details',
-    sources:'Source records', 'sourced material claims':'Source links for material claims',
-    'claim source links':'Claim source links','valid source checkedOn date':'Valid source check dates',
-    'missing-access-mode':'Rail, bus, air, and car access status','invalid-access-evidence':'Sourced access details',
-    'missing-access-note':'Explanation of unknown access options','missing-visit-points':'Exact points to explore',
-    'invalid-visit-point':'Visitor address and sourced map coordinates','missing-contact-evidence':'A verified visitor phone contact',
-    'missing-stay-recommendations':'A sourced accommodation recommendation','photo-not-verified':'A unique, verified photo with license',
-    'map-location-not-verified':'A verified map location','weather-plan-not-verified':'A source-backed weather alternative',
-    'areas':'Specific areas or bases','walkingRoute':'An ordered neighborhood walk','highlights':'Attraction highlights',
-    'arrivalOptions':'Island arrival options','routeSections':'Route sections','terrain':'Terrain and effort details'
-  };
   const months = Array.isArray(raw.months) && raw.months.length
     ? `<strong>Good months to explore:</strong> ${raw.months.map(month => new Intl.DateTimeFormat('en', { month:'long', timeZone:'UTC' }).format(new Date(Date.UTC(2020, month - 1, 1)))).join(', ')}.`
     : '';
@@ -86,21 +136,43 @@ function pageHtml(template, record, details, completion) {
   const mapPlace = String(raw.place || '').split(/[·,]/)[0].trim() || record.name;
   const mapQuery = encodeURIComponent(`${mapPlace} ${raw.region} Japan`);
   const directionDestination = mapQuery;
-  const hasRoute = record.id === 'nikko-in-the-cedars';
+  const mapUrl = `https://www.openstreetmap.org/search?query=${mapQuery}`;
+  const googleMapUrl = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
   const stayMarkup = stay || `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`hotels near ${mapPlace} ${raw.region} Japan`)}" target="_blank" rel="noopener noreferrer">Browse places to stay nearby</a>`;
   const contactMarkup = contact || `<a href="https://www.google.com/search?q=${encodeURIComponent(`${queryText} official contact phone`)}" target="_blank" rel="noopener noreferrer">Find the official visitor contact</a>`;
   const accessFallback = details.access || `Use the destination map and follow official visitor information for the current way to reach ${record.name}.`;
+  const routeStopItems = orderedRouteStops.length ? orderedRouteStops : guideSequence(details).map((item, index) => typeof item === 'string' ? {name:item, order:index + 1} : {...item, order:index + 1});
+  const routeStopsMarkup = orderedRouteStops.length
+    ? routeStopMarkup(orderedRouteStops, record)
+    : routeStopItems.length
+      ? routeStopMarkup(routeStopItems, record)
+      : `<li class="ng-stop"><span class="ng-stop-number">01</span><article><p class="ng-kicker">${escapeHtml(raw.region)} · JAPAN</p><h3>${escapeHtml(record.name)}</h3><p>${escapeHtml(raw.description || '')}</p><a class="ng-map-link" href="${mapUrl}" target="_blank" rel="noopener noreferrer">Open this place in OpenStreetMap ↗</a></article></li>`;
+  const routeDataAttrs = routeRecord?.kind === 'city'
+    ? `data-route-kind="city" data-route-id="${escapeHtml(route.id)}" data-route-city="${escapeHtml(route.cityId)}"`
+    : routeRecord ? `data-route-kind="place" data-route-id="${escapeHtml(route.id)}"` : '';
+  const routeMapMarkup = routeRecord
+    ? `<div id="route-map" data-place-route-guide ${routeDataAttrs} aria-label="Interactive ${escapeHtml(record.name)} route map with ordered stops"></div>`
+    : `<div class="ng-route-map-cta"><a class="ng-button" href="${mapUrl}" target="_blank" rel="noopener noreferrer">Open ${escapeHtml(record.name)} in OpenStreetMap ↗</a><a class="ng-button ng-button-quiet" href="${googleMapUrl}" target="_blank" rel="noopener noreferrer">Get directions ↗</a></div>`;
+  const sequence = guideSequence(details);
+  const legsMarkup = route ? routeLegMarkup(route) : sequenceLegMarkup(sequence, record);
+  const routeTitle = route?.title || `${record.name}: places to explore`;
+  const routeIntroduction = route?.introduction || details.visitPlan || `Make ${record.name} the anchor of your visit. Start at the mapped destination, explore the named highlights below, then use live directions to connect the stops that suit your time.`;
+  const routeNote = route ? 'Select a numbered stop to highlight it on the map. Use the linked leg directions for current navigation.' : sequence.length ? 'The numbered sequence follows the destination guide. Use the linked leg directions to plan current travel between points.' : 'Use the map to orient yourself, then open live directions from your chosen starting point.';
+  const routeSources = (route?.sources || []).map(source => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>${source.checkedOn ? ` · checked ${escapeHtml(source.checkedOn)}` : ''}</li>`).join('');
+  const routeCount = orderedRouteStops.length || routeStopItems.length || 1;
+  const sectionTitle = route ? route.title : sequence.length ? record.name + ": a suggested exploration sequence" : record.name + ": plan your visit";
   const tokens = {
     TITLE: escapeHtml(title), DESCRIPTION: escapeHtml(raw.description || `${record.name} in ${raw.region}, Japan.`), CANONICAL: escapeHtml(absolute),
     TITLE_TEXT: escapeHtml(record.name), REGION: escapeHtml(raw.region), TYPE: escapeHtml(record.type), PLACE: escapeHtml(raw.place || raw.region),
-    DESCRIPTION: escapeHtml(raw.description || ''), TAGS: tags, IMAGE: imageMarkup(raw, details.photo), SEASON: escapeHtml(details.season || months),
-    STORY: escapeHtml(details.story || raw.description || ''), VISIT_PLAN: escapeHtml(details.visitPlan || `Start with ${record.name}, then use the map to choose nearby stops that match your pace and interests.`),
+    DESCRIPTION: escapeHtml(raw.description || ''), TAGS: tags, IMAGE: imageMarkup(raw, details.photo, imagePhoto), SEASON: details.season ? escapeHtml(details.season) : months,
+    STORY: escapeHtml(details.story || raw.description || ''), VISIT_PLAN: escapeHtml(routeIntroduction),
     ACCESS: escapeHtml(accessFallback), POINTS: points,
     ACCESS_MODES: modes || '<li>Open the map for current public transport and driving options from your starting point.</li>', CONTACT: contactMarkup, STAY: stayMarkup, WEATHER: escapeHtml(details.weatherPlan?.alternative || 'Check the attraction or local visitor site before setting out in poor weather.'),
     COSTS: costs || 'Check current admission and transport costs with the linked official visitor information.', CLAIMS: claims,
+    ROUTE_COUNT: `${routeCount} ${routeCount === 1 ? 'STOP' : 'STOPS'}`, ROUTE_TITLE: escapeHtml(sectionTitle), ROUTE_INTRO: escapeHtml(routeIntroduction), ROUTE_NOTE: escapeHtml(routeNote), ROUTE_STOPS: routeStopsMarkup, ROUTE_MAP: routeMapMarkup, ROUTE_LEGS: legsMarkup || '<li><span><strong>Continue from your starting point</strong><small>Live directions</small></span><a href="' + googleMapUrl + '" target="_blank" rel="noopener noreferrer">Open directions ↗</a></li>', ROUTE_SOURCES: routeSources,
     STATUS_TITLE: '', STATUS_COPY: '',
-    MAP_URL: `https://www.openstreetmap.org/search?query=${mapQuery}`,
-    GOOGLE_MAP_URL: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`,
+    MAP_URL: mapUrl,
+    GOOGLE_MAP_URL: googleMapUrl,
     OFFICIAL_URL: `https://www.google.com/search?q=${encodeURIComponent(`${queryText} official visitor guide`)}`,
     RAIL_URL: `https://www.google.com/maps/dir/?api=1&destination=${directionDestination}&travelmode=transit`,
     BUS_URL: `https://www.google.com/maps/dir/?api=1&destination=${directionDestination}&travelmode=transit`,
@@ -118,12 +190,15 @@ function buildDestinationPages(siteDir, options = {}) {
   const raw = loadRawDestinations(siteDir);
   const identities = readJson(path.join(siteDir, 'data/destination-identities.json'));
   const details = readJson(path.join(siteDir, 'data/destination-guide-details.json')).records || {};
+  const placeRoutes = readJson(path.join(siteDir, 'data/place-routes.json'));
+  const cityRoutes = readJson(path.join(siteDir, 'data/city-routes.json'));
   const inventory = buildInventory(raw, identities.records, basePath);
   const template = fs.readFileSync(path.join(siteDir, 'tools/templates/destination-guide.html'), 'utf8');
   const canonical = inventory.records.filter(record => !record.aliasOf);
   const seenImages = new Set();
   const records = canonical.map(record => {
     const destinationDetails = details[record.id];
+    const destinationRoute = routeFor(record, placeRoutes, cityRoutes);
     const completion = destinationDetails ? evaluateGuideCompletion({ id: record.id, type: record.type, ...destinationDetails }) : { complete:false, missing:['researched guide details'] };
     const imageKey = record.raw.photo?.url || record.raw.image || null;
     const duplicateImage = imageKey && seenImages.has(imageKey);
@@ -132,7 +207,7 @@ function buildDestinationPages(siteDir, options = {}) {
     fs.mkdirSync(path.dirname(output), { recursive:true });
     const existing = fs.existsSync(output) ? fs.readFileSync(output, 'utf8') : '';
     if (!existing.includes('data-authored-guide="true"')) {
-      fs.writeFileSync(output, pageHtml(template, { ...record, raw: duplicateImage ? { ...record.raw, photo:null, image:null } : record.raw }, destinationDetails || {}, completion), 'utf8');
+      fs.writeFileSync(output, pageHtml(template, { ...record, raw: duplicateImage ? { ...record.raw, photo:null, image:null } : record.raw }, destinationDetails || {}, completion, destinationRoute), 'utf8');
     }
     return {
       id: record.id, slug: record.slug, name: record.name, region: record.region, type: record.type,
