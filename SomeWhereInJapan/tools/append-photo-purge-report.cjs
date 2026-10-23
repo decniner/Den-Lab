@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('node:fs');
+const report='FIX_REPORT.md';
+let section=fs.readFileSync('tools/photo-purge-report-section.md','utf8').trim();
+section=section.replace(/[\u2012-\u2015\u2212]/g,'-').replace(/[\u2018\u2019]/g,"'");
+if(/[^\x00-\x7f]/.test(section))throw new Error('Report section contains non-ASCII characters; review encoding before appending');
+let previous=fs.readFileSync(report,'utf8');
+const marker='## Photo purge';
+if(previous.includes(marker))previous=previous.slice(0,previous.indexOf(marker));
+previous=previous.replace(/\\n\s*$/,'').replace(/[\r\n]+$/,'');
+fs.writeFileSync(report,`${previous}\r\n\r\n${section}\r\n`,'utf8');
+console.log('Updated Photo purge section in FIX_REPORT.md');
