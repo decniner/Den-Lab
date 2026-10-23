@@ -13,6 +13,8 @@ const compare=document.querySelector('#daytrip-compare');
 const directory=document.querySelector('.daytrip-directory');
 const method=document.querySelector('.daytrip-method');
 const allForms=[standard,compare,directory,method];
+let activeMappedRoute=null;
+const cityRouteRecords=fetch(new URL('data/city-routes.json',document.baseURI)).then(response=>response.ok?response.json():null).catch(()=>null);
 const tokyoTools=document.createElement('details');
 tokyoTools.className='tokyo-route-tools';
 const tokyoSummary=document.createElement('summary');
@@ -31,6 +33,20 @@ select.replaceChildren(cityGroup,airportGroup);
 const urlOrigin=new URLSearchParams(location.search).get('origin');
 select.value=core.ALL_ORIGINS.some(origin=>origin.id===urlOrigin)?urlOrigin:'tokyo';
 function escapeHtml(value){const el=document.createElement('span');el.textContent=String(value);return el.innerHTML;}
+async function attachMappedRoute(origin){
+ const cityId=origin.planId||origin.id;
+ const registry=await cityRouteRecords;
+ if(select.value!==origin.id||!registry)return;
+ const route=(registry.routes||[]).find(record=>record.cityId===cityId);
+ if(!route||!Array.isArray(route.stops)||route.stops.length<2||!window.CityRouteUI)return;
+ const legacyPlan=panel.querySelector('.city-origin-plan'),legacyMore=panel.querySelector('.city-origin-more');
+ if(legacyPlan)legacyPlan.hidden=true;if(legacyMore)legacyMore.hidden=true;
+ let mapData=null;
+ try{const response=await fetch(new URL(`maps/cities/${encodeURIComponent(cityId)}.geojson`,document.baseURI));if(response.ok)mapData=await response.json();}catch(error){mapData=null;}
+ if(select.value!==origin.id)return;
+ activeMappedRoute?.destroy();
+ activeMappedRoute=window.CityRouteUI.mountCityRouteView(panel,route,mapData,{origin,airport:core.AIRPORT_ORIGINS.some(item=>item.id===origin.id),fallbackUrl:new URL(`maps/cities/${encodeURIComponent(cityId)}.svg`,document.baseURI).href});
+}
 function stopCard(stop,dayStops,origin,index){
  const photo=photos[stop.name]||stop.photo||(stop.image?{url:`https://images.unsplash.com/${stop.image}?auto=format&fit=crop&w=1200&q=85`,source:'https://unsplash.com',credit:'Unsplash',license:'Unsplash License',alt:stop.alt||stop.name}:null);
  const guideUrl=window.GuideLinks?.destinationUrl(stop.name);
@@ -42,6 +58,7 @@ function stopCard(stop,dayStops,origin,index){
  return `<li><div class="city-plan-stop-index">${String(index+1).padStart(2,'0')}</div><article><figure class="city-plan-stop-photo"><img src="${photo.url}" alt="${escapeHtml(photo.alt||stop.alt||stop.name)}" loading="lazy" decoding="async"><a href="${photo.source||'https://unsplash.com'}" target="_blank" rel="noopener noreferrer" aria-label="Photo by ${escapeHtml(photo.credit||'Unsplash')}; ${escapeHtml(photo.license||'see linked source')}. Open image source" class="city-plan-photo-credit">PHOTO Â· ${escapeHtml(photo.credit||'Unsplash')} Â· ${escapeHtml(photo.license||'see linked source')}</a><span class="city-plan-photo-fallback" hidden>Photo temporarily unavailable Â· <a href="${photo.source||'https://unsplash.com'}" target="_blank" rel="noopener noreferrer">open the source image</a></span></figure><div class="city-plan-stop-meta"><span>${escapeHtml(stop.timing||'Suggested visit Â· check current access')}</span><span>Allow ${escapeHtml(stop.duration||'60â€“90 min Â· planning estimate')}</span></div><h5>${guideUrl?`<a href="${guideUrl}">${place}</a>`:place}</h5><p class="city-plan-stop-area">${escapeHtml(stop.area)}</p><details class="city-plan-stop-guide"><summary>How to see it at its best</summary><div><p>${escapeHtml(stop.story)}</p><p class="city-plan-visit-note">Use the suggested visit window as a planning guide. Opening days, access and seasonal conditions can change, so check the venueâ€™s current visitor information before setting out.</p></div></details><a href="${leg}" target="_blank" rel="noopener noreferrer">${previous?'Directions from previous stop':`Directions from ${escapeHtml(origin.station)}`} <b aria-hidden="true">&#8599;</b></a></article></li>`;
 }
 function render(){
+ if(activeMappedRoute){activeMappedRoute.destroy();activeMappedRoute=null;}
  if(tokyoTools.isConnected)tokyoTools.remove();
  const origin=core.ALL_ORIGINS.find(item=>item.id===select.value)||core.CITY_ORIGINS[2];
  const isTokyo=origin.id==='tokyo';
@@ -83,6 +100,7 @@ function render(){
   const fallback=image.parentElement.querySelector('.city-plan-photo-fallback');
   if(fallback)fallback.hidden=false;
  }));
+ attachMappedRoute(origin);
 }
 select.addEventListener('change',()=>{
  const url=new URL(location.href);
