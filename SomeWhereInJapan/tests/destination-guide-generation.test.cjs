@@ -61,3 +61,22 @@ test('rendersResearchedNotesWithLinkedSourcesAndOpenResearchGaps', () => {
   assert.match(html,/sourced map coordinates/i);
 });
 
+test('destinationGuidesOfferGoogleMapsWalkingDirectionsWithoutReplacingTheEmbeddedMap', () => {
+  const report = buildDestinationPages(site);
+  const kiyomizu = report.records.find(record => record.id === 'kiyomizu-dera-above-kyoto');
+  const html = fs.readFileSync(path.join(site, kiyomizu.pagePath.replaceAll('/', path.sep)), 'utf8');
+  assert.match(html, /Get walking directions in Google Maps/);
+  assert.match(html, /https:\/\/www\.google\.com\/maps\/dir\/\?api=1[^\"]*travelmode=walking/);
+  assert.match(html, /id="route-map" data-place-route-guide/);
+  assert.match(html, /city-route-ui\.js/);
+  assert.match(fs.readFileSync(path.join(site, 'city-route-ui.js'), 'utf8'), /data-expand-route-map/);
+});
+
+test('NikkoWalkingRouteCoversOnlyTheWalkableShrinePrecinctAndKeepsBusLegsDistinct', () => {
+  const html = fs.readFileSync(path.join(site, 'places', 'nikko-in-the-cedars', 'index.html'), 'utf8');
+  assert.match(html, /Open walking route in Google Maps/);
+  assert.match(html, /travelmode=walking/);
+  assert.match(html, /Use the individual directions below for the bus legs to and from Nikko Station/);
+  assert.match(html, /data-place-route-guide/);
+});
+

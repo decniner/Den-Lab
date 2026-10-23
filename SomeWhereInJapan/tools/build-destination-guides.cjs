@@ -139,6 +139,24 @@ function sequenceLegMarkup(sequence, record) {
   }).filter(Boolean).join('');
 }
 
+function walkingDirectionsUrl(record, routeRecord, fallbackDestination) {
+  const route = routeRecord?.route;
+  const stops = [...(route?.stops || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
+  const legs = route?.legs || [];
+  const isCompactWalkingRoute = routeRecord?.kind === 'place' && stops.length >= 2 && stops.length <= 5 &&
+    legs.length > 0 && legs.every(leg => leg.mode === 'walking');
+  const params = new URLSearchParams({ api:'1', travelmode:'walking' });
+  if (isCompactWalkingRoute) {
+    const place = stop => `${stop.address || stop.name}, ${stop.area || record.region}, Japan`;
+    params.set('origin', place(stops[0]));
+    params.set('destination', place(stops[stops.length - 1]));
+    if (stops.length > 2) params.set('waypoints', stops.slice(1, -1).map(place).join('|'));
+  } else {
+    params.set('destination', fallbackDestination);
+  }
+  return `https://www.google.com/maps/dir/?${params}`;
+}
+
 function pageHtml(template, record, details, completion, routeRecord) {
   const raw = record.raw;
   const route = routeRecord?.route || null;
@@ -181,6 +199,10 @@ function pageHtml(template, record, details, completion, routeRecord) {
   const directionDestination = mapQuery;
   const mapUrl = `https://www.openstreetmap.org/search?query=${mapQuery}`;
   const googleMapUrl = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
+  const walkingUrl = walkingDirectionsUrl(record, routeRecord, queryText);
+  const walkingLabel = routeRecord?.kind === 'place' && route?.legs?.length > 0 && route.legs.every(leg => leg.mode === 'walking') && route.stops?.length >= 2 && route.stops.length <= 5
+    ? 'Open walking route in Google Maps'
+    : 'Get walking directions in Google Maps';
   const stayMarkup = stay || `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`hotels near ${mapPlace} ${raw.region} Japan`)}" target="_blank" rel="noopener noreferrer">Browse places to stay nearby</a>`;
   const contactMarkup = contact || `<a href="https://www.google.com/search?q=${encodeURIComponent(`${queryText} official contact phone`)}" target="_blank" rel="noopener noreferrer">Find the official visitor contact</a>`;
   const accessFallback = details.access || `Use the destination map and follow official visitor information for the current way to reach ${record.name}.`;
@@ -224,6 +246,7 @@ function pageHtml(template, record, details, completion, routeRecord) {
     STATUS_TITLE: '', STATUS_COPY: '',
     MAP_URL: mapUrl,
     GOOGLE_MAP_URL: googleMapUrl,
+    WALKING_ROUTE_LINK: `<a class="ng-button" href="${escapeHtml(walkingUrl)}" target="_blank" rel="noopener noreferrer">${walkingLabel} â†—</a>`,
     OFFICIAL_URL: `https://www.google.com/search?q=${encodeURIComponent(`${queryText} official visitor guide`)}`,
     RAIL_URL: `https://www.google.com/maps/dir/?api=1&destination=${directionDestination}&travelmode=transit`,
     BUS_URL: `https://www.google.com/maps/dir/?api=1&destination=${directionDestination}&travelmode=transit`,
