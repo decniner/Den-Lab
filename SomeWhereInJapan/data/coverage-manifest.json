@@ -25,7 +25,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "the-blue-of-biei",
@@ -44,7 +44,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "shiretoko-s-wild-edge",
@@ -63,7 +63,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "otaru-by-lamplight",
@@ -82,7 +82,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "daisetsuzan-high-country",
@@ -101,7 +101,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "hakodate-from-above",
@@ -120,7 +120,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "lake-toya-volcanic-calm",
@@ -139,7 +139,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "matsushima-bay",
@@ -158,7 +158,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "ginzan-after-dark",
@@ -177,7 +177,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "oirase-stream-walk",
@@ -196,7 +196,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "hirosaki-in-blossom",
@@ -215,7 +215,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "hiraizumi-s-quiet-temples",
@@ -234,7 +234,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tazawa-s-clear-blue",
@@ -253,7 +253,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "the-three-mountains-of-dewa",
@@ -272,7 +272,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "aizu-wakamatsu-s-samurai-streets",
@@ -291,7 +291,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tokyo-in-layers",
@@ -315,7 +315,7 @@
       ],
       "sourceStatus": "sources-recorded",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "nikko-in-the-cedars",
@@ -332,7 +332,7 @@
       "missing": [],
       "sourceStatus": "sources-recorded",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kamakura-temple-to-tide",
@@ -351,7 +351,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "hakone-through-the-mist",
@@ -370,7 +370,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "yokohama-s-harbor-lights",
@@ -389,7 +389,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kusatsu-steam-and-springs",
@@ -408,7 +408,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "oze-s-open-wetlands",
@@ -427,7 +427,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "fuji-from-the-water",
@@ -446,7 +446,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kanazawa-unhurried",
@@ -465,7 +465,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "shirakawa-go-under-steep-roofs",
@@ -484,7 +484,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "takayama-s-old-quarter",
@@ -503,7 +503,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "matsumoto-beneath-the-alps",
@@ -522,7 +522,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kamikochi-the-mountain-valley",
@@ -541,7 +541,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kiso-valley-post-towns",
@@ -560,7 +560,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "sado-island-s-wild-coast",
@@ -583,7 +583,7 @@
       ],
       "sourceStatus": "sources-recorded",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kyoto-at-first-light",
@@ -602,7 +602,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "osaka-after-hours",
@@ -621,7 +621,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "nara-between-trees",
@@ -640,7 +640,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "arashiyama-s-green-corridor",
@@ -659,7 +659,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "himeji-the-white-heron",
@@ -678,7 +678,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "koyasan-after-dusk",
@@ -697,7 +697,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kumano-kodo-the-old-paths",
@@ -720,7 +720,7 @@
       ],
       "sourceStatus": "sources-recorded",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "lake-biwa-s-eastern-shore",
@@ -739,7 +739,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "miyajima-tide-lines",
@@ -758,7 +758,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "hiroshima-a-city-of-peace",
@@ -777,7 +777,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tottori-s-shifting-dunes",
@@ -796,7 +796,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kurashiki-s-canal-quarter",
@@ -815,7 +815,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "onomichi-s-hillside-lanes",
@@ -834,7 +834,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "izumo-land-of-old-stories",
@@ -853,7 +853,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "iwami-ginzan-s-forest-paths",
@@ -872,7 +872,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "the-iya-valley",
@@ -891,7 +891,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "naoshima-art-and-sea",
@@ -910,7 +910,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "matsuyama-s-castle-hill",
@@ -929,7 +929,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "shimanami-kaido-by-bicycle",
@@ -948,7 +948,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "cape-ashizuri-s-ocean-edge",
@@ -967,7 +967,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "oboke-gorge-by-river",
@@ -986,7 +986,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "konpira-san-s-long-climb",
@@ -1005,7 +1005,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "beppu-steam-rising",
@@ -1024,7 +1024,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "yakushima-ancient-green",
@@ -1043,7 +1043,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "nagasaki-harbor-of-many-worlds",
@@ -1062,7 +1062,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "aso-s-wide-caldera",
@@ -1081,7 +1081,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kurokawa-s-onsen-lanes",
@@ -1100,7 +1100,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kagoshima-and-sakurajima",
@@ -1119,7 +1119,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "yufuin-under-mount-yufu",
@@ -1138,7 +1138,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kerama-blue",
@@ -1157,7 +1157,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "naha-island-time",
@@ -1176,7 +1176,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "shuri-ryukyu-memory",
@@ -1195,7 +1195,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "ishigaki-s-southern-shore",
@@ -1214,7 +1214,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "iriomote-s-mangrove-rivers",
@@ -1233,7 +1233,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "taketomi-by-foot-and-bicycle",
@@ -1252,7 +1252,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "cape-manzamo-s-sea-cliffs",
@@ -1271,7 +1271,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "zamami-s-island-blue-days",
@@ -1290,7 +1290,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "sapporo-snow-and-neon",
@@ -1309,7 +1309,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "lake-mashu-mirror-of-the-sky",
@@ -1328,7 +1328,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "noboribetsu-s-volcanic-valley",
@@ -1347,7 +1347,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "shakotan-s-blue-coast",
@@ -1366,7 +1366,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "aomori-nebuta-nights",
@@ -1385,7 +1385,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "yamadera-a-mountain-of-steps",
@@ -1404,7 +1404,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "ouchi-juku-s-thatched-lanes",
@@ -1423,7 +1423,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "zao-s-emerald-crater-lake",
@@ -1442,7 +1442,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "senso-ji-and-asakusa-lanes",
@@ -1465,7 +1465,7 @@
       ],
       "sourceStatus": "sources-recorded",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "shinjuku-gyoen-in-every-season",
@@ -1484,7 +1484,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "enoshima-s-sea-edge",
@@ -1503,7 +1503,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kawagoe-the-little-edo",
@@ -1522,7 +1522,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tateyama-kurobe-alpine-route",
@@ -1541,7 +1541,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "zenkoji-a-temple-town-morning",
@@ -1560,7 +1560,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "izu-peninsula-the-long-way-round",
@@ -1583,7 +1583,7 @@
       ],
       "sourceStatus": "sources-recorded",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "oshino-hakkai-and-fuji-views",
@@ -1602,7 +1602,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "amanohashidate-sea-and-sky",
@@ -1621,7 +1621,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kiyomizu-dera-above-kyoto",
@@ -1640,7 +1640,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "osaka-castle-park",
@@ -1659,7 +1659,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "koyasan-s-lantern-forest",
@@ -1678,7 +1678,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kurashiki-s-canal-at-blue-hour",
@@ -1697,7 +1697,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tottori-sand-dunes-at-sunset",
@@ -1716,7 +1716,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "izumo-taisha-a-sacred-approach",
@@ -1735,7 +1735,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "ritsurin-garden-takamatsu",
@@ -1754,7 +1754,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "iya-valley-vine-bridges",
@@ -1773,7 +1773,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "cape-ashizuri-s-pacific-horizon",
@@ -1792,7 +1792,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "takachiho-gorge-by-boat",
@@ -1811,7 +1811,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "nagasaki-s-hillside-harbor",
@@ -1830,7 +1830,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kagoshima-s-sakurajima-view",
@@ -1849,7 +1849,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "yufuin-under-mount-yufu-2",
@@ -1868,7 +1868,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "miyakojima-s-turquoise-coast",
@@ -1887,7 +1887,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "churaumi-s-island-aquarium-coast",
@@ -1906,7 +1906,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "yonaguni-japan-s-far-west",
@@ -1925,7 +1925,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tokyo-disney-resort",
@@ -1944,7 +1944,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "super-nintendo-world",
@@ -1963,7 +1963,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "fuji-q-highland",
@@ -1982,7 +1982,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "ghibli-park",
@@ -2001,7 +2001,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "tokyo-skytree",
@@ -2024,7 +2024,7 @@
       ],
       "sourceStatus": "sources-recorded",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "tokyo-tower",
@@ -2043,7 +2043,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "kinkaku-ji-the-golden-pavilion",
@@ -2062,7 +2062,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "osaka-aquarium-kaiyukan",
@@ -2081,7 +2081,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "fukuoka-tower",
@@ -2100,7 +2100,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "kumamoto-castle",
@@ -2119,7 +2119,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "illustrative-unsplash-image",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "asahiyama-zoo",
@@ -2138,7 +2138,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "moerenuma-park",
@@ -2157,7 +2157,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "lake-shikotsu",
@@ -2176,7 +2176,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "otaru-aquarium",
@@ -2195,7 +2195,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "kakunodate-samurai-district",
@@ -2214,7 +2214,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "lake-towada",
@@ -2233,7 +2233,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hirosaki-castle-park",
@@ -2252,7 +2252,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "zuiganji-temple",
@@ -2271,7 +2271,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "meiji-jingu",
@@ -2290,7 +2290,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "shibuya-scramble-crossing",
@@ -2309,7 +2309,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "teamlab-planets-tokyo",
@@ -2328,7 +2328,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tokyo-national-museum",
@@ -2347,7 +2347,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "ghibli-museum-mitaka",
@@ -2366,7 +2366,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "great-buddha-of-kamakura",
@@ -2385,7 +2385,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "enoshima-aquarium",
@@ -2404,7 +2404,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hitachi-seaside-park",
@@ -2423,7 +2423,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "ashikaga-flower-park",
@@ -2442,7 +2442,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "sanrio-puroland",
@@ -2461,7 +2461,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hamarikyu-gardens",
@@ -2480,7 +2480,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "jigokudani-snow-monkey-park",
@@ -2499,7 +2499,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "takayama-jinya",
@@ -2518,7 +2518,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hida-folk-village",
@@ -2537,7 +2537,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "kurobe-gorge-railway",
@@ -2556,7 +2556,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "ise-jingu",
@@ -2575,7 +2575,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "fushimi-inari-taisha",
@@ -2594,7 +2594,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "nijo-castle",
@@ -2613,7 +2613,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "dotonbori",
@@ -2632,7 +2632,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kinosaki-onsen",
@@ -2651,7 +2651,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "byodo-in-temple",
@@ -2670,7 +2670,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kobe-harborland",
@@ -2689,7 +2689,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "todai-ji-temple",
@@ -2708,7 +2708,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "adachi-museum-of-art",
@@ -2727,7 +2727,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "dogo-onsen",
@@ -2746,7 +2746,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "naruto-whirlpools",
@@ -2765,7 +2765,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "nagasaki-peace-park",
@@ -2784,7 +2784,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "huis-ten-bosch",
@@ -2803,7 +2803,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "beppu-jigoku-meguri",
@@ -2822,7 +2822,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "nanzoin-reclining-buddha",
@@ -2841,7 +2841,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "okinawa-world-and-gyokusendo-cave",
@@ -2860,7 +2860,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "okinawa-peace-memorial-park",
@@ -2879,7 +2879,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "niseko-s-snow-country",
@@ -2898,7 +2898,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "sapporo-snow-festival",
@@ -2917,7 +2917,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "goryokaku-star-fort",
@@ -2936,7 +2936,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "sapporo-beer-museum",
@@ -2955,7 +2955,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "aomori-museum-of-art",
@@ -2974,7 +2974,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "morioka-castle-stone-walls",
@@ -2993,7 +2993,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tsuruga-castle-in-aizu",
@@ -3012,7 +3012,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "sanriku-coastal-viewpoints",
@@ -3031,7 +3031,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tokyo-disneysea",
@@ -3050,7 +3050,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "cup-noodles-museum-yokohama",
@@ -3069,7 +3069,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "fuji-safari-park",
@@ -3088,7 +3088,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "showa-kinen-park",
@@ -3107,7 +3107,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "nagashima-spa-land",
@@ -3126,7 +3126,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "inuyama-castle",
@@ -3145,7 +3145,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "mishima-skywalk",
@@ -3164,7 +3164,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "universal-studios-japan",
@@ -3183,7 +3183,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "minoh-falls-forest-walk",
@@ -3202,7 +3202,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "nishiki-market",
@@ -3221,7 +3221,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "kobe-nunobiki-herb-gardens",
@@ -3240,7 +3240,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "motonosumi-shrine-coast",
@@ -3259,7 +3259,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "hagi-castle-town",
@@ -3278,7 +3278,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "sandankyo-gorge",
@@ -3297,7 +3297,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kochi-castle",
@@ -3316,7 +3316,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "shodoshima-olive-park",
@@ -3335,7 +3335,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "matsuyama-castle",
@@ -3354,7 +3354,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "yanagawa-canal-cruise",
@@ -3373,7 +3373,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "uminonakamichi-seaside-park",
@@ -3392,7 +3392,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "glover-garden",
@@ -3411,7 +3411,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "kouri-bridge-and-island-coast",
@@ -3430,7 +3430,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "american-village-at-sunset",
@@ -3449,7 +3449,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "cape-soya",
@@ -3468,7 +3468,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "lake-akan",
@@ -3487,7 +3487,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "asahidake-ropeway",
@@ -3506,7 +3506,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "ningle-terrace",
@@ -3525,7 +3525,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "upopoy-national-ainu-museum",
@@ -3544,7 +3544,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "abashiri-prison-museum",
@@ -3563,7 +3563,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hakkoda-ropeway",
@@ -3582,7 +3582,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "oga-namahage-museum",
@@ -3601,7 +3601,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "hachimantai-aspite-line",
@@ -3620,7 +3620,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "genbikei-gorge",
@@ -3639,7 +3639,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "akiu-great-falls",
@@ -3658,7 +3658,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "teamlab-borderless",
@@ -3677,7 +3677,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "yokohama-chinatown",
@@ -3696,7 +3696,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "edo-wonderland-nikko-edomura",
@@ -3715,7 +3715,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "oya-history-museum",
@@ -3734,7 +3734,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "mother-farm",
@@ -3753,7 +3753,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hasedera-temple-kamakura",
@@ -3772,7 +3772,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "kurobe-dam",
@@ -3791,7 +3791,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "tojinbo-cliffs",
@@ -3810,7 +3810,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "tsumago-juku",
@@ -3829,7 +3829,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "gero-onsen",
@@ -3848,7 +3848,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "lake-suwa",
@@ -3867,7 +3867,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "echizen-ono-castle",
@@ -3886,7 +3886,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kifune-shrine",
@@ -3905,7 +3905,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "katsuoji-temple",
@@ -3924,7 +3924,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "nara-national-museum",
@@ -3943,7 +3943,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "wakayama-castle",
@@ -3962,7 +3962,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "takarazuka-grand-theater",
@@ -3981,7 +3981,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "okayama-korakuen",
@@ -4000,7 +4000,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "shukkeien-garden",
@@ -4019,7 +4019,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "kintaikyo-bridge",
@@ -4038,7 +4038,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tomonoura-harbor-lanes",
@@ -4057,7 +4057,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "tsunoshima-bridge",
@@ -4076,7 +4076,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "bitchu-matsuyama-castle",
@@ -4095,7 +4095,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "chichibugahama-beach",
@@ -4114,7 +4114,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "shikoku-karst",
@@ -4133,7 +4133,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "ozu-castle",
@@ -4152,7 +4152,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "ryugado-cave",
@@ -4171,7 +4171,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "otsuka-museum-of-art",
@@ -4190,7 +4190,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "dazaifu-tenmangu",
@@ -4209,7 +4209,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kirishima-jingu",
@@ -4228,7 +4228,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "sakurai-futamigaura",
@@ -4247,7 +4247,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "amakusa-gokyo",
@@ -4266,7 +4266,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "mojiko-retro",
@@ -4285,7 +4285,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "arita-porcelain-park",
@@ -4304,7 +4304,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "sefa-utaki",
@@ -4323,7 +4323,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "nakagusuku-castle",
@@ -4342,7 +4342,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "bise-fukugi-tree-road",
@@ -4361,7 +4361,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "yonaha-maehama-beach",
@@ -4380,7 +4380,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "shikinaen-royal-garden",
@@ -4399,7 +4399,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "lake-kussharo",
@@ -4418,7 +4418,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "sounkyo-gorge",
@@ -4437,7 +4437,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "hakodate-morning-market",
@@ -4456,7 +4456,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "kushiro-marsh-observatory",
@@ -4475,7 +4475,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "otaru-sakaimachi-street",
@@ -4494,7 +4494,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "jodogahama-beach",
@@ -4513,7 +4513,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "goshikinuma-ponds",
@@ -4532,7 +4532,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "oga-aquarium-gao",
@@ -4551,7 +4551,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "imperial-palace-east-gardens",
@@ -4570,7 +4570,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "koishikawa-korakuen-garden",
@@ -4589,7 +4589,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kappabashi-dougu-street",
@@ -4608,7 +4608,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "odaiba-seaside-park",
@@ -4627,7 +4627,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "inokashira-park",
@@ -4646,7 +4646,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "atsuta-jingu-shrine",
@@ -4665,7 +4665,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "toyama-glass-art-museum",
@@ -4684,7 +4684,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "gujo-hachiman-castle",
@@ -4703,7 +4703,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "narai-juku",
@@ -4722,7 +4722,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "lake-hamana",
@@ -4741,7 +4741,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "horyuji-temple",
@@ -4760,7 +4760,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "ryoanji-temple",
@@ -4779,7 +4779,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "umeda-sky-building",
@@ -4798,7 +4798,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "expo-70-commemorative-park",
@@ -4817,7 +4817,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hozugawa-river-boat-ride",
@@ -4836,7 +4836,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "okayama-castle",
@@ -4855,7 +4855,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "iwakuni-castle",
@@ -4874,7 +4874,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "orizuru-tower",
@@ -4893,7 +4893,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "tamatsukuri-onsen",
@@ -4912,7 +4912,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "matsue-castle",
@@ -4931,7 +4931,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "shikoku-mura",
@@ -4950,7 +4950,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "teshima-art-museum",
@@ -4969,7 +4969,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "katsurahama-beach",
@@ -4988,7 +4988,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "kokura-castle",
@@ -5007,7 +5007,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "udo-jingu-shrine",
@@ -5026,7 +5026,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kawachi-wisteria-garden",
@@ -5045,7 +5045,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "usuki-stone-buddhas",
@@ -5064,7 +5064,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "aso-shrine",
@@ -5083,7 +5083,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "okinawa-churaumi-aquarium",
@@ -5102,7 +5102,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "okinawa-prefectural-museum-and-art-museum",
@@ -5121,7 +5121,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "busena-marine-park",
@@ -5140,7 +5140,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "ishigaki-yaima-village",
@@ -5159,7 +5159,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "cape-kamui",
@@ -5178,7 +5178,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "shirogane-blue-pond",
@@ -5197,7 +5197,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "lake-shikaribetsu",
@@ -5216,7 +5216,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "shiretoko-five-lakes",
@@ -5235,7 +5235,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "chusonji-golden-hall",
@@ -5254,7 +5254,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "lake-inawashiro",
@@ -5273,7 +5273,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "sendai-castle-ruins",
@@ -5292,7 +5292,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-nearby-locator"
     },
     {
       "id": "nebuta-museum-wa-rasse",
@@ -5311,7 +5311,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "nezu-shrine",
@@ -5330,7 +5330,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "mount-takao",
@@ -5353,7 +5353,7 @@
       ],
       "sourceStatus": "sources-recorded",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "sankeien-garden",
@@ -5372,7 +5372,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "tsurugaoka-hachimangu",
@@ -5391,7 +5391,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "tokyo-metropolitan-government-observatory",
@@ -5410,7 +5410,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "shibamata-taishakuten",
@@ -5429,7 +5429,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "edo-tokyo-open-air-architectural-museum",
@@ -5448,7 +5448,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "mikata-five-lakes",
@@ -5467,7 +5467,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "eiheiji-temple",
@@ -5486,7 +5486,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hikone-castle",
@@ -5505,7 +5505,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "nagoya-castle",
@@ -5524,7 +5524,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hida-furukawa-old-town",
@@ -5543,7 +5543,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kumano-nachi-taisha",
@@ -5562,7 +5562,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "isuien-garden",
@@ -5581,7 +5581,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "yoshikien-garden",
@@ -5600,7 +5600,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "kyoto-railway-museum",
@@ -5619,7 +5619,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "koko-en-garden",
@@ -5638,7 +5638,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "kure-yamato-museum",
@@ -5657,7 +5657,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "mizuki-shigeru-road",
@@ -5676,7 +5676,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "hinomisaki-lighthouse",
@@ -5695,7 +5695,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "akiyoshidai-plateau",
@@ -5714,7 +5714,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "uchiko-yokaichi-gokoku-historic-district",
@@ -5733,7 +5733,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "ishizuchi-shrine",
@@ -5752,7 +5752,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "yashima-temple",
@@ -5771,7 +5771,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "sengan-en-garden",
@@ -5790,7 +5790,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "dejima",
@@ -5809,7 +5809,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "unzen-jigoku",
@@ -5828,7 +5828,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "takachiho-shrine",
@@ -5847,7 +5847,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "nakijin-castle-ruins",
@@ -5866,7 +5866,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-area-locator"
     },
     {
       "id": "cape-hedo",
@@ -5885,7 +5885,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "hiji-waterfall",
@@ -5904,7 +5904,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     },
     {
       "id": "ikei-beach",
@@ -5923,7 +5923,7 @@
       ],
       "sourceStatus": "not-researched",
       "imageStatus": "catalogue-attribution-pending-review",
-      "mapStatus": "no-coordinates"
+      "mapStatus": "osm-destination-locator"
     }
   ]
 }

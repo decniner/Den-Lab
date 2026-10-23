@@ -1,7 +1,7 @@
 (function(root){
 'use strict';
 function mountCityRouteMap(container,mapData,onSelectStop){
- if(mapData?.metadata?.geometryStatus==='schematic-stop-order'){
+ if(['schematic-stop-order','place-locator'].includes(mapData?.metadata?.geometryStatus)){
   const panel=container&&container.querySelector('[data-map-canvas]'),fallback=container&&container.querySelector('[data-map-fallback]');
   if(!root.maplibregl?.Map){if(panel)panel.hidden=true;if(fallback)fallback.hidden=false;return {selectStop(){},resize(){},destroy(){},get available(){return false;}};}
   let map=null,loaded=false,destroyed=false,markers=new Map(),markerRecords=[],selected=null,fitOnNextResize=false,west=0,south=0,east=0,north=0;

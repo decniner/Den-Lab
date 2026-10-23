@@ -24,7 +24,14 @@ async function mountGuide(){
  const host=document.querySelector('[data-place-route-guide]');if(!host)return;
  const kind=host.dataset.routeKind||'place',id=host.dataset.routeId||'nikko-world-heritage-loop';
  let route=null,mapData=null;
- if(kind==='city'){
+ if(kind==='location'){
+  const latitude=Number(host.dataset.routeLat),longitude=Number(host.dataset.routeLon),name=host.dataset.routeName||'Destination',locator=host.dataset.routeLocator||name,precision=host.dataset.routePrecision||'area',source=host.dataset.routeSource||'https://www.openstreetmap.org/';
+  if(!Number.isFinite(latitude)||!Number.isFinite(longitude))return;
+  const stopId='place-location';
+  route={id,cityId:'destination',title:`${name}: location map`,introduction:precision==='destination'?`One destination marker for ${name}. No connecting route is implied without a researched stop order.`:`Approximate ${precision==='area'?'area':'nearby-feature'} locator for ${locator}; it may not mark the attraction entrance.`,researchStatus:'place-locator',locatorPrecision:precision,locatorLabel:precision==='destination'?'NAMED DESTINATION':precision==='area'?'AREA LOCATOR':'NEARBY MAP MATCH',stops:[{id:stopId,order:1,name,address:locator,story:`Open the linked location record to confirm the exact entrance and current access.`,coordinates:{latitude,longitude,precision,sourceIds:['osm-location']}}],legs:[],sources:[{url:source,label:'OpenStreetMap location record',checkedOn:host.dataset.routeChecked||'2026-10-23'}]};
+  const delta=0.008;
+  mapData={type:'FeatureCollection',metadata:{bounds:[longitude-delta,latitude-delta,longitude+delta,latitude+delta],geometryStatus:'place-locator',attribution:'Map data © OpenStreetMap contributors',license:'ODbL-1.0',sourceUrl:source},features:[{type:'Feature',id:stopId,geometry:{type:'Point',coordinates:[longitude,latitude]},properties:{id:stopId,routeStopId:stopId,role:'stop',name}}]};
+ }else if(kind==='city'){
   const data=await fetchJson('../../data/city-routes.json?v=20261023-1');
   route=data?.routes?.find(item=>item.id===id&&item.cityId===host.dataset.routeCity);
   if(route)mapData=await fetchJson(`../../maps/cities/${encodeURIComponent(route.cityId)}.geojson?v=20261023-1`);

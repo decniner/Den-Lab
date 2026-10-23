@@ -17,11 +17,14 @@ Then open http://localhost:8000/. The project is static HTML, CSS, and JavaScrip
 - An interactive map with nine regions and direct place-story picks.
 - A searchable nationwide place guide with seasonal and regional filters and Local Finds.
 - A station-aware trip planner for Sapporo, Sendai, Tokyo, Nagoya, Kyoto, Osaka, Hiroshima, Takamatsu, Fukuoka, and Naha.
+- Every destination field guide includes an interactive OpenStreetMap preview and a numbered first stop. Fourteen guides use researched city itineraries with multiple ordered stops; other guides show a single destination or clearly labelled approximate area marker, without invented connectors.
 - Five detailed Tokyo-origin pilot day-trip guides with shared planner and guide stop data, selectable route plots, source links and route-specific weather/short-day guidance.
 - Nine non-Tokyo city origins have ordered, full-day plans with stop-by-stop notes, suggested visit windows, whole-route maps, and a transit or driving choice. Live routes do not claim fixed fares or travel times.
 - A sitemap at /sitemap.xml.
 
 The five Tokyo routes are a pilot set with researched time and cost ranges, not live timetables or fare quotes. Plans for other city origins are editorial day sequences; visit windows are suggestions and Google Maps supplies current route options. Check venue hours, access, prices, and conditions with destination sources.
+
+Destination map locations are stored in `data/destination-map-locations.json`; the published guides do not send geocoding requests. OpenStreetMap data is credited in the map panels. Area and nearby-feature markers are labelled as approximate and may not identify an attraction entrance.
 
 ## Day-trip guide maintenance
 

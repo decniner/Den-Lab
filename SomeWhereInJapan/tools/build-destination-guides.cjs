@@ -42,6 +42,29 @@ function normalizeName(value) {
   return String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
+function locationRouteFor(record, location) {
+  if (!location || !Number.isFinite(location.latitude) || !Number.isFinite(location.longitude)) return null;
+  const precision = location.precision === 'destination' ? 'named destination' : location.precision === 'area' ? 'area-level' : 'nearby-feature';
+  const stop = {
+    id:`${record.id}-location`, order:1, name:record.name, area:record.raw.place || record.region,
+    address:location.locator || record.raw.place || record.region,
+    story:record.raw.description || `Use this ${precision.replace('-', ' ')} marker to orient your visit, then confirm the exact entrance and access details on the linked map.`,
+    coordinates:{latitude:location.latitude,longitude:location.longitude,precision,sourceIds:['osm-location']}
+  };
+  return {
+    kind:'location', location,
+    route:{
+      id:`${record.id}-place-map`, cityId:'destination', title:`${record.name}: location map`,
+      introduction:location.precision === 'destination'
+        ? `One destination marker for ${record.name}. No connecting route is implied without a researched stop order.`
+        : `This is an approximate ${precision.replace('-', ' ')} for ${location.locator || record.raw.place || record.region}; it may not mark the attraction entrance.`,
+      researchStatus:'place-locator', locatorPrecision:location.precision, locatorLabel:precision,
+      stops:[stop], legs:[],
+      sources:[{url:location.sourceUrl,label:'OpenStreetMap location record',checkedOn:location.checkedOn}]
+    }
+  };
+}
+
 function routeFor(record, placeRoutes, cityRoutes) {
   const place = (placeRoutes.routes || []).find(route => route.placeId === record.id);
   if (place) return { kind:'place', route:place };
@@ -154,7 +177,7 @@ function pageHtml(template, record, details, completion, routeRecord) {
   const queryText = `${record.name} ${raw.place || raw.region} Japan`;
   const query = encodeURIComponent(queryText);
   const mapPlace = String(raw.place || '').split(/[·,]/)[0].trim() || record.name;
-  const mapQuery = encodeURIComponent(`${mapPlace} ${raw.region} Japan`);
+  const mapQuery = encodeURIComponent(`${record.name} ${raw.place || raw.region} Japan`);
   const directionDestination = mapQuery;
   const mapUrl = `https://www.openstreetmap.org/search?query=${mapQuery}`;
   const googleMapUrl = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
@@ -169,15 +192,23 @@ function pageHtml(template, record, details, completion, routeRecord) {
       : `<li class="ng-stop"><span class="ng-stop-number">01</span><article><p class="ng-kicker">${escapeHtml(raw.region)} · JAPAN</p><h3>${escapeHtml(record.name)}</h3><p>${escapeHtml(raw.description || '')}</p><a class="ng-map-link" href="${mapUrl}" target="_blank" rel="noopener noreferrer">Open this place in OpenStreetMap ↗</a></article></li>`;
   const routeDataAttrs = routeRecord?.kind === 'city'
     ? `data-route-kind="city" data-route-id="${escapeHtml(route.id)}" data-route-city="${escapeHtml(route.cityId)}"`
+    : routeRecord?.kind === 'location'
+      ? `data-route-kind="location" data-route-id="${escapeHtml(route.id)}" data-route-city="destination" data-route-name="${escapeHtml(record.name)}" data-route-locator="${escapeHtml(route.stops[0].address)}" data-route-precision="${escapeHtml(routeRecord.location.precision)}" data-route-lat="${route.stops[0].coordinates.latitude}" data-route-lon="${route.stops[0].coordinates.longitude}" data-route-source="${escapeHtml(routeRecord.location.sourceUrl)}"`
     : routeRecord ? `data-route-kind="place" data-route-id="${escapeHtml(route.id)}"` : '';
   const routeMapMarkup = routeRecord
     ? `<div id="route-map" data-place-route-guide ${routeDataAttrs} aria-label="Interactive ${escapeHtml(record.name)} route map with ordered stops"></div>`
     : `<div class="ng-route-map-cta"><a class="ng-button" href="${mapUrl}" target="_blank" rel="noopener noreferrer">Open ${escapeHtml(record.name)} in OpenStreetMap ↗</a><a class="ng-button ng-button-quiet" href="${googleMapUrl}" target="_blank" rel="noopener noreferrer">Get directions ↗</a></div>`;
   const sequence = guideSequence(details);
-  const legsMarkup = route ? routeLegMarkup(route) : sequenceLegMarkup(sequence, record);
+  const legsMarkup = routeRecord?.kind === 'location'
+    ? `<li><span><strong>Start at ${escapeHtml(record.name)}</strong><small>One-place locator</small></span><a href="${mapUrl}" target="_blank" rel="noopener noreferrer">Open in OpenStreetMap</a></li>`
+    : route ? routeLegMarkup(route) : sequenceLegMarkup(sequence, record);
   const routeTitle = route?.title || `${record.name}: places to explore`;
   const routeIntroduction = route?.introduction || details.visitPlan || `Make ${record.name} the anchor of your visit. Start at the mapped destination, explore the named highlights below, then use live directions to connect the stops that suit your time.`;
-  const routeNote = route ? 'Select a numbered stop to highlight it on the map. Use the linked leg directions for current navigation.' : sequence.length ? 'The numbered sequence follows the destination guide. Use the linked leg directions to plan current travel between points.' : 'Use the map to orient yourself, then open live directions from your chosen starting point.';
+  const routeNote = routeRecord?.kind === 'location'
+    ? routeRecord.location.precision === 'destination'
+      ? 'Stop 01 is a named OpenStreetMap destination. This one-place map has no connecting route.'
+      : `Stop 01 is an approximate ${routeRecord.location.precision === 'area' ? 'area' : 'nearby-feature'} locator for ${routeRecord.location.locator || raw.place || raw.region}; it may not mark the attraction entrance.`
+    : route ? 'Select a numbered stop to highlight it on the map. Use the linked leg directions for current navigation.' : sequence.length ? 'The numbered sequence follows the destination guide. Use the linked leg directions to plan current travel between points.' : 'Use the map to orient yourself, then open live directions from your chosen starting point.';
   const routeSources = (route?.sources || []).map(source => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>${source.checkedOn ? ` · checked ${escapeHtml(source.checkedOn)}` : ''}</li>`).join('');
   const routeCount = orderedRouteStops.length || routeStopItems.length || 1;
   const sectionTitle = route ? route.title : sequence.length ? record.name + ": a suggested exploration sequence" : record.name + ": plan your visit";
@@ -212,13 +243,14 @@ function buildDestinationPages(siteDir, options = {}) {
   const details = readJson(path.join(siteDir, 'data/destination-guide-details.json')).records || {};
   const placeRoutes = readJson(path.join(siteDir, 'data/place-routes.json'));
   const cityRoutes = readJson(path.join(siteDir, 'data/city-routes.json'));
+  const mapLocations = readJson(path.join(siteDir, 'data/destination-map-locations.json')).records || {};
   const inventory = buildInventory(raw, identities.records, basePath);
   const template = fs.readFileSync(path.join(siteDir, 'tools/templates/destination-guide.html'), 'utf8');
   const canonical = inventory.records.filter(record => !record.aliasOf);
   const seenImages = new Set();
   const records = canonical.map(record => {
     const destinationDetails = details[record.id];
-    const destinationRoute = routeFor(record, placeRoutes, cityRoutes);
+    const destinationRoute = routeFor(record, placeRoutes, cityRoutes) || locationRouteFor(record, mapLocations[record.id]);
     const completion = destinationDetails ? evaluateGuideCompletion({ id: record.id, type: record.type, ...destinationDetails }) : { complete:false, missing:['researched guide details'] };
     const imageKey = record.raw.photo?.url || record.raw.image || null;
     const duplicateImage = imageKey && seenImages.has(imageKey);
@@ -236,7 +268,7 @@ function buildDestinationPages(siteDir, options = {}) {
       guide_status: completion.complete ? 'complete' : 'provisional',
       missing: completion.missing, sourceStatus: destinationDetails?.sources?.length ? 'sources-recorded' : 'not-researched',
       imageStatus: duplicateImage ? 'duplicate-suppressed' : record.raw.photo?.url ? 'catalogue-attribution-pending-review' : record.raw.image ? 'illustrative-unsplash-image' : 'missing',
-      mapStatus: record.raw.coordinates ? 'coordinates-present-pending-review' : 'no-coordinates'
+      mapStatus: mapLocations[record.id]?.precision ? `osm-${mapLocations[record.id].precision}-locator` : record.raw.coordinates ? 'coordinates-present-pending-review' : 'no-coordinates'
     };
   });
   const aliasPaths = [];
