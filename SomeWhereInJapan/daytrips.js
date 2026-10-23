@@ -69,7 +69,7 @@
       ),sources:src.odawara
     }
   ];
-  const image = (file, author, license, source) => ({ url: `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=1600`, credit: `${author} / Wikimedia Commons`, license, source });
+  const image = (file, author, license, source, alt) => {const verification={verified:true,source_page:source,credit:author,license,alt};return {url:`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=1600`,credit:author,license,source,alt,verification};};
   const route = (stops, rainPlan) => ({ stops, rainPlan });
   const stop = (name, address, lat, lon, walk, duration, story, mapsQuery = name + ', Japan') => ({ name, address, lat, lon, walk, duration, story, maps: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsQuery)}`, walkMap: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapsQuery)}&travelmode=walking` });
   const routeGuides = {
@@ -123,12 +123,9 @@
   DAY_TRIPS.forEach((trip) => {
     trip.guide = routeGuides[trip.slug];
     trip.image = {
-      kawagoe: image('Kurazukuri Street in Little Edo.jpg', 'Dandy1022', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Kurazukuri_Street_in_Little_Edo.jpg'),
-      sawara: image('Sawara onogawa 20100504.jpg', 'Tamaki', 'Public domain (PD-self)', 'https://commons.wikimedia.org/wiki/File:Sawara_onogawa_20100504.jpg'),
-      mitake: image('Mitake-san shrine.jpg', 'Christian Bauer', 'CC BY 2.0', 'https://commons.wikimedia.org/wiki/File:Mitake-san_shrine.jpg'),
-      narita: image('Naritasan-pagoda.jpg', 'Paul Currie', 'CC0', 'https://commons.wikimedia.org/wiki/File:Naritasan-pagoda.jpg'),
-      odawara: image('Odawara Castle.jpg', 'ZAC', 'CC BY 2.0', 'https://commons.wikimedia.org/wiki/File:Odawara_Castle.jpg')
-    }[trip.slug];
+      kawagoe: image('Kurazukuri Street in Little Edo.jpg', 'Dandy1022', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Kurazukuri_Street_in_Little_Edo.jpg', 'The Kurazukuri merchant street in Kawagoe, Saitama'),
+      odawara: image('Odawara Castle.jpg', 'ZAC', 'CC BY 2.0', 'https://commons.wikimedia.org/wiki/File:Odawara_Castle.jpg', 'Odawara Castle in Kanagawa, Japan')
+    }[trip.slug] || null;
     const append = (profile, time) => {
       if (!profile) return;
       const routeIndices = time === 'half' && trip.guide.shortStopIndices

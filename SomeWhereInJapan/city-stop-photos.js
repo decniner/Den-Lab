@@ -46,7 +46,7 @@ const records=[
 ['Makishi Public Market','Makishi Public Market 202202.jpg','Kugel~commonswiki','CC BY-SA 4.0','The colorful stalls inside Makishi Public Market'],
 ['Kokusai-dori & Heiwa-dori','Kokusai-dori05ss4272.jpg','663highland','CC BY 2.5','Kokusai-dori shopping street in central Naha']
 ];
-const photos=Object.freeze(Object.fromEntries(records.map(([name,file,credit,license,alt])=>[name,Object.freeze({url:`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=1100`,source:`https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file).replace(/%20/g,'_')}`,credit,license,alt})])));
+const photos=Object.freeze(Object.fromEntries(records.map(([name,file,credit,license,alt])=>{const source=`https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file).replace(/%20/g,'_')}`;const verification=Object.freeze({verified:true,source_page:source,credit,license,alt});return [name,Object.freeze({url:`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=1100`,source,credit,license,alt,verification})];})));
 if(typeof module!=='undefined'&&module.exports)module.exports=photos;
 if(root)root.CityStopPhotos=photos;
 })(typeof globalThis!=='undefined'?globalThis:this);
