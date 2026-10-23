@@ -275,10 +275,91 @@
     syncURL();
   }
 
+  // ---------- True-cost estimator (Phase 2, 2026-10-24) ----------
+  // Every rate is a published figure, printed next to its line with its
+  // source, and every input is adjustable. The one thing no listing shows —
+  // the fixed-asset-tax assessed value (評価額) — is an explicit planning
+  // assumption the user can replace, never a hidden constant.
+  function brokerageYen(priceYen) {
+    // Legal maximum, MLIT cap under the Real Estate Transaction Business Act:
+    // >¥4M: (3% + ¥60,000) + 10% consumption tax; ¥2–4M: (4% + ¥20,000) + tax;
+    // ≤¥2M: 5% + tax.
+    if (priceYen > 4000000) return Math.round((priceYen * 0.03 + 60000) * 1.1);
+    if (priceYen > 2000000) return Math.round((priceYen * 0.04 + 20000) * 1.1);
+    return Math.round(priceYen * 0.05 * 1.1);
+  }
+  function stampYen(priceYen) {
+    // Reduced stamp-duty bands for real-estate contracts to 31 Mar 2027 (NTA).
+    if (priceYen <= 1000000) return 200;
+    if (priceYen <= 5000000) return 1000;
+    if (priceYen <= 10000000) return 5000;
+    if (priceYen <= 50000000) return 10000;
+    return 30000;
+  }
+  var costState = { assessedPct: 70, landShare: 50, depositPct: 10, loan: false, buildTsuboPrice: 0, buildTsubo: 30 };
+  var currentDetail = null;
+  function yen(n) { return "¥" + Math.round(n).toLocaleString("en-US"); }
+  function costModel(p) {
+    var price = p.priceMan * 10000;
+    var assessed = price * costState.assessedPct / 100;
+    var landShare = p.type === "land" ? 100 : costState.landShare;
+    var aLand = assessed * landShare / 100, aBldg = assessed - aLand;
+    var lines = [];
+    lines.push({ label: "Purchase price", formula: "as listed" + (p.priceFrom ? " (starting price — subdivision range)" : ""), yen: price });
+    var brok = brokerageYen(price);
+    lines.push({ label: "Brokerage 仲介手数料 (legal maximum)", formula: price > 4000000 ? "(price × 3% + ¥60,000) × 1.10 consumption tax — MLIT cap" : "MLIT tiered cap + 10% consumption tax", yen: brok,
+      note: p.type === "house-new" ? "Often not charged when buying a new build directly from the developer — ask." : null });
+    lines.push({ label: "Stamp duty 印紙税", formula: "reduced band for contracts to 31 Mar 2027 (National Tax Agency)", yen: stampYen(price) });
+    lines.push({ label: "Registration tax 登録免許税", formula: "assessed land × 1.5% (rate to 31 Mar 2029) + assessed building × 2%", yen: aLand * 0.015 + aBldg * 0.02 });
+    lines.push({ label: "Real-estate acquisition tax 不動産取得税", formula: "(assessed land × ½ + assessed building) × 3% — residential rates to 31 Mar 2027; billed by the prefecture months later; home-buyer deductions not applied here", yen: (aLand * 0.5 + aBldg) * 0.03 });
+    lines.push({ label: "Judicial scrivener 司法書士報酬", formula: "market estimate — 2024 national survey average ¥56,678 for a transfer registration; varies by office", yen: 60000 });
+    var loanAmt = 0;
+    if (costState.loan) {
+      loanAmt = Math.max(0, price * (100 - costState.depositPct) / 100);
+      lines.push({ label: "Mortgage registration tax", formula: "loan × 0.4% (登録免許税; 0.1% for a qualifying own-home loan)", yen: loanAmt * 0.004 });
+    }
+    var buildCost = 0;
+    if (p.type === "land" && costState.buildTsuboPrice > 0) {
+      buildCost = costState.buildTsuboPrice * 10000 * costState.buildTsubo;
+      lines.push({ label: "New-build construction (your figures)", formula: "¥" + fmt(costState.buildTsuboPrice, 0) + "万 per tsubo × " + costState.buildTsubo + " tsubo — a planning figure you set, not a quote", yen: buildCost });
+    }
+    var fees = lines.slice(1).reduce(function (a, l) { return a + l.yen; }, 0);
+    var cashNeeded = costState.loan ? (price - loanAmt + fees) : (price + fees);
+    // First-year fixed asset + city planning tax estimate on the same
+    // assessed-value assumption, with the residential-land base reductions.
+    var lm2 = p.landM2 || 0;
+    var smallShare = lm2 ? Math.min(lm2, 200) / lm2 : 0;
+    var fatBase = aLand * (smallShare / 6 + (1 - smallShare) / 3) + aBldg;
+    var cptBase = aLand * (smallShare / 3 + (1 - smallShare) * 2 / 3) + aBldg;
+    var annual = fatBase * 0.014 + cptBase * 0.003;
+    return { lines: lines, fees: fees, cashNeeded: cashNeeded, loanAmt: loanAmt, buildCost: buildCost, annual: annual };
+  }
+  function costRowsHtml(p) {
+    var m = costModel(p);
+    var rows = m.lines.map(function (l) {
+      return '<div class="cost-row"><span>' + l.label + "<br><small>" + l.formula + "</small>" + (l.note ? "<br><small>" + l.note + "</small>" : "") + '</span><span class="cost-yen">' + yen(l.yen) + "</span></div>";
+    }).join("");
+    return rows +
+      '<div class="cost-row cost-total"><span>' + (costState.loan ? "Cash needed at purchase (deposit + fees; rest is the loan of " + yen(m.loanAmt) + ")" : "Total cash at purchase (price + one-time costs)") + '</span><span class="cost-yen">' + yen(m.cashNeeded) + "</span></div>" +
+      '<p class="why">One-time costs above the price: ' + yen(m.fees) + " (" + (100 * m.fees / (p.priceMan * 10000)).toFixed(1) + '% of price). Estimated first-year fixed asset tax 固定資産税 + city planning tax 都市計画税 on the same assessed-value assumption, with the residential-land base reductions (⅙ up to 200 m²): about ' + yen(m.annual) + " per year. Rates as published Oct 2026; this is a transparent estimate you can recompute from the formulas, not financial advice.</p>";
+  }
+  function costHtml(p) {
+    return '<div id="costBox"><h4>True cost — what you actually pay</h4>' +
+      '<div class="cost-inputs">' +
+      '<label>Assessed value 評価額 = <input type="number" id="cAssessed" min="10" max="150" step="5" value="' + costState.assessedPct + '"> % of price <small>(planning assumption — replace with the figure on the seller\'s tax notice)</small></label>' +
+      (p.type !== "land" ? '<label>Land share of assessed value <input type="number" id="cLandShare" min="0" max="100" step="5" value="' + costState.landShare + '"> %</label>' : "") +
+      '<label>Deposit <input type="number" id="cDeposit" min="0" max="100" step="5" value="' + costState.depositPct + '"> %</label>' +
+      '<label><input type="checkbox" id="cLoan"' + (costState.loan ? " checked" : "") + "> Model a mortgage for the rest</label>" +
+      (p.type === "land" ? '<label>Optional new build: ¥<input type="number" id="cBuildPrice" min="0" step="5" value="' + costState.buildTsuboPrice + '">万 per tsubo × <input type="number" id="cBuildTsubo" min="0" step="1" value="' + costState.buildTsubo + '"> tsubo</label>' : "") +
+      "</div>" +
+      '<div id="costRows">' + costRowsHtml(p) + "</div></div>";
+  }
+
   // Detail dialog
   var dlg = $("detail");
   var lastFocus = null;
   function openDetail(p) {
+    currentDetail = p;
     lastFocus = document.activeElement;
     var s = p._score;
     var cautions = effectiveCautions(p);
@@ -305,9 +386,28 @@
       "</dl>" +
       '<div class="card-actions"><a class="btn btn-source" href="' + p.source.url + '" target="_blank" rel="noopener">' + (isDetail(p) ? "Open original listing on " : "Open portal results on ") + p.source.name + ' ↗</a>' +
       '<a class="btn" href="' + mapsUrl(p) + '" target="_blank" rel="noopener">See the area on a map ↗</a></div>' +
+      costHtml(p) +
       '<p class="src">Source: ' + p.source.name + " · information date " + p.source.infoDate + " · collected " + D.site.researchedOn + ". Listings change and sell — always confirm price and availability on the original listing.</p>";
     dlg.showModal();
   }
+  // Estimator inputs: update state and re-render only the figures, so the
+  // field being typed in never loses focus.
+  $("dBody").addEventListener("input", function (e) {
+    if (!currentDetail) return;
+    var t = e.target;
+    var changed = true;
+    if (t.id === "cAssessed") costState.assessedPct = Math.min(150, Math.max(0, +t.value || 0));
+    else if (t.id === "cLandShare") costState.landShare = Math.min(100, Math.max(0, +t.value || 0));
+    else if (t.id === "cDeposit") costState.depositPct = Math.min(100, Math.max(0, +t.value || 0));
+    else if (t.id === "cLoan") costState.loan = t.checked;
+    else if (t.id === "cBuildPrice") costState.buildTsuboPrice = Math.max(0, +t.value || 0);
+    else if (t.id === "cBuildTsubo") costState.buildTsubo = Math.max(0, +t.value || 0);
+    else changed = false;
+    if (changed) {
+      var box = $("costRows");
+      if (box) box.innerHTML = costRowsHtml(currentDetail);
+    }
+  });
   $("dClose").addEventListener("click", function () { dlg.close(); });
   dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
   dlg.addEventListener("close", function () { if (lastFocus && lastFocus.focus) lastFocus.focus(); });
