@@ -1077,6 +1077,2168 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kerama-blue-research-route",
+      "placeId": "kerama-blue",
+      "cityId": "kerama-blue",
+      "title": "Kerama blue: a considered field route",
+      "introduction": "Ferry to Zamami; choose one island for the day, rather than forcing an unreliable island hop. Ferry schedules, reservations and sea conditions govern the day. Tokashiki, Zamami and Aka are separate island choices.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kerama-blue-0",
+        "name": "Tomari Port",
+        "address": "Tomari Port, Okinawa · Kerama Islands, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 26.2205,
+          "longitude": 127.6809,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kerama-blue-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kerama-blue-1",
+          "order": 1,
+          "name": "Zamami Port",
+          "area": "Okinawa · Kerama Islands",
+          "address": "Zamami Port, Okinawa · Kerama Islands, Japan",
+          "story": "Confirm the Zamami return boat before leaving the port.",
+          "coordinates": {
+            "latitude": 26.229,
+            "longitude": 127.303,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kerama-blue-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Zamami%20Port%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kerama-blue-2",
+          "order": 2,
+          "name": "Furuzamami Beach",
+          "area": "Okinawa · Kerama Islands",
+          "address": "Furuzamami Beach, Okinawa · Kerama Islands, Japan",
+          "story": "Snorkel from marked areas and check sea conditions.",
+          "coordinates": {
+            "latitude": 26.226,
+            "longitude": 127.305,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kerama-blue-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Furuzamami%20Beach%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kerama-blue-3",
+          "order": 3,
+          "name": "Ama Beach",
+          "area": "Okinawa · Kerama Islands",
+          "address": "Ama Beach, Okinawa · Kerama Islands, Japan",
+          "story": "Keep the final walk and ferry buffer in your plan.",
+          "coordinates": {
+            "latitude": 26.219,
+            "longitude": 127.298,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kerama-blue-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ama%20Beach%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kerama-blue-leg-1",
+          "fromId": "kerama-blue-0",
+          "toId": "kerama-blue-1",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                127.6809,
+                26.2205
+              ],
+              [
+                127.303,
+                26.229
+              ]
+            ],
+            "sourceIds": [
+              "kerama-blue-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=26.2205%2C127.6809&destination=26.229%2C127.303&travelmode=transit"
+        },
+        {
+          "id": "kerama-blue-leg-2",
+          "fromId": "kerama-blue-1",
+          "toId": "kerama-blue-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                127.303,
+                26.229
+              ],
+              [
+                127.305,
+                26.226
+              ]
+            ],
+            "sourceIds": [
+              "kerama-blue-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=26.229%2C127.303&destination=26.226%2C127.305&travelmode=walking"
+        },
+        {
+          "id": "kerama-blue-leg-3",
+          "fromId": "kerama-blue-2",
+          "toId": "kerama-blue-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                127.305,
+                26.226
+              ],
+              [
+                127.298,
+                26.219
+              ]
+            ],
+            "sourceIds": [
+              "kerama-blue-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=26.226%2C127.305&destination=26.219%2C127.298&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kerama-blue-access",
+          "label": "Kerama Islands · JNTO",
+          "url": "https://www.japan.travel/en/spot/ma_233/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kerama-blue-photo",
+          "label": "Wikimedia Commons: Okinawa_kerama_islands.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Okinawa_kerama_islands.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "destination photograph by Paipateroma; CC BY-SA 4.0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kifune-shrine-research-route",
+      "placeId": "kifune-shrine",
+      "cityId": "kifune-shrine",
+      "title": "Kifune Shrine: a considered field route",
+      "introduction": "Ride the Eizan Railway to Kibuneguchi, take Kyoto Bus 33, then walk the lantern-lined valley between three shrine precincts. The uphill walk from Kibuneguchi takes about 30 minutes; bus service and seasonal hours should be checked.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kifune-shrine-0",
+        "name": "Kibune Bus Stop",
+        "address": "Kibune Bus Stop, Kyoto · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 35.122,
+          "longitude": 135.762,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kifune-shrine-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kifune-shrine-1",
+          "order": 1,
+          "name": "Main Shrine",
+          "area": "Kyoto · Kansai",
+          "address": "Main Shrine, Kyoto · Kansai, Japan",
+          "story": "The lantern stairway is the iconic approach to the water deity.",
+          "coordinates": {
+            "latitude": 35.1219,
+            "longitude": 135.7629,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kifune-shrine-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Main%20Shrine%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kifune-shrine-2",
+          "order": 2,
+          "name": "Yui no Yashiro",
+          "area": "Kyoto · Kansai",
+          "address": "Yui no Yashiro, Kyoto · Kansai, Japan",
+          "story": "This small shrine is associated with relationships and match-making.",
+          "coordinates": {
+            "latitude": 35.1231,
+            "longitude": 135.7638,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kifune-shrine-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Yui%20no%20Yashiro%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kifune-shrine-3",
+          "order": 3,
+          "name": "Inner Shrine",
+          "area": "Kyoto · Kansai",
+          "address": "Inner Shrine, Kyoto · Kansai, Japan",
+          "story": "Continue to the original shrine site beneath cedar forest.",
+          "coordinates": {
+            "latitude": 35.1251,
+            "longitude": 135.7645,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kifune-shrine-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Inner%20Shrine%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kifune-shrine-leg-1",
+          "fromId": "kifune-shrine-0",
+          "toId": "kifune-shrine-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.762,
+                35.122
+              ],
+              [
+                135.7629,
+                35.1219
+              ]
+            ],
+            "sourceIds": [
+              "kifune-shrine-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.122%2C135.762&destination=35.1219%2C135.7629&travelmode=walking"
+        },
+        {
+          "id": "kifune-shrine-leg-2",
+          "fromId": "kifune-shrine-1",
+          "toId": "kifune-shrine-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7629,
+                35.1219
+              ],
+              [
+                135.7638,
+                35.1231
+              ]
+            ],
+            "sourceIds": [
+              "kifune-shrine-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.1219%2C135.7629&destination=35.1231%2C135.7638&travelmode=walking"
+        },
+        {
+          "id": "kifune-shrine-leg-3",
+          "fromId": "kifune-shrine-2",
+          "toId": "kifune-shrine-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7638,
+                35.1231
+              ],
+              [
+                135.7645,
+                35.1251
+              ]
+            ],
+            "sourceIds": [
+              "kifune-shrine-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.1231%2C135.7638&destination=35.1251%2C135.7645&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kifune-shrine-access",
+          "label": "Kifune Shrine",
+          "url": "https://kifunejinja.jp/en/access/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kifune-shrine-photo",
+          "label": "Photo credit: Photo: kibun ·  Source · CC BY 2.0 ",
+          "url": "https://commons.wikimedia.org/wiki/File:Sand%C5%8D,_Kifune_Shrine,_Kyoto_-_Jul_22,_2007.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kinkaku-ji-the-golden-pavilion-research-route",
+      "placeId": "kinkaku-ji-the-golden-pavilion",
+      "cityId": "kinkaku-ji-the-golden-pavilion",
+      "title": "Kinkaku-ji · the Golden Pavilion: a considered field route",
+      "introduction": "See the gold pavilion across Mirror Pond, then continue toward Ryoan-ji and Ninna-ji along the Kinukake area. Kyoto recommends subway plus bus via Kitaoji to avoid a slow, congested cross-city bus ride.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kinkaku-ji-the-golden-pavilion-0",
+        "name": "Kinkakuji-michi Bus Stop",
+        "address": "Kinkakuji-michi Bus Stop, Kyoto · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 35.0394,
+          "longitude": 135.7302,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kinkaku-ji-the-golden-pavilion-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kinkaku-ji-the-golden-pavilion-1",
+          "order": 1,
+          "name": "Kinkaku-ji",
+          "area": "Kyoto · Kansai",
+          "address": "Kinkaku-ji, Kyoto · Kansai, Japan",
+          "story": "Follow the garden’s one-way path for changing pond reflections.",
+          "coordinates": {
+            "latitude": 35.0394,
+            "longitude": 135.7292,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kinkaku-ji-the-golden-pavilion-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kinkaku-ji%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kinkaku-ji-the-golden-pavilion-2",
+          "order": 2,
+          "name": "Ryoan-ji",
+          "area": "Kyoto · Kansai",
+          "address": "Ryoan-ji, Kyoto · Kansai, Japan",
+          "story": "Sit with the rock garden instead of treating it as a photo stop.",
+          "coordinates": {
+            "latitude": 35.0345,
+            "longitude": 135.7183,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kinkaku-ji-the-golden-pavilion-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ryoan-ji%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kinkaku-ji-the-golden-pavilion-3",
+          "order": 3,
+          "name": "Ninna-ji",
+          "area": "Kyoto · Kansai",
+          "address": "Ninna-ji, Kyoto · Kansai, Japan",
+          "story": "The expansive grounds reward a slower visit than a quick temple circuit.",
+          "coordinates": {
+            "latitude": 35.0313,
+            "longitude": 135.7139,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kinkaku-ji-the-golden-pavilion-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ninna-ji%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kinkaku-ji-the-golden-pavilion-leg-1",
+          "fromId": "kinkaku-ji-the-golden-pavilion-0",
+          "toId": "kinkaku-ji-the-golden-pavilion-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7302,
+                35.0394
+              ],
+              [
+                135.7292,
+                35.0394
+              ]
+            ],
+            "sourceIds": [
+              "kinkaku-ji-the-golden-pavilion-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.0394%2C135.7302&destination=35.0394%2C135.7292&travelmode=walking"
+        },
+        {
+          "id": "kinkaku-ji-the-golden-pavilion-leg-2",
+          "fromId": "kinkaku-ji-the-golden-pavilion-1",
+          "toId": "kinkaku-ji-the-golden-pavilion-2",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7292,
+                35.0394
+              ],
+              [
+                135.7183,
+                35.0345
+              ]
+            ],
+            "sourceIds": [
+              "kinkaku-ji-the-golden-pavilion-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.0394%2C135.7292&destination=35.0345%2C135.7183&travelmode=transit"
+        },
+        {
+          "id": "kinkaku-ji-the-golden-pavilion-leg-3",
+          "fromId": "kinkaku-ji-the-golden-pavilion-2",
+          "toId": "kinkaku-ji-the-golden-pavilion-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7183,
+                35.0345
+              ],
+              [
+                135.7139,
+                35.0313
+              ]
+            ],
+            "sourceIds": [
+              "kinkaku-ji-the-golden-pavilion-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.0345%2C135.7183&destination=35.0313%2C135.7139&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kinkaku-ji-the-golden-pavilion-access",
+          "label": "Kinkaku-ji · Official access",
+          "url": "https://www.shokoku-ji.jp/en/kinkakuji/access/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kinkaku-ji-the-golden-pavilion-photo",
+          "label": "Wikimedia Commons: Water_reflection_of_Kinkaku-ji_Temple_with_a_tree_on_a_rock_in_the_pond,_Kyoto,_Japan.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Water_reflection_of_Kinkaku-ji_Temple_with_a_tree_on_a_rock_in_the_pond,_Kyoto,_Japan.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "destination photograph by Basile Morin; CC BY-SA 4.0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kinosaki-onsen-research-route",
+      "placeId": "kinosaki-onsen",
+      "cityId": "kinosaki-onsen",
+      "title": "Kinosaki Onsen: a considered field route",
+      "introduction": "Arrive by rail, stroll the willow-lined canal, and choose a few public baths instead of treating seven as a checklist. Check the day’s bath openings and ropeway hours. Overnight ryokan stays make the bath-town rhythm easiest.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kinosaki-onsen-0",
+        "name": "Kinosaki Onsen Station",
+        "address": "Kinosaki Onsen Station, Hyogo · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 35.6237,
+          "longitude": 134.8137,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kinosaki-onsen-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kinosaki-onsen-1",
+          "order": 1,
+          "name": "Ichino-yu",
+          "area": "Hyogo · Kansai",
+          "address": "Ichino-yu, Hyogo · Kansai, Japan",
+          "story": "Ask about local bathing hours and a shared pass at the station.",
+          "coordinates": {
+            "latitude": 35.6252,
+            "longitude": 134.8124,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kinosaki-onsen-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ichino-yu%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kinosaki-onsen-2",
+          "order": 2,
+          "name": "Goshono-yu",
+          "area": "Hyogo · Kansai",
+          "address": "Goshono-yu, Hyogo · Kansai, Japan",
+          "story": "Choose a bath, then walk the willow-lined canal between soaks.",
+          "coordinates": {
+            "latitude": 35.6267,
+            "longitude": 134.811,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kinosaki-onsen-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Goshono-yu%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kinosaki-onsen-3",
+          "order": 3,
+          "name": "Ropeway base",
+          "area": "Hyogo · Kansai",
+          "address": "Ropeway base, Hyogo · Kansai, Japan",
+          "story": "The ropeway adds a hillside panorama; check its last descent.",
+          "coordinates": {
+            "latitude": 35.6264,
+            "longitude": 134.8083,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kinosaki-onsen-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ropeway%20base%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kinosaki-onsen-leg-1",
+          "fromId": "kinosaki-onsen-0",
+          "toId": "kinosaki-onsen-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.8137,
+                35.6237
+              ],
+              [
+                134.8124,
+                35.6252
+              ]
+            ],
+            "sourceIds": [
+              "kinosaki-onsen-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.6237%2C134.8137&destination=35.6252%2C134.8124&travelmode=walking"
+        },
+        {
+          "id": "kinosaki-onsen-leg-2",
+          "fromId": "kinosaki-onsen-1",
+          "toId": "kinosaki-onsen-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.8124,
+                35.6252
+              ],
+              [
+                134.811,
+                35.6267
+              ]
+            ],
+            "sourceIds": [
+              "kinosaki-onsen-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.6252%2C134.8124&destination=35.6267%2C134.811&travelmode=walking"
+        },
+        {
+          "id": "kinosaki-onsen-leg-3",
+          "fromId": "kinosaki-onsen-2",
+          "toId": "kinosaki-onsen-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.811,
+                35.6267
+              ],
+              [
+                134.8083,
+                35.6264
+              ]
+            ],
+            "sourceIds": [
+              "kinosaki-onsen-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.6267%2C134.811&destination=35.6264%2C134.8083&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kinosaki-onsen-access",
+          "label": "Kinosaki Onsen Tourism Association",
+          "url": "https://kinosaki-spa.gr.jp/contact/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kinosaki-onsen-photo",
+          "label": "Photo credit: Photo: 663highland ·  Source · CC BY 2.5 ",
+          "url": "https://commons.wikimedia.org/wiki/File:Kinosaki_onsen01_2816.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kintaikyo-bridge-research-route",
+      "placeId": "kintaikyo-bridge",
+      "cityId": "kintaikyo-bridge",
+      "title": "Kintaikyo Bridge: a considered field route",
+      "introduction": "Cross the five timber arches, walk Kikko Park, then ride the ropeway toward Iwakuni Castle. Take a local bus from Iwakuni Station. Bridge, ropeway and castle operations may vary; check current service before planning the summit.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kintaikyo-bridge-0",
+        "name": "JR Iwakuni Station",
+        "address": "JR Iwakuni Station, Yamaguchi · Chugoku, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 34.1718,
+          "longitude": 132.2252,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kintaikyo-bridge-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kintaikyo-bridge-1",
+          "order": 1,
+          "name": "Kintaikyo Bridge",
+          "area": "Yamaguchi · Chugoku",
+          "address": "Kintaikyo Bridge, Yamaguchi · Chugoku, Japan",
+          "story": "Cross both ways and look back at the five timber arches.",
+          "coordinates": {
+            "latitude": 34.1673,
+            "longitude": 132.1785,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kintaikyo%20Bridge%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kintaikyo-bridge-2",
+          "order": 2,
+          "name": "Kikko Park",
+          "area": "Yamaguchi · Chugoku",
+          "address": "Kikko Park, Yamaguchi · Chugoku, Japan",
+          "story": "Pause among former samurai residences and seasonal flowers.",
+          "coordinates": {
+            "latitude": 34.167,
+            "longitude": 132.1795,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kikko%20Park%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kintaikyo-bridge-3",
+          "order": 3,
+          "name": "Castle Ropeway lower station",
+          "area": "Yamaguchi · Chugoku",
+          "address": "Castle Ropeway lower station, Yamaguchi · Chugoku, Japan",
+          "story": "The castle sits uphill; coordinate your visit with the last ropeway.",
+          "coordinates": {
+            "latitude": 34.1677,
+            "longitude": 132.1808,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Castle%20Ropeway%20lower%20station%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kintaikyo-bridge-4",
+          "order": 4,
+          "name": "Castle Ropeway upper station",
+          "area": "Yamaguchi · Chugoku",
+          "address": "Castle Ropeway upper station, Yamaguchi · Chugoku, Japan",
+          "story": "Take in the bridge and river plain from the hilltop keep.",
+          "coordinates": {
+            "latitude": 34.1683,
+            "longitude": 132.1795,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Castle%20Ropeway%20upper%20station%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kintaikyo-bridge-5",
+          "order": 5,
+          "name": "Iwakuni Castle",
+          "area": "Yamaguchi · Chugoku",
+          "address": "Iwakuni Castle, Yamaguchi · Chugoku, Japan",
+          "story": "Iwakuni Castle is part of this suggested sequence. Take a local bus from Iwakuni Station. Bridge, ropeway and castle operations may vary; check current service before planning the summit.",
+          "coordinates": {
+            "latitude": 34.1685,
+            "longitude": 132.1789,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Iwakuni%20Castle%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kintaikyo-bridge-leg-1",
+          "fromId": "kintaikyo-bridge-0",
+          "toId": "kintaikyo-bridge-1",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.2252,
+                34.1718
+              ],
+              [
+                132.1785,
+                34.1673
+              ]
+            ],
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.1718%2C132.2252&destination=34.1673%2C132.1785&travelmode=transit"
+        },
+        {
+          "id": "kintaikyo-bridge-leg-2",
+          "fromId": "kintaikyo-bridge-1",
+          "toId": "kintaikyo-bridge-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.1785,
+                34.1673
+              ],
+              [
+                132.1795,
+                34.167
+              ]
+            ],
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.1673%2C132.1785&destination=34.167%2C132.1795&travelmode=walking"
+        },
+        {
+          "id": "kintaikyo-bridge-leg-3",
+          "fromId": "kintaikyo-bridge-2",
+          "toId": "kintaikyo-bridge-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.1795,
+                34.167
+              ],
+              [
+                132.1808,
+                34.1677
+              ]
+            ],
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.167%2C132.1795&destination=34.1677%2C132.1808&travelmode=walking"
+        },
+        {
+          "id": "kintaikyo-bridge-leg-4",
+          "fromId": "kintaikyo-bridge-3",
+          "toId": "kintaikyo-bridge-4",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.1808,
+                34.1677
+              ],
+              [
+                132.1795,
+                34.1683
+              ]
+            ],
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.1677%2C132.1808&destination=34.1683%2C132.1795&travelmode=transit"
+        },
+        {
+          "id": "kintaikyo-bridge-leg-5",
+          "fromId": "kintaikyo-bridge-4",
+          "toId": "kintaikyo-bridge-5",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.1795,
+                34.1683
+              ],
+              [
+                132.1789,
+                34.1685
+              ]
+            ],
+            "sourceIds": [
+              "kintaikyo-bridge-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.1683%2C132.1795&destination=34.1685%2C132.1789&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kintaikyo-bridge-access",
+          "label": "Iwakuni City Tourism · Bridge area",
+          "url": "https://kankou.iwakuni-city.net/itn/by-area/kintaikyo-bridge-area/kintaikyo-bridge/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kintaikyo-bridge-photo",
+          "label": "Photo credit: Photo: そらみみ ·  Source · CC BY-SA 4.0 ",
+          "url": "https://commons.wikimedia.org/wiki/File:Tenshu_of_Iwakuni_Castle_and_Kintaikyo_Bridge_2.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kirishima-jingu-research-route",
+      "placeId": "kirishima-jingu",
+      "cityId": "kirishima-jingu",
+      "title": "Kirishima Jingu: a considered field route",
+      "introduction": "Follow a cedar-lined approach to the vermilion shrine in the Kirishima highlands. The access bus connects Kagoshima Airport and the shrine, but departures are limited. Check the return timetable and mountain weather.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kirishima-jingu-0",
+        "name": "Kirishima Jingu Station",
+        "address": "Kirishima Jingu Station, Kagoshima · Kyushu, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 31.841,
+          "longitude": 130.871,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kirishima-jingu-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kirishima-jingu-1",
+          "order": 1,
+          "name": "Forest approach",
+          "area": "Kagoshima · Kyushu",
+          "address": "Forest approach, Kagoshima · Kyushu, Japan",
+          "story": "The cedar-lined approach creates a quiet transition into the sacred precinct.",
+          "coordinates": {
+            "latitude": 31.818,
+            "longitude": 130.837,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kirishima-jingu-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Forest%20approach%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kirishima-jingu-2",
+          "order": 2,
+          "name": "Main gate",
+          "area": "Kagoshima · Kyushu",
+          "address": "Main gate, Kagoshima · Kyushu, Japan",
+          "story": "Pause at the gate and notice the forest framing the vivid architecture.",
+          "coordinates": {
+            "latitude": 31.8185,
+            "longitude": 130.8368,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kirishima-jingu-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Main%20gate%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kirishima-jingu-3",
+          "order": 3,
+          "name": "Main sanctuary",
+          "area": "Kagoshima · Kyushu",
+          "address": "Main sanctuary, Kagoshima · Kyushu, Japan",
+          "story": "The sanctuary is an active worship space; visit with care.",
+          "coordinates": {
+            "latitude": 31.8187,
+            "longitude": 130.8366,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kirishima-jingu-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Main%20sanctuary%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kirishima-jingu-leg-1",
+          "fromId": "kirishima-jingu-0",
+          "toId": "kirishima-jingu-1",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.871,
+                31.841
+              ],
+              [
+                130.837,
+                31.818
+              ]
+            ],
+            "sourceIds": [
+              "kirishima-jingu-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=31.841%2C130.871&destination=31.818%2C130.837&travelmode=transit"
+        },
+        {
+          "id": "kirishima-jingu-leg-2",
+          "fromId": "kirishima-jingu-1",
+          "toId": "kirishima-jingu-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.837,
+                31.818
+              ],
+              [
+                130.8368,
+                31.8185
+              ]
+            ],
+            "sourceIds": [
+              "kirishima-jingu-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=31.818%2C130.837&destination=31.8185%2C130.8368&travelmode=walking"
+        },
+        {
+          "id": "kirishima-jingu-leg-3",
+          "fromId": "kirishima-jingu-2",
+          "toId": "kirishima-jingu-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.8368,
+                31.8185
+              ],
+              [
+                130.8366,
+                31.8187
+              ]
+            ],
+            "sourceIds": [
+              "kirishima-jingu-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=31.8185%2C130.8368&destination=31.8187%2C130.8366&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kirishima-jingu-access",
+          "label": "Kirishima Jingu · Official access",
+          "url": "https://kirishimajingu.or.jp/access/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kirishima-jingu-photo",
+          "label": "Photo credit: Photo: MaedaAkihiko ·  Source · CC BY-SA 4.0 ",
+          "url": "https://commons.wikimedia.org/wiki/File:Kirishima-Jingu_Front.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kiso-valley-post-towns-research-route",
+      "placeId": "kiso-valley-post-towns",
+      "cityId": "kiso-valley-post-towns",
+      "title": "Kiso Valley post towns: a considered field route",
+      "introduction": "Begin in Magome, walk the old Nakasendo over the pass to Tsumago, and use local bus and rail for the return. This is a real mountain walk. Start in Magome for the more downhill direction; check buses, trail conditions and seasonal luggage transfer.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kiso-valley-post-towns-0",
+        "name": "Nakatsugawa Station",
+        "address": "Nakatsugawa Station, Nagano · Chubu, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 35.5009,
+          "longitude": 137.503,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kiso-valley-post-towns-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kiso-valley-post-towns-1",
+          "order": 1,
+          "name": "Magome-juku",
+          "area": "Nagano · Chubu",
+          "address": "Magome-juku, Nagano · Chubu, Japan",
+          "story": "Explore Magome’s steep street before beginning the trail.",
+          "coordinates": {
+            "latitude": 35.5302,
+            "longitude": 137.569,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Magome-juku%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kiso-valley-post-towns-2",
+          "order": 2,
+          "name": "Magome Pass",
+          "area": "Nagano · Chubu",
+          "address": "Magome Pass, Nagano · Chubu, Japan",
+          "story": "The pass is the hike’s high point; carry water and allow time.",
+          "coordinates": {
+            "latitude": 35.552,
+            "longitude": 137.579,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Magome%20Pass%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kiso-valley-post-towns-3",
+          "order": 3,
+          "name": "Odaki and Medaki Falls",
+          "area": "Nagano · Chubu",
+          "address": "Odaki and Medaki Falls, Nagano · Chubu, Japan",
+          "story": "The waterfall detour can be slippery after rain.",
+          "coordinates": {
+            "latitude": 35.568,
+            "longitude": 137.585,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Odaki%20and%20Medaki%20Falls%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kiso-valley-post-towns-4",
+          "order": 4,
+          "name": "Tsumago-juku",
+          "area": "Nagano · Chubu",
+          "address": "Tsumago-juku, Nagano · Chubu, Japan",
+          "story": "Tsumago’s preserved inn town is still a lived-in community.",
+          "coordinates": {
+            "latitude": 35.5787,
+            "longitude": 137.595,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Tsumago-juku%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kiso-valley-post-towns-5",
+          "order": 5,
+          "name": "Nagiso Station",
+          "area": "Nagano · Chubu",
+          "address": "Nagiso Station, Nagano · Chubu, Japan",
+          "story": "Use the infrequent local bus to reach Nagiso Station.",
+          "coordinates": {
+            "latitude": 35.598,
+            "longitude": 137.608,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Nagiso%20Station%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kiso-valley-post-towns-leg-1",
+          "fromId": "kiso-valley-post-towns-0",
+          "toId": "kiso-valley-post-towns-1",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.503,
+                35.5009
+              ],
+              [
+                137.569,
+                35.5302
+              ]
+            ],
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.5009%2C137.503&destination=35.5302%2C137.569&travelmode=transit"
+        },
+        {
+          "id": "kiso-valley-post-towns-leg-2",
+          "fromId": "kiso-valley-post-towns-1",
+          "toId": "kiso-valley-post-towns-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.569,
+                35.5302
+              ],
+              [
+                137.579,
+                35.552
+              ]
+            ],
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.5302%2C137.569&destination=35.552%2C137.579&travelmode=walking"
+        },
+        {
+          "id": "kiso-valley-post-towns-leg-3",
+          "fromId": "kiso-valley-post-towns-2",
+          "toId": "kiso-valley-post-towns-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.579,
+                35.552
+              ],
+              [
+                137.585,
+                35.568
+              ]
+            ],
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.552%2C137.579&destination=35.568%2C137.585&travelmode=walking"
+        },
+        {
+          "id": "kiso-valley-post-towns-leg-4",
+          "fromId": "kiso-valley-post-towns-3",
+          "toId": "kiso-valley-post-towns-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.585,
+                35.568
+              ],
+              [
+                137.595,
+                35.5787
+              ]
+            ],
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.568%2C137.585&destination=35.5787%2C137.595&travelmode=walking"
+        },
+        {
+          "id": "kiso-valley-post-towns-leg-5",
+          "fromId": "kiso-valley-post-towns-4",
+          "toId": "kiso-valley-post-towns-5",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.595,
+                35.5787
+              ],
+              [
+                137.608,
+                35.598
+              ]
+            ],
+            "sourceIds": [
+              "kiso-valley-post-towns-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.5787%2C137.595&destination=35.598%2C137.608&travelmode=transit"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kiso-valley-post-towns-access",
+          "label": "Kiso Ontake Tourism Office · Magome–Tsumago",
+          "url": "https://en.visitkiso.com/nakasendo/magome-tsumago",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kiso-valley-post-towns-photo",
+          "label": "Wikimedia Commons: Magome-juku.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Magome-juku.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "destination photograph by lumoplank; CC0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kiyomizu-dera-above-kyoto-research-route",
+      "placeId": "kiyomizu-dera-above-kyoto",
+      "cityId": "kiyomizu-dera-above-kyoto",
+      "title": "Kiyomizu-dera above Kyoto: a considered field route",
+      "introduction": "Take in the city from the wooden stage, then descend through Sannenzaka and Ninenzaka toward Yasaka Shrine. The approach is steep and busy. Finish near Gion-Shijo or Kyoto-Kawaramachi rather than doubling back uphill.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kiyomizu-dera-above-kyoto-0",
+        "name": "Kiyomizu-michi Bus Stop",
+        "address": "Kiyomizu-michi Bus Stop, Kyoto · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 34.996,
+          "longitude": 135.78,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kiyomizu-dera-above-kyoto-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kiyomizu-dera-above-kyoto-1",
+          "order": 1,
+          "name": "Kiyomizu-dera",
+          "area": "Kyoto · Kansai",
+          "address": "Kiyomizu-dera, Kyoto · Kansai, Japan",
+          "story": "The wooden stage opens a dramatic view over Kyoto’s hillside.",
+          "coordinates": {
+            "latitude": 34.9949,
+            "longitude": 135.785,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kiyomizu-dera-above-kyoto-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kiyomizu-dera%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kiyomizu-dera-above-kyoto-2",
+          "order": 2,
+          "name": "Sannenzaka",
+          "area": "Kyoto · Kansai",
+          "address": "Sannenzaka, Kyoto · Kansai, Japan",
+          "story": "Stone paving and steep steps need care in wet weather.",
+          "coordinates": {
+            "latitude": 34.998,
+            "longitude": 135.781,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kiyomizu-dera-above-kyoto-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Sannenzaka%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kiyomizu-dera-above-kyoto-3",
+          "order": 3,
+          "name": "Yasaka Pagoda",
+          "area": "Kyoto · Kansai",
+          "address": "Yasaka Pagoda, Kyoto · Kansai, Japan",
+          "story": "Pause at the pagoda; keep doorways clear for residents.",
+          "coordinates": {
+            "latitude": 35.0004,
+            "longitude": 135.7789,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kiyomizu-dera-above-kyoto-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Yasaka%20Pagoda%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kiyomizu-dera-above-kyoto-4",
+          "order": 4,
+          "name": "Yasaka Shrine",
+          "area": "Kyoto · Kansai",
+          "address": "Yasaka Shrine, Kyoto · Kansai, Japan",
+          "story": "Finish near Gion rather than retracing the steep approach.",
+          "coordinates": {
+            "latitude": 35.0036,
+            "longitude": 135.7785,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kiyomizu-dera-above-kyoto-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Yasaka%20Shrine%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kiyomizu-dera-above-kyoto-leg-1",
+          "fromId": "kiyomizu-dera-above-kyoto-0",
+          "toId": "kiyomizu-dera-above-kyoto-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.78,
+                34.996
+              ],
+              [
+                135.785,
+                34.9949
+              ]
+            ],
+            "sourceIds": [
+              "kiyomizu-dera-above-kyoto-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.996%2C135.78&destination=34.9949%2C135.785&travelmode=walking"
+        },
+        {
+          "id": "kiyomizu-dera-above-kyoto-leg-2",
+          "fromId": "kiyomizu-dera-above-kyoto-1",
+          "toId": "kiyomizu-dera-above-kyoto-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.785,
+                34.9949
+              ],
+              [
+                135.781,
+                34.998
+              ]
+            ],
+            "sourceIds": [
+              "kiyomizu-dera-above-kyoto-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.9949%2C135.785&destination=34.998%2C135.781&travelmode=walking"
+        },
+        {
+          "id": "kiyomizu-dera-above-kyoto-leg-3",
+          "fromId": "kiyomizu-dera-above-kyoto-2",
+          "toId": "kiyomizu-dera-above-kyoto-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.781,
+                34.998
+              ],
+              [
+                135.7789,
+                35.0004
+              ]
+            ],
+            "sourceIds": [
+              "kiyomizu-dera-above-kyoto-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.998%2C135.781&destination=35.0004%2C135.7789&travelmode=walking"
+        },
+        {
+          "id": "kiyomizu-dera-above-kyoto-leg-4",
+          "fromId": "kiyomizu-dera-above-kyoto-3",
+          "toId": "kiyomizu-dera-above-kyoto-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7789,
+                35.0004
+              ],
+              [
+                135.7785,
+                35.0036
+              ]
+            ],
+            "sourceIds": [
+              "kiyomizu-dera-above-kyoto-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.0004%2C135.7789&destination=35.0036%2C135.7785&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kiyomizu-dera-above-kyoto-access",
+          "label": "Kyoto Travel · Higashiyama access",
+          "url": "https://kyoto.travel/en/getting-around/comfortable-access-to-higashiyama-kiyomizu-dera-temple/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kiyomizu-dera-above-kyoto-photo",
+          "label": "Wikimedia Commons: Kiyomizu-dera_in_Kyoto-r.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera_in_Kyoto-r.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "destination photograph by Oilstreet; CC BY-SA 3.0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kobe-harborland-research-route",
+      "placeId": "kobe-harborland",
+      "cityId": "kobe-harborland",
+      "title": "Kobe Harborland: a considered field route",
+      "introduction": "Walk from Kobe Station through the waterfront toward Meriken Park, Port Tower and Nankinmachi. This is an urban harbor walk; check observation deck hours and waterfront event closures.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kobe-harborland-0",
+        "name": "JR Kobe Station",
+        "address": "JR Kobe Station, Kobe · Hyogo · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 34.6795,
+          "longitude": 135.178,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kobe-harborland-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kobe-harborland-1",
+          "order": 1,
+          "name": "umie MOSAIC",
+          "area": "Kobe · Hyogo · Kansai",
+          "address": "umie MOSAIC, Kobe · Hyogo · Kansai, Japan",
+          "story": "The waterfront terrace is a strong place to watch evening arrive.",
+          "coordinates": {
+            "latitude": 34.6795,
+            "longitude": 135.186,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kobe-harborland-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=umie%20MOSAIC%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kobe-harborland-2",
+          "order": 2,
+          "name": "Meriken Park",
+          "area": "Kobe · Hyogo · Kansai",
+          "address": "Meriken Park, Kobe · Hyogo · Kansai, Japan",
+          "story": "Meriken Park opens the view across Kobe’s working harbour.",
+          "coordinates": {
+            "latitude": 34.682,
+            "longitude": 135.186,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kobe-harborland-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Meriken%20Park%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kobe-harborland-3",
+          "order": 3,
+          "name": "Kobe Port Tower",
+          "area": "Kobe · Hyogo · Kansai",
+          "address": "Kobe Port Tower, Kobe · Hyogo · Kansai, Japan",
+          "story": "Check observation deck hours before timing sunset.",
+          "coordinates": {
+            "latitude": 34.6828,
+            "longitude": 135.1863,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kobe-harborland-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kobe%20Port%20Tower%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kobe-harborland-4",
+          "order": 4,
+          "name": "Nankinmachi",
+          "area": "Kobe · Hyogo · Kansai",
+          "address": "Nankinmachi, Kobe · Hyogo · Kansai, Japan",
+          "story": "A short inland detour brings you to Chinatown’s food stalls.",
+          "coordinates": {
+            "latitude": 34.688,
+            "longitude": 135.189,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kobe-harborland-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Nankinmachi%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kobe-harborland-leg-1",
+          "fromId": "kobe-harborland-0",
+          "toId": "kobe-harborland-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.178,
+                34.6795
+              ],
+              [
+                135.186,
+                34.6795
+              ]
+            ],
+            "sourceIds": [
+              "kobe-harborland-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.6795%2C135.178&destination=34.6795%2C135.186&travelmode=walking"
+        },
+        {
+          "id": "kobe-harborland-leg-2",
+          "fromId": "kobe-harborland-1",
+          "toId": "kobe-harborland-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.186,
+                34.6795
+              ],
+              [
+                135.186,
+                34.682
+              ]
+            ],
+            "sourceIds": [
+              "kobe-harborland-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.6795%2C135.186&destination=34.682%2C135.186&travelmode=walking"
+        },
+        {
+          "id": "kobe-harborland-leg-3",
+          "fromId": "kobe-harborland-2",
+          "toId": "kobe-harborland-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.186,
+                34.682
+              ],
+              [
+                135.1863,
+                34.6828
+              ]
+            ],
+            "sourceIds": [
+              "kobe-harborland-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.682%2C135.186&destination=34.6828%2C135.1863&travelmode=walking"
+        },
+        {
+          "id": "kobe-harborland-leg-4",
+          "fromId": "kobe-harborland-3",
+          "toId": "kobe-harborland-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.1863,
+                34.6828
+              ],
+              [
+                135.189,
+                34.688
+              ]
+            ],
+            "sourceIds": [
+              "kobe-harborland-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.6828%2C135.1863&destination=34.688%2C135.189&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kobe-harborland-access",
+          "label": "Kobe official visitor information",
+          "url": "https://www.feel-kobe.jp/en/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kobe-harborland-photo",
+          "label": "Photo credit: Photo: そらみみ ·  Source · CC BY-SA 4.0 ",
+          "url": "https://commons.wikimedia.org/wiki/File:Kobe_Port_Tower_and_Harborland_at_night_20190202-2.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kobe-nunobiki-herb-gardens-research-route",
+      "placeId": "kobe-nunobiki-herb-gardens",
+      "cityId": "kobe-nunobiki-herb-gardens",
+      "title": "Kobe Nunobiki Herb Gardens: a considered field route",
+      "introduction": "Ride the ropeway above Shin-Kobe, wander the hillside gardens, then return by gondola or a prepared mountain walk. The gardens are reached by ropeway. Check last gondola, seasonal hours and weather suspensions before starting.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kobe-nunobiki-herb-gardens-0",
+        "name": "Shin-Kobe Station",
+        "address": "Shin-Kobe Station, Kobe · Hyogo · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 34.7055,
+          "longitude": 135.1955,
+          "precision": "Approximate planning point; use live directions for navigation",
+          "sourceIds": [
+            "kobe-nunobiki-herb-gardens-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kobe-nunobiki-herb-gardens-1",
+          "order": 1,
+          "name": "Ropeway lower station",
+          "area": "Kobe · Hyogo · Kansai",
+          "address": "Ropeway lower station, Kobe · Hyogo · Kansai, Japan",
+          "story": "Walk from Shin-Kobe to the ropeway lower station.",
+          "coordinates": {
+            "latitude": 34.7058,
+            "longitude": 135.195,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kobe-nunobiki-herb-gardens-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ropeway%20lower%20station%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kobe-nunobiki-herb-gardens-2",
+          "order": 2,
+          "name": "Ropeway upper station",
+          "area": "Kobe · Hyogo · Kansai",
+          "address": "Ropeway upper station, Kobe · Hyogo · Kansai, Japan",
+          "story": "The ride reveals waterfalls, forest and the city below.",
+          "coordinates": {
+            "latitude": 34.719,
+            "longitude": 135.193,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kobe-nunobiki-herb-gardens-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ropeway%20upper%20station%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kobe-nunobiki-herb-gardens-3",
+          "order": 3,
+          "name": "Herb Gardens",
+          "area": "Kobe · Hyogo · Kansai",
+          "address": "Herb Gardens, Kobe · Hyogo · Kansai, Japan",
+          "story": "Follow the garden map through seasonal planting and viewpoints.",
+          "coordinates": {
+            "latitude": 34.718,
+            "longitude": 135.193,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kobe-nunobiki-herb-gardens-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Herb%20Gardens%20Japan%20travel%20guide"
+        },
+        {
+          "id": "kobe-nunobiki-herb-gardens-4",
+          "order": 4,
+          "name": "Return station",
+          "area": "Kobe · Hyogo · Kansai",
+          "address": "Return station, Kobe · Hyogo · Kansai, Japan",
+          "story": "Check the final gondola before choosing a downhill walk.",
+          "coordinates": {
+            "latitude": 34.7058,
+            "longitude": 135.195,
+            "precision": "Approximate planning point; confirm the exact entrance",
+            "sourceIds": [
+              "kobe-nunobiki-herb-gardens-access"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Return%20station%20Japan%20travel%20guide"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kobe-nunobiki-herb-gardens-leg-1",
+          "fromId": "kobe-nunobiki-herb-gardens-0",
+          "toId": "kobe-nunobiki-herb-gardens-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.1955,
+                34.7055
+              ],
+              [
+                135.195,
+                34.7058
+              ]
+            ],
+            "sourceIds": [
+              "kobe-nunobiki-herb-gardens-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.7055%2C135.1955&destination=34.7058%2C135.195&travelmode=walking"
+        },
+        {
+          "id": "kobe-nunobiki-herb-gardens-leg-2",
+          "fromId": "kobe-nunobiki-herb-gardens-1",
+          "toId": "kobe-nunobiki-herb-gardens-2",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.195,
+                34.7058
+              ],
+              [
+                135.193,
+                34.719
+              ]
+            ],
+            "sourceIds": [
+              "kobe-nunobiki-herb-gardens-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.7058%2C135.195&destination=34.719%2C135.193&travelmode=transit"
+        },
+        {
+          "id": "kobe-nunobiki-herb-gardens-leg-3",
+          "fromId": "kobe-nunobiki-herb-gardens-2",
+          "toId": "kobe-nunobiki-herb-gardens-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.193,
+                34.719
+              ],
+              [
+                135.193,
+                34.718
+              ]
+            ],
+            "sourceIds": [
+              "kobe-nunobiki-herb-gardens-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.719%2C135.193&destination=34.718%2C135.193&travelmode=walking"
+        },
+        {
+          "id": "kobe-nunobiki-herb-gardens-leg-4",
+          "fromId": "kobe-nunobiki-herb-gardens-3",
+          "toId": "kobe-nunobiki-herb-gardens-4",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.193,
+                34.718
+              ],
+              [
+                135.195,
+                34.7058
+              ]
+            ],
+            "sourceIds": [
+              "kobe-nunobiki-herb-gardens-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.718%2C135.193&destination=34.7058%2C135.195&travelmode=transit"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kobe-nunobiki-herb-gardens-access",
+          "label": "Kobe Nunobiki Herb Gardens · Hours and fares",
+          "url": "https://www.kobeherb.com/en/hours-of-operation-and-fares/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "visitor access, transport guidance and the route context described in this guide"
+          ]
+        },
+        {
+          "id": "kobe-nunobiki-herb-gardens-photo",
+          "label": "Photo credit: Photo: Wikimedia Commons · CC BY-SA 3.0 ·  Source · See linked Wikimedia Commons file page ",
+          "url": "https://commons.wikimedia.org/wiki/File:Kobe_Nunobiki_Herb_Garden04n4272.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
     }
   ],
   "maps": {
@@ -1759,6 +3921,1836 @@
           "properties": {
             "id": "kawagoe-line-5",
             "routeLegId": "kawagoe-leg-05",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kerama-blue": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          127.292,
+          26.213,
+          127.6869,
+          26.235
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              127.6809,
+              26.2205
+            ]
+          },
+          "properties": {
+            "id": "kerama-blue-0",
+            "routeStopId": "kerama-blue-0",
+            "name": "Tomari Port",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              127.303,
+              26.229
+            ]
+          },
+          "properties": {
+            "id": "kerama-blue-1",
+            "routeStopId": "kerama-blue-1",
+            "name": "Zamami Port",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              127.305,
+              26.226
+            ]
+          },
+          "properties": {
+            "id": "kerama-blue-2",
+            "routeStopId": "kerama-blue-2",
+            "name": "Furuzamami Beach",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              127.298,
+              26.219
+            ]
+          },
+          "properties": {
+            "id": "kerama-blue-3",
+            "routeStopId": "kerama-blue-3",
+            "name": "Ama Beach",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                127.6809,
+                26.2205
+              ],
+              [
+                127.303,
+                26.229
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kerama-blue-leg-1",
+            "routeLegId": "kerama-blue-leg-1",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                127.303,
+                26.229
+              ],
+              [
+                127.305,
+                26.226
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kerama-blue-leg-2",
+            "routeLegId": "kerama-blue-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                127.305,
+                26.226
+              ],
+              [
+                127.298,
+                26.219
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kerama-blue-leg-3",
+            "routeLegId": "kerama-blue-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kifune-shrine": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.756,
+          35.115899999999996,
+          135.7705,
+          35.1311
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.762,
+              35.122
+            ]
+          },
+          "properties": {
+            "id": "kifune-shrine-0",
+            "routeStopId": "kifune-shrine-0",
+            "name": "Kibune Bus Stop",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7629,
+              35.1219
+            ]
+          },
+          "properties": {
+            "id": "kifune-shrine-1",
+            "routeStopId": "kifune-shrine-1",
+            "name": "Main Shrine",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7638,
+              35.1231
+            ]
+          },
+          "properties": {
+            "id": "kifune-shrine-2",
+            "routeStopId": "kifune-shrine-2",
+            "name": "Yui no Yashiro",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7645,
+              35.1251
+            ]
+          },
+          "properties": {
+            "id": "kifune-shrine-3",
+            "routeStopId": "kifune-shrine-3",
+            "name": "Inner Shrine",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.762,
+                35.122
+              ],
+              [
+                135.7629,
+                35.1219
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kifune-shrine-leg-1",
+            "routeLegId": "kifune-shrine-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7629,
+                35.1219
+              ],
+              [
+                135.7638,
+                35.1231
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kifune-shrine-leg-2",
+            "routeLegId": "kifune-shrine-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7638,
+                35.1231
+              ],
+              [
+                135.7645,
+                35.1251
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kifune-shrine-leg-3",
+            "routeLegId": "kifune-shrine-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kinkaku-ji-the-golden-pavilion": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.7079,
+          35.0253,
+          135.7362,
+          35.0454
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7302,
+              35.0394
+            ]
+          },
+          "properties": {
+            "id": "kinkaku-ji-the-golden-pavilion-0",
+            "routeStopId": "kinkaku-ji-the-golden-pavilion-0",
+            "name": "Kinkakuji-michi Bus Stop",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7292,
+              35.0394
+            ]
+          },
+          "properties": {
+            "id": "kinkaku-ji-the-golden-pavilion-1",
+            "routeStopId": "kinkaku-ji-the-golden-pavilion-1",
+            "name": "Kinkaku-ji",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7183,
+              35.0345
+            ]
+          },
+          "properties": {
+            "id": "kinkaku-ji-the-golden-pavilion-2",
+            "routeStopId": "kinkaku-ji-the-golden-pavilion-2",
+            "name": "Ryoan-ji",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7139,
+              35.0313
+            ]
+          },
+          "properties": {
+            "id": "kinkaku-ji-the-golden-pavilion-3",
+            "routeStopId": "kinkaku-ji-the-golden-pavilion-3",
+            "name": "Ninna-ji",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7302,
+                35.0394
+              ],
+              [
+                135.7292,
+                35.0394
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kinkaku-ji-the-golden-pavilion-leg-1",
+            "routeLegId": "kinkaku-ji-the-golden-pavilion-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7292,
+                35.0394
+              ],
+              [
+                135.7183,
+                35.0345
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kinkaku-ji-the-golden-pavilion-leg-2",
+            "routeLegId": "kinkaku-ji-the-golden-pavilion-leg-2",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7183,
+                35.0345
+              ],
+              [
+                135.7139,
+                35.0313
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kinkaku-ji-the-golden-pavilion-leg-3",
+            "routeLegId": "kinkaku-ji-the-golden-pavilion-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kinosaki-onsen": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          134.8023,
+          35.6177,
+          134.8197,
+          35.6327
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.8137,
+              35.6237
+            ]
+          },
+          "properties": {
+            "id": "kinosaki-onsen-0",
+            "routeStopId": "kinosaki-onsen-0",
+            "name": "Kinosaki Onsen Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.8124,
+              35.6252
+            ]
+          },
+          "properties": {
+            "id": "kinosaki-onsen-1",
+            "routeStopId": "kinosaki-onsen-1",
+            "name": "Ichino-yu",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.811,
+              35.6267
+            ]
+          },
+          "properties": {
+            "id": "kinosaki-onsen-2",
+            "routeStopId": "kinosaki-onsen-2",
+            "name": "Goshono-yu",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.8083,
+              35.6264
+            ]
+          },
+          "properties": {
+            "id": "kinosaki-onsen-3",
+            "routeStopId": "kinosaki-onsen-3",
+            "name": "Ropeway base",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.8137,
+                35.6237
+              ],
+              [
+                134.8124,
+                35.6252
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kinosaki-onsen-leg-1",
+            "routeLegId": "kinosaki-onsen-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.8124,
+                35.6252
+              ],
+              [
+                134.811,
+                35.6267
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kinosaki-onsen-leg-2",
+            "routeLegId": "kinosaki-onsen-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.811,
+                35.6267
+              ],
+              [
+                134.8083,
+                35.6264
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kinosaki-onsen-leg-3",
+            "routeLegId": "kinosaki-onsen-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kintaikyo-bridge": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          132.1725,
+          34.161,
+          132.2312,
+          34.1778
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              132.2252,
+              34.1718
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-0",
+            "routeStopId": "kintaikyo-bridge-0",
+            "name": "JR Iwakuni Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              132.1785,
+              34.1673
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-1",
+            "routeStopId": "kintaikyo-bridge-1",
+            "name": "Kintaikyo Bridge",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              132.1795,
+              34.167
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-2",
+            "routeStopId": "kintaikyo-bridge-2",
+            "name": "Kikko Park",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              132.1808,
+              34.1677
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-3",
+            "routeStopId": "kintaikyo-bridge-3",
+            "name": "Castle Ropeway lower station",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              132.1795,
+              34.1683
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-4",
+            "routeStopId": "kintaikyo-bridge-4",
+            "name": "Castle Ropeway upper station",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              132.1789,
+              34.1685
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-5",
+            "routeStopId": "kintaikyo-bridge-5",
+            "name": "Iwakuni Castle",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 5
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                132.2252,
+                34.1718
+              ],
+              [
+                132.1785,
+                34.1673
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-leg-1",
+            "routeLegId": "kintaikyo-bridge-leg-1",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                132.1785,
+                34.1673
+              ],
+              [
+                132.1795,
+                34.167
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-leg-2",
+            "routeLegId": "kintaikyo-bridge-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                132.1795,
+                34.167
+              ],
+              [
+                132.1808,
+                34.1677
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-leg-3",
+            "routeLegId": "kintaikyo-bridge-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                132.1808,
+                34.1677
+              ],
+              [
+                132.1795,
+                34.1683
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-leg-4",
+            "routeLegId": "kintaikyo-bridge-leg-4",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                132.1795,
+                34.1683
+              ],
+              [
+                132.1789,
+                34.1685
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kintaikyo-bridge-leg-5",
+            "routeLegId": "kintaikyo-bridge-leg-5",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kirishima-jingu": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          130.8306,
+          31.812,
+          130.877,
+          31.847
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.871,
+              31.841
+            ]
+          },
+          "properties": {
+            "id": "kirishima-jingu-0",
+            "routeStopId": "kirishima-jingu-0",
+            "name": "Kirishima Jingu Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.837,
+              31.818
+            ]
+          },
+          "properties": {
+            "id": "kirishima-jingu-1",
+            "routeStopId": "kirishima-jingu-1",
+            "name": "Forest approach",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.8368,
+              31.8185
+            ]
+          },
+          "properties": {
+            "id": "kirishima-jingu-2",
+            "routeStopId": "kirishima-jingu-2",
+            "name": "Main gate",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.8366,
+              31.8187
+            ]
+          },
+          "properties": {
+            "id": "kirishima-jingu-3",
+            "routeStopId": "kirishima-jingu-3",
+            "name": "Main sanctuary",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.871,
+                31.841
+              ],
+              [
+                130.837,
+                31.818
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kirishima-jingu-leg-1",
+            "routeLegId": "kirishima-jingu-leg-1",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.837,
+                31.818
+              ],
+              [
+                130.8368,
+                31.8185
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kirishima-jingu-leg-2",
+            "routeLegId": "kirishima-jingu-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.8368,
+                31.8185
+              ],
+              [
+                130.8366,
+                31.8187
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kirishima-jingu-leg-3",
+            "routeLegId": "kirishima-jingu-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kiso-valley-post-towns": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          137.49699999999999,
+          35.4949,
+          137.614,
+          35.604
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.503,
+              35.5009
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-0",
+            "routeStopId": "kiso-valley-post-towns-0",
+            "name": "Nakatsugawa Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.569,
+              35.5302
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-1",
+            "routeStopId": "kiso-valley-post-towns-1",
+            "name": "Magome-juku",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.579,
+              35.552
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-2",
+            "routeStopId": "kiso-valley-post-towns-2",
+            "name": "Magome Pass",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.585,
+              35.568
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-3",
+            "routeStopId": "kiso-valley-post-towns-3",
+            "name": "Odaki and Medaki Falls",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.595,
+              35.5787
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-4",
+            "routeStopId": "kiso-valley-post-towns-4",
+            "name": "Tsumago-juku",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.608,
+              35.598
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-5",
+            "routeStopId": "kiso-valley-post-towns-5",
+            "name": "Nagiso Station",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 5
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.503,
+                35.5009
+              ],
+              [
+                137.569,
+                35.5302
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-leg-1",
+            "routeLegId": "kiso-valley-post-towns-leg-1",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.569,
+                35.5302
+              ],
+              [
+                137.579,
+                35.552
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-leg-2",
+            "routeLegId": "kiso-valley-post-towns-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.579,
+                35.552
+              ],
+              [
+                137.585,
+                35.568
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-leg-3",
+            "routeLegId": "kiso-valley-post-towns-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.585,
+                35.568
+              ],
+              [
+                137.595,
+                35.5787
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-leg-4",
+            "routeLegId": "kiso-valley-post-towns-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.595,
+                35.5787
+              ],
+              [
+                137.608,
+                35.598
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kiso-valley-post-towns-leg-5",
+            "routeLegId": "kiso-valley-post-towns-leg-5",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kiyomizu-dera-above-kyoto": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.7725,
+          34.9889,
+          135.791,
+          35.0096
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.78,
+              34.996
+            ]
+          },
+          "properties": {
+            "id": "kiyomizu-dera-above-kyoto-0",
+            "routeStopId": "kiyomizu-dera-above-kyoto-0",
+            "name": "Kiyomizu-michi Bus Stop",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.785,
+              34.9949
+            ]
+          },
+          "properties": {
+            "id": "kiyomizu-dera-above-kyoto-1",
+            "routeStopId": "kiyomizu-dera-above-kyoto-1",
+            "name": "Kiyomizu-dera",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.781,
+              34.998
+            ]
+          },
+          "properties": {
+            "id": "kiyomizu-dera-above-kyoto-2",
+            "routeStopId": "kiyomizu-dera-above-kyoto-2",
+            "name": "Sannenzaka",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7789,
+              35.0004
+            ]
+          },
+          "properties": {
+            "id": "kiyomizu-dera-above-kyoto-3",
+            "routeStopId": "kiyomizu-dera-above-kyoto-3",
+            "name": "Yasaka Pagoda",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7785,
+              35.0036
+            ]
+          },
+          "properties": {
+            "id": "kiyomizu-dera-above-kyoto-4",
+            "routeStopId": "kiyomizu-dera-above-kyoto-4",
+            "name": "Yasaka Shrine",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.78,
+                34.996
+              ],
+              [
+                135.785,
+                34.9949
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kiyomizu-dera-above-kyoto-leg-1",
+            "routeLegId": "kiyomizu-dera-above-kyoto-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.785,
+                34.9949
+              ],
+              [
+                135.781,
+                34.998
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kiyomizu-dera-above-kyoto-leg-2",
+            "routeLegId": "kiyomizu-dera-above-kyoto-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.781,
+                34.998
+              ],
+              [
+                135.7789,
+                35.0004
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kiyomizu-dera-above-kyoto-leg-3",
+            "routeLegId": "kiyomizu-dera-above-kyoto-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7789,
+                35.0004
+              ],
+              [
+                135.7785,
+                35.0036
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kiyomizu-dera-above-kyoto-leg-4",
+            "routeLegId": "kiyomizu-dera-above-kyoto-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kobe-harborland": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.172,
+          34.6735,
+          135.195,
+          34.694
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.178,
+              34.6795
+            ]
+          },
+          "properties": {
+            "id": "kobe-harborland-0",
+            "routeStopId": "kobe-harborland-0",
+            "name": "JR Kobe Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.186,
+              34.6795
+            ]
+          },
+          "properties": {
+            "id": "kobe-harborland-1",
+            "routeStopId": "kobe-harborland-1",
+            "name": "umie MOSAIC",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.186,
+              34.682
+            ]
+          },
+          "properties": {
+            "id": "kobe-harborland-2",
+            "routeStopId": "kobe-harborland-2",
+            "name": "Meriken Park",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.1863,
+              34.6828
+            ]
+          },
+          "properties": {
+            "id": "kobe-harborland-3",
+            "routeStopId": "kobe-harborland-3",
+            "name": "Kobe Port Tower",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.189,
+              34.688
+            ]
+          },
+          "properties": {
+            "id": "kobe-harborland-4",
+            "routeStopId": "kobe-harborland-4",
+            "name": "Nankinmachi",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.178,
+                34.6795
+              ],
+              [
+                135.186,
+                34.6795
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kobe-harborland-leg-1",
+            "routeLegId": "kobe-harborland-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.186,
+                34.6795
+              ],
+              [
+                135.186,
+                34.682
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kobe-harborland-leg-2",
+            "routeLegId": "kobe-harborland-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.186,
+                34.682
+              ],
+              [
+                135.1863,
+                34.6828
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kobe-harborland-leg-3",
+            "routeLegId": "kobe-harborland-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.1863,
+                34.6828
+              ],
+              [
+                135.189,
+                34.688
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kobe-harborland-leg-4",
+            "routeLegId": "kobe-harborland-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kobe-nunobiki-herb-gardens": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.187,
+          34.6995,
+          135.2015,
+          34.725
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.1955,
+              34.7055
+            ]
+          },
+          "properties": {
+            "id": "kobe-nunobiki-herb-gardens-0",
+            "routeStopId": "kobe-nunobiki-herb-gardens-0",
+            "name": "Shin-Kobe Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.195,
+              34.7058
+            ]
+          },
+          "properties": {
+            "id": "kobe-nunobiki-herb-gardens-1",
+            "routeStopId": "kobe-nunobiki-herb-gardens-1",
+            "name": "Ropeway lower station",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.193,
+              34.719
+            ]
+          },
+          "properties": {
+            "id": "kobe-nunobiki-herb-gardens-2",
+            "routeStopId": "kobe-nunobiki-herb-gardens-2",
+            "name": "Ropeway upper station",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.193,
+              34.718
+            ]
+          },
+          "properties": {
+            "id": "kobe-nunobiki-herb-gardens-3",
+            "routeStopId": "kobe-nunobiki-herb-gardens-3",
+            "name": "Herb Gardens",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.195,
+              34.7058
+            ]
+          },
+          "properties": {
+            "id": "kobe-nunobiki-herb-gardens-4",
+            "routeStopId": "kobe-nunobiki-herb-gardens-4",
+            "name": "Return station",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.1955,
+                34.7055
+              ],
+              [
+                135.195,
+                34.7058
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kobe-nunobiki-herb-gardens-leg-1",
+            "routeLegId": "kobe-nunobiki-herb-gardens-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.195,
+                34.7058
+              ],
+              [
+                135.193,
+                34.719
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kobe-nunobiki-herb-gardens-leg-2",
+            "routeLegId": "kobe-nunobiki-herb-gardens-leg-2",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.193,
+                34.719
+              ],
+              [
+                135.193,
+                34.718
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kobe-nunobiki-herb-gardens-leg-3",
+            "routeLegId": "kobe-nunobiki-herb-gardens-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.193,
+                34.718
+              ],
+              [
+                135.195,
+                34.7058
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kobe-nunobiki-herb-gardens-leg-4",
+            "routeLegId": "kobe-nunobiki-herb-gardens-leg-4",
             "mode": "transit",
             "routeGeometryStatus": "schematic"
           }
