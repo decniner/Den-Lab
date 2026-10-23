@@ -454,7 +454,14 @@
           "visitDuration": {
             "status": "unknown"
           },
-          "photoStatus": "not-included"
+          "photo": {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Black_cheese.jpg/960px-Black_cheese.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Black_cheese.jpg",
+            "credit": "Douglas Perkins",
+            "license": "CC BY 4.0",
+            "alt": "Black cuttlefish-ink cheese from Furano Cheese Factory"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Furano%20Cheese%20Factory%20Furano%20Hokkaido"
         },
         {
           "id": "furano-ningles-terrace",
@@ -475,7 +482,14 @@
           "visitDuration": {
             "status": "unknown"
           },
-          "photoStatus": "not-included"
+          "photo": {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/130503_Ningle_Terrace_Furano_Hokkaido_Japan02s.jpg/960px-130503_Ningle_Terrace_Furano_Hokkaido_Japan02s.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:130503_Ningle_Terrace_Furano_Hokkaido_Japan02s.jpg",
+            "credit": "663highland",
+            "license": "CC BY-SA 4.0",
+            "alt": "Wooden craft cabins at Ningle Terrace in Furano"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ningle%20Terrace%20Furano%20Hokkaido"
         },
         {
           "id": "furano-farm-tomita",
@@ -496,7 +510,14 @@
           "visitDuration": {
             "status": "unknown"
           },
-          "photoStatus": "not-included"
+          "photo": {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg/960px-140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg",
+            "credit": "663highland",
+            "license": "CC BY-SA 3.0 or CC BY 2.5",
+            "alt": "Flower rows at Farm Tomita in Nakafurano, Hokkaido"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Farm%20Tomita%20Furano%20Hokkaido"
         }
       ],
       "legs": [
