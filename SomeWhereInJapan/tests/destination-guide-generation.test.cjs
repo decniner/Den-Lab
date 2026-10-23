@@ -61,22 +61,49 @@ test('rendersResearchedNotesWithLinkedSourcesAndOpenResearchGaps', () => {
   assert.match(html,/sourced map coordinates/i);
 });
 
-test('destinationGuidesOfferGoogleMapsWalkingDirectionsWithoutReplacingTheEmbeddedMap', () => {
+test('destinationGuidesDoNotForceLongMixedRoutesIntoWalkingMode', () => {
   const report = buildDestinationPages(site);
   const kiyomizu = report.records.find(record => record.id === 'kiyomizu-dera-above-kyoto');
   const html = fs.readFileSync(path.join(site, kiyomizu.pagePath.replaceAll('/', path.sep)), 'utf8');
-  assert.match(html, /Get walking directions in Google Maps/);
-  assert.match(html, /https:\/\/www\.google\.com\/maps\/dir\/\?api=1[^\"]*travelmode=walking/);
+  assert.match(html, /View mapped route and leg directions/);
+  assert.match(html, /href="#route-map"/);
   assert.match(html, /id="route-map" data-place-route-guide/);
   assert.match(html, /city-route-ui\.js/);
   assert.match(fs.readFileSync(path.join(site, 'city-route-ui.js'), 'utf8'), /data-expand-route-map/);
 });
 
-test('NikkoWalkingRouteCoversOnlyTheWalkableShrinePrecinctAndKeepsBusLegsDistinct', () => {
+test('singleDestinationDirectionsDoNotForceWalkingMode', () => {
+  const report = buildDestinationPages(site);
+  const glover = report.records.find(record => record.id === 'glover-garden');
+  const html = fs.readFileSync(path.join(site, glover.pagePath.replaceAll('/', path.sep)), 'utf8');
+  assert.match(html, /Get directions to this place in Google Maps/);
+  assert.match(html, /google\.com\/maps\/dir\/\?api=1&amp;destination=/);
+  assert.doesNotMatch(html, /google\.com\/maps\/dir\/[^\"]*travelmode=walking/);
+});
+
+test('shortSingleModeRoutesOpenAsOrderedGoogleMapsTransitRoutes', () => {
+  const report = buildDestinationPages(site);
+  const tokyo = report.records.find(record => record.id === 'tokyo-in-layers');
+  const html = fs.readFileSync(path.join(site, tokyo.pagePath.replaceAll('/', path.sep)), 'utf8');
+  assert.match(html, /Open public transport route in Google Maps/);
+  assert.match(html, /travelmode=transit/);
+  assert.match(html, /waypoints=/);
+});
+
+test('mixedModeRoutesOfferModeSpecificDirectionsForEachLeg', () => {
+  const report = buildDestinationPages(site);
+  const sapporo = report.records.find(record => record.id === 'sapporo-beer-museum');
+  const html = fs.readFileSync(path.join(site, sapporo.pagePath.replaceAll('/', path.sep)), 'utf8');
+  assert.match(html, /View mapped route and leg directions/);
+  assert.match(html, /Open walking directions in Google Maps/);
+  assert.match(html, /Open public transport directions in Google Maps/);
+});
+
+test('NikkoKeepsItsMixedRouteLegsSeparateInsteadOfOpeningOneWalkingItinerary', () => {
   const html = fs.readFileSync(path.join(site, 'places', 'nikko-in-the-cedars', 'index.html'), 'utf8');
-  assert.match(html, /Open walking route in Google Maps/);
-  assert.match(html, /travelmode=walking/);
-  assert.match(html, /Use the individual directions below for the bus legs to and from Nikko Station/);
+  assert.match(html, /View route and directions/);
+  assert.doesNotMatch(html, /Open walking route in Google Maps/);
   assert.match(html, /data-place-route-guide/);
+  assert.match(fs.readFileSync(path.join(site, 'city-route-ui.js'), 'utf8'), /Open public transport directions in Google Maps/);
 });
 

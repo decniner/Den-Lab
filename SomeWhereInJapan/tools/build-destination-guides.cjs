@@ -121,9 +121,10 @@ function routeLegMarkup(route) {
     const from = byId.get(leg.fromId), to = byId.get(leg.toId);
     if (!from || !to) return '';
     const mode = leg.mode === 'walking' ? 'walking' : leg.mode === 'driving' ? 'driving' : 'transit';
+    const action = mode === 'walking' ? 'Open walking directions in Google Maps' : mode === 'driving' ? 'Open driving directions in Google Maps' : 'Open public transport directions in Google Maps';
     const params = new URLSearchParams({api:'1', origin:from.address || from.name, destination:to.address || to.name, travelmode:mode});
     const duration = leg.duration?.status === 'known' ? ` · ${leg.duration.minMinutes}${leg.duration.maxMinutes !== leg.duration.minMinutes ? `–${leg.duration.maxMinutes}` : ''} min` : '';
-    return `<li><span><strong>${escapeHtml(from.name)} → ${escapeHtml(to.name)}</strong><small>${escapeHtml(leg.mode)}${duration}</small></span><a href="https://www.google.com/maps/dir/?${params}" target="_blank" rel="noopener noreferrer">Directions ↗</a></li>`;
+    return `<li><span><strong>${escapeHtml(from.name)} → ${escapeHtml(to.name)}</strong><small>${escapeHtml(leg.mode)}${duration}</small></span><a href="https://www.google.com/maps/dir/?${params}" target="_blank" rel="noopener noreferrer">${action}</a></li>`;
   }).filter(Boolean).join('');
 }
 
@@ -135,26 +136,26 @@ function sequenceLegMarkup(sequence, record) {
     if (!fromName || !toName) return '';
     const origin = `${fromName}, ${record.region}, Japan`, destination = `${toName}, ${record.region}, Japan`;
     const params = new URLSearchParams({api:'1', origin, destination, travelmode:'walking'});
-    return `<li><span><strong>${escapeHtml(fromName)} → ${escapeHtml(toName)}</strong><small>Walking directions</small></span><a href="https://www.google.com/maps/dir/?${params}" target="_blank" rel="noopener noreferrer">Directions ↗</a></li>`;
+    return `<li><span><strong>${escapeHtml(fromName)} → ${escapeHtml(toName)}</strong><small>Walking directions</small></span><a href="https://www.google.com/maps/dir/?${params}" target="_blank" rel="noopener noreferrer">Open walking directions in Google Maps</a></li>`;
   }).filter(Boolean).join('');
 }
 
-function walkingDirectionsUrl(record, routeRecord, fallbackDestination) {
+function routePrimaryAction(record, routeRecord, fallbackDestination) {
   const route = routeRecord?.route;
   const stops = [...(route?.stops || [])].sort((a, b) => (a.order || 0) - (b.order || 0));
   const legs = route?.legs || [];
-  const isCompactWalkingRoute = routeRecord?.kind === 'place' && stops.length >= 2 && stops.length <= 5 &&
-    legs.length > 0 && legs.every(leg => leg.mode === 'walking');
-  const params = new URLSearchParams({ api:'1', travelmode:'walking' });
-  if (isCompactWalkingRoute) {
-    const place = stop => `${stop.address || stop.name}, ${stop.area || record.region}, Japan`;
-    params.set('origin', place(stops[0]));
-    params.set('destination', place(stops[stops.length - 1]));
-    if (stops.length > 2) params.set('waypoints', stops.slice(1, -1).map(place).join('|'));
-  } else {
-    params.set('destination', fallbackDestination);
+  const modes = [...new Set(legs.map(leg => leg.mode === 'walking' ? 'walking' : leg.mode === 'driving' ? 'driving' : 'transit'))];
+  if (routeRecord && stops.length >= 2 && legs.length && modes.length === 1 && modes[0] !== 'walking' && stops.length <= 4) {
+    const point = stop => `${stop.address || stop.name}, ${stop.area || record.region}, Japan`;
+    const params = new URLSearchParams({api:'1', origin:point(route.origin || stops[0]), destination:point(stops[stops.length - 1]), travelmode:modes[0]});
+    const intermediate = route.origin ? stops.slice(0, -1) : stops.slice(1, -1);
+    if (intermediate.length) params.set('waypoints', intermediate.map(point).join('|'));
+    const label = modes[0] === 'driving' ? 'Open driving route in Google Maps' : 'Open public transport route in Google Maps';
+    return `<a class="ng-button" href="https://www.google.com/maps/dir/?${escapeHtml(params.toString())}" target="_blank" rel="noopener noreferrer">${label}</a>`;
   }
-  return `https://www.google.com/maps/dir/?${params}`;
+  if (routeRecord && stops.length >= 2 && legs.length) return '<a class="ng-button" href="#route-map">View mapped route and leg directions</a>';
+  const params = new URLSearchParams({api:'1', destination:fallbackDestination});
+  return `<a class="ng-button" href="https://www.google.com/maps/dir/?${escapeHtml(params.toString())}" target="_blank" rel="noopener noreferrer">Get directions to this place in Google Maps</a>`;
 }
 
 function pageHtml(template, record, details, completion, routeRecord) {
@@ -199,10 +200,7 @@ function pageHtml(template, record, details, completion, routeRecord) {
   const directionDestination = mapQuery;
   const mapUrl = `https://www.openstreetmap.org/search?query=${mapQuery}`;
   const googleMapUrl = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
-  const walkingUrl = walkingDirectionsUrl(record, routeRecord, queryText);
-  const walkingLabel = routeRecord?.kind === 'place' && route?.legs?.length > 0 && route.legs.every(leg => leg.mode === 'walking') && route.stops?.length >= 2 && route.stops.length <= 5
-    ? 'Open walking route in Google Maps'
-    : 'Get walking directions in Google Maps';
+  const primaryRouteAction = routePrimaryAction(record, routeRecord, queryText);
   const stayMarkup = stay || `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`hotels near ${mapPlace} ${raw.region} Japan`)}" target="_blank" rel="noopener noreferrer">Browse places to stay nearby</a>`;
   const contactMarkup = contact || `<a href="https://www.google.com/search?q=${encodeURIComponent(`${queryText} official contact phone`)}" target="_blank" rel="noopener noreferrer">Find the official visitor contact</a>`;
   const accessFallback = details.access || `Use the destination map and follow official visitor information for the current way to reach ${record.name}.`;
@@ -246,7 +244,7 @@ function pageHtml(template, record, details, completion, routeRecord) {
     STATUS_TITLE: '', STATUS_COPY: '',
     MAP_URL: mapUrl,
     GOOGLE_MAP_URL: googleMapUrl,
-    WALKING_ROUTE_LINK: `<a class="ng-button" href="${escapeHtml(walkingUrl)}" target="_blank" rel="noopener noreferrer">${walkingLabel} â†—</a>`,
+    ROUTE_PRIMARY_ACTION: primaryRouteAction,
     OFFICIAL_URL: `https://www.google.com/search?q=${encodeURIComponent(`${queryText} official visitor guide`)}`,
     RAIL_URL: `https://www.google.com/maps/dir/?api=1&destination=${directionDestination}&travelmode=transit`,
     BUS_URL: `https://www.google.com/maps/dir/?api=1&destination=${directionDestination}&travelmode=transit`,
