@@ -63,7 +63,7 @@ async function attachMappedRoute(origin,dayIndex=activeDayIndex){
  }
  if(!Array.isArray(route.stops)||route.stops.length<1)return;
  const legacyPlan=panel.querySelector('.city-origin-plan'),legacyMore=panel.querySelector('.city-origin-more');
- if(legacyPlan)legacyPlan.hidden=true;if(legacyMore)legacyMore.hidden=true;
+ if(legacyPlan)legacyPlan.classList.add('has-mapped-city-route');if(legacyMore)legacyMore.hidden=true;
  let mapData=null;
  if(!sequencePreview){try{const response=await fetch(new URL(`maps/cities/${encodeURIComponent(cityId)}.geojson?v=20261023-1`,document.baseURI));if(response.ok)mapData=await response.json();}catch(error){mapData=null;}}
  if(select.value!==origin.id||request!==mapRequest)return;
@@ -78,6 +78,8 @@ async function attachMappedRoute(origin,dayIndex=activeDayIndex){
  }
  activeMappedRoute?.destroy();
  activeMappedRoute=window.CityRouteUI.mountCityRouteView(panel,route,mapData,{origin,photos,sequencePreview,previewSource,dayCount:days.length,dayIndex,airport:core.AIRPORT_ORIGINS.some(item=>item.id===origin.id),fallbackUrl:new URL(`maps/cities/${encodeURIComponent(cityId)}.svg?v=20261023-1`,document.baseURI).href});
+ const routeView=panel.querySelector('.city-route-shared'),planContainer=panel.querySelector('.city-origin-plan'),header=planContainer?.querySelector('.city-plan-header');
+ if(routeView&&planContainer&&header)planContainer.insertBefore(routeView,header.nextSibling);
 }
 function dayCountForMap(day){return Array.isArray(day?.stops)?day.stops.length:0;}
 function stopCard(stop,dayStops,origin,index){
