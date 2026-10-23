@@ -6,12 +6,14 @@ const vm = require('node:vm');
 
 const DESTINATION_SCRIPT = /^(?:destinations|destination-[a-z0-9-]+)\.js$/i;
 
-function loadRawDestinations(siteDir) {
+function loadRawDestinations(siteDir, options = {}) {
   const indexPath = path.join(siteDir, 'index.html');
   const html = fs.readFileSync(indexPath, 'utf8');
   const scripts = [...html.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["'][^>]*>/gi)]
     .map(match => match[1].split(/[?#]/, 1)[0])
-    .filter(src => DESTINATION_SCRIPT.test(path.basename(src)));
+    .filter(src => DESTINATION_SCRIPT.test(path.basename(src)))
+    .filter(src => options.includePhotoAudit !== false || path.basename(src) !== 'destination-photo-audit.js')
+    .filter(src => options.includeGuideStatus !== false || path.basename(src) !== 'destination-guide-status.js');
   if (!scripts.length) throw new Error(`No destination data scripts found in ${indexPath}`);
 
   const scope = { console, URL, URLSearchParams };
@@ -22,6 +24,7 @@ function loadRawDestinations(siteDir) {
     if (!scriptPath.startsWith(path.resolve(siteDir) + path.sep)) {
       throw new Error(`Destination script escapes site directory: ${src}`);
     }
+    if (!fs.existsSync(scriptPath) && path.basename(src) === 'destination-guide-status.js') continue;
     vm.runInContext(fs.readFileSync(scriptPath, 'utf8'), scope, { filename: src, timeout: 5000 });
   }
   if (!Array.isArray(scope.DESTINATIONS)) throw new Error('Destination scripts did not create window.DESTINATIONS');

@@ -44,7 +44,7 @@ test('existingRouteGuidesKeepTheirURLs', () => {
 test('incompleteGuidesAreNotPresentedAsComplete', () => {
   const report = buildDestinationPages(site);
   assert.equal(report.completeCount, 0);
-  assert.ok(report.incompleteCount >= 310);
+  assert.equal(report.provisionalCount, 310);
   for (const record of report.records) {
     const html = fs.readFileSync(path.join(site, record.pagePath.replaceAll('/', path.sep)), 'utf8');
     assert.match(html, /Guide research is incomplete/i);

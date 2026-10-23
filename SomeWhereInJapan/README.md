@@ -1,6 +1,6 @@
 # Somewhere in Japan
 
-A responsive editorial field atlas to 180 places across Japan's nine regions, with a day-trip planner for ten major city-centre origins.
+A responsive editorial field atlas to places across Japan's nine regions, with a day-trip planner for ten major city-centre origins. Visible counts are populated from the loaded destination catalogue.
 
 ## Preview locally
 
@@ -15,7 +15,7 @@ Then open http://localhost:8000/. The project is static HTML, CSS, and JavaScrip
 ## What is included
 
 - An interactive map with nine regions and direct place-story picks.
-- A searchable guide to 180 places, seasonal and regional filters, and local-find selections.
+- A searchable nationwide place guide with seasonal and regional filters and Local Finds.
 - A station-aware trip planner for Sapporo, Sendai, Tokyo, Nagoya, Kyoto, Osaka, Hiroshima, Takamatsu, Fukuoka, and Naha.
 - Five detailed Tokyo-origin pilot day-trip guides with shared planner and guide stop data, selectable route plots, source links and route-specific weather/short-day guidance.
 - Nine non-Tokyo city origins have ordered, full-day plans with stop-by-stop notes, suggested visit windows, whole-route maps, and a transit or driving choice. Live routes do not claim fixed fares or travel times.
@@ -37,7 +37,7 @@ Usability materials are in `docs/usability/`. The current evidence gaps and the 
 
 ## Photography and map
 
-The 30 newest place cards each use a different Wikimedia Commons photograph. Photo links open the source page with the contributor and license information. Other destination records retain the project's existing image treatments. The Japan map is generated from Natural Earth 1:10m cultural vectors; Natural Earth map data is public domain.
+Catalogue photos are shown only when Wikimedia Commons source-page metadata confirms the named place and provides photographer and license details. The full review is in `PHOTO_AUDIT.md`; records without sufficient evidence use the patterned no-image treatment. The Japan map is generated from Natural Earth 1:10m cultural vectors; Natural Earth map data is public domain.
 
 ## Verification
 
