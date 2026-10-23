@@ -12445,48 +12445,182 @@
       ]
     },
     {
-      "id": "naoshima-art-and-sea-place-map",
+      "id": "naoshima-art-and-sea-museum-circuit",
       "placeId": "naoshima-art-and-sea",
-      "cityId": "destination",
-      "title": "Naoshima, art and sea: location map",
-      "introduction": "Approximate location reference for Naoshima, art and sea. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Kagawa · Shikoku",
+      "cityId": "naoshima",
+      "title": "Naoshima: the Benesse Art Site museum sequence",
+      "introduction": "Follow the Naoshima Tourism Association’s day-visitor order from Benesse House Museum (lower) to Lee Ufan Museum and Chichu Art Museum. The official guide recommends walking through the national-park landscape and also lists a seasonal free shuttle; check its timetable and closure-day suspensions before setting out. Map connectors show visit order, not surveyed paths; Google Maps provides live pedestrian directions.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "attraction",
       "stops": [
         {
-          "id": "naoshima-art-and-sea-place",
+          "id": "naoshima-benesse-house-museum",
           "order": 1,
-          "name": "Naoshima, art and sea",
-          "area": "Kagawa · Shikoku",
-          "address": "Naoshima, art and sea, Kagawa · Shikoku, Japan",
-          "story": "Island light, contemporary art, and a slower rhythm between ferries.",
+          "name": "Benesse House Museum (lower)",
+          "area": "Gotanji, Naoshima",
+          "address": "Benesse House Museum, Gotanji, Naoshima, Kagawa, Japan",
+          "story": "Begin at the lower museum, where contemporary art, architecture and the Seto Inland Sea meet. The island association lists this as the first museum stop on its day-visitor shuttle sequence.",
           "coordinates": {
-            "latitude": 34.2480104,
-            "longitude": 134.0586579,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 34.44523,
+            "longitude": 133.99066,
+            "precision": "OpenStreetMap mapped museum feature; point cross-checked to Naoshima Tourism Association route map",
             "sourceIds": [
-              "destination-map-location"
+              "naoshima-official-route",
+              "osm-benesse-house-museum"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Naoshima%2C%20art%20and%20sea%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Benesse+House+Museum+Naoshima+visitor+guide"
+        },
+        {
+          "id": "naoshima-lee-ufan-museum",
+          "order": 2,
+          "name": "Lee Ufan Museum",
+          "area": "Gotanji, Naoshima",
+          "address": "Lee Ufan Museum, Gotanji, Naoshima, Kagawa, Japan",
+          "story": "Continue to the quiet, light-filled museum where Lee Ufan’s work enters into conversation with the island landscape and Ando architecture. The official island guide places it after Benesse House Museum.",
+          "coordinates": {
+            "latitude": 34.44909,
+            "longitude": 133.9887,
+            "precision": "OpenStreetMap mapped museum feature; point cross-checked to Naoshima Tourism Association route map",
+            "sourceIds": [
+              "naoshima-official-route",
+              "osm-lee-ufan-museum"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Lee+Ufan+Museum+Naoshima+visitor+guide"
+        },
+        {
+          "id": "naoshima-chichu-art-museum",
+          "order": 3,
+          "name": "Chichu Art Museum",
+          "area": "Gotanji, Naoshima",
+          "address": "Chichu Art Museum, Gotanji, Naoshima, Kagawa, Japan",
+          "story": "Finish at the Chichu Art Museum, built largely underground so natural light can shape the experience of the artworks. Advance reservations and closure days matter here; confirm both before planning the island day.",
+          "coordinates": {
+            "latitude": 34.44778,
+            "longitude": 133.98488,
+            "precision": "OpenStreetMap mapped museum feature; point cross-checked to Naoshima Tourism Association route map",
+            "sourceIds": [
+              "naoshima-official-route",
+              "osm-chichu-art-museum"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Chichu+Art+Museum+Naoshima+visitor+guide"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "naoshima-leg-01",
+          "fromId": "naoshima-benesse-house-museum",
+          "toId": "naoshima-lee-ufan-museum",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.99066,
+                34.44523
+              ],
+              [
+                133.9887,
+                34.44909
+              ]
+            ],
+            "sourceIds": [
+              "naoshima-official-route"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.44523%2C133.99066&destination=34.44909%2C133.9887&travelmode=walking"
+        },
+        {
+          "id": "naoshima-leg-02",
+          "fromId": "naoshima-lee-ufan-museum",
+          "toId": "naoshima-chichu-art-museum",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.9887,
+                34.44909
+              ],
+              [
+                133.98488,
+                34.44778
+              ]
+            ],
+            "sourceIds": [
+              "naoshima-official-route"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.44909%2C133.9887&destination=34.44778%2C133.98488&travelmode=walking"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/3795064",
-          "checkedOn": "2026-10-23",
+          "id": "naoshima-official-route",
+          "label": "Naoshima Tourism Association: guide map and Benesse Art Site shuttle order",
+          "url": "https://naoshima.net/en/guidemap/",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "ordered museum sequence: Benesse House Museum (lower), Lee Ufan Museum, Chichu Art Museum",
+            "relative site locations and travel times on the official guide map",
+            "walking recommendation and seasonal shuttle guidance"
+          ]
+        },
+        {
+          "id": "naoshima-official-access",
+          "label": "Naoshima Tourism Association: access",
+          "url": "https://naoshima.net/en/access-en/access_from/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "ferry and island access planning"
+          ]
+        },
+        {
+          "id": "osm-benesse-house-museum",
+          "label": "OpenStreetMap: Benesse House Museum map feature (way 1357191882)",
+          "url": "https://www.openstreetmap.org/way/1357191882",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped museum point"
+          ]
+        },
+        {
+          "id": "osm-lee-ufan-museum",
+          "label": "OpenStreetMap: Lee Ufan Museum map feature (way 401738808)",
+          "url": "https://www.openstreetmap.org/way/401738808",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped museum point"
+          ]
+        },
+        {
+          "id": "osm-chichu-art-museum",
+          "label": "OpenStreetMap: Chichu Art Museum map feature (way 401738807)",
+          "url": "https://www.openstreetmap.org/way/401738807",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped museum point"
           ]
         }
-      ]
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=34.44523%2C133.99066&destination=34.44778%2C133.98488&travelmode=walking&waypoints=34.44909%2C133.9887"
     },
     {
       "id": "nara-between-trees-place-map",
@@ -13561,45 +13695,438 @@
       ]
     },
     {
-      "id": "oirase-stream-walk-place-map",
+      "id": "oirase-stream-walk-nenokuchi-yakeyama-walk",
       "placeId": "oirase-stream-walk",
-      "cityId": "destination",
-      "title": "Oirase stream walk: location map",
-      "introduction": "Approximate location reference for Oirase stream walk. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Aomori · Tohoku",
+      "cityId": "oirase",
+      "title": "Oirase Gorge: Nenokuchi to Yakeyama",
+      "introduction": "Walk the official north-to-south sequence from Lake Towada at Nenokuchi to Yakeyama: Choshi Otaki, Kumoi-no-Nagare, Kumoi-no-Taki, Makado-iwa, Ishigedo, then Yakeyama. The full trail is about 14 km and roughly five hours; the shorter Ishigedo–Nenokuchi section is about 9 km and 2.5 hours. Published segment times are estimates. Numbered connectors show order, not the actual trail geometry. Use Google Maps for live directions to access points and check current bus, weather, trail, and road notices.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "trail-access-points",
       "stops": [
         {
-          "id": "oirase-stream-walk-place",
+          "id": "oirase-nenokuchi",
           "order": 1,
-          "name": "Oirase stream walk",
-          "area": "Aomori · Tohoku",
-          "address": "Oirase stream walk, Aomori · Tohoku, Japan",
-          "story": "Follow clear water over mossy stones beneath the deep green canopy of a beech forest.",
+          "name": "Nenokuchi lakeside trailhead",
+          "area": "Oirase Gorge, Towada-Hachimantai National Park",
+          "address": "Nenokuchi, Towada, Aomori, Japan",
+          "story": "The Lake Towada-side gateway to the gorge walk. The JR Bus Nenokuchi stop is a clear mapped access point; confirm the current bus timetable before choosing a one-way walk.",
           "coordinates": {
-            "latitude": 40.886943,
-            "longitude": 140.590121,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 40.4788646,
+            "longitude": 140.9406205,
+            "precision": "OpenStreetMap node/2418982718; route access point cross-checked against official Oirase route maps",
             "sourceIds": [
-              "destination-map-location"
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map",
+              "osm-oirase-nenokuchi"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Oirase%20stream%20walk%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Nenokuchi%20lakeside%20trailhead%20Oirase%20Gorge%20Japan"
+        },
+        {
+          "id": "oirase-choshi-otaki",
+          "order": 2,
+          "name": "Choshi Otaki Falls",
+          "area": "Oirase Gorge, Towada-Hachimantai National Park",
+          "address": "Choshi Otaki, Towada, Aomori, Japan",
+          "story": "The largest named waterfall on this route and a natural early highlight. The official walking map places it about 1.5 km and 30 minutes from Nenokuchi; the Tohoku route lists a shorter 20-minute segment, so allow for pace and conditions.",
+          "coordinates": {
+            "latitude": 40.4886517,
+            "longitude": 140.9511378,
+            "precision": "OpenStreetMap node/7294281693; route access point cross-checked against official Oirase route maps",
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map",
+              "osm-oirase-choshi-otaki"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Choshi%20Otaki%20Falls%20Oirase%20Gorge%20Japan"
+        },
+        {
+          "id": "oirase-kumoi-nagare",
+          "order": 3,
+          "name": "Kumoi-no-Nagare viewpoint access",
+          "area": "Oirase Gorge, Towada-Hachimantai National Park",
+          "address": "Kumoi-no-Nagare, Towada, Aomori, Japan",
+          "story": "A turbulent, fast-moving section of the stream. The map point is the named JR Bus stop used as the access marker, beside the official walking route.",
+          "coordinates": {
+            "latitude": 40.5087496,
+            "longitude": 140.9616618,
+            "precision": "OpenStreetMap node/14079630462; route access point cross-checked against official Oirase route maps",
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map",
+              "osm-oirase-kumoi-nagare"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kumoi-no-Nagare%20viewpoint%20access%20Oirase%20Gorge%20Japan"
+        },
+        {
+          "id": "oirase-kumoi-falls",
+          "order": 4,
+          "name": "Kumoi-no-Taki Falls",
+          "area": "Oirase Gorge, Towada-Hachimantai National Park",
+          "address": "Kumoi Falls, Towada, Aomori, Japan",
+          "story": "A waterfall framed by the gorge’s deep green forest. The official route continues here from Kumoi-no-Nagare; stay on the signed path and use the footbridge viewpoints.",
+          "coordinates": {
+            "latitude": 40.520293,
+            "longitude": 140.973099,
+            "precision": "OpenStreetMap node/753051812; route access point cross-checked against official Oirase route maps",
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map",
+              "osm-oirase-kumoi-falls"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kumoi-no-Taki%20Falls%20Oirase%20Gorge%20Japan"
+        },
+        {
+          "id": "oirase-makado-iwa",
+          "order": 5,
+          "name": "Makado-iwa viewpoint access",
+          "area": "Oirase Gorge, Towada-Hachimantai National Park",
+          "address": "Makado-iwa, Towada, Aomori, Japan",
+          "story": "A dramatic rock formation beside the stream. Its map point is the named JR Bus stop, serving as the access marker for the viewpoint.",
+          "coordinates": {
+            "latitude": 40.5328859,
+            "longitude": 140.9792155,
+            "precision": "OpenStreetMap node/14079608625; route access point cross-checked against official Oirase route maps",
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map",
+              "osm-oirase-makado-iwa"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Makado-iwa%20viewpoint%20access%20Oirase%20Gorge%20Japan"
+        },
+        {
+          "id": "oirase-ishigedo",
+          "order": 6,
+          "name": "Ishigedo rest house and trail stop",
+          "area": "Oirase Gorge, Towada-Hachimantai National Park",
+          "address": "Ishigedo, Towada, Aomori, Japan",
+          "story": "A useful rest and trail-access point along the gorge. The Oirase map identifies facilities and a bus stop here; check service dates and return options before walking onward.",
+          "coordinates": {
+            "latitude": 40.5406953,
+            "longitude": 140.9781611,
+            "precision": "OpenStreetMap way/781282010; route access point cross-checked against official Oirase route maps",
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map",
+              "osm-oirase-ishigedo"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ishigedo%20rest%20house%20and%20trail%20stop%20Oirase%20Gorge%20Japan"
+        },
+        {
+          "id": "oirase-yakeyama",
+          "order": 7,
+          "name": "Yakeyama gorge entrance",
+          "area": "Oirase Gorge, Towada-Hachimantai National Park",
+          "address": "Yakeyama, Towada, Aomori, Japan",
+          "story": "The inland end of this one-way walk and the southern gateway to the gorge. The full Nenokuchi–Yakeyama section is about 14 km and around five hours on the official walking map.",
+          "coordinates": {
+            "latitude": 40.5781342,
+            "longitude": 140.9952198,
+            "precision": "OpenStreetMap node/4795356331; route access point cross-checked against official Oirase route maps",
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map",
+              "osm-oirase-yakeyama"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Yakeyama%20gorge%20entrance%20Oirase%20Gorge%20Japan"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "oirase-leg-01",
+          "fromId": "oirase-nenokuchi",
+          "toId": "oirase-choshi-otaki",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 20,
+            "maxMinutes": 20
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.9406205,
+                40.4788646
+              ],
+              [
+                140.9511378,
+                40.4886517
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=40.4788646%2C140.9406205&destination=40.4886517%2C140.9511378&travelmode=walking"
+        },
+        {
+          "id": "oirase-leg-02",
+          "fromId": "oirase-choshi-otaki",
+          "toId": "oirase-kumoi-nagare",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 50,
+            "maxMinutes": 50
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.9511378,
+                40.4886517
+              ],
+              [
+                140.9616618,
+                40.5087496
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=40.4886517%2C140.9511378&destination=40.5087496%2C140.9616618&travelmode=walking"
+        },
+        {
+          "id": "oirase-leg-03",
+          "fromId": "oirase-kumoi-nagare",
+          "toId": "oirase-kumoi-falls",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 30,
+            "maxMinutes": 30
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.9616618,
+                40.5087496
+              ],
+              [
+                140.973099,
+                40.520293
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=40.5087496%2C140.9616618&destination=40.520293%2C140.973099&travelmode=walking"
+        },
+        {
+          "id": "oirase-leg-04",
+          "fromId": "oirase-kumoi-falls",
+          "toId": "oirase-makado-iwa",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 30,
+            "maxMinutes": 30
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.973099,
+                40.520293
+              ],
+              [
+                140.9792155,
+                40.5328859
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=40.520293%2C140.973099&destination=40.5328859%2C140.9792155&travelmode=walking"
+        },
+        {
+          "id": "oirase-leg-05",
+          "fromId": "oirase-makado-iwa",
+          "toId": "oirase-ishigedo",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 15,
+            "maxMinutes": 15
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.9792155,
+                40.5328859
+              ],
+              [
+                140.9781611,
+                40.5406953
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=40.5328859%2C140.9792155&destination=40.5406953%2C140.9781611&travelmode=walking"
+        },
+        {
+          "id": "oirase-leg-06",
+          "fromId": "oirase-ishigedo",
+          "toId": "oirase-yakeyama",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 70,
+            "maxMinutes": 70
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.9781611,
+                40.5406953
+              ],
+              [
+                140.9952198,
+                40.5781342
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-official-oirase-route",
+              "oirase-official-walking-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=40.5406953%2C140.9781611&destination=40.5781342%2C140.9952198&travelmode=walking"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/1834655",
-          "checkedOn": "2026-10-23",
+          "id": "tohoku-official-oirase-route",
+          "label": "TRAVEL TO TOHOKU: Oirase Mountain Stream route",
+          "url": "https://www.tohokukanko.jp/en/attractions/detail_1176.html",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "ordered Nenokuchi–Yakeyama walking route",
+            "published approximate segment walking times"
+          ]
+        },
+        {
+          "id": "oirase-official-walking-map",
+          "label": "Lake Towada Tourism Association: Oirase map and walking plan",
+          "url": "https://towadako.or.jp/en/wp-content/themes/towadakoen/pdf/en_map_oirase.pdf",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official walking trail map and access points",
+            "approximate distances and walking times between named landmarks",
+            "bus stops, rest facilities, and route endpoints"
+          ]
+        },
+        {
+          "id": "oirase-eco-walking-map",
+          "label": "Oirase Gorge Eco-tourism: How to Walk Around Oirase Gorge",
+          "url": "https://www.eco-oirase.com/en/walking",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "walking route between Yakeyama and Nenokuchi",
+            "approximate distance and time for full and partial walks"
+          ]
+        },
+        {
+          "id": "osm-oirase-nenokuchi",
+          "label": "OpenStreetMap: Nenokuchi lakeside trailhead (node/2418982718)",
+          "url": "https://www.openstreetmap.org/node/2418982718",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped trail, landmark, or named access point"
+          ]
+        },
+        {
+          "id": "osm-oirase-choshi-otaki",
+          "label": "OpenStreetMap: Choshi Otaki Falls (node/7294281693)",
+          "url": "https://www.openstreetmap.org/node/7294281693",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped trail, landmark, or named access point"
+          ]
+        },
+        {
+          "id": "osm-oirase-kumoi-nagare",
+          "label": "OpenStreetMap: Kumoi-no-Nagare viewpoint access (node/14079630462)",
+          "url": "https://www.openstreetmap.org/node/14079630462",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped trail, landmark, or named access point"
+          ]
+        },
+        {
+          "id": "osm-oirase-kumoi-falls",
+          "label": "OpenStreetMap: Kumoi-no-Taki Falls (node/753051812)",
+          "url": "https://www.openstreetmap.org/node/753051812",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped trail, landmark, or named access point"
+          ]
+        },
+        {
+          "id": "osm-oirase-makado-iwa",
+          "label": "OpenStreetMap: Makado-iwa viewpoint access (node/14079608625)",
+          "url": "https://www.openstreetmap.org/node/14079608625",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped trail, landmark, or named access point"
+          ]
+        },
+        {
+          "id": "osm-oirase-ishigedo",
+          "label": "OpenStreetMap: Ishigedo rest house and trail stop (way/781282010)",
+          "url": "https://www.openstreetmap.org/way/781282010",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped trail, landmark, or named access point"
+          ]
+        },
+        {
+          "id": "osm-oirase-yakeyama",
+          "label": "OpenStreetMap: Yakeyama gorge entrance (node/4795356331)",
+          "url": "https://www.openstreetmap.org/node/4795356331",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped trail, landmark, or named access point"
           ]
         }
       ]
@@ -23342,12 +23869,12 @@
     "oirase-stream-walk": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          140.588121,
-          40.884943,
-          140.59212100000002,
-          40.888943000000005
+          140.9366205,
+          40.474864600000004,
+          140.9992198,
+          40.5821342
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -23356,20 +23883,254 @@
       "features": [
         {
           "type": "Feature",
-          "id": "oirase-stream-walk-place",
+          "id": "oirase-nenokuchi",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              140.590121,
-              40.886943
+              140.9406205,
+              40.4788646
             ]
           },
           "properties": {
-            "id": "oirase-stream-walk-place",
-            "routeStopId": "oirase-stream-walk-place",
-            "name": "Oirase stream walk",
+            "id": "oirase-nenokuchi",
+            "routeStopId": "oirase-nenokuchi",
+            "name": "Nenokuchi lakeside trailhead",
             "role": "stop",
             "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-choshi-otaki",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.9511378,
+              40.4886517
+            ]
+          },
+          "properties": {
+            "id": "oirase-choshi-otaki",
+            "routeStopId": "oirase-choshi-otaki",
+            "name": "Choshi Otaki Falls",
+            "role": "stop",
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-kumoi-nagare",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.9616618,
+              40.5087496
+            ]
+          },
+          "properties": {
+            "id": "oirase-kumoi-nagare",
+            "routeStopId": "oirase-kumoi-nagare",
+            "name": "Kumoi-no-Nagare viewpoint access",
+            "role": "stop",
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-kumoi-falls",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.973099,
+              40.520293
+            ]
+          },
+          "properties": {
+            "id": "oirase-kumoi-falls",
+            "routeStopId": "oirase-kumoi-falls",
+            "name": "Kumoi-no-Taki Falls",
+            "role": "stop",
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-makado-iwa",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.9792155,
+              40.5328859
+            ]
+          },
+          "properties": {
+            "id": "oirase-makado-iwa",
+            "routeStopId": "oirase-makado-iwa",
+            "name": "Makado-iwa viewpoint access",
+            "role": "stop",
+            "order": 5
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-ishigedo",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.9781611,
+              40.5406953
+            ]
+          },
+          "properties": {
+            "id": "oirase-ishigedo",
+            "routeStopId": "oirase-ishigedo",
+            "name": "Ishigedo rest house and trail stop",
+            "role": "stop",
+            "order": 6
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-yakeyama",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.9952198,
+              40.5781342
+            ]
+          },
+          "properties": {
+            "id": "oirase-yakeyama",
+            "routeStopId": "oirase-yakeyama",
+            "name": "Yakeyama gorge entrance",
+            "role": "stop",
+            "order": 7
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-leg-01",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.9406205,
+                40.4788646
+              ],
+              [
+                140.9511378,
+                40.4886517
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "oirase-leg-01",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-leg-02",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.9511378,
+                40.4886517
+              ],
+              [
+                140.9616618,
+                40.5087496
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "oirase-leg-02",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-leg-03",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.9616618,
+                40.5087496
+              ],
+              [
+                140.973099,
+                40.520293
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "oirase-leg-03",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-leg-04",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.973099,
+                40.520293
+              ],
+              [
+                140.9792155,
+                40.5328859
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "oirase-leg-04",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-leg-05",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.9792155,
+                40.5328859
+              ],
+              [
+                140.9781611,
+                40.5406953
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "oirase-leg-05",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "oirase-leg-06",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.9781611,
+                40.5406953
+              ],
+              [
+                140.9952198,
+                40.5781342
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "oirase-leg-06",
+            "mode": "walking"
           }
         }
       ]
@@ -24497,12 +25258,12 @@
     "naoshima-art-and-sea": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          134.05665789999998,
-          34.246010399999996,
-          134.0606579,
-          34.2500104
+          133.98288,
+          34.44323,
+          133.99266,
+          34.45109
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -24511,20 +25272,98 @@
       "features": [
         {
           "type": "Feature",
-          "id": "naoshima-art-and-sea-place",
+          "id": "naoshima-benesse-house-museum",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              134.0586579,
-              34.2480104
+              133.99066,
+              34.44523
             ]
           },
           "properties": {
-            "id": "naoshima-art-and-sea-place",
-            "routeStopId": "naoshima-art-and-sea-place",
-            "name": "Naoshima, art and sea",
+            "id": "naoshima-benesse-house-museum",
+            "routeStopId": "naoshima-benesse-house-museum",
+            "name": "Benesse House Museum (lower)",
             "role": "stop",
             "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "naoshima-lee-ufan-museum",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.9887,
+              34.44909
+            ]
+          },
+          "properties": {
+            "id": "naoshima-lee-ufan-museum",
+            "routeStopId": "naoshima-lee-ufan-museum",
+            "name": "Lee Ufan Museum",
+            "role": "stop",
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "naoshima-chichu-art-museum",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.98488,
+              34.44778
+            ]
+          },
+          "properties": {
+            "id": "naoshima-chichu-art-museum",
+            "routeStopId": "naoshima-chichu-art-museum",
+            "name": "Chichu Art Museum",
+            "role": "stop",
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "naoshima-leg-01",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.99066,
+                34.44523
+              ],
+              [
+                133.9887,
+                34.44909
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "naoshima-leg-01",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "naoshima-leg-02",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.9887,
+                34.44909
+              ],
+              [
+                133.98488,
+                34.44778
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "naoshima-leg-02",
+            "mode": "walking"
           }
         }
       ]
