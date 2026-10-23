@@ -1,0 +1,5592 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-23",
+  "rawCount": 310,
+  "canonicalCandidateCount": 310,
+  "identityReviewPendingCount": 310,
+  "confirmedAliasCount": 0,
+  "completeCount": 0,
+  "incompleteCount": 310,
+  "records": [
+    {
+      "id": "furano-in-bloom",
+      "slug": "furano-in-bloom",
+      "name": "Furano in bloom",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/furano-in-bloom/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/furano-in-bloom/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "the-blue-of-biei",
+      "slug": "the-blue-of-biei",
+      "name": "The blue of Biei",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/the-blue-of-biei/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/the-blue-of-biei/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shiretoko-s-wild-edge",
+      "slug": "shiretoko-s-wild-edge",
+      "name": "Shiretoko’s wild edge",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/shiretoko-s-wild-edge/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shiretoko-s-wild-edge/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "otaru-by-lamplight",
+      "slug": "otaru-by-lamplight",
+      "name": "Otaru by lamplight",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/otaru-by-lamplight/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/otaru-by-lamplight/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "daisetsuzan-high-country",
+      "slug": "daisetsuzan-high-country",
+      "name": "Daisetsuzan high country",
+      "region": "Hokkaido",
+      "type": "hiking-route",
+      "pagePath": "places/daisetsuzan-high-country/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/daisetsuzan-high-country/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hakodate-from-above",
+      "slug": "hakodate-from-above",
+      "name": "Hakodate from above",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/hakodate-from-above/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hakodate-from-above/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-toya-volcanic-calm",
+      "slug": "lake-toya-volcanic-calm",
+      "name": "Lake Toya, volcanic calm",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/lake-toya-volcanic-calm/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-toya-volcanic-calm/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "matsushima-bay",
+      "slug": "matsushima-bay",
+      "name": "Matsushima Bay",
+      "region": "Tohoku",
+      "type": "region",
+      "pagePath": "places/matsushima-bay/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/matsushima-bay/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ginzan-after-dark",
+      "slug": "ginzan-after-dark",
+      "name": "Ginzan after dark",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/ginzan-after-dark/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ginzan-after-dark/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "oirase-stream-walk",
+      "slug": "oirase-stream-walk",
+      "name": "Oirase stream walk",
+      "region": "Tohoku",
+      "type": "walking-route",
+      "pagePath": "places/oirase-stream-walk/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/oirase-stream-walk/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hirosaki-in-blossom",
+      "slug": "hirosaki-in-blossom",
+      "name": "Hirosaki in blossom",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/hirosaki-in-blossom/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hirosaki-in-blossom/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hiraizumi-s-quiet-temples",
+      "slug": "hiraizumi-s-quiet-temples",
+      "name": "Hiraizumi’s quiet temples",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/hiraizumi-s-quiet-temples/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hiraizumi-s-quiet-temples/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tazawa-s-clear-blue",
+      "slug": "tazawa-s-clear-blue",
+      "name": "Tazawa’s clear blue",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/tazawa-s-clear-blue/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tazawa-s-clear-blue/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "the-three-mountains-of-dewa",
+      "slug": "the-three-mountains-of-dewa",
+      "name": "The three mountains of Dewa",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/the-three-mountains-of-dewa/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/the-three-mountains-of-dewa/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "aizu-wakamatsu-s-samurai-streets",
+      "slug": "aizu-wakamatsu-s-samurai-streets",
+      "name": "Aizu-Wakamatsu’s samurai streets",
+      "region": "Tohoku",
+      "type": "walking-route",
+      "pagePath": "places/aizu-wakamatsu-s-samurai-streets/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/aizu-wakamatsu-s-samurai-streets/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tokyo-in-layers",
+      "slug": "tokyo-in-layers",
+      "name": "Tokyo, in layers",
+      "region": "Kanto",
+      "type": "city",
+      "pagePath": "places/tokyo-in-layers/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tokyo-in-layers/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nikko-in-the-cedars",
+      "slug": "nikko-in-the-cedars",
+      "name": "Nikko in the cedars",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/nikko-in-the-cedars/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nikko-in-the-cedars/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kamakura-temple-to-tide",
+      "slug": "kamakura-temple-to-tide",
+      "name": "Kamakura, temple to tide",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/kamakura-temple-to-tide/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kamakura-temple-to-tide/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hakone-through-the-mist",
+      "slug": "hakone-through-the-mist",
+      "name": "Hakone through the mist",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/hakone-through-the-mist/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hakone-through-the-mist/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yokohama-s-harbor-lights",
+      "slug": "yokohama-s-harbor-lights",
+      "name": "Yokohama’s harbor lights",
+      "region": "Kanto",
+      "type": "neighborhood",
+      "pagePath": "places/yokohama-s-harbor-lights/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yokohama-s-harbor-lights/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kusatsu-steam-and-springs",
+      "slug": "kusatsu-steam-and-springs",
+      "name": "Kusatsu, steam and springs",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/kusatsu-steam-and-springs/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kusatsu-steam-and-springs/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "oze-s-open-wetlands",
+      "slug": "oze-s-open-wetlands",
+      "name": "Oze’s open wetlands",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/oze-s-open-wetlands/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/oze-s-open-wetlands/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "fuji-from-the-water",
+      "slug": "fuji-from-the-water",
+      "name": "Fuji, from the water",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/fuji-from-the-water/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/fuji-from-the-water/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kanazawa-unhurried",
+      "slug": "kanazawa-unhurried",
+      "name": "Kanazawa, unhurried",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/kanazawa-unhurried/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kanazawa-unhurried/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shirakawa-go-under-steep-roofs",
+      "slug": "shirakawa-go-under-steep-roofs",
+      "name": "Shirakawa-go, under steep roofs",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/shirakawa-go-under-steep-roofs/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shirakawa-go-under-steep-roofs/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "takayama-s-old-quarter",
+      "slug": "takayama-s-old-quarter",
+      "name": "Takayama’s old quarter",
+      "region": "Chubu",
+      "type": "walking-route",
+      "pagePath": "places/takayama-s-old-quarter/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/takayama-s-old-quarter/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "matsumoto-beneath-the-alps",
+      "slug": "matsumoto-beneath-the-alps",
+      "name": "Matsumoto beneath the Alps",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/matsumoto-beneath-the-alps/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/matsumoto-beneath-the-alps/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kamikochi-the-mountain-valley",
+      "slug": "kamikochi-the-mountain-valley",
+      "name": "Kamikochi, the mountain valley",
+      "region": "Chubu",
+      "type": "hiking-route",
+      "pagePath": "places/kamikochi-the-mountain-valley/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kamikochi-the-mountain-valley/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kiso-valley-post-towns",
+      "slug": "kiso-valley-post-towns",
+      "name": "Kiso Valley post towns",
+      "region": "Chubu",
+      "type": "walking-route",
+      "pagePath": "places/kiso-valley-post-towns/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kiso-valley-post-towns/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sado-island-s-wild-coast",
+      "slug": "sado-island-s-wild-coast",
+      "name": "Sado Island’s wild coast",
+      "region": "Chubu",
+      "type": "island",
+      "pagePath": "places/sado-island-s-wild-coast/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sado-island-s-wild-coast/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kyoto-at-first-light",
+      "slug": "kyoto-at-first-light",
+      "name": "Kyoto at first light",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kyoto-at-first-light/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kyoto-at-first-light/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "osaka-after-hours",
+      "slug": "osaka-after-hours",
+      "name": "Osaka, after hours",
+      "region": "Kansai",
+      "type": "walking-route",
+      "pagePath": "places/osaka-after-hours/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/osaka-after-hours/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nara-between-trees",
+      "slug": "nara-between-trees",
+      "name": "Nara, between trees",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/nara-between-trees/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nara-between-trees/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "arashiyama-s-green-corridor",
+      "slug": "arashiyama-s-green-corridor",
+      "name": "Arashiyama’s green corridor",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/arashiyama-s-green-corridor/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/arashiyama-s-green-corridor/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "himeji-the-white-heron",
+      "slug": "himeji-the-white-heron",
+      "name": "Himeji, the white heron",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/himeji-the-white-heron/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/himeji-the-white-heron/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "koyasan-after-dusk",
+      "slug": "koyasan-after-dusk",
+      "name": "Koyasan after dusk",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/koyasan-after-dusk/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/koyasan-after-dusk/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kumano-kodo-the-old-paths",
+      "slug": "kumano-kodo-the-old-paths",
+      "name": "Kumano Kodo, the old paths",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kumano-kodo-the-old-paths/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kumano-kodo-the-old-paths/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-biwa-s-eastern-shore",
+      "slug": "lake-biwa-s-eastern-shore",
+      "name": "Lake Biwa’s eastern shore",
+      "region": "Kansai",
+      "type": "region",
+      "pagePath": "places/lake-biwa-s-eastern-shore/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-biwa-s-eastern-shore/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "miyajima-tide-lines",
+      "slug": "miyajima-tide-lines",
+      "name": "Miyajima tide lines",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/miyajima-tide-lines/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/miyajima-tide-lines/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hiroshima-a-city-of-peace",
+      "slug": "hiroshima-a-city-of-peace",
+      "name": "Hiroshima, a city of peace",
+      "region": "Chugoku",
+      "type": "city",
+      "pagePath": "places/hiroshima-a-city-of-peace/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hiroshima-a-city-of-peace/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tottori-s-shifting-dunes",
+      "slug": "tottori-s-shifting-dunes",
+      "name": "Tottori’s shifting dunes",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/tottori-s-shifting-dunes/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tottori-s-shifting-dunes/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kurashiki-s-canal-quarter",
+      "slug": "kurashiki-s-canal-quarter",
+      "name": "Kurashiki’s canal quarter",
+      "region": "Chugoku",
+      "type": "walking-route",
+      "pagePath": "places/kurashiki-s-canal-quarter/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kurashiki-s-canal-quarter/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "onomichi-s-hillside-lanes",
+      "slug": "onomichi-s-hillside-lanes",
+      "name": "Onomichi’s hillside lanes",
+      "region": "Chugoku",
+      "type": "walking-route",
+      "pagePath": "places/onomichi-s-hillside-lanes/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/onomichi-s-hillside-lanes/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "izumo-land-of-old-stories",
+      "slug": "izumo-land-of-old-stories",
+      "name": "Izumo, land of old stories",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/izumo-land-of-old-stories/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/izumo-land-of-old-stories/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "iwami-ginzan-s-forest-paths",
+      "slug": "iwami-ginzan-s-forest-paths",
+      "name": "Iwami Ginzan’s forest paths",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/iwami-ginzan-s-forest-paths/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/iwami-ginzan-s-forest-paths/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "the-iya-valley",
+      "slug": "the-iya-valley",
+      "name": "The Iya Valley",
+      "region": "Shikoku",
+      "type": "region",
+      "pagePath": "places/the-iya-valley/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/the-iya-valley/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "naoshima-art-and-sea",
+      "slug": "naoshima-art-and-sea",
+      "name": "Naoshima, art and sea",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/naoshima-art-and-sea/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/naoshima-art-and-sea/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "matsuyama-s-castle-hill",
+      "slug": "matsuyama-s-castle-hill",
+      "name": "Matsuyama’s castle hill",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/matsuyama-s-castle-hill/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/matsuyama-s-castle-hill/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shimanami-kaido-by-bicycle",
+      "slug": "shimanami-kaido-by-bicycle",
+      "name": "Shimanami Kaido by bicycle",
+      "region": "Shikoku",
+      "type": "walking-route",
+      "pagePath": "places/shimanami-kaido-by-bicycle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shimanami-kaido-by-bicycle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "cape-ashizuri-s-ocean-edge",
+      "slug": "cape-ashizuri-s-ocean-edge",
+      "name": "Cape Ashizuri’s ocean edge",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/cape-ashizuri-s-ocean-edge/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/cape-ashizuri-s-ocean-edge/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "oboke-gorge-by-river",
+      "slug": "oboke-gorge-by-river",
+      "name": "Oboke Gorge by river",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/oboke-gorge-by-river/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/oboke-gorge-by-river/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "konpira-san-s-long-climb",
+      "slug": "konpira-san-s-long-climb",
+      "name": "Konpira-san’s long climb",
+      "region": "Shikoku",
+      "type": "hiking-route",
+      "pagePath": "places/konpira-san-s-long-climb/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/konpira-san-s-long-climb/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "beppu-steam-rising",
+      "slug": "beppu-steam-rising",
+      "name": "Beppu, steam rising",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/beppu-steam-rising/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/beppu-steam-rising/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yakushima-ancient-green",
+      "slug": "yakushima-ancient-green",
+      "name": "Yakushima, ancient green",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/yakushima-ancient-green/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yakushima-ancient-green/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nagasaki-harbor-of-many-worlds",
+      "slug": "nagasaki-harbor-of-many-worlds",
+      "name": "Nagasaki, harbor of many worlds",
+      "region": "Kyushu",
+      "type": "neighborhood",
+      "pagePath": "places/nagasaki-harbor-of-many-worlds/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nagasaki-harbor-of-many-worlds/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "aso-s-wide-caldera",
+      "slug": "aso-s-wide-caldera",
+      "name": "Aso’s wide caldera",
+      "region": "Kyushu",
+      "type": "region",
+      "pagePath": "places/aso-s-wide-caldera/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/aso-s-wide-caldera/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kurokawa-s-onsen-lanes",
+      "slug": "kurokawa-s-onsen-lanes",
+      "name": "Kurokawa’s onsen lanes",
+      "region": "Kyushu",
+      "type": "walking-route",
+      "pagePath": "places/kurokawa-s-onsen-lanes/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kurokawa-s-onsen-lanes/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kagoshima-and-sakurajima",
+      "slug": "kagoshima-and-sakurajima",
+      "name": "Kagoshima and Sakurajima",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/kagoshima-and-sakurajima/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kagoshima-and-sakurajima/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yufuin-under-mount-yufu",
+      "slug": "yufuin-under-mount-yufu",
+      "name": "Yufuin under Mount Yufu",
+      "region": "Kyushu",
+      "type": "hiking-route",
+      "pagePath": "places/yufuin-under-mount-yufu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yufuin-under-mount-yufu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kerama-blue",
+      "slug": "kerama-blue",
+      "name": "Kerama blue",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/kerama-blue/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kerama-blue/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "naha-island-time",
+      "slug": "naha-island-time",
+      "name": "Naha, island time",
+      "region": "Okinawa",
+      "type": "island",
+      "pagePath": "places/naha-island-time/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/naha-island-time/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shuri-ryukyu-memory",
+      "slug": "shuri-ryukyu-memory",
+      "name": "Shuri, Ryukyu memory",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/shuri-ryukyu-memory/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shuri-ryukyu-memory/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ishigaki-s-southern-shore",
+      "slug": "ishigaki-s-southern-shore",
+      "name": "Ishigaki’s southern shore",
+      "region": "Okinawa",
+      "type": "region",
+      "pagePath": "places/ishigaki-s-southern-shore/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ishigaki-s-southern-shore/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "iriomote-s-mangrove-rivers",
+      "slug": "iriomote-s-mangrove-rivers",
+      "name": "Iriomote’s mangrove rivers",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/iriomote-s-mangrove-rivers/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/iriomote-s-mangrove-rivers/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "taketomi-by-foot-and-bicycle",
+      "slug": "taketomi-by-foot-and-bicycle",
+      "name": "Taketomi by foot and bicycle",
+      "region": "Okinawa",
+      "type": "walking-route",
+      "pagePath": "places/taketomi-by-foot-and-bicycle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/taketomi-by-foot-and-bicycle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "cape-manzamo-s-sea-cliffs",
+      "slug": "cape-manzamo-s-sea-cliffs",
+      "name": "Cape Manzamo’s sea cliffs",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/cape-manzamo-s-sea-cliffs/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/cape-manzamo-s-sea-cliffs/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "zamami-s-island-blue-days",
+      "slug": "zamami-s-island-blue-days",
+      "name": "Zamami’s island-blue days",
+      "region": "Okinawa",
+      "type": "island",
+      "pagePath": "places/zamami-s-island-blue-days/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/zamami-s-island-blue-days/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sapporo-snow-and-neon",
+      "slug": "sapporo-snow-and-neon",
+      "name": "Sapporo, snow and neon",
+      "region": "Hokkaido",
+      "type": "city",
+      "pagePath": "places/sapporo-snow-and-neon/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sapporo-snow-and-neon/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-mashu-mirror-of-the-sky",
+      "slug": "lake-mashu-mirror-of-the-sky",
+      "name": "Lake Mashu, mirror of the sky",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/lake-mashu-mirror-of-the-sky/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-mashu-mirror-of-the-sky/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "noboribetsu-s-volcanic-valley",
+      "slug": "noboribetsu-s-volcanic-valley",
+      "name": "Noboribetsu’s volcanic valley",
+      "region": "Hokkaido",
+      "type": "region",
+      "pagePath": "places/noboribetsu-s-volcanic-valley/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/noboribetsu-s-volcanic-valley/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shakotan-s-blue-coast",
+      "slug": "shakotan-s-blue-coast",
+      "name": "Shakotan’s blue coast",
+      "region": "Hokkaido",
+      "type": "region",
+      "pagePath": "places/shakotan-s-blue-coast/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shakotan-s-blue-coast/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "aomori-nebuta-nights",
+      "slug": "aomori-nebuta-nights",
+      "name": "Aomori Nebuta nights",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/aomori-nebuta-nights/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/aomori-nebuta-nights/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yamadera-a-mountain-of-steps",
+      "slug": "yamadera-a-mountain-of-steps",
+      "name": "Yamadera, a mountain of steps",
+      "region": "Tohoku",
+      "type": "hiking-route",
+      "pagePath": "places/yamadera-a-mountain-of-steps/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yamadera-a-mountain-of-steps/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ouchi-juku-s-thatched-lanes",
+      "slug": "ouchi-juku-s-thatched-lanes",
+      "name": "Ouchi-juku’s thatched lanes",
+      "region": "Tohoku",
+      "type": "walking-route",
+      "pagePath": "places/ouchi-juku-s-thatched-lanes/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ouchi-juku-s-thatched-lanes/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "zao-s-emerald-crater-lake",
+      "slug": "zao-s-emerald-crater-lake",
+      "name": "Zao’s emerald crater lake",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/zao-s-emerald-crater-lake/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/zao-s-emerald-crater-lake/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "senso-ji-and-asakusa-lanes",
+      "slug": "senso-ji-and-asakusa-lanes",
+      "name": "Senso-ji and Asakusa lanes",
+      "region": "Kanto",
+      "type": "walking-route",
+      "pagePath": "places/senso-ji-and-asakusa-lanes/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/senso-ji-and-asakusa-lanes/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shinjuku-gyoen-in-every-season",
+      "slug": "shinjuku-gyoen-in-every-season",
+      "name": "Shinjuku Gyoen in every season",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/shinjuku-gyoen-in-every-season/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shinjuku-gyoen-in-every-season/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "enoshima-s-sea-edge",
+      "slug": "enoshima-s-sea-edge",
+      "name": "Enoshima’s sea edge",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/enoshima-s-sea-edge/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/enoshima-s-sea-edge/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kawagoe-the-little-edo",
+      "slug": "kawagoe-the-little-edo",
+      "name": "Kawagoe, the little Edo",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/kawagoe-the-little-edo/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kawagoe-the-little-edo/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tateyama-kurobe-alpine-route",
+      "slug": "tateyama-kurobe-alpine-route",
+      "name": "Tateyama Kurobe Alpine Route",
+      "region": "Chubu",
+      "type": "hiking-route",
+      "pagePath": "places/tateyama-kurobe-alpine-route/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tateyama-kurobe-alpine-route/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "zenkoji-a-temple-town-morning",
+      "slug": "zenkoji-a-temple-town-morning",
+      "name": "Zenkoji, a temple town morning",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/zenkoji-a-temple-town-morning/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/zenkoji-a-temple-town-morning/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "izu-peninsula-the-long-way-round",
+      "slug": "izu-peninsula-the-long-way-round",
+      "name": "Izu Peninsula, the long way round",
+      "region": "Chubu",
+      "type": "region",
+      "pagePath": "places/izu-peninsula-the-long-way-round/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/izu-peninsula-the-long-way-round/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "oshino-hakkai-and-fuji-views",
+      "slug": "oshino-hakkai-and-fuji-views",
+      "name": "Oshino Hakkai and Fuji views",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/oshino-hakkai-and-fuji-views/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/oshino-hakkai-and-fuji-views/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "amanohashidate-sea-and-sky",
+      "slug": "amanohashidate-sea-and-sky",
+      "name": "Amanohashidate, sea and sky",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/amanohashidate-sea-and-sky/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/amanohashidate-sea-and-sky/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kiyomizu-dera-above-kyoto",
+      "slug": "kiyomizu-dera-above-kyoto",
+      "name": "Kiyomizu-dera above Kyoto",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kiyomizu-dera-above-kyoto/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kiyomizu-dera-above-kyoto/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "osaka-castle-park",
+      "slug": "osaka-castle-park",
+      "name": "Osaka Castle Park",
+      "region": "Kansai",
+      "type": "city",
+      "pagePath": "places/osaka-castle-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/osaka-castle-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "koyasan-s-lantern-forest",
+      "slug": "koyasan-s-lantern-forest",
+      "name": "Koyasan’s lantern forest",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/koyasan-s-lantern-forest/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/koyasan-s-lantern-forest/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kurashiki-s-canal-at-blue-hour",
+      "slug": "kurashiki-s-canal-at-blue-hour",
+      "name": "Kurashiki’s canal at blue hour",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/kurashiki-s-canal-at-blue-hour/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kurashiki-s-canal-at-blue-hour/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tottori-sand-dunes-at-sunset",
+      "slug": "tottori-sand-dunes-at-sunset",
+      "name": "Tottori Sand Dunes at sunset",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/tottori-sand-dunes-at-sunset/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tottori-sand-dunes-at-sunset/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "izumo-taisha-a-sacred-approach",
+      "slug": "izumo-taisha-a-sacred-approach",
+      "name": "Izumo Taisha, a sacred approach",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/izumo-taisha-a-sacred-approach/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/izumo-taisha-a-sacred-approach/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ritsurin-garden-takamatsu",
+      "slug": "ritsurin-garden-takamatsu",
+      "name": "Ritsurin Garden, Takamatsu",
+      "region": "Shikoku",
+      "type": "city",
+      "pagePath": "places/ritsurin-garden-takamatsu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ritsurin-garden-takamatsu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "iya-valley-vine-bridges",
+      "slug": "iya-valley-vine-bridges",
+      "name": "Iya Valley vine bridges",
+      "region": "Shikoku",
+      "type": "region",
+      "pagePath": "places/iya-valley-vine-bridges/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/iya-valley-vine-bridges/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "cape-ashizuri-s-pacific-horizon",
+      "slug": "cape-ashizuri-s-pacific-horizon",
+      "name": "Cape Ashizuri’s Pacific horizon",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/cape-ashizuri-s-pacific-horizon/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/cape-ashizuri-s-pacific-horizon/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "takachiho-gorge-by-boat",
+      "slug": "takachiho-gorge-by-boat",
+      "name": "Takachiho Gorge by boat",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/takachiho-gorge-by-boat/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/takachiho-gorge-by-boat/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nagasaki-s-hillside-harbor",
+      "slug": "nagasaki-s-hillside-harbor",
+      "name": "Nagasaki’s hillside harbor",
+      "region": "Kyushu",
+      "type": "neighborhood",
+      "pagePath": "places/nagasaki-s-hillside-harbor/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nagasaki-s-hillside-harbor/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kagoshima-s-sakurajima-view",
+      "slug": "kagoshima-s-sakurajima-view",
+      "name": "Kagoshima’s Sakurajima view",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/kagoshima-s-sakurajima-view/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kagoshima-s-sakurajima-view/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yufuin-under-mount-yufu-2",
+      "slug": "yufuin-under-mount-yufu-2",
+      "name": "Yufuin, under Mount Yufu",
+      "region": "Kyushu",
+      "type": "hiking-route",
+      "pagePath": "places/yufuin-under-mount-yufu-2/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yufuin-under-mount-yufu-2/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "miyakojima-s-turquoise-coast",
+      "slug": "miyakojima-s-turquoise-coast",
+      "name": "Miyakojima’s turquoise coast",
+      "region": "Okinawa",
+      "type": "region",
+      "pagePath": "places/miyakojima-s-turquoise-coast/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/miyakojima-s-turquoise-coast/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "churaumi-s-island-aquarium-coast",
+      "slug": "churaumi-s-island-aquarium-coast",
+      "name": "Churaumi’s island aquarium coast",
+      "region": "Okinawa",
+      "type": "island",
+      "pagePath": "places/churaumi-s-island-aquarium-coast/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/churaumi-s-island-aquarium-coast/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yonaguni-japan-s-far-west",
+      "slug": "yonaguni-japan-s-far-west",
+      "name": "Yonaguni, Japan’s far west",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/yonaguni-japan-s-far-west/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yonaguni-japan-s-far-west/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tokyo-disney-resort",
+      "slug": "tokyo-disney-resort",
+      "name": "Tokyo Disney Resort",
+      "region": "Kanto",
+      "type": "city",
+      "pagePath": "places/tokyo-disney-resort/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tokyo-disney-resort/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "super-nintendo-world",
+      "slug": "super-nintendo-world",
+      "name": "Super Nintendo World",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/super-nintendo-world/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/super-nintendo-world/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "fuji-q-highland",
+      "slug": "fuji-q-highland",
+      "name": "Fuji-Q Highland",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/fuji-q-highland/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/fuji-q-highland/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ghibli-park",
+      "slug": "ghibli-park",
+      "name": "Ghibli Park",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/ghibli-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ghibli-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tokyo-skytree",
+      "slug": "tokyo-skytree",
+      "name": "Tokyo Skytree",
+      "region": "Kanto",
+      "type": "city",
+      "pagePath": "places/tokyo-skytree/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tokyo-skytree/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tokyo-tower",
+      "slug": "tokyo-tower",
+      "name": "Tokyo Tower",
+      "region": "Kanto",
+      "type": "city",
+      "pagePath": "places/tokyo-tower/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tokyo-tower/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kinkaku-ji-the-golden-pavilion",
+      "slug": "kinkaku-ji-the-golden-pavilion",
+      "name": "Kinkaku-ji, the Golden Pavilion",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kinkaku-ji-the-golden-pavilion/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kinkaku-ji-the-golden-pavilion/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "osaka-aquarium-kaiyukan",
+      "slug": "osaka-aquarium-kaiyukan",
+      "name": "Osaka Aquarium Kaiyukan",
+      "region": "Kansai",
+      "type": "city",
+      "pagePath": "places/osaka-aquarium-kaiyukan/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/osaka-aquarium-kaiyukan/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "fukuoka-tower",
+      "slug": "fukuoka-tower",
+      "name": "Fukuoka Tower",
+      "region": "Kyushu",
+      "type": "city",
+      "pagePath": "places/fukuoka-tower/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/fukuoka-tower/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kumamoto-castle",
+      "slug": "kumamoto-castle",
+      "name": "Kumamoto Castle",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/kumamoto-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kumamoto-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "missing",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "asahiyama-zoo",
+      "slug": "asahiyama-zoo",
+      "name": "Asahiyama Zoo",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/asahiyama-zoo/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/asahiyama-zoo/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "moerenuma-park",
+      "slug": "moerenuma-park",
+      "name": "Moerenuma Park",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/moerenuma-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/moerenuma-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-shikotsu",
+      "slug": "lake-shikotsu",
+      "name": "Lake Shikotsu",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/lake-shikotsu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-shikotsu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "otaru-aquarium",
+      "slug": "otaru-aquarium",
+      "name": "Otaru Aquarium",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/otaru-aquarium/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/otaru-aquarium/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kakunodate-samurai-district",
+      "slug": "kakunodate-samurai-district",
+      "name": "Kakunodate Samurai District",
+      "region": "Tohoku",
+      "type": "walking-route",
+      "pagePath": "places/kakunodate-samurai-district/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kakunodate-samurai-district/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-towada",
+      "slug": "lake-towada",
+      "name": "Lake Towada",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/lake-towada/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-towada/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hirosaki-castle-park",
+      "slug": "hirosaki-castle-park",
+      "name": "Hirosaki Castle Park",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/hirosaki-castle-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hirosaki-castle-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "zuiganji-temple",
+      "slug": "zuiganji-temple",
+      "name": "Zuiganji Temple",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/zuiganji-temple/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/zuiganji-temple/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "meiji-jingu",
+      "slug": "meiji-jingu",
+      "name": "Meiji Jingu",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/meiji-jingu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/meiji-jingu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shibuya-scramble-crossing",
+      "slug": "shibuya-scramble-crossing",
+      "name": "Shibuya Scramble Crossing",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/shibuya-scramble-crossing/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shibuya-scramble-crossing/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "teamlab-planets-tokyo",
+      "slug": "teamlab-planets-tokyo",
+      "name": "teamLab Planets TOKYO",
+      "region": "Kanto",
+      "type": "city",
+      "pagePath": "places/teamlab-planets-tokyo/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/teamlab-planets-tokyo/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tokyo-national-museum",
+      "slug": "tokyo-national-museum",
+      "name": "Tokyo National Museum",
+      "region": "Kanto",
+      "type": "city",
+      "pagePath": "places/tokyo-national-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tokyo-national-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ghibli-museum-mitaka",
+      "slug": "ghibli-museum-mitaka",
+      "name": "Ghibli Museum, Mitaka",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/ghibli-museum-mitaka/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ghibli-museum-mitaka/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "great-buddha-of-kamakura",
+      "slug": "great-buddha-of-kamakura",
+      "name": "Great Buddha of Kamakura",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/great-buddha-of-kamakura/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/great-buddha-of-kamakura/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "enoshima-aquarium",
+      "slug": "enoshima-aquarium",
+      "name": "Enoshima Aquarium",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/enoshima-aquarium/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/enoshima-aquarium/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hitachi-seaside-park",
+      "slug": "hitachi-seaside-park",
+      "name": "Hitachi Seaside Park",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/hitachi-seaside-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hitachi-seaside-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ashikaga-flower-park",
+      "slug": "ashikaga-flower-park",
+      "name": "Ashikaga Flower Park",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/ashikaga-flower-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ashikaga-flower-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sanrio-puroland",
+      "slug": "sanrio-puroland",
+      "name": "Sanrio Puroland",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/sanrio-puroland/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sanrio-puroland/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hamarikyu-gardens",
+      "slug": "hamarikyu-gardens",
+      "name": "Hamarikyu Gardens",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/hamarikyu-gardens/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hamarikyu-gardens/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "jigokudani-snow-monkey-park",
+      "slug": "jigokudani-snow-monkey-park",
+      "name": "Jigokudani Snow Monkey Park",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/jigokudani-snow-monkey-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/jigokudani-snow-monkey-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "takayama-jinya",
+      "slug": "takayama-jinya",
+      "name": "Takayama Jinya",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/takayama-jinya/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/takayama-jinya/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hida-folk-village",
+      "slug": "hida-folk-village",
+      "name": "Hida Folk Village",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/hida-folk-village/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hida-folk-village/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kurobe-gorge-railway",
+      "slug": "kurobe-gorge-railway",
+      "name": "Kurobe Gorge Railway",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/kurobe-gorge-railway/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kurobe-gorge-railway/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ise-jingu",
+      "slug": "ise-jingu",
+      "name": "Ise Jingu",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/ise-jingu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ise-jingu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "fushimi-inari-taisha",
+      "slug": "fushimi-inari-taisha",
+      "name": "Fushimi Inari Taisha",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/fushimi-inari-taisha/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/fushimi-inari-taisha/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nijo-castle",
+      "slug": "nijo-castle",
+      "name": "Nijo Castle",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/nijo-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nijo-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "dotonbori",
+      "slug": "dotonbori",
+      "name": "Dotonbori",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/dotonbori/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/dotonbori/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kinosaki-onsen",
+      "slug": "kinosaki-onsen",
+      "name": "Kinosaki Onsen",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kinosaki-onsen/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kinosaki-onsen/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "byodo-in-temple",
+      "slug": "byodo-in-temple",
+      "name": "Byodo-in Temple",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/byodo-in-temple/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/byodo-in-temple/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kobe-harborland",
+      "slug": "kobe-harborland",
+      "name": "Kobe Harborland",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kobe-harborland/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kobe-harborland/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "todai-ji-temple",
+      "slug": "todai-ji-temple",
+      "name": "Todai-ji Temple",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/todai-ji-temple/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/todai-ji-temple/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "adachi-museum-of-art",
+      "slug": "adachi-museum-of-art",
+      "name": "Adachi Museum of Art",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/adachi-museum-of-art/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/adachi-museum-of-art/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "dogo-onsen",
+      "slug": "dogo-onsen",
+      "name": "Dogo Onsen",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/dogo-onsen/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/dogo-onsen/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "naruto-whirlpools",
+      "slug": "naruto-whirlpools",
+      "name": "Naruto Whirlpools",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/naruto-whirlpools/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/naruto-whirlpools/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nagasaki-peace-park",
+      "slug": "nagasaki-peace-park",
+      "name": "Nagasaki Peace Park",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/nagasaki-peace-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nagasaki-peace-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "huis-ten-bosch",
+      "slug": "huis-ten-bosch",
+      "name": "Huis Ten Bosch",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/huis-ten-bosch/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/huis-ten-bosch/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "beppu-jigoku-meguri",
+      "slug": "beppu-jigoku-meguri",
+      "name": "Beppu Jigoku Meguri",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/beppu-jigoku-meguri/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/beppu-jigoku-meguri/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nanzoin-reclining-buddha",
+      "slug": "nanzoin-reclining-buddha",
+      "name": "Nanzoin Reclining Buddha",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/nanzoin-reclining-buddha/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nanzoin-reclining-buddha/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "okinawa-world-and-gyokusendo-cave",
+      "slug": "okinawa-world-and-gyokusendo-cave",
+      "name": "Okinawa World & Gyokusendo Cave",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/okinawa-world-and-gyokusendo-cave/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/okinawa-world-and-gyokusendo-cave/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "okinawa-peace-memorial-park",
+      "slug": "okinawa-peace-memorial-park",
+      "name": "Okinawa Peace Memorial Park",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/okinawa-peace-memorial-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/okinawa-peace-memorial-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "niseko-s-snow-country",
+      "slug": "niseko-s-snow-country",
+      "name": "Niseko’s snow country",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/niseko-s-snow-country/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/niseko-s-snow-country/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sapporo-snow-festival",
+      "slug": "sapporo-snow-festival",
+      "name": "Sapporo Snow Festival",
+      "region": "Hokkaido",
+      "type": "city",
+      "pagePath": "places/sapporo-snow-festival/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sapporo-snow-festival/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "goryokaku-star-fort",
+      "slug": "goryokaku-star-fort",
+      "name": "Goryokaku Star Fort",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/goryokaku-star-fort/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/goryokaku-star-fort/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sapporo-beer-museum",
+      "slug": "sapporo-beer-museum",
+      "name": "Sapporo Beer Museum",
+      "region": "Hokkaido",
+      "type": "city",
+      "pagePath": "places/sapporo-beer-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sapporo-beer-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "aomori-museum-of-art",
+      "slug": "aomori-museum-of-art",
+      "name": "Aomori Museum of Art",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/aomori-museum-of-art/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/aomori-museum-of-art/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "morioka-castle-stone-walls",
+      "slug": "morioka-castle-stone-walls",
+      "name": "Morioka Castle stone walls",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/morioka-castle-stone-walls/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/morioka-castle-stone-walls/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tsuruga-castle-in-aizu",
+      "slug": "tsuruga-castle-in-aizu",
+      "name": "Tsuruga Castle in Aizu",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/tsuruga-castle-in-aizu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tsuruga-castle-in-aizu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sanriku-coastal-viewpoints",
+      "slug": "sanriku-coastal-viewpoints",
+      "name": "Sanriku coastal viewpoints",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/sanriku-coastal-viewpoints/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sanriku-coastal-viewpoints/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tokyo-disneysea",
+      "slug": "tokyo-disneysea",
+      "name": "Tokyo DisneySea",
+      "region": "Kanto",
+      "type": "city",
+      "pagePath": "places/tokyo-disneysea/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tokyo-disneysea/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "cup-noodles-museum-yokohama",
+      "slug": "cup-noodles-museum-yokohama",
+      "name": "Cup Noodles Museum Yokohama",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/cup-noodles-museum-yokohama/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/cup-noodles-museum-yokohama/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "fuji-safari-park",
+      "slug": "fuji-safari-park",
+      "name": "Fuji Safari Park",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/fuji-safari-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/fuji-safari-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "showa-kinen-park",
+      "slug": "showa-kinen-park",
+      "name": "Showa Kinen Park",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/showa-kinen-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/showa-kinen-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nagashima-spa-land",
+      "slug": "nagashima-spa-land",
+      "name": "Nagashima Spa Land",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/nagashima-spa-land/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nagashima-spa-land/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "inuyama-castle",
+      "slug": "inuyama-castle",
+      "name": "Inuyama Castle",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/inuyama-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/inuyama-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "mishima-skywalk",
+      "slug": "mishima-skywalk",
+      "name": "Mishima Skywalk",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/mishima-skywalk/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/mishima-skywalk/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "universal-studios-japan",
+      "slug": "universal-studios-japan",
+      "name": "Universal Studios Japan",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/universal-studios-japan/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/universal-studios-japan/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "minoh-falls-forest-walk",
+      "slug": "minoh-falls-forest-walk",
+      "name": "Minoh Falls forest walk",
+      "region": "Kansai",
+      "type": "walking-route",
+      "pagePath": "places/minoh-falls-forest-walk/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/minoh-falls-forest-walk/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nishiki-market",
+      "slug": "nishiki-market",
+      "name": "Nishiki Market",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/nishiki-market/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nishiki-market/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kobe-nunobiki-herb-gardens",
+      "slug": "kobe-nunobiki-herb-gardens",
+      "name": "Kobe Nunobiki Herb Gardens",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kobe-nunobiki-herb-gardens/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kobe-nunobiki-herb-gardens/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "motonosumi-shrine-coast",
+      "slug": "motonosumi-shrine-coast",
+      "name": "Motonosumi Shrine coast",
+      "region": "Chugoku",
+      "type": "region",
+      "pagePath": "places/motonosumi-shrine-coast/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/motonosumi-shrine-coast/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hagi-castle-town",
+      "slug": "hagi-castle-town",
+      "name": "Hagi Castle Town",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/hagi-castle-town/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hagi-castle-town/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sandankyo-gorge",
+      "slug": "sandankyo-gorge",
+      "name": "Sandankyo Gorge",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/sandankyo-gorge/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sandankyo-gorge/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kochi-castle",
+      "slug": "kochi-castle",
+      "name": "Kochi Castle",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/kochi-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kochi-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shodoshima-olive-park",
+      "slug": "shodoshima-olive-park",
+      "name": "Shodoshima Olive Park",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/shodoshima-olive-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shodoshima-olive-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "matsuyama-castle",
+      "slug": "matsuyama-castle",
+      "name": "Matsuyama Castle",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/matsuyama-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/matsuyama-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yanagawa-canal-cruise",
+      "slug": "yanagawa-canal-cruise",
+      "name": "Yanagawa canal cruise",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/yanagawa-canal-cruise/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yanagawa-canal-cruise/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "uminonakamichi-seaside-park",
+      "slug": "uminonakamichi-seaside-park",
+      "name": "Uminonakamichi Seaside Park",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/uminonakamichi-seaside-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/uminonakamichi-seaside-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "glover-garden",
+      "slug": "glover-garden",
+      "name": "Glover Garden",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/glover-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/glover-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kouri-bridge-and-island-coast",
+      "slug": "kouri-bridge-and-island-coast",
+      "name": "Kouri Bridge and island coast",
+      "region": "Okinawa",
+      "type": "island",
+      "pagePath": "places/kouri-bridge-and-island-coast/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kouri-bridge-and-island-coast/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "american-village-at-sunset",
+      "slug": "american-village-at-sunset",
+      "name": "American Village at sunset",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/american-village-at-sunset/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/american-village-at-sunset/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "cape-soya",
+      "slug": "cape-soya",
+      "name": "Cape Soya",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/cape-soya/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/cape-soya/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-akan",
+      "slug": "lake-akan",
+      "name": "Lake Akan",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/lake-akan/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-akan/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "asahidake-ropeway",
+      "slug": "asahidake-ropeway",
+      "name": "Asahidake Ropeway",
+      "region": "Hokkaido",
+      "type": "hiking-route",
+      "pagePath": "places/asahidake-ropeway/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/asahidake-ropeway/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ningle-terrace",
+      "slug": "ningle-terrace",
+      "name": "Ningle Terrace",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/ningle-terrace/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ningle-terrace/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "upopoy-national-ainu-museum",
+      "slug": "upopoy-national-ainu-museum",
+      "name": "Upopoy National Ainu Museum",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/upopoy-national-ainu-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/upopoy-national-ainu-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "abashiri-prison-museum",
+      "slug": "abashiri-prison-museum",
+      "name": "Abashiri Prison Museum",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/abashiri-prison-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/abashiri-prison-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hakkoda-ropeway",
+      "slug": "hakkoda-ropeway",
+      "name": "Hakkoda Ropeway",
+      "region": "Tohoku",
+      "type": "hiking-route",
+      "pagePath": "places/hakkoda-ropeway/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hakkoda-ropeway/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "oga-namahage-museum",
+      "slug": "oga-namahage-museum",
+      "name": "Oga Namahage Museum",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/oga-namahage-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/oga-namahage-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hachimantai-aspite-line",
+      "slug": "hachimantai-aspite-line",
+      "name": "Hachimantai Aspite Line",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/hachimantai-aspite-line/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hachimantai-aspite-line/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "genbikei-gorge",
+      "slug": "genbikei-gorge",
+      "name": "Genbikei Gorge",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/genbikei-gorge/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/genbikei-gorge/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "akiu-great-falls",
+      "slug": "akiu-great-falls",
+      "name": "Akiu Great Falls",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/akiu-great-falls/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/akiu-great-falls/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "teamlab-borderless",
+      "slug": "teamlab-borderless",
+      "name": "teamLab Borderless",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/teamlab-borderless/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/teamlab-borderless/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yokohama-chinatown",
+      "slug": "yokohama-chinatown",
+      "name": "Yokohama Chinatown",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/yokohama-chinatown/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yokohama-chinatown/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "edo-wonderland-nikko-edomura",
+      "slug": "edo-wonderland-nikko-edomura",
+      "name": "Edo Wonderland Nikko Edomura",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/edo-wonderland-nikko-edomura/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/edo-wonderland-nikko-edomura/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "oya-history-museum",
+      "slug": "oya-history-museum",
+      "name": "Oya History Museum",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/oya-history-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/oya-history-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "mother-farm",
+      "slug": "mother-farm",
+      "name": "Mother Farm",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/mother-farm/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/mother-farm/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hasedera-temple-kamakura",
+      "slug": "hasedera-temple-kamakura",
+      "name": "Hasedera Temple, Kamakura",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/hasedera-temple-kamakura/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hasedera-temple-kamakura/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kurobe-dam",
+      "slug": "kurobe-dam",
+      "name": "Kurobe Dam",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/kurobe-dam/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kurobe-dam/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tojinbo-cliffs",
+      "slug": "tojinbo-cliffs",
+      "name": "Tojinbo Cliffs",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/tojinbo-cliffs/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tojinbo-cliffs/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tsumago-juku",
+      "slug": "tsumago-juku",
+      "name": "Tsumago-juku",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/tsumago-juku/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tsumago-juku/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "gero-onsen",
+      "slug": "gero-onsen",
+      "name": "Gero Onsen",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/gero-onsen/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/gero-onsen/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-suwa",
+      "slug": "lake-suwa",
+      "name": "Lake Suwa",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/lake-suwa/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-suwa/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "echizen-ono-castle",
+      "slug": "echizen-ono-castle",
+      "name": "Echizen Ono Castle",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/echizen-ono-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/echizen-ono-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kifune-shrine",
+      "slug": "kifune-shrine",
+      "name": "Kifune Shrine",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kifune-shrine/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kifune-shrine/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "katsuoji-temple",
+      "slug": "katsuoji-temple",
+      "name": "Katsuoji Temple",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/katsuoji-temple/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/katsuoji-temple/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nara-national-museum",
+      "slug": "nara-national-museum",
+      "name": "Nara National Museum",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/nara-national-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nara-national-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "wakayama-castle",
+      "slug": "wakayama-castle",
+      "name": "Wakayama Castle",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/wakayama-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/wakayama-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "takarazuka-grand-theater",
+      "slug": "takarazuka-grand-theater",
+      "name": "Takarazuka Grand Theater",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/takarazuka-grand-theater/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/takarazuka-grand-theater/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "okayama-korakuen",
+      "slug": "okayama-korakuen",
+      "name": "Okayama Korakuen",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/okayama-korakuen/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/okayama-korakuen/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shukkeien-garden",
+      "slug": "shukkeien-garden",
+      "name": "Shukkeien Garden",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/shukkeien-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shukkeien-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kintaikyo-bridge",
+      "slug": "kintaikyo-bridge",
+      "name": "Kintaikyo Bridge",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/kintaikyo-bridge/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kintaikyo-bridge/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tomonoura-harbor-lanes",
+      "slug": "tomonoura-harbor-lanes",
+      "name": "Tomonoura harbor lanes",
+      "region": "Chugoku",
+      "type": "walking-route",
+      "pagePath": "places/tomonoura-harbor-lanes/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tomonoura-harbor-lanes/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tsunoshima-bridge",
+      "slug": "tsunoshima-bridge",
+      "name": "Tsunoshima Bridge",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/tsunoshima-bridge/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tsunoshima-bridge/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "bitchu-matsuyama-castle",
+      "slug": "bitchu-matsuyama-castle",
+      "name": "Bitchu Matsuyama Castle",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/bitchu-matsuyama-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/bitchu-matsuyama-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "chichibugahama-beach",
+      "slug": "chichibugahama-beach",
+      "name": "Chichibugahama Beach",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/chichibugahama-beach/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/chichibugahama-beach/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shikoku-karst",
+      "slug": "shikoku-karst",
+      "name": "Shikoku Karst",
+      "region": "Shikoku",
+      "type": "hiking-route",
+      "pagePath": "places/shikoku-karst/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shikoku-karst/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ozu-castle",
+      "slug": "ozu-castle",
+      "name": "Ozu Castle",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/ozu-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ozu-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ryugado-cave",
+      "slug": "ryugado-cave",
+      "name": "Ryugado Cave",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/ryugado-cave/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ryugado-cave/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "otsuka-museum-of-art",
+      "slug": "otsuka-museum-of-art",
+      "name": "Otsuka Museum of Art",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/otsuka-museum-of-art/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/otsuka-museum-of-art/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "dazaifu-tenmangu",
+      "slug": "dazaifu-tenmangu",
+      "name": "Dazaifu Tenmangu",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/dazaifu-tenmangu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/dazaifu-tenmangu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kirishima-jingu",
+      "slug": "kirishima-jingu",
+      "name": "Kirishima Jingu",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/kirishima-jingu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kirishima-jingu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sakurai-futamigaura",
+      "slug": "sakurai-futamigaura",
+      "name": "Sakurai Futamigaura",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/sakurai-futamigaura/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sakurai-futamigaura/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "amakusa-gokyo",
+      "slug": "amakusa-gokyo",
+      "name": "Amakusa Gokyo",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/amakusa-gokyo/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/amakusa-gokyo/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "mojiko-retro",
+      "slug": "mojiko-retro",
+      "name": "Mojiko Retro",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/mojiko-retro/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/mojiko-retro/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "arita-porcelain-park",
+      "slug": "arita-porcelain-park",
+      "name": "Arita Porcelain Park",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/arita-porcelain-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/arita-porcelain-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sefa-utaki",
+      "slug": "sefa-utaki",
+      "name": "Sefa Utaki",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/sefa-utaki/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sefa-utaki/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nakagusuku-castle",
+      "slug": "nakagusuku-castle",
+      "name": "Nakagusuku Castle",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/nakagusuku-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nakagusuku-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "bise-fukugi-tree-road",
+      "slug": "bise-fukugi-tree-road",
+      "name": "Bise Fukugi Tree Road",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/bise-fukugi-tree-road/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/bise-fukugi-tree-road/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yonaha-maehama-beach",
+      "slug": "yonaha-maehama-beach",
+      "name": "Yonaha Maehama Beach",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/yonaha-maehama-beach/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yonaha-maehama-beach/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shikinaen-royal-garden",
+      "slug": "shikinaen-royal-garden",
+      "name": "Shikinaen Royal Garden",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/shikinaen-royal-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shikinaen-royal-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-kussharo",
+      "slug": "lake-kussharo",
+      "name": "Lake Kussharo",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/lake-kussharo/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-kussharo/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sounkyo-gorge",
+      "slug": "sounkyo-gorge",
+      "name": "Sounkyo Gorge",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/sounkyo-gorge/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sounkyo-gorge/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hakodate-morning-market",
+      "slug": "hakodate-morning-market",
+      "name": "Hakodate Morning Market",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/hakodate-morning-market/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hakodate-morning-market/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kushiro-marsh-observatory",
+      "slug": "kushiro-marsh-observatory",
+      "name": "Kushiro Marsh Observatory",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/kushiro-marsh-observatory/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kushiro-marsh-observatory/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "otaru-sakaimachi-street",
+      "slug": "otaru-sakaimachi-street",
+      "name": "Otaru Sakaimachi Street",
+      "region": "Hokkaido",
+      "type": "walking-route",
+      "pagePath": "places/otaru-sakaimachi-street/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/otaru-sakaimachi-street/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "jodogahama-beach",
+      "slug": "jodogahama-beach",
+      "name": "Jodogahama Beach",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/jodogahama-beach/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/jodogahama-beach/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "goshikinuma-ponds",
+      "slug": "goshikinuma-ponds",
+      "name": "Goshikinuma Ponds",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/goshikinuma-ponds/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/goshikinuma-ponds/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "oga-aquarium-gao",
+      "slug": "oga-aquarium-gao",
+      "name": "Oga Aquarium GAO",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/oga-aquarium-gao/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/oga-aquarium-gao/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "imperial-palace-east-gardens",
+      "slug": "imperial-palace-east-gardens",
+      "name": "Imperial Palace East Gardens",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/imperial-palace-east-gardens/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/imperial-palace-east-gardens/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "koishikawa-korakuen-garden",
+      "slug": "koishikawa-korakuen-garden",
+      "name": "Koishikawa Korakuen Garden",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/koishikawa-korakuen-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/koishikawa-korakuen-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kappabashi-dougu-street",
+      "slug": "kappabashi-dougu-street",
+      "name": "Kappabashi Dougu Street",
+      "region": "Kanto",
+      "type": "walking-route",
+      "pagePath": "places/kappabashi-dougu-street/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kappabashi-dougu-street/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "odaiba-seaside-park",
+      "slug": "odaiba-seaside-park",
+      "name": "Odaiba Seaside Park",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/odaiba-seaside-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/odaiba-seaside-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "inokashira-park",
+      "slug": "inokashira-park",
+      "name": "Inokashira Park",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/inokashira-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/inokashira-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "atsuta-jingu-shrine",
+      "slug": "atsuta-jingu-shrine",
+      "name": "Atsuta Jingu Shrine",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/atsuta-jingu-shrine/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/atsuta-jingu-shrine/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "toyama-glass-art-museum",
+      "slug": "toyama-glass-art-museum",
+      "name": "Toyama Glass Art Museum",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/toyama-glass-art-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/toyama-glass-art-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "gujo-hachiman-castle",
+      "slug": "gujo-hachiman-castle",
+      "name": "Gujo Hachiman Castle",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/gujo-hachiman-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/gujo-hachiman-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "narai-juku",
+      "slug": "narai-juku",
+      "name": "Narai-juku",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/narai-juku/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/narai-juku/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-hamana",
+      "slug": "lake-hamana",
+      "name": "Lake Hamana",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/lake-hamana/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-hamana/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "horyuji-temple",
+      "slug": "horyuji-temple",
+      "name": "Horyuji Temple",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/horyuji-temple/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/horyuji-temple/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ryoanji-temple",
+      "slug": "ryoanji-temple",
+      "name": "Ryoanji Temple",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/ryoanji-temple/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ryoanji-temple/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "umeda-sky-building",
+      "slug": "umeda-sky-building",
+      "name": "Umeda Sky Building",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/umeda-sky-building/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/umeda-sky-building/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "expo-70-commemorative-park",
+      "slug": "expo-70-commemorative-park",
+      "name": "Expo ’70 Commemorative Park",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/expo-70-commemorative-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/expo-70-commemorative-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hozugawa-river-boat-ride",
+      "slug": "hozugawa-river-boat-ride",
+      "name": "Hozugawa River Boat Ride",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/hozugawa-river-boat-ride/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hozugawa-river-boat-ride/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "okayama-castle",
+      "slug": "okayama-castle",
+      "name": "Okayama Castle",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/okayama-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/okayama-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "iwakuni-castle",
+      "slug": "iwakuni-castle",
+      "name": "Iwakuni Castle",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/iwakuni-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/iwakuni-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "orizuru-tower",
+      "slug": "orizuru-tower",
+      "name": "Orizuru Tower",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/orizuru-tower/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/orizuru-tower/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tamatsukuri-onsen",
+      "slug": "tamatsukuri-onsen",
+      "name": "Tamatsukuri Onsen",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/tamatsukuri-onsen/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tamatsukuri-onsen/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "matsue-castle",
+      "slug": "matsue-castle",
+      "name": "Matsue Castle",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/matsue-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/matsue-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shikoku-mura",
+      "slug": "shikoku-mura",
+      "name": "Shikoku Mura",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/shikoku-mura/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shikoku-mura/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "teshima-art-museum",
+      "slug": "teshima-art-museum",
+      "name": "Teshima Art Museum",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/teshima-art-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/teshima-art-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "katsurahama-beach",
+      "slug": "katsurahama-beach",
+      "name": "Katsurahama Beach",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/katsurahama-beach/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/katsurahama-beach/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kokura-castle",
+      "slug": "kokura-castle",
+      "name": "Kokura Castle",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/kokura-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kokura-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "udo-jingu-shrine",
+      "slug": "udo-jingu-shrine",
+      "name": "Udo Jingu Shrine",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/udo-jingu-shrine/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/udo-jingu-shrine/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kawachi-wisteria-garden",
+      "slug": "kawachi-wisteria-garden",
+      "name": "Kawachi Wisteria Garden",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/kawachi-wisteria-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kawachi-wisteria-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "usuki-stone-buddhas",
+      "slug": "usuki-stone-buddhas",
+      "name": "Usuki Stone Buddhas",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/usuki-stone-buddhas/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/usuki-stone-buddhas/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "aso-shrine",
+      "slug": "aso-shrine",
+      "name": "Aso Shrine",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/aso-shrine/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/aso-shrine/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "okinawa-churaumi-aquarium",
+      "slug": "okinawa-churaumi-aquarium",
+      "name": "Okinawa Churaumi Aquarium",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/okinawa-churaumi-aquarium/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/okinawa-churaumi-aquarium/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "okinawa-prefectural-museum-and-art-museum",
+      "slug": "okinawa-prefectural-museum-and-art-museum",
+      "name": "Okinawa Prefectural Museum & Art Museum",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/okinawa-prefectural-museum-and-art-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/okinawa-prefectural-museum-and-art-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "busena-marine-park",
+      "slug": "busena-marine-park",
+      "name": "Busena Marine Park",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/busena-marine-park/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/busena-marine-park/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ishigaki-yaima-village",
+      "slug": "ishigaki-yaima-village",
+      "name": "Ishigaki Yaima Village",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/ishigaki-yaima-village/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ishigaki-yaima-village/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "cape-kamui",
+      "slug": "cape-kamui",
+      "name": "Cape Kamui",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/cape-kamui/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/cape-kamui/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shirogane-blue-pond",
+      "slug": "shirogane-blue-pond",
+      "name": "Shirogane Blue Pond",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/shirogane-blue-pond/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shirogane-blue-pond/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-shikaribetsu",
+      "slug": "lake-shikaribetsu",
+      "name": "Lake Shikaribetsu",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/lake-shikaribetsu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-shikaribetsu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shiretoko-five-lakes",
+      "slug": "shiretoko-five-lakes",
+      "name": "Shiretoko Five Lakes",
+      "region": "Hokkaido",
+      "type": "attraction",
+      "pagePath": "places/shiretoko-five-lakes/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shiretoko-five-lakes/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "chusonji-golden-hall",
+      "slug": "chusonji-golden-hall",
+      "name": "Chusonji Golden Hall",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/chusonji-golden-hall/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/chusonji-golden-hall/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "lake-inawashiro",
+      "slug": "lake-inawashiro",
+      "name": "Lake Inawashiro",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/lake-inawashiro/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/lake-inawashiro/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sendai-castle-ruins",
+      "slug": "sendai-castle-ruins",
+      "name": "Sendai Castle Ruins",
+      "region": "Tohoku",
+      "type": "city",
+      "pagePath": "places/sendai-castle-ruins/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sendai-castle-ruins/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nebuta-museum-wa-rasse",
+      "slug": "nebuta-museum-wa-rasse",
+      "name": "Nebuta Museum Wa Rasse",
+      "region": "Tohoku",
+      "type": "attraction",
+      "pagePath": "places/nebuta-museum-wa-rasse/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nebuta-museum-wa-rasse/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nezu-shrine",
+      "slug": "nezu-shrine",
+      "name": "Nezu Shrine",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/nezu-shrine/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nezu-shrine/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "mount-takao",
+      "slug": "mount-takao",
+      "name": "Mount Takao",
+      "region": "Kanto",
+      "type": "hiking-route",
+      "pagePath": "places/mount-takao/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/mount-takao/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sankeien-garden",
+      "slug": "sankeien-garden",
+      "name": "Sankeien Garden",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/sankeien-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sankeien-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tsurugaoka-hachimangu",
+      "slug": "tsurugaoka-hachimangu",
+      "name": "Tsurugaoka Hachimangu",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/tsurugaoka-hachimangu/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tsurugaoka-hachimangu/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "tokyo-metropolitan-government-observatory",
+      "slug": "tokyo-metropolitan-government-observatory",
+      "name": "Tokyo Metropolitan Government Observatory",
+      "region": "Kanto",
+      "type": "city",
+      "pagePath": "places/tokyo-metropolitan-government-observatory/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/tokyo-metropolitan-government-observatory/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "shibamata-taishakuten",
+      "slug": "shibamata-taishakuten",
+      "name": "Shibamata Taishakuten",
+      "region": "Kanto",
+      "type": "attraction",
+      "pagePath": "places/shibamata-taishakuten/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/shibamata-taishakuten/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "edo-tokyo-open-air-architectural-museum",
+      "slug": "edo-tokyo-open-air-architectural-museum",
+      "name": "Edo-Tokyo Open Air Architectural Museum",
+      "region": "Kanto",
+      "type": "city",
+      "pagePath": "places/edo-tokyo-open-air-architectural-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/edo-tokyo-open-air-architectural-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "mikata-five-lakes",
+      "slug": "mikata-five-lakes",
+      "name": "Mikata Five Lakes",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/mikata-five-lakes/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/mikata-five-lakes/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "eiheiji-temple",
+      "slug": "eiheiji-temple",
+      "name": "Eiheiji Temple",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/eiheiji-temple/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/eiheiji-temple/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hikone-castle",
+      "slug": "hikone-castle",
+      "name": "Hikone Castle",
+      "region": "Chubu",
+      "type": "attraction",
+      "pagePath": "places/hikone-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hikone-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nagoya-castle",
+      "slug": "nagoya-castle",
+      "name": "Nagoya Castle",
+      "region": "Chubu",
+      "type": "city",
+      "pagePath": "places/nagoya-castle/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nagoya-castle/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hida-furukawa-old-town",
+      "slug": "hida-furukawa-old-town",
+      "name": "Hida Furukawa Old Town",
+      "region": "Chubu",
+      "type": "walking-route",
+      "pagePath": "places/hida-furukawa-old-town/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hida-furukawa-old-town/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kumano-nachi-taisha",
+      "slug": "kumano-nachi-taisha",
+      "name": "Kumano Nachi Taisha",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kumano-nachi-taisha/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kumano-nachi-taisha/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "isuien-garden",
+      "slug": "isuien-garden",
+      "name": "Isuien Garden",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/isuien-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/isuien-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yoshikien-garden",
+      "slug": "yoshikien-garden",
+      "name": "Yoshikien Garden",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/yoshikien-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yoshikien-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kyoto-railway-museum",
+      "slug": "kyoto-railway-museum",
+      "name": "Kyoto Railway Museum",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/kyoto-railway-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kyoto-railway-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "koko-en-garden",
+      "slug": "koko-en-garden",
+      "name": "Koko-en Garden",
+      "region": "Kansai",
+      "type": "attraction",
+      "pagePath": "places/koko-en-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/koko-en-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "kure-yamato-museum",
+      "slug": "kure-yamato-museum",
+      "name": "Kure Yamato Museum",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/kure-yamato-museum/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/kure-yamato-museum/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "mizuki-shigeru-road",
+      "slug": "mizuki-shigeru-road",
+      "name": "Mizuki Shigeru Road",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/mizuki-shigeru-road/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/mizuki-shigeru-road/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hinomisaki-lighthouse",
+      "slug": "hinomisaki-lighthouse",
+      "name": "Hinomisaki Lighthouse",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/hinomisaki-lighthouse/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hinomisaki-lighthouse/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "akiyoshidai-plateau",
+      "slug": "akiyoshidai-plateau",
+      "name": "Akiyoshidai Plateau",
+      "region": "Chugoku",
+      "type": "attraction",
+      "pagePath": "places/akiyoshidai-plateau/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/akiyoshidai-plateau/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "uchiko-yokaichi-gokoku-historic-district",
+      "slug": "uchiko-yokaichi-gokoku-historic-district",
+      "name": "Uchiko Yokaichi Gokoku Historic District",
+      "region": "Shikoku",
+      "type": "walking-route",
+      "pagePath": "places/uchiko-yokaichi-gokoku-historic-district/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/uchiko-yokaichi-gokoku-historic-district/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ishizuchi-shrine",
+      "slug": "ishizuchi-shrine",
+      "name": "Ishizuchi Shrine",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/ishizuchi-shrine/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ishizuchi-shrine/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "yashima-temple",
+      "slug": "yashima-temple",
+      "name": "Yashima Temple",
+      "region": "Shikoku",
+      "type": "attraction",
+      "pagePath": "places/yashima-temple/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/yashima-temple/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "sengan-en-garden",
+      "slug": "sengan-en-garden",
+      "name": "Sengan-en Garden",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/sengan-en-garden/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/sengan-en-garden/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "dejima",
+      "slug": "dejima",
+      "name": "Dejima",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/dejima/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/dejima/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "unzen-jigoku",
+      "slug": "unzen-jigoku",
+      "name": "Unzen Jigoku",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/unzen-jigoku/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/unzen-jigoku/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "takachiho-shrine",
+      "slug": "takachiho-shrine",
+      "name": "Takachiho Shrine",
+      "region": "Kyushu",
+      "type": "attraction",
+      "pagePath": "places/takachiho-shrine/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/takachiho-shrine/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "nakijin-castle-ruins",
+      "slug": "nakijin-castle-ruins",
+      "name": "Nakijin Castle Ruins",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/nakijin-castle-ruins/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/nakijin-castle-ruins/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "cape-hedo",
+      "slug": "cape-hedo",
+      "name": "Cape Hedo",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/cape-hedo/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/cape-hedo/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "hiji-waterfall",
+      "slug": "hiji-waterfall",
+      "name": "Hiji Waterfall",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/hiji-waterfall/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/hiji-waterfall/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    },
+    {
+      "id": "ikei-beach",
+      "slug": "ikei-beach",
+      "name": "Ikei Beach",
+      "region": "Okinawa",
+      "type": "attraction",
+      "pagePath": "places/ikei-beach/index.html",
+      "url": "/Den-Lab/SomeWhereInJapan/places/ikei-beach/",
+      "aliasOf": null,
+      "oldPaths": [],
+      "guideStatus": "incomplete",
+      "missing": [
+        "researched guide details"
+      ],
+      "sourceStatus": "not-researched",
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
+    }
+  ]
+}
