@@ -701,6 +701,382 @@
         }
       ],
       "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=43.3469%2C142.39166&destination=43.3469%2C142.39166&travelmode=driving&waypoints=43.41935%2C142.4279%7C43.3206481%2C142.3770958%7C43.32343%2C142.35634"
+    },
+    {
+      "id": "kawagoe-castle-to-candy-lane",
+      "placeId": "kawagoe-the-little-edo",
+      "cityId": "kawagoe",
+      "title": "Kawagoe: castle rooms to candy lane",
+      "introduction": "Start at Kawagoe Station and transfer toward Honmaru Goten by local bus or a longer walk. Then follow the historic town through the Kurazukuri merchant street, the ringing Toki no Kane and Kashiya Yokocho. The mapped sequence combines station access and walking; dashed connectors show stop order only, while the links open live directions for each leg.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kawagoe-station-west-exit",
+        "name": "Kawagoe Station ? west exit",
+        "address": "Kawagoe Station West Exit, 2-22 Wakitahoncho, Kawagoe, Saitama, Japan",
+        "returnPoint": true,
+        "coordinates": {
+          "latitude": 35.9075,
+          "longitude": 139.4826,
+          "precision": "Approximate station-area point from the existing Kawagoe route guide",
+          "sourceIds": [
+            "kawagoe-access"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kawagoe-honmaru-goten",
+          "order": 1,
+          "name": "Kawagoe Castle Honmaru Goten",
+          "area": "Kuruwa-machi",
+          "address": "Kawagoe Castle Honmaru Goten, 2-13-1 Kuruwa-machi, Kawagoe, Saitama 350-0053, Japan",
+          "story": "Built in 1848, this is the surviving entrance and great hall of Kawagoe Castle. Move slowly through its spare rooms and painted doors: this is a rare chance to imagine the everyday rhythm of a castle household rather than its battlefield image.",
+          "coordinates": {
+            "latitude": 35.9226,
+            "longitude": 139.4909,
+            "precision": "Approximate attraction point from the existing Kawagoe route guide",
+            "sourceIds": [
+              "kawagoe-honmaru"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kawagoe-Castle_Honmaru-Goten.jpg?width=1000",
+            "source": "https://commons.wikimedia.org/wiki/File:Kawagoe-Castle_Honmaru-Goten.jpg",
+            "credit": "MaedaAkihiko",
+            "license": "CC0",
+            "alt": "Exterior of Kawagoe Castle Honmaru Palace"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kawagoe+Castle+Honmaru+Goten"
+        },
+        {
+          "id": "kawagoe-kurazukuri-ichibangai",
+          "order": 2,
+          "name": "Kurazukuri old town ? Ichibangai",
+          "area": "Saiwaicho",
+          "address": "Kurazukuri Street, Saiwaicho, Kawagoe, Saitama, Japan",
+          "story": "Follow the merchant street at roofline level. The thick, plastered storehouses and their substantial shutters speak to the wealth of a trading town?and the need to protect it from fire. Browse the working shops, then look for quieter side lanes where the buildings are easier to read.",
+          "coordinates": {
+            "latitude": 35.9232,
+            "longitude": 139.4829,
+            "precision": "Approximate street point from the existing Kawagoe route guide",
+            "sourceIds": [
+              "kawagoe-walking-course"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kawagoe_Kura_no_Machi_24.jpg?width=1000",
+            "source": "https://commons.wikimedia.org/wiki/File:Kawagoe_Kura_no_Machi_24.jpg",
+            "credit": "Zairon",
+            "license": "CC BY-SA 4.0",
+            "alt": "Traditional kurazukuri storehouses along Kawagoe old town street"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kawagoe+Kurazukuri+Ichibangai"
+        },
+        {
+          "id": "kawagoe-toki-no-kane",
+          "order": 3,
+          "name": "Toki no Kane ? Bell of Time",
+          "area": "Saiwaicho",
+          "address": "Toki no Kane, 15-7 Saiwaicho, Kawagoe, Saitama, Japan",
+          "story": "The town?s familiar silhouette is also a living timekeeper. The bell rings four times a day?6:00, noon, 3:00 and 6:00. Stand back from the tower, take in the adjoining kura fa?ades, and let the sound place you in the middle of a working shopping district.",
+          "coordinates": {
+            "latitude": 35.9235,
+            "longitude": 139.4833,
+            "precision": "Photograph location and approximate point cross-checked with Wikimedia Commons geodata",
+            "sourceIds": [
+              "kawagoe-bell",
+              "osm-toki"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kawagoe.Bell_Tower.2022.jpg?width=900",
+            "source": "https://commons.wikimedia.org/wiki/File:Kawagoe.Bell_Tower.2022.jpg",
+            "credit": "Mediafond",
+            "license": "CC BY-SA 4.0",
+            "alt": "Toki no Kane bell tower above Kawagoe?s old town"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Toki+no+Kane+Kawagoe"
+        },
+        {
+          "id": "kawagoe-kashiya-yokocho",
+          "order": 4,
+          "name": "Kashiya Yokocho ? Candy Alley",
+          "area": "Motomachi",
+          "address": "Kashiya Yokocho, 2-chome Motomachi, Kawagoe, Saitama 350-0062, Japan",
+          "story": "End where Kawagoe?s food story becomes tangible. Around 30 confectionery shops line this small lane; look for traditional candies, rice crackers and sweet-potato treats. Stores are independent, so the lane?s mood and what is open depend on the day.",
+          "coordinates": {
+            "latitude": 35.9251,
+            "longitude": 139.4818,
+            "precision": "Approximate lane point from the existing Kawagoe route guide",
+            "sourceIds": [
+              "kawagoe-candy",
+              "osm-kashiya"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/KashiyaYokocho_Kawagoe.JPG?width=800",
+            "source": "https://commons.wikimedia.org/wiki/File:KashiyaYokocho_Kawagoe.JPG",
+            "credit": "Kentagon",
+            "license": "CC BY-SA 4.0",
+            "alt": "Traditional confectionery lane of Kashiya Yokocho in Kawagoe"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kashiya+Yokocho+Kawagoe"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kawagoe-leg-01",
+          "fromId": "kawagoe-station-west-exit",
+          "toId": "kawagoe-honmaru-goten",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.4826,
+                35.9075
+              ],
+              [
+                139.4909,
+                35.9226
+              ]
+            ],
+            "sourceIds": [
+              "kawagoe-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.9075%2C139.4826&destination=35.9226%2C139.4909&travelmode=transit"
+        },
+        {
+          "id": "kawagoe-leg-02",
+          "fromId": "kawagoe-honmaru-goten",
+          "toId": "kawagoe-kurazukuri-ichibangai",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.4909,
+                35.9226
+              ],
+              [
+                139.4829,
+                35.9232
+              ]
+            ],
+            "sourceIds": [
+              "kawagoe-walking-course"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.9226%2C139.4909&destination=35.9232%2C139.4829&travelmode=walking"
+        },
+        {
+          "id": "kawagoe-leg-03",
+          "fromId": "kawagoe-kurazukuri-ichibangai",
+          "toId": "kawagoe-toki-no-kane",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.4829,
+                35.9232
+              ],
+              [
+                139.4833,
+                35.9235
+              ]
+            ],
+            "sourceIds": [
+              "kawagoe-walking-course"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.9232%2C139.4829&destination=35.9235%2C139.4833&travelmode=walking"
+        },
+        {
+          "id": "kawagoe-leg-04",
+          "fromId": "kawagoe-toki-no-kane",
+          "toId": "kawagoe-kashiya-yokocho",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.4833,
+                35.9235
+              ],
+              [
+                139.4818,
+                35.9251
+              ]
+            ],
+            "sourceIds": [
+              "kawagoe-walking-course"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.9235%2C139.4833&destination=35.9251%2C139.4818&travelmode=walking"
+        },
+        {
+          "id": "kawagoe-leg-05",
+          "fromId": "kawagoe-kashiya-yokocho",
+          "toId": "kawagoe-station-west-exit",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.4818,
+                35.9251
+              ],
+              [
+                139.4826,
+                35.9075
+              ]
+            ],
+            "sourceIds": [
+              "kawagoe-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.9251%2C139.4818&destination=35.9075%2C139.4826&travelmode=transit"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kawagoe-access",
+          "label": "Koedo Kawagoe Tourism Association: Access to Kawagoe",
+          "url": "https://koedo.or.jp/en/access/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "train access from Ikebukuro, Shinjuku, Omiya and Shibuya; car access and local transport context"
+          ]
+        },
+        {
+          "id": "kawagoe-walking-course",
+          "label": "Koedo Kawagoe Tourism Association: Castle Town / Kawagoe History Tour Course",
+          "url": "https://www.koedo.or.jp/en/route/%E5%9F%8E%E4%B8%8B%E7%94%BA%E3%83%BB%E5%B7%9D%E8%B6%8A-%E6%AD%B4%E5%8F%B2%E3%82%81%E3%81%90%E3%82%8A%E3%82%B3%E3%83%BC%E3%82%B9/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "historic stop sequence, attraction details, address and Honmaru Goten visit information"
+          ]
+        },
+        {
+          "id": "kawagoe-honmaru",
+          "label": "Koedo Kawagoe Tourism Association: Honmaru Goten",
+          "url": "https://www.koedo.or.jp/en/spot_007/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "1848 construction, surviving castle-palace rooms, address and visitor phone"
+          ]
+        },
+        {
+          "id": "kawagoe-bell",
+          "label": "Koedo Kawagoe Tourism Association: Toki no Kane",
+          "url": "https://koedo.or.jp/en/spot_001/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "bell tower history and role in the old town"
+          ]
+        },
+        {
+          "id": "kawagoe-candy",
+          "label": "Koedo Kawagoe Tourism Association: Kashiya Yokocho",
+          "url": "https://koedo.or.jp/en/spot_003/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "confectionery lane, approximate shop count and traditional sweets"
+          ]
+        },
+        {
+          "id": "kawagoe-sweet-potato",
+          "label": "Koedo Kawagoe Tourism Association: Kawagoe sweet potatoes and matcha",
+          "url": "https://koedo.or.jp/en/feature/%E5%B7%9D%E8%B6%8A%E3%81%AE%E3%81%95%E3%81%A4%E3%81%BE%E3%81%84%E3%82%82%E6%8A%B9%E8%8C%B6/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "regional sweet-potato identity and historical shipping to Edo"
+          ]
+        },
+        {
+          "id": "osm-toki",
+          "label": "Wikimedia Commons: Toki no Kane photo and camera coordinates",
+          "url": "https://commons.wikimedia.org/wiki/File:Kawagoe.Bell_Tower.2022.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "bell tower photo, public-domain status and camera coordinates"
+          ]
+        },
+        {
+          "id": "osm-kashiya",
+          "label": "OpenStreetMap: Kashiya Yokocho location",
+          "url": "https://www.openstreetmap.org/search?query=Kashiya%20Yokocho%2C%20Kawagoe",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Candy Alley location reference"
+          ]
+        },
+        {
+          "id": "photo-kurazukuri",
+          "label": "Wikimedia Commons: Kurazukuri Street in Little Edo",
+          "url": "https://commons.wikimedia.org/wiki/File:Kurazukuri_Street_in_Little_Edo.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "hero photograph and CC BY-SA 4.0 attribution"
+          ]
+        },
+        {
+          "id": "photo-honmaru",
+          "label": "Wikimedia Commons: Kawagoe-Castle Honmaru-Goten.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Kawagoe-Castle_Honmaru-Goten.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Honmaru Goten photograph by MaedaAkihiko, CC0"
+          ]
+        },
+        {
+          "id": "photo-toki",
+          "label": "Wikimedia Commons: Kawagoe Bell Tower 2022",
+          "url": "https://commons.wikimedia.org/wiki/File:Kawagoe.Bell_Tower.2022.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Toki no Kane photograph by Mediafond, CC BY-SA 4.0"
+          ]
+        },
+        {
+          "id": "photo-kashiya",
+          "label": "Wikimedia Commons: KashiyaYokocho Kawagoe",
+          "url": "https://commons.wikimedia.org/wiki/File:KashiyaYokocho_Kawagoe.JPG",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Kashiya Yokocho photograph by Kentagon, CC BY-SA 4.0"
+          ]
+        }
+      ]
     }
   ],
   "maps": {
@@ -1172,6 +1548,219 @@
           "properties": {
             "routeLegId": "furano-leg-04",
             "mode": "driving"
+          }
+        }
+      ]
+    },
+    "kawagoe-the-little-edo": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          139.477,
+          35.904,
+          139.495,
+          35.929
+        ],
+        "attribution": "Map data ? OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.4826,
+              35.9075
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-station-west-exit",
+            "routeStopId": "kawagoe-station-west-exit",
+            "name": "Kawagoe Station ? west exit",
+            "role": "origin",
+            "returnPoint": true,
+            "order": 0
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.4909,
+              35.9226
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-honmaru-goten",
+            "routeStopId": "kawagoe-honmaru-goten",
+            "name": "Kawagoe Castle Honmaru Goten",
+            "role": "stop",
+            "returnPoint": false
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.4829,
+              35.9232
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-kurazukuri-ichibangai",
+            "routeStopId": "kawagoe-kurazukuri-ichibangai",
+            "name": "Kurazukuri old town ? Ichibangai",
+            "role": "stop",
+            "returnPoint": false
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.4833,
+              35.9235
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-toki-no-kane",
+            "routeStopId": "kawagoe-toki-no-kane",
+            "name": "Toki no Kane ? Bell of Time",
+            "role": "stop",
+            "returnPoint": false
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.4818,
+              35.9251
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-kashiya-yokocho",
+            "routeStopId": "kawagoe-kashiya-yokocho",
+            "name": "Kashiya Yokocho ? Candy Alley",
+            "role": "stop",
+            "returnPoint": false
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.4826,
+                35.9075
+              ],
+              [
+                139.4909,
+                35.9226
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-line-1",
+            "routeLegId": "kawagoe-leg-01",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.4909,
+                35.9226
+              ],
+              [
+                139.4829,
+                35.9232
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-line-2",
+            "routeLegId": "kawagoe-leg-02",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.4829,
+                35.9232
+              ],
+              [
+                139.4833,
+                35.9235
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-line-3",
+            "routeLegId": "kawagoe-leg-03",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.4833,
+                35.9235
+              ],
+              [
+                139.4818,
+                35.9251
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-line-4",
+            "routeLegId": "kawagoe-leg-04",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.4818,
+                35.9251
+              ],
+              [
+                139.4826,
+                35.9075
+              ]
+            ]
+          },
+          "properties": {
+            "id": "kawagoe-line-5",
+            "routeLegId": "kawagoe-leg-05",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
           }
         }
       ]
