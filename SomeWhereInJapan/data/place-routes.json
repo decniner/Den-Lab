@@ -418,7 +418,7 @@
       "placeId": "furano-in-bloom",
       "cityId": "furano",
       "title": "Furano highlights by car",
-      "introduction": "Start at Furano Station, visit the Furano Cheese Factory and Ningle Terrace, then continue to Farm Tomita in Nakafurano. The dashed map connectors show visit order only, not the actual driving roads; each leg opens live Google Maps directions.",
+      "introduction": "Start at Furano Station, visit the Furano Cheese Factory and Ningle Terrace, then continue to Farm Tomita in Nakafurano. The dashed map connectors show visit order only, not actual roads. Open the full loop in Google Maps for live driving directions.",
       "researchStatus": "partially-verified",
       "origin": {
         "id": "furano-station",
