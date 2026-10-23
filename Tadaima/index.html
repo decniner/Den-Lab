@@ -3,116 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tadaima! ただいま！ — Kawagoe · Houses &amp; Land Worth a Look</title>
-<meta name="description" content="Tadaima! collates houses and land for sale in Kawagoe, Saitama, and ranks them with a transparent worth-a-look score, so you can decide what's worth viewing.">
+<title>Tadaima! ただいま！ — Houses &amp; Land Worth a Look, City by City</title>
+<meta name="description" content="Tadaima! researches houses and land for sale city by city in Japan, under ¥5,000万 and within 15 minutes of a station, and ranks them with a transparent worth-a-look score. Kawagoe and Tokorozawa, Saitama — more cities to follow.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="hub.css">
 </head>
 <body>
 <header class="site-head">
   <div class="wrap">
     <a class="brand" href="./">Tadaima!<span class="jp">ただいま！</span></a>
-    <span class="edition">KAWAGOE 川越</span>
+    <span class="edition">CITY GUIDES · 街ガイド</span>
     <nav class="head-nav">
-      <a href="#properties">Properties</a>
-      <a href="#how">How the ranking works</a>
-      <a href="#market">Kawagoe market</a>
-      <span class="saved-pill">♥ Saved <span id="savedCount">0</span></span>
+      <a href="#cities">Cities</a>
+      <a href="#how">How it works</a>
+      <a href="#roadmap">Roadmap</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <p class="kicker">HOUSES &amp; LAND · KAWAGOE, SAITAMA · 川越の家と土地</p>
+    <p class="kicker">HOUSES &amp; LAND IN JAPAN · 日本の家と土地</p>
     <h1>Find the place<br>you'll say <em>tadaima</em> to.</h1>
-    <p class="lede">Every house and lot for sale in Kawagoe that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked by one transparent score, so you can decide what's actually worth a viewing trip.</p>
-    <div class="stats">
-      <div class="stat"><b id="statTotal">–</b><span>properties collected</span></div>
-      <div class="stat"><b id="statHouses">–</b><span>houses 新築・中古</span></div>
-      <div class="stat"><b id="statLand">–</b><span>land / lots 土地</span></div>
-      <div class="stat wide"><b id="statTop">–</b><span>cheapest way in — the #1 ranked property's price &amp; area</span></div>
+    <p class="lede">Tadaima! researches one city at a time, properly: every house and lot for sale that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked with one transparent score, so you can decide what's worth a viewing trip.</p>
+    <div class="search-box">
+      <input type="search" id="citySearch" placeholder="Search a city, station or district — try “Kawagoe”, “Koku-koen”, “所沢”…" aria-label="Search a city, station or district">
+      <p class="search-hint" id="searchHint">Start typing — live cities open in one tap. Press Enter to jump to the first match.</p>
     </div>
-    <p class="src" style="margin-top:16px">Researched 23 Oct 2026 from SUUMO, LIFULL HOME'S, atHome and goo住宅・不動産. Prices and availability change — each card links to the original listing. We don't reuse listing photos; see them on the source site.</p>
   </div>
 </section>
 
-<div class="controls" id="properties">
-  <div class="wrap">
-    <div class="chips" role="group" aria-label="Property type">
-      <button class="chip active" data-type="all">All</button>
-      <button class="chip" data-type="house-new">New houses</button>
-      <button class="chip" data-type="house-used">Used houses</button>
-      <button class="chip" data-type="land">Land</button>
-    </div>
-    <label>Max price
-      <select id="fPrice">
-        <option value="3000">¥3,000万</option>
-        <option value="4000">¥4,000万</option>
-        <option value="5000" selected>¥5,000万</option>
-      </select>
-    </label>
-    <label>Max walk
-      <select id="fWalk">
-        <option value="5">5 min</option>
-        <option value="10">10 min</option>
-        <option value="15" selected>15 min</option>
-      </select>
-    </label>
-    <label>Station
-      <select id="fStation"><option value="all">All stations</option></select>
-    </label>
-    <label>Sort
-      <select id="fSort">
-        <option value="score" selected>Worth a look</option>
-        <option value="price">Lowest price</option>
-        <option value="walk">Shortest walk</option>
-      </select>
-    </label>
-    <input type="search" id="fSearch" placeholder="Search district or station…" aria-label="Search district or station">
-    <button class="chip" id="fSaved">♥ Saved only</button>
-    <span id="count" role="status"></span>
-  </div>
-</div>
-
 <main class="wrap">
-  <div class="grid" id="grid"></div>
-  <div class="empty" id="empty"><p>No properties match those filters. Try widening the price or walk limit.</p></div>
-
-  <section class="section" id="how">
-    <h2>How the ranking works</h2>
-    <p>One score out of 100, built from four parts — the same maths for every property, with the reasons printed on each card. No paid placement, no hidden weighting. A major caution (for example land in an urbanisation-control area, or a house sold as a renovation project) subtracts 7 points and is always shown, never buried.</p>
-    <table class="score-table">
-      <tr><th>Part</th><th>Points</th><th>What it measures</th></tr>
-      <tr><td><strong>Value</strong></td><td>45</td><td>Land: price per tsubo against MLIT transaction averages for that station and walk band (via Utinokati). Houses: price per m² of floor area against the median for new / used houses in this collection.</td></tr>
-      <tr><td><strong>Location</strong></td><td>30</td><td>Walk minutes to the nearest station, plus a station tier — Kawagoe, Hon-Kawagoe and Kawagoeshi (the three Tokyo-facing hubs) score highest.</td></tr>
-      <tr><td><strong>Space</strong></td><td>15</td><td>Floor area for houses, plot size for land — with over-sized plots eased back, because very large usually means very restricted.</td></tr>
-      <tr><td><strong>Confidence</strong></td><td>10</td><td>Whether the facts were verified on the listing's own detail page, and how recent its information date is. Index-page finds score lower and say so.</td></tr>
-    </table>
+  <section class="section" id="cities">
+    <h2>Available now <span class="jp">公開中</span></h2>
+    <div class="city-grid" id="cityGrid"></div>
+    <p class="no-match" id="noMatch">No city guide matches that yet. The roadmap below shows where Tadaima! is heading next.</p>
   </section>
 
-  <section class="section" id="market">
-    <h2>Kawagoe, in numbers</h2>
-    <p>Kawagoe is Tokyo-facing: about 30 minutes to Ikebukuro on the Tobu Tojo Line, roughly 45–55 minutes to Shinjuku via Seibu's Koedo limited express or a direct JR Saikyo Line rapid. Three hubs anchor prices — Kawagoe, Hon-Kawagoe and Kawagoeshi stations — and prices fall off clearly with walk time: transacted land within 5 minutes of a station averaged ¥92.5万/tsubo in 2023–25, against ¥45.2万 at 11–15 minutes.</p>
-    <p>Used houses transacted at about ¥96–98万/tsubo in 2025–26 (average total ¥3,480万) after a soft 2025 (−4.7%), while land rose: official 2026 land prices were up +1% to +5% in every Kawagoe district, strongest near the centre and stations. New houses in the city typically ask ¥3,400–4,100万 for a standard 3–4LDK. Sources: MLIT transaction records via Utinokati, MLIT official land prices (基準地価, July 2026), goo listing averages, japan-guide.com for train times.</p>
+  <section class="section" id="how">
+    <h2>How Tadaima! works</h2>
+    <p>Every city guide is researched by hand from the public portals (SUUMO, LIFULL HOME'S, atHome, goo住宅・不動産) on the date shown on its card, using the same brief and the same score everywhere:</p>
+    <table class="score-table">
+      <tr><th>Part</th><th>Points</th><th>What it measures</th></tr>
+      <tr><td><strong>Value</strong></td><td>45</td><td>Price against real MLIT transaction benchmarks for that station and walk distance (land), or against the collection median (houses).</td></tr>
+      <tr><td><strong>Location</strong></td><td>30</td><td>Walk minutes to the nearest station, plus how well-connected that station is.</td></tr>
+      <tr><td><strong>Space</strong></td><td>15</td><td>Floor area for houses, plot size for land.</td></tr>
+      <tr><td><strong>Confidence</strong></td><td>10</td><td>Verified on the listing's own page vs an index page, and how recent the listing information is.</td></tr>
+    </table>
+    <p>Major cautions — zoning traps, demolition costs, builder tie-ins — subtract points and are always printed on the card, never buried. No paid placement. We don't reuse listing photos; every card links to the original listing.</p>
+  </section>
+
+  <section class="section" id="roadmap">
+    <h2>Roadmap <span class="jp">これから</span></h2>
+    <p>Tadaima! grows city by city, only when a city's research is done to the same standard — no empty pages, no fake coverage. Candidates under consideration, in no promised order:</p>
+    <div class="roadmap-chips">
+      <span class="rm-chip">Saitama City · Omiya <span class="jp">さいたま市・大宮</span></span>
+      <span class="rm-chip">Tachikawa <span class="jp">立川</span> · Tokyo</span>
+      <span class="rm-chip">Kashiwa <span class="jp">柏</span> · Chiba</span>
+      <span class="rm-chip">Yokohama <span class="jp">横浜</span> · Kanagawa</span>
+    </div>
+    <p class="map-note">Why search and cards, not a map of Japan? Honest answer: with a handful of cities, a drill-down map is three taps to discover how much of Japan we <em>haven't</em> covered yet. When Tadaima! reaches around ten cities across several prefectures, a map starts earning its place — and that's when it will arrive.</p>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span><strong>Tadaima! ただいま！</strong> — a personal research project in Den-Lab. Kawagoe edition first; more areas to follow.</span>
+    <span><strong>Tadaima! ただいま！</strong> — a personal research project in Den-Lab, growing city by city across the Kanto region first.</span>
     <span>Estimates and scores are a viewing shortlist tool, not financial or real-estate advice. All property facts come from the linked original listings; confirm price, availability, zoning and building conditions with the listing agent before acting.</span>
   </div>
 </footer>
 
-<dialog id="detail" aria-labelledby="dBody">
-  <button class="d-close" id="dClose" aria-label="Close">✕</button>
-  <div id="dBody"></div>
-</dialog>
-
-<script src="data.js"></script>
-<script src="app.js"></script>
+<script src="cities.js"></script>
+<script src="hub.js"></script>
 </body>
 </html>
