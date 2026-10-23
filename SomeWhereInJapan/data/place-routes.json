@@ -3239,6 +3239,2582 @@
           ]
         }
       ]
+    },
+    {
+      "id": "kochi-castle-research-route",
+      "placeId": "kochi-castle",
+      "cityId": "destination",
+      "title": "Kochi Castle: a considered field route",
+      "introduction": "A castle where the keep and lord’s residence still share the hilltop. Take the climb slowly: the stone approach, timber interiors and small views between roofs make the visit as memorable as the final panorama.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kochi-castle-origin",
+        "name": "Kochijo-mae Tram Stop",
+        "address": "Kochijo-mae Tram Stop, Kochi · Shikoku, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 33.559250000000006,
+          "longitude": 133.53105,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "kochi-castle-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kochi-castle-1",
+          "order": 1,
+          "name": "Otemon Gate",
+          "area": "Kochi · Shikoku",
+          "address": "Otemon Gate, Kochi · Shikoku, Japan",
+          "story": "Begin at the broad stone entrance and notice the unusually close relationship between the gate and keep.",
+          "coordinates": {
+            "latitude": 33.5598,
+            "longitude": 133.5316,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kochi-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Otemon%20Gate%20Japan%20travel"
+        },
+        {
+          "id": "kochi-castle-2",
+          "order": 2,
+          "name": "Honmaru Palace",
+          "area": "Kochi · Shikoku",
+          "address": "Honmaru Palace, Kochi · Shikoku, Japan",
+          "story": "Pause in the surviving lord’s residence before climbing; its wooden rooms make the castle feel lived-in rather than monumental.",
+          "coordinates": {
+            "latitude": 33.5605,
+            "longitude": 133.531,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kochi-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Honmaru%20Palace%20Japan%20travel"
+        },
+        {
+          "id": "kochi-castle-3",
+          "order": 3,
+          "name": "Main Keep",
+          "area": "Kochi · Shikoku",
+          "address": "Main Keep, Kochi · Shikoku, Japan",
+          "story": "From the top, read Kochi’s street grid and surrounding hills. Check current interior access before visiting.",
+          "coordinates": {
+            "latitude": 33.560691,
+            "longitude": 133.5314588,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kochi-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Main%20Keep%20Japan%20travel"
+        },
+        {
+          "id": "kochi-castle-4",
+          "order": 4,
+          "name": "Kochi Castle Museum of History",
+          "area": "Kochi · Shikoku",
+          "address": "Kochi Castle Museum of History, Kochi · Shikoku, Japan",
+          "story": "Across the road, use the museum to place the castle and the Yamauchi domain in context.",
+          "coordinates": {
+            "latitude": 33.5601,
+            "longitude": 133.533,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kochi-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kochi%20Castle%20Museum%20of%20History%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kochi-castle-leg-1",
+          "fromId": "kochi-castle-origin",
+          "toId": "kochi-castle-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.5316,
+                33.5598
+              ],
+              [
+                133.5316,
+                33.5598
+              ]
+            ],
+            "sourceIds": [
+              "kochi-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kochijo-mae%20Tram%20Stop%2C%20Kochi%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&destination=Otemon%20Gate%2C%20Kochi%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kochi-castle-leg-2",
+          "fromId": "kochi-castle-1",
+          "toId": "kochi-castle-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.531,
+                33.5605
+              ],
+              [
+                133.531,
+                33.5605
+              ]
+            ],
+            "sourceIds": [
+              "kochi-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Otemon%20Gate%2C%20Kochi%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&destination=Honmaru%20Palace%2C%20Kochi%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kochi-castle-leg-3",
+          "fromId": "kochi-castle-2",
+          "toId": "kochi-castle-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.5314588,
+                33.560691
+              ],
+              [
+                133.5314588,
+                33.560691
+              ]
+            ],
+            "sourceIds": [
+              "kochi-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Honmaru%20Palace%2C%20Kochi%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&destination=Main%20Keep%2C%20Kochi%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kochi-castle-leg-4",
+          "fromId": "kochi-castle-3",
+          "toId": "kochi-castle-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.533,
+                33.5601
+              ],
+              [
+                133.533,
+                33.5601
+              ]
+            ],
+            "sourceIds": [
+              "kochi-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Main%20Keep%2C%20Kochi%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&destination=Kochi%20Castle%20Museum%20of%20History%2C%20Kochi%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kochi-castle-official",
+          "label": "Kochi Castle · Kochi travel information",
+          "url": "https://visitkochijapan.com/en/see-and-do/10009/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "kochi-castle-photo",
+          "label": "Photo: AlphaBetaGamma · CC BY 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Kochi_Castle_2025.jpg",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "koishikawa-korakuen-garden-research-route",
+      "placeId": "koishikawa-korakuen-garden",
+      "cityId": "destination",
+      "title": "Koishikawa Korakuen Garden: a considered field route",
+      "introduction": "A walk through a designed landscape that keeps changing its frame: pond, hill, bridge, then a quiet view that hides the city for a moment.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "koishikawa-korakuen-garden-origin",
+        "name": "Koishikawa Korakuen East Gate",
+        "address": "Koishikawa Korakuen East Gate, Bunkyo · Tokyo, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 35.70535,
+          "longitude": 139.74885,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "koishikawa-korakuen-garden-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "koishikawa-korakuen-garden-1",
+          "order": 1,
+          "name": "East Gate",
+          "area": "Bunkyo · Tokyo",
+          "address": "East Gate, Bunkyo · Tokyo, Japan",
+          "story": "Start beside Tokyo Dome City, then step from the modern city into the garden’s carefully framed landscape.",
+          "coordinates": {
+            "latitude": 35.7059,
+            "longitude": 139.7494,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koishikawa-korakuen-garden-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=East%20Gate%20Japan%20travel"
+        },
+        {
+          "id": "koishikawa-korakuen-garden-2",
+          "order": 2,
+          "name": "Daisensui Pond",
+          "area": "Bunkyo · Tokyo",
+          "address": "Daisensui Pond, Bunkyo · Tokyo, Japan",
+          "story": "The garden’s central water scene changes as you circle it; look for the borrowed landscape of distant hills.",
+          "coordinates": {
+            "latitude": 35.7064,
+            "longitude": 139.7505,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koishikawa-korakuen-garden-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Daisensui%20Pond%20Japan%20travel"
+        },
+        {
+          "id": "koishikawa-korakuen-garden-3",
+          "order": 3,
+          "name": "Engetsu Bridge",
+          "area": "Bunkyo · Tokyo",
+          "address": "Engetsu Bridge, Bunkyo · Tokyo, Japan",
+          "story": "A compact stone bridge creates a moon-like reflection when the water and light align.",
+          "coordinates": {
+            "latitude": 35.7055612,
+            "longitude": 139.7492646,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koishikawa-korakuen-garden-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Engetsu%20Bridge%20Japan%20travel"
+        },
+        {
+          "id": "koishikawa-korakuen-garden-4",
+          "order": 4,
+          "name": "West Gate",
+          "area": "Bunkyo · Tokyo",
+          "address": "West Gate, Bunkyo · Tokyo, Japan",
+          "story": "Finish near Iidabashi for a convenient rail connection; confirm which gate is open on your visit.",
+          "coordinates": {
+            "latitude": 35.7079,
+            "longitude": 139.7468,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koishikawa-korakuen-garden-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=West%20Gate%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "koishikawa-korakuen-garden-leg-1",
+          "fromId": "koishikawa-korakuen-garden-origin",
+          "toId": "koishikawa-korakuen-garden-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.7494,
+                35.7059
+              ],
+              [
+                139.7494,
+                35.7059
+              ]
+            ],
+            "sourceIds": [
+              "koishikawa-korakuen-garden-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Koishikawa%20Korakuen%20East%20Gate%2C%20Bunkyo%20%C2%B7%20Tokyo%2C%20Japan%2C%20Japan&destination=East%20Gate%2C%20Bunkyo%20%C2%B7%20Tokyo%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koishikawa-korakuen-garden-leg-2",
+          "fromId": "koishikawa-korakuen-garden-1",
+          "toId": "koishikawa-korakuen-garden-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.7505,
+                35.7064
+              ],
+              [
+                139.7505,
+                35.7064
+              ]
+            ],
+            "sourceIds": [
+              "koishikawa-korakuen-garden-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=East%20Gate%2C%20Bunkyo%20%C2%B7%20Tokyo%2C%20Japan%2C%20Japan&destination=Daisensui%20Pond%2C%20Bunkyo%20%C2%B7%20Tokyo%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koishikawa-korakuen-garden-leg-3",
+          "fromId": "koishikawa-korakuen-garden-2",
+          "toId": "koishikawa-korakuen-garden-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.7492646,
+                35.7055612
+              ],
+              [
+                139.7492646,
+                35.7055612
+              ]
+            ],
+            "sourceIds": [
+              "koishikawa-korakuen-garden-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Daisensui%20Pond%2C%20Bunkyo%20%C2%B7%20Tokyo%2C%20Japan%2C%20Japan&destination=Engetsu%20Bridge%2C%20Bunkyo%20%C2%B7%20Tokyo%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koishikawa-korakuen-garden-leg-4",
+          "fromId": "koishikawa-korakuen-garden-3",
+          "toId": "koishikawa-korakuen-garden-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.7468,
+                35.7079
+              ],
+              [
+                139.7468,
+                35.7079
+              ]
+            ],
+            "sourceIds": [
+              "koishikawa-korakuen-garden-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Engetsu%20Bridge%2C%20Bunkyo%20%C2%B7%20Tokyo%2C%20Japan%2C%20Japan&destination=West%20Gate%2C%20Bunkyo%20%C2%B7%20Tokyo%2C%20Japan%2C%20Japan&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "koishikawa-korakuen-garden-official",
+          "label": "Tokyo Metropolitan Park Association · Koishikawa Korakuen",
+          "url": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "koishikawa-korakuen-garden-photo",
+          "label": "Photo: Guilhem Vellut · CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Koishikawa_Korakuen_Garden_%40_Tokyo_%289114180669%29.jpg",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "koko-en-garden-research-route",
+      "placeId": "koko-en-garden",
+      "cityId": "destination",
+      "title": "Koko-en Garden: a considered field route",
+      "introduction": "Nine distinct garden rooms beside Himeji Castle make this a place to slow down after the city’s most famous landmark.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "koko-en-garden-origin",
+        "name": "Himeji Station",
+        "address": "Himeji Station, Himeji · Hyogo · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 34.826350500000004,
+          "longitude": 134.68969239999998,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "koko-en-garden-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "koko-en-garden-1",
+          "order": 1,
+          "name": "Himeji Station",
+          "area": "Himeji · Hyogo · Kansai",
+          "address": "Himeji Station, Himeji · Hyogo · Kansai, Japan",
+          "story": "Walk north along the broad castle approach or take a local bus toward the castle area.",
+          "coordinates": {
+            "latitude": 34.8269005,
+            "longitude": 134.6902424,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Himeji%20Station%20Japan%20travel"
+        },
+        {
+          "id": "koko-en-garden-2",
+          "order": 2,
+          "name": "Koko-en Entrance",
+          "area": "Himeji · Hyogo · Kansai",
+          "address": "Koko-en Entrance, Himeji · Hyogo · Kansai, Japan",
+          "story": "Enter beside Himeji Castle and allow time for all nine connected garden sections.",
+          "coordinates": {
+            "latitude": 34.8370595,
+            "longitude": 134.6904054,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Koko-en%20Entrance%20Japan%20travel"
+        },
+        {
+          "id": "koko-en-garden-3",
+          "order": 3,
+          "name": "Lord’s Residence Garden",
+          "area": "Himeji · Hyogo · Kansai",
+          "address": "Lord’s Residence Garden, Himeji · Hyogo · Kansai, Japan",
+          "story": "The largest garden uses a pond and waterfall to frame a quiet view toward the castle.",
+          "coordinates": {
+            "latitude": 34.8367,
+            "longitude": 134.691,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Lord%E2%80%99s%20Residence%20Garden%20Japan%20travel"
+        },
+        {
+          "id": "koko-en-garden-4",
+          "order": 4,
+          "name": "Soju-an Tea House",
+          "area": "Himeji · Hyogo · Kansai",
+          "address": "Soju-an Tea House, Himeji · Hyogo · Kansai, Japan",
+          "story": "Pause for matcha if open; check the garden’s current service hours and admission details.",
+          "coordinates": {
+            "latitude": 34.8373,
+            "longitude": 134.6915,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Soju-an%20Tea%20House%20Japan%20travel"
+        },
+        {
+          "id": "koko-en-garden-5",
+          "order": 5,
+          "name": "Himeji Castle outer grounds",
+          "area": "Himeji · Hyogo · Kansai",
+          "address": "Himeji Castle outer grounds, Himeji · Hyogo · Kansai, Japan",
+          "story": "End with the castle exterior nearby; castle admission is separate and timed access may apply.",
+          "coordinates": {
+            "latitude": 34.8394,
+            "longitude": 134.6938,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Himeji%20Castle%20outer%20grounds%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "koko-en-garden-leg-1",
+          "fromId": "koko-en-garden-origin",
+          "toId": "koko-en-garden-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.6902424,
+                34.8269005
+              ],
+              [
+                134.6902424,
+                34.8269005
+              ]
+            ],
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Himeji%20Station%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Himeji%20Station%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koko-en-garden-leg-2",
+          "fromId": "koko-en-garden-1",
+          "toId": "koko-en-garden-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.6904054,
+                34.8370595
+              ],
+              [
+                134.6904054,
+                34.8370595
+              ]
+            ],
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Himeji%20Station%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Koko-en%20Entrance%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koko-en-garden-leg-3",
+          "fromId": "koko-en-garden-2",
+          "toId": "koko-en-garden-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.691,
+                34.8367
+              ],
+              [
+                134.691,
+                34.8367
+              ]
+            ],
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Koko-en%20Entrance%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Lord%E2%80%99s%20Residence%20Garden%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koko-en-garden-leg-4",
+          "fromId": "koko-en-garden-3",
+          "toId": "koko-en-garden-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.6915,
+                34.8373
+              ],
+              [
+                134.6915,
+                34.8373
+              ]
+            ],
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Lord%E2%80%99s%20Residence%20Garden%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Soju-an%20Tea%20House%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koko-en-garden-leg-5",
+          "fromId": "koko-en-garden-4",
+          "toId": "koko-en-garden-5",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.6938,
+                34.8394
+              ],
+              [
+                134.6938,
+                34.8394
+              ]
+            ],
+            "sourceIds": [
+              "koko-en-garden-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Soju-an%20Tea%20House%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Himeji%20Castle%20outer%20grounds%2C%20Himeji%20%C2%B7%20Hyogo%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "koko-en-garden-official",
+          "label": "Koko-en official garden guide",
+          "url": "https://www.himeji-machishin.jp/ryokka/kokoen/en/guidance/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "koko-en-garden-photo",
+          "label": "Photo: ScribblingGeek · CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Koko-en,_Himeji.jpg",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kokura-castle-research-route",
+      "placeId": "kokura-castle",
+      "cityId": "destination",
+      "title": "Kokura Castle: a considered field route",
+      "introduction": "A compact walk through a lively castle district where a reconstructed keep, riverfront architecture and a small garden sit within easy reach of the station.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kokura-castle-origin",
+        "name": "JR Kokura Station",
+        "address": "JR Kokura Station, Kokura · Kitakyushu · Fukuoka, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 33.8862102,
+          "longitude": 130.8816343,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "kokura-castle-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kokura-castle-1",
+          "order": 1,
+          "name": "Kokura Station",
+          "area": "Kokura · Kitakyushu · Fukuoka",
+          "address": "Kokura Station, Kokura · Kitakyushu · Fukuoka, Japan",
+          "story": "Start at the station and follow signs toward Riverwalk and the castle district.",
+          "coordinates": {
+            "latitude": 33.8867602,
+            "longitude": 130.8821843,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kokura%20Station%20Japan%20travel"
+        },
+        {
+          "id": "kokura-castle-2",
+          "order": 2,
+          "name": "Riverwalk Kitakyushu",
+          "area": "Kokura · Kitakyushu · Fukuoka",
+          "address": "Riverwalk Kitakyushu, Kokura · Kitakyushu · Fukuoka, Japan",
+          "story": "Use the riverside complex as a clear orientation point beside the castle moat.",
+          "coordinates": {
+            "latitude": 33.8858647,
+            "longitude": 130.8752466,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Riverwalk%20Kitakyushu%20Japan%20travel"
+        },
+        {
+          "id": "kokura-castle-3",
+          "order": 3,
+          "name": "Kokura Castle Keep",
+          "area": "Kokura · Kitakyushu · Fukuoka",
+          "address": "Kokura Castle Keep, Kokura · Kitakyushu · Fukuoka, Japan",
+          "story": "Explore the keep and its exhibits; last entry is earlier than closing time.",
+          "coordinates": {
+            "latitude": 33.8844476,
+            "longitude": 130.8742512,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kokura%20Castle%20Keep%20Japan%20travel"
+        },
+        {
+          "id": "kokura-castle-4",
+          "order": 4,
+          "name": "Kokura Castle Garden",
+          "area": "Kokura · Kitakyushu · Fukuoka",
+          "address": "Kokura Castle Garden, Kokura · Kitakyushu · Fukuoka, Japan",
+          "story": "Cross into the garden for a quieter view back toward the castle.",
+          "coordinates": {
+            "latitude": 33.8845807,
+            "longitude": 130.875051,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kokura%20Castle%20Garden%20Japan%20travel"
+        },
+        {
+          "id": "kokura-castle-5",
+          "order": 5,
+          "name": "Matsumoto Seicho Memorial Museum",
+          "area": "Kokura · Kitakyushu · Fukuoka",
+          "address": "Matsumoto Seicho Memorial Museum, Kokura · Kitakyushu · Fukuoka, Japan",
+          "story": "Finish nearby with a literary stop; check its separate opening hours.",
+          "coordinates": {
+            "latitude": 33.8836,
+            "longitude": 130.8736,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Matsumoto%20Seicho%20Memorial%20Museum%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kokura-castle-leg-1",
+          "fromId": "kokura-castle-origin",
+          "toId": "kokura-castle-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.8821843,
+                33.8867602
+              ],
+              [
+                130.8821843,
+                33.8867602
+              ]
+            ],
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=JR%20Kokura%20Station%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&destination=Kokura%20Station%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kokura-castle-leg-2",
+          "fromId": "kokura-castle-1",
+          "toId": "kokura-castle-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.8752466,
+                33.8858647
+              ],
+              [
+                130.8752466,
+                33.8858647
+              ]
+            ],
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kokura%20Station%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&destination=Riverwalk%20Kitakyushu%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kokura-castle-leg-3",
+          "fromId": "kokura-castle-2",
+          "toId": "kokura-castle-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.8742512,
+                33.8844476
+              ],
+              [
+                130.8742512,
+                33.8844476
+              ]
+            ],
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Riverwalk%20Kitakyushu%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&destination=Kokura%20Castle%20Keep%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kokura-castle-leg-4",
+          "fromId": "kokura-castle-3",
+          "toId": "kokura-castle-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.875051,
+                33.8845807
+              ],
+              [
+                130.875051,
+                33.8845807
+              ]
+            ],
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kokura%20Castle%20Keep%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&destination=Kokura%20Castle%20Garden%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kokura-castle-leg-5",
+          "fromId": "kokura-castle-4",
+          "toId": "kokura-castle-5",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.8736,
+                33.8836
+              ],
+              [
+                130.8736,
+                33.8836
+              ]
+            ],
+            "sourceIds": [
+              "kokura-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kokura%20Castle%20Garden%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&destination=Matsumoto%20Seicho%20Memorial%20Museum%2C%20Kokura%20%C2%B7%20Kitakyushu%20%C2%B7%20Fukuoka%2C%20Japan%2C%20Japan&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kokura-castle-official",
+          "label": "Kokura Castle · Access and opening schedule",
+          "url": "https://kokura-castle.jp/access/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "kokura-castle-photo",
+          "label": "Photo: Stjepko Krehula · CC BY 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Kokura_Castle.jpg",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "konpira-san-s-long-climb-research-route",
+      "placeId": "konpira-san-s-long-climb",
+      "cityId": "destination",
+      "title": "Konpira-san’s long climb: a considered field route",
+      "introduction": "A pilgrimage stairway with a meaningful choice built into it: the main shrine is already a substantial climb; the inner shrine adds a demanding extension.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "konpira-san-s-long-climb-origin",
+        "name": "Kotoden Kotohira Station",
+        "address": "Kotoden Kotohira Station, Kotohira · Kagawa · Shikoku, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 34.1914534,
+          "longitude": 133.8208874,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "konpira-san-s-long-climb-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "konpira-san-s-long-climb-1",
+          "order": 1,
+          "name": "Kotoden Kotohira Station",
+          "area": "Kotohira · Kagawa · Shikoku",
+          "address": "Kotoden Kotohira Station, Kotohira · Kagawa · Shikoku, Japan",
+          "story": "Begin in town and follow the signed approach toward the shrine avenue.",
+          "coordinates": {
+            "latitude": 34.1920034,
+            "longitude": 133.8214374,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kotoden%20Kotohira%20Station%20Japan%20travel"
+        },
+        {
+          "id": "konpira-san-s-long-climb-2",
+          "order": 2,
+          "name": "Omotesando stairway",
+          "area": "Kotohira · Kagawa · Shikoku",
+          "address": "Omotesando stairway, Kotohira · Kagawa · Shikoku, Japan",
+          "story": "The climb starts among shops; pace yourself before the longer stone staircase begins.",
+          "coordinates": {
+            "latitude": 34.1908,
+            "longitude": 133.8183,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Omotesando%20stairway%20Japan%20travel"
+        },
+        {
+          "id": "konpira-san-s-long-climb-3",
+          "order": 3,
+          "name": "Asahi Shrine",
+          "area": "Kotohira · Kagawa · Shikoku",
+          "address": "Asahi Shrine, Kotohira · Kagawa · Shikoku, Japan",
+          "story": "A calm landmark along the ascent and a useful point to reassess energy and weather.",
+          "coordinates": {
+            "latitude": 34.1879,
+            "longitude": 133.8131,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Asahi%20Shrine%20Japan%20travel"
+        },
+        {
+          "id": "konpira-san-s-long-climb-4",
+          "order": 4,
+          "name": "Kotohira-gu Main Shrine",
+          "area": "Kotohira · Kagawa · Shikoku",
+          "address": "Kotohira-gu Main Shrine, Kotohira · Kagawa · Shikoku, Japan",
+          "story": "The main shrine is 785 steps above the approach. This is a complete visit on its own.",
+          "coordinates": {
+            "latitude": 34.1839885,
+            "longitude": 133.8093897,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kotohira-gu%20Main%20Shrine%20Japan%20travel"
+        },
+        {
+          "id": "konpira-san-s-long-climb-5",
+          "order": 5,
+          "name": "Oku-sha Inner Shrine · optional",
+          "area": "Kotohira · Kagawa · Shikoku",
+          "address": "Oku-sha Inner Shrine · optional, Kotohira · Kagawa · Shikoku, Japan",
+          "story": "A further 583 steps bring the total to 1,368. Continue only if conditions, daylight and fitness allow; confirm access hours.",
+          "coordinates": {
+            "latitude": 34.1879213,
+            "longitude": 133.8026304,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Oku-sha%20Inner%20Shrine%20%C2%B7%20optional%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "konpira-san-s-long-climb-leg-1",
+          "fromId": "konpira-san-s-long-climb-origin",
+          "toId": "konpira-san-s-long-climb-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.8214374,
+                34.1920034
+              ],
+              [
+                133.8214374,
+                34.1920034
+              ]
+            ],
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kotoden%20Kotohira%20Station%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&destination=Kotoden%20Kotohira%20Station%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "konpira-san-s-long-climb-leg-2",
+          "fromId": "konpira-san-s-long-climb-1",
+          "toId": "konpira-san-s-long-climb-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.8183,
+                34.1908
+              ],
+              [
+                133.8183,
+                34.1908
+              ]
+            ],
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kotoden%20Kotohira%20Station%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&destination=Omotesando%20stairway%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "konpira-san-s-long-climb-leg-3",
+          "fromId": "konpira-san-s-long-climb-2",
+          "toId": "konpira-san-s-long-climb-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.8131,
+                34.1879
+              ],
+              [
+                133.8131,
+                34.1879
+              ]
+            ],
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Omotesando%20stairway%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&destination=Asahi%20Shrine%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "konpira-san-s-long-climb-leg-4",
+          "fromId": "konpira-san-s-long-climb-3",
+          "toId": "konpira-san-s-long-climb-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.8093897,
+                34.1839885
+              ],
+              [
+                133.8093897,
+                34.1839885
+              ]
+            ],
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Asahi%20Shrine%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&destination=Kotohira-gu%20Main%20Shrine%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "konpira-san-s-long-climb-leg-5",
+          "fromId": "konpira-san-s-long-climb-4",
+          "toId": "konpira-san-s-long-climb-5",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                133.8026304,
+                34.1879213
+              ],
+              [
+                133.8026304,
+                34.1879213
+              ]
+            ],
+            "sourceIds": [
+              "konpira-san-s-long-climb-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kotohira-gu%20Main%20Shrine%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&destination=Oku-sha%20Inner%20Shrine%20%C2%B7%20optional%2C%20Kotohira%20%C2%B7%20Kagawa%20%C2%B7%20Shikoku%2C%20Japan%2C%20Japan&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "konpira-san-s-long-climb-official",
+          "label": "Kotohira Tourism Association · Konpira-san",
+          "url": "https://kotohira-kankou.jp/en/konpirasan/detail/545/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "konpira-san-s-long-climb-photo",
+          "label": "Photo: Kimon Berlin · CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Starting_the_climb_to_the_shrine_(6524010081).jpg",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kouri-bridge-and-island-coast-research-route",
+      "placeId": "kouri-bridge-and-island-coast",
+      "cityId": "destination",
+      "title": "Kouri Bridge and island coast: a considered field route",
+      "introduction": "A clear-water crossing leads to an island loop of viewpoints and coast. Plan this as a car-based half day, with tide, weather and safe parking in mind.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kouri-bridge-and-island-coast-origin",
+        "name": "Kouri Bridge south viewpoint",
+        "address": "Kouri Bridge south viewpoint, Nakijin · Okinawa, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 26.6860853,
+          "longitude": 128.0167702,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "kouri-bridge-and-island-coast-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kouri-bridge-and-island-coast-1",
+          "order": 1,
+          "name": "Kouri Bridge viewpoint",
+          "area": "Nakijin · Okinawa",
+          "address": "Kouri Bridge viewpoint, Nakijin · Okinawa, Japan",
+          "story": "Pause before crossing for the broadest view back toward Yagaji Island. Use designated stopping areas only.",
+          "coordinates": {
+            "latitude": 26.6866353,
+            "longitude": 128.0173202,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kouri-bridge-and-island-coast-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kouri%20Bridge%20viewpoint%20Japan%20travel"
+        },
+        {
+          "id": "kouri-bridge-and-island-coast-2",
+          "order": 2,
+          "name": "Kouri Ocean Tower",
+          "area": "Nakijin · Okinawa",
+          "address": "Kouri Ocean Tower, Nakijin · Okinawa, Japan",
+          "story": "A useful orientation stop with elevated views; check opening times and parking before arrival.",
+          "coordinates": {
+            "latitude": 26.7001292,
+            "longitude": 128.0241612,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kouri-bridge-and-island-coast-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kouri%20Ocean%20Tower%20Japan%20travel"
+        },
+        {
+          "id": "kouri-bridge-and-island-coast-3",
+          "order": 3,
+          "name": "Tinu Beach · Heart Rock",
+          "area": "Nakijin · Okinawa",
+          "address": "Tinu Beach · Heart Rock, Nakijin · Okinawa, Japan",
+          "story": "Reach the north coast by road and follow local access signs. The rock shapes are best viewed from the beach at suitable tide.",
+          "coordinates": {
+            "latitude": 26.6948,
+            "longitude": 128.02,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kouri-bridge-and-island-coast-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Tinu%20Beach%20%C2%B7%20Heart%20Rock%20Japan%20travel"
+        },
+        {
+          "id": "kouri-bridge-and-island-coast-4",
+          "order": 4,
+          "name": "Kouri Beach",
+          "area": "Nakijin · Okinawa",
+          "address": "Kouri Beach, Nakijin · Okinawa, Japan",
+          "story": "Finish near the bridge at the main beach; check swimming conditions and facilities locally.",
+          "coordinates": {
+            "latitude": 26.694528,
+            "longitude": 128.0209461,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kouri-bridge-and-island-coast-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kouri%20Beach%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kouri-bridge-and-island-coast-leg-1",
+          "fromId": "kouri-bridge-and-island-coast-origin",
+          "toId": "kouri-bridge-and-island-coast-1",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                128.0173202,
+                26.6866353
+              ],
+              [
+                128.0173202,
+                26.6866353
+              ]
+            ],
+            "sourceIds": [
+              "kouri-bridge-and-island-coast-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kouri%20Bridge%20south%20viewpoint%2C%20Nakijin%20%C2%B7%20Okinawa%2C%20Japan%2C%20Japan&destination=Kouri%20Bridge%20viewpoint%2C%20Nakijin%20%C2%B7%20Okinawa%2C%20Japan%2C%20Japan&travelmode=driving"
+        },
+        {
+          "id": "kouri-bridge-and-island-coast-leg-2",
+          "fromId": "kouri-bridge-and-island-coast-1",
+          "toId": "kouri-bridge-and-island-coast-2",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                128.0241612,
+                26.7001292
+              ],
+              [
+                128.0241612,
+                26.7001292
+              ]
+            ],
+            "sourceIds": [
+              "kouri-bridge-and-island-coast-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kouri%20Bridge%20viewpoint%2C%20Nakijin%20%C2%B7%20Okinawa%2C%20Japan%2C%20Japan&destination=Kouri%20Ocean%20Tower%2C%20Nakijin%20%C2%B7%20Okinawa%2C%20Japan%2C%20Japan&travelmode=driving"
+        },
+        {
+          "id": "kouri-bridge-and-island-coast-leg-3",
+          "fromId": "kouri-bridge-and-island-coast-2",
+          "toId": "kouri-bridge-and-island-coast-3",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                128.02,
+                26.6948
+              ],
+              [
+                128.02,
+                26.6948
+              ]
+            ],
+            "sourceIds": [
+              "kouri-bridge-and-island-coast-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kouri%20Ocean%20Tower%2C%20Nakijin%20%C2%B7%20Okinawa%2C%20Japan%2C%20Japan&destination=Tinu%20Beach%20%C2%B7%20Heart%20Rock%2C%20Nakijin%20%C2%B7%20Okinawa%2C%20Japan%2C%20Japan&travelmode=driving"
+        },
+        {
+          "id": "kouri-bridge-and-island-coast-leg-4",
+          "fromId": "kouri-bridge-and-island-coast-3",
+          "toId": "kouri-bridge-and-island-coast-4",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                128.0209461,
+                26.694528
+              ],
+              [
+                128.0209461,
+                26.694528
+              ]
+            ],
+            "sourceIds": [
+              "kouri-bridge-and-island-coast-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Tinu%20Beach%20%C2%B7%20Heart%20Rock%2C%20Nakijin%20%C2%B7%20Okinawa%2C%20Japan%2C%20Japan&destination=Kouri%20Beach%2C%20Nakijin%20%C2%B7%20Okinawa%2C%20Japan%2C%20Japan&travelmode=driving"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kouri-bridge-and-island-coast-official",
+          "label": "JNTO · Kouri Island and Bridge",
+          "url": "https://www.nakagujinson.jp/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "kouri-bridge-and-island-coast-photo",
+          "label": "Photo: CEphoto, Uwe Aranas · CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Nago_Okinawa_Kouri-Bridge-01.jpg",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "koyasan-after-dusk-research-route",
+      "placeId": "koyasan-after-dusk",
+      "cityId": "destination",
+      "title": "Koyasan after dusk: a considered field route",
+      "introduction": "An after-dark visit belongs with the official guided tour. Confirm its date, meeting point, return arrangements and your temple lodging’s gate time before booking.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "koyasan-after-dusk-origin",
+        "name": "Ekoin Temple · confirm tour meeting point",
+        "address": "Ekoin Temple · confirm tour meeting point, Koya · Wakayama · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 34.211952600000004,
+          "longitude": 135.5935189,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "koyasan-after-dusk-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "koyasan-after-dusk-1",
+          "order": 1,
+          "name": "Ekoin Temple · meeting point to confirm",
+          "area": "Koya · Wakayama · Kansai",
+          "address": "Ekoin Temple · meeting point to confirm, Koya · Wakayama · Kansai, Japan",
+          "story": "Meet only at the location and time confirmed by the tour operator; do not assume the lodging is the departure point.",
+          "coordinates": {
+            "latitude": 34.2125026,
+            "longitude": 135.5940689,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koyasan-after-dusk-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ekoin%20Temple%20%C2%B7%20meeting%20point%20to%20confirm%20Japan%20travel"
+        },
+        {
+          "id": "koyasan-after-dusk-2",
+          "order": 2,
+          "name": "Ichinohashi Bridge",
+          "area": "Koya · Wakayama · Kansai",
+          "address": "Ichinohashi Bridge, Koya · Wakayama · Kansai, Japan",
+          "story": "The traditional entrance marks the start of the sacred approach. Follow the guide and remain with the group.",
+          "coordinates": {
+            "latitude": 34.2161,
+            "longitude": 135.5897,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koyasan-after-dusk-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ichinohashi%20Bridge%20Japan%20travel"
+        },
+        {
+          "id": "koyasan-after-dusk-3",
+          "order": 3,
+          "name": "Okunoin lantern avenue",
+          "area": "Koya · Wakayama · Kansai",
+          "address": "Okunoin lantern avenue, Koya · Wakayama · Kansai, Japan",
+          "story": "Walk quietly among the cedar trees and memorials; photography and conduct should follow guide instructions.",
+          "coordinates": {
+            "latitude": 34.217178,
+            "longitude": 135.589205,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koyasan-after-dusk-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Okunoin%20lantern%20avenue%20Japan%20travel"
+        },
+        {
+          "id": "koyasan-after-dusk-4",
+          "order": 4,
+          "name": "Torodo Lantern Hall · access as guided",
+          "area": "Koya · Wakayama · Kansai",
+          "address": "Torodo Lantern Hall · access as guided, Koya · Wakayama · Kansai, Japan",
+          "story": "The lantern hall is the spiritual focus of the precinct. Follow the guide’s access directions and return plan.",
+          "coordinates": {
+            "latitude": 34.212795,
+            "longitude": 135.596008,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koyasan-after-dusk-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Torodo%20Lantern%20Hall%20%C2%B7%20access%20as%20guided%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "koyasan-after-dusk-leg-1",
+          "fromId": "koyasan-after-dusk-origin",
+          "toId": "koyasan-after-dusk-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.5940689,
+                34.2125026
+              ],
+              [
+                135.5940689,
+                34.2125026
+              ]
+            ],
+            "sourceIds": [
+              "koyasan-after-dusk-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Ekoin%20Temple%20%C2%B7%20confirm%20tour%20meeting%20point%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Ekoin%20Temple%20%C2%B7%20meeting%20point%20to%20confirm%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koyasan-after-dusk-leg-2",
+          "fromId": "koyasan-after-dusk-1",
+          "toId": "koyasan-after-dusk-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.5897,
+                34.2161
+              ],
+              [
+                135.5897,
+                34.2161
+              ]
+            ],
+            "sourceIds": [
+              "koyasan-after-dusk-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Ekoin%20Temple%20%C2%B7%20meeting%20point%20to%20confirm%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Ichinohashi%20Bridge%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koyasan-after-dusk-leg-3",
+          "fromId": "koyasan-after-dusk-2",
+          "toId": "koyasan-after-dusk-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.589205,
+                34.217178
+              ],
+              [
+                135.589205,
+                34.217178
+              ]
+            ],
+            "sourceIds": [
+              "koyasan-after-dusk-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Ichinohashi%20Bridge%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Okunoin%20lantern%20avenue%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koyasan-after-dusk-leg-4",
+          "fromId": "koyasan-after-dusk-3",
+          "toId": "koyasan-after-dusk-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.596008,
+                34.212795
+              ],
+              [
+                135.596008,
+                34.212795
+              ]
+            ],
+            "sourceIds": [
+              "koyasan-after-dusk-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Okunoin%20lantern%20avenue%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Torodo%20Lantern%20Hall%20%C2%B7%20access%20as%20guided%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "koyasan-after-dusk-official",
+          "label": "Official Koyasan Okunoin Night Tour",
+          "url": "https://www.night.koyasan-okunoin.com/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "koyasan-after-dusk-photo",
+          "label": "Photo: Yiannis Theologos Michellis · CC0",
+          "url": "https://commons.wikimedia.org/wiki/File:Pathway_through_graveyard_at_Okunoin_at_Koyasan_at_night_-_Japan_20170412110005_(34037569600).jpg",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "koyasan-s-lantern-forest-research-route",
+      "placeId": "koyasan-s-lantern-forest",
+      "cityId": "destination",
+      "title": "Koyasan’s lantern forest: a considered field route",
+      "introduction": "A daylight visit through cedar, stone memorials and lantern light. The route is a quiet approach to a sacred place, not a night walk; use the official guided tour for after-dark access.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "koyasan-s-lantern-forest-origin",
+        "name": "Ichinohashi Bridge",
+        "address": "Ichinohashi Bridge, Koya · Wakayama · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 34.21555,
+          "longitude": 135.58915,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "koyasan-s-lantern-forest-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "koyasan-s-lantern-forest-1",
+          "order": 1,
+          "name": "Ichinohashi Bridge",
+          "area": "Koya · Wakayama · Kansai",
+          "address": "Ichinohashi Bridge, Koya · Wakayama · Kansai, Japan",
+          "story": "Begin at the traditional entrance and take a moment to read the etiquette signs.",
+          "coordinates": {
+            "latitude": 34.2161,
+            "longitude": 135.5897,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koyasan-s-lantern-forest-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ichinohashi%20Bridge%20Japan%20travel"
+        },
+        {
+          "id": "koyasan-s-lantern-forest-2",
+          "order": 2,
+          "name": "Cedar and memorial avenue",
+          "area": "Koya · Wakayama · Kansai",
+          "address": "Cedar and memorial avenue, Koya · Wakayama · Kansai, Japan",
+          "story": "Follow the marked path through the forest; the memorials span centuries and reflect many parts of Japanese history.",
+          "coordinates": {
+            "latitude": 34.2147,
+            "longitude": 135.5924,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koyasan-s-lantern-forest-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Cedar%20and%20memorial%20avenue%20Japan%20travel"
+        },
+        {
+          "id": "koyasan-s-lantern-forest-3",
+          "order": 3,
+          "name": "Miroku-ishi approach",
+          "area": "Koya · Wakayama · Kansai",
+          "address": "Miroku-ishi approach, Koya · Wakayama · Kansai, Japan",
+          "story": "A distinctive stone feature along the route; observe from the permitted path and do not disturb offerings.",
+          "coordinates": {
+            "latitude": 34.2134,
+            "longitude": 135.5945,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koyasan-s-lantern-forest-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Miroku-ishi%20approach%20Japan%20travel"
+        },
+        {
+          "id": "koyasan-s-lantern-forest-4",
+          "order": 4,
+          "name": "Torodo Lantern Hall",
+          "area": "Koya · Wakayama · Kansai",
+          "address": "Torodo Lantern Hall, Koya · Wakayama · Kansai, Japan",
+          "story": "The hall is normally open 6:00–17:30. Check current notices; the mausoleum itself is restricted.",
+          "coordinates": {
+            "latitude": 34.212795,
+            "longitude": 135.596008,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "koyasan-s-lantern-forest-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Torodo%20Lantern%20Hall%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "koyasan-s-lantern-forest-leg-1",
+          "fromId": "koyasan-s-lantern-forest-origin",
+          "toId": "koyasan-s-lantern-forest-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.5897,
+                34.2161
+              ],
+              [
+                135.5897,
+                34.2161
+              ]
+            ],
+            "sourceIds": [
+              "koyasan-s-lantern-forest-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Ichinohashi%20Bridge%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Ichinohashi%20Bridge%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koyasan-s-lantern-forest-leg-2",
+          "fromId": "koyasan-s-lantern-forest-1",
+          "toId": "koyasan-s-lantern-forest-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.5924,
+                34.2147
+              ],
+              [
+                135.5924,
+                34.2147
+              ]
+            ],
+            "sourceIds": [
+              "koyasan-s-lantern-forest-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Ichinohashi%20Bridge%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Cedar%20and%20memorial%20avenue%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koyasan-s-lantern-forest-leg-3",
+          "fromId": "koyasan-s-lantern-forest-2",
+          "toId": "koyasan-s-lantern-forest-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.5945,
+                34.2134
+              ],
+              [
+                135.5945,
+                34.2134
+              ]
+            ],
+            "sourceIds": [
+              "koyasan-s-lantern-forest-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Cedar%20and%20memorial%20avenue%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Miroku-ishi%20approach%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "koyasan-s-lantern-forest-leg-4",
+          "fromId": "koyasan-s-lantern-forest-3",
+          "toId": "koyasan-s-lantern-forest-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.596008,
+                34.212795
+              ],
+              [
+                135.596008,
+                34.212795
+              ]
+            ],
+            "sourceIds": [
+              "koyasan-s-lantern-forest-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Miroku-ishi%20approach%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Torodo%20Lantern%20Hall%2C%20Koya%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "koyasan-s-lantern-forest-official",
+          "label": "Koyasan Shingon Buddhism · Visitor information",
+          "url": "https://www.koyasan.or.jp/sp/en/meguru/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "koyasan-s-lantern-forest-photo",
+          "label": "Photo: BradBeattie · CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Okunoin_cemetery.jpg",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kumamoto-castle-research-route",
+      "placeId": "kumamoto-castle",
+      "cityId": "destination",
+      "title": "Kumamoto Castle: a considered field route",
+      "introduction": "A castle visit shaped by recovery. The approach, stone walls and visible restoration work tell a story that is still unfolding; access routes can change as repairs continue.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kumamoto-castle-origin",
+        "name": "Sakura-no-baba Josaien",
+        "address": "Sakura-no-baba Josaien, Kumamoto · Kyushu, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 32.803250000000006,
+          "longitude": 130.70595,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "kumamoto-castle-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kumamoto-castle-1",
+          "order": 1,
+          "name": "Sakura-no-baba Josaien",
+          "area": "Kumamoto · Kyushu",
+          "address": "Sakura-no-baba Josaien, Kumamoto · Kyushu, Japan",
+          "story": "Start at the visitor area beneath the castle and orient yourself before the uphill approach.",
+          "coordinates": {
+            "latitude": 32.8038,
+            "longitude": 130.7065,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Sakura-no-baba%20Josaien%20Japan%20travel"
+        },
+        {
+          "id": "kumamoto-castle-2",
+          "order": 2,
+          "name": "South Gate · weekday route",
+          "area": "Kumamoto · Kyushu",
+          "address": "South Gate · weekday route, Kumamoto · Kyushu, Japan",
+          "story": "Weekday entry is commonly directed through the south side; weekend routes can differ, so follow the day’s official signage.",
+          "coordinates": {
+            "latitude": 32.8049,
+            "longitude": 130.706,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=South%20Gate%20%C2%B7%20weekday%20route%20Japan%20travel"
+        },
+        {
+          "id": "kumamoto-castle-3",
+          "order": 3,
+          "name": "Castle visitor corridor",
+          "area": "Kumamoto · Kyushu",
+          "address": "Castle visitor corridor, Kumamoto · Kyushu, Japan",
+          "story": "Use the designated elevated route to see the keep and restoration work without entering closed repair zones.",
+          "coordinates": {
+            "latitude": 32.805,
+            "longitude": 130.7058,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Castle%20visitor%20corridor%20Japan%20travel"
+        },
+        {
+          "id": "kumamoto-castle-4",
+          "order": 4,
+          "name": "Castle Tower",
+          "area": "Kumamoto · Kyushu",
+          "address": "Castle Tower, Kumamoto · Kyushu, Japan",
+          "story": "Explore the exhibits and views if open; final admission is earlier than closing.",
+          "coordinates": {
+            "latitude": 32.8052691,
+            "longitude": 130.7054642,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Castle%20Tower%20Japan%20travel"
+        },
+        {
+          "id": "kumamoto-castle-5",
+          "order": 5,
+          "name": "Ninomaru Square",
+          "area": "Kumamoto · Kyushu",
+          "address": "Ninomaru Square, Kumamoto · Kyushu, Japan",
+          "story": "Finish with an exterior view of the keep and broad grounds; surfaces may be uneven or slippery.",
+          "coordinates": {
+            "latitude": 32.8066,
+            "longitude": 130.7047,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Ninomaru%20Square%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kumamoto-castle-leg-1",
+          "fromId": "kumamoto-castle-origin",
+          "toId": "kumamoto-castle-1",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.7065,
+                32.8038
+              ],
+              [
+                130.7065,
+                32.8038
+              ]
+            ],
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Sakura-no-baba%20Josaien%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&destination=Sakura-no-baba%20Josaien%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kumamoto-castle-leg-2",
+          "fromId": "kumamoto-castle-1",
+          "toId": "kumamoto-castle-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.706,
+                32.8049
+              ],
+              [
+                130.706,
+                32.8049
+              ]
+            ],
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Sakura-no-baba%20Josaien%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&destination=South%20Gate%20%C2%B7%20weekday%20route%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kumamoto-castle-leg-3",
+          "fromId": "kumamoto-castle-2",
+          "toId": "kumamoto-castle-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.7058,
+                32.805
+              ],
+              [
+                130.7058,
+                32.805
+              ]
+            ],
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=South%20Gate%20%C2%B7%20weekday%20route%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&destination=Castle%20visitor%20corridor%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kumamoto-castle-leg-4",
+          "fromId": "kumamoto-castle-3",
+          "toId": "kumamoto-castle-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.7054642,
+                32.8052691
+              ],
+              [
+                130.7054642,
+                32.8052691
+              ]
+            ],
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Castle%20visitor%20corridor%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&destination=Castle%20Tower%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kumamoto-castle-leg-5",
+          "fromId": "kumamoto-castle-4",
+          "toId": "kumamoto-castle-5",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.7047,
+                32.8066
+              ],
+              [
+                130.7047,
+                32.8066
+              ]
+            ],
+            "sourceIds": [
+              "kumamoto-castle-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Castle%20Tower%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&destination=Ninomaru%20Square%2C%20Kumamoto%20%C2%B7%20Kyushu%2C%20Japan%2C%20Japan&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kumamoto-castle-official",
+          "label": "Kumamoto Castle official visitor information",
+          "url": "https://castle.kumamoto-guide.jp/en/info/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "kumamoto-castle-photo",
+          "label": "Photo: STA3816 · CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Kumamoto_castle_keeptower.jpg",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kumano-kodo-the-old-paths-research-route",
+      "placeId": "kumano-kodo-the-old-paths",
+      "cityId": "destination",
+      "title": "Kumano Kodo: the old paths: a considered field route",
+      "introduction": "A manageable half-day on the Nakahechi pilgrimage route: take a bus to Hosshinmon-oji, then walk about seven kilometres to Hongu Taisha and Oyunohara.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kumano-kodo-the-old-paths-origin",
+        "name": "Hongu Taisha-mae Bus Stop",
+        "address": "Hongu Taisha-mae Bus Stop, Hongu · Wakayama · Kansai, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 33.8380816,
+          "longitude": 135.7748145,
+          "precision": "Approximate planning coordinate; follow live directions",
+          "sourceIds": [
+            "kumano-kodo-the-old-paths-official"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "kumano-kodo-the-old-paths-1",
+          "order": 1,
+          "name": "Hongu Taisha-mae Bus Stop",
+          "area": "Hongu · Wakayama · Kansai",
+          "address": "Hongu Taisha-mae Bus Stop, Hongu · Wakayama · Kansai, Japan",
+          "story": "Check the latest bus timetable and board for Hosshinmon-oji; do not start the trail before confirming the return plan.",
+          "coordinates": {
+            "latitude": 33.8386316,
+            "longitude": 135.7753645,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Hongu%20Taisha-mae%20Bus%20Stop%20Japan%20travel"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-2",
+          "order": 2,
+          "name": "Hosshinmon-oji",
+          "area": "Hongu · Wakayama · Kansai",
+          "address": "Hosshinmon-oji, Hongu · Wakayama · Kansai, Japan",
+          "story": "The official suggested walk begins at this small shrine marker above Hongu.",
+          "coordinates": {
+            "latitude": 33.86184,
+            "longitude": 135.7207693,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Hosshinmon-oji%20Japan%20travel"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-3",
+          "order": 3,
+          "name": "Fushiogami-oji",
+          "area": "Hongu · Wakayama · Kansai",
+          "address": "Fushiogami-oji, Hongu · Wakayama · Kansai, Japan",
+          "story": "A traditional rest point and a good place for a packed lunch; stay on the marked Nakahechi route.",
+          "coordinates": {
+            "latitude": 33.8605018,
+            "longitude": 135.7577757,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Fushiogami-oji%20Japan%20travel"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-4",
+          "order": 4,
+          "name": "Sangen-jaya remains",
+          "area": "Hongu · Wakayama · Kansai",
+          "address": "Sangen-jaya remains, Hongu · Wakayama · Kansai, Japan",
+          "story": "A historic junction where paths once met; follow current trail signs because surface conditions can change.",
+          "coordinates": {
+            "latitude": 33.8505,
+            "longitude": 135.765,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Sangen-jaya%20remains%20Japan%20travel"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-5",
+          "order": 5,
+          "name": "Kumano Hongu Taisha",
+          "area": "Hongu · Wakayama · Kansai",
+          "address": "Kumano Hongu Taisha, Hongu · Wakayama · Kansai, Japan",
+          "story": "Arrive at the shrine after the forest walk; check precinct etiquette and opening access.",
+          "coordinates": {
+            "latitude": 33.8403512,
+            "longitude": 135.7736333,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kumano%20Hongu%20Taisha%20Japan%20travel"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-6",
+          "order": 6,
+          "name": "Oyunohara Great Torii",
+          "area": "Hongu · Wakayama · Kansai",
+          "address": "Oyunohara Great Torii, Hongu · Wakayama · Kansai, Japan",
+          "story": "Finish at the great torii across the river plain; allow time to return to town or your lodging.",
+          "coordinates": {
+            "latitude": 33.8397,
+            "longitude": 135.7705,
+            "precision": "Planning coordinate; follow on-site signs and live directions",
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Oyunohara%20Great%20Torii%20Japan%20travel"
+        }
+      ],
+      "legs": [
+        {
+          "id": "kumano-kodo-the-old-paths-leg-1",
+          "fromId": "kumano-kodo-the-old-paths-origin",
+          "toId": "kumano-kodo-the-old-paths-1",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7753645,
+                33.8386316
+              ],
+              [
+                135.7753645,
+                33.8386316
+              ]
+            ],
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Hongu%20Taisha-mae%20Bus%20Stop%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Hongu%20Taisha-mae%20Bus%20Stop%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=transit"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-leg-2",
+          "fromId": "kumano-kodo-the-old-paths-1",
+          "toId": "kumano-kodo-the-old-paths-2",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7207693,
+                33.86184
+              ],
+              [
+                135.7207693,
+                33.86184
+              ]
+            ],
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Hongu%20Taisha-mae%20Bus%20Stop%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Hosshinmon-oji%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-leg-3",
+          "fromId": "kumano-kodo-the-old-paths-2",
+          "toId": "kumano-kodo-the-old-paths-3",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7577757,
+                33.8605018
+              ],
+              [
+                135.7577757,
+                33.8605018
+              ]
+            ],
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Hosshinmon-oji%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Fushiogami-oji%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-leg-4",
+          "fromId": "kumano-kodo-the-old-paths-3",
+          "toId": "kumano-kodo-the-old-paths-4",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.765,
+                33.8505
+              ],
+              [
+                135.765,
+                33.8505
+              ]
+            ],
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Fushiogami-oji%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Sangen-jaya%20remains%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-leg-5",
+          "fromId": "kumano-kodo-the-old-paths-4",
+          "toId": "kumano-kodo-the-old-paths-5",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7736333,
+                33.8403512
+              ],
+              [
+                135.7736333,
+                33.8403512
+              ]
+            ],
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Sangen-jaya%20remains%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Kumano%20Hongu%20Taisha%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-leg-6",
+          "fromId": "kumano-kodo-the-old-paths-5",
+          "toId": "kumano-kodo-the-old-paths-6",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7705,
+                33.8397
+              ],
+              [
+                135.7705,
+                33.8397
+              ]
+            ],
+            "sourceIds": [
+              "kumano-kodo-the-old-paths-official"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=Kumano%20Hongu%20Taisha%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&destination=Oyunohara%20Great%20Torii%2C%20Hongu%20%C2%B7%20Wakayama%20%C2%B7%20Kansai%2C%20Japan%2C%20Japan&travelmode=walking"
+        }
+      ],
+      "sources": [
+        {
+          "id": "kumano-kodo-the-old-paths-official",
+          "label": "Tanabe City Kumano Tourism Bureau · Suggested walks",
+          "url": "https://www.tb-kumano.jp/en/kumano-kodo/suggested-walks/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and place-specific route context"
+          ]
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-photo",
+          "label": "Photo: Nekosuki · CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File:Kumano_Kodo_pilgrimage_route_Nakahechi_From_Gyuba-Dojiguchi_To_Chikatsuyu_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E4%B8%AD%E8%BE%BA%E8%B7%AF_%E7%89%9B%E9%A6%AC%E7%AB%A5%E5%AD%90%E5%8F%A3%EF%BD%9E%E8%BF%91%E9%9C%B203.JPG",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "hero photograph and displayed attribution"
+          ]
+        }
+      ]
     }
   ],
   "maps": {
@@ -5753,6 +8329,2104 @@
             "routeLegId": "kobe-nunobiki-herb-gardens-leg-4",
             "mode": "transit",
             "routeGeometryStatus": "schematic"
+          }
+        }
+      ]
+    },
+    "kochi-castle": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          133.531,
+          33.5598,
+          133.533,
+          33.560691
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.53105,
+              33.559250000000006
+            ]
+          },
+          "properties": {
+            "id": "kochi-castle-origin",
+            "routeStopId": "kochi-castle-origin",
+            "name": "Kochijo-mae Tram Stop",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.53105,
+                33.559250000000006
+              ],
+              [
+                133.5316,
+                33.5598
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kochi-castle-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.5316,
+              33.5598
+            ]
+          },
+          "properties": {
+            "id": "kochi-castle-1",
+            "routeStopId": "kochi-castle-1",
+            "order": 1,
+            "name": "Otemon Gate",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.5316,
+                33.5598
+              ],
+              [
+                133.531,
+                33.5605
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kochi-castle-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.531,
+              33.5605
+            ]
+          },
+          "properties": {
+            "id": "kochi-castle-2",
+            "routeStopId": "kochi-castle-2",
+            "order": 2,
+            "name": "Honmaru Palace",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.531,
+                33.5605
+              ],
+              [
+                133.5314588,
+                33.560691
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kochi-castle-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.5314588,
+              33.560691
+            ]
+          },
+          "properties": {
+            "id": "kochi-castle-3",
+            "routeStopId": "kochi-castle-3",
+            "order": 3,
+            "name": "Main Keep",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.5314588,
+                33.560691
+              ],
+              [
+                133.533,
+                33.5601
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kochi-castle-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.533,
+              33.5601
+            ]
+          },
+          "properties": {
+            "id": "kochi-castle-4",
+            "routeStopId": "kochi-castle-4",
+            "order": 4,
+            "name": "Kochi Castle Museum of History",
+            "role": "stop"
+          }
+        }
+      ]
+    },
+    "koishikawa-korakuen-garden": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          139.7468,
+          35.7055612,
+          139.7505,
+          35.7079
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.74885,
+              35.70535
+            ]
+          },
+          "properties": {
+            "id": "koishikawa-korakuen-garden-origin",
+            "routeStopId": "koishikawa-korakuen-garden-origin",
+            "name": "Koishikawa Korakuen East Gate",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.74885,
+                35.70535
+              ],
+              [
+                139.7494,
+                35.7059
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koishikawa-korakuen-garden-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.7494,
+              35.7059
+            ]
+          },
+          "properties": {
+            "id": "koishikawa-korakuen-garden-1",
+            "routeStopId": "koishikawa-korakuen-garden-1",
+            "order": 1,
+            "name": "East Gate",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.7494,
+                35.7059
+              ],
+              [
+                139.7505,
+                35.7064
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koishikawa-korakuen-garden-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.7505,
+              35.7064
+            ]
+          },
+          "properties": {
+            "id": "koishikawa-korakuen-garden-2",
+            "routeStopId": "koishikawa-korakuen-garden-2",
+            "order": 2,
+            "name": "Daisensui Pond",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.7505,
+                35.7064
+              ],
+              [
+                139.7492646,
+                35.7055612
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koishikawa-korakuen-garden-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.7492646,
+              35.7055612
+            ]
+          },
+          "properties": {
+            "id": "koishikawa-korakuen-garden-3",
+            "routeStopId": "koishikawa-korakuen-garden-3",
+            "order": 3,
+            "name": "Engetsu Bridge",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.7492646,
+                35.7055612
+              ],
+              [
+                139.7468,
+                35.7079
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koishikawa-korakuen-garden-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.7468,
+              35.7079
+            ]
+          },
+          "properties": {
+            "id": "koishikawa-korakuen-garden-4",
+            "routeStopId": "koishikawa-korakuen-garden-4",
+            "order": 4,
+            "name": "West Gate",
+            "role": "stop"
+          }
+        }
+      ]
+    },
+    "koko-en-garden": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          134.6902424,
+          34.8269005,
+          134.6938,
+          34.8394
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.68969239999998,
+              34.826350500000004
+            ]
+          },
+          "properties": {
+            "id": "koko-en-garden-origin",
+            "routeStopId": "koko-en-garden-origin",
+            "name": "Himeji Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.68969239999998,
+                34.826350500000004
+              ],
+              [
+                134.6902424,
+                34.8269005
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koko-en-garden-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.6902424,
+              34.8269005
+            ]
+          },
+          "properties": {
+            "id": "koko-en-garden-1",
+            "routeStopId": "koko-en-garden-1",
+            "order": 1,
+            "name": "Himeji Station",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.6902424,
+                34.8269005
+              ],
+              [
+                134.6904054,
+                34.8370595
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koko-en-garden-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.6904054,
+              34.8370595
+            ]
+          },
+          "properties": {
+            "id": "koko-en-garden-2",
+            "routeStopId": "koko-en-garden-2",
+            "order": 2,
+            "name": "Koko-en Entrance",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.6904054,
+                34.8370595
+              ],
+              [
+                134.691,
+                34.8367
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koko-en-garden-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.691,
+              34.8367
+            ]
+          },
+          "properties": {
+            "id": "koko-en-garden-3",
+            "routeStopId": "koko-en-garden-3",
+            "order": 3,
+            "name": "Lord’s Residence Garden",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.691,
+                34.8367
+              ],
+              [
+                134.6915,
+                34.8373
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koko-en-garden-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.6915,
+              34.8373
+            ]
+          },
+          "properties": {
+            "id": "koko-en-garden-4",
+            "routeStopId": "koko-en-garden-4",
+            "order": 4,
+            "name": "Soju-an Tea House",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.6915,
+                34.8373
+              ],
+              [
+                134.6938,
+                34.8394
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koko-en-garden-leg-5",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.6938,
+              34.8394
+            ]
+          },
+          "properties": {
+            "id": "koko-en-garden-5",
+            "routeStopId": "koko-en-garden-5",
+            "order": 5,
+            "name": "Himeji Castle outer grounds",
+            "role": "stop"
+          }
+        }
+      ]
+    },
+    "kokura-castle": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          130.8736,
+          33.8836,
+          130.8821843,
+          33.8867602
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.8816343,
+              33.8862102
+            ]
+          },
+          "properties": {
+            "id": "kokura-castle-origin",
+            "routeStopId": "kokura-castle-origin",
+            "name": "JR Kokura Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.8816343,
+                33.8862102
+              ],
+              [
+                130.8821843,
+                33.8867602
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kokura-castle-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.8821843,
+              33.8867602
+            ]
+          },
+          "properties": {
+            "id": "kokura-castle-1",
+            "routeStopId": "kokura-castle-1",
+            "order": 1,
+            "name": "Kokura Station",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.8821843,
+                33.8867602
+              ],
+              [
+                130.8752466,
+                33.8858647
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kokura-castle-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.8752466,
+              33.8858647
+            ]
+          },
+          "properties": {
+            "id": "kokura-castle-2",
+            "routeStopId": "kokura-castle-2",
+            "order": 2,
+            "name": "Riverwalk Kitakyushu",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.8752466,
+                33.8858647
+              ],
+              [
+                130.8742512,
+                33.8844476
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kokura-castle-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.8742512,
+              33.8844476
+            ]
+          },
+          "properties": {
+            "id": "kokura-castle-3",
+            "routeStopId": "kokura-castle-3",
+            "order": 3,
+            "name": "Kokura Castle Keep",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.8742512,
+                33.8844476
+              ],
+              [
+                130.875051,
+                33.8845807
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kokura-castle-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.875051,
+              33.8845807
+            ]
+          },
+          "properties": {
+            "id": "kokura-castle-4",
+            "routeStopId": "kokura-castle-4",
+            "order": 4,
+            "name": "Kokura Castle Garden",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.875051,
+                33.8845807
+              ],
+              [
+                130.8736,
+                33.8836
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kokura-castle-leg-5",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.8736,
+              33.8836
+            ]
+          },
+          "properties": {
+            "id": "kokura-castle-5",
+            "routeStopId": "kokura-castle-5",
+            "order": 5,
+            "name": "Matsumoto Seicho Memorial Museum",
+            "role": "stop"
+          }
+        }
+      ]
+    },
+    "konpira-san-s-long-climb": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          133.8026304,
+          34.1839885,
+          133.8214374,
+          34.1920034
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.8208874,
+              34.1914534
+            ]
+          },
+          "properties": {
+            "id": "konpira-san-s-long-climb-origin",
+            "routeStopId": "konpira-san-s-long-climb-origin",
+            "name": "Kotoden Kotohira Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.8208874,
+                34.1914534
+              ],
+              [
+                133.8214374,
+                34.1920034
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "konpira-san-s-long-climb-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.8214374,
+              34.1920034
+            ]
+          },
+          "properties": {
+            "id": "konpira-san-s-long-climb-1",
+            "routeStopId": "konpira-san-s-long-climb-1",
+            "order": 1,
+            "name": "Kotoden Kotohira Station",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.8214374,
+                34.1920034
+              ],
+              [
+                133.8183,
+                34.1908
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "konpira-san-s-long-climb-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.8183,
+              34.1908
+            ]
+          },
+          "properties": {
+            "id": "konpira-san-s-long-climb-2",
+            "routeStopId": "konpira-san-s-long-climb-2",
+            "order": 2,
+            "name": "Omotesando stairway",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.8183,
+                34.1908
+              ],
+              [
+                133.8131,
+                34.1879
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "konpira-san-s-long-climb-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.8131,
+              34.1879
+            ]
+          },
+          "properties": {
+            "id": "konpira-san-s-long-climb-3",
+            "routeStopId": "konpira-san-s-long-climb-3",
+            "order": 3,
+            "name": "Asahi Shrine",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.8131,
+                34.1879
+              ],
+              [
+                133.8093897,
+                34.1839885
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "konpira-san-s-long-climb-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.8093897,
+              34.1839885
+            ]
+          },
+          "properties": {
+            "id": "konpira-san-s-long-climb-4",
+            "routeStopId": "konpira-san-s-long-climb-4",
+            "order": 4,
+            "name": "Kotohira-gu Main Shrine",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                133.8093897,
+                34.1839885
+              ],
+              [
+                133.8026304,
+                34.1879213
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "konpira-san-s-long-climb-leg-5",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              133.8026304,
+              34.1879213
+            ]
+          },
+          "properties": {
+            "id": "konpira-san-s-long-climb-5",
+            "routeStopId": "konpira-san-s-long-climb-5",
+            "order": 5,
+            "name": "Oku-sha Inner Shrine · optional",
+            "role": "stop"
+          }
+        }
+      ]
+    },
+    "kouri-bridge-and-island-coast": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          128.0173202,
+          26.6866353,
+          128.0241612,
+          26.7001292
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              128.0167702,
+              26.6860853
+            ]
+          },
+          "properties": {
+            "id": "kouri-bridge-and-island-coast-origin",
+            "routeStopId": "kouri-bridge-and-island-coast-origin",
+            "name": "Kouri Bridge south viewpoint",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                128.0167702,
+                26.6860853
+              ],
+              [
+                128.0173202,
+                26.6866353
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kouri-bridge-and-island-coast-leg-1",
+            "mode": "driving",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              128.0173202,
+              26.6866353
+            ]
+          },
+          "properties": {
+            "id": "kouri-bridge-and-island-coast-1",
+            "routeStopId": "kouri-bridge-and-island-coast-1",
+            "order": 1,
+            "name": "Kouri Bridge viewpoint",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                128.0173202,
+                26.6866353
+              ],
+              [
+                128.0241612,
+                26.7001292
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kouri-bridge-and-island-coast-leg-2",
+            "mode": "driving",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              128.0241612,
+              26.7001292
+            ]
+          },
+          "properties": {
+            "id": "kouri-bridge-and-island-coast-2",
+            "routeStopId": "kouri-bridge-and-island-coast-2",
+            "order": 2,
+            "name": "Kouri Ocean Tower",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                128.0241612,
+                26.7001292
+              ],
+              [
+                128.02,
+                26.6948
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kouri-bridge-and-island-coast-leg-3",
+            "mode": "driving",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              128.02,
+              26.6948
+            ]
+          },
+          "properties": {
+            "id": "kouri-bridge-and-island-coast-3",
+            "routeStopId": "kouri-bridge-and-island-coast-3",
+            "order": 3,
+            "name": "Tinu Beach · Heart Rock",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                128.02,
+                26.6948
+              ],
+              [
+                128.0209461,
+                26.694528
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kouri-bridge-and-island-coast-leg-4",
+            "mode": "driving",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              128.0209461,
+              26.694528
+            ]
+          },
+          "properties": {
+            "id": "kouri-bridge-and-island-coast-4",
+            "routeStopId": "kouri-bridge-and-island-coast-4",
+            "order": 4,
+            "name": "Kouri Beach",
+            "role": "stop"
+          }
+        }
+      ]
+    },
+    "koyasan-after-dusk": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.589205,
+          34.2125026,
+          135.596008,
+          34.217178
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.5935189,
+              34.211952600000004
+            ]
+          },
+          "properties": {
+            "id": "koyasan-after-dusk-origin",
+            "routeStopId": "koyasan-after-dusk-origin",
+            "name": "Ekoin Temple · confirm tour meeting point",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.5935189,
+                34.211952600000004
+              ],
+              [
+                135.5940689,
+                34.2125026
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koyasan-after-dusk-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.5940689,
+              34.2125026
+            ]
+          },
+          "properties": {
+            "id": "koyasan-after-dusk-1",
+            "routeStopId": "koyasan-after-dusk-1",
+            "order": 1,
+            "name": "Ekoin Temple · meeting point to confirm",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.5940689,
+                34.2125026
+              ],
+              [
+                135.5897,
+                34.2161
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koyasan-after-dusk-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.5897,
+              34.2161
+            ]
+          },
+          "properties": {
+            "id": "koyasan-after-dusk-2",
+            "routeStopId": "koyasan-after-dusk-2",
+            "order": 2,
+            "name": "Ichinohashi Bridge",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.5897,
+                34.2161
+              ],
+              [
+                135.589205,
+                34.217178
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koyasan-after-dusk-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.589205,
+              34.217178
+            ]
+          },
+          "properties": {
+            "id": "koyasan-after-dusk-3",
+            "routeStopId": "koyasan-after-dusk-3",
+            "order": 3,
+            "name": "Okunoin lantern avenue",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.589205,
+                34.217178
+              ],
+              [
+                135.596008,
+                34.212795
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koyasan-after-dusk-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.596008,
+              34.212795
+            ]
+          },
+          "properties": {
+            "id": "koyasan-after-dusk-4",
+            "routeStopId": "koyasan-after-dusk-4",
+            "order": 4,
+            "name": "Torodo Lantern Hall · access as guided",
+            "role": "stop"
+          }
+        }
+      ]
+    },
+    "koyasan-s-lantern-forest": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.5897,
+          34.212795,
+          135.596008,
+          34.2161
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.58915,
+              34.21555
+            ]
+          },
+          "properties": {
+            "id": "koyasan-s-lantern-forest-origin",
+            "routeStopId": "koyasan-s-lantern-forest-origin",
+            "name": "Ichinohashi Bridge",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.58915,
+                34.21555
+              ],
+              [
+                135.5897,
+                34.2161
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koyasan-s-lantern-forest-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.5897,
+              34.2161
+            ]
+          },
+          "properties": {
+            "id": "koyasan-s-lantern-forest-1",
+            "routeStopId": "koyasan-s-lantern-forest-1",
+            "order": 1,
+            "name": "Ichinohashi Bridge",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.5897,
+                34.2161
+              ],
+              [
+                135.5924,
+                34.2147
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koyasan-s-lantern-forest-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.5924,
+              34.2147
+            ]
+          },
+          "properties": {
+            "id": "koyasan-s-lantern-forest-2",
+            "routeStopId": "koyasan-s-lantern-forest-2",
+            "order": 2,
+            "name": "Cedar and memorial avenue",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.5924,
+                34.2147
+              ],
+              [
+                135.5945,
+                34.2134
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koyasan-s-lantern-forest-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.5945,
+              34.2134
+            ]
+          },
+          "properties": {
+            "id": "koyasan-s-lantern-forest-3",
+            "routeStopId": "koyasan-s-lantern-forest-3",
+            "order": 3,
+            "name": "Miroku-ishi approach",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.5945,
+                34.2134
+              ],
+              [
+                135.596008,
+                34.212795
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "koyasan-s-lantern-forest-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.596008,
+              34.212795
+            ]
+          },
+          "properties": {
+            "id": "koyasan-s-lantern-forest-4",
+            "routeStopId": "koyasan-s-lantern-forest-4",
+            "order": 4,
+            "name": "Torodo Lantern Hall",
+            "role": "stop"
+          }
+        }
+      ]
+    },
+    "kumamoto-castle": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          130.7047,
+          32.8038,
+          130.7065,
+          32.8066
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.70595,
+              32.803250000000006
+            ]
+          },
+          "properties": {
+            "id": "kumamoto-castle-origin",
+            "routeStopId": "kumamoto-castle-origin",
+            "name": "Sakura-no-baba Josaien",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.70595,
+                32.803250000000006
+              ],
+              [
+                130.7065,
+                32.8038
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumamoto-castle-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.7065,
+              32.8038
+            ]
+          },
+          "properties": {
+            "id": "kumamoto-castle-1",
+            "routeStopId": "kumamoto-castle-1",
+            "order": 1,
+            "name": "Sakura-no-baba Josaien",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.7065,
+                32.8038
+              ],
+              [
+                130.706,
+                32.8049
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumamoto-castle-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.706,
+              32.8049
+            ]
+          },
+          "properties": {
+            "id": "kumamoto-castle-2",
+            "routeStopId": "kumamoto-castle-2",
+            "order": 2,
+            "name": "South Gate · weekday route",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.706,
+                32.8049
+              ],
+              [
+                130.7058,
+                32.805
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumamoto-castle-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.7058,
+              32.805
+            ]
+          },
+          "properties": {
+            "id": "kumamoto-castle-3",
+            "routeStopId": "kumamoto-castle-3",
+            "order": 3,
+            "name": "Castle visitor corridor",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.7058,
+                32.805
+              ],
+              [
+                130.7054642,
+                32.8052691
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumamoto-castle-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.7054642,
+              32.8052691
+            ]
+          },
+          "properties": {
+            "id": "kumamoto-castle-4",
+            "routeStopId": "kumamoto-castle-4",
+            "order": 4,
+            "name": "Castle Tower",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                130.7054642,
+                32.8052691
+              ],
+              [
+                130.7047,
+                32.8066
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumamoto-castle-leg-5",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              130.7047,
+              32.8066
+            ]
+          },
+          "properties": {
+            "id": "kumamoto-castle-5",
+            "routeStopId": "kumamoto-castle-5",
+            "order": 5,
+            "name": "Ninomaru Square",
+            "role": "stop"
+          }
+        }
+      ]
+    },
+    "kumano-kodo-the-old-paths": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.7207693,
+          33.8386316,
+          135.7753645,
+          33.86184
+        ],
+        "attribution": "Map data © OpenStreetMap contributors",
+        "license": "ODbL-1.0",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7748145,
+              33.8380816
+            ]
+          },
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-origin",
+            "routeStopId": "kumano-kodo-the-old-paths-origin",
+            "name": "Hongu Taisha-mae Bus Stop",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7748145,
+                33.8380816
+              ],
+              [
+                135.7753645,
+                33.8386316
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumano-kodo-the-old-paths-leg-1",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7753645,
+              33.8386316
+            ]
+          },
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-1",
+            "routeStopId": "kumano-kodo-the-old-paths-1",
+            "order": 1,
+            "name": "Hongu Taisha-mae Bus Stop",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7753645,
+                33.8386316
+              ],
+              [
+                135.7207693,
+                33.86184
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumano-kodo-the-old-paths-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7207693,
+              33.86184
+            ]
+          },
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-2",
+            "routeStopId": "kumano-kodo-the-old-paths-2",
+            "order": 2,
+            "name": "Hosshinmon-oji",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7207693,
+                33.86184
+              ],
+              [
+                135.7577757,
+                33.8605018
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumano-kodo-the-old-paths-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7577757,
+              33.8605018
+            ]
+          },
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-3",
+            "routeStopId": "kumano-kodo-the-old-paths-3",
+            "order": 3,
+            "name": "Fushiogami-oji",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7577757,
+                33.8605018
+              ],
+              [
+                135.765,
+                33.8505
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumano-kodo-the-old-paths-leg-4",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.765,
+              33.8505
+            ]
+          },
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-4",
+            "routeStopId": "kumano-kodo-the-old-paths-4",
+            "order": 4,
+            "name": "Sangen-jaya remains",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.765,
+                33.8505
+              ],
+              [
+                135.7736333,
+                33.8403512
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumano-kodo-the-old-paths-leg-5",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7736333,
+              33.8403512
+            ]
+          },
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-5",
+            "routeStopId": "kumano-kodo-the-old-paths-5",
+            "order": 5,
+            "name": "Kumano Hongu Taisha",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7736333,
+                33.8403512
+              ],
+              [
+                135.7705,
+                33.8397
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kumano-kodo-the-old-paths-leg-6",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7705,
+              33.8397
+            ]
+          },
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-6",
+            "routeStopId": "kumano-kodo-the-old-paths-6",
+            "order": 6,
+            "name": "Oyunohara Great Torii",
+            "role": "stop"
           }
         }
       ]
