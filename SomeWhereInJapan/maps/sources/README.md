@@ -24,13 +24,13 @@ Official references checked 2026-10-23:
 
 Sapporo has one bounded Overpass street extract, fetched 2026-10-23 from `https://overpass-api.de/api/interpreter`. The exact query and OSM base timestamp are recorded in `sapporo.geojson`; `sapporo.overpass.json` preserves the source response. The prepared source contains 3,651 selected road and pedestrian ways. The generated map is 795,398 bytes and the SVG fallback is 366,556 bytes. Both show local street context under ODbL attribution. Route connectors remain schematic stop-order illustrations, and one transfer/return time remains unknown.
 
-Sendai has source-backed place points and schematic connectors but no locally bundled street geometry. The page embeds the official OpenStreetMap street view for the Sendai bounds with the starting station marked, and offers a separate stop-order view for the route points. The embedded street map uses OpenStreetMap's map display and visible attribution; it requires an internet connection. A public Overpass request returned coordinates from the wrong city, so that response was discarded. The SVG fallback remains a locally generated stop-order overview and explicitly notes that no street geometry is bundled.
+Sendai has source-backed place points and schematic connectors but no locally bundled street geometry. The page renders OpenStreetMap-derived street tiles from OpenFreeMap with the route stops and numbered visit-order connectors overlaid in the same interactive map. The numbered route sequence and connector disclaimer are shown directly above the map; actual point-to-point directions remain linked separately. The map requires an internet connection and includes visible OpenStreetMap/OpenMapTiles attribution. OpenFreeMap describes its public service as free, without view limits or API keys, but does not provide an SLA. A public Overpass request returned coordinates from the wrong city, so that response was discarded. The SVG fallback remains a locally generated stop-order overview and explicitly notes that no street geometry is bundled.
 
 The other eight city maps do not yet have bundled map sources.
 
 ### Sendai source notice
 
-The Sendai route points derived from OpenStreetMap are distributed under ODbL 1.0 with visible `© OpenStreetMap contributors` attribution. The bundled `sendai.geojson` source intentionally contains no background streets; the page embeds OpenStreetMap's street map and separately shows its stop-order illustration. Dashed connectors are not route navigation. Coordinate precision and the evidence for each point are recorded separately in `data/city-routes.json`.
+The Sendai route points derived from OpenStreetMap are distributed under ODbL 1.0 with visible `© OpenStreetMap contributors` attribution. The bundled `sendai.geojson` source intentionally contains no background streets; the page uses OpenFreeMap's OpenStreetMap-derived street tiles and overlays all route stops and dashed stop-order connectors. Dashed connectors are not route navigation. Coordinate precision and the evidence for each point are recorded separately in `data/city-routes.json`.
 
 ### Sapporo source notice
 

@@ -1,6 +1,40 @@
 (function(root){
 'use strict';
 function mountCityRouteMap(container,mapData,onSelectStop){
+ if(mapData?.metadata?.geometryStatus==='schematic-stop-order'){
+  const panel=container&&container.querySelector('[data-map-canvas]'),fallback=container&&container.querySelector('[data-map-fallback]');
+  if(!root.maplibregl?.Map){if(panel)panel.hidden=true;if(fallback)fallback.hidden=false;return {selectStop(){},resize(){},destroy(){},get available(){return false;}};}
+  let map=null,loaded=false,destroyed=false,markers=new Map(),selected=null;
+  function choose(id){selected=id;markers.forEach((marker,key)=>marker.getElement()?.classList.toggle('is-selected',key===id));if(typeof onSelectStop==='function')onSelectStop(id);}
+  try{
+   if(!panel)throw new Error('Map container unavailable');
+   panel.hidden=false;
+   const [west,south,east,north]=mapData.metadata.bounds;
+   map=new root.maplibregl.Map({container:panel,style:'https://tiles.openfreemap.org/styles/liberty',center:[(west+east)/2,(south+north)/2],zoom:13,attributionControl:true,cooperativeGestures:true,dragRotate:false,pitchWithRotate:false});
+   map.addControl(new root.maplibregl.ScaleControl({unit:'metric'}),'bottom-left');
+   if(fallback)fallback.hidden=true;
+   map.addControl(new root.maplibregl.NavigationControl({showCompass:false}),'top-right');
+   map.on('load',()=>{
+    loaded=true;
+    const routeFeatures=mapData.features.filter(feature=>feature.geometry.type==='LineString'&&feature.properties.routeLegId);
+    map.addSource('itinerary-lines',{type:'geojson',data:{type:'FeatureCollection',features:routeFeatures}});
+    map.addLayer({id:'itinerary-line',type:'line',source:'itinerary-lines',layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':['match',['get','mode'],'walking','#b64f3d','#285b70'],'line-width':4,'line-opacity':0.9,'line-dasharray':[2,1]}});
+    const points=mapData.features.filter(feature=>feature.geometry.type==='Point');
+    map.fitBounds([[west,south],[east,north]],{padding:{top:84,right:54,bottom:48,left:54},maxZoom:15,duration:0});
+    if(fallback)fallback.hidden=true;
+   });
+   map.on('error',()=>{if(!loaded&&!destroyed){if(map){map.remove();map=null;}if(panel)panel.hidden=true;if(fallback)fallback.hidden=false;}});
+   pointsForMapMarkers(mapData).forEach(({feature,label,index})=>{
+    const p=feature.properties,id=p.routeStopId||p.id||feature.id,[lon,lat]=feature.geometry.coordinates;
+    const markerEl=document.createElement('button');markerEl.type='button';markerEl.className=`maplibre-route-marker${p.role==='origin'?' origin':''}`;markerEl.textContent=label;markerEl.setAttribute('aria-label',`${label==='S/R'?'Start and return':label==='S'?'Start':`Stop ${label}`}: ${p.name}`);markerEl.title=markerEl.getAttribute('aria-label');
+    markerEl.addEventListener('click',()=>choose(id));
+    const popupNode=document.createElement('strong');popupNode.textContent=p.role==='origin'?(p.returnPoint?'START / RETURN':`START`):`STOP ${label} · ${p.name}`;
+    const marker=new root.maplibregl.Marker({element:markerEl,anchor:'center'}).setLngLat([lon,lat]).setPopup(new root.maplibregl.Popup({offset:20,closeButton:false}).setDOMContent(popupNode)).addTo(map);
+    markers.set(id,marker);
+   });
+  }catch(error){if(map){map.remove();map=null;}if(panel)panel.hidden=true;if(fallback)fallback.hidden=false;}
+  return {selectStop(id){if(markers.has(id)){choose(id);markers.get(id).togglePopup();}},resize(){if(map&&!destroyed&&loaded)map.resize();},destroy(){destroyed=true;if(map){map.remove();map=null;}markers.clear();},get available(){return !!map&&!destroyed;}};
+ }
  let map=null,markers=new Map(),selected=null,destroyed=false;
  const fallback=container&&container.querySelector('[data-map-fallback]');
  const panel=container&&container.querySelector('[data-map-canvas]');
@@ -36,6 +70,7 @@ function mountCityRouteMap(container,mapData,onSelectStop){
  }catch(error){fail();}
  return {selectStop(id){if(markers.has(id))choose(id);},resize(){if(map&&!destroyed){map.invalidateSize({pan:false});map.fitBounds([[bounds[1],bounds[0]],[bounds[3],bounds[2]]],{padding:[20,20]});}},destroy(){destroyed=true;if(map){map.remove();map=null;}markers.clear();},get available(){return !!map&&!destroyed;}};
 }
+function pointsForMapMarkers(mapData){let stop=0;return mapData.features.filter(feature=>feature.geometry.type==='Point').map((feature,index)=>({feature,index,label:feature.properties.role==='origin'?(feature.properties.returnPoint?'S/R':'S'):String(++stop).padStart(2,'0')}));}
 root.CityRouteMap={mountCityRouteMap};
 if(typeof module!=='undefined'&&module.exports)module.exports={mountCityRouteMap};
 })(typeof window!=='undefined'?window:globalThis);
