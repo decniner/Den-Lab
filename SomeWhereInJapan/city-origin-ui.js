@@ -14,7 +14,7 @@ const directory=document.querySelector('.daytrip-directory');
 const method=document.querySelector('.daytrip-method');
 const allForms=[standard,compare,directory,method];
 let activeMappedRoute=null;
-const cityRouteRecords=fetch(new URL('data/city-routes.json',document.baseURI)).then(response=>response.ok?response.json():null).catch(()=>null);
+const cityRouteRecords=fetch(new URL('data/city-routes.json?v=20261023-1',document.baseURI)).then(response=>response.ok?response.json():null).catch(()=>null);
 const tokyoTools=document.createElement('details');
 tokyoTools.className='tokyo-route-tools';
 const tokyoSummary=document.createElement('summary');
@@ -45,14 +45,15 @@ async function attachMappedRoute(origin){
   if(!route)return;
   sequencePreview=true;previewSource=plan.source;
  }
+ if(route?.transportMode==='selectable')route=window.CityRouteModel?.applyCityRouteMode(route,routeMode)||route;
  if(!Array.isArray(route.stops)||route.stops.length<2)return;
  const legacyPlan=panel.querySelector('.city-origin-plan'),legacyMore=panel.querySelector('.city-origin-more');
  if(legacyPlan)legacyPlan.hidden=true;if(legacyMore)legacyMore.hidden=true;
  let mapData=null;
- if(!sequencePreview){try{const response=await fetch(new URL(`maps/cities/${encodeURIComponent(cityId)}.geojson`,document.baseURI));if(response.ok)mapData=await response.json();}catch(error){mapData=null;}}
+ if(!sequencePreview){try{const response=await fetch(new URL(`maps/cities/${encodeURIComponent(cityId)}.geojson?v=20261023-1`,document.baseURI));if(response.ok)mapData=await response.json();}catch(error){mapData=null;}}
  if(select.value!==origin.id)return;
  activeMappedRoute?.destroy();
- activeMappedRoute=window.CityRouteUI.mountCityRouteView(panel,route,mapData,{origin,photos,sequencePreview,previewSource,airport:core.AIRPORT_ORIGINS.some(item=>item.id===origin.id),fallbackUrl:new URL(`maps/cities/${encodeURIComponent(cityId)}.svg`,document.baseURI).href});
+ activeMappedRoute=window.CityRouteUI.mountCityRouteView(panel,route,mapData,{origin,photos,sequencePreview,previewSource,airport:core.AIRPORT_ORIGINS.some(item=>item.id===origin.id),fallbackUrl:new URL(`maps/cities/${encodeURIComponent(cityId)}.svg?v=20261023-1`,document.baseURI).href});
 }
 function stopCard(stop,dayStops,origin,index){
  const photo=photos[stop.name]||stop.photo||(stop.image?{url:`https://images.unsplash.com/${stop.image}?auto=format&fit=crop&w=1200&q=85`,source:'https://unsplash.com',credit:'Unsplash',license:'Unsplash License',alt:stop.alt||stop.name}:null);

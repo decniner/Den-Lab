@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "cityId": "naha",
+    "sourceUrl": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "extractedOn": "2026-10-23",
+    "bounds": [
+      127.6736421,
+      26.2082093,
+      127.7221031,
+      26.2204337
+    ],
+    "geometryStatus": "source-place-points-only",
+    "note": "Place points cite individual OpenStreetMap objects. Interactive street detail loads from the OpenFreeMap Liberty basemap; dashed connections show stop order only, not navigation routes."
+  },
+  "features": []
+}

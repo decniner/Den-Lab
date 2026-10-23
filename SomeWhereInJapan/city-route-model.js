@@ -158,6 +158,12 @@ function buildCityPlanPreview(origin, plan, mode = 'transit') {
   };
 }
 
-const api = {validateCityRoute,validateCityRouteRegistry,summarizeRoute,readCityRouteState,buildLegDirectionsUrl,buildCityPlanPreview,verifiedCityCount};
+function applyCityRouteMode(route, mode = 'transit') {
+  if (!route || route.transportMode !== 'selectable') return route;
+  const selectedMode = mode === 'car' || mode === 'driving' ? 'driving' : 'transit';
+  return {...route, legs:(route.legs || []).map(leg => ({...leg, mode:selectedMode}))};
+}
+
+const api = {validateCityRoute,validateCityRouteRegistry,summarizeRoute,readCityRouteState,buildLegDirectionsUrl,buildCityPlanPreview,applyCityRouteMode,verifiedCityCount};
 if (typeof module !== 'undefined' && module.exports) module.exports = api;
 if (typeof window !== 'undefined') window.CityRouteModel = api;
