@@ -180,14 +180,14 @@
     },
     {
       "place": "Nikko in the cedars",
-      "currentImageUrl": "https://images.unsplash.com/photo-1608221621423-8112b3fb7435?auto=format&fit=crop&w=950&q=82",
-      "sourcePage": "",
-      "photographer": "",
-      "altText": "Sunlight filtering through a deep forest",
-      "license": "",
-      "verdict": "UNVERIFIABLE",
-      "evidence": "No source-backed destination photo in catalogue",
-      "action": "Keep the existing image and identify it as illustrative; location not verified"
+      "currentImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinkyo_bridge.jpg?width=1100",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Shinkyo_bridge.jpg",
+      "photographer": "Mattias Hill",
+      "altText": "Shinkyo Bridge over the Daiya River in Nikko",
+      "license": "CC BY-SA 3.0",
+      "verdict": "CORRECT",
+      "evidence": "Wikimedia Commons file record identifies Shinkyo Bridge, photographer and CC BY-SA 3.0",
+      "action": "Use with attribution and license link"
     },
     {
       "place": "Kamakura, temple to tide",

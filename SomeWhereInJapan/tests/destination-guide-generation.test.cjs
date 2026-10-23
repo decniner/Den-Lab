@@ -43,11 +43,11 @@ test('existingRouteGuidesKeepTheirURLs', () => {
 
 test('incompleteGuidesAreNotPresentedAsComplete', () => {
   const report = buildDestinationPages(site);
-  assert.equal(report.completeCount, 0);
-  assert.equal(report.provisionalCount, 310);
+  assert.equal(report.completeCount, 1);
+  assert.equal(report.provisionalCount, 309);
   for (const record of report.records) {
     const html = fs.readFileSync(path.join(site, record.pagePath.replaceAll('/', path.sep)), 'utf8');
-    assert.match(html, /Guide research is incomplete/i);
+    if(record.id==='nikko-in-the-cedars')assert.match(html,/data-authored-guide="true"/);else assert.match(html, /Guide research is incomplete/i);
   }
 });
 

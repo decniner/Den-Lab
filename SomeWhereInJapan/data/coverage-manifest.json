@@ -5,8 +5,8 @@
   "canonicalCandidateCount": 310,
   "identityReviewPendingCount": 303,
   "confirmedAliasCount": 0,
-  "completeCount": 0,
-  "provisionalCount": 310,
+  "completeCount": 1,
+  "provisionalCount": 309,
   "records": [
     {
       "id": "furano-in-bloom",
@@ -327,14 +327,12 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/nikko-in-the-cedars/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "missing",
-      "mapStatus": "no-coordinates"
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "sources-recorded",
+      "imageStatus": "verified-source",
+      "mapStatus": "coordinates-verified"
     },
     {
       "id": "kamakura-temple-to-tide",

@@ -4,29 +4,24 @@ function mountCityRouteMap(container,mapData,onSelectStop){
  if(mapData?.metadata?.geometryStatus==='schematic-stop-order'){
   const panel=container&&container.querySelector('[data-map-canvas]'),fallback=container&&container.querySelector('[data-map-fallback]');
   if(!root.maplibregl?.Map){if(panel)panel.hidden=true;if(fallback)fallback.hidden=false;return {selectStop(){},resize(){},destroy(){},get available(){return false;}};}
-  let map=null,loaded=false,destroyed=false,markers=new Map(),markerRecords=[],selected=null;
+  let map=null,loaded=false,destroyed=false,markers=new Map(),markerRecords=[],selected=null,fitOnNextResize=false,west=0,south=0,east=0,north=0;
   function choose(id){selected=id;markers.forEach((marker,key)=>marker.getElement()?.classList.toggle('is-selected',key===id));if(typeof onSelectStop==='function')onSelectStop(id);}
+  const fitRouteBounds=()=>map?.fitBounds([[west,south],[east,north]],{padding:{top:84,right:54,bottom:48,left:54},maxZoom:15,duration:0});
+  function fanMobileMarkerCollisions(){
+   if(!map||destroyed||panel.getBoundingClientRect().width===0||!root.matchMedia?.('(max-width: 760px)').matches)return;
+   const points=markerRecords.map(record=>{record.marker.setOffset([0,0]);const point=map.project(record.marker.getLngLat());return {...record,x:point.x,y:point.y};});
+   const groups=[];
+   points.forEach(point=>{let group=groups.find(items=>items.some(item=>Math.hypot(item.x-point.x,item.y-point.y)<42));if(!group){group=[];groups.push(group);}group.push(point);});
+   groups.filter(group=>group.length>1).forEach(group=>{const center=group.reduce((sum,point)=>({x:sum.x+point.x/group.length,y:sum.y+point.y/group.length}),{x:0,y:0});const spacing=38;group.forEach((point,index)=>point.marker.setOffset([center.x-point.x,center.y+(index-(group.length-1)/2)*spacing-point.y]));});
+  }
   try{
    if(!panel)throw new Error('Map container unavailable');
    panel.hidden=false;
-   const [west,south,east,north]=mapData.metadata.bounds;
-   let fitOnNextResize=panel.getBoundingClientRect().width===0;
-   const fitRouteBounds=()=>map?.fitBounds([[west,south],[east,north]],{padding:{top:84,right:54,bottom:48,left:54},maxZoom:15,duration:0});
-   function fanMobileMarkerCollisions(){
-    if(!map||destroyed||panel.getBoundingClientRect().width===0||!root.matchMedia?.('(max-width: 760px)').matches)return;
-    const points=markerRecords.map(record=>{record.marker.setOffset([0,0]);const point=map.project(record.marker.getLngLat());return {...record,x:point.x,y:point.y};});
-    const groups=[];
-    points.forEach(point=>{
-     let group=groups.find(items=>items.some(item=>Math.hypot(item.x-point.x,item.y-point.y)<42));
-     if(!group){group=[];groups.push(group);}group.push(point);
-    });
-    groups.filter(group=>group.length>1).forEach(group=>{
-     const center=group.reduce((sum,point)=>({x:sum.x+point.x/group.length,y:sum.y+point.y/group.length}),{x:0,y:0});
-     const spacing=38;
-     group.forEach((point,index)=>point.marker.setOffset([center.x-point.x,center.y+(index-(group.length-1)/2)*spacing-point.y]));
-    });
-   }
-   map=new root.maplibregl.Map({container:panel,style:'https://tiles.openfreemap.org/styles/liberty',center:[(west+east)/2,(south+north)/2],zoom:13,attributionControl:{compact:root.matchMedia?.('(max-width: 760px)').matches||false},cooperativeGestures:true,dragRotate:false,pitchWithRotate:false});
+   [west,south,east,north]=mapData.metadata.bounds;
+   fitOnNextResize=panel.getBoundingClientRect().width===0;
+   const touchCapable=typeof root.PointerEvent==='function'?root.matchMedia?.('(any-pointer: coarse)').matches||root.navigator?.maxTouchPoints>0:root.matchMedia?.('(any-hover: none)').matches||root.navigator?.maxTouchPoints>0;
+   const locale={'CooperativeGesturesHandler.WindowsHelpText':'Use Ctrl + scroll to zoom the map','CooperativeGesturesHandler.MacHelpText':'Use Ctrl + scroll to zoom the map','CooperativeGesturesHandler.MobileHelpText':touchCapable?'Use two fingers to zoom the map':'Use two fingers to move the map'};
+   map=new root.maplibregl.Map({container:panel,style:'https://tiles.openfreemap.org/styles/liberty',center:[(west+east)/2,(south+north)/2],zoom:13,attributionControl:{compact:root.matchMedia?.('(max-width: 760px)').matches||false},cooperativeGestures:true,locale,dragRotate:false,pitchWithRotate:false});
    map.addControl(new root.maplibregl.ScaleControl({unit:'metric'}),'bottom-left');
    if(fallback)fallback.hidden=true;
    map.addControl(new root.maplibregl.NavigationControl({showCompass:false}),'top-right');

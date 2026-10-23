@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "routes": [
+    {
+      "id": "nikko-world-heritage-loop",
+      "placeId": "nikko-in-the-cedars",
+      "title": "Nikko: a World Heritage shrine-and-temple walk",
+      "introduction": "Start at Tobu-Nikko Station, take the World Heritage bus to Shinkyo, then follow the historic precinct through Rinnoji, Toshogu, Futarasan Shrine and Taiyuin. Return to the station by bus from the Taiyuin/Futarasan stop. The mapped connectors show visit order only, not roads or walking paths.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "tobu-nikko-station",
+        "name": "Tobu-Nikko Station",
+        "address": "Tobu-Nikko Station, Matsubara-cho, Nikko, Tochigi, Japan",
+        "returnPoint": true,
+        "coordinates": {
+          "latitude": 36.7475588,
+          "longitude": 139.6201801,
+          "precision": "OpenStreetMap station point",
+          "sourceIds": [
+            "osm-station"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "nikko-shinkyo",
+          "order": 1,
+          "name": "Shinkyo Bridge",
+          "area": "Kamihatsuishi, Nikko",
+          "address": "Shinkyo Bridge, Nikko, Tochigi, Japan",
+          "story": "Begin at the vermilion bridge over the Daiya River, the sacred threshold to Nikko's shrine-and-temple landscape. The bridge belongs to Futarasan-jinja and is part of the World Heritage site.",
+          "coordinates": {
+            "latitude": 36.7533178,
+            "longitude": 139.6040375,
+            "precision": "OpenStreetMap bridge way center",
+            "sourceIds": [
+              "osm-shinkyo"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photoStatus": "not-included"
+        },
+        {
+          "id": "nikko-rinnoji",
+          "order": 2,
+          "name": "Nikkosan Rinnoji Temple",
+          "area": "Sannai, Nikko",
+          "address": "Nikkosan Rinnoji Temple Sanbutsudo, Sannai, Nikko, Tochigi, Japan",
+          "story": "At Sanbutsudo, Rinnoji's main hall, three large Buddha figures represent Nikko's sacred mountains. The temple precinct was founded by the monk Shodo.",
+          "coordinates": {
+            "latitude": 36.7551406,
+            "longitude": 139.6004574,
+            "precision": "OpenStreetMap Sanbutsudo way center",
+            "sourceIds": [
+              "osm-rinnoji"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photoStatus": "not-included"
+        },
+        {
+          "id": "nikko-toshogu",
+          "order": 3,
+          "name": "Nikko Toshogu Shrine",
+          "area": "Sannai, Nikko",
+          "address": "Nikko Toshogu Shrine, 2301 Sannai, Nikko, Tochigi, Japan",
+          "story": "Toshogu is the richly carved mausoleum shrine of Tokugawa Ieyasu. Give the precinct time: the famous Three Wise Monkeys and Yomeimon Gate are among many details along the visitor route.",
+          "coordinates": {
+            "latitude": 36.7560462,
+            "longitude": 139.5996149,
+            "precision": "OpenStreetMap memorial map point",
+            "sourceIds": [
+              "osm-toshogu"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photoStatus": "not-included"
+        },
+        {
+          "id": "nikko-futarasan",
+          "order": 4,
+          "name": "Nikko Futarasan-jinja Shrine",
+          "area": "Sannai, Nikko",
+          "address": "Nikko Futarasan-jinja Shrine, Sannai, Nikko, Tochigi, Japan",
+          "story": "Founded in 782, the shrine is dedicated to the deities of Nikko's three sacred mountains. Its main shrine grounds sit beside Toshogu and the forested temple precinct.",
+          "coordinates": {
+            "latitude": 36.7584003,
+            "longitude": 139.5966644,
+            "precision": "OpenStreetMap shrine way center",
+            "sourceIds": [
+              "osm-futarasan"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photoStatus": "not-included"
+        },
+        {
+          "id": "nikko-taiyuin",
+          "order": 5,
+          "name": "Taiyuin Mausoleum",
+          "area": "Sannai, Nikko",
+          "address": "Taiyuin Mausoleum, Sannai, Nikko, Tochigi, Japan",
+          "story": "Taiyuin is the mausoleum of Tokugawa Iemitsu. Its richly decorated gates and prayer hall honor his grandfather Ieyasu with a deliberately more restrained scale than Toshogu.",
+          "coordinates": {
+            "latitude": 36.758385,
+            "longitude": 139.5951743,
+            "precision": "OpenStreetMap mausoleum way center",
+            "sourceIds": [
+              "osm-taiyuin"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photoStatus": "not-included"
+        }
+      ],
+      "legs": [
+        {
+          "id": "nikko-leg-01",
+          "fromId": "tobu-nikko-station",
+          "toId": "nikko-shinkyo",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.6201801,
+                36.7475588
+              ],
+              [
+                139.6040375,
+                36.7533178
+              ]
+            ],
+            "sourceIds": [
+              "tobu-access"
+            ]
+          }
+        },
+        {
+          "id": "nikko-leg-02",
+          "fromId": "nikko-shinkyo",
+          "toId": "nikko-rinnoji",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.6040375,
+                36.7533178
+              ],
+              [
+                139.6004574,
+                36.7551406
+              ]
+            ],
+            "sourceIds": [
+              "nikko-official-world-heritage"
+            ]
+          }
+        },
+        {
+          "id": "nikko-leg-03",
+          "fromId": "nikko-rinnoji",
+          "toId": "nikko-toshogu",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.6004574,
+                36.7551406
+              ],
+              [
+                139.5996149,
+                36.7560462
+              ]
+            ],
+            "sourceIds": [
+              "nikko-official-world-heritage"
+            ]
+          }
+        },
+        {
+          "id": "nikko-leg-04",
+          "fromId": "nikko-toshogu",
+          "toId": "nikko-futarasan",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.5996149,
+                36.7560462
+              ],
+              [
+                139.5966644,
+                36.7584003
+              ]
+            ],
+            "sourceIds": [
+              "nikko-official-world-heritage"
+            ]
+          }
+        },
+        {
+          "id": "nikko-leg-05",
+          "fromId": "nikko-futarasan",
+          "toId": "nikko-taiyuin",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.5966644,
+                36.7584003
+              ],
+              [
+                139.5951743,
+                36.758385
+              ]
+            ],
+            "sourceIds": [
+              "nikko-official-world-heritage"
+            ]
+          }
+        },
+        {
+          "id": "nikko-leg-06",
+          "fromId": "nikko-taiyuin",
+          "toId": "tobu-nikko-station",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.5951743,
+                36.758385
+              ],
+              [
+                139.6201801,
+                36.7475588
+              ]
+            ],
+            "sourceIds": [
+              "tobu-access"
+            ]
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "nikko-official-world-heritage",
+          "label": "Nikko Official Guide: Central Nikko's highlights for the time pressed",
+          "url": "https://www.visitnikko.jp/en/itineraries/central-nikkos-highlights-for-the-time-pressed/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "walking sequence and published transfer details around the World Heritage precinct"
+          ]
+        },
+        {
+          "id": "nikko-access",
+          "label": "Nikko Official Guide: Getting Here & Around",
+          "url": "https://www.visitnikko.jp/en/plan-your-trip/getting-to-and-around-nikko/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Tokyo access by Tobu and JR via Utsunomiya; World Heritage Sightseeing Bus"
+          ]
+        },
+        {
+          "id": "tobu-access",
+          "label": "Tobu Railway: World Heritage Sightseeing Bus",
+          "url": "https://www.tobu.co.jp/en/access/nikko/bus_nikko.html",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station loop and named Shinkyo, Rinnoji and Taiyuin/Futarasan bus stops"
+          ]
+        },
+        {
+          "id": "nikko-shinkyo",
+          "label": "Nikko Official Guide: Shinkyo Bridge",
+          "url": "https://www.visitnikko.jp/en/spots/shinkyo-bridge/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "bridge history, official access, ticket information"
+          ]
+        },
+        {
+          "id": "nikko-rinnoji",
+          "label": "Nikko Official Guide: Nikkosan Rinnoji Temple",
+          "url": "https://www.visitnikko.jp/en/spots/nikkosan-rinnoji-temple/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Sanbutsudo description, admissions and combined Rinnoji/Taiyuin ticket"
+          ]
+        },
+        {
+          "id": "nikko-toshogu",
+          "label": "Visit Tochigi: Nikko Toshogu Shrine",
+          "url": "https://www.visit-tochigi.com/plan-your-trip/things-to-do/714/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "description, seasonal hours, last entry, admission, address and contact"
+          ]
+        },
+        {
+          "id": "nikko-futarasan",
+          "label": "Nikko Official Guide: Futarasan-jinja Shrine",
+          "url": "https://www.japan.travel/en/spot/1489/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "shrine history, free worship area and access"
+          ]
+        },
+        {
+          "id": "nikko-taiyuin",
+          "label": "Nikko Official Guide: Taiyuin Temple",
+          "url": "https://www.visitnikko.jp/en/spots/taiyuin-temple/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "mausoleum description, admission and bus access"
+          ]
+        },
+        {
+          "id": "osm-station",
+          "label": "OpenStreetMap: Tobu-Nikko Station (node 11011439314)",
+          "url": "https://www.openstreetmap.org/node/11011439314",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station map point"
+          ]
+        },
+        {
+          "id": "osm-shinkyo",
+          "label": "OpenStreetMap: Shinkyo Bridge (way 431806706)",
+          "url": "https://www.openstreetmap.org/way/431806706",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "bridge map point"
+          ]
+        },
+        {
+          "id": "osm-rinnoji",
+          "label": "OpenStreetMap: Rinnoji Sanbutsudo (way 388017115)",
+          "url": "https://www.openstreetmap.org/way/388017115",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Sanbutsudo map point"
+          ]
+        },
+        {
+          "id": "osm-toshogu",
+          "label": "OpenStreetMap: Toshogu memorial point (node 13710363526)",
+          "url": "https://www.openstreetmap.org/node/13710363526",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Toshogu map point"
+          ]
+        },
+        {
+          "id": "osm-futarasan",
+          "label": "OpenStreetMap: Nikko Futarasan Shrine (way 388017140)",
+          "url": "https://www.openstreetmap.org/way/388017140",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "shrine map point"
+          ]
+        },
+        {
+          "id": "osm-taiyuin",
+          "label": "OpenStreetMap: Taiyuin Mausoleum (way 195072229)",
+          "url": "https://www.openstreetmap.org/way/195072229",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "mausoleum map point"
+          ]
+        },
+        {
+          "id": "nikko-photo",
+          "label": "Wikimedia Commons: Shinkyo bridge.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Shinkyo_bridge.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "verified Shinkyo Bridge photograph and CC BY-SA 3.0 attribution"
+          ]
+        }
+      ]
+    }
+  ],
+  "maps": {
+    "nikko-in-the-cedars": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          139.5931743,
+          36.7455588,
+          139.6221801,
+          36.7604003
+        ],
+        "license": "ODbL-1.0",
+        "attribution": "OpenStreetMap contributors",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "id": "tobu-nikko-station",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.6201801,
+              36.7475588
+            ]
+          },
+          "properties": {
+            "id": "tobu-nikko-station",
+            "routeStopId": "tobu-nikko-station",
+            "name": "Tobu-Nikko Station",
+            "role": "origin",
+            "returnPoint": true,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-shinkyo",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.6040375,
+              36.7533178
+            ]
+          },
+          "properties": {
+            "id": "nikko-shinkyo",
+            "routeStopId": "nikko-shinkyo",
+            "name": "Shinkyo Bridge",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-rinnoji",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.6004574,
+              36.7551406
+            ]
+          },
+          "properties": {
+            "id": "nikko-rinnoji",
+            "routeStopId": "nikko-rinnoji",
+            "name": "Nikkosan Rinnoji Temple",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-toshogu",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.5996149,
+              36.7560462
+            ]
+          },
+          "properties": {
+            "id": "nikko-toshogu",
+            "routeStopId": "nikko-toshogu",
+            "name": "Nikko Toshogu Shrine",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-futarasan",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.5966644,
+              36.7584003
+            ]
+          },
+          "properties": {
+            "id": "nikko-futarasan",
+            "routeStopId": "nikko-futarasan",
+            "name": "Nikko Futarasan-jinja Shrine",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-taiyuin",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.5951743,
+              36.758385
+            ]
+          },
+          "properties": {
+            "id": "nikko-taiyuin",
+            "routeStopId": "nikko-taiyuin",
+            "name": "Taiyuin Mausoleum",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 5
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "tobu-nikko-station",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.6201801,
+              36.7475588
+            ]
+          },
+          "properties": {
+            "id": "tobu-nikko-station",
+            "routeStopId": "tobu-nikko-station",
+            "name": "Tobu-Nikko Station",
+            "role": "origin",
+            "returnPoint": true,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-leg-01",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.6201801,
+                36.7475588
+              ],
+              [
+                139.6040375,
+                36.7533178
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nikko-leg-01",
+            "mode": "transit"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-leg-02",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.6040375,
+                36.7533178
+              ],
+              [
+                139.6004574,
+                36.7551406
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nikko-leg-02",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-leg-03",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.6004574,
+                36.7551406
+              ],
+              [
+                139.5996149,
+                36.7560462
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nikko-leg-03",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-leg-04",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.5996149,
+                36.7560462
+              ],
+              [
+                139.5966644,
+                36.7584003
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nikko-leg-04",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-leg-05",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.5966644,
+                36.7584003
+              ],
+              [
+                139.5951743,
+                36.758385
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nikko-leg-05",
+            "mode": "transit"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nikko-leg-06",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.5951743,
+                36.758385
+              ],
+              [
+                139.6201801,
+                36.7475588
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nikko-leg-06",
+            "mode": "walking"
+          }
+        }
+      ]
+    }
+  }
+}

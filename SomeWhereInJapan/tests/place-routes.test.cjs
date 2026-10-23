@@ -1,0 +1,36 @@
+const test=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const root=path.join(__dirname,'..');
+const places=JSON.parse(fs.readFileSync(path.join(root,'data/place-routes.json'),'utf8'));
+const route=places.routes.find(item=>item.placeId==='nikko-in-the-cedars');
+test('Nikko has an ordered, source-backed place route with a return point and directions for every leg',()=>{
+ assert.ok(route);
+ assert.equal(route.origin.id,'tobu-nikko-station');
+ assert.equal(route.origin.returnPoint,true);
+ assert.deepEqual(route.stops.map(stop=>stop.name),['Shinkyo Bridge','Nikkosan Rinnoji Temple','Nikko Toshogu Shrine','Nikko Futarasan-jinja Shrine','Taiyuin Mausoleum']);
+ assert.ok(route.stops.every(stop=>Number.isFinite(stop.coordinates.latitude)&&Number.isFinite(stop.coordinates.longitude)&&stop.coordinates.sourceIds.length));
+ assert.ok(route.stops.every(stop=>stop.photo||stop.photoStatus==='not-included'));
+ const details=JSON.parse(fs.readFileSync(path.join(root,'data/destination-guide-details.json'),'utf8')).records['nikko-in-the-cedars'];
+ const {evaluateGuideCompletion}=require('../tools/destination-guide-schema.cjs');
+ assert.deepEqual(evaluateGuideCompletion({id:'nikko-in-the-cedars',type:'attraction',...details}),{complete:true,missing:[]});
+ assert.equal(route.legs.length,route.stops.length+1);
+ assert.equal(route.legs[0].fromId,route.origin.id);
+ assert.equal(route.legs.at(-1).toId,route.origin.id);
+ assert.ok(route.legs.every(leg=>leg.geometry?.status==='schematic'&&leg.mode&&leg.duration?.status));
+ assert.ok(route.sources.length>=4);
+});
+test('Nikko guide registry, modal route hook and guide route hook are connected without upgrading unrelated places',()=>{
+ const ui=fs.readFileSync(path.join(root,'place-route-ui.js'),'utf8');
+ const app=fs.readFileSync(path.join(root,'app.js'),'utf8');
+ const guide=fs.readFileSync(path.join(root,'places/nikko-in-the-cedars/index.html'),'utf8');
+ const status=fs.readFileSync(path.join(root,'destination-guide-status.js'),'utf8');
+ assert.match(ui,/CityRouteUI\.mountCityRouteView/);
+ assert.match(app,/window\.PlaceRouteUI\?\.mountDialog/);
+ assert.match(guide,/data-place-route-guide/);
+ assert.match(ui,/mountGuide\(\)/);
+ assert.match(status,/"Nikko in the cedars":"complete"/);
+ assert.match(status,/"Kamakura, temple to tide":"provisional"/);
+ assert.match(status,/"Kawagoe, the little Edo":"provisional"/);
+});

@@ -64,8 +64,8 @@
 .place-detail-kicker{margin:0 0 12px;color:#9c634f;font:700 8px/1.4 var(--sans);letter-spacing:.17em}
 .place-dialog-points{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;list-style:none;padding:0;margin:0}
 .place-dialog-points li{min-width:0}
-.place-dialog-points a{display:block;color:#26332d;text-decoration:none;font:12px/1.45 var(--sans);padding:5px 0;border-bottom:1px solid rgba(24,35,33,.12)}
-.place-dialog-points a:before{content:'?';color:#ad7459;margin-right:8px}
+.place-dialog-points a{display:flex;align-items:flex-start;gap:8px;color:#26332d;text-decoration:none;font:12px/1.45 var(--sans);padding:8px 0;border-bottom:1px solid rgba(24,35,33,.12)}
+.place-dialog-points a:before{content:none}.place-dialog-points a svg{flex:0 0 17px;width:17px;height:17px;color:#ad7459;margin-top:1px}
 .place-dialog-points a:hover,.place-address-link:hover,.place-section-heading>a:hover{color:#9c4f3a}
 .place-address-label{margin:15px 0 5px;color:#898376;font:700 7px var(--sans);letter-spacing:.15em}
 .place-address-link{color:#35483d;font:12px/1.55 var(--sans);text-decoration:underline;text-decoration-color:rgba(53,72,61,.35);text-underline-offset:3px}
@@ -370,3 +370,8 @@ html{scroll-padding-top:86px}body{background:var(--paper);color:var(--ink)}.site
  .daytrip-form .button,.daytrip-origin-note{grid-column:1/-1;width:100%}
  .daytrip-results,.daytrip-feature-grid{grid-template-columns:minmax(0,1fr)}
 }
+
+.place-route-details>summary{display:flex;align-items:center;min-height:48px;padding:0 14px;border:1px solid #40574b;background:#263a32;color:#fff;font:700 13px/1.2 var(--sans);cursor:pointer}.place-route-details[open]>summary{margin-bottom:14px}.place-route-details[hidden]{display:none}
+@media(max-width:700px){.place-dialog-route-details .city-route-map-layout{grid-template-columns:minmax(0,1fr)}.place-dialog-route-details .city-route-map-frame{position:static}.place-dialog-route-details .city-route-map-canvas{height:min(70vw,420px);min-height:270px}}
+
+.city-route-photo-note{margin:7px 0;color:#6b675d;font:12px/1.45 var(--sans);font-style:italic}

@@ -828,6 +828,333 @@
       ],
       "status": "partially-verified",
       "nextAction": "Select an Izu subregion, research specific points/transfers and map coordinates, contacts, stays, costs, season and weather evidence, and photo provenance."
+    },
+    "nikko-in-the-cedars": {
+      "story": "Nikko's sacred approach begins at Shinkyo Bridge, where the Daiya River marks the threshold to the mountain precinct. Follow the cedar-lined landscape through Rinnoji, Toshogu, Futarasan-jinja and Taiyuin: Buddhist halls, a vividly carved shogun's shrine, a mountain deity's sanctuary and the mausoleum of Tokugawa Iemitsu.",
+      "visitPlan": "Take the World Heritage Sightseeing Bus from Tobu-Nikko Station to Shinkyo, then explore the five ordered stops on foot. Return from the Taiyuin/Futarasan-jinja bus stop. Total time and per-stop visit durations are omitted because no authoritative source for this exact sequence was found. Check operator hours and allow a flexible day.",
+      "access": "From Tokyo, Tobu limited express trains connect Asakusa with Tobu-Nikko in about two hours; JNTO lists about 1 hour 40 minutes via Tohoku Shinkansen to Utsunomiya and JR Nikko Line. From Tobu-Nikko Station, the World Heritage bus reaches Shinkyo in about five minutes. Current timetables and fares vary.",
+      "highlights": [
+        "Shinkyo Bridge",
+        "Rinnoji Sanbutsudo",
+        "Nikko Toshogu Shrine",
+        "Futarasan-jinja Shrine",
+        "Taiyuin Mausoleum"
+      ],
+      "sources": [
+        {
+          "id": "nikko-official",
+          "title": "Nikko Official Guide: Central Nikko highlights",
+          "url": "https://www.visitnikko.jp/en/itineraries/central-nikkos-highlights-for-the-time-pressed/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "nikko-access",
+          "title": "Nikko Official Guide: Access and local transport",
+          "url": "https://www.visitnikko.jp/en/plan-your-trip/getting-to-and-around-nikko/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "tobu-bus",
+          "title": "Tobu Railway: World Heritage Sightseeing Bus",
+          "url": "https://www.tobu.co.jp/en/access/nikko/bus_nikko.html",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "tobu-rail",
+          "title": "Tobu Railway: Nikko access",
+          "url": "https://www.tobu.co.jp/en/sightseeing/cp/nikkoexperience/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "jnto-rail",
+          "title": "JNTO: Nikko access",
+          "url": "https://faq.japan-travel.jnto.go.jp/national-parks/parks/nikko/how-to-get-there/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "shinkyo-info",
+          "title": "Nikko Official Guide: Shinkyo Bridge",
+          "url": "https://www.visitnikko.jp/en/spots/shinkyo-bridge/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "rinnoji-info",
+          "title": "Nikko Official Guide: Rinnoji",
+          "url": "https://www.visitnikko.jp/en/spots/nikkosan-rinnoji-temple/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "toshogu-info",
+          "title": "Visit Tochigi: Toshogu Shrine",
+          "url": "https://www.visit-tochigi.com/plan-your-trip/things-to-do/714/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "futarasan-info",
+          "title": "JNTO: Futarasan-jinja Shrine",
+          "url": "https://www.japan.travel/en/spot/1489/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "taiyuin-info",
+          "title": "Nikko Official Guide: Taiyuin",
+          "url": "https://www.visitnikko.jp/en/spots/taiyuin-temple/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "nikko-contact",
+          "title": "Nikko Official Guide: Tourist information",
+          "url": "https://www.visitnikko.jp/en/plan-your-trip/tourist-information/",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "nikko-photo",
+          "title": "Wikimedia Commons: Shinkyo Bridge by Mattias Hill",
+          "url": "https://commons.wikimedia.org/wiki/File:Shinkyo_bridge.jpg",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "osm-station",
+          "title": "OpenStreetMap: Tobu-Nikko Station",
+          "url": "https://www.openstreetmap.org/node/11011439314",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "osm-shinkyo",
+          "title": "OpenStreetMap: Shinkyo Bridge",
+          "url": "https://www.openstreetmap.org/way/431806706",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "osm-rinnoji",
+          "title": "OpenStreetMap: Rinnoji Sanbutsudo",
+          "url": "https://www.openstreetmap.org/way/388017115",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "osm-toshogu",
+          "title": "OpenStreetMap: Toshogu map point",
+          "url": "https://www.openstreetmap.org/node/13710363526",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "osm-futarasan",
+          "title": "OpenStreetMap: Futarasan-jinja",
+          "url": "https://www.openstreetmap.org/way/388017140",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "osm-taiyuin",
+          "title": "OpenStreetMap: Taiyuin Mausoleum",
+          "url": "https://www.openstreetmap.org/way/195072229",
+          "organization": "Official Nikko visitor information",
+          "checkedOn": "2026-10-23"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Shinkyo Bridge belongs to Futarasan-jinja Shrine and is a World Heritage component; its bridge-crossing ticket is listed at '300.",
+          "sourceIds": [
+            "shinkyo-info"
+          ]
+        },
+        {
+          "text": "Rinnoji lists '400 for Sanbutsudo and '550 for Taiyuin; a combined Rinnoji Pass is '900.",
+          "sourceIds": [
+            "rinnoji-info"
+          ]
+        },
+        {
+          "text": "Toshogu has seasonal hours of 9:00'17:00 April'October and 9:00'16:00 November'March, last entry 30 minutes before closing; adult admission is listed at '1,600.",
+          "sourceIds": [
+            "toshogu-info"
+          ]
+        },
+        {
+          "text": "The principal Futarasan shrine grounds are accessible for worship without charge; the garden is separately ticketed.",
+          "sourceIds": [
+            "futarasan-info"
+          ]
+        },
+        {
+          "text": "Tobu-Nikko Station to Shinkyo bus stop is about five minutes by the World Heritage Sightseeing Bus.",
+          "sourceIds": [
+            "shinkyo-info",
+            "tobu-bus"
+          ]
+        },
+        {
+          "text": "Nikko Tourist Information Center lists phone +81 288-54-2497.",
+          "sourceIds": [
+            "nikko-contact"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "unknown",
+          "sourceIds": [
+            "shinkyo-info",
+            "rinnoji-info",
+            "toshogu-info"
+          ],
+          "note": "Individual published ticket prices vary by precinct; no combined cost is calculated."
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "known",
+          "detail": "Tobu limited express from Asakusa is about two hours; JR via Utsunomiya is about 1 hour 40 minutes per JNTO.",
+          "sourceIds": [
+            "tobu-rail",
+            "jnto-rail"
+          ]
+        },
+        "bus": {
+          "status": "known",
+          "detail": "Use the World Heritage Sightseeing Bus from Tobu-Nikko Station to Shinkyo and return from Taiyuin/Futarasan-jinja; check current timetable.",
+          "sourceIds": [
+            "tobu-bus",
+            "nikko-access"
+          ]
+        },
+        "air": {
+          "status": "unknown",
+          "note": "There is no direct air arrival at this precinct; connect through Tokyo rail services. Airport-to-station time is not verified."
+        },
+        "car": {
+          "status": "unknown",
+          "note": "Road access exists, but route-specific drive time and parking have not been independently verified."
+        }
+      },
+      "points": [
+        {
+          "name": "Tobu-Nikko Station",
+          "address": "Tobu-Nikko Station, Nikko, Tochigi, Japan",
+          "coordinates": {
+            "latitude": 36.7475588,
+            "longitude": 139.6201801
+          },
+          "sourceIds": [
+            "osm-station"
+          ]
+        },
+        {
+          "name": "Shinkyo Bridge",
+          "address": "Shinkyo Bridge, Nikko, Tochigi, Japan",
+          "coordinates": {
+            "latitude": 36.7533178,
+            "longitude": 139.6040375
+          },
+          "sourceIds": [
+            "osm-shinkyo"
+          ]
+        },
+        {
+          "name": "Rinnoji Sanbutsudo",
+          "address": "Rinnoji Sanbutsudo, Nikko, Tochigi, Japan",
+          "coordinates": {
+            "latitude": 36.7551406,
+            "longitude": 139.6004574
+          },
+          "sourceIds": [
+            "osm-rinnoji"
+          ]
+        },
+        {
+          "name": "Nikko Toshogu Shrine",
+          "address": "Nikko Toshogu Shrine, Nikko, Tochigi, Japan",
+          "coordinates": {
+            "latitude": 36.7560462,
+            "longitude": 139.5996149
+          },
+          "sourceIds": [
+            "osm-toshogu"
+          ]
+        },
+        {
+          "name": "Futarasan-jinja Shrine",
+          "address": "Futarasan-jinja Shrine, Nikko, Tochigi, Japan",
+          "coordinates": {
+            "latitude": 36.7584003,
+            "longitude": 139.5966644
+          },
+          "sourceIds": [
+            "osm-futarasan"
+          ]
+        },
+        {
+          "name": "Taiyuin Mausoleum",
+          "address": "Taiyuin Mausoleum, Nikko, Tochigi, Japan",
+          "coordinates": {
+            "latitude": 36.758385,
+            "longitude": 139.5951743
+          },
+          "sourceIds": [
+            "osm-taiyuin"
+          ]
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Nikko Tourist Information Center",
+          "phone": "+81-288-54-2497",
+          "sourceIds": [
+            "nikko-contact"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Tobu-Nikko Station / Central Nikko",
+          "area": "Base near the stations for the World Heritage bus and early access to the shrine precinct.",
+          "sourceIds": [
+            "nikko-access"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinkyo_bridge.jpg'width=1400",
+        "alt": "Shinkyo Bridge over the Daiya River in Nikko",
+        "source": "https://commons.wikimedia.org/wiki/File:Shinkyo_bridge.jpg",
+        "credit": "Mattias Hill",
+        "license": "CC BY-SA 3.0",
+        "sourceIds": [
+          "nikko-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "verified",
+        "latitude": 36.7533178,
+        "longitude": 139.6040375,
+        "sourceIds": [
+          "osm-shinkyo"
+        ]
+      },
+      "weatherPlan": {
+        "alternative": "Weather-specific indoor alternatives are omitted because no source-backed alternative for this exact route was verified.",
+        "sourceIds": [
+          "nikko-official"
+        ]
+      }
     }
   }
 }

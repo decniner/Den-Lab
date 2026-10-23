@@ -257,7 +257,7 @@ function renderPlacePoints(place, spotlight) {
   const list=document.querySelector('#place-dialog-points');
   const localDetail=LOCAL_FIND_DETAILS[place.name];
   const points=spotlight?.points?.length ? spotlight.points : localDetail ? [localDetail.spot] : [place.name, `Nearby sights around ${place.name}`];
-  list.replaceChildren(...points.map(point=>{const li=document.createElement('li');li.append(externalAnchor(point,placeMapSearch(localDetail?.query || `${point}, ${place.place}`)));return li;}));
+  list.replaceChildren(...points.map(point=>{const li=document.createElement('li');const link=externalAnchor('',placeMapSearch(localDetail?.query || `${point}, ${place.place}`));const pin=document.createElementNS('http://www.w3.org/2000/svg','svg');pin.setAttribute('viewBox','0 0 20 20');pin.setAttribute('aria-hidden','true');pin.innerHTML='<path d="M10 18s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="8" r="2" fill="currentColor"/>';const label=document.createElement('span');label.textContent=point;link.append(pin,label);li.append(link);return li;}));
   const address=spotlight?.address || localDetail?.query || `${place.name}, ${place.place}`;
   document.querySelector('#place-dialog-address-label').textContent=spotlight?.address ? 'VISITOR ADDRESS' : 'EXACT MAP PIN';
   const addressLink=document.querySelector('#place-dialog-address');
@@ -380,6 +380,7 @@ function showPlace(place, index) {
   document.querySelector('#place-dialog-save').onclick=()=>toggleSavedPlace(place);
   updatePlaceDialogSave(place);
   placeDialog.showModal();
+  window.PlaceRouteUI?.mountDialog(place.name);
   loadPlaceGallery(place,requestId);
 }
 function renderPlaceLocalGuide(place, spotlight) {
@@ -414,6 +415,7 @@ function renderPlaceLocalGuide(place, spotlight) {
 }
 document.querySelector('#place-dialog-close').addEventListener('click',()=>placeDialog.close());
 placeDialog.addEventListener('close',()=>{
+  document.querySelector('#place-dialog-route-details')?._cleanup?.();
   placeDialogRequest+=1;
   document.querySelector('#place-dialog-gallery-status').textContent='';
   document.querySelector('#place-dialog-gallery').replaceChildren();
