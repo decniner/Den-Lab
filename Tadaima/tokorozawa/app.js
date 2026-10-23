@@ -123,6 +123,8 @@
     el.innerHTML =
       '<div class="card-head"><span class="type-chip">' + TYPE_LABEL[p.type][0] + " · " + TYPE_LABEL[p.type][1] + "</span>" +
       (top ? '<span class="top-chip">Top pick #' + p._rank + "</span>" : "") +
+      (p.isNew ? '<span class="new-chip">New this week</span>' : "") +
+      (p.priceDropMan ? '<span class="drop-chip">Price ↓ ¥' + fmt(p.priceDropMan) + "万</span>" : "") +
       '<button class="save-btn" aria-pressed="' + !!saved[p.id] + '" title="Save this property">' + (saved[p.id] ? "♥" : "♡") + "</button></div>" +
       '<h3 class="card-district">' + p.district + ' <span class="jp">' + p.districtJa + "</span></h3>" +
       '<p class="card-title">' + p.title + "</p>" +
