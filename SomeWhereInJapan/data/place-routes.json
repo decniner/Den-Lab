@@ -412,6 +412,269 @@
           ]
         }
       ]
+    },
+    {
+      "id": "furano-highlights-drive",
+      "placeId": "furano-in-bloom",
+      "cityId": "furano",
+      "title": "Furano highlights by car",
+      "introduction": "Start at Furano Station, visit the Furano Cheese Factory and Ningle Terrace, then continue to Farm Tomita in Nakafurano. The dashed map connectors show visit order only, not the actual driving roads; each leg opens live Google Maps directions.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "furano-station",
+        "name": "Furano Station",
+        "address": "Furano Station, Hinode-machi, Furano, Hokkaido, Japan",
+        "returnPoint": true,
+        "coordinates": {
+          "latitude": 43.3469,
+          "longitude": 142.39166,
+          "precision": "OpenStreetMap station node 264430570",
+          "sourceIds": [
+            "osm-furano-station"
+          ]
+        }
+      },
+      "stops": [
+        {
+          "id": "furano-cheese-factory",
+          "order": 1,
+          "name": "Furano Cheese Factory",
+          "area": "Nakagoku, Furano",
+          "address": "Furano Cheese Factory, Nakagoku, Furano, Hokkaido, Japan",
+          "story": "See Furano cheese production, then stop for local cheese, ice milk, or pizza. The tourism association lists it about nine minutes by car from Furano Station.",
+          "coordinates": {
+            "latitude": 43.3206481,
+            "longitude": 142.3770958,
+            "precision": "Published map coordinates; verified against Furano tourism listing",
+            "sourceIds": [
+              "furano-cheese-factory",
+              "osm-cheese-factory"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photoStatus": "not-included"
+        },
+        {
+          "id": "furano-ningles-terrace",
+          "order": 2,
+          "name": "Ningle Terrace",
+          "area": "Naka-Goryou, Furano",
+          "address": "Ningle Terrace, New Furano Prince Hotel, Naka-Goryou, Furano, Hokkaido, Japan",
+          "story": "Wander the timber craft cottages on a forested walkway below the New Furano Prince Hotel.",
+          "coordinates": {
+            "latitude": 43.32343,
+            "longitude": 142.35634,
+            "precision": "OpenStreetMap node 4607790389",
+            "sourceIds": [
+              "furano-ningles-terrace",
+              "osm-ningles-terrace"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photoStatus": "not-included"
+        },
+        {
+          "id": "furano-farm-tomita",
+          "order": 3,
+          "name": "Farm Tomita",
+          "area": "Hokusei, Nakafurano",
+          "address": "Farm Tomita, Hokusei, Nakafurano, Hokkaido, Japan",
+          "story": "Explore the flower gardens at Farm Tomita. The official guide lists Lavender Farm Station as a nearby seasonal rail stop; this itinerary uses a car between the spread-out attractions.",
+          "coordinates": {
+            "latitude": 43.41935,
+            "longitude": 142.4279,
+            "precision": "OpenStreetMap garden way center 68744760",
+            "sourceIds": [
+              "farm-tomita",
+              "osm-farm-tomita"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photoStatus": "not-included"
+        }
+      ],
+      "legs": [
+        {
+          "id": "furano-leg-01",
+          "fromId": "furano-station",
+          "toId": "furano-cheese-factory",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                142.39166,
+                43.3469
+              ],
+              [
+                142.3770958,
+                43.3206481
+              ]
+            ],
+            "sourceIds": [
+              "furano-official-access"
+            ]
+          }
+        },
+        {
+          "id": "furano-leg-02",
+          "fromId": "furano-cheese-factory",
+          "toId": "furano-ningles-terrace",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                142.3770958,
+                43.3206481
+              ],
+              [
+                142.35634,
+                43.32343
+              ]
+            ],
+            "sourceIds": [
+              "furano-official-access"
+            ]
+          }
+        },
+        {
+          "id": "furano-leg-03",
+          "fromId": "furano-ningles-terrace",
+          "toId": "furano-farm-tomita",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                142.35634,
+                43.32343
+              ],
+              [
+                142.4279,
+                43.41935
+              ]
+            ],
+            "sourceIds": [
+              "furano-official-access"
+            ]
+          }
+        },
+        {
+          "id": "furano-leg-04",
+          "fromId": "furano-farm-tomita",
+          "toId": "furano-station",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                142.4279,
+                43.41935
+              ],
+              [
+                142.39166,
+                43.3469
+              ]
+            ],
+            "sourceIds": [
+              "furano-official-access"
+            ]
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "furano-official-access",
+          "label": "Furano Tourism Association: Access",
+          "url": "https://www.furanotourism.com/en/static/access.php",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station-to-sight distances, travel modes, and regional connections"
+          ]
+        },
+        {
+          "id": "furano-cheese-factory",
+          "label": "Furano Tourism Association: Furano Cheese Factory",
+          "url": "https://www.furanotourism.com/en/spot/spot_D.php?id=69",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "attraction, address, and nearby station access"
+          ]
+        },
+        {
+          "id": "furano-ningles-terrace",
+          "label": "Furano Tourism Association: Ningle Terrace",
+          "url": "https://www.furanotourism.com/en/spot/spot_D.php?id=2&kid1=1&kid2=6&kid3=16",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "attraction, location below the New Furano Prince Hotel, and station access"
+          ]
+        },
+        {
+          "id": "farm-tomita",
+          "label": "Furano Tourism Association: Farm Tomita",
+          "url": "https://www.furanotourism.com/en/spot/spot_D.php?id=350",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "flower gardens, Nakafurano location, nearby Lavender Field Station"
+          ]
+        },
+        {
+          "id": "osm-furano-station",
+          "label": "OpenStreetMap: Furano Station (node 264430570)",
+          "url": "https://www.openstreetmap.org/node/264430570",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station map point"
+          ]
+        },
+        {
+          "id": "osm-cheese-factory",
+          "label": "Furano Cheese Factory published map coordinates",
+          "url": "https://www.furanotourism.com/en/spot/spot_D.php?id=69",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "map coordinates cross-checked against the tourism association attraction listing"
+          ]
+        },
+        {
+          "id": "osm-ningles-terrace",
+          "label": "OpenStreetMap: Ningle Terrace (node 4607790389)",
+          "url": "https://www.openstreetmap.org/node/4607790389",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "attraction map point"
+          ]
+        },
+        {
+          "id": "osm-farm-tomita",
+          "label": "OpenStreetMap: Farm Tomita (way 68744760)",
+          "url": "https://www.openstreetmap.org/way/68744760",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "garden map point"
+          ]
+        }
+      ]
     }
   ],
   "maps": {
@@ -687,6 +950,202 @@
           "properties": {
             "routeLegId": "nikko-leg-06",
             "mode": "walking"
+          }
+        }
+      ]
+    },
+    "furano-in-bloom": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          142.34634,
+          43.3106481,
+          142.4379,
+          43.42935
+        ],
+        "license": "ODbL-1.0",
+        "attribution": "OpenStreetMap contributors",
+        "sourceUrl": "https://www.openstreetmap.org/copyright"
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "id": "furano-station",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.39166,
+              43.3469
+            ]
+          },
+          "properties": {
+            "id": "furano-station",
+            "routeStopId": "furano-station",
+            "name": "Furano Station",
+            "role": "origin",
+            "returnPoint": true,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "furano-cheese-factory",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.3770958,
+              43.3206481
+            ]
+          },
+          "properties": {
+            "id": "furano-cheese-factory",
+            "routeStopId": "furano-cheese-factory",
+            "name": "Furano Cheese Factory",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "furano-ningles-terrace",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.35634,
+              43.32343
+            ]
+          },
+          "properties": {
+            "id": "furano-ningles-terrace",
+            "routeStopId": "furano-ningles-terrace",
+            "name": "Ningle Terrace",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "furano-farm-tomita",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.4279,
+              43.41935
+            ]
+          },
+          "properties": {
+            "id": "furano-farm-tomita",
+            "routeStopId": "furano-farm-tomita",
+            "name": "Farm Tomita",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "furano-station",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.39166,
+              43.3469
+            ]
+          },
+          "properties": {
+            "id": "furano-station",
+            "routeStopId": "furano-station",
+            "name": "Furano Station",
+            "role": "origin",
+            "returnPoint": true,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "furano-leg-01",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.39166,
+                43.3469
+              ],
+              [
+                142.3770958,
+                43.3206481
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "furano-leg-01",
+            "mode": "driving"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "furano-leg-02",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.3770958,
+                43.3206481
+              ],
+              [
+                142.35634,
+                43.32343
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "furano-leg-02",
+            "mode": "driving"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "furano-leg-03",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.35634,
+                43.32343
+              ],
+              [
+                142.4279,
+                43.41935
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "furano-leg-03",
+            "mode": "driving"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "furano-leg-04",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.4279,
+                43.41935
+              ],
+              [
+                142.39166,
+                43.3469
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "furano-leg-04",
+            "mode": "driving"
           }
         }
       ]
