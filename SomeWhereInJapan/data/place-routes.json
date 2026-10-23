@@ -445,10 +445,10 @@
           "coordinates": {
             "latitude": 43.3206481,
             "longitude": 142.3770958,
-            "precision": "Published map coordinates; verified against Furano tourism listing",
+            "precision": "Published GPS point; attraction identity cross-checked with Furano Tourism Association",
             "sourceIds": [
               "furano-cheese-factory",
-              "osm-cheese-factory"
+              "furano-cheese-factory-gps"
             ]
           },
           "visitDuration": {
@@ -648,15 +648,6 @@
           ]
         },
         {
-          "id": "osm-cheese-factory",
-          "label": "Furano Cheese Factory published map coordinates",
-          "url": "https://www.furanotourism.com/en/spot/spot_D.php?id=69",
-          "checkedOn": "2026-10-23",
-          "supports": [
-            "map coordinates cross-checked against the tourism association attraction listing"
-          ]
-        },
-        {
           "id": "osm-ningles-terrace",
           "label": "OpenStreetMap: Ningle Terrace (node 4607790389)",
           "url": "https://www.openstreetmap.org/node/4607790389",
@@ -672,6 +663,15 @@
           "checkedOn": "2026-10-23",
           "supports": [
             "garden map point"
+          ]
+        },
+        {
+          "id": "furano-cheese-factory-gps",
+          "label": "Furano Cheese Factory GPS listing",
+          "url": "https://hokkaido.a4jp.com/furano-cheese-factory/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "published GPS coordinates for Furano Cheese Factory"
           ]
         }
       ]
