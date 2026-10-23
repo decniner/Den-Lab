@@ -1,17 +1,24 @@
 /* Tadaima! hub — city cards rendered from the cities registry (cities.js),
-   which is generated from each city's own data file so counts never drift. */
+   which is generated from each city's own data file so counts never drift.
+   Cards are grouped by prefecture under a header, with prefecture filter
+   chips generated from the same registry — new prefectures appear on their
+   own as cities are added. A Japan map stays parked until coverage reaches
+   roughly ten cities across several prefectures (see the roadmap note). */
 (function () {
   "use strict";
   var CITIES = window.TADAIMA_CITIES || [];
   var grid = document.getElementById("cityGrid");
+  var chipsBox = document.getElementById("prefChips");
   var noMatch = document.getElementById("noMatch");
   var input = document.getElementById("citySearch");
+  var currentPref = "all";
 
   function fmt(n) { return n.toLocaleString("en-US"); }
 
-  function card(c) {
+  function card(c, idx) {
     var el = document.createElement("article");
     el.className = "city-card" + (c.status === "live" ? "" : " research");
+    el.dataset.idx = idx;
     el.dataset.hay = (c.name + " " + c.nameJa + " " + c.prefecture + " " + c.prefectureJa + " " +
       (c.stations || []).join(" ") + " " + (c.stationsJa || []).join(" ") + " " +
       (c.districts || []).join(" ") + " " + c.blurb).toLowerCase();
@@ -38,15 +45,64 @@
     return el;
   }
 
-  CITIES.forEach(function (c) { grid.appendChild(card(c)); });
+  // Group by prefecture, in first-appearance order from the registry.
+  var prefOrder = [], byPref = {};
+  CITIES.forEach(function (c, i) {
+    if (!byPref[c.prefecture]) { byPref[c.prefecture] = { ja: c.prefectureJa, cities: [] }; prefOrder.push(c.prefecture); }
+    byPref[c.prefecture].cities.push({ c: c, i: i });
+  });
+
+  var groups = [];
+  prefOrder.forEach(function (pref) {
+    var g = byPref[pref];
+    var total = g.cities.reduce(function (s, e) { return s + (e.c.status === "live" ? e.c.counts.total : 0); }, 0);
+    var sec = document.createElement("section");
+    sec.className = "pref-group";
+    sec.dataset.pref = pref;
+    var head = document.createElement("h3");
+    head.className = "pref-head";
+    head.innerHTML = pref + ' <span class="jp">' + g.ja + '</span> <span class="pref-meta">' +
+      g.cities.length + (g.cities.length === 1 ? " city" : " cities") + " · " + total + " properties</span>";
+    sec.appendChild(head);
+    var inner = document.createElement("div");
+    inner.className = "city-grid";
+    g.cities.forEach(function (e) { inner.appendChild(card(e.c, e.i)); });
+    sec.appendChild(inner);
+    grid.appendChild(sec);
+    groups.push(sec);
+  });
+
+  // Prefecture filter chips: All + one per prefecture present in the registry.
+  var chipEls = [];
+  function addChip(label, ja, pref) {
+    var b = document.createElement("button");
+    b.className = "pref-chip" + (pref === "all" ? " active" : "");
+    b.dataset.pref = pref;
+    b.innerHTML = label + (ja ? ' <span class="jp">' + ja + "</span>" : "");
+    b.addEventListener("click", function () {
+      currentPref = pref;
+      chipEls.forEach(function (x) { x.classList.toggle("active", x === b); });
+      applyFilter();
+    });
+    chipsBox.appendChild(b);
+    chipEls.push(b);
+  }
+  addChip("All", "", "all");
+  prefOrder.forEach(function (pref) { addChip(pref, byPref[pref].ja, pref); });
 
   function applyFilter() {
     var q = input.value.trim().toLowerCase();
     var visible = 0, firstLive = null;
-    Array.prototype.forEach.call(grid.children, function (el, i) {
-      var show = !q || el.dataset.hay.indexOf(q) !== -1;
-      el.style.display = show ? "" : "none";
-      if (show) { visible++; if (!firstLive && CITIES[i].status === "live") firstLive = CITIES[i]; }
+    groups.forEach(function (sec) {
+      var groupVisible = 0;
+      Array.prototype.forEach.call(sec.querySelectorAll(".city-card"), function (el) {
+        var c = CITIES[+el.dataset.idx];
+        var show = (currentPref === "all" || c.prefecture === currentPref) &&
+                   (!q || el.dataset.hay.indexOf(q) !== -1);
+        el.style.display = show ? "" : "none";
+        if (show) { visible++; groupVisible++; if (!firstLive && c.status === "live") firstLive = c; }
+      });
+      sec.style.display = groupVisible ? "" : "none";
     });
     noMatch.style.display = visible ? "none" : "block";
     return firstLive;

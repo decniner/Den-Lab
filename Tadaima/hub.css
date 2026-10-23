@@ -90,3 +90,15 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
   .head-nav{margin-left:auto}
   .head-nav a{display:none}
 }
+
+/* Prefecture grouping + filter chips (hub scaling: groups and chips are
+   generated from the registry, so new prefectures slot in on their own) */
+.pref-chips{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 6px}
+.pref-chip{font:inherit;font-size:13.5px;font-weight:600;color:var(--green-2);background:var(--paper-2);border:1.5px solid var(--line);border-radius:999px;padding:7px 16px;cursor:pointer}
+.pref-chip .jp{color:var(--gold);font-size:12.5px;margin-left:4px}
+.pref-chip.active{background:var(--green);border-color:var(--green);color:#fff}
+.pref-chip.active .jp{color:var(--gold-soft)}
+.pref-group{margin:0 0 6px}
+.pref-head{font-family:"Fraunces","Hiragino Mincho ProN","Noto Serif JP",serif;font-weight:600;font-size:25px;color:var(--green-2);margin:24px 0 0;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.pref-head .jp{font-size:17px;color:var(--gold)}
+.pref-meta{font-family:"Inter","Hiragino Sans",system-ui,sans-serif;font-size:13px;font-weight:400;color:var(--ink-soft);letter-spacing:.03em}
