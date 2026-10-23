@@ -24,7 +24,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -43,7 +43,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -62,7 +62,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -81,7 +81,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -100,7 +100,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -119,7 +119,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -138,7 +138,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -157,7 +157,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -176,7 +176,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -195,7 +195,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -214,7 +214,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -233,7 +233,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -252,7 +252,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -271,7 +271,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -290,7 +290,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -314,7 +314,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -331,8 +331,8 @@
       "guide_status": "complete",
       "missing": [],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "verified-source",
-      "mapStatus": "coordinates-verified"
+      "imageStatus": "catalogue-attribution-pending-review",
+      "mapStatus": "no-coordinates"
     },
     {
       "id": "kamakura-temple-to-tide",
@@ -350,7 +350,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -369,7 +369,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -388,7 +388,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -407,7 +407,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -426,7 +426,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -445,7 +445,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -464,7 +464,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -483,7 +483,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -502,7 +502,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -521,7 +521,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -540,7 +540,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -559,7 +559,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -582,7 +582,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -601,7 +601,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -620,7 +620,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -639,7 +639,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -658,7 +658,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -677,7 +677,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -696,7 +696,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -719,7 +719,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -738,7 +738,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -757,7 +757,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -776,7 +776,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -795,7 +795,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -814,7 +814,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -833,7 +833,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -852,7 +852,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -871,7 +871,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -890,7 +890,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -909,7 +909,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -928,7 +928,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -947,7 +947,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -966,7 +966,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -985,7 +985,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1004,7 +1004,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1023,7 +1023,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1042,7 +1042,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1061,7 +1061,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1080,7 +1080,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1099,7 +1099,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1118,7 +1118,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1137,7 +1137,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1156,7 +1156,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1175,7 +1175,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1194,7 +1194,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1213,7 +1213,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1232,7 +1232,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1251,7 +1251,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1270,7 +1270,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1289,7 +1289,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1308,7 +1308,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1327,7 +1327,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1346,7 +1346,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1365,7 +1365,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1384,7 +1384,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1403,7 +1403,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1422,7 +1422,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1441,7 +1441,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1464,7 +1464,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1483,7 +1483,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1502,7 +1502,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1521,7 +1521,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1540,7 +1540,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1559,7 +1559,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1582,7 +1582,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1601,7 +1601,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1620,7 +1620,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1639,7 +1639,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1658,7 +1658,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1677,7 +1677,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1696,7 +1696,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1715,7 +1715,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1734,7 +1734,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1753,7 +1753,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1772,7 +1772,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1791,7 +1791,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1810,7 +1810,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1829,7 +1829,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1848,7 +1848,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1867,7 +1867,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1886,7 +1886,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1905,7 +1905,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1924,7 +1924,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1943,7 +1943,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1962,7 +1962,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -1981,7 +1981,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2000,7 +2000,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2023,7 +2023,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2042,7 +2042,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2061,7 +2061,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2080,7 +2080,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2099,7 +2099,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2118,7 +2118,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "illustrative-unsplash-image",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2213,7 +2213,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2232,7 +2232,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2251,7 +2251,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2270,7 +2270,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2365,7 +2365,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2384,7 +2384,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2669,7 +2669,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2707,7 +2707,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2821,7 +2821,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2840,7 +2840,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2859,7 +2859,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2897,7 +2897,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2916,7 +2916,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -2992,7 +2992,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3011,7 +3011,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3030,7 +3030,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3163,7 +3163,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3201,7 +3201,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3239,7 +3239,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3258,7 +3258,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3277,7 +3277,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3296,7 +3296,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3353,7 +3353,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3372,7 +3372,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3429,7 +3429,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3638,7 +3638,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -3714,7 +3714,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -4056,7 +4056,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -4265,7 +4265,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -4284,7 +4284,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -4398,7 +4398,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -4531,7 +4531,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -4550,7 +4550,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -4835,7 +4835,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -4987,7 +4987,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5082,7 +5082,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5120,7 +5120,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5158,7 +5158,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5253,7 +5253,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5310,7 +5310,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5371,7 +5371,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5542,7 +5542,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5637,7 +5637,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5713,7 +5713,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5732,7 +5732,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5751,7 +5751,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5770,7 +5770,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5789,7 +5789,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5846,7 +5846,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5865,7 +5865,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {
@@ -5903,7 +5903,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "missing",
+      "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },
     {

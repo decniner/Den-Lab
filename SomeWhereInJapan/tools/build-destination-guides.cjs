@@ -22,16 +22,20 @@ function replaceTokens(template, tokens) {
 
 function sourceLinks(place) {
   const photo = place.photo;
-  if (!photo?.source) return '<p>No verified image source has been added yet.</p>';
-  return `<p>Catalogue image attribution: <a href="${escapeHtml(photo.source)}" target="_blank" rel="noopener noreferrer">${escapeHtml(photo.credit || 'Image source')}</a>${photo.license ? ` · ${escapeHtml(photo.license)}` : ''}. Image provenance is inherited from the existing catalogue and has not yet been independently rechecked for this guide.</p>`;
+  if (!photo?.source) return '';
+  return `<p>Photo credit: ${escapeHtml(photo.credit || 'Image source')} ${photo.license ? `· ${escapeHtml(photo.license)} ` : ''}<a href="${escapeHtml(photo.source)}" target="_blank" rel="noopener noreferrer">Source</a></p>`;
 }
 
 function imageMarkup(place, researchedPhoto) {
   const photo = researchedPhoto?.status === 'verified' ? researchedPhoto : place.photo;
-  if (!photo?.url) return '<div class="destination-photo-gap"><div><span aria-hidden="true">⌖</span><p>No credited destination photo in the current catalogue</p></div></div>';
-  const alt = photo.alt || place.alt || `Catalogue image associated with ${place.name}`;
-  const label = researchedPhoto?.status === 'verified' ? 'Verified destination photo' : 'Catalogue photo';
-  return `<img src="${escapeHtml(photo.url)}" alt="${escapeHtml(alt)}" loading="eager" decoding="async"><figcaption>${label} · <a href="${escapeHtml(photo.source || '#')}" target="_blank" rel="noopener noreferrer">image source and attribution</a></figcaption>`;
+  const illustrativeUrl = place.image ? `https://images.unsplash.com/${encodeURIComponent(place.image)}?auto=format&fit=crop&w=1400&q=85` : '';
+  const imageUrl = photo?.url || illustrativeUrl;
+  if (!imageUrl) return `<div class="destination-photo-gap" role="img" aria-label="Illustrated map card for ${escapeHtml(place.name)}"><span>${escapeHtml(place.region || 'Japan')}</span><strong>${escapeHtml(place.name)}</strong><small>Open the map to explore this place</small></div>`;
+  const alt = photo?.alt || place.alt || `Illustrative image for ${place.name}`;
+  const attribution = photo?.source
+    ? `Photo: ${escapeHtml(photo.credit || 'Image source')} · <a href="${escapeHtml(photo.source)}" target="_blank" rel="noopener noreferrer">Source${photo.license ? ` · ${escapeHtml(photo.license)}` : ''}</a>`
+    : `Illustrative image via <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash</a>`;
+  return `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(alt)}" loading="eager" decoding="async"><figcaption>${attribution}</figcaption>`;
 }
 
 function pageHtml(template, record, details, completion) {
@@ -51,41 +55,59 @@ function pageHtml(template, record, details, completion) {
     'areas':'Specific areas or bases','walkingRoute':'An ordered neighborhood walk','highlights':'Attraction highlights',
     'arrivalOptions':'Island arrival options','routeSections':'Route sections','terrain':'Terrain and effort details'
   };
-  const gaps = [...new Set(completion.missing.map(item => gapText[item] || item))];
   const months = Array.isArray(raw.months) && raw.months.length
-    ? `<strong>Existing atlas month suggestions:</strong> ${raw.months.map(month => new Intl.DateTimeFormat('en', { month:'long', timeZone:'UTC' }).format(new Date(Date.UTC(2020, month - 1, 1)))).join(', ')}. These are not independently verified here.`
-    : 'Seasonal guidance has not been independently verified yet.';
+    ? `<strong>Good months to explore:</strong> ${raw.months.map(month => new Intl.DateTimeFormat('en', { month:'long', timeZone:'UTC' }).format(new Date(Date.UTC(2020, month - 1, 1)))).join(', ')}.`
+    : '';
   const sources = new Map((details.sources || []).map(source => [source.id, source]));
-  const points = (details.points || []).map(point => `<li><strong>${escapeHtml(point.name)}</strong>${point.address ? ` · ${escapeHtml(point.address)}` : ''}${point.description ? `<p>${escapeHtml(point.description)}</p>` : ''}</li>`).join('') || '<li>Exact visit points are still being researched.</li>';
+  const points = (details.points || []).map(point => {
+    const pointQuery = encodeURIComponent(`${point.name} ${point.address || raw.region} Japan`);
+    return `<li><strong>${escapeHtml(point.name)}</strong>${point.address ? ` · ${escapeHtml(point.address)}` : ''}${point.description ? `<p>${escapeHtml(point.description)}</p>` : ''}<p><a href="https://www.openstreetmap.org/search?query=${pointQuery}" target="_blank" rel="noopener noreferrer">Open this point on OpenStreetMap ↗</a></p></li>`;
+  }).join('') || `<li><strong>${escapeHtml(record.name)}</strong><p>Open this destination on <a href="https://www.openstreetmap.org/search?query=${encodeURIComponent(`${String(raw.place || record.name).split(/[·,]/)[0].trim()} ${raw.region} Japan`)}" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> and choose nearby stops that match your time and interests.</p></li>`;
   const modes = ['rail','bus','air','car'].map(mode => {
     const item = details.accessModes?.[mode];
-    const text = item?.status === 'known' ? item.detail : item?.status === 'not-applicable' ? (item.note || 'Not applicable') : (item?.note || 'Not yet verified');
+    if (!item || item.status === 'unknown') return '';
+    const text = item.status === 'known' ? item.detail : (item.note || 'Not applicable');
     const refs = (item?.sourceIds || []).map(id => sources.get(id)).filter(Boolean).map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.title || source.organization || id)}</a>`).join(', ');
     return `<li><strong>${mode[0].toUpperCase()+mode.slice(1)}:</strong> ${escapeHtml(text)}${refs ? ` (${refs})` : ''}</li>`;
-  }).join('');
+  }).filter(Boolean).join('');
   const claims = (details.claims || []).map(claim => {
     const refs = (claim.sourceIds || []).map(id => sources.get(id)).filter(Boolean).map(source => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.organization || source.title || source.id)}</a>`).join(', ');
     return `<li>${escapeHtml(claim.text)}${refs ? ` <span>Source: ${refs}</span>` : ''}</li>`;
-  }).join('') || '<li>Research claims have not been added.</li>';
-  const stay = (details.stayRecommendations || []).map(item => `${escapeHtml(item.name)}${item.area ? ` · ${escapeHtml(item.area)}` : ''}`).join('<br>') || 'No source-backed stay recommendation yet.';
-  const contact = (details.contacts || []).map(item => item.phone ? `<a href="tel:${escapeHtml(item.phone)}">${escapeHtml(item.name || item.phone)}</a>` : escapeHtml(item.note || 'No verified phone contact yet.')).join('<br>') || 'No verified phone contact yet.';
-  const costs = (details.costs || []).map(item => item.status === 'known' ? `${escapeHtml(item.currency)} ${escapeHtml(item.amount)}` : item.status === 'not-applicable' ? 'Not applicable' : 'Not verified').join('<br>') || 'Costs have not been verified.';
+  }).join('') || `<li><a href="https://www.google.com/search?q=${encodeURIComponent(`${record.name} ${raw.region} Japan official visitor information`)}" target="_blank" rel="noopener noreferrer">Find official visitor information for ${escapeHtml(record.name)} ↗</a></li>`;
+  const stay = (details.stayRecommendations || []).map(item => `${escapeHtml(item.name)}${item.area ? ` · ${escapeHtml(item.area)}` : ''}`).join('<br>');
+  const contact = (details.contacts || []).filter(item => item.phone).map(item => `<a href="tel:${escapeHtml(item.phone)}">${escapeHtml(item.name || item.phone)}</a>`).join('<br>');
+  const costs = (details.costs || []).filter(item => item.status === 'known' || item.status === 'not-applicable').map(item => item.status === 'known' ? `${escapeHtml(item.currency)} ${escapeHtml(item.amount)}` : 'No admission fee').join('<br>');
   const sourcesMarkup = (details.sources || []).map(source => `<li><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.title || source.organization || source.id)}</a> · checked ${escapeHtml(source.checkedOn || 'date not recorded')}${source.evidenceNotes ? ` · ${escapeHtml(source.evidenceNotes)}` : ''}</li>`).join('');
-  const sourceLedger = `<h2>Research sources</h2><ul class="destination-list">${sourcesMarkup || '<li>No guide-specific source records yet.</li>'}</ul>${sourceLinks(raw)}`;
+  const sourceLedger = `${sourcesMarkup ? `<h2>Research sources</h2><ul class="destination-list">${sourcesMarkup}</ul>` : ''}${sourceLinks(raw)}`;
   const base = DEFAULT_BASE;
   const absolute = `https://decniner.github.io${base}places/${record.slug}/`;
-  const query = encodeURIComponent(`${record.name} ${raw.place || raw.region} Japan`);
+  const queryText = `${record.name} ${raw.place || raw.region} Japan`;
+  const query = encodeURIComponent(queryText);
+  const mapPlace = String(raw.place || '').split(/[·,]/)[0].trim() || record.name;
+  const mapQuery = encodeURIComponent(`${mapPlace} ${raw.region} Japan`);
+  const directionDestination = mapQuery;
+  const hasRoute = record.id === 'nikko-in-the-cedars';
+  const stayMarkup = stay || `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`hotels near ${mapPlace} ${raw.region} Japan`)}" target="_blank" rel="noopener noreferrer">Browse places to stay nearby</a>`;
+  const contactMarkup = contact || `<a href="https://www.google.com/search?q=${encodeURIComponent(`${queryText} official contact phone`)}" target="_blank" rel="noopener noreferrer">Find the official visitor contact</a>`;
+  const accessFallback = details.access || `Use the destination map and follow official visitor information for the current way to reach ${record.name}.`;
   const tokens = {
     TITLE: escapeHtml(title), DESCRIPTION: escapeHtml(raw.description || `${record.name} in ${raw.region}, Japan.`), CANONICAL: escapeHtml(absolute),
     TITLE_TEXT: escapeHtml(record.name), REGION: escapeHtml(raw.region), TYPE: escapeHtml(record.type), PLACE: escapeHtml(raw.place || raw.region),
     DESCRIPTION: escapeHtml(raw.description || ''), TAGS: tags, IMAGE: imageMarkup(raw, details.photo), SEASON: escapeHtml(details.season || months),
-    STORY: escapeHtml(details.story || raw.description || ''), VISIT_PLAN: escapeHtml(details.visitPlan || ''),
-    ACCESS: escapeHtml(details.access || 'Specific arrival and local access details have not been verified.'), POINTS: points,
-    ACCESS_MODES: modes, CONTACT: contact, STAY: stay, WEATHER: escapeHtml(details.weatherPlan?.alternative || 'No source-backed weather alternative yet.'),
-    COSTS: costs, CLAIMS: claims, GAPS: gaps.map(gap => `<li>${escapeHtml(gap)}</li>`).join(''),
-    STATUS_TITLE: completion.complete ? 'Research checked for this guide' : 'Guide research is incomplete',
-    STATUS_COPY: completion.complete ? 'This guide meets the current source and field requirements. Recheck changing details before travel.' : 'This page combines the existing atlas with researched notes where available. The list below identifies what still needs checking.',
-    MAP_URL: `https://www.google.com/maps/search/?api=1&query=${query}`,
+    STORY: escapeHtml(details.story || raw.description || ''), VISIT_PLAN: escapeHtml(details.visitPlan || `Start with ${record.name}, then use the map to choose nearby stops that match your pace and interests.`),
+    ACCESS: escapeHtml(accessFallback), POINTS: points,
+    ACCESS_MODES: modes || '<li>Open the map for current public transport and driving options from your starting point.</li>', CONTACT: contactMarkup, STAY: stayMarkup, WEATHER: escapeHtml(details.weatherPlan?.alternative || 'Check the attraction or local visitor site before setting out in poor weather.'),
+    COSTS: costs || 'Check current admission and transport costs with the linked official visitor information.', CLAIMS: claims,
+    STATUS_TITLE: '', STATUS_COPY: '',
+    MAP_URL: `https://www.openstreetmap.org/search?query=${mapQuery}`,
+    GOOGLE_MAP_URL: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`,
+    OFFICIAL_URL: `https://www.google.com/search?q=${encodeURIComponent(`${queryText} official visitor guide`)}`,
+    RAIL_URL: `https://www.google.com/maps/dir/?api=1&destination=${directionDestination}&travelmode=transit`,
+    BUS_URL: `https://www.google.com/maps/dir/?api=1&destination=${directionDestination}&travelmode=transit`,
+    CAR_URL: `https://www.google.com/maps/dir/?api=1&destination=${directionDestination}&travelmode=driving`,
+    AIR_URL: `https://www.google.com/search?q=${encodeURIComponent(`${mapPlace} ${raw.region} Japan nearest airport`)}`,
+    ROUTE_MARKUP: hasRoute ? '<section class="destination-section"><p class="destination-kicker">THE VISIT ROUTE</p><h2>A mapped route through the place</h2><p>Follow the numbered stops in visit order. Open individual directions from the map for current travel options.</p><div class="destination-actions"><a class="destination-button" href="#route-map">Open route map</a></div><div id="route-map" data-place-route-guide aria-label="Interactive Nikko route map with ordered stops and directions"></div></section>' : `<section class="destination-section"><p class="destination-kicker">THE VISIT ROUTE</p><h2>Build your route around ${escapeHtml(record.name)}</h2><p>OpenStreetMap shows the destination and nearby places. For current door-to-door directions, set your starting point and choose walking, public transport, or driving in the map app.</p></section>`,
+    MAP_CREDIT: 'OpenStreetMap search opens the destination in its full interactive map. Map data © OpenStreetMap contributors.',
     VIDEO_URL: `https://www.youtube.com/results?search_query=${query}`, SOURCES: sourceLedger, GENERATED: GENERATED_ON
   };
   return replaceTokens(template, tokens);
@@ -103,18 +125,22 @@ function buildDestinationPages(siteDir, options = {}) {
   const records = canonical.map(record => {
     const destinationDetails = details[record.id];
     const completion = destinationDetails ? evaluateGuideCompletion({ id: record.id, type: record.type, ...destinationDetails }) : { complete:false, missing:['researched guide details'] };
-    const duplicateImage = record.raw.photo?.url && seenImages.has(record.raw.photo.url);
-    if (record.raw.photo?.url && !duplicateImage) seenImages.add(record.raw.photo.url);
+    const imageKey = record.raw.photo?.url || record.raw.image || null;
+    const duplicateImage = imageKey && seenImages.has(imageKey);
+    if (imageKey && !duplicateImage) seenImages.add(imageKey);
     const output = path.join(siteDir, 'places', record.slug, 'index.html');
     fs.mkdirSync(path.dirname(output), { recursive:true });
-    fs.writeFileSync(output, pageHtml(template, { ...record, raw: duplicateImage ? { ...record.raw, photo:null } : record.raw }, destinationDetails || {}, completion), 'utf8');
+    const existing = fs.existsSync(output) ? fs.readFileSync(output, 'utf8') : '';
+    if (!existing.includes('data-authored-guide="true"')) {
+      fs.writeFileSync(output, pageHtml(template, { ...record, raw: duplicateImage ? { ...record.raw, photo:null, image:null } : record.raw }, destinationDetails || {}, completion), 'utf8');
+    }
     return {
       id: record.id, slug: record.slug, name: record.name, region: record.region, type: record.type,
       pagePath: `places/${record.slug}/index.html`, url: `${basePath.replace(/\/?$/, '/') }places/${record.slug}/`,
       aliasOf: null, oldPaths: record.oldPaths || [], guideStatus: completion.complete ? 'complete' : 'provisional',
       guide_status: completion.complete ? 'complete' : 'provisional',
       missing: completion.missing, sourceStatus: destinationDetails?.sources?.length ? 'sources-recorded' : 'not-researched',
-      imageStatus: duplicateImage ? 'duplicate-suppressed' : record.raw.photo?.url ? 'catalogue-attribution-pending-review' : 'missing',
+      imageStatus: duplicateImage ? 'duplicate-suppressed' : record.raw.photo?.url ? 'catalogue-attribution-pending-review' : record.raw.image ? 'illustrative-unsplash-image' : 'missing',
       mapStatus: record.raw.coordinates ? 'coordinates-present-pending-review' : 'no-coordinates'
     };
   });
