@@ -5226,10 +5226,10 @@
         {
           "id": "kawagoe-kurazukuri-ichibangai",
           "order": 2,
-          "name": "Kurazukuri old town ? Ichibangai",
+          "name": "Kurazukuri old town — Ichibangai",
           "area": "Saiwaicho",
           "address": "Kurazukuri Street, Saiwaicho, Kawagoe, Saitama, Japan",
-          "story": "Follow the merchant street at roofline level. The thick, plastered storehouses and their substantial shutters speak to the wealth of a trading town?and the need to protect it from fire. Browse the working shops, then look for quieter side lanes where the buildings are easier to read.",
+          "story": "Follow the merchant street at roofline level. The thick, plastered storehouses and their substantial shutters speak to the wealth of a trading town, and the need to protect it from fire. Browse the working shops, then look for quieter side lanes where the buildings are easier to read.",
           "coordinates": {
             "latitude": 35.9232,
             "longitude": 139.4829,
@@ -5253,10 +5253,10 @@
         {
           "id": "kawagoe-toki-no-kane",
           "order": 3,
-          "name": "Toki no Kane ? Bell of Time",
+          "name": "Toki no Kane — Bell of Time",
           "area": "Saiwaicho",
           "address": "Toki no Kane, 15-7 Saiwaicho, Kawagoe, Saitama, Japan",
-          "story": "The town?s familiar silhouette is also a living timekeeper. The bell rings four times a day?6:00, noon, 3:00 and 6:00. Stand back from the tower, take in the adjoining kura fa?ades, and let the sound place you in the middle of a working shopping district.",
+          "story": "The town's familiar silhouette is also a living timekeeper. The bell rings four times a day: 6:00, noon, 3:00 and 6:00. Stand back from the tower, take in the adjoining kura facades, and let the sound place you in the middle of a working shopping district.",
           "coordinates": {
             "latitude": 35.9235,
             "longitude": 139.4833,
@@ -5281,10 +5281,10 @@
         {
           "id": "kawagoe-kashiya-yokocho",
           "order": 4,
-          "name": "Kashiya Yokocho ? Candy Alley",
+          "name": "Kashiya Yokocho — Candy Alley",
           "area": "Motomachi",
           "address": "Kashiya Yokocho, 2-chome Motomachi, Kawagoe, Saitama 350-0062, Japan",
-          "story": "End where Kawagoe?s food story becomes tangible. Around 30 confectionery shops line this small lane; look for traditional candies, rice crackers and sweet-potato treats. Stores are independent, so the lane?s mood and what is open depend on the day.",
+          "story": "End where Kawagoe's food story becomes tangible. Around 30 confectionery shops line this small lane; look for traditional candies, rice crackers and sweet-potato treats. Stores are independent, so the lane's mood and what is open depend on the day.",
           "coordinates": {
             "latitude": 35.9251,
             "longitude": 139.4818,
@@ -18980,7 +18980,7 @@
           "properties": {
             "id": "kawagoe-kurazukuri-ichibangai",
             "routeStopId": "kawagoe-kurazukuri-ichibangai",
-            "name": "Kurazukuri old town ? Ichibangai",
+            "name": "Kurazukuri old town — Ichibangai",
             "role": "stop",
             "returnPoint": false
           }
@@ -18997,7 +18997,7 @@
           "properties": {
             "id": "kawagoe-toki-no-kane",
             "routeStopId": "kawagoe-toki-no-kane",
-            "name": "Toki no Kane ? Bell of Time",
+            "name": "Toki no Kane — Bell of Time",
             "role": "stop",
             "returnPoint": false
           }
@@ -19014,7 +19014,7 @@
           "properties": {
             "id": "kawagoe-kashiya-yokocho",
             "routeStopId": "kawagoe-kashiya-yokocho",
-            "name": "Kashiya Yokocho ? Candy Alley",
+            "name": "Kashiya Yokocho — Candy Alley",
             "role": "stop",
             "returnPoint": false
           }
