@@ -34,7 +34,7 @@ function mountCityRouteMap(container,mapData,onSelectStop){
   if(root.L.control?.scale)root.L.control.scale({imperial:false,metric:true,position:'bottomleft'}).addTo(map);
   if(fallback)fallback.hidden=true;if(panel)panel.hidden=false;
  }catch(error){fail();}
- return {selectStop(id){if(markers.has(id))choose(id);},destroy(){destroyed=true;if(map){map.remove();map=null;}markers.clear();},get available(){return !!map&&!destroyed;}};
+ return {selectStop(id){if(markers.has(id))choose(id);},resize(){if(map&&!destroyed){map.invalidateSize({pan:false});map.fitBounds([[bounds[1],bounds[0]],[bounds[3],bounds[2]]],{padding:[20,20]});}},destroy(){destroyed=true;if(map){map.remove();map=null;}markers.clear();},get available(){return !!map&&!destroyed;}};
 }
 root.CityRouteMap={mountCityRouteMap};
 if(typeof module!=='undefined'&&module.exports)module.exports={mountCityRouteMap};
