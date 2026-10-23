@@ -417,8 +417,8 @@
       "id": "furano-highlights-drive",
       "placeId": "furano-in-bloom",
       "cityId": "furano",
-      "title": "Furano highlights by car",
-      "introduction": "Start at Furano Station, visit the Furano Cheese Factory and Ningle Terrace, then continue to Farm Tomita in Nakafurano. Open the full loop in Google Maps for live driving directions.",
+      "title": "Furano in bloom: fields, cheese and forest craft",
+      "introduction": "Begin at Farm Tomita while the flower fields are bright, return toward Furano for a taste of local dairy, then finish among the wooded craft cottages at Ningle Terrace. This car-first loop uses live Google Maps directions for roads; map connectors show stop order only.",
       "researchStatus": "partially-verified",
       "origin": {
         "id": "furano-station",
@@ -436,8 +436,36 @@
       },
       "stops": [
         {
-          "id": "furano-cheese-factory",
+          "id": "furano-farm-tomita",
           "order": 1,
+          "name": "Farm Tomita",
+          "area": "Hokusei, Nakafurano",
+          "address": "Farm Tomita, Hokusei, Nakafurano, Hokkaido, Japan",
+          "story": "Explore the flower gardens at Farm Tomita. The official guide lists Lavender Farm Station as a nearby seasonal rail stop; this itinerary uses a car between the spread-out attractions.",
+          "coordinates": {
+            "latitude": 43.41935,
+            "longitude": 142.4279,
+            "precision": "OpenStreetMap garden way center 68744760",
+            "sourceIds": [
+              "farm-tomita",
+              "osm-farm-tomita"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "photo": {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg/960px-140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg",
+            "credit": "663highland",
+            "license": "CC BY-SA 3.0 or CC BY 2.5",
+            "alt": "Flower rows at Farm Tomita in Nakafurano, Hokkaido"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Farm%20Tomita%20Furano%20Hokkaido"
+        },
+        {
+          "id": "furano-cheese-factory",
+          "order": 2,
           "name": "Furano Cheese Factory",
           "area": "Nakagoku, Furano",
           "address": "Furano Cheese Factory, Nakagoku, Furano, Hokkaido, Japan",
@@ -465,7 +493,7 @@
         },
         {
           "id": "furano-ningles-terrace",
-          "order": 2,
+          "order": 3,
           "name": "Ningle Terrace",
           "area": "Naka-Goryou, Furano",
           "address": "Ningle Terrace, New Furano Prince Hotel, Naka-Goryou, Furano, Hokkaido, Japan",
@@ -490,41 +518,13 @@
             "alt": "Wooden craft cabins at Ningle Terrace in Furano"
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Ningle%20Terrace%20Furano%20Hokkaido"
-        },
-        {
-          "id": "furano-farm-tomita",
-          "order": 3,
-          "name": "Farm Tomita",
-          "area": "Hokusei, Nakafurano",
-          "address": "Farm Tomita, Hokusei, Nakafurano, Hokkaido, Japan",
-          "story": "Explore the flower gardens at Farm Tomita. The official guide lists Lavender Farm Station as a nearby seasonal rail stop; this itinerary uses a car between the spread-out attractions.",
-          "coordinates": {
-            "latitude": 43.41935,
-            "longitude": 142.4279,
-            "precision": "OpenStreetMap garden way center 68744760",
-            "sourceIds": [
-              "farm-tomita",
-              "osm-farm-tomita"
-            ]
-          },
-          "visitDuration": {
-            "status": "unknown"
-          },
-          "photo": {
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg/960px-140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg",
-            "source": "https://commons.wikimedia.org/wiki/File:140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg",
-            "credit": "663highland",
-            "license": "CC BY-SA 3.0 or CC BY 2.5",
-            "alt": "Flower rows at Farm Tomita in Nakafurano, Hokkaido"
-          },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Farm%20Tomita%20Furano%20Hokkaido"
         }
       ],
       "legs": [
         {
           "id": "furano-leg-01",
           "fromId": "furano-station",
-          "toId": "furano-cheese-factory",
+          "toId": "furano-farm-tomita",
           "mode": "driving",
           "duration": {
             "status": "unknown"
@@ -537,6 +537,32 @@
                 43.3469
               ],
               [
+                142.4279,
+                43.41935
+              ]
+            ],
+            "sourceIds": [
+              "furano-official-access"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.3469%2C142.39166&destination=43.41935%2C142.4279&travelmode=driving"
+        },
+        {
+          "id": "furano-leg-02",
+          "fromId": "furano-farm-tomita",
+          "toId": "furano-cheese-factory",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                142.4279,
+                43.41935
+              ],
+              [
                 142.3770958,
                 43.3206481
               ]
@@ -545,10 +571,10 @@
               "furano-official-access"
             ]
           },
-          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.3469%2C142.39166&destination=43.3206481%2C142.3770958&travelmode=driving"
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.41935%2C142.4279&destination=43.3206481%2C142.3770958&travelmode=driving"
         },
         {
-          "id": "furano-leg-02",
+          "id": "furano-leg-03",
           "fromId": "furano-cheese-factory",
           "toId": "furano-ningles-terrace",
           "mode": "driving",
@@ -574,9 +600,9 @@
           "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.3206481%2C142.3770958&destination=43.32343%2C142.35634&travelmode=driving"
         },
         {
-          "id": "furano-leg-03",
+          "id": "furano-leg-04",
           "fromId": "furano-ningles-terrace",
-          "toId": "furano-farm-tomita",
+          "toId": "furano-station",
           "mode": "driving",
           "duration": {
             "status": "unknown"
@@ -589,32 +615,6 @@
                 43.32343
               ],
               [
-                142.4279,
-                43.41935
-              ]
-            ],
-            "sourceIds": [
-              "furano-official-access"
-            ]
-          },
-          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.32343%2C142.35634&destination=43.41935%2C142.4279&travelmode=driving"
-        },
-        {
-          "id": "furano-leg-04",
-          "fromId": "furano-farm-tomita",
-          "toId": "furano-station",
-          "mode": "driving",
-          "duration": {
-            "status": "unknown"
-          },
-          "geometry": {
-            "status": "schematic",
-            "coordinates": [
-              [
-                142.4279,
-                43.41935
-              ],
-              [
                 142.39166,
                 43.3469
               ]
@@ -623,7 +623,7 @@
               "furano-official-access"
             ]
           },
-          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.41935%2C142.4279&destination=43.3469%2C142.39166&travelmode=driving"
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.32343%2C142.35634&destination=43.3469%2C142.39166&travelmode=driving"
         }
       ],
       "sources": [
@@ -700,7 +700,7 @@
           ]
         }
       ],
-      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=43.3469%2C142.39166&destination=43.3469%2C142.39166&travelmode=driving&waypoints=43.3206481%2C142.3770958%7C43.32343%2C142.35634%7C43.41935%2C142.4279"
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=43.3469%2C142.39166&destination=43.3469%2C142.39166&travelmode=driving&waypoints=43.41935%2C142.4279%7C43.3206481%2C142.3770958%7C43.32343%2C142.35634"
     }
   ],
   "maps": {
@@ -1030,7 +1030,7 @@
             "name": "Furano Cheese Factory",
             "role": "stop",
             "returnPoint": false,
-            "order": 1
+            "order": 2
           }
         },
         {
@@ -1049,7 +1049,7 @@
             "name": "Ningle Terrace",
             "role": "stop",
             "returnPoint": false,
-            "order": 2
+            "order": 3
           }
         },
         {
@@ -1068,7 +1068,7 @@
             "name": "Farm Tomita",
             "role": "stop",
             "returnPoint": false,
-            "order": 3
+            "order": 1
           }
         },
         {
@@ -1101,8 +1101,8 @@
                 43.3469
               ],
               [
-                142.3770958,
-                43.3206481
+                142.4279,
+                43.41935
               ]
             ]
           },
@@ -1118,12 +1118,12 @@
             "type": "LineString",
             "coordinates": [
               [
-                142.3770958,
-                43.3206481
+                142.4279,
+                43.41935
               ],
               [
-                142.35634,
-                43.32343
+                142.3770958,
+                43.3206481
               ]
             ]
           },
@@ -1139,12 +1139,12 @@
             "type": "LineString",
             "coordinates": [
               [
-                142.35634,
-                43.32343
+                142.3770958,
+                43.3206481
               ],
               [
-                142.4279,
-                43.41935
+                142.35634,
+                43.32343
               ]
             ]
           },
@@ -1160,8 +1160,8 @@
             "type": "LineString",
             "coordinates": [
               [
-                142.4279,
-                43.41935
+                142.35634,
+                43.32343
               ],
               [
                 142.39166,

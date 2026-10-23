@@ -2,7 +2,7 @@
 'use strict';
 let placeRegistryPromise;
 function fetchJson(path){return fetch(new URL(path,document.baseURI)).then(response=>response.ok?response.json():null).catch(()=>null);}
-function placeRegistry(){return placeRegistryPromise||(placeRegistryPromise=fetchJson(`${root.location.pathname.includes('/places/')?'../../':'./'}data/place-routes.json?v=20261023-8`));}
+function placeRegistry(){return placeRegistryPromise||(placeRegistryPromise=fetchJson(`${root.location.pathname.includes('/places/')?'../../':'./'}data/place-routes.json?v=20261023-9`));}
 function mount(host,route,mapData,viewOptions={}){
  if(!route||!mapData||!root.CityRouteUI)return null;
  route.cityId=route.cityId||'nikko';
@@ -19,7 +19,8 @@ function setDirectionsAction(route){
  const legs=route?.legs||[],stops=[...(route?.stops||[])].sort((a,b)=>(a.order||0)-(b.order||0));
  const modes=[...new Set(legs.map(leg=>leg.mode==='walking'?'walking':leg.mode==='driving'?'driving':'transit'))];
  let href,label;
- if(stops.length>=2&&legs.length&&modes.length===1&&modes[0]!=='walking'&&stops.length<=4){
+ if(route?.fullRouteUrl){href=route.fullRouteUrl;label=modes.length===1&&modes[0]==='driving'?'Open full driving loop in Google Maps':'Open full route in Google Maps';}
+ else if(stops.length>=2&&legs.length&&modes.length===1&&modes[0]!=='walking'&&stops.length<=4){
   const point=stop=>`${stop.address||stop.name}, ${stop.area||'Japan'}, Japan`,params=new URLSearchParams({api:'1',origin:point(route.origin||stops[0]),destination:point(stops.at(-1)),travelmode:modes[0]}),middle=route.origin?stops.slice(0,-1):stops.slice(1,-1);
   if(middle.length)params.set('waypoints',middle.map(point).join('|'));
   href=`https://www.google.com/maps/dir/?${params}`;label=modes[0]==='driving'?'Open driving route in Google Maps':'Open public transport route in Google Maps';
