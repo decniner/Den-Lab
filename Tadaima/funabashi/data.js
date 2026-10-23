@@ -518,7 +518,7 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6001/area_chiba/12204/045.html",
+        "url": "https://house.goo.ne.jp/buy/bh/special/6001/area_chiba/12204/045.html",
         "verified": "index",
         "infoDate": "2026-10-23"
       }
