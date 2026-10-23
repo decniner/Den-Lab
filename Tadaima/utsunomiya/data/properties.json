@@ -1,0 +1,1083 @@
+{
+  "site": {
+    "name": "Tadaima!",
+    "nameJa": "ただいま！",
+    "edition": "Utsunomiya",
+    "editionJa": "宇都宮",
+    "researchedOn": "2026-10-23",
+    "area": "Utsunomiya City, Tochigi",
+    "areaJa": "栃木県宇都宮市"
+  },
+  "defaults": {
+    "budgetMan": 5000,
+    "maxWalkMin": 15
+  },
+  "benchmarks": {
+    "landPerTsuboManByStation": {
+      "Esoshima": 20,
+      "Higashi-Shukugo": 40,
+      "Minami-Utsunomiya": 22,
+      "Nishikawada": 19,
+      "Okamoto": 17,
+      "Suzumenomiya": 18,
+      "Tobu-Utsunomiya": 32,
+      "Tsuruta": 24,
+      "Utsunomiya": 40,
+      "Utsunomiya University Yoto Campus": 30,
+      "Yoto 3-chome": 30,
+      "Yui no Mori Nishi": 23
+    },
+    "note": "Land benchmarks: residential ¥/tsubo by station, adjusted from MLIT transactions via Utinokati and 2026 official points — read the adjustments, because the raw catchment averages describe a car city, not these walkable listings: JR Utsunomiya scored at ~40 for in-zone lots within a short walk (its multi-year catchment average is ~27 because the average transacted lot is a 33-minute walk); the LRT east side: Higashi-Shukugo/Eki-Higashiguchi ~40 (proxy; an official point at Higashi-Shukugo 3-chome prints 54.5), Yoto ~30 (proxy), Hiraishi/Yui-no-Mori-Nishi ~23, Kiyohara/the eastern terminus ~19–23 — the LRT opened in 2023 and its stop-level transaction series is still thin (~70 attributed deals), so every LRT figure is flagged lower-confidence. Tobu-Utsunomiya ~32 (proxy — no station transaction series exists), Tsuruta ~24 (district ~21, standard lots near the station ~26), Nishikawada ~19 (proxy), Suzumenomiya ~18 (official-point proxy), Okamoto ~17, Esoshima ~20 and Minami-Utsunomiya ~22 (proxies by position on the JR Nikko and Utsunomiya lines). Walk bands are nearly flat — land falls only ~9–12% per 10 minutes' walk here — except inside the LRT corridor's developed pockets, where values drop steeply beyond them. Used houses transacted at about ¥69万/tsubo standardised city-wide (floor-area basis; recent transaction averages 73–75): Wakamatsubara ~78 at the top, most established districts 66–78, and age bites hard (a 30-year-old house prices at ~46% of new per tsubo). Official residential land prices rose +1.2% in the 2026 公示地価 survey — the prefecture's all-use figure turned positive for the first time in 34 years — and the LRT corridor's residential point has risen ~3%/yr for five straight years."
+  },
+  "properties": [
+    {
+      "id": "h01",
+      "type": "house-used",
+      "district": "Mamiana-cho",
+      "districtJa": "満美穴町",
+      "title": "Used 5LDK (2000) at ¥1,799万 beside the LRT — but in an urbanisation-control area",
+      "priceMan": 1799,
+      "priceFrom": false,
+      "landM2": 203.67,
+      "buildingM2": 141.18,
+      "layout": "5LDK",
+      "station": "Yui no Mori Nishi",
+      "stationJa": "ゆいの杜西",
+      "line": "Haga-Utsunomiya LRT (Lightline)",
+      "lineJa": "芳賀・宇都宮LRT（ライトライン）",
+      "walkMin": 5,
+      "built": "Dec 2000",
+      "ageYears": 25,
+      "highlights": [
+        "141.18m² house on a 203.67m² lot — very large for the price",
+        "South-facing 15m road frontage, parking for 2 cars",
+        "Two toilets and a 1-tsubo-plus bathroom, main sewer connected",
+        "Seller-listed (Katitas) with termite-treatment 5-year guarantee noted"
+      ],
+      "cautions": [
+        "Urbanisation-control area (市街化調整区域) — rebuilding and extensions are restricted; check permissions before planning any rebuild",
+        "Far east side of the city near the Kinugawa river side of the LRT corridor — check the city flood hazard map for this exact plot",
+        "Car-oriented suburb despite the 5-minute LRT walk; daily shopping is realistically by car",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z21997370/055361013/x1030Z21997370.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "h02",
+      "type": "house-used",
+      "district": "Shimo-Okamoto-cho",
+      "districtJa": "下岡本町",
+      "title": "Used 4LDK (2021) — 7.4kW solar plus 10kW battery, 5 min from Okamoto Station",
+      "priceMan": 4880,
+      "priceFrom": false,
+      "landM2": 192.37,
+      "buildingM2": 123.78,
+      "layout": "4LDK",
+      "station": "Okamoto",
+      "stationJa": "岡本",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 5,
+      "built": "Feb 2021",
+      "ageYears": 5,
+      "highlights": [
+        "All-electric house with 7.4kW solar generation and a 10kW storage battery",
+        "3m-high living-room ceiling and south-facing living room",
+        "Parking for 3+ cars, walk-in closet, roof balcony",
+        "Inside the Okamoto Station-west land-readjustment district"
+      ],
+      "cautions": [
+        "Top of the brief's budget at ¥4,880万 — little headroom for fees and moving costs",
+        "Land is a readjustment-district reserved plot (保留地) — confirm the final registration and settlement status",
+        "Verified on the listing page (information date 2026-10-23)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z20725613/172576001/x1030Z20725613.html",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h03",
+      "type": "house-used",
+      "district": "Tsuruta-cho",
+      "districtJa": "鶴田町",
+      "title": "Used 5LDK (1995) Sekisui House on 412m² — defect liability waived, experts only",
+      "priceMan": 2900,
+      "priceFrom": false,
+      "landM2": 412.05,
+      "buildingM2": 167.0,
+      "layout": "5LDK",
+      "station": "Tsuruta",
+      "stationJa": "鶴田",
+      "line": "JR Nikko Line",
+      "lineJa": "JR日光線",
+      "walkMin": 6,
+      "built": "Jul 1995",
+      "ageYears": 31,
+      "highlights": [
+        "Huge 412.05m² (about 124 tsubo) lot 6 minutes from Tsuruta Station",
+        "Light-steel Sekisui House build, floor heating fitted in a 2013 interior renovation",
+        "Carport and parking for 3+ cars, city gas"
+      ],
+      "cautions": [
+        "Contract defect liability is WAIVED (契約不適合責任免責) — the buyer carries all defect risk",
+        "Listing itself discloses leaks and faults in kitchen/bath/toilet plumbing and a broken water heater needing replacement — budget serious repair money",
+        "Verified on the listing page (information date 2026-10-23)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z21539398/170565001/x1030Z21539398.html",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "h04",
+      "type": "house-used",
+      "district": "Yoto 6",
+      "districtJa": "陽東6丁目",
+      "title": "Used 4SLDK (2004) — all-electric 2x4, roof and walls repainted in 2025, 6 min to the LRT",
+      "priceMan": 3480,
+      "priceFrom": false,
+      "landM2": 157.68,
+      "buildingM2": 105.36,
+      "layout": "4SLDK",
+      "station": "Utsunomiya University Yoto Campus",
+      "stationJa": "宇都宮大学陽東キャンパス",
+      "line": "Haga-Utsunomiya LRT (Lightline)",
+      "lineJa": "芳賀・宇都宮LRT（ライトライン）",
+      "walkMin": 6,
+      "built": "Oct 2004",
+      "ageYears": 22,
+      "highlights": [
+        "All-electric 2x4 house with a vaulted living room and electric floor heating",
+        "Roof and exterior walls repainted in February 2025; toilet replaced in 2022",
+        "Vacant and viewable any time, cleaned before handover",
+        "Part of the 347-lot Yoto Sakuragaoka subdivision by the university"
+      ],
+      "cautions": [
+        "Zoning is industrial (工業地域) despite the residential subdivision — factories/warehouses are permitted neighbours; check the immediate surroundings",
+        "District-plan exterior guidelines apply in Yoto Sakuragaoka",
+        "Verified on the listing page (information date 2026-10-23)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z21983086/004602031/x1030Z21983086.html",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h05",
+      "type": "house-used",
+      "district": "Naka-Okamoto-cho",
+      "districtJa": "中岡本町",
+      "title": "Used 4LDK (1992) at ¥1,300万 — 185m² lot, 14 min from Okamoto Station",
+      "priceMan": 1300,
+      "priceFrom": false,
+      "landM2": 185.66,
+      "buildingM2": 112.39,
+      "layout": "4LDK",
+      "station": "Okamoto",
+      "stationJa": "岡本",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 14,
+      "built": "Jan 1992",
+      "ageYears": 34,
+      "highlights": [
+        "Cheapest full-size family house in this set at ¥1,300万",
+        "Storage in every room and a wide south-facing balcony",
+        "Parking for 2 cars on a 185.66m² lot"
+      ],
+      "cautions": [
+        "34 years old — expect dated water fittings and insulation by current standards",
+        "Near Route 4 bypass — convenient by car, but check road noise at viewing",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_tochigi/09201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h06",
+      "type": "house-used",
+      "district": "Yayoi 2",
+      "districtJa": "弥生2丁目",
+      "title": "Used 3LDK (1988) — fully renovated in Jan 2025, 10 min from Minami-Utsunomiya",
+      "priceMan": 1649,
+      "priceFrom": false,
+      "landM2": 176.98,
+      "buildingM2": 85.69,
+      "layout": "3LDK",
+      "station": "Minami-Utsunomiya",
+      "stationJa": "南宇都宮",
+      "line": "Tobu Utsunomiya Line",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 10,
+      "built": "Mar 1988",
+      "ageYears": 38,
+      "highlights": [
+        "Renovation completed January 2025 — kitchen, bath, toilet and washstand all replaced new",
+        "Generous 18.5-tatami LDK, all rooms face southwest",
+        "Parking for 2–3 cars; Tsuruta Station is also 15 minutes on foot"
+      ],
+      "cautions": [
+        "1988 build is post-1981 seismic code but early — a home inspection is still advisable",
+        "Building is compact (85.69m²) for a 3LDK family house",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_tochigi/09201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h07",
+      "type": "house-used",
+      "district": "Fudomae 3",
+      "districtJa": "不動前3丁目",
+      "title": "Used 4LDK (1980) — comprehensively reformed, 8 min from Minami-Utsunomiya",
+      "priceMan": 2399,
+      "priceFrom": false,
+      "landM2": 200.0,
+      "buildingM2": 115.85,
+      "layout": "4LDK",
+      "station": "Minami-Utsunomiya",
+      "stationJa": "南宇都宮",
+      "line": "Tobu Utsunomiya Line",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 8,
+      "built": "Sep 1980",
+      "ageYears": 46,
+      "highlights": [
+        "Full reform: new kitchen, bath, toilet and washstand, roof and exterior-wall painting, extended parking",
+        "200m² lot with parking for 2 cars",
+        "Seller advertises a 2-year guarantee on leaks, structural defects and pipe faults, plus 5-year termite cover"
+      ],
+      "cautions": [
+        "Built September 1980 — PRE-1981 old seismic standard (旧耐震); the reform is cosmetic/equipment-led, so confirm whether any seismic reinforcement was done",
+        "46 years old — check roof structure, framing and insulation in person despite the fresh finish",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_tochigi/09201.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "h08",
+      "type": "house-used",
+      "district": "Shukugo 3",
+      "districtJa": "宿郷3丁目",
+      "title": "Used 3SLDK (2012) — all-electric, 5 min from Higashi-Shukugo LRT stop",
+      "priceMan": 3880,
+      "priceFrom": false,
+      "landM2": 134.8,
+      "buildingM2": 99.36,
+      "layout": "3SLDK",
+      "station": "Higashi-Shukugo",
+      "stationJa": "東宿郷",
+      "line": "Haga-Utsunomiya LRT (Lightline)",
+      "lineJa": "芳賀・宇都宮LRT（ライトライン）",
+      "walkMin": 5,
+      "built": "Nov 2012",
+      "ageYears": 13,
+      "highlights": [
+        "All-electric with dishwasher; toilets on both floors avoid the morning queue",
+        "Parking for 2 cars",
+        "13 minutes' walk to JR Utsunomiya Station as well as 5 minutes to the LRT"
+      ],
+      "cautions": [
+        "Priced at a premium for the station-east LRT corridor — compare with JR-side stock",
+        "Shukugo sits between the station and the Tagawa river side of the centre — check the flood hazard map for the exact plot",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/special/3002/ensen/228/2228210.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h09",
+      "type": "house-used",
+      "district": "Yanase 3",
+      "districtJa": "簗瀬3丁目",
+      "title": "Used 2LDK (1995) 3-storey at ¥1,990万 — 10 min from Utsunomiya Station, reform planned",
+      "priceMan": 1990,
+      "priceFrom": false,
+      "landM2": 83.76,
+      "buildingM2": 120.06,
+      "layout": "2LDK",
+      "station": "Utsunomiya",
+      "stationJa": "宇都宮",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 10,
+      "built": "Jul 1995",
+      "ageYears": 31,
+      "highlights": [
+        "120.06m² of floor space over 3 floors, 10 minutes from the main station",
+        "First floor usable as an office, per the listing",
+        "Interior/exterior reform scheduled for completion January 2026"
+      ],
+      "cautions": [
+        "Tiny 83.76m² plot for a 120m² house — virtually no garden or spare land",
+        "Reform is only PLANNED (scheduled Jan 2026) — confirm scope and completion in the contract, not the brochure",
+        "Yanase is on the Tagawa (田川) river side of the station — check the flood hazard map carefully",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (OCN feed)",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/ensen/159/2159240.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h10",
+      "type": "house-used",
+      "district": "Yanase 2",
+      "districtJa": "簗瀬2丁目",
+      "title": "Used 5SLK (1991) — about 123 tsubo of land, 15 min from Utsunomiya Station",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 406.61,
+      "buildingM2": 165.04,
+      "layout": "5SLK",
+      "station": "Utsunomiya",
+      "stationJa": "宇都宮",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 15,
+      "built": "Feb 1991",
+      "ageYears": 35,
+      "highlights": [
+        "Exceptional 406.61m² lot this close to the main station — room for a kitchen garden",
+        "26.9-tatami LDK including a tea room, storage in every room",
+        "Parking for 3 cars"
+      ],
+      "cautions": [
+        "35-year-old house — the price is mostly land; budget for renovation or an eventual rebuild",
+        "Right at the 15-minute walk limit, and Yanase is on the Tagawa river side — check the flood hazard map for the exact plot",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (OCN feed)",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3006/area_tochigi/09201/115.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h11",
+      "type": "house-used",
+      "district": "Tsuruta-cho",
+      "districtJa": "鶴田町",
+      "title": "Used 5SLDK (2022) — nearly new all-electric house, 15 min from Tsuruta Station",
+      "priceMan": 4790,
+      "priceFrom": false,
+      "landM2": 187.86,
+      "buildingM2": 145.74,
+      "layout": "5SLDK",
+      "station": "Tsuruta",
+      "stationJa": "鶴田",
+      "line": "JR Nikko Line",
+      "lineJa": "JR日光線",
+      "walkMin": 15,
+      "built": "Dec 2022",
+      "ageYears": 3,
+      "highlights": [
+        "Built December 2022 — effectively a nearly-new house without new-build pricing",
+        "All-electric with bathroom dryer, parking for 2 cars",
+        "Generous 145.74m² floor plan (5SLDK)"
+      ],
+      "cautions": [
+        "Right at the 15-minute walk limit in a car-oriented part of Tsuruta — daily life will still revolve around a car",
+        "Close to the ¥5,000万 cap once fees are added",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (OCN feed)",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3006/area_tochigi/09201/115.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h12",
+      "type": "house-used",
+      "district": "Kiyoharadai 1",
+      "districtJa": "清原台1丁目",
+      "title": "Used 5LDK (1976) on 329m² at ¥3,200万 — pre-1981 build, price is really the land",
+      "priceMan": 3200,
+      "priceFrom": false,
+      "landM2": 329.0,
+      "buildingM2": 135.79,
+      "layout": "5LDK",
+      "station": "Yui no Mori Nishi",
+      "stationJa": "ゆいの杜西",
+      "line": "Haga-Utsunomiya LRT (Lightline)",
+      "lineJa": "芳賀・宇都宮LRT（ライトライン）",
+      "walkMin": 7,
+      "built": "Dec 1976",
+      "ageYears": 49,
+      "highlights": [
+        "329m² lot with parking for 3+ cars in the Kiyoharadai estate",
+        "20-tatami LDK and a soft-floored Japanese room",
+        "7 minutes from the Yui no Mori Nishi LRT stop, with Yui no Mori's shops nearby"
+      ],
+      "cautions": [
+        "Built December 1976 — PRE-1981 old seismic standard (旧耐震) and 49 years old; treat as a land-plus project and get a full inspection",
+        "Kiyoharadai is a car-oriented hillside estate east of the Kinugawa — the LRT helps, but daily life still needs a car",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (OCN feed)",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_tochigi/09201/243.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "h13",
+      "type": "house-used",
+      "district": "Miyabara 1",
+      "districtJa": "宮原1丁目",
+      "title": "Used 5SLDK (1994) on 370m² — private-road share and defect liability waived",
+      "priceMan": 2490,
+      "priceFrom": false,
+      "landM2": 370.33,
+      "buildingM2": 157.33,
+      "layout": "5SLDK",
+      "station": "Minami-Utsunomiya",
+      "stationJa": "南宇都宮",
+      "line": "Tobu Utsunomiya Line",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 8,
+      "built": "Jan 1994",
+      "ageYears": 32,
+      "highlights": [
+        "Very large 370.33m² lot and 157.33m² house, parking for up to 4 cars",
+        "Second kitchen upstairs and a roughly 3-tatami walk-in closet — suits two-generation living",
+        "Shops, convenience stores and drugstores within a 10-minute walk"
+      ],
+      "cautions": [
+        "Contract defect liability is WAIVED (契約不適合責任免責) — the buyer carries all defect risk",
+        "Front road is a PRIVATE road (私道): the plot excludes a 1/16 co-ownership share of two private-road parcels totalling 100m² — confirm the share, maintenance duties and any rebuilding consent",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_tochigi/09201/055.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "h14",
+      "type": "house-new",
+      "district": "Sakura 1",
+      "districtJa": "桜1丁目",
+      "title": "New 3LDK — all-electric, performance-certified, 13 min from Tobu-Utsunomiya",
+      "priceMan": 3798,
+      "priceFrom": false,
+      "landM2": 146.44,
+      "buildingM2": 101.52,
+      "layout": "3LDK",
+      "station": "Tobu-Utsunomiya",
+      "stationJa": "東武宇都宮",
+      "line": "Tobu Utsunomiya Line",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 13,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "All-electric with design and construction housing-performance certificates",
+        "Parking for 2+ cars on a 146.44m² lot",
+        "Central Sakura address west of the prefectural office area"
+      ],
+      "cautions": [
+        "One of a 2-unit development (総戸数2戸) — the other unit's plan and timing may differ; confirm which plot this price buys",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (OCN feed)",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/228/2228220.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h15",
+      "type": "house-new",
+      "district": "Futaba 2",
+      "districtJa": "双葉2丁目",
+      "title": "New 4LDK from ¥2,999万 — 8 min from Esoshima Station, 2-unit development",
+      "priceMan": 2999,
+      "priceFrom": true,
+      "landM2": 153.15,
+      "buildingM2": 105.93,
+      "layout": "4LDK",
+      "station": "Esoshima",
+      "stationJa": "江曽島",
+      "line": "Tobu Utsunomiya Line",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 8,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Lowest-priced new build in this set, from ¥2,999万",
+        "City gas, bathroom dryer, parking for 2+ cars, ready to move in",
+        "153m²-plus lots — larger than typical station-east new builds"
+      ],
+      "cautions": [
+        "Price is 'from' (¥2,999万–¥3,099万 across 2 units) and building/land areas are ranges (105.93–107.26m² / 153.15–153.16m²) — the figures shown are the lower-priced unit's",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (OCN feed)",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/area_tochigi/09201/047.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h16",
+      "type": "house-new",
+      "district": "Naka-Okamoto-cho",
+      "districtJa": "中岡本町",
+      "title": "New 3LDK–4SLDK from ¥3,090万 — 9 min from Okamoto Station, performance-certified",
+      "priceMan": 3090,
+      "priceFrom": true,
+      "landM2": 111.47,
+      "buildingM2": 85.86,
+      "layout": "3LDK",
+      "station": "Okamoto",
+      "stationJa": "岡本",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 9,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "New builds from ¥3,090万 within a 9-minute walk of Okamoto Station",
+        "Design and construction housing-performance certificates, roof balconies",
+        "Handy for the Hiraide and Kiyohara industrial estates as well as the train"
+      ],
+      "cautions": [
+        "Price is 'from' (¥3,090万–¥3,290万 across 3 units) and sizes are ranges (building 85.86–95.58m², land 111.47–128.65m², layouts up to 4LDK+S) — figures shown are the entry unit's",
+        "Smallest lots in the new-build set — check parking and garden space per plot",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (OCN feed)",
+        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/area_tochigi/09201/047.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l01",
+      "type": "land",
+      "district": "Chuo 5",
+      "districtJa": "中央5丁目",
+      "title": "Vacant plot 8 minutes from Tobu-Utsunomiya, 2 minutes to Orion-dori",
+      "priceMan": 1800,
+      "priceFrom": false,
+      "landM2": 101.56,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tobu-Utsunomiya",
+      "stationJa": "東武宇都宮",
+      "line": "Tobu Utsunomiya Line",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 8,
+      "built": null,
+      "ageYears": null,
+      "zoning": "商業地域",
+      "coverageFar": "80% / 400%",
+      "highlights": [
+        "Vacant land, vacant delivery (更地渡し)",
+        "City gas, mains water and mains sewer",
+        "Orion-dori main street about 2 minutes on foot; city hall about 7 minutes",
+        "No building conditions — any house builder allowed",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Commercial zone, not a purely residential zone",
+        "Narrow frontage: 4.7m onto a 10m west road",
+        "Landscape Act restriction listed",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z73691230/177142001/x1030Z73691230.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l02",
+      "type": "land",
+      "district": "Higashi-Imaizumi 2",
+      "districtJa": "東今泉2丁目",
+      "title": "About 100 tsubo, 6 minutes from Yoto 3-chome LRT — but a planned road crosses it",
+      "priceMan": 3900,
+      "priceFrom": false,
+      "landM2": 330.87,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Yoto 3-chome",
+      "stationJa": "陽東３丁目",
+      "line": "Haga-Utsunomiya LRT (Lightline)",
+      "lineJa": "芳賀・宇都宮LRT（ライトライン）",
+      "walkMin": 6,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Large 330.87m2 (about 100 tsubo) corner plot, vacant delivery",
+        "Two LRT stops usable: Yoto 3-chome 6 min, Mine 8 min",
+        "City gas, mains water and mains sewer",
+        "Bell Mall shopping centre about 7 minutes by car",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Planned road (Izumigaoka line) affects the site — City Planning Act Article 53 permit required to build",
+        "Land development regulation area and Building Standards Act Article 22 area listed",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z20821073/172576001/x1030Z20821073.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "l03",
+      "type": "land",
+      "district": "Minami-Odori 1",
+      "districtJa": "南大通り1丁目",
+      "title": "Cleared, ready-to-build plot 9 minutes from JR Utsunomiya Station",
+      "priceMan": 2380,
+      "priceFrom": false,
+      "landM2": 132.23,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Utsunomiya",
+      "stationJa": "宇都宮",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "商業地域",
+      "coverageFar": "80% / 400%",
+      "highlights": [
+        "Vacant, already demolished and cleared — no demolition cost for the buyer",
+        "Immediate handover possible",
+        "City gas, mains water and mains sewer; regular-shaped plot",
+        "Station buildings Paseo and Tonarie Utsunomiya in walking distance",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Commercial zone, not a purely residential zone",
+        "Land development regulation area, Building Standards Act Article 22 area and Utsunomiya landscape ordinance listed",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z77926445/172576001/x1030Z77926445.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l04",
+      "type": "land",
+      "district": "Yoto 3",
+      "districtJa": "陽東3丁目",
+      "title": "South-west corner lot, 228m2, 9 minutes from Yoto 3-chome LRT — LP gas only",
+      "priceMan": 2830,
+      "priceFrom": false,
+      "landM2": 228.0,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Yoto 3-chome",
+      "stationJa": "陽東３丁目",
+      "line": "Haga-Utsunomiya LRT (Lightline)",
+      "lineJa": "芳賀・宇都宮LRT（ライトライン）",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "68 tsubo south-west corner plot in a quiet residential area",
+        "Vacant delivery; Yoto Elementary School about 8 minutes on foot",
+        "Bell Mall about 13 minutes on foot",
+        "No building conditions — any house builder allowed",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "LP gas only — city gas connection possible only for an extra fee, per the listing",
+        "Registered land category is forest (山林), not residential land",
+        "Front roads are narrow 4m roads to the south-east and south-west",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z21177163/172576001/x1030Z21177163.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l05",
+      "type": "land",
+      "district": "Nakakubo 2",
+      "districtJa": "中久保2丁目",
+      "title": "74 tsubo plot 12 minutes from the LRT — a 3-storey building still stands on it",
+      "priceMan": 2600,
+      "priceFrom": false,
+      "landM2": 245.44,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Yoto 3-chome",
+      "stationJa": "陽東３丁目",
+      "line": "Haga-Utsunomiya LRT (Lightline)",
+      "lineJa": "芳賀・宇都宮LRT（ライトライン）",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Large 245.44m2 (about 74 tsubo) plot in a quiet residential street",
+        "Two LRT stops usable: Yoto 3-chome 12 min, Utsunomiya University Yoto Campus 13 min",
+        "Supermarket and drugstore within 10 minutes on foot",
+        "No building conditions — any house builder allowed",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Building standing on the land (上物有り): a 3-storey building, sold as-is (現況渡し) — demolition and vacant delivery only by negotiation",
+        "LP gas, no city gas",
+        "South front road is 4.2m wide",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z21831790/172576001/x1030Z21831790.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l06",
+      "type": "land",
+      "district": "Asahi 2",
+      "districtJa": "旭2丁目",
+      "title": "Regular-shaped central plot, city hall 6 minutes, demolished and cleared on delivery",
+      "priceMan": 1490,
+      "priceFrom": false,
+      "landM2": 100.65,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tobu-Utsunomiya",
+      "stationJa": "東武宇都宮",
+      "line": "Tobu Utsunomiya Line",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "近隣商業地域",
+      "coverageFar": "80% / 200%",
+      "highlights": [
+        "Regular-shaped 100.65m2 plot, demolition and vacant delivery included",
+        "City hall about 6 minutes, York Benimaru supermarket about 6 minutes on foot",
+        "City gas, mains water and mains sewer; sewer beneficiary charge already paid",
+        "Wide 12.2m frontage onto a 9m west road",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Neighbourhood commercial zone, not a purely residential zone",
+        "Cultural Properties Protection Act restriction listed",
+        "Combined-sewer district",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z21909118/160532001/x1030Z21909118.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l07",
+      "type": "land",
+      "district": "Sakae-cho",
+      "districtJa": "栄町",
+      "title": "Cheapest central lot here — but only 82.64m2, 15 minutes from JR Utsunomiya",
+      "priceMan": 1200,
+      "priceFrom": false,
+      "landM2": 82.64,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Utsunomiya",
+      "stationJa": "宇都宮",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 15,
+      "built": null,
+      "ageYears": null,
+      "zoning": "商業地域",
+      "coverageFar": "80% / 400%",
+      "highlights": [
+        "Vacant delivery, no building conditions",
+        "Higashi Elementary School about 4 minutes on foot",
+        "City gas, mains water and mains sewer",
+        "Futaarayama Shrine and the Tashiro River promenade in walking distance, per the listing",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Small plot: 82.64m2 (25 tsubo)",
+        "North front road is only 4.2m wide",
+        "Commercial zone and quasi-fire-prevention area",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z20715977/172576001/x1030Z20715977.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l08",
+      "type": "land",
+      "district": "Nakagawara-cho",
+      "districtJa": "中河原町",
+      "title": "Two-station plot, Tobu-Utsunomiya 12 minutes, setback already done",
+      "priceMan": 1248,
+      "priceFrom": false,
+      "landM2": 125.08,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tobu-Utsunomiya",
+      "stationJa": "東武宇都宮",
+      "line": "Tobu Utsunomiya Line",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "商業地域",
+      "coverageFar": "80% / 400%",
+      "highlights": [
+        "Vacant land, vacant delivery; east-facing road frontage",
+        "Two stations in walking distance: Tobu-Utsunomiya 12 min, JR Utsunomiya 16 min per the detail page",
+        "City gas, mains water and mains sewer",
+        "City hall, schools and supermarkets in walking distance",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "East front road is 4m wide (listing states the setback is already completed)",
+        "Commercial zone and quasi-fire-prevention area",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z21831284/185230002/x1030Z21831284.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l09",
+      "type": "land",
+      "district": "Yoto 1",
+      "districtJa": "陽東1丁目",
+      "title": "50 tsubo by Utsunomiya University, 11 minutes from the LRT — setback required",
+      "priceMan": 1490,
+      "priceFrom": false,
+      "landM2": 166.44,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Utsunomiya University Yoto Campus",
+      "stationJa": "宇都宮大学陽東キャンパス",
+      "line": "Haga-Utsunomiya LRT (Lightline)",
+      "lineJa": "芳賀・宇都宮LRT（ライトライン）",
+      "walkMin": 11,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Regular-shaped 166.44m2 plot west of the university engineering faculty",
+        "Old house on the site is demolished by the seller — vacant delivery",
+        "Flat walk to the LRT stop",
+        "No building conditions — any house builder allowed",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Setback required when building (セットバック要)",
+        "West private road is a Building Standards Act Article 42-2 road; listed frontage is 2m onto it, with 14.9m of contact",
+        "LP gas listed in the facilities",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z77556295/160532001/x1030Z77556295.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l10",
+      "type": "land",
+      "district": "Nishi 1",
+      "districtJa": "西1丁目",
+      "title": "3 minutes from Tobu-Utsunomiya station — but the west road is only 2.5m and setback applies",
+      "priceMan": 2700,
+      "priceFrom": false,
+      "landM2": 207.07,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tobu-Utsunomiya",
+      "stationJa": "東武宇都宮",
+      "line": "Tobu Utsunomiya Line",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 3,
+      "built": null,
+      "ageYears": null,
+      "zoning": "商業地域",
+      "coverageFar": "80% / 400%",
+      "highlights": [
+        "Closest lot to a station in this set: Tobu-Utsunomiya 3 minutes on foot",
+        "Vacant land, immediate handover possible",
+        "City gas, mains water and mains sewer",
+        "207.07m2 — large for this central location",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Setback applies, per the listing's legal restrictions",
+        "West road is only 2.5m wide",
+        "Boundaries not clarified (境界明示なし), sold as-is (現況渡し), and contract non-conformity liability is waived, per the listing",
+        "Commercial zone, not a purely residential zone",
+        "Verified on the listing page (information date 2026-10-21)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z73952415/013837000/x1030Z73952415.html",
+        "verified": "detail",
+        "infoDate": "2026-10-21"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "l11",
+      "type": "land",
+      "district": "Naka-Okamoto-cho",
+      "districtJa": "中岡本町",
+      "title": "Quiet Okamoto plot on a 6m road, 14 minutes from Okamoto Station, cleared on delivery",
+      "priceMan": 1600,
+      "priceFrom": false,
+      "landM2": 185.66,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Okamoto",
+      "stationJa": "岡本",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "185.66m2 (over 50 tsubo) on a 6m north road in a quiet residential area",
+        "Demolition and vacant delivery; water and sewer already drawn into the site, per the listing",
+        "Children's park about 2 minutes on foot",
+        "No building conditions — any house builder allowed",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "LP gas, no city gas",
+        "Landscape Act, land development regulation area and Building Standards Act Article 22 area listed",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z78776075/177044001/x1030Z78776075.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l12",
+      "type": "land",
+      "district": "Suzumenomiya-cho",
+      "districtJa": "雀宮町",
+      "title": "Cheapest station plot here at ¥900万, 7 minutes from Suzumenomiya — but frontage is just 2m",
+      "priceMan": 900,
+      "priceFrom": false,
+      "landM2": 179.0,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Suzumenomiya",
+      "stationJa": "雀宮",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 7,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Lowest price in this set at ¥900万, 7 minutes from Suzumenomiya Station",
+        "Vacant land, vacant delivery",
+        "Suzumenomiya Chuo Elementary School about 12 minutes, convenience store about 7 minutes on foot",
+        "No building conditions — any house builder allowed",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Private-road burden of 36m2 is listed for this 179m2 plot (私道面積 36m2)",
+        "Very narrow access: only 2m of frontage onto a 4m north road",
+        "A utility pole and a support pole stand inside the site, per the listing",
+        "Floor-area ratio is in practice limited to 160% by the front-road width, despite the 200% zoning figure, per the listing",
+        "LP gas and mains water only in the facilities list — no mains sewer or city gas listed",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z79139555/065555078/x1030Z79139555.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    }
+  ]
+}

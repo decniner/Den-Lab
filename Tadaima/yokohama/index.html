@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadaima! ただいま！ — Yokohama · Houses &amp; Land Worth a Look</title>
+<meta name="description" content="Tadaima! collates houses and land for sale in Yokohama, Kanagawa, and ranks them with a transparent worth-a-look score, so you can decide what's worth viewing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Tadaima!<span class="jp">ただいま！</span></a>
+    <span class="edition">YOKOHAMA 横浜</span>
+    <nav class="head-nav">
+      <a href="../">← All cities</a>
+      <a href="#properties">Properties</a>
+      <a href="#how">How the ranking works</a>
+      <a href="#market">Yokohama market</a>
+      <span class="saved-pill">♥ Saved <span id="savedCount">0</span></span>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">HOUSES &amp; LAND · YOKOHAMA, KANAGAWA · 横浜の家と土地</p>
+    <h1>Find the place<br>you'll say <em>tadaima</em> to.</h1>
+    <p class="lede">Every house and lot for sale in Yokohama that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked by one transparent score. Start with the honest headline: in central Yokohama — Naka ward proper, Nishi ward, Minato Mirai — detached houses under ¥5,000万 within a station walk essentially do not exist. This edition is the outer ring where the brief survives: the Sotetsu and Izumino lines through Asahi, Seya and Izumi wards, the JR Yokohama and Negishi lines, Totsuka, and one pocket of Naka ward hilltop behind Yamate — scored ward by ward and station by station, never against a city-wide average that blends in the centre.</p>
+    <div class="stats">
+      <div class="stat"><b id="statTotal">–</b><span>properties collected</span></div>
+      <div class="stat"><b id="statHouses">–</b><span>houses 新築・中古</span></div>
+      <div class="stat"><b id="statLand">–</b><span>land / lots 土地</span></div>
+      <div class="stat wide"><b id="statTop">–</b><span>cheapest way in — the #1 ranked property's price &amp; area</span></div>
+    </div>
+    <p class="src" style="margin-top:16px">Researched 23 Oct 2026 from goo住宅・不動産, SUUMO, atHome and OCN不動産. Prices and availability change — each card links to the original listing. We don't reuse listing photos; see them on the source site.</p>
+  </div>
+</section>
+
+<div class="controls" id="properties">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="Property type">
+      <button class="chip active" data-type="all">All</button>
+      <button class="chip" data-type="house-new">New houses</button>
+      <button class="chip" data-type="house-used">Used houses</button>
+      <button class="chip" data-type="land">Land</button>
+    </div>
+    <label>Max price
+      <select id="fPrice">
+        <option value="3000">¥3,000万</option>
+        <option value="4000">¥4,000万</option>
+        <option value="5000" selected>¥5,000万</option>
+      </select>
+    </label>
+    <label>Max walk
+      <select id="fWalk">
+        <option value="5">5 min</option>
+        <option value="10">10 min</option>
+        <option value="15" selected>15 min</option>
+      </select>
+    </label>
+    <label>Station
+      <select id="fStation"><option value="all">All stations</option></select>
+    </label>
+    <label>Sort
+      <select id="fSort">
+        <option value="score" selected>Worth a look</option>
+        <option value="price">Lowest price</option>
+        <option value="walk">Shortest walk</option>
+      </select>
+    </label>
+    <input type="search" id="fSearch" placeholder="Search district or station…" aria-label="Search district or station">
+    <button class="chip" id="fSaved">♥ Saved only</button>
+    <span id="count" role="status"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty"><p>No properties match those filters. Try widening the price or walk limit.</p></div>
+
+  <section class="section" id="how">
+    <h2>How the ranking works</h2>
+    <p>One score out of 100, built from four parts — the same maths for every property, with the reasons printed on each card. No paid placement, no hidden weighting. A major caution (for example land in an urbanisation-control area, or a house sold as a renovation project) subtracts 7 points and is always shown, never buried.</p>
+    <table class="score-table">
+      <tr><th>Part</th><th>Points</th><th>What it measures</th></tr>
+      <tr><td><strong>Value</strong></td><td>45</td><td>Land: price per tsubo against MLIT transaction averages for that station and walk band (via Utinokati). Houses: price per m² of floor area against the median for new / used houses in this collection.</td></tr>
+      <tr><td><strong>Location</strong></td><td>30</td><td>Walk minutes to the nearest station, plus a station tier — the edition's strongest outer-ward hubs (Totsuka, Futamatagawa, Aobadai, Nakayama) scores highest.</td></tr>
+      <tr><td><strong>Space</strong></td><td>15</td><td>Floor area for houses, plot size for land — with over-sized plots eased back, because very large usually means very restricted.</td></tr>
+      <tr><td><strong>Confidence</strong></td><td>10</td><td>Whether the facts were verified on the listing's own detail page, and how recent its information date is. Index-page finds score lower and say so.</td></tr>
+    </table>
+    <p class="src">Freshness chips: a green <strong>New this week</strong> chip marks a property added at the latest weekly check; a <strong>Price ↓</strong> chip marks a verified price cut since the previous check, with the amount. Both clear at the next weekly check — they describe the last seven days, not the property.</p>
+  </section>
+
+  <section class="section" id="market">
+    <h2>Yokohama, in numbers</h2>
+    <p>Yokohama (population 3,750,952 in the 2025 Census — Japan's most populous city) is eighteen wards and at least three different property markets; the only honest way to score it is locally. Used houses anchor by ward (floor-area ¥/tsubo): Totsuka ≈130, Isogo ≈132, Asahi ≈134, Konan ≈135, Seya and Izumi ≈136, Midori ≈151 — and the Aoba fringe ¥150–165 — against a city-wide figure of ≈156 that this page never uses, because it blends in centre prices no listing here competes with. Land at the edition's stations runs from Eda (≈¥117万/tsubo) and Totsuka (≈¥110万) through the Sotetsu corridor — Futamatagawa and Kibogaoka ¥82万, Tsurugamine ¥62万, Mitsukyo ¥60万 — down to Seya (¥57万) and the Izumino-line stations in the ¥60–85万 band. The one central pocket, the southern Yamate hilltop, scores at ¥116万 from the official point inside the pocket itself; the prime Yamate-cho points at ¥216–271万 describe a different, famous neighbourhood and are rejected for these streets.</p>
+    <p>Direction: outer-ward residential land rose +2 to +3.5% in the 2026 official surveys — rising, not hot, and any listing priced more than ~10% above its station anchor needs a specific reason (corner, flat, new, south road), not momentum. Standing cautions are topographic: Yokohama is a city of hills and filled valleys, so sediment-disaster (red/yellow) zones and cliff （がけ） lots are checked card by card; the Tsurumi and Kashio river lowlands carry flood depth; and the western wards hold urbanisation-control pockets whose prices are a legal market, not a discount. Several listings in this set are index-level only and say so on the card — their hazard, road and boundary status is flagged as to-verify rather than asserted. Sources: MLIT transaction records and official land prices via Utinokati, Tochidai and Totinokati, MIC 2025 Census, Ekitan for train times.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Tadaima! ただいま！</strong> — a personal research project in Den-Lab. Yokohama edition; Kawagoe, Tokorozawa, Saitama City, Tachikawa, Matsudo and more cities on the home page.</span>
+    <span>Estimates and scores are a viewing shortlist tool, not financial or real-estate advice. All property facts come from the linked original listings; confirm price, availability, zoning and building conditions with the listing agent before acting.</span>
+  </div>
+</footer>
+
+<dialog id="detail" aria-labelledby="dBody">
+  <button class="d-close" id="dClose" aria-label="Close">✕</button>
+  <div id="dBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

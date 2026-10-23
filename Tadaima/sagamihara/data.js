@@ -1,0 +1,1146 @@
+window.TADAIMA_DATA = {
+  "site": {
+    "name": "Tadaima!",
+    "nameJa": "ただいま！",
+    "edition": "Sagamihara",
+    "editionJa": "相模原",
+    "researchedOn": "2026-10-23",
+    "area": "Sagamihara City, Kanagawa",
+    "areaJa": "神奈川県相模原市"
+  },
+  "defaults": {
+    "budgetMan": 5000,
+    "maxWalkMin": 15
+  },
+  "benchmarks": {
+    "landPerTsuboManByStation": {
+      "Aihara": 55,
+      "Banda": 42,
+      "Fuchinobe": 75,
+      "Fujino": 11,
+      "Harataima": 35,
+      "Hashimoto": 90,
+      "Higashi-Rinkan": 95,
+      "Kamimizo": 50,
+      "Kobuchi": 75,
+      "Minami-Hashimoto": 55,
+      "Odakyu-Sagamihara": 70,
+      "Sagami-Ono": 100,
+      "Sagamihara": 80,
+      "Sagamiko": 10,
+      "Shimomizo": 36,
+      "Sobudai-mae": 60,
+      "Tamazakai": 50,
+      "Yabe": 80
+    },
+    "note": "Land benchmarks: residential ¥/tsubo by station, adjusted from MLIT transactions via Utinokati and 2026 official points: Sagami-Ono ~100 (commercial-mixed at the station front), Higashi-Rinkan ~95 (volatile series), Hashimoto ~90 — adjusted UP, because the raw station figure (~46) is dragged down by urbanisation-control and very large lots; the commercial station frontage is excluded — Sagamihara ~80, Yabe ~80 (thin official series), Fuchinobe ~75 (adjusted up for large-lot drag in the raw figures), Kobuchi ~75, Odakyu-Sagamihara ~70, Sobudai-mae ~60, Aihara ~55 (thin), Minami-Hashimoto ~55 (thin, conflicting sources), Kamimizo ~50 (mixed catchment — Tana-side lots score in the ¥30s), Tamazakai ~50 (thin, indicative), Banda ~42 (thin), Shimomizo ~36 and Harataima ~35 (thin, rural fringe). Sagamiko (~10) and Fujino (~11) are a different, rural market and no listing there is scored against urban figures. Aggregator district prints of ¥200–253万/tsubo in Midori ward and around Sagami-Ono were composition artefacts and are rejected, as is a 2026 year-to-date Midori land print of −20% resting on 5 deals. Walk bands apply the urban corridor's observed gradient — land falls ~20–25% by a 10–15-minute walk on official points; the city-wide band figure (−47%) is fringe-contaminated and is not applied in-corridor. Used houses transacted at about ¥112万/tsubo city-wide (floor-area basis): Minami ward ~125, Chuo ward ~111, Midori ward ~94 on a mixed catchment; by age, ≤10-yr stock ~137 falls to ~73 for 30+-yr stock, which is land-value territory. Official residential land prices rose in all three wards in the 2026 公示地価 survey: Chuo +5.1%, Minami +4.5%, Midori +3.2% — fastest at Hashimoto and Sagami-Ono, flat in the rural west."
+  },
+  "properties": [
+    {
+      "id": "h01",
+      "type": "house-used",
+      "district": "Kamimizo 7",
+      "districtJa": "上溝７丁目",
+      "title": "Used 3LDK (2024) — seismic grade 3, performance-evaluation certified, 3 min to station",
+      "priceMan": 3080,
+      "priceFrom": false,
+      "landM2": 84.6,
+      "buildingM2": 91.08,
+      "layout": "3LDK",
+      "station": "Kamimizo",
+      "stationJa": "上溝",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 3,
+      "built": "Feb 2024",
+      "ageYears": 2,
+      "highlights": [
+        "Seismic grade 3 with design and construction performance evaluations obtained when new",
+        "South-facing, storage in every room",
+        "15.7-jo LDK with face-to-face kitchen",
+        "Bathroom TV and parking space",
+        "Flat, quiet residential street"
+      ],
+      "cautions": [
+        "Compact 84.6m2 plot — parking is a single car space",
+        "LP gas (no city gas on the listing)",
+        "In a quasi-fire-prevention zone with shadow regulations",
+        "Verified on the listing page (information date 2026-10-19)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14152/030Z20850440/187581001/x1030Z20850440.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
+      }
+    },
+    {
+      "id": "h02",
+      "type": "house-used",
+      "district": "Yabe 3",
+      "districtJa": "矢部３丁目",
+      "title": "Used 4LDK (1989) — Sekisui Heim light-steel custom home, cheapest station-side house in the set",
+      "priceMan": 1950,
+      "priceFrom": false,
+      "landM2": 84.24,
+      "buildingM2": 84.2,
+      "layout": "4LDK",
+      "station": "Yabe",
+      "stationJa": "矢部",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 8,
+      "built": "Apr 1989",
+      "ageYears": 37,
+      "highlights": [
+        "Sekisui Heim light-steel-frame custom-built home",
+        "Past repair history, interior kept clean, currently vacant",
+        "Sunny, quiet residential area",
+        "Fuchinobe Station also walkable in 15 min"
+      ],
+      "cautions": [
+        "No parking space on the plot (detail page: parking none)",
+        "Frontage is only about 2m to the north-east — confirm rebuild and vehicle access before offering",
+        "37 years old; budget for ongoing maintenance despite the steel frame",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14152/030Z21966745/171373001/x1030Z21966745.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "h03",
+      "type": "house-used",
+      "district": "Yabe 2",
+      "districtJa": "矢部２丁目",
+      "title": "Used 3SLDK (2004) — all-electric, full renovation completing Dec 2026, 7 min to Yabe",
+      "priceMan": 4580,
+      "priceFrom": false,
+      "landM2": 100.53,
+      "buildingM2": 93.56,
+      "layout": "3SLDK",
+      "station": "Yabe",
+      "stationJa": "矢部",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 7,
+      "built": "Sep 2004",
+      "ageYears": 22,
+      "highlights": [
+        "All-electric home (IH cooking)",
+        "Renovation package: exterior/roof painting, new flooring and wallpaper, new washstand and toilets",
+        "Faces an 18m south-east public road with 10.1m frontage",
+        "Storage room and multi-closets",
+        "Primary and junior-high schools within a 10-minute walk"
+      ],
+      "cautions": [
+        "Renovation is scheduled to complete in Dec 2026 — the price buys a promised finish, confirm the exact scope in writing",
+        "Listing notes '容認事項有' (matters requiring buyer acceptance) — ask the seller what these are",
+        "Currently vacant; handover timing is by consultation",
+        "Verified on the listing page (information date 2026-10-23)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/14152/1183880003138/118388/x41183880003138.html",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h04",
+      "type": "house-used",
+      "district": "Seishin 5",
+      "districtJa": "清新５丁目",
+      "title": "Used 4LDK (2003) — corner plot on two 6m public roads, 9 min to Minami-Hashimoto",
+      "priceMan": 3180,
+      "priceFrom": false,
+      "landM2": 106.77,
+      "buildingM2": 94.19,
+      "layout": "4LDK",
+      "station": "Minami-Hashimoto",
+      "stationJa": "南橋本",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 9,
+      "built": "Jul 2003",
+      "ageYears": 23,
+      "highlights": [
+        "Corner plot fronting 6m public roads on two sides (NE and NW)",
+        "City gas, mains sewer",
+        "Supermarket 476m, convenience store 343m",
+        "Seishin primary school 635m"
+      ],
+      "cautions": [
+        "Currently occupied by the seller (居住中) — viewings and handover need coordination",
+        "Detail page lists no parking field — confirm car space on site",
+        "In a quasi-fire-prevention zone with shadow regulations",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/14152/1244560008594/124456/x41244560008594.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "h05",
+      "type": "house-used",
+      "district": "Yabe 3",
+      "districtJa": "矢部３丁目",
+      "title": "Used 5LDK (1980) — very large light-steel house 4 min from Yabe, priced as a land-and-renovation play",
+      "priceMan": 4740,
+      "priceFrom": false,
+      "landM2": 133.24,
+      "buildingM2": 141.34,
+      "layout": "5LDK",
+      "station": "Yabe",
+      "stationJa": "矢部",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 4,
+      "built": "Jul 1980",
+      "ageYears": 46,
+      "highlights": [
+        "Huge 141.34m2 floor area on a 133.24m2 plot",
+        "Built-in garage — car kept out of the weather",
+        "Flat walk to the station, supermarket and general hospital within 10 min",
+        "Garden and two toilets"
+      ],
+      "cautions": [
+        "Built Jul 1980 — pre-1981 old seismic standard (旧耐震); seismic diagnosis/retrofit is on the buyer",
+        "Sold as-is (現況有姿); listing photos are AI/CG virtual staging, not the real interior",
+        "46 years old — price only makes sense against the land and station proximity",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14152/030Z21798561/129388001/x1030Z21798561.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "h06",
+      "type": "house-new",
+      "district": "Yabe 1",
+      "districtJa": "矢部１丁目",
+      "title": "New 3LDK+S–4LDK development (3 units) — 3-storey, LDK 15+ jo, delivery within the year",
+      "priceMan": 4499,
+      "priceFrom": true,
+      "landM2": 59.29,
+      "buildingM2": 95.63,
+      "layout": "3LDK+S",
+      "station": "Yabe",
+      "stationJa": "矢部",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 11,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Storage in every room, two toilets, 1-tsubo-plus bathroom",
+        "South-facing balconies on two sides, living-room stairs",
+        "Supermarket within a 10-minute walk, flat plot",
+        "City gas, mains sewer"
+      ],
+      "cautions": [
+        "Small plots for the price — land runs 59.29–71.1m2 across the 3 units; figures shown are the entry unit",
+        "3-storey design: daily life is spread over three floors",
+        "Completed late Sep 2026 per the listing; handover timing is by consultation",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/14152/030/Z/21974860.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "h07",
+      "type": "house-used",
+      "district": "Kobuchi 4",
+      "districtJa": "古淵４丁目",
+      "title": "Used 2SLDK (2024) — near-new, 3-side-lit 2nd-floor living room, 8 min to Kobuchi",
+      "priceMan": 4080,
+      "priceFrom": false,
+      "landM2": 88.15,
+      "buildingM2": 80.31,
+      "layout": "2SLDK",
+      "station": "Kobuchi",
+      "stationJa": "古淵",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 8,
+      "built": "Apr 2024",
+      "ageYears": 2,
+      "highlights": [
+        "Built Apr 2024 — fixtures still near-new, vacant for immediate handover",
+        "16.3-jo second-floor living room lit from three sides",
+        "Parking for 2 cars (one kei-sized)",
+        "Dishwasher, storage in every room plus two underfloor stores",
+        "Flat walk to the station in a quiet residential area"
+      ],
+      "cautions": [
+        "Setback required (セットバック要) — part of the plot is given over to the road on a future rebuild",
+        "Only 2SLDK — the service room is 6.6 jo but it is not a full third bedroom",
+        "First-type low-rise zone caps height at 50%/100% coverage/floor-area ratios",
+        "Verified on the listing page (information date 2026-10-23)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14153/030Z21081523/127192001/x1030Z21081523.html",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h08",
+      "type": "house-used",
+      "district": "Shimomizo",
+      "districtJa": "下溝",
+      "title": "Used 3LDK (2020) — Hebel Haus steel home with solar, 5 min to Harataima",
+      "priceMan": 4480,
+      "priceFrom": false,
+      "landM2": 113.01,
+      "buildingM2": 89.77,
+      "layout": "3LDK",
+      "station": "Harataima",
+      "stationJa": "原当麻",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 5,
+      "built": "Nov 2020",
+      "ageYears": 5,
+      "highlights": [
+        "Hebel Haus (Asahi Kasei) light-steel custom home, carefully kept",
+        "Solar power generation, all-electric",
+        "16.7-jo LDK, shoes-in closet, storage in every room",
+        "Parallel parking for 2 cars (size-dependent)",
+        "Park 2 min away, flat to the station"
+      ],
+      "cautions": [
+        "Sagami Line is a local line — check train frequency for the commute",
+        "Shimomizo sits in the Sagami River basin — check the city hazard map for flood depth before offering",
+        "Handover timing is by consultation",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14153/030Z78823228/000232146/x1030Z78823228.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "h09",
+      "type": "house-used",
+      "district": "Kamimizo",
+      "districtJa": "上溝",
+      "title": "Used 3SLDK (1996) — huge 268m2 plot with sunroom and roofed 2-car port, flat walk to Banda",
+      "priceMan": 3800,
+      "priceFrom": false,
+      "landM2": 268.09,
+      "buildingM2": 103.65,
+      "layout": "3SLDK",
+      "station": "Banda",
+      "stationJa": "番田",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 7,
+      "built": "Jun 1996",
+      "ageYears": 30,
+      "highlights": [
+        "268m2 plot — room for a garden, shed and roofed parking for 2",
+        "Sunroom and roof balcony",
+        "Bathroom/dressing-room renovated around 2023; living/kitchen wallpaper renewed Aug 2026; balcony waterproofing Sep 2026",
+        "Supermarket approx. 210m, primary and junior-high schools in walking distance",
+        "Listing says the plot also works as a rebuilding site"
+      ],
+      "cautions": [
+        "One portal feed states 公募売買・現況有姿・契約不適合責任免責 — sold as-is with defect-liability waived; inspection essential",
+        "Portal feeds disagree on the walk (6 vs 7 min) — scored at the conservative 7 min",
+        "30 years old; the value is mostly in the oversized plot",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産 (goo住宅・不動産)",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_kanagawa/14152.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 1
+    },
+    {
+      "id": "h10",
+      "type": "house-used",
+      "district": "Kamimizo 7",
+      "districtJa": "上溝７丁目",
+      "title": "Used 4LDK (2017) — south-facing counter-kitchen family home, 10 min to Kamimizo",
+      "priceMan": 2999,
+      "priceFrom": false,
+      "landM2": 124.36,
+      "buildingM2": 103.91,
+      "layout": "4LDK",
+      "station": "Kamimizo",
+      "stationJa": "上溝",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 10,
+      "built": "Sep 2017",
+      "ageYears": 9,
+      "highlights": [
+        "16-jo LDK with counter kitchen overlooking the living room",
+        "Japanese-style room, storage in every room",
+        "Parking for 2 cars (size-dependent)",
+        "Vacant — immediate move-in possible",
+        "Kamimizo primary / Kamimizo-Minami junior-high school district"
+      ],
+      "cautions": [
+        "Portal feeds swap the land/building figures in one table (124.36 vs 103.91m2) — scored as 103.91m2 building / 124.36m2 land per the majority of feeds; confirm on the listing",
+        "One feed says all rooms face south ('全室盗難向き' is a portal typo for south-facing) — verify orientation on site",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "OCN不動産 (goo住宅・不動産)",
+        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_kanagawa/14152.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h11",
+      "type": "house-used",
+      "district": "Koyama 1",
+      "districtJa": "小山１丁目",
+      "title": "Used 3LDK (2013) — renovated interior with built-in garage and loft, flat to two stations",
+      "priceMan": 3190,
+      "priceFrom": false,
+      "landM2": 87.49,
+      "buildingM2": 98.12,
+      "layout": "3LDK",
+      "station": "Minami-Hashimoto",
+      "stationJa": "南橋本",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 14,
+      "built": "Mar 2013",
+      "ageYears": 13,
+      "highlights": [
+        "Interior renovation completed — sold ready to view and move in",
+        "Built-in garage and loft",
+        "Storage in every room",
+        "Flat route to both Sagamihara and Hashimoto stations — easy by bicycle or pram",
+        "Schools and supermarket within walking distance"
+      ],
+      "cautions": [
+        "Portal feeds disagree on walk times (Minami-Hashimoto 12–14 min, Sagamihara 15–17 min) — scored at the conservative 14 min to Minami-Hashimoto",
+        "One feed gives the build date as Nov 2013 rather than Mar 2013 — confirm the registry date",
+        "Compact 87.49m2 plot",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14152&fi=1&ut%5B%5D=124_125&ut%5B%5D=056",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h12",
+      "type": "house-used",
+      "district": "Koyama 2",
+      "districtJa": "小山２丁目",
+      "title": "Used 4LDK (2013) — renovated, washroom straight from the entrance, 13 min to Minami-Hashimoto",
+      "priceMan": 3699,
+      "priceFrom": false,
+      "landM2": 94.8,
+      "buildingM2": 89.22,
+      "layout": "4LDK",
+      "station": "Minami-Hashimoto",
+      "stationJa": "南橋本",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 13,
+      "built": "Jul 2013",
+      "ageYears": 13,
+      "highlights": [
+        "Layout takes you from the entrance straight to the washroom",
+        "Tatami room beside the living room — play space, nap room or homework zone",
+        "Renovated and ready for immediate move-in",
+        "Home centre and daily shopping nearby"
+      ],
+      "cautions": [
+        "Portal feeds disagree on the walk (Minami-Hashimoto 12 vs 13 min) — scored at the conservative 13 min",
+        "Other feeds price a similar Koyama 2 house at 3,799–3,880万円 — confirm this is the same unit and current price",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_kanagawa/14152.html?p=2",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h13",
+      "type": "house-used",
+      "district": "Sagamidai 3",
+      "districtJa": "相模台３丁目",
+      "title": "Used 4LDK (2011) — vaulted 3.8m ceiling, south-east LDK, flat 10 min to Odakyu-Sagamihara",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 97.42,
+      "buildingM2": 98.12,
+      "layout": "4LDK",
+      "station": "Odakyu-Sagamihara",
+      "stationJa": "小田急相模原",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 10,
+      "built": "Aug 2011",
+      "ageYears": 15,
+      "highlights": [
+        "16.6-jo LDK facing south-east for light and ventilation",
+        "Bedroom with vaulted ceiling up to about 3.8m and windows on three sides",
+        "Underfloor storage and pantry in the kitchen",
+        "Flat approach to the station, shops scattered around the station area"
+      ],
+      "cautions": [
+        "15 years old with no renovation mentioned on the index — budget for water-area renewal",
+        "Parking is listed but size/number of cars is not stated on the index",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_kanagawa/14153.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h14",
+      "type": "house-used",
+      "district": "Kamitsuruma 4",
+      "districtJa": "上鶴間４丁目",
+      "title": "Used 4DK (1995) — flat 10 min to Higashi-Rinkan, primary school 80m away",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 100.1,
+      "buildingM2": 86.25,
+      "layout": "4DK",
+      "station": "Higashi-Rinkan",
+      "stationJa": "東林間",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 10,
+      "built": "Jun 1995",
+      "ageYears": 31,
+      "highlights": [
+        "First-type low-rise residential zone — quiet, protected streetscape",
+        "Kamitsuruma primary school about 80m away",
+        "Flat walk to Higashi-Rinkan Station",
+        "Parking for 1 car (size-dependent)"
+      ],
+      "cautions": [
+        "31 years old and laid out as a 4DK — dated plan and systems; price sits high for the age, negotiate against renovation costs",
+        "No renovation history stated on the index",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_kanagawa/14153.html",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h15",
+      "type": "house-used",
+      "district": "Higashi-Onuma 1",
+      "districtJa": "東大沼１丁目",
+      "title": "Used 4LDK (1996) — fully renovated by the seller with 2-year defect warranty, 14 min to Kobuchi",
+      "priceMan": 3049,
+      "priceFrom": false,
+      "landM2": 113.51,
+      "buildingM2": 88.4,
+      "layout": "4LDK",
+      "station": "Kobuchi",
+      "stationJa": "古淵",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 14,
+      "built": "Jan 1996",
+      "ageYears": 30,
+      "highlights": [
+        "Full renovation: new kitchen, bath, toilets, washstands, wallpaper, roof/exterior painting, new water heater",
+        "Seller warrants leaks, structural defects and pipe faults for 2 years after handover; termite treatment warranted 5 years",
+        "Parking for 2 cars",
+        "Onuma primary school 700m (9 min)"
+      ],
+      "cautions": [
+        "Portal feeds disagree on price (2,999 vs 3,049万円) and build month (Jan vs Nov 1996) — scored at the higher 3,049万円 and Jan 1996; confirm both",
+        "Structure is 30 years old under the new skin — the warranty terms matter, read them",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14153&sa_l=80&fi=1&ut%5B%5D=124_125&fn=14",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h16",
+      "type": "house-new",
+      "district": "Higashi-Hashimoto 3",
+      "districtJa": "東橋本３丁目",
+      "title": "New 3LDK–4LDK development (2 units, Garbo City) — 15 min to Hashimoto, three lines usable",
+      "priceMan": 4480,
+      "priceFrom": true,
+      "landM2": 63.38,
+      "buildingM2": 97.59,
+      "layout": "3LDK",
+      "station": "Hashimoto",
+      "stationJa": "橋本",
+      "line": "Keio Sagamihara Line",
+      "lineJa": "京王相模原線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Hashimoto Station (JR Yokohama, JR Sagami and Keio Sagamihara lines) 15 min on foot",
+        "Seller-designed and built (Garbo City) — no separate brokerage on the seller units",
+        "Counter kitchen and bathroom dryer",
+        "City gas"
+      ],
+      "cautions": [
+        "Two units at 4,480/4,680万円 — land 63.38–80.31m2 and buildings 97.59–104.85m2; figures shown are the entry unit, confirm the pairing per unit",
+        "Entry-unit plot is tight at 63.38m2",
+        "Right at the 15-minute walk limit — check the actual route",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6016/ensen/177/2177150.html?p=5",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "h17",
+      "type": "house-new",
+      "district": "Moto-Hashimoto Town",
+      "districtJa": "元橋本町",
+      "title": "New 3SLDK (2 units, Open House Mirasumo) — storage in every room, 14 min to Aihara",
+      "priceMan": 4580,
+      "priceFrom": false,
+      "landM2": 84.63,
+      "buildingM2": 98.12,
+      "layout": "3SLDK",
+      "station": "Aihara",
+      "stationJa": "相原",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 14,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Storage in every room, dishwasher and bathroom dryer fitted",
+        "Two stations/two lines usable (Aihara 14 min, Hashimoto 16 min)",
+        "Primary school within 800m",
+        "Completion was scheduled for Aug 2026"
+      ],
+      "cautions": [
+        "Two units on plots of 84.63–84.9m2 at a single listed price of 4,580万円 — confirm which unit and whether both remain",
+        "Hashimoto Station is 16 min — just outside the 15-minute brief; scored on Aihara at 14 min",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/kanagawa/sagamihara_midori-city/1449F5FFD4-town/list/",
+        "verified": "index",
+        "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "id": "l01",
+      "type": "land",
+      "district": "Higashi-Fuchinobe 1",
+      "districtJa": "東淵野辺1丁目",
+      "title": "Compact 66m² vacant plot 15 minutes from Kobuchi — extra 12.36m² passage land",
+      "priceMan": 2540,
+      "priceFrom": false,
+      "landM2": 66.56,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kobuchi",
+      "stationJa": "古淵",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 15,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant land, ready to plan",
+        "City gas, public water and sewer",
+        "Supermarket within a 12-minute walk",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Small plot at 66.56m² — design will be tight",
+        "Additional 12.36m² of passage land noted separately on the listing",
+        "Landscape Act, land-development regulation and quasi-fire zone restrictions apply",
+        "Access via a 3.7m passage on the north-west side",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/tochi/kanagawa/sc_sagamiharashichuo/nc_21964995/",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l02",
+      "type": "land",
+      "district": "Kamimizo",
+      "districtJa": "上溝",
+      "title": "Large 198m² plot by a river, 14 minutes from Banda — old house standing",
+      "priceMan": 2480,
+      "priceFrom": false,
+      "landM2": 198.34,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Banda",
+      "stationJa": "番田",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 150%",
+      "highlights": [
+        "Generous 198.34m² (about 60 tsubo)",
+        "Flat, open aspect with river beyond a passage to the north",
+        "Wide approx. 6.2m front road to the south-west",
+        "Public water and main sewer"
+      ],
+      "cautions": [
+        "Building standing on the land (古家有り) — demolition cost and responsibility to confirm",
+        "LP gas (個別LPG), no city gas",
+        "River-side position — check the hazard map before buying",
+        "Verified on the listing page (information date 2026-10-19)"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/tochi/kanagawa/sc_sagamiharashichuo/nc_21619263/",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
+      }
+    },
+    {
+      "id": "l03",
+      "type": "land",
+      "district": "Minami-Hashimoto 1",
+      "districtJa": "南橋本1丁目",
+      "title": "124m² plot just 3 minutes from Minami-Hashimoto — only 2m of road frontage",
+      "priceMan": 4380,
+      "priceFrom": false,
+      "landM2": 124.1,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Minami-Hashimoto",
+      "stationJa": "南橋本",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 3,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Exceptional 3-minute station walk",
+        "Set back from the road, so privacy is good",
+        "Supermarket 5 minutes on foot",
+        "Main sewer and public water",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Building standing on the land, sold as-is (上物有り・現況渡し) — demolition on buyer",
+        "Minimal frontage: only 2m onto a 6m east road (flag-lot shape)",
+        "LP gas, no city gas",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14152/030Z20587222/006050786/x1030Z20587222.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l04",
+      "type": "land",
+      "district": "Kamimizo",
+      "districtJa": "上溝",
+      "title": "Corner 151m² plot 5 minutes from Banda — seller demolishes, vacant handover",
+      "priceMan": 2780,
+      "priceFrom": false,
+      "landM2": 151.77,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Banda",
+      "stationJa": "番田",
+      "line": "JR Sagami Line",
+      "lineJa": "JR相模線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種中高層住居専用地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "Corner plot fronting public roads on two sides (12.1m and 9.9m)",
+        "Seller demolishes the old house at their cost — vacant-land handover",
+        "Boundary survey already completed (確定測量実施済み)",
+        "5-minute station walk",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "No gas, water or sewer connection pipes into the plot yet — city gas is in the front road but connection works and fees are extra",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14152/030Z20746686/006050786/x1030Z20746686.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l05",
+      "type": "land",
+      "district": "Yabe 3",
+      "districtJa": "矢部3丁目",
+      "title": "Huge 293m² plot 5 minutes from Yabe — NO-REBUILD, existing-use only",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 234.7,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Yabe",
+      "stationJa": "矢部",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Very large plot 5 minutes from the station",
+        "Front road about 6m wide",
+        "City gas, public water and main sewer",
+        "Listing suggests storage / rental-space / solar uses",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "NO-REBUILD (再建築不可): the plot does not front a Building Standards Act road by 2m or more, so a new house cannot be built",
+        "Headline 293.13m² includes a 58.4m² flag-pole extension — effective main area about 234.7m²",
+        "Building standing on the land, sold as-is (上物有り・現況渡し)",
+        "Water and sewer connection pipes are shared with the neighbouring plot",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14152/030Z75708555/000009004/x1030Z75708555.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 2
+    },
+    {
+      "id": "l06",
+      "type": "land",
+      "district": "Yabe 2",
+      "districtJa": "矢部2丁目",
+      "title": "Vacant 161m² plot 7 minutes from Yabe — immediate handover",
+      "priceMan": 2680,
+      "priceFrom": false,
+      "landM2": 161.5,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Yabe",
+      "stationJa": "矢部",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 7,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant land, immediate handover and immediate building possible per listing",
+        "Generous 161.5m² in a quiet residential area",
+        "Front road about 6m",
+        "Schools, parks and shops nearby",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Listing remarks state there are NO city gas, water or sewer connection pipes drawn into the plot, despite the equipment field listing them — budget for connection works",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14152/030Z21645455/145164001/x1030Z21645455.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l07",
+      "type": "land",
+      "district": "Miyashita-Honcho 3",
+      "districtJa": "宮下本町3丁目",
+      "title": "Vacant 104m² low-rise-zone plot, 10 minutes from Tamazakai",
+      "priceMan": 2380,
+      "priceFrom": false,
+      "landM2": 104.32,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tamazakai",
+      "stationJa": "多摩境",
+      "line": "Keio Sagamihara Line",
+      "lineJa": "京王相模原線",
+      "walkMin": 10,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Vacant land in a quiet low-rise residential zone",
+        "City gas, public water and main sewer",
+        "Two-line area on the Machida border",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "10m height limit applies in this low-rise zone",
+        "Frontage is on a 4.1m road to the north-east",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14152/030Z21791619/129388001/x1030Z21791619.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l08",
+      "type": "land",
+      "district": "Higashi-Hashimoto 3",
+      "districtJa": "東橋本3丁目",
+      "title": "106m² plot 14 minutes from Hashimoto on a private road — existing house over limits",
+      "priceMan": 2730,
+      "priceFrom": false,
+      "landM2": 106.71,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Hashimoto",
+      "stationJa": "橋本",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80%",
+      "highlights": [
+        "Three lines usable at Hashimoto (JR Yokohama, JR Sagami, Keio Sagamihara)",
+        "Wide 10.1m frontage onto the front road",
+        "Regular-shaped plot in a quiet low-rise area",
+        "Supermarket 5 minutes on foot",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Front road is a private road (私道, about 4.2m); a 10.25m² private-road area and a 1/12 share of about 123m² of private road are involved",
+        "Building standing on the land, sold as-is (上物有り・現況渡し) — demolition on buyer",
+        "Listing states the existing house exceeds the prescribed coverage/FAR, so a same-size rebuild is not possible",
+        "LP gas, no city gas",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14151/030Z21411633/006050786/x1030Z21411633.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l09",
+      "type": "land",
+      "district": "Hashimoto 4",
+      "districtJa": "橋本4丁目",
+      "title": "Compact vacant 80m² plot 14 minutes from Hashimoto, two lines",
+      "priceMan": 3570,
+      "priceFrom": false,
+      "landM2": 80.97,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Hashimoto",
+      "stationJa": "橋本",
+      "line": "Keio Sagamihara Line",
+      "lineJa": "京王相模原線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 176%",
+      "highlights": [
+        "Vacant land, flat",
+        "City gas, public water and main sewer",
+        "Primary school 5 minutes on foot",
+        "High 176% FAR for a plot this size",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Small plot at 80.97m² and the highest ¥/tsubo in this set",
+        "Quasi-fire zone (準防火地域) restrictions apply",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14151/030Z21989808/003852042/x1030Z21989808.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l10",
+      "type": "land",
+      "district": "Kobuchi 4",
+      "districtJa": "古淵4丁目",
+      "title": "104m² low-rise plot 7 minutes from Kobuchi, malls within 10 minutes",
+      "priceMan": 2990,
+      "priceFrom": false,
+      "landM2": 104.62,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kobuchi",
+      "stationJa": "古淵",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 7,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "7-minute station walk in a quiet low-rise zone",
+        "Ito-Yokado and Aeon Kobuchi both about 9 minutes on foot",
+        "Good sunlight per listing",
+        "Main sewer and public water",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Building standing on the land, sold as-is (上物有り・現況渡し) — demolition on buyer",
+        "Private-road area of 15.5m² recorded on the listing",
+        "LP gas, no city gas",
+        "Cultural-properties, Landscape Act and quasi-fire zone restrictions apply",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14153/030Z21761452/165700001/x1030Z21761452.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l11",
+      "type": "land",
+      "district": "Onodai 6",
+      "districtJa": "大野台6丁目",
+      "title": "Three-side corner 129m² plot, 10 minutes from Kobuchi — vacant handover",
+      "priceMan": 4180,
+      "priceFrom": false,
+      "landM2": 129.23,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kobuchi",
+      "stationJa": "古淵",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 10,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "Rare three-side corner plot with roads on three sides",
+        "Vacant-land handover, regular shape, flat walk to the station",
+        "Quiet low-rise residential zone",
+        "Supermarket within 10 minutes",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Large private-road area of 46.67m² recorded on the listing — confirm whether it sits inside or outside the headline 129.23m² before relying on the effective area",
+        "Equipment field lists both LP gas and city gas — treated conservatively as LP gas / no confirmed city gas",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14153/030Z21747875/140779001/x1030Z21747875.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "id": "l12",
+      "type": "land",
+      "district": "Kamitsuruma 6",
+      "districtJa": "上鶴間6丁目",
+      "title": "83m² plot just 4 minutes from Higashi-Rinkan, Sagami-Ono in 16",
+      "priceMan": 3650,
+      "priceFrom": false,
+      "landM2": 83.23,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Higashi-Rinkan",
+      "stationJa": "東林間",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 4,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Excellent 4-minute station walk, two stations usable (Sagami-Ono 16 min)",
+        "Faces an approx. 5.0m public road",
+        "City gas, public water and main sewer",
+        "Primary school within 10 minutes",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Building standing on the land, sold as-is (上物有り・現況渡し) — demolition on buyer",
+        "Compact plot at 83.23m² with a high ¥/tsubo",
+        "Verified on the listing page (information date 2026-10-22)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14153/030Z21638424/065555077/x1030Z21638424.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      }
+    }
+  ]
+};

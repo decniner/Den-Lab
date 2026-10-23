@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadaima! ただいま！ — Funabashi · Houses &amp; Land Worth a Look</title>
+<meta name="description" content="Tadaima! collates houses and land for sale in Funabashi, Chiba, and ranks them with a transparent worth-a-look score, so you can decide what's worth viewing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Tadaima!<span class="jp">ただいま！</span></a>
+    <span class="edition">FUNABASHI 船橋</span>
+    <nav class="head-nav">
+      <a href="../">← All cities</a>
+      <a href="#properties">Properties</a>
+      <a href="#how">How the ranking works</a>
+      <a href="#market">Funabashi market</a>
+      <span class="saved-pill">♥ Saved <span id="savedCount">0</span></span>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">HOUSES &amp; LAND · FUNABASHI, CHIBA · 船橋の家と土地</p>
+    <h1>Find the place<br>you'll say <em>tadaima</em> to.</h1>
+    <p class="lede">Every house and lot for sale in Funabashi that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked by one transparent score, so you can decide what's actually worth a viewing trip. Funabashi prices like two different cities: the bay-side south around Funabashi station bites like Tokyo, so this collection lives mostly on the Shimosa plateau in the north — Keisei Matsudo Line and Keisei Main Line stations where detached houses come back inside the cap — plus a few lots scattered across its nine rail lines.</p>
+    <div class="stats">
+      <div class="stat"><b id="statTotal">–</b><span>properties collected</span></div>
+      <div class="stat"><b id="statHouses">–</b><span>houses 新築・中古</span></div>
+      <div class="stat"><b id="statLand">–</b><span>land / lots 土地</span></div>
+      <div class="stat wide"><b id="statTop">–</b><span>cheapest way in — the #1 ranked property's price &amp; area</span></div>
+    </div>
+    <p class="src" style="margin-top:16px">Researched 23 Oct 2026 from goo住宅・不動産 (SUUMO feed). Prices and availability change — each card links to the original listing. We don't reuse listing photos; see them on the source site.</p>
+  </div>
+</section>
+
+<div class="controls" id="properties">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="Property type">
+      <button class="chip active" data-type="all">All</button>
+      <button class="chip" data-type="house-new">New houses</button>
+      <button class="chip" data-type="house-used">Used houses</button>
+      <button class="chip" data-type="land">Land</button>
+    </div>
+    <label>Max price
+      <select id="fPrice">
+        <option value="3000">¥3,000万</option>
+        <option value="4000">¥4,000万</option>
+        <option value="5000" selected>¥5,000万</option>
+      </select>
+    </label>
+    <label>Max walk
+      <select id="fWalk">
+        <option value="5">5 min</option>
+        <option value="10">10 min</option>
+        <option value="15" selected>15 min</option>
+      </select>
+    </label>
+    <label>Station
+      <select id="fStation"><option value="all">All stations</option></select>
+    </label>
+    <label>Sort
+      <select id="fSort">
+        <option value="score" selected>Worth a look</option>
+        <option value="price">Lowest price</option>
+        <option value="walk">Shortest walk</option>
+      </select>
+    </label>
+    <input type="search" id="fSearch" placeholder="Search district or station…" aria-label="Search district or station">
+    <button class="chip" id="fSaved">♥ Saved only</button>
+    <span id="count" role="status"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty"><p>No properties match those filters. Try widening the price or walk limit.</p></div>
+
+  <section class="section" id="how">
+    <h2>How the ranking works</h2>
+    <p>One score out of 100, built from four parts — the same maths for every property, with the reasons printed on each card. No paid placement, no hidden weighting. A major caution (for example land in an urbanisation-control area, or a house sold as a renovation project) subtracts 7 points and is always shown, never buried.</p>
+    <table class="score-table">
+      <tr><th>Part</th><th>Points</th><th>What it measures</th></tr>
+      <tr><td><strong>Value</strong></td><td>45</td><td>Land: price per tsubo against MLIT transaction averages for that station and walk band (via Utinokati). Houses: price per m² of floor area against the median for new / used houses in this collection.</td></tr>
+      <tr><td><strong>Location</strong></td><td>30</td><td>Walk minutes to the nearest station, plus a station tier — Funabashi (JR Sobu Rapid / Keisei / Tozai hub) scores highest.</td></tr>
+      <tr><td><strong>Space</strong></td><td>15</td><td>Floor area for houses, plot size for land — with over-sized plots eased back, because very large usually means very restricted.</td></tr>
+      <tr><td><strong>Confidence</strong></td><td>10</td><td>Whether the facts were verified on the listing's own detail page, and how recent its information date is. Index-page finds score lower and say so.</td></tr>
+    </table>
+    <p class="src">Freshness chips: a green <strong>New this week</strong> chip marks a property added at the latest weekly check; a <strong>Price ↓</strong> chip marks a verified price cut since the previous check, with the amount. Both clear at the next weekly check — they describe the last seven days, not the property.</p>
+  </section>
+
+  <section class="section" id="market">
+    <h2>Funabashi, in numbers</h2>
+    <p>Funabashi (population 652,136 — Chiba's second-largest city, still growing) is the classic Tokyo bed town written large: a planned, quieter plateau in the north and a flat, partly reclaimed bay side in the south. Used houses anchor at about ¥112万/tsubo city-wide (floor-area basis), from ≈¥150万 around Higashi-Nakayama and the port side down through the Natsumi/Narashinodai plateau at ¥130–140万. Land follows the trains: ¥105万/tsubo at Funabashi/Keisei-Funabashi, ¥115万 on the Tsudanuma side, ¥85–95万 across the Keisei Main Line and JR-side stations — then a long branch-line tail through Kita-Narashino (¥60万) and Takane-Kido (¥60万) down to Misaki and Takifudo (¥30万), which is exactly where this collection's houses cluster. Station-level pricing varies more inside Funabashi than between many neighbouring cities, so every card is scored against its own station.</p>
+    <p>Officially still rising: residential land prices +4.5% in the 2026 prefectural survey after +5.3% in 2025. Three standing cautions, all evidenced. The reclaimed bay-side south liquefied in 2011 — post-quake surveys documented house and lifeline damage across Funabashi, including in areas the hazard map rated no-risk where the old landform was low wetland — so south-side and valley-bottom listings need the old-topography check, not just the map. The plateau edge carries sediment-disaster alert zones that are not theoretical: in September 2026 the city issued a Level-4 evacuation instruction covering 9,100 households in those zones during a typhoon. And the northern and eastern fringe holds urbanisation-control listings priced at a fraction of in-zone land for legal reasons — rebuilding and financing there are restricted, and cards say so. One honest negative: no Funabashi-specific aircraft-noise evidence was found, so none is claimed. Sources: MLIT transaction records and official land prices via Utinokati, Tochidai and Tochinokati, Ekitan for train times.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Tadaima! ただいま！</strong> — a personal research project in Den-Lab. Funabashi edition; Kawagoe, Tokorozawa, Saitama City, Tachikawa, Matsudo and more cities on the home page.</span>
+    <span>Estimates and scores are a viewing shortlist tool, not financial or real-estate advice. All property facts come from the linked original listings; confirm price, availability, zoning and building conditions with the listing agent before acting.</span>
+  </div>
+</footer>
+
+<dialog id="detail" aria-labelledby="dBody">
+  <button class="d-close" id="dClose" aria-label="Close">✕</button>
+  <div id="dBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

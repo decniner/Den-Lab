@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadaima! ただいま！ — Hachioji · Houses &amp; Land Worth a Look</title>
+<meta name="description" content="Tadaima! collates houses and land for sale in Hachioji, Tokyo, and ranks them with a transparent worth-a-look score, so you can decide what's worth viewing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Tadaima!<span class="jp">ただいま！</span></a>
+    <span class="edition">HACHIOJI 八王子</span>
+    <nav class="head-nav">
+      <a href="../">← All cities</a>
+      <a href="#properties">Properties</a>
+      <a href="#how">How the ranking works</a>
+      <a href="#market">Hachioji market</a>
+      <span class="saved-pill">♥ Saved <span id="savedCount">0</span></span>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">HOUSES &amp; LAND · HACHIOJI, TOKYO · 八王子の家と土地</p>
+    <h1>Find the place<br>you'll say <em>tadaima</em> to.</h1>
+    <p class="lede">Every house and lot for sale in Hachioji that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked by one transparent score, so you can decide what's actually worth a viewing trip. Honest framing first: this collection does not cluster around Hachioji station, where walkable detached stock under the cap is scarce — it spreads along the JR Hachioji and Yokohama lines, the Keio network and the Tama Monorail, from the planned streets of Minamino to the mountain-fringe stations on the way to Mt Takao.</p>
+    <div class="stats">
+      <div class="stat"><b id="statTotal">–</b><span>properties collected</span></div>
+      <div class="stat"><b id="statHouses">–</b><span>houses 新築・中古</span></div>
+      <div class="stat"><b id="statLand">–</b><span>land / lots 土地</span></div>
+      <div class="stat wide"><b id="statTop">–</b><span>cheapest way in — the #1 ranked property's price &amp; area</span></div>
+    </div>
+    <p class="src" style="margin-top:16px">Researched 23 Oct 2026 from goo住宅・不動産. Prices and availability change — each card links to the original listing. We don't reuse listing photos; see them on the source site.</p>
+  </div>
+</section>
+
+<div class="controls" id="properties">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="Property type">
+      <button class="chip active" data-type="all">All</button>
+      <button class="chip" data-type="house-new">New houses</button>
+      <button class="chip" data-type="house-used">Used houses</button>
+      <button class="chip" data-type="land">Land</button>
+    </div>
+    <label>Max price
+      <select id="fPrice">
+        <option value="3000">¥3,000万</option>
+        <option value="4000">¥4,000万</option>
+        <option value="5000" selected>¥5,000万</option>
+      </select>
+    </label>
+    <label>Max walk
+      <select id="fWalk">
+        <option value="5">5 min</option>
+        <option value="10">10 min</option>
+        <option value="15" selected>15 min</option>
+      </select>
+    </label>
+    <label>Station
+      <select id="fStation"><option value="all">All stations</option></select>
+    </label>
+    <label>Sort
+      <select id="fSort">
+        <option value="score" selected>Worth a look</option>
+        <option value="price">Lowest price</option>
+        <option value="walk">Shortest walk</option>
+      </select>
+    </label>
+    <input type="search" id="fSearch" placeholder="Search district or station…" aria-label="Search district or station">
+    <button class="chip" id="fSaved">♥ Saved only</button>
+    <span id="count" role="status"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty"><p>No properties match those filters. Try widening the price or walk limit.</p></div>
+
+  <section class="section" id="how">
+    <h2>How the ranking works</h2>
+    <p>One score out of 100, built from four parts — the same maths for every property, with the reasons printed on each card. No paid placement, no hidden weighting. A major caution (for example land in an urbanisation-control area, or a house sold as a renovation project) subtracts 7 points and is always shown, never buried.</p>
+    <table class="score-table">
+      <tr><th>Part</th><th>Points</th><th>What it measures</th></tr>
+      <tr><td><strong>Value</strong></td><td>45</td><td>Land: price per tsubo against MLIT transaction averages for that station and walk band (via Utinokati). Houses: price per m² of floor area against the median for new / used houses in this collection.</td></tr>
+      <tr><td><strong>Location</strong></td><td>30</td><td>Walk minutes to the nearest station, plus a station tier — Hachioji (JR Chuo/Hachiko/Yokohama + Keio hub) scores highest.</td></tr>
+      <tr><td><strong>Space</strong></td><td>15</td><td>Floor area for houses, plot size for land — with over-sized plots eased back, because very large usually means very restricted.</td></tr>
+      <tr><td><strong>Confidence</strong></td><td>10</td><td>Whether the facts were verified on the listing's own detail page, and how recent its information date is. Index-page finds score lower and say so.</td></tr>
+    </table>
+    <p class="src">Freshness chips: a green <strong>New this week</strong> chip marks a property added at the latest weekly check; a <strong>Price ↓</strong> chip marks a verified price cut since the previous check, with the amount. Both clear at the next weekly check — they describe the last seven days, not the property.</p>
+  </section>
+
+  <section class="section" id="market">
+    <h2>Hachioji, in numbers</h2>
+    <p>Hachioji (population 574,428 in the 2025 Census — Tokyo's only core city and its largest municipality outside the 23 wards) is really two markets. The south is planned: Hachioji-Minamino and Minami-Osawa, new towns whose used houses transact at ¥140万/tsubo and up and whose land holds ≈¥65万/tsubo. The centre and the JR corridor price like a solid commuter hub — used houses ≈¥106万/tsubo city-wide, land ¥70万/tsubo on Hachioji's residential streets (its transaction catchment average of 34–47 is meaningless: the average deal is a 30–50-minute walk and includes urbanisation-control plots at ¥1万), ¥62万 at Keio-Hachioji, ¥60万 at Nishi-Hachioji — and then values fall away along the western corridor toward Takao (¥45万 for walkable streets) and the mountain fringe, where ¥899万 lots exist precisely because the land is hard to use.</p>
+    <p>Direction is gentle but steepening: official residential prices +4.2% in the 2026 prefectural survey after +3.9% in 2025 and ~+1%/yr before that — ignore the +16.7% figure circulating on aggregator pages, which is a point-count artefact. Population drifts slowly down while households rise, so the stock ages even as prices firm. Three standing cautions. The Asa and Yudono river lowlands (the Kitano–Naganuma belt, Katakura) sit in flood zones — check the hazard map before viewing there. The western and northern slopes carry designated landslide (土砂災害) zones, printed on cards where they bite. And the west/north fringe holds urbanisation-control land where building is banned in principle — any suspiciously cheap western lot needs its 線引き status checked before its price means anything. Sources: MLIT transaction records and official land prices via Utinokati, Ekitan for train times.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Tadaima! ただいま！</strong> — a personal research project in Den-Lab. Hachioji edition; Kawagoe, Tokorozawa, Saitama City, Tachikawa, Matsudo and more cities on the home page.</span>
+    <span>Estimates and scores are a viewing shortlist tool, not financial or real-estate advice. All property facts come from the linked original listings; confirm price, availability, zoning and building conditions with the listing agent before acting.</span>
+  </div>
+</footer>
+
+<dialog id="detail" aria-labelledby="dBody">
+  <button class="d-close" id="dClose" aria-label="Close">✕</button>
+  <div id="dBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
