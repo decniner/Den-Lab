@@ -47,7 +47,7 @@ function mountCityRouteView(panel,route,mapData,options={}){
 
  function selectStop(id){mapController?.selectStop(id);host.querySelectorAll('[data-route-stop]').forEach(item=>item.toggleAttribute('aria-current',item.getAttribute('data-route-stop')===id));host.querySelectorAll('[data-sequence-stop]').forEach(button=>button.setAttribute('aria-pressed',String(button.getAttribute('data-sequence-stop')===id)));}
  host.querySelectorAll('[data-select-route-stop],[data-sequence-stop]').forEach(button=>button.addEventListener('click',()=>selectStop(button.getAttribute('data-select-route-stop')||button.getAttribute('data-sequence-stop'))));
- return {destroy(){closeExpandedMap(false);mapController?.destroy();host.remove();},selectStop(id){mapController?.selectStop(id);}};
+ return {destroy(){closeExpandedMap(false);mapController?.destroy();host.remove();},selectStop(id){mapController?.selectStop(id);},resize(){requestAnimationFrame(()=>mapController?.resize());}};
 }
 const api={orderedStops,legDirectionsUrl,mountCityRouteView};
 root.CityRouteUI=api;

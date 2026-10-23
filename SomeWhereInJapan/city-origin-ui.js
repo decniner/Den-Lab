@@ -152,6 +152,9 @@ window.addEventListener('popstate',()=>{
  select.value=core.ALL_ORIGINS.some(origin=>origin.id===value)?value:'tokyo';
  render();
 });
+window.addEventListener('atlas:viewchange',event=>{
+ if(event.detail?.view==='tokyo')requestAnimationFrame(()=>requestAnimationFrame(()=>activeMappedRoute?.resize()));
+});
 render();
 })();
 

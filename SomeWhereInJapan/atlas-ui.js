@@ -11,6 +11,7 @@
       tab.tabIndex=selected?0:-1;
     });
     panels.forEach(panel=>{panel.hidden=panel.dataset.atlasPanel!==view;});
+    window.dispatchEvent(new CustomEvent('atlas:viewchange',{detail:{view}}));
     if(options.focus)tabs.find(tab=>tab.dataset.atlasTab===view)?.focus();
     if(options.history){
       const url=new URL(location.href);url.hash=view==='tokyo'?'daytrips':'atlas';

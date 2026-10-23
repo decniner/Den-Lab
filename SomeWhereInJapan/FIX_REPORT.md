@@ -1,5 +1,36 @@
 # Somewhere in Japan fixes — report
 
+## Mobile tab layout fix
+
+**Root cause:** the active tab itself was not scaled and the HTML viewport is correctly set to `width=device-width, initial-scale=1`. The squeezed content came from nested gutters: `.field-atlas-section` and its `.atlas-panel` children both added horizontal padding, then `.city-origin-results`, `.city-origin-plan`, and `.city-route-shared` each added another inset. In `styles.css`, the existing small-screen rules did not remove those inner insets or reflow the route heading/map controls and stop-card article layout. The hidden-panel MapLibre map also needed a resize when its tab becomes visible. The photo fallback text was hidden in the markup but the mobile CSS changed its `display`, overriding the browser's `[hidden]` behavior.
+
+**Changes:** `styles.css` now gives the atlas one consistent 20px phone gutter, removes redundant panel padding, stacks the route banner, expand button, map, stop cards, and day-trip form, and restores native hidden behavior for the photo error message. `city-route-map.js` refits/resizes after the tab is shown, keeps mobile map attribution compact, and fans nearby markers apart. `city-route-ui.js`, `city-origin-ui.js`, and `atlas-ui.js` connect resize handling to tab activation. Cache versions were advanced in `index.html`. Desktop rules were left in place.
+
+**Real mobile viewport measurements:** Edge DevTools Protocol device emulation (`mobile: true`, DPR 1, 844px height), measured after render. “Main column” is the visible tab panel; the city plan's route/map/story widths are also noted where useful.
+
+| Viewport | Explore Japan column | Explore overflow | Plan from a city column | Plan overflow |
+|---:|---:|:---:|---:|:---:|
+| 360px | 320px | No | 320px (route 320px; map/story 288px) | No |
+| 390px | 350px | No | 350px (route 350px; map/story 318px) | No |
+| 412px | 372px | No | 372px (route 372px; map/story 340px) | No |
+| 430px | 390px | No | 390px (route 390px; map/story 358px) | No |
+
+The tabs are side by side, fully visible, and 56px high at each width. The day-trip form is one column with full-width controls; the route expand button is 48px high. At 390px, the route order remains on one line, and the five route markers are 30px circles; the overlapping start/01/02 cluster is shown with 38px vertical spacing. A successfully loaded Tokyo Station photo has no visible failure message; the credit remains below the photo.
+
+**Regression checks (Edge, locally served page):**
+
+- **PASS** — direct `#daytrips` load selects Plan from a city; both tabs switch in both directions.
+- **PASS** — Tokyo starts at one day; entering three days produces three separately headed daily plans. Kyoto and Naha each render their city plan and set `?origin=kyoto` / `?origin=naha`.
+- **PASS** — MapLibre canvas and five markers load; attribution is compact; Expand/Close map updates its state and restores the page; zoom control exists; five per-leg Open directions links are present.
+- **PASS** — route and photo stop-card screenshots were captured at 390px after the fix. The stop image fills the card and the loaded image's fallback is hidden.
+- **PASS** — full-page overflow scan at 360px and 390px in both tabs: document width equals viewport and no visible child extends beyond it.
+- **PASS** — desktop comparison at 1280px: `width=device-width` viewport, mobile media query inactive, route map and stop list retain the existing side-by-side layout (434px map, 355px stop card). No desktop-specific CSS was changed.
+- **NOT RECHECKED IN THIS LAYOUT PASS** — nationwide search, mood/region filters, Save/Share state, and the Tokyo finder filtering logic were not changed by this layout patch; their regression flows were not replayed in this browser pass.
+
+**Screenshots:** [Before: route](docs/fix-evidence/mobile-before-route-390.png) · [After: route](docs/fix-evidence/mobile-after-route-390.png) · [Before: stop](docs/fix-evidence/mobile-before-stop-390.png) · [After: stop](docs/fix-evidence/mobile-after-stop-390.png).
+
+**Known limit:** Map street labels and the OpenFreeMap attribution naturally remain dense on a phone-sized street map; the attribution stays compact in the lower corner. The site uses a schematic visit-order line and explicitly labels it as not a verified walking or transit alignment.
+
 **Result:** The encoding, icon, count, provisional-guide, origin-scope, map-pin, carousel, modal, accessibility and responsive defects are fixed and checked. All 310 destinations retain their photos. 149 images have source pages that identify the destination; the other 161 remain as clearly labeled illustrative photography, with existing source and credit metadata preserved. Seasonal month picks are safely withheld because none of the 310 records has structured month-specific rationale. The complete photo and guide research gaps remain visible below.
 
 ## Issue status
