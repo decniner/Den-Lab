@@ -222,9 +222,9 @@
       "aliasOf": null,
       "aliasEvidence": null,
       "oldPaths": [],
-      "identityStatus": "pending-research",
-      "typeStatus": "editorial-triage-pending",
-      "typeBasis": "Provisional editorial classification from the catalogue title; requires destination-level review."
+      "identityStatus": "reviewed",
+      "typeStatus": "source-reviewed",
+      "typeBasis": "Reviewed against the official destination or tourism authority sources recorded in research/batches/01.json."
     },
     {
       "id": "nikko-in-the-cedars",
@@ -418,9 +418,9 @@
       "aliasOf": null,
       "aliasEvidence": null,
       "oldPaths": [],
-      "identityStatus": "pending-research",
-      "typeStatus": "editorial-triage-pending",
-      "typeBasis": "Provisional editorial classification from the catalogue title; requires destination-level review."
+      "identityStatus": "reviewed",
+      "typeStatus": "source-reviewed",
+      "typeBasis": "Reviewed against the official destination or tourism authority sources recorded in research/batches/01.json."
     },
     {
       "id": "kyoto-at-first-light",
@@ -510,15 +510,15 @@
       "id": "kumano-kodo-the-old-paths",
       "name": "Kumano Kodo, the old paths",
       "region": "Kansai",
-      "type": "attraction",
+      "type": "walking-route",
       "slug": "kumano-kodo-the-old-paths",
       "rawName": "Kumano Kodo, the old paths",
       "aliasOf": null,
       "aliasEvidence": null,
       "oldPaths": [],
-      "identityStatus": "pending-research",
-      "typeStatus": "editorial-triage-pending",
-      "typeBasis": "Provisional editorial classification from the catalogue title; requires destination-level review."
+      "identityStatus": "reviewed",
+      "typeStatus": "source-reviewed",
+      "typeBasis": "Reviewed against the official destination or tourism authority sources recorded in research/batches/01.json."
     },
     {
       "id": "lake-biwa-s-eastern-shore",
@@ -1056,15 +1056,15 @@
       "id": "senso-ji-and-asakusa-lanes",
       "name": "Senso-ji and Asakusa lanes",
       "region": "Kanto",
-      "type": "walking-route",
+      "type": "neighborhood",
       "slug": "senso-ji-and-asakusa-lanes",
       "rawName": "Senso-ji and Asakusa lanes",
       "aliasOf": null,
       "aliasEvidence": null,
       "oldPaths": [],
-      "identityStatus": "pending-research",
-      "typeStatus": "editorial-triage-pending",
-      "typeBasis": "Provisional editorial classification from the catalogue title; requires destination-level review."
+      "identityStatus": "reviewed",
+      "typeStatus": "source-reviewed",
+      "typeBasis": "Reviewed against the official destination or tourism authority sources recorded in research/batches/01.json."
     },
     {
       "id": "shinjuku-gyoen-in-every-season",
@@ -1146,9 +1146,9 @@
       "aliasOf": null,
       "aliasEvidence": null,
       "oldPaths": [],
-      "identityStatus": "pending-research",
-      "typeStatus": "editorial-triage-pending",
-      "typeBasis": "Provisional editorial classification from the catalogue title; requires destination-level review."
+      "identityStatus": "reviewed",
+      "typeStatus": "source-reviewed",
+      "typeBasis": "Reviewed against the official destination or tourism authority sources recorded in research/batches/01.json."
     },
     {
       "id": "oshino-hakkai-and-fuji-views",
@@ -1462,15 +1462,15 @@
       "id": "tokyo-skytree",
       "name": "Tokyo Skytree",
       "region": "Kanto",
-      "type": "city",
+      "type": "attraction",
       "slug": "tokyo-skytree",
       "rawName": "Tokyo Skytree",
       "aliasOf": null,
       "aliasEvidence": null,
       "oldPaths": [],
-      "identityStatus": "pending-research",
-      "typeStatus": "editorial-triage-pending",
-      "typeBasis": "Provisional editorial classification from the catalogue title; requires destination-level review."
+      "identityStatus": "reviewed",
+      "typeStatus": "source-reviewed",
+      "typeBasis": "Reviewed against the official destination or tourism authority sources recorded in research/batches/01.json."
     },
     {
       "id": "tokyo-tower",
@@ -3918,9 +3918,9 @@
       "aliasOf": null,
       "aliasEvidence": null,
       "oldPaths": [],
-      "identityStatus": "pending-research",
-      "typeStatus": "editorial-triage-pending",
-      "typeBasis": "Provisional editorial classification from the catalogue title; requires destination-level review."
+      "identityStatus": "reviewed",
+      "typeStatus": "source-reviewed",
+      "typeBasis": "Reviewed against the official destination or tourism authority sources recorded in research/batches/01.json."
     },
     {
       "id": "sankeien-garden",

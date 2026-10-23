@@ -47,7 +47,17 @@ test('incompleteGuidesAreNotPresentedAsComplete', () => {
   assert.ok(report.incompleteCount >= 310);
   for (const record of report.records) {
     const html = fs.readFileSync(path.join(site, record.pagePath.replaceAll('/', path.sep)), 'utf8');
-    assert.match(html, /not yet a researched field guide/i);
+    assert.match(html, /Guide research is incomplete/i);
   }
+});
+
+test('rendersResearchedNotesWithLinkedSourcesAndOpenResearchGaps', () => {
+  const report = buildDestinationPages(site);
+  const asakusa = report.records.find(record=>record.id==='senso-ji-and-asakusa-lanes');
+  const html = fs.readFileSync(path.join(site,asakusa.pagePath.replaceAll('/',path.sep)),'utf8');
+  assert.ok(html.includes('Asakusa’s appeal comes from how its temple approach'));
+  assert.ok(html.includes('https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/index.html'));
+  assert.match(html,/Guide research is incomplete/);
+  assert.match(html,/sourced map coordinates/i);
 });
 

@@ -1,4 +1,833 @@
-﻿{
+{
   "schemaVersion": 1,
-  "records": {}
+  "records": {
+    "tokyo-in-layers": {
+      "story": "Tokyo reads best as a set of distinct urban districts. The official visitor directory groups its recommendations by area, from central and eastern neighborhoods to western Tokyo, southern Tokyo, Tama, and the islands; choose one cluster before adding another.",
+      "visitPlan": "Choose one area cluster as the day’s anchor, then use the official operator route planner to connect its stops. The clusters are an editorial way to keep a large city legible, not a verified timed itinerary.",
+      "access": "Tokyo has extensive rail and subway coverage. The official visitor guide describes subway lines and additional railway operators; use the operator route tools for the chosen districts and travel date.",
+      "areas": [
+        "Central Tokyo",
+        "Eastern Tokyo",
+        "Western Tokyo",
+        "Northern Tokyo",
+        "Southern Tokyo",
+        "Tama and the islands"
+      ],
+      "points": [
+        {
+          "name": "Central Tokyo visitor area",
+          "description": "Includes Tokyo Station, Ginza, Tsukiji and nearby districts in the official destination directory."
+        },
+        {
+          "name": "Eastern Tokyo visitor area",
+          "description": "Includes Asakusa, Ryogoku, Skytree and Toyosu in the official directory."
+        },
+        {
+          "name": "Western Tokyo visitor area",
+          "description": "Includes Shinjuku, Shibuya, Harajuku and surrounding districts."
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "known",
+          "detail": "Tokyo Metro, Toei Subway, JR and private railway operators serve separate areas; confirm the route for each selected stop.",
+          "sourceIds": [
+            "tokyo-transit"
+          ]
+        },
+        "bus": {
+          "status": "unknown",
+          "note": "Bus routing has not been researched for a specific Tokyo itinerary."
+        },
+        "air": {
+          "status": "unknown",
+          "note": "Airport-to-district access is not part of this city overview."
+        },
+        "car": {
+          "status": "unknown",
+          "note": "Driving routes and parking have not been researched."
+        }
+      },
+      "contacts": [
+        {
+          "status": "unknown",
+          "note": "No destination-wide visitor phone contact was verified; contact the specific ward or attraction."
+        }
+      ],
+      "stayRecommendations": [],
+      "costs": [
+        {
+          "status": "unknown",
+          "component": "local transport and admission",
+          "sourceIds": []
+        }
+      ],
+      "mapLocation": {
+        "status": "unknown",
+        "note": "A citywide point would misrepresent Tokyo; destination-area map points are not yet sourced."
+      },
+      "photo": {
+        "status": "unverified"
+      },
+      "weatherPlan": {
+        "status": "unknown",
+        "alternative": "No source-backed citywide weather alternative has been checked."
+      },
+      "claims": [
+        {
+          "id": "tokyo-districts",
+          "text": "GO TOKYO organizes visitor information into named Tokyo areas, supporting a district-first approach.",
+          "sourceIds": [
+            "tokyo_spots"
+          ]
+        },
+        {
+          "id": "tokyo-transit-network",
+          "text": "GO TOKYO describes subway and rail options for moving around the city.",
+          "sourceIds": [
+            "tokyo_transit"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "tokyo-spots",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "GO TOKYO official destination directory",
+          "url": "https://www.gotokyo.org/en/spot/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Lists Tokyo visitor areas by central, eastern, western, northern, southern, Tama, and island areas."
+        },
+        {
+          "id": "tokyo-transit",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "How to use the Tokyo subway system",
+          "url": "https://www.gotokyo.org/en/plan/getting-around/subways/index.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official visitor overview of subway coverage and other rail operators; page updated September 1, 2026."
+        }
+      ],
+      "status": "partially-verified",
+      "nextAction": "Research specific visitor points, sourced addresses and coordinates, district-level weather alternatives, contacts, stays, and unique photo provenance."
+    },
+    "senso-ji-and-asakusa-lanes": {
+      "story": "Asakusa’s appeal comes from how its temple approach, neighborhood streets and Sumida waterfront sit within an easy walking area. GO TOKYO links Sensoji, Kaminarimon and Nakamise with nearby river views; the district lets a visitor move from a busy gate to the open river edge without changing neighborhoods.",
+      "visitPlan": "A source-listed walking sequence begins at Asakusa Station, then passes the Asakusa Culture Tourist Information Center, Kaminarimon, Nakamise Shopping Street and Sensoji. Kappabashi is a possible extension; treat the sequence as a walking outline, not a timed itinerary.",
+      "access": "Asakusa Station is served by the Tokyo Metro Ginza Line, Toei Asakusa Line and Tobu Skytree Line. GO TOKYO lists approximately 20 minutes from Tokyo Station and 35 minutes from Shinjuku Station, with transfers; confirm current service.",
+      "walkingRoute": [
+        "Asakusa Station",
+        "Asakusa Culture Tourist Information Center",
+        "Kaminarimon",
+        "Nakamise Shopping Street",
+        "Sensoji Temple",
+        "Kappabashi Kitchenware Town"
+      ],
+      "points": [
+        {
+          "name": "Asakusa Station"
+        },
+        {
+          "name": "Asakusa Culture Tourist Information Center"
+        },
+        {
+          "name": "Kaminarimon"
+        },
+        {
+          "name": "Nakamise Shopping Street"
+        },
+        {
+          "name": "Sensoji Temple"
+        },
+        {
+          "name": "Kappabashi Kitchenware Town"
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "known",
+          "detail": "Ginza Line, Toei Asakusa Line and Tobu Skytree Line all serve Asakusa Station.",
+          "sourceIds": [
+            "asakusa"
+          ]
+        },
+        "bus": {
+          "status": "unknown",
+          "note": "Local bus connections were not checked for this guide."
+        },
+        "air": {
+          "status": "unknown",
+          "note": "Airport journeys require date-specific transfers and have not been checked here."
+        },
+        "car": {
+          "status": "unknown",
+          "note": "Driving and local parking have not been researched."
+        }
+      },
+      "contacts": [
+        {
+          "status": "unknown",
+          "note": "No neighborhood-wide phone contact was verified; contact individual facilities for questions."
+        }
+      ],
+      "stayRecommendations": [],
+      "costs": [
+        {
+          "status": "unknown",
+          "component": "transport, shops, and optional activities",
+          "sourceIds": []
+        }
+      ],
+      "mapLocation": {
+        "status": "unknown",
+        "note": "Coordinates for each stop have not yet been checked against official map points."
+      },
+      "photo": {
+        "status": "unverified"
+      },
+      "weatherPlan": {
+        "status": "unknown",
+        "alternative": "No source-backed weather alternative has been researched for this walk."
+      },
+      "claims": [
+        {
+          "id": "asakusa-stops",
+          "text": "The official visitor guide identifies Sensoji, Kaminarimon, Nakamise, Sumida River and nearby waterfront experiences.",
+          "sourceIds": [
+            "asakusa"
+          ]
+        },
+        {
+          "id": "asakusa-station",
+          "text": "Asakusa Station is served by three named rail lines in the official destination guide.",
+          "sourceIds": [
+            "asakusa"
+          ]
+        },
+        {
+          "id": "asakusa-walk-order",
+          "text": "GO TOKYO publishes a walk that links the station, information center, Kaminarimon, Nakamise and Sensoji.",
+          "sourceIds": [
+            "asakusa_walk"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "asakusa",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "A guide to Asakusa",
+          "url": "https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/index.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official Asakusa overview and station access; page updated February 4, 2026."
+        },
+        {
+          "id": "asakusa_walk",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Explore around Asakusa",
+          "url": "https://www.gotokyo.org/en/story/walks-and-tours/asakusa/index.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official walking sequence from Asakusa Station through the tourist information center, Kaminarimon, Nakamise and Sensoji; original page updated November 24, 2020."
+        }
+      ],
+      "status": "partially-verified",
+      "nextAction": "Verify current walking access, exact mapped points and coordinates, transport alternatives, contact details, stay options, weather plan, and photo."
+    },
+    "tokyo-skytree": {
+      "story": "TOKYO SKYTREE is more than a skyline stop: the approach is part of the visit. Its official transport guide points visitors to either Tokyo Skytree Station or Oshiage (Skytree-mae) Station, connecting the observation visit to the surrounding Sumida district.",
+      "visitPlan": "Check the official date-specific ticket inventory before choosing a time. If visiting both decks, confirm the ticket covers the Tembo Deck and Tembo Galleria; opening hours and prices can change by date.",
+      "access": "The official venue identifies Tokyo Skytree Station on the Tobu Skytree Line and Oshiage Station on the Hanzomon Line as convenient arrivals. The official site lists the address as 1-1-2 Oshiage, Sumida-ku, Tokyo.",
+      "highlights": [
+        "Tembo Deck",
+        "Tembo Galleria",
+        "TOKYO SKYTREE TOWN"
+      ],
+      "points": [
+        {
+          "name": "TOKYO SKYTREE visitor entrance",
+          "address": "1-1-2 Oshiage, Sumida-ku, Tokyo"
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "known",
+          "detail": "Arrive at Tokyo Skytree Station or Oshiage (Skytree-mae) Station; use the official access page for specific approaches.",
+          "sourceIds": [
+            "skytree_access"
+          ]
+        },
+        "bus": {
+          "status": "known",
+          "detail": "The venue lists its Skytree Shuttle and local bus access information; check the operator for current stops and service.",
+          "sourceIds": [
+            "skytree_access"
+          ]
+        },
+        "air": {
+          "status": "unknown",
+          "note": "The venue’s airport transfer routing has not been independently checked for this guide."
+        },
+        "car": {
+          "status": "unknown",
+          "note": "Driving and parking details are not yet checked for the selected date."
+        }
+      },
+      "contacts": [
+        {
+          "status": "unknown",
+          "note": "A visitor phone number was not confirmed from the reviewed official pages."
+        }
+      ],
+      "stayRecommendations": [],
+      "costs": [
+        {
+          "status": "unknown",
+          "component": "date-specific observation deck ticket",
+          "sourceIds": [
+            "skytree_tickets"
+          ]
+        }
+      ],
+      "mapLocation": {
+        "status": "unknown",
+        "note": "Official address found; coordinate pair and entrance marker still need verification."
+      },
+      "photo": {
+        "status": "unverified"
+      },
+      "weatherPlan": {
+        "status": "unknown",
+        "alternative": "No official weather contingency was checked for the observation decks."
+      },
+      "claims": [
+        {
+          "id": "skytree-rail-access",
+          "text": "The official venue lists Tokyo Skytree and Oshiage stations as rail access points.",
+          "sourceIds": [
+            "skytree_access"
+          ]
+        },
+        {
+          "id": "skytree-address",
+          "text": "The venue FAQ lists the visitor address at 1-1-2 Oshiage, Sumida-ku, Tokyo.",
+          "sourceIds": [
+            "skytree_faq"
+          ]
+        },
+        {
+          "id": "skytree-dynamic-price",
+          "text": "The official ticket page shows prices can vary by visit date; a fixed fare is not copied into this guide.",
+          "sourceIds": [
+            "skytree_tickets"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "skytree_access",
+          "organization": "TOKYO SKYTREE",
+          "title": "Access by public transportation",
+          "url": "https://www.tokyo-skytree.jp/access/public-transport/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official access page identifies Tokyo Skytree and Oshiage stations and rail approaches."
+        },
+        {
+          "id": "skytree_faq",
+          "organization": "TOKYO SKYTREE",
+          "title": "Official visitor FAQ and address",
+          "url": "https://www.tokyo-skytree.jp/inquiry/faq/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official site lists the Sumida address and visitor ticket/access information."
+        },
+        {
+          "id": "skytree_tickets",
+          "organization": "TOKYO SKYTREE",
+          "title": "Official admission tickets",
+          "url": "https://www.tokyo-skytree.jp/ticket/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official ticket page shows date-dependent prices and purchase conditions; do not freeze a single fare."
+        }
+      ],
+      "status": "partially-verified",
+      "nextAction": "Verify coordinate and accessible entrance, current transport details, phone contact, nearby stay recommendations, weather plan, and photo license."
+    },
+    "sado-island-s-wild-coast": {
+      "story": "Sado’s island story moves between exile history, gold mining, Kodo drumming, rice-growing landscapes and the Japanese crested ibis. Its scale matters: treat the port crossing as the start of a longer stay rather than assuming an island circuit fits a quick stop.",
+      "visitPlan": "Choose one side of Sado as a base and plan around the ferry port and current local transport. The national tourism guide notes that Sado can be visited in a day, but recommends an overnight stay; a short stay will leave large distances between experiences.",
+      "access": "Sado is reached by ferry. The Niigata–Ryotsu route has car ferries and jetfoils; the Naoetsu–Ogi route is seasonal and may not run in winter. Confirm the ferry operator timetable and fares for your date before booking connections.",
+      "arrivalOptions": [
+        "Niigata Port to Ryotsu Port by car ferry or jetfoil",
+        "Naoetsu Port to Ogi Port by seasonal car ferry"
+      ],
+      "points": [
+        {
+          "name": "Ryotsu Port"
+        },
+        {
+          "name": "Ogi Port"
+        },
+        {
+          "name": "Sado Gold Mine"
+        },
+        {
+          "name": "Nishimikawa Gold Park"
+        },
+        {
+          "name": "Osado Skyline"
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "known",
+          "detail": "Rail reaches the mainland ports at Niigata and Naoetsu; the island crossing itself is by ferry.",
+          "sourceIds": [
+            "sado_local",
+            "sado_jnto"
+          ]
+        },
+        "bus": {
+          "status": "unknown",
+          "note": "Island bus access to chosen attractions and current timetables have not been checked."
+        },
+        "air": {
+          "status": "unknown",
+          "note": "No direct island flight option was verified in the reviewed sources; use the ferry operator’s current guidance."
+        },
+        "car": {
+          "status": "known",
+          "detail": "The Niigata–Ryotsu route and Naoetsu–Ogi route include car ferry service; confirm vehicle space and sailing availability.",
+          "sourceIds": [
+            "sado_jnto",
+            "sado_ferry"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "status": "unknown",
+          "note": "A destination-wide visitor phone number has not been confirmed."
+        }
+      ],
+      "stayRecommendations": [],
+      "costs": [
+        {
+          "status": "unknown",
+          "component": "ferry, local transport, and admissions",
+          "sourceIds": [
+            "sado_ferry"
+          ]
+        }
+      ],
+      "mapLocation": {
+        "status": "unknown",
+        "note": "Sado is an island-wide guide; a single center coordinate would be misleading."
+      },
+      "photo": {
+        "status": "unverified"
+      },
+      "weatherPlan": {
+        "status": "unknown",
+        "alternative": "Ferry service and island access can vary seasonally; no separate bad-weather activity plan has been verified."
+      },
+      "claims": [
+        {
+          "id": "sado-ferry-only",
+          "text": "The JNTO guide states Sado is reached by ferry and identifies Niigata–Ryotsu and seasonal Naoetsu–Ogi routes.",
+          "sourceIds": [
+            "sado_jnto"
+          ]
+        },
+        {
+          "id": "sado-overnight",
+          "text": "The JNTO guide says an overnight stay can be rewarding given the island’s scale and experiences.",
+          "sourceIds": [
+            "sado_jnto"
+          ]
+        },
+        {
+          "id": "sado-mainland-access",
+          "text": "The tourism association lists approximate rail, road and bus approaches to the mainland ferry ports.",
+          "sourceIds": [
+            "sado_local"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "sado_jnto",
+          "organization": "Japan National Tourism Organization",
+          "title": "Sado Island destination guide",
+          "url": "https://www.japan.travel/en/destinations/hokuriku-shinetsu/niigata/sado-island/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official national tourism overview with ferry access, island themes, and a recommendation to check seasonal ferry timetables."
+        },
+        {
+          "id": "sado_local",
+          "organization": "Sado Sightseeing Navigation",
+          "title": "Overview and access to Sado Island",
+          "url": "https://www.visitsado.com/en/outline/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Sado tourism association access guide distinguishes train/road approaches to ports and seasonal ferry service; reviewed page contains placeholder copy in its secondary-transport section, which was excluded."
+        },
+        {
+          "id": "sado_ferry",
+          "organization": "Sado Kisen",
+          "title": "Passenger reservation and travel guide",
+          "url": "https://www.sadokisen.co.jp/en/user-guide/reservation/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Ferry operator passenger guidance; live schedules and fares must be checked for the travel date."
+        }
+      ],
+      "status": "partially-verified",
+      "nextAction": "Choose a specific island area, verify exact site addresses and coordinates, local transit, phone contacts, stay recommendations, ferry fare evidence, weather safety, and photo license."
+    },
+    "kumano-kodo-the-old-paths": {
+      "story": "Kumano Kodo is a network of pilgrimage paths, not one single walk. The Nakahechi is the core route through the Kii mountains; its history, mountain setting and linked shrine paths reward a slower, section-by-section plan.",
+      "visitPlan": "Select a specific route section before planning accommodation or transit. The official bureau lists separate stages from Takijiri-oji toward Tsugizakura-oji and Kumano Hongu Taisha, plus shorter routes. The bureau describes the setting as mountainous and recommends preparation for multi-day walks.",
+      "access": "The Tanabe City Kumano Tourism Bureau says local buses reach isolated villages used as accommodation bases and publishes route maps, safety notes and route sections. Check the selected section and bus timetable before setting out.",
+      "routeSections": [
+        "Takijiri-oji to Tsugizakura-oji",
+        "Tsugizakura-oji to Kumano Hongu Taisha",
+        "Hosshinmon-oji to Kumano Hongu Taisha",
+        "Daimon-zaka"
+      ],
+      "points": [
+        {
+          "name": "Takijiri-oji trail area"
+        },
+        {
+          "name": "Tsugizakura-oji"
+        },
+        {
+          "name": "Kumano Hongu Taisha"
+        },
+        {
+          "name": "Hosshinmon-oji"
+        },
+        {
+          "name": "Daimon-zaka"
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "unknown",
+          "note": "The rail approach to a chosen route section has not been verified in this batch."
+        },
+        "bus": {
+          "status": "known",
+          "detail": "The tourism bureau notes local buses serve isolated Nakahechi villages and accommodation areas; check each route section timetable.",
+          "sourceIds": [
+            "kumano"
+          ]
+        },
+        "air": {
+          "status": "unknown",
+          "note": "Airport access was not researched for a particular start and return point."
+        },
+        "car": {
+          "status": "unknown",
+          "note": "Driving, trailhead parking and vehicle return logistics have not been researched."
+        }
+      },
+      "contacts": [
+        {
+          "status": "unknown",
+          "note": "No route-wide telephone contact was verified; the tourism bureau publishes online contact and reservation links."
+        }
+      ],
+      "stayRecommendations": [],
+      "costs": [
+        {
+          "status": "unknown",
+          "component": "transport, accommodation, meals, and route services",
+          "sourceIds": []
+        }
+      ],
+      "mapLocation": {
+        "status": "unknown",
+        "note": "Route geometry and exact trailhead coordinates have not yet been validated from the official maps."
+      },
+      "photo": {
+        "status": "unverified"
+      },
+      "weatherPlan": {
+        "status": "unknown",
+        "alternative": "The official page links to route safety information; section-specific weather closures and alternatives remain to be checked."
+      },
+      "claims": [
+        {
+          "id": "kumano-network",
+          "text": "The official bureau identifies Nakahechi as the core route in the Kumano Kodo network and lists several section routes.",
+          "sourceIds": [
+            "kumano"
+          ]
+        },
+        {
+          "id": "kumano-history-and-mountain",
+          "text": "The bureau describes Nakahechi as a pilgrimage trail with more than 1,000 years of history in a mountain environment.",
+          "sourceIds": [
+            "kumano"
+          ]
+        },
+        {
+          "id": "kumano-local-bus",
+          "text": "The bureau says local buses reach isolated villages where accommodation is located.",
+          "sourceIds": [
+            "kumano"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "kumano",
+          "organization": "Tanabe City Kumano Tourism Bureau",
+          "title": "Nakahechi route guide",
+          "url": "https://www.tb-kumano.jp/en/kumano-kodo/nakahechi/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official bureau describes the core pilgrimage trail, route sections, mountain conditions, local buses, maps, and safety resources."
+        },
+        {
+          "id": "kumano_map",
+          "organization": "Tanabe City Kumano Tourism Bureau",
+          "title": "Kumano Kodo Nakahechi complete route maps",
+          "url": "https://www2.tb-kumano.jp/en/kumano-kodo/pdf/Kumano-Kodo-Nakahechi-Route-Maps-Complete.pdf",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official route map identifies the Nakahechi start area and trail segments; geometry and exact coordinates have not yet been extracted."
+        }
+      ],
+      "status": "partially-verified",
+      "nextAction": "Select one Nakahechi itinerary, review section distances/elevation and safety pages, verify trailhead coordinates, transit return, stay providers, phone contacts, cost, weather plan, and imagery."
+    },
+    "mount-takao": {
+      "story": "Mount Takao pairs a compact mountain outing with a staffed visitor center at the summit. The center is not just a viewpoint stop: Tokyo’s nature-park authority describes exhibits and guides that can help visitors choose trails and understand the mountain’s nature and history.",
+      "visitPlan": "Use the visitor center as a route decision point, not a promise that every trail is suitable. The authority lists the summit at 599 metres and describes a final walk from the cable-car or lift area; choose a trail after checking current conditions and your own ability.",
+      "access": "The official visitor-center page gives its location as 2176 Takao-machi, Hachioji-shi, Tokyo. From Takaosanguchi Station, the page describes a five-minute walk to the cable-car/lift area and about 40 minutes on foot from the upper station to the center.",
+      "routeSections": [
+        "Takaosanguchi Station to the mountain base",
+        "Mountain trail selection",
+        "Summit area and Takao Visitor Center"
+      ],
+      "terrain": "Mountain trails; route-specific grade, distance and elevation profiles still need review.",
+      "points": [
+        {
+          "name": "Takaosanguchi Station"
+        },
+        {
+          "name": "Kiyotaki Station"
+        },
+        {
+          "name": "Takao-san Station"
+        },
+        {
+          "name": "Takao Visitor Center",
+          "address": "2176 Takao-machi, Hachioji-shi, Tokyo 193-0844"
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "known",
+          "detail": "The Tokyo authority describes travel from JR Takao Station by Keio Line to Takaosanguchi Station.",
+          "sourceIds": [
+            "takao_park"
+          ]
+        },
+        "bus": {
+          "status": "unknown",
+          "note": "Bus alternatives were not checked for this guide."
+        },
+        "air": {
+          "status": "not-applicable",
+          "note": "There is no direct airport arrival to this mountain trail; connect through Tokyo-area ground transport."
+        },
+        "car": {
+          "status": "unknown",
+          "note": "Parking capacity, cost and trailhead access have not been checked."
+        }
+      },
+      "contacts": [
+        {
+          "status": "unknown",
+          "note": "The visitor-center page reviewed here did not provide a telephone number."
+        }
+      ],
+      "stayRecommendations": [],
+      "costs": [
+        {
+          "status": "unknown",
+          "component": "cable car, lift, parking, and nearby facilities",
+          "sourceIds": []
+        }
+      ],
+      "mapLocation": {
+        "status": "unknown",
+        "note": "Visitor-center street address is published, but entrance coordinates are not yet checked."
+      },
+      "photo": {
+        "status": "unverified"
+      },
+      "weatherPlan": {
+        "status": "unknown",
+        "alternative": "The official center provides evacuation assistance in inclement weather, but a trail-level postponement rule has not been verified."
+      },
+      "claims": [
+        {
+          "id": "takao-elevation",
+          "text": "Tokyo’s nature authority lists the visitor center at the 599-metre summit.",
+          "sourceIds": [
+            "takao_park"
+          ]
+        },
+        {
+          "id": "takao-center-access",
+          "text": "The authority gives the center address and describes access from JR Takao and Keio Takaosanguchi stations, cable car or lift, and a final walk.",
+          "sourceIds": [
+            "takao_park"
+          ]
+        },
+        {
+          "id": "takao-trails",
+          "text": "GO TOKYO describes Mount Takao as having hiking trails, a cable car and a chairlift.",
+          "sourceIds": [
+            "takao_go"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "takao_go",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Mt. Takao and around",
+          "url": "https://www.gotokyo.org/en/destinations/outlying-area/mt-takao-and-around/index.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official Tokyo tourism page describes the mountain, trails, cable car and chairlift."
+        },
+        {
+          "id": "takao_park",
+          "organization": "Tokyo Metropolitan Government Bureau of Environment",
+          "title": "Takao Visitor Center",
+          "url": "https://www.kankyo1.metro.tokyo.lg.jp/naturepark/english/know/shisetsu/visitorcenter/takao.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official visitor-center page gives its elevation, address, hours, access, and facilities."
+        }
+      ],
+      "status": "partially-verified",
+      "nextAction": "Research specific trail grades, distances and closures, source exact trailhead coordinates, phone contact, stay options, costs, and a current photo license."
+    },
+    "izu-peninsula-the-long-way-round": {
+      "story": "Izu makes more sense as a set of bases than as one hurried loop. The official national tourism guide separates eastern resort towns such as Atami and Ito from Shimoda in the south, the rugged capes, and the peninsula’s inland highlands; it advises allowing several days to explore.",
+      "visitPlan": "Pick one base—such as Atami, Ito or Shimoda—and build a focused day around that area. The JNTO guide identifies the Shinkansen route from Tokyo to Atami, but this does not make the far-south or west-coast sights a same-day extension.",
+      "access": "The JNTO guide lists Tokyo Station to Atami by Tokaido Shinkansen at about 50 minutes, with the Odoriko limited express and slower Tokaido Line as alternatives. Confirm the current timetable and continue from Atami according to the selected Izu area.",
+      "areas": [
+        "Atami and Ito in eastern Izu",
+        "Shimoda in southern Izu",
+        "Irozaki and the rugged southern coast",
+        "Izu Highlands and inland peaks"
+      ],
+      "points": [
+        {
+          "name": "Atami Station and eastern Izu base"
+        },
+        {
+          "name": "Ito and Inatori Onsen"
+        },
+        {
+          "name": "Shimoda and Perry Road"
+        },
+        {
+          "name": "Cape Irozaki"
+        },
+        {
+          "name": "Izu Highlands and Mount Omuro"
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "known",
+          "detail": "The official guide describes Tokyo–Atami by Tokaido Shinkansen and Odoriko limited express; check onward local connections for the selected base.",
+          "sourceIds": [
+            "izu_jnto"
+          ]
+        },
+        "bus": {
+          "status": "unknown",
+          "note": "Regional bus routes for individual sites have not been checked."
+        },
+        "air": {
+          "status": "unknown",
+          "note": "Air access was not researched for the selected Izu base."
+        },
+        "car": {
+          "status": "unknown",
+          "note": "Driving route, parking and coastal road conditions have not been researched."
+        }
+      },
+      "contacts": [
+        {
+          "status": "unknown",
+          "note": "No peninsula-wide contact was verified; contact the relevant town tourism office for a chosen base."
+        }
+      ],
+      "stayRecommendations": [],
+      "costs": [
+        {
+          "status": "unknown",
+          "component": "regional rail, local transport, activities, and accommodation",
+          "sourceIds": []
+        }
+      ],
+      "mapLocation": {
+        "status": "unknown",
+        "note": "Izu is a broad region; individual base and attraction coordinates must be sourced before mapping."
+      },
+      "photo": {
+        "status": "unverified"
+      },
+      "weatherPlan": {
+        "status": "unknown",
+        "alternative": "No region-wide weather alternative is suitable without selecting a coast or base."
+      },
+      "claims": [
+        {
+          "id": "izu-multiple-bases",
+          "text": "The JNTO guide describes distinct eastern, southern, coastal and inland areas, including Atami, Ito, Shimoda, Irozaki and the Izu Highlands.",
+          "sourceIds": [
+            "izu_jnto"
+          ]
+        },
+        {
+          "id": "izu-tokyo-rail",
+          "text": "The JNTO guide identifies Tokyo–Atami access by Tokaido Shinkansen and Odoriko train.",
+          "sourceIds": [
+            "izu_jnto"
+          ]
+        },
+        {
+          "id": "izu-needs-time",
+          "text": "The JNTO guide states that Izu takes at least several days to fully enjoy.",
+          "sourceIds": [
+            "izu_jnto"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "izu_jnto",
+          "organization": "Japan National Tourism Organization",
+          "title": "Izu Peninsula destination guide",
+          "url": "https://www.japan.travel/en/destinations/tokai/shizuoka/izu-and-around/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official guide describes Atami, Ito, Shimoda, coastal and inland areas, eastbound rail access, and recommends several days to explore."
+        },
+        {
+          "id": "izu_geopark",
+          "organization": "Izu Peninsula Geopark",
+          "title": "Izu Peninsula Geopark guide",
+          "url": "https://en.izugeoguide.org/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Geoguide association describes the peninsula’s geological, natural, historical, and cultural sites."
+        }
+      ],
+      "status": "partially-verified",
+      "nextAction": "Select an Izu subregion, research specific points/transfers and map coordinates, contacts, stays, costs, season and weather evidence, and photo provenance."
+    }
+  }
 }

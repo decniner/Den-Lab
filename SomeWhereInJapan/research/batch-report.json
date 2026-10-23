@@ -1,0 +1,55 @@
+{
+  "generatedOn": "2026-10-23",
+  "batchId": "01",
+  "attempted": [
+    "tokyo-in-layers",
+    "senso-ji-and-asakusa-lanes",
+    "tokyo-skytree",
+    "sado-island-s-wild-coast",
+    "kumano-kodo-the-old-paths",
+    "mount-takao",
+    "izu-peninsula-the-long-way-round"
+  ],
+  "verified": [],
+  "partiallyVerified": [
+    "tokyo-in-layers",
+    "senso-ji-and-asakusa-lanes",
+    "tokyo-skytree",
+    "sado-island-s-wild-coast",
+    "kumano-kodo-the-old-paths",
+    "mount-takao",
+    "izu-peninsula-the-long-way-round"
+  ],
+  "complete": [],
+  "unresolved": [
+    {
+      "id": "tokyo-in-layers",
+      "nextAction": "Research specific visitor points, sourced addresses and coordinates, district-level weather alternatives, contacts, stays, and unique photo provenance."
+    },
+    {
+      "id": "senso-ji-and-asakusa-lanes",
+      "nextAction": "Verify current walking access, exact mapped points and coordinates, transport alternatives, contact details, stay options, weather plan, and photo."
+    },
+    {
+      "id": "tokyo-skytree",
+      "nextAction": "Verify coordinate and accessible entrance, current transport details, phone contact, nearby stay recommendations, weather plan, and photo license."
+    },
+    {
+      "id": "sado-island-s-wild-coast",
+      "nextAction": "Choose a specific island area, verify exact site addresses and coordinates, local transit, phone contacts, stay recommendations, ferry fare evidence, weather safety, and photo license."
+    },
+    {
+      "id": "kumano-kodo-the-old-paths",
+      "nextAction": "Select one Nakahechi itinerary, review section distances/elevation and safety pages, verify trailhead coordinates, transit return, stay providers, phone contacts, cost, weather plan, and imagery."
+    },
+    {
+      "id": "mount-takao",
+      "nextAction": "Research specific trail grades, distances and closures, source exact trailhead coordinates, phone contact, stay options, costs, and a current photo license."
+    },
+    {
+      "id": "izu-peninsula-the-long-way-round",
+      "nextAction": "Select an Izu subregion, research specific points/transfers and map coordinates, contacts, stays, costs, season and weather evidence, and photo provenance."
+    }
+  ],
+  "nextBatchIds": []
+}

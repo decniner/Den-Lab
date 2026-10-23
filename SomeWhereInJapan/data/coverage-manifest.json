@@ -3,7 +3,7 @@
   "generatedOn": "2026-10-23",
   "rawCount": 310,
   "canonicalCandidateCount": 310,
-  "identityReviewPendingCount": 310,
+  "identityReviewPendingCount": 303,
   "confirmedAliasCount": 0,
   "completeCount": 0,
   "incompleteCount": 310,
@@ -290,9 +290,14 @@
       "oldPaths": [],
       "guideStatus": "incomplete",
       "missing": [
-        "researched guide details"
+        "claim source links",
+        "invalid-visit-point",
+        "missing-stay-recommendations",
+        "photo-not-verified",
+        "map-location-not-verified",
+        "weather-plan-not-verified"
       ],
-      "sourceStatus": "not-researched",
+      "sourceStatus": "sources-recorded",
       "imageStatus": "missing",
       "mapStatus": "no-coordinates"
     },
@@ -542,9 +547,13 @@
       "oldPaths": [],
       "guideStatus": "incomplete",
       "missing": [
-        "researched guide details"
+        "invalid-visit-point",
+        "missing-stay-recommendations",
+        "photo-not-verified",
+        "map-location-not-verified",
+        "weather-plan-not-verified"
       ],
-      "sourceStatus": "not-researched",
+      "sourceStatus": "sources-recorded",
       "imageStatus": "missing",
       "mapStatus": "no-coordinates"
     },
@@ -661,16 +670,20 @@
       "slug": "kumano-kodo-the-old-paths",
       "name": "Kumano Kodo, the old paths",
       "region": "Kansai",
-      "type": "attraction",
+      "type": "walking-route",
       "pagePath": "places/kumano-kodo-the-old-paths/index.html",
       "url": "/Den-Lab/SomeWhereInJapan/places/kumano-kodo-the-old-paths/",
       "aliasOf": null,
       "oldPaths": [],
       "guideStatus": "incomplete",
       "missing": [
-        "researched guide details"
+        "invalid-visit-point",
+        "missing-stay-recommendations",
+        "photo-not-verified",
+        "map-location-not-verified",
+        "weather-plan-not-verified"
       ],
-      "sourceStatus": "not-researched",
+      "sourceStatus": "sources-recorded",
       "imageStatus": "missing",
       "mapStatus": "no-coordinates"
     },
@@ -1363,16 +1376,20 @@
       "slug": "senso-ji-and-asakusa-lanes",
       "name": "Senso-ji and Asakusa lanes",
       "region": "Kanto",
-      "type": "walking-route",
+      "type": "neighborhood",
       "pagePath": "places/senso-ji-and-asakusa-lanes/index.html",
       "url": "/Den-Lab/SomeWhereInJapan/places/senso-ji-and-asakusa-lanes/",
       "aliasOf": null,
       "oldPaths": [],
       "guideStatus": "incomplete",
       "missing": [
-        "researched guide details"
+        "invalid-visit-point",
+        "missing-stay-recommendations",
+        "photo-not-verified",
+        "map-location-not-verified",
+        "weather-plan-not-verified"
       ],
-      "sourceStatus": "not-researched",
+      "sourceStatus": "sources-recorded",
       "imageStatus": "missing",
       "mapStatus": "no-coordinates"
     },
@@ -1478,9 +1495,13 @@
       "oldPaths": [],
       "guideStatus": "incomplete",
       "missing": [
-        "researched guide details"
+        "invalid-visit-point",
+        "missing-stay-recommendations",
+        "photo-not-verified",
+        "map-location-not-verified",
+        "weather-plan-not-verified"
       ],
-      "sourceStatus": "not-researched",
+      "sourceStatus": "sources-recorded",
       "imageStatus": "missing",
       "mapStatus": "no-coordinates"
     },
@@ -1885,16 +1906,20 @@
       "slug": "tokyo-skytree",
       "name": "Tokyo Skytree",
       "region": "Kanto",
-      "type": "city",
+      "type": "attraction",
       "pagePath": "places/tokyo-skytree/index.html",
       "url": "/Den-Lab/SomeWhereInJapan/places/tokyo-skytree/",
       "aliasOf": null,
       "oldPaths": [],
       "guideStatus": "incomplete",
       "missing": [
-        "researched guide details"
+        "invalid-visit-point",
+        "missing-stay-recommendations",
+        "photo-not-verified",
+        "map-location-not-verified",
+        "weather-plan-not-verified"
       ],
-      "sourceStatus": "not-researched",
+      "sourceStatus": "sources-recorded",
       "imageStatus": "missing",
       "mapStatus": "no-coordinates"
     },
@@ -5042,9 +5067,13 @@
       "oldPaths": [],
       "guideStatus": "incomplete",
       "missing": [
-        "researched guide details"
+        "invalid-visit-point",
+        "missing-stay-recommendations",
+        "photo-not-verified",
+        "map-location-not-verified",
+        "weather-plan-not-verified"
       ],
-      "sourceStatus": "not-researched",
+      "sourceStatus": "sources-recorded",
       "imageStatus": "catalogue-attribution-pending-review",
       "mapStatus": "no-coordinates"
     },

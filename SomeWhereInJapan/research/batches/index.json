@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "batches": [
+    {
+      "id": "01",
+      "file": "01.json",
+      "status": "partially-verified",
+      "recordCount": 7
+    }
+  ]
+}

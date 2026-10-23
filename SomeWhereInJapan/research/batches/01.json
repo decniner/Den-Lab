@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "01",
+  "title": "Representative destination types",
+  "checkedOn": "2026-10-23",
+  "records": [
+    {
+      "id": "tokyo-in-layers",
+      "type": "city",
+      "status": "partially-verified",
+      "sources": [
+        {
+          "id": "tokyo-spots",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "GO TOKYO official destination directory",
+          "url": "https://www.gotokyo.org/en/spot/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Lists Tokyo visitor areas by central, eastern, western, northern, southern, Tama, and island areas."
+        },
+        {
+          "id": "tokyo-transit",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "How to use the Tokyo subway system",
+          "url": "https://www.gotokyo.org/en/plan/getting-around/subways/index.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official visitor overview of subway coverage and other rail operators; page updated September 1, 2026."
+        }
+      ],
+      "nextAction": "Research specific visitor points, sourced addresses and coordinates, district-level weather alternatives, contacts, stays, and unique photo provenance.",
+      "complete": false
+    },
+    {
+      "id": "senso-ji-and-asakusa-lanes",
+      "type": "neighborhood",
+      "status": "partially-verified",
+      "sources": [
+        {
+          "id": "asakusa",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "A guide to Asakusa",
+          "url": "https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/index.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official Asakusa overview and station access; page updated February 4, 2026."
+        },
+        {
+          "id": "asakusa_walk",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Explore around Asakusa",
+          "url": "https://www.gotokyo.org/en/story/walks-and-tours/asakusa/index.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official walking sequence from Asakusa Station through the tourist information center, Kaminarimon, Nakamise and Sensoji; original page updated November 24, 2020."
+        }
+      ],
+      "nextAction": "Verify current walking access, exact mapped points and coordinates, transport alternatives, contact details, stay options, weather plan, and photo.",
+      "complete": false
+    },
+    {
+      "id": "tokyo-skytree",
+      "type": "attraction",
+      "status": "partially-verified",
+      "sources": [
+        {
+          "id": "skytree_access",
+          "organization": "TOKYO SKYTREE",
+          "title": "Access by public transportation",
+          "url": "https://www.tokyo-skytree.jp/access/public-transport/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official access page identifies Tokyo Skytree and Oshiage stations and rail approaches."
+        },
+        {
+          "id": "skytree_faq",
+          "organization": "TOKYO SKYTREE",
+          "title": "Official visitor FAQ and address",
+          "url": "https://www.tokyo-skytree.jp/inquiry/faq/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official site lists the Sumida address and visitor ticket/access information."
+        },
+        {
+          "id": "skytree_tickets",
+          "organization": "TOKYO SKYTREE",
+          "title": "Official admission tickets",
+          "url": "https://www.tokyo-skytree.jp/ticket/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official ticket page shows date-dependent prices and purchase conditions; do not freeze a single fare."
+        }
+      ],
+      "nextAction": "Verify coordinate and accessible entrance, current transport details, phone contact, nearby stay recommendations, weather plan, and photo license.",
+      "complete": false
+    },
+    {
+      "id": "sado-island-s-wild-coast",
+      "type": "island",
+      "status": "partially-verified",
+      "sources": [
+        {
+          "id": "sado_jnto",
+          "organization": "Japan National Tourism Organization",
+          "title": "Sado Island destination guide",
+          "url": "https://www.japan.travel/en/destinations/hokuriku-shinetsu/niigata/sado-island/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official national tourism overview with ferry access, island themes, and a recommendation to check seasonal ferry timetables."
+        },
+        {
+          "id": "sado_local",
+          "organization": "Sado Sightseeing Navigation",
+          "title": "Overview and access to Sado Island",
+          "url": "https://www.visitsado.com/en/outline/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Sado tourism association access guide distinguishes train/road approaches to ports and seasonal ferry service; reviewed page contains placeholder copy in its secondary-transport section, which was excluded."
+        },
+        {
+          "id": "sado_ferry",
+          "organization": "Sado Kisen",
+          "title": "Passenger reservation and travel guide",
+          "url": "https://www.sadokisen.co.jp/en/user-guide/reservation/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Ferry operator passenger guidance; live schedules and fares must be checked for the travel date."
+        }
+      ],
+      "nextAction": "Choose a specific island area, verify exact site addresses and coordinates, local transit, phone contacts, stay recommendations, ferry fare evidence, weather safety, and photo license.",
+      "complete": false
+    },
+    {
+      "id": "kumano-kodo-the-old-paths",
+      "type": "walking-route",
+      "status": "partially-verified",
+      "sources": [
+        {
+          "id": "kumano",
+          "organization": "Tanabe City Kumano Tourism Bureau",
+          "title": "Nakahechi route guide",
+          "url": "https://www.tb-kumano.jp/en/kumano-kodo/nakahechi/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official bureau describes the core pilgrimage trail, route sections, mountain conditions, local buses, maps, and safety resources."
+        },
+        {
+          "id": "kumano_map",
+          "organization": "Tanabe City Kumano Tourism Bureau",
+          "title": "Kumano Kodo Nakahechi complete route maps",
+          "url": "https://www2.tb-kumano.jp/en/kumano-kodo/pdf/Kumano-Kodo-Nakahechi-Route-Maps-Complete.pdf",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official route map identifies the Nakahechi start area and trail segments; geometry and exact coordinates have not yet been extracted."
+        }
+      ],
+      "nextAction": "Select one Nakahechi itinerary, review section distances/elevation and safety pages, verify trailhead coordinates, transit return, stay providers, phone contacts, cost, weather plan, and imagery.",
+      "complete": false
+    },
+    {
+      "id": "mount-takao",
+      "type": "hiking-route",
+      "status": "partially-verified",
+      "sources": [
+        {
+          "id": "takao_go",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Mt. Takao and around",
+          "url": "https://www.gotokyo.org/en/destinations/outlying-area/mt-takao-and-around/index.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official Tokyo tourism page describes the mountain, trails, cable car and chairlift."
+        },
+        {
+          "id": "takao_park",
+          "organization": "Tokyo Metropolitan Government Bureau of Environment",
+          "title": "Takao Visitor Center",
+          "url": "https://www.kankyo1.metro.tokyo.lg.jp/naturepark/english/know/shisetsu/visitorcenter/takao.html",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official visitor-center page gives its elevation, address, hours, access, and facilities."
+        }
+      ],
+      "nextAction": "Research specific trail grades, distances and closures, source exact trailhead coordinates, phone contact, stay options, costs, and a current photo license.",
+      "complete": false
+    },
+    {
+      "id": "izu-peninsula-the-long-way-round",
+      "type": "region",
+      "status": "partially-verified",
+      "sources": [
+        {
+          "id": "izu_jnto",
+          "organization": "Japan National Tourism Organization",
+          "title": "Izu Peninsula destination guide",
+          "url": "https://www.japan.travel/en/destinations/tokai/shizuoka/izu-and-around/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Official guide describes Atami, Ito, Shimoda, coastal and inland areas, eastbound rail access, and recommends several days to explore."
+        },
+        {
+          "id": "izu_geopark",
+          "organization": "Izu Peninsula Geopark",
+          "title": "Izu Peninsula Geopark guide",
+          "url": "https://en.izugeoguide.org/",
+          "checkedOn": "2026-10-23",
+          "evidenceNotes": "Geoguide association describes the peninsula’s geological, natural, historical, and cultural sites."
+        }
+      ],
+      "nextAction": "Select an Izu subregion, research specific points/transfers and map coordinates, contacts, stays, costs, season and weather evidence, and photo provenance.",
+      "complete": false
+    }
+  ]
+}
