@@ -44,6 +44,12 @@ function validateInventory(inventory) {
     } else if (seen.has(record.id)) {
       issues.push({ code: 'duplicate-id', id: record.id, index, message: `Duplicate inventory id: ${record.id}` });
     } else seen.add(record.id);
+    if (record.aliasOf !== undefined && record.aliasOf !== null) {
+      const targetExists = records.some(candidate => candidate && candidate.id === record.aliasOf);
+      if (!targetExists) issues.push({ code: 'alias-missing-target', id: record.id ?? null, index, message: 'Alias target not found: ' + record.aliasOf });
+      if (typeof record.aliasEvidence !== 'string' || !record.aliasEvidence.trim()) issues.push({ code: 'alias-missing-evidence', id: record.id ?? null, index, message: 'Alias requires evidence' });
+      if (!Array.isArray(record.oldPaths) || record.oldPaths.length === 0) issues.push({ code: 'alias-missing-old-path', id: record.id ?? null, index, message: 'Alias must preserve at least one old URL' });
+    }
     if (record.coordinates !== undefined) {
       const { latitude, longitude } = record.coordinates || {};
       if (!Number.isFinite(latitude) || latitude < -90 || latitude > 90 ||
@@ -55,4 +61,28 @@ function validateInventory(inventory) {
   return issues;
 }
 
-module.exports = { loadRawDestinations, validateInventory };
+function buildInventory(raw, identities, siteBase = '/Den-Lab/SomeWhereInJapan/') {
+  const byName = new Map((identities || []).map(identity => [identity.rawName || identity.name, identity]));
+  const base = `/${String(siteBase).split('/').filter(Boolean).join('/')}/`;
+  const records = (raw || []).map(place => {
+    const identity = byName.get(place.name);
+    if (!identity) return { id: null, name: place.name, region: place.region, raw: place, identityStatus: 'missing' };
+    return {
+      ...identity,
+      name: place.name,
+      region: place.region,
+      raw: place,
+      url: `${base}places/${identity.slug}/`,
+      canonicalId: identity.aliasOf || identity.id,
+      identityStatus: identity.identityStatus || 'pending-research'
+    };
+  });
+  const canonicalCount = records.filter(record => !record.aliasOf).length;
+  return { schemaVersion: 1, rawCount: records.length, canonicalCandidateCount: canonicalCount,
+    confirmedAliasCount: records.filter(record => record.aliasOf).length,
+    identityReviewPendingCount: records.filter(record => record.identityStatus !== 'reviewed').length,
+    records, issues: validateInventory({ records }) };
+}
+
+module.exports = { loadRawDestinations, validateInventory, buildInventory };
+

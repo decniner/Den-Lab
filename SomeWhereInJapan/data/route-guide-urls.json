@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "kawagoe",
+      "title": "Kawagoe by old streets",
+      "url": "/Den-Lab/SomeWhereInJapan/day-trips/kawagoe/",
+      "relatedDestinationId": "kawagoe-the-little-edo"
+    },
+    {
+      "id": "sawara",
+      "title": "Sawara along the water",
+      "url": "/Den-Lab/SomeWhereInJapan/day-trips/sawara/",
+      "relatedDestinationId": null
+    },
+    {
+      "id": "mitake",
+      "title": "Mount Mitake and valley shrines",
+      "url": "/Den-Lab/SomeWhereInJapan/day-trips/mitake/",
+      "relatedDestinationId": null
+    },
+    {
+      "id": "narita",
+      "title": "Narita temple-town day",
+      "url": "/Den-Lab/SomeWhereInJapan/day-trips/narita/",
+      "relatedDestinationId": null
+    },
+    {
+      "id": "odawara",
+      "title": "Odawara castle town",
+      "url": "/Den-Lab/SomeWhereInJapan/day-trips/odawara/",
+      "relatedDestinationId": null
+    }
+  ]
+}
