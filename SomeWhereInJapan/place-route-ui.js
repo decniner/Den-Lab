@@ -2,7 +2,7 @@
 'use strict';
 let placeRegistryPromise;
 function fetchJson(path){return fetch(new URL(path,document.baseURI)).then(response=>response.ok?response.json():null).catch(()=>null);}
-function placeRegistry(){return placeRegistryPromise||(placeRegistryPromise=fetchJson(`${root.location.pathname.includes('/places/')?'../../':'./'}data/place-routes.json?v=20261024-2`));}
+function placeRegistry(){return placeRegistryPromise||(placeRegistryPromise=fetchJson(`${root.location.pathname.includes('/places/')?'../../':'./'}data/place-routes.json?v=20261024-5`));}
 function mount(host,route,mapData,viewOptions={}){
  if(!route||!mapData||!root.CityRouteUI)return null;
  route.cityId=route.cityId||'nikko';

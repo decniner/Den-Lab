@@ -838,45 +838,409 @@
       ]
     },
     {
-      "id": "beppu-steam-rising-place-map",
+      "id": "beppu-steam-rising-seven-hells",
       "placeId": "beppu-steam-rising",
-      "cityId": "destination",
-      "title": "Beppu, steam rising: location map",
-      "introduction": "Approximate location reference for Beppu, steam rising. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Oita · Kyushu",
+      "cityId": "beppu",
+      "title": "Beppu Seven Hells: Kannawa to Shibaseki",
+      "introduction": "Follow Visit Oita’s numbered seven-hell sequence: five walkable sites in Kannawa, then a bus or car transfer of about 3 km to the two Shibaseki sites. Allow around three hours overall. Check Tatsumaki’s eruption schedule on arrival; if the wait is long, visit neighboring Chinoike first. Map connectors show order, not paths; use each Google Maps leg link for current directions.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "attraction",
       "stops": [
         {
-          "id": "beppu-steam-rising-place",
+          "id": "beppu-umi-jigoku",
           "order": 1,
-          "name": "Beppu, steam rising",
-          "area": "Oita · Kyushu",
-          "address": "Beppu, steam rising, Oita · Kyushu, Japan",
-          "story": "Follow the steam through a city shaped by hot springs and volcanic earth.",
+          "name": "Umi Jigoku",
+          "area": "Japan",
+          "address": "Umi Jigoku, Kannawa, Beppu, Oita, Japan",
+          "story": "Start at the cobalt-blue pond and its landscaped grounds, one of the five Kannawa hells covered on foot.",
           "coordinates": {
-            "latitude": 33.2393864,
-            "longitude": 131.6096524,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 33.316806,
+            "longitude": 131.46875,
+            "precision": "OpenStreetMap mapped attraction point (way/418202285); source cross-checked to official tour map",
             "sourceIds": [
-              "destination-map-location"
+              "oita-beppu-seven-hells",
+              "commons-umijigoku"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Beppu%2C%20steam%20rising%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Umi%20Jigoku%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "beppu-oniishi-bozu-jigoku",
+          "order": 2,
+          "name": "Oniishi Bozu Jigoku",
+          "area": "Japan",
+          "address": "Oniishi Bozu Jigoku, Kannawa, Beppu, Oita, Japan",
+          "story": "See the bubbling mud pools whose rounded eruptions give this site its name. Stay within the marked viewing paths.",
+          "coordinates": {
+            "latitude": 33.31525,
+            "longitude": 131.469611,
+            "precision": "OpenStreetMap mapped attraction point (way/417893190); source cross-checked to official tour map",
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "commons-oniishibozu"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Oniishi%20Bozu%20Jigoku%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "beppu-kamado-jigoku",
+          "order": 3,
+          "name": "Kamado Jigoku",
+          "area": "Japan",
+          "address": "Kamado Jigoku, Kannawa, Beppu, Oita, Japan",
+          "story": "A compact collection of steaming pools and geothermal demonstrations in the Kannawa area.",
+          "coordinates": {
+            "latitude": 33.31645,
+            "longitude": 131.47245,
+            "precision": "OpenStreetMap mapped attraction point (way/417446108); source cross-checked to official tour map",
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "osm-kamado-jigoku"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kamado%20Jigoku%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "beppu-oniyama-jigoku",
+          "order": 4,
+          "name": "Oniyama Jigoku",
+          "area": "Japan",
+          "address": "Oniyama Jigoku, Kannawa, Beppu, Oita, Japan",
+          "story": "Known for its crocodile exhibits, heated by the hot spring source. The official destination listing places it near the Umi Jigoku Mae bus stop.",
+          "coordinates": {
+            "latitude": 33.316111,
+            "longitude": 131.473333,
+            "precision": "Wikimedia Commons object coordinates, displayed on an OpenStreetMap map",
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "commons-oniyama-jigoku"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Oniyama%20Jigoku%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "beppu-shiraike-jigoku",
+          "order": 5,
+          "name": "Shiraike Jigoku",
+          "area": "Japan",
+          "address": "Shiraike Jigoku, Kannawa, Beppu, Oita, Japan",
+          "story": "A pale, milky pool within the walkable Kannawa group. This is the last stop in the official Kannawa cluster sequence.",
+          "coordinates": {
+            "latitude": 33.315278,
+            "longitude": 131.474167,
+            "precision": "OpenStreetMap mapped attraction point (way/412898359); source cross-checked to official tour map",
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "osm-shiraike-jigoku"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Shiraike%20Jigoku%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "beppu-chinoike-jigoku",
+          "order": 6,
+          "name": "Chinoike Jigoku",
+          "area": "Japan",
+          "address": "Chinoike Jigoku, Shibaseki, Beppu, Oita, Japan",
+          "story": "Cross to Shibaseki for the red, iron-rich pool. The official guide places this second cluster about 3 km from Kannawa; plan a bus or car transfer.",
+          "coordinates": {
+            "latitude": 33.32718,
+            "longitude": 131.47812,
+            "precision": "OpenStreetMap mapped attraction point (way/244615363); source cross-checked to official tour map",
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "osm-chinoike-jigoku"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Chinoike%20Jigoku%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "beppu-tatsumaki-jigoku",
+          "order": 7,
+          "name": "Tatsumaki Jigoku",
+          "area": "Japan",
+          "address": "Tatsumaki Jigoku, Shibaseki, Beppu, Oita, Japan",
+          "story": "Finish at the geyser. Check the next eruption time when you arrive; if the wait is long, the official guide suggests visiting nearby Chinoike Jigoku first.",
+          "coordinates": {
+            "latitude": 33.326944,
+            "longitude": 131.479444,
+            "precision": "OpenStreetMap mapped attraction point (way/418401803); source cross-checked to official tour map",
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "osm-tatsumaki-jigoku"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Tatsumaki%20Jigoku%20Japan%20visitor%20guide"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "beppu-jigoku-leg-01",
+          "fromId": "beppu-umi-jigoku",
+          "toId": "beppu-oniishi-bozu-jigoku",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                131.46875,
+                33.316806
+              ],
+              [
+                131.469611,
+                33.31525
+              ]
+            ],
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "beppu-hells-operator-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=33.316806%2C131.46875&destination=33.31525%2C131.469611&travelmode=walking"
+        },
+        {
+          "id": "beppu-jigoku-leg-02",
+          "fromId": "beppu-oniishi-bozu-jigoku",
+          "toId": "beppu-kamado-jigoku",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                131.469611,
+                33.31525
+              ],
+              [
+                131.47245,
+                33.31645
+              ]
+            ],
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "beppu-hells-operator-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=33.31525%2C131.469611&destination=33.31645%2C131.47245&travelmode=walking"
+        },
+        {
+          "id": "beppu-jigoku-leg-03",
+          "fromId": "beppu-kamado-jigoku",
+          "toId": "beppu-oniyama-jigoku",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                131.47245,
+                33.31645
+              ],
+              [
+                131.473333,
+                33.316111
+              ]
+            ],
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "beppu-hells-operator-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=33.31645%2C131.47245&destination=33.316111%2C131.473333&travelmode=walking"
+        },
+        {
+          "id": "beppu-jigoku-leg-04",
+          "fromId": "beppu-oniyama-jigoku",
+          "toId": "beppu-shiraike-jigoku",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                131.473333,
+                33.316111
+              ],
+              [
+                131.474167,
+                33.315278
+              ]
+            ],
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "beppu-hells-operator-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=33.316111%2C131.473333&destination=33.315278%2C131.474167&travelmode=walking"
+        },
+        {
+          "id": "beppu-jigoku-leg-05",
+          "fromId": "beppu-shiraike-jigoku",
+          "toId": "beppu-chinoike-jigoku",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                131.474167,
+                33.315278
+              ],
+              [
+                131.47812,
+                33.32718
+              ]
+            ],
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "beppu-hells-operator-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=33.315278%2C131.474167&destination=33.32718%2C131.47812&travelmode=transit"
+        },
+        {
+          "id": "beppu-jigoku-leg-06",
+          "fromId": "beppu-chinoike-jigoku",
+          "toId": "beppu-tatsumaki-jigoku",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                131.47812,
+                33.32718
+              ],
+              [
+                131.479444,
+                33.326944
+              ]
+            ],
+            "sourceIds": [
+              "oita-beppu-seven-hells",
+              "beppu-hells-operator-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=33.32718%2C131.47812&destination=33.326944%2C131.479444&travelmode=walking"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/4004862",
-          "checkedOn": "2026-10-23",
+          "id": "oita-beppu-seven-hells",
+          "label": "Visit Oita: Beppu Jigoku Meguri (Seven Hells Tour)",
+          "url": "https://oita-tourism.com/en/jigokumeguri",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "recommended numbered order of the seven hells",
+            "Kannawa and Shibaseki clusters and approximately 3 km inter-area transfer",
+            "walking within Kannawa and bus or car between clusters",
+            "Tatsumaki geyser schedule and visitor planning notes"
+          ]
+        },
+        {
+          "id": "beppu-hells-operator-map",
+          "label": "Beppu Jigoku: official English tour map",
+          "url": "https://www.beppu-jigoku.com/pamphlet/images/English.pdf",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "numbered attraction map and cluster location"
+          ]
+        },
+        {
+          "id": "commons-umijigoku",
+          "label": "OpenStreetMap-linked map point: Umi Jigoku",
+          "url": "https://www.openstreetmap.org/way/418202285",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped attraction point"
+          ]
+        },
+        {
+          "id": "commons-oniishibozu",
+          "label": "OpenStreetMap-linked map point: Oniishi Bozu Jigoku",
+          "url": "https://www.openstreetmap.org/way/417893190",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped attraction point"
+          ]
+        },
+        {
+          "id": "osm-kamado-jigoku",
+          "label": "OpenStreetMap: Kamado Jigoku",
+          "url": "https://www.openstreetmap.org/way/417446108",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped attraction point"
+          ]
+        },
+        {
+          "id": "commons-oniyama-jigoku",
+          "label": "Wikimedia Commons: Oniyama Jigoku object coordinates (map uses OpenStreetMap)",
+          "url": "https://commons.wikimedia.org/wiki/Category:Oniyama-jigoku",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "attraction object coordinate; page displays OpenStreetMap map"
+          ]
+        },
+        {
+          "id": "osm-shiraike-jigoku",
+          "label": "OpenStreetMap: Shiraike Jigoku",
+          "url": "https://www.openstreetmap.org/way/412898359",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped attraction point"
+          ]
+        },
+        {
+          "id": "osm-chinoike-jigoku",
+          "label": "OpenStreetMap: Chinoike Jigoku",
+          "url": "https://www.openstreetmap.org/way/244615363",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped attraction point"
+          ]
+        },
+        {
+          "id": "osm-tatsumaki-jigoku",
+          "label": "OpenStreetMap: Tatsumaki Jigoku",
+          "url": "https://www.openstreetmap.org/way/418401803",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped attraction point"
           ]
         }
       ]
@@ -3283,48 +3647,206 @@
       ]
     },
     {
-      "id": "hasedera-temple-kamakura-place-map",
+      "id": "hasedera-temple-kamakura-western-temples",
       "placeId": "hasedera-temple-kamakura",
-      "cityId": "destination",
-      "title": "Hasedera Temple, Kamakura: location map",
-      "introduction": "Approximate location reference for Hasedera Temple, Kamakura. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "nearby",
-      "locatorLabel": "Hase · Kamakura",
+      "cityId": "kamakura",
+      "title": "Hase Temple walk: Hasedera, the Great Buddha and Gokurakuji",
+      "introduction": "Follow VISIT KAMAKURA’s popular Route 2 from Hasedera Temple to Kotokuin’s Great Buddha and onward to Gokurakuji Temple. The 2024 city map estimates about 8 and 18 minutes for the two walks. It is an official route map, not turn-by-turn geometry; use live Google Maps walking directions and check current temple access.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "attraction",
       "stops": [
         {
-          "id": "hasedera-temple-kamakura-place",
+          "id": "kamakura-hasedera",
           "order": 1,
-          "name": "Hasedera Temple, Kamakura",
-          "area": "Hase · Kamakura",
-          "address": "Hasedera Temple, Kamakura, Hase · Kamakura, Japan",
-          "story": "A hillside temple pairs a calm garden and viewing terraces with an intimate feel above the coastal town. Take the path at an unhurried pace and notice how the view opens between the trees.",
+          "name": "Hasedera Temple",
+          "area": "Japan",
+          "address": "Hasedera Temple, 3-11-2 Hase, Kamakura, Kanagawa, Japan",
+          "story": "Begin at the hillside temple, known for its eleven-headed Kannon and views over the coast. This is the named first attraction on the official Kamakura Route 2.",
           "coordinates": {
-            "latitude": 35.1168355,
-            "longitude": 134.7480051,
-            "precision": "Nearby reference point; confirm the attraction entrance",
+            "latitude": 35.31234,
+            "longitude": 139.53325,
+            "precision": "OpenStreetMap temple polygon way 695597656",
             "sourceIds": [
-              "destination-map-location"
+              "kamakura-official-route-map",
+              "osm-hasedera-kamakura",
+              "jnto-hasedera"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Hasedera%20Temple%2C%20Kamakura%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Hasedera%20Temple%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "kamakura-kotokuin-great-buddha",
+          "order": 2,
+          "name": "Kotokuin Temple (Great Buddha of Kamakura)",
+          "area": "Japan",
+          "address": "Kotokuin Temple, 4-2-28 Hase, Kamakura, Kanagawa, Japan",
+          "story": "Continue to the Great Buddha, the monumental bronze Amida housed in the open air. The city map estimates about eight minutes on foot from Hasedera.",
+          "coordinates": {
+            "latitude": 35.317028982183,
+            "longitude": 139.53576565767,
+            "precision": "VISIT KAMAKURA official map point; coordinates linked from the visitor listing",
+            "sourceIds": [
+              "kamakura-official-route-map",
+              "visit-kamakura-kotokuin",
+              "jnto-kotokuin"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kotokuin%20Temple%20(Great%20Buddha%20of%20Kamakura)%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "kamakura-gokurakuji",
+          "order": 3,
+          "name": "Gokurakuji Temple",
+          "area": "Japan",
+          "address": "Gokurakuji Temple, 3-6-7 Gokurakuji, Kamakura, Kanagawa, Japan",
+          "story": "End at the quiet temple near Gokurakuji Station. The official route map estimates about eighteen minutes on foot from Kotokuin; follow current pedestrian directions.",
+          "coordinates": {
+            "latitude": 35.31012,
+            "longitude": 139.5288,
+            "precision": "OpenStreetMap temple polygon way 706110565",
+            "sourceIds": [
+              "kamakura-official-route-map",
+              "osm-gokurakuji-kamakura",
+              "visit-kamakura-gokurakuji"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Gokurakuji%20Temple%20Japan%20visitor%20guide"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "kamakura-hase-walk-01",
+          "fromId": "kamakura-hasedera",
+          "toId": "kamakura-kotokuin-great-buddha",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 8,
+            "maxMinutes": 8
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.53325,
+                35.31234
+              ],
+              [
+                139.53576565767,
+                35.317028982183
+              ]
+            ],
+            "sourceIds": [
+              "kamakura-official-route-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.31234%2C139.53325&destination=35.317028982183%2C139.53576565767&travelmode=walking"
+        },
+        {
+          "id": "kamakura-hase-walk-02",
+          "fromId": "kamakura-kotokuin-great-buddha",
+          "toId": "kamakura-gokurakuji",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 18,
+            "maxMinutes": 18
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.53576565767,
+                35.317028982183
+              ],
+              [
+                139.5288,
+                35.31012
+              ]
+            ],
+            "sourceIds": [
+              "kamakura-official-route-map"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=35.317028982183%2C139.53576565767&destination=35.31012%2C139.5288&travelmode=walking"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/node/267062582",
-          "checkedOn": "2026-10-23",
+          "id": "kamakura-official-route-map",
+          "label": "VISIT KAMAKURA: 2024 English tourist map, popular Route 2",
+          "url": "https://visit.trip-kamakura.com/wp/wp-content/uploads/2025/01/touristmap_english_2024.pdf",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "ordered Hasedera–Kotokuin–Gokurakuji walking sequence",
+            "published approximate 8-minute and 18-minute walk estimates"
+          ]
+        },
+        {
+          "id": "jnto-hasedera",
+          "label": "JNTO: Hasedera Temple",
+          "url": "https://www.japan.travel/en/spot/1592/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Hasedera identity and visitor access"
+          ]
+        },
+        {
+          "id": "osm-hasedera-kamakura",
+          "label": "OpenStreetMap: Hasedera Temple polygon (way 695597656)",
+          "url": "https://www.openstreetmap.org/way/695597656",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped temple point"
+          ]
+        },
+        {
+          "id": "visit-kamakura-kotokuin",
+          "label": "VISIT KAMAKURA: Kotokuin Temple and Great Buddha",
+          "url": "https://visit.trip-kamakura.com/things-to-do/kotokuintemple-greatbuddha/?ttd_cat=shirines-temples",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official visitor listing and map coordinates"
+          ]
+        },
+        {
+          "id": "jnto-kotokuin",
+          "label": "JNTO: Kotokuin Temple (Great Buddha of Kamakura)",
+          "url": "https://www.japan.travel/en/spot/1588/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Great Buddha identity and visitor access"
+          ]
+        },
+        {
+          "id": "visit-kamakura-gokurakuji",
+          "label": "VISIT KAMAKURA: Gokurakuji Temple",
+          "url": "https://visit.trip-kamakura.com/things-to-do/gokurakuji-temple/?ttd_cat=shirines-temples",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official temple identity and location"
+          ]
+        },
+        {
+          "id": "osm-gokurakuji-kamakura",
+          "label": "OpenStreetMap: Gokurakuji Temple polygon (way 706110565)",
+          "url": "https://www.openstreetmap.org/way/706110565",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped temple point"
           ]
         }
-      ]
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=35.31234%2C139.53325&destination=35.31012%2C139.5288&travelmode=walking&waypoints=35.317028982183%2C139.53576565767"
     },
     {
       "id": "hida-folk-village-place-map",
@@ -3591,45 +4113,184 @@
       ]
     },
     {
-      "id": "hiraizumi-s-quiet-temples-place-map",
+      "id": "hiraizumi-motsuji-chusonji-loop-bus",
       "placeId": "hiraizumi-s-quiet-temples",
-      "cityId": "destination",
-      "title": "Hiraizumi’s quiet temples: location map",
-      "introduction": "Approximate location reference for Hiraizumi’s quiet temples. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Iwate · Tohoku",
+      "cityId": "hiraizumi",
+      "title": "Hiraizumi’s Motsuji and Chusonji by local bus",
+      "introduction": "From JR Hiraizumi Station, take the Hiraizumi Loop Bus to Motsuji, then continue by the same local service to Chusonji. The official Tohoku itinerary lists approximately 3 and 7 minutes for these legs. This is a transit route between temple precincts, not a continuous walking course. The longer rail journey from Sendai is excluded.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "attraction",
+      "origin": {
+        "id": "hiraizumi-station",
+        "name": "JR Hiraizumi Station",
+        "address": "JR Hiraizumi Station, Hiraizumi, Iwate, Japan",
+        "coordinates": {
+          "latitude": 38.9880865,
+          "longitude": 141.1176428,
+          "precision": "OpenStreetMap station node 264170614",
+          "sourceIds": [
+            "osm-hiraizumi-station"
+          ]
+        }
+      },
       "stops": [
         {
-          "id": "hiraizumi-s-quiet-temples-place",
+          "id": "motsuji-temple",
           "order": 1,
-          "name": "Hiraizumi’s quiet temples",
-          "area": "Iwate · Tohoku",
-          "address": "Hiraizumi’s quiet temples, Iwate · Tohoku, Japan",
-          "story": "Garden ponds and temple grounds preserve the contemplative beauty of a former northern capital.",
+          "name": "Motsuji Temple",
+          "area": "Hiraizumi, Iwate",
+          "address": "Motsuji Temple, Hiraizumi, Iwate, Japan",
+          "story": "Begin in the Pure Land garden precinct, where pond, islands and reconstructed temple foundations evoke a Heian-period Buddhist landscape.",
           "coordinates": {
-            "latitude": 39.5713763,
-            "longitude": 141.4253574,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 38.9882159,
+            "longitude": 141.1073078,
+            "precision": "OpenStreetMap mapped temple feature",
             "sourceIds": [
-              "destination-map-location"
+              "tohoku-hiraizumi-itinerary",
+              "tohoku-motsuji",
+              "osm-motsuji"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Hiraizumi%E2%80%99s%20quiet%20temples%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Motsuji%20Temple%20Hiraizumi%20Japan"
+        },
+        {
+          "id": "chusonji-temple",
+          "order": 2,
+          "name": "Chusonji Temple",
+          "area": "Hiraizumi, Iwate",
+          "address": "Chusonji Temple, Hiraizumi, Iwate, Japan",
+          "story": "Continue to the hilltop temple complex and Konjikido, whose gold-covered interior preserves the memory of the Oshu Fujiwara era.",
+          "coordinates": {
+            "latitude": 39.000941,
+            "longitude": 141.1020699,
+            "precision": "OpenStreetMap mapped temple feature",
+            "sourceIds": [
+              "tohoku-hiraizumi-itinerary",
+              "tohoku-chusonji",
+              "osm-chusonji"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Chusonji%20Temple%20Hiraizumi%20Japan"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "hiraizumi-loop-bus-1",
+          "fromId": "hiraizumi-station",
+          "toId": "motsuji-temple",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 3,
+            "maxMinutes": 3
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.1176428,
+                38.9880865
+              ],
+              [
+                141.1073078,
+                38.9882159
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-hiraizumi-itinerary"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=38.9880865%2C141.1176428&destination=38.9882159%2C141.1073078&travelmode=transit"
+        },
+        {
+          "id": "hiraizumi-loop-bus-2",
+          "fromId": "motsuji-temple",
+          "toId": "chusonji-temple",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 7,
+            "maxMinutes": 7
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.1073078,
+                38.9882159
+              ],
+              [
+                141.1020699,
+                39.000941
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-hiraizumi-itinerary"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=38.9882159%2C141.1073078&destination=39.000941%2C141.1020699&travelmode=transit"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/3792412",
-          "checkedOn": "2026-10-23",
+          "id": "tohoku-hiraizumi-itinerary",
+          "label": "TOHOKU tourism: Sendai, Matsushima and Hiraizumi itinerary",
+          "url": "https://www.tohokukanko.jp/itineraries/detail_19.html",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "Hiraizumi sequence: JR Hiraizumi Station, Motsuji, Chusonji",
+            "local access by Hiraizumi Loop Bus RunRun; published 3-minute and 7-minute legs"
+          ]
+        },
+        {
+          "id": "tohoku-motsuji",
+          "label": "TOHOKU tourism: Motsuji Temple",
+          "url": "https://www.tohokukanko.jp/en/attractions/detail_1738.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official attraction identity and visitor information"
+          ]
+        },
+        {
+          "id": "tohoku-chusonji",
+          "label": "TOHOKU tourism: Chusonji Temple",
+          "url": "https://www.tohokukanko.jp/en/attractions/detail_1568.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official attraction identity and visitor information"
+          ]
+        },
+        {
+          "id": "osm-hiraizumi-station",
+          "label": "OpenStreetMap: JR Hiraizumi Station (node 264170614)",
+          "url": "https://www.openstreetmap.org/node/264170614",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped visitor-area feature"
+          ]
+        },
+        {
+          "id": "osm-motsuji",
+          "label": "OpenStreetMap: Motsuji Temple (way 218652547)",
+          "url": "https://www.openstreetmap.org/way/218652547",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped visitor-area feature"
+          ]
+        },
+        {
+          "id": "osm-chusonji",
+          "label": "OpenStreetMap: Chusonji Temple (way 1023510974)",
+          "url": "https://www.openstreetmap.org/way/1023510974",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped visitor-area feature"
           ]
         }
       ]
@@ -11345,45 +12006,280 @@
       ]
     },
     {
-      "id": "matsushima-bay-place-map",
+      "id": "matsushima-bay-temples-walk",
       "placeId": "matsushima-bay",
-      "cityId": "destination",
-      "title": "Matsushima Bay: location map",
-      "introduction": "Approximate location reference for Matsushima Bay. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Miyagi · Tohoku",
+      "cityId": "matsushima",
+      "title": "Matsushima station-to-bay temples walk",
+      "introduction": "From JR Matsushima-Kaigan Station, follow the official Tohoku itinerary to Miyagi Matsushima Rikyu, Zuiganji, Entsuin and Godaido. The published local walking estimates total 14 minutes, excluding visits. The itinerary’s approximately 40-minute train from Sendai is outside this local route.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "attraction",
+      "origin": {
+        "id": "matsushima-kaigan-station",
+        "name": "JR Matsushima-Kaigan Station",
+        "address": "JR Matsushima-Kaigan Station, Matsushima, Miyagi, Japan",
+        "coordinates": {
+          "latitude": 38.3678491,
+          "longitude": 141.0589956,
+          "precision": "OpenStreetMap station node 3570916495",
+          "sourceIds": [
+            "osm-matsu-station"
+          ]
+        }
+      },
       "stops": [
         {
-          "id": "matsushima-bay-place",
+          "id": "matsushima-rikyu",
           "order": 1,
-          "name": "Matsushima Bay",
-          "area": "Miyagi · Tohoku",
-          "address": "Matsushima Bay, Miyagi · Tohoku, Japan",
-          "story": "Pine-covered islands scatter across one of Japan’s most storied seascapes.",
+          "name": "Miyagi Matsushima Rikyu",
+          "area": "Matsushima, Miyagi",
+          "address": "Miyagi Matsushima Rikyu, Matsushima, Miyagi, Japan",
+          "story": "Start beside the bay at this visitor complex, where the roof terrace opens to a broad view across Matsushima.",
           "coordinates": {
-            "latitude": 38.3880155,
-            "longitude": 140.9761025,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 38.3676019,
+            "longitude": 141.060162,
+            "precision": "OpenStreetMap mapped node; visitor entrance may differ",
             "sourceIds": [
-              "destination-map-location"
+              "tohoku-matsushima-itinerary",
+              "osm-matsushima-rikyu"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Matsushima%20Bay%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Miyagi%20Matsushima%20Rikyu%20Matsushima%20Japan"
+        },
+        {
+          "id": "zuiganji-temple",
+          "order": 2,
+          "name": "Zuiganji Temple",
+          "area": "Matsushima, Miyagi",
+          "address": "Zuiganji Temple, Matsushima, Miyagi, Japan",
+          "story": "Walk to Zuiganji, Date Masamune’s richly decorated temple and one of the bay’s defining cultural landmarks.",
+          "coordinates": {
+            "latitude": 38.3721758,
+            "longitude": 141.0595579,
+            "precision": "OpenStreetMap mapped node; visitor entrance may differ",
+            "sourceIds": [
+              "tohoku-matsushima-itinerary",
+              "osm-zuiganji"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Zuiganji%20Temple%20Matsushima%20Japan"
+        },
+        {
+          "id": "entsuin-temple",
+          "order": 3,
+          "name": "Entsuin Temple",
+          "area": "Matsushima, Miyagi",
+          "address": "Entsuin Temple, Matsushima, Miyagi, Japan",
+          "story": "Continue next door to Entsuin, known for its gardens and the mausoleum of Date Mitsumune.",
+          "coordinates": {
+            "latitude": 38.3712885,
+            "longitude": 141.0599598,
+            "precision": "OpenStreetMap mapped node; visitor entrance may differ",
+            "sourceIds": [
+              "tohoku-matsushima-itinerary",
+              "osm-entsuin"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Entsuin%20Temple%20Matsushima%20Japan"
+        },
+        {
+          "id": "godaido-temple",
+          "order": 4,
+          "name": "Godaido Temple",
+          "area": "Matsushima, Miyagi",
+          "address": "Godaido Temple, Matsushima, Miyagi, Japan",
+          "story": "End at the small island pavilion reached by vermilion bridge, a classic viewpoint over Matsushima Bay.",
+          "coordinates": {
+            "latitude": 38.3697244,
+            "longitude": 141.0642082,
+            "precision": "OpenStreetMap mapped feature; visitor entrance may differ",
+            "sourceIds": [
+              "tohoku-matsushima-itinerary",
+              "osm-godaido"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Godaido%20Temple%20Matsushima%20Japan"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "matsushima-bay-walk-1",
+          "fromId": "matsushima-kaigan-station",
+          "toId": "matsushima-rikyu",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 1,
+            "maxMinutes": 1
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.0589956,
+                38.3678491
+              ],
+              [
+                141.060162,
+                38.3676019
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-matsushima-itinerary"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=38.3678491%2C141.0589956&destination=38.3676019%2C141.060162&travelmode=walking"
+        },
+        {
+          "id": "matsushima-bay-walk-2",
+          "fromId": "matsushima-rikyu",
+          "toId": "zuiganji-temple",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.060162,
+                38.3676019
+              ],
+              [
+                141.0595579,
+                38.3721758
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-matsushima-itinerary"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=38.3676019%2C141.060162&destination=38.3721758%2C141.0595579&travelmode=walking"
+        },
+        {
+          "id": "matsushima-bay-walk-3",
+          "fromId": "zuiganji-temple",
+          "toId": "entsuin-temple",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 3,
+            "maxMinutes": 3
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.0595579,
+                38.3721758
+              ],
+              [
+                141.0599598,
+                38.3712885
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-matsushima-itinerary"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=38.3721758%2C141.0595579&destination=38.3712885%2C141.0599598&travelmode=walking"
+        },
+        {
+          "id": "matsushima-bay-walk-4",
+          "fromId": "entsuin-temple",
+          "toId": "godaido-temple",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.0599598,
+                38.3712885
+              ],
+              [
+                141.0642082,
+                38.3697244
+              ]
+            ],
+            "sourceIds": [
+              "tohoku-matsushima-itinerary"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=38.3712885%2C141.0599598&destination=38.3697244%2C141.0642082&travelmode=walking"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/3790801",
-          "checkedOn": "2026-10-23",
+          "id": "tohoku-matsushima-itinerary",
+          "label": "TOHOKU tourism: Sendai, Matsushima and Hiraizumi itinerary",
+          "url": "https://www.tohokukanko.jp/itineraries/detail_19.html",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "Matsushima stop order: station, Miyagi Matsushima Rikyu, Zuiganji, Entsuin, Godaido",
+            "published inter-stop walking times of 1, 5, 3 and 5 minutes"
+          ]
+        },
+        {
+          "id": "osm-matsu-station",
+          "label": "OpenStreetMap: JR Matsushima-Kaigan Station (node 3570916495)",
+          "url": "https://www.openstreetmap.org/node/3570916495",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped visitor-area feature"
+          ]
+        },
+        {
+          "id": "osm-matsushima-rikyu",
+          "label": "OpenStreetMap: Miyagi Matsushima Rikyu (node 8569355553)",
+          "url": "https://www.openstreetmap.org/node/8569355553",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped visitor-area feature"
+          ]
+        },
+        {
+          "id": "osm-zuiganji",
+          "label": "OpenStreetMap: Zuiganji Temple (node 870453209)",
+          "url": "https://www.openstreetmap.org/node/870453209",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped visitor-area feature"
+          ]
+        },
+        {
+          "id": "osm-entsuin",
+          "label": "OpenStreetMap: Entsuin Temple (node 1209848627)",
+          "url": "https://www.openstreetmap.org/node/1209848627",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped visitor-area feature"
+          ]
+        },
+        {
+          "id": "osm-godaido",
+          "label": "OpenStreetMap: Godaido Temple (way 629758927)",
+          "url": "https://www.openstreetmap.org/way/629758927",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped visitor-area feature"
           ]
         }
       ]
@@ -14704,45 +15600,344 @@
       ]
     },
     {
-      "id": "otaru-by-lamplight-place-map",
+      "id": "otaru-historic-center-lamplight-walk",
       "placeId": "otaru-by-lamplight",
-      "cityId": "destination",
-      "title": "Otaru by lamplight: location map",
-      "introduction": "Approximate location reference for Otaru by lamplight. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Otaru · Hokkaido",
+      "cityId": "otaru",
+      "title": "Otaru historic-center and Sakaimachi walk",
+      "introduction": "Follow HOKKAIDO LOVE!’s published local sequence from the Triangle Market along the former Temiya railway and canal to the music-box and glass district, ending at Otaru Art Base. Published walk times are shown where provided; one short walk has no numerical estimate. This itinerary excerpt does not include the preceding drive or the longer trip beyond Otaru.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "attraction",
       "stops": [
         {
-          "id": "otaru-by-lamplight-place",
+          "id": "otaru-triangle-market",
           "order": 1,
-          "name": "Otaru by lamplight",
-          "area": "Otaru · Hokkaido",
-          "address": "Otaru by lamplight, Otaru · Hokkaido, Japan",
-          "story": "Follow the old canal past stone warehouses as the lamps come on and the port city softens.",
+          "name": "Otaru Triangle Market",
+          "area": "Otaru, Hokkaido",
+          "address": "Otaru Triangle Market, Otaru, Hokkaido, Japan",
+          "story": "The market sits beside Otaru Station and is a useful first stop for seafood and the city’s lively morning trade.",
           "coordinates": {
-            "latitude": 43.1906806,
-            "longitude": 140.9946021,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 43.1990076638889,
+            "longitude": 140.993816497222,
+            "precision": "Coordinate published by the Hokkaido official attraction listing; plotted on OpenStreetMap",
             "sourceIds": [
-              "destination-map-location"
+              "hokkaido-otaru-route",
+              "hokkaido-triangle-market"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Otaru%20by%20lamplight%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Otaru%20Triangle%20Market%20Otaru"
+        },
+        {
+          "id": "otaru-temiya-line",
+          "order": 2,
+          "name": "Former JNR Temiya Line",
+          "area": "Otaru, Hokkaido",
+          "address": "Former JNR Temiya Line, Otaru, Hokkaido, Japan",
+          "story": "Follow the preserved railway trace through central Otaru; the old line makes the city’s port history visible at street level.",
+          "coordinates": {
+            "latitude": 43.199608,
+            "longitude": 140.998561,
+            "precision": "Coordinate published by the Hokkaido official attraction listing; plotted on OpenStreetMap",
+            "sourceIds": [
+              "hokkaido-otaru-route",
+              "hokkaido-temiya-line"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Former%20JNR%20Temiya%20Line%20Otaru"
+        },
+        {
+          "id": "otaru-canal",
+          "order": 3,
+          "name": "Otaru Canal",
+          "area": "Otaru, Hokkaido",
+          "address": "Otaru Canal, Otaru, Hokkaido, Japan",
+          "story": "Pause by the restored canal and stone warehouses, the waterfront scene that shaped Otaru’s identity as a trading port.",
+          "coordinates": {
+            "latitude": 43.2025296583333,
+            "longitude": 141.000346380556,
+            "precision": "Coordinate published by the Hokkaido official attraction listing; plotted on OpenStreetMap",
+            "sourceIds": [
+              "hokkaido-otaru-route",
+              "hokkaido-otaru-canal"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Otaru%20Canal%20Otaru"
+        },
+        {
+          "id": "otaru-orgel-doh",
+          "order": 4,
+          "name": "Otaru Music Box Museum",
+          "area": "Otaru, Hokkaido",
+          "address": "Otaru Music Box Museum, Otaru, Hokkaido, Japan",
+          "story": "Browse the historic music-box hall on Sakaimachi Street, where delicate mechanisms and melodies reward a slower visit.",
+          "coordinates": {
+            "latitude": 43.1905419805556,
+            "longitude": 141.007999602778,
+            "precision": "Coordinate published by the Hokkaido official attraction listing; plotted on OpenStreetMap",
+            "sourceIds": [
+              "hokkaido-otaru-route",
+              "hokkaido-orgel-doh"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Otaru%20Music%20Box%20Museum%20Otaru"
+        },
+        {
+          "id": "otaru-kitaichi-glass",
+          "order": 5,
+          "name": "Kitaichi Glass Building No.3",
+          "area": "Otaru, Hokkaido",
+          "address": "Kitaichi Glass Building No.3, Otaru, Hokkaido, Japan",
+          "story": "Step inside the former warehouse and its lamp-lit Kitaichi Hall, a distinctive stop in the Sakaimachi glass district.",
+          "coordinates": {
+            "latitude": 43.1922584833333,
+            "longitude": 141.007363413889,
+            "precision": "Coordinate published by the Hokkaido official attraction listing; plotted on OpenStreetMap",
+            "sourceIds": [
+              "hokkaido-otaru-route",
+              "hokkaido-kitaichi-glass"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kitaichi%20Glass%20Building%20No.3%20Otaru"
+        },
+        {
+          "id": "otaru-art-base",
+          "order": 6,
+          "name": "Otaru Art Base",
+          "area": "Otaru, Hokkaido",
+          "address": "Otaru Art Base, Otaru, Hokkaido, Japan",
+          "story": "Finish among restored merchant buildings and art collections, including the Stained Glass Museum.",
+          "coordinates": {
+            "latitude": 43.197211,
+            "longitude": 141.001914,
+            "precision": "Coordinate published by the Hokkaido official attraction listing; plotted on OpenStreetMap",
+            "sourceIds": [
+              "hokkaido-otaru-route",
+              "hokkaido-otaru-art-base"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Otaru%20Art%20Base%20Otaru"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "otaru-lamplight-walk-1",
+          "fromId": "otaru-triangle-market",
+          "toId": "otaru-temiya-line",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 15,
+            "maxMinutes": 15
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.993816497222,
+                43.1990076638889
+              ],
+              [
+                140.998561,
+                43.199608
+              ]
+            ],
+            "sourceIds": [
+              "hokkaido-otaru-route"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.1990076638889%2C140.993816497222&destination=43.199608%2C140.998561&travelmode=walking"
+        },
+        {
+          "id": "otaru-lamplight-walk-2",
+          "fromId": "otaru-temiya-line",
+          "toId": "otaru-canal",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.998561,
+                43.199608
+              ],
+              [
+                141.000346380556,
+                43.2025296583333
+              ]
+            ],
+            "sourceIds": [
+              "hokkaido-otaru-route"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.199608%2C140.998561&destination=43.2025296583333%2C141.000346380556&travelmode=walking"
+        },
+        {
+          "id": "otaru-lamplight-walk-3",
+          "fromId": "otaru-canal",
+          "toId": "otaru-orgel-doh",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 10
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.000346380556,
+                43.2025296583333
+              ],
+              [
+                141.007999602778,
+                43.1905419805556
+              ]
+            ],
+            "sourceIds": [
+              "hokkaido-otaru-route"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.2025296583333%2C141.000346380556&destination=43.1905419805556%2C141.007999602778&travelmode=walking"
+        },
+        {
+          "id": "otaru-lamplight-walk-4",
+          "fromId": "otaru-orgel-doh",
+          "toId": "otaru-kitaichi-glass",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.007999602778,
+                43.1905419805556
+              ],
+              [
+                141.007363413889,
+                43.1922584833333
+              ]
+            ],
+            "sourceIds": [
+              "hokkaido-otaru-route"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.1905419805556%2C141.007999602778&destination=43.1922584833333%2C141.007363413889&travelmode=walking"
+        },
+        {
+          "id": "otaru-lamplight-walk-5",
+          "fromId": "otaru-kitaichi-glass",
+          "toId": "otaru-art-base",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 15,
+            "maxMinutes": 15
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.007363413889,
+                43.1922584833333
+              ],
+              [
+                141.001914,
+                43.197211
+              ]
+            ],
+            "sourceIds": [
+              "hokkaido-otaru-route"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.1922584833333%2C141.007363413889&destination=43.197211%2C141.001914&travelmode=walking"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/4085754",
-          "checkedOn": "2026-10-23",
+          "id": "hokkaido-otaru-route",
+          "label": "HOKKAIDO LOVE!: Otaru itinerary and ordered walking stops",
+          "url": "https://www.visit-hokkaido.jp/en/plan/detail_11.html",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "Otaru Triangle Market → Former JNR Temiya Line → Canal → Orgel Doh → Kitaichi Glass No.3 → Otaru Art Base",
+            "walking mode and published 15, 5, 10, short-walk, 15 minute legs"
+          ]
+        },
+        {
+          "id": "hokkaido-triangle-market",
+          "label": "HOKKAIDO LOVE!: Otaru Triangle Market",
+          "url": "https://www.visit-hokkaido.jp/en/spot/detail_10111.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official attraction identity and map coordinate"
+          ]
+        },
+        {
+          "id": "hokkaido-temiya-line",
+          "label": "HOKKAIDO LOVE!: Former JNR Temiya Line",
+          "url": "https://www.visit-hokkaido.jp/en/spot/detail_10528.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official attraction identity and map coordinate"
+          ]
+        },
+        {
+          "id": "hokkaido-otaru-canal",
+          "label": "HOKKAIDO LOVE!: Otaru Canal",
+          "url": "https://www.visit-hokkaido.jp/en/spot/detail_10040.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official attraction identity and map coordinate"
+          ]
+        },
+        {
+          "id": "hokkaido-orgel-doh",
+          "label": "HOKKAIDO LOVE!: Otaru Music Box Museum",
+          "url": "https://www.visit-hokkaido.jp/en/spot/detail_10110.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official attraction identity and map coordinate"
+          ]
+        },
+        {
+          "id": "hokkaido-kitaichi-glass",
+          "label": "HOKKAIDO LOVE!: Kitaichi Glass Building No.3",
+          "url": "https://www.visit-hokkaido.jp/en/spot/detail_10037.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official attraction identity and map coordinate"
+          ]
+        },
+        {
+          "id": "hokkaido-otaru-art-base",
+          "label": "HOKKAIDO LOVE!: Otaru Art Base",
+          "url": "https://www.visit-hokkaido.jp/en/spot/detail_10539.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "official attraction identity and map coordinate"
           ]
         }
       ]
@@ -16684,45 +17879,394 @@
       ]
     },
     {
-      "id": "takayama-s-old-quarter-place-map",
+      "id": "takayama-old-quarter-gentle-stroll",
       "placeId": "takayama-s-old-quarter",
-      "cityId": "destination",
-      "title": "Takayama’s old quarter: location map",
-      "introduction": "Approximate location reference for Takayama’s old quarter. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Hida · Gifu",
+      "cityId": "takayama",
+      "title": "Takayama old quarter and Higashiyama gentle stroll",
+      "introduction": "Follow HIDA Takayama’s full-day walking sequence from the station to Takayama Jinya, Furui-Machinami, Kusakabe Folk Museum and the Higashiyama trail, finishing at Shiroyama Park before returning to the station. Published walk estimates are shown for each leg. The trail is hilly; the official itinerary describes a 9 a.m.–4 p.m. day. The nearby morning market is folded into the Jinya visit rather than shown as an unsupported map pin.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "attraction",
+      "origin": {
+        "id": "takayama-station",
+        "name": "JR Takayama Station",
+        "address": "JR Takayama Station, Showa-machi, Takayama, Gifu, Japan",
+        "returnPoint": true,
+        "coordinates": {
+          "latitude": 36.141126,
+          "longitude": 137.2512848,
+          "precision": "OpenStreetMap station node 265830186",
+          "sourceIds": [
+            "osm-takayama-station"
+          ]
+        }
+      },
       "stops": [
         {
-          "id": "takayama-s-old-quarter-place",
+          "id": "takayama-jinya-stop",
           "order": 1,
-          "name": "Takayama’s old quarter",
-          "area": "Hida · Gifu",
-          "address": "Takayama’s old quarter, Hida · Gifu, Japan",
-          "story": "Wooden merchant houses, morning markets, and mountain-region flavors along the old streets.",
+          "name": "Takayama Jinya",
+          "area": "Japan",
+          "address": "Takayama Jinya, 1-5 Hachikenmachi, Takayama, Gifu, Japan",
+          "story": "Begin at the Edo-period government office. The nearby morning market belongs in this visit; the official itinerary does not give it a distinct stop pin.",
           "coordinates": {
-            "latitude": 36.2383204,
-            "longitude": 137.1859372,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 36.139834,
+            "longitude": 137.2590845,
+            "precision": "OpenStreetMap node 3270233463",
             "sourceIds": [
-              "destination-map-location"
+              "hida-gentle-stroll-route",
+              "osm-takayama-jinya"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Takayama%E2%80%99s%20old%20quarter%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Takayama%20Jinya%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "takayama-furui-machinami",
+          "order": 2,
+          "name": "Furui-Machinami / Sanmachi Traditional Buildings Preservation Area",
+          "area": "Japan",
+          "address": "Sanmachi, Takayama, Gifu, Japan",
+          "story": "Walk the preserved merchant quarter, where wooden townhouses and sake breweries line narrow streets. Respect residents and business access.",
+          "coordinates": {
+            "latitude": 36.141257,
+            "longitude": 137.259633,
+            "precision": "OpenStreetMap node 5603024124",
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "osm-furui-machinami"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Furui-Machinami%20%2F%20Sanmachi%20Traditional%20Buildings%20Preservation%20Area%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "takayama-kusakabe-folk-museum",
+          "order": 3,
+          "name": "Kusakabe Folk Museum",
+          "area": "Japan",
+          "address": "Kusakabe Folk Museum, 1-52 Ojinmachi, Takayama, Gifu, Japan",
+          "story": "Step inside a historic merchant residence to see timber construction and household objects from the region.",
+          "coordinates": {
+            "latitude": 36.146435,
+            "longitude": 137.258459,
+            "precision": "OpenStreetMap node 1420989042",
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "osm-kusakabe-museum"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kusakabe%20Folk%20Museum%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "takayama-unryuji-trailhead",
+          "order": 4,
+          "name": "Higashiyama trail entrance at Unryuji Temple",
+          "area": "Japan",
+          "address": "Unryuji Temple, Takayama, Gifu, Japan",
+          "story": "Leave the old quarter at the official Higashiyama walking-course entrance. The trail is hilly; wear shoes suited to uneven paths.",
+          "coordinates": {
+            "latitude": 36.145449,
+            "longitude": 137.2640944,
+            "precision": "OpenStreetMap mapped temple way 490918282",
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "hida-higashiyama-trail",
+              "osm-unryuji"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Higashiyama%20trail%20entrance%20at%20Unryuji%20Temple%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "takayama-shiroyama-park",
+          "order": 5,
+          "name": "Shiroyama Park",
+          "area": "Japan",
+          "address": "Shiroyama Park, Takayama, Gifu, Japan",
+          "story": "Finish the Higashiyama trail among wooded castle ruins and viewpoints above town before returning downhill to the station.",
+          "coordinates": {
+            "latitude": 36.1373944,
+            "longitude": 137.2642583,
+            "precision": "OpenStreetMap mapped park way 61933558",
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "hida-higashiyama-trail",
+              "osm-shiroyama-park"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Shiroyama%20Park%20Japan%20visitor%20guide"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "takayama-gentle-walk-01",
+          "fromId": "takayama-station",
+          "toId": "takayama-jinya-stop",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 15
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.2512848,
+                36.141126
+              ],
+              [
+                137.2590845,
+                36.139834
+              ]
+            ],
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "hida-higashiyama-trail"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=36.141126%2C137.2512848&destination=36.139834%2C137.2590845&travelmode=walking"
+        },
+        {
+          "id": "takayama-gentle-walk-02",
+          "fromId": "takayama-jinya-stop",
+          "toId": "takayama-furui-machinami",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.2590845,
+                36.139834
+              ],
+              [
+                137.259633,
+                36.141257
+              ]
+            ],
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "hida-higashiyama-trail"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=36.139834%2C137.2590845&destination=36.141257%2C137.259633&travelmode=walking"
+        },
+        {
+          "id": "takayama-gentle-walk-03",
+          "fromId": "takayama-furui-machinami",
+          "toId": "takayama-kusakabe-folk-museum",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 15
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.259633,
+                36.141257
+              ],
+              [
+                137.258459,
+                36.146435
+              ]
+            ],
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "hida-higashiyama-trail"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=36.141257%2C137.259633&destination=36.146435%2C137.258459&travelmode=walking"
+        },
+        {
+          "id": "takayama-gentle-walk-04",
+          "fromId": "takayama-kusakabe-folk-museum",
+          "toId": "takayama-unryuji-trailhead",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 15,
+            "maxMinutes": 15
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.258459,
+                36.146435
+              ],
+              [
+                137.2640944,
+                36.145449
+              ]
+            ],
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "hida-higashiyama-trail"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=36.146435%2C137.258459&destination=36.145449%2C137.2640944&travelmode=walking"
+        },
+        {
+          "id": "takayama-gentle-walk-05",
+          "fromId": "takayama-unryuji-trailhead",
+          "toId": "takayama-shiroyama-park",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 40,
+            "maxMinutes": 60
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.2640944,
+                36.145449
+              ],
+              [
+                137.2642583,
+                36.1373944
+              ]
+            ],
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "hida-higashiyama-trail"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=36.145449%2C137.2640944&destination=36.1373944%2C137.2642583&travelmode=walking"
+        },
+        {
+          "id": "takayama-gentle-walk-06",
+          "fromId": "takayama-shiroyama-park",
+          "toId": "takayama-station",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 20,
+            "maxMinutes": 25
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                137.2642583,
+                36.1373944
+              ],
+              [
+                137.2512848,
+                36.141126
+              ]
+            ],
+            "sourceIds": [
+              "hida-gentle-stroll-route",
+              "hida-higashiyama-trail"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=36.1373944%2C137.2642583&destination=36.141126%2C137.2512848&travelmode=walking"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/4716973",
-          "checkedOn": "2026-10-23",
+          "id": "hida-gentle-stroll-route",
+          "label": "HIDA Takayama: For those who want a gentle stroll",
+          "url": "https://www.hida.jp/english/touristattractions/takayamacity/modelitinerary/4000211.html",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "ordered Takayama walking itinerary and published leg estimates",
+            "official 9:00–16:00 itinerary window"
+          ]
+        },
+        {
+          "id": "osm-takayama-station",
+          "label": "OpenStreetMap: Takayama Station (node 265830186)",
+          "url": "https://www.openstreetmap.org/node/265830186",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "rail station map point"
+          ]
+        },
+        {
+          "id": "osm-takayama-jinya",
+          "label": "OpenStreetMap: Takayama Jinya (node 3270233463)",
+          "url": "https://www.openstreetmap.org/node/3270233463",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "historic government office map point"
+          ]
+        },
+        {
+          "id": "osm-furui-machinami",
+          "label": "OpenStreetMap: Sanmachi / Furui-Machinami (node 5603024124)",
+          "url": "https://www.openstreetmap.org/node/5603024124",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "preserved old-town map point"
+          ]
+        },
+        {
+          "id": "osm-kusakabe-museum",
+          "label": "OpenStreetMap: Kusakabe Folk Museum (node 1420989042)",
+          "url": "https://www.openstreetmap.org/node/1420989042",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "folk museum map point"
+          ]
+        },
+        {
+          "id": "hida-higashiyama-trail",
+          "label": "HIDA Takayama: Higashiyama Walking Course",
+          "url": "https://www.hida.jp/english/touristattractions/takayamacity/historyandculture/4000177.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "trail start at Unryuji/Ryuunji and end at Shiroyama Park",
+            "walking trail route information"
+          ]
+        },
+        {
+          "id": "hida-higashiyama-course-map",
+          "label": "HIDA Takayama official Higashiyama course map",
+          "url": "https://www.hidatakayama.or.jp/lsc/upfile/pamphlet/0000/0016/16_1_file.pdf",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "trail and course map"
+          ]
+        },
+        {
+          "id": "osm-unryuji",
+          "label": "OpenStreetMap: Unryuji Temple (way 490918282)",
+          "url": "https://www.openstreetmap.org/way/490918282",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "trail entrance map point"
+          ]
+        },
+        {
+          "id": "osm-shiroyama-park",
+          "label": "OpenStreetMap: Shiroyama Park (way 61933558)",
+          "url": "https://www.openstreetmap.org/way/61933558",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "park map point"
           ]
         }
       ]
@@ -17036,48 +18580,283 @@
       ]
     },
     {
-      "id": "the-blue-of-biei-place-map",
+      "id": "the-blue-of-biei-scenic-drive",
       "placeId": "the-blue-of-biei",
-      "cityId": "destination",
-      "title": "The blue of Biei: location map",
-      "introduction": "Approximate location reference for The blue of Biei. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Biei · Hokkaido",
+      "cityId": "biei",
+      "title": "Biei scenic drive: station, Blue Pond, flower fields, Asahikawa",
+      "introduction": "A focused driving excerpt from HOKKAIDO LOVE!’s official Biei day trip: start at Biei Station, visit Shirogane Blue Pond, Shikisai-no-oka and Zerubu-no-Oka, then finish at Asahikawa Station. It omits the meal and patisserie stops in the longer itinerary. The official source gives about 25 minutes for the first two drives; times for the remaining legs are not verified. Check seasonal opening and weather notices.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "attraction",
+      "origin": {
+        "id": "biei-station",
+        "name": "JR Biei Station",
+        "address": "JR Biei Station, Biei, Hokkaido, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 43.5909601,
+          "longitude": 142.4612251,
+          "precision": "OpenStreetMap station node 264430307",
+          "sourceIds": [
+            "osm-biei-station"
+          ]
+        }
+      },
       "stops": [
         {
-          "id": "the-blue-of-biei-place",
+          "id": "biei-shirogane-blue-pond",
           "order": 1,
-          "name": "The blue of Biei",
-          "area": "Biei · Hokkaido",
-          "address": "The blue of Biei, Biei · Hokkaido, Japan",
-          "story": "A still, almost impossible shade of blue tucked into Hokkaido’s green interior.",
+          "name": "Shirogane Blue Pond",
+          "area": "Japan",
+          "address": "Shirogane Blue Pond, Shirogane, Biei, Hokkaido, Japan",
+          "story": "A striking mineral-blue pond whose color shifts with light and season. Check weather and access notices; the official itinerary warns temporary closures can occur.",
           "coordinates": {
-            "latitude": 43.5882382,
-            "longitude": 142.466929,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 43.4934902,
+            "longitude": 142.6140976,
+            "precision": "OpenStreetMap mapped pond way 303771940",
             "sourceIds": [
-              "destination-map-location"
+              "hokkaido-biei-drive",
+              "osm-blue-pond"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=The%20blue%20of%20Biei%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Shirogane%20Blue%20Pond%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "biei-shikisai-no-oka",
+          "order": 2,
+          "name": "Shikisai-no-oka",
+          "area": "Japan",
+          "address": "Shikisai-no-oka, Shinsei, Biei, Hokkaido, Japan",
+          "story": "Explore the broad flower fields and seasonal viewing areas. Operating hours vary by month, and the official itinerary lists the current seasonal schedule.",
+          "coordinates": {
+            "latitude": 43.5280873,
+            "longitude": 142.4660497,
+            "precision": "OpenStreetMap mapped garden way 369100684",
+            "sourceIds": [
+              "hokkaido-biei-drive",
+              "osm-shikisai"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Shikisai-no-oka%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "biei-zerubu-no-oka",
+          "order": 3,
+          "name": "Zerubu-no-Oka",
+          "area": "Japan",
+          "address": "Zerubu-no-Oka, Daisan, Biei, Hokkaido, Japan",
+          "story": "Finish the focused scenic section at the flower park and hilltop viewpoint. This shortened version omits meal and patisserie stops included in the full official itinerary.",
+          "coordinates": {
+            "latitude": 43.6071871,
+            "longitude": 142.4697146,
+            "precision": "OpenStreetMap mapped park way 366429260",
+            "sourceIds": [
+              "hokkaido-biei-drive",
+              "osm-zerubu"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Zerubu-no-Oka%20Japan%20visitor%20guide"
+        },
+        {
+          "id": "biei-asahikawa-station",
+          "order": 4,
+          "name": "JR Asahikawa Station",
+          "area": "Japan",
+          "address": "JR Asahikawa Station, Asahikawa, Hokkaido, Japan",
+          "story": "The official day-trip itinerary ends at Asahikawa Station. Confirm your vehicle return and onward transport before leaving Biei.",
+          "coordinates": {
+            "latitude": 43.7627501,
+            "longitude": 142.3579263,
+            "precision": "OpenStreetMap station node 264430273",
+            "sourceIds": [
+              "hokkaido-biei-drive",
+              "osm-asahikawa-station"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=JR%20Asahikawa%20Station%20Japan%20visitor%20guide"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "biei-scenic-leg-01",
+          "fromId": "biei-station",
+          "toId": "biei-shirogane-blue-pond",
+          "mode": "driving",
+          "duration": {
+            "status": "known",
+            "minMinutes": 25,
+            "maxMinutes": 25
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                142.4612251,
+                43.5909601
+              ],
+              [
+                142.6140976,
+                43.4934902
+              ]
+            ],
+            "sourceIds": [
+              "hokkaido-biei-drive"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.5909601%2C142.4612251&destination=43.4934902%2C142.6140976&travelmode=driving"
+        },
+        {
+          "id": "biei-scenic-leg-02",
+          "fromId": "biei-shirogane-blue-pond",
+          "toId": "biei-shikisai-no-oka",
+          "mode": "driving",
+          "duration": {
+            "status": "known",
+            "minMinutes": 25,
+            "maxMinutes": 25
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                142.6140976,
+                43.4934902
+              ],
+              [
+                142.4660497,
+                43.5280873
+              ]
+            ],
+            "sourceIds": [
+              "hokkaido-biei-drive"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.4934902%2C142.6140976&destination=43.5280873%2C142.4660497&travelmode=driving"
+        },
+        {
+          "id": "biei-scenic-leg-03",
+          "fromId": "biei-shikisai-no-oka",
+          "toId": "biei-zerubu-no-oka",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                142.4660497,
+                43.5280873
+              ],
+              [
+                142.4697146,
+                43.6071871
+              ]
+            ],
+            "sourceIds": [
+              "hokkaido-biei-drive"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.5280873%2C142.4660497&destination=43.6071871%2C142.4697146&travelmode=driving"
+        },
+        {
+          "id": "biei-scenic-leg-04",
+          "fromId": "biei-zerubu-no-oka",
+          "toId": "biei-asahikawa-station",
+          "mode": "driving",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                142.4697146,
+                43.6071871
+              ],
+              [
+                142.3579263,
+                43.7627501
+              ]
+            ],
+            "sourceIds": [
+              "hokkaido-biei-drive"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=43.6071871%2C142.4697146&destination=43.7627501%2C142.3579263&travelmode=driving"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/4062428",
-          "checkedOn": "2026-10-23",
+          "id": "hokkaido-biei-drive",
+          "label": "HOKKAIDO LOVE!: Biei Station to Asahikawa Station scenic-drive itinerary",
+          "url": "https://www.visit-hokkaido.jp/en/plan/detail_13.html",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "official driving itinerary and ordered stops",
+            "Biei Station to Blue Pond and Blue Pond to Shikisai-no-oka estimated drive times",
+            "scenic stops and Asahikawa Station as route endpoint",
+            "seasonal venue details; page warns details can change and its text includes machine translation"
+          ]
+        },
+        {
+          "id": "osm-biei-station",
+          "label": "OpenStreetMap: Biei Station (node 264430307)",
+          "url": "https://www.openstreetmap.org/node/264430307",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "station map point"
+          ]
+        },
+        {
+          "id": "osm-blue-pond",
+          "label": "OpenStreetMap: Shirogane Blue Pond (way 303771940)",
+          "url": "https://www.openstreetmap.org/way/303771940",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "pond map point"
+          ]
+        },
+        {
+          "id": "osm-shikisai",
+          "label": "OpenStreetMap: Shikisai-no-oka (way 369100684)",
+          "url": "https://www.openstreetmap.org/way/369100684",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "flower park map point"
+          ]
+        },
+        {
+          "id": "osm-zerubu",
+          "label": "OpenStreetMap: Zerubu-no-Oka (way 366429260)",
+          "url": "https://www.openstreetmap.org/way/366429260",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "flower park map point"
+          ]
+        },
+        {
+          "id": "osm-asahikawa-station",
+          "label": "OpenStreetMap: Asahikawa Station (node 264430273)",
+          "url": "https://www.openstreetmap.org/node/264430273",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "station map point"
           ]
         }
-      ]
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=43.5909601%2C142.4612251&destination=43.7627501%2C142.3579263&travelmode=driving&waypoints=43.4934902%2C142.6140976%7C43.5280873%2C142.4660497%7C43.6071871%2C142.4697146"
     },
     {
       "id": "the-iya-valley-place-map",
@@ -17168,45 +18947,492 @@
       ]
     },
     {
-      "id": "todai-ji-temple-place-map",
+      "id": "nara-world-heritage-walk-including-todaiji",
       "placeId": "todai-ji-temple",
-      "cityId": "destination",
-      "title": "Todai-ji Temple: location map",
-      "introduction": "Approximate location reference for Todai-ji Temple. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "nearby",
-      "locatorLabel": "Nara Park · Nara",
+      "cityId": "nara",
+      "title": "Nara World Heritage walk including Todai-ji",
+      "introduction": "Follow Nara’s official approximately 10 km walking course from Kintetsu Nara Station through Kofukuji, Tobihino, Kasuga Taisha and Mount Wakakusa to Todai-ji, then the Nara National Museum and Isuien Garden before returning to the station. The published walking estimate is about two hours, excluding visits. Mount Wakakusa adds an uphill section; check seasonal access.",
+      "researchStatus": "researched-sequence-schematic-map",
+      "locatorPrecision": "attraction",
+      "origin": {
+        "id": "kintetsu-nara-station",
+        "name": "Kintetsu Nara Station",
+        "address": "Kintetsu Nara Station, Higashimuki-nakamachi, Nara, Japan",
+        "returnPoint": true,
+        "coordinates": {
+          "latitude": 34.6849624,
+          "longitude": 135.8260516,
+          "precision": "OpenStreetMap station node 1387122724",
+          "sourceIds": [
+            "osm-nara-kintetsu-station"
+          ]
+        }
+      },
       "stops": [
         {
-          "id": "todai-ji-temple-place",
+          "id": "nara-kofukuji",
           "order": 1,
-          "name": "Todai-ji Temple",
-          "area": "Nara Park · Nara",
-          "address": "Todai-ji Temple, Nara Park · Nara, Japan",
-          "story": "The Great Buddha Hall houses a monumental bronze Buddha and is one of Nara’s essential temple visits. Deer roam the surrounding park; secure food and follow posted guidance.",
+          "name": "Kofukuji",
+          "area": "Nara, Nara Prefecture",
+          "address": "Kofukuji, Nara, Japan",
+          "story": "Walk from the station to Nara’s historic temple precinct. The official route places Kofukuji first.",
           "coordinates": {
-            "latitude": 34.6829008,
-            "longitude": 135.8545975,
-            "precision": "Nearby reference point; confirm the attraction entrance",
+            "latitude": 34.6829744,
+            "longitude": 135.8318653,
+            "precision": "OpenStreetMap mapped feature; visitor entrance may differ",
             "sourceIds": [
-              "destination-map-location"
+              "nara-official-world-heritage-walk",
+              "osm-nara-kofukuji"
             ]
           },
           "visitDuration": {
             "status": "unknown"
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Todai-ji%20Temple%20Japan%20visitor%20guide"
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kofukuji%20Nara%20Japan"
+        },
+        {
+          "id": "nara-tobihino",
+          "order": 2,
+          "name": "Tobihino",
+          "area": "Nara, Nara Prefecture",
+          "address": "Tobihino, Nara, Japan",
+          "story": "Pause at this open meadow in Kasuga’s sacred landscape, a traditional place to see deer beneath the wooded hills.",
+          "coordinates": {
+            "latitude": 34.680739,
+            "longitude": 135.8408346,
+            "precision": "OpenStreetMap mapped feature; visitor entrance may differ",
+            "sourceIds": [
+              "nara-official-world-heritage-walk",
+              "osm-nara-tobihino"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Tobihino%20Nara%20Japan"
+        },
+        {
+          "id": "nara-kasuga-taisha",
+          "order": 3,
+          "name": "Kasuga Taisha",
+          "area": "Nara, Nara Prefecture",
+          "address": "Kasuga Taisha, Nara, Japan",
+          "story": "Follow the approach to Kasuga Taisha through lantern-lined woodland. The shrine is an active sacred site; keep to visitor paths.",
+          "coordinates": {
+            "latitude": 34.6805063,
+            "longitude": 135.8460746,
+            "precision": "OpenStreetMap mapped feature; visitor entrance may differ",
+            "sourceIds": [
+              "nara-official-world-heritage-walk",
+              "osm-nara-kasuga-taisha"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Kasuga%20Taisha%20Nara%20Japan"
+        },
+        {
+          "id": "nara-mt-wakakusa",
+          "order": 4,
+          "name": "Mount Wakakusa",
+          "area": "Nara, Nara Prefecture",
+          "address": "Mount Wakakusa, Nara, Japan",
+          "story": "The official course includes Mount Wakakusa. The mountain has an uphill hiking section and seasonal opening dates; confirm access before setting out.",
+          "coordinates": {
+            "latitude": 34.691173,
+            "longitude": 135.854265,
+            "precision": "OpenStreetMap mapped feature; visitor entrance may differ",
+            "sourceIds": [
+              "nara-official-world-heritage-walk",
+              "osm-nara-wakakusa"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Mount%20Wakakusa%20Nara%20Japan"
+        },
+        {
+          "id": "nara-todaiji",
+          "order": 5,
+          "name": "Todai-ji Temple",
+          "area": "Nara, Nara Prefecture",
+          "address": "Todai-ji Temple, Nara, Japan",
+          "story": "Visit the Great Buddha Hall and its surrounding temple precinct. The official source lists seasonal opening hours; check them before planning your day.",
+          "coordinates": {
+            "latitude": 34.6882437,
+            "longitude": 135.8397568,
+            "precision": "OpenStreetMap mapped feature; visitor entrance may differ",
+            "sourceIds": [
+              "nara-official-world-heritage-walk",
+              "osm-nara-todaiji"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Todai-ji%20Temple%20Nara%20Japan"
+        },
+        {
+          "id": "nara-national-museum",
+          "order": 6,
+          "name": "Nara National Museum",
+          "area": "Nara, Nara Prefecture",
+          "address": "Nara National Museum, Nara, Japan",
+          "story": "Explore Buddhist art in the national collection. The official itinerary gives this as the next stop after Todai-ji.",
+          "coordinates": {
+            "latitude": 34.6830955,
+            "longitude": 135.8383105,
+            "precision": "OpenStreetMap mapped feature; visitor entrance may differ",
+            "sourceIds": [
+              "nara-official-world-heritage-walk",
+              "osm-nara-nara-museum"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Nara%20National%20Museum%20Nara%20Japan"
+        },
+        {
+          "id": "nara-isuien",
+          "order": 7,
+          "name": "Isuien Garden",
+          "area": "Nara, Nara Prefecture",
+          "address": "Isuien Garden, Nara, Japan",
+          "story": "Finish the garden visit with its borrowed views toward the Nara landscape before walking back to Kintetsu Nara Station.",
+          "coordinates": {
+            "latitude": 34.6854662,
+            "longitude": 135.8379189,
+            "precision": "OpenStreetMap mapped feature; visitor entrance may differ",
+            "sourceIds": [
+              "nara-official-world-heritage-walk",
+              "osm-nara-isuien"
+            ]
+          },
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Isuien%20Garden%20Nara%20Japan"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "nara-world-heritage-walk-01",
+          "fromId": "kintetsu-nara-station",
+          "toId": "nara-kofukuji",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 10
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.8260516,
+                34.6849624
+              ],
+              [
+                135.8318653,
+                34.6829744
+              ]
+            ],
+            "sourceIds": [
+              "nara-official-world-heritage-walk"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.6849624%2C135.8260516&destination=34.6829744%2C135.8318653&travelmode=walking"
+        },
+        {
+          "id": "nara-world-heritage-walk-02",
+          "fromId": "nara-kofukuji",
+          "toId": "nara-tobihino",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 20,
+            "maxMinutes": 20
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.8318653,
+                34.6829744
+              ],
+              [
+                135.8408346,
+                34.680739
+              ]
+            ],
+            "sourceIds": [
+              "nara-official-world-heritage-walk"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.6829744%2C135.8318653&destination=34.680739%2C135.8408346&travelmode=walking"
+        },
+        {
+          "id": "nara-world-heritage-walk-03",
+          "fromId": "nara-tobihino",
+          "toId": "nara-kasuga-taisha",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 10
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.8408346,
+                34.680739
+              ],
+              [
+                135.8460746,
+                34.6805063
+              ]
+            ],
+            "sourceIds": [
+              "nara-official-world-heritage-walk"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.680739%2C135.8408346&destination=34.6805063%2C135.8460746&travelmode=walking"
+        },
+        {
+          "id": "nara-world-heritage-walk-04",
+          "fromId": "nara-kasuga-taisha",
+          "toId": "nara-mt-wakakusa",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 15,
+            "maxMinutes": 15
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.8460746,
+                34.6805063
+              ],
+              [
+                135.854265,
+                34.691173
+              ]
+            ],
+            "sourceIds": [
+              "nara-official-world-heritage-walk"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.6805063%2C135.8460746&destination=34.691173%2C135.854265&travelmode=walking"
+        },
+        {
+          "id": "nara-world-heritage-walk-05",
+          "fromId": "nara-mt-wakakusa",
+          "toId": "nara-todaiji",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 20,
+            "maxMinutes": 20
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.854265,
+                34.691173
+              ],
+              [
+                135.8397568,
+                34.6882437
+              ]
+            ],
+            "sourceIds": [
+              "nara-official-world-heritage-walk"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.691173%2C135.854265&destination=34.6882437%2C135.8397568&travelmode=walking"
+        },
+        {
+          "id": "nara-world-heritage-walk-06",
+          "fromId": "nara-todaiji",
+          "toId": "nara-national-museum",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 10
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.8397568,
+                34.6882437
+              ],
+              [
+                135.8383105,
+                34.6830955
+              ]
+            ],
+            "sourceIds": [
+              "nara-official-world-heritage-walk"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.6882437%2C135.8397568&destination=34.6830955%2C135.8383105&travelmode=walking"
+        },
+        {
+          "id": "nara-world-heritage-walk-07",
+          "fromId": "nara-national-museum",
+          "toId": "nara-isuien",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 10
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.8383105,
+                34.6830955
+              ],
+              [
+                135.8379189,
+                34.6854662
+              ]
+            ],
+            "sourceIds": [
+              "nara-official-world-heritage-walk"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.6830955%2C135.8383105&destination=34.6854662%2C135.8379189&travelmode=walking"
+        },
+        {
+          "id": "nara-world-heritage-walk-08",
+          "fromId": "nara-isuien",
+          "toId": "kintetsu-nara-station",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 13,
+            "maxMinutes": 13
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.8379189,
+                34.6854662
+              ],
+              [
+                135.8260516,
+                34.6849624
+              ]
+            ],
+            "sourceIds": [
+              "nara-official-world-heritage-walk"
+            ]
+          },
+          "directionsUrl": "https://www.google.com/maps/dir/?api=1&origin=34.6854662%2C135.8379189&destination=34.6849624%2C135.8260516&travelmode=walking"
+        }
+      ],
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/way/456314269",
-          "checkedOn": "2026-10-23",
+          "id": "nara-official-world-heritage-walk",
+          "label": "Nara City Tourism Association: World Heritage walking course including Todaiji",
+          "url": "https://narashikanko.or.jp/course/detail_28.html",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "official sequence of eight stops, approximately 10 km, about 2 hours excluding visits",
+            "walking mode and per-leg distances and times"
+          ]
+        },
+        {
+          "id": "todaiji-official-access",
+          "label": "Todai-ji Temple: Access",
+          "url": "https://www.todaiji.or.jp/en/access/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor access and directions"
+          ]
+        },
+        {
+          "id": "osm-nara-kintetsu-station",
+          "label": "OpenStreetMap: Kintetsu Nara Station (node 1387122724)",
+          "url": "https://www.openstreetmap.org/node/1387122724",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped feature point"
+          ]
+        },
+        {
+          "id": "osm-nara-kofukuji",
+          "label": "OpenStreetMap: Kofukuji (way 1134439456)",
+          "url": "https://www.openstreetmap.org/way/1134439456",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped feature point"
+          ]
+        },
+        {
+          "id": "osm-nara-tobihino",
+          "label": "OpenStreetMap: Tobihino (way 454304200)",
+          "url": "https://www.openstreetmap.org/way/454304200",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped feature point"
+          ]
+        },
+        {
+          "id": "osm-nara-kasuga-taisha",
+          "label": "OpenStreetMap: Kasuga Taisha (way 1134481286)",
+          "url": "https://www.openstreetmap.org/way/1134481286",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped feature point"
+          ]
+        },
+        {
+          "id": "osm-nara-wakakusa",
+          "label": "OpenStreetMap: Mount Wakakusa (node 1427600061)",
+          "url": "https://www.openstreetmap.org/node/1427600061",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped feature point"
+          ]
+        },
+        {
+          "id": "osm-nara-todaiji",
+          "label": "OpenStreetMap: Todai-ji Temple (way 1134669589)",
+          "url": "https://www.openstreetmap.org/way/1134669589",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped feature point"
+          ]
+        },
+        {
+          "id": "osm-nara-nara-museum",
+          "label": "OpenStreetMap: Nara National Museum (way 921353198)",
+          "url": "https://www.openstreetmap.org/way/921353198",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped feature point"
+          ]
+        },
+        {
+          "id": "osm-nara-isuien",
+          "label": "OpenStreetMap: Isuien Garden (way 97082272)",
+          "url": "https://www.openstreetmap.org/way/97082272",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "mapped feature point"
           ]
         }
       ]
@@ -23589,12 +25815,12 @@
     "the-blue-of-biei": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          142.46492899999998,
-          43.5862382,
-          142.468929,
-          43.5902382
+          142.3539263,
+          43.4894902,
+          142.6180976,
+          43.766750099999996
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -23603,20 +25829,177 @@
       "features": [
         {
           "type": "Feature",
-          "id": "the-blue-of-biei-place",
+          "id": "biei-station",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              142.466929,
-              43.5882382
+              142.4612251,
+              43.5909601
             ]
           },
           "properties": {
-            "id": "the-blue-of-biei-place",
-            "routeStopId": "the-blue-of-biei-place",
-            "name": "The blue of Biei",
+            "id": "biei-station",
+            "routeStopId": "biei-station",
+            "name": "JR Biei Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "biei-shirogane-blue-pond",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.6140976,
+              43.4934902
+            ]
+          },
+          "properties": {
+            "id": "biei-shirogane-blue-pond",
+            "routeStopId": "biei-shirogane-blue-pond",
+            "name": "Shirogane Blue Pond",
             "role": "stop",
             "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "biei-shikisai-no-oka",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.4660497,
+              43.5280873
+            ]
+          },
+          "properties": {
+            "id": "biei-shikisai-no-oka",
+            "routeStopId": "biei-shikisai-no-oka",
+            "name": "Shikisai-no-oka",
+            "role": "stop",
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "biei-zerubu-no-oka",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.4697146,
+              43.6071871
+            ]
+          },
+          "properties": {
+            "id": "biei-zerubu-no-oka",
+            "routeStopId": "biei-zerubu-no-oka",
+            "name": "Zerubu-no-Oka",
+            "role": "stop",
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "biei-asahikawa-station",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.3579263,
+              43.7627501
+            ]
+          },
+          "properties": {
+            "id": "biei-asahikawa-station",
+            "routeStopId": "biei-asahikawa-station",
+            "name": "JR Asahikawa Station",
+            "role": "stop",
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "biei-scenic-leg-01",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.4612251,
+                43.5909601
+              ],
+              [
+                142.6140976,
+                43.4934902
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "biei-scenic-leg-01",
+            "mode": "driving"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "biei-scenic-leg-02",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.6140976,
+                43.4934902
+              ],
+              [
+                142.4660497,
+                43.5280873
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "biei-scenic-leg-02",
+            "mode": "driving"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "biei-scenic-leg-03",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.4660497,
+                43.5280873
+              ],
+              [
+                142.4697146,
+                43.6071871
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "biei-scenic-leg-03",
+            "mode": "driving"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "biei-scenic-leg-04",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.4697146,
+                43.6071871
+              ],
+              [
+                142.3579263,
+                43.7627501
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "biei-scenic-leg-04",
+            "mode": "driving"
           }
         }
       ]
@@ -23659,12 +26042,12 @@
     "otaru-by-lamplight": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          140.9926021,
-          43.1886806,
-          140.99660210000002,
-          43.1926806
+          140.98981649722202,
+          43.1865419805556,
+          141.011999602778,
+          43.206529658333295
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -23673,20 +26056,221 @@
       "features": [
         {
           "type": "Feature",
-          "id": "otaru-by-lamplight-place",
+          "id": "otaru-triangle-market",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              140.9946021,
-              43.1906806
+              140.993816497222,
+              43.1990076638889
             ]
           },
           "properties": {
-            "id": "otaru-by-lamplight-place",
-            "routeStopId": "otaru-by-lamplight-place",
-            "name": "Otaru by lamplight",
+            "id": "otaru-triangle-market",
+            "routeStopId": "otaru-triangle-market",
+            "name": "Otaru Triangle Market",
             "role": "stop",
+            "returnPoint": false,
             "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-temiya-line",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.998561,
+              43.199608
+            ]
+          },
+          "properties": {
+            "id": "otaru-temiya-line",
+            "routeStopId": "otaru-temiya-line",
+            "name": "Former JNR Temiya Line",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-canal",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.000346380556,
+              43.2025296583333
+            ]
+          },
+          "properties": {
+            "id": "otaru-canal",
+            "routeStopId": "otaru-canal",
+            "name": "Otaru Canal",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-orgel-doh",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.007999602778,
+              43.1905419805556
+            ]
+          },
+          "properties": {
+            "id": "otaru-orgel-doh",
+            "routeStopId": "otaru-orgel-doh",
+            "name": "Otaru Music Box Museum",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-kitaichi-glass",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.007363413889,
+              43.1922584833333
+            ]
+          },
+          "properties": {
+            "id": "otaru-kitaichi-glass",
+            "routeStopId": "otaru-kitaichi-glass",
+            "name": "Kitaichi Glass Building No.3",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 5
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-art-base",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.001914,
+              43.197211
+            ]
+          },
+          "properties": {
+            "id": "otaru-art-base",
+            "routeStopId": "otaru-art-base",
+            "name": "Otaru Art Base",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 6
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-lamplight-walk-1",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.993816497222,
+                43.1990076638889
+              ],
+              [
+                140.998561,
+                43.199608
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "otaru-lamplight-walk-1",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-lamplight-walk-2",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.998561,
+                43.199608
+              ],
+              [
+                141.000346380556,
+                43.2025296583333
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "otaru-lamplight-walk-2",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-lamplight-walk-3",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                141.000346380556,
+                43.2025296583333
+              ],
+              [
+                141.007999602778,
+                43.1905419805556
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "otaru-lamplight-walk-3",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-lamplight-walk-4",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                141.007999602778,
+                43.1905419805556
+              ],
+              [
+                141.007363413889,
+                43.1922584833333
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "otaru-lamplight-walk-4",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "otaru-lamplight-walk-5",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                141.007363413889,
+                43.1922584833333
+              ],
+              [
+                141.001914,
+                43.197211
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "otaru-lamplight-walk-5",
+            "mode": "walking"
           }
         }
       ]
@@ -23799,12 +26383,12 @@
     "matsushima-bay": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          140.9741025,
-          38.3860155,
-          140.9781025,
-          38.390015500000004
+          141.0549956,
+          38.3636019,
+          141.0682082,
+          38.3761758
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -23813,20 +26397,181 @@
       "features": [
         {
           "type": "Feature",
-          "id": "matsushima-bay-place",
+          "id": "matsushima-kaigan-station",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              140.9761025,
-              38.3880155
+              141.0589956,
+              38.3678491
             ]
           },
           "properties": {
-            "id": "matsushima-bay-place",
-            "routeStopId": "matsushima-bay-place",
-            "name": "Matsushima Bay",
+            "id": "matsushima-kaigan-station",
+            "routeStopId": "matsushima-kaigan-station",
+            "name": "JR Matsushima-Kaigan Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "matsushima-rikyu",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.060162,
+              38.3676019
+            ]
+          },
+          "properties": {
+            "id": "matsushima-rikyu",
+            "routeStopId": "matsushima-rikyu",
+            "name": "Miyagi Matsushima Rikyu",
             "role": "stop",
+            "returnPoint": false,
             "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "zuiganji-temple",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.0595579,
+              38.3721758
+            ]
+          },
+          "properties": {
+            "id": "zuiganji-temple",
+            "routeStopId": "zuiganji-temple",
+            "name": "Zuiganji Temple",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "entsuin-temple",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.0599598,
+              38.3712885
+            ]
+          },
+          "properties": {
+            "id": "entsuin-temple",
+            "routeStopId": "entsuin-temple",
+            "name": "Entsuin Temple",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "godaido-temple",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.0642082,
+              38.3697244
+            ]
+          },
+          "properties": {
+            "id": "godaido-temple",
+            "routeStopId": "godaido-temple",
+            "name": "Godaido Temple",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "matsushima-bay-walk-1",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                141.0589956,
+                38.3678491
+              ],
+              [
+                141.060162,
+                38.3676019
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "matsushima-bay-walk-1",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "matsushima-bay-walk-2",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                141.060162,
+                38.3676019
+              ],
+              [
+                141.0595579,
+                38.3721758
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "matsushima-bay-walk-2",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "matsushima-bay-walk-3",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                141.0595579,
+                38.3721758
+              ],
+              [
+                141.0599598,
+                38.3712885
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "matsushima-bay-walk-3",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "matsushima-bay-walk-4",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                141.0599598,
+                38.3712885
+              ],
+              [
+                141.0642082,
+                38.3697244
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "matsushima-bay-walk-4",
+            "mode": "walking"
           }
         }
       ]
@@ -24173,12 +26918,12 @@
     "hiraizumi-s-quiet-temples": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          141.4233574,
-          39.569376299999995,
-          141.4273574,
-          39.5733763
+          141.0980699,
+          38.984086500000004,
+          141.1216428,
+          39.004940999999995
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -24187,20 +26932,101 @@
       "features": [
         {
           "type": "Feature",
-          "id": "hiraizumi-s-quiet-temples-place",
+          "id": "hiraizumi-station",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              141.4253574,
-              39.5713763
+              141.1176428,
+              38.9880865
             ]
           },
           "properties": {
-            "id": "hiraizumi-s-quiet-temples-place",
-            "routeStopId": "hiraizumi-s-quiet-temples-place",
-            "name": "Hiraizumi’s quiet temples",
+            "id": "hiraizumi-station",
+            "routeStopId": "hiraizumi-station",
+            "name": "JR Hiraizumi Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "motsuji-temple",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.1073078,
+              38.9882159
+            ]
+          },
+          "properties": {
+            "id": "motsuji-temple",
+            "routeStopId": "motsuji-temple",
+            "name": "Motsuji Temple",
             "role": "stop",
+            "returnPoint": false,
             "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "chusonji-temple",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.1020699,
+              39.000941
+            ]
+          },
+          "properties": {
+            "id": "chusonji-temple",
+            "routeStopId": "chusonji-temple",
+            "name": "Chusonji Temple",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "hiraizumi-loop-bus-1",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                141.1176428,
+                38.9880865
+              ],
+              [
+                141.1073078,
+                38.9882159
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "hiraizumi-loop-bus-1",
+            "mode": "transit"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "hiraizumi-loop-bus-2",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                141.1073078,
+                38.9882159
+              ],
+              [
+                141.1020699,
+                39.000941
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "hiraizumi-loop-bus-2",
+            "mode": "transit"
           }
         }
       ]
@@ -24628,12 +27454,12 @@
     "takayama-s-old-quarter": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          137.1839372,
-          36.2363204,
-          137.18793720000002,
-          36.2403204
+          137.24728480000002,
+          36.1333944,
+          137.26825829999999,
+          36.150434999999995
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -24642,20 +27468,237 @@
       "features": [
         {
           "type": "Feature",
-          "id": "takayama-s-old-quarter-place",
+          "id": "takayama-station",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              137.1859372,
-              36.2383204
+              137.2512848,
+              36.141126
             ]
           },
           "properties": {
-            "id": "takayama-s-old-quarter-place",
-            "routeStopId": "takayama-s-old-quarter-place",
-            "name": "Takayama’s old quarter",
+            "id": "takayama-station",
+            "routeStopId": "takayama-station",
+            "name": "JR Takayama Station",
+            "role": "origin",
+            "returnPoint": true,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-jinya-stop",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.2590845,
+              36.139834
+            ]
+          },
+          "properties": {
+            "id": "takayama-jinya-stop",
+            "routeStopId": "takayama-jinya-stop",
+            "name": "Takayama Jinya",
             "role": "stop",
             "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-furui-machinami",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.259633,
+              36.141257
+            ]
+          },
+          "properties": {
+            "id": "takayama-furui-machinami",
+            "routeStopId": "takayama-furui-machinami",
+            "name": "Furui-Machinami / Sanmachi Traditional Buildings Preservation Area",
+            "role": "stop",
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-kusakabe-folk-museum",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.258459,
+              36.146435
+            ]
+          },
+          "properties": {
+            "id": "takayama-kusakabe-folk-museum",
+            "routeStopId": "takayama-kusakabe-folk-museum",
+            "name": "Kusakabe Folk Museum",
+            "role": "stop",
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-unryuji-trailhead",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.2640944,
+              36.145449
+            ]
+          },
+          "properties": {
+            "id": "takayama-unryuji-trailhead",
+            "routeStopId": "takayama-unryuji-trailhead",
+            "name": "Higashiyama trail entrance at Unryuji Temple",
+            "role": "stop",
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-shiroyama-park",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              137.2642583,
+              36.1373944
+            ]
+          },
+          "properties": {
+            "id": "takayama-shiroyama-park",
+            "routeStopId": "takayama-shiroyama-park",
+            "name": "Shiroyama Park",
+            "role": "stop",
+            "order": 5
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-gentle-walk-01",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.2512848,
+                36.141126
+              ],
+              [
+                137.2590845,
+                36.139834
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "takayama-gentle-walk-01",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-gentle-walk-02",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.2590845,
+                36.139834
+              ],
+              [
+                137.259633,
+                36.141257
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "takayama-gentle-walk-02",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-gentle-walk-03",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.259633,
+                36.141257
+              ],
+              [
+                137.258459,
+                36.146435
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "takayama-gentle-walk-03",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-gentle-walk-04",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.258459,
+                36.146435
+              ],
+              [
+                137.2640944,
+                36.145449
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "takayama-gentle-walk-04",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-gentle-walk-05",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.2640944,
+                36.145449
+              ],
+              [
+                137.2642583,
+                36.1373944
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "takayama-gentle-walk-05",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "takayama-gentle-walk-06",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                137.2642583,
+                36.1373944
+              ],
+              [
+                137.2512848,
+                36.141126
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "takayama-gentle-walk-06",
+            "mode": "walking"
           }
         }
       ]
@@ -25511,12 +28554,12 @@
     "beppu-steam-rising": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          131.60765239999998,
-          33.2373864,
-          131.6116524,
-          33.2413864
+          131.46475,
+          33.31125,
+          131.483444,
+          33.331179999999996
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -25525,20 +28568,254 @@
       "features": [
         {
           "type": "Feature",
-          "id": "beppu-steam-rising-place",
+          "id": "beppu-umi-jigoku",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              131.6096524,
-              33.2393864
+              131.46875,
+              33.316806
             ]
           },
           "properties": {
-            "id": "beppu-steam-rising-place",
-            "routeStopId": "beppu-steam-rising-place",
-            "name": "Beppu, steam rising",
+            "id": "beppu-umi-jigoku",
+            "routeStopId": "beppu-umi-jigoku",
+            "name": "Umi Jigoku",
             "role": "stop",
             "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-oniishi-bozu-jigoku",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.469611,
+              33.31525
+            ]
+          },
+          "properties": {
+            "id": "beppu-oniishi-bozu-jigoku",
+            "routeStopId": "beppu-oniishi-bozu-jigoku",
+            "name": "Oniishi Bozu Jigoku",
+            "role": "stop",
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-kamado-jigoku",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.47245,
+              33.31645
+            ]
+          },
+          "properties": {
+            "id": "beppu-kamado-jigoku",
+            "routeStopId": "beppu-kamado-jigoku",
+            "name": "Kamado Jigoku",
+            "role": "stop",
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-oniyama-jigoku",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.473333,
+              33.316111
+            ]
+          },
+          "properties": {
+            "id": "beppu-oniyama-jigoku",
+            "routeStopId": "beppu-oniyama-jigoku",
+            "name": "Oniyama Jigoku",
+            "role": "stop",
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-shiraike-jigoku",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.474167,
+              33.315278
+            ]
+          },
+          "properties": {
+            "id": "beppu-shiraike-jigoku",
+            "routeStopId": "beppu-shiraike-jigoku",
+            "name": "Shiraike Jigoku",
+            "role": "stop",
+            "order": 5
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-chinoike-jigoku",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.47812,
+              33.32718
+            ]
+          },
+          "properties": {
+            "id": "beppu-chinoike-jigoku",
+            "routeStopId": "beppu-chinoike-jigoku",
+            "name": "Chinoike Jigoku",
+            "role": "stop",
+            "order": 6
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-tatsumaki-jigoku",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              131.479444,
+              33.326944
+            ]
+          },
+          "properties": {
+            "id": "beppu-tatsumaki-jigoku",
+            "routeStopId": "beppu-tatsumaki-jigoku",
+            "name": "Tatsumaki Jigoku",
+            "role": "stop",
+            "order": 7
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-jigoku-leg-01",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                131.46875,
+                33.316806
+              ],
+              [
+                131.469611,
+                33.31525
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "beppu-jigoku-leg-01",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-jigoku-leg-02",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                131.469611,
+                33.31525
+              ],
+              [
+                131.47245,
+                33.31645
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "beppu-jigoku-leg-02",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-jigoku-leg-03",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                131.47245,
+                33.31645
+              ],
+              [
+                131.473333,
+                33.316111
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "beppu-jigoku-leg-03",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-jigoku-leg-04",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                131.473333,
+                33.316111
+              ],
+              [
+                131.474167,
+                33.315278
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "beppu-jigoku-leg-04",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-jigoku-leg-05",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                131.474167,
+                33.315278
+              ],
+              [
+                131.47812,
+                33.32718
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "beppu-jigoku-leg-05",
+            "mode": "transit"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "beppu-jigoku-leg-06",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                131.47812,
+                33.32718
+              ],
+              [
+                131.479444,
+                33.326944
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "beppu-jigoku-leg-06",
+            "mode": "walking"
           }
         }
       ]
@@ -28311,12 +31588,12 @@
     "todai-ji-temple": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          135.8525975,
-          34.680900799999996,
-          135.85659750000002,
-          34.6849008
+          135.8220516,
+          34.6765063,
+          135.858265,
+          34.695173
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -28325,20 +31602,322 @@
       "features": [
         {
           "type": "Feature",
-          "id": "todai-ji-temple-place",
+          "id": "kintetsu-nara-station",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              135.8545975,
-              34.6829008
+              135.8260516,
+              34.6849624
             ]
           },
           "properties": {
-            "id": "todai-ji-temple-place",
-            "routeStopId": "todai-ji-temple-place",
+            "id": "kintetsu-nara-station",
+            "routeStopId": "kintetsu-nara-station",
+            "name": "Kintetsu Nara Station",
+            "role": "origin",
+            "returnPoint": true,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-kofukuji",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.8318653,
+              34.6829744
+            ]
+          },
+          "properties": {
+            "id": "nara-kofukuji",
+            "routeStopId": "nara-kofukuji",
+            "name": "Kofukuji",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-tobihino",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.8408346,
+              34.680739
+            ]
+          },
+          "properties": {
+            "id": "nara-tobihino",
+            "routeStopId": "nara-tobihino",
+            "name": "Tobihino",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-kasuga-taisha",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.8460746,
+              34.6805063
+            ]
+          },
+          "properties": {
+            "id": "nara-kasuga-taisha",
+            "routeStopId": "nara-kasuga-taisha",
+            "name": "Kasuga Taisha",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-mt-wakakusa",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.854265,
+              34.691173
+            ]
+          },
+          "properties": {
+            "id": "nara-mt-wakakusa",
+            "routeStopId": "nara-mt-wakakusa",
+            "name": "Mount Wakakusa",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-todaiji",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.8397568,
+              34.6882437
+            ]
+          },
+          "properties": {
+            "id": "nara-todaiji",
+            "routeStopId": "nara-todaiji",
             "name": "Todai-ji Temple",
             "role": "stop",
-            "order": 1
+            "returnPoint": false,
+            "order": 5
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-national-museum",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.8383105,
+              34.6830955
+            ]
+          },
+          "properties": {
+            "id": "nara-national-museum",
+            "routeStopId": "nara-national-museum",
+            "name": "Nara National Museum",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 6
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-isuien",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.8379189,
+              34.6854662
+            ]
+          },
+          "properties": {
+            "id": "nara-isuien",
+            "routeStopId": "nara-isuien",
+            "name": "Isuien Garden",
+            "role": "stop",
+            "returnPoint": false,
+            "order": 7
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-world-heritage-walk-01",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.8260516,
+                34.6849624
+              ],
+              [
+                135.8318653,
+                34.6829744
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nara-world-heritage-walk-01",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-world-heritage-walk-02",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.8318653,
+                34.6829744
+              ],
+              [
+                135.8408346,
+                34.680739
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nara-world-heritage-walk-02",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-world-heritage-walk-03",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.8408346,
+                34.680739
+              ],
+              [
+                135.8460746,
+                34.6805063
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nara-world-heritage-walk-03",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-world-heritage-walk-04",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.8460746,
+                34.6805063
+              ],
+              [
+                135.854265,
+                34.691173
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nara-world-heritage-walk-04",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-world-heritage-walk-05",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.854265,
+                34.691173
+              ],
+              [
+                135.8397568,
+                34.6882437
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nara-world-heritage-walk-05",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-world-heritage-walk-06",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.8397568,
+                34.6882437
+              ],
+              [
+                135.8383105,
+                34.6830955
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nara-world-heritage-walk-06",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-world-heritage-walk-07",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.8383105,
+                34.6830955
+              ],
+              [
+                135.8379189,
+                34.6854662
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nara-world-heritage-walk-07",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-world-heritage-walk-08",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.8379189,
+                34.6854662
+              ],
+              [
+                135.8260516,
+                34.6849624
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "nara-world-heritage-walk-08",
+            "mode": "walking"
           }
         }
       ]
@@ -30166,12 +33745,12 @@
     "hasedera-temple-kamakura": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          134.7460051,
-          35.1148355,
-          134.7500051,
-          35.1188355
+          139.5248,
+          35.30612,
+          139.53976565767,
+          35.321028982182995
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -30180,20 +33759,98 @@
       "features": [
         {
           "type": "Feature",
-          "id": "hasedera-temple-kamakura-place",
+          "id": "kamakura-hasedera",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              134.7480051,
-              35.1168355
+              139.53325,
+              35.31234
             ]
           },
           "properties": {
-            "id": "hasedera-temple-kamakura-place",
-            "routeStopId": "hasedera-temple-kamakura-place",
-            "name": "Hasedera Temple, Kamakura",
+            "id": "kamakura-hasedera",
+            "routeStopId": "kamakura-hasedera",
+            "name": "Hasedera Temple",
             "role": "stop",
             "order": 1
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kamakura-kotokuin-great-buddha",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.53576565767,
+              35.317028982183
+            ]
+          },
+          "properties": {
+            "id": "kamakura-kotokuin-great-buddha",
+            "routeStopId": "kamakura-kotokuin-great-buddha",
+            "name": "Kotokuin Temple (Great Buddha of Kamakura)",
+            "role": "stop",
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kamakura-gokurakuji",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.5288,
+              35.31012
+            ]
+          },
+          "properties": {
+            "id": "kamakura-gokurakuji",
+            "routeStopId": "kamakura-gokurakuji",
+            "name": "Gokurakuji Temple",
+            "role": "stop",
+            "order": 3
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kamakura-hase-walk-01",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.53325,
+                35.31234
+              ],
+              [
+                139.53576565767,
+                35.317028982183
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kamakura-hase-walk-01",
+            "mode": "walking"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kamakura-hase-walk-02",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.53576565767,
+                35.317028982183
+              ],
+              [
+                139.5288,
+                35.31012
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kamakura-hase-walk-02",
+            "mode": "walking"
           }
         }
       ]
