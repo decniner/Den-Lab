@@ -21,6 +21,12 @@ test('field guide provides stop story, credited photo, source and live access li
  for(const marker of ['What makes this place worth the stop','city-field-guide-photo','OpenStreetMap','YouTube','Route reference','transit','driving'])assert.ok(source.includes(marker),`guide includes ${marker}`);
 });
 
+test('field guide source contains no common UTF-8 mojibake markers',()=>{
+ const source=fs.readFileSync(path.join(root,'city-field-guides.js'),'utf8');
+ const markers=[0x00c3,0x00c2,0x00e2,0x00f0,0xfffd].map(code=>String.fromCharCode(code));
+ for(const marker of markers)assert.ok(!source.includes(marker),`unexpected encoding marker ${marker.charCodeAt(0).toString(16)}`);
+});
+
 test('city itinerary and mapped stop list both link to the field guide',()=>{
  const originUI=fs.readFileSync(path.join(root,'city-origin-ui.js'),'utf8');
  const routeUI=fs.readFileSync(path.join(root,'city-route-ui.js'),'utf8');
