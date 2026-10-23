@@ -94,8 +94,20 @@ function buildDestinationPages(siteDir, options = {}) {
   };
   fs.writeFileSync(path.join(siteDir, 'data/coverage-manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
   updateSitemap(siteDir, records, basePath);
+  writeGuideLinks(siteDir, records, identities.records, basePath);
   return { rawCount:raw.length, canonicalCandidateCount:canonical.length, pagesWritten:records.length,
     completeCount:manifest.completeCount, incompleteCount:manifest.incompleteCount, aliasPaths, records };
+}
+
+function writeGuideLinks(siteDir, records, identities, basePath) {
+  const routeGuides = readJson(path.join(siteDir, 'data/route-guide-urls.json')).records;
+  const destinationIndex = Object.fromEntries(identities.map(identity => [identity.name, {
+    id: identity.id, slug: identity.slug, canonicalId: identity.aliasOf || identity.id, aliasOf: identity.aliasOf || null
+  }]));
+  const routeIndex = Object.fromEntries(routeGuides.map(route => [route.id, { slug: route.id }]));
+  const data = JSON.stringify({ destinations:destinationIndex, routes:routeIndex }).replace(/</g, '\\u003c');
+  const source = `(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;if(root)root.GuideLinks=api;})(typeof window!=='undefined'?window:globalThis,function(){'use strict';const index=${data};function base(value){return '/'+String(value||'').split('/').filter(Boolean).join('/')+'/';}function guideUrlFor(id,manifest,basePath){const rows=Array.isArray(manifest)?manifest:(manifest&&manifest.records)||[];const record=rows.find(item=>item.id===id||item.canonicalId===id);if(!record)return null;const canonical=record.canonicalId||record.id;const target=rows.find(item=>item.id===canonical)||record;return base(basePath||'${basePath}')+'places/'+(target.slug||record.slug)+'/';}function routeGuideUrlFor(id,routeGuides,basePath){const rows=Array.isArray(routeGuides)?routeGuides:(routeGuides&&routeGuides.records)||[];const route=rows.find(item=>item.id===id);return route?base(basePath||'${basePath}')+'day-trips/'+(route.slug||route.id)+'/':null;}function destinationIdForName(name){return index.destinations[name]?.id||null;}function destinationUrl(name){const identity=index.destinations[name];if(!identity)return null;const target=index.destinations[name]||identity;return base('${basePath}')+'places/'+(target.slug||target.id)+'/';}function routeUrl(id){return routeGuideUrlFor(id,Object.entries(index.routes).map(([key,value])=>({id:key,...value})),'${basePath}');}return Object.freeze({guideUrlFor,routeGuideUrlFor,destinationIdForName,destinationUrl,routeUrl,index});});\n`;
+  fs.writeFileSync(path.join(siteDir, 'guide-links.js'), source, 'utf8');
 }
 
 function updateSitemap(siteDir, records, basePath) {

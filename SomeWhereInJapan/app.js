@@ -305,6 +305,9 @@ function showPlace(place, index) {
   document.querySelector('#place-dialog-title').textContent=placeDisplayName(place.name);
   document.querySelector('#place-dialog-area').textContent=place.place;
   document.querySelector('#place-dialog-description').textContent=place.description;
+  const fieldGuide=document.querySelector('#place-dialog-field-guide');
+  fieldGuide.href=window.GuideLinks?.destinationUrl(place.name)||'#';
+  fieldGuide.hidden=!window.GuideLinks?.destinationUrl(place.name);
   document.querySelector('#place-dialog-story').textContent=placeStory(place,spotlight);
   const localDetail=LOCAL_FIND_DETAILS[place.name];
   placeDialog.classList.toggle('has-local-story',Boolean(localDetail));
@@ -454,7 +457,8 @@ function renderDestinations(announceCompletion = false) {
     place.tags.forEach(tag => { const pill = document.createElement('span'); pill.textContent = tag; tags.append(pill); });
     const details = document.createElement('button'); details.className = 'card-details'; details.type = 'button'; details.textContent = 'View place story'; details.setAttribute('aria-label', `View ${place.name} place story`);
     details.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
-    copy.append(location, row, area, description, tags, details);
+    const fieldGuide=document.createElement('a');fieldGuide.className='card-details';fieldGuide.textContent='Open full field guide';fieldGuide.href=window.GuideLinks?.destinationUrl(place.name)||'#';fieldGuide.hidden=!window.GuideLinks?.destinationUrl(place.name);
+    copy.append(location, row, area, description, tags, details, fieldGuide);
     card.append(imageWrap, copy);
     return card;
   }));
