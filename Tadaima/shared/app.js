@@ -384,6 +384,13 @@
       (p.zoning ? "<div><dt>Zoning</dt><dd>" + p.zoning + "</dd></div>" : "") +
       (p.coverageFar ? "<div><dt>Coverage / FAR</dt><dd>" + p.coverageFar + "</dd></div>" : "") +
       "</dl>" +
+      "<h4>Hazard &amp; context — official sources</h4>" +
+      '<p class="why">Tadaima does not score hazard risk, and no score on this page says anything about safety. For this address — ' + p.districtJa + ", " + D.site.areaJa + ' — check the official sources yourself:</p>' +
+      "<ul>" +
+      '<li><a href="https://www.reinfolib.mlit.go.jp/" target="_blank" rel="noopener">MLIT Real Estate Information Library ↗</a> — official transaction prices, zoning and hazard overlays for the area</li>' +
+      '<li><a href="https://disaportal.gsi.go.jp/" target="_blank" rel="noopener">Hazard Map Portal Site (MLIT/GSI) ↗</a> — flood, landslide and tsunami maps; search for ' + p.districtJa + '</li>' +
+      '<li><a href="https://www.j-shis.bosai.go.jp/" target="_blank" rel="noopener">J-SHIS (NIED) ↗</a> — seismic hazard information for the location</li>' +
+      "</ul>" +
       '<div class="card-actions"><a class="btn btn-source" href="' + p.source.url + '" target="_blank" rel="noopener">' + (isDetail(p) ? "Open original listing on " : "Open portal results on ") + p.source.name + ' ↗</a>' +
       '<a class="btn" href="' + mapsUrl(p) + '" target="_blank" rel="noopener">See the area on a map ↗</a></div>' +
       costHtml(p) +
@@ -455,6 +462,89 @@
     landSel.value = String(state.minLand);
     landSel.addEventListener("change", function () { state.minLand = +this.value; render(); });
   }
+
+  // ---------- Saved shortlist: compare + viewing-trip planner (Phase 2) --
+  // Built entirely in JS so every edition gets it from this one file.
+  var cmpDlg = document.createElement("dialog");
+  cmpDlg.id = "compare";
+  cmpDlg.setAttribute("aria-label", "Compare saved properties and plan a viewing trip");
+  cmpDlg.innerHTML = '<div id="cmpBody"></div><div class="card-actions"><button class="btn" id="cmpClose">Close</button></div>';
+  document.body.appendChild(cmpDlg);
+  var cmpBtn = document.createElement("button");
+  cmpBtn.className = "chip";
+  cmpBtn.id = "fCompare";
+  cmpBtn.textContent = "⇄ Compare saved";
+  var savedChip = $("fSaved");
+  if (savedChip && savedChip.parentNode) savedChip.parentNode.insertBefore(cmpBtn, savedChip.nextSibling);
+  cmpDlg.querySelector("#cmpClose").addEventListener("click", function () { cmpDlg.close(); });
+  cmpDlg.addEventListener("click", function (e) { if (e.target === cmpDlg) cmpDlg.close(); });
+
+  function savedProps() { return props.filter(function (p) { return saved[p.id]; }); }
+  function rowBest(vals, mode) {
+    var best = mode === "min" ? Math.min.apply(null, vals) : Math.max.apply(null, vals);
+    return vals.map(function (v) { return v === best; });
+  }
+  function openCompare() {
+    var list = savedProps();
+    var body = cmpDlg.querySelector("#cmpBody");
+    if (list.length < 2) {
+      body.innerHTML = "<h3>Compare saved properties</h3><p class='why'>Save at least two properties (tap the ♥ on any card) and they will line up here side by side — price, true cost, walk, space and score, with the strongest figure on each row marked.</p>";
+      cmpDlg.showModal(); return;
+    }
+    var costs = list.map(function (p) { return costModel(p).cashNeeded; });
+    var units = list.map(function (p) { return p.type === "land" ? p.priceMan / (p.landM2 / TSUBO) : p.priceMan / p.buildingM2; });
+    function row(label, vals, bests, fmtFn) {
+      return "<tr><th>" + label + "</th>" + vals.map(function (v, i) {
+        return "<td" + (bests && bests[i] ? ' class="cmp-best"' : "") + ">" + fmtFn(v) + "</td>";
+      }).join("") + "</tr>";
+    }
+    var f0 = function (v) { return v; };
+    var html = "<h3>Your shortlist, side by side</h3>" +
+      '<div class="cmp-wrap"><table class="cmp"><thead><tr><th></th>' +
+      list.map(function (p) { return "<th>" + p.district + "<br><small>" + p.districtJa + " · " + priceText(p) + "</small></th>"; }).join("") +
+      "</tr></thead><tbody>" +
+      row("Score", list.map(function (p) { return p._score.total; }), rowBest(list.map(function (p) { return p._score.total; }), "max"), f0) +
+      row("Price", list.map(function (p) { return p.priceMan; }), rowBest(list.map(function (p) { return p.priceMan; }), "min"), function (v) { return "¥" + fmt(v) + "万"; }) +
+      row("Est. cash at purchase (true cost)", costs, rowBest(costs, "min"), function (v) { return yen(v); }) +
+      row("Per tsubo (land) / per m² (houses)", units, rowBest(units, "min"), function (v) { return "¥" + fmt(v, 1) + "万"; }) +
+      row("Walk to station", list.map(function (p) { return p.walkMin; }), rowBest(list.map(function (p) { return p.walkMin; }), "min"), function (v) { return v + " min"; }) +
+      row("Station", list.map(function (p) { return p.station; }), null, f0) +
+      row("Land", list.map(function (p) { return p.landM2; }), rowBest(list.map(function (p) { return p.landM2; }), "max"), function (v) { return fmt(v, 1) + " m²"; }) +
+      row("Building", list.map(function (p) { return p.buildingM2 || 0; }), rowBest(list.map(function (p) { return p.buildingM2 || 0; }), "max"), function (v) { return v ? fmt(v, 1) + " m²" : "—"; }) +
+      row("Layout", list.map(function (p) { return p.layout || "—"; }), null, f0) +
+      row("Built", list.map(function (p) { return p.built || "—"; }), null, f0) +
+      row("Major cautions", list.map(function (p) { return p.majorCautions || 0; }), rowBest(list.map(function (p) { return p.majorCautions || 0; }), "min"), f0) +
+      row("All cautions listed", list.map(function (p) { return effectiveCautions(p).length; }), null, f0) +
+      "</tbody></table></div>" +
+      '<p class="why">True cost uses the estimator defaults (assessed value 70% of price, no mortgage). Open any property\'s detail view to adjust the assumptions — the ranking here follows the same formulas.</p>';
+    // Viewing-trip planner: group by station, chain stations per line.
+    var byStation = {};
+    list.forEach(function (p) { (byStation[p.station] = byStation[p.station] || []).push(p); });
+    var stations = Object.keys(byStation);
+    var totalWalk = list.reduce(function (a, p) { return a + p.walkMin; }, 0);
+    html += "<h4>Viewing trip — " + list.length + " properties at " + stations.length + " station" + (stations.length > 1 ? "s" : "") + "</h4>" +
+      stations.map(function (s) {
+        var ps = byStation[s];
+        return '<p class="why"><strong>' + s + "</strong> (" + ps[0].line + ") — " + ps.length + " propert" + (ps.length > 1 ? "ies" : "y") + ": " +
+          ps.map(function (p) { return p.district + " (" + p.walkMin + " min walk)"; }).join("; ") + "</p>";
+      }).join("") +
+      '<p class="why">Total walking from stations: about ' + totalWalk + ' minutes across the trip, plus train time between stations.</p>';
+    if (stations.length > 1) {
+      var byLine = {};
+      list.forEach(function (p) { (byLine[p.line] = byLine[p.line] || new Set()).add(p.station); });
+      Object.keys(byLine).forEach(function (line) {
+        var ss = [...byLine[line]];
+        if (ss.length < 2) return;
+        var q = function (s) { return encodeURIComponent(s + "駅 " + D.site.areaJa); };
+        var url = "https://www.google.com/maps/dir/?api=1&travelmode=transit&origin=" + q(ss[0]) + "&destination=" + q(ss[ss.length - 1]) +
+          (ss.length > 2 ? "&waypoints=" + ss.slice(1, -1).map(q).join("|") : "");
+        html += '<p class="why"><a href="' + url + '" target="_blank" rel="noopener">Station-to-station route on the ' + line + " ↗</a> — then each property is its listed walk from its station.</p>";
+      });
+    }
+    body.innerHTML = html;
+    cmpDlg.showModal();
+  }
+  cmpBtn.addEventListener("click", openCompare);
 
   // Hero stats
   $("statTotal").textContent = props.length;

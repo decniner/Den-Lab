@@ -155,3 +155,12 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
 .cost-row small{color:var(--muted,#6b7a70);font-size:12px}
 .cost-yen{font-weight:600;white-space:nowrap}
 .cost-total{border-top:2px solid var(--green-2);font-weight:700}
+
+/* Shortlist compare (Phase 2) */
+#compare{max-width:860px}
+.cmp-wrap{overflow-x:auto;margin:10px 0}
+table.cmp{border-collapse:collapse;font-size:13.5px;min-width:100%}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.cmp thead th{font-family:"Fraunces",serif;color:var(--green-2)}
+table.cmp tbody th{font-weight:600;color:var(--ink-soft);white-space:nowrap}
+td.cmp-best{background:#eef6ee;font-weight:700}
