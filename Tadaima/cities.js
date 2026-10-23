@@ -655,7 +655,7 @@ window.TADAIMA_CITIES = [
     "prefecture": "Tokyo",
     "prefectureJa": "東京都",
     "blurb": "A mature, flat-population suburb on Tokyo's southern edge that behaves like Kanagawa: Odakyu hub at Machida, garden-suburb Tamagawagakuen, and Den-en-toshi stations along the border.",
-    "commute": "≈30 min to Shinjuku (Odakyu rapid express) · ≈30 min to Yokohama (JR Yokohama Line) · ≈50 min to Tokyo (via Shinjuku or Yokohama)",
+    "commute": "≈32–37 min to Shinjuku (Odakyu rapid express) · ≈33–40 min to Yokohama (JR Yokohama Line) · ≈55–65 min to Tokyo (no direct train)",
     "slug": "machida",
     "status": "live",
     "researchedOn": "2026-10-23",
