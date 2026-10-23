@@ -133,4 +133,31 @@ function buildLegDirectionsUrl(origin, from, to, mode = 'transit') {
   return `https://www.google.com/maps/dir/?${query.toString()}`;
 }
 
-module.exports = {validateCityRoute,validateCityRouteRegistry,summarizeRoute,readCityRouteState,buildLegDirectionsUrl,verifiedCityCount};
+function buildCityPlanPreview(origin, plan, mode = 'transit') {
+  if (!origin || !plan || !Array.isArray(plan.stops) || plan.stops.length < 2) return null;
+  const slug = value => String(value).normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const routeMode = mode === 'driving' || mode === 'car' ? 'driving' : mode === 'walking' ? 'walking' : 'transit';
+  const originPoint = { id: `${origin.id}-origin`, name: origin.station || `${origin.city} Station`, address: `${origin.station || origin.city}, Japan`, returnPoint: true };
+  const stops = plan.stops.map((stop, index) => {
+    const match = String(stop.duration || '').match(/(\d+)\s*[–-]\s*(\d+)\s*min/i);
+    return {
+      id: `${origin.id}-${slug(stop.name)}`, order: index + 1, name: stop.name,
+      area: stop.area || origin.city, story: stop.story || '', address: `${stop.name}, ${stop.area || origin.city}, Japan`,
+      visitDuration: match ? { status: 'known', minMinutes: Number(match[1]), maxMinutes: Number(match[2]), planningEstimate: true } : { status: 'unknown' }
+    };
+  });
+  const points = [originPoint, ...stops, originPoint];
+  const legs = points.slice(1).map((to, index) => ({
+    id: `${origin.id}-leg-${index + 1}`, fromId: points[index].id, toId: to.id, mode: routeMode,
+    duration: { status: 'unknown' }
+  }));
+  return {
+    id: `${origin.id}-city-plan-preview`, cityId: origin.id, title: plan.title,
+    introduction: plan.intro, researchStatus: 'in-progress', previewOnly: true,
+    origin: originPoint, stops, legs, sources: [], variants: {}
+  };
+}
+
+const api = {validateCityRoute,validateCityRouteRegistry,summarizeRoute,readCityRouteState,buildLegDirectionsUrl,buildCityPlanPreview,verifiedCityCount};
+if (typeof module !== 'undefined' && module.exports) module.exports = api;
+if (typeof window !== 'undefined') window.CityRouteModel = api;

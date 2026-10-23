@@ -36,16 +36,23 @@ function escapeHtml(value){const el=document.createElement('span');el.textConten
 async function attachMappedRoute(origin){
  const cityId=origin.planId||origin.id;
  const registry=await cityRouteRecords;
- if(select.value!==origin.id||!registry)return;
- const route=(registry.routes||[]).find(record=>record.cityId===cityId);
- if(!route||!Array.isArray(route.stops)||route.stops.length<2||!window.CityRouteUI)return;
+ if(select.value!==origin.id||!window.CityRouteUI)return;
+ let route=(registry?.routes||[]).find(record=>record.cityId===cityId);
+ let sequencePreview=false,previewSource=null;
+ if(!route){
+  const plan=core.CITY_DAY_PLANS[cityId];
+  route=window.CityRouteModel?.buildCityPlanPreview(origin,plan,routeMode);
+  if(!route)return;
+  sequencePreview=true;previewSource=plan.source;
+ }
+ if(!Array.isArray(route.stops)||route.stops.length<2)return;
  const legacyPlan=panel.querySelector('.city-origin-plan'),legacyMore=panel.querySelector('.city-origin-more');
  if(legacyPlan)legacyPlan.hidden=true;if(legacyMore)legacyMore.hidden=true;
  let mapData=null;
- try{const response=await fetch(new URL(`maps/cities/${encodeURIComponent(cityId)}.geojson`,document.baseURI));if(response.ok)mapData=await response.json();}catch(error){mapData=null;}
+ if(!sequencePreview){try{const response=await fetch(new URL(`maps/cities/${encodeURIComponent(cityId)}.geojson`,document.baseURI));if(response.ok)mapData=await response.json();}catch(error){mapData=null;}}
  if(select.value!==origin.id)return;
  activeMappedRoute?.destroy();
- activeMappedRoute=window.CityRouteUI.mountCityRouteView(panel,route,mapData,{origin,photos,airport:core.AIRPORT_ORIGINS.some(item=>item.id===origin.id),fallbackUrl:new URL(`maps/cities/${encodeURIComponent(cityId)}.svg`,document.baseURI).href});
+ activeMappedRoute=window.CityRouteUI.mountCityRouteView(panel,route,mapData,{origin,photos,sequencePreview,previewSource,airport:core.AIRPORT_ORIGINS.some(item=>item.id===origin.id),fallbackUrl:new URL(`maps/cities/${encodeURIComponent(cityId)}.svg`,document.baseURI).href});
 }
 function stopCard(stop,dayStops,origin,index){
  const photo=photos[stop.name]||stop.photo||(stop.image?{url:`https://images.unsplash.com/${stop.image}?auto=format&fit=crop&w=1200&q=85`,source:'https://unsplash.com',credit:'Unsplash',license:'Unsplash License',alt:stop.alt||stop.name}:null);

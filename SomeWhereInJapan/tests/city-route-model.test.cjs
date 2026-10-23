@@ -1,6 +1,7 @@
 ﻿const test=require('node:test');const assert=require('node:assert/strict');
-const {validateCityRoute,validateCityRouteRegistry,summarizeRoute,readCityRouteState,buildLegDirectionsUrl,verifiedCityCount}=require('../city-route-model.js');
-const origins=require('../city-origins.js').CITY_ORIGINS;
+const {validateCityRoute,validateCityRouteRegistry,summarizeRoute,readCityRouteState,buildLegDirectionsUrl,buildCityPlanPreview,verifiedCityCount}=require('../city-route-model.js');
+const cityOrigins=require('../city-origins.js');
+const origins=cityOrigins.CITY_ORIGINS;
 const manifest={records:[{id:'place-a',slug:'place-a',url:'/Den-Lab/SomeWhereInJapan/places/place-a/'}]};
 const routeGuides={records:[{id:'old-route',url:'/Den-Lab/SomeWhereInJapan/day-trips/old-route/'}]};
 function validRoute(){
@@ -11,6 +12,7 @@ function validRoute(){
 }
 
 test('requiresAllTenCityIds',()=>{const registry=JSON.parse(require('node:fs').readFileSync(require('node:path').join(__dirname,'..','data','city-routes.json'),'utf8'));assert.deepEqual(registry.cityIds.sort(),origins.map(origin=>origin.id).sort());});
+test('every city without a mapped route gets an ordered photo-ready live-directions preview',()=>{for(const origin of origins){const plan=cityOrigins.CITY_DAY_PLANS[origin.id],preview=buildCityPlanPreview(origin,plan,'transit');assert.ok(preview,origin.city);assert.equal(preview.stops.length,plan.stops.length,origin.city);assert.equal(preview.legs.length,plan.stops.length+1,origin.city);assert.ok(preview.stops.every((stop,index)=>stop.order===index+1&&stop.story&&stop.visitDuration.status==='known'),origin.city);assert.ok(preview.legs.every(leg=>leg.duration.status==='unknown'&&leg.mode==='transit'),origin.city);assert.equal(preview.researchStatus,'in-progress');}});
 test('sendaiRouteIsPartiallyVerifiedWithUniqueCreditedPhotosAndUnknowns',()=>{const registry=JSON.parse(require('node:fs').readFileSync(require('node:path').join(__dirname,'..','data','city-routes.json'),'utf8'));const route=registry.routes.find(item=>item.cityId==='sendai');assert.ok(route);assert.equal(route.researchStatus,'partially-verified');assert.deepEqual(validateCityRoute(route,origins,manifest,routeGuides),[]);assert.equal(route.stops.length,5);const photos=route.stops.map(stop=>stop.photo);assert.ok(photos.every(photo=>photo?.url&&photo.source&&photo.credit&&photo.license&&photo.alt));assert.equal(new Set(photos.map(photo=>photo.url)).size,photos.length);assert.ok(route.stops.some(stop=>stop.visitDuration.status==='unknown'));assert.ok(route.legs.some(leg=>leg.duration.status==='unknown'));});
 test('requiresOrderedStopsAndReturnLeg',()=>{const route=validRoute();route.legs.pop();assert.ok(validateCityRoute(route,origins,manifest,routeGuides).some(issue=>issue.code==='missing-return-leg'));route.stops[1].order=1;assert.ok(validateCityRoute(route,origins,manifest,routeGuides).some(issue=>issue.code==='invalid-stop-order'));});
 test('requiresSourceForCoordinatesAndDurations',()=>{const route=validRoute();delete route.stops[0].coordinates.sourceIds;delete route.legs[0].duration.sourceIds;assert.ok(validateCityRoute(route,origins,manifest,routeGuides).some(issue=>issue.code==='coordinate-source-missing'));assert.ok(validateCityRoute(route,origins,manifest,routeGuides).some(issue=>issue.code==='duration-source-missing'));});
