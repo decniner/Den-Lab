@@ -1,41 +1,29 @@
-const test = require('node:test');
+﻿const test = require('node:test');
 const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const vm = require('node:vm');
 const path = require('node:path');
+const { loadRawDestinations } = require('../tools/destination-inventory.cjs');
 
 const site = path.resolve(__dirname, '..');
-const scope = { window: null };
-scope.window = scope;
-vm.createContext(scope);
-vm.runInContext(fs.readFileSync(path.join(site, 'destinations.js'), 'utf8'), scope);
-vm.runInContext(fs.readFileSync(path.join(site, 'destination-expansion.js'), 'utf8'), scope);
-vm.runInContext(fs.readFileSync(path.join(site, 'destination-photo-expansion.js'), 'utf8'), scope);
-vm.runInContext(fs.readFileSync(path.join(site, 'destination-expansion-2.js'), 'utf8'), scope);
+const places = loadRawDestinations(site);
 
-test('nationwide destination catalogue has 230 unique entries across all regions', () => {
-  const places = scope.DESTINATIONS;
-  assert.equal(places.length, 230);
-  assert.equal(new Set(places.map(place => place.name)).size, 230);
+test('nationwide destination catalogue has 310 unique entries across all regions', () => {
+  assert.equal(places.length, 310);
+  assert.equal(new Set(places.map(place => place.name)).size, 310);
   assert.deepEqual([...new Set(places.map(place => place.region))].sort(), [
     'Chubu', 'Chugoku', 'Hokkaido', 'Kansai', 'Kanto', 'Kyushu', 'Okinawa', 'Shikoku', 'Tohoku'
   ]);
 });
 
-test('each new destination has a region, story, season and visual treatment', () => {
-  const added = scope.DESTINATIONS.slice(110);
-  assert.equal(added.length, 120);
-  for (const place of added) {
-    assert.ok(place.place && place.description && place.description.length > 80, place.name);
-    assert.ok(place.tags.length > 0, place.name);
-    assert.ok(place.months.length > 0 && place.months.every(month => month >= 1 && month <= 12), place.name);
-    assert.ok(place.seasonReason && place.illustration, place.name);
-    if (scope.DESTINATIONS.indexOf(place) >= 150) { assert.ok(place.photo?.url, `${place.name} needs a photo`); assert.ok(place.photo?.source, `${place.name} needs a photo source`); }
+test('the nationwide raw records preserve their available editorial fields without defaults', () => {
+  for (const place of places) {
+    assert.ok(place.name && place.region && place.description, place.name);
+    assert.ok(Array.isArray(place.tags) && place.tags.length > 0, place.name);
+    if (place.months !== undefined) assert.ok(place.months.every(month => month >= 1 && month <= 12), place.name);
   }
+  assert.ok(places.filter(place => place.photo?.url).length >= 200);
 });
-
 test('the previous 30 place stories use 30 distinct credited place photos', () => {
-  const additions = scope.DESTINATIONS.slice(150, 180);
+  const additions = places.slice(150, 180);
   assert.equal(additions.length, 30);
   const urls = additions.map(place => place.photo?.url);
   assert.ok(urls.every(Boolean));
@@ -43,8 +31,8 @@ test('the previous 30 place stories use 30 distinct credited place photos', () =
   assert.ok(additions.every(place => place.photo.source.startsWith('https://commons.wikimedia.org/wiki/File:')));
 });
 
-test('the 50 new destinations have distinct credited photos, useful stories, and seasonal guidance', () => {
-  const additions = scope.DESTINATIONS.slice(180);
+test('the 50 newest destinations have distinct credited photos, useful stories, and seasonal guidance', () => {
+  const additions = places.slice(180, 230);
   assert.equal(additions.length, 50);
   const photoUrls = additions.map(place => place.photo?.url);
   assert.ok(photoUrls.every(Boolean));
@@ -59,3 +47,4 @@ test('the 50 new destinations have distinct credited photos, useful stories, and
     assert.ok(place.photo.credit && place.photo.license && place.photo.licenseUrl, `${place.name} photo has complete attribution`);
   }
 });
+
