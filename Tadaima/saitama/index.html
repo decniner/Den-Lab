@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadaima! ただいま！ — Saitama City · Houses &amp; Land Worth a Look</title>
+<meta name="description" content="Tadaima! collates houses and land for sale in Saitama City (Omiya, Urawa, Minuma, Iwatsuki and more), Saitama, and ranks them with a transparent worth-a-look score, so you can decide what's worth viewing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../">Tadaima!<span class="jp">ただいま！</span></a>
+    <span class="edition">SAITAMA CITY さいたま市</span>
+    <nav class="head-nav">
+      <a href="../">← All cities</a>
+      <a href="#properties">Properties</a>
+      <a href="#how">How the ranking works</a>
+      <a href="#market">Saitama City market</a>
+      <span class="saved-pill">♥ Saved <span id="savedCount">0</span></span>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">HOUSES &amp; LAND · SAITAMA CITY, SAITAMA · さいたま市の家と土地</p>
+    <h1>Find the place<br>you'll say <em>tadaima</em> to.</h1>
+    <p class="lede">Every house and lot for sale in Saitama City that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked by one transparent score, so you can decide what's actually worth a viewing trip. An honest note up front: at this budget the centre (Omiya and Urawa wards) is apartment country — detached houses that fit live in Minuma, Iwatsuki, Kita, Sakura and the other outer wards, and that's where this collection concentrates.</p>
+    <div class="stats">
+      <div class="stat"><b id="statTotal">–</b><span>properties collected</span></div>
+      <div class="stat"><b id="statHouses">–</b><span>houses 新築・中古</span></div>
+      <div class="stat"><b id="statLand">–</b><span>land / lots 土地</span></div>
+      <div class="stat wide"><b id="statTop">–</b><span>cheapest way in — the #1 ranked property's price &amp; area</span></div>
+    </div>
+    <p class="src" style="margin-top:16px">Researched 23 Oct 2026 from SUUMO listings (via goo), LIFULL HOME'S and goo住宅・不動産. Prices and availability change — each card links to the original listing. We don't reuse listing photos; see them on the source site.</p>
+  </div>
+</section>
+
+<div class="controls" id="properties">
+  <div class="wrap">
+    <div class="chips" role="group" aria-label="Property type">
+      <button class="chip active" data-type="all">All</button>
+      <button class="chip" data-type="house-new">New houses</button>
+      <button class="chip" data-type="house-used">Used houses</button>
+      <button class="chip" data-type="land">Land</button>
+    </div>
+    <label>Max price
+      <select id="fPrice">
+        <option value="3000">¥3,000万</option>
+        <option value="4000">¥4,000万</option>
+        <option value="5000" selected>¥5,000万</option>
+      </select>
+    </label>
+    <label>Max walk
+      <select id="fWalk">
+        <option value="5">5 min</option>
+        <option value="10">10 min</option>
+        <option value="15" selected>15 min</option>
+      </select>
+    </label>
+    <label>Station
+      <select id="fStation"><option value="all">All stations</option></select>
+    </label>
+    <label>Sort
+      <select id="fSort">
+        <option value="score" selected>Worth a look</option>
+        <option value="price">Lowest price</option>
+        <option value="walk">Shortest walk</option>
+      </select>
+    </label>
+    <input type="search" id="fSearch" placeholder="Search district or station…" aria-label="Search district or station">
+    <button class="chip" id="fSaved">♥ Saved only</button>
+    <span id="count" role="status"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty"><p>No properties match those filters. Try widening the price or walk limit.</p></div>
+
+  <section class="section" id="how">
+    <h2>How the ranking works</h2>
+    <p>One score out of 100, built from four parts — the same maths for every property, with the reasons printed on each card. No paid placement, no hidden weighting. A major caution (for example land in an urbanisation-control area, or a house sold as a renovation project) subtracts 7 points and is always shown, never buried.</p>
+    <table class="score-table">
+      <tr><th>Part</th><th>Points</th><th>What it measures</th></tr>
+      <tr><td><strong>Value</strong></td><td>45</td><td>Land: price per tsubo against MLIT transaction averages for that station and walk band (via Utinokati). Houses: price per m² of floor area against the median for new / used houses in this collection.</td></tr>
+      <tr><td><strong>Location</strong></td><td>30</td><td>Walk minutes to the nearest station, plus a station tier — Omiya (Shinkansen plus six JR lines) scores highest.</td></tr>
+      <tr><td><strong>Space</strong></td><td>15</td><td>Floor area for houses, plot size for land — with over-sized plots eased back, because very large usually means very restricted.</td></tr>
+      <tr><td><strong>Confidence</strong></td><td>10</td><td>Whether the facts were verified on the listing's own detail page, and how recent its information date is. Index-page finds score lower and say so.</td></tr>
+    </table>
+  </section>
+
+  <section class="section" id="market">
+    <h2>Saitama City, in numbers</h2>
+    <p>Saitama City is really two cities sharing a name. The Omiya side is the north's rail mega-hub — Shinkansen to Tokyo in 24–25 minutes, conventional trains in about 30 — with Bonsai Village's leafy premium streets by Toro Station. The Urawa side is the old prefectural capital: government, the city's most sought-after school districts, and used houses transacting at about ¥166万/tsubo against a city-wide average of ¥132万 (Minuma ¥107万, Iwatsuki just ¥88万). Land follows the same split: about ¥145万/tsubo around Urawa and Minami-Urawa stations, ¥120万 at Kita-Urawa and Yono, ¥100万 at Omiya, then a long tail down to Iwatsuki — where the raw transaction average (¥30万) is dragged down by unbuildable urbanisation-control plots, so in-zone lots are scored against about ¥45万 instead.</p>
+    <p>Officially the ground is rising everywhere: +2.9% residential city-wide in the 2026 prefectural survey, with the Omiya and Urawa wards up +5.8–6.7%. Two cautions recur in this collection: the Arakawa floodplain across Sakura Ward and the Shiba River basin (one house here has a recorded 2019 flood on its listing — it is labelled, loudly), and urbanisation-control fringe in Minuma and Iwatsuki where cheap land often cannot be rebuilt on. Sources: MLIT transaction records and official land prices via Utinokati and MLIT aggregators, Ekitan for train times.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><strong>Tadaima! ただいま！</strong> — a personal research project in Den-Lab. Saitama City edition; Kawagoe, Tokorozawa and more cities on the home page.</span>
+    <span>Estimates and scores are a viewing shortlist tool, not financial or real-estate advice. All property facts come from the linked original listings; confirm price, availability, zoning and building conditions with the listing agent before acting.</span>
+  </div>
+</footer>
+
+<dialog id="detail" aria-labelledby="dBody">
+  <button class="d-close" id="dClose" aria-label="Close">✕</button>
+  <div id="dBody"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

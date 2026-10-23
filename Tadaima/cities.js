@@ -120,5 +120,76 @@ window.TADAIMA_CITIES = [
       "Izumi-cho",
       "Higashi-Tokorozawa 3"
     ]
+  },
+  {
+    "name": "Saitama City",
+    "nameJa": "さいたま市",
+    "prefecture": "Saitama",
+    "prefectureJa": "埼玉県",
+    "blurb": "The prefectural capital: Omiya's rail hub (Shinkansen plus five JR lines) in the north, Urawa's school-and-government premium in the south, and — between them and out in Minuma and Iwatsuki — family houses and lots that still fit a ¥5,000万 brief.",
+    "commute": "Omiya ≈30 min to Tokyo and ≈32 min to Shinjuku — Shinkansen hub, five JR lines, Tobu Urban Park Line",
+    "slug": "saitama",
+    "status": "live",
+    "researchedOn": "2026-10-23",
+    "counts": {
+      "total": 27,
+      "houses": 15,
+      "land": 12
+    },
+    "fromHouseMan": 780,
+    "fromLandMan": 1980,
+    "stations": [
+      "Minami-Yono",
+      "Nanasato",
+      "Iwatsuki",
+      "Nishi-Urawa",
+      "Owada",
+      "Higashi-Iwatsuki"
+    ],
+    "stationsJa": [
+      "南与野",
+      "西浦和",
+      "大和田",
+      "七里",
+      "岩槻",
+      "東岩槻",
+      "東浦和",
+      "指扇",
+      "日進",
+      "宮原",
+      "今羽",
+      "与野本町",
+      "中浦和",
+      "浦和美園",
+      "与野"
+    ],
+    "districts": [
+      "Nishibori 9, Sakura Ward",
+      "Tajima 4, Sakura Ward",
+      "Owada-cho 2, Minuma Ward",
+      "Shimacho, Minuma Ward",
+      "Nishimachi 5, Iwatsuki Ward",
+      "Miyamachi 2, Iwatsuki Ward",
+      "Higashi-Urawa 2, Midori Ward",
+      "Sashiogi, Nishi Ward",
+      "Nisshincho 2, Kita Ward",
+      "Sakurada 1, Sakura Ward",
+      "Kofukasaku, Minuma Ward",
+      "Owada-cho 1, Minuma Ward",
+      "Honmaru 4, Iwatsuki Ward",
+      "Nisshincho 3, Kita Ward",
+      "Yoshinocho 1, Kita Ward",
+      "Sakuragaoka 1, Chuo Ward",
+      "Oto 6, Chuo Ward",
+      "Horisaki-cho, Minuma Ward",
+      "Tsuchiya, Nishi Ward",
+      "Nisshin-cho 3, Kita Ward",
+      "Nakajima 2, Sakura Ward",
+      "Nishibori 3, Sakura Ward",
+      "Nishi-machi 4, Iwatsuki Ward",
+      "Honcho 3, Iwatsuki Ward",
+      "Misono-Higashi 2, Iwatsuki Ward",
+      "Kamikizaki 8, Urawa Ward"
+    ]
   }
 ];
