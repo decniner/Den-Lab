@@ -41,7 +41,7 @@ window.TADAIMA_DATA = {
     {
       "id": "h01",
       "type": "house-new",
-      "district": "Komiya-machi",
+      "district": "Komiya-cho",
       "districtJa": "小宮町",
       "title": "New 3-4LDK development (17 units) — 4 min from Komiya, long-term quality housing",
       "priceMan": 3880,
@@ -286,7 +286,7 @@ window.TADAIMA_DATA = {
     {
       "id": "h08",
       "type": "house-used",
-      "district": "Komiya-machi",
+      "district": "Komiya-cho",
       "districtJa": "小宮町",
       "title": "Used 4LDK (2004) — 4 min from Komiya, 17-post LDK",
       "priceMan": 3380,
@@ -422,7 +422,7 @@ window.TADAIMA_DATA = {
     {
       "id": "h12",
       "type": "house-used",
-      "district": "Higashi-Asakawa-machi",
+      "district": "Higashi-Asakawa-cho",
       "districtJa": "東浅川町",
       "title": "Used 3LDK (1996), fully renovated — 10 min from Hazama, two lines usable",
       "priceMan": 2980,
@@ -456,7 +456,7 @@ window.TADAIMA_DATA = {
     {
       "id": "h13",
       "type": "house-used",
-      "district": "Katakura-machi",
+      "district": "Katakura-cho",
       "districtJa": "片倉町",
       "title": "Used 3LDK (2008) on a high plot — 9 min from Hachioji-Minamino",
       "priceMan": 3799,
