@@ -1,0 +1,11 @@
+'use strict';
+const test=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const root=path.resolve(__dirname,'..');
+test('loadsBundledRendererWithoutCdn',()=>{const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/vendor\/leaflet\/leaflet\.js/);assert.doesNotMatch(html,/https?:\/\/[^"']*leaflet/i);});
+test('mapAndListSelectionStaySynchronized',()=>{const source=fs.readFileSync(path.join(root,'city-route-map.js'),'utf8');assert.match(source,/selectStop/);assert.match(source,/onSelectStop/);assert.match(source,/routeStopId/);});
+test('selectionDoesNotMoveFocus',()=>{const source=fs.readFileSync(path.join(root,'city-route-map.js'),'utf8');assert.doesNotMatch(source,/\.focus\s*\(/);assert.doesNotMatch(source,/scrollIntoView\s*\(/);});
+test('keyboardCanSelectStops',()=>{const source=fs.readFileSync(path.join(root,'city-route-map.js'),'utf8');assert.match(source,/keydown/);assert.match(source,/Enter/);});
+test('failedMapKeepsFallbackAndList',()=>{const source=fs.readFileSync(path.join(root,'city-route-map.js'),'utf8');assert.match(source,/fallback/i);assert.match(source,/catch\s*\(/);assert.match(source,/destroy/);});
