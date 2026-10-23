@@ -25,6 +25,8 @@ tokyoTools.append(tokyoSummary,tokyoDescription);
 let routeMode='transit';
 let availability='1';
 let halfDay=false;
+let activeDayIndex=0;
+let mapRequest=0;
 const cityGroup=document.createElement('optgroup');cityGroup.label='Major city stations';
 const airportGroup=document.createElement('optgroup');airportGroup.label='Airport stations';
 for(const origin of core.CITY_ORIGINS){const option=document.createElement('option');option.value=origin.id;option.textContent=`${origin.city}  /  ${origin.station}`;cityGroup.append(option);}
@@ -33,10 +35,14 @@ select.replaceChildren(cityGroup,airportGroup);
 const urlOrigin=new URLSearchParams(location.search).get('origin');
 select.value=core.ALL_ORIGINS.some(origin=>origin.id===urlOrigin)?urlOrigin:'tokyo';
 function escapeHtml(value){const el=document.createElement('span');el.textContent=String(value);return el.innerHTML;}
-async function attachMappedRoute(origin){
+async function attachMappedRoute(origin,dayIndex=activeDayIndex){
+ const request=++mapRequest;
  const cityId=origin.planId||origin.id;
  const registry=await cityRouteRecords;
- if(select.value!==origin.id||!window.CityRouteUI)return;
+ if(select.value!==origin.id||!window.CityRouteUI||request!==mapRequest)return;
+ const plan=core.CITY_DAY_PLANS[cityId];
+ const days=core.itineraryDays(plan?.stops,halfDay?'half':availability,core.nearbyPlaces(window.DESTINATIONS,origin.id),origin.city);
+ const day=days[dayIndex]||days[0];
  let route=(registry?.routes||[]).find(record=>record.cityId===cityId);
  let sequencePreview=false,previewSource=null;
  if(!route){
@@ -46,15 +52,34 @@ async function attachMappedRoute(origin){
   sequencePreview=true;previewSource=plan.source;
  }
  if(route?.transportMode==='selectable')route=window.CityRouteModel?.applyCityRouteMode(route,routeMode)||route;
- if(!Array.isArray(route.stops)||route.stops.length<2)return;
+ if(day&&dayCountForMap(day)>0){
+  const names=new Set(day.stops.map(stop=>stop.name));
+  const selectedStops=route.stops.filter(stop=>names.has(stop.name));
+  if(selectedStops.length){
+   const ordered=selectedStops.map((stop,index)=>({...stop,order:index+1})),points=[route.origin,...ordered,route.origin];
+   const legs=points.slice(1).map((to,index)=>({id:`${cityId}-day-${dayIndex+1}-leg-${index+1}`,fromId:points[index].id,toId:to.id,mode:routeMode==='car'?'driving':'transit',duration:{status:'unknown'}}));
+   route={...route,title:`${route.title||plan.title} · Day ${dayIndex+1}`,introduction:day.title,stops:ordered,legs};
+  }
+ }
+ if(!Array.isArray(route.stops)||route.stops.length<1)return;
  const legacyPlan=panel.querySelector('.city-origin-plan'),legacyMore=panel.querySelector('.city-origin-more');
  if(legacyPlan)legacyPlan.hidden=true;if(legacyMore)legacyMore.hidden=true;
  let mapData=null;
  if(!sequencePreview){try{const response=await fetch(new URL(`maps/cities/${encodeURIComponent(cityId)}.geojson?v=20261023-1`,document.baseURI));if(response.ok)mapData=await response.json();}catch(error){mapData=null;}}
- if(select.value!==origin.id)return;
+ if(select.value!==origin.id||request!==mapRequest)return;
+ if(mapData&&day){
+  const selectedIds=new Set(route.stops.map(stop=>stop.id));
+  const originPoint=mapData.features.find(feature=>feature.geometry?.type==='Point'&&feature.properties?.role==='origin');
+  const selectedPoints=mapData.features.filter(feature=>feature.geometry?.type==='Point'&&selectedIds.has(feature.properties?.routeStopId||feature.id));
+  if(originPoint&&selectedPoints.length){
+   const points=[originPoint,...selectedPoints,originPoint],connectors=points.slice(1).map((point,index)=>({type:'Feature',id:`day-${dayIndex+1}-leg-${index+1}`,properties:{routeLegId:`day-${dayIndex+1}-leg-${index+1}`,mode:routeMode==='car'?'driving':'transit',routeGeometryStatus:'schematic'},geometry:{type:'LineString',coordinates:[points[index].geometry.coordinates,point.geometry.coordinates]}}));
+   mapData={...mapData,metadata:{...mapData.metadata,geometryStatus:'schematic-stop-order'},features:[...mapData.features.filter(feature=>feature.geometry?.type==='LineString'&&!feature.properties?.routeLegId),originPoint,...selectedPoints,...connectors]};
+  }
+ }
  activeMappedRoute?.destroy();
- activeMappedRoute=window.CityRouteUI.mountCityRouteView(panel,route,mapData,{origin,photos,sequencePreview,previewSource,airport:core.AIRPORT_ORIGINS.some(item=>item.id===origin.id),fallbackUrl:new URL(`maps/cities/${encodeURIComponent(cityId)}.svg?v=20261023-1`,document.baseURI).href});
+ activeMappedRoute=window.CityRouteUI.mountCityRouteView(panel,route,mapData,{origin,photos,sequencePreview,previewSource,dayCount:days.length,dayIndex,airport:core.AIRPORT_ORIGINS.some(item=>item.id===origin.id),fallbackUrl:new URL(`maps/cities/${encodeURIComponent(cityId)}.svg?v=20261023-1`,document.baseURI).href});
 }
+function dayCountForMap(day){return Array.isArray(day?.stops)?day.stops.length:0;}
 function stopCard(stop,dayStops,origin,index){
  const photo=photos[stop.name]||stop.photo||(stop.image?{url:`https://images.unsplash.com/${stop.image}?auto=format&fit=crop&w=1200&q=85`,source:'https://unsplash.com',credit:'Unsplash',license:'Unsplash License',alt:stop.alt||stop.name}:null);
  const guideUrl=window.GuideLinks?.destinationUrl(stop.name);
@@ -72,8 +97,8 @@ function render(){
  const isTokyo=origin.id==='tokyo';
  const plan=core.CITY_DAY_PLANS[origin.planId||origin.id];
  cityLabel.textContent=origin.station;
- if(headingKicker)headingKicker.textContent=`A FULL DAY FROM ${origin.city.toUpperCase()}  /  CURATED CITY PLAN`;
- if(headingTitle)headingTitle.innerHTML=`A day in ${escapeHtml(origin.city)}.<br><em>Planned around you.</em>`;
+ if(headingKicker)headingKicker.textContent=`${availability==='1'?'A FULL DAY':'MULTI-DAY PLAN'} FROM ${origin.city.toUpperCase()}  /  CURATED CITY PLAN`;
+ if(headingTitle)headingTitle.innerHTML=`${availability==='1'?'A day':`${escapeHtml(availability)} days`} in ${escapeHtml(origin.city)}.<br><em>Planned around you.</em>`;
  if(headingCopy)headingCopy.textContent=plan.intro;
  cityNote.textContent=isTokyo?'Tokyo outing estimates below use Tokyo Station. Other origin selections show city ideas and individual live directions, without inherited Tokyo costs or times.':`This is a suggested ${origin.city} sequence starting from ${origin.station}. It has no calculated transfer times or budget; use individual live directions and verify the route before combining places.`;
  allForms.forEach(element=>{if(element)element.hidden=true;});
@@ -83,34 +108,37 @@ function render(){
  const stops=plan.stops;
  const days=core.itineraryDays(stops,halfDay?'half':availability,regionalPlaces,origin.city);
  const dayCount=days.length;
+ activeDayIndex=Math.min(activeDayIndex,dayCount-1);
 
  const daysDescription=halfDay
   ?`A focused half-day sequence through two anchor stops from ${stops.length} researched places. Turn off half-day mode to plan a longer visit.`
   :dayCount===1
    ?`All ${stops.length} researched stops are included in this suggested city sequence. Begin early and adjust the pace to suit you.`
-   :`Day 1 shows a suggested ${stops.length}-stop city sequence, with individual directions for each leg. Additional days remain open; choose and verify places separately instead of treating nearby listings as a tested route.`;
+   :`${dayCount} separate days are planned from the researched places, grouped into smaller neighbourhood-focused outings. Every stop has its own photo, story and directions. The groupings are a suggested order, not a timed transit schedule.`;
  const dayMarkup=days.map((day,dayIndex)=>{
   const finalStop=day.stops.at(-1);
   const returnRoute=finalStop?core.directionsUrl(origin,origin.station,routeMode,`${finalStop.name}, ${finalStop.area}`):'';
   const itinerary=day.stops.map((stop,index)=>stopCard(stop,day.stops,origin,index)).join('');
-  const actions=day.stops.length?`<div class="city-plan-actions"><a href="${returnRoute}" target="_blank" rel="noopener noreferrer">Directions back to ${escapeHtml(origin.station)} <b aria-hidden="true">&#8599;</b></a></div>`:'';
+  const actions=day.stops.length?`<div class="city-plan-actions"><button type="button" class="city-plan-map-button" data-show-day-map="${dayIndex}">Show Day ${dayIndex+1} on map</button><a href="${returnRoute}" target="_blank" rel="noopener noreferrer">Directions back to ${escapeHtml(origin.station)} <b aria-hidden="true">&#8599;</b></a></div>`:'';
   const content=day.stops.length?`<ol class="city-plan-stops">${itinerary}</ol>`:'<p class="city-plan-open-day">Keep this day flexible: revisit a favorite, take a slower neighborhood walk, or add a place from the regional suggestions below.</p>';
   return `<section class="city-plan-day" aria-labelledby="city-plan-day-${dayIndex+1}"><div class="city-plan-day-header"><div><p class="atlas-kicker">${halfDay?'HALF-DAY ROUTE':day.stops.length?`DAY ${dayIndex+1} OF ${dayCount}  /  ${day.stops.length} PLACES`:`DAY ${dayIndex+1} OF ${dayCount}  /  FLEXIBLE`}</p><h5 id="city-plan-day-${dayIndex+1}">${escapeHtml(day.title)}</h5></div>${actions}</div>${content}</section>`;
  }).join('');
  const nearby=places.map(place=>`<article class="city-origin-card"><p>${escapeHtml(place.region)}</p><h4>${escapeHtml(place.name)}</h4><span>${escapeHtml(place.place)}</span><div><a href="${core.directionsUrl(origin,place.name+' '+place.place,'transit')}" target="_blank" rel="noopener noreferrer">Transit directions <b aria-hidden="true">&#8599;</b></a><a href="${core.directionsUrl(origin,place.name+' '+place.place,'car')}" target="_blank" rel="noopener noreferrer">Drive <b aria-hidden="true">&#8599;</b></a></div></article>`).join('');
  panel.innerHTML=`<div class="city-origin-heading"><p class="atlas-kicker">STARTING IN ${escapeHtml(origin.city.toUpperCase())}  /  ${escapeHtml(origin.region.toUpperCase())}</p><h3>From ${escapeHtml(origin.city)},<br><em>${dayCount>1?`${dayCount} days, well spent.`:'one good day.'}</em></h3><p>Start at ${escapeHtml(origin.station)} and follow a suggested sequence. Each place has separate directions; no multi-stop transit schedule is implied.</p><p class="city-origin-result-count">${escapeHtml(plan.pace)}</p></div><section class="city-origin-plan" aria-labelledby="city-plan-title"><div class="city-plan-header"><div><p class="atlas-kicker">${dayCount>1?`${dayCount}-DAY CITY IDEAS`:'A SUGGESTED ORDER FOR THE DAY'}</p><h4 id="city-plan-title">${escapeHtml(plan.title)}</h4><p>${escapeHtml(plan.intro)}</p></div><div class="city-plan-controls"><label class="city-plan-availability" for="city-plan-availability">NUMBER OF DAYS<input id="city-plan-availability" type="number" min="1" max="30" step="1" inputmode="numeric" value="${escapeHtml(availability)}"></label><label class="city-plan-half-day"><input id="city-plan-half-day" type="checkbox" ${halfDay?'checked':''}> Plan a focused half-day</label><label class="city-plan-mode" for="city-plan-mode">GETTING AROUND<select id="city-plan-mode"><option value="transit" ${routeMode==='transit'?'selected':''}>Public transport</option><option value="car" ${routeMode==='car'?'selected':''}>By car</option></select></label></div></div><p class="city-plan-availability-note">${escapeHtml(daysDescription)}</p><p class="city-plan-caveat">Visit windows are suggestions, not timed admissions. The sequence is not a timetable; transfer times and fares change by date. Check each individual leg and venue before setting out.</p>${dayMarkup}<p class="city-plan-source">Route inspiration: <a href="${plan.source.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(plan.source.label)} <span aria-hidden="true">&#8599;</span></a></p></section><div class="city-origin-more"><div class="city-origin-more-heading"><p class="atlas-kicker">WHEN YOU HAVE ANOTHER DAY</p><h4>More to explore in ${escapeHtml(origin.region)}</h4><p>${places.length} regional place ideas with individual directions from ${escapeHtml(origin.station)}. Longer journeys can take several hours; check each route before choosing.</p></div><div class="city-origin-grid">${nearby}</div></div>`;
  if(isTokyo){allForms.forEach(element=>{if(element){element.hidden=false;tokyoTools.append(element);}});panel.append(tokyoTools);}
- panel.querySelector('#city-plan-availability').addEventListener('change',event=>{const entered=Number.parseInt(event.target.value,10);availability=String(Number.isFinite(entered)?Math.max(1,Math.min(30,entered)):1);halfDay=false;render();});
+ panel.querySelector('#city-plan-availability').addEventListener('change',event=>{const entered=Number.parseInt(event.target.value,10);availability=String(Number.isFinite(entered)?Math.max(1,Math.min(30,entered)):1);halfDay=false;activeDayIndex=0;render();});
  panel.querySelector('#city-plan-half-day').addEventListener('change',event=>{halfDay=event.target.checked;render();});
  panel.querySelector('#city-plan-mode').addEventListener('change',event=>{routeMode=event.target.value;render();});
+ panel.querySelectorAll('[data-show-day-map]').forEach(button=>button.addEventListener('click',async()=>{activeDayIndex=Number(button.dataset.showDayMap)||0;await attachMappedRoute(origin,activeDayIndex);const routeHost=panel.querySelector('.city-route-shared');routeHost?.scrollIntoView({behavior:'smooth',block:'start'});}));
  panel.querySelectorAll('.city-plan-stop-photo img').forEach(image=>image.addEventListener('error',()=>{
   image.hidden=true;
   const fallback=image.parentElement.querySelector('.city-plan-photo-fallback');
   if(fallback)fallback.hidden=false;
  }));
- attachMappedRoute(origin);
+ attachMappedRoute(origin,activeDayIndex);
 }
 select.addEventListener('change',()=>{
+ activeDayIndex=0;
  const url=new URL(location.href);
  if(select.value==='tokyo')url.searchParams.delete('origin');else url.searchParams.set('origin',select.value);
  history.pushState({cityOrigin:select.value},'',url);

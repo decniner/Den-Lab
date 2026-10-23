@@ -50,16 +50,21 @@ test('gives every itinerary stop a unique, credited photograph of that place',()
  }
 });
 
-test('adapts each city route to a half day, one day, or two days',()=>{
+test('splits researched city stops into balanced, complete one-, two-, and three-day plans',()=>{
  for(const [id,plan] of Object.entries(origins.CITY_DAY_PLANS)){
   const half=origins.itineraryDays(plan.stops,'half');
   const full=origins.itineraryDays(plan.stops,'one');
   const two=origins.itineraryDays(plan.stops,'two');
+  const three=origins.itineraryDays(plan.stops,'3');
   assert.equal(half.length,1,`${id} half-day plan`);assert.equal(half[0].stops.length,2,`${id} half-day plan is focused`);
   assert.equal(full.length,1,`${id} one-day plan`);assert.equal(full[0].stops.length,plan.stops.length,`${id} full-day plan includes every stop`);
   assert.equal(two.length,2,`${id} two-day plan has two days`);assert.equal(two.flatMap(day=>day.stops).length,plan.stops.length,`${id} two-day plan preserves every stop`);
-  assert.equal(two[0].stops.length,plan.stops.length,`${id} preserves the curated day sequence`);
-  assert.deepEqual(two[1].stops,[],`${id} keeps additional days flexible instead of inventing a grouped route`);
+  assert.ok(two.every(day=>day.stops.length>0),`${id} gives each requested day researched places`);
+  assert.ok(Math.max(...two.map(day=>day.stops.length))-Math.min(...two.map(day=>day.stops.length))<=1,`${id} balances places across two days`);
+  assert.equal(three.length,3,`${id} three-day plan has three days`);
+  assert.ok(three.every(day=>day.stops.length>0),`${id} gives each of three days researched places`);
+  assert.equal(three.flatMap(day=>day.stops).length,plan.stops.length,`${id} three-day plan preserves every stop exactly once`);
+  assert.ok(Math.max(...three.map(day=>day.stops.length))-Math.min(...three.map(day=>day.stops.length))<=1,`${id} balances places across three days`);
  }
 });
 

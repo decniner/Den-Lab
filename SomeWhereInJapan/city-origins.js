@@ -98,8 +98,17 @@ function itineraryDays(stops,availability='one'){
  if(availability==='half')return[{title:'A focused half-day ? suggested city highlights',stops:places.slice(0,2)}];
  const requested=availability==='two'?2:availability==='one'?1:Number.parseInt(availability,10);
  const dayCount=Number.isFinite(requested)?Math.max(1,Math.min(30,requested)):1;
- const days=[{title:'Suggested city highlights — check each connection',stops:places}];
- while(days.length<dayCount)days.push({title:`Flexible day ${days.length+1} ? choose places individually`,stops:[]});
+ const days=[];
+ const plannedDays=Math.min(dayCount,Math.max(1,places.length));
+ const base=Math.floor(places.length/plannedDays),remainder=places.length%plannedDays;
+ let cursor=0;
+ for(let index=0;index<plannedDays;index++){
+  const count=base+(index<remainder?1:0),dayStops=places.slice(cursor,cursor+count);cursor+=count;
+  const areas=[...new Set(dayStops.map(stop=>String(stop.area||'').split(',')[0]).filter(Boolean))];
+  const focus=areas.length===1?areas[0]:areas.length>1?`${areas[0]} & ${areas.at(-1)}`:'City highlights';
+  days.push({title:dayCount===1?'Suggested city highlights':`${['First look','Culture & neighbourhoods','A slower finale','More to explore'][index]||`Day ${index+1}`} · ${focus}`,stops:dayStops});
+ }
+ while(days.length<dayCount)days.push({title:`Flexible day ${days.length+1} · choose places individually`,stops:[]});
  return days;
 }
 function directionsUrl(origin,destination,mode='transit',from=null){const url=new URL('https://www.google.com/maps/dir/');url.searchParams.set('api','1');url.searchParams.set('origin',`${from||origin.station}, Japan`);url.searchParams.set('destination',`${destination}, Japan`);url.searchParams.set('travelmode',mode==='car'?'driving':'transit');return url.href;}
