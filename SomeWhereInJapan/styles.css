@@ -401,3 +401,7 @@ html{scroll-padding-top:86px}body{background:var(--paper);color:var(--ink)}.site
 .city-route-photo-note{margin:7px 0;color:#6b675d;font:12px/1.45 var(--sans);font-style:italic}
 
 .guide-version{display:inline-block;font:600 9px/1 var(--sans);letter-spacing:.08em;color:#8b7862;margin-left:.55rem;vertical-align:top}
+
+.ng-hero.ng-hero-no-photo{grid-template-columns:minmax(0,1fr)}.city-field-guide-hero.no-photo{grid-template-columns:minmax(0,1fr)}.city-field-guide-hero.no-photo .city-field-guide-photo{display:none}.route-visual-no-photo{grid-template-columns:minmax(0,1fr)}.month-pick{cursor:default}.month-pick-action{padding:0;border:0;background:transparent;color:#e1b495;text-align:left;font:inherit;cursor:pointer}.month-pick-action:hover{text-decoration:underline}
+
+.jg-hero.ng-hero-no-photo,.kg-hero.ng-hero-no-photo,.fg-hero.ng-hero-no-photo{grid-template-columns:minmax(0,1fr)}

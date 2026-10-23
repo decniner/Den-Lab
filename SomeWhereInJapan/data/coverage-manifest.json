@@ -24,7 +24,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -43,7 +43,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -62,7 +62,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -81,7 +81,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -100,7 +100,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -119,7 +119,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -138,7 +138,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -157,7 +157,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -176,7 +176,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -195,7 +195,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -214,7 +214,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -233,7 +233,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -252,7 +252,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -271,7 +271,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -290,7 +290,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -314,7 +314,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -331,7 +331,7 @@
       "guide_status": "complete",
       "missing": [],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -350,7 +350,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -369,7 +369,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -388,7 +388,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -407,7 +407,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -426,7 +426,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -445,7 +445,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -464,7 +464,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -483,7 +483,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -502,7 +502,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -521,7 +521,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -540,7 +540,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -559,7 +559,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -582,7 +582,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -601,7 +601,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -620,7 +620,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -639,7 +639,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -658,7 +658,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -677,7 +677,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -696,7 +696,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -719,7 +719,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -738,7 +738,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -757,7 +757,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -776,7 +776,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -795,7 +795,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -814,7 +814,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -833,7 +833,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -852,7 +852,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -871,7 +871,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -890,7 +890,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -909,7 +909,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -928,7 +928,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -947,7 +947,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -966,7 +966,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -985,7 +985,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1004,7 +1004,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1023,7 +1023,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1042,7 +1042,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1061,7 +1061,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1080,7 +1080,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1099,7 +1099,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1118,7 +1118,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1137,7 +1137,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1156,7 +1156,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1175,7 +1175,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1194,7 +1194,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1213,7 +1213,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1232,7 +1232,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1251,7 +1251,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1270,7 +1270,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1289,7 +1289,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1308,7 +1308,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1327,7 +1327,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1346,7 +1346,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1365,7 +1365,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1384,7 +1384,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1403,7 +1403,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1422,7 +1422,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1441,7 +1441,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1464,7 +1464,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1483,7 +1483,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1502,7 +1502,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1521,7 +1521,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1540,7 +1540,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1559,7 +1559,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1582,7 +1582,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1601,7 +1601,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1620,7 +1620,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1639,7 +1639,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1658,7 +1658,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1677,7 +1677,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1696,7 +1696,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1715,7 +1715,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1734,7 +1734,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1753,7 +1753,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -1772,7 +1772,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1791,7 +1791,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1810,7 +1810,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1829,7 +1829,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1848,7 +1848,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1867,7 +1867,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1886,7 +1886,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1905,7 +1905,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1924,7 +1924,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1943,7 +1943,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -1962,7 +1962,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -1981,7 +1981,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2000,7 +2000,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2023,7 +2023,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2042,7 +2042,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2061,7 +2061,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2080,7 +2080,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2099,7 +2099,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2118,7 +2118,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "illustrative-unsplash-image",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2137,7 +2137,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2156,7 +2156,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2175,7 +2175,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2194,7 +2194,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2213,7 +2213,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -2232,7 +2232,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2251,7 +2251,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2270,7 +2270,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2289,7 +2289,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2308,7 +2308,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2327,7 +2327,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2346,7 +2346,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2365,7 +2365,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2384,7 +2384,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2403,7 +2403,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2422,7 +2422,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2441,7 +2441,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2460,7 +2460,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2479,7 +2479,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2498,7 +2498,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2517,7 +2517,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2536,7 +2536,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2555,7 +2555,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2574,7 +2574,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2593,7 +2593,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2612,7 +2612,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2631,7 +2631,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2650,7 +2650,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2669,7 +2669,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2688,7 +2688,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2707,7 +2707,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -2726,7 +2726,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2745,7 +2745,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2764,7 +2764,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2783,7 +2783,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2802,7 +2802,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2821,7 +2821,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2840,7 +2840,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2859,7 +2859,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2878,7 +2878,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2897,7 +2897,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2916,7 +2916,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -2935,7 +2935,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2954,7 +2954,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -2973,7 +2973,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -2992,7 +2992,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3011,7 +3011,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3030,7 +3030,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3049,7 +3049,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3068,7 +3068,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3087,7 +3087,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3106,7 +3106,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3125,7 +3125,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3144,7 +3144,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3163,7 +3163,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3182,7 +3182,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3201,7 +3201,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3220,7 +3220,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -3239,7 +3239,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -3258,7 +3258,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3277,7 +3277,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3296,7 +3296,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3315,7 +3315,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3334,7 +3334,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3353,7 +3353,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3372,7 +3372,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3391,7 +3391,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3410,7 +3410,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3429,7 +3429,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3448,7 +3448,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3467,7 +3467,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3486,7 +3486,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -3505,7 +3505,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3524,7 +3524,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3543,7 +3543,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -3562,7 +3562,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3581,7 +3581,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3600,7 +3600,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3619,7 +3619,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3638,7 +3638,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3657,7 +3657,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3676,7 +3676,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3695,7 +3695,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3714,7 +3714,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3733,7 +3733,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3752,7 +3752,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3771,7 +3771,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -3790,7 +3790,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3809,7 +3809,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3828,7 +3828,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3847,7 +3847,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3866,7 +3866,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3885,7 +3885,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3904,7 +3904,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3923,7 +3923,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3942,7 +3942,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3961,7 +3961,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -3980,7 +3980,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -3999,7 +3999,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4018,7 +4018,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4037,7 +4037,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4056,7 +4056,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4075,7 +4075,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4094,7 +4094,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4113,7 +4113,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4132,7 +4132,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4151,7 +4151,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4170,7 +4170,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4189,7 +4189,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4208,7 +4208,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4227,7 +4227,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4246,7 +4246,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4265,7 +4265,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4284,7 +4284,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -4303,7 +4303,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4322,7 +4322,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4341,7 +4341,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4360,7 +4360,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -4379,7 +4379,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4398,7 +4398,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -4417,7 +4417,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4436,7 +4436,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4455,7 +4455,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4474,7 +4474,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4493,7 +4493,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4512,7 +4512,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4531,7 +4531,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4550,7 +4550,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4569,7 +4569,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4588,7 +4588,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4607,7 +4607,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4626,7 +4626,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4645,7 +4645,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4664,7 +4664,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4683,7 +4683,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4702,7 +4702,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4721,7 +4721,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4740,7 +4740,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4759,7 +4759,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4778,7 +4778,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4797,7 +4797,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4816,7 +4816,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4835,7 +4835,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4854,7 +4854,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4873,7 +4873,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4892,7 +4892,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4911,7 +4911,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4930,7 +4930,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -4949,7 +4949,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4968,7 +4968,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -4987,7 +4987,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5006,7 +5006,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5025,7 +5025,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5044,7 +5044,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5063,7 +5063,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5082,7 +5082,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5101,7 +5101,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5120,7 +5120,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5139,7 +5139,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5158,7 +5158,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5177,7 +5177,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5196,7 +5196,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5215,7 +5215,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5234,7 +5234,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5253,7 +5253,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5272,7 +5272,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5291,7 +5291,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-nearby-locator"
     },
     {
@@ -5310,7 +5310,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5329,7 +5329,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5352,7 +5352,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5371,7 +5371,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5390,7 +5390,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5409,7 +5409,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5428,7 +5428,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5447,7 +5447,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5466,7 +5466,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5485,7 +5485,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5504,7 +5504,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5523,7 +5523,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5542,7 +5542,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5561,7 +5561,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5580,7 +5580,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5599,7 +5599,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5618,7 +5618,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5637,7 +5637,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5656,7 +5656,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5675,7 +5675,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5694,7 +5694,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5713,7 +5713,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5732,7 +5732,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5751,7 +5751,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5770,7 +5770,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5789,7 +5789,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5808,7 +5808,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5827,7 +5827,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5846,7 +5846,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5865,7 +5865,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -5884,7 +5884,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5903,7 +5903,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "photo-removed-unverified",
       "mapStatus": "osm-destination-locator"
     },
     {
@@ -5922,7 +5922,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "catalogue-attribution-pending-review",
+      "imageStatus": "verified-source-photo",
       "mapStatus": "osm-destination-locator"
     }
   ]

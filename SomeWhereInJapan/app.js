@@ -12,17 +12,33 @@ const savedToggle = document.querySelector('#saved-toggle');
 const savedCount = document.querySelector('#saved-count');
 const savedNote = document.querySelector('#saved-note');
 const placeDialog = document.querySelector('#place-dialog');
+function verifiedPlacePhoto(place) {
+  const photo = place?.photo;
+  const record = photo?.verification;
+  return photo?.url && record?.verified === true && record.source_page && record.credit && record.license && record.alt &&
+    photo.source === record.source_page && photo.credit === record.credit && photo.license === record.license && photo.alt === record.alt ? photo : null;
+}
+function applyPhotoVerificationAttributes(image, photo) {
+  if (!image || !photo) return;
+  const record = photo.verification;
+  image.dataset.photoVerified = 'true';
+  image.dataset.photoSource = record.source_page;
+  image.dataset.photoCredit = record.credit;
+  image.dataset.photoLicense = record.license;
+  image.dataset.photoAlt = record.alt;
+}
 document.querySelectorAll('[data-place-count]').forEach(node => { node.textContent = DESTINATIONS.length.toLocaleString(); });
 
 function initHeroCarousel() {
   const panel = document.querySelector('.hero-image-panel'), slidesRoot = panel?.querySelector('.hero-carousel-slides');
   if (!panel || !slidesRoot) return;
-  const verified = DESTINATIONS.filter(place => place.photo?.url && place.photo?.source && place.photo?.credit && place.photo?.license).slice(0, 9);
+  const verified = DESTINATIONS.filter(place => verifiedPlacePhoto(place)).slice(0, 9);
   if (!verified.length) return;
   const slides = verified.map((place, index) => {
     const slide = document.createElement('div'); slide.className = 'hero-carousel-slide'; slide.setAttribute('role', 'group');
     slide.setAttribute('aria-roledescription', 'slide'); slide.setAttribute('aria-label', `${index + 1} of ${verified.length}: ${place.name}`); slide.hidden = true;
-    const image = document.createElement('img'); image.src = place.photo.url.replace('width=1100', 'width=1800'); image.alt = place.photo.alt || place.name; image.width = 1800; image.height = 1180;
+    const image = document.createElement('img'); applyPhotoVerificationAttributes(image, place.photo); image.src = place.photo.url.replace('width=1100', 'width=1800'); image.alt = place.photo.alt || place.name; image.width = 1800; image.height = 1180;
+    image.addEventListener('error',()=>{image.hidden=true;slide.classList.add('hero-carousel-photo-unavailable');credit.replaceChildren();},{once:true});
     if (index === 0) image.fetchPriority = 'high'; slide.append(image); slidesRoot.append(slide); return slide;
   });
   const current = panel.querySelector('.hero-slide-current'), total = panel.querySelector('.hero-slide-total');
@@ -229,7 +245,6 @@ const PLACE_SPOTLIGHTS = {
   }
 };
 
-const galleryCache = new Map();
 let placeDialogRequest = 0;
 let placeDialogTrigger = null;
 
@@ -274,67 +289,26 @@ function renderPlaceRoutes(place) {
   ];
   document.querySelector('#place-dialog-routes').replaceChildren(...routes.map(([title,detail,url])=>{const link=externalAnchor('',url,'place-route');const strong=document.createElement('strong');strong.textContent=title;const span=document.createElement('span');span.textContent=detail;link.append(strong,span);return link;}));
 }
-function cleanAttribution(value) {
-  if(!value) return '';
-  return new DOMParser().parseFromString(String(value),'text/html').body.textContent.replace(/\s+/g,' ').trim();
-}
-async function findCommonsPhotos(place) {
-  const cacheKey=`${place.name}|${place.place}`;
-  if(galleryCache.has(cacheKey)) return galleryCache.get(cacheKey);
-  const params=new URLSearchParams({action:'query',generator:'search',gsrsearch:`${place.name} ${place.place}`,gsrnamespace:'6',gsrlimit:'16',prop:'imageinfo',iiprop:'url|extmetadata',iiurlwidth:'1000',format:'json',origin:'*'});
-  const response=await fetch(`https://commons.wikimedia.org/w/api.php?${params.toString()}`);
-  if(!response.ok) throw new Error('photo search unavailable');
-  const payload=await response.json();
-  const skip=/logo|map|flag|icon|diagram|poster|coat of arms|route map|location map|illustration|drawing/i;
-  const photos=Object.values(payload.query?.pages||{}).map(page=>{
-    const info=page.imageinfo?.[0], meta=info?.extmetadata||{};
-    return info?.thumburl ? {title:page.title.replace(/^File:/,''),url:info.thumburl,source:info.descriptionurl,artist:cleanAttribution(meta.Artist?.value),license:cleanAttribution(meta.LicenseShortName?.value)||'See license details'} : null;
-  }).filter(photo=>photo && !skip.test(photo.title) && /\.(jpe?g|png|webp)$/i.test(photo.title));
-  const unique=photos.filter((photo,index)=>photos.findIndex(other=>other.url===photo.url)===index).slice(0,3);
-  galleryCache.set(cacheKey,unique);
-  return unique;
-}
-function renderPlaceGallery(photos, requestId, place) {
-  if(requestId!==placeDialogRequest) return;
-  const gallery=document.querySelector('#place-dialog-gallery');
-  const status=document.querySelector('#place-dialog-gallery-status');
-  if(!photos.length){status.textContent='No additional photographs are available right now. Use the photo search to browse more.';gallery.replaceChildren();return;}
-  status.textContent=`${photos.length} additional ${photos.length===1?'photograph':'photographs'} from Wikimedia Commons. Credits and licenses are shown with each image.`;
-  gallery.replaceChildren(...photos.map(photo=>{
-    const figure=document.createElement('figure');figure.className='place-gallery-photo';
-    const link=externalAnchor('',photo.source||photo.url);link.className='place-gallery-image';
-    const image=document.createElement('img');image.src=photo.url;image.alt=`${photo.title} - ${place.name}`;image.loading='lazy';image.addEventListener('error',()=>figure.remove(),{once:true});link.append(image);
-    const caption=document.createElement('figcaption');
-    const title=document.createElement('span');title.textContent=photo.title;
-    const credit=document.createElement('small');credit.textContent=[photo.artist,photo.license].filter(Boolean).join(' / ');
-    caption.append(title,credit);figure.append(link,caption);return figure;
-  }));
-}
-async function loadPlaceGallery(place, requestId) {
-  const status=document.querySelector('#place-dialog-gallery-status');
-  const gallery=document.querySelector('#place-dialog-gallery');
-  status.textContent='Finding more photographs for this place...';gallery.replaceChildren();
-  try { renderPlaceGallery(await findCommonsPhotos(place),requestId,place); }
-  catch { if(requestId===placeDialogRequest) status.textContent='Photo search is temporarily unavailable. Use the photo search to browse more.'; }
-}
 function showPlace(place, index) {
   placeDialogTrigger=document.activeElement;
-  const requestId=++placeDialogRequest;
+  ++placeDialogRequest;
   const spotlight=PLACE_SPOTLIGHTS[place.name];
   const image=document.querySelector('#place-dialog-image');
   const visual=image.closest('.place-dialog-visual');
-  const photoUrl=place.photo?.url || (place.image ? `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0` : '');
+  const photo=verifiedPlacePhoto(place);
+  const photoUrl=photo?.url || '';
   visual.classList.toggle('is-illustrated',!photoUrl);
   visual.dataset.art=place.illustration||'place';
   visual.dataset.title=place.name;
   image.hidden=!photoUrl;
-  if(photoUrl) image.src=photoUrl;
-  else image.removeAttribute('src');
-  image.alt=place.photoAudit?.verdict==='UNVERIFIABLE' ? `Illustrative image; location not verified. ${place.photo?.alt || place.alt || place.name}` : (place.photo ? (place.photo.alt || place.alt || place.name) : (place.alt||''));
+  if(photoUrl) { applyPhotoVerificationAttributes(image,photo); image.src=photoUrl; }
+  else { image.removeAttribute('src'); for(const key of ['photoVerified','photoSource','photoCredit','photoLicense','photoAlt']) delete image.dataset[key]; }
+  image.alt=photo?.alt || '';
+  image.onerror=()=>{image.hidden=true;visual.classList.add('is-illustrated');photoCredit.hidden=true;};
   const photoCredit=document.querySelector('#place-dialog-photo-credit');
   photoCredit.hidden=!photoUrl;
-  if(place.photo?.source){photoCredit.href=place.photo.source;photoCredit.textContent=place.photoAudit?.verdict==='UNVERIFIABLE'?`Illustrative image · location unverified · ${place.photo.credit||'photo source and license'}`:`Photo: ${place.photo.credit||'source and license'} · open details`;}
-  else {photoCredit.removeAttribute('href');photoCredit.textContent='Illustrative image · location unverified';}
+  if(photo){photoCredit.href=photo.source;photoCredit.textContent=`Photo: ${photo.credit} · ${photo.license}`;}
+  else {photoCredit.removeAttribute('href');photoCredit.textContent='';}
   document.querySelector('#place-dialog-number').textContent=String(index+1).padStart(2,'0');
   document.querySelector('#place-dialog-region').textContent=`${place.region} / JAPAN FIELD GUIDE`;
   document.querySelector('#place-dialog-title').textContent=placeDisplayName(place.name);
@@ -381,7 +355,9 @@ function showPlace(place, index) {
   updatePlaceDialogSave(place);
   placeDialog.showModal();
   window.PlaceRouteUI?.mountDialog(place.name);
-  loadPlaceGallery(place,requestId);
+  document.querySelector('#place-dialog-gallery-status').textContent='';
+  document.querySelector('#place-dialog-gallery').replaceChildren();
+  document.querySelector('#place-dialog-gallery').closest('.place-detail-section').hidden=true;
 }
 function renderPlaceLocalGuide(place, spotlight) {
   const localDetail=LOCAL_FIND_DETAILS[place.name];
@@ -465,12 +441,14 @@ function renderDestinations(announceCompletion = false) {
     imageWrap.dataset.title=place.name;
     const image = document.createElement('img');
     image.className = 'card-image';
-    image.alt = place.photoAudit?.verdict==='UNVERIFIABLE' ? `Illustrative image; location not verified. ${place.photo?.alt || place.alt || place.name}` : (place.photo?.alt||place.alt||'');
+    const photo=verifiedPlacePhoto(place);
+    image.alt = photo?.alt || '';
     image.loading = index < 3 ? 'eager' : 'lazy';
     image.decoding = 'async';
-    if(place.photo?.url || place.image){
-      image.src = place.photo?.url || `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=950&q=82&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`;
-      image.addEventListener('error', () => { image.hidden = true; imageWrap.classList.add('image-fallback'); }, {once:true});
+    if(photo){
+      applyPhotoVerificationAttributes(image,photo);
+      image.src = photo.url;
+      image.addEventListener('error', () => { image.hidden = true; photoLink.classList.add('is-photo-removed'); imageWrap.classList.add('illustrated-place'); imageWrap.querySelector('.card-photo-credit')?.remove(); }, {once:true});
     }else{
       image.hidden=true;imageWrap.classList.add('image-fallback','illustrated-place');
     }
@@ -489,8 +467,7 @@ function renderDestinations(announceCompletion = false) {
     saveButton.setAttribute('aria-pressed', String(saved.has(place.name)));
     saveButton.textContent = saved.has(place.name) ? '♥' : '♡';
     saveButton.addEventListener('click', () => toggleSavedPlace(place));
-    if(place.photo?.source){const credit=document.createElement('a');credit.className='card-photo-credit';credit.href=place.photo.source;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent=place.photoAudit?.verdict==='UNVERIFIABLE'?'IMAGE / UNVERIFIED':'PHOTO / COMMONS';credit.setAttribute('aria-label',`Open photo credit and license for ${place.name}`);imageWrap.append(photoLink,credit,region,number,saveButton);}
-    else if(place.image){const credit=document.createElement('span');credit.className='card-photo-credit card-photo-credit-note';credit.textContent='ILLUSTRATIVE IMAGE';imageWrap.append(photoLink,credit,region,number,saveButton);}
+    if(photo){const credit=document.createElement('a');credit.className='card-photo-credit';credit.href=photo.source;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent=`PHOTO · ${photo.credit} · ${photo.license}`;credit.setAttribute('aria-label',`Photo credit and license for ${place.name}`);imageWrap.append(photoLink,credit,region,number,saveButton);}
     else imageWrap.append(photoLink, region, number, saveButton);
     const copy = document.createElement('div'); copy.className = 'card-copy';
     const contextBadges = document.createElement('div'); contextBadges.className = 'destination-context-badges';
@@ -682,21 +659,21 @@ function renderMonthGuide() {
   const cards = tailoredPicks.map(([name, reason]) => {
     const place = DESTINATIONS.find(item => item.name === name);
     if (!place) return null;
-    const card = document.createElement('button'); card.type = 'button'; card.className = 'month-pick';
-    card.setAttribute('aria-label', `View ${place.name}: ${reason}`);
+    const card = document.createElement('article'); card.className = 'month-pick';
     let image;
-    const imageUrl=place.photo?.url || (place.image ? `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0` : '');
+    const photo=verifiedPlacePhoto(place);
+    const imageUrl=photo?.url || '';
     if(imageUrl){
       image=document.createElement('img');
+      applyPhotoVerificationAttributes(image,photo);
       image.src=imageUrl;
-      image.alt=place.photo?.alt||place.alt||`${place.name} in ${place.place}`;
+      image.alt=photo.alt;
       image.loading='lazy';
       image.decoding='async';
       image.addEventListener('error',()=>{
-        const fallbackUrl=place.image?`https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0`:'';
-        if(place.photo?.url&&fallbackUrl&&!image.dataset.fallbackTried){image.dataset.fallbackTried='true';image.src=fallbackUrl;return;}
         image.hidden=true;
         card.classList.add('month-pick-photo-unavailable');
+        photoCredit?.remove();
       });
     }else{
       image=document.createElement('span');
@@ -709,13 +686,12 @@ function renderMonthGuide() {
     const region = document.createElement('span'); region.className = 'month-pick-region'; region.textContent = place.place;
     const title = document.createElement('span'); title.className = 'month-pick-title'; title.textContent = placeDisplayName(place.name);
     const detail = document.createElement('span'); detail.className = 'month-pick-reason'; detail.textContent = reason;
-    const photoCredit=place.photo?.credit?document.createElement('span'):null;
-    if(photoCredit){photoCredit.className='month-pick-credit';photoCredit.textContent=`PHOTO · ${place.photo.credit}`;}
-    const action = document.createElement('span'); action.className = 'month-pick-action'; action.textContent = 'VIEW PLACE ↗';
+    const photoCredit=photo?document.createElement('a'):null;
+    if(photoCredit){photoCredit.className='month-pick-credit';photoCredit.href=photo.source;photoCredit.target='_blank';photoCredit.rel='noopener noreferrer';photoCredit.textContent=`PHOTO / ${photo.credit} / ${photo.license}`;}
+    const action=document.createElement('button');action.type='button';action.className='month-pick-action';action.textContent='VIEW PLACE';action.setAttribute('aria-label',`View ${place.name}: ${reason}`);action.addEventListener('click',()=>showPlace(place,DESTINATIONS.indexOf(place)));
     copy.append(region,title,detail);
     if(photoCredit)copy.append(photoCredit);
     copy.append(action); card.append(image,copy);
-    card.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
     return card;
   }).filter(Boolean);
   const styleLabel = journeyStyleSelect.value === 'local' ? 'LOCAL FINDS' : journeyStyleSelect.value === 'balanced' ? 'SEASONAL PLACES' : `${journeyStyleSelect.value.toUpperCase()}-LED PLACES`;
@@ -748,9 +724,9 @@ function renderMonthRoute(picks, monthIndex) {
     const place = item.place;
     const card = document.createElement('article'); card.className = 'month-route-stop';
     const photo = document.createElement('div'); photo.className = 'month-route-stop-photo';
-    const src = place.photo?.url || (place.image ? `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=900&q=85&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0` : '');
-    if (src) { const img = document.createElement('img'); img.src = src; img.alt = place.photo?.alt || place.alt || `${place.name} in ${place.place}`; img.loading = 'lazy'; photo.append(img); }
-    else { photo.classList.add('month-route-photo-missing'); photo.textContent = `Field note | ${place.place}`; }
+    const verified=verifiedPlacePhoto(place);
+    if (verified) { const img = document.createElement('img'); applyPhotoVerificationAttributes(img,verified); img.src = verified.url; img.alt = verified.alt; img.loading = 'lazy'; img.addEventListener('error',()=>photo.remove(),{once:true}); const credit=document.createElement('a');credit.href=verified.source;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent=`Photo: ${verified.credit} ? ${verified.license}`;photo.append(img,credit); }
+    else photo.remove();
     const meta = document.createElement('p'); meta.className = 'month-route-stop-meta'; meta.textContent = `${place.region} | ${place.place}`;
     const name = document.createElement('h5'); name.textContent = placeDisplayName(place.name);
     const season = document.createElement('p'); season.className = 'month-route-season'; season.textContent = `WHY ${MONTHS[monthIndex].toUpperCase()}: ${item.reason}`;

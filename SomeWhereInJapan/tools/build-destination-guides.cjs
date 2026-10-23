@@ -26,16 +26,11 @@ function sourceLinks(place) {
   return `<p>Photo credit: ${escapeHtml(photo.credit || 'Image source')} ${photo.license ? `· ${escapeHtml(photo.license)} ` : ''}<a href="${escapeHtml(photo.source)}" target="_blank" rel="noopener noreferrer">Source</a></p>`;
 }
 
-function imageMarkup(place, researchedPhoto, routePhoto) {
-  const photo = researchedPhoto?.status === 'verified' ? researchedPhoto : (place.photo || routePhoto);
-  const illustrativeUrl = place.image ? `https://images.unsplash.com/${encodeURIComponent(place.image)}?auto=format&fit=crop&w=1400&q=85` : '';
-  const imageUrl = photo?.url || illustrativeUrl;
-  if (!imageUrl) return `<div class="destination-photo-gap" role="img" aria-label="Illustrated map card for ${escapeHtml(place.name)}"><span>${escapeHtml(place.region || 'Japan')}</span><strong>${escapeHtml(place.name)}</strong><small>Open the map to explore this place</small></div>`;
-  const alt = photo?.alt || place.alt || `Illustrative image for ${place.name}`;
-  const attribution = photo?.source
-    ? `Photo: ${escapeHtml(photo.credit || 'Image source')} · <a href="${escapeHtml(photo.source)}" target="_blank" rel="noopener noreferrer">Source${photo.license ? ` · ${escapeHtml(photo.license)}` : ''}</a>`
-    : `Illustrative image via <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer">Unsplash</a>`;
-  return `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(alt)}" loading="eager" decoding="async"><figcaption>${attribution}</figcaption>`;
+function imageMarkup(place) {
+  const photo=place.photo,record=photo?.verification;
+  if(!photo?.url||record?.verified!==true||!record.source_page||!record.credit||!record.license||!record.alt||photo.source!==record.source_page||photo.credit!==record.credit||photo.license!==record.license||photo.alt!==record.alt)return '';
+  const attrs=`data-photo-verified="true" data-photo-source="${escapeHtml(record.source_page)}" data-photo-credit="${escapeHtml(record.credit)}" data-photo-license="${escapeHtml(record.license)}" data-photo-alt="${escapeHtml(record.alt)}"`;
+  return `<figure data-photo-verified="true"><img src="${escapeHtml(photo.url)}" alt="${escapeHtml(record.alt)}" ${attrs} loading="eager" decoding="async"><figcaption>Photo: ${escapeHtml(record.credit)} / ${escapeHtml(record.license)} / <a href="${escapeHtml(record.source_page)}" target="_blank" rel="noopener noreferrer">Source</a></figcaption></figure>`;
 }
 
 function normalizeName(value) {
@@ -108,8 +103,9 @@ function pointMapUrl(point, record) {
 
 function routeStopMarkup(stops, record) {
   return stops.map((stop, index) => {
-    const photo = stop.photo;
-    const photoMarkup = photo?.url ? `<figure class="ng-stop-photo"><img src="${escapeHtml(photo.url)}" alt="${escapeHtml(photo.alt || stop.name)}" loading="lazy"><figcaption>Photo: ${escapeHtml(photo.credit || 'Contributor')} · <a href="${escapeHtml(photo.source || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(photo.license || 'Source')}</a></figcaption></figure>` : '';
+    const photo = stop.photo, verification = photo?.verification;
+    const validPhoto = photo?.url && verification?.verified === true && verification.source_page && verification.credit && verification.license && verification.alt && photo.source === verification.source_page && photo.credit === verification.credit && photo.license === verification.license && photo.alt === verification.alt;
+    const photoMarkup = validPhoto ? `<figure class="ng-stop-photo"><img data-photo-verified="true" data-photo-source="${escapeHtml(verification.source_page)}" data-photo-credit="${escapeHtml(verification.credit)}" data-photo-license="${escapeHtml(verification.license)}" data-photo-alt="${escapeHtml(verification.alt)}" src="${escapeHtml(photo.url)}" alt="${escapeHtml(verification.alt)}" loading="lazy"><figcaption>Photo: ${escapeHtml(verification.credit)} / ${escapeHtml(verification.license)} / <a href="${escapeHtml(verification.source_page)}" target="_blank" rel="noopener noreferrer">Source</a></figcaption></figure>` : '';
     const duration = stop.visitDuration?.status === 'known' ? `${stop.visitDuration.minMinutes}${stop.visitDuration.maxMinutes !== stop.visitDuration.minMinutes ? `–${stop.visitDuration.maxMinutes}` : ''} min suggested visit` : '';
     return `<li class="ng-stop"><span class="ng-stop-number">${String(stop.order || index + 1).padStart(2,'0')}</span><article>${photoMarkup}<p class="ng-kicker">${escapeHtml(stop.area || record.region || 'JAPAN')}</p><h3>${escapeHtml(stop.name)}</h3>${stop.address ? `<p class="ng-stop-address">${escapeHtml(stop.address)}</p>` : ''}${stop.story ? `<p>${escapeHtml(stop.story)}</p>` : ''}${duration ? `<p class="ng-stop-time">${escapeHtml(duration)}</p>` : ''}<a class="ng-map-link" href="${pointMapUrl(stop, record)}" target="_blank" rel="noopener noreferrer">Open this stop in OpenStreetMap ↗</a></article></li>`;
   }).join('');
@@ -235,7 +231,7 @@ function pageHtml(template, record, details, completion, routeRecord) {
   const tokens = {
     TITLE: escapeHtml(title), DESCRIPTION: escapeHtml(raw.description || `${record.name} in ${raw.region}, Japan.`), CANONICAL: escapeHtml(absolute),
     TITLE_TEXT: escapeHtml(record.name), REGION: escapeHtml(raw.region), TYPE: escapeHtml(record.type), PLACE: escapeHtml(raw.place || raw.region),
-    DESCRIPTION: escapeHtml(raw.description || ''), TAGS: tags, IMAGE: imageMarkup(raw, details.photo, imagePhoto), SEASON: details.season ? escapeHtml(details.season) : months,
+    DESCRIPTION: escapeHtml(raw.description || ''), TAGS: tags, IMAGE: imageMarkup(raw), HERO_CLASS: raw.photo?.verification?.verified ? '' : 'ng-hero-no-photo', SEASON: details.season ? escapeHtml(details.season) : months,
     STORY: escapeHtml(details.story || raw.description || ''), VISIT_PLAN: escapeHtml(routeIntroduction),
     ACCESS: escapeHtml(accessFallback), POINTS: points,
     ACCESS_MODES: modes || '<li>Open the map for current public transport and driving options from your starting point.</li>', CONTACT: contactMarkup, STAY: stayMarkup, WEATHER: escapeHtml(details.weatherPlan?.alternative || 'Check the attraction or local visitor site before setting out in poor weather.'),
@@ -279,7 +275,7 @@ function buildDestinationPages(siteDir, options = {}) {
     const output = path.join(siteDir, 'places', record.slug, 'index.html');
     fs.mkdirSync(path.dirname(output), { recursive:true });
     const existing = fs.existsSync(output) ? fs.readFileSync(output, 'utf8') : '';
-    if (!existing.includes('data-authored-guide="true"')) {
+    if (!existing || existing.includes('data-generated-guide="true"')) {
       fs.writeFileSync(output, pageHtml(template, { ...record, raw: duplicateImage ? { ...record.raw, photo:null, image:null } : record.raw }, destinationDetails || {}, completion, destinationRoute), 'utf8');
     }
     return {
@@ -288,7 +284,7 @@ function buildDestinationPages(siteDir, options = {}) {
       aliasOf: null, oldPaths: record.oldPaths || [], guideStatus: completion.complete ? 'complete' : 'provisional',
       guide_status: completion.complete ? 'complete' : 'provisional',
       missing: completion.missing, sourceStatus: destinationDetails?.sources?.length ? 'sources-recorded' : 'not-researched',
-      imageStatus: duplicateImage ? 'duplicate-suppressed' : record.raw.photo?.url ? 'catalogue-attribution-pending-review' : record.raw.image ? 'illustrative-unsplash-image' : 'missing',
+      imageStatus: duplicateImage ? 'duplicate-suppressed' : record.raw.photo?.verification?.verified ? 'verified' : 'removed-unverified',
       mapStatus: mapLocations[record.id]?.precision ? `osm-${mapLocations[record.id].precision}-locator` : record.raw.coordinates ? 'coordinates-present-pending-review' : 'no-coordinates'
     };
   });

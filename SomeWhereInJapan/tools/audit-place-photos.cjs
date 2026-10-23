@@ -8,6 +8,7 @@ const site = path.resolve(__dirname, '..');
 const generatedScript = path.join(site, 'destination-photo-audit.js');
 const auditJson = path.join(site, 'data/photo-audit.json');
 const auditMarkdown = path.join(site, 'PHOTO_AUDIT.md');
+const auditOverrides = path.join(site, 'data/photo-purge-overrides.json');
 const PAGE_SIZE = 40;
 const DESCRIPTIVE_SUFFIX = /\s+(?:in bloom|by lamplight|from above|after dark|in blossom|in the cedars|temple to tide|steam and springs|from the water|unhurried|under steep roofs|beneath the alps|the mountain valley|at first light|after hours|between trees|after dusk|the old paths|a city of peace|land of old stories|art and sea|by bicycle|by river|steam rising|ancient green|harbor of many worlds|under mount yufu|island time|ryukyu memory|by foot and bicycle|snow and neon|mirror of the sky|a mountain of steps|in every season|the little edo|a temple town morning|the long way round|sea and sky|above kyoto|at blue hour|at sunset|a sacred approach|in layers|the golden pavilion)$/i;
 
@@ -55,7 +56,7 @@ function missingRow(place) {
     sourcePage: place.photo?.source || '', photographer: place.photo?.credit || '',
     altText: place.photo?.alt || place.alt || '', license: place.photo?.license || '',
     verdict: 'UNVERIFIABLE', evidence: place.photo ? 'No retrievable source page metadata' : 'No source-backed destination photo in catalogue',
-    action: 'Keep the existing image and identify it as illustrative; location not verified'
+    action: 'Remove: the destination-specific source, credit, and license could not be verified'
   };
 }
 async function fetchBatch(places) {
@@ -70,19 +71,38 @@ async function fetchBatch(places) {
 function renderMarkdown(rows) {
   const cell = value => String(value || '').replace(/\|/g, '\\|').replace(/[\r\n]+/g, ' ').trim() || '—';
   const lines = [
-    '# Photo audit: all 310 catalogue records', '',
-    `Audited ${rows.length} catalogue records against their linked image source pages on ${new Date().toISOString().slice(0, 10)}. CORRECT means the Commons source page title, caption, or category metadata identifies the named place. This is a source-page verification, not a visual inspection of every image. UNVERIFIABLE images remain visible as illustrative images with that status disclosed; their existing source and credit metadata are preserved. No image is labelled WRONG unless its source page positively identifies a different place.`, '',
-    '| Place | Current image URL | Source page | Credited photographer | Alt text | Verdict | Evidence / action |',
+    '# Photo audit: all destination image surfaces', '',
+    `Audited ${rows.length} catalogue image records against their linked Commons source pages. KEEP is limited to source pages whose file title explicitly identifies the destination or an integral named attraction, with a non-empty photographer, license, source URL, and destination-specific alt text. Every other image is removed. This is source-page verification; images with uncertain provenance are not rendered.`, '',
+    '| Place | Surface | Previous image URL | Image URL | Source page | Credit | License | Verdict | New alt text | Evidence / action |',
     '|---|---|---|---|---|---|---|'
   ];
-  for (const row of rows) lines.push(`| ${cell(row.place)} | ${cell(row.currentImageUrl)} | ${cell(row.sourcePage)} | ${cell(row.photographer)} | ${cell(row.altText)} | ${row.verdict} | ${cell(`${row.evidence}; ${row.action}`)} |`);
-  const counts = Object.fromEntries(['CORRECT','WRONG','UNVERIFIABLE'].map(verdict => [verdict, rows.filter(row => row.verdict === verdict).length]));
-  lines.push('', `**Verdict totals:** ${counts.CORRECT} CORRECT, ${counts.WRONG} WRONG, ${counts.UNVERIFIABLE} UNVERIFIABLE.`, '');
+  for (const row of rows) {
+    const verdict = row.verdict === 'CORRECT' ? (row.previousUrl && row.previousUrl !== row.currentImageUrl ? 'REPLACED' : 'KEPT') : 'REMOVED';
+    for (const surface of ['Place cards and search results', 'Place detail dialog', 'Seasonal and monthly results', 'Place field guide header']) {
+      lines.push(`| ${cell(row.place)} | ${surface} | ${cell(row.previousUrl)} | ${cell(row.currentImageUrl)} | ${cell(row.sourcePage)} | ${cell(row.photographer)} | ${cell(row.license)} | ${verdict} | ${cell(row.altText)} | ${cell(row.evidence || row.action)} |`);
+    }
+  }
+  const counts = { KEPT: rows.filter(row => row.verdict === 'CORRECT' && !row.previousUrl).length, REPLACED: rows.filter(row => row.verdict === 'CORRECT' && row.previousUrl && row.previousUrl !== row.currentImageUrl).length, REMOVED: rows.filter(row => row.verdict !== 'CORRECT').length };
+  lines.splice(1, 0, '', `**Headline:** ${rows.length} catalogue images audited; ${counts.KEPT} kept, ${counts.REPLACED} replaced, ${counts.REMOVED} removed.`, '');
+  lines.push('', `**Verdict totals:** ${counts.KEPT} KEPT, ${counts.REPLACED} REPLACED, ${counts.REMOVED} REMOVED.`, '');
   return lines.join('\n');
 }
 function renderVerificationScript(rows) {
-  const byPlace = Object.fromEntries(rows.map(row => [row.place, row]));
-  return `(function(root){'use strict';const rows=${JSON.stringify(byPlace)};for(const place of root.DESTINATIONS||[]){const row=rows[place.name];if(!row)continue;place.photoAudit={verdict:row.verdict,evidence:row.evidence};if(row.verdict!=='CORRECT')continue;place.image='';place.alt=row.altText;place.photo={url:row.currentImageUrl,source:row.sourcePage,credit:row.photographer,license:row.license,licenseUrl:row.licenseUrl,alt:row.altText};}})(typeof window!=='undefined'?window:globalThis);\n`;
+  const byPlace = Object.create(null), seen = new Map();
+  for (const row of rows) {
+    if (row.verdict !== 'CORRECT' || !row.currentImageUrl || !row.sourcePage || !row.photographer || !row.license || !row.altText) {
+      byPlace[row.place] = { ...row, verdict: 'REMOVED', action: row.action || 'Removed: complete destination-specific photo verification is missing' };
+      continue;
+    }
+    const prior = seen.get(row.currentImageUrl);
+    if (prior && prior !== row.place) {
+      byPlace[row.place] = { ...row, verdict: 'REMOVED', action: `Removed: image URL is already assigned to ${prior}` };
+      continue;
+    }
+    seen.set(row.currentImageUrl, row.place);
+    byPlace[row.place] = row;
+  }
+  return `(function(root){'use strict';const rows=${JSON.stringify(byPlace)};for(const place of root.DESTINATIONS||[]){const row=rows[place.name];if(!row){place.image='';place.photo=null;continue;}place.photoAudit={verdict:row.verdict,evidence:row.evidence};place.image='';if(row.verdict!=='CORRECT'||!row.sourcePage||!row.photographer||!row.license||!row.altText){place.photo=null;continue;}const verification={verified:true,source_page:row.sourcePage,credit:row.photographer,license:row.license,alt:row.altText};place.alt=row.altText;place.photo={url:row.currentImageUrl,source:row.sourcePage,source_page:row.sourcePage,credit:row.photographer,license:row.license,licenseUrl:row.licenseUrl,alt:row.altText,verification};}})(typeof window!=='undefined'?window:globalThis);\n`;
 }
 async function run() {
   const places = loadRawDestinations(site, { includePhotoAudit: false, includeGuideStatus: false });
@@ -109,11 +129,21 @@ async function run() {
     console.log(`Checked ${Math.min(start + batch.length, candidates.length)} of ${candidates.length} Commons image pages`);
   }
   const result = places.map(place => rows.get(place.name));
+  if (fs.existsSync(auditOverrides)) {
+    const curated = JSON.parse(fs.readFileSync(auditOverrides, 'utf8'));
+    const byName = new Map((curated.rows || []).map(row => [row.place, row]));
+    for (let index = 0; index < result.length; index += 1) if (byName.has(result[index].place)) result[index] = { ...result[index], ...byName.get(result[index].place) };
+  }
   fs.writeFileSync(auditJson, `${JSON.stringify({ generatedOn: new Date().toISOString().slice(0,10), count: result.length, rows: result }, null, 2)}\n`, 'utf8');
   fs.writeFileSync(auditMarkdown, renderMarkdown(result), 'utf8');
   fs.writeFileSync(generatedScript, renderVerificationScript(result), 'utf8');
   console.log(`Wrote photo audit for ${result.length} catalogue records: ${result.filter(row=>row.verdict==='CORRECT').length} CORRECT, ${result.filter(row=>row.verdict==='UNVERIFIABLE').length} UNVERIFIABLE.`);
 }
 
-if (require.main === module) run().catch(error => { console.error(error); process.exitCode = 1; });
-module.exports = { nameCore, relevant, sourceMetadata, renderMarkdown };
+if (require.main === module && process.argv.includes('--render-existing')) {
+  const data = JSON.parse(fs.readFileSync(auditJson, 'utf8'));
+  fs.writeFileSync(auditMarkdown, renderMarkdown(data.rows), 'utf8');
+  fs.writeFileSync(generatedScript, renderVerificationScript(data.rows), 'utf8');
+  console.log(`Rendered verification data for ${data.rows.length} catalogue places.`);
+} else if (require.main === module) run().catch(error => { console.error(error); process.exitCode = 1; });
+module.exports = { nameCore, relevant, sourceMetadata, renderMarkdown, renderVerificationScript };
