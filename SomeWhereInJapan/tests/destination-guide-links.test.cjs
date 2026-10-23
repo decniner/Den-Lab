@@ -15,6 +15,16 @@ test('allDestinationCardsAndSearchResultsLinkToGuide', () => {
   for (const record of manifest.records) assert.equal(api.destinationUrl(record.name),record.url,record.name);
 });
 
+test('destination result images navigate directly to each place guide', () => {
+  const app = fs.readFileSync(path.join(site,'app.js'),'utf8');
+  assert.match(app,/const guideUrl\s*=\s*window\.GuideLinks\?\.destinationUrl\(place\.name\)/);
+  assert.match(app,/const photoLink\s*=\s*document\.createElement\('a'\)/);
+  assert.match(app,/photoLink\.href\s*=\s*guideUrl/);
+  assert.match(app,/imageWrap\.append\(photoLink/);
+  assert.doesNotMatch(app,/photoButton\.addEventListener\('click',\(\)\s*=>\s*showPlace\(place/);
+  for (const record of manifest.records) assert.ok(api.destinationUrl(record.name),record.name);
+});
+
 test('routeStopsResolveByCanonicalId', () => {
   const cityUi = fs.readFileSync(path.join(site,'city-origin-ui.js'),'utf8');
   assert.match(cityUi,/GuideLinks\?\.destinationUrl\(stop\.name\)/);

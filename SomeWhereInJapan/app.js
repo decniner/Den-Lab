@@ -474,11 +474,13 @@ function renderDestinations(announceCompletion = false) {
     }else{
       image.hidden=true;imageWrap.classList.add('image-fallback','illustrated-place');
     }
-    const photoButton = document.createElement('button');
-    photoButton.className = 'card-photo'; photoButton.type = 'button';
-    photoButton.setAttribute('aria-label', `View ${place.name} place details`);
-    photoButton.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
-    photoButton.append(image);
+    const guideUrl=window.GuideLinks?.destinationUrl(place.name);
+    const photoLink = document.createElement('a');
+    photoLink.className = 'card-photo';
+    photoLink.href = guideUrl || '#';
+    photoLink.setAttribute('aria-label', `Open the place guide page for ${place.name}`);
+    if(!guideUrl)photoLink.addEventListener('click',event=>event.preventDefault());
+    photoLink.append(image);
     const region = document.createElement('span'); region.className = 'card-region'; region.textContent = place.region;
     const number = document.createElement('span'); number.className = 'card-index'; number.textContent = String(index + 1).padStart(2, '0');
     const saveButton = document.createElement('button');
@@ -487,9 +489,9 @@ function renderDestinations(announceCompletion = false) {
     saveButton.setAttribute('aria-pressed', String(saved.has(place.name)));
     saveButton.textContent = saved.has(place.name) ? '♥' : '♡';
     saveButton.addEventListener('click', () => toggleSavedPlace(place));
-    if(place.photo?.source){const credit=document.createElement('a');credit.className='card-photo-credit';credit.href=place.photo.source;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent=place.photoAudit?.verdict==='UNVERIFIABLE'?'IMAGE / UNVERIFIED':'PHOTO / COMMONS';credit.setAttribute('aria-label',`Open photo credit and license for ${place.name}`);imageWrap.append(photoButton,credit,region,number,saveButton);}
-    else if(place.image){const credit=document.createElement('span');credit.className='card-photo-credit card-photo-credit-note';credit.textContent='ILLUSTRATIVE IMAGE';imageWrap.append(photoButton,credit,region,number,saveButton);}
-    else imageWrap.append(photoButton, region, number, saveButton);
+    if(place.photo?.source){const credit=document.createElement('a');credit.className='card-photo-credit';credit.href=place.photo.source;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent=place.photoAudit?.verdict==='UNVERIFIABLE'?'IMAGE / UNVERIFIED':'PHOTO / COMMONS';credit.setAttribute('aria-label',`Open photo credit and license for ${place.name}`);imageWrap.append(photoLink,credit,region,number,saveButton);}
+    else if(place.image){const credit=document.createElement('span');credit.className='card-photo-credit card-photo-credit-note';credit.textContent='ILLUSTRATIVE IMAGE';imageWrap.append(photoLink,credit,region,number,saveButton);}
+    else imageWrap.append(photoLink, region, number, saveButton);
     const copy = document.createElement('div'); copy.className = 'card-copy';
     const contextBadges = document.createElement('div'); contextBadges.className = 'destination-context-badges';
     if (monthSearchEnabled && getPlacesForMonth(Number(monthSelect.value)).has(place.name)) { const badge=document.createElement('span'); badge.textContent=`SEASONAL · ${MONTHS[Number(monthSelect.value)]}`; contextBadges.append(badge); }
@@ -508,7 +510,7 @@ function renderDestinations(announceCompletion = false) {
     place.tags.forEach(tag => { const pill = document.createElement('span'); pill.textContent = tag; tags.append(pill); });
     const details = document.createElement('button'); details.className = 'card-details'; details.type = 'button'; details.textContent = 'View place story'; details.setAttribute('aria-label', `View ${place.name} place story`);
     details.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
-    const fieldGuide=document.createElement('a');fieldGuide.className='card-details';fieldGuide.href=window.GuideLinks?.destinationUrl(place.name)||'#';fieldGuide.hidden=!window.GuideLinks?.destinationUrl(place.name);
+    const fieldGuide=document.createElement('a');fieldGuide.className='card-details';fieldGuide.href=guideUrl||'#';fieldGuide.hidden=!guideUrl;
     if(guideStatus==='complete')fieldGuide.textContent='Open full field guide';
     else{fieldGuide.textContent='Field notes — in progress · provisional';fieldGuide.setAttribute('aria-label',`${place.name}: provisional field notes, guide research in progress`);}
     copy.append(location, row, area, description, tags, details, fieldGuide);
