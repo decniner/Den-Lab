@@ -1073,5 +1073,18 @@ window.TADAIMA_DATA = {
       },
       "majorCautions": 1
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Matsudo": 8,
+      "Shin-Matsudo": 6,
+      "Higashi-Matsudo": 6
+    },
+    "walkBand": [
+      85,
+      60,
+      46
+    ],
+    "mapsQuery": "千葉県松戸市"
+  }
 };

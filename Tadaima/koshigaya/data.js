@@ -1052,5 +1052,20 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-22"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Koshigaya": 6,
+      "Koshigaya-Laketown": 6,
+      "Minami-Koshigaya": 8,
+      "Sengendai": 6,
+      "Shin-Koshigaya": 8
+    },
+    "walkBand": [
+      75,
+      55,
+      42
+    ],
+    "mapsQuery": "埼玉県越谷市"
+  }
 };

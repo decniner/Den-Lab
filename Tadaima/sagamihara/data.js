@@ -1142,5 +1142,18 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-22"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Hashimoto": 8,
+      "Higashi-Rinkan": 6,
+      "Sagami-Ono": 8
+    },
+    "walkBand": [
+      92,
+      74,
+      62
+    ],
+    "mapsQuery": "神奈川県相模原市"
+  }
 };

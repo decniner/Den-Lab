@@ -1045,5 +1045,19 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-18"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Funabashi": 8,
+      "Keisei-Funabashi": 8,
+      "Nishi-Funabashi": 6,
+      "Tsudanuma": 6
+    },
+    "walkBand": [
+      92,
+      68,
+      55
+    ],
+    "mapsQuery": "千葉県船橋市"
+  }
 };

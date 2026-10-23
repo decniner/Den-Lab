@@ -1035,5 +1035,19 @@
         "infoDate": "2026-10-22"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Edogawadai": 6,
+      "Minami-Nagareyama": 6,
+      "Nagareyama-Otakanomori": 8,
+      "Nagareyama-centralpark": 6
+    },
+    "walkBand": [
+      86,
+      80,
+      71
+    ],
+    "mapsQuery": "千葉県流山市"
+  }
 }

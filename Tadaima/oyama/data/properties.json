@@ -967,5 +967,17 @@
         "infoDate": "2026-10-23"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Mamada": 6,
+      "Oyama": 8
+    },
+    "walkBand": [
+      18,
+      17,
+      16
+    ],
+    "mapsQuery": "栃木県小山市"
+  }
 }

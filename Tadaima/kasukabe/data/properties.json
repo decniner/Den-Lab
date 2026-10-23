@@ -1196,5 +1196,18 @@
         "infoDate": "2026-10-21"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Ichinowari": 6,
+      "Kasukabe": 8,
+      "Takesato": 6
+    },
+    "walkBand": [
+      46,
+      42,
+      38
+    ],
+    "mapsQuery": "埼玉県春日部市"
+  }
 }

@@ -1050,5 +1050,18 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-23"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Chuo-Maebashi": 6,
+      "Maebashi": 8,
+      "Shin-Maebashi": 6
+    },
+    "walkBand": [
+      17,
+      16,
+      15
+    ],
+    "mapsQuery": "群馬県前橋市"
+  }
 };

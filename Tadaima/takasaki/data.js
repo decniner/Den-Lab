@@ -1054,5 +1054,16 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-22"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Takasaki": 8
+    },
+    "walkBand": [
+      21,
+      20,
+      18
+    ],
+    "mapsQuery": "群馬県高崎市"
+  }
 };

@@ -1079,5 +1079,17 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-22"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Higashi-Shukugo": 6,
+      "Utsunomiya": 8
+    },
+    "walkBand": [
+      30,
+      27,
+      24
+    ],
+    "mapsQuery": "栃木県宇都宮市"
+  }
 };

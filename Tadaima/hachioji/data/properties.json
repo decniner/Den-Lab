@@ -1022,5 +1022,19 @@
         "infoDate": "2026-10-23"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Hachioji": 8,
+      "Hachioji-Minamino": 6,
+      "Keio-Hachioji": 6,
+      "Minami-Osawa": 6
+    },
+    "walkBand": [
+      70,
+      58,
+      48
+    ],
+    "mapsQuery": "東京都八王子市"
+  }
 }

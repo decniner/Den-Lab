@@ -981,5 +981,19 @@
         "infoDate": "2026-10-23"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Aobadai": 6,
+      "Futamatagawa": 6,
+      "Nakayama": 6,
+      "Totsuka": 6
+    },
+    "walkBand": [
+      100,
+      90,
+      78
+    ],
+    "mapsQuery": "神奈川県横浜市"
+  }
 }

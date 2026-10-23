@@ -1054,5 +1054,19 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-19"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Fujisawa": 8,
+      "Hon-Kugenuma": 6,
+      "Shonandai": 6,
+      "Tsujido": 6
+    },
+    "walkBand": [
+      120,
+      82,
+      72
+    ],
+    "mapsQuery": "神奈川県藤沢市"
+  }
 };

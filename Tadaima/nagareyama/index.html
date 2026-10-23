@@ -8,7 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317453a'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23f7f3ea' font-family='Georgia,serif' font-weight='bold'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://decniner.github.io/Den-Lab/Tadaima/nagareyama/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tadaima! ただいま！ — Nagareyama · Houses &amp; Land Worth a Look">
+<meta property="og:description" content="Tadaima! collates houses and land for sale in Nagareyama, Chiba, and ranks them with a transparent worth-a-look score, so you can decide what's worth viewing.">
+<meta property="og:url" content="https://decniner.github.io/Den-Lab/Tadaima/nagareyama/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../shared/styles.css">
 </head>
 <body>
 <header class="site-head">
@@ -28,7 +35,7 @@
 <section class="hero">
   <div class="wrap">
     <p class="kicker">HOUSES &amp; LAND · NAGAREYAMA, CHIBA · 流山の家と土地</p>
-    <h1>Find the place<br>you'll say <em>tadaima</em> to.</h1>
+    <h1>Nagareyama <span class="jp">流山</span> — find the place<br>you'll say <em>tadaima</em> to.</h1>
     <p class="lede">Every house and lot for sale in Nagareyama that fits a simple brief — under ¥5,000万, within 15 minutes of a station — collected from Japan's listing portals and ranked by one transparent score, so you can decide what's actually worth a viewing trip. Nagareyama is the Tsukuba Express growth city — the fastest-rising market in the Tokyo belt — and its famous node is entirely above the brief: Nagareyama-Otakanomori produced zero in-brief records (houses from ¥6,980万, lots from ¥7,400万). The collection lives where the budget still works: the Tobu side around Edogawadai, the Ryutetsu old town, Centralpark and the Minami-Nagareyama fringes. Verification is strong in this edition — all 12 lots and 15 of 17 houses were checked on their listing pages; the two index-level houses say so on their cards.</p>
     <div class="stats">
       <div class="stat"><b id="statTotal">–</b><span>properties collected</span></div>
@@ -71,6 +78,12 @@
         <option value="price">Lowest price</option>
         <option value="walk">Shortest walk</option>
       </select>
+    </label>
+    <label>Layout
+      <select id="fLayout"><option value="all">All layouts</option></select>
+    </label>
+    <label>Min land
+      <select id="fMinLand"><option value="0">Any size</option><option value="100">100 m²+</option><option value="150">150 m²+</option><option value="200">200 m²+</option></select>
     </label>
     <input type="search" id="fSearch" placeholder="Search district or station…" aria-label="Search district or station">
     <button class="chip" id="fSaved">♥ Saved only</button>
@@ -115,6 +128,6 @@
 </dialog>
 
 <script src="data.js"></script>
-<script src="app.js"></script>
+<script src="../shared/app.js"></script>
 </body>
 </html>

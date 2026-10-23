@@ -939,5 +939,25 @@
       },
       "majorCautions": 1
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Kawagoe": 8,
+      "Hon-Kawagoe": 8,
+      "Kawagoeshi": 8,
+      "Shingashi": 6,
+      "Minami-Otsuka": 6,
+      "Kasumigaseki": 6,
+      "Matoba": 4,
+      "Nishi-Kawagoe": 4,
+      "Kasahata": 4,
+      "Minami-Furuya": 4
+    },
+    "walkBand": [
+      92.5,
+      57.2,
+      45.2
+    ],
+    "mapsQuery": "埼玉県川越市"
+  }
 }

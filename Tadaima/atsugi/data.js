@@ -810,5 +810,17 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-23"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Aiko-Ishida": 6,
+      "Hon-Atsugi": 8
+    },
+    "walkBand": [
+      88,
+      66,
+      50
+    ],
+    "mapsQuery": "神奈川県厚木市"
+  }
 };

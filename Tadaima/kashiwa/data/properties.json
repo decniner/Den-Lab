@@ -1024,5 +1024,17 @@
         "infoDate": "2026-10-22"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Kashiwa": 8,
+      "Kashiwanoha-Campus": 6
+    },
+    "walkBand": [
+      72,
+      70,
+      58
+    ],
+    "mapsQuery": "千葉県柏市"
+  }
 }

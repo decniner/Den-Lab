@@ -1021,5 +1021,18 @@ window.TADAIMA_DATA = {
       },
       "majorCautions": 1
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Kagohara": 6,
+      "Kami-Kumagaya": 6,
+      "Kumagaya": 8
+    },
+    "walkBand": [
+      21,
+      19,
+      18
+    ],
+    "mapsQuery": "埼玉県熊谷市"
+  }
 };

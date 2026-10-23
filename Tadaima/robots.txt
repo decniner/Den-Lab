@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://decniner.github.io/Den-Lab/Tadaima/sitemap.xml

@@ -928,5 +928,17 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-23"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Machida": 8,
+      "Tamagawagakuen-mae": 6
+    },
+    "walkBand": [
+      88,
+      70,
+      58
+    ],
+    "mapsQuery": "東京都町田市"
+  }
 };

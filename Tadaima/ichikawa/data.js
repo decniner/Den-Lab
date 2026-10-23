@@ -1062,5 +1062,20 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-22"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Gyotoku": 6,
+      "Ichikawa": 8,
+      "Ichikawa-Ono": 6,
+      "Motoyawata": 8,
+      "Myoden": 6
+    },
+    "walkBand": [
+      130,
+      90,
+      70
+    ],
+    "mapsQuery": "千葉県市川市"
+  }
 };

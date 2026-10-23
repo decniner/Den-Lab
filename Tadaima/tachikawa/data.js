@@ -1003,5 +1003,18 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-22"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Tachikawa": 8,
+      "Tamagawa-Josui": 6,
+      "Nishi-Kunitachi": 6
+    },
+    "walkBand": [
+      120,
+      85,
+      65
+    ],
+    "mapsQuery": "東京都立川市"
+  }
 };

@@ -1051,5 +1051,18 @@
         "infoDate": "2026-10-23"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Akatsuka": 6,
+      "Mito": 8,
+      "Uchihara": 6
+    },
+    "walkBand": [
+      13,
+      13,
+      12
+    ],
+    "mapsQuery": "茨城県水戸市"
+  }
 }

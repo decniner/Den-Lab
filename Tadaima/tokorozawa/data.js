@@ -967,5 +967,25 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-23"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Tokorozawa": 8,
+      "Koku-koen": 6,
+      "Shin-Tokorozawa": 6,
+      "Kotesashi": 6,
+      "Higashi-Tokorozawa": 6,
+      "Nishi-Tokorozawa": 6,
+      "Sayamagaoka": 4,
+      "Shin-Akitsu": 4,
+      "Shimoyamaguchi": 4,
+      "Seibuen": 4
+    },
+    "walkBand": [
+      88,
+      64,
+      49
+    ],
+    "mapsQuery": "埼玉県所沢市"
+  }
 };

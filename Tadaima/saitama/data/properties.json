@@ -964,5 +964,22 @@
         "infoDate": "2026-10-23"
       }
     }
-  ]
+  ],
+  "scoring": {
+    "tier": {
+      "Omiya": 8,
+      "Urawa": 6,
+      "Saitama-Shintoshin": 6,
+      "Kita-Urawa": 6,
+      "Musashi-Urawa": 6,
+      "Higashi-Omiya": 6,
+      "Minami-Urawa": 6
+    },
+    "walkBand": [
+      115,
+      88,
+      68
+    ],
+    "mapsQuery": "埼玉県さいたま市"
+  }
 }
