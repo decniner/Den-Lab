@@ -12,7 +12,7 @@ The source brief is authoritative for product requirements and research standard
 
 ## Current-state audit
 
-The active script order in `index.html` produces **310 records with 310 unique display names** across the nine regions. This is the canonical inventory count for the implementation; counts in older README/tests are stale. It includes the base catalogue, four expansion scripts, and two photo scripts.
+The active script order in `index.html` produces **310 raw records with 310 unique display names** across the nine regions. This is the input count, not yet the post-identity-review canonical count: the audit may find aliases with distinct names, and any such merge must be documented with preserved links. Counts in older README/tests are stale. The 310 inputs include the base catalogue, four expansion scripts, and two photo scripts.
 
 There are **10 city origins** and **10 corresponding city-plan records**: Sapporo, Sendai, Tokyo, Nagoya, Kyoto, Osaka, Hiroshima, Takamatsu, Fukuoka, and Naha. Their existing sequences have at least four editorial stops, but stop records do not contain coordinates or leg geometry. Eleven airport origins reuse a city plan as an access preview; they are not full airport-start itineraries.
 
@@ -143,7 +143,7 @@ Manual review records browser screenshots, console/network failures, attribution
 
 ## Acceptance reporting
 
-Report actual canonical inventory count, completed guide count, remaining count with IDs, complete city-route coverage count, independently researched variants, image/source/coordinate/geometry gaps, sitemap/page totals, tests and browser viewports checked, and links to screenshots. If session/tool limits interrupt the work, leave the manifest and batch report resumable and provide exact continuation IDs. Never claim full completion until all 310 records pass their applicable guide validator and all ten city routes pass their route validator.
+Report raw input count, post-identity-review canonical destination count, documented alias count, completed canonical guide count, remaining canonical IDs, complete city-route coverage count, independently researched variants, image/source/coordinate/geometry gaps, sitemap/page totals, tests and browser viewports checked, and links to screenshots. If session/tool limits interrupt the work, leave the manifest and batch report resumable and provide exact continuation IDs. Never claim full completion until every raw record resolves either to one validated canonical guide or to a documented alias page, and all ten city routes pass their route validator.
 
 ## Primary references checked for this design
 
