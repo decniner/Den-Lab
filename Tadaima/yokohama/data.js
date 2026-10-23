@@ -131,14 +131,13 @@ window.TADAIMA_DATA = {
         "Elementary school 1 min away per listing — strong family location"
       ],
       "cautions": [
-        "Top of the budget with almost no headroom",
-        "Index-level only; total-unit count and completion timing not shown"
+        "Top of the budget with almost no headroom"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/area_kanagawa/14116/017.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/4/14116/1528950003416/152895/x41528950003416.html",
+        "verified": "detail",
+        "infoDate": "2026-10-24"
       }
     },
     {
@@ -180,7 +179,7 @@ window.TADAIMA_DATA = {
       "district": "Akuwa-higashi 1",
       "districtJa": "阿久和東1丁目",
       "title": "Used 3LDK (2022) — near-new, two stations within walking distance",
-      "priceMan": 3980,
+      "priceMan": 3880,
       "priceFrom": false,
       "landM2": 87.82,
       "buildingM2": 83.21,
@@ -203,8 +202,8 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14114&pu=4000&ol=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/14114/1256150013713/125615/x41256150013713.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -247,11 +246,11 @@ window.TADAIMA_DATA = {
       "district": "Hongo 1",
       "districtJa": "本郷1丁目",
       "title": "Used 3LDK (2002) with roof balcony — house-maker build, corner lot",
-      "priceMan": 3499,
+      "priceMan": 3199,
       "priceFrom": false,
       "landM2": 86.09,
       "buildingM2": 66.96,
-      "layout": "3LDK",
+      "layout": "3DK",
       "station": "Seya",
       "stationJa": "瀬谷",
       "line": "Sotetsu Main Line",
@@ -269,8 +268,8 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14114&lc%5B%5D=14117&lc%5B%5D=14112&lc%5B%5D=14116&lc%5B%5D=14107&lc%5B%5D=14102&lc%5B%5D=14108&lc%5B%5D=14111&lc%5B%5D=14109&lc%5B%5D=14115&lc%5B%5D=14118&lc%5B%5D=14101&lc%5B%5D=14110&lc%5B%5D=14104&lc%5B%5D=14103&lc%5B%5D=14106&lc%5B%5D=14113&lc%5B%5D=14105&ut%5B%5D=124_125&ut%5B%5D=097&ut%5B%5D=016&la_l=70",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14114/030Z20466311/006050878/x1030Z20466311.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -280,7 +279,7 @@ window.TADAIMA_DATA = {
       "district": "Sasanodai 4",
       "districtJa": "笹野台4丁目",
       "title": "Used 3LDK (1994) renovated with garden and sunroom — 149m2 lot",
-      "priceMan": 3380,
+      "priceMan": 3290,
       "priceFrom": false,
       "landM2": 149.56,
       "buildingM2": 77.67,
@@ -299,14 +298,16 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "32 years old — post-renovation structure still 1994",
-        "Price differs across portal feeds (¥3,299万 in one feed vs ¥3,380万 here) — confirm current price"
+        "Land area includes a 48.21m2 sloping portion (傾斜部分) of the 149.56m2 — effective flat land is smaller",
+        "Land area includes 29.84m2 of private road (私道面積)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen_kanagawa/361.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14112/030Z21535513/061188002/x1030Z21535513.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h09",
@@ -314,7 +315,7 @@ window.TADAIMA_DATA = {
       "district": "Sakuradai",
       "districtJa": "桜台",
       "title": "Used 3LDK (1985) on a 204m2 hilltop lot — renovated, view and light",
-      "priceMan": 3790,
+      "priceMan": 3499,
       "priceFrom": false,
       "landM2": 204.24,
       "buildingM2": 90.79,
@@ -333,14 +334,16 @@ window.TADAIMA_DATA = {
       "cautions": [
         "41 years old — the oldest in the set; budget for ongoing maintenance",
         "Hilltop/high-ground site in Yokohama's hills — check slope, retaining walls and hazard maps on site",
-        "Walk is exactly at the 15-min limit"
+        "Walk is exactly at the 15-min limit",
+        "Cliff-site building restrictions confirmed on the detail page: 崖下につき建築制限有・崖上につき建築制限有・接道と段差有 — the plot may be subject to Yokohama's cliff ordinance (横浜市がけ条例), so rebuilding may face placement restrictions and retaining-wall (擁壁) work"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/special/3004/area_kanagawa/14117.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14117/030Z21054983/061188002/x1030Z21054983.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h10",
@@ -717,14 +720,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Very small plot at 56.58m² — house plan and parking will be tightly constrained",
-        "No major caution stated on the index listing — verify road frontage, hazard zone and survey status before viewing"
+        "Setback required (セットバック要, stated in the detail page's 特記事項) — part of the 56.58m2 will be lost to road widening, on top of the plot's small size"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/tochi/special/4002/area_kanagawa/14112.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14112/030Z21246120/116840001/x1030Z21246120.html",
+        "verified": "detail",
+        "infoDate": "2026-10-21"
+      },
+      "majorCautions": 1
     },
     {
       "id": "l05",
@@ -831,8 +835,8 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_kanagawa/14116.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14116/030Z22002474/157797001/x1030Z22002474.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -868,8 +872,8 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_kanagawa/14116.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14116/030Z20978449/182635001/x1030Z20978449.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },

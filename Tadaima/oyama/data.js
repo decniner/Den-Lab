@@ -47,14 +47,17 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Listing copy elsewhere on the same page says a 9-minute walk — scored here on the 8 minutes in its data table",
-        "Seen on a portal index page — verify details on the listing link"
+        "Neighbour's boundary-wall foundation encroaches ~10cm onto the plot's east boundary",
+        "Sold as-is (現況引渡)",
+        "District-plan / Landscape Act restrictions incl. height limit and 1.0m wall setback"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/20568606.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
     },
     {
       "id": "h02",
@@ -79,13 +82,13 @@ window.TADAIMA_DATA = {
         "All rooms 6 tatami or larger; seismic-damping high-performance build; one of 6 units"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Other restrictions noted on the detail page: Cultural Properties Protection Act and Landscape Act"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/78003195.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -112,14 +115,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Portal feeds disagree on the walk (12 min here, 13–14 min on LIFULL HOME'S) — verify on the ground",
-        "Seen on a portal index page — verify details on the listing link"
+        "Site lies in the Sengen-Higashi buried cultural-property area (文化財保護法・浅間東遺跡); Landscape Act and Farmland Act notification also noted on the page"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/21468280.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
     },
     {
       "id": "h04",
@@ -129,7 +133,7 @@ window.TADAIMA_DATA = {
       "title": "New development from ¥2,760万 (Grandy House Gran Crest Mamada-eki Minami II)",
       "priceMan": 2760,
       "priceFrom": true,
-      "landM2": 204.88,
+      "landM2": 204.98,
       "buildingM2": 114.27,
       "layout": "3LDK",
       "station": "Mamada",
@@ -145,14 +149,17 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Price is 'from' — units run to ¥3,010万; layouts run 3LDK to 4LDK+S and buildings 114.27–119.13m², so the unit at this price differs from the largest figures",
-        "Seen on a portal index page — verify details on the listing link"
+        "zoning is 市街化調整区域 (urbanisation-control area; sale via development permission — rebuilding/extensions restricted)",
+        "Power lines cross above lots 8, 9, 17, 33, restricting building placement",
+        "1.0m wall setback required"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/20620006.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
     },
     {
       "id": "h05",
@@ -178,12 +185,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Power lines pass over the lots",
+        "1.0m wall setback (Momijiyama district plan)"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/159/2159300.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/77958843.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -243,13 +251,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Built May 1963 — pre-1981 seismic standard; at this age the structure contributes little, so judge it mainly as land + location",
-        "Small 89.9m² plot",
-        "Seen on a portal index page — verify details on the listing link"
+        "Small 89.9m² plot"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/101/2101080.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/09208/030Z21216097/177142001/x1030Z21216097.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -259,7 +266,7 @@ window.TADAIMA_DATA = {
       "district": "Hanagaki-cho 2",
       "districtJa": "花垣町2丁目",
       "title": "Used 3LDK (1976) at ¥350万 — no-rebuild, defect liability waived, experts only",
-      "priceMan": 350,
+      "priceMan": 320,
       "priceFrom": false,
       "landM2": 171.27,
       "buildingM2": 92.79,
@@ -281,12 +288,12 @@ window.TADAIMA_DATA = {
         "Feeds disagree on the land area: the index headline says 171.27m² while the listing text says 223.53m² including a 52.26m² flag-pole strip — the effective plot is ~171.27m²; price the land accordingly",
         "Portal feeds disagree on the price (¥320万–¥420万 across feeds) — ¥350万 is the figure on this page",
         "West-side district toward the Omoi River — check the Oyama City flood hazard map before viewing",
-        "Seen on a portal index page — verify details on the listing link"
+        "Landscape Act (景観法) restriction noted in the detail page remarks"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/ensen/110/2110010.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/09208/030Z20759173/177142001/x1030Z20759173.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 2
@@ -315,12 +322,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "1988 structure at a 1988 price — the low asking price suggests condition or other issues the index page does not explain; inspect carefully",
-        "Seen on a portal index page — verify details on the listing link"
+        "Remarks note the plot is in a land-development regulation zone (宅地造成工事規制区域)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/101/2101075.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/09208/030Z21983085/004602031/x1030Z21983085.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -350,14 +357,13 @@ window.TADAIMA_DATA = {
         "Built Oct 1978 — pre-1981 seismic standard",
         "The listing flags disclosure items (告知事項あり) and, per the SUUMO feed text, is sold in current condition with defect liability waived and areas per the public record (現況有姿・契約不適合免責・公簿売買) — experts only",
         "Very small 76.45m² plot and parking for only 1 car (size-dependent)",
-        "Portal feeds disagree on the price (¥480万 here, ¥500万 on another feed)",
-        "Seen on a portal index page — verify details on the listing link"
+        "Portal feeds disagree on the price (¥480万 here, ¥500万 on another feed)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3002/ensen/101/2101075.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/09208/1421600002725/142160/x41421600002725.html",
+        "verified": "detail",
+        "infoDate": "2026-10-16"
       },
       "majorCautions": 2
     },
@@ -385,13 +391,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Portal feeds disagree on the walk (7 min here, 12 min on LIFULL HOME'S) and on the layout (3LDK after renovation here, 5DK on LIFULL) — scored here on this page's figures; verify on the ground",
-        "Compact 73.7m² building despite the 5DK origins",
-        "Seen on a portal index page — verify details on the listing link"
+        "Compact 73.7m² building despite the 5DK origins"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3002/ensen/101/2101075.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/09208/1498170002996/149817/x41498170002996.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -450,13 +455,11 @@ window.TADAIMA_DATA = {
         "Large 116.8m² house on a 198m² corner plot in a quiet residential street",
         "Supermarket within 800m; carport fitted"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/chuko/tochigi/mamada_00934-st/list/",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/09208/1546220000122/154622/x41546220000122.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -484,13 +487,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Portal feeds disagree on the price: ¥1,369万 on this page, ¥1,399万 on LIFULL HOME'S for the same house",
-        "The structure is from Feb 1982 despite the 2026 renovation — check what the works actually covered",
-        "Seen on a portal index page — verify details on the listing link"
+        "The structure is from Feb 1982 despite the 2026 renovation — check what the works actually covered"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/101/2101075.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/09208/030Z79162292/189549004/x1030Z79162292.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -593,14 +595,19 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Commercial zoning (商業地域) in the station-front district — central and flexible, but not a quiet residential street",
         "Portals disagree on the walk: 7 min on one goo feed, 9 min on another — 9 min used here",
-        "Seen on a portal index page — verify details on the listing link"
+        "Buried cultural property: an enquiry to Oyama City about trial excavation is required before any digging (文化財保護法 listed in 法令等制限)",
+        "Plot is currently leased out to a farm-machinery shop as a car park, despite the listing showing 更地 / immediate handover",
+        "Water supply must be newly drawn into the plot (shared or individual connection required)",
+        "An unusable old well sits on the plot",
+        "Landscape Act and quasi-fire zone (準防火地域) restrictions also listed"
       ],
       "source": {
         "name": "OCN不動産 (goo住宅・不動産)",
-        "url": "https://house.ocn.ne.jp/sp/tochi/ensen/108/2108010.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1176020012383/117602/x41176020012383.html",
+        "verified": "detail",
+        "infoDate": "2026-10-12"
+      },
+      "majorCautions": 2
     },
     {
       "id": "l03",
@@ -608,7 +615,7 @@ window.TADAIMA_DATA = {
       "district": "Mitsumine 1",
       "districtJa": "三峯1丁目",
       "title": "171m² vacant plot 10 minutes from Oyama at the lowest ¥/tsubo near the station",
-      "priceMan": 390,
+      "priceMan": 330,
       "priceFrom": false,
       "landM2": 171.9,
       "buildingM2": null,
@@ -630,14 +637,15 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Price conflict on the same index page: the identical 171.9m² plot is also listed at ¥480万 by another feed — confirm which price is current before relying on ¥390万",
         "Check the Oyama City hazard map for Omoi River (思川) / Tagawa (田川) flood-inundation zones before purchase — not confirmed on the index page",
-        "Seen on a portal index page — verify details on the listing link"
+        "only frontage is a 1.8m path (NE side) and a setback is required (セットバック要) — vehicle access and rebuilding are constrained; the agent markets the plot for materials storage (資材置き場)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tochigi/09208/108.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09208/030Z78139374/177142001/x1030Z78139374.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "l04",
@@ -645,7 +653,7 @@ window.TADAIMA_DATA = {
       "district": "Ekihigashi-dori 3",
       "districtJa": "駅東通り3丁目",
       "title": "Sekisui House subdivision plot 12 minutes from Oyama — building condition attached",
-      "priceMan": 1890,
+      "priceMan": 1998,
       "priceFrom": false,
       "landM2": 173.96,
       "buildingM2": null,
@@ -660,20 +668,23 @@ window.TADAIMA_DATA = {
       "zoning": "第1種住居地域",
       "coverageFar": "60% / 200%",
       "highlights": [
-        "Planned subdivision (コモンステージ小山駅東通り3丁目III) — 3 of 7 plots on sale",
+        "Planned subdivision (コモンステージ小山駅東通り3丁目III) — only 1 of 7 plots left",
         "Shinkansen hub station — Tokyo in about 42 minutes"
       ],
       "cautions": [
         "Building condition attached (建築条件付) — you must build with Sekisui House",
-        "Price and area are ranges across plots (¥1,890万〜1,998万 / 173.96〜247.14m²); this record uses the cheapest, smallest plot",
-        "Seen on a portal index page — verify details on the listing link"
+        "Only 1 of 7 lots remains on sale — the ¥1,890万 entry-level lot has sold; the last lot (173.96m²) is ¥1,998万",
+        "Land sale takes effect only if a building contract with Sekisui House is concluded within 3 months of the land contract, otherwise the sale is void (deposit refunded)",
+        "Subdivision townscape guideline (まちなみガイドライン) applies",
+        "Water connection fee ¥150,700 (20mm) payable; restrictions listed: Landscape Act, Urban Renaissance Special Measures Act, Embankment Regulation Act, Farmland Act (land registered 畑, now residential)"
       ],
       "source": {
         "name": "goo住宅・不動産 (OCN feed)",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6009/ensen/108/2108020.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/77804956.html",
+        "verified": "detail",
+        "infoDate": "2026-10-18"
+      },
+      "majorCautions": 1
     },
     {
       "id": "l05",
@@ -702,12 +713,12 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Building condition attached (建築条件付)",
         "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost and effort on the buyer",
-        "Seen on a portal index page — verify details on the listing link"
+        "a Building Standards Act Art. 43(2)(ii) permit is required to build/rebuild (建築基準法43条2項第2号の許可要)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tochigi/09208/108.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09208/030Z21086791/188521001/x1030Z21086791.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 2
@@ -739,13 +750,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "MAJOR: the agent's own text ends with 【建築不可】 (building not possible) — do not treat this as a buildable residential lot unless the agent confirms buildability in writing; likely a permit/road-access defect behind the wording",
-        "Contradictory listing copy (marketed as a home site, then flagged 建築不可) — written confirmation essential",
-        "Seen on a portal index page — verify details on the listing link"
+        "Contradictory listing copy (marketed as a home site, then flagged 建築不可) — written confirmation essential"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tochigi/09208/103.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1546220000143/154622/x41546220000143.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 2
@@ -776,13 +786,11 @@ window.TADAIMA_DATA = {
         "No building conditions",
         "No building condition (建築条件なし) — choose your own builder"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/101/2101075.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09208/030Z78999394/175288001/x1030Z78999394.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -792,7 +800,7 @@ window.TADAIMA_DATA = {
       "district": "Akatsuki 3",
       "districtJa": "暁3丁目",
       "title": "Seller-listed 198m² plot 6 minutes from Mamada, immediate handover",
-      "priceMan": 680,
+      "priceMan": 630,
       "priceFrom": false,
       "landM2": 198.34,
       "buildingM2": null,
@@ -812,12 +820,12 @@ window.TADAIMA_DATA = {
         "No building condition (建築条件なし) — choose your own builder"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Landscape Act (景観法) included in the page's 法令等制限"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4002/ensen/101/2101075.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1222800003758/122280/x41222800003758.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -847,14 +855,16 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Building condition attached (建築条件付) — builder is designated by the seller",
-        "Seen on a portal index page — verify details on the listing link"
+        "Plot lies in the Otome Kitaura buried cultural-property site (文化財保護法・乙女北浦遺跡) — trial excavation may be required",
+        "Land is registered as farmland (地目：畑) — Farmland Act procedures apply; Landscape Act also listed"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/tochi/area_tochigi/09208/109.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1176020017867/117602/x41176020017867.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
     },
     {
       "id": "l10",
@@ -883,14 +893,16 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Oversized for a single house — price reflects the full 672m²; check subdivision/development-permit implications if splitting",
-        "Seen on a portal index page — verify details on the listing link"
+        "Land is registered as farmland (地目：畑) — Farmland Act notification required (農地法届出が必要です)",
+        "No water/sewer connections drawn into the plot (上下水道の敷地内取出しなし) — connection costs fall on the buyer"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4001/ensen/159/2159300.html?p=2",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1498120000085/149812/x41498120000085.html",
+        "verified": "detail",
+        "infoDate": "2026-10-17"
+      },
+      "majorCautions": 1
     },
     {
       "id": "l11",
@@ -919,13 +931,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Near-commercial zoning (近隣商業地域) and a quasi-fire zone (準防火区域) — fire-code construction costs apply",
-        "Register-based sale (公簿売買) across two lot numbers (1159-2: 199.94m² + 1161-2: 251.56m²) — no measured-area guarantee",
-        "Seen on a portal index page — verify details on the listing link"
+        "Register-based sale (公簿売買) across two lot numbers (1159-2: 199.94m² + 1161-2: 251.56m²) — no measured-area guarantee"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/101/2101075.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/09208/030Z20809183/141466001/x1030Z20809183.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -957,13 +968,12 @@ window.TADAIMA_DATA = {
       "cautions": [
         "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
         "Tight low-rise controls (40% coverage / 60% FAR) on a small 100.43m² plot — house plus parking will be tight",
-        "At the brief's walk limit (15 min)",
-        "Seen on a portal index page — verify details on the listing link"
+        "At the brief's walk limit (15 min)"
       ],
       "source": {
         "name": "OCN不動産 (goo住宅・不動産)",
-        "url": "https://house.ocn.ne.jp/sp/tochi/area_tochigi/09208/024.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/sp/tochi/detail/4/1421580001658/142158/x41421580001658.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     }

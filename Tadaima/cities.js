@@ -835,8 +835,8 @@ window.TADAIMA_CITIES = [
       "houses": 15,
       "land": 12
     },
-    "fromHouseMan": 350,
-    "fromLandMan": 390,
+    "fromHouseMan": 320,
+    "fromLandMan": 330,
     "stations": [
       "Mamada",
       "Oyama"

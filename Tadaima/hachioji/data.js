@@ -64,13 +64,15 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Price is 'from' — units run to ¥4,380万; figures shown are the smallest/cheapest unit in the range",
         "Komiya area sits in the Asa River (浅川) / Tama River lowland fringe — check the city hazard map for flood depth",
-        "Seen on a portal index page — verify details on the listing link"
+        "Komiya district plan (地区計画) applies to the development",
+        "10m height limit and shadow regulation (日影制限) apply",
+        "Landscape Act / Aviation Act controls and a land-development regulation zone (宅地造成工事規制区域) are listed on the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6002/area_tokyo/13201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/21264658.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -100,14 +102,15 @@ window.TADAIMA_DATA = {
         "Price is 'from' — units run to ¥4,099万; figures shown are the smallest/cheapest unit in the range",
         "Near the 15-minute walk limit of this collection",
         "Ishikawa-machi is lowland near the Asa River (浅川) — check the city hazard map",
-        "Seen on a portal index page — verify details on the listing link"
+        "the detail page discloses a death in an old well on land adjoining lots 4–5 (50+ years ago) and a grave on lot 20 — a psychological-defect disclosure (告知事項) the record lacked"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6002/area_tokyo/13201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/20852203.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
     },
     {
       "id": "h03",
@@ -135,13 +138,15 @@ window.TADAIMA_DATA = {
         "Two prices remain (¥3,980万 / ¥4,150万) — ¥3,980万 is the cheaper unit; building/land shown are the smaller figures",
         "At the 15-minute walk limit of this collection",
         "Lowland near the Asa River (浅川) — check the city hazard map",
-        "Seen on a portal index page — verify details on the listing link"
+        "The solar system is a 10-year Tokyo Gas service contract (IGNITURE flat plan, ¥5,400/mo unless subsidised), not owned panels",
+        "Price includes a 1/7 share of a 113.74㎡ private road",
+        "Land category (地目) is still registered as farmland (畑); 農地法 is listed on the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6002/area_tokyo/13201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/21050768.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -159,7 +164,7 @@ window.TADAIMA_DATA = {
       "stationJa": "山田",
       "line": "Keio Takao Line",
       "lineJa": "京王高尾線",
-      "walkMin": 6,
+      "walkMin": 7,
       "built": "New build",
       "ageYears": 0,
       "highlights": [
@@ -169,15 +174,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Price is 'from' — units run to ¥4,480万; figures shown are the smallest/cheapest unit in the range",
-        "Portal feeds disagree on the walk (6 vs 7 min) — scored here on 6 per the seller listing; verify on the ground",
         "Hillside edge of the Yokoyama hills — check retaining walls and slope on site",
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — completion scheduled March 2027",
+        "Price includes a 1/14 share of a 237.60㎡ private road"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6002/area_tokyo/13201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/21902100.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -205,13 +210,15 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Land (99.4m²) is compact for western Hachioji — the house, not the plot, carries the value",
         "Near the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Zoning is quasi-industrial (準工業地域, 60%/200%), not purely residential",
+        "Plot is flagged irregular-shaped (不整形地) and subject to a building agreement (建築協定)",
+        "Front road is a 42条2項 road; setback already completed"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6002/area_tokyo/13201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/20039265.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -239,13 +246,14 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Lowland near the Asa River (浅川) — check the city hazard map for flood depth before viewing",
-        "Seen on a portal index page — verify details on the listing link"
+        "Gas is individual LPG (propane), not city gas",
+        "Not yet built — completion scheduled December 2026"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6016/area_tokyo/13201/004.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/Z/21946167.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -273,13 +281,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Part of the plot falls in a 60% / 200% coverage-FAR zone per the listing — confirm zoning split before assuming a rebuild footprint",
-        "Lowland near the Asa River (浅川) — check the city hazard map",
-        "Seen on a portal index page — verify details on the listing link"
+        "Lowland near the Asa River (浅川) — check the city hazard map"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21871100/006050903/x1030Z21871100.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -341,14 +348,17 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Hillside area — check retaining walls and the approach slope on site",
-        "Seen on a portal index page — verify details on the listing link"
+        "Boundary encroachment exists (越境有り — an agreement has been obtained)",
+        "Plot area includes 19.5㎡ of private road",
+        "The only recorded renovation is a July 2026 gas hob exchange — much lighter than a full renovation"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21614671/164755001/x1030Z21614671.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h10",
@@ -375,13 +385,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "1994 structure — the 2019 works were exterior only, per the listing; budget for interior ageing",
-        "Compact 85.7m² plot; parking depends on car size",
-        "Seen on a portal index page — verify details on the listing link"
+        "Compact 85.7m² plot; parking depends on car size"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21758222/006050903/x1030Z21758222.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -409,13 +418,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Compact 72.1m² building despite the 3SLDK label — check room sizes on the plan",
-        "Listing photos use AI virtual staging — the house is sold unfurnished, as-is (現況有姿)",
-        "Seen on a portal index page — verify details on the listing link"
+        "Listing photos use AI virtual staging — the house is sold unfurnished, as-is (現況有姿)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21798556/129388001/x1030Z21798556.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -512,12 +520,13 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Top of this collection's budget — priced for size, structure and the corner lot",
         "Yudono River (湯殿川) catchment — check the city hazard map",
-        "Seen on a portal index page — verify details on the listing link"
+        "A district plan applies (南八王子地区地区計画)",
+        "Legal restrictions listed on the page include the Aviation Act, a land-development regulation zone (宅地造成工事規制区域), quasi-fire-prevention zone (準防火地域), shadow regulation and a residence-inducement zone (居住誘導区域)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21906921/030225015/x1030Z21906921.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -546,15 +555,18 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Built Feb 1973 — pre-1981 seismic standard; the value rests entirely on the documented reinforcement works — obtain the paperwork",
         "Hillside Kinugaoka estate — check retaining walls, steps and the slope on site",
-        "Seen on a portal index page — verify details on the listing link"
+        "Frontage only 2.7m on a 4m south-west road",
+        "A private-road area of 81.32㎡ is listed for the plot",
+        "Parking suits small cars only (per the listing)",
+        "Hillside plot — the 8-minute station walk is on a slope"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_tokyo/13201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z78291459/171386001/x1030Z78291459.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       },
-      "majorCautions": 1
+      "majorCautions": 2
     },
     {
       "id": "h16",
@@ -580,12 +592,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Portal feeds disagree trivially on the building area (95.64 vs 95.6m²) — recorded here as 95.64",
-        "Seen on a portal index page — verify details on the listing link"
+        "Renovation is scheduled to complete November 2026 — not yet finished at the listing date",
+        "Access road is only 2.9m wide (east side)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21891796/006928001/x1030Z21891796.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -615,12 +628,12 @@ window.TADAIMA_DATA = {
         "No building condition (建築条件なし) — choose your own builder"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Legal restrictions listed on the page: height district (高度地区), Landscape Act (景観法) and Aviation Act (航空法)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z73817631/006050903/x1030Z73817631.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -688,13 +701,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "A building stands on the land (上物有り / 古家有) — demolition cost likely on the buyer",
-        "Headline area includes sloping land (傾斜地 24.76% included); the listing gives an effective residential area of only 125.68m²",
-        "Seen on a portal index page — verify details on the listing link"
+        "Headline area includes sloping land (傾斜地 24.76% included); the listing gives an effective residential area of only 125.68m²"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21452231/000232004/x1030Z21452231.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -725,14 +737,17 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Small 60.15m² plot — house size will be tight",
-        "Seen on a portal index page — verify details on the listing link"
+        "Private-road area of 46.94㎡ — very large relative to the 60.15㎡ plot",
+        "Frontage only 4.5m on a 3.5m west road",
+        "Height-district restriction with a maximum height limit (高度地区・高さ最高限度有)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z20181049/142689022/x1030Z20181049.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "l05",
@@ -760,13 +775,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Builder condition attached (建築条件付) — you must build with the specified builder",
-        "The plot sits higher than its front road, per the listing",
-        "Seen on a portal index page — verify details on the listing link"
+        "The plot sits higher than its front road, per the listing"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21978024/000389162/x1030Z21978024.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -797,12 +811,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "A building stands on the land (上物有り) — demolition cost likely on the buyer",
-        "Seen on a portal index page — verify details on the listing link"
+        "The plot sits inside the Mejirodai district-plan housing-only zone (めじろ台地区計画 住宅専用地区)",
+        "Height-district (高度地区) restriction listed on the page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21463213/100451227/x1030Z21463213.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -821,7 +836,7 @@ window.TADAIMA_DATA = {
       "stationJa": "大塚・帝京大学",
       "line": "Tama Monorail",
       "lineJa": "多摩モノレール",
-      "walkMin": 6,
+      "walkMin": 7,
       "built": null,
       "ageYears": null,
       "zoning": "第1種低層住居専用地域",
@@ -833,14 +848,18 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Unusually large for the price — confirm shape, slope and subdivision intent on the listing",
-        "Seen on a portal index page — verify details on the listing link"
+        "land category (地目) is forest land (山林), not residential land (宅地)",
+        "Effective residential area is only ~115㎡ of the 308.36㎡ headline area",
+        "Setback applies (法令等制限: セットバック有り)",
+        "Part of the plot is retaining wall (擁壁) and a phase-2 works portion"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z20364484/008010000/x1030Z20364484.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "l08",
@@ -867,13 +886,11 @@ window.TADAIMA_DATA = {
         "Elementary school ~360m and junior high ~460m, per the listing",
         "No building condition (建築条件なし) — choose your own builder"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21271627/000232025/x1030Z21271627.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -954,7 +971,7 @@ window.TADAIMA_DATA = {
       "district": "Yagi-cho",
       "districtJa": "八木町",
       "title": "Vacant flat lot 12 minutes from Nishi-Hachioji — commercial zoning, 600% FAR",
-      "priceMan": 2980,
+      "priceMan": 4280,
       "priceFrom": false,
       "landM2": 105.89,
       "buildingM2": null,
@@ -975,12 +992,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Commercial zoning (商業地域) — flexible and central, but not a quiet residential street",
-        "Seen on a portal index page — verify details on the listing link"
+        "Fire-prevention district (防火地域) and height-district (高度地区) restrictions are listed on the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/184/2184206.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21669186/167249001/x1030Z21669186.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
