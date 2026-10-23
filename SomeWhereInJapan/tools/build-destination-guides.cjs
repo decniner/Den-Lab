@@ -51,12 +51,16 @@ function routeFor(record, placeRoutes, cityRoutes) {
     Kyushu:['fukuoka'], Okinawa:['naha']
   };
   const aliases = {
+    'Tokyo, in layers':'Tokyo Station & Marunouchi',
     'Kiyomizu-dera above Kyoto':'Kiyomizu-dera',
     'Ritsurin Garden, Takamatsu':'Ritsurin Garden',
     'Dotonbori':'Dotonbori & Hozenji Yokocho',
     'Sapporo Beer Museum':'Sapporo Beer Museum and Beer Garden',
     'Atsuta Jingu Shrine':'Atsuta Jingu',
-    'Nagoya Castle':'Nagoya Castle & Hommaru Palace'
+    'Nagoya Castle':'Nagoya Castle & Hommaru Palace',
+    'Senso-ji and Asakusa lanes':'Asakusa & Senso-ji',
+    'Sendai Castle Ruins':'Sendai Castle Site and Kenbunkan',
+    'Hiroshima, a city of peace':'Hiroshima Peace Memorial Park'
   };
   const expectedStop = normalizeName(aliases[record.name] || record.name);
   const city = (cityRoutes.routes || []).find(route =>
