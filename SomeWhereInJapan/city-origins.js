@@ -98,7 +98,7 @@ function itineraryDays(stops,availability='one'){
  if(availability==='half')return[{title:'A focused half-day ? suggested city highlights',stops:places.slice(0,2)}];
  const requested=availability==='two'?2:availability==='one'?1:Number.parseInt(availability,10);
  const dayCount=Number.isFinite(requested)?Math.max(1,Math.min(30,requested)):1;
- const days=[{title:'Suggested city highlights ? check each connection',stops:places}];
+ const days=[{title:'Suggested city highlights — check each connection',stops:places}];
  while(days.length<dayCount)days.push({title:`Flexible day ${days.length+1} ? choose places individually`,stops:[]});
  return days;
 }

@@ -12,6 +12,38 @@ const savedToggle = document.querySelector('#saved-toggle');
 const savedCount = document.querySelector('#saved-count');
 const savedNote = document.querySelector('#saved-note');
 const placeDialog = document.querySelector('#place-dialog');
+document.querySelectorAll('[data-place-count]').forEach(node => { node.textContent = DESTINATIONS.length.toLocaleString(); });
+
+function initHeroCarousel() {
+  const panel = document.querySelector('.hero-image-panel'), slidesRoot = panel?.querySelector('.hero-carousel-slides');
+  if (!panel || !slidesRoot) return;
+  const verified = DESTINATIONS.filter(place => place.photo?.url && place.photo?.source && place.photo?.credit && place.photo?.license).slice(0, 9);
+  if (!verified.length) return;
+  const slides = verified.map((place, index) => {
+    const slide = document.createElement('div'); slide.className = 'hero-carousel-slide'; slide.setAttribute('role', 'group');
+    slide.setAttribute('aria-roledescription', 'slide'); slide.setAttribute('aria-label', `${index + 1} of ${verified.length}: ${place.name}`); slide.hidden = true;
+    const image = document.createElement('img'); image.src = place.photo.url.replace('width=1100', 'width=1800'); image.alt = place.photo.alt || place.name; image.width = 1800; image.height = 1180;
+    if (index === 0) image.fetchPriority = 'high'; slide.append(image); slidesRoot.append(slide); return slide;
+  });
+  const current = panel.querySelector('.hero-slide-current'), total = panel.querySelector('.hero-slide-total');
+  const caption = panel.querySelector('.hero-slide-caption'), credit = panel.querySelector('.hero-slide-credit'), toggle = panel.querySelector('.hero-carousel-toggle');
+  let index = 0, timer = 0, playing = false; total.textContent = String(slides.length).padStart(2, '0');
+  function show(next) {
+    index = (next + slides.length) % slides.length; slides.forEach((slide, i) => { slide.hidden = i !== index; });
+    current.textContent = String(index + 1).padStart(2, '0'); caption.textContent = verified[index].name;
+    const link = document.createElement('a'); link.href = verified[index].photo.source; link.target = '_blank'; link.rel = 'noopener noreferrer';
+    link.textContent = `${verified[index].photo.credit} · ${verified[index].photo.license}`; link.setAttribute('aria-label', `Photo credit and license for ${verified[index].name}`); credit.replaceChildren(link);
+  }
+  function stop() { playing = false; window.clearInterval(timer); timer = 0; toggle.textContent = 'Start rotation'; toggle.setAttribute('aria-pressed', 'false'); }
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function start() { if (reducedMotion.matches) return; stop(); playing = true; toggle.textContent = 'Pause rotation'; toggle.setAttribute('aria-pressed', 'true'); timer = window.setInterval(() => show(index + 1), 7000); }
+  panel.querySelector('.hero-carousel-prev').addEventListener('click', () => { stop(); show(index - 1); });
+  panel.querySelector('.hero-carousel-next').addEventListener('click', () => { stop(); show(index + 1); });
+  toggle.addEventListener('click', () => playing ? stop() : start()); panel.addEventListener('mouseenter', stop); panel.addEventListener('focusin', stop);
+  const updateMotionControl = () => { toggle.disabled = reducedMotion.matches; toggle.textContent = reducedMotion.matches ? 'Rotation off' : 'Start rotation'; toggle.setAttribute('aria-pressed', 'false'); };
+  reducedMotion.addEventListener?.('change', event => { if (event.matches) stop(); updateMotionControl(); }); updateMotionControl(); show(0);
+}
+initHeroCarousel();
 let activeRegion = 'All places';
 let savedOnly = false;
 let query = '';
@@ -62,9 +94,9 @@ function renderRegionSpotlight(region) {
   copy.textContent = region === 'All places'
     ? 'Nine regions, from Hokkaido’s northern forests to Okinawa’s subtropical islands. Pick a number on the map or use the list.'
     : places[0]?.description || 'Browse the places, stories and seasonal notes in this region.';
-  link.textContent = region === 'All places' ? 'Browse all 180 places ↗' : `Explore ${places.length} ${region} places ↗`;
+   link.textContent = region === 'All places' ? `Browse all ${DESTINATIONS.length} places ↗` : `Explore ${places.length} ${region} places ↗`;
   link.href = '#destinations';
-  link.setAttribute('aria-label', region === 'All places' ? 'Browse all 180 places' : `Browse ${places.length} places in ${region}`);
+   link.setAttribute('aria-label', region === 'All places' ? `Browse all ${DESTINATIONS.length} places` : `Browse ${places.length} places in ${region}`);
   const picks = document.querySelector('#region-spotlight-picks');
   if (picks) {
     const choices = region === 'All places' ? [...new Map(DESTINATIONS.map(place => [place.region, place])).values()].slice(0, 3) : places.slice(0, 3);
@@ -72,7 +104,7 @@ function renderRegionSpotlight(region) {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'region-pick';
-      button.innerHTML = '<span></span><b></b><i aria-hidden="true">?</i>';
+      button.innerHTML = '<span></span><b></b>';
       button.querySelector('span').textContent = place.region;
       button.querySelector('b').textContent = placeDisplayName(place.name);
       button.setAttribute('aria-label', `Open the story for ${placeDisplayName(place.name)} in ${place.region}`);
@@ -199,6 +231,7 @@ const PLACE_SPOTLIGHTS = {
 
 const galleryCache = new Map();
 let placeDialogRequest = 0;
+let placeDialogTrigger = null;
 
 function placeMapSearch(queryText) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(queryText)}`;
@@ -285,6 +318,7 @@ async function loadPlaceGallery(place, requestId) {
   catch { if(requestId===placeDialogRequest) status.textContent='Photo search is temporarily unavailable. Use the photo search to browse more.'; }
 }
 function showPlace(place, index) {
+  placeDialogTrigger=document.activeElement;
   const requestId=++placeDialogRequest;
   const spotlight=PLACE_SPOTLIGHTS[place.name];
   const image=document.querySelector('#place-dialog-image');
@@ -306,8 +340,13 @@ function showPlace(place, index) {
   document.querySelector('#place-dialog-area').textContent=place.place;
   document.querySelector('#place-dialog-description').textContent=place.description;
   const fieldGuide=document.querySelector('#place-dialog-field-guide');
-  fieldGuide.href=window.GuideLinks?.destinationUrl(place.name)||'#';
-  fieldGuide.hidden=!window.GuideLinks?.destinationUrl(place.name);
+  const guideUrl=window.GuideLinks?.destinationUrl(place.name);
+  const guideStatus=window.GuideLinks?.guideStatusFor(place.name)||place.guide_status||'provisional';
+  fieldGuide.href=guideUrl||'#';
+  fieldGuide.hidden=!guideUrl;
+  document.querySelector('#place-dialog-field-guide-label').textContent=guideStatus==='complete'?'Open full field guide':'Field notes — in progress';
+  const guideBadge=document.querySelector('#place-dialog-guide-badge');guideBadge.textContent='PROVISIONAL';guideBadge.hidden=guideStatus==='complete';
+  fieldGuide.setAttribute('aria-label',guideStatus==='complete'?`Open the full field guide for ${place.name}`:`${place.name}: provisional field notes, guide research in progress`);
   document.querySelector('#place-dialog-story').textContent=placeStory(place,spotlight);
   const localDetail=LOCAL_FIND_DETAILS[place.name];
   placeDialog.classList.toggle('has-local-story',Boolean(localDetail));
@@ -373,6 +412,12 @@ function renderPlaceLocalGuide(place, spotlight) {
   );
 }
 document.querySelector('#place-dialog-close').addEventListener('click',()=>placeDialog.close());
+placeDialog.addEventListener('close',()=>{
+  placeDialogRequest+=1;
+  document.querySelector('#place-dialog-gallery-status').textContent='';
+  document.querySelector('#place-dialog-gallery').replaceChildren();
+  if(placeDialogTrigger?.isConnected)placeDialogTrigger.focus();
+});
 
 function renderDestinations(announceCompletion = false) {
   const normalized = query.trim().toLocaleLowerCase();
@@ -445,6 +490,8 @@ function renderDestinations(announceCompletion = false) {
     const contextBadges = document.createElement('div'); contextBadges.className = 'destination-context-badges';
     if (monthSearchEnabled && getPlacesForMonth(Number(monthSelect.value)).has(place.name)) { const badge=document.createElement('span'); badge.textContent=`SEASONAL · ${MONTHS[Number(monthSelect.value)]}`; contextBadges.append(badge); }
     if (LOCAL_FIND_NAMES.has(place.name)) { const badge=document.createElement('span'); badge.textContent='LOCAL FIND'; contextBadges.append(badge); }
+    const guideStatus=window.GuideLinks?.guideStatusFor(place.name)||place.guide_status||'provisional';
+    if(guideStatus!=='complete'){const badge=document.createElement('span');badge.className='guide-status-badge';badge.textContent='PROVISIONAL';contextBadges.append(badge);}
     if (contextBadges.childElementCount) copy.append(contextBadges);
     const location = document.createElement('span'); location.className = 'card-place'; location.textContent = place.region;
     const row = document.createElement('div'); row.className = 'card-title-row';
@@ -457,7 +504,9 @@ function renderDestinations(announceCompletion = false) {
     place.tags.forEach(tag => { const pill = document.createElement('span'); pill.textContent = tag; tags.append(pill); });
     const details = document.createElement('button'); details.className = 'card-details'; details.type = 'button'; details.textContent = 'View place story'; details.setAttribute('aria-label', `View ${place.name} place story`);
     details.addEventListener('click', () => showPlace(place, DESTINATIONS.indexOf(place)));
-    const fieldGuide=document.createElement('a');fieldGuide.className='card-details';fieldGuide.textContent='Open full field guide';fieldGuide.href=window.GuideLinks?.destinationUrl(place.name)||'#';fieldGuide.hidden=!window.GuideLinks?.destinationUrl(place.name);
+    const fieldGuide=document.createElement('a');fieldGuide.className='card-details';fieldGuide.href=window.GuideLinks?.destinationUrl(place.name)||'#';fieldGuide.hidden=!window.GuideLinks?.destinationUrl(place.name);
+    if(guideStatus==='complete')fieldGuide.textContent='Open full field guide';
+    else{fieldGuide.textContent='Field notes — in progress · provisional';fieldGuide.setAttribute('aria-label',`${place.name}: provisional field notes, guide research in progress`);}
     copy.append(location, row, area, description, tags, details, fieldGuide);
     card.append(imageWrap, copy);
     return card;
@@ -511,21 +560,29 @@ search.addEventListener('input', syncUnifiedSearch);
 document.querySelector('#show-more').addEventListener('click', () => { visibleLimit += 12; renderDestinations(); });
 savedToggle.addEventListener('click', () => { savedOnly = !savedOnly; updateSavedUI(); renderDestinations(); });
 document.querySelector('#share-guide').addEventListener('click', async event => {
-  const button = event.currentTarget;
-  const url = new URL(window.location.href);
-  url.searchParams.set('month', monthSelect.value);
-  url.searchParams.set('days', tripLengthSelect.value);
-  url.searchParams.set('region', journeyRegionSelect.value);
-  url.searchParams.set('style', journeyStyleSelect.value);
-  if (activeRegion !== 'All places') url.hash = `region=${encodeURIComponent(activeRegion)}`;
-  const shareData = {title: 'My Japan, my way', text: 'A season-shaped Japan shortlist, made for this trip.', url: url.href};
-  try {
-    if (navigator.share) await navigator.share(shareData);
-    else { await navigator.clipboard.writeText(url.href); button.innerHTML = 'Link copied <span>✓</span>'; setTimeout(() => { button.innerHTML = 'Share this guide <span>↗</span>'; }, 2200); }
-  } catch (error) { if (error.name !== 'AbortError') { button.innerHTML = 'Copy the page link <span>↗</span>'; } }
+  const button=event.currentTarget, status=document.querySelector('#share-status');
+  const url=new URL(window.location.href);
+  url.searchParams.set('month',monthSelect.value);url.searchParams.set('days',tripLengthSelect.value);
+  url.searchParams.set('region',journeyRegionSelect.value);url.searchParams.set('style',journeyStyleSelect.value);
+  if(activeRegion!=='All places')url.hash='region='+encodeURIComponent(activeRegion);
+  let copied=false;
+  try { if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url.href);copied=true;} } catch {}
+  if(!copied){
+    const field=document.createElement('textarea');field.value=url.href;field.setAttribute('readonly','');field.style.position='fixed';field.style.opacity='0';document.body.append(field);field.select();
+    try { copied=document.execCommand('copy'); } catch {} field.remove();
+  }
+  if(copied){
+    button.innerHTML='Link copied <span aria-hidden="true">&#10003;</span>';status.textContent='Trip link copied with your selected month, length, region and travel style.';
+    window.clearTimeout(button._shareReset);button._shareReset=window.setTimeout(()=>{button.innerHTML='Share this guide <span aria-hidden="true">&#8599;</span>';},2200);
+  }else if(navigator.share){
+    try { await navigator.share({title:'My Japan, my way',text:'A season-shaped Japan shortlist, made for this trip.',url:url.href});status.textContent='Your trip link has been shared.'; }
+    catch(error){if(error.name!=='AbortError')status.textContent='Copy is unavailable in this browser. The selected trip details are ready in the page URL.';}
+  }else{status.textContent='Copy is unavailable in this browser. The selected trip details are ready in the page URL.';}
 });
 document.addEventListener('keydown', event => {
-  if (event.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) { event.preventDefault(); search.focus(); }
+  const target = event.target;
+  const typing = target instanceof Element && (target.matches('input, textarea, select') || target.isContentEditable || target.closest('[contenteditable="true"]'));
+  if (event.key === '/' && !typing) { event.preventDefault(); search.focus(); }
   if (event.key === 'Escape' && document.activeElement === search) { search.value = ''; syncUnifiedSearch(); search.blur(); }
 });
 
@@ -571,8 +628,7 @@ if (['short','week','long'].includes(sharedPlan.get('days'))) tripLengthSelect.v
 if ([...journeyRegionSelect.options].some(option => option.value === sharedPlan.get('region'))) journeyRegionSelect.value = sharedPlan.get('region');
 if ([...journeyStyleSelect.options].some(option => option.value === sharedPlan.get('style'))) journeyStyleSelect.value = sharedPlan.get('style');
 function getPlacesForMonth(monthIndex) {
-  const expanded=DESTINATIONS.filter(place=>place.months?.includes(monthIndex+1)).map(place=>[place.name,place.seasonReason||'A seasonal place; check local conditions before visiting.']);
-  return new Set([...MONTH_GUIDE[monthIndex].places, ...MONTH_EXTRA_PLACES[monthIndex], ...expanded].map(([name]) => name));
+  return new Set((window.JapanSeasonalEligibility?.picksForMonth(DESTINATIONS,monthIndex+1)||[]).map(({place})=>place.name));
 }
 function updateMonthSearchUI() {
   const monthName = MONTHS[Number(monthSelect.value)];
@@ -606,15 +662,9 @@ function renderMonthGuide() {
   };
   document.querySelector('#trip-length-guidance').textContent = durationNotes[tripLengthSelect.value];
   const recommendationLimit = {short:9, week:18, long:30}[tripLengthSelect.value];
-  const expanded=DESTINATIONS.filter(place=>place.months?.includes(monthIndex+1)).map(place=>[place.name,place.seasonReason||'A seasonal place; check local conditions before visiting.']);
-  const picks = [...guide.places, ...MONTH_EXTRA_PLACES[monthIndex], ...expanded];
-  const uniquePicks = picks.filter((pick, index) => picks.findIndex(item => item[0] === pick[0]) === index);
+  const uniquePicks = (window.JapanSeasonalEligibility?.picksForMonth(DESTINATIONS,monthIndex+1)||[]).map(({place,reason})=>[place.name,reason]);
   let tailoredPicks = journeyStyleSelect.value === 'local'
-    ? DESTINATIONS.filter(place => LOCAL_FIND_NAMES.has(place.name)).map(place => {
-        const seasonalMatch = uniquePicks.find(([name]) => name === place.name);
-        const storyLead = LOCAL_FIND_DETAILS[place.name]?.story?.split(/[.!?]/)[0];
-        return [place.name, seasonalMatch?.[1] || (storyLead ? `${storyLead}.` : 'A quieter stop; check seasonal access before setting out.')];
-      })
+    ? uniquePicks.filter(([name]) => LOCAL_FIND_NAMES.has(name))
     : uniquePicks;
   if (journeyRegionSelect.value !== 'all') tailoredPicks = tailoredPicks.filter(([name]) => DESTINATIONS.find(place => place.name === name)?.region === journeyRegionSelect.value);
   if (journeyStyleSelect.value !== 'balanced' && journeyStyleSelect.value !== 'local') {
@@ -668,7 +718,7 @@ function renderMonthGuide() {
   const results = document.querySelector('#month-recommendations');
   if (!cards.length) {
     const empty = document.createElement('p'); empty.className = 'journey-empty';
-    empty.textContent = journeyStyleSelect.value === 'local' ? `No Local Finds are listed for ${journeyRegionSelect.value}. Try All Japan or another region.` : `No ${journeyStyleSelect.value} picks are listed for ${MONTHS[monthIndex]} in ${journeyRegionSelect.value}. Try a different month or region.`;
+    empty.textContent = `No places have a month-specific reason verified for ${MONTHS[monthIndex]} in ${journeyRegionSelect.value}. The atlas is withholding general seasonal suggestions until a month-specific rationale is recorded.`;
     results.replaceChildren(empty);
   } else results.replaceChildren(...cards);
   renderMonthRoute(routePicks, monthIndex);
@@ -676,7 +726,11 @@ function renderMonthGuide() {
 function renderMonthRoute(picks, monthIndex) {
   const section = document.querySelector('#month-route-plan');
   if (!section || section.dataset.requested !== 'true') return;
-  if (!picks.length) { section.replaceChildren(); section.hidden = true; return; }
+  if (!picks.length) {
+    const empty=document.createElement('p');empty.className='journey-empty';
+    empty.textContent=`No month-specific picks are verified for ${MONTHS[monthIndex]} yet. General seasonal inspiration is not being presented as a month-specific plan.`;
+    section.replaceChildren(empty);section.hidden=false;return;
+  }
   const heading = document.createElement('div'); heading.className = 'month-route-heading';
   const copy = document.createElement('div');
   const kicker = document.createElement('p'); kicker.className = 'month-route-kicker'; kicker.textContent = 'SEASONAL INSPIRATION - NOT A DAY PLAN';
@@ -692,7 +746,7 @@ function renderMonthRoute(picks, monthIndex) {
     if (src) { const img = document.createElement('img'); img.src = src; img.alt = place.photo?.alt || place.alt || `${place.name} in ${place.place}`; img.loading = 'lazy'; photo.append(img); }
     else { photo.classList.add('month-route-photo-missing'); photo.textContent = `Field note | ${place.place}`; }
     const meta = document.createElement('p'); meta.className = 'month-route-stop-meta'; meta.textContent = `${place.region} | ${place.place}`;
-    const name = document.createElement('h6'); name.textContent = placeDisplayName(place.name);
+    const name = document.createElement('h5'); name.textContent = placeDisplayName(place.name);
     const season = document.createElement('p'); season.className = 'month-route-season'; season.textContent = `WHY ${MONTHS[monthIndex].toUpperCase()}: ${item.reason}`;
     const story = document.createElement('p'); story.className = 'month-route-story'; story.textContent = `${place.description} ${placeStory(place, PLACE_SPOTLIGHTS[place.name])}`.trim();
     const actions = document.createElement('div'); actions.className = 'month-place-actions';
@@ -740,7 +794,6 @@ document.querySelectorAll('[data-map-region]').forEach(link => {
 const initialRegion = decodeURIComponent(window.location.hash.replace(/^#region=/, ''));
 if (REGIONS.includes(initialRegion)) { activeRegion = initialRegion; renderFilters(); renderRegionSpotlight(activeRegion); renderDestinations(); }
 else renderRegionSpotlight(activeRegion);
-document.querySelector('#place-dialog-close').addEventListener('click', () => placeDialog.close());
 placeDialog.addEventListener('click', event => { if (event.target === placeDialog) placeDialog.close(); });
 
 const menuToggle = document.querySelector('.menu-toggle');
