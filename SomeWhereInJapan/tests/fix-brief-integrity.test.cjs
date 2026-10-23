@@ -57,6 +57,16 @@ test('hero carousel has accessible controls and all nine map pins meet touch-tar
   assert.match(html, /Natural Earth 1:10m · public domain/);
 });
 
+test('mobile hero keeps the copy, carousel, and navigation inside the viewport', () => {
+  const html = read('index.html');
+  const css = read('styles.css');
+  assert.match(html, /travel month/i);
+  assert.match(html, /<strong>10<\/strong>\s*city origins/);
+  assert.match(css, /\.atlas-hero \.hero-copy\{[^}]*width:100%;min-width:0[^}]*padding-inline-start:24px/);
+  assert.match(css, /\.atlas-hero \.hero-image-panel\{[^}]*min-width:0;max-width:100%/);
+  assert.match(css, /\.site-header>\.menu-toggle\{display:flex;flex:0 0 42px/);
+});
+
 test('slash shortcut ignores selects and contenteditable fields; Tokyo tools are restricted by origin', () => {
   assert.match(read('app.js'), /matches\('input, textarea, select'\)/);
   assert.match(read('app.js'), /target\.isContentEditable/);

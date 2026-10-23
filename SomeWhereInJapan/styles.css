@@ -285,6 +285,29 @@ html{scroll-padding-top:86px}body{background:var(--paper);color:var(--ink)}.site
 @media(max-width:430px){.hero-carousel-controls{right:7px;top:7px;gap:3px}.hero-carousel-controls button{min-width:44px;min-height:44px;padding:0 7px}.hero-carousel-controls .hero-carousel-toggle{font-size:10px}.atlas-region-pin{width:46px;height:46px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.hero-carousel-slide img{animation:none!important;transition:none!important}}
 
+/* Keep the editorial hero legible and fully usable on narrow screens. */
+@media(max-width:760px){
+  .site-header{display:flex;box-sizing:border-box;gap:12px;width:100%}
+  .header-tools{margin-left:auto;flex:0 1 auto}
+  .site-header>.menu-toggle{display:flex;flex:0 0 42px;min-width:42px;position:relative;z-index:51;margin:0}
+  .atlas-hero{grid-template-columns:minmax(0,1fr);box-sizing:border-box;padding-inline:24px}
+  .atlas-hero .hero-copy{width:100%;min-width:0;max-width:570px;margin-inline:0;padding-inline-start:24px;box-sizing:border-box}
+  .atlas-hero h1{font-size:clamp(53px,14vw,76px);letter-spacing:-.055em}
+  .atlas-hero .hero-image-panel{width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+  .atlas-hero .hero-carousel-controls{right:12px;max-width:calc(100% - 24px);gap:5px}
+}
+@media(max-width:380px){
+  .site-header{gap:8px;padding-inline:14px}
+  .brand{gap:7px;font-size:8px}
+  .brand-mark{width:25px;height:25px}
+  .header-tools{gap:4px}
+  .header-saved{padding-inline:8px}
+  .header-saved span{display:none}
+  .atlas-hero{padding-inline:20px}
+  .atlas-hero .hero-copy{padding-inline-start:20px}
+  .atlas-hero h1{font-size:52px}
+}
+
 /* Minimum contrast corrections for atlas body and muted copy */
 .atlas-title-row>p{color:#59635c}.map-deck{color:#5f5d54}.eyebrow:not(.light){color:#72543f}
 

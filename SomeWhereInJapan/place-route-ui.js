@@ -12,6 +12,22 @@ function placeIdForName(name){
  const normalized=String(name||'').trim().toLowerCase();
  return normalized==='nikko in the cedars'?'nikko-in-the-cedars':normalized==='furano in bloom'?'furano-in-bloom':null;
 }
+function primaryAction(){return document.querySelector('#route > p > a.ng-button, #route > a.ng-button');}
+function setDirectionsAction(route){
+ const link=primaryAction();if(!link)return;
+ const current=new URL(link.href,document.baseURI),fallback=current.searchParams.get('destination')||document.querySelector('#route h2')?.textContent||document.title;
+ const legs=route?.legs||[],stops=[...(route?.stops||[])].sort((a,b)=>(a.order||0)-(b.order||0));
+ const modes=[...new Set(legs.map(leg=>leg.mode==='walking'?'walking':leg.mode==='driving'?'driving':'transit'))];
+ let href,label;
+ if(stops.length>=2&&legs.length&&modes.length===1&&modes[0]!=='walking'&&stops.length<=4){
+  const point=stop=>`${stop.address||stop.name}, ${stop.area||'Japan'}, Japan`,params=new URLSearchParams({api:'1',origin:point(route.origin||stops[0]),destination:point(stops.at(-1)),travelmode:modes[0]}),middle=route.origin?stops.slice(0,-1):stops.slice(1,-1);
+  if(middle.length)params.set('waypoints',middle.map(point).join('|'));
+  href=`https://www.google.com/maps/dir/?${params}`;label=modes[0]==='driving'?'Open driving route in Google Maps':'Open public transport route in Google Maps';
+ }else if(stops.length>=2&&legs.length){href='#route-map';label='View mapped route and leg directions';}
+ else{href=`https://www.google.com/maps/dir/?${new URLSearchParams({api:'1',destination:fallback})}`;label='Get directions to this place in Google Maps';}
+ link.href=href;link.textContent=label;link.removeAttribute('target');link.removeAttribute('rel');
+ if(href.startsWith('https://')){link.target='_blank';link.rel='noopener noreferrer';}
+}
 async function mountDialog(placeName){
  const details=document.querySelector('#place-dialog-route-details'),host=document.querySelector('#place-dialog-route-map');
  if(!details||!host)return;
@@ -25,7 +41,8 @@ async function mountDialog(placeName){
  details._cleanup=()=>{observer.disconnect();controller?.destroy();controller=null;};
 }
 async function mountGuide(){
- const host=document.querySelector('[data-place-route-guide]');if(!host)return;
+ const host=document.querySelector('[data-place-route-guide]');
+ if(!host){setDirectionsAction(null);return;}
  const kind=host.dataset.routeKind||'place',id=host.dataset.routeId||'nikko-world-heritage-loop';
  let route=null,mapData=null;
  if(kind==='location'){
@@ -38,6 +55,7 @@ async function mountGuide(){
   const data=await placeRegistry();route=data?.routes?.find(item=>item.id===id)||data?.routes?.find(item=>item.placeId==='nikko-in-the-cedars');
   if(route)mapData=data?.maps?.[route.placeId];
  }
+ setDirectionsAction(route);
  if(!route||!mapData)return;
  const controller=mount(host,route,mapData,host.dataset.compactRouteGuide==='true'?{compactGuide:true}:{});requestAnimationFrame(()=>controller?.resize());
 }
