@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "cityIds": [
+    "sapporo",
+    "sendai",
+    "tokyo",
+    "nagoya",
+    "kyoto",
+    "osaka",
+    "hiroshima",
+    "takamatsu",
+    "fukuoka",
+    "naha"
+  ],
+  "routes": []
+}
