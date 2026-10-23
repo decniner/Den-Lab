@@ -24,7 +24,13 @@ Official references checked 2026-10-23:
 
 Sapporo has one bounded Overpass street extract, fetched 2026-10-23 from `https://overpass-api.de/api/interpreter`. The exact query and OSM base timestamp are recorded in `sapporo.geojson`; `sapporo.overpass.json` preserves the source response. The prepared source contains 3,651 selected road and pedestrian ways. The generated map is 795,398 bytes and the SVG fallback is 366,556 bytes. Both show local street context under ODbL attribution. Route connectors remain schematic stop-order illustrations, and one transfer/return time remains unknown.
 
-The other nine city maps still have no bundled street extract. Do not count them as street-context maps until their source data and generated outputs exist.
+Sendai has source-backed place points and schematic connectors but no street geometry. A public Overpass request returned coordinates from the wrong city, so that response was discarded. `sendai.geojson` intentionally has an empty feature collection; the generated map plots only the cited route points and stop-order illustrations. Do not describe it as a street-context map.
+
+The other eight city maps do not yet have bundled map sources.
+
+### Sendai source notice
+
+The Sendai route points derived from OpenStreetMap are distributed under ODbL 1.0 with visible `© OpenStreetMap contributors` attribution. The bundled `sendai.geojson` source intentionally contains no background streets. Dashed connectors are stop-order illustrations, not route navigation. Coordinate precision and the evidence for each point are recorded separately in `data/city-routes.json`.
 
 ### Sapporo source notice
 

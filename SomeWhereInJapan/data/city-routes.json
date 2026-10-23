@@ -532,6 +532,524 @@
       ],
       "allowances": [],
       "variants": {}
+    },
+    {
+      "id": "sendai-date-legacy-city-day",
+      "cityId": "sendai",
+      "title": "Sendai: market mornings, Date history, and a tree-lined finish",
+      "introduction": "Begin with a local market breakfast, then follow the one-way Loople circuit through Zuihoden, the city museum, the castle site, and Jozenji-dori. The official bus timetable supports the order and in-vehicle segments; stop visits and waits make the total day variable.",
+      "default": true,
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "sendai-station",
+        "name": "Sendai Station",
+        "address": "Sendai Station, Aoba Ward, Sendai, Japan",
+        "coordinates": {
+          "latitude": 38.2603516,
+          "longitude": 140.8823921,
+          "precision": "OSM place point near the west exit; station-wide point, not a platform entrance",
+          "sourceIds": [
+            "osm-sendai-station-point"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-sendai-24h",
+          "label": "Discover Sendai: 24 Hours in Sendai",
+          "url": "https://discoversendai.travel/must-do/24-hours-in-sendai-the-ultimate-1-day-itinerary/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Sendai Asaichi morning stop and access",
+            "Zuihoden visit window and Loople access",
+            "Sendai Castle Site visit window and Loople stop",
+            "Sendai City Museum visit window and access"
+          ]
+        },
+        {
+          "id": "official-sendai-loople",
+          "label": "Discover Sendai: Getting Around Sendai and Loople timetable",
+          "url": "https://discoversendai.travel/travel-info/getting-around-sendai/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Loople departure window and frequency",
+            "one-way stop order",
+            "scheduled in-vehicle segments",
+            "platform 16 and current published fares"
+          ]
+        },
+        {
+          "id": "official-zuihoden",
+          "label": "Zuihoden: Visitor and transportation information",
+          "url": "https://www.zuihoden.com/en/info/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "address",
+            "hours and admission",
+            "Loople access",
+            "steep approach and stairs",
+            "official contact number"
+          ]
+        },
+        {
+          "id": "official-jozenji",
+          "label": "Discover Sendai: Jozenji-dori Avenue",
+          "url": "https://discoversendai.travel/places/jozenji-dori-avenue/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "avenue history and name",
+            "zelkova promenade",
+            "seasonal color and winter illumination",
+            "local shops and restaurants"
+          ]
+        },
+        {
+          "id": "osm-sendai-route-coordinates",
+          "label": "OpenStreetMap place points via Nominatim; approximate orientation points",
+          "url": "https://www.openstreetmap.org/copyright",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station and attraction point coordinates; points are not guaranteed entrances"
+          ]
+        },
+        {
+          "id": "photo-sendai-asaichi",
+          "label": "Wikimedia Commons: Sendai Asaichi 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Sendai_Asaichi_01.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique stop photograph; author Neuropower; CC BY-SA 3.0"
+          ]
+        },
+        {
+          "id": "photo-sendai-zuihoden",
+          "label": "Wikimedia Commons: Zuiho-den 20230806.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Zuiho-den_20230806.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique stop photograph and geotagged camera point; author ??; CC BY-SA 4.0"
+          ]
+        },
+        {
+          "id": "photo-sendai-castle",
+          "label": "Wikimedia Commons: Sendai statue Date Masamune.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Sendai_statue_Date_Masamune.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique Sendai Castle Site photograph; photographer Gustave67; CC BY-SA 4.0"
+          ]
+        },
+        {
+          "id": "photo-sendai-city-museum",
+          "label": "Wikimedia Commons: Sendai city museum01s3200.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Sendai_city_museum01s3200.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique museum photograph; author 663highland; CC BY-SA 3.0"
+          ]
+        },
+        {
+          "id": "photo-sendai-jozenji",
+          "label": "Wikimedia Commons: The promenade of Jouzenji-dori Avenue.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:The_promenade_of_Jouzenji-dori_Avenue.JPG",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique avenue photograph; author Haseyu-; released to the public domain"
+          ]
+        },
+        {
+          "id": "osm-sendai-station-point",
+          "label": "OpenStreetMap Nominatim: Sendai Station point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Sendai%20Station%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station point near the west exit"
+          ]
+        },
+        {
+          "id": "osm-sendai-asaichi-point",
+          "label": "OpenStreetMap Nominatim: Sendai Asaichi point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Sendai%20Asaichi%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "market point, not a specific stall entrance"
+          ]
+        },
+        {
+          "id": "osm-sendai-city-museum-point",
+          "label": "OpenStreetMap Nominatim: Sendai City Museum point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Sendai%20City%20Museum%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "museum point, not a specific entrance"
+          ]
+        },
+        {
+          "id": "osm-sendai-castle-statue-point",
+          "label": "OpenStreetMap Nominatim: Date Masamune statue point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Date%20Masamune%20statue%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "equestrian statue point on the castle site"
+          ]
+        },
+        {
+          "id": "osm-sendai-jozenji-point",
+          "label": "OpenStreetMap Nominatim: Jozenji-dori point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Jozenji-dori%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "street point near 3-chome, not an avenue endpoint"
+          ]
+        },
+        {
+          "id": "official-loople-timetable",
+          "label": "Discover Sendai: Loople Sendai timetable PDF",
+          "url": "https://discoversendai.travel/pdf/182/loople_pamphlet.pdf",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "scheduled stop order and in-vehicle segment times used for the route outline"
+          ]
+        },
+        {
+          "id": "official-sendai-museum",
+          "label": "Discover Sendai: Sendai Museum Guide",
+          "url": "https://discoversendai.travel/places/sendai-museum-guide-experience-history-science-and-space/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "museum collection scale",
+            "former Sannomaru location",
+            "seasonal exhibition changes",
+            "special display schedule for Date Masamune armor"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "sendai-asaichi",
+          "order": 1,
+          "name": "Sendai Asaichi (Morning Market)",
+          "area": "Chuo, Aoba Ward",
+          "address": "Sendai Asaichi, Chuo, Aoba Ward, Sendai, Japan",
+          "story": "This compact market is known as the city kitchen: look for Sanriku seafood, seasonal Miyagi produce, breakfast bowls, and freshly fried croquettes. The official visitor guide places it five minutes from Sendai Station?s west exit. Go in the morning, check the day before travelling, and expect individual stalls to set their own hours; the guide lists Sundays and national holidays as closure days.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 38.2586211,
+            "longitude": 140.8785106,
+            "precision": "OSM mapped market point; not a specific stall entrance",
+            "sourceIds": [
+              "osm-sendai-asaichi-point"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sendai_Asaichi_01.jpg/1280px-Sendai_Asaichi_01.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Sendai_Asaichi_01.jpg",
+            "credit": "Neuropower",
+            "license": "CC BY-SA 3.0",
+            "alt": "Sendai Asaichi market and nearby city buildings"
+          }
+        },
+        {
+          "id": "zuihoden",
+          "order": 2,
+          "name": "Zuihoden Mausoleum",
+          "area": "Otamayashita, Aoba Ward",
+          "address": "23-2 Otamayashita, Aoba Ward, Sendai, Miyagi 980-0814, Japan",
+          "story": "Date Masamune, founder of the Sendai domain, chose this hillside as his final resting place. The richly colored mausoleum sits among cedar trees, so the visit shifts from ornate Momoyama-style detail to a quiet, shaded approach. Allow 45 to 60 minutes. The official access notes about 80 steep steps to reception and around 30 more across the grounds; visitors who need step-free access should check with the venue before making this a fixed stop. Loople?s stop is Zuihoden-mae, followed by a walk of about seven minutes.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 45,
+            "maxMinutes": 60,
+            "sourceIds": [
+              "official-sendai-24h"
+            ]
+          },
+          "coordinates": {
+            "latitude": 38.250484,
+            "longitude": 140.866539,
+            "precision": "Commons geotagged camera point within the precinct, not the ticket entrance",
+            "sourceIds": [
+              "photo-sendai-zuihoden"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Zuiho-den_20230806.jpg/1280px-Zuiho-den_20230806.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Zuiho-den_20230806.jpg",
+            "credit": "??",
+            "license": "CC BY-SA 4.0",
+            "alt": "Colorfully decorated Zuihoden Mausoleum among cedar trees"
+          }
+        },
+        {
+          "id": "sendai-city-museum",
+          "order": 3,
+          "name": "Sendai City Museum",
+          "area": "Kawauchi, Aoba Ward",
+          "address": "26 Kawauchi, Aoba Ward, Sendai, Miyagi 980-0862, Japan",
+          "story": "The museum stands on the former Sannomaru grounds of Sendai Castle and holds roughly 100,000 objects connected with the Date family and the region. Look for the story behind Date Masamune?s black-lacquered armor and the Keicho-era mission to Europe. The permanent display changes seasonally, and the armor is shown only during selected periods, so check the current exhibition before choosing this as the day?s anchor. Allow about one to one and a half hours. The Loople stop is shared with Sendai International Center.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 60,
+            "maxMinutes": 90,
+            "sourceIds": [
+              "official-sendai-24h"
+            ]
+          },
+          "coordinates": {
+            "latitude": 38.2559926,
+            "longitude": 140.8568634,
+            "precision": "OSM mapped museum point; entrance location may differ",
+            "sourceIds": [
+              "osm-sendai-city-museum-point"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Sendai_city_museum01s3200.jpg/1280px-Sendai_city_museum01s3200.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Sendai_city_museum01s3200.jpg",
+            "credit": "663highland",
+            "license": "CC BY-SA 3.0",
+            "alt": "Exterior of Sendai City Museum"
+          }
+        },
+        {
+          "id": "sendai-castle-site",
+          "order": 4,
+          "name": "Sendai Castle Site and Kenbunkan",
+          "area": "Aoba-yama, Aoba Ward",
+          "address": "Sendai Castle Site, Aoba-yama, Aoba Ward, Sendai, Japan",
+          "story": "The Honmaru occupied a hill about 130 metres above the city. From the open castle site, the view reaches across Sendai and, on clear days, toward the Pacific; the equestrian statue of Date Masamune is the landmark most visitors look for. Before walking the grounds, step into Kenbunkan, the free historical information facility, for models and displays that make the stone walls and layout easier to read. Allow about 45 to 60 minutes for the museum and castle-site walk together. Loople stops at Sendai Castle Site.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 45,
+            "maxMinutes": 60,
+            "sourceIds": [
+              "official-sendai-24h"
+            ]
+          },
+          "coordinates": {
+            "latitude": 38.2532756,
+            "longitude": 140.8567851,
+            "precision": "OSM mapped equestrian statue point on the castle site; not a bus stop",
+            "sourceIds": [
+              "osm-sendai-castle-statue-point"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sendai%20statue%20Date%20Masamune.jpg?width=1280",
+            "source": "https://commons.wikimedia.org/wiki/File:Sendai_statue_Date_Masamune.jpg",
+            "credit": "Gustave67 (photograph of work by T?ru Komuro)",
+            "license": "CC BY-SA 4.0",
+            "alt": "Equestrian statue of Date Masamune at the Sendai Castle Site"
+          }
+        },
+        {
+          "id": "jozenji-dori",
+          "order": 5,
+          "name": "Jozenji-dori Avenue",
+          "area": "Kokubuncho, Aoba Ward",
+          "address": "Jozenji-dori Avenue, Kokubuncho, Aoba Ward, Sendai, Japan",
+          "story": "End beneath the zelkova canopy on the central promenade. The avenue takes its name from a temple that no longer stands, linking the modern city back to Sendai?s founding era. In spring and summer the branches make a green tunnel; autumn turns the leaves gold, and in winter the Pageant of Starlight lights the trees. Sculptures and shops give the walk a distinctly urban feel. Loople serves the Jozenji-dori Avenue / City Hall stop. The avenue is public space, so time needed depends on how long you choose to wander.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 38.2667617,
+            "longitude": 140.8732556,
+            "precision": "OSM point on Jozenji-dori near 3-chome; not a defined endpoint",
+            "sourceIds": [
+              "osm-sendai-jozenji-point"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/The_promenade_of_Jouzenji-dori_Avenue.JPG/1280px-The_promenade_of_Jouzenji-dori_Avenue.JPG",
+            "source": "https://commons.wikimedia.org/wiki/File:The_promenade_of_Jouzenji-dori_Avenue.JPG",
+            "credit": "Haseyu-",
+            "license": "Public domain",
+            "alt": "Pedestrian promenade beneath the zelkovas of Jozenji-dori Avenue"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "station-to-asaichi",
+          "fromId": "sendai-station",
+          "toId": "sendai-asaichi",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5,
+            "sourceIds": [
+              "official-sendai-24h"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8823921,
+                38.2603516
+              ],
+              [
+                140.8785106,
+                38.2586211
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "asaichi-to-zuihoden",
+          "fromId": "sendai-asaichi",
+          "toId": "zuihoden",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8785106,
+                38.2586211
+              ],
+              [
+                140.866539,
+                38.250484
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "zuihoden-to-museum",
+          "fromId": "zuihoden",
+          "toId": "sendai-city-museum",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5,
+            "sourceIds": [
+              "official-loople-timetable"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.866539,
+                38.250484
+              ],
+              [
+                140.8568634,
+                38.2559926
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "museum-to-castle-site",
+          "fromId": "sendai-city-museum",
+          "toId": "sendai-castle-site",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5,
+            "sourceIds": [
+              "official-loople-timetable"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8568634,
+                38.2559926
+              ],
+              [
+                140.8567851,
+                38.2532756
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "castle-to-jozenji",
+          "fromId": "sendai-castle-site",
+          "toId": "jozenji-dori",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 32,
+            "maxMinutes": 32,
+            "sourceIds": [
+              "official-loople-timetable"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8567851,
+                38.2532756
+              ],
+              [
+                140.8732556,
+                38.2667617
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "jozenji-to-station",
+          "fromId": "jozenji-dori",
+          "toId": "sendai-station",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 12,
+            "maxMinutes": 12,
+            "sourceIds": [
+              "official-loople-timetable"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8732556,
+                38.2667617
+              ],
+              [
+                140.8823921,
+                38.2603516
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {}
     }
   ]
 }

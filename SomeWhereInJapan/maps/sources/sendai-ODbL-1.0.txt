@@ -1,0 +1,5 @@
+﻿Copyright (c) OpenStreetMap contributors.
+Sendai route map place points are derived from OpenStreetMap and distributed under the Open Database License 1.0 (ODbL).
+Attribution: https://www.openstreetmap.org/copyright
+License text: https://opendatacommons.org/licenses/odbl/1-0/
+The bundled Sendai map source contains no background street geometry.

@@ -3,7 +3,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 
 function prepareCityMap(cityId,inputFile,outputFile,bounds,query){
-  const raw=JSON.parse(fs.readFileSync(inputFile,'utf8'));
+  const raw=JSON.parse(fs.readFileSync(inputFile,'utf8').replace(/^\uFEFF/,''));
   const roads=new Set(['primary','secondary','tertiary','residential','unclassified','living_street','pedestrian','footway','steps','cycleway']);
   const features=[];
   for(const way of raw.elements||[]){
@@ -25,8 +25,12 @@ if(require.main===module){
   const root=path.resolve(__dirname,'..');
   const [cityId,input=path.join(root,'maps/sources/sapporo.overpass.json'),output=path.join(root,'maps/sources',`${cityId}.geojson`)]=process.argv.slice(2);
   if(!cityId)throw new Error('Usage: node tools/prepare-overpass-city-map.cjs <city-id> [input-json] [output-geojson]');
-  const sourceBounds=cityId==='sapporo'?[141.344,43.052,141.375,43.074]:null;
-  if(!sourceBounds)throw new Error(`No reviewed bounds are configured for ${cityId}`);
-  const query='[out:json][timeout:30];way["highway"](43.052,141.344,43.074,141.375);out geom;';
+  const config={
+    sapporo:{bounds:[141.344,43.052,141.375,43.074],south:43.052,west:141.344,north:43.074,east:141.375},
+    sendai:{bounds:[140.83,38.245,140.90,38.285],south:38.245,west:140.83,north:38.285,east:140.90}
+  }[cityId];
+  if(!config)throw new Error(`No reviewed bounds are configured for ${cityId}`);
+  const query=`[out:json][timeout:45];way["highway"~"^(primary|secondary|tertiary|residential|unclassified|living_street|pedestrian|footway|steps|cycleway)$"](${config.south},${config.west},${config.north},${config.east});out geom;`;
+  const sourceBounds=config.bounds;
   console.log(JSON.stringify(prepareCityMap(cityId,input,output,sourceBounds,query)));
 }
