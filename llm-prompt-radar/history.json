@@ -328,6 +328,63 @@
       "trending_score": 0.02450253639717617,
       "quality_score": 0.62,
       "last_seen": "2026-10-22"
+    },
+    "165a8535f73942b19049308ae19e085754f21c67cca022a334d88d73bc47ce2d": {
+      "normalized_prompt": "welcome one most extensive dynamic collections prompt engineering tutorials implementations available today repository serves comprehensive resource learning building sharing prompt engineering techniques ranging basic concepts advanced strategies leveraging large language models 22 hands tutorials covering everything basic prompt templates advanced techniques like chain thought self consistency tree thought prompting",
+      "source": "GitHub",
+      "original_url": "https://github.com/NirDiamant/Prompt_Engineering",
+      "author": "NirDiamant",
+      "discovery_date": "2026-10-23",
+      "publication_date": "2026-10-23",
+      "category": "Learning",
+      "model": "Not specified",
+      "observations": [
+        {
+          "timestamp": 1792734822.183987,
+          "date": "2026-10-23",
+          "engagement": 7912,
+          "velocity_per_hour": 0.44377138370071234,
+          "components": {
+            "stars": 7912
+          },
+          "positive_ratio": null,
+          "rating_count": 0
+        }
+      ],
+      "cluster_id": "51a12f3d199953542c544442",
+      "engagement_metrics": {
+        "stars": 7912,
+        "stars_per_day_since_repo_creation": 10.65,
+        "engagement_components": {
+          "stars": 7912
+        },
+        "repository": "NirDiamant/Prompt_Engineering",
+        "license": "NOASSERTION",
+        "age_hours": 17829.0,
+        "date_basis": "repository last updated; exact prompt publication date unavailable",
+        "quality_filter": "passed heuristic quality filters",
+        "component_velocity_per_hour": {
+          "stars": 0.4438
+        },
+        "velocity_basis": "first observation; total source interactions divided by item age in hours",
+        "source_velocity_per_hour": 0.4438,
+        "source_sightings": 1,
+        "duplicate_cluster_size": 1,
+        "normalized_scores": {
+          "engagement": 0.5,
+          "trending": 0.077,
+          "positive": 0.5,
+          "recency": 0.997,
+          "usefulness": 0.62
+        },
+        "composite_score": 0.481
+      },
+      "rating": null,
+      "rating_count": 0,
+      "calculated_score": 0.4807656133902651,
+      "trending_score": 0.0765793883005906,
+      "quality_score": 0.62,
+      "last_seen": "2026-10-23"
     }
   },
   "notified_clusters": {
