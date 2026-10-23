@@ -370,13 +370,13 @@
     "cotopaxijapan:9246627070140:45992675246268": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-10-15T09:15:29+09:00",
+      "sent_at": "2026-10-23T09:19:03+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-vest-mens-sale26ss?variant=45992675246268"
     },
     "cotopaxijapan:9246627659964:45992682881212": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-10-15T09:15:29+09:00",
+      "sent_at": "2026-10-23T09:19:03+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-vest-womens-sale26ss?variant=45992682881212"
     },
     "brooksrunning-co-jp:8456410333481:45733349130537": {
@@ -736,13 +736,13 @@
     "boardriders-co-jp:9779335069977:49986664071449": {
       "sale_price": "16445",
       "reference_price": "32890",
-      "sent_at": "2026-10-15T09:15:29+09:00",
+      "sent_at": "2026-10-23T09:19:03+09:00",
       "url": "https://boardriders.co.jp/products/kwt251701?variant=49986664071449"
     },
     "boardriders-co-jp:9779346080025:49986729214233": {
       "sale_price": "16445",
       "reference_price": "32890",
-      "sent_at": "2026-10-15T09:15:29+09:00",
+      "sent_at": "2026-10-23T09:19:03+09:00",
       "url": "https://boardriders.co.jp/products/twt251701?variant=49986729214233"
     },
     "boardriders-co-jp:10631291109657:52412845130009": {
@@ -783,9 +783,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-10-22",
-    "coverage_key": "e929256522749682f670cc0fd9c4adda77d6baf06be06964c13437c2d4927ed4",
-    "completed_at": "2026-10-22T09:22:17+09:00",
-    "digest_hash": "cd56ba9a43bcd30718833653db0f1049f69d113d13c7b6a7b029cc4479513b64"
+    "date": "2026-10-23",
+    "coverage_key": "51104598b77d165a5b95538970c908be9f13b507fa3ff9c0a6165b52576112c0",
+    "completed_at": "2026-10-23T09:19:03+09:00",
+    "digest_hash": "7602cf14d9edf6d2a9399b41565db4d1c6f6eec59d60b419cb0916d2d68802d9"
   }
 }
