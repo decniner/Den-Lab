@@ -95,7 +95,7 @@ naha:{title:'Naha: Ryukyu heritage to the night market streets',intro:'Start on 
 function nearbyPlaces(places,originId){const origin=ALL_ORIGINS.find(item=>item.id===originId);return origin?(places||[]).filter(place=>place.region===origin.region):[];}
 function itineraryDays(stops,availability='one'){
  const places=Array.isArray(stops)?stops:[];
- if(availability==='half')return[{title:'A focused half-day ? suggested city highlights',stops:places.slice(0,2)}];
+ if(availability==='half')return[{title:'A focused half-day · suggested city highlights',stops:places.slice(0,2)}];
  const requested=availability==='two'?2:availability==='one'?1:Number.parseInt(availability,10);
  const dayCount=Number.isFinite(requested)?Math.max(1,Math.min(30,requested)):1;
  const days=[];
