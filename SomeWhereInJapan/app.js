@@ -330,10 +330,11 @@ function showPlace(place, index) {
   image.hidden=!photoUrl;
   if(photoUrl) image.src=photoUrl;
   else image.removeAttribute('src');
-  image.alt=place.photo ? (place.photo.alt || place.alt || place.name) : (place.alt||'');
+  image.alt=place.photoAudit?.verdict==='UNVERIFIABLE' ? `Illustrative image; location not verified. ${place.photo?.alt || place.alt || place.name}` : (place.photo ? (place.photo.alt || place.alt || place.name) : (place.alt||''));
   const photoCredit=document.querySelector('#place-dialog-photo-credit');
-  photoCredit.hidden=!place.photo;
-  if(place.photo){photoCredit.href=place.photo.source;photoCredit.textContent=`Photo: ${place.photo.credit} | open file and license`;}
+  photoCredit.hidden=!photoUrl;
+  if(place.photo?.source){photoCredit.href=place.photo.source;photoCredit.textContent=place.photoAudit?.verdict==='UNVERIFIABLE'?`Illustrative image · location unverified · ${place.photo.credit||'photo source and license'}`:`Photo: ${place.photo.credit||'source and license'} · open details`;}
+  else {photoCredit.removeAttribute('href');photoCredit.textContent='Illustrative image · location unverified';}
   document.querySelector('#place-dialog-number').textContent=String(index+1).padStart(2,'0');
   document.querySelector('#place-dialog-region').textContent=`${place.region} / JAPAN FIELD GUIDE`;
   document.querySelector('#place-dialog-title').textContent=placeDisplayName(place.name);
@@ -462,7 +463,7 @@ function renderDestinations(announceCompletion = false) {
     imageWrap.dataset.title=place.name;
     const image = document.createElement('img');
     image.className = 'card-image';
-    image.alt = place.alt||'';
+    image.alt = place.photoAudit?.verdict==='UNVERIFIABLE' ? `Illustrative image; location not verified. ${place.photo?.alt || place.alt || place.name}` : (place.photo?.alt||place.alt||'');
     image.loading = index < 3 ? 'eager' : 'lazy';
     image.decoding = 'async';
     if(place.photo?.url || place.image){
@@ -484,7 +485,8 @@ function renderDestinations(announceCompletion = false) {
     saveButton.setAttribute('aria-pressed', String(saved.has(place.name)));
     saveButton.textContent = saved.has(place.name) ? '♥' : '♡';
     saveButton.addEventListener('click', () => toggleSavedPlace(place));
-    if(place.photo){const credit=document.createElement('a');credit.className='card-photo-credit';credit.href=place.photo.source;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent='PHOTO / COMMONS';credit.setAttribute('aria-label',`Open photo credit and license for ${place.name}`);imageWrap.append(photoButton,credit,region,number,saveButton);}
+    if(place.photo?.source){const credit=document.createElement('a');credit.className='card-photo-credit';credit.href=place.photo.source;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent=place.photoAudit?.verdict==='UNVERIFIABLE'?'IMAGE / UNVERIFIED':'PHOTO / COMMONS';credit.setAttribute('aria-label',`Open photo credit and license for ${place.name}`);imageWrap.append(photoButton,credit,region,number,saveButton);}
+    else if(place.image){const credit=document.createElement('span');credit.className='card-photo-credit card-photo-credit-note';credit.textContent='ILLUSTRATIVE IMAGE';imageWrap.append(photoButton,credit,region,number,saveButton);}
     else imageWrap.append(photoButton, region, number, saveButton);
     const copy = document.createElement('div'); copy.className = 'card-copy';
     const contextBadges = document.createElement('div'); contextBadges.className = 'destination-context-badges';

@@ -1,6 +1,6 @@
 # Somewhere in Japan fixes — report
 
-**Result:** The encoding, icon, count, provisional-guide, origin-scope, map-pin, carousel, modal, accessibility and responsive defects are fixed and checked. Photo integrity is improved without substituting guesses: 149 photos are source-page verified and retained; 161 unverifiable photos are removed. Seasonal month picks are safely withheld because none of the 310 records has structured month-specific rationale. The complete photo and guide research gaps remain visible below.
+**Result:** The encoding, icon, count, provisional-guide, origin-scope, map-pin, carousel, modal, accessibility and responsive defects are fixed and checked. All 310 destinations retain their photos. 149 images have source pages that identify the destination; the other 161 remain as clearly labeled illustrative photography, with existing source and credit metadata preserved. Seasonal month picks are safely withheld because none of the 310 records has structured month-specific rationale. The complete photo and guide research gaps remain visible below.
 
 ## Issue status
 
@@ -8,7 +8,7 @@
 |---|---|---|
 | P0 — text encoding corruption | **FIXED** | Repaired the five numeric ranges in `index.html`; corrected the damaged Inuyama and apostrophe strings in `destination-photo-expansion.js`; added integrity checks in `tests/fix-brief-integrity.test.cjs`. UTF-8 is declared by the HTML. The source/output scan finds zero digit-quote-digit and word-internal question-mark patterns. |
 | P0 — question-mark icon placeholders | **FIXED** | Removed the meaningless placeholder from `app.js`; repaired the city-highlight separator in `city-origins.js`; fixed the Inuyama copy. Icons used decoratively are hidden from assistive technology. The known placeholder patterns have zero matches. |
-| P0 — mismatched destination photography | **PARTIALLY FIXED** | Audited every record and added the reproducible source-page audit in `tools/audit-place-photos.cjs`, full `PHOTO_AUDIT.md`, `data/photo-audit.json` and generated `destination-photo-audit.js`. Retained 149 unique Commons images with photographer, license, source and source-derived alt text; removed 161 unverifiable images from destination cards/stories. No source page positively proved a wrong place, so none is labelled WRONG. The remaining limitation is that source metadata was checked programmatically; every image was not visually inspected. |
+| P0 — mismatched destination photography | **PARTIALLY FIXED** | Audited every record and added the reproducible source-page audit in `tools/audit-place-photos.cjs`, full `PHOTO_AUDIT.md`, `data/photo-audit.json` and generated `destination-photo-audit.js`. All 310 destination photos remain visible. 149 images have source-page evidence matching the destination and show photographer, license, and source attribution; the other 161 remain clearly labeled as illustrative, location unverified. Existing photo source and credit metadata are preserved. No source page positively proved a wrong place, so none is labelled WRONG. The remaining limitation is that source metadata was checked programmatically; every image was not visually inspected. |
 | P1 — 180 vs 310 count contradiction | **FIXED** | The catalogue has 310 unique destinations in nine regions. `app.js` now fills displayed counts from `DESTINATIONS.length`; the stale “180” copy is gone. Catalogue result counts remain computed from the filtered data. |
 | P1 — provisional guides presented as complete | **FIXED** | `tools/build-destination-guides.cjs` now emits `complete` or `provisional`, creates `destination-guide-status.js`, and updates `guide-links.js`, the cards and dialogs to show the honest state. Current status: **0 complete, 310 provisional**. The stub-page disclaimers remain. |
 | P1 — seasonal shortlist recommends unsupported months | **PARTIALLY FIXED** | `seasonal-eligibility.js` requires both the selected month and a month-specific rationale; `app.js` no longer uses generic season copy as a substitute. The all-month checks pass, with **0 eligible picks in each month** because no destination currently has structured `monthReasons`. The UI explains why picks are withheld. Source-backed month research is still needed to populate this feature. |
@@ -36,7 +36,7 @@
 |---|---:|---|
 | CORRECT | 149 | Keep with Commons source, photographer, license and alt text |
 | WRONG | 0 | No source page positively identified another place |
-| UNVERIFIABLE | 161 | Remove photo and use the no-image treatment |
+| UNVERIFIABLE | 161 | Keep photo as illustrative and label the location as unverified |
 
 “CORRECT” is based on place identification in source-page title, caption or categories. This is source evidence, not a visual inspection of image pixels. See `PHOTO_AUDIT.md` for all 310 rows.
 
@@ -73,7 +73,7 @@ The check enforces month membership and a non-empty rationale for every returned
 
 ## Remaining work / limits
 
-1. **Photo visual review:** the audit verifies source-page text and attribution, but cannot establish that every pixel depicts the caption. Unverifiable images are removed rather than guessed.
+1. **Photo visual review:** the audit verifies source-page text and attribution, but cannot establish that every pixel depicts the caption. Unverifiable photos remain visible as illustrative imagery with their location status disclosed.
 2. **Seasonal research:** all month-specific picks are withheld until supported rationale is added to destination data.
 3. **Field-guide depth:** no guide meets the generated completeness schema yet, so all 310 correctly display provisional status. This change does not invent missing costs, contacts, access details or other research.
 

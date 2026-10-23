@@ -55,7 +55,7 @@ function missingRow(place) {
     sourcePage: place.photo?.source || '', photographer: place.photo?.credit || '',
     altText: place.photo?.alt || place.alt || '', license: place.photo?.license || '',
     verdict: 'UNVERIFIABLE', evidence: place.photo ? 'No retrievable source page metadata' : 'No source-backed destination photo in catalogue',
-    action: 'Remove image; retain the patterned no-image treatment'
+    action: 'Keep the existing image and identify it as illustrative; location not verified'
   };
 }
 async function fetchBatch(places) {
@@ -71,7 +71,7 @@ function renderMarkdown(rows) {
   const cell = value => String(value || '').replace(/\|/g, '\\|').replace(/[\r\n]+/g, ' ').trim() || '—';
   const lines = [
     '# Photo audit: all 310 catalogue records', '',
-    `Audited ${rows.length} catalogue records against their linked image source pages on ${new Date().toISOString().slice(0, 10)}. CORRECT means the Commons source page title, caption, or category metadata identifies the named place. This is a source-page verification, not a visual inspection of every image. Anything else is UNVERIFIABLE and is removed from the catalogue display. No image is labelled WRONG unless its source page positively identifies a different place.`, '',
+    `Audited ${rows.length} catalogue records against their linked image source pages on ${new Date().toISOString().slice(0, 10)}. CORRECT means the Commons source page title, caption, or category metadata identifies the named place. This is a source-page verification, not a visual inspection of every image. UNVERIFIABLE images remain visible as illustrative images with that status disclosed; their existing source and credit metadata are preserved. No image is labelled WRONG unless its source page positively identifies a different place.`, '',
     '| Place | Current image URL | Source page | Credited photographer | Alt text | Verdict | Evidence / action |',
     '|---|---|---|---|---|---|---|'
   ];
@@ -82,7 +82,7 @@ function renderMarkdown(rows) {
 }
 function renderVerificationScript(rows) {
   const byPlace = Object.fromEntries(rows.map(row => [row.place, row]));
-  return `(function(root){'use strict';const rows=${JSON.stringify(byPlace)};for(const place of root.DESTINATIONS||[]){const row=rows[place.name];if(!row||row.verdict!=='CORRECT'){place.photo=null;place.image='';place.alt='';continue;}place.image='';place.alt=row.altText;place.photo={url:row.currentImageUrl,source:row.sourcePage,credit:row.photographer,license:row.license,licenseUrl:row.licenseUrl,alt:row.altText};}})(typeof window!=='undefined'?window:globalThis);\n`;
+  return `(function(root){'use strict';const rows=${JSON.stringify(byPlace)};for(const place of root.DESTINATIONS||[]){const row=rows[place.name];if(!row)continue;place.photoAudit={verdict:row.verdict,evidence:row.evidence};if(row.verdict!=='CORRECT')continue;place.image='';place.alt=row.altText;place.photo={url:row.currentImageUrl,source:row.sourcePage,credit:row.photographer,license:row.license,licenseUrl:row.licenseUrl,alt:row.altText};}})(typeof window!=='undefined'?window:globalThis);\n`;
 }
 async function run() {
   const places = loadRawDestinations(site, { includePhotoAudit: false, includeGuideStatus: false });
@@ -98,7 +98,7 @@ async function run() {
       const match = relevant(place, page);
       const previous = rows.get(place.name);
       if (!match) {
-        rows.set(place.name, { ...previous, sourcePage: page.sourceUrl, photographer: page.photographer, license: page.license, evidence: `Commons title: ${page.title}; categories: ${page.categories || 'none'}; place match not established`, action: 'Remove image; retain the patterned no-image treatment' });
+        rows.set(place.name, { ...previous, sourcePage: page.sourceUrl, photographer: page.photographer, license: page.license, evidence: `Commons title: ${page.title}; categories: ${page.categories || 'none'}; place match not established`, action: 'Keep the existing image and identify it as illustrative; location not verified' });
         continue;
       }
       const altText = page.objectName || page.description || `View of ${place.name}`;
