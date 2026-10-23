@@ -678,7 +678,8 @@
             "published GPS coordinates for Furano Cheese Factory"
           ]
         }
-      ]
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=43.3469%2C142.39166&destination=43.3469%2C142.39166&travelmode=driving&waypoints=43.3206481%2C142.3770958%7C43.32343%2C142.35634%7C43.41935%2C142.4279"
     }
   ],
   "maps": {
