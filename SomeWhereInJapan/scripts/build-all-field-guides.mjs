@@ -1,0 +1,145 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+const siteRoot = path.resolve('SomeWhereInJapan');
+const placesRoot = path.join(siteRoot, 'places');
+const readJson = relative => JSON.parse(fs.readFileSync(path.join(siteRoot, relative), 'utf8'));
+const writeJson = (relative, value) => fs.writeFileSync(path.join(siteRoot, relative), `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+const identities = readJson('data/destination-identities.json').records;
+const locations = readJson('data/destination-map-locations.json').records;
+const photos = readJson('data/photo-audit.json').rows;
+const routeData = readJson('data/place-routes.json');
+const photoByName = new Map(photos.map(row => [row.place, row]));
+const identityById = new Map(identities.map(row => [row.id, row]));
+const existingRoutes = new Map(routeData.routes.map(route => [route.placeId, route]));
+const latestGuide = fs.readFileSync(path.join(placesRoot, 'koko-en-garden/index.html'), 'utf8');
+const style = latestGuide.match(/<style>([\s\S]*?)<\/style>/)?.[1] || '';
+const photoResearchPath = path.join(siteRoot, 'data/commons-photo-research.json');
+let photoResearch = [];
+if (fs.existsSync(photoResearchPath)) {
+  try { const parsed = JSON.parse(fs.readFileSync(photoResearchPath, 'utf8').replace(/^\uFEFF/, '')); photoResearch = Array.isArray(parsed) ? parsed : parsed.records || []; } catch {}
+}
+const researchById = new Map(photoResearch.filter(photo => photo.status === 'matched').map(photo => [photo.placeId, photo]));
+
+function cleanMojibake(value='') {
+  return String(value)
+    .replaceAll('Â·', '·').replaceAll('Â©', '©')
+    .replaceAll('â€™', '’').replaceAll('â€˜', '‘')
+    .replaceAll('â€œ', '“').replaceAll('â€', '”')
+    .replaceAll('â€“', '–').replaceAll('â€”', '—')
+    .replaceAll('â†', '←').replaceAll('â†’', '→')
+    .replaceAll('â†“', '↓').replaceAll('â†—', '↗')
+    .replaceAll('â€¢', '•').replaceAll('ï¿½', '�');
+}
+
+function decode(value='') {
+  return cleanMojibake(String(value).replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&nbsp;/g,' '));
+}
+function text(html='') { return decode(String(html).replace(/<script\b[\s\S]*?<\/script>/gi,' ').replace(/<style\b[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ')).trim(); }
+function esc(value='') { return String(value).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function attr(html, selector) {
+  const match = html.match(selector);
+  return match ? decode(match[1]) : '';
+}
+function allMatches(html, regex) { return [...html.matchAll(regex)]; }
+function sectionFor(html, heading) {
+  const sections = allMatches(html, /<section\b[^>]*>([\s\S]*?)<\/section>/gi).map(match => match[1]);
+  return sections.find(section => new RegExp(`<h[2-4][^>]*>[^<]*${heading}[^<]*<\/h[2-4]>`,'i').test(section)) || '';
+}
+function routeFor(record, location, description) {
+  const prior = existingRoutes.get(record.id);
+  if (prior) return prior;
+  const precision = location?.precision || 'area';
+  const locator = location?.locator || `${record.name} · ${record.region}`;
+  const coords = location ? { latitude: location.latitude, longitude: location.longitude, precision: precision === 'destination' ? 'Destination-level map point' : precision === 'nearby' ? 'Nearby reference point; confirm the attraction entrance' : 'Approximate area reference; not confirmed as the attraction entrance', sourceIds: ['destination-map-location'] } : null;
+  const stop = { id:`${record.id}-place`, order:1, name:record.name, area:locator, address:`${record.name}, ${locator}, Japan`, story:description || `Use this map to locate ${record.name}; confirm the exact entrance with current visitor information.`, ...(coords ? {coordinates:coords} : {}), visitDuration:{status:'unknown'}, youtubeUrl:`https://www.youtube.com/results?search_query=${encodeURIComponent(`${record.name} Japan visitor guide`)}` };
+  const route = { id:`${record.id}-place-map`, placeId:record.id, cityId:'destination', title:`${record.name}: location map`, introduction:precision==='destination'?`Map reference for ${record.name}. Open Google Maps for live directions from your current starting point.`:`Approximate location reference for ${record.name}. Confirm the exact entrance with the attraction before travelling.`, researchStatus:'place-locator', locatorPrecision:precision, locatorLabel:locator, stops:[stop], legs:[], sources:location?.sourceUrl?[{id:'destination-map-location',label:'OpenStreetMap location record',url:location.sourceUrl,checkedOn:location.checkedOn||'2026-10-23',supports:['destination or area map reference']}]:[] };
+  return route;
+}
+function mapFor(record, location, route) {
+  const old = routeData.maps[record.id];
+  if (old) return old;
+  if (!location) return null;
+  const longitude=location.longitude, latitude=location.latitude;
+  const stop=route.stops[0];
+  return {type:'FeatureCollection',metadata:{geometryStatus:'place-locator',bounds:[longitude-0.002,latitude-0.002,longitude+0.002,latitude+0.002],attribution:'Map data © OpenStreetMap contributors',license:'ODbL-1.0',sourceUrl:'https://www.openstreetmap.org/copyright'},features:[{type:'Feature',id:stop.id,geometry:{type:'Point',coordinates:[longitude,latitude]},properties:{id:stop.id,routeStopId:stop.id,name:stop.name,role:'stop',order:1}}]};
+}
+function versionExisting(html) {
+  html = cleanMojibake(html);
+  html = html.replace(/(class="(?:site-version|guide-version)")>v0\.[0-9]+/g,'$1>v0.5');
+  for (const cls of ['jg-top','ng-top','kg-top','fg-top']) {
+    const re = new RegExp(`(<nav\\b(?=[^>]*\\bclass="[^"]*\\b${cls}\\b[^"]*")[^>]*>)([\\s\\S]*?)(<\\/nav>)`,'i');
+    html = html.replace(re, (_whole, open, body, close) => {
+      if (/guide-version/.test(body)) return `${open}${body.replace(/v0\.[0-9]+/,'v0.5')}${close}`;
+      return `${open}${body.replace('</a>','</a><small class="guide-version">v0.5</small>')}${close}`;
+    });
+  }
+  return html.replace(/styles\.css\?v=[^"'\s>]+/g,'styles.css?v=20261024-4').replace(/city-route-ui\.js\?v=[^"'\s>]+/g,'city-route-ui.js?v=20261024-1').replace(/place-route-ui\.js\?v=[^"'\s>]+/g,'place-route-ui.js?v=20261024-3');
+}
+function render(record, sourceHtml, imageRow, location, route) {
+  const placeName=record.name;
+  const title=text(sourceHtml.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || placeName) || placeName;
+  const desc=attr(sourceHtml,/\<meta\s+name="description"\s+content="([^"]*)"/i) || `${placeName} in ${record.region}, Japan.`;
+  const lede=text(sourceHtml.match(/<p class="(?:ng-lede|jg-lede)">([\s\S]*?)<\/p>/i)?.[1] || '');
+  const why=sectionFor(sourceHtml,'WHY THIS PLACE|WHAT MAKES|WHY VISIT');
+  const whyParagraphs=allMatches(why,/<p\b[^>]*>([\s\S]*?)<\/p>/gi).map(m=>text(m[1])).filter(Boolean);
+  const story=whyParagraphs.find(value=>!/(open the map|destination marker|location map|no connecting route)/i.test(value)) || lede || desc;
+  const pointItems=allMatches(why,/<li\b[^>]*>([\s\S]*?)<\/li>/gi).map(m=>text(m[1])).filter(v=>v.length>24).slice(0,5);
+  const arrival=sectionFor(sourceHtml,'GETTING THERE|CHOOSE HOW TO ARRIVE');
+  const arrivalText=allMatches(arrival,/<p\b[^>]*>([\s\S]*?)<\/p>/gi).map(m=>text(m[1])).filter(Boolean).find(v=>v.length>35) || `Use the destination map to compare public transport and driving options from your starting point. Check current schedules and the last return service before you set out.`;
+  const tel=sourceHtml.match(/href="tel:([^"]+)"[^>]*>([\s\S]*?)<\/a>/i);
+  const phone=tel ? {href:decode(tel[1]),label:text(tel[2])} : null;
+  const facts=allMatches(sourceHtml,/<div class="ng-fact"[^>]*>([\s\S]*?)<\/div>/gi).map(m=>m[1]);
+  const stayFact=facts.find(f=>/WHERE TO STAY/i.test(f));
+  const stayText=stayFact?text(stayFact.replace(/<strong>[\s\S]*?<\/strong>/i,'')):`Base yourself in ${location?.locator || record.region} for the easiest access to the destination. Compare current accommodation and transport links before booking.`;
+  const seasonFact=facts.find(f=>/WEATHER|SEASON/i.test(f));
+  const seasonText=seasonFact?text(seasonFact.replace(/<strong>[\s\S]*?<\/strong>/i,'')):'Check local weather and seasonal access conditions close to your travel date.';
+  const oldImg=sourceHtml.match(/<figure[^>]*>[\s\S]*?<img\b[^>]*src="([^"]+)"[^>]*>[\s\S]*?<figcaption>([\s\S]*?)<\/figcaption>[\s\S]*?<\/figure>/i);
+  const researched=researchById.get(record.id);
+  const photoUrl=researched?.imageUrl || (imageRow?.verdict==='CORRECT' ? imageRow.currentImageUrl : '') || decode(oldImg?.[1] || '') || imageRow?.currentImageUrl || '';
+  const photoAlt=researched?.alt || (imageRow?.verdict==='CORRECT' ? imageRow.altText : oldImg?decode(oldImg[0].match(/alt="([^"]*)"/i)?.[1]||''):`Illustrative image associated with ${placeName}`);
+  const photoCredit=researched ? `${researched.photographer} · ${researched.license}` : imageRow?.verdict==='CORRECT' ? `${imageRow.photographer} · ${imageRow.license}` : text(oldImg?.[2] || '');
+  const photoSource=researched?.sourcePage || imageRow?.sourcePage || decode(oldImg?.[2]?.match(/href="([^"]+)"/i)?.[1] || '');
+  const isVerifiedPhoto=Boolean(researched || imageRow?.verdict==='CORRECT');
+  const gallery=(researched?.gallery||[]).slice(0,3);
+  const locationLabel=location?.locator || `${record.region} · Japan`;
+  const mapPrecision=location?.precision==='destination'?'Named destination':location?.precision==='nearby'?'Nearby map reference':'Approximate area reference';
+  const directLinks=allMatches(sourceHtml,/<a\b[^>]*href="(https?:[^"#]+)"[^>]*>([\s\S]*?)<\/a>/gi).map(m=>({url:decode(m[1]),label:text(m[2])})).filter(x=>x.label&&!/(google\.com|youtube\.com|openstreetmap\.org|wikimedia\.org|unsplash\.com|creativecommons\.org)/i.test(x.url)).slice(0,4);
+  const bullets=pointItems.length?pointItems.map(item=>`<li>${esc(item)}</li>`).join(''):`<li>${esc(story)}</li><li>Check current opening and seasonal access details before travelling.</li><li>Use the map to confirm the route from your starting point and allow time to explore at a comfortable pace.</li>`;
+  const sourceLine=photoSource?`<a href="${esc(photoSource)}" target="_blank" rel="noopener noreferrer">View image source</a>`:'';
+  const creditLine=isVerifiedPhoto?`${esc(photoCredit)} · ${sourceLine}`:`Illustrative photo; its match to this exact place has not been confirmed. ${sourceLine}`;
+  const sourceLinks=directLinks.map(link=>`<li><a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label || 'Visitor information')} ↗</a></li>`).join('');
+  const routeId=route.id;
+  const transitUrl=`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${placeName}, ${locationLabel}, Japan`)}&travelmode=transit`;
+  const carUrl=`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${placeName}, ${locationLabel}, Japan`)}&travelmode=driving`;
+  const stayUrl=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`places to stay near ${locationLabel}, Japan`)}`;
+  const videoUrl=`https://www.youtube.com/results?search_query=${encodeURIComponent(`${placeName} Japan travel guide`)}`;
+  return `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111a19"><title>${esc(title)} | Japan Field Guide</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="https://decniner.github.io/Den-Lab/SomeWhereInJapan/places/${record.id}/"><link rel="stylesheet" href="../../vendor/maplibre-gl/maplibre-gl.css?v=20261023-3"><link rel="stylesheet" href="../../styles.css?v=20261024-3"><script src="../../vendor/maplibre-gl/maplibre-gl.js?v=20261023-3" defer></script><script src="../../city-route-map.js?v=20261023-11" defer></script><script src="../../city-route-ui.js?v=20261024-1" defer></script><script src="../../place-route-ui.js?v=20261024-2" defer></script><style>${style}</style></head><body><main class="japan-guide"><nav class="jg-top"><a href="../../index.html">← Somewhere in Japan <small class="guide-version">v0.5</small></a><span class="jg-kicker">${esc(locationLabel)} · Japan field guide</span></nav><header class="jg-hero"><div><p class="jg-kicker">A PLACE-LED FIELD GUIDE</p><h1>${esc(title)}</h1><p class="jg-area">${esc(mapPrecision)} · ${esc(record.type || 'Place')}</p><p class="jg-deck">${esc(desc)}</p><a class="jg-btn" href="#route">See the place map ↓</a><a class="jg-btn jg-light" href="#arrival">Plan your arrival</a></div><figure><img src="${esc(photoUrl)}" alt="${esc(photoAlt)}" loading="eager" decoding="async"><figcaption>${creditLine}</figcaption></figure></header><p class="jg-lede">${esc(story)}</p><section class="jg-section" id="story"><p class="jg-kicker">A CLOSER LOOK</p><h2>Why this place stays with you</h2><p>${esc(lede && lede!==story ? lede : story)}</p><ul>${bullets}</ul>${gallery.length?`<div class="jg-photo-gallery" aria-label="More photographs of ${esc(title)}">${gallery.map(photo=>`<figure><img src="${esc(photo.imageUrl)}" alt="${esc(photo.alt||title)}" loading="lazy" decoding="async"><figcaption>${esc(photo.photographer)} · ${esc(photo.license)} · <a href="${esc(photo.sourcePage)}" target="_blank" rel="noopener noreferrer">Source</a></figcaption></figure>`).join('')}</div>`:''}</section><section class="jg-section" id="route"><p class="jg-kicker">${route.stops.length>1?'THE ROUTE · NUMBERED STOPS':'THE PLACE · MAP REFERENCE'}</p><h2>${esc(title)} · ${route.stops.length>1?'visit order':'location map'}</h2><p>${esc(route.introduction || `Use the map to locate ${title} and open Google Maps for live directions.`)}</p><p class="jg-note"><strong>Map precision:</strong> ${esc(mapPrecision)}. ${route.stops.length>1?'Dashed connectors show visit order only; open the linked Google Maps route for navigation.':'This map marks one destination point; it does not imply a multi-stop route.'}</p><div data-place-route-guide data-route-kind="location" data-route-id="${esc(routeId)}" aria-label="Interactive map for ${esc(title)}"></div><p class="jg-small">Open the stop links for directions and visitor video searches. Confirm exact entrances and current access with the listed sources.</p></section><section class="jg-section jg-grid" id="arrival"><div><p class="jg-kicker">GETTING THERE</p><h2>Choose how to arrive</h2><p>${esc(arrivalText)}</p><a class="jg-btn jg-light" href="${transitUrl}" target="_blank" rel="noopener noreferrer">Train and public transport ↗</a><a class="jg-btn jg-light" href="${carUrl}" target="_blank" rel="noopener noreferrer">By car ↗</a><a class="jg-btn jg-light" href="${videoUrl}" target="_blank" rel="noopener noreferrer">Watch visitor videos ↗</a>${sourceLinks?`<p>Visitor information</p><ul>${sourceLinks}</ul>`:''}</div><aside><div class="jg-fact"><strong>SEASON & CONDITIONS</strong>${esc(seasonText)}</div><div class="jg-fact"><strong>CONTACT THE VISITOR SITE</strong>${phone?`${esc(phone.label)}<br><a href="tel:${esc(phone.href)}">Call ${esc(phone.label)}</a>`:`Use the destination listing for current visitor contact details.<br><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${placeName} ${locationLabel} Japan`)}" target="_blank" rel="noopener noreferrer">Open destination contact listing ↗</a>`}</div><div class="jg-fact"><strong>WHERE TO STAY</strong><p>${esc(stayText)}</p><a href="${stayUrl}" target="_blank" rel="noopener noreferrer">Find places to stay nearby ↗</a></div><div class="jg-fact"><strong>LOCAL NOTES</strong>Check the return journey, weather and any seasonal restrictions before setting out. Respect local communities and site guidance.</div></aside></section><section class="jg-section"><p class="jg-kicker">FIELD NOTES</p><h2>Make the visit your own</h2><p>${esc(story)}</p><ul><li>Check official access and opening information for your travel date.</li><li>Use Google Maps for live transport and road conditions from your actual starting point.</li><li>For longer routes, open individual stop directions in visit order.</li></ul><p class="jg-small">${creditLine}</p></section><footer class="jg-footer">Somewhere in Japan · A place-led field guide. Confirm current access, weather, schedules and fares before travel.<p><a href="../../index.html">Return to Explore Japan · v0.5</a></p></footer></main></body></html>`;
+}
+
+let rebuilt=0, retained=0, locatorMaps=0, missingMap=0;
+for (const record of identities) {
+  const file=path.join(placesRoot,record.id,'index.html');
+  if (!fs.existsSync(file)) continue;
+  let html=fs.readFileSync(file,'utf8');
+  const alreadyPremium=html.includes('class="jg-hero"') || html.includes('class="kg-hero"') || html.includes('class="fg-hero"');
+  if (alreadyPremium) {
+    fs.writeFileSync(file,versionExisting(html),'utf8'); retained++;
+  } else {
+    const location=locations[record.id] || null;
+    const imageRow=photoByName.get(record.name) || null;
+    const route=routeFor(record,location,attr(html,/\<meta\s+name="description"\s+content="([^"]*)"/i));
+    const map=mapFor(record,location,route);
+    if (!existingRoutes.has(record.id)) {
+      routeData.routes.push(route);
+      if (map) { routeData.maps[record.id]=map; locatorMaps++; } else missingMap++;
+    }
+    fs.writeFileSync(file,cleanMojibake(render(record,html,imageRow,location,route)),'utf8'); rebuilt++;
+  }
+}
+routeData.routes.sort((a,b)=>a.placeId.localeCompare(b.placeId));
+writeJson('data/place-routes.json',JSON.parse(cleanMojibake(JSON.stringify(routeData))));
+const homePath=path.join(siteRoot,'index.html');
+fs.writeFileSync(homePath,versionExisting(fs.readFileSync(homePath,'utf8')),'utf8');
+console.log(JSON.stringify({catalogue:identities.length,rebuilt,retained,locatorMaps,missingMap,totalRoutes:routeData.routes.length,totalMapCollections:Object.keys(routeData.maps).length},null,2));

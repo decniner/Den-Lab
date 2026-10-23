@@ -399,3 +399,5 @@ html{scroll-padding-top:86px}body{background:var(--paper);color:var(--ink)}.site
 @media(max-width:700px){.place-dialog-route-details .city-route-map-layout{grid-template-columns:minmax(0,1fr)}.place-dialog-route-details .city-route-map-frame{position:static}.place-dialog-route-details .city-route-map-canvas{height:min(70vw,420px);min-height:270px}}
 
 .city-route-photo-note{margin:7px 0;color:#6b675d;font:12px/1.45 var(--sans);font-style:italic}
+
+.guide-version{display:inline-block;font:600 9px/1 var(--sans);letter-spacing:.08em;color:#8b7862;margin-left:.55rem;vertical-align:top}
