@@ -45,8 +45,24 @@ function normalizeName(value) {
 function routeFor(record, placeRoutes, cityRoutes) {
   const place = (placeRoutes.routes || []).find(route => route.placeId === record.id);
   if (place) return { kind:'place', route:place };
-  const name = normalizeName(record.name);
-  const city = (cityRoutes.routes || []).find(route => (route.stops || []).some(stop => normalizeName(stop.name) === name));
+  const regionCities = {
+    Hokkaido:['sapporo'], Tohoku:['sendai'], Kanto:['tokyo'], Chubu:['nagoya'],
+    Kansai:['kyoto','osaka'], Chugoku:['hiroshima'], Shikoku:['takamatsu'],
+    Kyushu:['fukuoka'], Okinawa:['naha']
+  };
+  const aliases = {
+    'Kiyomizu-dera above Kyoto':'Kiyomizu-dera',
+    'Ritsurin Garden, Takamatsu':'Ritsurin Garden',
+    'Dotonbori':'Dotonbori & Hozenji Yokocho',
+    'Sapporo Beer Museum':'Sapporo Beer Museum and Beer Garden',
+    'Atsuta Jingu Shrine':'Atsuta Jingu',
+    'Nagoya Castle':'Nagoya Castle & Hommaru Palace'
+  };
+  const expectedStop = normalizeName(aliases[record.name] || record.name);
+  const city = (cityRoutes.routes || []).find(route =>
+    (regionCities[record.region] || []).includes(route.cityId) &&
+    (route.stops || []).some(stop => normalizeName(stop.name) === expectedStop)
+  );
   return city ? { kind:'city', route:city } : null;
 }
 
