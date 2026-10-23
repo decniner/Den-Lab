@@ -55,7 +55,7 @@ button{font:inherit;cursor:pointer}
 #count{margin-left:auto;font-size:14px;color:var(--ink-soft)}
 
 /* Grid + cards */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px;padding:30px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(330px,100%),1fr));gap:22px;padding:30px 0 10px}
 .card{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
   padding:22px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);
   transition:transform .18s ease, box-shadow .18s ease}
@@ -112,9 +112,23 @@ dialog ul{margin:6px 0;padding-left:20px;color:var(--ink-soft);font-size:14.5px}
 footer{margin-top:60px;border-top:1px solid var(--line);padding:28px 0 44px;color:var(--ink-soft);font-size:13.5px}
 footer .wrap{display:flex;flex-direction:column;gap:8px}
 @media (max-width:640px){
-  .controls{top:57px}
+  /* On phones the filter bar must NOT stay pinned: it wraps into a tall block
+     and would cover half the screen while scrolling. It scrolls away instead. */
+  .controls{position:static;padding:12px 0}
+  .controls input[type=search]{flex:1 1 100%;min-width:0}
+  .controls label{flex:1 1 42%}
+  .controls select{flex:1}
   #count{margin-left:0;width:100%}
   .card-title{min-height:0}
-  .hero{padding:40px 0 22px}
+  .hero{padding:36px 0 18px}
+  .stat{flex:1 1 128px;min-width:0;padding:12px 14px}
+  .stat b{font-size:24px}
+  .site-head .wrap{gap:10px;padding:9px 0}
+  .brand{font-size:21px}
+  .brand .jp{font-size:16px;margin-left:5px}
+  .edition{font-size:11px;padding:3px 9px}
+  .saved-pill{padding:5px 11px;font-size:13px}
+  .head-nav{margin-left:auto}
   .head-nav a{display:none}
+  dialog{max-height:88vh;overflow:auto;padding:22px}
 }
