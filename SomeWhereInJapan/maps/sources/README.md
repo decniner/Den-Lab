@@ -22,4 +22,10 @@ Official references checked 2026-10-23:
 
 ## Current status
 
-No real city street extract has been downloaded or bundled yet. `build-city-map-data.cjs` is tested against synthetic fixtures only. City bounds, route coordinates, and per-city output sizes remain unverified; do not count any city as mapped until source-backed route data and its local GeoJSON/SVG outputs exist.
+Sapporo has one bounded Overpass street extract, fetched 2026-10-23 from `https://overpass-api.de/api/interpreter`. The exact query and OSM base timestamp are recorded in `sapporo.geojson`; `sapporo.overpass.json` preserves the source response. The prepared source contains 3,651 selected road and pedestrian ways. The generated map is 795,398 bytes and the SVG fallback is 366,556 bytes. Both show local street context under ODbL attribution. Route connectors remain schematic stop-order illustrations, and one transfer/return time remains unknown.
+
+The other nine city maps still have no bundled street extract. Do not count them as street-context maps until their source data and generated outputs exist.
+
+### Sapporo source notice
+
+The Sapporo street-context dataset is derived from OpenStreetMap and licensed under ODbL 1.0. Attribution is displayed in both the interactive map and SVG fallback. Share-alike terms and the source are documented at https://www.openstreetmap.org/copyright. Route points have separate source IDs in `data/city-routes.json`; this street extract does not independently verify a route, entrance, transfer, or travel time.

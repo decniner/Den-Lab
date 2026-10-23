@@ -12,5 +12,526 @@
     "fukuoka",
     "naha"
   ],
-  "routes": []
+  "routes": [
+    {
+      "id": "sapporo-iconic-city-day",
+      "cityId": "sapporo",
+      "title": "Sapporo: landmark-to-laneway day",
+      "introduction": "Follow Visit Sapporo's one-day sequence from the Clock Tower and Nijo Market through Odori and Susukino, then finish at the Beer Museum and Garden. Check current venue hours, reservations, and bus times before setting out.",
+      "default": true,
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "sapporo-station",
+        "name": "Sapporo Station",
+        "address": "Sapporo Station, Kita Ward, Sapporo, Japan",
+        "coordinates": {
+          "latitude": 43.06861111,
+          "longitude": 141.35077778,
+          "precision": "Wikidata point",
+          "sourceIds": [
+            "wikidata-sapporo-station"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-sapporo-route",
+          "label": "Visit Sapporo: Walking tour for your first visit",
+          "url": "https://visit.sapporo.travel/itineraries/02/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "official one-day stop order",
+            "official stop visit windows",
+            "walking transfer estimates",
+            "seasonal and booking notes"
+          ]
+        },
+        {
+          "id": "wikidata-sapporo-station",
+          "label": "Wikidata: Sapporo Station coordinates (Q801404)",
+          "url": "https://www.wikidata.org/wiki/Q801404",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station map point"
+          ]
+        },
+        {
+          "id": "wikidata-clock-tower",
+          "label": "Wikidata: Sapporo Clock Tower coordinates (Q1140619)",
+          "url": "https://www.wikidata.org/wiki/Q1140619",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "attraction map point"
+          ]
+        },
+        {
+          "id": "wikidata-nijo-market",
+          "label": "Wikidata: Nijo Market coordinates (Q11371661)",
+          "url": "https://www.wikidata.org/wiki/Q11371661",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "market map point"
+          ]
+        },
+        {
+          "id": "wikidata-tv-tower",
+          "label": "Wikidata: Sapporo TV Tower coordinates (Q1063319)",
+          "url": "https://www.wikidata.org/wiki/Q1063319",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "tower map point"
+          ]
+        },
+        {
+          "id": "wikidata-odori-park",
+          "label": "Wikidata: Odori Park coordinates (Q3107971)",
+          "url": "https://www.wikidata.org/wiki/Q3107971",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "park map point"
+          ]
+        },
+        {
+          "id": "wikidata-tanukikoji",
+          "label": "Wikidata: Tanukikoji Shopping Street coordinates (Q5361031)",
+          "url": "https://www.wikidata.org/wiki/Q5361031",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "shopping street map point"
+          ]
+        },
+        {
+          "id": "wikidata-beer-museum",
+          "label": "Wikidata: Sapporo Beer Museum coordinates (Q1055944)",
+          "url": "https://www.wikidata.org/wiki/Q1055944",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "museum map point"
+          ]
+        },
+        {
+          "id": "mapfan-ramen-building",
+          "label": "MapFan: N Grande Building coordinates",
+          "url": "https://mapfan.com/spots/SCAQC%2CJ%2CPRK9H0",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "coordinate of the official N Grande Building address for Ganso Sapporo Ramen Yokocho"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "clock-tower",
+          "order": 1,
+          "name": "Sapporo Clock Tower",
+          "area": "Central Sapporo",
+          "story": "This wooden hall began as the drill hall of Sapporo Agricultural College. Step inside to see how a new frontier city took shape; time your visit near the hour for the clock chime.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 30,
+            "maxMinutes": 30,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.062602,
+            "longitude": 141.353681,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-clock-tower"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Sapporo-Clock-Tower-2018.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Sapporo-Clock-Tower-2018.jpg",
+            "credit": "Bjorn Christian Torrissen",
+            "license": "CC BY-SA 4.0",
+            "alt": "Sapporo historic wooden Clock Tower"
+          }
+        },
+        {
+          "id": "nijo-market",
+          "order": 2,
+          "name": "Nijo Market",
+          "area": "Sapporo",
+          "story": "Sapporo grew around the fishing and farming communities of the Ishikari region. Nijo Market still makes a lively morning stop for seafood, produce, and a close look at Hokkaido ingredients. Stall hours vary.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 40,
+            "maxMinutes": 40,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.058306,
+            "longitude": 141.358472,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-nijo-market"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Nijo_fish_Market_2014.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Nijo_fish_Market_2014.jpg",
+            "credit": "Wing1990hk",
+            "license": "CC BY 3.0",
+            "alt": "Seafood stalls at Sapporo Nijo Market"
+          }
+        },
+        {
+          "id": "tv-tower",
+          "order": 3,
+          "name": "Sapporo TV Tower",
+          "area": "Odori 1-chome",
+          "story": "From the observation deck, Odori Park reads as a long green axis through central Sapporo, with the city and distant mountains beyond it. Check visibility before paying for the view.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 40,
+            "maxMinutes": 40,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.06111111,
+            "longitude": 141.35638889,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-tv-tower"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Odori_park_at_Sapporo_TV_tower.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Odori_park_at_Sapporo_TV_tower.jpg",
+            "credit": "LR0725",
+            "license": "CC BY-SA 4.0",
+            "alt": "View of Odori Park from Sapporo TV Tower"
+          }
+        },
+        {
+          "id": "odori-park",
+          "order": 4,
+          "name": "Odori Park",
+          "area": "Central Sapporo",
+          "story": "Odori is both a downtown park and a civic stage. Walk its broad blocks to see fountains, flower beds, and seasonal events; the character changes with the festival calendar.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 40,
+            "maxMinutes": 40,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.059722,
+            "longitude": 141.346389,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-odori-park"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Odori_Park_Sapporo.JPG",
+            "source": "https://commons.wikimedia.org/wiki/File:Odori_Park_Sapporo.JPG",
+            "credit": "Daigaku2051",
+            "license": "CC BY-SA 3.0",
+            "alt": "Odori Park in central Sapporo"
+          }
+        },
+        {
+          "id": "ramen-yokocho",
+          "order": 5,
+          "name": "Ganso Sapporo Ramen Yokocho",
+          "area": "Susukino",
+          "story": "This compact Susukino alley is known for small ramen counters serving Sapporo-style miso bowls. Pick a shop that is open when you arrive, since hours and queues differ.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 40,
+            "maxMinutes": 40,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.0547764,
+            "longitude": 141.3544468,
+            "precision": "N Grande Building address point; alley entrance not separately mapped",
+            "sourceIds": [
+              "mapfan-ramen-building"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Ramen_Alley_Sapporo_Japan.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Ramen_Alley_Sapporo_Japan.jpg",
+            "credit": "Sgroey",
+            "license": "CC BY-SA 4.0",
+            "alt": "Entrance to Ramen Alley in Sapporo"
+          },
+          "address": "N Grande Building 1F, 3-8 Minami 5-jo Nishi, Chuo-ku, Sapporo"
+        },
+        {
+          "id": "tanukikoji",
+          "order": 6,
+          "name": "Tanuki Koji Shopping Street",
+          "area": "Central Sapporo",
+          "story": "A covered arcade threads through central Sapporo, where generations-old shops sit beside new cafes and game halls. Wander a few blocks and notice how the street changes from one section to the next.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 60,
+            "maxMinutes": 60,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.058333,
+            "longitude": 141.35463,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-tanukikoji"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Tanukikoji_01.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Tanukikoji_01.jpg",
+            "credit": "Mugu-shisai",
+            "license": "CC BY-SA 3.0",
+            "alt": "Covered Tanukikoji shopping street"
+          }
+        },
+        {
+          "id": "beer-museum",
+          "order": 7,
+          "name": "Sapporo Beer Museum and Beer Garden",
+          "area": "Higashi Ward",
+          "story": "The red-brick former factory tells the story of a beer brand that helped define Sapporo. The adjoining garden is a separate way to spend the evening; check current museum hours and dining reservations.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 180,
+            "maxMinutes": 240,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.071666666,
+            "longitude": 141.368888888,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-beer-museum"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Sapporo_Beer_Museum.JPG",
+            "source": "https://commons.wikimedia.org/wiki/File:Sapporo_Beer_Museum.JPG",
+            "credit": "K. Takeda",
+            "license": "CC BY-SA 3.0",
+            "alt": "Red brick Sapporo Beer Museum"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "station-to-clock",
+          "fromId": "sapporo-station",
+          "toId": "clock-tower",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 10,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.35077778,
+                43.06861111
+              ],
+              [
+                141.353681,
+                43.062602
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-sapporo-station",
+              "wikidata-clock-tower"
+            ]
+          }
+        },
+        {
+          "id": "clock-to-market",
+          "fromId": "clock-tower",
+          "toId": "nijo-market",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 12,
+            "maxMinutes": 12,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.353681,
+                43.062602
+              ],
+              [
+                141.358472,
+                43.058306
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-clock-tower",
+              "wikidata-nijo-market"
+            ]
+          }
+        },
+        {
+          "id": "market-to-tower",
+          "fromId": "nijo-market",
+          "toId": "tv-tower",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.358472,
+                43.058306
+              ],
+              [
+                141.35638889,
+                43.06111111
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-nijo-market",
+              "wikidata-tv-tower"
+            ]
+          }
+        },
+        {
+          "id": "tower-to-park",
+          "fromId": "tv-tower",
+          "toId": "odori-park",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.35638889,
+                43.06111111
+              ],
+              [
+                141.346389,
+                43.059722
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-tv-tower",
+              "wikidata-odori-park"
+            ]
+          }
+        },
+        {
+          "id": "park-to-ramen",
+          "fromId": "odori-park",
+          "toId": "ramen-yokocho",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 12,
+            "maxMinutes": 12,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "ramen-to-tanukikoji",
+          "fromId": "ramen-yokocho",
+          "toId": "tanukikoji",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 10,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "tanukikoji-to-museum",
+          "fromId": "tanukikoji",
+          "toId": "beer-museum",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 20,
+            "maxMinutes": 20,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "museum-to-station",
+          "fromId": "beer-museum",
+          "toId": "sapporo-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.368888888,
+                43.071666666
+              ],
+              [
+                141.35077778,
+                43.06861111
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-beer-museum",
+              "wikidata-sapporo-station"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {}
+    }
+  ]
 }

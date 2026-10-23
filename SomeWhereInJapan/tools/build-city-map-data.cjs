@@ -1,4 +1,6 @@
 'use strict';
+const fs=require('node:fs');
+const path=require('node:path');
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[char]);
 
@@ -52,8 +54,8 @@ function simplifyLine(points, tolerance=0.000025) {
 function buildCityMapData(cityId, route, sourceGeoJson) {
   const meta=sourceGeoJson?.metadata||{};
   if(sourceGeoJson?.type!=='FeatureCollection'||!Array.isArray(sourceGeoJson.features))throw new Error('Source map must be a GeoJSON FeatureCollection');
-  if(!meta.sourceUrl||!meta.extractedOn||meta.license!=='ODbL-1.0'||!meta.attribution||!Array.isArray(meta.bounds)||meta.bounds.length!==4)throw new Error('Source metadata must include a URL, extraction date, ODbL-1.0 license, attribution, and bounds');
-  if(!meta.attribution.includes('OpenStreetMap contributors'))throw new Error('OpenStreetMap attribution is required');
+  if(!meta.sourceUrl||!meta.extractedOn||!['ODbL-1.0','CC0-1.0'].includes(meta.license)||!meta.attribution||!Array.isArray(meta.bounds)||meta.bounds.length!==4)throw new Error('Source metadata must include a URL, extraction date, supported license, attribution, and bounds');
+  if(meta.license==='ODbL-1.0'&&!meta.attribution.includes('OpenStreetMap contributors'))throw new Error('OpenStreetMap attribution is required for ODbL data');
   if(meta.cityId&&meta.cityId!==cityId)throw new Error('Source geometry city id does not match the requested city');
   const [minLon,minLat,maxLon,maxLat]=meta.bounds;
   if(!validPoint([minLon,minLat])||!validPoint([maxLon,maxLat])||minLon>=maxLon||minLat>=maxLat)throw new Error('Invalid city viewport bounds');
@@ -70,32 +72,62 @@ function buildCityMapData(cityId, route, sourceGeoJson) {
       }
     }
   }
-  const positions=[{id:route.origin.id,name:route.origin.name,role:'origin',coordinates:route.origin.coordinates},...(route.stops||[]).map(stop=>({id:stop.id,name:stop.name,role:'stop',coordinates:stop.coordinates}))];
+  const gridSteps=4;
+  for(let step=0;step<=gridSteps;step++){
+    const longitude=minLon+(maxLon-minLon)*step/gridSteps,latitude=minLat+(maxLat-minLat)*step/gridSteps;
+    features.push({type:'Feature',id:`grid-lon-${step}`,properties:{mapGrid:true},geometry:{type:'LineString',coordinates:[[longitude,minLat],[longitude,maxLat]]}});
+    features.push({type:'Feature',id:`grid-lat-${step}`,properties:{mapGrid:true},geometry:{type:'LineString',coordinates:[[minLon,latitude],[maxLon,latitude]]}});
+  }
+  const positions=[{id:route.origin.id,name:route.origin.name,role:'origin',coordinates:route.origin.coordinates},...(route.stops||[]).map(stop=>({id:stop.id,name:stop.name,role:'stop',coordinates:stop.coordinates}))].filter(item=>item.coordinates);
   for(const item of positions){
     const point=item.coordinates;
     if(!point||!Number.isFinite(point.longitude)||!Number.isFinite(point.latitude)||point.longitude< -180||point.longitude>180||point.latitude< -90||point.latitude>90)throw new Error(`Invalid route position: ${item.id}`);
     if(point.longitude<minLon||point.longitude>maxLon||point.latitude<minLat||point.latitude>maxLat)throw new Error(`Route position falls outside the local city viewport: ${item.id}`);
-    features.push({type:'Feature',id:item.id,properties:{name:item.name,role:item.role,routeStopId:item.role==='stop'?item.id:undefined},geometry:{type:'Point',coordinates:[point.longitude,point.latitude]}});
+    features.push({type:'Feature',id:item.id,properties:{name:item.name,role:item.role,returnPoint:item.role==='origin'&&route.legs?.some(leg=>leg.toId===item.id),routeStopId:item.role==='stop'?item.id:undefined},geometry:{type:'Point',coordinates:[point.longitude,point.latitude]}});
   }
   for(const leg of route.legs||[]){
-    if(leg.geometry?.status!=='verified')continue;
+    if(!['verified','schematic'].includes(leg.geometry?.status))continue;
     const line=leg.geometry.coordinates;
     if(!Array.isArray(line)||line.length<2||line.some(point=>!validPoint(point)))throw new Error(`Invalid reviewed route geometry: ${leg.id}`);
-    features.push({type:'Feature',id:`route-${leg.id}`,properties:{routeLegId:leg.id,mode:leg.mode,sourceIds:leg.geometry.sourceIds},geometry:{type:'LineString',coordinates:line.map(point=>point.slice())}});
+    if(!Array.isArray(leg.geometry.sourceIds)||!leg.geometry.sourceIds.length)throw new Error(`Route geometry needs source ids: ${leg.id}`);
+    features.push({type:'Feature',id:`route-${leg.id}`,properties:{routeLegId:leg.id,mode:leg.mode,routeGeometryStatus:leg.geometry.status,sourceIds:leg.geometry.sourceIds},geometry:{type:'LineString',coordinates:line.map(point=>point.slice())}});
   }
-  const output={type:'FeatureCollection',metadata:{cityId,sourceUrl:meta.sourceUrl,license:meta.license,attribution:meta.attribution,extractedOn:meta.extractedOn,bounds:meta.bounds,geometryStatus:'locally-simplified-context'},features};
+  const output={type:'FeatureCollection',metadata:{cityId,sourceUrl:meta.sourceUrl,license:meta.license,attribution:meta.attribution,extractedOn:meta.extractedOn,bounds:meta.bounds,geometryStatus:features.some(feature=>feature.properties.routeGeometryStatus==='verified')?'reviewed-route-geometry':features.some(feature=>feature.properties.routeGeometryStatus==='schematic')?'schematic-stop-order':'locally-simplified-context'},features};
   return {geojson:output,fallbackSvg:buildFallbackSvg(output)};
 }
 
 function buildFallbackSvg(collection) {
   const [minX,minY,maxX,maxY]=collection.metadata.bounds;
   const width=900,height=560,pad=50;
-  const x=lon=>pad+(lon-minX)/(maxX-minX)*(width-pad*2);
-  const y=lat=>height-pad-(lat-minY)/(maxY-minY)*(height-pad*2);
-  const roads=collection.features.filter(feature=>feature.geometry.type==='LineString'&&!feature.properties.routeLegId).map(feature=>`<polyline points="${feature.geometry.coordinates.map(point=>`${x(point[0]).toFixed(1)},${y(point[1]).toFixed(1)}`).join(' ')}" fill="none" stroke="#b6c5bd" stroke-width="1.4"/>`).join('');
-  const routes=collection.features.filter(feature=>feature.properties.routeLegId).map(feature=>`<polyline points="${feature.geometry.coordinates.map(point=>`${x(point[0]).toFixed(1)},${y(point[1]).toFixed(1)}`).join(' ')}" fill="none" stroke="#b64f3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`).join('');
-  const markers=collection.features.filter(feature=>feature.geometry.type==='Point').map((feature,index)=>{const [lon,lat]=feature.geometry.coordinates,label=feature.properties.role==='origin'?'START':String(index).padStart(2,'0');return `<g><circle cx="${x(lon).toFixed(1)}" cy="${y(lat).toFixed(1)}" r="12" fill="${feature.properties.role==='origin'?'#194c41':'#b64f3d'}"/><text x="${x(lon).toFixed(1)}" y="${(y(lat)+4).toFixed(1)}" text-anchor="middle" font-size="8" font-weight="700" fill="#fff">${label}</text><text x="${(x(lon)+17).toFixed(1)}" y="${(y(lat)+4).toFixed(1)}" font-size="15" fill="#17211f">${escapeHtml(feature.properties.name)}</text></g>`;}).join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="map-title map-desc"><title id="map-title">${escapeHtml(collection.metadata.cityId)} route map</title><desc id="map-desc">Simplified local street context with itinerary points. Lines are for orientation and are not navigation instructions.</desc><rect width="100%" height="100%" fill="#f4f0e8"/>${roads}${routes}${markers}<text x="24" y="${height-18}" font-size="12" fill="#303b37">${escapeHtml(collection.metadata.attribution)} · Map lines are simplified</text></svg>`;
+  const midLat=(minY+maxY)/2*Math.PI/180,kmX=(maxX-minX)*111.32*Math.cos(midLat),kmY=(maxY-minY)*111.32,scale=Math.min((width-pad*2)/kmX,(height-pad*2)/kmY),mapWidth=kmX*scale,mapHeight=kmY*scale,offsetX=(width-mapWidth)/2,offsetY=(height-mapHeight)/2;
+  const x=lon=>offsetX+(lon-minX)*111.32*Math.cos(midLat)*scale;
+  const y=lat=>height-offsetY-(lat-minY)*111.32*scale;
+  const grid=Array.from({length:5},(_,index)=>{const gx=pad+index*(width-pad*2)/4,gy=pad+index*(height-pad*2)/4;return `<path d="M${gx.toFixed(1)} ${pad}V${height-pad} M${pad} ${gy.toFixed(1)}H${width-pad}" stroke="#e3dfd4" stroke-width="1"/><text x="${gx.toFixed(1)}" y="${height-pad+16}" text-anchor="middle" font-size="10" fill="#69736b">${(minX+(maxX-minX)*index/4).toFixed(3)}°E</text><text x="${pad-7}" y="${(gy+3).toFixed(1)}" text-anchor="end" font-size="10" fill="#69736b">${(maxY-(maxY-minY)*index/4).toFixed(3)}°N</text>`;}).join('');
+  const roads=collection.features.filter(feature=>feature.geometry.type==='LineString'&&!feature.properties.routeLegId&&!feature.properties.mapGrid).map(feature=>`<polyline points="${feature.geometry.coordinates.map(point=>`${x(point[0]).toFixed(1)},${y(point[1]).toFixed(1)}`).join(' ')}" fill="none" stroke="#b6c5bd" stroke-width="1.4"/>`).join('');
+  const routes=collection.features.filter(feature=>feature.properties.routeLegId).map(feature=>`<polyline points="${feature.geometry.coordinates.map(point=>`${x(point[0]).toFixed(1)},${y(point[1]).toFixed(1)}`).join(' ')}" fill="none" stroke="#b64f3d" stroke-width="4" stroke-dasharray="${feature.properties.routeGeometryStatus==='schematic'?'8 8':'none'}" stroke-linecap="round" stroke-linejoin="round"/>`).join('');
+  const markers=collection.features.filter(feature=>feature.geometry.type==='Point').map((feature,index)=>{const [lon,lat]=feature.geometry.coordinates,label=feature.properties.returnPoint?'S/R':feature.properties.role==='origin'?'START':String(index).padStart(2,'0'),name=feature.properties.returnPoint?`${feature.properties.name} (start and return)`:feature.properties.name;return `<g><circle cx="${x(lon).toFixed(1)}" cy="${y(lat).toFixed(1)}" r="12" fill="${feature.properties.role==='origin'?'#194c41':'#b64f3d'}"/><text x="${x(lon).toFixed(1)}" y="${(y(lat)+4).toFixed(1)}" text-anchor="middle" font-size="8" font-weight="700" fill="#fff">${label}</text><text x="${(x(lon)+17).toFixed(1)}" y="${(y(lat)+4).toFixed(1)}" font-size="15" fill="#17211f">${escapeHtml(name)}</text></g>`;}).join('');
+  const disclaimer=collection.metadata.geometryStatus==='schematic-stop-order'?'Dashed lines are stop-order illustrations only, not walking or transit alignments.':'Lines show orientation only and are not navigation instructions.';
+  const sourceOnly=roads.length===0?'<text x="450" y="38" text-anchor="middle" font-size="12" fill="#69736b">No street geometry bundled · locations plotted from cited coordinates</text>':'';
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="map-title map-desc"><title id="map-title">${escapeHtml(collection.metadata.cityId)} route map</title><desc id="map-desc">Source-backed geographic points with latitude and longitude grid. ${escapeHtml(disclaimer)}</desc><rect width="100%" height="100%" fill="#f4f0e8"/>${grid}${sourceOnly}${roads}${routes}${markers}<text x="24" y="${height-36}" font-size="12" fill="#303b37">${escapeHtml(disclaimer)}</text><text x="24" y="${height-18}" font-size="12" fill="#303b37">${escapeHtml(collection.metadata.attribution)}</text></svg>`;
 }
 
 module.exports={buildCityMapData};
+
+if(require.main===module){
+  const root=path.resolve(__dirname,'..');
+  const registry=JSON.parse(fs.readFileSync(path.join(root,'data/city-routes.json'),'utf8'));
+  const cityIds=process.argv.slice(2).length?process.argv.slice(2):Object.keys(Object.fromEntries(registry.routes.map(route=>[route.cityId,true])));
+  for(const cityId of cityIds){
+    const route=registry.routes.find(item=>item.cityId===cityId);
+    if(!route)throw new Error(`No city route is available for ${cityId}`);
+    const sourcePath=path.join(root,'maps','sources',`${cityId}.geojson`);
+    if(!fs.existsSync(sourcePath))throw new Error(`No licensed local map source exists for ${cityId}`);
+    const result=buildCityMapData(cityId,route,JSON.parse(fs.readFileSync(sourcePath,'utf8')));
+    const out=path.join(root,'maps','cities');fs.mkdirSync(out,{recursive:true});
+    fs.writeFileSync(path.join(out,`${cityId}.geojson`),`${JSON.stringify(result.geojson)}\n`);
+    fs.writeFileSync(path.join(out,`${cityId}.svg`),result.fallbackSvg);
+    const size=Buffer.byteLength(JSON.stringify(result.geojson));
+    if(size>1024*1024)throw new Error(`${cityId} map output exceeds 1 MiB (${size} bytes)`);
+    console.log(`${cityId}: ${result.geojson.features.length} features, ${size} GeoJSON bytes, ${Buffer.byteLength(result.fallbackSvg)} SVG bytes, ${result.geojson.metadata.geometryStatus}`);
+  }
+}
