@@ -16,3 +16,4 @@ Skills included:
 - `youtube-createsg1`
 - `youtube-createsg2`
 - `youtube-upload`
+- `japan-city-brochure`
