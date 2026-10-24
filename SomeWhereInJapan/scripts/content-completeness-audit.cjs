@@ -19,7 +19,8 @@ const legitimatePlaceReferences = {
   'iwakuni-castle': ['Kintaikyo Bridge'],
   'tokyo-in-layers': ['Meiji Jingu'],
   'kamakura-temple-to-tide': ['Tsurugaoka Hachimangu'],
-  'osaka-after-hours': ['Dotonbori']
+  'osaka-after-hours': ['Dotonbori'],
+  'matsuyama-s-castle-hill': ['Dogo Onsen', 'Matsuyama Castle']
 };
 const detailsFor = id => details[id] || null;
 const routeFor = id => routes.find(route => route.placeId === id) || null;
@@ -78,7 +79,7 @@ function checkPlace(item) {
   const nearestStation = /\b(?:station|airport|port)\b/i.test(accessText);
   const namedLine = /\b(?:line|railway|railroad|shinkansen|metro|subway|bus(?:es)?|ferry)\b/i.test(accessText);
   const accessSource = sources.some(url => /\.go\.jp|\.lg\.jp|\.or\.jp|\.ne\.jp|\.jp\//i.test(url)
-    || /^https?:\/\/(?:www\.)?(?:gotokyo\.org|visit\.trip-kamakura\.com|hakonenavi\.jp|japan\.travel|tsuruokacity\.com|aizukanko\.com|yokohamajapan\.com|kamikochi\.org|kyoto\.travel)(?:\/|$)/i.test(url));
+    || /^https?:\/\/(?:www\.)?(?:gotokyo\.org|visit\.trip-kamakura\.com|hakonenavi\.jp|japan\.travel|tsuruokacity\.com|aizukanko\.com|yokohamajapan\.com|kamikochi\.org|kyoto\.travel|beppu-tourism\.com|beppu-jigoku\.com)(?:\/|$)/i.test(url));
   const practicalText = plain(capture(page, /<aside[\s\S]*?<\/aside>/i) + ' ' + (record?.visitPlan || '') + ' ' + (record?.seasonality || '') + ' ' + (record?.costs || []).map(cost => cost.note || '').join(' ') + ' ' + (record?.claims || []).map(claim => claim.text || '').join(' '));
   const season = /\b(?:spring|summer|autumn|fall|winter|year.round|January|February|March|April|May|June|July|August|September|October|November|December)\b/i.test(practicalText);
   const visitTime = /\b\d+(?:\.\d+)?\s*(?:hours?|hrs?|minutes?|mins?|days?)\b/i.test(practicalText) || /estimate/i.test(practicalText);

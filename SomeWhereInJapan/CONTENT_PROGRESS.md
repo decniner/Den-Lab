@@ -1,6 +1,6 @@
 # Content progress — Somewhere in Japan
 
-Gate result: **34/310 places complete**. A row is complete only when every research, data, page, access, seasonal, and source-date check in the audit passes. Last audited: 2026-10-24.
+Gate result: **54/310 places complete**. A row is complete only when every research, data, page, access, seasonal, and source-date check in the audit passes. Last audited: 2026-10-24.
 
 | Place | Region | Batch | Checklist | Sources | Photo | Gaps |
 |---|---|---:|---|---:|---|---|
@@ -38,26 +38,26 @@ Gate result: **34/310 places complete**. A row is complete only when every resea
 | Osaka, after hours | Kansai | region · Kansai | PASS | 5 (4 dated) | verified | — |
 | Nara, between trees | Kansai | region · Kansai | PASS | 6 (5 dated) | verified | — |
 | Arashiyama’s green corridor | Kansai | region · Kansai | PASS | 6 (5 dated) | verified | — |
-| Himeji, the white heron | Kansai | region · Kansai | FAIL (8) | 2 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Koyasan after dusk | Kansai | region · Kansai | FAIL (9) | 1 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Kumano Kodo, the old paths | Kansai | region · Kansai | FAIL (8) | 3 (2 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, structured-story-and-highlights, card-dialog-specific-content |
-| Lake Biwa’s eastern shore | Kansai | region · Kansai | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Miyajima tide lines | Chugoku | region · Chugoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Hiroshima, a city of peace | Chugoku | region · Chugoku | FAIL (9) | 1 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Tottori’s shifting dunes | Chugoku | region · Chugoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Kurashiki’s canal quarter | Chugoku | region · Chugoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Onomichi’s hillside lanes | Chugoku | region · Chugoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Izumo, land of old stories | Chugoku | region · Chugoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Iwami Ginzan’s forest paths | Chugoku | region · Chugoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| The Iya Valley | Shikoku | region · Shikoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Naoshima, art and sea | Shikoku | region · Shikoku | FAIL (9) | 2 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Matsuyama’s castle hill | Shikoku | region · Shikoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Shimanami Kaido by bicycle | Shikoku | region · Shikoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Cape Ashizuri’s ocean edge | Shikoku | region · Shikoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Oboke Gorge by river | Shikoku | region · Shikoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Konpira-san’s long climb | Shikoku | region · Shikoku | FAIL (9) | 1 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Beppu, steam rising | Kyushu | region · Kyushu | FAIL (9) | 2 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Yakushima, ancient green | Kyushu | region · Kyushu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
+| Himeji, the white heron | Kansai | region · Kansai | PASS | 7 (4 dated) | verified | — |
+| Koyasan after dusk | Kansai | region · Kansai | PASS | 5 (4 dated) | verified | — |
+| Kumano Kodo, the old paths | Kansai | region · Kansai | PASS | 6 (5 dated) | verified | — |
+| Lake Biwa’s eastern shore | Kansai | region · Kansai | PASS | 6 (5 dated) | verified | — |
+| Miyajima tide lines | Chugoku | region · Chugoku | PASS | 5 (4 dated) | verified | — |
+| Hiroshima, a city of peace | Chugoku | region · Chugoku | PASS | 5 (4 dated) | verified | — |
+| Tottori’s shifting dunes | Chugoku | region · Chugoku | PASS | 5 (4 dated) | verified | — |
+| Kurashiki’s canal quarter | Chugoku | region · Chugoku | PASS | 5 (4 dated) | verified | — |
+| Onomichi’s hillside lanes | Chugoku | region · Chugoku | PASS | 5 (4 dated) | verified | — |
+| Izumo, land of old stories | Chugoku | region · Chugoku | PASS | 5 (4 dated) | verified | — |
+| Iwami Ginzan’s forest paths | Chugoku | region · Chugoku | PASS | 5 (4 dated) | verified | — |
+| The Iya Valley | Shikoku | region · Shikoku | PASS | 5 (4 dated) | verified | — |
+| Naoshima, art and sea | Shikoku | region · Shikoku | PASS | 5 (4 dated) | verified | — |
+| Matsuyama’s castle hill | Shikoku | region · Shikoku | PASS | 5 (4 dated) | verified | — |
+| Shimanami Kaido by bicycle | Shikoku | region · Shikoku | PASS | 5 (4 dated) | verified | — |
+| Cape Ashizuri’s ocean edge | Shikoku | region · Shikoku | PASS | 5 (4 dated) | verified | — |
+| Oboke Gorge by river | Shikoku | region · Shikoku | PASS | 5 (4 dated) | verified | — |
+| Konpira-san’s long climb | Shikoku | region · Shikoku | PASS | 6 (5 dated) | verified | — |
+| Beppu, steam rising | Kyushu | region · Kyushu | PASS | 5 (4 dated) | verified | — |
+| Yakushima, ancient green | Kyushu | region · Kyushu | PASS | 5 (4 dated) | verified | — |
 | Nagasaki, harbor of many worlds | Kyushu | region · Kyushu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Aso’s wide caldera | Kyushu | region · Kyushu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Kurokawa’s onsen lanes | Kyushu | region · Kyushu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |

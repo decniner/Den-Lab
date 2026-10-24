@@ -607,12 +607,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/himeji-the-white-heron/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -626,13 +624,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/koyasan-after-dusk/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -645,17 +641,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/kumano-kodo-the-old-paths/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "invalid-visit-point",
-        "missing-stay-recommendations",
-        "photo-not-verified",
-        "map-location-not-verified",
-        "weather-plan-not-verified"
-      ],
-      "sourceStatus": "sources-recorded",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -668,13 +658,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/lake-biwa-s-eastern-shore/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -687,13 +675,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/miyajima-tide-lines/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -706,13 +692,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/hiroshima-a-city-of-peace/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -725,13 +709,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/tottori-s-shifting-dunes/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -744,13 +726,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/kurashiki-s-canal-quarter/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -763,13 +743,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/onomichi-s-hillside-lanes/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -782,13 +760,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/izumo-land-of-old-stories/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -801,13 +777,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/iwami-ginzan-s-forest-paths/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -820,13 +794,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/the-iya-valley/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -839,13 +811,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/naoshima-art-and-sea/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -858,13 +828,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/matsuyama-s-castle-hill/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -877,13 +845,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/shimanami-kaido-by-bicycle/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -896,13 +862,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/cape-ashizuri-s-ocean-edge/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -915,13 +879,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/oboke-gorge-by-river/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -934,13 +896,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/konpira-san-s-long-climb/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -953,13 +913,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/beppu-steam-rising/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -972,13 +930,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/yakushima-ancient-green/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {

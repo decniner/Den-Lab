@@ -894,12 +894,12 @@ The generated guide scan found 0 filename-style image alt tags and 0 Furano-cont
 
 ### Gate results
 
-- **Checklist:** 34/310 complete; 276 incomplete, with each place and each missing item listed in CONTENT_AUDIT.md.
+- **Checklist:** 54/310 complete; 256 incomplete, with each place and each missing item listed in CONTENT_AUDIT.md.
 - **Uniqueness:** 1 story/highlight sentences occur in more than three places.
 - **Entity gate:** checked within each place’s story; requirements and per-place counts are recorded above.
 - **No-hedge gate:** story text is checked for the prohibited placeholder phrases; the per-place uniqueStory result reports failures.
 - **Cross-contamination:** 1 places contain references to another catalogue place outside their own named highlights; those names are recorded with each exception.
-- **Mojibake:** scanned 431 UTF-8 source/data/generated text files, including 318 HTML pages; findings: 0.
+- **Mojibake:** scanned 433 UTF-8 source/data/generated text files, including 318 HTML pages; findings: 0.
 - **Charset pipeline:** all checked HTML files declare UTF-8 as the first element in the head; invalid UTF-8 bytes are reported by the gate.
 
 ### Research and encoding findings
