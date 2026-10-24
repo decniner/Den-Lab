@@ -796,3 +796,92 @@ The earlier-review offenders were rechecked too: Tottori Sand Dunes, Yamadera, K
 - **PASS** - Node syntax checks passed for edited JavaScript modules and audit utilities.
 - **LIMIT** - Browser layout/interaction checks used local headless Chromium, not physical devices. Image availability was checked from this environment; a visitor's network or Commons availability can still vary. Runtime error handlers remove the image and its frame cleanly if an image later fails to load.
 - **LIMIT** - The catalogue still contains existing non-photographic CSS patterns when a photo is absent; these are deliberately abstract and do not depict or claim to depict a destination.
+
+<!-- BEGIN STRICT RE-AUDIT FIXES 2026-10-24 -->
+## Strict re-audit fixes - 2026-10-24
+
+This section corrects earlier coverage claims and records what was verified in the current build. Counts and tables are generated from manifests, route data, and rendered output by `scripts/strict-reaudit-audit.cjs --write-report`. Site version: **v1.4**.
+
+### P0-1 - Static guide photo purge: DONE
+
+**Root cause:** the prior photo purge audited the interactive catalogue and city/day-trip records but its static guide generator did not apply the same verification gate; the earlier site-wide claim therefore exceeded the check performed. **Source fix:** `scripts/build-all-field-guides.mjs` applies `tools/static-guide-policy.cjs` during generation and only retains images with verified source, credit, license, and descriptive alt. **Regression:** `node tests/strict-reaudit.test.cjs` scans the built HTML tree, including the app shell, city guide surface, and each place guide. **Rendered evidence:** browser check at 1280px and 390px for the shared place-guide template; app card and detail dialog at desktop/mobile widths. These 310 guide slots were checked; the browser loaded 207/207 distinct URLs referenced by the catalogue, city-stop, and day-trip photo audit.
+
+| Static guide photo slots | Kept verified | Replaced | Removed |
+|---:|---:|---:|---:|
+| 310 | 163 | 0 | 147 |
+
+**Correction to claim history:** earlier `FIX_REPORT.md` text said all 310 destinations retained photos and described illustrative fallback photos. That was not true of the generated static guide layer. The app-layer audit remains 359 placements (196 kept, 13 replaced, 150 removed); it does not include the 310 generated place-guide slots. The separate guide-layer count above is the current verified result. Earlier false text is retained as history and superseded by this dated correction.
+
+### P0-2 - Foreign Furano labels: DONE
+
+**Root cause:** `city-route-ui.js` hard-coded “in Furano” into the generated YouTube aria label. **Source fix:** the label now uses the actual stop name. **Regression:** the full HTML scan checks all 310 place guides for the contaminated label (0 pages), as well as the entire built HTML set; the browser test inspects rendered Kamakura, Kawagoe, and Shuri guide links at desktop/mobile widths. Furano appears in no generated YouTube search label.
+
+### P0-3 - Walking route on Google Maps: NOT DONE (safe partial coverage)
+
+**Root cause:** most destination route records lack a recorded access origin, verified walking legs, or a researched return loop. **Source work:** `google-maps-routes.js` builds encoded Google Maps URL API links from explicit route/station data; dialogs, generated guide pages, and city route previews use the shared helper. Links open in a new tab, use `rel=noopener`, include an inline SVG arrow, and have a 44px minimum target. **Regression/rendered check:** `tests/place-routes.test.cjs` verifies the Nikko route fixture; browser check confirms the rendered guide link and exact ordered stops. The existing embedded OSM maps and directions are retained.
+
+| Route coverage from data | Count |
+|---|---:|
+| Full verified walking loops | 3 |
+| Recorded station-to-place walking links | 9 |
+| No link, no route fabricated | 298 |
+| No recorded origin | 282 |
+| First recorded leg is not walking | 10 |
+| No verified return loop | 6 |
+| City route previews with a verified return loop | 0/10 |
+
+Nikko rendered URL: `https://www.google.com/maps/dir/?api=1&origin=Tobu-Nikko%20Station%2C%20Matsubara-cho%2C%20Nikko%2C%20Tochigi%2C%20Japan&destination=Tobu-Nikko%20Station%2C%20Matsubara-cho%2C%20Nikko%2C%20Tochigi%2C%20Japan&travelmode=walking&waypoints=Shinkyo%20Bridge%2C%20Kamihatsuishi%2C%20Nikko%2C%20Japan%7CNikkosan%20Rinnoji%20Temple%2C%20Sannai%2C%20Nikko%2C%20Japan%7CNikko%20Toshogu%20Shrine%2C%20Sannai%2C%20Nikko%2C%20Japan%7CNikko%20Futarasan-jinja%20Shrine%2C%20Sannai%2C%20Nikko%2C%20Japan%7CTaiyuin%20Mausoleum%2C%20Sannai%2C%20Nikko%2C%20Japan`. The 298 missing destination links and 10 city previews are **not complete**; adding them requires researched start/return points and walking order. Three sampled no-route guides (Kamakura, Kawagoe, and Shuri) intentionally expose no invented station-based link.
+
+### P1-1 - City plan/map counts and equal visit ranges: DONE
+
+**Root cause:** authored city itineraries and route-map feature lists used different stop naming/order, so Sapporo’s header, cards, and map diverged. **Source fix:** `city-origin-ui.js` resolves the authored plan to route features using reviewed aliases and builds the day map from the same ordered stops; equal-ended visit ranges render as a single value. **Regression:** `tests/city-origins.test.cjs`, `tests/strict-reaudit.test.cjs`, and the rendered Sapporo 1/2-day browser check. The full generated HTML scan found 0 pages with equal-ended minute ranges.
+
+| City | Authored stops | Map matches | 1 day | 2 days | 3 days |
+|---|---:|---:|---:|---:|---:|
+| tokyo | 4 | 4/4 | 4 | 2 + 2 | 2 + 1 + 1 |
+| sapporo | 5 | 5/5 | 5 | 3 + 2 | 2 + 2 + 1 |
+| sendai | 4 | 4/4 | 4 | 2 + 2 | 2 + 1 + 1 |
+| nagoya | 4 | 4/4 | 4 | 2 + 2 | 2 + 1 + 1 |
+| kyoto | 5 | 5/5 | 5 | 3 + 2 | 2 + 2 + 1 |
+| osaka | 4 | 4/4 | 4 | 2 + 2 | 2 + 1 + 1 |
+| hiroshima | 5 | 5/5 | 5 | 3 + 2 | 2 + 2 + 1 |
+| takamatsu | 4 | 4/4 | 4 | 2 + 2 | 2 + 1 + 1 |
+| fukuoka | 5 | 5/5 | 5 | 3 + 2 | 2 + 2 + 1 |
+| naha | 4 | 4/4 | 4 | 2 + 2 | 2 + 1 + 1 |
+
+### P1-2 - Saved view and browse filters: DONE
+
+**Root cause:** Saved entries passed through active search/region/mood filters. **Source fix:** Saved renders the saved set independently of browse filters. **Regression/rendered evidence:** browser run saved three Hokkaido places, activated Kansai, then opened Saved; result was 3 saved places while Kansai remained active, and those three stored names survived a new page navigation. Mobile and desktop page widths stayed within viewport.
+
+### P1-3 - Deterministic Tokyo day-trip defaults: DONE
+
+**Root cause:** unversioned persisted state could restore stale values (including the previous ¥1,000 case). **Source fix:** `daytrip-core.js` only restores schema-versioned state; no URL or saved state uses documented defaults (October/current month, full day, public transit, ¥15,000, balanced). Shared URL state still overrides when present. **Regression/rendered evidence:** the browser cleared storage and ran three independent clean loads; each produced identical values and one verified Sawara match (8-10.5h, ¥6,100-¥7,100), with status “1 researched day fit your time and budget.”
+
+### P1-4 - Multi-day plans for each origin: DONE
+
+**Root cause:** the control could claim a duration beyond the authored stop list. **Source fix:** the days input maximum is the city’s stop count, with the cap stated before selection; route and cards derive from the same day split. `city-origins.js` partitions the full authored stop list into nonempty days. **Regression/rendered evidence:** unit tests cover all city plans; browser checks set 1, 2, and 3 days for all ten city plans and assert each day is nonempty and all stops remain included. Split counts are shown in the P1-1 table.
+
+### P2-1 - Nikko flagship guide: DONE
+
+**Root cause:** route data lacked a total time allowance and per-stop context, while the guide repeated generic photo/research hedges. **Source fix:** `data/place-routes.json` contains the 5.5-6.5 hour planning estimate and explicitly estimated stop durations; the shared route UI labels estimates and presents visitor facts with sources. The route now offers a Google Maps transit return from the officially mapped Taiyuin/Futarasan Jinja Mae stop alongside the walking return, and tells visitors to check the operator timetable. The guide keeps one overall photo note. **Regression/rendered evidence:** Nikko desktop and 390px browser checks confirm the time allowance, per-stop visitor facts, photo credit, ordered route, walking and bus links, correct yen symbols, and no “not verified” or “research in progress” text in its route section. Fees/hours link to the [Nikkozan Rinnoji official information](https://www.rinnoji.or.jp/en/information.html), [Nikko City Futarasan visitor information](https://www.nikko-kankou.org/public/spot/4), [Visit Tochigi Toshogu information](https://www.visit-tochigi.com/plan-your-trip/things-to-do/714/), [Visit Nikko's central highlights itinerary](https://www.visitnikko.jp/en/itineraries/central-nikkos-highlights-for-the-time-pressed/), and the [official Nikko visitor bus map](https://www.nikko-kankou.org/public/storage/pamphlet_pdf/20250522091348_Nikko_tabinakaB5_EN_kakunin%28%E5%9C%A7%E7%B8%AE%29.pdf).
+
+### P2-2 - Kamakura/Kawagoe complete research and filler scan: NOT DONE
+
+The rendered labels in Kamakura and Kawagoe no longer contain the known “in Furano” cross-contamination. However, these two guides have not been upgraded to Nikko's complete source-backed route, timed visit, admission, opening-hour, access, and photo standard; guide status remains generated from `data/coverage-manifest.json` at 1 complete / 309 provisional. No unsupported route or fee data was added. The full access-mode-specific filler scan and the two complete-guide acceptance checks still need research, so this item is explicitly not claimed as done.
+
+### P2-3 - Card/dialog label spacing: DONE
+
+**Root cause:** adjacent actions had no semantic text separator and inherited compact inline styling. **Source fix:** `app.js` inserts a real whitespace text node; `index.html` has a separator between dialog labels; `styles.css` uses wrapping flex actions. **Regression/rendered evidence:** browser checks at 390px and 1280px confirm card and dialog action text separation, flex wrapping, and no viewport overflow.
+
+### P3 - small fixes: DONE for listed checks
+
+The generated guide scan found 0 filename-style image alt tags and 0 Furano-contaminated labels; the shared Maps helper converts middle-dot separators to commas. The route-label checks also removed a stray question-mark stop name and replaced the Tokyo comparison question mark with a clear multiply icon. At desktop/mobile, the Japan-map Hokkaido pin is inside the map frame and the mood-pill row uses horizontal overflow rather than clipping. The full generated HTML scan found 0 forbidden unverified-photo label pages.
+
+### Regression summary and limits
+
+- **PASS** - `node tests/strict-reaudit.test.cjs`: 14/14; checks 318 rendered HTML files, including 310 guide pages; forbidden labels, equal minute ranges, Furano contamination, and filename-style guide alts: 0.
+- **PASS** - `node tests/city-origins.test.cjs`: 6/6; `node tests/place-routes.test.cjs`: 3/3; `node tests/daytrip-core.test.cjs`: 8/8.
+- **PASS** - Edge browser run: 207/207 unique audited image URLs loaded; no horizontal overflow at 360/390/412/430px; desktop checks at 1280px; interactive search, tabs, filters, Saved, month results, Tokyo finder, Sapporo route, and Nikko guide.
+- **NOT DONE** - P0-3 coverage gaps and P2-2 research gaps listed above are material. The site-wide status does not imply every place has a verified Google walking route or full researched guide.
+- Browser evidence is local headless Edge/Chromium with device emulation, not physical devices. The v1.4 build passed local checks; this report does not claim a GitHub Pages deployment until the push completes.
+<!-- END STRICT RE-AUDIT FIXES 2026-10-24 -->

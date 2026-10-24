@@ -1297,3 +1297,8 @@ Coverage includes 310 catalogue destinations across cards/search, place dialog, 
 | Odawara day trip | Day-trip guide hero |  | https://commons.wikimedia.org/wiki/Special:FilePath/Odawara%20Castle.jpg?width=1600 | https://commons.wikimedia.org/wiki/File:Odawara_Castle.jpg | ZAC | CC BY 2.0 | KEPT | Odawara Castle in Kanagawa, Japan | Destination-specific Commons file page retained |
 
 **Verdict totals:** 196 KEPT, 13 REPLACED, 150 REMOVED.
+
+
+## Dated correction - 2026-10-24: static guide layer
+
+The headline audit above covers 359 interactive catalogue, city-stop, and day-trip photo slots; it did not include the 310 generated `places/*/index.html` guide slots. The separate static-guide audit retains 163 verified images, replaces 0, and removes 147. This is a separate surface count and is not added to the earlier 359 total. The generated scan covers 318 HTML files and reports 0 forbidden unverified-photo label pages. See the dated strict re-audit section in `FIX_REPORT.md` for method and per-surface checks.
