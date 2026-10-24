@@ -69,14 +69,17 @@
         "Parking and system kitchen listed"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page flags the building as coverage-ratio exceeded (建蔽率オーバー — existing non-conforming)",
+        "Seller's contract non-conformity liability is exempted (契約不適合責任免責) per the detail page",
+        "Septic-tank drainage (浄化槽), not mains sewer"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21994943/003225001/x1030Z21994943.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h02",
@@ -102,15 +105,18 @@
         "Corner lot, 2-car space, 18.5-jo LDK"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Walk is at the edge of the brief at 14 min"
+        "Walk is at the edge of the brief at 14 min",
+        "Plot is in an urbanisation control area (都市計画: 市街化調整区域) with zoning unspecified (用途地域 無指定), 50%/100% — rebuilding is restricted in principle",
+        "Septic-tank drainage (浄化槽)",
+        "A second agency feed on goo lists the identical house (same areas and build date) at ¥2,480万 vs ¥2,399万 here — portal prices disagree; confirm the current asking price"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21720556/173595002/x1030Z21720556.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h03",
@@ -136,14 +142,15 @@
         "2-car parking, corner lot, generous storage"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Both usable stations are a full 15 min walk"
+        "Both usable stations are a full 15 min walk",
+        "Detail page: 1.72m² private-road portion included in the land figure",
+        "Landscape Act (景観法) listed among the legal restrictions on the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21216340/046740017/x1030Z21216340.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -169,14 +176,16 @@
         "Established Takanedai danchi-area shopping and schools nearby"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
         "Built May 1976 — pre-1981 old seismic standard (旧耐震), budget for seismic check/retrofit",
-        "50 years old — condition and remaining life drive the price"
+        "50 years old — condition and remaining life drive the price",
+        "Detail page: 13m² of the 68.96m² plot is public road (公衆用道路)",
+        "Building is a shop-with-residence (店舗付き住宅) per the detail page",
+        "No parking on the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21868249/113160001/x1030Z21868249.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
@@ -205,14 +214,15 @@
         "Immediate occupancy listed"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
         "Price reflects 1999 build despite prime walk — inspect condition carefully",
-        "Car space subject to vehicle size limits per listing"
+        "Car space subject to vehicle size limits per listing",
+        "Setback required (セットバック要) per the detail page",
+        "Zoning is neighbourhood-commercial (近隣商業, 80%/300%)"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21964780/006050465/x1030Z21964780.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -240,13 +250,14 @@
         "Large land for northern Funabashi at this price"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Listing notes shared drainage facility with maintenance fee and small shared ownership parcels for refuse/pump land"
+        "Listing notes shared drainage facility with maintenance fee and small shared ownership parcels for refuse/pump land",
+        "Detail page: 36.3m² private-road area included in the land figure",
+        "Handover is from Nov 2026 (引渡可能時期 2026年11月), not immediate"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21853903/006050465/x1030Z21853903.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -274,14 +285,15 @@
         "Near Otaki Park, quiet low-rise streetscape"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Funabashi Station is bus 25 min — this is a local-line lifestyle, not a Sobu commuter play"
+        "Funabashi Station is bus 25 min — this is a local-line lifestyle, not a Sobu commuter play",
+        "Detail page: 21.28m² of the 149.26m² plot is private road (私道)",
+        "Septic-tank drainage (浄化槽) per the detail page, and a landscape district (景観地区) restriction is listed"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21902086/109565001/x1030Z21902086.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -308,13 +320,12 @@
         "16-jo LDK, all rooms 5-jo+"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
         "1997 structure under the renovation — verify scope and warranty on the listing"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z20729973/124332001/x1030Z20729973.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -342,14 +353,14 @@
         "Price is land-value driven — strong location per yen"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
         "Built Nov 1983 — just after Jun 1981 new seismic standard, but 42 years old; condition check essential",
-        "Compact 75.81m² land"
+        "Compact 75.81m² land",
+        "Detail page: 6.65m² private-road area included in the land figure"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21273207/006050A93/x1030Z21273207.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -377,14 +388,14 @@
         "Quiet residential street per listing"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Small for families — 65.52m² building on 69.87m² land, 2LDK only"
+        "Small for families — 65.52m² building on 69.87m² land, 2LDK only",
+        "Detail page: 21.55m² of the 69.87m² plot is private road (私道) — over 30% of the plot, so usable land is much smaller than the headline figure (setback itself is already completed)"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21702702/186392003/x1030Z21702702.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -411,14 +422,14 @@
         "Inner sashes for sound insulation, pantry kitchen"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Ask why a 2024 build is back on market after ~1 year — verify reason on listing"
+        "Detail page checked 2026-10-24: it states no reason for the ~1-year resale and lists no 告知事項 — ask the agent directly why a Nov 2024 build is back on the market",
+        "Legal restrictions on the detail page: Landscape Act (景観法) and height district (高度地区)"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21194802/048277009/x1030Z21194802.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -445,13 +456,14 @@
         "All rooms 6-jo+, washrooms on 1F and 2F"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "3-storey plan on 82.19m² land — stairs-heavy layout"
+        "3-storey plan on 82.19m² land — stairs-heavy layout",
+        "Detail page: 14.94m² private-road area included in the land figure",
+        "Handover is Feb 2027 (引渡可能時期 2027年2月), not immediate"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21965098/006050A93/x1030Z21965098.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -479,14 +491,13 @@
         "Sky balcony with water point, corner plot"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
         "At the very ceiling of the brief — no negotiation headroom assumed"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12204.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21408183/156871001/x1030Z21408183.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -513,14 +524,14 @@
         "South-west road frontage per listing"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Price is 'from' — only the cheapest unit is ¥41.8M; land/building figures are the smallest unit in the range (70.41-81.75m² / 93.18-113.02m²)"
+        "Price is 'from' — only the cheapest unit is ¥41.8M; land/building figures are the smallest unit in the range (70.41-81.75m² / 93.18-113.02m²)",
+        "Detail page: each unit carries a private-road burden (私道負担 10.06m² / 12.74m² / 8.72m² by unit); completion Dec 2026, move-in early Jan 2027"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6001/area_chiba/12204/045.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12204/030/Z/21953504.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -547,14 +558,13 @@
         "Otaki Park — cherry-blossom spot — 5 min walk"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Northern Funabashi — check urbanisation zoning and bus/car dependence for Funabashi Station trips on the listing"
+        "Detail-verified zoning: 第一種低層住居専用地域 (50%/100%) in the urbanisation area — NOT a control area; other restrictions listed: land-development work regulation area (宅地造成等工事規制区域), 10m absolute height limit, Landscape Act. Completed Sep 2026; 1 of 2 units remains. Northern Funabashi — Funabashi Station trips stay bus/car dependent"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/area_chiba/12204/079.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12204/030/W/21235478.html",
+        "verified": "detail",
+        "infoDate": "2026-10-20"
       }
     },
     {
@@ -581,13 +591,12 @@
         "Walk-in closets and bathroom dryer listed"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Northern Funabashi — check urbanisation zoning (市街化調整区域 borders nearby districts) on the listing before viewing"
+        "Detail-verified zoning: 第一種低層住居専用地域 (50%/100%) in the urbanisation area — NOT a control area, despite control-area land in nearby districts; handover by negotiation (相談)"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/area_chiba/12204/079.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/1/12204/030Z21736715/113160001/x1030Z21736715.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },

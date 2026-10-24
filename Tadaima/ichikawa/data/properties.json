@@ -86,14 +86,18 @@
       ],
       "cautions": [
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists a 14m² private-road portion alongside the plot — confirm whether it is included in the price",
+        "Buried Cultural Properties Protection Act and residential-land development regulation area （宅地造成工事規制区域） controls apply per the detail page",
+        "Drainage is an individual septic tank （個別浄化槽）, not mains sewer",
+        "A second goo index listing for the same unit (identical areas) shows ¥3,680万 and a 14-minute walk — confirm which price is current"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6016/area_chiba/12203/010.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12203/030/W/20995841.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
     },
     {
       "id": "h03",
@@ -154,13 +158,15 @@
       "cautions": [
         "Price is 'from' — units run to ¥5,380万 and only the cheapest falls within this collection's brief",
         "At the 15-minute walk limit; Kokufudai is a plateau edge — check slope/sediment-disaster zones on the city hazard map",
-        "Seen on a portal index page — verify details on the listing link"
+        "Scenic-district （風致地区） and Landscape Act （景観法） controls apply per the detail page",
+        "Drainage is a combined septic tank （合併浄化槽）, not mains sewer",
+        "Strict 40% coverage / 80% FAR limits per the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6002/area_chiba/12203.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12203/030/W/20166826.html",
+        "verified": "detail",
+        "infoDate": "2026-10-20"
       }
     },
     {
@@ -189,13 +195,14 @@
         "Price is 'from' — units run to ¥5,180万",
         "Very small 54.3–56.0m² plots — priced for the new building, not the land",
         "Shinai is low-lying bay-side land — check flood and liquefaction hazard maps; the walk is to Urayasu Station across the city border (Minami-Gyotoku is 16 min)",
-        "Seen on a portal index page — verify details on the listing link"
+        "Build-to-order: completion is around 10 months after contract per the detail page",
+        "A HOME'S town listing showed the same development topping at ¥5,280万 versus goo's ¥5,180万 — feeds disagree on the top unit price"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6002/area_chiba/12203.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12203/030/W/79115643.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
       }
     },
     {
@@ -221,12 +228,13 @@
         "Solar generation plus storage battery; wide roof balcony, 17.5-mat LDK, parking for 2"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists an 18.13m² private-road area alongside the registered plot — confirm whether it is included in the price",
+        "Legal restrictions noted on the detail page include the residential-land development regulation area （宅地造成工事規制区域）, Landscape Act, height cap, shadow rules and a Building Standards Act Art. 22 zone"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21146579/156582001/x1030Z21146579.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -252,14 +260,12 @@
         "Big, recent package: 103.7m² house on 122.9m², SE frontage on a 6m public road",
         "Vacant, immediate viewing; schools within walking distance"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21788815/113050001/x1030Z21788815.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -286,13 +292,12 @@
       ],
       "cautions": [
         "One portal feed lists the same house at ¥4,980万 — confirm the current price with the agent",
-        "Plateau-edge district — check slope/sediment zones on the hazard map",
-        "Seen on a portal index page — verify details on the listing link"
+        "Plateau-edge district — check slope/sediment zones on the hazard map"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21765651/006110038/x1030Z21765651.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -321,12 +326,13 @@
       "cautions": [
         "Multiple agents list this house at ¥3,299–3,349万 — confirm which listing/price is live",
         "Northern plateau fringe — check sediment-disaster zones; Hokuso Line fares are notably high",
-        "Seen on a portal index page — verify details on the listing link"
+        "One agent's listing for this house notes a scenic-district （風致地区） designation and a Building Standards Act Art. 22 zone — confirm with the seller",
+        "Drainage is a septic tank （浄化槽） per the detail page, not mains sewer"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21310953/146078001/x1030Z21310953.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -355,12 +361,13 @@
       "cautions": [
         "1998 structure beneath the renovation — check what the works actually covered and the frame's condition",
         "At the 15-minute walk limit; plateau edge — check slope/sediment zones",
-        "Seen on a portal index page — verify details on the listing link"
+        "Scenic-district （風致地区） and Landscape Act （景観法） restrictions are listed in the detail page's legal-restrictions field",
+        "Drainage is a septic tank （浄化槽） per the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12203&si%5B0%5D=008&si%5B1%5D=009&fn=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21577411/184772001/x1030Z21577411.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -389,13 +396,13 @@
       "cautions": [
         "Compact 60.0m² / 2DK building — priced for location, not space",
         "Mama lowland by the Edo River — check the flood hazard map",
-        "Seen on a portal index page — verify details on the listing link"
+        "Drainage is a septic tank （浄化槽） per the detail page, not mains sewer"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3005/ensen/199/2199130.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21987876/187202001/x1030Z21987876.html",
+        "verified": "detail",
+        "infoDate": "2026-10-20"
       }
     },
     {
@@ -423,13 +430,13 @@
       "cautions": [
         "Portal feeds disagree: headline land is 91.3m² but one agent's overview states 111.65m² registered and calls it 3LDK — verify the registry before pricing the land",
         "Hon-Gyotoku is low-lying Gyotoku plain — check Edo River flood and liquefaction hazard maps",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page notes Landscape Act （景観法） restrictions apply"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z76033626/147652001/x1030Z76033626.html",
+        "verified": "detail",
+        "infoDate": "2026-10-11"
       }
     },
     {
@@ -458,12 +465,12 @@
         "NO-REBUILD (再建築不可): the listing states the plot does not front a Building Standards Act road, so rebuilding is in principle impossible — only possible with an Art. 43(2)(ii) permission (building-review board consent). Price and finance it as a building-only purchase",
         "Very small 52.5m² plot; 3-storey plan",
         "Low-lying western lowland — check flood/liquefaction hazard maps",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page gives the handover timing as March 2027 — not immediate; confirm the current occupancy status before viewing"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21901202/000389230/x1030Z21901202.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 2
@@ -493,12 +500,14 @@
       "cautions": [
         "Small 60.1m² plot — check parking provision on the ground (none stated on the index)",
         "Northern lowland/plateau foot — check flood and slope hazard maps",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists a 0.94m² private-road portion （私道面積） alongside the plot",
+        "Zoning is neighbourhood-commercial （近隣商業） per the detail page, not residential-only",
+        "Drainage is a septic tank （浄化槽） per the detail page, not mains sewer"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21229012/000389230/x1030Z21229012.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -526,13 +535,12 @@
       ],
       "cautions": [
         "1997 structure — budget for age-related works; no renovation stated on the index",
-        "Honshio is reclaimed bay-side plain — liquefaction and flood risk: check the city hazard maps carefully",
-        "Seen on a portal index page — verify details on the listing link"
+        "Honshio is reclaimed bay-side plain — liquefaction and flood risk: check the city hazard maps carefully"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z20655509/003225001/x1030Z20655509.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -561,12 +569,12 @@
       "cautions": [
         "Very small 50.8m² plot — the value is the station walk, not the land",
         "Gyotoku plain is low-lying — check Edo River flood and liquefaction hazard maps",
-        "Seen on a portal index page — verify details on the listing link"
+        "The built-in garage is size-restricted （制限有） per the listing — check vehicle fit before relying on the parking"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/067.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21965103/006050B00/x1030Z21965103.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -595,12 +603,12 @@
       "cautions": [
         "Flag-pole plot (旗竿地): part of the headline 100.14m² is the access pole, so the effective building plot is smaller — measure it before pricing the land; car access/turning is constrained",
         "Bay-side Gyotoku plain — check flood and liquefaction hazard maps",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page quantifies the flag-pole strip: 28.34m² of the 100.14m² headline is access strip （路地状部分）, with only 2.2m of frontage onto the SW 5.9m road"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12203/015.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21375651/000232002/x1030Z21375651.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },

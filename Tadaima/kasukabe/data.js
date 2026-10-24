@@ -51,13 +51,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Very small 56.9m² plot — well below the Kasukabe norm; check parking and garden space on site",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists an 11m² private-road area (私道面積) alongside the 56.91m² plot — confirm whether it is included in the headline area"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6010/area_saitama/11214/053.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/1/11214/030Z20775000/124126003/x1030Z20775000.html",
+        "verified": "detail",
+        "infoDate": "2026-10-21"
       }
     },
     {
@@ -66,7 +66,7 @@ window.TADAIMA_DATA = {
       "district": "Bingo-Higashi 2",
       "districtJa": "備後東2丁目",
       "title": "New 3LDK with flex room — ZEH-level insulation, parking for 2",
-      "priceMan": 2780,
+      "priceMan": 2760,
       "priceFrom": false,
       "landM2": 90.27,
       "buildingM2": 88.6,
@@ -83,13 +83,13 @@ window.TADAIMA_DATA = {
         "2-tatami flex room beside the LDK; parking for 2 (standard + kei)"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists a 17m² private-road area (私道面積) alongside the 90.27m² plot — confirm whether it is included in the headline area"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6010/area_saitama/11214/053.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/1/11214/030Z20775001/124126003/x1030Z20775001.html",
+        "verified": "detail",
+        "infoDate": "2026-10-21"
       }
     },
     {
@@ -149,13 +149,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — detail page gives completion scheduled Nov 2026, with move-in about a month after contract"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/ensen/261/2261280.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11214/030/Z/21575709.html",
+        "verified": "detail",
+        "infoDate": "2026-10-21"
       }
     },
     {
@@ -182,13 +182,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — detail page gives completion scheduled Dec 2026"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/ensen/261/2261280.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11214/030/Z/21610028.html",
+        "verified": "detail",
+        "infoDate": "2026-10-21"
       }
     },
     {
@@ -215,13 +215,16 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Price is 'from' — units run to ¥4,280万 and only the cheapest fall at this figure; layouts run 3LDK–4LDK and buildings to 97.29m²",
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — detail page gives completion late Nov 2026 and move-in mid-Jan 2027",
+        "Private-road burden: access is via a 6m private road, with a 393.44m² private road held at a 1/11 share — confirm the share and any upkeep costs",
+        "Zoning is split between Type-1 residential and quasi-industrial (準工業) — neighbouring uses may not all be houses",
+        "LP gas, not city gas (per the detail page)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6002/area_saitama/11214/010.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11214/030/Z/21529729.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -247,12 +250,12 @@ window.TADAIMA_DATA = {
         "4LDK plus tatami corner and small garden; parking for 2 (car-size dependent); panorama tour available"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page zones the plot 商業地域 (commercial), noting Type-2 residential also applies — a station-front site, so neighbouring uses may not be purely residential"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z20571697/000009005/x1030Z20571697.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -278,13 +281,11 @@ window.TADAIMA_DATA = {
         "Nearly new (2019) at a used price; 17-post LDK with counter kitchen",
         "~2-post walk-in closet; parking for 2; generous 126.0m² plot"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z74798022/161419001/x1030Z74798022.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -312,13 +313,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Listing notes a small unutilised-land share (5.33m², 1/4 share) attached to the plot — confirm what it is before purchase",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists a 22.75m² private-road area (私道面積) alongside the 125.04m² plot — confirm whether it is included in the headline area (the record's unutilised-land-share caution is corroborated verbatim on the page)"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z78463988/006110007/x1030Z78463988.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -343,13 +344,11 @@ window.TADAIMA_DATA = {
         "Corner lot with light and ventilation on two sides; 4LDK plus 2 walk-in closets",
         "Also 14 min from Kasukabe Station — two stations usable; parking (car-size dependent)"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21701555/000232144/x1030Z21701555.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -378,13 +377,14 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Part of the site carries a surface right (地上権) for Tobu's continuous grade-separation works until 30 Sep 2029 — get the scope in writing before purchase",
         "At the 15-minute walk limit of this collection (to Kasukabe Station)",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page zones the plot 近隣商業 (neighbourhood commercial, 80%/200%) — neighbouring commercial uses are possible this close to the station",
+        "Detail page lists an 8m² private-road area (私道面積) alongside the 205.6m² plot — confirm whether it is included in the headline area"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z78870695/006110007/x1030Z78870695.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
       }
     },
     {
@@ -411,13 +411,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Compact package — 67.5m² house on a 70.9m² plot",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page describes the house as vacant (空き家) and viewable at any time — confirm occupancy status at enquiry"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21468015/006110007/x1030Z21468015.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -444,12 +444,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "The structure is 21 years old despite the renovation — check what the works actually covered",
-        "Seen on a portal index page — verify details on the listing link"
+        "LP gas, not city gas (per the detail page's equipment list)"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21760291/142868001/x1030Z21760291.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -475,13 +475,11 @@ window.TADAIMA_DATA = {
         "Spacious 99.6m² 4LDK on a 113.3m² plot for under ¥2,500万",
         "Parking; short 7-minute walk to Takesato Station"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21980982/100451225/x1030Z21980982.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -510,14 +508,13 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Seller's defect liability is waived (契約不適合責任免責) and boundaries are not demarcated (境界非明示) — sold as-is; budget for a survey and inspection",
         "Headline land area includes 31.19m² of agreement-passage land — the effective plot is ~175.1m²; price the land accordingly",
-        "Kasukabe is Edo/Naka River lowland — verify the flood-hazard-map depth for this address",
-        "Seen on a portal index page — verify details on the listing link"
+        "Kasukabe is Edo/Naka River lowland — verify the flood-hazard-map depth for this address"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_saitama/11214/059.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z20569440/006110007/x1030Z20569440.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
       },
       "majorCautions": 1
     },
@@ -547,12 +544,12 @@ window.TADAIMA_DATA = {
         "Built Mar 1966 — pre-1981 seismic standard; at 60 years the structure is at end of life, so judge it mainly as land and budget demolition/rebuild",
         "Seller's defect liability is waived (契約不適合責任免責) — sold as-is",
         "Land includes ~10.95m² of setback (with a utility pole); water is NOT connected — connection at buyer's cost; a ¥15,000/year road-use payment to the road owner applies",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page: access is a 1.8m-wide road on the west side and there is no parking space (駐車場 無)"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21788971/006110022/x1030Z21788971.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 2
@@ -583,15 +580,15 @@ window.TADAIMA_DATA = {
         "Built Jul 1967 — pre-1981 seismic standard; the structure contributes little at this age and price",
         "Seller's defect liability is waived (契約不適合責任免責) — sold as-is",
         "A road setback (道路後退) applies on any rebuild — the effective plot will shrink",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists road frontage of only 0.1m to the north (接道状況 北0.1m) — together with the rebuild setback, confirm legal road access before purchase"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3008/area_saitama/11214/042.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z20914705/002237002/x1030Z20914705.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
-      "majorCautions": 2
+      "majorCautions": 3
     },
     {
       "id": "h18",
