@@ -1,0 +1,15 @@
+[
+  {"id":"sapporo-beer-museum","name":"Sapporo Beer Museum","localityId":"sapporo","durationHours":2,"order":1,"status":"sample","sourceUrl":"https://www.sapporobeer.jp/eng/brewery/s_museum/","checkedAt":null,"tags":["food","culture"]},
+  {"id":"sapporo-snow-festival","name":"Sapporo Snow Festival","localityId":"sapporo","durationHours":3,"order":2,"status":"verified","sourceUrl":"https://www.snowfes.com/news/948.html","checkedAt":"2026-10-24","tags":["event","culture"]},
+  {"id":"moerenuma","name":"Moerenuma Park","localityId":"sapporo","durationHours":3,"order":3,"status":"sample","sourceUrl":"https://moerenumapark.jp/","checkedAt":null,"tags":["nature"]},
+  {"id":"otaru-canal","name":"Otaru Canal and Sakaimachi","localityId":"otaru","durationHours":4,"order":1,"status":"sample","sourceUrl":"https://www.visit-otaru-en.info/","checkedAt":null,"tags":["culture","food"]},
+  {"id":"otaru-aquarium","name":"Otaru Aquarium","localityId":"otaru","durationHours":3,"order":2,"status":"sample","sourceUrl":"https://otaru-aq.jp/","checkedAt":null,"tags":["culture"]},
+  {"id":"furano-forest","name":"Furano forest craft village","localityId":"furano","durationHours":2,"order":1,"status":"sample","sourceUrl":"https://www.visit-hokkaido.jp/en/","checkedAt":null,"tags":["culture","slow"]},
+  {"id":"tokyo-asakusa","name":"Asakusa and Senso-ji","localityId":"tokyo","durationHours":3,"order":1,"status":"sample","sourceUrl":"https://www.gotokyo.org/en/spot/23/index.html","checkedAt":null,"tags":["culture"]},
+  {"id":"tokyo-ueno","name":"Ueno Park and museums","localityId":"tokyo","durationHours":4,"order":2,"status":"sample","sourceUrl":"https://www.gotokyo.org/en/spot/74/index.html","checkedAt":null,"tags":["culture","nature"]},
+  {"id":"kamakura-hase","name":"Kamakura Great Buddha and Hasedera","localityId":"kamakura","durationHours":4,"order":1,"status":"sample","sourceUrl":"https://www.japan.travel/en/destinations/kanto/kanagawa/kamakura/","checkedAt":null,"tags":["culture"]},
+  {"id":"kyoto-higashiyama","name":"Kyoto Higashiyama walk","localityId":"kyoto","durationHours":5,"order":1,"status":"sample","sourceUrl":"https://kyoto.travel/en/","checkedAt":null,"tags":["culture","slow"]},
+  {"id":"osaka-namba","name":"Osaka Namba food district","localityId":"osaka","durationHours":3,"order":1,"status":"sample","sourceUrl":"https://osaka-info.jp/en/","checkedAt":null,"tags":["food"]},
+  {"id":"naha-shuri","name":"Shuri Castle Park","localityId":"naha","durationHours":3,"order":1,"status":"sample","sourceUrl":"https://oki-park.jp/shurijo/en/","checkedAt":null,"tags":["culture"]},
+  {"id":"ishigaki-bay","name":"Ishigaki southern coast","localityId":"ishigaki","durationHours":4,"order":1,"status":"sample","sourceUrl":"https://www.ishigaki-japan.com/","checkedAt":null,"tags":["nature","island"]}
+]

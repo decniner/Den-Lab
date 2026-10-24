@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e8">
+  <meta name="description" content="A development prototype for building transparent, geographically coherent Japan itineraries.">
+  <title>Somewhere in Japan — Dev Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#planner">Skip to planner</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Somewhere in Japan development planner home"><span class="brand-mark">JP</span><span>Somewhere <em>in Japan</em><small>DEV PLANNER · EXPERIMENT 01</small></span></a>
+    <nav aria-label="Main navigation"><a href="#method">How it works</a><a href="#planner">Build a draft</a></nav>
+    <span class="dev-pill"><span></span> DEVELOPMENT ONLY</span>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A MORE THOUGHTFUL WAY TO PLAN</p>
+        <h1 id="hero-title">Make room<br>for the <i>journey.</i></h1>
+        <p class="hero-intro">A test version of Somewhere in Japan that builds a route before it fills your days. Clear about what is sample data, what is sourced, and what still needs checking.</p>
+        <a class="primary-link" href="#planner">Start with your dates <span aria-hidden="true">↓</span></a>
+        <div class="hero-note"><span class="note-line"></span><span>NO LIVE BOOKINGS · NO LIVE TIMETABLES<br>YOUR PLAN STAYS IN THIS BROWSER</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of Japan’s islands and a route north from Tokyo">
+        <div class="map-label map-label-top">FIELD STUDY <b>01 / 04</b></div>
+        <svg viewBox="0 0 540 590" role="img" aria-labelledby="map-title map-desc">
+          <title id="map-title">Schematic route through Japan</title><desc id="map-desc">An abstract map shows a suggested route from Tokyo to Sapporo, Otaru and Furano. It is a schematic illustration, not navigation data.</desc>
+          <path class="island" d="M329 70c18-19 42-29 59-20 11 6 12 22 5 35-4 9-17 12-25 22-11 14-10 31-25 39-16 8-38 2-40-16-2-19 11-42 26-60z"/>
+          <path class="island" d="M277 155c22-15 36-7 34 10-2 14-17 22-29 34-10 10-13 30-30 34-12 3-22-10-16-21 10-21 20-44 41-57z"/>
+          <path class="island" d="M246 240c20-15 36-9 31 7-4 13-18 18-27 29-8 10-10 27-22 31-12 4-22-6-18-17 6-19 17-39 36-50z"/>
+          <path class="island" d="M208 320c26-18 47-9 42 11-4 16-24 20-37 34-12 13-17 34-32 39-16 5-28-8-21-23 9-23 24-46 48-61z"/>
+          <path class="island" d="M157 410c24-18 56-15 63 2 7 18-11 35-29 41-20 7-35 21-52 14-20-8-9-40 18-57z"/>
+          <path class="island small" d="M105 476c20-14 35-7 29 7-6 15-26 24-38 19-11-5-3-18 9-26z"/>
+          <path class="island small" d="M63 512c14-11 23-5 19 6-5 13-20 19-28 13-7-5 1-14 9-19z"/>
+          <path class="route-line" d="M224 382C228 334 244 296 268 264s32-53 51-84c16-26 30-54 49-89"/>
+          <circle class="route-node muted" cx="224" cy="382" r="8"/><circle class="route-node" cx="268" cy="264" r="8"/><circle class="route-node" cx="319" cy="180" r="8"/><circle class="route-node north" cx="368" cy="92" r="8"/>
+          <text class="map-place" x="130" y="401">TOKYO</text><text class="map-place" x="178" y="260">KYOTO</text><text class="map-place" x="331" y="171">OTARU</text><text class="map-place" x="390" y="91">SAPPORO</text>
+          <text class="map-small" x="34" y="559">SCHEMATIC ROUTE · NOT FOR NAVIGATION</text>
+        </svg>
+        <div class="map-caption"><span>HONSHU → HOKKAIDO</span><span>TRANSFER DAY INCLUDED</span></div>
+      </div>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div class="section-heading"><p class="eyebrow">THE PLANNING RULE</p><h2 id="method-title">Route first. <i>Stops second.</i></h2><p>Each day belongs to one locality. A change of base gets its own travel buffer. If the trip is too short, the planner says so and leaves places out.</p></div>
+      <div class="method-steps"><article><span>01</span><h3>Choose a route</h3><p>Start with a small set of sample regional routes and overnight bases.</p></article><article><span>02</span><h3>Protect the day</h3><p>Keep nearby places together and reserve time when the base changes.</p></article><article><span>03</span><h3>Show the evidence</h3><p>Every suggestion carries a status, source, or a clear note that it is unverified.</p></article></div>
+    </section>
+
+    <section class="planner-section" id="planner" aria-labelledby="planner-title">
+      <div class="planner-heading"><div><p class="eyebrow">YOUR TRIP, IN YOUR ORDER</p><h2 id="planner-title">Build a first draft.</h2></div><p>Choose the outline of your trip. You can change these choices and regenerate any time.</p></div>
+      <div class="planner-layout">
+        <form id="trip-form" class="trip-form" novalidate>
+          <div class="form-step"><span class="step-number">01</span><div class="step-content"><h3>When are you going?</h3><div class="field-grid"><label>First day<input id="start-date" name="startDate" type="date" value="2027-02-08" required></label><label>Last day<input id="end-date" name="endDate" type="date" value="2027-02-20" required></label></div></div></div>
+          <div class="form-step"><span class="step-number">02</span><div class="step-content"><h3>Where are you coming from?</h3><label>Starting point<input id="origin" name="origin" type="text" value="Tokyo Station" placeholder="e.g. Tokyo Station" required></label><div class="field-grid time-fields"><label>Arrival time, if known<input id="arrival-time" name="arrivalTime" type="time"></label><label>Departure time, if known<input id="departure-time" name="departureTime" type="time"></label></div><p class="field-help">A late arrival or early departure leaves that date free of sightseeing suggestions.</p></div></div>
+          <div class="form-step"><span class="step-number">03</span><div class="step-content"><h3>Which route and overnight bases?</h3><label>Sample route<select id="route" name="routeId"><option value="hokkaido-winter">Hokkaido winter loop</option><option value="kanto-city-coast">Tokyo and Kamakura</option><option value="kansai-cities">Kyoto and Osaka</option><option value="okinawa-islands">Okinawa main island and Ishigaki</option></select></label><fieldset class="base-fieldset"><legend>Preferred overnight bases <small>Choose none to use all bases in this route</small></legend><div id="base-options" class="choice-list"></div></fieldset></div></div>
+          <div class="form-step"><span class="step-number">04</span><div class="step-content"><h3>What pace suits you?</h3><label>Stops per sightseeing day<select id="pace" name="pace"><option value="relaxed">Relaxed · up to 2 stops</option><option value="balanced" selected>Balanced · up to 3 stops</option><option value="active">Active · up to 4 stops</option></select></label><fieldset class="must-see-fieldset"><legend>Must-see places <small>We’ll prioritize these if the route and dates allow</small></legend><div id="must-see-options" class="choice-list"></div></fieldset></div></div>
+          <div id="form-errors" class="form-errors" role="alert" aria-live="polite"></div>
+          <button class="build-button" type="submit">Build my route <span aria-hidden="true">↗</span></button>
+          <p class="form-footnote">Sample records are for testing the planning flow. They are not travel advice.</p>
+        </form>
+        <aside class="assurance-card" aria-label="Data and reliability notes"><p class="eyebrow">WHAT THIS DRAFT KNOWS</p><div class="assurance-row"><span class="status-dot sourced"></span><div><b>One sourced event</b><p>Sapporo Snow Festival 2027 date window links to the official event site.</p></div></div><div class="assurance-row"><span class="status-dot sample"></span><div><b>Sample route guidance</b><p>Locality order and transfer buffers are editorial test data, not live routes.</p></div></div><div class="assurance-row"><span class="status-dot unknown"></span><div><b>Still needs checking</b><p>Timetables, fares, weather, opening days, and access are not verified here.</p></div></div><div class="assurance-footer">NO API KEYS · NO ACCOUNT · LOCAL PROTOTYPE</div></aside>
+      </div>
+    </section>
+
+    <section id="itinerary" class="itinerary-section" aria-labelledby="itinerary-title" hidden>
+      <div class="itinerary-top"><div><p class="eyebrow">A WORKING DRAFT · <span id="itinerary-date-range"></span></p><h2 id="itinerary-title">Your route, day by day.</h2></div><div class="output-actions"><button id="regenerate" type="button" class="secondary-button">Edit choices</button><button id="print-plan" type="button" class="secondary-button">Print</button></div></div>
+      <div id="plan-warnings" class="plan-warnings" aria-live="polite"></div>
+      <div id="route-summary" class="route-summary"></div>
+      <div id="itinerary-days" class="itinerary-days"></div>
+      <p class="closing-note">This prototype helps test route structure. Check current official access information and live transport directions before making bookings.</p>
+    </section>
+  </main>
+  <footer><span>Somewhere in Japan · Dev Planner</span><span>A separate experiment · Production site not connected</span></footer>
+</body>
+</html>

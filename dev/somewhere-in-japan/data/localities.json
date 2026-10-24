@@ -1,0 +1,11 @@
+[
+  {"id":"sapporo","name":"Sapporo","regionId":"hokkaido","base":"Sapporo"},
+  {"id":"otaru","name":"Otaru","regionId":"hokkaido","base":"Otaru"},
+  {"id":"furano","name":"Furano","regionId":"hokkaido","base":"Furano"},
+  {"id":"tokyo","name":"Tokyo","regionId":"kanto","base":"Tokyo"},
+  {"id":"kamakura","name":"Kamakura","regionId":"kanto","base":"Kamakura"},
+  {"id":"kyoto","name":"Kyoto","regionId":"kansai","base":"Kyoto"},
+  {"id":"osaka","name":"Osaka","regionId":"kansai","base":"Osaka"},
+  {"id":"naha","name":"Naha","regionId":"okinawa","base":"Naha"},
+  {"id":"ishigaki","name":"Ishigaki","regionId":"okinawa","base":"Ishigaki"}
+]
