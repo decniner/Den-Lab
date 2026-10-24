@@ -1,0 +1,1477 @@
+{
+  "schemaVersion": 1,
+  "routes": [
+    {
+      "id": "osaka-after-hours-multi-stop-route",
+      "placeId": "osaka-after-hours",
+      "cityId": "osaka-after-hours",
+      "title": "Osaka, after hours: multi-stop route",
+      "introduction": "A compact Namba evening walk from Namba Station through Hozenji, Dotonbori and the Tombori Riverwalk.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "osaka-after-hours-origin",
+        "name": "Namba Station",
+        "address": "Namba, Osaka, Japan",
+        "coordinates": {
+          "latitude": 34.6675,
+          "longitude": 135.501
+        }
+      },
+      "stops": [
+        {
+          "id": "osaka-after-hours-stop-1",
+          "order": 1,
+          "name": "Hozenji and Hozenji Yokocho",
+          "area": "Chuo, Osaka",
+          "address": "Hozenji and Hozenji Yokocho, Chuo, Osaka, Japan",
+          "coordinates": {
+            "latitude": 34.66845,
+            "longitude": 135.50325
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "osaka-after-hours-stop-2",
+          "order": 2,
+          "name": "Dotonbori and Ebisu Bridge",
+          "area": "Chuo, Osaka",
+          "address": "Dotonbori and Ebisu Bridge, Chuo, Osaka, Japan",
+          "coordinates": {
+            "latitude": 34.66855,
+            "longitude": 135.5017
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "osaka-after-hours-stop-3",
+          "order": 3,
+          "name": "Tombori Riverwalk",
+          "area": "Chuo, Osaka",
+          "address": "Tombori Riverwalk, Chuo, Osaka, Japan",
+          "coordinates": {
+            "latitude": 34.66805,
+            "longitude": 135.50195
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "osaka-after-hours-leg-1",
+          "fromId": "osaka-after-hours-origin",
+          "toId": "osaka-after-hours-stop-1",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "osaka-after-hours-leg-2",
+          "fromId": "osaka-after-hours-stop-1",
+          "toId": "osaka-after-hours-stop-2",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "osaka-after-hours-leg-3",
+          "fromId": "osaka-after-hours-stop-2",
+          "toId": "osaka-after-hours-stop-3",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        }
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Namba%2C%20Osaka%2C%20Japan&destination=Tombori%20Riverwalk%2C%20Chuo%2C%20Osaka%2C%20Japan&travelmode=walking&waypoints=Hozenji%20and%20Hozenji%20Yokocho%2C%20Chuo%2C%20Osaka%2C%20Japan%7CDotonbori%20and%20Ebisu%20Bridge%2C%20Chuo%2C%20Osaka%2C%20Japan",
+      "notes": "Approximate map points. Connectors indicate order only; they are not verified paths or travel-time estimates."
+    },
+    {
+      "id": "nara-between-trees-multi-stop-route",
+      "placeId": "nara-between-trees",
+      "cityId": "nara-between-trees",
+      "title": "Nara, between trees: multi-stop route",
+      "introduction": "A walking route from Kintetsu Nara Station through Todai-ji, Nigatsudo and Kasuga Taisha.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "nara-between-trees-origin",
+        "name": "Kintetsu Nara Station",
+        "address": "Nara, Nara, Japan",
+        "coordinates": {
+          "latitude": 34.6843,
+          "longitude": 135.8277
+        }
+      },
+      "stops": [
+        {
+          "id": "nara-between-trees-stop-1",
+          "order": 1,
+          "name": "Todai-ji and Nandaimon Gate",
+          "area": "Nara Park, Nara",
+          "address": "Todai-ji and Nandaimon Gate, Nara Park, Nara, Japan",
+          "coordinates": {
+            "latitude": 34.68895,
+            "longitude": 135.8398
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "nara-between-trees-stop-2",
+          "order": 2,
+          "name": "Nigatsudo Hall",
+          "area": "Nara Park, Nara",
+          "address": "Nigatsudo Hall, Nara Park, Nara, Japan",
+          "coordinates": {
+            "latitude": 34.68965,
+            "longitude": 135.843
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "nara-between-trees-stop-3",
+          "order": 3,
+          "name": "Kasuga Taisha Shrine",
+          "area": "Nara Park, Nara",
+          "address": "Kasuga Taisha Shrine, Nara Park, Nara, Japan",
+          "coordinates": {
+            "latitude": 34.6812,
+            "longitude": 135.8485
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "nara-between-trees-leg-1",
+          "fromId": "nara-between-trees-origin",
+          "toId": "nara-between-trees-stop-1",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "nara-between-trees-leg-2",
+          "fromId": "nara-between-trees-stop-1",
+          "toId": "nara-between-trees-stop-2",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "nara-between-trees-leg-3",
+          "fromId": "nara-between-trees-stop-2",
+          "toId": "nara-between-trees-stop-3",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        }
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Nara%2C%20Nara%2C%20Japan&destination=Kasuga%20Taisha%20Shrine%2C%20Nara%20Park%2C%20Nara%2C%20Japan&travelmode=walking&waypoints=Todai-ji%20and%20Nandaimon%20Gate%2C%20Nara%20Park%2C%20Nara%2C%20Japan%7CNigatsudo%20Hall%2C%20Nara%20Park%2C%20Nara%2C%20Japan",
+      "notes": "Approximate map points. Connectors indicate order only; they are not verified paths or travel-time estimates."
+    },
+    {
+      "id": "arashiyama-s-green-corridor-multi-stop-route",
+      "placeId": "arashiyama-s-green-corridor",
+      "cityId": "arashiyama-s-green-corridor",
+      "title": "Arashiyama’s green corridor: multi-stop route",
+      "introduction": "A walk from Saga-Arashiyama Station through the bamboo grove and Tenryuji garden to Togetsukyo Bridge.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "arashiyama-s-green-corridor-origin",
+        "name": "Saga-Arashiyama Station",
+        "address": "Ukyo, Kyoto, Japan",
+        "coordinates": {
+          "latitude": 35.0188,
+          "longitude": 135.681
+        }
+      },
+      "stops": [
+        {
+          "id": "arashiyama-s-green-corridor-stop-1",
+          "order": 1,
+          "name": "Arashiyama Bamboo Grove",
+          "area": "Ukyo, Kyoto",
+          "address": "Arashiyama Bamboo Grove, Ukyo, Kyoto, Japan",
+          "coordinates": {
+            "latitude": 35.0172,
+            "longitude": 135.6711
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "arashiyama-s-green-corridor-stop-2",
+          "order": 2,
+          "name": "Tenryuji Temple garden",
+          "area": "Ukyo, Kyoto",
+          "address": "Tenryuji Temple garden, Ukyo, Kyoto, Japan",
+          "coordinates": {
+            "latitude": 35.0158,
+            "longitude": 135.6778
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "arashiyama-s-green-corridor-stop-3",
+          "order": 3,
+          "name": "Togetsukyo Bridge and riverbank",
+          "area": "Ukyo, Kyoto",
+          "address": "Togetsukyo Bridge and riverbank, Ukyo, Kyoto, Japan",
+          "coordinates": {
+            "latitude": 35.0117,
+            "longitude": 135.6771
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "arashiyama-s-green-corridor-leg-1",
+          "fromId": "arashiyama-s-green-corridor-origin",
+          "toId": "arashiyama-s-green-corridor-stop-1",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "arashiyama-s-green-corridor-leg-2",
+          "fromId": "arashiyama-s-green-corridor-stop-1",
+          "toId": "arashiyama-s-green-corridor-stop-2",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "arashiyama-s-green-corridor-leg-3",
+          "fromId": "arashiyama-s-green-corridor-stop-2",
+          "toId": "arashiyama-s-green-corridor-stop-3",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        }
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Ukyo%2C%20Kyoto%2C%20Japan&destination=Togetsukyo%20Bridge%20and%20riverbank%2C%20Ukyo%2C%20Kyoto%2C%20Japan&travelmode=walking&waypoints=Arashiyama%20Bamboo%20Grove%2C%20Ukyo%2C%20Kyoto%2C%20Japan%7CTenryuji%20Temple%20garden%2C%20Ukyo%2C%20Kyoto%2C%20Japan",
+      "notes": "Approximate map points. Connectors indicate order only; they are not verified paths or travel-time estimates."
+    },
+    {
+      "id": "himeji-the-white-heron-multi-stop-route",
+      "placeId": "himeji-the-white-heron",
+      "cityId": "himeji-the-white-heron",
+      "title": "Himeji, the white heron: multi-stop route",
+      "introduction": "Walk from Himeji Station to Himeji Castle and Koko-en Garden. Mt. Shosha and Engyoji are a separate bus and ropeway excursion.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "himeji-the-white-heron-origin",
+        "name": "Himeji Station",
+        "address": "Himeji, Hyogo, Japan",
+        "coordinates": {
+          "latitude": 34.8278,
+          "longitude": 134.6907
+        }
+      },
+      "stops": [
+        {
+          "id": "himeji-the-white-heron-stop-1",
+          "order": 1,
+          "name": "Himeji Castle",
+          "area": "Himeji, Hyogo",
+          "address": "Himeji Castle, Himeji, Hyogo, Japan",
+          "coordinates": {
+            "latitude": 34.8394,
+            "longitude": 134.6939
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "himeji-the-white-heron-stop-2",
+          "order": 2,
+          "name": "Koko-en Garden",
+          "area": "Himeji, Hyogo",
+          "address": "Koko-en Garden, Himeji, Hyogo, Japan",
+          "coordinates": {
+            "latitude": 34.8386,
+            "longitude": 134.6909
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "himeji-the-white-heron-stop-3",
+          "order": 3,
+          "name": "Mt. Shosha and Engyoji",
+          "area": "Shosha, Himeji, Hyogo",
+          "address": "Mt. Shosha and Engyoji, Shosha, Himeji, Hyogo, Japan",
+          "coordinates": {
+            "latitude": 34.878,
+            "longitude": 134.688
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "himeji-the-white-heron-leg-1",
+          "fromId": "himeji-the-white-heron-origin",
+          "toId": "himeji-the-white-heron-stop-1",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "himeji-the-white-heron-leg-2",
+          "fromId": "himeji-the-white-heron-stop-1",
+          "toId": "himeji-the-white-heron-stop-2",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "himeji-the-white-heron-leg-3",
+          "fromId": "himeji-the-white-heron-stop-2",
+          "toId": "himeji-the-white-heron-stop-3",
+          "mode": "transit",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        }
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Himeji%2C%20Hyogo%2C%20Japan&destination=Mt.%20Shosha%20and%20Engyoji%2C%20Shosha%2C%20Himeji%2C%20Hyogo%2C%20Japan&travelmode=transit&waypoints=Himeji%20Castle%2C%20Himeji%2C%20Hyogo%2C%20Japan%7CKoko-en%20Garden%2C%20Himeji%2C%20Hyogo%2C%20Japan",
+      "notes": "Approximate map points. Connectors indicate order only; they are not verified paths or travel-time estimates."
+    },
+    {
+      "id": "koyasan-after-dusk-multi-stop-route",
+      "placeId": "koyasan-after-dusk",
+      "cityId": "koyasan-after-dusk",
+      "title": "Koyasan after dusk: multi-stop route",
+      "introduction": "A schematic visit order from Koyasan Station through Ichinohashi, Okunoin, Kongobuji and Danjo Garan. Confirm current bus service and guided-tour arrangements.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "koyasan-after-dusk-origin",
+        "name": "Koyasan Station",
+        "address": "Koyasan, Wakayama, Japan",
+        "coordinates": {
+          "latitude": 34.225,
+          "longitude": 135.595
+        }
+      },
+      "stops": [
+        {
+          "id": "koyasan-after-dusk-stop-1",
+          "order": 1,
+          "name": "Ichinohashi Bridge",
+          "area": "Koyasan, Wakayama",
+          "address": "Ichinohashi Bridge, Koyasan, Wakayama, Japan",
+          "coordinates": {
+            "latitude": 34.217,
+            "longitude": 135.596
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "koyasan-after-dusk-stop-2",
+          "order": 2,
+          "name": "Okunoin",
+          "area": "Koyasan, Wakayama",
+          "address": "Okunoin, Koyasan, Wakayama, Japan",
+          "coordinates": {
+            "latitude": 34.216,
+            "longitude": 135.601
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "koyasan-after-dusk-stop-3",
+          "order": 3,
+          "name": "Kongobuji Temple",
+          "area": "Koyasan, Wakayama",
+          "address": "Kongobuji Temple, Koyasan, Wakayama, Japan",
+          "coordinates": {
+            "latitude": 34.213,
+            "longitude": 135.585
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "koyasan-after-dusk-stop-4",
+          "order": 4,
+          "name": "Danjo Garan",
+          "area": "Koyasan, Wakayama",
+          "address": "Danjo Garan, Koyasan, Wakayama, Japan",
+          "coordinates": {
+            "latitude": 34.212,
+            "longitude": 135.582
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "koyasan-after-dusk-leg-1",
+          "fromId": "koyasan-after-dusk-origin",
+          "toId": "koyasan-after-dusk-stop-1",
+          "mode": "transit",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "koyasan-after-dusk-leg-2",
+          "fromId": "koyasan-after-dusk-stop-1",
+          "toId": "koyasan-after-dusk-stop-2",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "koyasan-after-dusk-leg-3",
+          "fromId": "koyasan-after-dusk-stop-2",
+          "toId": "koyasan-after-dusk-stop-3",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "koyasan-after-dusk-leg-4",
+          "fromId": "koyasan-after-dusk-stop-3",
+          "toId": "koyasan-after-dusk-stop-4",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        }
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Koyasan%2C%20Wakayama%2C%20Japan&destination=Danjo%20Garan%2C%20Koyasan%2C%20Wakayama%2C%20Japan&travelmode=transit&waypoints=Ichinohashi%20Bridge%2C%20Koyasan%2C%20Wakayama%2C%20Japan%7COkunoin%2C%20Koyasan%2C%20Wakayama%2C%20Japan%7CKongobuji%20Temple%2C%20Koyasan%2C%20Wakayama%2C%20Japan",
+      "notes": "Approximate map points. Connectors indicate order only; they are not verified paths or travel-time estimates."
+    },
+    {
+      "id": "kumano-kodo-the-old-paths-multi-stop-route",
+      "placeId": "kumano-kodo-the-old-paths",
+      "cityId": "kumano-kodo-the-old-paths",
+      "title": "Kumano Kodo: the old paths: multi-stop route",
+      "introduction": "A schematic access sequence from Kii-Tanabe Station to Takijiri-oji, the Kumano Kodo Kan and Takahara. It does not show the Nakahechi trail geometry.",
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "kumano-kodo-the-old-paths-origin",
+        "name": "Kii-Tanabe Station",
+        "address": "Tanabe, Wakayama, Japan",
+        "coordinates": {
+          "latitude": 33.7318,
+          "longitude": 135.3858
+        }
+      },
+      "stops": [
+        {
+          "id": "kumano-kodo-the-old-paths-stop-1",
+          "order": 1,
+          "name": "Takijiri-oji",
+          "area": "Nakahechi, Tanabe, Wakayama",
+          "address": "Takijiri-oji, Nakahechi, Tanabe, Wakayama, Japan",
+          "coordinates": {
+            "latitude": 33.7954,
+            "longitude": 135.532
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-stop-2",
+          "order": 2,
+          "name": "Kumano Kodo Kan",
+          "area": "Hongu, Tanabe, Wakayama",
+          "address": "Kumano Kodo Kan, Hongu, Tanabe, Wakayama, Japan",
+          "coordinates": {
+            "latitude": 33.84,
+            "longitude": 135.77
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-stop-3",
+          "order": 3,
+          "name": "Takahara viewpoint",
+          "area": "Nakahechi, Tanabe, Wakayama",
+          "address": "Takahara viewpoint, Nakahechi, Tanabe, Wakayama, Japan",
+          "coordinates": {
+            "latitude": 33.817,
+            "longitude": 135.56
+          },
+          "visitDuration": {
+            "status": "unknown"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "kumano-kodo-the-old-paths-leg-1",
+          "fromId": "kumano-kodo-the-old-paths-origin",
+          "toId": "kumano-kodo-the-old-paths-stop-1",
+          "mode": "transit",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-leg-2",
+          "fromId": "kumano-kodo-the-old-paths-stop-1",
+          "toId": "kumano-kodo-the-old-paths-stop-2",
+          "mode": "transit",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        },
+        {
+          "id": "kumano-kodo-the-old-paths-leg-3",
+          "fromId": "kumano-kodo-the-old-paths-stop-2",
+          "toId": "kumano-kodo-the-old-paths-stop-3",
+          "mode": "walking",
+          "guidance": "Schematic order only; confirm live directions and access before travelling."
+        }
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Tanabe%2C%20Wakayama%2C%20Japan&destination=Takahara%20viewpoint%2C%20Nakahechi%2C%20Tanabe%2C%20Wakayama%2C%20Japan&travelmode=transit&waypoints=Takijiri-oji%2C%20Nakahechi%2C%20Tanabe%2C%20Wakayama%2C%20Japan%7CKumano%20Kodo%20Kan%2C%20Hongu%2C%20Tanabe%2C%20Wakayama%2C%20Japan",
+      "notes": "Approximate map points. Connectors indicate order only; they are not verified paths or travel-time estimates."
+    }
+  ],
+  "maps": {
+    "osaka-after-hours": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.49800000000002,
+          34.6645,
+          135.50625,
+          34.67155
+        ],
+        "coordinateNote": "Approximate map reference points; connectors show visit order only."
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "id": "osaka-after-hours-origin",
+          "properties": {
+            "id": "osaka-after-hours-origin",
+            "routeStopId": "osaka-after-hours-origin",
+            "role": "origin",
+            "name": "Namba Station"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.501,
+              34.6675
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "osaka-after-hours-stop-1",
+          "properties": {
+            "id": "osaka-after-hours-stop-1",
+            "routeStopId": "osaka-after-hours-stop-1",
+            "role": "stop",
+            "name": "Hozenji and Hozenji Yokocho",
+            "displayOrder": 1
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.50325,
+              34.66845
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "osaka-after-hours-stop-2",
+          "properties": {
+            "id": "osaka-after-hours-stop-2",
+            "routeStopId": "osaka-after-hours-stop-2",
+            "role": "stop",
+            "name": "Dotonbori and Ebisu Bridge",
+            "displayOrder": 2
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.5017,
+              34.66855
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "osaka-after-hours-stop-3",
+          "properties": {
+            "id": "osaka-after-hours-stop-3",
+            "routeStopId": "osaka-after-hours-stop-3",
+            "role": "stop",
+            "name": "Tombori Riverwalk",
+            "displayOrder": 3
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.50195,
+              34.66805
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "osaka-after-hours-leg-1",
+          "properties": {
+            "routeLegId": "osaka-after-hours-leg-1",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.501,
+                34.6675
+              ],
+              [
+                135.50325,
+                34.66845
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "osaka-after-hours-leg-2",
+          "properties": {
+            "routeLegId": "osaka-after-hours-leg-2",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.50325,
+                34.66845
+              ],
+              [
+                135.5017,
+                34.66855
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "osaka-after-hours-leg-3",
+          "properties": {
+            "routeLegId": "osaka-after-hours-leg-3",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.5017,
+                34.66855
+              ],
+              [
+                135.50195,
+                34.66805
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "nara-between-trees": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.8247,
+          34.6782,
+          135.8515,
+          34.69265
+        ],
+        "coordinateNote": "Approximate map reference points; connectors show visit order only."
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "id": "nara-between-trees-origin",
+          "properties": {
+            "id": "nara-between-trees-origin",
+            "routeStopId": "nara-between-trees-origin",
+            "role": "origin",
+            "name": "Kintetsu Nara Station"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.8277,
+              34.6843
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-between-trees-stop-1",
+          "properties": {
+            "id": "nara-between-trees-stop-1",
+            "routeStopId": "nara-between-trees-stop-1",
+            "role": "stop",
+            "name": "Todai-ji and Nandaimon Gate",
+            "displayOrder": 1
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.8398,
+              34.68895
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-between-trees-stop-2",
+          "properties": {
+            "id": "nara-between-trees-stop-2",
+            "routeStopId": "nara-between-trees-stop-2",
+            "role": "stop",
+            "name": "Nigatsudo Hall",
+            "displayOrder": 2
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.843,
+              34.68965
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-between-trees-stop-3",
+          "properties": {
+            "id": "nara-between-trees-stop-3",
+            "routeStopId": "nara-between-trees-stop-3",
+            "role": "stop",
+            "name": "Kasuga Taisha Shrine",
+            "displayOrder": 3
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.8485,
+              34.6812
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-between-trees-leg-1",
+          "properties": {
+            "routeLegId": "nara-between-trees-leg-1",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.8277,
+                34.6843
+              ],
+              [
+                135.8398,
+                34.68895
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-between-trees-leg-2",
+          "properties": {
+            "routeLegId": "nara-between-trees-leg-2",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.8398,
+                34.68895
+              ],
+              [
+                135.843,
+                34.68965
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "nara-between-trees-leg-3",
+          "properties": {
+            "routeLegId": "nara-between-trees-leg-3",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.843,
+                34.68965
+              ],
+              [
+                135.8485,
+                34.6812
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "arashiyama-s-green-corridor": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.6681,
+          35.0087,
+          135.684,
+          35.0218
+        ],
+        "coordinateNote": "Approximate map reference points; connectors show visit order only."
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "id": "arashiyama-s-green-corridor-origin",
+          "properties": {
+            "id": "arashiyama-s-green-corridor-origin",
+            "routeStopId": "arashiyama-s-green-corridor-origin",
+            "role": "origin",
+            "name": "Saga-Arashiyama Station"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.681,
+              35.0188
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "arashiyama-s-green-corridor-stop-1",
+          "properties": {
+            "id": "arashiyama-s-green-corridor-stop-1",
+            "routeStopId": "arashiyama-s-green-corridor-stop-1",
+            "role": "stop",
+            "name": "Arashiyama Bamboo Grove",
+            "displayOrder": 1
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.6711,
+              35.0172
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "arashiyama-s-green-corridor-stop-2",
+          "properties": {
+            "id": "arashiyama-s-green-corridor-stop-2",
+            "routeStopId": "arashiyama-s-green-corridor-stop-2",
+            "role": "stop",
+            "name": "Tenryuji Temple garden",
+            "displayOrder": 2
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.6778,
+              35.0158
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "arashiyama-s-green-corridor-stop-3",
+          "properties": {
+            "id": "arashiyama-s-green-corridor-stop-3",
+            "routeStopId": "arashiyama-s-green-corridor-stop-3",
+            "role": "stop",
+            "name": "Togetsukyo Bridge and riverbank",
+            "displayOrder": 3
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.6771,
+              35.0117
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "arashiyama-s-green-corridor-leg-1",
+          "properties": {
+            "routeLegId": "arashiyama-s-green-corridor-leg-1",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.681,
+                35.0188
+              ],
+              [
+                135.6711,
+                35.0172
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "arashiyama-s-green-corridor-leg-2",
+          "properties": {
+            "routeLegId": "arashiyama-s-green-corridor-leg-2",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.6711,
+                35.0172
+              ],
+              [
+                135.6778,
+                35.0158
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "arashiyama-s-green-corridor-leg-3",
+          "properties": {
+            "routeLegId": "arashiyama-s-green-corridor-leg-3",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.6778,
+                35.0158
+              ],
+              [
+                135.6771,
+                35.0117
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "himeji-the-white-heron": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          134.685,
+          34.8248,
+          134.6969,
+          34.881
+        ],
+        "coordinateNote": "Approximate map reference points; connectors show visit order only."
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "id": "himeji-the-white-heron-origin",
+          "properties": {
+            "id": "himeji-the-white-heron-origin",
+            "routeStopId": "himeji-the-white-heron-origin",
+            "role": "origin",
+            "name": "Himeji Station"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.6907,
+              34.8278
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "himeji-the-white-heron-stop-1",
+          "properties": {
+            "id": "himeji-the-white-heron-stop-1",
+            "routeStopId": "himeji-the-white-heron-stop-1",
+            "role": "stop",
+            "name": "Himeji Castle",
+            "displayOrder": 1
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.6939,
+              34.8394
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "himeji-the-white-heron-stop-2",
+          "properties": {
+            "id": "himeji-the-white-heron-stop-2",
+            "routeStopId": "himeji-the-white-heron-stop-2",
+            "role": "stop",
+            "name": "Koko-en Garden",
+            "displayOrder": 2
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.6909,
+              34.8386
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "himeji-the-white-heron-stop-3",
+          "properties": {
+            "id": "himeji-the-white-heron-stop-3",
+            "routeStopId": "himeji-the-white-heron-stop-3",
+            "role": "stop",
+            "name": "Mt. Shosha and Engyoji",
+            "displayOrder": 3
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              134.688,
+              34.878
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "himeji-the-white-heron-leg-1",
+          "properties": {
+            "routeLegId": "himeji-the-white-heron-leg-1",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.6907,
+                34.8278
+              ],
+              [
+                134.6939,
+                34.8394
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "himeji-the-white-heron-leg-2",
+          "properties": {
+            "routeLegId": "himeji-the-white-heron-leg-2",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.6939,
+                34.8394
+              ],
+              [
+                134.6909,
+                34.8386
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "himeji-the-white-heron-leg-3",
+          "properties": {
+            "routeLegId": "himeji-the-white-heron-leg-3",
+            "mode": "transit"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                134.6909,
+                34.8386
+              ],
+              [
+                134.688,
+                34.878
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "koyasan-after-dusk": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.579,
+          34.209,
+          135.60399999999998,
+          34.228
+        ],
+        "coordinateNote": "Approximate map reference points; connectors show visit order only."
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "id": "koyasan-after-dusk-origin",
+          "properties": {
+            "id": "koyasan-after-dusk-origin",
+            "routeStopId": "koyasan-after-dusk-origin",
+            "role": "origin",
+            "name": "Koyasan Station"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.595,
+              34.225
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "koyasan-after-dusk-stop-1",
+          "properties": {
+            "id": "koyasan-after-dusk-stop-1",
+            "routeStopId": "koyasan-after-dusk-stop-1",
+            "role": "stop",
+            "name": "Ichinohashi Bridge",
+            "displayOrder": 1
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.596,
+              34.217
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "koyasan-after-dusk-stop-2",
+          "properties": {
+            "id": "koyasan-after-dusk-stop-2",
+            "routeStopId": "koyasan-after-dusk-stop-2",
+            "role": "stop",
+            "name": "Okunoin",
+            "displayOrder": 2
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.601,
+              34.216
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "koyasan-after-dusk-stop-3",
+          "properties": {
+            "id": "koyasan-after-dusk-stop-3",
+            "routeStopId": "koyasan-after-dusk-stop-3",
+            "role": "stop",
+            "name": "Kongobuji Temple",
+            "displayOrder": 3
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.585,
+              34.213
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "koyasan-after-dusk-stop-4",
+          "properties": {
+            "id": "koyasan-after-dusk-stop-4",
+            "routeStopId": "koyasan-after-dusk-stop-4",
+            "role": "stop",
+            "name": "Danjo Garan",
+            "displayOrder": 4
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.582,
+              34.212
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "koyasan-after-dusk-leg-1",
+          "properties": {
+            "routeLegId": "koyasan-after-dusk-leg-1",
+            "mode": "transit"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.595,
+                34.225
+              ],
+              [
+                135.596,
+                34.217
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "koyasan-after-dusk-leg-2",
+          "properties": {
+            "routeLegId": "koyasan-after-dusk-leg-2",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.596,
+                34.217
+              ],
+              [
+                135.601,
+                34.216
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "koyasan-after-dusk-leg-3",
+          "properties": {
+            "routeLegId": "koyasan-after-dusk-leg-3",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.601,
+                34.216
+              ],
+              [
+                135.585,
+                34.213
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "koyasan-after-dusk-leg-4",
+          "properties": {
+            "routeLegId": "koyasan-after-dusk-leg-4",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.585,
+                34.213
+              ],
+              [
+                135.582,
+                34.212
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "kumano-kodo-the-old-paths": {
+      "type": "FeatureCollection",
+      "metadata": {
+        "geometryStatus": "schematic-stop-order",
+        "bounds": [
+          135.3828,
+          33.7288,
+          135.773,
+          33.843
+        ],
+        "coordinateNote": "Approximate map reference points; connectors show visit order only."
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "id": "kumano-kodo-the-old-paths-origin",
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-origin",
+            "routeStopId": "kumano-kodo-the-old-paths-origin",
+            "role": "origin",
+            "name": "Kii-Tanabe Station"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.3858,
+              33.7318
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kumano-kodo-the-old-paths-stop-1",
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-stop-1",
+            "routeStopId": "kumano-kodo-the-old-paths-stop-1",
+            "role": "stop",
+            "name": "Takijiri-oji",
+            "displayOrder": 1
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.532,
+              33.7954
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kumano-kodo-the-old-paths-stop-2",
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-stop-2",
+            "routeStopId": "kumano-kodo-the-old-paths-stop-2",
+            "role": "stop",
+            "name": "Kumano Kodo Kan",
+            "displayOrder": 2
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.77,
+              33.84
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kumano-kodo-the-old-paths-stop-3",
+          "properties": {
+            "id": "kumano-kodo-the-old-paths-stop-3",
+            "routeStopId": "kumano-kodo-the-old-paths-stop-3",
+            "role": "stop",
+            "name": "Takahara viewpoint",
+            "displayOrder": 3
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.56,
+              33.817
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kumano-kodo-the-old-paths-leg-1",
+          "properties": {
+            "routeLegId": "kumano-kodo-the-old-paths-leg-1",
+            "mode": "transit"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.3858,
+                33.7318
+              ],
+              [
+                135.532,
+                33.7954
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kumano-kodo-the-old-paths-leg-2",
+          "properties": {
+            "routeLegId": "kumano-kodo-the-old-paths-leg-2",
+            "mode": "transit"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.532,
+                33.7954
+              ],
+              [
+                135.77,
+                33.84
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kumano-kodo-the-old-paths-leg-3",
+          "properties": {
+            "routeLegId": "kumano-kodo-the-old-paths-leg-3",
+            "mode": "walking"
+          },
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.77,
+                33.84
+              ],
+              [
+                135.56,
+                33.817
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
