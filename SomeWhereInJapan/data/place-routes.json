@@ -13126,6 +13126,7 @@
         "id": "kyoto-at-first-light-origin",
         "name": "Fushimi Inari Taisha",
         "address": "Fushimi Inari Taisha, Japan",
+        "displayOrder": 1,
         "coordinates": {
           "latitude": 34.9675192,
           "longitude": 135.7797101,
@@ -33895,6 +33896,7 @@
             "routeStopId": "kyoto-at-first-light-origin",
             "name": "Fushimi Inari Taisha",
             "role": "origin",
+            "displayOrder": 1,
             "order": null
           }
         },
@@ -33933,6 +33935,7 @@
             "id": "kyoto-at-first-light-stop-1",
             "routeStopId": "kyoto-at-first-light-stop-1",
             "order": 1,
+            "displayOrder": 2,
             "name": "Tofukuji Temple",
             "role": "stop"
           }
@@ -33972,6 +33975,7 @@
             "id": "kyoto-at-first-light-stop-2",
             "routeStopId": "kyoto-at-first-light-stop-2",
             "order": 2,
+            "displayOrder": 3,
             "name": "Sennyuji Temple",
             "role": "stop"
           }

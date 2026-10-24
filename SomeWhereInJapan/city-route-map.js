@@ -41,7 +41,7 @@ function mountCityRouteMap(container,mapData,onSelectStop){
     const p=feature.properties,id=p.routeStopId||p.id||feature.id,[lon,lat]=feature.geometry.coordinates;
     const markerEl=document.createElement('button');markerEl.type='button';markerEl.className=`maplibre-route-marker${p.role==='origin'?' origin':''}`;markerEl.textContent=label;markerEl.setAttribute('aria-label',`${label==='S/R'?'Start and return':label==='S'?'Start':`Stop ${label}`}: ${p.name}`);markerEl.title=markerEl.getAttribute('aria-label');
     markerEl.addEventListener('click',()=>choose(id));
-    const popupNode=document.createElement('strong');popupNode.textContent=p.role==='origin'?(p.returnPoint?'START / RETURN':`START`):`STOP ${label} · ${p.name}`;
+    const popupNode=document.createElement('strong');popupNode.textContent=p.displayOrder?`STOP ${label} · ${p.name} (route starts here)`:p.role==='origin'?(p.returnPoint?'START / RETURN':`START`):`STOP ${label} · ${p.name}`;
     const marker=new root.maplibregl.Marker({element:markerEl,anchor:'center'}).setLngLat([lon,lat]).setPopup(new root.maplibregl.Popup({offset:20,closeButton:false}).setDOMContent(popupNode)).addTo(map);
     markers.set(id,marker);
     markerRecords.push({id,marker});
@@ -69,12 +69,13 @@ function mountCityRouteMap(container,mapData,onSelectStop){
   root.L.geoJSON({type:'FeatureCollection',features:grid},{style:{color:'#e3dfd4',weight:1,opacity:.9,dashArray:'2 4'}}).addTo(map);
   root.L.geoJSON({type:'FeatureCollection',features:roads},{style:feature=>{const type=feature.properties.highway,major=['primary','secondary','trunk'].includes(type),pedestrian=['pedestrian','footway','steps','cycleway'].includes(type);return {color:major?'#c2a577':pedestrian?'#a9bda9':'#a9b8b0',weight:major?2.1:pedestrian?.75:type==='tertiary'?1.35:1,opacity:major?.85:pedestrian?.62:.72,dashArray:pedestrian?'2 3':null};}}).addTo(map);
   root.L.geoJSON({type:'FeatureCollection',features:routes},{style:f=>({color:f.properties.mode==='walking'?'#b64f3d':'#285b70',weight:5,dashArray:f.properties.routeGeometryStatus==='schematic'?'8 8':f.properties.mode==='walking'?null:'8 6',opacity:.9})}).addTo(map);
+  let stopNumber=0;
   points.forEach((feature,index)=>{
    const [lon,lat]=feature.geometry.coordinates,p=feature.properties,id=p.routeStopId||p.id||feature.id;
-   const label=p.role==='origin'?(p.returnPoint?'S/R':'S'):String(index).padStart(2,'0'),markerClass=p.role==='origin'?'city-route-map-marker origin':'city-route-map-marker stop';
+   const numbered=p.displayOrder||p.role!=='origin',label=numbered?String(p.displayOrder||++stopNumber).padStart(2,'0'):(p.returnPoint?'S/R':'S'),markerClass=p.role==='origin'?'city-route-map-marker origin':'city-route-map-marker stop';
    const icon=root.L.divIcon({className:'city-route-map-marker-host',html:`<span class="${markerClass}" data-route-marker>${label}</span>`,iconSize:[34,34],iconAnchor:[17,17]});
    const marker=root.L.marker([lat,lon],{icon,keyboard:true,title:p.name});
-   marker.bindTooltip(`${p.role==='origin'?(p.returnPoint?'Start and return':'Start'):`Stop ${index}`}: ${p.name}`);
+   marker.bindTooltip(`${p.displayOrder?`Stop ${label} · route starts here`:p.role==='origin'?(p.returnPoint?'Start and return':'Start'):`Stop ${label}`}: ${p.name}`);
    marker.on('click',()=>choose(id));
    marker.on('add',()=>{const el=marker.getElement();if(el){el.setAttribute('role','button');el.setAttribute('aria-label',`${p.name}, ${p.role==='origin'&&p.returnPoint?'route start and return point':'select itinerary stop'}`);el.setAttribute('tabindex','0');el.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();choose(id);}});}});
    marker.addTo(map);markers.set(id,marker);
@@ -85,7 +86,7 @@ function mountCityRouteMap(container,mapData,onSelectStop){
  }catch(error){fail();}
  return {selectStop(id){if(markers.has(id))choose(id);},resize(){if(map&&!destroyed){map.invalidateSize({pan:false});map.fitBounds([[bounds[1],bounds[0]],[bounds[3],bounds[2]]],{padding:[20,20]});}},destroy(){destroyed=true;if(map){map.remove();map=null;}markers.clear();},get available(){return !!map&&!destroyed;}};
 }
-function pointsForMapMarkers(mapData){let stop=0;return mapData.features.filter(feature=>feature.geometry.type==='Point').map((feature,index)=>({feature,index,label:feature.properties.role==='origin'?(feature.properties.returnPoint?'S/R':'S'):String(++stop).padStart(2,'0')}));}
+function pointsForMapMarkers(mapData){let stop=0;return mapData.features.filter(feature=>feature.geometry.type==='Point').map((feature,index)=>{const p=feature.properties;return {feature,index,label:p.displayOrder?String(p.displayOrder).padStart(2,'0'):p.role==='origin'?(p.returnPoint?'S/R':'S'):String(++stop).padStart(2,'0')};});}
 root.CityRouteMap={mountCityRouteMap};
 if(typeof module!=='undefined'&&module.exports)module.exports={mountCityRouteMap};
 })(typeof window!=='undefined'?window:globalThis);
