@@ -193,15 +193,14 @@
     },
     {
       "place": "Tokyo, in layers",
-      "currentImageUrl": "",
-      "sourcePage": "",
-      "photographer": "",
-      "altText": "",
-      "license": "",
-      "verdict": "REMOVED",
-      "evidence": "No source-backed destination photo in catalogue",
-      "action": "Removed: the source page did not verify a destination-specific photograph with complete attribution and matching alt text",
-      "previousUrl": "https://images.unsplash.com/photo-1547448526-5e9d57fa28f7?auto=format&fit=crop&w=950&q=82"
+      "currentImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shibuya_Crossing_in_Tokyo.jpg?width=1400",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing_in_Tokyo.jpg",
+      "photographer": "Christophe95",
+      "altText": "Shibuya Crossing at night in central Tokyo",
+      "license": "CC BY-SA 4.0",
+      "verdict": "CORRECT",
+      "evidence": "Wikimedia Commons identifies this place-specific photograph, its author and CC BY-SA 4.0 license.",
+      "action": "Use with attribution and license link"
     },
     {
       "place": "Nikko in the cedars",
@@ -216,27 +215,25 @@
     },
     {
       "place": "Kamakura, temple to tide",
-      "currentImageUrl": "",
-      "sourcePage": "",
-      "photographer": "",
-      "altText": "",
-      "license": "",
-      "verdict": "REMOVED",
-      "evidence": "No source-backed destination photo in catalogue",
-      "action": "Removed: the source page did not verify a destination-specific photograph with complete attribution and matching alt text",
-      "previousUrl": "https://images.unsplash.com/photo-1628523197648-74f46812c7d7?auto=format&fit=crop&w=950&q=82"
+      "currentImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha.jpg?width=1400",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Great_Buddha.jpg",
+      "photographer": "P. Hughes",
+      "altText": "The Great Buddha of Kamakura, a bronze statue at Kotoku-in",
+      "license": "CC BY-SA 4.0",
+      "verdict": "CORRECT",
+      "evidence": "Wikimedia Commons identifies this place-specific photograph, its author and CC BY-SA 4.0 license.",
+      "action": "Use with attribution and license link"
     },
     {
       "place": "Hakone through the mist",
-      "currentImageUrl": "",
-      "sourcePage": "",
-      "photographer": "",
-      "altText": "",
-      "license": "",
-      "verdict": "REMOVED",
-      "evidence": "No source-backed destination photo in catalogue",
-      "action": "Removed: the source page did not verify a destination-specific photograph with complete attribution and matching alt text",
-      "previousUrl": "https://images.unsplash.com/photo-1729669373661-629b881d6642?auto=format&fit=crop&w=950&q=82"
+      "currentImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg?width=1400",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg",
+      "photographer": "Charlie Fong",
+      "altText": "Lake Ashi, Mount Fuji and Hakone Shrine in the morning light",
+      "license": "CC BY-SA 4.0",
+      "verdict": "CORRECT",
+      "evidence": "Wikimedia Commons identifies this place-specific photograph, its author and CC BY-SA 4.0 license.",
+      "action": "Use with attribution and license link"
     },
     {
       "place": "Yokohama’s harbor lights",

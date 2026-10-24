@@ -890,16 +890,16 @@ The generated guide scan found 0 filename-style image alt tags and 0 Furano-cont
 
 ## Real content for every place — and zero mojibake
 
-**Version:** v1.5.
+**Version:** v1.6.
 
 ### Gate results
 
-- **Checklist:** 1/310 complete; 309 incomplete, with each place and each missing item listed in CONTENT_AUDIT.md.
+- **Checklist:** 4/310 complete; 306 incomplete, with each place and each missing item listed in CONTENT_AUDIT.md.
 - **Uniqueness:** 1 story/highlight sentences occur in more than three places.
 - **Entity gate:** checked within each place’s story; requirements and per-place counts are recorded above.
 - **No-hedge gate:** story text is checked for the prohibited placeholder phrases; the per-place uniqueStory result reports failures.
 - **Cross-contamination:** 1 places contain references to another catalogue place outside their own named highlights; those names are recorded with each exception.
-- **Mojibake:** scanned 427 UTF-8 source/data/generated text files, including 318 HTML pages; findings: 0.
+- **Mojibake:** scanned 428 UTF-8 source/data/generated text files, including 318 HTML pages; findings: 0.
 - **Charset pipeline:** all checked HTML files declare UTF-8 as the first element in the head; invalid UTF-8 bytes are reported by the gate.
 
 ### Research and encoding findings
@@ -908,14 +908,14 @@ Content was not auto-filled with plausible details. Each exception names the des
 
 ### Rendered verification
 
-v1.5 rendered verification passed in Chromium: the Nikko dialog displays a 165-word story and six highlights; the Nikko guide displays a 164-word story, the late-October-to-mid-November seasonal note and official source link. Desktop screenshot reviewed at 1280px; page overflow was 0. The full browser suite also passed its 310-place, image, seasonal search, saved places, city plans, Nikko route and 360/390/412/430px layout checks.
+v1.6 rendered verification passed in Chromium: the Nikko dialog displays a 165-word story and six highlights; the Nikko guide displays a 164-word story, the late-October-to-mid-November seasonal note and official source link. Desktop screenshot reviewed at 1280px; page overflow was 0. The full browser suite also passed its 310-place, image, seasonal search, saved places, city plans, Nikko route and 360/390/412/430px layout checks.
 
 ### Regression checks
 
 - Place count: 310/310 expected.
 - Nikko and Tokyo route data were not changed by this audit work.
 - Photo audit records and verified image assets were not modified.
-- PASS — all 20 unit-test files passed when run individually. The parallel Node test runner itself is blocked by Windows sandbox child-process EPERM. PASS — full browser suite and the focused v1.5 Nikko content/render check.
+- PASS — all 20 unit-test files passed when run individually. The parallel Node test runner itself is blocked by Windows sandbox child-process EPERM. PASS — full browser suite and the focused v1.6 Nikko content/render check.
 
 ### Exceptions
 

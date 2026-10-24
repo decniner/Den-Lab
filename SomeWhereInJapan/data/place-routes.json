@@ -3559,45 +3559,237 @@
       ]
     },
     {
-      "id": "hakone-through-the-mist-place-map",
+      "id": "hakone-mountain-and-lake-circuit",
       "placeId": "hakone-through-the-mist",
       "cityId": "destination",
-      "title": "Hakone through the mist: location map",
-      "introduction": "Approximate location reference for Hakone through the mist. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Kanagawa · Kanto",
+      "title": "Hakone: mountain rail, volcanic valley and Lake Ashi",
+      "researchStatus": "verified",
+      "introduction": "Follow the official first-visit sequence: Open-Air Museum, Owakudani, ropeway to Togendai, sightseeing cruise to Motohakone and Hakone Shrine. The connectors mark visit order only; rail, cable car, ropeway, cruise, bus and walking service must be checked separately on the day.",
+      "origin": {
+        "id": "hakone-yumoto-station",
+        "name": "Hakone-Yumoto Station",
+        "address": "Hakone-Yumoto Station, 707-1 Yumoto-shiroishishita, Hakone, Kanagawa, Japan",
+        "coordinates": {
+          "latitude": 35.23276190340037,
+          "longitude": 139.1044375304999,
+          "precision": "Official Hakone Navi station map point",
+          "sourceIds": [
+            "hakone-station-yumoto"
+          ]
+        },
+        "returnPoint": false
+      },
       "stops": [
         {
-          "id": "hakone-through-the-mist-place",
+          "id": "hakone-open-air-museum",
           "order": 1,
-          "name": "Hakone through the mist",
-          "area": "Kanagawa · Kanto",
-          "address": "Hakone through the mist, Kanagawa · Kanto, Japan",
-          "story": "Onsen ryokan, cedar avenues, and lake views beneath the cloud-wrapped Hakone hills.",
+          "name": "Hakone Open-Air Museum",
+          "area": "Ninotaira, Hakone",
+          "address": "Hakone Open-Air Museum, 1121 Ninotaira, Hakone, Kanagawa, Japan",
+          "story": "Begin with outdoor sculpture, the Picasso Pavilion and the mountain garden. The official course connects the museum from Hakone-Yumoto by Hakone Tozan train.",
           "coordinates": {
-            "latitude": 35.4342935,
-            "longitude": 139.374753,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 35.2444298,
+            "longitude": 139.0504232,
+            "precision": "Official Hakone tourism map point",
             "sourceIds": [
-              "destination-map-location"
+              "hakone-open-air-museum"
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 90,
+            "maxMinutes": 150,
+            "basis": "Guide planning estimate; the outdoor collection and exhibitions can take longer."
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Hakone%20through%20the%20mist%20Japan%20visitor%20guide"
+          "visitorInfo": "Adult admission is listed at ¥2,000 at the same-day window; verify current prices and opening notices.",
+          "visitorInfoUrl": "https://www.hakone.or.jp/534",
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Hakone+Open-Air+Museum+guide"
+        },
+        {
+          "id": "hakone-owakudani",
+          "order": 2,
+          "name": "Owakudani",
+          "area": "Sengokuhara, Hakone",
+          "address": "Owakudani Station, 1251 Sengokuhara, Hakone, Kanagawa, Japan",
+          "story": "Transfer at Gora and Sounzan for the cable car and ropeway to Hakone’s volcanic valley. Use marked paths and follow current volcanic and weather restrictions.",
+          "coordinates": {
+            "latitude": 35.24544126044922,
+            "longitude": 139.0192271718556,
+            "precision": "Official Hakone Navi station map point",
+            "sourceIds": [
+              "hakone-station-owakudani"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 75,
+            "basis": "Guide planning estimate; access may be restricted by volcanic or weather conditions."
+          },
+          "visitorInfo": "Ropeway and valley access are subject to operating notices; check before travelling.",
+          "visitorInfoUrl": "https://www.hakonenavi.jp/international/en/station/owakudani",
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Owakudani+Hakone+travel+guide"
+        },
+        {
+          "id": "hakone-togendai-port",
+          "order": 3,
+          "name": "Togendai Station and Port",
+          "area": "Moto-Hakone, Hakone",
+          "address": "Togendai Station and Port, 164 Moto-Hakone, Hakone, Kanagawa, Japan",
+          "story": "Continue on the ropeway to the lake-side terminal, then board the Hakone Sightseeing Cruise toward Motohakone-ko. Check the boat timetable and weather notices.",
+          "coordinates": {
+            "latitude": 35.2379332,
+            "longitude": 138.9938522,
+            "precision": "Official Hakone Navi station map point",
+            "sourceIds": [
+              "hakone-station-togendai"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 20,
+            "maxMinutes": 45,
+            "basis": "Guide planning estimate for transfer and boarding; cruise departure times vary."
+          },
+          "visitorInfo": "Togendai connects the ropeway, sightseeing cruise and buses; confirm current timetable.",
+          "visitorInfoUrl": "https://www.hakonenavi.jp/international/en/station/togendai",
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Togendai+Hakone+Lake+Ashi+cruise"
+        },
+        {
+          "id": "hakone-shrine",
+          "order": 4,
+          "name": "Hakone Shrine",
+          "area": "Motohakone, Hakone",
+          "address": "Hakone Shrine, 80-1 Motohakone, Hakone, Kanagawa, Japan",
+          "story": "From Motohakone-ko, walk to the lakeside shrine and its cedar-lined approach. The torii beside Lake Ashi is popular, so allow time for queues and be considerate of worshippers.",
+          "coordinates": {
+            "latitude": 35.20396,
+            "longitude": 139.02557,
+            "precision": "OpenStreetMap shrine way center",
+            "sourceIds": [
+              "hakone-shrine"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 75,
+            "basis": "Guide planning estimate; queues at the lakeside torii can add time."
+          },
+          "visitorInfo": "The shrine grounds are open for worship; the treasure hall has separate hours and fees.",
+          "visitorInfoUrl": "https://www.hakone.or.jp/554",
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Hakone+Shrine+Lake+Ashi+travel+guide"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "yumoto-to-museum",
+          "order": 1,
+          "from": "Hakone-Yumoto Station",
+          "to": "Hakone Open-Air Museum",
+          "mode": "transit",
+          "story": "Take the Hakone Tozan train to Chokoku-no-Mori Station and walk about two minutes to the museum.",
+          "sourceIds": [
+            "hakone-one-day",
+            "hakone-open-air-museum"
+          ]
+        },
+        {
+          "id": "museum-to-owakudani",
+          "order": 2,
+          "from": "Hakone Open-Air Museum",
+          "to": "Owakudani",
+          "mode": "transit",
+          "story": "Return to Gora, change to the cable car at Gora and transfer to the ropeway at Sounzan.",
+          "sourceIds": [
+            "hakone-one-day",
+            "hakone-around"
+          ]
+        },
+        {
+          "id": "owakudani-to-togendai",
+          "order": 3,
+          "from": "Owakudani",
+          "to": "Togendai Station and Port",
+          "mode": "transit",
+          "story": "Ride the Hakone Ropeway down to Togendai Station and Port.",
+          "sourceIds": [
+            "hakone-one-day",
+            "hakone-station-togendai"
+          ]
+        },
+        {
+          "id": "togendai-to-shrine",
+          "order": 4,
+          "from": "Togendai Station and Port",
+          "to": "Hakone Shrine",
+          "mode": "transit",
+          "story": "Take the sightseeing cruise across Lake Ashi to Motohakone-ko, then walk to Hakone Shrine.",
+          "sourceIds": [
+            "hakone-one-day",
+            "hakone-motohakone",
+            "hakone-shrine"
+          ]
+        }
+      ],
+      "fullRouteUrl": "https://www.google.com/maps/dir/?api=1&origin=Hakone-Yumoto+Station%2C+Hakone%2C+Japan&destination=Hakone+Shrine%2C+Motohakone%2C+Hakone%2C+Japan&travelmode=transit&waypoints=Hakone+Open-Air+Museum%7COwakudani%7CTogendai+Station+and+Port",
+      "timeEstimate": {
+        "label": "About 7 to 9 hours",
+        "basis": "Editorial full-day estimate following the official one-day sequence; queues, transfers, weather and service frequency change the total."
+      },
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/2689487",
-          "checkedOn": "2026-10-23",
+          "id": "hakone-one-day",
+          "label": "Hakone Navi: first-time one-day itinerary",
+          "url": "https://www.hakonenavi.jp/international/en/course/244",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "official stop sequence and transport changes"
+          ]
+        },
+        {
+          "id": "hakone-around",
+          "label": "Hakone Navi: transport guide",
+          "url": "https://www.hakonenavi.jp/international/en/around",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "train, cable car, ropeway and cruise connections"
+          ]
+        },
+        {
+          "id": "hakone-station-owakudani",
+          "label": "Hakone Navi: Owakudani station map",
+          "url": "https://www.hakonenavi.jp/international/en/station/owakudani",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "route map point"
+          ]
+        },
+        {
+          "id": "hakone-station-togendai",
+          "label": "Hakone Navi: Togendai station and port map",
+          "url": "https://www.hakonenavi.jp/international/en/station/togendai",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "route map point"
+          ]
+        },
+        {
+          "id": "hakone-open-air-museum",
+          "label": "Hakone Town Tourism Association: Open-Air Museum",
+          "url": "https://www.hakone.or.jp/534",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "museum access and map point"
+          ]
+        },
+        {
+          "id": "hakone-shrine",
+          "label": "OpenStreetMap: Hakone Shrine",
+          "url": "https://www.openstreetmap.org/way/553740875",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "route stop map point"
           ]
         }
       ]
@@ -5528,45 +5720,190 @@
       ]
     },
     {
-      "id": "kamakura-temple-to-tide-place-map",
+      "id": "kamakura-central-to-hase-route",
       "placeId": "kamakura-temple-to-tide",
       "cityId": "destination",
-      "title": "Kamakura, temple to tide: location map",
-      "introduction": "Approximate location reference for Kamakura, temple to tide. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Kanagawa · Kanto",
+      "title": "Kamakura: central shrine to the coastal temples",
+      "researchStatus": "verified",
+      "introduction": "Start at Kamakura Station, walk to Tsurugaoka Hachimangu Shrine, then use the Enoden or local bus to reach Hase. Visit the Great Buddha and continue on foot to Hasedera Temple. Map connectors show stop order only; follow the live transit and walking links for navigation.",
+      "origin": {
+        "id": "kamakura-station",
+        "name": "Kamakura Station",
+        "address": "Kamakura Station, 1-1 Komachi, Kamakura, Kanagawa, Japan",
+        "coordinates": {
+          "latitude": 35.319,
+          "longitude": 139.55069,
+          "precision": "OpenStreetMap station way center",
+          "sourceIds": [
+            "kamakura-station-osm"
+          ]
+        },
+        "returnPoint": false
+      },
       "stops": [
         {
-          "id": "kamakura-temple-to-tide-place",
+          "id": "kamakura-tsurugaoka",
           "order": 1,
-          "name": "Kamakura, temple to tide",
-          "area": "Kanagawa · Kanto",
-          "address": "Kamakura, temple to tide, Kanagawa · Kanto, Japan",
-          "story": "Move from temple gardens and the Great Buddha to a breezy path down to the sea.",
+          "name": "Tsurugaoka Hachimangu Shrine",
+          "area": "Yukinoshita, Kamakura",
+          "address": "Tsurugaoka Hachimangu Shrine, 2-1-31 Yukinoshita, Kamakura, Japan",
+          "story": "Walk the shrine approach from the east side of Kamakura Station. The shrine moved to its current location under Minamoto no Yoritomo and remains the historic heart of central Kamakura.",
           "coordinates": {
-            "latitude": 35.4342935,
-            "longitude": 139.374753,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 35.3251836,
+            "longitude": 139.5561787,
+            "precision": "OpenStreetMap shrine way center",
             "sourceIds": [
-              "destination-map-location"
+              "kamakura-tsurugaoka-osm"
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 75,
+            "basis": "Guide planning estimate; allow more time for the grounds and seasonal displays."
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Kamakura%2C%20temple%20to%20tide%20Japan%20visitor%20guide"
+          "visitorInfo": "The shrine grounds are open daily; check current museum hours and fees before visiting.",
+          "visitorInfoUrl": "https://visit.trip-kamakura.com/things-to-do/tsurugaoka-hachimangu/",
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Tsurugaoka+Hachimangu+Kamakura"
+        },
+        {
+          "id": "kamakura-great-buddha",
+          "order": 2,
+          "name": "Great Buddha of Kamakura",
+          "area": "Hase, Kamakura",
+          "address": "Kotoku-in, 4-2-28 Hase, Kamakura, Kanagawa, Japan",
+          "story": "Meet the outdoor bronze Daibutsu at Kotoku-in. The official guide notes that the former hall was destroyed, leaving the statue exposed to the sky; interior access is a separate small fee when available.",
+          "coordinates": {
+            "latitude": 35.3168482,
+            "longitude": 139.5357212,
+            "precision": "OpenStreetMap Great Buddha node",
+            "sourceIds": [
+              "kamakura-daibutsu-osm"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 25,
+            "maxMinutes": 45,
+            "basis": "Guide planning estimate; queues and interior access change the visit length."
+          },
+          "visitorInfo": "Adult admission is listed at ¥300; inside the statue is an additional ¥50. Confirm current hours and fees.",
+          "visitorInfoUrl": "https://visit.trip-kamakura.com/japanheritage/english/japanheritage-en/21487.html",
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Great+Buddha+of+Kamakura+Kotoku-in"
+        },
+        {
+          "id": "kamakura-hasedera",
+          "order": 3,
+          "name": "Hasedera Temple, Kamakura",
+          "area": "Hase, Kamakura",
+          "address": "Hasedera Temple, 3-11-2 Hase, Kamakura, Kanagawa, Japan",
+          "story": "Follow the garden paths to the eleven-faced Kannon and the lookout above Kamakura. The hillside setting makes this a natural, slower finale after the Great Buddha.",
+          "coordinates": {
+            "latitude": 35.312731522707,
+            "longitude": 139.53305267116,
+            "precision": "Official Kamakura guide map point",
+            "sourceIds": [
+              "kamakura-hasedera"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 60,
+            "maxMinutes": 100,
+            "basis": "Guide planning estimate for the gardens, temple buildings and lookout."
+          },
+          "visitorInfo": "Adult admission is listed at ¥400; the Kannon Museum has a separate fee. Confirm current hours and seasonal access.",
+          "visitorInfoUrl": "https://visit.trip-kamakura.com/things-to-do/hasedera-temple/",
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Hasedera+Temple+Kamakura+travel"
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "kamakura-station-to-tsurugaoka",
+          "order": 1,
+          "from": "Kamakura Station",
+          "to": "Tsurugaoka Hachimangu Shrine",
+          "mode": "walking",
+          "story": "Walk about 10 minutes from the station east exit; the shrine is reached along the central approach.",
+          "sourceIds": [
+            "kamakura-tsurugaoka"
+          ]
+        },
+        {
+          "id": "central-kamakura-to-hase",
+          "order": 2,
+          "from": "Tsurugaoka Hachimangu Shrine",
+          "to": "Great Buddha of Kamakura",
+          "mode": "transit",
+          "story": "Return toward Kamakura Station and take Enoden to Hase, or use a local bus toward Daibutsu-mae. Check live service and crowd conditions.",
+          "sourceIds": [
+            "kamakura-model-route",
+            "kamakura-daibutsu"
+          ]
+        },
+        {
+          "id": "great-buddha-to-hasedera",
+          "order": 3,
+          "from": "Great Buddha of Kamakura",
+          "to": "Hasedera Temple, Kamakura",
+          "mode": "walking",
+          "story": "Continue on foot between the two Hase-area sights; follow signed pedestrian routes and allow time for busy streets.",
+          "sourceIds": [
+            "kamakura-hasedera",
+            "kamakura-daibutsu"
+          ]
+        }
+      ],
+      "timeEstimate": {
+        "label": "About 5 to 7 hours",
+        "basis": "Editorial day-plan estimate, including transfers, breaks and site visits; actual time varies with queues, crowds and pace."
+      },
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/2689487",
-          "checkedOn": "2026-10-23",
+          "id": "kamakura-access",
+          "label": "VISIT KAMAKURA: access and local transport",
+          "url": "https://visit.trip-kamakura.com/access/",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "rail and bus arrival",
+            "traffic recommendation"
+          ]
+        },
+        {
+          "id": "kamakura-model-route",
+          "label": "VISIT KAMAKURA: official tourist map",
+          "url": "https://visit.trip-kamakura.com/wp/wp-content/uploads/2025/01/touristmap_english_2024.pdf",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "visitor sequence and local transport links"
+          ]
+        },
+        {
+          "id": "kamakura-tsurugaoka-osm",
+          "label": "OpenStreetMap: Tsurugaoka Hachimangu",
+          "url": "https://www.openstreetmap.org/way/34550401",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "map point"
+          ]
+        },
+        {
+          "id": "kamakura-daibutsu-osm",
+          "label": "OpenStreetMap: Great Buddha",
+          "url": "https://www.openstreetmap.org/node/260752586",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "map point"
+          ]
+        },
+        {
+          "id": "kamakura-hasedera",
+          "label": "VISIT KAMAKURA: Hasedera Temple",
+          "url": "https://visit.trip-kamakura.com/things-to-do/hasedera-temple/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "map point",
+            "site information"
           ]
         }
       ]
@@ -27222,12 +27559,12 @@
     "kamakura-temple-to-tide": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          139.372753,
-          35.4322935,
-          139.376753,
-          35.436293500000005
+          139.53105267115998,
+          35.310731522706995,
+          139.5581787,
+          35.327183600000005
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -27236,20 +27573,138 @@
       "features": [
         {
           "type": "Feature",
-          "id": "kamakura-temple-to-tide-place",
+          "id": "kamakura-station",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              139.374753,
-              35.4342935
+              139.55069,
+              35.319
             ]
           },
           "properties": {
-            "id": "kamakura-temple-to-tide-place",
-            "routeStopId": "kamakura-temple-to-tide-place",
-            "name": "Kamakura, temple to tide",
-            "role": "stop",
-            "order": 1
+            "id": "kamakura-station",
+            "routeStopId": "kamakura-station",
+            "name": "Kamakura Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.55069,
+                35.319
+              ],
+              [
+                139.5561787,
+                35.3251836
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kamakura-station-to-tsurugaoka",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kamakura-tsurugaoka",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.5561787,
+              35.3251836
+            ]
+          },
+          "properties": {
+            "id": "kamakura-tsurugaoka",
+            "routeStopId": "kamakura-tsurugaoka",
+            "order": 1,
+            "name": "Tsurugaoka Hachimangu Shrine",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.5561787,
+                35.3251836
+              ],
+              [
+                139.5357212,
+                35.3168482
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "central-kamakura-to-hase",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kamakura-great-buddha",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.5357212,
+              35.3168482
+            ]
+          },
+          "properties": {
+            "id": "kamakura-great-buddha",
+            "routeStopId": "kamakura-great-buddha",
+            "order": 2,
+            "name": "Great Buddha of Kamakura",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.5357212,
+                35.3168482
+              ],
+              [
+                139.53305267116,
+                35.312731522707
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "great-buddha-to-hasedera",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kamakura-hasedera",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.53305267116,
+              35.312731522707
+            ]
+          },
+          "properties": {
+            "id": "kamakura-hasedera",
+            "routeStopId": "kamakura-hasedera",
+            "order": 3,
+            "name": "Hasedera Temple, Kamakura",
+            "role": "stop"
           }
         }
       ]
@@ -27257,12 +27712,12 @@
     "hakone-through-the-mist": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          139.372753,
-          35.4322935,
-          139.376753,
-          35.436293500000005
+          138.99185219999998,
+          35.20196,
+          139.1064375304999,
+          35.24744126044922
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -27271,20 +27726,177 @@
       "features": [
         {
           "type": "Feature",
-          "id": "hakone-through-the-mist-place",
+          "id": "hakone-yumoto-station",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              139.374753,
-              35.4342935
+              139.1044375304999,
+              35.23276190340037
             ]
           },
           "properties": {
-            "id": "hakone-through-the-mist-place",
-            "routeStopId": "hakone-through-the-mist-place",
-            "name": "Hakone through the mist",
-            "role": "stop",
-            "order": 1
+            "id": "hakone-yumoto-station",
+            "routeStopId": "hakone-yumoto-station",
+            "name": "Hakone-Yumoto Station",
+            "role": "origin",
+            "returnPoint": false,
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.1044375304999,
+                35.23276190340037
+              ],
+              [
+                139.0504232,
+                35.2444298
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "yumoto-to-museum",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "hakone-open-air-museum",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.0504232,
+              35.2444298
+            ]
+          },
+          "properties": {
+            "id": "hakone-open-air-museum",
+            "routeStopId": "hakone-open-air-museum",
+            "order": 1,
+            "name": "Hakone Open-Air Museum",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.0504232,
+                35.2444298
+              ],
+              [
+                139.0192271718556,
+                35.24544126044922
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "museum-to-owakudani",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "hakone-owakudani",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.0192271718556,
+              35.24544126044922
+            ]
+          },
+          "properties": {
+            "id": "hakone-owakudani",
+            "routeStopId": "hakone-owakudani",
+            "order": 2,
+            "name": "Owakudani",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                139.0192271718556,
+                35.24544126044922
+              ],
+              [
+                138.9938522,
+                35.2379332
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "owakudani-to-togendai",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "hakone-togendai-port",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              138.9938522,
+              35.2379332
+            ]
+          },
+          "properties": {
+            "id": "hakone-togendai-port",
+            "routeStopId": "hakone-togendai-port",
+            "order": 3,
+            "name": "Togendai Station and Port",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                138.9938522,
+                35.2379332
+              ],
+              [
+                139.02557,
+                35.20396
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "togendai-to-shrine",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "hakone-shrine",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              139.02557,
+              35.20396
+            ]
+          },
+          "properties": {
+            "id": "hakone-shrine",
+            "routeStopId": "hakone-shrine",
+            "order": 4,
+            "name": "Hakone Shrine",
+            "role": "stop"
           }
         }
       ]

@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "records": {
     "tokyo-in-layers": {
-      "story": "Tokyo reads best as a set of distinct urban districts. The official visitor directory groups its recommendations by area, from central and eastern neighborhoods to western Tokyo, southern Tokyo, Tama, and the islands; choose one cluster before adding another.",
-      "visitPlan": "Choose one area cluster as the day’s anchor, then use the official operator route planner to connect its stops. The clusters are an editorial way to keep a large city legible, not a verified timed itinerary.",
-      "access": "Tokyo has extensive rail and subway coverage. The official visitor guide describes subway lines and additional railway operators; use the operator route tools for the chosen districts and travel date.",
+      "story": "Tokyo, in layers rewards travelers who treat the capital as a series of neighborhoods instead of a checklist. Begin in Asakusa, where the Kaminarimon lantern, Nakamise's shopfronts and the temple precinct create a walkable introduction to older Tokyo. Ride west and the city changes scale: Harajuku's busy streets meet the wooded approach to Meiji Jingu, then the broad crossing at Shibuya gathers the movement of the modern city into one memorable pause. Tokyo Station and Marunouchi offer another contrast, with the red-brick station facade opening toward wide avenues and the Imperial Palace grounds. Each district works as its own half-day; combining two nearby areas makes a satisfying day, while trying to cross the city repeatedly turns the journey into station transfers. Spring brings blossoms and comfortable outdoor walks; June is humid and rainy, so keep an indoor museum or aquarium in reserve. For two connected districts, plan about 6 to 8 hours, then add time for exhibitions, observation decks or meals. Admission varies by attraction, and most landmarks have separate opening schedules.",
+      "visitPlan": "For a first full day, pair Asakusa with a nearby eastern-Tokyo stop. On another day, combine Meiji Jingu and Harajuku with Shibuya. Keep the districts separate unless there is a clear reason to cross town; this is a planning pattern rather than a timed route. Allow 6 to 8 hours for two connected districts and check admission or reservation details for museums and observatories.",
+      "access": "Air: Haneda and Narita both connect to central Tokyo by train, airport bus and taxi; Haneda is closer to the city. Train: Tokyo is served by the shinkansen from other major Japanese cities and by JR, Tokyo Metro, Toei Subway and private railways within the capital. Bus: highway coaches serve Shinjuku and Tokyo Station, with airport buses to major districts. Car: use public transport within the central city when possible; parking and traffic vary by district. For Asakusa, Tokyo Metro Ginza Line, Toei Asakusa Line and Tobu Skytree Line serve Asakusa Station; Shibuya and Shinjuku have many rail operators.",
       "areas": [
         "Central Tokyo",
         "Eastern Tokyo",
@@ -15,16 +15,20 @@
       ],
       "points": [
         {
-          "name": "Central Tokyo visitor area",
-          "description": "Includes Tokyo Station, Ginza, Tsukiji and nearby districts in the official destination directory."
+          "name": "Asakusa",
+          "description": "A traditional east-Tokyo district of temple approaches, shopping lanes, riverside walks and direct subway connections."
         },
         {
-          "name": "Eastern Tokyo visitor area",
-          "description": "Includes Asakusa, Ryogoku, Skytree and Toyosu in the official directory."
+          "name": "Tokyo Station and Marunouchi",
+          "description": "The station facade and surrounding central avenues make a compact architecture-and-city-history walk."
         },
         {
-          "name": "Western Tokyo visitor area",
-          "description": "Includes Shinjuku, Shibuya, Harajuku and surrounding districts."
+          "name": "Meiji Jingu and Harajuku",
+          "description": "Pair the quiet wooded approach to the shrine with Harajuku’s contemporary streets, checking shrine etiquette and event notices."
+        },
+        {
+          "name": "Shibuya",
+          "description": "A rail-connected west-Tokyo district whose crossing, station viewpoints and side streets reward a slower evening visit."
         }
       ],
       "accessModes": {
@@ -67,11 +71,22 @@
         "note": "A citywide point would misrepresent Tokyo; destination-area map points are not yet sourced."
       },
       "photo": {
-        "status": "unverified"
+        "status": "verified",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shibuya_Crossing_in_Tokyo.jpg?width=1400",
+        "alt": "Shibuya Crossing at night in central Tokyo",
+        "source": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing_in_Tokyo.jpg",
+        "credit": "Christophe95",
+        "license": "CC BY-SA 4.0",
+        "sourceIds": [
+          "tokyo-photo"
+        ]
       },
       "weatherPlan": {
-        "status": "unknown",
-        "alternative": "No source-backed citywide weather alternative has been checked."
+        "alternative": "Keep a museum, aquarium or observation deck as a weather-flexible alternative, and check each attraction’s opening and reservation details.",
+        "sourceIds": [
+          "tokyo-weather",
+          "tokyo-best-three-days"
+        ]
       },
       "claims": [
         {
@@ -91,24 +106,143 @@
       ],
       "sources": [
         {
-          "id": "tokyo-spots",
+          "id": "tokyo-asakusa",
           "organization": "Tokyo Convention & Visitors Bureau",
-          "title": "GO TOKYO official destination directory",
-          "url": "https://www.gotokyo.org/en/spot/",
-          "checkedOn": "2026-10-23",
-          "evidenceNotes": "Lists Tokyo visitor areas by central, eastern, western, northern, southern, Tama, and island areas."
+          "title": "A guide to Asakusa",
+          "url": "https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports Asakusa points of interest and access from Tokyo, Shinjuku and both airports."
         },
         {
-          "id": "tokyo-transit",
+          "id": "tokyo-shibuya",
           "organization": "Tokyo Convention & Visitors Bureau",
-          "title": "How to use the Tokyo subway system",
-          "url": "https://www.gotokyo.org/en/plan/getting-around/subways/index.html",
-          "checkedOn": "2026-10-23",
-          "evidenceNotes": "Official visitor overview of subway coverage and other rail operators; page updated September 1, 2026."
+          "title": "A guide to Shibuya",
+          "url": "https://www.gotokyo.org/en/destinations/western-tokyo/shibuya/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports Shibuya attractions and access by rail from Shinjuku, Tokyo Station and both airports."
+        },
+        {
+          "id": "tokyo-shinjuku",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "A guide to Shinjuku",
+          "url": "https://www.gotokyo.org/en/destinations/western-tokyo/shinjuku/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports Shinjuku transport connections and district details."
+        },
+        {
+          "id": "tokyo-arrival",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Getting to Tokyo",
+          "url": "https://www.gotokyo.org/en/plan/getting-to-tokyo/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports arrival by plane, shinkansen and express buses, plus Tokyo public transit."
+        },
+        {
+          "id": "tokyo-airport",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Airport and cruise terminal access",
+          "url": "https://www.gotokyo.org/en/plan/airport-access/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports rail, bus and taxi options from Narita and Haneda."
+        },
+        {
+          "id": "tokyo-weather",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Weather and geography in Tokyo",
+          "url": "https://www.gotokyo.org/en/plan/weather/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports seasonal planning: spring conditions and humid, rainy June to mid-July."
+        },
+        {
+          "id": "tokyo-best-three-days",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "How to see the best of Tokyo in three days",
+          "url": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports grouping nearby districts rather than crossing the city repeatedly."
+        },
+        {
+          "id": "tokyo-photo",
+          "organization": "Wikimedia Commons",
+          "title": "Shibuya Crossing in Tokyo.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing_in_Tokyo.jpg",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Photograph by Christophe95; CC BY-SA 4.0."
+        },
+        {
+          "id": "tokyo-asakusa",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "A guide to Asakusa",
+          "url": "https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports Asakusa points of interest and access from Tokyo, Shinjuku and both airports."
+        },
+        {
+          "id": "tokyo-shibuya",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "A guide to Shibuya",
+          "url": "https://www.gotokyo.org/en/destinations/western-tokyo/shibuya/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports Shibuya attractions and access by rail from Shinjuku, Tokyo Station and both airports."
+        },
+        {
+          "id": "tokyo-shinjuku",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "A guide to Shinjuku",
+          "url": "https://www.gotokyo.org/en/destinations/western-tokyo/shinjuku/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports Shinjuku transport connections and district details."
+        },
+        {
+          "id": "tokyo-arrival",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Getting to Tokyo",
+          "url": "https://www.gotokyo.org/en/plan/getting-to-tokyo/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports arrival by plane, shinkansen and express buses, plus Tokyo public transit."
+        },
+        {
+          "id": "tokyo-airport",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Airport and cruise terminal access",
+          "url": "https://www.gotokyo.org/en/plan/airport-access/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports rail, bus and taxi options from Narita and Haneda."
+        },
+        {
+          "id": "tokyo-weather",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "Weather and geography in Tokyo",
+          "url": "https://www.gotokyo.org/en/plan/weather/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports seasonal planning: spring conditions and humid, rainy June to mid-July."
+        },
+        {
+          "id": "tokyo-best-three-days",
+          "organization": "Tokyo Convention & Visitors Bureau",
+          "title": "How to see the best of Tokyo in three days",
+          "url": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports grouping nearby districts rather than crossing the city repeatedly."
+        },
+        {
+          "id": "tokyo-photo",
+          "organization": "Wikimedia Commons",
+          "title": "Shibuya Crossing in Tokyo.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing_in_Tokyo.jpg",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Photograph by Christophe95; CC BY-SA 4.0."
         }
       ],
       "status": "partially-verified",
-      "nextAction": "Research specific visitor points, sourced addresses and coordinates, district-level weather alternatives, contacts, stays, and unique photo provenance."
+      "nextAction": "Research specific visitor points, sourced addresses and coordinates, district-level weather alternatives, contacts, stays, and unique photo provenance.",
+      "seasonality": "Spring is a comfortable time for park and shrine approaches. June brings humid, rainy weather; carry rain protection and keep an indoor attraction in reserve. Autumn walking conditions improve later in the season. Weather and event schedules vary by year.",
+      "highlights": [
+        "Asakusa",
+        "Tokyo Station and Marunouchi",
+        "Meiji Jingu and Harajuku",
+        "Shibuya"
+      ]
     },
     "senso-ji-and-asakusa-lanes": {
       "story": "Asakusa’s appeal comes from how its temple approach, neighborhood streets and Sumida waterfront sit within an easy walking area. GO TOKYO links Sensoji, Kaminarimon and Nakamise with nearby river views; the district lets a visitor move from a busy gate to the open river edge without changing neighborhoods.",
@@ -1168,6 +1302,465 @@
         "alternative": "Weather-specific indoor alternatives are omitted because no source-backed alternative for this exact route was verified.",
         "sourceIds": [
           "nikko-official"
+        ]
+      }
+    },
+    "kamakura-temple-to-tide": {
+      "story": "Kamakura, temple to tide is a day shaped by changing scale: the broad approach to Tsurugaoka Hachimangu Shrine gives way to lanes of small shops, then the Enoden carries you toward the coast and the open-air presence of the Great Buddha of Kamakura. At Kotoku-in, the bronze Daibutsu has stood outdoors since the hall that once covered it was destroyed; the surviving foundation stones help make the statue's setting feel less like a monument and more like a place with a long memory. A short walk away, Hasedera Temple turns the visit upward through gardens to a lookout over the town and the sea. Give the central shrine precinct the quiet of the morning, then use the railway rather than a long road transfer to reach Hase. Hydrangeas make June especially popular, while Hasedera's outlook and temple grounds change with the season. For this central-to-western route, allow about 5 to 7 hours as a planning estimate, including rail transfers, breaks and time inside the sites.",
+      "visitPlan": "Begin at Kamakura Station and walk to Tsurugaoka Hachimangu Shrine. Explore the central streets at an unhurried pace, then use the Enoden or a local bus to reach Hase. Visit the Great Buddha of Kamakura and continue on foot to Hasedera Temple. This is an editorial 5-to-7-hour guide estimate, not a timed operator itinerary; check current services and site hours before travel.",
+      "seasonality": "June is hydrangea season at several Kamakura temples; Meigetsuin is widely known for hydrangeas, and Hasedera reports seasonal flowers including hydrangeas in summer. Hasedera extends its closing time from April to June. Expect more visitors at popular flower sites and confirm current notices.",
+      "access": "Train: JR Yokosuka Line from Tokyo Station to Kamakura Station takes about 60 minutes; the official guide also lists about 50 minutes from Shinagawa and about 25 minutes from Yokohama. From Haneda, take Keikyu Line to Yokohama, then JR Yokosuka Line to Kamakura; from Narita, use Narita Express to Ofuna and transfer to JR Yokosuka Line. Local movement uses JR, Enoden, buses and taxis. Bus access serves the Great Buddha and Hasedera; Kamakura recommends public transport because roads near major sights are congested. By car, use public parking and expect congestion; the sites have their own restrictions. Kamakura has no airport; continue from Haneda or Narita by rail.",
+      "highlights": [
+        "Tsurugaoka Hachimangu Shrine",
+        "Great Buddha of Kamakura",
+        "Hasedera Temple, Kamakura",
+        "Kamakura Station",
+        "Enoden Hase Station"
+      ],
+      "points": [
+        {
+          "name": "Tsurugaoka Hachimangu Shrine",
+          "description": "The central shrine precinct is reached in about a 10-minute walk from the east exit of Kamakura Station; the approach and grounds make a strong first stop."
+        },
+        {
+          "name": "Great Buddha of Kamakura",
+          "description": "At Kotoku-in, the National Treasure bronze statue has remained outdoors since its hall was lost; visitors can enter the statue when access is open."
+        },
+        {
+          "name": "Hasedera Temple, Kamakura",
+          "description": "Follow the garden paths to the lookout for a wide view over Kamakura and the sea; allow time for the temple buildings and Kannon Museum."
+        },
+        {
+          "name": "Enoden Hase Station",
+          "description": "Use the Enoden to link central Kamakura with the Hase area and avoid a long road transfer between the route clusters."
+        },
+        {
+          "name": "Kamakura City Tourist Information Center",
+          "description": "Pick up a local map beside the JR ticket office at Kamakura Station East Exit; staff provide English assistance daily."
+        }
+      ],
+      "sources": [
+        {
+          "id": "kamakura-access",
+          "organization": "Kamakura City Tourist Association",
+          "title": "Official access guide to Kamakura",
+          "url": "https://visit.trip-kamakura.com/access/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Lists rail access from Tokyo Station, Haneda Airport and Narita Airport; recommends public transportation because roads by popular visitor areas are congested."
+        },
+        {
+          "id": "kamakura-model-route",
+          "organization": "Kamakura City Tourist Association",
+          "title": "Kamakura English tourist map and model routes",
+          "url": "https://visit.trip-kamakura.com/wp/wp-content/uploads/2025/01/touristmap_english_2024.pdf",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Maps central and western Kamakura sights and Enoden connections; source map information is dated June 2023."
+        },
+        {
+          "id": "kamakura-daibutsu",
+          "organization": "Kamakura City Tourist Association",
+          "title": "Daibutsu (Great Buddha) of Kamakura",
+          "url": "https://visit.trip-kamakura.com/japanheritage/english/japanheritage-en/21487.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the statue history, address, access from Hase Station, admission and hours."
+        },
+        {
+          "id": "kamakura-hasedera",
+          "organization": "Kamakura City Tourist Association",
+          "title": "Hasedera Temple",
+          "url": "https://visit.trip-kamakura.com/things-to-do/hasedera-temple/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the eleven-faced Kannon, gardens, sea-view lookout, address, fees, hours, access and seasonal flowers."
+        },
+        {
+          "id": "kamakura-tsurugaoka",
+          "organization": "Kamakura City Tourist Association",
+          "title": "Tsurugaoka Hachimangu Shrine",
+          "url": "https://visit.trip-kamakura.com/things-to-do/tsurugaoka-hachimangu/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the shrine history, station access, phone, hours and seasonal flower report."
+        },
+        {
+          "id": "kamakura-meigetsuin",
+          "organization": "Kamakura City Tourist Association",
+          "title": "Meigetsuin Temple",
+          "url": "https://visit.trip-kamakura.com/things-to-do/meigetsuin-temple/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the June hydrangea association and seasonal garden opening information."
+        },
+        {
+          "id": "kamakura-tourist-info",
+          "organization": "Kamakura City Tourist Association",
+          "title": "Kamakura City Tourist Information Center",
+          "url": "https://visit.trip-kamakura.com/services/kamakura-city-tourist-information-center/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports visitor-information phone, address and opening hours."
+        },
+        {
+          "id": "kamakura-photo",
+          "organization": "Wikimedia Commons",
+          "title": "Great Buddha.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Great_Buddha.jpg",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Photograph of the Great Buddha of Kamakura by P. Hughes; CC BY-SA 4.0."
+        },
+        {
+          "id": "kamakura-station-osm",
+          "organization": "OpenStreetMap",
+          "title": "Kamakura Station map feature",
+          "url": "https://www.openstreetmap.org/way/101918460",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Station map point used as the route origin."
+        },
+        {
+          "id": "kamakura-tsurugaoka-osm",
+          "organization": "OpenStreetMap",
+          "title": "Tsurugaoka Hachimangu map feature",
+          "url": "https://www.openstreetmap.org/way/34550401",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Shrine map point used for the route stop."
+        },
+        {
+          "id": "kamakura-daibutsu-osm",
+          "organization": "OpenStreetMap",
+          "title": "Great Buddha map feature",
+          "url": "https://www.openstreetmap.org/node/260752586",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Great Buddha map point used for the route stop."
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "known",
+          "detail": "JR Yokosuka Line from Tokyo Station is about 60 minutes; JR Yokosuka Line from Shinagawa is about 50 minutes.",
+          "sourceIds": [
+            "kamakura-access"
+          ]
+        },
+        "bus": {
+          "status": "known",
+          "detail": "Local buses connect Kamakura Station with Hase and other major sights; check route and stop notices on the official tourist map.",
+          "sourceIds": [
+            "kamakura-model-route",
+            "kamakura-daibutsu"
+          ]
+        },
+        "air": {
+          "status": "known",
+          "detail": "There is no airport in Kamakura. Official access directions connect Haneda via Yokohama and Narita via Ofuna by rail.",
+          "sourceIds": [
+            "kamakura-access"
+          ]
+        },
+        "car": {
+          "status": "known",
+          "detail": "Road congestion is common around popular sights; the official visitor guide recommends public transportation. Check parking availability at individual sites.",
+          "sourceIds": [
+            "kamakura-access",
+            "kamakura-hasedera"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Kamakura City Tourist Information Center",
+          "phone": "+81-467-22-3350",
+          "sourceIds": [
+            "kamakura-tourist-info"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Kamakura Station and Komachi",
+          "area": "Best for an early start at the central shrine and quick access to JR, Enoden, buses and the visitor information center.",
+          "sourceIds": [
+            "kamakura-access",
+            "kamakura-tourist-info"
+          ]
+        },
+        {
+          "name": "Hase and Yuigahama",
+          "area": "A calmer coastal base near the Great Buddha, Hasedera and Enoden Hase Station; allow for a return rail journey to central Kamakura.",
+          "sourceIds": [
+            "kamakura-hasedera",
+            "kamakura-model-route"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Great Buddha of Kamakura admission",
+          "note": "The official guide lists adult admission at ¥300 and entry inside the statue at an additional ¥50; verify current fees and hours before visiting.",
+          "sourceIds": [
+            "kamakura-daibutsu"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha.jpg?width=1400",
+        "alt": "The Great Buddha of Kamakura, a bronze statue at Kotoku-in",
+        "source": "https://commons.wikimedia.org/wiki/File:Great_Buddha.jpg",
+        "credit": "P. Hughes",
+        "license": "CC BY-SA 4.0",
+        "sourceIds": [
+          "kamakura-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "verified",
+        "latitude": 35.3168482,
+        "longitude": 139.5357212,
+        "sourceIds": [
+          "kamakura-daibutsu-osm"
+        ]
+      },
+      "weatherPlan": {
+        "alternative": "If rain interrupts the coastal walk, slow down at the temple interiors and museum stops; check each attraction opening notice and keep the return train flexible.",
+        "sourceIds": [
+          "kamakura-hasedera",
+          "kamakura-access"
+        ]
+      }
+    },
+    "hakone-through-the-mist": {
+      "story": "Hakone through the mist is best understood as a journey across the mountain, not a cluster of nearby stops. Start at the Hakone Open-Air Museum, where sculpture sits in a landscape of hills and gardens, then climb from Gora by cable car and ropeway toward Owakudani. The volcanic valley makes the earth itself the spectacle: steam rises from the ground, and the view opens toward the surrounding caldera. Continue down to Togendai, where the sightseeing cruise crosses Lake Ashi to Motohakone; from the port, a walk leads to Hakone Shrine beneath cedar trees and to the lakeside torii. The sequence follows Hakone's linked transport rather than trying to drive between every viewpoint. June to mid-July brings hydrangeas along the mountain railway and cable-car route, while clear days offer the best chance of seeing Mount Fuji. Ropeway, cruise and road operations can change with weather, so check service notices before setting out. Allow roughly 7 to 9 hours as a guide estimate; admission is separate at museums and some attractions, and the full circuit rewards an early start.",
+      "visitPlan": "Start at Hakone-Yumoto and ride the Hakone Tozan train to the Open-Air Museum. Return to Gora, take the cable car and ropeway to Owakudani, then continue by ropeway to Togendai. Cross Lake Ashi by sightseeing cruise to Motohakone-ko and walk to Hakone Shrine. The official one-day course follows this order; this guide allows 7 to 9 hours, including a slower museum visit and connections. Return by bus from Motohakone or extend the stay overnight.",
+      "seasonality": "Hydrangeas bloom along the Hakone Tozan rail and cable-car routes from mid-June to mid-July; Hakone Town Tourism Association notes that flowering continues later at higher elevations. Clear weather improves Mount Fuji views, while wind, volcanic conditions and road congestion can interrupt transport. Check Hakone operator notices on the day.",
+      "access": "Train: From Shinjuku, the Odakyu Romancecar runs directly to Hakone-Yumoto; its limited-express ticket is separate from the Hakone Freepass. From Tokyo Station, take the Tokaido Shinkansen or JR Tokaido Line to Odawara, then Hakone Tozan Railway to Hakone-Yumoto. Bus: Highway buses connect Shinjuku and airports to Hakone; local Hakone Tozan buses link the lake, shrine and Hakone-Yumoto. Air: Haneda and Narita access is by rail or airport bus onward to Hakone; there is no airport in the area. Car: use the Tomei Expressway via Odawara or Gotemba and local roads, but mountain roads and parking can be slow in busy periods. The Hakone Freepass covers designated transport only; check current inclusions and service status.",
+      "highlights": [
+        "Hakone Open-Air Museum",
+        "Owakudani",
+        "Togendai Station and Port",
+        "Hakone Shrine",
+        "Hakone-Yumoto Station"
+      ],
+      "points": [
+        {
+          "name": "Hakone Open-Air Museum",
+          "description": "A generous first stop for outdoor sculpture, garden paths and the Picasso Pavilion; the museum is two minutes on foot from Chokoku-no-Mori Station."
+        },
+        {
+          "name": "Owakudani",
+          "description": "Ride the cable car from Gora and connect to the ropeway for the volcanic valley, where steam and sulfurous vents reveal Hakone’s active landscape."
+        },
+        {
+          "name": "Togendai Station and Port",
+          "description": "Transfer from the ropeway to the Lake Ashi sightseeing cruise; the station building also has bus connections and visitor facilities."
+        },
+        {
+          "name": "Hakone Shrine",
+          "description": "Walk from Motohakone Port to the cedar-shaded shrine precinct and lakeside torii; keep time for the steps and the approach."
+        },
+        {
+          "name": "Hakone-Yumoto Station",
+          "description": "The gateway station links Odawara and Shinjuku with the mountain rail, buses, tourist information and luggage services."
+        }
+      ],
+      "sources": [
+        {
+          "id": "hakone-one-day",
+          "organization": "Odakyu Hakone",
+          "title": "Your First Hakone Trip: a one-day plan with must-see spots",
+          "url": "https://www.hakonenavi.jp/international/en/course/244",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the Hakone-Yumoto, Open-Air Museum, Owakudani, Lake Ashi cruise, Motohakone and shrine sequence; states that Romancecar requires a separate limited-express surcharge."
+        },
+        {
+          "id": "hakone-access",
+          "organization": "Odakyu Hakone",
+          "title": "Directions to Hakone from Tokyo, airports and Yokohama",
+          "url": "https://www.hakonenavi.jp/international/en/access/tokyo",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Official arrival information for Shinjuku, Tokyo Station, Haneda and Narita."
+        },
+        {
+          "id": "hakone-around",
+          "organization": "Odakyu Hakone",
+          "title": "Getting around Hakone",
+          "url": "https://www.hakonenavi.jp/international/en/around",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Explains the Hakone Tozan train, cable car, ropeway and sightseeing cruise connections."
+        },
+        {
+          "id": "hakone-station-yumoto",
+          "organization": "Odakyu Hakone",
+          "title": "Hakone-Yumoto Station guide",
+          "url": "https://www.hakonenavi.jp/international/en/station/yumoto",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports rail and bus access, visitor information, station address and station map point."
+        },
+        {
+          "id": "hakone-station-owakudani",
+          "organization": "Odakyu Hakone",
+          "title": "Owakudani Station guide",
+          "url": "https://www.hakonenavi.jp/international/en/station/owakudani",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the ropeway station, station facilities and address."
+        },
+        {
+          "id": "hakone-station-togendai",
+          "organization": "Odakyu Hakone",
+          "title": "Togendai Station and Port guide",
+          "url": "https://www.hakonenavi.jp/international/en/station/togendai",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports ropeway, cruise, bus connections, address and station map point."
+        },
+        {
+          "id": "hakone-motohakone",
+          "organization": "Odakyu Hakone",
+          "title": "Motohakone-ko station guide",
+          "url": "https://www.hakonenavi.jp/international/en/station/motohakone",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports cruise and bus service from the port and its address."
+        },
+        {
+          "id": "hakone-hydrangea",
+          "organization": "Hakone Town Tourism Association",
+          "title": "How to enjoy Hakone hydrangeas",
+          "url": "https://www.hakone.or.jp/8201",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports hydrangea seasonality across different elevations and rail access."
+        },
+        {
+          "id": "hakone-shrine",
+          "organization": "Hakone Town Tourism Association",
+          "title": "Hakone Shrine",
+          "url": "https://www.hakone.or.jp/554",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports shrine history, address, phone, access, parking and visitor information."
+        },
+        {
+          "id": "hakone-contact",
+          "organization": "Hakone Town Tourism Association",
+          "title": "Hakone visitor help center",
+          "url": "https://www.hakone.or.jp/777",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the visitor information contact number 0460-85-5700."
+        },
+        {
+          "id": "hakone-open-air-museum",
+          "organization": "Hakone Town Tourism Association",
+          "title": "The Hakone Open-Air Museum",
+          "url": "https://www.hakone.or.jp/534",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the museum admission and access by train, bus or car."
+        },
+        {
+          "id": "hakone-photo",
+          "organization": "Wikimedia Commons",
+          "title": "Lake Ashi & Mt Fuji & Hakone Shrine.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Photograph by Charlie Fong; CC BY-SA 4.0."
+        }
+      ],
+      "accessModes": {
+        "rail": {
+          "status": "known",
+          "detail": "Odakyu Romancecar runs direct from Shinjuku to Hakone-Yumoto; the Tokaido Shinkansen and JR Tokaido Line connect Tokyo with Odawara.",
+          "sourceIds": [
+            "hakone-access",
+            "hakone-station-yumoto"
+          ]
+        },
+        "bus": {
+          "status": "known",
+          "detail": "Hakone Tozan and Izu-Hakone buses serve Hakone-Yumoto, Motohakone-ko, Togendai and the lake area; verify live timetables.",
+          "sourceIds": [
+            "hakone-station-yumoto",
+            "hakone-station-togendai",
+            "hakone-motohakone"
+          ]
+        },
+        "air": {
+          "status": "known",
+          "detail": "Arrive through Haneda or Narita and continue by rail or highway bus; check the official airport routing for the selected date.",
+          "sourceIds": [
+            "hakone-access"
+          ]
+        },
+        "car": {
+          "status": "known",
+          "detail": "Hakone is reachable by road from the Odawara and Gotemba directions; mountain traffic and attraction parking can affect the day plan.",
+          "sourceIds": [
+            "hakone-open-air-museum",
+            "hakone-shrine"
+          ]
+        }
+      },
+      "contacts": [
+        {
+          "name": "Hakone Town Tourist Information Center",
+          "phone": "+81-460-85-5700",
+          "sourceIds": [
+            "hakone-contact"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Hakone-Yumoto",
+          "area": "The easiest base for Odakyu and Hakone Tozan connections, baggage services and an early start.",
+          "sourceIds": [
+            "hakone-station-yumoto"
+          ]
+        },
+        {
+          "name": "Gora",
+          "area": "A convenient overnight base for the Open-Air Museum, mountain railway, cable car and onsen stays.",
+          "sourceIds": [
+            "hakone-around",
+            "hakone-one-day"
+          ]
+        },
+        {
+          "name": "Motohakone",
+          "area": "Stay by Lake Ashi to enjoy the shrine and shoreline without rushing for the last bus.",
+          "sourceIds": [
+            "hakone-motohakone",
+            "hakone-shrine"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Attraction admission and rail surcharge",
+          "note": "Museum admission is separate. The Romancecar requires a separate limited-express surcharge; confirm current prices, pass validity and weather-related suspensions.",
+          "sourceIds": [
+            "hakone-open-air-museum",
+            "hakone-one-day",
+            "hakone-around"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg?width=1400",
+        "alt": "Lake Ashi, Mount Fuji and Hakone Shrine in the morning light",
+        "source": "https://commons.wikimedia.org/wiki/File:Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg",
+        "credit": "Charlie Fong",
+        "license": "CC BY-SA 4.0",
+        "sourceIds": [
+          "hakone-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "verified",
+        "latitude": 35.20396,
+        "longitude": 139.02557,
+        "sourceIds": [
+          "hakone-shrine"
+        ]
+      },
+      "weatherPlan": {
+        "alternative": "If ropeway or cruise service is suspended, stay in one accessible area such as Hakone-Yumoto or Gora and substitute an indoor museum; do not assume the full circuit is operating.",
+        "sourceIds": [
+          "hakone-around",
+          "hakone-station-togendai"
         ]
       }
     }

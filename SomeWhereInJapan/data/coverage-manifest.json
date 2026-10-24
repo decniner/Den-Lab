@@ -314,7 +314,7 @@
         "weather-plan-not-verified"
       ],
       "sourceStatus": "sources-recorded",
-      "imageStatus": "removed-unverified",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -350,7 +350,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -369,7 +369,7 @@
         "researched guide details"
       ],
       "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {

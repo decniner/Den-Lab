@@ -1,6 +1,6 @@
 # Content progress — Somewhere in Japan
 
-Gate result: **1/310 places complete**. A row is complete only when every research, data, page, access, seasonal, and source-date check in the audit passes. Last audited: 2026-10-24.
+Gate result: **4/310 places complete**. A row is complete only when every research, data, page, access, seasonal, and source-date check in the audit passes. Last audited: 2026-10-24.
 
 | Place | Region | Batch | Checklist | Sources | Photo | Gaps |
 |---|---|---:|---|---:|---|---|
@@ -19,10 +19,10 @@ Gate result: **1/310 places complete**. A row is complete only when every resear
 | Tazawa’s clear blue | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | The three mountains of Dewa | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Aizu-Wakamatsu’s samurai streets | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Tokyo, in layers | Kanto | region · Kanto | FAIL (8) | 3 (2 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, structured-story-and-highlights, card-dialog-specific-content |
+| Tokyo, in layers | Kanto | region · Kanto | PASS | 8 (16 dated) | verified | — |
 | Nikko in the cedars | Kanto | region · Kanto | PASS | 20 (20 dated) | verified | — |
-| Kamakura, temple to tide | Kanto | region · Kanto | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Hakone through the mist | Kanto | region · Kanto | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
+| Kamakura, temple to tide | Kanto | region · Kanto | PASS | 11 (11 dated) | verified | — |
+| Hakone through the mist | Kanto | region · Kanto | PASS | 12 (12 dated) | verified | — |
 | Yokohama’s harbor lights | Kanto | region · Kanto | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Kusatsu, steam and springs | Kanto | region · Kanto | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Oze’s open wetlands | Kanto | region · Kanto | FAIL (8) | 2 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
@@ -79,7 +79,7 @@ Gate result: **1/310 places complete**. A row is complete only when every resear
 | Yamadera, a mountain of steps | Tohoku | region · Tohoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Ouchi-juku’s thatched lanes | Tohoku | region · Tohoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Zao’s emerald crater lake | Tohoku | region · Tohoku | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Senso-ji and Asakusa lanes | Kanto | region · Kanto | FAIL (8) | 3 (2 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, structured-story-and-highlights, card-dialog-specific-content |
+| Senso-ji and Asakusa lanes | Kanto | region · Kanto | FAIL (7) | 3 (2 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, practicalDetail, seasonality, structured-story-and-highlights, card-dialog-specific-content |
 | Shinjuku Gyoen in every season | Kanto | region · Kanto | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Enoshima’s sea edge | Kanto | region · Kanto | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Kawagoe, the little Edo | Kanto | region · Kanto | FAIL (7) | 7 (0 dated) | verified | highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
