@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "cityId": "tokyo",
+    "routeId": "central-tokyo",
+    "sourceUrl": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "extractedOn": "2026-10-24",
+    "bounds": [
+      139.751,
+      35.677,
+      139.772,
+      35.691
+    ],
+    "geometryStatus": "schematic-stop-order"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "route-central",
+      "properties": {
+        "routeLegId": "central-leg-1",
+        "mode": "walking",
+        "routeGeometryStatus": "schematic",
+        "sourceIds": [
+          "osm-central-station",
+          "osm-central-gardens"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            139.7659765,
+            35.6811505
+          ],
+          [
+            139.7573959,
+            35.6867006
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokyo-central-station",
+      "properties": {
+        "name": "Tokyo Station & Marunouchi",
+        "role": "stop",
+        "routeStopId": "tokyo-central-station",
+        "order": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7659765,
+          35.6811505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokyo-central-gardens",
+      "properties": {
+        "name": "Imperial Palace East Gardens",
+        "role": "stop",
+        "routeStopId": "tokyo-central-gardens",
+        "order": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7573959,
+          35.6867006
+        ]
+      }
+    }
+  ]
+}
