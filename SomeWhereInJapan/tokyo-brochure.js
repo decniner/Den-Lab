@@ -15,7 +15,54 @@ async function loadJson(url){
  return response.json();
 }
 
+
+function mountPhotoViewer(){
+ const dialog=document.createElement('dialog');
+ dialog.className='tb-photo-viewer';
+ dialog.setAttribute('aria-label','Enlarged Tokyo photo');
+ dialog.innerHTML='<button class="tb-photo-viewer-close" type="button" aria-label="Close enlarged photo"><span aria-hidden="true">×</span></button><figure><img alt=""><figcaption></figcaption></figure>';
+ document.body.append(dialog);
+ const closeButton=dialog.querySelector('.tb-photo-viewer-close');
+ const largeImage=dialog.querySelector('img');
+ const caption=dialog.querySelector('figcaption');
+ let lastFocus=null;
+ function closeViewer(){
+  if(dialog.open) dialog.close();
+ }
+ function openViewer(sourceImage){
+  const sourceFigure=sourceImage.closest('figure');
+  lastFocus=sourceImage;
+  largeImage.src=sourceImage.currentSrc||sourceImage.src;
+  largeImage.alt=sourceImage.alt||'Tokyo travel photo';
+  caption.textContent=sourceFigure?.querySelector('figcaption')?.textContent?.trim()||largeImage.alt;
+  dialog.showModal();
+  closeButton.focus();
+ }
+ document.querySelectorAll('.tb-route-gallery img').forEach(image=>{
+  const label=image.closest('figure')?.querySelector('figcaption')?.textContent?.trim()||image.alt;
+  image.tabIndex=0;
+  image.setAttribute('role','button');
+  image.setAttribute('aria-haspopup','dialog');
+  image.setAttribute('aria-label',`Enlarge photo: ${label}`);
+ });
+ document.addEventListener('click',event=>{
+  const image=event.target.closest?.('.tb-route-gallery img');
+  if(image) openViewer(image);
+ });
+ document.addEventListener('keydown',event=>{
+  const image=event.target.closest?.('.tb-route-gallery img');
+  if(image&&(event.key==='Enter'||event.key===' ')){
+   event.preventDefault();
+   openViewer(image);
+  }
+ });
+ closeButton.addEventListener('click',closeViewer);
+ dialog.addEventListener('click',event=>{if(event.target===dialog)closeViewer();});
+ dialog.addEventListener('close',()=>{lastFocus?.focus();lastFocus=null;});
+}
+
 async function mount(){
+ mountPhotoViewer();
  const blocks=[...document.querySelectorAll('[data-tokyo-route-block]')];
  if(!blocks.length) return;
  let registry;
