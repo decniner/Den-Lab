@@ -181,3 +181,23 @@ img{display:block;max-width:100%}
  .tb-more[open],.tb-page-more[open]{padding:1rem}
  .tb-route-sequence{font-size:.92rem}
 }
+
+/* Expanded destination details */
+.tb-guide-steps{margin:.8rem 0 1.2rem;padding-left:1.4rem}
+.tb-guide-steps li{margin:.7rem 0;padding-left:.2rem;color:#3f4c45;font-size:.86rem}
+.tb-hours{width:100%;margin:1rem 0;border-collapse:collapse;font-size:.78rem}
+.tb-hours th,.tb-hours td{padding:.6rem .7rem;border:1px solid var(--tb-line);text-align:left;vertical-align:top}
+.tb-hours th{background:#e8e2d5;color:var(--tb-green-deep);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase}
+.tb-hours tr:nth-child(even) td{background:rgba(255,253,248,.7)}
+.tb-more>p,.tb-more>ul,.tb-more>ol{max-width:76rem}
+.tb-more>h4:not(:first-child){margin-top:1.25rem}
+.tb-more a{color:var(--tb-green);text-underline-offset:.15em}
+.tb-page-more{line-height:1.7}
+.tb-page-more li{margin:.45rem 0}
+.tb-detail-note{padding:.75rem 1rem;border-left:3px solid var(--tb-copper);background:#eee8dc}
+.tb-source-list{line-height:1.55}
+@media(max-width:620px){
+ .tb-hours{font-size:.7rem}
+ .tb-hours th,.tb-hours td{padding:.5rem}
+ .tb-guide-steps li{font-size:.82rem}
+}
