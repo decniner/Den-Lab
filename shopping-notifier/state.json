@@ -592,31 +592,31 @@
     "boardriders-co-jp:10631289241881:52412831072537": {
       "sale_price": "32450",
       "reference_price": "64900",
-      "sent_at": "2026-10-17T09:06:00+09:00",
+      "sent_at": "2026-10-24T09:12:01+09:00",
       "url": "https://boardriders.co.jp/products/h0452506?variant=52412831072537"
     },
     "boardriders-co-jp:10602437345561:52295135691033": {
       "sale_price": "30800",
       "reference_price": "61600",
-      "sent_at": "2026-10-17T09:06:00+09:00",
+      "sent_at": "2026-10-24T09:12:01+09:00",
       "url": "https://boardriders.co.jp/products/erjtj03461?variant=52295135691033"
     },
     "boardriders-co-jp:10631287374105:52412817244441": {
       "sale_price": "29700",
       "reference_price": "59400",
-      "sent_at": "2026-10-17T09:06:01+09:00",
+      "sent_at": "2026-10-24T09:12:01+09:00",
       "url": "https://boardriders.co.jp/products/g0652509?variant=52412817244441"
     },
     "boardriders-co-jp:10631289143577:52412830023961": {
       "sale_price": "29700",
       "reference_price": "59400",
-      "sent_at": "2026-10-17T09:06:01+09:00",
+      "sent_at": "2026-10-24T09:12:01+09:00",
       "url": "https://boardriders.co.jp/products/h0652502?variant=52412830023961"
     },
     "boardriders-co-jp:10631289176345:52412830679321": {
       "sale_price": "26950",
       "reference_price": "53900",
-      "sent_at": "2026-10-17T09:06:01+09:00",
+      "sent_at": "2026-10-24T09:12:01+09:00",
       "url": "https://boardriders.co.jp/products/h1252501?variant=52412830679321"
     },
     "boardriders-co-jp:10631288324377:52412823109913": {
@@ -795,9 +795,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-10-23",
-    "coverage_key": "51104598b77d165a5b95538970c908be9f13b507fa3ff9c0a6165b52576112c0",
-    "completed_at": "2026-10-23T09:19:03+09:00",
-    "digest_hash": "7602cf14d9edf6d2a9399b41565db4d1c6f6eec59d60b419cb0916d2d68802d9"
+    "date": "2026-10-24",
+    "coverage_key": "ac34a9f14da8c7c1e582624f388998544c8e58c327dadd5882f7ad9fcdfb695f",
+    "completed_at": "2026-10-24T09:12:01+09:00",
+    "digest_hash": "cf29306463b6a5b66f2ebbce1ddbe5936374ec7b006f3948b5fdcc50a3a1e16a"
   }
 }
