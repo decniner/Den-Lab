@@ -473,6 +473,7 @@ const additions=[
   {
     "region": "Kanto",
     "name": "Mother Farm",
+    "fullDay": true,
     "place": "Futtsu · Chiba",
     "description": "Rolling pasture, seasonal flower fields, and animal encounters make this an easygoing countryside day from Tokyo Bay. Distances are long, so check the day’s shows and choose a few areas rather than racing around.",
     "tags": [
