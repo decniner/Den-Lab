@@ -111,3 +111,13 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
 .prop-result .pr-price{font-weight:700;color:var(--green)}
 .prop-result .pr-meta{font-size:13.5px;color:var(--ink-soft)}
 .prop-count{font-size:14px;color:var(--ink-soft);margin:10px 0 0}
+
+/* Kanto map toggle (Phase 4) */
+.view-toggle{display:flex;gap:8px;margin:14px 0 4px}
+#mapWrap{margin:10px 0 6px}
+#kantoMap{max-width:640px;margin:0 auto}
+#kantoMap text.map-pref{font-size:19px;fill:#8a8272;font-family:"Fraunces",serif}
+#kantoMap text.map-label{font-size:12.5px;fill:#3c4a42}
+#kantoMap .map-dot{cursor:pointer;stroke:#fff;stroke-width:1.5}
+#kantoMap .map-dot:focus{outline:2px solid var(--green-2);outline-offset:2px}
+.map-popup{max-width:640px;margin:10px auto;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper-2);font-size:14.5px}

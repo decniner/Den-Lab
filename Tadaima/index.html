@@ -46,6 +46,15 @@
   <section class="section" id="cities">
     <h2>Available now <span class="jp">公開中</span></h2>
     <div class="pref-chips" id="prefChips" role="group" aria-label="Filter by prefecture"></div>
+    <div class="view-toggle" role="group" aria-label="Choose list or map view">
+      <button class="chip active" id="vList" aria-pressed="true">List</button>
+      <button class="chip" id="vMap" aria-pressed="false">Map</button>
+    </div>
+    <div id="mapWrap" hidden>
+      <div id="kantoMap" role="img" aria-label="Stylised map of the Kantō region showing where each Tadaima! edition is"></div>
+      <div id="mapPopup" class="map-popup" hidden></div>
+      <p class="search-hint">Stylised map — prefecture shapes are schematic, city positions are by latitude and longitude. Tap a dot for the city's figures; the cards below stay the full story.</p>
+    </div>
     <div id="cityGrid"></div>
     <p class="no-match" id="noMatch">No city guide matches that yet. The roadmap below shows where Tadaima! is heading next.</p>
   </section>
@@ -77,7 +86,7 @@
     <div class="roadmap-chips">
       <span class="rm-chip">Tsukuba <span class="jp">つくば</span> · Ibaraki — researched, held</span>
     </div>
-    <p class="map-note">Why search and cards, not a map of Japan? Honest answer: with a handful of cities, a drill-down map is three taps to discover how much of Japan we <em>haven't</em> covered yet. The trigger set for revisiting it — around ten cities across several prefectures — has now been reached (23 cities, 7 prefectures), so a List/Map view is in design. The cards stay the default: they carry the counts and starting prices a map pin can't.</p>
+    <p class="map-note">Why search and cards, not a map of Japan? Honest answer: with a handful of cities, a drill-down map is three taps to discover how much of Japan we <em>haven't</em> covered yet. The trigger set for revisiting it — around ten cities across several prefectures — has now been reached (23 cities, 7 prefectures), so there is now a List/Map toggle above the cards — the map is a stylised Kantō, honest about covering one region well rather than pretending at the whole country. The cards stay the default: they carry the counts and starting prices a map pin can't.</p>
   </section>
 </main>
 
