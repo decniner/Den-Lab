@@ -13119,9 +13119,9 @@
       "id": "kyoto-at-first-light-route",
       "placeId": "kyoto-at-first-light",
       "cityId": "kyoto",
-      "title": "Kyoto at first light: three-temple itinerary",
-      "researchStatus": "researched-sequence-schematic-map",
-      "introduction": "Enter Fushimi Inari at first light, continue to Tofukuji, then finish at the quieter Sennyuji temple complex. Allow 5-7 hours for visits and transfers; temple opening hours affect the order. Map lines show stop order, not verified route geometry.",
+      "title": "Kyoto at first light: a one-day route",
+      "researchStatus": "community-informed-one-day-plan-with-schematic-map",
+      "introduction": "Start at Fushimi Inari at dawn, pause for brunch at Vermillion - cafe., then continue north to Tofukuji and Sennyuji. This paced 6-8 hour day keeps the full Inari summit optional. Community feedback favors an early start and a relaxed pace; check current cafe and temple hours before you go. Map lines show stop order, not verified street geometry.",
       "origin": null,
       "stops": [
         {
@@ -13129,8 +13129,8 @@
           "order": 1,
           "name": "Fushimi Inari Taisha",
           "address": "Fushimi Inari Taisha, Fushimi Ward, Kyoto, Japan",
-          "description": "Walk beneath the Senbon Torii while the morning is still quiet, then choose how far to climb toward the mountain paths.",
-          "story": "Before the city fully wakes, the tunnel of vermilion gates shifts from a famous photograph into a changing rhythm of shade, stone and birdsong. Enjoy the lower paths at your own pace; the full mountain circuit takes considerably longer.",
+          "description": "Arrive at dawn for the Senbon Torii, then choose a lower-path visit or continue uphill as your energy allows.",
+          "story": "06:30-08:30 | Visitor reports consistently favor an early start: the gates feel quieter before the day tours arrive. Enjoy the lower shrine paths and turn back when the climb stops being enjoyable; reaching the summit is optional and adds substantial time.",
           "coordinates": {
             "latitude": 34.9675192,
             "longitude": 135.7797101,
@@ -13141,9 +13141,9 @@
           },
           "visitDuration": {
             "status": "estimated",
-            "minMinutes": 60,
-            "maxMinutes": 120,
-            "basis": "Planning estimate for a dawn visit to the lower shrine paths; a longer mountain circuit needs more time."
+            "minMinutes": 90,
+            "maxMinutes": 150,
+            "basis": "Suggested 6:30-8:45 dawn visit for the lower paths and a partial climb; the full mountain loop takes longer."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Fushimi%20Inari%20Taisha%20Kyoto%20travel%20guide",
           "photo": {
@@ -13164,10 +13164,34 @@
         {
           "id": "kyoto-at-first-light-stop-1",
           "order": 2,
+          "name": "Vermillion - cafe.",
+          "address": "5-31 Fukakusa Kaidoguchicho, Fushimi-ku, Kyoto 612-0805",
+          "description": "Pause for coffee and brunch after Fushimi Inari, before heading north to the temples.",
+          "story": "09:00-10:00 | Community reviews often single out the calm pond-side terrace, coffee and brunch after the shrine walk. Reviewers also mention queues at busy times, so arrive near opening when possible and keep a little schedule flexibility. Treat this as brunch; check the cafe's current hours and menu before setting out.",
+          "coordinates": {
+            "latitude": 34.9671,
+            "longitude": 135.7726,
+            "precision": "Approximate venue point from a location directory; schematic connector only",
+            "sourceIds": [
+              "kyoto-at-first-light-vermillion-coordinate"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 60,
+            "basis": "Suggested brunch break; queue and seating time vary."
+          },
+          "visitorInfo": "Brunch and specialty coffee; visitor reviews praise the pond-side terrace and note waits at busy times. Opening hours and menu can change.",
+          "visitorInfoUrl": "https://www.vermillioncafe.com/access"
+        },
+        {
+          "id": "kyoto-at-first-light-stop-2",
+          "order": 3,
           "name": "Tofukuji Temple",
-          "address": "Tofukuji Temple, Japan",
-          "description": "Cross the temple grounds and bridges for an architectural view into the maple ravine.",
-          "story": "Cross the temple grounds and bridges for an architectural view into the maple ravine.",
+          "address": "15-778 Honmachi, Higashiyama-ku, Kyoto 605-0981",
+          "description": "Give the temple grounds and paid garden areas an unhurried visit; prioritize the Tsutenkyo bridge or Hojo garden according to the season.",
+          "story": "10:30-12:30 | Allow about two hours to explore at a relaxed pace. Tofukuji's official hours change seasonally, and the bridge and garden areas can use different schedules in the autumn viewing period; confirm the official visitor guide before arrival.",
           "coordinates": {
             "latitude": 34.9760806,
             "longitude": 135.7736932,
@@ -13178,9 +13202,9 @@
           },
           "visitDuration": {
             "status": "estimated",
-            "minMinutes": 30,
-            "maxMinutes": 75,
-            "basis": "Editorial stop-time range; allow extra for crowds, weather and mobility needs."
+            "minMinutes": 90,
+            "maxMinutes": 120,
+            "basis": "Suggested visit window; paid areas, autumn crowds and seasonal opening hours affect timing."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Tofukuji%20Temple%20Japan%20travel%20guide",
           "photo": {
@@ -13196,15 +13220,17 @@
               "license": "CC BY-SA 3.0",
               "alt": "Tofukuji Temple, Sammon (main gate), May 2017"
             }
-          }
+          },
+          "visitorInfo": "Official seasonal hours and admission details",
+          "visitorInfoUrl": "https://tofukuji.jp/guide/"
         },
         {
-          "id": "kyoto-at-first-light-stop-2",
-          "order": 3,
+          "id": "kyoto-at-first-light-stop-3",
+          "order": 4,
           "name": "Sennyuji Temple",
-          "address": "Sennyuji Temple, Japan",
-          "description": "Explore a quieter temple complex with imperial history and spacious approaches.",
-          "story": "Explore a quieter temple complex with imperial history and spacious approaches.",
+          "address": "27 Sennyuji Yamanouchicho, Higashiyama-ku, Kyoto 605-0977",
+          "description": "Finish in the spacious imperial temple precincts; choose the paid main hall visit if time and energy allow.",
+          "story": "13:00-14:30 | The quieter final stop balances the busier shrine and Tofukuji. Sennyuji's official guide lists admission reception from 9:00 to 16:30 March-November and 9:00 to 16:00 December-February, with some event-day restrictions; check the day's notice before visiting.",
           "coordinates": {
             "latitude": 34.981562,
             "longitude": 135.776843,
@@ -13215,9 +13241,9 @@
           },
           "visitDuration": {
             "status": "estimated",
-            "minMinutes": 30,
-            "maxMinutes": 75,
-            "basis": "Editorial stop-time range; allow extra for crowds, weather and mobility needs."
+            "minMinutes": 75,
+            "maxMinutes": 105,
+            "basis": "Suggested visit window; event-day access can vary."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Sennyuji%20Temple%20Japan%20travel%20guide",
           "photo": {
@@ -13233,32 +13259,43 @@
               "license": "CC BY 4.0",
               "alt": "image présentant une photographie prise au temple Sennyu-ji situé dans l'arrondissement de Higashiyama à Kyoto : porte Daimon"
             }
-          }
+          },
+          "visitorInfo": "Official hours, admission and event-day access",
+          "visitorInfoUrl": "https://mitera.org/guide"
         }
       ],
       "legs": [
         {
           "id": "kyoto-at-first-light-leg-1",
           "from": "Fushimi Inari Taisha",
-          "to": "Tofukuji Temple",
+          "to": "Vermillion - cafe.",
           "mode": "walking",
-          "story": "Connector shows itinerary order only; confirm live transport, road and trail details before travel.",
+          "story": "Schematic sequence only; use the cafe address and live map directions for the actual walk.",
           "fromId": "kyoto-at-first-light-origin",
           "toId": "kyoto-at-first-light-stop-1"
         },
         {
           "id": "kyoto-at-first-light-leg-2",
+          "from": "Vermillion - cafe.",
+          "to": "Tofukuji Temple",
+          "mode": "walking",
+          "story": "Schematic sequence only; confirm the current walking route and conditions in Google Maps.",
+          "fromId": "kyoto-at-first-light-stop-1",
+          "toId": "kyoto-at-first-light-stop-2"
+        },
+        {
+          "id": "kyoto-at-first-light-leg-3",
           "from": "Tofukuji Temple",
           "to": "Sennyuji Temple",
           "mode": "walking",
-          "story": "Connector shows itinerary order only; confirm live transport, road and trail details before travel.",
-          "fromId": "kyoto-at-first-light-stop-1",
-          "toId": "kyoto-at-first-light-stop-2"
+          "story": "Schematic sequence only; confirm the current walking route and conditions in Google Maps.",
+          "fromId": "kyoto-at-first-light-stop-2",
+          "toId": "kyoto-at-first-light-stop-3"
         }
       ],
       "timeEstimate": {
-        "label": "Allow 5–7 hours; opening times affect the order.",
-        "basis": "Editorial itinerary estimate based on the cited visitor sequence."
+        "label": "Allow about 6-8 hours at a relaxed pace.",
+        "basis": "Editorial plan: dawn visit to Fushimi Inari, brunch break, then Tofukuji and Sennyuji. The full Inari summit, seasonal temple hours, queues and mobility needs can extend the day."
       },
       "sources": [
         {
@@ -13268,6 +13305,51 @@
           "checkedOn": "2026-10-24",
           "supports": [
             "approximate visitor-area points and schematic itinerary order; not turn-by-turn routing"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-vermillion-coordinate",
+          "label": "Vermillion Cafe location reference",
+          "url": "https://remembrew.com/cafes/vermillion-cafe-kyoto/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "approximate cafe point for map display"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-community",
+          "label": "Vermillion - cafe. visitor reviews",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g298564-d10454991-Reviews-Vermillion_cafe-Kyoto_Kyoto_Prefecture_Kinki.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "community feedback on brunch, pond-side terrace, post-shrine visit and busy periods"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-cafe-official",
+          "label": "Vermillion - cafe. official site and access",
+          "url": "https://www.vermillioncafe.com/access",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "cafe address and current venue information"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-tofukuji-official",
+          "label": "Tofukuji official visitor guide",
+          "url": "https://tofukuji.jp/guide/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "seasonal opening hours, admission and visitor areas"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-sennyuji-official",
+          "label": "Sennyuji official visitor guide",
+          "url": "https://mitera.org/guide",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "opening hours, admission and event-day restrictions"
           ]
         },
         {
@@ -13286,6 +13368,24 @@
           "checkedOn": "2026-10-24",
           "supports": [
             "visitor access and itinerary planning"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-early-visitor-feedback",
+          "label": "Fushimi Inari community discussion on early visits and hike length",
+          "url": "https://www.reddit.com/r/TabiJapan/comments/1vukh64/fushimi_inari_at_6am_and_fushimi_inari_at_noon/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "community feedback on dawn crowds, lower shrine paths and optional full summit hike"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-cafe-hours-listing",
+          "label": "Vermillion - cafe. current business listing",
+          "url": "https://tabelog.com/en/kyoto/A2601/A260601/26027542/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "current listed opening hours, brunch service and waitlist policy; reconfirm before travel"
           ]
         }
       ]
@@ -33898,12 +33998,12 @@
       "metadata": {
         "geometryStatus": "schematic-stop-order",
         "bounds": [
-          135.7716932,
-          34.965519199999996,
+          135.7706,
+          34.9651,
           135.7817101,
           34.983562
         ],
-        "attribution": "Map data © OpenStreetMap contributors",
+        "attribution": "Map data (c) OpenStreetMap contributors",
         "license": "ODbL-1.0",
         "sourceUrl": "https://www.openstreetmap.org/copyright"
       },
@@ -33937,8 +34037,8 @@
                 34.9675192
               ],
               [
-                135.7736932,
-                34.9760806
+                135.7726,
+                34.9671
               ]
             ]
           },
@@ -33954,17 +34054,57 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              135.7736932,
-              34.9760806
+              135.7726,
+              34.9671
             ]
           },
           "properties": {
             "id": "kyoto-at-first-light-stop-1",
             "routeStopId": "kyoto-at-first-light-stop-1",
-            "order": 2,
+            "name": "Vermillion - cafe.",
+            "role": "stop",
             "displayOrder": 2,
+            "order": 2
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.7726,
+                34.9671
+              ],
+              [
+                135.7736932,
+                34.9760806
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kyoto-at-first-light-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kyoto-at-first-light-stop-2",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7736932,
+              34.9760806
+            ]
+          },
+          "properties": {
+            "id": "kyoto-at-first-light-stop-2",
+            "routeStopId": "kyoto-at-first-light-stop-2",
             "name": "Tofukuji Temple",
-            "role": "stop"
+            "role": "stop",
+            "displayOrder": 3,
+            "order": 3
           }
         },
         {
@@ -33983,14 +34123,14 @@
             ]
           },
           "properties": {
-            "routeLegId": "kyoto-at-first-light-leg-2",
+            "routeLegId": "kyoto-at-first-light-leg-3",
             "mode": "walking",
             "routeGeometryStatus": "schematic"
           }
         },
         {
           "type": "Feature",
-          "id": "kyoto-at-first-light-stop-2",
+          "id": "kyoto-at-first-light-stop-3",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -33999,12 +34139,12 @@
             ]
           },
           "properties": {
-            "id": "kyoto-at-first-light-stop-2",
-            "routeStopId": "kyoto-at-first-light-stop-2",
-            "order": 3,
-            "displayOrder": 3,
+            "id": "kyoto-at-first-light-stop-3",
+            "routeStopId": "kyoto-at-first-light-stop-3",
             "name": "Sennyuji Temple",
-            "role": "stop"
+            "role": "stop",
+            "displayOrder": 4,
+            "order": 4
           }
         }
       ]
