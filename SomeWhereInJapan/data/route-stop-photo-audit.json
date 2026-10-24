@@ -1,0 +1,3346 @@
+{
+  "schemaVersion": 1,
+  "auditedOn": "2026-10-24",
+  "guideCount": 51,
+  "routeCount": 51,
+  "routeStopCount": 145,
+  "uniqueImageSourceCount": 145,
+  "source": "Wikimedia Commons file pages; photographer credit and license stored per image",
+  "records": [
+    {
+      "placeId": "aizu-wakamatsu-s-samurai-streets",
+      "routeId": "aizu-wakamatsu-s-samurai-streets-route",
+      "stopId": "aizu-wakamatsu-s-samurai-streets-stop-1",
+      "stopName": "Aizu Bukeyashiki",
+      "imageTitle": "File:Aizu Bukeyashiki Garden.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Aizu_Bukeyashiki_Garden.jpg/1280px-Aizu_Bukeyashiki_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Aizu_Bukeyashiki_Garden.jpg",
+        "credit": "Miyuki Meinaka",
+        "license": "CC BY-SA 4.0",
+        "alt": "This is a garden of Samurai House in Aizu Bukeyashiki, Aizuwakamatsu, Fukushima, Japan.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Aizu_Bukeyashiki_Garden.jpg",
+          "credit": "Miyuki Meinaka",
+          "license": "CC BY-SA 4.0",
+          "alt": "This is a garden of Samurai House in Aizu Bukeyashiki, Aizuwakamatsu, Fukushima, Japan."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Aizu_Bukeyashiki_Garden.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "aizu-wakamatsu-s-samurai-streets",
+      "routeId": "aizu-wakamatsu-s-samurai-streets-route",
+      "stopId": "aizu-wakamatsu-s-samurai-streets-stop-2",
+      "stopName": "Iimoriyama and Byakkotai memorial",
+      "imageTitle": "File:Byakko-tai shrine at Iimori-yama 1.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Byakko-tai_shrine_at_Iimori-yama_1.JPG/1280px-Byakko-tai_shrine_at_Iimori-yama_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Byakko-tai_shrine_at_Iimori-yama_1.JPG",
+        "credit": "Amcaja",
+        "license": "CC BY-SA 3.0",
+        "alt": "Shrine to the Byakkotai warriors on Iimori Hill in Aizu-Wakamatsu, Fukushima.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Byakko-tai_shrine_at_Iimori-yama_1.JPG",
+          "credit": "Amcaja",
+          "license": "CC BY-SA 3.0",
+          "alt": "Shrine to the Byakkotai warriors on Iimori Hill in Aizu-Wakamatsu, Fukushima."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Byakko-tai_shrine_at_Iimori-yama_1.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "arashiyama-s-green-corridor",
+      "routeId": "arashiyama-s-green-corridor-route",
+      "stopId": "arashiyama-s-green-corridor-stop-1",
+      "stopName": "Tenryuji Temple garden",
+      "imageTitle": "File:Garden at Tenryuji Temple.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Garden_at_Tenryuji_Temple.jpg/1280px-Garden_at_Tenryuji_Temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Garden_at_Tenryuji_Temple.jpg",
+        "credit": "Gavin Anderson",
+        "license": "CC BY-SA 2.0",
+        "alt": "see title",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Garden_at_Tenryuji_Temple.jpg",
+          "credit": "Gavin Anderson",
+          "license": "CC BY-SA 2.0",
+          "alt": "see title"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Garden_at_Tenryuji_Temple.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "arashiyama-s-green-corridor",
+      "routeId": "arashiyama-s-green-corridor-route",
+      "stopId": "arashiyama-s-green-corridor-stop-2",
+      "stopName": "Togetsukyo Bridge and riverbank",
+      "imageTitle": "File:Togetsukyo Bridge in Arashiyama, Kyoto.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Togetsukyo_Bridge_in_Arashiyama%2C_Kyoto.jpg/1280px-Togetsukyo_Bridge_in_Arashiyama%2C_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Togetsukyo_Bridge_in_Arashiyama,_Kyoto.jpg",
+        "credit": "User: (WT-shared) ChubbyWimbus at wts wikivoyage",
+        "license": "Public domain",
+        "alt": "Togetsukyo Bridge in Arashiyama, Kyoto.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Togetsukyo_Bridge_in_Arashiyama,_Kyoto.jpg",
+          "credit": "User: (WT-shared) ChubbyWimbus at wts wikivoyage",
+          "license": "Public domain",
+          "alt": "Togetsukyo Bridge in Arashiyama, Kyoto."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Togetsukyo_Bridge_in_Arashiyama,_Kyoto.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "beppu-steam-rising",
+      "routeId": "beppu-steam-rising-route",
+      "stopId": "beppu-steam-rising-stop-1",
+      "stopName": "Kamado Jigoku",
+      "imageTitle": "File:Kamado jigoku 02.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Kamado_jigoku_02.jpg/1280px-Kamado_jigoku_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kamado_jigoku_02.jpg",
+        "credit": "STA3816",
+        "license": "CC BY-SA 3.0",
+        "alt": "Kamado Jigoku (Demon's hell), Beppu, Oita, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kamado_jigoku_02.jpg",
+          "credit": "STA3816",
+          "license": "CC BY-SA 3.0",
+          "alt": "Kamado Jigoku (Demon's hell), Beppu, Oita, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kamado_jigoku_02.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "beppu-steam-rising",
+      "routeId": "beppu-steam-rising-route",
+      "stopId": "beppu-steam-rising-stop-2",
+      "stopName": "Chinoike Jigoku",
+      "imageTitle": "File:Chinoike Jigoku.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Chinoike_Jigoku.jpg/1280px-Chinoike_Jigoku.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Chinoike_Jigoku.jpg",
+        "credit": "Leyo",
+        "license": "CC BY-SA 2.5 ch",
+        "alt": "Chinoike Jigoku in Beppu, Oita",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Chinoike_Jigoku.jpg",
+          "credit": "Leyo",
+          "license": "CC BY-SA 2.5 ch",
+          "alt": "Chinoike Jigoku in Beppu, Oita"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Chinoike_Jigoku.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "beppu-steam-rising",
+      "routeId": "beppu-steam-rising-route",
+      "stopId": "beppu-steam-rising-stop-3",
+      "stopName": "Tatsumaki Jigoku",
+      "imageTitle": "File:Tatsumaki Jigoku.JPG",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Tatsumaki_Jigoku.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "https://commons.wikimedia.org/wiki/File:Tatsumaki_Jigoku.JPG",
+        "credit": "user:Hiroyuki0904",
+        "license": "Public domain",
+        "alt": "Tatsumaki jigoku ( Beppu, Oita in Japan)",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tatsumaki_Jigoku.JPG",
+          "credit": "user:Hiroyuki0904",
+          "license": "Public domain",
+          "alt": "Tatsumaki jigoku ( Beppu, Oita in Japan)"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tatsumaki_Jigoku.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "cape-ashizuri-s-ocean-edge",
+      "routeId": "cape-ashizuri-s-ocean-edge-route",
+      "stopId": "cape-ashizuri-s-ocean-edge-stop-1",
+      "stopName": "Cape Ashizuri Lighthouse",
+      "imageTitle": "File:Ashizuri Misaki lighthouse Tosashimizu Kochi.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ashizuri_Misaki_lighthouse_Tosashimizu_Kochi.JPG/1280px-Ashizuri_Misaki_lighthouse_Tosashimizu_Kochi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Ashizuri_Misaki_lighthouse_Tosashimizu_Kochi.JPG",
+        "credit": "hashi photo",
+        "license": "CC BY 3.0",
+        "alt": "Ashizuri Misaki lighthouse in Tosashimizu,Kochi Prefecture, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Ashizuri_Misaki_lighthouse_Tosashimizu_Kochi.JPG",
+          "credit": "hashi photo",
+          "license": "CC BY 3.0",
+          "alt": "Ashizuri Misaki lighthouse in Tosashimizu,Kochi Prefecture, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Ashizuri_Misaki_lighthouse_Tosashimizu_Kochi.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "cape-ashizuri-s-ocean-edge",
+      "routeId": "cape-ashizuri-s-ocean-edge-route",
+      "stopId": "cape-ashizuri-s-ocean-edge-stop-2",
+      "stopName": "Kongofukuji Temple",
+      "imageTitle": "File:Kongofukuji 01.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Kongofukuji_01.JPG/1280px-Kongofukuji_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kongofukuji_01.JPG",
+        "credit": "Reggaeman",
+        "license": "CC BY-SA 3.0",
+        "alt": "Temple gate, Kongōfuku-ji",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kongofukuji_01.JPG",
+          "credit": "Reggaeman",
+          "license": "CC BY-SA 3.0",
+          "alt": "Temple gate, Kongōfuku-ji"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kongofukuji_01.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "cape-ashizuri-s-ocean-edge",
+      "routeId": "cape-ashizuri-s-ocean-edge-route",
+      "stopId": "cape-ashizuri-s-ocean-edge-stop-3",
+      "stopName": "John Manjiro statue viewpoint",
+      "imageTitle": "File:Ashizuri Cape 03.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Ashizuri_Cape_03.JPG/1280px-Ashizuri_Cape_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Ashizuri_Cape_03.JPG",
+        "credit": "Reggaeman",
+        "license": "CC BY-SA 3.0",
+        "alt": "View of the Pacific from Tengu-no-hana at Cape Ashizuri, near the John Manjiro viewpoint.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Ashizuri_Cape_03.JPG",
+          "credit": "Reggaeman",
+          "license": "CC BY-SA 3.0",
+          "alt": "View of the Pacific from Tengu-no-hana at Cape Ashizuri, near the John Manjiro viewpoint."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Ashizuri_Cape_03.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "daisetsuzan-high-country",
+      "routeId": "daisetsuzan-asahidake-loop",
+      "stopId": "asahidake-base",
+      "stopName": "Asahidake Ropeway base station",
+      "imageTitle": "File:Asahidake Ropeway Foot Station.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Asahidake_Ropeway_Foot_Station.jpg/1280px-Asahidake_Ropeway_Foot_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Asahidake_Ropeway_Foot_Station.jpg",
+        "credit": "Ozizo",
+        "license": "CC0",
+        "alt": "Asashidake Ropeway Foot station, Higashikawa, Hokkaido, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Asahidake_Ropeway_Foot_Station.jpg",
+          "credit": "Ozizo",
+          "license": "CC0",
+          "alt": "Asashidake Ropeway Foot station, Higashikawa, Hokkaido, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Asahidake_Ropeway_Foot_Station.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "daisetsuzan-high-country",
+      "routeId": "daisetsuzan-asahidake-loop",
+      "stopId": "sugatami-station",
+      "stopName": "Sugatami Station",
+      "imageTitle": "File:Asahidake Ropeway Sugatami Station.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Asahidake_Ropeway_Sugatami_Station.jpg/1280px-Asahidake_Ropeway_Sugatami_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Asahidake_Ropeway_Sugatami_Station.jpg",
+        "credit": "Ozizo",
+        "license": "CC0",
+        "alt": "Asashidake Ropeway Sugatami station, Higashikawa, Hokkaido, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Asahidake_Ropeway_Sugatami_Station.jpg",
+          "credit": "Ozizo",
+          "license": "CC0",
+          "alt": "Asashidake Ropeway Sugatami station, Higashikawa, Hokkaido, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Asahidake_Ropeway_Sugatami_Station.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "daisetsuzan-high-country",
+      "routeId": "daisetsuzan-asahidake-loop",
+      "stopId": "sugatami-pond",
+      "stopName": "Sugatami Pond loop",
+      "imageTitle": "File:140724 Asahi-dake and Sugatami-no-ike Hokkaido Japan01bs3.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/140724_Asahi-dake_and_Sugatami-no-ike_Hokkaido_Japan01bs3.jpg/1280px-140724_Asahi-dake_and_Sugatami-no-ike_Hokkaido_Japan01bs3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:140724_Asahi-dake_and_Sugatami-no-ike_Hokkaido_Japan01bs3.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Asahi-dake and Sugatami Pond in Higashikawa , Hokkaido , Japan .",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:140724_Asahi-dake_and_Sugatami-no-ike_Hokkaido_Japan01bs3.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "Asahi-dake and Sugatami Pond in Higashikawa , Hokkaido , Japan ."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:140724_Asahi-dake_and_Sugatami-no-ike_Hokkaido_Japan01bs3.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "fuji-from-the-water",
+      "routeId": "fuji-from-the-water-route",
+      "stopId": "fuji-from-the-water-stop-1",
+      "stopName": "Mt. Fuji Panoramic Ropeway",
+      "imageTitle": "File:Tenjosan Park Kachikachi-yama Ropeway 01.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Tenjosan_Park_Kachikachi-yama_Ropeway_01.JPG/1280px-Tenjosan_Park_Kachikachi-yama_Ropeway_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tenjosan_Park_Kachikachi-yama_Ropeway_01.JPG",
+        "credit": "Abasaa",
+        "license": "Public domain",
+        "alt": "Tenjosan Park Kachikachi-yama Ropeway",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tenjosan_Park_Kachikachi-yama_Ropeway_01.JPG",
+          "credit": "Abasaa",
+          "license": "Public domain",
+          "alt": "Tenjosan Park Kachikachi-yama Ropeway"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tenjosan_Park_Kachikachi-yama_Ropeway_01.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "fuji-from-the-water",
+      "routeId": "fuji-from-the-water-route",
+      "stopId": "fuji-from-the-water-stop-2",
+      "stopName": "Itchiku Kubota Art Museum",
+      "imageTitle": "File:Itchiku Kubota Art Museum 2018c.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Itchiku_Kubota_Art_Museum_2018c.jpg/1280px-Itchiku_Kubota_Art_Museum_2018c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Itchiku_Kubota_Art_Museum_2018c.jpg",
+        "credit": "江戸村のとくぞう",
+        "license": "CC BY-SA 4.0",
+        "alt": "久保田一竹美術館",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Itchiku_Kubota_Art_Museum_2018c.jpg",
+          "credit": "江戸村のとくぞう",
+          "license": "CC BY-SA 4.0",
+          "alt": "久保田一竹美術館"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Itchiku_Kubota_Art_Museum_2018c.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "furano-in-bloom",
+      "routeId": "furano-highlights-drive",
+      "stopId": "furano-farm-tomita",
+      "stopName": "Farm Tomita",
+      "imageTitle": "File:Farm Tomita 1.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Farm_Tomita_1.jpg/1280px-Farm_Tomita_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Farm_Tomita_1.jpg",
+        "credit": "Douglas Perkins",
+        "license": "CC BY 4.0",
+        "alt": "A field of lavender. Farm Tomita. Furano, Hokkaido, Japan.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Farm_Tomita_1.jpg",
+          "credit": "Douglas Perkins",
+          "license": "CC BY 4.0",
+          "alt": "A field of lavender. Farm Tomita. Furano, Hokkaido, Japan."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Farm_Tomita_1.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "furano-in-bloom",
+      "routeId": "furano-highlights-drive",
+      "stopId": "furano-cheese-factory",
+      "stopName": "Furano Cheese Factory",
+      "imageTitle": "File:Mother and Child with Cow Statue - Cheese Factory - Furano - Hokkaido - Japan (48012302622).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Mother_and_Child_with_Cow_Statue_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_%2848012302622%29.jpg/1280px-Mother_and_Child_with_Cow_Statue_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_%2848012302622%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Mother_and_Child_with_Cow_Statue_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_(48012302622).jpg",
+        "credit": "Adam Jones from Kelowna, BC, Canada",
+        "license": "CC BY-SA 2.0",
+        "alt": "Mother and Child with Cow Statue - Cheese Factory - Furano - Hokkaido - Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Mother_and_Child_with_Cow_Statue_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_(48012302622).jpg",
+          "credit": "Adam Jones from Kelowna, BC, Canada",
+          "license": "CC BY-SA 2.0",
+          "alt": "Mother and Child with Cow Statue - Cheese Factory - Furano - Hokkaido - Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Mother_and_Child_with_Cow_Statue_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_(48012302622).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "furano-in-bloom",
+      "routeId": "furano-highlights-drive",
+      "stopId": "furano-ningles-terrace",
+      "stopName": "Ningle Terrace",
+      "imageTitle": "File:130503 Ningle Terrace Furano Hokkaido Japan01s3.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/130503_Ningle_Terrace_Furano_Hokkaido_Japan01s3.jpg/1280px-130503_Ningle_Terrace_Furano_Hokkaido_Japan01s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:130503_Ningle_Terrace_Furano_Hokkaido_Japan01s3.jpg",
+        "credit": "663highland",
+        "license": "CC BY-SA 4.0",
+        "alt": "Ningle Terrace in Furano, Hokkaido prefecture , Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:130503_Ningle_Terrace_Furano_Hokkaido_Japan01s3.jpg",
+          "credit": "663highland",
+          "license": "CC BY-SA 4.0",
+          "alt": "Ningle Terrace in Furano, Hokkaido prefecture , Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:130503_Ningle_Terrace_Furano_Hokkaido_Japan01s3.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "ginzan-after-dark",
+      "routeId": "ginzan-river-lane",
+      "stopId": "ginzan-bridge",
+      "stopName": "Shiroganebashi Bridge and town entry",
+      "imageTitle": "File:Ginzan Onsen Takimi Bridge.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Ginzan_Onsen_Takimi_Bridge.jpg/1280px-Ginzan_Onsen_Takimi_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_Takimi_Bridge.jpg",
+        "credit": "ブルーノ・プラス",
+        "license": "CC BY 4.0",
+        "alt": "銀山温泉瀧見橋",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_Takimi_Bridge.jpg",
+          "credit": "ブルーノ・プラス",
+          "license": "CC BY 4.0",
+          "alt": "銀山温泉瀧見橋"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_Takimi_Bridge.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "ginzan-after-dark",
+      "routeId": "ginzan-river-lane",
+      "stopId": "ginzan-footbath",
+      "stopName": "Warashiyu footbath",
+      "imageTitle": "File:Ginzan Onsen Ashiyu.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Ginzan_Onsen_Ashiyu.jpg/1280px-Ginzan_Onsen_Ashiyu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_Ashiyu.jpg",
+        "credit": "さかおり",
+        "license": "CC BY-SA 4.0",
+        "alt": "Ginzan Onsen Ashiyu",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_Ashiyu.jpg",
+          "credit": "さかおり",
+          "license": "CC BY-SA 4.0",
+          "alt": "Ginzan Onsen Ashiyu"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_Ashiyu.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "ginzan-after-dark",
+      "routeId": "ginzan-river-lane",
+      "stopId": "ginzan-waterfall",
+      "stopName": "Shirogane Waterfall",
+      "imageTitle": "File:Shirogane-no-Taki Falls.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Shirogane-no-Taki_Falls.jpg/1280px-Shirogane-no-Taki_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Shirogane-no-Taki_Falls.jpg",
+        "credit": "おにく",
+        "license": "CC0",
+        "alt": "白銀の滝（山形県尾花沢市銀山新畑）",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Shirogane-no-Taki_Falls.jpg",
+          "credit": "おにく",
+          "license": "CC0",
+          "alt": "白銀の滝（山形県尾花沢市銀山新畑）"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Shirogane-no-Taki_Falls.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hakodate-from-above",
+      "routeId": "hakodate-twilight-ascent",
+      "stopId": "hakodate-slope",
+      "stopName": "Hachimanzaka and Motomachi",
+      "imageTitle": "File:Hakodate Hachimanzaka, Motomachi, Hakodate, Hokkaido, Japan, 八幡坂, 元町, 函館, 北海道, 日本, はこだてし, ほっかいどう, にっぽん, にほん (16143146704).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Hakodate_Hachimanzaka%2C_Motomachi%2C_Hakodate%2C_Hokkaido%2C_Japan%2C_%E5%85%AB%E5%B9%A1%E5%9D%82%2C_%E5%85%83%E7%94%BA%2C_%E5%87%BD%E9%A4%A8%2C_%E5%8C%97%E6%B5%B7%E9%81%93%2C_%E6%97%A5%E6%9C%AC%2C_%E3%81%AF%E3%81%93%E3%81%A0%E3%81%A6%E3%81%97%2C_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86%2C_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93%2C_%E3%81%AB%E3%81%BB%E3%82%93_%2816143146704%29.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Hakodate_Hachimanzaka,_Motomachi,_Hakodate,_Hokkaido,_Japan,_%E5%85%AB%E5%B9%A1%E5%9D%82,_%E5%85%83%E7%94%BA,_%E5%87%BD%E9%A4%A8,_%E5%8C%97%E6%B5%B7%E9%81%93,_%E6%97%A5%E6%9C%AC,_%E3%81%AF%E3%81%93%E3%81%A0%E3%81%A6%E3%81%97,_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86,_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93,_%E3%81%AB%E3%81%BB%E3%82%93_(16143146704).jpg",
+        "credit": "bryan...",
+        "license": "CC BY-SA 2.0",
+        "alt": "Hachimanzaka, Motomachi, Hakodate, Hokkaido, Japan, 八幡坂, 元町, 函館, 北海道, 日本, はこだてし, ほっかいどう, にっぽん, にほん",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Hakodate_Hachimanzaka,_Motomachi,_Hakodate,_Hokkaido,_Japan,_%E5%85%AB%E5%B9%A1%E5%9D%82,_%E5%85%83%E7%94%BA,_%E5%87%BD%E9%A4%A8,_%E5%8C%97%E6%B5%B7%E9%81%93,_%E6%97%A5%E6%9C%AC,_%E3%81%AF%E3%81%93%E3%81%A0%E3%81%A6%E3%81%97,_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86,_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93,_%E3%81%AB%E3%81%BB%E3%82%93_(16143146704).jpg",
+          "credit": "bryan...",
+          "license": "CC BY-SA 2.0",
+          "alt": "Hachimanzaka, Motomachi, Hakodate, Hokkaido, Japan, 八幡坂, 元町, 函館, 北海道, 日本, はこだてし, ほっかいどう, にっぽん, にほん"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Hakodate_Hachimanzaka,_Motomachi,_Hakodate,_Hokkaido,_Japan,_%E5%85%AB%E5%B9%A1%E5%9D%82,_%E5%85%83%E7%94%BA,_%E5%87%BD%E9%A4%A8,_%E5%8C%97%E6%B5%B7%E9%81%93,_%E6%97%A5%E6%9C%AC,_%E3%81%AF%E3%81%93%E3%81%A0%E3%81%A6%E3%81%97,_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86,_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93,_%E3%81%AB%E3%81%BB%E3%82%93_(16143146704).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hakodate-from-above",
+      "routeId": "hakodate-twilight-ascent",
+      "stopId": "hakodate-ropeway-base",
+      "stopName": "Mt. Hakodate Ropeway base",
+      "imageTitle": "File:Mt-Hakodate-Ropeway-01.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Mt-Hakodate-Ropeway-01.jpg/1280px-Mt-Hakodate-Ropeway-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Mt-Hakodate-Ropeway-01.jpg",
+        "credit": "J o",
+        "license": "CC BY-SA 3.0",
+        "alt": "Photograph of the base station of Mt. Hakodate Ropeway in Hakodate, Hokkaido, Japan.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Mt-Hakodate-Ropeway-01.jpg",
+          "credit": "J o",
+          "license": "CC BY-SA 3.0",
+          "alt": "Photograph of the base station of Mt. Hakodate Ropeway in Hakodate, Hokkaido, Japan."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Mt-Hakodate-Ropeway-01.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hakodate-from-above",
+      "routeId": "hakodate-twilight-ascent",
+      "stopId": "hakodate-summit",
+      "stopName": "Mt. Hakodate Summit Observatory",
+      "imageTitle": "File:Mount-Hakodate Observation-facility.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Mount-Hakodate_Observation-facility.jpg/1280px-Mount-Hakodate_Observation-facility.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Mount-Hakodate_Observation-facility.jpg",
+        "credit": "MaedaAkihiko",
+        "license": "CC BY-SA 4.0",
+        "alt": "Observation deck and radio tower facility at the summit of Mt. Hakodate seen from in front of Hakodate Station",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Mount-Hakodate_Observation-facility.jpg",
+          "credit": "MaedaAkihiko",
+          "license": "CC BY-SA 4.0",
+          "alt": "Observation deck and radio tower facility at the summit of Mt. Hakodate seen from in front of Hakodate Station"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Mount-Hakodate_Observation-facility.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "himeji-the-white-heron",
+      "routeId": "himeji-the-white-heron-route",
+      "stopId": "himeji-the-white-heron-stop-1",
+      "stopName": "Himeji Castle",
+      "imageTitle": "File:Himeji Castle 0804 1.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Himeji_Castle_0804_1.jpg/1280px-Himeji_Castle_0804_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Himeji_Castle_0804_1.jpg",
+        "credit": "Gorgo",
+        "license": "Public domain",
+        "alt": "Himeji Castle, Japan .",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Himeji_Castle_0804_1.jpg",
+          "credit": "Gorgo",
+          "license": "Public domain",
+          "alt": "Himeji Castle, Japan ."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Himeji_Castle_0804_1.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "himeji-the-white-heron",
+      "routeId": "himeji-the-white-heron-route",
+      "stopId": "himeji-the-white-heron-stop-2",
+      "stopName": "Koko-en Garden",
+      "imageTitle": "File:Koko-en Garden, Himeji01.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Koko-en_Garden%2C_Himeji01.JPG/1280px-Koko-en_Garden%2C_Himeji01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Koko-en_Garden,_Himeji01.JPG",
+        "credit": "Oilstreet",
+        "license": "CC BY 2.5",
+        "alt": "Kōko-en Garden , Himeji , Hyogo prefecture , Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Koko-en_Garden,_Himeji01.JPG",
+          "credit": "Oilstreet",
+          "license": "CC BY 2.5",
+          "alt": "Kōko-en Garden , Himeji , Hyogo prefecture , Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Koko-en_Garden,_Himeji01.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "himeji-the-white-heron",
+      "routeId": "himeji-the-white-heron-route",
+      "stopId": "himeji-the-white-heron-stop-3",
+      "stopName": "Mt. Shosha and Engyoji",
+      "imageTitle": "File:Himeji Mt Shosha01n4592.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_Mt_Shosha01n4592.jpg/1280px-Himeji_Mt_Shosha01n4592.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Himeji_Mt_Shosha01n4592.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Himeji City town. View from Engyoji (Mt.Shosha) in Himeji , Hyogo prefecture , Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Himeji_Mt_Shosha01n4592.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "Himeji City town. View from Engyoji (Mt.Shosha) in Himeji , Hyogo prefecture , Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Himeji_Mt_Shosha01n4592.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hiraizumi-s-quiet-temples",
+      "routeId": "hiraizumi-s-quiet-temples-route",
+      "stopId": "hiraizumi-s-quiet-temples-stop-1",
+      "stopName": "Motsuji Temple garden",
+      "imageTitle": "File:Motsuji Temple, Pure Land Garden.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Motsuji_Temple%2C_Pure_Land_Garden.jpg/1280px-Motsuji_Temple%2C_Pure_Land_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Motsuji_Temple,_Pure_Land_Garden.jpg",
+        "credit": "Renate Hano",
+        "license": "CC BY-SA 4.0",
+        "alt": "Motsuji Temple, Pure Land Garden, Motsuji Tempel, Hiraizumi, Iwate Prefecture, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Motsuji_Temple,_Pure_Land_Garden.jpg",
+          "credit": "Renate Hano",
+          "license": "CC BY-SA 4.0",
+          "alt": "Motsuji Temple, Pure Land Garden, Motsuji Tempel, Hiraizumi, Iwate Prefecture, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Motsuji_Temple,_Pure_Land_Garden.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hiraizumi-s-quiet-temples",
+      "routeId": "hiraizumi-s-quiet-temples-route",
+      "stopId": "hiraizumi-s-quiet-temples-stop-2",
+      "stopName": "Takadachi Gikeido Hall",
+      "imageTitle": "File:Kitakami River from Takadachi Gikei-do.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Kitakami_River_from_Takadachi_Gikei-do.jpg/1280px-Kitakami_River_from_Takadachi_Gikei-do.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kitakami_River_from_Takadachi_Gikei-do.jpg",
+        "credit": "Ymblanter",
+        "license": "CC BY-SA 4.0",
+        "alt": "Kitakami River seen from Takadachi Gikei-do,Hiraizumi, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kitakami_River_from_Takadachi_Gikei-do.jpg",
+          "credit": "Ymblanter",
+          "license": "CC BY-SA 4.0",
+          "alt": "Kitakami River seen from Takadachi Gikei-do,Hiraizumi, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kitakami_River_from_Takadachi_Gikei-do.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hirosaki-in-blossom",
+      "routeId": "hirosaki-in-blossom-route",
+      "stopId": "hirosaki-in-blossom-stop-1",
+      "stopName": "Fujita Memorial Garden",
+      "imageTitle": "File:Fujita Memorial Garden.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Fujita_Memorial_Garden.JPG/1280px-Fujita_Memorial_Garden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Fujita_Memorial_Garden.JPG",
+        "credit": "禁樹なずな",
+        "license": "CC BY-SA 4.0",
+        "alt": "Fujita Memorial Garden",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Fujita_Memorial_Garden.JPG",
+          "credit": "禁樹なずな",
+          "license": "CC BY-SA 4.0",
+          "alt": "Fujita Memorial Garden"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Fujita_Memorial_Garden.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hirosaki-in-blossom",
+      "routeId": "hirosaki-in-blossom-route",
+      "stopId": "hirosaki-in-blossom-stop-2",
+      "stopName": "Tsugaru-han Neputa Village",
+      "imageTitle": "File:Tsugaru-han Neputa-mura , 津軽藩ねぷた村 - panoramio (1).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Tsugaru-han_Neputa-mura_%2C_%E6%B4%A5%E8%BB%BD%E8%97%A9%E3%81%AD%E3%81%B7%E3%81%9F%E6%9D%91_-_panoramio_%281%29.jpg/1280px-Tsugaru-han_Neputa-mura_%2C_%E6%B4%A5%E8%BB%BD%E8%97%A9%E3%81%AD%E3%81%B7%E3%81%9F%E6%9D%91_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tsugaru-han_Neputa-mura_,_%E6%B4%A5%E8%BB%BD%E8%97%A9%E3%81%AD%E3%81%B7%E3%81%9F%E6%9D%91_-_panoramio_(1).jpg",
+        "credit": "z tanuki",
+        "license": "CC BY 3.0",
+        "alt": "Tsugaru-han Neputa-mura , 津軽藩ねぷた村",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tsugaru-han_Neputa-mura_,_%E6%B4%A5%E8%BB%BD%E8%97%A9%E3%81%AD%E3%81%B7%E3%81%9F%E6%9D%91_-_panoramio_(1).jpg",
+          "credit": "z tanuki",
+          "license": "CC BY 3.0",
+          "alt": "Tsugaru-han Neputa-mura , 津軽藩ねぷた村"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tsugaru-han_Neputa-mura_,_%E6%B4%A5%E8%BB%BD%E8%97%A9%E3%81%AD%E3%81%B7%E3%81%9F%E6%9D%91_-_panoramio_(1).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hiroshima-a-city-of-peace",
+      "routeId": "hiroshima-a-city-of-peace-route",
+      "stopId": "hiroshima-a-city-of-peace-stop-1",
+      "stopName": "Cenotaph and Peace Flame",
+      "imageTitle": "File:Peace Flame Hiroshima 20120128.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Peace_Flame_Hiroshima_20120128.JPG/1280px-Peace_Flame_Hiroshima_20120128.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Peace_Flame_Hiroshima_20120128.JPG",
+        "credit": "Taisyo",
+        "license": "CC BY 3.0",
+        "alt": "平和の灯",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Peace_Flame_Hiroshima_20120128.JPG",
+          "credit": "Taisyo",
+          "license": "CC BY 3.0",
+          "alt": "平和の灯"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Peace_Flame_Hiroshima_20120128.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hiroshima-a-city-of-peace",
+      "routeId": "hiroshima-a-city-of-peace-route",
+      "stopId": "hiroshima-a-city-of-peace-stop-2",
+      "stopName": "Hiroshima Peace Memorial Museum",
+      "imageTitle": "File:Hiroshima Peace Memorial Museum 2008 01.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Hiroshima_Peace_Memorial_Museum_2008_01.JPG/1280px-Hiroshima_Peace_Memorial_Museum_2008_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Hiroshima_Peace_Memorial_Museum_2008_01.JPG",
+        "credit": "Taisyo",
+        "license": "CC BY-SA 3.0",
+        "alt": "Hiroshima Peace Memorial Museum( ja:広島平和記念資料館 )",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Hiroshima_Peace_Memorial_Museum_2008_01.JPG",
+          "credit": "Taisyo",
+          "license": "CC BY-SA 3.0",
+          "alt": "Hiroshima Peace Memorial Museum( ja:広島平和記念資料館 )"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Hiroshima_Peace_Memorial_Museum_2008_01.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "hiroshima-a-city-of-peace",
+      "routeId": "hiroshima-a-city-of-peace-route",
+      "stopId": "hiroshima-a-city-of-peace-stop-3",
+      "stopName": "Rest House",
+      "imageTitle": "File:Rest House of Hiroshima Peace Park 20121120.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Rest_House_of_Hiroshima_Peace_Park_20121120.jpg/1280px-Rest_House_of_Hiroshima_Peace_Park_20121120.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Rest_House_of_Hiroshima_Peace_Park_20121120.jpg",
+        "credit": "長岡外史",
+        "license": "CC BY-SA 3.0",
+        "alt": "レストハウス（1945年広島市への原子爆弾投下により被爆。現在爆心地から最も近い現役使用されている被爆建物・2012年11月撮影)",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Rest_House_of_Hiroshima_Peace_Park_20121120.jpg",
+          "credit": "長岡外史",
+          "license": "CC BY-SA 3.0",
+          "alt": "レストハウス（1945年広島市への原子爆弾投下により被爆。現在爆心地から最も近い現役使用されている被爆建物・2012年11月撮影)"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Rest_House_of_Hiroshima_Peace_Park_20121120.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "iwami-ginzan-s-forest-paths",
+      "routeId": "iwami-ginzan-s-forest-paths-route",
+      "stopId": "iwami-ginzan-s-forest-paths-stop-1",
+      "stopName": "Omori townscape",
+      "imageTitle": "File:180504 Omori of Iwami Ginzan Silver Mine Oda Shimane pref Japan02bs4.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/180504_Omori_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan02bs4.jpg/1280px-180504_Omori_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan02bs4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:180504_Omori_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan02bs4.jpg",
+        "credit": "663highland",
+        "license": "CC BY-SA 4.0",
+        "alt": "Ōmori Ginzan village in Ōda , Shimane prefecture , Japan . It was registered as part of the UNESCO World Heritage Site \" Iwami Ginzan Silver Mine and its Cultural Landscape \".",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:180504_Omori_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan02bs4.jpg",
+          "credit": "663highland",
+          "license": "CC BY-SA 4.0",
+          "alt": "Ōmori Ginzan village in Ōda , Shimane prefecture , Japan . It was registered as part of the UNESCO World Heritage Site \" Iwami Ginzan Silver Mine and its Cultural Landscape \"."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:180504_Omori_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan02bs4.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "iwami-ginzan-s-forest-paths",
+      "routeId": "iwami-ginzan-s-forest-paths-route",
+      "stopId": "iwami-ginzan-s-forest-paths-stop-2",
+      "stopName": "Rakanji Temple",
+      "imageTitle": "File:180504 Rakan-ji of Iwami Ginzan Silver Mine Oda Shimane pref Japan01o.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/180504_Rakan-ji_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan01o.JPG/1280px-180504_Rakan-ji_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan01o.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:180504_Rakan-ji_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan01o.JPG",
+        "credit": "663highland",
+        "license": "CC BY-SA 4.0",
+        "alt": "This is a complete original image ( no retouch, and no re-compression ).",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:180504_Rakan-ji_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan01o.JPG",
+          "credit": "663highland",
+          "license": "CC BY-SA 4.0",
+          "alt": "This is a complete original image ( no retouch, and no re-compression )."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:180504_Rakan-ji_of_Iwami_Ginzan_Silver_Mine_Oda_Shimane_pref_Japan01o.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "iwami-ginzan-s-forest-paths",
+      "routeId": "iwami-ginzan-s-forest-paths-route",
+      "stopId": "iwami-ginzan-s-forest-paths-stop-3",
+      "stopName": "Ryugenji Mabu",
+      "imageTitle": "File:Iwami Ginzan Silver Mine, Ryugenji Mabu Mine Shaft 001.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Iwami_Ginzan_Silver_Mine%2C_Ryugenji_Mabu_Mine_Shaft_001.JPG/1280px-Iwami_Ginzan_Silver_Mine%2C_Ryugenji_Mabu_Mine_Shaft_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Iwami_Ginzan_Silver_Mine,_Ryugenji_Mabu_Mine_Shaft_001.JPG",
+        "credit": "Yama 1009",
+        "license": "CC BY-SA 3.0",
+        "alt": "Entrance of Ryugenji Mabu Mine Shaft, Iwami Ginzan Silver Mine, Shimane, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Iwami_Ginzan_Silver_Mine,_Ryugenji_Mabu_Mine_Shaft_001.JPG",
+          "credit": "Yama 1009",
+          "license": "CC BY-SA 3.0",
+          "alt": "Entrance of Ryugenji Mabu Mine Shaft, Iwami Ginzan Silver Mine, Shimane, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Iwami_Ginzan_Silver_Mine,_Ryugenji_Mabu_Mine_Shaft_001.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "izumo-land-of-old-stories",
+      "routeId": "izumo-land-of-old-stories-route",
+      "stopId": "izumo-land-of-old-stories-stop-1",
+      "stopName": "Izumo Taisha",
+      "imageTitle": "File:Izumo taisha 1.jpg",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Izumo_taisha_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "https://commons.wikimedia.org/wiki/File:Izumo_taisha_1.jpg",
+        "credit": "Motokoka",
+        "license": "CC BY-SA 4.0",
+        "alt": "出雲大社。島根県出雲市",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Izumo_taisha_1.jpg",
+          "credit": "Motokoka",
+          "license": "CC BY-SA 4.0",
+          "alt": "出雲大社。島根県出雲市"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Izumo_taisha_1.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "izumo-land-of-old-stories",
+      "routeId": "izumo-land-of-old-stories-route",
+      "stopId": "izumo-land-of-old-stories-stop-2",
+      "stopName": "Shimane Museum of Ancient Izumo",
+      "imageTitle": "File:150322 Shimane Museum of Ancient Izumo Japan01s.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/150322_Shimane_Museum_of_Ancient_Izumo_Japan01s.jpg/1280px-150322_Shimane_Museum_of_Ancient_Izumo_Japan01s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:150322_Shimane_Museum_of_Ancient_Izumo_Japan01s.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Shimane Museum of Ancient Izumo in Izumo , Shimane prefecture , Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:150322_Shimane_Museum_of_Ancient_Izumo_Japan01s.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "Shimane Museum of Ancient Izumo in Izumo , Shimane prefecture , Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:150322_Shimane_Museum_of_Ancient_Izumo_Japan01s.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "izumo-land-of-old-stories",
+      "routeId": "izumo-land-of-old-stories-route",
+      "stopId": "izumo-land-of-old-stories-stop-3",
+      "stopName": "Inasa Beach",
+      "imageTitle": "File:Inasa Beach at low tide 2.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Inasa_Beach_at_low_tide_2.jpg/1280px-Inasa_Beach_at_low_tide_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Inasa_Beach_at_low_tide_2.jpg",
+        "credit": "kajikawa",
+        "license": "CC BY 3.0",
+        "alt": "Taishacho Kizukikita, Izumo, Shimane Prefecture 699-0702, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Inasa_Beach_at_low_tide_2.jpg",
+          "credit": "kajikawa",
+          "license": "CC BY 3.0",
+          "alt": "Taishacho Kizukikita, Izumo, Shimane Prefecture 699-0702, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Inasa_Beach_at_low_tide_2.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kamikochi-the-mountain-valley",
+      "routeId": "kamikochi-the-mountain-valley-route",
+      "stopId": "kamikochi-the-mountain-valley-stop-1",
+      "stopName": "Kappa Bridge",
+      "imageTitle": "File:Kappa Bridge in Aug 2011.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Kappa_Bridge_in_Aug_2011.jpg/1280px-Kappa_Bridge_in_Aug_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kappa_Bridge_in_Aug_2011.jpg",
+        "credit": "T1822",
+        "license": "CC BY-SA 3.0",
+        "alt": "川岸から見た河童橋",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kappa_Bridge_in_Aug_2011.jpg",
+          "credit": "T1822",
+          "license": "CC BY-SA 3.0",
+          "alt": "川岸から見た河童橋"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kappa_Bridge_in_Aug_2011.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kamikochi-the-mountain-valley",
+      "routeId": "kamikochi-the-mountain-valley-route",
+      "stopId": "kamikochi-the-mountain-valley-stop-2",
+      "stopName": "Weston Monument and Tashiro Pond",
+      "imageTitle": "File:Tashiro ike01s2048.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Tashiro_ike01s2048.jpg/1280px-Tashiro_ike01s2048.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tashiro_ike01s2048.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Tashiro Pond and Mount Roppyaku in Kamikochi, Nagano.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tashiro_ike01s2048.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "Tashiro Pond and Mount Roppyaku in Kamikochi, Nagano."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tashiro_ike01s2048.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kamikochi-the-mountain-valley",
+      "routeId": "kamikochi-the-mountain-valley-route",
+      "stopId": "kamikochi-the-mountain-valley-stop-3",
+      "stopName": "Taisho Pond",
+      "imageTitle": "File:Taisho Pond 2011-09.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Taisho_Pond_2011-09.jpg/1280px-Taisho_Pond_2011-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Taisho_Pond_2011-09.jpg",
+        "credit": "photo: Qurren ( talk ) Taken with Canon IXY 10S",
+        "license": "CC BY-SA 3.0",
+        "alt": "Taishō Pond .",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Taisho_Pond_2011-09.jpg",
+          "credit": "photo: Qurren ( talk ) Taken with Canon IXY 10S",
+          "license": "CC BY-SA 3.0",
+          "alt": "Taishō Pond ."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Taisho_Pond_2011-09.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kanazawa-unhurried",
+      "routeId": "kanazawa-unhurried-route",
+      "stopId": "kanazawa-unhurried-stop-1",
+      "stopName": "Kanazawa Castle Park and Kenrokuen",
+      "imageTitle": "File:Kanazawa Castle park - 01 - 2016-04-16.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Kanazawa_Castle_park_-_01_-_2016-04-16.jpg/1280px-Kanazawa_Castle_park_-_01_-_2016-04-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kanazawa_Castle_park_-_01_-_2016-04-16.jpg",
+        "credit": "MathieuMD",
+        "license": "CC BY-SA 4.0",
+        "alt": "Kanazawa Castle Park",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kanazawa_Castle_park_-_01_-_2016-04-16.jpg",
+          "credit": "MathieuMD",
+          "license": "CC BY-SA 4.0",
+          "alt": "Kanazawa Castle Park"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kanazawa_Castle_park_-_01_-_2016-04-16.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kanazawa-unhurried",
+      "routeId": "kanazawa-unhurried-route",
+      "stopId": "kanazawa-unhurried-stop-2",
+      "stopName": "Higashi Chaya District",
+      "imageTitle": "File:Inside of a tea house in the Higashi chaya-gai district (Kanazawa) - panoramio.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Inside_of_a_tea_house_in_the_Higashi_chaya-gai_district_%28Kanazawa%29_-_panoramio.jpg/1280px-Inside_of_a_tea_house_in_the_Higashi_chaya-gai_district_%28Kanazawa%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_of_a_tea_house_in_the_Higashi_chaya-gai_district_(Kanazawa)_-_panoramio.jpg",
+        "credit": "svenfischer.fr",
+        "license": "CC BY-SA 3.0",
+        "alt": "Inside of a tea house in the Higashi chaya-gai district (Kanazawa)",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Inside_of_a_tea_house_in_the_Higashi_chaya-gai_district_(Kanazawa)_-_panoramio.jpg",
+          "credit": "svenfischer.fr",
+          "license": "CC BY-SA 3.0",
+          "alt": "Inside of a tea house in the Higashi chaya-gai district (Kanazawa)"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Inside_of_a_tea_house_in_the_Higashi_chaya-gai_district_(Kanazawa)_-_panoramio.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kiso-valley-post-towns",
+      "routeId": "kiso-valley-post-towns-route",
+      "stopId": "kiso-valley-post-towns-stop-1",
+      "stopName": "Nakasendo forest trail",
+      "imageTitle": "File:Gravestones Along The Nakasendo (192365463).jpeg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Gravestones_Along_The_Nakasendo_%28192365463%29.jpeg/1280px-Gravestones_Along_The_Nakasendo_%28192365463%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Gravestones_Along_The_Nakasendo_(192365463).jpeg",
+        "credit": "Jonathan Corbet",
+        "license": "CC BY-SA 3.0",
+        "alt": "500px provided description: Some stones next to the Nakasendo trail near Magome, Japan [#magome ,#Nakasendo ,#Forest ,#Japan ,#Gravestones]",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Gravestones_Along_The_Nakasendo_(192365463).jpeg",
+          "credit": "Jonathan Corbet",
+          "license": "CC BY-SA 3.0",
+          "alt": "500px provided description: Some stones next to the Nakasendo trail near Magome, Japan [#magome ,#Nakasendo ,#Forest ,#Japan ,#Gravestones]"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Gravestones_Along_The_Nakasendo_(192365463).jpeg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kiso-valley-post-towns",
+      "routeId": "kiso-valley-post-towns-route",
+      "stopId": "kiso-valley-post-towns-stop-2",
+      "stopName": "Tsumago-juku",
+      "imageTitle": "File:Tsumago-juku, Nagiso, Nagano, Japan (3599669155).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Tsumago-juku%2C_Nagiso%2C_Nagano%2C_Japan_%283599669155%29.jpg/1280px-Tsumago-juku%2C_Nagiso%2C_Nagano%2C_Japan_%283599669155%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tsumago-juku,_Nagiso,_Nagano,_Japan_(3599669155).jpg",
+        "credit": "yeowatzup",
+        "license": "CC BY 2.0",
+        "alt": "In Apr/May 2009, I took 15 days to walk all the way from Tokyo to Kyoto, roughly following the 546km long, ancient highway, the Nakasendo, alone. This picture was taken on day 9 of that long solo walk. Read about my preparations and my time in Japan at 546km.blogspot.com .",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tsumago-juku,_Nagiso,_Nagano,_Japan_(3599669155).jpg",
+          "credit": "yeowatzup",
+          "license": "CC BY 2.0",
+          "alt": "In Apr/May 2009, I took 15 days to walk all the way from Tokyo to Kyoto, roughly following the 546km long, ancient highway, the Nakasendo, alone. This picture was taken on day 9 of that long solo walk. Read about my preparations and my time in Japan at 546km.blogspot.com ."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tsumago-juku,_Nagiso,_Nagano,_Japan_(3599669155).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "konpira-san-s-long-climb",
+      "routeId": "konpira-san-s-long-climb-route",
+      "stopId": "konpira-san-s-long-climb-stop-1",
+      "stopName": "Omotesando approach",
+      "imageTitle": "File:Omotesando of Kotohira-gu01s4s4350.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Omotesando_of_Kotohira-gu01s4s4350.jpg/1280px-Omotesando_of_Kotohira-gu01s4s4350.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Omotesando_of_Kotohira-gu01s4s4350.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Omotesando of Kotohira Gu in Kotohira , Kagawa prefecture , Japan .",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Omotesando_of_Kotohira-gu01s4s4350.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "Omotesando of Kotohira Gu in Kotohira , Kagawa prefecture , Japan ."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Omotesando_of_Kotohira-gu01s4s4350.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "konpira-san-s-long-climb",
+      "routeId": "konpira-san-s-long-climb-route",
+      "stopId": "konpira-san-s-long-climb-stop-2",
+      "stopName": "Kotohira-gu main shrine",
+      "imageTitle": "File:JP-Kagawa-Kotohira-gū(Shrine)-Main-Shrine.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/JP-Kagawa-Kotohira-g%C5%AB%28Shrine%29-Main-Shrine.JPG/1280px-JP-Kagawa-Kotohira-g%C5%AB%28Shrine%29-Main-Shrine.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:JP-Kagawa-Kotohira-g%C5%AB(Shrine)-Main-Shrine.JPG",
+        "credit": "Kanchi1979",
+        "license": "CC BY-SA 4.0",
+        "alt": "金刀比羅宮 本殿",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:JP-Kagawa-Kotohira-g%C5%AB(Shrine)-Main-Shrine.JPG",
+          "credit": "Kanchi1979",
+          "license": "CC BY-SA 4.0",
+          "alt": "金刀比羅宮 本殿"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:JP-Kagawa-Kotohira-g%C5%AB(Shrine)-Main-Shrine.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "konpira-san-s-long-climb",
+      "routeId": "konpira-san-s-long-climb-route",
+      "stopId": "konpira-san-s-long-climb-stop-3",
+      "stopName": "Kanamaruza Kabuki Theatre",
+      "imageTitle": "File:Kotohira Kabuki Theatre (31256101307).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Kotohira_Kabuki_Theatre_%2831256101307%29.jpg/1280px-Kotohira_Kabuki_Theatre_%2831256101307%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kotohira_Kabuki_Theatre_(31256101307).jpg",
+        "credit": "Dunphasizer from United Kingdom",
+        "license": "CC BY-SA 2.0",
+        "alt": "The oldest Kabuki Theatre in Japan - Kanamaruza",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kotohira_Kabuki_Theatre_(31256101307).jpg",
+          "credit": "Dunphasizer from United Kingdom",
+          "license": "CC BY-SA 2.0",
+          "alt": "The oldest Kabuki Theatre in Japan - Kanamaruza"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kotohira_Kabuki_Theatre_(31256101307).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "koyasan-after-dusk",
+      "routeId": "koyasan-after-dusk-route",
+      "stopId": "koyasan-after-dusk-stop-1",
+      "stopName": "Okunoin",
+      "imageTitle": "File:Okunoin-Cemetery.jpg",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Okunoin-Cemetery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "https://commons.wikimedia.org/wiki/File:Okunoin-Cemetery.jpg",
+        "credit": "en:User:Mikelove",
+        "license": "Public domain",
+        "alt": "Part of the cemetery at the Oku-no-In mausoleum on Mount Koya",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Okunoin-Cemetery.jpg",
+          "credit": "en:User:Mikelove",
+          "license": "Public domain",
+          "alt": "Part of the cemetery at the Oku-no-In mausoleum on Mount Koya"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Okunoin-Cemetery.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "koyasan-after-dusk",
+      "routeId": "koyasan-after-dusk-route",
+      "stopId": "koyasan-after-dusk-stop-2",
+      "stopName": "Kongobuji Temple",
+      "imageTitle": "File:Daiedo Danjogaran Koyasan Kongobuji-temple.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Daiedo_Danjogaran_Koyasan_Kongobuji-temple.JPG/1280px-Daiedo_Danjogaran_Koyasan_Kongobuji-temple.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Daiedo_Danjogaran_Koyasan_Kongobuji-temple.JPG",
+        "credit": "Tomomarusan",
+        "license": "CC BY 2.5",
+        "alt": "Daiedo_Danjogaran_Koyasan_Kongobuji-temple, Wakayama prefecture , Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Daiedo_Danjogaran_Koyasan_Kongobuji-temple.JPG",
+          "credit": "Tomomarusan",
+          "license": "CC BY 2.5",
+          "alt": "Daiedo_Danjogaran_Koyasan_Kongobuji-temple, Wakayama prefecture , Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Daiedo_Danjogaran_Koyasan_Kongobuji-temple.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "koyasan-after-dusk",
+      "routeId": "koyasan-after-dusk-route",
+      "stopId": "koyasan-after-dusk-stop-3",
+      "stopName": "Danjo Garan",
+      "imageTitle": "File:Saito at Danjo Garan 3.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Saito_at_Danjo_Garan_3.jpg/1280px-Saito_at_Danjo_Garan_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Saito_at_Danjo_Garan_3.jpg",
+        "credit": "Christophe95",
+        "license": "CC BY-SA 4.0",
+        "alt": "Saito at Danjo Garan on Mount Koya.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Saito_at_Danjo_Garan_3.jpg",
+          "credit": "Christophe95",
+          "license": "CC BY-SA 4.0",
+          "alt": "Saito at Danjo Garan on Mount Koya."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Saito_at_Danjo_Garan_3.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kumano-kodo-the-old-paths",
+      "routeId": "kumano-kodo-the-old-paths-route",
+      "stopId": "kumano-kodo-the-old-paths-stop-1",
+      "stopName": "Takijiri-oji",
+      "imageTitle": "File:Sacred arch of TAKIJIRI-oji shrine.JPG",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Sacred_arch_of_TAKIJIRI-oji_shrine.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "https://commons.wikimedia.org/wiki/File:Sacred_arch_of_TAKIJIRI-oji_shrine.JPG",
+        "credit": "user:KMR",
+        "license": "CC BY-SA 3.0",
+        "alt": "Sacred_arch_of__TAKIJIRI-oji_shrine",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Sacred_arch_of_TAKIJIRI-oji_shrine.JPG",
+          "credit": "user:KMR",
+          "license": "CC BY-SA 3.0",
+          "alt": "Sacred_arch_of__TAKIJIRI-oji_shrine"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Sacred_arch_of_TAKIJIRI-oji_shrine.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kumano-kodo-the-old-paths",
+      "routeId": "kumano-kodo-the-old-paths-route",
+      "stopId": "kumano-kodo-the-old-paths-stop-2",
+      "stopName": "Kumano Kodo Kan",
+      "imageTitle": "File:Kumano Kodo Omotenashi Kan 2020-01 ac (2).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Kumano_Kodo_Omotenashi_Kan_2020-01_ac_%282%29.jpg/1280px-Kumano_Kodo_Omotenashi_Kan_2020-01_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kumano_Kodo_Omotenashi_Kan_2020-01_ac_(2).jpg",
+        "credit": "Asturio Cantabrio",
+        "license": "CC BY-SA 4.0",
+        "alt": "三重県熊野市木本町204にある熊野古道おもてなし館。",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kumano_Kodo_Omotenashi_Kan_2020-01_ac_(2).jpg",
+          "credit": "Asturio Cantabrio",
+          "license": "CC BY-SA 4.0",
+          "alt": "三重県熊野市木本町204にある熊野古道おもてなし館。"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kumano_Kodo_Omotenashi_Kan_2020-01_ac_(2).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kumano-kodo-the-old-paths",
+      "routeId": "kumano-kodo-the-old-paths-route",
+      "stopId": "kumano-kodo-the-old-paths-stop-3",
+      "stopName": "Takahara viewpoint",
+      "imageTitle": "File:Takahara hannover.jpg",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Takahara_hannover.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "https://commons.wikimedia.org/wiki/File:Takahara_hannover.jpg",
+        "credit": "Möller Marco-Ken from Germany",
+        "license": "CC BY 2.0",
+        "alt": "Takahara vor seiner Einwechslung beim Bundesligaspiel gegen Hannover 96 am 8. Februar 2006.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Takahara_hannover.jpg",
+          "credit": "Möller Marco-Ken from Germany",
+          "license": "CC BY 2.0",
+          "alt": "Takahara vor seiner Einwechslung beim Bundesligaspiel gegen Hannover 96 am 8. Februar 2006."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Takahara_hannover.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kurashiki-s-canal-quarter",
+      "routeId": "kurashiki-s-canal-quarter-route",
+      "stopId": "kurashiki-s-canal-quarter-stop-1",
+      "stopName": "Kurashiki Canal",
+      "imageTitle": "File:倉敷川 Kurashiki Canal - panoramio (1).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/%E5%80%89%E6%95%B7%E5%B7%9D_Kurashiki_Canal_-_panoramio_%281%29.jpg/1280px-%E5%80%89%E6%95%B7%E5%B7%9D_Kurashiki_Canal_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%80%89%E6%95%B7%E5%B7%9D_Kurashiki_Canal_-_panoramio_(1).jpg",
+        "credit": "lienyuan lee",
+        "license": "CC BY 3.0",
+        "alt": "倉敷川 Kurashiki Canal",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:%E5%80%89%E6%95%B7%E5%B7%9D_Kurashiki_Canal_-_panoramio_(1).jpg",
+          "credit": "lienyuan lee",
+          "license": "CC BY 3.0",
+          "alt": "倉敷川 Kurashiki Canal"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:%E5%80%89%E6%95%B7%E5%B7%9D_Kurashiki_Canal_-_panoramio_(1).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kurashiki-s-canal-quarter",
+      "routeId": "kurashiki-s-canal-quarter-route",
+      "stopId": "kurashiki-s-canal-quarter-stop-2",
+      "stopName": "Ohara Museum of Art",
+      "imageTitle": "File:Highly Cultivated Hills by Fujishima Takeji (Ohara Museum of Art).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Highly_Cultivated_Hills_by_Fujishima_Takeji_%28Ohara_Museum_of_Art%29.jpg/1280px-Highly_Cultivated_Hills_by_Fujishima_Takeji_%28Ohara_Museum_of_Art%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Highly_Cultivated_Hills_by_Fujishima_Takeji_(Ohara_Museum_of_Art).jpg",
+        "credit": "Fujishima Takeji",
+        "license": "Public domain",
+        "alt": "Highly Cultivated Hills, by Fujishima Takeji, Ohara Museum of Art, Kurashiki, Okayama, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Highly_Cultivated_Hills_by_Fujishima_Takeji_(Ohara_Museum_of_Art).jpg",
+          "credit": "Fujishima Takeji",
+          "license": "Public domain",
+          "alt": "Highly Cultivated Hills, by Fujishima Takeji, Ohara Museum of Art, Kurashiki, Okayama, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Highly_Cultivated_Hills_by_Fujishima_Takeji_(Ohara_Museum_of_Art).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kurashiki-s-canal-quarter",
+      "routeId": "kurashiki-s-canal-quarter-route",
+      "stopId": "kurashiki-s-canal-quarter-stop-3",
+      "stopName": "Kurashiki Ivy Square",
+      "imageTitle": "File:The front entrance of kurashiki ivy square.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/The_front_entrance_of_kurashiki_ivy_square.JPG/1280px-The_front_entrance_of_kurashiki_ivy_square.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:The_front_entrance_of_kurashiki_ivy_square.JPG",
+        "credit": "tatushin",
+        "license": "Public domain",
+        "alt": "the front entrance of kurashiki ivy square",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:The_front_entrance_of_kurashiki_ivy_square.JPG",
+          "credit": "tatushin",
+          "license": "Public domain",
+          "alt": "the front entrance of kurashiki ivy square"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:The_front_entrance_of_kurashiki_ivy_square.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kusatsu-steam-and-springs",
+      "routeId": "kusatsu-steam-and-springs-route",
+      "stopId": "kusatsu-steam-and-springs-stop-1",
+      "stopName": "Netsunoyu",
+      "imageTitle": "File:Kusatsu Yumomi, Gunma 03.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Kusatsu_Yumomi%2C_Gunma_03.jpg/1280px-Kusatsu_Yumomi%2C_Gunma_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kusatsu_Yumomi,_Gunma_03.jpg",
+        "credit": "Σ64",
+        "license": "CC BY 4.0",
+        "alt": "Yumomi （湯もみ） at Netsuno-Yu in Kusatsu Onsen, Kusatsu Town, Gunma, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kusatsu_Yumomi,_Gunma_03.jpg",
+          "credit": "Σ64",
+          "license": "CC BY 4.0",
+          "alt": "Yumomi （湯もみ） at Netsuno-Yu in Kusatsu Onsen, Kusatsu Town, Gunma, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kusatsu_Yumomi,_Gunma_03.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kusatsu-steam-and-springs",
+      "routeId": "kusatsu-steam-and-springs-route",
+      "stopId": "kusatsu-steam-and-springs-stop-2",
+      "stopName": "Sainokawara Park",
+      "imageTitle": "File:251128 Sainokawara Park 03.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/251128_Sainokawara_Park_03.jpg/1280px-251128_Sainokawara_Park_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:251128_Sainokawara_Park_03.jpg",
+        "credit": "Aspere",
+        "license": "CC0",
+        "alt": "Sainokawara Part in Kusatsu Onsen, Gunma, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:251128_Sainokawara_Park_03.jpg",
+          "credit": "Aspere",
+          "license": "CC0",
+          "alt": "Sainokawara Part in Kusatsu Onsen, Gunma, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:251128_Sainokawara_Park_03.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kyoto-at-first-light",
+      "routeId": "kyoto-at-first-light-route",
+      "stopId": "kyoto-at-first-light-stop-1",
+      "stopName": "Tofukuji Temple",
+      "imageTitle": "File:Tofukuji Temple, Sammon (main gate), May 2017.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tofukuji_Temple%2C_Sammon_%28main_gate%29%2C_May_2017.jpg/1280px-Tofukuji_Temple%2C_Sammon_%28main_gate%29%2C_May_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tofukuji_Temple,_Sammon_(main_gate),_May_2017.jpg",
+        "credit": "Celuici",
+        "license": "CC BY-SA 3.0",
+        "alt": "Tofukuji Temple, Sammon (main gate), May 2017",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tofukuji_Temple,_Sammon_(main_gate),_May_2017.jpg",
+          "credit": "Celuici",
+          "license": "CC BY-SA 3.0",
+          "alt": "Tofukuji Temple, Sammon (main gate), May 2017"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tofukuji_Temple,_Sammon_(main_gate),_May_2017.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "kyoto-at-first-light",
+      "routeId": "kyoto-at-first-light-route",
+      "stopId": "kyoto-at-first-light-stop-2",
+      "stopName": "Sennyuji Temple",
+      "imageTitle": "File:Sennyuji (Higashiyama Kyoto) Temple hdsr S5 02.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Sennyuji_%28Higashiyama_Kyoto%29_Temple_hdsr_S5_02.jpg/1280px-Sennyuji_%28Higashiyama_Kyoto%29_Temple_hdsr_S5_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Sennyuji_(Higashiyama_Kyoto)_Temple_hdsr_S5_02.jpg",
+        "credit": "Hyppolyte de Saint-Rambert",
+        "license": "CC BY 4.0",
+        "alt": "image présentant une photographie prise au temple Sennyu-ji situé dans l'arrondissement de Higashiyama à Kyoto : porte Daimon",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Sennyuji_(Higashiyama_Kyoto)_Temple_hdsr_S5_02.jpg",
+          "credit": "Hyppolyte de Saint-Rambert",
+          "license": "CC BY 4.0",
+          "alt": "image présentant une photographie prise au temple Sennyu-ji situé dans l'arrondissement de Higashiyama à Kyoto : porte Daimon"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Sennyuji_(Higashiyama_Kyoto)_Temple_hdsr_S5_02.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "lake-biwa-s-eastern-shore",
+      "routeId": "lake-biwa-s-eastern-shore-route",
+      "stopId": "lake-biwa-s-eastern-shore-stop-1",
+      "stopName": "Genkyuen Garden",
+      "imageTitle": "File:Genkyuen01s3200.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Genkyuen01s3200.jpg/1280px-Genkyuen01s3200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Genkyuen01s3200.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Genkyuen garden in Hikone , Shiga prefecture , Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Genkyuen01s3200.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "Genkyuen garden in Hikone , Shiga prefecture , Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Genkyuen01s3200.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "lake-biwa-s-eastern-shore",
+      "routeId": "lake-biwa-s-eastern-shore-route",
+      "stopId": "lake-biwa-s-eastern-shore-stop-2",
+      "stopName": "Nagahama Kurokabe Square",
+      "imageTitle": "File:Nagahama-Kurokabe-square-2020.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Nagahama-Kurokabe-square-2020.jpg/1280px-Nagahama-Kurokabe-square-2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Nagahama-Kurokabe-square-2020.jpg",
+        "credit": "Tokyo-Good",
+        "license": "CC BY-SA 4.0",
+        "alt": "滋賀県長浜市の黒壁スクエアと大手門通り（黒壁ガラス館）",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nagahama-Kurokabe-square-2020.jpg",
+          "credit": "Tokyo-Good",
+          "license": "CC BY-SA 4.0",
+          "alt": "滋賀県長浜市の黒壁スクエアと大手門通り（黒壁ガラス館）"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Nagahama-Kurokabe-square-2020.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "lake-biwa-s-eastern-shore",
+      "routeId": "lake-biwa-s-eastern-shore-route",
+      "stopId": "lake-biwa-s-eastern-shore-stop-3",
+      "stopName": "Hikone Port",
+      "imageTitle": "File:Hikone port , 彦根港 - panoramio.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Hikone_port_%2C_%E5%BD%A6%E6%A0%B9%E6%B8%AF_-_panoramio.jpg/1280px-Hikone_port_%2C_%E5%BD%A6%E6%A0%B9%E6%B8%AF_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Hikone_port_,_%E5%BD%A6%E6%A0%B9%E6%B8%AF_-_panoramio.jpg",
+        "credit": "z tanuki",
+        "license": "CC BY 3.0",
+        "alt": "Hikone port , 彦根港",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Hikone_port_,_%E5%BD%A6%E6%A0%B9%E6%B8%AF_-_panoramio.jpg",
+          "credit": "z tanuki",
+          "license": "CC BY 3.0",
+          "alt": "Hikone port , 彦根港"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Hikone_port_,_%E5%BD%A6%E6%A0%B9%E6%B8%AF_-_panoramio.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "lake-toya-volcanic-calm",
+      "routeId": "lake-toya-shore-volcano",
+      "stopId": "toya-shore",
+      "stopName": "Lake Toya lakeside promenade",
+      "imageTitle": "File:Lake Toya 20140808-2.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Lake_Toya_20140808-2.jpg/1280px-Lake_Toya_20140808-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Lake_Toya_20140808-2.jpg",
+        "credit": "Suicasmo",
+        "license": "CC BY-SA 4.0",
+        "alt": "Lake Toya shoreline in Hokkaido.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Lake_Toya_20140808-2.jpg",
+          "credit": "Suicasmo",
+          "license": "CC BY-SA 4.0",
+          "alt": "Lake Toya shoreline in Hokkaido."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Lake_Toya_20140808-2.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "lake-toya-volcanic-calm",
+      "routeId": "lake-toya-shore-volcano",
+      "stopId": "showa-shinzan",
+      "stopName": "Showa Shinzan",
+      "imageTitle": "File:Mount Showa-shinzan 01.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Mount_Showa-shinzan_01.jpg/1280px-Mount_Showa-shinzan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Mount_Showa-shinzan_01.jpg",
+        "credit": "Mugu-shisai",
+        "license": "CC BY-SA 3.0",
+        "alt": "Showa-shinzan in Sobetsu , Hokkaido , Japan . It is a Volcanic Lava dome .",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Mount_Showa-shinzan_01.jpg",
+          "credit": "Mugu-shisai",
+          "license": "CC BY-SA 3.0",
+          "alt": "Showa-shinzan in Sobetsu , Hokkaido , Japan . It is a Volcanic Lava dome ."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Mount_Showa-shinzan_01.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "lake-toya-volcanic-calm",
+      "routeId": "lake-toya-shore-volcano",
+      "stopId": "usu-ropeway",
+      "stopName": "Usu Ropeway",
+      "imageTitle": "File:The View from Usuzan Ropeway.jpg",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/The_View_from_Usuzan_Ropeway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "https://commons.wikimedia.org/wiki/File:The_View_from_Usuzan_Ropeway.jpg",
+        "credit": "Miyuki Meinaka",
+        "license": "Public domain",
+        "alt": "This is a landscape of Mount Usu and Lake Toya.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:The_View_from_Usuzan_Ropeway.jpg",
+          "credit": "Miyuki Meinaka",
+          "license": "Public domain",
+          "alt": "This is a landscape of Mount Usu and Lake Toya."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:The_View_from_Usuzan_Ropeway.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "matsumoto-beneath-the-alps",
+      "routeId": "matsumoto-beneath-the-alps-route",
+      "stopId": "matsumoto-beneath-the-alps-stop-1",
+      "stopName": "Nawate Street and Yohashira Shrine",
+      "imageTitle": "File:130608 Nawate shop street Matsumoto Nagano pref Japan01n.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/130608_Nawate_shop_street_Matsumoto_Nagano_pref_Japan01n.jpg/1280px-130608_Nawate_shop_street_Matsumoto_Nagano_pref_Japan01n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:130608_Nawate_shop_street_Matsumoto_Nagano_pref_Japan01n.jpg",
+        "credit": "663highland",
+        "license": "CC BY-SA 4.0",
+        "alt": "At Nawate shop street in Matsumoto , Nagano prefecture , Japan .",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:130608_Nawate_shop_street_Matsumoto_Nagano_pref_Japan01n.jpg",
+          "credit": "663highland",
+          "license": "CC BY-SA 4.0",
+          "alt": "At Nawate shop street in Matsumoto , Nagano prefecture , Japan ."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:130608_Nawate_shop_street_Matsumoto_Nagano_pref_Japan01n.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "matsumoto-beneath-the-alps",
+      "routeId": "matsumoto-beneath-the-alps-route",
+      "stopId": "matsumoto-beneath-the-alps-stop-2",
+      "stopName": "Nakamachi Street",
+      "imageTitle": "File:Nakamachi street Matsumoto Nagano pref Japan01s3.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Nakamachi_street_Matsumoto_Nagano_pref_Japan01s3.jpg/1280px-Nakamachi_street_Matsumoto_Nagano_pref_Japan01s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Nakamachi_street_Matsumoto_Nagano_pref_Japan01s3.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "At Nakamachi street in Matsumoto , Nagano prefecture , Japan .",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nakamachi_street_Matsumoto_Nagano_pref_Japan01s3.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "At Nakamachi street in Matsumoto , Nagano prefecture , Japan ."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Nakamachi_street_Matsumoto_Nagano_pref_Japan01s3.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "matsushima-bay",
+      "routeId": "matsushima-bay-temples-walk",
+      "stopId": "matsushima-rikyu",
+      "stopName": "Miyagi Matsushima Rikyu",
+      "imageTitle": "File:Matsushima Bay - Matsushima6226.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Matsushima_Bay_-_Matsushima6226.jpg/1280px-Matsushima_Bay_-_Matsushima6226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Matsushima_Bay_-_Matsushima6226.jpg",
+        "credit": "lumoplank",
+        "license": "CC0",
+        "alt": "Tree-covered rock formations and sea arches along Matsushima Bay, near Matsushima Rikyu.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Matsushima_Bay_-_Matsushima6226.jpg",
+          "credit": "lumoplank",
+          "license": "CC0",
+          "alt": "Tree-covered rock formations and sea arches along Matsushima Bay, near Matsushima Rikyu."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Matsushima_Bay_-_Matsushima6226.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "matsushima-bay",
+      "routeId": "matsushima-bay-temples-walk",
+      "stopId": "zuiganji-temple",
+      "stopName": "Zuiganji Temple",
+      "imageTitle": "File:Zuiganji Temple Caves.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Zuiganji_Temple_Caves.JPG/1280px-Zuiganji_Temple_Caves.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Zuiganji_Temple_Caves.JPG",
+        "credit": "Jrissman",
+        "license": "CC BY-SA 3.0",
+        "alt": "This is a photograph of the caves at Zuigan-ji temple in Mastushima, Japan.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Zuiganji_Temple_Caves.JPG",
+          "credit": "Jrissman",
+          "license": "CC BY-SA 3.0",
+          "alt": "This is a photograph of the caves at Zuigan-ji temple in Mastushima, Japan."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Zuiganji_Temple_Caves.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "matsushima-bay",
+      "routeId": "matsushima-bay-temples-walk",
+      "stopId": "entsuin-temple",
+      "stopName": "Entsuin Temple",
+      "imageTitle": "File:Entsuin2.jpg",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Entsuin2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "https://commons.wikimedia.org/wiki/File:Entsuin2.jpg",
+        "credit": "Kumamushi",
+        "license": "CC BY-SA 3.0",
+        "alt": "Ents?-in Temple in Matsushima, Miyagi, in winter.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Entsuin2.jpg",
+          "credit": "Kumamushi",
+          "license": "CC BY-SA 3.0",
+          "alt": "Ents?-in Temple in Matsushima, Miyagi, in winter."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Entsuin2.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "matsushima-bay",
+      "routeId": "matsushima-bay-temples-walk",
+      "stopId": "godaido-temple",
+      "stopName": "Godaido Temple",
+      "imageTitle": "File:211030 Godaido Zuigan-ji Matsushima Miyagi pref Japan05s3.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/211030_Godaido_Zuigan-ji_Matsushima_Miyagi_pref_Japan05s3.jpg/1280px-211030_Godaido_Zuigan-ji_Matsushima_Miyagi_pref_Japan05s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:211030_Godaido_Zuigan-ji_Matsushima_Miyagi_pref_Japan05s3.jpg",
+        "credit": "663highland",
+        "license": "CC BY-SA 4.0",
+        "alt": "Godaido in Matsushima , Miyagi prefecture , Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:211030_Godaido_Zuigan-ji_Matsushima_Miyagi_pref_Japan05s3.jpg",
+          "credit": "663highland",
+          "license": "CC BY-SA 4.0",
+          "alt": "Godaido in Matsushima , Miyagi prefecture , Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:211030_Godaido_Zuigan-ji_Matsushima_Miyagi_pref_Japan05s3.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "matsuyama-s-castle-hill",
+      "routeId": "matsuyama-s-castle-hill-route",
+      "stopId": "matsuyama-s-castle-hill-stop-1",
+      "stopName": "Matsuyama Castle ropeway",
+      "imageTitle": "File:Matsuyama castle Ropeway&Chairlift(Iyo).JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Matsuyama_castle_Ropeway%26Chairlift%28Iyo%29.JPG/1280px-Matsuyama_castle_Ropeway%26Chairlift%28Iyo%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Matsuyama_castle_Ropeway%26Chairlift(Iyo).JPG",
+        "credit": "Shiro4873",
+        "license": "CC BY 3.0",
+        "alt": "The Matsuyama castle Ropeway and Chairlift is a fun way to approach Matsuyama Castle (Iyo).",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_castle_Ropeway%26Chairlift(Iyo).JPG",
+          "credit": "Shiro4873",
+          "license": "CC BY 3.0",
+          "alt": "The Matsuyama castle Ropeway and Chairlift is a fun way to approach Matsuyama Castle (Iyo)."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Matsuyama_castle_Ropeway%26Chairlift(Iyo).JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "matsuyama-s-castle-hill",
+      "routeId": "matsuyama-s-castle-hill-route",
+      "stopId": "matsuyama-s-castle-hill-stop-2",
+      "stopName": "Matsuyama Castle keep",
+      "imageTitle": "File:Matsuyama castle(Iyo)6.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Matsuyama_castle%28Iyo%296.JPG/1280px-Matsuyama_castle%28Iyo%296.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Matsuyama_castle(Iyo)6.JPG",
+        "credit": "Jyo81 (ja: User)",
+        "license": "CC BY 3.0",
+        "alt": "The Matsuyama-castle is one of the three famous and large - multiple-wing castles in Japan. The Castle Tower was destroyed by fire in 1784,. However, when it was reconstructed in 1854, great care was taken to use traditional carpentry techniques and materials. Many of the castle buildings are designated as Important Cultural Properties. It is possible to walk up the hill (132m) to the castle or to go up by rope-way or chair-lift. The Matsuyama-castle is symbol of Matsuyama City. (Ehime, JAPAN).",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_castle(Iyo)6.JPG",
+          "credit": "Jyo81 (ja: User)",
+          "license": "CC BY 3.0",
+          "alt": "The Matsuyama-castle is one of the three famous and large - multiple-wing castles in Japan. The Castle Tower was destroyed by fire in 1784,. However, when it was reconstructed in 1854, great care was taken to use traditional carpentry techniques and materials. Many of the castle buildings are designated as Important Cultural Properties. It is possible to walk up the hill (132m) to the castle or to go up by rope-way or chair-lift. The Matsuyama-castle is symbol of Matsuyama City. (Ehime, JAPAN)."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Matsuyama_castle(Iyo)6.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "matsuyama-s-castle-hill",
+      "routeId": "matsuyama-s-castle-hill-route",
+      "stopId": "matsuyama-s-castle-hill-stop-3",
+      "stopName": "Ninomaru Historical Garden",
+      "imageTitle": "File:Koi at Ninomaru Historical Garden (6453808869).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Koi_at_Ninomaru_Historical_Garden_%286453808869%29.jpg/1280px-Koi_at_Ninomaru_Historical_Garden_%286453808869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Koi_at_Ninomaru_Historical_Garden_(6453808869).jpg",
+        "credit": "Maarten Heerlien from Voorschoten, The Netherlands",
+        "license": "CC BY 2.0",
+        "alt": "Koi at Ninomaru Historical Garden",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Koi_at_Ninomaru_Historical_Garden_(6453808869).jpg",
+          "credit": "Maarten Heerlien from Voorschoten, The Netherlands",
+          "license": "CC BY 2.0",
+          "alt": "Koi at Ninomaru Historical Garden"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Koi_at_Ninomaru_Historical_Garden_(6453808869).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "miyajima-tide-lines",
+      "routeId": "miyajima-tide-lines-route",
+      "stopId": "miyajima-tide-lines-stop-1",
+      "stopName": "Itsukushima Shrine and Otorii",
+      "imageTitle": "File:Itsukushima shrine 01.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Itsukushima_shrine_01.jpg/1280px-Itsukushima_shrine_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Itsukushima_shrine_01.jpg",
+        "credit": "Butch",
+        "license": "CC BY-SA 4.0",
+        "alt": "Itsukushima shrine (Miyajima) seen from water with know gate in front.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Itsukushima_shrine_01.jpg",
+          "credit": "Butch",
+          "license": "CC BY-SA 4.0",
+          "alt": "Itsukushima shrine (Miyajima) seen from water with know gate in front."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Itsukushima_shrine_01.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "miyajima-tide-lines",
+      "routeId": "miyajima-tide-lines-route",
+      "stopId": "miyajima-tide-lines-stop-2",
+      "stopName": "Daisho-in Temple",
+      "imageTitle": "File:Daisho-in temple-01.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Daisho-in_temple-01.jpg/1280px-Daisho-in_temple-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Daisho-in_temple-01.jpg",
+        "credit": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "alt": "Maniden Hall, Daisho-in temple, Miyajima island, Hiroshima Prefecture, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Daisho-in_temple-01.jpg",
+          "credit": "Bernard Gagnon",
+          "license": "CC BY-SA 3.0",
+          "alt": "Maniden Hall, Daisho-in temple, Miyajima island, Hiroshima Prefecture, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Daisho-in_temple-01.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "miyajima-tide-lines",
+      "routeId": "miyajima-tide-lines-route",
+      "stopId": "miyajima-tide-lines-stop-3",
+      "stopName": "Momijidani Park",
+      "imageTitle": "File:In momijidani park (4175176805).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/In_momijidani_park_%284175176805%29.jpg/1280px-In_momijidani_park_%284175176805%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:In_momijidani_park_(4175176805).jpg",
+        "credit": "KimonBerlin",
+        "license": "CC BY-SA 2.0",
+        "alt": "In momijidani park",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:In_momijidani_park_(4175176805).jpg",
+          "credit": "KimonBerlin",
+          "license": "CC BY-SA 2.0",
+          "alt": "In momijidani park"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:In_momijidani_park_(4175176805).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "naoshima-art-and-sea",
+      "routeId": "naoshima-art-and-sea-route",
+      "stopId": "naoshima-art-and-sea-stop-1",
+      "stopName": "Red Pumpkin",
+      "imageTitle": "File:With Pumpkin (7046726329).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/With_Pumpkin_%287046726329%29.jpg/1280px-With_Pumpkin_%287046726329%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:With_Pumpkin_(7046726329).jpg",
+        "credit": "KimonBerlin",
+        "license": "CC BY-SA 2.0",
+        "alt": "with Pumpkin",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:With_Pumpkin_(7046726329).jpg",
+          "credit": "KimonBerlin",
+          "license": "CC BY-SA 2.0",
+          "alt": "with Pumpkin"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:With_Pumpkin_(7046726329).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "naoshima-art-and-sea",
+      "routeId": "naoshima-art-and-sea-route",
+      "stopId": "naoshima-art-and-sea-stop-2",
+      "stopName": "Chichu Art Museum",
+      "imageTitle": "File:150505 Chichu Art Museum Naoshima Island Kagawa pref Japan01s3.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg/1280px-150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Chichu Art Museum in Naoshima Island , Kagawa prefecture , Japan .",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "Chichu Art Museum in Naoshima Island , Kagawa prefecture , Japan ."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:150505_Chichu_Art_Museum_Naoshima_Island_Kagawa_pref_Japan01s3.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "naoshima-art-and-sea",
+      "routeId": "naoshima-art-and-sea-route",
+      "stopId": "naoshima-art-and-sea-stop-3",
+      "stopName": "Benesse House Museum",
+      "imageTitle": "File:150505 Benesse House Museum Naoshima Kagawa pref Japan01b3s5.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg/1280px-150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Benesse House \"Museum\" of Benesse Art Site Naoshima in Naoshima , Kagawa prefecture , Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "Benesse House \"Museum\" of Benesse Art Site Naoshima in Naoshima , Kagawa prefecture , Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:150505_Benesse_House_Museum_Naoshima_Kagawa_pref_Japan01b3s5.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "nara-between-trees",
+      "routeId": "nara-between-trees-route",
+      "stopId": "nara-between-trees-stop-1",
+      "stopName": "Nigatsudo Hall",
+      "imageTitle": "File:Todai-ji Nigatsu-do National Treasure 国宝東大寺二月堂03.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Todai-ji_Nigatsu-do_National_Treasure_%E5%9B%BD%E5%AE%9D%E6%9D%B1%E5%A4%A7%E5%AF%BA%E4%BA%8C%E6%9C%88%E5%A0%8203.JPG/1280px-Todai-ji_Nigatsu-do_National_Treasure_%E5%9B%BD%E5%AE%9D%E6%9D%B1%E5%A4%A7%E5%AF%BA%E4%BA%8C%E6%9C%88%E5%A0%8203.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Todai-ji_Nigatsu-do_National_Treasure_%E5%9B%BD%E5%AE%9D%E6%9D%B1%E5%A4%A7%E5%AF%BA%E4%BA%8C%E6%9C%88%E5%A0%8203.JPG",
+        "credit": "Nekosuki",
+        "license": "CC BY-SA 4.0",
+        "alt": "Todai-ji Nigatsu-do National Treasure 国宝東大寺二月堂",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Todai-ji_Nigatsu-do_National_Treasure_%E5%9B%BD%E5%AE%9D%E6%9D%B1%E5%A4%A7%E5%AF%BA%E4%BA%8C%E6%9C%88%E5%A0%8203.JPG",
+          "credit": "Nekosuki",
+          "license": "CC BY-SA 4.0",
+          "alt": "Todai-ji Nigatsu-do National Treasure 国宝東大寺二月堂"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Todai-ji_Nigatsu-do_National_Treasure_%E5%9B%BD%E5%AE%9D%E6%9D%B1%E5%A4%A7%E5%AF%BA%E4%BA%8C%E6%9C%88%E5%A0%8203.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "nara-between-trees",
+      "routeId": "nara-between-trees-route",
+      "stopId": "nara-between-trees-stop-2",
+      "stopName": "Kasuga Taisha Shrine",
+      "imageTitle": "File:Kasuga-taisha Shrine, Nara Prefecture; April 2017 (02).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Kasuga-taisha_Shrine%2C_Nara_Prefecture%3B_April_2017_%2802%29.jpg/1280px-Kasuga-taisha_Shrine%2C_Nara_Prefecture%3B_April_2017_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kasuga-taisha_Shrine,_Nara_Prefecture;_April_2017_(02).jpg",
+        "credit": "Olivier Bruchez",
+        "license": "CC BY-SA 2.0",
+        "alt": "Kasuga Grand Shrine is a Shinto shrine in Nara, Nara Prefecture, Japan. It is the shrine of the Fujiwara family, established in 768 CE and rebuilt several times over the centuries. The interior is famous for its many bronze lanterns, as well as the many stone lanterns that lead up the shrine.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kasuga-taisha_Shrine,_Nara_Prefecture;_April_2017_(02).jpg",
+          "credit": "Olivier Bruchez",
+          "license": "CC BY-SA 2.0",
+          "alt": "Kasuga Grand Shrine is a Shinto shrine in Nara, Nara Prefecture, Japan. It is the shrine of the Fujiwara family, established in 768 CE and rebuilt several times over the centuries. The interior is famous for its many bronze lanterns, as well as the many stone lanterns that lead up the shrine."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kasuga-taisha_Shrine,_Nara_Prefecture;_April_2017_(02).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "nikko-in-the-cedars",
+      "routeId": "nikko-world-heritage-loop",
+      "stopId": "nikko-shinkyo",
+      "stopName": "Shinkyo Bridge",
+      "imageTitle": "File:Shinkyo (Sacred Bridge), Nikko, Tochigi 20130812 3.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Shinkyo_%28Sacred_Bridge%29%2C_Nikko%2C_Tochigi_20130812_3.jpg/1280px-Shinkyo_%28Sacred_Bridge%29%2C_Nikko%2C_Tochigi_20130812_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Shinkyo_(Sacred_Bridge),_Nikko,_Tochigi_20130812_3.jpg",
+        "credit": "DXR",
+        "license": "CC BY-SA 3.0",
+        "alt": "The sacred bridge in Nikko, Tochigi",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Shinkyo_(Sacred_Bridge),_Nikko,_Tochigi_20130812_3.jpg",
+          "credit": "DXR",
+          "license": "CC BY-SA 3.0",
+          "alt": "The sacred bridge in Nikko, Tochigi"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Shinkyo_(Sacred_Bridge),_Nikko,_Tochigi_20130812_3.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "nikko-in-the-cedars",
+      "routeId": "nikko-world-heritage-loop",
+      "stopId": "nikko-rinnoji",
+      "stopName": "Nikkosan Rinnoji Temple",
+      "imageTitle": "File:Nikkosan Rinnoji Temple, Nikko, Japan.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Nikkosan_Rinnoji_Temple%2C_Nikko%2C_Japan.jpg/1280px-Nikkosan_Rinnoji_Temple%2C_Nikko%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Nikkosan_Rinnoji_Temple,_Nikko,_Japan.jpg",
+        "credit": "Joli Rumi",
+        "license": "CC BY-SA 4.0",
+        "alt": "Nikkosan Rinnoji Temple, Nikko, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nikkosan_Rinnoji_Temple,_Nikko,_Japan.jpg",
+          "credit": "Joli Rumi",
+          "license": "CC BY-SA 4.0",
+          "alt": "Nikkosan Rinnoji Temple, Nikko, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Nikkosan_Rinnoji_Temple,_Nikko,_Japan.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "nikko-in-the-cedars",
+      "routeId": "nikko-world-heritage-loop",
+      "stopId": "nikko-toshogu",
+      "stopName": "Nikko Toshogu Shrine",
+      "imageTitle": "File:Nikko toshogu shrine.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Nikko_toshogu_shrine.jpg/1280px-Nikko_toshogu_shrine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Nikko_toshogu_shrine.jpg",
+        "credit": "Koichi Sato",
+        "license": "CC BY-SA 4.0",
+        "alt": "Torii and Yōmeimon-gate of Nikkō Tōshōgū Shrine (City of Nikkō, Tochigi Prefecture, Japan / 2017-10-12)",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nikko_toshogu_shrine.jpg",
+          "credit": "Koichi Sato",
+          "license": "CC BY-SA 4.0",
+          "alt": "Torii and Yōmeimon-gate of Nikkō Tōshōgū Shrine (City of Nikkō, Tochigi Prefecture, Japan / 2017-10-12)"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Nikko_toshogu_shrine.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "nikko-in-the-cedars",
+      "routeId": "nikko-world-heritage-loop",
+      "stopId": "nikko-futarasan",
+      "stopName": "Nikko Futarasan-jinja Shrine",
+      "imageTitle": "File:Futarasan Shrine (Nikko) Hie-jinja.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Futarasan_Shrine_%28Nikko%29_Hie-jinja.JPG/1280px-Futarasan_Shrine_%28Nikko%29_Hie-jinja.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Futarasan_Shrine_(Nikko)_Hie-jinja.JPG",
+        "credit": "Saigen Jiro",
+        "license": "CC0",
+        "alt": "日光二荒山神社 末社日枝神社",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Futarasan_Shrine_(Nikko)_Hie-jinja.JPG",
+          "credit": "Saigen Jiro",
+          "license": "CC0",
+          "alt": "日光二荒山神社 末社日枝神社"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Futarasan_Shrine_(Nikko)_Hie-jinja.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "nikko-in-the-cedars",
+      "routeId": "nikko-world-heritage-loop",
+      "stopId": "nikko-taiyuin",
+      "stopName": "Taiyuin Mausoleum",
+      "imageTitle": "File:Nikko Mausoleum Rin-no-ji Taiyuin Heiligtum Kara-mon 1.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Nikko_Mausoleum_Rin-no-ji_Taiyuin_Heiligtum_Kara-mon_1.jpg/1280px-Nikko_Mausoleum_Rin-no-ji_Taiyuin_Heiligtum_Kara-mon_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Nikko_Mausoleum_Rin-no-ji_Taiyuin_Heiligtum_Kara-mon_1.jpg",
+        "credit": "Zairon",
+        "license": "CC BY-SA 4.0",
+        "alt": "Chinese Gate of the Taiyu-in of the Rinno Temple, Nikko, Prefecture of Tochigi, Region of Kanto, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nikko_Mausoleum_Rin-no-ji_Taiyuin_Heiligtum_Kara-mon_1.jpg",
+          "credit": "Zairon",
+          "license": "CC BY-SA 4.0",
+          "alt": "Chinese Gate of the Taiyu-in of the Rinno Temple, Nikko, Prefecture of Tochigi, Region of Kanto, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Nikko_Mausoleum_Rin-no-ji_Taiyuin_Heiligtum_Kara-mon_1.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oboke-gorge-by-river",
+      "routeId": "oboke-gorge-by-river-route",
+      "stopId": "oboke-gorge-by-river-stop-1",
+      "stopName": "Oboke Gorge boat pier",
+      "imageTitle": "File:Oboke gorge pleasure boat 2106 August 13.A.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Oboke_gorge_pleasure_boat_2106_August_13.A.jpg/1280px-Oboke_gorge_pleasure_boat_2106_August_13.A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Oboke_gorge_pleasure_boat_2106_August_13.A.jpg",
+        "credit": "さかおり",
+        "license": "CC BY-SA 4.0",
+        "alt": "大歩危遊覧船（徳島県三好市）",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Oboke_gorge_pleasure_boat_2106_August_13.A.jpg",
+          "credit": "さかおり",
+          "license": "CC BY-SA 4.0",
+          "alt": "大歩危遊覧船（徳島県三好市）"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Oboke_gorge_pleasure_boat_2106_August_13.A.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oboke-gorge-by-river",
+      "routeId": "oboke-gorge-by-river-route",
+      "stopId": "oboke-gorge-by-river-stop-2",
+      "stopName": "Koboke Gorge",
+      "imageTitle": "File:Tokushima Miyoshi Yoshino River Of Oboke Gorge 1.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Tokushima_Miyoshi_Yoshino_River_Of_Oboke_Gorge_1.JPG/1280px-Tokushima_Miyoshi_Yoshino_River_Of_Oboke_Gorge_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tokushima_Miyoshi_Yoshino_River_Of_Oboke_Gorge_1.JPG",
+        "credit": "京浜にけ",
+        "license": "CC BY-SA 3.0",
+        "alt": "吉野川 の ja:大歩危 峡（ ja:徳島県 ja:三好市 ）",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tokushima_Miyoshi_Yoshino_River_Of_Oboke_Gorge_1.JPG",
+          "credit": "京浜にけ",
+          "license": "CC BY-SA 3.0",
+          "alt": "吉野川 の ja:大歩危 峡（ ja:徳島県 ja:三好市 ）"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tokushima_Miyoshi_Yoshino_River_Of_Oboke_Gorge_1.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oboke-gorge-by-river",
+      "routeId": "oboke-gorge-by-river-route",
+      "stopId": "oboke-gorge-by-river-stop-3",
+      "stopName": "Oboke roadside viewpoint",
+      "imageTitle": "File:Koinobori, Oboke Gorge, Tokushima Prefecture, Shikoku, Japan.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Koinobori%2C_Oboke_Gorge%2C_Tokushima_Prefecture%2C_Shikoku%2C_Japan.jpg/1280px-Koinobori%2C_Oboke_Gorge%2C_Tokushima_Prefecture%2C_Shikoku%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Koinobori,_Oboke_Gorge,_Tokushima_Prefecture,_Shikoku,_Japan.jpg",
+        "credit": "OKJaguar",
+        "license": "CC BY-SA 4.0",
+        "alt": "Koinobori (carp streamers; fish kites), Oboke Gorge, Tokushima Prefecture, Shikoku, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Koinobori,_Oboke_Gorge,_Tokushima_Prefecture,_Shikoku,_Japan.jpg",
+          "credit": "OKJaguar",
+          "license": "CC BY-SA 4.0",
+          "alt": "Koinobori (carp streamers; fish kites), Oboke Gorge, Tokushima Prefecture, Shikoku, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Koinobori,_Oboke_Gorge,_Tokushima_Prefecture,_Shikoku,_Japan.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oirase-stream-walk",
+      "routeId": "oirase-stream-walk-nenokuchi-yakeyama-walk",
+      "stopId": "oirase-nenokuchi",
+      "stopName": "Nenokuchi lakeside trailhead",
+      "imageTitle": "File:Oirase Mountain Stream at Lake Towada - Nenokuchi, Aomori - DSC01037.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Oirase_Mountain_Stream_at_Lake_Towada_-_Nenokuchi%2C_Aomori_-_DSC01037.jpg/1280px-Oirase_Mountain_Stream_at_Lake_Towada_-_Nenokuchi%2C_Aomori_-_DSC01037.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_at_Lake_Towada_-_Nenokuchi,_Aomori_-_DSC01037.jpg",
+        "credit": "Daderot",
+        "license": "CC0",
+        "alt": "Oirase Mountain Stream at Lake Towada - Nenokuchi, Aomori, Japan.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_at_Lake_Towada_-_Nenokuchi,_Aomori_-_DSC01037.jpg",
+          "credit": "Daderot",
+          "license": "CC0",
+          "alt": "Oirase Mountain Stream at Lake Towada - Nenokuchi, Aomori, Japan."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_at_Lake_Towada_-_Nenokuchi,_Aomori_-_DSC01037.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oirase-stream-walk",
+      "routeId": "oirase-stream-walk-nenokuchi-yakeyama-walk",
+      "stopId": "oirase-choshi-otaki",
+      "stopName": "Choshi Otaki Falls",
+      "imageTitle": "File:Oirase Gorge - OiraseGorge7012.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Oirase_Gorge_-_OiraseGorge7012.jpg/1280px-Oirase_Gorge_-_OiraseGorge7012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Oirase_Gorge_-_OiraseGorge7012.jpg",
+        "credit": "lumoplank",
+        "license": "CC0",
+        "alt": "Choshi Otaki Falls, Oirase Gorge, in autumn",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Oirase_Gorge_-_OiraseGorge7012.jpg",
+          "credit": "lumoplank",
+          "license": "CC0",
+          "alt": "Choshi Otaki Falls, Oirase Gorge, in autumn"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Oirase_Gorge_-_OiraseGorge7012.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oirase-stream-walk",
+      "routeId": "oirase-stream-walk-nenokuchi-yakeyama-walk",
+      "stopId": "oirase-kumoi-nagare",
+      "stopName": "Kumoi-no-Nagare viewpoint access",
+      "imageTitle": "File:Hinomaru-Towada Kanko Dentetsu OP-21 Sky Bus at Kumoi-no-nagare.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Hinomaru-Towada_Kanko_Dentetsu_OP-21_Sky_Bus_at_Kumoi-no-nagare.jpg/1280px-Hinomaru-Towada_Kanko_Dentetsu_OP-21_Sky_Bus_at_Kumoi-no-nagare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Hinomaru-Towada_Kanko_Dentetsu_OP-21_Sky_Bus_at_Kumoi-no-nagare.jpg",
+        "credit": "Comyu",
+        "license": "CC BY-SA 4.0",
+        "alt": "Sky Bus Tokyo fleet at Kumoi-no-nagare, Oirase Gorge. Model: Neoplan Skyliner License plate: AMH200 KA1089",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Hinomaru-Towada_Kanko_Dentetsu_OP-21_Sky_Bus_at_Kumoi-no-nagare.jpg",
+          "credit": "Comyu",
+          "license": "CC BY-SA 4.0",
+          "alt": "Sky Bus Tokyo fleet at Kumoi-no-nagare, Oirase Gorge. Model: Neoplan Skyliner License plate: AMH200 KA1089"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Hinomaru-Towada_Kanko_Dentetsu_OP-21_Sky_Bus_at_Kumoi-no-nagare.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oirase-stream-walk",
+      "routeId": "oirase-stream-walk-nenokuchi-yakeyama-walk",
+      "stopId": "oirase-kumoi-falls",
+      "stopName": "Kumoi-no-Taki Falls",
+      "imageTitle": "File:KumoinoTaki.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/KumoinoTaki.JPG/1280px-KumoinoTaki.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:KumoinoTaki.JPG",
+        "credit": "Ippukucho",
+        "license": "CC BY 3.0",
+        "alt": "雲井の滝 (奥入瀬渓流)",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:KumoinoTaki.JPG",
+          "credit": "Ippukucho",
+          "license": "CC BY 3.0",
+          "alt": "雲井の滝 (奥入瀬渓流)"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:KumoinoTaki.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oirase-stream-walk",
+      "routeId": "oirase-stream-walk-nenokuchi-yakeyama-walk",
+      "stopId": "oirase-makado-iwa",
+      "stopName": "Makado-iwa viewpoint access",
+      "imageTitle": "File:Oirase Mountain Stream - Towada, Aomori - DSC01304.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Oirase_Mountain_Stream_-_Towada%2C_Aomori_-_DSC01304.jpg/1280px-Oirase_Mountain_Stream_-_Towada%2C_Aomori_-_DSC01304.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC01304.jpg",
+        "credit": "Daderot",
+        "license": "CC0",
+        "alt": "A forested section of Oirase Mountain Stream in Towada, Aomori, on the route near Makado-iwa.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC01304.jpg",
+          "credit": "Daderot",
+          "license": "CC0",
+          "alt": "A forested section of Oirase Mountain Stream in Towada, Aomori, on the route near Makado-iwa."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC01304.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oirase-stream-walk",
+      "routeId": "oirase-stream-walk-nenokuchi-yakeyama-walk",
+      "stopId": "oirase-ishigedo",
+      "stopName": "Ishigedo rest house and trail stop",
+      "imageTitle": "File:Ishigedo - Oirase Mountain Stream - Towada, Aomori - DSC01009.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Ishigedo_-_Oirase_Mountain_Stream_-_Towada%2C_Aomori_-_DSC01009.jpg/1280px-Ishigedo_-_Oirase_Mountain_Stream_-_Towada%2C_Aomori_-_DSC01009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Ishigedo_-_Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC01009.jpg",
+        "credit": "Daderot",
+        "license": "CC0",
+        "alt": "Oirase Mountain Stream - Towada, Aomori, Japan.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Ishigedo_-_Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC01009.jpg",
+          "credit": "Daderot",
+          "license": "CC0",
+          "alt": "Oirase Mountain Stream - Towada, Aomori, Japan."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Ishigedo_-_Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC01009.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oirase-stream-walk",
+      "routeId": "oirase-stream-walk-nenokuchi-yakeyama-walk",
+      "stopId": "oirase-yakeyama",
+      "stopName": "Yakeyama gorge entrance",
+      "imageTitle": "File:Oirase Mountain Stream - Towada, Aomori - DSC00887.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Oirase_Mountain_Stream_-_Towada%2C_Aomori_-_DSC00887.jpg/1280px-Oirase_Mountain_Stream_-_Towada%2C_Aomori_-_DSC00887.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC00887.jpg",
+        "credit": "Daderot",
+        "license": "CC0",
+        "alt": "A different forest-and-stream view from Oirase Mountain Stream in Towada, Aomori.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC00887.jpg",
+          "credit": "Daderot",
+          "license": "CC0",
+          "alt": "A different forest-and-stream view from Oirase Mountain Stream in Towada, Aomori."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC00887.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "onomichi-s-hillside-lanes",
+      "routeId": "onomichi-s-hillside-lanes-route",
+      "stopId": "onomichi-s-hillside-lanes-stop-1",
+      "stopName": "Path of Literature",
+      "imageTitle": "File:Stela near Path of Literature in Senkoji Park.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Stela_near_Path_of_Literature_in_Senkoji_Park.jpg/1280px-Stela_near_Path_of_Literature_in_Senkoji_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Stela_near_Path_of_Literature_in_Senkoji_Park.jpg",
+        "credit": "そらみみ",
+        "license": "CC BY-SA 4.0",
+        "alt": "千光寺公園・文学のこみちの石碑",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Stela_near_Path_of_Literature_in_Senkoji_Park.jpg",
+          "credit": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "alt": "千光寺公園・文学のこみちの石碑"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Stela_near_Path_of_Literature_in_Senkoji_Park.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "onomichi-s-hillside-lanes",
+      "routeId": "onomichi-s-hillside-lanes-route",
+      "stopId": "onomichi-s-hillside-lanes-stop-2",
+      "stopName": "Jodoji Temple",
+      "imageTitle": "File:Jodoji Temple Jodo Hall.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Jodoji_Temple_Jodo_Hall.JPG/1280px-Jodoji_Temple_Jodo_Hall.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Jodoji_Temple_Jodo_Hall.JPG",
+        "credit": "KishujiRapid",
+        "license": "CC BY-SA 4.0",
+        "alt": "浄土寺浄土堂",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Jodoji_Temple_Jodo_Hall.JPG",
+          "credit": "KishujiRapid",
+          "license": "CC BY-SA 4.0",
+          "alt": "浄土寺浄土堂"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Jodoji_Temple_Jodo_Hall.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "onomichi-s-hillside-lanes",
+      "routeId": "onomichi-s-hillside-lanes-route",
+      "stopId": "onomichi-s-hillside-lanes-stop-3",
+      "stopName": "Onomichi U2 waterfront",
+      "imageTitle": "File:Onomichi u2 03.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Onomichi_u2_03.jpg/1280px-Onomichi_u2_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Onomichi_u2_03.jpg",
+        "credit": "Asacyan",
+        "license": "CC BY-SA 4.0",
+        "alt": "HOTEL CYCLE (ONOMICHI U2)",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Onomichi_u2_03.jpg",
+          "credit": "Asacyan",
+          "license": "CC BY-SA 4.0",
+          "alt": "HOTEL CYCLE (ONOMICHI U2)"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Onomichi_u2_03.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "osaka-after-hours",
+      "routeId": "osaka-after-hours-route",
+      "stopId": "osaka-after-hours-stop-1",
+      "stopName": "Dotonbori and Ebisu Bridge",
+      "imageTitle": "File:Osaka Dotonbori Ebisu Bridge.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Osaka_Dotonbori_Ebisu_Bridge.jpg/1280px-Osaka_Dotonbori_Ebisu_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Ebisu_Bridge.jpg",
+        "credit": "Type specimen",
+        "license": "CC BY-SA 3.0",
+        "alt": "Wall of signboards at Ebisu Bridge on the Dōtonbori Canal",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Ebisu_Bridge.jpg",
+          "credit": "Type specimen",
+          "license": "CC BY-SA 3.0",
+          "alt": "Wall of signboards at Ebisu Bridge on the Dōtonbori Canal"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Ebisu_Bridge.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "osaka-after-hours",
+      "routeId": "osaka-after-hours-route",
+      "stopId": "osaka-after-hours-stop-2",
+      "stopName": "Tombori Riverwalk",
+      "imageTitle": "File:Tombori River Walk01.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Tombori_River_Walk01.JPG/1280px-Tombori_River_Walk01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tombori_River_Walk01.JPG",
+        "credit": "Kansai explorer",
+        "license": "CC BY 3.0",
+        "alt": "Tombori River Walk along the Dotonbori canal in Osaka.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tombori_River_Walk01.JPG",
+          "credit": "Kansai explorer",
+          "license": "CC BY 3.0",
+          "alt": "Tombori River Walk along the Dotonbori canal in Osaka."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tombori_River_Walk01.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "otaru-by-lamplight",
+      "routeId": "otaru-historic-center-lamplight-walk",
+      "stopId": "otaru-triangle-market",
+      "stopName": "Otaru Triangle Market",
+      "imageTitle": "File:海鮮丼, 八角魚生魚片, 滝波食堂, 滝波商店, 北のどんぶり屋, 三角市場, 小樽, 北海道, 日本, Otaru, Hokkaido, Japan, おたるし, ほっかいどう, にっぽん, にほん (40849039683).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/%E6%B5%B7%E9%AE%AE%E4%B8%BC%2C_%E5%85%AB%E8%A7%92%E9%AD%9A%E7%94%9F%E9%AD%9A%E7%89%87%2C_%E6%BB%9D%E6%B3%A2%E9%A3%9F%E5%A0%82%2C_%E6%BB%9D%E6%B3%A2%E5%95%86%E5%BA%97%2C_%E5%8C%97%E3%81%AE%E3%81%A9%E3%82%93%E3%81%B6%E3%82%8A%E5%B1%8B%2C_%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4%2C_%E5%B0%8F%E6%A8%BD%2C_%E5%8C%97%E6%B5%B7%E9%81%93%2C_%E6%97%A5%E6%9C%AC%2C_Otaru%2C_Hokkaido%2C_Japan%2C_%E3%81%8A%E3%81%9F%E3%82%8B%E3%81%97%2C_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86%2C_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93%2C_%E3%81%AB%E3%81%BB%E3%82%93_%2840849039683%29.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:%E6%B5%B7%E9%AE%AE%E4%B8%BC,_%E5%85%AB%E8%A7%92%E9%AD%9A%E7%94%9F%E9%AD%9A%E7%89%87,_%E6%BB%9D%E6%B3%A2%E9%A3%9F%E5%A0%82,_%E6%BB%9D%E6%B3%A2%E5%95%86%E5%BA%97,_%E5%8C%97%E3%81%AE%E3%81%A9%E3%82%93%E3%81%B6%E3%82%8A%E5%B1%8B,_%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4,_%E5%B0%8F%E6%A8%BD,_%E5%8C%97%E6%B5%B7%E9%81%93,_%E6%97%A5%E6%9C%AC,_Otaru,_Hokkaido,_Japan,_%E3%81%8A%E3%81%9F%E3%82%8B%E3%81%97,_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86,_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93,_%E3%81%AB%E3%81%BB%E3%82%93_(40849039683).jpg",
+        "credit": "bryan...",
+        "license": "CC BY-SA 2.0",
+        "alt": "海鮮丼, 八角魚生魚片, 滝波食堂, 滝波商店, 北のどんぶり屋, 三角市場, 小樽, 北海道, 日本, Otaru, Hokkaido, Japan, おたるし, ほっかいどう, にっぽん, にほん",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:%E6%B5%B7%E9%AE%AE%E4%B8%BC,_%E5%85%AB%E8%A7%92%E9%AD%9A%E7%94%9F%E9%AD%9A%E7%89%87,_%E6%BB%9D%E6%B3%A2%E9%A3%9F%E5%A0%82,_%E6%BB%9D%E6%B3%A2%E5%95%86%E5%BA%97,_%E5%8C%97%E3%81%AE%E3%81%A9%E3%82%93%E3%81%B6%E3%82%8A%E5%B1%8B,_%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4,_%E5%B0%8F%E6%A8%BD,_%E5%8C%97%E6%B5%B7%E9%81%93,_%E6%97%A5%E6%9C%AC,_Otaru,_Hokkaido,_Japan,_%E3%81%8A%E3%81%9F%E3%82%8B%E3%81%97,_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86,_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93,_%E3%81%AB%E3%81%BB%E3%82%93_(40849039683).jpg",
+          "credit": "bryan...",
+          "license": "CC BY-SA 2.0",
+          "alt": "海鮮丼, 八角魚生魚片, 滝波食堂, 滝波商店, 北のどんぶり屋, 三角市場, 小樽, 北海道, 日本, Otaru, Hokkaido, Japan, おたるし, ほっかいどう, にっぽん, にほん"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:%E6%B5%B7%E9%AE%AE%E4%B8%BC,_%E5%85%AB%E8%A7%92%E9%AD%9A%E7%94%9F%E9%AD%9A%E7%89%87,_%E6%BB%9D%E6%B3%A2%E9%A3%9F%E5%A0%82,_%E6%BB%9D%E6%B3%A2%E5%95%86%E5%BA%97,_%E5%8C%97%E3%81%AE%E3%81%A9%E3%82%93%E3%81%B6%E3%82%8A%E5%B1%8B,_%E4%B8%89%E8%A7%92%E5%B8%82%E5%A0%B4,_%E5%B0%8F%E6%A8%BD,_%E5%8C%97%E6%B5%B7%E9%81%93,_%E6%97%A5%E6%9C%AC,_Otaru,_Hokkaido,_Japan,_%E3%81%8A%E3%81%9F%E3%82%8B%E3%81%97,_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86,_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93,_%E3%81%AB%E3%81%BB%E3%82%93_(40849039683).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "otaru-by-lamplight",
+      "routeId": "otaru-historic-center-lamplight-walk",
+      "stopId": "otaru-temiya-line",
+      "stopName": "Former JNR Temiya Line",
+      "imageTitle": "File:手宮線跡 Former Temiya Line, Otaru 2015-02-27 (16099896034).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/%E6%89%8B%E5%AE%AE%E7%B7%9A%E8%B7%A1_Former_Temiya_Line%2C_Otaru_2015-02-27_%2816099896034%29.jpg/1280px-%E6%89%8B%E5%AE%AE%E7%B7%9A%E8%B7%A1_Former_Temiya_Line%2C_Otaru_2015-02-27_%2816099896034%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:%E6%89%8B%E5%AE%AE%E7%B7%9A%E8%B7%A1_Former_Temiya_Line,_Otaru_2015-02-27_(16099896034).jpg",
+        "credit": "bryan...",
+        "license": "CC BY-SA 2.0",
+        "alt": "Former Temya Line which is the first railway in Hokkaidō, Otaru, Hokkaido, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:%E6%89%8B%E5%AE%AE%E7%B7%9A%E8%B7%A1_Former_Temiya_Line,_Otaru_2015-02-27_(16099896034).jpg",
+          "credit": "bryan...",
+          "license": "CC BY-SA 2.0",
+          "alt": "Former Temya Line which is the first railway in Hokkaidō, Otaru, Hokkaido, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:%E6%89%8B%E5%AE%AE%E7%B7%9A%E8%B7%A1_Former_Temiya_Line,_Otaru_2015-02-27_(16099896034).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "otaru-by-lamplight",
+      "routeId": "otaru-historic-center-lamplight-walk",
+      "stopId": "otaru-canal",
+      "stopName": "Otaru Canal",
+      "imageTitle": "File:Otaru canal.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Otaru_canal.jpg/1280px-Otaru_canal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Otaru_canal.jpg",
+        "credit": "欅 (Keyaki)",
+        "license": "CC BY-SA 3.0",
+        "alt": "小樽運河（北海道小樽市）",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Otaru_canal.jpg",
+          "credit": "欅 (Keyaki)",
+          "license": "CC BY-SA 3.0",
+          "alt": "小樽運河（北海道小樽市）"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Otaru_canal.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "otaru-by-lamplight",
+      "routeId": "otaru-historic-center-lamplight-walk",
+      "stopId": "otaru-orgel-doh",
+      "stopName": "Otaru Music Box Museum",
+      "imageTitle": "File:Otaru Music Box Museum interior.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Otaru_Music_Box_Museum_interior.jpg/1280px-Otaru_Music_Box_Museum_interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Otaru_Music_Box_Museum_interior.jpg",
+        "credit": "Liandrei",
+        "license": "CC BY-SA 4.0",
+        "alt": "Interior of the Otaru Music Box Museum",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Otaru_Music_Box_Museum_interior.jpg",
+          "credit": "Liandrei",
+          "license": "CC BY-SA 4.0",
+          "alt": "Interior of the Otaru Music Box Museum"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Otaru_Music_Box_Museum_interior.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "otaru-by-lamplight",
+      "routeId": "otaru-historic-center-lamplight-walk",
+      "stopId": "otaru-kitaichi-glass",
+      "stopName": "Kitaichi Glass Building No.3",
+      "imageTitle": "File:八段冰淇淋, 8段冰淇淋, 北一硝子三號館, 小樽, 北海道, 日本, Kitaichi glass, Otaru, Hokkaido, Japan, 北一硝子三号館テラス, おたるし, ほっかいどう, にっぽん, にほん (33938300028).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/%E5%85%AB%E6%AE%B5%E5%86%B0%E6%B7%87%E6%B7%8B%2C_8%E6%AE%B5%E5%86%B0%E6%B7%87%E6%B7%8B%2C_%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90%E4%B8%89%E8%99%9F%E9%A4%A8%2C_%E5%B0%8F%E6%A8%BD%2C_%E5%8C%97%E6%B5%B7%E9%81%93%2C_%E6%97%A5%E6%9C%AC%2C_Kitaichi_glass%2C_Otaru%2C_Hokkaido%2C_Japan%2C_%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90%E4%B8%89%E5%8F%B7%E9%A4%A8%E3%83%86%E3%83%A9%E3%82%B9%2C_%E3%81%8A%E3%81%9F%E3%82%8B%E3%81%97%2C_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86%2C_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93%2C_%E3%81%AB%E3%81%BB%E3%82%93_%2833938300028%29.jpg/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%85%AB%E6%AE%B5%E5%86%B0%E6%B7%87%E6%B7%8B,_8%E6%AE%B5%E5%86%B0%E6%B7%87%E6%B7%8B,_%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90%E4%B8%89%E8%99%9F%E9%A4%A8,_%E5%B0%8F%E6%A8%BD,_%E5%8C%97%E6%B5%B7%E9%81%93,_%E6%97%A5%E6%9C%AC,_Kitaichi_glass,_Otaru,_Hokkaido,_Japan,_%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90%E4%B8%89%E5%8F%B7%E9%A4%A8%E3%83%86%E3%83%A9%E3%82%B9,_%E3%81%8A%E3%81%9F%E3%82%8B%E3%81%97,_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86,_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93,_%E3%81%AB%E3%81%BB%E3%82%93_(33938300028).jpg",
+        "credit": "bryan...",
+        "license": "CC BY-SA 2.0",
+        "alt": "八段冰淇淋, 8段冰淇淋, 北一硝子三號館, 小樽, 北海道, 日本, Kitaichi glass, Otaru, Hokkaido, Japan, 北一硝子三号館テラス, おたるし, ほっかいどう, にっぽん, にほん",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:%E5%85%AB%E6%AE%B5%E5%86%B0%E6%B7%87%E6%B7%8B,_8%E6%AE%B5%E5%86%B0%E6%B7%87%E6%B7%8B,_%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90%E4%B8%89%E8%99%9F%E9%A4%A8,_%E5%B0%8F%E6%A8%BD,_%E5%8C%97%E6%B5%B7%E9%81%93,_%E6%97%A5%E6%9C%AC,_Kitaichi_glass,_Otaru,_Hokkaido,_Japan,_%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90%E4%B8%89%E5%8F%B7%E9%A4%A8%E3%83%86%E3%83%A9%E3%82%B9,_%E3%81%8A%E3%81%9F%E3%82%8B%E3%81%97,_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86,_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93,_%E3%81%AB%E3%81%BB%E3%82%93_(33938300028).jpg",
+          "credit": "bryan...",
+          "license": "CC BY-SA 2.0",
+          "alt": "八段冰淇淋, 8段冰淇淋, 北一硝子三號館, 小樽, 北海道, 日本, Kitaichi glass, Otaru, Hokkaido, Japan, 北一硝子三号館テラス, おたるし, ほっかいどう, にっぽん, にほん"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:%E5%85%AB%E6%AE%B5%E5%86%B0%E6%B7%87%E6%B7%8B,_8%E6%AE%B5%E5%86%B0%E6%B7%87%E6%B7%8B,_%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90%E4%B8%89%E8%99%9F%E9%A4%A8,_%E5%B0%8F%E6%A8%BD,_%E5%8C%97%E6%B5%B7%E9%81%93,_%E6%97%A5%E6%9C%AC,_Kitaichi_glass,_Otaru,_Hokkaido,_Japan,_%E5%8C%97%E4%B8%80%E7%A1%9D%E5%AD%90%E4%B8%89%E5%8F%B7%E9%A4%A8%E3%83%86%E3%83%A9%E3%82%B9,_%E3%81%8A%E3%81%9F%E3%82%8B%E3%81%97,_%E3%81%BB%E3%81%A3%E3%81%8B%E3%81%84%E3%81%A9%E3%81%86,_%E3%81%AB%E3%81%A3%E3%81%BD%E3%82%93,_%E3%81%AB%E3%81%BB%E3%82%93_(33938300028).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "otaru-by-lamplight",
+      "routeId": "otaru-historic-center-lamplight-walk",
+      "stopId": "otaru-art-base",
+      "stopName": "Otaru Art Base",
+      "imageTitle": "File:Nitori Otaru Art Base 03.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nitori_Otaru_Art_Base_03.jpg/1280px-Nitori_Otaru_Art_Base_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Nitori_Otaru_Art_Base_03.jpg",
+        "credit": "Braveheart",
+        "license": "CC BY-SA 4.0",
+        "alt": "Stained Glass museum of the Nitori Otaru Art Base in Otaru, Hokkaido.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nitori_Otaru_Art_Base_03.jpg",
+          "credit": "Braveheart",
+          "license": "CC BY-SA 4.0",
+          "alt": "Stained Glass museum of the Nitori Otaru Art Base in Otaru, Hokkaido."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Nitori_Otaru_Art_Base_03.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oze-s-open-wetlands",
+      "routeId": "oze-s-open-wetlands-route",
+      "stopId": "oze-s-open-wetlands-stop-1",
+      "stopName": "Ushikubi Junction",
+      "imageTitle": "File:Ozegahara 24.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Ozegahara_24.jpg/1280px-Ozegahara_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Ozegahara_24.jpg",
+        "credit": "?64",
+        "license": "CC BY 3.0",
+        "alt": "Wetland landscape at Ozegahara in Oze, Gunma.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Ozegahara_24.jpg",
+          "credit": "?64",
+          "license": "CC BY 3.0",
+          "alt": "Wetland landscape at Ozegahara in Oze, Gunma."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Ozegahara_24.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "oze-s-open-wetlands",
+      "routeId": "oze-s-open-wetlands-route",
+      "stopId": "oze-s-open-wetlands-stop-2",
+      "stopName": "Ryugu watercourse",
+      "imageTitle": "File:Yoppi River 01.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Yoppi_River_01.jpg/1280px-Yoppi_River_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Yoppi_River_01.jpg",
+        "credit": "?64",
+        "license": "CC BY 3.0",
+        "alt": "Yoppi River flowing through Ozegahara in Oze, Niigata.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Yoppi_River_01.jpg",
+          "credit": "?64",
+          "license": "CC BY 3.0",
+          "alt": "Yoppi River flowing through Ozegahara in Oze, Niigata."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Yoppi_River_01.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "sado-island-s-wild-coast",
+      "routeId": "sado-island-s-wild-coast-route",
+      "stopId": "sado-island-s-wild-coast-stop-1",
+      "stopName": "Kitazawa Flotation Plant",
+      "imageTitle": "File:Kitazawa Flotation Plant ac (2).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Kitazawa_Flotation_Plant_ac_%282%29.jpg/1280px-Kitazawa_Flotation_Plant_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Kitazawa_Flotation_Plant_ac_(2).jpg",
+        "credit": "Asturio Cantabrio",
+        "license": "CC BY-SA 4.0",
+        "alt": "新潟県佐渡市の佐渡金山にある北沢浮遊選鉱場跡。",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Kitazawa_Flotation_Plant_ac_(2).jpg",
+          "credit": "Asturio Cantabrio",
+          "license": "CC BY-SA 4.0",
+          "alt": "新潟県佐渡市の佐渡金山にある北沢浮遊選鉱場跡。"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Kitazawa_Flotation_Plant_ac_(2).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "sado-island-s-wild-coast",
+      "routeId": "sado-island-s-wild-coast-route",
+      "stopId": "sado-island-s-wild-coast-stop-2",
+      "stopName": "Sado Gold Mine",
+      "imageTitle": "File:Sado gold mine Doyu Tunnel.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Sado_gold_mine_Doyu_Tunnel.jpg/1280px-Sado_gold_mine_Doyu_Tunnel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Sado_gold_mine_Doyu_Tunnel.jpg",
+        "credit": "amaknow",
+        "license": "CC BY 2.0",
+        "alt": "佐渡金山 道遊抗",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Sado_gold_mine_Doyu_Tunnel.jpg",
+          "credit": "amaknow",
+          "license": "CC BY 2.0",
+          "alt": "佐渡金山 道遊抗"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Sado_gold_mine_Doyu_Tunnel.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "shimanami-kaido-by-bicycle",
+      "routeId": "shimanami-kaido-by-bicycle-route",
+      "stopId": "shimanami-kaido-by-bicycle-stop-1",
+      "stopName": "Mukaishima ferry",
+      "imageTitle": "File:Onomichi Station Pier of Mukaishima Ferry.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Onomichi_Station_Pier_of_Mukaishima_Ferry.jpg/1280px-Onomichi_Station_Pier_of_Mukaishima_Ferry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Onomichi_Station_Pier_of_Mukaishima_Ferry.jpg",
+        "credit": "そらみみ",
+        "license": "CC BY-SA 4.0",
+        "alt": "向島運航・尾道駅前渡船のりば",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Onomichi_Station_Pier_of_Mukaishima_Ferry.jpg",
+          "credit": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "alt": "向島運航・尾道駅前渡船のりば"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Onomichi_Station_Pier_of_Mukaishima_Ferry.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "shimanami-kaido-by-bicycle",
+      "routeId": "shimanami-kaido-by-bicycle-route",
+      "stopId": "shimanami-kaido-by-bicycle-stop-2",
+      "stopName": "Innoshima Bridge viewpoint",
+      "imageTitle": "File:Shimanami Expressway from Innoshima Bridge Bus Stop at night.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Shimanami_Expressway_from_Innoshima_Bridge_Bus_Stop_at_night.jpg/1280px-Shimanami_Expressway_from_Innoshima_Bridge_Bus_Stop_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Shimanami_Expressway_from_Innoshima_Bridge_Bus_Stop_at_night.jpg",
+        "credit": "そらみみ",
+        "license": "CC BY-SA 4.0",
+        "alt": "因島大橋バス停より望む西瀬戸自動車道",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Shimanami_Expressway_from_Innoshima_Bridge_Bus_Stop_at_night.jpg",
+          "credit": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "alt": "因島大橋バス停より望む西瀬戸自動車道"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Shimanami_Expressway_from_Innoshima_Bridge_Bus_Stop_at_night.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "shimanami-kaido-by-bicycle",
+      "routeId": "shimanami-kaido-by-bicycle-route",
+      "stopId": "shimanami-kaido-by-bicycle-stop-3",
+      "stopName": "Setoda and Ikuchijima",
+      "imageTitle": "File:At a welcome barbecue by Japan Air Lines for the first World Children's Haiku Contest, Setoda, Ikuchijima Island, August 22, 1990.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/At_a_welcome_barbecue_by_Japan_Air_Lines_for_the_first_World_Children%27s_Haiku_Contest%2C_Setoda%2C_Ikuchijima_Island%2C_August_22%2C_1990.jpg/1280px-At_a_welcome_barbecue_by_Japan_Air_Lines_for_the_first_World_Children%27s_Haiku_Contest%2C_Setoda%2C_Ikuchijima_Island%2C_August_22%2C_1990.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:At_a_welcome_barbecue_by_Japan_Air_Lines_for_the_first_World_Children%27s_Haiku_Contest,_Setoda,_Ikuchijima_Island,_August_22,_1990.jpg",
+        "credit": "Spunir",
+        "license": "CC0",
+        "alt": "At a welcome barbecue as a judge for Japan Airlines first World Children's Haiku Contest, Setoda, Ikuchijima Island, Aug 22, 1990",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:At_a_welcome_barbecue_by_Japan_Air_Lines_for_the_first_World_Children%27s_Haiku_Contest,_Setoda,_Ikuchijima_Island,_August_22,_1990.jpg",
+          "credit": "Spunir",
+          "license": "CC0",
+          "alt": "At a welcome barbecue as a judge for Japan Airlines first World Children's Haiku Contest, Setoda, Ikuchijima Island, Aug 22, 1990"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:At_a_welcome_barbecue_by_Japan_Air_Lines_for_the_first_World_Children%27s_Haiku_Contest,_Setoda,_Ikuchijima_Island,_August_22,_1990.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "shirakawa-go-under-steep-roofs",
+      "routeId": "shirakawa-go-under-steep-roofs-route",
+      "stopId": "shirakawa-go-under-steep-roofs-stop-1",
+      "stopName": "Wada House and Kanda House",
+      "imageTitle": "File:Attic of Kanda House.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Attic_of_Kanda_House.JPG/1280px-Attic_of_Kanda_House.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Attic_of_Kanda_House.JPG",
+        "credit": "Wiiii",
+        "license": "CC BY-SA 3.0",
+        "alt": "Attic of Wada House in Historic Villages of Shirakawa-go",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Attic_of_Kanda_House.JPG",
+          "credit": "Wiiii",
+          "license": "CC BY-SA 3.0",
+          "alt": "Attic of Wada House in Historic Villages of Shirakawa-go"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Attic_of_Kanda_House.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "shirakawa-go-under-steep-roofs",
+      "routeId": "shirakawa-go-under-steep-roofs-route",
+      "stopId": "shirakawa-go-under-steep-roofs-stop-2",
+      "stopName": "Shiroyama Viewpoint",
+      "imageTitle": "File:Danbo has visited Shiroyama viewpoint (12723142195).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Danbo_has_visited_Shiroyama_viewpoint_%2812723142195%29.jpg/1280px-Danbo_has_visited_Shiroyama_viewpoint_%2812723142195%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Danbo_has_visited_Shiroyama_viewpoint_(12723142195).jpg",
+        "credit": "Takashi Hososhima from Tokyo, Japan",
+        "license": "CC BY-SA 2.0",
+        "alt": "Danbo has visited Shiroyama viewpoint and enjoy the view of Shirakawago. ダンボーくんたちは城山展望台からの白川郷の眺めを楽しみました。 [ Nikon D4, Nikon AF-S NIKKOR 28mm f/1.4G, f/16.0, 1/250sec, ISO100, Lightroom 5 ]",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Danbo_has_visited_Shiroyama_viewpoint_(12723142195).jpg",
+          "credit": "Takashi Hososhima from Tokyo, Japan",
+          "license": "CC BY-SA 2.0",
+          "alt": "Danbo has visited Shiroyama viewpoint and enjoy the view of Shirakawago. ダンボーくんたちは城山展望台からの白川郷の眺めを楽しみました。 [ Nikon D4, Nikon AF-S NIKKOR 28mm f/1.4G, f/16.0, 1/250sec, ISO100, Lightroom 5 ]"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Danbo_has_visited_Shiroyama_viewpoint_(12723142195).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "shiretoko-s-wild-edge",
+      "routeId": "shiretoko-five-lakes-field-day",
+      "stopId": "shiretoko-boardwalk",
+      "stopName": "Elevated wooden boardwalk",
+      "imageTitle": "File:Shiretoko Five Lakes, Hokkaido; October 2018 (03).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Shiretoko_Five_Lakes%2C_Hokkaido%3B_October_2018_%2803%29.jpg/1280px-Shiretoko_Five_Lakes%2C_Hokkaido%3B_October_2018_%2803%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Shiretoko_Five_Lakes,_Hokkaido;_October_2018_(03).jpg",
+        "credit": "Sei F",
+        "license": "CC BY-SA 2.0",
+        "alt": "Shiretoko Five Lakes are a set of five small lakes formed long ago by the eruption of nearby Mount Io and fed by underground springs. An 800 meter long, wooden elevated boardwalk was recently built from the parking lot to the first lake, which allows visitors to enjoy views of the lake, the Sea of Okhotsk and the surrounding mountains without damaging the fragile ecosystem. The boardwalk is free to use, wheelchair accessible and open for the entire season from late April to late November.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Shiretoko_Five_Lakes,_Hokkaido;_October_2018_(03).jpg",
+          "credit": "Sei F",
+          "license": "CC BY-SA 2.0",
+          "alt": "Shiretoko Five Lakes are a set of five small lakes formed long ago by the eruption of nearby Mount Io and fed by underground springs. An 800 meter long, wooden elevated boardwalk was recently built from the parking lot to the first lake, which allows visitors to enjoy views of the lake, the Sea of Okhotsk and the surrounding mountains without damaging the fragile ecosystem. The boardwalk is free to use, wheelchair accessible and open for the entire season from late April to late November."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Shiretoko_Five_Lakes,_Hokkaido;_October_2018_(03).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "shiretoko-s-wild-edge",
+      "routeId": "shiretoko-five-lakes-field-day",
+      "stopId": "shiretoko-first-lake",
+      "stopName": "First Lake viewpoint",
+      "imageTitle": "File:First Lake Viewpoint - panoramio.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/First_Lake_Viewpoint_-_panoramio.jpg/1280px-First_Lake_Viewpoint_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:First_Lake_Viewpoint_-_panoramio.jpg",
+        "credit": "Kiwibirdman",
+        "license": "CC BY 3.0",
+        "alt": "First Lake Viewpoint",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:First_Lake_Viewpoint_-_panoramio.jpg",
+          "credit": "Kiwibirdman",
+          "license": "CC BY 3.0",
+          "alt": "First Lake Viewpoint"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:First_Lake_Viewpoint_-_panoramio.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "shiretoko-s-wild-edge",
+      "routeId": "shiretoko-five-lakes-field-day",
+      "stopId": "shiretoko-ground-trail",
+      "stopName": "Ground trail entrance",
+      "imageTitle": "File:Former Delta Street multi use trail entrance at Floral Crescent, Kitchener, Ontario, January 2023.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Former_Delta_Street_multi_use_trail_entrance_at_Floral_Crescent%2C_Kitchener%2C_Ontario%2C_January_2023.jpg/1280px-Former_Delta_Street_multi_use_trail_entrance_at_Floral_Crescent%2C_Kitchener%2C_Ontario%2C_January_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Former_Delta_Street_multi_use_trail_entrance_at_Floral_Crescent,_Kitchener,_Ontario,_January_2023.jpg",
+        "credit": "Julius177",
+        "license": "CC BY-SA 4.0",
+        "alt": "Multi use trail replacing the former Delta Street in Kitchener, Ontario, Canada. Photo taken in January 2023. Although there is snow on the ground, the trail has been cleared.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Former_Delta_Street_multi_use_trail_entrance_at_Floral_Crescent,_Kitchener,_Ontario,_January_2023.jpg",
+          "credit": "Julius177",
+          "license": "CC BY-SA 4.0",
+          "alt": "Multi use trail replacing the former Delta Street in Kitchener, Ontario, Canada. Photo taken in January 2023. Although there is snow on the ground, the trail has been cleared."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Former_Delta_Street_multi_use_trail_entrance_at_Floral_Crescent,_Kitchener,_Ontario,_January_2023.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "takayama-s-old-quarter",
+      "routeId": "takayama-s-old-quarter-route",
+      "stopId": "takayama-s-old-quarter-stop-1",
+      "stopName": "Sanmachi Suji old town",
+      "imageTitle": "File:Shops in one of the three main streets in Sanmachi-Suji (6156040666).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Shops_in_one_of_the_three_main_streets_in_Sanmachi-Suji_%286156040666%29.jpg/1280px-Shops_in_one_of_the_three_main_streets_in_Sanmachi-Suji_%286156040666%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Shops_in_one_of_the_three_main_streets_in_Sanmachi-Suji_(6156040666).jpg",
+        "credit": "Maarten Heerlien",
+        "license": "CC BY 2.0",
+        "alt": "Traditional shops on one of the three historic streets of Sanmachi-Suji in Takayama.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Shops_in_one_of_the_three_main_streets_in_Sanmachi-Suji_(6156040666).jpg",
+          "credit": "Maarten Heerlien",
+          "license": "CC BY 2.0",
+          "alt": "Traditional shops on one of the three historic streets of Sanmachi-Suji in Takayama."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Shops_in_one_of_the_three_main_streets_in_Sanmachi-Suji_(6156040666).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "takayama-s-old-quarter",
+      "routeId": "takayama-s-old-quarter-route",
+      "stopId": "takayama-s-old-quarter-stop-2",
+      "stopName": "Miyagawa Morning Market",
+      "imageTitle": "File:Miyagawa Morning Market 20150123.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Miyagawa_Morning_Market_20150123.JPG/1280px-Miyagawa_Morning_Market_20150123.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Miyagawa_Morning_Market_20150123.JPG",
+        "credit": "そらみみ",
+        "license": "CC BY-SA 4.0",
+        "alt": "岐阜県高山市・宮川朝市",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Miyagawa_Morning_Market_20150123.JPG",
+          "credit": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "alt": "岐阜県高山市・宮川朝市"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Miyagawa_Morning_Market_20150123.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "tazawa-s-clear-blue",
+      "routeId": "tazawa-s-clear-blue-route",
+      "stopId": "tazawa-s-clear-blue-stop-1",
+      "stopName": "Goza-no-ishi Shrine",
+      "imageTitle": "File:P8220545 Goza-ishi.JPG",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/P8220545_Goza-ishi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "https://commons.wikimedia.org/wiki/File:P8220545_Goza-ishi.JPG",
+        "credit": "user:KMR",
+        "license": "CC BY-SA 3.0",
+        "alt": "御座石",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:P8220545_Goza-ishi.JPG",
+          "credit": "user:KMR",
+          "license": "CC BY-SA 3.0",
+          "alt": "御座石"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:P8220545_Goza-ishi.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "tazawa-s-clear-blue",
+      "routeId": "tazawa-s-clear-blue-route",
+      "stopId": "tazawa-s-clear-blue-stop-2",
+      "stopName": "Katamae Park",
+      "imageTitle": "File:Lake Tazawa 20170709.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Lake_Tazawa_20170709.jpg/1280px-Lake_Tazawa_20170709.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Lake_Tazawa_20170709.jpg",
+        "credit": "??",
+        "license": "CC BY-SA 4.0",
+        "alt": "Lake Tazawa and Mount Akita-Komagatake from the lakeside area in Semboku, Akita.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Lake_Tazawa_20170709.jpg",
+          "credit": "??",
+          "license": "CC BY-SA 4.0",
+          "alt": "Lake Tazawa and Mount Akita-Komagatake from the lakeside area in Semboku, Akita."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Lake_Tazawa_20170709.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "the-blue-of-biei",
+      "routeId": "the-blue-of-biei-scenic-drive",
+      "stopId": "biei-shirogane-blue-pond",
+      "stopName": "Shirogane Blue Pond",
+      "imageTitle": "File:Shirogane Blue Pond by night, April 2023 02.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Shirogane_Blue_Pond_by_night%2C_April_2023_02.jpg/1280px-Shirogane_Blue_Pond_by_night%2C_April_2023_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Shirogane_Blue_Pond_by_night,_April_2023_02.jpg",
+        "credit": "Calistemon",
+        "license": "CC BY-SA 4.0",
+        "alt": "The Shirogane Blue Pond by night, Hokkaido, Japan, illuminated by some temporary area lighting.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Shirogane_Blue_Pond_by_night,_April_2023_02.jpg",
+          "credit": "Calistemon",
+          "license": "CC BY-SA 4.0",
+          "alt": "The Shirogane Blue Pond by night, Hokkaido, Japan, illuminated by some temporary area lighting."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Shirogane_Blue_Pond_by_night,_April_2023_02.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "the-blue-of-biei",
+      "routeId": "the-blue-of-biei-scenic-drive",
+      "stopId": "biei-shikisai-no-oka",
+      "stopName": "Shikisai-no-oka",
+      "imageTitle": "File:Hokkaido - Biei, Shikisai no Oka, july 2007 (941993652).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Hokkaido_-_Biei%2C_Shikisai_no_Oka%2C_july_2007_%28941993652%29.jpg/1280px-Hokkaido_-_Biei%2C_Shikisai_no_Oka%2C_july_2007_%28941993652%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Hokkaido_-_Biei,_Shikisai_no_Oka,_july_2007_(941993652).jpg",
+        "credit": "yoppy from Kawasaki, Kanagawa, Japan",
+        "license": "CC BY 2.0",
+        "alt": "Vue des jardins panoramiques Shikisai no Oka à Biei, dans l'île de Hokkaidō (Japon).",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Hokkaido_-_Biei,_Shikisai_no_Oka,_july_2007_(941993652).jpg",
+          "credit": "yoppy from Kawasaki, Kanagawa, Japan",
+          "license": "CC BY 2.0",
+          "alt": "Vue des jardins panoramiques Shikisai no Oka à Biei, dans l'île de Hokkaidō (Japon)."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Hokkaido_-_Biei,_Shikisai_no_Oka,_july_2007_(941993652).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "the-blue-of-biei",
+      "routeId": "the-blue-of-biei-scenic-drive",
+      "stopId": "biei-zerubu-no-oka",
+      "stopName": "Zerubu-no-Oka",
+      "imageTitle": "File:Zerubu no oka.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Zerubu_no_oka.jpg/1280px-Zerubu_no_oka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Zerubu_no_oka.jpg",
+        "credit": "おさ",
+        "license": "CC BY-SA 3.0",
+        "alt": "Zerubu no oka",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Zerubu_no_oka.jpg",
+          "credit": "おさ",
+          "license": "CC BY-SA 3.0",
+          "alt": "Zerubu no oka"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Zerubu_no_oka.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "the-blue-of-biei",
+      "routeId": "the-blue-of-biei-scenic-drive",
+      "stopId": "biei-asahikawa-station",
+      "stopName": "JR Asahikawa Station",
+      "imageTitle": "File:HBC Asahikawa Broadcasting Station and JR Asahikawa Station 20070514.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/HBC_Asahikawa_Broadcasting_Station_and_JR_Asahikawa_Station_20070514.jpg/1280px-HBC_Asahikawa_Broadcasting_Station_and_JR_Asahikawa_Station_20070514.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:HBC_Asahikawa_Broadcasting_Station_and_JR_Asahikawa_Station_20070514.jpg",
+        "credit": "Uploader; Vantey",
+        "license": "Public domain",
+        "alt": "北海道旅客鉄道 旭川駅 ・北海道放送 旭川放送局 俯瞰 （北海道旭川市宮下通） 藤田観光ワシントンホテル旭川 の客室より撮影。 2007年5月当時の駅高架化工事の進捗状況が駅舎越しにわかる。",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:HBC_Asahikawa_Broadcasting_Station_and_JR_Asahikawa_Station_20070514.jpg",
+          "credit": "Uploader; Vantey",
+          "license": "Public domain",
+          "alt": "北海道旅客鉄道 旭川駅 ・北海道放送 旭川放送局 俯瞰 （北海道旭川市宮下通） 藤田観光ワシントンホテル旭川 の客室より撮影。 2007年5月当時の駅高架化工事の進捗状況が駅舎越しにわかる。"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:HBC_Asahikawa_Broadcasting_Station_and_JR_Asahikawa_Station_20070514.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "the-iya-valley",
+      "routeId": "the-iya-valley-route",
+      "stopId": "the-iya-valley-stop-1",
+      "stopName": "Iya Kazurabashi",
+      "imageTitle": "File:Iya Kazurabashi-4.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Iya_Kazurabashi-4.jpg/1280px-Iya_Kazurabashi-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Iya_Kazurabashi-4.jpg",
+        "credit": "ume-y",
+        "license": "CC BY 2.0",
+        "alt": "祖谷の蔓橋 Iya Kazurabashi",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Iya_Kazurabashi-4.jpg",
+          "credit": "ume-y",
+          "license": "CC BY 2.0",
+          "alt": "祖谷の蔓橋 Iya Kazurabashi"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Iya_Kazurabashi-4.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "the-iya-valley",
+      "routeId": "the-iya-valley-route",
+      "stopId": "the-iya-valley-stop-2",
+      "stopName": "Biwa Falls",
+      "imageTitle": "File:150503 Biwa Falls Iya Valley Miyoshi Tokushima pref Japan01s3.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg/1280px-150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Biwa_Falls in Iya Valley, Miyoshi , Tokushima prefecture , Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg",
+          "credit": "663highland",
+          "license": "CC BY 2.5",
+          "alt": "Biwa_Falls in Iya Valley, Miyoshi , Tokushima prefecture , Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "the-iya-valley",
+      "routeId": "the-iya-valley-route",
+      "stopId": "the-iya-valley-stop-3",
+      "stopName": "Peeing Boy viewpoint",
+      "imageTitle": "File:Shoubenkozou2014iya.jpg",
+      "photo": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Shoubenkozou2014iya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "source": "https://commons.wikimedia.org/wiki/File:Shoubenkozou2014iya.jpg",
+        "credit": "????",
+        "license": "CC BY-SA 4.0",
+        "alt": "The Peeing Boy statue above Iya Valley in Tokushima.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Shoubenkozou2014iya.jpg",
+          "credit": "????",
+          "license": "CC BY-SA 4.0",
+          "alt": "The Peeing Boy statue above Iya Valley in Tokushima."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Shoubenkozou2014iya.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "the-three-mountains-of-dewa",
+      "routeId": "the-three-mountains-of-dewa-route",
+      "stopId": "the-three-mountains-of-dewa-stop-1",
+      "stopName": "Five-Storied Pagoda",
+      "imageTitle": "File:2023.04.23 Five-storied Pagoda, Haguro-san 2.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/2023.04.23_Five-storied_Pagoda%2C_Haguro-san_2.jpg/1280px-2023.04.23_Five-storied_Pagoda%2C_Haguro-san_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:2023.04.23_Five-storied_Pagoda,_Haguro-san_2.jpg",
+        "credit": "YedidyaPopper",
+        "license": "CC BY 4.0",
+        "alt": "Five-storied Pagoda, Haguro-san, Dewa Sanzan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:2023.04.23_Five-storied_Pagoda,_Haguro-san_2.jpg",
+          "credit": "YedidyaPopper",
+          "license": "CC BY 4.0",
+          "alt": "Five-storied Pagoda, Haguro-san, Dewa Sanzan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:2023.04.23_Five-storied_Pagoda,_Haguro-san_2.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "the-three-mountains-of-dewa",
+      "routeId": "the-three-mountains-of-dewa-route",
+      "stopId": "the-three-mountains-of-dewa-stop-2",
+      "stopName": "Sanjin Gosaiden",
+      "imageTitle": "File:Sanjin Gassaiden, Dewa Sanzan Shrine.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sanjin_Gassaiden%2C_Dewa_Sanzan_Shrine.jpg/1280px-Sanjin_Gassaiden%2C_Dewa_Sanzan_Shrine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Sanjin_Gassaiden,_Dewa_Sanzan_Shrine.jpg",
+        "credit": "??",
+        "license": "CC BY-SA 4.0",
+        "alt": "Sanjin Gosaiden at Dewa Sanzan Shrine on Mount Haguro, Yamagata.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Sanjin_Gassaiden,_Dewa_Sanzan_Shrine.jpg",
+          "credit": "??",
+          "license": "CC BY-SA 4.0",
+          "alt": "Sanjin Gosaiden at Dewa Sanzan Shrine on Mount Haguro, Yamagata."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Sanjin_Gassaiden,_Dewa_Sanzan_Shrine.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "tottori-s-shifting-dunes",
+      "routeId": "tottori-s-shifting-dunes-route",
+      "stopId": "tottori-s-shifting-dunes-stop-1",
+      "stopName": "Umanose ridge",
+      "imageTitle": "File:Tottori Sand Dunes.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Tottori_Sand_Dunes.jpg/1280px-Tottori_Sand_Dunes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tottori_Sand_Dunes.jpg",
+        "credit": "Drivephotographer",
+        "license": "CC0",
+        "alt": "Tottori Sand Dunes, including the sandy ridge landscape around Umanose.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tottori_Sand_Dunes.jpg",
+          "credit": "Drivephotographer",
+          "license": "CC0",
+          "alt": "Tottori Sand Dunes, including the sandy ridge landscape around Umanose."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tottori_Sand_Dunes.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "tottori-s-shifting-dunes",
+      "routeId": "tottori-s-shifting-dunes-route",
+      "stopId": "tottori-s-shifting-dunes-stop-2",
+      "stopName": "Tottori Sand Museum",
+      "imageTitle": "File:Tottori Sand Museum.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Tottori_Sand_Museum.jpg/1280px-Tottori_Sand_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tottori_Sand_Museum.jpg",
+        "credit": "Drivephotographer",
+        "license": "CC0",
+        "alt": "Tottori Sand Museum",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tottori_Sand_Museum.jpg",
+          "credit": "Drivephotographer",
+          "license": "CC0",
+          "alt": "Tottori Sand Museum"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tottori_Sand_Museum.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "tottori-s-shifting-dunes",
+      "routeId": "tottori-s-shifting-dunes-route",
+      "stopId": "tottori-s-shifting-dunes-stop-3",
+      "stopName": "Sand Dunes Conan Airport viewpoint",
+      "imageTitle": "File:Tottori Airport DSCN0064.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Tottori_Airport_DSCN0064.JPG/1280px-Tottori_Airport_DSCN0064.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Tottori_Airport_DSCN0064.JPG",
+        "credit": "Okia at Japanese Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "alt": "鳥取空港 撮影日 2007年8月23日 撮影場所 空港前広場の展望台 撮影者 投稿者と同じ（Okia） 撮影者によるGFDLリリース",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Tottori_Airport_DSCN0064.JPG",
+          "credit": "Okia at Japanese Wikipedia",
+          "license": "CC BY-SA 3.0",
+          "alt": "鳥取空港 撮影日 2007年8月23日 撮影場所 空港前広場の展望台 撮影者 投稿者と同じ（Okia） 撮影者によるGFDLリリース"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Tottori_Airport_DSCN0064.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "yakushima-ancient-green",
+      "routeId": "yakushima-ancient-green-route",
+      "stopId": "yakushima-ancient-green-stop-1",
+      "stopName": "Yayoisugi trail",
+      "imageTitle": "File:Jakusugi Land Yakushima 01.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Jakusugi_Land_Yakushima_01.jpg/1280px-Jakusugi_Land_Yakushima_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Jakusugi_Land_Yakushima_01.jpg",
+        "credit": "Chris 73",
+        "license": "CC BY-SA 3.0",
+        "alt": "Temperate rainforest scenery along the Yakusugi Land trails on Yakushima.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Jakusugi_Land_Yakushima_01.jpg",
+          "credit": "Chris 73",
+          "license": "CC BY-SA 3.0",
+          "alt": "Temperate rainforest scenery along the Yakusugi Land trails on Yakushima."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Jakusugi_Land_Yakushima_01.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "yakushima-ancient-green",
+      "routeId": "yakushima-ancient-green-route",
+      "stopId": "yakushima-ancient-green-stop-2",
+      "stopName": "Moss forest paths",
+      "imageTitle": "File:Yaku-Island Shiratani-Unsui-Gorge.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Yaku-Island_Shiratani-Unsui-Gorge.jpg/1280px-Yaku-Island_Shiratani-Unsui-Gorge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Yaku-Island_Shiratani-Unsui-Gorge.jpg",
+        "credit": "MaedaAkihiko",
+        "license": "CC0",
+        "alt": "A mossy forest scene inside Shiratani Unsuikyo on Yakushima.",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Yaku-Island_Shiratani-Unsui-Gorge.jpg",
+          "credit": "MaedaAkihiko",
+          "license": "CC0",
+          "alt": "A mossy forest scene inside Shiratani Unsuikyo on Yakushima."
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Yaku-Island_Shiratani-Unsui-Gorge.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "yakushima-ancient-green",
+      "routeId": "yakushima-ancient-green-route",
+      "stopId": "yakushima-ancient-green-stop-3",
+      "stopName": "Yakusugi Museum",
+      "imageTitle": "File:Yakusugi Shizenkan (Yakusugi Museum).jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Yakusugi_Shizenkan_%28Yakusugi_Museum%29.jpg/1280px-Yakusugi_Shizenkan_%28Yakusugi_Museum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Yakusugi_Shizenkan_(Yakusugi_Museum).jpg",
+        "credit": "Indiana jo",
+        "license": "CC BY-SA 4.0",
+        "alt": "屋久杉自然園",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Yakusugi_Shizenkan_(Yakusugi_Museum).jpg",
+          "credit": "Indiana jo",
+          "license": "CC BY-SA 4.0",
+          "alt": "屋久杉自然園"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Yakusugi_Shizenkan_(Yakusugi_Museum).jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "yokohama-s-harbor-lights",
+      "routeId": "yokohama-s-harbor-lights-route",
+      "stopId": "yokohama-s-harbor-lights-stop-1",
+      "stopName": "Yokohama Red Brick Warehouse",
+      "imageTitle": "File:Yokohama Red Brick Warehouse 2012.JPG",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Yokohama_Red_Brick_Warehouse_2012.JPG/1280px-Yokohama_Red_Brick_Warehouse_2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Yokohama_Red_Brick_Warehouse_2012.JPG",
+        "credit": "Kakidai",
+        "license": "CC BY-SA 3.0",
+        "alt": "横浜赤レンガ倉庫2号館",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Yokohama_Red_Brick_Warehouse_2012.JPG",
+          "credit": "Kakidai",
+          "license": "CC BY-SA 3.0",
+          "alt": "横浜赤レンガ倉庫2号館"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Yokohama_Red_Brick_Warehouse_2012.JPG",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    },
+    {
+      "placeId": "yokohama-s-harbor-lights",
+      "routeId": "yokohama-s-harbor-lights-route",
+      "stopId": "yokohama-s-harbor-lights-stop-2",
+      "stopName": "Osanbashi and Yamashita Park",
+      "imageTitle": "File:Minato-mirai from Yamashita Park at night.jpg",
+      "photo": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Minato-mirai_from_Yamashita_Park_at_night.jpg/1280px-Minato-mirai_from_Yamashita_Park_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Minato-mirai_from_Yamashita_Park_at_night.jpg",
+        "credit": "Takuro1202",
+        "license": "CC BY-SA 3.0",
+        "alt": "Minato-mirai from Yamashita Park at night, Yokohama bay, Japan",
+        "verification": {
+          "verified": true,
+          "source_page": "https://commons.wikimedia.org/wiki/File:Minato-mirai_from_Yamashita_Park_at_night.jpg",
+          "credit": "Takuro1202",
+          "license": "CC BY-SA 3.0",
+          "alt": "Minato-mirai from Yamashita Park at night, Yokohama bay, Japan"
+        }
+      },
+      "verifiedAgainst": "https://commons.wikimedia.org/wiki/File:Minato-mirai_from_Yamashita_Park_at_night.jpg",
+      "reviewStatus": "matched-to-stop-or-local-route"
+    }
+  ]
+}
