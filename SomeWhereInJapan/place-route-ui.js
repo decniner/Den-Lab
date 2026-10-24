@@ -78,7 +78,7 @@ async function mountGuide(){
  }
  setDirectionsAction(route);
  if(!route||!mapData)return;
- const controller=mount(host,route,mapData,{compactGuide:host.dataset.compactRouteGuide==='true',hideWalkingRouteLink:true});addGuideNotes(host,route);requestAnimationFrame(()=>controller?.resize());
+ const controller=mount(host,route,mapData,{compactGuide:host.dataset.compactRouteGuide==='true',hideWalkingRouteLink:true,hideStopPhotos:host.dataset.hideStopPhotos==='true'});addGuideNotes(host,route);requestAnimationFrame(()=>controller?.resize());
 }
 root.PlaceRouteUI=Object.freeze({mountDialog,mountGuide});
 document.addEventListener('DOMContentLoaded',()=>{if(document.querySelector('[data-place-route-guide]'))mountGuide();},{once:true});
