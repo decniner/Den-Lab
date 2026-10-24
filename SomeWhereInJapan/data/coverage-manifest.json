@@ -18,12 +18,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/furano-in-bloom/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -37,12 +35,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/the-blue-of-biei/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -56,12 +52,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/shiretoko-s-wild-edge/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -75,12 +69,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/otaru-by-lamplight/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -94,12 +86,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/daisetsuzan-high-country/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -113,13 +103,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/hakodate-from-above/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -132,12 +120,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/lake-toya-volcanic-calm/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -151,12 +137,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/matsushima-bay/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -170,13 +154,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/ginzan-after-dark/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -189,12 +171,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/oirase-stream-walk/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },

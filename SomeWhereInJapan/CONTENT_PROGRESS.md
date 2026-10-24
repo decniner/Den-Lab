@@ -1,19 +1,19 @@
 # Content progress — Somewhere in Japan
 
-Gate result: **4/310 places complete**. A row is complete only when every research, data, page, access, seasonal, and source-date check in the audit passes. Last audited: 2026-10-24.
+Gate result: **14/310 places complete**. A row is complete only when every research, data, page, access, seasonal, and source-date check in the audit passes. Last audited: 2026-10-24.
 
 | Place | Region | Batch | Checklist | Sources | Photo | Gaps |
 |---|---|---:|---|---:|---|---|
-| Furano in bloom | Hokkaido | 1 · priority | FAIL (8) | 15 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| The blue of Biei | Hokkaido | 1 · priority | FAIL (8) | 2 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Shiretoko’s wild edge | Hokkaido | 1 · priority | FAIL (8) | 2 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Otaru by lamplight | Hokkaido | 1 · priority | FAIL (8) | 8 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Daisetsuzan high country | Hokkaido | 1 · priority | FAIL (8) | 2 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Hakodate from above | Hokkaido | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Lake Toya, volcanic calm | Hokkaido | 1 · priority | FAIL (8) | 2 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Matsushima Bay | Tohoku | 1 · priority | FAIL (8) | 7 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Ginzan after dark | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Oirase stream walk | Tohoku | 1 · priority | FAIL (8) | 4 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
+| Furano in bloom | Hokkaido | 1 · priority | PASS | 17 (3 dated) | verified | — |
+| The blue of Biei | Hokkaido | 1 · priority | PASS | 4 (2 dated) | verified | — |
+| Shiretoko’s wild edge | Hokkaido | 1 · priority | PASS | 6 (4 dated) | verified | — |
+| Otaru by lamplight | Hokkaido | 1 · priority | PASS | 10 (3 dated) | verified | — |
+| Daisetsuzan high country | Hokkaido | 1 · priority | PASS | 5 (3 dated) | verified | — |
+| Hakodate from above | Hokkaido | 1 · priority | PASS | 5 (4 dated) | verified | — |
+| Lake Toya, volcanic calm | Hokkaido | 1 · priority | PASS | 6 (4 dated) | verified | — |
+| Matsushima Bay | Tohoku | 1 · priority | PASS | 11 (4 dated) | verified | — |
+| Ginzan after dark | Tohoku | 1 · priority | PASS | 5 (4 dated) | verified | — |
+| Oirase stream walk | Tohoku | 1 · priority | PASS | 8 (4 dated) | verified | — |
 | Hirosaki in blossom | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Hiraizumi’s quiet temples | Tohoku | 1 · priority | FAIL (8) | 7 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Tazawa’s clear blue | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |

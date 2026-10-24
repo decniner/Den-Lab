@@ -10,10 +10,8 @@
       "altText": "Lavender in bloom at Farm Tomita in Nakafurano, with a butterfly among the flowers",
       "license": "CC BY-SA 4.0",
       "verdict": "CORRECT",
-      "evidence": "Source-page title, description, or location metadata identifies this named destination",
-      "action": "Keep or replace with a destination-specific verified Commons image",
-      "previousUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=950&q=82",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "evidence": "Destination-specific image checked against its Commons source page; CC BY-SA 4.0.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "The blue of Biei",
@@ -23,10 +21,8 @@
       "altText": "Shirogane Blue Pond in Biei, Hokkaido",
       "license": "CC0",
       "verdict": "CORRECT",
-      "evidence": "Source-page title, description, or location metadata identifies this named destination",
-      "action": "Keep or replace with a destination-specific verified Commons image",
-      "previousUrl": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=950&q=82",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "evidence": "Destination-specific image checked against its Commons source page; CC0.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "Shiretoko’s wild edge",
@@ -36,10 +32,8 @@
       "altText": "Mount Io and Mount Shiretoko above the Sea of Okhotsk in Shiretoko National Park",
       "license": "Public domain",
       "verdict": "CORRECT",
-      "evidence": "Source-page title, description, or location metadata identifies this named destination",
-      "action": "Keep or replace with a destination-specific verified Commons image",
-      "previousUrl": "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=950&q=82",
-      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      "evidence": "Destination-specific image checked against its Commons source page; Public domain.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "Otaru by lamplight",
@@ -49,10 +43,8 @@
       "altText": "Otaru Canal at night in Otaru, Hokkaido",
       "license": "CC BY-SA 2.5",
       "verdict": "CORRECT",
-      "evidence": "Source-page title, description, or location metadata identifies this named destination",
-      "action": "Keep or replace with a destination-specific verified Commons image",
-      "previousUrl": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=950&q=82",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/"
+      "evidence": "Destination-specific image checked against its Commons source page; CC BY-SA 2.5.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "Daisetsuzan high country",
@@ -62,22 +54,19 @@
       "altText": "Mount Asahi beneath snow in Daisetsuzan, Hokkaido",
       "license": "CC BY-SA 4.0",
       "verdict": "CORRECT",
-      "evidence": "Source-page title, description, or location metadata identifies this named destination",
-      "action": "Keep or replace with a destination-specific verified Commons image",
-      "previousUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=950&q=82",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      "evidence": "Destination-specific image checked against its Commons source page; CC BY-SA 4.0.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "Hakodate from above",
-      "currentImageUrl": "",
-      "sourcePage": "",
-      "photographer": "",
-      "altText": "",
-      "license": "",
-      "verdict": "REMOVED",
-      "evidence": "No source-backed destination photo in catalogue",
-      "action": "Removed: the source page did not verify a destination-specific photograph with complete attribution and matching alt text",
-      "previousUrl": "https://images.unsplash.com/photo-1786338447302-6dd48f1b688d?auto=format&fit=crop&w=950&q=82"
+      "currentImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_view_of_Hakodate_at_night.jpg?width=1400",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Hakodate_at_night.jpg",
+      "photographer": "Fumikas Sagisavas",
+      "altText": "Hakodate city lights at night viewed from Mount Hakodate",
+      "license": "CC0 1.0",
+      "verdict": "CORRECT",
+      "evidence": "Destination-specific image checked against its Commons source page; CC0 1.0.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "Lake Toya, volcanic calm",
@@ -87,10 +76,8 @@
       "altText": "Lake Toya viewed from the Windsor Hotel in Toyako, Hokkaido",
       "license": "CC BY 2.0",
       "verdict": "CORRECT",
-      "evidence": "Source-page title, description, or location metadata identifies this named destination",
-      "action": "Keep or replace with a destination-specific verified Commons image",
-      "previousUrl": "https://images.unsplash.com/photo-1760444748966-35a1d8593e96?auto=format&fit=crop&w=950&q=82",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "evidence": "Destination-specific image checked against its Commons source page; CC BY 2.0.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "Matsushima Bay",
@@ -100,22 +87,19 @@
       "altText": "Cherry blossoms along Matsushima Bay in Miyagi",
       "license": "CC BY 4.0",
       "verdict": "CORRECT",
-      "evidence": "Source-page title, description, or location metadata identifies this named destination",
-      "action": "Keep or replace with a destination-specific verified Commons image",
-      "previousUrl": "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=950&q=82",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      "evidence": "Destination-specific image checked against its Commons source page; CC BY 4.0.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "Ginzan after dark",
-      "currentImageUrl": "",
-      "sourcePage": "",
-      "photographer": "",
-      "altText": "",
-      "license": "",
-      "verdict": "REMOVED",
-      "evidence": "No source-backed destination photo in catalogue",
-      "action": "Removed: the source page did not verify a destination-specific photograph with complete attribution and matching alt text",
-      "previousUrl": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=950&q=82"
+      "currentImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ginzan_Onsen_-_GinzanOnsen7426.jpg?width=1400",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_-_GinzanOnsen7426.jpg",
+      "photographer": "Lumoplank",
+      "altText": "Historic wooden ryokan along the Ginzan Onsen river",
+      "license": "CC0 1.0",
+      "verdict": "CORRECT",
+      "evidence": "Destination-specific image checked against its Commons source page; CC0 1.0.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "Oirase stream walk",
@@ -125,10 +109,8 @@
       "altText": "Oirase Mountain Stream in Towada, Aomori",
       "license": "CC0",
       "verdict": "CORRECT",
-      "evidence": "Source-page title, description, or location metadata identifies this named destination",
-      "action": "Keep or replace with a destination-specific verified Commons image",
-      "previousUrl": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=950&q=82",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      "evidence": "Destination-specific image checked against its Commons source page; CC0.",
+      "action": "Use the credited destination-specific photo."
     },
     {
       "place": "Hirosaki in blossom",

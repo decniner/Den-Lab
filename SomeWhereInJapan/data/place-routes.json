@@ -1862,45 +1862,134 @@
       ]
     },
     {
-      "id": "daisetsuzan-high-country-place-map",
+      "id": "daisetsuzan-asahidake-loop",
       "placeId": "daisetsuzan-high-country",
-      "cityId": "destination",
-      "title": "Daisetsuzan high country: location map",
-      "introduction": "Approximate location reference for Daisetsuzan high country. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Daisetsuzan · Hokkaido",
+      "title": "Asahidake: visitor center to Sugatami Pond",
+      "researchStatus": "researched-sequence-schematic-map",
+      "introduction": "A ropeway approach and marked pond loop, not a summit route. Check weather and last descent; mountain visibility can change quickly.",
+      "origin": {
+        "id": "asahidake-visitor-center",
+        "name": "Asahidake Visitor Center",
+        "address": "Asahidake Onsen, Higashikawa, Hokkaido, Japan",
+        "coordinates": {
+          "latitude": 43.6520095,
+          "longitude": 142.7995737,
+          "precision": "Approximate visitor-area point for schematic order map only",
+          "sourceIds": [
+            "daisetsuzan-high-country-osm"
+          ]
+        },
+        "returnPoint": false
+      },
       "stops": [
         {
-          "id": "daisetsuzan-high-country-place",
+          "id": "asahidake-base",
           "order": 1,
-          "name": "Daisetsuzan high country",
-          "area": "Daisetsuzan · Hokkaido",
-          "address": "Daisetsuzan high country, Daisetsuzan · Hokkaido, Japan",
-          "story": "Alpine trails, volcanic ridgelines, and wide-open views in Japan’s largest national park.",
+          "name": "Asahidake Ropeway base station",
+          "address": "Asahidake Onsen, Higashikawa, Hokkaido",
+          "story": "Check the live operation status and board the ropeway.",
           "coordinates": {
-            "latitude": 43.5283385,
-            "longitude": 142.9940409,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 43.6574492,
+            "longitude": 142.8117785,
+            "precision": "Approximate visitor-area point for schematic order map only",
             "sourceIds": [
-              "destination-map-location"
+              "daisetsuzan-high-country-osm"
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 20,
+            "maxMinutes": 40,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "sugatami-station",
+          "order": 2,
+          "name": "Sugatami Station",
+          "address": "Asahidake, Higashikawa, Hokkaido",
+          "story": "Alpine trail access begins at the upper ropeway station.",
+          "coordinates": {
+            "latitude": 43.661,
+            "longitude": 142.819,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "daisetsuzan-high-country-osm"
+            ]
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Daisetsuzan%20high%20country%20Japan%20visitor%20guide"
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 10,
+            "maxMinutes": 20,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "sugatami-pond",
+          "order": 3,
+          "name": "Sugatami Pond loop",
+          "address": "Asahidake, Higashikawa, Hokkaido",
+          "story": "The official route guide describes a roughly 1.7 km loop of about one hour in suitable conditions.",
+          "coordinates": {
+            "latitude": 43.6640213,
+            "longitude": 142.8277844,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "daisetsuzan-high-country-osm"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 60,
+            "maxMinutes": 90,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "asahidake-leg-1",
+          "from": "Visitor Center",
+          "to": "Ropeway base",
+          "mode": "walking",
+          "story": "Short area transfer; follow local signs."
+        },
+        {
+          "id": "asahidake-leg-2",
+          "from": "Base station",
+          "to": "Sugatami Station",
+          "mode": "transit",
+          "story": "Ride the ropeway; confirm live service and last descent."
+        },
+        {
+          "id": "asahidake-leg-3",
+          "from": "Sugatami Station",
+          "to": "Pond loop",
+          "mode": "walking",
+          "story": "Use the marked alpine path and turn back if conditions deteriorate."
+        }
+      ],
+      "timeEstimate": {
+        "label": "About 1 hour for the pond loop plus ropeway and access time",
+        "basis": "Ropeway operator estimate; walking time varies with weather and fitness."
+      },
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/18373139",
-          "checkedOn": "2026-10-23",
+          "id": "asahidake-ropeway",
+          "label": "Asahidake Ropeway official operations and route",
+          "url": "https://asahidake.hokkaido.jp/en/",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "loop time, access, fares and safety"
+          ]
+        },
+        {
+          "id": "daisetsuzan-high-country-osm",
+          "label": "OpenStreetMap/Nominatim: approximate visitor-area points",
+          "url": "https://www.openstreetmap.org/search?query=Asahidake%3A%20visitor%20center%20to%20Sugatami%20Pond",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "approximate stop locations for schematic sequence map; not turn-by-turn walking geometry"
           ]
         }
       ]
@@ -2570,8 +2659,8 @@
       "placeId": "furano-in-bloom",
       "cityId": "furano",
       "title": "Furano in bloom: fields, cheese and forest craft",
-      "introduction": "Begin at Farm Tomita while the flower fields are bright, return toward Furano for a taste of local dairy, then finish among the wooded craft cottages at Ningle Terrace. This car-first loop uses live Google Maps directions for roads; map connectors show stop order only.",
-      "researchStatus": "partially-verified",
+      "introduction": "Farm Tomita’s main field is the anchor; Lavender East is approximately four kilometres away and requires a separate transfer. Do not imply that distant farms are one walking circuit. Map connectors show stop order only. Use official live transit, road and trail notices for navigation.",
+      "researchStatus": "researched-sequence-schematic-map",
       "origin": {
         "id": "furano-station",
         "name": "Furano Station",
@@ -2604,7 +2693,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 40,
+            "maxMinutes": 60,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "photo": {
             "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg/960px-140726_Farm_Tomita_Nakafurano_Hokkaido_Japan01s3.jpg",
@@ -2632,7 +2724,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "photo": {
             "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Black_cheese.jpg/960px-Black_cheese.jpg",
@@ -2660,7 +2755,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 75,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "photo": {
             "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/130503_Ningle_Terrace_Furano_Hokkaido_Japan02s.jpg/960px-130503_Ningle_Terrace_Furano_Hokkaido_Japan02s.jpg",
@@ -3075,45 +3173,134 @@
       ]
     },
     {
-      "id": "ginzan-after-dark-place-map",
+      "id": "ginzan-river-lane",
       "placeId": "ginzan-after-dark",
-      "cityId": "destination",
-      "title": "Ginzan after dark: location map",
-      "introduction": "Approximate location reference for Ginzan after dark. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Yamagata · Tohoku",
+      "title": "Ginzan Onsen: river lane to Shirogane Waterfall",
+      "researchStatus": "researched-sequence-schematic-map",
+      "introduction": "A short town walk from the bus arrival area along the river to the waterfall. Respect visitor controls, private property and winter footing; map connectors are schematic.",
+      "origin": {
+        "id": "ginzan-bus-terminal",
+        "name": "Ginzan Onsen bus terminal",
+        "address": "Ginzan Onsen, Obanazawa, Yamagata, Japan",
+        "coordinates": {
+          "latitude": 38.5704194,
+          "longitude": 140.5300687,
+          "precision": "Approximate visitor-area point for schematic order map only",
+          "sourceIds": [
+            "ginzan-after-dark-osm"
+          ]
+        },
+        "returnPoint": false
+      },
       "stops": [
         {
-          "id": "ginzan-after-dark-place",
+          "id": "ginzan-bridge",
           "order": 1,
-          "name": "Ginzan after dark",
-          "area": "Yamagata · Tohoku",
-          "address": "Ginzan after dark, Yamagata · Tohoku, Japan",
-          "story": "A lantern-lit hot spring town where winter feels like stepping into another time.",
+          "name": "Shiroganebashi Bridge and town entry",
+          "address": "Ginzan Onsen, Obanazawa, Yamagata",
+          "story": "Enter the compact onsen street from the river bridge.",
           "coordinates": {
-            "latitude": 38.4746705,
-            "longitude": 140.083237,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 38.57055,
+            "longitude": 140.5302,
+            "precision": "Approximate visitor-area point for schematic order map only",
             "sourceIds": [
-              "destination-map-location"
+              "ginzan-after-dark-osm"
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 15,
+            "maxMinutes": 25,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "ginzan-footbath",
+          "order": 2,
+          "name": "Warashiyu footbath",
+          "address": "Ginzan Onsen, Obanazawa, Yamagata",
+          "story": "Pause at the public riverside footbath if open and follow posted etiquette.",
+          "coordinates": {
+            "latitude": 38.5708,
+            "longitude": 140.5305,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "ginzan-after-dark-osm"
+            ]
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Ginzan%20after%20dark%20Japan%20visitor%20guide"
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 15,
+            "maxMinutes": 30,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "ginzan-waterfall",
+          "order": 3,
+          "name": "Shirogane Waterfall",
+          "address": "Ginzan Onsen, Obanazawa, Yamagata",
+          "story": "Continue upstream on the signed riverside path and return before conditions worsen.",
+          "coordinates": {
+            "latitude": 38.5714,
+            "longitude": 140.5311,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "ginzan-after-dark-osm"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "ginzan-leg-1",
+          "from": "Bus terminal",
+          "to": "Town bridge",
+          "mode": "walking",
+          "story": "Follow visitor signs into the narrow riverside lane."
+        },
+        {
+          "id": "ginzan-leg-2",
+          "from": "Bridge",
+          "to": "Warashiyu",
+          "mode": "walking",
+          "story": "Stay in the public path and keep doorways clear."
+        },
+        {
+          "id": "ginzan-leg-3",
+          "from": "Warashiyu",
+          "to": "Waterfall",
+          "mode": "walking",
+          "story": "Riverside footing can be slippery; use caution."
+        }
+      ],
+      "timeEstimate": {
+        "label": "About 2 to 3 hours in town",
+        "basis": "Planning estimate excluding the Oishida bus journey and any onsen stay."
+      },
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/3790869",
-          "checkedOn": "2026-10-23",
+          "id": "ginzan-onsen-official",
+          "label": "Ginzan Onsen official access information",
+          "url": "https://www.ginzanonsen.jp/access/",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "bus, car and visitor access guidance"
+          ]
+        },
+        {
+          "id": "ginzan-after-dark-osm",
+          "label": "OpenStreetMap/Nominatim: approximate visitor-area points",
+          "url": "https://www.openstreetmap.org/search?query=Ginzan%20Onsen%3A%20river%20lane%20to%20Shirogane%20Waterfall",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "approximate stop locations for schematic sequence map; not turn-by-turn walking geometry"
           ]
         }
       ]
@@ -3471,45 +3658,134 @@
       ]
     },
     {
-      "id": "hakodate-from-above-place-map",
+      "id": "hakodate-twilight-ascent",
       "placeId": "hakodate-from-above",
-      "cityId": "destination",
-      "title": "Hakodate from above: location map",
-      "introduction": "Approximate location reference for Hakodate from above. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Hakodate · Hokkaido",
+      "title": "Hakodate: Motomachi to the summit at twilight",
+      "researchStatus": "researched-sequence-schematic-map",
+      "introduction": "A district walk followed by a ropeway ascent. The road has seasonal private-car restrictions; use the tram and check ropeway operation.",
+      "origin": {
+        "id": "hakodate-motomachi",
+        "name": "Motomachi hillside",
+        "address": "Motomachi, Hakodate, Hokkaido, Japan",
+        "coordinates": {
+          "latitude": 41.763897,
+          "longitude": 140.71255,
+          "precision": "Approximate visitor-area point for schematic order map only",
+          "sourceIds": [
+            "hakodate-from-above-osm"
+          ]
+        },
+        "returnPoint": false
+      },
       "stops": [
         {
-          "id": "hakodate-from-above-place",
+          "id": "hakodate-slope",
           "order": 1,
-          "name": "Hakodate from above",
-          "area": "Hakodate · Hokkaido",
-          "address": "Hakodate from above, Hakodate · Hokkaido, Japan",
-          "story": "Climb above the harbor for a sweeping view where two bays meet beneath the evening sky.",
+          "name": "Hachimanzaka and Motomachi",
+          "address": "Motomachi, Hakodate, Hokkaido",
+          "story": "Walk the historic hillside streets before sunset.",
           "coordinates": {
-            "latitude": 41.768793,
-            "longitude": 140.729008,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 41.7632,
+            "longitude": 140.7135,
+            "precision": "Approximate visitor-area point for schematic order map only",
             "sourceIds": [
-              "destination-map-location"
+              "hakodate-from-above-osm"
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 75,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "hakodate-ropeway-base",
+          "order": 2,
+          "name": "Mt. Hakodate Ropeway base",
+          "address": "19-7 Motomachi, Hakodate, Hokkaido",
+          "story": "Reach the base by city tram and walk; check departure queues.",
+          "coordinates": {
+            "latitude": 41.7609207,
+            "longitude": 140.714177,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "hakodate-from-above-osm"
+            ]
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Hakodate%20from%20above%20Japan%20visitor%20guide"
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 20,
+            "maxMinutes": 30,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "hakodate-summit",
+          "order": 3,
+          "name": "Mt. Hakodate Summit Observatory",
+          "address": "Mt. Hakodate, Hakodate, Hokkaido",
+          "story": "Arrive before sunset to see twilight and the city lights between two bays.",
+          "coordinates": {
+            "latitude": 41.759229,
+            "longitude": 140.70336,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "hakodate-from-above-osm"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 75,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "hakodate-leg-1",
+          "from": "Motomachi",
+          "to": "Ropeway base",
+          "mode": "walking",
+          "story": "Steep city streets connect the district and station."
+        },
+        {
+          "id": "hakodate-leg-2",
+          "from": "Ropeway base",
+          "to": "Summit",
+          "mode": "transit",
+          "story": "Ride the ropeway; the map connector does not depict the cable alignment."
+        },
+        {
+          "id": "hakodate-leg-3",
+          "from": "Summit",
+          "to": "Motomachi",
+          "mode": "transit",
+          "story": "Return by ropeway and city tram; check last service."
+        }
+      ],
+      "timeEstimate": {
+        "label": "About 2 to 3 hours around sunset",
+        "basis": "Planning estimate including district walk, queues and summit visit."
+      },
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/4088019",
-          "checkedOn": "2026-10-23",
+          "id": "hakodate-ropeway",
+          "label": "HOKKAIDO LOVE! Mount Hakodate Ropeway",
+          "url": "https://www.visit-hokkaido.jp/en/spot/detail_10094.html",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "access, operating season, phone and fees"
+          ]
+        },
+        {
+          "id": "hakodate-from-above-osm",
+          "label": "OpenStreetMap/Nominatim: approximate visitor-area points",
+          "url": "https://www.openstreetmap.org/search?query=Hakodate%3A%20Motomachi%20to%20the%20summit%20at%20twilight",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "approximate stop locations for schematic sequence map; not turn-by-turn walking geometry"
           ]
         }
       ]
@@ -12211,45 +12487,134 @@
       ]
     },
     {
-      "id": "lake-toya-volcanic-calm-place-map",
+      "id": "lake-toya-shore-volcano",
       "placeId": "lake-toya-volcanic-calm",
-      "cityId": "destination",
-      "title": "Lake Toya, volcanic calm: location map",
-      "introduction": "Approximate location reference for Lake Toya, volcanic calm. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Toyako · Hokkaido",
+      "title": "Lake Toya: shore, volcano museum and Usu",
+      "researchStatus": "researched-sequence-schematic-map",
+      "introduction": "The shoreline and volcano area are separated by road. Use a bus, taxi or car between the onsen district and Showa Shinzan; connectors show sequence only.",
+      "origin": {
+        "id": "toya-visitor-center",
+        "name": "Toyako Visitor Center",
+        "address": "Toyako Onsen, Hokkaido, Japan",
+        "coordinates": {
+          "latitude": 42.5638917,
+          "longitude": 140.8150342,
+          "precision": "Approximate visitor-area point for schematic order map only",
+          "sourceIds": [
+            "lake-toya-volcanic-calm-osm"
+          ]
+        },
+        "returnPoint": false
+      },
       "stops": [
         {
-          "id": "lake-toya-volcanic-calm-place",
+          "id": "toya-shore",
           "order": 1,
-          "name": "Lake Toya, volcanic calm",
-          "area": "Toyako · Hokkaido",
-          "address": "Lake Toya, volcanic calm, Toyako · Hokkaido, Japan",
-          "story": "A caldera lake framed by volcanoes, island silhouettes, and slow lakeside onsen evenings.",
+          "name": "Lake Toya lakeside promenade",
+          "address": "Toyako Onsen, Hokkaido",
+          "story": "Walk the sculpture-lined lakefront and onsen district.",
           "coordinates": {
-            "latitude": 42.5513253,
-            "longitude": 140.7642723,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 42.565824,
+            "longitude": 140.82186,
+            "precision": "Approximate visitor-area point for schematic order map only",
             "sourceIds": [
-              "destination-map-location"
+              "lake-toya-volcanic-calm-osm"
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 75,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "showa-shinzan",
+          "order": 2,
+          "name": "Showa Shinzan",
+          "address": "Showa Shinzan, Sobetsu, Hokkaido",
+          "story": "See the young volcanic dome from the designated visitor area.",
+          "coordinates": {
+            "latitude": 42.5425537,
+            "longitude": 140.8643525,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "lake-toya-volcanic-calm-osm"
+            ]
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Lake%20Toya%2C%20volcanic%20calm%20Japan%20visitor%20guide"
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 60,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "usu-ropeway",
+          "order": 3,
+          "name": "Usu Ropeway",
+          "address": "Showa Shinzan, Sobetsu, Hokkaido",
+          "story": "Check operations and weather before ascending for caldera views.",
+          "coordinates": {
+            "latitude": 42.5396643,
+            "longitude": 140.8524111,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "lake-toya-volcanic-calm-osm"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 60,
+            "maxMinutes": 90,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "toya-leg-1",
+          "from": "Visitor Center",
+          "to": "Lake shore",
+          "mode": "walking",
+          "story": "Walk the compact onsen waterfront."
+        },
+        {
+          "id": "toya-leg-2",
+          "from": "Lake shore",
+          "to": "Showa Shinzan",
+          "mode": "transit",
+          "story": "Use a verified bus, taxi or car transfer; confirm timetable."
+        },
+        {
+          "id": "toya-leg-3",
+          "from": "Showa Shinzan",
+          "to": "Usu Ropeway",
+          "mode": "walking",
+          "story": "Short transfer in the volcano visitor area."
+        }
+      ],
+      "timeEstimate": {
+        "label": "Half to full day",
+        "basis": "Depends on cruise, museum and ropeway operating times and transport connections."
+      },
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/relation/4087726",
-          "checkedOn": "2026-10-23",
+          "id": "lake-toya-official",
+          "label": "HOKKAIDO LOVE! Lake Toya and Usu area",
+          "url": "https://www.visit-hokkaido.jp/en/spot/detail_10050.html",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "lake visitor information and access"
+          ]
+        },
+        {
+          "id": "lake-toya-volcanic-calm-osm",
+          "label": "OpenStreetMap/Nominatim: approximate visitor-area points",
+          "url": "https://www.openstreetmap.org/search?query=Lake%20Toya%3A%20shore%2C%20volcano%20museum%20and%20Usu",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "approximate stop locations for schematic sequence map; not turn-by-turn walking geometry"
           ]
         }
       ]
@@ -12347,7 +12712,7 @@
       "placeId": "matsushima-bay",
       "cityId": "matsushima",
       "title": "Matsushima station-to-bay temples walk",
-      "introduction": "From JR Matsushima-Kaigan Station, follow the official Tohoku itinerary to Miyagi Matsushima Rikyu, Zuiganji, Entsuin and Godaido. The published local walking estimates total 14 minutes, excluding visits. The itinerary’s approximately 40-minute train from Sendai is outside this local route.",
+      "introduction": "Station-side bayfront, Zuiganji, Entsuin and Godaido form a short walking sequence; cruise departures are a separate timed activity. Map connectors show stop order only. Use official live transit, road and trail notices for navigation.",
       "researchStatus": "researched-sequence-schematic-map",
       "locatorPrecision": "attraction",
       "origin": {
@@ -12381,7 +12746,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 90,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Miyagi%20Matsushima%20Rikyu%20Matsushima%20Japan"
         },
@@ -12402,7 +12770,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 75,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Zuiganji%20Temple%20Matsushima%20Japan"
         },
@@ -12423,7 +12794,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Entsuin%20Temple%20Matsushima%20Japan"
         },
@@ -12444,7 +12818,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 15,
+            "maxMinutes": 30,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Godaido%20Temple%20Matsushima%20Japan"
         }
@@ -14980,7 +15357,7 @@
       "placeId": "oirase-stream-walk",
       "cityId": "oirase",
       "title": "Oirase Gorge: Nenokuchi to Yakeyama",
-      "introduction": "Walk the official north-to-south sequence from Lake Towada at Nenokuchi to Yakeyama: Choshi Otaki, Kumoi-no-Nagare, Kumoi-no-Taki, Makado-iwa, Ishigedo, then Yakeyama. The full trail is about 14 km and roughly five hours; the shorter Ishigedo–Nenokuchi section is about 9 km and 2.5 hours. Published segment times are estimates. Numbered connectors show order, not the actual trail geometry. Use Google Maps for live directions to access points and check current bus, weather, trail, and road notices.",
+      "introduction": "A fourteen-kilometre gorge should be divided into bus-linked segments; Choshi Otaki and Nenokuchi are stops along the corridor, not an uninterrupted short walk. Map connectors show stop order only. Use official live transit, road and trail notices for navigation.",
       "researchStatus": "researched-sequence-schematic-map",
       "locatorPrecision": "trail-access-points",
       "stops": [
@@ -15002,7 +15379,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Nenokuchi%20lakeside%20trailhead%20Oirase%20Gorge%20Japan"
         },
@@ -15024,7 +15404,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 60,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Choshi%20Otaki%20Falls%20Oirase%20Gorge%20Japan"
         },
@@ -15046,7 +15429,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Kumoi-no-Nagare%20viewpoint%20access%20Oirase%20Gorge%20Japan"
         },
@@ -15068,7 +15454,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Kumoi-no-Taki%20Falls%20Oirase%20Gorge%20Japan"
         },
@@ -15090,7 +15479,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 20,
+            "maxMinutes": 40,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Makado-iwa%20viewpoint%20access%20Oirase%20Gorge%20Japan"
         },
@@ -15112,7 +15504,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Ishigedo%20rest%20house%20and%20trail%20stop%20Oirase%20Gorge%20Japan"
         },
@@ -15134,7 +15529,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 20,
+            "maxMinutes": 35,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Yakeyama%20gorge%20entrance%20Oirase%20Gorge%20Japan"
         }
@@ -15989,7 +16387,7 @@
       "placeId": "otaru-by-lamplight",
       "cityId": "otaru",
       "title": "Otaru historic-center and Sakaimachi walk",
-      "introduction": "Follow HOKKAIDO LOVE!’s published local sequence from the Triangle Market along the former Temiya railway and canal to the music-box and glass district, ending at Otaru Art Base. Published walk times are shown where provided; one short walk has no numerical estimate. This itinerary excerpt does not include the preceding drive or the longer trip beyond Otaru.",
+      "introduction": "The canal, former Temiya Line and Sakaimachi attractions form a walkable town route; confirm shop and museum opening times. Map connectors show stop order only. Use official live transit, road and trail notices for navigation.",
       "researchStatus": "researched-sequence-schematic-map",
       "locatorPrecision": "attraction",
       "stops": [
@@ -16010,7 +16408,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 20,
+            "maxMinutes": 40,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Otaru%20Triangle%20Market%20Otaru"
         },
@@ -16031,7 +16432,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 20,
+            "maxMinutes": 35,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Former%20JNR%20Temiya%20Line%20Otaru"
         },
@@ -16052,7 +16456,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Otaru%20Canal%20Otaru"
         },
@@ -16073,7 +16480,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 75,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Otaru%20Music%20Box%20Museum%20Otaru"
         },
@@ -16094,7 +16504,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 60,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Kitaichi%20Glass%20Building%20No.3%20Otaru"
         },
@@ -16115,7 +16528,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 60,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Otaru%20Art%20Base%20Otaru"
         }
@@ -17736,45 +18152,134 @@
       ]
     },
     {
-      "id": "shiretoko-s-wild-edge-place-map",
+      "id": "shiretoko-five-lakes-field-day",
       "placeId": "shiretoko-s-wild-edge",
-      "cityId": "destination",
-      "title": "Shiretoko’s wild edge: location map",
-      "introduction": "Approximate location reference for Shiretoko’s wild edge. Confirm the exact entrance with the attraction before travelling.",
-      "researchStatus": "place-locator",
-      "locatorPrecision": "area",
-      "locatorLabel": "Shiretoko · Hokkaido",
+      "title": "Shiretoko Five Lakes: field house and lake paths",
+      "researchStatus": "researched-sequence-schematic-map",
+      "introduction": "Check bear and trail notices at the Field House. The raised boardwalk and ground trail have different access rules; the map marks the visitor sequence, not an open trail guarantee.",
+      "origin": {
+        "id": "shiretoko-field-house",
+        "name": "Shiretoko Goko Field House",
+        "address": "Shiretoko Goko, Shari, Hokkaido, Japan",
+        "coordinates": {
+          "latitude": 44.12218,
+          "longitude": 145.08056,
+          "precision": "Approximate visitor-area point for schematic order map only",
+          "sourceIds": [
+            "shiretoko-s-wild-edge-osm"
+          ]
+        },
+        "returnPoint": false
+      },
       "stops": [
         {
-          "id": "shiretoko-s-wild-edge-place",
+          "id": "shiretoko-boardwalk",
           "order": 1,
-          "name": "Shiretoko’s wild edge",
-          "area": "Shiretoko · Hokkaido",
-          "address": "Shiretoko’s wild edge, Shiretoko · Hokkaido, Japan",
-          "story": "A remote peninsula of drift ice, forest, and wildlife at the far northeastern edge of Japan.",
+          "name": "Elevated wooden boardwalk",
+          "address": "Shiretoko Five Lakes, Hokkaido",
+          "story": "Use the accessible raised boardwalk when open; check same-day conditions.",
           "coordinates": {
-            "latitude": 44.3450893,
-            "longitude": 145.3297798,
-            "precision": "Approximate area reference; not confirmed as the attraction entrance",
+            "latitude": 44.1231,
+            "longitude": 145.082,
+            "precision": "Approximate visitor-area point for schematic order map only",
             "sourceIds": [
-              "destination-map-location"
+              "shiretoko-s-wild-edge-osm"
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 15,
+            "maxMinutes": 30,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "shiretoko-first-lake",
+          "order": 2,
+          "name": "First Lake viewpoint",
+          "address": "Shiretoko Five Lakes, Hokkaido",
+          "story": "The boardwalk opens to a view of the first lake, mountains and Sea of Okhotsk.",
+          "coordinates": {
+            "latitude": 44.124,
+            "longitude": 145.083,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "shiretoko-s-wild-edge-osm"
+            ]
           },
-          "youtubeUrl": "https://www.youtube.com/results?search_query=Shiretoko%E2%80%99s%20wild%20edge%20Japan%20visitor%20guide"
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 40,
+            "maxMinutes": 60,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
+        },
+        {
+          "id": "shiretoko-ground-trail",
+          "order": 3,
+          "name": "Ground trail entrance",
+          "address": "Shiretoko Five Lakes, Hokkaido",
+          "story": "Ground trail access is seasonal and may require a registered guide.",
+          "coordinates": {
+            "latitude": 44.121,
+            "longitude": 145.079,
+            "precision": "Approximate visitor-area point for schematic order map only",
+            "sourceIds": [
+              "shiretoko-s-wild-edge-osm"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 60,
+            "maxMinutes": 180,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
+          }
         }
       ],
-      "legs": [],
+      "legs": [
+        {
+          "id": "shiretoko-leg-1",
+          "from": "Field House",
+          "to": "Raised boardwalk",
+          "mode": "walking",
+          "story": "Follow the signed visitor path; map connector is schematic."
+        },
+        {
+          "id": "shiretoko-leg-2",
+          "from": "Boardwalk",
+          "to": "First Lake viewpoint",
+          "mode": "walking",
+          "story": "Return via the authorized boardwalk route."
+        },
+        {
+          "id": "shiretoko-leg-3",
+          "from": "Field House",
+          "to": "Ground trail entrance",
+          "mode": "walking",
+          "story": "Do not enter unless current seasonal requirements are satisfied."
+        }
+      ],
+      "timeEstimate": {
+        "label": "About 40 minutes on the boardwalk; longer for guided ground routes",
+        "basis": "Official Environment Ministry estimates; access conditions can change by season and bear activity."
+      },
       "sources": [
         {
-          "id": "destination-map-location",
-          "label": "OpenStreetMap location record",
-          "url": "https://www.openstreetmap.org/node/2479710251",
-          "checkedOn": "2026-10-23",
+          "id": "shiretoko-goko-osm",
+          "label": "OpenStreetMap: Shiretoko Five Lakes area",
+          "url": "https://www.openstreetmap.org/search?query=Shiretoko%20Five%20Lakes",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "destination or area map reference"
+            "approximate map points"
+          ]
+        },
+        {
+          "id": "shiretoko-s-wild-edge-osm",
+          "label": "OpenStreetMap/Nominatim: approximate visitor-area points",
+          "url": "https://www.openstreetmap.org/search?query=Shiretoko%20Five%20Lakes%3A%20field%20house%20and%20lake%20paths",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "approximate stop locations for schematic sequence map; not turn-by-turn walking geometry"
           ]
         }
       ]
@@ -18969,7 +19474,7 @@
       "placeId": "the-blue-of-biei",
       "cityId": "biei",
       "title": "Biei scenic drive: station, Blue Pond, flower fields, Asahikawa",
-      "introduction": "A focused driving excerpt from HOKKAIDO LOVE!’s official Biei day trip: start at Biei Station, visit Shirogane Blue Pond, Shikisai-no-oka and Zerubu-no-Oka, then finish at Asahikawa Station. It omits the meal and patisserie stops in the longer itinerary. The official source gives about 25 minutes for the first two drives; times for the remaining legs are not verified. Check seasonal opening and weather notices.",
+      "introduction": "Blue Pond and Shirahige Falls are separate stops connected by road; the wider Biei flower fields are much farther away and require a vehicle or scheduled tour. Map connectors show stop order only. Use official live transit, road and trail notices for navigation.",
       "researchStatus": "researched-sequence-schematic-map",
       "locatorPrecision": "attraction",
       "origin": {
@@ -19004,7 +19509,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 45,
+            "maxMinutes": 60,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Shirogane%20Blue%20Pond%20Japan%20visitor%20guide"
         },
@@ -19025,7 +19533,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Shikisai-no-oka%20Japan%20visitor%20guide"
         },
@@ -19046,7 +19557,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 15,
+            "maxMinutes": 30,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=Zerubu-no-Oka%20Japan%20visitor%20guide"
         },
@@ -19067,7 +19581,10 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 15,
+            "maxMinutes": 30,
+            "basis": "Editorial stop-time estimate; allow more for crowds, weather, mobility needs or seasonal conditions."
           },
           "youtubeUrl": "https://www.youtube.com/results?search_query=JR%20Asahikawa%20Station%20Japan%20visitor%20guide"
         }
@@ -26392,12 +26909,12 @@
     "shiretoko-s-wild-edge": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          145.3277798,
-          44.343089299999995,
-          145.33177980000002,
-          44.3470893
+          145.07600000000002,
+          44.118,
+          145.08599999999998,
+          44.127
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -26406,20 +26923,137 @@
       "features": [
         {
           "type": "Feature",
-          "id": "shiretoko-s-wild-edge-place",
+          "id": "shiretoko-field-house",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              145.3297798,
-              44.3450893
+              145.08056,
+              44.12218
             ]
           },
           "properties": {
-            "id": "shiretoko-s-wild-edge-place",
-            "routeStopId": "shiretoko-s-wild-edge-place",
-            "name": "Shiretoko’s wild edge",
-            "role": "stop",
-            "order": 1
+            "id": "shiretoko-field-house",
+            "routeStopId": "shiretoko-field-house",
+            "name": "Shiretoko Goko Field House",
+            "role": "origin",
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                145.08056,
+                44.12218
+              ],
+              [
+                145.082,
+                44.1231
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "shiretoko-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "shiretoko-boardwalk",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              145.082,
+              44.1231
+            ]
+          },
+          "properties": {
+            "id": "shiretoko-boardwalk",
+            "routeStopId": "shiretoko-boardwalk",
+            "order": 1,
+            "name": "Elevated wooden boardwalk",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                145.082,
+                44.1231
+              ],
+              [
+                145.083,
+                44.124
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "shiretoko-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "shiretoko-first-lake",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              145.083,
+              44.124
+            ]
+          },
+          "properties": {
+            "id": "shiretoko-first-lake",
+            "routeStopId": "shiretoko-first-lake",
+            "order": 2,
+            "name": "First Lake viewpoint",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                145.083,
+                44.124
+              ],
+              [
+                145.079,
+                44.121
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "shiretoko-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "shiretoko-ground-trail",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              145.079,
+              44.121
+            ]
+          },
+          "properties": {
+            "id": "shiretoko-ground-trail",
+            "routeStopId": "shiretoko-ground-trail",
+            "order": 3,
+            "name": "Ground trail entrance",
+            "role": "stop"
           }
         }
       ]
@@ -26663,12 +27297,12 @@
     "daisetsuzan-high-country": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          142.99204089999998,
-          43.526338499999994,
-          142.9960409,
-          43.5303385
+          142.7965737,
+          43.6490095,
+          142.8307844,
+          43.6670213
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -26677,20 +27311,137 @@
       "features": [
         {
           "type": "Feature",
-          "id": "daisetsuzan-high-country-place",
+          "id": "asahidake-visitor-center",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              142.9940409,
-              43.5283385
+              142.7995737,
+              43.6520095
             ]
           },
           "properties": {
-            "id": "daisetsuzan-high-country-place",
-            "routeStopId": "daisetsuzan-high-country-place",
-            "name": "Daisetsuzan high country",
-            "role": "stop",
-            "order": 1
+            "id": "asahidake-visitor-center",
+            "routeStopId": "asahidake-visitor-center",
+            "name": "Asahidake Visitor Center",
+            "role": "origin",
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.7995737,
+                43.6520095
+              ],
+              [
+                142.8117785,
+                43.6574492
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "asahidake-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "asahidake-base",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.8117785,
+              43.6574492
+            ]
+          },
+          "properties": {
+            "id": "asahidake-base",
+            "routeStopId": "asahidake-base",
+            "order": 1,
+            "name": "Asahidake Ropeway base station",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.8117785,
+                43.6574492
+              ],
+              [
+                142.819,
+                43.661
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "asahidake-leg-2",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "sugatami-station",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.819,
+              43.661
+            ]
+          },
+          "properties": {
+            "id": "sugatami-station",
+            "routeStopId": "sugatami-station",
+            "order": 2,
+            "name": "Sugatami Station",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                142.819,
+                43.661
+              ],
+              [
+                142.8277844,
+                43.6640213
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "asahidake-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "sugatami-pond",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              142.8277844,
+              43.6640213
+            ]
+          },
+          "properties": {
+            "id": "sugatami-pond",
+            "routeStopId": "sugatami-pond",
+            "order": 3,
+            "name": "Sugatami Pond loop",
+            "role": "stop"
           }
         }
       ]
@@ -26698,12 +27449,12 @@
     "hakodate-from-above": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          140.72700799999998,
-          41.766793,
-          140.731008,
-          41.770793000000005
+          140.70036000000002,
+          41.756229,
+          140.717177,
+          41.766897
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -26712,20 +27463,137 @@
       "features": [
         {
           "type": "Feature",
-          "id": "hakodate-from-above-place",
+          "id": "hakodate-motomachi",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              140.729008,
-              41.768793
+              140.71255,
+              41.763897
             ]
           },
           "properties": {
-            "id": "hakodate-from-above-place",
-            "routeStopId": "hakodate-from-above-place",
-            "name": "Hakodate from above",
-            "role": "stop",
-            "order": 1
+            "id": "hakodate-motomachi",
+            "routeStopId": "hakodate-motomachi",
+            "name": "Motomachi hillside",
+            "role": "origin",
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.71255,
+                41.763897
+              ],
+              [
+                140.7135,
+                41.7632
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "hakodate-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "hakodate-slope",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.7135,
+              41.7632
+            ]
+          },
+          "properties": {
+            "id": "hakodate-slope",
+            "routeStopId": "hakodate-slope",
+            "order": 1,
+            "name": "Hachimanzaka and Motomachi",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.7135,
+                41.7632
+              ],
+              [
+                140.714177,
+                41.7609207
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "hakodate-leg-2",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "hakodate-ropeway-base",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.714177,
+              41.7609207
+            ]
+          },
+          "properties": {
+            "id": "hakodate-ropeway-base",
+            "routeStopId": "hakodate-ropeway-base",
+            "order": 2,
+            "name": "Mt. Hakodate Ropeway base",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.714177,
+                41.7609207
+              ],
+              [
+                140.70336,
+                41.759229
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "hakodate-leg-3",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "hakodate-summit",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.70336,
+              41.759229
+            ]
+          },
+          "properties": {
+            "id": "hakodate-summit",
+            "routeStopId": "hakodate-summit",
+            "order": 3,
+            "name": "Mt. Hakodate Summit Observatory",
+            "role": "stop"
           }
         }
       ]
@@ -26733,12 +27601,12 @@
     "lake-toya-volcanic-calm": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          140.76227229999998,
-          42.5493253,
-          140.7662723,
-          42.553325300000004
+          140.81203420000003,
+          42.5366643,
+          140.86735249999998,
+          42.568824
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -26747,20 +27615,137 @@
       "features": [
         {
           "type": "Feature",
-          "id": "lake-toya-volcanic-calm-place",
+          "id": "toya-visitor-center",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              140.7642723,
-              42.5513253
+              140.8150342,
+              42.5638917
             ]
           },
           "properties": {
-            "id": "lake-toya-volcanic-calm-place",
-            "routeStopId": "lake-toya-volcanic-calm-place",
-            "name": "Lake Toya, volcanic calm",
-            "role": "stop",
-            "order": 1
+            "id": "toya-visitor-center",
+            "routeStopId": "toya-visitor-center",
+            "name": "Toyako Visitor Center",
+            "role": "origin",
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.8150342,
+                42.5638917
+              ],
+              [
+                140.82186,
+                42.565824
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "toya-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "toya-shore",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.82186,
+              42.565824
+            ]
+          },
+          "properties": {
+            "id": "toya-shore",
+            "routeStopId": "toya-shore",
+            "order": 1,
+            "name": "Lake Toya lakeside promenade",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.82186,
+                42.565824
+              ],
+              [
+                140.8643525,
+                42.5425537
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "toya-leg-2",
+            "mode": "transit",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "showa-shinzan",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.8643525,
+              42.5425537
+            ]
+          },
+          "properties": {
+            "id": "showa-shinzan",
+            "routeStopId": "showa-shinzan",
+            "order": 2,
+            "name": "Showa Shinzan",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.8643525,
+                42.5425537
+              ],
+              [
+                140.8524111,
+                42.5396643
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "toya-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "usu-ropeway",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.8524111,
+              42.5396643
+            ]
+          },
+          "properties": {
+            "id": "usu-ropeway",
+            "routeStopId": "usu-ropeway",
+            "order": 3,
+            "name": "Usu Ropeway",
+            "role": "stop"
           }
         }
       ]
@@ -26964,12 +27949,12 @@
     "ginzan-after-dark": {
       "type": "FeatureCollection",
       "metadata": {
-        "geometryStatus": "place-locator",
+        "geometryStatus": "schematic-stop-order",
         "bounds": [
-          140.081237,
-          38.4726705,
-          140.085237,
-          38.476670500000004
+          140.5270687,
+          38.5674194,
+          140.5341,
+          38.5744
         ],
         "attribution": "Map data © OpenStreetMap contributors",
         "license": "ODbL-1.0",
@@ -26978,20 +27963,137 @@
       "features": [
         {
           "type": "Feature",
-          "id": "ginzan-after-dark-place",
+          "id": "ginzan-bus-terminal",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              140.083237,
-              38.4746705
+              140.5300687,
+              38.5704194
             ]
           },
           "properties": {
-            "id": "ginzan-after-dark-place",
-            "routeStopId": "ginzan-after-dark-place",
-            "name": "Ginzan after dark",
-            "role": "stop",
-            "order": 1
+            "id": "ginzan-bus-terminal",
+            "routeStopId": "ginzan-bus-terminal",
+            "name": "Ginzan Onsen bus terminal",
+            "role": "origin",
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.5300687,
+                38.5704194
+              ],
+              [
+                140.5302,
+                38.57055
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "ginzan-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "ginzan-bridge",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.5302,
+              38.57055
+            ]
+          },
+          "properties": {
+            "id": "ginzan-bridge",
+            "routeStopId": "ginzan-bridge",
+            "order": 1,
+            "name": "Shiroganebashi Bridge and town entry",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.5302,
+                38.57055
+              ],
+              [
+                140.5305,
+                38.5708
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "ginzan-leg-2",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "ginzan-footbath",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.5305,
+              38.5708
+            ]
+          },
+          "properties": {
+            "id": "ginzan-footbath",
+            "routeStopId": "ginzan-footbath",
+            "order": 2,
+            "name": "Warashiyu footbath",
+            "role": "stop"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                140.5305,
+                38.5708
+              ],
+              [
+                140.5311,
+                38.5714
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "ginzan-leg-3",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "ginzan-waterfall",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              140.5311,
+              38.5714
+            ]
+          },
+          "properties": {
+            "id": "ginzan-waterfall",
+            "routeStopId": "ginzan-waterfall",
+            "order": 3,
+            "name": "Shirogane Waterfall",
+            "role": "stop"
           }
         }
       ]

@@ -14,7 +14,7 @@ async function main(){
   await evaluate('localStorage.clear();sessionStorage.clear();location.reload()');await wait(900);
   const initial=await evaluate('({count:DESTINATIONS.length,version:document.querySelector(".site-version")?.textContent,forbiddenLabels:[...document.querySelectorAll("[class*=illustrative],[class*=unverified]")].filter(el=>/illustrative|unverified/i.test(el.textContent)).length})');
   assert.equal(initial.count,310,'catalogue remains at 310 places');
-  assert.equal(initial.version,'v1.6','visible site version advanced');
+  assert.equal(initial.version,'v1.7','visible site version advanced');
   assert.equal(initial.forbiddenLabels,0,'no illustrative or unverified image labels are rendered');
   await evaluate("(()=>{const q=document.querySelector('#place-search');q.value='onsen';q.dispatchEvent(new Event('input',{bubbles:true}))})()");
   const onsen=await evaluate("({count:document.querySelectorAll('.destination-card').length,text:document.querySelector('#destination-grid').textContent})");

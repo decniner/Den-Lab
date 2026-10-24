@@ -1,12 +1,12 @@
 {
   "generatedOn": "2026-10-24",
   "searchedCount": 10,
-  "matchedCount": 13,
+  "matchedCount": 17,
   "records": [
     {
       "placeId": "daisetsuzan-high-country",
       "place": "Daisetsuzan high country",
-      "query": "daisetsuzan",
+      "query": "Daisetsuzan high country",
       "status": "matched",
       "searchedOn": "2026-10-24",
       "fileTitle": "File:Mount Asahi (Daisetsuzan) under snow, April 2023 03.jpg",
@@ -14,7 +14,7 @@
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Mount_Asahi_(Daisetsuzan)_under_snow,_April_2023_03.jpg",
       "photographer": "Calistemon",
       "license": "CC BY-SA 4.0",
-      "alt": "Photograph of Daisetsuzan high country in Hokkaido, Japan",
+      "alt": "Mount Asahi beneath snow in Daisetsuzan, Hokkaido",
       "matchScore": 10
     },
     {
@@ -48,21 +48,21 @@
     {
       "placeId": "lake-toya-volcanic-calm",
       "place": "Lake Toya, volcanic calm",
-      "query": "lake toya",
+      "query": "Lake Toya, volcanic calm",
       "status": "matched",
       "searchedOn": "2026-10-24",
       "fileTitle": "File:Lake Toya banner.jpg",
       "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Lake_Toya_banner.jpg/1920px-Lake_Toya_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Lake_Toya_banner.jpg",
-      "photographer": "veroyama  from The Windsor Hotel at lakeside Toya, Toyako, Hokkaido",
+      "photographer": "veroyama",
       "license": "CC BY 2.0",
-      "alt": "Photograph of Lake Toya, volcanic calm in Hokkaido, Japan",
+      "alt": "Lake Toya viewed from the Windsor Hotel in Toyako, Hokkaido",
       "matchScore": 10
     },
     {
       "placeId": "matsushima-bay",
       "place": "Matsushima Bay",
-      "query": "matsushima",
+      "query": "Matsushima Bay",
       "status": "matched",
       "searchedOn": "2026-10-24",
       "fileTitle": "File:Miyagi-Landscape of cherry blossoms and Matsushima Bay-xl.jpg",
@@ -70,13 +70,13 @@
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Miyagi-Landscape_of_cherry_blossoms_and_Matsushima_Bay-xl.jpg",
       "photographer": "Makoto_Lab",
       "license": "CC BY 4.0",
-      "alt": "Photograph of Matsushima Bay in Tohoku, Japan",
-      "matchScore": 30
+      "alt": "Cherry blossoms along Matsushima Bay in Miyagi",
+      "matchScore": 10
     },
     {
       "placeId": "oirase-stream-walk",
       "place": "Oirase stream walk",
-      "query": "oirase stream",
+      "query": "Oirase stream walk",
       "status": "matched",
       "searchedOn": "2026-10-24",
       "fileTitle": "File:Oirase Mountain Stream - Towada, Aomori - DSC01252.jpg",
@@ -84,8 +84,8 @@
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Oirase_Mountain_Stream_-_Towada,_Aomori_-_DSC01252.jpg",
       "photographer": "Daderot",
       "license": "CC0",
-      "alt": "Photograph of Oirase stream walk in Tohoku, Japan",
-      "matchScore": 20
+      "alt": "Oirase Mountain Stream in Towada, Aomori",
+      "matchScore": 10
     },
     {
       "placeId": "oze-s-open-wetlands",
@@ -118,7 +118,7 @@
     {
       "placeId": "shiretoko-s-wild-edge",
       "place": "Shiretoko’s wild edge",
-      "query": "shiretoko",
+      "query": "Shiretoko’s wild edge",
       "status": "matched",
       "searchedOn": "2026-10-24",
       "fileTitle": "File:Shiretoko National Park.jpg",
@@ -126,13 +126,13 @@
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Shiretoko_National_Park.jpg",
       "photographer": "Trengarasu",
       "license": "Public domain",
-      "alt": "Photograph of Shiretoko’s wild edge in Hokkaido, Japan",
-      "matchScore": 12
+      "alt": "Mount Io and Mount Shiretoko above the Sea of Okhotsk in Shiretoko National Park",
+      "matchScore": 10
     },
     {
       "placeId": "the-blue-of-biei",
       "place": "The blue of Biei",
-      "query": "The blue of Biei Hokkaido",
+      "query": "The blue of Biei",
       "status": "matched",
       "searchedOn": "2026-10-24",
       "fileTitle": "File:Shirogane Blue Pond, Biei, Hokkaido Japan.jpg",
@@ -140,8 +140,8 @@
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Shirogane_Blue_Pond,_Biei,_Hokkaido_Japan.jpg",
       "photographer": "AndyLeungHK",
       "license": "CC0",
-      "alt": "Photograph of The blue of Biei in Hokkaido, Japan",
-      "matchScore": 22
+      "alt": "Shirogane Blue Pond in Biei, Hokkaido",
+      "matchScore": 10
     },
     {
       "placeId": "kamakura-temple-to-tide",
@@ -183,6 +183,62 @@
       "photographer": "Christophe95",
       "license": "CC BY-SA 4.0",
       "alt": "Shibuya Crossing at night in central Tokyo",
+      "matchScore": 10
+    },
+    {
+      "placeId": "furano-in-bloom",
+      "place": "Furano in bloom",
+      "query": "Furano in bloom",
+      "status": "matched",
+      "searchedOn": "2026-10-24",
+      "fileTitle": "File:Furano Lavender FarmTomita.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Furano_Lavender_FarmTomita.jpg?width=1500",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Furano_Lavender_FarmTomita.jpg",
+      "photographer": "Kentagon",
+      "license": "CC BY-SA 4.0",
+      "alt": "Lavender in bloom at Farm Tomita in Nakafurano, with a butterfly among the flowers",
+      "matchScore": 10
+    },
+    {
+      "placeId": "otaru-by-lamplight",
+      "place": "Otaru by lamplight",
+      "query": "Otaru by lamplight",
+      "status": "matched",
+      "searchedOn": "2026-10-24",
+      "fileTitle": "File:Otaru Canal.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Otaru_Canal.jpg?width=1500",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Otaru_Canal.jpg",
+      "photographer": "Hyougushi / Hideyuki KAMON",
+      "license": "CC BY-SA 2.5",
+      "alt": "Otaru Canal at night in Otaru, Hokkaido",
+      "matchScore": 10
+    },
+    {
+      "placeId": "hakodate-from-above",
+      "place": "Hakodate from above",
+      "query": "Hakodate from above",
+      "status": "matched",
+      "searchedOn": "2026-10-24",
+      "fileTitle": "File:Aerial view of Hakodate at night.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial_view_of_Hakodate_at_night.jpg?width=1400",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Hakodate_at_night.jpg",
+      "photographer": "Fumikas Sagisavas",
+      "license": "CC0 1.0",
+      "alt": "Hakodate city lights at night viewed from Mount Hakodate",
+      "matchScore": 10
+    },
+    {
+      "placeId": "ginzan-after-dark",
+      "place": "Ginzan after dark",
+      "query": "Ginzan after dark",
+      "status": "matched",
+      "searchedOn": "2026-10-24",
+      "fileTitle": "File:Ginzan Onsen - GinzanOnsen7426.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ginzan_Onsen_-_GinzanOnsen7426.jpg?width=1400",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ginzan_Onsen_-_GinzanOnsen7426.jpg",
+      "photographer": "Lumoplank",
+      "license": "CC0 1.0",
+      "alt": "Historic wooden ryokan along the Ginzan Onsen river",
       "matchScore": 10
     }
   ]

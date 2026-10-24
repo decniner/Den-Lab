@@ -293,8 +293,8 @@ for (const [id, config] of Object.entries(guideConfigs)) {
   if (route) html = html.replace(/(<section class="jg-section" id="route">[\s\S]*?<h2>)[\s\S]*?(<\/h2>)[\s\S]*?(<div data-place-route-guide)/i, `$1${esc(config.name)} · visit order$2<p>${esc(routeIntro)}</p><p class="jg-note"><strong>Route timing:</strong> ${esc(route.timeEstimate.label)}. ${esc(route.timeEstimate.basis)} Connectors show stop order, not a measured path.</p>$3`);
   const travelInfo = `<section class="jg-section jg-grid" id="arrival"><div><p class="jg-kicker">GETTING THERE</p><h2>Choose the right arrival</h2><p>${esc(config.record.access)}</p><p class="jg-small">${esc(config.record.visitPlan)}</p><h3>Official planning links</h3><ul>${routeSources}</ul><a class="jg-btn jg-light" href="https://www.google.com/maps/dir/?api=1&amp;destination=${encodeURIComponent(`${config.name}, Japan`)}&amp;travelmode=transit" target="_blank" rel="noopener noreferrer">Train and public transport ↗</a><a class="jg-btn jg-light" href="https://www.google.com/maps/dir/?api=1&amp;destination=${encodeURIComponent(`${config.name}, Japan`)}&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">By car ↗</a><a class="jg-btn jg-light" href="https://www.youtube.com/results?search_query=${encodeURIComponent(`${config.name} Japan travel guide`)}" target="_blank" rel="noopener noreferrer">Watch visitor videos ↗</a></div><aside><div class="jg-fact"><strong>SEASON & CONDITIONS</strong>${esc(config.record.seasonality)}</div><div class="jg-fact"><strong>CONTACT FOR LOCAL HELP</strong>${config.record.contacts.map(contact => `${esc(contact.name)}<br><a href="tel:${esc(contact.phone)}">${esc(contact.phone)}</a>`).join('<br>')}</div><div class="jg-fact"><strong>WHERE TO STAY</strong>${config.record.stayRecommendations.map(stay => `<p><b>${esc(stay.name)}</b> — ${esc(stay.area)}</p>`).join('')}</div><div class="jg-fact"><strong>FEES & VISIT TIME</strong>${esc(config.record.costs[0]?.note || config.record.visitPlan)}</div></aside></section>`;
   html = html.replace(/<section class="jg-section jg-grid" id="arrival">[\s\S]*?<\/section>/i, travelInfo);
-  html = html.replace(/class="guide-version">v\d+\.\d+/g, 'class="guide-version">v1.6');
-  html = html.replace(/Return to Explore Japan · v\d+\.\d+/g, 'Return to Explore Japan · v1.6');
+  html = html.replace(/class="guide-version">v\d+\.\d+/g, 'class="guide-version">v1.7');
+  html = html.replace(/Return to Explore Japan · v\d+\.\d+/g, 'Return to Explore Japan · v1.7');
   html = html.replace(/\.jg-footer\{/i, '.jg-highlight-list,.jg-route-sequence{padding-left:1.25rem}.jg-highlight-list li,.jg-route-sequence li{margin:1rem 0}.jg-route-sequence{list-style:none;padding:0}.jg-route-sequence li{display:grid;grid-template-columns:2.25rem 1fr;gap:.8rem;align-items:start}.jg-step-number{display:grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:#164f43;color:white;font-weight:700}.jg-footer{');
   fs.writeFileSync(file, html, 'utf8');
 }
@@ -306,10 +306,10 @@ function bumpVersions(dir) {
     if (entry.isDirectory()) { if (!['vendor', 'node_modules', '.git'].includes(entry.name)) bumpVersions(file); continue; }
     if (!/\.(?:html|js|mjs|cjs)$/i.test(entry.name)) continue;
     const original = fs.readFileSync(file, 'utf8');
-    const updated = original.replace(/v1\.5/g, 'v1.6');
+    const updated = original.replace(/v1\.5/g, 'v1.7');
     if (updated !== original) fs.writeFileSync(file, updated, 'utf8');
   }
 }
 bumpVersions(root);
 
-console.log(JSON.stringify({ updatedGuides: Object.keys(guideConfigs), routes: [kamakuraRoute.id, hakoneRoute.id], version: 'v1.6' }, null, 2));
+console.log(JSON.stringify({ updatedGuides: Object.keys(guideConfigs), routes: [kamakuraRoute.id, hakoneRoute.id], version: 'v1.7' }, null, 2));
