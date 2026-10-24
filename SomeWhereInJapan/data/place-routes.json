@@ -13390,6 +13390,33 @@
           "supports": [
             "current listed opening hours, brunch service and waitlist policy; reconfirm before travel"
           ]
+        },
+        {
+          "id": "kyoto-at-first-light-tofukuji-foliage",
+          "label": "Kyoto City official: Tofukuji foliage timing",
+          "url": "https://ja.kyoto.travel/flower/momiji/single.php?flower_id=1200",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Tofukuji usually reaches peak autumn color from mid-to-late November"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-autumn-calendar",
+          "label": "Kyoto Tourist Information Center: autumn foliage timing",
+          "url": "https://global.kyoto.travel/en/faq/detail.php?faq_id=2040",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "annual variation in Kyoto foliage timing and typical mid-November peak"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-crowd-season",
+          "label": "Kyoto Tourist Information Center: busiest travel seasons",
+          "url": "https://global.kyoto.travel/en/faq/detail.php?faq_id=4001",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "high visitor volumes from mid-November to early December"
+          ]
         }
       ]
     },
