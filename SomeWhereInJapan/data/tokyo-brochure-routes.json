@@ -282,6 +282,15 @@
           ]
         },
         {
+          "id": "osm-west-harajuku",
+          "label": "OpenStreetMap · Harajuku Station",
+          "url": "https://www.openstreetmap.org/node/6806051378",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Mapped station position"
+          ]
+        },
+        {
           "id": "osm-west-meiji",
           "label": "OpenStreetMap · Meiji Jingu",
           "url": "https://www.openstreetmap.org/way/469908925",
@@ -330,8 +339,36 @@
           }
         },
         {
-          "id": "tokyo-west-shibuya",
+          "id": "tokyo-west-harajuku",
           "order": 2,
+          "name": "Harajuku Station & streets",
+          "area": "Harajuku · Shibuya",
+          "address": "Harajuku Station, Jingumae, Shibuya City, Tokyo, Japan",
+          "story": "Use the station area as the bridge between the shrine grounds and Harajuku’s shopping streets.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.67022,
+            "longitude": 139.70243,
+            "precision": "OpenStreetMap station node",
+            "sourceIds": [
+              "osm-west-harajuku"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Harajuku%20Station%20in%202021%203.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Harajuku_Station_in_2021_3.jpg",
+              "credit": "File author · see Commons page",
+              "license": "CC0 1.0",
+              "alt": "Harajuku Station"
+            }
+          }
+        },
+        {
+          "id": "tokyo-west-shibuya",
+          "order": 3,
           "name": "Shibuya Scramble Crossing",
           "area": "Shibuya · west Tokyo",
           "address": "Shibuya Scramble Crossing, Shibuya City, Tokyo, Japan",
@@ -362,6 +399,22 @@
         {
           "id": "west-tokyo-leg-1",
           "fromId": "tokyo-west-meiji",
+          "toId": "tokyo-west-harajuku",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "sourceIds": [
+              "go-tokyo-meiji",
+              "go-tokyo-harajuku"
+            ]
+          }
+        },
+        {
+          "id": "west-tokyo-leg-2",
+          "fromId": "tokyo-west-harajuku",
           "toId": "tokyo-west-shibuya",
           "mode": "transit",
           "duration": {
@@ -370,7 +423,6 @@
           "geometry": {
             "status": "schematic",
             "sourceIds": [
-              "go-tokyo-meiji",
               "go-tokyo-harajuku",
               "go-tokyo-shibuya"
             ]
