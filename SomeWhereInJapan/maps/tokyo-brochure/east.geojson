@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "cityId": "tokyo",
+    "routeId": "east-tokyo",
+    "sourceUrl": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "extractedOn": "2026-10-24",
+    "bounds": [
+      139.768,
+      35.704,
+      139.802,
+      35.719
+    ],
+    "geometryStatus": "schematic-stop-order"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "route-east",
+      "properties": {
+        "routeLegId": "east-leg-1",
+        "mode": "transit",
+        "routeGeometryStatus": "schematic",
+        "sourceIds": [
+          "osm-east-asakusa",
+          "osm-east-ueno"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            139.7955265,
+            35.7134032
+          ],
+          [
+            139.7745414,
+            35.7100241
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokyo-east-asakusa",
+      "properties": {
+        "name": "Asakusa & Senso-ji",
+        "role": "stop",
+        "routeStopId": "tokyo-east-asakusa",
+        "order": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7955265,
+          35.7134032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokyo-east-ueno",
+      "properties": {
+        "name": "Ueno Park & Ameyoko",
+        "role": "stop",
+        "routeStopId": "tokyo-east-ueno",
+        "order": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7745414,
+          35.7100241
+        ]
+      }
+    }
+  ]
+}
