@@ -79,12 +79,17 @@
     const location = document.createElement('p'); location.className = 'itinerary-stop-location'; location.textContent = placeLocation(place);
     const description = document.createElement('p'); description.className = 'itinerary-stop-description'; description.textContent = place.description || 'Explore the place guide for visitor information.';
     const actions = document.createElement('div'); actions.className = 'itinerary-stop-actions';
-    const previousDay = currentPlan.days[dayIndex - 1];
     const previousStop = currentPlan.days[dayIndex].places[stopIndex - 1];
-    const origin = previousStop ? placeLocation(previousStop) : previousDay?.places?.length ? placeLocation(previousDay.places.at(-1)) : currentConfig.origin;
+    const earlierStops = currentPlan.days.slice(0,dayIndex).flatMap(day=>day.places || []);
+    const priorStop = earlierStops.at(-1);
+    const origin = previousStop ? placeLocation(previousStop) : priorStop ? placeLocation(priorStop) : currentConfig.origin;
     appendLink(actions, 'Open live directions ↗', directionsUrl(origin, place));
     const guide = window.GuideLinks?.destinationUrl?.(place.name);
     if (guide) appendLink(actions, 'Place guide ↗', guide);
+    const dayDate = currentPlan.days[dayIndex].date;
+    const eventWindows = place.eventDates || place.eventWindows;
+    const eventWindow = Array.isArray(eventWindows) ? eventWindows.find(window => window?.start <= dayDate && dayDate <= window?.end) : null;
+    if (eventWindow?.source) appendLink(actions, 'Verified event dates ↗', eventWindow.source);
     const controls = document.createElement('div'); controls.className = 'itinerary-stop-controls';
     const up = document.createElement('button'); up.type = 'button'; up.textContent = 'Move up'; up.disabled = stopIndex === 0; up.setAttribute('aria-label', `Move ${place.name} earlier`);
     up.addEventListener('click', () => { currentPlan = core.moveStop(currentPlan, core.placeKey(place), dayIndex, dayIndex, stopIndex - 1); renderPlan(); });
@@ -93,7 +98,7 @@
     const remove = document.createElement('button'); remove.type = 'button'; remove.textContent = 'Remove'; remove.setAttribute('aria-label', `Remove ${place.name} from Day ${dayIndex + 1}`);
     remove.addEventListener('click', () => { currentPlan = core.removeStop(currentPlan, dayIndex, core.placeKey(place)); renderPlan(); });
     controls.append(up, down, remove);
-    const month = Number(currentPlan.days[dayIndex].date.slice(5,7));
+      const month = Number(currentPlan.days[dayIndex].date.slice(5,7));
     const seasonal = place.monthReasons?.[month] || (Array.isArray(place.months) && place.months.includes(month) ? place.seasonReason : '');
     if (seasonal) { const note = document.createElement('p'); note.className = 'itinerary-season-note'; note.textContent = `Seasonal note: ${seasonal}`; body.append(note); }
     body.prepend(heading, location, description); body.append(actions, controls); card.append(number, body);
@@ -116,7 +121,7 @@
       day.places.push(place); if (!day.region) day.region = place.region; renderPlan();
     });
     label.append(select); wrapper.append(label, add);
-    if (!candidates.length) { const note = document.createElement('small'); note.textContent = 'No unused places remain in this day’s region. Clear a region filter to explore all Japan.'; wrapper.append(note); }
+    if (!candidates.length) { const note = document.createElement('small'); note.textContent = 'No unused places remain in this day’s region. Adjust the region choices above and rebuild to add places from another area.'; wrapper.append(note); }
     return wrapper;
   }
   function renderPlan() {
@@ -136,7 +141,8 @@
       const region = document.createElement('span'); region.className = 'itinerary-day-region'; region.textContent = day.region || 'All Japan';
       header.append(title,date,region); card.append(header);
       const priorRegion = currentPlan.days[index - 1]?.region;
-      if (priorRegion && day.region && priorRegion !== day.region) { const transition = document.createElement('p'); transition.className = 'itinerary-transition'; transition.textContent = `Region change from ${priorRegion} to ${day.region}. Plan this inter-city connection separately; this draft has no transfer time or fare.`; card.append(transition); }
+      if (priorRegion && day.region && priorRegion !== day.region && !day.note?.startsWith('Travel day:')) { const transition = document.createElement('p'); transition.className = 'itinerary-transition'; transition.textContent = `Region change from ${priorRegion} to ${day.region}. Plan this inter-city connection separately; this draft has no transfer time or fare.`; card.append(transition); }
+      if (day.transitionNote) { const transition = document.createElement('p'); transition.className = 'itinerary-transition'; transition.textContent = day.transitionNote; card.append(transition); }
       if (day.note) { const empty = document.createElement('p'); empty.className = 'itinerary-empty-day'; empty.textContent = day.note; card.append(empty); }
       day.places.forEach((place,stopIndex)=>card.append(createStop(place,index,stopIndex)));
       card.append(makeAddControl(day,index)); output.append(card);

@@ -24,9 +24,9 @@
           <label for="itinerary-endpoint">WHERE WILL YOU FINISH?<input id="itinerary-endpoint" name="endpoint" type="text" maxlength="100" placeholder="Optional · e.g. Kansai Airport"></label>
           <label for="itinerary-pace">YOUR PACE<select id="itinerary-pace" name="pace"><option value="relaxed">Relaxed · up to 2 stops/day</option><option value="balanced" selected>Balanced · up to 3 stops/day</option><option value="active">Active · up to 4 stops/day</option></select></label>
         </div>
-        <fieldset class="itinerary-choice-group"><legend>WHICH REGIONS? <span>Leave unchecked to let the planner choose up to four best-fit regions from your first trip month and interests</span></legend><div id="itinerary-regions" class="itinerary-chip-list"></div></fieldset>
+        <fieldset class="itinerary-choice-group"><legend>WHICH REGIONS? <span>Leave unchecked to focus your draft on one best-fit region for your trip month and interests</span></legend><div id="itinerary-regions" class="itinerary-chip-list"></div></fieldset>
         <fieldset class="itinerary-choice-group"><legend>WHAT DO YOU ENJOY?</legend><div id="itinerary-interests" class="itinerary-chip-list"></div></fieldset>
-        <p id="itinerary-form-note" class="itinerary-form-note">Your draft organizes places from this guide. It does not calculate train times, fares, opening hours, or the best order between cities. Check linked place guides and live directions before booking.</p>
+        <p id="itinerary-form-note" class="itinerary-form-note">Your draft groups places by area and date. When your start location identifies a different region, it reserves a transfer day. It does not calculate train times, fares, opening hours, or the best order between cities. Check linked place guides and live directions before booking.</p>
         <button class="button button-dark" type="submit">Build my itinerary <span aria-hidden="true">↗</span></button>
       </form>
       <div class="itinerary-result-tools" id="itinerary-result-tools" hidden><p id="itinerary-status" role="status" aria-live="polite"></p><div><button type="button" id="itinerary-save">Save on this device</button><button type="button" id="itinerary-share">Share itinerary</button><button type="button" id="itinerary-print">Print</button><button type="button" id="itinerary-clear">Clear plan</button></div></div>

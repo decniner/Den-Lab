@@ -7,7 +7,64 @@
 
   const PACE_LIMITS = Object.freeze({ relaxed: 2, balanced: 3, active: 4 });
   const MONTHS = Object.freeze(['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']);
+  const REGIONS = new Set(['Hokkaido','Tohoku','Kanto','Chubu','Kansai','Chugoku','Shikoku','Kyushu','Okinawa','Japan']);
+  const PREFECTURES = new Set(['Hokkaido','Aomori','Iwate','Miyagi','Akita','Yamagata','Fukushima','Ibaraki','Tochigi','Gunma','Saitama','Chiba','Kanagawa','Niigata','Toyama','Ishikawa','Fukui','Yamanashi','Nagano','Gifu','Shizuoka','Aichi','Mie','Shiga','Hyogo','Nara','Wakayama','Tottori','Shimane','Okayama','Hiroshima','Yamaguchi','Tokushima','Kagawa','Ehime','Kochi','Fukuoka','Saga','Nagasaki','Kumamoto','Oita','Miyazaki','Kagoshima']);
+  const AREA_ROUTE_ORDER = Object.freeze({
+    Hokkaido:['Sapporo','Otaru','Shakotan','Niseko','Toyako','Noboribetsu','Hakodate','Furano','Biei','Asahikawa','Daisetsuzan','Kushiro','Teshikaga','Abashiri','Shiretoko','Shari','Wakkanai'],
+    Okinawa:['Naha','Chatan','Nago','Motobu','Nakijin','Kunigami','Itoman','Nanjo','Ishigaki','Miyako'],
+    Kanto:['Tokyo','Maihama','Yokohama','Kamakura','Fujisawa','Futtsu','Hakone','Kawagoe','Nikko','Utsunomiya'],
+    Kansai:['Kyoto','Osaka','Nara','Kobe','Kinosaki','Wakayama','Ise'],
+    Kyushu:['Fukuoka','Yanagawa','Nagasaki','Kumamoto','Aso','Beppu','Yufuin','Kagoshima','Yakushima']
+  });
   const placeKey = place => String(place?.id || place?.slug || place?.name || '');
+
+  function localityKey(place) {
+    const raw = String(place?.place || '').trim();
+    if (!raw) return String(place?.name || 'Unspecified area');
+    const tokens = raw.split(/[·,]/).map(value => value.trim()).filter(Boolean);
+    const local = tokens.filter(value => !REGIONS.has(value) && !PREFECTURES.has(value));
+    // Tokyo, Osaka and Kyoto are both prefectures and city names; keep them as
+    // useful city clusters when they appear as the final location component.
+    const final = tokens.at(-1);
+    if (['Tokyo','Osaka','Kyoto'].includes(final)) return final;
+    return local.at(-1) || final || raw;
+  }
+
+  function eventMatchesDate(place, date) {
+    const windows = place.eventDates || place.eventWindows;
+    if (!Array.isArray(windows) || !windows.length) return true;
+    const key = dateKey(date);
+      return windows.some(window => /^\d{4}-\d{2}-\d{2}$/.test(String(window?.start || '')) && /^\d{4}-\d{2}-\d{2}$/.test(String(window?.end || '')) && window.start <= key && key <= window.end);
+  }
+
+  function areaRouteRank(region, locality) {
+    const route = AREA_ROUTE_ORDER[region];
+    if (!route) return -1;
+    const name = String(locality || '').toLowerCase();
+    return route.findIndex(candidate => name === candidate.toLowerCase() || name.includes(candidate.toLowerCase()));
+  }
+
+  function isFullDayPlace(place) {
+    if (place?.fullDay === true) return true;
+    const description = `${place?.name || ''} ${place?.description || ''}`;
+    return /\bfull[- ]day\b|\btakes several hours to explore\b/i.test(description);
+  }
+
+  function inferOriginRegion(origin) {
+    const value = String(origin || '').toLowerCase();
+    const aliases = [
+      ['Hokkaido',/hokkaido|sapporo|otaru|hakodate|asahikawa/],
+      ['Tohoku',/tohoku|aomori|morioka|sendai|akita|yamagata|fukushima/],
+      ['Kanto',/kanto|tokyo|haneda|narita|yokohama|kamakura|nikko|kawagoe/],
+      ['Chubu',/chubu|nagoya|kanazawa|matsumoto|shizuoka|fuji/],
+      ['Kansai',/kansai|kyoto|osaka|kobe|nara|itami/],
+      ['Chugoku',/chugoku|hiroshima|okayama|tottori|shimane/],
+      ['Shikoku',/shikoku|takamatsu|matsuyama|kochi/],
+      ['Kyushu',/kyushu|fukuoka|nagasaki|kumamoto|kagoshima/],
+      ['Okinawa',/okinawa|naha|ishigaki|miyako/]
+    ];
+    return aliases.find(([,pattern])=>pattern.test(value))?.[0] || '';
+  }
 
   function parseDate(value) {
     const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value || ''));
@@ -32,7 +89,7 @@
     return { score, seasonal };
   }
 
-  function buildItinerary({ destinations = [], startDate, days = 0, regions = [], interests = [], pace = 'balanced', savedIds = [] } = {}) {
+  function buildItinerary({ destinations = [], startDate, days = 0, regions = [], interests = [], pace = 'balanced', savedIds = [], origin = '' } = {}) {
     const firstDate = parseDate(startDate);
     const count = Math.max(0, Math.min(31, Math.floor(Number(days) || 0)));
     const safePlaces = Array.isArray(destinations) ? destinations.filter(place => place && place.name && place.region) : [];
@@ -50,51 +107,114 @@
     if (!regionPlan.length) {
       const availableRegions = [...new Set(safePlaces.map(place => place.region))];
       const firstMonth = firstDate.getMonth() + 1;
+      const lastTripDate = new Date(firstDate.getFullYear(),firstDate.getMonth(),firstDate.getDate()+count-1);
+      const firstTripKey = dateKey(firstDate);
+      const lastTripKey = dateKey(lastTripDate);
       const ranked = availableRegions.map((region, originalIndex) => {
         const matches = safePlaces.filter(place => place.region === region).map(place => ({place,...scorePlace(place,firstMonth,safeInterests,saved)})).sort((a,b)=>b.score-a.score);
         const top = matches.slice(0, 8);
         const seasonalCount = matches.filter(item=>item.seasonal).length;
+        const eventCount = matches.filter(item => {
+          const windows = item.place.eventDates || item.place.eventWindows;
+          return Array.isArray(windows) && windows.some(window => window?.start <= lastTripKey && window?.end >= firstTripKey);
+        }).length;
         const average = top.length ? top.reduce((sum,item)=>sum+item.score,0)/top.length : 0;
-        return {region,originalIndex,quality:average+Math.log1p(matches.length)*0.35+seasonalCount*0.15};
+        return {region,originalIndex,quality:average+Math.log1p(matches.length)*0.35+seasonalCount*0.15+eventCount*5};
       }).sort((a,b)=>b.quality-a.quality||a.originalIndex-b.originalIndex);
-      const regionCount = Math.min(ranked.length, 4, Math.max(1, Math.ceil(count/4)));
+      // A short trip plan should stay based in one region by default. Visitors
+      // can deliberately choose more regions; otherwise a national sampler
+      // creates unrealistic jumps between islands and distant cities.
+      const regionCount = Math.min(ranked.length, 1);
       regionPlan = ranked.slice(0,regionCount).map(item=>item.region);
+      if (regionPlan.length) notes.push(`No region was selected, so this draft focuses on ${regionPlan[0]}. Choose more than one region to include a transfer day between regions.`);
     }
+
+    const originRegion = inferOriginRegion(origin);
+    const initialTransfer = Boolean(originRegion && regionPlan[0] && originRegion !== regionPlan[0]);
+    const maxRegions = Math.max(1, Math.floor((count - (initialTransfer ? 1 : 0) + 1) / 2));
+    if (regionPlan.length > maxRegions) {
+      const omitted = regionPlan.slice(maxRegions);
+      regionPlan = regionPlan.slice(0,maxRegions);
+      notes.push(`This trip is too short to cover every selected region with a connection day. The draft includes ${regionPlan.join(', ')} and leaves out ${omitted.join(', ')}.`);
+    }
+    const transferDays = Math.max(0, regionPlan.length - 1) + (initialTransfer ? 1 : 0);
+    const sightseeingDays = Math.max(0, count - transferDays);
+    const daysPerRegion = Math.floor(sightseeingDays / Math.max(1, regionPlan.length));
+    let extraSightseeingDays = sightseeingDays % Math.max(1, regionPlan.length);
+    const regionSchedule = [];
+    if (initialTransfer) regionSchedule.push({region:regionPlan[0],transferFrom:String(origin),initial:true});
+    regionPlan.forEach((region,index) => {
+      const stayLength = daysPerRegion + (extraSightseeingDays-- > 0 ? 1 : 0);
+      for (let day = 0; day < stayLength; day++) regionSchedule.push({region});
+      if (index < regionPlan.length - 1) regionSchedule.push({region:regionPlan[index + 1],transferFrom:region});
+    });
 
     let sawSeasonMatch = false;
     let hadUnseasonedDay = false;
+    const activeLocalityByRegion = new Map();
     for (let offset = 0; offset < count; offset++) {
       const date = new Date(firstDate.getFullYear(), firstDate.getMonth(), firstDate.getDate() + offset);
       const month = date.getMonth() + 1;
-      const assignedIndex = Math.min(regionPlan.length - 1, Math.floor(offset * regionPlan.length / count));
-      let region = regionPlan[assignedIndex] || '';
-      const remaining = safePlaces.filter(place => !used.has(placeKey(place)) && (!safeRegions.length || safeRegions.includes(place.region)));
-      let pool = remaining.filter(place => !region || place.region === region);
-      if (!pool.length) {
-        for (let step = 1; step < regionPlan.length; step++) {
-          const candidateRegion = regionPlan[(assignedIndex + step) % regionPlan.length];
-          const candidatePool = remaining.filter(place => place.region === candidateRegion);
-          if (candidatePool.length) { region = candidateRegion; pool = candidatePool; break; }
-        }
+      const scheduledDay = regionSchedule[offset] || {region:regionPlan[0] || ''};
+      let region = scheduledDay.region || '';
+      if (scheduledDay.transferFrom) {
+        resultDays.push({date:dateKey(date),month:MONTHS[month-1],region,places:[],note:`Travel day: connect from ${scheduledDay.transferFrom} to ${region}. No sightseeing stops are scheduled. Confirm transport, weather, and arrival timing before booking.`});
+        continue;
       }
-      if (!pool.length && !safeRegions.length) pool = remaining;
+      const remaining = safePlaces.filter(place => !used.has(placeKey(place)) && (!safeRegions.length || safeRegions.includes(place.region)) && eventMatchesDate(place,date));
+      let pool = remaining.filter(place => !region || place.region === region);
       if (!pool.length) {
         resultDays.push({ date: dateKey(date), month: MONTHS[month - 1], region: region || '', places: [], note: 'No more unused places match the selected regions. Add destinations or adjust the region choices.' });
         continue;
       }
 
-      const scored = pool.map(place => ({ place, ...scorePlace(place, month, safeInterests, saved) }))
+      const scored = pool.map(place => ({ place, locality: localityKey(place), ...scorePlace(place, month, safeInterests, saved) }))
         .sort((a, b) => b.score - a.score || String(a.place.name).localeCompare(String(b.place.name)));
-      const seasonalCandidates = scored.filter(item => item.seasonal);
+      const localityGroups = new Map();
+      scored.forEach(item => {
+        if (!localityGroups.has(item.locality)) localityGroups.set(item.locality, []);
+        localityGroups.get(item.locality).push(item);
+      });
+      const activeLocality = activeLocalityByRegion.get(region);
+      const [locality, localCandidates] = (activeLocality && localityGroups.has(activeLocality)
+        ? [activeLocality, localityGroups.get(activeLocality)]
+        : [...localityGroups.entries()].sort((a,b) => {
+          const activeRank = areaRouteRank(region,activeLocality);
+          const aRank = areaRouteRank(region,a[0]);
+          const bRank = areaRouteRank(region,b[0]);
+          if (activeRank >= 0) {
+            const aForward = aRank < 0 || aRank >= activeRank;
+            const bForward = bRank < 0 || bRank >= activeRank;
+            if (aForward !== bForward) return aForward ? -1 : 1;
+          }
+          if (aRank >= 0 && bRank >= 0 && aRank !== bRank) return aRank - bRank;
+          if (aRank >= 0 && bRank < 0) return -1;
+          if (bRank >= 0 && aRank < 0) return 1;
+          const aSeasonal = a[1].filter(item=>item.seasonal);
+          const bSeasonal = b[1].filter(item=>item.seasonal);
+          const aBest = (aSeasonal.length ? aSeasonal : a[1])[0];
+          const bBest = (bSeasonal.length ? bSeasonal : b[1])[0];
+          return bBest.score - aBest.score || b[1].length - a[1].length || a[0].localeCompare(b[0]);
+        })[0]);
+      const seasonalCandidates = localCandidates.filter(item => item.seasonal);
       if (seasonalCandidates.length) sawSeasonMatch = true;
       else hadUnseasonedDay = true;
-      const candidates = seasonalCandidates.length ? seasonalCandidates : scored;
-      const selected = candidates.slice(0, limit).map(item => item.place);
+      const candidates = seasonalCandidates.length ? seasonalCandidates : localCandidates;
+      activeLocalityByRegion.set(region,locality);
+      const fullDayStop = candidates.find(item => isFullDayPlace(item.place));
+      const selected = fullDayStop
+        ? [fullDayStop.place]
+        : candidates.slice(0, limit).map(item => item.place);
       selected.forEach(place => used.add(placeKey(place)));
       region = selected[0]?.region || region;
+      const priorDay = resultDays.at(-1);
+      const priorLocality = priorDay?.locality || '';
       resultDays.push({
-        date: dateKey(date), month: MONTHS[month - 1], region,
+        date: dateKey(date), month: MONTHS[month - 1], region, locality,
         places: selected,
+        transitionNote: priorDay?.locality && priorDay.region === region && priorLocality !== locality
+          ? `Area change from ${priorLocality} to ${locality}. Check the local connection and allow enough time to travel.`
+          : '',
         seasonalNote: selected.find(place => place.monthReasons?.[month])?.monthReasons?.[month] || selected.find(place => typeof place.seasonReason === 'string' && Array.isArray(place.months) && place.months.includes(month))?.seasonReason || ''
       });
     }
@@ -102,6 +222,11 @@
     else if (hadUnseasonedDay) notes.push('Some selected places have no month-specific note in the catalog. Treat those as general ideas and check seasonal conditions before booking.');
     const itineraryRegions = new Set(resultDays.map(day => day.region).filter(Boolean));
     if (itineraryRegions.size > 1) notes.push('This draft moves between regions. It does not calculate inter-city travel time, fares, or the best transport order; check each connection before booking.');
+    const hasUnscheduledEvents = safePlaces.some(place => {
+      const windows = place.eventDates || place.eventWindows;
+      return Array.isArray(windows) && windows.length && !resultDays.some(day => windows.some(window => window?.start <= day.date && day.date <= window?.end));
+    });
+    if (hasUnscheduledEvents) notes.push('Some date-specific events were left out because their confirmed event dates do not overlap your trip dates. Check the official event calendar for other years.');
     notes.push('Suggested stop order only. Travel times, opening days, event schedules, and access can change; confirm them with linked official sources where available and live directions.');
     return { days: resultDays, notes };
   }
