@@ -1,6 +1,6 @@
 # Content progress — Somewhere in Japan
 
-Gate result: **14/310 places complete**. A row is complete only when every research, data, page, access, seasonal, and source-date check in the audit passes. Last audited: 2026-10-24.
+Gate result: **34/310 places complete**. A row is complete only when every research, data, page, access, seasonal, and source-date check in the audit passes. Last audited: 2026-10-24.
 
 | Place | Region | Batch | Checklist | Sources | Photo | Gaps |
 |---|---|---:|---|---:|---|---|
@@ -14,30 +14,30 @@ Gate result: **14/310 places complete**. A row is complete only when every resea
 | Matsushima Bay | Tohoku | 1 · priority | PASS | 11 (4 dated) | verified | — |
 | Ginzan after dark | Tohoku | 1 · priority | PASS | 5 (4 dated) | verified | — |
 | Oirase stream walk | Tohoku | 1 · priority | PASS | 8 (4 dated) | verified | — |
-| Hirosaki in blossom | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Hiraizumi’s quiet temples | Tohoku | 1 · priority | FAIL (8) | 7 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Tazawa’s clear blue | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| The three mountains of Dewa | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Aizu-Wakamatsu’s samurai streets | Tohoku | 1 · priority | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
+| Hirosaki in blossom | Tohoku | 1 · priority | PASS | 5 (4 dated) | verified | — |
+| Hiraizumi’s quiet temples | Tohoku | 1 · priority | PASS | 12 (5 dated) | verified | — |
+| Tazawa’s clear blue | Tohoku | 1 · priority | PASS | 6 (5 dated) | verified | — |
+| The three mountains of Dewa | Tohoku | 1 · priority | PASS | 6 (5 dated) | verified | — |
+| Aizu-Wakamatsu’s samurai streets | Tohoku | 1 · priority | PASS | 5 (4 dated) | verified | — |
 | Tokyo, in layers | Kanto | region · Kanto | PASS | 8 (16 dated) | verified | — |
 | Nikko in the cedars | Kanto | region · Kanto | PASS | 20 (20 dated) | verified | — |
 | Kamakura, temple to tide | Kanto | region · Kanto | PASS | 11 (11 dated) | verified | — |
 | Hakone through the mist | Kanto | region · Kanto | PASS | 12 (12 dated) | verified | — |
-| Yokohama’s harbor lights | Kanto | region · Kanto | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Kusatsu, steam and springs | Kanto | region · Kanto | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Oze’s open wetlands | Kanto | region · Kanto | FAIL (8) | 2 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Fuji, from the water | Chubu | region · Chubu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Kanazawa, unhurried | Chubu | region · Chubu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Shirakawa-go, under steep roofs | Chubu | region · Chubu | FAIL (8) | 2 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Takayama’s old quarter | Chubu | region · Chubu | FAIL (9) | 1 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Matsumoto beneath the Alps | Chubu | region · Chubu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Kamikochi, the mountain valley | Chubu | region · Chubu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Kiso Valley post towns | Chubu | region · Chubu | FAIL (10) | 1 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content, repeated-story-or-highlight-sentence |
-| Sado Island’s wild coast | Chubu | region · Chubu | FAIL (8) | 3 (3 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, structured-story-and-highlights, card-dialog-specific-content |
-| Kyoto at first light | Kansai | region · Kansai | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Osaka, after hours | Kansai | region · Kansai | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Nara, between trees | Kansai | region · Kansai | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Arashiyama’s green corridor | Kansai | region · Kansai | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
+| Yokohama’s harbor lights | Kanto | region · Kanto | PASS | 5 (4 dated) | verified | — |
+| Kusatsu, steam and springs | Kanto | region · Kanto | PASS | 6 (5 dated) | verified | — |
+| Oze’s open wetlands | Kanto | region · Kanto | PASS | 7 (5 dated) | verified | — |
+| Fuji, from the water | Chubu | region · Chubu | PASS | 6 (5 dated) | verified | — |
+| Kanazawa, unhurried | Chubu | region · Chubu | PASS | 6 (5 dated) | verified | — |
+| Shirakawa-go, under steep roofs | Chubu | region · Chubu | PASS | 7 (5 dated) | verified | — |
+| Takayama’s old quarter | Chubu | region · Chubu | PASS | 6 (5 dated) | verified | — |
+| Matsumoto beneath the Alps | Chubu | region · Chubu | PASS | 6 (5 dated) | verified | — |
+| Kamikochi, the mountain valley | Chubu | region · Chubu | PASS | 6 (5 dated) | verified | — |
+| Kiso Valley post towns | Chubu | region · Chubu | PASS | 6 (5 dated) | verified | — |
+| Sado Island’s wild coast | Chubu | region · Chubu | PASS | 6 (5 dated) | verified | — |
+| Kyoto at first light | Kansai | region · Kansai | PASS | 6 (5 dated) | verified | — |
+| Osaka, after hours | Kansai | region · Kansai | PASS | 5 (4 dated) | verified | — |
+| Nara, between trees | Kansai | region · Kansai | PASS | 6 (5 dated) | verified | — |
+| Arashiyama’s green corridor | Kansai | region · Kansai | PASS | 6 (5 dated) | verified | — |
 | Himeji, the white heron | Kansai | region · Kansai | FAIL (8) | 2 (0 dated) | verified | uniqueStory, highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Koyasan after dusk | Kansai | region · Kansai | FAIL (9) | 1 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Kumano Kodo, the old paths | Kansai | region · Kansai | FAIL (8) | 3 (2 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, structured-story-and-highlights, card-dialog-specific-content |
@@ -85,7 +85,7 @@ Gate result: **14/310 places complete**. A row is complete only when every resea
 | Kawagoe, the little Edo | Kanto | region · Kanto | FAIL (7) | 7 (0 dated) | verified | highlights, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Tateyama Kurobe Alpine Route | Chubu | region · Chubu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Zenkoji, a temple town morning | Chubu | region · Chubu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
-| Izu Peninsula, the long way round | Chubu | region · Chubu | FAIL (8) | 2 (2 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, structured-story-and-highlights, card-dialog-specific-content |
+| Izu Peninsula, the long way round | Chubu | region · Chubu | FAIL (7) | 2 (2 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, practicalDetail, seasonality, structured-story-and-highlights, card-dialog-specific-content |
 | Oshino Hakkai and Fuji views | Chubu | region · Chubu | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Amanohashidate, sea and sky | Kansai | region · Kansai | FAIL (9) | 0 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content |
 | Kiyomizu-dera above Kyoto | Kansai | region · Kansai | FAIL (10) | 1 (0 dated) | removed-unverified | uniqueStory, highlights, verifiedPhoto, accessFacts, practicalDetail, seasonality, datedSources, structured-story-and-highlights, card-dialog-specific-content, repeated-story-or-highlight-sentence |

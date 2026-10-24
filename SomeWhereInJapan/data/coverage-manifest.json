@@ -188,13 +188,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/hirosaki-in-blossom/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -207,12 +205,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/hiraizumi-s-quiet-temples/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -226,13 +222,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/tazawa-s-clear-blue/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -245,13 +239,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/the-three-mountains-of-dewa/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -264,13 +256,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/aizu-wakamatsu-s-samurai-streets/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -362,13 +352,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/yokohama-s-harbor-lights/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -381,13 +369,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/kusatsu-steam-and-springs/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -400,12 +386,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/oze-s-open-wetlands/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -419,13 +403,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/fuji-from-the-water/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -438,13 +420,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/kanazawa-unhurried/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -457,12 +437,10 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/shirakawa-go-under-steep-roofs/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
       "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
@@ -476,13 +454,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/takayama-s-old-quarter/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -495,13 +471,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/matsumoto-beneath-the-alps/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -514,13 +488,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/kamikochi-the-mountain-valley/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -533,13 +505,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/kiso-valley-post-towns/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -552,17 +522,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/sado-island-s-wild-coast/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "invalid-visit-point",
-        "missing-stay-recommendations",
-        "photo-not-verified",
-        "map-location-not-verified",
-        "weather-plan-not-verified"
-      ],
-      "sourceStatus": "sources-recorded",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -575,13 +539,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/kyoto-at-first-light/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -594,13 +556,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/osaka-after-hours/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -613,13 +573,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/nara-between-trees/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {
@@ -632,13 +590,11 @@
       "url": "/Den-Lab/SomeWhereInJapan/places/arashiyama-s-green-corridor/",
       "aliasOf": null,
       "oldPaths": [],
-      "guideStatus": "provisional",
-      "guide_status": "provisional",
-      "missing": [
-        "researched guide details"
-      ],
-      "sourceStatus": "not-researched",
-      "imageStatus": "removed-unverified",
+      "guideStatus": "complete",
+      "guide_status": "complete",
+      "missing": [],
+      "sourceStatus": "researched",
+      "imageStatus": "verified",
       "mapStatus": "osm-area-locator"
     },
     {

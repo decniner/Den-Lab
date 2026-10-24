@@ -485,134 +485,121 @@
       "nextAction": "Verify coordinate and accessible entrance, current transport details, phone contact, nearby stay recommendations, weather plan, and photo license."
     },
     "sado-island-s-wild-coast": {
-      "story": "Sado’s island story moves between exile history, gold mining, Kodo drumming, rice-growing landscapes and the Japanese crested ibis. Its scale matters: treat the port crossing as the start of a longer stay rather than assuming an island circuit fits a quick stop.",
-      "visitPlan": "Choose one side of Sado as a base and plan around the ferry port and current local transport. The national tourism guide notes that Sado can be visited in a day, but recommends an overnight stay; a short stay will leave large distances between experiences.",
-      "access": "Sado is reached by ferry. The Niigata–Ryotsu route has car ferries and jetfoils; the Naoetsu–Ogi route is seasonal and may not run in winter. Confirm the ferry operator timetable and fares for your date before booking connections.",
-      "arrivalOptions": [
-        "Niigata Port to Ryotsu Port by car ferry or jetfoil",
-        "Naoetsu Port to Ogi Port by seasonal car ferry"
+      "story": "Sado’s western coast feels shaped by weather. At Senkakuwan, sea and rock form narrow inlets, cliffs and offshore pinnacles; the lookout makes their scale clear, while a boat, when running, reveals coves from below. Nearby Aikawa carries another history. The Kitazawa Flotation Plant rises as a vast concrete ruin reclaimed by grass, a reminder of mining that transformed the island. Continue to Sado Gold Mine to follow tunnels and machinery through its mining story, including labor history that deserves careful attention. These points sit across a broad island, so a car gives the most flexibility; buses connect settlements but run less frequently. Ferries link Niigata with Ryotsu, while the jetfoil is faster and cannot carry cars. Sado rewards several days more than a rushed excursion. Check ferry reservations, bus timetables and coastal boat operation before choosing the order. Senkakuwan Bay. View jagged sea cliffs from the lookout; boat service depends on season and sea conditions. Kitazawa Flotation Plant. Walk industrial ruins and learn how ore processing shaped Aikawa. Sado Gold Mine. Explore preserved mine tunnels and exhibitions; allow time for the site’s labor history.",
+      "visitPlan": "Drive to Senkakuwan for the cliffs, return to the Kitazawa Flotation Plant, then continue to Sado Gold Mine. Allow a full day; check the last ferry if not staying overnight. Allow 6-8 hours for this itinerary, as an estimate.",
+      "seasonality": "Coastal viewpoints are open year-round, but boats and some facilities are seasonal or weather dependent. Winter wind and snow can affect ferries and roads.",
+      "access": "Take a ferry or jetfoil from Niigata Port to Ryotsu; reach Niigata by JR rail, airport bus or car. Sado has no passenger railway or commercial airport. Rental cars near the port help connect coastal and mining sites; buses run less frequently. The west-coast stops are separated by road, not a walking path.",
+      "areas": [
+        "Niigata · Chubu"
+      ],
+      "highlights": [
+        "Senkakuwan Bay",
+        "Kitazawa Flotation Plant",
+        "Sado Gold Mine"
       ],
       "points": [
         {
-          "name": "Ryotsu Port"
+          "name": "Senkakuwan Bay",
+          "description": "View jagged sea cliffs from the lookout; boat service depends on season and sea conditions."
         },
         {
-          "name": "Ogi Port"
+          "name": "Kitazawa Flotation Plant",
+          "description": "Walk industrial ruins and learn how ore processing shaped Aikawa."
         },
         {
-          "name": "Sado Gold Mine"
-        },
-        {
-          "name": "Nishimikawa Gold Park"
-        },
-        {
-          "name": "Osado Skyline"
-        }
-      ],
-      "accessModes": {
-        "rail": {
-          "status": "known",
-          "detail": "Rail reaches the mainland ports at Niigata and Naoetsu; the island crossing itself is by ferry.",
-          "sourceIds": [
-            "sado_local",
-            "sado_jnto"
-          ]
-        },
-        "bus": {
-          "status": "unknown",
-          "note": "Island bus access to chosen attractions and current timetables have not been checked."
-        },
-        "air": {
-          "status": "unknown",
-          "note": "No direct island flight option was verified in the reviewed sources; use the ferry operator’s current guidance."
-        },
-        "car": {
-          "status": "known",
-          "detail": "The Niigata–Ryotsu route and Naoetsu–Ogi route include car ferry service; confirm vehicle space and sailing availability.",
-          "sourceIds": [
-            "sado_jnto",
-            "sado_ferry"
-          ]
-        }
-      },
-      "contacts": [
-        {
-          "status": "unknown",
-          "note": "A destination-wide visitor phone number has not been confirmed."
-        }
-      ],
-      "stayRecommendations": [],
-      "costs": [
-        {
-          "status": "unknown",
-          "component": "ferry, local transport, and admissions",
-          "sourceIds": [
-            "sado_ferry"
-          ]
-        }
-      ],
-      "mapLocation": {
-        "status": "unknown",
-        "note": "Sado is an island-wide guide; a single center coordinate would be misleading."
-      },
-      "photo": {
-        "status": "unverified"
-      },
-      "weatherPlan": {
-        "status": "unknown",
-        "alternative": "Ferry service and island access can vary seasonally; no separate bad-weather activity plan has been verified."
-      },
-      "claims": [
-        {
-          "id": "sado-ferry-only",
-          "text": "The JNTO guide states Sado is reached by ferry and identifies Niigata–Ryotsu and seasonal Naoetsu–Ogi routes.",
-          "sourceIds": [
-            "sado_jnto"
-          ]
-        },
-        {
-          "id": "sado-overnight",
-          "text": "The JNTO guide says an overnight stay can be rewarding given the island’s scale and experiences.",
-          "sourceIds": [
-            "sado_jnto"
-          ]
-        },
-        {
-          "id": "sado-mainland-access",
-          "text": "The tourism association lists approximate rail, road and bus approaches to the mainland ferry ports.",
-          "sourceIds": [
-            "sado_local"
-          ]
+          "name": "Sado Gold Mine",
+          "description": "Explore preserved mine tunnels and exhibitions; allow time for the site’s labor history."
         }
       ],
       "sources": [
         {
-          "id": "sado_jnto",
-          "organization": "Japan National Tourism Organization",
-          "title": "Sado Island destination guide",
-          "url": "https://www.japan.travel/en/destinations/hokuriku-shinetsu/niigata/sado-island/",
-          "checkedOn": "2026-10-23",
-          "evidenceNotes": "Official national tourism overview with ferry access, island themes, and a recommendation to check seasonal ferry timetables."
+          "id": "sado-island-s-wild-coast-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Sado Kisen official access map",
+          "url": "https://www.sadokisen.co.jp/en/access-map/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
         },
         {
-          "id": "sado_local",
-          "organization": "Sado Sightseeing Navigation",
-          "title": "Overview and access to Sado Island",
-          "url": "https://www.visitsado.com/en/outline/",
-          "checkedOn": "2026-10-23",
-          "evidenceNotes": "Sado tourism association access guide distinguishes train/road approaches to ports and seasonal ferry service; reviewed page contains placeholder copy in its secondary-transport section, which was excluded."
+          "id": "sado-island-s-wild-coast-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Sado Kisen: travel without a car",
+          "url": "https://www.sadokisen.co.jp/en/user-guide/without-car/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
         },
         {
-          "id": "sado_ferry",
-          "organization": "Sado Kisen",
-          "title": "Passenger reservation and travel guide",
-          "url": "https://www.sadokisen.co.jp/en/user-guide/reservation/",
-          "checkedOn": "2026-10-23",
-          "evidenceNotes": "Ferry operator passenger guidance; live schedules and fares must be checked for the travel date."
+          "id": "sado-island-s-wild-coast-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Sado Island tourism guide",
+          "url": "https://www.visitsado.com/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "sado-island-s-wild-coast-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Sado Kisen Rental Car contact",
+          "url": "https://www.sadokisen.co.jp/en/rentacar/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "sado-island-s-wild-coast-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Sado%20Island%E2%80%99s%20wild%20coast",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
         }
       ],
-      "status": "partially-verified",
-      "nextAction": "Choose a specific island area, verify exact site addresses and coordinates, local transit, phone contacts, stay recommendations, ferry fare evidence, weather safety, and photo license."
+      "contacts": [
+        {
+          "name": "Sado Kisen Rental Car (Ryotsu and Ogi branches)",
+          "phone": "+81-259-27-5195",
+          "sourceIds": [
+            "sado-island-s-wild-coast-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay in Aikawa for the mine and west coast, or Ryotsu for ferry arrival and bus connections",
+          "area": "Stay in Aikawa for the mine and west coast, or Ryotsu for ferry arrival and bus connections.",
+          "sourceIds": [
+            "sado-island-s-wild-coast-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Viewpoints, boat trips, mine exhibits, ferries and rental cars have separate fees. Verify current timetables and admissions.",
+          "sourceIds": [
+            "sado-island-s-wild-coast-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Senj%C5%8Djiki.jpg?width=1400",
+        "source": "https://commons.wikimedia.org/wiki/File:Senj%C5%8Djiki.jpg",
+        "credit": "Commons file author listed on source page",
+        "license": "CC BY-SA 4.0",
+        "alt": "Senjōjiki rocky coast near Aikawa on Sado Island",
+        "sourceIds": [
+          "sado-island-s-wild-coast-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 38.037,
+        "longitude": 138.24,
+        "sourceIds": [
+          "sado-island-s-wild-coast-osm"
+        ]
+      }
     },
     "kumano-kodo-the-old-paths": {
       "story": "Kumano Kodo is a network of pilgrimage paths, not one single walk. The Nakahechi is the core route through the Kii mountains; its history, mountain setting and linked shrine paths reward a slower, section-by-section plan.",
@@ -2814,6 +2801,2202 @@
           "tohoku-official-oirase-route",
           "oirase-official-walking-map",
           "osm-oirase-nenokuchi"
+        ]
+      }
+    },
+    "hirosaki-in-blossom": {
+      "story": "Hirosaki’s spring spectacle is more than a sea of pink: blossoms sit inside a working castle town whose moat and stone walls frame the flowers. Old trees are carefully pruned, and fallen petals gather into the water in a fleeting scene known as hana-ikada, a flower raft. The keep now stands apart from its original stone base after repairs, a detail worth noticing after the first wide view. Follow the moat, pause in a quieter garden, then learn about Tsugaru’s summer festival craft. Peak bloom usually falls in late April or early May, but the forecast changes every year. Arrive early and leave several hours for the park. Hirosaki Castle Park. Walk the moat before crowds arrive; look for fallen petals gathering into the flower-raft scene. Fujita Memorial Garden. A traditional garden with pond, lawn and a western-style residence, offering a quieter pause nearby. Tsugaru-han Neputa Village. See festival floats, painted lantern panels and demonstrations of Tsugaru instruments.",
+      "visitPlan": "Enter Hirosaki Castle Park early and follow the moat toward the keep, then walk to Fujita Memorial Garden. Finish at Tsugaru-han Neputa Village. Allow 5–7 hours including transfers between the park and indoor museum; estimate only.",
+      "seasonality": "Cherry blossom season is usually late April to early May, but the peak changes every year. The park is attractive in green summer, autumn colour and winter snow; event lighting and access rules vary by date.",
+      "access": "From Tokyo, take the Tohoku Shinkansen to Shin-Aomori and transfer to the JR Ou Main Line for Hirosaki Station. Aomori Airport has bus links; the park is about a 30-minute walk or short local-bus ride from Hirosaki Station. By car, use signed city parking and expect festival congestion. Highway buses also connect Hirosaki with Aomori and other Tohoku cities.",
+      "areas": [
+        "Aomori · Tohoku"
+      ],
+      "highlights": [
+        "Hirosaki Castle Park",
+        "Fujita Memorial Garden",
+        "Tsugaru-han Neputa Village"
+      ],
+      "points": [
+        {
+          "name": "Hirosaki Castle Park",
+          "description": "Walk the moat before crowds arrive; look for fallen petals gathering into the flower-raft scene."
+        },
+        {
+          "name": "Fujita Memorial Garden",
+          "description": "A traditional garden with pond, lawn and a western-style residence, offering a quieter pause nearby."
+        },
+        {
+          "name": "Tsugaru-han Neputa Village",
+          "description": "See festival floats, painted lantern panels and demonstrations of Tsugaru instruments."
+        }
+      ],
+      "sources": [
+        {
+          "id": "hirosaki-in-blossom-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Hirosaki blossom map",
+          "url": "https://www.hirosaki-kanko.or.jp/individual/cat02_spring_sakura/en_map.pdf",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "hirosaki-in-blossom-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Hirosaki Tourist Information contacts",
+          "url": "https://hirosaki-kanko.or.jp/en/edit.html?id=edit10",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "hirosaki-in-blossom-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Hirosaki visitor guide",
+          "url": "https://www.hirosaki-kanko.or.jp/mapple/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "hirosaki-in-blossom-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Hirosaki%20in%20blossom",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Hirosaki Municipal Tourist Center",
+          "phone": "+81-172-37-5501",
+          "sourceIds": [
+            "hirosaki-in-blossom-source-1"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near Hirosaki Station for rail connections or near Dotemachi for restaurants and an easy early start",
+          "area": "Stay near Hirosaki Station for rail connections or near Dotemachi for restaurants and an easy early start. Spring festival dates sell out quickly.",
+          "sourceIds": [
+            "hirosaki-in-blossom-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Park grounds are generally free; the castle keep, gardens and museums may charge admission. Check current seasonal hours and festival details.",
+          "sourceIds": [
+            "hirosaki-in-blossom-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Cherry_blossoms_in_Hirosaki_castle_park_-_panoramio.jpg/1920px-Cherry_blossoms_in_Hirosaki_castle_park_-_panoramio.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Cherry_blossoms_in_Hirosaki_castle_park_-_panoramio.jpg",
+        "credit": "MAKIKO OMOKAWA",
+        "license": "CC BY-SA 3.0",
+        "alt": "Cherry blossoms around Hirosaki Castle Park in Aomori",
+        "sourceIds": [
+          "hirosaki-in-blossom-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 40.6079291,
+        "longitude": 140.4636605,
+        "sourceIds": [
+          "hirosaki-in-blossom-osm"
+        ]
+      }
+    },
+    "hiraizumi-s-quiet-temples": {
+      "story": "Hiraizumi was built to make an idea of Buddhist paradise tangible. In the twelfth century, the northern Fujiwara rulers shaped halls, temples and gardens around a vision of a pure land. At Chusonji, a cedar-lined ascent leads to the Golden Hall, where lacquer, gold and mother-of-pearl contrast with the forest outside. Motsuji offers a different stillness: its pond garden preserves the classical composition of water, shore and island, inviting visitors to circle slowly. Takadachi Gikeido adds the human story of Yoshitsune to the valley’s history. A local loop bus links the principal sites in season, while bicycles suit flatter stretches. Spring greenery and autumn leaves bring colour; summer lotus at Chusonji recalls seeds preserved for centuries. Leave room for quiet between landmarks. Chusonji and Konjikido. Climb the cedar approach and see the Golden Hall’s fine lacquer and gold work. Motsuji Temple garden. Walk the broad pond garden and notice its island, pebble shore and Heian-era layout. Takadachi Gikeido Hall. A hilltop memorial associated with Minamoto no Yoshitsune and the region’s political history.",
+      "visitPlan": "Start at Motsuji’s pond garden, continue to Chusonji and Konjikido, then take the bus or a planned taxi to Takadachi Gikeido. Allow 5–7 hours; the climb at Chusonji takes extra time.",
+      "seasonality": "Spring greenery, July lotus at Chusonji and autumn foliage each give the temple grounds a different character. Temple hours shorten in winter; check each site’s schedule and loop-bus dates.",
+      "access": "Take the Tohoku Shinkansen to Ichinoseki, then the JR Tohoku Main Line one stop to Hiraizumi Station. A seasonal loop bus, local taxi and rental bicycle connect heritage sites. Chusonji is about a 10-minute bus ride or 30-minute walk away; Motsuji is closer. By car, use temple parking. Iwate Hanamaki Airport requires onward rail or road transfer.",
+      "areas": [
+        "Iwate · Tohoku"
+      ],
+      "highlights": [
+        "Chusonji and Konjikido",
+        "Motsuji Temple garden",
+        "Takadachi Gikeido Hall"
+      ],
+      "points": [
+        {
+          "name": "Chusonji and Konjikido",
+          "description": "Climb the cedar approach and see the Golden Hall’s fine lacquer and gold work."
+        },
+        {
+          "name": "Motsuji Temple garden",
+          "description": "Walk the broad pond garden and notice its island, pebble shore and Heian-era layout."
+        },
+        {
+          "name": "Takadachi Gikeido Hall",
+          "description": "A hilltop memorial associated with Minamoto no Yoshitsune and the region’s political history."
+        }
+      ],
+      "sources": [
+        {
+          "id": "hiraizumi-s-quiet-temples-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "JNTO: Chusonji Temple",
+          "url": "https://www.japan.travel/en/spot/1803/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "hiraizumi-s-quiet-temples-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Hiraizumi official walking map",
+          "url": "https://hiraizumi.or.jp/en/info/pdf/hiraizumi_walk_en.pdf",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "hiraizumi-s-quiet-temples-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Hiraizumi Tourism Association contact",
+          "url": "https://www.japan47go.travel/en/detail/b505de6c-7dae-47ba-91a2-930039e8a157",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "hiraizumi-s-quiet-temples-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Hiraizumi Tourism Association contact",
+          "url": "https://hiraizumi.or.jp/site/contact/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "hiraizumi-s-quiet-temples-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Hiraizumi%E2%80%99s%20quiet%20temples",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Hiraizumi Tourism Association",
+          "phone": "+81-191-46-2110",
+          "sourceIds": [
+            "hiraizumi-s-quiet-temples-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay by Hiraizumi Station for the loop bus, or in Ichinoseki for more rail and dining options",
+          "area": "Stay by Hiraizumi Station for the loop bus, or in Ichinoseki for more rail and dining options. Overnight guests can visit Chusonji before day-trip groups arrive.",
+          "sourceIds": [
+            "hiraizumi-s-quiet-temples-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Temple grounds and special halls have separate admission fees; Konjikido and Motsuji are ticketed. Confirm current fees and winter hours.",
+          "sourceIds": [
+            "hiraizumi-s-quiet-temples-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Hiraizumi_%E2%80%93_Temples%2C_Gardens_and_Archaeological_Sites_Representing_the_Buddhist_Pure_Land-122494.jpg/1920px-Hiraizumi_%E2%80%93_Temples%2C_Gardens_and_Archaeological_Sites_Representing_the_Buddhist_Pure_Land-122494.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Hiraizumi_%E2%80%93_Temples,_Gardens_and_Archaeological_Sites_Representing_the_Buddhist_Pure_Land-122494.jpg",
+        "credit": "Vesna Vujicic-Lugassy",
+        "license": "CC BY-SA 3.0 IGO",
+        "alt": "Temples, gardens and archaeological sites in Hiraizumi",
+        "sourceIds": [
+          "hiraizumi-s-quiet-temples-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 38.9886,
+        "longitude": 141.0993,
+        "sourceIds": [
+          "hiraizumi-s-quiet-temples-osm"
+        ]
+      }
+    },
+    "tazawa-s-clear-blue": {
+      "story": "Lake Tazawa holds two sights in the same blue circle: open water and the story of Tatsuko, remembered in gold on the western shore. The statue stands where mountain slopes meet the lake, while a vermilion torii and Goza-no-ishi Shrine mark a northern cove associated with feudal visitors. These points are not next door. The shoreline is about twenty kilometres around, so the visit is more rewarding as a planned loop than an improvised walk. From the water, a sightseeing boat or lakeside pause turns the scale into a clear horizon. On calm days, the surface mirrors surrounding mountains; wind and cloud quickly alter its colour. Use the local bus and seasonal circular service, or rent a car or bicycle for flexibility. Spring blossoms, summer lake activities and autumn colour suit different paces. Check connections before leaving the station. Tatsuko Statue. The golden figure on the western shore anchors a local legend and looks across the water. Goza-no-ishi Shrine. A red torii frames a quieter northern cove and a story connected to the lake. Katamae Park. A raised lakeside park with open views across blue water toward surrounding hills.",
+      "visitPlan": "Begin at Tatsuko’s Statue, continue by bus or car to Goza-no-ishi Shrine, then pause at Katamae Park for a broad lake view. Allow 4–6 hours including transfers; this is not a continuous walk.",
+      "seasonality": "Spring blossoms, summer lake activities and autumn colour change the shore. Sightseeing boats and circular buses are seasonal and weather dependent.",
+      "access": "The Akita Shinkansen reaches Tazawako Station from Tokyo. Ugo Kotsu buses connect the station with the lakeshore and seasonal circular route. Akita Airport has an airport liner for the Tazawako area. A car or bicycle helps because sights are spread around a roughly 20-kilometre shore; bus departures are limited, so check the timetable first.",
+      "areas": [
+        "Akita · Tohoku"
+      ],
+      "highlights": [
+        "Tatsuko Statue",
+        "Goza-no-ishi Shrine",
+        "Katamae Park"
+      ],
+      "points": [
+        {
+          "name": "Tatsuko Statue",
+          "description": "The golden figure on the western shore anchors a local legend and looks across the water."
+        },
+        {
+          "name": "Goza-no-ishi Shrine",
+          "description": "A red torii frames a quieter northern cove and a story connected to the lake."
+        },
+        {
+          "name": "Katamae Park",
+          "description": "A raised lakeside park with open views across blue water toward surrounding hills."
+        }
+      ],
+      "sources": [
+        {
+          "id": "tazawa-s-clear-blue-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Semboku City: Lake Tazawa and access",
+          "url": "https://www.city.semboku.akita.jp/en/sightseeing/spot/04_tazawako.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "tazawa-s-clear-blue-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "JNTO: Lake Tazawa",
+          "url": "https://www.japan.travel/en/spot/1818/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "tazawa-s-clear-blue-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Semboku City: Tazawa area and contact",
+          "url": "https://www.city.semboku.akita.jp/sightseeing/spot/04.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "tazawa-s-clear-blue-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Semboku City tourism contact list",
+          "url": "https://www.city.semboku.akita.jp/government/address/daisan.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "tazawa-s-clear-blue-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Tazawa%E2%80%99s%20clear%20blue",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Tazawako Tourism Information Center Folake",
+          "phone": "+81-187-43-2111",
+          "sourceIds": [
+            "tazawa-s-clear-blue-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near Tazawako Station for onward connections or at a lakeside inn for sunrise and a slower circuit",
+          "area": "Stay near Tazawako Station for onward connections or at a lakeside inn for sunrise and a slower circuit.",
+          "sourceIds": [
+            "tazawa-s-clear-blue-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "The lake and viewpoints are free; sightseeing boats and activities are ticketed when operating. Verify current schedules and parking.",
+          "sourceIds": [
+            "tazawa-s-clear-blue-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Lake_Tazawa_banner.jpg/1920px-Lake_Tazawa_banner.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Lake_Tazawa_banner.jpg",
+        "credit": "掬茶",
+        "license": "CC BY-SA 3.0",
+        "alt": "Lake Tazawa and its blue shoreline in Akita",
+        "sourceIds": [
+          "tazawa-s-clear-blue-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 39.725,
+        "longitude": 140.65,
+        "sourceIds": [
+          "tazawa-s-clear-blue-osm"
+        ]
+      }
+    },
+    "the-three-mountains-of-dewa": {
+      "story": "The Dewa Sanzan pilgrimage is traditionally told as a passage through birth, death and rebirth, but a visitor need not climb every sacred peak to feel its depth. Begin at Zuishinmon Gate on Mount Haguro and enter a forest of towering cedar, where the stone stairway turns the walk into a steady act of attention. The Five-Storied Pagoda appears quietly among the trees, its wood darkened by weather and time. Continue uphill to Sanjin Gosaiden, where deities of all three mountains are enshrined beneath a massive thatched roof. Haguro is the most accessible mountain year-round; Gassan and Yudono have shorter seasonal openings and should be separate outings. A bus can reach the summit, while the full stair climb is strenuous. Dress for rain, follow shrine etiquette and never photograph prohibited sacred areas. Zuishinmon Gate. The traditional gateway begins the cedar-lined pilgrimage climb; check weather before choosing the stairs. Five-Storied Pagoda. A National Treasure among old cedars; approach quietly and keep the narrow path clear. Sanjin Gosaiden. The summit shrine honors all three mountain deities beneath an extraordinary thatched roof.",
+      "visitPlan": "Take the bus to Zuishinmon, climb past the Five-Storied Pagoda and continue to Sanjin Gosaiden. Allow 4–6 hours with rests, or take the summit bus and explore on foot.",
+      "seasonality": "Haguro is open year-round, though snow changes the stair route. Gassan and Yudono close in winter and have short summer seasons; verify access and bus operation before travel.",
+      "access": "From Tokyo, travel by Shinkansen and rail to Tsuruoka. Shonai Airport has bus connections toward town. Shonai Kotsu buses serve Hagurozuishinmon and Haguro Sancho; schedules change seasonally. By car, use signed shrine parking and follow mountain road notices. Mount Gassan and Mount Yudono require separate access planning.",
+      "areas": [
+        "Yamagata · Tohoku"
+      ],
+      "highlights": [
+        "Zuishinmon Gate",
+        "Five-Storied Pagoda",
+        "Sanjin Gosaiden"
+      ],
+      "points": [
+        {
+          "name": "Zuishinmon Gate",
+          "description": "The traditional gateway begins the cedar-lined pilgrimage climb; check weather before choosing the stairs."
+        },
+        {
+          "name": "Five-Storied Pagoda",
+          "description": "A National Treasure among old cedars; approach quietly and keep the narrow path clear."
+        },
+        {
+          "name": "Sanjin Gosaiden",
+          "description": "The summit shrine honors all three mountain deities beneath an extraordinary thatched roof."
+        }
+      ],
+      "sources": [
+        {
+          "id": "the-three-mountains-of-dewa-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "JNTO: Dewa Sanzan",
+          "url": "https://www.japan.travel/en/spot/2130/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "the-three-mountains-of-dewa-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Tsuruoka City: Dewa Sanzan access and trails",
+          "url": "https://www.tsuruokacity.com/dewasanzan",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "the-three-mountains-of-dewa-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Official Dewa Sanzan visitor guide",
+          "url": "https://thedewasanzan.com/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "the-three-mountains-of-dewa-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Dewa Sanzan Shrine contact and access",
+          "url": "https://www.tsuruokacity.com/spot/7296",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "the-three-mountains-of-dewa-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=The%20three%20mountains%20of%20Dewa",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Dewa Sanzan Shrine",
+          "phone": "+81-235-62-2355",
+          "sourceIds": [
+            "the-three-mountains-of-dewa-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay in Tsuruoka for transit and dining, or book a Haguro shukubo lodge for an early start and traditional vegetarian meal",
+          "area": "Stay in Tsuruoka for transit and dining, or book a Haguro shukubo lodge for an early start and traditional vegetarian meal.",
+          "sourceIds": [
+            "the-three-mountains-of-dewa-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Shrine grounds are free; formal worship, museums, lodging and transport cost extra. Snow and seasonal mountain openings affect the plan. Confirm current admission fees and opening hours with each venue.",
+          "sourceIds": [
+            "the-three-mountains-of-dewa-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2023.04.23_Five-storied_Pagoda,_Haguro-san.jpg?width=1400",
+        "source": "https://commons.wikimedia.org/wiki/File:2023.04.23_Five-storied_Pagoda,_Haguro-san.jpg",
+        "credit": "YedidyaPopper",
+        "license": "CC BY 4.0",
+        "alt": "Five-storied pagoda among the cedars on Mount Haguro",
+        "sourceIds": [
+          "the-three-mountains-of-dewa-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 38.7039,
+        "longitude": 139.9712,
+        "sourceIds": [
+          "the-three-mountains-of-dewa-osm"
+        ]
+      }
+    },
+    "aizu-wakamatsu-s-samurai-streets": {
+      "story": "Aizu-Wakamatsu wears its history in layers: a red-roofed castle, a former samurai residence and a hill where young retainers made a final, tragic stand. At Tsuruga Castle, white walls and deep red roof tiles are striking against snow or spring blossoms; the museum traces the region’s turbulent past. Aizu Bukeyashiki reconstructs household life, from reception rooms to work spaces, making the social order tangible rather than distant. At Iimoriyama, the Byakkotai memorial asks for a quieter visit; the story should not be reduced to a photo stop. These places are spread across town, so connect them by loop bus, taxi or car instead of walking the entire route. Pause for lacquerware or local cuisine if time allows. Snow is atmospheric but brings cold and icy streets. Plan extra time between sites. Tsuruga Castle. Explore the reconstructed keep and moat; the red roof is a distinctive local restoration choice. Aizu Bukeyashiki. Walk a large samurai residence complex and see its rooms, garden and historic displays. Iimoriyama and Byakkotai memorial. Visit the hillside memorial thoughtfully and allow time for the young retainers’ story.",
+      "visitPlan": "Visit Tsuruga Castle first, ride or taxi to Aizu Bukeyashiki, then continue to Iimoriyama. Allow 6–8 hours with museum visits and bus waits; use transport between districts.",
+      "seasonality": "Spring blossoms, summer festivals, autumn colour and winter snow each transform the castle district. Museums and sites have separate hours; check holiday notices.",
+      "access": "Take the Tohoku Shinkansen to Koriyama and transfer to the JR Ban-Etsu West Line for Aizu-Wakamatsu Station. Fukushima Airport requires onward road or rail travel. Haikara-san and Akabee sightseeing buses connect the station with the castle and major sites. By car, use official paid lots; winter roads can be icy.",
+      "areas": [
+        "Fukushima · Tohoku"
+      ],
+      "highlights": [
+        "Tsuruga Castle",
+        "Aizu Bukeyashiki",
+        "Iimoriyama and Byakkotai memorial"
+      ],
+      "points": [
+        {
+          "name": "Tsuruga Castle",
+          "description": "Explore the reconstructed keep and moat; the red roof is a distinctive local restoration choice."
+        },
+        {
+          "name": "Aizu Bukeyashiki",
+          "description": "Walk a large samurai residence complex and see its rooms, garden and historic displays."
+        },
+        {
+          "name": "Iimoriyama and Byakkotai memorial",
+          "description": "Visit the hillside memorial thoughtfully and allow time for the young retainers’ story."
+        }
+      ],
+      "sources": [
+        {
+          "id": "aizu-wakamatsu-s-samurai-streets-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Aizu-Wakamatsu tourism: Tsuruga Castle",
+          "url": "https://www.aizukanko.com/spot/134/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "aizu-wakamatsu-s-samurai-streets-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Aizu-Wakamatsu tourism: castle history",
+          "url": "https://www.aizukanko.com/feature/tsurugajo/top",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "aizu-wakamatsu-s-samurai-streets-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Aizu-Wakamatsu official tourism",
+          "url": "https://www.aizukanko.com/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "aizu-wakamatsu-s-samurai-streets-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Aizu-Wakamatsu%E2%80%99s%20samurai%20streets",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Tsuruga Castle Management Office",
+          "phone": "+81-242-27-4005",
+          "sourceIds": [
+            "aizu-wakamatsu-s-samurai-streets-source-0"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near Aizu-Wakamatsu Station for transit or in Nanokamachi for historic streets, restaurants and an evening walk",
+          "area": "Stay near Aizu-Wakamatsu Station for transit or in Nanokamachi for historic streets, restaurants and an evening walk.",
+          "sourceIds": [
+            "aizu-wakamatsu-s-samurai-streets-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "The castle keep and Rinkaku Tea Room are ticketed; other sites set separate admission. Castle parking is paid.",
+          "sourceIds": [
+            "aizu-wakamatsu-s-samurai-streets-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Aizuwakamatsu_Castle_03.jpg/1920px-Aizuwakamatsu_Castle_03.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Aizuwakamatsu_Castle_03.jpg",
+        "credit": "Σ64",
+        "license": "CC BY-SA 3.0",
+        "alt": "Tsuruga Castle in Aizu-Wakamatsu, Fukushima",
+        "sourceIds": [
+          "aizu-wakamatsu-s-samurai-streets-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 37.4877353,
+        "longitude": 139.9297661,
+        "sourceIds": [
+          "aizu-wakamatsu-s-samurai-streets-osm"
+        ]
+      }
+    },
+    "yokohama-s-harbor-lights": {
+      "story": "Yokohama’s waterfront is a walk through the city’s outward-facing history. The Red Brick Warehouse began as a customs facility when the port was modernizing; its halls still speak of cargo and arrival even as shops and exhibitions fill them. From the plaza, the harbor opens toward Osanbashi, whose timber deck rises into a green roof with views of ships, bridges and Minato Mirai. At dusk, the skyline glows behind the water. Yamashita Park gives the route a slower, sea-level finish, while the Hikawa Maru recalls the age of ocean liners. Landmarks remain connected by open public space. Start in Minato Mirai or Sakuragicho, pause at the warehouses and pier, then follow the promenade south. Allow half a day, and return after dark if you want the harbor transformed by lights. Minato Mirai waterfront. Begin beside the modern skyline and follow the open harbor edge toward the historic port buildings. Yokohama Red Brick Warehouse. Explore former customs buildings now used for shops and exhibitions; check event dates. Osanbashi and Yamashita Park. Walk the pier’s sculpted roof for harbor views, then continue to the park and Hikawa Maru.",
+      "visitPlan": "Walk from Minato Mirai to the Red Brick Warehouse, continue to Osanbashi’s rooftop deck, then finish at Yamashita Park and Hikawa Maru. Allow 4–6 hours including indoor stops.",
+      "seasonality": "The waterfront works year-round. Spring and autumn are comfortable for the promenade; summer evenings are lively and winter wind is strong on the pier. Event and facility hours vary.",
+      "access": "Reach the waterfront from JR Sakuragicho, Minatomirai or Nihon-odori stations. Haneda connects by rail and bus; Narita has rail and coach options. The Red Brick Warehouse and Osanbashi are linked by promenade. By car, use paid facility parking, though rail is easier on event days. Nearest rail access: Sakuragicho Station, Minatomirai Station or Nihon-odori Station.",
+      "areas": [
+        "Kanagawa · Kanto"
+      ],
+      "highlights": [
+        "Minato Mirai waterfront",
+        "Yokohama Red Brick Warehouse",
+        "Osanbashi and Yamashita Park"
+      ],
+      "points": [
+        {
+          "name": "Minato Mirai waterfront",
+          "description": "Begin beside the modern skyline and follow the open harbor edge toward the historic port buildings."
+        },
+        {
+          "name": "Yokohama Red Brick Warehouse",
+          "description": "Explore former customs buildings now used for shops and exhibitions; check event dates."
+        },
+        {
+          "name": "Osanbashi and Yamashita Park",
+          "description": "Walk the pier’s sculpted roof for harbor views, then continue to the park and Hikawa Maru."
+        }
+      ],
+      "sources": [
+        {
+          "id": "yokohama-s-harbor-lights-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Yokohama Visitors Guide: information centers",
+          "url": "https://www.yokohamajapan.com/information/information-centers/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "yokohama-s-harbor-lights-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Yokohama Visitors Guide: Osanbashi",
+          "url": "https://www.welcome.city.yokohama.jp/cruise/terminal/osanbashi/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "yokohama-s-harbor-lights-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Yokohama official guide",
+          "url": "https://www.welcome.city.yokohama.jp/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "yokohama-s-harbor-lights-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Yokohama%E2%80%99s%20harbor%20lights",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Sakuragicho Station Tourist Information Center",
+          "phone": "+81-45-211-0111",
+          "sourceIds": [
+            "yokohama-s-harbor-lights-source-0"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near Sakuragicho or Minato Mirai for a walkable waterfront evening; Yokohama Station offers wider rail connections",
+          "area": "Stay near Sakuragicho or Minato Mirai for a walkable waterfront evening; Yokohama Station offers wider rail connections.",
+          "sourceIds": [
+            "yokohama-s-harbor-lights-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Promenades and parks are free. Museum ships, exhibitions, attractions and parking charge separately. Confirm current admission fees and opening hours with each venue.",
+          "sourceIds": [
+            "yokohama-s-harbor-lights-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Yokohama_Minato_mirai_%28The_direction_of_Cotton_Harbor_district%29.jpg/1920px-Yokohama_Minato_mirai_%28The_direction_of_Cotton_Harbor_district%29.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Yokohama_Minato_mirai_(The_direction_of_Cotton_Harbor_district).jpg",
+        "credit": "Thirteen-fri",
+        "license": "CC BY-SA 3.0",
+        "alt": "Minato Mirai waterfront skyline in Yokohama",
+        "sourceIds": [
+          "yokohama-s-harbor-lights-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 35.4594441,
+        "longitude": 139.6323669,
+        "sourceIds": [
+          "yokohama-s-harbor-lights-osm"
+        ]
+      }
+    },
+    "kusatsu-steam-and-springs": {
+      "story": "Kusatsu announces itself with steam. At Yubatake, hot water pours through wooden cooling channels before flowing to town baths; mineral scent and rising vapour are part of daily life, not a staged effect. Look at the channels and the yunohana crystals that gather as water cools. A short walk leads to Netsunoyu, where yumomi performances demonstrate how bathers once cooled hot water with rhythmic paddles and song. Continue uphill to Sainokawara Park, where warm water threads through volcanic ground before collecting in an outdoor bath. The walk is compact but sloping, and winter ice changes the pace. Kusatsu is best as an overnight stay: evening steam, quiet lanes and a morning bath feel different from a quick bus stop. Mountain weather can be cooler than Tokyo; check road conditions and bathing schedules. Yubatake hot-water field. See mineral-rich water cooling through channels at the town center, especially atmospheric after dusk. Netsunoyu. Watch the local yumomi performance when scheduled and learn how the town manages hot spring water. Sainokawara Park. Follow the stream through a steaming volcanic basin to the outdoor bath; stay on signed paths.",
+      "visitPlan": "Start at Yubatake, see a scheduled yumomi performance at Netsunoyu, then walk uphill through Sainokawara Park. Allow 3–5 hours including bathing and the return slope.",
+      "seasonality": "Kusatsu is a year-round hot-spring town. Winter brings snow and atmospheric steam but requires careful footing; autumn colours Sainokawara Park. Performances and bath hours vary.",
+      "access": "From Tokyo, travel by rail to Naganohara-Kusatsuguchi and use the JR bus to Kusatsu Onsen, or take a highway coach. The nearest airports are in Tokyo with onward rail and bus. By car, use designated town parking and check winter road advisories. Yubatake, Netsunoyu and Sainokawara Park connect on foot. Nearest rail access: Naganohara-Kusatsuguchi Station.",
+      "areas": [
+        "Gunma · Kanto"
+      ],
+      "highlights": [
+        "Yubatake hot-water field",
+        "Netsunoyu",
+        "Sainokawara Park"
+      ],
+      "points": [
+        {
+          "name": "Yubatake hot-water field",
+          "description": "See mineral-rich water cooling through channels at the town center, especially atmospheric after dusk."
+        },
+        {
+          "name": "Netsunoyu",
+          "description": "Watch the local yumomi performance when scheduled and learn how the town manages hot spring water."
+        },
+        {
+          "name": "Sainokawara Park",
+          "description": "Follow the stream through a steaming volcanic basin to the outdoor bath; stay on signed paths."
+        }
+      ],
+      "sources": [
+        {
+          "id": "kusatsu-steam-and-springs-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kusatsu Onsen official tourism",
+          "url": "https://www.kusatsu-onsen.ne.jp/english/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kusatsu-steam-and-springs-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kusatsu Onsen: car access",
+          "url": "https://www.kusatsu-onsen.ne.jp/access/car.php",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kusatsu-steam-and-springs-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "JNTO: Kusatsu Onsen",
+          "url": "https://www.japan.travel/en/spot/1832/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kusatsu-steam-and-springs-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kusatsu Onsen Tourism Association contact",
+          "url": "https://www.kusatsu-onsen.ne.jp/info/tabi110.php",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "kusatsu-steam-and-springs-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Kusatsu%2C%20steam%20and%20springs",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Kusatsu Onsen Tourism Association",
+          "phone": "+81-279-88-0800",
+          "sourceIds": [
+            "kusatsu-steam-and-springs-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay in the central Yubatake district to reach baths and restaurants on foot, or choose a hillside ryokan with a shuttle",
+          "area": "Stay in the central Yubatake district to reach baths and restaurants on foot, or choose a hillside ryokan with a shuttle.",
+          "sourceIds": [
+            "kusatsu-steam-and-springs-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Yubatake and the park walk are free; performances, public baths, private baths and parking have separate charges. Confirm current admission fees and opening hours with each venue.",
+          "sourceIds": [
+            "kusatsu-steam-and-springs-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/251128_Yubatake%2C_Kusatsu_14.jpg/1920px-251128_Yubatake%2C_Kusatsu_14.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:251128_Yubatake,_Kusatsu_14.jpg",
+        "credit": "Aspere",
+        "license": "CC0",
+        "alt": "Steam rising from Yubatake hot-spring channels in Kusatsu",
+        "sourceIds": [
+          "kusatsu-steam-and-springs-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 36.6229392,
+        "longitude": 138.5967297,
+        "sourceIds": [
+          "kusatsu-steam-and-springs-osm"
+        ]
+      }
+    },
+    "oze-s-open-wetlands": {
+      "story": "Oze is a high-altitude wetland where the horizon feels unusually close. Wooden boardwalks cross the marsh without cutting into it, while mountains hold the edges of every view. At Yamanohana, the visitor center marks the threshold of Ozegahara; from there, the path opens toward Ushikubi Junction and Ryugu, where water disappears beneath the marsh and emerges downstream. The landscape changes by the week: skunk cabbage brightens late spring, cotton sedge turns to white fluff, daylilies colour July and autumn grasses glow copper before snow. This is a mountain walk, not a paved city stroll. Oze is normally open mid-May to late October; lingering snow and early closures can change plans. Carry rain gear, check bus returns and stay on the boardwalk to protect fragile peatland. A lodge night makes dawn and quieter hours worth planning for. Yamanohana Visitor Center. Check trail and weather information before entering the marsh; the boardwalk begins near this access point. Ushikubi Junction. A useful rest and route-decision point on the Ozegahara boardwalk, surrounded by open wetland views. Ryugu watercourse. See where a stream flows beneath the marsh and reappears; remain on boardwalk to protect habitat.",
+      "visitPlan": "Enter from Hatomachi Toge, walk to Yamanohana, continue across Ozegahara to Ushikubi Junction and Ryugu, then return on a pre-planned trail. Allow a full day and match distance to your pace. Allow 6-8 hours for this itinerary, as an estimate.",
+      "seasonality": "Oze is normally open mid-May to late October. Skunk cabbage blooms late May to early June, daylilies around July and marsh grass changes colour in September; timing varies with snow and weather.",
+      "access": "Oze has several access gates and no road through the wetlands. From Tokyo, take rail to Numata or Jomo-Kogen, then seasonal buses toward Tokura and Hatomachi Toge. Drivers park at Tokura and use required shuttles when vehicle restrictions apply. Other routes enter from Fukushima and Niigata. Confirm your trailhead and last return before hiking. Nearest rail access: Numata Station or Jomo-Kogen Station.",
+      "areas": [
+        "Gunma · Kanto"
+      ],
+      "highlights": [
+        "Yamanohana Visitor Center",
+        "Ushikubi Junction",
+        "Ryugu watercourse"
+      ],
+      "points": [
+        {
+          "name": "Yamanohana Visitor Center",
+          "description": "Check trail and weather information before entering the marsh; the boardwalk begins near this access point."
+        },
+        {
+          "name": "Ushikubi Junction",
+          "description": "A useful rest and route-decision point on the Ozegahara boardwalk, surrounded by open wetland views."
+        },
+        {
+          "name": "Ryugu watercourse",
+          "description": "See where a stream flows beneath the marsh and reappears; remain on boardwalk to protect habitat."
+        }
+      ],
+      "sources": [
+        {
+          "id": "oze-s-open-wetlands-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Oze Preservation Foundation: access",
+          "url": "https://oze-fnd.or.jp/en/access-to-oze/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "oze-s-open-wetlands-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Oze Preservation Foundation: seasons",
+          "url": "https://oze-fnd.or.jp/en/season/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "oze-s-open-wetlands-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Oze Preservation Foundation: visitor FAQ",
+          "url": "https://oze-fnd.or.jp/en/faqen/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "oze-s-open-wetlands-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Oze Preservation Foundation contact",
+          "url": "https://oze-fnd.or.jp/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "oze-s-open-wetlands-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Oze%E2%80%99s%20open%20wetlands",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Oze Preservation Foundation",
+          "phone": "+81-27-220-4431",
+          "sourceIds": [
+            "oze-s-open-wetlands-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Book a mountain lodge at Yamanohana or Miharashi for a dawn start; Tokura is a practical base before or after the walk",
+          "area": "Book a mountain lodge at Yamanohana or Miharashi for a dawn start; Tokura is a practical base before or after the walk.",
+          "sourceIds": [
+            "oze-s-open-wetlands-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "There is no general entrance fee. Parking, buses, shuttle transfers and lodges cost extra; check seasonal restrictions and trail notices.",
+          "sourceIds": [
+            "oze-s-open-wetlands-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Oze_wetlands_%2853207119096%29.jpg/1920px-Oze_wetlands_%2853207119096%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Oze_wetlands_(53207119096).jpg",
+        "credit": "Raita Futo",
+        "license": "CC BY 2.0",
+        "alt": "Wetlands in Oze, Japan",
+        "sourceIds": [
+          "oze-s-open-wetlands-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 36.9153164,
+        "longitude": 139.1974195,
+        "sourceIds": [
+          "oze-s-open-wetlands-osm"
+        ]
+      }
+    },
+    "fuji-from-the-water": {
+      "story": "Lake Kawaguchi offers a memorable way to meet Mount Fuji: wait for a clear morning, then watch the reflection appear before wind breaks it apart. A short cruise puts shoreline and summit in the same frame, while the ropeway climbs above town for a wider view across the Fuji Five Lakes. Views depend on weather, so an overcast day is not a failed visit; lakeside museums and hot-spring baths give a useful alternative. At the Itchiku Kubota Art Museum, the setting matters as much as the kimono art: a garden path moves through stone and water before the textile collection reveals its colour. The sights circle the lake rather than form one walking street. Use the local bus, bicycle, taxi or rental car and choose a few stops. Give the area a full day or overnight, and check visibility before setting the alarm. Kawaguchiko sightseeing boat. See mountain and shoreline from the water when visibility and lake conditions allow. Mt. Fuji Panoramic Ropeway. Ride above the lakeside town for an elevated view; queues and wind can affect service. Itchiku Kubota Art Museum. Explore the artist’s silk-dyeing work and garden; allow time for grounds and galleries.",
+      "visitPlan": "Start at a Kawaguchiko boat pier, continue to Mt. Fuji Panoramic Ropeway, then take a local bus or taxi to the Itchiku Kubota Art Museum. Allow 5–7 hours and keep the order flexible.",
+      "seasonality": "Mount Fuji visibility is never guaranteed. Cherry blossoms and autumn leaves bring crowds; cruise, ropeway and museum hours change with weather and season.",
+      "access": "From Tokyo, take the JR Chuo Line to Otsuki and transfer to Fujikyu Railway, or ride a highway bus from Shinjuku. Airports connect through Tokyo. By car, use the Chuo Expressway and designated parking; weekend traffic is heavy. Local buses and taxis connect attractions. Nearest rail access: Kawaguchiko Station.",
+      "areas": [
+        "Yamanashi · Chubu"
+      ],
+      "highlights": [
+        "Kawaguchiko sightseeing boat",
+        "Mt. Fuji Panoramic Ropeway",
+        "Itchiku Kubota Art Museum"
+      ],
+      "points": [
+        {
+          "name": "Kawaguchiko sightseeing boat",
+          "description": "See mountain and shoreline from the water when visibility and lake conditions allow."
+        },
+        {
+          "name": "Mt. Fuji Panoramic Ropeway",
+          "description": "Ride above the lakeside town for an elevated view; queues and wind can affect service."
+        },
+        {
+          "name": "Itchiku Kubota Art Museum",
+          "description": "Explore the artist’s silk-dyeing work and garden; allow time for grounds and galleries."
+        }
+      ],
+      "sources": [
+        {
+          "id": "fuji-from-the-water-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "JNTO: Lake Kawaguchi",
+          "url": "https://www.japan.travel/en/spot/1329/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "fuji-from-the-water-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Fujikawaguchiko official tourism information",
+          "url": "https://fujisan.ne.jp/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "fuji-from-the-water-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Fujikyu Railway visitor access",
+          "url": "https://www.fujikyu-railway.jp/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "fuji-from-the-water-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Fujikawaguchiko Town Tourism Division contact",
+          "url": "https://www.town.fujikawaguchiko.yamanashi.jp/upload/file/kanko/2026%E5%86%AC%E8%8A%B1%E7%81%AB%E3%83%81%E3%83%A9%E3%82%B7.pdf",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "fuji-from-the-water-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Fuji%2C%20from%20the%20water",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Fujikawaguchiko Town Tourism Division",
+          "phone": "+81-555-72-3168",
+          "sourceIds": [
+            "fuji-from-the-water-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near Kawaguchiko Station for buses or on the north shore for early mountain views and lakeside inns",
+          "area": "Stay near Kawaguchiko Station for buses or on the north shore for early mountain views and lakeside inns.",
+          "sourceIds": [
+            "fuji-from-the-water-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Shore access is free; cruise, ropeway, museum and parking have separate charges. Confirm operation on the day. Confirm current admission fees and opening hours with each venue.",
+          "sourceIds": [
+            "fuji-from-the-water-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Mount_Fuji_from_Lake_Kawaguchi_%282015-10-26%29.jpg/1920px-Mount_Fuji_from_Lake_Kawaguchi_%282015-10-26%29.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Lake_Kawaguchi_(2015-10-26).jpg",
+        "credit": "Alpsdake",
+        "license": "CC BY-SA 4.0",
+        "alt": "Mount Fuji seen across Lake Kawaguchi in Yamanashi",
+        "sourceIds": [
+          "fuji-from-the-water-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 35.5071592,
+        "longitude": 138.7630361,
+        "sourceIds": [
+          "fuji-from-the-water-osm"
+        ]
+      }
+    },
+    "kanazawa-unhurried": {
+      "story": "Kanazawa is a city of close contrasts: the energy of a fish market, a feudal castle and the careful compositions of a celebrated garden all sit within a compact center. Start at Omicho Market, where stalls and small restaurants make the morning feel lived in. Walk toward Kanazawa Castle Park and cross into Kenrokuen, where ponds, stone lanterns, bridges and old pines reward a slower pace. The famous Kotoji lantern is one pause among many; follow the water and look for borrowed views. Later, cross the Asano River to Higashi Chaya, a preserved teahouse district quieter before shops open and atmospheric at dusk. The loop bus makes the itinerary easy to shorten, but walking reveals craft shops and side lanes. Allow a full day and leave time for a second meal at Omicho rather than rushing every landmark. Omicho Market. Explore the covered market early, when seafood counters and breakfast shops are active. Kanazawa Castle Park and Kenrokuen. Pair castle grounds with the garden’s ponds, stonework and seasonal pine protection. Higashi Chaya District. Walk preserved teahouse streets and cross to Kazue-machi for a quieter riverside view.",
+      "visitPlan": "Begin at Omicho Market, walk to Kanazawa Castle Park and Kenrokuen, then finish across the river in Higashi Chaya. The core route is about four hours; allow a full day with meals and museums. Allow 6-8 hours for this itinerary, as an estimate.",
+      "seasonality": "Kenrokuen changes through all seasons; spring blossoms, summer green, autumn colour and winter yukitsuri each create a different visit. Garden and museum hours vary.",
+      "access": "The Hokuriku Shinkansen reaches Kanazawa from Tokyo; the Thunderbird connects from Osaka and Kyoto via Tsuruga with a transfer. Komatsu Airport has limousine buses. The loop bus leaves the station; walking is practical between Omicho, the castle, Kenrokuen and Higashi Chaya. Use city parking outside narrow streets.",
+      "areas": [
+        "Ishikawa · Chubu"
+      ],
+      "highlights": [
+        "Omicho Market",
+        "Kanazawa Castle Park and Kenrokuen",
+        "Higashi Chaya District"
+      ],
+      "points": [
+        {
+          "name": "Omicho Market",
+          "description": "Explore the covered market early, when seafood counters and breakfast shops are active."
+        },
+        {
+          "name": "Kanazawa Castle Park and Kenrokuen",
+          "description": "Pair castle grounds with the garden’s ponds, stonework and seasonal pine protection."
+        },
+        {
+          "name": "Higashi Chaya District",
+          "description": "Walk preserved teahouse streets and cross to Kazue-machi for a quieter riverside view."
+        }
+      ],
+      "sources": [
+        {
+          "id": "kanazawa-unhurried-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "VISIT KANAZAWA: four-hour route",
+          "url": "https://visitkanazawa.jp/en/itineraries/detail_3.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kanazawa-unhurried-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "VISIT KANAZAWA: getting around",
+          "url": "https://visitkanazawa.jp/en/getting-around-kanazawa",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kanazawa-unhurried-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "VISIT KANAZAWA official guide",
+          "url": "https://visitkanazawa.jp/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kanazawa-unhurried-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kanazawa City Tourist Association contact",
+          "url": "https://www4.city.kanazawa.lg.jp/material/files/group/6/seikatsu_guide_2026_en.pdf",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "kanazawa-unhurried-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Kanazawa%2C%20unhurried",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Kanazawa City Tourism Association",
+          "phone": "+81-76-232-5555",
+          "sourceIds": [
+            "kanazawa-unhurried-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near Kanazawa Station for arrival convenience or Korinbo for a central base between the castle, garden and dining streets",
+          "area": "Stay near Kanazawa Station for arrival convenience or Korinbo for a central base between the castle, garden and dining streets.",
+          "sourceIds": [
+            "kanazawa-unhurried-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Castle grounds are free; Kenrokuen and selected buildings, museums and experiences are ticketed. The loop bus is paid.",
+          "sourceIds": [
+            "kanazawa-unhurried-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Fountain_Kenrokuen_Garden_Kanazawa_Japan.JPG/1920px-Fountain_Kenrokuen_Garden_Kanazawa_Japan.JPG",
+        "source": "https://commons.wikimedia.org/wiki/File:Fountain_Kenrokuen_Garden_Kanazawa_Japan.JPG",
+        "credit": "Jovandavid",
+        "license": "CC BY-SA 3.0",
+        "alt": "Historic fountain in Kenrokuen Garden, Kanazawa",
+        "sourceIds": [
+          "kanazawa-unhurried-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 36.5718658,
+        "longitude": 136.6557781,
+        "sourceIds": [
+          "kanazawa-unhurried-osm"
+        ]
+      }
+    },
+    "shirakawa-go-under-steep-roofs": {
+      "story": "Ogimachi’s steep thatched roofs were built for practical reasons: heavy winter snow must slide away, and broad attic space once supported sericulture. From Shiroyama Viewpoint, the village seems almost theatrical, but gassho-zukuri houses remain homes and workplaces, not a museum set. Walk the lanes and notice how buildings face river and fields; the scale shifts from postcard panorama to lived settlement. Wada House and Kanda House reveal timber structure and household objects, with separate admission and hours. The bus terminal and suspension bridge are the main arrival route, and the village is compact enough to explore on foot. Winter brings deep snow and light-up events with strict reservation rules; spring and autumn are busy too. Stay on public paths, keep noise low near homes and take rubbish away. An overnight stay reveals the village after day visitors leave. Ogimachi village lanes. Walk quietly through the residential settlement and notice roof orientation, farm plots and river setting. Wada House and Kanda House. Enter preserved homes to understand timber frames, steep thatch and household history. Shiroyama Viewpoint. Look back over village roofs; use the shuttle if you prefer to avoid the steep climb.",
+      "visitPlan": "Cross Deai Bridge, walk to Wada House and Kanda House, then use the shuttle or uphill path to Shiroyama Viewpoint. Allow 2–3 hours, plus lunch and house visits.",
+      "seasonality": "Open year-round. Winter snow is beautiful but brings cold and slippery lanes; autumn is busy, while spring and summer show different field and roof scenes. House hours vary.",
+      "access": "Shirakawa-go has no railway station. Highway buses connect Kanazawa, Toyama, Takayama and Nagoya; reserve popular departures. By air, travel via Toyama or Komatsu and transfer through a rail hub. By car, use Seseragi Park parking and cross Deai Bridge; light-up days have special reservations.",
+      "areas": [
+        "Gifu · Chubu"
+      ],
+      "highlights": [
+        "Ogimachi village lanes",
+        "Wada House and Kanda House",
+        "Shiroyama Viewpoint"
+      ],
+      "points": [
+        {
+          "name": "Ogimachi village lanes",
+          "description": "Walk quietly through the residential settlement and notice roof orientation, farm plots and river setting."
+        },
+        {
+          "name": "Wada House and Kanda House",
+          "description": "Enter preserved homes to understand timber frames, steep thatch and household history."
+        },
+        {
+          "name": "Shiroyama Viewpoint",
+          "description": "Look back over village roofs; use the shuttle if you prefer to avoid the steep climb."
+        }
+      ],
+      "sources": [
+        {
+          "id": "shirakawa-go-under-steep-roofs-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Shirakawa-go Tourist Association: access",
+          "url": "https://shirakawa-go.gr.jp/en/access/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "shirakawa-go-under-steep-roofs-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Shirakawa-go Tourist Association: FAQ",
+          "url": "https://shirakawa-go.gr.jp/en/faq/5/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "shirakawa-go-under-steep-roofs-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Shirakawa-go Tourist Association",
+          "url": "https://shirakawa-go.gr.jp/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "shirakawa-go-under-steep-roofs-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Shirakawa-go Tourist Association contact",
+          "url": "https://shirakawa-go.gr.jp/contact/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "shirakawa-go-under-steep-roofs-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Shirakawa-go%2C%20under%20steep%20roofs",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Shirakawa-go Tourist Association",
+          "phone": "+81-5769-6-1013",
+          "sourceIds": [
+            "shirakawa-go-under-steep-roofs-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Book a family-run gassho minshuku well ahead; Takayama and Kanazawa are practical day-trip bases",
+          "area": "Book a family-run gassho minshuku well ahead; Takayama and Kanazawa are practical day-trip bases.",
+          "sourceIds": [
+            "shirakawa-go-under-steep-roofs-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Village walking is free; houses, museums, shuttle and public parking are paid. Check parking limits and event reservation rules. Confirm current admission fees and opening hours with each venue.",
+          "sourceIds": [
+            "shirakawa-go-under-steep-roofs-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Shirakawa-go_-_Shirakawa156.jpg/1920px-Shirakawa-go_-_Shirakawa156.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "source": "https://commons.wikimedia.org/wiki/File:Shirakawa-go_-_Shirakawa156.jpg",
+        "credit": "lumoplank",
+        "license": "CC0",
+        "alt": "Traditional gassho-roof houses in Shirakawa-go",
+        "sourceIds": [
+          "shirakawa-go-under-steep-roofs-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 36.259924,
+        "longitude": 136.9076278,
+        "sourceIds": [
+          "shirakawa-go-under-steep-roofs-osm"
+        ]
+      }
+    },
+    "takayama-s-old-quarter": {
+      "story": "Takayama’s old quarter is best read at walking speed. Dark wooden merchant houses line Sanmachi Suji, their lattice fronts recalling the town’s Edo-period prosperity as a mountain center of trade and craft. In the morning, Miyagawa Market gives the river edge another rhythm: growers, makers and small food stalls set out goods before the day warms. Takayama Jinya adds a less romantic but essential layer, showing how the shogunate administered this remote region. The streets are compact, yet hours vary and crowds build on the busiest lanes; arrive early, then branch onto side streets. Sake breweries mark entrances with cedar balls and often offer tastings when open. Takayama is useful as a base for Hida, but mountain valleys are separate excursions. Plan half a day for the old town or a full day for museums, markets and a slower meal. Takayama Jinya. Explore the preserved administrative compound, rooms, storehouses and courtyard. Sanmachi Suji old town. Follow merchant streets and look for brewery cedar balls, lattice facades and craft shops. Miyagawa Morning Market. Browse produce and local goods along the river; stalls vary by day and season.",
+      "visitPlan": "Visit Takayama Jinya at opening, walk to Sanmachi Suji, then finish at Miyagawa Morning Market before noon. Allow 4–6 hours for the historic center and museum interiors.",
+      "seasonality": "Spring and autumn festivals are busy; winter brings snow and early darkness. Miyagawa Market is a morning activity, and sites keep separate hours.",
+      "access": "JR Takayama Main Line connects Nagoya and Toyama; highway buses serve Nagoya, Matsumoto, Kanazawa and Shirakawa-go. The old quarter is about a 15-minute walk from Takayama Station. Nearby airports require onward rail or bus. Use public parking outside narrow historic streets.",
+      "areas": [
+        "Gifu · Chubu"
+      ],
+      "highlights": [
+        "Takayama Jinya",
+        "Sanmachi Suji old town",
+        "Miyagawa Morning Market"
+      ],
+      "points": [
+        {
+          "name": "Takayama Jinya",
+          "description": "Explore the preserved administrative compound, rooms, storehouses and courtyard."
+        },
+        {
+          "name": "Sanmachi Suji old town",
+          "description": "Follow merchant streets and look for brewery cedar balls, lattice facades and craft shops."
+        },
+        {
+          "name": "Miyagawa Morning Market",
+          "description": "Browse produce and local goods along the river; stalls vary by day and season."
+        }
+      ],
+      "sources": [
+        {
+          "id": "takayama-s-old-quarter-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Hida-Takayama official tourism",
+          "url": "https://www.hida.jp/english/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "takayama-s-old-quarter-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "JNTO: Takayama",
+          "url": "https://www.japan.travel/en/spot/1325/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "takayama-s-old-quarter-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Takayama City visitor information",
+          "url": "https://www.city.takayama.lg.jp/english/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "takayama-s-old-quarter-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Hida-Takayama Tourist Information Center contact",
+          "url": "https://www.hida.jp/_res/projects/hida_jp/_page_/004/000/097/202507_walking_map_en.pdf",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "takayama-s-old-quarter-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Takayama%E2%80%99s%20old%20quarter",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Hida-Takayama Tourist Information Center",
+          "phone": "+81-577-32-5328",
+          "sourceIds": [
+            "takayama-s-old-quarter-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near the station for bus connections or inside the old town for early market walks and evening dining",
+          "area": "Stay near the station for bus connections or inside the old town for early market walks and evening dining.",
+          "sourceIds": [
+            "takayama-s-old-quarter-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Historic streets and market are free; Takayama Jinya, museums, tastings and experiences may charge admission.",
+          "sourceIds": [
+            "takayama-s-old-quarter-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Takayama_Old_Town_%28Sanmachi_Suji%29_%2835819349621%29.jpg/1920px-Takayama_Old_Town_%28Sanmachi_Suji%29_%2835819349621%29.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Takayama_Old_Town_(Sanmachi_Suji)_(35819349621).jpg",
+        "credit": "Ankur P",
+        "license": "CC BY 2.0",
+        "alt": "Traditional merchant houses on Sanmachi Suji in Takayama",
+        "sourceIds": [
+          "takayama-s-old-quarter-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 36.1408745,
+        "longitude": 137.2596623,
+        "sourceIds": [
+          "takayama-s-old-quarter-osm"
+        ]
+      }
+    },
+    "matsumoto-beneath-the-alps": {
+      "story": "Matsumoto Castle’s black keep seems to float above its moat, with the Northern Alps often visible behind it on clear days. It is a National Treasure and one of Japan’s oldest surviving keeps; steep stairs and low ceilings make the defensive design unmistakable. After the castle, town lanes reveal an everyday side. Nawate Street follows the Metoba River and is known for frog motifs, shops and snack stops. Nearby Nakamachi’s storehouse facades recall the merchant town beyond the moat. These sites are close enough to walk, so the visit can unfold without constant transit. Former Kaichi School adds an example of early modern education if time permits. Summer festivals bring visitors, while winter is crisp and quieter. Start early at the castle to avoid queues, then slow down over lunch in the old town. Matsumoto Castle. Walk the moat and enter the National Treasure keep; steep internal stairs require care. Nawate Street and Yohashira Shrine. Browse the riverfront lane and its frog motifs, then pause at the nearby shrine. Nakamachi Street. See storehouse facades and browse craft shops, cafes and local food.",
+      "visitPlan": "Start at Matsumoto Castle, continue on foot to Nawate Street and Yohashira Shrine, then cross to Nakamachi. Add Former Kaichi School if time allows. Allow 4–6 hours.",
+      "seasonality": "The city is visitable all year. Spring blossoms and autumn colour are popular; winter brings snow and cold mornings. Castle hours can change during events.",
+      "access": "JR trains connect Matsumoto with Nagano and Shinjuku; highway buses reach Tokyo, Nagoya and Takayama. Matsumoto Airport has bus and taxi links. The castle is about a 15-minute walk from the station; Nawate and Nakamachi are nearby. Use public parking outside the moat.",
+      "areas": [
+        "Nagano · Chubu"
+      ],
+      "highlights": [
+        "Matsumoto Castle",
+        "Nawate Street and Yohashira Shrine",
+        "Nakamachi Street"
+      ],
+      "points": [
+        {
+          "name": "Matsumoto Castle",
+          "description": "Walk the moat and enter the National Treasure keep; steep internal stairs require care."
+        },
+        {
+          "name": "Nawate Street and Yohashira Shrine",
+          "description": "Browse the riverfront lane and its frog motifs, then pause at the nearby shrine."
+        },
+        {
+          "name": "Nakamachi Street",
+          "description": "See storehouse facades and browse craft shops, cafes and local food."
+        }
+      ],
+      "sources": [
+        {
+          "id": "matsumoto-beneath-the-alps-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Visit Matsumoto: city spots",
+          "url": "https://visitmatsumoto.com/en/spot/index_1_2_7____.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "matsumoto-beneath-the-alps-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Matsumoto official tourism guide",
+          "url": "https://visitmatsumoto.com/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "matsumoto-beneath-the-alps-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Matsumoto Castle visitor information",
+          "url": "https://www.matsumoto-castle.jp/eng/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "matsumoto-beneath-the-alps-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Matsumoto Tourism & Convention Association contact",
+          "url": "https://www.city.matsumoto.nagano.jp/soshiki/72/195132.html",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "matsumoto-beneath-the-alps-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Matsumoto%20beneath%20the%20Alps",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Matsumoto Tourist Information Center",
+          "phone": "+81-263-34-3295",
+          "sourceIds": [
+            "matsumoto-beneath-the-alps-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near Matsumoto Station for rail and bus links or in the castle district for a quiet early walk",
+          "area": "Stay near Matsumoto Station for rail and bus links or in the castle district for a quiet early walk.",
+          "sourceIds": [
+            "matsumoto-beneath-the-alps-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Castle entry and Former Kaichi School are ticketed; the streets and shrine approach are free. Busy days may have queues.",
+          "sourceIds": [
+            "matsumoto-beneath-the-alps-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Matsumoto_Castle_1-1.jpg/1920px-Matsumoto_Castle_1-1.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_1-1.jpg",
+        "credit": "柑橘類",
+        "license": "CC BY-SA 3.0",
+        "alt": "Matsumoto Castle above its moat with the Alps beyond",
+        "sourceIds": [
+          "matsumoto-beneath-the-alps-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 36.2386353,
+        "longitude": 137.9688709,
+        "sourceIds": [
+          "matsumoto-beneath-the-alps-osm"
+        ]
+      }
+    },
+    "kamikochi-the-mountain-valley": {
+      "story": "Kamikochi is not a drive-through viewpoint. Private cars are kept out of the valley, so the final approach by bus or taxi leaves the Azusa River, forest and mountain air to take over. Begin at Kappa Bridge, where the river and Hotaka range create the familiar panorama, then follow the path toward Weston Monument and Tashiro Pond. Continue to Taisho Pond if time and conditions allow; it formed after Mount Yakedake’s eruption dammed the river, and its view changes as steam and mountain reflections shift. The official beginner route between Kappa Bridge and Taisho Pond is about 3.8 kilometres one way and around two and a half hours round trip, excluding stops. Paths are gentle but mountain weather changes quickly. Kamikochi is seasonally open, typically mid-April to mid-November. Check opening notices, reservations and last departures before leaving Matsumoto or Takayama. Kamikochi Bus Terminal. Use the terminal as the practical trailhead and return point for this valley walk. Kappa Bridge. The central valley landmark spans the Azusa River and opens to the Hotaka peaks. Weston Monument and Tashiro Pond. Follow the official riverside walking course through forest and wetland scenery. Taisho Pond. A volcanic lake formed in 1915, with mountain reflections and views toward Mount Yakedake.",
+      "visitPlan": "Walk from Kappa Bridge past Weston Monument and Tashiro Pond to Taisho Pond, then return by the opposite bank or take a scheduled bus. The official round trip is about 2.5 hours before stops.",
+      "seasonality": "Kamikochi usually opens mid-April and closes mid-November. Autumn colour and summer weekends are crowded. Heavy rain can temporarily close roads and trails.",
+      "access": "From Matsumoto, take the Alpico Railway to Shin-Shimashima and a bus to Kamikochi; from Takayama, use the Nohi bus via Hirayu. Drivers park at Sawando or Hirayu and transfer by shuttle or taxi; private cars cannot enter. Check reservations and last return buses. Nearest rail access: Matsumoto Station.",
+      "areas": [
+        "Nagano · Chubu"
+      ],
+      "highlights": [
+        "Kamikochi Bus Terminal",
+        "Kappa Bridge",
+        "Weston Monument and Tashiro Pond",
+        "Taisho Pond"
+      ],
+      "points": [
+        {
+          "name": "Kamikochi Bus Terminal",
+          "description": "Use the terminal as the practical trailhead and return point for this valley walk."
+        },
+        {
+          "name": "Kappa Bridge",
+          "description": "The central valley landmark spans the Azusa River and opens to the Hotaka peaks."
+        },
+        {
+          "name": "Weston Monument and Tashiro Pond",
+          "description": "Follow the official riverside walking course through forest and wetland scenery."
+        },
+        {
+          "name": "Taisho Pond",
+          "description": "A volcanic lake formed in 1915, with mountain reflections and views toward Mount Yakedake."
+        }
+      ],
+      "sources": [
+        {
+          "id": "kamikochi-the-mountain-valley-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kamikochi official walking routes",
+          "url": "https://www.kamikochi.org/thingstodo/walking",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kamikochi-the-mountain-valley-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kamikochi official access",
+          "url": "https://www.kamikochi.org/access",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kamikochi-the-mountain-valley-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kamikochi car access restrictions",
+          "url": "https://www.kamikochi.org/access/car",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kamikochi-the-mountain-valley-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kamikochi Information Center contact",
+          "url": "https://www.kamikochi.org/inquiry/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "kamikochi-the-mountain-valley-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Kamikochi%2C%20the%20mountain%20valley",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Kamikochi Information Center",
+          "phone": "+81-263-95-2433",
+          "sourceIds": [
+            "kamikochi-the-mountain-valley-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay in Kamikochi for dawn and dusk, or in Matsumoto, Hirayu or Takayama for more transport and lodging options",
+          "area": "Stay in Kamikochi for dawn and dusk, or in Matsumoto, Hirayu or Takayama for more transport and lodging options.",
+          "sourceIds": [
+            "kamikochi-the-mountain-valley-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "There is no general valley entrance fee. Parking, shuttle buses, taxis, lodging and facilities cost separately.",
+          "sourceIds": [
+            "kamikochi-the-mountain-valley-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/150920_Kappa-bashi_Kamikochi_Japan01n.jpg/1920px-150920_Kappa-bashi_Kamikochi_Japan01n.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:150920_Kappa-bashi_Kamikochi_Japan01n.jpg",
+        "credit": "663highland",
+        "license": "CC BY 2.5",
+        "alt": "Kappa Bridge beneath Mount Yake in Kamikochi",
+        "sourceIds": [
+          "kamikochi-the-mountain-valley-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 36.2487647,
+        "longitude": 137.638419,
+        "sourceIds": [
+          "kamikochi-the-mountain-valley-osm"
+        ]
+      }
+    },
+    "kiso-valley-post-towns": {
+      "story": "The Nakasendo route through Kiso Valley once carried travelers between Edo and Kyoto, and its post towns make that journey legible in the landscape. Magome rises along a stone-paved slope, with water channels, inns and timber storefronts arranged for people arriving on foot. Beyond town, the trail crosses forest toward Tsumago; teahouses and a bear-warning bell remind walkers this is a rural path, not a themed street. Tsumago’s preservation rules helped keep modern signs and overhead wires away from its central lanes, and evening quiet feels different from a day-trip crowd. The classic Magome–Tsumago walk is roughly eight kilometres and usually takes three to four hours, with direction and elevation affecting effort. Buses link both ends, but schedules are limited and seasonal. Carry water, check the return timetable, and leave time to explore both towns rather than treating them only as trailheads. Magome-juku. Walk the sloped post town early, when water channels and timber storefronts are quiet. Nakasendo forest trail. Follow the marked historic route through woods and hamlets; heed local trail notices. Tsumago-juku. Explore the preserved post town after the walk, including former honjin and wakihonjin buildings.",
+      "visitPlan": "Walk from Magome through the forest trail to Tsumago, pausing at rest areas, then use bus or pre-arranged taxi to return. The walk is about 8 km and 3–4 hours; allow 5–7 hours with both towns.",
+      "seasonality": "Spring and autumn are comfortable walking seasons. Summer can be hot; winter brings snow and reduced facility or bus services. Verify trail and seasonal bus conditions.",
+      "access": "Reach Magome from Nakatsugawa Station by bus or car; Tsumago is served from Nagiso Station by bus or taxi. JR Chuo Line connects with Nagoya and Matsumoto. The one-way trail needs a planned bus or taxi return. Use parking outside preserved streets.",
+      "areas": [
+        "Nagano · Chubu"
+      ],
+      "highlights": [
+        "Magome-juku",
+        "Nakasendo forest trail",
+        "Tsumago-juku"
+      ],
+      "points": [
+        {
+          "name": "Magome-juku",
+          "description": "Walk the sloped post town early, when water channels and timber storefronts are quiet."
+        },
+        {
+          "name": "Nakasendo forest trail",
+          "description": "Follow the marked historic route through woods and hamlets; heed local trail notices."
+        },
+        {
+          "name": "Tsumago-juku",
+          "description": "Explore the preserved post town after the walk, including former honjin and wakihonjin buildings."
+        }
+      ],
+      "sources": [
+        {
+          "id": "kiso-valley-post-towns-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "JNTO: Nakasendo and Kiso Valley",
+          "url": "https://www.japan.travel/en/spot/1318/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kiso-valley-post-towns-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Nagiso Town tourism information",
+          "url": "https://www.town.nagiso.nagano.jp/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kiso-valley-post-towns-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kiso Valley travel guide",
+          "url": "https://www.visit-kiso.com/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kiso-valley-post-towns-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Nagiso Ekimae Tourist Information Center contact",
+          "url": "https://www.japan47go.travel/en/detail/d41f2760-2a4c-49c7-8ea1-d6b82da18b82",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "kiso-valley-post-towns-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Kiso%20Valley%20post%20towns",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Nagiso Tourism Association",
+          "phone": "+81-264-57-2001",
+          "sourceIds": [
+            "kiso-valley-post-towns-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay in a minshuku in Tsumago or Magome for quiet evenings; Nakatsugawa and Nagiso offer rail-linked lodging",
+          "area": "Stay in a minshuku in Tsumago or Magome for quiet evenings; Nakatsugawa and Nagiso offer rail-linked lodging.",
+          "sourceIds": [
+            "kiso-valley-post-towns-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "The trail and historic lanes are free. Parking, bus, luggage forwarding and some house museums charge separately. Confirm current admission fees and opening hours with each venue.",
+          "sourceIds": [
+            "kiso-valley-post-towns-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Foliage_-_Nakasendo_between_Magome_and_Tsumago_-_P1010024.jpg/1920px-Foliage_-_Nakasendo_between_Magome_and_Tsumago_-_P1010024.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Foliage_-_Nakasendo_between_Magome_and_Tsumago_-_P1010024.jpg",
+        "credit": "Daderot",
+        "license": "CC0",
+        "alt": "Autumn foliage on the Nakasendo trail between Magome and Tsumago",
+        "sourceIds": [
+          "kiso-valley-post-towns-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 35.5268445,
+        "longitude": 137.5677219,
+        "sourceIds": [
+          "kiso-valley-post-towns-osm"
+        ]
+      }
+    },
+    "kyoto-at-first-light": {
+      "story": "At Fushimi Inari Taisha, dawn changes the famous torii path from a crowded corridor into quiet thresholds. The shrine is open around the clock, but the mountain climb is longer than the first photograph suggests; even a short ascent brings smaller shrines, stone foxes and views over southern Kyoto. Begin early, carry water and turn back when the path no longer fits your time or energy. Tofukuji offers a different morning: broad grounds and bridges frame a ravine, especially in autumn. Nearby Sennyuji is a quieter temple complex with imperial connections and a contemplative pace. These sites sit in southern Kyoto and connect by rail and walking, though temple hours vary. Use the JR Nara Line to Inari Station or Keihan Railway to Fushimi-Inari Station. Leave the afternoon open for rest or a neighborhood meal. Fushimi Inari Taisha. Walk beneath vermilion torii and explore beyond the first photo spot. Tofukuji Temple. Cross the temple grounds and bridges for an architectural view into the maple ravine. Sennyuji Temple. Explore a quieter temple complex with imperial history and spacious approaches.",
+      "visitPlan": "Enter Fushimi Inari at first light, then take rail or walk toward Tofukuji and finish at Sennyuji. Allow 5–7 hours; opening times affect the order.",
+      "seasonality": "Dawn helps avoid crowds year-round. Autumn colour at Tofukuji is popular; summer is hot and humid. The shrine path is open, but temple buildings keep posted hours.",
+      "access": "From Kyoto Station take the JR Nara Line to Inari Station; the shrine entrance is outside. Keihan Fushimi-Inari is nearby. Tofukuji and Sennyuji are reached by JR or Keihan trains and short walks. Kansai Airport connects by JR Haruka; Itami uses airport bus and rail.",
+      "areas": [
+        "Kyoto · Kansai"
+      ],
+      "highlights": [
+        "Fushimi Inari Taisha",
+        "Tofukuji Temple",
+        "Sennyuji Temple"
+      ],
+      "points": [
+        {
+          "name": "Fushimi Inari Taisha",
+          "description": "Walk beneath vermilion torii and explore beyond the first photo spot."
+        },
+        {
+          "name": "Tofukuji Temple",
+          "description": "Cross the temple grounds and bridges for an architectural view into the maple ravine."
+        },
+        {
+          "name": "Sennyuji Temple",
+          "description": "Explore a quieter temple complex with imperial history and spacious approaches."
+        }
+      ],
+      "sources": [
+        {
+          "id": "kyoto-at-first-light-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kyoto Travel: access to Fushimi Inari",
+          "url": "https://kyoto.travel/en/getting-around/comfortable-access-to-fushimi-fushimi-inari-taisha-shrine/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kyoto-at-first-light-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kyoto Travel: Fushimi area",
+          "url": "https://kyoto.travel/en/areas/fushimi/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kyoto-at-first-light-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kyoto Travel: getting around",
+          "url": "https://kyoto.travel/en/getting-around/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "kyoto-at-first-light-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kyoto Tourist Information Center contact",
+          "url": "https://global.kyoto.travel/en/faq/detail.php?faq_id=10292",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "kyoto-at-first-light-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Kyoto%20at%20first%20light",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Kyoto Tourist Information Center",
+          "phone": "+81-75-343-0548",
+          "sourceIds": [
+            "kyoto-at-first-light-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near Kyoto Station for early JR departures or in southern Higashiyama for an evening walk and easy Keihan access",
+          "area": "Stay near Kyoto Station for early JR departures or in southern Higashiyama for an evening walk and easy Keihan access.",
+          "sourceIds": [
+            "kyoto-at-first-light-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Shrine grounds are free; select temple halls and gardens are ticketed. Check seasonal hours and crowd notices.",
+          "sourceIds": [
+            "kyoto-at-first-light-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/KyotoFushimiInariLarge.jpg/1920px-KyotoFushimiInariLarge.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:KyotoFushimiInariLarge.jpg",
+        "credit": "Paul Vlaar",
+        "license": "CC BY-SA 3.0",
+        "alt": "Vermilion torii gates along Fushimi Inari path in Kyoto",
+        "sourceIds": [
+          "kyoto-at-first-light-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 34.9675192,
+        "longitude": 135.7797101,
+        "sourceIds": [
+          "kyoto-at-first-light-osm"
+        ]
+      }
+    },
+    "osaka-after-hours": {
+      "story": "Osaka’s late evening has its own geography: a small temple courtyard, lantern-lit lanes and a canal catching bright signs. Start at Hozenji, where the moss-covered Mizukake Fudo statue is quietly doused with water by visitors. Step into Hozenji Yokocho, a narrow stone lane where restaurants keep the scale human. From there, Dotonbori’s neon feels like a change of scene rather than the whole story. Cross Ebisu Bridge, watch reflections on the canal and follow Tombori Riverwalk for a lower, slower view. The neighborhood’s food reputation is real, but lines and hours vary; choose a small restaurant away from the busiest frontage and give the meal time. Namba Station is served by several rail operators, so the area is easy to reach without a car. Weekends are crowded. Keep to pedestrian paths and respect residents in narrow lanes. Hozenji and Hozenji Yokocho. Pause at the moss-covered statue, then follow the lantern-lit lane quietly. Dotonbori and Ebisu Bridge. See canal-side signs and reflections, then step away from the bridge frontage for a calmer view. Tombori Riverwalk. Walk beside the canal and watch the district from a quieter angle.",
+      "visitPlan": "Visit Hozenji and its yokocho before walking to Ebisu Bridge and Dotonbori, then follow Tombori Riverwalk and choose a restaurant. Allow 3–5 hours including a meal.",
+      "seasonality": "The district is lively all year. Summer nights are humid and winter evenings can be cold; weekends and holidays draw crowds. Restaurant and cruise hours vary.",
+      "access": "Namba is served by Osaka Metro, Nankai and Kintetsu railways. Kansai Airport connects by Nankai train or bus; Itami uses airport bus and rail. Hozenji, Dotonbori and Tombori Riverwalk are a short walk apart. Use paid garages outside the crowded center; rail is easier at night.",
+      "areas": [
+        "Osaka · Kansai"
+      ],
+      "highlights": [
+        "Hozenji and Hozenji Yokocho",
+        "Dotonbori and Ebisu Bridge",
+        "Tombori Riverwalk"
+      ],
+      "points": [
+        {
+          "name": "Hozenji and Hozenji Yokocho",
+          "description": "Pause at the moss-covered statue, then follow the lantern-lit lane quietly."
+        },
+        {
+          "name": "Dotonbori and Ebisu Bridge",
+          "description": "See canal-side signs and reflections, then step away from the bridge frontage for a calmer view."
+        },
+        {
+          "name": "Tombori Riverwalk",
+          "description": "Walk beside the canal and watch the district from a quieter angle."
+        }
+      ],
+      "sources": [
+        {
+          "id": "osaka-after-hours-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Osaka Convention & Tourism Bureau: Dotonbori",
+          "url": "https://www.osaka-info.jp/en/spot/dotonbori/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "osaka-after-hours-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Osaka Official Visitors Guide",
+          "url": "https://osaka-info.jp/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "osaka-after-hours-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Osaka Metro official routes",
+          "url": "https://subway.osakametro.co.jp/en/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "osaka-after-hours-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Osaka%2C%20after%20hours",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Dotonbori Shopping Association Secretariat",
+          "phone": "+81-6-6211-4542",
+          "sourceIds": [
+            "osaka-after-hours-source-0"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay around Namba for late trains, restaurants and airport rail; Shinsaibashi is another walkable base",
+          "area": "Stay around Namba for late trains, restaurants and airport rail; Shinsaibashi is another walkable base.",
+          "sourceIds": [
+            "osaka-after-hours-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Public streets and riverwalk are free. Food, cruises and attractions charge separately; check last train times. Confirm current admission fees and opening hours with each venue.",
+          "sourceIds": [
+            "osaka-after-hours-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg/1920px-Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Dotonbori,_Osaka,_at_night,_November_2016.jpg",
+        "credit": "Martin Falbisoner",
+        "license": "CC BY-SA 4.0",
+        "alt": "Neon signs and reflections along Dotonbori Canal at night",
+        "sourceIds": [
+          "osaka-after-hours-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 34.668023,
+        "longitude": 135.5024156,
+        "sourceIds": [
+          "osaka-after-hours-osm"
+        ]
+      }
+    },
+    "nara-between-trees": {
+      "story": "Nara Park is more than green space between temples. Open grass, old trees and free-roaming deer make sacred buildings appear gradually. Begin at Todai-ji’s Nandaimon Gate, where enormous guardian figures stand before the Great Buddha Hall. Inside, the bronze Buddha’s scale becomes clear only after your eyes adjust to the dark timber hall. Continue uphill to Nigatsudo, whose balcony opens over rooftops and trees toward the city. From there, follow the forest edge to Kasuga Taisha, known for rows of stone and bronze lanterns. Deer are wild animals: use designated crackers, feed them safely and never tease or surround them. Spring wisteria and autumn colour change the walk; summer heat calls for an early start. The route is walkable from Kintetsu Nara Station, with buses to shorten the approach. Allow half a day, more if adding a museum or Naramachi. Todai-ji and Nandaimon Gate. Pass the guardian figures and enter the Great Buddha Hall to understand Nara’s temple heritage. Nigatsudo Hall. Climb to the balcony for a broad view over temple grounds and city. Kasuga Taisha Shrine. Follow the tree-lined path to the lanterns and shrine precinct; heed wildlife guidance.",
+      "visitPlan": "Enter through Nandaimon Gate to Todai-ji, climb to Nigatsudo, then follow the forest path to Kasuga Taisha. Allow 4–6 hours; add the national museum for a longer day.",
+      "seasonality": "Spring wisteria, summer green and autumn leaves each shape the park. Start early in hot weather; Todai-ji hall hours change by season.",
+      "access": "Kintetsu Nara Station is closest to the park; JR Nara is farther west but linked by local bus. Osaka and Kyoto connect by Kintetsu and JR trains. Airports connect by rail and limousine bus. The sites link on foot. Use designated parking outside the busiest approaches.",
+      "areas": [
+        "Nara · Kansai"
+      ],
+      "highlights": [
+        "Todai-ji and Nandaimon Gate",
+        "Nigatsudo Hall",
+        "Kasuga Taisha Shrine"
+      ],
+      "points": [
+        {
+          "name": "Todai-ji and Nandaimon Gate",
+          "description": "Pass the guardian figures and enter the Great Buddha Hall to understand Nara’s temple heritage."
+        },
+        {
+          "name": "Nigatsudo Hall",
+          "description": "Climb to the balcony for a broad view over temple grounds and city."
+        },
+        {
+          "name": "Kasuga Taisha Shrine",
+          "description": "Follow the tree-lined path to the lanterns and shrine precinct; heed wildlife guidance."
+        }
+      ],
+      "sources": [
+        {
+          "id": "nara-between-trees-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Official Nara Travel Guide: Todai-ji",
+          "url": "https://www.visitnara.jp/venues/A00485/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "nara-between-trees-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Official Nara Travel Guide: Nara Park",
+          "url": "https://www.visitnara.jp/destinations/area/nara-park/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "nara-between-trees-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Official Nara Travel Guide",
+          "url": "https://www.visitnara.jp/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "nara-between-trees-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Todaiji Temple Office contact",
+          "url": "https://www.todaiji.or.jp/inquiry/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "nara-between-trees-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Nara%2C%20between%20trees",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Todaiji Temple Office",
+          "phone": "+81-742-22-5511",
+          "sourceIds": [
+            "nara-between-trees-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay near Kintetsu Nara for the park and dining, or by JR Nara for wider regional connections",
+          "area": "Stay near Kintetsu Nara for the park and dining, or by JR Nara for wider regional connections.",
+          "sourceIds": [
+            "nara-between-trees-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "Park paths and shrine approaches are free. Todai-ji’s Great Buddha Hall and some gardens and museums are ticketed.",
+          "sourceIds": [
+            "nara-between-trees-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Vairocana_of_Todaiji_Temple%2C_Nara%2C_Japan%2C_20240819_1617_4838.jpg/1920px-Vairocana_of_Todaiji_Temple%2C_Nara%2C_Japan%2C_20240819_1617_4838.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Vairocana_of_Todaiji_Temple,_Nara,_Japan,_20240819_1617_4838.jpg",
+        "credit": "Jakub Hałun",
+        "license": "CC BY 4.0",
+        "alt": "Great Buddha Vairocana inside Todai-ji Temple in Nara",
+        "sourceIds": [
+          "nara-between-trees-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 34.6882437,
+        "longitude": 135.8397568,
+        "sourceIds": [
+          "nara-between-trees-osm"
+        ]
+      }
+    },
+    "arashiyama-s-green-corridor": {
+      "story": "Arashiyama is often reduced to one bamboo photograph, but its best day is a sequence of river, garden and neighborhood. Enter the Bamboo Grove early, before the narrow lane fills, and keep moving rather than stopping in the flow. Tenryuji offers a quieter counterpoint: its garden uses surrounding hills as borrowed scenery, so the landscape seems to continue beyond the temple wall. Drift toward Togetsukyo Bridge, whose name evokes a moon crossing the river; the view changes with rain, season and water level. Cross to the south-bank lanes and hillside viewpoints if time allows—the area is larger than the photo corridor. Sagano’s quieter streets and museums reward an afternoon, and the Randen tram or JR Sagano Line makes arrival straightforward. The bamboo path is public and free, while gardens charge admission. Never carve or tie objects to bamboo. Visit early, then let the river set the pace. Arashiyama Bamboo Grove. Follow the public lane early and keep moving so everyone can enjoy the narrow path. Tenryuji Temple garden. See the pond garden framed by hills; allow time to walk the full grounds. Togetsukyo Bridge and riverbank. Take in changing river and mountain views, then explore the south-bank lanes if time allows.",
+      "visitPlan": "Walk the Bamboo Grove at first light, enter Tenryuji’s garden when it opens, then follow the river to Togetsukyo Bridge. Allow 4–6 hours; continue to Saga or the south bank if time permits.",
+      "seasonality": "The area is attractive year-round. Early morning avoids congestion. Temple garden hours, boats and seasonal attractions vary.",
+      "access": "From Kyoto Station take the JR Sagano Line to Saga-Arashiyama; Randen serves the area from central Kyoto and Hankyu reaches the south bank. Kansai Airport connects via JR Haruka and rail transfers. By car, use paid lots outside the busy center. The grove, Tenryuji and bridge are walkable.",
+      "areas": [
+        "Kyoto · Kansai"
+      ],
+      "highlights": [
+        "Arashiyama Bamboo Grove",
+        "Tenryuji Temple garden",
+        "Togetsukyo Bridge and riverbank"
+      ],
+      "points": [
+        {
+          "name": "Arashiyama Bamboo Grove",
+          "description": "Follow the public lane early and keep moving so everyone can enjoy the narrow path."
+        },
+        {
+          "name": "Tenryuji Temple garden",
+          "description": "See the pond garden framed by hills; allow time to walk the full grounds."
+        },
+        {
+          "name": "Togetsukyo Bridge and riverbank",
+          "description": "Take in changing river and mountain views, then explore the south-bank lanes if time allows."
+        }
+      ],
+      "sources": [
+        {
+          "id": "arashiyama-s-green-corridor-source-0",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kyoto Travel: Saga and Arashiyama",
+          "url": "https://www.kyoto.travel/en/areas/saga-arashiyama/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "arashiyama-s-green-corridor-source-1",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kyoto Travel: access and crowd guidance",
+          "url": "https://kyoto.travel/en/travel-inspiration/things-to-keep-in-mind-while-exploring-kyoto-and-its-kiyomizu-arashiyama-and-gion-areas/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "arashiyama-s-green-corridor-source-2",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kyoto Travel: getting around",
+          "url": "https://kyoto.travel/en/getting-around/",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports destination details, access or visitor planning."
+        },
+        {
+          "id": "arashiyama-s-green-corridor-source-3",
+          "organization": "Official destination, government or attraction source",
+          "title": "Kyoto Tourist Information Center contact",
+          "url": "https://global.kyoto.travel/en/faq/detail.php?faq_id=10292",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Supports the contact name and telephone number shown in this guide."
+        },
+        {
+          "id": "arashiyama-s-green-corridor-osm",
+          "organization": "OpenStreetMap contributors",
+          "title": "Approximate visitor-area points for schematic map",
+          "url": "https://www.openstreetmap.org/search?query=Arashiyama%E2%80%99s%20green%20corridor",
+          "checkedOn": "2026-10-24",
+          "evidenceNotes": "Approximate points only; connectors are not turn-by-turn routing."
+        }
+      ],
+      "contacts": [
+        {
+          "name": "Kyoto Tourist Information Center",
+          "phone": "+81-75-343-0548",
+          "sourceIds": [
+            "arashiyama-s-green-corridor-source-3"
+          ]
+        }
+      ],
+      "stayRecommendations": [
+        {
+          "name": "Stay in central Kyoto for transport choice, or book in Arashiyama for an early walk before day visitors arrive",
+          "area": "Stay in central Kyoto for transport choice, or book in Arashiyama for an early walk before day visitors arrive.",
+          "sourceIds": [
+            "arashiyama-s-green-corridor-source-0"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "status": "known",
+          "component": "Admission, parking and visit timing",
+          "note": "The grove, bridge and riverbank are free; temples, gardens, boats and museums charge admission.",
+          "sourceIds": [
+            "arashiyama-s-green-corridor-source-0"
+          ]
+        }
+      ],
+      "photo": {
+        "status": "verified",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Arashiyama_Bamboo_Grove_%28Unsplash%29.jpg/1920px-Arashiyama_Bamboo_Grove_%28Unsplash%29.jpg",
+        "source": "https://commons.wikimedia.org/wiki/File:Arashiyama_Bamboo_Grove_(Unsplash).jpg",
+        "credit": "Erol Ahmed",
+        "license": "CC0",
+        "alt": "Tall bamboo along the Arashiyama Grove path in Kyoto",
+        "sourceIds": [
+          "arashiyama-s-green-corridor-photo"
+        ]
+      },
+      "mapLocation": {
+        "status": "area-reference",
+        "latitude": 35.0167419,
+        "longitude": 135.6711482,
+        "sourceIds": [
+          "arashiyama-s-green-corridor-osm"
         ]
       }
     }

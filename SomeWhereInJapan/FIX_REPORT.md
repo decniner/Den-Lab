@@ -890,16 +890,16 @@ The generated guide scan found 0 filename-style image alt tags and 0 Furano-cont
 
 ## Real content for every place — and zero mojibake
 
-**Version:** v1.7.
+**Version:** v1.8.
 
 ### Gate results
 
-- **Checklist:** 14/310 complete; 296 incomplete, with each place and each missing item listed in CONTENT_AUDIT.md.
+- **Checklist:** 34/310 complete; 276 incomplete, with each place and each missing item listed in CONTENT_AUDIT.md.
 - **Uniqueness:** 1 story/highlight sentences occur in more than three places.
 - **Entity gate:** checked within each place’s story; requirements and per-place counts are recorded above.
 - **No-hedge gate:** story text is checked for the prohibited placeholder phrases; the per-place uniqueStory result reports failures.
 - **Cross-contamination:** 1 places contain references to another catalogue place outside their own named highlights; those names are recorded with each exception.
-- **Mojibake:** scanned 429 UTF-8 source/data/generated text files, including 318 HTML pages; findings: 0.
+- **Mojibake:** scanned 431 UTF-8 source/data/generated text files, including 318 HTML pages; findings: 0.
 - **Charset pipeline:** all checked HTML files declare UTF-8 as the first element in the head; invalid UTF-8 bytes are reported by the gate.
 
 ### Research and encoding findings
@@ -908,7 +908,7 @@ Content was checked against the dated destination sources recorded in the data. 
 
 ### Rendered verification
 
-No browser rendering was run for this v1.7 batch. The place-content audit checks guide data, source dates, access facts, practical details, route stops, image credits and encoding; it does not verify visual rendering or live external services.
+No browser rendering was run for this v1.8 batch. The place-content audit checks guide data, source dates, access facts, practical details, route stops, image credits and encoding; it does not verify visual rendering or live external services.
 
 ### Regression checks
 

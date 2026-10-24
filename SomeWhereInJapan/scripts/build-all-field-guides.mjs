@@ -80,17 +80,17 @@ function addWalkingRouteAction(html, route) {
 }
 
 function versionExisting(html, { placeName = '', route = null, placePage = false } = {}) {
-  html = placePage ? cleanRenderedGuide(html, { version: 'v1.7', placeName }) : decodeMojibake(html);
+  html = placePage ? cleanRenderedGuide(html, { version: 'v1.8', placeName }) : decodeMojibake(html);
   if (placePage) html = addWalkingRouteAction(html, route);
   if (!/google-maps-routes\.js/.test(html)) {
     html = html.replace(/<script\b[^>]*src="((?:\.\.\/)*)city-route-ui\.js[^\"]*"[^>]*><\/script>/i, (_match, prefix = '') => `<script src="${prefix}google-maps-routes.js?v=20261024-3" defer></script>${_match}`);
   }
-  html = html.replace(/(class="(?:site-version|guide-version)")>v\d+\.\d+/g,'$1>v1.7');
+  html = html.replace(/(class="(?:site-version|guide-version)")>v\d+\.\d+/g,'$1>v1.8');
   for (const cls of ['jg-top','ng-top','kg-top','fg-top']) {
     const re = new RegExp(`(<nav\\b(?=[^>]*\\bclass="[^"]*\\b${cls}\\b[^"]*")[^>]*>)([\\s\\S]*?)(<\\/nav>)`,'i');
     html = html.replace(re, (_whole, open, body, close) => {
-      if (/guide-version/.test(body)) return `${open}${body.replace(/v\d+\.\d+/,'v1.7')}${close}`;
-      return `${open}${body.replace('</a>','</a><small class="guide-version">v1.7</small>')}${close}`;
+      if (/guide-version/.test(body)) return `${open}${body.replace(/v\d+\.\d+/,'v1.8')}${close}`;
+      return `${open}${body.replace('</a>','</a><small class="guide-version">v1.8</small>')}${close}`;
     });
   }
   return html.replace(/styles\.css\?v=[^"'\s>]+/g,'styles.css?v=20261024-8').replace(/google-maps-routes\.js(?:\?v=[^"'\s>]+)?/g,'google-maps-routes.js?v=20261024-3').replace(/city-route-ui\.js\?v=[^"'\s>]+/g,'city-route-ui.js?v=20261024-6').replace(/place-route-ui\.js\?v=[^"'\s>]+/g,'place-route-ui.js?v=20261024-11');
