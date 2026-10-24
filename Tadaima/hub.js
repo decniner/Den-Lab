@@ -286,7 +286,23 @@
   "use strict";
   var INDEX = window.TADAIMA_PROP_INDEX || [];
   var input = document.getElementById("propSearch");
-  if (!input || !INDEX.length) return;
+  if (!input) return;
+  // Lazy-load the 648-property index (268 KB) only when the search is
+  // actually used — the hub's initial payload stays within its budget.
+  var indexLoaded = INDEX.length > 0, indexLoading = false;
+  function ensureIndex() {
+    if (window.TADAIMA_PROP_INDEX && window.TADAIMA_PROP_INDEX.length) {
+      INDEX = window.TADAIMA_PROP_INDEX; indexLoaded = true; render(); return;
+    }
+    if (indexLoaded || indexLoading) return;
+    indexLoading = true;
+    var sc = document.createElement("script");
+    sc.src = "search-index.js";
+    sc.onload = function () { INDEX = window.TADAIMA_PROP_INDEX || []; indexLoaded = true; indexLoading = false; render(); };
+    sc.onerror = function () { indexLoading = false; };
+    document.head.appendChild(sc);
+  }
+  input.addEventListener("focus", ensureIndex);
   var box = document.getElementById("propResults");
   var count = document.getElementById("propCount");
   var TYPE_LABEL = { "house-new": "New house", "house-used": "Used house", "land": "Land / lot" };
@@ -296,6 +312,7 @@
   function render() {
     var q = input.value.trim().toLowerCase();
     if (!q) { box.innerHTML = ""; count.textContent = ""; return; }
+    if (!indexLoaded) { ensureIndex(); box.innerHTML = ""; count.textContent = ""; return; }
     var hits = INDEX.filter(function (e) { return e.hay.indexOf(q) !== -1; });
     var ja = lang() === "ja";
     count.textContent = ja
@@ -313,6 +330,6 @@
       box.appendChild(a);
     });
   }
-  input.addEventListener("input", render);
+  input.addEventListener("input", function () { ensureIndex(); render(); });
   document.addEventListener("tadaima-lang", render);
 })();
