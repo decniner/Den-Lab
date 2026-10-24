@@ -12,6 +12,8 @@ test('homepage exposes an accessible multi-day itinerary builder', () => {
   assert.match(html, /itinerary-core\.js/);
   assert.match(html, /itinerary-planner\.js/);
   assert.match(html, /href=["']#itinerary["']/);
+  assert.match(html, /best-fit regions/i);
+  assert.doesNotMatch(html, /Leave all unchecked for all Japan/i);
 });
 
 test('itinerary UI includes transparent route and source cautions', () => {
