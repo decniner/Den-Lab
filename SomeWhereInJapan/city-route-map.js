@@ -72,7 +72,7 @@ function mountCityRouteMap(container,mapData,onSelectStop){
   let stopNumber=0;
   points.forEach((feature,index)=>{
    const [lon,lat]=feature.geometry.coordinates,p=feature.properties,id=p.routeStopId||p.id||feature.id;
-   const numbered=p.displayOrder||p.role!=='origin',label=numbered?String(p.displayOrder||++stopNumber).padStart(2,'0'):(p.returnPoint?'S/R':'S'),markerClass=p.role==='origin'?'city-route-map-marker origin':'city-route-map-marker stop';
+   const numbered=p.displayOrder||p.role!=='origin',label=numbered?String(p.displayOrder||++stopNumber):(p.returnPoint?'S/R':'S'),markerClass=p.role==='origin'?'city-route-map-marker origin':'city-route-map-marker stop';
    const icon=root.L.divIcon({className:'city-route-map-marker-host',html:`<span class="${markerClass}" data-route-marker>${label}</span>`,iconSize:[34,34],iconAnchor:[17,17]});
    const marker=root.L.marker([lat,lon],{icon,keyboard:true,title:p.name});
    marker.bindTooltip(`${p.displayOrder?`Stop ${label} · route starts here`:p.role==='origin'?(p.returnPoint?'Start and return':'Start'):`Stop ${label}`}: ${p.name}`);
@@ -86,7 +86,7 @@ function mountCityRouteMap(container,mapData,onSelectStop){
  }catch(error){fail();}
  return {selectStop(id){if(markers.has(id))choose(id);},resize(){if(map&&!destroyed){map.invalidateSize({pan:false});map.fitBounds([[bounds[1],bounds[0]],[bounds[3],bounds[2]]],{padding:[20,20]});}},destroy(){destroyed=true;if(map){map.remove();map=null;}markers.clear();},get available(){return !!map&&!destroyed;}};
 }
-function pointsForMapMarkers(mapData){let stop=0;return mapData.features.filter(feature=>feature.geometry.type==='Point').map((feature,index)=>{const p=feature.properties;return {feature,index,label:p.displayOrder?String(p.displayOrder).padStart(2,'0'):p.role==='origin'?(p.returnPoint?'S/R':'S'):String(++stop).padStart(2,'0')};});}
+function pointsForMapMarkers(mapData){let stop=0;return mapData.features.filter(feature=>feature.geometry.type==='Point').map((feature,index)=>{const p=feature.properties;return {feature,index,label:p.displayOrder?String(p.displayOrder):p.role==='origin'?(p.returnPoint?'S/R':'S'):String(++stop)};});}
 root.CityRouteMap={mountCityRouteMap};
 if(typeof module!=='undefined'&&module.exports)module.exports={mountCityRouteMap};
 })(typeof window!=='undefined'?window:globalThis);
