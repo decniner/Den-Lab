@@ -8,10 +8,10 @@
     "attribution": "© OpenStreetMap contributors",
     "extractedOn": "2026-10-24",
     "bounds": [
-      139.768,
-      35.704,
-      139.802,
-      35.719
+      139.770453,
+      35.696742,
+      139.812699,
+      35.715403200000004
     ],
     "geometryStatus": "schematic-stop-order"
   },
@@ -20,12 +20,14 @@
       "type": "Feature",
       "id": "route-east",
       "properties": {
-        "routeLegId": "east-leg-1",
+        "routeLegId": "east-tokyo-route-sequence",
         "mode": "transit",
         "routeGeometryStatus": "schematic",
         "sourceIds": [
-          "osm-east-asakusa",
-          "osm-east-ueno"
+          "osm-tokyo-east-asakusa",
+          "osm-east-skytree",
+          "osm-tokyo-east-ueno",
+          "osm-east-akihabara"
         ]
       },
       "geometry": {
@@ -36,8 +38,16 @@
             35.7134032
           ],
           [
+            139.810699,
+            35.710064
+          ],
+          [
             139.7745414,
             35.7100241
+          ],
+          [
+            139.772453,
+            35.698742
           ]
         ]
       }
@@ -61,18 +71,52 @@
     },
     {
       "type": "Feature",
+      "id": "tokyo-east-skytree",
+      "properties": {
+        "name": "Tokyo Skytree",
+        "role": "stop",
+        "routeStopId": "tokyo-east-skytree",
+        "order": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.810699,
+          35.710064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "tokyo-east-ueno",
       "properties": {
         "name": "Ueno Park & Ameyoko",
         "role": "stop",
         "routeStopId": "tokyo-east-ueno",
-        "order": 2
+        "order": 3
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           139.7745414,
           35.7100241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokyo-east-akihabara",
+      "properties": {
+        "name": "Akihabara Electric Town",
+        "role": "stop",
+        "routeStopId": "tokyo-east-akihabara",
+        "order": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.772453,
+          35.698742
         ]
       }
     }
