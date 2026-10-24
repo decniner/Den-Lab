@@ -8,10 +8,10 @@
     "attribution": "© OpenStreetMap contributors",
     "extractedOn": "2026-10-24",
     "bounds": [
-      139.751,
-      35.677,
-      139.772,
-      35.691
+      139.7553959,
+      35.663604,
+      139.772851,
+      35.688700600000004
     ],
     "geometryStatus": "schematic-stop-order"
   },
@@ -20,17 +20,22 @@
       "type": "Feature",
       "id": "route-central",
       "properties": {
-        "routeLegId": "central-leg-1",
-        "mode": "walking",
+        "routeLegId": "central-tokyo-route-sequence",
+        "mode": "transit",
         "routeGeometryStatus": "schematic",
         "sourceIds": [
-          "osm-central-station",
-          "osm-central-gardens"
+          "osm-central-tsukiji",
+          "osm-tokyo-central-station",
+          "osm-tokyo-central-gardens"
         ]
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [
+            139.770851,
+            35.665604
+          ],
           [
             139.7659765,
             35.6811505
@@ -44,12 +49,29 @@
     },
     {
       "type": "Feature",
+      "id": "tokyo-central-tsukiji",
+      "properties": {
+        "name": "Tsukiji Outer Market",
+        "role": "stop",
+        "routeStopId": "tokyo-central-tsukiji",
+        "order": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.770851,
+          35.665604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "tokyo-central-station",
       "properties": {
         "name": "Tokyo Station & Marunouchi",
         "role": "stop",
         "routeStopId": "tokyo-central-station",
-        "order": 1
+        "order": 2
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +88,7 @@
         "name": "Imperial Palace East Gardens",
         "role": "stop",
         "routeStopId": "tokyo-central-gardens",
-        "order": 2
+        "order": 3
       },
       "geometry": {
         "type": "Point",

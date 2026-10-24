@@ -5,8 +5,8 @@
     {
       "id": "east-tokyo",
       "cityId": "tokyo",
-      "title": "East Tokyo · temple lanes to market streets",
-      "introduction": "Begin among Asakusa’s temple approaches and side streets, then continue north to Ueno’s park, museums and Ameyoko market lanes. Keep the two neighborhoods as one east-side day and choose your museum or park stop based on the time you have.",
+      "title": "East Tokyo · temples, tower and market streets",
+      "introduction": "Start in Asakusa, then follow four numbered stops north and west: Skytree, Ueno and Akihabara.",
       "researchStatus": "partially-verified",
       "mapDataPath": "maps/tokyo-brochure/east.geojson",
       "sources": [
@@ -45,6 +45,42 @@
           "supports": [
             "Mapped stop position"
           ]
+        },
+        {
+          "id": "go-tokyo-skytree",
+          "label": "GO TOKYO · Tokyo Skytree",
+          "url": "https://www.gotokyo.org/en/spot/6/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Tokyo Skytree visitor context"
+          ]
+        },
+        {
+          "id": "go-tokyo-akihabara",
+          "label": "GO TOKYO · Akihabara Electric Town",
+          "url": "https://www.gotokyo.org/en/spot/55/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Akihabara district context"
+          ]
+        },
+        {
+          "id": "osm-east-skytree",
+          "label": "OpenStreetMap · Tokyo Skytree",
+          "url": "https://www.openstreetmap.org/way/288269147",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Mapped stop position"
+          ]
+        },
+        {
+          "id": "osm-east-akihabara",
+          "label": "OpenStreetMap · Akihabara Electric Town entrance",
+          "url": "https://www.openstreetmap.org/node/6856530504",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Mapped stop position"
+          ]
         }
       ],
       "stops": [
@@ -77,8 +113,36 @@
           }
         },
         {
-          "id": "tokyo-east-ueno",
+          "id": "tokyo-east-skytree",
           "order": 2,
+          "name": "Tokyo Skytree",
+          "area": "Oshiage · Sumida",
+          "address": "Tokyo Skytree, 1-1-2 Oshiage, Sumida City, Tokyo, Japan",
+          "story": "See the skyline from the observation decks, or enjoy the tower and Solamachi from ground level. Deck tickets are separate.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.710064,
+            "longitude": 139.810699,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-east-skytree"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20SkyTree.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Tokyo_SkyTree.jpg",
+              "credit": "adn_tl",
+              "license": "CC BY-SA 3.0",
+              "alt": "Tokyo Skytree rising above the city"
+            }
+          }
+        },
+        {
+          "id": "tokyo-east-ueno",
+          "order": 3,
           "name": "Ueno Park & Ameyoko",
           "area": "Ueno · Taito",
           "address": "Ueno Park and Ameyoko, Taito City, Tokyo, Japan",
@@ -103,12 +167,56 @@
               "alt": "A walkway beneath cherry trees in Ueno Park"
             }
           }
+        },
+        {
+          "id": "tokyo-east-akihabara",
+          "order": 4,
+          "name": "Akihabara Electric Town",
+          "area": "Akihabara · Chiyoda",
+          "address": "Akihabara Station Electric Town entrance, Chiyoda City, Tokyo, Japan",
+          "story": "Browse the main streets for electronics, games, manga and anime; choose one shop area instead of trying to see everything.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.698742,
+            "longitude": 139.772453,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-east-akihabara"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Akihabara.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Akihabara.jpg",
+              "credit": "Trueshow111",
+              "license": "CC BY-SA 4.0",
+              "alt": "A main street in Akihabara Electric Town"
+            }
+          }
         }
       ],
       "legs": [
         {
           "id": "east-tokyo-leg-1",
           "fromId": "tokyo-east-asakusa",
+          "toId": "tokyo-east-skytree",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "sourceIds": [
+              "osm-east-asakusa",
+              "osm-east-skytree"
+            ]
+          }
+        },
+        {
+          "id": "east-tokyo-leg-2",
+          "fromId": "tokyo-east-skytree",
           "toId": "tokyo-east-ueno",
           "mode": "transit",
           "duration": {
@@ -117,8 +225,24 @@
           "geometry": {
             "status": "schematic",
             "sourceIds": [
-              "go-tokyo-asakusa",
+              "go-tokyo-skytree",
               "go-tokyo-ueno"
+            ]
+          }
+        },
+        {
+          "id": "east-tokyo-leg-3",
+          "fromId": "tokyo-east-ueno",
+          "toId": "tokyo-east-akihabara",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "sourceIds": [
+              "go-tokyo-ueno",
+              "go-tokyo-akihabara"
             ]
           }
         }
@@ -127,8 +251,8 @@
     {
       "id": "central-tokyo",
       "cityId": "tokyo",
-      "title": "Central Tokyo · red brick and palace gardens",
-      "introduction": "Set the red-brick Marunouchi station façade against the open grounds of the Imperial Palace East Gardens. This compact central route is built around architecture, city history and a quieter garden pause.",
+      "title": "Central Tokyo · food market to palace gardens",
+      "introduction": "Begin at Tsukiji in the morning, then cross to Tokyo Station and finish with a quiet garden walk.",
       "researchStatus": "partially-verified",
       "mapDataPath": "maps/tokyo-brochure/central.geojson",
       "sources": [
@@ -167,12 +291,67 @@
           "supports": [
             "Mapped stop position"
           ]
+        },
+        {
+          "id": "go-tokyo-tsukiji",
+          "label": "GO TOKYO · Tsukiji Outer Market",
+          "url": "https://www.gotokyo.org/en/spot/65/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Tsukiji visitor context"
+          ]
+        },
+        {
+          "id": "tsukiji-official",
+          "label": "Tsukiji Outer Market · official guide",
+          "url": "https://www.tsukiji.or.jp/english/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Market shops, food and visitor map"
+          ]
+        },
+        {
+          "id": "osm-central-tsukiji",
+          "label": "OpenStreetMap · Tsukiji Outer Market",
+          "url": "https://www.openstreetmap.org/way/606978548",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Mapped stop position"
+          ]
         }
       ],
       "stops": [
         {
-          "id": "tokyo-central-station",
+          "id": "tokyo-central-tsukiji",
           "order": 1,
+          "name": "Tsukiji Outer Market",
+          "area": "Tsukiji · Chuo",
+          "address": "Tsukiji Outer Market, Tsukiji, Chuo City, Tokyo, Japan",
+          "story": "Browse food stalls and small shops in the morning. Many businesses close earlier and set their own hours.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.665604,
+            "longitude": 139.770851,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-central-tsukiji"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tsukiji%20Outer%20Market.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Tsukiji_Outer_Market.jpg",
+              "credit": "Christophe95",
+              "license": "CC BY-SA 4.0",
+              "alt": "A busy lane in Tsukiji Outer Market"
+            }
+          }
+        },
+        {
+          "id": "tokyo-central-station",
+          "order": 2,
           "name": "Tokyo Station & Marunouchi",
           "area": "Marunouchi · Chiyoda",
           "address": "Tokyo Station Marunouchi entrance, Chiyoda City, Tokyo, Japan",
@@ -200,7 +379,7 @@
         },
         {
           "id": "tokyo-central-gardens",
-          "order": 2,
+          "order": 3,
           "name": "Imperial Palace East Gardens",
           "area": "Chiyoda · central Tokyo",
           "address": "Imperial Palace East Gardens, Chiyoda City, Tokyo, Japan",
@@ -230,6 +409,22 @@
       "legs": [
         {
           "id": "central-tokyo-leg-1",
+          "fromId": "tokyo-central-tsukiji",
+          "toId": "tokyo-central-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "sourceIds": [
+              "go-tokyo-tsukiji",
+              "go-tokyo-best-of-tokyo"
+            ]
+          }
+        },
+        {
+          "id": "central-tokyo-leg-2",
           "fromId": "tokyo-central-station",
           "toId": "tokyo-central-gardens",
           "mode": "walking",
@@ -249,8 +444,8 @@
     {
       "id": "west-tokyo",
       "cityId": "tokyo",
-      "title": "West Tokyo · forest path to city lights",
-      "introduction": "Move from the wooded approach to Meiji Jingu through Harajuku’s lively streets and finish at Shibuya Crossing. The route pairs a quiet shrine visit with the energy of two neighboring west-side districts.",
+      "title": "West Tokyo · garden, shrine and city lights",
+      "introduction": "Start in Shinjuku Gyoen, then move south through Meiji Jingu and Harajuku to Shibuya.",
       "researchStatus": "partially-verified",
       "mapDataPath": "maps/tokyo-brochure/west.geojson",
       "sources": [
@@ -307,12 +502,67 @@
           "supports": [
             "Mapped stop position"
           ]
+        },
+        {
+          "id": "go-tokyo-shinjuku",
+          "label": "GO TOKYO · Shinjuku",
+          "url": "https://www.gotokyo.org/en/destinations/western-tokyo/shinjuku/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Shinjuku district context"
+          ]
+        },
+        {
+          "id": "shinjuku-gyoen-official",
+          "label": "Shinjuku Gyoen · official visitor guide",
+          "url": "https://www.env.go.jp/garden/shinjukugyoen/english/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Visitor information for Shinjuku Gyoen"
+          ]
+        },
+        {
+          "id": "osm-west-shinjuku-gyoen",
+          "label": "OpenStreetMap · Shinjuku Gyoen",
+          "url": "https://www.openstreetmap.org/way/15772074",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Mapped stop position"
+          ]
         }
       ],
       "stops": [
         {
-          "id": "tokyo-west-meiji",
+          "id": "tokyo-west-shinjuku-gyoen",
           "order": 1,
+          "name": "Shinjuku Gyoen",
+          "area": "Shinjuku · central-west Tokyo",
+          "address": "Shinjuku Gyoen National Garden, Naitocho, Shinjuku City, Tokyo, Japan",
+          "story": "Begin with a quiet garden walk. Check gate hours, closure days and admission before setting out.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.6851,
+            "longitude": 139.70989,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-west-shinjuku-gyoen"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinjuku%20Gyoen.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Shinjuku_Gyoen.jpg",
+              "credit": "Fay1982",
+              "license": "CC BY-SA 4.0",
+              "alt": "A pond and landscaped paths in Shinjuku Gyoen"
+            }
+          }
+        },
+        {
+          "id": "tokyo-west-meiji",
+          "order": 2,
           "name": "Meiji Jingu & Harajuku",
           "area": "Harajuku · Shibuya",
           "address": "Meiji Jingu, Yoyogi-Kamizonocho, Shibuya City, Tokyo, Japan",
@@ -340,7 +590,7 @@
         },
         {
           "id": "tokyo-west-harajuku",
-          "order": 2,
+          "order": 3,
           "name": "Harajuku Station & streets",
           "area": "Harajuku · Shibuya",
           "address": "Harajuku Station, Jingumae, Shibuya City, Tokyo, Japan",
@@ -368,7 +618,7 @@
         },
         {
           "id": "tokyo-west-shibuya",
-          "order": 3,
+          "order": 4,
           "name": "Shibuya Scramble Crossing",
           "area": "Shibuya · west Tokyo",
           "address": "Shibuya Scramble Crossing, Shibuya City, Tokyo, Japan",
@@ -398,6 +648,22 @@
       "legs": [
         {
           "id": "west-tokyo-leg-1",
+          "fromId": "tokyo-west-shinjuku-gyoen",
+          "toId": "tokyo-west-meiji",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "sourceIds": [
+              "go-tokyo-shinjuku",
+              "go-tokyo-meiji"
+            ]
+          }
+        },
+        {
+          "id": "west-tokyo-leg-2",
           "fromId": "tokyo-west-meiji",
           "toId": "tokyo-west-harajuku",
           "mode": "walking",
@@ -413,10 +679,10 @@
           }
         },
         {
-          "id": "west-tokyo-leg-2",
+          "id": "west-tokyo-leg-3",
           "fromId": "tokyo-west-harajuku",
           "toId": "tokyo-west-shibuya",
-          "mode": "transit",
+          "mode": "walking",
           "duration": {
             "status": "unknown"
           },
