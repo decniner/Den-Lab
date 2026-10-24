@@ -4,7 +4,7 @@
 
 **Goal:** Turn the existing Tokyo destination guide into a testable three-route travel brochure without changing the published site during implementation.
 
-**Architecture:** Keep the existing Tokyo canonical page and generator. Add a separate, Tokyo-only route collection data file, render its editorial sections into the guide’s initial HTML, and mount one shared map view per route. Keep the existing city planner’s route data independent.
+**Architecture:** The existing Tokyo guide is hand-authored, not overwritten by the shared guide generator. Update that page in place; keep route facts in a Tokyo-only JSON registry, use route-specific GeoJSON, and mount the existing shared map UI once per route. Keep the city planner’s data independent.
 
 **Tech Stack:** Static HTML, CSS, JavaScript, Node.js guide generator, existing MapLibre/route UI, Google Maps direction URLs.
 
@@ -59,9 +59,8 @@
 - Create: `SomeWhereInJapan/tokyo-brochure.js` to mount the three route views from the Tokyo-only registry and map files.
 
 **Interfaces:**
-- The generator adds the Tokyo route sections from the route data source to initial HTML; it must not add empty Tokyo sections to other guide pages.
-- Each route section has a stable route ID, ordered stop list, map host/fallback, directions action, and associated source/photo credits.
-- `tokyo-brochure.js` calls the shared `CityRouteUI.mountCityRouteView(panel, route, mapData, options)` once per route. Route-specific GeoJSON is loaded from the path in the registry; each rendered map gets unique DOM and accessibility IDs.
+- The page contains static editorial route sections and route-map hosts so route names, stop order, fallback content, and directions remain usable without JavaScript.
+- `tokyo-brochure.js` loads `data/tokyo-brochure-routes.json` and calls `CityRouteUI.mountCityRouteView(panel, route, mapData, {hideStopPhotos:true})` once per route. Route-specific GeoJSON is loaded from `mapDataPath`; each rendered map gets unique DOM and accessibility IDs.
 
 - [ ] Add a Tokyo-only collection slot and script include through the existing guide generator; both are emitted only for the Tokyo guide.
 - [ ] Add the data loader and mount each route panel through the shared route UI with its matching GeoJSON.
@@ -84,6 +83,10 @@
 - [ ] Provide a direct GitHub source link to the branch page.
 - [ ] Provide checkout and local-server steps: check out `codex/tokyo-brochure`, serve from `SomeWhereInJapan` with `python -m http.server 8000`, then open `http://localhost:8000/places/tokyo-in-layers/`.
 - [ ] Report unresolved evidence gaps clearly; do not imply that current schedules or navigation have been independently verified.
+
+## Implementation ruling
+
+The Tokyo guide has no `data-generated-guide=\"true\"` marker, and the shared generator intentionally skips hand-authored pages. I will update the Tokyo page in place and avoid changing the shared guide template/generator; this narrows the change and prevents effects on other guides.
 
 ## User-facing acceptance
 
