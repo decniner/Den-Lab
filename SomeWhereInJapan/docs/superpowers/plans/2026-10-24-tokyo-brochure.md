@@ -71,15 +71,15 @@
 ### Task 3: Provide a testable preview
 
 **Files:**
-- Create: a preview bundle or page artifact generated from the same Tokyo page source on `codex/tokyo-brochure`.
+- Use: `SomeWhereInJapan/places/tokyo-in-layers/index.html` from the feature branch as the exact preview page.
 - Modify: no production files outside the approved branch.
 
 **Interfaces:**
-- The user can open the preview and try route selection, route maps, stop highlights, Google Maps links, image credits, and mobile layout.
-- The preview matches the Tokyo guide committed on the feature branch, not a separate mockup.
+- The preview is the generated Tokyo guide itself, not a separate mockup or duplicate page.
+- The user can load the full branch locally so relative styles, scripts, map data, and images resolve.
 
-- [ ] Produce a preview artifact and direct source link for the exact branch page.
-- [ ] Include concise steps for opening it with the repository’s static server so local relative assets resolve.
+- [ ] Provide a direct GitHub source link to the branch page.
+- [ ] Provide checkout and local-server steps: check out `codex/tokyo-brochure`, serve from `SomeWhereInJapan` with `python -m http.server 8000`, then open `http://localhost:8000/places/tokyo-in-layers/`.
 - [ ] Report unresolved evidence gaps clearly; do not imply that current schedules or navigation have been independently verified.
 
 ## User-facing acceptance
