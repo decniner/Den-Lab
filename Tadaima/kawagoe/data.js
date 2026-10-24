@@ -857,7 +857,8 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Price is 'from' — lots run ¥2,680万–¥3,380万, sizes 105.9–125.2m²",
-        "Low 80% floor-area ratio limits house size"
+        "Low 80% floor-area ratio limits house size",
+        "Figures could not be matched to the developer's current release (checked 2026-10-24; the developer's page, updated 2026-10-12, now offers different lots) — this lot may have sold or been re-phased. Treat price and area as stale until re-checked."
       ],
       "source": {
         "name": "LIFULL HOME'S",
