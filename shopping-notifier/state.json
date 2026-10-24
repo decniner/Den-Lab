@@ -224,9 +224,9 @@
       "url": "https://phenixstore.com/products/pob-24051?variant=49016132567344"
     },
     "phenixstore-com:9550566097200:48917577728304": {
-      "sale_price": "5400",
+      "sale_price": "7200",
       "reference_price": "18000",
-      "sent_at": "2026-10-17T09:06:00+09:00",
+      "sent_at": "2026-10-24T09:11:59+09:00",
       "url": "https://phenixstore.com/products/poo-24013?variant=48917577728304"
     },
     "toffyjapan:10095234187538:51142613270802": {
@@ -574,13 +574,13 @@
     "boardriders-co-jp:10631285145881:52412801614105": {
       "sale_price": "88000",
       "reference_price": "176000",
-      "sent_at": "2026-10-17T09:06:00+09:00",
+      "sent_at": "2026-10-24T09:11:59+09:00",
       "url": "https://boardriders.co.jp/products/g0452500?variant=52412801614105"
     },
     "boardriders-co-jp:10631288979737:52412828287257": {
       "sale_price": "39600",
       "reference_price": "79200",
-      "sent_at": "2026-10-17T09:06:00+09:00",
+      "sent_at": "2026-10-24T09:11:59+09:00",
       "url": "https://boardriders.co.jp/products/g1352504?variant=52412828287257"
     },
     "boardriders-co-jp:10631287144729:52412815606041": {
@@ -780,6 +780,18 @@
       "reference_price": "27500",
       "sent_at": "2026-10-21T09:18:15+09:00",
       "url": "https://boardriders.co.jp/products/adytj03082?variant=52412825141529"
+    },
+    "ecoflow:8095160795297:44597212020897": {
+      "sale_price": "109800",
+      "reference_price": "236600",
+      "sent_at": "2026-10-24T09:11:59+09:00",
+      "url": "https://jp.ecoflow.com/products/delta-3-plus-portable-power-station?variant=44597212020897"
+    },
+    "ecoflow:14775578952047:53477411389807": {
+      "sale_price": "151810",
+      "reference_price": "311180",
+      "sent_at": "2026-10-24T09:11:59+09:00",
+      "url": "https://jp.ecoflow.com/products/delta-3-max-portable-power-station?variant=53477411389807"
     }
   },
   "last_digest": {
