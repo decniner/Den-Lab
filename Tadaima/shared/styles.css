@@ -167,3 +167,7 @@ td.cmp-best{background:#eef6ee;font-weight:700}
 .lang-btn{border:1px solid var(--line);background:var(--paper-2);border-radius:999px;padding:6px 14px;font-size:14px;font-family:inherit;color:var(--ink);cursor:pointer}
 .lang-btn:hover{border-color:var(--ink-soft)}
 .ja-summary{font-size:17px;line-height:1.9}
+.city-photo{margin:20px 0 0}
+.city-photo img{width:100%;height:auto;display:block;border-radius:14px}
+.city-photo figcaption{font-size:12.5px;color:var(--ink-soft);margin-top:7px}
+.city-photo figcaption a{color:inherit}
