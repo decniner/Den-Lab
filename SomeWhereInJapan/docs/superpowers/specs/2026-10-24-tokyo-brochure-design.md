@@ -1,6 +1,6 @@
 # Tokyo Brochure: Three District Routes
 
-**Status:** Awaiting user approval  
+**Status:** Approved by user on 2026-10-24  
 **Date:** 2026-10-24  
 **Repository:** `decniner/Den-Lab`, `SomeWhereInJapan/`  
 **Work branch:** `codex/tokyo-brochure`
@@ -81,6 +81,8 @@ Use the existing map and directions implementation where it supports the require
 - Responsive layout, readable controls, visible keyboard focus, and reduced-motion behavior follow existing site conventions.
 
 ## Decisions already made
+
+- Written design approved by the user on 2026-10-24.
 
 - Brand: **Somewhere in Japan**.
 - Scope: evolve the existing site in place.
