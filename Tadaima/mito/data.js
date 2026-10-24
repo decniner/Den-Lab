@@ -51,14 +51,13 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Price is 'from' — units run to ¥3,590万",
         "At the 15-minute walk limit of this collection",
-        "Shiraume / Senba Lake side of Mito — check the city flood hazard map for the Naka River / Senba Lake area before buying",
-        "Seen on a portal index page — verify details on the listing link"
+        "Shiraume / Senba Lake side of Mito — check the city flood hazard map for the Naka River / Senba Lake area before buying"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/08201/030/W/21979574.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -67,8 +66,8 @@ window.TADAIMA_DATA = {
       "district": "Akatsuka 1",
       "districtJa": "赤塚1丁目",
       "title": "New 3LDK–4LDK development (3 units) — all rooms south-facing, 10 min from Akatsuka Station",
-      "priceMan": 2999,
-      "priceFrom": true,
+      "priceMan": 2680,
+      "priceFrom": false,
       "landM2": 197.91,
       "buildingM2": 104.47,
       "layout": "3LDK",
@@ -84,15 +83,15 @@ window.TADAIMA_DATA = {
         "Generous ~198m² plots, parking for 2+ cars"
       ],
       "cautions": [
-        "Price is 'from' — units run to ¥3,080万",
         "Listed by several agents at the same prices — the same development appears multiple times across feeds",
-        "Seen on a portal index page — verify details on the listing link"
+        "The lot carries a private-road burden (349.00m²) and the front road is only 3.3m wide",
+        "Private water supply (私営水道) rather than public mains water — public sewer and city gas are connected"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/08201/030/Z/21385734.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -152,13 +151,14 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Price is 'from' — units run to ¥3,199万 and layouts/areas vary across the range",
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — completion scheduled Nov 2026, handover late Nov 2026",
+        "Landscape-law / Mito city landscape-ordinance restrictions apply, with a 10m height limit (景観法・水戸市都市景観条例)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/08201/030/Z/21936434.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -185,13 +185,14 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Priced as a show/model house — confirm what fixtures and specification are included",
-        "Seen on a portal index page — verify details on the listing link"
+        "Overhead power lines cross each lot (各号地の上空を電線が通過)",
+        "A shared private-road burden applies (296.85m² shared, 1/5 share, plus smaller shared shares)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/08201/030/W/20514359.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -252,12 +253,12 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Portal feeds disagree on price (¥2,750万 vs ¥2,850万 for the same house) — scored here on the higher figure; confirm the current price",
         "Compact 132.8m² plot for a 4LDK",
-        "Seen on a portal index page — verify details on the listing link"
+        "Quasi-industrial zoning (準工業地域, 60% / 200%) — a mixed-use zone, not a protected quiet residential street"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z20912853/183770002/x1030Z20912853.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -319,12 +320,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Bespoke specification can complicate renovation and resale comparisons",
-        "Seen on a portal index page — verify details on the listing link"
+        "Handover is not possible until Feb 2027 (引渡可能時期 2027年2月)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z21289017/148258001/x1030Z21289017.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -351,13 +352,12 @@ window.TADAIMA_DATA = {
         "Original and alteration plans plus repair/inspection records retained; parking for 3+"
       ],
       "cautions": [
-        "1991 structure — budget for ongoing maintenance despite the 2016 repaint",
-        "Seen on a portal index page — verify details on the listing link"
+        "1991 structure — budget for ongoing maintenance despite the 2016 repaint"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z74405155/002597003/x1030Z74405155.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -384,13 +384,12 @@ window.TADAIMA_DATA = {
         "Shopping within walking distance; city gas, parking for 2"
       ],
       "cautions": [
-        "1998 structure — check roof/exterior maintenance history",
-        "Seen on a portal index page — verify details on the listing link"
+        "1998 structure — check roof/exterior maintenance history"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z21451617/085120003/x1030Z21451617.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -418,12 +417,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "1985 structure — 41 years old; judge condition carefully and budget for renewal of water systems",
-        "Seen on a portal index page — verify details on the listing link"
+        "Quasi-industrial zoning (準工業地域, 60% / 200%) — a mixed-use zone, not a protected quiet residential street"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_ibaragi/08201/117.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z21921303/120483001/x1030Z21921303.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -433,7 +432,7 @@ window.TADAIMA_DATA = {
       "district": "Miwa 3",
       "districtJa": "見和3丁目",
       "title": "Used 5LDK (1986) — exterior re-clad 2023, boiler replaced 2024",
-      "priceMan": 1580,
+      "priceMan": 1480,
       "priceFrom": false,
       "landM2": 200.36,
       "buildingM2": 135.99,
@@ -450,13 +449,12 @@ window.TADAIMA_DATA = {
         "Exterior siding replaced 2023 and water heater replaced 2024; parking for 2"
       ],
       "cautions": [
-        "1986 structure — the recent works are exterior/equipment only, per the listing",
-        "Seen on a portal index page — verify details on the listing link"
+        "1986 structure — the recent works are exterior/equipment only, per the listing"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_ibaragi/08201/102.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z79090499/085120003/x1030Z79090499.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -520,15 +518,16 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Built Feb 1978 — pre-1981 seismic standard (旧耐震); seismic diagnosis/reinforcement should be budgeted",
         "Aoyagi-cho sits by the Naka River — check the city flood hazard map before buying",
-        "Seen on a portal index page — verify details on the listing link"
+        "Urbanisation-control area (都市計画: 調整区域) with no zoning designation (無指定, 60% / 200%) — building permission is restricted; confirm this plot's eligibility before buying (reads as a MAJOR caution)",
+        "Drainage is a septic tank (浄化槽), not mains sewer"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_ibaragi/08201/117.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z20818925/189549018/x1030Z20818925.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
-      "majorCautions": 1
+      "majorCautions": 2
     },
     {
       "id": "h16",
@@ -556,12 +555,12 @@ window.TADAIMA_DATA = {
         "Built Feb 1974 — pre-1981 seismic standard (旧耐震); treat the structure as end-of-life",
         "Sold as-is (現況渡し) or as cleared land by negotiation — demolition costs are on the buyer if cleared-land handover is not agreed",
         "Aoyagi-cho sits by the Naka River — check the city flood hazard map before buying",
-        "Seen on a portal index page — verify details on the listing link"
+        "The detail page's facilities grid shows no mains-sewer connection mark — drainage/septic arrangements are unconfirmed; check before buying"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z74015943/085120003/x1030Z74015943.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 2
@@ -572,7 +571,7 @@ window.TADAIMA_DATA = {
       "district": "Shibui-cho",
       "districtJa": "渋井町",
       "title": "Used 4LDK (1983), fully renovated inside and out — 305m² plot, 14 min from Higashi-Mito Station",
-      "priceMan": 1729,
+      "priceMan": 1699,
       "priceFrom": false,
       "landM2": 305.02,
       "buildingM2": 115.75,
@@ -591,14 +590,16 @@ window.TADAIMA_DATA = {
       "cautions": [
         "1983 structure underneath the renovation — the frame is 43 years old",
         "Kashima Rinkai Railway services are limited — check the timetable; feeds differ slightly on floor area (115.75 vs 115.76m²)",
-        "Seen on a portal index page — verify details on the listing link"
+        "Urbanisation-control area (調整区域) with no zoning designation (無指定, 60% / 200%) — but the listing states it is an existing residential lot (既存宅地) so rebuilding is permitted; confirm the status in writing (reads as a MAJOR caution)",
+        "Setback required (セットバック要), the south-west front road is only 2.2m wide, and 15.27m² of the plot is private-road area"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_ibaragi/08201/117.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z20829540/055361007/x1030Z20829540.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "l01",

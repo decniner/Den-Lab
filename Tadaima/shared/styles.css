@@ -164,3 +164,6 @@ table.cmp th,table.cmp td{border:1px solid var(--line);padding:7px 9px;text-alig
 table.cmp thead th{font-family:"Fraunces",serif;color:var(--green-2)}
 table.cmp tbody th{font-weight:600;color:var(--ink-soft);white-space:nowrap}
 td.cmp-best{background:#eef6ee;font-weight:700}
+.lang-btn{border:1px solid var(--line);background:var(--paper-2);border-radius:999px;padding:6px 14px;font-size:14px;font-family:inherit;color:var(--ink);cursor:pointer}
+.lang-btn:hover{border-color:var(--ink-soft)}
+.ja-summary{font-size:17px;line-height:1.9}

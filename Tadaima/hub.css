@@ -121,3 +121,4 @@ footer .wrap{display:flex;flex-direction:column;gap:8px}
 #kantoMap .map-dot{cursor:pointer;stroke:#fff;stroke-width:1.5}
 #kantoMap .map-dot:focus{outline:2px solid var(--green-2);outline-offset:2px}
 .map-popup{max-width:640px;margin:10px auto;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper-2);font-size:14.5px}
+.lang-btn{border:1px solid var(--line,#ccc);background:transparent;border-radius:999px;padding:6px 14px;font-size:14px;font-family:inherit;color:inherit;cursor:pointer;margin-left:16px}

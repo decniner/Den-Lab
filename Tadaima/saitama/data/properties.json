@@ -162,13 +162,14 @@
         "Balanced 100m² land / 103m² floor area"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — completion scheduled Dec 2026, handover Jan 2027",
+        "Front road is a 6 m private road (私道)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/area_saitama/11104.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11104/030/Z/21943259.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -228,13 +229,14 @@
         "Cheapest new house in this collection (Open Place Higashi-Iwatsuki Precious)"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "LP gas (個別プロパンガス), not city gas",
+        "In a land-development regulation area (宅地造成工事規制区域) with 景観法 restrictions"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/area_saitama/11110.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11110/030/W/21059437.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -292,13 +294,15 @@
       ],
       "cautions": [
         "Units run ¥4,199万–¥4,499万 depending on the house",
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — completion scheduled Jan 2027, handover Feb 2027; only 2 of 3 units remain on sale",
+        "Private-road burden: 4 m private road, separate shared share of 1.52 m² plus 18.12 m² private-road portion",
+        "LP gas (個別プロパンガス)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/area_saitama/11101.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11101/030/W/21472542.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -325,13 +329,14 @@
       "cautions": [
         "Small ~66.6m² plot",
         "Units run ¥4,798万–¥4,898万",
-        "Seen on a portal index page — verify details on the listing link"
+        "Building area includes the built-in garage; wooden 3-storey house on only a 66.64 m² plot",
+        "Includes a small shared-land interest (1.03 m² held 1/2 each)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/area_saitama/11102.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11102/030/W/21393957.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -393,13 +398,14 @@
         "130.1m² plot"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Private-road area of 15.4 m² within the plot; north 4 m road with 3.5 m frontage",
+        "Handover only after the full renovation completes (Jan 2027)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_saitama/110001.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11104/030Z21629455/193612001/x1030Z21629455.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -427,13 +433,15 @@
         "Numerous unregistered extensions (未登記増築多数)",
         "Sold as-is (現況渡し), positioned for DIY buyers",
         "1972 structure — effectively a land purchase with a project attached",
-        "Seen on a portal index page — verify details on the listing link"
+        "No parking on site",
+        "LP gas (プロパンガス)",
+        "In a scenic district (風致地区) with a 10 m height-limit district — extensions/rebuild constrained"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3013/area_saitama/110001.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11104/030Z78685891/145047002/x1030Z78685891.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
       },
       "majorCautions": 1
     },
@@ -494,14 +502,16 @@
       ],
       "cautions": [
         "1965 structure — effectively a land-value purchase; the building adds little",
-        "Seen on a portal index page — verify details on the listing link"
+        "Nearly half the plot — 85.02 m² — is private road, so the effective building land is far smaller than the headline 189.3 m²",
+        "Partial extension (一部増築あり); registration status not stated on the page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_saitama/110001.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11102/030Z20886177/164832001/x1030Z20886177.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h15",
@@ -562,14 +572,17 @@
       ],
       "cautions": [
         "A second lot in the same release is ¥4,498万 / 141.52m² — confirm which lot this price belongs to",
-        "Seen on a portal index page (crawl ~36 days old) — verify on the listing link"
+        "The 168.16 m² includes a ~57 m² flag-pole/access strip (路地状部分) — the effective building plot is only ~111 m²",
+        "The listing notes a neighbour's block wall may encroach on the plot (隣地ブロックが越境している可能性有; a memorandum is to be obtained)",
+        "Contract restriction: the sale targets buyers planning a wooden house of ≤3 floors without basement, or vacant-land use"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/tochi/special/4003/area_saitama/11105.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11105/1251460111944/125146/x41251460111944.html",
+        "verified": "detail",
+        "infoDate": "2026-10-24"
+      },
+      "majorCautions": 1
     },
     {
       "id": "l02",
@@ -597,14 +610,16 @@
       ],
       "cautions": [
         "A building stands on the land (上物有り) — demolition cost is likely on the buyer",
-        "Seen on a portal index page (crawl ~36 days old) — verify on the listing link"
+        "Access is via an east 4 m private road, and no passage/digging consent has been obtained from the other private-road co-owners (他私道共有者からの私道通行掘削は取得無し)",
+        "22.69 m² of the plot is a passage portion; the private-road share is 80 m² of a 136 m² road"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/tochi/special/4003/area_saitama/11105.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11105/1161840085648/116184/x41161840085648.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
+      },
+      "majorCautions": 1
     },
     {
       "id": "l03",
@@ -740,12 +755,14 @@
         "Quasi-industrial zoning (準工業地域) — expect workshops and mixed neighbours, not a pure residential street",
         "The lot sits in a buried-cultural-property area (the listing says the survey is already done)",
         "Unusually large for the price — confirm the plot shape on the listing",
-        "Seen on a portal index page — verify details on the listing link"
+        "The plot is sloping ground (地勢: 傾斜地) — expect levelling/retaining costs",
+        "Registered land category is 山林 (forest land) despite the residential use",
+        "Includes a 10 m² private-road portion; setback already completed"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_saitama/11106.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11106/030Z78667115/000232006/x1030Z78667115.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -776,15 +793,16 @@
       "cautions": [
         "Urbanisation-control area (市街化調整区域): the listing itself states building is in principle not permitted (原則建築不可) — only narrow exceptions after prior consultation with the city",
         "Experts only — verify buildability before anything else",
-        "Seen on a portal index page — verify details on the listing link"
+        "Part of the plot lies in a planned city road (一部都市計画道路)",
+        "Also in a land-development regulation area (宅地造成工事規制区域), with 景観法 and shadow regulation"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_saitama/11106.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11106/030Z21796748/005263020/x1030Z21796748.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
-      "majorCautions": 2
+      "majorCautions": 3
     },
     {
       "id": "l08",
@@ -812,12 +830,12 @@
       ],
       "cautions": [
         "A building stands on the land (上物有り) — demolition may be needed",
-        "Seen on a portal index page — verify details on the listing link"
+        "Sold as-is (現況渡し) with the existing building — demolition cost falls to the buyer"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_saitama/11109.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11109/030Z20893599/000389166/x1030Z20893599.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -883,13 +901,14 @@
       "cautions": [
         "Builder condition attached (建築条件付) — you must build with Polus",
         "A smaller sibling lot in the same release is ¥2,180万 / 82.81m²",
-        "Seen on a portal index page — verify details on the listing link"
+        "Frontage is a narrow SE 3.2 m private road; private-road burden 11.29 m² held 1/2 with the neighbouring plot",
+        "LP gas (プロパンガス); water and sewer connected"
       ],
       "source": {
         "name": "goo住宅・不動産 (HOME'S feed)",
-        "url": "https://house.goo.ne.jp/buy/la/special/4002/area_saitama/11110.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11110/37091140003568/3709114/x437091140003568.html",
+        "verified": "detail",
+        "infoDate": "2026-10-24"
       }
     },
     {
@@ -919,14 +938,16 @@
       "cautions": [
         "Builder condition attached (建築条件付) — you must build with Polus",
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Headline 173.5 m² overstates the usable plot: the seller quotes '135 m² or more (実質)' and states building on part of the site is restricted — ask the agent what the restricted portion is",
+        "District-plan restrictions apply (岩槻区南部親和西地区地区計画), plus a prefectural ordinance, quasi-fire zone (準防火地域) and height district (高度地区)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4002/area_saitama/11110.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11110/030Z20314631/006110039/x1030Z20314631.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
+      },
+      "majorCautions": 1
     },
     {
       "id": "l12",
@@ -955,13 +976,13 @@
         "Builder condition attached (建築条件付) — you must build with Polus",
         "Premium Urawa school-district pricing — the highest ¥/tsubo of any buildable lot here",
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Utilities are not yet connected: water, sewer and gas must be drawn in from the front road at extra cost (各種ライフラインについては前面道路からの引込が必要・別途引込費用)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4002/area_saitama/110001.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11107/030Z21792840/006110051/x1030Z21792840.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
       }
     }
   ],
