@@ -13183,7 +13183,8 @@
             "basis": "Suggested brunch break; queue and seating time vary."
           },
           "visitorInfo": "Brunch and specialty coffee; visitor reviews praise the pond-side terrace and note waits at busy times. Opening hours and menu can change.",
-          "visitorInfoUrl": "https://www.vermillioncafe.com/access"
+          "visitorInfoUrl": "https://www.vermillioncafe.com/access",
+          "mapsAddress": "Vermillion - cafe., 5-31 Fukakusa Kaidoguchicho, Fushimi-ku, Kyoto 612-0805"
         },
         {
           "id": "kyoto-at-first-light-stop-2",
@@ -13222,7 +13223,8 @@
             }
           },
           "visitorInfo": "Official seasonal hours and admission details",
-          "visitorInfoUrl": "https://tofukuji.jp/guide/"
+          "visitorInfoUrl": "https://tofukuji.jp/guide/",
+          "mapsAddress": "Tofukuji Temple, 15-778 Honmachi, Higashiyama-ku, Kyoto 605-0981"
         },
         {
           "id": "kyoto-at-first-light-stop-3",
@@ -13261,7 +13263,8 @@
             }
           },
           "visitorInfo": "Official hours, admission and event-day access",
-          "visitorInfoUrl": "https://mitera.org/guide"
+          "visitorInfoUrl": "https://mitera.org/guide",
+          "mapsAddress": "Sennyuji Temple, 27 Sennyuji Yamanouchicho, Higashiyama-ku, Kyoto 605-0977"
         }
       ],
       "legs": [

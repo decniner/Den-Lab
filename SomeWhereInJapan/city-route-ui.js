@@ -4,6 +4,7 @@ function esc(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;'
 function verifiedPhoto(photo){const v=photo?.verification;return photo?.url&&v?.verified===true&&v.source_page&&v.credit&&v.license&&v.alt&&photo.verification.source_page===v.source_page&&photo.verification.credit===v.credit&&photo.verification.license===v.license&&photo.alt===v.alt?photo:null;}
 function orderedStops(route){return [...(route?.stops||[])].sort((a,b)=>a.order-b.order);}
 function walkingRouteUrl(route){return root.GoogleMapsRoutes?.buildWalkingRouteUrl(route)||null;}
+function mapsAddress(point){return point?.mapsAddress||point?.address||point?.name||'';}
 function walkingRouteAction(route,options={}){if(options.hideWalkingRouteLink)return '';const url=walkingRouteUrl(route);if(!url)return '';return `<a class="walking-google-route city-route-walking-link" href="${esc(url)}" target="_blank" rel="noopener" aria-label="Walking route on Google Maps">Walking route on Google Maps <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M6 14 14 6M7 6h7v7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>`;}
 function visitDurationLabel(duration,compact=false){if(duration?.status==='estimated')return `Planning estimate ${duration.minMinutes}–${duration.maxMinutes} min`;if(duration?.status==='known')return duration.minMinutes===duration.maxMinutes?`About ${duration.minMinutes} min`:`Suggested visit ${duration.minMinutes}–${duration.maxMinutes} min`;return compact?'':'Visit duration not verified';}
 function legDirectionsUrl(route,leg){const pointById=new Map([[route.origin?.id,route.origin],...(route.stops||[]).map(stop=>[stop.id,stop])]);const from=pointById.get(leg.fromId),to=pointById.get(leg.toId);if(!from||!to)return null;const mode=leg.mode==='walking'?'walking':leg.mode==='driving'?'driving':'transit';const params=new URLSearchParams({api:'1',origin:from.address||from.name,destination:to.address||to.name,travelmode:mode});return `https://www.google.com/maps/dir/?${params}`;}
@@ -15,9 +16,9 @@ function googleMapsRouteUrl(route){
  const middle=origin?stops.filter(stop=>stop.id!==last.id):stops.slice(1,-1);
  const modes=[...new Set((route?.legs||[]).map(leg=>leg.mode))];
  const travelmode=modes.length>0&&modes.every(mode=>mode==='driving')?'driving':modes.length>0&&modes.every(mode=>mode==='walking')?'walking':'transit';
- const params=new URLSearchParams({api:'1',destination:last.address||last.name,travelmode});
- if(first!==last)params.set('origin',first.address||first.name);
- if(middle.length)params.set('waypoints',middle.map(stop=>stop.address||stop.name).join('|'));
+ const params=new URLSearchParams({api:'1',destination:mapsAddress(last),travelmode});
+ if(first!==last)params.set('origin',mapsAddress(first));
+ if(middle.length)params.set('waypoints',middle.map(mapsAddress).join('|'));
  return `https://www.google.com/maps/dir/?${params}`;
 }
 function mountCityRouteView(panel,route,mapData,options={}){
