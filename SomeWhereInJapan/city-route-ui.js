@@ -22,7 +22,9 @@ function googleMapsRouteUrl(route){
  return `https://www.google.com/maps/dir/?${params}`;
 }
 function mountCityRouteView(panel,route,mapData,options={}){
- const origin=options.origin||{}, stops=orderedStops(route);\n const domKey=String(route.id||route.cityId||'route').replace(/[^a-z0-9_-]/gi,'-');\n const titleId=`mapped-route-title-${domKey}`, mapId=`city-route-map-${domKey}`;
+ const origin=options.origin||{}, stops=orderedStops(route);
+ const domKey=String(route.id||route.cityId||'route').replace(/[^a-z0-9_-]/gi,'-');
+ const titleId=`mapped-route-title-${domKey}`, mapId=`city-route-map-${domKey}`;
  if(options.airport){const access=document.createElement('section');access.className='city-route-access-preview';access.innerHTML=`<p class="atlas-kicker">AIRPORT ACCESS PREVIEW</p><h4>Continue from ${esc(origin.label||origin.station||'the airport')}</h4><p>This is an airport access preview. The city route below begins at ${esc(route.origin?.name||'the city station')}; no airport-to-route timing or budget is implied.</p><a href="#daytrips">Open the ${esc(route.cityId)} city plan</a>`;panel.prepend(access);return {destroy(){access.remove();}};}
  const host=document.createElement('section');host.className='city-route-shared';host.setAttribute('aria-labelledby',titleId);
  const placeLocator=mapData?.metadata?.geometryStatus==='place-locator';
