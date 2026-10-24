@@ -78,7 +78,7 @@ window.TADAIMA_DATA = {
       "ageYears": 51,
       "highlights": [
         "Cheapest house in this collection; vacant, immediate handover",
-        "Also 15 min from Tsukushino (Tokyu Den-en-toshi) — two lines usable"
+        "Also 16 min from Tsukushino (Tokyu Den-en-toshi) — two lines usable"
       ],
       "cautions": [
         "Built Aug 1975 — pre-1981 seismic standard",
