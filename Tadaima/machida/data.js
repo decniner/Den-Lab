@@ -83,13 +83,12 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Built Aug 1975 — pre-1981 seismic standard",
         "Small 49.7m2 building",
-        "Portal feeds disagree on price (2295 vs 2395/2550) and on the Tsukushino walk (14 vs 15 min) — verify on the listing link",
-        "Seen on a portal index page — verify details on the listing link"
+        "Seller's contract-nonconformity liability is waived (契約不適合責任免責) per the listing page; no parking space; LP gas, not city gas"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/ensen/177/2177100.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13209/030Z21814595/129388001/x1030Z21814595.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
@@ -215,12 +214,12 @@ window.TADAIMA_DATA = {
       "cautions": [
         "At the top of this collection's price brief",
         "Also 15 min from Naruse (JR Yokohama) — at that station's limit",
-        "Seen on a portal index page — verify details on the listing link"
+        "LP gas (not city gas) per the listing page"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_tokyo/13209/033.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13209/030Z21265307/000389287/x1030Z21265307.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -280,14 +279,17 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "At the 15-minute walk limit of this collection (JR side; Odakyu Machida is 20 min)",
-        "Seen on a portal index page — verify details on the listing link"
+        "No final inspection certificate (建築検査済証未取得) — building legality unverified per the listing page",
+        "Private-road burden of 21.67m², and the private-road use/excavation consent (私道使用・掘削承諾書) has not been obtained",
+        "Second-floor balcony is not installed — fitting one is at the buyer's cost"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/ensen/177/2177110.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13209/030Z21539725/008885017/x1030Z21539725.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h09",
@@ -312,14 +314,16 @@ window.TADAIMA_DATA = {
         "Also 15 min from Odakyu Machida — both Machida lines usable"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "No-rebuild (再建築不可): rebuilding is only possible if the neighbour's retaining wall is corrected, the access-strip portion is improved, and permission is obtained from the competent authority",
+        "62.25m² of the 188.82m² plot is sloping land; access is a north 4m road with only 2m of frontage, plus a 4.04m² private-road burden"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3008/area_tokyo/13209.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13209/030Z78250479/000232005/x1030Z78250479.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h10",
@@ -447,14 +451,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Compact package: 66.1m2 building on an 82.8m2 plot",
-        "Portal feeds disagree on layout (2LDK vs 4LDK) and on the Suzukakedai walk (13-16 min) — scored here on 14 min / 4LDK; verify on the listing link",
-        "Seen on a portal index page — verify details on the listing link"
+        "Portal feeds disagree on layout (2LDK vs 4LDK) and on the Suzukakedai walk (13-16 min) — scored here on 14 min / 4LDK; verify on the listing link"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_tokyo/13209/033.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/13209/1284750066509/128475/x41284750066509.html",
+        "verified": "detail",
+        "infoDate": "2026-10-24"
       }
     },
     {
@@ -518,12 +521,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "A building stands on the land (上物有り) — demolition cost and status to confirm",
-        "Seen on a portal index page — verify details on the listing link"
+        "Narrow road frontage — only about 3.2m onto the NE 6m road per the listing page; check vehicle access and rebuild implications"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13209.html?la_l=200",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21371234/182569001/x1030Z21371234.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -553,12 +556,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Building conditions attached (建築条件付き) — builder is fixed to the seller's designated company",
-        "Seen on a portal index page — verify details on the listing link"
+        "Listing also places the lot in a land-development regulation area (宅地造成工事規制区域) with height-maximum, minimum-lot-size and shadow/slope-line limits — confirm the buildable volume with the designated builder"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13209.html?la_l=200",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21471706/000585006/x1030Z21471706.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -589,13 +592,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Listing itself warns of a large height difference and high building difficulty — retaining / underground garage / elevator plans suggested, with major extra cost likely",
-        "Tama hills area — check landslide / earth-fill (盛土規制法・宅地造成工事規制区域) restrictions noted on the listing",
-        "Seen on a portal index page — verify details on the listing link"
+        "Tama hills area — check landslide / earth-fill (盛土規制法・宅地造成工事規制区域) restrictions noted on the listing"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13209.html?la_l=200",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z79158683/170565001/x1030Z79158683.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -625,14 +627,12 @@ window.TADAIMA_DATA = {
         "212.57m² — over 50 tsubo",
         "No building condition (建築条件なし) — choose your own builder"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13209.html?la_l=200",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21699119/000079001/x1030Z21699119.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -677,7 +677,7 @@ window.TADAIMA_DATA = {
       "district": "Ogawa 3",
       "districtJa": "小川3丁目",
       "title": "Vacant 135m² lot on a 9m road, 15 min from Naruse",
-      "priceMan": 4340,
+      "priceMan": 4290,
       "priceFrom": false,
       "landM2": 135.23,
       "buildingM2": null,
@@ -698,14 +698,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "At the brief's walk limit (15 min); Tsukushino Station is 17 min, so Naruse is the usable station",
-        "Seen on a portal index page — verify details on the listing link"
+        "A boundary-encroachment memorandum exists (越境に関する覚書有) per the listing page — check what encroaches before purchase"
       ],
       "source": {
         "name": "OCN不動産 (goo feed)",
-        "url": "https://house.ocn.ne.jp/sp/tochi/area_tokyo/13209/004.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/13209/8920152962/892/x48920152962.html",
+        "verified": "detail",
+        "infoDate": "2026-10-24"
+      },
+      "majorCautions": 1
     },
     {
       "id": "l07",
@@ -750,7 +751,7 @@ window.TADAIMA_DATA = {
       "district": "Ogawa 1",
       "districtJa": "小川1丁目",
       "title": "142m² flag lot 10 min from Tsukushino — cheapest total price here",
-      "priceMan": 2080,
+      "priceMan": 1990,
       "priceFrom": false,
       "landM2": 142.75,
       "buildingM2": null,
@@ -771,13 +772,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Flag / pole lot (路地状敷地): about 20m² of the headline 142.75m² is the access strip — effective building area is smaller",
-        "A building stands on the land (上物有り), sold as-is — demolition cost on the buyer",
-        "Seen on a portal index page — verify details on the listing link"
+        "A building stands on the land (上物有り), sold as-is — demolition cost on the buyer"
       ],
       "source": {
         "name": "OCN不動産 (goo feed)",
-        "url": "https://house.ocn.ne.jp/sp/tochi/area_tokyo/13209/004.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z20774183/006050A26/x1030Z20774183.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -808,13 +808,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "A building stands on the land (上物有り) — demolition cost and status to confirm",
-        "Seen on a portal index page — verify details on the listing link"
+        "The house standing on the plot was built in Oct 1977 (pre-1981 seismic standard) and the seller's building contract-nonconformity and equipment-repair liability is waived — budget for demolition"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13209/027.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21682411/000045016/x1030Z21682411.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -882,13 +882,14 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Building conditions attached (建築条件付き) — you must build with the designated builder",
         "At the brief's walk limit (15 min)",
-        "Seen on a portal index page — verify details on the listing link"
+        "Part of the lot is sloped (敷地内に一部傾斜地あり) per the listing page",
+        "About 35m² of the plot is a private-road share; access is via a north 4m private road (one-way)"
       ],
       "source": {
         "name": "OCN不動産 (goo feed)",
-        "url": "https://house.ocn.ne.jp/sp/tochi/ensen/311/2311260.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/13209/8920153680/892/x48920153680.html",
+        "verified": "detail",
+        "infoDate": "2026-10-24"
       }
     },
     {
@@ -919,13 +920,13 @@ window.TADAIMA_DATA = {
       "cautions": [
         "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
         "At the brief's walk limit (15 min)",
-        "Seen on a portal index page — verify details on the listing link"
+        "Level difference within the lot (敷地内段差有), and the lot sits in a land-development regulation area (宅地造成工事規制区域) per the listing page — confirm foundation/retaining costs"
       ],
       "source": {
         "name": "OCN不動産 (goo feed)",
-        "url": "https://house.ocn.ne.jp/sp/tochi/ensen/311/2311260.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/13209/1369330004150/136933/x41369330004150.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     }
   ],

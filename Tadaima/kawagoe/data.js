@@ -178,20 +178,17 @@ window.TADAIMA_DATA = {
       "line": "JR Kawagoe Line",
       "lineJa": "JR川越線",
       "walkMin": 10,
-      "built": "New build",
+      "built": "Nov 2026",
       "ageYears": 0,
       "highlights": [
         "Cheapest new house found within the defaults",
         "Also listed as CRADLE GARDEN Kasahata on HOME'S at the same price"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Portal pages conflict on whether it is a single-storey (平屋) layout"
-      ],
+      "cautions": [],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6010/area_saitama/11201.html?p=6",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/4/11201/1040210010024/104021/x41040210010024.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 0
@@ -236,7 +233,7 @@ window.TADAIMA_DATA = {
       "district": "Otsuka-Shinmachi",
       "districtJa": "大塚新町",
       "title": "New 4LDK with parking for three cars",
-      "priceMan": 4598,
+      "priceMan": 4298,
       "priceFrom": false,
       "landM2": 142.57,
       "buildingM2": 100.96,
@@ -246,7 +243,7 @@ window.TADAIMA_DATA = {
       "line": "Seibu Shinjuku Line",
       "lineJa": "西武新宿線",
       "walkMin": 10,
-      "built": "New build",
+      "built": "Aug 2026",
       "ageYears": 0,
       "highlights": [
         "Three cars park side-by-side (車3台並列駐車可能)",
@@ -255,13 +252,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Priced at the premium end of this collection",
-        "Seen on a portal index page — verify on the listing link"
+        "Landscape-law restriction applies (景観法による規制有)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6004/area_saitama/11201/103.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11201/030/W/21631849.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       },
       "majorCautions": 0
     },
@@ -305,7 +302,7 @@ window.TADAIMA_DATA = {
       "district": "Minami-Otsuka 3-chome",
       "districtJa": "南大塚3丁目",
       "title": "New 3LDK houses, 8 minutes from the station",
-      "priceMan": 3898,
+      "priceMan": 3798,
       "priceFrom": true,
       "landM2": 114.0,
       "buildingM2": 100.43,
@@ -323,13 +320,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Price is 'from' — range runs to ¥4,498万 depending on the house",
-        "Seen on a portal index page — verify on the listing link"
+        "Aviation-law restriction applies (航空法による規制有)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6004/area_saitama/11201/103.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11201/030/W/21623515.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       },
       "majorCautions": 0
     },
@@ -339,7 +336,7 @@ window.TADAIMA_DATA = {
       "district": "Suna",
       "districtJa": "大字砂",
       "title": "Used 3LDK (2017) just 4 minutes from Shingashi",
-      "priceMan": 4180,
+      "priceMan": 3980,
       "priceFrom": false,
       "landM2": 115.78,
       "buildingM2": 90.25,
@@ -348,7 +345,7 @@ window.TADAIMA_DATA = {
       "stationJa": "新河岸",
       "line": "Tobu Tojo Line",
       "lineJa": "東武東上線",
-      "walkMin": 4,
+      "walkMin": 3,
       "built": "Dec 2017",
       "ageYears": 8,
       "highlights": [
@@ -356,13 +353,11 @@ window.TADAIMA_DATA = {
         "Underfloor heating, city gas",
         "Parking for 3 cars"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_saitama/11201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11201/030Z21395915/081789002/x1030Z21395915.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 0
@@ -439,7 +434,7 @@ window.TADAIMA_DATA = {
       "district": "Nodamachi 2-chome",
       "districtJa": "野田町2丁目",
       "title": "Used 4LDK (1986), renovated water areas",
-      "priceMan": 2497,
+      "priceMan": 2397,
       "priceFrom": false,
       "landM2": 100.49,
       "buildingM2": 80.16,
@@ -458,15 +453,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "40 years old — building value is limited; this is mostly a land+renovation play",
-        "Seen on a portal index page — verify on the listing link"
+        "the building has a tilt exceeding 6/1000 (建物に6/1000超えの傾き有り); the listing says jack-up correction is planned (ジャッキアップにて是正予定) - confirm it is done, certified and warranted before anything else"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_saitama/11201.html?p=16",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/11201/1473280006260/147328/x41473280006260.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
-      "majorCautions": 0
+      "majorCautions": 1
     },
     {
       "id": "h14",
@@ -474,7 +469,7 @@ window.TADAIMA_DATA = {
       "district": "Ogaya",
       "districtJa": "大字小ケ谷",
       "title": "Used 4LDK (1989) — cheapest house in this collection",
-      "priceMan": 1780,
+      "priceMan": 1690,
       "priceFrom": false,
       "landM2": 99.99,
       "buildingM2": 93.14,
@@ -494,12 +489,12 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Seller suggests interior renovation — budget for works; sold largely as-is",
         "37 years old",
-        "Seen on a portal index page — verify on the listing link"
+        "Landscape-law restriction applies (景観法)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_saitama/11201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11201/030Z20778786/185072001/x1030Z20778786.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
@@ -677,15 +672,16 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "No zoning designation shown and an access-passage arrangement (5m 通路) — the low price almost certainly reflects building restrictions; investigate before anything else",
-        "Seen via portal index (crawled weeks ago) — verify on the link"
+        "the land is in a city-planning control area (市街化調整区域) - a house may be built only under City Planning Act Art. 34(12), in practice requiring a close relative with 20+ years' residence in the control area of Kawagoe or an adjacent municipality; most buyers cannot build here at all",
+        "registered land category is paddy field (地目: 田) - development and farmland-conversion permits are required, with extra charges of ¥550,000 (development/farmland-conversion application) + ¥250,000 (water connection) + ¥299,000 (sewer beneficiary charge), about ¥1.1M on top of the price; handover only after development permission"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/tochi/special/4002/area_saitama/11201/030.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/1536350000016/153635/x41536350000016.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
-      "majorCautions": 1
+      "majorCautions": 2
     },
     {
       "id": "l06",
@@ -713,12 +709,13 @@ window.TADAIMA_DATA = {
         "Second station (Kasumigaseki) 12 min away"
       ],
       "cautions": [
-        "Seen via portal index (crawled weeks ago) — verify on the link"
+        "An old house currently stands on the land; the sale is on a vacant-land handover basis (現況古家あり・更地渡し) - confirm demolition timing and that the cost is the seller's",
+        "Landscape-law restriction applies (景観法)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/tochi/special/4003/area_saitama/11201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/89170006367/8917/x489170006367.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 0
@@ -749,12 +746,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "A building stands on the land (上物有り) — demolition may be needed",
-        "Seen via portal index (crawled weeks ago) — verify on the link"
+        "District-plan rules apply (上戸新町地区地区計画): building height capped at 9m and minimum lot size 135m²",
+        "Landscape-law restriction (景観法) and a Building Standards Act Art. 22 area designation apply"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/tochi/special/4003/area_saitama/11201.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/1060570011791/106057/x41060570011791.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
@@ -785,15 +783,15 @@ window.TADAIMA_DATA = {
         "Quiet residential area, public facilities nearby"
       ],
       "cautions": [
-        "Seen via portal list page — verify condition and status on the link"
+        "no direct road frontage of its own - access is via a ~4m shared passage (co-ownership shares: 38.47m² x 2/3 and 82m² x 2/6) to a 6m public road; the seller disclaims contract-nonconformity liability for the building, which stands on the land and is sold as-is (上物有り・現況渡し・建物契約不適合責任免責)"
       ],
       "source": {
         "name": "atHome",
-        "url": "https://www.athome.co.jp/tochi/saitama/kawagoe-city/list/page14/?RND_TIME_PRM=11301&RND_MODE=0",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11201/030Z20740675/010100106/x1030Z20740675.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
-      "majorCautions": 0
+      "majorCautions": 1
     },
     {
       "id": "l09",
@@ -821,12 +819,13 @@ window.TADAIMA_DATA = {
         "No building condition per the development page"
       ],
       "cautions": [
-        "Seen via portal list pages — verify the specific lot (5号区画) on the link"
+        "The buyer pays the ¥250,000 water-connection fee (水道利用加入金25万円は買主負担)",
+        "Quasi-fire-prevention zone (準防火地域); landscape-law restriction applies"
       ],
       "source": {
         "name": "atHome",
-        "url": "https://www.athome.co.jp/tochi/saitama/kawagoe-city/list/page14/?RND_TIME_PRM=11301&RND_MODE=0",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/37072960007411/3707296/x437072960007411.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 0
@@ -929,12 +928,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Building condition could not be confirmed from the atHome listing (the same development is marked 建築条件付 on HOME'S) — verify before anything else",
-        "Seen via portal list page — verify on the link"
+        "Building condition confirmed in substance: HOME'S' own development summary for Breeze Garden 砂新田1丁目 marks the release 建築条件付 (build with the seller, Taisei Housing, COCOYUNO spec), even though this lot's goo feed field says 建築条件なし - treat the lot as builder-tied",
+        "Flood hazard: the detail page's legal-restrictions field places the plot in a flood inundation zone of 0.5-3m (洪水ハザードマップ) and 20-50cm on the internal-water map (内水ハザードマップ)"
       ],
       "source": {
         "name": "atHome",
-        "url": "https://www.athome.co.jp/tochi/saitama/kawagoe-city/list/page14/?RND_TIME_PRM=11301&RND_MODE=0",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/1060570011778/106057/x41060570011778.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1

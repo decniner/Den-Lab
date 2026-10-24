@@ -444,13 +444,11 @@
         "Only 3 years old (built Sep 2023) — barely-used",
         "Generous 125.1m² plot for Kotesashi"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3004/area_saitama/11208.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z20974712/161766001/x1030Z20974712.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -477,13 +475,12 @@
         "Renovated"
       ],
       "cautions": [
-        "3-storey build — a lot of house stacked on a 100.2m² plot",
-        "Seen on a portal index page — verify details on the listing link"
+        "3-storey build — a lot of house stacked on a 100.2m² plot"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_saitama/11208.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z21307897/006050518/x1030Z21307897.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -511,13 +508,12 @@
       "cautions": [
         "Effectively no-rebuild (再建築不可相当): the plot fails the Building Standards Act road-access duty — extensions and rebuilding are not permitted",
         "Boundary not specified in the listing (境界非明示)",
-        "Built 1969 — long before the 1981 seismic code",
-        "Seen on a portal index page — verify details on the listing link"
+        "Built 1969 — long before the 1981 seismic code"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3004/area_saitama/11208.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z21742313/181220001/x1030Z21742313.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 2
@@ -545,13 +541,14 @@
         "4LDK with 111.0m² of floor area"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "The plot fronts a 4m private road to the south and the listing records 136m² of private-road area — confirm the plot's private-road share/burden with the agent",
+        "Currently occupied (現況 居住中) — confirm handover timing with the agent"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/ensen/281/2281180.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/11208/9500077738/950/x49500077738.html",
+        "verified": "detail",
+        "infoDate": "2026-10-12"
       }
     },
     {
@@ -613,13 +610,11 @@
         "Water and sewer already connected",
         "No building condition (建築条件なし) — choose your own builder"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4002/ensen/284/2284230.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11208/030Z20957900/010100106/x1030Z20957900.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -648,12 +643,13 @@
       ],
       "cautions": [
         "Commercial zoning (商業地域) beside the station — pitched partly at rental/duplex investors (assumed yield 4.8%); not a quiet residential street",
-        "Seen on a portal index page — verify details on the listing link"
+        "A building currently stands on the land (現況 上物有り) and the detail page leaves handover terms blank — confirm demolition terms and cost with the agent",
+        "Access is via a 4m private road to the north with only ~2.5m of frontage — confirm road rights and vehicle access"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4002/ensen/284/2284230.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11208/1241930006978/124193/x41241930006978.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -684,15 +680,15 @@
       "cautions": [
         "Listing states 契約不適合免責 — the seller waives defect liability; buy with eyes open",
         "Small lot at 91.3m² — house size will be tight",
-        "Seen on a portal index page — verify details on the listing link"
+        "Access is via a narrow ~2.1m road to the north-west with 4m of frontage, and the listing records 10.35m² of private-road area — confirm vehicle access and whether that area sits inside the 91.32m²"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4003/ensen/284/2284230.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11208/030Z20034665/162083001/x1030Z20034665.html",
+        "verified": "detail",
+        "infoDate": "2026-10-20"
       },
-      "majorCautions": 1
+      "majorCautions": 2
     },
     {
       "id": "l05",
@@ -720,12 +716,12 @@
         "No building condition (建築条件なし) — choose your own builder"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Road frontage is only ~2.5m on the north-east 6m road — check vehicle access and building-plan fit"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/281/2281190.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11208/030Z20334500/174673001/x1030Z20334500.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -754,13 +750,14 @@
       ],
       "cautions": [
         "Unusually large for the price — confirm plot shape and subdivision intent on the listing",
-        "Seen on a portal index page — verify details on the listing link"
+        "Access is via a 4m private road on the west side; the designated-road (位置指定道路) status does not reach this plot, part of the road is a non-statutory road (法外道路), and a shared-portion share is recorded (14.4m², share 7566/30800) — confirm road rights with the agent",
+        "A district plan applies (第二上新井地区地区計画: minimum lot 100m², height limit 10m) and the plot sits in a quasi-fire-prevention zone (準防火地域); the page also lists Landscape Act / Aviation Act restrictions and an obtained building permit (第21UDI1S建04653号)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/281/2281190.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11208/030Z78851902/004361044/x1030Z78851902.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -856,12 +853,13 @@
       ],
       "cautions": [
         "One of 4 subdivision lots — price and area may vary by lot number",
-        "Seen on a portal index page — verify details on the listing link"
+        "The 115.77m² includes a 1.92m² shared 'agreement' portion (協定部分), and there is a 1/6 share of a 2.03m² garbage-station plot",
+        "Shadow regulation (日影制限) and a land-development regulation zone (宅地造成工事規制区域) are among the legal restrictions listed on the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産 / atHome",
-        "url": "https://house.ocn.ne.jp/sp/tochi/special/4002/area_saitama/11208.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11208/37073300005937/3707330/x437073300005937.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -925,13 +923,13 @@
         "No building condition (建築条件なし) — choose your own builder"
       ],
       "cautions": [
-        "A building stands on the land (上物有り) — demolition cost is likely on the buyer",
-        "Seen on a portal index page — verify details on the listing link"
+        "Access is via a 6m private road to the north-west and the listing records 15.25m² of private-road area, plus a 0.31m² cleaning-facility share",
+        "The seller flags the plot as irregularly shaped (不整形地); the Filled-Land Regulation Act (盛土規制法) is also listed among the restrictions"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/tochi/ensen/281/2281180.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11208/1040200009295/104020/x41040200009295.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -958,14 +956,16 @@
       "highlights": [],
       "cautions": [
         "Builder condition attached (建築条件付) — the low per-tsubo price partly reflects the tie-in",
-        "Seen on a portal index page — verify details on the listing link"
+        "The Cultural Properties Protection Act (文化財保護法) is listed among the legal restrictions — buried-cultural-property rules may require notification or a survey before building",
+        "A separate cleaning-facility share applies (3.13m² × 1/17)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/tochi/special/4002/area_saitama/11208.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11208/37073300006008/3707330/x437073300006008.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     }
   ],
   "scoring": {

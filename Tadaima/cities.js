@@ -16,7 +16,7 @@ window.TADAIMA_CITIES = [
       "houses": 14,
       "land": 12
     },
-    "fromHouseMan": 1780,
+    "fromHouseMan": 1690,
     "fromLandMan": 730,
     "stations": [
       "Shingashi",
@@ -687,7 +687,7 @@ window.TADAIMA_CITIES = [
       "land": 12
     },
     "fromHouseMan": 2295,
-    "fromLandMan": 2080,
+    "fromLandMan": 1990,
     "stations": [
       "Tamagawagakuen-mae",
       "Naruse",
