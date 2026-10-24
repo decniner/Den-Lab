@@ -1,0 +1,102 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "cityId": "tokyo",
+    "routeId": "west-tokyo",
+    "sourceUrl": "https://www.openstreetmap.org/copyright",
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "extractedOn": "2026-10-24",
+    "bounds": [
+      139.692,
+      35.655,
+      139.708,
+      35.679
+    ],
+    "geometryStatus": "schematic-stop-order"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "route-west",
+      "properties": {
+        "routeLegId": "west-tokyo-route-sequence",
+        "mode": "transit",
+        "routeGeometryStatus": "schematic",
+        "sourceIds": [
+          "osm-west-meiji",
+          "osm-west-harajuku",
+          "osm-west-shibuya"
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            139.6996266,
+            35.6748417
+          ],
+          [
+            139.70243,
+            35.67022
+          ],
+          [
+            139.7004982,
+            35.6594951
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokyo-west-meiji",
+      "properties": {
+        "name": "Meiji Jingu & Harajuku",
+        "role": "stop",
+        "routeStopId": "tokyo-west-meiji",
+        "order": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6996266,
+          35.6748417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokyo-west-harajuku",
+      "properties": {
+        "name": "Harajuku Station & streets",
+        "role": "stop",
+        "routeStopId": "tokyo-west-harajuku",
+        "order": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.70243,
+          35.67022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tokyo-west-shibuya",
+      "properties": {
+        "name": "Shibuya Scramble Crossing",
+        "role": "stop",
+        "routeStopId": "tokyo-west-shibuya",
+        "order": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7004982,
+          35.6594951
+        ]
+      }
+    }
+  ]
+}
