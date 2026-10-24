@@ -124,10 +124,13 @@
     return cs;
   }
 
-  // Precompute group medians for houses (price per m2 of floor area)
+  // Precompute group medians for houses (price per m2 of floor area).
+  // Section records (e.g. Kawagoe's Shimohiroya extension) are scored
+  // against the MAIN collection's medians and never move them, so adding
+  // a section can never silently re-score the existing edition.
   var groupMedian = {};
   ["house-new", "house-used"].forEach(function (t) {
-    groupMedian[t] = median(props.filter(function (p) { return p.type === t; })
+    groupMedian[t] = median(props.filter(function (p) { return p.type === t && !p.section; })
       .map(function (p) { return p.priceMan / p.buildingM2; }));
   });
 
@@ -200,7 +203,14 @@
   }
 
   props.forEach(function (p) { p._score = score(p); });
-  var ranked = props.slice().sort(function (a, b) { return b._score.total - a._score.total; });
+  // Section records are scored by the same maths but ranked only inside
+  // their section — they never take an edition top-pick slot (or shift a
+  // rank) away from the main collection.
+  function computeRanked() {
+    return props.filter(function (p) { return !p.section; })
+      .sort(function (a, b) { return b._score.total - a._score.total; });
+  }
+  var ranked = computeRanked();
   ranked.forEach(function (p, i) { p._rank = i + 1; });
 
   // ---------- Saved (namespaced per city — the pre-2026-10-24 key
@@ -286,6 +296,7 @@
       (top ? '<span class="top-chip">' + t("topPick") + p._rank + "</span>" : "") +
       (p.isNew ? '<span class="new-chip">' + t("newWeek") + "</span>" : "") +
       (p.priceDropMan ? '<span class="drop-chip">' + t("priceDrop") + fmt(p.priceDropMan) + "万</span>" : "") +
+      (p.section && D.sections && D.sections[p.section] ? '<span class="sec-chip">' + (LANG === "ja" ? D.sections[p.section].chipJa : D.sections[p.section].chip) + "</span>" : "") +
       '<button class="save-btn" aria-pressed="' + !!saved[p.id] + '" aria-label="' + (saved[p.id] ? t("unsave") : t("save")) + '" title="' + t("save") + '">' + (saved[p.id] ? "♥" : "♡") + "</button></div>" +
       '<h3 class="card-district">' + p.district + ' <span class="jp">' + p.districtJa + "</span></h3>" +
       '<p class="card-title">' + p.title + "</p>" +
@@ -317,7 +328,10 @@
   function passes(p) {
     if (state.type !== "all" && p.type !== state.type) return false;
     if (p.priceMan > state.maxPrice) return false;
-    if (p.walkMin > state.maxWalk) return false;
+    // Section records are exempt from the walk cap only — breaching it is
+    // their section's stated premise, flagged on the section heading and
+    // on every section card. Every other filter still applies to them.
+    if (p.walkMin > state.maxWalk && !p.section) return false;
     if (state.station !== "all" && p.station !== state.station) return false;
     if (state.layout !== "all" && p.layout !== state.layout) return false;
     if (state.minLand && p.landM2 < state.minLand) return false;
@@ -329,15 +343,39 @@
     return true;
   }
 
-  function render() {
-    var list = ranked.filter(passes);
+  function sortList(list) {
     if (state.sort === "price") list.sort(function (a, b) { return a.priceMan - b.priceMan; });
     if (state.sort === "walk") list.sort(function (a, b) { return a.walkMin - b.walkMin; });
     if (state.sort === "score") list.sort(function (a, b) { return b._score.total - a._score.total; });
+    return list;
+  }
+  function sectionHead(key) {
+    var meta = D.sections[key];
+    var el = document.createElement("div");
+    el.className = "section-head";
+    el.id = "section-" + key;
+    el.innerHTML = "<h2>" + (LANG === "ja" ? meta.titleJa : meta.title) + ' <span class="jp">' + meta.nameJa + "</span></h2>" +
+      "<p>" + (LANG === "ja" ? meta.noteJa : meta.note) + "</p>";
+    return el;
+  }
+  function render() {
+    var list = sortList(ranked.filter(passes));
     grid.innerHTML = "";
     list.forEach(function (p) { grid.appendChild(card(p)); });
-    count.textContent = tf("countOf")(list.length, props.length);
-    $("empty").style.display = list.length ? "none" : "block";
+    var shown = list.length;
+    // Extension sections (data-driven via D.sections; only Kawagoe has
+    // one today) render under their own heading after the main grid.
+    if (D.sections) {
+      Object.keys(D.sections).forEach(function (key) {
+        var slist = sortList(props.filter(function (p) { return p.section === key; }).filter(passes));
+        if (!slist.length) return;
+        grid.appendChild(sectionHead(key));
+        slist.forEach(function (p) { grid.appendChild(card(p)); });
+        shown += slist.length;
+      });
+    }
+    count.textContent = tf("countOf")(shown, props.length);
+    $("empty").style.display = shown ? "none" : "block";
     $("savedCount").textContent = Object.keys(saved).length;
     syncURL();
   }
@@ -663,7 +701,12 @@
   function jaSummaryText() {
     var houses = props.filter(function (p) { return p.type !== "land"; }).length;
     var top = ranked[0];
-    return D.site.areaJa + "の戸建て・土地、全" + props.length + "件（戸建て" + houses + "件・土地" + (props.length - houses) + "件）を収録しています。条件は価格5,000万円以下、最寄り駅まで徒歩15分以内。SUUMO・LIFULL HOME'S・atHome・goo住宅・不動産の掲載を横断収集し、価格の割安度（45点）・立地（30点）・広さ（15点）・情報の信頼度（10点）からなる透明なスコアで順位付けしました。現在の1位は" + top.districtJa + "の物件（" + priceText(top) + "、" + top._score.total + "点）。各カードにはスコアの根拠と注意点をすべて明記しています。";
+    var secNote = "";
+    if (D.sections) {
+      var names = Object.keys(D.sections).map(function (k) { return D.sections[k].nameJa; }).join("・");
+      secNote = "ただし" + names + "セクションの物件は徒歩15分を超えるものを含み、各カードに明示しています。";
+    }
+    return D.site.areaJa + "の戸建て・土地、全" + props.length + "件（戸建て" + houses + "件・土地" + (props.length - houses) + "件）を収録しています。条件は価格5,000万円以下、最寄り駅まで徒歩15分以内。" + secNote + "SUUMO・LIFULL HOME'S・atHome・goo住宅・不動産の掲載を横断収集し、価格の割安度（45点）・立地（30点）・広さ（15点）・情報の信頼度（10点）からなる透明なスコアで順位付けしました。現在の1位は" + top.districtJa + "の物件（" + priceText(top) + "、" + top._score.total + "点）。各カードにはスコアの根拠と注意点をすべて明記しています。";
   }
   function swapNodes(root, ja) {
     if (!root) return;
@@ -685,7 +728,7 @@
     var ja = LANG === "ja";
     document.documentElement.lang = ja ? "ja" : "en";
     props.forEach(function (p) { p._score = score(p); });
-    ranked = props.slice().sort(function (a, b) { return b._score.total - a._score.total; });
+    ranked = computeRanked();
     ranked.forEach(function (p, i) { p._rank = i + 1; });
     swapNodes(document.querySelector("header.site-head"), ja);
     swapNodes(document.querySelector(".controls"), ja);

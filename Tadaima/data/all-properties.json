@@ -7,7 +7,7 @@
     "nameJa": "ただいま！",
     "edition": "Kawagoe",
     "editionJa": "川越",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-10-24",
     "area": "Kawagoe City, Saitama",
     "areaJa": "埼玉県川越市"
    },
@@ -484,6 +484,398 @@
      "majorCautions": 1
     },
     {
+     "id": "h15",
+     "type": "house-new",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "New 4LDK (Cradle Garden No.14) — ZEH house on a corner plot",
+     "priceMan": 2780,
+     "priceFrom": false,
+     "landM2": 124.1,
+     "buildingM2": 95.57,
+     "layout": "4LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 20,
+     "built": "Sep 2026",
+     "ageYears": 0,
+     "highlights": [
+      "ZEH energy-saving build with design + construction performance evaluations",
+      "North-east corner plot; Hiroya primary school 9 min on foot",
+      "Completed Sep 2026 and ready to move in (即引渡可)"
+     ],
+     "cautions": [
+      "Urbanisation-control area (市街化調整区域) — this house stands under a development permit (開発許可による分譲地); future rebuilding or extensions need permission again",
+      "Landscape-law and shadow restrictions apply",
+      "One portal feed lists the same house at ¥2,970万 — the developer's own listing, checked on its detail page, says ¥2,780万"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-17084440000381/",
+      "verified": "detail",
+      "infoDate": "2026-10-23"
+     },
+     "majorCautions": 0,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h16",
+     "type": "house-new",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "New 3LDK (Live Garden) — the section's only sub-15-minute walk",
+     "priceMan": 3480,
+     "priceFrom": false,
+     "landM2": 100.02,
+     "buildingM2": 93.56,
+     "layout": "3LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 13,
+     "built": "Nov 2026 (planned)",
+     "ageYears": 0,
+     "highlights": [
+      "Certified long-term quality housing (長期優良住宅), south-west corner plot",
+      "13 minutes to Tsurugashima — inside the main edition's walk rule",
+      "A second near-identical unit (100.12m² plot) is listed in the same development at the same price"
+     ],
+     "cautions": [
+      "Urbanisation-control area (市街化調整区域) — the listing states a building permit was required (建築許可要); the same applies to future rebuilding",
+      "Landscape-law, aviation-law and shadow restrictions are listed"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-17084440000448/",
+      "verified": "detail",
+      "infoDate": "2026-10-23"
+     },
+     "majorCautions": 0,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h17",
+     "type": "house-used",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "Used 3LDK (2023) — built but never lived in, on a 200m² plot",
+     "priceMan": 3198,
+     "priceFrom": false,
+     "landM2": 200.72,
+     "buildingM2": 100.18,
+     "layout": "3LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 20,
+     "built": "Apr 2023",
+     "ageYears": 3,
+     "highlights": [
+      "Built Apr 2023 and never occupied (未入居) — effectively a new house",
+      "Large 200.7m² plot (about 61 tsubo), south-east aspect, vacant"
+     ],
+     "cautions": [
+      "Seen on a portal index page — verify details on the listing link",
+      "Portal listing last updated 6 Sep 2026 — confirm it is still available before travelling"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/chuko/saitama/kawagoe-city/12C7D34F3E-town/list/",
+      "verified": "index",
+      "infoDate": "2026-09-06"
+     },
+     "majorCautions": 0,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h18",
+     "type": "house-used",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "Used 4LDK (2020) — the section's youngest resale, all-electric",
+     "priceMan": 2880,
+     "priceFrom": false,
+     "landM2": 134.13,
+     "buildingM2": 96.66,
+     "layout": "4LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 19,
+     "built": "May 2020",
+     "ageYears": 6,
+     "highlights": [
+      "Built 2020 — young for a used house; all-electric (オール電化), south-facing",
+      "Parking shown on the listing"
+     ],
+     "cautions": [
+      "Seen on a portal index page — verify details on the listing link",
+      "Occupied (居住中) — viewings are by appointment and handover is negotiated"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/saitama/kawagoe-city/12C7D34F3E-town/list/",
+      "verified": "index",
+      "infoDate": "2026-10-24"
+     },
+     "majorCautions": 0,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h19",
+     "type": "house-used",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "Used 4LDK (2011) — listing confirms rebuilding is possible",
+     "priceMan": 2480,
+     "priceFrom": false,
+     "landM2": 131.84,
+     "buildingM2": 100.61,
+     "layout": "4LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 17,
+     "built": "Mar 2011",
+     "ageYears": 15,
+     "highlights": [
+      "Corner plot (4m public roads north and east), parking for 2, all-electric",
+      "Listing states the plot is in an existing housing district, so rebuilding is possible (既存住宅団地内の為、再建築可能)"
+     ],
+     "cautions": [
+      "Urbanisation-control area (市街化調整区域) — rebuilding rests on the existing-housing-district designation; get it confirmed in writing",
+      "Occupied (居住中) — handover by negotiation"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1040230008176/",
+      "verified": "detail",
+      "infoDate": "2026-10-03"
+     },
+     "majorCautions": 0,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h20",
+     "type": "house-used",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "Used 4LDK (2012) on 200m² — priced for a 33-minute walk",
+     "priceMan": 2350,
+     "priceFrom": false,
+     "landM2": 200.52,
+     "buildingM2": 106.4,
+     "layout": "4LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 33,
+     "built": "Oct 2012",
+     "ageYears": 14,
+     "highlights": [
+      "Big plot and big interior (200.5m² / 106.4m²) for the price"
+     ],
+     "cautions": [
+      "33 minutes on foot to Tsurugashima — the longest walk in this edition; realistically a car household",
+      "Seen on a portal index page — verify details on the listing link",
+      "Occupied (居住中)"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/saitama/kawagoe-city/12C7D34F3E-town/list/",
+      "verified": "index",
+      "infoDate": "2026-10-24"
+     },
+     "majorCautions": 0,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h21",
+     "type": "house-used",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "Used 4LDK (1989), vacant — two agencies list it at two prices",
+     "priceMan": 1399,
+     "priceFrom": false,
+     "landM2": 119.82,
+     "buildingM2": 93.56,
+     "layout": "4LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 20,
+     "built": "Nov 1989",
+     "ageYears": 36,
+     "highlights": [
+      "Vacant with immediate handover (即時引渡し可); south-facing, flat land",
+      "Interior photographed Sep 2026 for the current listing"
+     ],
+     "cautions": [
+      "Urbanisation-control area (市街化調整区域) and the listing confirms no rebuild right — check the permission route before relying on rebuilding",
+      "Another agency lists the same house at ¥1,499万 — confirm which price stands",
+      "36 years old; propane gas"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1520380002480/",
+      "verified": "detail",
+      "infoDate": "2026-09-12"
+     },
+     "majorCautions": 1,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h22",
+     "type": "house-used",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "Used 4LDK (1994) at Shimohiroya 1031-8 — a 15-minute walk",
+     "priceMan": 1380,
+     "priceFrom": false,
+     "landM2": 106.05,
+     "buildingM2": 94.3,
+     "layout": "4LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 15,
+     "built": "May 1994",
+     "ageYears": 32,
+     "highlights": [
+      "15 minutes to Tsurugashima — inside the main edition's walk rule",
+      "Cheapest walkable used house in the section"
+     ],
+     "cautions": [
+      "Seen on a portal index page — verify details on the listing link",
+      "Occupied (居住中); 32 years old"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/chuko/saitama/kawagoe-city/12C7D34F3E-town/list/",
+      "verified": "index",
+      "infoDate": "2026-10-24"
+     },
+     "majorCautions": 0,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h23",
+     "type": "house-used",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "Used 5LDK (1982) — Sekisui light-steel build on a 205m² corner plot",
+     "priceMan": 1480,
+     "priceFrom": false,
+     "landM2": 204.76,
+     "buildingM2": 131.97,
+     "layout": "5LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 19,
+     "built": "Sep 1982",
+     "ageYears": 44,
+     "highlights": [
+      "Built by Sekisui (積水化学工業) to the post-1981 seismic standard, per the listing",
+      "Large 204.8m² corner plot; vacant; parking for 2"
+     ],
+     "cautions": [
+      "Urbanisation-control area (市街化調整区域) with no rebuild confirmation on the listing — check before relying on it",
+      "Listing information dates from Apr 2026 — availability must be re-confirmed",
+      "Propane gas"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1522950000100/",
+      "verified": "detail",
+      "infoDate": "2026-04-14"
+     },
+     "majorCautions": 1,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h24",
+     "type": "house-used",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "Used 5DK (1971) — fully renovated in Mar 2026",
+     "priceMan": 1480,
+     "priceFrom": false,
+     "landM2": 99.64,
+     "buildingM2": 61.24,
+     "layout": "5DK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 19,
+     "built": "Apr 1971",
+     "ageYears": 55,
+     "highlights": [
+      "Renovation completed Mar 2026: water areas, full interior and exterior walls renewed",
+      "Corner plot on two 4m public roads; city gas; vacant, immediate handover"
+     ],
+     "cautions": [
+      "Unregistered extension (増築未登記) and the seller disclaims contract-nonconformity liability (契約不適合責任免責); boundary not formally specified (境界非明示)",
+      "Urbanisation-control area (市街化調整区域); the structure is 1971 whatever the renovation covers",
+      "Listing information dates from Mar 2026 — availability must be re-confirmed"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-89170006000/",
+      "verified": "detail",
+      "infoDate": "2026-03-30"
+     },
+     "majorCautions": 1,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "h25",
+     "type": "house-used",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "Used 5LDK (1974) at ¥348万 — the edition's cheapest house, with the reasons attached",
+     "priceMan": 348,
+     "priceFrom": false,
+     "landM2": 184.51,
+     "buildingM2": 117.57,
+     "layout": "5LDK",
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 19,
+     "built": "Jan 1974",
+     "ageYears": 52,
+     "highlights": [
+      "By far the lowest price of any house in this edition; 117.6m² of rooms on flat land",
+      "Vacant with immediate handover"
+     ],
+     "cautions": [
+      "Urbanisation-control area (市街化調整区域) AND access over a private road: 71m² of the plot is private-road burden and the frontage on the position-designated road is only 2m — rebuilding may be impossible; price it as land-plus-shell until an agent confirms otherwise",
+      "Well water (井戸) and propane gas — no city water or gas at the house",
+      "52 years old"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1552590000290/",
+      "verified": "detail",
+      "infoDate": "2026-10-22"
+     },
+     "majorCautions": 2,
+     "section": "shimohiroya"
+    },
+    {
      "id": "l01",
      "type": "land",
      "district": "Nakaharamachi 2-chome",
@@ -923,6 +1315,81 @@
       "infoDate": "2026-10-23"
      },
      "majorCautions": 1
+    },
+    {
+     "id": "l13",
+     "type": "land",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "208m² corner plot, old house on site — vacant-land handover available",
+     "priceMan": 1180,
+     "priceFrom": false,
+     "landM2": 208.4,
+     "buildingM2": null,
+     "layout": null,
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 19,
+     "built": null,
+     "ageYears": null,
+     "zoning": null,
+     "coverageFar": "60% / 200%",
+     "highlights": [
+      "63-tsubo south-east corner plot; no building condition (建築条件なし)",
+      "Old house stands on the land but vacant-land handover is available (更地引渡可)",
+      "Mains sewer and city gas, per the listing"
+     ],
+     "cautions": [
+      "Shimohiroya is mostly urbanisation-control area (市街化調整区域) and the portal list does not state this plot's planning status — confirm 市街化/調整 and the building-permit route before anything else",
+      "Confirm the demolition timing and who pays for it"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/12C7D34F3E-town/list/",
+      "verified": "index",
+      "infoDate": "2026-10-24"
+     },
+     "majorCautions": 1,
+     "section": "shimohiroya"
+    },
+    {
+     "id": "l14",
+     "type": "land",
+     "district": "Shimohiroya",
+     "districtJa": "大字下広谷",
+     "title": "166m² vacant plot at Shimohiroya 855-3",
+     "priceMan": 1380,
+     "priceFrom": false,
+     "landM2": 166.0,
+     "buildingM2": null,
+     "layout": null,
+     "station": "Tsurugashima",
+     "stationJa": "鶴ヶ島",
+     "line": "Tobu Tojo Line",
+     "lineJa": "東武東上線",
+     "walkMin": 27,
+     "built": null,
+     "ageYears": null,
+     "zoning": null,
+     "coverageFar": "60% / 200%",
+     "highlights": [
+      "Vacant land (更地), 50.2 tsubo"
+     ],
+     "cautions": [
+      "Planning status not stated on the portal list — Shimohiroya is mostly urbanisation-control area (市街化調整区域); confirm the building-permit route before anything else",
+      "Building-condition field is blank on the portal — confirm none applies",
+      "27 minutes on foot to Tsurugashima"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/12C7D34F3E-town/list/",
+      "verified": "index",
+      "infoDate": "2026-10-24"
+     },
+     "majorCautions": 1,
+     "section": "shimohiroya"
     }
    ]
   },
@@ -9350,9 +9817,9 @@
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/bh/special/6012/ensen/371/2371220.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/bh/detail/1/14116/030Z21492996/155444001/x1030Z21492996.html",
+      "verified": "detail",
+      "infoDate": "2026-10-18"
      }
     },
     {
@@ -10125,9 +10592,9 @@
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.ocn.ne.jp/sp/tochi/area_kanagawa/14116.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/la/detail/4/14116/1418240006214/141824/x41418240006214.html",
+      "verified": "detail",
+      "infoDate": "2026-10-22"
      }
     },
     {
@@ -11102,11 +11569,11 @@
      "district": "Shimoishikura-cho",
      "districtJa": "下石倉町",
      "title": "New 3SLDK on a very large 246m² plot — 14 min from Shin-Maebashi",
-     "priceMan": 3580,
+     "priceMan": 3380,
      "priceFrom": false,
      "landM2": 246.55,
      "buildingM2": 90.26,
-     "layout": "3SLDK",
+     "layout": "3LDK",
      "station": "Shin-Maebashi",
      "stationJa": "新前橋",
      "line": "JR Joetsu Line",
@@ -11120,14 +11587,13 @@
       "Parking for 2 or more cars; city gas"
      ],
      "cautions": [
-      "Maebashi Station itself is 24 min on foot — Shin-Maebashi is the usable station",
-      "Seen on a portal index page — verify details on the listing link"
+      "Maebashi Station itself is 24 min on foot — Shin-Maebashi is the usable station"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6012/ensen/108/2108160.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/W/21893962.html",
+      "verified": "detail",
+      "infoDate": "2026-10-22"
      }
     },
     {
@@ -11188,13 +11654,13 @@
       "Walk-in closet; city gas; parking for 2 or more cars"
      ],
      "cautions": [
-      "Seen on a portal index page — verify details on the listing link"
+      "Detail page lists a Landscape Act restriction (その他制限事項：景観法による規制有) — minor, display-level"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_gunma/10201.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/W/21124656.html",
+      "verified": "detail",
+      "infoDate": "2026-10-22"
      }
     },
     {
@@ -11203,7 +11669,7 @@
      "district": "Higokoshi-cho",
      "districtJa": "樋越町",
      "title": "New 4LDK — performance-evaluated, 6 min from Higokoshi Station",
-     "priceMan": 2390,
+     "priceMan": 2190,
      "priceFrom": false,
      "landM2": 264.5,
      "buildingM2": 111.37,
@@ -11221,14 +11687,13 @@
       "Roof balcony; parking for 2 or more cars"
      ],
      "cautions": [
-      "One of 6 units in the development, priced ¥1,890万–¥2,390万 — this is the top-priced unit shown",
-      "Seen on a portal index page — verify details on the listing link"
+      "One of 6 units in the development, priced ¥1,890万–¥2,190万 — this is the top-priced unit shown"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_gunma/10201.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/Z/21301753.html",
+      "verified": "detail",
+      "infoDate": "2026-10-22"
      }
     },
     {
@@ -11323,13 +11788,12 @@
       "Immediate handover (即入居可); parking for 2"
      ],
      "cautions": [
-      "A 174m² house of this age will carry running and repair costs to match — budget for them",
-      "Seen on a portal index page — verify details on the listing link"
+      "A 174m² house of this age will carry running and repair costs to match — budget for them"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/242/2242020.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z78807678/185349002/x1030Z78807678.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
      }
     },
@@ -11425,12 +11889,13 @@
      ],
      "cautions": [
       "1990 structure — a house of this size needs a careful building inspection before purchase",
-      "Seen on a portal index page — verify details on the listing link"
+      "Detail page zoning is industrial (工業地域, 60%/200%) — a material fact for a house that the record lacked",
+      "Detail page remarks also note a Landscape Act (景観法) restriction — minor, display-level"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z21207528/115332002/x1030Z21207528.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
      }
     },
@@ -11459,12 +11924,12 @@
      ],
      "cautions": [
       "1990 structure — confirm the scope and date of the renovation with the agent",
-      "Seen on a portal index page — verify details on the listing link"
+      "LP gas (no city gas) per the detail page equipment list — display-level only"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z20318121/185349002/x1030Z20318121.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
      }
     },
@@ -11493,14 +11958,16 @@
      ],
      "cautions": [
       "Portal feeds disagree on price: LIFULL HOME'S and one goo feed list ¥1,499万, another goo feed lists what appears to be the same house at ¥1,280万 with an 11-minute walk — verify the current price",
-      "Seen on a portal index page — verify details on the listing link"
+      "Detail page's legal-restrictions list includes the Cultural Properties Protection Act (文化財保護法 — buried-cultural-property procedures may apply; cf. the Oyama precedent where this class counted as major), plus Landscape Act (景観法) and a shadow restriction (日影制限有) — the latter two display-level",
+      "LP gas (no city gas) per the detail page — display-level only"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z21819005/189549001/x1030Z21819005.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
-     }
+     },
+     "majorCautions": 1
     },
     {
      "id": "h13",
@@ -11526,12 +11993,12 @@
       "Fenced garden; parking for 3; primary school ~7 min walk"
      ],
      "cautions": [
-      "Seen on a portal index page — verify details on the listing link"
+      "Detail page remarks note a Landscape Act (景観法) restriction — minor, display-level"
      ],
      "source": {
       "name": "goo住宅・不動産 (OCN feed)",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/ensen/242/2242080.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z20102838/115332002/x1030Z20102838.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
      }
     },
@@ -11562,12 +12029,12 @@
       "Built Mar 1979 — pre-1981 seismic standard (旧耐震)",
       "Portal feeds disagree sharply on price: this feed lists ¥1,780万, another lists the same house at ¥2,580万 — verify before relying on either",
       "At this age, judge it mainly as land + location unless an inspection says otherwise",
-      "Seen on a portal index page — verify details on the listing link"
+      "Detail page remarks note a Landscape Act (景観法) restriction — minor, display-level"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/242/2242020.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z21410906/115332002/x1030Z21410906.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
      },
      "majorCautions": 1
@@ -12108,14 +12575,15 @@
      "cautions": [
       "Water connection works, the water joining fee and supply-device fees are at the buyer's cost, per the listing",
       "A planned city road (都市計画道路 3・4・20 安中線) is noted for the area — confirm whether and how much of the plot it affects",
-      "Index-verified only — the detail page was not checked (portal rate-limiting); verify on the listing link before relying on any figure"
+      "Detail page's legal restrictions add: building within the planned-road area requires a City Planning Act Article 53 permit (法令等制限：都市計画法第53条許可) — tied to the planned road already cautioned on the record"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/108/2108170.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z77336186/146659001/x1030Z77336186.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
-     }
+     },
+     "majorCautions": 1
     }
    ]
   },
@@ -14193,13 +14661,14 @@
      ],
      "cautions": [
       "13-minute walk is toward the brief's outer edge",
-      "Seen on a portal index page — verify details on the listing link"
+      "Part of the plot is private road held in co-ownership shares (私道 22.78m² x 273/2278 and 149.50m² x 1789/14950, per the detail page) — confirm the shares and any maintenance obligations",
+      "The plot falls in a zone designated under Art. 22 of the Act on Countermeasures against Flood Damage of Specified Rivers （特定河川浸水被害対策法）, per the detail page — check the flood hazard map for this plot before purchase"
      ],
      "source": {
       "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6015/area_saitama/11202/063.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/bh/detail/11202/030/W/21351375.html",
+      "verified": "detail",
+      "infoDate": "2026-10-20"
      }
     },
     {
@@ -14326,7 +14795,8 @@
      ],
      "cautions": [
       "Portal feeds disagree on the walk (9 vs 11 min) — scored here on 9; verify on the ground",
-      "Seen on a portal index page — verify details on the listing link"
+      "Seen on a portal index page — verify details on the listing link",
+      "HOME'S currently lists the same Cradle garden unit (identical land/building areas, Ishihara walk 9) at ¥2,580万 — ¥100万 above the price recorded here, and older crawls show ¥2,880万 then ¥2,780万; confirm the current asking price"
      ],
      "source": {
       "name": "goo住宅・不動産",
@@ -14374,7 +14844,7 @@
      "district": "Tsukimicho 1",
      "districtJa": "月見町1丁目",
      "title": "New 4LDK — long-life quality housing, south garden, 3-car parking",
-     "priceMan": 3490,
+     "priceMan": 3190,
      "priceFrom": false,
      "landM2": 151.22,
      "buildingM2": 103.71,
@@ -14393,13 +14863,13 @@
      "cautions": [
       "Portal feeds disagree on the price (¥3,290万 vs ¥3,490万 for the same house) — scored here on the higher figure; confirm before viewing",
       "South-bank Arakawa side of the city — check the Kumagaya flood hazard map for this plot before purchase",
-      "Seen on a portal index page — verify details on the listing link"
+      "The plot is in a land-development works regulation area （宅地造成工事規制区域） and a Landscape Act （景観法） notification area, per the detail page — extra procedures may apply to building work"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_saitama/11202.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/bh/detail/11202/030/W/20565834.html",
+      "verified": "detail",
+      "infoDate": "2026-10-20"
      }
     },
     {
@@ -14424,13 +14894,11 @@
       "Hebel House (Asahi Kasei) light-gauge steel construction — a step above standard timber builds",
       "Large walk-in closet plus a 3-tatami storage room; 7 min to a JR station"
      ],
-     "cautions": [
-      "Seen on a portal index page — verify details on the listing link"
-     ],
+     "cautions": [],
      "source": {
       "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/area_saitama/11202.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21679966/179201001/x1030Z21679966.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
      }
     },
@@ -14458,12 +14926,12 @@
      ],
      "cautions": [
       "At the 15-minute walk limit of this collection",
-      "Seen on a portal index page — verify details on the listing link"
+      "A second agency feed for this house flags flood-hazard depth of 0.0-0.5m — check the Kumagaya flood hazard map for this plot before purchase"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_saitama/11202.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21408400/189549013/x1030Z21408400.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
      }
     },
@@ -14489,14 +14957,12 @@
       "Five rooms and a 6-minute walk to Kagohara (JR) for ¥880万",
       "City gas; vacant, immediate handover"
      ],
-     "cautions": [
-      "Seen on a portal index page — verify details on the listing link"
-     ],
+     "cautions": [],
      "source": {
       "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/area_saitama/11202.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/uh/detail/4/11202/1497150003394/149715/x41497150003394.html",
+      "verified": "detail",
+      "infoDate": "2026-10-18"
      }
     },
     {
@@ -14524,14 +14990,16 @@
      "cautions": [
       "Portal feeds disagree on the price (¥880万 vs ¥1,080万 for the same house via different agencies) — scored here on the cheaper feed; confirm before viewing",
       "Oaso is a small local station south of the Arakawa — check the Kumagaya flood hazard map for this plot before purchase",
-      "Seen on a portal index page — verify details on the listing link"
+      "Urbanisation-control area （市街化調整区域） with no zoning designation (70% / 400%), per the detail page — new building is restricted in principle; confirm the existing house's rebuild rights before relying on them",
+      "LP gas (no city gas); Landscape Act （景観法） notification area, per the detail page"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/sp/ikkodate/area_saitama/11202/134.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21130278/153974028/x1030Z21130278.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
-     }
+     },
+     "majorCautions": 1
     },
     {
      "id": "h13",
@@ -14557,13 +15025,13 @@
      ],
      "cautions": [
       "Portal feeds disagree on the price (¥1,300万 on the live index vs ¥1,330–1,480万 in older crawls) — scored here on the live index figure; confirm before viewing",
-      "Seen on a portal index page — verify details on the listing link"
+      "Frontage is a south 4m private road with designated-position status （位置指定道路）, per the detail page — confirm maintenance responsibility and any consent needed to rebuild"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_saitama/11202/058.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/uh/detail/4/11202/1497150003662/149715/x41497150003662.html",
+      "verified": "detail",
+      "infoDate": "2026-10-22"
      }
     },
     {
@@ -14581,7 +15049,7 @@
      "stationJa": "ひろせ野鳥の森",
      "line": "Chichibu Railway",
      "lineJa": "秩父鉄道",
-     "walkMin": 5,
+     "walkMin": 7,
      "built": "Sep 1997",
      "ageYears": 29,
      "highlights": [
@@ -14589,13 +15057,12 @@
       "Renovation already covers bath, toilet and washstand renewal plus termite treatment"
      ],
      "cautions": [
-      "Portal feeds disagree on the walk (5 vs 7 min) — scored here on 5; verify on the ground",
-      "Seen on a portal index page — verify details on the listing link"
+      "Industrial zoning （工業地域， 60% / 200%), per the detail page — factories are permitted neighbours; check the surroundings before purchase"
      ],
      "source": {
       "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/area_saitama/11202.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z77044432/153974028/x1030Z77044432.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
      }
     },
@@ -14638,7 +15105,7 @@
      "district": "Ishihara",
      "districtJa": "石原",
      "title": "Used 4LDK (1996), renovated — the Ishihara family starter",
-     "priceMan": 1599,
+     "priceMan": 1299,
      "priceFrom": false,
      "landM2": 100.12,
      "buildingM2": 80.31,
@@ -14655,16 +15122,17 @@
       "Storage in every room; schools and supermarkets in walking range"
      ],
      "cautions": [
-      "Portal feeds disagree on the price and walk (¥1,599万 at 9–12 min vs ¥1,699万 at 10 min for the same house) — scored here on ¥1,599万 / 10 min; confirm before viewing",
       "South-bank Arakawa side of the city — check the Kumagaya flood hazard map for this plot before purchase",
-      "Seen on a portal index page — verify details on the listing link"
+      "LP gas and a septic tank （浄化槽） — no city gas and no mains sewer, per the detail page",
+      "The plot is a registered buried-cultural-property site （埋蔵文化財包蔵地）, per the detail page — notification and a possible survey are required before construction"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_saitama/11202/004.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z77204229/153974028/x1030Z77204229.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
-     }
+     },
+     "majorCautions": 1
     },
     {
      "id": "h17",
@@ -14672,7 +15140,7 @@
      "district": "Ishihara",
      "districtJa": "石原",
      "title": "Used 5DK (1978) — pre-1981 seismic standard, cross-renewed 2026",
-     "priceMan": 1180,
+     "priceMan": 1100,
      "priceFrom": false,
      "landM2": 128.64,
      "buildingM2": 101.84,
@@ -14691,13 +15159,13 @@
      "cautions": [
       "Built Jul 1978 — pre-1981 old seismic standard (旧耐震); budget for a seismic assessment and possible reinforcement",
       "South-bank Arakawa side of the city — check the Kumagaya flood hazard map for this plot before purchase",
-      "Seen on a portal index page — verify details on the listing link"
+      "Septic tank （浄化槽） drainage — no mains sewer, per the detail page"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_saitama/11202/004.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z20647242/189876001/x1030Z20647242.html",
+      "verified": "detail",
+      "infoDate": "2026-10-21"
      },
      "majorCautions": 1
     },
@@ -20530,7 +20998,8 @@
      ],
      "cautions": [
       "Portal feeds disagree on price and class: goo's used feed lists the same house at ¥4,530万 as a used listing — scored here on atHome's ¥4,290万 new-build listing; verify which is current",
-      "Seen on a portal index page — verify details on the listing link"
+      "Seen on a portal index page — verify details on the listing link",
+      "HOME'S lists the same Blooming Garden unit (identical land/building areas, Aiko-Ishida walk 9) at ¥4,990万 — a third price point alongside atHome's ¥4,290万 and goo's ¥4,530万; confirm the current asking price"
      ],
      "source": {
       "name": "atHome",
@@ -20731,13 +21200,12 @@
      ],
      "cautions": [
       "Listed in the used index despite a Sep 2026 build — verify occupancy status and why it is already reselling before treating it as a simple new build",
-      "Top of this collection's budget",
-      "Seen on a portal index page — verify details on the listing link"
+      "Top of this collection's budget"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_kanagawa/14212.html",
-      "verified": "index",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z21945349/164714001/x1030Z21945349.html",
+      "verified": "detail",
       "infoDate": "2026-10-23"
      }
     },
@@ -20765,7 +21233,8 @@
      ],
      "cautions": [
       "Small 76.2m² plot and only 2LDK despite the 84.5m² building — priced for condition and location, not land or room count",
-      "Seen on a portal index page — verify details on the listing link"
+      "Seen on a portal index page — verify details on the listing link",
+      "HOME'S index lists the house as currently occupied (居住中) — viewing and handover timing need confirming"
      ],
      "source": {
       "name": "LIFULL HOME'S",
@@ -20833,13 +21302,15 @@
      ],
      "cautions": [
       "At the 15-minute walk limit of this collection",
-      "Seen on a portal index page — verify details on the listing link"
+      "Detail page lists a quasi-fire zone (準防火地域) plus landscape-plan area, land-development/embankment regulation (宅地造成及び特定盛土等規制法) and shadow regulation (日影規制)",
+      "LP gas (no city gas) per the detail page",
+      "Detail page notes a measured land area of 202.70m² against the registered 197.14m² used in the listing headline"
      ],
      "source": {
       "name": "goo住宅・不動産 (OCN feed)",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/area_kanagawa/14212/020.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z21380683/010174174/x1030Z21380683.html",
+      "verified": "detail",
+      "infoDate": "2026-10-19"
      }
     },
     {
@@ -20970,14 +21441,15 @@
       "New subdivision (Forestry Town Atsugi Onna) 12 minutes on foot from Hon-Atsugi"
      ],
      "cautions": [
-      "Zoning and coverage/FAR are not stated on the index page — confirm before relying on them",
-      "Verified on the portal index page only (checked 2026-10-23); the listing's own detail page was not checked"
+      "Building condition requires a construction contract with Sumitomo Forestry within 3 months of the land contract, or the land sale is voided (detail page)",
+      "Quasi-fire prevention zone (準防火地域) per the detail page",
+      "LP gas (no city gas); the land is registered as 雑種地 until changed to residential (宅地) at handover (detail page)"
      ],
      "source": {
       "name": "goo住宅・不動産 (OCN feed)",
-      "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/311/2311340.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/bh/detail/14212/030/W/20606927.html",
+      "verified": "detail",
+      "infoDate": "2026-10-16"
      }
     },
     {
@@ -21004,14 +21476,15 @@
       "Larger of the two Onna lots in this collection, still only ¥90万 more than the smaller one"
      ],
      "cautions": [
-      "Zoning and coverage/FAR are not stated on the index page — confirm before relying on them",
-      "Verified on the portal index page only (checked 2026-10-23); the listing's own detail page was not checked"
+      "Building condition requires a construction contract with Sumitomo Forestry within 3 months of the land contract, or the land sale is voided (detail page)",
+      "Quasi-fire prevention zone (準防火地域) per the detail page",
+      "LP gas (no city gas); the land is registered as 雑種地 until changed to residential (宅地) at handover (detail page)"
      ],
      "source": {
       "name": "goo住宅・不動産 (OCN feed)",
-      "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/311/2311340.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "url": "https://house.goo.ne.jp/buy/bh/detail/14212/030/W/20606927.html",
+      "verified": "detail",
+      "infoDate": "2026-10-16"
      }
     },
     {
@@ -22481,7 +22954,7 @@
       "Generous ~125m² plots — rare at this price in this city (Open Place Sashiogi Comfort, 3 units)"
      ],
      "cautions": [
-      "Units run ¥4,199万–¥4,499万 depending on the house",
+      "Units run ¥4,199万–¥4,399万 depending on the house",
       "Not yet built — completion scheduled Jan 2027, handover Feb 2027; only 2 of 3 units remain on sale",
       "Private-road burden: 4 m private road, separate shared share of 1.52 m² plus 18.12 m² private-road portion",
       "LP gas (個別プロパンガス)"

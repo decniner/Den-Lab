@@ -8,7 +8,9 @@ a transparent **worth-a-look score**, so it's easy to decide what's worth a
 viewing trip. The name is deliberately not place-specific.
 
 - **Brief for every collection:** houses (new + used) and land/lots,
-  ≤ ¥5,000万, ≤ 15 minutes' walk from a station.
+  ≤ ¥5,000万, ≤ 15 minutes' walk from a station. One flagged exception:
+  Kawagoe's Shimohiroya section (added 2026-10-24) deliberately goes
+  beyond the walk rule — the page says so, and every card there is flagged.
 - **Editions:** Kawagoe · Tachikawa · Tokorozawa · Saitama City · Matsudo · Kashiwa · Hachioji · Funabashi · Utsunomiya · Takasaki · Sagamihara · Yokohama · Machida · Maebashi · Mito · Oyama · Kumagaya · Kasukabe · Koshigaya · Ichikawa · Nagareyama · Fujisawa · Atsugi (23 cities, all live,
   researched 2026-10-23). More cities follow only when their research is done
   to the same standard. Tsukuba was researched and is held: its in-brief stock

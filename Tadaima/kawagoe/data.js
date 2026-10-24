@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Kawagoe",
     "editionJa": "川越",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-10-24",
     "area": "Kawagoe City, Saitama",
     "areaJa": "埼玉県川越市"
   },
@@ -23,9 +23,10 @@ window.TADAIMA_DATA = {
       "Minami-Otsuka": 30.4,
       "Nishi-Kawagoe": 20.1,
       "Kasahata": 19.2,
-      "Minami-Furuya": 17.2
+      "Minami-Furuya": 17.2,
+      "Tsurugashima": 28.0
     },
-    "note": "Land benchmarks: average transacted ¥/tsubo by station, 2023–2025, Utinokati (MLIT transaction data). Kawagoe market context: used houses transacted at about ¥96–98万/tsubo in 2025–26; new houses in this city typically ask ¥3,400–4,100万 (goo listing averages). Official land prices rose +1% to +5% across Kawagoe districts in 2026."
+    "note": "Land benchmarks: average transacted ¥/tsubo by station, 2023–2025, Utinokati (MLIT transaction data). Kawagoe market context: used houses transacted at about ¥96–98万/tsubo in 2025–26; new houses in this city typically ask ¥3,400–4,100万 (goo listing averages). Official land prices rose +1% to +5% across Kawagoe districts in 2026. Tsurugashima (added Oct 2026 for the Shimohiroya section): station-area transactions average about ¥28万/tsubo; Shimohiroya's own plots sit 19–27 minutes out in an urbanisation-control area, which the walk band and the cautions carry."
   },
   "properties": [
     {
@@ -500,6 +501,398 @@ window.TADAIMA_DATA = {
       "majorCautions": 1
     },
     {
+      "id": "h15",
+      "type": "house-new",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "New 4LDK (Cradle Garden No.14) — ZEH house on a corner plot",
+      "priceMan": 2780,
+      "priceFrom": false,
+      "landM2": 124.1,
+      "buildingM2": 95.57,
+      "layout": "4LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 20,
+      "built": "Sep 2026",
+      "ageYears": 0,
+      "highlights": [
+        "ZEH energy-saving build with design + construction performance evaluations",
+        "North-east corner plot; Hiroya primary school 9 min on foot",
+        "Completed Sep 2026 and ready to move in (即引渡可)"
+      ],
+      "cautions": [
+        "Urbanisation-control area (市街化調整区域) — this house stands under a development permit (開発許可による分譲地); future rebuilding or extensions need permission again",
+        "Landscape-law and shadow restrictions apply",
+        "One portal feed lists the same house at ¥2,970万 — the developer's own listing, checked on its detail page, says ¥2,780万"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-17084440000381/",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 0,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h16",
+      "type": "house-new",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "New 3LDK (Live Garden) — the section's only sub-15-minute walk",
+      "priceMan": 3480,
+      "priceFrom": false,
+      "landM2": 100.02,
+      "buildingM2": 93.56,
+      "layout": "3LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 13,
+      "built": "Nov 2026 (planned)",
+      "ageYears": 0,
+      "highlights": [
+        "Certified long-term quality housing (長期優良住宅), south-west corner plot",
+        "13 minutes to Tsurugashima — inside the main edition's walk rule",
+        "A second near-identical unit (100.12m² plot) is listed in the same development at the same price"
+      ],
+      "cautions": [
+        "Urbanisation-control area (市街化調整区域) — the listing states a building permit was required (建築許可要); the same applies to future rebuilding",
+        "Landscape-law, aviation-law and shadow restrictions are listed"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-17084440000448/",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
+      },
+      "majorCautions": 0,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "Used 3LDK (2023) — built but never lived in, on a 200m² plot",
+      "priceMan": 3198,
+      "priceFrom": false,
+      "landM2": 200.72,
+      "buildingM2": 100.18,
+      "layout": "3LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 20,
+      "built": "Apr 2023",
+      "ageYears": 3,
+      "highlights": [
+        "Built Apr 2023 and never occupied (未入居) — effectively a new house",
+        "Large 200.7m² plot (about 61 tsubo), south-east aspect, vacant"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link",
+        "Portal listing last updated 6 Sep 2026 — confirm it is still available before travelling"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/chuko/saitama/kawagoe-city/12C7D34F3E-town/list/",
+        "verified": "index",
+        "infoDate": "2026-09-06"
+      },
+      "majorCautions": 0,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h18",
+      "type": "house-used",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "Used 4LDK (2020) — the section's youngest resale, all-electric",
+      "priceMan": 2880,
+      "priceFrom": false,
+      "landM2": 134.13,
+      "buildingM2": 96.66,
+      "layout": "4LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 19,
+      "built": "May 2020",
+      "ageYears": 6,
+      "highlights": [
+        "Built 2020 — young for a used house; all-electric (オール電化), south-facing",
+        "Parking shown on the listing"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link",
+        "Occupied (居住中) — viewings are by appointment and handover is negotiated"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/saitama/kawagoe-city/12C7D34F3E-town/list/",
+        "verified": "index",
+        "infoDate": "2026-10-24"
+      },
+      "majorCautions": 0,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h19",
+      "type": "house-used",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "Used 4LDK (2011) — listing confirms rebuilding is possible",
+      "priceMan": 2480,
+      "priceFrom": false,
+      "landM2": 131.84,
+      "buildingM2": 100.61,
+      "layout": "4LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 17,
+      "built": "Mar 2011",
+      "ageYears": 15,
+      "highlights": [
+        "Corner plot (4m public roads north and east), parking for 2, all-electric",
+        "Listing states the plot is in an existing housing district, so rebuilding is possible (既存住宅団地内の為、再建築可能)"
+      ],
+      "cautions": [
+        "Urbanisation-control area (市街化調整区域) — rebuilding rests on the existing-housing-district designation; get it confirmed in writing",
+        "Occupied (居住中) — handover by negotiation"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1040230008176/",
+        "verified": "detail",
+        "infoDate": "2026-10-03"
+      },
+      "majorCautions": 0,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h20",
+      "type": "house-used",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "Used 4LDK (2012) on 200m² — priced for a 33-minute walk",
+      "priceMan": 2350,
+      "priceFrom": false,
+      "landM2": 200.52,
+      "buildingM2": 106.4,
+      "layout": "4LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 33,
+      "built": "Oct 2012",
+      "ageYears": 14,
+      "highlights": [
+        "Big plot and big interior (200.5m² / 106.4m²) for the price"
+      ],
+      "cautions": [
+        "33 minutes on foot to Tsurugashima — the longest walk in this edition; realistically a car household",
+        "Seen on a portal index page — verify details on the listing link",
+        "Occupied (居住中)"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/saitama/kawagoe-city/12C7D34F3E-town/list/",
+        "verified": "index",
+        "infoDate": "2026-10-24"
+      },
+      "majorCautions": 0,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h21",
+      "type": "house-used",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "Used 4LDK (1989), vacant — two agencies list it at two prices",
+      "priceMan": 1399,
+      "priceFrom": false,
+      "landM2": 119.82,
+      "buildingM2": 93.56,
+      "layout": "4LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 20,
+      "built": "Nov 1989",
+      "ageYears": 36,
+      "highlights": [
+        "Vacant with immediate handover (即時引渡し可); south-facing, flat land",
+        "Interior photographed Sep 2026 for the current listing"
+      ],
+      "cautions": [
+        "Urbanisation-control area (市街化調整区域) and the listing confirms no rebuild right — check the permission route before relying on rebuilding",
+        "Another agency lists the same house at ¥1,499万 — confirm which price stands",
+        "36 years old; propane gas"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1520380002480/",
+        "verified": "detail",
+        "infoDate": "2026-09-12"
+      },
+      "majorCautions": 1,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h22",
+      "type": "house-used",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "Used 4LDK (1994) at Shimohiroya 1031-8 — a 15-minute walk",
+      "priceMan": 1380,
+      "priceFrom": false,
+      "landM2": 106.05,
+      "buildingM2": 94.3,
+      "layout": "4LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 15,
+      "built": "May 1994",
+      "ageYears": 32,
+      "highlights": [
+        "15 minutes to Tsurugashima — inside the main edition's walk rule",
+        "Cheapest walkable used house in the section"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link",
+        "Occupied (居住中); 32 years old"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/chuko/saitama/kawagoe-city/12C7D34F3E-town/list/",
+        "verified": "index",
+        "infoDate": "2026-10-24"
+      },
+      "majorCautions": 0,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h23",
+      "type": "house-used",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "Used 5LDK (1982) — Sekisui light-steel build on a 205m² corner plot",
+      "priceMan": 1480,
+      "priceFrom": false,
+      "landM2": 204.76,
+      "buildingM2": 131.97,
+      "layout": "5LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 19,
+      "built": "Sep 1982",
+      "ageYears": 44,
+      "highlights": [
+        "Built by Sekisui (積水化学工業) to the post-1981 seismic standard, per the listing",
+        "Large 204.8m² corner plot; vacant; parking for 2"
+      ],
+      "cautions": [
+        "Urbanisation-control area (市街化調整区域) with no rebuild confirmation on the listing — check before relying on it",
+        "Listing information dates from Apr 2026 — availability must be re-confirmed",
+        "Propane gas"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1522950000100/",
+        "verified": "detail",
+        "infoDate": "2026-04-14"
+      },
+      "majorCautions": 1,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h24",
+      "type": "house-used",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "Used 5DK (1971) — fully renovated in Mar 2026",
+      "priceMan": 1480,
+      "priceFrom": false,
+      "landM2": 99.64,
+      "buildingM2": 61.24,
+      "layout": "5DK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 19,
+      "built": "Apr 1971",
+      "ageYears": 55,
+      "highlights": [
+        "Renovation completed Mar 2026: water areas, full interior and exterior walls renewed",
+        "Corner plot on two 4m public roads; city gas; vacant, immediate handover"
+      ],
+      "cautions": [
+        "Unregistered extension (増築未登記) and the seller disclaims contract-nonconformity liability (契約不適合責任免責); boundary not formally specified (境界非明示)",
+        "Urbanisation-control area (市街化調整区域); the structure is 1971 whatever the renovation covers",
+        "Listing information dates from Mar 2026 — availability must be re-confirmed"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-89170006000/",
+        "verified": "detail",
+        "infoDate": "2026-03-30"
+      },
+      "majorCautions": 1,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "h25",
+      "type": "house-used",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "Used 5LDK (1974) at ¥348万 — the edition's cheapest house, with the reasons attached",
+      "priceMan": 348,
+      "priceFrom": false,
+      "landM2": 184.51,
+      "buildingM2": 117.57,
+      "layout": "5LDK",
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 19,
+      "built": "Jan 1974",
+      "ageYears": 52,
+      "highlights": [
+        "By far the lowest price of any house in this edition; 117.6m² of rooms on flat land",
+        "Vacant with immediate handover"
+      ],
+      "cautions": [
+        "Urbanisation-control area (市街化調整区域) AND access over a private road: 71m² of the plot is private-road burden and the frontage on the position-designated road is only 2m — rebuilding may be impossible; price it as land-plus-shell until an agent confirms otherwise",
+        "Well water (井戸) and propane gas — no city water or gas at the house",
+        "52 years old"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1552590000290/",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 2,
+      "section": "shimohiroya"
+    },
+    {
       "id": "l01",
       "type": "land",
       "district": "Nakaharamachi 2-chome",
@@ -939,6 +1332,81 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "208m² corner plot, old house on site — vacant-land handover available",
+      "priceMan": 1180,
+      "priceFrom": false,
+      "landM2": 208.4,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 19,
+      "built": null,
+      "ageYears": null,
+      "zoning": null,
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "63-tsubo south-east corner plot; no building condition (建築条件なし)",
+        "Old house stands on the land but vacant-land handover is available (更地引渡可)",
+        "Mains sewer and city gas, per the listing"
+      ],
+      "cautions": [
+        "Shimohiroya is mostly urbanisation-control area (市街化調整区域) and the portal list does not state this plot's planning status — confirm 市街化/調整 and the building-permit route before anything else",
+        "Confirm the demolition timing and who pays for it"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/12C7D34F3E-town/list/",
+        "verified": "index",
+        "infoDate": "2026-10-24"
+      },
+      "majorCautions": 1,
+      "section": "shimohiroya"
+    },
+    {
+      "id": "l14",
+      "type": "land",
+      "district": "Shimohiroya",
+      "districtJa": "大字下広谷",
+      "title": "166m² vacant plot at Shimohiroya 855-3",
+      "priceMan": 1380,
+      "priceFrom": false,
+      "landM2": 166.0,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tsurugashima",
+      "stationJa": "鶴ヶ島",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "walkMin": 27,
+      "built": null,
+      "ageYears": null,
+      "zoning": null,
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant land (更地), 50.2 tsubo"
+      ],
+      "cautions": [
+        "Planning status not stated on the portal list — Shimohiroya is mostly urbanisation-control area (市街化調整区域); confirm the building-permit route before anything else",
+        "Building-condition field is blank on the portal — confirm none applies",
+        "27 minutes on foot to Tsurugashima"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/12C7D34F3E-town/list/",
+        "verified": "index",
+        "infoDate": "2026-10-24"
+      },
+      "majorCautions": 1,
+      "section": "shimohiroya"
     }
   ],
   "scoring": {
@@ -952,7 +1420,8 @@ window.TADAIMA_DATA = {
       "Matoba": 4,
       "Nishi-Kawagoe": 4,
       "Kasahata": 4,
-      "Minami-Furuya": 4
+      "Minami-Furuya": 4,
+      "Tsurugashima": 6
     },
     "walkBand": [
       92.5,
@@ -960,5 +1429,17 @@ window.TADAIMA_DATA = {
       45.2
     ],
     "mapsQuery": "埼玉県川越市"
+  },
+  "sections": {
+    "shimohiroya": {
+      "name": "Shimohiroya",
+      "nameJa": "下広谷",
+      "chip": "Shimohiroya section",
+      "chipJa": "下広谷セクション",
+      "title": "Shimohiroya — Kawagoe's Tsurugashima side",
+      "titleJa": "下広谷 — 鶴ヶ島側の川越",
+      "note": "Added 24 Oct 2026 at a reader's request. Shimohiroya (大字下広谷) is a district on Kawagoe's western edge whose nearest station is Tsurugashima, across the city border — so this section deliberately breaks the edition's 15-minute rule: walks here run 13–33 minutes, and the walk still costs score exactly as it does everywhere else. Much of the district is urbanisation-control area (市街化調整区域), where building and rebuilding need permission; each card's cautions carry that, with score penalties where it bites. The usual ¥5,000万 cap still applies — the one Shimohiroya plot above it (3,931m² at ¥10,000万) is excluded. Same score maths, same benchmarks, nothing hidden.",
+      "noteJa": "2026年10月24日、リクエストを受けて追加したセクションです。下広谷（大字下広谷）は川越市西端の地区で、最寄り駅は市境の向こうの鶴ヶ島駅です。そのためこのセクションでは本編の「徒歩15分以内」ルールをあえて外しています（徒歩13〜33分。徒歩時間は他と同じ計算でスコアに反映されます）。地区の多くは市街化調整区域で、建築・再建築には許可が必要です — 各カードの注意点に、効くところでは減点付きで明示しています。価格上限は通常どおり5,000万円（下広谷で唯一それを超える3,931m²・1億円の土地は収録していません）。スコア計算とベンチマークは本編と同一です。"
+    }
   }
 };

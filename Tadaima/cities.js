@@ -4,27 +4,31 @@ window.TADAIMA_CITIES = [
     "nameJa": "川越",
     "prefecture": "Saitama",
     "prefectureJa": "埼玉県",
-    "blurb": "“Little Edo” — a warehouse-district old town with three Tokyo-facing hub stations. The original Tadaima! edition: family houses and honest lots along the Tobu Tojo, Seibu Shinjuku and JR Kawagoe lines.",
+    "blurb": "“Little Edo” — a warehouse-district old town with three Tokyo-facing hub stations. The original Tadaima! edition: family houses and honest lots along the Tobu Tojo, Seibu Shinjuku and JR Kawagoe lines. Plus a Shimohiroya extension section on the Tsurugashima side — beyond the usual 15-minute rule, and flagged as such on the page.",
     "commute": "≈30 min to Ikebukuro (Tobu Tojo) · ≈45–55 min to Shinjuku",
     "lat": 35.925,
     "lng": 139.486,
     "slug": "kawagoe",
     "status": "live",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-10-24",
     "counts": {
-      "total": 26,
-      "houses": 14,
-      "land": 12
+      "total": 39,
+      "houses": 25,
+      "land": 14
     },
-    "fromHouseMan": 1690,
+    "fromHouseMan": 348,
     "fromLandMan": 730,
     "stations": [
+      "Tsurugashima",
       "Shingashi",
       "Minami-Otsuka",
       "Kawagoeshi",
       "Kasahata",
       "Kawagoe",
-      "Hon-Kawagoe"
+      "Hon-Kawagoe",
+      "Matoba",
+      "Kasumigaseki",
+      "Nishi-Kawagoe"
     ],
     "stationsJa": [
       "川越市",
@@ -35,6 +39,7 @@ window.TADAIMA_CITIES = [
       "的場",
       "霞ヶ関",
       "西川越",
+      "鶴ヶ島",
       "川越"
     ],
     "districts": [
@@ -51,6 +56,7 @@ window.TADAIMA_CITIES = [
       "Sunashinden 2-chome",
       "Nodamachi 2-chome",
       "Ogaya",
+      "Shimohiroya",
       "Nakaharamachi 2-chome",
       "Wakita-Honcho",
       "Wakita-Shinmachi",
@@ -84,7 +90,12 @@ window.TADAIMA_CITIES = [
       "Sunagawa-Nanaban",
       "Tamagawa-Josui",
       "Shibasaki-Taiikukan",
-      "Seibu-Tachikawa"
+      "Seibu-Tachikawa",
+      "Izumi-Taiikukan",
+      "Yagawa",
+      "Nishi-Tachikawa",
+      "Tachikawa",
+      "Tappi"
     ],
     "stationsJa": [
       "泉体育館",
@@ -150,7 +161,15 @@ window.TADAIMA_CITIES = [
       "Shin-Matsudo",
       "Motoyama",
       "Shin-Yahashira",
-      "Yakiri"
+      "Yakiri",
+      "Ichikawa-Ono",
+      "Mutsumi",
+      "Koganejoshi",
+      "Akiyama",
+      "Kita-Matsudo",
+      "Tokiwadaira",
+      "Kamihongo",
+      "Mabashi"
     ],
     "stationsJa": [
       "元山",
@@ -222,7 +241,10 @@ window.TADAIMA_CITIES = [
       "Masuo",
       "Takayanagi",
       "Toyoshiki",
-      "Kashiwanoha-Campus"
+      "Kashiwanoha-Campus",
+      "Edogawadai",
+      "Kashiwa",
+      "Minami-Kashiwa"
     ],
     "stationsJa": [
       "新柏",
@@ -282,7 +304,15 @@ window.TADAIMA_CITIES = [
       "Nishi-Hachioji",
       "Hazama",
       "Katakura",
-      "Otsuka-Teikyo-Daigaku"
+      "Otsuka-Teikyo-Daigaku",
+      "Hachioji",
+      "Hachioji-Minamino",
+      "Naganuma",
+      "Kitano",
+      "Keio-Katakura",
+      "Mejirodai",
+      "Takao",
+      "Kita-Hachioji"
     ],
     "stationsJa": [
       "小宮",
@@ -348,7 +378,18 @@ window.TADAIMA_CITIES = [
       "Takifudo",
       "Takane-Kido",
       "Yakuen-dai",
-      "Magomezawa"
+      "Magomezawa",
+      "Futawa-Mukodai",
+      "Takane-Kodan",
+      "Daijingushita",
+      "Higashi-Nakayama",
+      "Maehara",
+      "Kaijin",
+      "Funabashi-Keibajo",
+      "Tsukada",
+      "Higashi-Funabashi",
+      "Funabashi-Nichidaimae",
+      "Shin-Funabashi"
     ],
     "stationsJa": [
       "高根木戸",
@@ -420,7 +461,12 @@ window.TADAIMA_CITIES = [
       "Utsunomiya",
       "Minami-Utsunomiya",
       "Yoto 3-chome",
-      "Yui no Mori Nishi"
+      "Yui no Mori Nishi",
+      "Tsuruta",
+      "Utsunomiya University Yoto Campus",
+      "Higashi-Shukugo",
+      "Esoshima",
+      "Suzumenomiya"
     ],
     "stationsJa": [
       "ゆいの杜西",
@@ -488,7 +534,12 @@ window.TADAIMA_CITIES = [
       "Nekoya",
       "Takasaki-Tonyamachi",
       "Minami-Takasaki",
-      "Takasaki"
+      "Takasaki",
+      "Nishi-Yoshii",
+      "Gunma-Yawata",
+      "Ino",
+      "Yamana",
+      "Shinmachi"
     ],
     "stationsJa": [
       "西吉井",
@@ -555,7 +606,12 @@ window.TADAIMA_CITIES = [
       "Minami-Hashimoto",
       "Banda",
       "Hashimoto",
-      "Kamimizo"
+      "Kamimizo",
+      "Higashi-Rinkan",
+      "Harataima",
+      "Odakyu-Sagamihara",
+      "Aihara",
+      "Tamazakai"
     ],
     "stationsJa": [
       "上溝",
@@ -619,7 +675,17 @@ window.TADAIMA_CITIES = [
       "Nakayama",
       "Kibogaoka",
       "Seya",
-      "Byobugaura"
+      "Byobugaura",
+      "Ishikawa-cho",
+      "Izumi-Chuo",
+      "Mitsukyo",
+      "Aobadai",
+      "Tamagawagakuen-mae",
+      "Konan-Chuo",
+      "Yamate",
+      "Futamatagawa",
+      "Tsurugamine",
+      "Tateba"
     ],
     "stationsJa": [
       "中山",
@@ -694,7 +760,8 @@ window.TADAIMA_CITIES = [
       "Tsukushino",
       "Aihara",
       "Machida",
-      "Suzukakedai"
+      "Suzukakedai",
+      "Tsurukawa"
     ],
     "stationsJa": [
       "玉川学園前",
@@ -749,7 +816,12 @@ window.TADAIMA_CITIES = [
       "Maebashi",
       "Ogo",
       "Shin-Maebashi",
-      "Joto"
+      "Joto",
+      "Gunma-Soja",
+      "Higokoshi",
+      "Araya",
+      "Maebashi-Oshima",
+      "Katagai"
     ],
     "stationsJa": [
       "新前橋",
@@ -977,7 +1049,9 @@ window.TADAIMA_CITIES = [
       "Minami-Sakurai",
       "Fujino-Ushijima",
       "Kasukabe",
-      "Takesato"
+      "Takesato",
+      "Toyoharu",
+      "Yagisaki"
     ],
     "stationsJa": [
       "一ノ割",
@@ -1046,7 +1120,8 @@ window.TADAIMA_CITIES = [
       "Gamo",
       "Sengendai",
       "Koshigaya",
-      "Shin-Koshigaya"
+      "Shin-Koshigaya",
+      "Minami-Koshigaya"
     ],
     "stationsJa": [
       "大袋",
@@ -1108,7 +1183,13 @@ window.TADAIMA_CITIES = [
       "Yagiri",
       "Onigoe",
       "Myoden",
-      "Minami-Gyotoku"
+      "Minami-Gyotoku",
+      "Sugano",
+      "Urayasu",
+      "Baraki-Nakayama",
+      "Gyotoku",
+      "Ichikawa",
+      "Keisei-Yawata"
     ],
     "stationsJa": [
       "市川大野",
@@ -1177,7 +1258,9 @@ window.TADAIMA_CITIES = [
       "Nagareyama-centralpark",
       "Heiwadai",
       "Hatsuishi",
-      "Minami-Nagareyama"
+      "Minami-Nagareyama",
+      "Unga",
+      "Hirezaki"
     ],
     "stationsJa": [
       "流山",
@@ -1238,7 +1321,11 @@ window.TADAIMA_CITIES = [
       "Fujisawa-Honmachi",
       "Mutsuai-Nichidai-mae",
       "Shonandai",
-      "Tsujido"
+      "Tsujido",
+      "Kugenuma",
+      "Shonankaigan-koen",
+      "Yanagikoji",
+      "Hon-Kugenuma"
     ],
     "stationsJa": [
       "善行",
@@ -1342,7 +1429,11 @@ window.TADAIMA_CITIES = [
       "Higashi-Tokorozawa",
       "Tokorozawa",
       "Koku-koen",
-      "Shin-Tokorozawa"
+      "Shin-Tokorozawa",
+      "Sayamagaoka",
+      "Shimoyamaguchi",
+      "Seibuen",
+      "Shin-Akitsu"
     ],
     "stationsJa": [
       "西武園",
@@ -1408,7 +1499,16 @@ window.TADAIMA_CITIES = [
       "Iwatsuki",
       "Nishi-Urawa",
       "Owada",
-      "Higashi-Iwatsuki"
+      "Higashi-Iwatsuki",
+      "Higashi-Urawa",
+      "Sashiogi",
+      "Miyahara",
+      "Nisshin",
+      "Konba",
+      "Yono-Hommachi",
+      "Naka-Urawa",
+      "Urawa-Misono",
+      "Yono"
     ],
     "stationsJa": [
       "南与野",
