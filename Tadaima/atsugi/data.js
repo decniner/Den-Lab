@@ -279,13 +279,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Listed in the used index despite a Sep 2026 build — verify occupancy status and why it is already reselling before treating it as a simple new build",
-        "Top of this collection's budget",
-        "Seen on a portal index page — verify details on the listing link"
+        "Top of this collection's budget"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_kanagawa/14212.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z21945349/164714001/x1030Z21945349.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -381,13 +380,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists a quasi-fire zone (準防火地域) plus landscape-plan area, land-development/embankment regulation (宅地造成及び特定盛土等規制法) and shadow regulation (日影規制)",
+        "LP gas (no city gas) per the detail page",
+        "Detail page notes a measured land area of 202.70m² against the registered 197.14m² used in the listing headline"
       ],
       "source": {
         "name": "goo住宅・不動産 (OCN feed)",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_kanagawa/14212/020.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z21380683/010174174/x1030Z21380683.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
       }
     },
     {
@@ -518,14 +519,15 @@ window.TADAIMA_DATA = {
         "New subdivision (Forestry Town Atsugi Onna) 12 minutes on foot from Hon-Atsugi"
       ],
       "cautions": [
-        "Zoning and coverage/FAR are not stated on the index page — confirm before relying on them",
-        "Verified on the portal index page only (checked 2026-10-23); the listing's own detail page was not checked"
+        "Building condition requires a construction contract with Sumitomo Forestry within 3 months of the land contract, or the land sale is voided (detail page)",
+        "Quasi-fire prevention zone (準防火地域) per the detail page",
+        "LP gas (no city gas); the land is registered as 雑種地 until changed to residential (宅地) at handover (detail page)"
       ],
       "source": {
         "name": "goo住宅・不動産 (OCN feed)",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/311/2311340.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/14212/030/W/20606927.html",
+        "verified": "detail",
+        "infoDate": "2026-10-16"
       }
     },
     {
@@ -552,14 +554,15 @@ window.TADAIMA_DATA = {
         "Larger of the two Onna lots in this collection, still only ¥90万 more than the smaller one"
       ],
       "cautions": [
-        "Zoning and coverage/FAR are not stated on the index page — confirm before relying on them",
-        "Verified on the portal index page only (checked 2026-10-23); the listing's own detail page was not checked"
+        "Building condition requires a construction contract with Sumitomo Forestry within 3 months of the land contract, or the land sale is voided (detail page)",
+        "Quasi-fire prevention zone (準防火地域) per the detail page",
+        "LP gas (no city gas); the land is registered as 雑種地 until changed to residential (宅地) at handover (detail page)"
       ],
       "source": {
         "name": "goo住宅・不動産 (OCN feed)",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6002/ensen/311/2311340.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/14212/030/W/20606927.html",
+        "verified": "detail",
+        "infoDate": "2026-10-16"
       }
     },
     {
