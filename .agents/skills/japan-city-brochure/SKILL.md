@@ -11,13 +11,13 @@ Apply the Tokyo brochure’s simple, photo-led presentation to a city while usin
 
 - Inspect the Tokyo brochure at `SomeWhereInJapan/places/tokyo-in-layers/index.html`, `tokyo-brochure.css`, and `tokyo-brochure.js` for the current presentation and accessible photo viewer.
 - Inspect the target city’s record in `data/city-routes.json`, its GeoJSON in `maps/cities/<city>.geojson`, relevant place pages, and repository instructions.
-- Reuse verified photo URLs, alt text, credits, licenses, route coordinates, and source links from the records. Check new facts with official visitor sources.
+- Reuse verified photo URLs, alt text, credits, licenses, and route coordinates from the records. Check new facts with official visitor sources when research is needed, but do not add a source bibliography by default.
 - Treat community posts and traveler itineraries as self-selected examples. Describe recurring itinerary choices as signals, not a representative vote, rating, or universal “best” ranking.
 
 ## Build the guide
 
 - Keep the first view easy to scan: a short city title and description, one normal rectangular hero photo, route choices, stop photos, short captions, numbered stop order, a compact route map, and one obvious Google Maps directions action.
-- Keep schedules, opening/access notes, seasonal or month-by-month fit, accessibility, individual stop directions, photo credits, citations, and community-feedback context inside a clearly labeled **More details** disclosure.
+- Put practical planning details inside a clearly labeled **More details** disclosure when they help travelers. Research notes, source lists, citations, and community-feedback context are optional; omit them when they add clutter or were not requested. Always keep required photo credits and license links with their images.
 - Group stops into coherent route(s). Never imply unknown durations are verified. Keep route order, photo labels, map pins, and live directions consistent.
 - Label schematic map connectors as stop order only. Send travelers to live directions for navigation. Keep maps short enough on phones and links large enough to tap.
 - On mobile, present multiple photos as a horizontal snap gallery with a visible swipe cue. Let each photo open a keyboard-accessible lightbox with close button, Escape support, backdrop close, descriptive alt text, and focus restoration.
@@ -27,5 +27,5 @@ Apply the Tokyo brochure’s simple, photo-led presentation to a city while usin
 ## Review
 
 - Check that the page works with JavaScript disabled: its route sequence, photo captions, and Google Maps link must remain in the HTML.
-- Check relative asset paths, canonical URL, page title/description, cache-busting versions for changed CSS/JS, mobile gallery behavior, keyboard controls, route/map stop order, source links, and attribution.
+- Check relative asset paths, canonical URL, page title/description, cache-busting versions for changed CSS/JS, mobile gallery behavior, keyboard controls, route/map stop order, optional source links when included, and attribution.
 - Keep generated copy compact and specific to the target city. Do not copy Tokyo facts or destinations into another city.
