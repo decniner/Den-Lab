@@ -21,25 +21,25 @@ async function mount(){
  let registry;
  try{registry=await loadJson(jsonUrl);}
  catch(error){
-  blocks.forEach(block=>setLoadNote(block,'Interactive map unavailable. The stop list and Google Maps link below still work.'));
+  blocks.forEach(block=>setLoadNote(block,'Map unavailable. Open More details for stop notes and directions.'));
   return;
  }
  for(const block of blocks){
   const routeId=block.getAttribute('data-tokyo-route-block');
   const route=registry.routes?.find(item=>item.id===routeId);
   const panel=block.querySelector('[data-tokyo-route-view]');
-  const fallback=block.querySelector('[data-route-static-fallback]');
   const staticDirections=block.querySelector('[data-static-directions]');
   if(!route||!panel||!root.CityRouteUI?.mountCityRouteView){
-   setLoadNote(block,'Interactive map unavailable. The stop list and Google Maps link below still work.');
+   setLoadNote(block,'Map unavailable. Open More details for stop notes and directions.');
    continue;
   }
   let mapData=null;
   try{mapData=await loadJson(new URL(route.mapDataPath,siteRoot));}
   catch(error){setLoadNote(block,'Map data unavailable. The ordered stops and Google Maps directions remain available.');}
   try{
-   root.CityRouteUI.mountCityRouteView(panel,route,mapData,{hideStopPhotos:true});
-   if(fallback) fallback.hidden=true;
+   root.CityRouteUI.mountCityRouteView(panel,route,mapData,{hideStopPhotos:true,compactGuide:true});
+   const note=block.querySelector('[data-route-load-note]');
+   if(mapData&&note) note.hidden=true;
    if(staticDirections) staticDirections.hidden=true;
   }catch(error){
    setLoadNote(block,'Interactive map unavailable. The stop list and Google Maps link below still work.');
