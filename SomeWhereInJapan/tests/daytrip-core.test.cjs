@@ -48,7 +48,8 @@ test('pilotTripRecordsAreCompleteAndCosted', () => {
     assert.ok(trip.seasonFit && trip.months.every((month) => typeof trip.seasonFit[month] === 'string'), trip.slug + ' seasonal guidance');
     assert.ok(trip.effort && trip.tradeoff && trip.arrival, trip.slug + ' effort, tradeoff and arrival');
     assert.ok(trip.sources && trip.sources.length > 0 && trip.checkedOn, trip.slug + ' research metadata');
-    assert.ok(trip.image && trip.image.credit && trip.image.license, trip.slug + ' image rights');
+    if (trip.image) assert.ok(trip.image.credit && trip.image.license, trip.slug + ' image rights');
+    else assert.ok(['sawara', 'mitake', 'narita'].includes(trip.slug), trip.slug + ' photo-free only after destination-specific source audit');
     assert.ok(Object.keys(trip.modes).length > 0, trip.slug + ' supported mode');
     for (const [mode, record] of Object.entries(trip.modes)) for (const [time, profile] of Object.entries(record.profiles)) {
       assert.ok(profile.totalHours.min > 0 && profile.totalHours.max >= profile.totalHours.min, trip.slug + ' ' + mode + ' ' + time + ' duration');
@@ -86,6 +87,13 @@ test('filtersByMonthTransportDurationAndUpperBudget', () => {
   });
 
   assert.deepEqual(matches.map((trip) => trip.slug), ['boundary-fit']);
+});
+
+test('ignores legacy saved finder state but restores versioned state', () => {
+  const storage = { value: JSON.stringify({ month: 10, time: 'full', transport: 'public', budget: 1000, interest: 'balanced' }), getItem() { return this.value; }, setItem(_key, value) { this.value = value; } };
+  assert.equal(core.loadPlan(storage, ['sawara']), null, 'unversioned ¥1,000 state must not override defaults');
+  assert.equal(core.savePlan(storage, { month: 10, time: 'full', transport: 'public', budget: 15000, interest: 'balanced', selectedId: 'sawara' }), true);
+  assert.deepEqual(core.loadPlan(storage, ['sawara']), { ...core.DEFAULTS, selectedId: 'sawara', compareIds: [] });
 });
 
 test('incomplete or inconsistent cost estimates never qualify for a budget match', () => {

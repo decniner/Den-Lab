@@ -1,0 +1,23 @@
+﻿'use strict';
+const assert = require('node:assert/strict');
+const base = (process.env.SITE_URL || 'http://localhost:8000').replace(/\/$/, '');
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+(async () => {
+  const target = await (await fetch('http://127.0.0.1:9223/json/new?about:blank', { method: 'PUT' })).json();
+  const ws = new WebSocket(target.webSocketDebuggerUrl);
+  await new Promise((resolve, reject) => { ws.onopen = resolve; ws.onerror = reject; });
+  let seq = 0; const pending = new Map();
+  ws.onmessage = event => { const message = JSON.parse(event.data); if (message.id && pending.has(message.id)) { pending.get(message.id)(message); pending.delete(message.id); } };
+  const call = (method, params = {}) => new Promise(resolve => { const id = ++seq; pending.set(id, resolve); ws.send(JSON.stringify({ id, method, params })); });
+  const evaluate = async expression => { const response = await call('Runtime.evaluate', { expression, returnByValue: true, awaitPromise: true }); if (response.result.exceptionDetails) throw Error(JSON.stringify(response.result.exceptionDetails)); return response.result.result.value; };
+  const navigate = async () => { await call('Page.navigate', { url: `${base}/index.html` }); await wait(1300); };
+  await call('Page.enable'); await call('Runtime.enable'); await navigate();
+  await evaluate('localStorage.clear(); sessionStorage.clear()'); await navigate();
+  const before = await evaluate(`(()=>{const s=document.querySelector('#place-search');for(const name of ['Furano in bloom','Sapporo, snow and neon','Shiretoko\\u2019s wild edge']){s.value=name;s.dispatchEvent(new Event('input',{bubbles:true}));document.querySelector('.destination-card .card-save')?.click()}return JSON.parse(localStorage.getItem('somewhere-japan-saved')||'[]')})()`);
+  assert.equal(before.length, 3, `initial saves: ${JSON.stringify(before)}`);
+  await navigate();
+  const after = await evaluate("JSON.parse(localStorage.getItem('somewhere-japan-saved')||'[]')");
+  assert.deepEqual(after, before, 'saved destinations survive a new page load');
+  console.log(JSON.stringify({ before, after, pass: true }));
+  ws.close();
+})().catch(error => { console.error(error); process.exitCode = 1; });

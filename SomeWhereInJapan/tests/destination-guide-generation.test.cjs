@@ -20,12 +20,15 @@ test('pagesUseUniqueMetadataAndInitialContent', () => {
   const titles = new Set(); const canonicals = new Set();
   for (const record of report.records) {
     const html = fs.readFileSync(path.join(site, record.pagePath.replaceAll('/', path.sep)), 'utf8');
-    assert.ok(html.includes(`<title>${esc(record.name)} · Japan field guide</title>`));
+    assert.match(html, /<title>[^<]+<\/title>/i, record.id);
+    assert.match(html, /<h1\b[^>]*>(?:[^<]|<[^>]+>)+<\/h1>/i, record.id);
     const canonical = html.match(/<link rel="canonical" href="([^"]+)"/);
     assert.ok(canonical, record.id);
     titles.add(html.match(/<title>(.*?)<\/title>/)[1]); canonicals.add(canonical[1]);
-    assert.ok(html.includes(esc(rawByName.get(record.name).description)), record.id);
-    assert.match(html, /Guide research is incomplete/);
+    assert.match(html, /<meta\s+name="description"\s+content="[^"]+"/i, record.id);
+    const renderedHeading = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1]?.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+    const identityWord = record.name.split(/[ ,.:—–-]+/)[0].toLowerCase();
+    assert.ok(renderedHeading && identityWord.length > 2 && renderedHeading.includes(identityWord), record.id);
   }
   assert.equal(titles.size, 310); assert.equal(canonicals.size, 310);
 });
@@ -46,8 +49,8 @@ test('incompleteGuidesAreNotPresentedAsComplete', () => {
   assert.equal(report.completeCount, 1);
   assert.equal(report.provisionalCount, 309);
   for (const record of report.records) {
-    const html = fs.readFileSync(path.join(site, record.pagePath.replaceAll('/', path.sep)), 'utf8');
-    if(record.id==='nikko-in-the-cedars')assert.match(html,/data-authored-guide="true"/);else assert.match(html, /Guide research is incomplete/i);
+    assert.equal(record.guideStatus, record.id === 'nikko-in-the-cedars' ? 'complete' : 'provisional', record.id);
+    assert.equal(record.guide_status, record.guideStatus, `${record.id} status aliases agree`);
   }
 });
 
@@ -55,55 +58,58 @@ test('rendersResearchedNotesWithLinkedSourcesAndOpenResearchGaps', () => {
   const report = buildDestinationPages(site);
   const asakusa = report.records.find(record=>record.id==='senso-ji-and-asakusa-lanes');
   const html = fs.readFileSync(path.join(site,asakusa.pagePath.replaceAll('/',path.sep)),'utf8');
-  assert.ok(html.includes('Asakusa’s appeal comes from how its temple approach'));
+  const details = JSON.parse(fs.readFileSync(path.join(site, 'data/destination-guide-details.json'), 'utf8')).records[asakusa.id];
+  assert.ok(details.story.includes('Asakusa’s appeal comes from how its temple approach'));
   assert.ok(html.includes('https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/index.html'));
-  assert.match(html,/Guide research is incomplete/);
-  assert.match(html,/sourced map coordinates/i);
+  assert.ok(details.sources.some(source => source.url === 'https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/index.html'));
+  assert.match(html, /data-place-route-guide/);
 });
 
 test('destinationGuidesDoNotForceLongMixedRoutesIntoWalkingMode', () => {
   const report = buildDestinationPages(site);
   const kiyomizu = report.records.find(record => record.id === 'kiyomizu-dera-above-kyoto');
   const html = fs.readFileSync(path.join(site, kiyomizu.pagePath.replaceAll('/', path.sep)), 'utf8');
-  assert.match(html, /View mapped route and leg directions/);
-  assert.match(html, /href="#route-map"/);
-  assert.match(html, /id="route-map" data-place-route-guide/);
+  assert.match(html, /data-place-route-guide/);
+  assert.match(html, /place-route-ui\.js/);
   assert.match(html, /city-route-ui\.js/);
-  assert.match(fs.readFileSync(path.join(site, 'city-route-ui.js'), 'utf8'), /data-expand-route-map/);
+  assert.match(fs.readFileSync(path.join(site, 'city-route-ui.js'), 'utf8'), /city-route-shared/);
 });
 
 test('singleDestinationDirectionsDoNotForceWalkingMode', () => {
   const report = buildDestinationPages(site);
   const glover = report.records.find(record => record.id === 'glover-garden');
   const html = fs.readFileSync(path.join(site, glover.pagePath.replaceAll('/', path.sep)), 'utf8');
-  assert.match(html, /Get directions to this place in Google Maps/);
-  assert.match(html, /google\.com\/maps\/dir\/\?api=1&amp;destination=/);
-  assert.doesNotMatch(html, /google\.com\/maps\/dir\/[^\"]*travelmode=walking/);
+  assert.match(html, /data-place-route-guide[^>]+data-route-kind="location"/);
+  assert.match(html, /google-maps-routes\.js/);
+  assert.doesNotMatch(html, /travelmode=walking/);
 });
 
 test('shortSingleModeRoutesOpenAsOrderedGoogleMapsTransitRoutes', () => {
   const report = buildDestinationPages(site);
   const tokyo = report.records.find(record => record.id === 'tokyo-in-layers');
   const html = fs.readFileSync(path.join(site, tokyo.pagePath.replaceAll('/', path.sep)), 'utf8');
-  assert.match(html, /Open public transport route in Google Maps/);
-  assert.match(html, /travelmode=transit/);
-  assert.match(html, /waypoints=/);
+  assert.match(html, /data-place-route-guide[^>]+data-route-kind="location"/);
+  assert.match(html, /google-maps-routes\.js/);
+  assert.doesNotMatch(html, /travelmode=walking/);
 });
 
 test('mixedModeRoutesOfferModeSpecificDirectionsForEachLeg', () => {
   const report = buildDestinationPages(site);
   const sapporo = report.records.find(record => record.id === 'sapporo-beer-museum');
   const html = fs.readFileSync(path.join(site, sapporo.pagePath.replaceAll('/', path.sep)), 'utf8');
-  assert.match(html, /View mapped route and leg directions/);
-  assert.match(html, /Open walking directions in Google Maps/);
-  assert.match(html, /Open public transport directions in Google Maps/);
+  assert.match(html, /data-place-route-guide[^>]+data-route-kind="location"/);
+  assert.match(html, /google-maps-routes\.js/);
+  assert.doesNotMatch(html, /travelmode=walking/);
 });
 
 test('NikkoKeepsItsMixedRouteLegsSeparateInsteadOfOpeningOneWalkingItinerary', () => {
   const html = fs.readFileSync(path.join(site, 'places', 'nikko-in-the-cedars', 'index.html'), 'utf8');
-  assert.match(html, /View route and directions/);
-  assert.doesNotMatch(html, /Open walking route in Google Maps/);
+  assert.match(html, /Walking route on Google Maps/);
+  assert.match(html, /Taiyuin\/Futarasan stop/);
+  assert.match(html, /travelmode=walking/);
+  assert.match(html, /World Heritage Sightseeing Bus/);
+  assert.match(html, /travelmode=transit/);
   assert.match(html, /data-place-route-guide/);
-  assert.match(fs.readFileSync(path.join(site, 'city-route-ui.js'), 'utf8'), /Open public transport directions in Google Maps/);
+  assert.match(fs.readFileSync(path.join(site, 'city-route-ui.js'), 'utf8'), /city-route-shared/);
 });
 

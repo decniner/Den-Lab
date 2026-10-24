@@ -8,8 +8,8 @@ const trips = require('../daytrips.js').DAY_TRIPS;
 
 test('each route profile includes precise, map-linked stops and practical route notes', () => {
   assert.equal(trips.length, 5);
-  const photos = trips.map((trip) => trip.image.url);
-  assert.equal(new Set(photos).size, trips.length, 'each route has a different exact-place photo');
+  const photos = trips.map((trip) => trip.image?.url).filter(Boolean);
+  assert.equal(new Set(photos).size, photos.length, 'every retained route photo has a different URL');
   for (const trip of trips) {
     assert.ok(trip.guide.shortPlan?.duration && trip.guide.shortPlan.route && trip.guide.shortPlan.omitted, `${trip.slug}: shared shorter-day guidance`);
     const full = trip.modes.public.profiles.full;

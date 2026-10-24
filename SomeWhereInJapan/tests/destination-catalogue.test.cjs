@@ -22,7 +22,6 @@ test('the nationwide raw records preserve their available editorial fields witho
     assert.ok(Array.isArray(place.tags) && place.tags.length > 0, place.name);
     if (place.months !== undefined) assert.ok(place.months.every(month => month >= 1 && month <= 12), place.name);
   }
-  assert.ok(places.every(place => place.photo?.url || place.image), 'all 310 destinations retain a photograph');
   assert.equal(places.filter(place => place.photoAudit?.verdict === 'CORRECT').length, photoAudit.rows.filter(row => row.verdict === 'CORRECT').length);
   const verifiedPhotos = photoAudit.rows.filter(row => row.verdict === 'CORRECT');
   assert.equal(new Set(verifiedPhotos.map(row => row.currentImageUrl)).size, verifiedPhotos.length, 'verified destination photos are unique');
@@ -32,7 +31,8 @@ test('the nationwide raw records preserve their available editorial fields witho
     const row = photoAudit.rows.find(item => item.place === place.name);
     assert.ok(row, place.name);
     assert.equal(place.photoAudit?.verdict, row.verdict, `${place.name} keeps its verification status`);
-    assert.ok(place.photo?.url || place.image, `${place.name} keeps its image`);
+    if (row.verdict === 'CORRECT') assert.ok(place.photo?.url || place.image, `${place.name} retains its verified image`);
+    else assert.ok(!place.photo?.url && !place.image, `${place.name} does not retain an unverified image`);
   }
 });
 test('verified images in the previous 30 place stories have distinct source-backed credits', () => {

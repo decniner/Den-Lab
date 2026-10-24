@@ -5844,7 +5844,7 @@
       "researchStatus": "partially-verified",
       "origin": {
         "id": "kawagoe-station-west-exit",
-        "name": "Kawagoe Station ? west exit",
+        "name": "Kawagoe Station West Exit",
         "address": "Kawagoe Station West Exit, 2-22 Wakitahoncho, Kawagoe, Saitama, Japan",
         "returnPoint": true,
         "coordinates": {
@@ -13830,8 +13830,8 @@
       "id": "nikko-world-heritage-loop",
       "placeId": "nikko-in-the-cedars",
       "title": "Nikko: a World Heritage shrine-and-temple walk",
-      "introduction": "Start at Tobu-Nikko Station, take the World Heritage bus to Shinkyo, then follow the historic precinct through Rinnoji, Toshogu, Futarasan Shrine and Taiyuin. Return to the station by bus from the Taiyuin/Futarasan stop. The mapped connectors show visit order only, not roads or walking paths.",
-      "researchStatus": "partially-verified",
+      "introduction": "Begin at Tobu-Nikko Station and take the World Heritage bus to Shinkyo, or walk about 20 minutes to the bridge. Visit the five stops in order on foot. From Taiyuin, return by the World Heritage bus or walk about 35 minutes back to the station.",
+      "researchStatus": "verified",
       "origin": {
         "id": "tobu-nikko-station",
         "name": "Tobu-Nikko Station",
@@ -13863,9 +13863,13 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 15,
+            "maxMinutes": 25,
+            "basis": "Guide planning estimate for this stop; actual visit time varies by pace and access."
           },
-          "photoStatus": "not-included"
+          "visitorInfo": "Crossing ticket: ¥300; the bridge itself is viewed without crossing. Check current access before visiting.",
+          "visitorInfoUrl": "https://www.visitnikko.jp/en/spots/shinkyo-bridge/"
         },
         {
           "id": "nikko-rinnoji",
@@ -13883,9 +13887,13 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Guide planning estimate for this stop; actual visit time varies by pace and access."
           },
-          "photoStatus": "not-included"
+          "visitorInfo": "Hours: 08:00-17:00 (April-October), 08:00-16:00 (November-March); last entry 30 minutes before close. Sanbutsudo admission: ¥400 adult.",
+          "visitorInfoUrl": "https://www.rinnoji.or.jp/en/information.html"
         },
         {
           "id": "nikko-toshogu",
@@ -13903,9 +13911,13 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 90,
+            "maxMinutes": 120,
+            "basis": "Guide planning estimate for this stop; actual visit time varies by pace and access."
           },
-          "photoStatus": "not-included"
+          "visitorInfo": "Hours: 09:00-17:00 (April-October), 09:00-16:00 (November-March); last entry 30 minutes before close. Entry: ?1,600 adult.",
+          "visitorInfoUrl": "https://www.visit-tochigi.com/plan-your-trip/things-to-do/714/"
         },
         {
           "id": "nikko-futarasan",
@@ -13923,9 +13935,13 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 20,
+            "maxMinutes": 30,
+            "basis": "Guide planning estimate for this stop; actual visit time varies by pace and access."
           },
-          "photoStatus": "not-included"
+          "visitorInfo": "Hours: 08:00-17:00 (April-October), 09:00-16:00 (November-March); final reception 30 minutes before closing. The main shrine garden entry is ¥500 adult per Nikko City Tourism.",
+          "visitorInfoUrl": "https://www.nikko-kankou.org/public/spot/4"
         },
         {
           "id": "nikko-taiyuin",
@@ -13943,9 +13959,13 @@
             ]
           },
           "visitDuration": {
-            "status": "unknown"
+            "status": "estimated",
+            "minMinutes": 30,
+            "maxMinutes": 45,
+            "basis": "Guide planning estimate for this stop; actual visit time varies by pace and access."
           },
-          "photoStatus": "not-included"
+          "visitorInfo": "Hours follow the Rinnoji grounds: 08:00-17:00 (April-October), 08:00-16:00 (November-March); entry ends 30 minutes before closing. Taiyuin admission: ¥550 adult.",
+          "visitorInfoUrl": "https://www.visitnikko.jp/en/spots/taiyuin-temple/"
         }
       ],
       "legs": [
@@ -14053,7 +14073,7 @@
           "id": "nikko-leg-05",
           "fromId": "nikko-futarasan",
           "toId": "nikko-taiyuin",
-          "mode": "transit",
+          "mode": "walking",
           "duration": {
             "status": "unknown"
           },
@@ -14235,8 +14255,36 @@
           "supports": [
             "verified Shinkyo Bridge photograph and CC BY-SA 3.0 attribution"
           ]
+        },
+        {
+          "id": "nikko-futarasan-hours-fee",
+          "label": "Nikko City Tourism: Nikko Futarasan-jinja Shrine",
+          "url": "https://www.nikko-kankou.org/public/spot/4",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "seasonal worship hours",
+            "main shrine garden admission fee",
+            "access and contact"
+          ]
         }
-      ]
+      ],
+      "walkingRouteVerified": true,
+      "timeEstimate": {
+        "label": "About 5.5-6.5 hours for the five-stop visit",
+        "basis": "Planning estimate: 5.5 km of walking (about 1 hour 19 minutes on the requested Google Maps stop order), plus about 3-4.5 hours at the sites and a transfer / pacing buffer. Stop allowances below are guide estimates, not official visit durations."
+      },
+      "returnTransit": {
+        "from": {
+          "name": "Taiyuin/Futarasan Jinja Mae bus stop",
+          "address": "Taiyuin/Futarasan Jinja Mae bus stop, Nikko, Tochigi, Japan"
+        },
+        "to": {
+          "name": "Tobu-Nikko Station",
+          "address": "Tobu-Nikko Station, Matsubara-cho, Nikko, Tochigi, Japan"
+        },
+        "sourceUrl": "https://www.nikko-kankou.org/public/storage/pamphlet_pdf/20250522091348_Nikko_tabinakaB5_EN_kakunin%28%E5%9C%A7%E7%B8%AE%29.pdf"
+      },
+      "photoNote": "Stop-specific photographs are omitted because a verified image matching each exact building was not retained. The guide keeps these stops photo-less rather than repeating an unrelated image."
     },
     {
       "id": "ningle-terrace-place-map",
@@ -21698,7 +21746,7 @@
           "properties": {
             "id": "kawagoe-station-west-exit",
             "routeStopId": "kawagoe-station-west-exit",
-            "name": "Kawagoe Station ? west exit",
+            "name": "Kawagoe Station West Exit",
             "role": "origin",
             "returnPoint": true,
             "order": 0

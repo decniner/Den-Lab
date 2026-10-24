@@ -42,6 +42,8 @@ async function attachMappedRoute(origin,dayIndex=activeDayIndex){
  const registry=await cityRouteRecords;
  if(select.value!==origin.id||!window.CityRouteUI||request!==mapRequest)return;
  const plan=core.CITY_DAY_PLANS[cityId];
+ const requestedDays=Number.parseInt(availability,10)||1;
+ availability=String(Math.max(1,Math.min(requestedDays,plan?.stops?.length||1)));
  const days=core.itineraryDays(plan?.stops,halfDay?'half':availability,core.nearbyPlaces(window.DESTINATIONS,origin.id),origin.city);
  const day=days[dayIndex]||days[0];
  let route=(registry?.routes||[]).find(record=>record.cityId===cityId);
@@ -55,7 +57,18 @@ async function attachMappedRoute(origin,dayIndex=activeDayIndex){
  if(route?.transportMode==='selectable')route=window.CityRouteModel?.applyCityRouteMode(route,routeMode)||route;
  if(day&&dayCountForMap(day)>0){
   const names=new Set(day.stops.map(stop=>stop.name));
-  const selectedStops=route.stops.filter(stop=>names.has(stop.name));
+  const selectedStops=day.stops.map((planStop,index)=>{
+   const aliases={
+    'Sapporo TV Tower & Odori Park':['Sapporo TV Tower'],
+    'Tanukikoji Shopping Street':['Tanuki Koji Shopping Street'],
+    'Sapporo Beer Museum':['Sapporo Beer Museum and Beer Garden'],
+    'Sendai Castle Ruins · Aoba Castle':['Sendai Castle Site and Kenbunkan'],
+    'Sendai Asaichi Market':['Sendai Asaichi (Morning Market)']
+   };
+   const candidates=aliases[planStop.name]||[planStop.name];
+   const matched=route.stops.find(stop=>candidates.includes(stop.name));
+   return matched?{...matched,name:planStop.name,area:planStop.area||matched.area,story:planStop.story||matched.story,order:index+1}:null;
+  }).filter(Boolean);
   if(selectedStops.length){
    const ordered=selectedStops.map((stop,index)=>({...stop,order:index+1})),points=[route.origin,...ordered,route.origin];
    const legs=points.slice(1).map((to,index)=>({id:`${cityId}-day-${dayIndex+1}-leg-${index+1}`,fromId:points[index].id,toId:to.id,mode:routeMode==='car'?'driving':'transit',duration:{status:'unknown'}}));
@@ -71,7 +84,8 @@ async function attachMappedRoute(origin,dayIndex=activeDayIndex){
  if(mapData&&day){
   const selectedIds=new Set(route.stops.map(stop=>stop.id));
   const originPoint=mapData.features.find(feature=>feature.geometry?.type==='Point'&&feature.properties?.role==='origin');
-  const selectedPoints=mapData.features.filter(feature=>feature.geometry?.type==='Point'&&selectedIds.has(feature.properties?.routeStopId||feature.id));
+  const pointById=new Map(mapData.features.filter(feature=>feature.geometry?.type==='Point').map(feature=>[feature.properties?.routeStopId||feature.id,feature]));
+  const selectedPoints=route.stops.map(stop=>pointById.get(stop.id)).filter(Boolean);
   if(originPoint&&selectedPoints.length){
    const points=[originPoint,...selectedPoints,originPoint],connectors=points.slice(1).map((point,index)=>({type:'Feature',id:`day-${dayIndex+1}-leg-${index+1}`,properties:{routeLegId:`day-${dayIndex+1}-leg-${index+1}`,mode:routeMode==='car'?'driving':'transit',routeGeometryStatus:'schematic'},geometry:{type:'LineString',coordinates:[points[index].geometry.coordinates,point.geometry.coordinates]}}));
    mapData={...mapData,metadata:{...mapData.metadata,geometryStatus:'schematic-stop-order'},features:[...mapData.features.filter(feature=>feature.geometry?.type==='LineString'&&!feature.properties?.routeLegId),originPoint,...selectedPoints,...connectors]};
@@ -100,6 +114,8 @@ function render(){
  const origin=core.ALL_ORIGINS.find(item=>item.id===select.value)||core.CITY_ORIGINS[2];
  const isTokyo=origin.id==='tokyo';
  const plan=core.CITY_DAY_PLANS[origin.planId||origin.id];
+ const requestedDays=Number.parseInt(availability,10)||1;
+ availability=String(Math.max(1,Math.min(requestedDays,plan?.stops?.length||1)));
  cityLabel.textContent=origin.station;
  if(headingKicker)headingKicker.textContent=`${availability==='1'?'A FULL DAY':'MULTI-DAY PLAN'} FROM ${origin.city.toUpperCase()}  /  CURATED CITY PLAN`;
  if(headingTitle)headingTitle.innerHTML=`${availability==='1'?'A day':`${escapeHtml(availability)} days`} in ${escapeHtml(origin.city)}.<br><em>Planned around you.</em>`;
@@ -117,8 +133,8 @@ function render(){
  const daysDescription=halfDay
   ?`A focused half-day sequence through two anchor stops from ${stops.length} researched places. Turn off half-day mode to plan a longer visit.`
   :dayCount===1
-   ?`All ${stops.length} researched stops are included in this suggested city sequence. Begin early and adjust the pace to suit you.`
-   :`${dayCount} separate days are planned from the researched places, grouped into smaller neighbourhood-focused outings. Every stop has its own photo, story and directions. The groupings are a suggested order, not a timed transit schedule.`;
+   ?`All ${stops.length} researched stops are included in this suggested city sequence. Begin early and adjust the pace to suit you. The number of days is capped at ${stops.length}, the number of researched stops.`
+   :`${dayCount} separate days are planned from the researched places, grouped into smaller neighbourhood-focused outings. Every stop has its own photo, story and directions. The number of days is capped at ${stops.length}, the number of researched stops. The groupings are a suggested order, not a timed transit schedule.`;
  const dayMarkup=days.map((day,dayIndex)=>{
   const finalStop=day.stops.at(-1);
   const returnRoute=finalStop?core.directionsUrl(origin,origin.station,routeMode,`${finalStop.name}, ${finalStop.area}`):'';
@@ -128,9 +144,9 @@ function render(){
   return `<section class="city-plan-day" aria-labelledby="city-plan-day-${dayIndex+1}"><div class="city-plan-day-header"><div><p class="atlas-kicker">${halfDay?'HALF-DAY ROUTE':day.stops.length?`DAY ${dayIndex+1} OF ${dayCount}  /  ${day.stops.length} PLACES`:`DAY ${dayIndex+1} OF ${dayCount}  /  FLEXIBLE`}</p><h5 id="city-plan-day-${dayIndex+1}">${escapeHtml(day.title)}</h5></div>${actions}</div>${content}</section>`;
  }).join('');
  const nearby=places.map(place=>`<article class="city-origin-card"><p>${escapeHtml(place.region)}</p><h4>${escapeHtml(place.name)}</h4><span>${escapeHtml(place.place)}</span><div><a href="${core.directionsUrl(origin,place.name+' '+place.place,'transit')}" target="_blank" rel="noopener noreferrer">Transit directions <b aria-hidden="true">&#8599;</b></a><a href="${core.directionsUrl(origin,place.name+' '+place.place,'car')}" target="_blank" rel="noopener noreferrer">Drive <b aria-hidden="true">&#8599;</b></a></div></article>`).join('');
- panel.innerHTML=`<div class="city-origin-heading"><p class="atlas-kicker">STARTING IN ${escapeHtml(origin.city.toUpperCase())}  /  ${escapeHtml(origin.region.toUpperCase())}</p><h3>From ${escapeHtml(origin.city)},<br><em>${dayCount>1?`${dayCount} days, well spent.`:'one good day.'}</em></h3><p>Start at ${escapeHtml(origin.station)} and follow a suggested sequence. Each place has separate directions; no multi-stop transit schedule is implied.</p><p class="city-origin-result-count">${escapeHtml(plan.pace)}</p></div><section class="city-origin-plan" aria-labelledby="city-plan-title"><div class="city-plan-header"><div><p class="atlas-kicker">${dayCount>1?`${dayCount}-DAY CITY IDEAS`:'A SUGGESTED ORDER FOR THE DAY'}</p><h4 id="city-plan-title">${escapeHtml(plan.title)}</h4><p>${escapeHtml(plan.intro)}</p></div><div class="city-plan-controls"><label class="city-plan-availability" for="city-plan-availability">NUMBER OF DAYS<input id="city-plan-availability" type="number" min="1" max="30" step="1" inputmode="numeric" value="${escapeHtml(availability)}"></label><label class="city-plan-half-day"><input id="city-plan-half-day" type="checkbox" ${halfDay?'checked':''}> Plan a focused half-day</label><label class="city-plan-mode" for="city-plan-mode">GETTING AROUND<select id="city-plan-mode"><option value="transit" ${routeMode==='transit'?'selected':''}>Public transport</option><option value="car" ${routeMode==='car'?'selected':''}>By car</option></select></label></div></div><p class="city-plan-availability-note">${escapeHtml(daysDescription)}</p><p class="city-plan-caveat">Visit windows are suggestions, not timed admissions. The sequence is not a timetable; transfer times and fares change by date. Check each individual leg and venue before setting out.</p>${dayMarkup}<p class="city-plan-source">Route inspiration: <a href="${plan.source.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(plan.source.label)} <span aria-hidden="true">&#8599;</span></a></p></section><div class="city-origin-more"><div class="city-origin-more-heading"><p class="atlas-kicker">WHEN YOU HAVE ANOTHER DAY</p><h4>More to explore in ${escapeHtml(origin.region)}</h4><p>${places.length} regional place ideas with individual directions from ${escapeHtml(origin.station)}. Longer journeys can take several hours; check each route before choosing.</p></div><div class="city-origin-grid">${nearby}</div></div>`;
+ panel.innerHTML=`<div class="city-origin-heading"><p class="atlas-kicker">STARTING IN ${escapeHtml(origin.city.toUpperCase())}  /  ${escapeHtml(origin.region.toUpperCase())}</p><h3>From ${escapeHtml(origin.city)},<br><em>${dayCount>1?`${dayCount} days, well spent.`:'one good day.'}</em></h3><p>Start at ${escapeHtml(origin.station)} and follow a suggested sequence. Each place has separate directions; no multi-stop transit schedule is implied.</p><p class="city-origin-result-count">${escapeHtml(plan.pace)}</p></div><section class="city-origin-plan" aria-labelledby="city-plan-title"><div class="city-plan-header"><div><p class="atlas-kicker">${dayCount>1?`${dayCount}-DAY CITY IDEAS`:'A SUGGESTED ORDER FOR THE DAY'}</p><h4 id="city-plan-title">${escapeHtml(plan.title)}</h4><p>${escapeHtml(plan.intro)}</p></div><div class="city-plan-controls"><label class="city-plan-availability" for="city-plan-availability">NUMBER OF DAYS<input id="city-plan-availability" type="number" min="1" max="${stops.length}" step="1" inputmode="numeric" value="${escapeHtml(availability)}"></label><label class="city-plan-half-day"><input id="city-plan-half-day" type="checkbox" ${halfDay?'checked':''}> Plan a focused half-day</label><label class="city-plan-mode" for="city-plan-mode">GETTING AROUND<select id="city-plan-mode"><option value="transit" ${routeMode==='transit'?'selected':''}>Public transport</option><option value="car" ${routeMode==='car'?'selected':''}>By car</option></select></label></div></div><p class="city-plan-availability-note">${escapeHtml(daysDescription)}</p><p class="city-plan-caveat">Visit windows are suggestions, not timed admissions. The sequence is not a timetable; transfer times and fares change by date. Check each individual leg and venue before setting out.</p>${dayMarkup}<p class="city-plan-source">Route inspiration: <a href="${plan.source.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(plan.source.label)} <span aria-hidden="true">&#8599;</span></a></p></section><div class="city-origin-more"><div class="city-origin-more-heading"><p class="atlas-kicker">WHEN YOU HAVE ANOTHER DAY</p><h4>More to explore in ${escapeHtml(origin.region)}</h4><p>${places.length} regional place ideas with individual directions from ${escapeHtml(origin.station)}. Longer journeys can take several hours; check each route before choosing.</p></div><div class="city-origin-grid">${nearby}</div></div>`;
  if(isTokyo){allForms.forEach(element=>{if(element){element.hidden=false;tokyoTools.append(element);}});panel.append(tokyoTools);}
- panel.querySelector('#city-plan-availability').addEventListener('change',event=>{const entered=Number.parseInt(event.target.value,10);availability=String(Number.isFinite(entered)?Math.max(1,Math.min(30,entered)):1);halfDay=false;activeDayIndex=0;render();});
+ panel.querySelector('#city-plan-availability').addEventListener('change',event=>{const entered=Number.parseInt(event.target.value,10);availability=String(Number.isFinite(entered)?Math.max(1,Math.min(plan.stops.length,entered)):1);halfDay=false;activeDayIndex=0;render();});
  panel.querySelector('#city-plan-half-day').addEventListener('change',event=>{halfDay=event.target.checked;render();});
  panel.querySelector('#city-plan-mode').addEventListener('change',event=>{routeMode=event.target.value;render();});
  panel.querySelectorAll('[data-show-day-map]').forEach(button=>button.addEventListener('click',async()=>{activeDayIndex=Number(button.dataset.showDayMap)||0;await attachMappedRoute(origin,activeDayIndex);const routeHost=panel.querySelector('.city-route-shared');routeHost?.scrollIntoView({behavior:'smooth',block:'start'});}));

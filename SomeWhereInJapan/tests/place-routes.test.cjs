@@ -11,7 +11,12 @@ test('Nikko has an ordered, source-backed place route with a return point and di
  assert.equal(route.origin.returnPoint,true);
  assert.deepEqual(route.stops.map(stop=>stop.name),['Shinkyo Bridge','Nikkosan Rinnoji Temple','Nikko Toshogu Shrine','Nikko Futarasan-jinja Shrine','Taiyuin Mausoleum']);
  assert.ok(route.stops.every(stop=>Number.isFinite(stop.coordinates.latitude)&&Number.isFinite(stop.coordinates.longitude)&&stop.coordinates.sourceIds.length));
- assert.ok(route.stops.every(stop=>stop.photo||stop.photoStatus==='not-included'));
+ assert.ok(route.photoNote);
+ assert.ok(route.stops.every(stop=>!stop.photo&& !stop.photoStatus&&stop.visitorInfo&&stop.visitorInfoUrl));
+ assert.ok(route.stops.every(stop=>stop.visitDuration.status==='estimated'&&stop.visitDuration.maxMinutes>stop.visitDuration.minMinutes));
+ assert.match(route.timeEstimate.label,/5\.5-6\.5 hours/);
+ assert.equal(route.walkingRouteVerified,true);
+ assert.equal(route.researchStatus,'verified');
  const details=JSON.parse(fs.readFileSync(path.join(root,'data/destination-guide-details.json'),'utf8')).records['nikko-in-the-cedars'];
  const {evaluateGuideCompletion}=require('../tools/destination-guide-schema.cjs');
  assert.deepEqual(evaluateGuideCompletion({id:'nikko-in-the-cedars',type:'attraction',...details}),{complete:true,missing:[]});
@@ -33,4 +38,18 @@ test('Nikko guide registry, modal route hook and guide route hook are connected 
  assert.match(status,/"Nikko in the cedars":"complete"/);
  assert.match(status,/"Kamakura, temple to tide":"provisional"/);
  assert.match(status,/"Kawagoe, the little Edo":"provisional"/);
+});
+
+test('Nikko offers a sourced World Heritage bus return option alongside the walking loop',()=>{
+ const data=JSON.parse(fs.readFileSync(path.join(root,'data/place-routes.json'),'utf8'));
+ const route=data.routes.find(item=>item.placeId==='nikko-in-the-cedars');
+ assert.equal(route.returnTransit.from.name,'Taiyuin/Futarasan Jinja Mae bus stop');
+ assert.equal(route.returnTransit.to.name,'Tobu-Nikko Station');
+ assert.match(route.returnTransit.sourceUrl,/nikko-kankou\.org\/public\/storage\/pamphlet_pdf/);
+ const helper=require('../google-maps-routes.js');
+ const url=new URL(helper.buildTransitRouteUrl(route.returnTransit.from,route.returnTransit.to));
+ assert.equal(url.searchParams.get('travelmode'),'transit');
+ assert.match(url.searchParams.get('origin'),/Taiyuin\/Futarasan Jinja Mae/);
+ assert.match(url.searchParams.get('destination'),/Tobu-Nikko Station/);
+ assert.match(fs.readFileSync(path.join(root,'place-route-ui.js'),'utf8'),/World Heritage bus/);
 });

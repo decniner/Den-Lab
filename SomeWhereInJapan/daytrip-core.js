@@ -177,7 +177,7 @@
   function savePlan(storage, state) {
     try {
       const safe = sanitizeState(state, [...(state && state.compareIds || []), state && state.selectedId].filter(Boolean));
-      storage.setItem(STORAGE_KEY, JSON.stringify(safe));
+      storage.setItem(STORAGE_KEY, JSON.stringify({ schemaVersion: 2, state: safe }));
       return true;
     } catch (_error) {
       return false;
@@ -188,7 +188,11 @@
     try {
       const serialized = storage.getItem(STORAGE_KEY);
       if (!serialized) return null;
-      return sanitizeState(JSON.parse(serialized), validIds);
+      const record = JSON.parse(serialized);
+      // Ignore legacy, unversioned preferences that could silently replace
+      // documented first-visit defaults (for example with a ¥1,000 budget).
+      if (!record || record.schemaVersion !== 2 || !record.state) return null;
+      return sanitizeState(record.state, validIds);
     } catch (_error) {
       return null;
     }

@@ -76,15 +76,16 @@ test('slash shortcut ignores selects and contenteditable fields; Tokyo tools are
   assert.match(originUi, /origin\.city/);
 });
 
-test('share copies a stateful URL and announces confirmation; story galleries reject stale requests', () => {
+test('share copies a stateful URL and the place dialog cleans up when closed', () => {
   const app = read('app.js');
   assert.match(app, /clipboard\.writeText\(url\.href\)/);
   for (const field of ['month', 'days', 'region', 'style']) assert.match(app, new RegExp(`searchParams\\.set\\('${field}'`));
   assert.match(app, /Link copied/);
   assert.match(read('index.html'), /id="share-status" class="sr-only" role="status" aria-live="polite"/);
-  assert.match(app, /requestId!==placeDialogRequest/);
-  assert.match(app, /status\.textContent='Finding more photographs/);
-  assert.match(app, /status\.textContent=`\$\{photos\.length\} additional/);
+  assert.match(app, /let placeDialogRequest = 0/);
+  assert.match(app, /placeDialogRequest\+=1/);
+  assert.match(app, /placeDialog\.addEventListener\('close',[\s\S]*?placeDialogRequest\+=1/);
+  assert.match(app, /place-dialog-gallery'\)\.replaceChildren\(\)/);
   assert.match(app, /placeDialog\.showModal\(\)/);
   assert.match(app, /placeDialog\.addEventListener\('close'/);
 });

@@ -73,6 +73,8 @@ test('uses one shared itinerary renderer and preserves Tokyo day-trip tools as s
  const css=require('node:fs').readFileSync(require('node:path').join(__dirname,'..','styles.css'),'utf8');
  assert.match(ui,/city-origin-plan/);
  assert.match(ui,/city-plan-availability/);
+ assert.match(ui,/max="\$\{stops\.length\}"/);
+ assert.match(ui,/Math\.min\(plan\.stops\.length,entered\)/);
  assert.match(ui,/AIRPORT_ORIGINS/);
  assert.match(css,/\.city-origin-picker select\{width:100%;min-width:0;box-sizing:border-box\}/);
  assert.match(ui,/city-plan-stop-photo/);

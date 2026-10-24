@@ -408,7 +408,9 @@ function renderDestinations(announceCompletion = false) {
     const inMonth = !monthSearchEnabled || getPlacesForMonth(Number(monthSelect.value)).has(place.name);
     const inLocalFinds = !localFindsOnly || LOCAL_FIND_NAMES.has(place.name);
     const matchesQuery = !normalized || normalized.split(/\s+/).every(term => searchable.includes(term));
-    return inRegion && inSaved && inMood && inMonth && inLocalFinds && matchesQuery;
+    // Saved is independent of browse filters. Keep those filters intact so
+    // leaving Saved restores the previous browse view.
+    return savedOnly ? inSaved : inRegion && inMood && inMonth && inLocalFinds && matchesQuery;
   });
   count.textContent = `${String(places.length).padStart(2, '0')} ${places.length === 1 ? 'PLACE' : 'PLACES'}`;
   document.querySelector('#show-more').hidden = places.length <= visibleLimit;
@@ -490,7 +492,9 @@ function renderDestinations(announceCompletion = false) {
     const fieldGuide=document.createElement('a');fieldGuide.className='card-details';fieldGuide.href=guideUrl||'#';fieldGuide.hidden=!guideUrl;
     if(guideStatus==='complete')fieldGuide.textContent='Open full field guide';
     else{fieldGuide.textContent='Field notes — in progress · provisional';fieldGuide.setAttribute('aria-label',`${place.name}: provisional field notes, guide research in progress`);}
-    copy.append(location, row, area, description, tags, details, fieldGuide);
+    const cardActions=document.createElement('div');cardActions.className='card-actions';
+    cardActions.append(details,document.createTextNode(' '),fieldGuide);
+    copy.append(location, row, area, description, tags, cardActions);
     card.append(imageWrap, copy);
     return card;
   }));
