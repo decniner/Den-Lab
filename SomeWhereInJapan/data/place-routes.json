@@ -13119,13 +13119,27 @@
       "id": "kyoto-at-first-light-route",
       "placeId": "kyoto-at-first-light",
       "cityId": "kyoto",
-      "title": "Kyoto at first light: a one-day route",
-      "researchStatus": "community-informed-one-day-plan-with-schematic-map",
-      "introduction": "Start at Fushimi Inari at dawn, pause for brunch at Vermillion - cafe., then continue north to Tofukuji and Sennyuji. This paced 6-8 hour day keeps the full Inari summit optional. Community feedback favors an early start and a relaxed pace; check current cafe and temple hours before you go. Map lines show stop order, not verified street geometry.",
-      "origin": null,
+      "title": "Kyoto at first light: station-to-station day route",
+      "researchStatus": "community-informed-station-to-station-plan-with-schematic-map",
+      "introduction": "Start at JR Inari Station, visit Fushimi Inari at dawn, pause at Vermillion - cafe., then continue to Tofukuji and Sennyuji. Finish at Keihan Tofukuji Station for onward rail connections. Allow about 6-8 hours; the full Inari summit is optional. Map lines show stop order, not verified street geometry.",
+      "origin": {
+        "id": "kyoto-at-first-light-origin",
+        "name": "JR Inari Station",
+        "address": "Inari Station, Fukakusa Inari Ommae-cho, Fushimi-ku, Kyoto, Japan",
+        "mapsAddress": "JR Inari Station, Fushimi-ku, Kyoto, Japan",
+        "returnPoint": false,
+        "coordinates": {
+          "latitude": 34.96681,
+          "longitude": 135.77067,
+          "precision": "Approximate OpenStreetMap station point",
+          "sourceIds": [
+            "kyoto-at-first-light-osm"
+          ]
+        }
+      },
       "stops": [
         {
-          "id": "kyoto-at-first-light-origin",
+          "id": "kyoto-at-first-light-stop-1",
           "order": 1,
           "name": "Fushimi Inari Taisha",
           "address": "Fushimi Inari Taisha, Fushimi Ward, Kyoto, Japan",
@@ -13162,7 +13176,7 @@
           }
         },
         {
-          "id": "kyoto-at-first-light-stop-1",
+          "id": "kyoto-at-first-light-stop-2",
           "order": 2,
           "name": "Vermillion - cafe.",
           "address": "5-31 Fukakusa Kaidoguchicho, Fushimi-ku, Kyoto 612-0805",
@@ -13187,7 +13201,7 @@
           "mapsAddress": "Vermillion - cafe., 5-31 Fukakusa Kaidoguchicho, Fushimi-ku, Kyoto 612-0805"
         },
         {
-          "id": "kyoto-at-first-light-stop-2",
+          "id": "kyoto-at-first-light-stop-3",
           "order": 3,
           "name": "Tofukuji Temple",
           "address": "15-778 Honmachi, Higashiyama-ku, Kyoto 605-0981",
@@ -13227,7 +13241,7 @@
           "mapsAddress": "Tofukuji Temple, 15-778 Honmachi, Higashiyama-ku, Kyoto 605-0981"
         },
         {
-          "id": "kyoto-at-first-light-stop-3",
+          "id": "kyoto-at-first-light-stop-4",
           "order": 4,
           "name": "Sennyuji Temple",
           "address": "27 Sennyuji Yamanouchicho, Higashiyama-ku, Kyoto 605-0977",
@@ -13265,49 +13279,92 @@
           "visitorInfo": "Official hours, admission and event-day access",
           "visitorInfoUrl": "https://mitera.org/guide",
           "mapsAddress": "Sennyuji Temple, 27 Sennyuji Yamanouchicho, Higashiyama-ku, Kyoto 605-0977"
+        },
+        {
+          "id": "kyoto-at-first-light-stop-5",
+          "order": 5,
+          "name": "Keihan Tofukuji Station",
+          "address": "224 Honmachi 12-chome, Higashiyama-ku, Kyoto 605-0981",
+          "mapsAddress": "Keihan Tofukuji Station, 224 Honmachi 12-chome, Higashiyama-ku, Kyoto 605-0981",
+          "description": "Finish at the Keihan Main Line station after Sennyuji, with JR Tofukuji also available for onward connections.",
+          "story": "14:45-15:00 | End here for the Keihan Main Line. The station complex also connects with JR Tofukuji; check your onward train and platform before leaving.",
+          "coordinates": {
+            "latitude": 34.98126,
+            "longitude": 135.77002,
+            "precision": "Approximate OpenStreetMap station point; schematic connector only",
+            "sourceIds": [
+              "kyoto-at-first-light-osm"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 10,
+            "maxMinutes": 15,
+            "basis": "Allow a short station arrival and onward-train buffer."
+          },
+          "visitorInfo": "Keihan station information and JR Nara Line interchange",
+          "visitorInfoUrl": "https://www.keihan.co.jp/traffic/station/153/info.html"
         }
       ],
       "legs": [
         {
           "id": "kyoto-at-first-light-leg-1",
-          "from": "Fushimi Inari Taisha",
-          "to": "Vermillion - cafe.",
+          "from": "JR Inari Station",
+          "to": "Fushimi Inari Taisha",
           "mode": "walking",
-          "story": "Schematic sequence only; use the cafe address and live map directions for the actual walk.",
+          "story": "Begin at the JR station and walk to the shrine approach; confirm the exact pedestrian route in Google Maps.",
           "fromId": "kyoto-at-first-light-origin",
           "toId": "kyoto-at-first-light-stop-1"
         },
         {
           "id": "kyoto-at-first-light-leg-2",
-          "from": "Vermillion - cafe.",
-          "to": "Tofukuji Temple",
+          "from": "Fushimi Inari Taisha",
+          "to": "Vermillion - cafe.",
           "mode": "walking",
-          "story": "Schematic sequence only; confirm the current walking route and conditions in Google Maps.",
+          "story": "Schematic order only; use live walking directions for the actual path.",
           "fromId": "kyoto-at-first-light-stop-1",
           "toId": "kyoto-at-first-light-stop-2"
         },
         {
           "id": "kyoto-at-first-light-leg-3",
+          "from": "Vermillion - cafe.",
+          "to": "Tofukuji Temple",
+          "mode": "walking",
+          "story": "Schematic order only; use live walking directions for the actual path.",
+          "fromId": "kyoto-at-first-light-stop-2",
+          "toId": "kyoto-at-first-light-stop-3"
+        },
+        {
+          "id": "kyoto-at-first-light-leg-4",
           "from": "Tofukuji Temple",
           "to": "Sennyuji Temple",
           "mode": "walking",
-          "story": "Schematic sequence only; confirm the current walking route and conditions in Google Maps.",
-          "fromId": "kyoto-at-first-light-stop-2",
-          "toId": "kyoto-at-first-light-stop-3"
+          "story": "Schematic order only; use live walking directions for the actual path.",
+          "fromId": "kyoto-at-first-light-stop-3",
+          "toId": "kyoto-at-first-light-stop-4"
+        },
+        {
+          "id": "kyoto-at-first-light-leg-5",
+          "from": "Sennyuji Temple",
+          "to": "Keihan Tofukuji Station",
+          "mode": "walking",
+          "story": "Walk back toward the station after the final temple; check the exact path in Google Maps.",
+          "fromId": "kyoto-at-first-light-stop-4",
+          "toId": "kyoto-at-first-light-stop-5"
         }
       ],
       "timeEstimate": {
-        "label": "Allow about 6-8 hours at a relaxed pace.",
-        "basis": "Editorial plan: dawn visit to Fushimi Inari, brunch break, then Tofukuji and Sennyuji. The full Inari summit, seasonal temple hours, queues and mobility needs can extend the day."
+        "label": "Allow about 6-8 hours, including the walk to the finishing station.",
+        "basis": "Station-to-station day plan: dawn at Fushimi Inari, brunch, Tofukuji and Sennyuji, then Keihan Tofukuji Station. The full Inari summit, seasonal hours, queues and mobility needs can extend the day."
       },
       "sources": [
         {
           "id": "kyoto-at-first-light-osm",
-          "label": "OpenStreetMap: approximate visitor-area points",
-          "url": "https://www.openstreetmap.org/search?query=Fushimi%20Inari%20Taisha%2C%20Kyoto%2C%20Japan",
+          "label": "OpenStreetMap: approximate station and visitor-area points",
+          "url": "https://www.openstreetmap.org/search?query=Inari%20Station%2C%20Kyoto",
           "checkedOn": "2026-10-24",
           "supports": [
-            "approximate visitor-area points and schematic itinerary order; not turn-by-turn routing"
+            "approximate station and visitor-area points and schematic itinerary order; not turn-by-turn routing"
           ]
         },
         {
@@ -13416,6 +13473,33 @@
           "checkedOn": "2026-10-24",
           "supports": [
             "high visitor volumes from mid-November to early December"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-stations",
+          "label": "Fushimi Inari Taisha official access: JR Inari Station",
+          "url": "https://inari.jp/en/access/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "shrine is beside JR Inari Station and station-based access"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-keihan-station",
+          "label": "Keihan official: Tofukuji Station and JR interchange",
+          "url": "https://www.keihan.co.jp/traffic/station/153/info.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Keihan Tofukuji Station address and JR Nara Line transfer"
+          ]
+        },
+        {
+          "id": "kyoto-at-first-light-kyoto-rail",
+          "label": "Kyoto Travel: getting around by train",
+          "url": "https://kyoto.travel/en/getting-around/getting-around-kyoto-by-subway-train/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "JR and Keihan interchanges and rail travel planning"
           ]
         }
       ]
@@ -34028,7 +34112,7 @@
       "metadata": {
         "geometryStatus": "schematic-stop-order",
         "bounds": [
-          135.7706,
+          135.769,
           34.9651,
           135.7817101,
           34.983562
@@ -34044,13 +34128,52 @@
           "geometry": {
             "type": "Point",
             "coordinates": [
-              135.7797101,
-              34.9675192
+              135.77067,
+              34.96681
             ]
           },
           "properties": {
             "id": "kyoto-at-first-light-origin",
             "routeStopId": "kyoto-at-first-light-origin",
+            "name": "JR Inari Station",
+            "role": "origin",
+            "order": null
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.77067,
+                34.96681
+              ],
+              [
+                135.7797101,
+                34.9675192
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kyoto-at-first-light-leg-1",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kyoto-at-first-light-stop-1",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.7797101,
+              34.9675192
+            ]
+          },
+          "properties": {
+            "id": "kyoto-at-first-light-stop-1",
+            "routeStopId": "kyoto-at-first-light-stop-1",
             "name": "Fushimi Inari Taisha",
             "role": "stop",
             "displayOrder": 1,
@@ -34073,14 +34196,14 @@
             ]
           },
           "properties": {
-            "routeLegId": "kyoto-at-first-light-leg-1",
+            "routeLegId": "kyoto-at-first-light-leg-2",
             "mode": "walking",
             "routeGeometryStatus": "schematic"
           }
         },
         {
           "type": "Feature",
-          "id": "kyoto-at-first-light-stop-1",
+          "id": "kyoto-at-first-light-stop-2",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34089,8 +34212,8 @@
             ]
           },
           "properties": {
-            "id": "kyoto-at-first-light-stop-1",
-            "routeStopId": "kyoto-at-first-light-stop-1",
+            "id": "kyoto-at-first-light-stop-2",
+            "routeStopId": "kyoto-at-first-light-stop-2",
             "name": "Vermillion - cafe.",
             "role": "stop",
             "displayOrder": 2,
@@ -34113,14 +34236,14 @@
             ]
           },
           "properties": {
-            "routeLegId": "kyoto-at-first-light-leg-2",
+            "routeLegId": "kyoto-at-first-light-leg-3",
             "mode": "walking",
             "routeGeometryStatus": "schematic"
           }
         },
         {
           "type": "Feature",
-          "id": "kyoto-at-first-light-stop-2",
+          "id": "kyoto-at-first-light-stop-3",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34129,8 +34252,8 @@
             ]
           },
           "properties": {
-            "id": "kyoto-at-first-light-stop-2",
-            "routeStopId": "kyoto-at-first-light-stop-2",
+            "id": "kyoto-at-first-light-stop-3",
+            "routeStopId": "kyoto-at-first-light-stop-3",
             "name": "Tofukuji Temple",
             "role": "stop",
             "displayOrder": 3,
@@ -34153,14 +34276,14 @@
             ]
           },
           "properties": {
-            "routeLegId": "kyoto-at-first-light-leg-3",
+            "routeLegId": "kyoto-at-first-light-leg-4",
             "mode": "walking",
             "routeGeometryStatus": "schematic"
           }
         },
         {
           "type": "Feature",
-          "id": "kyoto-at-first-light-stop-3",
+          "id": "kyoto-at-first-light-stop-4",
           "geometry": {
             "type": "Point",
             "coordinates": [
@@ -34169,12 +34292,52 @@
             ]
           },
           "properties": {
-            "id": "kyoto-at-first-light-stop-3",
-            "routeStopId": "kyoto-at-first-light-stop-3",
+            "id": "kyoto-at-first-light-stop-4",
+            "routeStopId": "kyoto-at-first-light-stop-4",
             "name": "Sennyuji Temple",
             "role": "stop",
             "displayOrder": 4,
             "order": 4
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                135.776843,
+                34.981562
+              ],
+              [
+                135.77002,
+                34.98126
+              ]
+            ]
+          },
+          "properties": {
+            "routeLegId": "kyoto-at-first-light-leg-5",
+            "mode": "walking",
+            "routeGeometryStatus": "schematic"
+          }
+        },
+        {
+          "type": "Feature",
+          "id": "kyoto-at-first-light-stop-5",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              135.77002,
+              34.98126
+            ]
+          },
+          "properties": {
+            "id": "kyoto-at-first-light-stop-5",
+            "routeStopId": "kyoto-at-first-light-stop-5",
+            "name": "Keihan Tofukuji Station",
+            "role": "stop",
+            "displayOrder": 5,
+            "order": 5
           }
         }
       ]

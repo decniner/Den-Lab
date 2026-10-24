@@ -3,7 +3,7 @@
 
   function addressOf(point, fallbackArea = '') {
     if (!point) return '';
-    const address = String(point.address || '').trim().replace(/[·•]/g, ',').replace(/\s*,\s*/g, ', ');
+    const address = String(point.mapsAddress || point.address || '').trim().replace(/[·•]/g, ',').replace(/\s*,\s*/g, ', ');
     if (address) return address;
     const name = String(point.name || '').trim();
     const area = String(point.area || fallbackArea || '').replace(/[·•]/g, ',').replace(/\s*,\s*/g, ', ').trim();
@@ -23,7 +23,7 @@
   }
 
   function buildWalkingRouteUrl(route) {
-    if (!route?.origin?.returnPoint || !route.origin?.name || !Array.isArray(route.stops) || !route.stops.length) return null;
+    if (!route?.origin?.name || !Array.isArray(route.stops) || !route.stops.length) return null;
     if (!Array.isArray(route.legs) || route.legs.length < route.stops.length) return null;
     const fullyWalking = route.legs.every(leg => leg.mode === 'walking');
     if (!fullyWalking && route.walkingRouteVerified !== true) return null;
@@ -31,10 +31,12 @@
     if (stops.some(stop => !stop.name || !(stop.address || stop.coordinates))) return null;
     const locality = route.cityId && route.cityId !== 'destination' ? route.cityId : 'Japan';
     const origin = addressOf(route.origin, locality);
-    const destination = origin;
-    const waypoints = stops.map(stop => stop.area
-      ? addressOf({ name: stop.name, area: stop.area }, locality)
-      : addressOf(stop, locality));
+    const stationToStation = route.origin.returnPoint === false;
+    const destination = stationToStation
+      ? addressOf(stops[stops.length - 1], locality)
+      : origin;
+    const routeStops = stationToStation ? stops.slice(0, -1) : stops;
+    const waypoints = routeStops.map(stop => addressOf(stop, locality));
     return mapsUrl({ origin, destination, waypoints });
   }
 
