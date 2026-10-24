@@ -13118,29 +13118,52 @@
     {
       "id": "kyoto-at-first-light-route",
       "placeId": "kyoto-at-first-light",
-      "cityId": "destination",
-      "title": "undefined: suggested visit order",
+      "cityId": "kyoto",
+      "title": "Kyoto at first light: three-temple itinerary",
       "researchStatus": "researched-sequence-schematic-map",
-      "introduction": "Enter Fushimi Inari at first light, then take rail or walk toward Tofukuji and finish at Sennyuji. Allow 5–7 hours; opening times affect the order. Map lines show stop order, not verified route geometry.",
-      "origin": {
-        "id": "kyoto-at-first-light-origin",
-        "name": "Fushimi Inari Taisha",
-        "address": "Fushimi Inari Taisha, Japan",
-        "displayOrder": 1,
-        "coordinates": {
-          "latitude": 34.9675192,
-          "longitude": 135.7797101,
-          "precision": "Approximate visitor-area point; connector is schematic only",
-          "sourceIds": [
-            "kyoto-at-first-light-osm"
-          ]
-        },
-        "returnPoint": false
-      },
+      "introduction": "Enter Fushimi Inari at first light, continue to Tofukuji, then finish at the quieter Sennyuji temple complex. Allow 5-7 hours for visits and transfers; temple opening hours affect the order. Map lines show stop order, not verified route geometry.",
+      "origin": null,
       "stops": [
         {
-          "id": "kyoto-at-first-light-stop-1",
+          "id": "kyoto-at-first-light-origin",
           "order": 1,
+          "name": "Fushimi Inari Taisha",
+          "address": "Fushimi Inari Taisha, Fushimi Ward, Kyoto, Japan",
+          "description": "Walk beneath the Senbon Torii while the morning is still quiet, then choose how far to climb toward the mountain paths.",
+          "story": "Before the city fully wakes, the tunnel of vermilion gates shifts from a famous photograph into a changing rhythm of shade, stone and birdsong. Enjoy the lower paths at your own pace; the full mountain circuit takes considerably longer.",
+          "coordinates": {
+            "latitude": 34.9675192,
+            "longitude": 135.7797101,
+            "precision": "Approximate visitor-area point; connector is schematic only",
+            "sourceIds": [
+              "kyoto-at-first-light-osm"
+            ]
+          },
+          "visitDuration": {
+            "status": "estimated",
+            "minMinutes": 60,
+            "maxMinutes": 120,
+            "basis": "Planning estimate for a dawn visit to the lower shrine paths; a longer mountain circuit needs more time."
+          },
+          "youtubeUrl": "https://www.youtube.com/results?search_query=Fushimi%20Inari%20Taisha%20Kyoto%20travel%20guide",
+          "photo": {
+            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/1280px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg",
+            "credit": "Basile Morin",
+            "license": "CC BY-SA 4.0",
+            "alt": "Lantern-lit torii path at Fushimi Inari Taisha in Kyoto",
+            "verification": {
+              "verified": true,
+              "source_page": "https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg",
+              "credit": "Basile Morin",
+              "license": "CC BY-SA 4.0",
+              "alt": "Lantern-lit torii path at Fushimi Inari Taisha in Kyoto"
+            }
+          }
+        },
+        {
+          "id": "kyoto-at-first-light-stop-1",
+          "order": 2,
           "name": "Tofukuji Temple",
           "address": "Tofukuji Temple, Japan",
           "description": "Cross the temple grounds and bridges for an architectural view into the maple ravine.",
@@ -13177,7 +13200,7 @@
         },
         {
           "id": "kyoto-at-first-light-stop-2",
-          "order": 2,
+          "order": 3,
           "name": "Sennyuji Temple",
           "address": "Sennyuji Temple, Japan",
           "description": "Explore a quieter temple complex with imperial history and spacious approaches.",
@@ -13219,14 +13242,18 @@
           "from": "Fushimi Inari Taisha",
           "to": "Tofukuji Temple",
           "mode": "walking",
-          "story": "Connector shows itinerary order only; confirm live transport, road and trail details before travel."
+          "story": "Connector shows itinerary order only; confirm live transport, road and trail details before travel.",
+          "fromId": "kyoto-at-first-light-origin",
+          "toId": "kyoto-at-first-light-stop-1"
         },
         {
           "id": "kyoto-at-first-light-leg-2",
           "from": "Tofukuji Temple",
           "to": "Sennyuji Temple",
           "mode": "walking",
-          "story": "Connector shows itinerary order only; confirm live transport, road and trail details before travel."
+          "story": "Connector shows itinerary order only; confirm live transport, road and trail details before travel.",
+          "fromId": "kyoto-at-first-light-stop-1",
+          "toId": "kyoto-at-first-light-stop-2"
         }
       ],
       "timeEstimate": {
@@ -13237,10 +13264,10 @@
         {
           "id": "kyoto-at-first-light-osm",
           "label": "OpenStreetMap: approximate visitor-area points",
-          "url": "https://www.openstreetmap.org/search?query=undefined",
+          "url": "https://www.openstreetmap.org/search?query=Fushimi%20Inari%20Taisha%2C%20Kyoto%2C%20Japan",
           "checkedOn": "2026-10-24",
           "supports": [
-            "approximate stop points for schematic order map; not turn-by-turn routing"
+            "approximate visitor-area points and schematic itinerary order; not turn-by-turn routing"
           ]
         },
         {
@@ -33895,9 +33922,9 @@
             "id": "kyoto-at-first-light-origin",
             "routeStopId": "kyoto-at-first-light-origin",
             "name": "Fushimi Inari Taisha",
-            "role": "origin",
+            "role": "stop",
             "displayOrder": 1,
-            "order": null
+            "order": 1
           }
         },
         {
@@ -33934,7 +33961,7 @@
           "properties": {
             "id": "kyoto-at-first-light-stop-1",
             "routeStopId": "kyoto-at-first-light-stop-1",
-            "order": 1,
+            "order": 2,
             "displayOrder": 2,
             "name": "Tofukuji Temple",
             "role": "stop"
@@ -33974,7 +34001,7 @@
           "properties": {
             "id": "kyoto-at-first-light-stop-2",
             "routeStopId": "kyoto-at-first-light-stop-2",
-            "order": 2,
+            "order": 3,
             "displayOrder": 3,
             "name": "Sennyuji Temple",
             "role": "stop"
