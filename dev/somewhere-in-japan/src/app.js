@@ -1,4 +1,4 @@
-import { buildItinerary, validateData } from './planner.js';
+import { buildItinerary, getRecordStatus, validateData } from './planner.js';
 
 const form = document.querySelector('#trip-form');
 const routeSelect = document.querySelector('#route');
@@ -54,14 +54,6 @@ function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
 }
 
-function statusLabel(record) {
-  if (record.status === 'verified' && record.checkedAt) {
-    const ageDays = (Date.now() - new Date(`${record.checkedAt}T00:00:00Z`).getTime()) / 86400000;
-    return ageDays > 90 ? { label: 'Source may be stale', kind: 'stale' } : { label: `Source checked ${record.checkedAt}`, kind: 'verified' };
-  }
-  return record.status === 'sample' ? { label: 'Sample planning data', kind: 'sample' } : { label: 'Unverified', kind: 'unknown' };
-}
-
 function renderPlan(input, plan) {
   document.querySelector('#form-errors').replaceChildren();
   const warningBox = document.querySelector('#plan-warnings');
@@ -70,9 +62,9 @@ function renderPlan(input, plan) {
   const route = currentRoute();
   document.querySelector('#route-summary').innerHTML = `<div><span class="eyebrow">PROPOSED ROUTE</span><strong>${escapeHtml(route.name)}</strong></div><div><span class="eyebrow">OVERNIGHT BASES</span><strong>${plan.days.filter((day, index) => day.base && (index === 0 || plan.days[index - 1].base !== day.base)).map((day) => escapeHtml(day.base)).join(' → ') || 'No bases available'}</strong></div><small>${escapeHtml(route.notes)} Route sequence: ${escapeHtml(route.status)} sample data.</small>`;
   document.querySelector('#itinerary-days').innerHTML = plan.days.map((day, index) => {
-    const locality = localities.find((item) => item.id === day.localityId);
+      const locality = localities.find((item) => item.id === day.localityId);
     const typeText = day.type === 'transfer' ? 'TRANSFER DAY' : day.type === 'partial' ? 'LIMITED DAY' : day.stops.length ? 'SIGHTSEEING' : 'OPEN BUFFER';
-    return `<article class="day-card ${day.type}"><div class="day-index"><span>DAY</span><b>${String(index + 1).padStart(2, '0')}</b></div><div class="day-main"><div class="day-heading"><div><span class="day-type ${day.type}">${typeText}</span><h3>${escapeHtml(locality?.name || 'Unassigned day')}${day.base && day.base !== locality?.name ? ` <small>· ${escapeHtml(day.base)}</small>` : ''}</h3></div><time datetime="${escapeHtml(day.date)}">${formatDate(day.date)}</time></div>${day.transferNotes.map((note) => `<p class="transfer-note">${escapeHtml(note)}</p>`).join('')}${day.stops.length ? `<ul class="stop-list">${day.stops.map((stop) => { const status = statusLabel(stop); return `<li><div class="stop-copy"><strong>${escapeHtml(stop.name)}</strong>${stop.event ? `<span class="event-tag">DATE-BOUND EVENT</span>` : ''}<span class="source-status ${status.kind}">${escapeHtml(status.label)}${stop.checkedAt ? ` · ${escapeHtml(stop.checkedAt)}` : ''}</span></div><a href="${escapeHtml(stop.sourceUrl || '#')}" target="_blank" rel="noreferrer">${stop.status === 'verified' ? 'Official date source' : 'Reference source'} <span aria-hidden="true">↗</span></a></li>`; }).join('')}</ul>` : !day.transferNotes.length ? '<p class="open-day">No stops added. Keep this day open or choose a different route.</p>' : ''}</div></article>`;
+    return `<article class="day-card ${day.type}"><div class="day-index"><span>DAY</span><b>${String(index + 1).padStart(2, '0')}</b></div><div class="day-main"><div class="day-heading"><div><span class="day-type ${day.type}">${typeText}</span><h3>${escapeHtml(locality?.name || 'Unassigned day')}${day.base && day.base !== locality?.name ? ` <small>· ${escapeHtml(day.base)}</small>` : ''}</h3></div><time datetime="${escapeHtml(day.date)}">${formatDate(day.date)}</time></div>${day.transferNotes.map((note) => `<p class="transfer-note">${escapeHtml(note)}</p>`).join('')}${day.stops.length ? `<ul class="stop-list">${day.stops.map((stop) => { const status = getRecordStatus(stop); return `<li><div class="stop-copy"><strong>${escapeHtml(stop.name)}</strong>${stop.event ? `<span class="event-tag">DATE-BOUND EVENT</span>` : ''}<span class="source-status ${status.kind}">${escapeHtml(status.label)}</span></div><a href="${escapeHtml(stop.sourceUrl || '#')}" target="_blank" rel="noreferrer">${stop.status === 'verified' ? 'Official date source' : 'Reference source'} <span aria-hidden="true">↗</span></a></li>`; }).join('')}</ul>` : !day.transferNotes.length ? '<p class="open-day">No stops added. Keep this day open or choose a different route.</p>' : ''}</div></article>`;
   }).join('');
   resultSection.hidden = false;
   resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });

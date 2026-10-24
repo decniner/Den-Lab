@@ -191,3 +191,11 @@ test('the complete sample catalog satisfies its own provenance and reference rul
   }));
   assert.deepEqual(plannerModule.validateData({ places, localities, routes, events }), { valid: true, errors: [] });
 });
+
+test('reports sample, estimated, verified, stale, and unverified provenance distinctly', () => {
+  assert.deepEqual(plannerModule.getRecordStatus({ status: 'sample' }, '2026-10-24'), { label: 'Sample planning data', kind: 'sample' });
+  assert.deepEqual(plannerModule.getRecordStatus({ status: 'estimated' }, '2026-10-24'), { label: 'Planning estimate', kind: 'estimated' });
+  assert.deepEqual(plannerModule.getRecordStatus({ status: 'verified', checkedAt: '2026-10-24' }, '2026-10-24'), { label: 'Source checked 2026-10-24', kind: 'verified' });
+  assert.deepEqual(plannerModule.getRecordStatus({ status: 'verified', checkedAt: '2026-01-01' }, '2026-10-24'), { label: 'Source is stale', kind: 'stale' });
+  assert.deepEqual(plannerModule.getRecordStatus({ status: 'unverified' }, '2026-10-24'), { label: 'Unverified', kind: 'unknown' });
+});

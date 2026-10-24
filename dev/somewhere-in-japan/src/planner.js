@@ -19,6 +19,20 @@ export function validateTrip(input = {}) {
   return { valid: errors.length === 0, errors };
 }
 
+export function getRecordStatus(record = {}, asOf = new Date()) {
+  if (record.status === 'sample') return { label: 'Sample planning data', kind: 'sample' };
+  if (record.status === 'estimated') return { label: 'Planning estimate', kind: 'estimated' };
+  if (record.status === 'stale') return { label: 'Source is stale', kind: 'stale' };
+  if (record.status === 'verified' && parseDate(record.checkedAt)) {
+    const today = asOf instanceof Date ? asOf : parseDate(asOf);
+    if (!today) return { label: 'Unverified', kind: 'unknown' };
+    const ageDays = (Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()) - parseDate(record.checkedAt).getTime()) / 86400000;
+    if (ageDays < 0 || ageDays > 90) return { label: 'Source is stale', kind: 'stale' };
+    return { label: `Source checked ${record.checkedAt}`, kind: 'verified' };
+  }
+  return { label: 'Unverified', kind: 'unknown' };
+}
+
 export function validateData(data = {}) {
   const errors = [];
   const places = Array.isArray(data.places) ? data.places : [];
