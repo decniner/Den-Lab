@@ -1,0 +1,16 @@
+/* Shared route gallery behavior for the non-Tokyo city brochures. */
+.tb-route-gallery--dynamic{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:minmax(205px,22vw);grid-template-rows:none}
+.tb-route-gallery--dynamic figure:first-child{grid-row:auto}
+.tb-route-gallery--dynamic figcaption{font-size:.92rem}
+.tb-route-gallery--dynamic figcaption small{display:block;margin-top:.2rem;font:600 .62rem/1.3 var(--tb-sans);letter-spacing:.04em}
+.tb-route-gallery--dynamic img,.tb-hero-frame img{cursor:zoom-in}
+.tb-hero-frame{border-radius:0}
+@media(max-width:900px){.tb-route-gallery--dynamic{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:minmax(190px,27vw)}}
+@media(max-width:620px){
+ .tb-route-gallery--dynamic{display:grid;grid-auto-flow:column;grid-auto-columns:82%;grid-template-columns:none;grid-template-rows:230px;grid-auto-rows:230px;gap:12px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scroll-padding-inline:2px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:rgba(23,76,64,.45) transparent;margin-inline:0}
+ .tb-route-gallery--dynamic figure{grid-row:auto;scroll-snap-align:start}
+ .tb-route-gallery--dynamic figcaption{font-size:.9rem}
+ .tb-gallery-hint{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin:.35rem 0 .85rem;color:var(--tb-muted);font-size:.68rem;font-weight:750}
+ .tb-gallery-hint span{color:var(--tb-copper);font-size:1.2rem}
+ .tb-hero-frame{min-height:290px}
+}
