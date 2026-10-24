@@ -12,7 +12,8 @@ test('homepage exposes an accessible multi-day itinerary builder', () => {
   assert.match(html, /itinerary-core\.js/);
   assert.match(html, /itinerary-planner\.js/);
   assert.match(html, /href=["']#itinerary["']/);
-  assert.match(html, /best-fit regions/i);
+  assert.match(html, /one best-fit region/i);
+  assert.match(html, /reserves a transfer day/i);
   assert.doesNotMatch(html, /Leave all unchecked for all Japan/i);
 });
 
@@ -24,4 +25,7 @@ test('itinerary UI includes transparent route and source cautions', () => {
   assert.match(html, /current access|official sources/i);
   assert.match(source, /localStorage/);
   assert.match(source, /maps\/dir/);
+  assert.match(source, /Verified event dates/);
+  assert.match(source, /transitionNote/);
+  assert.match(source, /earlierStops/);
 });
