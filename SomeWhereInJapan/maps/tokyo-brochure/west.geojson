@@ -20,11 +20,12 @@
       "type": "Feature",
       "id": "route-west",
       "properties": {
-        "routeLegId": "west-leg-1",
+        "routeLegId": "west-tokyo-route-sequence",
         "mode": "transit",
         "routeGeometryStatus": "schematic",
         "sourceIds": [
           "osm-west-meiji",
+          "osm-west-harajuku",
           "osm-west-shibuya"
         ]
       },
@@ -34,6 +35,10 @@
           [
             139.6996266,
             35.6748417
+          ],
+          [
+            139.70243,
+            35.67022
           ],
           [
             139.7004982,
@@ -61,12 +66,29 @@
     },
     {
       "type": "Feature",
+      "id": "tokyo-west-harajuku",
+      "properties": {
+        "name": "Harajuku Station & streets",
+        "role": "stop",
+        "routeStopId": "tokyo-west-harajuku",
+        "order": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.70243,
+          35.67022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "tokyo-west-shibuya",
       "properties": {
         "name": "Shibuya Scramble Crossing",
         "role": "stop",
         "routeStopId": "tokyo-west-shibuya",
-        "order": 2
+        "order": 3
       },
       "geometry": {
         "type": "Point",
