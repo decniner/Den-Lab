@@ -8,10 +8,10 @@
     "attribution": "© OpenStreetMap contributors",
     "extractedOn": "2026-10-24",
     "bounds": [
-      139.692,
-      35.655,
-      139.708,
-      35.679
+      139.69762659999998,
+      35.6574951,
+      139.71189,
+      35.6871
     ],
     "geometryStatus": "schematic-stop-order"
   },
@@ -24,14 +24,19 @@
         "mode": "transit",
         "routeGeometryStatus": "schematic",
         "sourceIds": [
-          "osm-west-meiji",
+          "osm-west-shinjuku-gyoen",
+          "osm-tokyo-west-meiji",
           "osm-west-harajuku",
-          "osm-west-shibuya"
+          "osm-tokyo-west-shibuya"
         ]
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [
+            139.70989,
+            35.6851
+          ],
           [
             139.6996266,
             35.6748417
@@ -49,12 +54,29 @@
     },
     {
       "type": "Feature",
+      "id": "tokyo-west-shinjuku-gyoen",
+      "properties": {
+        "name": "Shinjuku Gyoen",
+        "role": "stop",
+        "routeStopId": "tokyo-west-shinjuku-gyoen",
+        "order": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.70989,
+          35.6851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "tokyo-west-meiji",
       "properties": {
         "name": "Meiji Jingu & Harajuku",
         "role": "stop",
         "routeStopId": "tokyo-west-meiji",
-        "order": 1
+        "order": 2
       },
       "geometry": {
         "type": "Point",
@@ -71,7 +93,7 @@
         "name": "Harajuku Station & streets",
         "role": "stop",
         "routeStopId": "tokyo-west-harajuku",
-        "order": 2
+        "order": 3
       },
       "geometry": {
         "type": "Point",
@@ -88,7 +110,7 @@
         "name": "Shibuya Scramble Crossing",
         "role": "stop",
         "routeStopId": "tokyo-west-shibuya",
-        "order": 3
+        "order": 4
       },
       "geometry": {
         "type": "Point",
