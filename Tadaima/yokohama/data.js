@@ -168,9 +168,9 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/ensen/371/2371220.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/1/14116/030Z21492996/155444001/x1030Z21492996.html",
+        "verified": "detail",
+        "infoDate": "2026-10-18"
       }
     },
     {
@@ -943,9 +943,9 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/tochi/area_kanagawa/14116.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/14116/1418240006214/141824/x41418240006214.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {

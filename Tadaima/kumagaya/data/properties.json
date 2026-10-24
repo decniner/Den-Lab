@@ -80,13 +80,14 @@
       ],
       "cautions": [
         "13-minute walk is toward the brief's outer edge",
-        "Seen on a portal index page — verify details on the listing link"
+        "Part of the plot is private road held in co-ownership shares (私道 22.78m² x 273/2278 and 149.50m² x 1789/14950, per the detail page) — confirm the shares and any maintenance obligations",
+        "The plot falls in a zone designated under Art. 22 of the Act on Countermeasures against Flood Damage of Specified Rivers （特定河川浸水被害対策法）, per the detail page — check the flood hazard map for this plot before purchase"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6015/area_saitama/11202/063.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11202/030/W/21351375.html",
+        "verified": "detail",
+        "infoDate": "2026-10-20"
       }
     },
     {
@@ -213,7 +214,8 @@
       ],
       "cautions": [
         "Portal feeds disagree on the walk (9 vs 11 min) — scored here on 9; verify on the ground",
-        "Seen on a portal index page — verify details on the listing link"
+        "Seen on a portal index page — verify details on the listing link",
+        "HOME'S currently lists the same Cradle garden unit (identical land/building areas, Ishihara walk 9) at ¥2,580万 — ¥100万 above the price recorded here, and older crawls show ¥2,880万 then ¥2,780万; confirm the current asking price"
       ],
       "source": {
         "name": "goo住宅・不動産",
@@ -261,7 +263,7 @@
       "district": "Tsukimicho 1",
       "districtJa": "月見町1丁目",
       "title": "New 4LDK — long-life quality housing, south garden, 3-car parking",
-      "priceMan": 3490,
+      "priceMan": 3190,
       "priceFrom": false,
       "landM2": 151.22,
       "buildingM2": 103.71,
@@ -280,13 +282,13 @@
       "cautions": [
         "Portal feeds disagree on the price (¥3,290万 vs ¥3,490万 for the same house) — scored here on the higher figure; confirm before viewing",
         "South-bank Arakawa side of the city — check the Kumagaya flood hazard map for this plot before purchase",
-        "Seen on a portal index page — verify details on the listing link"
+        "The plot is in a land-development works regulation area （宅地造成工事規制区域） and a Landscape Act （景観法） notification area, per the detail page — extra procedures may apply to building work"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_saitama/11202.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11202/030/W/20565834.html",
+        "verified": "detail",
+        "infoDate": "2026-10-20"
       }
     },
     {
@@ -311,13 +313,11 @@
         "Hebel House (Asahi Kasei) light-gauge steel construction — a step above standard timber builds",
         "Large walk-in closet plus a 3-tatami storage room; 7 min to a JR station"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_saitama/11202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21679966/179201001/x1030Z21679966.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -345,12 +345,12 @@
       ],
       "cautions": [
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "A second agency feed for this house flags flood-hazard depth of 0.0-0.5m — check the Kumagaya flood hazard map for this plot before purchase"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3003/area_saitama/11202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21408400/189549013/x1030Z21408400.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -376,14 +376,12 @@
         "Five rooms and a 6-minute walk to Kagohara (JR) for ¥880万",
         "City gas; vacant, immediate handover"
       ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_saitama/11202.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/11202/1497150003394/149715/x41497150003394.html",
+        "verified": "detail",
+        "infoDate": "2026-10-18"
       }
     },
     {
@@ -411,14 +409,16 @@
       "cautions": [
         "Portal feeds disagree on the price (¥880万 vs ¥1,080万 for the same house via different agencies) — scored here on the cheaper feed; confirm before viewing",
         "Oaso is a small local station south of the Arakawa — check the Kumagaya flood hazard map for this plot before purchase",
-        "Seen on a portal index page — verify details on the listing link"
+        "Urbanisation-control area （市街化調整区域） with no zoning designation (70% / 400%), per the detail page — new building is restricted in principle; confirm the existing house's rebuild rights before relying on them",
+        "LP gas (no city gas); Landscape Act （景観法） notification area, per the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/area_saitama/11202/134.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21130278/153974028/x1030Z21130278.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h13",
@@ -444,13 +444,13 @@
       ],
       "cautions": [
         "Portal feeds disagree on the price (¥1,300万 on the live index vs ¥1,330–1,480万 in older crawls) — scored here on the live index figure; confirm before viewing",
-        "Seen on a portal index page — verify details on the listing link"
+        "Frontage is a south 4m private road with designated-position status （位置指定道路）, per the detail page — confirm maintenance responsibility and any consent needed to rebuild"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_saitama/11202/058.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/11202/1497150003662/149715/x41497150003662.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -468,7 +468,7 @@
       "stationJa": "ひろせ野鳥の森",
       "line": "Chichibu Railway",
       "lineJa": "秩父鉄道",
-      "walkMin": 5,
+      "walkMin": 7,
       "built": "Sep 1997",
       "ageYears": 29,
       "highlights": [
@@ -476,13 +476,12 @@
         "Renovation already covers bath, toilet and washstand renewal plus termite treatment"
       ],
       "cautions": [
-        "Portal feeds disagree on the walk (5 vs 7 min) — scored here on 5; verify on the ground",
-        "Seen on a portal index page — verify details on the listing link"
+        "Industrial zoning （工業地域， 60% / 200%), per the detail page — factories are permitted neighbours; check the surroundings before purchase"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_saitama/11202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z77044432/153974028/x1030Z77044432.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -525,7 +524,7 @@
       "district": "Ishihara",
       "districtJa": "石原",
       "title": "Used 4LDK (1996), renovated — the Ishihara family starter",
-      "priceMan": 1599,
+      "priceMan": 1299,
       "priceFrom": false,
       "landM2": 100.12,
       "buildingM2": 80.31,
@@ -542,16 +541,17 @@
         "Storage in every room; schools and supermarkets in walking range"
       ],
       "cautions": [
-        "Portal feeds disagree on the price and walk (¥1,599万 at 9–12 min vs ¥1,699万 at 10 min for the same house) — scored here on ¥1,599万 / 10 min; confirm before viewing",
         "South-bank Arakawa side of the city — check the Kumagaya flood hazard map for this plot before purchase",
-        "Seen on a portal index page — verify details on the listing link"
+        "LP gas and a septic tank （浄化槽） — no city gas and no mains sewer, per the detail page",
+        "The plot is a registered buried-cultural-property site （埋蔵文化財包蔵地）, per the detail page — notification and a possible survey are required before construction"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_saitama/11202/004.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z77204229/153974028/x1030Z77204229.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h17",
@@ -559,7 +559,7 @@
       "district": "Ishihara",
       "districtJa": "石原",
       "title": "Used 5DK (1978) — pre-1981 seismic standard, cross-renewed 2026",
-      "priceMan": 1180,
+      "priceMan": 1100,
       "priceFrom": false,
       "landM2": 128.64,
       "buildingM2": 101.84,
@@ -578,13 +578,13 @@
       "cautions": [
         "Built Jul 1978 — pre-1981 old seismic standard (旧耐震); budget for a seismic assessment and possible reinforcement",
         "South-bank Arakawa side of the city — check the Kumagaya flood hazard map for this plot before purchase",
-        "Seen on a portal index page — verify details on the listing link"
+        "Septic tank （浄化槽） drainage — no mains sewer, per the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_saitama/11202/004.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z20647242/189876001/x1030Z20647242.html",
+        "verified": "detail",
+        "infoDate": "2026-10-21"
       },
       "majorCautions": 1
     },

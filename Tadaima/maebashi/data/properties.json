@@ -35,11 +35,11 @@
       "district": "Shimoishikura-cho",
       "districtJa": "下石倉町",
       "title": "New 3SLDK on a very large 246m² plot — 14 min from Shin-Maebashi",
-      "priceMan": 3580,
+      "priceMan": 3380,
       "priceFrom": false,
       "landM2": 246.55,
       "buildingM2": 90.26,
-      "layout": "3SLDK",
+      "layout": "3LDK",
       "station": "Shin-Maebashi",
       "stationJa": "新前橋",
       "line": "JR Joetsu Line",
@@ -53,14 +53,13 @@
         "Parking for 2 or more cars; city gas"
       ],
       "cautions": [
-        "Maebashi Station itself is 24 min on foot — Shin-Maebashi is the usable station",
-        "Seen on a portal index page — verify details on the listing link"
+        "Maebashi Station itself is 24 min on foot — Shin-Maebashi is the usable station"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6012/ensen/108/2108160.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/W/21893962.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -121,13 +120,13 @@
         "Walk-in closet; city gas; parking for 2 or more cars"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists a Landscape Act restriction (その他制限事項：景観法による規制有) — minor, display-level"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_gunma/10201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/W/21124656.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -136,7 +135,7 @@
       "district": "Higokoshi-cho",
       "districtJa": "樋越町",
       "title": "New 4LDK — performance-evaluated, 6 min from Higokoshi Station",
-      "priceMan": 2390,
+      "priceMan": 2190,
       "priceFrom": false,
       "landM2": 264.5,
       "buildingM2": 111.37,
@@ -154,14 +153,13 @@
         "Roof balcony; parking for 2 or more cars"
       ],
       "cautions": [
-        "One of 6 units in the development, priced ¥1,890万–¥2,390万 — this is the top-priced unit shown",
-        "Seen on a portal index page — verify details on the listing link"
+        "One of 6 units in the development, priced ¥1,890万–¥2,190万 — this is the top-priced unit shown"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_gunma/10201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/Z/21301753.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -256,13 +254,12 @@
         "Immediate handover (即入居可); parking for 2"
       ],
       "cautions": [
-        "A 174m² house of this age will carry running and repair costs to match — budget for them",
-        "Seen on a portal index page — verify details on the listing link"
+        "A 174m² house of this age will carry running and repair costs to match — budget for them"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/242/2242020.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z78807678/185349002/x1030Z78807678.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -358,12 +355,13 @@
       ],
       "cautions": [
         "1990 structure — a house of this size needs a careful building inspection before purchase",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page zoning is industrial (工業地域, 60%/200%) — a material fact for a house that the record lacked",
+        "Detail page remarks also note a Landscape Act (景観法) restriction — minor, display-level"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z21207528/115332002/x1030Z21207528.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -392,12 +390,12 @@
       ],
       "cautions": [
         "1990 structure — confirm the scope and date of the renovation with the agent",
-        "Seen on a portal index page — verify details on the listing link"
+        "LP gas (no city gas) per the detail page equipment list — display-level only"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z20318121/185349002/x1030Z20318121.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -426,14 +424,16 @@
       ],
       "cautions": [
         "Portal feeds disagree on price: LIFULL HOME'S and one goo feed list ¥1,499万, another goo feed lists what appears to be the same house at ¥1,280万 with an 11-minute walk — verify the current price",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page's legal-restrictions list includes the Cultural Properties Protection Act (文化財保護法 — buried-cultural-property procedures may apply; cf. the Oyama precedent where this class counted as major), plus Landscape Act (景観法) and a shadow restriction (日影制限有) — the latter two display-level",
+        "LP gas (no city gas) per the detail page — display-level only"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z21819005/189549001/x1030Z21819005.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h13",
@@ -459,12 +459,12 @@
         "Fenced garden; parking for 3; primary school ~7 min walk"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page remarks note a Landscape Act (景観法) restriction — minor, display-level"
       ],
       "source": {
         "name": "goo住宅・不動産 (OCN feed)",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/ensen/242/2242080.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z20102838/115332002/x1030Z20102838.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -495,12 +495,12 @@
         "Built Mar 1979 — pre-1981 seismic standard (旧耐震)",
         "Portal feeds disagree sharply on price: this feed lists ¥1,780万, another lists the same house at ¥2,580万 — verify before relying on either",
         "At this age, judge it mainly as land + location unless an inspection says otherwise",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page remarks note a Landscape Act (景観法) restriction — minor, display-level"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/242/2242020.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z21410906/115332002/x1030Z21410906.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
@@ -1041,14 +1041,15 @@
       "cautions": [
         "Water connection works, the water joining fee and supply-device fees are at the buyer's cost, per the listing",
         "A planned city road (都市計画道路 3・4・20 安中線) is noted for the area — confirm whether and how much of the plot it affects",
-        "Index-verified only — the detail page was not checked (portal rate-limiting); verify on the listing link before relying on any figure"
+        "Detail page's legal restrictions add: building within the planned-road area requires a City Planning Act Article 53 permit (法令等制限：都市計画法第53条許可) — tied to the planned road already cautioned on the record"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/ensen/108/2108170.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z77336186/146659001/x1030Z77336186.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     }
   ],
   "scoring": {
