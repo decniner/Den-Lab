@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "cityId": "tokyo",
+  "routes": [
+    {
+      "id": "east-tokyo",
+      "cityId": "tokyo",
+      "title": "East Tokyo · temple lanes to market streets",
+      "introduction": "Begin among Asakusa’s temple approaches and side streets, then continue north to Ueno’s park, museums and Ameyoko market lanes. Keep the two neighborhoods as one east-side day and choose your museum or park stop based on the time you have.",
+      "researchStatus": "partially-verified",
+      "mapDataPath": "maps/tokyo-brochure/east.geojson",
+      "sources": [
+        {
+          "id": "go-tokyo-asakusa",
+          "label": "GO TOKYO · A guide to Asakusa",
+          "url": "https://www.gotokyo.org/en/destinations/eastern-tokyo/asakusa/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Asakusa district context and key places"
+          ]
+        },
+        {
+          "id": "go-tokyo-ueno",
+          "label": "GO TOKYO · Ueno: from Ameyoko to Ueno Park",
+          "url": "https://www.gotokyo.org/en/destinations/northern-tokyo/ueno/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Ueno Park and Ameyoko district context"
+          ]
+        },
+        {
+          "id": "osm-east-asakusa",
+          "label": "OpenStreetMap · Senso-ji",
+          "url": "https://www.openstreetmap.org/way/173154847",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Mapped stop position"
+          ]
+        },
+        {
+          "id": "osm-east-ueno",
+          "label": "OpenStreetMap · Ameyoko market",
+          "url": "https://www.openstreetmap.org/node/4496960001",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Mapped stop position"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "tokyo-east-asakusa",
+          "order": 1,
+          "name": "Asakusa & Senso-ji",
+          "area": "Asakusa · Taito",
+          "address": "Senso-ji, Asakusa, Taito City, Tokyo, Japan",
+          "story": "Walk the Kaminarimon–Nakamise approach, then leave room for the smaller lanes around the temple precinct.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.7134032,
+            "longitude": 139.7955265,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-tokyo-east-asakusa"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asakusa%20-%20Senso-ji%2005%20(15142418313).jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Asakusa_-_Senso-ji_05_(15142418313).jpg",
+              "credit": "Joe Mabel",
+              "license": "CC BY-SA 3.0",
+              "alt": "Senso-ji temple gate and approach in Asakusa"
+            }
+          }
+        },
+        {
+          "id": "tokyo-east-ueno",
+          "order": 2,
+          "name": "Ueno Park & Ameyoko",
+          "area": "Ueno · Taito",
+          "address": "Ueno Park and Ameyoko, Taito City, Tokyo, Japan",
+          "story": "Choose a museum or a slower park loop, then finish among Ameyoko’s market lanes. Museum schedules differ; check the venue you choose.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.7100241,
+            "longitude": 139.7745414,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-tokyo-east-ueno"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ueno%20park.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Ueno_park.jpg",
+              "credit": "Bernard Gagnon",
+              "license": "CC BY-SA 3.0",
+              "alt": "A walkway beneath cherry trees in Ueno Park"
+            }
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "east-tokyo-leg-1",
+          "fromId": "tokyo-east-asakusa",
+          "toId": "tokyo-east-ueno",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "sourceIds": [
+              "go-tokyo-asakusa",
+              "go-tokyo-ueno"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "central-tokyo",
+      "cityId": "tokyo",
+      "title": "Central Tokyo · red brick and palace gardens",
+      "introduction": "Set the red-brick Marunouchi station façade against the open grounds of the Imperial Palace East Gardens. This compact central route is built around architecture, city history and a quieter garden pause.",
+      "researchStatus": "partially-verified",
+      "mapDataPath": "maps/tokyo-brochure/central.geojson",
+      "sources": [
+        {
+          "id": "go-tokyo-best-of-tokyo",
+          "label": "GO TOKYO · How to See the Best of Tokyo in 3 Days",
+          "url": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Tokyo Station and central Tokyo context"
+          ]
+        },
+        {
+          "id": "kunaicho-east-gardens",
+          "label": "Imperial Household Agency · East Gardens of the Imperial Palace",
+          "url": "https://www.kunaicho.go.jp/en/visit/event/higashigyoen/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Current seasonal hours, admission, access, and closure notices"
+          ]
+        },
+        {
+          "id": "osm-central-station",
+          "label": "OpenStreetMap · Tokyo Station Marunouchi building",
+          "url": "https://www.openstreetmap.org/relation/4856156",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Mapped stop position"
+          ]
+        },
+        {
+          "id": "osm-central-gardens",
+          "label": "OpenStreetMap · Imperial Palace East Gardens",
+          "url": "https://www.openstreetmap.org/relation/5415394",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Mapped stop position"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "tokyo-central-station",
+          "order": 1,
+          "name": "Tokyo Station & Marunouchi",
+          "area": "Marunouchi · Chiyoda",
+          "address": "Tokyo Station Marunouchi entrance, Chiyoda City, Tokyo, Japan",
+          "story": "Start at the station’s red-brick façade, then take in the broad avenues and layered architecture of Marunouchi.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.6811505,
+            "longitude": 139.7659765,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-tokyo-central-station"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo-STA%20Marunouchi-Entrance%202023.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Tokyo-STA_Marunouchi-Entrance_2023.jpg",
+              "credit": "MaedaAkihiko",
+              "license": "CC BY-SA 4.0",
+              "alt": "Tokyo Station’s Marunouchi entrance and red-brick façade"
+            }
+          }
+        },
+        {
+          "id": "tokyo-central-gardens",
+          "order": 2,
+          "name": "Imperial Palace East Gardens",
+          "area": "Chiyoda · central Tokyo",
+          "address": "Imperial Palace East Gardens, Chiyoda City, Tokyo, Japan",
+          "story": "A calm counterpoint to the station district. Seasonal hours and closure days change; check the Imperial Household Agency notice before visiting.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.6867006,
+            "longitude": 139.7573959,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-tokyo-central-gardens"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20Imperial%20Palace%20East%20Gardens%20Park.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Tokyo_Imperial_Palace_East_Gardens_Park.jpg",
+              "credit": "Alexander Klink",
+              "license": "CC BY 4.0",
+              "alt": "A garden pond in Tokyo’s Imperial Palace East Gardens"
+            }
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "central-tokyo-leg-1",
+          "fromId": "tokyo-central-station",
+          "toId": "tokyo-central-gardens",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "sourceIds": [
+              "go-tokyo-best-of-tokyo",
+              "kunaicho-east-gardens"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "west-tokyo",
+      "cityId": "tokyo",
+      "title": "West Tokyo · forest path to city lights",
+      "introduction": "Move from the wooded approach to Meiji Jingu through Harajuku’s lively streets and finish at Shibuya Crossing. The route pairs a quiet shrine visit with the energy of two neighboring west-side districts.",
+      "researchStatus": "partially-verified",
+      "mapDataPath": "maps/tokyo-brochure/west.geojson",
+      "sources": [
+        {
+          "id": "go-tokyo-meiji",
+          "label": "GO TOKYO · Meiji Shrine (Meiji Jingu)",
+          "url": "https://www.gotokyo.org/en/spot/76/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Meiji Jingu access and nearby districts"
+          ]
+        },
+        {
+          "id": "go-tokyo-harajuku",
+          "label": "GO TOKYO · All about visiting Harajuku",
+          "url": "https://www.gotokyo.org/en/destinations/western-tokyo/harajuku/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Harajuku district and station access"
+          ]
+        },
+        {
+          "id": "go-tokyo-shibuya",
+          "label": "GO TOKYO · Shibuya",
+          "url": "https://www.gotokyo.org/en/destinations/western-tokyo/shibuya/index.html",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Shibuya district context"
+          ]
+        },
+        {
+          "id": "osm-west-meiji",
+          "label": "OpenStreetMap · Meiji Jingu",
+          "url": "https://www.openstreetmap.org/way/469908925",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Mapped stop position"
+          ]
+        },
+        {
+          "id": "osm-west-shibuya",
+          "label": "OpenStreetMap · Shibuya Scramble Crossing",
+          "url": "https://www.openstreetmap.org/way/1335178864",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Mapped stop position"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "tokyo-west-meiji",
+          "order": 1,
+          "name": "Meiji Jingu & Harajuku",
+          "area": "Harajuku · Shibuya",
+          "address": "Meiji Jingu, Yoyogi-Kamizonocho, Shibuya City, Tokyo, Japan",
+          "story": "Take the forested shrine approach first, then explore Harajuku’s streets at your own pace.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.6748417,
+            "longitude": 139.6996266,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-tokyo-west-meiji"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Meiji%20Jingu%202023-3.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Meiji_Jingu_2023-3.jpg",
+              "credit": "Akonnchiroll",
+              "license": "CC BY-SA 4.0",
+              "alt": "View of Meiji Jingu"
+            }
+          }
+        },
+        {
+          "id": "tokyo-west-shibuya",
+          "order": 2,
+          "name": "Shibuya Scramble Crossing",
+          "area": "Shibuya · west Tokyo",
+          "address": "Shibuya Scramble Crossing, Shibuya City, Tokyo, Japan",
+          "story": "Finish at the famous crossing, then choose a viewpoint or side street instead of trying to cover every shopping complex.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.6594951,
+            "longitude": 139.7004982,
+            "precision": "OpenStreetMap feature center; confirm entrance before travel",
+            "sourceIds": [
+              "osm-tokyo-west-shibuya"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shibuya%20Crossing%2C%20Aerial.jpg?width=1100",
+            "verification": {
+              "source_page": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing,_Aerial.jpg",
+              "credit": "David Kernan",
+              "license": "CC BY 4.0",
+              "alt": "Aerial view of Shibuya Crossing"
+            }
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "west-tokyo-leg-1",
+          "fromId": "tokyo-west-meiji",
+          "toId": "tokyo-west-shibuya",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "sourceIds": [
+              "go-tokyo-meiji",
+              "go-tokyo-harajuku",
+              "go-tokyo-shibuya"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
