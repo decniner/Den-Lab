@@ -731,7 +731,7 @@
           "name": "Sendai Asaichi (Morning Market)",
           "area": "Chuo, Aoba Ward",
           "address": "Sendai Asaichi, Chuo, Aoba Ward, Sendai, Japan",
-          "story": "This compact market is known as the city kitchen: look for Sanriku seafood, seasonal Miyagi produce, breakfast bowls, and freshly fried croquettes. The official visitor guide places it five minutes from Sendai Station?s west exit. Go in the morning, check the day before travelling, and expect individual stalls to set their own hours; the guide lists Sundays and national holidays as closure days.",
+          "story": "This compact market is known as the city kitchen: look for Sanriku seafood, seasonal Miyagi produce, breakfast bowls, and freshly fried croquettes. The official visitor guide places it five minutes from Sendai Station’s west exit. Go in the morning, check the day before travelling, and expect individual stalls to set their own hours; the guide lists Sundays and national holidays as closure days.",
           "visitDuration": {
             "status": "unknown"
           },
@@ -757,7 +757,7 @@
           "name": "Zuihoden Mausoleum",
           "area": "Otamayashita, Aoba Ward",
           "address": "23-2 Otamayashita, Aoba Ward, Sendai, Miyagi 980-0814, Japan",
-          "story": "Date Masamune, founder of the Sendai domain, chose this hillside as his final resting place. The richly colored mausoleum sits among cedar trees, so the visit shifts from ornate Momoyama-style detail to a quiet, shaded approach. Allow 45 to 60 minutes. The official access notes about 80 steep steps to reception and around 30 more across the grounds; visitors who need step-free access should check with the venue before making this a fixed stop. Loople?s stop is Zuihoden-mae, followed by a walk of about seven minutes.",
+          "story": "Date Masamune, founder of the Sendai domain, chose this hillside as his final resting place. The richly colored mausoleum sits among cedar trees, so the visit shifts from ornate Momoyama-style detail to a quiet, shaded approach. Allow 45 to 60 minutes. The official access notes about 80 steep steps to reception and around 30 more across the grounds; visitors who need step-free access should check with the venue before making this a fixed stop. Loople’s stop is Zuihoden-mae, followed by a walk of about seven minutes.",
           "visitDuration": {
             "status": "known",
             "minMinutes": 45,
@@ -788,7 +788,7 @@
           "name": "Sendai City Museum",
           "area": "Kawauchi, Aoba Ward",
           "address": "26 Kawauchi, Aoba Ward, Sendai, Miyagi 980-0862, Japan",
-          "story": "The museum stands on the former Sannomaru grounds of Sendai Castle and holds roughly 100,000 objects connected with the Date family and the region. Look for the story behind Date Masamune?s black-lacquered armor and the Keicho-era mission to Europe. The permanent display changes seasonally, and the armor is shown only during selected periods, so check the current exhibition before choosing this as the day?s anchor. Allow about one to one and a half hours. The Loople stop is shared with Sendai International Center.",
+          "story": "The museum stands on the former Sannomaru grounds of Sendai Castle and holds roughly 100,000 objects connected with the Date family and the region. Look for the story behind Date Masamune’s black-lacquered armor and the Keicho-era mission to Europe. The permanent display changes seasonally, and the armor is shown only during selected periods, so check the current exhibition before choosing this as the day’s anchor. Allow about one to one and a half hours. The Loople stop is shared with Sendai International Center.",
           "visitDuration": {
             "status": "known",
             "minMinutes": 60,
@@ -839,7 +839,7 @@
           "photo": {
             "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sendai%20statue%20Date%20Masamune.jpg?width=1280",
             "source": "https://commons.wikimedia.org/wiki/File:Sendai_statue_Date_Masamune.jpg",
-            "credit": "Gustave67 (photograph of work by T?ru Komuro)",
+            "credit": "Gustave67 (photograph of work by Tōru Komuro)",
             "license": "CC BY-SA 4.0",
             "alt": "Equestrian statue of Date Masamune at the Sendai Castle Site"
           }
@@ -850,7 +850,7 @@
           "name": "Jozenji-dori Avenue",
           "area": "Kokubuncho, Aoba Ward",
           "address": "Jozenji-dori Avenue, Kokubuncho, Aoba Ward, Sendai, Japan",
-          "story": "End beneath the zelkova canopy on the central promenade. The avenue takes its name from a temple that no longer stands, linking the modern city back to Sendai?s founding era. In spring and summer the branches make a green tunnel; autumn turns the leaves gold, and in winter the Pageant of Starlight lights the trees. Sculptures and shops give the walk a distinctly urban feel. Loople serves the Jozenji-dori Avenue / City Hall stop. The avenue is public space, so time needed depends on how long you choose to wander.",
+          "story": "End beneath the zelkova canopy on the central promenade. The avenue takes its name from a temple that no longer stands, linking the modern city back to Sendai’s founding era. In spring and summer the branches make a green tunnel; autumn turns the leaves gold, and in winter the Pageant of Starlight lights the trees. Sculptures and shops give the walk a distinctly urban feel. Loople serves the Jozenji-dori Avenue / City Hall stop. The avenue is public space, so time needed depends on how long you choose to wander.",
           "visitDuration": {
             "status": "unknown"
           },
@@ -2109,7 +2109,7 @@
         },
         {
           "id": "osm-osaka-03",
-          "label": "OpenStreetMap: Ts?tenkaku tower (way 254319878)",
+          "label": "OpenStreetMap: Tsūtenkaku tower (way 254319878)",
           "url": "https://www.openstreetmap.org/way/254319878",
           "checkedOn": "2026-10-23",
           "supports": [
@@ -2118,7 +2118,7 @@
         },
         {
           "id": "osm-osaka-04",
-          "label": "OpenStreetMap: H?zen-ji Yokoch? lane in Dotonbori (way 175990735)",
+          "label": "OpenStreetMap: Hōzen-ji Yokochō lane in Dotonbori (way 175990735)",
           "url": "https://www.openstreetmap.org/way/175990735",
           "checkedOn": "2026-10-23",
           "supports": [
@@ -3099,7 +3099,7 @@
         },
         {
           "id": "osm-fukuoka-02",
-          "label": "OpenStreetMap: T?ch?-ji Temple (way 767775372)",
+          "label": "OpenStreetMap: Tōchō-ji Temple (way 767775372)",
           "url": "https://www.openstreetmap.org/way/767775372",
           "checkedOn": "2026-10-23",
           "supports": [

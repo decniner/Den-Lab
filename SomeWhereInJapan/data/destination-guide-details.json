@@ -830,8 +830,9 @@
       "nextAction": "Select an Izu subregion, research specific points/transfers and map coordinates, contacts, stays, costs, season and weather evidence, and photo provenance."
     },
     "nikko-in-the-cedars": {
-      "story": "Nikko's sacred approach begins at Shinkyo Bridge, where the Daiya River marks the threshold to the mountain precinct. Follow the cedar-lined landscape through Rinnoji, Toshogu, Futarasan-jinja and Taiyuin: Buddhist halls, a vividly carved shogun's shrine, a mountain deity's sanctuary and the mausoleum of Tokugawa Iemitsu.",
-      "visitPlan": "Take the World Heritage Sightseeing Bus from Tobu-Nikko Station to Shinkyo, then explore the five ordered stops on foot. Return from the Taiyuin/Futarasan-jinja bus stop. Total time and per-stop visit durations are omitted because no authoritative source for this exact sequence was found. Check operator hours and allow a flexible day.",
+      "story": "Read central Nikko as a connected sacred landscape. Shinkyo Bridge, a vermilion crossing over the Daiya River, marks the entrance to the mountain precinct. The Nikko Official Guide links it to Nikkosan Rinnoji Temple, Nikko Toshogu Shrine, Futarasan-jinja Shrine and Taiyuin; take the shaded approaches slowly, since these are distinct sacred sites rather than a single hall. Shinkyo belongs to Futarasan-jinja and carries a local legend about two snakes becoming a bridge.\n\nAt Rinnoji, Sanbutsudo Hall contains three large Buddha images, and the temple traces its history to the priest Shodo. Taiyuin is the mausoleum of Tokugawa Iemitsu; its Nitenmon and Kokamon gates reward a closer look. With more time, extend the day to Kanmangafuchi Abyss, where the official itinerary describes a riverside path and a row of Jizo figures. Central Nikko’s fall foliage typically peaks from late October to mid-November, but traffic increases in peak season. For a one-day visit, allow 5.5–6.5 hours as a guide estimate and arrive early for quieter temple approaches.",
+      "visitPlan": "Take the World Heritage Sightseeing Bus from Tobu-Nikko Station to Shinkyo, then explore the five ordered stops on foot. Return from the Taiyuin/Futarasan-jinja bus stop. Allow 5.5–6.5 hours as a guide estimate, including transfers and breaks; actual time depends on ticket queues and time inside each site. The official Central Nikko itinerary adds Kanmangafuchi Abyss as an optional walking extension.",
+      "seasonality": "The Nikko Official Guide lists Central Nikko’s typical fall-foliage peak as late October to mid-November. Its visitor guide recommends arriving early to enjoy the shrines and temples before tour buses arrive. Autumn traffic can lengthen travel between areas.",
       "access": "From Tokyo, Tobu limited express trains connect Asakusa with Tobu-Nikko in about two hours; JNTO lists about 1 hour 40 minutes via Tohoku Shinkansen to Utsunomiya and JR Nikko Line. From Tobu-Nikko Station, the World Heritage bus reaches Shinkyo in about five minutes. Current timetables and fares vary.",
       "highlights": [
         "Shinkyo Bridge",
@@ -917,6 +918,20 @@
           "url": "https://www.visitnikko.jp/en/plan-your-trip/tourist-information/",
           "organization": "Official Nikko visitor information",
           "checkedOn": "2026-10-23"
+        },
+        {
+          "id": "nikko-central-foliage-faq",
+          "title": "Nikko Official Guide: seasonal timing and fall foliage",
+          "url": "https://visitnikko.jp/en/plan-your-trip/faqs/",
+          "organization": "Nikko City Tourism Association",
+          "checkedOn": "2026-10-24"
+        },
+        {
+          "id": "nikko-rinnoji-current-details",
+          "title": "Nikko Official Guide: current Rinnoji visitor information",
+          "url": "https://www.visitnikko.jp/en/spots/nikkosan-rinnoji-temple/",
+          "organization": "Nikko City Tourism Association",
+          "checkedOn": "2026-10-24"
         },
         {
           "id": "nikko-photo",

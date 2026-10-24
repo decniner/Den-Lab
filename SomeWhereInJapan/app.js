@@ -183,6 +183,12 @@ function updatePlaceDialogSave(place) {
 }
 
 const PLACE_SPOTLIGHTS = {
+  'Nikko in the cedars': {
+    address:'Tobu-Nikko Station, Nikko, Tochigi, Japan', officialUrl:'https://www.visitnikko.jp/en/itineraries/central-nikkos-highlights-for-the-time-pressed/',
+    story:'Read central Nikko as a connected sacred landscape. Shinkyo Bridge, a vermilion crossing over the Daiya River, marks the entrance to the mountain precinct. The Nikko Official Guide links it to Nikkosan Rinnoji Temple, Nikko Toshogu Shrine, Futarasan-jinja Shrine and Taiyuin; take the shaded approaches slowly, since these are distinct sacred sites rather than a single hall. Shinkyo belongs to Futarasan-jinja and carries a local legend about two snakes becoming a bridge. At Rinnoji, Sanbutsudo Hall contains three large Buddha images, and the temple traces its history to the priest Shodo. Taiyuin is the mausoleum of Tokugawa Iemitsu; its Nitenmon and Kokamon gates reward a closer look. With more time, extend the day to Kanmangafuchi Abyss, where the official itinerary describes a riverside path and a row of Jizo figures. Central Nikko’s fall foliage typically peaks from late October to mid-November, but traffic increases in peak season. For a one-day visit, allow 5.5–6.5 hours as a guide estimate and arrive early for quieter temple approaches.',
+    access:'From Tobu-Nikko Station, take the World Heritage Sightseeing Bus about five minutes to Shinkyo. The guide route walks between the shrine and temple precincts; return by bus from Taiyuin/Futarasan-jinja-mae. From Tokyo, Tobu limited express trains run from Asakusa to Tobu-Nikko.',
+    points:['Shinkyo Bridge','Rinnoji Sanbutsudo','Nikko Toshogu Shrine','Futarasan-jinja Shrine','Taiyuin Mausoleum','Kanmangafuchi Abyss']
+  },
   'Tokyo Disney Resort': {
     address:'1-1 Maihama, Urayasu-shi, Chiba-ken', officialUrl:'https://www.japan.travel/en/spot/1556/',
     story:'Tokyo Disneyland and Tokyo DisneySea are two distinct parks connected by the Maihama resort. The main choice is whether you want classic storybook lands, DisneySea\'s waterfront worlds, or enough time to experience both across separate days.',

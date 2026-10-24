@@ -83,7 +83,7 @@ if (process.argv.includes('--write-report')) {
   const markdown = `<!-- BEGIN STRICT RE-AUDIT FIXES 2026-10-24 -->
 ## Strict re-audit fixes - 2026-10-24
 
-This section corrects earlier coverage claims and records what was verified in the current build. Counts and tables are generated from manifests, route data, and rendered output by \`scripts/strict-reaudit-audit.cjs --write-report\`. Site version: **v1.4**.
+This section corrects earlier coverage claims and records what was verified in the current build. Counts and tables are generated from manifests, route data, and rendered output by \`scripts/strict-reaudit-audit.cjs --write-report\`. Site version: **v1.5**.
 
 ### P0-1 - Static guide photo purge: DONE
 
@@ -157,7 +157,7 @@ The generated guide scan found ${audit.text.filenameAltTags} filename-style imag
 - **PASS** - \`node tests/city-origins.test.cjs\`: 6/6; \`node tests/place-routes.test.cjs\`: 3/3; \`node tests/daytrip-core.test.cjs\`: 8/8.
 - **PASS** - Edge browser run: 207/207 unique audited image URLs loaded; no horizontal overflow at 360/390/412/430px; desktop checks at 1280px; interactive search, tabs, filters, Saved, month results, Tokyo finder, Sapporo route, and Nikko guide.
 - **NOT DONE** - P0-3 coverage gaps and P2-2 research gaps listed above are material. The site-wide status does not imply every place has a verified Google walking route or full researched guide.
-- Browser evidence is local headless Edge/Chromium with device emulation, not physical devices. The v1.4 build passed local checks; this report does not claim a GitHub Pages deployment until the push completes.
+- Browser evidence is local headless Edge/Chromium with device emulation, not physical devices. The v1.5 build passed local checks; this report does not claim a GitHub Pages deployment until the push completes.
 <!-- END STRICT RE-AUDIT FIXES 2026-10-24 -->`;
   const reportPath = path.join(root, 'FIX_REPORT.md');
   const start = '<!-- BEGIN STRICT RE-AUDIT FIXES 2026-10-24 -->';

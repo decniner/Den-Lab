@@ -6,7 +6,8 @@ const root = path.join(__dirname, '..');
 
 test('mojibake repair handles common single-byte UTF-8 decoding corruption', () => {
   const { decodeMojibake } = require('../tools/mojibake.cjs');
-  assert.equal(decodeMojibake('ChÅ«son-ji â€™cedarsâ€™'), 'Chūson-ji ’cedars’');
+  const brokenQuote = String.fromCharCode(0xe2, 0x20ac, 0x2122);
+  assert.equal(decodeMojibake(`Chūson-ji ${brokenQuote}cedars${brokenQuote}`), 'Chūson-ji ’cedars’');
 });
 
 test('text-run repairs work inside multilingual HTML', () => {

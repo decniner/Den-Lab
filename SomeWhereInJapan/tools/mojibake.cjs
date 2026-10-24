@@ -23,7 +23,7 @@ function decodeOnce(value) {
 }
 
 function mojibakeScore(value) {
-  return (value.match(/(?:Ã|Â|â[\u0080-\u00ff]|Å[\u0080-\u00ff]|�)/g) || []).length;
+  return (value.match(/(?:Ã|Â|â[\u0080-\u00ff]|Å[\u0080-\u00ff]|\\uFFFD)/g) || []).length;
 }
 
 function decodeMojibake(value = '') {
