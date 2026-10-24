@@ -29,6 +29,7 @@ async function mount(){
   const route=registry.routes?.find(item=>item.id===routeId);
   const panel=block.querySelector('[data-tokyo-route-view]');
   const fallback=block.querySelector('[data-route-static-fallback]');
+  const staticDirections=block.querySelector('[data-static-directions]');
   if(!route||!panel||!root.CityRouteUI?.mountCityRouteView){
    setLoadNote(block,'Interactive map unavailable. The stop list and Google Maps link below still work.');
    continue;
@@ -39,6 +40,7 @@ async function mount(){
   try{
    root.CityRouteUI.mountCityRouteView(panel,route,mapData,{hideStopPhotos:true});
    if(fallback) fallback.hidden=true;
+   if(staticDirections) staticDirections.hidden=true;
   }catch(error){
    setLoadNote(block,'Interactive map unavailable. The stop list and Google Maps link below still work.');
   }
