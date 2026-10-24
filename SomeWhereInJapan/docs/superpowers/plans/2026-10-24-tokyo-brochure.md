@@ -35,11 +35,13 @@
 
 **Files:**
 - Create: `SomeWhereInJapan/data/tokyo-brochure-routes.json`
-- Modify: `SomeWhereInJapan/docs/superpowers/plans/2026-10-24-tokyo-brochure.md` only if research changes a committed route decision.
+- Create: `SomeWhereInJapan/maps/tokyo-brochure/east.geojson`
+- Create: `SomeWhereInJapan/maps/tokyo-brochure/central.geojson`
+- Create: `SomeWhereInJapan/maps/tokyo-brochure/west.geojson`
 
 **Interfaces:**
 - Produces: `{schemaVersion: 1, routes: TokyoBrochureRoute[]}`, with exactly three routes keyed `east-tokyo`, `central-tokyo`, and `west-tokyo`.
-- Each route contains title, short editorial introduction, research state, ordered stops, source records, route-specific photo metadata, map data status, and a Google Maps directions target.
+- Each route contains title, short editorial introduction, research state, ordered stops, source records, route-specific photo metadata, map-data path/status, and a Google Maps directions target. Each GeoJSON has a stable route id, sourced point features, and only appropriately labelled schematic connectors.
 - Each stop carries a stable ID, display name, map position and source, concise editorial detail, and explicit unknown duration status where no source supports an estimate.
 
 - [ ] Review primary destination/transport sources for the three agreed clusters; record source URL and checked date for material claims.
@@ -53,15 +55,16 @@
 - Modify: `SomeWhereInJapan/tools/build-destination-guides.cjs`
 - Modify: `SomeWhereInJapan/tools/templates/destination-guide.html`
 - Modify: `SomeWhereInJapan/places/tokyo-in-layers/index.html` (generated output)
-- Modify: `SomeWhereInJapan/city-route-ui.js` only if required to give each map instance unique accessible IDs.
-- Create: `SomeWhereInJapan/tokyo-brochure.js` only if the existing generator/map interface requires a Tokyo-specific controller.
+- Modify: `SomeWhereInJapan/city-route-ui.js` to make repeated map instances use unique accessible IDs.
+- Create: `SomeWhereInJapan/tokyo-brochure.js` to mount the three route views from the Tokyo-only registry and map files.
 
 **Interfaces:**
 - The generator adds the Tokyo route sections from the route data source to initial HTML; it must not add empty Tokyo sections to other guide pages.
 - Each route section has a stable route ID, ordered stop list, map host/fallback, directions action, and associated source/photo credits.
-- Existing shared route UI receives one route and its route-specific map data per section; each rendered map gets unique DOM and accessibility IDs.
+- `tokyo-brochure.js` calls the shared `CityRouteUI.mountCityRouteView(panel, route, mapData, options)` once per route. Route-specific GeoJSON is loaded from the path in the registry; each rendered map gets unique DOM and accessibility IDs.
 
-- [ ] Add the Tokyo-only route collection to the generated guide after the editorial introduction and before practical arrival notes.
+- [ ] Add a Tokyo-only collection slot and script include through the existing guide generator; both are emitted only for the Tokyo guide.
+- [ ] Add the data loader and mount each route panel through the shared route UI with its matching GeoJSON.
 - [ ] Render three independently scannable route sections with dedicated route imagery, stop sequence, map, Google Maps button, and research-status notes.
 - [ ] Keep the legacy Tokyo overview text consistent with the three clusters; remove the old four-stop cross-city sequence.
 - [ ] Ensure map and stop list show the same stop order. Keep a semantic list and directions links available if map scripts fail.
