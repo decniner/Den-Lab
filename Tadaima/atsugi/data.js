@@ -78,7 +78,8 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Portal feeds disagree on price and class: goo's used feed lists the same house at ¥4,530万 as a used listing — scored here on atHome's ¥4,290万 new-build listing; verify which is current",
-        "Seen on a portal index page — verify details on the listing link"
+        "Seen on a portal index page — verify details on the listing link",
+        "HOME'S lists the same Blooming Garden unit (identical land/building areas, Aiko-Ishida walk 9) at ¥4,990万 — a third price point alongside atHome's ¥4,290万 and goo's ¥4,530万; confirm the current asking price"
       ],
       "source": {
         "name": "atHome",
@@ -312,7 +313,8 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Small 76.2m² plot and only 2LDK despite the 84.5m² building — priced for condition and location, not land or room count",
-        "Seen on a portal index page — verify details on the listing link"
+        "Seen on a portal index page — verify details on the listing link",
+        "HOME'S index lists the house as currently occupied (居住中) — viewing and handover timing need confirming"
       ],
       "source": {
         "name": "LIFULL HOME'S",
