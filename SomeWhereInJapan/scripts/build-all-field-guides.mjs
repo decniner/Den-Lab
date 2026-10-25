@@ -116,6 +116,20 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
 
   html = html.replace(/<p class="jg-lede">\s*(?:WHY THIS PLACE|A CLOSER LOOK)\s*<\/p>/i, '');
   html = html.replace(/<p class="jg-kicker">A PLACE-LED FIELD GUIDE<\/p>/i, '').replace(/<p class="jg-area">[\s\S]*?<\/p>/i, '');
+  const visibleLede = html.match(/<p class="jg-lede">([\s\S]*?)<\/p>/i);
+  if (visibleLede && text(visibleLede[1]).length > 180) {
+    const fullLede = visibleLede[1];
+    const shortLede = fullLede.split(/(?<=[.!?])\s+/)[0];
+    html = html.replace(visibleLede[0], '<p class="jg-lede">' + shortLede + '</p>');
+    details.unshift('<section class="jg-section"><p class="jg-kicker">THE FULL STORY</p><p>' + fullLede + '</p></section>');
+  }
+  if (routeSection) {
+    const routeIntro = routeSection.match(/(<p>)(?!<strong>)([\s\S]*?)<\/p>/i);
+    if (routeIntro && text(routeIntro[2]).length > 120) {
+      details.unshift('<section class="jg-section"><p class="jg-kicker">ROUTE NOTES</p><p>' + routeIntro[2] + '</p></section>');
+      routeSection = routeSection.replace(routeIntro[0], '');
+    }
+  }
   html = html.replace(/(<a\b[^>]*href="#route"[^>]*>)[\s\S]*?(<\/a>)/i, '$1View map ↓$2');
   const nameQuery = encodeURIComponent(`${placeName} Japan`);
   const photoLink = `<p class="jg-photo-link"><a class="jg-btn jg-light" href="https://www.google.com/maps/search/?api=1&query=${nameQuery}" target="_blank" rel="noopener noreferrer">See more visitor photos on Google Maps ↗</a></p>`;
