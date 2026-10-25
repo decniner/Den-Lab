@@ -104,7 +104,7 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
     return '';
   });
 
-  html = html.replace(/<p class="jg-lede">\\s*(?:WHY THIS PLACE|A CLOSER LOOK)\\s*<\\/p>/i, '');
+  html = html.replace(/<p class="jg-lede">\s*(?:WHY THIS PLACE|A CLOSER LOOK)\s*<\/p>/i, '');
   const nameQuery = encodeURIComponent(`${placeName} Japan`);
   const photoLink = `<p class="jg-photo-link"><a class="jg-btn jg-light" href="https://www.google.com/maps/search/?api=1&query=${nameQuery}" target="_blank" rel="noopener noreferrer">See more visitor photos on Google Maps ↗</a></p>`;
   const moreDetails = details.length
