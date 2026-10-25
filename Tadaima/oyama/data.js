@@ -167,7 +167,7 @@ window.TADAIMA_DATA = {
       "district": "Otome",
       "districtJa": "大字乙女",
       "title": "New 4LDK (Grandy House Gran Excella Otome 5) — final unit",
-      "priceMan": 2790,
+      "priceMan": 2790.0,
       "priceFrom": false,
       "landM2": 208.17,
       "buildingM2": 112.61,
@@ -192,7 +192,8 @@ window.TADAIMA_DATA = {
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/77958843.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -373,7 +374,7 @@ window.TADAIMA_DATA = {
       "district": "Akatsuki 3",
       "districtJa": "暁3丁目",
       "title": "Used 3LDK (1982), renovated — 7 min from Mamada",
-      "priceMan": 1348,
+      "priceMan": 1348.0,
       "priceFrom": false,
       "landM2": 164.43,
       "buildingM2": 73.69,
@@ -397,7 +398,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/4/09208/1498170002996/149817/x41498170002996.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -572,7 +574,7 @@ window.TADAIMA_DATA = {
       "district": "Shiroyama-cho 1",
       "districtJa": "城山町1丁目",
       "title": "Large 350m² commercial-zone plot 9 minutes from Oyama station",
-      "priceMan": 1910,
+      "priceMan": 1910.0,
       "priceFrom": false,
       "landM2": 350.72,
       "buildingM2": null,
@@ -605,7 +607,8 @@ window.TADAIMA_DATA = {
         "name": "OCN不動産 (goo住宅・不動産)",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1176020012383/117602/x41176020012383.html",
         "verified": "detail",
-        "infoDate": "2026-10-12"
+        "infoDate": "2026-10-12",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -800,7 +803,7 @@ window.TADAIMA_DATA = {
       "district": "Akatsuki 3",
       "districtJa": "暁3丁目",
       "title": "Seller-listed 198m² plot 6 minutes from Mamada, immediate handover",
-      "priceMan": 630,
+      "priceMan": 630.0,
       "priceFrom": false,
       "landM2": 198.34,
       "buildingM2": null,
@@ -826,7 +829,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1222800003758/122280/x41222800003758.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-25",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -835,7 +839,7 @@ window.TADAIMA_DATA = {
       "district": "Otome 1",
       "districtJa": "乙女1丁目",
       "title": "Low-rise-zone corner plot 11 minutes from Mamada — building condition attached",
-      "priceMan": 1080,
+      "priceMan": 1080.0,
       "priceFrom": false,
       "landM2": 229.41,
       "buildingM2": null,
@@ -862,7 +866,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1176020017867/117602/x41176020017867.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -872,7 +877,7 @@ window.TADAIMA_DATA = {
       "district": "Minami-Otome 1",
       "districtJa": "南乙女1丁目",
       "title": "Very large 672m² flat plot 12 minutes from Mamada, no building conditions",
-      "priceMan": 2680,
+      "priceMan": 2680.0,
       "priceFrom": false,
       "landM2": 672,
       "buildingM2": null,
@@ -900,7 +905,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1498120000085/149812/x41498120000085.html",
         "verified": "detail",
-        "infoDate": "2026-10-17"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -910,7 +916,7 @@ window.TADAIMA_DATA = {
       "district": "Mamada",
       "districtJa": "大字間々田",
       "title": "451m² near-commercial plot 14 minutes from Mamada at a low ¥/tsubo",
-      "priceMan": 980,
+      "priceMan": 980.0,
       "priceFrom": false,
       "landM2": 451.5,
       "buildingM2": null,
@@ -937,7 +943,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/09208/030Z20809183/141466001/x1030Z20809183.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -975,6 +982,75 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/sp/tochi/detail/4/1421580001658/142158/x41421580001658.html",
         "verified": "detail",
         "infoDate": "2026-10-23"
+      }
+    },
+    {
+      "type": "house-used",
+      "title": "KEM小山市東間々田1期中古戸建",
+      "districtJa": "東間々田2",
+      "priceMan": 1369.0,
+      "priceFrom": false,
+      "landM2": 200.29,
+      "buildingM2": 101.02,
+      "stationJa": "間々田",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 12,
+      "layout": "3LDK",
+      "built": "1982年2月",
+      "zoning": "1種住居",
+      "id": "auto-6da91534a2f9",
+      "district": "東間々田2",
+      "station": "Mamada",
+      "line": "JR Utsunomiya Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、南西4m幅 / -"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/tochigi/sc_oyama/nc_79162292/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 44
+    },
+    {
+      "type": "land",
+      "title": "コモンステージ小山駅東通り3丁目III【積水ハウス】",
+      "districtJa": "駅東通り3-1番1",
+      "priceMan": 1998.0,
+      "priceFrom": false,
+      "landM2": 173.96,
+      "buildingM2": null,
+      "stationJa": "小山",
+      "lineJa": "湘南新宿ライン宇須",
+      "walkMin": 12,
+      "layout": "",
+      "built": "",
+      "zoning": "1種住居",
+      "id": "auto-00ddd1017cd0",
+      "district": "駅東通り3-1番1",
+      "station": "Oyama",
+      "line": "JR Utsunomiya Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "道路幅:6m、アスファルト舗装、私道負担なし / 付 / 景観法、都市再生特別措置法、盛土規制法、農地法(小農委第5-79号、令和7年5月30日)"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/tochi/tochigi/sc_oyama/nc_77804956/",
+        "verified": "detail",
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     }
   ],

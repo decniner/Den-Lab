@@ -394,7 +394,7 @@ window.TADAIMA_DATA = {
       "district": "Asahi-cho",
       "districtJa": "旭町",
       "title": "Nearly-new used 2SLDK (2021) by Tokorozawa Station",
-      "priceMan": 4980,
+      "priceMan": 4980.0,
       "priceFrom": false,
       "landM2": 53.47,
       "buildingM2": 83.9,
@@ -419,7 +419,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z78673477/000389153/x1030Z78673477.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -557,7 +558,7 @@ window.TADAIMA_DATA = {
       "district": "Kita-Akitsu",
       "districtJa": "大字北秋津",
       "title": "Kamiyasumatsu Land No.1 — last of 5 lots (Sekisui House Real Estate)",
-      "priceMan": 4270,
+      "priceMan": 4270.0,
       "priceFrom": false,
       "landM2": 142.15,
       "buildingM2": null,
@@ -582,7 +583,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11208/030Z21426348/010174183/x1030Z21426348.html",
         "verified": "detail",
-        "infoDate": "2026-10-18"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -591,7 +593,7 @@ window.TADAIMA_DATA = {
       "district": "Kami-Yasumatsu",
       "districtJa": "大字上安松",
       "title": "Regular-shaped lot, utilities connected, vacant-land handover",
-      "priceMan": 3280,
+      "priceMan": 3280.0,
       "priceFrom": false,
       "landM2": 136.39,
       "buildingM2": null,
@@ -615,7 +617,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11208/030Z20957900/010100106/x1030Z20957900.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -624,7 +627,7 @@ window.TADAIMA_DATA = {
       "district": "Higashi-cho",
       "districtJa": "東町",
       "title": "Large 171m² lot in the commercial zone, 9 min from Tokorozawa",
-      "priceMan": 4980,
+      "priceMan": 4980.0,
       "priceFrom": false,
       "landM2": 171.88,
       "buildingM2": null,
@@ -650,7 +653,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11208/1241930006978/124193/x41241930006978.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -659,7 +663,7 @@ window.TADAIMA_DATA = {
       "district": "Higashi-Arai-cho",
       "districtJa": "東新井町",
       "title": "Compact 91m² lot in a low-rise zone — boundary survey done",
-      "priceMan": 2100,
+      "priceMan": 2100.0,
       "priceFrom": false,
       "landM2": 91.32,
       "buildingM2": null,
@@ -686,7 +690,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11208/030Z20034665/162083001/x1030Z20034665.html",
         "verified": "detail",
-        "infoDate": "2026-10-20"
+        "infoDate": "2026-10-20",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -905,7 +910,7 @@ window.TADAIMA_DATA = {
       "district": "Kami-Arai 2",
       "districtJa": "上新井2丁目",
       "title": "123m² lot with a building on site, Nishi-Tokorozawa side",
-      "priceMan": 2980,
+      "priceMan": 2980.0,
       "priceFrom": false,
       "landM2": 123.21,
       "buildingM2": null,
@@ -930,7 +935,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11208/1040200009295/104020/x41040200009295.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -966,6 +972,41 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
+    },
+    {
+      "type": "house-used",
+      "title": "【最寄り駅徒歩10分！全室2面採光5LDK】住協だけのお預かり物件",
+      "districtJa": "大字山口",
+      "priceMan": 1780.0,
+      "priceFrom": false,
+      "landM2": 116.85,
+      "buildingM2": 104.38,
+      "stationJa": "下山口",
+      "lineJa": "西武狭山線",
+      "walkMin": 10,
+      "layout": "5LDK",
+      "built": "1991年7月",
+      "zoning": "1種住居",
+      "id": "auto-3d35af994d6a",
+      "district": "大字山口",
+      "station": "Shimoyamaguchi",
+      "line": "Seibu Sayama Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、北4m幅 / 航空法/景観条例/所沢市立地適正化計画(居住誘導区域内)、県立狭山自然公園普通地域内"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_tokorozawa/nc_21326569/",
+        "verified": "detail",
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 35
     }
   ],
   "scoring": {

@@ -164,7 +164,7 @@ window.TADAIMA_DATA = {
       "district": "Higashi-Fukai",
       "districtJa": "東深井",
       "title": "New 4LDK, long-term quality housing — the big-house option in the north",
-      "priceMan": 3590,
+      "priceMan": 3590.0,
       "priceFrom": false,
       "landM2": 109.36,
       "buildingM2": 104.28,
@@ -189,7 +189,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/Z/21148971.html",
         "verified": "detail",
-        "infoDate": "2026-10-19"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -401,7 +402,7 @@ window.TADAIMA_DATA = {
       "district": "Kounosudai",
       "districtJa": "こうのす台",
       "title": "Used 4LDK (2000) — 140m² house on 211.6m² of land, the space pick",
-      "priceMan": 3980,
+      "priceMan": 3980.0,
       "priceFrom": false,
       "landM2": 211.61,
       "buildingM2": 140.0,
@@ -425,7 +426,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z21163814/006110038/x1030Z21163814.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -434,7 +436,7 @@ window.TADAIMA_DATA = {
       "district": "Kounosudai",
       "districtJa": "こうのす台",
       "title": "Used 4LDK (1999) Sekisui 'Sumstock' — renovated Oct 2025, defect insurance included",
-      "priceMan": 4980,
+      "priceMan": 4980.0,
       "priceFrom": false,
       "landM2": 165.84,
       "buildingM2": 144.84,
@@ -458,7 +460,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z20420027/010174178/x1030Z20420027.html",
         "verified": "detail",
-        "infoDate": "2026-10-18"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -670,7 +673,7 @@ window.TADAIMA_DATA = {
       "district": "Nagareyama 3",
       "districtJa": "流山3丁目",
       "title": "Old-town vacant plot 6 minutes from Nagareyama station — commercial zoning",
-      "priceMan": 2180,
+      "priceMan": 2180.0,
       "priceFrom": false,
       "landM2": 108.63,
       "buildingM2": null,
@@ -699,7 +702,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/1442100004327/144210/x41442100004327.html",
         "verified": "detail",
-        "infoDate": "2026-07-04"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -1033,6 +1037,110 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21696139/006110142/x1030Z21696139.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "type": "house-used",
+      "title": "流山市西平井",
+      "districtJa": "大字西平井",
+      "priceMan": 2280.0,
+      "priceFrom": false,
+      "landM2": 76.51,
+      "buildingM2": 90.95,
+      "stationJa": "平和台",
+      "lineJa": "流鉄流山線",
+      "walkMin": 8,
+      "layout": "3LDK+S(納戸)",
+      "built": "1997年2月",
+      "zoning": "1種住居",
+      "id": "auto-e07eaaffaf8a",
+      "district": "大字西平井",
+      "station": "Heiwadai",
+      "line": "Ryutetsu Nagareyama Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、東4m幅(接道幅10.5m) / ※残物あり"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/chiba/sc_nagareyama/nc_21629927/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 29
+    },
+    {
+      "type": "house-used",
+      "title": "江戸川台西３（江戸川台駅） 2480万円",
+      "districtJa": "江戸川台西3",
+      "priceMan": 2480.0,
+      "priceFrom": false,
+      "landM2": 106.77,
+      "buildingM2": 79.48,
+      "stationJa": "江戸川台",
+      "lineJa": "東武野田線",
+      "walkMin": 9,
+      "layout": "3LDK",
+      "built": "1996年11月",
+      "zoning": "1種低層",
+      "id": "auto-c71fc506442a",
+      "district": "江戸川台西3",
+      "station": "Edogawadai",
+      "line": "Tobu Urban Park Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、北4m幅 / -"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/chiba/sc_nagareyama/nc_21915771/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 30
+    },
+    {
+      "type": "land",
+      "title": "オープンプレイス西初石アクセス",
+      "districtJa": "西初石4",
+      "priceMan": 2999.0,
+      "priceFrom": false,
+      "landM2": 63.38,
+      "buildingM2": null,
+      "stationJa": "初石",
+      "lineJa": "東武野田線",
+      "walkMin": 5,
+      "layout": "",
+      "built": "",
+      "zoning": "1種中高",
+      "id": "auto-222a1c319ac5",
+      "district": "西初石4",
+      "station": "Hatsuishi",
+      "line": "Tobu Urban Park Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "- / - / 宅地造成工事規制区域"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/tochi/chiba/sc_nagareyama/nc_21741987/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     }
   ],

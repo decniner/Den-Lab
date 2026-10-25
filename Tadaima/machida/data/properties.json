@@ -433,7 +433,7 @@
       "district": "Minami-Tsukushino 1",
       "districtJa": "南つくし野1丁目",
       "title": "Used 4LDK (2010) — renovated 2010 build near Suzukakedai",
-      "priceMan": 4199,
+      "priceMan": 4199.0,
       "priceFrom": false,
       "landM2": 82.8,
       "buildingM2": 66.1,
@@ -457,7 +457,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/4/13209/1284750066509/128475/x41284750066509.html",
         "verified": "detail",
-        "infoDate": "2026-10-24"
+        "infoDate": "2026-10-25",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -677,7 +678,7 @@
       "district": "Ogawa 3",
       "districtJa": "小川3丁目",
       "title": "Vacant 135m² lot on a 9m road, 15 min from Naruse",
-      "priceMan": 4290,
+      "priceMan": 4290.0,
       "priceFrom": false,
       "landM2": 135.23,
       "buildingM2": null,
@@ -704,7 +705,8 @@
         "name": "OCN不動産 (goo feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/13209/8920152962/892/x48920152962.html",
         "verified": "detail",
-        "infoDate": "2026-10-24"
+        "infoDate": "2026-10-25",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -823,7 +825,7 @@
       "district": "Aihara-machi",
       "districtJa": "相原町",
       "title": "357m² plot with old house 11 min from Aihara — ¥27.6万/tsubo",
-      "priceMan": 2980,
+      "priceMan": 2980.0,
       "priceFrom": false,
       "landM2": 357.0,
       "buildingM2": null,
@@ -852,7 +854,8 @@
         "name": "SUUMO",
         "url": "https://suumo.jp/tochi/tokyo/sc_machida/nc_20812285/",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-18",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -861,7 +864,7 @@
       "district": "Higashi-Tamagawagakuen 1",
       "districtJa": "東玉川学園1丁目",
       "title": "Vacant 150m² lot 15 min from Tamagawagakuen-mae — building conditions attached",
-      "priceMan": 2580,
+      "priceMan": 2580.0,
       "priceFrom": false,
       "landM2": 150.99,
       "buildingM2": null,
@@ -889,7 +892,8 @@
         "name": "OCN不動産 (goo feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/13209/8920153680/892/x48920153680.html",
         "verified": "detail",
-        "infoDate": "2026-10-24"
+        "infoDate": "2026-10-25",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -898,7 +902,7 @@
       "district": "Kanai-ga-oka 2",
       "districtJa": "金井ヶ丘2丁目",
       "title": "Corner south-road plot in Kanai-ga-oka, 15 min from Tamagawagakuen-mae",
-      "priceMan": 2900,
+      "priceMan": 2900.0,
       "priceFrom": false,
       "landM2": 165.88,
       "buildingM2": null,
@@ -926,7 +930,8 @@
         "name": "OCN不動産 (goo feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/13209/1369330004150/136933/x41369330004150.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       }
     }
   ],

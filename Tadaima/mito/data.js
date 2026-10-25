@@ -167,7 +167,7 @@ window.TADAIMA_DATA = {
       "district": "Nakamaru-cho",
       "districtJa": "中丸町",
       "title": "New 5LDK model house (Gran Excella) — 115.5m² house on a 193.5m² plot",
-      "priceMan": 3520,
+      "priceMan": 3520.0,
       "priceFrom": false,
       "landM2": 193.49,
       "buildingM2": 115.51,
@@ -192,7 +192,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/08201/030/W/20514359.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -302,7 +303,7 @@ window.TADAIMA_DATA = {
       "district": "Uchihara-machi",
       "districtJa": "内原町",
       "title": "Used 3LDK (2004) — Taisei Construction custom home with vaulted living room, 9 min from Uchihara",
-      "priceMan": 2460,
+      "priceMan": 2460.0,
       "priceFrom": false,
       "landM2": 160.31,
       "buildingM2": 101.56,
@@ -326,7 +327,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z21289017/148258001/x1030Z21289017.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -335,7 +337,7 @@ window.TADAIMA_DATA = {
       "district": "Uchihara-machi",
       "districtJa": "内原町",
       "title": "Used 6LDK (1991) on a huge 561.9m² plot — repainted 2016, plans and records kept",
-      "priceMan": 2290,
+      "priceMan": 2290.0,
       "priceFrom": false,
       "landM2": 561.85,
       "buildingM2": 149.1,
@@ -358,7 +360,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z74405155/002597003/x1030Z74405155.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -499,7 +502,7 @@ window.TADAIMA_DATA = {
       "district": "Aoyagi-cho",
       "districtJa": "青柳町",
       "title": "Used 4LDK (1978) under renovation — 6 min from Hitachi-Tsuda Station",
-      "priceMan": 1699,
+      "priceMan": 1699.0,
       "priceFrom": false,
       "landM2": 195.02,
       "buildingM2": 102.45,
@@ -525,7 +528,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z20818925/189549018/x1030Z20818925.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -535,7 +539,7 @@ window.TADAIMA_DATA = {
       "district": "Aoyagi-cho",
       "districtJa": "青柳町",
       "title": "Used 6K (1974) at ¥550万 — sold as-is or as cleared land, 6 min from Hitachi-Tsuda Station",
-      "priceMan": 550,
+      "priceMan": 550.0,
       "priceFrom": false,
       "landM2": 166.23,
       "buildingM2": 62.97,
@@ -561,7 +565,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z74015943/085120003/x1030Z74015943.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -571,7 +576,7 @@ window.TADAIMA_DATA = {
       "district": "Shibui-cho",
       "districtJa": "渋井町",
       "title": "Used 4LDK (1983), fully renovated inside and out — 305m² plot, 14 min from Higashi-Mito Station",
-      "priceMan": 1699,
+      "priceMan": 1699.0,
       "priceFrom": false,
       "landM2": 305.02,
       "buildingM2": 115.75,
@@ -597,7 +602,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z20829540/055361007/x1030Z20829540.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -723,7 +729,7 @@ window.TADAIMA_DATA = {
       "district": "Aoyagi-cho",
       "districtJa": "青柳町",
       "title": "Huge 803m² plot 4 minutes from Hitachi-Aoyagi — urbanisation-control, most buyers cannot build",
-      "priceMan": 600,
+      "priceMan": 600.0,
       "priceFrom": false,
       "landM2": 803.55,
       "buildingM2": null,
@@ -752,7 +758,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z20862021/085120004/x1030Z20862021.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -946,7 +953,7 @@ window.TADAIMA_DATA = {
       "district": "Uchihara-cho",
       "districtJa": "内原町",
       "title": "Huge low-rise-zone plot 8 minutes from Uchihara Station, by Aeon Mall Mito-Uchihara",
-      "priceMan": 2350,
+      "priceMan": 2350.0,
       "priceFrom": false,
       "landM2": 504.89,
       "buildingM2": null,
@@ -973,7 +980,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z21063399/085120003/x1030Z21063399.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {

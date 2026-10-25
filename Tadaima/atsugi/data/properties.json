@@ -364,7 +364,7 @@
       "district": "Kami-Ochiai",
       "districtJa": "上落合",
       "title": "Used 3SLDK (2010) by Sekisui House (SumStock) on a 197m² plot — 15 min from Aiko-Ishida",
-      "priceMan": 3980,
+      "priceMan": 3980.0,
       "priceFrom": false,
       "landM2": 197.14,
       "buildingM2": 126.0,
@@ -390,7 +390,8 @@
         "name": "goo住宅・不動産 (OCN feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z21380683/010174174/x1030Z21380683.html",
         "verified": "detail",
-        "infoDate": "2026-10-19"
+        "infoDate": "2026-10-19",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -433,7 +434,7 @@
       "district": "Aiko-Higashi 1",
       "districtJa": "愛甲東1丁目",
       "title": "104m² plot 6 minutes from Aiko-Ishida — building on site",
-      "priceMan": 1800,
+      "priceMan": 1800.0,
       "priceFrom": false,
       "landM2": 104.8,
       "buildingM2": null,
@@ -459,7 +460,8 @@
         "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/14212/1127950074803/112795/x41127950074803.html",
         "verified": "detail",
-        "infoDate": "2026-10-21"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -611,7 +613,7 @@
       "district": "Motocho",
       "districtJa": "元町",
       "title": "Vacant 122m² plot 13 minutes from Hon-Atsugi by the Sagami River",
-      "priceMan": 2480,
+      "priceMan": 2480.0,
       "priceFrom": false,
       "landM2": 122.11,
       "buildingM2": null,
@@ -638,7 +640,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14212/030Z21806271/117692001/x1030Z21806271.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -647,7 +650,7 @@
       "district": "Motocho",
       "districtJa": "元町",
       "title": "Large 207m² plot 14 minutes from Hon-Atsugi — room for a big house and garden",
-      "priceMan": 3880,
+      "priceMan": 3880.0,
       "priceFrom": false,
       "landM2": 207.9,
       "buildingM2": null,
@@ -675,7 +678,8 @@
         "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/14212/89430010462/8943/x489430010462.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {

@@ -191,7 +191,7 @@ window.TADAIMA_DATA = {
       "district": "Namiki-machi",
       "districtJa": "並木町",
       "title": "New 4LDK single-unit sale, move-in ready — 14 min from Nishi-Hachioji",
-      "priceMan": 4080,
+      "priceMan": 4080.0,
       "priceFrom": false,
       "landM2": 99.37,
       "buildingM2": 101.58,
@@ -218,7 +218,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/20039265.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -227,7 +228,7 @@ window.TADAIMA_DATA = {
       "district": "Ishikawa-machi",
       "districtJa": "石川町",
       "title": "New 4LDK on an exceptional 192m² plot — 6 min from Komiya",
-      "priceMan": 4499,
+      "priceMan": 4499.0,
       "priceFrom": false,
       "landM2": 192.41,
       "buildingM2": 102.86,
@@ -253,7 +254,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/Z/21946167.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -262,7 +264,7 @@ window.TADAIMA_DATA = {
       "district": "Ishikawa-machi",
       "districtJa": "石川町",
       "title": "Used 4DK (2003) on a huge 222m² plot, interior renovated Oct 2026 — 5 min from Komiya",
-      "priceMan": 2780,
+      "priceMan": 2780.0,
       "priceFrom": false,
       "landM2": 221.97,
       "buildingM2": 85.93,
@@ -287,7 +289,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21871100/006050903/x1030Z21871100.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -330,7 +333,7 @@ window.TADAIMA_DATA = {
       "district": "Midori-machi",
       "districtJa": "緑町",
       "title": "Used 4LDK (2010), renovated — 5 min from Yamada",
-      "priceMan": 3798,
+      "priceMan": 3798.0,
       "priceFrom": false,
       "landM2": 125.69,
       "buildingM2": 95.22,
@@ -356,7 +359,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21614671/164755001/x1030Z21614671.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -366,7 +370,7 @@ window.TADAIMA_DATA = {
       "district": "Yamada-machi",
       "districtJa": "山田町",
       "title": "Used 3LDK (1994) under ¥2,000万 — 8 min from Yamada, roof/exterior repainted 2019",
-      "priceMan": 1980,
+      "priceMan": 1980.0,
       "priceFrom": false,
       "landM2": 85.73,
       "buildingM2": 81.59,
@@ -391,7 +395,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21758222/006050903/x1030Z21758222.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -608,7 +613,7 @@ window.TADAIMA_DATA = {
       "district": "Komiya-cho",
       "districtJa": "小宮町",
       "title": "Vacant corner lot just 3 minutes from Komiya — 196m², no builder tie-in",
-      "priceMan": 3900,
+      "priceMan": 3900.0,
       "priceFrom": false,
       "landM2": 196.75,
       "buildingM2": null,
@@ -634,7 +639,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z73817631/006050903/x1030Z73817631.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -680,7 +686,7 @@ window.TADAIMA_DATA = {
       "district": "Higashi-Asakawa-cho",
       "districtJa": "東浅川町",
       "title": "167m² plot 5 minutes from Hazama — a quarter of it is slope",
-      "priceMan": 2580,
+      "priceMan": 2580.0,
       "priceFrom": false,
       "landM2": 167.04,
       "buildingM2": null,
@@ -707,7 +713,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21452231/000232004/x1030Z21452231.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -716,7 +723,7 @@ window.TADAIMA_DATA = {
       "district": "Katakura-cho",
       "districtJa": "片倉町",
       "title": "Cheapest station-close lot here — ¥899万, 6 minutes from Keio-Katakura",
-      "priceMan": 899,
+      "priceMan": 899.0,
       "priceFrom": false,
       "landM2": 60.15,
       "buildingM2": null,
@@ -745,7 +752,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z20181049/142689022/x1030Z20181049.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -755,7 +763,7 @@ window.TADAIMA_DATA = {
       "district": "Uchikoshi-cho",
       "districtJa": "打越町",
       "title": "Large corner subdivision lot by Katakura — builder condition attached",
-      "priceMan": 3480,
+      "priceMan": 3480.0,
       "priceFrom": false,
       "landM2": 188.22,
       "buildingM2": null,
@@ -781,7 +789,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21978024/000389162/x1030Z21978024.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -867,7 +876,7 @@ window.TADAIMA_DATA = {
       "district": "Hazama-cho",
       "districtJa": "狭間町",
       "title": "Vacant corner lot 7 minutes from Takao — ¥1,250万 in a mid-rise zone",
-      "priceMan": 1250,
+      "priceMan": 1250.0,
       "priceFrom": false,
       "landM2": 120.77,
       "buildingM2": null,
@@ -891,7 +900,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21271627/000232025/x1030Z21271627.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -971,7 +981,7 @@ window.TADAIMA_DATA = {
       "district": "Yagi-cho",
       "districtJa": "八木町",
       "title": "Vacant flat lot 12 minutes from Nishi-Hachioji — commercial zoning, 600% FAR",
-      "priceMan": 4280,
+      "priceMan": 4280.0,
       "priceFrom": false,
       "landM2": 105.89,
       "buildingM2": null,
@@ -998,7 +1008,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21669186/167249001/x1030Z21669186.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {

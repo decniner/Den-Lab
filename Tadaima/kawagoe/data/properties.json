@@ -169,7 +169,7 @@
       "district": "Kasahata",
       "districtJa": "大字笠幡",
       "title": "New 3LDK — lowest-priced new house in this collection",
-      "priceMan": 2680,
+      "priceMan": 2680.0,
       "priceFrom": false,
       "landM2": 98.6,
       "buildingM2": 88.29,
@@ -190,7 +190,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/4/11201/1040210010024/104021/x41040210010024.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 0
     },
@@ -234,7 +235,7 @@
       "district": "Otsuka-Shinmachi",
       "districtJa": "大塚新町",
       "title": "New 4LDK with parking for three cars",
-      "priceMan": 4298,
+      "priceMan": 4298.0,
       "priceFrom": false,
       "landM2": 142.57,
       "buildingM2": 100.96,
@@ -259,7 +260,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/11201/030/W/21631849.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 0
     },
@@ -337,7 +339,7 @@
       "district": "Suna",
       "districtJa": "大字砂",
       "title": "Used 3LDK (2017) just 4 minutes from Shingashi",
-      "priceMan": 3980,
+      "priceMan": 3980.0,
       "priceFrom": false,
       "landM2": 115.78,
       "buildingM2": 90.25,
@@ -359,7 +361,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11201/030Z21395915/081789002/x1030Z21395915.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 0
     },
@@ -470,7 +473,7 @@
       "district": "Ogaya",
       "districtJa": "大字小ケ谷",
       "title": "Used 4LDK (1989) — cheapest house in this collection",
-      "priceMan": 1690,
+      "priceMan": 1690.0,
       "priceFrom": false,
       "landM2": 99.99,
       "buildingM2": 93.14,
@@ -496,7 +499,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11201/030Z20778786/185072001/x1030Z20778786.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -1045,7 +1049,7 @@
       "district": "Kasahata",
       "districtJa": "大字笠幡",
       "title": "Huge 392m² plot at a strikingly low ¥/tsubo",
-      "priceMan": 730,
+      "priceMan": 730.0,
       "priceFrom": false,
       "landM2": 392.4,
       "buildingM2": null,
@@ -1072,7 +1076,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/1536350000016/153635/x41536350000016.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-14",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -1082,7 +1087,7 @@
       "district": "Matoba",
       "districtJa": "大字的場",
       "title": "Large 165m² lot in a low-rise residential zone",
-      "priceMan": 2380,
+      "priceMan": 2380.0,
       "priceFrom": false,
       "landM2": 165.49,
       "buildingM2": null,
@@ -1109,7 +1114,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/89170006367/8917/x489170006367.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 0
     },
@@ -1407,6 +1413,41 @@
       },
       "majorCautions": 1,
       "section": "shimohiroya"
+    },
+    {
+      "type": "house-used",
+      "title": "川越市広谷新町　中古戸建",
+      "districtJa": "広谷新町",
+      "priceMan": 1480.0,
+      "priceFrom": false,
+      "landM2": 142.61,
+      "buildingM2": 119.24,
+      "stationJa": "広谷新町自治会館前",
+      "lineJa": "川越シャトル10系統",
+      "walkMin": 5,
+      "layout": "3LDK",
+      "built": "1996年10月",
+      "zoning": "2種低層",
+      "id": "auto-13c9a40ca5c3",
+      "district": "広谷新町",
+      "station": "広谷新町自治会館前",
+      "line": "川越シャトル10系統",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、北西4.5m幅(接道幅11.8m) / セットバック:済、日影制限有、本物件の指定容積率は200%ですが、建築基準法第52条の規定により、前面道路の幅員による容積率の制限を受けます。そのため、本物件に適用される容積率は180%となります。"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_kawagoe/nc_21469384/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 30
     }
   ],
   "scoring": {

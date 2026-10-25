@@ -37,7 +37,7 @@ window.TADAIMA_DATA = {
       "district": "Yoshii-cho Nagane",
       "districtJa": "吉井町長根",
       "title": "New 4LDK long-term quality house — 3 min from Nishi-Yoshii, all rooms south-facing",
-      "priceMan": 2190,
+      "priceMan": 2190.0,
       "priceFrom": false,
       "landM2": 186.22,
       "buildingM2": 107.44,
@@ -62,7 +62,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/10202/030/W/21100355.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -71,7 +72,7 @@ window.TADAIMA_DATA = {
       "district": "Fujitsuka-cho",
       "districtJa": "藤塚町",
       "title": "New 4LDK on a 194m² corner lot — long-term quality housing near Gunma-Yawata",
-      "priceMan": 2930,
+      "priceMan": 2930.0,
       "priceFrom": false,
       "landM2": 194.14,
       "buildingM2": 105.99,
@@ -96,7 +97,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/10202/030/W/20312967.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -105,7 +107,7 @@ window.TADAIMA_DATA = {
       "district": "Kami-Namienoki-cho",
       "districtJa": "上並榎町",
       "title": "New 3LDK on a 212m² plot — but completion is not until Feb 2027",
-      "priceMan": 4480,
+      "priceMan": 4480.0,
       "priceFrom": false,
       "landM2": 212.03,
       "buildingM2": 101.16,
@@ -131,7 +133,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/10202/030/W/21985662.html",
         "verified": "detail",
-        "infoDate": "2026-10-20"
+        "infoDate": "2026-10-20",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -172,7 +175,7 @@ window.TADAIMA_DATA = {
       "district": "Narita-cho",
       "districtJa": "成田町",
       "title": "Used 4SLDK built 2021 — nearly new, sunroom, 14 min from Kita-Takasaki",
-      "priceMan": 4180,
+      "priceMan": 4180.0,
       "priceFrom": false,
       "landM2": 169.86,
       "buildingM2": 104.74,
@@ -197,7 +200,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z20652611/185349002/x1030Z20652611.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -206,7 +210,7 @@ window.TADAIMA_DATA = {
       "district": "Kuragano-cho",
       "districtJa": "倉賀野町",
       "title": "Used 3SLDK built 2019 — light-steel, city gas, parking for 3",
-      "priceMan": 3090,
+      "priceMan": 3090.0,
       "priceFrom": false,
       "landM2": 165.03,
       "buildingM2": 103.6,
@@ -231,7 +235,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z78010356/185349002/x1030Z78010356.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -764,7 +769,7 @@ window.TADAIMA_DATA = {
       "district": "Tatsumi-cho",
       "districtJa": "竜見町",
       "title": "Corner vacant plot 9 minutes from Takasaki Station — extra charges on top",
-      "priceMan": 2690,
+      "priceMan": 2690.0,
       "priceFrom": false,
       "landM2": 207.03,
       "buildingM2": null,
@@ -792,7 +797,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z77036545/140143001/x1030Z77036545.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -801,7 +807,7 @@ window.TADAIMA_DATA = {
       "district": "Yanaka-cho",
       "districtJa": "矢中町",
       "title": "269m² former farmland by Kuragano — pre-subdivision, control area",
-      "priceMan": 2050,
+      "priceMan": 2050.0,
       "priceFrom": false,
       "landM2": 269.83,
       "buildingM2": null,
@@ -829,7 +835,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z20591805/140143001/x1030Z20591805.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -839,7 +846,7 @@ window.TADAIMA_DATA = {
       "district": "Akasaka-cho",
       "districtJa": "赤坂町",
       "title": "173m² plot by Kita-Takasaki with no legal road frontage",
-      "priceMan": 250,
+      "priceMan": 250.0,
       "priceFrom": false,
       "landM2": 173.88,
       "buildingM2": null,
@@ -867,7 +874,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z20615421/140143001/x1030Z20615421.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -877,7 +885,7 @@ window.TADAIMA_DATA = {
       "district": "Wakamatsu-cho",
       "districtJa": "若松町",
       "title": "255m² vacant plot 14 minutes from Takasaki — road frontage unstated",
-      "priceMan": 300,
+      "priceMan": 300.0,
       "priceFrom": false,
       "landM2": 255.05,
       "buildingM2": null,
@@ -905,7 +913,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z78332587/104433001/x1030Z78332587.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -914,7 +923,7 @@ window.TADAIMA_DATA = {
       "district": "Miyamoto-cho",
       "districtJa": "宮元町",
       "title": "Central plot near Takasaki city hall — 1.7m frontage, no car access",
-      "priceMan": 800,
+      "priceMan": 800.0,
       "priceFrom": false,
       "landM2": 211.35,
       "buildingM2": null,
@@ -942,7 +951,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z21456564/004540000/x1030Z21456564.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -951,7 +961,7 @@ window.TADAIMA_DATA = {
       "district": "Namie-cho",
       "districtJa": "並榎町",
       "title": "Vacant corner plot by Kita-Takasaki — setback and a disclosure notice",
-      "priceMan": 1850,
+      "priceMan": 1850.0,
       "priceFrom": false,
       "landM2": 267.2,
       "buildingM2": null,
@@ -979,7 +989,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z77140886/140143001/x1030Z77140886.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -988,7 +999,7 @@ window.TADAIMA_DATA = {
       "district": "Iizuka-cho",
       "districtJa": "飯塚町",
       "title": "Demolition-cleared plot by Kita-Takasaki on a 6.4m north road",
-      "priceMan": 1500,
+      "priceMan": 1500.0,
       "priceFrom": false,
       "landM2": 143.3,
       "buildingM2": null,
@@ -1015,7 +1026,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z20046185/146659001/x1030Z20046185.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {

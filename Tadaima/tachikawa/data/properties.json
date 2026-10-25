@@ -1002,6 +1002,41 @@
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
+    },
+    {
+      "type": "house-used",
+      "title": "上砂町４（武蔵砂川駅） 2000万円",
+      "districtJa": "上砂町4",
+      "priceMan": 2000.0,
+      "priceFrom": false,
+      "landM2": 77.59,
+      "buildingM2": 57.96,
+      "stationJa": "武蔵砂川",
+      "lineJa": "西武拝島線",
+      "walkMin": 7,
+      "layout": "2LDK+S(納戸)",
+      "built": "1979年2月",
+      "zoning": "1種低層",
+      "id": "auto-345d1bc1371b",
+      "district": "上砂町4",
+      "station": "Musashi-Sunagawa",
+      "line": "Seibu Haijima Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "331.27m2、東6m幅(接道幅2m) / 景観法による規制有、航空法による規制有、安全条例による規制有、宅地造成工事規制区域、高度地区、日影制限有"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/tokyo/sc_tachikawa/nc_21774085/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 47
     }
   ],
   "scoring": {

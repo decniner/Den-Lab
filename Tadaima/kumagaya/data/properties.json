@@ -62,7 +62,7 @@
       "district": "Sayada",
       "districtJa": "佐谷田",
       "title": "New 4LDK — single-unit sale north of Kumagaya Station",
-      "priceMan": 3390,
+      "priceMan": 3390.0,
       "priceFrom": false,
       "landM2": 126.83,
       "buildingM2": 99.78,
@@ -87,7 +87,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/11202/030/W/21351375.html",
         "verified": "detail",
-        "infoDate": "2026-10-20"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -297,7 +298,7 @@
       "district": "Shinbori",
       "districtJa": "新堀",
       "title": "Used 3SLDK (2002) — Hebel House steel-frame build, 7 min to Kagohara",
-      "priceMan": 2780,
+      "priceMan": 2780.0,
       "priceFrom": false,
       "landM2": 165.44,
       "buildingM2": 105.96,
@@ -318,7 +319,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21679966/179201001/x1030Z21679966.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -360,7 +362,7 @@
       "district": "Shinbori",
       "districtJa": "新堀",
       "title": "Used 5LDK (1993) — cheapest JR-station walk in this collection",
-      "priceMan": 880,
+      "priceMan": 880.0,
       "priceFrom": false,
       "landM2": 100,
       "buildingM2": 98.12,
@@ -381,7 +383,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/4/11202/1497150003394/149715/x41497150003394.html",
         "verified": "detail",
-        "infoDate": "2026-10-18"
+        "infoDate": "2026-10-25",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -390,7 +393,7 @@
       "district": "Oaso",
       "districtJa": "大麻生",
       "title": "Used 3LDK (1998) — south garden, 6 min to Oaso Station",
-      "priceMan": 880,
+      "priceMan": 880.0,
       "priceFrom": false,
       "landM2": 136.23,
       "buildingM2": 82.8,
@@ -416,7 +419,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21130278/153974028/x1030Z21130278.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -459,7 +463,7 @@
       "district": "Senami",
       "districtJa": "瀬南",
       "title": "Used 4LDK (1997), part-renovated — 5 min to Hirose-Yachonomori",
-      "priceMan": 1480,
+      "priceMan": 1480.0,
       "priceFrom": false,
       "landM2": 162.91,
       "buildingM2": 119.03,
@@ -482,7 +486,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z77044432/153974028/x1030Z77044432.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -524,7 +529,7 @@
       "district": "Ishihara",
       "districtJa": "石原",
       "title": "Used 4LDK (1996), renovated — the Ishihara family starter",
-      "priceMan": 1299,
+      "priceMan": 1299.0,
       "priceFrom": false,
       "landM2": 100.12,
       "buildingM2": 80.31,
@@ -549,7 +554,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z77204229/153974028/x1030Z77204229.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -559,7 +565,7 @@
       "district": "Ishihara",
       "districtJa": "石原",
       "title": "Used 5DK (1978) — pre-1981 seismic standard, cross-renewed 2026",
-      "priceMan": 1100,
+      "priceMan": 1100.0,
       "priceFrom": false,
       "landM2": 128.64,
       "buildingM2": 101.84,
@@ -584,7 +590,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z20647242/189876001/x1030Z20647242.html",
         "verified": "detail",
-        "infoDate": "2026-10-21"
+        "infoDate": "2026-10-21",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -594,7 +601,7 @@
       "district": "Ginza 1",
       "districtJa": "銀座1",
       "title": "Commercial-zone plot 6 minutes from Kumagaya Station — building on site",
-      "priceMan": 3500,
+      "priceMan": 3500.0,
       "priceFrom": false,
       "landM2": 113.15,
       "buildingM2": null,
@@ -620,7 +627,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z21753170/035184013/x1030Z21753170.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -629,7 +637,7 @@
       "district": "Enoki-cho",
       "districtJa": "榎町",
       "title": "165m² plot 7 minutes from Kami-Kumagaya — 1980 house on site",
-      "priceMan": 1280,
+      "priceMan": 1280.0,
       "priceFrom": false,
       "landM2": 165.28,
       "buildingM2": null,
@@ -656,7 +664,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z21186605/000585092/x1030Z21186605.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -665,7 +674,7 @@
       "district": "Ishihara",
       "districtJa": "石原",
       "title": "Vacant 165m² plot 9 minutes from Ishihara at an anomalously low ¥100万",
-      "priceMan": 100,
+      "priceMan": 100.0,
       "priceFrom": false,
       "landM2": 165.86,
       "buildingM2": null,
@@ -691,7 +700,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z77284959/179201001/x1030Z77284959.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -700,7 +710,7 @@
       "district": "Miyamachi 1",
       "districtJa": "宮町1",
       "title": "Cheap plot between two stations — 1.88m road, setback and a 1972 house",
-      "priceMan": 555,
+      "priceMan": 555.0,
       "priceFrom": false,
       "landM2": 120.66,
       "buildingM2": null,
@@ -727,7 +737,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z20144496/142790011/x1030Z20144496.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -737,7 +748,7 @@
       "district": "Ishihara",
       "districtJa": "石原",
       "title": "Vacant 208m² plot 10 minutes from Ishihara — registered as paddy field",
-      "priceMan": 650,
+      "priceMan": 650.0,
       "priceFrom": false,
       "landM2": 208,
       "buildingM2": null,
@@ -764,7 +775,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z74681140/130748003/x1030Z74681140.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -773,7 +785,7 @@
       "district": "Shinbori-Shinden",
       "districtJa": "新堀新田",
       "title": "Huge vacant 497m² plot 10 minutes from Kagohara — lowest ¥/tsubo of the zoned lots",
-      "priceMan": 3150,
+      "priceMan": 3150.0,
       "priceFrom": false,
       "landM2": 496.99,
       "buildingM2": null,
@@ -800,7 +812,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z78521919/130748003/x1030Z78521919.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -809,7 +822,7 @@
       "district": "Miharumachi",
       "districtJa": "見晴町",
       "title": "250m² plot with wide 14.6m frontage, 10 minutes from Kami-Kumagaya — building on site",
-      "priceMan": 2380,
+      "priceMan": 2380.0,
       "priceFrom": false,
       "landM2": 250.01,
       "buildingM2": null,
@@ -835,7 +848,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z20927798/018377000/x1030Z20927798.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -844,7 +858,7 @@
       "district": "Hakoda 1",
       "districtJa": "箱田1",
       "title": "Large vacant 405m² plot 11 minutes from Kami-Kumagaya",
-      "priceMan": 2380,
+      "priceMan": 2380.0,
       "priceFrom": false,
       "landM2": 405.45,
       "buildingM2": null,
@@ -870,7 +884,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z21791775/183009001/x1030Z21791775.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -914,7 +929,7 @@
       "district": "Suehiro 2",
       "districtJa": "末広2",
       "title": "218m² plot 13 minutes from Kumagaya Station — liability waived, boundaries not clarified",
-      "priceMan": 2500,
+      "priceMan": 2500.0,
       "priceFrom": false,
       "landM2": 218.28,
       "buildingM2": null,
@@ -943,7 +958,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z20144504/142790011/x1030Z20144504.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -989,7 +1005,7 @@
       "district": "Shinbori",
       "districtJa": "新堀",
       "title": "Small 89m² plot at the 15-minute limit from Kagohara — boundaries not clarified, setback needed",
-      "priceMan": 400,
+      "priceMan": 350.0,
       "priceFrom": false,
       "landM2": 89.38,
       "buildingM2": null,
@@ -1017,9 +1033,47 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z21690108/174536001/x1030Z21690108.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 50.0,
+      "priceChangedOn": "2026-10-25"
+    },
+    {
+      "type": "house-used",
+      "title": "三本 750万円",
+      "districtJa": "三本",
+      "priceMan": 750.0,
+      "priceFrom": false,
+      "landM2": 500.35,
+      "buildingM2": 75.33,
+      "stationJa": "江南北",
+      "lineJa": "ほたる号",
+      "walkMin": 11,
+      "layout": "3DK",
+      "built": "1984年11月",
+      "zoning": "市街化調整区域、無指定",
+      "id": "auto-fc70c15a8c64",
+      "district": "三本",
+      "station": "江南北",
+      "line": "ほたる号",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、北4.8m幅、西2.7m幅 / 景観法による規制有、農地法届出要、宅地造成工事規制区域、上記地積の他に農地部分139m2があります。【農家以外が農地を取得する方法・要件】・新規就農者として申請:営農計画書を農業委員会に提出し、農業従事者としての基準を満たせば取得可能。【農地法3条主な許可要件】・農作業常時従事要件:所得者や世帯員が年間150日以上農作業に従事する。・全部効率利用要件:取得する農地を含め保有する全ての農地を効率的に耕作する。"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_kumagaya/nc_21888929/",
+        "verified": "detail",
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 42
     }
   ],
   "scoring": {
