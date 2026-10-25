@@ -251,7 +251,8 @@
       const clusters = clusterCandidates(scored);
       const activeCluster = activeLocalityByRegion.get(region);
       const previousStops = resultDays.slice().reverse().find(day => day.region === region && day.places?.length)?.places || [];
-      const previousPoint = mapPoint(previousStops.at(-1)) || (originRegion === region ? originPoint : null);
+      const previousPoint = mapPoint(previousStops.at(-1));
+      const routeStartPoint = previousPoint || (originRegion === region ? originPoint : null);
       const cluster = clusters.sort((a, b) => {
         if (activeCluster && a.key === activeCluster.key) return -1;
         if (activeCluster && b.key === activeCluster.key) return 1;
@@ -269,7 +270,7 @@
       activeLocalityByRegion.set(region, cluster);
       const fullDayStop = candidates.find(item => isFullDayPlace(item.place));
       const chosen = fullDayStop ? [fullDayStop.place] : candidates.slice(0, limit).map(item => item.place);
-      const selected = shortestStopOrder(chosen, previousPoint);
+      const selected = shortestStopOrder(chosen, routeStartPoint);
       selected.forEach(place => used.add(placeKey(place)));
       region = selected[0]?.region || region;
       const priorDay = resultDays.at(-1);
