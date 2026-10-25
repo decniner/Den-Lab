@@ -156,30 +156,7 @@
       "photographer": "lumoplank",
       "license": "CC0",
       "alt": "Traditional gassho-roof houses in Shirakawa-go",
-      "matchScore": 10,
-      "gallery": [
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Tales_from_Lafcadio_Hearn_%28IA_lafcadiohearn00hearrich%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3ATales_from_Lafcadio_Hearn_(IA_lafcadiohearn00hearrich).pdf",
-          "photographer": "Hearn, Lafcadio, 1850-1904",
-          "license": "Public domain",
-          "alt": "-- Some pages are missing in this file --"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/The_toils_of_Yoshitomo%3B_a_tragedy_of_ancient_Japan_%28IA_toilsofyoshitomo00koriiala%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AThe_toils_of_Yoshitomo%3B_a_tragedy_of_ancient_Japan_(IA_toilsofyoshitomo00koriiala).pdf",
-          "photographer": "Kori, Torahiko, 1890-1924",
-          "license": "Public domain",
-          "alt": "Subjects: Minamoto, Yoshitomo, 1123-1160"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Letters_From_Japan_A_Record_Of_Modern_Life_In_The_Island_Empire_Vol_II_%28IA_lettersfromjapan008458mbp%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3ALetters_From_Japan_A_Record_Of_Modern_Life_In_The_Island_Empire_Vol_II_(IA_lettersfromjapan008458mbp).pdf",
-          "photographer": "Mrs. Hugh Fraser",
-          "license": "Public domain",
-          "alt": "Subjects:"
-        }
-      ]
+      "matchScore": 10
     },
     {
       "placeId": "shiretoko-s-wild-edge",
@@ -454,30 +431,7 @@
       "photographer": "Ankur P",
       "license": "CC BY 2.0",
       "alt": "Traditional merchant houses on Sanmachi Suji in Takayama",
-      "matchScore": 10,
-      "gallery": [
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Glimpses_of_the_unusual_around_the_world_%28IA_glimpsesofunusua00rand%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AGlimpses_of_the_unusual_around_the_world_(IA_glimpsesofunusua00rand).pdf",
-          "photographer": "Randolph, Howard Stelle Fitz, 1883- [from old catalog]",
-          "license": "Public domain",
-          "alt": "Subjects: Voyages around the world"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Annual_events_in_Japan_%28IA_annualeventsinja00japa%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AAnnual_events_in_Japan_(IA_annualeventsinja00japa).pdf",
-          "photographer": "Japan. Unyusho. Kankokyoku",
-          "license": "Public domain",
-          "alt": "Subjects:"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/A_few_notes_on_varnishes_and_fossil_resins_%28IA_fewnotesonvarnis00clar%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AA_few_notes_on_varnishes_and_fossil_resins_(IA_fewnotesonvarnis00clar).pdf",
-          "photographer": "Clark, R. Ingham (Robert Ingham)",
-          "license": "Public domain",
-          "alt": "Subjects: Varnish and varnishing; Gums and resins"
-        }
-      ]
+      "matchScore": 10
     },
     {
       "placeId": "matsumoto-beneath-the-alps",
@@ -491,16 +445,7 @@
       "photographer": "柑橘類",
       "license": "CC BY-SA 3.0",
       "alt": "Matsumoto Castle above its moat with the Alps beyond",
-      "matchScore": 10,
-      "gallery": [
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Mountaineering_and_exploration_in_the_Japanese_Alps_%28IA_mountaineeringex00westrich%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AMountaineering_and_exploration_in_the_Japanese_Alps_(IA_mountaineeringex00westrich).pdf",
-          "photographer": "Weston, Walter, 1861-1940",
-          "license": "Public domain",
-          "alt": "Subjects: Mountaineering; Japan -- Description and travel"
-        }
-      ]
+      "matchScore": 10
     },
     {
       "placeId": "kamikochi-the-mountain-valley",
@@ -588,30 +533,7 @@
       "photographer": "Commons file author listed on source page",
       "license": "CC BY-SA 4.0",
       "alt": "Senjōjiki rocky coast near Aikawa on Sado Island",
-      "matchScore": 10,
-      "gallery": [
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Java%2C_the_wonderland%2C_by_Vereeniging_Toeristenverkeer%2C_Batavia%2C_1900.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AJava%2C_the_wonderland%2C_by_Vereeniging_Toeristenverkeer%2C_Batavia%2C_1900.djvu",
-          "photographer": "Batavia Vereeniging Toeristenverkeer",
-          "license": "Public domain",
-          "alt": "Sado Island’s wild coast in Japan"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Legend_and_romance%2C_African_and_European_%28IA_legendromanceafr01johniala%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3ALegend_and_romance%2C_African_and_European_(IA_legendromanceafr01johniala).pdf",
-          "photographer": "Johns, Richard",
-          "license": "Public domain",
-          "alt": "Subjects:"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/The_Mikado%27s_Empire_%28IA_themikadosempire00grifiala%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AThe_Mikado's_Empire_(IA_themikadosempire00grifiala).pdf",
-          "photographer": "Griffis, William Elliot, 1843-1928",
-          "license": "Public domain",
-          "alt": "Subjects: Japan -- History; Japan -- Social life and customs"
-        }
-      ]
+      "matchScore": 10
     },
     {
       "placeId": "kyoto-at-first-light",
@@ -640,13 +562,6 @@
           "photographer": "sodai gomi",
           "license": "CC BY 2.0",
           "alt": "Kyoto was the first city in Japan to have streetcars. They've been re-introduced as LRT (light rail transit) www.subways.net/japan/kyoto.htm"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/CLIMATE_CHANGE_STATUS_OF_THE_KYOTO_PROTOCOL_AFTER_THREE_YEARS_%28IA_gov.gpo.fdsys.CHRG-106shrg67624%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3ACLIMATE_CHANGE_STATUS_OF_THE_KYOTO_PROTOCOL_AFTER_THREE_YEARS_(IA_gov.gpo.fdsys.CHRG-106shrg67624).pdf",
-          "photographer": "Committee on Foreign Relations",
-          "license": "Public domain",
-          "alt": "Government Publishing OfficeU.S. CongressSenateCommittee on Energy and Natural ResourcesCommittee on Foreign RelationsCLIMATE CHANGE STATUS OF THE KYOTO PROTOCOL AFTER THREE YEARSDate(s) Held: 2000-09-28 106th Congress, 2nd SessionGPO Docum"
         }
       ]
     },
@@ -685,30 +600,7 @@
       "photographer": "Jakub Hałun",
       "license": "CC BY 4.0",
       "alt": "Great Buddha Vairocana inside Todai-ji Temple in Nara",
-      "matchScore": 10,
-      "gallery": [
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Green_River._Canyon_Lodore%2C_near_view_of_593%2C_with_boats_and_men_in_them_on_left_bank_between_two_-_NARA_-_517883.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AGreen_River._Canyon_Lodore%2C_near_view_of_593%2C_with_boats_and_men_in_them_on_left_bank_between_two_-_NARA_-_517883.tif",
-          "photographer": "Elias Olcott Beaman / James Fennemore / John Karl Hillers",
-          "license": "Public domain",
-          "alt": "Nara, between trees in Japan"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Glen_Canyon._Tall_rugged_tree_on_left_foreground%2C_canyon_between_curved_boulder._Old_nos._297%2C_399%2C_-_NARA_-_517976.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AGlen_Canyon._Tall_rugged_tree_on_left_foreground%2C_canyon_between_curved_boulder._Old_nos._297%2C_399%2C_-_NARA_-_517976.tif",
-          "photographer": "Elias Olcott Beaman / James Fennemore / John Karl Hillers",
-          "license": "Public domain",
-          "alt": "Nara, between trees in Japan"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Baby_sleeping_in_a_swing_suspended_between_trees_-_NARA_-_285361.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABaby_sleeping_in_a_swing_suspended_between_trees_-_NARA_-_285361.tif",
-          "photographer": "Unknown authorUnknown author or not provided",
-          "license": "Public domain",
-          "alt": "Nara, between trees in Japan"
-        }
-      ]
+      "matchScore": 10
     },
     {
       "placeId": "arashiyama-s-green-corridor",
@@ -722,30 +614,7 @@
       "photographer": "Erol Ahmed",
       "license": "CC0",
       "alt": "Tall bamboo along the Arashiyama Grove path in Kyoto",
-      "matchScore": 10,
-      "gallery": [
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/68/Penrhyn%27s_pilgrimage_%28IA_penrhynspilgrima00pete%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3APenrhyn's_pilgrimage_(IA_penrhynspilgrima00pete).pdf",
-          "photographer": "Peterson, Arthur, 1851-1932",
-          "license": "Public domain",
-          "alt": "Poem, in two cantos\n\nSubjects:"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/In_lotus-land_Japan_%28IA_inlotuslandjapan00pontrich%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AIn_lotus-land_Japan_(IA_inlotuslandjapan00pontrich).pdf",
-          "photographer": "Ponting, Herbert George",
-          "license": "Public domain",
-          "alt": "Subjects: Japan -- Description and travel; Japan -- Social life and customs"
-        },
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Over_Japan_way_%28IA_overjapanway00hitciala%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3AOver_Japan_way_(IA_overjapanway00hitciala).pdf",
-          "photographer": "Hitchcock, Alfred M. (Alfred Marshall), 1868-1941",
-          "license": "Public domain",
-          "alt": "Subjects: Japan -- Description and travel"
-        }
-      ]
+      "matchScore": 10
     },
     {
       "placeId": "koyasan-after-dusk",
@@ -803,16 +672,7 @@
       "photographer": "NevinThompson",
       "license": "CC BY-SA 4.0",
       "alt": "Small boat harbor on Lake Biwa at Hikone, Shiga Prefecture",
-      "matchScore": 10,
-      "gallery": [
-        {
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/Pacific_shores%2C_or%2C_Adventures_in_eastern_seas_%28IA_pacificshoresora00opti%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-          "sourcePage": "https://commons.wikimedia.org/wiki/File%3APacific_shores%2C_or%2C_Adventures_in_eastern_seas_(IA_pacificshoresora00opti).pdf",
-          "photographer": "Optic, Oliver, 1822-1897\nShute, A. B., illustrator\nLee and Shepard, publisher",
-          "license": "Public domain",
-          "alt": "Publisher's advertisements on 6 pages at end\n\nSubjects: Voyages and travels"
-        }
-      ]
+      "matchScore": 10
     },
     {
       "placeId": "miyajima-tide-lines",
