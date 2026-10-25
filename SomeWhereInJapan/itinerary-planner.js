@@ -11,6 +11,21 @@
   const regionRoot = document.querySelector('#itinerary-regions');
   const interestRoot = document.querySelector('#itinerary-interests');
   const places = typeof DESTINATIONS !== 'undefined' && Array.isArray(DESTINATIONS) ? DESTINATIONS : [];
+  let mapLocationsPromise = null;
+  function destinationsWithMapLocations() {
+    if (!mapLocationsPromise) {
+      mapLocationsPromise = fetch('data/destination-map-locations.json?v=20261025-1')
+        .then(response => { if (!response.ok) throw new Error('Map locations unavailable'); return response.json(); })
+        .then(data => {
+          const records = data?.records || {};
+          return places.map(place => {
+            const id = window.GuideLinks?.destinationIdForName?.(place.name) || place.id || place.slug;
+            return { ...place, mapLocation: id ? records[id] || null : null };
+          });
+        });
+    }
+    return mapLocationsPromise;
+  }
   const regions = ['Hokkaido','Tohoku','Kanto','Chubu','Kansai','Chugoku','Shikoku','Kyushu','Okinawa'];
   const interests = ['Culture','Nature','Food','Islands','Slow travel'];
   let currentPlan = null;
@@ -167,11 +182,18 @@
   function formatPlanText() {
     return currentPlan.days.map((day,index)=>`${day.date} · ${day.region || 'Japan'}\n${day.places.map((place,i)=>`${i+1}. ${place.name} — ${placeLocation(place)}`).join('\n') || 'No places selected'}`).join('\n\n') + '\n\nCheck current transport, access and opening information before travelling.';
   }
-  form.addEventListener('submit', event => {
+  form.addEventListener('submit', async event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
     currentConfig = getConfig();
-    currentPlan = core.buildItinerary({ destinations: places, ...currentConfig, savedIds: readSavedPlaces() });
+    status.textContent = 'Grouping nearby places…';
+    try {
+      const mappedPlaces = await destinationsWithMapLocations();
+      currentPlan = core.buildItinerary({ destinations: mappedPlaces, ...currentConfig, savedIds: readSavedPlaces() });
+    } catch {
+      currentPlan = core.buildItinerary({ destinations: places, ...currentConfig, savedIds: readSavedPlaces() });
+      currentPlan.notes.unshift('Map locations could not be loaded, so stops are grouped by area name only. Reconnect and rebuild for geographic clustering.');
+    }
     renderPlan();
     if (!currentPlan.days.length) status.textContent = currentPlan.notes[0] || 'No itinerary could be created.';
     output.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
