@@ -249,14 +249,6 @@
       region = selected[0]?.region || region;
       const priorDay = resultDays.at(-1);
       const priorLocality = priorDay?.locality || '';
-      const fullDayStop = candidates.find(item => isFullDayPlace(item.place));
-      const selected = fullDayStop
-        ? [fullDayStop.place]
-        : candidates.slice(0, limit).map(item => item.place);
-      selected.forEach(place => used.add(placeKey(place)));
-      region = selected[0]?.region || region;
-      const priorDay = resultDays.at(-1);
-      const priorLocality = priorDay?.locality || '';
       resultDays.push({
         date: dateKey(date), month: MONTHS[month - 1], region, locality,
         places: selected,
