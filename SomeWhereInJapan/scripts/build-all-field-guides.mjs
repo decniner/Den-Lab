@@ -85,7 +85,13 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
   let gallery = '';
   const existingGallery = html.match(/<div class="jg-photo-gallery"[^>]*>[\s\S]*?<\/div>/i)?.[0] || '';
   const researchedGallery = researchById.get(placeId)?.gallery || [];
-  const images = researchedGallery.filter(photo => photo?.imageUrl && photo?.sourcePage && photo?.photographer && photo?.license && photo?.alt);
+  const routePictureImages = [...html.matchAll(/<section[^>]*class="[^"]*route-in-pictures[^"]*"[^>]*>[\\s\\S]*?<img\\b[^>]*src="([^"]+)"[^>]*alt="([^"]*)"[^>]*>[\\s\\S]*?<a[^>]*href="([^"]+)"[^>]*>/gi)]
+    .map(match => ({ imageUrl: decode(match[1]), sourcePage: decode(match[3]), photographer: 'Route photo source', license: 'See source page', alt: decode(match[2]) || placeName }))
+    .filter(photo => photo.imageUrl && photo.sourcePage);
+  const existingPageImages = [...html.matchAll(/<img\\b[^>]*src="([^"]+)"[^>]*alt="([^"]*)"[^>]*>/gi)]
+    .map(match => ({ imageUrl: decode(match[1]), sourcePage: '', photographer: '', license: '', alt: decode(match[2]) || placeName }))
+    .filter(photo => photo.imageUrl && !/logo|icon|map/i.test(photo.imageUrl));
+  const images = [...researchedGallery, ...routePictureImages].filter(photo => photo?.imageUrl && photo?.sourcePage && photo?.photographer && photo?.license && photo?.alt);
   if (images.length) {
     gallery = `<div class="jg-photo-gallery" aria-label="Verified photos of ${esc(placeName)}">${images.map(photo => `<figure><img data-photo-verified="true" data-photo-source="${esc(photo.sourcePage)}" data-photo-credit="${esc(photo.photographer)}" data-photo-license="${esc(photo.license)}" data-photo-alt="${esc(photo.alt)}" src="${esc(photo.imageUrl)}" alt="${esc(photo.alt)}" loading="lazy" decoding="async"><figcaption>${esc(photo.photographer)} · ${esc(photo.license)} · <a href="${esc(photo.sourcePage)}" target="_blank" rel="noopener noreferrer">Photo source</a></figcaption></figure>`).join('')}</div>`;
   } else if (existingGallery) {
