@@ -89,6 +89,10 @@
     if (origin) params.set('origin', origin);
     return `https://www.google.com/maps/dir/?${params.toString()}`;
   }
+  function placeMapUrl(place) {
+    const params = new URLSearchParams({ api: '1', query: directionsLocation(place) });
+    return `https://www.google.com/maps/search/?${params.toString()}`;
+  }
   function appendLink(parent, label, href) {
     if (!href) return;
     const link = document.createElement('a');
@@ -105,9 +109,10 @@
     const description = document.createElement('p'); description.className = 'itinerary-stop-description'; description.textContent = place.description || 'Explore the place guide for visitor information.';
     const actions = document.createElement('div'); actions.className = 'itinerary-stop-actions';
     const previousStop = currentPlan.days[dayIndex].places[stopIndex - 1];
-    const origin = previousStop ? directionsLocation(previousStop) : dayIndex === 0 ? currentConfig.origin : '';
-    const directionsLabel = dayIndex > 0 && !previousStop ? 'Choose your start in Maps ↗' : 'Open live directions ↗';
-    appendLink(actions, directionsLabel, directionsUrl(origin, place));
+    const hasKnownStart = Boolean(previousStop || (dayIndex === 0 && currentConfig.origin));
+    const origin = previousStop ? directionsLocation(previousStop) : currentConfig.origin;
+    const directionsLabel = hasKnownStart ? 'Open live directions ↗' : 'Open map & choose start ↗';
+    appendLink(actions, directionsLabel, hasKnownStart ? directionsUrl(origin, place) : placeMapUrl(place));
     const guide = window.GuideLinks?.destinationUrl?.(place.name);
     if (guide) appendLink(actions, 'Place guide ↗', guide);
     const dayDate = currentPlan.days[dayIndex].date;
