@@ -72,10 +72,20 @@
     };
   }
   function placeLocation(place) {
-    return String(place.place || `${place.name}, ${place.region}, Japan`).trim();
+    return String(place.mapLocation?.locator || place.place || `${place.region}, Japan`).trim();
+  }
+  function directionsLocation(place) {
+    const mapLocation = place.mapLocation;
+    const latitude = Number(mapLocation?.latitude);
+    const longitude = Number(mapLocation?.longitude);
+    if (mapLocation?.precision === 'destination' && Number.isFinite(latitude) && Number.isFinite(longitude)) {
+      return `${latitude},${longitude}`;
+    }
+    const area = mapLocation?.locator || place.place || place.region || 'Japan';
+    return `${place.name}, ${area}, Japan`;
   }
   function directionsUrl(origin, place) {
-    const params = new URLSearchParams({ api: '1', destination: placeLocation(place), travelmode: 'transit' });
+    const params = new URLSearchParams({ api: '1', destination: directionsLocation(place), travelmode: 'transit' });
     if (origin) params.set('origin', origin);
     return `https://www.google.com/maps/dir/?${params.toString()}`;
   }
@@ -97,7 +107,7 @@
     const previousStop = currentPlan.days[dayIndex].places[stopIndex - 1];
     const earlierStops = currentPlan.days.slice(0,dayIndex).flatMap(day=>day.places || []);
     const priorStop = earlierStops.at(-1);
-    const origin = previousStop ? placeLocation(previousStop) : priorStop ? placeLocation(priorStop) : currentConfig.origin;
+    const origin = previousStop ? directionsLocation(previousStop) : priorStop ? directionsLocation(priorStop) : currentConfig.origin;
     appendLink(actions, 'Open live directions ↗', directionsUrl(origin, place));
     const guide = window.GuideLinks?.destinationUrl?.(place.name);
     if (guide) appendLink(actions, 'Place guide ↗', guide);
@@ -167,7 +177,7 @@
     if (currentConfig.endpoint) {
       const finish = document.createElement('p'); finish.textContent = `Finish: ${currentConfig.endpoint}. Check this final connection with live directions.`; last.append(finish);
       const finalPlace = finalStops.at(-1);
-      if (finalPlace) appendLink(last, 'Directions to your end point ↗', directionsUrl(placeLocation(finalPlace), { place: currentConfig.endpoint }));
+      if (finalPlace) appendLink(last, 'Directions to your end point ↗', directionsUrl(directionsLocation(finalPlace), { place: currentConfig.endpoint }));
     } else {
       const reminder = document.createElement('p'); reminder.textContent = 'Add an end point above if you want a reminder for your final transfer.'; last.append(reminder);
     }
