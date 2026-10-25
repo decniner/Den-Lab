@@ -89,6 +89,58 @@
     return { score, seasonal };
   }
 
+  const LOCATION_CLUSTER_RADIUS_KM = 8;
+
+  function mapPoint(place) {
+    const point = place?.mapLocation;
+    if (!point) return null;
+    const latitude = Number(point.latitude), longitude = Number(point.longitude);
+    if (!Number.isFinite(latitude) || !Number.isFinite(longitude) || Math.abs(latitude) > 90 || Math.abs(longitude) > 180) return null;
+    return { latitude, longitude };
+  }
+
+  function distanceKm(a, b) {
+    if (!a || !b) return Infinity;
+    const radians = value => value * Math.PI / 180;
+    const lat1 = radians(a.latitude), lat2 = radians(b.latitude);
+    const dLat = lat2 - lat1, dLon = radians(b.longitude - a.longitude);
+    const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
+    return 6371 * 2 * Math.asin(Math.sqrt(Math.min(1, h)));
+  }
+
+  function clusterCandidates(scored) {
+    const pending = [...scored], clusters = [];
+    while (pending.some(item => mapPoint(item.place))) {
+      const seedIndex = pending.findIndex(item => mapPoint(item.place));
+      const seed = pending[seedIndex], center = mapPoint(seed.place), members = [];
+      for (let index = pending.length - 1; index >= 0; index--) {
+        const point = mapPoint(pending[index].place);
+        if (point && distanceKm(center, point) <= LOCATION_CLUSTER_RADIUS_KM) members.unshift(...pending.splice(index, 1));
+      }
+      clusters.push({ key: placeKey(seed.place), locality: seed.locality, center, items: members });
+    }
+    const fallback = new Map();
+    pending.forEach(item => { if (!fallback.has(item.locality)) fallback.set(item.locality, []); fallback.get(item.locality).push(item); });
+    fallback.forEach((items, locality) => clusters.push({ key: 'area:' + locality, locality, center: null, items }));
+    return clusters;
+  }
+
+  function shortestStopOrder(places, startPoint = null) {
+    if (places.length < 2 || places.some(place => !mapPoint(place))) return places;
+    let best = null, bestDistance = Infinity;
+    const visit = (remaining, path, distance) => {
+      if (!remaining.length) { if (distance < bestDistance) { bestDistance = distance; best = path; } return; }
+      for (let index = 0; index < remaining.length; index++) {
+        const place = remaining[index], point = mapPoint(place);
+        const nextDistance = distance + distanceKm(path.length ? mapPoint(path[path.length - 1]) : startPoint, point);
+        if (nextDistance >= bestDistance) continue;
+        visit([...remaining.slice(0, index), ...remaining.slice(index + 1)], [...path, place], nextDistance);
+      }
+    };
+    visit(places, [], 0);
+    return best || places;
+  }
+
   function buildItinerary({ destinations = [], startDate, days = 0, regions = [], interests = [], pace = 'balanced', savedIds = [], origin = '' } = {}) {
     const firstDate = parseDate(startDate);
     const count = Math.max(0, Math.min(31, Math.floor(Number(days) || 0)));
@@ -170,37 +222,32 @@
 
       const scored = pool.map(place => ({ place, locality: localityKey(place), ...scorePlace(place, month, safeInterests, saved) }))
         .sort((a, b) => b.score - a.score || String(a.place.name).localeCompare(String(b.place.name)));
-      const localityGroups = new Map();
-      scored.forEach(item => {
-        if (!localityGroups.has(item.locality)) localityGroups.set(item.locality, []);
-        localityGroups.get(item.locality).push(item);
-      });
-      const activeLocality = activeLocalityByRegion.get(region);
-      const [locality, localCandidates] = (activeLocality && localityGroups.has(activeLocality)
-        ? [activeLocality, localityGroups.get(activeLocality)]
-        : [...localityGroups.entries()].sort((a,b) => {
-          const activeRank = areaRouteRank(region,activeLocality);
-          const aRank = areaRouteRank(region,a[0]);
-          const bRank = areaRouteRank(region,b[0]);
-          if (activeRank >= 0) {
-            const aForward = aRank < 0 || aRank >= activeRank;
-            const bForward = bRank < 0 || bRank >= activeRank;
-            if (aForward !== bForward) return aForward ? -1 : 1;
-          }
-          if (aRank >= 0 && bRank >= 0 && aRank !== bRank) return aRank - bRank;
-          if (aRank >= 0 && bRank < 0) return -1;
-          if (bRank >= 0 && aRank < 0) return 1;
-          const aSeasonal = a[1].filter(item=>item.seasonal);
-          const bSeasonal = b[1].filter(item=>item.seasonal);
-          const aBest = (aSeasonal.length ? aSeasonal : a[1])[0];
-          const bBest = (bSeasonal.length ? bSeasonal : b[1])[0];
-          return bBest.score - aBest.score || b[1].length - a[1].length || a[0].localeCompare(b[0]);
-        })[0]);
+      const clusters = clusterCandidates(scored);
+      const activeCluster = activeLocalityByRegion.get(region);
+      const previousStops = resultDays.slice().reverse().find(day => day.region === region && day.places?.length)?.places || [];
+      const previousPoint = mapPoint(previousStops.at(-1));
+      const cluster = clusters.sort((a, b) => {
+        if (activeCluster && a.key === activeCluster.key) return -1;
+        if (activeCluster && b.key === activeCluster.key) return 1;
+        if (previousPoint && a.center && b.center) return distanceKm(previousPoint, a.center) - distanceKm(previousPoint, b.center);
+        const aRank = areaRouteRank(region, a.locality), bRank = areaRouteRank(region, b.locality);
+        if (aRank >= 0 && bRank >= 0 && aRank !== bRank) return aRank - bRank;
+        const aSeasonal = a.items.filter(item => item.seasonal), bSeasonal = b.items.filter(item => item.seasonal);
+        const aBest = (aSeasonal.length ? aSeasonal : a.items)[0], bBest = (bSeasonal.length ? bSeasonal : b.items)[0];
+        return bBest.score - aBest.score || b.items.length - a.items.length || a.locality.localeCompare(b.locality);
+      })[0];
+      const locality = cluster.locality, localCandidates = cluster.items;
       const seasonalCandidates = localCandidates.filter(item => item.seasonal);
-      if (seasonalCandidates.length) sawSeasonMatch = true;
-      else hadUnseasonedDay = true;
+      if (seasonalCandidates.length) sawSeasonMatch = true; else hadUnseasonedDay = true;
       const candidates = seasonalCandidates.length ? seasonalCandidates : localCandidates;
-      activeLocalityByRegion.set(region,locality);
+      activeLocalityByRegion.set(region, cluster);
+      const fullDayStop = candidates.find(item => isFullDayPlace(item.place));
+      const chosen = fullDayStop ? [fullDayStop.place] : candidates.slice(0, limit).map(item => item.place);
+      const selected = shortestStopOrder(chosen, previousPoint);
+      selected.forEach(place => used.add(placeKey(place)));
+      region = selected[0]?.region || region;
+      const priorDay = resultDays.at(-1);
+      const priorLocality = priorDay?.locality || '';
       const fullDayStop = candidates.find(item => isFullDayPlace(item.place));
       const selected = fullDayStop
         ? [fullDayStop.place]
@@ -227,6 +274,7 @@
       return Array.isArray(windows) && windows.length && !resultDays.some(day => windows.some(window => window?.start <= day.date && day.date <= window?.end));
     });
     if (hasUnscheduledEvents) notes.push('Some date-specific events were left out because their confirmed event dates do not overlap your trip dates. Check the official event calendar for other years.');
+    if (safePlaces.some(place => mapPoint(place))) notes.push('Each day stays within about 8 km of a mapped point; stop order minimizes straight-line distance. Map points may mark a wider area, and live routes can differ.');
     notes.push('Suggested stop order only. Travel times, opening days, event schedules, and access can change; confirm them with linked official sources where available and live directions.');
     return { days: resultDays, notes };
   }
