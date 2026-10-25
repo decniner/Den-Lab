@@ -1,7 +1,7 @@
 {
   "generatedOn": "2026-10-24",
   "searchedCount": 10,
-  "matchedCount": 53,
+  "matchedCount": 54,
   "records": [
     {
       "placeId": "daisetsuzan-high-country",
@@ -744,6 +744,36 @@
       "license": "CC BY-SA 2.0",
       "alt": "Mossy cedar forest in Shiratani Unsuikyo on Yakushima Island",
       "matchScore": 10
+    },
+    {
+      "placeId": "kappabashi-dougu-street",
+      "place": "Kappabashi Dougu Street",
+      "status": "matched",
+      "searchedOn": "2026-10-25",
+      "query": "Kappabashi Dougu Street",
+      "gallery": [
+        {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kappabashi%20Street%20with%20Tokyo%20Skytree%20in%20Background%2C%20Tokyo%20130810%201.jpg?width=1200",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Kappabashi_Street_with_Tokyo_Skytree_in_Background,_Tokyo_130810_1.jpg",
+          "photographer": "DXR",
+          "license": "CC BY-SA 3.0",
+          "alt": "Kappabashi street and an adjoining Asakusa street, with Tokyo Skytree in the distance."
+        },
+        {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kitchen%20knives%20store%20by%20Photocapy%20in%20Kappa-bashi%2C%20Tokyo.jpg?width=1000",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Kitchen_knives_store_by_Photocapy_in_Kappa-bashi,_Tokyo.jpg",
+          "photographer": "Photocapy",
+          "license": "CC BY-SA 2.0",
+          "alt": "Japanese kitchen knives displayed in a Kappabashi specialty shop."
+        },
+        {
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sampuru%20plastic%20food%20items%20%289412111724%29.jpg?width=1200",
+          "sourcePage": "https://commons.wikimedia.org/wiki/File:Sampuru_plastic_food_items_(9412111724).jpg",
+          "photographer": "Maarten Heerlien",
+          "license": "CC BY 2.0",
+          "alt": "Realistic plastic food samples for sale in a Kappabashi shop."
+        }
+      ]
     }
   ]
 }
