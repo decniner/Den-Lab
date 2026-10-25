@@ -146,7 +146,7 @@ window.TADAIMA_DATA = {
       "district": "Shimacho, Minuma Ward",
       "districtJa": "見沼区島町",
       "title": "New 3LDK+S in Shimacho, Minuma",
-      "priceMan": 4180,
+      "priceMan": 4180.0,
       "priceFrom": false,
       "landM2": 100.01,
       "buildingM2": 103.3,
@@ -169,7 +169,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/11104/030/Z/21943259.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -381,7 +382,7 @@ window.TADAIMA_DATA = {
       "district": "Kofukasaku, Minuma Ward",
       "districtJa": "見沼区大字小深作",
       "title": "Used 4LDK (1998), renovated, on a 130m² plot",
-      "priceMan": 2680,
+      "priceMan": 2680.0,
       "priceFrom": false,
       "landM2": 130.11,
       "buildingM2": 88.6,
@@ -405,7 +406,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11104/030Z21629455/193612001/x1030Z21629455.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -552,7 +554,7 @@ window.TADAIMA_DATA = {
       "district": "Sakuragaoka 1, Chuo Ward",
       "districtJa": "中央区桜丘1丁目",
       "title": "Vacant 168m² lot at the walk limit in Sakuragaoka",
-      "priceMan": 3998,
+      "priceMan": 3998.0,
       "priceFrom": false,
       "landM2": 168.16,
       "buildingM2": null,
@@ -580,7 +582,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11105/1251460111944/125146/x41251460111944.html",
         "verified": "detail",
-        "infoDate": "2026-10-24"
+        "infoDate": "2026-10-25",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -590,7 +593,7 @@ window.TADAIMA_DATA = {
       "district": "Oto 6, Chuo Ward",
       "districtJa": "中央区大戸6丁目",
       "title": "146m² lot just 4 minutes from Minami-Yono — building on site",
-      "priceMan": 2980,
+      "priceMan": 2980.0,
       "priceFrom": false,
       "landM2": 146.46,
       "buildingM2": null,
@@ -617,7 +620,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11105/1161840085648/116184/x41161840085648.html",
         "verified": "detail",
-        "infoDate": "2026-10-19"
+        "infoDate": "2026-10-19",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -983,6 +987,355 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11107/030Z21792840/006110051/x1030Z21792840.html",
         "verified": "detail",
         "infoDate": "2026-10-19"
+      }
+    },
+    {
+      "type": "house-new",
+      "title": "◆メルディア北与野◆ついに最終1邸！南向きの陽だまり邸宅×LDK広々18帖超プラン♪",
+      "districtJa": "中央区本町東5",
+      "priceMan": 4999.0,
+      "priceFrom": false,
+      "landM2": 53.01,
+      "buildingM2": 107.84,
+      "stationJa": "北与野",
+      "lineJa": "JR埼京線",
+      "walkMin": 14,
+      "layout": "3LDK+S(納戸)",
+      "built": "2026年10月予定",
+      "zoning": "近隣商業",
+      "id": "auto-972ecbe5b2d1",
+      "district": "中央区本町東5",
+      "station": "北与野",
+      "line": "JR埼京線",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "- / 文化財保護法による規制有、景観法による規制有、準防火地域、日影制限有、道路斜線制限隣地斜線制限宅地造成及び特定盛土等規制法"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/ikkodate/saitama/sc_saitamashichuo/nc_21361182/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 0
+    },
+    {
+      "type": "house-new",
+      "title": "飯田グループホールディングス　リーブルガーデン　岩槻区小溝第4",
+      "districtJa": "岩槻区大字小溝",
+      "priceMan": 2880.0,
+      "priceFrom": false,
+      "landM2": 126.95,
+      "buildingM2": 111.79,
+      "stationJa": "豊春",
+      "lineJa": "東武野田線",
+      "walkMin": 15,
+      "layout": "4LDK",
+      "built": "2026年8月",
+      "zoning": "市街化調整区域",
+      "id": "auto-15dc121381ac",
+      "district": "岩槻区大字小溝",
+      "station": "豊春",
+      "line": "東武野田線",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "道路幅:7m、アスファルト舗装、北西側7m公道1258号線建築基準法第42条1項1号 / 宅地内に電柱及び電線が入る場合があります。"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/ikkodate/saitama/sc_saitamashiiwatsuki/nc_21439401/",
+        "verified": "detail",
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 0
+    },
+    {
+      "type": "house-used",
+      "title": "【新築時モデル棟】こだわりを感じる旧ポラス分譲住宅",
+      "districtJa": "西区大字指扇",
+      "priceMan": 3480.0,
+      "priceFrom": false,
+      "landM2": 127.85,
+      "buildingM2": 102.78,
+      "stationJa": "西大宮",
+      "lineJa": "JR川越線",
+      "walkMin": 14,
+      "layout": "2LDK+2S(納戸)",
+      "built": "2011年6月",
+      "zoning": "1種中高",
+      "id": "auto-b6bbcc61f4fe",
+      "district": "西区大字指扇",
+      "station": "西大宮",
+      "line": "JR川越線",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "道路幅:9.8m・16.7m、アスファルト舗装、南:公道東:私道 / 景観法による規制有、高度地区"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_saitamashinishi/nc_21871326/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 15
+    },
+    {
+      "type": "house-used",
+      "title": "さいたま市見沼区大和田町２丁目戸建",
+      "districtJa": "見沼区大和田町2",
+      "priceMan": 2880.0,
+      "priceFrom": false,
+      "landM2": 128.59,
+      "buildingM2": 91.08,
+      "stationJa": "大和田",
+      "lineJa": "東武野田線",
+      "walkMin": 9,
+      "layout": "4LDK",
+      "built": "1997年7月",
+      "zoning": "1種中高",
+      "id": "auto-ae59a88ce86a",
+      "district": "見沼区大和田町2",
+      "station": "Owada",
+      "line": "Tobu Urban Park Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、南4m幅 / -"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_saitamashiminuma/nc_21808820/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 29
+    },
+    {
+      "type": "house-used",
+      "title": "さいたま市中央区大戸６丁目　 中古戸建て",
+      "districtJa": "中央区大戸6",
+      "priceMan": 2980.0,
+      "priceFrom": false,
+      "landM2": 146.46,
+      "buildingM2": 90.66,
+      "stationJa": "南与野",
+      "lineJa": "JR埼京線",
+      "walkMin": 4,
+      "layout": "5DK",
+      "built": "1976年12月",
+      "zoning": "1種低層",
+      "id": "auto-14ab2d60ca63",
+      "district": "中央区大戸6",
+      "station": "Minami-Yono",
+      "line": "JR Saikyo Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、東4m幅(接道幅2m) / 法22条区域・ぜったい高さ10m埼玉県建築基準法施工条例52条、53条土地面積/公簿146.46m2うち22m2は道路部分他私道共有者からの私道通行掘削は所得無し通路部分隣接地との合意書有"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_saitamashichuo/nc_20084304/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 50
+    },
+    {
+      "type": "house-used",
+      "title": "さいたま市中央区鈴谷7丁目",
+      "districtJa": "中央区鈴谷7",
+      "priceMan": 4280.0,
+      "priceFrom": false,
+      "landM2": 105.46,
+      "buildingM2": 122.55,
+      "stationJa": "与野本町",
+      "lineJa": "JR埼京線",
+      "walkMin": 9,
+      "layout": "2LDK",
+      "built": "1974年10月",
+      "zoning": "1種中高",
+      "id": "auto-9ceb4ffd6087",
+      "district": "中央区鈴谷7",
+      "station": "Yono-Hommachi",
+      "line": "JR Saikyo Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "7.45m2 / 景観法による規制有、宅地造成工事規制区域、日影制限有"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_saitamashichuo/nc_21213444/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 52
+    },
+    {
+      "type": "house-used",
+      "title": "さいたま市桜区田島1丁目　中古戸建て",
+      "districtJa": "桜区田島1",
+      "priceMan": 3280.0,
+      "priceFrom": false,
+      "landM2": 59.42,
+      "buildingM2": 85.28,
+      "stationJa": "西浦和",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 13,
+      "layout": "4LDK",
+      "built": "2001年3月",
+      "zoning": "1種住居",
+      "id": "auto-0ec87fb8529a",
+      "district": "桜区田島1",
+      "station": "Nishi-Urawa",
+      "line": "JR Musashino Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、南東4.3m幅(接道幅7.7m) / 景観法による規制有、日影制限有、準防火地域、市街化区域"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_saitamashisakura/nc_21751489/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 25
+    },
+    {
+      "type": "house-used",
+      "title": "さいたま市緑区中尾　２階建　３LDK　リフォーム済　駐車スペース",
+      "districtJa": "緑区大字中尾",
+      "priceMan": 2450.0,
+      "priceFrom": false,
+      "landM2": 77.41,
+      "buildingM2": 78.66,
+      "stationJa": "中尾陸橋",
+      "lineJa": "浦和駅東口行",
+      "walkMin": 6,
+      "layout": "3LDK",
+      "built": "1992年9月",
+      "zoning": "1種低層",
+      "id": "auto-1ddcadc2c73c",
+      "district": "緑区大字中尾",
+      "station": "中尾陸橋",
+      "line": "浦和駅東口行",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、北東4m幅、北西4m幅 / 景観法による規制有、高さ最高限度有、日影制限有、景観誘導区域、建築基準法第22条区域、建築基準法第23条区域、さいたま市中高層建築物の建築及び大規模開発行為等に係る紛争の防止及び調整に関する条例登記簿面積にて容積率1.6%超過"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_saitamashimidori/nc_21116627/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 34
+    },
+    {
+      "type": "house-used",
+      "title": "さいたま市緑区三室　中古戸建　2階建4LDK",
+      "districtJa": "緑区大字三室",
+      "priceMan": 2749.0,
+      "priceFrom": false,
+      "landM2": 116.35,
+      "buildingM2": 91.08,
+      "stationJa": "JR社員寮前",
+      "lineJa": "さいたま新都心",
+      "walkMin": 3,
+      "layout": "4LDK",
+      "built": "2002年5月",
+      "zoning": "1種中高",
+      "id": "auto-856d043c0f5a",
+      "district": "緑区大字三室",
+      "station": "JR社員寮前",
+      "line": "さいたま新都心",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、南4m幅 / 景観法による規制有、高度地区、準防火地域、日影制限有、高度地区(15m地区)"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_saitamashimidori/nc_21298212/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 24
+    },
+    {
+      "type": "land",
+      "title": "【オープンハウスグループ】ミラスモシリーズさいたま市浦和区北浦和",
+      "districtJa": "浦和区北浦和3",
+      "priceMan": 2820.0,
+      "priceFrom": false,
+      "landM2": 49.68,
+      "buildingM2": null,
+      "stationJa": "北浦和",
+      "lineJa": "JR京浜東北線",
+      "walkMin": 11,
+      "layout": "",
+      "built": "",
+      "zoning": "1種住居",
+      "id": "auto-9edccd236778",
+      "district": "浦和区北浦和3",
+      "station": "北浦和",
+      "line": "JR京浜東北線",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "セットバック部分12.88m2含 / - / 景観法による規制有、宅地造成工事規制区域、準防火地域"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/tochi/saitama/sc_saitamashiurawa/nc_21339699/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     }
   ],

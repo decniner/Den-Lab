@@ -36,7 +36,7 @@ window.TADAIMA_DATA = {
       "district": "Mamiana-cho",
       "districtJa": "満美穴町",
       "title": "Used 5LDK (2000) at ¥1,799万 beside the LRT — but in an urbanisation-control area",
-      "priceMan": 1799,
+      "priceMan": 1799.0,
       "priceFrom": false,
       "landM2": 203.67,
       "buildingM2": 141.18,
@@ -64,7 +64,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z21997370/055361013/x1030Z21997370.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 2
     },
@@ -74,7 +75,7 @@ window.TADAIMA_DATA = {
       "district": "Shimo-Okamoto-cho",
       "districtJa": "下岡本町",
       "title": "Used 4LDK (2021) — 7.4kW solar plus 10kW battery, 5 min from Okamoto Station",
-      "priceMan": 4880,
+      "priceMan": 4880.0,
       "priceFrom": false,
       "landM2": 192.37,
       "buildingM2": 123.78,
@@ -101,7 +102,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z20725613/172576001/x1030Z20725613.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -110,7 +112,7 @@ window.TADAIMA_DATA = {
       "district": "Tsuruta-cho",
       "districtJa": "鶴田町",
       "title": "Used 5LDK (1995) Sekisui House on 412m² — defect liability waived, experts only",
-      "priceMan": 2900,
+      "priceMan": 2900.0,
       "priceFrom": false,
       "landM2": 412.05,
       "buildingM2": 167.0,
@@ -136,7 +138,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z21539398/170565001/x1030Z21539398.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -843,7 +846,7 @@ window.TADAIMA_DATA = {
       "district": "Sakae-cho",
       "districtJa": "栄町",
       "title": "Cheapest central lot here — but only 82.64m2, 15 minutes from JR Utsunomiya",
-      "priceMan": 1200,
+      "priceMan": 1200.0,
       "priceFrom": false,
       "landM2": 82.64,
       "buildingM2": null,
@@ -874,7 +877,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z20715977/172576001/x1030Z20715977.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -883,7 +887,7 @@ window.TADAIMA_DATA = {
       "district": "Nakagawara-cho",
       "districtJa": "中河原町",
       "title": "Two-station plot, Tobu-Utsunomiya 12 minutes, setback already done",
-      "priceMan": 1248,
+      "priceMan": 1248.0,
       "priceFrom": false,
       "landM2": 125.08,
       "buildingM2": null,
@@ -913,7 +917,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z21831284/185230002/x1030Z21831284.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -1004,7 +1009,7 @@ window.TADAIMA_DATA = {
       "district": "Naka-Okamoto-cho",
       "districtJa": "中岡本町",
       "title": "Quiet Okamoto plot on a 6m road, 14 minutes from Okamoto Station, cleared on delivery",
-      "priceMan": 1600,
+      "priceMan": 1600.0,
       "priceFrom": false,
       "landM2": 185.66,
       "buildingM2": null,
@@ -1034,7 +1039,8 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z78776075/177044001/x1030Z78776075.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -1043,7 +1049,7 @@ window.TADAIMA_DATA = {
       "district": "Suzumenomiya-cho",
       "districtJa": "雀宮町",
       "title": "Cheapest station plot here at ¥900万, 7 minutes from Suzumenomiya — but frontage is just 2m",
-      "priceMan": 900,
+      "priceMan": 900.0,
       "priceFrom": false,
       "landM2": 179.0,
       "buildingM2": null,
@@ -1076,8 +1082,79 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z79139555/065555078/x1030Z79139555.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
+    },
+    {
+      "type": "house-new",
+      "title": "セキュレア西川田町　(分譲住宅)【ダイワハウス】",
+      "districtJa": "西川田町字上原953-13",
+      "priceMan": 3780.0,
+      "priceFrom": false,
+      "landM2": 152.21,
+      "buildingM2": 81.15,
+      "stationJa": "江曽島",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 14,
+      "layout": "3LDK",
+      "built": "2024年11月",
+      "zoning": "1種住居",
+      "id": "auto-0eda159e0248",
+      "district": "西川田町字上原953-13",
+      "station": "Esoshima",
+      "line": "Tobu Utsunomiya Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "道路幅:6m、アスファルト舗装、(31号地)私道負担なし / -"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/ikkodate/tochigi/sc_utsunomiya/nc_74530391/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 2
+    },
+    {
+      "type": "house-used",
+      "title": "KEM宇都宮市弥生1期",
+      "districtJa": "弥生2",
+      "priceMan": 1649.0,
+      "priceFrom": false,
+      "landM2": 176.98,
+      "buildingM2": 85.69,
+      "stationJa": "南宇都宮",
+      "lineJa": "東武宇都宮線",
+      "walkMin": 10,
+      "layout": "4LDK",
+      "built": "1988年3月",
+      "zoning": "1種住居",
+      "id": "auto-22e6063f7749",
+      "district": "弥生2",
+      "station": "Minami-Utsunomiya",
+      "line": "Tobu Utsunomiya Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、西4.2m幅 / 建築基準法22条区域、日影規制(2種、5h-3h/4m)、道路斜線制限、隣地斜線制限、計画道路(物件南側約50m、計画決定)、宇都宮市景観条例、景観計画区域、立地適正化計画(居住誘導区域内、都市機能誘導区域外)、盛土条例、西側道路は位置指定道路です。"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/tochigi/sc_utsunomiya/nc_78278926/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 38
     }
   ],
   "scoring": {

@@ -117,7 +117,7 @@
       "district": "Yabe 2",
       "districtJa": "矢部２丁目",
       "title": "Used 3SLDK (2004) — all-electric, full renovation completing Dec 2026, 7 min to Yabe",
-      "priceMan": 4580,
+      "priceMan": 4580.0,
       "priceFrom": false,
       "landM2": 100.53,
       "buildingM2": 93.56,
@@ -146,7 +146,8 @@
         "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/4/14152/1183880003138/118388/x41183880003138.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -155,7 +156,7 @@
       "district": "Seishin 5",
       "districtJa": "清新５丁目",
       "title": "Used 4LDK (2003) — corner plot on two 6m public roads, 9 min to Minami-Hashimoto",
-      "priceMan": 3180,
+      "priceMan": 3180.0,
       "priceFrom": false,
       "landM2": 106.77,
       "buildingM2": 94.19,
@@ -183,7 +184,8 @@
         "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/4/14152/1244560008594/124456/x41244560008594.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -305,7 +307,7 @@
       "district": "Shimomizo",
       "districtJa": "下溝",
       "title": "Used 3LDK (2020) — Hebel Haus steel home with solar, 5 min to Harataima",
-      "priceMan": 4480,
+      "priceMan": 4480.0,
       "priceFrom": false,
       "landM2": 113.01,
       "buildingM2": 89.77,
@@ -334,7 +336,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/14153/030Z78823228/000232146/x1030Z78823228.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -714,7 +717,7 @@
       "district": "Kamimizo",
       "districtJa": "上溝",
       "title": "Large 198m² plot by a river, 14 minutes from Banda — old house standing",
-      "priceMan": 2480,
+      "priceMan": 2480.0,
       "priceFrom": false,
       "landM2": 198.34,
       "buildingM2": null,
@@ -744,7 +747,8 @@
         "name": "SUUMO",
         "url": "https://suumo.jp/tochi/kanagawa/sc_sagamiharashichuo/nc_21619263/",
         "verified": "detail",
-        "infoDate": "2026-10-19"
+        "infoDate": "2026-10-19",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -793,7 +797,7 @@
       "district": "Kamimizo",
       "districtJa": "上溝",
       "title": "Corner 151m² plot 5 minutes from Banda — seller demolishes, vacant handover",
-      "priceMan": 2780,
+      "priceMan": 2780.0,
       "priceFrom": false,
       "landM2": 151.77,
       "buildingM2": null,
@@ -822,7 +826,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14152/030Z20746686/006050786/x1030Z20746686.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -1140,6 +1145,75 @@
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14153/030Z21638424/065555077/x1030Z21638424.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
+      }
+    },
+    {
+      "type": "house-used",
+      "title": "中央区光が丘１丁目―約13帖LDK×3LDK、明るく心地よい家族の暮らしへ―",
+      "districtJa": "中央区光が丘1",
+      "priceMan": 2699.0,
+      "priceFrom": false,
+      "landM2": 72.34,
+      "buildingM2": 71.06,
+      "stationJa": "上溝",
+      "lineJa": "JR相模線",
+      "walkMin": 15,
+      "layout": "3LDK",
+      "built": "1995年10月",
+      "zoning": "1種低層",
+      "id": "auto-ba471d40e99f",
+      "district": "中央区光が丘1",
+      "station": "Kamimizo",
+      "line": "JR Sagami Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、西6m幅 / 景観法による規制有、宅地造成工事規制区域、準防火地域、高さ最高限度有、日影制限有"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/kanagawa/sc_sagamiharashichuo/nc_21886396/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 31
+    },
+    {
+      "type": "land",
+      "title": "上鶴間２（東林間駅） 2490万円",
+      "districtJa": "南区上鶴間2",
+      "priceMan": 2490.0,
+      "priceFrom": false,
+      "landM2": 127.55,
+      "buildingM2": null,
+      "stationJa": "東林間",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 15,
+      "layout": "",
+      "built": "",
+      "zoning": "1種低層",
+      "id": "auto-6cdb2ff23c72",
+      "district": "南区上鶴間2",
+      "station": "Higashi-Rinkan",
+      "line": "Odakyu Enoshima Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "道路幅:4m、アスファルト舗装 / - / -"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/tochi/kanagawa/sc_sagamiharashiminami/nc_20323544/",
+        "verified": "detail",
+        "infoDate": "2026-10-19",
+        "checkedOn": "2026-10-25"
       }
     }
   ],

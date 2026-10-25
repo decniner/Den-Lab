@@ -340,7 +340,7 @@
       "district": "Toyoshiki",
       "districtJa": "豊四季",
       "title": "Used 3LDK (2003) — fully reformed Oct 2026, south road, Toyoshiki 10 min",
-      "priceMan": 4180,
+      "priceMan": 4180.0,
       "priceFrom": false,
       "landM2": 100.04,
       "buildingM2": 96.75,
@@ -365,7 +365,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21995629/178996004/x1030Z21995629.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -612,7 +613,7 @@
       "district": "Sakasai",
       "districtJa": "逆井",
       "title": "188m² plot 1 minute from Sakasai — old house standing, setback included",
-      "priceMan": 3960,
+      "priceMan": 3960.0,
       "priceFrom": false,
       "landM2": 188,
       "buildingM2": null,
@@ -638,7 +639,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21854073/006050592/x1030Z21854073.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -750,7 +752,7 @@
       "district": "Sakasai-Fujinodai",
       "districtJa": "逆井藤ノ台",
       "title": "240m² corner plot 6 minutes from Sakasai — building standing, elevated site",
-      "priceMan": 3380,
+      "priceMan": 3380.0,
       "priceFrom": false,
       "landM2": 240.81,
       "buildingM2": null,
@@ -775,7 +777,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21870944/006050592/x1030Z21870944.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -784,7 +787,7 @@
       "district": "Shinokoda",
       "districtJa": "篠籠田",
       "title": "335m² plot 7 minutes from Toyoshiki — building standing, only 2m frontage",
-      "priceMan": 2800,
+      "priceMan": 2800.0,
       "priceFrom": false,
       "landM2": 335.39,
       "buildingM2": null,
@@ -810,7 +813,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z78266998/000232035/x1030Z78266998.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -819,7 +823,7 @@
       "district": "Takayanagi",
       "districtJa": "高柳",
       "title": "197m² corner plot 8 minutes from Takayanagi — old house, LP gas currently connected",
-      "priceMan": 2480,
+      "priceMan": 2480.0,
       "priceFrom": false,
       "landM2": 197.5,
       "buildingM2": null,
@@ -844,7 +848,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21802948/006050592/x1030Z21802948.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -923,7 +928,7 @@
       "district": "Toyoshiki",
       "districtJa": "豊四季",
       "title": "81m² small plot 9 minutes from Minami-Kashiwa — Art. 42-2 road, setback included",
-      "priceMan": 1798,
+      "priceMan": 1798.0,
       "priceFrom": false,
       "landM2": 81,
       "buildingM2": null,
@@ -949,7 +954,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z20467847/008885031/x1030Z20467847.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -996,7 +1002,7 @@
       "district": "Toyoshiki",
       "districtJa": "豊四季",
       "title": "108m² vacant plot 13 minutes from Toyoshiki — setback required, irregular shape",
-      "priceMan": 1480,
+      "priceMan": 1480.0,
       "priceFrom": false,
       "landM2": 108.94,
       "buildingM2": null,
@@ -1021,7 +1027,42 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21836681/001616031/x1030Z21836681.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      }
+    },
+    {
+      "type": "land",
+      "title": "【オープンハウスグループ】ミラスモシリーズ柏市篠籠田",
+      "districtJa": "篠籠田",
+      "priceMan": 2330.0,
+      "priceFrom": false,
+      "landM2": 119.0,
+      "buildingM2": null,
+      "stationJa": "豊四季",
+      "lineJa": "東武野田線",
+      "walkMin": 11,
+      "layout": "",
+      "built": "",
+      "zoning": "1種低層",
+      "id": "auto-7c8a51c80c38",
+      "district": "篠籠田",
+      "station": "Toyoshiki",
+      "line": "Tobu Urban Park Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "私道部分21m2 / - / 景観法による規制有、宅地造成工事規制区域"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/tochi/chiba/sc_kashiwa/nc_21903409/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     }
   ],

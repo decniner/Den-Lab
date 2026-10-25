@@ -678,7 +678,7 @@
       "district": "Kameino",
       "districtJa": "亀井野",
       "title": "Compact 93m² lot between Mutsuai-Nichidai-mae and Shonandai",
-      "priceMan": 2980,
+      "priceMan": 2980.0,
       "priceFrom": false,
       "landM2": 93.19,
       "buildingM2": null,
@@ -707,7 +707,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21915039/005890004/x1030Z21915039.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -716,7 +717,7 @@
       "district": "Kameino",
       "districtJa": "亀井野",
       "title": "Huge 345m² high-ground plot 6 min from Mutsuai-Nichidai-mae — 2m frontage",
-      "priceMan": 4180,
+      "priceMan": 4180.0,
       "priceFrom": false,
       "landM2": 345.93,
       "buildingM2": null,
@@ -745,7 +746,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z78080165/114291001/x1030Z78080165.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -754,7 +756,7 @@
       "district": "Takakura",
       "districtJa": "高倉",
       "title": "Corner lot in Takakura, 12 min from Shonandai — provisional survey",
-      "priceMan": 4480,
+      "priceMan": 4480.0,
       "priceFrom": false,
       "landM2": 154.66,
       "buildingM2": null,
@@ -784,7 +786,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21478383/006050534/x1030Z21478383.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -833,7 +836,7 @@
       "district": "Chogo",
       "districtJa": "長後",
       "title": "Cheapest lot here — 98m² by Chogo, defect liability waived",
-      "priceMan": 1490,
+      "priceMan": 1490.0,
       "priceFrom": false,
       "landM2": 98.95,
       "buildingM2": null,
@@ -860,7 +863,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21355255/150914001/x1030Z21355255.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -870,7 +874,7 @@
       "district": "Chogo",
       "districtJa": "長後",
       "title": "100m² plot 4 min from Chogo station — old house on site",
-      "priceMan": 3300,
+      "priceMan": 3300.0,
       "priceFrom": false,
       "landM2": 100.05,
       "buildingM2": null,
@@ -898,7 +902,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21266168/000045103/x1030Z21266168.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {

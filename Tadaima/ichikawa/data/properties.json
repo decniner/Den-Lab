@@ -411,7 +411,7 @@
       "district": "Hon-Gyotoku",
       "districtJa": "本行徳",
       "title": "Used 4LDK (1999) on a SE corner — Myoden 13 min, Gyotoku plain",
-      "priceMan": 4780,
+      "priceMan": 4780.0,
       "priceFrom": false,
       "landM2": 91.3,
       "buildingM2": 89.95,
@@ -436,7 +436,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z76033626/147652001/x1030Z76033626.html",
         "verified": "detail",
-        "infoDate": "2026-10-11"
+        "infoDate": "2026-10-11",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -517,7 +518,7 @@
       "district": "Honshio",
       "districtJa": "本塩",
       "title": "Used 3LDK (1997) — 7 min from Myoden, bay-side",
-      "priceMan": 3780,
+      "priceMan": 3780.0,
       "priceFrom": false,
       "landM2": 83.86,
       "buildingM2": 79.27,
@@ -541,7 +542,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z20655509/003225001/x1030Z20655509.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -1069,6 +1071,41 @@
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
+    },
+    {
+      "type": "house-new",
+      "title": "【価格改定｜最終1棟】ZEH水準×太陽光搭載◆タウンコート須和田1丁目",
+      "districtJa": "須和田1-1-12",
+      "priceMan": 4980.0,
+      "priceFrom": false,
+      "landM2": 71.26,
+      "buildingM2": 71.21,
+      "stationJa": "市川真間",
+      "lineJa": "京成本線",
+      "walkMin": 12,
+      "layout": "3LDK",
+      "built": "2026年5月下旬",
+      "zoning": "1種低層",
+      "id": "auto-478b40d0ab55",
+      "district": "須和田1-1-12",
+      "station": "Ichikawa-Mama",
+      "line": "Keisei Main Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "道路幅:4m~6m、アスファルト舗装、セットバック要:0.63m道路中心線より後退 / 景観法による規制有、航空法による規制有、高さ最高限度有、日影制限有"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/ikkodate/chiba/sc_ichikawa/nc_20750941/",
+        "verified": "detail",
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 0
     }
   ],
   "scoring": {

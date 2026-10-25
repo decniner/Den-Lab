@@ -233,7 +233,7 @@
       "district": "Oba",
       "districtJa": "大場",
       "title": "Used 4LDK (Jun 2022) — 2 min from Takesato Station, Iida Sangyo build",
-      "priceMan": 3200,
+      "priceMan": 3200.0,
       "priceFrom": false,
       "landM2": 113.91,
       "buildingM2": 92.53,
@@ -256,7 +256,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z20571697/000009005/x1030Z20571697.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -265,7 +266,7 @@
       "district": "Yonejima",
       "districtJa": "米島",
       "title": "Used 3SLDK (Mar 2019) — 17-post LDK, parking for 2, 4 min from Minami-Sakurai",
-      "priceMan": 2680,
+      "priceMan": 2680.0,
       "priceFrom": false,
       "landM2": 126.01,
       "buildingM2": 90.25,
@@ -286,7 +287,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z74798022/161419001/x1030Z74798022.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -295,7 +297,7 @@
       "district": "Fujitsuka",
       "districtJa": "藤塚",
       "title": "Used 4SLDK (Feb 2023) — corner lot, high-ceiling LDK, 8 min from Fujino-Ushijima",
-      "priceMan": 3350,
+      "priceMan": 3350.0,
       "priceFrom": false,
       "landM2": 125.04,
       "buildingM2": 91.08,
@@ -319,7 +321,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z78463988/006110007/x1030Z78463988.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -426,7 +429,7 @@
       "district": "Ushijima",
       "districtJa": "牛島",
       "title": "Used 3LDK (Jun 2005), renovated — expanded LDK, 3 min from Fujino-Ushijima",
-      "priceMan": 2699,
+      "priceMan": 2699.0,
       "priceFrom": false,
       "landM2": 103.08,
       "buildingM2": 92.33,
@@ -450,7 +453,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21760291/142868001/x1030Z21760291.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -459,7 +463,7 @@
       "district": "Ohata",
       "districtJa": "大畑",
       "title": "Used 4LDK (Apr 2000) — 99.6m² house, 7 min from Takesato",
-      "priceMan": 2480,
+      "priceMan": 2480.0,
       "priceFrom": false,
       "landM2": 113.25,
       "buildingM2": 99.57,
@@ -480,7 +484,8 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21980982/100451225/x1030Z21980982.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -489,7 +494,7 @@
       "district": "Obukuro",
       "districtJa": "大衾",
       "title": "Used 4LDK (Jan 2005) on a high, sunny 206m² plot — defect liability waived",
-      "priceMan": 1900,
+      "priceMan": 1900.0,
       "priceFrom": false,
       "landM2": 206.33,
       "buildingM2": 114.0,
@@ -514,7 +519,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z20569440/006110007/x1030Z20569440.html",
         "verified": "detail",
-        "infoDate": "2026-10-19"
+        "infoDate": "2026-10-19",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     },
@@ -596,7 +602,7 @@
       "district": "Kami-Hiruta",
       "districtJa": "上蛭田",
       "title": "Used 4LDK (Feb 2009) just 5 minutes from Toyoharu — regular plot fronting two roads",
-      "priceMan": 2380,
+      "priceMan": 2380.0,
       "priceFrom": false,
       "landM2": 101.14,
       "buildingM2": 92.12,
@@ -623,7 +629,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z20641337/000232144/x1030Z20641337.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -632,7 +639,7 @@
       "district": "Nan-Nakazone",
       "districtJa": "南中曽根",
       "title": "Used 3SLDK (Oct 2008) 13 minutes from Toyoharu — 120.8m2 plot fronting two roads",
-      "priceMan": 2380,
+      "priceMan": 2380.0,
       "priceFrom": false,
       "landM2": 120.78,
       "buildingM2": 108.89,
@@ -660,7 +667,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21908994/001253132/x1030Z21908994.html",
         "verified": "detail",
-        "infoDate": "2026-10-21"
+        "infoDate": "2026-10-21",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -741,7 +749,7 @@
       "district": "Ofuto",
       "districtJa": "大衾",
       "title": "171m2 vacant plot 5 minutes from Minami-Sakurai — building condition attached",
-      "priceMan": 2439,
+      "priceMan": 2439.0,
       "priceFrom": false,
       "landM2": 171.11,
       "buildingM2": null,
@@ -768,7 +776,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11214/030Z21951049/032341000/x1030Z21951049.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -816,7 +825,7 @@
       "district": "Nishi-Kananoi",
       "districtJa": "西金野井",
       "title": "Vacant regular-shaped 161m2 plot 8 minutes from Minami-Sakurai",
-      "priceMan": 1490,
+      "priceMan": 1490.0,
       "priceFrom": false,
       "landM2": 161.3,
       "buildingM2": null,
@@ -843,7 +852,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11214/030Z21765878/188406001/x1030Z21765878.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -891,7 +901,7 @@
       "district": "Shinjuku-Shinden",
       "districtJa": "新宿新田",
       "title": "Vacant regular-shaped plot by Minami-Sakurai — setback strip not yet surveyed or subdivided",
-      "priceMan": 1580,
+      "priceMan": 1580.0,
       "priceFrom": false,
       "landM2": 138.18,
       "buildingM2": null,
@@ -920,7 +930,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11214/030Z21413087/006376018/x1030Z21413087.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -929,7 +940,7 @@
       "district": "Fujizuka",
       "districtJa": "藤塚",
       "title": "Three-side corner plot by Fujino-Ushijima — demolition and definitive survey included in delivery",
-      "priceMan": 1380,
+      "priceMan": 1380.0,
       "priceFrom": false,
       "landM2": 109.95,
       "buildingM2": null,
@@ -956,7 +967,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11214/030Z21211214/006110007/x1030Z21211214.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-22",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -1004,7 +1016,7 @@
       "district": "Kobuchi",
       "districtJa": "小渕",
       "title": "Vacant development-subdivision plot by Kita-Kasukabe — utilities connected on delivery",
-      "priceMan": 2300,
+      "priceMan": 2300.0,
       "priceFrom": false,
       "landM2": 162.87,
       "buildingM2": null,
@@ -1033,7 +1045,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11214/030Z20775136/042176000/x1030Z20775136.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -1042,7 +1055,7 @@
       "district": "Bingo-Higashi 8-chome",
       "districtJa": "備後東8丁目",
       "title": "Clean vacant low-rise plot between Takesato and Ichinowari — measured area, two public roads",
-      "priceMan": 2899,
+      "priceMan": 2899.0,
       "priceFrom": false,
       "landM2": 154.63,
       "buildingM2": null,
@@ -1071,7 +1084,8 @@
         "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11214/1304410032789/130441/x41304410032789.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-25",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -1192,6 +1206,76 @@
         "verified": "detail",
         "infoDate": "2026-10-21"
       }
+    },
+    {
+      "type": "house-new",
+      "title": "FelidiaGarden春日部市新宿新田 全1区画 1号棟",
+      "districtJa": "新宿新田字西之宮337番74",
+      "priceMan": 3280.0,
+      "priceFrom": false,
+      "landM2": 116.9,
+      "buildingM2": 100.19,
+      "stationJa": "南桜井",
+      "lineJa": "東武野田線",
+      "walkMin": 14,
+      "layout": "2LDK+S(納戸)",
+      "built": "2026年1月",
+      "zoning": "1種中高",
+      "id": "auto-0e940cea6a63",
+      "district": "新宿新田字西之宮337番74",
+      "station": "Minami-Sakurai",
+      "line": "Tobu Urban Park Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、南4m幅 / 法22条区域、景観法、道路斜線制限有り、隣地斜線制限有り、日影規制有り"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/ikkodate/saitama/sc_kasukabe/nc_21611349/",
+        "verified": "detail",
+        "infoDate": "2026-10-20",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 0
+    },
+    {
+      "type": "house-used",
+      "title": "～築浅戸建～春日部市備後東◆並列2台分のカーポート付カースペース◆収納充実◆都市ガス",
+      "districtJa": "備後東2",
+      "priceMan": 3750.0,
+      "priceFrom": false,
+      "landM2": 128.82,
+      "buildingM2": 103.71,
+      "stationJa": "一ノ割",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 10,
+      "layout": "3LDK",
+      "built": "2024年6月",
+      "zoning": "1種低層",
+      "id": "auto-a1c963975ddc",
+      "district": "備後東2",
+      "station": "Ichinowari",
+      "line": "Tobu Skytree Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "道路幅:4m、アスファルト舗装、南側:私道(持分143.47m2×1/6有) / 景観法による規制有、敷地面積に協定部分面積:16.14m2を含む"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/saitama/sc_kasukabe/nc_21938350/",
+        "verified": "detail",
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 2
     }
   ],
   "scoring": {

@@ -35,7 +35,7 @@
       "district": "Shimoishikura-cho",
       "districtJa": "下石倉町",
       "title": "New 3SLDK on a very large 246m² plot — 14 min from Shin-Maebashi",
-      "priceMan": 3380,
+      "priceMan": 3380.0,
       "priceFrom": false,
       "landM2": 246.55,
       "buildingM2": 90.26,
@@ -59,7 +59,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/W/21893962.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -135,7 +136,7 @@
       "district": "Higokoshi-cho",
       "districtJa": "樋越町",
       "title": "New 4LDK — performance-evaluated, 6 min from Higokoshi Station",
-      "priceMan": 2190,
+      "priceMan": 2190.0,
       "priceFrom": false,
       "landM2": 264.5,
       "buildingM2": 111.37,
@@ -159,7 +160,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/Z/21301753.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-23",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -336,7 +338,7 @@
       "district": "Kami-Oshima-cho",
       "districtJa": "上大島町",
       "title": "Used 7DK (1990) two-generation house — 8 min from Maebashi-Oshima Station",
-      "priceMan": 1750,
+      "priceMan": 1750.0,
       "priceFrom": false,
       "landM2": 291.64,
       "buildingM2": 219.95,
@@ -362,7 +364,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z21207528/115332002/x1030Z21207528.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -371,7 +374,7 @@
       "district": "Sosha-cho Sakuragaoka",
       "districtJa": "総社町桜が丘",
       "title": "Used 5LDK (1990), renovated — 10 min from Gunma-Soja Station",
-      "priceMan": 1180,
+      "priceMan": 1180.0,
       "priceFrom": false,
       "landM2": 177.0,
       "buildingM2": 123.98,
@@ -396,7 +399,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z20318121/185349002/x1030Z20318121.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -877,7 +881,7 @@
       "district": "Honmachi 3",
       "districtJa": "本町3",
       "title": "170m² vacant plot 9 minutes from Maebashi station, on Route 50",
-      "priceMan": 1180,
+      "priceMan": 1180.0,
       "priceFrom": false,
       "landM2": 170.04,
       "buildingM2": null,
@@ -903,7 +907,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z78230533/044597003/x1030Z78230533.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -912,7 +917,7 @@
       "district": "Takai-cho 1",
       "districtJa": "高井町1",
       "title": "Vacant corner lot 10 minutes from Gunma-Soja station",
-      "priceMan": 580,
+      "priceMan": 580.0,
       "priceFrom": false,
       "landM2": 126.97,
       "buildingM2": null,
@@ -938,7 +943,8 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z78287334/146659001/x1030Z78287334.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       }
     },
     {
@@ -1020,7 +1026,7 @@
       "district": "Ishikura-cho 1",
       "districtJa": "石倉町1",
       "title": "142m² plot 12 minutes from Shin-Maebashi — planned road crosses the area",
-      "priceMan": 560,
+      "priceMan": 560.0,
       "priceFrom": false,
       "landM2": 142.52,
       "buildingM2": null,
@@ -1047,7 +1053,8 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z77336186/146659001/x1030Z77336186.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-10-24",
+        "checkedOn": "2026-10-25"
       },
       "majorCautions": 1
     }

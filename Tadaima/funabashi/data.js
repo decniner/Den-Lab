@@ -1053,6 +1053,41 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-10-18"
       }
+    },
+    {
+      "type": "house-used",
+      "title": "船橋市芝山六丁目",
+      "districtJa": "芝山6",
+      "priceMan": 2390.0,
+      "priceFrom": false,
+      "landM2": 137.27,
+      "buildingM2": 97.71,
+      "stationJa": "高根木戸",
+      "lineJa": "京成松戸線",
+      "walkMin": 14,
+      "layout": "4LDK",
+      "built": "2005年9月",
+      "zoning": "1種低層",
+      "id": "auto-8e3452cafeb5",
+      "district": "芝山6",
+      "station": "Takane-Kido",
+      "line": "Keisei Matsudo Line",
+      "firstSeenOn": "2026-10-25",
+      "isNew": true,
+      "highlights": [],
+      "majorCautions": 1,
+      "cautions": [
+        "Automatically collected portal facts; legal restrictions, rebuilding rights and fees require confirmation with the agent.",
+        "無、南東4m幅 / 【制限事項】建築基準法第22条指定区域、景観法、宅地造成等規制法【備考】■私道持分有(167番42、山林、19m2)■擁壁部分(1186番4、宅地、22.21m2)■設備の契約不適合責任■太陽光パネル(屋根貸し)☆リフォーム歴☆・2017年9月ガスコンロ交換・2017年10月換気扇(キッチン)交換・2020年1月外壁屋根塗装工事・2022年4月太陽光パネル設置・給湯器交換・2025年8月トイレ換気扇交換(1・2階)・2026年4月クロス、1階トイレ、洗面台、浴室鏡、キッチン水栓・照明交換"
+      ],
+      "source": {
+        "name": "SUUMO",
+        "url": "https://suumo.jp/chukoikkodate/chiba/sc_funabashi/nc_21008908/",
+        "verified": "detail",
+        "infoDate": "2026-10-21",
+        "checkedOn": "2026-10-25"
+      },
+      "ageYears": 21
     }
   ],
   "scoring": {
