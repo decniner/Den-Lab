@@ -104,7 +104,7 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
       .replace(/<p class="jg-small">[\s\S]*?<\/p>/i, '')
       .replace('data-route-kind="location"', 'data-route-kind="location" data-compact-route-guide="true"');
   }
-  if (routeSection) html = html.replace(routeSection, '');
+  if (routeMatch?.[0]) html = html.replace(routeMatch[0], '');
   if (existingGallery) html = html.replace(existingGallery, '');
 
   const sectionRe = /<section\b(?=[^>]*\bclass="[^"]*\bjg-section\b[^"]*")[^>]*>[\s\S]*?<\/section>/gi;
