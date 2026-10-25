@@ -99,7 +99,7 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
     routeSection = routeSection
       .replace(/<p class="jg-kicker">THE PLACE[^<]*<\/p>/i, '')
       .replace(/<h2\b[^>]*>[\s\S]*?· location map<\/h2>/i, '<h2>Find it on the map</h2>')
-      .replace(/(<h2\b[^>]*>Find it on the map<\/h2>)\s*<p>[\s\S]*?<\/p>/i, '$1')
+      .replace(/<p>\s*(?:Approximate location reference|This map marks|Use the map to locate)[\s\S]*?<\/p>/i, '')
       .replace(/<p class="jg-note">[\s\S]*?<\/p>/i, '')
       .replace(/<p class="jg-small">[\s\S]*?<\/p>/i, '')
       .replace('data-route-kind="location"', 'data-route-kind="location" data-compact-route-guide="true"');
