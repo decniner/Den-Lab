@@ -84,10 +84,13 @@
     const area = mapLocation?.locator || place.place || place.region || 'Japan';
     return `${place.name}, ${area}, Japan`;
   }
-  function directionsUrl(origin, place) {
-    const params = new URLSearchParams({ api: '1', destination: directionsLocation(place), travelmode: 'transit' });
+  function directionsBetweenUrl(origin, destination) {
+    const params = new URLSearchParams({ api: '1', destination, travelmode: 'transit' });
     if (origin) params.set('origin', origin);
     return `https://www.google.com/maps/dir/?${params.toString()}`;
+  }
+  function directionsUrl(origin, place) {
+    return directionsBetweenUrl(origin, directionsLocation(place));
   }
   function placeMapUrl(place) {
     const params = new URLSearchParams({ api: '1', query: directionsLocation(place) });
@@ -108,11 +111,6 @@
     const location = document.createElement('p'); location.className = 'itinerary-stop-location'; location.textContent = placeLocation(place);
     const description = document.createElement('p'); description.className = 'itinerary-stop-description'; description.textContent = place.description || 'Explore the place guide for visitor information.';
     const actions = document.createElement('div'); actions.className = 'itinerary-stop-actions';
-    const previousStop = currentPlan.days[dayIndex].places[stopIndex - 1];
-    const hasKnownStart = Boolean(previousStop || (dayIndex === 0 && currentConfig.origin));
-    const origin = previousStop ? directionsLocation(previousStop) : currentConfig.origin;
-    const directionsLabel = hasKnownStart ? 'Open live directions ↗' : 'Open map & choose start ↗';
-    appendLink(actions, directionsLabel, hasKnownStart ? directionsUrl(origin, place) : placeMapUrl(place));
     const guide = window.GuideLinks?.destinationUrl?.(place.name);
     if (guide) appendLink(actions, 'Place guide ↗', guide);
     const dayDate = currentPlan.days[dayIndex].date;
@@ -153,6 +151,38 @@
     if (!candidates.length) { const note = document.createElement('small'); note.textContent = 'No unused places remain in this day’s region. Adjust the region choices above and rebuild to add places from another area.'; wrapper.append(note); }
     return wrapper;
   }
+  function createDayDirections(day, dayIndex) {
+    if (!day.places.length) return null;
+    const section = document.createElement('section');
+    section.className = 'itinerary-day-route';
+    section.setAttribute('aria-label', `Google Maps directions for Day ${dayIndex + 1}`);
+    const heading = document.createElement('h4');
+    heading.textContent = 'Follow this day in Google Maps';
+    const note = document.createElement('p');
+    note.className = 'itinerary-transition';
+    note.textContent = 'Open the legs in order. Google Maps shows live directions for each pair of stops; it does not reorder the itinerary.';
+    const links = document.createElement('div');
+    links.className = 'itinerary-stop-actions';
+    const first = day.places[0];
+    let legNumber = 1;
+    if (dayIndex === 0 && currentConfig.origin) {
+      appendLink(links, `Leg ${legNumber} · ${currentConfig.origin} → ${first.name} ↗`, directionsUrl(currentConfig.origin, first));
+    } else {
+      appendLink(links, `Start · ${first.name} ↗`, placeMapUrl(first));
+    }
+    day.places.slice(1).forEach((place, index) => {
+      const previous = day.places[index];
+      legNumber += 1;
+      appendLink(links, `Leg ${legNumber} · ${previous.name} → ${place.name} ↗`, directionsUrl(directionsLocation(previous), place));
+    });
+    if (currentConfig.endpoint && dayIndex === currentPlan.days.length - 1) {
+      const last = day.places.at(-1);
+      legNumber += 1;
+      appendLink(links, `Final leg ${legNumber} · ${last.name} → ${currentConfig.endpoint} ↗`, directionsBetweenUrl(directionsLocation(last), currentConfig.endpoint));
+    }
+    section.append(heading, note, links);
+    return section;
+  }
   function renderPlan() {
     output.replaceChildren();
     if (!currentPlan || !Array.isArray(currentPlan.days) || !currentPlan.days.length) { output.hidden = true; tools.hidden = true; return; }
@@ -173,6 +203,8 @@
       if (priorRegion && day.region && priorRegion !== day.region && !day.note?.startsWith('Travel day:')) { const transition = document.createElement('p'); transition.className = 'itinerary-transition'; transition.textContent = `Region change from ${priorRegion} to ${day.region}. Plan this inter-city connection separately; this draft has no transfer time or fare.`; card.append(transition); }
       if (day.transitionNote) { const transition = document.createElement('p'); transition.className = 'itinerary-transition'; transition.textContent = day.transitionNote; card.append(transition); }
       if (day.note) { const empty = document.createElement('p'); empty.className = 'itinerary-empty-day'; empty.textContent = day.note; card.append(empty); }
+      const dayDirections = createDayDirections(day, index);
+      if (dayDirections) card.append(dayDirections);
       day.places.forEach((place,stopIndex)=>card.append(createStop(place,index,stopIndex)));
       card.append(makeAddControl(day,index)); output.append(card);
     });
