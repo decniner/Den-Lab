@@ -132,7 +132,8 @@
       if (!remaining.length) { if (distance < bestDistance) { bestDistance = distance; best = path; } return; }
       for (let index = 0; index < remaining.length; index++) {
         const place = remaining[index], point = mapPoint(place);
-        const nextDistance = distance + distanceKm(path.length ? mapPoint(path[path.length - 1]) : startPoint, point);
+        const from = path.length ? mapPoint(path[path.length - 1]) : startPoint;
+        const nextDistance = distance + (from ? distanceKm(from, point) : 0);
         if (nextDistance >= bestDistance) continue;
         visit([...remaining.slice(0, index), ...remaining.slice(index + 1)], [...path, place], nextDistance);
       }
@@ -244,14 +245,6 @@
       const fullDayStop = candidates.find(item => isFullDayPlace(item.place));
       const chosen = fullDayStop ? [fullDayStop.place] : candidates.slice(0, limit).map(item => item.place);
       const selected = shortestStopOrder(chosen, previousPoint);
-      selected.forEach(place => used.add(placeKey(place)));
-      region = selected[0]?.region || region;
-      const priorDay = resultDays.at(-1);
-      const priorLocality = priorDay?.locality || '';
-      const fullDayStop = candidates.find(item => isFullDayPlace(item.place));
-      const selected = fullDayStop
-        ? [fullDayStop.place]
-        : candidates.slice(0, limit).map(item => item.place);
       selected.forEach(place => used.add(placeKey(place)));
       region = selected[0]?.region || region;
       const priorDay = resultDays.at(-1);
