@@ -105,10 +105,9 @@
     const description = document.createElement('p'); description.className = 'itinerary-stop-description'; description.textContent = place.description || 'Explore the place guide for visitor information.';
     const actions = document.createElement('div'); actions.className = 'itinerary-stop-actions';
     const previousStop = currentPlan.days[dayIndex].places[stopIndex - 1];
-    const earlierStops = currentPlan.days.slice(0,dayIndex).flatMap(day=>day.places || []);
-    const priorStop = earlierStops.at(-1);
-    const origin = previousStop ? directionsLocation(previousStop) : priorStop ? directionsLocation(priorStop) : currentConfig.origin;
-    appendLink(actions, 'Open live directions ↗', directionsUrl(origin, place));
+    const origin = previousStop ? directionsLocation(previousStop) : dayIndex === 0 ? currentConfig.origin : '';
+    const directionsLabel = dayIndex > 0 && !previousStop ? 'Choose your start in Maps ↗' : 'Open live directions ↗';
+    appendLink(actions, directionsLabel, directionsUrl(origin, place));
     const guide = window.GuideLinks?.destinationUrl?.(place.name);
     if (guide) appendLink(actions, 'Place guide ↗', guide);
     const dayDate = currentPlan.days[dayIndex].date;
