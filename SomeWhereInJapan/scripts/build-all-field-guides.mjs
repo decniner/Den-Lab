@@ -83,7 +83,7 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
   if (!placeName) return html;
   const details = [];
   let gallery = '';
-  const existingGallery = html.match(/<div class="jg-photo-gallery"[^>]*>[\\s\\S]*?<\\/div>/i)?.[0] || '';
+  const existingGallery = html.match(/<div class="jg-photo-gallery"[^>]*>[\s\S]*?<\/div>/i)?.[0] || '';
   const researchedGallery = researchById.get(placeId)?.gallery || [];
   const images = researchedGallery.filter(photo => photo?.imageUrl && photo?.sourcePage && photo?.photographer && photo?.license && photo?.alt);
   if (images.length) {
@@ -92,14 +92,14 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
     gallery = existingGallery;
   }
 
-  const routeMatch = html.match(/<section\\b(?=[^>]*\\bid="route")[^>]*>[\\s\\S]*?<\\/section>/i);
+  const routeMatch = html.match(/<section\b(?=[^>]*\bid="route")[^>]*>[\s\S]*?<\/section>/i);
   const routeSection = routeMatch?.[0] || '';
   if (routeSection) html = html.replace(routeSection, '');
   if (existingGallery) html = html.replace(existingGallery, '');
 
-  const sectionRe = /<section\\b(?=[^>]*\\bclass="[^"]*\\bjg-section\\b")[^>]*>[\\s\\S]*?<\\/section>/gi;
+  const sectionRe = /<section\b(?=[^>]*\bclass="[^"]*\bjg-section\b")[^>]*>[\s\S]*?<\/section>/gi;
   html = html.replace(sectionRe, section => {
-    if (/\\bid="route"/i.test(section)) return section;
+    if (/\bid="route"/i.test(section)) return section;
     details.push(section);
     return '';
   });
@@ -112,20 +112,20 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
 
   const featured = [gallery, photoLink, routeSection, moreDetails].filter(Boolean).join('');
   if (featured) {
-    const lede = /<p class="jg-lede">[\\s\\S]*?<\\/p>/i;
+    const lede = /<p class="jg-lede">[\s\S]*?<\/p>/i;
     if (lede.test(html)) html = html.replace(lede, match => `${match}${featured}`);
-    else html = html.replace(/<header\\b(?=[^>]*\\bclass="[^"]*\\bjg-hero\\b")[^>]*>[\\s\\S]*?<\\/header>/i, match => `${match}${featured}`);
+    else html = html.replace(/<header\b(?=[^>]*\bclass="[^"]*\bjg-hero\b")[^>]*>[\s\S]*?<\/header>/i, match => `${match}${featured}`);
   }
 
-  html = html.replace(/(<a\\b[^>]*href="#arrival"[^>]*>)[\\s\\S]*?(<\\/a>)/i, '$1More details ↓$2').replace('href="#arrival"', 'href="#more-details"');
+  html = html.replace(/(<a\b[^>]*href="#arrival"[^>]*>)[\s\S]*?(<\/a>)/i, '$1More details ↓$2').replace('href="#arrival"', 'href="#more-details"');
   const presentationCss = `
 .jg-hero figure{border-radius:12px;overflow:hidden}.jg-more-details{margin:2rem 0;border:1px solid rgba(23,33,31,.2);background:#fffdf8}.jg-more-details>summary{list-style:none;cursor:pointer;min-height:56px;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between;font-weight:750;color:#164f43}.jg-more-details>summary::-webkit-details-marker{display:none}.jg-more-details>summary::after{content:"+";font-size:1.5rem;line-height:1}.jg-more-details[open]>summary::after{content:"−"}.jg-more-details-content{padding:0 1.2rem 1.2rem}.jg-photo-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:1.5rem 0}.jg-photo-gallery figure{margin:0;min-height:240px;position:relative;overflow:hidden;border-radius:10px;background:#e5e0d4}.jg-photo-gallery img{width:100%;height:100%;min-height:240px;max-height:360px;object-fit:cover;display:block}.jg-photo-gallery figcaption{position:absolute;inset:auto 0 0;padding:2rem .8rem .7rem;background:linear-gradient(transparent,rgba(0,0,0,.78));color:white;font-size:.75rem}.jg-photo-gallery figcaption a{color:white}.jg-photo-link{margin:.4rem 0 1.5rem}.jg-lede{max-width:54ch;font-size:clamp(1.05rem,1.8vw,1.3rem);line-height:1.55}.jg-section h2{margin-bottom:.4em}@media(max-width:760px){.jg-photo-gallery{grid-template-columns:1fr 1fr;gap:8px}.jg-photo-gallery figure,.jg-photo-gallery img{min-height:180px}.jg-more-details-content{padding:0 .8rem .8rem}}
 `;
-  if (/<style>[\\s\\S]*?<\\/style>/i.test(html)) html = html.replace(/<\\/style>/i, `${presentationCss}</style>`);
+  if (/<style>[\s\S]*?<\/style>/i.test(html)) html = html.replace(/<\/style>/i, `${presentationCss}</style>`);
   return html;
 }
 
-function versionExisting(html, { placeName = '', route = null, placePage = false } = {}) {
+function versionExisting(html, { placeName = '', placeId = '', route = null, placePage = false } = {}) {
   html = placePage ? cleanRenderedGuide(html, { version: 'v1.9', placeName }) : decodeMojibake(html);
   if (placePage) { html = addWalkingRouteAction(html, route); html = placeGuidePresentation(html, { placeName, placeId }); }
   if (!/google-maps-routes\.js/.test(html)) {
