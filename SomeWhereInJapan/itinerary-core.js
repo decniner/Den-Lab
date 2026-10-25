@@ -250,13 +250,11 @@
         .sort((a, b) => b.score - a.score || String(a.place.name).localeCompare(String(b.place.name)));
       const clusters = clusterCandidates(scored);
       const activeCluster = activeLocalityByRegion.get(region);
-      const previousStops = resultDays.slice().reverse().find(day => day.region === region && day.places?.length)?.places || [];
-      const previousPoint = mapPoint(previousStops.at(-1));
-      const routeStartPoint = previousPoint || (originRegion === region ? originPoint : null);
+      const hasEarlierSightseeing = resultDays.some(day => day.places?.length);
+      const routeStartPoint = !hasEarlierSightseeing && originRegion === region ? originPoint : null;
       const cluster = clusters.sort((a, b) => {
         if (activeCluster && a.key === activeCluster.key) return -1;
         if (activeCluster && b.key === activeCluster.key) return 1;
-        if (previousPoint && a.center && b.center) return distanceKm(previousPoint, a.center) - distanceKm(previousPoint, b.center);
         const aRank = areaRouteRank(region, a.locality), bRank = areaRouteRank(region, b.locality);
         if (aRank >= 0 && bRank >= 0 && aRank !== bRank) return aRank - bRank;
         const aSeasonal = a.items.filter(item => item.seasonal), bSeasonal = b.items.filter(item => item.seasonal);
