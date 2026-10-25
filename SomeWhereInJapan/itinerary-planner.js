@@ -153,34 +153,112 @@
   }
   function createDayDirections(day, dayIndex) {
     if (!day.places.length) return null;
+    if (typeof day.navigationStart !== 'string') day.navigationStart = dayIndex === 0 ? (currentConfig.origin || '') : '';
     const section = document.createElement('section');
     section.className = 'itinerary-day-route';
-    section.setAttribute('aria-label', `Google Maps directions for Day ${dayIndex + 1}`);
+    section.setAttribute('aria-label', 'Route steps for Day ' + (dayIndex + 1));
     const heading = document.createElement('h4');
-    heading.textContent = 'Follow this day in Google Maps';
+    heading.textContent = 'Day route';
     const note = document.createElement('p');
-    note.className = 'itinerary-transition';
-    note.textContent = 'Open the legs in order. Google Maps shows live directions for each pair of stops; it does not reorder the itinerary.';
-    const links = document.createElement('div');
-    links.className = 'itinerary-stop-actions';
+    note.className = 'itinerary-day-route-note';
+    note.textContent = 'Follow the numbered steps. Google Maps gives live directions for each leg; the stop order stays as shown.';
+    const startLabel = document.createElement('label');
+    startLabel.className = 'itinerary-day-start';
+    const startCaption = document.createElement('span');
+    startCaption.textContent = 'START THIS DAY FROM';
+    const startInput = document.createElement('input');
+    startInput.type = 'text';
+    startInput.maxLength = 100;
+    startInput.placeholder = 'Hotel, station, or address';
+    startInput.setAttribute('aria-label', 'Starting point for Day ' + (dayIndex + 1));
+    startInput.value = day.navigationStart;
+    startLabel.append(startCaption, startInput);
+    const list = document.createElement('ol');
+    list.className = 'itinerary-route-steps';
     const first = day.places[0];
-    let legNumber = 1;
-    if (dayIndex === 0 && currentConfig.origin) {
-      appendLink(links, `Leg ${legNumber} · ${currentConfig.origin} → ${first.name} ↗`, directionsUrl(currentConfig.origin, first));
-    } else {
-      appendLink(links, `Start · ${first.name} ↗`, placeMapUrl(first));
+    const firstStep = document.createElement('li');
+    firstStep.className = 'itinerary-route-step';
+    const firstNumber = document.createElement('span');
+    firstNumber.className = 'itinerary-route-step-number';
+    firstNumber.textContent = '01';
+    const firstBody = document.createElement('div');
+    firstBody.className = 'itinerary-route-step-body';
+    const firstTitle = document.createElement('strong');
+    const firstHint = document.createElement('span');
+    firstHint.className = 'itinerary-route-step-hint';
+    const firstLink = document.createElement('a');
+    firstLink.className = 'itinerary-route-button';
+    firstLink.target = '_blank';
+    firstLink.rel = 'noopener noreferrer';
+    firstBody.append(firstTitle, firstHint, firstLink);
+    firstStep.append(firstNumber, firstBody);
+    list.append(firstStep);
+    function refreshFirstStep() {
+      const origin = day.navigationStart.trim();
+      firstTitle.textContent = origin ? origin + ' → ' + first.name : 'Get to ' + first.name;
+      firstHint.textContent = origin ? 'Live public transport directions' : 'Add a hotel, station, or address above for directions to this stop.';
+      firstLink.href = origin ? directionsUrl(origin, first) : placeMapUrl(first);
+      firstLink.textContent = origin ? 'Get directions in Google Maps ↗' : 'View this stop on the map ↗';
+      firstLink.setAttribute('aria-label', origin ? 'Get public transport directions from ' + origin + ' to ' + first.name + ' in Google Maps' : 'View ' + first.name + ' on the map');
     }
+    startInput.addEventListener('input', () => {
+      day.navigationStart = startInput.value;
+      refreshFirstStep();
+    });
+    refreshFirstStep();
     day.places.slice(1).forEach((place, index) => {
       const previous = day.places[index];
-      legNumber += 1;
-      appendLink(links, `Leg ${legNumber} · ${previous.name} → ${place.name} ↗`, directionsUrl(directionsLocation(previous), place));
+      const stepNumber = index + 2;
+      const step = document.createElement('li');
+      step.className = 'itinerary-route-step';
+      const number = document.createElement('span');
+      number.className = 'itinerary-route-step-number';
+      number.textContent = String(stepNumber).padStart(2, '0');
+      const body = document.createElement('div');
+      body.className = 'itinerary-route-step-body';
+      const title = document.createElement('strong');
+      title.textContent = previous.name + ' → ' + place.name;
+      const hint = document.createElement('span');
+      hint.className = 'itinerary-route-step-hint';
+      hint.textContent = 'Continue from stop ' + (stepNumber - 1);
+      const link = document.createElement('a');
+      link.className = 'itinerary-route-button';
+      link.href = directionsUrl(directionsLocation(previous), place);
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = 'Get directions in Google Maps ↗';
+      link.setAttribute('aria-label', 'Get public transport directions from ' + previous.name + ' to ' + place.name + ' in Google Maps');
+      body.append(title, hint, link);
+      step.append(number, body);
+      list.append(step);
     });
     if (currentConfig.endpoint && dayIndex === currentPlan.days.length - 1) {
       const last = day.places.at(-1);
-      legNumber += 1;
-      appendLink(links, `Final leg ${legNumber} · ${last.name} → ${currentConfig.endpoint} ↗`, directionsBetweenUrl(directionsLocation(last), currentConfig.endpoint));
+      const stepNumber = day.places.length + 1;
+      const step = document.createElement('li');
+      step.className = 'itinerary-route-step';
+      const number = document.createElement('span');
+      number.className = 'itinerary-route-step-number';
+      number.textContent = String(stepNumber).padStart(2, '0');
+      const body = document.createElement('div');
+      body.className = 'itinerary-route-step-body';
+      const title = document.createElement('strong');
+      title.textContent = last.name + ' → ' + currentConfig.endpoint;
+      const hint = document.createElement('span');
+      hint.className = 'itinerary-route-step-hint';
+      hint.textContent = 'Finish your day';
+      const link = document.createElement('a');
+      link.className = 'itinerary-route-button';
+      link.href = directionsBetweenUrl(directionsLocation(last), currentConfig.endpoint);
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = 'Get directions in Google Maps ↗';
+      link.setAttribute('aria-label', 'Get directions from ' + last.name + ' to ' + currentConfig.endpoint + ' in Google Maps');
+      body.append(title, hint, link);
+      step.append(number, body);
+      list.append(step);
     }
-    section.append(heading, note, links);
+    section.append(heading, note, startLabel, list);
     return section;
   }
   function renderPlan() {
@@ -213,7 +291,7 @@
     if (currentConfig.endpoint) {
       const finish = document.createElement('p'); finish.textContent = `Finish: ${currentConfig.endpoint}. Check this final connection with live directions.`; last.append(finish);
       const finalPlace = finalStops.at(-1);
-      if (finalPlace) appendLink(last, 'Directions to your end point ↗', directionsUrl(directionsLocation(finalPlace), { place: currentConfig.endpoint }));
+      if (finalPlace) 
     } else {
       const reminder = document.createElement('p'); reminder.textContent = 'Add an end point above if you want a reminder for your final transfer.'; last.append(reminder);
     }
