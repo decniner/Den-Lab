@@ -132,7 +132,8 @@
       if (!remaining.length) { if (distance < bestDistance) { bestDistance = distance; best = path; } return; }
       for (let index = 0; index < remaining.length; index++) {
         const place = remaining[index], point = mapPoint(place);
-        const nextDistance = distance + distanceKm(path.length ? mapPoint(path[path.length - 1]) : startPoint, point);
+        const from = path.length ? mapPoint(path[path.length - 1]) : startPoint;
+        const nextDistance = distance + (from ? distanceKm(from, point) : 0);
         if (nextDistance >= bestDistance) continue;
         visit([...remaining.slice(0, index), ...remaining.slice(index + 1)], [...path, place], nextDistance);
       }
