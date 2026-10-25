@@ -290,8 +290,6 @@
     const finalStops = currentPlan.days.flatMap(day => day.places);
     if (currentConfig.endpoint) {
       const finish = document.createElement('p'); finish.textContent = `Finish: ${currentConfig.endpoint}. Check this final connection with live directions.`; last.append(finish);
-      const finalPlace = finalStops.at(-1);
-      if (finalPlace) 
     } else {
       const reminder = document.createElement('p'); reminder.textContent = 'Add an end point above if you want a reminder for your final transfer.'; last.append(reminder);
     }
