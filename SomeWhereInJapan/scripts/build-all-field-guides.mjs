@@ -79,9 +79,55 @@ function addWalkingRouteAction(html, route) {
   return html.replace(/(<section\b(?=[^>]*\bid="route")[^>]*>[\s\S]*?<h2\b[^>]*>[\s\S]*?<\/h2>)/i, `$1${action}`);
 }
 
+function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
+  if (!placeName) return html;
+  const details = [];
+  let gallery = '';
+  const existingGallery = html.match(/<div class="jg-photo-gallery"[^>]*>[\\s\\S]*?<\\/div>/i)?.[0] || '';
+  const researchedGallery = researchById.get(placeId)?.gallery || [];
+  const images = researchedGallery.filter(photo => photo?.imageUrl && photo?.sourcePage && photo?.photographer && photo?.license && photo?.alt);
+  if (images.length) {
+    gallery = `<div class="jg-photo-gallery" aria-label="Verified photos of ${esc(placeName)}">${images.map(photo => `<figure><img data-photo-verified="true" data-photo-source="${esc(photo.sourcePage)}" data-photo-credit="${esc(photo.photographer)}" data-photo-license="${esc(photo.license)}" data-photo-alt="${esc(photo.alt)}" src="${esc(photo.imageUrl)}" alt="${esc(photo.alt)}" loading="lazy" decoding="async"><figcaption>${esc(photo.photographer)} · ${esc(photo.license)} · <a href="${esc(photo.sourcePage)}" target="_blank" rel="noopener noreferrer">Photo source</a></figcaption></figure>`).join('')}</div>`;
+  } else if (existingGallery) {
+    gallery = existingGallery;
+  }
+
+  const routeMatch = html.match(/<section\\b(?=[^>]*\\bid="route")[^>]*>[\\s\\S]*?<\\/section>/i);
+  const routeSection = routeMatch?.[0] || '';
+  if (routeSection) html = html.replace(routeSection, '');
+  if (existingGallery) html = html.replace(existingGallery, '');
+
+  const sectionRe = /<section\\b(?=[^>]*\\bclass="[^"]*\\bjg-section\\b")[^>]*>[\\s\\S]*?<\\/section>/gi;
+  html = html.replace(sectionRe, section => {
+    if (/\\bid="route"/i.test(section)) return section;
+    details.push(section);
+    return '';
+  });
+
+  const nameQuery = encodeURIComponent(`${placeName} Japan`);
+  const photoLink = `<p class="jg-photo-link"><a class="jg-btn jg-light" href="https://www.google.com/maps/search/?api=1&query=${nameQuery}" target="_blank" rel="noopener noreferrer">See more visitor photos on Google Maps ↗</a></p>`;
+  const moreDetails = details.length
+    ? `<details class="jg-more-details" id="more-details"><summary>More details</summary><div class="jg-more-details-content">${details.join('')}</div></details>`
+    : '';
+
+  const featured = [gallery, photoLink, routeSection, moreDetails].filter(Boolean).join('');
+  if (featured) {
+    const lede = /<p class="jg-lede">[\\s\\S]*?<\\/p>/i;
+    if (lede.test(html)) html = html.replace(lede, match => `${match}${featured}`);
+    else html = html.replace(/<header\\b(?=[^>]*\\bclass="[^"]*\\bjg-hero\\b")[^>]*>[\\s\\S]*?<\\/header>/i, match => `${match}${featured}`);
+  }
+
+  html = html.replace(/(<a\\b[^>]*href="#arrival"[^>]*>)[\\s\\S]*?(<\\/a>)/i, '$1More details ↓$2').replace('href="#arrival"', 'href="#more-details"');
+  const presentationCss = `
+.jg-hero figure{border-radius:12px;overflow:hidden}.jg-more-details{margin:2rem 0;border:1px solid rgba(23,33,31,.2);background:#fffdf8}.jg-more-details>summary{list-style:none;cursor:pointer;min-height:56px;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between;font-weight:750;color:#164f43}.jg-more-details>summary::-webkit-details-marker{display:none}.jg-more-details>summary::after{content:"+";font-size:1.5rem;line-height:1}.jg-more-details[open]>summary::after{content:"−"}.jg-more-details-content{padding:0 1.2rem 1.2rem}.jg-photo-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:1.5rem 0}.jg-photo-gallery figure{margin:0;min-height:240px;position:relative;overflow:hidden;border-radius:10px;background:#e5e0d4}.jg-photo-gallery img{width:100%;height:100%;min-height:240px;max-height:360px;object-fit:cover;display:block}.jg-photo-gallery figcaption{position:absolute;inset:auto 0 0;padding:2rem .8rem .7rem;background:linear-gradient(transparent,rgba(0,0,0,.78));color:white;font-size:.75rem}.jg-photo-gallery figcaption a{color:white}.jg-photo-link{margin:.4rem 0 1.5rem}.jg-lede{max-width:54ch;font-size:clamp(1.05rem,1.8vw,1.3rem);line-height:1.55}.jg-section h2{margin-bottom:.4em}@media(max-width:760px){.jg-photo-gallery{grid-template-columns:1fr 1fr;gap:8px}.jg-photo-gallery figure,.jg-photo-gallery img{min-height:180px}.jg-more-details-content{padding:0 .8rem .8rem}}
+`;
+  if (/<style>[\\s\\S]*?<\\/style>/i.test(html)) html = html.replace(/<\\/style>/i, `${presentationCss}</style>`);
+  return html;
+}
+
 function versionExisting(html, { placeName = '', route = null, placePage = false } = {}) {
   html = placePage ? cleanRenderedGuide(html, { version: 'v1.9', placeName }) : decodeMojibake(html);
-  if (placePage) html = addWalkingRouteAction(html, route);
+  if (placePage) { html = addWalkingRouteAction(html, route); html = placeGuidePresentation(html, { placeName, placeId }); }
   if (!/google-maps-routes\.js/.test(html)) {
     html = html.replace(/<script\b[^>]*src="((?:\.\.\/)*)city-route-ui\.js[^\"]*"[^>]*><\/script>/i, (_match, prefix = '') => `<script src="${prefix}google-maps-routes.js?v=20261024-3" defer></script>${_match}`);
   }
@@ -146,7 +192,7 @@ for (const record of identities) {
   let html=fs.readFileSync(file,'utf8');
   const alreadyPremium=html.includes('class="jg-hero"') || html.includes('class="kg-hero"') || html.includes('class="fg-hero"');
   if (alreadyPremium) {
-    fs.writeFileSync(file,versionExisting(html,{placeName:record.name,route:existingRoutes.get(record.id),placePage:true}),'utf8'); retained++;
+    fs.writeFileSync(file,versionExisting(html,{placeName:record.name,placeId:record.id,route:existingRoutes.get(record.id),placePage:true}),'utf8'); retained++;
   } else {
     const location=locations[record.id] || null;
     const imageRow=photoByName.get(record.name) || null;
@@ -156,7 +202,7 @@ for (const record of identities) {
       routeData.routes.push(route);
       if (map) { routeData.maps[record.id]=map; locatorMaps++; } else missingMap++;
     }
-    fs.writeFileSync(file,versionExisting(render(record,html,imageRow,location,route),{placeName:record.name,route,placePage:true}),'utf8'); rebuilt++;
+    fs.writeFileSync(file,versionExisting(render(record,html,imageRow,location,route),{placeName:record.name,placeId:record.id,route,placePage:true}),'utf8'); rebuilt++;
   }
 }
 routeData.routes.sort((a,b)=>a.placeId.localeCompare(b.placeId));
