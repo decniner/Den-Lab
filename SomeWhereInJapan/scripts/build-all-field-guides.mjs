@@ -93,7 +93,17 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
   }
 
   const routeMatch = html.match(/<section\b(?=[^>]*\bid="route")[^>]*>[\s\S]*?<\/section>/i);
-  const routeSection = routeMatch?.[0] || '';
+  let routeSection = routeMatch?.[0] || '';
+  const locationMap = routeSection.includes('data-route-kind="location"');
+  if (locationMap) {
+    routeSection = routeSection
+      .replace(/<p class="jg-kicker">THE PLACE[^<]*<\/p>/i, '')
+      .replace(/<h2\b[^>]*>[\s\S]*?· location map<\/h2>/i, '<h2>Find it on the map</h2>')
+      .replace(/(<h2\b[^>]*>Find it on the map<\/h2>)\s*<p>[\s\S]*?<\/p>/i, '$1')
+      .replace(/<p class="jg-note">[\s\S]*?<\/p>/i, '')
+      .replace(/<p class="jg-small">[\s\S]*?<\/p>/i, '')
+      .replace('data-route-kind="location"', 'data-route-kind="location" data-compact-route-guide="true"');
+  }
   if (routeSection) html = html.replace(routeSection, '');
   if (existingGallery) html = html.replace(existingGallery, '');
 
@@ -105,6 +115,8 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
   });
 
   html = html.replace(/<p class="jg-lede">\s*(?:WHY THIS PLACE|A CLOSER LOOK)\s*<\/p>/i, '');
+  html = html.replace(/<p class="jg-kicker">A PLACE-LED FIELD GUIDE<\/p>/i, '').replace(/<p class="jg-area">[\s\S]*?<\/p>/i, '');
+  html = html.replace(/(<a\b[^>]*href="#route"[^>]*>)[\s\S]*?(<\/a>)/i, '$1View map ↓$2');
   const nameQuery = encodeURIComponent(`${placeName} Japan`);
   const photoLink = `<p class="jg-photo-link"><a class="jg-btn jg-light" href="https://www.google.com/maps/search/?api=1&query=${nameQuery}" target="_blank" rel="noopener noreferrer">See more visitor photos on Google Maps ↗</a></p>`;
   const moreDetails = details.length
@@ -120,7 +132,7 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
 
   html = html.replace(/(<a\b[^>]*href="#arrival"[^>]*>)[\s\S]*?(<\/a>)/i, '$1More details ↓$2').replace('href="#arrival"', 'href="#more-details"');
   const presentationCss = `
-.jg-hero figure{border-radius:12px;overflow:hidden}.jg-more-details{margin:2rem 0;border:1px solid rgba(23,33,31,.2);background:#fffdf8}.jg-more-details>summary{list-style:none;cursor:pointer;min-height:56px;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between;font-weight:750;color:#164f43}.jg-more-details>summary::-webkit-details-marker{display:none}.jg-more-details>summary::after{content:"+";font-size:1.5rem;line-height:1}.jg-more-details[open]>summary::after{content:"−"}.jg-more-details-content{padding:0 1.2rem 1.2rem}.jg-photo-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:1.5rem 0}.jg-photo-gallery figure{margin:0;min-height:240px;position:relative;overflow:hidden;border-radius:10px;background:#e5e0d4}.jg-photo-gallery img{width:100%;height:100%;min-height:240px;max-height:360px;object-fit:cover;display:block}.jg-photo-gallery figcaption{position:absolute;inset:auto 0 0;padding:2rem .8rem .7rem;background:linear-gradient(transparent,rgba(0,0,0,.78));color:white;font-size:.75rem}.jg-photo-gallery figcaption a{color:white}.jg-photo-link{margin:.4rem 0 1.5rem}.jg-lede{max-width:54ch;font-size:clamp(1.05rem,1.8vw,1.3rem);line-height:1.55}.jg-section h2{margin-bottom:.4em}@media(max-width:760px){.jg-photo-gallery{grid-template-columns:1fr;gap:12px}.jg-photo-gallery figure,.jg-photo-gallery img{min-height:240px}.jg-more-details-content{padding:0 .8rem .8rem}}
+.jg-hero figure{border-radius:12px;overflow:hidden}.japan-guide .city-route-map-canvas,.japan-guide .city-route-map-fallback{height:320px}.japan-guide [data-route-kind="location"] .city-route-shared-head,.japan-guide [data-route-kind="location"] .city-route-list-wrap,.japan-guide [data-route-kind="location"] .city-route-sources,.japan-guide [data-route-kind="location"] .city-route-source-note{display:none!important}.japan-guide [data-route-kind="location"] .city-route-map-layout{grid-template-columns:1fr;margin-top:0}.japan-guide [data-route-kind="location"] .city-route-map-frame{position:relative;top:auto}.jg-more-details{margin:2rem 0;border:1px solid rgba(23,33,31,.2);background:#fffdf8}.jg-more-details>summary{list-style:none;cursor:pointer;min-height:56px;padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between;font-weight:750;color:#164f43}.jg-more-details>summary::-webkit-details-marker{display:none}.jg-more-details>summary::after{content:"+";font-size:1.5rem;line-height:1}.jg-more-details[open]>summary::after{content:"−"}.jg-more-details-content{padding:0 1.2rem 1.2rem}.jg-photo-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:1.5rem 0}.jg-photo-gallery figure{margin:0;min-height:240px;position:relative;overflow:hidden;border-radius:10px;background:#e5e0d4}.jg-photo-gallery img{width:100%;height:100%;min-height:240px;max-height:360px;object-fit:cover;display:block}.jg-photo-gallery figcaption{position:absolute;inset:auto 0 0;padding:2rem .8rem .7rem;background:linear-gradient(transparent,rgba(0,0,0,.78));color:white;font-size:.75rem}.jg-photo-gallery figcaption a{color:white}.jg-photo-link{margin:.4rem 0 1.5rem}.jg-lede{max-width:54ch;font-size:clamp(1.05rem,1.8vw,1.3rem);line-height:1.55}.jg-section h2{margin-bottom:.4em}@media(max-width:760px){.japan-guide .city-route-map-canvas,.japan-guide .city-route-map-fallback{height:260px}.jg-photo-gallery{grid-template-columns:1fr;gap:12px}.jg-photo-gallery figure,.jg-photo-gallery img{min-height:240px}.jg-more-details-content{padding:0 .8rem .8rem}}
 `;
   if (/<style>[\s\S]*?<\/style>/i.test(html)) html = html.replace(/<\/style>/i, `${presentationCss}</style>`);
   return html;
