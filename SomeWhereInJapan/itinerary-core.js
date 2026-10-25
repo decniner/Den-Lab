@@ -99,6 +99,28 @@
     return { latitude, longitude };
   }
 
+  function normalizeLocationLabel(value) {
+    return String(value || '').normalize('NFKD').toLowerCase()
+      .replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  }
+
+  function originMapPoint(origin, destinations) {
+    const label = normalizeLocationLabel(origin);
+    if (!label) return null;
+    const aliases = [label, label.replace(/\s+(station|airport|terminal)(\s+.*)?$/, '').trim()].filter(Boolean);
+    const matches = destinations.filter(place => {
+      const fields = [place.name, place.place, place.mapLocation?.locator];
+      const parts = fields.flatMap(value => String(value || '').split(/[·,|]/).map(normalizeLocationLabel));
+      return aliases.some(alias => parts.includes(alias) || fields.some(value => normalizeLocationLabel(value) === alias));
+    });
+    const points = matches.map(mapPoint).filter(Boolean);
+    if (!points.length) return null;
+    return {
+      latitude: points.reduce((sum, point) => sum + point.latitude, 0) / points.length,
+      longitude: points.reduce((sum, point) => sum + point.longitude, 0) / points.length
+    };
+  }
+
   function distanceKm(a, b) {
     if (!a || !b) return Infinity;
     const radians = value => value * Math.PI / 180;
@@ -183,6 +205,7 @@
     }
 
     const originRegion = inferOriginRegion(origin);
+    const originPoint = originMapPoint(origin, safePlaces);
     const initialTransfer = Boolean(originRegion && regionPlan[0] && originRegion !== regionPlan[0]);
     const maxRegions = Math.max(1, Math.floor((count - (initialTransfer ? 1 : 0) + 1) / 2));
     if (regionPlan.length > maxRegions) {
@@ -226,7 +249,7 @@
       const clusters = clusterCandidates(scored);
       const activeCluster = activeLocalityByRegion.get(region);
       const previousStops = resultDays.slice().reverse().find(day => day.region === region && day.places?.length)?.places || [];
-      const previousPoint = mapPoint(previousStops.at(-1));
+      const previousPoint = mapPoint(previousStops.at(-1)) || (originRegion === region ? originPoint : null);
       const cluster = clusters.sort((a, b) => {
         if (activeCluster && a.key === activeCluster.key) return -1;
         if (activeCluster && b.key === activeCluster.key) return 1;
