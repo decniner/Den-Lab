@@ -97,7 +97,7 @@ function placeGuidePresentation(html, { placeName = '', placeId = '' } = {}) {
   if (routeSection) html = html.replace(routeSection, '');
   if (existingGallery) html = html.replace(existingGallery, '');
 
-  const sectionRe = /<section\b(?=[^>]*\bclass="[^"]*\bjg-section\b")[^>]*>[\s\S]*?<\/section>/gi;
+  const sectionRe = /<section\b(?=[^>]*\bclass="[^"]*\bjg-section\b[^"]*")[^>]*>[\s\S]*?<\/section>/gi;
   html = html.replace(sectionRe, section => {
     if (/\bid="route"/i.test(section)) return section;
     details.push(section);
