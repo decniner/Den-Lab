@@ -117,7 +117,8 @@
     if (!points.length) return null;
     return {
       latitude: points.reduce((sum, point) => sum + point.latitude, 0) / points.length,
-      longitude: points.reduce((sum, point) => sum + point.longitude, 0) / points.length
+      longitude: points.reduce((sum, point) => sum + point.longitude, 0) / points.length,
+      matchedPlaceKeys: matches.length === 1 ? [placeKey(matches[0])] : []
     };
   }
 
@@ -237,7 +238,8 @@
         resultDays.push({date:dateKey(date),month:MONTHS[month-1],region,places:[],note:`Travel day: connect from ${scheduledDay.transferFrom} to ${region}. No sightseeing stops are scheduled. Confirm transport, weather, and arrival timing before booking.`});
         continue;
       }
-      const remaining = safePlaces.filter(place => !used.has(placeKey(place)) && (!safeRegions.length || safeRegions.includes(place.region)) && eventMatchesDate(place,date));
+      const originPlaceKeys = new Set(originPoint?.matchedPlaceKeys || []);
+      const remaining = safePlaces.filter(place => !used.has(placeKey(place)) && !originPlaceKeys.has(placeKey(place)) && (!safeRegions.length || safeRegions.includes(place.region)) && eventMatchesDate(place,date));
       let pool = remaining.filter(place => !region || place.region === region);
       if (!pool.length) {
         resultDays.push({ date: dateKey(date), month: MONTHS[month - 1], region: region || '', places: [], note: 'No more unused places match the selected regions. Add destinations or adjust the region choices.' });
