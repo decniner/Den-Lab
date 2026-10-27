@@ -200,15 +200,15 @@
       "url": "https://toffy.jp/products/hw-ds3?variant=51142601113874"
     },
     "phenixstore-com:8634451231024:46618175537456": {
-      "sale_price": "16650",
+      "sale_price": "18000",
       "reference_price": "45000",
-      "sent_at": "2026-10-19T08:51:25+09:00",
+      "sent_at": "2026-10-27T10:03:31+09:00",
       "url": "https://phenixstore.com/products/esw23ot64?variant=46618175537456"
     },
     "phenixstore-com:8720368337200:46824032928048": {
-      "sale_price": "1332",
+      "sale_price": "1440",
       "reference_price": "3600",
-      "sent_at": "2026-10-19T08:51:25+09:00",
+      "sent_at": "2026-10-27T10:03:31+09:00",
       "url": "https://phenixstore.com/products/esw23hw50?variant=46824032928048"
     },
     "phenixstore-com:9578701553968:49016135745840": {
@@ -232,13 +232,13 @@
     "toffyjapan:10095234187538:51142613270802": {
       "sale_price": "9600",
       "reference_price": "23100",
-      "sent_at": "2026-10-20T09:51:38+09:00",
+      "sent_at": "2026-10-27T10:03:31+09:00",
       "url": "https://toffy.jp/products/hw-vc2?variant=51142613270802"
     },
     "toffyjapan:10095236645138:51142624411922": {
       "sale_price": "1230",
       "reference_price": "2728",
-      "sent_at": "2026-10-20T09:51:38+09:00",
+      "sent_at": "2026-10-27T10:03:31+09:00",
       "url": "https://toffy.jp/products/hfn6?variant=51142624411922"
     },
     "toffyjapan:8883468894482:47419932508434": {
@@ -795,9 +795,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-10-26",
-    "coverage_key": "a0217ca137914b3a62fa1fbc05d0fb3b59613171801914c2f5685b5d47e71d90",
-    "completed_at": "2026-10-26T08:44:34+09:00",
-    "digest_hash": "09953e3de500ee4d81e48ac7c6700e8eeb1830cb7a718b541b38e735a5a534cc"
+    "date": "2026-10-27",
+    "coverage_key": "aaf8e3d6cd5f457d1992cb91261224bcdb7e4744bf417b8f22064d59ac38e007",
+    "completed_at": "2026-10-27T10:03:31+09:00",
+    "digest_hash": "c1deb93332137c5e01fd06060cda887925437af18a8e800d0aad4218f16e39b2"
   }
 }
