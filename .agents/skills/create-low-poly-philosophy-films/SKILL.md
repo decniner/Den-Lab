@@ -13,8 +13,10 @@ Produce an original, voiced animated film in the approved visual language: sculp
 - Put abstract cutaways on near-black backgrounds with fine light lines and small warm accents. Use clean sans-serif speech captions and a serif title. Follow the supplied reference before any generic style default. This style has no 90% near-white area target.
 - Default to 1080 × 1920, 30 fps, H.264/AAC stereo; target 120–180 seconds. Let an effective exchange run longer naturally. Use local Chatterbox Turbo with Peter Yearsley for the human and Caro Davy for the AI, reflective pauses and a short ending hold. Use the CC0 reference recordings documented in the narration reference.
 - Show one spoken word at a time, preserving authored punctuation. Default to 44 px at y=920 on the internal 720×1280 canvas: 66 px at y=1380 in a 1080×1920 export. Clear text in speech gaps; reveal nothing before its acoustic onset. These settings are about 29% larger and 153 output pixels higher than the previous layout. Check actual playback overlays before promising clearance.
-- Start with a concrete human experience, let the human challenge the AI, connect it to a larger question and return with changed meaning. Separate science, uncertainty and metaphor. End with an open question.
+- Start with a concrete human experience, let the human challenge the AI, connect it to a larger question and return with changed meaning. Keep humor light and specific to the subject when requested. Separate science, uncertainty and metaphor. When discussing AI, do not imply present systems have private desires or can guarantee what future systems will do. End with an open question.
 - Use original dialogue, characters and animation. Credit a specific reference when used. Keep music off by default, matching the approved film's voice-led treatment. Do not promise award-level quality or commercial voice rights.
+- Map every spoken beat to a concrete, subject-relevant image or action. Build a shot-by-shot storyboard before rendering; avoid generic motifs that are merely relabeled. Inspect representative early and late frames from each dialogue turn, then inspect exported frames and repair any mismatch.
+- Prepare a concise, accurate video title and description with a clear synthetic-media disclosure. Create a matching cover image with one bold, centered subject word or short hook, and check it at phone size. Keep the cover and metadata with the production deliverables.
 
 ## Make the film
 
@@ -36,7 +38,7 @@ Read the output and fix errors before claiming completion. Preserve TLS verifica
 
 ## Publishing
 
-Upload or publish only when the current user request authorizes it. Discover a supported YouTube connector first; otherwise use an available browser and its secure authentication/upload guidance. Verify the channel, upload status, visibility and resulting video URL. A request to upload can be completed privately when no publication visibility is specified. Report any sign-in blocker plainly. Creating a film alone does not authorize publishing it.
+Upload or publish only when the current user request authorizes it. Discover a supported YouTube connector first; otherwise use an available browser and its secure authentication/upload guidance. Verify the channel, upload status, visibility and resulting video URL. A request to upload can be completed privately when no publication visibility is specified; make it public only when explicitly requested. Apply a requested custom thumbnail in Studio, save, refresh, and confirm the expected cover is still displayed. An API success or the presence of thumbnail variants alone does not prove that the intended image is selected in Studio. If Studio requires an audience setting to save, choose accurately from the content and ask when uncertain. Report any sign-in blocker plainly. Creating a film alone does not authorize publishing it.
 
 ## Common fixes
 
