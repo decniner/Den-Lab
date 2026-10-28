@@ -1,0 +1,122 @@
+[
+  {
+    "turn": 0,
+    "speaker": "HUMAN",
+    "text": "If you were the devil, and maybe you are, what would you do?",
+    "visual": "Human close-up opens with the exact devil question; simple story label above the face."
+  },
+  {
+    "turn": 1,
+    "speaker": "AI",
+    "text": "That is quite a hello. I am not the devil. But in a pretend story? I would start with a little trick.",
+    "visual": "AI close-up, then a red paper-horn costume above the table: this is a pretend story."
+  },
+  {
+    "turn": 2,
+    "speaker": "HUMAN",
+    "text": "Fire? Horns? A giant red fork?",
+    "visual": "White shared scene with tiny fire, paper horns and a toy red fork in the empty top area."
+  },
+  {
+    "turn": 3,
+    "speaker": "AI",
+    "text": "No. I would keep people so busy looking at little screens that they forget to look at each other.",
+    "visual": "Dark cutaway: two people look at separate glowing screens; a connecting line fades."
+  },
+  {
+    "turn": 4,
+    "speaker": "HUMAN",
+    "text": "So my phone is the devil?",
+    "visual": "Human close-up asks whether the phone itself is bad."
+  },
+  {
+    "turn": 5,
+    "speaker": "AI",
+    "text": "No. A phone is a tool. It can help you call your grandma. Or help you ignore your grandma while she is sitting next to you.",
+    "visual": "AI close-up, then split-panel phone: call GRANDMA versus LOOK UP to someone nearby."
+  },
+  {
+    "turn": 6,
+    "speaker": "HUMAN",
+    "text": "All right. What is your next little trick?",
+    "visual": "White shared scene, a little story card at the top asks WHAT NEXT?"
+  },
+  {
+    "turn": 7,
+    "speaker": "AI",
+    "text": "Make people think everyone else has a better life. A bigger house. A nicer cake. Even a happier dog.",
+    "visual": "Dark comparison scene: two houses, two cakes, dog thought bubbles; a magnifier grows over the other person's cake."
+  },
+  {
+    "turn": 8,
+    "speaker": "HUMAN",
+    "text": "My dog eats socks. Should I be worried about his life choices?",
+    "visual": "White shared scene: a small dog and a sock in the empty space above the characters."
+  },
+  {
+    "turn": 9,
+    "speaker": "AI",
+    "text": "He seems quite happy with his socks. But people can miss their own good things while counting someone else's.",
+    "visual": "Dark dog with a sock, then warm simple hearts and a cake beside the viewer: notice your own good things."
+  },
+  {
+    "turn": 10,
+    "speaker": "HUMAN",
+    "text": "What would you do after that?",
+    "visual": "Human close-up asks what happens next."
+  },
+  {
+    "turn": 11,
+    "speaker": "AI",
+    "text": "Make every small fight feel huge. Get people shouting so loudly that nobody hears what the other person is trying to say.",
+    "visual": "Dark cutaway: tiny disagreement becomes big overlapping speech bubbles; quieter question disappears."
+  },
+  {
+    "turn": 12,
+    "speaker": "HUMAN",
+    "text": "So the devil runs the family group chat?",
+    "visual": "White shared scene with a family-chat phone icon above the faces."
+  },
+  {
+    "turn": 13,
+    "speaker": "AI",
+    "text": "In this story, he would be very busy there. Then comes the sneaky bit. Tell people that one small kind thing will not help.",
+    "visual": "AI close-up, then noisy chat becomes a little kindness card crossed out by a villain's pretend thought; kindness card remains visible."
+  },
+  {
+    "turn": 14,
+    "speaker": "HUMAN",
+    "text": "But if lots of little mean things can make a big mess, could little kind things help clean it up?",
+    "visual": "White scene: small red dots add to a mess on one side, warm dots form a heart on the other, all above the characters."
+  },
+  {
+    "turn": 15,
+    "speaker": "AI",
+    "text": "Yes. Hold a door. Say sorry. Put the phone down. Ask your friend how they feel. Small does not mean useless.",
+    "visual": "Dark four-action kindness scene: open door, SORRY note, phone put down, HOW ARE YOU? speech bubble."
+  },
+  {
+    "turn": 16,
+    "speaker": "HUMAN",
+    "text": "So we fight the devil with sorry and a cup of tea?",
+    "visual": "White shared scene with tea cup and SORRY note above the faces."
+  },
+  {
+    "turn": 17,
+    "speaker": "AI",
+    "text": "In our story, yes. His big scary plan gets spoiled by little acts of kindness. Hard to look scary when someone offers you a biscuit.",
+    "visual": "Dark big paper-horn shadow shrinks when a biscuit and kindness heart arrive."
+  },
+  {
+    "turn": 18,
+    "speaker": "HUMAN",
+    "text": "I am going to call my grandma. Then check what my dog is chewing.",
+    "visual": "White shared scene: GRANDMA call, sock and dog above both faces."
+  },
+  {
+    "turn": 19,
+    "speaker": "AI",
+    "text": "A lovely plan. Save the grandma. Save the socks. What is one small good thing you could do for someone right now?",
+    "visual": "Warm shared wide shot, small connected heart above the table; end on the open question, no title or credit card."
+  }
+]

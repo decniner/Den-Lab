@@ -1,0 +1,30 @@
+{
+  "title_lines": [
+    "If You Were",
+    "the Devil?"
+  ],
+  "closing_lines": [],
+  "output_stem": "If_You_Were_The_Devil",
+  "human_voice": "en-GB-RyanNeural",
+  "ai_voice": "en-GB-SoniaNeural",
+  "human_rate": "-8%",
+  "ai_rate": "-8%",
+  "width": 1080,
+  "fps": 30,
+  "lead_in_seconds": 0.6,
+  "tail_seconds": 0,
+  "min_duration_seconds": 60,
+  "workers": 4,
+  "show_chapter_labels": false,
+  "inspiration_credit": "Visual inspiration: ceterasilent",
+  "audio_engine": "chatterbox",
+  "caption_font_size": 44,
+  "caption_y": 920,
+  "human_voice_label": "Peter Yearsley",
+  "ai_voice_label": "Caro Davy",
+  "voice_credit": "Voices: Chatterbox Turbo / Peter Yearsley + Caro Davy",
+  "chatterbox_seed": 409,
+  "sans_font": "/System/Library/Fonts/Supplemental/Arial.ttf",
+  "serif_font": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+  "tts_threads": 2
+}

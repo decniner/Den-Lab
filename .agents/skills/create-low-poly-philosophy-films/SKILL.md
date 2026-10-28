@@ -1,6 +1,6 @@
 ---
 name: create-low-poly-philosophy-films
-description: Use when the user requests a philosophical human–AI animated film like The Space Between Seconds, or a reference with white low-poly characters, alternating close-ups and dark scientific or cosmic cutaways. Also use for another topic in this approved film style.
+description: Use when the user requests a philosophical human–AI animated film like The Space Between Seconds, or a reference with white low-poly characters, alternating close-ups and dark scientific or cosmic cutaways. Also use for simple, funny human–AI conversations on other subjects in this approved film style.
 ---
 
 # Create Low-Poly Philosophy Films
@@ -13,12 +13,17 @@ Produce an original, voiced animated film in the approved visual language: sculp
 - Put abstract cutaways on near-black backgrounds with fine light lines and small warm accents. Use clean sans-serif speech captions and a serif title. Follow the supplied reference before any generic style default. This style has no 90% near-white area target.
 - Default to 1080 × 1920, 30 fps, H.264/AAC stereo; target 120–180 seconds. Let an effective exchange run longer naturally. Use local Chatterbox Turbo with Peter Yearsley for the human and Caro Davy for the AI, reflective pauses and a short ending hold. Use the CC0 reference recordings documented in the narration reference.
 - Show one spoken word at a time, preserving authored punctuation. Default to 44 px at y=920 on the internal 720×1280 canvas: 66 px at y=1380 in a 1080×1920 export. Clear text in speech gaps; reveal nothing before its acoustic onset. These settings are about 29% larger and 153 output pixels higher than the previous layout. Check actual playback overlays before promising clearance.
+- Use simple everyday words and short sentences by default, as if explaining the idea to a five-year-old without talking down to the audience. Use familiar examples and light jokes; simplify diagram labels as well as dialogue. Treat supernatural or villain premises as pretend stories, not claims about the AI.
 - Start with a concrete human experience, let the human challenge the AI, connect it to a larger question and return with changed meaning. Keep humor light and specific to the subject when requested. Separate science, uncertainty and metaphor. When discussing AI, do not imply present systems have private desires or can guarantee what future systems will do. End with an open question.
 - Use original dialogue, characters and animation. Credit a specific reference when used. Keep music off by default, matching the approved film's voice-led treatment. Do not promise award-level quality or commercial voice rights.
+- Keep faces clear. In shared shots with the supplied camera, reserve the upper y=100–280 area for flat cards and icons; heads occupy roughly y=320–560 on the internal 720×1280 canvas. Keep table props in the central gap. Recheck these regions if the camera changes. Never place sticky notes, calendars, keys, or music notes over a face.
+- End on the final spoken question. Do not add an ending title or credits card unless requested; set `tail_seconds` to 0 and `closing_lines` to an empty list. Keep any needed credits in metadata or production notes.
 - Map every spoken beat to a concrete, subject-relevant image or action. Build a shot-by-shot storyboard before rendering; avoid generic motifs that are merely relabeled. Inspect representative early and late frames from each dialogue turn, then inspect exported frames and repair any mismatch.
 - Prepare a concise, accurate video title and description with a clear synthetic-media disclosure. Create a matching cover image with one bold, centered subject word or short hook, and check it at phone size. Keep the cover and metadata with the production deliverables.
 
 ## Make the film
+
+For the approved easy-word, light-humor version, read [simple-conversation.md](references/simple-conversation.md). It includes a reusable working preset from “If You Were the Devil?” and a face-clearance check. Use its story as an example; write fresh dialogue and matching visuals for other subjects.
 
 Read [production.md](references/production.md) for the project schema and scenes, and [chatterbox.md](references/chatterbox.md) for local narration setup, references, acoustic word timing and pronunciation repairs. Use the bundled working renderer; create each production outside the skill directory.
 
@@ -30,7 +35,7 @@ python3 <skill-dir>/scripts/make_film.py init --project <absolute-project-dir>
 2. Install the CPU dependencies in the narration reference, then check FFmpeg/FFprobe and fonts. Run `validate`, `setup-voice`, `audio`, then `samples` with the same `--project` argument.
 3. Inspect `contact.jpg` and full-size previews. Check actual white character shots and dark cutaways, phone-readable captions, contrast and scene meaning. Improve weak frames before rendering.
 4. Run `render`. It produces the MP4 and verifies full decoding, duration, dimensions, stereo sound, speech presence and caption integrity. Inspect `export_contact.jpg`, including the ending; do not substitute source previews for exported-frame inspection.
-5. Save the completed MP4 through the Library skill and deliver a playable/downloadable link with duration. Preserve Library identity for revisions.
+5. Save the MP4, one-word cover, dialogue, captions and verification report in the requested output location. Deliver a playable/downloadable link with duration. If a Library tool is available and in scope, preserve its identity for revisions.
 
 For a requested voice or caption audition, use a separate project with roughly 30 seconds of complete exchanges; keep its export separate from the current full film.
 
@@ -45,6 +50,7 @@ Upload or publish only when the current user request authorizes it. Discover a s
 | Problem | Action |
 | --- | --- |
 | Another all-white/pencil style activates | Follow this reference-matched contract for this film |
+| Graphics cover faces | Move cards and icons into the upper safe area; inspect full-size shared shots and run the face-clearance helper with the supplied camera |
 | Weak diagram contrast | Inspect light strokes against the charcoal canvas at phone size |
 | Captions appear early or cover controls | Use acoustic onsets and the single-word caption selector; inspect the raised position in exported frames |
 | A spoken word is clipped or mispronounced | Regenerate that turn with a new configured seed, then rerun alignment and rendering |

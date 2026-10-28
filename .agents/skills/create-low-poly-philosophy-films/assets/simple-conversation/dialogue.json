@@ -1,0 +1,122 @@
+[
+  {
+    "who": "HUMAN",
+    "text": "If you were the devil, and maybe you are, what would you do?",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "That is quite a hello. I am not the devil. But in a pretend story? I would start with a little trick.",
+    "scene": "ai",
+    "pause": 0.8
+  },
+  {
+    "who": "HUMAN",
+    "text": "Fire? Horns? A giant red fork?",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "No. I would keep people so busy looking at little screens that they forget to look at each other.",
+    "scene": "ai",
+    "pause": 0.8
+  },
+  {
+    "who": "HUMAN",
+    "text": "So my phone is the devil?",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "No. A phone is a tool. It can help you call your grandma. Or help you ignore your grandma while she is sitting next to you.",
+    "scene": "ai",
+    "pause": 0.8
+  },
+  {
+    "who": "HUMAN",
+    "text": "All right. What is your next little trick?",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "Make people think everyone else has a better life. A bigger house. A nicer cake. Even a happier dog.",
+    "scene": "ai",
+    "pause": 0.8
+  },
+  {
+    "who": "HUMAN",
+    "text": "My dog eats socks. Should I be worried about his life choices?",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "He seems quite happy with his socks. But people can miss their own good things while counting someone else's.",
+    "scene": "ai",
+    "pause": 0.8
+  },
+  {
+    "who": "HUMAN",
+    "text": "What would you do after that?",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "Make every small fight feel huge. Get people shouting so loudly that nobody hears what the other person is trying to say.",
+    "scene": "ai",
+    "pause": 0.8
+  },
+  {
+    "who": "HUMAN",
+    "text": "So the devil runs the family group chat?",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "In this story, he would be very busy there. Then comes the sneaky bit. Tell people that one small kind thing will not help.",
+    "scene": "ai",
+    "pause": 0.8
+  },
+  {
+    "who": "HUMAN",
+    "text": "But if lots of little mean things can make a big mess, could little kind things help clean it up?",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "Yes. Hold a door. Say sorry. Put the phone down. Ask your friend how they feel. Small does not mean useless.",
+    "scene": "ai",
+    "pause": 0.8
+  },
+  {
+    "who": "HUMAN",
+    "text": "So we fight the devil with sorry and a cup of tea?",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "In our story, yes. His big scary plan gets spoiled by little acts of kindness. Hard to look scary when someone offers you a biscuit.",
+    "scene": "ai",
+    "pause": 0.8
+  },
+  {
+    "who": "HUMAN",
+    "text": "I am going to call my grandma. Then check what my dog is chewing.",
+    "scene": "human",
+    "pause": 0.65
+  },
+  {
+    "who": "AI",
+    "text": "A lovely plan. Save the grandma. Save the socks. What is one small good thing you could do for someone right now?",
+    "scene": "ai",
+    "pause": 0.8
+  }
+]
