@@ -335,7 +335,7 @@
       "original_url": "https://github.com/NirDiamant/Prompt_Engineering",
       "author": "NirDiamant",
       "discovery_date": "2026-10-23",
-      "publication_date": "2026-10-26",
+      "publication_date": "2026-10-27",
       "category": "Learning",
       "model": "Not specified",
       "observations": [
@@ -393,44 +393,113 @@
           },
           "positive_ratio": null,
           "rating_count": 0
+        },
+        {
+          "timestamp": 1793169970.131691,
+          "date": "2026-10-28",
+          "engagement": 7916,
+          "velocity_per_hour": 0.0,
+          "components": {
+            "stars": 7916
+          },
+          "positive_ratio": null,
+          "rating_count": 0
         }
       ],
       "cluster_id": "51a12f3d199953542c544442",
       "engagement_metrics": {
-        "stars": 7917,
-        "stars_per_day_since_repo_creation": 10.6,
+        "stars": 7916,
+        "stars_per_day_since_repo_creation": 10.584,
         "engagement_components": {
-          "stars": 7917
+          "stars": 7916
         },
         "repository": "NirDiamant/Prompt_Engineering",
         "license": "NOASSERTION",
-        "age_hours": 17925.3,
+        "age_hours": 17949.9,
         "date_basis": "repository last updated; exact prompt publication date unavailable",
         "quality_filter": "passed heuristic quality filters",
         "component_velocity_per_hour": {
-          "stars": 0.0827
+          "stars": 0.0
         },
-        "velocity_basis": "observed 2 additional source interactions over 24.2h",
-        "source_velocity_per_hour": 0.0827,
-        "velocity_multiple": 0.99,
-        "normal_velocity_per_hour": 0.0834,
+        "velocity_basis": "observed 0 additional source interactions over 24.6h",
+        "source_velocity_per_hour": 0.0,
+        "velocity_multiple": 0.0,
+        "normal_velocity_per_hour": 0.0827,
         "source_sightings": 1,
         "duplicate_cluster_size": 1,
         "normalized_scores": {
-          "engagement": 0.5,
-          "trending": 0.017,
+          "engagement": 0.0,
+          "trending": 0.0,
           "positive": 0.5,
-          "recency": 0.989,
+          "recency": 0.993,
           "usefulness": 0.62
         },
-        "composite_score": 0.464
+        "composite_score": 0.311
       },
       "rating": null,
       "rating_count": 0,
-      "calculated_score": 0.46449011606987456,
-      "trending_score": 0.01656045205764924,
+      "calculated_score": 0.3109300253049516,
+      "trending_score": 0.0,
       "quality_score": 0.62,
-      "last_seen": "2026-10-27"
+      "last_seen": "2026-10-28"
+    },
+    "2192b616aa2176d5db880d5bc400cd725b0727b54dbec1bd9d49bef1a31abc10": {
+      "normalized_prompt": "790 everyday prompts writing coding marketing study design more every prompt comes english chinese 052 both versions written people 738 one side machine translated marked such open column language search copy them online gallery https agentcraft dev en prompts 790 条日常提示词 覆盖写作 编程 营销 学习 设计等场景 全部中英双语 052 条两种语言都出自人工 738 条有一种语言是机器翻译 已标注 点你要的语言那一列即可 也可以在 在线画廊 https agentcraft dev zh prompts 里搜索 一键复制 category 分类 english 中文 coding development 编程开发 616 library en coding md 616 library zh coding md writing content 写作与内容 140 library en writing md 140 library zh writing md marketing sales 营销与销售 118 library en marketing md 118 library zh marketing md business career 商业与职场 174 library en business md 174 library zh business md education learning 教育与学习 151 library en education md 151 library zh education md language translation 语言与翻译 55 library en language md 55 library zh language md data analysis 数据与分析 58 library en data md 58 library zh data md productivity 效率 90 library en productivity md 90 library zh productivity md research science 研究与科学 109 library en research md 109 library zh research md health wellness 健康 56 library en health md 56 library zh health md finance legal 财务与法律 72 library en finance md 72 library zh finance md creative arts music 艺术与音乐 77 library en creative md 77 library zh creative md image design 图像与设计 743 library en image md 743 library zh image md games fun 游戏与娱乐 69 library en games md 69 library zh games md role play characters 角色扮演 37 library en roleplay md 37 library zh roleplay md lifestyle travel 生活与旅行 116 library en lifestyle md 116 library zh lifestyle md prompt engineering 提示词工程 109 library en prompting md 109 library zh prompting md sources licenses library readme md library readme md raw data library prompts csv library prompts csv library end",
+      "source": "GitHub",
+      "original_url": "https://github.com/ai-boost/awesome-prompts",
+      "author": "ai-boost",
+      "discovery_date": "2026-10-28",
+      "publication_date": "2026-10-28",
+      "category": "Coding",
+      "model": "Not specified",
+      "observations": [
+        {
+          "timestamp": 1793169970.131691,
+          "date": "2026-10-28",
+          "engagement": 9141,
+          "velocity_per_hour": 0.37611866603575617,
+          "components": {
+            "stars": 9141
+          },
+          "positive_ratio": null,
+          "rating_count": 0
+        }
+      ],
+      "cluster_id": "72111545f9b79ff21a8c1777",
+      "engagement_metrics": {
+        "stars": 9141,
+        "stars_per_day_since_repo_creation": 9.027,
+        "engagement_components": {
+          "stars": 9141
+        },
+        "repository": "ai-boost/awesome-prompts",
+        "license": "GPL-3.0",
+        "age_hours": 24303.5,
+        "date_basis": "repository last updated; exact prompt publication date unavailable",
+        "quality_filter": "passed heuristic quality filters",
+        "component_velocity_per_hour": {
+          "stars": 0.3761
+        },
+        "velocity_basis": "first observation; total source interactions divided by item age in hours",
+        "source_velocity_per_hour": 0.3761,
+        "source_sightings": 1,
+        "duplicate_cluster_size": 1,
+        "normalized_scores": {
+          "engagement": 1.0,
+          "trending": 0.133,
+          "positive": 0.5,
+          "recency": 0.999,
+          "usefulness": 0.56
+        },
+        "composite_score": 0.639
+      },
+      "rating": null,
+      "rating_count": 0,
+      "calculated_score": 0.6390689202902622,
+      "trending_score": 0.1331446703557193,
+      "quality_score": 0.56,
+      "last_seen": "2026-10-28",
+      "notification_date": "2026-10-28"
     }
   },
   "notified_clusters": {
@@ -438,6 +507,15 @@
       "notified_at": "2026-10-01T21:25:04+00:00",
       "source_baselines": {
         "GitHub": 7883
+      },
+      "resurface_count": 0,
+      "resurface_reason": "",
+      "last_velocity_multiple": null
+    },
+    "72111545f9b79ff21a8c1777": {
+      "notified_at": "2026-10-28T06:46:10+00:00",
+      "source_baselines": {
+        "GitHub": 9141
       },
       "resurface_count": 0,
       "resurface_reason": "",
