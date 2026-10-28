@@ -17,3 +17,4 @@ Skills included:
 - `youtube-createsg2`
 - `youtube-upload`
 - `japan-city-brochure`
+- `create-low-poly-philosophy-films`

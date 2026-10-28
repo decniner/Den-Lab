@@ -1,0 +1,6 @@
+interface:
+  display_name: "Create Low-Poly Philosophy Films"
+  short_description: "Low-poly AI films with free voices and timed captions"
+  default_prompt: "Use $create-low-poly-philosophy-films to create an original human–AI film with local Chatterbox voices and raised word-timed captions."
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"

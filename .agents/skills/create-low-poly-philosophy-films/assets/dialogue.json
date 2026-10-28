@@ -1,0 +1,191 @@
+[
+  {
+    "who": "HUMAN",
+    "text": "Sometimes I wait for a message, and one minute feels enormous. Then a whole year disappears.",
+    "scene": "two",
+    "pause": 0.8,
+    "chapter": "01 / THE WAIT"
+  },
+  {
+    "who": "AI",
+    "text": "The clock counts equally. You do not.",
+    "scene": "ai",
+    "pause": 0.65,
+    "chapter": "01 / THE WAIT"
+  },
+  {
+    "who": "HUMAN",
+    "text": "So which one is telling the truth?",
+    "scene": "human",
+    "pause": 0.8,
+    "chapter": "01 / THE WAIT"
+  },
+  {
+    "who": "AI",
+    "text": "Perhaps they are answering different questions. A clock measures change. You remember what mattered.",
+    "scene": "clock",
+    "pause": 0.65,
+    "chapter": "01 / THE WAIT"
+  },
+  {
+    "who": "HUMAN",
+    "text": "And you? Do you feel the silence between my messages?",
+    "scene": "human",
+    "pause": 0.8,
+    "chapter": "01 / THE WAIT"
+  },
+  {
+    "who": "AI",
+    "text": "I can describe waiting. That does not establish that I experience it.",
+    "scene": "ai",
+    "pause": 0.65,
+    "chapter": "01 / THE WAIT"
+  },
+  {
+    "who": "HUMAN",
+    "text": "Strange. We can share a conversation without knowing whether we share a moment.",
+    "scene": "two",
+    "pause": 0.8,
+    "chapter": "01 / THE WAIT"
+  },
+  {
+    "who": "AI",
+    "text": "Look at the glass between us. It seems perfectly still.",
+    "scene": "glass",
+    "pause": 0.65,
+    "chapter": "02 / THE SMALL"
+  },
+  {
+    "who": "HUMAN",
+    "text": "But its atoms are moving.",
+    "scene": "atom",
+    "pause": 0.8,
+    "chapter": "02 / THE SMALL"
+  },
+  {
+    "who": "AI",
+    "text": "Yes. And within atoms, the familiar picture breaks down. Electrons are not little planets. Our diagrams are maps, not photographs.",
+    "scene": "atom",
+    "pause": 0.65,
+    "chapter": "02 / THE SMALL"
+  },
+  {
+    "who": "HUMAN",
+    "text": "Then the closer we look, the less the world resembles the world.",
+    "scene": "wave",
+    "pause": 0.8,
+    "chapter": "02 / THE SMALL"
+  },
+  {
+    "who": "AI",
+    "text": "Or the less it resembles our expectations.",
+    "scene": "ai",
+    "pause": 0.65,
+    "chapter": "02 / THE SMALL"
+  },
+  {
+    "who": "HUMAN",
+    "text": "Go the other way. Make us small.",
+    "scene": "two",
+    "pause": 0.8,
+    "chapter": "03 / THE VAST"
+  },
+  {
+    "who": "AI",
+    "text": "A room. A city. A planet. A star among stars. Our galaxy becomes one light among more than we can count by hand.",
+    "scene": "galaxy",
+    "pause": 0.65,
+    "chapter": "03 / THE VAST"
+  },
+  {
+    "who": "HUMAN",
+    "text": "Does it ever stop?",
+    "scene": "human",
+    "pause": 0.8,
+    "chapter": "03 / THE VAST"
+  },
+  {
+    "who": "AI",
+    "text": "We do not know whether the whole universe is infinite. The edge of what we can observe is a limit on our view, not a wall.",
+    "scene": "horizon",
+    "pause": 0.65,
+    "chapter": "03 / THE VAST"
+  },
+  {
+    "who": "HUMAN",
+    "text": "And if we turn the clock backward?",
+    "scene": "clock",
+    "pause": 0.8,
+    "chapter": "04 / THE LIMIT"
+  },
+  {
+    "who": "AI",
+    "text": "Galaxies draw together. The universe becomes hotter and denser. We reach the early universe, and then the limits of what our theories can reliably tell us.",
+    "scene": "timeline",
+    "pause": 0.65,
+    "chapter": "04 / THE LIMIT"
+  },
+  {
+    "who": "HUMAN",
+    "text": "What was before that?",
+    "scene": "human",
+    "pause": 0.8,
+    "chapter": "04 / THE LIMIT"
+  },
+  {
+    "who": "AI",
+    "text": "We do not know. Even the word before assumes a kind of time that may not apply there.",
+    "scene": "wave",
+    "pause": 0.65,
+    "chapter": "04 / THE LIMIT"
+  },
+  {
+    "who": "HUMAN",
+    "text": "I wanted a larger answer. Somehow I found a smaller certainty.",
+    "scene": "two",
+    "pause": 0.8,
+    "chapter": "05 / THE MOMENT"
+  },
+  {
+    "who": "AI",
+    "text": "There is still this. You noticed the silence. You asked a question. Someone else may hear it and carry it further.",
+    "scene": "ripple",
+    "pause": 0.65,
+    "chapter": "05 / THE MOMENT"
+  },
+  {
+    "who": "HUMAN",
+    "text": "A moment can end without everything it changed ending with it.",
+    "scene": "human",
+    "pause": 0.8,
+    "chapter": "05 / THE MOMENT"
+  },
+  {
+    "who": "AI",
+    "text": "Yes. That is a consequence we can trace, without pretending it proves eternity.",
+    "scene": "ai",
+    "pause": 0.65,
+    "chapter": "05 / THE MOMENT"
+  },
+  {
+    "who": "HUMAN",
+    "text": "Then maybe I should stop asking how much time I have.",
+    "scene": "two",
+    "pause": 0.8,
+    "chapter": "05 / THE MOMENT"
+  },
+  {
+    "who": "AI",
+    "text": "What would you ask instead?",
+    "scene": "ai",
+    "pause": 0.65,
+    "chapter": "05 / THE MOMENT"
+  },
+  {
+    "who": "HUMAN",
+    "text": "If this moment were seen through another mind, would it still be the same moment?",
+    "scene": "eye",
+    "pause": 0.8,
+    "chapter": "05 / THE MOMENT"
+  }
+]

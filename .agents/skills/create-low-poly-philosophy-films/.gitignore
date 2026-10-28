@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+tts/
+chatterbox_audio/
+alignment/
+*.mp4
+*.wav
