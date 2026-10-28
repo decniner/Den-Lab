@@ -29,7 +29,7 @@ with wave.open(str(P/'dialogue.wav')) as w:
 all_times=[s['start']+min(2,s['dur']/2) for s in edit['scenes']]
 times=[all_times[i] for i in np.linspace(0,len(all_times)-1,min(9,len(all_times)),dtype=int)]+[max(0,edit['duration']-2)]
 sheet=Image.new('RGB',(900,math.ceil(len(times)/5)*345),'#dedede')
-font=ImageFont.truetype('/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf',15)
+font=ImageFont.truetype(cfg['sans_font'],15)
 for i,t in enumerate(times):
     p=P/f'export_{i:02d}.jpg'
     subprocess.run(['ffmpeg','-v','error','-y','-ss',str(t),'-i',str(video),'-frames:v','1',str(p)],check=True)
