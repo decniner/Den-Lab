@@ -142,7 +142,7 @@
     "ecoflow:14631174177135:51670338208111": {
       "sale_price": "8300",
       "reference_price": "16910",
-      "sent_at": "2026-10-22T09:22:15+09:00",
+      "sent_at": "2026-10-29T10:26:26+09:00",
       "url": "https://jp.ecoflow.com/products/ecoflow-rapid-magnetic-power-bank-5000mah-rapid-65w-gan?variant=51670338208111"
     },
     "ecoflow:15062073803119:53384583217519": {
@@ -328,13 +328,13 @@
     "cotopaxijapan:9242292977852:45979372814524": {
       "sale_price": "31350",
       "reference_price": "62700",
-      "sent_at": "2026-10-22T09:22:15+09:00",
+      "sent_at": "2026-10-29T10:26:26+09:00",
       "url": "https://cotopaxi.jp/products/fuego-max-down-hooded-jacket-womens-sale26ss?variant=45979372814524"
     },
     "cotopaxijapan:9246629396668:45992717156540": {
       "sale_price": "31350",
       "reference_price": "62700",
-      "sent_at": "2026-10-22T09:22:15+09:00",
+      "sent_at": "2026-10-29T10:26:26+09:00",
       "url": "https://cotopaxi.jp/products/fuego-max-down-hooded-jacket-mens-sale26ss?variant=45992717156540"
     },
     "cotopaxijapan:9246627037372:45992675115196": {
@@ -772,7 +772,7 @@
     "ecoflow:8095101517985:51971819471215": {
       "sale_price": "85660",
       "reference_price": "182600",
-      "sent_at": "2026-10-20T09:51:40+09:00",
+      "sent_at": "2026-10-29T10:26:26+09:00",
       "url": "https://jp.ecoflow.com/products/delta-3-portable-power-station?variant=51971819471215"
     },
     "boardriders-co-jp:10631288652057:52412825141529": {
@@ -801,9 +801,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-10-28",
-    "coverage_key": "2928748bcb0a2cd9d5a95d4b563cbaa9e5df6905b9878ef80d4e150f5ce2b9fe",
-    "completed_at": "2026-10-28T09:53:42+09:00",
-    "digest_hash": "39fa6d9b135657c1932936d49a7ac41e54d0194ef50901c88102ad196e1e0cef"
+    "date": "2026-10-29",
+    "coverage_key": "74a92695c6085ffeae5bee39e89a03c793501f29c05985edfc8bf3e5970f1d07",
+    "completed_at": "2026-10-29T10:26:26+09:00",
+    "digest_hash": "b374859b097154521dfef490a14506f464fdb1531a984716cc3bc3513161fcc5"
   }
 }
