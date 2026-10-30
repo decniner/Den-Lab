@@ -352,7 +352,7 @@
     "merrell-jp:7268630593579:41168550395947": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-23T09:19:02+09:00",
+      "sent_at": "2026-10-30T10:29:34+09:00",
       "url": "https://merrell.jp/products/womens_mtl-thermo-rogue-4-mid-gore-tex?variant=41168550395947"
     },
     "cotopaxijapan:9242280624316:45979357053116": {
@@ -700,19 +700,19 @@
     "boardriders-co-jp:10631287701785:52412819702041": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-22T09:22:17+09:00",
+      "sent_at": "2026-10-30T10:29:34+09:00",
       "url": "https://boardriders.co.jp/products/g0452506?variant=52412819702041"
     },
     "boardriders-co-jp:10631287931161:52412821668121": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-22T09:22:17+09:00",
+      "sent_at": "2026-10-30T10:29:34+09:00",
       "url": "https://boardriders.co.jp/products/erjtj03493?variant=52412821668121"
     },
     "boardriders-co-jp:10631289438489:52412833825049": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-22T09:22:17+09:00",
+      "sent_at": "2026-10-30T10:29:34+09:00",
       "url": "https://boardriders.co.jp/products/h1352507?variant=52412833825049"
     },
     "boardriders-co-jp:10631284392217:52412796240153": {
@@ -819,9 +819,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-10-29",
-    "coverage_key": "74a92695c6085ffeae5bee39e89a03c793501f29c05985edfc8bf3e5970f1d07",
-    "completed_at": "2026-10-29T10:26:26+09:00",
-    "digest_hash": "b374859b097154521dfef490a14506f464fdb1531a984716cc3bc3513161fcc5"
+    "date": "2026-10-30",
+    "coverage_key": "2481d1c59bef9f8b9a61c648d2fefc6d25d3659a9365be7f998db8686c156fc8",
+    "completed_at": "2026-10-30T10:29:34+09:00",
+    "digest_hash": "baeb21a80a5ffd3c05b735a65195f9472a908c57893979433aeaab522b5ce090"
   }
 }
