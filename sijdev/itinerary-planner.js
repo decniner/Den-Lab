@@ -1,13 +1,15 @@
 (function () {
   'use strict';
   const core = window.JapanItineraryCore;
+  const shareCodec = window.ItineraryShare;
   const form = document.querySelector('#itinerary-form');
-  if (!core || !form) return;
+  if (!core || !shareCodec || !form) return;
 
   const STORAGE_KEY = 'somewhere-japan-itinerary-v1';
   const output = document.querySelector('#itinerary-days-output');
   const tools = document.querySelector('#itinerary-result-tools');
   const status = document.querySelector('#itinerary-status');
+  const presetStatus = document.querySelector('#itinerary-preset-status');
   const regionRoot = document.querySelector('#itinerary-regions');
   const interestRoot = document.querySelector('#itinerary-interests');
   const places = typeof DESTINATIONS !== 'undefined' && Array.isArray(DESTINATIONS) ? DESTINATIONS : [];
@@ -42,6 +44,27 @@
   }
   regionRoot.replaceChildren(...regions.map(region => makeChoice(region, region, 'regions')));
   interestRoot.replaceChildren(...interests.map(interest => makeChoice(interest, interest, 'interests')));
+
+  const presets = {
+    tokyo: { days: 3, pace: 'balanced', regions: ['Kanto'], interests: ['Culture', 'Food'] },
+    kansai: { days: 4, pace: 'relaxed', regions: ['Kansai'], interests: ['Culture', 'Food'] },
+    classic: { days: 10, pace: 'balanced', regions: ['Kanto', 'Chubu', 'Kansai'], interests: ['Culture', 'Nature'] },
+    slow: { days: 7, pace: 'relaxed', regions: ['Tohoku'], interests: ['Nature', 'Slow travel'] }
+  };
+  document.querySelectorAll('[data-itinerary-preset]').forEach(button => {
+    button.addEventListener('click', () => {
+      const preset = presets[button.dataset.itineraryPreset];
+      if (!preset) return;
+      form.elements.namedItem('days').value = String(preset.days);
+      form.elements.namedItem('pace').value = preset.pace;
+      regionRoot.querySelectorAll('input').forEach(input => { input.checked = preset.regions.includes(input.value); });
+      interestRoot.querySelectorAll('input').forEach(input => { input.checked = preset.interests.includes(input.value); });
+      document.querySelectorAll('[data-itinerary-preset]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      const message = `Starting shape selected. Add your dates and starting point, then build the ${preset.days}-day draft.`;
+      status.textContent = message;
+      if (presetStatus) presetStatus.textContent = message;
+    });
+  });
 
   function localDateValue(date) {
     const local = new Date(date.getFullYear(), date.getMonth(), date.getDate());
@@ -304,6 +327,42 @@
   function formatPlanText() {
     return currentPlan.days.map((day,index)=>`${day.date} · ${day.region || 'Japan'}\n${day.places.map((place,i)=>`${i+1}. ${place.name} — ${placeLocation(place)}`).join('\n') || 'No places selected'}`).join('\n\n') + '\n\nCheck current transport, access and opening information before travelling.';
   }
+  function sharedTripUrl() {
+    if (!currentConfig || !currentPlan) return null;
+    const token = shareCodec.encode({ config: currentConfig, plan: currentPlan });
+    if (!token) return null;
+    const url = new URL(window.location.href);
+    url.searchParams.set('trip', token);
+    url.hash = 'itinerary';
+    return url.href;
+  }
+  function applySharedConfig(config) {
+    for (const [name, value] of Object.entries({ startDate: config.startDate, days: config.days, origin: config.origin, endpoint: config.endpoint, pace: config.pace })) {
+      const control = form.elements.namedItem(name);
+      if (control && value != null) control.value = value;
+    }
+    regionRoot.querySelectorAll('input').forEach(input => { input.checked = config.regions.includes(input.value); });
+    interestRoot.querySelectorAll('input').forEach(input => { input.checked = config.interests.includes(input.value); });
+  }
+  async function restoreSharedPlan(decoded) {
+    const mappedPlaces = await destinationsWithMapLocations().catch(() => places);
+    const placeByKey = new Map();
+    mappedPlaces.forEach(place => {
+      [core.placeKey(place), place.id, place.slug, place.name, window.GuideLinks?.destinationIdForName?.(place.name)]
+        .filter(Boolean).forEach(key => placeByKey.set(String(key), place));
+    });
+    const days = decoded.plan.days.map(day => {
+      const stops = day.placeKeys.map(key => placeByKey.get(key));
+      if (stops.some(place => !place)) throw new Error('A destination in this shared itinerary is no longer in the guide.');
+      const { placeKeys, ...details } = day;
+      return { ...details, places: stops };
+    });
+    currentConfig = decoded.config;
+    currentPlan = { days, notes: decoded.plan.notes };
+    applySharedConfig(currentConfig);
+    renderPlan();
+    status.textContent = 'Shared itinerary loaded. Edit the stops or dates, then save your own copy.';
+  }
   form.addEventListener('submit', async event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
@@ -324,9 +383,11 @@
   document.querySelector('#itinerary-print').addEventListener('click', () => window.print());
   document.querySelector('#itinerary-share').addEventListener('click', async () => {
     const text = formatPlanText();
+    const url = sharedTripUrl();
+    if (!url) { status.textContent = 'This itinerary is too large or contains unsupported values for a share link. Print or save it on this device instead.'; return; }
     try {
-      if (navigator.share) await navigator.share({ title: 'My Japan itinerary', text });
-      else if (navigator.clipboard?.writeText) { await navigator.clipboard.writeText(text); status.textContent = 'Itinerary copied to clipboard.'; }
+      if (navigator.share) { await navigator.share({ title: 'My Japan itinerary', text, url }); status.textContent = 'Share sheet opened with your editable itinerary link.'; }
+      else if (navigator.clipboard?.writeText) { await navigator.clipboard.writeText(url); status.textContent = 'Editable itinerary link copied. It includes your start and finish fields.'; }
       else status.textContent = 'Sharing is not supported in this browser. Use Print to save a copy.';
     } catch (error) { if (error?.name !== 'AbortError') status.textContent = 'Could not share from this browser. Use Print to save a copy.'; }
   });
@@ -349,4 +410,18 @@
       renderPlan(); status.textContent = 'Your saved itinerary was restored from this device.';
     }
   } catch { /* Corrupt or unavailable storage should not block a new draft. */ }
+
+  const incomingTrip = new URL(window.location.href).searchParams.get('trip');
+  if (incomingTrip) {
+    const decoded = shareCodec.decode(incomingTrip);
+    tools.hidden = false;
+    if (!decoded) status.textContent = 'This shared itinerary link is invalid or out of date. Build a new plan to continue.';
+    else {
+      status.textContent = 'Loading shared itinerary…';
+      restoreSharedPlan(decoded).catch(error => {
+        currentPlan = null;
+        status.textContent = error?.message || 'Could not restore this shared itinerary.';
+      });
+    }
+  }
 })();

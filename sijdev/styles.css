@@ -441,3 +441,18 @@ html{scroll-padding-top:86px}body{background:var(--paper);color:var(--ink)}.site
 .itinerary-route-button:focus-visible{outline:3px solid #b96549;outline-offset:3px}
 @media(max-width:520px){.itinerary-day-route{margin-inline:-2px;padding:13px}.itinerary-route-step{grid-template-columns:28px minmax(0,1fr);gap:8px;padding:10px}.itinerary-route-step-number{width:27px;height:27px}.itinerary-day-route-note{font-size:12px}}
 @media print{.itinerary-day-route{break-inside:avoid}.itinerary-route-button{background:#fff;color:#222!important;border:1px solid #777}}
+
+/* Dev Version itinerary quick starts */
+.itinerary-quick-starts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 24px;padding:18px;background:#f4f0e8;border:1px solid rgba(38,54,45,.14)}
+.itinerary-quick-starts-label{grid-column:1/-1;margin:0 0 2px;color:#765b48;font:700 9px/1.4 var(--sans);letter-spacing:.14em}
+.itinerary-quick-starts button{display:grid;gap:5px;min-height:66px;padding:12px;text-align:left;background:#fffdf8;border:1px solid rgba(32,49,41,.18);color:#273a31;cursor:pointer;transition:background .18s,border-color .18s,transform .18s}
+.itinerary-quick-starts button strong{font:600 13px/1.3 var(--sans)}
+.itinerary-quick-starts button span{color:#6c756d;font:11px/1.4 var(--sans)}
+.itinerary-quick-starts button:hover{border-color:#a96647;transform:translateY(-1px)}
+.itinerary-quick-starts button[aria-pressed="true"]{background:#263a32;border-color:#263a32;color:#fff8eb}
+.itinerary-quick-starts button[aria-pressed="true"] span{color:#e5ded0}
+.itinerary-quick-starts button:focus-visible{outline:3px solid #a96647;outline-offset:2px}
+@media(max-width:850px){.itinerary-quick-starts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.itinerary-quick-starts{grid-template-columns:1fr;padding:13px}.itinerary-quick-starts button{min-height:58px}}
+@media(prefers-reduced-motion:reduce){.itinerary-quick-starts button{transition:none}}
+.itinerary-preset-status{grid-column:1/-1;margin:0;color:#657168;font:11px/1.5 var(--sans)}
