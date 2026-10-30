@@ -1550,4 +1550,38 @@ const additions=[
     "region": "Okinawa",
     "name": "Shikinaen Royal Garden",
     "place": "Shikinaen · Naha, Okinawa",
-    "description": "A former Ryukyu royal retreat combines a circular pond, stone bridges, and a distinctive hexagonal pavilion in a quiet green setting. Take the l
+    "description": "A former Ryukyu royal retreat combines a circular pond, stone bridges, and a distinctive hexagonal pavilion in a quiet green setting. Take the loop slowly and look for how the garden blends local and Chinese influences.",
+    "tags": [
+      "Culture",
+      "Nature",
+      "Slow travel"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "seasonReason": "The garden is rewarding year-round; cooler months are most comfortable for the open paths, while heavy rain can affect walking conditions.",
+    "illustration": "garden",
+    "alt": "The pond and pavilion within Shikinaen Royal Garden in Naha",
+    "image": "",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Naha_Okinawa_Japan_Shikinaen-02.jpg/1280px-Naha_Okinawa_Japan_Shikinaen-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Naha_Okinawa_Japan_Shikinaen-02.jpg",
+      "credit": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "alt": "The pond and pavilion within Shikinaen Royal Garden in Naha"
+    }
+  }
+];
+if(root.DESTINATIONS)root.DESTINATIONS.push(...additions);
+if(typeof module!=='undefined'&&module.exports)module.exports={additions};
+})(typeof globalThis!=='undefined'?globalThis:this);
