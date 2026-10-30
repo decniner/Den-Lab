@@ -1,0 +1,3739 @@
+{
+  "schemaVersion": 1,
+  "cityIds": [
+    "sapporo",
+    "sendai",
+    "tokyo",
+    "nagoya",
+    "kyoto",
+    "osaka",
+    "hiroshima",
+    "takamatsu",
+    "fukuoka",
+    "naha"
+  ],
+  "routes": [
+    {
+      "id": "sapporo-iconic-city-day",
+      "cityId": "sapporo",
+      "title": "Sapporo: landmark-to-laneway day",
+      "introduction": "Follow Visit Sapporo's one-day sequence from the Clock Tower and Nijo Market through Odori and Susukino, then finish at the Beer Museum and Garden. Check current venue hours, reservations, and bus times before setting out.",
+      "default": true,
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "sapporo-station",
+        "name": "Sapporo Station",
+        "address": "Sapporo Station, Kita Ward, Sapporo, Japan",
+        "coordinates": {
+          "latitude": 43.06861111,
+          "longitude": 141.35077778,
+          "precision": "Wikidata point",
+          "sourceIds": [
+            "wikidata-sapporo-station"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-sapporo-route",
+          "label": "Visit Sapporo: Walking tour for your first visit",
+          "url": "https://visit.sapporo.travel/itineraries/02/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "official one-day stop order",
+            "official stop visit windows",
+            "walking transfer estimates",
+            "seasonal and booking notes"
+          ]
+        },
+        {
+          "id": "wikidata-sapporo-station",
+          "label": "Wikidata: Sapporo Station coordinates (Q801404)",
+          "url": "https://www.wikidata.org/wiki/Q801404",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station map point"
+          ]
+        },
+        {
+          "id": "wikidata-clock-tower",
+          "label": "Wikidata: Sapporo Clock Tower coordinates (Q1140619)",
+          "url": "https://www.wikidata.org/wiki/Q1140619",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "attraction map point"
+          ]
+        },
+        {
+          "id": "wikidata-nijo-market",
+          "label": "Wikidata: Nijo Market coordinates (Q11371661)",
+          "url": "https://www.wikidata.org/wiki/Q11371661",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "market map point"
+          ]
+        },
+        {
+          "id": "wikidata-tv-tower",
+          "label": "Wikidata: Sapporo TV Tower coordinates (Q1063319)",
+          "url": "https://www.wikidata.org/wiki/Q1063319",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "tower map point"
+          ]
+        },
+        {
+          "id": "wikidata-odori-park",
+          "label": "Wikidata: Odori Park coordinates (Q3107971)",
+          "url": "https://www.wikidata.org/wiki/Q3107971",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "park map point"
+          ]
+        },
+        {
+          "id": "wikidata-tanukikoji",
+          "label": "Wikidata: Tanukikoji Shopping Street coordinates (Q5361031)",
+          "url": "https://www.wikidata.org/wiki/Q5361031",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "shopping street map point"
+          ]
+        },
+        {
+          "id": "wikidata-beer-museum",
+          "label": "Wikidata: Sapporo Beer Museum coordinates (Q1055944)",
+          "url": "https://www.wikidata.org/wiki/Q1055944",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "museum map point"
+          ]
+        },
+        {
+          "id": "mapfan-ramen-building",
+          "label": "MapFan: N Grande Building coordinates",
+          "url": "https://mapfan.com/spots/SCAQC%2CJ%2CPRK9H0",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "coordinate of the official N Grande Building address for Ganso Sapporo Ramen Yokocho"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "clock-tower",
+          "order": 1,
+          "name": "Sapporo Clock Tower",
+          "area": "Central Sapporo",
+          "story": "This wooden hall began as the drill hall of Sapporo Agricultural College. Step inside to see how a new frontier city took shape; time your visit near the hour for the clock chime.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 30,
+            "maxMinutes": 30,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.062602,
+            "longitude": 141.353681,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-clock-tower"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Sapporo-Clock-Tower-2018.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Sapporo-Clock-Tower-2018.jpg",
+            "credit": "Bjorn Christian Torrissen",
+            "license": "CC BY-SA 4.0",
+            "alt": "Sapporo historic wooden Clock Tower"
+          }
+        },
+        {
+          "id": "nijo-market",
+          "order": 2,
+          "name": "Nijo Market",
+          "area": "Sapporo",
+          "story": "Sapporo grew around the fishing and farming communities of the Ishikari region. Nijo Market still makes a lively morning stop for seafood, produce, and a close look at Hokkaido ingredients. Stall hours vary.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 40,
+            "maxMinutes": 40,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.058306,
+            "longitude": 141.358472,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-nijo-market"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Nijo_fish_Market_2014.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Nijo_fish_Market_2014.jpg",
+            "credit": "Wing1990hk",
+            "license": "CC BY 3.0",
+            "alt": "Seafood stalls at Sapporo Nijo Market"
+          }
+        },
+        {
+          "id": "tv-tower",
+          "order": 3,
+          "name": "Sapporo TV Tower",
+          "area": "Odori 1-chome",
+          "story": "From the observation deck, Odori Park reads as a long green axis through central Sapporo, with the city and distant mountains beyond it. Check visibility before paying for the view.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 40,
+            "maxMinutes": 40,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.06111111,
+            "longitude": 141.35638889,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-tv-tower"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Odori_park_at_Sapporo_TV_tower.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Odori_park_at_Sapporo_TV_tower.jpg",
+            "credit": "LR0725",
+            "license": "CC BY-SA 4.0",
+            "alt": "View of Odori Park from Sapporo TV Tower"
+          }
+        },
+        {
+          "id": "odori-park",
+          "order": 4,
+          "name": "Odori Park",
+          "area": "Central Sapporo",
+          "story": "Odori is both a downtown park and a civic stage. Walk its broad blocks to see fountains, flower beds, and seasonal events; the character changes with the festival calendar.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 40,
+            "maxMinutes": 40,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.059722,
+            "longitude": 141.346389,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-odori-park"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Odori_Park_Sapporo.JPG",
+            "source": "https://commons.wikimedia.org/wiki/File:Odori_Park_Sapporo.JPG",
+            "credit": "Daigaku2051",
+            "license": "CC BY-SA 3.0",
+            "alt": "Odori Park in central Sapporo"
+          }
+        },
+        {
+          "id": "ramen-yokocho",
+          "order": 5,
+          "name": "Ganso Sapporo Ramen Yokocho",
+          "area": "Susukino",
+          "story": "This compact Susukino alley is known for small ramen counters serving Sapporo-style miso bowls. Pick a shop that is open when you arrive, since hours and queues differ.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 40,
+            "maxMinutes": 40,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.0547764,
+            "longitude": 141.3544468,
+            "precision": "N Grande Building address point; alley entrance not separately mapped",
+            "sourceIds": [
+              "mapfan-ramen-building"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Ramen_Alley_Sapporo_Japan.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Ramen_Alley_Sapporo_Japan.jpg",
+            "credit": "Sgroey",
+            "license": "CC BY-SA 4.0",
+            "alt": "Entrance to Ramen Alley in Sapporo"
+          },
+          "address": "N Grande Building 1F, 3-8 Minami 5-jo Nishi, Chuo-ku, Sapporo"
+        },
+        {
+          "id": "tanukikoji",
+          "order": 6,
+          "name": "Tanuki Koji Shopping Street",
+          "area": "Central Sapporo",
+          "story": "A covered arcade threads through central Sapporo, where generations-old shops sit beside new cafes and game halls. Wander a few blocks and notice how the street changes from one section to the next.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 60,
+            "maxMinutes": 60,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.058333,
+            "longitude": 141.35463,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-tanukikoji"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Tanukikoji_01.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Tanukikoji_01.jpg",
+            "credit": "Mugu-shisai",
+            "license": "CC BY-SA 3.0",
+            "alt": "Covered Tanukikoji shopping street"
+          }
+        },
+        {
+          "id": "beer-museum",
+          "order": 7,
+          "name": "Sapporo Beer Museum and Beer Garden",
+          "area": "Higashi Ward",
+          "story": "The red-brick former factory tells the story of a beer brand that helped define Sapporo. The adjoining garden is a separate way to spend the evening; check current museum hours and dining reservations.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 180,
+            "maxMinutes": 240,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "coordinates": {
+            "latitude": 43.071666666,
+            "longitude": 141.368888888,
+            "precision": "Wikidata point",
+            "sourceIds": [
+              "wikidata-beer-museum"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Sapporo_Beer_Museum.JPG",
+            "source": "https://commons.wikimedia.org/wiki/File:Sapporo_Beer_Museum.JPG",
+            "credit": "K. Takeda",
+            "license": "CC BY-SA 3.0",
+            "alt": "Red brick Sapporo Beer Museum"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "station-to-clock",
+          "fromId": "sapporo-station",
+          "toId": "clock-tower",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 10,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.35077778,
+                43.06861111
+              ],
+              [
+                141.353681,
+                43.062602
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-sapporo-station",
+              "wikidata-clock-tower"
+            ]
+          }
+        },
+        {
+          "id": "clock-to-market",
+          "fromId": "clock-tower",
+          "toId": "nijo-market",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 12,
+            "maxMinutes": 12,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.353681,
+                43.062602
+              ],
+              [
+                141.358472,
+                43.058306
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-clock-tower",
+              "wikidata-nijo-market"
+            ]
+          }
+        },
+        {
+          "id": "market-to-tower",
+          "fromId": "nijo-market",
+          "toId": "tv-tower",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.358472,
+                43.058306
+              ],
+              [
+                141.35638889,
+                43.06111111
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-nijo-market",
+              "wikidata-tv-tower"
+            ]
+          }
+        },
+        {
+          "id": "tower-to-park",
+          "fromId": "tv-tower",
+          "toId": "odori-park",
+          "mode": "walking",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.35638889,
+                43.06111111
+              ],
+              [
+                141.346389,
+                43.059722
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-tv-tower",
+              "wikidata-odori-park"
+            ]
+          }
+        },
+        {
+          "id": "park-to-ramen",
+          "fromId": "odori-park",
+          "toId": "ramen-yokocho",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 12,
+            "maxMinutes": 12,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "ramen-to-tanukikoji",
+          "fromId": "ramen-yokocho",
+          "toId": "tanukikoji",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 10,
+            "maxMinutes": 10,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "tanukikoji-to-museum",
+          "fromId": "tanukikoji",
+          "toId": "beer-museum",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 20,
+            "maxMinutes": 20,
+            "sourceIds": [
+              "official-sapporo-route"
+            ]
+          },
+          "geometry": {
+            "status": "unknown"
+          }
+        },
+        {
+          "id": "museum-to-station",
+          "fromId": "beer-museum",
+          "toId": "sapporo-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                141.368888888,
+                43.071666666
+              ],
+              [
+                141.35077778,
+                43.06861111
+              ]
+            ],
+            "sourceIds": [
+              "wikidata-beer-museum",
+              "wikidata-sapporo-station"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {}
+    },
+    {
+      "id": "sendai-date-legacy-city-day",
+      "cityId": "sendai",
+      "title": "Sendai: market mornings, Date history, and a tree-lined finish",
+      "introduction": "Begin with a local market breakfast, then follow the one-way Loople circuit through Zuihoden, the city museum, the castle site, and Jozenji-dori. The official bus timetable supports the order and in-vehicle segments; stop visits and waits make the total day variable.",
+      "default": true,
+      "researchStatus": "partially-verified",
+      "origin": {
+        "id": "sendai-station",
+        "name": "Sendai Station",
+        "address": "Sendai Station, Aoba Ward, Sendai, Japan",
+        "coordinates": {
+          "latitude": 38.2603516,
+          "longitude": 140.8823921,
+          "precision": "OSM place point near the west exit; station-wide point, not a platform entrance",
+          "sourceIds": [
+            "osm-sendai-station-point"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-sendai-24h",
+          "label": "Discover Sendai: 24 Hours in Sendai",
+          "url": "https://discoversendai.travel/must-do/24-hours-in-sendai-the-ultimate-1-day-itinerary/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Sendai Asaichi morning stop and access",
+            "Zuihoden visit window and Loople access",
+            "Sendai Castle Site visit window and Loople stop",
+            "Sendai City Museum visit window and access"
+          ]
+        },
+        {
+          "id": "official-sendai-loople",
+          "label": "Discover Sendai: Getting Around Sendai and Loople timetable",
+          "url": "https://discoversendai.travel/travel-info/getting-around-sendai/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "Loople departure window and frequency",
+            "one-way stop order",
+            "scheduled in-vehicle segments",
+            "platform 16 and current published fares"
+          ]
+        },
+        {
+          "id": "official-zuihoden",
+          "label": "Zuihoden: Visitor and transportation information",
+          "url": "https://www.zuihoden.com/en/info/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "address",
+            "hours and admission",
+            "Loople access",
+            "steep approach and stairs",
+            "official contact number"
+          ]
+        },
+        {
+          "id": "official-jozenji",
+          "label": "Discover Sendai: Jozenji-dori Avenue",
+          "url": "https://discoversendai.travel/places/jozenji-dori-avenue/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "avenue history and name",
+            "zelkova promenade",
+            "seasonal color and winter illumination",
+            "local shops and restaurants"
+          ]
+        },
+        {
+          "id": "osm-sendai-route-coordinates",
+          "label": "OpenStreetMap place points via Nominatim; approximate orientation points",
+          "url": "https://www.openstreetmap.org/copyright",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station and attraction point coordinates; points are not guaranteed entrances"
+          ]
+        },
+        {
+          "id": "photo-sendai-asaichi",
+          "label": "Wikimedia Commons: Sendai Asaichi 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Sendai_Asaichi_01.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique stop photograph; author Neuropower; CC BY-SA 3.0"
+          ]
+        },
+        {
+          "id": "photo-sendai-zuihoden",
+          "label": "Wikimedia Commons: Zuiho-den 20230806.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Zuiho-den_20230806.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique stop photograph and geotagged camera point; author ??; CC BY-SA 4.0"
+          ]
+        },
+        {
+          "id": "photo-sendai-castle",
+          "label": "Wikimedia Commons: Sendai statue Date Masamune.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Sendai_statue_Date_Masamune.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique Sendai Castle Site photograph; photographer Gustave67; CC BY-SA 4.0"
+          ]
+        },
+        {
+          "id": "photo-sendai-city-museum",
+          "label": "Wikimedia Commons: Sendai city museum01s3200.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Sendai_city_museum01s3200.jpg",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique museum photograph; author 663highland; CC BY-SA 3.0"
+          ]
+        },
+        {
+          "id": "photo-sendai-jozenji",
+          "label": "Wikimedia Commons: The promenade of Jouzenji-dori Avenue.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:The_promenade_of_Jouzenji-dori_Avenue.JPG",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "unique avenue photograph; author Haseyu-; released to the public domain"
+          ]
+        },
+        {
+          "id": "osm-sendai-station-point",
+          "label": "OpenStreetMap Nominatim: Sendai Station point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Sendai%20Station%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "station point near the west exit"
+          ]
+        },
+        {
+          "id": "osm-sendai-asaichi-point",
+          "label": "OpenStreetMap Nominatim: Sendai Asaichi point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Sendai%20Asaichi%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "market point, not a specific stall entrance"
+          ]
+        },
+        {
+          "id": "osm-sendai-city-museum-point",
+          "label": "OpenStreetMap Nominatim: Sendai City Museum point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Sendai%20City%20Museum%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "museum point, not a specific entrance"
+          ]
+        },
+        {
+          "id": "osm-sendai-castle-statue-point",
+          "label": "OpenStreetMap Nominatim: Date Masamune statue point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Date%20Masamune%20statue%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "equestrian statue point on the castle site"
+          ]
+        },
+        {
+          "id": "osm-sendai-jozenji-point",
+          "label": "OpenStreetMap Nominatim: Jozenji-dori point",
+          "url": "https://nominatim.openstreetmap.org/ui/search.html?q=Jozenji-dori%2C%20Sendai%2C%20Japan",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "street point near 3-chome, not an avenue endpoint"
+          ]
+        },
+        {
+          "id": "official-loople-timetable",
+          "label": "Discover Sendai: Loople Sendai timetable PDF",
+          "url": "https://discoversendai.travel/pdf/182/loople_pamphlet.pdf",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "scheduled stop order and in-vehicle segment times used for the route outline"
+          ]
+        },
+        {
+          "id": "official-sendai-museum",
+          "label": "Discover Sendai: Sendai Museum Guide",
+          "url": "https://discoversendai.travel/places/sendai-museum-guide-experience-history-science-and-space/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "museum collection scale",
+            "former Sannomaru location",
+            "seasonal exhibition changes",
+            "special display schedule for Date Masamune armor"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "sendai-asaichi",
+          "order": 1,
+          "name": "Sendai Asaichi (Morning Market)",
+          "area": "Chuo, Aoba Ward",
+          "address": "Sendai Asaichi, Chuo, Aoba Ward, Sendai, Japan",
+          "story": "This compact market is known as the city kitchen: look for Sanriku seafood, seasonal Miyagi produce, breakfast bowls, and freshly fried croquettes. The official visitor guide places it five minutes from Sendai Station’s west exit. Go in the morning, check the day before travelling, and expect individual stalls to set their own hours; the guide lists Sundays and national holidays as closure days.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 38.2586211,
+            "longitude": 140.8785106,
+            "precision": "OSM mapped market point; not a specific stall entrance",
+            "sourceIds": [
+              "osm-sendai-asaichi-point"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sendai_Asaichi_01.jpg/1280px-Sendai_Asaichi_01.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Sendai_Asaichi_01.jpg",
+            "credit": "Neuropower",
+            "license": "CC BY-SA 3.0",
+            "alt": "Sendai Asaichi market and nearby city buildings"
+          }
+        },
+        {
+          "id": "zuihoden",
+          "order": 2,
+          "name": "Zuihoden Mausoleum",
+          "area": "Otamayashita, Aoba Ward",
+          "address": "23-2 Otamayashita, Aoba Ward, Sendai, Miyagi 980-0814, Japan",
+          "story": "Date Masamune, founder of the Sendai domain, chose this hillside as his final resting place. The richly colored mausoleum sits among cedar trees, so the visit shifts from ornate Momoyama-style detail to a quiet, shaded approach. Allow 45 to 60 minutes. The official access notes about 80 steep steps to reception and around 30 more across the grounds; visitors who need step-free access should check with the venue before making this a fixed stop. Loople’s stop is Zuihoden-mae, followed by a walk of about seven minutes.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 45,
+            "maxMinutes": 60,
+            "sourceIds": [
+              "official-sendai-24h"
+            ]
+          },
+          "coordinates": {
+            "latitude": 38.250484,
+            "longitude": 140.866539,
+            "precision": "Commons geotagged camera point within the precinct, not the ticket entrance",
+            "sourceIds": [
+              "photo-sendai-zuihoden"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Zuiho-den_20230806.jpg/1280px-Zuiho-den_20230806.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Zuiho-den_20230806.jpg",
+            "credit": "掬茶",
+            "license": "CC BY-SA 4.0",
+            "alt": "Colorfully decorated Zuihoden Mausoleum among cedar trees"
+          }
+        },
+        {
+          "id": "sendai-city-museum",
+          "order": 3,
+          "name": "Sendai City Museum",
+          "area": "Kawauchi, Aoba Ward",
+          "address": "26 Kawauchi, Aoba Ward, Sendai, Miyagi 980-0862, Japan",
+          "story": "The museum stands on the former Sannomaru grounds of Sendai Castle and holds roughly 100,000 objects connected with the Date family and the region. Look for the story behind Date Masamune’s black-lacquered armor and the Keicho-era mission to Europe. The permanent display changes seasonally, and the armor is shown only during selected periods, so check the current exhibition before choosing this as the day’s anchor. Allow about one to one and a half hours. The Loople stop is shared with Sendai International Center.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 60,
+            "maxMinutes": 90,
+            "sourceIds": [
+              "official-sendai-24h"
+            ]
+          },
+          "coordinates": {
+            "latitude": 38.2559926,
+            "longitude": 140.8568634,
+            "precision": "OSM mapped museum point; entrance location may differ",
+            "sourceIds": [
+              "osm-sendai-city-museum-point"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Sendai_city_museum01s3200.jpg/1280px-Sendai_city_museum01s3200.jpg",
+            "source": "https://commons.wikimedia.org/wiki/File:Sendai_city_museum01s3200.jpg",
+            "credit": "663highland",
+            "license": "CC BY-SA 3.0",
+            "alt": "Exterior of Sendai City Museum"
+          }
+        },
+        {
+          "id": "sendai-castle-site",
+          "order": 4,
+          "name": "Sendai Castle Site and Kenbunkan",
+          "area": "Aoba-yama, Aoba Ward",
+          "address": "Sendai Castle Site, Aoba-yama, Aoba Ward, Sendai, Japan",
+          "story": "The Honmaru occupied a hill about 130 metres above the city. From the open castle site, the view reaches across Sendai and, on clear days, toward the Pacific; the equestrian statue of Date Masamune is the landmark most visitors look for. Before walking the grounds, step into Kenbunkan, the free historical information facility, for models and displays that make the stone walls and layout easier to read. Allow about 45 to 60 minutes for the museum and castle-site walk together. Loople stops at Sendai Castle Site.",
+          "visitDuration": {
+            "status": "known",
+            "minMinutes": 45,
+            "maxMinutes": 60,
+            "sourceIds": [
+              "official-sendai-24h"
+            ]
+          },
+          "coordinates": {
+            "latitude": 38.2532756,
+            "longitude": 140.8567851,
+            "precision": "OSM mapped equestrian statue point on the castle site; not a bus stop",
+            "sourceIds": [
+              "osm-sendai-castle-statue-point"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sendai%20statue%20Date%20Masamune.jpg?width=1280",
+            "source": "https://commons.wikimedia.org/wiki/File:Sendai_statue_Date_Masamune.jpg",
+            "credit": "Gustave67 (photograph of work by Tōru Komuro)",
+            "license": "CC BY-SA 4.0",
+            "alt": "Equestrian statue of Date Masamune at the Sendai Castle Site"
+          }
+        },
+        {
+          "id": "jozenji-dori",
+          "order": 5,
+          "name": "Jozenji-dori Avenue",
+          "area": "Kokubuncho, Aoba Ward",
+          "address": "Jozenji-dori Avenue, Kokubuncho, Aoba Ward, Sendai, Japan",
+          "story": "End beneath the zelkova canopy on the central promenade. The avenue takes its name from a temple that no longer stands, linking the modern city back to Sendai’s founding era. In spring and summer the branches make a green tunnel; autumn turns the leaves gold, and in winter the Pageant of Starlight lights the trees. Sculptures and shops give the walk a distinctly urban feel. Loople serves the Jozenji-dori Avenue / City Hall stop. The avenue is public space, so time needed depends on how long you choose to wander.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 38.2667617,
+            "longitude": 140.8732556,
+            "precision": "OSM point on Jozenji-dori near 3-chome; not a defined endpoint",
+            "sourceIds": [
+              "osm-sendai-jozenji-point"
+            ]
+          },
+          "photo": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/The_promenade_of_Jouzenji-dori_Avenue.JPG/1280px-The_promenade_of_Jouzenji-dori_Avenue.JPG",
+            "source": "https://commons.wikimedia.org/wiki/File:The_promenade_of_Jouzenji-dori_Avenue.JPG",
+            "credit": "Haseyu-",
+            "license": "Public domain",
+            "alt": "Pedestrian promenade beneath the zelkovas of Jozenji-dori Avenue"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "station-to-asaichi",
+          "fromId": "sendai-station",
+          "toId": "sendai-asaichi",
+          "mode": "walking",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5,
+            "sourceIds": [
+              "official-sendai-24h"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8823921,
+                38.2603516
+              ],
+              [
+                140.8785106,
+                38.2586211
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "asaichi-to-zuihoden",
+          "fromId": "sendai-asaichi",
+          "toId": "zuihoden",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8785106,
+                38.2586211
+              ],
+              [
+                140.866539,
+                38.250484
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "zuihoden-to-museum",
+          "fromId": "zuihoden",
+          "toId": "sendai-city-museum",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5,
+            "sourceIds": [
+              "official-loople-timetable"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.866539,
+                38.250484
+              ],
+              [
+                140.8568634,
+                38.2559926
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "museum-to-castle-site",
+          "fromId": "sendai-city-museum",
+          "toId": "sendai-castle-site",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 5,
+            "maxMinutes": 5,
+            "sourceIds": [
+              "official-loople-timetable"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8568634,
+                38.2559926
+              ],
+              [
+                140.8567851,
+                38.2532756
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "castle-to-jozenji",
+          "fromId": "sendai-castle-site",
+          "toId": "jozenji-dori",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 32,
+            "maxMinutes": 32,
+            "sourceIds": [
+              "official-loople-timetable"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8567851,
+                38.2532756
+              ],
+              [
+                140.8732556,
+                38.2667617
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        },
+        {
+          "id": "jozenji-to-station",
+          "fromId": "jozenji-dori",
+          "toId": "sendai-station",
+          "mode": "transit",
+          "duration": {
+            "status": "known",
+            "minMinutes": 12,
+            "maxMinutes": 12,
+            "sourceIds": [
+              "official-loople-timetable"
+            ]
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                140.8732556,
+                38.2667617
+              ],
+              [
+                140.8823921,
+                38.2603516
+              ]
+            ],
+            "sourceIds": [
+              "osm-sendai-route-coordinates"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {}
+    },
+    {
+      "id": "tokyo-city-day",
+      "cityId": "tokyo",
+      "title": "Tokyo: station streets, old Asakusa & Ueno",
+      "introduction": "Begin at Tokyo Station and the Imperial Palace edge, then cross to Asakusa for the old-city streets and finish among Ueno’s museums, park paths and market lanes. This city-centre sequence follows GO TOKYO’s first-visit route logic; check opening days and current access before setting out.",
+      "default": true,
+      "researchStatus": "in-progress",
+      "origin": {
+        "id": "tokyo-station",
+        "name": "Tokyo Station",
+        "address": "Tokyo Station, Tokyo, Japan",
+        "coordinates": {
+          "latitude": 35.681619,
+          "longitude": 139.7653303,
+          "precision": "OSM station-side map point; not a platform entrance",
+          "sourceIds": [
+            "osm-tokyo-origin"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-tokyo-plan",
+          "label": "GO TOKYO · Best of Tokyo in three days",
+          "url": "https://www.gotokyo.org/en/story/walks-and-tours/best-of-tokyo/index.html",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "suggested city stop sequence"
+          ]
+        },
+        {
+          "id": "osm-tokyo-origin",
+          "label": "OpenStreetMap: Tokyo Station outside-gate map point (way 1359646656)",
+          "url": "https://www.openstreetmap.org/way/1359646656",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-tokyo-01",
+          "label": "OpenStreetMap: Tokyo Station Marunouchi red-brick station building (relation 4856156)",
+          "url": "https://www.openstreetmap.org/relation/4856156",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-tokyo-02",
+          "label": "OpenStreetMap: Imperial Palace East Gardens (relation 5415394)",
+          "url": "https://www.openstreetmap.org/relation/5415394",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-tokyo-03",
+          "label": "OpenStreetMap: Sens?-ji (way 173154847)",
+          "url": "https://www.openstreetmap.org/way/173154847",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-tokyo-04",
+          "label": "OpenStreetMap: Ameya-Yokocho market (node 4496960001)",
+          "url": "https://www.openstreetmap.org/node/4496960001",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "tokyo-tokyo-station-marunouchi",
+          "order": 1,
+          "name": "Tokyo Station & Marunouchi",
+          "area": "Marunouchi, Chiyoda, Tokyo",
+          "address": "Tokyo Station & Marunouchi, Marunouchi, Chiyoda, Tokyo, Japan",
+          "story": "Start with the red-brick station façade, then step into Marunouchi’s broad avenues. It is a useful orientation point: old rail architecture, modern Tokyo and the palace district meet within a short walk.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.6811505,
+            "longitude": 139.7659765,
+            "precision": "OSM building relation center",
+            "sourceIds": [
+              "osm-tokyo-01"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo-STA%20Marunouchi-Entrance%202023.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Tokyo-STA_Marunouchi-Entrance_2023.jpg",
+            "credit": "MaedaAkihiko",
+            "license": "CC BY-SA 4.0",
+            "alt": "Tokyo Station’s Marunouchi entrance and red-brick façade"
+          }
+        },
+        {
+          "id": "tokyo-imperial-palace-east-gardens",
+          "order": 2,
+          "name": "Imperial Palace East Gardens",
+          "area": "Chiyoda, Tokyo",
+          "address": "Imperial Palace East Gardens, Chiyoda, Tokyo, Japan",
+          "story": "The former Edo Castle grounds make the city’s scale suddenly quiet. The East Gardens have scheduled closure days and occasional access changes, so check the Imperial Household Agency’s visitor notice before planning this stop.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.6867006,
+            "longitude": 139.7573959,
+            "precision": "OSM garden relation center",
+            "sourceIds": [
+              "osm-tokyo-02"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20Imperial%20Palace%20East%20Gardens%20Park.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Imperial_Palace_East_Gardens_Park.jpg",
+            "credit": "Alexander Klink",
+            "license": "CC BY 4.0",
+            "alt": "A garden pond in Tokyo’s Imperial Palace East Gardens"
+          }
+        },
+        {
+          "id": "tokyo-asakusa-senso-ji",
+          "order": 3,
+          "name": "Asakusa & Senso-ji",
+          "area": "Asakusa, Taito, Tokyo",
+          "address": "Asakusa & Senso-ji, Asakusa, Taito, Tokyo, Japan",
+          "story": "Walk from Kaminarimon through Nakamise toward Senso-ji, then give yourself time to turn into the smaller lanes beyond the main approach. The side streets reveal a neighbourhood as well as a landmark.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.7134032,
+            "longitude": 139.7955265,
+            "precision": "OSM temple complex center",
+            "sourceIds": [
+              "osm-tokyo-03"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Asakusa%20-%20Senso-ji%2005%20(15142418313).jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Asakusa_-_Senso-ji_05_(15142418313).jpg",
+            "credit": "Joe Mabel",
+            "license": "CC BY-SA 3.0",
+            "alt": "Senso-ji temple gate and approach in Asakusa"
+          }
+        },
+        {
+          "id": "tokyo-ueno-park-ameyoko",
+          "order": 4,
+          "name": "Ueno Park & Ameyoko",
+          "area": "Ueno, Taito, Tokyo",
+          "address": "Ueno Park & Ameyoko, Ueno, Taito, Tokyo, Japan",
+          "story": "Choose a museum or a slow loop through the park before finishing around Ameyoko’s lively market lanes. Museum schedules differ, and many close on a weekly day; check the specific venue if you want to go inside.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.7100241,
+            "longitude": 139.7745414,
+            "precision": "OSM marketplace point within the Ueno and Ameyoko area",
+            "sourceIds": [
+              "osm-tokyo-04"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ueno%20park.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Ueno_park.jpg",
+            "credit": "Bernard Gagnon",
+            "license": "CC BY-SA 3.0",
+            "alt": "A walkway beneath cherry trees in Ueno Park"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "tokyo-leg-01",
+          "fromId": "tokyo-station",
+          "toId": "tokyo-tokyo-station-marunouchi",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.7653303,
+                35.681619
+              ],
+              [
+                139.7659765,
+                35.6811505
+              ]
+            ],
+            "sourceIds": [
+              "official-tokyo-plan"
+            ]
+          }
+        },
+        {
+          "id": "tokyo-leg-02",
+          "fromId": "tokyo-tokyo-station-marunouchi",
+          "toId": "tokyo-imperial-palace-east-gardens",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.7659765,
+                35.6811505
+              ],
+              [
+                139.7573959,
+                35.6867006
+              ]
+            ],
+            "sourceIds": [
+              "official-tokyo-plan"
+            ]
+          }
+        },
+        {
+          "id": "tokyo-leg-03",
+          "fromId": "tokyo-imperial-palace-east-gardens",
+          "toId": "tokyo-asakusa-senso-ji",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.7573959,
+                35.6867006
+              ],
+              [
+                139.7955265,
+                35.7134032
+              ]
+            ],
+            "sourceIds": [
+              "official-tokyo-plan"
+            ]
+          }
+        },
+        {
+          "id": "tokyo-leg-04",
+          "fromId": "tokyo-asakusa-senso-ji",
+          "toId": "tokyo-ueno-park-ameyoko",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.7955265,
+                35.7134032
+              ],
+              [
+                139.7745414,
+                35.7100241
+              ]
+            ],
+            "sourceIds": [
+              "official-tokyo-plan"
+            ]
+          }
+        },
+        {
+          "id": "tokyo-leg-05",
+          "fromId": "tokyo-ueno-park-ameyoko",
+          "toId": "tokyo-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                139.7745414,
+                35.7100241
+              ],
+              [
+                139.7653303,
+                35.681619
+              ]
+            ],
+            "sourceIds": [
+              "official-tokyo-plan"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {},
+      "transportMode": "selectable"
+    },
+    {
+      "id": "nagoya-city-day",
+      "cityId": "nagoya",
+      "title": "Nagoya: castle, street food & shrine forest",
+      "introduction": "A north-to-south day that trades between samurai history, the lively Osu lanes and the quiet grounds of Atsuta Shrine. Confirm each site’s calendar before you choose the order.",
+      "default": true,
+      "researchStatus": "in-progress",
+      "origin": {
+        "id": "nagoya-station",
+        "name": "Nagoya Station",
+        "address": "Nagoya Station, Nagoya, Japan",
+        "coordinates": {
+          "latitude": 35.1687934,
+          "longitude": 136.882394,
+          "precision": "OSM station-side map point; not a platform entrance",
+          "sourceIds": [
+            "osm-nagoya-origin"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-nagoya-plan",
+          "label": "Explore Nagoya · one-day itinerary",
+          "url": "https://www.explore-nagoya.info/plan-your-trip/suggested-itineraries/1-day/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "suggested city stop sequence"
+          ]
+        },
+        {
+          "id": "osm-nagoya-origin",
+          "label": "OpenStreetMap: Nagoya Station railway map point (node 6689865382)",
+          "url": "https://www.openstreetmap.org/node/6689865382",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-nagoya-01",
+          "label": "OpenStreetMap: Nagoya Castle (relation 19100633)",
+          "url": "https://www.openstreetmap.org/relation/19100633",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-nagoya-02",
+          "label": "OpenStreetMap: Oasis 21 viewpoint (node 6398372355)",
+          "url": "https://www.openstreetmap.org/node/6398372355",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-nagoya-03",
+          "label": "OpenStreetMap: Osu Shopping Street (node 5212664518)",
+          "url": "https://www.openstreetmap.org/node/5212664518",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-nagoya-04",
+          "label": "OpenStreetMap: Atsuta Jingu (relation 8453890)",
+          "url": "https://www.openstreetmap.org/relation/8453890",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "nagoya-nagoya-castle-hommaru-palace",
+          "order": 1,
+          "name": "Nagoya Castle & Hommaru Palace",
+          "area": "Naka, Nagoya",
+          "address": "Nagoya Castle & Hommaru Palace, Naka, Nagoya, Japan",
+          "story": "Give the palace interiors and castle grounds their own time. The main keep’s interior access can change during restoration work, so check the official castle notice before visiting.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.184396,
+            "longitude": 136.9000992,
+            "precision": "OSM castle relation center",
+            "sourceIds": [
+              "osm-nagoya-01"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nagoya%20Castle.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Nagoya_Castle.jpg",
+            "credit": "Onyo at Wikivoyage",
+            "license": "CC BY-SA 4.0",
+            "alt": "Nagoya Castle and its grounds"
+          }
+        },
+        {
+          "id": "nagoya-oasis-21-hisaya-odori-park",
+          "order": 2,
+          "name": "Oasis 21 & Hisaya-odori Park",
+          "area": "Sakae, Nagoya",
+          "address": "Oasis 21 & Hisaya-odori Park, Sakae, Nagoya, Japan",
+          "story": "A modern glass-and-water landmark opens onto the park boulevard. It makes a good reset before heading south and gives the day a distinctly contemporary Nagoya chapter.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.1711192,
+            "longitude": 136.9096696,
+            "precision": "OSM viewpoint point",
+            "sourceIds": [
+              "osm-nagoya-02"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oasis%2021.JPG?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Oasis_21.JPG",
+            "credit": "Alpsdake",
+            "license": "CC BY-SA 4.0",
+            "alt": "The glass roof of Oasis 21 in Nagoya"
+          }
+        },
+        {
+          "id": "nagoya-osu-kannon-osu-shopping-district",
+          "order": 3,
+          "name": "Osu Kannon & Osu Shopping District",
+          "area": "Osu, Naka, Nagoya",
+          "address": "Osu Kannon & Osu Shopping District, Osu, Naka, Nagoya, Japan",
+          "story": "Temple grounds, old shopping arcades, independent shops and street food sit close together here. Leave room to follow a side street rather than trying to cover every lane.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.1593589,
+            "longitude": 136.901099,
+            "precision": "OSM attraction point in the Osu district",
+            "sourceIds": [
+              "osm-nagoya-03"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Osu%20Kannon%20main%20hall%202025-02%20ac%20(1).jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Osu_Kannon_main_hall_2025-02_ac_(1).jpg",
+            "credit": "Asturio Cantabrio",
+            "license": "CC BY-SA 4.0",
+            "alt": "The main hall of Osu Kannon in Nagoya"
+          }
+        },
+        {
+          "id": "nagoya-atsuta-jingu",
+          "order": 4,
+          "name": "Atsuta Jingu",
+          "area": "Atsuta, Nagoya",
+          "address": "Atsuta Jingu, Atsuta, Nagoya, Japan",
+          "story": "The broad shrine grounds feel a world away from the arcades. Walk respectfully, follow posted photography guidance and check the shrine’s visitor information for current access.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.1254307,
+            "longitude": 136.9092535,
+            "precision": "OSM shrine relation center",
+            "sourceIds": [
+              "osm-nagoya-04"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atsuta%20Jingu%2020211226-02.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Atsuta_Jingu_20211226-02.jpg",
+            "credit": "円周率３パーセント",
+            "license": "CC BY-SA 4.0",
+            "alt": "A shrine building inside Atsuta Jingu in Nagoya"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "nagoya-leg-01",
+          "fromId": "nagoya-station",
+          "toId": "nagoya-nagoya-castle-hommaru-palace",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                136.882394,
+                35.1687934
+              ],
+              [
+                136.9000992,
+                35.184396
+              ]
+            ],
+            "sourceIds": [
+              "official-nagoya-plan"
+            ]
+          }
+        },
+        {
+          "id": "nagoya-leg-02",
+          "fromId": "nagoya-nagoya-castle-hommaru-palace",
+          "toId": "nagoya-oasis-21-hisaya-odori-park",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                136.9000992,
+                35.184396
+              ],
+              [
+                136.9096696,
+                35.1711192
+              ]
+            ],
+            "sourceIds": [
+              "official-nagoya-plan"
+            ]
+          }
+        },
+        {
+          "id": "nagoya-leg-03",
+          "fromId": "nagoya-oasis-21-hisaya-odori-park",
+          "toId": "nagoya-osu-kannon-osu-shopping-district",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                136.9096696,
+                35.1711192
+              ],
+              [
+                136.901099,
+                35.1593589
+              ]
+            ],
+            "sourceIds": [
+              "official-nagoya-plan"
+            ]
+          }
+        },
+        {
+          "id": "nagoya-leg-04",
+          "fromId": "nagoya-osu-kannon-osu-shopping-district",
+          "toId": "nagoya-atsuta-jingu",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                136.901099,
+                35.1593589
+              ],
+              [
+                136.9092535,
+                35.1254307
+              ]
+            ],
+            "sourceIds": [
+              "official-nagoya-plan"
+            ]
+          }
+        },
+        {
+          "id": "nagoya-leg-05",
+          "fromId": "nagoya-atsuta-jingu",
+          "toId": "nagoya-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                136.9092535,
+                35.1254307
+              ],
+              [
+                136.882394,
+                35.1687934
+              ]
+            ],
+            "sourceIds": [
+              "official-nagoya-plan"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {},
+      "transportMode": "selectable"
+    },
+    {
+      "id": "kyoto-city-day",
+      "cityId": "kyoto",
+      "title": "Kyoto: first light through Higashiyama",
+      "introduction": "Start early on the eastern hills, follow the old lanes downhill, then finish among the food stalls and lantern-lit streets of central Kyoto. Crowds and bus conditions vary; check current visitor guidance.",
+      "default": true,
+      "researchStatus": "in-progress",
+      "origin": {
+        "id": "kyoto-station",
+        "name": "Kyoto Station",
+        "address": "Kyoto Station, Kyoto, Japan",
+        "coordinates": {
+          "latitude": 34.9866415,
+          "longitude": 135.7584698,
+          "precision": "OSM station-front map point; not a platform entrance",
+          "sourceIds": [
+            "osm-kyoto-origin"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-kyoto-plan",
+          "label": "Kyoto Travel · Gion & Kiyomizu area guide",
+          "url": "https://kyoto.travel/en/areas/gion-kiyomizu/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "suggested city stop sequence"
+          ]
+        },
+        {
+          "id": "osm-kyoto-origin",
+          "label": "OpenStreetMap: Kyoto Station front map point (way 516084204)",
+          "url": "https://www.openstreetmap.org/way/516084204",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-kyoto-01",
+          "label": "OpenStreetMap: Fushimi Inari Taisha precinct (way 96291583)",
+          "url": "https://www.openstreetmap.org/way/96291583",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-kyoto-02",
+          "label": "OpenStreetMap: Kiyomizu-dera (way 336641107)",
+          "url": "https://www.openstreetmap.org/way/336641107",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-kyoto-03",
+          "label": "OpenStreetMap: Yasaka-no-To Pagoda in the Sannenzaka and Ninenzaka lanes (way 371717416)",
+          "url": "https://www.openstreetmap.org/way/371717416",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-kyoto-04",
+          "label": "OpenStreetMap: Nishiki Market (way 772134672)",
+          "url": "https://www.openstreetmap.org/way/772134672",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-kyoto-05",
+          "label": "OpenStreetMap: Shirakawa River, Gion (way 623354044)",
+          "url": "https://www.openstreetmap.org/way/623354044",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "kyoto-fushimi-inari-taisha",
+          "order": 1,
+          "name": "Fushimi Inari Taisha",
+          "area": "Fushimi, Kyoto",
+          "address": "Fushimi Inari Taisha, Fushimi, Kyoto, Japan",
+          "story": "Walk through the first vermilion gates while the paths are quieter. The shrine grounds extend far up the mountain; choose a turnaround point that fits your day.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.9675192,
+            "longitude": 135.7797101,
+            "precision": "OSM shrine precinct center",
+            "sourceIds": [
+              "osm-kyoto-01"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fushimi%20Inari%2C%20Kyoto%2C%2020240818%201354%204447.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Fushimi_Inari%2C_Kyoto%2C_20240818_1354_4447.jpg",
+            "credit": "Jakub Hałun",
+            "license": "CC BY 4.0",
+            "alt": "Vermilion torii gates at Fushimi Inari Taisha"
+          }
+        },
+        {
+          "id": "kyoto-kiyomizu-dera",
+          "order": 2,
+          "name": "Kiyomizu-dera",
+          "area": "Higashiyama, Kyoto",
+          "address": "Kiyomizu-dera, Higashiyama, Kyoto, Japan",
+          "story": "The wooden stage looks over Kyoto, while the temple approach reveals the slope and scale of the old eastern district. Check the temple’s current hours and entry guidance.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.994303,
+            "longitude": 135.7844389,
+            "precision": "OSM temple complex center",
+            "sourceIds": [
+              "osm-kyoto-02"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiyomizu.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Kiyomizu.jpg",
+            "credit": "Jordy Meow",
+            "license": "CC BY-SA 3.0",
+            "alt": "Kiyomizu-dera temple above Kyoto"
+          }
+        },
+        {
+          "id": "kyoto-sannenzaka-ninenzaka",
+          "order": 3,
+          "name": "Sannenzaka & Ninenzaka",
+          "area": "Higashiyama, Kyoto",
+          "address": "Sannenzaka & Ninenzaka, Higashiyama, Kyoto, Japan",
+          "story": "The stone-paved lanes make the geography of Higashiyama part of the visit. Move slowly, give residents room and avoid blocking shopfronts for photos.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.9985564,
+            "longitude": 135.7792488,
+            "precision": "OSM landmark point on the historic-lane route",
+            "sourceIds": [
+              "osm-kyoto-03"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ninenzaka.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Ninenzaka.jpg",
+            "credit": "Paul Synnott",
+            "license": "CC BY 2.0",
+            "alt": "The sloping historic lane at Ninenzaka in Kyoto"
+          }
+        },
+        {
+          "id": "kyoto-nishiki-market",
+          "order": 4,
+          "name": "Nishiki Market",
+          "area": "Nakagyo, Kyoto",
+          "address": "Nishiki Market, Nakagyo, Kyoto, Japan",
+          "story": "Kyoto’s narrow market street is best explored at an easy pace. It is a working shopping street as well as a visitor stop; follow posted etiquette and respect individual stall rules.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.0050244,
+            "longitude": 135.7655699,
+            "precision": "OSM market way center",
+            "sourceIds": [
+              "osm-kyoto-04"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nishiki%20Ichiba%20by%20matsuyuki.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Nishiki_Ichiba_by_matsuyuki.jpg",
+            "credit": "matsuyuki",
+            "license": "CC BY-SA 2.0",
+            "alt": "The covered shopping lane at Nishiki Market"
+          }
+        },
+        {
+          "id": "kyoto-gion-shirakawa",
+          "order": 5,
+          "name": "Gion & Shirakawa",
+          "area": "Higashiyama, Kyoto",
+          "address": "Gion & Shirakawa, Higashiyama, Kyoto, Japan",
+          "story": "Finish beside the canal and traditional streets as the light softens. This is a residential and working district: never follow, photograph or obstruct geiko or maiko.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 35.0050483,
+            "longitude": 135.7718139,
+            "precision": "OSM river way point in Gion Shirakawa",
+            "sourceIds": [
+              "osm-kyoto-05"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/150124%20Gion%20Kyoto%20Japan01s3.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:150124_Gion_Kyoto_Japan01s3.jpg",
+            "credit": "663highland",
+            "license": "CC BY 2.5",
+            "alt": "A traditional street in Kyoto’s Gion district"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "kyoto-leg-01",
+          "fromId": "kyoto-station",
+          "toId": "kyoto-fushimi-inari-taisha",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7584698,
+                34.9866415
+              ],
+              [
+                135.7797101,
+                34.9675192
+              ]
+            ],
+            "sourceIds": [
+              "official-kyoto-plan"
+            ]
+          }
+        },
+        {
+          "id": "kyoto-leg-02",
+          "fromId": "kyoto-fushimi-inari-taisha",
+          "toId": "kyoto-kiyomizu-dera",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7797101,
+                34.9675192
+              ],
+              [
+                135.7844389,
+                34.994303
+              ]
+            ],
+            "sourceIds": [
+              "official-kyoto-plan"
+            ]
+          }
+        },
+        {
+          "id": "kyoto-leg-03",
+          "fromId": "kyoto-kiyomizu-dera",
+          "toId": "kyoto-sannenzaka-ninenzaka",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7844389,
+                34.994303
+              ],
+              [
+                135.7792488,
+                34.9985564
+              ]
+            ],
+            "sourceIds": [
+              "official-kyoto-plan"
+            ]
+          }
+        },
+        {
+          "id": "kyoto-leg-04",
+          "fromId": "kyoto-sannenzaka-ninenzaka",
+          "toId": "kyoto-nishiki-market",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7792488,
+                34.9985564
+              ],
+              [
+                135.7655699,
+                35.0050244
+              ]
+            ],
+            "sourceIds": [
+              "official-kyoto-plan"
+            ]
+          }
+        },
+        {
+          "id": "kyoto-leg-05",
+          "fromId": "kyoto-nishiki-market",
+          "toId": "kyoto-gion-shirakawa",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7655699,
+                35.0050244
+              ],
+              [
+                135.7718139,
+                35.0050483
+              ]
+            ],
+            "sourceIds": [
+              "official-kyoto-plan"
+            ]
+          }
+        },
+        {
+          "id": "kyoto-leg-06",
+          "fromId": "kyoto-gion-shirakawa",
+          "toId": "kyoto-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.7718139,
+                35.0050483
+              ],
+              [
+                135.7584698,
+                34.9866415
+              ]
+            ],
+            "sourceIds": [
+              "official-kyoto-plan"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {},
+      "transportMode": "selectable"
+    },
+    {
+      "id": "osaka-city-day",
+      "cityId": "osaka",
+      "title": "Osaka: castle walls to Dotonbori lights",
+      "introduction": "A history-to-nightfall route: begin at the castle grounds, pause for the city’s food culture, then let the evening unfold around Namba’s canals and lanes.",
+      "default": true,
+      "researchStatus": "in-progress",
+      "origin": {
+        "id": "osaka-station",
+        "name": "Osaka Station",
+        "address": "Osaka Station, Osaka, Japan",
+        "coordinates": {
+          "latitude": 34.702842,
+          "longitude": 135.49422,
+          "precision": "OSM station map point; not a platform entrance",
+          "sourceIds": [
+            "osm-osaka-origin"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-osaka-plan",
+          "label": "Japan National Tourism Organization · Kansai model route",
+          "url": "https://www.japan.travel/en/in/walks-and-tours/in-kansai/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "suggested city stop sequence"
+          ]
+        },
+        {
+          "id": "osm-osaka-origin",
+          "label": "OpenStreetMap: Osaka Station (node 11434319379)",
+          "url": "https://www.openstreetmap.org/node/11434319379",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-osaka-01",
+          "label": "OpenStreetMap: Osaka Castle Park map point (node 3077903034)",
+          "url": "https://www.openstreetmap.org/node/3077903034",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-osaka-02",
+          "label": "OpenStreetMap: Kuromon-Ichiba Market pedestrian lane (way 416111934)",
+          "url": "https://www.openstreetmap.org/way/416111934",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-osaka-03",
+          "label": "OpenStreetMap: Tsūtenkaku tower (way 254319878)",
+          "url": "https://www.openstreetmap.org/way/254319878",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-osaka-04",
+          "label": "OpenStreetMap: Hōzen-ji Yokochō lane in Dotonbori (way 175990735)",
+          "url": "https://www.openstreetmap.org/way/175990735",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "osaka-osaka-castle-park",
+          "order": 1,
+          "name": "Osaka Castle Park",
+          "area": "Chuo, Osaka",
+          "address": "Osaka Castle Park, Chuo, Osaka, Japan",
+          "story": "Approach through the broad park and take in the stone walls before deciding whether to enter the museum inside the main tower. Allow extra time for the grounds.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.6818149,
+            "longitude": 135.5330037,
+            "precision": "OSM park map reference point",
+            "sourceIds": [
+              "osm-osaka-01"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Osaka%20Castle%2003bs3200.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_03bs3200.jpg",
+            "credit": "663highland",
+            "license": "CC BY 2.5",
+            "alt": "Osaka Castle rising above its park"
+          }
+        },
+        {
+          "id": "osaka-kuromon-ichiba-market",
+          "order": 2,
+          "name": "Kuromon Ichiba Market",
+          "area": "Nippombashi, Chuo, Osaka",
+          "address": "Kuromon Ichiba Market, Nippombashi, Chuo, Osaka, Japan",
+          "story": "Browse the covered market for a casual lunch and a look at Osaka’s food-first character. Stalls have individual schedules; a morning or early afternoon visit gives more choice.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.6641888,
+            "longitude": 135.506951,
+            "precision": "OSM pedestrian-way point within the market",
+            "sourceIds": [
+              "osm-osaka-02"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kuromon%20Ichiba%20Osaka.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Kuromon_Ichiba_Osaka.jpg",
+            "credit": "OsianLlwyd1",
+            "license": "Public domain",
+            "alt": "A market lane at Kuromon Ichiba in Osaka"
+          }
+        },
+        {
+          "id": "osaka-shinsekai-tsutenkaku",
+          "order": 3,
+          "name": "Shinsekai & Tsutenkaku",
+          "area": "Ebisuhigashi, Naniwa, Osaka",
+          "address": "Shinsekai & Tsutenkaku, Ebisuhigashi, Naniwa, Osaka, Japan",
+          "story": "The sign-filled streets around Tsutenkaku have a different rhythm from the castle district. Pick a few blocks and leave time for a snack rather than rushing through.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.6525393,
+            "longitude": 135.5063098,
+            "precision": "OSM tower point",
+            "sourceIds": [
+              "osm-osaka-03"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinsekai%20and%20Tsutenkaku%20at%20night%202019-04-12.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Shinsekai_and_Tsutenkaku_at_night_2019-04-12.jpg",
+            "credit": "Dick Thomas Johnson",
+            "license": "CC BY 2.0",
+            "alt": "Tsutenkaku Tower above Shinsekai at night"
+          }
+        },
+        {
+          "id": "osaka-dotonbori-hozenji-yokocho",
+          "order": 4,
+          "name": "Dotonbori & Hozenji Yokocho",
+          "area": "Chuo, Osaka",
+          "address": "Dotonbori & Hozenji Yokocho, Chuo, Osaka, Japan",
+          "story": "Follow the canal for the famous city lights, then step into the quieter stone lane by Hozenji. The contrast between spectacle and stillness is the point of the finish.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.6681887,
+            "longitude": 135.5031154,
+            "precision": "OSM pedestrian-way point in the Dotonbori area",
+            "sourceIds": [
+              "osm-osaka-04"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Doutonbori%2C%20Osaka%20(6797858911).jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Doutonbori%2C_Osaka_(6797858911).jpg",
+            "credit": "GoToVan",
+            "license": "CC BY 2.0",
+            "alt": "Canal-side signs and lights in Dotonbori, Osaka"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "osaka-leg-01",
+          "fromId": "osaka-station",
+          "toId": "osaka-osaka-castle-park",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.49422,
+                34.702842
+              ],
+              [
+                135.5330037,
+                34.6818149
+              ]
+            ],
+            "sourceIds": [
+              "official-osaka-plan"
+            ]
+          }
+        },
+        {
+          "id": "osaka-leg-02",
+          "fromId": "osaka-osaka-castle-park",
+          "toId": "osaka-kuromon-ichiba-market",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.5330037,
+                34.6818149
+              ],
+              [
+                135.506951,
+                34.6641888
+              ]
+            ],
+            "sourceIds": [
+              "official-osaka-plan"
+            ]
+          }
+        },
+        {
+          "id": "osaka-leg-03",
+          "fromId": "osaka-kuromon-ichiba-market",
+          "toId": "osaka-shinsekai-tsutenkaku",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.506951,
+                34.6641888
+              ],
+              [
+                135.5063098,
+                34.6525393
+              ]
+            ],
+            "sourceIds": [
+              "official-osaka-plan"
+            ]
+          }
+        },
+        {
+          "id": "osaka-leg-04",
+          "fromId": "osaka-shinsekai-tsutenkaku",
+          "toId": "osaka-dotonbori-hozenji-yokocho",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.5063098,
+                34.6525393
+              ],
+              [
+                135.5031154,
+                34.6681887
+              ]
+            ],
+            "sourceIds": [
+              "official-osaka-plan"
+            ]
+          }
+        },
+        {
+          "id": "osaka-leg-05",
+          "fromId": "osaka-dotonbori-hozenji-yokocho",
+          "toId": "osaka-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                135.5031154,
+                34.6681887
+              ],
+              [
+                135.49422,
+                34.702842
+              ]
+            ],
+            "sourceIds": [
+              "official-osaka-plan"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {},
+      "transportMode": "selectable"
+    },
+    {
+      "id": "hiroshima-city-day",
+      "cityId": "hiroshima",
+      "title": "Hiroshima: remembrance, gardens & the city today",
+      "introduction": "A thoughtful route through the Peace Memorial Park before shifting to the castle grounds and the lively central arcade. Leave time for the museum and approach the memorial sites with care.",
+      "default": true,
+      "researchStatus": "in-progress",
+      "origin": {
+        "id": "hiroshima-station",
+        "name": "Hiroshima Station",
+        "address": "Hiroshima Station, Hiroshima, Japan",
+        "coordinates": {
+          "latitude": 34.3978256,
+          "longitude": 132.4755766,
+          "precision": "OSM station building center",
+          "sourceIds": [
+            "osm-hiroshima-origin"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-hiroshima-plan",
+          "label": "Hiroshima official visitor guide · Peace Park access",
+          "url": "https://dive-hiroshima.com/en/information/faq-004/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "suggested city stop sequence"
+          ]
+        },
+        {
+          "id": "osm-hiroshima-origin",
+          "label": "OpenStreetMap: Hiroshima Station (way 121045837)",
+          "url": "https://www.openstreetmap.org/way/121045837",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-hiroshima-01",
+          "label": "OpenStreetMap: Hiroshima Peace Memorial Park (relation 1971933)",
+          "url": "https://www.openstreetmap.org/relation/1971933",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-hiroshima-02",
+          "label": "OpenStreetMap: World Heritage Atomic Bomb Dome (node 11863424781)",
+          "url": "https://www.openstreetmap.org/node/11863424781",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-hiroshima-03",
+          "label": "OpenStreetMap: Hiroshima Peace Memorial Museum East Building (way 60867022)",
+          "url": "https://www.openstreetmap.org/way/60867022",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-hiroshima-04",
+          "label": "OpenStreetMap: Hiroshima Castle (way 145661233)",
+          "url": "https://www.openstreetmap.org/way/145661233",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-hiroshima-05",
+          "label": "OpenStreetMap: Hondori Shopping Arcade (node 13618198950)",
+          "url": "https://www.openstreetmap.org/node/13618198950",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "hiroshima-hiroshima-peace-memorial-park",
+          "order": 1,
+          "name": "Hiroshima Peace Memorial Park",
+          "area": "Nakajima-cho, Naka, Hiroshima",
+          "address": "Hiroshima Peace Memorial Park, Nakajima-cho, Naka, Hiroshima, Japan",
+          "story": "Begin outdoors with the river, memorials and landscape of the park. Keep voices low and allow visitors who are there to remember space and privacy.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.3931714,
+            "longitude": 132.4523008,
+            "precision": "OSM park relation center",
+            "sourceIds": [
+              "osm-hiroshima-01"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/20181111%20Hiroshima%20Memorial%20Cenotaph-1.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:20181111_Hiroshima_Memorial_Cenotaph-1.jpg",
+            "credit": "Balon Greyjoy",
+            "license": "CC0",
+            "alt": "The Cenotaph in Hiroshima Peace Memorial Park"
+          }
+        },
+        {
+          "id": "hiroshima-atomic-bomb-dome",
+          "order": 2,
+          "name": "Atomic Bomb Dome",
+          "area": "Otemachi, Naka, Hiroshima",
+          "address": "Atomic Bomb Dome, Otemachi, Naka, Hiroshima, Japan",
+          "story": "View the preserved structure from outside the surrounding barriers. The site is a place of remembrance; follow posted access restrictions and avoid treating it as a casual backdrop.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.3958388,
+            "longitude": 132.4537395,
+            "precision": "OSM memorial point",
+            "sourceIds": [
+              "osm-hiroshima-02"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Atomic%20Bomb%20Dome%20in%20the%20Hiroshima%20Peace%20Memorial%20Park.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Atomic_Bomb_Dome_in_the_Hiroshima_Peace_Memorial_Park.jpg",
+            "credit": "Michael Helmer",
+            "license": "Public domain",
+            "alt": "The Atomic Bomb Dome beside the river in Hiroshima"
+          }
+        },
+        {
+          "id": "hiroshima-hiroshima-peace-memorial-museum",
+          "order": 3,
+          "name": "Hiroshima Peace Memorial Museum",
+          "area": "Nakajima-cho, Naka, Hiroshima",
+          "address": "Hiroshima Peace Memorial Museum, Nakajima-cho, Naka, Hiroshima, Japan",
+          "story": "The museum’s exhibits are emotionally demanding. Take the visit at your own pace and check the current ticketing and opening information before arrival.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.3915495,
+            "longitude": 132.4530979,
+            "precision": "OSM museum building center",
+            "sourceIds": [
+              "osm-hiroshima-03"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroshima%20Peace%20Memorial%20Museum%202009.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Hiroshima_Peace_Memorial_Museum_2009.jpg",
+            "credit": "Wiiii",
+            "license": "CC BY-SA 3.0",
+            "alt": "Hiroshima Peace Memorial Museum"
+          }
+        },
+        {
+          "id": "hiroshima-hiroshima-castle-grounds",
+          "order": 4,
+          "name": "Hiroshima Castle & grounds",
+          "area": "Motomachi, Naka, Hiroshima",
+          "address": "Hiroshima Castle & grounds, Motomachi, Naka, Hiroshima, Japan",
+          "story": "The reconstructed keep and moat offer a different chapter of the city’s history. Confirm current museum hours and any access changes before making this the final stop.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.4021463,
+            "longitude": 132.4595399,
+            "precision": "OSM castle museum building center",
+            "sourceIds": [
+              "osm-hiroshima-04"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Keep%20tower%2C%20Hiroshima%20Castle%2C%20Southwest%20remote%20view%2020190417%201.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Keep_tower%2C_Hiroshima_Castle%2C_Southwest_remote_view_20190417_1.jpg",
+            "credit": "DXR",
+            "license": "CC BY-SA 4.0",
+            "alt": "The keep of Hiroshima Castle"
+          }
+        },
+        {
+          "id": "hiroshima-hondori-shopping-arcade",
+          "order": 5,
+          "name": "Hondori Shopping Arcade",
+          "area": "Naka, Hiroshima",
+          "address": "Hondori Shopping Arcade, Naka, Hiroshima, Japan",
+          "story": "End in the covered centre with a meal and a return to the pace of everyday Hiroshima. It is an easy point from which to catch a streetcar back toward the station.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.3938202,
+            "longitude": 132.4569738,
+            "precision": "OSM point in the Hondori shopping arcade",
+            "sourceIds": [
+              "osm-hiroshima-05"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroshima-Hondori%20Shopping%20Street%20at%20dusk%202.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Hiroshima-Hondori_Shopping_Street_at_dusk_2.jpg",
+            "credit": "そらみみ",
+            "license": "CC BY-SA 4.0",
+            "alt": "Hondori shopping street in Hiroshima at dusk"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "hiroshima-leg-01",
+          "fromId": "hiroshima-station",
+          "toId": "hiroshima-hiroshima-peace-memorial-park",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.4755766,
+                34.3978256
+              ],
+              [
+                132.4523008,
+                34.3931714
+              ]
+            ],
+            "sourceIds": [
+              "official-hiroshima-plan"
+            ]
+          }
+        },
+        {
+          "id": "hiroshima-leg-02",
+          "fromId": "hiroshima-hiroshima-peace-memorial-park",
+          "toId": "hiroshima-atomic-bomb-dome",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.4523008,
+                34.3931714
+              ],
+              [
+                132.4537395,
+                34.3958388
+              ]
+            ],
+            "sourceIds": [
+              "official-hiroshima-plan"
+            ]
+          }
+        },
+        {
+          "id": "hiroshima-leg-03",
+          "fromId": "hiroshima-atomic-bomb-dome",
+          "toId": "hiroshima-hiroshima-peace-memorial-museum",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.4537395,
+                34.3958388
+              ],
+              [
+                132.4530979,
+                34.3915495
+              ]
+            ],
+            "sourceIds": [
+              "official-hiroshima-plan"
+            ]
+          }
+        },
+        {
+          "id": "hiroshima-leg-04",
+          "fromId": "hiroshima-hiroshima-peace-memorial-museum",
+          "toId": "hiroshima-hiroshima-castle-grounds",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.4530979,
+                34.3915495
+              ],
+              [
+                132.4595399,
+                34.4021463
+              ]
+            ],
+            "sourceIds": [
+              "official-hiroshima-plan"
+            ]
+          }
+        },
+        {
+          "id": "hiroshima-leg-05",
+          "fromId": "hiroshima-hiroshima-castle-grounds",
+          "toId": "hiroshima-hondori-shopping-arcade",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.4595399,
+                34.4021463
+              ],
+              [
+                132.4569738,
+                34.3938202
+              ]
+            ],
+            "sourceIds": [
+              "official-hiroshima-plan"
+            ]
+          }
+        },
+        {
+          "id": "hiroshima-leg-06",
+          "fromId": "hiroshima-hondori-shopping-arcade",
+          "toId": "hiroshima-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                132.4569738,
+                34.3938202
+              ],
+              [
+                132.4755766,
+                34.3978256
+              ]
+            ],
+            "sourceIds": [
+              "official-hiroshima-plan"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {},
+      "transportMode": "selectable"
+    },
+    {
+      "id": "takamatsu-city-day",
+      "cityId": "takamatsu",
+      "title": "Takamatsu: a garden morning and a harbour afternoon",
+      "introduction": "Keep this day inside the compact city: a slow garden circuit, a castle moat by the port, and a final look across the Seto Inland Sea.",
+      "default": true,
+      "researchStatus": "in-progress",
+      "origin": {
+        "id": "takamatsu-station",
+        "name": "Takamatsu Station",
+        "address": "Takamatsu Station, Takamatsu, Japan",
+        "coordinates": {
+          "latitude": 34.3500297,
+          "longitude": 134.0465905,
+          "precision": "OSM station-access map point; not a platform entrance",
+          "sourceIds": [
+            "osm-takamatsu-origin"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-takamatsu-plan",
+          "label": "Experience Takamatsu · standard city course",
+          "url": "https://www.art-takamatsu.com/en/course/course_train.html",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "suggested city stop sequence"
+          ]
+        },
+        {
+          "id": "osm-takamatsu-origin",
+          "label": "OpenStreetMap: Takamatsu Station south-side access point (way 413927810)",
+          "url": "https://www.openstreetmap.org/way/413927810",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-takamatsu-01",
+          "label": "OpenStreetMap: Ritsurin Garden ticket office (node 13347357815)",
+          "url": "https://www.openstreetmap.org/node/13347357815",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-takamatsu-02",
+          "label": "OpenStreetMap: Marugamemachi central shopping district (relation 5670383)",
+          "url": "https://www.openstreetmap.org/relation/5670383",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-takamatsu-03",
+          "label": "OpenStreetMap: Takamatsu Castle, Tamamo Park (way 89183927)",
+          "url": "https://www.openstreetmap.org/way/89183927",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-takamatsu-04",
+          "label": "OpenStreetMap: Kitahama Alley (way 673995958)",
+          "url": "https://www.openstreetmap.org/way/673995958",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "takamatsu-ritsurin-garden",
+          "order": 1,
+          "name": "Ritsurin Garden",
+          "area": "Ritsurincho, Takamatsu",
+          "address": "Ritsurin Garden, Ritsurincho, Takamatsu, Japan",
+          "story": "Paths loop around ponds, islands and borrowed views of the hills. Enter early if you want the garden’s quieter light; check seasonal opening hours and gate access.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.329894,
+            "longitude": 134.0455856,
+            "precision": "OSM ticket-office point at the garden entrance",
+            "sourceIds": [
+              "osm-takamatsu-01"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ritsurin%20park16s3200.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Ritsurin_park16s3200.jpg",
+            "credit": "663highland",
+            "license": "CC BY 2.5",
+            "alt": "A garden pond and pines at Ritsurin Garden"
+          }
+        },
+        {
+          "id": "takamatsu-sanuki-udon-lunch",
+          "order": 2,
+          "name": "Sanuki udon lunch",
+          "area": "Takamatsu city centre",
+          "address": "Sanuki udon lunch, Takamatsu city centre, Japan",
+          "story": "Make lunch part of the plan with the region’s famous wheat noodles. Many specialist shops keep short hours or sell out, so check the day’s opening before choosing a stop.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.3439169,
+            "longitude": 134.0501061,
+            "precision": "OSM neighbourhood center; choose a specific udon shop on arrival",
+            "sourceIds": [
+              "osm-takamatsu-02"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kama-age%20sanuki%20udon%20by%20sekido%20in%20Takamatsu%2C%20Kagawa.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Kama-age_sanuki_udon_by_sekido_in_Takamatsu%2C_Kagawa.jpg",
+            "credit": "sekido",
+            "license": "CC BY 2.0",
+            "alt": "A bowl of kama-age Sanuki udon in Takamatsu"
+          }
+        },
+        {
+          "id": "takamatsu-tamamo-park-takamatsu-castle-site",
+          "order": 3,
+          "name": "Tamamo Park · Takamatsu Castle site",
+          "area": "Gyokocho, Takamatsu",
+          "address": "Tamamo Park · Takamatsu Castle site, Gyokocho, Takamatsu, Japan",
+          "story": "The former castle’s moat opens directly toward the harbour. Its waterside setting makes the site feel distinct from inland castle towns; check the park’s current opening information.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.3501117,
+            "longitude": 134.0510134,
+            "precision": "OSM park relation center",
+            "sourceIds": [
+              "osm-takamatsu-03"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Takamatsu%20Castle%20Park%20(6493369819).jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Takamatsu_Castle_Park_(6493369819).jpg",
+            "credit": "KimonBerlin",
+            "license": "CC BY-SA 2.0",
+            "alt": "The moat and grounds of Takamatsu Castle in Tamamo Park"
+          }
+        },
+        {
+          "id": "takamatsu-kitahama-alley",
+          "order": 4,
+          "name": "Kitahama Alley",
+          "area": "Kitahama, Takamatsu",
+          "address": "Kitahama Alley, Kitahama, Takamatsu, Japan",
+          "story": "A cluster of renovated port warehouses now holds small shops and cafés. It is a gentle final stop before returning to the station or extending the evening by the water.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 34.3511131,
+            "longitude": 134.0563308,
+            "precision": "OSM commercial-area center",
+            "sourceIds": [
+              "osm-takamatsu-04"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kitahama%20alley01s3872.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Kitahama_alley01s3872.jpg",
+            "credit": "663highland",
+            "license": "CC BY 2.5",
+            "alt": "Former port warehouses at Kitahama Alley in Takamatsu"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "takamatsu-leg-01",
+          "fromId": "takamatsu-station",
+          "toId": "takamatsu-ritsurin-garden",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.0465905,
+                34.3500297
+              ],
+              [
+                134.0455856,
+                34.329894
+              ]
+            ],
+            "sourceIds": [
+              "official-takamatsu-plan"
+            ]
+          }
+        },
+        {
+          "id": "takamatsu-leg-02",
+          "fromId": "takamatsu-ritsurin-garden",
+          "toId": "takamatsu-sanuki-udon-lunch",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.0455856,
+                34.329894
+              ],
+              [
+                134.0501061,
+                34.3439169
+              ]
+            ],
+            "sourceIds": [
+              "official-takamatsu-plan"
+            ]
+          }
+        },
+        {
+          "id": "takamatsu-leg-03",
+          "fromId": "takamatsu-sanuki-udon-lunch",
+          "toId": "takamatsu-tamamo-park-takamatsu-castle-site",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.0501061,
+                34.3439169
+              ],
+              [
+                134.0510134,
+                34.3501117
+              ]
+            ],
+            "sourceIds": [
+              "official-takamatsu-plan"
+            ]
+          }
+        },
+        {
+          "id": "takamatsu-leg-04",
+          "fromId": "takamatsu-tamamo-park-takamatsu-castle-site",
+          "toId": "takamatsu-kitahama-alley",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.0510134,
+                34.3501117
+              ],
+              [
+                134.0563308,
+                34.3511131
+              ]
+            ],
+            "sourceIds": [
+              "official-takamatsu-plan"
+            ]
+          }
+        },
+        {
+          "id": "takamatsu-leg-05",
+          "fromId": "takamatsu-kitahama-alley",
+          "toId": "takamatsu-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                134.0563308,
+                34.3511131
+              ],
+              [
+                134.0465905,
+                34.3500297
+              ]
+            ],
+            "sourceIds": [
+              "official-takamatsu-plan"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {},
+      "transportMode": "selectable"
+    },
+    {
+      "id": "fukuoka-city-day",
+      "cityId": "fukuoka",
+      "title": "Fukuoka: old Hakata, green space & yatai after dark",
+      "introduction": "Begin in the compact temple streets near Hakata, cross the city for a slower afternoon around the castle moat, then return for a yatai dinner if the weather and stalls cooperate.",
+      "default": true,
+      "researchStatus": "in-progress",
+      "origin": {
+        "id": "fukuoka-station",
+        "name": "Hakata Station",
+        "address": "Hakata Station, Fukuoka, Japan",
+        "coordinates": {
+          "latitude": 33.5900413,
+          "longitude": 130.4199026,
+          "precision": "OSM station building center",
+          "sourceIds": [
+            "osm-fukuoka-origin"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-fukuoka-plan",
+          "label": "Fukuoka City Official Tourist Guide · one-day walking course",
+          "url": "https://www.crossroadfukuoka.jp/en/itineraries/ohoripark",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "suggested city stop sequence"
+          ]
+        },
+        {
+          "id": "osm-fukuoka-origin",
+          "label": "OpenStreetMap: Hakata Station (way 72653571)",
+          "url": "https://www.openstreetmap.org/way/72653571",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-fukuoka-01",
+          "label": "OpenStreetMap: Kushida Shrine (way 45779975)",
+          "url": "https://www.openstreetmap.org/way/45779975",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-fukuoka-02",
+          "label": "OpenStreetMap: Tōchō-ji Temple (way 767775372)",
+          "url": "https://www.openstreetmap.org/way/767775372",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-fukuoka-03",
+          "label": "OpenStreetMap: Maizuru Park guide-map point at Fukuoka Castle Ruins (node 4970063838)",
+          "url": "https://www.openstreetmap.org/node/4970063838",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-fukuoka-04",
+          "label": "OpenStreetMap: ?hori Park (way 23344558)",
+          "url": "https://www.openstreetmap.org/way/23344558",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-fukuoka-05",
+          "label": "OpenStreetMap: Yatai Tenjin food stall (node 4619781491)",
+          "url": "https://www.openstreetmap.org/node/4619781491",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "fukuoka-kushida-shrine",
+          "order": 1,
+          "name": "Kushida Shrine",
+          "area": "Kamikawabata, Hakata, Fukuoka",
+          "address": "Kushida Shrine, Kamikawabata, Hakata, Fukuoka, Japan",
+          "story": "A living shrine at the heart of Hakata, closely tied to the city’s festival life. Visit quietly and check whether festival preparations affect access.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 33.59307,
+            "longitude": 130.4106837,
+            "precision": "OSM shrine complex center",
+            "sourceIds": [
+              "osm-fukuoka-01"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kushidajinjafukuoka01.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Kushidajinjafukuoka01.jpg",
+            "credit": "Pontafon",
+            "license": "CC BY-SA 3.0",
+            "alt": "The entrance and grounds of Kushida Shrine in Fukuoka"
+          }
+        },
+        {
+          "id": "fukuoka-hakata-old-town-tochoji-temple",
+          "order": 2,
+          "name": "Hakata Old Town · Tochoji Temple",
+          "area": "Gion, Hakata, Fukuoka",
+          "address": "Hakata Old Town · Tochoji Temple, Gion, Hakata, Fukuoka, Japan",
+          "story": "A short walk links temples and historic streets that recall Hakata’s long trading history. Confirm individual temple rules and visiting hours before entering.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 33.5952317,
+            "longitude": 130.4138692,
+            "precision": "OSM temple complex center",
+            "sourceIds": [
+              "osm-fukuoka-02"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tocho-ji-Hakata.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Tocho-ji-Hakata.jpg",
+            "credit": "WolfgangMichel",
+            "license": "CC0",
+            "alt": "Tochoji Temple in Hakata, Fukuoka"
+          }
+        },
+        {
+          "id": "fukuoka-fukuoka-castle-ruins-maizuru-park",
+          "order": 3,
+          "name": "Fukuoka Castle Ruins & Maizuru Park",
+          "area": "Jonai, Chuo, Fukuoka",
+          "address": "Fukuoka Castle Ruins & Maizuru Park, Jonai, Chuo, Fukuoka, Japan",
+          "story": "Stone walls and the old moat spread across a broad city park. The remains are easy to explore at your own pace, with open views across the green space.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 33.5831487,
+            "longitude": 130.3810966,
+            "precision": "OSM park map reference point",
+            "sourceIds": [
+              "osm-fukuoka-03"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20site%20of%20Tenshu%20of%20Fukuoka%20Castle%2020140801%20(West)%202.JPG?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:View_from_site_of_Tenshu_of_Fukuoka_Castle_20140801_(West)_2.JPG",
+            "credit": "そらみみ",
+            "license": "CC BY-SA 4.0",
+            "alt": "A view from the former keep site at Fukuoka Castle"
+          }
+        },
+        {
+          "id": "fukuoka-ohori-park",
+          "order": 4,
+          "name": "Ohori Park",
+          "area": "Ohorikoen, Chuo, Fukuoka",
+          "address": "Ohori Park, Ohorikoen, Chuo, Fukuoka, Japan",
+          "story": "The loop around the water is a calm counterpoint to Hakata’s busy streets. Take the path slowly and leave time for the Japanese garden if it is open.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 33.5861214,
+            "longitude": 130.3763612,
+            "precision": "OSM park way center",
+            "sourceIds": [
+              "osm-fukuoka-04"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ohori%20Park%2020170505-4.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Ohori_Park_20170505-4.jpg",
+            "credit": "そらみみ",
+            "license": "CC BY-SA 4.0",
+            "alt": "The lake and walking paths at Ohori Park in Fukuoka"
+          }
+        },
+        {
+          "id": "fukuoka-tenjin-yatai-area",
+          "order": 5,
+          "name": "Tenjin yatai area",
+          "area": "Tenjin, Chuo, Fukuoka",
+          "address": "Tenjin yatai area, Tenjin, Chuo, Fukuoka, Japan",
+          "story": "If stalls are operating, finish with a meal at a yatai. Each stall is independent and may close for weather or a day off; bring a flexible dinner plan.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 33.5874884,
+            "longitude": 130.4005777,
+            "precision": "OSM food-stall point in the Tenjin yatai area",
+            "sourceIds": [
+              "osm-fukuoka-05"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Watanabe%20D%C5%8Dri%20The%20Yatai%20near%20Nishinippon%20Watanabe%20Building%20Tenjin%201-ch%C5%8Dme%20Ch%C5%AB%C5%8D-ku%20Fukuoka%2020260414.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Watanabe_D%C5%8Dri_The_Yatai_near_Nishinippon_Watanabe_Building_Tenjin_1-ch%C5%8Dme_Ch%C5%AB%C5%8D-ku_Fukuoka_20260414.jpg",
+            "credit": "Hirho",
+            "license": "CC BY 4.0",
+            "alt": "A yatai food stall on Watanabe-dori in Tenjin, Fukuoka"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "fukuoka-leg-01",
+          "fromId": "fukuoka-station",
+          "toId": "fukuoka-kushida-shrine",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.4199026,
+                33.5900413
+              ],
+              [
+                130.4106837,
+                33.59307
+              ]
+            ],
+            "sourceIds": [
+              "official-fukuoka-plan"
+            ]
+          }
+        },
+        {
+          "id": "fukuoka-leg-02",
+          "fromId": "fukuoka-kushida-shrine",
+          "toId": "fukuoka-hakata-old-town-tochoji-temple",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.4106837,
+                33.59307
+              ],
+              [
+                130.4138692,
+                33.5952317
+              ]
+            ],
+            "sourceIds": [
+              "official-fukuoka-plan"
+            ]
+          }
+        },
+        {
+          "id": "fukuoka-leg-03",
+          "fromId": "fukuoka-hakata-old-town-tochoji-temple",
+          "toId": "fukuoka-fukuoka-castle-ruins-maizuru-park",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.4138692,
+                33.5952317
+              ],
+              [
+                130.3810966,
+                33.5831487
+              ]
+            ],
+            "sourceIds": [
+              "official-fukuoka-plan"
+            ]
+          }
+        },
+        {
+          "id": "fukuoka-leg-04",
+          "fromId": "fukuoka-fukuoka-castle-ruins-maizuru-park",
+          "toId": "fukuoka-ohori-park",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.3810966,
+                33.5831487
+              ],
+              [
+                130.3763612,
+                33.5861214
+              ]
+            ],
+            "sourceIds": [
+              "official-fukuoka-plan"
+            ]
+          }
+        },
+        {
+          "id": "fukuoka-leg-05",
+          "fromId": "fukuoka-ohori-park",
+          "toId": "fukuoka-tenjin-yatai-area",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.3763612,
+                33.5861214
+              ],
+              [
+                130.4005777,
+                33.5874884
+              ]
+            ],
+            "sourceIds": [
+              "official-fukuoka-plan"
+            ]
+          }
+        },
+        {
+          "id": "fukuoka-leg-06",
+          "fromId": "fukuoka-tenjin-yatai-area",
+          "toId": "fukuoka-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                130.4005777,
+                33.5874884
+              ],
+              [
+                130.4199026,
+                33.5900413
+              ]
+            ],
+            "sourceIds": [
+              "official-fukuoka-plan"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {},
+      "transportMode": "selectable"
+    },
+    {
+      "id": "naha-city-day",
+      "cityId": "naha",
+      "title": "Naha: Ryukyu heritage to the night market streets",
+      "introduction": "Start on the hill at Shuri, then descend toward Tsuboya’s pottery lanes and the city’s covered markets. Keep the last stop flexible for the day’s market hours and street activity.",
+      "default": true,
+      "researchStatus": "in-progress",
+      "origin": {
+        "id": "naha-station",
+        "name": "Naha Bus Terminal",
+        "address": "Naha Bus Terminal, Naha, Japan",
+        "coordinates": {
+          "latitude": 26.2112093,
+          "longitude": 127.6766421,
+          "precision": "OSM bus-terminal relation center",
+          "sourceIds": [
+            "osm-naha-origin"
+          ]
+        }
+      },
+      "sources": [
+        {
+          "id": "official-naha-plan",
+          "label": "Naha Navi · access to main visitor attractions",
+          "url": "https://www.naha-navi.or.jp/en/sitepage/access/",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "suggested city stop sequence"
+          ]
+        },
+        {
+          "id": "osm-naha-origin",
+          "label": "OpenStreetMap: Naha Bus Terminal (relation 20282035)",
+          "url": "https://www.openstreetmap.org/relation/20282035",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-naha-01",
+          "label": "OpenStreetMap: Shurijo Castle Park (way 380509890)",
+          "url": "https://www.openstreetmap.org/way/380509890",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-naha-02",
+          "label": "OpenStreetMap: Tsuboya Yachimun Street guide point (node 9757475601)",
+          "url": "https://www.openstreetmap.org/node/9757475601",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-naha-03",
+          "label": "OpenStreetMap: First Makishi Public Market (way 533600878)",
+          "url": "https://www.openstreetmap.org/way/533600878",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        },
+        {
+          "id": "osm-naha-04",
+          "label": "OpenStreetMap: Kokusai-dori Street (way 1005199592)",
+          "url": "https://www.openstreetmap.org/way/1005199592",
+          "checkedOn": "2026-10-23",
+          "supports": [
+            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
+          ]
+        }
+      ],
+      "stops": [
+        {
+          "id": "naha-shurijo-castle-park",
+          "order": 1,
+          "name": "Shurijo Castle Park",
+          "area": "Shuri, Naha",
+          "address": "Shurijo Castle Park, Shuri, Naha, Japan",
+          "story": "Follow the gates and ramparts through the former Ryukyu royal precinct. Restoration and visitor routes continue to evolve; check the official park update for the areas open on your date.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 26.2174337,
+            "longitude": 127.7191031,
+            "precision": "OSM park boundary center",
+            "sourceIds": [
+              "osm-naha-01"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Naha%20Okinawa%20Japan%20Shuri-Castle-01.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Naha_Okinawa_Japan_Shuri-Castle-01.jpg",
+            "credit": "CEphoto, Uwe Aranas",
+            "license": "CC BY-SA 3.0",
+            "alt": "The red gate and walls of Shurijo Castle in Naha"
+          }
+        },
+        {
+          "id": "naha-tsuboya-yachimun-street",
+          "order": 2,
+          "name": "Tsuboya Yachimun Street",
+          "area": "Tsuboya, Naha",
+          "address": "Tsuboya Yachimun Street, Tsuboya, Naha, Japan",
+          "story": "Stone-paved lanes, kilns and small galleries tell the story of Okinawan pottery. Browse respectfully; many workshops are working spaces with their own opening hours.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 26.2131559,
+            "longitude": 127.6913663,
+            "precision": "OSM street guidepost point",
+            "sourceIds": [
+              "osm-naha-02"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tsuboya%20Yachimun%20Street.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Tsuboya_Yachimun_Street.jpg",
+            "credit": "Hajime NAKANO",
+            "license": "CC BY 2.0",
+            "alt": "Historic pottery shops along Tsuboya Yachimun Street"
+          }
+        },
+        {
+          "id": "naha-makishi-public-market",
+          "order": 3,
+          "name": "Makishi Public Market",
+          "area": "Matsuo, Naha",
+          "address": "Makishi Public Market, Matsuo, Naha, Japan",
+          "story": "Explore the market floors and the surrounding arcade for Okinawan ingredients and everyday food culture. Check current floor access and vendor hours before planning a meal here.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 26.2145462,
+            "longitude": 127.6882881,
+            "precision": "OSM market building center",
+            "sourceIds": [
+              "osm-naha-03"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Makishi%20Public%20Market%20202202.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Makishi_Public_Market_202202.jpg",
+            "credit": "Kugel~commonswiki",
+            "license": "CC BY-SA 4.0",
+            "alt": "The colorful stalls inside Makishi Public Market"
+          }
+        },
+        {
+          "id": "naha-kokusai-dori-heiwa-dori",
+          "order": 4,
+          "name": "Kokusai-dori & Heiwa-dori",
+          "area": "Naha city centre",
+          "address": "Kokusai-dori & Heiwa-dori, Naha city centre, Japan",
+          "story": "Finish among the central shopping streets and covered lanes. The neighbourhood is liveliest later in the day; Sundays may bring pedestrian-only activity on parts of the main street.",
+          "visitDuration": {
+            "status": "unknown"
+          },
+          "coordinates": {
+            "latitude": 26.2163021,
+            "longitude": 127.6882804,
+            "precision": "OSM street-way point",
+            "sourceIds": [
+              "osm-naha-04"
+            ]
+          },
+          "photo": {
+            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kokusai-dori05ss4272.jpg?width=1100",
+            "source": "https://commons.wikimedia.org/wiki/File:Kokusai-dori05ss4272.jpg",
+            "credit": "663highland",
+            "license": "CC BY 2.5",
+            "alt": "Kokusai-dori shopping street in central Naha"
+          }
+        }
+      ],
+      "legs": [
+        {
+          "id": "naha-leg-01",
+          "fromId": "naha-station",
+          "toId": "naha-shurijo-castle-park",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                127.6766421,
+                26.2112093
+              ],
+              [
+                127.7191031,
+                26.2174337
+              ]
+            ],
+            "sourceIds": [
+              "official-naha-plan"
+            ]
+          }
+        },
+        {
+          "id": "naha-leg-02",
+          "fromId": "naha-shurijo-castle-park",
+          "toId": "naha-tsuboya-yachimun-street",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                127.7191031,
+                26.2174337
+              ],
+              [
+                127.6913663,
+                26.2131559
+              ]
+            ],
+            "sourceIds": [
+              "official-naha-plan"
+            ]
+          }
+        },
+        {
+          "id": "naha-leg-03",
+          "fromId": "naha-tsuboya-yachimun-street",
+          "toId": "naha-makishi-public-market",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                127.6913663,
+                26.2131559
+              ],
+              [
+                127.6882881,
+                26.2145462
+              ]
+            ],
+            "sourceIds": [
+              "official-naha-plan"
+            ]
+          }
+        },
+        {
+          "id": "naha-leg-04",
+          "fromId": "naha-makishi-public-market",
+          "toId": "naha-kokusai-dori-heiwa-dori",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                127.6882881,
+                26.2145462
+              ],
+              [
+                127.6882804,
+                26.2163021
+              ]
+            ],
+            "sourceIds": [
+              "official-naha-plan"
+            ]
+          }
+        },
+        {
+          "id": "naha-leg-05",
+          "fromId": "naha-kokusai-dori-heiwa-dori",
+          "toId": "naha-station",
+          "mode": "transit",
+          "duration": {
+            "status": "unknown"
+          },
+          "geometry": {
+            "status": "schematic",
+            "coordinates": [
+              [
+                127.6882804,
+                26.2163021
+              ],
+              [
+                127.6766421,
+                26.2112093
+              ]
+            ],
+            "sourceIds": [
+              "official-naha-plan"
+            ]
+          }
+        }
+      ],
+      "allowances": [],
+      "variants": {},
+      "transportMode": "selectable"
+    }
+  ]
+}
