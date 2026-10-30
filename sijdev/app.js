@@ -328,6 +328,8 @@ const PLACE_SPOTLIGHTS = {
 
 let placeDialogRequest = 0;
 let placeDialogTrigger = null;
+let activeDialogPlaceName = '';
+let routeMapLoadToken = 0;
 
 function placeMapSearch(queryText) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(queryText)}`;
@@ -434,12 +436,51 @@ function showPlace(place, index) {
   official.href=spotlight?.officialUrl || googleSearchUrl(`site:japan.travel/en/ ${place.name} ${place.place}`);
   document.querySelector('#place-dialog-save').onclick=()=>toggleSavedPlace(place);
   updatePlaceDialogSave(place);
+  activeDialogPlaceName=place.name;
+  routeMapLoadToken+=1;
+  const routeDetails=document.querySelector('#place-dialog-route-details');
+  routeDetails.hidden=false;
+  routeDetails.dataset.routeMapState='pending';
+  routeDetails.open=false;
+  document.querySelector('#place-dialog-route-status').textContent='The interactive map loads when you open it.';
   placeDialog.showModal();
-  window.PlaceRouteUI?.mountDialog(place.name);
   document.querySelector('#place-dialog-gallery-status').textContent='';
   document.querySelector('#place-dialog-gallery').replaceChildren();
   document.querySelector('#place-dialog-gallery').closest('.place-detail-section').hidden=true;
 }
+
+document.querySelector('#place-dialog-route-details')?.addEventListener('click',event=>{
+  const summary=event.target.closest('summary');
+  const details=event.currentTarget;
+  if(!summary||details.dataset.routeMapState==='ready'||details.dataset.routeMapState==='unavailable')return;
+  event.preventDefault();
+  if(details.dataset.routeMapState==='loading')return;
+  const placeName=activeDialogPlaceName, request=placeDialogRequest, token=++routeMapLoadToken;
+  details.dataset.routeMapState='loading';
+  document.querySelector('#place-dialog-route-status').textContent='Loading the interactive route map…';
+  Promise.resolve(window.SIJFeatureLoader?.loadPlaceMap())
+    .then(()=>{
+      if(!window.PlaceRouteUI)throw new Error('Map interface unavailable');
+      if(request!==placeDialogRequest||token!==routeMapLoadToken)return;
+      return window.PlaceRouteUI.mountDialog(placeName);
+    })
+    .then(()=>{
+      if(request!==placeDialogRequest||token!==routeMapLoadToken)return;
+      if(details.hidden){
+        details.dataset.routeMapState='unavailable';
+        document.querySelector('#place-dialog-route-status').textContent='No interactive route is available for this place. The Google Maps directions above remain available.';
+        return;
+      }
+      details.dataset.routeMapState='ready';
+      document.querySelector('#place-dialog-route-status').textContent='';
+      summary.click();
+    })
+    .catch(()=>{
+      if(request!==placeDialogRequest||token!==routeMapLoadToken)return;
+      details.dataset.routeMapState='pending';
+      document.querySelector('#place-dialog-route-status').textContent='The map did not load. Select this row to retry; direct Google Maps links remain available.';
+    });
+},true);
 function renderPlaceLocalGuide(place, spotlight) {
   const localDetail=LOCAL_FIND_DETAILS[place.name];
   const destination=localDetail?.query || `${place.name}, ${place.place}`;
