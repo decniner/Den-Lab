@@ -6,6 +6,7 @@ The snapshot includes skill instructions and supporting assets. Generated Python
 
 Skills included:
 - `token-refresh`
+- `neon-orbit-android-apk`
 - `youtube-create1`
 - `youtube-create2`
 - `youtube-create3`
