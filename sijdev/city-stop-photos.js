@@ -1,0 +1,52 @@
+(function attachCityStopPhotos(root){
+'use strict';
+const records=[
+['Tokyo Station & Marunouchi','Tokyo-STA Marunouchi-Entrance 2023.jpg','MaedaAkihiko','CC BY-SA 4.0','Tokyo Station’s Marunouchi entrance and red-brick façade'],
+['Imperial Palace East Gardens','Tokyo Imperial Palace East Gardens Park.jpg','Alexander Klink','CC BY 4.0','A garden pond in Tokyo’s Imperial Palace East Gardens'],
+['Asakusa & Senso-ji','Asakusa - Senso-ji 05 (15142418313).jpg','Joe Mabel','CC BY-SA 3.0','Senso-ji temple gate and approach in Asakusa'],
+['Ueno Park & Ameyoko','Ueno park.jpg','Bernard Gagnon','CC BY-SA 3.0','A walkway beneath cherry trees in Ueno Park'],
+['Sapporo Clock Tower','Sapporo-Clock-Tower-2018.jpg','Bjørn Christian Tørrissen','CC BY-SA 4.0','Sapporo’s historic Clock Tower'],
+['Nijo Market','Nijo fish Market 2014.jpg','Wing1990hk','CC BY 3.0','Seafood stalls at Sapporo’s Nijo Market'],
+['Sapporo TV Tower & Odori Park','Odori park at Sapporo TV tower.jpg','LR0725','CC BY-SA 4.0','Odori Park viewed by Sapporo TV Tower'],
+['Tanukikoji Shopping Street','Tanukikoji 01.jpg','Mugu-shisai','CC BY-SA 3.0','The covered Tanukikoji shopping street in Sapporo'],
+['Sapporo Beer Museum','Sapporo Beer Museum.JPG','K. Takeda','CC BY-SA 3.0','The red-brick Sapporo Beer Museum'],
+['Zuihoden Mausoleum','Zuiho-den01s3872.jpg','663highland','CC BY 2.5','The ornate Zuihoden mausoleum in Sendai'],
+['Sendai Castle Ruins · Aoba Castle','Sendai Castle and the City 01.JPG','Caveman2','Public domain','Aoba Castle site looking out over Sendai'],
+['Jozenji-dori Avenue','Jozenji-dori Avenue rev.jpg','Atsi Otani','CC BY-SA 3.0','The tree-lined Jozenji-dori Avenue in Sendai'],
+['Sendai Asaichi Market','Sendai Asaichi 01.jpg','Neuropower','CC BY-SA 3.0','Stalls and streets at Sendai Asaichi morning market'],
+['Nagoya Castle & Hommaru Palace','Nagoya Castle.jpg','Onyo at Wikivoyage','CC BY-SA 4.0','Nagoya Castle and its grounds'],
+['Oasis 21 & Hisaya-odori Park','Oasis 21.JPG','Alpsdake','CC BY-SA 4.0','The glass roof of Oasis 21 in Nagoya'],
+['Osu Kannon & Osu Shopping District','Osu Kannon main hall 2025-02 ac (1).jpg','Asturio Cantabrio','CC BY-SA 4.0','The main hall of Osu Kannon in Nagoya'],
+['Atsuta Jingu','Atsuta Jingu 20211226-02.jpg','円周率３パーセント','CC BY-SA 4.0','A shrine building inside Atsuta Jingu in Nagoya'],
+['Fushimi Inari Taisha','Fushimi Inari, Kyoto, 20240818 1354 4447.jpg','Jakub Hałun','CC BY 4.0','Vermilion torii gates at Fushimi Inari Taisha'],
+['Kiyomizu-dera','Kiyomizu.jpg','Jordy Meow','CC BY-SA 3.0','Kiyomizu-dera temple above Kyoto'],
+['Sannenzaka & Ninenzaka','Ninenzaka.jpg','Paul Synnott','CC BY 2.0','The sloping historic lane at Ninenzaka in Kyoto'],
+['Nishiki Market','Nishiki Ichiba by matsuyuki.jpg','matsuyuki','CC BY-SA 2.0','The covered shopping lane at Nishiki Market'],
+['Gion & Shirakawa','150124 Gion Kyoto Japan01s3.jpg','663highland','CC BY 2.5','A traditional street in Kyoto’s Gion district'],
+['Osaka Castle Park','Osaka Castle 03bs3200.jpg','663highland','CC BY 2.5','Osaka Castle rising above its park'],
+['Kuromon Ichiba Market','Kuromon Ichiba Osaka.jpg','OsianLlwyd1','Public domain','A market lane at Kuromon Ichiba in Osaka'],
+['Shinsekai & Tsutenkaku','Shinsekai and Tsutenkaku at night 2019-04-12.jpg','Dick Thomas Johnson','CC BY 2.0','Tsutenkaku Tower above Shinsekai at night'],
+['Dotonbori & Hozenji Yokocho','Doutonbori, Osaka (6797858911).jpg','GoToVan','CC BY 2.0','Canal-side signs and lights in Dotonbori, Osaka'],
+['Hiroshima Peace Memorial Park','20181111 Hiroshima Memorial Cenotaph-1.jpg','Balon Greyjoy','CC0','The Cenotaph in Hiroshima Peace Memorial Park'],
+['Atomic Bomb Dome','Atomic Bomb Dome in the Hiroshima Peace Memorial Park.jpg','Michael Helmer','Public domain','The Atomic Bomb Dome beside the river in Hiroshima'],
+['Hiroshima Peace Memorial Museum','Hiroshima Peace Memorial Museum 2009.jpg','Wiiii','CC BY-SA 3.0','Hiroshima Peace Memorial Museum'],
+['Hiroshima Castle & grounds','Keep tower, Hiroshima Castle, Southwest remote view 20190417 1.jpg','DXR','CC BY-SA 4.0','The keep of Hiroshima Castle'],
+['Hondori Shopping Arcade','Hiroshima-Hondori Shopping Street at dusk 2.jpg','そらみみ','CC BY-SA 4.0','Hondori shopping street in Hiroshima at dusk'],
+['Ritsurin Garden','Ritsurin park16s3200.jpg','663highland','CC BY 2.5','A garden pond and pines at Ritsurin Garden'],
+['Sanuki udon lunch','Kama-age sanuki udon by sekido in Takamatsu, Kagawa.jpg','sekido','CC BY 2.0','A bowl of kama-age Sanuki udon in Takamatsu'],
+['Tamamo Park · Takamatsu Castle site','Takamatsu Castle Park (6493369819).jpg','KimonBerlin','CC BY-SA 2.0','The moat and grounds of Takamatsu Castle in Tamamo Park'],
+['Kitahama Alley','Kitahama alley01s3872.jpg','663highland','CC BY 2.5','Former port warehouses at Kitahama Alley in Takamatsu'],
+['Kushida Shrine','Kushidajinjafukuoka01.jpg','Pontafon','CC BY-SA 3.0','The entrance and grounds of Kushida Shrine in Fukuoka'],
+['Hakata Old Town · Tochoji Temple','Tocho-ji-Hakata.jpg','WolfgangMichel','CC0','Tochoji Temple in Hakata, Fukuoka'],
+['Fukuoka Castle Ruins & Maizuru Park','View from site of Tenshu of Fukuoka Castle 20140801 (West) 2.JPG','そらみみ','CC BY-SA 4.0','A view from the former keep site at Fukuoka Castle'],
+['Ohori Park','Ohori Park 20170505-4.jpg','そらみみ','CC BY-SA 4.0','The lake and walking paths at Ohori Park in Fukuoka'],
+['Tenjin yatai area','Watanabe Dōri The Yatai near Nishinippon Watanabe Building Tenjin 1-chōme Chūō-ku Fukuoka 20260414.jpg','Hirho','CC BY 4.0','A yatai food stall on Watanabe-dori in Tenjin, Fukuoka'],
+['Shurijo Castle Park','Naha Okinawa Japan Shuri-Castle-01.jpg','CEphoto, Uwe Aranas','CC BY-SA 3.0','The red gate and walls of Shurijo Castle in Naha'],
+['Tsuboya Yachimun Street','Tsuboya Yachimun Street.jpg','Hajime NAKANO','CC BY 2.0','Historic pottery shops along Tsuboya Yachimun Street'],
+['Makishi Public Market','Makishi Public Market 202202.jpg','Kugel~commonswiki','CC BY-SA 4.0','The colorful stalls inside Makishi Public Market'],
+['Kokusai-dori & Heiwa-dori','Kokusai-dori05ss4272.jpg','663highland','CC BY 2.5','Kokusai-dori shopping street in central Naha']
+];
+const photos=Object.freeze(Object.fromEntries(records.map(([name,file,credit,license,alt])=>{const source=`https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file).replace(/%20/g,'_')}`;const verification=Object.freeze({verified:true,source_page:source,credit,license,alt});return [name,Object.freeze({url:`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=1100`,source,credit,license,alt,verification})];})));
+if(typeof module!=='undefined'&&module.exports)module.exports=photos;
+if(root)root.CityStopPhotos=photos;
+})(typeof globalThis!=='undefined'?globalThis:this);
