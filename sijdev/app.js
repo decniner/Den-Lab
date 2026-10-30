@@ -539,8 +539,8 @@ function renderDestinations(announceCompletion = false) {
     const photoLink = document.createElement('a');
     photoLink.className = 'card-photo';
     photoLink.href = guideUrl || '#';
-    photoLink.setAttribute('aria-label', `Open the place guide page for ${place.name}`);
-    if(!guideUrl)photoLink.addEventListener('click',event=>event.preventDefault());
+    photoLink.setAttribute('aria-label', guideUrl ? `Open the place guide page for ${place.name}` : `Open ${place.name} story`);
+    if(!guideUrl)photoLink.addEventListener('click',event=>{event.preventDefault();showPlace(place,DESTINATIONS.indexOf(place));});
     photoLink.append(image);
     const region = document.createElement('span'); region.className = 'card-region'; region.textContent = place.region;
     const number = document.createElement('span'); number.className = 'card-index'; number.textContent = String(index + 1).padStart(2, '0');
