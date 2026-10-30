@@ -13,6 +13,7 @@ on:
       - 'Tadaima/**'
       - 'tiny-llm-from-scratch/ds.tooltip.index.html'
       - '.github/workflows/deploy-pages.yml'
+      - 'tests/feature-loading.test.js'
   workflow_dispatch:
 
 permissions:
@@ -37,6 +38,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build place field guides
         run: node SomeWhereInJapan/scripts/build-all-field-guides.mjs
+      - name: Test SIJ Dev feature loading
+        run: node --test tests/feature-loading.test.js
       - name: Check Dev Version JavaScript
         run: |
           while IFS= read -r -d '' file; do node --check "$file"; done < <(find sijdev -type f -name '*.js' -print0)
