@@ -340,13 +340,13 @@
     "cotopaxijapan:9246627037372:45992675115196": {
       "sale_price": "23100",
       "reference_price": "46200",
-      "sent_at": "2026-10-22T09:22:15+09:00",
+      "sent_at": "2026-10-30T10:29:32+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-jacket-men-sale26ss?variant=45992675115196"
     },
     "cotopaxijapan:9246627201212:45992677146812": {
       "sale_price": "23100",
       "reference_price": "46200",
-      "sent_at": "2026-10-22T09:22:17+09:00",
+      "sent_at": "2026-10-30T10:29:32+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-jacket-womens-sale26ss?variant=45992677146812"
     },
     "merrell-jp:7268630593579:41168550395947": {
@@ -694,7 +694,7 @@
     "boardriders-co-jp:10631285047577:52412800925977": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-22T09:22:17+09:00",
+      "sent_at": "2026-10-30T10:29:32+09:00",
       "url": "https://boardriders.co.jp/products/erjtp03268?variant=52412800925977"
     },
     "boardriders-co-jp:10631287701785:52412819702041": {
@@ -798,6 +798,24 @@
       "reference_price": "24000",
       "sent_at": "2026-10-29T10:26:25+09:00",
       "url": "https://phenixstore.com/products/esg252p93?variant=50132888125744"
+    },
+    "boardriders-co-jp:10631287144729:52412815704345": {
+      "sale_price": "33000",
+      "reference_price": "66000",
+      "sent_at": "2026-10-30T10:29:32+09:00",
+      "url": "https://boardriders.co.jp/products/g0452507?variant=52412815704345"
+    },
+    "boardriders-co-jp:10631289176345:52412830744857": {
+      "sale_price": "26950",
+      "reference_price": "53900",
+      "sent_at": "2026-10-30T10:29:32+09:00",
+      "url": "https://boardriders.co.jp/products/h1252501?variant=52412830744857"
+    },
+    "boardriders-co-jp:10631289012505:52412829106457": {
+      "sale_price": "25300",
+      "reference_price": "50600",
+      "sent_at": "2026-10-30T10:29:32+09:00",
+      "url": "https://boardriders.co.jp/products/g1352519?variant=52412829106457"
     }
   },
   "last_digest": {
