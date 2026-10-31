@@ -35,7 +35,7 @@
     'city-origins.js?v=20261023-3',
     'city-stop-photos.js?v=20261024-1',
     'city-field-guides.js?v=20261024-2',
-    'city-origin-ui.js?v=20261024-2',
+    'city-origin-ui.js?v=planner-fixes-20261101-2',
     'daytrip-core.js?v=20261024-1',
     'daytrips.js?v=20261022-8',
     'daytrip-app.js?v=20261024-12'
