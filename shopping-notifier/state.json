@@ -316,7 +316,7 @@
     "toffyjapan:9119202410770:48182674456850": {
       "sale_price": "1000",
       "reference_price": "2178",
-      "sent_at": "2026-10-21T09:18:15+09:00",
+      "sent_at": "2026-10-31T10:16:14+09:00",
       "url": "https://toffy.jp/products/tl-hw-uvb?variant=48182674456850"
     },
     "toffyjapan:8880113025298:47405993263378": {
@@ -574,7 +574,7 @@
     "boardriders-co-jp:10631285145881:52412801614105": {
       "sale_price": "88000",
       "reference_price": "176000",
-      "sent_at": "2026-10-24T09:11:59+09:00",
+      "sent_at": "2026-10-31T10:16:14+09:00",
       "url": "https://boardriders.co.jp/products/g0452500?variant=52412801614105"
     },
     "boardriders-co-jp:10631288979737:52412828287257": {
@@ -784,13 +784,13 @@
     "ecoflow:8095160795297:44597212020897": {
       "sale_price": "109800",
       "reference_price": "236600",
-      "sent_at": "2026-10-24T09:11:59+09:00",
+      "sent_at": "2026-10-31T10:16:14+09:00",
       "url": "https://jp.ecoflow.com/products/delta-3-plus-portable-power-station?variant=44597212020897"
     },
     "ecoflow:14775578952047:53477411389807": {
       "sale_price": "151810",
       "reference_price": "311180",
-      "sent_at": "2026-10-24T09:11:59+09:00",
+      "sent_at": "2026-10-31T10:16:14+09:00",
       "url": "https://jp.ecoflow.com/products/delta-3-max-portable-power-station?variant=53477411389807"
     },
     "phenixstore-com:9954444214576:50132888125744": {
@@ -816,12 +816,18 @@
       "reference_price": "50600",
       "sent_at": "2026-10-30T10:29:32+09:00",
       "url": "https://boardriders.co.jp/products/g1352519?variant=52412829106457"
+    },
+    "ecoflow:14802635161967:53147522171247": {
+      "sale_price": "85500",
+      "reference_price": "196700",
+      "sent_at": "2026-10-31T10:16:14+09:00",
+      "url": "https://jp.ecoflow.com/products/delta-3-classic?variant=53147522171247"
     }
   },
   "last_digest": {
-    "date": "2026-10-30",
-    "coverage_key": "2481d1c59bef9f8b9a61c648d2fefc6d25d3659a9365be7f998db8686c156fc8",
-    "completed_at": "2026-10-30T10:29:34+09:00",
-    "digest_hash": "baeb21a80a5ffd3c05b735a65195f9472a908c57893979433aeaab522b5ce090"
+    "date": "2026-10-31",
+    "coverage_key": "387710af52acf8d7b864704a1449d67b772b7bfdbffd2a0330add00b3663f808",
+    "completed_at": "2026-10-31T10:16:14+09:00",
+    "digest_hash": "e076ce9d6bdb9305398cd90955f7dcd2362e447d41686f4ec7b055249ebb59ff"
   }
 }
