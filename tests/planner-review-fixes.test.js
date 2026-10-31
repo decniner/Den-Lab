@@ -30,6 +30,7 @@ test('Tokyo heading explains that only Tokyo has sourced price comparisons', asy
   const ui = await read(`${site}/city-origin-ui.js`);
   assert.match(ui, /ten researched city plans across Japan/);
   assert.match(ui, /only origin with five sourced day-trip cost comparisons/);
+  assert.match(ui, /tokyoTools\\.open=true/);
 });
 
 test('Tokyo field-note links stay inside the Dev Version and select the matching route', async () => {
