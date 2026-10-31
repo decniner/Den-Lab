@@ -117,9 +117,9 @@ function render(){
  const requestedDays=Number.parseInt(availability,10)||1;
  availability=String(Math.max(1,Math.min(requestedDays,plan?.stops?.length||1)));
  cityLabel.textContent=origin.station;
- if(headingKicker)headingKicker.textContent=`${availability==='1'?'A FULL DAY':'MULTI-DAY PLAN'} FROM ${origin.city.toUpperCase()}  /  CURATED CITY PLAN`;
+ if(headingKicker)headingKicker.textContent=isTokyo?'10 CITY PLANS · FIVE TOKYO COST COMPARISONS':`${availability==='1'?'A FULL DAY':'MULTI-DAY PLAN'} FROM ${origin.city.toUpperCase()}  /  CURATED CITY PLAN`;
  if(headingTitle)headingTitle.innerHTML=`${availability==='1'?'A day':`${escapeHtml(availability)} days`} in ${escapeHtml(origin.city)}.<br><em>Planned around you.</em>`;
- if(headingCopy)headingCopy.textContent=plan.intro;
+ if(headingCopy)headingCopy.textContent=isTokyo?'Explore ten researched city plans across Japan. Tokyo is the only origin with five sourced day-trip cost comparisons; other cities include suggested stops and live directions.':plan.intro;
  cityNote.textContent=isTokyo?'Tokyo outing estimates below use Tokyo Station. Other origin selections show city ideas and individual live directions, without inherited Tokyo costs or times.':`This is a suggested ${origin.city} sequence starting from ${origin.station}. It has no calculated transfer times or budget; use individual live directions and verify the route before combining places.`;
  allForms.forEach(element=>{if(element)element.hidden=true;});
  panel.hidden=false;
