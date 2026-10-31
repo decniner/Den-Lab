@@ -538,3 +538,5 @@ html{scroll-padding-top:86px}body{background:var(--paper);color:var(--ink)}.site
 @media(max-width:520px){.itinerary-quick-starts{grid-template-columns:1fr;padding:13px}.itinerary-quick-starts button{min-height:58px}}
 @media(prefers-reduced-motion:reduce){.itinerary-quick-starts button{transition:none}}
 .itinerary-preset-status{grid-column:1/-1;margin:0;color:#657168;font:11px/1.5 var(--sans)}
+
+.city-route-map-retry-status{display:block;min-height:1.5em;color:#704c38;font:700 12px/1.5 var(--sans)}[data-map-retry]{min-height:42px;padding:0 16px;border:1px solid #40574b;background:#263a32;color:#fff;font:700 13px/1 var(--sans);cursor:pointer}[data-map-retry]:disabled{opacity:.65;cursor:wait}[data-map-retry]:focus-visible{outline:3px solid #b96549;outline-offset:3px}

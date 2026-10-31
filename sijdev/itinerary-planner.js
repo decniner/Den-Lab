@@ -176,7 +176,7 @@
   }
   function createDayDirections(day, dayIndex) {
     if (!day.places.length) return null;
-    if (typeof day.navigationStart !== 'string') day.navigationStart = dayIndex === 0 ? (currentConfig.origin || '') : '';
+    if (typeof day.navigationStart !== 'string') day.navigationStart = currentConfig.origin || '';
     const section = document.createElement('section');
     section.className = 'itinerary-day-route';
     section.setAttribute('aria-label', 'Route steps for Day ' + (dayIndex + 1));
@@ -184,7 +184,7 @@
     heading.textContent = 'Day route';
     const note = document.createElement('p');
     note.className = 'itinerary-day-route-note';
-    note.textContent = 'Follow the numbered steps. Google Maps gives live directions for each leg; the stop order stays as shown.';
+    note.textContent = 'Your trip start is the default for each day; edit it here if you are staying elsewhere. Stop order is a draft, not a timed schedule: visit durations and total travel times are not calculated. Google Maps provides live directions for each leg.';
     const startLabel = document.createElement('label');
     startLabel.className = 'itinerary-day-start';
     const startCaption = document.createElement('span');

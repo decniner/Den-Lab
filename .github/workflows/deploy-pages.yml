@@ -39,7 +39,7 @@ jobs:
       - name: Build place field guides
         run: node SomeWhereInJapan/scripts/build-all-field-guides.mjs
       - name: Test SIJ Dev feature loading
-        run: node --test tests/feature-loading.test.js
+        run: node --test tests/feature-loading.test.js tests/planner-review-fixes.test.js
       - name: Check Dev Version JavaScript
         run: |
           while IFS= read -r -d '' file; do node --check "$file"; done < <(find sijdev -type f -name '*.js' -print0)
