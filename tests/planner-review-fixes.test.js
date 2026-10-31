@@ -33,6 +33,11 @@ test('Tokyo heading explains that only Tokyo has sourced price comparisons', asy
   assert.match(ui, /tokyoTools\.open=true/);
 });
 
+test('city origin script uses a fresh cache key for the selected-route fix', async () => {
+  const loader = await read(`${site}/feature-loader.js`);
+  assert.match(loader, /city-origin-ui\.js\?v=planner-fixes-20261101-2/);
+});
+
 test('Tokyo field-note links stay inside the Dev Version and select the matching route', async () => {
   const html = await read('dist/index.html');
   const block = html.match(/<nav aria-label="Tokyo day-trip field notes" id="daytrip-guides">([\s\S]*?)<\/nav>/);
