@@ -646,19 +646,19 @@
     "boardriders-co-jp:10631288881433:52412827271449": {
       "sale_price": "24750",
       "reference_price": "49500",
-      "sent_at": "2026-10-25T08:55:22+09:00",
+      "sent_at": "2026-11-01T09:37:41+09:00",
       "url": "https://boardriders.co.jp/products/g1352507?variant=52412827271449"
     },
     "boardriders-co-jp:10631286489369:52412810789145": {
       "sale_price": "22000",
       "reference_price": "44000",
-      "sent_at": "2026-10-25T08:55:22+09:00",
+      "sent_at": "2026-11-01T09:37:41+09:00",
       "url": "https://boardriders.co.jp/products/erjtj03466?variant=52412810789145"
     },
     "boardriders-co-jp:10631285276953:52412802695449": {
       "sale_price": "21450",
       "reference_price": "42900",
-      "sent_at": "2026-10-25T08:55:24+09:00",
+      "sent_at": "2026-11-01T09:37:41+09:00",
       "url": "https://boardriders.co.jp/products/g0652511?variant=52412802695449"
     },
     "boardriders-co-jp:10631288914201:52412827762969": {
@@ -670,7 +670,7 @@
     "boardriders-co-jp:10631289307417:52412832448793": {
       "sale_price": "21450",
       "reference_price": "42900",
-      "sent_at": "2026-10-25T08:55:24+09:00",
+      "sent_at": "2026-11-01T09:37:41+09:00",
       "url": "https://boardriders.co.jp/products/h1352508?variant=52412832448793"
     },
     "boardriders-co-jp:10631286587673:52412811247897": {
@@ -828,12 +828,18 @@
       "reference_price": "59400",
       "sent_at": "2026-11-01T09:37:39+09:00",
       "url": "https://boardriders.co.jp/products/g0652509?variant=52412817342745"
+    },
+    "boardriders-co-jp:10631288324377:52412823208217": {
+      "sale_price": "25300",
+      "reference_price": "50600",
+      "sent_at": "2026-11-01T09:37:41+09:00",
+      "url": "https://boardriders.co.jp/products/g0652516?variant=52412823208217"
     }
   },
   "last_digest": {
-    "date": "2026-10-31",
-    "coverage_key": "387710af52acf8d7b864704a1449d67b772b7bfdbffd2a0330add00b3663f808",
-    "completed_at": "2026-10-31T10:16:14+09:00",
-    "digest_hash": "e076ce9d6bdb9305398cd90955f7dcd2362e447d41686f4ec7b055249ebb59ff"
+    "date": "2026-11-01",
+    "coverage_key": "1571563784a7f807c4271edff34b4a3a36b5c73dfa05a5e739c647080db98dd5",
+    "completed_at": "2026-11-01T09:37:41+09:00",
+    "digest_hash": "1db809f16dc333a0e094ff5c510db1a3f15be8052d44644b728a3c942df49111"
   }
 }
