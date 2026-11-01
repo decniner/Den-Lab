@@ -514,7 +514,7 @@
     "phenixstore-com:8342010429744:45140288831792": {
       "sale_price": "4810",
       "reference_price": "13000",
-      "sent_at": "2026-10-25T08:55:22+09:00",
+      "sent_at": "2026-11-01T09:37:39+09:00",
       "url": "https://phenixstore.com/products/esa88wz55rc?variant=45140288831792"
     },
     "brooksrunning-co-jp:8897616380201:47369879355689": {
@@ -580,7 +580,7 @@
     "boardriders-co-jp:10631288979737:52412828287257": {
       "sale_price": "39600",
       "reference_price": "79200",
-      "sent_at": "2026-10-24T09:11:59+09:00",
+      "sent_at": "2026-11-01T09:37:39+09:00",
       "url": "https://boardriders.co.jp/products/g1352504?variant=52412828287257"
     },
     "boardriders-co-jp:10631287144729:52412815606041": {
@@ -592,7 +592,7 @@
     "boardriders-co-jp:10631289241881:52412831072537": {
       "sale_price": "32450",
       "reference_price": "64900",
-      "sent_at": "2026-10-24T09:12:01+09:00",
+      "sent_at": "2026-11-01T09:37:39+09:00",
       "url": "https://boardriders.co.jp/products/h0452506?variant=52412831072537"
     },
     "boardriders-co-jp:10602437345561:52295135691033": {
@@ -610,7 +610,7 @@
     "boardriders-co-jp:10631289143577:52412830023961": {
       "sale_price": "29700",
       "reference_price": "59400",
-      "sent_at": "2026-10-24T09:12:01+09:00",
+      "sent_at": "2026-11-01T09:37:39+09:00",
       "url": "https://boardriders.co.jp/products/h0652502?variant=52412830023961"
     },
     "boardriders-co-jp:10631289176345:52412830679321": {
@@ -822,6 +822,12 @@
       "reference_price": "196700",
       "sent_at": "2026-10-31T10:16:14+09:00",
       "url": "https://jp.ecoflow.com/products/delta-3-classic?variant=53147522171247"
+    },
+    "boardriders-co-jp:10631287374105:52412817342745": {
+      "sale_price": "29700",
+      "reference_price": "59400",
+      "sent_at": "2026-11-01T09:37:39+09:00",
+      "url": "https://boardriders.co.jp/products/g0652509?variant=52412817342745"
     }
   },
   "last_digest": {
