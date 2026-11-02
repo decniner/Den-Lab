@@ -370,7 +370,7 @@
     "cotopaxijapan:9246627070140:45992675246268": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-10-23T09:19:03+09:00",
+      "sent_at": "2026-11-02T10:11:09+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-vest-mens-sale26ss?variant=45992675246268"
     },
     "cotopaxijapan:9246627659964:45992682881212": {
@@ -718,7 +718,7 @@
     "boardriders-co-jp:10631284392217:52412796240153": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-10-23T09:19:02+09:00",
+      "sent_at": "2026-11-02T10:11:09+09:00",
       "url": "https://boardriders.co.jp/products/adytj03077?variant=52412796240153"
     },
     "boardriders-co-jp:10631289110809:52412829696281": {
@@ -730,7 +730,7 @@
     "boardriders-co-jp:10631289635097:52412836282649": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-10-23T09:19:02+09:00",
+      "sent_at": "2026-11-02T10:11:09+09:00",
       "url": "https://boardriders.co.jp/products/n0452500?variant=52412836282649"
     },
     "boardriders-co-jp:9779335069977:49986664071449": {
@@ -846,12 +846,18 @@
       "reference_price": "42900",
       "sent_at": "2026-11-02T10:11:07+09:00",
       "url": "https://boardriders.co.jp/products/g0652511?variant=52412802859289"
+    },
+    "boardriders-co-jp:10631289110809:52412829729049": {
+      "sale_price": "16500",
+      "reference_price": "33000",
+      "sent_at": "2026-11-02T10:11:09+09:00",
+      "url": "https://boardriders.co.jp/products/g1352516?variant=52412829729049"
     }
   },
   "last_digest": {
-    "date": "2026-11-01",
-    "coverage_key": "1571563784a7f807c4271edff34b4a3a36b5c73dfa05a5e739c647080db98dd5",
-    "completed_at": "2026-11-01T09:37:41+09:00",
-    "digest_hash": "1db809f16dc333a0e094ff5c510db1a3f15be8052d44644b728a3c942df49111"
+    "date": "2026-11-02",
+    "coverage_key": "34fef613881529273b0ef9a21503911d05cdabf3c64c848838a707c2d9406a28",
+    "completed_at": "2026-11-02T10:11:09+09:00",
+    "digest_hash": "1242777ad512d5e23d6843c798dbcc5fb468296ff1e17cd968f8848800f3d2b6"
   }
 }
