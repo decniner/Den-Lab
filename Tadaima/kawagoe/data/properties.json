@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Kawagoe",
     "editionJa": "川越",
-    "researchedOn": "2026-10-24",
+    "researchedOn": "2026-11-02",
     "area": "Kawagoe City, Saitama",
     "areaJa": "埼玉県川越市"
   },
@@ -101,7 +101,7 @@
       "district": "Kami-Shingashi",
       "districtJa": "上新河岸",
       "title": "New 3LDK house — the cheaper of two, fresh today",
-      "priceMan": 3280,
+      "priceMan": 3080,
       "priceFrom": false,
       "landM2": 142.46,
       "buildingM2": 93.96,
@@ -114,7 +114,7 @@
       "built": "Jun 2026",
       "ageYears": 0,
       "highlights": [
-        "Listing updated 2026-10-23 — freshest in this collection",
+        "Listing updated 2026-11-02",
         "Move-in ready (即入居可)",
         "Flat 35S certified, parking for 2"
       ],
@@ -125,9 +125,10 @@
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/b-17038000009872/",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-02"
       },
-      "majorCautions": 0
+      "majorCautions": 0,
+      "priceDropMan": 200
     },
     {
       "id": "h04",
@@ -135,7 +136,7 @@
       "district": "Minami-Otsuka 1-chome",
       "districtJa": "南大塚1丁目",
       "title": "New 3LDK, certified long-term quality housing",
-      "priceMan": 3380,
+      "priceMan": 3180,
       "priceFrom": false,
       "landM2": 119.59,
       "buildingM2": 106.82,
@@ -159,9 +160,10 @@
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/b-89170006389/",
         "verified": "detail",
-        "infoDate": "2026-10-15"
+        "infoDate": "2026-11-01"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 200
     },
     {
       "id": "h05",
@@ -435,7 +437,7 @@
       "district": "Nodamachi 2-chome",
       "districtJa": "野田町2丁目",
       "title": "Used 4LDK (1986), renovated water areas",
-      "priceMan": 2397,
+      "priceMan": 2297,
       "priceFrom": false,
       "landM2": 100.49,
       "buildingM2": 80.16,
@@ -460,45 +462,10 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/4/11201/1473280006260/147328/x41473280006260.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-02"
       },
-      "majorCautions": 1
-    },
-    {
-      "id": "h14",
-      "type": "house-used",
-      "district": "Ogaya",
-      "districtJa": "大字小ケ谷",
-      "title": "Used 4LDK (1989) — cheapest house in this collection",
-      "priceMan": 1690,
-      "priceFrom": false,
-      "landM2": 99.99,
-      "buildingM2": 93.14,
-      "layout": "4LDK",
-      "station": "Nishi-Kawagoe",
-      "stationJa": "西川越",
-      "line": "JR Kawagoe Line",
-      "lineJa": "JR川越線",
-      "walkMin": 7,
-      "built": "Oct 1989",
-      "ageYears": 37,
-      "highlights": [
-        "Lowest total price of any house here",
-        "Move-in possible immediately (即入居可)",
-        "Short 7-minute station walk"
-      ],
-      "cautions": [
-        "Seller suggests interior renovation — budget for works; sold largely as-is",
-        "37 years old",
-        "Landscape-law restriction applies (景観法)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11201/030Z20778786/185072001/x1030Z20778786.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 100
     },
     {
       "id": "h15",
@@ -719,7 +686,7 @@
       "district": "Shimohiroya",
       "districtJa": "大字下広谷",
       "title": "Used 4LDK (1989), vacant — two agencies list it at two prices",
-      "priceMan": 1399,
+      "priceMan": 1299,
       "priceFrom": false,
       "landM2": 119.82,
       "buildingM2": 93.56,
@@ -744,10 +711,11 @@
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/b-1520380002480/",
         "verified": "detail",
-        "infoDate": "2026-09-12"
+        "infoDate": "2026-11-01"
       },
       "majorCautions": 1,
-      "section": "shimohiroya"
+      "section": "shimohiroya",
+      "priceDropMan": 100
     },
     {
       "id": "h22",
@@ -857,42 +825,6 @@
       "section": "shimohiroya"
     },
     {
-      "id": "h25",
-      "type": "house-used",
-      "district": "Shimohiroya",
-      "districtJa": "大字下広谷",
-      "title": "Used 5LDK (1974) at ¥348万 — the edition's cheapest house, with the reasons attached",
-      "priceMan": 348,
-      "priceFrom": false,
-      "landM2": 184.51,
-      "buildingM2": 117.57,
-      "layout": "5LDK",
-      "station": "Tsurugashima",
-      "stationJa": "鶴ヶ島",
-      "line": "Tobu Tojo Line",
-      "lineJa": "東武東上線",
-      "walkMin": 19,
-      "built": "Jan 1974",
-      "ageYears": 52,
-      "highlights": [
-        "By far the lowest price of any house in this edition; 117.6m² of rooms on flat land",
-        "Vacant with immediate handover"
-      ],
-      "cautions": [
-        "Urbanisation-control area (市街化調整区域) AND access over a private road: 71m² of the plot is private-road burden and the frontage on the position-designated road is only 2m — rebuilding may be impossible; price it as land-plus-shell until an agent confirms otherwise",
-        "Well water (井戸) and propane gas — no city water or gas at the house",
-        "52 years old"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/b-1552590000290/",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      },
-      "majorCautions": 2,
-      "section": "shimohiroya"
-    },
-    {
       "id": "l01",
       "type": "land",
       "district": "Nakaharamachi 2-chome",
@@ -924,43 +856,6 @@
       "source": {
         "name": "SUUMO",
         "url": "https://suumo.jp/jj/bukken/shosai/JJ010FJ100/?ar=030&bs=030&nc=21401519&ta=11&sc=11201",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      },
-      "majorCautions": 1
-    },
-    {
-      "id": "l02",
-      "type": "land",
-      "district": "Wakita-Honcho",
-      "districtJa": "脇田本町",
-      "title": "Central lot 5 minutes from Kawagoe Station, old house on site",
-      "priceMan": 4300,
-      "priceFrom": false,
-      "landM2": 95.86,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Kawagoe",
-      "stationJa": "川越",
-      "line": "Tobu Tojo / JR Kawagoe",
-      "lineJa": "東武東上線・JR川越線",
-      "walkMin": 5,
-      "built": null,
-      "ageYears": null,
-      "zoning": "商業地域",
-      "coverageFar": "80% / 240%",
-      "highlights": [
-        "Prime station-front location; Wakita area land prices rose +4.8% in 2026 official data",
-        "Immediate handover possible (即引渡し可)",
-        "Wide 10.1m frontage"
-      ],
-      "cautions": [
-        "Old house stands on the land (古家有り) — demolition cost is on the buyer",
-        "Landscape/fire-prevention and filled-land regulations noted"
-      ],
-      "source": {
-        "name": "SUUMO",
-        "url": "https://suumo.jp/jj/bukken/shosai/JJ010FJ100/?ar=030&bs=030&nc=20652897&ta=11&sc=11201",
         "verified": "detail",
         "infoDate": "2026-10-22"
       },
@@ -1077,43 +972,6 @@
       "majorCautions": 2
     },
     {
-      "id": "l06",
-      "type": "land",
-      "district": "Matoba",
-      "districtJa": "大字的場",
-      "title": "Large 165m² lot in a low-rise residential zone",
-      "priceMan": 2380,
-      "priceFrom": false,
-      "landM2": 165.49,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Matoba",
-      "stationJa": "的場",
-      "line": "JR Kawagoe Line",
-      "lineJa": "JR川越線",
-      "walkMin": 7,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "Over 50 tsubo with no building condition (建築条件なし)",
-        "Listing states apartment buildings are also buildable",
-        "Second station (Kasumigaseki) 12 min away"
-      ],
-      "cautions": [
-        "An old house currently stands on the land; the sale is on a vacant-land handover basis (現況古家あり・更地渡し) - confirm demolition timing and that the cost is the seller's",
-        "Landscape-law restriction applies (景観法)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/89170006367/8917/x489170006367.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 0
-    },
-    {
       "id": "l07",
       "type": "land",
       "district": "Kamitodo-Shinmachi",
@@ -1145,42 +1003,6 @@
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/1060570011791/106057/x41060570011791.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 1
-    },
-    {
-      "id": "l08",
-      "type": "land",
-      "district": "Asahimachi 1-chome",
-      "districtJa": "旭町1丁目",
-      "title": "Big 194m² lot west of Kawagoe Station, no builder tie-in",
-      "priceMan": 3180,
-      "priceFrom": false,
-      "landM2": 194.04,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Kawagoe",
-      "stationJa": "川越",
-      "line": "Tobu Tojo / JR Kawagoe",
-      "lineJa": "東武東上線・JR川越線",
-      "walkMin": 13,
-      "built": null,
-      "ageYears": null,
-      "zoning": null,
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "About 58.7 tsubo — room for a large house and garden",
-        "Listing confirms no building condition (建築条件無し)",
-        "Quiet residential area, public facilities nearby"
-      ],
-      "cautions": [
-        "no direct road frontage of its own - access is via a ~4m shared passage (co-ownership shares: 38.47m² x 2/3 and 82m² x 2/6) to a 6m public road; the seller disclaims contract-nonconformity liability for the building, which stands on the land and is sold as-is (上物有り・現況渡し・建物契約不適合責任免責)"
-      ],
-      "source": {
-        "name": "atHome",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/11201/030Z20740675/010100106/x1030Z20740675.html",
         "verified": "detail",
         "infoDate": "2026-10-23"
       },

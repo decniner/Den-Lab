@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Funabashi",
     "editionJa": "船橋",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Funabashi City, Chiba",
     "areaJa": "千葉県船橋市"
   },
@@ -262,41 +262,6 @@
       }
     },
     {
-      "id": "h07",
-      "type": "house-used",
-      "district": "Futawa-Higashi 2",
-      "districtJa": "二和東2丁目",
-      "title": "2018-built 4LDK corner house — second-home use, little wear",
-      "priceMan": 3680,
-      "priceFrom": false,
-      "landM2": 149.26,
-      "buildingM2": 97.6,
-      "layout": "4LDK",
-      "station": "Misaki",
-      "stationJa": "三咲",
-      "line": "Keisei Matsudo Line",
-      "lineJa": "京成松戸線",
-      "walkMin": 3,
-      "built": "Apr 2018",
-      "ageYears": 8,
-      "highlights": [
-        "Listing says used as second house — interior described as very clean, no reform needed",
-        "149m² land, garden, 2-car space, south-east corner",
-        "Near Otaki Park, quiet low-rise streetscape"
-      ],
-      "cautions": [
-        "Funabashi Station is bus 25 min — this is a local-line lifestyle, not a Sobu commuter play",
-        "Detail page: 21.28m² of the 149.26m² plot is private road (私道)",
-        "Septic-tank drainage (浄化槽) per the detail page, and a landscape district (景観地区) restriction is listed"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21902086/109565001/x1030Z21902086.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "h08",
       "type": "house-used",
       "district": "Nishi-Funa 6",
@@ -365,80 +330,12 @@
       }
     },
     {
-      "id": "h10",
-      "type": "house-used",
-      "district": "Maruyama 1",
-      "districtJa": "丸山1丁目",
-      "title": "2019-built 2LDK — 4 min to Magomezawa, solar panels fitted",
-      "priceMan": 3300,
-      "priceFrom": false,
-      "landM2": 69.87,
-      "buildingM2": 65.52,
-      "layout": "2LDK",
-      "station": "Magomezawa",
-      "stationJa": "馬込沢",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 4,
-      "built": "Mar 2019",
-      "ageYears": 7,
-      "highlights": [
-        "Young build on Tobu Urban Park Line side of the city",
-        "Furniture/appliances included, immediate occupancy, solar panels",
-        "Quiet residential street per listing"
-      ],
-      "cautions": [
-        "Small for families — 65.52m² building on 69.87m² land, 2LDK only",
-        "Detail page: 21.55m² of the 69.87m² plot is private road (私道) — over 30% of the plot, so usable land is much smaller than the headline figure (setback itself is already completed)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21702702/186392003/x1030Z21702702.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "h11",
-      "type": "house-used",
-      "district": "Futawa-Higashi 6",
-      "districtJa": "二和東6丁目",
-      "title": "Near-new Nov 2024 3LDK — 4 min to Futawa-Mukodai, sold furnished",
-      "priceMan": 3490,
-      "priceFrom": false,
-      "landM2": 79.2,
-      "buildingM2": 86.11,
-      "layout": "3LDK",
-      "station": "Futawa-Mukodai",
-      "stationJa": "二和向台",
-      "line": "Keisei Matsudo Line",
-      "lineJa": "京成松戸線",
-      "walkMin": 4,
-      "built": "Nov 2024",
-      "ageYears": 1,
-      "highlights": [
-        "Effectively new — built Nov 2024, listed as used",
-        "Air-con, lighting, curtains and furniture included, immediate occupancy",
-        "Inner sashes for sound insulation, pantry kitchen"
-      ],
-      "cautions": [
-        "Detail page checked 2026-10-24: it states no reason for the ~1-year resale and lists no 告知事項 — ask the agent directly why a Nov 2024 build is back on the market",
-        "Legal restrictions on the detail page: Landscape Act (景観法) and height district (高度地区)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21194802/048277009/x1030Z21194802.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "h12",
       "type": "house-used",
       "district": "Narashinodai 1",
       "districtJa": "習志野台1丁目",
       "title": "3SLDK 2×4 house — 4 min to Takane-Kido, 17.5-jo LDK",
-      "priceMan": 3980,
+      "priceMan": 3780,
       "priceFrom": false,
       "landM2": 82.19,
       "buildingM2": 105.15,
@@ -464,16 +361,17 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21965098/006050A93/x1030Z21965098.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-02"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h13",
       "type": "house-used",
       "district": "Narashinodai 4",
       "districtJa": "習志野台4丁目",
-      "title": "2022-built 3LDK — 4 min to Kita-Narashino, top of brief at ¥49.8M",
-      "priceMan": 4980,
+      "title": "2022-built 3LDK — 4 min to Kita-Narashino, top of brief at ¥48.9M",
+      "priceMan": 4890,
       "priceFrom": false,
       "landM2": 92.9,
       "buildingM2": 92.87,
@@ -497,42 +395,9 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21408183/156871001/x1030Z21408183.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "h14",
-      "type": "house-new",
-      "district": "Maehara-Nishi 8",
-      "districtJa": "前原西8丁目",
-      "title": "New 3-unit development — 5 min to Maehara, from ¥41.8M",
-      "priceMan": 4180,
-      "priceFrom": true,
-      "landM2": 70.41,
-      "buildingM2": 93.18,
-      "layout": "2LDK+2S",
-      "station": "Maehara",
-      "stationJa": "前原",
-      "line": "Keisei Matsudo Line",
-      "lineJa": "京成松戸線",
-      "walkMin": 5,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Rare new-build that fits the brief near a station",
-        "LDK 18-jo+, range across 3 units up to ¥46.8M / 113.02m²",
-        "South-west road frontage per listing"
-      ],
-      "cautions": [
-        "Price is 'from' — only the cheapest unit is ¥41.8M; land/building figures are the smallest unit in the range (70.41-81.75m² / 93.18-113.02m²)",
-        "Detail page: each unit carries a private-road burden (私道負担 10.06m² / 12.74m² / 8.72m² by unit); completion Dec 2026, move-in early Jan 2027"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/12204/030/Z/21953504.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-02"
+      },
+      "priceDropMan": 90
     },
     {
       "id": "h15",
@@ -540,7 +405,7 @@
       "district": "Minami-Misaki 2",
       "districtJa": "南三咲2丁目",
       "title": "New long-term quality house — 7 min to Takifudo, performance certified",
-      "priceMan": 3290,
+      "priceMan": 3090,
       "priceFrom": false,
       "landM2": 91.0,
       "buildingM2": 87.56,
@@ -553,7 +418,7 @@
       "built": "New build",
       "ageYears": 0,
       "highlights": [
-        "Cheapest new build in the set at ¥32.9M",
+        "Cheapest new build in the set at ¥30.9M",
         "Long-term quality housing (長期優良住宅) with design + construction performance evaluations",
         "Otaki Park — cherry-blossom spot — 5 min walk"
       ],
@@ -564,8 +429,9 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12204/030/W/21235478.html",
         "verified": "detail",
-        "infoDate": "2026-10-20"
-      }
+        "infoDate": "2026-11-02"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h16",
@@ -748,44 +614,6 @@
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12204/030Z21181752/000389159/x1030Z21181752.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l05",
-      "type": "land",
-      "district": "Natsumi 3",
-      "districtJa": "夏見3丁目",
-      "title": "119m² vacant plot 12 minutes from Tsukada — regular shape, ready to build",
-      "priceMan": 3680,
-      "priceFrom": false,
-      "landM2": 119,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Tsukada",
-      "stationJa": "塚田",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 12,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Vacant land, vacant delivery; also Shin-Funabashi station 15 min walk",
-        "Supermarket 4 min, convenience store 5 min, Ion Town Shin-Funabashi 12 min",
-        "City gas, mains water and mains sewer; 60% / 200% allows a larger house",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Registered land category is forest (地目: 山林) on the detail page despite sale as a vacant residential plot — confirm category change / development status",
-        "Per-tsubo price is high for Tsukada at ¥102.2万/坪",
-        "Frontage is on 4m roads to east and west"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12204/030Z21944873/101183001/x1030Z21944873.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }

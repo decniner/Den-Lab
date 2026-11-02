@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Machida",
     "editionJa": "町田",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Machida City, Tokyo",
     "areaJa": "東京都町田市"
   },
@@ -746,42 +746,6 @@
       }
     },
     {
-      "id": "l08",
-      "type": "land",
-      "district": "Ogawa 1",
-      "districtJa": "小川1丁目",
-      "title": "142m² flag lot 10 min from Tsukushino — cheapest total price here",
-      "priceMan": 1990,
-      "priceFrom": false,
-      "landM2": 142.75,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Tsukushino",
-      "stationJa": "つくし野",
-      "line": "Tokyu Den-en-toshi Line",
-      "lineJa": "東急田園都市線",
-      "walkMin": 10,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "Immediate handover (即引渡し可), city gas",
-        "Quiet position set back from the road — less noise and overlooking",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Flag / pole lot (路地状敷地): about 20m² of the headline 142.75m² is the access strip — effective building area is smaller",
-        "A building stands on the land (上物有り), sold as-is — demolition cost on the buyer"
-      ],
-      "source": {
-        "name": "OCN不動産 (goo feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z20774183/006050A26/x1030Z20774183.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "l09",
       "type": "land",
       "district": "Higashi-Tamagawagakuen 1",
@@ -815,44 +779,6 @@
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21682411/000045016/x1030Z21682411.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l10",
-      "type": "land",
-      "district": "Aihara-machi",
-      "districtJa": "相原町",
-      "title": "357m² plot with old house 11 min from Aihara — ¥27.6万/tsubo",
-      "priceMan": 2980,
-      "priceFrom": false,
-      "landM2": 357.0,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Aihara",
-      "stationJa": "相原",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 11,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "Very large 357m² (107.99 tsubo) plot — lowest ¥/tsubo in this collection",
-        "No private-road burden (私道負担無), east 4m road",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "An old house stands on the land (古家有り) — demolition cost on the buyer",
-        "Only public water supply is listed in the equipment notes — confirm gas and sewer connection",
-        "Hilly northern Machida (Tama hills side) — check slope and landslide-risk maps",
-        "Verified on the listing page (information date 2026-10-23)"
-      ],
-      "source": {
-        "name": "SUUMO",
-        "url": "https://suumo.jp/tochi/tokyo/sc_machida/nc_20812285/",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
       }
     },
     {

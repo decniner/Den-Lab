@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Matsudo",
     "editionJa": "松戸",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Matsudo City, Chiba",
     "areaJa": "千葉県松戸市"
   },
@@ -60,14 +60,13 @@ window.TADAIMA_DATA = {
         "18帖 3-face-lit LDK; parking for 2; also 11–13 min from Goko"
       ],
       "cautions": [
-        "Part of a 4-unit development — confirm which unit/lot this price buys",
-        "Seen on a portal index page — verify details on the listing link"
+        "Part of a 4-unit development — confirm which unit/lot this price buys"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6003/area_chiba/12207/108.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/4/12207/1226010046527/122601/x41226010046527.html",
+        "verified": "detail",
+        "infoDate": "2026-10-24"
       }
     },
     {
@@ -95,13 +94,13 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Portal feeds disagree on the walk (8 vs 9 min) — scored here on 9",
         "A second unit in the same development is ¥4,699万",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists a land-development-works regulation zone (宅地造成工事規制区域), a 10 m height-district limit (高度地区) and a Building Standards Act Art. 22 zone among the legal restrictions"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6003/area_chiba/12207/108.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/4/12207/1349100003419/134910/x41349100003419.html",
+        "verified": "detail",
+        "infoDate": "2026-10-24"
       }
     },
     {
@@ -129,13 +128,13 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Only this unit falls within the brief — the other unit is ¥5,430万",
         "Compact 85.0m² building for the price",
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — the detail page schedules completion in late Dec 2026 with move-in around mid-Feb 2027"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/ensen/176/2176205.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12207/030/Z/21282761.html",
+        "verified": "detail",
+        "infoDate": "2026-10-21"
       }
     },
     {
@@ -162,48 +161,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Priced at ¥4,999万 — effectively at this collection's ceiling, no headroom",
-        "Single-storey format carries a price premium per m²",
-        "Seen on a portal index page — verify details on the listing link"
+        "Single-storey format carries a price premium per m²"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6003/area_chiba/12207/108.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h05",
-      "type": "house-new",
-      "district": "Kawaharazuka",
-      "districtJa": "河原塚",
-      "title": "New 4LDK development (3 units) — dual-station Yahashira area, from ¥4,390万",
-      "priceMan": 4390,
-      "priceFrom": true,
-      "landM2": 108.84,
-      "buildingM2": 96.16,
-      "layout": "4LDK",
-      "station": "Shin-Yahashira",
-      "stationJa": "新八柱",
-      "line": "JR Musashino Line",
-      "lineJa": "JR武蔵野線",
-      "walkMin": 15,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Two stations usable: Shin-Yahashira (JR Musashino) and Yahashira (Keisei Matsudo), both 15 min",
-        "Walk-in closets; plots 108.8–118.5m² across the 3 units"
-      ],
-      "cautions": [
-        "Price is 'from' — units run to ¥4,890万",
-        "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/ensen/176/2176205.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/1/12207/030Z21406541/185883001/x1030Z21406541.html",
+        "verified": "detail",
+        "infoDate": "2026-10-20"
       }
     },
     {
@@ -231,13 +195,13 @@ window.TADAIMA_DATA = {
       "cautions": [
         "At the price ceiling (¥4,990万)",
         "The usable station, Ichikawa-Ono, is across the border in Ichikawa City — Matsudo-side stations are 29–30 min away",
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — the detail page schedules completion in Dec 2026"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/ensen/176/2176205.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12207/030/Z/21923128.html",
+        "verified": "detail",
+        "infoDate": "2026-10-19"
       }
     },
     {
@@ -270,41 +234,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21592279/136844001/x1030Z21592279.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "h08",
-      "type": "house-used",
-      "district": "Higashi-Hiraga",
-      "districtJa": "東平賀",
-      "title": "Used 4SLDK (1992), fully renovated Feb–Mar 2026 — 126m² house, 7 min to Kita-Kogane",
-      "priceMan": 3499,
-      "priceFrom": false,
-      "landM2": 148.93,
-      "buildingM2": 126.41,
-      "layout": "4SLDK",
-      "station": "Kita-Kogane",
-      "stationJa": "北小金",
-      "line": "JR Joban Line",
-      "lineJa": "JR常磐線",
-      "walkMin": 7,
-      "built": "Feb 1992",
-      "ageYears": 34,
-      "highlights": [
-        "Full renovation completed Feb–Mar 2026: new kitchen/bath/toilets/washstands, all flooring and wallpaper, exterior and roof repainted, new entrance door",
-        "Flat 35S certified; very large 126.4m² house on 148.9m² of land"
-      ],
-      "cautions": [
-        "The structure is from Feb 1992 (34 years old) despite the renovation — check what, if any, seismic/structural work was included",
-        "Other portal feeds list this house as 4LDK with an 8-minute walk — the detail page (4SLDK, 7 min) is used here",
-        "Parking is not stated on the detail page — verify on site",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z20501738/136844001/x1030Z20501738.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
@@ -367,13 +296,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "1996 structure — the 2026 works were finishes and fittings, not structural renewal",
-        "Seen on a portal index page — verify details on the listing link"
+        "The detail page lists an 8.05m² private-road area (私道面積) within the plot"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_chiba/12207.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21916262/163519001/x1030Z21916262.html",
+        "verified": "detail",
+        "infoDate": "2026-11-01"
       }
     },
     {
@@ -400,48 +329,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "40-year-old structure (Mar 1986) — post-1981 seismic standard, but budget for ageing fabric",
-        "The May 2025 reform was partial only (unit bath, taps, wet-area flooring/wallpaper) — not a full renovation",
-        "Seen on a portal index page — verify details on the listing link"
+        "The May 2025 reform was partial only (unit bath, taps, wet-area flooring/wallpaper) — not a full renovation"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_chiba/12207.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h12",
-      "type": "house-used",
-      "district": "Shimo-Yakiri",
-      "districtJa": "下矢切",
-      "title": "Used 4SDK (2014) on a huge 231m² plot — 6 min to Yakiri, Edo River side",
-      "priceMan": 4980,
-      "priceFrom": false,
-      "landM2": 231.16,
-      "buildingM2": 94.39,
-      "layout": "4SDK",
-      "station": "Yakiri",
-      "stationJa": "矢切",
-      "line": "Hokuso Line",
-      "lineJa": "北総線",
-      "walkMin": 6,
-      "built": "Oct 2014",
-      "ageYears": 12,
-      "highlights": [
-        "By far the largest plot in this collection (231.2m²) with parking for 3",
-        "Scenario House build (2014); waterworks cleaned Feb 2026; primary school 8 min"
-      ],
-      "cautions": [
-        "Shimo-Yakiri is Edo River lowland — check the Matsudo City flood hazard map carefully before viewing",
-        "Headline land area includes a ~0.3m² setback portion, per the listing",
-        "Price is at the top of the brief — the value is land and location, not the 94.4m² house",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12207&si%5B0%5D=008&si%5B1%5D=009&sa_l=40",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z20896281/000466033/x1030Z20896281.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -470,14 +363,15 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Compact 91.7m² plot",
         "Unconventional 2SDK layout (2 rooms + storage + DK) — check actual room sizes in person",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists the Cultural Properties Protection Act (文化財保護法) and the Landscape Act (景観法) among the legal restrictions"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12207&si%5B0%5D=008&si%5B1%5D=009&sa_l=40",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21528108/087394001/x1030Z21528108.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
+      },
+      "majorCautions": 1
     },
     {
       "id": "h14",
@@ -503,13 +397,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Only 2LDK at ¥3,980万 — you are paying for the Hebel build quality, energy kit and condition, not room count",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists Landscape Act (景観法) regulation, a height district (高度地区) and a landscape district (景観地区) among the legal restrictions"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12207&si%5B0%5D=008&si%5B1%5D=009&sa_l=40",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21263214/030225019/x1030Z21263214.html",
+        "verified": "detail",
+        "infoDate": "2026-10-22"
       }
     },
     {
@@ -536,12 +430,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Large-lot fringe district — daily life is car-friendly; both stations are a full 10-minute walk",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists a Building Standards Act Art. 22 zone (建基法22条区域) and a Type-1 height district (第1種高度地区) among the legal restrictions",
+        "The layout is effectively 4SLDK — the detail page's own remarks and another portal feed count a storage room (納戸) that the headline 4LDK omits"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12207&si%5B0%5D=008&si%5B1%5D=009&sa_l=40",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21972171/116518067/x1030Z21972171.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -569,14 +464,16 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "At the 15-minute walk limit of this collection, and Kita-Kogane is the only practical station",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists the cliff ordinance (がけ条例), the Landscape Act (景観法), a maximum height limit and an Art. 22 zone among the legal restrictions — the cliff-ordinance listing warrants a slope/retaining-wall check",
+        "Handover is not immediate — the listing text states delivery around mid-March 2027 (the detail page shows 引渡時期: 相談)"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=chiba&lc%5B0%5D=12207&si%5B0%5D=008&si%5B1%5D=009&sa_l=40",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z20604701/176213001/x1030Z20604701.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h17",
@@ -957,44 +854,6 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-21"
       },
       "majorCautions": 2
-    },
-    {
-      "id": "l10",
-      "type": "land",
-      "district": "Shin-Matsudo 5",
-      "districtJa": "新松戸5丁目",
-      "title": "Large 142m² plot near Shin-Matsudo — building on site, sold as-is",
-      "priceMan": 4380,
-      "priceFrom": false,
-      "landM2": 142.15,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Shin-Matsudo",
-      "stationJa": "新松戸",
-      "line": "JR Joban Line",
-      "lineJa": "JR常磐線",
-      "walkMin": 14,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Large 142m² plot for the Shin-Matsudo area; immediate handover (即引渡し可)",
-        "10.5m of frontage onto a west 6m road; full utilities (city gas, water, mains sewer)",
-        "Three-line area: Kogane-Joshi (Nagareyama Line) 16 min, Minami-Nagareyama (TX) 18 min",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost and effort on the buyer",
-        "Height-district restrictions apply (法令等制限：高度地区)",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12207/030Z21560821/003852025/x1030Z21560821.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
     },
     {
       "id": "l11",

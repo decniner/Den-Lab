@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Nagareyama",
     "editionJa": "流山",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Nagareyama City, Chiba",
     "areaJa": "千葉県流山市"
   },
@@ -41,7 +41,7 @@ window.TADAIMA_DATA = {
       "stationJa": "流山",
       "line": "Ryutetsu Nagareyama Line",
       "lineJa": "流鉄流山線",
-      "walkMin": 10,
+      "walkMin": 12,
       "built": "New build",
       "ageYears": 0,
       "highlights": [
@@ -49,13 +49,12 @@ window.TADAIMA_DATA = {
         "Move-in ready (即入居可); housing performance-evaluation certificates obtained"
       ],
       "cautions": [
-        "Portal feeds disagree on price for this same development (¥3,290万–¥3,490万 across agents) and on the walk to Nagareyama Station (10–12 min) — scored here on ¥3,290万 / 10 min",
-        "Seen on a portal index page — verify details on the listing link"
+        "Portal feeds disagree on price for this same development (¥3,290万–¥3,490万 across agents) and on the walk to Nagareyama Station (10–12 min) — scored here on ¥3,290万 / 12 min, the figure on the verified goo/SUUMO detail page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_chiba/12220/015.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/Z/21403260.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -88,39 +87,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/Z/21963531.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "h03",
-      "type": "house-new",
-      "district": "Mihara 4",
-      "districtJa": "美原4丁目",
-      "title": "New 3LDK, long-term quality housing — built-in garage, corner plot",
-      "priceMan": 3690,
-      "priceFrom": false,
-      "landM2": 89.86,
-      "buildingM2": 96.67,
-      "layout": "3LDK",
-      "station": "Edogawadai",
-      "stationJa": "江戸川台",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武アーバンパークライン",
-      "walkMin": 10,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Long-term quality housing （長期優良住宅） with performance-evaluation certificates",
-        "Corner plot on a 7.2m road with a built-in garage — the most house of the ¥3,690万 pair"
-      ],
-      "cautions": [
-        "Completion is scheduled for late Dec 2026 — this is a pre-completion sale, not a finished house",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/Z/21851349.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
@@ -285,12 +251,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Top price of the new-build set here, for a 14-minute walk",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists legal restrictions: Landscape Act (景観法) controls, a maximum-height limit, shadow restrictions, an Art. 22 zone and the land-development/fill regulation act — all within a Category-1 low-rise residential zone (50% coverage / 100% FAR), so extensions and rebuilds are tightly constrained"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6012/ensen/246/2246320.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/W/20682979.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -363,39 +329,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h11",
-      "type": "house-used",
-      "district": "Ka 2",
-      "districtJa": "加2丁目",
-      "title": "Used 4LDK (2012) — two lines usable, 13 min from Nagareyama-centralpark",
-      "priceMan": 3680,
-      "priceFrom": false,
-      "landM2": 101.97,
-      "buildingM2": 94.39,
-      "layout": "4LDK",
-      "station": "Nagareyama-centralpark",
-      "stationJa": "流山セントラルパーク",
-      "line": "Tsukuba Express",
-      "lineJa": "つくばエクスプレス",
-      "walkMin": 13,
-      "built": "Jan 2012",
-      "ageYears": 14,
-      "highlights": [
-        "The youngest sensibly-priced used house on the TX side: built Jan 2012, all rooms with storage, two balconies",
-        "Also 15 min from Nagareyama (Ryutetsu) — two lines usable; parks and green space all around"
-      ],
-      "cautions": [
-        "The listing notes the boundary is not formally indicated （境界非明示） — confirm boundaries before purchase",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z20170433/006110142/x1030Z20170433.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "h12",
       "type": "house-used",
       "district": "Kounosudai",
@@ -459,39 +392,6 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z20420027/010174178/x1030Z20420027.html",
         "verified": "detail",
         "infoDate": "2026-10-18"
-      }
-    },
-    {
-      "id": "h14",
-      "type": "house-used",
-      "district": "Nishi-Hatsuishi 1",
-      "districtJa": "西初石1丁目",
-      "title": "Used 4LDK (2005), renovated May 2026 — south-facing, all rooms 6帖+",
-      "priceMan": 3248,
-      "priceFrom": false,
-      "landM2": 120.72,
-      "buildingM2": 99.78,
-      "layout": "4LDK",
-      "station": "Edogawadai",
-      "stationJa": "江戸川台",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武アーバンパークライン",
-      "walkMin": 12,
-      "built": "May 2005",
-      "ageYears": 21,
-      "highlights": [
-        "Renovated May 2026 inside and out (kitchen, toilet, walls, floors, exterior paint)",
-        "South-facing with storage in every room; parking for 2; shops and a hospital within 15 min walk"
-      ],
-      "cautions": [
-        "Feeds disagree on price: several other agents list the same house at ¥3,298万; the detail page used here says ¥3,248万",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z21191232/127371001/x1030Z21191232.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
       }
     },
     {
@@ -591,6 +491,40 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
+    },
+    {
+      "id": "h18",
+      "type": "house-new",
+      "district": "Ka 4",
+      "districtJa": "加4丁目",
+      "title": "New 3LDK 8 minutes from Nagareyama Station",
+      "priceMan": 3990,
+      "priceFrom": false,
+      "landM2": 117.9,
+      "buildingM2": 95.22,
+      "layout": "3LDK",
+      "station": "Nagareyama",
+      "stationJa": "流山",
+      "line": "Ryutetsu Nagareyama Line",
+      "lineJa": "流鉄流山線",
+      "walkMin": 8,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Built October 2026, vacant and ready for immediate move-in",
+        "South-facing with housing performance-evaluation certificates (design and construction)",
+        "Free parking space; brokerage commission free per the listing"
+      ],
+      "cautions": [
+        "Propane gas, not city gas"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1074240103996/",
+        "verified": "detail",
+        "infoDate": "2026-10-31"
+      },
+      "isNew": true
     },
     {
       "id": "l01",
@@ -703,44 +637,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l04",
-      "type": "land",
-      "district": "Miyazono 3",
-      "districtJa": "宮園3丁目",
-      "title": "Corner plot by Nagareyama-centralpark — seller demolishes, vacant delivery",
-      "priceMan": 4880,
-      "priceFrom": false,
-      "landM2": 172.08,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Nagareyama-centralpark",
-      "stationJa": "流山セントラルパーク",
-      "line": "Tsukuba Express",
-      "lineJa": "つくばエクスプレス",
-      "walkMin": 11,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "Corner lot (角地) on 8m and 6m public roads in an established subdivision with tidy streets",
-        "Seller is the vendor (売主物件) — direct transaction possible",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り) — the listing states the seller will demolish and hand over vacant (解体更地渡し) and will bear the cost of a definitive survey (確定測量); confirm both in the contract, as delivery is by consultation (相談)",
-        "Miyazono district-plan rules apply: 1m+ wall setback, minimum lot size 135m², and restrictions on building use, height and fences/gates",
-        "Stated area is from the register (公簿)",
-        "Verified on the listing page (information date 2026-07-27)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/1418320002419/141832/x41418320002419.html",
-        "verified": "detail",
-        "infoDate": "2026-07-27"
-      }
-    },
-    {
       "id": "l05",
       "type": "land",
       "district": "Wakabadai",
@@ -816,194 +712,12 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l07",
-      "type": "land",
-      "district": "Minami-Nagareyama 7",
-      "districtJa": "南流山7丁目",
-      "title": "Small vacant plot 13 min from Minami-Nagareyama — priciest per tsubo here",
-      "priceMan": 3210,
-      "priceFrom": false,
-      "landM2": 63.94,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Minami-Nagareyama",
-      "stationJa": "南流山",
-      "line": "Tsukuba Express",
-      "lineJa": "つくばエクスプレス",
-      "walkMin": 13,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種中高層住居専用地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Vacant land handed over vacant (更地渡し) on a SE 6m road; two lines at Minami-Nagareyama (Tsukuba Express and JR Musashino, both 13 min)",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Very small 63.94m² plot — at ¥166.0万/tsubo this is the highest unit price in this collection; the price is for the station catchment, not the land size",
-        "The detail page lists only water and mains sewer under utilities (no city gas shown) — confirm gas availability and connection cost",
-        "Height-district and other restrictions noted (景観法, 高度地区, Art. 22 zone)",
-        "Verified on the listing page (information date 2026-10-20)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21605428/001253132/x1030Z21605428.html",
-        "verified": "detail",
-        "infoDate": "2026-10-20"
-      }
-    },
-    {
-      "id": "l08",
-      "type": "land",
-      "district": "Kounosudai",
-      "districtJa": "こうのす台",
-      "title": "Vacant subdivision lot by Edogawadai — utilities newly connected",
-      "priceMan": 2280,
-      "priceFrom": false,
-      "landM2": 128.4,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Edogawadai",
-      "stationJa": "江戸川台",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武アーバンパークライン",
-      "walkMin": 14,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "Vacant land (更地), flat, one of 3 lots in a small subdivision; water, sewer and gas newly connected (新規引込済み)",
-        "Cheapest headline price among the Edogawadai lots in this collection",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Headline area includes 3.3m² of private road recorded on the detail page — effective usable area is about 128.4m² (131.69m² headline minus 3.3m² private road); vehicle access uses a shared agreement passage (協定通路) giving a 4m entrance — confirm the passage agreement terms",
-        "Verified on the listing page (information date 2026-10-05)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/1255640000189/125564/x41255640000189.html",
-        "verified": "detail",
-        "infoDate": "2026-10-05"
-      }
-    },
-    {
-      "id": "l09",
-      "type": "land",
-      "district": "Kounosudai",
-      "districtJa": "こうのす台",
-      "title": "Large Kounosudai lot at the lowest ¥/tsubo of the subdivision — big private-road share",
-      "priceMan": 2880,
-      "priceFrom": false,
-      "landM2": 139.6,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Edogawadai",
-      "stationJa": "江戸川台",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武アーバンパークライン",
-      "walkMin": 14,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "Vacant land (更地), flat; water, sewer and gas newly connected",
-        "Park about 160m away",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Headline area includes 47.9m² of private road recorded on the detail page — effective usable area is about 139.6m² (187.53m² headline minus 47.9m² private road), so the effective ¥/tsubo is well above the headline figure; vehicle access uses a shared agreement passage (協定通路) giving a 4m entrance — confirm the passage agreement and the exact private-road split before purchase",
-        "Verified on the listing page (information date 2026-10-05)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/1255640000191/125564/x41255640000191.html",
-        "verified": "detail",
-        "infoDate": "2026-10-05"
-      }
-    },
-    {
-      "id": "l10",
-      "type": "land",
-      "district": "Kounosudai",
-      "districtJa": "こうのす台",
-      "title": "Largest Kounosudai lot, 208m² headline — private-road share inside the area",
-      "priceMan": 3180,
-      "priceFrom": false,
-      "landM2": 161.4,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Edogawadai",
-      "stationJa": "江戸川台",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武アーバンパークライン",
-      "walkMin": 14,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "Vacant land (更地), flat; water, sewer and gas newly connected",
-        "Largest headline area of the three-lot Kounosudai subdivision",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Headline area includes 47.5m² of private road recorded on the detail page — effective usable area is about 161.4m² (208.91m² headline minus 47.5m² private road); vehicle access uses a shared agreement passage (協定通路) giving a 4m entrance — confirm the passage agreement and the exact private-road split before purchase",
-        "Verified on the listing page (information date 2026-10-05)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/1255640000190/125564/x41255640000190.html",
-        "verified": "detail",
-        "infoDate": "2026-10-05"
-      }
-    },
-    {
-      "id": "l11",
-      "type": "land",
-      "district": "Miyazono 2",
-      "districtJa": "宮園2丁目",
-      "title": "49-tsubo vacant-delivery plot in Miyazono, just under the ¥5,000万 cap",
-      "priceMan": 4990,
-      "priceFrom": false,
-      "landM2": 165.08,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Nagareyama-centralpark",
-      "stationJa": "流山セントラルパーク",
-      "line": "Tsukuba Express",
-      "lineJa": "つくばエクスプレス",
-      "walkMin": 14,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "165.08m² (about 49 tsubo) plot on a NW 6m road with 11.8m frontage in a quiet low-rise street",
-        "Hiregasaki station (Ryutetsu) is also 12 min on foot",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Priced at ¥4,990万 — right at the top of this collection's budget, with a high ¥99.9万/tsubo",
-        "Current status is listed only as 'other' (現況：その他) while the listing states vacant delivery (更地渡し) — confirm the handover state in the contract",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21534121/025659000/x1030Z21534121.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "l12",
       "type": "land",
       "district": "Minami-Nagareyama 7",
       "districtJa": "南流山7丁目",
       "title": "Regular-shaped plot at the edge of the Minami-Nagareyama catchment — survey pending",
-      "priceMan": 4000,
+      "priceMan": 3900,
       "priceFrom": false,
       "landM2": 111.0,
       "buildingM2": null,
@@ -1032,7 +746,7 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21696139/006110142/x1030Z21696139.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-25"
       }
     }
   ],

@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Tokorozawa",
     "editionJa": "所沢",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Tokorozawa City, Saitama",
     "areaJa": "埼玉県所沢市"
   },
@@ -186,39 +186,6 @@
       "source": {
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/saitama/tokorozawa-city/list/?page=3",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h06",
-      "type": "house-new",
-      "district": "Hoshinomiya 2",
-      "districtJa": "星の宮2丁目",
-      "title": "New 3LDK+S on a very compact plot (Mitsui Rehouse)",
-      "priceMan": 4480,
-      "priceFrom": false,
-      "landM2": 54.67,
-      "buildingM2": 93.97,
-      "layout": "3LDK+S",
-      "station": "Nishi-Tokorozawa",
-      "stationJa": "西所沢",
-      "line": "Seibu Ikebukuro Line",
-      "lineJa": "西武池袋線",
-      "walkMin": 9,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Handled by Mitsui Rehouse",
-        "Two units, 3LDK and 3LDK+S"
-      ],
-      "cautions": [
-        "Very small plot (54.7–55.1m² across the two units) — space is vertical",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6001/ensen/289/2289010.html",
         "verified": "index",
         "infoDate": "2026-10-23"
       }
@@ -489,8 +456,8 @@
       "type": "house-used",
       "district": "Wakasa 4",
       "districtJa": "若狭4丁目",
-      "title": "Used 3SDK (1969) at ¥580万 — a no-rebuild special, experts only",
-      "priceMan": 580,
+      "title": "Used 3SDK (1969) at ¥480万 — a no-rebuild special, experts only",
+      "priceMan": 480,
       "priceFrom": false,
       "landM2": 80.7,
       "buildingM2": 72.31,
@@ -514,42 +481,10 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z21742313/181220001/x1030Z21742313.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-01"
       },
-      "majorCautions": 2
-    },
-    {
-      "id": "h16",
-      "type": "house-used",
-      "district": "Yamaguchi",
-      "districtJa": "大字山口",
-      "title": "Used 4LDK built 2021 on a 139m² plot — Sayama line",
-      "priceMan": 3380,
-      "priceFrom": false,
-      "landM2": 139.36,
-      "buildingM2": 110.95,
-      "layout": "4LDK",
-      "station": "Shimoyamaguchi",
-      "stationJa": "下山口",
-      "line": "Seibu Sayama Line",
-      "lineJa": "西武狭山線",
-      "walkMin": 13,
-      "built": "Aug 2021",
-      "ageYears": 5,
-      "highlights": [
-        "Young for a used house (built Aug 2021) with a big 139.4m² plot",
-        "4LDK with 111.0m² of floor area"
-      ],
-      "cautions": [
-        "The plot fronts a 4m private road to the south and the listing records 136m² of private-road area — confirm the plot's private-road share/burden with the agent",
-        "Currently occupied (現況 居住中) — confirm handover timing with the agent"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/4/11208/9500077738/950/x49500077738.html",
-        "verified": "detail",
-        "infoDate": "2026-10-12"
-      }
+      "majorCautions": 2,
+      "priceDropMan": 100
     },
     {
       "id": "l01",
@@ -583,39 +518,6 @@
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11208/030Z21426348/010174183/x1030Z21426348.html",
         "verified": "detail",
         "infoDate": "2026-10-18"
-      }
-    },
-    {
-      "id": "l02",
-      "type": "land",
-      "district": "Kami-Yasumatsu",
-      "districtJa": "大字上安松",
-      "title": "Regular-shaped lot, utilities connected, vacant-land handover",
-      "priceMan": 3280,
-      "priceFrom": false,
-      "landM2": 136.39,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Shin-Akitsu",
-      "stationJa": "新秋津",
-      "line": "JR Musashino Line",
-      "lineJa": "JR武蔵野線",
-      "walkMin": 10,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 80%",
-      "highlights": [
-        "Regular-shaped plot (整形地), demolition-to-vacant handover",
-        "Water and sewer already connected",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/11208/030Z20957900/010100106/x1030Z20957900.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
       }
     },
     {
@@ -765,7 +667,7 @@
       "type": "land",
       "district": "Kami-Arai 3",
       "districtJa": "上新井3丁目",
-      "title": "Low-rise-zone lot 6 minutes from Kotesashi — condition status unclear",
+      "title": "Low-rise-zone lot 6 minutes from Kotesashi — building condition attached",
       "priceMan": 3949.5,
       "priceFrom": false,
       "landM2": 109.06,
@@ -782,14 +684,14 @@
       "coverageFar": "60% / 100%",
       "highlights": [],
       "cautions": [
-        "Portals conflict on this lot: goo says building condition attached (建築条件付), atHome says none — and coverage figures differ too. Confirm with the seller before anything else",
-        "Seen on a portal index page — verify details on the listing link"
+        "Building condition IS attached (建築条件付) — the seller-side detail page settles the portal conflict in goo's favour; you must build with the seller's designated builder",
+        "Corner lot (north 4.1m and west 6m public roads) in a quasi-fire-prevention zone (準防火地域); the price includes a 0.97m² garbage-area share and the Dai-2 Kami-Arai district plan (第二上新井地区地区計画) applies"
       ],
       "source": {
         "name": "goo住宅・不動産 / atHome",
-        "url": "https://house.ocn.ne.jp/sp/tochi/special/4002/area_saitama/11208/024.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11208/1040200009252/104020/x41040200009252.html",
+        "verified": "detail",
+        "infoDate": "2026-07-25"
       }
     },
     {
@@ -815,16 +717,12 @@
       "highlights": [
         "No building condition (建築条件なし) — choose your own builder"
       ],
-      "cautions": [
-        "The atHome index crawl behind this row is ~43 days old — the stalest in this collection; verify availability first",
-        "Zoning was not shown on the index row",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
+      "cautions": [],
       "source": {
         "name": "atHome",
-        "url": "https://www.athome.co.jp/tochi/saitama/tokorozawa-city/list/page9/?RND_TIME_PRM=26454&RND_MODE=0",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11208/9500077365/950/x49500077365.html",
+        "verified": "detail",
+        "infoDate": "2026-06-08"
       }
     },
     {
@@ -890,14 +788,16 @@
       "cautions": [
         "At the 15-minute walk limit of this collection",
         "Sibling lots in the same development are listed at ¥3,990万 and ¥4,290万 — confirm which lot this price belongs to",
-        "Seen on a portal index page — verify details on the listing link"
+        "The registered land category is still farmland (地目: 畱) — the land-category change is at the buyer's cost",
+        "If the subdivision survey changes the measured area, the price is NOT adjusted (増減精算なし) — the buyer carries the survey risk; a ~0.46m² garbage-area share is also included"
       ],
       "source": {
         "name": "goo住宅・不動産 / atHome",
-        "url": "https://house.ocn.ne.jp/sp/tochi/area_saitama/11208/075.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11208/1040320014211/104032/x41040320014211.html",
+        "verified": "detail",
+        "infoDate": "2026-07-29"
+      },
+      "majorCautions": 1
     },
     {
       "id": "l11",

@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Ichikawa",
     "editionJa": "市川",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Ichikawa City, Chiba",
     "areaJa": "千葉県市川市"
   },
@@ -68,7 +68,7 @@ window.TADAIMA_DATA = {
       "district": "Oonocho 4",
       "districtJa": "大野町4丁目",
       "title": "New 2LDK+2S — at the 15-minute walk limit from Ichikawa-Ono",
-      "priceMan": 3880,
+      "priceMan": 3480,
       "priceFrom": false,
       "landM2": 100.97,
       "buildingM2": 97.29,
@@ -95,9 +95,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12203/030/W/20995841.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-31"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 400
     },
     {
       "id": "h03",
@@ -239,36 +240,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h07",
-      "type": "house-used",
-      "district": "Oonocho 4",
-      "districtJa": "大野町4丁目",
-      "title": "Used 4LDK (2020) — 21.5-mat LDK on a 122.9m² plot",
-      "priceMan": 4198,
-      "priceFrom": false,
-      "landM2": 122.94,
-      "buildingM2": 103.68,
-      "layout": "4LDK",
-      "station": "Ichikawa-Ono",
-      "stationJa": "市川大野",
-      "line": "JR Musashino Line",
-      "lineJa": "JR武蔵野線",
-      "walkMin": 11,
-      "built": "Mar 2020",
-      "ageYears": 6,
-      "highlights": [
-        "Big, recent package: 103.7m² house on 122.9m², SE frontage on a 6m public road",
-        "Vacant, immediate viewing; schools within walking distance"
-      ],
-      "cautions": [],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21788815/113050001/x1030Z21788815.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "h08",
       "type": "house-used",
       "district": "Kokufudai 6",
@@ -332,41 +303,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21310953/146078001/x1030Z21310953.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h10",
-      "type": "house-used",
-      "district": "Kokufudai 5",
-      "districtJa": "国府台5丁目",
-      "title": "Used 5LDK (1998) by Sekisui House, fully renovated — big plateau plot",
-      "priceMan": 4180,
-      "priceFrom": false,
-      "landM2": 141.42,
-      "buildingM2": 113.8,
-      "layout": "5LDK",
-      "station": "Yagiri",
-      "stationJa": "矢切",
-      "line": "Hokuso Line",
-      "lineJa": "北総線",
-      "walkMin": 15,
-      "built": "Oct 1998",
-      "ageYears": 28,
-      "highlights": [
-        "Light-steel Sekisui House build, full interior renovation (kitchen, bath, washstand, toilets, wallpaper, water heater)",
-        "Large 141.4m² south-road plot and 113.8m² house; parking for 2"
-      ],
-      "cautions": [
-        "1998 structure beneath the renovation — check what the works actually covered and the frame's condition",
-        "At the 15-minute walk limit; plateau edge — check slope/sediment zones",
-        "Scenic-district （風致地区） and Landscape Act （景観法） restrictions are listed in the detail page's legal-restrictions field",
-        "Drainage is a septic tank （浄化槽） per the detail page"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21577411/184772001/x1030Z21577411.html",
         "verified": "detail",
         "infoDate": "2026-10-23"
       }
@@ -651,50 +587,12 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l02",
-      "type": "land",
-      "district": "Suwada 2",
-      "districtJa": "須和田2丁目",
-      "title": "Vacant Suwada plot by Ichikawa-Mama — a fifth of the headline area is setback",
-      "priceMan": 2940,
-      "priceFrom": false,
-      "landM2": 66.4,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Ichikawa-Mama",
-      "stationJa": "市川真間",
-      "line": "Keisei Main Line",
-      "lineJa": "京成本線",
-      "walkMin": 14,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 160%",
-      "highlights": [
-        "Vacant land, vacant delivery (更地渡し) — no demolition cost",
-        "City gas and water listed",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Headline 86.57m² includes about 20.17m² of assumed setback / private-road area — effective buildable area is only about 66.40m², so the effective ¥/tsubo is far higher than the headline figure",
-        "Only road frontage is a narrow 2.7m road on the NW side — check the Building Standards Act road status and rebuilding position carefully",
-        "Sewer is a septic tank (浄化槽), not mains drainage",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21842490/000389230/x1030Z21842490.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "l03",
       "type": "land",
       "district": "Sugano 2",
       "districtJa": "菅野2丁目",
       "title": "Small vacant corner lot 7 minutes from Sugano — setback inside the headline area",
-      "priceMan": 2980,
+      "priceMan": 2680,
       "priceFrom": false,
       "landM2": 43.3,
       "buildingM2": null,
@@ -723,8 +621,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21478826/006050B04/x1030Z21478826.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-02"
+      },
+      "priceDropMan": 300
     },
     {
       "id": "l04",

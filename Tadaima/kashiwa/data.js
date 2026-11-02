@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Kashiwa",
     "editionJa": "柏",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Kashiwa City, Chiba",
     "areaJa": "千葉県柏市"
   },
@@ -35,7 +35,7 @@ window.TADAIMA_DATA = {
       "district": "Tsukushigaoka 2",
       "districtJa": "つくしが丘2丁目",
       "title": "New 4LDK — 19+ tatami LDK, south road, 8 min to Shin-Kashiwa",
-      "priceMan": 4280,
+      "priceMan": 3980,
       "priceFrom": false,
       "landM2": 98.87,
       "buildingM2": 97.7,
@@ -54,14 +54,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Multiple feeds list the same development at slightly different walk times (8-10 min) — verify on site",
-        "Completion date not confirmed on the index page"
+        "Detail page dates completion to Oct 2026 with handover in late Nov 2026, yet the status field still reads unfinished (未完成) — confirm the building is actually complete before contracting"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_chiba/12217.html?p=5",
-        "verified": "index",
-        "infoDate": "2026-10-22"
-      }
+        "url": "https://house.goo.ne.jp/buy/bh/detail/4/12217/1448780015182/144878/x41448780015182.html",
+        "verified": "detail",
+        "infoDate": "2026-11-02"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h02",
@@ -137,7 +138,7 @@ window.TADAIMA_DATA = {
       "district": "Sakasai 4",
       "districtJa": "逆井4丁目",
       "title": "New 4LDK — design + construction performance certified, Sakasai 7 min",
-      "priceMan": 3399,
+      "priceMan": 3199,
       "priceFrom": false,
       "landM2": 97.66,
       "buildingM2": 96.88,
@@ -155,15 +156,17 @@ window.TADAIMA_DATA = {
         "City gas, parking space"
       ],
       "cautions": [
-        "Same development appeared at ¥3,699万 in an older feed — price changed between feeds, confirm current price",
-        "Two-house development; figures are for the listed house type"
+        "Two-house development; figures are for the listed house type",
+        "Detail page shows the plot includes 28.03m2 of private road and access is via a south 4m private road — confirm the private-road share/burden and passage rights",
+        "Listing remarks cite the Landscape Act (景観法) and the Residential Land Development / Specified Fill Regulation Act (宅地造成及び特定盛土等規制法, consent obtained) among the applicable restrictions"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_bh/area_chiba/12217/004.html",
-        "verified": "index",
-        "infoDate": "2026-10-22"
-      }
+        "url": "https://house.goo.ne.jp/buy/bh/detail/4/12217/1226010045482/122601/x41226010045482.html",
+        "verified": "detail",
+        "infoDate": "2026-11-02"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h05",
@@ -190,12 +193,14 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "District given only as Sakasai (no chome) on the index page",
-        "Sister house in the same development is a 3LDK at ¥4,390万 on a larger plot — do not confuse the two"
+        "Sister house in the same development is a 3LDK at ¥4,390万 on a larger plot — do not confuse the two",
+        "Not yet built — detail page gives completion as scheduled mid-Nov 2026 with handover by consultation; the ¥4,190万 buys a house that does not exist yet",
+        "The plot straddles two zoning districts (第一種低層 + 第一種住居) and a height district (高度地区) applies, per the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_bh/area_chiba/12217/004.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12217/030/Z/21574328.html",
+        "verified": "detail",
         "infoDate": "2026-10-22"
       }
     },
@@ -224,14 +229,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "One feed gives Kita-Kashiwa as 52 min walk / bus access — this house is a TX-side location, not a Joban-side one",
-        "Two-house development at the same price; individual plot differences unverified"
+        "Detail page's restriction list includes the Cultural Properties Protection Act (文化財保護法) alongside the Landscape Act and fill-regulation acts — buried-cultural-property procedures may apply to future excavation or rebuilding"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6006/ensen/197/2197120.html",
-        "verified": "index",
-        "infoDate": "2026-10-22"
-      }
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12217/030/Z/21113432.html",
+        "verified": "detail",
+        "infoDate": "2026-10-20"
+      },
+      "majorCautions": 1
     },
     {
       "id": "h07",
@@ -257,14 +263,14 @@ window.TADAIMA_DATA = {
         "Elementary school 10 min, junior high 4 min per listing"
       ],
       "cautions": [
-        "Completion was listed as scheduled Oct 2026 — confirm it is finished before viewing",
-        "Building (90.25m2) is modest relative to the 131.89m2 plot"
+        "Building (90.25m2) is modest relative to the 131.89m2 plot",
+        "Detail page updated 2026-10-24 still shows the house as unfinished (未完成) with handover in early Nov 2026 — the Oct 2026 completion has slipped past its scheduled month; confirm actual completion before viewing"
       ],
       "source": {
         "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/shinchiku/theme/14101/chiba/kashiwa-city/list/",
-        "verified": "index",
-        "infoDate": "2026-10-22"
+        "url": "https://house.goo.ne.jp/buy/bh/detail/4/12217/1478760008889/147876/x41478760008889.html",
+        "verified": "detail",
+        "infoDate": "2026-10-24"
       }
     },
     {
@@ -335,40 +341,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h10",
-      "type": "house-used",
-      "district": "Toyoshiki",
-      "districtJa": "豊四季",
-      "title": "Used 3LDK (2003) — fully reformed Oct 2026, south road, Toyoshiki 10 min",
-      "priceMan": 4180,
-      "priceFrom": false,
-      "landM2": 100.04,
-      "buildingM2": 96.75,
-      "layout": "3LDK",
-      "station": "Toyoshiki",
-      "stationJa": "豊四季",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 10,
-      "built": "Jan 2003",
-      "ageYears": 23,
-      "highlights": [
-        "Full reform completed Oct 2026: kitchen, bath, toilets replaced; interior and exterior/roof done",
-        "South road frontage, all rooms south-facing in the second feed",
-        "Also 15 min walk to Nagareyama-Otakanomori on the TX"
-      ],
-      "cautions": [
-        "Front road is narrow — 3.5m width with 10.8m frontage per detail page",
-        "23-year-old wooden structure; reform is cosmetic/equipment-level, structural condition unverified"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21995629/178996004/x1030Z21995629.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "h11",
       "type": "house-used",
       "district": "Hananoi",
@@ -427,13 +399,14 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Building Control Act Article 22 zone noted in the remarks (roof/fire-related construction rules)",
-        "Priced below many older houses nearby — confirm occupancy/vacancy status and reason for sale"
+        "Priced below many older houses nearby — confirm occupancy/vacancy status and reason for sale",
+        "Detail page lists a setback requirement (セットバック要) — part of the 165.52m2 plot is subject to road setback"
       ],
       "source": {
         "name": "OCN不動産 (goo feed)",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3005/area_chiba/12217.html",
-        "verified": "index",
-        "infoDate": "2026-10-22"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z20651465/116518189/x1030Z20651465.html",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
       }
     },
     {
@@ -495,13 +468,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "20 years old — post-1981 seismic standard, but structural inspection status unverified",
-        "Parking is 1 car and size-dependent per listing"
+        "Parking is 1 car and size-dependent per listing",
+        "Detail page states the MLIT-designated defect insurance (瑕疵保険) can be used and a broker defect warranty applies — but a completed structural inspection is still not stated, so the inspection caution stands",
+        "Detail page rates the house's energy performance below the standard (省エネ基準未達成)"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_chiba/12217.html",
-        "verified": "index",
-        "infoDate": "2026-10-22"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21741387/168029009/x1030Z21741387.html",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
       }
     },
     {
@@ -529,12 +504,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Parking for 2 is size-dependent per listing",
-        "Index-level data only — defect-liability terms unverified"
+        "Detail page confirms a completion-inspection certificate (建築確認完了検査済証) exists and a broker's own defect warranty (不動産会社独自の瑕疵保証) is included — note this is the broker's scheme, not the MLIT-designated insurance; the Aug 2026 reform covered water fixtures (kitchen/bath/toilet) and interior walls/rooms only"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_chiba/12217.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21321194/188279001/x1030Z21321194.html",
+        "verified": "detail",
         "infoDate": "2026-10-22"
       }
     },
@@ -563,13 +538,13 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Right at the 15-minute walk limit — any route difference pushes it over",
-        "Index-level data only — condition and defect terms unverified"
+        "The Apr 2026 reform on the detail page was limited to the kitchen and wallpaper — not a full renovation; the rest of the 2013 interior is original"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_chiba/12217.html",
-        "verified": "index",
-        "infoDate": "2026-10-22"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21013888/168029009/x1030Z21013888.html",
+        "verified": "detail",
+        "infoDate": "2026-10-23"
       }
     },
     {
@@ -578,7 +553,7 @@ window.TADAIMA_DATA = {
       "district": "Toyojumi 4",
       "districtJa": "豊住4丁目",
       "title": "Used 4SLDK (1992) — Sumitomo Forestry build, reformed, 19-tatami LDK, Shin-Kashiwa 9 min",
-      "priceMan": 3199,
+      "priceMan": 2980,
       "priceFrom": false,
       "landM2": 97.87,
       "buildingM2": 96.46,
@@ -597,14 +572,16 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Same house is listed by many brokers at ¥3,199万, ¥3,280万 and ¥3,480万 in different feeds, with walk times of 9 and 10 min — price and terms must be confirmed with one broker",
-        "34 years old (1992, post-1981 standard) — age-related wear beyond the reform scope is unverified"
+        "34 years old (1992, post-1981 standard) — age-related wear beyond the reform scope is unverified",
+        "Two other live goo index feeds list this identical house at ¥2,980万 — ¥219万 below this detail page's ¥3,199万 — suggesting a recent price cut that has not reached every feed; confirm the current price before relying on either figure"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_chiba/12217/050.html",
-        "verified": "index",
-        "infoDate": "2026-10-22"
-      }
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21210491/168029009/x1030Z21210491.html",
+        "verified": "detail",
+        "infoDate": "2026-11-02"
+      },
+      "priceDropMan": 219
     },
     {
       "id": "l01",
@@ -996,7 +973,7 @@ window.TADAIMA_DATA = {
       "district": "Toyoshiki",
       "districtJa": "豊四季",
       "title": "108m² vacant plot 13 minutes from Toyoshiki — setback required, irregular shape",
-      "priceMan": 1480,
+      "priceMan": 1280,
       "priceFrom": false,
       "landM2": 108.94,
       "buildingM2": null,
@@ -1021,8 +998,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21836681/001616031/x1030Z21836681.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-02"
+      },
+      "priceDropMan": 200
     }
   ],
   "scoring": {

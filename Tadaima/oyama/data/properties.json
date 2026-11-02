@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Oyama",
     "editionJa": "小山",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Oyama City, Tochigi",
     "areaJa": "栃木県小山市"
   },
@@ -99,8 +99,8 @@
       "title": "New 4LDK (Five Is Home) — all rooms south-facing, SW road",
       "priceMan": 2980,
       "priceFrom": false,
-      "landM2": 228.25,
-      "buildingM2": 112.05,
+      "landM2": 202.17,
+      "buildingM2": 107.92,
       "layout": "4LDK",
       "station": "Mamada",
       "stationJa": "間々田",
@@ -111,7 +111,7 @@
       "ageYears": 0,
       "highlights": [
         "All rooms face south on a south-west road; near the old Route 4 for car access",
-        "Two units; plots run 202.17–228.25m² and buildings 107.92–112.05m² — figures here are the larger unit"
+        "Last remaining unit (1号棟): plot 202.17m², building 107.92m² — the larger unit has sold"
       ],
       "cautions": [
         "Portal feeds disagree on the walk (12 min here, 13–14 min on LIFULL HOME'S) — verify on the ground",
@@ -121,7 +121,7 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/21468280.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-11-02"
       },
       "majorCautions": 1
     },
@@ -337,7 +337,7 @@
       "district": "Akatsuki 2",
       "districtJa": "暁2丁目",
       "title": "Used 4DK (1978) at ¥480万, 6 min from Mamada — disclosure items, sold as-is",
-      "priceMan": 480,
+      "priceMan": 420,
       "priceFrom": false,
       "landM2": 76.45,
       "buildingM2": 74.41,
@@ -363,7 +363,7 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/4/09208/1421600002725/142160/x41421600002725.html",
         "verified": "detail",
-        "infoDate": "2026-10-16"
+        "infoDate": "2026-10-26"
       },
       "majorCautions": 2
     },
@@ -430,36 +430,6 @@
         "name": "OCN不動産",
         "url": "https://house.ocn.ne.jp/sp/ikkodate/area_tochigi/09208/024.html",
         "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h13",
-      "type": "house-used",
-      "district": "Mamada",
-      "districtJa": "大字間々田",
-      "title": "Used 6DK (1982) on a corner plot — 11 min from Mamada",
-      "priceMan": 1400,
-      "priceFrom": false,
-      "landM2": 198,
-      "buildingM2": 116.76,
-      "layout": "6DK",
-      "station": "Mamada",
-      "stationJa": "間々田",
-      "line": "JR Utsunomiya Line",
-      "lineJa": "JR宇都宮線",
-      "walkMin": 11,
-      "built": "Oct 1982",
-      "ageYears": 44,
-      "highlights": [
-        "Large 116.8m² house on a 198m² corner plot in a quiet residential street",
-        "Supermarket within 800m; carport fitted"
-      ],
-      "cautions": [],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/4/09208/1546220000122/154622/x41546220000122.html",
-        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -565,49 +535,6 @@
         "verified": "index",
         "infoDate": "2026-10-23"
       }
-    },
-    {
-      "id": "l02",
-      "type": "land",
-      "district": "Shiroyama-cho 1",
-      "districtJa": "城山町1丁目",
-      "title": "Large 350m² commercial-zone plot 9 minutes from Oyama station",
-      "priceMan": 1910,
-      "priceFrom": false,
-      "landM2": 350.72,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Oyama",
-      "stationJa": "小山",
-      "line": "JR Utsunomiya Line",
-      "lineJa": "JR宇都宮線",
-      "walkMin": 9,
-      "built": null,
-      "ageYears": null,
-      "zoning": "商業地域",
-      "coverageFar": "80% / 400%",
-      "highlights": [
-        "Very large 350.7m² plot for the station district",
-        "Vacant (更地), immediate handover (即引渡し可), mains sewer",
-        "No building conditions",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Commercial zoning (商業地域) in the station-front district — central and flexible, but not a quiet residential street",
-        "Portals disagree on the walk: 7 min on one goo feed, 9 min on another — 9 min used here",
-        "Buried cultural property: an enquiry to Oyama City about trial excavation is required before any digging (文化財保護法 listed in 法令等制限)",
-        "Plot is currently leased out to a farm-machinery shop as a car park, despite the listing showing 更地 / immediate handover",
-        "Water supply must be newly drawn into the plot (shared or individual connection required)",
-        "An unusable old well sits on the plot",
-        "Landscape Act and quasi-fire zone (準防火地域) restrictions also listed"
-      ],
-      "source": {
-        "name": "OCN不動産 (goo住宅・不動産)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1176020012383/117602/x41176020012383.html",
-        "verified": "detail",
-        "infoDate": "2026-10-12"
-      },
-      "majorCautions": 2
     },
     {
       "id": "l03",
@@ -795,78 +722,6 @@
       }
     },
     {
-      "id": "l08",
-      "type": "land",
-      "district": "Akatsuki 3",
-      "districtJa": "暁3丁目",
-      "title": "Seller-listed 198m² plot 6 minutes from Mamada, immediate handover",
-      "priceMan": 630,
-      "priceFrom": false,
-      "landM2": 198.34,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Mamada",
-      "stationJa": "間々田",
-      "line": "JR Utsunomiya Line",
-      "lineJa": "JR宇都宮線",
-      "walkMin": 6,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Seller listing (売主) — no agency commission in principle",
-        "Vacant (更地), immediate handover (即引渡し可), about 60 tsubo",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Landscape Act (景観法) included in the page's 法令等制限"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1222800003758/122280/x41222800003758.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "l09",
-      "type": "land",
-      "district": "Otome 1",
-      "districtJa": "乙女1丁目",
-      "title": "Low-rise-zone corner plot 11 minutes from Mamada — building condition attached",
-      "priceMan": 1080,
-      "priceFrom": false,
-      "landM2": 229.41,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Mamada",
-      "stationJa": "間々田",
-      "line": "JR Utsunomiya Line",
-      "lineJa": "JR宇都宮線",
-      "walkMin": 11,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 80%",
-      "highlights": [
-        "Corner lot (角地) on a south road in a low-rise residential zone",
-        "Vacant (更地), mains sewer"
-      ],
-      "cautions": [
-        "Building condition attached (建築条件付) — builder is designated by the seller",
-        "Plot lies in the Otome Kitaura buried cultural-property site (文化財保護法・乙女北浦遺跡) — trial excavation may be required",
-        "Land is registered as farmland (地目：畑) — Farmland Act procedures apply; Landscape Act also listed"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1176020017867/117602/x41176020017867.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      },
-      "majorCautions": 1
-    },
-    {
       "id": "l10",
       "type": "land",
       "district": "Minami-Otome 1",
@@ -936,43 +791,6 @@
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/09208/030Z20809183/141466001/x1030Z20809183.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "l12",
-      "type": "land",
-      "district": "Mamada",
-      "districtJa": "大字間々田",
-      "title": "Compact 100m² low-rise plot at Mamada's 15-minute limit — building on site",
-      "priceMan": 430,
-      "priceFrom": false,
-      "landM2": 100.43,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Mamada",
-      "stationJa": "間々田",
-      "line": "JR Utsunomiya Line",
-      "lineJa": "JR宇都宮線",
-      "walkMin": 15,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 60%",
-      "highlights": [
-        "Cheapest Mamada-side lot; about 30 tsubo in a quiet low-rise zone",
-        "Mamada Elementary about 7 minutes on foot per the listing; no building conditions",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
-        "Tight low-rise controls (40% coverage / 60% FAR) on a small 100.43m² plot — house plus parking will be tight",
-        "At the brief's walk limit (15 min)"
-      ],
-      "source": {
-        "name": "OCN不動産 (goo住宅・不動産)",
-        "url": "https://house.goo.ne.jp/sp/tochi/detail/4/1421580001658/142158/x41421580001658.html",
         "verified": "detail",
         "infoDate": "2026-10-23"
       }

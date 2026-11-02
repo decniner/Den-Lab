@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Tachikawa",
     "editionJa": "立川",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Tachikawa City, Tokyo",
     "areaJa": "東京都立川市"
   },
@@ -55,7 +55,8 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Price is 'from' — units run to ¥5,480万 and only the cheapest fall within this collection's brief",
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Seen on a portal index page — verify details on the listing link",
+        "LIFULL HOME'S currently lists this same 4-unit Sakae-cho 2 development (land 99.43–102m², as 'LiGNAGE NEX-G Tachikawa Sakae-cho 2-chome Phase 1') at ¥4,980万–¥5,680万 — ¥100万 above the ¥4,880万–¥5,480万 range recorded here from the OCN/goo index; verify current pricing on the listing"
       ],
       "source": {
         "name": "OCN不動産",
@@ -89,12 +90,12 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Compact 68.1m² building for the price",
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page notes an 8.69m² private-road burden (私道負担) attached to the plot — registered area is 85.28m² vs 85.21m² measured"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/new-ikkodate/tokyo/tachikawa-city.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/13202/030/Z/20562560.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -122,7 +123,8 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Seen on a portal index page — verify details on the listing link",
+        "LIFULL HOME'S currently lists this 2-unit Sunagawa-cho 6 development (land 124.9m², Tamagawa-Josui 15 min) at ¥5,090万 — ¥300万 above the ¥4,790万 recorded here; the recorded unit may have sold or been repriced, so verify availability and price on the listing"
       ],
       "source": {
         "name": "OCN不動産",
@@ -245,20 +247,19 @@ window.TADAIMA_DATA = {
       "stationJa": "武蔵砂川",
       "line": "Seibu Haijima Line",
       "lineJa": "西武拝島線",
-      "walkMin": 12,
+      "walkMin": 7,
       "built": "Oct 2021",
       "ageYears": 5,
       "highlights": [
         "Nearly new (built Oct 2021) on a generous 115m² plot"
       ],
       "cautions": [
-        "Portal feeds disagree on the walk (7 vs 12 min) — scored here on 12; verify on the ground",
-        "Seen on a portal index page — verify details on the listing link"
+        "Portal feeds still disagree on the walk — the verified detail page says 7 min, another feed says 10 min; scored here on the detail page's 7 min, verify on the ground"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3008/area_tokyo/13202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13202/030Z20997439/144516001/x1030Z20997439.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -286,12 +287,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Compact 2LDK / 67.8m² building",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page lists a 10m² private-road area (私道面積) within the plot"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3008/area_tokyo/13202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13202/030Z21485611/006050687/x1030Z21485611.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -317,13 +318,12 @@ window.TADAIMA_DATA = {
         "Effectively new (built Jan 2024) at a used-house price"
       ],
       "cautions": [
-        "Small 58.2m² building despite the recent build — priced for condition and location, not space",
-        "Seen on a portal index page — verify details on the listing link"
+        "Small 58.2m² building despite the recent build — priced for condition and location, not space"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3008/area_tokyo/13202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13202/030Z20552313/084132110/x1030Z20552313.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -350,46 +350,12 @@ window.TADAIMA_DATA = {
         "Also 15 min from Tamagawa-Josui (Seibu Haijima)"
       ],
       "cautions": [
-        "The structure is 30 years old despite the renovation — check what the works actually covered",
-        "Seen on a portal index page — verify details on the listing link"
+        "Renovation completed Apr 2026 per the detail page — kitchen, bath and toilet replaced, all-room interior refit and exterior-wall work; the 1996 structure itself is unchanged"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3008/area_tokyo/13202.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h11",
-      "type": "house-used",
-      "district": "Hagoromo-cho 3",
-      "districtJa": "羽衣町3丁目",
-      "title": "Used 4LDK (1995) — roof/exterior renovated 2024, big plot",
-      "priceMan": 4480,
-      "priceFrom": false,
-      "landM2": 116.33,
-      "buildingM2": 92.73,
-      "layout": "4LDK",
-      "station": "Yagawa",
-      "stationJa": "矢川",
-      "line": "JR Nambu Line",
-      "lineJa": "JR南武線",
-      "walkMin": 10,
-      "built": "May 1995",
-      "ageYears": 31,
-      "highlights": [
-        "Roof and exterior renovated Jun 2024",
-        "Large plot (116.3m²) and house (92.7m²) for the price; also 14 min from Nishi-Kunitachi"
-      ],
-      "cautions": [
-        "1995 structure — the 2024 renovation was roof and exterior only, per the listing",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3008/area_tokyo/13202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13202/030Z20821907/190693001/x1030Z20821907.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -417,14 +383,16 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "13-minute walk is toward the brief's outer edge; the Fujimi-cho side is the closest to the Tama River in this set — check the city hazard map",
-        "Seen on a portal index page — verify details on the listing link"
+        "The land is leasehold, not freehold — old-law leasehold (旧法借地権/普通賃借権) with ~15 years of term remaining and ground rent of ¥19,000/month, per the detail page; the record never mentions tenure",
+        "Road setback required (セットバック要) per the detail page, with a narrow 3m frontage on the west side"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3008/area_tokyo/13202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13202/030Z21622600/004995000/x1030Z21622600.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h13",
@@ -452,15 +420,15 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Built 1930 — the structure is at end of life; treat this as a land purchase with demolition/rebuild costs on top",
         "Pre-war timber construction; no seismic standard applies",
-        "Seen on a portal index page — verify details on the listing link"
+        "the land is leasehold, not freehold — old-law leasehold (旧法借地権/普通賃借権) with only ~7 years of term remaining and ground rent of ¥46,630/month, per the detail page; the record's 'land play' framing never mentions tenure, and the remaining term is short"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3008/area_tokyo/13202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13202/030Z20956348/001114006/x1030Z20956348.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
-      "majorCautions": 1
+      "majorCautions": 2
     },
     {
       "id": "h14",
@@ -556,15 +524,15 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Built Jan 1975 — pre-1981 seismic standard; at this price the structure contributes little, so judge it mainly as land + location",
-        "Seen on a portal index page — verify details on the listing link"
+        "Detail page states 49.94m² of the 116.48m² plot lies under high-voltage power lines (高圧線下) — what can be built on that portion is restricted"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3008/area_tokyo/13202.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13202/030Z76290660/006050687/x1030Z76290660.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       },
-      "majorCautions": 1
+      "majorCautions": 2
     },
     {
       "id": "l01",
@@ -639,77 +607,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l03",
-      "type": "land",
-      "district": "Hagoromo-cho 2",
-      "districtJa": "羽衣町2丁目",
-      "title": "Small low-rise-zone plot by Nishi-Kunitachi — building on site",
-      "priceMan": 2780,
-      "priceFrom": false,
-      "landM2": 71.47,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Nishi-Kunitachi",
-      "stationJa": "西国立",
-      "line": "JR Nambu Line",
-      "lineJa": "JR南武線",
-      "walkMin": 7,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り), sold as-is (現況渡し)",
-        "Small 71.5m² plot; narrow frontage — 4.3m onto a south 4m road",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z21610646/000232004/x1030Z21610646.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l04",
-      "type": "land",
-      "district": "Hagoromo-cho 3",
-      "districtJa": "羽衣町3丁目",
-      "title": "Big 178m² plot in Hagoromo-cho — building on site",
-      "priceMan": 4980,
-      "priceFrom": false,
-      "landM2": 178.8,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Nishi-Kunitachi",
-      "stationJa": "西国立",
-      "line": "JR Nambu Line",
-      "lineJa": "JR南武線",
-      "walkMin": 8,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "Large 178.8m² plot for this part of Tachikawa",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り), sold as-is (現況渡し)",
-        "Fronts a narrow SE 4m road; a further 11.39m² of road portion is noted separately from the headline area — confirm what the price includes",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z20814493/100451224/x1030Z20814493.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "l05",
       "type": "land",
       "district": "Nishiki-cho 1",
@@ -778,43 +675,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z21954141/000232025/x1030Z21954141.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l07",
-      "type": "land",
-      "district": "Kashiwa-cho 1",
-      "districtJa": "柏町1丁目",
-      "title": "Corner plot in Kashiwa-cho — private-road burden attached",
-      "priceMan": 2780,
-      "priceFrom": false,
-      "landM2": 77.3,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Sunagawa-Nanaban",
-      "stationJa": "砂川七番",
-      "line": "Tama Monorail",
-      "lineJa": "多摩モノレール",
-      "walkMin": 10,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "Corner lot (north 4m / east 6m roads), immediate handover",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Private-road burden applies (私道負担有): a separate 74.08m² private road is held in 1/6 shared ownership, at buyer-borne cost",
-        "A building stands on the land (上物有り), sold as-is (現況渡し)",
-        "No gas runs to the plot (the Tokyo Gas main is in the east road — connection at the buyer's arrangement and cost)",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z21783128/003852021/x1030Z21783128.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }

@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Takasaki",
     "editionJa": "高崎",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Takasaki City, Gunma",
     "areaJa": "群馬県高崎市"
   },
@@ -294,12 +294,12 @@
       "cautions": [
         "Part of the house has been used as a shop (a made-to-order jewellery store operates in one room, per the listing) — confirm the residential/commercial split",
         "Small 117.8m² plot for Takasaki",
-        "Seen on a portal index page — verify details on the listing link"
+        "Zoning is quasi-industrial (準工業地域, 60%/200%) per the detail page — the street may include workshops or small factories"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/151/2151020.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z21782023/115490003/x1030Z21782023.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -327,13 +327,12 @@
       ],
       "cautions": [
         "Very small 97.1m² plot — the value is the Hebel construction and location, not the land",
-        "Three-storey house, so daily life involves a lot of stairs",
-        "Seen on a portal index page — verify details on the listing link"
+        "Three-storey house, so daily life involves a lot of stairs"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/151/2151020.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z77632783/065555077/x1030Z77632783.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -360,13 +359,12 @@
         "All rooms face south, corner lot, all-electric, parking for 3, vegetable garden in the yard"
       ],
       "cautions": [
-        "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "At the 15-minute walk limit of this collection"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/151/2151020.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z21960367/177142002/x1030Z21960367.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -385,7 +383,7 @@
       "stationJa": "南高崎",
       "line": "Joshin Dentetsu",
       "lineJa": "上信電鉄",
-      "walkMin": 8,
+      "walkMin": 6,
       "built": "Mar 1996",
       "ageYears": 30,
       "highlights": [
@@ -393,14 +391,13 @@
         "Castle-south primary school 9 min on foot; three air conditioners included per one agent"
       ],
       "cautions": [
-        "Portal feeds disagree on the walk (6 vs 7 vs 8 min) — recorded here at the most conservative 8 min",
         "Shingokan is on the Karasu River side of the city — check the city hazard map for flood risk",
-        "Seen on a portal index page — verify details on the listing link"
+        "Walk time corrected to 6 min from the verified detail page; other portal feeds still show 7–8 min, so confirm the route on the ground"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=gunma&lc%5B%5D=10202&wm=15&si%5B%5D=008&si%5B%5D=009&h2s=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z21936107/177697001/x1030Z21936107.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -429,80 +426,12 @@
       "cautions": [
         "1988 structure — post-1981 seismic standard, but budget for age-related repairs",
         "Yoshii is car-oriented; the Joshin line service is infrequent",
-        "Seen on a portal index page — verify details on the listing link"
+        "Individual propane (LP) gas per the detail page — no city gas"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=gunma&lc%5B%5D=10202&wm=15&si%5B%5D=008&si%5B%5D=009&h2s=1",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h13",
-      "type": "house-used",
-      "district": "Yamana-cho",
-      "districtJa": "山名町",
-      "title": "Used 3LDK (1978) at ¥680万 — pre-1981 standard, experts only",
-      "priceMan": 680,
-      "priceFrom": false,
-      "landM2": 144.91,
-      "buildingM2": 81.97,
-      "layout": "3LDK",
-      "station": "Yamana",
-      "stationJa": "山名",
-      "line": "Joshin Dentetsu",
-      "lineJa": "上信電鉄",
-      "walkMin": 10,
-      "built": "Dec 1978",
-      "ageYears": 47,
-      "highlights": [
-        "Cheapest house in this collection by a wide margin, with city gas and parking for 2 (carport)",
-        "Water-area renovation done per the listing; south-facing with two-sided light to every room"
-      ],
-      "cautions": [
-        "Built Dec 1978 — pre-1981 seismic standard; treat the price as land + location and budget for structural work",
-        "At ¥680万 this is a project house, not a move-in-straight-away purchase for most buyers",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=gunma&lc%5B%5D=10202&wm=15&si%5B%5D=008&si%5B%5D=009&h2s=1",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 1
-    },
-    {
-      "id": "h14",
-      "type": "house-used",
-      "district": "Shinmachi",
-      "districtJa": "新町",
-      "title": "Used 4LDK built 2015 — loft and sunroom, 11 min from Shinmachi Station",
-      "priceMan": 2280,
-      "priceFrom": false,
-      "landM2": 195.01,
-      "buildingM2": 96.47,
-      "layout": "4LDK",
-      "station": "Shinmachi",
-      "stationJa": "新町",
-      "line": "JR Takasaki Line",
-      "lineJa": "JR高崎線",
-      "walkMin": 11,
-      "built": "Jul 2015",
-      "ageYears": 11,
-      "highlights": [
-        "Loft, sunroom and attic storage; the living room opens up to a maximum 19.5 tatami",
-        "City gas, south road, parking for 3, only 11 years old"
-      ],
-      "cautions": [
-        "Shinmachi is a former separate town in the city's south — Takasaki Station is a train ride away, and the area is close to the Tone River, so check the hazard map",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=gunma&lc%5B%5D=10202&wm=15&si%5B%5D=008&si%5B%5D=009&h2s=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z21268528/185349002/x1030Z21268528.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -529,13 +458,12 @@
         "South road, parking for 2, same station area as the new-build Klein development for comparison"
       ],
       "cautions": [
-        "1991 structure — the value case rests on the very large plot; inspect the building carefully",
-        "Seen on a portal index page — verify details on the listing link"
+        "1991 structure — the value case rests on the very large plot; inspect the building carefully"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=gunma&lc%5B%5D=10202&wm=15&si%5B%5D=008&si%5B%5D=009&h2s=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z76592432/185349002/x1030Z76592432.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -563,13 +491,12 @@
       ],
       "cautions": [
         "1988 structure despite the large floor area — check the condition of a 134m² house carefully",
-        "Kuragano sits by the Karasu River — check the city hazard map for flood risk",
-        "Seen on a portal index page — verify details on the listing link"
+        "Kuragano sits by the Karasu River — check the city hazard map for flood risk"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=gunma&lc%5B%5D=10202&wm=15&si%5B%5D=008&si%5B%5D=009&h2s=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z76038144/145376001/x1030Z76038144.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -598,14 +525,15 @@
       "cautions": [
         "A converted bookshop, not a purpose-built house — layout and insulation will differ from a standard home; view in person",
         "1988 structure",
-        "Seen on a portal index page — verify details on the listing link"
+        "The detail page lists a Cultural Properties Protection Act restriction among its legal limits (法令等制限: 文化財保護法) — buried cultural-property procedures may apply before building work"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=gunma&lc%5B%5D=10202&wm=15&si%5B%5D=008&si%5B%5D=009&h2s=1",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z21943497/177142002/x1030Z21943497.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "l01",
@@ -678,44 +606,6 @@
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z21419224/115490003/x1030Z21419224.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l03",
-      "type": "land",
-      "district": "Shimowada-cho 1",
-      "districtJa": "下和田町1丁目",
-      "title": "Large vacant plot 5 minutes from Minami-Takasaki — setback area included in the headline size",
-      "priceMan": 4500,
-      "priceFrom": false,
-      "landM2": 268.8,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Minami-Takasaki",
-      "stationJa": "南高崎",
-      "line": "Joshin Dentetsu Joshin Line",
-      "lineJa": "上信電鉄上信線",
-      "walkMin": 5,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Vacant (更地渡し) two-road plot: west 6m road with 8.9m frontage; JR Takasaki Station is also 13 min on foot per the listing",
-        "Full utilities: city gas, mains water, mains sewer",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Setback required (セットバック要): the headline 268.8m² includes about 12.8m² of setback area, so the effective building area is smaller",
-        "Highest total price in this collection; Building Standards Act Art. 22 roof/fire zone, road/neighbour slant and shadow restrictions apply",
-        "Inside a buried cultural-property area (文化財保護法) per the listing",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z21805570/010174161/x1030Z21805570.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }

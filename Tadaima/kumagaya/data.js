@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Kumagaya",
     "editionJa": "熊谷",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Kumagaya City, Saitama",
     "areaJa": "埼玉県熊谷市"
   },
@@ -258,40 +258,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h08",
-      "type": "house-new",
-      "district": "Tsukimicho 1",
-      "districtJa": "月見町1丁目",
-      "title": "New 4LDK — long-life quality housing, south garden, 3-car parking",
-      "priceMan": 3190,
-      "priceFrom": false,
-      "landM2": 151.22,
-      "buildingM2": 103.71,
-      "layout": "4LDK",
-      "station": "Ishihara",
-      "stationJa": "石原",
-      "line": "Chichibu Railway",
-      "lineJa": "秩父鉄道",
-      "walkMin": 10,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Long-life quality housing (長期優良住宅); south garden with side-by-side parking for 3",
-        "City gas and mains sewerage; roof balcony"
-      ],
-      "cautions": [
-        "Portal feeds disagree on the price (¥3,290万 vs ¥3,490万 for the same house) — scored here on the higher figure; confirm before viewing",
-        "South-bank Arakawa side of the city — check the Kumagaya flood hazard map for this plot before purchase",
-        "The plot is in a land-development works regulation area （宅地造成工事規制区域） and a Landscape Act （景観法） notification area, per the detail page — extra procedures may apply to building work"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/11202/030/W/20565834.html",
-        "verified": "detail",
-        "infoDate": "2026-10-20"
-      }
-    },
-    {
       "id": "h09",
       "type": "house-used",
       "district": "Shinbori",
@@ -326,8 +292,8 @@ window.TADAIMA_DATA = {
       "type": "house-used",
       "district": "Tamai 5",
       "districtJa": "玉井5丁目",
-      "title": "Used 3LDK (1991) — Kagohara side, priced under ¥1,300万",
-      "priceMan": 1299,
+      "title": "Used 3LDK (1991) — Kagohara side",
+      "priceMan": 2099,
       "priceFrom": false,
       "landM2": 122.52,
       "buildingM2": 97.97,
@@ -351,7 +317,7 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21408400/189549013/x1030Z21408400.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-02"
       }
     },
     {
@@ -383,42 +349,6 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-10-18"
       }
-    },
-    {
-      "id": "h12",
-      "type": "house-used",
-      "district": "Oaso",
-      "districtJa": "大麻生",
-      "title": "Used 3LDK (1998) — south garden, 6 min to Oaso Station",
-      "priceMan": 880,
-      "priceFrom": false,
-      "landM2": 136.23,
-      "buildingM2": 82.8,
-      "layout": "3LDK",
-      "station": "Oaso",
-      "stationJa": "大麻生",
-      "line": "Chichibu Railway",
-      "lineJa": "秩父鉄道",
-      "walkMin": 6,
-      "built": "Jun 1998",
-      "ageYears": 28,
-      "highlights": [
-        "Joint-cheapest house here, with a south-facing garden and parking for 2",
-        "All rooms Western-style with storage in every room"
-      ],
-      "cautions": [
-        "Portal feeds disagree on the price (¥880万 vs ¥1,080万 for the same house via different agencies) — scored here on the cheaper feed; confirm before viewing",
-        "Oaso is a small local station south of the Arakawa — check the Kumagaya flood hazard map for this plot before purchase",
-        "Urbanisation-control area （市街化調整区域） with no zoning designation (70% / 400%), per the detail page — new building is restricted in principle; confirm the existing house's rebuild rights before relying on them",
-        "LP gas (no city gas); Landscape Act （景観法） notification area, per the detail page"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21130278/153974028/x1030Z21130278.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 1
     },
     {
       "id": "h13",
@@ -982,44 +912,6 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
-    },
-    {
-      "id": "l12",
-      "type": "land",
-      "district": "Shinbori",
-      "districtJa": "新堀",
-      "title": "Small 89m² plot at the 15-minute limit from Kagohara — boundaries not clarified, setback needed",
-      "priceMan": 400,
-      "priceFrom": false,
-      "landM2": 89.38,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Kagohara",
-      "stationJa": "籠原",
-      "line": "JR Takasaki Line",
-      "lineJa": "JR高崎線",
-      "walkMin": 15,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Boundaries not clarified (境界非明示) — sold without boundary confirmation",
-        "Setback required (セットバック要)",
-        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
-        "Small 89.4m² plot, with shadow (日影) restrictions noted",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z21690108/174536001/x1030Z21690108.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      },
-      "majorCautions": 1
     }
   ],
   "scoring": {

@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Koshigaya",
     "editionJa": "越谷",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Koshigaya City, Saitama",
     "areaJa": "埼玉県越谷市"
   },
@@ -26,39 +26,6 @@ window.TADAIMA_DATA = {
     "note": "Land benchmarks: residential ¥/tsubo by station, triangulated from MLIT transaction data via Utinokati (multi-year, standardised) and 2026 official residential land-price points via Totinokati/tochidai: Shin-Koshigaya/Minami-Koshigaya ~80 (official residential average 76.3 on 9 points, with core residential points at 73–91 within 5–8 minutes; the all-use station average of ~99 and the commercial-point average of ~156 — station-front plots at 157–180 with 400% floor-area ratio — are not used, because the listings are houses and residential lots on side streets), Koshigaya-Laketown ~65 (residential points 58.5–72.1; district averages of ~70–76 are not used because they include a single 95.5 point on a 391m² plot), Koshigaya ~60 (the official station average of ~52 pools points out to 25 minutes; points at 6–15 minutes run 57–91 and sampled transactions at 16 minutes print 55–59), Gamo ~55, Kita-Koshigaya ~50, Sengendai ~42, Obukuro ~40. Kita-Koshigaya is scored at ~50, NOT the official catchment average of ~39: that average is dragged down by urbanisation-control (調整区域) and farmhouse-fringe points and deals — control-area plots in its catchment trade at 4–26万円/坪 — while the Osawa district transaction regression is ~52 (23 deals) and its 15-minute official point is ~45. Higashi-Koshigaya (~55) and Osawa (~50) are districts, not stations — their nearest stations are Koshigaya and Kita-Koshigaya — and are scored from district official points and transactions, flagged as such. Walk bands use Koshigaya's observed land gradient — official points fall roughly 30% by a 10-minute walk and 45–50% by 16+ minutes (Koshigaya station: ~91 within 6 minutes vs ~41–44 beyond 20 minutes); house prices fall only ~20% over the same range. Used houses transacted at about ¥101万/tsubo city-wide (floor-area basis, regression on 2,150 deals): Akayamacho ~123 and the Koshigaya station districts ~116 at the top; by age (Gamo district series, used as the shape proxy), ≤10-yr stock ~139 falls to ~65 for 30+-yr stock. The Shin-Koshigaya district simple average of ~174 rests on a thin slice of new station-adjacent stock and is ignored as a level. Official residential land prices rose +3.2% in the 2026 公示地価 survey (30 of 32 points up, none down) — the fifth straight year of acceleration (+0.5% in 2022 to +3.5% in 2026) — with station-side points up 5–6% and the adjustment-area fringe flat."
   },
   "properties": [
-    {
-      "id": "h01",
-      "type": "house-new",
-      "district": "Fukuroyama",
-      "districtJa": "大字袋山",
-      "title": "New Libre Garden development (2 units) — 7 min to Obukuro, 130m²+ plots",
-      "priceMan": 4580,
-      "priceFrom": true,
-      "landM2": 130.95,
-      "buildingM2": 99.63,
-      "layout": "3LDK+S~4LDK",
-      "station": "Obukuro",
-      "stationJa": "大袋",
-      "line": "Tobu Isesaki Line",
-      "lineJa": "東武伊勢崎線",
-      "walkMin": 7,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Shortest new-build walk here (7 min); also 14 min from Sengendai — two stations usable",
-        "Generous 130.95m² plot, 17-post LDK, housing performance-evaluation certificates, parking for 2+"
-      ],
-      "cautions": [
-        "Price is 'from' — the two units run ¥4,580–4,780万; building/land figures are for the cheaper unit",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6007/area_saitama/11222.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
     {
       "id": "h02",
       "type": "house-new",
@@ -83,12 +50,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "The same house is listed twice on the index under two descriptions at the same ¥4,780万 — deduplicated here",
-        "Seen on a portal index page — verify details on the listing link"
+        "Not yet built — completion Dec 2026, move-in Jan 2027"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6007/area_saitama/11222.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11222/030/W/21586662.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -182,7 +149,8 @@ window.TADAIMA_DATA = {
       "cautions": [
         "Portal feeds disagree on price for the same spec (¥4,199万 vs ¥4,299万) — recorded at the lower figure; verify",
         "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
+        "Seen on a portal index page — verify details on the listing link",
+        "A Nifty index listing for the identical spec (105.75m² building / 124.9m² land) shows ¥4,399万 and a 4LDK+S layout — a third price point above the recorded ¥4,199万; confirm the current asking price"
       ],
       "source": {
         "name": "goo住宅・不動産",
@@ -281,13 +249,12 @@ window.TADAIMA_DATA = {
         "Very large 156.89m² plot and 124.1m² house for a 7-minute station walk"
       ],
       "cautions": [
-        "1994 structure — judge the premium against rebuild/land value",
-        "Seen on a portal index page — verify details on the listing link"
+        "1994 structure — judge the premium against rebuild/land value"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11222/030Z21927380/006050457/x1030Z21927380.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -348,50 +315,14 @@ window.TADAIMA_DATA = {
         "3.8kW solar plus 5.0kW battery, all-electric; 60-year maker support programme transferable; NW corner lot"
       ],
       "cautions": [
-        "Top of this collection's budget — priced for the maker/equipment, not the floor area",
-        "Seen on a portal index page — verify details on the listing link"
+        "Top of this collection's budget — priced for the maker/equipment, not the floor area"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11222/030Z76874773/010100106/x1030Z76874773.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
-    },
-    {
-      "id": "h11",
-      "type": "house-used",
-      "district": "Shimomakuri",
-      "districtJa": "大字下間久里",
-      "title": "Used 6DK (1989) at ¥1,790万 — defect liability waived, experts only",
-      "priceMan": 1790,
-      "priceFrom": false,
-      "landM2": 109.0,
-      "buildingM2": 112.81,
-      "layout": "6DK",
-      "station": "Obukuro",
-      "stationJa": "大袋",
-      "line": "Tobu Isesaki Line",
-      "lineJa": "東武伊勢崎線",
-      "walkMin": 9,
-      "built": "Mar 1989",
-      "ageYears": 37,
-      "highlights": [
-        "Cheapest house in this collection, with a big 112.81m² floor plan on 109m² of land",
-        "9-minute walk to Obukuro despite the price"
-      ],
-      "cautions": [
-        "Seller's defect liability is waived (契約不適合責任免責) — sold as-is",
-        "Boundaries not disclosed (境界非明示) — unsurveyed boundary risk",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 2
     },
     {
       "id": "h12",
@@ -417,13 +348,12 @@ window.TADAIMA_DATA = {
       ],
       "cautions": [
         "Portal feeds disagree on price — another feed lists the same house at ¥2,980万; recorded at ¥2,780万 from the opened index; verify",
-        "1993 structure beneath the fresh interior work",
-        "Seen on a portal index page — verify details on the listing link"
+        "1993 structure beneath the fresh interior work"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11222/030Z21405342/153560001/x1030Z21405342.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -484,12 +414,13 @@ window.TADAIMA_DATA = {
         "Renovated/reformed listing; primary and junior-high schools ~13 min walk"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
+        "The full renovation (plumbing, all interiors, exterior walls and roof) is scheduled for completion in Dec 2026 — a renovate-then-deliver sale, so the present interior is pre-renovation",
+        "LP gas (no city gas)"
       ],
       "source": {
         "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3002/area_saitama/11222/038.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11222/030Z21642736/032341000/x1030Z21642736.html",
+        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -562,39 +493,6 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-22"
       },
       "majorCautions": 1
-    },
-    {
-      "id": "h17",
-      "type": "house-used",
-      "district": "Shichizacho 1",
-      "districtJa": "七左町1丁目",
-      "title": "Used 4LDK (1997) — south-facing, 15 min to Gamo",
-      "priceMan": 2980,
-      "priceFrom": false,
-      "landM2": 113.06,
-      "buildingM2": 93.28,
-      "layout": "4LDK",
-      "station": "Gamo",
-      "stationJa": "蒲生",
-      "line": "Tobu Isesaki Line",
-      "lineJa": "東武伊勢崎線",
-      "walkMin": 15,
-      "built": "Oct 1997",
-      "ageYears": 29,
-      "highlights": [
-        "South-facing 4LDK with a roomy feel, per the listing; system kitchen",
-        "113.06m² plot at under ¥3,000万 on the Gamo side"
-      ],
-      "cautions": [
-        "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3005/area_saitama/11222.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
     },
     {
       "id": "l01",

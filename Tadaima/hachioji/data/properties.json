@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Hachioji",
     "editionJa": "八王子",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Hachioji City, Tokyo",
     "areaJa": "東京都八王子市"
   },
@@ -111,43 +111,6 @@
         "infoDate": "2026-10-22"
       },
       "majorCautions": 1
-    },
-    {
-      "id": "h03",
-      "type": "house-new",
-      "district": "Ishikawa-machi",
-      "districtJa": "石川町",
-      "title": "New 4LDK, final 2 units — long-term quality housing with solar, 15 min from Komiya",
-      "priceMan": 3980,
-      "priceFrom": false,
-      "landM2": 130.01,
-      "buildingM2": 103.29,
-      "layout": "4LDK",
-      "station": "Komiya",
-      "stationJa": "小宮",
-      "line": "JR Hachiko Line",
-      "lineJa": "JR八高線",
-      "walkMin": 15,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Long-term quality housing (長期優良住宅) with solar panels; price cut 10 Oct",
-        "Large 103m²+ houses on 130m² plots; parking for 2"
-      ],
-      "cautions": [
-        "Two prices remain (¥3,980万 / ¥4,150万) — ¥3,980万 is the cheaper unit; building/land shown are the smaller figures",
-        "At the 15-minute walk limit of this collection",
-        "Lowland near the Asa River (浅川) — check the city hazard map",
-        "The solar system is a 10-year Tokyo Gas service contract (IGNITURE flat plan, ¥5,400/mo unless subsidised), not owned panels",
-        "Price includes a 1/7 share of a 113.74㎡ private road",
-        "Land category (地目) is still registered as farmland (畑); 農地法 is listed on the detail page"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/21050768.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
     },
     {
       "id": "h04",
@@ -485,120 +448,13 @@
       ],
       "cautions": [
         "Katakura lowland drains to the Yudono River (湯殿川) — the plot itself is described as high ground, but check the city hazard map for the surrounding streets",
-        "Seen on a portal index page — verify details on the listing link"
+        "Seen on a portal index page — verify details on the listing link",
+        "The only detail page found (LIFULL via goo) is a stale snapshot — published 2025-12-22, last updated 2026-03-23 — priced ¥3,569万, which conflicts with both this record's ¥3,799万 and the ¥3,699万 shown on goo's live index in the first pass; that page also shows NW 5m private-road frontage with 246m2 of private-road area, and Katakura station at 13 min (the highlight above says 14)"
       ],
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_tokyo/13201.html",
         "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h14",
-      "type": "house-used",
-      "district": "Nishi-Katakura 1",
-      "districtJa": "西片倉1丁目",
-      "title": "Used 4SLDK (2005) by Toyota Home, seismic grade 3 — SE corner lot, three stations on foot",
-      "priceMan": 4988,
-      "priceFrom": false,
-      "landM2": 160.97,
-      "buildingM2": 130.87,
-      "layout": "4SLDK",
-      "station": "Katakura",
-      "stationJa": "片倉",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 9,
-      "built": "Jul 2005",
-      "ageYears": 21,
-      "highlights": [
-        "Largest used house here (130.9m²) on a 161m² south-east corner lot facing 6m roads",
-        "Toyota Home light-steel build, seismic grade 3 equivalent; exterior/roof redone Feb 2020",
-        "Three stations walkable: Katakura 9 min, Hachioji-Minamino 10 min, Keio-Katakura 15 min"
-      ],
-      "cautions": [
-        "Top of this collection's budget — priced for size, structure and the corner lot",
-        "Yudono River (湯殿川) catchment — check the city hazard map",
-        "A district plan applies (南八王子地区地区計画)",
-        "Legal restrictions listed on the page include the Aviation Act, a land-development regulation zone (宅地造成工事規制区域), quasi-fire-prevention zone (準防火地域), shadow regulation and a residence-inducement zone (居住誘導区域)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21906921/030225015/x1030Z21906921.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h15",
-      "type": "house-used",
-      "district": "Kinugaoka 1",
-      "districtJa": "絹ケ丘1丁目",
-      "title": "Used 3LDK (1973) rebuilt in all but name — seismic reinforcement, new plumbing and wiring, 8 min from Naganuma",
-      "priceMan": 2680,
-      "priceFrom": false,
-      "landM2": 99.2,
-      "buildingM2": 76.0,
-      "layout": "3LDK",
-      "station": "Naganuma",
-      "stationJa": "長沼",
-      "line": "Keio Line",
-      "lineJa": "京王線",
-      "walkMin": 8,
-      "built": "Feb 1973",
-      "ageYears": 53,
-      "highlights": [
-        "Deep renovation per the listing: seismic reinforcement, insulation, windows, plumbing and wiring all renewed; solid Japanese cedar floors",
-        "Also 16 min from Kitano — two Keio stations usable"
-      ],
-      "cautions": [
-        "Built Feb 1973 — pre-1981 seismic standard; the value rests entirely on the documented reinforcement works — obtain the paperwork",
-        "Hillside Kinugaoka estate — check retaining walls, steps and the slope on site",
-        "Frontage only 2.7m on a 4m south-west road",
-        "A private-road area of 81.32㎡ is listed for the plot",
-        "Parking suits small cars only (per the listing)",
-        "Hillside plot — the 8-minute station walk is on a slope"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z78291459/171386001/x1030Z78291459.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      },
-      "majorCautions": 2
-    },
-    {
-      "id": "h16",
-      "type": "house-used",
-      "district": "Higashi-Nakano",
-      "districtJa": "東中野",
-      "title": "Used 3SLDK (2006), all-electric — 10 min from Otsuka-Teikyo University (Monorail)",
-      "priceMan": 3999,
-      "priceFrom": false,
-      "landM2": 120.0,
-      "buildingM2": 95.64,
-      "layout": "3SLDK",
-      "station": "Otsuka-Teikyo-Daigaku",
-      "stationJa": "大塚・帝京大学",
-      "line": "Tama Monorail",
-      "lineJa": "多摩モノレール",
-      "walkMin": 10,
-      "built": "Dec 2006",
-      "ageYears": 19,
-      "highlights": [
-        "The only Tama Monorail-side house in this set — university-town east Hachioji",
-        "All-electric; parking for 2; balanced 95.6m² house on a 120m² plot"
-      ],
-      "cautions": [
-        "Portal feeds disagree trivially on the building area (95.64 vs 95.6m²) — recorded here as 95.64",
-        "Renovation is scheduled to complete November 2026 — not yet finished at the listing date",
-        "Access road is only 2.9m wide (east side)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21891796/006928001/x1030Z21891796.html",
-        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -822,46 +678,6 @@
       }
     },
     {
-      "id": "l07",
-      "type": "land",
-      "district": "Otsuka",
-      "districtJa": "大塚",
-      "title": "Huge 308m² south-road lot 6 minutes from Otsuka-Teikyo-Daigaku",
-      "priceMan": 2800,
-      "priceFrom": false,
-      "landM2": 308.36,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Otsuka-Teikyo-Daigaku",
-      "stationJa": "大塚・帝京大学",
-      "line": "Tama Monorail",
-      "lineJa": "多摩モノレール",
-      "walkMin": 7,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "Vacant land (更地) on a south road, mains sewer",
-        "Lowest ¥/tsubo in this collection (¥30.0万, computed) — confirm plot shape and usability on the listing",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Unusually large for the price — confirm shape, slope and subdivision intent on the listing",
-        "land category (地目) is forest land (山林), not residential land (宅地)",
-        "Effective residential area is only ~115㎡ of the 308.36㎡ headline area",
-        "Setback applies (法令等制限: セットバック有り)",
-        "Part of the plot is retaining wall (擁壁) and a phase-2 works portion"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z20364484/008010000/x1030Z20364484.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 1
-    },
-    {
       "id": "l08",
       "type": "land",
       "district": "Hazama-cho",
@@ -962,42 +778,6 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/special/4001/ensen/301/2301360.html",
         "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "l11",
-      "type": "land",
-      "district": "Yagi-cho",
-      "districtJa": "八木町",
-      "title": "Vacant flat lot 12 minutes from Nishi-Hachioji — commercial zoning, 600% FAR",
-      "priceMan": 4280,
-      "priceFrom": false,
-      "landM2": 105.89,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Nishi-Hachioji",
-      "stationJa": "西八王子",
-      "line": "JR Chuo Line",
-      "lineJa": "JR中央線",
-      "walkMin": 12,
-      "built": null,
-      "ageYears": null,
-      "zoning": "商業地域",
-      "coverageFar": "80% / 600%",
-      "highlights": [
-        "Vacant land (更地), flat, immediate handover (即引渡し可), city gas and mains sewer",
-        "Hachioji Station is also 26 minutes on foot",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Commercial zoning (商業地域) — flexible and central, but not a quiet residential street",
-        "Fire-prevention district (防火地域) and height-district (高度地区) restrictions are listed on the detail page"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21669186/167249001/x1030Z21669186.html",
-        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },

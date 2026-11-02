@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Kasukabe",
     "editionJa": "春日部",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Kasukabe City, Saitama",
     "areaJa": "埼玉県春日部市"
   },
@@ -27,39 +27,6 @@
     "note": "Land benchmarks: residential ¥/tsubo by station, triangulated from MLIT transaction data via Utinokati and 2026 official residential land-price points via Totinokati/tochidai: Kasukabe ~48 (residential points at an 8–13-minute walk are 47–51; the all-use station average of ~50 mixes the station-front commercial point at ~122 and the Kasukabe district print of ~83 and is not used as a level, and Utinokati's ~63 regression for the Chuo district is a station-front district figure, not a residential one), Takesato ~33, Ichinowari ~30, Kita-Kasukabe ~26, Fujino-Ushijima ~25, Minami-Sakurai ~19. The city-wide official residential averages (~30 公示 / ~25 基準） are catchment averages whose point sets include farmhouse points a 30–45-minute walk from any station — one prints 6.0万円/坪 at a 42-minute walk — and are not used as station benchmarks. Fujino-Ushijima is scored at ~25 from its two station-front official points (24.6 and 25.0), NOT from any blended transaction average: in that catchment, urbanisation-area lots at a 4-minute walk print 34–43万円/坪 while urbanisation-control （調整区域） plots print 2–10万円/坪, and one quarterly station print of 2.3万円/坪 rests on exactly 2 control-area deals averaging 424 tsubo. Takesato (~33), Ichinowari (~30) and Kita-Kasukabe (~26) are proxies from all-use station averages bracketed by neighbouring official points, flagged as such; Himemiya (~22) is a pure proxy — no official point or published station average could be isolated for it. Sengendai is not benchmarked: it is in Koshigaya, and Kasukabe's Chima-side deals that name it belong to that market. Walk bands use Kasukabe's own observed gradient — the official regression over the city's residential points calls it gentle (elasticity −2.81): land falls roughly 10–15% by an 11–15-minute walk and 25–30% by 16+ minutes, and houses only ~15% over the same range. Used houses transacted at about ¥74万/tsubo city-wide (floor-area basis, recent-3-year average; the Kasukabe station catchment standardises to ~88 on a mean 17-minute walk): by age, ≤10-yr stock ~96 falls to ~58 at 20–30 years and ~39–48 beyond 30 years. Single-year district prints in Kasukabe rest on handfuls of deals (one district's \"99\" is 3 near-new houses; another's \"22\" is 2 deals) and are ignored. Official residential land prices were flat in 2026 (+0.1% 公示地価， median point +0.0%; +0.2% 基準地価） — the stillest market in the set, with some station tax-value series unchanged for a decade. A later top-up pass added the two in-city Tobu Urban Park Line stations the first brief missed: Yagisaki ~36 (2026 official points on its side print 33.7–41.0; the raw all-period mean of 30.2 is dragged by 93.6-tsubo average lots, and its 2026 print of 20.3 rests on exactly one deal) and Toyoharu ~32 (full-year MLIT averages of 30.1 in 2024 and 31.7 in 2025; the 2026 print of 50.0 rests on exactly two deals, and Utinokati's 24.4 regression catchment includes control-area deals at 3.9–9.1). Houses at both stations score against the same city anchor (~74) and age cohorts — Yagisakicho standardises to ~73.5 — with no invented station discount."
   },
   "properties": [
-    {
-      "id": "h01",
-      "type": "house-new",
-      "district": "Bingo-Higashi 2",
-      "districtJa": "備後東2丁目",
-      "title": "New 3LDK near Ichinowari Station — compact plot, move-in ready",
-      "priceMan": 2480,
-      "priceFrom": false,
-      "landM2": 56.91,
-      "buildingM2": 80.73,
-      "layout": "3LDK",
-      "station": "Ichinowari",
-      "stationJa": "一ノ割",
-      "line": "Tobu Skytree Line",
-      "lineJa": "東武スカイツリーライン",
-      "walkMin": 8,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Cheapest new house in this collection; 8 min from Ichinowari Station",
-        "Supermarket ~4 min and drugstore ~3 min on foot; Low-E glazing and purified-water tap"
-      ],
-      "cautions": [
-        "Very small 56.9m² plot — well below the Kasukabe norm; check parking and garden space on site",
-        "Detail page lists an 11m² private-road area (私道面積) alongside the 56.91m² plot — confirm whether it is included in the headline area"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/1/11214/030Z20775000/124126003/x1030Z20775000.html",
-        "verified": "detail",
-        "infoDate": "2026-10-21"
-      }
-    },
     {
       "id": "h02",
       "type": "house-new",
@@ -960,45 +927,6 @@
       }
     },
     {
-      "id": "l08",
-      "type": "land",
-      "district": "Kasukabe-Higashi 4-chome",
-      "districtJa": "粕壁東4丁目",
-      "title": "99m2 plot by Fujino-Ushijima — building on site, LP gas and septic tank, no mains sewer",
-      "priceMan": 1390,
-      "priceFrom": false,
-      "landM2": 75.54,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Fujino-Ushijima",
-      "stationJa": "藤の牛島",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 12,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 160%",
-      "highlights": [
-        "Regular-shaped plot (整形地), immediate handover (即時)",
-        "Two lines usable: Fujino-Ushijima 12 min, Kasukabe 24 min",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
-        "Private-road area of 24m2 is listed alongside the headline 99.54m2 — confirm whether it is included; if included, the effective building plot is about 75.54m2",
-        "No mains sewer or city gas connection: the listing states sewer and city gas have not been brought in; services are LP gas, mains water and a septic tank (浄化槽)",
-        "The SW frontage note includes an open space of about 1.8m and a waterway of about 1.4m alongside the 4m road — check flood/hazard maps for this Edo/Naka River lowland area before purchase",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/11214/030Z76050223/003852023/x1030Z76050223.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "l09",
       "type": "land",
       "district": "Kobuchi",
@@ -1034,44 +962,6 @@
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11214/030Z20775136/042176000/x1030Z20775136.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l10",
-      "type": "land",
-      "district": "Bingo-Higashi 8-chome",
-      "districtJa": "備後東8丁目",
-      "title": "Clean vacant low-rise plot between Takesato and Ichinowari — measured area, two public roads",
-      "priceMan": 2899,
-      "priceFrom": false,
-      "landM2": 154.63,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Takesato",
-      "stationJa": "武里",
-      "line": "Tobu Isesaki Line",
-      "lineJa": "東武伊勢崎線",
-      "walkMin": 12,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 80%",
-      "highlights": [
-        "Vacant land (更地) with a measured area (実測 154.63m2) — no building to demolish and no private-road complication",
-        "Fronts two public roads: south 6.1m and north 4.1m",
-        "Two stations usable: Takesato 12 min, Ichinowari 15 min; full utilities (city gas, mains water, mains sewer)",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Highest total price in this collection and the second-highest yen per tsubo — a clean, low-risk plot rather than a bargain",
-        "Landscape-law restriction noted on the listing",
-        "Verified on the listing page (information updated 2026-10-23)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/11214/1304410032789/130441/x41304410032789.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
       }
     },
     {

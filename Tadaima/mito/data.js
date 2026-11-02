@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Mito",
     "editionJa": "水戸",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Mito City, Ibaraki",
     "areaJa": "茨城県水戸市"
   },
@@ -56,40 +56,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/08201/030/W/21979574.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "h02",
-      "type": "house-new",
-      "district": "Akatsuka 1",
-      "districtJa": "赤塚1丁目",
-      "title": "New 3LDK–4LDK development (3 units) — all rooms south-facing, 10 min from Akatsuka Station",
-      "priceMan": 2680,
-      "priceFrom": false,
-      "landM2": 197.91,
-      "buildingM2": 104.47,
-      "layout": "3LDK",
-      "station": "Akatsuka",
-      "stationJa": "赤塚",
-      "line": "JR Joban Line",
-      "lineJa": "JR常磐線",
-      "walkMin": 10,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "All rooms south-facing; 20-post LDK, city gas",
-        "Generous ~198m² plots, parking for 2+ cars"
-      ],
-      "cautions": [
-        "Listed by several agents at the same prices — the same development appears multiple times across feeds",
-        "The lot carries a private-road burden (349.00m²) and the front road is only 3.3m wide",
-        "Private water supply (私営水道) rather than public mains water — public sewer and city gas are connected"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/08201/030/Z/21385734.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
@@ -718,45 +684,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l04",
-      "type": "land",
-      "district": "Aoyagi-cho",
-      "districtJa": "青柳町",
-      "title": "Huge 803m² plot 4 minutes from Hitachi-Aoyagi — urbanisation-control, most buyers cannot build",
-      "priceMan": 600,
-      "priceFrom": false,
-      "landM2": 803.55,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Hitachi-Aoyagi",
-      "stationJa": "常陸青柳",
-      "line": "JR Suigun Line",
-      "lineJa": "JR水郡線",
-      "walkMin": 4,
-      "built": null,
-      "ageYears": null,
-      "zoning": "無指定",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "By far the lowest ¥/tsubo here, and the shortest walk — 4 minutes to Hitachi-Aoyagi Station",
-        "Vacant flat land (更地渡し), east side fronts a 5.2m road",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Urbanisation-control area (市街化調整区域): building is in principle NOT permitted — the listing says only people who qualify as existing-settlement residents (10+ years living in Suifu-machi, Nakagawachi-machi, Nemoto-machi or Yanagawa-machi) may build",
-        "No utilities are listed on the page (equipment field is blank) — water, sewer and gas connections to confirm",
-        "The very low price reflects the building restriction, not a bargain residential plot",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z20862021/085120004/x1030Z20862021.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      },
-      "majorCautions": 2
-    },
-    {
       "id": "l05",
       "type": "land",
       "district": "Akatsuka 1",
@@ -799,7 +726,7 @@ window.TADAIMA_DATA = {
       "district": "Akatsuka 1",
       "districtJa": "赤塚1丁目",
       "title": "Enormous vacant 684m² plot, 11 min from Akatsuka — lowest clean ¥/tsubo near a station",
-      "priceMan": 1980,
+      "priceMan": 1680,
       "priceFrom": false,
       "landM2": 684.89,
       "buildingM2": null,
@@ -826,7 +753,7 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z20895313/048665002/x1030Z20895313.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-10-25"
       }
     },
     {

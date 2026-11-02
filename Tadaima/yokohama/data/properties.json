@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Yokohama",
     "editionJa": "横浜",
-    "researchedOn": "2026-10-23",
+    "researchedOn": "2026-11-02",
     "area": "Yokohama City, Kanagawa",
     "areaJa": "神奈川県横浜市"
   },
@@ -279,7 +279,7 @@
       "district": "Sasanodai 4",
       "districtJa": "笹野台4丁目",
       "title": "Used 3LDK (1994) renovated with garden and sunroom — 149m2 lot",
-      "priceMan": 3290,
+      "priceMan": 3190,
       "priceFrom": false,
       "landM2": 149.56,
       "buildingM2": 77.67,
@@ -305,9 +305,10 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/14112/030Z21535513/061188002/x1030Z21535513.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-02"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 100
     },
     {
       "id": "h09",
@@ -693,44 +694,6 @@
       "majorCautions": 1
     },
     {
-      "id": "l04",
-      "type": "land",
-      "district": "Nakazawa 1",
-      "districtJa": "中沢1丁目",
-      "title": "Smallest, cheapest clean lot in Asahi — 56.6m² vacant plot, 12 min from Futamatagawa",
-      "priceMan": 890,
-      "priceFrom": false,
-      "landM2": 56.58,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Futamatagawa",
-      "stationJa": "二俣川",
-      "line": "Sotetsu Main Line",
-      "lineJa": "相鉄本線",
-      "walkMin": 12,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 80%",
-      "highlights": [
-        "Vacant land (更地), main sewer connected, immediate handover stated",
-        "No building conditions",
-        "Quiet, green residential area per listing",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Very small plot at 56.58m² — house plan and parking will be tightly constrained",
-        "Setback required (セットバック要, stated in the detail page's 特記事項) — part of the 56.58m2 will be lost to road widening, on top of the plot's small size"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/14112/030Z21246120/116840001/x1030Z21246120.html",
-        "verified": "detail",
-        "infoDate": "2026-10-21"
-      },
-      "majorCautions": 1
-    },
-    {
       "id": "l05",
       "type": "land",
       "district": "Naka-Kibogaoka",
@@ -758,7 +721,7 @@
       ],
       "cautions": [
         "Top of the brief on price at ¥4,980万 before build costs",
-        "No major caution stated on the index listing — verify hazard zone and boundaries on detail enquiry"
+        "No major caution stated on the listing — verify hazard zone and boundaries on detail enquiry"
       ],
       "source": {
         "name": "goo住宅・不動産",
@@ -795,48 +758,12 @@
       ],
       "cautions": [
         "Highest ¥/tsubo in this Asahi set despite the mid-range headline price — small-plot premium",
-        "No major caution stated on the index listing — verify road and hazard status on detail enquiry"
+        "No major caution stated on the listing — verify road and hazard status on detail enquiry"
       ],
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/sp/tochi/result.html?p=4&la=shuto&ma=kanagawa&lc%5B%5D=14112&sc%5B%5D=01",
         "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "l07",
-      "type": "land",
-      "district": "Nakata-Minami 4",
-      "districtJa": "中田南4丁目",
-      "title": "152m² three-way corner lot, flat 6-minute walk to Nakata on the Blue Line",
-      "priceMan": 4780,
-      "priceFrom": false,
-      "landM2": 152.18,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Nakata",
-      "stationJa": "中田",
-      "line": "Yokohama Municipal Subway Blue Line",
-      "lineJa": "横浜市営地下鉄ブルーライン",
-      "walkMin": 6,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "Vacant corner lot described as three-way corner (三方角地) in listing",
-        "Flat walk to station per listing, immediate handover",
-        "No building conditions, city gas and main sewer",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "No major caution stated on the index listing — verify hazard zone, road status and survey on detail enquiry"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/14116/030Z22002474/157797001/x1030Z22002474.html",
-        "verified": "detail",
         "infoDate": "2026-10-23"
       }
     },
@@ -868,7 +795,7 @@
       ],
       "cautions": [
         "Second station (Izumi-Chuo) is 17 min — this is a Blue Line lot, not an Izumino Line one",
-        "No major caution stated on the index listing — verify on detail enquiry"
+        "No major caution stated on the listing — verify on detail enquiry"
       ],
       "source": {
         "name": "goo住宅・不動産",
@@ -904,7 +831,7 @@
       ],
       "cautions": [
         "Tight 40% building coverage limits footprint on a 126m² plot",
-        "No major caution stated on the index listing — verify road, hazard and survey status on detail enquiry"
+        "No major caution stated on the listing — verify road, hazard and survey status on detail enquiry"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
