@@ -280,19 +280,19 @@
     "toffyjapan:9036283937042:47879273480466": {
       "sale_price": "1400",
       "reference_price": "3080",
-      "sent_at": "2026-10-28T09:53:42+09:00",
+      "sent_at": "2026-11-04T10:50:05+09:00",
       "url": "https://toffy.jp/products/tb02-mr?variant=47879273480466"
     },
     "toffyjapan:9036284035346:47879273611538": {
       "sale_price": "1250",
       "reference_price": "2750",
-      "sent_at": "2026-10-28T09:53:42+09:00",
+      "sent_at": "2026-11-04T10:50:05+09:00",
       "url": "https://toffy.jp/products/tb02-lb?variant=47879273611538"
     },
     "toffyjapan:10095236448530:51142623953170": {
       "sale_price": "1100",
       "reference_price": "2420",
-      "sent_at": "2026-10-28T09:53:42+09:00",
+      "sent_at": "2026-11-04T10:50:05+09:00",
       "url": "https://toffy.jp/products/hfn4?variant=51142623953170"
     },
     "toffyjapan:9058722578706:47991137501458": {
@@ -388,7 +388,7 @@
     "cotopaxijapan:9246627758268:45992685994172": {
       "sale_price": "15950",
       "reference_price": "31900",
-      "sent_at": "2026-10-26T08:44:32+09:00",
+      "sent_at": "2026-11-04T10:50:05+09:00",
       "url": "https://cotopaxi.jp/products/trico-hybrid-hooded-jacket-womens-sale26ss?variant=45992685994172"
     },
     "cotopaxijapan:9246629068988:45992711749820": {
@@ -867,9 +867,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-11-03",
-    "coverage_key": "10c8c0673283550cb4adac8d4ed6ab89581cd6a7c5e0422ddf06c78cb300bb74",
-    "completed_at": "2026-11-03T12:13:06+09:00",
-    "digest_hash": "18e60c711416319616ad308c89c60b7ead98d65ceadee11ca2780d7facbcdd08"
+    "date": "2026-11-04",
+    "coverage_key": "ea57c29f926e66793011a5a7127ba2227b951b5c198ad22fa92d7e959574c898",
+    "completed_at": "2026-11-04T10:50:05+09:00",
+    "digest_hash": "52ca0c2b1fb6bb651c28a1ccefc1e5b03fa1c4eb61316b1cf81cbeb893b732bb"
   }
 }
