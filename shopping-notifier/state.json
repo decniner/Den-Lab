@@ -142,7 +142,7 @@
     "ecoflow:14631174177135:51670338208111": {
       "sale_price": "8300",
       "reference_price": "16910",
-      "sent_at": "2026-10-29T10:26:26+09:00",
+      "sent_at": "2026-11-05T10:58:05+09:00",
       "url": "https://jp.ecoflow.com/products/ecoflow-rapid-magnetic-power-bank-5000mah-rapid-65w-gan?variant=51670338208111"
     },
     "ecoflow:15062073803119:53384583217519": {
@@ -328,13 +328,13 @@
     "cotopaxijapan:9242292977852:45979372814524": {
       "sale_price": "31350",
       "reference_price": "62700",
-      "sent_at": "2026-10-29T10:26:26+09:00",
+      "sent_at": "2026-11-05T10:58:05+09:00",
       "url": "https://cotopaxi.jp/products/fuego-max-down-hooded-jacket-womens-sale26ss?variant=45979372814524"
     },
     "cotopaxijapan:9246629396668:45992717156540": {
       "sale_price": "31350",
       "reference_price": "62700",
-      "sent_at": "2026-10-29T10:26:26+09:00",
+      "sent_at": "2026-11-05T10:58:05+09:00",
       "url": "https://cotopaxi.jp/products/fuego-max-down-hooded-jacket-mens-sale26ss?variant=45992717156540"
     },
     "cotopaxijapan:9246627037372:45992675115196": {
@@ -394,7 +394,7 @@
     "cotopaxijapan:9246629068988:45992711749820": {
       "sale_price": "15950",
       "reference_price": "31900",
-      "sent_at": "2026-10-26T08:44:32+09:00",
+      "sent_at": "2026-11-05T10:58:05+09:00",
       "url": "https://cotopaxi.jp/products/trico-hybrid-hooded-jacket-mens-sale26ss?variant=45992711749820"
     },
     "cotopaxijapan:9246628675772:45992704770236": {
@@ -867,9 +867,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-11-04",
-    "coverage_key": "ea57c29f926e66793011a5a7127ba2227b951b5c198ad22fa92d7e959574c898",
-    "completed_at": "2026-11-04T10:50:05+09:00",
-    "digest_hash": "52ca0c2b1fb6bb651c28a1ccefc1e5b03fa1c4eb61316b1cf81cbeb893b732bb"
+    "date": "2026-11-05",
+    "coverage_key": "ee432f4f33030a774fd88ec5090e7a410eb1c46a8970a38bc3e9f2671789361f",
+    "completed_at": "2026-11-05T10:58:05+09:00",
+    "digest_hash": "e79649cf25803b4046e52818ec5a9bc4dfa013d8cbc25f4fb904b26982292e40"
   }
 }
