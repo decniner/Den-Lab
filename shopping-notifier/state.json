@@ -864,6 +864,42 @@
       "reference_price": "38500",
       "sent_at": "2026-11-03T12:13:06+09:00",
       "url": "https://boardriders.co.jp/products/erjtj03493?variant=52412821995801"
+    },
+    "shop-orange-info:8599412539591:46105679167687": {
+      "sale_price": "1122",
+      "reference_price": "3740",
+      "sent_at": "2026-11-06T10:58:24+09:00",
+      "url": "https://shop-orange.info/products/1324-0808?variant=46105679167687"
+    },
+    "shop-orange-info:8467274399943:45556777091271": {
+      "sale_price": "1100",
+      "reference_price": "2750",
+      "sent_at": "2026-11-06T10:58:24+09:00",
+      "url": "https://shop-orange.info/products/nn32324?variant=45556777091271"
+    },
+    "anker:8837199265953:48413655040161": {
+      "sale_price": "59900",
+      "reference_price": "129900",
+      "sent_at": "2026-11-06T10:58:24+09:00",
+      "url": "https://www.ankerjapan.com/products/t210q?variant=48413655040161"
+    },
+    "boardriders-co-jp:10631289241881:52412831269145": {
+      "sale_price": "32450",
+      "reference_price": "64900",
+      "sent_at": "2026-11-06T10:58:24+09:00",
+      "url": "https://boardriders.co.jp/products/h0452506?variant=52412831269145"
+    },
+    "shop-stridelab-jp:7512136450214:50937355108645": {
+      "sale_price": "32450",
+      "reference_price": "64900",
+      "sent_at": "2026-11-06T10:58:24+09:00",
+      "url": "https://shop.stridelab.jp/products/tetonbros-climatic-bib-pant?variant=50937355108645"
+    },
+    "shop-stridelab-jp:7512083890342:43389090398374": {
+      "sale_price": "31350",
+      "reference_price": "62700",
+      "sent_at": "2026-11-06T10:58:24+09:00",
+      "url": "https://shop.stridelab.jp/products/tetonbros-tb-pant-w?variant=43389090398374"
     }
   },
   "last_digest": {
