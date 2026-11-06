@@ -340,13 +340,13 @@
     "cotopaxijapan:9246627037372:45992675115196": {
       "sale_price": "23100",
       "reference_price": "46200",
-      "sent_at": "2026-10-30T10:29:32+09:00",
+      "sent_at": "2026-11-06T10:58:25+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-jacket-men-sale26ss?variant=45992675115196"
     },
     "cotopaxijapan:9246627201212:45992677146812": {
       "sale_price": "23100",
       "reference_price": "46200",
-      "sent_at": "2026-10-30T10:29:32+09:00",
+      "sent_at": "2026-11-06T10:58:25+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-jacket-womens-sale26ss?variant=45992677146812"
     },
     "merrell-jp:7268630593579:41168550395947": {
@@ -808,7 +808,7 @@
     "boardriders-co-jp:10631289176345:52412830744857": {
       "sale_price": "26950",
       "reference_price": "53900",
-      "sent_at": "2026-10-30T10:29:32+09:00",
+      "sent_at": "2026-11-06T10:58:25+09:00",
       "url": "https://boardriders.co.jp/products/h1252501?variant=52412830744857"
     },
     "boardriders-co-jp:10631289012505:52412829106457": {
@@ -900,12 +900,18 @@
       "reference_price": "62700",
       "sent_at": "2026-11-06T10:58:24+09:00",
       "url": "https://shop.stridelab.jp/products/tetonbros-tb-pant-w?variant=43389090398374"
+    },
+    "shop-stridelab-jp:7028519076006:50937180684581": {
+      "sale_price": "28600",
+      "reference_price": "57200",
+      "sent_at": "2026-11-06T10:58:25+09:00",
+      "url": "https://shop.stridelab.jp/products/155692752?variant=50937180684581"
     }
   },
   "last_digest": {
-    "date": "2026-11-05",
-    "coverage_key": "ee432f4f33030a774fd88ec5090e7a410eb1c46a8970a38bc3e9f2671789361f",
-    "completed_at": "2026-11-05T10:58:05+09:00",
-    "digest_hash": "e79649cf25803b4046e52818ec5a9bc4dfa013d8cbc25f4fb904b26982292e40"
+    "date": "2026-11-06",
+    "coverage_key": "5fa82308a26ad58d1d9a360ff88d7171cba02719035412c049cdeb5bd6184b71",
+    "completed_at": "2026-11-06T10:58:25+09:00",
+    "digest_hash": "e40fe7022768237868983ada8625ab6cd032639b73600061f2c14fad2c05807c"
   }
 }
