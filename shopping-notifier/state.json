@@ -352,7 +352,7 @@
     "merrell-jp:7268630593579:41168550395947": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-30T10:29:34+09:00",
+      "sent_at": "2026-11-07T10:29:42+09:00",
       "url": "https://merrell.jp/products/womens_mtl-thermo-rogue-4-mid-gore-tex?variant=41168550395947"
     },
     "cotopaxijapan:9242280624316:45979357053116": {
@@ -694,13 +694,13 @@
     "boardriders-co-jp:10631285047577:52412800925977": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-30T10:29:32+09:00",
+      "sent_at": "2026-11-07T10:29:42+09:00",
       "url": "https://boardriders.co.jp/products/erjtp03268?variant=52412800925977"
     },
     "boardriders-co-jp:10631287701785:52412819702041": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-30T10:29:34+09:00",
+      "sent_at": "2026-11-07T10:29:42+09:00",
       "url": "https://boardriders.co.jp/products/g0452506?variant=52412819702041"
     },
     "boardriders-co-jp:10631287931161:52412821668121": {
@@ -712,7 +712,7 @@
     "boardriders-co-jp:10631289438489:52412833825049": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-10-30T10:29:34+09:00",
+      "sent_at": "2026-11-07T10:29:42+09:00",
       "url": "https://boardriders.co.jp/products/h1352507?variant=52412833825049"
     },
     "boardriders-co-jp:10631284392217:52412796240153": {
@@ -906,12 +906,18 @@
       "reference_price": "57200",
       "sent_at": "2026-11-06T10:58:25+09:00",
       "url": "https://shop.stridelab.jp/products/155692752?variant=50937180684581"
+    },
+    "shop-stridelab-jp:7298079228070:42321423958182": {
+      "sale_price": "22000",
+      "reference_price": "44000",
+      "sent_at": "2026-11-07T10:29:42+09:00",
+      "url": "https://shop.stridelab.jp/products/teton-bros-ws-oze-jacket-womens?variant=42321423958182"
     }
   },
   "last_digest": {
-    "date": "2026-11-06",
-    "coverage_key": "5fa82308a26ad58d1d9a360ff88d7171cba02719035412c049cdeb5bd6184b71",
-    "completed_at": "2026-11-06T10:58:25+09:00",
-    "digest_hash": "e40fe7022768237868983ada8625ab6cd032639b73600061f2c14fad2c05807c"
+    "date": "2026-11-07",
+    "coverage_key": "9cf0a962e6428731c46560a7db166ca1b1e56f11d4a10f343b3b1832b0b0abd1",
+    "completed_at": "2026-11-07T10:29:42+09:00",
+    "digest_hash": "5f76a15d584b6540fe96cec6f157275a07b94c68cc79b36f91f19dbd8fcbeb35"
   }
 }
