@@ -15,6 +15,12 @@ on:
       - '.github/workflows/deploy-pages.yml'
       - 'tests/feature-loading.test.js'
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        description: Exact commit to publish after a content refresh
+        type: string
+        required: false
 
 permissions:
   contents: read
@@ -34,6 +40,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.ref || github.sha }}
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Build place field guides

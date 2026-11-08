@@ -65,3 +65,45 @@ Re-check each `source.url`, update price/facts/`infoDate` (and
 property search index and the sitemap stay in sync, and run the smoke suite
 (`../test-tools/smoke.js`) before pushing. Properties that have
 sold or been withdrawn should be removed rather than marked stale.
+
+## Daily automated refresh
+
+The `Tadaima daily content refresh` GitHub Actions workflow runs daily at
+**07:20 Asia/Tokyo** (22:20 UTC the preceding day; GitHub can start it late).
+It rechecks unique detail-page sources in all 23 live editions and scans SUUMO
+city/ward search pages for new houses and land. It checks up to two new detail
+pages per search page per run. This is a bounded discovery scan, not an
+exhaustive search of every portal or every results page.
+
+Only unambiguous matching property facts update existing cards. New additions
+must meet the edition's budget/walk limits and have single-property area,
+construction (houses), source-date and legal fields. They carry the source's
+legal text plus an explicit warning that agent confirmation is still needed.
+Index-only/shared links and blocked, missing or ambiguous pages retain their
+existing facts. An explicit withdrawal notice must be seen on consecutive days
+before a record is removed; HTTP errors alone never remove a property.
+
+Each verified record receives `source.checkedOn`; the original editorial
+`site.researchedOn` is preserved. The job rebuilds city data, hub counts and
+prices, search index, aggregate JSON, metadata and sitemap together, commits
+validated changes, then explicitly deploys via the shared Pages workflow.
+No paid API or extra repository secret is required.
+
+To inspect coverage, open the workflow's summary and `tadaima-verification-*`
+artifact. Failures remain visible; an all-unverified scan fails without changing
+the site. Partial scans preserve unverified records. The workflow also offers a
+manual **dry_run** input that does not commit or deploy.
+
+Local verification:
+
+```sh
+python -m pip install -r tadaima-refresh/requirements.txt
+python -m unittest discover -s tadaima-refresh/tests -v
+python tadaima-refresh/refresh.py --dry-run --cities kawagoe --max-existing 8 --max-new 1
+```
+
+The automated rebuild is implemented in `../tadaima-refresh/build.py`; it
+preserves the scoring blocks already committed in each city's JSON. The older
+`build_<city>_data.py`, `apply_site_config.py`, `build_registry.py` and smoke-tool
+references above describe the original editorial workflow; those scripts are
+not present in this repository.

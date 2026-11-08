@@ -1,0 +1,118 @@
+name: Tadaima daily content refresh
+
+on:
+  schedule:
+    # 22:20 UTC = 07:20 next day Asia/Tokyo; scheduled jobs can start late.
+    - cron: '20 22 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Check sources and discovery without changing published data
+        type: boolean
+        required: false
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'tadaima-refresh/**'
+      - '.github/workflows/tadaima-refresh.yml'
+  pull_request:
+    paths:
+      - 'tadaima-refresh/**'
+      - '.github/workflows/tadaima-refresh.yml'
+      - 'Tadaima/**/data/properties.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tadaima-refresh-${{ github.event_name == 'pull_request' && github.event.pull_request.number || 'daily' }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tadaima-refresh/requirements.txt
+      - name: Test parsers, source failures, merges and generated data
+        run: python -m unittest discover -s tadaima-refresh/tests -v
+      - name: Validate every existing city collection
+        run: |
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          sys.path.insert(0, 'tadaima-refresh')
+          from build import validate
+          for path in Path('Tadaima').glob('*/data/properties.json'):
+              validate(json.loads(path.read_text(encoding='utf-8')))
+          PY
+      - run: node --check Tadaima/shared/app.js
+
+  refresh:
+    needs: test
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+      commit_sha: ${{ steps.commit.outputs.commit_sha }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tadaima-refresh/requirements.txt
+      - name: Recheck properties and discover candidates in all live cities
+        env:
+          DRY_RUN: ${{ inputs.dry_run || false }}
+        run: |
+          args=()
+          if [ "$DRY_RUN" = 'true' ]; then args+=(--dry-run); fi
+          python -u tadaima-refresh/refresh.py "${args[@]}"
+      - name: Commit verified content and generated indexes
+        id: commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- Tadaima
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            git commit -m 'Refresh Tadaima property sources and discovery'
+            # A concurrent human push causes a safe failure, never a force-push.
+            git push origin HEAD:main
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+            echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Preserve source coverage and verification report
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: tadaima-verification-${{ github.run_id }}
+          path: |
+            tadaima-refresh/run-report.json
+            Tadaima/refresh/state.json
+          if-no-files-found: warn
+          retention-days: 14
+
+  deploy:
+    needs: refresh
+    if: ${{ needs.refresh.outputs.changed == 'true' }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    # Token-authored commits do not trigger push workflows. Deploy explicitly.
+    uses: ./.github/workflows/deploy-pages.yml
+    with:
+      ref: ${{ needs.refresh.outputs.commit_sha }}
