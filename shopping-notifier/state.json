@@ -370,7 +370,7 @@
     "cotopaxijapan:9246627070140:45992675246268": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-11-02T10:11:09+09:00",
+      "sent_at": "2026-11-09T10:22:15+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-vest-mens-sale26ss?variant=45992675246268"
     },
     "cotopaxijapan:9246627659964:45992682881212": {
@@ -418,7 +418,7 @@
     "saucony-jp:8596880752792:45827129344152": {
       "sale_price": "15400",
       "reference_price": "30800",
-      "sent_at": "2026-10-26T08:44:34+09:00",
+      "sent_at": "2026-11-09T10:22:15+09:00",
       "url": "https://saucony.jp/products/womens-endorphin-trainer?variant=45827129344152"
     },
     "brooksrunning-co-jp:8467328172329:45789177250089": {
@@ -730,7 +730,7 @@
     "boardriders-co-jp:10631289635097:52412836282649": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-11-02T10:11:09+09:00",
+      "sent_at": "2026-11-09T10:22:15+09:00",
       "url": "https://boardriders.co.jp/products/n0452500?variant=52412836282649"
     },
     "boardriders-co-jp:9779335069977:49986664071449": {
@@ -850,7 +850,7 @@
     "boardriders-co-jp:10631289110809:52412829729049": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-11-02T10:11:09+09:00",
+      "sent_at": "2026-11-09T10:22:15+09:00",
       "url": "https://boardriders.co.jp/products/g1352516?variant=52412829729049"
     },
     "boardriders-co-jp:9781515944217:50213834522905": {
@@ -915,9 +915,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-11-08",
-    "coverage_key": "d360cfb927acd7fd374815644a8a26c60ffb44075cbfb171dd299fa216fe3d1a",
-    "completed_at": "2026-11-08T10:02:29+09:00",
-    "digest_hash": "0c232f2d1888b6e93e76b1d0cf0824b63d955811cfb9ac41b6aa5173d36b8a3e"
+    "date": "2026-11-09",
+    "coverage_key": "e52ca2832a901abb9595a24c36db49c328faf7e88a4b92124909a7f2d9e21a56",
+    "completed_at": "2026-11-09T10:22:15+09:00",
+    "digest_hash": "8696a864a72f0a0ad4e7a26cb978f9fbcbc42a8918b9a1444d5bec29c32c7cc3"
   }
 }
