@@ -58,8 +58,13 @@
     grid.replaceChildren(...found.slice(0, limit).map((place, index) => {
       const card = document.createElement('article'); card.className = 'destination-card';
       const image = document.createElement('div'); image.className = 'card-image-wrap';
-      image.style.backgroundImage = `linear-gradient(0deg,rgba(7,14,12,.3),transparent 42%),url(https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1100&q=82)`;
+      const cover = (Array.isArray(place.gallery) ? place.gallery[0] : null) || { url: `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88`, alt: place.alt || place.name, caption: place.name, credit: 'Unsplash', source: 'https://unsplash.com/' };
+      const coverUrl = cover.url.startsWith('https://images.unsplash.com/') && !cover.url.includes('?')
+        ? `${cover.url}?auto=format&fit=crop&w=1200&q=88` : cover.url;
+      image.style.backgroundImage = `linear-gradient(0deg,rgba(7,14,12,.32),transparent 42%),url("${coverUrl.replaceAll('"', '%22')}")`;
       image.style.backgroundSize = 'cover'; image.style.backgroundPosition = 'center';
+      image.setAttribute('role', 'img'); image.setAttribute('aria-label', cover.alt || cover.caption || place.name);
+      image.title = `Photograph: ${cover.caption || cover.alt || place.name} · ${cover.credit || 'Photo source'}`;
       const badge = document.createElement('span'); badge.className = 'card-region'; badge.textContent = place.region;
       const number = document.createElement('span'); number.className = 'card-index'; number.textContent = String(index + 1).padStart(2, '0');
       image.append(badge, number);
