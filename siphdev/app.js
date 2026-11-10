@@ -5,6 +5,7 @@
   const regions = window.PHILIPPINES_REGIONS || [];
   const moods = window.PHILIPPINES_MOODS || [];
   const placeById = new Map(places.map(place => [place.id || place.slug || place.name, place]));
+  let sortMode = 'featured';
   const grid = document.querySelector('#destination-grid');
   const search = document.querySelector('#place-search');
   const regionFilters = document.querySelector('#region-filters');
@@ -55,7 +56,11 @@
       terms.every(term => `${place.name} ${place.place} ${place.region} ${place.description} ${place.tags.join(' ')}`.toLowerCase().includes(term))
     );
     resultCount.textContent = `${found.length} ${found.length === 1 ? 'place' : 'places'}`;
-    grid.replaceChildren(...found.slice(0, limit).map((place, index) => {
+    const ordered = [...found];
+    if (sortMode === 'alphabetical') ordered.sort((a, b) => a.name.localeCompare(b.name));
+    if (sortMode === 'region') ordered.sort((a, b) => regions.indexOf(a.region) - regions.indexOf(b.region) || a.name.localeCompare(b.name));
+    if (sortMode === 'saved') ordered.sort((a, b) => Number(savedIds.has(idOf(b))) - Number(savedIds.has(idOf(a))) || a.name.localeCompare(b.name));
+    grid.replaceChildren(...ordered.slice(0, limit).map((place, index) => {
       const card = document.createElement('article'); card.className = 'destination-card';
       const image = document.createElement('div'); image.className = 'card-image-wrap';
       const cover = (Array.isArray(place.gallery) ? place.gallery[0] : null) || { url: `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1200&q=88`, alt: place.alt || place.name, caption: place.name, credit: 'Unsplash', source: 'https://unsplash.com/' };
@@ -65,6 +70,11 @@
       image.style.backgroundSize = 'cover'; image.style.backgroundPosition = 'center';
       image.setAttribute('role', 'img'); image.setAttribute('aria-label', cover.alt || cover.caption || place.name);
       image.title = `Photograph: ${cover.caption || cover.alt || place.name} · ${cover.credit || 'Photo source'}`;
+      const photoLink = document.createElement('a'); photoLink.className = 'card-photo-credit';
+      photoLink.href = cover.page || cover.source || 'https://commons.wikimedia.org/'; photoLink.target = '_blank';
+      photoLink.rel = 'noopener noreferrer'; photoLink.textContent = `Photo · ${cover.credit || 'Source'} ↗`;
+      photoLink.setAttribute('aria-label', `Photo credit for ${place.name}: ${cover.caption || cover.alt || place.name}, by ${cover.credit || 'source'}`);
+      photoLink.addEventListener('click', event => event.stopPropagation()); image.append(photoLink);
       const badge = document.createElement('span'); badge.className = 'card-region'; badge.textContent = place.region;
       const number = document.createElement('span'); number.className = 'card-index'; number.textContent = String(index + 1).padStart(2, '0');
       image.append(badge, number);
@@ -198,6 +208,7 @@
     if (!dialogPlace) return;
     const id = idOf(dialogPlace);
     if (savedIds.has(id)) savedIds.delete(id); else savedIds.add(id);
+    if (sortMode === 'saved') renderCards();
     dialog.querySelector('#place-dialog-save').textContent = savedIds.has(id) ? '♥ Saved on this device' : '♡ Save this place';
     dialog.querySelector('#place-dialog-save').setAttribute('aria-pressed', String(savedIds.has(id)));
     saveDraft();
@@ -367,6 +378,7 @@
 
   form.addEventListener('submit', event => { event.preventDefault(); if (form.reportValidity()) buildDraft(); });
   search.addEventListener('input', () => { limit = 12; renderCards(); });
+  document.querySelector('#place-sort').addEventListener('change', event => { sortMode = event.currentTarget.value; limit = 12; renderCards(); });
   document.querySelector('#show-more').addEventListener('click', () => { limit += 12; renderCards(); });
   document.querySelectorAll('[data-map-region]').forEach(node => node.addEventListener('click', event => {
     if (node.tagName === 'A') event.preventDefault();
