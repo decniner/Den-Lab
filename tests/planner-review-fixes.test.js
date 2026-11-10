@@ -35,7 +35,7 @@ test('Tokyo heading explains that only Tokyo has sourced price comparisons', asy
 
 test('city origin script uses a fresh cache key for the selected-route fix', async () => {
   const loader = await read(`${site}/feature-loader.js`);
-  assert.match(loader, /city-origin-ui\.js\?v=planner-fixes-20261101-2/);
+  assert.match(loader, /city-origin-ui\.js\?v=hallmark-20261110-1/);
 });
 
 test('Tokyo field-note links stay inside the Dev Version and select the matching route', async () => {
