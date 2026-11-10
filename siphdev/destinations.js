@@ -166,4 +166,5 @@ const PREMIUM_FIELD_NOTES = {
 
 for (const place of DESTINATIONS) {
   Object.assign(place, PREMIUM_FIELD_NOTES[place.name] || {});
+  place.gallery = (window.PHILIPPINES_PHOTO_COLLECTIONS || {})[place.name] || [];
 }

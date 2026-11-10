@@ -19,6 +19,8 @@
   const shortlistRoot = document.querySelector('#itinerary-shortlist');
   const dialog = document.querySelector('#place-dialog');
   const dialogImage = document.querySelector('#place-dialog-image');
+  const galleryRoot = document.querySelector('#place-dialog-thumbnails');
+  const photoCredit = document.querySelector('#place-photo-credit');
   const spotlight = {
     name: document.querySelector('#region-spotlight-name'),
     count: document.querySelector('#region-spotlight-count'),
@@ -110,12 +112,55 @@
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name}, ${place.place}, Philippines`)}`;
   }
 
+  function renderPlaceGallery(place) {
+    const photos = Array.isArray(place.gallery) ? [...place.gallery] : [];
+    const seen = new Set(photos.map(photo => photo.url));
+    const related = places.filter(candidate => candidate !== place && candidate.region === place.region &&
+      candidate.tags.some(tag => place.tags.includes(tag)));
+    const pool = [place, ...related, ...places.filter(candidate => candidate !== place)];
+    const imageIds = new Set();
+    for (const photo of photos) {
+      const match = photo.url.match(/photo-\d+-[a-f0-9]+/i);
+      if (match) imageIds.add(match[0]);
+    }
+    for (const candidate of pool) {
+      const imageId = candidate.image;
+      const url = `https://images.unsplash.com/${imageId}?auto=format&fit=crop&w=1500&q=88`;
+      if (seen.has(url) || imageIds.has(imageId)) continue;
+      seen.add(url); imageIds.add(imageId);
+      photos.push({ url, alt: candidate.alt || `${candidate.name}, Philippines`, caption: `${candidate.name} · Unsplash`, credit: 'Unsplash', source: 'https://unsplash.com/', license: 'Unsplash photo', imageId });
+      if (photos.length >= 4) break;
+    }
+    const current = photos[0];
+    const imageUrl = (photo, width) => photo.source === 'https://unsplash.com/' && !photo.url.startsWith('https://')
+      ? `https://images.unsplash.com/${photo.url}?auto=format&fit=crop&w=${width}&q=86`
+      : `${photo.url}${photo.url.includes('?') ? '&' : '?'}auto=format&fit=crop&w=${width}&q=88`;
+    const showPhoto = (photo, index) => {
+      dialogImage.src = imageUrl(photo, 1500);
+      dialogImage.alt = photo.alt || photo.caption || place.name;
+      photoCredit.replaceChildren();
+      const link = document.createElement('a'); link.href = photo.page || photo.source || 'https://unsplash.com/';
+      link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = photo.credit || 'Photo source';
+      photoCredit.append('Photo ', String(index + 1).padStart(2, '0'), ' · ', link, ` · ${photo.license || ''}`);
+      galleryRoot.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.photoIndex) === index)));
+    };
+    galleryRoot.replaceChildren(...photos.slice(0, 4).map((photo, index) => {
+      const button = document.createElement('button'); button.className = 'place-photo-thumb'; button.type = 'button';
+      button.dataset.photoIndex = String(index); button.setAttribute('aria-pressed', String(index === 0));
+      button.setAttribute('aria-label', `Show photo ${index + 1}: ${photo.caption || photo.alt || place.name}`);
+      const image = document.createElement('img'); image.src = imageUrl(photo, 360);
+      image.alt = ''; image.loading = 'lazy';
+      const label = document.createElement('span'); label.textContent = String(index + 1).padStart(2, '0');
+      button.append(image, label); button.addEventListener('click', () => showPhoto(photo, index)); return button;
+    }));
+    if (current) showPhoto(current, 0);
+  }
+
   function openPlace(place) {
     dialogTrigger = document.activeElement;
     dialogPlace = place;
     const id = idOf(place);
-    dialogImage.src = `https://images.unsplash.com/${place.image}?auto=format&fit=crop&w=1300&q=86`;
-    dialogImage.alt = place.alt || `${place.name}, ${place.place}`;
+    renderPlaceGallery(place);
     dialog.querySelector('#place-dialog-number').textContent = String(places.indexOf(place) + 1).padStart(2, '0');
     dialog.querySelector('#place-dialog-region').textContent = `${place.region} / PHILIPPINES FIELD GUIDE`;
     dialog.querySelector('#place-dialog-title').textContent = place.name;
