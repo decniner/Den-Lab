@@ -1422,3 +1422,22 @@ button:active,a:active{filter:brightness(.9)}
 .atlas-region-pin:hover,.atlas-region-pin.is-current{background:#b96a49}
 @media(max-width:800px){.atlas-hero{grid-template-columns:1fr;gap:26px;padding-top:115px}.atlas-hero .hero-image-panel{height:54vw;min-height:300px}.atlas-japan-layout{grid-template-columns:1fr}.map-image-frame{min-height:360px}}
 @media(max-width:640px){.atlas-hero{padding:100px 24px 86px}.atlas-hero .hero-image-panel{min-height:270px}.ph-map{max-height:420px}.map-image-frame{min-height:300px}}
+
+/* Philippines v2 place sheets and editable stop draft */
+.place-season-note{margin:19px 0 0;padding-top:15px;border-top:1px solid var(--line);color:var(--c-hex-67685f);font:12px/1.65 var(--sans)}
+.place-story-block{margin-top:24px}.place-story-kicker{margin:0 0 9px;color:var(--c-hex-765b48);font:700 9px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase}.place-story-block>p:last-child{margin:0;color:var(--c-hex-3e4943);font:15px/1.85 var(--serif)}
+.place-care-note{margin:20px 0 0;padding:15px 17px;border-left:2px solid var(--accent);background:rgba(189,98,74,.08)}.place-care-note strong{color:var(--c-hex-765b48);font:700 9px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase}.place-care-note p{margin:7px 0 0;color:var(--c-hex-67685f);font:12px/1.7 var(--sans)}
+.card-title-button{display:block;padding:0;border:0;background:none;text-align:left;cursor:pointer}.card-title-button:hover{color:var(--c-hex-e4b193)}.card-title-button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.place-dialog-copy .eyebrow{color:var(--c-hex-9c634f)}
+.itinerary-shortlist{display:grid;gap:9px;margin:20px 0}
+.itinerary-shortlist[hidden]{display:none}
+.itinerary-shortlist-title{margin:0 0 2px;color:var(--c-hex-765b48);font:700 10px/1.4 var(--sans)}
+.itinerary-shortlist-item{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 13px;background:var(--c-hex-f4f0e8);border:1px solid var(--c-rgb-38-54-45-p14);color:var(--c-hex-273a31);font:12px/1.5 var(--sans)}
+.itinerary-shortlist-item button{border:0;background:none;color:var(--c-hex-a4543e);font:600 11px var(--sans);cursor:pointer}
+.itinerary-day-edit{display:grid;gap:7px;margin:12px 0}
+.itinerary-day-edit select{width:100%;min-height:42px;padding:8px 10px;border:1px solid var(--line);background:#fffdf8;color:var(--ink);font:12px var(--sans)}
+.itinerary-day-empty{color:var(--c-hex-77736a);font:13px/1.6 var(--sans)}
+.itinerary-transfer-note{padding:12px 14px;background:rgba(189,98,74,.1);border-left:2px solid var(--accent);color:var(--ink);font:12px/1.6 var(--sans)}
+.itinerary-share-url{width:100%;min-height:42px;margin-top:9px;padding:9px;border:1px solid var(--line);background:#fffdf8;color:var(--ink);font:11px var(--sans)}
+.itinerary-result-tools>div{display:flex;flex-wrap:wrap;gap:8px}
+@media print{.site-header,.hero,.field-atlas-section,.itinerary-form,.itinerary-result-tools>div,.destinations-section,.atlas-afterword,.site-footer{display:none!important}.itinerary-section{padding:0;background:#fff;color:#111}.itinerary-days-output{display:block!important}.itinerary-day{break-inside:avoid;border:1px solid #aaa;background:#fff;color:#111}.itinerary-transfer-note{break-inside:avoid}}

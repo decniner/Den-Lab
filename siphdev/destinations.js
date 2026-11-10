@@ -36,3 +36,134 @@ const DESTINATIONS = [
 window.DESTINATIONS = DESTINATIONS;
 window.PHILIPPINES_REGIONS = REGIONS;
 window.PHILIPPINES_MOODS = MOODS;
+
+const PREMIUM_FIELD_NOTES = {
+  'Vigan, after the last bell': {
+    story: 'Vigan is a port town whose streets record many histories at once. Along the old core, stone paving, timber houses, and inward-facing courtyards reflect Ilocano, Chinese, and Spanish influences shaped by trade and everyday life. The town rewards a slow walk: notice the scale of the houses from the street, then look for the quieter thresholds between public lanes and family space. Its heritage is lived in, repaired, and carried forward by the people who call Vigan home.',
+    visitNote: 'Walk gently through residential streets, ask before photographing people or private interiors, and support local makers and businesses. UNESCO recognizes the Historic City of Vigan for its distinctive townscape.'
+  },
+  'Banaue and Batad, the high terraces': {
+    story: 'In Ifugao, terraces are not simply a view carved into a mountain. They are part of a living agricultural landscape, with water, stone, forest, houses, and community knowledge held in relationship. Batad’s amphitheater-like fields make that human geometry especially legible from above; at village level, the scale changes to narrow paths and working slopes. The wider Cordillera contains several distinct terrace clusters, each with its own shape and local context.',
+    visitNote: 'Use local guides and established paths, never walk on terrace walls or growing plots, and ask permission before taking portraits. Conditions on steep paths change with rain; follow local advice.'
+  },
+  'Manila, in layers': {
+    story: 'Manila is best understood as a set of close, sometimes contrasting worlds. Intramuros keeps traces of the walled colonial city, while Binondo, museums, parks, churches, and busy neighborhood streets tell wider stories of migration, trade, faith, resistance, and contemporary life. Rather than trying to cross the metropolis in a single sweep, choose one area and let its details accumulate: a shaded plaza, a food stall, a museum room, then the city moving around you.',
+    visitNote: 'Plan by neighborhood and allow generous time for city movement. Seek out locally run food and cultural spaces, and check current opening information before setting out.'
+  },
+  'Batanes, at the northern edge': {
+    story: 'Batanes is an archipelago where low stone walls, rolling pasture, and sea-facing settlements make the weather part of the landscape. Ivatan building traditions respond to strong winds and heavy rain, while the islands’ open horizons encourage an unhurried kind of looking. A visit is not only about a dramatic viewpoint; it is also about the care embedded in local architecture and the daily life of communities at the country’s northern edge.',
+    visitNote: 'Travel plans here depend on weather and local access. Ask before entering private land, respect homes and stone structures, and follow local guidance around exposed coasts.'
+  },
+  'Mayon, the perfect cone': {
+    story: 'Mayon’s near-symmetrical cone is striking because it dominates the surrounding plain, but the mountain is an active volcano, not a backdrop detached from local life. Farms, towns, roads, and communities share the wider landscape with it. From a safe viewpoint, look beyond the familiar outline to the changing light on its slopes and the way settlements orient themselves around the volcano. The view is never guaranteed: cloud, ash, and current activity can alter what is visible and where visitors may go.',
+    visitNote: 'Check PHIVOLCS and local government advisories before planning a visit. Stay outside restricted zones and use designated viewpoints; conditions and access can change quickly.'
+  },
+  'Taal, lake within a lake': {
+    story: 'Taal’s layered geography is easy to describe and harder to take in: a volcanic island sits within a lake, itself held inside a larger caldera landscape. From the surrounding shore, the view links water, settlement, and volcanic terrain in one frame. The island and lake are also part of an active volcanic system, so the most thoughtful way to experience Taal is from a safe, permitted vantage point, with attention to the living communities around the basin.',
+    visitNote: 'Check the latest PHIVOLCS and local advisories. Do not plan an island landing or approach restricted areas unless authorities explicitly confirm access.'
+  },
+  'Paoay, stone and shadow': {
+    story: 'The Church of San Agustin in Paoay belongs to the Baroque Churches of the Philippines World Heritage property. Its broad structure and massive buttresses show how builders adapted European forms to local materials, climate, and seismic conditions. Step back to read the building as a whole, then look closely at the patterned surfaces and the way shadow defines its depth. It remains a place of worship as well as an architectural landmark, with an active relationship to its town.',
+    visitNote: 'Dress respectfully and check whether services or local events affect visitor access. UNESCO lists Paoay Church within the Baroque Churches of the Philippines.'
+  },
+  'Baguio, pine air and market mornings': {
+    story: 'Baguio’s highland setting gives the city a different rhythm from the lowland capitals: pine-covered slopes meet dense neighborhoods, public parks, markets, and a creative civic life. Its cooler air is part of the appeal, but the city is also a place of work and study, not only a mountain retreat. Start with a walk through a public green space, then follow the everyday food and craft culture around the market and nearby streets.',
+    visitNote: 'Give the city time between stops and use designated walkways and public spaces. Ask vendors before photographing their stalls, and support local artists and small businesses.'
+  },
+  'Hundred Islands, by small boat': {
+    story: 'In Lingayen Gulf, the Hundred Islands are a scattered limestone seascape whose silhouettes shift as a boat moves between them. The name gives a sense of abundance rather than an exact count of every visible feature. Seen from the water, the islands make a day of changing distance: one low sand edge, one steep green rise, then open gulf again. The experience depends on tides, weather, park rules, and how visitors share these small landings.',
+    visitNote: 'Choose a licensed local boat operator, follow park instructions, pack out all waste, and avoid disturbing wildlife or fragile shorelines. Boat access depends on sea conditions.'
+  },
+  'Anilao, below the surface': {
+    story: 'Anilao is known among divers for the small things: patterned nudibranchs, unusual reef life, and the patient search that turns a dive into close observation. That attention changes the scale of the coast. A careful guide can help visitors notice more while keeping buoyancy, fins, and equipment away from living coral. Above the water, the shoreline remains a working coastal community, so the visit is strongest when marine curiosity is paired with respect for local rules and livelihoods.',
+    visitNote: 'Use a responsible dive or snorkel operator, keep hands and fins clear of coral, and never handle marine life. Follow sanctuary boundaries and current site guidance.'
+  },
+  'Pampanga, the long table': {
+    story: 'Pampanga’s food traditions are rooted in place, technique, and family memory. The best introduction is not a checklist of famous dishes but a table shared at the pace of the people who prepared it. Ask what is local today, notice the balance of sour, savory, and rich flavors, and leave room for ingredients or preparations unfamiliar to you. Kapampangan cooking has a strong regional identity, carried by home kitchens, markets, restaurants, and cooks who keep adapting it.',
+    visitNote: 'Follow local recommendations, ask about ingredients and dietary needs, and pay fairly for the work behind a meal. Market hours and seasonal specialties vary.'
+  },
+  'Bohol, hills and river shade': {
+    story: 'Bohol brings very different landscapes into one island: the clustered limestone mounds of the interior, river valleys under deep green cover, old churches, and a long coastline. The Chocolate Hills change color with grass and weather, so the landscape never looks exactly the same across the year. Give the upland view its own pause rather than racing between attractions; the spaces between stops are part of how Bohol’s varied terrain becomes visible.',
+    visitNote: 'Stay on marked viewpoints and paths, never climb the hills, and keep wildlife viewing quiet and hands-off. Bohol’s official tourism guide describes a broad mix of inland and coastal landscapes.'
+  },
+  'Cebu, old streets to reef': {
+    story: 'Cebu holds a long history of movement across the central islands. In Cebu City, churches, forts, markets, and newer streets sit close together; farther out, the island’s uplands and coast open into very different day shapes. The name “Cebu” can mean the city, the island, or the wider province, so a good plan begins by choosing which one you mean. Stay local to your base and let the next coast or highland visit be a separate outing.',
+    visitNote: 'Check which Cebu destination you are traveling to before booking transfers. Reefs, falls, and heritage sites each have local rules; use community guidance and accredited operators.'
+  },
+  'Boracay, before the shoreline wakes': {
+    story: 'White Beach is most memorable when treated as a public shoreline rather than a resort amenity: a long strip of sand, changing light, and people sharing the water’s edge. The island has gone through major rehabilitation, and its future depends on choices made by visitors and businesses alike. Walk the beach early or late, notice how the tide reshapes the edge, and explore beyond the central stretch to understand the island as a whole.',
+    visitNote: 'Respect current beach and marine rules, use refillable containers where practical, and avoid leaving anything on the sand. Follow local guidance for swimming and water activities.'
+  },
+  'Siquijor, a quieter circuit': {
+    story: 'Siquijor’s reputation for folk healing and stories of the unseen sits alongside waterfalls, coastal roads, old trees, and small communities. Treat the folklore as living cultural knowledge, not a spectacle to demand from residents. Away from the coast, forest and freshwater places offer a slower counterpoint to beach time. A thoughtful circuit leaves space for conversation and rest rather than trying to turn the entire island into a single-day itinerary.',
+    visitNote: 'Approach cultural traditions with curiosity and consent; do not pressure healers or residents to perform or be photographed. Check local safety advice at waterfalls and caves.'
+  },
+  'Apo Island, reef with care': {
+    story: 'Apo Island is a community-managed marine sanctuary where reef protection and local livelihoods are closely connected. In clear water, fish and coral can feel close enough to touch; that closeness is precisely why distance matters. A snorkel or dive is best when it becomes observation rather than pursuit: float calmly, keep fins away from the reef, and let turtles choose their own path. The marine landscape is the main story, with community stewardship at its center.',
+    visitNote: 'Never touch, chase, feed, or stand on coral or turtles. Follow sanctuary rules and local guides, and bring all waste back to shore.'
+  },
+  'Iloilo, stone churches and batchoy': {
+    story: 'Iloilo offers a city-scale way into Western Visayan history and food. Heritage buildings and churches give the streets a long architectural memory, while public spaces, markets, and restaurants show how the city continues to change. A bowl of batchoy is one possible entry point, but the broader food culture reaches well beyond any single dish. Stay on foot where possible and notice how the urban core brings civic life, commerce, and everyday meals together.',
+    visitNote: 'Keep church visits respectful and check access during services. Ask before photographing people at markets, and use current local sources for heritage-site opening information.'
+  },
+  'Guimaras, mango country': {
+    story: 'Guimaras is often introduced through its mangoes, but its quieter pleasures are rural roads, coastal views, and the transition from the city of Iloilo to a slower island landscape. Orchards and farms are working places, not photo sets. A visit can be shaped around what is actually in season, a locally prepared meal, and a few unhurried stops rather than a race around the island. The short sea gap does not make the crossing or onward travel automatic; plan each leg locally.',
+    visitNote: 'Buy produce from local sellers and ask before entering farms or taking photographs. Ferry services, harvest timing, and island transport should be confirmed close to travel.'
+  },
+  'Samar, caves and cathedral rock': {
+    story: 'Samar’s limestone country is a world of forests, karst, rivers, and caves formed over long periods of water moving through stone. The scale can be difficult to read from a road; a local guide helps turn a cave entrance or forest path into a place with context. Underground environments are fragile, and darkness preserves delicate formations and wildlife. The reward is not a dramatic pose but a closer understanding of how water and rock shape this part of Eastern Visayas.',
+    visitNote: 'Enter caves only with authorized local guidance, follow conservation rules, and never touch formations or disturb bats and other wildlife. Check current access before departure.'
+  },
+  'Bantayan, island mornings': {
+    story: 'Bantayan sits at the northern reach of Cebu, where daily life follows the coast and the tide as much as visitor schedules. White-sand shorelines draw attention, but the island’s older churches, fishing communities, and small-town routines give a fuller picture. Early hours are good for noticing the island before the beach becomes the whole story: boats, market movement, and the quiet work that supports a coastal place.',
+    visitNote: 'Swim only where local advice says conditions are safe; currents and weather can change. Ask before photographing fishing activity and buy seafood through local businesses.'
+  },
+  'Siargao, first light at Cloud 9': {
+    story: 'Siargao is a surf island, but it is also a place of mangroves, villages, sandbars, and everyday life beyond the break. Cloud 9 draws experienced surfers to a powerful reef wave; nearby waters have different conditions and should not be treated as interchangeable. Watching from the boardwalk can be as rewarding as entering the water. Across the island, boat trips and inland stops reveal a more varied landscape than the surf-town image alone.',
+    visitNote: 'Match surf conditions to your ability, seek local instruction, and respect lineups and residents. Reef entries, tides, and boat access need current local guidance.'
+  },
+  'Camiguin, the island born of fire': {
+    story: 'Camiguin’s volcanic past is visible in steep green slopes, hot springs, waterfalls, and a small offshore sandbar that changes with the tide. The island is compact in outline yet vertically dramatic, and its landscape is best read by giving each elevation a little time. Geology here is not just scenery: it shapes soil, water, settlement, and local memory. A thoughtful visit balances famous viewpoints with ordinary town life and the quiet coast between them.',
+    visitNote: 'Check volcanic advisories and local access before visiting geothermal areas. Use marked paths, respect bathing-site rules, and avoid leaving waste on the shore or sandbar.'
+  },
+  'Davao, city beneath Apo': {
+    story: 'Davao is a large southern city framed by a mountain-and-coast region, with public parks, markets, food culture, and routes into very different landscapes. Mount Apo gives the region a striking horizon, but summit plans are separate, permit-led excursions rather than a casual day trip. In the city, begin with a neighborhood or public space, sample seasonal produce, and let local life—not only the mountain view—set the shape of the visit.',
+    visitNote: 'For protected areas and mountain routes, arrange required permits and accredited local guidance. Check local advisories and visitor rules before leaving the city.'
+  },
+  'Lake Sebu, water and weaving': {
+    story: 'Lake Sebu is a highland lake landscape and a center of T’boli cultural life. T’nalak weaving carries knowledge, design, and identity; it is not a souvenir motif detached from the people who make it. The lakes, waterfalls, and forested surroundings offer a quieter natural frame, but the most meaningful visits often begin with listening to local hosts and cultural practitioners. Let the place be introduced on its own terms rather than reduced to a scenic stop.',
+    visitNote: 'Buy directly from T’boli makers where possible, ask before photographing people or cultural practices, and follow host guidance at cultural sites.'
+  },
+  'Tinuy-an, the wide waterfall': {
+    story: 'Tinuy-an spreads across the rock face in a broad, tiered curtain, giving the water a different presence from a narrow plunge waterfall. Forest surrounds the approach, and the changing volume and color of the river make the visit feel different after rain. The setting encourages a longer pause: watch the water before reaching for a camera, and notice how sound fills the valley. The waterfall is a natural place with local caretakers and access rules.',
+    visitNote: 'Use designated viewing and swimming areas, follow local instructions about water conditions, and avoid climbing wet rock. Confirm current access and road conditions.'
+  },
+  'Britannia, limestone seascape': {
+    story: 'The Britannia group is a scatter of limestone islands in the water off Surigao del Sur. From a boat, the shapes repeat and shift as the route crosses the bay; at low tide, sand and shallow water redraw the edges. The visual simplicity can make the setting seem untouched, but it is a shared marine environment and a working coastal community. A good visit follows the sea’s conditions and leaves the islands as undisturbed as possible.',
+    visitNote: 'Choose a licensed local boat crew, follow landing rules, and take every item of rubbish back with you. Trips depend on sea state and local safety guidance.'
+  },
+  'Mount Hamiguitan, a pygmy forest': {
+    story: 'Mount Hamiguitan’s protected range holds a striking change in forest character across elevation, including its distinctive bonsai or pygmy forest. The landscape is valuable for its ecosystems and endemic life, not only for the unusual appearance of the trees. Reaching it is a conservation-led visit that depends on local management and preparation. Read the mountain as a living habitat first: the trail passes through a place whose protection matters more than a summit photograph.',
+    visitNote: 'Arrange permits and accredited local guides, stay on authorized trails, and follow all sanctuary rules. UNESCO recognizes the range as a World Heritage property for its biodiversity.'
+  },
+  'El Nido, limestone and lagoons': {
+    story: 'Around El Nido, steep karst cliffs rise directly from Bacuit Bay, enclosing lagoons, coves, and small beaches. From a boat, the scale of limestone becomes architectural: walls, openings, and sheltered water create a sequence of changing spaces. The bay is a protected and heavily visited seascape, so the quality of a day depends on more than finding a hidden cove. Choose a responsible operator, move carefully in shallow areas, and let the route respond to conditions.',
+    visitNote: 'Follow protected-area and boat-tour rules, use reef-safe practices, and never touch coral. Tours may change with weather, sea conditions, or conservation closures.'
+  },
+  'Coron, lake and wreck country': {
+    story: 'Coron is a meeting of limestone ridges, clear lakes, reefs, and submerged wartime wrecks. Each setting carries a different responsibility: a lake asks visitors to respect access rules, while wreck dives bring history and marine life into the same frame. The area is also part of Indigenous Tagbanua ancestral territory, so stewardship is central to how places are visited. Plan fewer stops with time to listen to guides and understand the context of the water beneath you.',
+    visitNote: 'Follow Tagbanua and protected-area rules, use licensed operators, and avoid touching wrecks or marine life. Confirm current fees, access, and weather locally.'
+  },
+  'Puerto Princesa, river under stone': {
+    story: 'The Puerto-Princesa Subterranean River travels through a limestone cave system before meeting the sea. Its underground passage is part of a wider national park where forest, coast, and karst meet. The cave is not a backdrop for noise or flash photography; darkness and quiet are part of the habitat. A guided visit can make the geological scale easier to understand, from cave formations to the tidal influence at the river mouth.',
+    visitNote: 'Follow park instructions, keep noise low, and avoid flash or touching cave formations. Entry is managed and can require advance arrangements; verify current rules.'
+  },
+  'Tubbataha, reef at the edge': {
+    story: 'Far out in the Sulu Sea, Tubbataha protects an extensive reef system and the life connected to it. The distance from shore is part of the experience: visitors generally encounter the park through carefully managed liveaboard diving, within a limited seasonal window. Above and below the surface, the reef’s value is ecological rather than theatrical. The best visit is one where the operator’s conservation practice is as carefully chosen as the dive route.',
+    visitNote: 'Use authorized operators and follow park regulations. Never touch, feed, or collect marine life; confirm the current season, permits, and access rules with park authorities.'
+  }
+};
+
+for (const place of DESTINATIONS) {
+  Object.assign(place, PREMIUM_FIELD_NOTES[place.name] || {});
+}
