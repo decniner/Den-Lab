@@ -21,7 +21,7 @@
     'https://decniner.github.io/Den-Lab/SomeWhereInJapan/vendor/maplibre-gl/maplibre-gl.js?v=20261023-3',
     'city-route-map.js?v=20261023-10',
     'google-maps-routes.js?v=20261024-4',
-    'city-route-ui.js?v=planner-fixes-20261101-1',
+    'city-route-ui.js?v=hallmark-20261110-1',
     'place-route-ui.js?v=20261024-16'
   ];
   const cityScripts = [
@@ -29,13 +29,13 @@
     'https://decniner.github.io/Den-Lab/SomeWhereInJapan/vendor/maplibre-gl/maplibre-gl.js?v=20261023-3',
     'city-route-map.js?v=20261023-10',
     'google-maps-routes.js?v=20261024-4',
-    'city-route-ui.js?v=planner-fixes-20261101-1',
+    'city-route-ui.js?v=hallmark-20261110-1',
     'place-route-ui.js?v=20261024-16',
     'city-route-model.js?v=20261023-5',
     'city-origins.js?v=20261023-3',
     'city-stop-photos.js?v=20261024-1',
-    'city-field-guides.js?v=20261024-2',
-    'city-origin-ui.js?v=planner-fixes-20261101-2',
+    'city-field-guides.js?v=hallmark-20261110-1',
+    'city-origin-ui.js?v=hallmark-20261110-1',
     'daytrip-core.js?v=20261024-1',
     'daytrips.js?v=20261022-8',
     'daytrip-app.js?v=20261024-12'
