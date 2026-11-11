@@ -436,7 +436,7 @@
     "brooksrunning-co-jp:9040208462121:47877884346665": {
       "sale_price": "14850",
       "reference_price": "29700",
-      "sent_at": "2026-10-26T08:44:34+09:00",
+      "sent_at": "2026-11-11T10:39:10+09:00",
       "url": "https://brooksrunning.co.jp/products/bmm0456-gry?variant=47877884346665"
     },
     "saucony-jp:8596869218456:45827081666712": {
@@ -766,7 +766,7 @@
     "boardriders-co-jp:10631287046425:52412814623001": {
       "sale_price": "14300",
       "reference_price": "28600",
-      "sent_at": "2026-10-18T08:40:27+09:00",
+      "sent_at": "2026-11-11T10:39:10+09:00",
       "url": "https://boardriders.co.jp/products/eqytp03225?variant=52412814623001"
     },
     "ecoflow:8095101517985:51971819471215": {
@@ -954,12 +954,24 @@
       "reference_price": "29700",
       "sent_at": "2026-11-11T10:39:08+09:00",
       "url": "https://boardriders.co.jp/products/n0452501?variant=52412837363993"
+    },
+    "shop-stridelab-jp:7300050845862:42335787483302": {
+      "sale_price": "14850",
+      "reference_price": "29700",
+      "sent_at": "2026-11-11T10:39:10+09:00",
+      "url": "https://shop.stridelab.jp/products/teton-bros-wp-slax-unisex?variant=42335787483302"
+    },
+    "shop-stridelab-jp:8158385373477:50611993280805": {
+      "sale_price": "14850",
+      "reference_price": "29700",
+      "sent_at": "2026-11-11T10:39:10+09:00",
+      "url": "https://shop.stridelab.jp/products/altra-vanish-carbon-womens?variant=50611993280805"
     }
   },
   "last_digest": {
-    "date": "2026-11-10",
-    "coverage_key": "c2b002da49eb458f86bc89beca8a76849d5907d7cf8a0bd17d88e1455bf8776a",
-    "completed_at": "2026-11-10T12:57:16+09:00",
-    "digest_hash": "e1f6dcf33a0d2a1941a6097ea84c719438202c0754bce79af31664a9352f87d8"
+    "date": "2026-11-11",
+    "coverage_key": "8ddb272848e5c703209a1cebdfdf672a56b65dbcf535e5aaac6313c20ced852d",
+    "completed_at": "2026-11-11T10:39:10+09:00",
+    "digest_hash": "1217335bfb148704d2107dbd862a60ede143e94553c7849e389106131e53ddfa"
   }
 }
