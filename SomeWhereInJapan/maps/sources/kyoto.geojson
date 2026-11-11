@@ -7,10 +7,10 @@
     "attribution": "© OpenStreetMap contributors",
     "extractedOn": "2026-10-23",
     "bounds": [
-      135.75546980000001,
-      34.9645192,
-      135.78743889999998,
-      35.0080483
+      135.7558,
+      34.9848,
+      135.7871,
+      35.0069
     ],
     "geometryStatus": "source-place-points-only",
     "note": "Place points cite individual OpenStreetMap objects. Interactive street detail loads from the OpenFreeMap Liberty basemap; dashed connections show stop order only, not navigation routes."

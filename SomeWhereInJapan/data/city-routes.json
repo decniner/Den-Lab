@@ -1680,10 +1680,10 @@
     {
       "id": "kyoto-city-day",
       "cityId": "kyoto",
-      "title": "Kyoto: first light through Higashiyama",
-      "introduction": "Start early on the eastern hills, follow the old lanes downhill, then finish among the food stalls and lantern-lit streets of central Kyoto. Crowds and bus conditions vary; check current visitor guidance.",
+      "title": "Kyoto: Higashiyama at dawn",
+      "introduction": "A one-day, walking-led Higashiyama route based on Kyoto City’s official guide: Kiyomizu-dera → Sannenzaka and Ninenzaka → Yasaka Shrine → Gion. The source recommends starting early; it lists Kiyomizu-dera opening at 6:00 and an optional Maeda Coffee Kodaiji stop from 7:00 (closed Mondays in the guide). Recheck current hours before travel. The map marks three area anchors; the official walk passes Maeda Coffee and Yasaka Shrine between them. Station access, visit durations, and live transit are not verified; use the current directions links.",
       "default": true,
-      "researchStatus": "in-progress",
+      "researchStatus": "partially-verified",
       "origin": {
         "id": "kyoto-station",
         "name": "Kyoto Station",
@@ -1700,26 +1700,18 @@
       "sources": [
         {
           "id": "official-kyoto-plan",
-          "label": "Kyoto Travel · Gion & Kiyomizu area guide",
-          "url": "https://kyoto.travel/en/areas/gion-kiyomizu/",
-          "checkedOn": "2026-10-23",
+          "label": "Kyoto Travel · Higashiyama at Dawn: Kiyomizu-dera to Yasaka Shrine and Gion",
+          "url": "https://kyoto.travel/en/itineraries/higashiyama-at-dawn/",
+          "checkedOn": "2026-10-24",
           "supports": [
-            "suggested city stop sequence"
+            "official recommended one-day stop sequence",
+            "published walking connections and venue guidance"
           ]
         },
         {
           "id": "osm-kyoto-origin",
           "label": "OpenStreetMap: Kyoto Station front map point (way 516084204)",
           "url": "https://www.openstreetmap.org/way/516084204",
-          "checkedOn": "2026-10-23",
-          "supports": [
-            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
-          ]
-        },
-        {
-          "id": "osm-kyoto-01",
-          "label": "OpenStreetMap: Fushimi Inari Taisha precinct (way 96291583)",
-          "url": "https://www.openstreetmap.org/way/96291583",
           "checkedOn": "2026-10-23",
           "supports": [
             "OSM map point; coordinate represents the mapped object center unless otherwise stated"
@@ -1744,15 +1736,6 @@
           ]
         },
         {
-          "id": "osm-kyoto-04",
-          "label": "OpenStreetMap: Nishiki Market (way 772134672)",
-          "url": "https://www.openstreetmap.org/way/772134672",
-          "checkedOn": "2026-10-23",
-          "supports": [
-            "OSM map point; coordinate represents the mapped object center unless otherwise stated"
-          ]
-        },
-        {
           "id": "osm-kyoto-05",
           "label": "OpenStreetMap: Shirakawa River, Gion (way 623354044)",
           "url": "https://www.openstreetmap.org/way/623354044",
@@ -1760,38 +1743,30 @@
           "supports": [
             "OSM map point; coordinate represents the mapped object center unless otherwise stated"
           ]
+        },
+        {
+          "id": "official-kyoto-fushimi-day",
+          "label": "Kyoto Travel · A Day in Fushimi",
+          "url": "https://kyoto.travel/en/itineraries/things-to-do-in-the-fushimi-area/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "separate official one-day Fushimi itinerary; kept outside the Higashiyama route"
+          ]
+        },
+        {
+          "id": "official-kyoto-crowd-areas",
+          "label": "Kyoto Travel · Congestion Forecast",
+          "url": "https://global.kyoto.travel/en/comfort/",
+          "checkedOn": "2026-10-24",
+          "supports": [
+            "Kyoto's distinct sightseeing areas include Gion/Kiyomizu, central Kyoto, and Fushimi"
+          ]
         }
       ],
       "stops": [
         {
-          "id": "kyoto-fushimi-inari-taisha",
-          "order": 1,
-          "name": "Fushimi Inari Taisha",
-          "area": "Fushimi, Kyoto",
-          "address": "Fushimi Inari Taisha, Fushimi, Kyoto, Japan",
-          "story": "Walk through the first vermilion gates while the paths are quieter. The shrine grounds extend far up the mountain; choose a turnaround point that fits your day.",
-          "visitDuration": {
-            "status": "unknown"
-          },
-          "coordinates": {
-            "latitude": 34.9675192,
-            "longitude": 135.7797101,
-            "precision": "OSM shrine precinct center",
-            "sourceIds": [
-              "osm-kyoto-01"
-            ]
-          },
-          "photo": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fushimi%20Inari%2C%20Kyoto%2C%2020240818%201354%204447.jpg?width=1100",
-            "source": "https://commons.wikimedia.org/wiki/File:Fushimi_Inari%2C_Kyoto%2C_20240818_1354_4447.jpg",
-            "credit": "Jakub Hałun",
-            "license": "CC BY 4.0",
-            "alt": "Vermilion torii gates at Fushimi Inari Taisha"
-          }
-        },
-        {
           "id": "kyoto-kiyomizu-dera",
-          "order": 2,
+          "order": 1,
           "name": "Kiyomizu-dera",
           "area": "Higashiyama, Kyoto",
           "address": "Kiyomizu-dera, Higashiyama, Kyoto, Japan",
@@ -1817,7 +1792,7 @@
         },
         {
           "id": "kyoto-sannenzaka-ninenzaka",
-          "order": 3,
+          "order": 2,
           "name": "Sannenzaka & Ninenzaka",
           "area": "Higashiyama, Kyoto",
           "address": "Sannenzaka & Ninenzaka, Higashiyama, Kyoto, Japan",
@@ -1842,34 +1817,8 @@
           }
         },
         {
-          "id": "kyoto-nishiki-market",
-          "order": 4,
-          "name": "Nishiki Market",
-          "area": "Nakagyo, Kyoto",
-          "address": "Nishiki Market, Nakagyo, Kyoto, Japan",
-          "story": "Kyoto’s narrow market street is best explored at an easy pace. It is a working shopping street as well as a visitor stop; follow posted etiquette and respect individual stall rules.",
-          "visitDuration": {
-            "status": "unknown"
-          },
-          "coordinates": {
-            "latitude": 35.0050244,
-            "longitude": 135.7655699,
-            "precision": "OSM market way center",
-            "sourceIds": [
-              "osm-kyoto-04"
-            ]
-          },
-          "photo": {
-            "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nishiki%20Ichiba%20by%20matsuyuki.jpg?width=1100",
-            "source": "https://commons.wikimedia.org/wiki/File:Nishiki_Ichiba_by_matsuyuki.jpg",
-            "credit": "matsuyuki",
-            "license": "CC BY-SA 2.0",
-            "alt": "The covered shopping lane at Nishiki Market"
-          }
-        },
-        {
           "id": "kyoto-gion-shirakawa",
-          "order": 5,
+          "order": 3,
           "name": "Gion & Shirakawa",
           "area": "Higashiyama, Kyoto",
           "address": "Gion & Shirakawa, Higashiyama, Kyoto, Japan",
@@ -1898,7 +1847,7 @@
         {
           "id": "kyoto-leg-01",
           "fromId": "kyoto-station",
-          "toId": "kyoto-fushimi-inari-taisha",
+          "toId": "kyoto-kiyomizu-dera",
           "mode": "transit",
           "duration": {
             "status": "unknown"
@@ -1911,8 +1860,8 @@
                 34.9866415
               ],
               [
-                135.7797101,
-                34.9675192
+                135.7844389,
+                34.994303
               ]
             ],
             "sourceIds": [
@@ -1922,9 +1871,9 @@
         },
         {
           "id": "kyoto-leg-02",
-          "fromId": "kyoto-fushimi-inari-taisha",
-          "toId": "kyoto-kiyomizu-dera",
-          "mode": "transit",
+          "fromId": "kyoto-kiyomizu-dera",
+          "toId": "kyoto-sannenzaka-ninenzaka",
+          "mode": "walking",
           "duration": {
             "status": "unknown"
           },
@@ -1932,12 +1881,12 @@
             "status": "schematic",
             "coordinates": [
               [
-                135.7797101,
-                34.9675192
-              ],
-              [
                 135.7844389,
                 34.994303
+              ],
+              [
+                135.7792488,
+                34.9985564
               ]
             ],
             "sourceIds": [
@@ -1947,34 +1896,9 @@
         },
         {
           "id": "kyoto-leg-03",
-          "fromId": "kyoto-kiyomizu-dera",
-          "toId": "kyoto-sannenzaka-ninenzaka",
-          "mode": "transit",
-          "duration": {
-            "status": "unknown"
-          },
-          "geometry": {
-            "status": "schematic",
-            "coordinates": [
-              [
-                135.7844389,
-                34.994303
-              ],
-              [
-                135.7792488,
-                34.9985564
-              ]
-            ],
-            "sourceIds": [
-              "official-kyoto-plan"
-            ]
-          }
-        },
-        {
-          "id": "kyoto-leg-04",
           "fromId": "kyoto-sannenzaka-ninenzaka",
-          "toId": "kyoto-nishiki-market",
-          "mode": "transit",
+          "toId": "kyoto-gion-shirakawa",
+          "mode": "walking",
           "duration": {
             "status": "unknown"
           },
@@ -1984,31 +1908,6 @@
               [
                 135.7792488,
                 34.9985564
-              ],
-              [
-                135.7655699,
-                35.0050244
-              ]
-            ],
-            "sourceIds": [
-              "official-kyoto-plan"
-            ]
-          }
-        },
-        {
-          "id": "kyoto-leg-05",
-          "fromId": "kyoto-nishiki-market",
-          "toId": "kyoto-gion-shirakawa",
-          "mode": "transit",
-          "duration": {
-            "status": "unknown"
-          },
-          "geometry": {
-            "status": "schematic",
-            "coordinates": [
-              [
-                135.7655699,
-                35.0050244
               ],
               [
                 135.7718139,
@@ -2021,7 +1920,7 @@
           }
         },
         {
-          "id": "kyoto-leg-06",
+          "id": "kyoto-leg-04",
           "fromId": "kyoto-gion-shirakawa",
           "toId": "kyoto-station",
           "mode": "transit",
