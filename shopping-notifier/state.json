@@ -268,7 +268,7 @@
     "toffyjapan:8927557124370:47553536983314": {
       "sale_price": "1500",
       "reference_price": "3300",
-      "sent_at": "2026-11-04T10:50:04+09:00",
+      "sent_at": "2026-11-12T11:40:00+09:00",
       "url": "https://toffy.jp/products/tb04-fb?variant=47553536983314"
     },
     "toffyjapan:9036284985618:47879276134674": {
@@ -280,19 +280,19 @@
     "toffyjapan:9036283937042:47879273480466": {
       "sale_price": "1400",
       "reference_price": "3080",
-      "sent_at": "2026-11-04T10:50:05+09:00",
+      "sent_at": "2026-11-12T11:40:00+09:00",
       "url": "https://toffy.jp/products/tb02-mr?variant=47879273480466"
     },
     "toffyjapan:9036284035346:47879273611538": {
       "sale_price": "1250",
       "reference_price": "2750",
-      "sent_at": "2026-11-04T10:50:05+09:00",
+      "sent_at": "2026-11-12T11:40:00+09:00",
       "url": "https://toffy.jp/products/tb02-lb?variant=47879273611538"
     },
     "toffyjapan:10095236448530:51142623953170": {
       "sale_price": "1100",
       "reference_price": "2420",
-      "sent_at": "2026-11-04T10:50:05+09:00",
+      "sent_at": "2026-11-12T11:40:00+09:00",
       "url": "https://toffy.jp/products/hfn4?variant=51142623953170"
     },
     "toffyjapan:9058722578706:47991137501458": {
@@ -975,9 +975,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-11-11",
-    "coverage_key": "8ddb272848e5c703209a1cebdfdf672a56b65dbcf535e5aaac6313c20ced852d",
-    "completed_at": "2026-11-11T10:39:10+09:00",
-    "digest_hash": "1217335bfb148704d2107dbd862a60ede143e94553c7849e389106131e53ddfa"
+    "date": "2026-11-12",
+    "coverage_key": "641d54b67ceb79f61ec4f7bb42dfed350cc70772097ee2fa6354ae2562ce14b7",
+    "completed_at": "2026-11-12T11:40:00+09:00",
+    "digest_hash": "4d57dd15bc0a441cf0057c830231690e81aa29a8b1068b556a400c735ba6fbef"
   }
 }
