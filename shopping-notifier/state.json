@@ -130,7 +130,7 @@
     "ecoflow:7569353343137:52721651384687": {
       "sale_price": "40000",
       "reference_price": "88000",
-      "sent_at": "2026-11-04T10:50:04+09:00",
+      "sent_at": "2026-11-12T11:39:58+09:00",
       "url": "https://jp.ecoflow.com/products/river-2-pro-portable-power-station?variant=52721651384687"
     },
     "ecoflow:14718205198703:52003762471279": {
@@ -244,25 +244,25 @@
     "toffyjapan:8883468894482:47419932508434": {
       "sale_price": "10000",
       "reference_price": "22000",
-      "sent_at": "2026-11-04T10:50:04+09:00",
+      "sent_at": "2026-11-12T11:39:58+09:00",
       "url": "https://toffy.jp/products/k-gp1?variant=47419932508434"
     },
     "toffyjapan:8889114067218:47440534405394": {
       "sale_price": "2000",
       "reference_price": "4400",
-      "sent_at": "2026-11-04T10:50:04+09:00",
+      "sent_at": "2026-11-12T11:39:58+09:00",
       "url": "https://toffy.jp/products/tb04-ffs?variant=47440534405394"
     },
     "toffyjapan:10095229665554:51142584533266": {
       "sale_price": "1800",
       "reference_price": "3960",
-      "sent_at": "2026-11-04T10:50:04+09:00",
+      "sent_at": "2026-11-12T11:39:58+09:00",
       "url": "https://toffy.jp/products/hw-ds4?variant=51142584533266"
     },
     "toffyjapan:10095229698322:51142584566034": {
       "sale_price": "1800",
       "reference_price": "3960",
-      "sent_at": "2026-11-04T10:50:04+09:00",
+      "sent_at": "2026-11-12T11:39:58+09:00",
       "url": "https://toffy.jp/products/hw-ds2?variant=51142584566034"
     },
     "toffyjapan:8927557124370:47553536983314": {
@@ -966,6 +966,12 @@
       "reference_price": "29700",
       "sent_at": "2026-11-11T10:39:10+09:00",
       "url": "https://shop.stridelab.jp/products/altra-vanish-carbon-womens?variant=50611993280805"
+    },
+    "championstore-jp:8129116995723:46325312684171": {
+      "sale_price": "5060",
+      "reference_price": "12650",
+      "sent_at": "2026-11-12T11:39:58+09:00",
+      "url": "https://championstore.jp/products/s22118?variant=46325312684171"
     }
   },
   "last_digest": {
