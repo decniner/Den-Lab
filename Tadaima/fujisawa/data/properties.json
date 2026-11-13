@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Fujisawa",
     "editionJa": "藤沢",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Fujisawa City, Kanagawa",
     "areaJa": "神奈川県藤沢市"
   },
@@ -36,7 +36,7 @@
       "district": "Zenkozaka 1",
       "districtJa": "善行坂1丁目",
       "title": "New 3LDK development (2 units) — performance-evaluation certified",
-      "priceMan": 4190,
+      "priceMan": 3990,
       "priceFrom": false,
       "landM2": 97.36,
       "buildingM2": 79.38,
@@ -57,11 +57,12 @@
         "Seen on a portal index page — verify details on the listing link"
       ],
       "source": {
-        "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6016/area_kanagawa/14205.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/14205/030/W/21997231.html",
+        "verified": "detail",
+        "infoDate": "2026-11-08"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h02",
@@ -160,8 +161,7 @@
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/14205/030Z21452263/000389005/x1030Z21452263.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 100
+      }
     },
     {
       "id": "h06",
@@ -390,8 +390,7 @@
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/14205/030Z21978687/061188001/x1030Z21978687.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 100
+      }
     },
     {
       "id": "h15",
@@ -496,6 +495,150 @@
         "infoDate": "2026-10-23"
       },
       "majorCautions": 2
+    },
+    {
+      "id": "h18",
+      "type": "house-used",
+      "district": "Chogo",
+      "districtJa": "長後",
+      "title": "4DK house 4 min from Chogo station",
+      "priceMan": 3300,
+      "priceFrom": false,
+      "landM2": 100.05,
+      "buildingM2": 79.48,
+      "layout": "4DK",
+      "station": "Chogo",
+      "stationJa": "長後",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 4,
+      "built": "May 1994",
+      "ageYears": 32,
+      "highlights": [
+        "4 minutes' walk from Chogo station — the closest walk of any Fujisawa candidate this week",
+        "All rooms 2-sided light, 6+ tatami each; low-rise residential zone",
+        "Parking for 1 car; city gas, public sewer",
+        "Supermarket, drugstore and Chogo Park all within a few minutes"
+      ],
+      "cautions": [
+        "Built May 1994 (32 years old) — pre-2000 build, check quake resistance and condition on viewing",
+        "4DK layout with Japanese-style room rather than modern 4LDK"
+      ],
+      "source": {
+        "name": "goo不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=5000&sa_l=60&la_l=90",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h19",
+      "type": "house-used",
+      "district": "Hon-Fujisawa 2",
+      "districtJa": "本藤沢2丁目",
+      "title": "Renovated 4LDK on 151m² plot, 12 min from Fujisawa-Honmachi",
+      "priceMan": 3997,
+      "priceFrom": false,
+      "landM2": 151,
+      "buildingM2": 104.33,
+      "layout": "4LDK",
+      "station": "Fujisawa-Honmachi",
+      "stationJa": "藤沢本町",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 12,
+      "built": "Mar 1994",
+      "ageYears": 32,
+      "highlights": [
+        "Large 151m² plot on high ground — good light, ventilation and views",
+        "Full interior/exterior renovation completed Sep 2026 (kitchen, bath, toilet, washroom, flooring, roof/wall paint, termite treatment)",
+        "Mitsui Home-built house; 4LDK with walk-in closet, south-facing garden and balcony",
+        "Garage with shutter; all rooms floored with storage"
+      ],
+      "cautions": [
+        "Built Mar 1994 (32 years old) — value is in the land and the 2026 renovation, not the structure",
+        "Walk time varies 10–12 min across agencies; 12 min used here",
+        "On a slope/elevated plot — check access and steps on viewing",
+        "Portal feeds disagree on the walk (10–12 min); scored on 12 min"
+      ],
+      "source": {
+        "name": "goo不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=5000&sa_l=60&la_l=90",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h20",
+      "type": "house-used",
+      "district": "Zengyo 5",
+      "districtJa": "善行5丁目",
+      "title": "Renovated 3LDK, 12 min from Zengyo — ¥3,190万",
+      "priceMan": 3190,
+      "priceFrom": false,
+      "landM2": 100.1,
+      "buildingM2": 81.14,
+      "layout": "3LDK",
+      "station": "Zengyo",
+      "stationJa": "善行",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 13,
+      "built": "Jun 2007",
+      "ageYears": 19,
+      "highlights": [
+        "Cheapest house candidate this week at ¥3,190万",
+        "Interior/exterior renovation Apr 2026 (kitchen taps and hob, cross/CF, screens, roof/wall paint)",
+        "15.6-tatami LDK with 3-sided light, living stairs, L-shaped kitchen; parking for 1 car",
+        "First-class low-rise residential zone; south-east balcony"
+      ],
+      "cautions": [
+        "Built Jun 2007 (19 years old)",
+        "Walk varies 12–13 min across agencies; 12 min used here"
+      ],
+      "source": {
+        "name": "goo不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=5000&sa_l=60&la_l=90",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h21",
+      "type": "house-used",
+      "district": "Zengyo 5",
+      "districtJa": "善行5丁目",
+      "title": "2021-built 3LDK, 12 min from Zengyo",
+      "priceMan": 4300,
+      "priceFrom": false,
+      "landM2": 97.45,
+      "buildingM2": 79.49,
+      "layout": "3LDK",
+      "station": "Zengyo",
+      "stationJa": "善行",
+      "line": "Odakyu Enoshima Line",
+      "lineJa": "小田急江ノ島線",
+      "walkMin": 12,
+      "built": "Apr 2021",
+      "ageYears": 5,
+      "highlights": [
+        "Youngest house candidate this week — built Apr 2021, only 5 years old",
+        "Modern fittings: system kitchen, bathroom dryer, city gas",
+        "97.45m² plot in the same Zengyo 5 pocket as the ¥3,190万 candidate, for buyers wanting a newer build"
+      ],
+      "cautions": [
+        "Only the headline figures were capturable from the index page — room sizes and renovation/condition notes were not listed, so verify on the detail page before publishing"
+      ],
+      "source": {
+        "name": "goo不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=5000&sa_l=60&la_l=90",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
     },
     {
       "id": "l02",
@@ -649,45 +792,7 @@
         "verified": "detail",
         "infoDate": "2026-11-02"
       },
-      "majorCautions": 1,
-      "priceDropMan": 500
-    },
-    {
-      "id": "l08",
-      "type": "land",
-      "district": "Chogo",
-      "districtJa": "長後",
-      "title": "100m² plot 4 min from Chogo station — old house on site",
-      "priceMan": 3300,
-      "priceFrom": false,
-      "landM2": 100.05,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Chogo",
-      "stationJa": "長後",
-      "line": "Odakyu Enoshima Line",
-      "lineJa": "小田急江ノ島線",
-      "walkMin": 4,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 80%",
-      "highlights": [
-        "Just 4 minutes' walk from Chogo station in a quiet low-rise street",
-        "Full utilities: city gas, water, mains sewer",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A 2-storey old house stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
-        "Site lies in a buried cultural-property area (埋蔵文化財包蔵地) and a land-development regulation zone — excavation/development procedures may apply",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21266168/000045103/x1030Z21266168.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+      "majorCautions": 1
     },
     {
       "id": "l10",
@@ -762,44 +867,6 @@
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21969471/001025046/x1030Z21969471.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l12",
-      "type": "land",
-      "district": "Tsujido 6",
-      "districtJa": "辻堂6丁目",
-      "title": "Vacant 137m² lot at the edge of Tsujido's walk zone — immediate handover",
-      "priceMan": 4780,
-      "priceFrom": false,
-      "landM2": 137.34,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Tsujido",
-      "stationJa": "辻堂",
-      "line": "JR Tokaido Line",
-      "lineJa": "JR東海道本線",
-      "walkMin": 15,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 80%",
-      "highlights": [
-        "Vacant land (更地渡し), immediate handover (即引渡し可)",
-        "Full utilities: city gas, water, mains sewer; sea within 2km",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "At the very edge of the brief — 15 minutes' walk to Tsujido station",
-        "Narrow frontage: only 3.7m onto the south 4m road",
-        "Landscape Act restrictions noted; shore-side district — check the city's tsunami/flood hazard maps for this exact plot (not stated on the listing)",
-        "Verified on the listing page (information date 2026-10-19)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z20732665/048513000/x1030Z20732665.html",
-        "verified": "detail",
-        "infoDate": "2026-10-19"
       }
     }
   ],

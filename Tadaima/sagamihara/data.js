@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Sagamihara",
     "editionJa": "相模原",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Sagamihara City, Kanagawa",
     "areaJa": "神奈川県相模原市"
   },
@@ -559,8 +559,7 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-11-02"
       },
-      "majorCautions": 1,
-      "priceDropMan": 200
+      "majorCautions": 1
     },
     {
       "id": "l02",

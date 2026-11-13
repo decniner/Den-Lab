@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Saitama City",
     "editionJa": "さいたま市",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Saitama City, Saitama",
     "areaJa": "埼玉県さいたま市"
   },
@@ -39,39 +39,6 @@ window.TADAIMA_DATA = {
     "note": "Land benchmarks: average transacted ¥/tsubo by station, MLIT transaction data via Utinokati (multi-year): Urawa ~145, Minami-Urawa ~145, Kita-Urawa ~120, Yono ~120, Omiya ~100 (multi-year; single quarters swing wildly on thin commercial-adjacent deals and are ignored), Toro ~90 (Bonsai Village premium), Higashi-Urawa ~68, Miyahara ~55 (the city's most stable series). Iwatsuki is scored at ~45 in-zone: the raw transaction average (30.2) is dragged down by urbanisation-control and farmland-edge deals and is deliberately NOT used; Higashi-Iwatsuki ~38 in-zone for the same reason. Minami-Yono (~95), Naka-Urawa (~85), Urawa-Misono (~80) and Sashiogi (~50) are proxies from neighbouring-station and official land-price data, flagged as such. Walk bands apply the observed −20% to −40% gradient between short and long walks in the core wards. Used houses transacted at about ¥132万/tsubo city-wide (floor-area basis): Urawa Ward ~166, Omiya Ward ~161, Kita ~134, Minuma ~107, Iwatsuki ~88. Official land prices rose +2.9% (residential) in the 2026 prefectural survey, every ward up, the two cores fastest."
   },
   "properties": [
-    {
-      "id": "h01",
-      "type": "house-new",
-      "district": "Nishibori 9, Sakura Ward",
-      "districtJa": "桜区西堀9丁目",
-      "title": "New 3LDK+S, completed and ready — compact plot (Unit 6 of 7)",
-      "priceMan": 4380,
-      "priceFrom": false,
-      "landM2": 63.6,
-      "buildingM2": 109.11,
-      "layout": "3LDK+S",
-      "station": "Minami-Yono",
-      "stationJa": "南与野",
-      "line": "JR Saikyo Line",
-      "lineJa": "JR埼京線",
-      "walkMin": 10,
-      "built": "Apr 2026",
-      "ageYears": 0,
-      "highlights": [
-        "Last unit of a 7-house development, completed Apr 2026 — immediate handover"
-      ],
-      "cautions": [
-        "Very small 63.6m² plot, 3-storey wooden build",
-        "Narrow 3.5m east road frontage",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/11106/030/W/21983220.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
     {
       "id": "h02",
       "type": "house-new",
@@ -173,39 +140,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h06",
-      "type": "house-new",
-      "district": "Miyamachi 2, Iwatsuki Ward",
-      "districtJa": "岩槻区宮町2丁目",
-      "title": "New 4LDK — cheapest new build here (Open Place Precious)",
-      "priceMan": 2999,
-      "priceFrom": false,
-      "landM2": 94.55,
-      "buildingM2": 94.4,
-      "layout": "4LDK",
-      "station": "Higashi-Iwatsuki",
-      "stationJa": "東岩槻",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武アーバンパークライン",
-      "walkMin": 8,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Cheapest new house in this collection (Open Place Higashi-Iwatsuki Precious)"
-      ],
-      "cautions": [
-        "LP gas (個別プロパンガス), not city gas",
-        "In a land-development regulation area (宅地造成工事規制区域) with 景観法 restrictions"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/11110/030/W/21059437.html",
-        "verified": "detail",
-        "infoDate": "2026-10-31"
-      },
-      "priceDropMan": 100
-    },
-    {
       "id": "h07",
       "type": "house-new",
       "district": "Higashi-Urawa 2, Midori Ward",
@@ -277,7 +211,7 @@ window.TADAIMA_DATA = {
       "district": "Sakurada 1, Sakura Ward",
       "districtJa": "桜区桜田1丁目",
       "title": "Used 5K (1969) at ¥680万 — flooded in 2019, experts only",
-      "priceMan": 680,
+      "priceMan": 598,
       "priceFrom": false,
       "landM2": 67.63,
       "buildingM2": 44.71,
@@ -303,10 +237,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11106/030Z21931275/151823003/x1030Z21931275.html",
         "verified": "detail",
-        "infoDate": "2026-11-01"
+        "infoDate": "2026-11-08"
       },
       "majorCautions": 2,
-      "priceDropMan": 100
+      "priceDropMan": 82
     },
     {
       "id": "h11",
@@ -418,7 +352,7 @@ window.TADAIMA_DATA = {
       "district": "Yoshinocho 1, Kita Ward",
       "districtJa": "北区吉野町1丁目",
       "title": "Used 4LDK (2005), seller-direct — New Shuttle side of Kita Ward",
-      "priceMan": 2480,
+      "priceMan": 2780,
       "priceFrom": false,
       "landM2": 100.04,
       "buildingM2": 93.98,
@@ -442,7 +376,7 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11102/030Z21781585/100647001/x1030Z21781585.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-11-09"
       }
     },
     {
@@ -475,6 +409,111 @@ window.TADAIMA_DATA = {
         "url": "https://house.ocn.ne.jp/sp/ikkodate/area_saitama/11108/019.html",
         "verified": "index",
         "infoDate": "2026-11-02"
+      }
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Nishiharadai 2, Iwatsuki Ward",
+      "districtJa": "岩槻区西原台2丁目",
+      "title": "Used 4LDK (1993) at ¥1,590万 — 13 min from Iwatsuki, all rooms 6 tatami+",
+      "priceMan": 1590,
+      "priceFrom": false,
+      "landM2": 125.06,
+      "buildingM2": 118.41,
+      "layout": "4LDK",
+      "station": "Iwatsuki",
+      "stationJa": "岩槻",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 13,
+      "built": "Dec 1993",
+      "ageYears": 33,
+      "highlights": [
+        "Large 118.41m² interior on a 125.06m² plot — the most space per yen in this set",
+        "All rooms 6 tatami or larger with storage; vacant and viewable any time",
+        "Primary school 450m and junior high 750m"
+      ],
+      "cautions": [
+        "33 years old (1993, post-1981 standard) with no reform history on the detail page",
+        "Setback area of ~5.3m² included in the land — rebuild requires road setback",
+        "LP gas (プロパンガス); city-gas pipe is in the front road but switching costs extra"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11110/030Z21219122/006110007/x1030Z21219122.html",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h18",
+      "type": "house-used",
+      "district": "Nishimachi 5, Iwatsuki Ward",
+      "districtJa": "岩槻区西町5丁目",
+      "title": "Used 4LDK (1996) — 14 min from Iwatsuki, quiet residential street",
+      "priceMan": 1880,
+      "priceFrom": false,
+      "landM2": 111.5,
+      "buildingM2": 84.27,
+      "layout": "4LDK",
+      "station": "Iwatsuki",
+      "stationJa": "岩槻",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 14,
+      "built": "May 1996",
+      "ageYears": 30,
+      "highlights": [
+        "Quiet residential street 14 min from Iwatsuki",
+        "City gas; 111.5m² plot"
+      ],
+      "cautions": [
+        "30 years old with no reform history on the index page",
+        "Near the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3013/area_saitama/110001.html",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h19",
+      "type": "house-used",
+      "district": "Oaza-Sashiogi, Nishi Ward",
+      "districtJa": "西区大字指扇",
+      "title": "Used 4DK (1993) — 14 min from Sashiogi, exterior reformed, renovation plans offered",
+      "priceMan": 1480,
+      "priceFrom": false,
+      "landM2": 102.21,
+      "buildingM2": 79.07,
+      "layout": "4DK",
+      "station": "Sashiogi",
+      "stationJa": "指扇",
+      "line": "JR Kawagoe Line",
+      "lineJa": "JR川越線",
+      "walkMin": 14,
+      "built": "Feb 1993",
+      "ageYears": 33,
+      "highlights": [
+        "Supermarket, convenience store and drugstore all within walking distance",
+        "Exterior reformed; broker offers renovation plans for the interior"
+      ],
+      "cautions": [
+        "33 years old — interior condition unverified beyond the exterior work",
+        "Near the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3013/area_saitama/110001.html",
+        "verified": "index",
+        "infoDate": "2026-11-09"
       },
       "isNew": true
     },
@@ -731,46 +770,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11110/37091140003568/3709114/x437091140003568.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 100
-    },
-    {
-      "id": "l11",
-      "type": "land",
-      "district": "Misono-Higashi 2, Iwatsuki Ward",
-      "districtJa": "岩槻区美園東2丁目",
-      "title": "Large builder-tied lot by Urawa-Misono (Polus)",
-      "priceMan": 3980,
-      "priceFrom": false,
-      "landM2": 173.5,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Urawa-Misono",
-      "stationJa": "浦和美園",
-      "line": "Saitama Rapid Railway Line",
-      "lineJa": "埼玉高速鉄道線",
-      "walkMin": 15,
-      "built": null,
-      "ageYears": null,
-      "zoning": "準住居地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Vacant (更地), regular-shaped, immediate handover",
-        "4 minutes' walk to the U-NIX Urawa-Misono shopping centre"
-      ],
-      "cautions": [
-        "Builder condition attached (建築条件付) — you must build with Polus",
-        "At the 15-minute walk limit of this collection",
-        "Headline 173.5 m² overstates the usable plot: the seller quotes '135 m² or more (実質)' and states building on part of the site is restricted — ask the agent what the restricted portion is",
-        "District-plan restrictions apply (岩槻区南部親和西地区地区計画), plus a prefectural ordinance, quasi-fire zone (準防火地域) and height district (高度地区)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/11110/030Z20314631/006110039/x1030Z20314631.html",
-        "verified": "detail",
-        "infoDate": "2026-10-19"
-      },
-      "majorCautions": 1
+      }
     },
     {
       "id": "l12",
@@ -807,6 +807,45 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-10-19"
       }
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Shimacho, Minuma Ward",
+      "districtJa": "見沼区島町",
+      "title": "Vacant corner lot 11 minutes from Nanasato — 128m², no builder tie-in",
+      "priceMan": 2680,
+      "priceFrom": false,
+      "landM2": 128,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Nanasato",
+      "stationJa": "七里",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 11,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Vacant land (更地), south-east corner lot with wide frontages (8.4m south / 12.5m east)",
+        "City gas and mains sewer; park 3 min walk",
+        "No building condition (建築条件なし) — choose your own builder",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Separate ~31m² private-road area plus ~1.7m² position-designated-road burden — confirm the shares",
+        "Registered land category is forest (山林) despite the residential use",
+        "FAR is limited by the front-road width per the detail page"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11104/030Z22015858/006050441/x1030Z22015858.html",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

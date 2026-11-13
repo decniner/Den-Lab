@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Tachikawa",
     "editionJa": "立川",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Tachikawa City, Tokyo",
     "areaJa": "東京都立川市"
   },
@@ -35,10 +35,10 @@ window.TADAIMA_DATA = {
       "type": "house-new",
       "district": "Sakae-cho 2",
       "districtJa": "栄町2丁目",
-      "title": "New 3LDK development (4 units) — performance-evaluation certified",
-      "priceMan": 4880,
-      "priceFrom": true,
-      "landM2": 99.43,
+      "title": "New 3LDK (Unit 4, last of 4) — performance-evaluation certified",
+      "priceMan": 5380,
+      "priceFrom": false,
+      "landM2": 100.26,
       "buildingM2": 77.47,
       "layout": "3LDK",
       "station": "Izumi-Taiikukan",
@@ -46,126 +46,24 @@ window.TADAIMA_DATA = {
       "line": "Tama Monorail",
       "lineJa": "多摩モノレール",
       "walkMin": 15,
-      "built": "New build",
+      "built": "May 2026",
       "ageYears": 0,
       "highlights": [
         "Housing performance-evaluation certificate obtained",
-        "Parking for 2 cars; the largest plots of the new-build fits (99–102m²)"
+        "Last remaining unit of 4 (Units 1–3 sold); completed May 2026, immediate delivery",
+        "Parking for 2 cars"
       ],
       "cautions": [
-        "Price is 'from' — units run to ¥5,480万 and only the cheapest fall within this collection's brief",
-        "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link",
-        "LIFULL HOME'S currently lists this same 4-unit Sakae-cho 2 development (land 99.43–102m², as 'LiGNAGE NEX-G Tachikawa Sakae-cho 2-chome Phase 1') at ¥4,980万–¥5,680万 — ¥100万 above the ¥4,880万–¥5,480万 range recorded here from the OCN/goo index; verify current pricing on the listing"
+        "Kept as an exception at the owner's request: the only remaining unit is ¥5,380万, above the ¥5,000万 cap (Units 1–3 sold)",
+        "SUUMO lists the walk as 17 min from Izumi-Taiikukan (recorded as 15 min); scored on 15 min"
       ],
       "source": {
-        "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/new-ikkodate/tokyo/tachikawa-city.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h02",
-      "type": "house-new",
-      "district": "Sakae-cho 5",
-      "districtJa": "栄町5丁目",
-      "title": "New 3LDK on a SE corner lot — single-unit sale",
-      "priceMan": 4900,
-      "priceFrom": false,
-      "landM2": 85.21,
-      "buildingM2": 68.06,
-      "layout": "3LDK",
-      "station": "Izumi-Taiikukan",
-      "stationJa": "泉体育館",
-      "line": "Tama Monorail",
-      "lineJa": "多摩モノレール",
-      "walkMin": 15,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "South-east corner lot",
-        "Pantry and loft storage"
-      ],
-      "cautions": [
-        "Compact 68.1m² building for the price",
-        "At the 15-minute walk limit of this collection",
-        "Detail page notes an 8.69m² private-road burden (私道負担) attached to the plot — registered area is 85.28m² vs 85.21m² measured"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/13202/030/Z/20562560.html",
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1410770003579/",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h03",
-      "type": "house-new",
-      "district": "Sunagawa-cho 6",
-      "districtJa": "砂川町6丁目",
-      "title": "New 4LDK, move-in ready — biggest new-build package here",
-      "priceMan": 4790,
-      "priceFrom": false,
-      "landM2": 124.9,
-      "buildingM2": 98.53,
-      "layout": "4LDK",
-      "station": "Tamagawa-Josui",
-      "stationJa": "玉川上水",
-      "line": "Seibu Haijima Line",
-      "lineJa": "西武拝島線",
-      "walkMin": 15,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Biggest new-build package here: 98.5m² house on 124.9m² of land",
-        "Move-in ready (即入居可), parking for 2"
-      ],
-      "cautions": [
-        "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link",
-        "LIFULL HOME'S currently lists this 2-unit Sunagawa-cho 6 development (land 124.9m², Tamagawa-Josui 15 min) at ¥5,090万 — ¥300万 above the ¥4,790万 recorded here; the recorded unit may have sold or been repriced, so verify availability and price on the listing"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/new-ikkodate/tokyo/tachikawa-city.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h04",
-      "type": "house-new",
-      "district": "Nishiki-cho 6",
-      "districtJa": "錦町6丁目",
-      "title": "New 2LDK+S — cheapest new build, closest to the centre",
-      "priceMan": 4180,
-      "priceFrom": false,
-      "landM2": 59.94,
-      "buildingM2": 74.96,
-      "layout": "2LDK+S",
-      "station": "Shibasaki-Taiikukan",
-      "stationJa": "柴崎体育館",
-      "line": "Tama Monorail",
-      "lineJa": "多摩モノレール",
-      "walkMin": 11,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Cheapest new house in this collection",
-        "Also 15 min from Nishi-Kunitachi (JR Nambu) — two lines usable"
-      ],
-      "cautions": [
-        "Very small 59.9m² plot — well below the city norm",
-        "Compact 2LDK+S layout",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/new-ikkodate/tokyo/tachikawa-city.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "exception": true
     },
     {
       "id": "h05",
@@ -535,6 +433,146 @@ window.TADAIMA_DATA = {
       "majorCautions": 2
     },
     {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Sunagawa-cho 3",
+      "districtJa": "砂川町3丁目",
+      "title": "Used 5LDK (2018) — huge 273m² plot with solar, 10 min to Musashi-Sunagawa",
+      "priceMan": 4990,
+      "priceFrom": false,
+      "landM2": 273.32,
+      "buildingM2": 114.81,
+      "layout": "5LDK",
+      "station": "Musashi-Sunagawa",
+      "stationJa": "武蔵砂川",
+      "line": "Seibu Haijima Line",
+      "lineJa": "西武拝島線",
+      "walkMin": 10,
+      "built": "Oct 2018",
+      "ageYears": 8,
+      "highlights": [
+        "Huge 273.3m² plot — by far the largest land in this set for the price",
+        "5LDK, all-electric with solar panels added Oct 2025 plus exterior/roof work the same month",
+        "Parking for 2 cars"
+      ],
+      "cautions": [
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h18",
+      "type": "house-used",
+      "district": "Ichiban-cho 3",
+      "districtJa": "一番町3丁目",
+      "title": "Used 3SLDK (2022) — nearly new, big house and plot, 14 min to Seibu-Tachikawa",
+      "priceMan": 4680,
+      "priceFrom": false,
+      "landM2": 126.63,
+      "buildingM2": 126.63,
+      "layout": "3SLDK",
+      "station": "Seibu-Tachikawa",
+      "stationJa": "西武立川",
+      "line": "Seibu Haijima Line",
+      "lineJa": "西武拝島線",
+      "walkMin": 14,
+      "built": "Aug 2022",
+      "ageYears": 4,
+      "highlights": [
+        "Nearly new (built Aug 2022) with a large 126.6m² house on a 126.6m² plot",
+        "LDK about 20.7帖 with pantry and loft storage; parking for 2",
+        "Quiet low-rise residential area, ~6m front road"
+      ],
+      "cautions": [
+        "14-minute walk is toward the brief's outer edge",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h19",
+      "type": "house-used",
+      "district": "Kashiwa-cho 4",
+      "districtJa": "柏町4丁目",
+      "title": "Used 1LDK+2S (2025) — effectively new, 8 min to dual-line Tamagawa-Josui",
+      "priceMan": 4480,
+      "priceFrom": false,
+      "landM2": 80.19,
+      "buildingM2": 63.98,
+      "layout": "1LDK+2S",
+      "station": "Tamagawa-Josui",
+      "stationJa": "玉川上水",
+      "line": "Seibu Haijima Line / Tama Monorail",
+      "lineJa": "西武拝島線・多摩モノレール",
+      "walkMin": 8,
+      "built": "Mar 2025",
+      "ageYears": 1,
+      "highlights": [
+        "Built Mar 2025 — effectively new, in a first-class low-rise zone",
+        "8 min to a dual-line station (Seibu Haijima + Tama Monorail)",
+        "Second-floor living with south balcony; parking for 2"
+      ],
+      "cautions": [
+        "Compact 64.0m² building on a small 80.2m² plot",
+        "Effectively 1 bedroom plus 2 service rooms — judge the layout, not the headline",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h20",
+      "type": "house-used",
+      "district": "Saiwai-cho 5",
+      "districtJa": "幸町5丁目",
+      "title": "Used 3LDK (2005) — reformed Aug 2026, 18帖 LDK with terrace, 10 min to Tamagawa-Josui",
+      "priceMan": 4980,
+      "priceFrom": false,
+      "landM2": 116.9,
+      "buildingM2": 90.31,
+      "layout": "3LDK",
+      "station": "Tamagawa-Josui",
+      "stationJa": "玉川上水",
+      "line": "Seibu Haijima Line / Tama Monorail",
+      "lineJa": "西武拝島線・多摩モノレール",
+      "walkMin": 10,
+      "built": "Dec 2005",
+      "ageYears": 21,
+      "highlights": [
+        "18帖-plus LDK with terrace and south balcony; all rooms 6 tatami or larger",
+        "Interior and exterior reformed Aug 2026; parking for 2",
+        "10 min to dual-line Tamagawa-Josui; primary school 5 min away"
+      ],
+      "cautions": [
+        "Built Dec 2005 — 21 years old despite the 2026 reform",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
       "id": "l01",
       "type": "land",
       "district": "Saiwai-cho 1",
@@ -569,42 +607,6 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-22"
       },
       "majorCautions": 2
-    },
-    {
-      "id": "l02",
-      "type": "land",
-      "district": "Shibasaki-cho 6",
-      "districtJa": "柴崎町6丁目",
-      "title": "Vacant corner lot in a low-rise zone, 6 min from Shibasaki-Taiikukan",
-      "priceMan": 2980,
-      "priceFrom": false,
-      "landM2": 93.18,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Shibasaki-Taiikukan",
-      "stationJa": "柴崎体育館",
-      "line": "Tama Monorail",
-      "lineJa": "多摩モノレール",
-      "walkMin": 6,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "Vacant land (更地), corner lot (角地) — east 7.2m / south 9.1m public roads",
-        "Immediate handover (即引渡し可); Tachikawa JR station is 18 min on foot",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "LP gas (no city gas)",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z21369009/002859000/x1030Z21369009.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
     },
     {
       "id": "l05",
@@ -675,43 +677,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z21954141/000232025/x1030Z21954141.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l08",
-      "type": "land",
-      "district": "Sunagawa-cho 8",
-      "districtJa": "砂川町8丁目",
-      "title": "Vacant 148m² plot by Musashi-Sunagawa — setback and subdivision pending",
-      "priceMan": 3380,
-      "priceFrom": false,
-      "landM2": 148.7,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Musashi-Sunagawa",
-      "stationJa": "武蔵砂川",
-      "line": "Seibu Haijima Line",
-      "lineJa": "西武拝島線",
-      "walkMin": 11,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "Vacant land delivered as-is vacant (更地渡し) — no demolition cost",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Setback required (セットバック要)",
-        "Pre-subdivision lot (分筆前) — the stated area may change after subdivision and survey",
-        "Narrow front road: 3.6m on the east side",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z21116135/164755001/x1030Z21116135.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }

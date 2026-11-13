@@ -125,12 +125,13 @@
   }
 
   // Precompute group medians for houses (price per m2 of floor area).
-  // Section records (e.g. Kawagoe's Shimohiroya extension) are scored
-  // against the MAIN collection's medians and never move them, so adding
-  // a section can never silently re-score the existing edition.
+  // Section records (e.g. Kawagoe's Shimohiroya extension) and flagged
+  // exceptions (e.g. Tachikawa h01, kept at the owner's request above the
+  // price cap) are scored against the MAIN collection's medians and never
+  // move them, so adding one can never silently re-score the edition.
   var groupMedian = {};
   ["house-new", "house-used"].forEach(function (t) {
-    groupMedian[t] = median(props.filter(function (p) { return p.type === t && !p.section; })
+    groupMedian[t] = median(props.filter(function (p) { return p.type === t && !p.section && !p.exception; })
       .map(function (p) { return p.priceMan / p.buildingM2; }));
   });
 
@@ -211,7 +212,13 @@
       .sort(function (a, b) { return b._score.total - a._score.total; });
   }
   var ranked = computeRanked();
-  ranked.forEach(function (p, i) { p._rank = i + 1; });
+  // Flagged exceptions are scored and rendered in the grid, but rank 0:
+  // never a top pick, never shifting another record's rank.
+  function assignRanks() {
+    var r = 0;
+    ranked.forEach(function (p) { p._rank = p.exception ? 0 : ++r; });
+  }
+  assignRanks();
 
   // ---------- Saved (namespaced per city — the pre-2026-10-24 key
   // "tadaima-saved" was shared by every edition while property IDs repeat
@@ -285,7 +292,7 @@
 
   function card(p) {
     var s = p._score;
-    var top = ranked.indexOf(p) < 3;
+    var top = p._rank >= 1 && p._rank <= 3;
     var el = document.createElement("article");
     el.className = "card" + (top ? " card-top" : "");
     var reasonsTop = s.reasons.slice().sort(function (a, b) { return b.pts / b.max - a.pts / a.max; }).slice(0, 2);
@@ -327,7 +334,10 @@
 
   function passes(p) {
     if (state.type !== "all" && p.type !== state.type) return false;
-    if (p.priceMan > state.maxPrice) return false;
+    // Flagged exceptions (owner-requested, over-cap price stated on the
+    // card) render despite breaching the price cap — the mirror of the
+    // walk-cap exemption for section records below.
+    if (p.priceMan > state.maxPrice && !p.exception) return false;
     // Section records are exempt from the walk cap only — breaching it is
     // their section's stated premise, flagged on the section heading and
     // on every section card. Every other filter still applies to them.
@@ -729,7 +739,7 @@
     document.documentElement.lang = ja ? "ja" : "en";
     props.forEach(function (p) { p._score = score(p); });
     ranked = computeRanked();
-    ranked.forEach(function (p, i) { p._rank = i + 1; });
+    assignRanks();
     swapNodes(document.querySelector("header.site-head"), ja);
     swapNodes(document.querySelector(".controls"), ja);
     swapNodes(document.querySelector(".hero"), ja);

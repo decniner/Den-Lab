@@ -7,7 +7,7 @@
     "nameJa": "ただいま！",
     "edition": "Kawagoe",
     "editionJa": "川越",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Kawagoe City, Saitama",
     "areaJa": "埼玉県川越市"
    },
@@ -110,8 +110,7 @@
       "verified": "detail",
       "infoDate": "2026-11-02"
      },
-     "majorCautions": 0,
-     "priceDropMan": 200
+     "majorCautions": 0
     },
     {
      "id": "h04",
@@ -145,8 +144,7 @@
       "verified": "detail",
       "infoDate": "2026-11-01"
      },
-     "majorCautions": 1,
-     "priceDropMan": 200
+     "majorCautions": 1
     },
     {
      "id": "h05",
@@ -154,7 +152,7 @@
      "district": "Kasahata",
      "districtJa": "大字笠幡",
      "title": "New 3LDK — lowest-priced new house in this collection",
-     "priceMan": 2680,
+     "priceMan": 2580,
      "priceFrom": false,
      "landM2": 98.6,
      "buildingM2": 88.29,
@@ -175,9 +173,10 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/bh/detail/4/11201/1040210010024/104021/x41040210010024.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
+      "infoDate": "2026-11-08"
      },
-     "majorCautions": 0
+     "majorCautions": 0,
+     "priceDropMan": 100
     },
     {
      "id": "h06",
@@ -219,7 +218,7 @@
      "district": "Otsuka-Shinmachi",
      "districtJa": "大塚新町",
      "title": "New 4LDK with parking for three cars",
-     "priceMan": 4298,
+     "priceMan": 4198,
      "priceFrom": false,
      "landM2": 142.57,
      "buildingM2": 100.96,
@@ -244,9 +243,10 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/bh/detail/11201/030/W/21631849.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
+      "infoDate": "2026-11-03"
      },
-     "majorCautions": 0
+     "majorCautions": 0,
+     "priceDropMan": 100
     },
     {
      "id": "h08",
@@ -447,8 +447,7 @@
       "verified": "detail",
       "infoDate": "2026-11-02"
      },
-     "majorCautions": 1,
-     "priceDropMan": 100
+     "majorCautions": 1
     },
     {
      "id": "h15",
@@ -519,41 +518,6 @@
       "url": "https://www.homes.co.jp/kodate/b-17084440000448/",
       "verified": "detail",
       "infoDate": "2026-10-23"
-     },
-     "majorCautions": 0,
-     "section": "shimohiroya"
-    },
-    {
-     "id": "h17",
-     "type": "house-used",
-     "district": "Shimohiroya",
-     "districtJa": "大字下広谷",
-     "title": "Used 3LDK (2023) — built but never lived in, on a 200m² plot",
-     "priceMan": 3198,
-     "priceFrom": false,
-     "landM2": 200.72,
-     "buildingM2": 100.18,
-     "layout": "3LDK",
-     "station": "Tsurugashima",
-     "stationJa": "鶴ヶ島",
-     "line": "Tobu Tojo Line",
-     "lineJa": "東武東上線",
-     "walkMin": 20,
-     "built": "Apr 2023",
-     "ageYears": 3,
-     "highlights": [
-      "Built Apr 2023 and never occupied (未入居) — effectively a new house",
-      "Large 200.7m² plot (about 61 tsubo), south-east aspect, vacant"
-     ],
-     "cautions": [
-      "Seen on a portal index page — verify details on the listing link",
-      "Portal listing last updated 6 Sep 2026 — confirm it is still available before travelling"
-     ],
-     "source": {
-      "name": "LIFULL HOME'S",
-      "url": "https://www.homes.co.jp/kodate/chuko/saitama/kawagoe-city/12C7D34F3E-town/list/",
-      "verified": "index",
-      "infoDate": "2026-09-06"
      },
      "majorCautions": 0,
      "section": "shimohiroya"
@@ -634,7 +598,7 @@
      "district": "Shimohiroya",
      "districtJa": "大字下広谷",
      "title": "Used 4LDK (2012) on 200m² — priced for a 33-minute walk",
-     "priceMan": 2350,
+     "priceMan": 2280,
      "priceFrom": false,
      "landM2": 200.52,
      "buildingM2": 106.4,
@@ -658,10 +622,11 @@
       "name": "LIFULL HOME'S",
       "url": "https://www.homes.co.jp/kodate/saitama/kawagoe-city/12C7D34F3E-town/list/",
       "verified": "index",
-      "infoDate": "2026-10-24"
+      "infoDate": "2026-11-09"
      },
      "majorCautions": 0,
-     "section": "shimohiroya"
+     "section": "shimohiroya",
+     "priceDropMan": 70
     },
     {
      "id": "h21",
@@ -697,42 +662,6 @@
       "infoDate": "2026-11-01"
      },
      "majorCautions": 1,
-     "section": "shimohiroya",
-     "priceDropMan": 100
-    },
-    {
-     "id": "h22",
-     "type": "house-used",
-     "district": "Shimohiroya",
-     "districtJa": "大字下広谷",
-     "title": "Used 4LDK (1994) at Shimohiroya 1031-8 — a 15-minute walk",
-     "priceMan": 1380,
-     "priceFrom": false,
-     "landM2": 106.05,
-     "buildingM2": 94.3,
-     "layout": "4LDK",
-     "station": "Tsurugashima",
-     "stationJa": "鶴ヶ島",
-     "line": "Tobu Tojo Line",
-     "lineJa": "東武東上線",
-     "walkMin": 15,
-     "built": "May 1994",
-     "ageYears": 32,
-     "highlights": [
-      "15 minutes to Tsurugashima — inside the main edition's walk rule",
-      "Cheapest walkable used house in the section"
-     ],
-     "cautions": [
-      "Seen on a portal index page — verify details on the listing link",
-      "Occupied (居住中); 32 years old"
-     ],
-     "source": {
-      "name": "LIFULL HOME'S",
-      "url": "https://www.homes.co.jp/kodate/chuko/saitama/kawagoe-city/12C7D34F3E-town/list/",
-      "verified": "index",
-      "infoDate": "2026-10-24"
-     },
-     "majorCautions": 0,
      "section": "shimohiroya"
     },
     {
@@ -923,7 +852,7 @@
      "district": "Kasahata",
      "districtJa": "大字笠幡",
      "title": "Huge 392m² plot at a strikingly low ¥/tsubo",
-     "priceMan": 730,
+     "priceMan": 630,
      "priceFrom": false,
      "landM2": 392.4,
      "buildingM2": null,
@@ -950,9 +879,10 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/1536350000016/153635/x41536350000016.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
+      "infoDate": "2026-11-07"
      },
-     "majorCautions": 2
+     "majorCautions": 2,
+     "priceDropMan": 100
     },
     {
      "id": "l07",
@@ -997,7 +927,7 @@
      "district": "Minami-Otsuka 4-chome",
      "districtJa": "南大塚4丁目",
      "title": "165m² lot 6 minutes from Minami-Otsuka (LOVEINGTOWN)",
-     "priceMan": 3180,
+     "priceMan": 2980,
      "priceFrom": false,
      "landM2": 165.59,
      "buildingM2": null,
@@ -1024,47 +954,10 @@
       "name": "atHome",
       "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/37072960007411/3707296/x437072960007411.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
+      "infoDate": "2026-11-09"
      },
-     "majorCautions": 0
-    },
-    {
-     "id": "l10",
-     "type": "land",
-     "district": "Uenodacho",
-     "districtJa": "上野田町",
-     "title": "Blooming Garden Uenodacho — 11 free-design lots",
-     "priceMan": 2680,
-     "priceFrom": true,
-     "landM2": 105.86,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Kawagoeshi",
-     "stationJa": "川越市",
-     "line": "Tobu Tojo Line",
-     "lineJa": "東武東上線",
-     "walkMin": 12,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "50% / 80%",
-     "highlights": [
-      "No building condition (建築条件無) — rare for a subdivision; free design (自由設計)",
-      "South-road and corner lots in the development",
-      "School and supermarket within 800m"
-     ],
-     "cautions": [
-      "Price is 'from' — lots run ¥2,680万–¥3,380万, sizes 105.9–125.2m²",
-      "Low 80% floor-area ratio limits house size",
-      "Figures could not be matched to the developer's current release (checked 2026-10-24; the developer's page, updated 2026-10-12, now offers different lots) — this lot may have sold or been re-phased. Treat price and area as stale until re-checked."
-     ],
-     "source": {
-      "name": "LIFULL HOME'S",
-      "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/list/",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     },
-     "majorCautions": 0
+     "majorCautions": 0,
+     "priceDropMan": 200
     },
     {
      "id": "l11",
@@ -1137,81 +1030,6 @@
       "infoDate": "2026-10-23"
      },
      "majorCautions": 1
-    },
-    {
-     "id": "l13",
-     "type": "land",
-     "district": "Shimohiroya",
-     "districtJa": "大字下広谷",
-     "title": "208m² corner plot, old house on site — vacant-land handover available",
-     "priceMan": 1180,
-     "priceFrom": false,
-     "landM2": 208.4,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Tsurugashima",
-     "stationJa": "鶴ヶ島",
-     "line": "Tobu Tojo Line",
-     "lineJa": "東武東上線",
-     "walkMin": 19,
-     "built": null,
-     "ageYears": null,
-     "zoning": null,
-     "coverageFar": "60% / 200%",
-     "highlights": [
-      "63-tsubo south-east corner plot; no building condition (建築条件なし)",
-      "Old house stands on the land but vacant-land handover is available (更地引渡可)",
-      "Mains sewer and city gas, per the listing"
-     ],
-     "cautions": [
-      "Shimohiroya is mostly urbanisation-control area (市街化調整区域) and the portal list does not state this plot's planning status — confirm 市街化/調整 and the building-permit route before anything else",
-      "Confirm the demolition timing and who pays for it"
-     ],
-     "source": {
-      "name": "LIFULL HOME'S",
-      "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/12C7D34F3E-town/list/",
-      "verified": "index",
-      "infoDate": "2026-10-24"
-     },
-     "majorCautions": 1,
-     "section": "shimohiroya"
-    },
-    {
-     "id": "l14",
-     "type": "land",
-     "district": "Shimohiroya",
-     "districtJa": "大字下広谷",
-     "title": "166m² vacant plot at Shimohiroya 855-3",
-     "priceMan": 1380,
-     "priceFrom": false,
-     "landM2": 166.0,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Tsurugashima",
-     "stationJa": "鶴ヶ島",
-     "line": "Tobu Tojo Line",
-     "lineJa": "東武東上線",
-     "walkMin": 27,
-     "built": null,
-     "ageYears": null,
-     "zoning": null,
-     "coverageFar": "60% / 200%",
-     "highlights": [
-      "Vacant land (更地), 50.2 tsubo"
-     ],
-     "cautions": [
-      "Planning status not stated on the portal list — Shimohiroya is mostly urbanisation-control area (市街化調整区域); confirm the building-permit route before anything else",
-      "Building-condition field is blank on the portal — confirm none applies",
-      "27 minutes on foot to Tsurugashima"
-     ],
-     "source": {
-      "name": "LIFULL HOME'S",
-      "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/12C7D34F3E-town/list/",
-      "verified": "index",
-      "infoDate": "2026-10-24"
-     },
-     "majorCautions": 1,
-     "section": "shimohiroya"
     }
    ]
   },
@@ -1221,7 +1039,7 @@
     "nameJa": "ただいま！",
     "edition": "Tachikawa",
     "editionJa": "立川",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Tachikawa City, Tokyo",
     "areaJa": "東京都立川市"
    },
@@ -1231,10 +1049,10 @@
      "type": "house-new",
      "district": "Sakae-cho 2",
      "districtJa": "栄町2丁目",
-     "title": "New 3LDK development (4 units) — performance-evaluation certified",
-     "priceMan": 4880,
-     "priceFrom": true,
-     "landM2": 99.43,
+     "title": "New 3LDK (Unit 4, last of 4) — performance-evaluation certified",
+     "priceMan": 5380,
+     "priceFrom": false,
+     "landM2": 100.26,
      "buildingM2": 77.47,
      "layout": "3LDK",
      "station": "Izumi-Taiikukan",
@@ -1242,126 +1060,24 @@
      "line": "Tama Monorail",
      "lineJa": "多摩モノレール",
      "walkMin": 15,
-     "built": "New build",
+     "built": "May 2026",
      "ageYears": 0,
      "highlights": [
       "Housing performance-evaluation certificate obtained",
-      "Parking for 2 cars; the largest plots of the new-build fits (99–102m²)"
+      "Last remaining unit of 4 (Units 1–3 sold); completed May 2026, immediate delivery",
+      "Parking for 2 cars"
      ],
      "cautions": [
-      "Price is 'from' — units run to ¥5,480万 and only the cheapest fall within this collection's brief",
-      "At the 15-minute walk limit of this collection",
-      "Seen on a portal index page — verify details on the listing link",
-      "LIFULL HOME'S currently lists this same 4-unit Sakae-cho 2 development (land 99.43–102m², as 'LiGNAGE NEX-G Tachikawa Sakae-cho 2-chome Phase 1') at ¥4,980万–¥5,680万 — ¥100万 above the ¥4,880万–¥5,480万 range recorded here from the OCN/goo index; verify current pricing on the listing"
+      "Kept as an exception at the owner's request: the only remaining unit is ¥5,380万, above the ¥5,000万 cap (Units 1–3 sold)",
+      "SUUMO lists the walk as 17 min from Izumi-Taiikukan (recorded as 15 min); scored on 15 min"
      ],
      "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/new-ikkodate/tokyo/tachikawa-city.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h02",
-     "type": "house-new",
-     "district": "Sakae-cho 5",
-     "districtJa": "栄町5丁目",
-     "title": "New 3LDK on a SE corner lot — single-unit sale",
-     "priceMan": 4900,
-     "priceFrom": false,
-     "landM2": 85.21,
-     "buildingM2": 68.06,
-     "layout": "3LDK",
-     "station": "Izumi-Taiikukan",
-     "stationJa": "泉体育館",
-     "line": "Tama Monorail",
-     "lineJa": "多摩モノレール",
-     "walkMin": 15,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "South-east corner lot",
-      "Pantry and loft storage"
-     ],
-     "cautions": [
-      "Compact 68.1m² building for the price",
-      "At the 15-minute walk limit of this collection",
-      "Detail page notes an 8.69m² private-road burden (私道負担) attached to the plot — registered area is 85.28m² vs 85.21m² measured"
-     ],
-     "source": {
-      "name": "OCN不動産",
-      "url": "https://house.goo.ne.jp/buy/bh/detail/13202/030/Z/20562560.html",
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1410770003579/",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h03",
-     "type": "house-new",
-     "district": "Sunagawa-cho 6",
-     "districtJa": "砂川町6丁目",
-     "title": "New 4LDK, move-in ready — biggest new-build package here",
-     "priceMan": 4790,
-     "priceFrom": false,
-     "landM2": 124.9,
-     "buildingM2": 98.53,
-     "layout": "4LDK",
-     "station": "Tamagawa-Josui",
-     "stationJa": "玉川上水",
-     "line": "Seibu Haijima Line",
-     "lineJa": "西武拝島線",
-     "walkMin": 15,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Biggest new-build package here: 98.5m² house on 124.9m² of land",
-      "Move-in ready (即入居可), parking for 2"
-     ],
-     "cautions": [
-      "At the 15-minute walk limit of this collection",
-      "Seen on a portal index page — verify details on the listing link",
-      "LIFULL HOME'S currently lists this 2-unit Sunagawa-cho 6 development (land 124.9m², Tamagawa-Josui 15 min) at ¥5,090万 — ¥300万 above the ¥4,790万 recorded here; the recorded unit may have sold or been repriced, so verify availability and price on the listing"
-     ],
-     "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/new-ikkodate/tokyo/tachikawa-city.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h04",
-     "type": "house-new",
-     "district": "Nishiki-cho 6",
-     "districtJa": "錦町6丁目",
-     "title": "New 2LDK+S — cheapest new build, closest to the centre",
-     "priceMan": 4180,
-     "priceFrom": false,
-     "landM2": 59.94,
-     "buildingM2": 74.96,
-     "layout": "2LDK+S",
-     "station": "Shibasaki-Taiikukan",
-     "stationJa": "柴崎体育館",
-     "line": "Tama Monorail",
-     "lineJa": "多摩モノレール",
-     "walkMin": 11,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Cheapest new house in this collection",
-      "Also 15 min from Nishi-Kunitachi (JR Nambu) — two lines usable"
-     ],
-     "cautions": [
-      "Very small 59.9m² plot — well below the city norm",
-      "Compact 2LDK+S layout",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/new-ikkodate/tokyo/tachikawa-city.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "exception": true
     },
     {
      "id": "h05",
@@ -1731,6 +1447,146 @@
      "majorCautions": 2
     },
     {
+     "id": "h17",
+     "type": "house-used",
+     "district": "Sunagawa-cho 3",
+     "districtJa": "砂川町3丁目",
+     "title": "Used 5LDK (2018) — huge 273m² plot with solar, 10 min to Musashi-Sunagawa",
+     "priceMan": 4990,
+     "priceFrom": false,
+     "landM2": 273.32,
+     "buildingM2": 114.81,
+     "layout": "5LDK",
+     "station": "Musashi-Sunagawa",
+     "stationJa": "武蔵砂川",
+     "line": "Seibu Haijima Line",
+     "lineJa": "西武拝島線",
+     "walkMin": 10,
+     "built": "Oct 2018",
+     "ageYears": 8,
+     "highlights": [
+      "Huge 273.3m² plot — by far the largest land in this set for the price",
+      "5LDK, all-electric with solar panels added Oct 2025 plus exterior/roof work the same month",
+      "Parking for 2 cars"
+     ],
+     "cautions": [
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h18",
+     "type": "house-used",
+     "district": "Ichiban-cho 3",
+     "districtJa": "一番町3丁目",
+     "title": "Used 3SLDK (2022) — nearly new, big house and plot, 14 min to Seibu-Tachikawa",
+     "priceMan": 4680,
+     "priceFrom": false,
+     "landM2": 126.63,
+     "buildingM2": 126.63,
+     "layout": "3SLDK",
+     "station": "Seibu-Tachikawa",
+     "stationJa": "西武立川",
+     "line": "Seibu Haijima Line",
+     "lineJa": "西武拝島線",
+     "walkMin": 14,
+     "built": "Aug 2022",
+     "ageYears": 4,
+     "highlights": [
+      "Nearly new (built Aug 2022) with a large 126.6m² house on a 126.6m² plot",
+      "LDK about 20.7帖 with pantry and loft storage; parking for 2",
+      "Quiet low-rise residential area, ~6m front road"
+     ],
+     "cautions": [
+      "14-minute walk is toward the brief's outer edge",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h19",
+     "type": "house-used",
+     "district": "Kashiwa-cho 4",
+     "districtJa": "柏町4丁目",
+     "title": "Used 1LDK+2S (2025) — effectively new, 8 min to dual-line Tamagawa-Josui",
+     "priceMan": 4480,
+     "priceFrom": false,
+     "landM2": 80.19,
+     "buildingM2": 63.98,
+     "layout": "1LDK+2S",
+     "station": "Tamagawa-Josui",
+     "stationJa": "玉川上水",
+     "line": "Seibu Haijima Line / Tama Monorail",
+     "lineJa": "西武拝島線・多摩モノレール",
+     "walkMin": 8,
+     "built": "Mar 2025",
+     "ageYears": 1,
+     "highlights": [
+      "Built Mar 2025 — effectively new, in a first-class low-rise zone",
+      "8 min to a dual-line station (Seibu Haijima + Tama Monorail)",
+      "Second-floor living with south balcony; parking for 2"
+     ],
+     "cautions": [
+      "Compact 64.0m² building on a small 80.2m² plot",
+      "Effectively 1 bedroom plus 2 service rooms — judge the layout, not the headline",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h20",
+     "type": "house-used",
+     "district": "Saiwai-cho 5",
+     "districtJa": "幸町5丁目",
+     "title": "Used 3LDK (2005) — reformed Aug 2026, 18帖 LDK with terrace, 10 min to Tamagawa-Josui",
+     "priceMan": 4980,
+     "priceFrom": false,
+     "landM2": 116.9,
+     "buildingM2": 90.31,
+     "layout": "3LDK",
+     "station": "Tamagawa-Josui",
+     "stationJa": "玉川上水",
+     "line": "Seibu Haijima Line / Tama Monorail",
+     "lineJa": "西武拝島線・多摩モノレール",
+     "walkMin": 10,
+     "built": "Dec 2005",
+     "ageYears": 21,
+     "highlights": [
+      "18帖-plus LDK with terrace and south balcony; all rooms 6 tatami or larger",
+      "Interior and exterior reformed Aug 2026; parking for 2",
+      "10 min to dual-line Tamagawa-Josui; primary school 5 min away"
+     ],
+     "cautions": [
+      "Built Dec 2005 — 21 years old despite the 2026 reform",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
      "id": "l01",
      "type": "land",
      "district": "Saiwai-cho 1",
@@ -1765,42 +1621,6 @@
       "infoDate": "2026-10-22"
      },
      "majorCautions": 2
-    },
-    {
-     "id": "l02",
-     "type": "land",
-     "district": "Shibasaki-cho 6",
-     "districtJa": "柴崎町6丁目",
-     "title": "Vacant corner lot in a low-rise zone, 6 min from Shibasaki-Taiikukan",
-     "priceMan": 2980,
-     "priceFrom": false,
-     "landM2": 93.18,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Shibasaki-Taiikukan",
-     "stationJa": "柴崎体育館",
-     "line": "Tama Monorail",
-     "lineJa": "多摩モノレール",
-     "walkMin": 6,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "40% / 80%",
-     "highlights": [
-      "Vacant land (更地), corner lot (角地) — east 7.2m / south 9.1m public roads",
-      "Immediate handover (即引渡し可); Tachikawa JR station is 18 min on foot",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "LP gas (no city gas)",
-      "Verified on the listing page (information date 2026-10-22)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z21369009/002859000/x1030Z21369009.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
     },
     {
      "id": "l05",
@@ -1871,43 +1691,6 @@
      "source": {
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z21954141/000232025/x1030Z21954141.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
-    },
-    {
-     "id": "l08",
-     "type": "land",
-     "district": "Sunagawa-cho 8",
-     "districtJa": "砂川町8丁目",
-     "title": "Vacant 148m² plot by Musashi-Sunagawa — setback and subdivision pending",
-     "priceMan": 3380,
-     "priceFrom": false,
-     "landM2": 148.7,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Musashi-Sunagawa",
-     "stationJa": "武蔵砂川",
-     "line": "Seibu Haijima Line",
-     "lineJa": "西武拝島線",
-     "walkMin": 11,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "40% / 80%",
-     "highlights": [
-      "Vacant land delivered as-is vacant (更地渡し) — no demolition cost",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "Setback required (セットバック要)",
-      "Pre-subdivision lot (分筆前) — the stated area may change after subdivision and survey",
-      "Narrow front road: 3.6m on the east side",
-      "Verified on the listing page (information date 2026-10-22)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/13202/030Z21116135/164755001/x1030Z21116135.html",
       "verified": "detail",
       "infoDate": "2026-10-22"
      }
@@ -2067,7 +1850,7 @@
     "nameJa": "ただいま！",
     "edition": "Matsudo",
     "editionJa": "松戸",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Matsudo City, Chiba",
     "areaJa": "千葉県松戸市"
    },
@@ -2078,7 +1861,7 @@
      "district": "Goko-nishi 1",
      "districtJa": "五香西1丁目",
      "title": "New 3LDK (GRAFARE, 4 units) — 18帖 LDK, 7 min to Motoyama",
-     "priceMan": 3790,
+     "priceMan": 3590,
      "priceFrom": false,
      "landM2": 117.89,
      "buildingM2": 92.95,
@@ -2101,8 +1884,9 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/bh/detail/4/12207/1226010046527/122601/x41226010046527.html",
       "verified": "detail",
-      "infoDate": "2026-10-24"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "priceDropMan": 200
     },
     {
      "id": "h02",
@@ -2511,40 +2295,6 @@
      "majorCautions": 1
     },
     {
-     "id": "h17",
-     "type": "house-used",
-     "district": "Shinsaku",
-     "districtJa": "新作",
-     "title": "Used 4LDK (1999), fully reformed Jun 2026 — corner lot, parking for 3, Kita-Matsudo side",
-     "priceMan": 2980,
-     "priceFrom": false,
-     "landM2": 141.99,
-     "buildingM2": 95.63,
-     "layout": "4LDK",
-     "station": "Kita-Matsudo",
-     "stationJa": "北松戸",
-     "line": "JR Joban Line",
-     "lineJa": "JR常磐線",
-     "walkMin": 15,
-     "built": "Sep 1999",
-     "ageYears": 27,
-     "highlights": [
-      "Full interior reform completed Jun 2026 (new kitchen, bath, washstand, water heater, all wallpaper/flooring)",
-      "Corner lot on 142.0m² with parallel parking for up to 3 cars (size-dependent); loft storage; primary school within 10 min"
-     ],
-     "cautions": [
-      "At the 15-minute walk limit of this collection",
-      "1999 structure under the 2026 cosmetic reform — the works were finishes and waterworks, per the listing",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/area_chiba/12207/037.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
      "id": "l01",
      "type": "land",
      "district": "Tokiwadaira 1",
@@ -2889,83 +2639,6 @@
       "infoDate": "2026-10-21"
      },
      "majorCautions": 2
-    },
-    {
-     "id": "l11",
-     "type": "land",
-     "district": "Kogane-Kiyoshi-cho 1",
-     "districtJa": "小金清志町1丁目",
-     "title": "Corner lot in a low-rise zone by Kita-Kogane — cliff ordinance, building on site",
-     "priceMan": 2380,
-     "priceFrom": false,
-     "landM2": 129,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Kita-Kogane",
-     "stationJa": "北小金",
-     "line": "JR Joban Line",
-     "lineJa": "JR常磐線",
-     "walkMin": 15,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "50% / 100%",
-     "highlights": [
-      "Corner lot (角地) on two roads — north 4m (10.5m frontage) and west 4m (11.4m frontage)",
-      "Full utilities (city gas, water, mains sewer); junior high school 3 min on foot",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost and effort on the buyer",
-      "Cliff ordinance restriction applies (崖条例の制限有)",
-      "Handover timing is by consultation (引渡可能時期：相談)",
-      "Verified on the listing page (information date 2026-10-22)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/12207/030Z78708210/006050529/x1030Z78708210.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
-    },
-    {
-     "id": "l12",
-     "type": "land",
-     "district": "Futatsugi",
-     "districtJa": "二ツ木",
-     "title": "Plot inside the Shin-Matsudo East land-readjustment zone — building permit needed first",
-     "priceMan": 3799,
-     "priceFrom": false,
-     "landM2": 116.19,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Shin-Matsudo",
-     "stationJa": "新松戸",
-     "line": "JR Joban Line",
-     "lineJa": "JR常磐線",
-     "walkMin": 15,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "50% / 100%",
-     "highlights": [
-      "Fronts a SW 6m road with good sun; elementary school and supermarket about 8 min on foot",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "Inside the Shin-Matsudo East land-readjustment project area (新松戸東部土地区画整理事業区域内) — building requires a City Planning Act Art. 53 permit, and replotting (仮換地) may change the plot",
-      "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost and effort on the buyer; price is bare-land value (素地価格)",
-      "Contract restriction (契約制限有): sale aimed at buyers planning a wooden house of up to 3 floors with no basement, or vacant-land use",
-      "Agent notes part of the plot falls in a quasi-residential zone (準住居あり) — coverage/FAR differ by portion (50%/100% and 60%/200%)",
-      "Verified on the listing page (information date 2026-10-22)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/12207/030Z20741130/184817001/x1030Z20741130.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     },
-     "majorCautions": 1
     }
    ]
   },
@@ -2975,7 +2648,7 @@
     "nameJa": "ただいま！",
     "edition": "Kashiwa",
     "editionJa": "柏",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Kashiwa City, Chiba",
     "areaJa": "千葉県柏市"
    },
@@ -3012,8 +2685,7 @@
       "url": "https://house.goo.ne.jp/buy/bh/detail/4/12217/1448780015182/144878/x41448780015182.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 200
+     }
     },
     {
      "id": "h02",
@@ -3082,42 +2754,6 @@
       "verified": "index",
       "infoDate": "2026-10-22"
      }
-    },
-    {
-     "id": "h04",
-     "type": "house-new",
-     "district": "Sakasai 4",
-     "districtJa": "逆井4丁目",
-     "title": "New 4LDK — design + construction performance certified, Sakasai 7 min",
-     "priceMan": 3199,
-     "priceFrom": false,
-     "landM2": 97.66,
-     "buildingM2": 96.88,
-     "layout": "4LDK",
-     "station": "Sakasai",
-     "stationJa": "逆井",
-     "line": "Tobu Urban Park Line",
-     "lineJa": "東武野田線",
-     "walkMin": 7,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Design and construction housing-performance evaluations attached",
-      "Ready to move in per listing",
-      "City gas, parking space"
-     ],
-     "cautions": [
-      "Two-house development; figures are for the listed house type",
-      "Detail page shows the plot includes 28.03m2 of private road and access is via a south 4m private road — confirm the private-road share/burden and passage rights",
-      "Listing remarks cite the Landscape Act (景観法) and the Residential Land Development / Specified Fill Regulation Act (宅地造成及び特定盛土等規制法, consent obtained) among the applicable restrictions"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/bh/detail/4/12217/1226010045482/122601/x41226010045482.html",
-      "verified": "detail",
-      "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 200
     },
     {
      "id": "h05",
@@ -3292,40 +2928,6 @@
      }
     },
     {
-     "id": "h11",
-     "type": "house-used",
-     "district": "Hananoi",
-     "districtJa": "花野井",
-     "title": "Used 4LDK (2008) — 3-side-light LDK, exterior and roof-cover work done, Kashiwanoha-Campus 14 min",
-     "priceMan": 4200,
-     "priceFrom": false,
-     "landM2": 113.47,
-     "buildingM2": 99.5,
-     "layout": "4LDK",
-     "station": "Kashiwanoha-Campus",
-     "stationJa": "柏の葉キャンパス",
-     "line": "Tsukuba Express",
-     "lineJa": "つくばエクスプレス",
-     "walkMin": 14,
-     "built": "Nov 2008",
-     "ageYears": 17,
-     "highlights": [
-      "LDK lit from 3 sides, face-to-face kitchen, Japanese-style room usable as guest room",
-      "Water heater replaced and exterior/roof work recorded in reform history",
-      "Immediate handover possible per listing; supermarket 8 min, elementary school 7 min"
-     ],
-     "cautions": [
-      "Reform dates conflict between the listing text (Dec 2023) and the reform-history field (Dec 2025) — verify which work was done when",
-      "17-18 years old; no seismic or defect-insurance information on the detail page"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z20714889/006050592/x1030Z20714889.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
-    },
-    {
      "id": "h12",
      "type": "house-used",
      "district": "Eirakudai 2",
@@ -3395,144 +2997,75 @@
      }
     },
     {
-     "id": "h14",
-     "type": "house-used",
-     "district": "Fujishin 1",
-     "districtJa": "藤心1丁目",
-     "title": "Used 4LDK (2006) — renovated Mar 2026, south-west corner plot, Sakasai 12 min",
-     "priceMan": 2990,
+     "id": "h18",
+     "type": "house-new",
+     "district": "Fujishin 2",
+     "districtJa": "藤心2丁目",
+     "title": "New 4LDK (Open Place) — 21-tatami LDK, 8 min to Sakasai, parking for 2",
+     "priceMan": 3999,
      "priceFrom": false,
-     "landM2": 121.24,
-     "buildingM2": 100.6,
+     "landM2": 140.64,
+     "buildingM2": 107.64,
      "layout": "4LDK",
      "station": "Sakasai",
      "stationJa": "逆井",
      "line": "Tobu Urban Park Line",
      "lineJa": "東武野田線",
-     "walkMin": 12,
-     "built": "Mar 2006",
-     "ageYears": 20,
+     "walkMin": 8,
+     "built": "New build",
+     "ageYears": 0,
      "highlights": [
-      "Interior reform completed Mar 2026 per listing",
-      "South-west corner plot with good light; 15.5-tatami LDK with floor heating",
-      "Large walk-in closet plus about 2.7 tsubo of attic storage"
+      "21-tatami LDK with counter kitchen, walk-in closet and pantry",
+      "South-west road frontage; parking for 2",
+      "City gas; dishwasher, water purifier and bathroom dryer fitted"
      ],
      "cautions": [
-      "20 years old — post-1981 seismic standard, but structural inspection status unverified",
-      "Parking is 1 car and size-dependent per listing",
-      "Detail page states the MLIT-designated defect insurance (瑕疵保険) can be used and a broker defect warranty applies — but a completed structural inspection is still not stated, so the inspection caution stands",
-      "Detail page rates the house's energy performance below the standard (省エネ基準未達成)"
+      "Not yet built — completion scheduled Apr 2027, handover May 2027",
+      "Registered land category is forest (山林) although the current category is residential land",
+      "Landscape Act and fill-regulation controls listed on the detail page"
      ],
      "source": {
       "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21741387/168029009/x1030Z21741387.html",
+      "url": "https://house.goo.ne.jp/buy/bh/detail/12217/030/W/22128450.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     },
     {
-     "id": "h15",
-     "type": "house-used",
-     "district": "Masuodai 3",
-     "districtJa": "増尾台3丁目",
-     "title": "Used 4LDK (2016) — reform finished Aug 2026, parking for 2, Sakasai 11 min",
-     "priceMan": 2980,
+     "id": "h19",
+     "type": "house-new",
+     "district": "Masuo 7",
+     "districtJa": "増尾7丁目",
+     "title": "New 4LDK — big 116m² interior, 8 min to Masuo, performance-evaluated",
+     "priceMan": 3690,
      "priceFrom": false,
-     "landM2": 108,
-     "buildingM2": 97.1,
+     "landM2": 128.56,
+     "buildingM2": 116.03,
      "layout": "4LDK",
-     "station": "Sakasai",
-     "stationJa": "逆井",
+     "station": "Masuo",
+     "stationJa": "増尾",
      "line": "Tobu Urban Park Line",
      "lineJa": "東武野田線",
-     "walkMin": 11,
-     "built": "Dec 2016",
-     "ageYears": 9,
+     "walkMin": 8,
+     "built": "New build",
+     "ageYears": 0,
      "highlights": [
-      "Under 10 years old at under ¥3,000万",
-      "Reform completed Aug 2026 per listing",
-      "Counter kitchen with dishwasher, WIC and pantry, 2 toilets"
+      "Largest new-build floor area in this batch at 116.03m²",
+      "Design + construction performance evaluations attached; move-in ready",
+      "Two Tobu stations usable — Masuo 8 min, Sakasai 9–11 min"
      ],
      "cautions": [
-      "Parking for 2 is size-dependent per listing",
-      "Detail page confirms a completion-inspection certificate (建築確認完了検査済証) exists and a broker's own defect warranty (不動産会社独自の瑕疵保証) is included — note this is the broker's scheme, not the MLIT-designated insurance; the Aug 2026 reform covered water fixtures (kitchen/bath/toilet) and interior walls/rooms only"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21321194/188279001/x1030Z21321194.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
-    },
-    {
-     "id": "h16",
-     "type": "house-used",
-     "district": "Shiinokidai 5",
-     "districtJa": "しいの木台5丁目",
-     "title": "Used 3LDK (2013) — big 171.9m2 plot, all-electric, Takayanagi 15 min",
-     "priceMan": 2799,
-     "priceFrom": false,
-     "landM2": 171.9,
-     "buildingM2": 105.16,
-     "layout": "3LDK",
-     "station": "Takayanagi",
-     "stationJa": "高柳",
-     "line": "Tobu Urban Park Line",
-     "lineJa": "東武野田線",
-     "walkMin": 15,
-     "built": "Feb 2013",
-     "ageYears": 13,
-     "highlights": [
-      "171.9m2 land with a 105.16m2 building — most space per yen in this set",
-      "All-electric, south road, bathroom dryer",
-      "System kitchen, parking space"
-     ],
-     "cautions": [
-      "Right at the 15-minute walk limit — any route difference pushes it over",
-      "The Apr 2026 reform on the detail page was limited to the kitchen and wallpaper — not a full renovation; the rest of the 2013 interior is original"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21013888/168029009/x1030Z21013888.html",
-      "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h17",
-     "type": "house-used",
-     "district": "Toyojumi 4",
-     "districtJa": "豊住4丁目",
-     "title": "Used 4SLDK (1992) — Sumitomo Forestry build, reformed, 19-tatami LDK, Shin-Kashiwa 9 min",
-     "priceMan": 2980,
-     "priceFrom": false,
-     "landM2": 97.87,
-     "buildingM2": 96.46,
-     "layout": "4SLDK",
-     "station": "Shin-Kashiwa",
-     "stationJa": "新柏",
-     "line": "Tobu Urban Park Line",
-     "lineJa": "東武野田線",
-     "walkMin": 9,
-     "built": "Jan 1992",
-     "ageYears": 34,
-     "highlights": [
-      "Sumitomo Forestry construction; elevated corner plot with good light and ventilation",
-      "19-tatami LDK, all rooms south-facing, 2nd-floor living",
-      "Full interior/exterior reform recorded in several feeds (kitchen, bath, toilets, flooring, roof/exterior paint)"
-     ],
-     "cautions": [
-      "Same house is listed by many brokers at ¥3,199万, ¥3,280万 and ¥3,480万 in different feeds, with walk times of 9 and 10 min — price and terms must be confirmed with one broker",
-      "34 years old (1992, post-1981 standard) — age-related wear beyond the reform scope is unverified",
-      "Two other live goo index feeds list this identical house at ¥2,980万 — ¥219万 below this detail page's ¥3,199万 — suggesting a recent price cut that has not reached every feed; confirm the current price before relying on either figure"
+      "One of a 3–6-unit development — confirm which unit and plot this price buys",
+      "Seen on a portal index page — verify details on the listing link"
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21210491/168029009/x1030Z21210491.html",
-      "verified": "detail",
-      "infoDate": "2026-11-02"
+      "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_chiba/12217.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
      },
-     "priceDropMan": 219
+     "isNew": true
     },
     {
      "id": "l01",
@@ -3742,40 +3275,6 @@
      }
     },
     {
-     "id": "l07",
-     "type": "land",
-     "district": "Takayanagi",
-     "districtJa": "高柳",
-     "title": "197m² corner plot 8 minutes from Takayanagi — old house, LP gas currently connected",
-     "priceMan": 2480,
-     "priceFrom": false,
-     "landM2": 197.5,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Takayanagi",
-     "stationJa": "高柳",
-     "line": "Tobu Urban Park Line",
-     "lineJa": "東武野田線",
-     "walkMin": 8,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "50% / 100%",
-     "highlights": [
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "Building standing on the land (上物有り, old house, sold as-is)",
-      "City gas not yet connected to the site — separate connection cost if used; currently concentrated LP gas"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21802948/006050592/x1030Z21802948.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
-    },
-    {
      "id": "l08",
      "type": "land",
      "district": "Tsukushigaoka 2",
@@ -3950,8 +3449,83 @@
       "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21836681/001616031/x1030Z21836681.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
+     }
+    },
+    {
+     "id": "l13",
+     "type": "land",
+     "district": "Takayanagi",
+     "districtJa": "高柳",
+     "title": "174m² corner lot 9 minutes from Takayanagi — no builder tie-in, immediate handover",
+     "priceMan": 3180,
+     "priceFrom": false,
+     "landM2": 173.94,
+     "buildingM2": null,
+     "layout": null,
+     "station": "Takayanagi",
+     "stationJa": "高柳",
+     "line": "Tobu Urban Park Line",
+     "lineJa": "東武野田線",
+     "walkMin": 9,
+     "built": null,
+     "ageYears": null,
+     "zoning": "第1種低層住居専用地域",
+     "coverageFar": "50% / 100%",
+     "highlights": [
+      "Vacant land (更地), south-east / north-east corner lot with a waterway on the north-west side",
+      "Primary and junior high schools within 10 min walk; shops near the station",
+      "No building condition (建築条件なし) — choose your own builder",
+      "No building condition (建築条件なし) — choose your own builder"
+     ],
+     "cautions": [
+      "North-west side fronts a waterway rather than a road — confirm boundaries and any setback",
+      "City gas is not listed among the connected utilities on the detail page"
+     ],
+     "source": {
+      "name": "goo住宅・不動産 (SUUMO feed)",
+      "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21899538/025659000/x1030Z21899538.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
      },
-     "priceDropMan": 200
+     "isNew": true
+    },
+    {
+     "id": "l14",
+     "type": "land",
+     "district": "Akehara 3",
+     "districtJa": "明原3丁目",
+     "title": "185m² vacant lot at the walk limit from Kashiwa — no builder tie-in",
+     "priceMan": 2980,
+     "priceFrom": false,
+     "landM2": 184.77,
+     "buildingM2": null,
+     "layout": null,
+     "station": "Kashiwa",
+     "stationJa": "柏",
+     "line": "JR Joban Line",
+     "lineJa": "JR常磐線",
+     "walkMin": 15,
+     "built": null,
+     "ageYears": null,
+     "zoning": "第1種中高層住居専用地域",
+     "coverageFar": "60% / 160%",
+     "highlights": [
+      "Vacant land (更地), east-road frontage, immediate handover",
+      "Supermarket 7 min and convenience store 5 min walk; primary school 10 min",
+      "No building condition (建築条件なし) — choose your own builder",
+      "No building condition (建築条件なし) — choose your own builder"
+     ],
+     "cautions": [
+      "At the 15-minute walk limit of this collection",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/buy/la/special/4002/area_chiba/12217.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     }
    ]
   },
@@ -3961,7 +3535,7 @@
     "nameJa": "ただいま！",
     "edition": "Hachioji",
     "editionJa": "八王子",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Hachioji City, Tokyo",
     "areaJa": "東京都八王子市"
    },
@@ -4009,7 +3583,7 @@
      "district": "Ishikawa-machi",
      "districtJa": "石川町",
      "title": "New 4LDK development (21 units) with solar — 14 min from Komiya",
-     "priceMan": 3799,
+     "priceMan": 3699,
      "priceFrom": true,
      "landM2": 125.11,
      "buildingM2": 96.05,
@@ -4036,9 +3610,10 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/20852203.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
+      "infoDate": "2026-11-07"
      },
-     "majorCautions": 1
+     "majorCautions": 1,
+     "priceDropMan": 100
     },
     {
      "id": "h04",
@@ -4286,39 +3861,6 @@
      }
     },
     {
-     "id": "h11",
-     "type": "house-used",
-     "district": "Sanda-machi 1",
-     "districtJa": "散田町1丁目",
-     "title": "Used 3SLDK (1997) — 10 min from Nishi-Hachioji, parking for 2",
-     "priceMan": 3199,
-     "priceFrom": false,
-     "landM2": 100.96,
-     "buildingM2": 72.09,
-     "layout": "3SLDK",
-     "station": "Nishi-Hachioji",
-     "stationJa": "西八王子",
-     "line": "JR Chuo Line",
-     "lineJa": "JR中央線",
-     "walkMin": 10,
-     "built": "Jun 1997",
-     "ageYears": 29,
-     "highlights": [
-      "South-road plot with a garden; parking for 2",
-      "One of few in-brief houses on the JR Chuo side west of Hachioji Station"
-     ],
-     "cautions": [
-      "Compact 72.1m² building despite the 3SLDK label — check room sizes on the plan",
-      "Listing photos use AI virtual staging — the house is sold unfurnished, as-is (現況有姿)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21798556/129388001/x1030Z21798556.html",
-      "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
      "id": "h12",
      "type": "house-used",
      "district": "Higashi-Asakawa-cho",
@@ -4385,6 +3927,112 @@
       "verified": "index",
       "infoDate": "2026-10-23"
      }
+    },
+    {
+     "id": "h14",
+     "type": "house-used",
+     "district": "Katakura-cho",
+     "districtJa": "片倉町",
+     "title": "Used 3SLDK (2012) — 4 min from Katakura, 22-tatami LDK, parking for 2",
+     "priceMan": 4190,
+     "priceFrom": false,
+     "landM2": 136.23,
+     "buildingM2": 125.45,
+     "layout": "3SLDK",
+     "station": "Katakura",
+     "stationJa": "片倉",
+     "line": "JR Yokohama Line",
+     "lineJa": "JR横浜線",
+     "walkMin": 4,
+     "built": "Jul 2012",
+     "ageYears": 14,
+     "highlights": [
+      "4-minute walk to Katakura — joint-shortest in the used set; Keio-Katakura also 7 min",
+      "~22-tatami LDK with living stairs; storage room by the entrance",
+      "Parking for 2 (carport); immediate handover"
+     ],
+     "cautions": [
+      "Part of the plot sits in a 60% / 200% coverage-FAR zone — confirm the zoning split before assuming a rebuild footprint",
+      "Landscape Act, Aviation Act and height-district controls listed on the detail page"
+     ],
+     "source": {
+      "name": "goo住宅・不動産 (SUUMO feed)",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21014623/006050903/x1030Z21014623.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h15",
+     "type": "house-used",
+     "district": "Naganuma-cho",
+     "districtJa": "長沼町",
+     "title": "Used 4LDK (2025) — near-new, 4 min from Naganuma, 19-tatami LDK",
+     "priceMan": 4780,
+     "priceFrom": false,
+     "landM2": 130.01,
+     "buildingM2": 98.53,
+     "layout": "4LDK",
+     "station": "Naganuma",
+     "stationJa": "長沼",
+     "line": "Keio Line",
+     "lineJa": "京王線",
+     "walkMin": 4,
+     "built": "Aug 2025",
+     "ageYears": 1,
+     "highlights": [
+      "Built Aug 2025 — effectively new, in a planned subdivision in a first-category low-rise zone",
+      "19.1-tatami LDK with 3-sided light; walk-in closet and pantry",
+      "Primary school 3 min walk; parallel parking for 2"
+     ],
+     "cautions": [
+      "24m² private-road area within the plot — confirm the share and passage rights",
+      "Handover by consultation, not immediate"
+     ],
+     "source": {
+      "name": "goo住宅・不動産 (SUUMO feed)",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21308093/006050903/x1030Z21308093.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "majorCautions": 2,
+     "isNew": true
+    },
+    {
+     "id": "h16",
+     "type": "house-used",
+     "district": "Otsuka",
+     "districtJa": "大塚",
+     "title": "Used 4LDK (2002), fully reformed — 8 min from Otsuka-Teikyo-Daigaku, 180m² plot",
+     "priceMan": 2990,
+     "priceFrom": false,
+     "landM2": 179.7,
+     "buildingM2": 96.04,
+     "layout": "4LDK",
+     "station": "Otsuka-Teikyo-Daigaku",
+     "stationJa": "大塚・帝京大学",
+     "line": "Tama Monorail",
+     "lineJa": "多摩都市モノレール",
+     "walkMin": 8,
+     "built": "Dec 2002",
+     "ageYears": 24,
+     "highlights": [
+      "Full reform: exterior/roof paint, balcony waterproofing, kitchen, bath, both toilets, water heater and lighting replaced",
+      "Large 179.7m² plot with all rooms 6 tatami or larger plus attic storage",
+      "Supermarket 5 min walk; good views from the 2nd floor"
+     ],
+     "cautions": [
+      "24 years old — the reform was comprehensive but the structure is original",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_tokyo/13201.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     },
     {
      "id": "l01",
@@ -4459,42 +4107,6 @@
      }
     },
     {
-     "id": "l03",
-     "type": "land",
-     "district": "Higashi-Asakawa-cho",
-     "districtJa": "東浅川町",
-     "title": "167m² plot 5 minutes from Hazama — a quarter of it is slope",
-     "priceMan": 2580,
-     "priceFrom": false,
-     "landM2": 167.04,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Hazama",
-     "stationJa": "狭間",
-     "line": "Keio Takao Line",
-     "lineJa": "京王高尾線",
-     "walkMin": 5,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "40% / 80%",
-     "highlights": [
-      "Two stations usable: Hazama 5 min, Takao 16 min",
-      "Low ¥/tsubo for a 5-minute walk in a low-rise zone",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "A building stands on the land (上物有り / 古家有) — demolition cost likely on the buyer",
-      "Headline area includes sloping land (傾斜地 24.76% included); the listing gives an effective residential area of only 125.68m²"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21452231/000232004/x1030Z21452231.html",
-      "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
      "id": "l04",
      "type": "land",
      "district": "Katakura-cho",
@@ -4564,43 +4176,6 @@
      "source": {
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21978024/000389162/x1030Z21978024.html",
-      "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "l06",
-     "type": "land",
-     "district": "Mejirodai 2",
-     "districtJa": "めじろ台2丁目",
-     "title": "230m² plot in the Mejirodai planned estate, 6 minutes from the station",
-     "priceMan": 3780,
-     "priceFrom": false,
-     "landM2": 230.69,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Mejirodai",
-     "stationJa": "めじろ台",
-     "line": "Keio Takao Line",
-     "lineJa": "京王高尾線",
-     "walkMin": 6,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "40% / 80%",
-     "highlights": [
-      "Large plot in the Keio-developed Mejirodai estate, in its housing-only district-plan area",
-      "Regular-shaped plot (整形地), city gas and mains sewer",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "A building stands on the land (上物有り) — demolition cost likely on the buyer",
-      "The plot sits inside the Mejirodai district-plan housing-only zone (めじろ台地区計画 住宅専用地区)",
-      "Height-district (高度地区) restriction listed on the page"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21463213/100451227/x1030Z21463213.html",
       "verified": "detail",
       "infoDate": "2026-10-23"
      }
@@ -4746,6 +4321,44 @@
       "verified": "index",
       "infoDate": "2026-10-23"
      }
+    },
+    {
+     "id": "l13",
+     "type": "land",
+     "district": "Mejirodai 4",
+     "districtJa": "めじろ台4丁目",
+     "title": "227m² plot 3 minutes from Mejirodai — seller demolishes before handover",
+     "priceMan": 4330,
+     "priceFrom": false,
+     "landM2": 227.16,
+     "buildingM2": null,
+     "layout": null,
+     "station": "Mejirodai",
+     "stationJa": "めじろ台",
+     "line": "Keio Takao Line",
+     "lineJa": "京王高尾線",
+     "walkMin": 3,
+     "built": null,
+     "ageYears": null,
+     "zoning": "第1種低層住居専用地域",
+     "coverageFar": "40% / 80%",
+     "highlights": [
+      "3-minute walk to Mejirodai in the planned Mejirodai estate",
+      "Large 227.16m² regular-shaped plot; city gas and mains sewer",
+      "No building condition (建築条件なし) — choose your own builder",
+      "No building condition (建築条件なし) — choose your own builder"
+     ],
+     "cautions": [
+      "A building stands on the land — seller demolishes before handover, confirm the demolition scope and timing",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     }
    ]
   },
@@ -4755,7 +4368,7 @@
     "nameJa": "ただいま！",
     "edition": "Funabashi",
     "editionJa": "船橋",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Funabashi City, Chiba",
     "areaJa": "千葉県船橋市"
    },
@@ -5077,8 +4690,7 @@
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21965098/006050A93/x1030Z21965098.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 200
+     }
     },
     {
      "id": "h13",
@@ -5111,8 +4723,7 @@
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21408183/156871001/x1030Z21408183.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 90
+     }
     },
     {
      "id": "h15",
@@ -5145,8 +4756,7 @@
       "url": "https://house.goo.ne.jp/buy/bh/detail/12204/030/W/21235478.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 200
+     }
     },
     {
      "id": "h16",
@@ -5225,7 +4835,7 @@
      "district": "Maruyama 1",
      "districtJa": "丸山1丁目",
      "title": "167m² vacant corner plot 3 minutes from Magomezawa — over 50 tsubo",
-     "priceMan": 2980,
+     "priceMan": 2280,
      "priceFrom": false,
      "landM2": 166.6,
      "buildingM2": null,
@@ -5254,8 +4864,9 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/la/detail/1/12204/030Z21318448/000585110/x1030Z21318448.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
+      "infoDate": "2026-11-08"
+     },
+     "priceDropMan": 700
     },
     {
      "id": "l03",
@@ -5605,7 +5216,7 @@
     "nameJa": "ただいま！",
     "edition": "Utsunomiya",
     "editionJa": "宇都宮",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Utsunomiya City, Tochigi",
     "areaJa": "栃木県宇都宮市"
    },
@@ -5685,42 +5296,6 @@
      "majorCautions": 1
     },
     {
-     "id": "h04",
-     "type": "house-used",
-     "district": "Yoto 6",
-     "districtJa": "陽東6丁目",
-     "title": "Used 4SLDK (2004) — all-electric 2x4, roof and walls repainted in 2025, 6 min to the LRT",
-     "priceMan": 3480,
-     "priceFrom": false,
-     "landM2": 157.68,
-     "buildingM2": 105.36,
-     "layout": "4SLDK",
-     "station": "Utsunomiya University Yoto Campus",
-     "stationJa": "宇都宮大学陽東キャンパス",
-     "line": "Haga-Utsunomiya LRT (Lightline)",
-     "lineJa": "芳賀・宇都宮LRT（ライトライン）",
-     "walkMin": 6,
-     "built": "Oct 2004",
-     "ageYears": 22,
-     "highlights": [
-      "All-electric 2x4 house with a vaulted living room and electric floor heating",
-      "Roof and exterior walls repainted in February 2025; toilet replaced in 2022",
-      "Vacant and viewable any time, cleaned before handover",
-      "Part of the 347-lot Yoto Sakuragaoka subdivision by the university"
-     ],
-     "cautions": [
-      "Zoning is industrial (工業地域) despite the residential subdivision — factories/warehouses are permitted neighbours; check the immediate surroundings",
-      "District-plan exterior guidelines apply in Yoto Sakuragaoka",
-      "Verified on the listing page (information date 2026-10-23)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z21983086/004602031/x1030Z21983086.html",
-      "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
      "id": "h05",
      "type": "house-used",
      "district": "Naka-Okamoto-cho",
@@ -5796,7 +5371,7 @@
      "district": "Fudomae 3",
      "districtJa": "不動前3丁目",
      "title": "Used 4LDK (1980) — comprehensively reformed, 8 min from Minami-Utsunomiya",
-     "priceMan": 2249,
+     "priceMan": 2229,
      "priceFrom": false,
      "landM2": 200.0,
      "buildingM2": 115.85,
@@ -5822,10 +5397,10 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z21937380/055361013/x1030Z21937380.html",
       "verified": "detail",
-      "infoDate": "2026-11-02"
+      "infoDate": "2026-11-09"
      },
      "majorCautions": 1,
-     "priceDropMan": 30
+     "priceDropMan": 20
     },
     {
      "id": "h08",
@@ -6032,8 +5607,7 @@
       "url": "https://house.goo.ne.jp/buy/bh/special/6006/area_tochigi/09201.html?p=5",
       "verified": "index",
       "infoDate": "2026-11-02"
-     },
-     "isNew": true
+     }
     },
     {
      "id": "h15",
@@ -6065,8 +5639,7 @@
       "url": "https://www.homes.co.jp/kodate/shinchiku/tochigi/utsunomiya-city/0496ED9429-town/list/",
       "verified": "index",
       "infoDate": "2026-11-02"
-     },
-     "isNew": true
+     }
     },
     {
      "id": "l02",
@@ -6274,7 +5847,7 @@
      "district": "Nakagawara-cho",
      "districtJa": "中河原町",
      "title": "Two-station plot, Tobu-Utsunomiya 12 minutes, setback already done",
-     "priceMan": 1248,
+     "priceMan": 1190,
      "priceFrom": false,
      "landM2": 125.08,
      "buildingM2": null,
@@ -6304,8 +5877,9 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z21831284/185230002/x1030Z21831284.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "priceDropMan": 58
     },
     {
      "id": "l09",
@@ -6478,45 +6052,11 @@
     "nameJa": "ただいま！",
     "edition": "Takasaki",
     "editionJa": "高崎",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Takasaki City, Gunma",
     "areaJa": "群馬県高崎市"
    },
    "properties": [
-    {
-     "id": "h01",
-     "type": "house-new",
-     "district": "Yoshii-cho Nagane",
-     "districtJa": "吉井町長根",
-     "title": "New 4LDK long-term quality house — 3 min from Nishi-Yoshii, all rooms south-facing",
-     "priceMan": 2190,
-     "priceFrom": false,
-     "landM2": 186.22,
-     "buildingM2": 107.44,
-     "layout": "4LDK",
-     "station": "Nishi-Yoshii",
-     "stationJa": "西吉井",
-     "line": "Joshin Dentetsu",
-     "lineJa": "上信電鉄",
-     "walkMin": 3,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Long-term quality housing (長期優良住宅) with design + construction performance evaluations",
-      "All rooms face south; parking for 3, flat walk to the station, completed Jun 2026 and ready to move in"
-     ],
-     "cautions": [
-      "Individual propane gas (no city gas) per the listing",
-      "Yoshii is a car-oriented area — the Joshin line is infrequent compared with JR Takasaki",
-      "Verified on the listing page (information date 2026-10-22)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/bh/detail/10202/030/W/21100355.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
-    },
     {
      "id": "h02",
      "type": "house-new",
@@ -6958,7 +6498,7 @@
      "district": "Ino-cho",
      "districtJa": "井野町",
      "title": "Used 6SLDK (1988) — a bookshop converted into a 146m² home",
-     "priceMan": 3080,
+     "priceMan": 2990,
      "priceFrom": false,
      "landM2": 190.35,
      "buildingM2": 146.56,
@@ -6983,9 +6523,10 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z21943497/177142002/x1030Z21943497.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
+      "infoDate": "2026-11-09"
      },
-     "majorCautions": 1
+     "majorCautions": 1,
+     "priceDropMan": 90
     },
     {
      "id": "l01",
@@ -7404,7 +6945,7 @@
     "nameJa": "ただいま！",
     "edition": "Sagamihara",
     "editionJa": "相模原",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Sagamihara City, Kanagawa",
     "areaJa": "神奈川県相模原市"
    },
@@ -7932,8 +7473,7 @@
       "verified": "detail",
       "infoDate": "2026-11-02"
      },
-     "majorCautions": 1,
-     "priceDropMan": 200
+     "majorCautions": 1
     },
     {
      "id": "l02",
@@ -8258,7 +7798,7 @@
     "nameJa": "ただいま！",
     "edition": "Yokohama",
     "editionJa": "横浜",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Yokohama City, Kanagawa",
     "areaJa": "神奈川県横浜市"
    },
@@ -8528,8 +8068,7 @@
       "verified": "detail",
       "infoDate": "2026-11-02"
      },
-     "majorCautions": 1,
-     "priceDropMan": 100
+     "majorCautions": 1
     },
     {
      "id": "h09",
@@ -9141,43 +8680,11 @@
     "nameJa": "ただいま！",
     "edition": "Machida",
     "editionJa": "町田",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Machida City, Tokyo",
     "areaJa": "東京都町田市"
    },
    "properties": [
-    {
-     "id": "h01",
-     "type": "house-new",
-     "district": "Tamagawagakuen 3",
-     "districtJa": "玉川学園3丁目",
-     "title": "New 3LDK (2 units) — completed and move-in ready, parking for 2",
-     "priceMan": 4499,
-     "priceFrom": false,
-     "landM2": 117.07,
-     "buildingM2": 91.66,
-     "layout": "3LDK",
-     "station": "Tamagawagakuen-mae",
-     "stationJa": "玉川学園前",
-     "line": "Odakyu Odawara Line",
-     "lineJa": "小田急小田原線",
-     "walkMin": 13,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Completed, immediate move-in possible",
-      "Parking for 2 cars; quiet residential street in Tamagawagakuen"
-     ],
-     "cautions": [
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/bh/special/6004/area_tokyo/13209/028.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
     {
      "id": "h02",
      "type": "house-used",
@@ -9241,70 +8748,6 @@
      "source": {
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/uh/special/3016/ensen/177/2177100.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h04",
-     "type": "house-used",
-     "district": "Takagasaka 7",
-     "districtJa": "高ヶ坂7丁目",
-     "title": "Used 3LDK (1994) — large 116m2 house on a 154m2 plot",
-     "priceMan": 3780,
-     "priceFrom": false,
-     "landM2": 154,
-     "buildingM2": 116.36,
-     "layout": "3LDK",
-     "station": "Naruse",
-     "stationJa": "成瀬",
-     "line": "JR Yokohama Line",
-     "lineJa": "JR横浜線",
-     "walkMin": 13,
-     "built": "Oct 1994",
-     "ageYears": 32,
-     "highlights": [
-      "Large house (116.4m2) and plot (154m2) for the price",
-      "Quiet residential district on the Naruse side of Machida"
-     ],
-     "cautions": [
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3004/ensen/324/2324240.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h05",
-     "type": "house-used",
-     "district": "Minami-Naruse 8",
-     "districtJa": "南成瀬8丁目",
-     "title": "Used 4LDK (2005) — 13 min to Tsukushino, immediate handover",
-     "priceMan": 3380,
-     "priceFrom": false,
-     "landM2": 130.31,
-     "buildingM2": 93.57,
-     "layout": "4LDK",
-     "station": "Tsukushino",
-     "stationJa": "つくし野",
-     "line": "Tokyu Den-en-toshi Line",
-     "lineJa": "東急田園都市線",
-     "walkMin": 13,
-     "built": "Apr 2005",
-     "ageYears": 21,
-     "highlights": [
-      "Good value 4LDK on a 130.3m2 plot",
-      "Also 13 min from Nagatsuta; vacant, immediate handover"
-     ],
-     "cautions": [
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/area_tokyo/13209/033.html",
       "verified": "index",
       "infoDate": "2026-10-23"
      }
@@ -9446,75 +8889,6 @@
      "majorCautions": 1
     },
     {
-     "id": "h10",
-     "type": "house-used",
-     "district": "Tamagawagakuen 5",
-     "districtJa": "玉川学園5丁目",
-     "title": "Used 2LDK (1980) — huge 316m2 plot near Tamagawagakuen-mae",
-     "priceMan": 4000,
-     "priceFrom": false,
-     "landM2": 316.14,
-     "buildingM2": 95.71,
-     "layout": "2LDK",
-     "station": "Tamagawagakuen-mae",
-     "stationJa": "玉川学園前",
-     "line": "Odakyu Odawara Line",
-     "lineJa": "小田急小田原線",
-     "walkMin": 13,
-     "built": "Jul 1980",
-     "ageYears": 46,
-     "highlights": [
-      "Exceptional 316.1m2 (about 95 tsubo) plot — the value is land plus location",
-      "Vacant, viewings possible; parking space available"
-     ],
-     "cautions": [
-      "Built Jul 1980 — pre-1981 seismic standard (just before the June 1981 change)",
-      "At this age judge it mainly as land; rebuild or major works may be needed",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B%5D=0205&lo%5B%5D=0302",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     },
-     "majorCautions": 1
-    },
-    {
-     "id": "h11",
-     "type": "house-used",
-     "district": "Aihara-machi",
-     "districtJa": "相原町",
-     "title": "Used 4LDK (1992) — big 178.8m2 plot, renovated, 7 min to Aihara",
-     "priceMan": 3590,
-     "priceFrom": false,
-     "landM2": 178.81,
-     "buildingM2": 128.37,
-     "layout": "4LDK",
-     "station": "Aihara",
-     "stationJa": "相原",
-     "line": "JR Yokohama Line",
-     "lineJa": "JR横浜線",
-     "walkMin": 7,
-     "built": "Mar 1992",
-     "ageYears": 34,
-     "highlights": [
-      "Spacious 128.4m2 house on a 178.8m2 plot; 18-post LDK plus Japanese room",
-      "New interior/exterior renovation; primary school and park within walking distance"
-     ],
-     "cautions": [
-      "Portal copy puts the walk at both 6 and 7 min — scored here on 7",
-      "Hilly western Machida district — check the city hazard map for slope/landslide risk",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3003/area_tokyo/13209/017.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
      "id": "h12",
      "type": "house-used",
      "district": "Aihara-machi",
@@ -9615,6 +8989,108 @@
      }
     },
     {
+     "id": "h15",
+     "type": "house-used",
+     "district": "Tamagawagakuen 3",
+     "districtJa": "玉川学園3丁目",
+     "title": "Used 2LDK (2015) — barrier-free custom build, 13 min to Tamagawagakuen-mae",
+     "priceMan": 3480,
+     "priceFrom": false,
+     "landM2": 137.9,
+     "buildingM2": 70.39,
+     "layout": "2LDK",
+     "station": "Tamagawagakuen-mae",
+     "stationJa": "玉川学園前",
+     "line": "Odakyu Odawara Line",
+     "lineJa": "小田急小田原線",
+     "walkMin": 13,
+     "built": "Jul 2015",
+     "ageYears": 11,
+     "highlights": [
+      "2015 custom-built house (Seikin施工) in a quiet first-class low-rise zone",
+      "Barrier-free design with handrails throughout; community bus stop 1 min away as well as the 13-min station walk"
+     ],
+     "cautions": [
+      "Compact 70.4m² building in a 2LDK layout",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B0%5D=0205&lo%5B1%5D=0302",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h16",
+     "type": "house-used",
+     "district": "Minami-Naruse 2",
+     "districtJa": "南成瀬2丁目",
+     "title": "Used 2SLDK (2007) — corner lot with built-in garage, 13 min to Naruse",
+     "priceMan": 4680,
+     "priceFrom": false,
+     "landM2": 106.01,
+     "buildingM2": 93.56,
+     "layout": "2SLDK",
+     "station": "Naruse",
+     "stationJa": "成瀬",
+     "line": "JR Yokohama Line",
+     "lineJa": "JR横浜線",
+     "walkMin": 13,
+     "built": "Jan 2007",
+     "ageYears": 19,
+     "highlights": [
+      "Corner lot in a quiet first-class low-rise residential zone",
+      "Built-in garage; bus to Machida Station also usable from a 5-min stop"
+     ],
+     "cautions": [
+      "Built Jan 2007 — 19 years old",
+      "At 13 min walk, toward the outer edge of the brief"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B0%5D=0205&lo%5B1%5D=0302",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h17",
+     "type": "house-used",
+     "district": "Minami-Oya 4",
+     "districtJa": "南大谷4丁目",
+     "title": "Used 2SLDK (2018) — vaulted-ceiling LDK, floor heating, parking for 2",
+     "priceMan": 4980,
+     "priceFrom": false,
+     "landM2": 136.69,
+     "buildingM2": 101.73,
+     "layout": "2SLDK",
+     "station": "Tamagawagakuen-mae",
+     "stationJa": "玉川学園前",
+     "line": "Odakyu Odawara Line",
+     "lineJa": "小田急小田原線",
+     "walkMin": 13,
+     "built": "Jun 2018",
+     "ageYears": 8,
+     "highlights": [
+      "Relatively recent 2018 build with vaulted-ceiling LDK and floor heating",
+      "Parking for 2 cars; all rooms 5 tatami or larger"
+     ],
+     "cautions": [
+      "At the top of this collection's price brief",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B0%5D=0205&lo%5B1%5D=0302",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
      "id": "l01",
      "type": "land",
      "district": "Tamagawagakuen 5",
@@ -9646,41 +9122,6 @@
      "source": {
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21371234/182569001/x1030Z21371234.html",
-      "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "l02",
-     "type": "land",
-     "district": "Tamagawagakuen 2",
-     "districtJa": "玉川学園2丁目",
-     "title": "Vacant south-road lot 5 min from Tamagawagakuen-mae — building conditions attached",
-     "priceMan": 4900,
-     "priceFrom": false,
-     "landM2": 234.23,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Tamagawagakuen-mae",
-     "stationJa": "玉川学園前",
-     "line": "Odakyu Odawara Line",
-     "lineJa": "小田急小田原線",
-     "walkMin": 5,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "40% / 80%",
-     "highlights": [
-      "Vacant land (更地), south road, city gas and mains sewer",
-      "Only 5 min walk to Tamagawagakuen-mae Station"
-     ],
-     "cautions": [
-      "Building conditions attached (建築条件付き) — builder is fixed to the seller's designated company",
-      "Listing also places the lot in a land-development regulation area (宅地造成工事規制区域) with height-maximum, minimum-lot-size and shadow/slope-line limits — confirm the buildable volume with the designated builder"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21471706/000585006/x1030Z21471706.html",
       "verified": "detail",
       "infoDate": "2026-10-23"
      }
@@ -9797,7 +9238,7 @@
      "district": "Ogawa 3",
      "districtJa": "小川3丁目",
      "title": "Vacant 135m² lot on a 9m road, 15 min from Naruse",
-     "priceMan": 4290,
+     "priceMan": 4240,
      "priceFrom": false,
      "landM2": 135.23,
      "buildingM2": null,
@@ -9824,46 +9265,10 @@
       "name": "OCN不動産 (goo feed)",
       "url": "https://house.goo.ne.jp/buy/la/detail/4/13209/8920152962/892/x48920152962.html",
       "verified": "detail",
-      "infoDate": "2026-10-24"
+      "infoDate": "2026-11-09"
      },
-     "majorCautions": 1
-    },
-    {
-     "id": "l07",
-     "type": "land",
-     "district": "Ogawa 2",
-     "districtJa": "小川2丁目",
-     "title": "Compact 75m² plot 9 min from Naruse on a 10m road — building on site",
-     "priceMan": 2680,
-     "priceFrom": false,
-     "landM2": 75.76,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Naruse",
-     "stationJa": "成瀬",
-     "line": "JR Yokohama Line",
-     "lineJa": "JR横浜線",
-     "walkMin": 9,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種中高層住居専用地域",
-     "coverageFar": "50% / 100%",
-     "highlights": [
-      "Regular-shaped plot with 6.6m frontage onto a ~10m NE public road, no level difference to the road",
-      "Cheapest Naruse-walk lot in this set by total price",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "Small 75.76m² plot (registry / 公簿 area)",
-      "A building stands on the land (上物有り) — demolition cost on the buyer unless the listing says otherwise",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "OCN不動産 (goo feed)",
-      "url": "https://house.ocn.ne.jp/sp/tochi/area_tokyo/13209/004.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+     "majorCautions": 1,
+     "priceDropMan": 50
     },
     {
      "id": "l09",
@@ -9983,7 +9388,7 @@
     "nameJa": "ただいま！",
     "edition": "Maebashi",
     "editionJa": "前橋",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Maebashi City, Gunma",
     "areaJa": "群馬県前橋市"
    },
@@ -9994,7 +9399,7 @@
      "district": "Shimoishikura-cho",
      "districtJa": "下石倉町",
      "title": "New 3SLDK on a very large 246m² plot — 14 min from Shin-Maebashi",
-     "priceMan": 3380,
+     "priceMan": 3280,
      "priceFrom": false,
      "landM2": 246.55,
      "buildingM2": 90.26,
@@ -10018,8 +9423,9 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/W/21893962.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "priceDropMan": 100
     },
     {
      "id": "h02",
@@ -10119,75 +9525,6 @@
       "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/Z/21301753.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 200
-    },
-    {
-     "id": "h05",
-     "type": "house-new",
-     "district": "Kasukawa-cho Araya",
-     "districtJa": "粕川町新屋",
-     "title": "New 4SLDK — cheapest new build here, 10 min from Araya Station",
-     "priceMan": 1480,
-     "priceFrom": false,
-     "landM2": 196.45,
-     "buildingM2": 96.78,
-     "layout": "4SLDK",
-     "station": "Araya",
-     "stationJa": "新屋",
-     "line": "Jomo Electric Railway",
-     "lineJa": "上毛電気鉄道上毛線",
-     "walkMin": 10,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Cheapest new house in this collection at ¥1,480万",
-      "Design and construction housing-performance evaluations obtained",
-      "Roof balcony; parking for 2 or more cars; living room over 16 tatami"
-     ],
-     "cautions": [
-      "Eastern Kasukawa district — Akagi foothill side of the city; check the city hazard map for the plot",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_gunma/10201.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h06",
-     "type": "house-used",
-     "district": "Joto-cho 2",
-     "districtJa": "城東町2丁目",
-     "title": "Used 4LDK (2015), 3-storey — 4 min from Chuo-Maebashi Station",
-     "priceMan": 2080,
-     "priceFrom": false,
-     "landM2": 100.21,
-     "buildingM2": 101.84,
-     "layout": "4LDK",
-     "station": "Chuo-Maebashi",
-     "stationJa": "中央前橋",
-     "line": "Jomo Electric Railway",
-     "lineJa": "上毛電気鉄道上毛線",
-     "walkMin": 4,
-     "built": "Jul 2015",
-     "ageYears": 11,
-     "highlights": [
-      "Shortest walk in this collection — 4 min to Chuo-Maebashi, JR Maebashi also walkable",
-      "3-storey plan fits 101.8m² of living space on a compact central plot",
-      "City gas; parking for 2; Hirose River green belt nearby for walks"
-     ],
-     "cautions": [
-      "Listing notes the house is currently occupied (居住中) and some photos are CG-cleared images — confirm the actual condition at a viewing",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/242/2242020.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
      }
     },
     {
@@ -10220,73 +9557,6 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z78807678/185349002/x1030Z78807678.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h08",
-     "type": "house-used",
-     "district": "Mitsumata-cho 2",
-     "districtJa": "三俣町2丁目",
-     "title": "Used 3SLDK built Oct 2024 — nearly new, 7 min from Mitsumata Station",
-     "priceMan": 3493,
-     "priceFrom": false,
-     "landM2": 160.01,
-     "buildingM2": 97.7,
-     "layout": "3SLDK",
-     "station": "Mitsumata",
-     "stationJa": "三俣",
-     "line": "Jomo Electric Railway",
-     "lineJa": "上毛電気鉄道上毛線",
-     "walkMin": 7,
-     "built": "Oct 2024",
-     "ageYears": 2,
-     "highlights": [
-      "Nearly new (built Oct 2024) at a used-house listing",
-      "Also 15 min from Katakai Station — two Jomo Line stops usable"
-     ],
-     "cautions": [
-      "Portal feeds disagree: a second feed lists what appears to be the same house at ¥3,588万 with a 97.29m² building (vs 97.7m² here) — verify which is current",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/242/2242020.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h09",
-     "type": "house-used",
-     "district": "Asahi-cho 1",
-     "districtJa": "朝日町1丁目",
-     "title": "Used 4SLDK (1997), interior renovated — Sekisui Heim steel frame, 7 min from Joto",
-     "priceMan": 2498,
-     "priceFrom": false,
-     "landM2": 233.82,
-     "buildingM2": 129.15,
-     "layout": "4SLDK",
-     "station": "Joto",
-     "stationJa": "城東",
-     "line": "Jomo Electric Railway",
-     "lineJa": "上毛電気鉄道上毛線",
-     "walkMin": 7,
-     "built": "Jun 1997",
-     "ageYears": 29,
-     "highlights": [
-      "Sekisui Heim light-gauge steel frame — marketed as earthquake-resistant",
-      "Interior renovated per the listing; air conditioners in all rooms (5 units)",
-      "Parking for 3; primary school ~5 min walk; also 15 min from JR Maebashi"
-     ],
-     "cautions": [
-      "1997 structure despite the renovation — check what the works actually covered",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/005.html",
-      "verified": "index",
       "infoDate": "2026-10-23"
      }
     },
@@ -10466,111 +9736,77 @@
      "majorCautions": 1
     },
     {
-     "id": "h15",
-     "type": "house-used",
-     "district": "Nishikatakai-cho 1",
-     "districtJa": "西片貝町1丁目",
-     "title": "Used 5K (1982) sold as-is — 8 min from Mitsumata Station",
-     "priceMan": 840,
+     "id": "h18",
+     "type": "house-new",
+     "district": "Furuichi-cho 1",
+     "districtJa": "古市町1丁目",
+     "title": "New 4LDK house, Furuichi-cho 1",
+     "priceMan": 2980,
      "priceFrom": false,
-     "landM2": 165.53,
-     "buildingM2": 118.7,
-     "layout": "5K",
-     "station": "Mitsumata",
-     "stationJa": "三俣",
-     "line": "Jomo Electric Railway",
-     "lineJa": "上毛電気鉄道上毛線",
-     "walkMin": 8,
-     "built": "Nov 1982",
-     "ageYears": 43,
+     "landM2": 116.53,
+     "buildingM2": 101.02,
+     "layout": "4LDK",
+     "station": "Shin-Maebashi",
+     "stationJa": "新前橋",
+     "line": "JR Ryomo Line",
+     "lineJa": "JR両毛線",
+     "walkMin": 13,
+     "built": "New build",
+     "ageYears": 0,
      "highlights": [
-      "Cheapest house in this collection at ¥840万",
-      "Usable ~50-tsubo plot in a settled residential area; schools walkable",
-      "Listing says the building's condition is good for its age"
+      "18.5-tatami LDK with a garden space",
+      "South-facing, 2-car parking",
+      "Toilets on both floors; bathroom dryer included",
+      "BELS energy-efficiency certified",
+      "Half-price brokerage fee campaign running"
      ],
      "cautions": [
-      "Sold as-is (現状有姿での引き渡し) — the listing itself recommends reform and cleaning",
-      "1982 structure — just after the 1981 seismic-code change; confirm which standard it was built to",
-      "Seen on a portal index page — verify details on the listing link"
+      "Still under construction — handover late January 2027, so no viewing of the finished house yet"
      ],
      "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1574140000355/",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     },
     {
-     "id": "h16",
-     "type": "house-used",
-     "district": "Honmachi 3",
-     "districtJa": "本町3丁目",
-     "title": "Used 4SLDK (1968) in the city centre — rain leak and liability waiver disclosed",
-     "priceMan": 1680,
+     "id": "h19",
+     "type": "house-new",
+     "district": "Furuichi-cho",
+     "districtJa": "古市町",
+     "title": "New 3LDK house, Furuichi-cho",
+     "priceMan": 2690,
      "priceFrom": false,
-     "landM2": 184.98,
-     "buildingM2": 104.52,
-     "layout": "4SLDK",
-     "station": "Chuo-Maebashi",
-     "stationJa": "中央前橋",
-     "line": "Jomo Electric Railway",
-     "lineJa": "上毛電気鉄道上毛線",
-     "walkMin": 8,
-     "built": "Oct 1968",
-     "ageYears": 58,
+     "landM2": 134.31,
+     "buildingM2": 92.11,
+     "layout": "3LDK",
+     "station": "Shin-Maebashi",
+     "stationJa": "新前橋",
+     "line": "JR Ryomo Line",
+     "lineJa": "JR両毛線",
+     "walkMin": 14,
+     "built": "New build",
+     "ageYears": 0,
      "highlights": [
-      "Central Honmachi plot (185m²) on Route 50 — the value is the land and location",
-      "Parking for 2; shops and schools within walking distance"
+      "18.2-tatami LDK",
+      "Corner plot with 6m+ road frontage",
+      "2-car parking, wide balcony",
+      "Long-term excellent housing certified and Flat 35S compliant",
+      "Ground survey completed; ready for immediate handover"
      ],
      "cautions": [
-      "Built Oct 1968 — pre-1981 seismic standard (旧耐震); at this age treat the structure as end-of-life",
-      "Listing discloses a rain leak (雨漏り有り)",
-      "Seller's defect liability is waived (契約不適合責任免責) — sold as-is; experts only",
-      "Seen on a portal index page — verify details on the listing link"
+      "14 min walk — near the 15-min limit",
+      "3LDK only; smaller than the neighbouring 4LDK new builds in Furuichi-cho"
      ],
      "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1560680000749/",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
      },
-     "majorCautions": 2
-    },
-    {
-     "id": "h17",
-     "type": "house-used",
-     "district": "Motegi-cho",
-     "districtJa": "茂木町",
-     "title": "Used 4DK (1964) single-storey on 397m² — 5 min from Ogo Station, land play",
-     "priceMan": 520,
-     "priceFrom": false,
-     "landM2": 397.38,
-     "buildingM2": 77.11,
-     "layout": "4DK",
-     "station": "Ogo",
-     "stationJa": "大胡",
-     "line": "Jomo Electric Railway",
-     "lineJa": "上毛電気鉄道上毛線",
-     "walkMin": 5,
-     "built": "Aug 1964",
-     "ageYears": 62,
-     "highlights": [
-      "Very large 397m² plot (over 100 tsubo) 5 min from the station at ¥520万",
-      "Single-storey house; supermarket within 10 min walk; primary school within 10 min"
-     ],
-     "cautions": [
-      "Built Aug 1964 — pre-1981 seismic standard (旧耐震); judge this as a land purchase",
-      "Part of the terrace is unregistered (未登記) and the boundary is not legally fixed (筆界未確定地)",
-      "Sold as-is (現況渡し)",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (OCN feed)",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/ensen/242/2242080.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     },
-     "majorCautions": 2
+     "isNew": true
     },
     {
      "id": "l01",
@@ -10651,7 +9887,7 @@
      "district": "Joto-cho 2",
      "districtJa": "城東町2",
      "title": "Corner plot 4 minutes from Chuo-Maebashi — building on site",
-     "priceMan": 740,
+     "priceMan": 340,
      "priceFrom": false,
      "landM2": 122.76,
      "buildingM2": null,
@@ -10680,8 +9916,9 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z21044581/104433001/x1030Z21044581.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "priceDropMan": 400
     },
     {
      "id": "l04",
@@ -10827,8 +10064,7 @@
       "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z78230533/044597003/x1030Z78230533.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 100
+     }
     },
     {
      "id": "l09",
@@ -10974,6 +10210,87 @@
       "infoDate": "2026-10-23"
      },
      "majorCautions": 1
+    },
+    {
+     "id": "l13",
+     "type": "land",
+     "district": "Minami-cho 1",
+     "districtJa": "南町1丁目",
+     "title": "Land in Minami-cho 1, near Maebashi station",
+     "priceMan": 1380,
+     "priceFrom": false,
+     "landM2": 141.97,
+     "buildingM2": null,
+     "layout": null,
+     "station": "Maebashi",
+     "stationJa": "前橋",
+     "line": "JR Ryomo Line",
+     "lineJa": "JR両毛線",
+     "walkMin": 14,
+     "built": null,
+     "ageYears": null,
+     "zoning": "第2種中高層住居専用地域",
+     "coverageFar": "60% / 200%",
+     "highlights": [
+      "No building conditions — build with any maker",
+      "Vacant land, ready to build",
+      "Flat walk to Maebashi station",
+      "Supermarket within a 10-min walk",
+      "Published 8 Nov 2026 — fresh listing",
+      "No building condition (建築条件なし) — choose your own builder"
+     ],
+     "cautions": [
+      "14 min walk — near the 15-min limit",
+      "North-facing 4m road frontage",
+      "Landscape Act (景観法) restrictions apply per the listing"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z21534936/115332002/x1030Z21534936.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "l14",
+     "type": "land",
+     "district": "Hiyoshi-cho 2",
+     "districtJa": "日吉町2丁目",
+     "title": "Corner land in Hiyoshi-cho 2, near Chuo-Maebashi",
+     "priceMan": 1980,
+     "priceFrom": false,
+     "landM2": 221.14,
+     "buildingM2": null,
+     "layout": null,
+     "station": "Chuo-Maebashi",
+     "stationJa": "中央前橋",
+     "line": "Jomo Electric Railway Jomo Line",
+     "lineJa": "上毛電気鉄道上毛線",
+     "walkMin": 12,
+     "built": null,
+     "ageYears": null,
+     "zoning": "第1種住居地域",
+     "coverageFar": "60% / 200%",
+     "highlights": [
+      "Corner plot, regular shape, 221.14m² (about 67 tsubo)",
+      "No building conditions; vacant land with immediate handover",
+      "Seller-direct sale",
+      "Elementary school about 4 min walk; convenience store about 5 min",
+      "Also listed as 11 min from Joto station",
+      "No building condition (建築条件なし) — choose your own builder"
+     ],
+     "cautions": [
+      "Priciest land in this batch at ¥1,980万",
+      "Nearest JR station (Maebashi) is a 20-min walk — the Jomo line is the practical rail link"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z96701616/085087001/x1030Z96701616.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     }
    ]
   },
@@ -10983,7 +10300,7 @@
     "nameJa": "ただいま！",
     "edition": "Mito",
     "editionJa": "水戸",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Mito City, Ibaraki",
     "areaJa": "茨城県水戸市"
    },
@@ -11028,7 +10345,7 @@
      "district": "Akatsuka 1",
      "districtJa": "赤塚1丁目",
      "title": "New 4LDK with roof balcony (2 units) — compact plots, immediate move-in",
-     "priceMan": 2899,
+     "priceMan": 2499,
      "priceFrom": false,
      "landM2": 137.7,
      "buildingM2": 108.88,
@@ -11052,8 +10369,9 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
       "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "priceDropMan": 400
     },
     {
      "id": "h04",
@@ -11191,40 +10509,6 @@
      }
     },
     {
-     "id": "h08",
-     "type": "house-used",
-     "district": "Uchihara 1",
-     "districtJa": "内原1丁目",
-     "title": "Used 2SLDK (2020) — former model house with wood stove and garage, 5 min from Uchihara Station",
-     "priceMan": 4180,
-     "priceFrom": false,
-     "landM2": 256.51,
-     "buildingM2": 125.86,
-     "layout": "2SLDK",
-     "station": "Uchihara",
-     "stationJa": "内原",
-     "line": "JR Joban Line",
-     "lineJa": "JR常磐線",
-     "walkMin": 5,
-     "built": "Jan 2020",
-     "ageYears": 6,
-     "highlights": [
-      "Shortest walk in this collection (5 min) and a nearly-new 2020 build",
-      "Wood stove, garage and wood deck; Aeon Mall Mito-Uchihara ~220m away"
-     ],
-     "cautions": [
-      "Priced at the top of the used set — the value leans on condition and the model-house specification",
-      "2SLDK layout despite the 125.9m² floor area — check the room configuration suits you",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
      "id": "h09",
      "type": "house-used",
      "district": "Uchihara-machi",
@@ -11295,7 +10579,7 @@
      "district": "Akatsuka 1",
      "districtJa": "赤塚1丁目",
      "title": "Used 5LDK (1998) with sunroom — 148.6m² house, 8 min from Akatsuka Station",
-     "priceMan": 2570,
+     "priceMan": 2480,
      "priceFrom": false,
      "landM2": 262.99,
      "buildingM2": 148.64,
@@ -11318,8 +10602,9 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z21451617/085120003/x1030Z21451617.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "priceDropMan": 90
     },
     {
      "id": "h12",
@@ -11383,41 +10668,6 @@
       "name": "OCN不動産",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z79090499/085120003/x1030Z79090499.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h14",
-     "type": "house-used",
-     "district": "Aoyagi-cho",
-     "districtJa": "青柳町",
-     "title": "Used 1SLDK flat (2012) by Ichijo Komuten — renovated, 2 min from Hitachi-Aoyagi Station",
-     "priceMan": 2180,
-     "priceFrom": false,
-     "landM2": 340.11,
-     "buildingM2": 92.09,
-     "layout": "1SLDK",
-     "station": "Hitachi-Aoyagi",
-     "stationJa": "常陸青柳",
-     "line": "JR Suigun Line",
-     "lineJa": "JR水郡線",
-     "walkMin": 2,
-     "built": "Feb 2012",
-     "ageYears": 14,
-     "highlights": [
-      "Shortest station walk here after Uchihara (2 min) — a single-storey Ichijo Komuten house on a 340.1m² plot",
-      "Renovation completed; all-electric, parking for 2"
-     ],
-     "cautions": [
-      "Suigun Line services are infrequent compared with the Joban Line — check the timetable for commuting",
-      "1SLDK layout will not suit larger families without alteration",
-      "Aoyagi-cho sits by the Naka River — check the city flood hazard map before buying",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3003/ensen/103/2103020.html",
-      "verified": "index",
       "infoDate": "2026-10-23"
      }
     },
@@ -11949,7 +11199,7 @@
     "nameJa": "ただいま！",
     "edition": "Oyama",
     "editionJa": "小山",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Oyama City, Tochigi",
     "areaJa": "栃木県小山市"
    },
@@ -12098,7 +11348,7 @@
      "district": "Otome",
      "districtJa": "大字乙女",
      "title": "New 4LDK (Grandy House Gran Excella Otome 5) — final unit",
-     "priceMan": 2790,
+     "priceMan": 2690,
      "priceFrom": false,
      "landM2": 208.17,
      "buildingM2": 112.61,
@@ -12123,40 +11373,9 @@
       "name": "OCN不動産",
       "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/77958843.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
-     "id": "h06",
-     "type": "house-used",
-     "district": "Ekihigashi-dori 1",
-     "districtJa": "駅東通り1丁目",
-     "title": "Used 4LDK (2004) — big 124m² house 9 min from Oyama Station",
-     "priceMan": 2550,
-     "priceFrom": false,
-     "landM2": 154.1,
-     "buildingM2": 124.2,
-     "layout": "4LDK",
-     "station": "Oyama",
-     "stationJa": "小山",
-     "line": "JR Utsunomiya Line",
-     "lineJa": "JR宇都宮線",
-     "walkMin": 9,
-     "built": "May 2004",
-     "ageYears": 22,
-     "highlights": [
-      "Largest used house near Oyama Station in this set (124.2m²) on the Shinkansen side of the city",
-      "South garden, corner plot, floor heating, parking for 2"
-     ],
-     "cautions": [
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_tochigi/09208/024.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-04"
+     },
+     "priceDropMan": 100
     },
     {
      "id": "h07",
@@ -12332,45 +11551,12 @@
      }
     },
     {
-     "id": "h12",
-     "type": "house-used",
-     "district": "Akatsuki 2",
-     "districtJa": "暁2丁目",
-     "title": "Used 4LDK (1994), renovated — 116m² house 8 min from Mamada",
-     "priceMan": 1699,
-     "priceFrom": false,
-     "landM2": 165.03,
-     "buildingM2": 116.34,
-     "layout": "4LDK",
-     "station": "Mamada",
-     "stationJa": "間々田",
-     "line": "JR Utsunomiya Line",
-     "lineJa": "JR宇都宮線",
-     "walkMin": 8,
-     "built": "Mar 1994",
-     "ageYears": 32,
-     "highlights": [
-      "Big 116.3m² renovated family house with the shortest practical walk on the Mamada side",
-      "Renovated / immediate handover per the listing"
-     ],
-     "cautions": [
-      "Portal feeds disagree on the price: ¥1,699万 on this page, ¥1,999万 on an older goo feed for the same house — confirm the current asking price first",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/ikkodate/area_tochigi/09208/024.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
      "id": "h14",
      "type": "house-used",
      "district": "Higashi-Mamada 2",
      "districtJa": "東間々田2丁目",
      "title": "Used 3LDK (1982) on 200m² — renovation completed Mar 2026",
-     "priceMan": 1369,
+     "priceMan": 1199,
      "priceFrom": false,
      "landM2": 200.29,
      "buildingM2": 101.02,
@@ -12394,78 +11580,117 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/09208/030Z79162292/189549004/x1030Z79162292.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-01"
+     },
+     "priceDropMan": 170
     },
     {
-     "id": "h15",
+     "id": "h16",
      "type": "house-used",
-     "district": "Otome 1",
-     "districtJa": "乙女1丁目",
-     "title": "Used 3SLDK built 2016 — nearly modern, solar + all-electric, at the walk limit",
-     "priceMan": 2449,
+     "district": "Mamada",
+     "districtJa": "大字間々田",
+     "title": "Used 6DK (1982) — vacant corner lot with carport, 11 min to Mamada",
+     "priceMan": 1400,
      "priceFrom": false,
-     "landM2": 240.29,
-     "buildingM2": 115.23,
-     "layout": "3SLDK",
+     "landM2": 198,
+     "buildingM2": 116.76,
+     "layout": "6DK",
      "station": "Mamada",
      "stationJa": "間々田",
      "line": "JR Utsunomiya Line",
      "lineJa": "JR宇都宮線",
-     "walkMin": 15,
-     "built": "Jan 2016",
-     "ageYears": 10,
+     "walkMin": 11,
+     "built": "Oct 1982",
+     "ageYears": 44,
      "highlights": [
-      "Newest used house here (built Jan 2016) on the biggest used plot (240.3m²); solar and all-electric",
-      "Walk-in closet, parking for 3; renovation works listed as completing Jul 2026"
+      "Vacant, immediate viewing; corner lot with carport and free parking",
+      "Six-room 6DK with 116.8m² of building on a 198m² plot at ¥1,400万",
+      "Defect insurance (国交省指定) available per the listing"
      ],
      "cautions": [
-      "At the 15-minute walk limit of this collection",
-      "Seen on a portal index page — verify details on the listing link"
+      "Built Oct 1982 — 44 years old; judge it mainly as land + location",
+      "LP gas (プロパンガス), not city gas; land area is registry-based (公簿)",
+      "A ¥30,000 application fee is charged at application (refunded on contract or cancellation)"
      ],
      "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_tochigi/09208/109.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1546220000122/",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     },
     {
-     "id": "l01",
-     "type": "land",
-     "district": "Hongo-cho 2",
-     "districtJa": "本郷町2丁目",
-     "title": "122m² vacant plot 9 minutes from Oyama — cheapest station-close land here",
-     "priceMan": 498,
+     "id": "h17",
+     "type": "house-used",
+     "district": "Mitsumine 2",
+     "districtJa": "三峯2丁目",
+     "title": "Used 2LDK (2000) — owner-change two-household rental, 9 min to Oyama Station",
+     "priceMan": 1800,
      "priceFrom": false,
-     "landM2": 122.54,
-     "buildingM2": null,
-     "layout": null,
+     "landM2": 136.35,
+     "buildingM2": 116.34,
+     "layout": "2LDK",
      "station": "Oyama",
      "stationJa": "小山",
      "line": "JR Utsunomiya Line",
      "lineJa": "JR宇都宮線",
      "walkMin": 9,
-     "built": null,
-     "ageYears": null,
-     "zoning": "近隣商業地域",
-     "coverageFar": "80% / 200%",
+     "built": "May 2000",
+     "ageYears": 26,
      "highlights": [
-      "Vacant land (更地) with mains sewer and city gas",
-      "No building conditions — any house builder allowed",
-      "Oyama is a Shinkansen hub — Tokyo in about 42 minutes",
-      "No building condition (建築条件なし) — choose your own builder"
+      "9 min walk to Oyama Station, a Shinkansen hub",
+      "Corner, regular-shaped plot on two roads; south-facing with good sun",
+      "Two-household rental at ~8.1% gross yield when full, per the listing"
      ],
      "cautions": [
-      "Near-commercial zoning (近隣商業地域) by the station — flexible, but expect a busier street than a purely residential block",
-      "Seen on a portal index page — verify details on the listing link"
+      "Owner-change sale: a two-household rental currently fully occupied — the buyer inherits tenants, not a vacant house",
+      "24.5m² of private-road area is included in the plot",
+      "Published 2026-11-08, so new to the market — confirm tenancy terms before relying on the yield"
      ],
      "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_la/area_tochigi/09208/108.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+      "name": "goo住宅・不動産 (SUUMO feed)",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/09208/030Z21955240/177142001/x1030Z21955240.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h18",
+     "type": "house-used",
+     "district": "Otome",
+     "districtJa": "大字乙女",
+     "title": "Used 4LDK (2017) — 20帖 LDK on a 284m² plot, 10 min to Mamada",
+     "priceMan": 2800,
+     "priceFrom": false,
+     "landM2": 283.94,
+     "buildingM2": 121.72,
+     "layout": "4LDK",
+     "station": "Mamada",
+     "stationJa": "間々田",
+     "line": "JR Utsunomiya Line",
+     "lineJa": "JR宇都宮線",
+     "walkMin": 10,
+     "built": "Aug 2017",
+     "ageYears": 9,
+     "highlights": [
+      "2017 build on a very large 283.9m² plot with a 20帖 LDK and roomy storage (family closet, shoe-in)",
+      "South-facing on a three-side road in a first-class residential zone; supermarket within 800m",
+      "New-seismic-standard construction"
+     ],
+     "cautions": [
+      "Currently occupied (居住中) — handover by negotiation, not immediate vacant handover",
+      "Large shared private-road burden: 424.38m² at a 1/8 share",
+      "LP gas (プロパンガス), not city gas; land area is registry-based (公簿)"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1470860006317/",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     },
     {
      "id": "l03",
@@ -13637,7 +12862,7 @@
     "nameJa": "ただいま！",
     "edition": "Kasukabe",
     "editionJa": "春日部",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Kasukabe City, Saitama",
     "areaJa": "埼玉県春日部市"
    },
@@ -13680,7 +12905,7 @@
      "district": "Chuo 3",
      "districtJa": "中央3丁目",
      "title": "New 4LDK, all-electric — completed, 110.96m² house near Kasukabe Station",
-     "priceMan": 4180,
+     "priceMan": 3980,
      "priceFrom": false,
      "landM2": 101.65,
      "buildingM2": 110.96,
@@ -13704,8 +12929,9 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/sp/new-ikkodate/ensen/261/2261280.html",
       "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "priceDropMan": 200
     },
     {
      "id": "h04",
@@ -14008,7 +13234,7 @@
      "district": "Ushijima",
      "districtJa": "牛島",
      "title": "Used 3LDK (Jun 2005), renovated — expanded LDK, 3 min from Fujino-Ushijima",
-     "priceMan": 2699,
+     "priceMan": 2599,
      "priceFrom": false,
      "landM2": 103.08,
      "buildingM2": 92.33,
@@ -14032,8 +13258,9 @@
       "name": "OCN不動産",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21760291/142868001/x1030Z21760291.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-08"
+     },
+     "priceDropMan": 100
     },
     {
      "id": "h14",
@@ -14057,13 +13284,16 @@
       "Spacious 99.6m² 4LDK on a 113.3m² plot for under ¥2,500万",
       "Parking; short 7-minute walk to Takesato Station"
      ],
-     "cautions": [],
+     "cautions": [
+      "Listing states a disclosure matter (告知事項有) — details from the agent"
+     ],
      "source": {
       "name": "OCN不動産",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21980982/100451225/x1030Z21980982.html",
       "verified": "detail",
       "infoDate": "2026-10-23"
-     }
+     },
+     "majorCautions": 1
     },
     {
      "id": "h15",
@@ -14706,44 +13936,11 @@
     "nameJa": "ただいま！",
     "edition": "Koshigaya",
     "editionJa": "越谷",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Koshigaya City, Saitama",
     "areaJa": "埼玉県越谷市"
    },
    "properties": [
-    {
-     "id": "h02",
-     "type": "house-new",
-     "district": "Osawa 4",
-     "districtJa": "大沢4丁目",
-     "title": "New 4LDK designer house — ZEH-grade spec, 10 min to Kita-Koshigaya",
-     "priceMan": 4780,
-     "priceFrom": false,
-     "landM2": 117.99,
-     "buildingM2": 99.26,
-     "layout": "4LDK",
-     "station": "Kita-Koshigaya",
-     "stationJa": "北越谷",
-     "line": "Tobu Isesaki Line",
-     "lineJa": "東武伊勢崎線",
-     "walkMin": 10,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Designer's house with a vaulted 17.8-post LDK (Meldia Kita-Koshigaya)",
-      "ZEH-grade specification; primary school ~3 min walk; parking for 2 in parallel"
-     ],
-     "cautions": [
-      "The same house is listed twice on the index under two descriptions at the same ¥4,780万 — deduplicated here",
-      "Not yet built — completion Dec 2026, move-in Jan 2027"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/bh/detail/11222/030/W/21586662.html",
-      "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
     {
      "id": "h03",
      "type": "house-new",
@@ -15643,43 +14840,11 @@
     "nameJa": "ただいま！",
     "edition": "Ichikawa",
     "editionJa": "市川",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Ichikawa City, Chiba",
     "areaJa": "千葉県市川市"
    },
    "properties": [
-    {
-     "id": "h01",
-     "type": "house-new",
-     "district": "Oonocho 3",
-     "districtJa": "大野町3丁目",
-     "title": "New 4LDK development (15 units) — 6 min from Ichikawa-Ono",
-     "priceMan": 4490,
-     "priceFrom": false,
-     "landM2": 110.31,
-     "buildingM2": 96.88,
-     "layout": "4LDK",
-     "station": "Ichikawa-Ono",
-     "stationJa": "市川大野",
-     "line": "JR Musashino Line",
-     "lineJa": "JR武蔵野線",
-     "walkMin": 6,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Short 6-minute walk to Ichikawa-Ono on a 110.3m² plot",
-      "Performance-evaluation certified; parking for 2+, immediate move-in"
-     ],
-     "cautions": [
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6016/area_chiba/12203/010.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
-    },
     {
      "id": "h02",
      "type": "house-new",
@@ -15715,42 +14880,7 @@
       "verified": "detail",
       "infoDate": "2026-10-31"
      },
-     "majorCautions": 1,
-     "priceDropMan": 400
-    },
-    {
-     "id": "h03",
-     "type": "house-new",
-     "district": "Mama 5",
-     "districtJa": "真間5丁目",
-     "title": "New 4LDK, last unit of 14 — south-facing road, Ichikawa-Mama side",
-     "priceMan": 4980,
-     "priceFrom": false,
-     "landM2": 118.15,
-     "buildingM2": 87.32,
-     "layout": "4LDK",
-     "station": "Ichikawa-Mama",
-     "stationJa": "市川真間",
-     "line": "Keisei Main Line",
-     "lineJa": "京成本線",
-     "walkMin": 14,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Rare new build in the Mama/Ichikawa core at exactly the brief ceiling",
-      "118.2m² plot, south road frontage, performance-evaluation certified"
-     ],
-     "cautions": [
-      "At the brief's price ceiling (¥5,000万)",
-      "Mama sits on the Edo River lowland edge — check the city flood hazard map before viewing",
-      "Seen on a portal index page — verify details on the listing link"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6002/area_chiba/12203.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+     "majorCautions": 1
     },
     {
      "id": "h04",
@@ -16066,45 +15196,12 @@
      }
     },
     {
-     "id": "h15",
-     "type": "house-used",
-     "district": "Honshio",
-     "districtJa": "本塩",
-     "title": "Used 3LDK (1997) — 7 min from Myoden, bay-side",
-     "priceMan": 3780,
-     "priceFrom": false,
-     "landM2": 83.86,
-     "buildingM2": 79.27,
-     "layout": "3LDK",
-     "station": "Myoden",
-     "stationJa": "妙典",
-     "line": "Tokyo Metro Tozai Line",
-     "lineJa": "東京メトロ東西線",
-     "walkMin": 7,
-     "built": "Apr 1997",
-     "ageYears": 29,
-     "highlights": [
-      "Short 7-minute walk to Myoden (Tozai rapid stops) at the joint-cheapest southern price",
-      "Large supermarket nearby; quiet residential block"
-     ],
-     "cautions": [
-      "1997 structure — budget for age-related works; no renovation stated on the index",
-      "Honshio is reclaimed bay-side plain — liquefaction and flood risk: check the city hazard maps carefully"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z20655509/003225001/x1030Z20655509.html",
-      "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
-    },
-    {
      "id": "h16",
      "type": "house-used",
      "district": "Gyotoku-Ekimae 3",
      "districtJa": "行徳駅前3丁目",
      "title": "Used 2SLDK (1999), 3-storey — 7 min from Gyotoku Station",
-     "priceMan": 3980,
+     "priceMan": 3680,
      "priceFrom": false,
      "landM2": 50.77,
      "buildingM2": 89.43,
@@ -16129,8 +15226,9 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21965103/006050B00/x1030Z21965103.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-08"
+     },
+     "priceDropMan": 300
     },
     {
      "id": "h17",
@@ -16167,12 +15265,160 @@
      }
     },
     {
+     "id": "h18",
+     "type": "house-new",
+     "district": "Oonocho 4",
+     "districtJa": "大野町４丁目",
+     "title": "New 2SLDK house, 12 min to Ichikawa-Ono",
+     "priceMan": 3998,
+     "priceFrom": false,
+     "landM2": 109.1,
+     "buildingM2": 106.41,
+     "layout": "2SLDK",
+     "station": "Ichikawa-Ono",
+     "stationJa": "市川大野",
+     "line": "JR Musashino Line",
+     "lineJa": "ＪＲ武蔵野線",
+     "walkMin": 12,
+     "built": "New build",
+     "ageYears": 0,
+     "highlights": [
+      "Built Sep 2026 — brand-new, ready to move into immediately",
+      "Parking for 2 cars free",
+      "South-facing 4m public road, 9.5m frontage",
+      "Dishwasher, floor heating in bathroom dryer, WIC, two toilets",
+      "Flat 35 S / BELS energy-standard certified, ground survey done"
+     ],
+     "cautions": [
+      "Septic tank (浄化槽) rather than mains sewerage",
+      "Setback / private-road burden of 4.9m² on the plot",
+      "2SLDK layout — two of the rooms are service rooms, not full bedrooms"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-1441410011951/",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h19",
+     "type": "house-used",
+     "district": "Haraki 1",
+     "districtJa": "原木１丁目",
+     "title": "2019 3LDK house, 5 min to Baraki-Nakayama",
+     "priceMan": 3780,
+     "priceFrom": false,
+     "landM2": 133.59,
+     "buildingM2": 78.66,
+     "layout": "3LDK",
+     "station": "Baraki-Nakayama",
+     "stationJa": "原木中山",
+     "line": "Tokyo Metro Tozai Line",
+     "lineJa": "東京メトロ東西線",
+     "walkMin": 5,
+     "built": "2019-03",
+     "ageYears": 7,
+     "highlights": [
+      "Only 5 min walk to Baraki-Nakayama (Tozai Line)",
+      "2019 build — still young, with floor heating and bathroom dryer",
+      "Bright second-floor living room with vaulted ceiling and loft",
+      "Large 133.59m² plot",
+      "Japanese-style room that opens into the living room"
+     ],
+     "cautions": [
+      "Second-floor living room — stairs are part of daily life",
+      "Low-lying southern Ichikawa — check the flood hazard map before viewing"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_chiba/12203/054.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h20",
+     "type": "house-used",
+     "district": "Kitakokubun 2",
+     "districtJa": "北国分２丁目",
+     "title": "2015 3LDK house, 10 min to Yagiri",
+     "priceMan": 3880,
+     "priceFrom": false,
+     "landM2": 120.0,
+     "buildingM2": 95.58,
+     "layout": "3LDK",
+     "station": "Yagiri",
+     "stationJa": "矢切",
+     "line": "Hokuso Line",
+     "lineJa": "北総線",
+     "walkMin": 10,
+     "built": "2015-05",
+     "ageYears": 11,
+     "highlights": [
+      "10 min walk to Yagiri (Hokuso Line)",
+      "120m² plot in a first-class low-rise residential zone",
+      "All rooms have closets, plus a walk-in closet",
+      "Wide LDK for family time together",
+      "Nursery within walking distance; Kitakokubun Park nearby"
+     ],
+     "cautions": [
+      "11-year-old build — check condition and any repair history at viewing"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/buy/uh/special/3004/ensen/257/2257011.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h21",
+     "type": "house-used",
+     "district": "Oonocho 2",
+     "districtJa": "大野町２丁目",
+     "title": "2014 3LDK house, 7 min to Ichikawa-Ono",
+     "priceMan": 3990,
+     "priceFrom": false,
+     "landM2": 137.29,
+     "buildingM2": 101.12,
+     "layout": "3LDK",
+     "station": "Ichikawa-Ono",
+     "stationJa": "市川大野",
+     "line": "JR Musashino Line",
+     "lineJa": "ＪＲ武蔵野線",
+     "walkMin": 7,
+     "built": "2014-08",
+     "ageYears": 12,
+     "highlights": [
+      "Only 7 min walk to Ichikawa-Ono",
+      "Large 137.29m² plot in a planned subdivision, first-class low-rise zone",
+      "South-facing main bedroom with WIC, tatami space next to the LDK",
+      "Dishwasher and bathroom dryer fitted",
+      "Primary and junior high schools both within a 5–6 min walk"
+     ],
+     "cautions": [
+      "12-year-old build — check condition at viewing",
+      "Parking for 1 car only (size-dependent)"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_chiba/12203/054.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
      "id": "l01",
      "type": "land",
      "district": "Hon-Kitakata 1",
      "districtJa": "本北方1丁目",
      "title": "Cheapest lot in this collection — 1986 house on site, 15 min from Onigoe",
-     "priceMan": 1700,
+     "priceMan": 1200,
      "priceFrom": false,
      "landM2": 57.85,
      "buildingM2": null,
@@ -16201,8 +15447,9 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z78943088/065555073/x1030Z78943088.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
+      "infoDate": "2026-11-07"
+     },
+     "priceDropMan": 500
     },
     {
      "id": "l03",
@@ -16240,8 +15487,7 @@
       "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21478826/006050B04/x1030Z21478826.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 300
+     }
     },
     {
      "id": "l04",
@@ -16325,7 +15571,7 @@
      "district": "Kitakata 3",
      "districtJa": "北方3丁目",
      "title": "145m² vacant plot at the lowest ¥/tsubo here — 2.7m frontage, sloped site",
-     "priceMan": 3480,
+     "priceMan": 3180,
      "priceFrom": false,
      "landM2": 145.86,
      "buildingM2": null,
@@ -16354,8 +15600,9 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21085967/193572001/x1030Z21085967.html",
       "verified": "detail",
-      "infoDate": "2026-10-18"
-     }
+      "infoDate": "2026-11-08"
+     },
+     "priceDropMan": 300
     },
     {
      "id": "l07",
@@ -16512,45 +15759,6 @@
      }
     },
     {
-     "id": "l11",
-     "type": "land",
-     "district": "Hon-Kitakata 1",
-     "districtJa": "本北方1丁目",
-     "title": "Big 187m² vacant plot by Onigoe — but a second listing warns an Art. 43 permit may be needed",
-     "priceMan": 4680,
-     "priceFrom": false,
-     "landM2": 187.57,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Onigoe",
-     "stationJa": "鬼越",
-     "line": "Keisei Main Line",
-     "lineJa": "京成本線",
-     "walkMin": 14,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "50% / 100%",
-     "highlights": [
-      "Largest buildable plot in this collection: 187.57m², regular-shaped, vacant delivery and immediate handover from the seller",
-      "Frontage on two sides — west 4m road (15.7m) and SW 4m road (12.8m)",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "MAJOR: a second agent's listing of this same 187.57m² plot (at ¥4,980–5,080万) states the frontage is NOT a Building Standards Act road and building requires an Art. 43-2-2 permit (法43条第2項第2号許可) — verify the road status with the city before relying on this seller listing's 4m-road description",
-      "Sewer is a septic tank (浄化槽), not mains drainage, despite the plot's size",
-      "The same land is listed by other agents at higher prices — confirm which listing/terms are current",
-      "Verified on the listing page (information date 2026-10-22)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z20856122/168340001/x1030Z20856122.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     },
-     "majorCautions": 1
-    },
-    {
      "id": "l12",
      "type": "land",
      "district": "Minami-Gyotoku 2",
@@ -16595,7 +15803,7 @@
     "nameJa": "ただいま！",
     "edition": "Nagareyama",
     "editionJa": "流山",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Nagareyama City, Chiba",
     "areaJa": "千葉県流山市"
    },
@@ -16606,7 +15814,7 @@
      "district": "Ka 5",
      "districtJa": "加5丁目",
      "title": "New 3LDK in the old town — cheapest new build in this collection",
-     "priceMan": 3290,
+     "priceMan": 3090,
      "priceFrom": false,
      "landM2": 80.62,
      "buildingM2": 86.94,
@@ -16629,8 +15837,9 @@
       "name": "goo住宅・不動産",
       "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/Z/21403260.html",
       "verified": "detail",
-      "infoDate": "2026-10-23"
-     }
+      "infoDate": "2026-11-07"
+     },
+     "priceDropMan": 200
     },
     {
      "id": "h02",
@@ -16738,7 +15947,7 @@
      "district": "Nishihirai",
      "districtJa": "西平井",
      "title": "New 3SLDK development (2 units) 5 min from Heiwadai — station, shops and school within 8 min",
-     "priceMan": 3990,
+     "priceMan": 3890,
      "priceFrom": true,
      "landM2": 75.19,
      "buildingM2": 100.18,
@@ -16763,8 +15972,9 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/W/21026417.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
+      "infoDate": "2026-11-09"
+     },
+     "priceDropMan": 100
     },
     {
      "id": "h07",
@@ -16840,7 +16050,7 @@
      "district": "Ka 1",
      "districtJa": "加1丁目",
      "title": "Used 4LDK (1999), renovated Aug 2026 — 4 min from Nagareyama Station",
-     "priceMan": 2699,
+     "priceMan": 2648,
      "priceFrom": false,
      "landM2": 116.7,
      "buildingM2": 88.59,
@@ -16865,8 +16075,9 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z21872997/173595002/x1030Z21872997.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
+      "infoDate": "2026-11-08"
+     },
+     "priceDropMan": 51
     },
     {
      "id": "h10",
@@ -17097,6 +16308,111 @@
       "url": "https://www.homes.co.jp/kodate/b-1074240103996/",
       "verified": "detail",
       "infoDate": "2026-10-31"
+     }
+    },
+    {
+     "id": "h19",
+     "type": "house-used",
+     "district": "Higashi-Hatsuishi 2",
+     "districtJa": "東初石2丁目",
+     "title": "Higashi-Hatsuishi 2 — near-new 2024 3LDK, 5 min to Hatsuishi",
+     "priceMan": 4280,
+     "priceFrom": false,
+     "landM2": 81.43,
+     "buildingM2": 84.87,
+     "layout": "3LDK",
+     "station": "Hatsuishi",
+     "stationJa": "初石",
+     "line": "Tobu Urban Park Line",
+     "lineJa": "東武アーバンパークライン",
+     "walkMin": 5,
+     "built": "May 2024",
+     "ageYears": 2,
+     "highlights": [
+      "Near-new 2024 build, only 5 min to Hatsuishi station",
+      "15-tatami LDK with counter kitchen, all rooms have storage",
+      "Dishwasher, bathroom dryer, water purifier fitted"
+     ],
+     "cautions": [
+      "Small plot (81.43m²) — garden space is limited",
+      "Parking space has vehicle-size restrictions"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z22119522/006050E93/x1030Z22119522.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h20",
+     "type": "house-used",
+     "district": "Edogawadai-Nishi 3",
+     "districtJa": "江戸川台西3丁目",
+     "title": "Edogawadai-Nishi 3 — 2016 Polus 2LDK, 11 min to Edogawadai",
+     "priceMan": 3780,
+     "priceFrom": false,
+     "landM2": 137.26,
+     "buildingM2": 95.22,
+     "layout": "2LDK",
+     "station": "Edogawadai",
+     "stationJa": "江戸川台",
+     "line": "Tobu Urban Park Line",
+     "lineJa": "東武アーバンパークライン",
+     "walkMin": 11,
+     "built": "Jul 2016",
+     "ageYears": 10,
+     "highlights": [
+      "2016 Polus-built house in a quiet former Polus development",
+      "Generous 137.26m² plot with parking for 2 cars",
+      "2nd-floor living room for light and privacy; floor heating, walk-in closet and pantry"
+     ],
+     "cautions": [
+      "2LDK as built — a third bedroom needs a paid partition-wall conversion",
+      "West-facing main light; 2nd-floor living room layout may not suit everyone",
+      "Currently occupied — viewing by appointment"
+     ],
+     "source": {
+      "name": "LIFULL HOME'S",
+      "url": "https://www.homes.co.jp/kodate/b-37091120004534/",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h21",
+     "type": "house-used",
+     "district": "Nishi-Hatsuishi 1",
+     "districtJa": "西初石1丁目",
+     "title": "Nishi-Hatsuishi 1 — renovated 2006 4LDK, 10 min to Edogawadai",
+     "priceMan": 4188,
+     "priceFrom": false,
+     "landM2": 132.02,
+     "buildingM2": 96.87,
+     "layout": "4LDK",
+     "station": "Edogawadai",
+     "stationJa": "江戸川台",
+     "line": "Tobu Urban Park Line",
+     "lineJa": "東武アーバンパークライン",
+     "walkMin": 10,
+     "built": "Jan 2006",
+     "ageYears": 20,
+     "highlights": [
+      "Full interior/exterior renovation completed July 2026 — new kitchen, bath, washroom and toilets",
+      "All rooms 6 tatami or larger with two-sided light; 3-way corner plot",
+      "Two stations usable: Edogawadai 10 min, Hatsuishi 13 min"
+     ],
+     "cautions": [
+      "20 years old — value rests on the 2026 full renovation",
+      "Hatsuishi is 13 min, so Edogawadai (10 min) is the practical station"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/buy/uh/special/3008/ensen/269/2269130.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
      },
      "isNew": true
     },
@@ -17133,43 +16449,6 @@
       "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/37091120004475/3709112/x437091120004475.html",
       "verified": "detail",
       "infoDate": "2026-07-03"
-     }
-    },
-    {
-     "id": "l02",
-     "type": "land",
-     "district": "Heiwadai 2",
-     "districtJa": "平和台2丁目",
-     "title": "Vacant plot between two stations — 5 min to Nagareyama, 14 min to the TX",
-     "priceMan": 4050,
-     "priceFrom": false,
-     "landM2": 90.74,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Nagareyama",
-     "stationJa": "流山",
-     "line": "Ryutetsu Nagareyama Line",
-     "lineJa": "流鉄流山線",
-     "walkMin": 5,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種住居地域",
-     "coverageFar": "60% / 200%",
-     "highlights": [
-      "Vacant land handed over vacant (更地渡し), fronting two public roads (south about 6m / north about 5m)",
-      "Two stations usable: Nagareyama (Ryutetsu) 5 min and Nagareyama-centralpark (Tsukuba Express) 14 min",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "Small 90.74m² plot and a high ¥/tsubo for this collection — the price buys station proximity, not space",
-      "The 5-minute station is the local Ryutetsu Nagareyama Line (a short local line to Mabashi); the rapid-service Tsukuba Express station is 14 minutes on foot",
-      "Verified on the listing page (information date 2026-10-22)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21964838/006050529/x1030Z21964838.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
      }
     },
     {
@@ -17254,7 +16533,7 @@
      "district": "Ka 2",
      "districtJa": "加2丁目",
      "title": "51-tsubo plot in the old readjustment district by Centralpark — building condition",
-     "priceMan": 4780,
+     "priceMan": 4480,
      "priceFrom": false,
      "landM2": 170.81,
      "buildingM2": null,
@@ -17282,8 +16561,9 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21892339/006110114/x1030Z21892339.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
+      "infoDate": "2026-11-08"
+     },
+     "priceDropMan": 300
     },
     {
      "id": "l12",
@@ -17322,6 +16602,45 @@
       "verified": "detail",
       "infoDate": "2026-10-25"
      }
+    },
+    {
+     "id": "l13",
+     "type": "land",
+     "district": "Mihara 4",
+     "districtJa": "美原4丁目",
+     "title": "Mihara 4 — no-condition 135.91m² plot, 10 min to Edogawadai",
+     "priceMan": 3400,
+     "priceFrom": false,
+     "landM2": 135.91,
+     "buildingM2": null,
+     "layout": null,
+     "station": "Edogawadai",
+     "stationJa": "江戸川台",
+     "line": "Tobu Urban Park Line",
+     "lineJa": "東武アーバンパークライン",
+     "walkMin": 10,
+     "built": null,
+     "ageYears": null,
+     "zoning": "第1種低層住居専用地域",
+     "coverageFar": "50% / 100%",
+     "highlights": [
+      "No building condition — build with any maker",
+      "Vacant 135.91m² plot, 10 min to Edogawadai, east-facing 5m road",
+      "Supermarket, convenience store and park all within walking distance",
+      "No building condition (建築条件なし) — choose your own builder"
+     ],
+     "cautions": [
+      "Land registry category is still farmland (畑) — confirm conversion status before contracting",
+      "Part of a 9-plot new town with contract restrictions (wooden, max 3 floors, no basement, 10m height limit)",
+      "1st low-rise zone: 50% coverage / 100% FAR caps the buildable size"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/1478760009564/147876/x41478760009564.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     }
    ]
   },
@@ -17331,7 +16650,7 @@
     "nameJa": "ただいま！",
     "edition": "Fujisawa",
     "editionJa": "藤沢",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Fujisawa City, Kanagawa",
     "areaJa": "神奈川県藤沢市"
    },
@@ -17342,7 +16661,7 @@
      "district": "Zenkozaka 1",
      "districtJa": "善行坂1丁目",
      "title": "New 3LDK development (2 units) — performance-evaluation certified",
-     "priceMan": 4190,
+     "priceMan": 3990,
      "priceFrom": false,
      "landM2": 97.36,
      "buildingM2": 79.38,
@@ -17363,11 +16682,12 @@
       "Seen on a portal index page — verify details on the listing link"
      ],
      "source": {
-      "name": "OCN不動産",
-      "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6016/area_kanagawa/14205.html",
-      "verified": "index",
-      "infoDate": "2026-10-23"
-     }
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/buy/bh/detail/14205/030/W/21997231.html",
+      "verified": "detail",
+      "infoDate": "2026-11-08"
+     },
+     "priceDropMan": 200
     },
     {
      "id": "h02",
@@ -17466,8 +16786,7 @@
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/14205/030Z21452263/000389005/x1030Z21452263.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 100
+     }
     },
     {
      "id": "h06",
@@ -17696,8 +17015,7 @@
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/14205/030Z21978687/061188001/x1030Z21978687.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 100
+     }
     },
     {
      "id": "h15",
@@ -17802,6 +17120,150 @@
       "infoDate": "2026-10-23"
      },
      "majorCautions": 2
+    },
+    {
+     "id": "h18",
+     "type": "house-used",
+     "district": "Chogo",
+     "districtJa": "長後",
+     "title": "4DK house 4 min from Chogo station",
+     "priceMan": 3300,
+     "priceFrom": false,
+     "landM2": 100.05,
+     "buildingM2": 79.48,
+     "layout": "4DK",
+     "station": "Chogo",
+     "stationJa": "長後",
+     "line": "Odakyu Enoshima Line",
+     "lineJa": "小田急江ノ島線",
+     "walkMin": 4,
+     "built": "May 1994",
+     "ageYears": 32,
+     "highlights": [
+      "4 minutes' walk from Chogo station — the closest walk of any Fujisawa candidate this week",
+      "All rooms 2-sided light, 6+ tatami each; low-rise residential zone",
+      "Parking for 1 car; city gas, public sewer",
+      "Supermarket, drugstore and Chogo Park all within a few minutes"
+     ],
+     "cautions": [
+      "Built May 1994 (32 years old) — pre-2000 build, check quake resistance and condition on viewing",
+      "4DK layout with Japanese-style room rather than modern 4LDK"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=5000&sa_l=60&la_l=90",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h19",
+     "type": "house-used",
+     "district": "Hon-Fujisawa 2",
+     "districtJa": "本藤沢2丁目",
+     "title": "Renovated 4LDK on 151m² plot, 12 min from Fujisawa-Honmachi",
+     "priceMan": 3997,
+     "priceFrom": false,
+     "landM2": 151,
+     "buildingM2": 104.33,
+     "layout": "4LDK",
+     "station": "Fujisawa-Honmachi",
+     "stationJa": "藤沢本町",
+     "line": "Odakyu Enoshima Line",
+     "lineJa": "小田急江ノ島線",
+     "walkMin": 12,
+     "built": "Mar 1994",
+     "ageYears": 32,
+     "highlights": [
+      "Large 151m² plot on high ground — good light, ventilation and views",
+      "Full interior/exterior renovation completed Sep 2026 (kitchen, bath, toilet, washroom, flooring, roof/wall paint, termite treatment)",
+      "Mitsui Home-built house; 4LDK with walk-in closet, south-facing garden and balcony",
+      "Garage with shutter; all rooms floored with storage"
+     ],
+     "cautions": [
+      "Built Mar 1994 (32 years old) — value is in the land and the 2026 renovation, not the structure",
+      "Walk time varies 10–12 min across agencies; 12 min used here",
+      "On a slope/elevated plot — check access and steps on viewing",
+      "Portal feeds disagree on the walk (10–12 min); scored on 12 min"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=5000&sa_l=60&la_l=90",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h20",
+     "type": "house-used",
+     "district": "Zengyo 5",
+     "districtJa": "善行5丁目",
+     "title": "Renovated 3LDK, 12 min from Zengyo — ¥3,190万",
+     "priceMan": 3190,
+     "priceFrom": false,
+     "landM2": 100.1,
+     "buildingM2": 81.14,
+     "layout": "3LDK",
+     "station": "Zengyo",
+     "stationJa": "善行",
+     "line": "Odakyu Enoshima Line",
+     "lineJa": "小田急江ノ島線",
+     "walkMin": 13,
+     "built": "Jun 2007",
+     "ageYears": 19,
+     "highlights": [
+      "Cheapest house candidate this week at ¥3,190万",
+      "Interior/exterior renovation Apr 2026 (kitchen taps and hob, cross/CF, screens, roof/wall paint)",
+      "15.6-tatami LDK with 3-sided light, living stairs, L-shaped kitchen; parking for 1 car",
+      "First-class low-rise residential zone; south-east balcony"
+     ],
+     "cautions": [
+      "Built Jun 2007 (19 years old)",
+      "Walk varies 12–13 min across agencies; 12 min used here"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=5000&sa_l=60&la_l=90",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h21",
+     "type": "house-used",
+     "district": "Zengyo 5",
+     "districtJa": "善行5丁目",
+     "title": "2021-built 3LDK, 12 min from Zengyo",
+     "priceMan": 4300,
+     "priceFrom": false,
+     "landM2": 97.45,
+     "buildingM2": 79.49,
+     "layout": "3LDK",
+     "station": "Zengyo",
+     "stationJa": "善行",
+     "line": "Odakyu Enoshima Line",
+     "lineJa": "小田急江ノ島線",
+     "walkMin": 12,
+     "built": "Apr 2021",
+     "ageYears": 5,
+     "highlights": [
+      "Youngest house candidate this week — built Apr 2021, only 5 years old",
+      "Modern fittings: system kitchen, bathroom dryer, city gas",
+      "97.45m² plot in the same Zengyo 5 pocket as the ¥3,190万 candidate, for buyers wanting a newer build"
+     ],
+     "cautions": [
+      "Only the headline figures were capturable from the index page — room sizes and renovation/condition notes were not listed, so verify on the detail page before publishing"
+     ],
+     "source": {
+      "name": "goo不動産",
+      "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14205&pu=5000&sa_l=60&la_l=90",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     },
     {
      "id": "l02",
@@ -17955,45 +17417,7 @@
       "verified": "detail",
       "infoDate": "2026-11-02"
      },
-     "majorCautions": 1,
-     "priceDropMan": 500
-    },
-    {
-     "id": "l08",
-     "type": "land",
-     "district": "Chogo",
-     "districtJa": "長後",
-     "title": "100m² plot 4 min from Chogo station — old house on site",
-     "priceMan": 3300,
-     "priceFrom": false,
-     "landM2": 100.05,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Chogo",
-     "stationJa": "長後",
-     "line": "Odakyu Enoshima Line",
-     "lineJa": "小田急江ノ島線",
-     "walkMin": 4,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "50% / 80%",
-     "highlights": [
-      "Just 4 minutes' walk from Chogo station in a quiet low-rise street",
-      "Full utilities: city gas, water, mains sewer",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "A 2-storey old house stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
-      "Site lies in a buried cultural-property area (埋蔵文化財包蔵地) and a land-development regulation zone — excavation/development procedures may apply",
-      "Verified on the listing page (information date 2026-10-22)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z21266168/000045103/x1030Z21266168.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
+     "majorCautions": 1
     },
     {
      "id": "l10",
@@ -18069,44 +17493,6 @@
       "verified": "detail",
       "infoDate": "2026-10-22"
      }
-    },
-    {
-     "id": "l12",
-     "type": "land",
-     "district": "Tsujido 6",
-     "districtJa": "辻堂6丁目",
-     "title": "Vacant 137m² lot at the edge of Tsujido's walk zone — immediate handover",
-     "priceMan": 4780,
-     "priceFrom": false,
-     "landM2": 137.34,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Tsujido",
-     "stationJa": "辻堂",
-     "line": "JR Tokaido Line",
-     "lineJa": "JR東海道本線",
-     "walkMin": 15,
-     "built": null,
-     "ageYears": null,
-     "zoning": "第1種低層住居専用地域",
-     "coverageFar": "50% / 80%",
-     "highlights": [
-      "Vacant land (更地渡し), immediate handover (即引渡し可)",
-      "Full utilities: city gas, water, mains sewer; sea within 2km",
-      "No building condition (建築条件なし) — choose your own builder"
-     ],
-     "cautions": [
-      "At the very edge of the brief — 15 minutes' walk to Tsujido station",
-      "Narrow frontage: only 3.7m onto the south 4m road",
-      "Landscape Act restrictions noted; shore-side district — check the city's tsunami/flood hazard maps for this exact plot (not stated on the listing)",
-      "Verified on the listing page (information date 2026-10-19)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/14205/030Z20732665/048513000/x1030Z20732665.html",
-      "verified": "detail",
-      "infoDate": "2026-10-19"
-     }
     }
    ]
   },
@@ -18116,7 +17502,7 @@
     "nameJa": "ただいま！",
     "edition": "Atsugi",
     "editionJa": "厚木",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Atsugi City, Kanagawa",
     "areaJa": "神奈川県厚木市"
    },
@@ -18296,7 +17682,7 @@
      "district": "Onna 2",
      "districtJa": "恩名2丁目",
      "title": "Used 4LDK (2012), renovated 2021 — walkable to Hon-Atsugi",
-     "priceMan": 3480,
+     "priceMan": 3280,
      "priceFrom": false,
      "landM2": 100.41,
      "buildingM2": 96.47,
@@ -18318,11 +17704,11 @@
      ],
      "source": {
       "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/shuto_uh/area_kanagawa/14212.html",
-      "verified": "index",
-      "infoDate": "2026-11-02"
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z22059199/000232146/x1030Z22059199.html",
+      "verified": "detail",
+      "infoDate": "2026-11-08"
      },
-     "priceDropMan": 500
+     "priceDropMan": 200
     },
     {
      "id": "h09",
@@ -18426,8 +17812,7 @@
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z21380683/010174174/x1030Z21380683.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 30
+     }
     },
     {
      "id": "h12",
@@ -18457,8 +17842,7 @@
       "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14212&ei=1&fn=14&ut%5B0%5D=124_125&la_l=90",
       "verified": "index",
       "infoDate": "2026-11-02"
-     },
-     "isNew": true
+     }
     },
     {
      "id": "l01",
@@ -18853,7 +18237,7 @@
     "nameJa": "ただいま！",
     "edition": "Tokorozawa",
     "editionJa": "所沢",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Tokorozawa City, Saitama",
     "areaJa": "埼玉県所沢市"
    },
@@ -19313,8 +18697,7 @@
       "verified": "detail",
       "infoDate": "2026-11-01"
      },
-     "majorCautions": 2,
-     "priceDropMan": 100
+     "majorCautions": 2
     },
     {
      "id": "l01",
@@ -19705,44 +19088,11 @@
     "nameJa": "ただいま！",
     "edition": "Saitama City",
     "editionJa": "さいたま市",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Saitama City, Saitama",
     "areaJa": "埼玉県さいたま市"
    },
    "properties": [
-    {
-     "id": "h01",
-     "type": "house-new",
-     "district": "Nishibori 9, Sakura Ward",
-     "districtJa": "桜区西堀9丁目",
-     "title": "New 3LDK+S, completed and ready — compact plot (Unit 6 of 7)",
-     "priceMan": 4380,
-     "priceFrom": false,
-     "landM2": 63.6,
-     "buildingM2": 109.11,
-     "layout": "3LDK+S",
-     "station": "Minami-Yono",
-     "stationJa": "南与野",
-     "line": "JR Saikyo Line",
-     "lineJa": "JR埼京線",
-     "walkMin": 10,
-     "built": "Apr 2026",
-     "ageYears": 0,
-     "highlights": [
-      "Last unit of a 7-house development, completed Apr 2026 — immediate handover"
-     ],
-     "cautions": [
-      "Very small 63.6m² plot, 3-storey wooden build",
-      "Narrow 3.5m east road frontage",
-      "Verified on the listing page (information date 2026-10-22)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産 (SUUMO feed)",
-      "url": "https://house.goo.ne.jp/buy/bh/detail/11106/030/W/21983220.html",
-      "verified": "detail",
-      "infoDate": "2026-10-22"
-     }
-    },
     {
      "id": "h02",
      "type": "house-new",
@@ -19844,39 +19194,6 @@
      }
     },
     {
-     "id": "h06",
-     "type": "house-new",
-     "district": "Miyamachi 2, Iwatsuki Ward",
-     "districtJa": "岩槻区宮町2丁目",
-     "title": "New 4LDK — cheapest new build here (Open Place Precious)",
-     "priceMan": 2999,
-     "priceFrom": false,
-     "landM2": 94.55,
-     "buildingM2": 94.4,
-     "layout": "4LDK",
-     "station": "Higashi-Iwatsuki",
-     "stationJa": "東岩槻",
-     "line": "Tobu Urban Park Line",
-     "lineJa": "東武アーバンパークライン",
-     "walkMin": 8,
-     "built": "New build",
-     "ageYears": 0,
-     "highlights": [
-      "Cheapest new house in this collection (Open Place Higashi-Iwatsuki Precious)"
-     ],
-     "cautions": [
-      "LP gas (個別プロパンガス), not city gas",
-      "In a land-development regulation area (宅地造成工事規制区域) with 景観法 restrictions"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/bh/detail/11110/030/W/21059437.html",
-      "verified": "detail",
-      "infoDate": "2026-10-31"
-     },
-     "priceDropMan": 100
-    },
-    {
      "id": "h07",
      "type": "house-new",
      "district": "Higashi-Urawa 2, Midori Ward",
@@ -19948,7 +19265,7 @@
      "district": "Sakurada 1, Sakura Ward",
      "districtJa": "桜区桜田1丁目",
      "title": "Used 5K (1969) at ¥680万 — flooded in 2019, experts only",
-     "priceMan": 680,
+     "priceMan": 598,
      "priceFrom": false,
      "landM2": 67.63,
      "buildingM2": 44.71,
@@ -19974,10 +19291,10 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/11106/030Z21931275/151823003/x1030Z21931275.html",
       "verified": "detail",
-      "infoDate": "2026-11-01"
+      "infoDate": "2026-11-08"
      },
      "majorCautions": 2,
-     "priceDropMan": 100
+     "priceDropMan": 82
     },
     {
      "id": "h11",
@@ -20089,7 +19406,7 @@
      "district": "Yoshinocho 1, Kita Ward",
      "districtJa": "北区吉野町1丁目",
      "title": "Used 4LDK (2005), seller-direct — New Shuttle side of Kita Ward",
-     "priceMan": 2480,
+     "priceMan": 2780,
      "priceFrom": false,
      "landM2": 100.04,
      "buildingM2": 93.98,
@@ -20113,7 +19430,7 @@
       "name": "goo住宅・不動産 (SUUMO feed)",
       "url": "https://house.goo.ne.jp/buy/uh/detail/1/11102/030Z21781585/100647001/x1030Z21781585.html",
       "verified": "detail",
-      "infoDate": "2026-10-22"
+      "infoDate": "2026-11-09"
      }
     },
     {
@@ -20146,6 +19463,111 @@
       "url": "https://house.ocn.ne.jp/sp/ikkodate/area_saitama/11108/019.html",
       "verified": "index",
       "infoDate": "2026-11-02"
+     }
+    },
+    {
+     "id": "h17",
+     "type": "house-used",
+     "district": "Nishiharadai 2, Iwatsuki Ward",
+     "districtJa": "岩槻区西原台2丁目",
+     "title": "Used 4LDK (1993) at ¥1,590万 — 13 min from Iwatsuki, all rooms 6 tatami+",
+     "priceMan": 1590,
+     "priceFrom": false,
+     "landM2": 125.06,
+     "buildingM2": 118.41,
+     "layout": "4LDK",
+     "station": "Iwatsuki",
+     "stationJa": "岩槻",
+     "line": "Tobu Urban Park Line",
+     "lineJa": "東武アーバンパークライン",
+     "walkMin": 13,
+     "built": "Dec 1993",
+     "ageYears": 33,
+     "highlights": [
+      "Large 118.41m² interior on a 125.06m² plot — the most space per yen in this set",
+      "All rooms 6 tatami or larger with storage; vacant and viewable any time",
+      "Primary school 450m and junior high 750m"
+     ],
+     "cautions": [
+      "33 years old (1993, post-1981 standard) with no reform history on the detail page",
+      "Setback area of ~5.3m² included in the land — rebuild requires road setback",
+      "LP gas (プロパンガス); city-gas pipe is in the front road but switching costs extra"
+     ],
+     "source": {
+      "name": "goo住宅・不動産 (SUUMO feed)",
+      "url": "https://house.goo.ne.jp/buy/uh/detail/1/11110/030Z21219122/006110007/x1030Z21219122.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h18",
+     "type": "house-used",
+     "district": "Nishimachi 5, Iwatsuki Ward",
+     "districtJa": "岩槻区西町5丁目",
+     "title": "Used 4LDK (1996) — 14 min from Iwatsuki, quiet residential street",
+     "priceMan": 1880,
+     "priceFrom": false,
+     "landM2": 111.5,
+     "buildingM2": 84.27,
+     "layout": "4LDK",
+     "station": "Iwatsuki",
+     "stationJa": "岩槻",
+     "line": "Tobu Urban Park Line",
+     "lineJa": "東武アーバンパークライン",
+     "walkMin": 14,
+     "built": "May 1996",
+     "ageYears": 30,
+     "highlights": [
+      "Quiet residential street 14 min from Iwatsuki",
+      "City gas; 111.5m² plot"
+     ],
+     "cautions": [
+      "30 years old with no reform history on the index page",
+      "Near the 15-minute walk limit of this collection",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/buy/uh/special/3013/area_saitama/110001.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
+    },
+    {
+     "id": "h19",
+     "type": "house-used",
+     "district": "Oaza-Sashiogi, Nishi Ward",
+     "districtJa": "西区大字指扇",
+     "title": "Used 4DK (1993) — 14 min from Sashiogi, exterior reformed, renovation plans offered",
+     "priceMan": 1480,
+     "priceFrom": false,
+     "landM2": 102.21,
+     "buildingM2": 79.07,
+     "layout": "4DK",
+     "station": "Sashiogi",
+     "stationJa": "指扇",
+     "line": "JR Kawagoe Line",
+     "lineJa": "JR川越線",
+     "walkMin": 14,
+     "built": "Feb 1993",
+     "ageYears": 33,
+     "highlights": [
+      "Supermarket, convenience store and drugstore all within walking distance",
+      "Exterior reformed; broker offers renovation plans for the interior"
+     ],
+     "cautions": [
+      "33 years old — interior condition unverified beyond the exterior work",
+      "Near the 15-minute walk limit of this collection",
+      "Seen on a portal index page — verify details on the listing link"
+     ],
+     "source": {
+      "name": "goo住宅・不動産",
+      "url": "https://house.goo.ne.jp/buy/uh/special/3013/area_saitama/110001.html",
+      "verified": "index",
+      "infoDate": "2026-11-09"
      },
      "isNew": true
     },
@@ -20402,46 +19824,7 @@
       "url": "https://house.goo.ne.jp/buy/la/detail/4/11110/37091140003568/3709114/x437091140003568.html",
       "verified": "detail",
       "infoDate": "2026-11-02"
-     },
-     "priceDropMan": 100
-    },
-    {
-     "id": "l11",
-     "type": "land",
-     "district": "Misono-Higashi 2, Iwatsuki Ward",
-     "districtJa": "岩槻区美園東2丁目",
-     "title": "Large builder-tied lot by Urawa-Misono (Polus)",
-     "priceMan": 3980,
-     "priceFrom": false,
-     "landM2": 173.5,
-     "buildingM2": null,
-     "layout": null,
-     "station": "Urawa-Misono",
-     "stationJa": "浦和美園",
-     "line": "Saitama Rapid Railway Line",
-     "lineJa": "埼玉高速鉄道線",
-     "walkMin": 15,
-     "built": null,
-     "ageYears": null,
-     "zoning": "準住居地域",
-     "coverageFar": "60% / 200%",
-     "highlights": [
-      "Vacant (更地), regular-shaped, immediate handover",
-      "4 minutes' walk to the U-NIX Urawa-Misono shopping centre"
-     ],
-     "cautions": [
-      "Builder condition attached (建築条件付) — you must build with Polus",
-      "At the 15-minute walk limit of this collection",
-      "Headline 173.5 m² overstates the usable plot: the seller quotes '135 m² or more (実質)' and states building on part of the site is restricted — ask the agent what the restricted portion is",
-      "District-plan restrictions apply (岩槻区南部親和西地区地区計画), plus a prefectural ordinance, quasi-fire zone (準防火地域) and height district (高度地区)"
-     ],
-     "source": {
-      "name": "goo住宅・不動産",
-      "url": "https://house.goo.ne.jp/buy/la/detail/1/11110/030Z20314631/006110039/x1030Z20314631.html",
-      "verified": "detail",
-      "infoDate": "2026-10-19"
-     },
-     "majorCautions": 1
+     }
     },
     {
      "id": "l12",
@@ -20478,6 +19861,45 @@
       "verified": "detail",
       "infoDate": "2026-10-19"
      }
+    },
+    {
+     "id": "l13",
+     "type": "land",
+     "district": "Shimacho, Minuma Ward",
+     "districtJa": "見沼区島町",
+     "title": "Vacant corner lot 11 minutes from Nanasato — 128m², no builder tie-in",
+     "priceMan": 2680,
+     "priceFrom": false,
+     "landM2": 128,
+     "buildingM2": null,
+     "layout": null,
+     "station": "Nanasato",
+     "stationJa": "七里",
+     "line": "Tobu Urban Park Line",
+     "lineJa": "東武アーバンパークライン",
+     "walkMin": 11,
+     "built": null,
+     "ageYears": null,
+     "zoning": "第1種中高層住居専用地域",
+     "coverageFar": "60% / 200%",
+     "highlights": [
+      "Vacant land (更地), south-east corner lot with wide frontages (8.4m south / 12.5m east)",
+      "City gas and mains sewer; park 3 min walk",
+      "No building condition (建築条件なし) — choose your own builder",
+      "No building condition (建築条件なし) — choose your own builder"
+     ],
+     "cautions": [
+      "Separate ~31m² private-road area plus ~1.7m² position-designated-road burden — confirm the shares",
+      "Registered land category is forest (山林) despite the residential use",
+      "FAR is limited by the front-road width per the detail page"
+     ],
+     "source": {
+      "name": "goo住宅・不動産 (SUUMO feed)",
+      "url": "https://house.goo.ne.jp/buy/la/detail/1/11104/030Z22015858/006050441/x1030Z22015858.html",
+      "verified": "detail",
+      "infoDate": "2026-11-09"
+     },
+     "isNew": true
     }
    ]
   }

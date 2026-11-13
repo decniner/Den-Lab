@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Atsugi",
     "editionJa": "厚木",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Atsugi City, Kanagawa",
     "areaJa": "神奈川県厚木市"
   },
@@ -195,7 +195,7 @@ window.TADAIMA_DATA = {
       "district": "Onna 2",
       "districtJa": "恩名2丁目",
       "title": "Used 4LDK (2012), renovated 2021 — walkable to Hon-Atsugi",
-      "priceMan": 3480,
+      "priceMan": 3280,
       "priceFrom": false,
       "landM2": 100.41,
       "buildingM2": 96.47,
@@ -217,11 +217,11 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_kanagawa/14212.html",
-        "verified": "index",
-        "infoDate": "2026-11-02"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z22059199/000232146/x1030Z22059199.html",
+        "verified": "detail",
+        "infoDate": "2026-11-08"
       },
-      "priceDropMan": 500
+      "priceDropMan": 200
     },
     {
       "id": "h09",
@@ -325,8 +325,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z21380683/010174174/x1030Z21380683.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 30
+      }
     },
     {
       "id": "h12",
@@ -356,8 +355,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B0%5D=14212&ei=1&fn=14&ut%5B0%5D=124_125&la_l=90",
         "verified": "index",
         "infoDate": "2026-11-02"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "l01",

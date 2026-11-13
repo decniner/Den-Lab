@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Funabashi",
     "editionJa": "船橋",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Funabashi City, Chiba",
     "areaJa": "千葉県船橋市"
   },
@@ -362,8 +362,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21965098/006050A93/x1030Z21965098.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 200
+      }
     },
     {
       "id": "h13",
@@ -396,8 +395,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21408183/156871001/x1030Z21408183.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 90
+      }
     },
     {
       "id": "h15",
@@ -430,8 +428,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/bh/detail/12204/030/W/21235478.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 200
+      }
     },
     {
       "id": "h16",
@@ -510,7 +507,7 @@ window.TADAIMA_DATA = {
       "district": "Maruyama 1",
       "districtJa": "丸山1丁目",
       "title": "167m² vacant corner plot 3 minutes from Magomezawa — over 50 tsubo",
-      "priceMan": 2980,
+      "priceMan": 2280,
       "priceFrom": false,
       "landM2": 166.6,
       "buildingM2": null,
@@ -539,8 +536,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12204/030Z21318448/000585110/x1030Z21318448.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-08"
+      },
+      "priceDropMan": 700
     },
     {
       "id": "l03",

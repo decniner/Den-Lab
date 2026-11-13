@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Yokohama",
     "editionJa": "横浜",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Yokohama City, Kanagawa",
     "areaJa": "神奈川県横浜市"
   },
@@ -307,8 +307,7 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-11-02"
       },
-      "majorCautions": 1,
-      "priceDropMan": 100
+      "majorCautions": 1
     },
     {
       "id": "h09",

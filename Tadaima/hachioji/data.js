@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Hachioji",
     "editionJa": "八王子",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Hachioji City, Tokyo",
     "areaJa": "東京都八王子市"
   },
@@ -81,7 +81,7 @@ window.TADAIMA_DATA = {
       "district": "Ishikawa-machi",
       "districtJa": "石川町",
       "title": "New 4LDK development (21 units) with solar — 14 min from Komiya",
-      "priceMan": 3799,
+      "priceMan": 3699,
       "priceFrom": true,
       "landM2": 125.11,
       "buildingM2": 96.05,
@@ -108,9 +108,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/20852203.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-11-07"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 100
     },
     {
       "id": "h04",
@@ -358,39 +359,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h11",
-      "type": "house-used",
-      "district": "Sanda-machi 1",
-      "districtJa": "散田町1丁目",
-      "title": "Used 3SLDK (1997) — 10 min from Nishi-Hachioji, parking for 2",
-      "priceMan": 3199,
-      "priceFrom": false,
-      "landM2": 100.96,
-      "buildingM2": 72.09,
-      "layout": "3SLDK",
-      "station": "Nishi-Hachioji",
-      "stationJa": "西八王子",
-      "line": "JR Chuo Line",
-      "lineJa": "JR中央線",
-      "walkMin": 10,
-      "built": "Jun 1997",
-      "ageYears": 29,
-      "highlights": [
-        "South-road plot with a garden; parking for 2",
-        "One of few in-brief houses on the JR Chuo side west of Hachioji Station"
-      ],
-      "cautions": [
-        "Compact 72.1m² building despite the 3SLDK label — check room sizes on the plan",
-        "Listing photos use AI virtual staging — the house is sold unfurnished, as-is (現況有姿)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21798556/129388001/x1030Z21798556.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h12",
       "type": "house-used",
       "district": "Higashi-Asakawa-cho",
@@ -457,6 +425,112 @@ window.TADAIMA_DATA = {
         "verified": "index",
         "infoDate": "2026-10-23"
       }
+    },
+    {
+      "id": "h14",
+      "type": "house-used",
+      "district": "Katakura-cho",
+      "districtJa": "片倉町",
+      "title": "Used 3SLDK (2012) — 4 min from Katakura, 22-tatami LDK, parking for 2",
+      "priceMan": 4190,
+      "priceFrom": false,
+      "landM2": 136.23,
+      "buildingM2": 125.45,
+      "layout": "3SLDK",
+      "station": "Katakura",
+      "stationJa": "片倉",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 4,
+      "built": "Jul 2012",
+      "ageYears": 14,
+      "highlights": [
+        "4-minute walk to Katakura — joint-shortest in the used set; Keio-Katakura also 7 min",
+        "~22-tatami LDK with living stairs; storage room by the entrance",
+        "Parking for 2 (carport); immediate handover"
+      ],
+      "cautions": [
+        "Part of the plot sits in a 60% / 200% coverage-FAR zone — confirm the zoning split before assuming a rebuild footprint",
+        "Landscape Act, Aviation Act and height-district controls listed on the detail page"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21014623/006050903/x1030Z21014623.html",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h15",
+      "type": "house-used",
+      "district": "Naganuma-cho",
+      "districtJa": "長沼町",
+      "title": "Used 4LDK (2025) — near-new, 4 min from Naganuma, 19-tatami LDK",
+      "priceMan": 4780,
+      "priceFrom": false,
+      "landM2": 130.01,
+      "buildingM2": 98.53,
+      "layout": "4LDK",
+      "station": "Naganuma",
+      "stationJa": "長沼",
+      "line": "Keio Line",
+      "lineJa": "京王線",
+      "walkMin": 4,
+      "built": "Aug 2025",
+      "ageYears": 1,
+      "highlights": [
+        "Built Aug 2025 — effectively new, in a planned subdivision in a first-category low-rise zone",
+        "19.1-tatami LDK with 3-sided light; walk-in closet and pantry",
+        "Primary school 3 min walk; parallel parking for 2"
+      ],
+      "cautions": [
+        "24m² private-road area within the plot — confirm the share and passage rights",
+        "Handover by consultation, not immediate"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21308093/006050903/x1030Z21308093.html",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "majorCautions": 2,
+      "isNew": true
+    },
+    {
+      "id": "h16",
+      "type": "house-used",
+      "district": "Otsuka",
+      "districtJa": "大塚",
+      "title": "Used 4LDK (2002), fully reformed — 8 min from Otsuka-Teikyo-Daigaku, 180m² plot",
+      "priceMan": 2990,
+      "priceFrom": false,
+      "landM2": 179.7,
+      "buildingM2": 96.04,
+      "layout": "4LDK",
+      "station": "Otsuka-Teikyo-Daigaku",
+      "stationJa": "大塚・帝京大学",
+      "line": "Tama Monorail",
+      "lineJa": "多摩都市モノレール",
+      "walkMin": 8,
+      "built": "Dec 2002",
+      "ageYears": 24,
+      "highlights": [
+        "Full reform: exterior/roof paint, balcony waterproofing, kitchen, bath, both toilets, water heater and lighting replaced",
+        "Large 179.7m² plot with all rooms 6 tatami or larger plus attic storage",
+        "Supermarket 5 min walk; good views from the 2nd floor"
+      ],
+      "cautions": [
+        "24 years old — the reform was comprehensive but the structure is original",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_tokyo/13201.html",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
     },
     {
       "id": "l01",
@@ -531,42 +605,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l03",
-      "type": "land",
-      "district": "Higashi-Asakawa-cho",
-      "districtJa": "東浅川町",
-      "title": "167m² plot 5 minutes from Hazama — a quarter of it is slope",
-      "priceMan": 2580,
-      "priceFrom": false,
-      "landM2": 167.04,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Hazama",
-      "stationJa": "狭間",
-      "line": "Keio Takao Line",
-      "lineJa": "京王高尾線",
-      "walkMin": 5,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "Two stations usable: Hazama 5 min, Takao 16 min",
-        "Low ¥/tsubo for a 5-minute walk in a low-rise zone",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り / 古家有) — demolition cost likely on the buyer",
-        "Headline area includes sloping land (傾斜地 24.76% included); the listing gives an effective residential area of only 125.68m²"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21452231/000232004/x1030Z21452231.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "l04",
       "type": "land",
       "district": "Katakura-cho",
@@ -636,43 +674,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21978024/000389162/x1030Z21978024.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "l06",
-      "type": "land",
-      "district": "Mejirodai 2",
-      "districtJa": "めじろ台2丁目",
-      "title": "230m² plot in the Mejirodai planned estate, 6 minutes from the station",
-      "priceMan": 3780,
-      "priceFrom": false,
-      "landM2": 230.69,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Mejirodai",
-      "stationJa": "めじろ台",
-      "line": "Keio Takao Line",
-      "lineJa": "京王高尾線",
-      "walkMin": 6,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "Large plot in the Keio-developed Mejirodai estate, in its housing-only district-plan area",
-        "Regular-shaped plot (整形地), city gas and mains sewer",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り) — demolition cost likely on the buyer",
-        "The plot sits inside the Mejirodai district-plan housing-only zone (めじろ台地区計画 住宅専用地区)",
-        "Height-district (高度地区) restriction listed on the page"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z21463213/100451227/x1030Z21463213.html",
         "verified": "detail",
         "infoDate": "2026-10-23"
       }
@@ -818,6 +819,44 @@ window.TADAIMA_DATA = {
         "verified": "index",
         "infoDate": "2026-10-23"
       }
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Mejirodai 4",
+      "districtJa": "めじろ台4丁目",
+      "title": "227m² plot 3 minutes from Mejirodai — seller demolishes before handover",
+      "priceMan": 4330,
+      "priceFrom": false,
+      "landM2": 227.16,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mejirodai",
+      "stationJa": "めじろ台",
+      "line": "Keio Takao Line",
+      "lineJa": "京王高尾線",
+      "walkMin": 3,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 80%",
+      "highlights": [
+        "3-minute walk to Mejirodai in the planned Mejirodai estate",
+        "Large 227.16m² regular-shaped plot; city gas and mains sewer",
+        "No building condition (建築条件なし) — choose your own builder",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land — seller demolishes before handover, confirm the demolition scope and timing",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Kawagoe",
     "editionJa": "川越",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Kawagoe City, Saitama",
     "areaJa": "埼玉県川越市"
   },
@@ -127,8 +127,7 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-11-02"
       },
-      "majorCautions": 0,
-      "priceDropMan": 200
+      "majorCautions": 0
     },
     {
       "id": "h04",
@@ -162,8 +161,7 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-11-01"
       },
-      "majorCautions": 1,
-      "priceDropMan": 200
+      "majorCautions": 1
     },
     {
       "id": "h05",
@@ -171,7 +169,7 @@ window.TADAIMA_DATA = {
       "district": "Kasahata",
       "districtJa": "大字笠幡",
       "title": "New 3LDK — lowest-priced new house in this collection",
-      "priceMan": 2680,
+      "priceMan": 2580,
       "priceFrom": false,
       "landM2": 98.6,
       "buildingM2": 88.29,
@@ -192,9 +190,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/4/11201/1040210010024/104021/x41040210010024.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-08"
       },
-      "majorCautions": 0
+      "majorCautions": 0,
+      "priceDropMan": 100
     },
     {
       "id": "h06",
@@ -236,7 +235,7 @@ window.TADAIMA_DATA = {
       "district": "Otsuka-Shinmachi",
       "districtJa": "大塚新町",
       "title": "New 4LDK with parking for three cars",
-      "priceMan": 4298,
+      "priceMan": 4198,
       "priceFrom": false,
       "landM2": 142.57,
       "buildingM2": 100.96,
@@ -261,9 +260,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/11201/030/W/21631849.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-11-03"
       },
-      "majorCautions": 0
+      "majorCautions": 0,
+      "priceDropMan": 100
     },
     {
       "id": "h08",
@@ -464,8 +464,7 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-11-02"
       },
-      "majorCautions": 1,
-      "priceDropMan": 100
+      "majorCautions": 1
     },
     {
       "id": "h15",
@@ -536,41 +535,6 @@ window.TADAIMA_DATA = {
         "url": "https://www.homes.co.jp/kodate/b-17084440000448/",
         "verified": "detail",
         "infoDate": "2026-10-23"
-      },
-      "majorCautions": 0,
-      "section": "shimohiroya"
-    },
-    {
-      "id": "h17",
-      "type": "house-used",
-      "district": "Shimohiroya",
-      "districtJa": "大字下広谷",
-      "title": "Used 3LDK (2023) — built but never lived in, on a 200m² plot",
-      "priceMan": 3198,
-      "priceFrom": false,
-      "landM2": 200.72,
-      "buildingM2": 100.18,
-      "layout": "3LDK",
-      "station": "Tsurugashima",
-      "stationJa": "鶴ヶ島",
-      "line": "Tobu Tojo Line",
-      "lineJa": "東武東上線",
-      "walkMin": 20,
-      "built": "Apr 2023",
-      "ageYears": 3,
-      "highlights": [
-        "Built Apr 2023 and never occupied (未入居) — effectively a new house",
-        "Large 200.7m² plot (about 61 tsubo), south-east aspect, vacant"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Portal listing last updated 6 Sep 2026 — confirm it is still available before travelling"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/chuko/saitama/kawagoe-city/12C7D34F3E-town/list/",
-        "verified": "index",
-        "infoDate": "2026-09-06"
       },
       "majorCautions": 0,
       "section": "shimohiroya"
@@ -651,7 +615,7 @@ window.TADAIMA_DATA = {
       "district": "Shimohiroya",
       "districtJa": "大字下広谷",
       "title": "Used 4LDK (2012) on 200m² — priced for a 33-minute walk",
-      "priceMan": 2350,
+      "priceMan": 2280,
       "priceFrom": false,
       "landM2": 200.52,
       "buildingM2": 106.4,
@@ -675,10 +639,11 @@ window.TADAIMA_DATA = {
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/saitama/kawagoe-city/12C7D34F3E-town/list/",
         "verified": "index",
-        "infoDate": "2026-10-24"
+        "infoDate": "2026-11-09"
       },
       "majorCautions": 0,
-      "section": "shimohiroya"
+      "section": "shimohiroya",
+      "priceDropMan": 70
     },
     {
       "id": "h21",
@@ -714,42 +679,6 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-11-01"
       },
       "majorCautions": 1,
-      "section": "shimohiroya",
-      "priceDropMan": 100
-    },
-    {
-      "id": "h22",
-      "type": "house-used",
-      "district": "Shimohiroya",
-      "districtJa": "大字下広谷",
-      "title": "Used 4LDK (1994) at Shimohiroya 1031-8 — a 15-minute walk",
-      "priceMan": 1380,
-      "priceFrom": false,
-      "landM2": 106.05,
-      "buildingM2": 94.3,
-      "layout": "4LDK",
-      "station": "Tsurugashima",
-      "stationJa": "鶴ヶ島",
-      "line": "Tobu Tojo Line",
-      "lineJa": "東武東上線",
-      "walkMin": 15,
-      "built": "May 1994",
-      "ageYears": 32,
-      "highlights": [
-        "15 minutes to Tsurugashima — inside the main edition's walk rule",
-        "Cheapest walkable used house in the section"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link",
-        "Occupied (居住中); 32 years old"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/chuko/saitama/kawagoe-city/12C7D34F3E-town/list/",
-        "verified": "index",
-        "infoDate": "2026-10-24"
-      },
-      "majorCautions": 0,
       "section": "shimohiroya"
     },
     {
@@ -940,7 +869,7 @@ window.TADAIMA_DATA = {
       "district": "Kasahata",
       "districtJa": "大字笠幡",
       "title": "Huge 392m² plot at a strikingly low ¥/tsubo",
-      "priceMan": 730,
+      "priceMan": 630,
       "priceFrom": false,
       "landM2": 392.4,
       "buildingM2": null,
@@ -967,9 +896,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/1536350000016/153635/x41536350000016.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-07"
       },
-      "majorCautions": 2
+      "majorCautions": 2,
+      "priceDropMan": 100
     },
     {
       "id": "l07",
@@ -1014,7 +944,7 @@ window.TADAIMA_DATA = {
       "district": "Minami-Otsuka 4-chome",
       "districtJa": "南大塚4丁目",
       "title": "165m² lot 6 minutes from Minami-Otsuka (LOVEINGTOWN)",
-      "priceMan": 3180,
+      "priceMan": 2980,
       "priceFrom": false,
       "landM2": 165.59,
       "buildingM2": null,
@@ -1041,47 +971,10 @@ window.TADAIMA_DATA = {
         "name": "atHome",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/11201/37072960007411/3707296/x437072960007411.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-09"
       },
-      "majorCautions": 0
-    },
-    {
-      "id": "l10",
-      "type": "land",
-      "district": "Uenodacho",
-      "districtJa": "上野田町",
-      "title": "Blooming Garden Uenodacho — 11 free-design lots",
-      "priceMan": 2680,
-      "priceFrom": true,
-      "landM2": 105.86,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Kawagoeshi",
-      "stationJa": "川越市",
-      "line": "Tobu Tojo Line",
-      "lineJa": "東武東上線",
-      "walkMin": 12,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 80%",
-      "highlights": [
-        "No building condition (建築条件無) — rare for a subdivision; free design (自由設計)",
-        "South-road and corner lots in the development",
-        "School and supermarket within 800m"
-      ],
-      "cautions": [
-        "Price is 'from' — lots run ¥2,680万–¥3,380万, sizes 105.9–125.2m²",
-        "Low 80% floor-area ratio limits house size",
-        "Figures could not be matched to the developer's current release (checked 2026-10-24; the developer's page, updated 2026-10-12, now offers different lots) — this lot may have sold or been re-phased. Treat price and area as stale until re-checked."
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/list/",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 0
+      "majorCautions": 0,
+      "priceDropMan": 200
     },
     {
       "id": "l11",
@@ -1154,81 +1047,6 @@ window.TADAIMA_DATA = {
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
-    },
-    {
-      "id": "l13",
-      "type": "land",
-      "district": "Shimohiroya",
-      "districtJa": "大字下広谷",
-      "title": "208m² corner plot, old house on site — vacant-land handover available",
-      "priceMan": 1180,
-      "priceFrom": false,
-      "landM2": 208.4,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Tsurugashima",
-      "stationJa": "鶴ヶ島",
-      "line": "Tobu Tojo Line",
-      "lineJa": "東武東上線",
-      "walkMin": 19,
-      "built": null,
-      "ageYears": null,
-      "zoning": null,
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "63-tsubo south-east corner plot; no building condition (建築条件なし)",
-        "Old house stands on the land but vacant-land handover is available (更地引渡可)",
-        "Mains sewer and city gas, per the listing"
-      ],
-      "cautions": [
-        "Shimohiroya is mostly urbanisation-control area (市街化調整区域) and the portal list does not state this plot's planning status — confirm 市街化/調整 and the building-permit route before anything else",
-        "Confirm the demolition timing and who pays for it"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/12C7D34F3E-town/list/",
-        "verified": "index",
-        "infoDate": "2026-10-24"
-      },
-      "majorCautions": 1,
-      "section": "shimohiroya"
-    },
-    {
-      "id": "l14",
-      "type": "land",
-      "district": "Shimohiroya",
-      "districtJa": "大字下広谷",
-      "title": "166m² vacant plot at Shimohiroya 855-3",
-      "priceMan": 1380,
-      "priceFrom": false,
-      "landM2": 166.0,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Tsurugashima",
-      "stationJa": "鶴ヶ島",
-      "line": "Tobu Tojo Line",
-      "lineJa": "東武東上線",
-      "walkMin": 27,
-      "built": null,
-      "ageYears": null,
-      "zoning": null,
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Vacant land (更地), 50.2 tsubo"
-      ],
-      "cautions": [
-        "Planning status not stated on the portal list — Shimohiroya is mostly urbanisation-control area (市街化調整区域); confirm the building-permit route before anything else",
-        "Building-condition field is blank on the portal — confirm none applies",
-        "27 minutes on foot to Tsurugashima"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/tochi/saitama/kawagoe-city/12C7D34F3E-town/list/",
-        "verified": "index",
-        "infoDate": "2026-10-24"
-      },
-      "majorCautions": 1,
-      "section": "shimohiroya"
     }
   ],
   "scoring": {

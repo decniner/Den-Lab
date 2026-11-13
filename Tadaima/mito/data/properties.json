@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Mito",
     "editionJa": "水戸",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Mito City, Ibaraki",
     "areaJa": "茨城県水戸市"
   },
@@ -66,7 +66,7 @@
       "district": "Akatsuka 1",
       "districtJa": "赤塚1丁目",
       "title": "New 4LDK with roof balcony (2 units) — compact plots, immediate move-in",
-      "priceMan": 2899,
+      "priceMan": 2499,
       "priceFrom": false,
       "landM2": 137.7,
       "buildingM2": 108.88,
@@ -90,8 +90,9 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
         "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "priceDropMan": 400
     },
     {
       "id": "h04",
@@ -229,40 +230,6 @@
       }
     },
     {
-      "id": "h08",
-      "type": "house-used",
-      "district": "Uchihara 1",
-      "districtJa": "内原1丁目",
-      "title": "Used 2SLDK (2020) — former model house with wood stove and garage, 5 min from Uchihara Station",
-      "priceMan": 4180,
-      "priceFrom": false,
-      "landM2": 256.51,
-      "buildingM2": 125.86,
-      "layout": "2SLDK",
-      "station": "Uchihara",
-      "stationJa": "内原",
-      "line": "JR Joban Line",
-      "lineJa": "JR常磐線",
-      "walkMin": 5,
-      "built": "Jan 2020",
-      "ageYears": 6,
-      "highlights": [
-        "Shortest walk in this collection (5 min) and a nearly-new 2020 build",
-        "Wood stove, garage and wood deck; Aeon Mall Mito-Uchihara ~220m away"
-      ],
-      "cautions": [
-        "Priced at the top of the used set — the value leans on condition and the model-house specification",
-        "2SLDK layout despite the 125.9m² floor area — check the room configuration suits you",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=ibaragi&lc%5B0%5D=08201&si%5B0%5D=008&si%5B1%5D=009&wm=20",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h09",
       "type": "house-used",
       "district": "Uchihara-machi",
@@ -333,7 +300,7 @@
       "district": "Akatsuka 1",
       "districtJa": "赤塚1丁目",
       "title": "Used 5LDK (1998) with sunroom — 148.6m² house, 8 min from Akatsuka Station",
-      "priceMan": 2570,
+      "priceMan": 2480,
       "priceFrom": false,
       "landM2": 262.99,
       "buildingM2": 148.64,
@@ -356,8 +323,9 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z21451617/085120003/x1030Z21451617.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "priceDropMan": 90
     },
     {
       "id": "h12",
@@ -421,41 +389,6 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z79090499/085120003/x1030Z79090499.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h14",
-      "type": "house-used",
-      "district": "Aoyagi-cho",
-      "districtJa": "青柳町",
-      "title": "Used 1SLDK flat (2012) by Ichijo Komuten — renovated, 2 min from Hitachi-Aoyagi Station",
-      "priceMan": 2180,
-      "priceFrom": false,
-      "landM2": 340.11,
-      "buildingM2": 92.09,
-      "layout": "1SLDK",
-      "station": "Hitachi-Aoyagi",
-      "stationJa": "常陸青柳",
-      "line": "JR Suigun Line",
-      "lineJa": "JR水郡線",
-      "walkMin": 2,
-      "built": "Feb 2012",
-      "ageYears": 14,
-      "highlights": [
-        "Shortest station walk here after Uchihara (2 min) — a single-storey Ichijo Komuten house on a 340.1m² plot",
-        "Renovation completed; all-electric, parking for 2"
-      ],
-      "cautions": [
-        "Suigun Line services are infrequent compared with the Joban Line — check the timetable for commuting",
-        "1SLDK layout will not suit larger families without alteration",
-        "Aoyagi-cho sits by the Naka River — check the city flood hazard map before buying",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3003/ensen/103/2103020.html",
-        "verified": "index",
         "infoDate": "2026-10-23"
       }
     },

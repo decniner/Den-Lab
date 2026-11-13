@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Kasukabe",
     "editionJa": "春日部",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Kasukabe City, Saitama",
     "areaJa": "埼玉県春日部市"
   },
@@ -65,7 +65,7 @@ window.TADAIMA_DATA = {
       "district": "Chuo 3",
       "districtJa": "中央3丁目",
       "title": "New 4LDK, all-electric — completed, 110.96m² house near Kasukabe Station",
-      "priceMan": 4180,
+      "priceMan": 3980,
       "priceFrom": false,
       "landM2": 101.65,
       "buildingM2": 110.96,
@@ -89,8 +89,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/sp/new-ikkodate/ensen/261/2261280.html",
         "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h04",
@@ -393,7 +394,7 @@ window.TADAIMA_DATA = {
       "district": "Ushijima",
       "districtJa": "牛島",
       "title": "Used 3LDK (Jun 2005), renovated — expanded LDK, 3 min from Fujino-Ushijima",
-      "priceMan": 2699,
+      "priceMan": 2599,
       "priceFrom": false,
       "landM2": 103.08,
       "buildingM2": 92.33,
@@ -417,8 +418,9 @@ window.TADAIMA_DATA = {
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21760291/142868001/x1030Z21760291.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-08"
+      },
+      "priceDropMan": 100
     },
     {
       "id": "h14",
@@ -442,13 +444,16 @@ window.TADAIMA_DATA = {
         "Spacious 99.6m² 4LDK on a 113.3m² plot for under ¥2,500万",
         "Parking; short 7-minute walk to Takesato Station"
       ],
-      "cautions": [],
+      "cautions": [
+        "Listing states a disclosure matter (告知事項有) — details from the agent"
+      ],
       "source": {
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21980982/100451225/x1030Z21980982.html",
         "verified": "detail",
         "infoDate": "2026-10-23"
-      }
+      },
+      "majorCautions": 1
     },
     {
       "id": "h15",

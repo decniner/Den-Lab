@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Koshigaya",
     "editionJa": "越谷",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Koshigaya City, Saitama",
     "areaJa": "埼玉県越谷市"
   },
@@ -26,39 +26,6 @@
     "note": "Land benchmarks: residential ¥/tsubo by station, triangulated from MLIT transaction data via Utinokati (multi-year, standardised) and 2026 official residential land-price points via Totinokati/tochidai: Shin-Koshigaya/Minami-Koshigaya ~80 (official residential average 76.3 on 9 points, with core residential points at 73–91 within 5–8 minutes; the all-use station average of ~99 and the commercial-point average of ~156 — station-front plots at 157–180 with 400% floor-area ratio — are not used, because the listings are houses and residential lots on side streets), Koshigaya-Laketown ~65 (residential points 58.5–72.1; district averages of ~70–76 are not used because they include a single 95.5 point on a 391m² plot), Koshigaya ~60 (the official station average of ~52 pools points out to 25 minutes; points at 6–15 minutes run 57–91 and sampled transactions at 16 minutes print 55–59), Gamo ~55, Kita-Koshigaya ~50, Sengendai ~42, Obukuro ~40. Kita-Koshigaya is scored at ~50, NOT the official catchment average of ~39: that average is dragged down by urbanisation-control (調整区域) and farmhouse-fringe points and deals — control-area plots in its catchment trade at 4–26万円/坪 — while the Osawa district transaction regression is ~52 (23 deals) and its 15-minute official point is ~45. Higashi-Koshigaya (~55) and Osawa (~50) are districts, not stations — their nearest stations are Koshigaya and Kita-Koshigaya — and are scored from district official points and transactions, flagged as such. Walk bands use Koshigaya's observed land gradient — official points fall roughly 30% by a 10-minute walk and 45–50% by 16+ minutes (Koshigaya station: ~91 within 6 minutes vs ~41–44 beyond 20 minutes); house prices fall only ~20% over the same range. Used houses transacted at about ¥101万/tsubo city-wide (floor-area basis, regression on 2,150 deals): Akayamacho ~123 and the Koshigaya station districts ~116 at the top; by age (Gamo district series, used as the shape proxy), ≤10-yr stock ~139 falls to ~65 for 30+-yr stock. The Shin-Koshigaya district simple average of ~174 rests on a thin slice of new station-adjacent stock and is ignored as a level. Official residential land prices rose +3.2% in the 2026 公示地価 survey (30 of 32 points up, none down) — the fifth straight year of acceleration (+0.5% in 2022 to +3.5% in 2026) — with station-side points up 5–6% and the adjustment-area fringe flat."
   },
   "properties": [
-    {
-      "id": "h02",
-      "type": "house-new",
-      "district": "Osawa 4",
-      "districtJa": "大沢4丁目",
-      "title": "New 4LDK designer house — ZEH-grade spec, 10 min to Kita-Koshigaya",
-      "priceMan": 4780,
-      "priceFrom": false,
-      "landM2": 117.99,
-      "buildingM2": 99.26,
-      "layout": "4LDK",
-      "station": "Kita-Koshigaya",
-      "stationJa": "北越谷",
-      "line": "Tobu Isesaki Line",
-      "lineJa": "東武伊勢崎線",
-      "walkMin": 10,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Designer's house with a vaulted 17.8-post LDK (Meldia Kita-Koshigaya)",
-        "ZEH-grade specification; primary school ~3 min walk; parking for 2 in parallel"
-      ],
-      "cautions": [
-        "The same house is listed twice on the index under two descriptions at the same ¥4,780万 — deduplicated here",
-        "Not yet built — completion Dec 2026, move-in Jan 2027"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/11222/030/W/21586662.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
     {
       "id": "h03",
       "type": "house-new",

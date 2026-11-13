@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Maebashi",
     "editionJa": "前橋",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Maebashi City, Gunma",
     "areaJa": "群馬県前橋市"
   },
@@ -35,7 +35,7 @@
       "district": "Shimoishikura-cho",
       "districtJa": "下石倉町",
       "title": "New 3SLDK on a very large 246m² plot — 14 min from Shin-Maebashi",
-      "priceMan": 3380,
+      "priceMan": 3280,
       "priceFrom": false,
       "landM2": 246.55,
       "buildingM2": 90.26,
@@ -59,8 +59,9 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/W/21893962.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "priceDropMan": 100
     },
     {
       "id": "h02",
@@ -160,75 +161,6 @@
         "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/Z/21301753.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 200
-    },
-    {
-      "id": "h05",
-      "type": "house-new",
-      "district": "Kasukawa-cho Araya",
-      "districtJa": "粕川町新屋",
-      "title": "New 4SLDK — cheapest new build here, 10 min from Araya Station",
-      "priceMan": 1480,
-      "priceFrom": false,
-      "landM2": 196.45,
-      "buildingM2": 96.78,
-      "layout": "4SLDK",
-      "station": "Araya",
-      "stationJa": "新屋",
-      "line": "Jomo Electric Railway",
-      "lineJa": "上毛電気鉄道上毛線",
-      "walkMin": 10,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Cheapest new house in this collection at ¥1,480万",
-        "Design and construction housing-performance evaluations obtained",
-        "Roof balcony; parking for 2 or more cars; living room over 16 tatami"
-      ],
-      "cautions": [
-        "Eastern Kasukawa district — Akagi foothill side of the city; check the city hazard map for the plot",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_gunma/10201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h06",
-      "type": "house-used",
-      "district": "Joto-cho 2",
-      "districtJa": "城東町2丁目",
-      "title": "Used 4LDK (2015), 3-storey — 4 min from Chuo-Maebashi Station",
-      "priceMan": 2080,
-      "priceFrom": false,
-      "landM2": 100.21,
-      "buildingM2": 101.84,
-      "layout": "4LDK",
-      "station": "Chuo-Maebashi",
-      "stationJa": "中央前橋",
-      "line": "Jomo Electric Railway",
-      "lineJa": "上毛電気鉄道上毛線",
-      "walkMin": 4,
-      "built": "Jul 2015",
-      "ageYears": 11,
-      "highlights": [
-        "Shortest walk in this collection — 4 min to Chuo-Maebashi, JR Maebashi also walkable",
-        "3-storey plan fits 101.8m² of living space on a compact central plot",
-        "City gas; parking for 2; Hirose River green belt nearby for walks"
-      ],
-      "cautions": [
-        "Listing notes the house is currently occupied (居住中) and some photos are CG-cleared images — confirm the actual condition at a viewing",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/242/2242020.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
       }
     },
     {
@@ -261,73 +193,6 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/10201/030Z78807678/185349002/x1030Z78807678.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h08",
-      "type": "house-used",
-      "district": "Mitsumata-cho 2",
-      "districtJa": "三俣町2丁目",
-      "title": "Used 3SLDK built Oct 2024 — nearly new, 7 min from Mitsumata Station",
-      "priceMan": 3493,
-      "priceFrom": false,
-      "landM2": 160.01,
-      "buildingM2": 97.7,
-      "layout": "3SLDK",
-      "station": "Mitsumata",
-      "stationJa": "三俣",
-      "line": "Jomo Electric Railway",
-      "lineJa": "上毛電気鉄道上毛線",
-      "walkMin": 7,
-      "built": "Oct 2024",
-      "ageYears": 2,
-      "highlights": [
-        "Nearly new (built Oct 2024) at a used-house listing",
-        "Also 15 min from Katakai Station — two Jomo Line stops usable"
-      ],
-      "cautions": [
-        "Portal feeds disagree: a second feed lists what appears to be the same house at ¥3,588万 with a 97.29m² building (vs 97.7m² here) — verify which is current",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/ensen/242/2242020.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h09",
-      "type": "house-used",
-      "district": "Asahi-cho 1",
-      "districtJa": "朝日町1丁目",
-      "title": "Used 4SLDK (1997), interior renovated — Sekisui Heim steel frame, 7 min from Joto",
-      "priceMan": 2498,
-      "priceFrom": false,
-      "landM2": 233.82,
-      "buildingM2": 129.15,
-      "layout": "4SLDK",
-      "station": "Joto",
-      "stationJa": "城東",
-      "line": "Jomo Electric Railway",
-      "lineJa": "上毛電気鉄道上毛線",
-      "walkMin": 7,
-      "built": "Jun 1997",
-      "ageYears": 29,
-      "highlights": [
-        "Sekisui Heim light-gauge steel frame — marketed as earthquake-resistant",
-        "Interior renovated per the listing; air conditioners in all rooms (5 units)",
-        "Parking for 3; primary school ~5 min walk; also 15 min from JR Maebashi"
-      ],
-      "cautions": [
-        "1997 structure despite the renovation — check what the works actually covered",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/005.html",
-        "verified": "index",
         "infoDate": "2026-10-23"
       }
     },
@@ -507,111 +372,77 @@
       "majorCautions": 1
     },
     {
-      "id": "h15",
-      "type": "house-used",
-      "district": "Nishikatakai-cho 1",
-      "districtJa": "西片貝町1丁目",
-      "title": "Used 5K (1982) sold as-is — 8 min from Mitsumata Station",
-      "priceMan": 840,
+      "id": "h18",
+      "type": "house-new",
+      "district": "Furuichi-cho 1",
+      "districtJa": "古市町1丁目",
+      "title": "New 4LDK house, Furuichi-cho 1",
+      "priceMan": 2980,
       "priceFrom": false,
-      "landM2": 165.53,
-      "buildingM2": 118.7,
-      "layout": "5K",
-      "station": "Mitsumata",
-      "stationJa": "三俣",
-      "line": "Jomo Electric Railway",
-      "lineJa": "上毛電気鉄道上毛線",
-      "walkMin": 8,
-      "built": "Nov 1982",
-      "ageYears": 43,
+      "landM2": 116.53,
+      "buildingM2": 101.02,
+      "layout": "4LDK",
+      "station": "Shin-Maebashi",
+      "stationJa": "新前橋",
+      "line": "JR Ryomo Line",
+      "lineJa": "JR両毛線",
+      "walkMin": 13,
+      "built": "New build",
+      "ageYears": 0,
       "highlights": [
-        "Cheapest house in this collection at ¥840万",
-        "Usable ~50-tsubo plot in a settled residential area; schools walkable",
-        "Listing says the building's condition is good for its age"
+        "18.5-tatami LDK with a garden space",
+        "South-facing, 2-car parking",
+        "Toilets on both floors; bathroom dryer included",
+        "BELS energy-efficiency certified",
+        "Half-price brokerage fee campaign running"
       ],
       "cautions": [
-        "Sold as-is (現状有姿での引き渡し) — the listing itself recommends reform and cleaning",
-        "1982 structure — just after the 1981 seismic-code change; confirm which standard it was built to",
-        "Seen on a portal index page — verify details on the listing link"
+        "Still under construction — handover late January 2027, so no viewing of the finished house yet"
       ],
       "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1574140000355/",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
     },
     {
-      "id": "h16",
-      "type": "house-used",
-      "district": "Honmachi 3",
-      "districtJa": "本町3丁目",
-      "title": "Used 4SLDK (1968) in the city centre — rain leak and liability waiver disclosed",
-      "priceMan": 1680,
+      "id": "h19",
+      "type": "house-new",
+      "district": "Furuichi-cho",
+      "districtJa": "古市町",
+      "title": "New 3LDK house, Furuichi-cho",
+      "priceMan": 2690,
       "priceFrom": false,
-      "landM2": 184.98,
-      "buildingM2": 104.52,
-      "layout": "4SLDK",
-      "station": "Chuo-Maebashi",
-      "stationJa": "中央前橋",
-      "line": "Jomo Electric Railway",
-      "lineJa": "上毛電気鉄道上毛線",
-      "walkMin": 8,
-      "built": "Oct 1968",
-      "ageYears": 58,
+      "landM2": 134.31,
+      "buildingM2": 92.11,
+      "layout": "3LDK",
+      "station": "Shin-Maebashi",
+      "stationJa": "新前橋",
+      "line": "JR Ryomo Line",
+      "lineJa": "JR両毛線",
+      "walkMin": 14,
+      "built": "New build",
+      "ageYears": 0,
       "highlights": [
-        "Central Honmachi plot (185m²) on Route 50 — the value is the land and location",
-        "Parking for 2; shops and schools within walking distance"
+        "18.2-tatami LDK",
+        "Corner plot with 6m+ road frontage",
+        "2-car parking, wide balcony",
+        "Long-term excellent housing certified and Flat 35S compliant",
+        "Ground survey completed; ready for immediate handover"
       ],
       "cautions": [
-        "Built Oct 1968 — pre-1981 seismic standard (旧耐震); at this age treat the structure as end-of-life",
-        "Listing discloses a rain leak (雨漏り有り)",
-        "Seller's defect liability is waived (契約不適合責任免責) — sold as-is; experts only",
-        "Seen on a portal index page — verify details on the listing link"
+        "14 min walk — near the 15-min limit",
+        "3LDK only; smaller than the neighbouring 4LDK new builds in Furuichi-cho"
       ],
       "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_uh/area_gunma/10201/078.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1560680000749/",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
       },
-      "majorCautions": 2
-    },
-    {
-      "id": "h17",
-      "type": "house-used",
-      "district": "Motegi-cho",
-      "districtJa": "茂木町",
-      "title": "Used 4DK (1964) single-storey on 397m² — 5 min from Ogo Station, land play",
-      "priceMan": 520,
-      "priceFrom": false,
-      "landM2": 397.38,
-      "buildingM2": 77.11,
-      "layout": "4DK",
-      "station": "Ogo",
-      "stationJa": "大胡",
-      "line": "Jomo Electric Railway",
-      "lineJa": "上毛電気鉄道上毛線",
-      "walkMin": 5,
-      "built": "Aug 1964",
-      "ageYears": 62,
-      "highlights": [
-        "Very large 397m² plot (over 100 tsubo) 5 min from the station at ¥520万",
-        "Single-storey house; supermarket within 10 min walk; primary school within 10 min"
-      ],
-      "cautions": [
-        "Built Aug 1964 — pre-1981 seismic standard (旧耐震); judge this as a land purchase",
-        "Part of the terrace is unregistered (未登記) and the boundary is not legally fixed (筆界未確定地)",
-        "Sold as-is (現況渡し)",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (OCN feed)",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/ensen/242/2242080.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 2
+      "isNew": true
     },
     {
       "id": "l01",
@@ -692,7 +523,7 @@
       "district": "Joto-cho 2",
       "districtJa": "城東町2",
       "title": "Corner plot 4 minutes from Chuo-Maebashi — building on site",
-      "priceMan": 740,
+      "priceMan": 340,
       "priceFrom": false,
       "landM2": 122.76,
       "buildingM2": null,
@@ -721,8 +552,9 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z21044581/104433001/x1030Z21044581.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "priceDropMan": 400
     },
     {
       "id": "l04",
@@ -868,8 +700,7 @@
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z78230533/044597003/x1030Z78230533.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 100
+      }
     },
     {
       "id": "l09",
@@ -1015,6 +846,87 @@
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Minami-cho 1",
+      "districtJa": "南町1丁目",
+      "title": "Land in Minami-cho 1, near Maebashi station",
+      "priceMan": 1380,
+      "priceFrom": false,
+      "landM2": 141.97,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Maebashi",
+      "stationJa": "前橋",
+      "line": "JR Ryomo Line",
+      "lineJa": "JR両毛線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "No building conditions — build with any maker",
+        "Vacant land, ready to build",
+        "Flat walk to Maebashi station",
+        "Supermarket within a 10-min walk",
+        "Published 8 Nov 2026 — fresh listing",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "14 min walk — near the 15-min limit",
+        "North-facing 4m road frontage",
+        "Landscape Act (景観法) restrictions apply per the listing"
+      ],
+      "source": {
+        "name": "goo不動産",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z21534936/115332002/x1030Z21534936.html",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "l14",
+      "type": "land",
+      "district": "Hiyoshi-cho 2",
+      "districtJa": "日吉町2丁目",
+      "title": "Corner land in Hiyoshi-cho 2, near Chuo-Maebashi",
+      "priceMan": 1980,
+      "priceFrom": false,
+      "landM2": 221.14,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Chuo-Maebashi",
+      "stationJa": "中央前橋",
+      "line": "Jomo Electric Railway Jomo Line",
+      "lineJa": "上毛電気鉄道上毛線",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Corner plot, regular shape, 221.14m² (about 67 tsubo)",
+        "No building conditions; vacant land with immediate handover",
+        "Seller-direct sale",
+        "Elementary school about 4 min walk; convenience store about 5 min",
+        "Also listed as 11 min from Joto station",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Priciest land in this batch at ¥1,980万",
+        "Nearest JR station (Maebashi) is a 20-min walk — the Jomo line is the practical rail link"
+      ],
+      "source": {
+        "name": "goo不動産",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z96701616/085087001/x1030Z96701616.html",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

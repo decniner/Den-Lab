@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Machida",
     "editionJa": "町田",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Machida City, Tokyo",
     "areaJa": "東京都町田市"
   },
@@ -26,38 +26,6 @@ window.TADAIMA_DATA = {
     "note": "Land benchmarks: residential ¥/tsubo by station, adjusted from MLIT transactions via Utinokati (multi-year) and 2026 official points (Tochidai/Totinokati): Machida ~95 — NOT the Tochidai station official average of ~181 (commercial-mixed; Haramachida all-use prints 527, the top commercial point 1,028) and NOT the raw ~74 catchment average either (a 20-minute average walk, sprawl-dragged); 95 is the residential ≤15-minute level between the transacted catchment and the central residential official points (116–133). Naruse ~77 (regression 76.8; weighted 2023–2025 ≈78; official 69.4; a 2026 year-to-date print rests on exactly one deal). Suzukakedai ~80 — a deliberate midpoint: the transaction and official series diverge by 25–30 points (101 single-year, composition-skewed, vs 68.6 official) and the gap is unresolved; flagged to revisit first at the next research pass. Tsukushino ~75 (multi-year transactions 68–80; official 71.6–79.4; a 2025 Q1 print of 132 is small-sample noise). Minami-Machida Grandberry Park ~85 (raw ~95 is mechanically inflated by shrinking lot sizes; official 63.9–77.7 lags the redeveloped station front; Tsuruma deals at 79–93 support the premium). Tamagawagakuen-mae ~62 (weighted transactions ≈61.5; a 2026 print rests on one deal). Tsurukawa ~55 (the raw ~51 catchment includes the Onoji/Nozuta urbanisation-control fringe at 27–36; in-zone official residential ≈54–55). Aihara ~40, LOW confidence (2–11 deals a year with ±50% swings; the raw in-zone figure of ~37 is dragged by adjustment-area and 93-tsubo-average lots; the official station average of ~44 is the tell). Walk bands apply the observed gradient: −10% by a 10-minute walk at Tamagawagakuen-mae, −16 to −21% elsewhere — never Tachikawa's steep band. Used houses transacted at about ¥130万/tsubo city-wide (floor-area basis): the centre (Morino/Haramachida/Nakamachi) ~160, the Kanamori belt south ~148, Naruse ~140 (proxy, flagged), Tamagawagakuen ~128, Honmachida ~125, Tsurukawa ~117, the Kanai fringe ~111; age curve ×0.83 at 10 years, ×0.70 at 20, ×0.60 at 30. Official residential land prices rose +3.0% in the 2026 公示地価 survey — rising, centre-led, fringe flat. Data integrity note: these figures were re-verified against Machida's own portal area (city code 13209) during research after an early pass mixed in another city's data and was discarded."
   },
   "properties": [
-    {
-      "id": "h01",
-      "type": "house-new",
-      "district": "Tamagawagakuen 3",
-      "districtJa": "玉川学園3丁目",
-      "title": "New 3LDK (2 units) — completed and move-in ready, parking for 2",
-      "priceMan": 4499,
-      "priceFrom": false,
-      "landM2": 117.07,
-      "buildingM2": 91.66,
-      "layout": "3LDK",
-      "station": "Tamagawagakuen-mae",
-      "stationJa": "玉川学園前",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 13,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Completed, immediate move-in possible",
-        "Parking for 2 cars; quiet residential street in Tamagawagakuen"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6004/area_tokyo/13209/028.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
     {
       "id": "h02",
       "type": "house-used",
@@ -121,70 +89,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/special/3016/ensen/177/2177100.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h04",
-      "type": "house-used",
-      "district": "Takagasaka 7",
-      "districtJa": "高ヶ坂7丁目",
-      "title": "Used 3LDK (1994) — large 116m2 house on a 154m2 plot",
-      "priceMan": 3780,
-      "priceFrom": false,
-      "landM2": 154,
-      "buildingM2": 116.36,
-      "layout": "3LDK",
-      "station": "Naruse",
-      "stationJa": "成瀬",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 13,
-      "built": "Oct 1994",
-      "ageYears": 32,
-      "highlights": [
-        "Large house (116.4m2) and plot (154m2) for the price",
-        "Quiet residential district on the Naruse side of Machida"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3004/ensen/324/2324240.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h05",
-      "type": "house-used",
-      "district": "Minami-Naruse 8",
-      "districtJa": "南成瀬8丁目",
-      "title": "Used 4LDK (2005) — 13 min to Tsukushino, immediate handover",
-      "priceMan": 3380,
-      "priceFrom": false,
-      "landM2": 130.31,
-      "buildingM2": 93.57,
-      "layout": "4LDK",
-      "station": "Tsukushino",
-      "stationJa": "つくし野",
-      "line": "Tokyu Den-en-toshi Line",
-      "lineJa": "東急田園都市線",
-      "walkMin": 13,
-      "built": "Apr 2005",
-      "ageYears": 21,
-      "highlights": [
-        "Good value 4LDK on a 130.3m2 plot",
-        "Also 13 min from Nagatsuta; vacant, immediate handover"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_tokyo/13209/033.html",
         "verified": "index",
         "infoDate": "2026-10-23"
       }
@@ -326,75 +230,6 @@ window.TADAIMA_DATA = {
       "majorCautions": 1
     },
     {
-      "id": "h10",
-      "type": "house-used",
-      "district": "Tamagawagakuen 5",
-      "districtJa": "玉川学園5丁目",
-      "title": "Used 2LDK (1980) — huge 316m2 plot near Tamagawagakuen-mae",
-      "priceMan": 4000,
-      "priceFrom": false,
-      "landM2": 316.14,
-      "buildingM2": 95.71,
-      "layout": "2LDK",
-      "station": "Tamagawagakuen-mae",
-      "stationJa": "玉川学園前",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 13,
-      "built": "Jul 1980",
-      "ageYears": 46,
-      "highlights": [
-        "Exceptional 316.1m2 (about 95 tsubo) plot — the value is land plus location",
-        "Vacant, viewings possible; parking space available"
-      ],
-      "cautions": [
-        "Built Jul 1980 — pre-1981 seismic standard (just before the June 1981 change)",
-        "At this age judge it mainly as land; rebuild or major works may be needed",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B%5D=0205&lo%5B%5D=0302",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      },
-      "majorCautions": 1
-    },
-    {
-      "id": "h11",
-      "type": "house-used",
-      "district": "Aihara-machi",
-      "districtJa": "相原町",
-      "title": "Used 4LDK (1992) — big 178.8m2 plot, renovated, 7 min to Aihara",
-      "priceMan": 3590,
-      "priceFrom": false,
-      "landM2": 178.81,
-      "buildingM2": 128.37,
-      "layout": "4LDK",
-      "station": "Aihara",
-      "stationJa": "相原",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 7,
-      "built": "Mar 1992",
-      "ageYears": 34,
-      "highlights": [
-        "Spacious 128.4m2 house on a 178.8m2 plot; 18-post LDK plus Japanese room",
-        "New interior/exterior renovation; primary school and park within walking distance"
-      ],
-      "cautions": [
-        "Portal copy puts the walk at both 6 and 7 min — scored here on 7",
-        "Hilly western Machida district — check the city hazard map for slope/landslide risk",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/special/3003/area_tokyo/13209/017.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h12",
       "type": "house-used",
       "district": "Aihara-machi",
@@ -495,6 +330,108 @@ window.TADAIMA_DATA = {
       }
     },
     {
+      "id": "h15",
+      "type": "house-used",
+      "district": "Tamagawagakuen 3",
+      "districtJa": "玉川学園3丁目",
+      "title": "Used 2LDK (2015) — barrier-free custom build, 13 min to Tamagawagakuen-mae",
+      "priceMan": 3480,
+      "priceFrom": false,
+      "landM2": 137.9,
+      "buildingM2": 70.39,
+      "layout": "2LDK",
+      "station": "Tamagawagakuen-mae",
+      "stationJa": "玉川学園前",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 13,
+      "built": "Jul 2015",
+      "ageYears": 11,
+      "highlights": [
+        "2015 custom-built house (Seikin施工) in a quiet first-class low-rise zone",
+        "Barrier-free design with handrails throughout; community bus stop 1 min away as well as the 13-min station walk"
+      ],
+      "cautions": [
+        "Compact 70.4m² building in a 2LDK layout",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B0%5D=0205&lo%5B1%5D=0302",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h16",
+      "type": "house-used",
+      "district": "Minami-Naruse 2",
+      "districtJa": "南成瀬2丁目",
+      "title": "Used 2SLDK (2007) — corner lot with built-in garage, 13 min to Naruse",
+      "priceMan": 4680,
+      "priceFrom": false,
+      "landM2": 106.01,
+      "buildingM2": 93.56,
+      "layout": "2SLDK",
+      "station": "Naruse",
+      "stationJa": "成瀬",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 13,
+      "built": "Jan 2007",
+      "ageYears": 19,
+      "highlights": [
+        "Corner lot in a quiet first-class low-rise residential zone",
+        "Built-in garage; bus to Machida Station also usable from a 5-min stop"
+      ],
+      "cautions": [
+        "Built Jan 2007 — 19 years old",
+        "At 13 min walk, toward the outer edge of the brief"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B0%5D=0205&lo%5B1%5D=0302",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Minami-Oya 4",
+      "districtJa": "南大谷4丁目",
+      "title": "Used 2SLDK (2018) — vaulted-ceiling LDK, floor heating, parking for 2",
+      "priceMan": 4980,
+      "priceFrom": false,
+      "landM2": 136.69,
+      "buildingM2": 101.73,
+      "layout": "2SLDK",
+      "station": "Tamagawagakuen-mae",
+      "stationJa": "玉川学園前",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 13,
+      "built": "Jun 2018",
+      "ageYears": 8,
+      "highlights": [
+        "Relatively recent 2018 build with vaulted-ceiling LDK and floor heating",
+        "Parking for 2 cars; all rooms 5 tatami or larger"
+      ],
+      "cautions": [
+        "At the top of this collection's price brief",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B0%5D=0205&lo%5B1%5D=0302",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
       "id": "l01",
       "type": "land",
       "district": "Tamagawagakuen 5",
@@ -526,41 +463,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21371234/182569001/x1030Z21371234.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "l02",
-      "type": "land",
-      "district": "Tamagawagakuen 2",
-      "districtJa": "玉川学園2丁目",
-      "title": "Vacant south-road lot 5 min from Tamagawagakuen-mae — building conditions attached",
-      "priceMan": 4900,
-      "priceFrom": false,
-      "landM2": 234.23,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Tamagawagakuen-mae",
-      "stationJa": "玉川学園前",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 5,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "40% / 80%",
-      "highlights": [
-        "Vacant land (更地), south road, city gas and mains sewer",
-        "Only 5 min walk to Tamagawagakuen-mae Station"
-      ],
-      "cautions": [
-        "Building conditions attached (建築条件付き) — builder is fixed to the seller's designated company",
-        "Listing also places the lot in a land-development regulation area (宅地造成工事規制区域) with height-maximum, minimum-lot-size and shadow/slope-line limits — confirm the buildable volume with the designated builder"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21471706/000585006/x1030Z21471706.html",
         "verified": "detail",
         "infoDate": "2026-10-23"
       }
@@ -677,7 +579,7 @@ window.TADAIMA_DATA = {
       "district": "Ogawa 3",
       "districtJa": "小川3丁目",
       "title": "Vacant 135m² lot on a 9m road, 15 min from Naruse",
-      "priceMan": 4290,
+      "priceMan": 4240,
       "priceFrom": false,
       "landM2": 135.23,
       "buildingM2": null,
@@ -704,46 +606,10 @@ window.TADAIMA_DATA = {
         "name": "OCN不動産 (goo feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/4/13209/8920152962/892/x48920152962.html",
         "verified": "detail",
-        "infoDate": "2026-10-24"
+        "infoDate": "2026-11-09"
       },
-      "majorCautions": 1
-    },
-    {
-      "id": "l07",
-      "type": "land",
-      "district": "Ogawa 2",
-      "districtJa": "小川2丁目",
-      "title": "Compact 75m² plot 9 min from Naruse on a 10m road — building on site",
-      "priceMan": 2680,
-      "priceFrom": false,
-      "landM2": 75.76,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Naruse",
-      "stationJa": "成瀬",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 9,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種中高層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "Regular-shaped plot with 6.6m frontage onto a ~10m NE public road, no level difference to the road",
-        "Cheapest Naruse-walk lot in this set by total price",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Small 75.76m² plot (registry / 公簿 area)",
-        "A building stands on the land (上物有り) — demolition cost on the buyer unless the listing says otherwise",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "OCN不動産 (goo feed)",
-        "url": "https://house.ocn.ne.jp/sp/tochi/area_tokyo/13209/004.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+      "majorCautions": 1,
+      "priceDropMan": 50
     },
     {
       "id": "l09",

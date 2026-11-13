@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Utsunomiya",
     "editionJa": "宇都宮",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Utsunomiya City, Tochigi",
     "areaJa": "栃木県宇都宮市"
   },
@@ -105,42 +105,6 @@
       "majorCautions": 1
     },
     {
-      "id": "h04",
-      "type": "house-used",
-      "district": "Yoto 6",
-      "districtJa": "陽東6丁目",
-      "title": "Used 4SLDK (2004) — all-electric 2x4, roof and walls repainted in 2025, 6 min to the LRT",
-      "priceMan": 3480,
-      "priceFrom": false,
-      "landM2": 157.68,
-      "buildingM2": 105.36,
-      "layout": "4SLDK",
-      "station": "Utsunomiya University Yoto Campus",
-      "stationJa": "宇都宮大学陽東キャンパス",
-      "line": "Haga-Utsunomiya LRT (Lightline)",
-      "lineJa": "芳賀・宇都宮LRT（ライトライン）",
-      "walkMin": 6,
-      "built": "Oct 2004",
-      "ageYears": 22,
-      "highlights": [
-        "All-electric 2x4 house with a vaulted living room and electric floor heating",
-        "Roof and exterior walls repainted in February 2025; toilet replaced in 2022",
-        "Vacant and viewable any time, cleaned before handover",
-        "Part of the 347-lot Yoto Sakuragaoka subdivision by the university"
-      ],
-      "cautions": [
-        "Zoning is industrial (工業地域) despite the residential subdivision — factories/warehouses are permitted neighbours; check the immediate surroundings",
-        "District-plan exterior guidelines apply in Yoto Sakuragaoka",
-        "Verified on the listing page (information date 2026-10-23)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z21983086/004602031/x1030Z21983086.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h05",
       "type": "house-used",
       "district": "Naka-Okamoto-cho",
@@ -216,7 +180,7 @@
       "district": "Fudomae 3",
       "districtJa": "不動前3丁目",
       "title": "Used 4LDK (1980) — comprehensively reformed, 8 min from Minami-Utsunomiya",
-      "priceMan": 2249,
+      "priceMan": 2229,
       "priceFrom": false,
       "landM2": 200.0,
       "buildingM2": 115.85,
@@ -242,10 +206,10 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/09201/030Z21937380/055361013/x1030Z21937380.html",
         "verified": "detail",
-        "infoDate": "2026-11-02"
+        "infoDate": "2026-11-09"
       },
       "majorCautions": 1,
-      "priceDropMan": 30
+      "priceDropMan": 20
     },
     {
       "id": "h08",
@@ -452,8 +416,7 @@
         "url": "https://house.goo.ne.jp/buy/bh/special/6006/area_tochigi/09201.html?p=5",
         "verified": "index",
         "infoDate": "2026-11-02"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h15",
@@ -485,8 +448,7 @@
         "url": "https://www.homes.co.jp/kodate/shinchiku/tochigi/utsunomiya-city/0496ED9429-town/list/",
         "verified": "index",
         "infoDate": "2026-11-02"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "l02",
@@ -694,7 +656,7 @@
       "district": "Nakagawara-cho",
       "districtJa": "中河原町",
       "title": "Two-station plot, Tobu-Utsunomiya 12 minutes, setback already done",
-      "priceMan": 1248,
+      "priceMan": 1190,
       "priceFrom": false,
       "landM2": 125.08,
       "buildingM2": null,
@@ -724,8 +686,9 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/09201/030Z21831284/185230002/x1030Z21831284.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "priceDropMan": 58
     },
     {
       "id": "l09",

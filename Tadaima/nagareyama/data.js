@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Nagareyama",
     "editionJa": "流山",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Nagareyama City, Chiba",
     "areaJa": "千葉県流山市"
   },
@@ -32,7 +32,7 @@ window.TADAIMA_DATA = {
       "district": "Ka 5",
       "districtJa": "加5丁目",
       "title": "New 3LDK in the old town — cheapest new build in this collection",
-      "priceMan": 3290,
+      "priceMan": 3090,
       "priceFrom": false,
       "landM2": 80.62,
       "buildingM2": 86.94,
@@ -55,8 +55,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/Z/21403260.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-07"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h02",
@@ -164,7 +165,7 @@ window.TADAIMA_DATA = {
       "district": "Nishihirai",
       "districtJa": "西平井",
       "title": "New 3SLDK development (2 units) 5 min from Heiwadai — station, shops and school within 8 min",
-      "priceMan": 3990,
+      "priceMan": 3890,
       "priceFrom": true,
       "landM2": 75.19,
       "buildingM2": 100.18,
@@ -189,8 +190,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/W/21026417.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "priceDropMan": 100
     },
     {
       "id": "h07",
@@ -266,7 +268,7 @@ window.TADAIMA_DATA = {
       "district": "Ka 1",
       "districtJa": "加1丁目",
       "title": "Used 4LDK (1999), renovated Aug 2026 — 4 min from Nagareyama Station",
-      "priceMan": 2699,
+      "priceMan": 2648,
       "priceFrom": false,
       "landM2": 116.7,
       "buildingM2": 88.59,
@@ -291,8 +293,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z21872997/173595002/x1030Z21872997.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-08"
+      },
+      "priceDropMan": 51
     },
     {
       "id": "h10",
@@ -523,6 +526,111 @@ window.TADAIMA_DATA = {
         "url": "https://www.homes.co.jp/kodate/b-1074240103996/",
         "verified": "detail",
         "infoDate": "2026-10-31"
+      }
+    },
+    {
+      "id": "h19",
+      "type": "house-used",
+      "district": "Higashi-Hatsuishi 2",
+      "districtJa": "東初石2丁目",
+      "title": "Higashi-Hatsuishi 2 — near-new 2024 3LDK, 5 min to Hatsuishi",
+      "priceMan": 4280,
+      "priceFrom": false,
+      "landM2": 81.43,
+      "buildingM2": 84.87,
+      "layout": "3LDK",
+      "station": "Hatsuishi",
+      "stationJa": "初石",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 5,
+      "built": "May 2024",
+      "ageYears": 2,
+      "highlights": [
+        "Near-new 2024 build, only 5 min to Hatsuishi station",
+        "15-tatami LDK with counter kitchen, all rooms have storage",
+        "Dishwasher, bathroom dryer, water purifier fitted"
+      ],
+      "cautions": [
+        "Small plot (81.43m²) — garden space is limited",
+        "Parking space has vehicle-size restrictions"
+      ],
+      "source": {
+        "name": "goo不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z22119522/006050E93/x1030Z22119522.html",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h20",
+      "type": "house-used",
+      "district": "Edogawadai-Nishi 3",
+      "districtJa": "江戸川台西3丁目",
+      "title": "Edogawadai-Nishi 3 — 2016 Polus 2LDK, 11 min to Edogawadai",
+      "priceMan": 3780,
+      "priceFrom": false,
+      "landM2": 137.26,
+      "buildingM2": 95.22,
+      "layout": "2LDK",
+      "station": "Edogawadai",
+      "stationJa": "江戸川台",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 11,
+      "built": "Jul 2016",
+      "ageYears": 10,
+      "highlights": [
+        "2016 Polus-built house in a quiet former Polus development",
+        "Generous 137.26m² plot with parking for 2 cars",
+        "2nd-floor living room for light and privacy; floor heating, walk-in closet and pantry"
+      ],
+      "cautions": [
+        "2LDK as built — a third bedroom needs a paid partition-wall conversion",
+        "West-facing main light; 2nd-floor living room layout may not suit everyone",
+        "Currently occupied — viewing by appointment"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-37091120004534/",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h21",
+      "type": "house-used",
+      "district": "Nishi-Hatsuishi 1",
+      "districtJa": "西初石1丁目",
+      "title": "Nishi-Hatsuishi 1 — renovated 2006 4LDK, 10 min to Edogawadai",
+      "priceMan": 4188,
+      "priceFrom": false,
+      "landM2": 132.02,
+      "buildingM2": 96.87,
+      "layout": "4LDK",
+      "station": "Edogawadai",
+      "stationJa": "江戸川台",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 10,
+      "built": "Jan 2006",
+      "ageYears": 20,
+      "highlights": [
+        "Full interior/exterior renovation completed July 2026 — new kitchen, bath, washroom and toilets",
+        "All rooms 6 tatami or larger with two-sided light; 3-way corner plot",
+        "Two stations usable: Edogawadai 10 min, Hatsuishi 13 min"
+      ],
+      "cautions": [
+        "20 years old — value rests on the 2026 full renovation",
+        "Hatsuishi is 13 min, so Edogawadai (10 min) is the practical station"
+      ],
+      "source": {
+        "name": "goo不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/special/3008/ensen/269/2269130.html",
+        "verified": "index",
+        "infoDate": "2026-11-09"
       },
       "isNew": true
     },
@@ -559,43 +667,6 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/37091120004475/3709112/x437091120004475.html",
         "verified": "detail",
         "infoDate": "2026-07-03"
-      }
-    },
-    {
-      "id": "l02",
-      "type": "land",
-      "district": "Heiwadai 2",
-      "districtJa": "平和台2丁目",
-      "title": "Vacant plot between two stations — 5 min to Nagareyama, 14 min to the TX",
-      "priceMan": 4050,
-      "priceFrom": false,
-      "landM2": 90.74,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Nagareyama",
-      "stationJa": "流山",
-      "line": "Ryutetsu Nagareyama Line",
-      "lineJa": "流鉄流山線",
-      "walkMin": 5,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Vacant land handed over vacant (更地渡し), fronting two public roads (south about 6m / north about 5m)",
-        "Two stations usable: Nagareyama (Ryutetsu) 5 min and Nagareyama-centralpark (Tsukuba Express) 14 min",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Small 90.74m² plot and a high ¥/tsubo for this collection — the price buys station proximity, not space",
-        "The 5-minute station is the local Ryutetsu Nagareyama Line (a short local line to Mabashi); the rapid-service Tsukuba Express station is 14 minutes on foot",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21964838/006050529/x1030Z21964838.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
       }
     },
     {
@@ -680,7 +751,7 @@ window.TADAIMA_DATA = {
       "district": "Ka 2",
       "districtJa": "加2丁目",
       "title": "51-tsubo plot in the old readjustment district by Centralpark — building condition",
-      "priceMan": 4780,
+      "priceMan": 4480,
       "priceFrom": false,
       "landM2": 170.81,
       "buildingM2": null,
@@ -708,8 +779,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21892339/006110114/x1030Z21892339.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-08"
+      },
+      "priceDropMan": 300
     },
     {
       "id": "l12",
@@ -748,6 +820,45 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-10-25"
       }
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Mihara 4",
+      "districtJa": "美原4丁目",
+      "title": "Mihara 4 — no-condition 135.91m² plot, 10 min to Edogawadai",
+      "priceMan": 3400,
+      "priceFrom": false,
+      "landM2": 135.91,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Edogawadai",
+      "stationJa": "江戸川台",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 10,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "No building condition — build with any maker",
+        "Vacant 135.91m² plot, 10 min to Edogawadai, east-facing 5m road",
+        "Supermarket, convenience store and park all within walking distance",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Land registry category is still farmland (畑) — confirm conversion status before contracting",
+        "Part of a 9-plot new town with contract restrictions (wooden, max 3 floors, no basement, 10m height limit)",
+        "1st low-rise zone: 50% coverage / 100% FAR caps the buildable size"
+      ],
+      "source": {
+        "name": "goo不動産",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/1478760009564/147876/x41478760009564.html",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

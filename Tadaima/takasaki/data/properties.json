@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Takasaki",
     "editionJa": "高崎",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Takasaki City, Gunma",
     "areaJa": "群馬県高崎市"
   },
@@ -31,40 +31,6 @@
     "note": "Land benchmarks: residential ¥/tsubo by station, adjusted from MLIT transactions via Utinokati and 2026 official points: Takasaki ~27 (NOT the 36.2 single-year print and NOT the ~48.7 all-use official average, which is station-front commercial), Minami-Takasaki ~26 (official-points proxy), Takasaki-Tonyamachi ~20, Kita-Takasaki ~18, Kuragano ~16 in-zone, Ino ~15, Shinmachi ~12, Gumma-Yawata ~10 (proxy), Nekoya ~9, the Yamana pair ~9 (proxy), Yoshii ~7 in-zone, Nishi-Yoshii ~6 (proxy), Maniwa ~5. Urbanisation-control land is scored only against control-zone comparables, with its zoning and rebuild status printed on the card — never against these in-zone figures. Walk bands are nearly flat (~−4% by a 10-minute walk on the regression): Takasaki is a car market where the average transacted lot is a 26–34-minute walk, and walk distance is weighted gently on this page for that reason. Used houses transacted at about ¥68万/tsubo city-wide (floor-area basis), flat for five years: the Takasaki station area ~85, Takasaki-Tonyamachi ~78, Ino ~70 (smoothed — not the young-mix 78 print), the central-south ~70, Yoshii ~60, and the western/southern fringe 42–51; 35+-year and pre-1981 stock prices at land value. Sakae-cho's 111 is a 15-case station-front estimate, not a house benchmark. Official residential land prices rose +0.5% in the 2026 公示地価 survey (commercial +1.3%), with centre points up 3–4% and the fringe down 1–2% — a bifurcating market, concentrating on the centre."
   },
   "properties": [
-    {
-      "id": "h01",
-      "type": "house-new",
-      "district": "Yoshii-cho Nagane",
-      "districtJa": "吉井町長根",
-      "title": "New 4LDK long-term quality house — 3 min from Nishi-Yoshii, all rooms south-facing",
-      "priceMan": 2190,
-      "priceFrom": false,
-      "landM2": 186.22,
-      "buildingM2": 107.44,
-      "layout": "4LDK",
-      "station": "Nishi-Yoshii",
-      "stationJa": "西吉井",
-      "line": "Joshin Dentetsu",
-      "lineJa": "上信電鉄",
-      "walkMin": 3,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Long-term quality housing (長期優良住宅) with design + construction performance evaluations",
-        "All rooms face south; parking for 3, flat walk to the station, completed Jun 2026 and ready to move in"
-      ],
-      "cautions": [
-        "Individual propane gas (no city gas) per the listing",
-        "Yoshii is a car-oriented area — the Joshin line is infrequent compared with JR Takasaki",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/10202/030/W/21100355.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
     {
       "id": "h02",
       "type": "house-new",
@@ -506,7 +472,7 @@
       "district": "Ino-cho",
       "districtJa": "井野町",
       "title": "Used 6SLDK (1988) — a bookshop converted into a 146m² home",
-      "priceMan": 3080,
+      "priceMan": 2990,
       "priceFrom": false,
       "landM2": 190.35,
       "buildingM2": 146.56,
@@ -531,9 +497,10 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/10202/030Z21943497/177142002/x1030Z21943497.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-09"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 90
     },
     {
       "id": "l01",

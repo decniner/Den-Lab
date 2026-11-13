@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Tokorozawa",
     "editionJa": "所沢",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Tokorozawa City, Saitama",
     "areaJa": "埼玉県所沢市"
   },
@@ -483,8 +483,7 @@
         "verified": "detail",
         "infoDate": "2026-11-01"
       },
-      "majorCautions": 2,
-      "priceDropMan": 100
+      "majorCautions": 2
     },
     {
       "id": "l01",

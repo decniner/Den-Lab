@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Kashiwa",
     "editionJa": "柏",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-09",
     "area": "Kashiwa City, Chiba",
     "areaJa": "千葉県柏市"
   },
@@ -61,8 +61,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/bh/detail/4/12217/1448780015182/144878/x41448780015182.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 200
+      }
     },
     {
       "id": "h02",
@@ -131,42 +130,6 @@ window.TADAIMA_DATA = {
         "verified": "index",
         "infoDate": "2026-10-22"
       }
-    },
-    {
-      "id": "h04",
-      "type": "house-new",
-      "district": "Sakasai 4",
-      "districtJa": "逆井4丁目",
-      "title": "New 4LDK — design + construction performance certified, Sakasai 7 min",
-      "priceMan": 3199,
-      "priceFrom": false,
-      "landM2": 97.66,
-      "buildingM2": 96.88,
-      "layout": "4LDK",
-      "station": "Sakasai",
-      "stationJa": "逆井",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 7,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Design and construction housing-performance evaluations attached",
-        "Ready to move in per listing",
-        "City gas, parking space"
-      ],
-      "cautions": [
-        "Two-house development; figures are for the listed house type",
-        "Detail page shows the plot includes 28.03m2 of private road and access is via a south 4m private road — confirm the private-road share/burden and passage rights",
-        "Listing remarks cite the Landscape Act (景観法) and the Residential Land Development / Specified Fill Regulation Act (宅地造成及び特定盛土等規制法, consent obtained) among the applicable restrictions"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/4/12217/1226010045482/122601/x41226010045482.html",
-        "verified": "detail",
-        "infoDate": "2026-11-02"
-      },
-      "priceDropMan": 200
     },
     {
       "id": "h05",
@@ -341,40 +304,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h11",
-      "type": "house-used",
-      "district": "Hananoi",
-      "districtJa": "花野井",
-      "title": "Used 4LDK (2008) — 3-side-light LDK, exterior and roof-cover work done, Kashiwanoha-Campus 14 min",
-      "priceMan": 4200,
-      "priceFrom": false,
-      "landM2": 113.47,
-      "buildingM2": 99.5,
-      "layout": "4LDK",
-      "station": "Kashiwanoha-Campus",
-      "stationJa": "柏の葉キャンパス",
-      "line": "Tsukuba Express",
-      "lineJa": "つくばエクスプレス",
-      "walkMin": 14,
-      "built": "Nov 2008",
-      "ageYears": 17,
-      "highlights": [
-        "LDK lit from 3 sides, face-to-face kitchen, Japanese-style room usable as guest room",
-        "Water heater replaced and exterior/roof work recorded in reform history",
-        "Immediate handover possible per listing; supermarket 8 min, elementary school 7 min"
-      ],
-      "cautions": [
-        "Reform dates conflict between the listing text (Dec 2023) and the reform-history field (Dec 2025) — verify which work was done when",
-        "17-18 years old; no seismic or defect-insurance information on the detail page"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z20714889/006050592/x1030Z20714889.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "h12",
       "type": "house-used",
       "district": "Eirakudai 2",
@@ -444,144 +373,75 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h14",
-      "type": "house-used",
-      "district": "Fujishin 1",
-      "districtJa": "藤心1丁目",
-      "title": "Used 4LDK (2006) — renovated Mar 2026, south-west corner plot, Sakasai 12 min",
-      "priceMan": 2990,
+      "id": "h18",
+      "type": "house-new",
+      "district": "Fujishin 2",
+      "districtJa": "藤心2丁目",
+      "title": "New 4LDK (Open Place) — 21-tatami LDK, 8 min to Sakasai, parking for 2",
+      "priceMan": 3999,
       "priceFrom": false,
-      "landM2": 121.24,
-      "buildingM2": 100.6,
+      "landM2": 140.64,
+      "buildingM2": 107.64,
       "layout": "4LDK",
       "station": "Sakasai",
       "stationJa": "逆井",
       "line": "Tobu Urban Park Line",
       "lineJa": "東武野田線",
-      "walkMin": 12,
-      "built": "Mar 2006",
-      "ageYears": 20,
+      "walkMin": 8,
+      "built": "New build",
+      "ageYears": 0,
       "highlights": [
-        "Interior reform completed Mar 2026 per listing",
-        "South-west corner plot with good light; 15.5-tatami LDK with floor heating",
-        "Large walk-in closet plus about 2.7 tsubo of attic storage"
+        "21-tatami LDK with counter kitchen, walk-in closet and pantry",
+        "South-west road frontage; parking for 2",
+        "City gas; dishwasher, water purifier and bathroom dryer fitted"
       ],
       "cautions": [
-        "20 years old — post-1981 seismic standard, but structural inspection status unverified",
-        "Parking is 1 car and size-dependent per listing",
-        "Detail page states the MLIT-designated defect insurance (瑕疵保険) can be used and a broker defect warranty applies — but a completed structural inspection is still not stated, so the inspection caution stands",
-        "Detail page rates the house's energy performance below the standard (省エネ基準未達成)"
+        "Not yet built — completion scheduled Apr 2027, handover May 2027",
+        "Registered land category is forest (山林) although the current category is residential land",
+        "Landscape Act and fill-regulation controls listed on the detail page"
       ],
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21741387/168029009/x1030Z21741387.html",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12217/030/W/22128450.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
     },
     {
-      "id": "h15",
-      "type": "house-used",
-      "district": "Masuodai 3",
-      "districtJa": "増尾台3丁目",
-      "title": "Used 4LDK (2016) — reform finished Aug 2026, parking for 2, Sakasai 11 min",
-      "priceMan": 2980,
+      "id": "h19",
+      "type": "house-new",
+      "district": "Masuo 7",
+      "districtJa": "増尾7丁目",
+      "title": "New 4LDK — big 116m² interior, 8 min to Masuo, performance-evaluated",
+      "priceMan": 3690,
       "priceFrom": false,
-      "landM2": 108,
-      "buildingM2": 97.1,
+      "landM2": 128.56,
+      "buildingM2": 116.03,
       "layout": "4LDK",
-      "station": "Sakasai",
-      "stationJa": "逆井",
+      "station": "Masuo",
+      "stationJa": "増尾",
       "line": "Tobu Urban Park Line",
       "lineJa": "東武野田線",
-      "walkMin": 11,
-      "built": "Dec 2016",
-      "ageYears": 9,
+      "walkMin": 8,
+      "built": "New build",
+      "ageYears": 0,
       "highlights": [
-        "Under 10 years old at under ¥3,000万",
-        "Reform completed Aug 2026 per listing",
-        "Counter kitchen with dishwasher, WIC and pantry, 2 toilets"
+        "Largest new-build floor area in this batch at 116.03m²",
+        "Design + construction performance evaluations attached; move-in ready",
+        "Two Tobu stations usable — Masuo 8 min, Sakasai 9–11 min"
       ],
       "cautions": [
-        "Parking for 2 is size-dependent per listing",
-        "Detail page confirms a completion-inspection certificate (建築確認完了検査済証) exists and a broker's own defect warranty (不動産会社独自の瑕疵保証) is included — note this is the broker's scheme, not the MLIT-designated insurance; the Aug 2026 reform covered water fixtures (kitchen/bath/toilet) and interior walls/rooms only"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21321194/188279001/x1030Z21321194.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "h16",
-      "type": "house-used",
-      "district": "Shiinokidai 5",
-      "districtJa": "しいの木台5丁目",
-      "title": "Used 3LDK (2013) — big 171.9m2 plot, all-electric, Takayanagi 15 min",
-      "priceMan": 2799,
-      "priceFrom": false,
-      "landM2": 171.9,
-      "buildingM2": 105.16,
-      "layout": "3LDK",
-      "station": "Takayanagi",
-      "stationJa": "高柳",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 15,
-      "built": "Feb 2013",
-      "ageYears": 13,
-      "highlights": [
-        "171.9m2 land with a 105.16m2 building — most space per yen in this set",
-        "All-electric, south road, bathroom dryer",
-        "System kitchen, parking space"
-      ],
-      "cautions": [
-        "Right at the 15-minute walk limit — any route difference pushes it over",
-        "The Apr 2026 reform on the detail page was limited to the kitchen and wallpaper — not a full renovation; the rest of the 2013 interior is original"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21013888/168029009/x1030Z21013888.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h17",
-      "type": "house-used",
-      "district": "Toyojumi 4",
-      "districtJa": "豊住4丁目",
-      "title": "Used 4SLDK (1992) — Sumitomo Forestry build, reformed, 19-tatami LDK, Shin-Kashiwa 9 min",
-      "priceMan": 2980,
-      "priceFrom": false,
-      "landM2": 97.87,
-      "buildingM2": 96.46,
-      "layout": "4SLDK",
-      "station": "Shin-Kashiwa",
-      "stationJa": "新柏",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 9,
-      "built": "Jan 1992",
-      "ageYears": 34,
-      "highlights": [
-        "Sumitomo Forestry construction; elevated corner plot with good light and ventilation",
-        "19-tatami LDK, all rooms south-facing, 2nd-floor living",
-        "Full interior/exterior reform recorded in several feeds (kitchen, bath, toilets, flooring, roof/exterior paint)"
-      ],
-      "cautions": [
-        "Same house is listed by many brokers at ¥3,199万, ¥3,280万 and ¥3,480万 in different feeds, with walk times of 9 and 10 min — price and terms must be confirmed with one broker",
-        "34 years old (1992, post-1981 standard) — age-related wear beyond the reform scope is unverified",
-        "Two other live goo index feeds list this identical house at ¥2,980万 — ¥219万 below this detail page's ¥3,199万 — suggesting a recent price cut that has not reached every feed; confirm the current price before relying on either figure"
+        "One of a 3–6-unit development — confirm which unit and plot this price buys",
+        "Seen on a portal index page — verify details on the listing link"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12217/030Z21210491/168029009/x1030Z21210491.html",
-        "verified": "detail",
-        "infoDate": "2026-11-02"
+        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_chiba/12217.html",
+        "verified": "index",
+        "infoDate": "2026-11-09"
       },
-      "priceDropMan": 219
+      "isNew": true
     },
     {
       "id": "l01",
@@ -791,40 +651,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l07",
-      "type": "land",
-      "district": "Takayanagi",
-      "districtJa": "高柳",
-      "title": "197m² corner plot 8 minutes from Takayanagi — old house, LP gas currently connected",
-      "priceMan": 2480,
-      "priceFrom": false,
-      "landM2": 197.5,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Takayanagi",
-      "stationJa": "高柳",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 8,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Building standing on the land (上物有り, old house, sold as-is)",
-        "City gas not yet connected to the site — separate connection cost if used; currently concentrated LP gas"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21802948/006050592/x1030Z21802948.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "l08",
       "type": "land",
       "district": "Tsukushigaoka 2",
@@ -999,8 +825,83 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21836681/001616031/x1030Z21836681.html",
         "verified": "detail",
         "infoDate": "2026-11-02"
+      }
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Takayanagi",
+      "districtJa": "高柳",
+      "title": "174m² corner lot 9 minutes from Takayanagi — no builder tie-in, immediate handover",
+      "priceMan": 3180,
+      "priceFrom": false,
+      "landM2": 173.94,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Takayanagi",
+      "stationJa": "高柳",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武野田線",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "Vacant land (更地), south-east / north-east corner lot with a waterway on the north-west side",
+        "Primary and junior high schools within 10 min walk; shops near the station",
+        "No building condition (建築条件なし) — choose your own builder",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "North-west side fronts a waterway rather than a road — confirm boundaries and any setback",
+        "City gas is not listed among the connected utilities on the detail page"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21899538/025659000/x1030Z21899538.html",
+        "verified": "detail",
+        "infoDate": "2026-11-09"
       },
-      "priceDropMan": 200
+      "isNew": true
+    },
+    {
+      "id": "l14",
+      "type": "land",
+      "district": "Akehara 3",
+      "districtJa": "明原3丁目",
+      "title": "185m² vacant lot at the walk limit from Kashiwa — no builder tie-in",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 184.77,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kashiwa",
+      "stationJa": "柏",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 15,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種中高層住居専用地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "Vacant land (更地), east-road frontage, immediate handover",
+        "Supermarket 7 min and convenience store 5 min walk; primary school 10 min",
+        "No building condition (建築条件なし) — choose your own builder",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "At the 15-minute walk limit of this collection",
+        "Seen on a portal index page — verify details on the listing link"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/la/special/4002/area_chiba/12217.html",
+        "verified": "index",
+        "infoDate": "2026-11-09"
+      },
+      "isNew": true
     }
   ],
   "scoring": {
