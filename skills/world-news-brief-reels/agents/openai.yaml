@@ -1,0 +1,4 @@
+interface:
+  display_name: "World News Brief Reels"
+  short_description: "Create fact-checked, premium narrated news Reels"
+  default_prompt: "Use $world-news-brief-reels to produce a polished, sourced news Reel from this story."
