@@ -142,7 +142,7 @@
     "ecoflow:14631174177135:51670338208111": {
       "sale_price": "8300",
       "reference_price": "16910",
-      "sent_at": "2026-11-05T10:58:05+09:00",
+      "sent_at": "2026-11-13T11:19:21+09:00",
       "url": "https://jp.ecoflow.com/products/ecoflow-rapid-magnetic-power-bank-5000mah-rapid-65w-gan?variant=51670338208111"
     },
     "ecoflow:15062073803119:53384583217519": {
@@ -886,13 +886,13 @@
     "boardriders-co-jp:10631289241881:52412831269145": {
       "sale_price": "32450",
       "reference_price": "64900",
-      "sent_at": "2026-11-06T10:58:24+09:00",
+      "sent_at": "2026-11-13T11:19:21+09:00",
       "url": "https://boardriders.co.jp/products/h0452506?variant=52412831269145"
     },
     "shop-stridelab-jp:7512136450214:50937355108645": {
       "sale_price": "32450",
       "reference_price": "64900",
-      "sent_at": "2026-11-06T10:58:24+09:00",
+      "sent_at": "2026-11-13T11:19:21+09:00",
       "url": "https://shop.stridelab.jp/products/tetonbros-climatic-bib-pant?variant=50937355108645"
     },
     "shop-stridelab-jp:7512083890342:43389090398374": {
@@ -972,12 +972,18 @@
       "reference_price": "12650",
       "sent_at": "2026-11-12T11:39:58+09:00",
       "url": "https://championstore.jp/products/s22118?variant=46325312684171"
+    },
+    "boardriders-co-jp:10631285145881:52412801679641": {
+      "sale_price": "88000",
+      "reference_price": "176000",
+      "sent_at": "2026-11-13T11:19:21+09:00",
+      "url": "https://boardriders.co.jp/products/g0452500?variant=52412801679641"
     }
   },
   "last_digest": {
-    "date": "2026-11-12",
-    "coverage_key": "641d54b67ceb79f61ec4f7bb42dfed350cc70772097ee2fa6354ae2562ce14b7",
-    "completed_at": "2026-11-12T11:40:00+09:00",
-    "digest_hash": "4d57dd15bc0a441cf0057c830231690e81aa29a8b1068b556a400c735ba6fbef"
+    "date": "2026-11-13",
+    "coverage_key": "14fe847372e2d31fd99aa0f488723fc485de8f03d0cc92a36db382d7e54b1cda",
+    "completed_at": "2026-11-13T11:19:21+09:00",
+    "digest_hash": "bd890853171fde316bd1b631c1b39193126f355f810a0f59f40c57a2417f4d31"
   }
 }
