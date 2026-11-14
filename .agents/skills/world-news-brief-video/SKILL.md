@@ -23,7 +23,7 @@ Use this skill to build unpublished, premium 9:16 news Reels for World News Brie
 
 1. Confirm the current story with primary sources where available and reliable reporting. Record the publisher, date, exact source URL, and the date checked. Use time-sensitive language appropriate to when the Reel will be viewed.
 2. Draft an original script with a short hook, a simple explanation, attributed evidence, stakes, and a concise ending. Use plain language without making unsupported claims more frightening than the source supports.
-3. For any speculative cost or tax illustration, state the assumptions in the narration and on screen. Show the calculation and source in the notes. Label it as a hypothetical, not a forecast or government plan. Do not turn a national total into an actual household bill without a sourced funding formula.
+3. For any speculative cost or tax illustration, state the numerical assumptions with the figure and show the calculation and source in the notes. Use conditional language (“if ...”) at the point of the calculation; put the concise “hypothetical, not a forecast or plan” clarification in the closing. Do not turn a national total into an actual household bill without a sourced funding formula.
 4. Plan the visual timeline against the recorded narration. Put important footage on the spoken phrase it illustrates, including named places and people. Avoid unrelated visuals during pauses.
 
 ## Windows production
