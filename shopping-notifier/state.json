@@ -182,9 +182,9 @@
       "url": "https://phenixstore.com/products/poz-23007w?variant=45140304003376"
     },
     "phenixstore-com:9578701586736:49016136302896": {
-      "sale_price": "6300",
+      "sale_price": "8400",
       "reference_price": "21000",
-      "sent_at": "2026-11-03T12:13:04+09:00",
+      "sent_at": "2026-11-14T10:58:10+09:00",
       "url": "https://phenixstore.com/products/poo-24052?variant=49016136302896"
     },
     "phenixstore-com:9616661709104:49132467192112": {
@@ -328,25 +328,25 @@
     "cotopaxijapan:9242292977852:45979372814524": {
       "sale_price": "31350",
       "reference_price": "62700",
-      "sent_at": "2026-11-05T10:58:05+09:00",
+      "sent_at": "2026-11-14T10:58:10+09:00",
       "url": "https://cotopaxi.jp/products/fuego-max-down-hooded-jacket-womens-sale26ss?variant=45979372814524"
     },
     "cotopaxijapan:9246629396668:45992717156540": {
       "sale_price": "31350",
       "reference_price": "62700",
-      "sent_at": "2026-11-05T10:58:05+09:00",
+      "sent_at": "2026-11-14T10:58:10+09:00",
       "url": "https://cotopaxi.jp/products/fuego-max-down-hooded-jacket-mens-sale26ss?variant=45992717156540"
     },
     "cotopaxijapan:9246627037372:45992675115196": {
       "sale_price": "23100",
       "reference_price": "46200",
-      "sent_at": "2026-11-06T10:58:25+09:00",
+      "sent_at": "2026-11-14T10:58:10+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-jacket-men-sale26ss?variant=45992675115196"
     },
     "cotopaxijapan:9246627201212:45992677146812": {
       "sale_price": "23100",
       "reference_price": "46200",
-      "sent_at": "2026-11-06T10:58:25+09:00",
+      "sent_at": "2026-11-14T10:58:10+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-jacket-womens-sale26ss?variant=45992677146812"
     },
     "merrell-jp:7268630593579:41168550395947": {
@@ -981,9 +981,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-11-13",
-    "coverage_key": "14fe847372e2d31fd99aa0f488723fc485de8f03d0cc92a36db382d7e54b1cda",
-    "completed_at": "2026-11-13T11:19:21+09:00",
-    "digest_hash": "bd890853171fde316bd1b631c1b39193126f355f810a0f59f40c57a2417f4d31"
+    "date": "2026-11-14",
+    "coverage_key": "4810b33a2e519049fa7150be80fc07ca6d4fedda3abbd0403af9537a6a6c78f4",
+    "completed_at": "2026-11-14T10:58:10+09:00",
+    "digest_hash": "31e6e88231e386d4601df68ce2d4ed2f8b81f58ebe7718b603c04be3bc5a071d"
   }
 }
