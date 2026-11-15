@@ -352,7 +352,7 @@
     "merrell-jp:7268630593579:41168550395947": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-11-07T10:29:42+09:00",
+      "sent_at": "2026-11-15T10:29:41+09:00",
       "url": "https://merrell.jp/products/womens_mtl-thermo-rogue-4-mid-gore-tex?variant=41168550395947"
     },
     "cotopaxijapan:9242280624316:45979357053116": {
@@ -388,7 +388,7 @@
     "cotopaxijapan:9246627758268:45992685994172": {
       "sale_price": "15950",
       "reference_price": "31900",
-      "sent_at": "2026-11-04T10:50:05+09:00",
+      "sent_at": "2026-11-15T10:29:41+09:00",
       "url": "https://cotopaxi.jp/products/trico-hybrid-hooded-jacket-womens-sale26ss?variant=45992685994172"
     },
     "cotopaxijapan:9246629068988:45992711749820": {
@@ -670,7 +670,7 @@
     "boardriders-co-jp:10631289307417:52412832448793": {
       "sale_price": "21450",
       "reference_price": "42900",
-      "sent_at": "2026-11-08T10:02:29+09:00",
+      "sent_at": "2026-11-15T10:29:41+09:00",
       "url": "https://boardriders.co.jp/products/h1352508?variant=52412832448793"
     },
     "boardriders-co-jp:10631286587673:52412811247897": {
@@ -694,7 +694,7 @@
     "boardriders-co-jp:10631285047577:52412800925977": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-11-07T10:29:42+09:00",
+      "sent_at": "2026-11-15T10:29:41+09:00",
       "url": "https://boardriders.co.jp/products/erjtp03268?variant=52412800925977"
     },
     "boardriders-co-jp:10631287701785:52412819702041": {
@@ -981,9 +981,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-11-14",
-    "coverage_key": "4810b33a2e519049fa7150be80fc07ca6d4fedda3abbd0403af9537a6a6c78f4",
-    "completed_at": "2026-11-14T10:58:10+09:00",
-    "digest_hash": "31e6e88231e386d4601df68ce2d4ed2f8b81f58ebe7718b603c04be3bc5a071d"
+    "date": "2026-11-15",
+    "coverage_key": "a535fda39dd381914cb8a4f2f7e87c6242151580f2c5b55ff0fed8989f5b45db",
+    "completed_at": "2026-11-15T10:29:41+09:00",
+    "digest_hash": "8bea23dbbd8b448ebfc1a0397425a7fe5784d0298b88ef7a071206ecef7c3a2b"
   }
 }
