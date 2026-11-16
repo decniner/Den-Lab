@@ -1,0 +1,10 @@
+{
+  "series_title": "PAPER ATLAS  /  MAGELLAN & ELCANO",
+  "years": "1519\u20131522",
+  "output_basename": "magellan-elcano-paper-voyage",
+  "voice": "am_adam",
+  "speed": 0.94,
+  "model_id": "hexgrad/Kokoro-82M",
+  "language": "a",
+  "animation": "noticeable"
+}

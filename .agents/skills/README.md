@@ -19,3 +19,4 @@ Skills included:
 - `youtube-upload`
 - `japan-city-brochure`
 - `create-low-poly-philosophy-films`
+- `paper-diorama-explainer` (global Codex skill; free local paper animation and Kokoro Adam)

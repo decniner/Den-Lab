@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "kind": "opening",
+    "title": "One voyage. Two leaders.",
+    "kicker": "1519–1522",
+    "narration": "Magellan began the expedition that first sailed around the world. But he did not finish it. That distinction belongs to Juan Sebastián Elcano and the surviving crew of the Victoria."
+  },
+  {
+    "id": 2,
+    "kind": "motive",
+    "title": "A western route to spices",
+    "kicker": "THE ORIGINAL GOAL",
+    "narration": "The expedition began as a search for a western sea route to the Spice Islands, in present-day Indonesia. Cloves promised wealth. Spain wanted access to an Asian trade already dominated by Portugal."
+  },
+  {
+    "id": 3,
+    "kind": "port",
+    "title": "Five ships leave Spain",
+    "kicker": "20 SEPTEMBER 1519",
+    "narration": "Portuguese-born Ferdinand Magellan sailed under Spanish sponsorship. On September twentieth, fifteen nineteen, five ships left Sanlúcar de Barrameda, carrying more than two hundred people from several nations."
+  },
+  {
+    "id": 4,
+    "kind": "atlantic",
+    "title": "Across the Atlantic",
+    "kicker": "1519 · SPAIN → BRAZIL",
+    "narration": "The fleet crossed the Atlantic and reached the coast of Brazil in December. Its destination lay farther west, but South America blocked the way. Magellan had to find a passage through or around it."
+  },
+  {
+    "id": 5,
+    "kind": "winter",
+    "title": "A difficult winter",
+    "kicker": "1520 · SAN JULIÁN",
+    "narration": "The ships worked south along the coast. At San Julián, the expedition wintered in the cold of Patagonia. A mutiny challenged Magellan’s authority. He crushed it, but distrust and dwindling supplies remained."
+  },
+  {
+    "id": 6,
+    "kind": "loss",
+    "title": "The fleet begins to shrink",
+    "kicker": "1520 · SANTIAGO LOST",
+    "narration": "The Santiago was wrecked while scouting. Four ships continued south. Their search was not an effortless march across an empty map: every inlet cost time, provisions, and lives at risk."
+  },
+  {
+    "id": 7,
+    "kind": "strait",
+    "title": "The passage between oceans",
+    "kicker": "OCTOBER–NOVEMBER 1520",
+    "narration": "In October, the fleet entered the winding channel now called the Strait of Magellan. It threaded between mainland South America and Tierra del Fuego. During the passage, the San Antonio deserted and returned to Spain."
+  },
+  {
+    "id": 8,
+    "kind": "pacific",
+    "title": "Three ships reach the Pacific",
+    "kicker": "28 NOVEMBER 1520",
+    "narration": "Three ships emerged into the Pacific in late November. Magellan named the ocean for its apparently peaceful waters. Calm seas, however, did not mean a short crossing. The great obstacle was distance."
+  },
+  {
+    "id": 9,
+    "kind": "crossing",
+    "title": "A much wider ocean",
+    "kicker": "1520–1521 · ACROSS THE PACIFIC",
+    "narration": "For more than three months, the expedition crossed an ocean far wider than expected. Food deteriorated. Hunger and scurvy devastated the crews. The route on our map is simplified; the suffering behind it was real."
+  },
+  {
+    "id": 10,
+    "kind": "islands",
+    "title": "Guam, then the Philippines",
+    "kicker": "MARCH 1521",
+    "narration": "They reached Guam in March, then the Philippines later that month. These were inhabited places with rulers, alliances, and trading networks of their own. The newcomers were entering existing societies, not discovering an empty world."
+  },
+  {
+    "id": 11,
+    "kind": "mactan",
+    "title": "Magellan’s voyage ends",
+    "kicker": "27 APRIL 1521 · MACTAN",
+    "narration": "Magellan became involved in local politics and attempted to impose his authority. On April twenty-seventh, fifteen twenty-one, he was killed at Mactan, fighting forces led by Lapulapu. He never circumnavigated the globe."
+  },
+  {
+    "id": 12,
+    "kind": "handover",
+    "title": "The expedition continues",
+    "kicker": "1521 · TWO SHIPS REMAIN",
+    "narration": "After further losses, the survivors burned the Concepción because they could not crew all three ships. Command changed more than once. By September, Elcano was captain of the Victoria. The Trinidad also continued."
+  },
+  {
+    "id": 13,
+    "kind": "tidore",
+    "title": "The original destination",
+    "kicker": "NOVEMBER 1521 · TIDORE",
+    "narration": "The two ships finally reached Tidore in the Spice Islands in November. They loaded cloves. The trading objective had been reached, but the journey home now depended on two very different choices."
+  },
+  {
+    "id": 14,
+    "kind": "split",
+    "title": "Two ships. Different directions.",
+    "kicker": "DECEMBER 1521",
+    "narration": "The leaking Trinidad stayed for repairs and later attempted an eastward Pacific return. It failed to reach Spain. Elcano took the Victoria west, toward the Indian Ocean and the Cape of Good Hope."
+  },
+  {
+    "id": 15,
+    "kind": "indian",
+    "title": "Elcano’s long way home",
+    "kicker": "1522 · INDIAN OCEAN → AFRICA",
+    "narration": "The Victoria crossed the Indian Ocean and rounded southern Africa. Hunger and exhaustion continued. Sailing west around Africa connected the expedition’s new Pacific crossing with the Atlantic waters from which it had begun."
+  },
+  {
+    "id": 16,
+    "kind": "return",
+    "title": "The circle closes",
+    "kicker": "6 SEPTEMBER 1522 · SANLÚCAR",
+    "narration": "On September sixth, fifteen twenty-two, the Victoria returned to Sanlúcar. Eighteen members of the original expedition came home aboard her. Two days later, the ship reached Seville. Nearly three years had passed."
+  },
+  {
+    "id": 17,
+    "kind": "ledger",
+    "title": "What happened to the five ships?",
+    "kicker": "THE EXPEDITION IN FIVE HULLS",
+    "narration": "Five ships had departed. The Santiago was wrecked. The San Antonio turned back. The Concepción was burned. The Trinidad failed on its return attempt. Only the Victoria completed the circuit."
+  },
+  {
+    "id": 18,
+    "kind": "legacy",
+    "title": "A connected world, at a cost",
+    "kicker": "THE FIRST RECORDED CIRCUMNAVIGATION",
+    "narration": "The voyage demonstrated that ships could circle the globe and revealed the enormous scale of the Pacific. It also belonged to an age of conquest and coercion. Seamanship and survival cannot erase that human cost."
+  },
+  {
+    "id": 19,
+    "kind": "closing",
+    "title": "Magellan began it. Elcano completed it.",
+    "kicker": "WITH THE VICTORIA’S SURVIVING CREW",
+    "narration": "Remember the expedition by both names: Magellan and Elcano. One led its departure and opened the passage west. The other brought the Victoria home, completing the first recorded voyage around the world."
+  }
+]
