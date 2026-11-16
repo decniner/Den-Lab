@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Saitama City",
     "editionJa": "さいたま市",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Saitama City, Saitama",
     "areaJa": "埼玉県さいたま市"
   },
@@ -80,7 +80,7 @@ window.TADAIMA_DATA = {
       "district": "Owada-cho 2, Minuma Ward",
       "districtJa": "見沼区大和田町2丁目",
       "title": "New 4LDK under ¥4,000万 (Toho House) — completes Dec 2026",
-      "priceMan": 3978,
+      "priceMan": 3950,
       "priceFrom": false,
       "landM2": 94.91,
       "buildingM2": 91.91,
@@ -104,8 +104,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/11104/030/W/21994698.html",
         "verified": "detail",
-        "infoDate": "2026-11-02"
-      }
+        "infoDate": "2026-11-14"
+      },
+      "priceDropMan": 28
     },
     {
       "id": "h04",
@@ -140,78 +141,12 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h07",
-      "type": "house-new",
-      "district": "Higashi-Urawa 2, Midori Ward",
-      "districtJa": "緑区東浦和2丁目",
-      "title": "New 4LDK in Higashi-Urawa — 119m² of floor area",
-      "priceMan": 4780,
-      "priceFrom": false,
-      "landM2": 69.14,
-      "buildingM2": 119.44,
-      "layout": "4LDK",
-      "station": "Higashi-Urawa",
-      "stationJa": "東浦和",
-      "line": "JR Musashino Line",
-      "lineJa": "JR武蔵野線",
-      "walkMin": 9,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Largest new-build floor area here (119.4m²)"
-      ],
-      "cautions": [
-        "Small-ish 69.1m² plot for the price — a large building stacked on it",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/6001/area_saitama/11109/024.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h09",
-      "type": "house-new",
-      "district": "Nisshincho 2, Kita Ward",
-      "districtJa": "北区日進町2丁目",
-      "title": "New 3LDK+S just 4 minutes from Nisshin Station",
-      "priceMan": 4798,
-      "priceFrom": true,
-      "landM2": 66.64,
-      "buildingM2": 109.71,
-      "layout": "3LDK+S",
-      "station": "Nisshin",
-      "stationJa": "日進",
-      "line": "JR Kawagoe Line",
-      "lineJa": "JR川越線",
-      "walkMin": 4,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Best station walk of any house here — 4 minutes"
-      ],
-      "cautions": [
-        "Small ~66.6m² plot",
-        "Units run ¥4,798万–¥4,898万",
-        "Building area includes the built-in garage; wooden 3-storey house on only a 66.64 m² plot",
-        "Includes a small shared-land interest (1.03 m² held 1/2 each)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/11102/030/W/21393957.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "h10",
       "type": "house-used",
       "district": "Sakurada 1, Sakura Ward",
       "districtJa": "桜区桜田1丁目",
       "title": "Used 5K (1969) at ¥680万 — flooded in 2019, experts only",
-      "priceMan": 598,
+      "priceMan": 498,
       "priceFrom": false,
       "landM2": 67.63,
       "buildingM2": 44.71,
@@ -237,10 +172,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11106/030Z21931275/151823003/x1030Z21931275.html",
         "verified": "detail",
-        "infoDate": "2026-11-08"
+        "infoDate": "2026-11-15"
       },
       "majorCautions": 2,
-      "priceDropMan": 82
+      "priceDropMan": 100
     },
     {
       "id": "h11",
@@ -281,7 +216,7 @@ window.TADAIMA_DATA = {
       "district": "Owada-cho 1, Minuma Ward",
       "districtJa": "見沼区大和田町1丁目",
       "title": "Used 3DK (1972), as-is DIY project in Owada-cho",
-      "priceMan": 1480,
+      "priceMan": 1280,
       "priceFrom": false,
       "landM2": 85.06,
       "buildingM2": 51.6,
@@ -308,9 +243,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11104/030Z78685891/145047002/x1030Z78685891.html",
         "verified": "detail",
-        "infoDate": "2026-10-19"
+        "infoDate": "2026-11-10"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 200
     },
     {
       "id": "h13",
@@ -380,38 +316,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h16",
-      "type": "house-used",
-      "district": "Matsumoto 1, Minami Ward",
-      "districtJa": "南区松本1丁目",
-      "title": "4SDK 15 minutes from Nishi-Urawa",
-      "priceMan": 1980,
-      "priceFrom": false,
-      "landM2": 89.02,
-      "buildingM2": 103.5,
-      "layout": "4SDK",
-      "station": "Nishi-Urawa",
-      "stationJa": "西浦和",
-      "line": "JR Musashino Line",
-      "lineJa": "JR武蔵野線",
-      "walkMin": 15,
-      "built": "Mar 2004",
-      "ageYears": 22,
-      "highlights": [
-        "Tajima Elementary School about 3 minutes and Tajima Junior High about 7 minutes away",
-        "Convenience store about 4 minutes away; parking available"
-      ],
-      "cautions": [
-        "Built March 2004 (22 years old); walk is exactly 15 minutes, at the brief's limit"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/ikkodate/area_saitama/11108/019.html",
-        "verified": "index",
-        "infoDate": "2026-11-02"
-      }
-    },
-    {
       "id": "h17",
       "type": "house-used",
       "district": "Nishiharadai 2, Iwatsuki Ward",
@@ -444,8 +348,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11110/030Z21219122/006110007/x1030Z21219122.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h18",
@@ -479,8 +382,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/special/3013/area_saitama/110001.html",
         "verified": "index",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h19",
@@ -514,7 +416,196 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/special/3013/area_saitama/110001.html",
         "verified": "index",
         "infoDate": "2026-11-09"
+      }
+    },
+    {
+      "id": "h20",
+      "type": "house-used",
+      "district": "Nisshincho 2, Kita Ward",
+      "districtJa": "北区日進町２",
+      "title": "Used 4DK (1995) — 9 min from Nisshin, corner plot, city gas and sewer",
+      "priceMan": 1980,
+      "priceFrom": false,
+      "landM2": 69.77,
+      "buildingM2": 78.68,
+      "layout": "4DK",
+      "station": "Nisshin",
+      "stationJa": "日進",
+      "line": "JR Kawagoe Line",
+      "lineJa": "JR川越線",
+      "walkMin": 9,
+      "built": "Mar 1995",
+      "ageYears": 31,
+      "highlights": [
+        "9-minute walk to Nisshin on the JR Kawagoe Line",
+        "North-east corner plot with two road frontages, sunny",
+        "City gas and mains sewer, bath dryer, two toilets"
+      ],
+      "cautions": [
+        "Small 69.77m² lot with no parking",
+        "Built 1995 (31 years) — interior condition not detailed beyond 'kept clean'",
+        "Private-road area 8.12m²",
+        "Height cap applies"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11102/030Z22146379/111612009/x1030Z22146379.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
       },
+      "isNew": true
+    },
+    {
+      "id": "h21",
+      "type": "house-used",
+      "district": "Nishimachi 5, Iwatsuki Ward",
+      "districtJa": "岩槻区西町５",
+      "title": "Used 3LDK (1995) — 13 min from Iwatsuki, cheapest in the edition, narrow frontage",
+      "priceMan": 1499,
+      "priceFrom": false,
+      "landM2": 110.73,
+      "buildingM2": 80.73,
+      "layout": "3LDK",
+      "station": "Iwatsuki",
+      "stationJa": "岩槻",
+      "line": "Tobu Noda Line",
+      "lineJa": "東武野田線",
+      "walkMin": 13,
+      "built": "Feb 1995",
+      "ageYears": 31,
+      "highlights": [
+        "Cheapest house in the edition at ¥1,499万",
+        "13-minute walk to Iwatsuki on the Tobu Noda Line",
+        "City gas, public water and mains sewer; flat lot"
+      ],
+      "cautions": [
+        "Narrow 2.5m road frontage (W 4m road)",
+        "No parking",
+        "Built 1995 (31 years)",
+        "Private-road area 16m²",
+        "Low FAR 80% (1種低層 50%/80%)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11110/030Z22186052/180648001/x1030Z22186052.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "majorCautions": 1,
+      "isNew": true
+    },
+    {
+      "id": "h22",
+      "type": "house-used",
+      "district": "Miyamachi 2, Iwatsuki Ward",
+      "districtJa": "岩槻区宮町２",
+      "title": "Used 4LDK (1988) — 12 min from Higashi-Iwatsuki, seller-reformed with warranty",
+      "priceMan": 1879,
+      "priceFrom": false,
+      "landM2": 117.97,
+      "buildingM2": 93.56,
+      "layout": "4LDK",
+      "station": "Higashi-Iwatsuki",
+      "stationJa": "東岩槻",
+      "line": "Tobu Noda Line",
+      "lineJa": "東武野田線",
+      "walkMin": 12,
+      "built": "Dec 1988",
+      "ageYears": 38,
+      "highlights": [
+        "Seller-reformed 4LDK with the seller's own defect warranty",
+        "South 6m road, 6.1m frontage, carport parking",
+        "City gas, public water and mains sewer; system kitchen, garden"
+      ],
+      "cautions": [
+        "Built 1988 (38 years) — interior and exterior reformed by the seller, with the seller's own defect warranty",
+        "景観法 / 宅地造成工事規制区域 / 都市再生特別地区 apply",
+        "Handover by year-end"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11110/030Z22109259/189549015/x1030Z22109259.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h23",
+      "type": "house-used",
+      "district": "Nishiharadai 1, Iwatsuki Ward",
+      "districtJa": "岩槻区西原台１",
+      "title": "Used 2LDK (2011) — 13 min from Iwatsuki, wide 18.5-tatami LDK, LP gas",
+      "priceMan": 1980,
+      "priceFrom": false,
+      "landM2": 96.4,
+      "buildingM2": 82.8,
+      "layout": "2LDK",
+      "station": "Iwatsuki",
+      "stationJa": "岩槻",
+      "line": "Tobu Noda Line",
+      "lineJa": "東武野田線",
+      "walkMin": 13,
+      "built": "Feb 2011",
+      "ageYears": 15,
+      "highlights": [
+        "Wide 18.5-tatami LDK, two rooms of ~9.5 and ~9 tatami",
+        "Interior reform done; parking space",
+        "13-minute walk to Iwatsuki on the Tobu Noda Line"
+      ],
+      "cautions": [
+        "Only 2LDK — small for a family",
+        "Narrow 2.7m road (12.8m frontage)",
+        "LP gas only — no city gas and no mains sewer listed",
+        "Private-road area 8.07m²",
+        "2014-10 first-floor extension (+4.14m²)",
+        "Info date 2026-10-16, a month old — re-check next run"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11110/030Z21342039/032341000/x1030Z21342039.html",
+        "verified": "detail",
+        "infoDate": "2026-10-16"
+      },
+      "majorCautions": 1,
+      "isNew": true
+    },
+    {
+      "id": "h24",
+      "type": "house-used",
+      "district": "Oaza-Sashiogi, Nishi Ward",
+      "districtJa": "西区大字指扇",
+      "title": "Used 4LDK (1997) — 15 min from Nishi-Omiya, vacant, November-only contract",
+      "priceMan": 1999,
+      "priceFrom": false,
+      "landM2": 100.0,
+      "buildingM2": 88.6,
+      "layout": "4LDK",
+      "station": "Nishi-Omiya",
+      "stationJa": "西大宮",
+      "line": "JR Kawagoe Line",
+      "lineJa": "JR川越線",
+      "walkMin": 15,
+      "built": "Sep 1997",
+      "ageYears": 29,
+      "highlights": [
+        "Vacant 4LDK, immediate handover possible",
+        "NW 5m public road, parking for 1 car",
+        "City gas, public water and mains sewer"
+      ],
+      "cautions": [
+        "At the 15-minute walk limit of this collection",
+        "Built 1997 (29 years); no reform history listed",
+        "Sale is November-only contract, as-is (11月中契約限定現況販売)",
+        "Land area is public-record (公簿), not measured"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/4/11101/1547600004232/154760/x41547600004232.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "majorCautions": 1,
       "isNew": true
     },
     {
@@ -844,7 +935,86 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11104/030Z22015858/006050441/x1030Z22015858.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
+      }
+    },
+    {
+      "id": "l14",
+      "type": "land",
+      "district": "Higashi-Omiya 2, Minuma Ward",
+      "districtJa": "見沼区東大宮2丁目",
+      "title": "Small 80m² lot 9 min from Higashi-Omiya — no building condition",
+      "priceMan": 2551,
+      "priceFrom": false,
+      "landM2": 80.04,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Higashi-Omiya",
+      "stationJa": "東大宮",
+      "line": "JR Utsunomiya Line",
+      "lineJa": "JR宇都宮線",
+      "walkMin": 9,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "9-minute walk to Higashi-Omiya on the JR Utsunomiya Line",
+        "No building condition (建築条件なし) — choose your own builder",
+        "Vacant lot (更地), SE 8m public road, city gas/water/sewer",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Small 80.04m² lot (24.2坪)",
+        "Low FAR 100% and coverage 50% (1種低層)",
+        "Land area is public-record (公簿), not measured",
+        "Height cap 10m"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11104/1547600004227/154760/x41547600004227.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
       },
+      "isNew": true
+    },
+    {
+      "id": "l15",
+      "type": "land",
+      "district": "Owada-cho 1, Minuma Ward",
+      "districtJa": "見沼区大和田町１",
+      "title": "117m² lot 12 min from Owada — no building condition, LP gas and septic tank",
+      "priceMan": 2600,
+      "priceFrom": false,
+      "landM2": 117.46,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Owada",
+      "stationJa": "大和田",
+      "line": "Tobu Noda Line",
+      "lineJa": "東武野田線",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種中高層住居専用地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "12-minute walk to Owada on the Tobu Noda Line",
+        "No building condition (建築条件なし) — choose your own builder",
+        "Vacant lot (更地), S 12m road, sunny, immediate handover",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "LP gas and septic tank (浄化槽) — no city gas and no mains sewer",
+        "景観法 applies",
+        "New Owada elementary school opens 2026 (令和8年), 2 min away — area is changing"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11104/030Z22160811/126674001/x1030Z22160811.html",
+        "verified": "detail",
+        "infoDate": "2026-11-13"
+      },
+      "majorCautions": 1,
       "isNew": true
     }
   ],

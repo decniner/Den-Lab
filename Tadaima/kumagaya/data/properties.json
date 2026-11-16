@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Kumagaya",
     "editionJa": "熊谷",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-16",
     "area": "Kumagaya City, Saitama",
     "areaJa": "埼玉県熊谷市"
   },
@@ -191,40 +191,6 @@
       }
     },
     {
-      "id": "h06",
-      "type": "house-new",
-      "district": "Akagicho 1",
-      "districtJa": "赤城町1丁目",
-      "title": "New 4LDK (2 units) — seismic + damping structure, telework room",
-      "priceMan": 2480,
-      "priceFrom": false,
-      "landM2": 118.09,
-      "buildingM2": 98.01,
-      "layout": "4LDK",
-      "station": "Ishihara",
-      "stationJa": "石原",
-      "line": "Chichibu Railway",
-      "lineJa": "秩父鉄道",
-      "walkMin": 9,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Earthquake-resistant + vibration-damped construction; ~2-tatami telework room",
-        "Side-by-side parking for 2 cars; supermarket 6 min walk"
-      ],
-      "cautions": [
-        "Portal feeds disagree on the walk (9 vs 11 min) — scored here on 9; verify on the ground",
-        "Seen on a portal index page — verify details on the listing link",
-        "HOME'S currently lists the same Cradle garden unit (identical land/building areas, Ishihara walk 9) at ¥2,580万 — ¥100万 above the price recorded here, and older crawls show ¥2,880万 then ¥2,780万; confirm the current asking price"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6004/area_saitama/11202.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h07",
       "type": "house-new",
       "district": "Ishihara",
@@ -384,77 +350,12 @@
       }
     },
     {
-      "id": "h14",
-      "type": "house-used",
-      "district": "Senami",
-      "districtJa": "瀬南",
-      "title": "Used 4LDK (1997), part-renovated — 5 min to Hirose-Yachonomori",
-      "priceMan": 1480,
-      "priceFrom": false,
-      "landM2": 162.91,
-      "buildingM2": 119.03,
-      "layout": "4LDK",
-      "station": "Hirose-Yachonomori",
-      "stationJa": "ひろせ野鳥の森",
-      "line": "Chichibu Railway",
-      "lineJa": "秩父鉄道",
-      "walkMin": 7,
-      "built": "Sep 1997",
-      "ageYears": 29,
-      "highlights": [
-        "Large 119m² house on a 162.9m² plot; south road frontage, city gas",
-        "Renovation already covers bath, toilet and washstand renewal plus termite treatment"
-      ],
-      "cautions": [
-        "Industrial zoning （工業地域， 60% / 200%), per the detail page — factories are permitted neighbours; check the surroundings before purchase"
-      ],
-      "source": {
-        "name": "OCN不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z77044432/153974028/x1030Z77044432.html",
-        "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h15",
-      "type": "house-used",
-      "district": "Motoishi 2",
-      "districtJa": "本石2丁目",
-      "title": "Used 4DK (1987), renovated inside and out — 5 min to Kami-Kumagaya",
-      "priceMan": 1030,
-      "priceFrom": false,
-      "landM2": 93.41,
-      "buildingM2": 77.01,
-      "layout": "4DK",
-      "station": "Kami-Kumagaya",
-      "stationJa": "上熊谷",
-      "line": "Chichibu Railway",
-      "lineJa": "秩父鉄道",
-      "walkMin": 5,
-      "built": "Dec 1987",
-      "ageYears": 38,
-      "highlights": [
-        "Renovated inside and out; every room 6 tatami or larger",
-        "Aeon supermarket 3 min walk; Kumagaya Station also walkable in 14 min"
-      ],
-      "cautions": [
-        "Compact 93.4m² plot and 77m² building",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_saitama/11202/061.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h16",
       "type": "house-used",
       "district": "Ishihara",
       "districtJa": "石原",
       "title": "Used 4LDK (1996), renovated — the Ishihara family starter",
-      "priceMan": 1299,
+      "priceMan": 1199,
       "priceFrom": false,
       "landM2": 100.12,
       "buildingM2": 80.31,
@@ -479,9 +380,10 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z77204229/153974028/x1030Z77204229.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-15"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 100
     },
     {
       "id": "h17",
@@ -489,7 +391,7 @@
       "district": "Ishihara",
       "districtJa": "石原",
       "title": "Used 5DK (1978) — pre-1981 seismic standard, cross-renewed 2026",
-      "priceMan": 1100,
+      "priceMan": 1080,
       "priceFrom": false,
       "landM2": 128.64,
       "buildingM2": 101.84,
@@ -514,9 +416,79 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z20647242/189876001/x1030Z20647242.html",
         "verified": "detail",
-        "infoDate": "2026-10-21"
+        "infoDate": "2026-11-10"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 20
+    },
+    {
+      "id": "h18",
+      "type": "house-new",
+      "district": "Tsukimicho 1",
+      "districtJa": "月見町1丁目",
+      "title": "New 4LDK (Jun 2026) — long-life quality housing, 3-car parking, south road",
+      "priceMan": 3090,
+      "priceFrom": false,
+      "landM2": 151.22,
+      "buildingM2": 103.71,
+      "layout": "4LDK",
+      "station": "Ishihara",
+      "stationJa": "石原",
+      "line": "Chichibu Railway",
+      "lineJa": "秩父鉄道",
+      "walkMin": 10,
+      "built": "Jun 2026",
+      "ageYears": 0,
+      "highlights": [
+        "Long-life quality housing (長期優良住宅) with design + construction housing performance evaluations; Flat 35S eligible",
+        "South 8m road, all rooms western-style; parking for 3 cars in parallel",
+        "City gas and mains sewerage; WIC, bathroom dryer, bath 1 tsubo+"
+      ],
+      "cautions": [
+        "South-bank Arakawa side of the city (Ishihara station area) — check the Kumagaya flood hazard map for this plot before purchase"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/1/11202/030Z21157268/179201001/x1030Z21157268.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h19",
+      "type": "house-used",
+      "district": "Akagicho 1",
+      "districtJa": "赤城町1丁目",
+      "title": "Used 4SLDK (2019), interior-renovated Jul 2026 — corner plot, 3-car parking",
+      "priceMan": 2899,
+      "priceFrom": false,
+      "landM2": 168.62,
+      "buildingM2": 115.1,
+      "layout": "4SLDK",
+      "station": "Ishihara",
+      "stationJa": "石原",
+      "line": "Chichibu Railway",
+      "lineJa": "秩父鉄道",
+      "walkMin": 10,
+      "built": "Dec 2019",
+      "ageYears": 7,
+      "highlights": [
+        "2019 build (7 years) with Jul 2026 interior reform; 18-tatami+ LDK",
+        "Corner plot on two 6m roads (south + west) in a land-readjustment district",
+        "Parking for 3+ cars; city gas and mains sewerage; barrier-free"
+      ],
+      "cautions": [
+        "South-bank Arakawa side of the city (Ishihara station area) — check the Kumagaya flood hazard map for this plot before purchase",
+        "Interior reform completed Jul 2026 — confirm exactly what was renewed (agent notes: wall coverings, washstand, exterior works)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11202/030Z21159258/193794001/x1030Z21159258.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
     },
     {
       "id": "l01",
@@ -703,7 +675,7 @@
       "district": "Shinbori-Shinden",
       "districtJa": "新堀新田",
       "title": "Huge vacant 497m² plot 10 minutes from Kagohara — lowest ¥/tsubo of the zoned lots",
-      "priceMan": 3150,
+      "priceMan": 3000,
       "priceFrom": false,
       "landM2": 496.99,
       "buildingM2": null,
@@ -730,8 +702,9 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11202/030Z78521919/130748003/x1030Z78521919.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 150
     },
     {
       "id": "l07",

@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Ichikawa",
     "editionJa": "市川",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Ichikawa City, Chiba",
     "areaJa": "千葉県市川市"
   },
@@ -36,7 +36,7 @@
       "district": "Oonocho 4",
       "districtJa": "大野町4丁目",
       "title": "New 2LDK+2S — at the 15-minute walk limit from Ichikawa-Ono",
-      "priceMan": 3480,
+      "priceMan": 3380,
       "priceFrom": false,
       "landM2": 100.97,
       "buildingM2": 97.29,
@@ -63,45 +63,10 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12203/030/W/20995841.html",
         "verified": "detail",
-        "infoDate": "2026-10-31"
+        "infoDate": "2026-11-14"
       },
-      "majorCautions": 1
-    },
-    {
-      "id": "h04",
-      "type": "house-new",
-      "district": "Kokufudai 1",
-      "districtJa": "国府台1丁目",
-      "title": "New 3LDK development (3 units), from ¥4,980万 — Yagiri 15 min",
-      "priceMan": 4980,
-      "priceFrom": true,
-      "landM2": 124.63,
-      "buildingM2": 89.42,
-      "layout": "3LDK",
-      "station": "Yagiri",
-      "stationJa": "矢切",
-      "line": "Hokuso Line",
-      "lineJa": "北総線",
-      "walkMin": 15,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Largest plots of the new builds here (124.6–140.2m²) by the Kokufudai park/plateau",
-        "Parking for 2+"
-      ],
-      "cautions": [
-        "Price is 'from' — units run to ¥5,380万 and only the cheapest falls within this collection's brief",
-        "At the 15-minute walk limit; Kokufudai is a plateau edge — check slope/sediment-disaster zones on the city hazard map",
-        "Scenic-district （風致地区） and Landscape Act （景観法） controls apply per the detail page",
-        "Drainage is a combined septic tank （合併浄化槽）, not mains sewer",
-        "Strict 40% coverage / 80% FAR limits per the detail page"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/12203/030/W/20166826.html",
-        "verified": "detail",
-        "infoDate": "2026-10-20"
-      }
+      "majorCautions": 1,
+      "priceDropMan": 100
     },
     {
       "id": "h05",
@@ -211,7 +176,7 @@
       "district": "Chugokubun 5",
       "districtJa": "中国分5丁目",
       "title": "Used 3LDK (2012), renovated Sep 2026 — cheapest solid family house here",
-      "priceMan": 3299,
+      "priceMan": 3250,
       "priceFrom": false,
       "landM2": 110.86,
       "buildingM2": 82.8,
@@ -237,8 +202,9 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21310953/146078001/x1030Z21310953.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-12"
+      },
+      "priceDropMan": 49
     },
     {
       "id": "h11",
@@ -412,8 +378,7 @@
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21965103/006050B00/x1030Z21965103.html",
         "verified": "detail",
         "infoDate": "2026-11-08"
-      },
-      "priceDropMan": 300
+      }
     },
     {
       "id": "h17",
@@ -484,8 +449,7 @@
         "url": "https://www.homes.co.jp/kodate/b-1441410011951/",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h19",
@@ -521,8 +485,7 @@
         "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_chiba/12203/054.html",
         "verified": "index",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h20",
@@ -557,8 +520,7 @@
         "url": "https://house.goo.ne.jp/buy/uh/special/3004/ensen/257/2257011.html",
         "verified": "index",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h21",
@@ -594,6 +556,115 @@
         "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_chiba/12203/054.html",
         "verified": "index",
         "infoDate": "2026-11-09"
+      }
+    },
+    {
+      "id": "h22",
+      "type": "house-used",
+      "district": "Omachi",
+      "districtJa": "大町",
+      "title": "Used 3SLDK (2000) — corner lot, floor heating, 7 min from Ichikawa-Ono",
+      "priceMan": 2480,
+      "priceFrom": false,
+      "landM2": 99.9,
+      "buildingM2": 104.35,
+      "layout": "3SLDK",
+      "station": "Ichikawa-Ono",
+      "stationJa": "市川大野",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 7,
+      "built": "Mar 2000",
+      "ageYears": 26,
+      "highlights": [
+        "Corner lot, south-facing, with no building in front — open outlook and good light",
+        "Floor heating, dishwasher, bath dryer, loft (グルニエ), 2 toilets and shoe-in closet",
+        "2013 exterior and roof reform; free parking; empty house, viewable anytime",
+        "Nursery about a 5-minute walk; quiet residential street"
+      ],
+      "cautions": [
+        "Built Mar 2000 (26 years, wood 3-storey) — the oldest house in this batch",
+        "Residential-land development regulation area (宅地造成工事規制区域) noted on the detail page",
+        "Handover by consultation"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21362839/182925001/x1030Z21362839.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h23",
+      "type": "house-used",
+      "district": "Oonocho 2",
+      "districtJa": "大野町2丁目",
+      "title": "Used 4LDK (2022) — 21-tatami LDK, 2 balconies, 8 min from Ichikawa-Ono",
+      "priceMan": 4480,
+      "priceFrom": false,
+      "landM2": 114.98,
+      "buildingM2": 100.6,
+      "layout": "4LDK",
+      "station": "Ichikawa-Ono",
+      "stationJa": "市川大野",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 8,
+      "built": "Aug 2022",
+      "ageYears": 4,
+      "highlights": [
+        "Only 4 years old; ~21-tatami LDK with two balconies for light and airflow",
+        "All rooms with storage, walk-in closet, 2 toilets, counter kitchen",
+        "Elementary school, junior high and supermarket all within a 5-minute walk"
+      ],
+      "cautions": [
+        "Parking space sits between the building and the road — vehicle size restrictions may apply",
+        "Handover by consultation"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21901200/000389230/x1030Z21901200.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h24",
+      "type": "house-used",
+      "district": "Oonocho 2",
+      "districtJa": "大野町2丁目",
+      "title": "Used 3LDK (2017) — 188m² garden plot, 21.6-tatami LDK, 8 min from Ichikawa-Ono",
+      "priceMan": 4180,
+      "priceFrom": false,
+      "landM2": 187.99,
+      "buildingM2": 104.49,
+      "layout": "3LDK",
+      "station": "Ichikawa-Ono",
+      "stationJa": "市川大野",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 8,
+      "built": "Apr 2017",
+      "ageYears": 9,
+      "highlights": [
+        "Largest land in this batch (187.99m²) with a garden for planting and play",
+        "~21.6-tatami LDK, parallel parking for 2 cars, shoe-in closet and walk-in closet",
+        "Roof balcony; high airtightness and insulation build with energy-saving measures",
+        "Design drawings from construction are available"
+      ],
+      "cautions": [
+        "Urbanization control area (都市計画 調整区域) — confirm rebuild and extension rules before buying",
+        "Septic tank (浄化槽) — no sewer connection",
+        "Building Standards Act Art. 22 zone, Landscape Act, residential-land development regulation area, 10m height limit",
+        "Handover by consultation"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12203/030Z21406638/122925067/x1030Z21406638.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
       },
       "isNew": true
     },
@@ -633,8 +704,7 @@
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z78943088/065555073/x1030Z78943088.html",
         "verified": "detail",
         "infoDate": "2026-11-07"
-      },
-      "priceDropMan": 500
+      }
     },
     {
       "id": "l03",
@@ -786,8 +856,7 @@
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12203/030Z21085967/193572001/x1030Z21085967.html",
         "verified": "detail",
         "infoDate": "2026-11-08"
-      },
-      "priceDropMan": 300
+      }
     },
     {
       "id": "l07",
@@ -979,6 +1048,45 @@
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Oonocho 3",
+      "districtJa": "大野町3丁目",
+      "title": "Vacant 139.47m² plot — no building condition, 7 min from Ichikawa-Ono",
+      "priceMan": 2380,
+      "priceFrom": false,
+      "landM2": 139.47,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Ichikawa-Ono",
+      "stationJa": "市川大野",
+      "line": "JR Musashino Line",
+      "lineJa": "JR武蔵野線",
+      "walkMin": 7,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "Vacant lot (更地) — build immediately, no building condition, choose your own builder",
+        "7 minutes to Ichikawa-Ono; 139.47m² measured area",
+        "East 4.5m public road, no setback required, immediate handover",
+        "Supermarket about 1km away, convenience store 528m, schools about 1.3km",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Part of the lot lies in a landslide hazard zone (土砂災害警戒区域) and a special landslide hazard zone (土砂災害特別警戒区域) — check building restrictions and insurance before buying",
+        "Building Standards Act Art. 22 zone"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/12203/1201050005913/120105/x41201050005913.html",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

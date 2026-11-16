@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Maebashi",
     "editionJa": "前橋",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Maebashi City, Gunma",
     "areaJa": "群馬県前橋市"
   },
@@ -57,44 +57,9 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/W/21893962.html",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/Z/21827989.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "priceDropMan": 100
-    },
-    {
-      "id": "h02",
-      "type": "house-new",
-      "district": "Rokkucho 1",
-      "districtJa": "六供町1丁目",
-      "title": "New 3SLDK — loop circulation plan with study and wide balcony, 15 min from Maebashi Station",
-      "priceMan": 3880,
-      "priceFrom": false,
-      "landM2": 150.44,
-      "buildingM2": 108.04,
-      "layout": "3SLDK",
-      "station": "Maebashi",
-      "stationJa": "前橋",
-      "line": "JR Ryomo Line",
-      "lineJa": "JR両毛線",
-      "walkMin": 15,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Loop circulation plan (回遊動線) with a study and a wide balcony, per the developer",
-        "City gas; parking for 2 or more cars; bathroom dryer"
-      ],
-      "cautions": [
-        "At the 15-minute walk limit of this collection",
-        "One of 2 units in the development — confirm which unit the price covers",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6012/ensen/108/2108160.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
       }
     },
     {
@@ -128,39 +93,6 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/W/21124656.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "h04",
-      "type": "house-new",
-      "district": "Higokoshi-cho",
-      "districtJa": "樋越町",
-      "title": "New 4LDK — performance-evaluated, 6 min from Higokoshi Station",
-      "priceMan": 1990,
-      "priceFrom": false,
-      "landM2": 264.5,
-      "buildingM2": 111.37,
-      "layout": "4LDK",
-      "station": "Higokoshi",
-      "stationJa": "樋越",
-      "line": "Jomo Electric Railway",
-      "lineJa": "上毛電気鉄道上毛線",
-      "walkMin": 6,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Design and construction housing-performance evaluations obtained",
-        "Generous package: 111.4m² house on 264.5m² of land",
-        "Roof balcony; parking for 2 or more cars"
-      ],
-      "cautions": [
-        "One of 6 units in the development, priced ¥1,890万–¥2,190万 — this is the top-priced unit shown"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/Z/21301753.html",
-        "verified": "detail",
-        "infoDate": "2026-11-02"
       }
     },
     {
@@ -404,8 +336,7 @@ window.TADAIMA_DATA = {
         "url": "https://www.homes.co.jp/kodate/b-1574140000355/",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h19",
@@ -413,7 +344,7 @@ window.TADAIMA_DATA = {
       "district": "Furuichi-cho",
       "districtJa": "古市町",
       "title": "New 3LDK house, Furuichi-cho",
-      "priceMan": 2690,
+      "priceMan": 2590,
       "priceFrom": false,
       "landM2": 134.31,
       "buildingM2": 92.11,
@@ -440,7 +371,78 @@ window.TADAIMA_DATA = {
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/b-1560680000749/",
         "verified": "detail",
-        "infoDate": "2026-11-09"
+        "infoDate": "2026-11-10"
+      },
+      "priceDropMan": 100
+    },
+    {
+      "id": "h20",
+      "type": "house-new",
+      "district": "Bunkyo-cho 1",
+      "districtJa": "文京町1",
+      "title": "New 4LDK — long-term quality housing, all rooms south-facing, 10 min from Maebashi",
+      "priceMan": 3880,
+      "priceFrom": false,
+      "landM2": 180.97,
+      "buildingM2": 109.5,
+      "layout": "4LDK",
+      "station": "Maebashi",
+      "stationJa": "前橋",
+      "line": "JR Ryomo Line",
+      "lineJa": "JR両毛線",
+      "walkMin": 10,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Long-term quality housing with design and housing-performance evaluations, Flat 35 S certified, ground survey done",
+        "All rooms south-facing, 15+ tatami LDK, WIC + pantry, parking for 2 cars, city gas",
+        "180.97m² (about 55 tsubo) lot, 10 minutes from Maebashi Station"
+      ],
+      "cautions": [
+        "Completion mid-March 2027 — not yet built; handover by consultation",
+        "East 3.6m road with setback to 4.0m after; no resident agent on site — viewings by appointment only"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/Z/22140302.html",
+        "verified": "detail",
+        "infoDate": "2026-11-14"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h21",
+      "type": "house-new",
+      "district": "Minami-cho 4",
+      "districtJa": "南町4",
+      "title": "New 4LDK (Oct 2026) — corner lot, immediate handover, 13 min from Maebashi",
+      "priceMan": 3790,
+      "priceFrom": false,
+      "landM2": 158.21,
+      "buildingM2": 95.84,
+      "layout": "4LDK",
+      "station": "Maebashi",
+      "stationJa": "前橋",
+      "line": "JR Ryomo Line",
+      "lineJa": "JR両毛線",
+      "walkMin": 13,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Completed Oct 2026, immediate handover; design and construction housing-performance evaluations, Flat 35 S certified, ground survey done",
+        "Corner lot with 6m+ front road, all rooms south-facing, 15+ tatami LDK, WIC, parking for 2 cars, city gas",
+        "13 minutes from Maebashi Station, close to the city centre"
+      ],
+      "cautions": [
+        "Near-commercial zoning (80%/200%) rather than a residential zone",
+        "Landscape Act restriction applies",
+        "13-minute walk — near the 15-minute limit"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/10201/030/Z/22169688.html",
+        "verified": "detail",
+        "infoDate": "2026-11-14"
       },
       "isNew": true
     },
@@ -553,8 +555,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z21044581/104433001/x1030Z21044581.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "priceDropMan": 400
+      }
     },
     {
       "id": "l04",
@@ -885,46 +886,44 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z21534936/115332002/x1030Z21534936.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
-      "id": "l14",
+      "id": "l15",
       "type": "land",
-      "district": "Hiyoshi-cho 2",
-      "districtJa": "日吉町2丁目",
-      "title": "Corner land in Hiyoshi-cho 2, near Chuo-Maebashi",
-      "priceMan": 1980,
+      "district": "Kameizumi-cho",
+      "districtJa": "亀泉町",
+      "title": "290m² vacant plot 3 minutes from Shinzo-Kekkan-Center station",
+      "priceMan": 545,
       "priceFrom": false,
-      "landM2": 221.14,
+      "landM2": 290.14,
       "buildingM2": null,
       "layout": null,
-      "station": "Chuo-Maebashi",
-      "stationJa": "中央前橋",
-      "line": "Jomo Electric Railway Jomo Line",
+      "station": "Shinzo-Kekkan-Center",
+      "stationJa": "心臓血管センター",
+      "line": "Jomo Electric Railway",
       "lineJa": "上毛電気鉄道上毛線",
-      "walkMin": 12,
+      "walkMin": 3,
       "built": null,
       "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 200%",
+      "zoning": "無指定",
+      "coverageFar": "70% / 200%",
       "highlights": [
-        "Corner plot, regular shape, 221.14m² (about 67 tsubo)",
-        "No building conditions; vacant land with immediate handover",
-        "Seller-direct sale",
-        "Elementary school about 4 min walk; convenience store about 5 min",
-        "Also listed as 11 min from Joto station",
+        "290.14m² (about 88 tsubo) vacant plot, 3 minutes from Shinzo-Kekkan-Center Station",
+        "East 4m road frontage, flat land, vacant-land delivery; no building condition — choose your own builder",
+        "Convenience stores nearby; easy access to the Jobu Road",
         "No building condition (建築条件なし) — choose your own builder"
       ],
       "cautions": [
-        "Priciest land in this batch at ¥1,980万",
-        "Nearest JR station (Maebashi) is a 20-min walk — the Jomo line is the practical rail link"
+        "LP gas (no city gas); mains-sewer charge ¥300,000 payable by the buyer",
+        "Urban Planning Act Article 43 permission required (outside the urbanisation promotion area process)",
+        "Maebashi landscape ordinance applies; 150m² private-road share"
       ],
       "source": {
-        "name": "goo不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z96701616/085087001/x1030Z96701616.html",
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/10201/030Z93108415/140143001/x1030Z93108415.html",
         "verified": "detail",
-        "infoDate": "2026-11-09"
+        "infoDate": "2026-11-15"
       },
       "isNew": true
     }

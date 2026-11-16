@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Matsudo",
     "editionJa": "松戸",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Matsudo City, Chiba",
     "areaJa": "千葉県松戸市"
   },
@@ -67,8 +67,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/bh/detail/4/12207/1226010046527/122601/x41226010046527.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "priceDropMan": 200
+      }
     },
     {
       "id": "h02",
@@ -233,8 +232,8 @@ window.TADAIMA_DATA = {
         "Verified on the listing page (information date 2026-10-22)"
       ],
       "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21592279/136844001/x1030Z21592279.html",
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21986113/168029009/x1030Z21986113.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
@@ -245,7 +244,7 @@ window.TADAIMA_DATA = {
       "district": "Goko 4",
       "districtJa": "五香4丁目",
       "title": "Used 4LDK (1994), renovated inside and out Sep 2026 — under ¥2,800万",
-      "priceMan": 2799,
+      "priceMan": 2750,
       "priceFrom": false,
       "landM2": 102.49,
       "buildingM2": 100.79,
@@ -270,8 +269,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21867007/163519004/x1030Z21867007.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 49
     },
     {
       "id": "h10",
@@ -300,10 +300,10 @@ window.TADAIMA_DATA = {
         "The detail page lists an 8.05m² private-road area (私道面積) within the plot"
       ],
       "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21916262/163519001/x1030Z21916262.html",
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1478760009840/",
         "verified": "detail",
-        "infoDate": "2026-11-01"
+        "infoDate": "2026-11-10"
       }
     },
     {
@@ -334,7 +334,7 @@ window.TADAIMA_DATA = {
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z20896281/000466033/x1030Z20896281.html",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z22130591/186306001/x1030Z22130591.html",
         "verified": "detail",
         "infoDate": "2026-10-23"
       }
@@ -345,7 +345,7 @@ window.TADAIMA_DATA = {
       "district": "Akiyama",
       "districtJa": "秋山",
       "title": "Used 2SDK (2001) — shuttered garage, south road, 5 min to Akiyama Station",
-      "priceMan": 3180,
+      "priceMan": 2980,
       "priceFrom": false,
       "landM2": 91.67,
       "buildingM2": 89.63,
@@ -370,9 +370,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21528108/087394001/x1030Z21528108.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-11-14"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 200
     },
     {
       "id": "h14",
@@ -447,7 +448,7 @@ window.TADAIMA_DATA = {
       "district": "Koda 5",
       "districtJa": "幸田5丁目",
       "title": "Used 3LDK built Dec 2019 — big 114m² house on 164m², Kita-Kogane side",
-      "priceMan": 3680,
+      "priceMan": 3480,
       "priceFrom": false,
       "landM2": 164.22,
       "buildingM2": 114.27,
@@ -472,9 +473,83 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z20604701/176213001/x1030Z20604701.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-15"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 200
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Goko-nishi 3",
+      "districtJa": "五香西3丁目",
+      "title": "Used 4LDK (2014) on a Polus subdivision lot - 120m2 plot, Goko 14 min",
+      "priceMan": 3180,
+      "priceFrom": false,
+      "landM2": 120.0,
+      "buildingM2": 96.88,
+      "layout": "4LDK",
+      "station": "Goko",
+      "stationJa": "五香",
+      "line": "Keisei Matsudo Line",
+      "lineJa": "京成松戸線",
+      "walkMin": 14,
+      "built": "Feb 2014",
+      "ageYears": 12,
+      "highlights": [
+        "Polus former subdivision lot on a 6m front road, south-facing",
+        "Top-light in the living room; floor heating, WIC, shoe closet, 2 toilets",
+        "Parking free; system kitchen, dishwasher, water purifier, bathroom dryer"
+      ],
+      "cautions": [
+        "Occupied (居住中) - handover by consultation, not immediate",
+        "Building Standards Act Art. 22 zone noted on the listing",
+        "Recorded walk is 14 min to Goko, but Motoyama is 10 min - use Goko as the scored station per the record's convention; verify on site"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-37091070003488/",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h18",
+      "type": "house-used",
+      "district": "Koda 5",
+      "districtJa": "幸田5丁目",
+      "title": "Used 4LDK (2022) - nearly new, south-facing balcony, Kita-Kogane 15 min",
+      "priceMan": 2990,
+      "priceFrom": false,
+      "landM2": 110.91,
+      "buildingM2": 91.91,
+      "layout": "4LDK",
+      "station": "Kita-Kogane",
+      "stationJa": "北小金",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 15,
+      "built": "Feb 2022",
+      "ageYears": 4,
+      "highlights": [
+        "Nearly new (2022) 4LDK on a 110.91m2 plot, 15 min from Kita-Kogane",
+        "South-facing large balcony, all rooms with storage, underfloor storage",
+        "Parking available; system kitchen, 2 toilets"
+      ],
+      "cautions": [
+        "At the 15-minute walk limit",
+        "Handover by consultation, not immediate",
+        "Detail page lists Art. 22 zone, Landscape Act and residential-land development regulation area among the legal restrictions",
+        "A LIFULL HOME'S feed lists the same house (same areas/build date) at ¥3,180万 vs ¥2,990万 here - portal prices disagree; this record uses the goo/SUUMO detail-page price"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12207/030Z21348075/122925069/x1030Z21348075.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
     },
     {
       "id": "l01",

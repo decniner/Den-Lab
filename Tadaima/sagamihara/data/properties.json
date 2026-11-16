@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Sagamihara",
     "editionJa": "相模原",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Sagamihara City, Kanagawa",
     "areaJa": "神奈川県相模原市"
   },
@@ -303,116 +303,6 @@
       "majorCautions": 1
     },
     {
-      "id": "h11",
-      "type": "house-used",
-      "district": "Koyama 1",
-      "districtJa": "小山１丁目",
-      "title": "Used 3LDK (2013) — renovated interior with built-in garage and loft, flat to two stations",
-      "priceMan": 3190,
-      "priceFrom": false,
-      "landM2": 87.49,
-      "buildingM2": 98.12,
-      "layout": "3LDK",
-      "station": "Minami-Hashimoto",
-      "stationJa": "南橋本",
-      "line": "JR Sagami Line",
-      "lineJa": "JR相模線",
-      "walkMin": 14,
-      "built": "Mar 2013",
-      "ageYears": 13,
-      "highlights": [
-        "Interior renovation completed — sold ready to view and move in",
-        "Built-in garage and loft",
-        "Storage in every room",
-        "Flat route to both Sagamihara and Hashimoto stations — easy by bicycle or pram",
-        "Schools and supermarket within walking distance"
-      ],
-      "cautions": [
-        "Portal feeds disagree on walk times (Minami-Hashimoto 12–14 min, Sagamihara 15–17 min) — scored at the conservative 14 min to Minami-Hashimoto",
-        "One feed gives the build date as Nov 2013 rather than Mar 2013 — confirm the registry date",
-        "Compact 87.49m2 plot",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14152&fi=1&ut%5B%5D=124_125&ut%5B%5D=056",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h12",
-      "type": "house-used",
-      "district": "Koyama 2",
-      "districtJa": "小山２丁目",
-      "title": "Used 4LDK (2013) — renovated, washroom straight from the entrance, 13 min to Minami-Hashimoto",
-      "priceMan": 3699,
-      "priceFrom": false,
-      "landM2": 94.8,
-      "buildingM2": 89.22,
-      "layout": "4LDK",
-      "station": "Minami-Hashimoto",
-      "stationJa": "南橋本",
-      "line": "JR Sagami Line",
-      "lineJa": "JR相模線",
-      "walkMin": 13,
-      "built": "Jul 2013",
-      "ageYears": 13,
-      "highlights": [
-        "Layout takes you from the entrance straight to the washroom",
-        "Tatami room beside the living room — play space, nap room or homework zone",
-        "Renovated and ready for immediate move-in",
-        "Home centre and daily shopping nearby"
-      ],
-      "cautions": [
-        "Portal feeds disagree on the walk (Minami-Hashimoto 12 vs 13 min) — scored at the conservative 13 min",
-        "Other feeds price a similar Koyama 2 house at 3,799–3,880万円 — confirm this is the same unit and current price",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_kanagawa/14152.html?p=2",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h13",
-      "type": "house-used",
-      "district": "Sagamidai 3",
-      "districtJa": "相模台３丁目",
-      "title": "Used 4LDK (2011) — vaulted 3.8m ceiling, south-east LDK, flat 10 min to Odakyu-Sagamihara",
-      "priceMan": 3980,
-      "priceFrom": false,
-      "landM2": 97.42,
-      "buildingM2": 98.12,
-      "layout": "4LDK",
-      "station": "Odakyu-Sagamihara",
-      "stationJa": "小田急相模原",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 10,
-      "built": "Aug 2011",
-      "ageYears": 15,
-      "highlights": [
-        "16.6-jo LDK facing south-east for light and ventilation",
-        "Bedroom with vaulted ceiling up to about 3.8m and windows on three sides",
-        "Underfloor storage and pantry in the kitchen",
-        "Flat approach to the station, shops scattered around the station area"
-      ],
-      "cautions": [
-        "15 years old with no renovation mentioned on the index — budget for water-area renewal",
-        "Parking is listed but size/number of cars is not stated on the index",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_kanagawa/14153.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h14",
       "type": "house-used",
       "district": "Kamitsuruma 4",
@@ -444,42 +334,6 @@
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_kanagawa/14153.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h15",
-      "type": "house-used",
-      "district": "Higashi-Onuma 1",
-      "districtJa": "東大沼１丁目",
-      "title": "Used 4LDK (1996) — fully renovated by the seller with 2-year defect warranty, 14 min to Kobuchi",
-      "priceMan": 3049,
-      "priceFrom": false,
-      "landM2": 113.51,
-      "buildingM2": 88.4,
-      "layout": "4LDK",
-      "station": "Kobuchi",
-      "stationJa": "古淵",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 14,
-      "built": "Jan 1996",
-      "ageYears": 30,
-      "highlights": [
-        "Full renovation: new kitchen, bath, toilets, washstands, wallpaper, roof/exterior painting, new water heater",
-        "Seller warrants leaks, structural defects and pipe faults for 2 years after handover; termite treatment warranted 5 years",
-        "Parking for 2 cars",
-        "Onuma primary school 700m (9 min)"
-      ],
-      "cautions": [
-        "Portal feeds disagree on price (2,999 vs 3,049万円) and build month (Jan vs Nov 1996) — scored at the higher 3,049万円 and Jan 1996; confirm both",
-        "Structure is 30 years old under the new skin — the warranty terms matter, read them",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=kanagawa&lc%5B%5D=14153&sa_l=80&fi=1&ut%5B%5D=124_125&fn=14",
         "verified": "index",
         "infoDate": "2026-10-23"
       }
@@ -524,42 +378,116 @@
       "majorCautions": 1
     },
     {
-      "id": "h17",
-      "type": "house-new",
-      "district": "Moto-Hashimoto Town",
-      "districtJa": "元橋本町",
-      "title": "New 3SLDK (2 units, Open House Mirasumo) — storage in every room, 14 min to Aihara",
-      "priceMan": 3780,
+      "id": "h18",
+      "type": "house-used",
+      "district": "Miyashita-Honcho 3",
+      "districtJa": "宮下本町３丁目",
+      "title": "Used 3LDK (2014) — 13 min to Tamazakai, all rooms two-side lit, roof balcony",
+      "priceMan": 3480,
       "priceFrom": false,
-      "landM2": 84.63,
-      "buildingM2": 98.12,
-      "layout": "3SLDK",
-      "station": "Aihara",
-      "stationJa": "相原",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 14,
-      "built": "New build",
-      "ageYears": 0,
+      "landM2": 120.87,
+      "buildingM2": 96.05,
+      "layout": "3LDK",
+      "station": "Tamazakai",
+      "stationJa": "多摩境",
+      "line": "Keio Sagamihara Line",
+      "lineJa": "京王相模原線",
+      "walkMin": 13,
+      "built": "Oct 2014",
+      "ageYears": 12,
       "highlights": [
-        "Storage in every room, dishwasher and bathroom dryer fitted",
-        "Two stations/two lines usable (Aihara 14 min, Hashimoto 16 min)",
-        "Primary school within 800m",
-        "Completion was scheduled for Aug 2026"
+        "All rooms two-side lit, vaulted ceiling, roof balcony plus balcony",
+        "First-type low-rise zone (50%/80%), south-west 4.5m public road, 4.2m frontage, no setback",
+        "Vacant, parking for 1 car, 2 toilets, bath dryer, dishwasher, system/counter kitchen",
+        "City gas, public water, storage in every room"
       ],
       "cautions": [
-        "Hashimoto Station is 16 min — just outside the 15-minute brief; scored on Aihara at 14 min",
-        "Only 1 of the 2 units remains on sale per the detail page",
-        "Buried-cultural-properties regulation applies (文化財保護法による規制有) per the detail page",
-        "In a quasi-fire-prevention zone (準防火地域) per the detail page"
+        "12 years old",
+        "Compact 120.87m2 plot",
+        "Parking for 1 car only"
       ],
       "source": {
         "name": "LIFULL HOME'S",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/14151/030/W/20723874.html",
+        "url": "https://www.homes.co.jp/kodate/b-35011570000030/",
         "verified": "detail",
-        "infoDate": "2026-11-02"
+        "infoDate": "2026-11-15"
       },
-      "majorCautions": 1
+      "isNew": true
+    },
+    {
+      "id": "h19",
+      "type": "house-used",
+      "district": "Miyashita-Honcho 2",
+      "districtJa": "宮下本町２丁目19-27",
+      "title": "Used 3LDK (1993) — renovated 2024–25, south-facing, 14 min to Tamazakai",
+      "priceMan": 2790,
+      "priceFrom": false,
+      "landM2": 129.27,
+      "buildingM2": 76.84,
+      "layout": "3LDK",
+      "station": "Tamazakai",
+      "stationJa": "多摩境",
+      "line": "Keio Sagamihara Line",
+      "lineJa": "京王相模原線",
+      "walkMin": 14,
+      "built": "Oct 1993",
+      "ageYears": 33,
+      "highlights": [
+        "Water areas renovated Jan 2024 and interior Jan 2025 (all-room cross, flooring, doors); exterior painted 2022",
+        "South-facing with open outlook, flat land, wide spacing to neighbours",
+        "15-jo LDK on the 1st floor, parking for 1 car, bath dryer, system/counter kitchen",
+        "All rooms two-side lit, all rooms floored, double-glazed windows"
+      ],
+      "cautions": [
+        "33 years old",
+        "LP gas (no city gas)",
+        "Currently occupied - viewing by appointment"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1436790000472/",
+        "verified": "detail",
+        "infoDate": "2026-11-06"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h20",
+      "type": "house-used",
+      "district": "Sagamihara 6",
+      "districtJa": "相模原６丁目",
+      "title": "Used 4LDK (1998) — Daiwa House light-steel, renovation planned Jan 2027, 11 min to Sagamihara",
+      "priceMan": 4399,
+      "priceFrom": false,
+      "landM2": 96.18,
+      "buildingM2": 101.12,
+      "layout": "4LDK",
+      "station": "Sagamihara",
+      "stationJa": "相模原",
+      "line": "JR Yokohama Line",
+      "lineJa": "JR横浜線",
+      "walkMin": 11,
+      "built": "Feb 1998",
+      "ageYears": 28,
+      "highlights": [
+        "Daiwa House light-steel 2-storey; renovation planned Jan 2027 (water areas, water heater, fittings, cross, exterior/roof paint, cleaning)",
+        "Vacant, immediate handover, parking free, 2 toilets, walk-in closet, underfloor storage",
+        "North-east 6m public road, no setback, city gas, public water, sewer",
+        "880m to Sagamihara station, near Sagamihara Central Elementary (600m) and Ok Sagamihara Central (300m)"
+      ],
+      "cautions": [
+        "28 years old",
+        "Compact 96.18m2 plot",
+        "Renovation not yet completed (planned Jan 2027)",
+        "Some feeds list the layout as 3SLDK rather than 4LDK"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-8920158364/",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "isNew": true
     },
     {
       "id": "l02",
@@ -754,44 +682,6 @@
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14152/030Z21645455/145164001/x1030Z21645455.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l07",
-      "type": "land",
-      "district": "Miyashita-Honcho 3",
-      "districtJa": "宮下本町3丁目",
-      "title": "Vacant 104m² low-rise-zone plot, 10 minutes from Tamazakai",
-      "priceMan": 2380,
-      "priceFrom": false,
-      "landM2": 104.32,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Tamazakai",
-      "stationJa": "多摩境",
-      "line": "Keio Sagamihara Line",
-      "lineJa": "京王相模原線",
-      "walkMin": 10,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 80%",
-      "highlights": [
-        "Vacant land in a quiet low-rise residential zone",
-        "City gas, public water and main sewer",
-        "Two-line area on the Machida border",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "10m height limit applies in this low-rise zone",
-        "Frontage is on a 4.1m road to the north-east",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/14152/030Z21791619/129388001/x1030Z21791619.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }

@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Kashiwa",
     "editionJa": "柏",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Kashiwa City, Chiba",
     "areaJa": "千葉県柏市"
   },
@@ -35,7 +35,7 @@
       "district": "Tsukushigaoka 2",
       "districtJa": "つくしが丘2丁目",
       "title": "New 4LDK — 19+ tatami LDK, south road, 8 min to Shin-Kashiwa",
-      "priceMan": 3980,
+      "priceMan": 3780,
       "priceFrom": false,
       "landM2": 98.87,
       "buildingM2": 97.7,
@@ -60,8 +60,9 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/4/12217/1448780015182/144878/x41448780015182.html",
         "verified": "detail",
-        "infoDate": "2026-11-02"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h02",
@@ -92,8 +93,8 @@
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6006/ensen/197/2197120.html",
-        "verified": "index",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12217/030/W/20763004.html",
+        "verified": "detail",
         "infoDate": "2026-10-22"
       }
     },
@@ -196,7 +197,7 @@
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/12217/030/Z/21113432.html",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12217/030/Z/21180867.html",
         "verified": "detail",
         "infoDate": "2026-10-20"
       },
@@ -234,39 +235,6 @@
         "url": "https://house.goo.ne.jp/buy/bh/detail/4/12217/1478760008889/147876/x41478760008889.html",
         "verified": "detail",
         "infoDate": "2026-10-24"
-      }
-    },
-    {
-      "id": "h08",
-      "type": "house-new",
-      "district": "Eirakudai 2",
-      "districtJa": "永楽台2丁目",
-      "title": "New 5LDK — 20-tatami LDK in a quiet low-rise zone, Shin-Kashiwa 12 min",
-      "priceMan": 4480,
-      "priceFrom": false,
-      "landM2": 140.05,
-      "buildingM2": 114.27,
-      "layout": "5LDK",
-      "station": "Shin-Kashiwa",
-      "stationJa": "新柏",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 12,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Largest new-build floor area in this set at 114.27m2",
-        "20-tatami LDK, walk-in closet, bathroom dryer",
-        "First-class low-rise residential zone"
-      ],
-      "cautions": [
-        "Single-house listing carried by several broker feeds at the same price — availability may be thinner than the feed count suggests"
-      ],
-      "source": {
-        "name": "OCN不動産 (goo feed)",
-        "url": "https://house.ocn.ne.jp/sp/new-ikkodate/special/3008/area_chiba/12217.html",
-        "verified": "index",
-        "infoDate": "2026-10-22"
       }
     },
     {
@@ -401,12 +369,11 @@
         "Landscape Act and fill-regulation controls listed on the detail page"
       ],
       "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/12217/030/W/22128450.html",
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/12217/030/W/22138345.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h19",
@@ -414,7 +381,7 @@
       "district": "Masuo 7",
       "districtJa": "増尾7丁目",
       "title": "New 4LDK — big 116m² interior, 8 min to Masuo, performance-evaluated",
-      "priceMan": 3690,
+      "priceMan": 3490,
       "priceFrom": false,
       "landM2": 128.56,
       "buildingM2": 116.03,
@@ -439,7 +406,42 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6001/area_chiba/12217.html",
         "verified": "index",
-        "infoDate": "2026-11-09"
+        "infoDate": "2026-11-16"
+      },
+      "priceDropMan": 200
+    },
+    {
+      "id": "h20",
+      "type": "house-new",
+      "district": "Kashiwa",
+      "districtJa": "柏",
+      "title": "New 3LDK (Sep 2026) — twin lofts, 15+ tatami LDK, Kita-Kashiwa 13 min",
+      "priceMan": 3680,
+      "priceFrom": false,
+      "landM2": 70.07,
+      "buildingM2": 75.15,
+      "layout": "3LDK",
+      "station": "Kita-Kashiwa",
+      "stationJa": "北柏",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 13,
+      "built": "Sep 2026",
+      "ageYears": 0,
+      "highlights": [
+        "New build completed Sep 2026, immediate viewing available",
+        "Two lofts for storage, hobby or kids' space; 15+ tatami LDK with vaulted ceiling",
+        "Quiet residential street; parking space; Kashiwa station area in the living sphere"
+      ],
+      "cautions": [
+        "Small plot (70.07m²) — the smallest land area in the edition",
+        "1種住居 zoning; no road-width information on the detail page"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/1/12217/030Z21239237/142870002/x1030Z21239237.html",
+        "verified": "detail",
+        "infoDate": "2026-11-14"
       },
       "isNew": true
     },
@@ -656,7 +658,7 @@
       "district": "Tsukushigaoka 2",
       "districtJa": "つくしが丘2丁目",
       "title": "171m² plot 8 minutes from Shin-Kashiwa — vacant-land delivery, private-road share",
-      "priceMan": 3280,
+      "priceMan": 3080,
       "priceFrom": false,
       "landM2": 171.25,
       "buildingM2": null,
@@ -681,8 +683,9 @@
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21184929/008885031/x1030Z21184929.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "l09",
@@ -716,41 +719,6 @@
       "source": {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21900901/000232007/x1030Z21900901.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l10",
-      "type": "land",
-      "district": "Toyoshiki",
-      "districtJa": "豊四季",
-      "title": "81m² small plot 9 minutes from Minami-Kashiwa — Art. 42-2 road, setback included",
-      "priceMan": 1798,
-      "priceFrom": false,
-      "landM2": 81,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Minami-Kashiwa",
-      "stationJa": "南柏",
-      "line": "JR Joban Line",
-      "lineJa": "JR常磐線",
-      "walkMin": 9,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種低層住居専用地域",
-      "coverageFar": "50% / 100%",
-      "highlights": [
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Setback required — about 6.7m² setback included in land area",
-        "Front road is an Art. 42-2 road (about 4.0m)",
-        "Private-road owner's consent for passage/excavation may be needed; water supply is 13mm"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z20467847/008885031/x1030Z20467847.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
@@ -862,8 +830,7 @@
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21899538/025659000/x1030Z21899538.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "l14",
@@ -900,6 +867,83 @@
         "url": "https://house.goo.ne.jp/buy/la/special/4002/area_chiba/12217.html",
         "verified": "index",
         "infoDate": "2026-11-09"
+      }
+    },
+    {
+      "id": "l15",
+      "type": "land",
+      "district": "Kita-Kashiwadai",
+      "districtJa": "北柏台",
+      "title": "81m² vacant lot 5 min from Kita-Kashiwa — no building condition",
+      "priceMan": 2680,
+      "priceFrom": false,
+      "landM2": 81.11,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kita-Kashiwa",
+      "stationJa": "北柏",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "準住居地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "5 min from Kita-Kashiwa station",
+        "No building condition (建築条件なし) — choose your own builder",
+        "Vacant land (更地), city gas connected",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Small lot (81.11m²)",
+        "準住居 zoning (quasi-residential)",
+        "Handover by consultation, not immediate"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/12217/84070019704/8407/x484070019704.html",
+        "verified": "detail",
+        "infoDate": "2026-11-14"
+      },
+      "isNew": true
+    },
+    {
+      "id": "l16",
+      "type": "land",
+      "district": "Fujishin 4",
+      "districtJa": "藤心4丁目",
+      "title": "264m² vacant lot 10 min from Sakasai — no building condition, 5m road",
+      "priceMan": 3180,
+      "priceFrom": false,
+      "landM2": 264.0,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Sakasai",
+      "stationJa": "逆井",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武野田線",
+      "walkMin": 10,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "30% / 50%",
+      "highlights": [
+        "Large 264m² vacant lot (79.85 tsubo) in a quiet residential area",
+        "No building condition (建築条件なし) — free choice of builder and plan",
+        "5m NE road; city gas, water and sewer; supermarket within a 10-min walk",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "地目 山林 (registered as forest land) — confirm residential registration/conversion before contracting",
+        "Low coverage/FAR (30%/50%) limits the buildable footprint",
+        "Handover by consultation, not immediate"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12217/030Z21583774/160498001/x1030Z21583774.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
       },
       "isNew": true
     }

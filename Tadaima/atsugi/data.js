@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Atsugi",
     "editionJa": "厚木",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Atsugi City, Kanagawa",
     "areaJa": "神奈川県厚木市"
   },
@@ -20,40 +20,6 @@ window.TADAIMA_DATA = {
     "note": "Land benchmarks: residential ¥/tsubo by station, triangulated from MLIT transaction data via Utinokati (multi-year, standardised) and 2026 official land-price points via Totinokati/tochidai/tochi-d: Hon-Atsugi ~85 (2026 official residential points at a 7–10-minute walk price 86–103 — Asahicho 5-chome ~102–103, Kotobukicho ~91, Asahicho 3-chome ~86; Utinokati's station regression of ~26 and station simple average of ~41 are NOT used — their 'Hon-Atsugi catchment' averages a 69-minute walk, sweeps in the Aikawa/Kiyokawa fringe and urbanisation-control deals, and is a rural number wearing a station's name; the all-use station average of ~86 is likewise not used, since it mixes Nakacho commercial points at ~443–512 in with the residential tail and only coincides with the residential figure), Aiko-Ishida ~55 (official points at 9–10 minutes 57–64 against a compact transaction catchment — regression ~40 at a 16-minute average walk, Aiko district deals ~50). Atsugi City contains exactly two stations, both Odakyu; Atsugi Station itself stands in Ebina, across the Sagami River, and no record in this collection uses it. Urbanisation-control (調整区域) land in Atsugi transacts at ~12万円/坪 across 68 deals against ~45 for urbanised residential land, and the city transaction pool averages 96-tsubo lots, so every wide-catchment average is dragged; control-area listings are major-caution, land-utility cases, never comparables. Walk bands use Atsugi's observed land gradient — official Hon-Atsugi residential points fall ~22% by 11–15 minutes and ~37% by 17–24 minutes, roughly −25% by a 10-minute walk and −40% at 16+ minutes for land; house prices show no such gradient in the data (16+-minute houses ~85 against the ~88 city anchor). Used houses transacted at about ¥88万/tsubo city-wide (floor-area basis, standardised): by age on the station regression curves, near-new stock ~118–129 falls to ~90–99 at 10 years, ~71–77 at 20 and ~61–64 at 30+; the ≤5-minute-walk house print of ~284 is commercial-mixed (it includes a ¥4.5億 shop/house deal) and is ignored, as is Aiko-Higashi's thin ~235 district print. Official residential land prices rose +2.4% in the 2026 公示地価 survey (33 points, none down; commercial +7.3%, and +9.3% in the 2026 基準地価) — a steady, commercial-led rise, the fifth straight annual increase on the Hon-Atsugi series, not a Matsudo-style acceleration."
   },
   "properties": [
-    {
-      "id": "h01",
-      "type": "house-new",
-      "district": "Asahi-cho 2",
-      "districtJa": "旭町2丁目",
-      "title": "New 4LDK designers house — 9 min from Hon-Atsugi",
-      "priceMan": 4280,
-      "priceFrom": false,
-      "landM2": 108.91,
-      "buildingM2": 99.78,
-      "layout": "4LDK",
-      "station": "Hon-Atsugi",
-      "stationJa": "本厚木",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 9,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Closest new house to Hon-Atsugi in this set (9 min) with an 18帖-plus LDK and face-to-face peninsula kitchen",
-        "Dishwasher, bathroom dryer plus Kanta-kun laundry dryer, delivery box; supermarkets and Asahi Park within walking distance"
-      ],
-      "cautions": [
-        "Portal feeds disagree on the walk (9 vs 10 min) — scored here on 9 from the lead listing; verify on the ground",
-        "South side of the centre toward the Sagami River lowland — check the city flood hazard map for this plot",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/kanagawa/atsugi-city/144D2AD583-town/list/",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
     {
       "id": "h02",
       "type": "house-new",
@@ -89,107 +55,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h03",
-      "type": "house-new",
-      "district": "Aiko-Higashi 3",
-      "districtJa": "愛甲東3丁目",
-      "title": "New 3LDK in a 6-unit development — long-term excellent housing",
-      "priceMan": 3680,
-      "priceFrom": false,
-      "landM2": 113.47,
-      "buildingM2": 94.8,
-      "layout": "3LDK",
-      "station": "Aiko-Ishida",
-      "stationJa": "愛甲石田",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 12,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "South-facing long-term excellent housing with parking for 2 in a 6-unit development",
-        "Full family-size package (94.8m² on 113.5m²) well under ¥4,000万"
-      ],
-      "cautions": [
-        "Portal feeds disagree: goo lists a unit in this development at ¥3,530万 with a 13-minute walk — scored here on the HOME'S ¥3,680万 / 12 min listing; verify the unit and price",
-        "Seen on a portal index page — verify details on the listing link",
-        "HOME'S index shows two units in this development with identical land/building areas (113.47 m² / 94.8 m²) priced differently — ¥3,680万 and ¥3,930万 — so confirm which physical unit the ¥3,680万 figure belongs to"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/kanagawa/atsugi-city/144D2AD581-town/list/",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h04",
-      "type": "house-new",
-      "district": "Aiko-Higashi 3",
-      "districtJa": "愛甲東3丁目",
-      "title": "New 3LDK (single-unit sale) — cheapest new house on the Aiko-Ishida side",
-      "priceMan": 3480,
-      "priceFrom": false,
-      "landM2": 102.53,
-      "buildingM2": 84.45,
-      "layout": "3LDK",
-      "station": "Aiko-Ishida",
-      "stationJa": "愛甲石田",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 13,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Cheapest new house within a station walk in this collection",
-        "Single-unit sale (1 of 1) rather than a large development plot"
-      ],
-      "cautions": [
-        "Smaller plot and building (102.5m² / 84.5m²) than the other Aiko-Higashi 3 new listings — several developments share this district name, so verify the exact unit on the listing link",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/kanagawa/atsugi-city/144D2AD581-town/list/",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h06",
-      "type": "house-used",
-      "district": "Sakae-cho 2",
-      "districtJa": "栄町2丁目",
-      "title": "Used house (2000) with a very large 203.7m² floor area near Hon-Atsugi",
-      "priceMan": 3980,
-      "priceFrom": false,
-      "landM2": 135.59,
-      "buildingM2": 203.7,
-      "layout": "3LDK",
-      "station": "Hon-Atsugi",
-      "stationJa": "本厚木",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 14,
-      "built": "Oct 2000",
-      "ageYears": 26,
-      "highlights": [
-        "By far the largest floor area in this set (203.7m²) on a 135.6m² plot, still inside the Hon-Atsugi walk",
-        "Scale suits a large family, two households or live/work use — confirm the registered use on the listing"
-      ],
-      "cautions": [
-        "Portal feeds disagree on the walk (12 vs 14 min) and one feed gives no layout — scored here on 14 min; verify both on the listing link",
-        "The 203.7m² building is far above the district norm — verify what the area includes before comparing on ¥/m²",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3005/ensen/311/2311330.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h07",
       "type": "house-used",
       "district": "Onna 2",
@@ -220,41 +85,6 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/14212/030Z22059199/000232146/x1030Z22059199.html",
         "verified": "detail",
         "infoDate": "2026-11-08"
-      },
-      "priceDropMan": 200
-    },
-    {
-      "id": "h09",
-      "type": "house-used",
-      "district": "Aiko-Higashi 1",
-      "districtJa": "愛甲東1丁目",
-      "title": "Used 2LDK built 2023 — near-new, 9 min from Aiko-Ishida",
-      "priceMan": 4000,
-      "priceFrom": false,
-      "landM2": 76.22,
-      "buildingM2": 84.46,
-      "layout": "2LDK",
-      "station": "Aiko-Ishida",
-      "stationJa": "愛甲石田",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 9,
-      "built": "Aug 2023",
-      "ageYears": 3,
-      "highlights": [
-        "Nearly new (Aug 2023) on a north-east corner plot with parking, 9 min from the station",
-        "Shopping and daily facilities inside the walk on the station side of Aiko-Higashi"
-      ],
-      "cautions": [
-        "Small 76.2m² plot and only 2LDK despite the 84.5m² building — priced for condition and location, not land or room count",
-        "Seen on a portal index page — verify details on the listing link",
-        "HOME'S index lists the house as currently occupied (居住中) — viewing and handover timing need confirming"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/chuko/kanagawa/aikoishida_05017-st/list/?referral_content=detail_link_nearstation",
-        "verified": "index",
-        "infoDate": "2026-10-23"
       }
     },
     {
@@ -358,38 +188,80 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l01",
-      "type": "land",
+      "id": "h13",
+      "type": "house-new",
       "district": "Aiko 2",
       "districtJa": "愛甲2丁目",
-      "title": "Vacant 184m² flat plot 5 minutes from Aiko-Ishida — south road",
-      "priceMan": 4180,
+      "title": "Aiko 2 - new 3SLDK corner house, 10 min to Aiko-Ishida",
+      "priceMan": 4799,
       "priceFrom": false,
-      "landM2": 183.97,
-      "buildingM2": null,
-      "layout": null,
+      "landM2": 153.84,
+      "buildingM2": 105.57,
+      "layout": "3SLDK",
       "station": "Aiko-Ishida",
       "stationJa": "愛甲石田",
       "line": "Odakyu Odawara Line",
       "lineJa": "小田急小田原線",
-      "walkMin": 5,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第二種住居地域",
-      "coverageFar": "60% / 200%",
+      "walkMin": 10,
+      "built": "Sep 2026",
+      "ageYears": 0,
       "highlights": [
-        "Vacant land (更地), flat, south-facing road, immediate handover (即引渡し可)",
-        "No building condition (建築条件なし) — choose your own builder"
+        "September 2026 completion, corner plot with 4.0m and 5.4m road frontage",
+        "46.5-tsubo plot with a 3LDK+S layout, store room, walk-in closet and storage in every room",
+        "Dishwasher, water purifier, bathroom dryer, double glazing and defect warranty (瑕疵担保付き); parking for 1",
+        "Supermarket within 800m; 10 min to Aiko-Ishida"
       ],
       "cautions": [
-        "Verified on the portal index page only (checked 2026-10-23); the listing's own detail page was not checked"
+        "Handover by negotiation (引渡可能時期 応相談)",
+        "First-class medium-high-rise zone (１種中高, 60%/200%), not low-rise residential",
+        "Portal feeds disagree on the building area (104m2 vs 105.57m2) - the detail page's 105.57m2 is used here",
+        "Second station (JR Atsugi) is a 17-minute bus ride, not a walk"
       ],
       "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4002/ensen/311/2311350.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-17078930005726/",
+        "verified": "detail",
+        "infoDate": "2026-10-18"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h14",
+      "type": "house-used",
+      "district": "Aiko 4",
+      "districtJa": "愛甲4丁目",
+      "title": "Aiko 4 - 2006 4SLDK with solar and battery, renovated 2023, 14 min to Aiko-Ishida",
+      "priceMan": 3680,
+      "priceFrom": false,
+      "landM2": 121.28,
+      "buildingM2": 100.64,
+      "layout": "4SLDK",
+      "station": "Aiko-Ishida",
+      "stationJa": "愛甲石田",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 14,
+      "built": "Jul 2006",
+      "ageYears": 20,
+      "highlights": [
+        "Solar power and battery fitted; 16.5-tatami LDK on the ground floor",
+        "January 2023 full renovation - kitchen, toilet, interior walls and ceilings, fittings, lighting, roof and exterior walls",
+        "South-facing regular plot on a 6m public road; parking for 2 (free)",
+        "Walk-in closet, terrace, vaulted ceiling; two toilets"
+      ],
+      "cautions": [
+        "Built July 2006 (20 years old, steel frame partly wood) - value rests on the 2023 renovation and the solar/battery system",
+        "Currently occupied (居住中); handover by negotiation",
+        "LP gas (no city gas)",
+        "Quasi-fire-prevention district plus Landscape Act, urban-regeneration special-district and shadow restrictions"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-90440003090/",
+        "verified": "detail",
+        "infoDate": "2026-11-12"
+      },
+      "isNew": true
     },
     {
       "id": "l02",
@@ -532,44 +404,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l06",
-      "type": "land",
-      "district": "Motocho",
-      "districtJa": "元町",
-      "title": "Tiny 55m² commercial-zone plot 12 minutes from Hon-Atsugi — three-side corner",
-      "priceMan": 1800,
-      "priceFrom": false,
-      "landM2": 55.85,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Hon-Atsugi",
-      "stationJa": "本厚木",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 12,
-      "built": null,
-      "ageYears": null,
-      "zoning": "商業地域",
-      "coverageFar": "80% / 400%",
-      "highlights": [
-        "Three-side corner lot (3方向角地) with 80% coverage / 400% FAR — a three-storey house can use the small plot hard",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Very small 55.85m² plot at a high ¥106.5万 per tsubo — you are paying for the station-side commercial zoning, not for land area",
-        "Commercial zoning (商業地域) by the station — flexible, but not a quiet residential street",
-        "An old house stands on the land; the index listing says it is demolished by the seller and handed over vacant (古家解体後更地渡し) — confirm this is in the contract",
-        "East-side lowland near the Sagami River — check the flood hazard map for this address",
-        "Verified on the portal index page only (checked 2026-10-23); the listing's own detail page was not checked"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/shuto_la/area_kanagawa/14212/052.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "l07",
       "type": "land",
       "district": "Motocho",
@@ -603,42 +437,6 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/1/14212/030Z21806271/117692001/x1030Z21806271.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l09",
-      "type": "land",
-      "district": "Aiko-Higashi 3",
-      "districtJa": "愛甲東3丁目",
-      "title": "Triangular 161m² corner plot 15 minutes from Aiko-Ishida — vacant, immediate handover",
-      "priceMan": 1800,
-      "priceFrom": false,
-      "landM2": 161.85,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Aiko-Ishida",
-      "stationJa": "愛甲石田",
-      "line": "Odakyu Odawara Line",
-      "lineJa": "小田急小田原線",
-      "walkMin": 15,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第一種中高層住居専用地域",
-      "coverageFar": "60% / 160%",
-      "highlights": [
-        "Three-side corner lot (3方角地), flat, vacant (更地) with immediate handover (即引渡し可) — the lowest ¥/tsubo in this collection",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Triangular plot (三角形) — the shape constrains the house plan even though the area is generous",
-        "Walk time is listed as 14 min in one portal feed and 15 min in another; the more conservative 15 min is used here",
-        "Verified on the portal index page only (checked 2026-10-23); the listing's own detail page was not checked"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (OCN feed)",
-        "url": "https://house.ocn.ne.jp/sp/tochi/ensen/311/2311350.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
       }
     },
     {
@@ -741,6 +539,85 @@ window.TADAIMA_DATA = {
         "verified": "index",
         "infoDate": "2026-10-23"
       }
+    },
+    {
+      "id": "l14",
+      "type": "land",
+      "district": "Asahi-cho 3",
+      "districtJa": "旭町3丁目",
+      "title": "116m2 vacant regular lot 12 min from Hon-Atsugi - no building condition",
+      "priceMan": 2380,
+      "priceFrom": false,
+      "landM2": 115.82,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Hon-Atsugi",
+      "stationJa": "本厚木",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "35-tsubo vacant, regular-shaped lot on flat ground, 12 min to Hon-Atsugi",
+        "No building condition (建築条件なし) - choose your own builder",
+        "Good sunlight; about ¥68万/坪 against the Hon-Atsugi benchmark of about ¥85万/坪",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Land category is farmland (地目 畑) - a farmland-law notification is required",
+        "Setback required (セットバック要); narrow 2.9m road with 5.2m frontage",
+        "Floor-area ratio capped at 160% by the road width",
+        "Handover by negotiation (引渡可能時期 相談)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/14212/030Z22021518/000232596/x1030Z22021518.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "l16",
+      "type": "land",
+      "district": "Funako",
+      "districtJa": "船子",
+      "title": "161m2 lot in the 9-plot Funako subdivision, 14 min to Aiko-Ishida",
+      "priceMan": 2580,
+      "priceFrom": false,
+      "landM2": 161,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Aiko-Ishida",
+      "stationJa": "愛甲石田",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 14,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第2種住居地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "Largest of the proposed subdivision plots at 161m2 (48.7 tsubo) for ¥53万/坪",
+        "Vacant lot; seller-direct sale (売主直接販売) keeps initial costs down",
+        "Supermarket 550m, convenience store 350m, hospital 350m"
+      ],
+      "cautions": [
+        "Building condition applies (建築条件あり) - must contract with the designated builder within about 3 months (the station index notes removal of the condition is negotiable)",
+        "LP gas (no city gas)",
+        "Quasi-fire-prevention district and Landscape Act restrictions; handover by negotiation",
+        "One of five plots from the same 9-plot Funako subdivision in the edition - see also l10, l11, l12 (live) and l15"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/14212/94070000154/9407/x494070000154.html",
+        "verified": "detail",
+        "infoDate": "2026-11-12"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

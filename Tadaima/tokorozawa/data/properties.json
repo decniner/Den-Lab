@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Tokorozawa",
     "editionJa": "所沢",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Tokorozawa City, Saitama",
     "areaJa": "埼玉県所沢市"
   },
@@ -28,233 +28,6 @@
     "note": "Land benchmarks: average transacted ¥/tsubo by station, MLIT transaction data via Utinokati (multi-year): Tokorozawa 81.0, Nishi-Tokorozawa 64.1, Shin-Tokorozawa ~62–66, Kotesashi 53.8. Where station transaction series are thin, official 2026 land-price points are used: Koku-koen ~62 (a premium park-side pocket — official residential points run 88–93), Sayamagaoka in-zone ~50 (official residential points 44–57; the raw transaction average of 26.6 is dragged down by urbanisation-control farmland-edge deals and is deliberately NOT used), Higashi-Tokorozawa ~65 (district official price 70.7, +4.4% in 2026), Shin-Akitsu ~55. Walk bands apply the observed −25% to −40% price gradient between a 5- and 15-minute walk in the same data. Used houses in Tokorozawa transacted at about ¥105–112万/tsubo (floor-area basis) in 2023–26, and official city land prices rose +2.98% in the 2026 prefectural survey."
   },
   "properties": [
-    {
-      "id": "h01",
-      "type": "house-new",
-      "district": "Matsugaoka 2-chome",
-      "districtJa": "松が丘2丁目",
-      "title": "New 4LDK on a big 175m² south-facing plot (Linage Matsugaoka)",
-      "priceMan": 4880,
-      "priceFrom": false,
-      "landM2": 175.4,
-      "buildingM2": 108.47,
-      "layout": "4LDK",
-      "station": "Seibuen",
-      "stationJa": "西武園",
-      "line": "Seibu Seibuen Line",
-      "lineJa": "西武園線",
-      "walkMin": 12,
-      "built": "Dec 2025",
-      "ageYears": 0,
-      "highlights": [
-        "Large 175.4m² plot on a south road — the biggest plot of any new house here",
-        "Iida Group development (リナージュ)"
-      ],
-      "cautions": [
-        "Seen on a portal list page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/saitama/tokorozawa-city/list/?page=3",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h02",
-      "type": "house-new",
-      "district": "Miyamoto-cho 2",
-      "districtJa": "宮本町2丁目",
-      "title": "New ZEH-standard 3LDK near Koku-koen (LovEingTown)",
-      "priceMan": 3980,
-      "priceFrom": false,
-      "landM2": 57.06,
-      "buildingM2": 76.23,
-      "layout": "3LDK",
-      "station": "Koku-koen",
-      "stationJa": "航空公園",
-      "line": "Seibu Shinjuku Line",
-      "lineJa": "西武新宿線",
-      "walkMin": 9,
-      "built": "Dec 2025",
-      "ageYears": 0,
-      "highlights": [
-        "ZEH-standard energy performance (LovEingTown, Yamaguchi Kikaku Sekkei)",
-        "Under ¥4,000万 this close to Koku-koen"
-      ],
-      "cautions": [
-        "Very small 57.1m² plot — a 3-storey wooden house makes up the space vertically",
-        "Seen on a portal list page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/saitama/tokorozawa-city/list/?page=3",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h03",
-      "type": "house-new",
-      "district": "Kami-Arai 2",
-      "districtJa": "上新井2丁目",
-      "title": "New houses in a five-home development (Libre Garden Kami-Arai)",
-      "priceMan": 4430,
-      "priceFrom": true,
-      "landM2": 120.44,
-      "buildingM2": 106.51,
-      "layout": "3SLDK",
-      "station": "Nishi-Tokorozawa",
-      "stationJa": "西所沢",
-      "line": "Seibu Ikebukuro Line",
-      "lineJa": "西武池袋線",
-      "walkMin": 14,
-      "built": "Dec 2025",
-      "ageYears": 0,
-      "highlights": [
-        "Five-house development (Libre Garden, Iida Group) — units run ¥4,430万–¥4,680万",
-        "Largest floor plan bracket in the new-build set (up to 4SLDK)"
-      ],
-      "cautions": [
-        "Seen on a portal list page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/saitama/tokorozawa-city/list/?page=3",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h04",
-      "type": "house-new",
-      "district": "Higashi-Tokorozawa 5",
-      "districtJa": "東所沢5丁目",
-      "title": "New 4LDK, long-term quality housing certified (Graffare)",
-      "priceMan": 4280,
-      "priceFrom": false,
-      "landM2": 100.01,
-      "buildingM2": 104.54,
-      "layout": "4LDK",
-      "station": "Higashi-Tokorozawa",
-      "stationJa": "東所沢",
-      "line": "JR Musashino Line",
-      "lineJa": "JR武蔵野線",
-      "walkMin": 11,
-      "built": "Nov 2025",
-      "ageYears": 0,
-      "highlights": [
-        "Certified long-term quality housing (長期優良住宅)",
-        "Five-house development (Graffare, Iida Group)"
-      ],
-      "cautions": [
-        "Seen on a portal list page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/saitama/tokorozawa-city/list/?page=3",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h05",
-      "type": "house-new",
-      "district": "Higashi-Tokorozawa-Wada 1",
-      "districtJa": "東所沢和田1丁目",
-      "title": "Polus development houses — only the cheapest units fit the brief (Brist Higashi-Tokorozawa)",
-      "priceMan": 4980,
-      "priceFrom": true,
-      "landM2": 120.0,
-      "buildingM2": 95.23,
-      "layout": "3LDK",
-      "station": "Higashi-Tokorozawa",
-      "stationJa": "東所沢",
-      "line": "JR Musashino Line",
-      "lineJa": "JR武蔵野線",
-      "walkMin": 13,
-      "built": "Nov 2024",
-      "ageYears": 0,
-      "highlights": [
-        "Polus-built (ポラス) 12-house development — a step up in build quality"
-      ],
-      "cautions": [
-        "Price is 'from' — the development runs to ¥5,480万 and most units exceed this collection's ¥5,000万 brief",
-        "Completed in Nov 2024 and still on sale — ask why before anything else",
-        "Seen on a portal list page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/saitama/tokorozawa-city/list/?page=3",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h07",
-      "type": "house-new",
-      "district": "Yayoi-cho",
-      "districtJa": "弥生町",
-      "title": "New 4LDK with built-in garage, completed Aug 2026",
-      "priceMan": 4790,
-      "priceFrom": false,
-      "landM2": 90.57,
-      "buildingM2": 90.88,
-      "layout": "4LDK",
-      "station": "Koku-koen",
-      "stationJa": "航空公園",
-      "line": "Seibu Shinjuku Line",
-      "lineJa": "西武新宿線",
-      "walkMin": 8,
-      "built": "Aug 2026",
-      "ageYears": 0,
-      "highlights": [
-        "Completed end of Aug 2026 — brand new and move-in ready",
-        "Built-in garage"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/new-ikkodate/special/6013/ensen/284/2284235.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h08",
-      "type": "house-new",
-      "district": "Mihara-cho 4",
-      "districtJa": "美原町4丁目",
-      "title": "New 4LDK at the walk limit — big interior, quasi-industrial zone",
-      "priceMan": 4580,
-      "priceFrom": false,
-      "landM2": 69.62,
-      "buildingM2": 109.71,
-      "layout": "4LDK",
-      "station": "Shin-Tokorozawa",
-      "stationJa": "新所沢",
-      "line": "Seibu Shinjuku Line",
-      "lineJa": "西武新宿線",
-      "walkMin": 15,
-      "built": "Nov 2025",
-      "ageYears": 0,
-      "highlights": [
-        "Generous 109.7m² floor area (Iida Group)"
-      ],
-      "cautions": [
-        "Zoning is quasi-industrial (準工業地域) — expect workshops and mixed neighbours, not a pure residential street",
-        "Small 69.6m² plot, 3-storey build",
-        "Seen on a portal list page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/saitama/tokorozawa-city/list/?page=3",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
     {
       "id": "h09",
       "type": "house-used",
@@ -484,6 +257,259 @@
         "infoDate": "2026-11-01"
       },
       "majorCautions": 2
+    },
+    {
+      "id": "h16",
+      "type": "house-new",
+      "district": "Miyamoto-cho 1",
+      "districtJa": "宮本町1丁目",
+      "title": "New 3LDK in a 5-home development near Koku-koen (Miyamoto-cho)",
+      "priceMan": 4580,
+      "priceFrom": false,
+      "landM2": 156.83,
+      "buildingM2": 98.53,
+      "layout": "3LDK",
+      "station": "Koku-koen",
+      "stationJa": "航空公園",
+      "line": "Seibu Shinjuku Line",
+      "lineJa": "西武新宿線",
+      "walkMin": 10,
+      "built": "Aug 2026",
+      "ageYears": 0,
+      "highlights": [
+        "5-unit development, 1 unit for sale — long-term excellent housing (長期優良住宅), BELS, Flat 35S",
+        "17.5-tatami LDK, walk-in closet, pantry, bath dryer, 2 toilets",
+        "Parking for 2, city gas, mains water and sewer"
+      ],
+      "cautions": [
+        "Cliff ordinance (がけ条例) applies to this plot",
+        "1号棟 sits on planned-road land (already sold); garbage share 0.4m² and road-planned-land share 1.65m² apply",
+        "Agreement portions are included in the land area; Flat 35 certification fee is extra"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/11208/030/W/22171640.html",
+        "verified": "detail",
+        "infoDate": "2026-11-14"
+      },
+      "majorCautions": 1,
+      "isNew": true
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Miyamoto-cho 1",
+      "districtJa": "宮本町1丁目",
+      "title": "Used 4LDK (1996) 10 minutes from Koku-koen — ¥2,580万",
+      "priceMan": 2580,
+      "priceFrom": false,
+      "landM2": 100.77,
+      "buildingM2": 89.84,
+      "layout": "4LDK",
+      "station": "Koku-koen",
+      "stationJa": "航空公園",
+      "line": "Seibu Shinjuku Line",
+      "lineJa": "西武新宿線",
+      "walkMin": 10,
+      "built": "Jan 1996",
+      "ageYears": 30,
+      "highlights": [
+        "Cheapest house in this refresh batch at ¥2,580万 — 10 minutes from Koku-koen",
+        "3× 6-tatami rooms, LDK adjoining a 6-tatami washitsu; all rooms with storage",
+        "Ground survey done; a parallel agency lists the same house at ¥2,780万 — this copy is cheaper"
+      ],
+      "cautions": [
+        "Seller waives defect liability (契約不適合免責); no seller building-condition survey planned",
+        "2012 bath/washbasin/exterior refresh, 2019 2F toilet replacement",
+        "景観法 / 航空法 / 宅地造成等規制法 / 都市再生特別措置法 apply"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z20598697/038395007/x1030Z20598697.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "majorCautions": 1,
+      "isNew": true
+    },
+    {
+      "id": "h18",
+      "type": "house-used",
+      "district": "Yurakucho",
+      "districtJa": "有楽町",
+      "title": "Used 3LDK (2000), fully reformed Jul 2026, 11 minutes from Koku-koen",
+      "priceMan": 4980,
+      "priceFrom": false,
+      "landM2": 100.19,
+      "buildingM2": 92.74,
+      "layout": "3LDK",
+      "station": "Koku-koen",
+      "stationJa": "航空公園",
+      "line": "Seibu Ikebukuro Line",
+      "lineJa": "西武池袋線",
+      "walkMin": 11,
+      "built": "Mar 2000",
+      "ageYears": 26,
+      "highlights": [
+        "All-electric (IH), 19.7-tatami LDK, loft storage, 2 toilets, bath dryer, dishwasher",
+        "11 minutes from Koku-koen (Tokorozawa 13 min also listed)",
+        "Wood 2-storey, commercial zone 80%/252%"
+      ],
+      "cautions": [
+        "City gas pipe runs in the road but has NO connection into the lot (敷地内引込管無) — confirm connection cost",
+        "Private-road area 15.3m²",
+        "Jul 2026 full interior + exterior reform (kitchen, bath, toilets, walls, floors, exterior); 景観法 / 航空法 / 日影制限 apply"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z22087267/176963001/x1030Z22087267.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h19",
+      "type": "house-used",
+      "district": "Kita-Akitsu",
+      "districtJa": "大字北秋津",
+      "title": "Used 4LDK (1992) 13 minutes from Tokorozawa — reform planned",
+      "priceMan": 4380,
+      "priceFrom": false,
+      "landM2": 100.12,
+      "buildingM2": 87.35,
+      "layout": "4LDK",
+      "station": "Tokorozawa",
+      "stationJa": "所沢",
+      "line": "Seibu Ikebukuro / Seibu Shinjuku",
+      "lineJa": "西武池袋線・西武新宿線",
+      "walkMin": 13,
+      "built": "Jul 1992",
+      "ageYears": 34,
+      "highlights": [
+        "SOCOLA shopping nearby, sidewalk route to the station, land-readjustment area",
+        "South 4.2m road, 4m frontage; city gas, public water, mains sewer",
+        "4LDK with a 17.2-tatami LDK"
+      ],
+      "cautions": [
+        "Shared private road 131m² × 88598/813130 share (~14.3m² effective)",
+        "New interior reform planned; handover end Dec 2026",
+        "Built 1992 (34 years) — pre-2000 construction"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z21696634/100451262/x1030Z21696634.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h20",
+      "type": "house-used",
+      "district": "Kita-Akitsu",
+      "districtJa": "大字北秋津",
+      "title": "Used 3LDK (2006), reformed Sep 2026, 14 minutes from Tokorozawa",
+      "priceMan": 4399,
+      "priceFrom": false,
+      "landM2": 105.96,
+      "buildingM2": 89.9,
+      "layout": "3LDK",
+      "station": "Tokorozawa",
+      "stationJa": "所沢",
+      "line": "Seibu Ikebukuro / Seibu Shinjuku",
+      "lineJa": "西武池袋線・西武新宿線",
+      "walkMin": 14,
+      "built": "Apr 2006",
+      "ageYears": 20,
+      "highlights": [
+        "Walk-in closet, all rooms 6+ tatami, garden, high-roof car parking OK",
+        "North 4.2m road, 7.1m frontage; city gas, public water, mains sewer",
+        "17.2-tatami LDK, 14 minutes from Tokorozawa"
+      ],
+      "cautions": [
+        "Sep 2026 full interior reform (kitchen, bath, toilets, walls, floors in all rooms)",
+        "Height cap 10m, 日影制限 apply"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z21858862/139076001/x1030Z21858862.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h21",
+      "type": "house-used",
+      "district": "Hoshinomiya 2",
+      "districtJa": "星の宮2丁目",
+      "title": "Sekisui House 4SLDK (1999), 9 minutes from Nishi-Tokorozawa",
+      "priceMan": 4780,
+      "priceFrom": false,
+      "landM2": 99.43,
+      "buildingM2": 125.95,
+      "layout": "4SLDK",
+      "station": "Nishi-Tokorozawa",
+      "stationJa": "西所沢",
+      "line": "Seibu Ikebukuro Line",
+      "lineJa": "西武池袋線",
+      "walkMin": 9,
+      "built": "Feb 1999",
+      "ageYears": 27,
+      "highlights": [
+        "Sekisui House custom-built steel 3-storey; 20+ tatami LDK",
+        "2 toilets, all windows double-glazed, all rooms 2-sided light",
+        "Parking for 2, north-east 16.4m road, 7m frontage"
+      ],
+      "cautions": [
+        "Building area (125.95m²) exceeds land area (99.43m²) — 3-storey build on a small plot",
+        "Water/sewer not stated on the detail page — confirm before listing",
+        "2023 exterior paint + waterproofing, 2022 2F toilet, 2024 water heater"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11208/030Z78830443/000232011/x1030Z78830443.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h22",
+      "type": "house-used",
+      "district": "Kami-Arai 2",
+      "districtJa": "上新井2丁目",
+      "title": "Used 4LDK (2005), reformed Oct 2026, 14 minutes from Nishi-Tokorozawa",
+      "priceMan": 3480,
+      "priceFrom": false,
+      "landM2": 132.24,
+      "buildingM2": 105.71,
+      "layout": "4LDK",
+      "station": "Nishi-Tokorozawa",
+      "stationJa": "西所沢",
+      "line": "Seibu Ikebukuro Line",
+      "lineJa": "西武池袋線",
+      "walkMin": 14,
+      "built": "Dec 2005",
+      "ageYears": 21,
+      "highlights": [
+        "17.5-tatami LDK, 2 toilets, bath dryer, IH, all-electric",
+        "Parking for 2, south-west facing, flat regular plot",
+        "All rooms with storage; 14 minutes from Nishi-Tokorozawa"
+      ],
+      "cautions": [
+        "Narrow frontage — south-west 3.1m road, only 2.1m frontage (setback done)",
+        "準防火地域, 第2上新井地区計画 apply",
+        "Oct 2026 water-area + full interior reform (washbasin, veranda, all-room cross, sash); Mar 2021 exterior"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1490040000048/",
+        "verified": "detail",
+        "infoDate": "2026-11-08"
+      },
+      "isNew": true
     },
     {
       "id": "l01",
@@ -865,6 +891,46 @@
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Matsugaoka 2",
+      "districtJa": "松が丘2丁目",
+      "title": "190m² lot 13 minutes from Seibuen, no building condition — ¥2,680万",
+      "priceMan": 2680,
+      "priceFrom": false,
+      "landM2": 190.11,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Seibuen",
+      "stationJa": "西武園",
+      "line": "Seibu Seibuen Line",
+      "lineJa": "西武園線",
+      "walkMin": 13,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 80% (district plan caps coverage at 40%)",
+      "highlights": [
+        "No building condition — build with any maker; sold by 三井のリハウス",
+        "57.5-tsubo regular plot with north-south two-road frontage (S 14m, 12.7m frontage; N 6.2m, 12.5m frontage)",
+        "Public water, city gas; immediate handover",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "松が丘地区計画 limits 建ぺい率 to 40% (not the nominal 50%)",
+        "現況 古家あり — an old house stands on the plot; demolition cost is at the buyer",
+        "Sewer not listed on the detail page (public water + city gas only)"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/tochi/b-35010570000054/",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "majorCautions": 1,
+      "isNew": true
     }
   ],
   "scoring": {

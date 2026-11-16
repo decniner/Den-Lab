@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Takasaki",
     "editionJa": "高崎",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Takasaki City, Gunma",
     "areaJa": "群馬県高崎市"
   },
@@ -98,38 +98,6 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/bh/detail/10202/030/W/21985662.html",
         "verified": "detail",
         "infoDate": "2026-10-20"
-      }
-    },
-    {
-      "id": "h04",
-      "type": "house-new",
-      "district": "Ino-cho",
-      "districtJa": "井野町",
-      "title": "New 4LDK, 115m² of floor space — 14 min from Ino Station",
-      "priceMan": 3580,
-      "priceFrom": false,
-      "landM2": 184.05,
-      "buildingM2": 115.51,
-      "layout": "4LDK",
-      "station": "Ino",
-      "stationJa": "井野",
-      "line": "JR Joetsu Line",
-      "lineJa": "JR上越線",
-      "walkMin": 14,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Largest new-build floor area here (115.5m²) with a walk-in closet",
-        "Supermarkets and schools nearby in the established Ino residential area; city gas"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6002/area_gunma/10202.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
       }
     },
     {
@@ -499,8 +467,78 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-11-09"
       },
-      "majorCautions": 1,
-      "priceDropMan": 90
+      "majorCautions": 1
+    },
+    {
+      "id": "h18",
+      "type": "house-new",
+      "district": "Kaizawa-cho",
+      "districtJa": "貝沢町",
+      "title": "New 3LDK+WIC (Oct 2026) — long-term quality housing, 14 min from Takasaki-Tonyamachi",
+      "priceMan": 3580,
+      "priceFrom": false,
+      "landM2": 138.68,
+      "buildingM2": 100.61,
+      "layout": "3LDK+WIC",
+      "station": "Takasaki-Tonyamachi",
+      "stationJa": "高崎問屋町",
+      "line": "JR Joetsu Line",
+      "lineJa": "JR上越線",
+      "walkMin": 14,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Long-term quality housing, ground survey done, completed Oct 2026",
+        "All rooms south-facing with a 15+ tatami LDK, walk-in closet and pantry",
+        "Parking for 2, city gas, 2 toilets, dishwasher, smart key"
+      ],
+      "cautions": [
+        "Landscape Act restriction noted on the listing",
+        "Single unit of the development (1号棟) — no resident agent on site, book viewings ahead"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/10202/030/W/21190812.html",
+        "verified": "detail",
+        "infoDate": "2026-11-14"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h19",
+      "type": "house-new",
+      "district": "Iidama-cho",
+      "districtJa": "飯玉町",
+      "title": "New 4LDK+WIC (Oct 2026) — corner lot, 15 min from Takasaki-Tonyamachi",
+      "priceMan": 3498,
+      "priceFrom": false,
+      "landM2": 132.27,
+      "buildingM2": 104.33,
+      "layout": "4LDK+WIC",
+      "station": "Takasaki-Tonyamachi",
+      "stationJa": "高崎問屋町",
+      "line": "JR Joetsu Line",
+      "lineJa": "JR上越線",
+      "walkMin": 15,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Long-term quality housing, completed Oct 2026, corner lot on a south road",
+        "Parking for 2, city gas, walk-in closet, 15+ tatami LDK, 2 toilets",
+        "Tsukazawa Elementary and Junior High both about 5 min on foot"
+      ],
+      "cautions": [
+        "Landscape Act and River Act restrictions noted on the listing",
+        "2-unit development — this is 1号棟; 2号棟 carries 70% coverage via the corner-lot relaxation",
+        "At the 15-minute walk limit for Takasaki-Tonyamachi"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/10202/030/W/20655410.html",
+        "verified": "detail",
+        "infoDate": "2026-11-14"
+      },
+      "isNew": true
     },
     {
       "id": "l01",
@@ -910,6 +948,45 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Negoya-cho",
+      "districtJa": "根小屋町",
+      "title": "205m² corner plot 2 minutes from Nekoya — setback, building on lot",
+      "priceMan": 600,
+      "priceFrom": false,
+      "landM2": 205.75,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Nekoya",
+      "stationJa": "根小屋",
+      "line": "Joshin Dentetsu Joshin Line",
+      "lineJa": "上信電鉄上信線",
+      "walkMin": 2,
+      "built": null,
+      "ageYears": null,
+      "zoning": "無指定",
+      "coverageFar": "70% / 200%",
+      "highlights": [
+        "2 minutes from Nekoya Station — the shortest walk of any Takasaki land record",
+        "Corner lot with a south 4.7m road; water and mains sewer",
+        "No building condition (建築条件なし) — choose your own builder",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is — demolition cost on the buyer",
+        "Setback required: the east road is only 2.4-2.5m wide",
+        "LP gas (no city gas); inside a residential-land development regulation area (宅地造成工事規制区域); Landscape Act area"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/10202/030Z97006839/140143001/x1030Z97006839.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Machida",
     "editionJa": "町田",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Machida City, Tokyo",
     "areaJa": "東京都町田市"
   },
@@ -62,38 +62,6 @@
       "majorCautions": 1
     },
     {
-      "id": "h03",
-      "type": "house-used",
-      "district": "Ogawa 2",
-      "districtJa": "小川2丁目",
-      "title": "Used 3LDK (1995) — shortest walk here, 7 min to Naruse",
-      "priceMan": 3850,
-      "priceFrom": false,
-      "landM2": 106.83,
-      "buildingM2": 83.86,
-      "layout": "3LDK",
-      "station": "Naruse",
-      "stationJa": "成瀬",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 7,
-      "built": "Nov 1995",
-      "ageYears": 30,
-      "highlights": [
-        "Shortest walk in this collection (7 min)",
-        "Balanced 83.9m2 house on a 106.8m2 plot"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3016/ensen/177/2177100.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h06",
       "type": "house-used",
       "district": "Minami-Naruse 8",
@@ -124,38 +92,6 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/13209/030Z21265307/000389287/x1030Z21265307.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h07",
-      "type": "house-used",
-      "district": "Naruse 8",
-      "districtJa": "成瀬8丁目",
-      "title": "Used 4LDK (1994) — under 3300 man, 13 min to Naruse",
-      "priceMan": 3299,
-      "priceFrom": false,
-      "landM2": 121.67,
-      "buildingM2": 98.12,
-      "layout": "4LDK",
-      "station": "Naruse",
-      "stationJa": "成瀬",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 13,
-      "built": "Mar 1994",
-      "ageYears": 32,
-      "highlights": [
-        "98.1m2 house on a 121.7m2 plot at a low headline price",
-        "JR Yokohama Line access to Machida and Yokohama"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3016/ensen/177/2177100.html",
-        "verified": "index",
         "infoDate": "2026-10-23"
       }
     },
@@ -230,45 +166,12 @@
       "majorCautions": 1
     },
     {
-      "id": "h12",
-      "type": "house-used",
-      "district": "Aihara-machi",
-      "districtJa": "相原町",
-      "title": "Used 4SLDK (2000) — Sekisui House build, full renovation, 11 min to Aihara",
-      "priceMan": 3197,
-      "priceFrom": false,
-      "landM2": 139.9,
-      "buildingM2": 110.36,
-      "layout": "4SLDK",
-      "station": "Aihara",
-      "stationJa": "相原",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 11,
-      "built": "Mar 2000",
-      "ageYears": 26,
-      "highlights": [
-        "Sekisui House construction with a full renovation",
-        "South road, parking for 2, generous storage throughout"
-      ],
-      "cautions": [
-        "Hilly western Machida district — check the city hazard map for slope/landslide risk",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/special/3007/area_tokyo/13209.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h13",
       "type": "house-used",
       "district": "Minami-Tsukushino 1",
       "districtJa": "南つくし野1丁目",
       "title": "Used 4LDK (2010) — renovated 2010 build near Suzukakedai",
-      "priceMan": 4199,
+      "priceMan": 3999,
       "priceFrom": false,
       "landM2": 82.8,
       "buildingM2": 66.1,
@@ -292,8 +195,9 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/4/13209/1284750066509/128475/x41284750066509.html",
         "verified": "detail",
-        "infoDate": "2026-10-24"
-      }
+        "infoDate": "2026-11-16"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h14",
@@ -360,8 +264,7 @@
         "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B0%5D=0205&lo%5B1%5D=0302",
         "verified": "index",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h16",
@@ -394,40 +297,147 @@
         "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B0%5D=0205&lo%5B1%5D=0302",
         "verified": "index",
         "infoDate": "2026-11-09"
+      }
+    },
+    {
+      "id": "h18",
+      "type": "house-used",
+      "district": "Tamagawagakuen 2",
+      "districtJa": "玉川学園2丁目",
+      "title": "Used 5LDK (1979) — 2 min to Tamagawagakuen-mae, 192m2 plot",
+      "priceMan": 3480,
+      "priceFrom": false,
+      "landM2": 192.19,
+      "buildingM2": 142.65,
+      "layout": "5LDK",
+      "station": "Tamagawagakuen-mae",
+      "stationJa": "玉川学園前",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 2,
+      "built": "Apr 1979",
+      "ageYears": 47,
+      "highlights": [
+        "Shortest walk in this collection (2 min to Tamagawagakuen-mae)",
+        "Large 192.19m2 plot with a 142.65m2 5LDK house",
+        "South-west 4.5m road with 11.9m of frontage; city gas and mains sewer"
+      ],
+      "cautions": [
+        "Built Apr 1979 — pre-1981 seismic standard, 47 years old",
+        "Private-road burden of 51.15m2"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13209/030Z22030073/000389287/x1030Z22030073.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
       },
+      "majorCautions": 1,
       "isNew": true
     },
     {
-      "id": "h17",
+      "id": "h19",
       "type": "house-used",
-      "district": "Minami-Oya 4",
-      "districtJa": "南大谷4丁目",
-      "title": "Used 2SLDK (2018) — vaulted-ceiling LDK, floor heating, parking for 2",
-      "priceMan": 4980,
+      "district": "Tamagawagakuen 3",
+      "districtJa": "玉川学園3丁目",
+      "title": "Used 3LDK (1998) — renovated, south road, 13 min to Tamagawagakuen-mae",
+      "priceMan": 3980,
       "priceFrom": false,
-      "landM2": 136.69,
-      "buildingM2": 101.73,
-      "layout": "2SLDK",
+      "landM2": 122.0,
+      "buildingM2": 92.53,
+      "layout": "3LDK",
       "station": "Tamagawagakuen-mae",
       "stationJa": "玉川学園前",
       "line": "Odakyu Odawara Line",
       "lineJa": "小田急小田原線",
       "walkMin": 13,
-      "built": "Jun 2018",
-      "ageYears": 8,
+      "built": "May 1998",
+      "ageYears": 28,
       "highlights": [
-        "Relatively recent 2018 build with vaulted-ceiling LDK and floor heating",
-        "Parking for 2 cars; all rooms 5 tatami or larger"
+        "Renovated (リノベーション) house, vacant with immediate handover",
+        "South-facing public road on flat land; city gas and mains sewer"
       ],
       "cautions": [
-        "At the top of this collection's price brief",
-        "Seen on a portal index page — verify details on the listing link"
+        "Built May 1998 — 28 years old",
+        "Compact 92.53m2 building in a 3LDK layout",
+        "Sourced from the local agency site tie-up24.jp, not a portal feed — verify on the listing link"
+      ],
+      "source": {
+        "name": "tie-up24",
+        "url": "https://www.tie-up24.jp/fudo/11687/",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h20",
+      "type": "house-used",
+      "district": "Tamagawagakuen 5",
+      "districtJa": "玉川学園5丁目",
+      "title": "Used 3SLDK (2010) — corner lot on high ground, 11 min to Tamagawagakuen-mae",
+      "priceMan": 4080,
+      "priceFrom": false,
+      "landM2": 120.19,
+      "buildingM2": 91.08,
+      "layout": "3SLDK",
+      "station": "Tamagawagakuen-mae",
+      "stationJa": "玉川学園前",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 11,
+      "built": "May 2010",
+      "ageYears": 16,
+      "highlights": [
+        "Relatively recent 2010 build, vacant with immediate handover",
+        "Corner lot on high ground with south views; north and west 5m public roads",
+        "City gas and mains sewer"
+      ],
+      "cautions": [
+        "Compact 91.08m2 building in a 3SLDK layout",
+        "Sourced from the local agency site tie-up24.jp, not a portal feed — verify on the listing link"
+      ],
+      "source": {
+        "name": "tie-up24",
+        "url": "https://www.tie-up24.jp/fudo/11824",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h21",
+      "type": "house-used",
+      "district": "Tamagawagakuen 2",
+      "districtJa": "玉川学園2丁目",
+      "title": "Used 4LDK (1996) — 3-way corner lot, basement garage, 9 min to Tamagawagakuen-mae",
+      "priceMan": 4280,
+      "priceFrom": false,
+      "landM2": 131.74,
+      "buildingM2": 99.36,
+      "layout": "4LDK",
+      "station": "Tamagawagakuen-mae",
+      "stationJa": "玉川学園前",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 9,
+      "built": "Nov 1996",
+      "ageYears": 30,
+      "highlights": [
+        "Three-way corner lot (south-west, north-west, north-east roads)",
+        "Basement garage plus car space; floor heating",
+        "Two toilets; bath and washroom on the 2nd floor with direct balcony access for laundry"
+      ],
+      "cautions": [
+        "Built Nov 1996 — 30 years old",
+        "Bath and washroom are on the 2nd floor",
+        "Private-road burden of 10m2"
       ],
       "source": {
         "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/sp/ikkodate/area_tokyo/13209.html?lo%5B0%5D=0205&lo%5B1%5D=0302",
-        "verified": "index",
-        "infoDate": "2026-11-09"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13209/030Z20293276/000389287/x1030Z20293276.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
       },
       "isNew": true
     },
@@ -608,8 +618,7 @@
         "verified": "detail",
         "infoDate": "2026-11-09"
       },
-      "majorCautions": 1,
-      "priceDropMan": 50
+      "majorCautions": 1
     },
     {
       "id": "l09",
@@ -720,6 +729,85 @@
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Tamagawagakuen 8",
+      "districtJa": "玉川学園8丁目",
+      "title": "161m2 plot 8 min from Tamagawagakuen-mae — no building conditions",
+      "priceMan": 2800,
+      "priceFrom": false,
+      "landM2": 161.78,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tamagawagakuen-mae",
+      "stationJa": "玉川学園前",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 8,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 80%",
+      "highlights": [
+        "No building condition (建築条件なし) — choose your own builder",
+        "Short 8-min walk; sunny cul-de-sac plot",
+        "City gas, mains sewer",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "Private-road burden of 53.53m2, plus about 267.61m2 of shared private road (1/5 share)",
+        "Narrow 2.5m frontage onto a 5m private road",
+        "Handover Feb 2027, not immediate"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z21971144/006050533/x1030Z21971144.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "l14",
+      "type": "land",
+      "district": "Tamagawagakuen 5",
+      "districtJa": "玉川学園5丁目",
+      "title": "231m2 south-sloping plot 10 min from Tamagawagakuen-mae — no building conditions",
+      "priceMan": 2680,
+      "priceFrom": false,
+      "landM2": 231.4,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Tamagawagakuen-mae",
+      "stationJa": "玉川学園前",
+      "line": "Odakyu Odawara Line",
+      "lineJa": "小田急小田原線",
+      "walkMin": 10,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 80%",
+      "highlights": [
+        "No building condition (建築条件なし) — choose your own builder",
+        "231.4m2 (about 70 tsubo) at ¥2,680万",
+        "South-east 5.4m road; south slope with good sun and ventilation; city gas, mains sewer",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
+        "South-sloping plot with a step/level difference and no retaining wall on part of the north boundary",
+        "Part of the plot lies in a planned-road zone (都市計画道路); wall setback (壁面後退) and earth-fill regulation (盛土規制法) apply"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13209/030Z78534557/191357001/x1030Z78534557.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

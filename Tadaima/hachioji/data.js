@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Hachioji",
     "editionJa": "八王子",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Hachioji City, Tokyo",
     "areaJa": "東京都八王子市"
   },
@@ -110,8 +110,7 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-11-07"
       },
-      "majorCautions": 1,
-      "priceDropMan": 100
+      "majorCautions": 1
     },
     {
       "id": "h04",
@@ -145,42 +144,6 @@ window.TADAIMA_DATA = {
       "source": {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/21902100.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "h05",
-      "type": "house-new",
-      "district": "Namiki-machi",
-      "districtJa": "並木町",
-      "title": "New 4LDK single-unit sale, move-in ready — 14 min from Nishi-Hachioji",
-      "priceMan": 4080,
-      "priceFrom": false,
-      "landM2": 99.37,
-      "buildingM2": 101.58,
-      "layout": "4LDK",
-      "station": "Nishi-Hachioji",
-      "stationJa": "西八王子",
-      "line": "JR Chuo Line",
-      "lineJa": "JR中央線",
-      "walkMin": 14,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Seller direct sale (売主直売); move-in ready (即入居可)",
-        "Barrier-free design; 101.6m² house — larger than most new builds here"
-      ],
-      "cautions": [
-        "Land (99.4m²) is compact for western Hachioji — the house, not the plot, carries the value",
-        "Near the 15-minute walk limit of this collection",
-        "Zoning is quasi-industrial (準工業地域, 60%/200%), not purely residential",
-        "Plot is flagged irregular-shaped (不整形地) and subject to a building agreement (建築協定)",
-        "Front road is a 42条2項 road; setback already completed"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/detail/13201/030/W/20039265.html",
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
@@ -458,8 +421,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21014623/006050903/x1030Z21014623.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h15",
@@ -494,8 +456,7 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-11-09"
       },
-      "majorCautions": 2,
-      "isNew": true
+      "majorCautions": 2
     },
     {
       "id": "h16",
@@ -529,6 +490,111 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/special/3002/area_tokyo/13201.html",
         "verified": "index",
         "infoDate": "2026-11-09"
+      }
+    },
+    {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Komiya-cho",
+      "districtJa": "小宮町",
+      "title": "Used 4SLDK (2020) — 5 min from Komiya, city gas, bath dryer",
+      "priceMan": 2880,
+      "priceFrom": false,
+      "landM2": 107.52,
+      "buildingM2": 101.65,
+      "layout": "4SLDK",
+      "station": "Komiya",
+      "stationJa": "小宮",
+      "line": "JR Hachiko Line",
+      "lineJa": "JR八高線",
+      "walkMin": 5,
+      "built": "May 2020",
+      "ageYears": 6,
+      "highlights": [
+        "2020 build, only 5 min from Komiya Station",
+        "4SLDK with 101.65m² of living space on a regular 107.52m² plot",
+        "City gas, bath dryer, ample storage; flat walk to the station"
+      ],
+      "cautions": [
+        "Quasi-industrial zone (準工業地域) — check neighbouring uses before buying",
+        "Built 2020 — still young, but past the new-build warranty window"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21335332/000232004/x1030Z21335332.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h18",
+      "type": "house-used",
+      "district": "Tsujuri-cho",
+      "districtJa": "廿里町",
+      "title": "Used 3LDK (2003) — 6 min from Takao, two lines, 15.5-jo LDK",
+      "priceMan": 3280,
+      "priceFrom": false,
+      "landM2": 105.94,
+      "buildingM2": 79.49,
+      "layout": "3LDK",
+      "station": "Takao",
+      "stationJa": "高尾",
+      "line": "JR Chuo Line",
+      "lineJa": "JR中央線",
+      "walkMin": 6,
+      "built": "Mar 2003",
+      "ageYears": 23,
+      "highlights": [
+        "6 min from Takao on two lines (JR Chuo + Keio Takao)",
+        "1st-class low-rise residential zone; 15.5-jo LDK with three-sided light",
+        "Two balconies, two toilets, parking; immediate handover"
+      ],
+      "cautions": [
+        "LP gas, not city gas — check running costs and tank placement",
+        "Built 2003 — budget for roof / water-heater renewal in the near term",
+        "Narrow 3m road frontage on the north-east side"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21559013/006050903/x1030Z21559013.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h19",
+      "type": "house-used",
+      "district": "Katakura-cho",
+      "districtJa": "片倉町",
+      "title": "Used 4LDK (1998) — 4 min from Keio-Katakura, south-facing, city gas",
+      "priceMan": 3380,
+      "priceFrom": false,
+      "landM2": 130.15,
+      "buildingM2": 92.54,
+      "layout": "4LDK",
+      "station": "Keio-Katakura",
+      "stationJa": "京王片倉",
+      "line": "Keio Takao Line",
+      "lineJa": "京王高尾線",
+      "walkMin": 4,
+      "built": "Sep 1998",
+      "ageYears": 28,
+      "highlights": [
+        "4 min from Keio-Katakura (JR Katakura 9 min) — two lines",
+        "South-facing 4LDK in a 1st-class low-rise zone, city gas",
+        "Convenience store 2 min, supermarket 9 min; immediate handover"
+      ],
+      "cautions": [
+        "Built 1998 — 28 years old; inspect structure and water systems before offering",
+        "Private-road area 11.58m² — confirm shared-road rights and maintenance split"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/13201/030Z21114163/006050903/x1030Z21114163.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
       },
       "isNew": true
     },
@@ -712,115 +778,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l09",
-      "type": "land",
-      "district": "Oya-cho",
-      "districtJa": "大谷町",
-      "title": "249m² south-east corner lot 9 minutes from Kita-Hachioji",
-      "priceMan": 3880,
-      "priceFrom": false,
-      "landM2": 249.8,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Kita-Hachioji",
-      "stationJa": "北八王子",
-      "line": "JR Hachiko Line",
-      "lineJa": "JR八高線",
-      "walkMin": 9,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種中高層住居専用地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Over 75 tsubo, south-road corner lot (角地), city gas and mains sewer",
-        "No building conditions — any house maker allowed",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4001/ensen/301/2301360.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "l10",
-      "type": "land",
-      "district": "Koyasu-cho 2",
-      "districtJa": "子安町2丁目",
-      "title": "Vacant 73m² lot 9 minutes from Hachioji Station — central, small",
-      "priceMan": 3280,
-      "priceFrom": false,
-      "landM2": 73.58,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Hachioji",
-      "stationJa": "八王子",
-      "line": "JR Yokohama Line",
-      "lineJa": "JR横浜線",
-      "walkMin": 9,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 160%",
-      "highlights": [
-        "Vacant land (更地), city gas and mains sewer, 9 minutes from the Hachioji terminal",
-        "Keio-Hachioji is also 12 minutes on foot",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Small 73.58m² plot at the highest ¥/tsubo in this collection — central-station pricing",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4001/ensen/301/2301360.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "l12",
-      "type": "land",
-      "district": "Honcho",
-      "districtJa": "本町",
-      "title": "131m² lot at the 15-minute walk limit from Hachioji — setback applies",
-      "priceMan": 3280,
-      "priceFrom": false,
-      "landM2": 131.05,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Hachioji",
-      "stationJa": "八王子",
-      "line": "JR Chuo Line",
-      "lineJa": "JR中央線",
-      "walkMin": 15,
-      "built": null,
-      "ageYears": null,
-      "zoning": "近隣商業地域",
-      "coverageFar": "80% / 300%",
-      "highlights": [
-        "South-road corner lot (角地), city gas and mains sewer, immediate handover",
-        "Listing notes apartment use is also possible in this 80% / 300% zone; supermarket 3 minutes on foot",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り), sold as-is — demolition cost likely on the buyer",
-        "Setback applies (セットバック有り) — the listing says the ~28m² setback area is based on a current-condition survey",
-        "At the 15-minute walk limit of this collection; Keio-Hachioji is 19 minutes",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/special/4001/ensen/301/2301360.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "l13",
       "type": "land",
       "district": "Mejirodai 4",
@@ -855,6 +812,82 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/shuto_la/area_tokyo/13201.html",
         "verified": "index",
         "infoDate": "2026-11-09"
+      }
+    },
+    {
+      "id": "l14",
+      "type": "land",
+      "district": "Mejirodai 3",
+      "districtJa": "めじろ台3丁目",
+      "title": "256m² no-condition plot 7 min from Mejirodai — 8m road, vacant land",
+      "priceMan": 3290,
+      "priceFrom": false,
+      "landM2": 256.07,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Mejirodai",
+      "stationJa": "めじろ台",
+      "line": "Keio Takao Line",
+      "lineJa": "京王高尾線",
+      "walkMin": 7,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 80%",
+      "highlights": [
+        "Large 256.07m² (77.46 tsubo) flat plot, 7 min from Mejirodai",
+        "No building condition (建築条件なし) — choose your own builder",
+        "Vacant land, immediate handover; 8m road on the north side, 17m frontage",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "1st-class low-rise zone, 40% / 80% — a rebuild footprint is limited; confirm the buildable envelope",
+        "Large 256m² plot — a big garden to maintain, and a bigger rebuild cost if you ever demolish"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z22176147/006050903/x1030Z22176147.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "l15",
+      "type": "land",
+      "district": "Komiya-cho",
+      "districtJa": "小宮町",
+      "title": "130m² plot 4 min from Komiya — building condition applies",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 130.08,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Komiya",
+      "stationJa": "小宮",
+      "line": "JR Hachiko Line",
+      "lineJa": "JR八高線",
+      "walkMin": 4,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "40% / 80%",
+      "highlights": [
+        "4 min from Komiya Station on a 130.08m² regular plot",
+        "Vacant land, immediate handover; south-east 5m road, 12.2m frontage",
+        "City gas and mains sewer; primary school 10 min",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Building condition applies (建築条件あり) — must sign a build contract with the seller's designated builder within ~3 months, or the sale is voided",
+        "Private-road area 23.56m² plus a ~400.38m² shared private road (1/17 share) — confirm rights and costs",
+        "1st-class low-rise zone, 40% / 80% — a rebuild footprint is limited"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/13201/030Z20977617/006050903/x1030Z20977617.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
       },
       "isNew": true
     }

@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Koshigaya",
     "editionJa": "越谷",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Koshigaya City, Saitama",
     "areaJa": "埼玉県越谷市"
   },
@@ -49,39 +49,6 @@
         "Barrier-free touches; parking for 2+"
       ],
       "cautions": [
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6007/area_saitama/11222.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
-      "id": "h04",
-      "type": "house-new",
-      "district": "Gamo",
-      "districtJa": "大字蒲生",
-      "title": "New 4LDK — 110.4m² house, 10 min to Gamo Station",
-      "priceMan": 4999,
-      "priceFrom": false,
-      "landM2": 99.9,
-      "buildingM2": 110.37,
-      "layout": "4LDK",
-      "station": "Gamo",
-      "stationJa": "蒲生",
-      "line": "Tobu Isesaki Line",
-      "lineJa": "東武伊勢崎線",
-      "walkMin": 10,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Big 110.37m² floor plan — among the largest new houses in this collection",
-        "Walk-in closet; 10 min to Gamo on the Tobu Skytree Line"
-      ],
-      "cautions": [
-        "Top of this collection's budget at ¥4,999万",
         "Seen on a portal index page — verify details on the listing link"
       ],
       "source": {
@@ -462,6 +429,43 @@
       "majorCautions": 1
     },
     {
+      "id": "h17",
+      "type": "house-new",
+      "district": "Otomari",
+      "districtJa": "大字大泊",
+      "title": "New 4LDK (Feb 2027) — 113m² house on surveyed 114m² plot, Sengendai 15 min",
+      "priceMan": 4380,
+      "priceFrom": false,
+      "landM2": 114.67,
+      "buildingM2": 113.39,
+      "layout": "4LDK",
+      "station": "Sengendai",
+      "stationJa": "せんげん台",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 15,
+      "built": "Feb 2027",
+      "ageYears": 0,
+      "highlights": [
+        "New build completing Feb 2027, handover late Mar 2027 — single detached house",
+        "Large 113.39m² floor area on a surveyed 114.67m² plot; free parking",
+        "City gas, mains water and sewer; 1st-class low-rise residential zone, north 4m public road, no setback"
+      ],
+      "cautions": [
+        "Walk is exactly at the 15-minute brief cap (Sengendai); next-nearest station Takesato is 22 min",
+        "Still under construction (Feb 2027 completion, handover late Mar 2027) — confirm the finish schedule and what is included at handover",
+        "Koshigaya is low-lying river plain — check the Koshigaya City hazard map for this plot before purchase"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1573820001503/",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "majorCautions": 1,
+      "isNew": true
+    },
+    {
       "id": "l01",
       "type": "land",
       "district": "Gamo Nishimachi 2",
@@ -690,44 +694,6 @@
       }
     },
     {
-      "id": "l07",
-      "type": "land",
-      "district": "Osawa 4",
-      "districtJa": "大沢4丁目",
-      "title": "Regular-shaped 99m² plot 11 minutes from Kita-Koshigaya — private-road portion noted",
-      "priceMan": 2480,
-      "priceFrom": false,
-      "landM2": 99.18,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Kita-Koshigaya",
-      "stationJa": "北越谷",
-      "line": "Tobu Skytree Line",
-      "lineJa": "東武伊勢崎線",
-      "walkMin": 11,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 160%",
-      "highlights": [
-        "Regular-shaped (整形地) 30-tsubo plot with a wide 12m frontage onto a south-west 4m road",
-        "Quiet residential street with schools and shops on foot",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost on the buyer",
-        "A private-road area of 11.36m² is noted on the listing (私道面積) — confirm whether it sits inside the headline area and what burden applies",
-        "No flood or liquefaction disclosure on the listing page — Koshigaya is low-lying river plain (Moto-Arakawa / Naka / Ayase rivers), so check the Koshigaya City hazard map before relying on this lot",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/11222/030Z21165712/006110007/x1030Z21165712.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
       "id": "l08",
       "type": "land",
       "district": "Fukuroyama",
@@ -916,6 +882,44 @@
         "verified": "detail",
         "infoDate": "2026-10-22"
       }
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Osawa 4",
+      "districtJa": "大沢4丁目",
+      "title": "Vacant ~30-tsubo plot 12 minutes from Kita-Koshigaya — SW road, no building condition",
+      "priceMan": 3150,
+      "priceFrom": false,
+      "landM2": 99.95,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Kita-Koshigaya",
+      "stationJa": "北越谷",
+      "line": "Tobu Skytree Line",
+      "lineJa": "東武伊勢崎線",
+      "walkMin": 12,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "Vacant land (更地), no building condition — free choice of builder; agent offers a free floor-plan service",
+        "SW-facing ~4m road, sunny and flat, ~30 tsubo (99.95m²) regular-shaped plot",
+        "Water, mains sewer and city gas; Osawa Elementary ~9 min walk",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Private-road share exists (私道持分有り); the SW road is partly private (42条3項道路) — confirm the share size and maintenance burden",
+        "Plot lies in a Specific Urban River flood-countermeasure-law area (特定都市河川浸水被害対策法) and a 22条区域 — check the Koshigaya City hazard map before purchase"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/11222/1537040002876/153704/x41537040002876.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

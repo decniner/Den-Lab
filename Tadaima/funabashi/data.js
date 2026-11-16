@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Funabashi",
     "editionJa": "船橋",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Funabashi City, Chiba",
     "areaJa": "千葉県船橋市"
   },
@@ -124,7 +124,7 @@ window.TADAIMA_DATA = {
       "district": "Hasama-cho 3",
       "districtJa": "飯山満町3丁目",
       "title": "4SLDK custom-style house — high ground, 2 stations usable",
-      "priceMan": 2790,
+      "priceMan": 2580,
       "priceFrom": false,
       "landM2": 112.95,
       "buildingM2": 101.85,
@@ -150,8 +150,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21216340/046740017/x1030Z21216340.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 210
     },
     {
       "id": "h04",
@@ -300,7 +301,7 @@ window.TADAIMA_DATA = {
       "district": "Nishi-Narashino 3",
       "districtJa": "西習志野3丁目",
       "title": "4DK 3-4 min to Kita-Narashino — ¥20.8M dual-line access",
-      "priceMan": 2080,
+      "priceMan": 1880,
       "priceFrom": false,
       "landM2": 75.81,
       "buildingM2": 77.83,
@@ -326,8 +327,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21273207/006050A93/x1030Z21273207.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h12",
@@ -335,7 +337,7 @@ window.TADAIMA_DATA = {
       "district": "Narashinodai 1",
       "districtJa": "習志野台1丁目",
       "title": "3SLDK 2×4 house — 4 min to Takane-Kido, 17.5-jo LDK",
-      "priceMan": 3780,
+      "priceMan": 3580,
       "priceFrom": false,
       "landM2": 82.19,
       "buildingM2": 105.15,
@@ -361,8 +363,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21965098/006050A93/x1030Z21965098.html",
         "verified": "detail",
-        "infoDate": "2026-11-02"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h13",
@@ -403,7 +406,7 @@ window.TADAIMA_DATA = {
       "district": "Minami-Misaki 2",
       "districtJa": "南三咲2丁目",
       "title": "New long-term quality house — 7 min to Takifudo, performance certified",
-      "priceMan": 3090,
+      "priceMan": 2890,
       "priceFrom": false,
       "landM2": 91.0,
       "buildingM2": 87.56,
@@ -427,8 +430,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12204/030/W/21235478.html",
         "verified": "detail",
-        "infoDate": "2026-11-02"
-      }
+        "infoDate": "2026-11-13"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h16",
@@ -464,12 +468,87 @@ window.TADAIMA_DATA = {
       }
     },
     {
+      "id": "h17",
+      "type": "house-used",
+      "district": "Hasama-cho 3",
+      "districtJa": "飯山満町3丁目",
+      "title": "All-south-facing 4LDK — 2023/24 water + exterior reform, Yakuen-dai 11 min",
+      "priceMan": 2980,
+      "priceFrom": false,
+      "landM2": 100.5,
+      "buildingM2": 94.4,
+      "layout": "4LDK",
+      "station": "Yakuen-dai",
+      "stationJa": "薬園台",
+      "line": "Keisei Matsudo Line",
+      "lineJa": "京成松戸線",
+      "walkMin": 11,
+      "built": "Jul 2005",
+      "ageYears": 21,
+      "highlights": [
+        "All rooms south-facing with daylight windows",
+        "2023 water-area reform (kitchen, bath, toilet, washroom) and 2024 exterior reform (walls, Galvalume roof)",
+        "Corner lot with two private-road frontages; 1-car parking; 2 toilets; underfloor storage",
+        "Yaoko supermarket newly opened ~750m from Yakuen-dai station"
+      ],
+      "cautions": [
+        "Both road frontages are private roads (N 5m, W 4.5m)",
+        "Built Jul 2005 (21 years) — older stock",
+        "Occupied; handover by consultation"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1252300006472/",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h18",
+      "type": "house-used",
+      "district": "Hasama-cho 2",
+      "districtJa": "飯山満町2丁目",
+      "title": "Inspected 4LDK on 143m² — third-party building survey done, Maebara 13 min",
+      "priceMan": 2180,
+      "priceFrom": false,
+      "landM2": 142.63,
+      "buildingM2": 96.05,
+      "layout": "4LDK",
+      "station": "Maebara",
+      "stationJa": "前原",
+      "line": "Keisei Matsudo Line",
+      "lineJa": "京成松戸線",
+      "walkMin": 13,
+      "built": "Jun 1997",
+      "ageYears": 29,
+      "highlights": [
+        "Third-party building-condition survey completed",
+        "South-west 5.5–5.7m public road; south-facing balcony; tandem parking for 2 cars",
+        "2018 exterior reform; supermarkets within a 10-min walk; elementary + junior high nearby",
+        "Good land size (142.63m²) for ¥2,180万"
+      ],
+      "cautions": [
+        "Built Jun 1997 (29 years) — the oldest house in the edition",
+        "Narrow 2.4m road frontage despite the wide road",
+        "School-district caveat: Iiyamamitsu-minami / Iiyamamitsu-chu zone — education-board permission needed for Nakano-ki Elementary / Maebara Junior High",
+        "Handover by consultation"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12204/030Z21854710/129566001/x1030Z21854710.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
       "id": "l01",
       "type": "land",
       "district": "Kaijin 3",
       "districtJa": "海神3丁目",
       "title": "125m² vacant corner plot 5 minutes from Kaijin — 3 stations, 4 lines usable",
-      "priceMan": 3980,
+      "priceMan": 3880,
       "priceFrom": false,
       "landM2": 125.37,
       "buildingM2": null,
@@ -498,8 +577,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12204/030Z20711771/140775001/x1030Z20711771.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 100
     },
     {
       "id": "l02",
@@ -537,8 +617,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12204/030Z21318448/000585110/x1030Z21318448.html",
         "verified": "detail",
         "infoDate": "2026-11-08"
-      },
-      "priceDropMan": 700
+      }
     },
     {
       "id": "l03",
@@ -735,7 +814,7 @@ window.TADAIMA_DATA = {
       "district": "Minami-Misaki 2",
       "districtJa": "南三咲2丁目",
       "title": "141m² vacant flag plot 5 minutes from Takifudo — lowest price per tsubo in the set",
-      "priceMan": 1500,
+      "priceMan": 1380,
       "priceFrom": false,
       "landM2": 140.8,
       "buildingM2": null,
@@ -763,47 +842,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12204/030Z21064356/006050A93/x1030Z21064356.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l10",
-      "type": "land",
-      "district": "Futawa-Higashi 5",
-      "districtJa": "二和東5丁目",
-      "title": "76m² regular corner plot 5 minutes from Futawa-Mukodai — station-south redevelopment underway",
-      "priceMan": 1180,
-      "priceFrom": false,
-      "landM2": 76.11,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Futawa-Mukodai",
-      "stationJa": "二和向台",
-      "line": "Keisei Matsudo Line",
-      "lineJa": "京成松戸線",
-      "walkMin": 5,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種中高層住居専用地域",
-      "coverageFar": "60% / 160%",
-      "highlights": [
-        "Regular-shaped corner plot, two 4m roads; elementary school and hospital within 10 min / 5 min",
-        "Listing notes station-south rotary, complex and park redevelopment in progress",
-        "City gas, mains water and mains sewer; 60% coverage allows a compact 3-storey plan",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Old house standing, sold as-is (上物有り・現況渡し)",
-        "Seller's contract non-conformity liability is exempted (売主の契約不適合責任免責)",
-        "Private-road area 18.68m² listed separately on the detail page"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12204/030Z21272270/047658000/x1030Z21272270.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-11-15"
       },
-      "majorCautions": 1
+      "priceDropMan": 120
     },
     {
       "id": "l11",
@@ -879,6 +920,89 @@ window.TADAIMA_DATA = {
         "verified": "detail",
         "infoDate": "2026-10-18"
       }
+    },
+    {
+      "id": "l13",
+      "type": "land",
+      "district": "Minami-Misaki 3",
+      "districtJa": "南三咲3丁目",
+      "title": "71m² corner lot 2 min from Takifudo — station-front land at ¥1,180万",
+      "priceMan": 1180,
+      "priceFrom": false,
+      "landM2": 71.38,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Takifudo",
+      "stationJa": "滝不動",
+      "line": "Keisei Matsudo Line",
+      "lineJa": "京成松戸線",
+      "walkMin": 2,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種住居地域",
+      "coverageFar": "60% / 160%",
+      "highlights": [
+        "2 min from Takifudo station — the closest lot to a station in the edition",
+        "Corner lot with two road frontages (SW 4m, NW 3.3m)",
+        "No building condition (建築条件なし) — choose your own builder",
+        "Immediate handover; city gas, mains water and sewer; elementary school 8 min",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Small lot (71.38m²) — the smallest in the edition",
+        "Old house standing (上物有り, sold as-is) — demolition cost on top of the price",
+        "About 19.7m² shared private road (1/4 share) plus 4.93m² private-road area",
+        "1種住居 zoning"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12204/030Z21462671/006050A93/x1030Z21462671.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "l14",
+      "type": "land",
+      "district": "Minami-Misaki 2",
+      "districtJa": "南三咲2丁目",
+      "title": "166m² lot 5 min from Takifudo — ¥1,100万 with old house usable as-is",
+      "priceMan": 1100,
+      "priceFrom": false,
+      "landM2": 165.75,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Takifudo",
+      "stationJa": "滝不動",
+      "line": "Keisei Matsudo Line",
+      "lineJa": "京成松戸線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "第1種低層住居専用地域",
+      "coverageFar": "50% / 100%",
+      "highlights": [
+        "About 50 tsubo for ¥1,100万 — the lowest price per tsubo among the new land candidates",
+        "No building condition (建築条件なし)",
+        "Old house on the lot can be used as-is per the listing",
+        "Quiet residential street; elementary school 780m, supermarket 660m",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Narrow 2.2m road frontage on a single SE road",
+        "Old house standing (上物有り) — demolition or renovation cost if rebuilding",
+        "越境物有り (encroachment noted on the listing)",
+        "Handover by consultation; listed since Sep 2026",
+        "Headline text says Takifudo 4 min; the detail table says 5 min"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (LIFULL HOME'S feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/4/12204/1204490009150/120449/x41204490009150.html",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

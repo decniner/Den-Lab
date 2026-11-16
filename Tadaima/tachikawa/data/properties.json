@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Tachikawa",
     "editionJa": "立川",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Tachikawa City, Tokyo",
     "areaJa": "東京都立川市"
   },
@@ -200,7 +200,7 @@
       "district": "Hagoromo-cho 2",
       "districtJa": "羽衣町2丁目",
       "title": "Used 3LDK built 2024 — near-new on the Nambu Line side",
-      "priceMan": 4388,
+      "priceMan": 4180,
       "priceFrom": false,
       "landM2": 72.79,
       "buildingM2": 58.2,
@@ -222,8 +222,9 @@
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/13202/030Z20552313/084132110/x1030Z20552313.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-14"
+      },
+      "priceDropMan": 208
     },
     {
       "id": "h10",
@@ -463,8 +464,7 @@
         "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
         "verified": "index",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h18",
@@ -498,8 +498,7 @@
         "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
         "verified": "index",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h19",
@@ -534,8 +533,7 @@
         "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
         "verified": "index",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h20",
@@ -569,6 +567,217 @@
         "url": "https://house.goo.ne.jp/sp/ikkodate/result.html?la=shuto&ma=tokyo&lc%5B0%5D=13202&si%5B0%5D=008",
         "verified": "index",
         "infoDate": "2026-11-09"
+      }
+    },
+    {
+      "id": "h21",
+      "type": "house-used",
+      "district": "Fujimi-cho 4",
+      "districtJa": "富士見町4丁目",
+      "title": "Used 1SLDK built 2010 — compact, vacant, 13 min to Nishi-Tachikawa",
+      "priceMan": 3680,
+      "priceFrom": false,
+      "landM2": 111.93,
+      "buildingM2": 77.89,
+      "layout": "1SLDK",
+      "station": "Nishi-Tachikawa",
+      "stationJa": "西立川",
+      "line": "JR Ome Line",
+      "lineJa": "JR青梅線",
+      "walkMin": 13,
+      "built": "Dec 2010",
+      "ageYears": 16,
+      "highlights": [
+        "Vacant and viewable immediately",
+        "Vaulted ceiling and loft storage in a 2010 custom build",
+        "Schools and shops within a 5-min walk"
+      ],
+      "cautions": [
+        "Only 0.9m of frontage onto a 1.8m private road — the building-plan road width (~4.0m) differs from the actual ~1.8m; confirm rebuild rules with the authorities before buying",
+        "No parking; no mains sewer listed on the detail page (drainage 'other')",
+        "Effectively a 1LDK plus service room (1SLDK), not a family 3LDK"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-37260210000023/",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "majorCautions": 1,
+      "isNew": true
+    },
+    {
+      "id": "h22",
+      "type": "house-used",
+      "district": "Ichiban-cho 2",
+      "districtJa": "一番町2丁目",
+      "title": "Used 4LDK built 2010 with solar panels — 11 min to Seibu-Tachikawa",
+      "priceMan": 3490,
+      "priceFrom": false,
+      "landM2": 93.5,
+      "buildingM2": 91.66,
+      "layout": "4LDK",
+      "station": "Seibu-Tachikawa",
+      "stationJa": "西武立川",
+      "line": "Seibu Haijima Line",
+      "lineJa": "西武拝島線",
+      "walkMin": 11,
+      "built": "Dec 2010",
+      "ageYears": 16,
+      "highlights": [
+        "Solar panels (2012) and IH cooking; 2021 bath reform with new water heater",
+        "Parking available; NW 6m public road",
+        "Acrus Plaza shopping within walking distance"
+      ],
+      "cautions": [
+        "Occupied until late Mar 2027 — handover is not immediate"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1174820014709/",
+        "verified": "detail",
+        "infoDate": "2026-11-10"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h23",
+      "type": "house-used",
+      "district": "Sunagawa-cho 6",
+      "districtJa": "砂川町6丁目",
+      "title": "Used 3LDK built 2022 — custom build, long-term excellent housing, 15 min to Tamagawa-Josui",
+      "priceMan": 4690,
+      "priceFrom": false,
+      "landM2": 132.26,
+      "buildingM2": 95.22,
+      "layout": "3LDK",
+      "station": "Tamagawa-Josui",
+      "stationJa": "玉川上水",
+      "line": "Seibu Haijima Line",
+      "lineJa": "西武拝島線",
+      "walkMin": 15,
+      "built": "Mar 2022",
+      "ageYears": 4,
+      "highlights": [
+        "2022 custom build (アールプランナー) with long-term excellent housing certification",
+        "Floor heating, WIC, bath dryer, 2 toilets; parking for 2",
+        "South-facing, all rooms with 2-sided light"
+      ],
+      "cautions": [
+        "15-minute walk is at the brief's limit",
+        "Building area is a wall-centre (壁心) measurement; private-road share ~26m² (156m² × 1/6) is included in the headline land area"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1277780000096/",
+        "verified": "detail",
+        "infoDate": "2026-11-12"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h24",
+      "type": "house-used",
+      "district": "Nishisuna-cho 3",
+      "districtJa": "西砂町3丁目",
+      "title": "Used 4LDK built 2002 on a corner plot — cheapest in the set at ¥2,380万",
+      "priceMan": 2380,
+      "priceFrom": false,
+      "landM2": 86.43,
+      "buildingM2": 87.21,
+      "layout": "4LDK",
+      "station": "Seibu-Tachikawa",
+      "stationJa": "西武立川",
+      "line": "Seibu Haijima Line",
+      "lineJa": "西武拝島線",
+      "walkMin": 15,
+      "built": "Feb 2002",
+      "ageYears": 24,
+      "highlights": [
+        "Cheapest house in the Tachikawa set at ¥2,380万",
+        "Corner plot with two wide public roads (N 9.9m + SE 7m)",
+        "Vacant; parking available"
+      ],
+      "cautions": [
+        "Part of the lot lies on a planned urban road (都市計画道路) — timing undetermined",
+        "Built Feb 2002 (24 years); no mains sewer listed on the detail page"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-35007530000176/",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "majorCautions": 1,
+      "isNew": true
+    },
+    {
+      "id": "h25",
+      "type": "house-used",
+      "district": "Saiwai-cho 2",
+      "districtJa": "幸町2丁目",
+      "title": "Used 4LDK built 2005 — 7 min to Sunagawa-Nanaban, exterior reformed Oct 2026",
+      "priceMan": 4880,
+      "priceFrom": false,
+      "landM2": 115.49,
+      "buildingM2": 87.58,
+      "layout": "4LDK",
+      "station": "Sunagawa-Nanaban",
+      "stationJa": "砂川七番",
+      "line": "Tama Monorail",
+      "lineJa": "多摩モノレール",
+      "walkMin": 7,
+      "built": "Sep 2005",
+      "ageYears": 21,
+      "highlights": [
+        "7 min to Sunagawa-Nanaban — the closest station walk among the new candidates",
+        "Exterior reformed Oct 2026; vacant",
+        "2-sided balcony plus terrace"
+      ],
+      "cautions": [
+        "Private-road share ~23.7m² (47.34m² × 1/2) is included in the headline land area",
+        "No mains sewer listed on the detail page"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-35010950000032/",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h26",
+      "type": "house-used",
+      "district": "Saiwai-cho 5",
+      "districtJa": "幸町5丁目",
+      "title": "Used 4LDK built 2003 — fully reformed Nov 2026, 12 min to Sunagawa-Nanaban",
+      "priceMan": 4999,
+      "priceFrom": false,
+      "landM2": 115.01,
+      "buildingM2": 91.08,
+      "layout": "4LDK",
+      "station": "Sunagawa-Nanaban",
+      "stationJa": "砂川七番",
+      "line": "Tama Monorail",
+      "lineJa": "多摩モノレール",
+      "walkMin": 12,
+      "built": "Jun 2003",
+      "ageYears": 23,
+      "highlights": [
+        "Full Nov 2026 reform — kitchen, bath, toilets and washbasin all new, plus exterior/roof paint",
+        "All rooms with 2-sided light and storage; loft; parking for 2 (tandem)",
+        "Schools within ~300m; vacant"
+      ],
+      "cautions": [
+        "Building area is a wall-centre (壁心) measurement",
+        "¥4,999万 is ¥1万 under the price cap"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1529330000617/",
+        "verified": "detail",
+        "infoDate": "2026-11-08"
       },
       "isNew": true
     },

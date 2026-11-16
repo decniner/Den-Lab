@@ -10,24 +10,24 @@ window.TADAIMA_CITIES = [
     "lng": 139.486,
     "slug": "kawagoe",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 29,
-      "houses": 21,
+      "total": 33,
+      "houses": 25,
       "land": 8
     },
-    "fromHouseMan": 1299,
+    "fromHouseMan": 1480,
     "fromLandMan": 630,
     "stations": [
-      "Tsurugashima",
       "Shingashi",
-      "Minami-Otsuka",
+      "Tsurugashima",
       "Kasahata",
+      "Minami-Otsuka",
+      "Kasumigaseki",
       "Kawagoeshi",
       "Hon-Kawagoe",
-      "Kasumigaseki",
       "Matoba",
-      "Kawagoe"
+      "Nishi-Kawagoe"
     ],
     "stationsJa": [
       "川越市",
@@ -38,7 +38,7 @@ window.TADAIMA_CITIES = [
       "的場",
       "霞ヶ関",
       "鶴ヶ島",
-      "川越"
+      "西川越"
     ],
     "districts": [
       "Uenodacho",
@@ -54,8 +54,7 @@ window.TADAIMA_CITIES = [
       "Sunashinden 2-chome",
       "Nodamachi 2-chome",
       "Shimohiroya",
-      "Nakaharamachi 2-chome",
-      "Wakita-Shinmachi",
+      "Imanari 4-chome",
       "Minami-Otsuka 4-chome",
       "Sunashinden 1-chome"
     ]
@@ -71,22 +70,22 @@ window.TADAIMA_CITIES = [
     "lng": 139.412,
     "slug": "tachikawa",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 23,
-      "houses": 16,
+      "total": 29,
+      "houses": 22,
       "land": 7
     },
     "fromHouseMan": 2000,
     "fromLandMan": 1980,
     "stations": [
-      "Tamagawa-Josui",
-      "Musashi-Sunagawa",
       "Seibu-Tachikawa",
+      "Tamagawa-Josui",
       "Sunagawa-Nanaban",
+      "Musashi-Sunagawa",
       "Nishi-Kunitachi",
-      "Izumi-Taiikukan",
       "Nishi-Tachikawa",
+      "Izumi-Taiikukan",
       "Tachikawa",
       "Shibasaki-Taiikukan",
       "Tappi"
@@ -117,6 +116,10 @@ window.TADAIMA_CITIES = [
       "Hagoromo-cho 3",
       "Sunagawa-cho 3",
       "Ichiban-cho 3",
+      "Fujimi-cho 4",
+      "Sunagawa-cho 6",
+      "Nishisuna-cho 3",
+      "Saiwai-cho 2",
       "Saiwai-cho 1",
       "Nishiki-cho 1",
       "Shibasaki-cho 4",
@@ -136,10 +139,10 @@ window.TADAIMA_CITIES = [
     "lng": 139.903,
     "slug": "matsudo",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 22,
-      "houses": 13,
+      "total": 24,
+      "houses": 15,
       "land": 9
     },
     "fromHouseMan": 2280,
@@ -186,6 +189,7 @@ window.TADAIMA_CITIES = [
       "Akiyama",
       "Kanegasaku",
       "Koda 5",
+      "Goko-nishi 3",
       "Tokiwadaira 1",
       "Korokudai",
       "Tokiwadaira 5",
@@ -208,24 +212,24 @@ window.TADAIMA_CITIES = [
     "lng": 139.972,
     "slug": "kashiwa",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 25,
+      "total": 26,
       "houses": 12,
-      "land": 13
+      "land": 14
     },
-    "fromHouseMan": 3690,
+    "fromHouseMan": 3490,
     "fromLandMan": 1280,
     "stations": [
-      "Shin-Kashiwa",
       "Sakasai",
+      "Shin-Kashiwa",
       "Masuo",
       "Takayanagi",
+      "Kita-Kashiwa",
       "Toyoshiki",
       "Kashiwa",
       "Edogawadai",
-      "Kashiwanoha-Campus",
-      "Minami-Kashiwa"
+      "Kashiwanoha-Campus"
     ],
     "stationsJa": [
       "新柏",
@@ -234,9 +238,9 @@ window.TADAIMA_CITIES = [
       "逆井",
       "柏の葉キャンパス",
       "増尾",
+      "北柏",
       "豊四季",
-      "柏",
-      "南柏"
+      "柏"
     ],
     "districts": [
       "Tsukushigaoka 2",
@@ -245,17 +249,20 @@ window.TADAIMA_CITIES = [
       "Sakasai",
       "Hananoi",
       "Masuo 1",
-      "Eirakudai 2",
       "Toyojumi 5",
+      "Eirakudai 2",
       "Fujishin 2",
       "Masuo 7",
+      "Kashiwa",
       "Kaga 3",
       "Sakasai 5",
       "Sakasai-Fujinodai",
       "Shinokoda",
       "Akehara 2",
       "Toyoshiki",
-      "Akehara 3"
+      "Akehara 3",
+      "Kita-Kashiwadai",
+      "Fujishin 4"
     ]
   },
   {
@@ -269,11 +276,11 @@ window.TADAIMA_CITIES = [
     "lng": 139.316,
     "slug": "hachioji",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 23,
-      "houses": 14,
-      "land": 9
+      "total": 24,
+      "houses": 16,
+      "land": 8
     },
     "fromHouseMan": 1980,
     "fromLandMan": 899,
@@ -281,51 +288,43 @@ window.TADAIMA_CITIES = [
       "Komiya",
       "Yamada",
       "Katakura",
-      "Hachioji",
-      "Nishi-Hachioji",
+      "Takao",
+      "Keio-Katakura",
+      "Mejirodai",
       "Hazama",
       "Hachioji-Minamino",
       "Naganuma",
       "Otsuka-Teikyo-Daigaku",
-      "Kitano",
-      "Keio-Katakura",
-      "Takao",
-      "Kita-Hachioji",
-      "Mejirodai"
+      "Kitano"
     ],
     "stationsJa": [
       "小宮",
       "山田",
-      "西八王子",
       "狭間",
       "八王子みなみ野",
       "片倉",
       "長沼",
       "大塚・帝京大学",
-      "北野",
-      "京王片倉",
       "高尾",
-      "北八王子",
-      "八王子",
+      "京王片倉",
+      "北野",
       "めじろ台"
     ],
     "districts": [
       "Komiya-cho",
       "Ishikawa-machi",
       "Midori-machi",
-      "Namiki-machi",
       "Yamada-machi",
       "Higashi-Asakawa-cho",
       "Katakura-cho",
       "Naganuma-cho",
       "Otsuka",
+      "Tsujuri-cho",
       "Kitano-cho",
       "Uchikoshi-cho",
       "Hazama-cho",
-      "Oya-cho",
-      "Koyasu-cho 2",
-      "Honcho",
-      "Mejirodai 4"
+      "Mejirodai 4",
+      "Mejirodai 3"
     ]
   },
   {
@@ -339,29 +338,29 @@ window.TADAIMA_CITIES = [
     "lng": 139.983,
     "slug": "funabashi",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 23,
-      "houses": 12,
-      "land": 11
+      "total": 26,
+      "houses": 14,
+      "land": 12
     },
     "fromHouseMan": 1680,
-    "fromLandMan": 1130,
+    "fromLandMan": 1100,
     "stations": [
-      "Kita-Narashino",
       "Takifudo",
+      "Kita-Narashino",
+      "Yakuen-dai",
       "Takane-Kido",
       "Misaki",
-      "Yakuen-dai",
       "Takane-Kodan",
       "Daijingushita",
       "Higashi-Nakayama",
+      "Maebara",
       "Kaijin",
       "Magomezawa",
       "Funabashi-Keibajo",
       "Higashi-Funabashi",
       "Funabashi-Nichidaimae",
-      "Futawa-Mukodai",
       "Shin-Funabashi"
     ],
     "stationsJa": [
@@ -373,12 +372,12 @@ window.TADAIMA_CITIES = [
       "東中山",
       "北習志野",
       "滝不動",
+      "前原",
       "海神",
       "馬込沢",
       "船橋競馬場",
       "東船橋",
       "船橋日大前",
-      "二和向台",
       "新船橋"
     ],
     "districts": [
@@ -394,12 +393,12 @@ window.TADAIMA_CITIES = [
       "Narashinodai 4",
       "Minami-Misaki 2",
       "Minami-Misaki 3",
+      "Hasama-cho 2",
       "Kaijin 3",
       "Maruyama 1",
       "Miyamoto 8",
       "Higashi-Funabashi 1",
       "Tsuboi-Higashi 1",
-      "Futawa-Higashi 5",
       "Nishi-Narashino 4",
       "Natsumi 3"
     ]
@@ -415,51 +414,48 @@ window.TADAIMA_CITIES = [
     "lng": 139.883,
     "slug": "utsunomiya",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 22,
-      "houses": 12,
+      "total": 19,
+      "houses": 9,
       "land": 10
     },
-    "fromHouseMan": 1300,
+    "fromHouseMan": 1649,
     "fromLandMan": 900,
     "stations": [
-      "Minami-Utsunomiya",
       "Yoto 3-chome",
-      "Tobu-Utsunomiya",
-      "Yui no Mori Nishi",
-      "Tsuruta",
+      "Minami-Utsunomiya",
       "Okamoto",
-      "Utsunomiya",
+      "Tobu-Utsunomiya",
+      "Tsuruta",
       "Higashi-Shukugo",
+      "Yui no Mori Nishi",
+      "Utsunomiya",
       "Utsunomiya University Yoto Campus",
       "Suzumenomiya"
     ],
     "stationsJa": [
-      "ゆいの杜西",
       "鶴田",
-      "岡本",
       "南宇都宮",
       "東宿郷",
-      "宇都宮",
+      "ゆいの杜西",
       "陽東3丁目",
+      "岡本",
       "陽東３丁目",
       "東武宇都宮",
+      "宇都宮",
       "宇都宮大学陽東キャンパス",
       "雀宮"
     ],
     "districts": [
-      "Mamiana-cho",
       "Tsuruta-cho",
-      "Naka-Okamoto-cho",
       "Yayoi 2",
       "Fudomae 3",
       "Shukugo 3",
-      "Yanase 2",
       "Kiyoharadai 1",
-      "Miyabara 1",
       "Yoto 3",
       "Hinode 1",
+      "Shimo-Okamoto-cho",
       "Higashi-Imaizumi 2",
       "Nakakubo 2",
       "Asahi 2",
@@ -467,6 +463,7 @@ window.TADAIMA_CITIES = [
       "Nakagawara-cho",
       "Yoto 1",
       "Nishi 1",
+      "Naka-Okamoto-cho",
       "Suzumenomiya-cho"
     ]
   },
@@ -481,32 +478,32 @@ window.TADAIMA_CITIES = [
     "lng": 139.003,
     "slug": "takasaki",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 25,
-      "houses": 14,
-      "land": 11
+      "total": 27,
+      "houses": 15,
+      "land": 12
     },
     "fromHouseMan": 1550,
     "fromLandMan": 200,
     "stations": [
       "Kita-Takasaki",
-      "Kuragano",
-      "Nekoya",
       "Takasaki-Tonyamachi",
+      "Nekoya",
+      "Kuragano",
       "Takasaki",
       "Gunma-Yawata",
-      "Ino",
       "Minami-Takasaki",
+      "Ino",
       "Nishi-Yoshii"
     ],
     "stationsJa": [
       "群馬八幡",
       "北高崎",
-      "井野",
       "倉賀野",
       "根小屋",
       "高崎問屋町",
+      "井野",
       "南高崎",
       "西吉井",
       "高崎"
@@ -514,7 +511,6 @@ window.TADAIMA_CITIES = [
     "districts": [
       "Fujitsuka-cho",
       "Kami-Namienoki-cho",
-      "Ino-cho",
       "Narita-cho",
       "Kuragano-cho",
       "Terao-cho",
@@ -523,6 +519,8 @@ window.TADAIMA_CITIES = [
       "Higashi-Kaizawa-cho 4",
       "Shingokan-cho",
       "Yoshii-cho Hongo",
+      "Ino-cho",
+      "Iidama-cho",
       "Negoya-cho",
       "Shin-Gokan-cho",
       "Tatsumi-cho",
@@ -545,26 +543,25 @@ window.TADAIMA_CITIES = [
     "lng": 139.373,
     "slug": "sagamihara",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 22,
-      "houses": 14,
-      "land": 8
+      "total": 19,
+      "houses": 12,
+      "land": 7
     },
-    "fromHouseMan": 3049,
-    "fromLandMan": 2380,
+    "fromHouseMan": 2790,
+    "fromLandMan": 2480,
     "stations": [
       "Yabe",
-      "Kobuchi",
       "Banda",
-      "Minami-Hashimoto",
+      "Kobuchi",
       "Hashimoto",
+      "Tamazakai",
       "Kamimizo",
       "Harataima",
-      "Odakyu-Sagamihara",
       "Higashi-Rinkan",
-      "Aihara",
-      "Tamazakai"
+      "Sagamihara",
+      "Minami-Hashimoto"
     ],
     "stationsJa": [
       "上溝",
@@ -572,12 +569,11 @@ window.TADAIMA_CITIES = [
       "古淵",
       "原当麻",
       "番田",
-      "南橋本",
-      "小田急相模原",
       "東林間",
       "橋本",
-      "相原",
-      "多摩境"
+      "多摩境",
+      "相模原",
+      "南橋本"
     ],
     "districts": [
       "Kamimizo 7",
@@ -587,15 +583,12 @@ window.TADAIMA_CITIES = [
       "Kobuchi 4",
       "Shimomizo",
       "Kamimizo",
-      "Koyama 1",
-      "Koyama 2",
-      "Sagamidai 3",
       "Kamitsuruma 4",
-      "Higashi-Onuma 1",
       "Higashi-Hashimoto 3",
-      "Moto-Hashimoto Town",
-      "Minami-Hashimoto 1",
       "Miyashita-Honcho 3",
+      "Miyashita-Honcho 2",
+      "Sagamihara 6",
+      "Minami-Hashimoto 1",
       "Onodai 6"
     ]
   },
@@ -610,33 +603,33 @@ window.TADAIMA_CITIES = [
     "lng": 139.638,
     "slug": "yokohama",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 25,
-      "houses": 16,
-      "land": 9
+      "total": 23,
+      "houses": 12,
+      "land": 11
     },
     "fromHouseMan": 3190,
     "fromLandMan": 1198,
     "stations": [
       "Nakata",
-      "Totsuka",
-      "Nakayama",
-      "Kibogaoka",
-      "Seya",
-      "Byobugaura",
-      "Ishikawa-cho",
       "Izumi-Chuo",
+      "Kibogaoka",
+      "Onda",
+      "Ishikawa-cho",
+      "Seya",
       "Mitsukyo",
       "Aobadai",
       "Tamagawagakuen-mae",
-      "Konan-Chuo",
+      "Totsuka",
+      "Kodomonokuni",
       "Yamate",
       "Tsurugamine",
-      "Tateba"
+      "Tateba",
+      "Nakayama",
+      "Kawamachi"
     ],
     "stationsJa": [
-      "中山",
       "中田",
       "希望ケ丘",
       "瀬谷",
@@ -644,31 +637,29 @@ window.TADAIMA_CITIES = [
       "青葉台",
       "玉川学園前",
       "戸塚",
-      "屏風浦",
-      "港南中央",
+      "こどもの国",
+      "恩田",
       "石川町",
       "山手",
       "希望ヶ丘",
       "鶴ヶ峰",
       "立場",
-      "いずみ中央"
+      "いずみ中央",
+      "中山",
+      "川和町"
     ],
     "districts": [
-      "Terayama-cho",
       "Nakata-kita 2",
       "Nakata-minami 5",
       "Shirayuri 3",
       "Akuwa-higashi 1",
-      "Seya 4",
       "Hongo 1",
       "Sasanodai 4",
       "Sakuradai",
       "Nara-cho",
       "Yabe-cho",
-      "Totsuka-cho",
-      "Mori 2",
-      "Mori 5",
-      "Hino 5",
+      "Onda-cho",
+      "Sumiyoshidai",
       "Nishitakenomaru",
       "Kashiwaba",
       "Hongo-cho 3",
@@ -677,6 +668,8 @@ window.TADAIMA_CITIES = [
       "Izumi-Chuo-Minami 2",
       "Kami-Iida-cho",
       "Izumi-Chuo-Minami 4",
+      "Izumi-Chuo-Kita 4",
+      "Daimura-cho",
       "Aoto-cho"
     ]
   },
@@ -691,11 +684,11 @@ window.TADAIMA_CITIES = [
     "lng": 139.446,
     "slug": "machida",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 20,
+      "total": 22,
       "houses": 12,
-      "land": 8
+      "land": 10
     },
     "fromHouseMan": 2295,
     "fromLandMan": 2580,
@@ -704,7 +697,6 @@ window.TADAIMA_CITIES = [
       "Naruse",
       "Machida",
       "Tsukushino",
-      "Aihara",
       "Suzukakedai",
       "Tsurukawa"
     ],
@@ -712,7 +704,6 @@ window.TADAIMA_CITIES = [
       "成瀬",
       "つくし野",
       "町田",
-      "相原",
       "すずかけ台",
       "鶴川",
       "玉川学園前"
@@ -720,19 +711,18 @@ window.TADAIMA_CITIES = [
     "districts": [
       "Ogawa 2",
       "Minami-Naruse 8",
-      "Naruse 8",
       "Takagasaka 2",
-      "Aihara-machi",
       "Minami-Tsukushino 1",
       "Okura-machi",
       "Tamagawagakuen 3",
       "Minami-Naruse 2",
-      "Minami-Oya 4",
+      "Tamagawagakuen 2",
       "Tamagawagakuen 5",
       "Narusegaoka 3",
       "Ogawa 3",
       "Higashi-Tamagawagakuen 1",
-      "Kanai-ga-oka 2"
+      "Kanai-ga-oka 2",
+      "Tamagawagakuen 8"
     ]
   },
   {
@@ -746,7 +736,7 @@ window.TADAIMA_CITIES = [
     "lng": 139.063,
     "slug": "maebashi",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
       "total": 25,
       "houses": 12,
@@ -755,34 +745,32 @@ window.TADAIMA_CITIES = [
     "fromHouseMan": 1180,
     "fromLandMan": 340,
     "stations": [
-      "Chuo-Maebashi",
-      "Shin-Maebashi",
       "Maebashi",
+      "Shin-Maebashi",
+      "Chuo-Maebashi",
       "Mitsumata",
       "Gunma-Soja",
       "Ogo",
-      "Higokoshi",
       "Maebashi-Oshima",
       "Katagai",
-      "Joto"
+      "Joto",
+      "Shinzo-Kekkan-Center"
     ],
     "stationsJa": [
       "新前橋",
-      "前橋",
       "中央前橋",
-      "樋越",
       "三俣",
       "前橋大島",
       "群馬総社",
       "大胡",
+      "前橋",
       "片貝",
-      "城東"
+      "城東",
+      "心臓血管センター"
     ],
     "districts": [
       "Shimoishikura-cho",
-      "Rokkucho 1",
       "Joto-cho 4",
-      "Higokoshi-cho",
       "Mitsumata-cho 1",
       "Kami-Oshima-cho",
       "Sosha-cho Sakuragaoka",
@@ -791,6 +779,8 @@ window.TADAIMA_CITIES = [
       "Minami-cho 3",
       "Furuichi-cho 1",
       "Furuichi-cho",
+      "Bunkyo-cho 1",
+      "Minami-cho 4",
       "Nishi-Katagai-cho 1",
       "Joto-cho 2",
       "Nishi-Katagai-cho 5",
@@ -802,7 +792,7 @@ window.TADAIMA_CITIES = [
       "Honmachi 2",
       "Ishikura-cho 1",
       "Minami-cho 1",
-      "Hiyoshi-cho 2"
+      "Kameizumi-cho"
     ]
   },
   {
@@ -816,14 +806,14 @@ window.TADAIMA_CITIES = [
     "lng": 140.477,
     "slug": "mito",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 25,
-      "houses": 14,
-      "land": 11
+      "total": 28,
+      "houses": 15,
+      "land": 13
     },
     "fromHouseMan": 550,
-    "fromLandMan": 580,
+    "fromLandMan": 600,
     "stations": [
       "Akatsuka",
       "Mito",
@@ -843,7 +833,6 @@ window.TADAIMA_CITIES = [
       "Akatsuka 1",
       "Uchihara-machi",
       "Nakamaru-cho",
-      "Himeko 2",
       "Miyamachi 1",
       "Miwa 3",
       "Aoyagi-cho",
@@ -867,13 +856,13 @@ window.TADAIMA_CITIES = [
     "lng": 139.8,
     "slug": "oyama",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 21,
+      "total": 20,
       "houses": 14,
-      "land": 7
+      "land": 6
     },
-    "fromHouseMan": 320,
+    "fromHouseMan": 300,
     "fromLandMan": 330,
     "stations": [
       "Mamada",
@@ -897,8 +886,7 @@ window.TADAIMA_CITIES = [
       "Mitsumine 1",
       "Ekihigashi-dori 3",
       "Hachiman-cho 2",
-      "Akatsuki 1",
-      "Minami-Otome 1"
+      "Akatsuki 1"
     ]
   },
   {
@@ -912,10 +900,10 @@ window.TADAIMA_CITIES = [
     "lng": 139.388,
     "slug": "kumagaya",
     "status": "live",
-    "researchedOn": "2026-11-02",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 26,
-      "houses": 15,
+      "total": 25,
+      "houses": 14,
       "land": 11
     },
     "fromHouseMan": 880,
@@ -940,12 +928,12 @@ window.TADAIMA_CITIES = [
       "Miyamotocho",
       "Hakoda 2",
       "Motoishi 2",
-      "Akagicho 1",
       "Ishihara",
       "Shinbori",
       "Tamai 5",
       "Hirose",
-      "Senami",
+      "Tsukimicho 1",
+      "Akagicho 1",
       "Ginza 1",
       "Enoki-cho",
       "Miyamachi 1",
@@ -968,20 +956,20 @@ window.TADAIMA_CITIES = [
     "lng": 139.752,
     "slug": "kasukabe",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
       "total": 30,
-      "houses": 19,
-      "land": 11
+      "houses": 20,
+      "land": 10
     },
     "fromHouseMan": 930,
-    "fromLandMan": 490,
+    "fromLandMan": 990,
     "stations": [
       "Ichinowari",
       "Kita-Kasukabe",
       "Minami-Sakurai",
-      "Kasukabe",
       "Fujino-Ushijima",
+      "Kasukabe",
       "Takesato",
       "Toyoharu",
       "Yagisaki"
@@ -1010,17 +998,16 @@ window.TADAIMA_CITIES = [
       "Minami 4",
       "Ushijima",
       "Ohata",
-      "Obukuro",
       "Ichinowari 1",
       "Bingo-Higashi 1",
       "Kami-Hiruta",
       "Nan-Nakazone",
       "Toyomachi 2-chome",
+      "Shinjuku-Shinden",
       "Ichinowari 1-chome",
       "Ofuto",
       "Nishi-Kananoi",
       "Bingo-Higashi 2-chome",
-      "Shinjuku-Shinden",
       "Fujizuka",
       "Sakae-cho 1-chome",
       "Chuo 4-chome"
@@ -1037,7 +1024,7 @@ window.TADAIMA_CITIES = [
     "lng": 139.791,
     "slug": "koshigaya",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
       "total": 25,
       "houses": 13,
@@ -1047,8 +1034,8 @@ window.TADAIMA_CITIES = [
     "fromLandMan": 800,
     "stations": [
       "Obukuro",
-      "Kita-Koshigaya",
       "Sengendai",
+      "Kita-Koshigaya",
       "Gamo",
       "Koshigaya",
       "Shin-Koshigaya",
@@ -1056,16 +1043,15 @@ window.TADAIMA_CITIES = [
     ],
     "stationsJa": [
       "大袋",
-      "蒲生",
       "せんげん台",
       "越谷",
       "北越谷",
+      "蒲生",
       "新越谷",
       "南越谷"
     ],
     "districts": [
       "Osato",
-      "Gamo",
       "Sengendai-Nishi 4",
       "Akayamacho 3",
       "Sengendai-Nishi 1",
@@ -1076,16 +1062,17 @@ window.TADAIMA_CITIES = [
       "Sengendai-Higashi 1",
       "Minami-Ogishima",
       "Shimomakuri",
+      "Otomari",
       "Gamo Nishimachi 2",
       "Osawa 2",
       "Akayama-cho 1",
       "Sengendai Higashi 2",
       "Minami-Koshigaya 3",
-      "Osawa 4",
       "Higashi-Osawa 1",
       "Onma",
       "Noborito-cho",
-      "Sengendai Higashi 3"
+      "Sengendai Higashi 3",
+      "Osawa 4"
     ]
   },
   {
@@ -1099,13 +1086,13 @@ window.TADAIMA_CITIES = [
     "lng": 139.931,
     "slug": "ichikawa",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 26,
-      "houses": 16,
-      "land": 10
+      "total": 29,
+      "houses": 18,
+      "land": 11
     },
-    "fromHouseMan": 3299,
+    "fromHouseMan": 2480,
     "fromLandMan": 1200,
     "stations": [
       "Ichikawa-Ono",
@@ -1123,8 +1110,8 @@ window.TADAIMA_CITIES = [
     ],
     "stationsJa": [
       "市川大野",
-      "矢切",
       "浦安",
+      "矢切",
       "市川真間",
       "妙典",
       "原木中山",
@@ -1137,7 +1124,6 @@ window.TADAIMA_CITIES = [
     ],
     "districts": [
       "Oonocho 4",
-      "Kokufudai 1",
       "Shinai 1",
       "Oonocho 3",
       "Kokufudai 6",
@@ -1151,6 +1137,7 @@ window.TADAIMA_CITIES = [
       "Haraki 1",
       "Kitakokubun 2",
       "Oonocho 2",
+      "Omachi",
       "Hon-Kitakata 1",
       "Sugano 2",
       "Suwada 1",
@@ -1173,10 +1160,10 @@ window.TADAIMA_CITIES = [
     "lng": 139.903,
     "slug": "nagareyama",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 24,
-      "houses": 18,
+      "total": 27,
+      "houses": 21,
       "land": 6
     },
     "fromHouseMan": 2150,
@@ -1185,8 +1172,8 @@ window.TADAIMA_CITIES = [
       "Edogawadai",
       "Nagareyama",
       "Hatsuishi",
-      "Heiwadai",
       "Unga",
+      "Heiwadai",
       "Hirezaki",
       "Nagareyama-centralpark",
       "Minami-Nagareyama"
@@ -1215,6 +1202,7 @@ window.TADAIMA_CITIES = [
       "Edogawadai-Higashi 2",
       "Nishihirai 1",
       "Ka 4",
+      "Edogawadai-Higashi 3",
       "Edogawadai-Higashi 1",
       "Nagareyama 3",
       "Wakabadai",
@@ -1234,52 +1222,52 @@ window.TADAIMA_CITIES = [
     "lng": 139.491,
     "slug": "fujisawa",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 24,
-      "houses": 18,
-      "land": 6
+      "total": 20,
+      "houses": 15,
+      "land": 5
     },
     "fromHouseMan": 2380,
-    "fromLandMan": 2700,
+    "fromLandMan": 3490,
     "stations": [
       "Zengyo",
       "Chogo",
       "Fujisawa-Honmachi",
-      "Mutsuai-Nichidai-mae",
       "Kugenuma",
+      "Shonan-Kaigan-Koen",
       "Shonandai",
-      "Yanagikoji",
-      "Hon-Kugenuma"
+      "Mutsuai-Nichidai-mae",
+      "Hon-Kugenuma",
+      "Yanagikoji"
     ],
     "stationsJa": [
       "善行",
       "長後",
-      "六会日大前",
       "藤沢本町",
       "鵠沼",
+      "湘南海岸公園",
       "湘南台",
-      "柳小路",
-      "本鵠沼"
+      "六会日大前",
+      "本鵠沼",
+      "柳小路"
     ],
     "districts": [
       "Zenkozaka 1",
       "Takakura",
-      "Zenkozaka 2",
       "Zengyo 1",
-      "Kameino 4",
-      "Zengyo 2",
       "Fujisawa 4",
       "Hon-Fujisawa 3",
-      "Shirahata 3",
       "Chogo",
       "Katase 2",
       "Hon-Fujisawa 2",
       "Zengyo 5",
+      "Kugenuma-Shinmei 4",
+      "Katase 4",
       "Shonandai 4",
       "Kameino",
-      "Kugenuma-Fujigaya 2",
-      "Hon-Kugenuma 3"
+      "Kugenuma-Sakura-ga-oka 3",
+      "Kugenuma-Fujigaya 4"
     ]
   },
   {
@@ -1293,11 +1281,11 @@ window.TADAIMA_CITIES = [
     "lng": 139.362,
     "slug": "atsugi",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 21,
-      "houses": 10,
-      "land": 11
+      "total": 17,
+      "houses": 7,
+      "land": 10
     },
     "fromHouseMan": 1480,
     "fromLandMan": 1800,
@@ -1306,21 +1294,22 @@ window.TADAIMA_CITIES = [
       "Hon-Atsugi"
     ],
     "stationsJa": [
-      "本厚木",
-      "愛甲石田"
+      "愛甲石田",
+      "本厚木"
     ],
     "districts": [
-      "Asahi-cho 2",
       "Aiko-Higashi 1",
-      "Aiko-Higashi 3",
-      "Sakae-cho 2",
       "Onna 2",
       "Aiko-Higashi 2",
       "Kami-Ochiai",
+      "Sakae-cho 2",
       "Aiko 2",
+      "Aiko 4",
+      "Asahi-cho 2",
       "Onna 1",
       "Motocho",
-      "Funako"
+      "Funako",
+      "Asahi-cho 3"
     ]
   },
   {
@@ -1334,51 +1323,49 @@ window.TADAIMA_CITIES = [
     "lng": 139.469,
     "slug": "tokorozawa",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 25,
+      "total": 26,
       "houses": 14,
-      "land": 11
+      "land": 12
     },
     "fromHouseMan": 480,
     "fromLandMan": 1890,
     "stations": [
-      "Kotesashi",
-      "Higashi-Tokorozawa",
       "Tokorozawa",
-      "Koku-koen",
+      "Kotesashi",
       "Nishi-Tokorozawa",
-      "Shin-Tokorozawa",
+      "Koku-koen",
       "Sayamagaoka",
-      "Seibuen",
-      "Shimoyamaguchi"
+      "Higashi-Tokorozawa",
+      "Shin-Tokorozawa",
+      "Shimoyamaguchi",
+      "Seibuen"
     ],
     "stationsJa": [
-      "西武園",
-      "航空公園",
       "西所沢",
-      "東所沢",
-      "新所沢",
       "小手指",
       "狭山ヶ丘",
       "所沢",
-      "下山口"
+      "東所沢",
+      "航空公園",
+      "新所沢",
+      "下山口",
+      "西武園"
     ],
     "districts": [
-      "Matsugaoka 2-chome",
-      "Miyamoto-cho 2",
-      "Kami-Arai 2",
-      "Higashi-Tokorozawa 5",
-      "Higashi-Tokorozawa-Wada 1",
-      "Yayoi-cho",
-      "Mihara-cho 4",
       "Nishi-Tokorozawa 2",
       "Kami-Arai 3",
       "Sayamagaoka 2",
       "Asahi-cho",
       "Kotesashi-Motomachi 1",
+      "Higashi-Tokorozawa 5",
       "Wakasa 4",
+      "Miyamoto-cho 1",
+      "Yurakucho",
       "Kita-Akitsu",
+      "Hoshinomiya 2",
+      "Kami-Arai 2",
       "Higashi-cho",
       "Higashi-Arai-cho",
       "Kotesashi-cho 3",
@@ -1386,7 +1373,8 @@ window.TADAIMA_CITIES = [
       "Midori-cho 2",
       "Izumi-cho",
       "Higashi-Tokorozawa 3",
-      "Yamaguchi"
+      "Yamaguchi",
+      "Matsugaoka 2"
     ]
   },
   {
@@ -1400,64 +1388,70 @@ window.TADAIMA_CITIES = [
     "lng": 139.624,
     "slug": "saitama",
     "status": "live",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "counts": {
-      "total": 23,
-      "houses": 14,
-      "land": 9
+      "total": 27,
+      "houses": 16,
+      "land": 11
     },
-    "fromHouseMan": 598,
+    "fromHouseMan": 498,
     "fromLandMan": 1980,
     "stations": [
-      "Nanasato",
-      "Nishi-Urawa",
       "Iwatsuki",
+      "Nanasato",
       "Owada",
-      "Higashi-Urawa",
+      "Nishi-Urawa",
+      "Higashi-Iwatsuki",
       "Sashiogi",
       "Minami-Yono",
-      "Nisshin",
-      "Higashi-Iwatsuki",
       "Konba",
+      "Nisshin",
+      "Nishi-Omiya",
       "Yono-Hommachi",
-      "Yono"
+      "Higashi-Urawa",
+      "Yono",
+      "Higashi-Omiya"
     ],
     "stationsJa": [
       "西浦和",
       "大和田",
       "七里",
-      "東浦和",
-      "日進",
       "東岩槻",
       "今羽",
       "岩槻",
       "指扇",
+      "日進",
+      "西大宮",
       "与野本町",
       "南与野",
-      "与野"
+      "東浦和",
+      "与野",
+      "東大宮"
     ],
     "districts": [
       "Tajima 4, Sakura Ward",
       "Owada-cho 2, Minuma Ward",
       "Shimacho, Minuma Ward",
-      "Higashi-Urawa 2, Midori Ward",
-      "Nisshincho 2, Kita Ward",
       "Sakurada 1, Sakura Ward",
       "Kofukasaku, Minuma Ward",
       "Owada-cho 1, Minuma Ward",
       "Honmaru 4, Iwatsuki Ward",
       "Yoshinocho 1, Kita Ward",
-      "Matsumoto 1, Minami Ward",
       "Nishiharadai 2, Iwatsuki Ward",
       "Nishimachi 5, Iwatsuki Ward",
       "Oaza-Sashiogi, Nishi Ward",
+      "Nisshincho 2, Kita Ward",
+      "Miyamachi 2, Iwatsuki Ward",
+      "Nishiharadai 1, Iwatsuki Ward",
       "Sakuragaoka 1, Chuo Ward",
       "Oto 6, Chuo Ward",
       "Horisaki-cho, Minuma Ward",
       "Tsuchiya, Nishi Ward",
       "Nakajima 2, Sakura Ward",
+      "Higashi-Urawa 2, Midori Ward",
       "Honcho 3, Iwatsuki Ward",
-      "Kamikizaki 8, Urawa Ward"
+      "Kamikizaki 8, Urawa Ward",
+      "Higashi-Omiya 2, Minuma Ward"
     ]
   }
 ];

@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Kasukabe",
     "editionJa": "春日部",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Kasukabe City, Saitama",
     "areaJa": "埼玉県春日部市"
   },
@@ -90,8 +90,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/sp/new-ikkodate/ensen/261/2261280.html",
         "verified": "index",
         "infoDate": "2026-11-09"
-      },
-      "priceDropMan": 200
+      }
     },
     {
       "id": "h04",
@@ -415,12 +414,11 @@ window.TADAIMA_DATA = {
         "LP gas, not city gas (per the detail page's equipment list)"
       ],
       "source": {
-        "name": "OCN不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21760291/142868001/x1030Z21760291.html",
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21932884/146885001/x1030Z21932884.html",
         "verified": "detail",
         "infoDate": "2026-11-08"
-      },
-      "priceDropMan": 100
+      }
     },
     {
       "id": "h14",
@@ -452,41 +450,6 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21980982/100451225/x1030Z21980982.html",
         "verified": "detail",
         "infoDate": "2026-10-23"
-      },
-      "majorCautions": 1
-    },
-    {
-      "id": "h15",
-      "type": "house-used",
-      "district": "Obukuro",
-      "districtJa": "大衾",
-      "title": "Used 4LDK (Jan 2005) on a high, sunny 206m² plot — defect liability waived",
-      "priceMan": 1900,
-      "priceFrom": false,
-      "landM2": 206.33,
-      "buildingM2": 114.0,
-      "layout": "4LDK",
-      "station": "Minami-Sakurai",
-      "stationJa": "南桜井",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武アーバンパークライン",
-      "walkMin": 14,
-      "built": "Jan 2005",
-      "ageYears": 21,
-      "highlights": [
-        "Elevated plot with good light, ventilation and outlook; garden and parking for 2",
-        "City gas and mains sewer; shops within ~1.1km (Seven-Eleven 450m)"
-      ],
-      "cautions": [
-        "Seller's defect liability is waived (契約不適合責任免責) and boundaries are not demarcated (境界非明示) — sold as-is; budget for a survey and inspection",
-        "Headline land area includes 31.19m² of agreement-passage land — the effective plot is ~175.1m²; price the land accordingly",
-        "Kasukabe is Edo/Naka River lowland — verify the flood-hazard-map depth for this address"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z20569440/006110007/x1030Z20569440.html",
-        "verified": "detail",
-        "infoDate": "2026-10-19"
       },
       "majorCautions": 1
     },
@@ -672,6 +635,78 @@ window.TADAIMA_DATA = {
       }
     },
     {
+      "id": "h21",
+      "type": "house-used",
+      "district": "Fujitsuka",
+      "districtJa": "藤塚",
+      "title": "Used 3LDK (May 2022) — 5 min to Fujino-Ushijima, all rooms dual-aspect",
+      "priceMan": 3300,
+      "priceFrom": false,
+      "landM2": 110.11,
+      "buildingM2": 82.39,
+      "layout": "3LDK",
+      "station": "Fujino-Ushijima",
+      "stationJa": "藤の牛島",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 5,
+      "built": "May 2022",
+      "ageYears": 4,
+      "highlights": [
+        "5 min to Fujino-Ushijima; 1st-class low-rise residential zone, quiet low-rise streets",
+        "All rooms dual-aspect (two-sided light) — good ventilation throughout",
+        "Built May 2022 by Aida Sekkei; system kitchen, 2 toilets, TV intercom, all rooms floored",
+        "NW 4.7m road, 10m frontage; city gas + mains sewer"
+      ],
+      "cautions": [
+        "Building coverage 50% / FAR 80% (1st-class low-rise zone) — modest buildable footprint",
+        "No parking count stated on the detail page — confirm spaces before viewing"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z21657489/000389166/x1030Z21657489.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h22",
+      "type": "house-used",
+      "district": "Shinjuku-Shinden",
+      "districtJa": "新宿新田",
+      "title": "Used 4LDK (Jun 2022, Polus-built) — WIC + pantry, stage living, 2-car parking",
+      "priceMan": 3230,
+      "priceFrom": false,
+      "landM2": 132.75,
+      "buildingM2": 100.4,
+      "layout": "4LDK",
+      "station": "Minami-Sakurai",
+      "stationJa": "南桜井",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 12,
+      "built": "Jun 2022",
+      "ageYears": 4,
+      "highlights": [
+        "Polus-built Jun 2022 in a Polus subdivision; LD ceiling 2.7m, tall 2.2m sashes",
+        "WIC + dirt-floor storage + pantry; 3.1-tatami stage living off the LDK",
+        "Parking for 2; dishwasher, water purifier, double glazing, 2 toilets",
+        "Polus home warranty to 27 Jul 2032"
+      ],
+      "cautions": [
+        "2nd parking space is size-restricted — confirm it fits your car",
+        "Building coverage 50% / FAR 80% (1st-class low-rise zone)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11214/030Z20649499/006110007/x1030Z20649499.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
       "id": "l01",
       "type": "land",
       "district": "Ichinowari 1-chome",
@@ -713,7 +748,7 @@ window.TADAIMA_DATA = {
       "district": "Ofuto",
       "districtJa": "大衾",
       "title": "171m2 vacant plot 5 minutes from Minami-Sakurai — building condition attached",
-      "priceMan": 2439,
+      "priceMan": 2090,
       "priceFrom": false,
       "landM2": 171.11,
       "buildingM2": null,
@@ -740,47 +775,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/11214/030Z21951049/032341000/x1030Z21951049.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
-    },
-    {
-      "id": "l03",
-      "type": "land",
-      "district": "Yonejima",
-      "districtJa": "米島",
-      "title": "Cheapest lot here at 490万円 by Minami-Sakurai — corner plot, building on site, setback required",
-      "priceMan": 490,
-      "priceFrom": false,
-      "landM2": 76.98,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Minami-Sakurai",
-      "stationJa": "南桜井",
-      "line": "Tobu Urban Park Line",
-      "lineJa": "東武野田線",
-      "walkMin": 8,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Corner lot (角地) fronting two roads (SW 4m / SE 4m), good light and ventilation",
-        "Cheapest land in this collection",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "A building stands on the land (上物有り), sold as-is (現況渡し) — demolition cost and effort on the buyer; contract non-conformity liability is excluded (契約不適合責任免責)",
-        "Setback required (セットバック要)",
-        "Private-road area of 13.07m2 is listed alongside the headline 90.05m2 — confirm whether it is included in the headline area; if included, the effective building plot is about 76.98m2",
-        "The SW frontage is a mix of public and private road",
-        "Verified on the listing page (information date 2026-10-22)"
-      ],
-      "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/11214/030Z20723734/006110142/x1030Z20723734.html",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 349
     },
     {
       "id": "l04",

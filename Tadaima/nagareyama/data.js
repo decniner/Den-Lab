@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Nagareyama",
     "editionJa": "流山",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Nagareyama City, Chiba",
     "areaJa": "千葉県流山市"
   },
@@ -56,8 +56,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/Z/21403260.html",
         "verified": "detail",
         "infoDate": "2026-11-07"
-      },
-      "priceDropMan": 200
+      }
     },
     {
       "id": "h02",
@@ -98,7 +97,7 @@ window.TADAIMA_DATA = {
       "district": "Higashi-Hatsuishi 1",
       "districtJa": "東初石1丁目",
       "title": "New 3LDK (Meldia Edogawadai) — ZEH-standard, 17.5帖 LDK, completed Sep 2026",
-      "priceMan": 3680,
+      "priceMan": 3490,
       "priceFrom": false,
       "landM2": 87.54,
       "buildingM2": 84.83,
@@ -122,8 +121,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/W/20946775.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-14"
+      },
+      "priceDropMan": 190
     },
     {
       "id": "h05",
@@ -131,7 +131,7 @@ window.TADAIMA_DATA = {
       "district": "Higashi-Fukai",
       "districtJa": "東深井",
       "title": "New 4LDK, long-term quality housing — the big-house option in the north",
-      "priceMan": 3590,
+      "priceMan": 3490,
       "priceFrom": false,
       "landM2": 109.36,
       "buildingM2": 104.28,
@@ -156,8 +156,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/Z/21148971.html",
         "verified": "detail",
-        "infoDate": "2026-10-19"
-      }
+        "infoDate": "2026-11-09"
+      },
+      "priceDropMan": 100
     },
     {
       "id": "h06",
@@ -191,8 +192,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/W/21026417.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "priceDropMan": 100
+      }
     },
     {
       "id": "h07",
@@ -235,7 +235,7 @@ window.TADAIMA_DATA = {
       "district": "Higashi-Hatsuishi 2",
       "districtJa": "東初石2丁目",
       "title": "New 4LDK (Meldia) on a NW/SW corner plot — the premium new build here",
-      "priceMan": 4780,
+      "priceMan": 4680,
       "priceFrom": false,
       "landM2": 101.1,
       "buildingM2": 96.7,
@@ -259,8 +259,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/12220/030/W/20682979.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-14"
+      },
+      "priceDropMan": 100
     },
     {
       "id": "h09",
@@ -294,8 +295,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z21872997/173595002/x1030Z21872997.html",
         "verified": "detail",
         "infoDate": "2026-11-08"
-      },
-      "priceDropMan": 51
+      }
     },
     {
       "id": "h10",
@@ -501,7 +501,7 @@ window.TADAIMA_DATA = {
       "district": "Ka 4",
       "districtJa": "加4丁目",
       "title": "New 3LDK 8 minutes from Nagareyama Station",
-      "priceMan": 3990,
+      "priceMan": 3790,
       "priceFrom": false,
       "landM2": 117.9,
       "buildingM2": 95.22,
@@ -525,8 +525,9 @@ window.TADAIMA_DATA = {
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/b-1074240103996/",
         "verified": "detail",
-        "infoDate": "2026-10-31"
-      }
+        "infoDate": "2026-11-13"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h19",
@@ -560,8 +561,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z22119522/006050E93/x1030Z22119522.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h20",
@@ -596,8 +596,7 @@ window.TADAIMA_DATA = {
         "url": "https://www.homes.co.jp/kodate/b-37091120004534/",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h21",
@@ -631,6 +630,113 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/special/3008/ensen/269/2269130.html",
         "verified": "index",
         "infoDate": "2026-11-09"
+      }
+    },
+    {
+      "id": "h22",
+      "type": "house-used",
+      "district": "Nishi-Hatsuishi 1",
+      "districtJa": "西初石1丁目",
+      "title": "Nishi-Hatsuishi 1 - renovated 2005 4LDK, 12 min to Edogawadai",
+      "priceMan": 3198,
+      "priceFrom": false,
+      "landM2": 120.72,
+      "buildingM2": 99.78,
+      "layout": "4LDK",
+      "station": "Edogawadai",
+      "stationJa": "江戸川台",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 12,
+      "built": "May 2005",
+      "ageYears": 21,
+      "highlights": [
+        "Renovated May 2026 - kitchen and toilets replaced, walls/floors redone, exterior repainted",
+        "4LDK with parking for 2 on a 120.72m2 south-facing plot in a first-class low-rise zone",
+        "All rooms 6 tatami or larger with two-sided light; bathroom dryer and floor storage fitted"
+      ],
+      "cautions": [
+        "Built May 2005 (21 years old) - value rests on the May 2026 full renovation, not the structure",
+        "Portal feeds disagree on price: this same house is listed at ¥3,498万 on LIFULL HOME'S vs ¥3,198万 on the goo/SUUMO detail page used here - verify the current asking price",
+        "At 12 min from Edogawadai, Hatsuishi is 17 min so Edogawadai is the practical station"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z21191232/127371001/x1030Z21191232.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h23",
+      "type": "house-used",
+      "district": "Edogawadai-Higashi 3",
+      "districtJa": "江戸川台東3丁目",
+      "title": "Edogawadai-Higashi 3 - 1995 4SLDK on 248m2, 10 min to Edogawadai",
+      "priceMan": 4627,
+      "priceFrom": false,
+      "landM2": 247.93,
+      "buildingM2": 136.63,
+      "layout": "4SLDK",
+      "station": "Edogawadai",
+      "stationJa": "江戸川台",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 10,
+      "built": "Sep 1995",
+      "ageYears": 31,
+      "highlights": [
+        "Biggest land package of any Nagareyama candidate: 247.93m2 (75 tsubo) with a 136.63m2 house",
+        "Kitchens on both floors, large store room, parking for 3+ on a south road",
+        "10 min from Edogawadai in a first-class low-rise zone; supermarket, convenience store and drugstore within 10 min"
+      ],
+      "cautions": [
+        "Built Sep 1995 (31 years old) - pre-2000 build, judge mainly as land + location; the 247.93m2 plot is the value",
+        "Two kitchens (1F and 2F) - suits two households or live/work use, confirm the registered use",
+        "No renovation history is listed - the 1995 structure is sold largely as it stands"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/12220/030Z21768461/172573001/x1030Z21768461.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h24",
+      "type": "house-used",
+      "district": "Higashi-Fukai",
+      "districtJa": "東深井",
+      "title": "Higashi-Fukai - 2020 designer 2LDK on a corner plot, 15 min to Unga",
+      "priceMan": 3400,
+      "priceFrom": false,
+      "landM2": 128.49,
+      "buildingM2": 93.16,
+      "layout": "2LDK",
+      "station": "Unga",
+      "stationJa": "運河",
+      "line": "Tobu Urban Park Line",
+      "lineJa": "東武アーバンパークライン",
+      "walkMin": 15,
+      "built": "Mar 2020",
+      "ageYears": 6,
+      "highlights": [
+        "Young 2020 designer house on a two-side corner plot (south 4m + east 16m roads) with parking for 2",
+        "128.49m2 plot, south-facing with wide balcony, wood deck and terrace; bathroom heater/dryer fitted",
+        "15 min from Unga in a first-class low-rise zone"
+      ],
+      "cautions": [
+        "Only 2LDK on paper despite 93.16m2 - the free space converts to a third bedroom only with a paid partition (door fitting)",
+        "Currently occupied - viewing by appointment, handover by negotiation",
+        "At the 15-minute walk limit of this collection"
+      ],
+      "source": {
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/kodate/b-1478760009394/",
+        "verified": "detail",
+        "infoDate": "2026-11-16"
       },
       "isNew": true
     },
@@ -780,8 +886,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21892339/006110114/x1030Z21892339.html",
         "verified": "detail",
         "infoDate": "2026-11-08"
-      },
-      "priceDropMan": 300
+      }
     },
     {
       "id": "l12",
@@ -815,8 +920,8 @@ window.TADAIMA_DATA = {
         "Verified on the listing page (information date 2026-10-22)"
       ],
       "source": {
-        "name": "goo住宅・不動産 (SUUMO feed)",
-        "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z21696139/006110142/x1030Z21696139.html",
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/12220/030Z22025084/118901002/x1030Z22025084.html",
         "verified": "detail",
         "infoDate": "2026-10-25"
       }
@@ -857,8 +962,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/la/detail/4/12220/1478760009564/147876/x41478760009564.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     }
   ],
   "scoring": {

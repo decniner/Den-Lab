@@ -4,7 +4,7 @@ window.TADAIMA_DATA = {
     "nameJa": "ただいま！",
     "edition": "Mito",
     "editionJa": "水戸",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Mito City, Ibaraki",
     "areaJa": "茨城県水戸市"
   },
@@ -91,8 +91,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
         "verified": "index",
         "infoDate": "2026-11-09"
-      },
-      "priceDropMan": 400
+      }
     },
     {
       "id": "h04",
@@ -163,39 +162,6 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "h06",
-      "type": "house-new",
-      "district": "Himeko 2",
-      "districtJa": "姫子2丁目",
-      "title": "New 3LDK (Tama Town Ume-ga-oka) — long-term quality housing, all-electric with roof balcony",
-      "priceMan": 3540,
-      "priceFrom": false,
-      "landM2": 164.18,
-      "buildingM2": 98.53,
-      "layout": "3LDK",
-      "station": "Akatsuka",
-      "stationJa": "赤塚",
-      "line": "JR Joban Line",
-      "lineJa": "JR常磐線",
-      "walkMin": 15,
-      "built": "New build",
-      "ageYears": 0,
-      "highlights": [
-        "Long-term quality housing (長期優良住宅) with a 20-year initial guarantee campaign",
-        "All-electric, roof balcony, parking for 2+ cars"
-      ],
-      "cautions": [
-        "At the 15-minute walk limit of this collection",
-        "Seen on a portal index page — verify details on the listing link"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/bh/special/6011/area_ibaragi/08201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
-    },
-    {
       "id": "h07",
       "type": "house-used",
       "district": "Miyamachi 1",
@@ -235,7 +201,7 @@ window.TADAIMA_DATA = {
       "district": "Uchihara-machi",
       "districtJa": "内原町",
       "title": "Used 3LDK (2004) — Taisei Construction custom home with vaulted living room, 9 min from Uchihara",
-      "priceMan": 2460,
+      "priceMan": 2260,
       "priceFrom": false,
       "landM2": 160.31,
       "buildingM2": 101.56,
@@ -259,8 +225,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z21289017/148258001/x1030Z21289017.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 200
     },
     {
       "id": "h10",
@@ -324,8 +291,7 @@ window.TADAIMA_DATA = {
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z21451617/085120003/x1030Z21451617.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "priceDropMan": 90
+      }
     },
     {
       "id": "h12",
@@ -398,7 +364,7 @@ window.TADAIMA_DATA = {
       "district": "Aoyagi-cho",
       "districtJa": "青柳町",
       "title": "Used 4LDK (1978) under renovation — 6 min from Hitachi-Tsuda Station",
-      "priceMan": 1699,
+      "priceMan": 1499,
       "priceFrom": false,
       "landM2": 195.02,
       "buildingM2": 102.45,
@@ -424,9 +390,10 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z20818925/189549018/x1030Z20818925.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-15"
       },
-      "majorCautions": 2
+      "majorCautions": 2,
+      "priceDropMan": 200
     },
     {
       "id": "h16",
@@ -470,7 +437,7 @@ window.TADAIMA_DATA = {
       "district": "Shibui-cho",
       "districtJa": "渋井町",
       "title": "Used 4LDK (1983), fully renovated inside and out — 305m² plot, 14 min from Higashi-Mito Station",
-      "priceMan": 1699,
+      "priceMan": 1679,
       "priceFrom": false,
       "landM2": 305.02,
       "buildingM2": 115.75,
@@ -496,9 +463,83 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/08201/030Z20829540/055361007/x1030Z20829540.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-14"
       },
-      "majorCautions": 1
+      "majorCautions": 1,
+      "priceDropMan": 20
+    },
+    {
+      "id": "h18",
+      "type": "house-new",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "New 4LDK+S (2 units) — Grandcrest Akatsuka, 68-tsubo plots, 7 min from Akatsuka Station",
+      "priceMan": 3980,
+      "priceFrom": false,
+      "landM2": 225,
+      "buildingM2": 112.92,
+      "layout": "4LDK+S",
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 7,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "2-unit development on 68-tsubo plots — unusually large for a new build near the station",
+        "Long-term quality housing + design performance evaluation, ground survey done, parking for 2",
+        "All-electric (IH, eco hot water), WIC + pantry, 15+ tatami LDK, south-facing rooms, 7 min from Akatsuka"
+      ],
+      "cautions": [
+        "Completion Feb 2027, handover early Mar 2027 — not yet built; drawings are at planning stage and may change",
+        "Road frontage is only 1.9m wide (asphalt) — narrow access",
+        "Power lines pass over the plots",
+        "Building Standards Act Art. 22 area, Landscape Act, 3rd-kind height district"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/08201/030/W/22006655.html",
+        "verified": "detail",
+        "infoDate": "2026-11-14"
+      },
+      "isNew": true
+    },
+    {
+      "id": "h19",
+      "type": "house-new",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "New 3LDK–4LDK development (3 units) — Blooming Garden Akatsuka 1-chome, completed Oct 2026, 10 min from Akatsuka",
+      "priceMan": 3080,
+      "priceFrom": true,
+      "landM2": 203.69,
+      "buildingM2": 103.57,
+      "layout": "3LDK–4LDK",
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 10,
+      "built": "New build",
+      "ageYears": 0,
+      "highlights": [
+        "Completed Oct 2026, handover mid-Nov 2026 — immediate move-in, seller is the owner so no brokerage fee",
+        "Long-term quality housing certified at handover, design + construction performance evaluations, BELS, Flat 35 S",
+        "Ground survey done, parking for 2, city gas, 18+ tatami LDK, WIC, corner lot, 10 min from Akatsuka"
+      ],
+      "cautions": [
+        "Price is 'from' — units run to ¥3,380万; layouts differ (3LDK–4LDK) across the 3 units",
+        "Private-road share: 349m² × 1/8 per unit; east side is a 3.3m private road (setback done)",
+        "Eco-housing subsidy (up to ¥75万) has a ¥99,000 admin fee deducted"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/bh/detail/08201/030/W/21950684.html",
+        "verified": "detail",
+        "infoDate": "2026-11-14"
+      },
+      "isNew": true
     },
     {
       "id": "l01",
@@ -584,7 +625,7 @@ window.TADAIMA_DATA = {
       "district": "Minamimachi 3",
       "districtJa": "南町3丁目",
       "title": "Vacant city-centre commercial plot, 14 min from Mito Station — buried piles below",
-      "priceMan": 2950,
+      "priceMan": 2850,
       "priceFrom": false,
       "landM2": 187.6,
       "buildingM2": null,
@@ -613,8 +654,9 @@ window.TADAIMA_DATA = {
         "name": "goo住宅・不動産 (SUUMO feed)",
         "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z21247497/048665052/x1030Z21247497.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-15"
+      },
+      "priceDropMan": 100
     },
     {
       "id": "l05",
@@ -877,14 +919,52 @@ window.TADAIMA_DATA = {
       }
     },
     {
-      "id": "l12",
+      "id": "l13",
+      "type": "land",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "182m² plot 5 minutes from Akatsuka Station — near-commercial zoning, no building condition",
+      "priceMan": 1000,
+      "priceFrom": false,
+      "landM2": 182.01,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 5,
+      "built": null,
+      "ageYears": null,
+      "zoning": "近隣商業地域",
+      "coverageFar": "80% / 300%",
+      "highlights": [
+        "5 minutes from Akatsuka Station — the closest land plot in this collection",
+        "Near-commercial zoning (80%/300%) gives building freedom; vacant land, no building condition",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Setback of about 20m² required when building",
+        "Narrow 1.8m north-west road (17.8m frontage) — check access for construction vehicles",
+        "Water + mains sewer only — no city gas listed on the page"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z21512091/041467036/x1030Z21512091.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "l14",
       "type": "land",
       "district": "Yoshinuma-cho",
       "districtJa": "吉沼町",
-      "title": "Very cheap 595m² plot 8 minutes from Higashi-Mito Station — index-only, check control-area status",
-      "priceMan": 580,
+      "title": "496m² plot 8 minutes from Higashi-Mito Station — 150 tsubo for ¥780万, no building condition",
+      "priceMan": 780,
       "priceFrom": false,
-      "landM2": 595,
+      "landM2": 495.86,
       "buildingM2": null,
       "layout": null,
       "station": "Higashi-Mito",
@@ -897,20 +977,60 @@ window.TADAIMA_DATA = {
       "zoning": "無指定",
       "coverageFar": "60% / 200%",
       "highlights": [
-        "Enormous 595m² (about 180 tsubo) for ¥580万 — the cheapest headline price in this collection",
-        "Vacant land (更地) per the index listing, 8 min from Higashi-Mito on the Kashima Rinkai Railway",
+        "150-tsubo plot for ¥780万 — about ¥5.2万 per tsubo, the cheapest land per tsubo in this collection",
+        "8 min from Higashi-Mito Station, north 8.7m road, flat land, vacant, no building condition",
         "No building condition (建築条件なし) — choose your own builder"
       ],
       "cautions": [
-        "Index listing only — the detail page was not verified (portal rate limit); the registered land category, road frontage, utilities and urban-planning status are all unconfirmed for this specific plot",
-        "Parts of Yoshinuma-cho lie in the urbanisation-control area and in Naka River lowlands — confirm the urban-planning designation and the flood hazard map for this exact plot before treating the low ¥/tsubo as value"
+        "Adjustment area (調整区域) — building needs existing-settlement permission plus Urban Planning Act Art. 34-1 permission",
+        "Septic tank (浄化槽), no mains sewer",
+        "Arterial-road frontage — check noise and access"
       ],
       "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/tochi/area_ibaragi/08201.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
-      }
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z20163134/048665039/x1030Z20163134.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
+    },
+    {
+      "id": "l15",
+      "type": "land",
+      "district": "Akatsuka 1",
+      "districtJa": "赤塚1丁目",
+      "title": "275m² corner lot 10 minutes from Akatsuka Station — 83 tsubo, no building condition",
+      "priceMan": 1380,
+      "priceFrom": false,
+      "landM2": 275,
+      "buildingM2": null,
+      "layout": null,
+      "station": "Akatsuka",
+      "stationJa": "赤塚",
+      "line": "JR Joban Line",
+      "lineJa": "JR常磐線",
+      "walkMin": 10,
+      "built": null,
+      "ageYears": null,
+      "zoning": "準工業地域",
+      "coverageFar": "60% / 200%",
+      "highlights": [
+        "83-tsubo corner lot on two roads (east 16m + north-west 4m), 10 min from Akatsuka",
+        "Near Flespo Akatsuka and supermarkets; flat land, vacant, no building condition",
+        "No building condition (建築条件なし) — choose your own builder"
+      ],
+      "cautions": [
+        "Seller disclaims non-conformity liability (契約不適合責任免責)",
+        "Building foundation remains on the plot — as-is handover, removal on the buyer",
+        "Sewer hookup (with charge) is buyer-borne; farmland category (地目：畑)"
+      ],
+      "source": {
+        "name": "goo住宅・不動産 (SUUMO feed)",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/08201/030Z21920648/041467048/x1030Z21920648.html",
+        "verified": "detail",
+        "infoDate": "2026-11-15"
+      },
+      "isNew": true
     }
   ],
   "scoring": {

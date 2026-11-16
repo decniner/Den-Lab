@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Oyama",
     "editionJa": "小山",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Oyama City, Tochigi",
     "areaJa": "栃木県小山市"
   },
@@ -65,7 +65,7 @@
       "district": "Otome 1",
       "districtJa": "乙女1丁目",
       "title": "New 4LDK (Five Is Home) on a 226m² plot — parking for 6",
-      "priceMan": 2980,
+      "priceMan": 2680,
       "priceFrom": false,
       "landM2": 226.52,
       "buildingM2": 109.3,
@@ -88,8 +88,9 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/78003195.html",
         "verified": "detail",
-        "infoDate": "2026-10-22"
-      }
+        "infoDate": "2026-11-12"
+      },
+      "priceDropMan": 300
     },
     {
       "id": "h03",
@@ -193,8 +194,7 @@
         "url": "https://house.goo.ne.jp/buy/bh/detail/09208/030/W/77958843.html",
         "verified": "detail",
         "infoDate": "2026-11-04"
-      },
-      "priceDropMan": 100
+      }
     },
     {
       "id": "h07",
@@ -235,7 +235,7 @@
       "district": "Hanagaki-cho 2",
       "districtJa": "花垣町2丁目",
       "title": "Used 3LDK (1976) at ¥350万 — no-rebuild, defect liability waived, experts only",
-      "priceMan": 320,
+      "priceMan": 300,
       "priceFrom": false,
       "landM2": 171.27,
       "buildingM2": 92.79,
@@ -263,9 +263,10 @@
         "name": "OCN不動産",
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/09208/030Z20759173/177142001/x1030Z20759173.html",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-14"
       },
-      "majorCautions": 2
+      "majorCautions": 2,
+      "priceDropMan": 20
     },
     {
       "id": "h09",
@@ -400,8 +401,7 @@
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/09208/030Z79162292/189549004/x1030Z79162292.html",
         "verified": "detail",
         "infoDate": "2026-11-01"
-      },
-      "priceDropMan": 170
+      }
     },
     {
       "id": "h16",
@@ -436,8 +436,7 @@
         "url": "https://www.homes.co.jp/kodate/b-1546220000122/",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h17",
@@ -472,8 +471,7 @@
         "url": "https://house.goo.ne.jp/buy/uh/detail/1/09208/030Z21955240/177142001/x1030Z21955240.html",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "h18",
@@ -508,8 +506,7 @@
         "url": "https://www.homes.co.jp/kodate/b-1470860006317/",
         "verified": "detail",
         "infoDate": "2026-11-09"
-      },
-      "isNew": true
+      }
     },
     {
       "id": "l03",
@@ -695,44 +692,6 @@
         "verified": "detail",
         "infoDate": "2026-10-23"
       }
-    },
-    {
-      "id": "l10",
-      "type": "land",
-      "district": "Minami-Otome 1",
-      "districtJa": "南乙女1丁目",
-      "title": "Very large 672m² flat plot 12 minutes from Mamada, no building conditions",
-      "priceMan": 2680,
-      "priceFrom": false,
-      "landM2": 672,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Mamada",
-      "stationJa": "間々田",
-      "line": "JR Utsunomiya Line",
-      "lineJa": "JR宇都宮線",
-      "walkMin": 12,
-      "built": null,
-      "ageYears": null,
-      "zoning": "第1種住居地域",
-      "coverageFar": "60% / 200%",
-      "highlights": [
-        "Huge 672m² (about 203 tsubo) flat plot — room for a large house, garden and parking, or a future split",
-        "Vacant (更地・平坦地), mains sewer, no building conditions",
-        "No building condition (建築条件なし) — choose your own builder"
-      ],
-      "cautions": [
-        "Oversized for a single house — price reflects the full 672m²; check subdivision/development-permit implications if splitting",
-        "Land is registered as farmland (地目：畑) — Farmland Act notification required (農地法届出が必要です)",
-        "No water/sewer connections drawn into the plot (上下水道の敷地内取出しなし) — connection costs fall on the buyer"
-      ],
-      "source": {
-        "name": "goo住宅・不動産",
-        "url": "https://house.goo.ne.jp/buy/la/detail/4/09208/1498120000085/149812/x41498120000085.html",
-        "verified": "detail",
-        "infoDate": "2026-10-17"
-      },
-      "majorCautions": 1
     },
     {
       "id": "l11",

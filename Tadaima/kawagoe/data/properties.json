@@ -4,7 +4,7 @@
     "nameJa": "ただいま！",
     "edition": "Kawagoe",
     "editionJa": "川越",
-    "researchedOn": "2026-11-09",
+    "researchedOn": "2026-11-16",
     "area": "Kawagoe City, Saitama",
     "areaJa": "埼玉県川越市"
   },
@@ -101,7 +101,7 @@
       "district": "Kami-Shingashi",
       "districtJa": "上新河岸",
       "title": "New 3LDK house — the cheaper of two, fresh today",
-      "priceMan": 3080,
+      "priceMan": 2980,
       "priceFrom": false,
       "landM2": 142.46,
       "buildingM2": 93.96,
@@ -125,9 +125,10 @@
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/b-17038000009872/",
         "verified": "detail",
-        "infoDate": "2026-11-02"
+        "infoDate": "2026-11-16"
       },
-      "majorCautions": 0
+      "majorCautions": 0,
+      "priceDropMan": 100
     },
     {
       "id": "h04",
@@ -192,8 +193,7 @@
         "verified": "detail",
         "infoDate": "2026-11-08"
       },
-      "majorCautions": 0,
-      "priceDropMan": 100
+      "majorCautions": 0
     },
     {
       "id": "h06",
@@ -262,8 +262,7 @@
         "verified": "detail",
         "infoDate": "2026-11-03"
       },
-      "majorCautions": 0,
-      "priceDropMan": 100
+      "majorCautions": 0
     },
     {
       "id": "h08",
@@ -472,7 +471,7 @@
       "district": "Shimohiroya",
       "districtJa": "大字下広谷",
       "title": "New 4LDK (Cradle Garden No.14) — ZEH house on a corner plot",
-      "priceMan": 2780,
+      "priceMan": 2580,
       "priceFrom": false,
       "landM2": 124.1,
       "buildingM2": 95.57,
@@ -498,10 +497,11 @@
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/b-17084440000381/",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-11"
       },
       "majorCautions": 0,
-      "section": "shimohiroya"
+      "section": "shimohiroya",
+      "priceDropMan": 200
     },
     {
       "id": "h16",
@@ -509,7 +509,7 @@
       "district": "Shimohiroya",
       "districtJa": "大字下広谷",
       "title": "New 3LDK (Live Garden) — the section's only sub-15-minute walk",
-      "priceMan": 3480,
+      "priceMan": 3280,
       "priceFrom": false,
       "landM2": 100.02,
       "buildingM2": 93.56,
@@ -534,10 +534,11 @@
         "name": "LIFULL HOME'S",
         "url": "https://www.homes.co.jp/kodate/b-17084440000448/",
         "verified": "detail",
-        "infoDate": "2026-10-23"
+        "infoDate": "2026-11-14"
       },
       "majorCautions": 0,
-      "section": "shimohiroya"
+      "section": "shimohiroya",
+      "priceDropMan": 200
     },
     {
       "id": "h18",
@@ -642,8 +643,7 @@
         "infoDate": "2026-11-09"
       },
       "majorCautions": 0,
-      "section": "shimohiroya",
-      "priceDropMan": 70
+      "section": "shimohiroya"
     },
     {
       "id": "h21",
@@ -651,7 +651,7 @@
       "district": "Shimohiroya",
       "districtJa": "大字下広谷",
       "title": "Used 4LDK (1989), vacant — two agencies list it at two prices",
-      "priceMan": 1299,
+      "priceMan": 1499,
       "priceFrom": false,
       "landM2": 119.82,
       "buildingM2": 93.56,
@@ -674,9 +674,9 @@
       ],
       "source": {
         "name": "LIFULL HOME'S",
-        "url": "https://www.homes.co.jp/kodate/b-1520380002480/",
+        "url": "https://www.homes.co.jp/kodate/b-1177000011391/",
         "verified": "detail",
-        "infoDate": "2026-11-01"
+        "infoDate": "2026-11-13"
       },
       "majorCautions": 1,
       "section": "shimohiroya"
@@ -754,78 +754,142 @@
       "section": "shimohiroya"
     },
     {
-      "id": "l01",
-      "type": "land",
-      "district": "Nakaharamachi 2-chome",
-      "districtJa": "中原町2丁目",
-      "title": "Vacant lot 2 minutes from Hon-Kawagoe — no builder tie-in",
-      "priceMan": 3600,
-      "priceFrom": false,
-      "landM2": 78.51,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Hon-Kawagoe",
-      "stationJa": "本川越",
-      "line": "Seibu Shinjuku Line",
-      "lineJa": "西武新宿線",
-      "walkMin": 2,
-      "built": null,
-      "ageYears": null,
-      "zoning": "近隣商業地域",
-      "coverageFar": "80% / 200%",
+      "ageYears": 5,
+      "buildingM2": 108.47,
+      "built": "Nov 2021",
+      "cautions": [],
+      "district": "Suna",
+      "districtJa": "大字砂",
       "highlights": [
-        "Three stations, three lines within 13 minutes",
-        "Vacant land (更地), no building condition (建築条件なし)",
-        "Lawson 1 min, Maruhiro department store 5 min"
+        "2021-built 5LDK just 5 minutes from Shingashi",
+        "Parking for 2 cars, south-east road frontage",
+        "Dishwasher, bath dryer, walk-in closet, 2 toilets"
       ],
-      "cautions": [
-        "Setback required: 8.6m² of the plot is lost (実効面積 約69.9m²)",
-        "Narrow 2.9m south road"
-      ],
+      "id": "h26",
+      "isNew": true,
+      "landM2": 108.49,
+      "layout": "5LDK",
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "majorCautions": 0,
+      "priceFrom": false,
+      "priceMan": 4380,
       "source": {
-        "name": "SUUMO",
-        "url": "https://suumo.jp/jj/bukken/shosai/JJ010FJ100/?ar=030&bs=030&nc=21401519&ta=11&sc=11201",
-        "verified": "detail",
-        "infoDate": "2026-10-22"
+        "infoDate": "2026-11-15",
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11201/030Z22191621/006050603/x1030Z22191621.html",
+        "verified": "detail"
       },
-      "majorCautions": 1
+      "station": "Shingashi",
+      "stationJa": "新河岸",
+      "title": "Near-new 5LDK (2021) 5 minutes from Shingashi",
+      "type": "house-used",
+      "walkMin": 5
     },
     {
-      "id": "l03",
-      "type": "land",
-      "district": "Wakita-Shinmachi",
-      "districtJa": "脇田新町",
-      "title": "Corner vacant lot near Kawagoe Station under ¥2,000万",
-      "priceMan": 1998,
-      "priceFrom": false,
-      "landM2": 78.12,
-      "buildingM2": null,
-      "layout": null,
-      "station": "Kawagoe",
-      "stationJa": "川越",
-      "line": "Tobu Tojo / JR Kawagoe",
-      "lineJa": "東武東上線・JR川越線",
-      "walkMin": 12,
-      "built": null,
-      "ageYears": null,
-      "zoning": "準住居地域",
-      "coverageFar": "60% / 200%",
+      "ageYears": 1,
+      "buildingM2": 99.16,
+      "built": "Apr 2025",
+      "cautions": [],
+      "district": "Kasahata",
+      "districtJa": "大字笠幡",
       "highlights": [
-        "Corner lot (角地) with good sunlight",
-        "No building condition (建築条件なし)",
-        "Immediate handover (即引渡し可)"
+        "Built Apr 2025 — effectively a new house, long-life quality housing (長期優良住宅)",
+        "Move-in ready (即入居可), parking for 2",
+        "Bath dryer, 2 toilets, double-glazed windows"
       ],
-      "cautions": [
-        "Demolition in progress — vacant-land handover stated as from around mid-Sep 2026; confirm it finished",
-        "Seen via portal index (crawled weeks ago) — verify on the link"
-      ],
+      "id": "h27",
+      "isNew": true,
+      "landM2": 135.56,
+      "layout": "4LDK",
+      "line": "JR Kawagoe Line",
+      "lineJa": "ＪＲ川越線",
+      "majorCautions": 0,
+      "priceFrom": false,
+      "priceMan": 3480,
       "source": {
+        "infoDate": "2026-11-15",
         "name": "goo住宅・不動産",
-        "url": "https://house.ocn.ne.jp/sp/tochi/special/4001/ensen/104/2104050.html",
-        "verified": "index",
-        "infoDate": "2026-10-23"
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11201/030Z77550949/064365000/x1030Z77550949.html",
+        "verified": "detail"
       },
-      "majorCautions": 0
+      "station": "Kasahata",
+      "stationJa": "笠幡",
+      "title": "2025-built 4LDK 8 minutes from Kasahata",
+      "type": "house-used",
+      "walkMin": 8
+    },
+    {
+      "ageYears": 27,
+      "buildingM2": 117.0,
+      "built": "Jun 1999",
+      "cautions": [
+        "Urbanization control area (市街化調整区域) — rebuilding/extension is restricted; check what is permitted before buying",
+        "No city gas or mains sewer listed on the detail page"
+      ],
+      "district": "Kasahata",
+      "districtJa": "大字笠幡",
+      "highlights": [
+        "Huge 293.84m² (about 89 tsubo) lot with a big garden, parking for 4",
+        "2022 reform; service room converts the 3SLDK to a 4LDK",
+        "Kasahata 8 minutes, schools within a 10-12 minute walk"
+      ],
+      "id": "h28",
+      "isNew": true,
+      "landM2": 293.84,
+      "layout": "3SLDK",
+      "line": "JR Kawagoe Line",
+      "lineJa": "ＪＲ川越線",
+      "majorCautions": 1,
+      "priceFrom": false,
+      "priceMan": 2880,
+      "source": {
+        "infoDate": "2026-11-15",
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11201/030Z21803206/184540001/x1030Z21803206.html",
+        "verified": "detail"
+      },
+      "station": "Kasahata",
+      "stationJa": "笠幡",
+      "title": "Big-garden 3SLDK on a 294m² lot, 8 minutes from Kasahata",
+      "type": "house-used",
+      "walkMin": 8
+    },
+    {
+      "ageYears": 47,
+      "buildingM2": 73.69,
+      "built": "Feb 1979",
+      "cautions": [
+        "Built 1979 — pre-1981 seismic code; get a seismic check before buying",
+        "LP gas, not city gas"
+      ],
+      "district": "Imanari 4-chome",
+      "districtJa": "今成4丁目",
+      "highlights": [
+        "Cheapest house in the edition at ¥1,590万, 9 minutes from Nishi-Kawagoe",
+        "Water areas reformed Jun 2020 (kitchen and toilet)",
+        "Parking for 2, south-west road frontage"
+      ],
+      "id": "h29",
+      "isNew": true,
+      "landM2": 113.25,
+      "layout": "3LDK",
+      "line": "JR Kawagoe Line",
+      "lineJa": "ＪＲ川越線",
+      "majorCautions": 1,
+      "priceFrom": false,
+      "priceMan": 1590,
+      "source": {
+        "infoDate": "2026-11-15",
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/uh/detail/1/11201/030Z79172787/184540001/x1030Z79172787.html",
+        "verified": "detail"
+      },
+      "station": "Nishi-Kawagoe",
+      "stationJa": "西川越",
+      "title": "Reformed 3LDK (1979) 9 minutes from Nishi-Kawagoe — ¥1,590万",
+      "type": "house-used",
+      "walkMin": 9
     },
     {
       "id": "l04",
@@ -898,8 +962,7 @@
         "verified": "detail",
         "infoDate": "2026-11-07"
       },
-      "majorCautions": 2,
-      "priceDropMan": 100
+      "majorCautions": 2
     },
     {
       "id": "l07",
@@ -973,8 +1036,7 @@
         "verified": "detail",
         "infoDate": "2026-11-09"
       },
-      "majorCautions": 0,
-      "priceDropMan": 200
+      "majorCautions": 0
     },
     {
       "id": "l11",
@@ -1047,6 +1109,80 @@
         "infoDate": "2026-10-23"
       },
       "majorCautions": 1
+    },
+    {
+      "ageYears": null,
+      "buildingM2": null,
+      "built": null,
+      "cautions": [
+        "Plots 1-4 carry an easement (地役権) for the shared access road — extra registration cost applies",
+        "Water connection fee is buyer-paid (水道負担金→買主負担)",
+        "Two-storey houses only (2階建限定); land use is 雑種地 (miscellaneous land)"
+      ],
+      "coverageFar": "50% / 100%",
+      "district": "Suna",
+      "districtJa": "大字砂",
+      "highlights": [
+        "No building condition — build with any maker; sold directly by the developer (no broker fee)",
+        "6 minutes from Shingashi, city gas, mains sewer, public water",
+        "7-plot release, 6 plots still available; handover late Dec 2026"
+      ],
+      "id": "l13",
+      "isNew": true,
+      "landM2": 120.04,
+      "layout": null,
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "majorCautions": 0,
+      "priceFrom": true,
+      "priceMan": 3199,
+      "source": {
+        "infoDate": "2026-11-15",
+        "name": "LIFULL HOME'S",
+        "url": "https://www.homes.co.jp/tochi/b-17005070000336/",
+        "verified": "detail"
+      },
+      "station": "Shingashi",
+      "stationJa": "新河岸",
+      "title": "120m² lot 6 minutes from Shingashi, no building condition (Blooming Garden)",
+      "type": "land",
+      "walkMin": 6,
+      "zoning": "第1種低層住居専用地域"
+    },
+    {
+      "ageYears": null,
+      "buildingM2": null,
+      "built": null,
+      "cautions": [],
+      "coverageFar": "60% / 200%",
+      "district": "Matoba",
+      "districtJa": "大字的場",
+      "highlights": [
+        "Cheapest lot in the edition at ¥880万, 6 minutes from Kasumigaseki",
+        "Vacant land, no building condition, city gas, mains sewer",
+        "South-east 4m road frontage; supermarket within a 10-minute walk"
+      ],
+      "id": "l14",
+      "isNew": true,
+      "landM2": 108.17,
+      "layout": null,
+      "line": "Tobu Tojo Line",
+      "lineJa": "東武東上線",
+      "majorCautions": 0,
+      "priceFrom": false,
+      "priceMan": 880,
+      "source": {
+        "infoDate": "2026-11-15",
+        "name": "goo住宅・不動産",
+        "url": "https://house.goo.ne.jp/buy/la/detail/1/11201/030Z70761704/014184000/x1030Z70761704.html",
+        "verified": "detail"
+      },
+      "station": "Kasumigaseki",
+      "stationJa": "霞ヶ関",
+      "title": "108m² vacant lot 6 minutes from Kasumigaseki — ¥880万",
+      "type": "land",
+      "walkMin": 6,
+      "zoning": "第1種住居地域"
     }
   ],
   "scoring": {
