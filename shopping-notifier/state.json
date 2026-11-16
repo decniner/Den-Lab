@@ -370,7 +370,7 @@
     "cotopaxijapan:9246627070140:45992675246268": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-11-09T10:22:15+09:00",
+      "sent_at": "2026-11-16T10:32:41+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-vest-mens-sale26ss?variant=45992675246268"
     },
     "cotopaxijapan:9246627659964:45992682881212": {
@@ -394,7 +394,7 @@
     "cotopaxijapan:9246629068988:45992711749820": {
       "sale_price": "15950",
       "reference_price": "31900",
-      "sent_at": "2026-11-05T10:58:05+09:00",
+      "sent_at": "2026-11-16T10:32:41+09:00",
       "url": "https://cotopaxi.jp/products/trico-hybrid-hooded-jacket-mens-sale26ss?variant=45992711749820"
     },
     "cotopaxijapan:9246628675772:45992704770236": {
@@ -730,7 +730,7 @@
     "boardriders-co-jp:10631289635097:52412836282649": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-11-09T10:22:15+09:00",
+      "sent_at": "2026-11-16T10:32:41+09:00",
       "url": "https://boardriders.co.jp/products/n0452500?variant=52412836282649"
     },
     "boardriders-co-jp:9779335069977:49986664071449": {
@@ -850,7 +850,7 @@
     "boardriders-co-jp:10631289110809:52412829729049": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-11-09T10:22:15+09:00",
+      "sent_at": "2026-11-16T10:32:41+09:00",
       "url": "https://boardriders.co.jp/products/g1352516?variant=52412829729049"
     },
     "boardriders-co-jp:9781515944217:50213834522905": {
@@ -981,9 +981,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-11-15",
-    "coverage_key": "a535fda39dd381914cb8a4f2f7e87c6242151580f2c5b55ff0fed8989f5b45db",
-    "completed_at": "2026-11-15T10:29:41+09:00",
-    "digest_hash": "8bea23dbbd8b448ebfc1a0397425a7fe5784d0298b88ef7a071206ecef7c3a2b"
+    "date": "2026-11-16",
+    "coverage_key": "db3f4f5890937e3e80ea33863b3bdc84f16d70235375cb406d1a67cde02b639f",
+    "completed_at": "2026-11-16T10:32:41+09:00",
+    "digest_hash": "3bded1ab546b92c0c580c4af3dfaf25a8e6ac1bb703521512d1c37d0d698968f"
   }
 }
