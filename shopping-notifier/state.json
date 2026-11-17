@@ -238,7 +238,7 @@
     "toffyjapan:10095236645138:51142624411922": {
       "sale_price": "1230",
       "reference_price": "2728",
-      "sent_at": "2026-11-10T12:57:16+09:00",
+      "sent_at": "2026-11-17T13:18:52+09:00",
       "url": "https://toffy.jp/products/hfn6?variant=51142624411922"
     },
     "toffyjapan:8883468894482:47419932508434": {
@@ -978,12 +978,30 @@
       "reference_price": "176000",
       "sent_at": "2026-11-13T11:19:21+09:00",
       "url": "https://boardriders.co.jp/products/g0452500?variant=52412801679641"
+    },
+    "ecoflow:14684998762863:53522491933039": {
+      "sale_price": "112600",
+      "reference_price": "246620",
+      "sent_at": "2026-11-17T13:18:52+09:00",
+      "url": "https://jp.ecoflow.com/products/delta-3-1500-portable-power-station?variant=53522491933039"
+    },
+    "boardriders-co-jp:10631291207961:52412845424921": {
+      "sale_price": "32945",
+      "reference_price": "65890",
+      "sent_at": "2026-11-17T13:18:52+09:00",
+      "url": "https://boardriders.co.jp/products/rwt244702?variant=52412845424921"
+    },
+    "boardriders-co-jp:9410821325081:48834929426713": {
+      "sale_price": "20900",
+      "reference_price": "41800",
+      "sent_at": "2026-11-17T13:18:52+09:00",
+      "url": "https://boardriders.co.jp/products/rwt241704?variant=48834929426713"
     }
   },
   "last_digest": {
-    "date": "2026-11-16",
-    "coverage_key": "db3f4f5890937e3e80ea33863b3bdc84f16d70235375cb406d1a67cde02b639f",
-    "completed_at": "2026-11-16T10:32:41+09:00",
-    "digest_hash": "3bded1ab546b92c0c580c4af3dfaf25a8e6ac1bb703521512d1c37d0d698968f"
+    "date": "2026-11-17",
+    "coverage_key": "2ec430b07f4a2969f814164648a574e5c4b633c35637f267618be3f573b40652",
+    "completed_at": "2026-11-17T13:18:52+09:00",
+    "digest_hash": "e1cdd99bb2055ea75095660bedf28f9ad53e1ac95a7b301df72a40683002c8a1"
   }
 }
