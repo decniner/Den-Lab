@@ -45,8 +45,8 @@ Create each book summary as part of one repeatable Stickman Storybook series. Ca
 
 ## Captions and platform-safe layout
 
-- Use clean karaoke-style captions synchronized to speech: highlight only the currently spoken word, keep remaining words readable, and use a consistent font, size, outline/shadow, and highlight color throughout the video.
-- Inspect decoded consecutive frames of the approved Dracula MP4 and follow `CAPTION_SPEC.md`: bold black words, a restrained warm-ivory outline and subtle dark shadow, burgundy fill on the current word, fixed caption baseline and stationary text. Word changes are instantaneous; do not add bounce, scaling, fades, or translation. Keep the reference's type size and natural word spacing. Prefer concise single-line caption beats; wrap only when needed.
+- Use clean karaoke-style captions synchronized to speech: keep each complete timed phrase stationary and highlight the current spoken word in place. Never scroll a rolling word window. Keep the font, size, outline/shadow, and highlight color consistent throughout.
+- Inspect decoded consecutive frames of the approved Dracula MP4 and follow `CAPTION_SPEC.md`: bold black words, a restrained warm-ivory outline and subtle dark shadow, burgundy fill advancing word by word, fixed caption baseline and stationary phrase. Word changes are instantaneous; do not add bounce, scaling, fades, or translation. Use the reference's natural word spacing. Add a fixed warm-ivory caption plate only when scene contrast requires it. Prefer concise single-line cue phrases; wrap only when needed.
 - Keep captions in the central lower-safe region, above the bottom interface area and away from the right-side buttons and top title areas. Leave generous margins for YouTube Shorts, Facebook Reels, and TikTok overlays. Never place essential text at the extreme edges.
 - Limit each caption line to a short phrase, use no more than two lines, and check readability against both light and dark scenes. Do not let captions cover faces, key plot objects, or the book title.
 
