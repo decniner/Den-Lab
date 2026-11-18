@@ -1,0 +1,26 @@
+{
+  "references": {
+    "video": "references/Dracula_YouTube_Short_Painterly.mp4",
+    "video_sha256": "1c1744612f4d9aebbe37e2b450d843f825fc29ff1650684eba8fe30df3b32a9b",
+    "cover": "references/Dracula_Hook_Cover.png",
+    "cover_sha256": "2f1f7801f6908c62ca75c8b30b454397499bbae465eee21de05e9e322f162100",
+    "cover_style": "references/A Room of One’s Own Legacy.png",
+    "cover_style_sha256": "5a3c4fc5d24ab85e28b909f6247a4116d22e9c53faab4163bbdbfd7fe7f944e0"
+  },
+  "approved_duration_seconds": 10,
+  "hook_duration_seconds": 2.5,
+  "artwork": {
+    "cover": "assets/hook-cover.png",
+    "contact_sheet": "assets/contact-sheet.png",
+    "scenes": ["assets/scene-01.png", "assets/scene-02.png"],
+    "review": {"status": "pending", "reviewer": "", "premium_illustration": false,
+      "consistent_character": false, "palette_tones": 3, "no_primitive_vectors": false}
+  },
+  "narration": "public/audio/narration.wav",
+  "timeline": {"narration_start_frame": 0, "total_frames": 300, "hook_frames": 75,
+    "caption_component": "components/Caption.tsx", "caption_baseline_px": null},
+  "image_generation": {"executable": "imagegen"},
+  "render": {"remotion_cli": ["node", "node_modules/remotion/cli/index.mjs"],
+    "entry_point": "src/index.ts", "hook_composition": "HookCover", "full_composition": "BookSummary",
+    "props": "public/project-props.json", "hook_output": "out/hook-cover.mp4", "output": "out/book-summary.mp4"}
+}

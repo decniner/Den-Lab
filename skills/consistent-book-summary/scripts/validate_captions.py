@@ -6,7 +6,10 @@ from pathlib import Path
 
 def validate(cues):
     errors = []
+    if not cues:
+        errors.append("No caption cues supplied")
     previous_end = 0
+    shared_baseline = None
     for i, cue in enumerate(cues):
         start, end = cue.get("start_ms"), cue.get("end_ms")
         if not isinstance(start, (int,float)) or not isinstance(end, (int,float)) or start < 0 or end <= start:
@@ -21,6 +24,10 @@ def validate(cues):
         baseline = cue.get("baseline_px")
         if not isinstance(baseline, (int,float)):
             errors.append(f"Cue {i}: missing numeric baseline_px")
+        elif shared_baseline is None:
+            shared_baseline = baseline
+        elif baseline != shared_baseline:
+            errors.append(f"Cue {i}: caption baseline differs from shared baseline {shared_baseline}")
         last = start
         for j, word in enumerate(words):
             ws, we = word.get("start_ms"), word.get("end_ms")
