@@ -1,0 +1,10 @@
+{
+  "status": "UNVERIFIED",
+  "reference_video_sha256": null,
+  "reference_cover_sha256": null,
+  "frame_samples_seconds": [],
+  "approved_by": null,
+  "approved_at": null,
+  "style_lock_version": "0.1",
+  "notes": "Populate only after inspecting exact approved video."
+}
