@@ -4,15 +4,13 @@ import captionStyle from '../caption_style.json';
 export type CaptionWord = { text: string; active: boolean };
 export type CaptionProps = { words: CaptionWord[] };
 
-/** Dracula-calibrated static caption; only the active word fill changes. */
+/** Fixed karaoke phrase; the burgundy word capsule advances with speech. */
 export const Caption: React.FC<CaptionProps> = ({words}) => (
-  <svg width={captionStyle.canvas[0]} height={captionStyle.canvas[1]} viewBox={`0 0 ${captionStyle.canvas[0]} ${captionStyle.canvas[1]}`} style={{position:'absolute',inset:0,overflow:'visible'}}>
-    <rect x={captionStyle.panel_x} y={captionStyle.panel_y} width={captionStyle.panel_width} height={captionStyle.panel_height} rx={captionStyle.panel_radius} fill={captionStyle.panel_color} fillOpacity={captionStyle.panel_opacity / 255}/>
-    <text x={captionStyle.left_x} y={captionStyle.baseline_y} fontFamily={captionStyle.font_family} fontSize={captionStyle.font_size_px}
-      fontWeight={captionStyle.font_weight} letterSpacing="0" wordSpacing={`${captionStyle.word_gap_px}px`} textAnchor="start" dominantBaseline="alphabetic"
-      paintOrder="stroke fill" stroke={captionStyle.outline_color} strokeWidth={captionStyle.outline_width_px}
-      strokeLinejoin="round" style={{filter:`drop-shadow(${captionStyle.shadow_offset_px[0]}px ${captionStyle.shadow_offset_px[1]}px ${captionStyle.shadow_blur_px}px ${captionStyle.shadow_color})`}}>
-      {words.map((w,i)=><tspan key={i} fill={w.active?captionStyle.active_color:captionStyle.text_color}>{i>0?' ':''}{w.text}</tspan>)}
-    </text>
-  </svg>
+  <div style={{position:'absolute',left:captionStyle.left_x,top:captionStyle.baseline_y-captionStyle.font_size_px*0.84,
+    whiteSpace:'nowrap',fontFamily:captionStyle.font_family,fontSize:captionStyle.font_size_px,fontWeight:captionStyle.font_weight,
+    lineHeight:1,color:captionStyle.text_color,WebkitTextStroke:`${captionStyle.outline_width_px}px ${captionStyle.outline_color}`,
+    textShadow:`${captionStyle.shadow_offset_px[0]}px ${captionStyle.shadow_offset_px[1]}px ${captionStyle.shadow_blur_px}px ${captionStyle.shadow_color}`}}>
+    {words.map((w,i)=><React.Fragment key={i}><span style={w.active?{backgroundColor:captionStyle.active_background,borderRadius:captionStyle.active_radius,
+      padding:`${captionStyle.active_padding_y}px ${captionStyle.active_padding_x}px`,margin:`-${captionStyle.active_padding_y}px -${captionStyle.active_padding_x}px`}:{}}>{w.text}</span>{i<words.length-1?' ':''}</React.Fragment>)}
+  </div>
 );

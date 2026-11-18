@@ -73,7 +73,7 @@ class ProductionTests(unittest.TestCase):
         self.assertNotIn("Skeleton", component)
         self.assertNotIn("boneRig", component)
 
-    def test_caption_component_matches_stationary_instant_highlight_contract(self):
+    def test_caption_component_matches_stationary_phrase_moving_highlight_contract(self):
         skill = Path(__file__).parents[1]
         component = (skill / "components" / "Caption.tsx").read_text(encoding="utf-8")
         compositor = (skill / "components" / "StillImageSequence.tsx").read_text(encoding="utf-8")
@@ -82,17 +82,17 @@ class ProductionTests(unittest.TestCase):
         self.assertEqual(style["word_gap_px"], 0)
         self.assertEqual(style["outline_width_px"], 4)
         self.assertEqual(style["font_size_px"], 56)
-        self.assertEqual(style["panel_opacity"], 232)
-        self.assertIn("instant", style["highlight_transition"])
-        self.assertEqual(style["panel_width"], 984)
-        self.assertIn("captionStyle.word_gap_px", component)
+        self.assertEqual(style["active_background"], "#7b2d3c")
+        self.assertEqual(style["active_padding_x"], 7)
+        self.assertIn("word boundaries", style["highlight_transition"])
         self.assertIn("captionStyle.outline_width_px", component)
         self.assertIn("captionStyle.shadow_blur_px", component)
-        self.assertIn("<rect", component)
+        self.assertIn("backgroundColor:captionStyle.active_background", component)
+        self.assertIn("{i<words.length-1?' ':''}", component)
         self.assertNotIn("caption={", compositor)
         self.assertIn("<Caption words={words}/>", compositor)
         self.assertIn("cue?.words.map", compositor)
-        self.assertIn("w.active?captionStyle.active_color:captionStyle.text_color", component)
+        self.assertIn("w.active?{backgroundColor:captionStyle.active_background", component)
         self.assertNotIn("scale(", component)
         self.assertNotIn("translate", component)
 
