@@ -1,9 +1,10 @@
 {
+  "reference": "Dracula_YouTube_Short_Painterly.mp4",
   "canvas": [
     1080,
     1920
   ],
-  "font_family": "Arial",
+  "font_family": "BookSummaryCaption",
   "font_weight": 700,
   "font_size_px": 56,
   "left_x": 78,
@@ -11,7 +12,9 @@
   "word_gap_px": 0,
   "outline_width_px": 4,
   "outline_color": "#f7f1e7",
-  "shadow_color": "rgba(35,28,25,0.176)",
+  "shadow_color": "#231c19",
+  "shadow_opacity": 45,
+  "shadow_rgba": "rgba(35,28,25,0.176)",
   "shadow_blur_px": 1.5,
   "shadow_offset_px": [
     1,
@@ -20,5 +23,7 @@
   "text_color": "#1d1b19",
   "active_color": "#7b2d3c",
   "highlight_transition": "instant burgundy active-word fill; stationary caption phrase",
-  "measurements_are_approximate": true
+  "measurements_are_approximate": false,
+  "font_asset_path": "public/assets/Arial-Bold.ttf",
+  "font_asset_sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
 }
