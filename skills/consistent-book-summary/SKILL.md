@@ -45,8 +45,8 @@ Create each book summary as part of one repeatable Stickman Storybook series. Ca
 
 ## Captions and platform-safe layout
 
-- Use clean karaoke-style captions synchronized to speech: highlight the current spoken word or short phrase, keep remaining words readable, and use a consistent font, size, stroke/shadow, and highlight color throughout the video.
-- Reproduce the karaoke caption treatment visible in the inspected approved videos: heavy bold black words, a thick warm-ivory outline, a soft dark drop shadow, and burgundy fill only on the currently spoken word or short phrase. Place captions left-aligned just below the illustration, matching the reference's type size, baseline, spacing, and line wrapping. Prefer concise caption beats that fit on one line as in the approved videos; wrap only when needed. Do not replace this with thin outlined text or a different caption style. Reserve clear artwork-free space behind and around the captions while preserving this treatment.
+- Use clean karaoke-style captions synchronized to speech: highlight only the currently spoken word, keep remaining words readable, and use a consistent font, size, outline/shadow, and highlight color throughout the video.
+- Inspect decoded consecutive frames of the approved Dracula MP4 and follow `CAPTION_SPEC.md`: bold black words, a restrained warm-ivory outline and subtle dark shadow, burgundy fill on the current word, fixed caption baseline and stationary text. Word changes are instantaneous; do not add bounce, scaling, fades, or translation. Keep the reference's type size and natural word spacing. Prefer concise single-line caption beats; wrap only when needed.
 - Keep captions in the central lower-safe region, above the bottom interface area and away from the right-side buttons and top title areas. Leave generous margins for YouTube Shorts, Facebook Reels, and TikTok overlays. Never place essential text at the extreme edges.
 - Limit each caption line to a short phrase, use no more than two lines, and check readability against both light and dark scenes. Do not let captions cover faces, key plot objects, or the book title.
 

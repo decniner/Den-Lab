@@ -1,0 +1,24 @@
+{
+  "canvas": [
+    1080,
+    1920
+  ],
+  "font_family": "Arial",
+  "font_weight": 700,
+  "font_size_px": 50,
+  "left_x": 78,
+  "baseline_y": 1368,
+  "word_gap_px": 10,
+  "outline_width_px": 4,
+  "outline_color": "#f7f1e7",
+  "shadow_color": "rgba(35,28,25,0.176)",
+  "shadow_blur_px": 1.5,
+  "shadow_offset_px": [
+    1,
+    2
+  ],
+  "text_color": "#1d1b19",
+  "active_color": "#7b2d3c",
+  "highlight_transition": "instant fill change only",
+  "measurements_are_approximate": true
+}

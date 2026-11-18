@@ -73,6 +73,23 @@ class ProductionTests(unittest.TestCase):
         self.assertNotIn("Skeleton", component)
         self.assertNotIn("boneRig", component)
 
+    def test_caption_component_matches_stationary_instant_highlight_contract(self):
+        skill = Path(__file__).parents[1]
+        component = (skill / "components" / "Caption.tsx").read_text(encoding="utf-8")
+        compositor = (skill / "components" / "StillImageSequence.tsx").read_text(encoding="utf-8")
+        style = json.loads((skill / "caption_style.json").read_text(encoding="utf-8"))
+        self.assertEqual(style["font_weight"], 700)
+        self.assertEqual(style["word_gap_px"], 10)
+        self.assertEqual(style["outline_width_px"], 4)
+        self.assertIn("captionStyle.word_gap_px", component)
+        self.assertIn("captionStyle.outline_width_px", component)
+        self.assertIn("captionStyle.shadow_blur_px", component)
+        self.assertNotIn("caption={", compositor)
+        self.assertIn("<Caption words={words}/>", compositor)
+        self.assertIn("w.active?captionStyle.active_color:captionStyle.text_color", component)
+        self.assertNotIn("scale(", component)
+        self.assertNotIn("translate", component)
+
     def test_rejects_scene_timing_gap(self):
         self.manifest["artwork"]["scenes"][0]["end_ms"] = 9000
         errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)

@@ -14,14 +14,6 @@ export type StillImageSequenceProps = {
   hookFrames: number;
   scenes: TimedStill[];
   captions: TimedCaption[];
-  caption: {
-    fontFamily: string;
-    fontSize: number;
-    baselineY: number;
-    leftX: number;
-    strokeWidth: number;
-    colors: {ink: string; outline: string; highlight: string; shadow: string};
-  };
 };
 
 /**
@@ -30,7 +22,7 @@ export type StillImageSequenceProps = {
  * No character rig, skeletal animation, or vector scene reconstruction is used.
  */
 export const StillImageSequence: React.FC<StillImageSequenceProps> = ({
-  narrationSrc, hookCoverSrc, hookFrames, scenes, captions, caption,
+  narrationSrc, hookCoverSrc, hookFrames, scenes, captions,
 }) => {
   const frame = useCurrentFrame();
   const currentScene = scenes.find((scene) => frame >= scene.startFrame && frame < scene.endFrame);
@@ -52,7 +44,7 @@ export const StillImageSequence: React.FC<StillImageSequenceProps> = ({
       {frame < hookFrames && (
         <Img src={publicAsset(hookCoverSrc)} style={{position: 'absolute', inset: 0, width: 1080, height: 1920}}/>
       )}
-      {cue && words.length > 0 && <Caption words={words} {...caption}/>}
+      {cue && words.length > 0 && <Caption words={words}/>}
     </AbsoluteFill>
   );
 };

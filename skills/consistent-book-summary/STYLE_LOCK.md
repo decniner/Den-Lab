@@ -32,7 +32,7 @@ Representative inspected frame times: 1, 8, 20, 40, 65, 90 seconds. Dracula refe
 - Do not substitute a generic photorealistic image style for the expressive storybook characters.
 
 ## Still unverified
-Exact font family/file and SHA256, font metrics, numerical caption coordinates, RGB/HEX palette, title box dimensions, animation curves, narration voice/speed, audio normalization, and exact numerical layout measurements. The A Room cover reference is 941×1671 and places a large two-line title above a burgundy rule and centered author, with the illustrated scene below. Measure exact pixel coordinates from source media before claiming pixel-exact reproduction.
+Exact font family/file and SHA256, font metrics, RGB/HEX palette, title box dimensions, animation curves, narration voice/speed, audio normalization, and exact numerical layout measurements. Caption values are approximate visual estimates from decoded frames (see CAPTION_SPEC.md), not pixel-exact recovered source parameters. The A Room cover reference is 941×1671 and places a large two-line title above a burgundy rule and centered author, with the illustrated scene below.
 
 ## Validation gate
 Exact reference identities are hash-locked in the example manifest. Use `A Room of One’s Own Legacy.png` as the authoritative hook-cover look and feel. The Dracula cover remains an exact series reference but does not override this cover direction. Use actual Dracula short frames for still-image pacing/framing and caption style. Numeric typography, animation, audio, and caption calibrations remain partial; inspect and record measurements per project before claiming exact reproduction. A contact sheet and rendered comparison remain mandatory.
