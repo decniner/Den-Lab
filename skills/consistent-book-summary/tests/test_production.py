@@ -79,7 +79,7 @@ class ProductionTests(unittest.TestCase):
         compositor = (skill / "components" / "StillImageSequence.tsx").read_text(encoding="utf-8")
         style = json.loads((skill / "caption_style.json").read_text(encoding="utf-8"))
         self.assertEqual(style["font_weight"], 700)
-        self.assertEqual(style["word_gap_px"], 10)
+        self.assertEqual(style["word_gap_px"], 0)
         self.assertEqual(style["outline_width_px"], 4)
         self.assertIn("captionStyle.word_gap_px", component)
         self.assertIn("captionStyle.outline_width_px", component)

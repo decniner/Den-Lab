@@ -8,7 +8,7 @@
   "font_size_px": 50,
   "left_x": 78,
   "baseline_y": 1368,
-  "word_gap_px": 10,
+  "word_gap_px": 0,
   "outline_width_px": 4,
   "outline_color": "#f7f1e7",
   "shadow_color": "rgba(35,28,25,0.176)",
