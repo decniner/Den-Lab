@@ -400,19 +400,19 @@
     "cotopaxijapan:9246628675772:45992704770236": {
       "sale_price": "15400",
       "reference_price": "30800",
-      "sent_at": "2026-11-08T10:02:29+09:00",
+      "sent_at": "2026-11-18T12:17:17+09:00",
       "url": "https://cotopaxi.jp/products/bacano-fleece-jacket-mens-sale26ss?variant=45992704770236"
     },
     "cotopaxijapan:9246628905148:45992708276412": {
       "sale_price": "15400",
       "reference_price": "30800",
-      "sent_at": "2026-11-08T10:02:29+09:00",
+      "sent_at": "2026-11-18T12:17:17+09:00",
       "url": "https://cotopaxi.jp/products/bacano-fleece-jacket-womens-sale26ss?variant=45992708276412"
     },
     "saucony-jp:8596862697624:45827018424472": {
       "sale_price": "15400",
       "reference_price": "30800",
-      "sent_at": "2026-11-08T10:02:29+09:00",
+      "sent_at": "2026-11-18T12:17:17+09:00",
       "url": "https://saucony.jp/products/mens-endorphin-trainer?variant=45827018424472"
     },
     "saucony-jp:8596880752792:45827129344152": {
@@ -742,7 +742,7 @@
     "boardriders-co-jp:9779346080025:49986729214233": {
       "sale_price": "16445",
       "reference_price": "32890",
-      "sent_at": "2026-10-23T09:19:03+09:00",
+      "sent_at": "2026-11-18T12:17:17+09:00",
       "url": "https://boardriders.co.jp/products/twt251701?variant=49986729214233"
     },
     "boardriders-co-jp:10631291109657:52412845130009": {
@@ -1005,9 +1005,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-11-17",
-    "coverage_key": "2ec430b07f4a2969f814164648a574e5c4b633c35637f267618be3f573b40652",
-    "completed_at": "2026-11-17T13:18:52+09:00",
-    "digest_hash": "e1cdd99bb2055ea75095660bedf28f9ad53e1ac95a7b301df72a40683002c8a1"
+    "date": "2026-11-18",
+    "coverage_key": "442caae9de1108ca507a3a969ee4efdfac471e672778582433b3d9ad95c99578",
+    "completed_at": "2026-11-18T12:17:17+09:00",
+    "digest_hash": "deeacbe25d084fdcca9897012233ab8a66839723f08100fd8d21a1722ec44972"
   }
 }
