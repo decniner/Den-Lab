@@ -736,7 +736,7 @@
     "boardriders-co-jp:9779335069977:49986664071449": {
       "sale_price": "16445",
       "reference_price": "32890",
-      "sent_at": "2026-10-23T09:19:03+09:00",
+      "sent_at": "2026-11-18T12:17:16+09:00",
       "url": "https://boardriders.co.jp/products/kwt251701?variant=49986664071449"
     },
     "boardriders-co-jp:9779346080025:49986729214233": {
@@ -862,7 +862,7 @@
     "boardriders-co-jp:10631287931161:52412821995801": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-11-10T12:57:16+09:00",
+      "sent_at": "2026-11-18T12:17:16+09:00",
       "url": "https://boardriders.co.jp/products/erjtj03493?variant=52412821995801"
     },
     "shop-orange-info:8599412539591:46105679167687": {
@@ -922,19 +922,19 @@
     "boardriders-co-jp:10631287701785:52412819865881": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-11-11T10:39:08+09:00",
+      "sent_at": "2026-11-18T12:17:16+09:00",
       "url": "https://boardriders.co.jp/products/g0452506?variant=52412819865881"
     },
     "boardriders-co-jp:10631289438489:52412833988889": {
       "sale_price": "19250",
       "reference_price": "38500",
-      "sent_at": "2026-11-11T10:39:08+09:00",
+      "sent_at": "2026-11-18T12:17:16+09:00",
       "url": "https://boardriders.co.jp/products/h1352507?variant=52412833988889"
     },
     "cotopaxijapan:9246627659964:45992682913980": {
       "sale_price": "16500",
       "reference_price": "33000",
-      "sent_at": "2026-11-11T10:39:08+09:00",
+      "sent_at": "2026-11-18T12:17:16+09:00",
       "url": "https://cotopaxi.jp/products/fuego-down-vest-womens-sale26ss?variant=45992682913980"
     },
     "shop-stridelab-jp:7407589032102:50612090044709": {
@@ -996,6 +996,12 @@
       "reference_price": "41800",
       "sent_at": "2026-11-17T13:18:52+09:00",
       "url": "https://boardriders.co.jp/products/rwt241704?variant=48834929426713"
+    },
+    "boardriders-co-jp:9779342049561:49986709160217": {
+      "sale_price": "20900",
+      "reference_price": "41800",
+      "sent_at": "2026-11-18T12:17:16+09:00",
+      "url": "https://boardriders.co.jp/products/rwt251704?variant=49986709160217"
     }
   },
   "last_digest": {
