@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consistent Book Summary"
+  short_description: "Create matching illustrated book summary Shorts"
+  default_prompt: "Create a book summary video using the established Stickman Storybook style, with distinct story scenes, karaoke captions, and a matching cover. Keep the project usable on macOS and Windows."
