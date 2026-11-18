@@ -17,6 +17,7 @@ Create each book summary as part of one repeatable Stickman Storybook series. Ca
 - Make one test frame first. Compare it directly with both approved videos and correct any mismatch in rendering style, character design, composition, or caption treatment before generating the rest. Recheck representative frames after rendering; visual continuity means matching the actual videos, not merely sharing colors or a book theme.
 - Derive the series' visual rules from the inspected reference footage. Do not assume parchment backgrounds, an ivory/black/burgundy palette, ink or gouache rendering, serif titles, stick figures, ornate borders, or any other treatment unless it is visibly present in the approved videos. Covers may use a different treatment from the video scenes; do not transfer cover styling to footage without evidence.
 - Match the reference's real color balance, contrast, character rendering, backgrounds, framing, typography, and caption treatment. Keep essential faces, props, and text readable on a phone without changing the established look.
+- Interpret a request for the “first ten seconds” as a 10-second opening segment. Do not turn it into a ten-minute video or a ten-second concept/prompt. Rebuild the requested segment itself, and preserve the intended book, platform framing, and established series style.
 
 ## Story and script
 
