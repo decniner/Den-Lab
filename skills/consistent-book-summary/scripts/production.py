@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Portable fail-closed validator and Remotion render orchestrator."""
+"""Portable fail-closed validator and Remotion still-image render orchestrator."""
 from __future__ import annotations
 import argparse
 import hashlib
@@ -79,11 +79,29 @@ def validate_manifest(data, root: Path, check_imagegen=True, which=shutil.which)
     dims = _png_dimensions(cover_path) if cover_path.is_file() else None
     if dims != (1080, 1920):
         errors.append("Hook cover must be a 1080x1920 PNG")
+    expected_frames = round(duration * 30) if isinstance(duration, (int, float)) and duration > 0 else None
     scenes = artwork.get("scenes", [])
     if not isinstance(scenes, list) or not scenes:
-        errors.append("At least one finished raster scene illustration is required")
-    elif any(Path(str(p)).suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp") or not resolve_path(root, str(p)).is_file() for p in scenes):
-        errors.append("Every scene must be an existing raster illustration (primitive SVG characters are rejected)")
+        errors.append("At least one story-specific still illustration is required for the narration scenes")
+    else:
+        expected_start = 0
+        for index, scene in enumerate(scenes):
+            if isinstance(scene, str):
+                image_path, start_ms, end_ms = scene, None, None
+            elif isinstance(scene, dict):
+                image_path = scene.get("image")
+                start_ms, end_ms = scene.get("start_ms"), scene.get("end_ms")
+            else:
+                image_path, start_ms, end_ms = None, None, None
+            if not isinstance(image_path, str) or Path(image_path).suffix.lower() not in (".png", ".jpg", ".jpeg", ".webp") or not resolve_path(root, image_path).is_file():
+                errors.append(f"Scene {index} must use an existing raster still image; primitive SVG characters are rejected")
+            if not isinstance(start_ms, (int, float)) or not isinstance(end_ms, (int, float)) or start_ms != expected_start or end_ms <= start_ms:
+                errors.append(f"Scene {index} must have contiguous valid start_ms/end_ms narration timing")
+            else:
+                expected_start = end_ms
+        expected_end = expected_frames * 1000 / 30 if expected_frames else None
+        if expected_end and expected_start != expected_end:
+            errors.append("Still-image scene plan must cover the approved runtime without gaps or extension")
     review = artwork.get("review", {})
     checks = {"status": "approved", "premium_illustration": True, "consistent_character": True,
               "no_primitive_vectors": True}
@@ -96,10 +114,16 @@ def validate_manifest(data, root: Path, check_imagegen=True, which=shutil.which)
     if not review.get("reviewer"):
         errors.append("Artwork quality review requires reviewer")
     narration = data.get("narration")
+    if data.get("narration_provider") != "kokoro":
+        errors.append("narration_provider must be kokoro")
     if not isinstance(narration, str) or not resolve_path(root, narration).is_file():
         errors.append(f"Kokoro narration file missing: {narration}")
+    visuals = data.get("visuals", {})
+    if visuals.get("mode") != "still_images":
+        errors.append("visuals.mode must be still_images")
+    if visuals.get("character_animation") is not False:
+        errors.append("Character animation/rigging is not part of this still-image workflow; set character_animation=false")
     timeline = data.get("timeline", {})
-    expected_frames = round(duration * 30) if isinstance(duration, (int, float)) and duration > 0 else None
     if timeline.get("narration_start_frame") != 0:
         errors.append("Narration must remain at frame 0; do not offset the existing Kokoro track")
     if timeline.get("total_frames") != expected_frames:
@@ -172,7 +196,7 @@ def render(data, root: Path, ffprobe="ffprobe", run=subprocess.run):
         meta = probe_video(dest, ffprobe, run=run)
         limit = min(data["approved_duration_seconds"], data["hook_duration_seconds"]) if comp == cfg["hook_composition"] else data["approved_duration_seconds"]
         if meta["duration_seconds"] > limit + 1 / 30:
-            raise RuntimeError(f"Rendered {comp} exceeds its approved duration; hook must replace time inside the existing timeline")
+            raise RuntimeError(f"Rendered {comp} exceeds its approved duration; hook must replace visual frames inside the existing timeline")
         if comp == cfg["full_composition"] and abs(meta["duration_seconds"] - data["approved_duration_seconds"]) > 1 / 30:
             raise RuntimeError("Final duration must match approved_duration_seconds within one frame")
     return {"hook": str(resolve_path(root, cfg["hook_output"])), "video": str(resolve_path(root, cfg["output"]))}

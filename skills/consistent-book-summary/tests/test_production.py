@@ -27,10 +27,12 @@ class ProductionTests(unittest.TestCase):
                            "cover_style": "A Room of One’s Own Legacy.png"},
             "approved_duration_seconds": 10,
             "hook_duration_seconds": 2.5,
-            "artwork": {"cover": "cover.png", "contact_sheet": "sheet.png", "scenes": ["scene.png"],
+            "artwork": {"cover": "cover.png", "contact_sheet": "sheet.png", "scenes": [{"image": "scene.png", "start_ms": 0, "end_ms": 10000}],
                         "review": {"status": "approved", "reviewer": "tester", "premium_illustration": True,
                                    "consistent_character": True, "palette_tones": 3, "no_primitive_vectors": True}},
             "narration": "narration.wav",
+            "narration_provider": "kokoro",
+            "visuals": {"mode": "still_images", "character_animation": False},
             "timeline": {"narration_start_frame": 0, "total_frames": 300, "hook_frames": 75,
                          "caption_component": "components/Caption.tsx", "caption_baseline_px": 1320},
             "image_generation": {"executable": "generator"},
@@ -60,6 +62,26 @@ class ProductionTests(unittest.TestCase):
         self.manifest["hook_duration_seconds"] = 12
         errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)
         self.assertTrue(any("hook" in e.lower() and "duration" in e.lower() for e in errors))
+
+    def test_still_image_compositor_keeps_audio_captions_and_static_art(self):
+        component = (Path(__file__).parents[1] / "components" / "StillImageSequence.tsx").read_text(encoding="utf-8")
+        self.assertIn("<Audio", component)
+        self.assertIn("startFrom={0}", component)
+        self.assertIn("<Caption", component)
+        self.assertIn("currentScene.src", component)
+        self.assertIn("publicAsset", component)
+        self.assertNotIn("Skeleton", component)
+        self.assertNotIn("boneRig", component)
+
+    def test_rejects_scene_timing_gap(self):
+        self.manifest["artwork"]["scenes"][0]["end_ms"] = 9000
+        errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)
+        self.assertTrue(any("cover the approved runtime" in e.lower() for e in errors))
+
+    def test_rejects_character_animation_architecture(self):
+        self.manifest["visuals"]["character_animation"] = True
+        errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)
+        self.assertTrue(any("character animation" in e.lower() for e in errors))
 
     def test_subprocess_uses_argument_list_without_shell(self):
         seen = {}

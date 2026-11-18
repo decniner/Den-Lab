@@ -15,6 +15,7 @@ Cover SHA256: `2f1f7801f6908c62ca75c8b30b454397499bbae465eee21de05e9e322f162100`
 Representative inspected frame times: 1, 8, 20, 40, 65, 90 seconds. Dracula references reside in the user's Library and the A Room cover reference is user-supplied locally; none are committed to this public repository.
 
 ## Observed visual contract
+- Story imagery is delivered as premium AI-generated still illustrations. Keep the character design consistent across scene images; no character rigging or skeletal/vector animation is required. Use restrained transitions or whole-image camera movement only where it supports the narration.
 - Vertical canvas with a soft, warm, blurred beige/gray backdrop and generous negative space.
 - Central near-square storybook illustrations with subtle shadow, usually located in the upper-middle region, not full-bleed backgrounds.
 - Expressive, simplified, rounded, dark-outline characters (stickman-inspired faces) embedded in detailed painterly Victorian settings.
@@ -34,4 +35,4 @@ Representative inspected frame times: 1, 8, 20, 40, 65, 90 seconds. Dracula refe
 Exact font family/file and SHA256, font metrics, numerical caption coordinates, RGB/HEX palette, title box dimensions, animation curves, narration voice/speed, audio normalization, and exact numerical layout measurements. The A Room cover reference is 941×1671 and places a large two-line title above a burgundy rule and centered author, with the illustrated scene below. Measure exact pixel coordinates from source media before claiming pixel-exact reproduction.
 
 ## Validation gate
-Exact reference identities are hash-locked in the example manifest. Use `A Room of One’s Own Legacy.png` as the authoritative hook-cover look and feel. The Dracula cover remains an exact series reference but does not override this cover direction. Use actual Dracula short frames for animated scene/caption style. Numeric typography, animation, audio, and caption calibrations remain partial; inspect and record measurements per project before claiming exact reproduction. A contact sheet and rendered comparison remain mandatory.
+Exact reference identities are hash-locked in the example manifest. Use `A Room of One’s Own Legacy.png` as the authoritative hook-cover look and feel. The Dracula cover remains an exact series reference but does not override this cover direction. Use actual Dracula short frames for still-image pacing/framing and caption style. Numeric typography, animation, audio, and caption calibrations remain partial; inspect and record measurements per project before claiming exact reproduction. A contact sheet and rendered comparison remain mandatory.
