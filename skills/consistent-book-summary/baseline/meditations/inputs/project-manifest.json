@@ -1,0 +1,458 @@
+{
+  "references": {
+    "production_baseline": "Meditations approved production",
+    "approved_master": "../approved/Meditations_Summary_Full.mp4"
+  },
+  "approved_duration_seconds": 147.06666666666666,
+  "hook_duration_seconds": 2.5,
+  "artwork": {
+    "cover": "../approved/Meditations_Hook_Cover.png",
+    "contact_sheet": "out/meditations-full-artwork-review.png",
+    "scenes": [
+      {
+        "image": "../assets/scenes/scene-01.png",
+        "start_ms": 0,
+        "end_ms": 5600,
+        "emotional_review": {
+          "narration_meaning": "Opening identification of the book and its central practical advice.",
+          "intended_tone": "calm introduction",
+          "facial_expression": "thoughtful, no smile",
+          "body_language": "Marcus kneels and listens",
+          "environmental_mood": "soft dawn camp light",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-02.png",
+        "start_ms": 5600,
+        "end_ms": 10000,
+        "emotional_review": {
+          "narration_meaning": "Meet each day calmly, treat others kindly, and focus on choices within reach.",
+          "intended_tone": "reflective resolve",
+          "facial_expression": "serious and focused",
+          "body_language": "seated, writing deliberately",
+          "environmental_mood": "quiet tent with warm lantern light",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-03.png",
+        "start_ms": 10000,
+        "end_ms": 15000,
+        "emotional_review": {
+          "narration_meaning": "These are private reminders rather than polished public chapters.",
+          "intended_tone": "introspective",
+          "facial_expression": "serious and reflective",
+          "body_language": "standing in quiet thought",
+          "environmental_mood": "misty camp at first light",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-04.png",
+        "start_ms": 15000,
+        "end_ms": 20250,
+        "emotional_review": {
+          "narration_meaning": "A ruler records thoughts while practicing Stoicism amid duty and uncertainty.",
+          "intended_tone": "private reflection",
+          "facial_expression": "focused and composed",
+          "body_language": "writing alone",
+          "environmental_mood": "dusk in a campaign tent",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-05.png",
+        "start_ms": 20250,
+        "end_ms": 25200,
+        "emotional_review": {
+          "narration_meaning": "Marcus expresses gratitude for the people who shaped him.",
+          "intended_tone": "quiet gratitude",
+          "facial_expression": "thoughtful, no smile",
+          "body_language": "walking alone in a garden while considering a keepsake",
+          "environmental_mood": "quiet Roman garden colonnade at morning",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-06.png",
+        "start_ms": 25200,
+        "end_ms": 30120,
+        "emotional_review": {
+          "narration_meaning": "He studies patience, fairness, self-control, and generosity.",
+          "intended_tone": "disciplined learning",
+          "facial_expression": "attentive and serious",
+          "body_language": "writing beside symbols of virtue",
+          "environmental_mood": "courtyard in early light",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-07.png",
+        "start_ms": 30120,
+        "end_ms": 35000,
+        "emotional_review": {
+          "narration_meaning": "Character grows by following good examples; then the morning begins.",
+          "intended_tone": "measured encouragement",
+          "facial_expression": "observant and calm",
+          "body_language": "watching practical help",
+          "environmental_mood": "Roman camp gate at sunrise",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-08.png",
+        "start_ms": 35000,
+        "end_ms": 39920,
+        "emotional_review": {
+          "narration_meaning": "People are made to live and work together.",
+          "intended_tone": "purposeful cooperation",
+          "facial_expression": "focused, no smiles",
+          "body_language": "watching supplies passed hand to hand",
+          "environmental_mood": "busy camp in clear morning light",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-09.png",
+        "start_ms": 39920,
+        "end_ms": 44810,
+        "emotional_review": {
+          "narration_meaning": "Others may be selfish or mistaken, and resentment harms the person carrying it.",
+          "intended_tone": "patient restraint",
+          "facial_expression": "concerned and composed",
+          "body_language": "listening to a frustrated courier",
+          "environmental_mood": "quiet camp courtyard",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-10.png",
+        "start_ms": 44810,
+        "end_ms": 49580,
+        "emotional_review": {
+          "narration_meaning": "Try to understand others, correct what you can, and remember shared nature.",
+          "intended_tone": "fair mediation",
+          "facial_expression": "serious and attentive",
+          "body_language": "calmly mediating a disagreement",
+          "environmental_mood": "Roman courtyard in soft light",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-11.png",
+        "start_ms": 49580,
+        "end_ms": 54850,
+        "emotional_review": {
+          "narration_meaning": "Separate what you control from what you do not.",
+          "intended_tone": "clear discernment",
+          "facial_expression": "contemplative",
+          "body_language": "considering a map and tablet",
+          "environmental_mood": "windy campaign tent",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-12.png",
+        "start_ms": 54850,
+        "end_ms": 59260,
+        "emotional_review": {
+          "narration_meaning": "Past events and reputation are outside your command; examine your own judgments.",
+          "intended_tone": "inward focus",
+          "facial_expression": "reflective and steady",
+          "body_language": "standing on an open terrace with one hand resting over his chest",
+          "environmental_mood": "distant hills and camp banners in a light breeze",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-13.png",
+        "start_ms": 59260,
+        "end_ms": 63770,
+        "emotional_review": {
+          "narration_meaning": "A painful event is real, but the meaning assigned to it shapes the response.",
+          "intended_tone": "grave reflection",
+          "facial_expression": "concerned, no smile",
+          "body_language": "reading difficult news with a messenger",
+          "environmental_mood": "lantern-lit tent at dawn",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-14.png",
+        "start_ms": 63770,
+        "end_ms": 68640,
+        "emotional_review": {
+          "narration_meaning": "Marcus writes amid war and uncertainty.",
+          "intended_tone": "somber endurance",
+          "facial_expression": "solemn and steady",
+          "body_language": "standing with a scroll in the rain",
+          "environmental_mood": "stormy camp, no violence",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-15.png",
+        "start_ms": 68640,
+        "end_ms": 73450,
+        "emotional_review": {
+          "narration_meaning": "Pain is not imaginary; this moment may call for care and virtue.",
+          "intended_tone": "compassionate seriousness",
+          "facial_expression": "concerned and gentle",
+          "body_language": "offering water to an injured soldier",
+          "environmental_mood": "warm, subdued tent light",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-16.png",
+        "start_ms": 73450,
+        "end_ms": 78450,
+        "emotional_review": {
+          "narration_meaning": "Courage, patience, honesty, or helping another may be the right response.",
+          "intended_tone": "quiet courage",
+          "facial_expression": "determined but gentle",
+          "body_language": "steadying a frightened sentry",
+          "environmental_mood": "rainy camp gate at night",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-17.png",
+        "start_ms": 78450,
+        "end_ms": 83330,
+        "emotional_review": {
+          "narration_meaning": "An obstacle can become practice; return to the task before you.",
+          "intended_tone": "resolute effort",
+          "facial_expression": "focused and effortful",
+          "body_language": "helping free a stuck cart",
+          "environmental_mood": "muddy camp road at sunrise",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-18.png",
+        "start_ms": 83330,
+        "end_ms": 88380,
+        "emotional_review": {
+          "narration_meaning": "Do not live in feared futures or replayed pasts; work carefully now.",
+          "intended_tone": "grounded attention",
+          "facial_expression": "calm and focused",
+          "body_language": "checking supplies and a tally",
+          "environmental_mood": "orderly Roman store tent",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-19.png",
+        "start_ms": 88380,
+        "end_ms": 93260,
+        "emotional_review": {
+          "narration_meaning": "Let praise and blame pass; integrity belongs to your own choices.",
+          "intended_tone": "humble resolve",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "turning away from an untouched laurel wreath",
+          "environmental_mood": "quiet hall opening to daylight",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-20.png",
+        "start_ms": 93260,
+        "end_ms": 98000,
+        "emotional_review": {
+          "narration_meaning": "Remember that bodies age, empires fade, and possessions disappear.",
+          "intended_tone": "contemplative impermanence",
+          "facial_expression": "reflective",
+          "body_language": "walking beside weathered ruins",
+          "environmental_mood": "late autumn sunset",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-21.png",
+        "start_ms": 98000,
+        "end_ms": 102970,
+        "emotional_review": {
+          "narration_meaning": "Remembering change can loosen vanity and anger and make ordinary moments precious.",
+          "intended_tone": "quiet perspective",
+          "facial_expression": "somber but peaceful",
+          "body_language": "walking past a weathered statue and closing market",
+          "environmental_mood": "soft evening light",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-22.png",
+        "start_ms": 102970,
+        "end_ms": 108030,
+        "emotional_review": {
+          "narration_meaning": "Ordinary moments become precious within a larger natural world.",
+          "intended_tone": "warm tranquility",
+          "facial_expression": "peaceful and composed",
+          "body_language": "sharing bread and water",
+          "environmental_mood": "gentle camp dusk",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-23.png",
+        "start_ms": 108030,
+        "end_ms": 112990,
+        "emotional_review": {
+          "narration_meaning": "Justice and kindness follow from our shared life.",
+          "intended_tone": "humane perspective",
+          "facial_expression": "quiet wonder",
+          "body_language": "standing beneath the night sky",
+          "environmental_mood": "stars over hills and camp",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-24.png",
+        "start_ms": 112990,
+        "end_ms": 117840,
+        "emotional_review": {
+          "narration_meaning": "When someone acts badly, consider what they misunderstand.",
+          "intended_tone": "fairness and patience",
+          "facial_expression": "serious and attentive",
+          "body_language": "discussing a disagreement",
+          "environmental_mood": "Roman courtyard in daylight",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-25.png",
+        "start_ms": 117840,
+        "end_ms": 122470,
+        "emotional_review": {
+          "narration_meaning": "Correct without cruelty; be firm about what is right and compassionate in response.",
+          "intended_tone": "firm compassion",
+          "facial_expression": "gentle authority",
+          "body_language": "open-handed guidance of two soldiers",
+          "environmental_mood": "bright courtyard with restrained foliage",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-26.png",
+        "start_ms": 122470,
+        "end_ms": 127420,
+        "emotional_review": {
+          "narration_meaning": "Accept death as part of nature.",
+          "intended_tone": "quiet acceptance",
+          "facial_expression": "reflective and steady",
+          "body_language": "standing beneath an ancient tree",
+          "environmental_mood": "autumn leaves at sunset",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-27.png",
+        "start_ms": 127420,
+        "end_ms": 132260,
+        "emotional_review": {
+          "narration_meaning": "Life is finite, so do what is yours to do today.",
+          "intended_tone": "calm resolve",
+          "facial_expression": "focused and ready",
+          "body_language": "rising from his writing table",
+          "environmental_mood": "first light in the tent",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-28.png",
+        "start_ms": 132260,
+        "end_ms": 137220,
+        "emotional_review": {
+          "narration_meaning": "A daily discipline offers clarity and just action, not escape from hardship.",
+          "intended_tone": "disciplined focus",
+          "facial_expression": "serious and focused",
+          "body_language": "reviewing a tablet beside scales",
+          "environmental_mood": "quiet tent interior",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-29.png",
+        "start_ms": 137220,
+        "end_ms": 142160,
+        "emotional_review": {
+          "narration_meaning": "Accept what cannot change and meet the next moment with courage.",
+          "intended_tone": "resolute acceptance",
+          "facial_expression": "steady and determined",
+          "body_language": "standing in rain at the camp gate",
+          "environmental_mood": "storm clearing over camp",
+          "human_review_status": "approved"
+        }
+      },
+      {
+        "image": "../assets/scenes/scene-30.png",
+        "start_ms": 142160,
+        "end_ms": 147066.66666666666,
+        "emotional_review": {
+          "narration_meaning": "We choose our response and how we treat one another.",
+          "intended_tone": "humane solidarity",
+          "facial_expression": "composed and compassionate",
+          "body_language": "carrying timber with fellow workers",
+          "environmental_mood": "camp repair site at dawn",
+          "human_review_status": "approved"
+        }
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewer": "User",
+      "premium_illustration": true,
+      "consistent_character": true,
+      "palette_tones": 3,
+      "no_primitive_vectors": true
+    },
+    "contact_sheets": [
+      "../approved/Artwork_Contact_Sheet_Part1.png",
+      "../approved/Artwork_Contact_Sheet_Part2.png",
+      "../approved/Artwork_Contact_Sheet_Part3.png"
+    ],
+    "rendered_frame_review": "../approved/Rendered_Frame_Review.png"
+  },
+  "narration_provider": "kokoro",
+  "narration": "narration.wav",
+  "narration_voice": "af_heart",
+  "narration_settings": {
+    "lang_code": "a",
+    "speed": 1.0
+  },
+  "visuals": {
+    "mode": "still_images",
+    "character_animation": false,
+    "caption_style": "stationary phrase; burgundy active word; no background plate"
+  },
+  "timeline": {
+    "narration_start_frame": 0,
+    "total_frames": 4412,
+    "hook_frames": 75,
+    "caption_component": "components/Caption.tsx",
+    "caption_baseline_px": 1368
+  },
+  "image_generation": {
+    "executable": "Codex native ImageGen",
+    "tool": "Codex native ImageGen",
+    "model_version": "not exposed by tool",
+    "generation_pending": false
+  },
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 147.072,
+    "frames": 4412
+  },
+  "book_title": "Meditations",
+  "author": "Marcus Aurelius",
+  "narration_script": "narration.txt",
+  "captions": "captions.json",
+  "approval": {
+    "status": "approved",
+    "reviewer": "User"
+  }
+}
