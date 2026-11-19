@@ -1,0 +1,18 @@
+{
+  "book": {"title": "BOOK_TITLE", "author": "AUTHOR", "edition_or_source": "SOURCE_NOTE"},
+  "summary_scope": "CENTRAL_ARGUMENT_OR_PLOT_SCOPE",
+  "narration_script_path": "content/narration.txt",
+  "scene_plan_path": "content/scenes.json",
+  "artwork_instructions_path": "content/artwork-prompts.md",
+  "assets_root": "assets",
+  "emotional_review_schema": {
+    "narration_meaning": "What this narration beat says",
+    "intended_tone": "Specific emotional tone",
+    "facial_expression": "Visible face and gaze",
+    "body_language": "Visible posture and gesture",
+    "environmental_mood": "Light, weather, setting, atmosphere",
+    "human_review_status": "pending",
+    "intentional_contrast": false,
+    "contrast_justification": "Required only for justified story contrast"
+  }
+}

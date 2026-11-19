@@ -27,11 +27,16 @@ class ProductionTests(unittest.TestCase):
                            "cover_style": "A Room of One’s Own Legacy.png"},
             "approved_duration_seconds": 10,
             "hook_duration_seconds": 2.5,
-            "artwork": {"cover": "cover.png", "contact_sheet": "sheet.png", "scenes": [{"image": "scene.png", "start_ms": 0, "end_ms": 10000}],
+            "artwork": {"cover": "cover.png", "contact_sheet": "sheet.png", "scenes": [{"image": "scene.png", "start_ms": 0, "end_ms": 10000,
+                          "emotional_review": {"narration_meaning": "a difficult loss", "intended_tone": "grief",
+                              "facial_expression": "solemn", "body_language": "slumped shoulders",
+                              "environmental_mood": "dim and cold", "human_review_status": "approved"}}],
                         "review": {"status": "approved", "reviewer": "tester", "premium_illustration": True,
                                    "consistent_character": True, "palette_tones": 3, "no_primitive_vectors": True}},
             "narration": "narration.wav",
             "narration_provider": "kokoro",
+            "narration_voice": "af_heart",
+            "narration_settings": {"lang_code": "a", "speed": 1.0},
             "visuals": {"mode": "still_images", "character_animation": False},
             "timeline": {"narration_start_frame": 0, "total_frames": 300, "hook_frames": 75,
                          "caption_component": "components/Caption.tsx", "caption_baseline_px": 1320},
@@ -121,6 +126,32 @@ class ProductionTests(unittest.TestCase):
         errors = production.validate_manifest(self.manifest, self.root, check_imagegen=True,
                                               which=lambda _: None)
         self.assertTrue(any("image-generation" in e.lower() for e in errors))
+
+    def test_prepared_artwork_does_not_require_generator_during_render(self):
+        self.manifest["image_generation"]["generation_pending"] = False
+        errors = production.validate_manifest(self.manifest, self.root, check_imagegen=True,
+                                              which=lambda _: None)
+        self.assertFalse(any("image-generation dependency unavailable" in e.lower() for e in errors))
+
+    def test_emotional_review_is_mandatory_and_complete(self):
+        del self.manifest["artwork"]["scenes"][0]["emotional_review"]
+        errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)
+        self.assertTrue(any("emotional_review" in e for e in errors))
+
+    def test_hardship_cannot_pair_with_smiling_without_justified_contrast(self):
+        review = self.manifest["artwork"]["scenes"][0]["emotional_review"]
+        review["facial_expression"] = "smiling happily"
+        errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)
+        self.assertTrue(any("hardship" in e and "cheerful" in e for e in errors))
+        review["intentional_contrast"] = True
+        review["contrast_justification"] = "The story explicitly describes a brief reunion and relief."
+        errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)
+        self.assertFalse(any("hardship" in e and "cheerful" in e for e in errors))
+
+    def test_voice_and_settings_must_be_explicit(self):
+        del self.manifest["narration_voice"]
+        errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)
+        self.assertTrue(any("narration_voice" in e for e in errors))
 
 
 if __name__ == "__main__":

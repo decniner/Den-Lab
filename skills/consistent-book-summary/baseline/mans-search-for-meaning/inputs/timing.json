@@ -1,0 +1,1948 @@
+{
+  "voice": "af_heart",
+  "lang_code": "a",
+  "speed": 1.0,
+  "duration": 143.075,
+  "words": [
+    {
+      "text": "Man’s",
+      "start": 0.325,
+      "end": 0.7125
+    },
+    {
+      "text": "Search",
+      "start": 0.7125,
+      "end": 1.025
+    },
+    {
+      "text": "for",
+      "start": 1.025,
+      "end": 1.15
+    },
+    {
+      "text": "Meaning,",
+      "start": 1.15,
+      "end": 1.725
+    },
+    {
+      "text": "by",
+      "start": 1.825,
+      "end": 2.0125
+    },
+    {
+      "text": "Viktor",
+      "start": 2.0125,
+      "end": 2.375
+    },
+    {
+      "text": "E.",
+      "start": 2.375,
+      "end": 2.5375
+    },
+    {
+      "text": "Frankl,",
+      "start": 2.5375,
+      "end": 3.225
+    },
+    {
+      "text": "begins",
+      "start": 3.325,
+      "end": 3.7625
+    },
+    {
+      "text": "with",
+      "start": 3.7625,
+      "end": 3.8875
+    },
+    {
+      "text": "a",
+      "start": 3.8875,
+      "end": 3.95
+    },
+    {
+      "text": "question",
+      "start": 3.95,
+      "end": 4.45
+    },
+    {
+      "text": "that",
+      "start": 4.45,
+      "end": 4.6
+    },
+    {
+      "text": "is",
+      "start": 4.6,
+      "end": 4.7625
+    },
+    {
+      "text": "difficult",
+      "start": 4.7625,
+      "end": 5.2
+    },
+    {
+      "text": "to",
+      "start": 5.2,
+      "end": 5.325
+    },
+    {
+      "text": "look",
+      "start": 5.325,
+      "end": 5.5
+    },
+    {
+      "text": "away",
+      "start": 5.5,
+      "end": 5.8625
+    },
+    {
+      "text": "from:",
+      "start": 5.8625,
+      "end": 6.575
+    },
+    {
+      "text": "what",
+      "start": 6.7125,
+      "end": 6.9
+    },
+    {
+      "text": "can",
+      "start": 6.9,
+      "end": 7.05
+    },
+    {
+      "text": "remain",
+      "start": 7.05,
+      "end": 7.55
+    },
+    {
+      "text": "when",
+      "start": 7.55,
+      "end": 7.7
+    },
+    {
+      "text": "nearly",
+      "start": 7.7,
+      "end": 8.0875
+    },
+    {
+      "text": "everything",
+      "start": 8.0875,
+      "end": 8.6
+    },
+    {
+      "text": "is",
+      "start": 8.6,
+      "end": 8.75
+    },
+    {
+      "text": "taken",
+      "start": 8.75,
+      "end": 9.05
+    },
+    {
+      "text": "away?",
+      "start": 9.05,
+      "end": 9.7
+    },
+    {
+      "text": "Before",
+      "start": 10.2,
+      "end": 10.4875
+    },
+    {
+      "text": "the",
+      "start": 10.4875,
+      "end": 10.575
+    },
+    {
+      "text": "war,",
+      "start": 10.575,
+      "end": 10.9
+    },
+    {
+      "text": "Frankl",
+      "start": 10.9875,
+      "end": 11.3625
+    },
+    {
+      "text": "was",
+      "start": 11.3625,
+      "end": 11.4875
+    },
+    {
+      "text": "a",
+      "start": 11.4875,
+      "end": 11.5875
+    },
+    {
+      "text": "Viennese",
+      "start": 11.5875,
+      "end": 12.075
+    },
+    {
+      "text": "psychiatrist",
+      "start": 12.075,
+      "end": 12.8
+    },
+    {
+      "text": "developing",
+      "start": 12.8,
+      "end": 13.275
+    },
+    {
+      "text": "a",
+      "start": 13.275,
+      "end": 13.3875
+    },
+    {
+      "text": "therapy",
+      "start": 13.3875,
+      "end": 13.825
+    },
+    {
+      "text": "centered",
+      "start": 13.825,
+      "end": 14.1125
+    },
+    {
+      "text": "on",
+      "start": 14.1125,
+      "end": 14.225
+    },
+    {
+      "text": "meaning.",
+      "start": 14.225,
+      "end": 14.975
+    },
+    {
+      "text": "In",
+      "start": 15.1125,
+      "end": 15.25
+    },
+    {
+      "text": "1942,",
+      "start": 15.25,
+      "end": 16.375
+    },
+    {
+      "text": "he",
+      "start": 16.4875,
+      "end": 16.675
+    },
+    {
+      "text": "and",
+      "start": 16.675,
+      "end": 16.7875
+    },
+    {
+      "text": "his",
+      "start": 16.7875,
+      "end": 16.95
+    },
+    {
+      "text": "family",
+      "start": 16.95,
+      "end": 17.3625
+    },
+    {
+      "text": "were",
+      "start": 17.3625,
+      "end": 17.475
+    },
+    {
+      "text": "deported",
+      "start": 17.475,
+      "end": 17.95
+    },
+    {
+      "text": "by",
+      "start": 17.95,
+      "end": 18.125
+    },
+    {
+      "text": "Nazi",
+      "start": 18.125,
+      "end": 18.5
+    },
+    {
+      "text": "authorities.",
+      "start": 18.5,
+      "end": 19.475
+    },
+    {
+      "text": "His",
+      "start": 19.575,
+      "end": 19.775
+    },
+    {
+      "text": "manuscript",
+      "start": 19.775,
+      "end": 20.4375
+    },
+    {
+      "text": "was",
+      "start": 20.4375,
+      "end": 20.6
+    },
+    {
+      "text": "confiscated.",
+      "start": 20.6,
+      "end": 21.725
+    },
+    {
+      "text": "His",
+      "start": 21.85,
+      "end": 22.05
+    },
+    {
+      "text": "family",
+      "start": 22.05,
+      "end": 22.475
+    },
+    {
+      "text": "was",
+      "start": 22.475,
+      "end": 22.6
+    },
+    {
+      "text": "separated,",
+      "start": 22.6,
+      "end": 23.3
+    },
+    {
+      "text": "and",
+      "start": 23.375,
+      "end": 23.5
+    },
+    {
+      "text": "most",
+      "start": 23.5,
+      "end": 23.7625
+    },
+    {
+      "text": "of",
+      "start": 23.7625,
+      "end": 23.8375
+    },
+    {
+      "text": "them",
+      "start": 23.8375,
+      "end": 23.9625
+    },
+    {
+      "text": "were",
+      "start": 23.9625,
+      "end": 24.1
+    },
+    {
+      "text": "murdered.",
+      "start": 24.1,
+      "end": 24.925
+    },
+    {
+      "text": "Frankl",
+      "start": 25.125,
+      "end": 25.55
+    },
+    {
+      "text": "survived",
+      "start": 25.55,
+      "end": 26.0625
+    },
+    {
+      "text": "several",
+      "start": 26.0625,
+      "end": 26.425
+    },
+    {
+      "text": "camps,",
+      "start": 26.425,
+      "end": 26.925
+    },
+    {
+      "text": "including",
+      "start": 27.0,
+      "end": 27.4875
+    },
+    {
+      "text": "Auschwitz",
+      "start": 27.4875,
+      "end": 28.05
+    },
+    {
+      "text": "and",
+      "start": 28.05,
+      "end": 28.175
+    },
+    {
+      "text": "Türkheim.",
+      "start": 28.175,
+      "end": 29.075
+    },
+    {
+      "text": "He",
+      "start": 29.175,
+      "end": 29.325
+    },
+    {
+      "text": "writes",
+      "start": 29.325,
+      "end": 29.6
+    },
+    {
+      "text": "not",
+      "start": 29.6,
+      "end": 29.8125
+    },
+    {
+      "text": "as",
+      "start": 29.8125,
+      "end": 29.9125
+    },
+    {
+      "text": "a",
+      "start": 29.9125,
+      "end": 30.0125
+    },
+    {
+      "text": "distant",
+      "start": 30.0125,
+      "end": 30.3375
+    },
+    {
+      "text": "historian,",
+      "start": 30.3375,
+      "end": 31.175
+    },
+    {
+      "text": "but",
+      "start": 31.25,
+      "end": 31.4
+    },
+    {
+      "text": "as",
+      "start": 31.4,
+      "end": 31.5125
+    },
+    {
+      "text": "a",
+      "start": 31.5125,
+      "end": 31.575
+    },
+    {
+      "text": "doctor",
+      "start": 31.575,
+      "end": 32.0
+    },
+    {
+      "text": "studying",
+      "start": 32.0,
+      "end": 32.475
+    },
+    {
+      "text": "what",
+      "start": 32.475,
+      "end": 32.625
+    },
+    {
+      "text": "captivity",
+      "start": 32.625,
+      "end": 33.2375
+    },
+    {
+      "text": "did",
+      "start": 33.2375,
+      "end": 33.5
+    },
+    {
+      "text": "to",
+      "start": 33.5,
+      "end": 33.6375
+    },
+    {
+      "text": "ordinary",
+      "start": 33.6375,
+      "end": 34.2
+    },
+    {
+      "text": "people—",
+      "start": 34.2,
+      "end": 34.85
+    },
+    {
+      "text": "and",
+      "start": 34.95,
+      "end": 35.075
+    },
+    {
+      "text": "what",
+      "start": 35.075,
+      "end": 35.275
+    },
+    {
+      "text": "might",
+      "start": 35.275,
+      "end": 35.475
+    },
+    {
+      "text": "help",
+      "start": 35.475,
+      "end": 35.7125
+    },
+    {
+      "text": "them",
+      "start": 35.7125,
+      "end": 35.875
+    },
+    {
+      "text": "endure.",
+      "start": 35.875,
+      "end": 36.625
+    },
+    {
+      "text": "He",
+      "start": 37.125,
+      "end": 37.225
+    },
+    {
+      "text": "describes",
+      "start": 37.225,
+      "end": 37.8125
+    },
+    {
+      "text": "three",
+      "start": 37.8125,
+      "end": 38.0875
+    },
+    {
+      "text": "broad",
+      "start": 38.0875,
+      "end": 38.4
+    },
+    {
+      "text": "phases.",
+      "start": 38.4,
+      "end": 39.225
+    },
+    {
+      "text": "First",
+      "start": 39.3375,
+      "end": 39.65
+    },
+    {
+      "text": "came",
+      "start": 39.65,
+      "end": 39.925
+    },
+    {
+      "text": "shock:",
+      "start": 39.925,
+      "end": 40.425
+    },
+    {
+      "text": "arrival,",
+      "start": 40.525,
+      "end": 41.05
+    },
+    {
+      "text": "uncertainty,",
+      "start": 41.1,
+      "end": 41.8
+    },
+    {
+      "text": "and",
+      "start": 41.85,
+      "end": 41.9625
+    },
+    {
+      "text": "the",
+      "start": 41.9625,
+      "end": 42.05
+    },
+    {
+      "text": "mind’s",
+      "start": 42.05,
+      "end": 42.4625
+    },
+    {
+      "text": "desperate",
+      "start": 42.4625,
+      "end": 42.875
+    },
+    {
+      "text": "hope",
+      "start": 42.875,
+      "end": 43.15
+    },
+    {
+      "text": "that",
+      "start": 43.15,
+      "end": 43.2625
+    },
+    {
+      "text": "the",
+      "start": 43.2625,
+      "end": 43.35
+    },
+    {
+      "text": "worst",
+      "start": 43.35,
+      "end": 43.7
+    },
+    {
+      "text": "might",
+      "start": 43.7,
+      "end": 43.9
+    },
+    {
+      "text": "somehow",
+      "start": 43.9,
+      "end": 44.2
+    },
+    {
+      "text": "be",
+      "start": 44.2,
+      "end": 44.35
+    },
+    {
+      "text": "avoided.",
+      "start": 44.35,
+      "end": 45.15
+    },
+    {
+      "text": "Then",
+      "start": 45.2875,
+      "end": 45.525
+    },
+    {
+      "text": "came",
+      "start": 45.525,
+      "end": 45.75
+    },
+    {
+      "text": "camp",
+      "start": 45.75,
+      "end": 46.05
+    },
+    {
+      "text": "routine,",
+      "start": 46.05,
+      "end": 46.525
+    },
+    {
+      "text": "where",
+      "start": 46.575,
+      "end": 46.75
+    },
+    {
+      "text": "hunger",
+      "start": 46.75,
+      "end": 47.125
+    },
+    {
+      "text": "and",
+      "start": 47.125,
+      "end": 47.25
+    },
+    {
+      "text": "danger",
+      "start": 47.25,
+      "end": 47.625
+    },
+    {
+      "text": "could",
+      "start": 47.625,
+      "end": 47.775
+    },
+    {
+      "text": "numb",
+      "start": 47.775,
+      "end": 48.0
+    },
+    {
+      "text": "feeling.",
+      "start": 48.0,
+      "end": 48.75
+    },
+    {
+      "text": "Prisoners",
+      "start": 48.8875,
+      "end": 49.375
+    },
+    {
+      "text": "tried",
+      "start": 49.375,
+      "end": 49.6375
+    },
+    {
+      "text": "to",
+      "start": 49.6375,
+      "end": 49.7125
+    },
+    {
+      "text": "preserve",
+      "start": 49.7125,
+      "end": 50.1
+    },
+    {
+      "text": "small",
+      "start": 50.1,
+      "end": 50.4
+    },
+    {
+      "text": "ties",
+      "start": 50.4,
+      "end": 50.75
+    },
+    {
+      "text": "to",
+      "start": 50.75,
+      "end": 50.875
+    },
+    {
+      "text": "life:",
+      "start": 50.875,
+      "end": 51.425
+    },
+    {
+      "text": "a",
+      "start": 51.525,
+      "end": 51.625
+    },
+    {
+      "text": "memory,",
+      "start": 51.625,
+      "end": 52.075
+    },
+    {
+      "text": "a",
+      "start": 52.15,
+      "end": 52.225
+    },
+    {
+      "text": "promise,",
+      "start": 52.225,
+      "end": 52.675
+    },
+    {
+      "text": "a",
+      "start": 52.725,
+      "end": 52.8
+    },
+    {
+      "text": "scrap",
+      "start": 52.8,
+      "end": 53.0875
+    },
+    {
+      "text": "of",
+      "start": 53.0875,
+      "end": 53.175
+    },
+    {
+      "text": "work,",
+      "start": 53.175,
+      "end": 53.5
+    },
+    {
+      "text": "a",
+      "start": 53.575,
+      "end": 53.675
+    },
+    {
+      "text": "moment",
+      "start": 53.675,
+      "end": 53.9625
+    },
+    {
+      "text": "of",
+      "start": 53.9625,
+      "end": 54.05
+    },
+    {
+      "text": "beauty.",
+      "start": 54.05,
+      "end": 54.725
+    },
+    {
+      "text": "After",
+      "start": 54.8625,
+      "end": 55.175
+    },
+    {
+      "text": "liberation",
+      "start": 55.175,
+      "end": 55.8
+    },
+    {
+      "text": "came",
+      "start": 55.8,
+      "end": 56.025
+    },
+    {
+      "text": "another",
+      "start": 56.025,
+      "end": 56.375
+    },
+    {
+      "text": "struggle.",
+      "start": 56.375,
+      "end": 57.15
+    },
+    {
+      "text": "Freedom",
+      "start": 57.3,
+      "end": 57.7
+    },
+    {
+      "text": "did",
+      "start": 57.7,
+      "end": 57.8375
+    },
+    {
+      "text": "not",
+      "start": 57.8375,
+      "end": 58.0875
+    },
+    {
+      "text": "instantly",
+      "start": 58.0875,
+      "end": 58.575
+    },
+    {
+      "text": "erase",
+      "start": 58.575,
+      "end": 58.9
+    },
+    {
+      "text": "trauma.",
+      "start": 58.9,
+      "end": 59.6
+    },
+    {
+      "text": "Some",
+      "start": 59.8,
+      "end": 60.075
+    },
+    {
+      "text": "survivors",
+      "start": 60.075,
+      "end": 60.675
+    },
+    {
+      "text": "felt",
+      "start": 60.675,
+      "end": 60.925
+    },
+    {
+      "text": "detached,",
+      "start": 60.925,
+      "end": 61.575
+    },
+    {
+      "text": "bitter,",
+      "start": 61.625,
+      "end": 62.0
+    },
+    {
+      "text": "or",
+      "start": 62.075,
+      "end": 62.2375
+    },
+    {
+      "text": "lost",
+      "start": 62.2375,
+      "end": 62.7
+    },
+    {
+      "text": "as",
+      "start": 62.7,
+      "end": 62.8125
+    },
+    {
+      "text": "they",
+      "start": 62.8125,
+      "end": 62.95
+    },
+    {
+      "text": "returned",
+      "start": 62.95,
+      "end": 63.375
+    },
+    {
+      "text": "to",
+      "start": 63.375,
+      "end": 63.475
+    },
+    {
+      "text": "a",
+      "start": 63.475,
+      "end": 63.575
+    },
+    {
+      "text": "world",
+      "start": 63.575,
+      "end": 63.925
+    },
+    {
+      "text": "that",
+      "start": 63.925,
+      "end": 64.0375
+    },
+    {
+      "text": "had",
+      "start": 64.0375,
+      "end": 64.175
+    },
+    {
+      "text": "moved",
+      "start": 64.175,
+      "end": 64.45
+    },
+    {
+      "text": "on.",
+      "start": 64.45,
+      "end": 65.0
+    },
+    {
+      "text": "Frankl’s",
+      "start": 65.55,
+      "end": 65.9625
+    },
+    {
+      "text": "central",
+      "start": 65.9625,
+      "end": 66.3875
+    },
+    {
+      "text": "idea",
+      "start": 66.3875,
+      "end": 66.8875
+    },
+    {
+      "text": "is",
+      "start": 66.8875,
+      "end": 67.05
+    },
+    {
+      "text": "not",
+      "start": 67.05,
+      "end": 67.275
+    },
+    {
+      "text": "that",
+      "start": 67.275,
+      "end": 67.5
+    },
+    {
+      "text": "suffering",
+      "start": 67.5,
+      "end": 67.95
+    },
+    {
+      "text": "is",
+      "start": 67.95,
+      "end": 68.1125
+    },
+    {
+      "text": "good,",
+      "start": 68.1125,
+      "end": 68.725
+    },
+    {
+      "text": "or",
+      "start": 68.85,
+      "end": 69.0
+    },
+    {
+      "text": "that",
+      "start": 69.0,
+      "end": 69.2125
+    },
+    {
+      "text": "attitude",
+      "start": 69.2125,
+      "end": 69.8
+    },
+    {
+      "text": "can",
+      "start": 69.8,
+      "end": 69.925
+    },
+    {
+      "text": "make",
+      "start": 69.925,
+      "end": 70.1625
+    },
+    {
+      "text": "cruelty",
+      "start": 70.1625,
+      "end": 70.65
+    },
+    {
+      "text": "acceptable.",
+      "start": 70.65,
+      "end": 71.725
+    },
+    {
+      "text": "It",
+      "start": 71.85,
+      "end": 72.0
+    },
+    {
+      "text": "is",
+      "start": 72.0,
+      "end": 72.125
+    },
+    {
+      "text": "that",
+      "start": 72.125,
+      "end": 72.3875
+    },
+    {
+      "text": "even",
+      "start": 72.3875,
+      "end": 72.6875
+    },
+    {
+      "text": "when",
+      "start": 72.6875,
+      "end": 72.8875
+    },
+    {
+      "text": "circumstances",
+      "start": 72.8875,
+      "end": 73.75
+    },
+    {
+      "text": "cannot",
+      "start": 73.75,
+      "end": 74.0875
+    },
+    {
+      "text": "be",
+      "start": 74.0875,
+      "end": 74.2375
+    },
+    {
+      "text": "changed,",
+      "start": 74.2375,
+      "end": 74.975
+    },
+    {
+      "text": "a",
+      "start": 75.1,
+      "end": 75.2
+    },
+    {
+      "text": "person",
+      "start": 75.2,
+      "end": 75.65
+    },
+    {
+      "text": "may",
+      "start": 75.65,
+      "end": 75.825
+    },
+    {
+      "text": "still",
+      "start": 75.825,
+      "end": 76.1125
+    },
+    {
+      "text": "choose",
+      "start": 76.1125,
+      "end": 76.45
+    },
+    {
+      "text": "how",
+      "start": 76.45,
+      "end": 76.6125
+    },
+    {
+      "text": "to",
+      "start": 76.6125,
+      "end": 76.7
+    },
+    {
+      "text": "meet",
+      "start": 76.7,
+      "end": 76.925
+    },
+    {
+      "text": "them—",
+      "start": 76.925,
+      "end": 77.5
+    },
+    {
+      "text": "and",
+      "start": 77.6,
+      "end": 77.7
+    },
+    {
+      "text": "must",
+      "start": 77.7,
+      "end": 77.9875
+    },
+    {
+      "text": "never",
+      "start": 77.9875,
+      "end": 78.2375
+    },
+    {
+      "text": "be",
+      "start": 78.2375,
+      "end": 78.3875
+    },
+    {
+      "text": "blamed",
+      "start": 78.3875,
+      "end": 78.875
+    },
+    {
+      "text": "for",
+      "start": 78.875,
+      "end": 79.0
+    },
+    {
+      "text": "being",
+      "start": 79.0,
+      "end": 79.275
+    },
+    {
+      "text": "unable",
+      "start": 79.275,
+      "end": 79.775
+    },
+    {
+      "text": "to",
+      "start": 79.775,
+      "end": 79.875
+    },
+    {
+      "text": "do",
+      "start": 79.875,
+      "end": 80.0625
+    },
+    {
+      "text": "so.",
+      "start": 80.0625,
+      "end": 80.625
+    },
+    {
+      "text": "In",
+      "start": 81.175,
+      "end": 81.2625
+    },
+    {
+      "text": "the",
+      "start": 81.2625,
+      "end": 81.35
+    },
+    {
+      "text": "book’s",
+      "start": 81.35,
+      "end": 81.6
+    },
+    {
+      "text": "second",
+      "start": 81.6,
+      "end": 81.9
+    },
+    {
+      "text": "part,",
+      "start": 81.9,
+      "end": 82.375
+    },
+    {
+      "text": "Frankl",
+      "start": 82.4875,
+      "end": 82.875
+    },
+    {
+      "text": "calls",
+      "start": 82.875,
+      "end": 83.1375
+    },
+    {
+      "text": "his",
+      "start": 83.1375,
+      "end": 83.275
+    },
+    {
+      "text": "approach",
+      "start": 83.275,
+      "end": 83.7
+    },
+    {
+      "text": "logotherapy:",
+      "start": 83.7,
+      "end": 84.65
+    },
+    {
+      "text": "healing",
+      "start": 84.7875,
+      "end": 85.175
+    },
+    {
+      "text": "through",
+      "start": 85.175,
+      "end": 85.375
+    },
+    {
+      "text": "the",
+      "start": 85.375,
+      "end": 85.5125
+    },
+    {
+      "text": "search",
+      "start": 85.5125,
+      "end": 85.825
+    },
+    {
+      "text": "for",
+      "start": 85.825,
+      "end": 85.95
+    },
+    {
+      "text": "meaning.",
+      "start": 85.95,
+      "end": 86.725
+    },
+    {
+      "text": "He",
+      "start": 86.85,
+      "end": 87.0125
+    },
+    {
+      "text": "sees",
+      "start": 87.0125,
+      "end": 87.3375
+    },
+    {
+      "text": "meaning",
+      "start": 87.3375,
+      "end": 87.7
+    },
+    {
+      "text": "in",
+      "start": 87.7,
+      "end": 87.85
+    },
+    {
+      "text": "three",
+      "start": 87.85,
+      "end": 88.075
+    },
+    {
+      "text": "places:",
+      "start": 88.075,
+      "end": 88.8
+    },
+    {
+      "text": "work",
+      "start": 88.9125,
+      "end": 89.3125
+    },
+    {
+      "text": "or",
+      "start": 89.3125,
+      "end": 89.475
+    },
+    {
+      "text": "responsibility,",
+      "start": 89.475,
+      "end": 90.55
+    },
+    {
+      "text": "love",
+      "start": 90.7,
+      "end": 91.125
+    },
+    {
+      "text": "and",
+      "start": 91.125,
+      "end": 91.2375
+    },
+    {
+      "text": "encounter,",
+      "start": 91.2375,
+      "end": 92.125
+    },
+    {
+      "text": "and",
+      "start": 92.225,
+      "end": 92.3375
+    },
+    {
+      "text": "the",
+      "start": 92.3375,
+      "end": 92.425
+    },
+    {
+      "text": "stance",
+      "start": 92.425,
+      "end": 92.825
+    },
+    {
+      "text": "we",
+      "start": 92.825,
+      "end": 92.975
+    },
+    {
+      "text": "take",
+      "start": 92.975,
+      "end": 93.2375
+    },
+    {
+      "text": "toward",
+      "start": 93.2375,
+      "end": 93.5625
+    },
+    {
+      "text": "suffering",
+      "start": 93.5625,
+      "end": 94.075
+    },
+    {
+      "text": "that",
+      "start": 94.075,
+      "end": 94.25
+    },
+    {
+      "text": "cannot",
+      "start": 94.25,
+      "end": 94.6
+    },
+    {
+      "text": "be",
+      "start": 94.6,
+      "end": 94.75
+    },
+    {
+      "text": "avoided.",
+      "start": 94.75,
+      "end": 95.6
+    },
+    {
+      "text": "These",
+      "start": 95.775,
+      "end": 96.1
+    },
+    {
+      "text": "are",
+      "start": 96.1,
+      "end": 96.2
+    },
+    {
+      "text": "not",
+      "start": 96.2,
+      "end": 96.4625
+    },
+    {
+      "text": "slogans",
+      "start": 96.4625,
+      "end": 97.05
+    },
+    {
+      "text": "that",
+      "start": 97.05,
+      "end": 97.2625
+    },
+    {
+      "text": "solve",
+      "start": 97.2625,
+      "end": 97.6625
+    },
+    {
+      "text": "every",
+      "start": 97.6625,
+      "end": 98.0
+    },
+    {
+      "text": "hardship.",
+      "start": 98.0,
+      "end": 98.825
+    },
+    {
+      "text": "They",
+      "start": 98.925,
+      "end": 99.1
+    },
+    {
+      "text": "are",
+      "start": 99.1,
+      "end": 99.25
+    },
+    {
+      "text": "ways",
+      "start": 99.25,
+      "end": 99.55
+    },
+    {
+      "text": "to",
+      "start": 99.55,
+      "end": 99.675
+    },
+    {
+      "text": "notice",
+      "start": 99.675,
+      "end": 100.025
+    },
+    {
+      "text": "what",
+      "start": 100.025,
+      "end": 100.2625
+    },
+    {
+      "text": "life",
+      "start": 100.2625,
+      "end": 100.55
+    },
+    {
+      "text": "is",
+      "start": 100.55,
+      "end": 100.7125
+    },
+    {
+      "text": "asking",
+      "start": 100.7125,
+      "end": 101.15
+    },
+    {
+      "text": "of",
+      "start": 101.15,
+      "end": 101.2625
+    },
+    {
+      "text": "us",
+      "start": 101.2625,
+      "end": 101.5
+    },
+    {
+      "text": "in",
+      "start": 101.5,
+      "end": 101.5875
+    },
+    {
+      "text": "a",
+      "start": 101.5875,
+      "end": 101.65
+    },
+    {
+      "text": "particular",
+      "start": 101.65,
+      "end": 102.2
+    },
+    {
+      "text": "moment.",
+      "start": 102.2,
+      "end": 102.85
+    },
+    {
+      "text": "A",
+      "start": 103.375,
+      "end": 103.4625
+    },
+    {
+      "text": "task",
+      "start": 103.4625,
+      "end": 103.85
+    },
+    {
+      "text": "unfinished",
+      "start": 103.85,
+      "end": 104.525
+    },
+    {
+      "text": "can",
+      "start": 104.525,
+      "end": 104.675
+    },
+    {
+      "text": "call",
+      "start": 104.675,
+      "end": 104.95
+    },
+    {
+      "text": "someone",
+      "start": 104.95,
+      "end": 105.2625
+    },
+    {
+      "text": "forward.",
+      "start": 105.2625,
+      "end": 106.1
+    },
+    {
+      "text": "Love",
+      "start": 106.275,
+      "end": 106.625
+    },
+    {
+      "text": "can",
+      "start": 106.625,
+      "end": 106.8
+    },
+    {
+      "text": "keep",
+      "start": 106.8,
+      "end": 107.075
+    },
+    {
+      "text": "another",
+      "start": 107.075,
+      "end": 107.4875
+    },
+    {
+      "text": "person",
+      "start": 107.4875,
+      "end": 107.9625
+    },
+    {
+      "text": "vividly",
+      "start": 107.9625,
+      "end": 108.4
+    },
+    {
+      "text": "present,",
+      "start": 108.4,
+      "end": 108.975
+    },
+    {
+      "text": "even",
+      "start": 109.075,
+      "end": 109.375
+    },
+    {
+      "text": "across",
+      "start": 109.375,
+      "end": 109.775
+    },
+    {
+      "text": "distance.",
+      "start": 109.775,
+      "end": 110.675
+    },
+    {
+      "text": "And",
+      "start": 110.775,
+      "end": 110.9125
+    },
+    {
+      "text": "when",
+      "start": 110.9125,
+      "end": 111.0875
+    },
+    {
+      "text": "pain",
+      "start": 111.0875,
+      "end": 111.45
+    },
+    {
+      "text": "cannot",
+      "start": 111.45,
+      "end": 111.7875
+    },
+    {
+      "text": "be",
+      "start": 111.7875,
+      "end": 111.925
+    },
+    {
+      "text": "escaped,",
+      "start": 111.925,
+      "end": 112.65
+    },
+    {
+      "text": "dignity",
+      "start": 112.7625,
+      "end": 113.25
+    },
+    {
+      "text": "may",
+      "start": 113.25,
+      "end": 113.425
+    },
+    {
+      "text": "survive",
+      "start": 113.425,
+      "end": 114.0
+    },
+    {
+      "text": "in",
+      "start": 114.0,
+      "end": 114.0875
+    },
+    {
+      "text": "a",
+      "start": 114.0875,
+      "end": 114.1625
+    },
+    {
+      "text": "choice",
+      "start": 114.1625,
+      "end": 114.4625
+    },
+    {
+      "text": "of",
+      "start": 114.4625,
+      "end": 114.5375
+    },
+    {
+      "text": "response.",
+      "start": 114.5375,
+      "end": 115.55
+    },
+    {
+      "text": "Frankl’s",
+      "start": 115.725,
+      "end": 116.2125
+    },
+    {
+      "text": "pages",
+      "start": 116.2125,
+      "end": 116.675
+    },
+    {
+      "text": "return",
+      "start": 116.675,
+      "end": 117.1
+    },
+    {
+      "text": "to",
+      "start": 117.1,
+      "end": 117.1875
+    },
+    {
+      "text": "these",
+      "start": 117.1875,
+      "end": 117.4125
+    },
+    {
+      "text": "ideas",
+      "start": 117.4125,
+      "end": 118.0125
+    },
+    {
+      "text": "through",
+      "start": 118.0125,
+      "end": 118.2625
+    },
+    {
+      "text": "small,",
+      "start": 118.2625,
+      "end": 118.85
+    },
+    {
+      "text": "concrete",
+      "start": 118.9375,
+      "end": 119.45
+    },
+    {
+      "text": "moments—",
+      "start": 119.45,
+      "end": 120.175
+    },
+    {
+      "text": "not",
+      "start": 120.3,
+      "end": 120.525
+    },
+    {
+      "text": "easy",
+      "start": 120.525,
+      "end": 120.85
+    },
+    {
+      "text": "victories,",
+      "start": 120.85,
+      "end": 121.625
+    },
+    {
+      "text": "but",
+      "start": 121.7,
+      "end": 121.85
+    },
+    {
+      "text": "moments",
+      "start": 121.85,
+      "end": 122.325
+    },
+    {
+      "text": "that",
+      "start": 122.325,
+      "end": 122.5
+    },
+    {
+      "text": "resist",
+      "start": 122.5,
+      "end": 122.95
+    },
+    {
+      "text": "despair.",
+      "start": 122.95,
+      "end": 123.8
+    },
+    {
+      "text": "Man’s",
+      "start": 124.4,
+      "end": 124.7625
+    },
+    {
+      "text": "Search",
+      "start": 124.7625,
+      "end": 125.075
+    },
+    {
+      "text": "for",
+      "start": 125.075,
+      "end": 125.2
+    },
+    {
+      "text": "Meaning",
+      "start": 125.2,
+      "end": 125.6125
+    },
+    {
+      "text": "is",
+      "start": 125.6125,
+      "end": 125.775
+    },
+    {
+      "text": "both",
+      "start": 125.775,
+      "end": 126.0125
+    },
+    {
+      "text": "a",
+      "start": 126.0125,
+      "end": 126.1125
+    },
+    {
+      "text": "witness",
+      "start": 126.1125,
+      "end": 126.55
+    },
+    {
+      "text": "to",
+      "start": 126.55,
+      "end": 126.675
+    },
+    {
+      "text": "history",
+      "start": 126.675,
+      "end": 127.425
+    },
+    {
+      "text": "and",
+      "start": 127.425,
+      "end": 127.6625
+    },
+    {
+      "text": "an",
+      "start": 127.6625,
+      "end": 127.7875
+    },
+    {
+      "text": "argument",
+      "start": 127.7875,
+      "end": 128.325
+    },
+    {
+      "text": "about",
+      "start": 128.325,
+      "end": 128.625
+    },
+    {
+      "text": "responsibility.",
+      "start": 128.625,
+      "end": 130.025
+    },
+    {
+      "text": "It",
+      "start": 130.15,
+      "end": 130.2875
+    },
+    {
+      "text": "does",
+      "start": 130.2875,
+      "end": 130.45
+    },
+    {
+      "text": "not",
+      "start": 130.45,
+      "end": 130.675
+    },
+    {
+      "text": "promise",
+      "start": 130.675,
+      "end": 131.125
+    },
+    {
+      "text": "that",
+      "start": 131.125,
+      "end": 131.3125
+    },
+    {
+      "text": "every",
+      "start": 131.3125,
+      "end": 131.65
+    },
+    {
+      "text": "life",
+      "start": 131.65,
+      "end": 131.9125
+    },
+    {
+      "text": "will",
+      "start": 131.9125,
+      "end": 132.0875
+    },
+    {
+      "text": "feel",
+      "start": 132.0875,
+      "end": 132.35
+    },
+    {
+      "text": "meaningful,",
+      "start": 132.35,
+      "end": 133.075
+    },
+    {
+      "text": "or",
+      "start": 133.1875,
+      "end": 133.35
+    },
+    {
+      "text": "that",
+      "start": 133.35,
+      "end": 133.55
+    },
+    {
+      "text": "meaning",
+      "start": 133.55,
+      "end": 133.9
+    },
+    {
+      "text": "removes",
+      "start": 133.9,
+      "end": 134.375
+    },
+    {
+      "text": "grief.",
+      "start": 134.375,
+      "end": 135.225
+    },
+    {
+      "text": "Instead,",
+      "start": 135.3625,
+      "end": 136.125
+    },
+    {
+      "text": "Frankl",
+      "start": 136.2375,
+      "end": 136.65
+    },
+    {
+      "text": "turns",
+      "start": 136.65,
+      "end": 136.9625
+    },
+    {
+      "text": "the",
+      "start": 136.9625,
+      "end": 137.05
+    },
+    {
+      "text": "question",
+      "start": 137.05,
+      "end": 137.45
+    },
+    {
+      "text": "around:",
+      "start": 137.45,
+      "end": 138.2
+    },
+    {
+      "text": "rather",
+      "start": 138.3375,
+      "end": 138.6625
+    },
+    {
+      "text": "than",
+      "start": 138.6625,
+      "end": 138.8125
+    },
+    {
+      "text": "asking",
+      "start": 138.8125,
+      "end": 139.2625
+    },
+    {
+      "text": "only",
+      "start": 139.2625,
+      "end": 139.575
+    },
+    {
+      "text": "what",
+      "start": 139.575,
+      "end": 139.7125
+    },
+    {
+      "text": "we",
+      "start": 139.7125,
+      "end": 139.825
+    },
+    {
+      "text": "expect",
+      "start": 139.825,
+      "end": 140.225
+    },
+    {
+      "text": "from",
+      "start": 140.225,
+      "end": 140.4
+    },
+    {
+      "text": "life,",
+      "start": 140.4,
+      "end": 140.95
+    },
+    {
+      "text": "what",
+      "start": 141.05,
+      "end": 141.225
+    },
+    {
+      "text": "answer",
+      "start": 141.225,
+      "end": 141.625
+    },
+    {
+      "text": "can",
+      "start": 141.625,
+      "end": 141.7375
+    },
+    {
+      "text": "we",
+      "start": 141.7375,
+      "end": 141.85
+    },
+    {
+      "text": "give",
+      "start": 141.85,
+      "end": 142.0375
+    },
+    {
+      "text": "it",
+      "start": 142.0375,
+      "end": 142.15
+    },
+    {
+      "text": "today?",
+      "start": 142.15,
+      "end": 142.8
+    }
+  ]
+}

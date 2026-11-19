@@ -1,0 +1,128 @@
+[
+  {
+    "scene_id": "03",
+    "source": "work/book-summary/assets/scene-03.png",
+    "review_variant": "work/book-summary/assets/review/scene-03-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "d7ec16c7096f024c0eaf9bd45ff5be6819240ee91f1abd49f0972b13b2676ea9",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "04",
+    "source": "work/book-summary/assets/scene-04.png",
+    "review_variant": "work/book-summary/assets/review/scene-04-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "94abced4d28d1e71391eaab55221d70e62cb40980eeb18ab32cba5b33c87a0d0",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "07",
+    "source": "work/book-summary/assets/scene-07.png",
+    "review_variant": "work/book-summary/assets/review/scene-07-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "3c31941cb500c7ebbe4ac224edf4144c51be87795ce10e16a30a020bd8f46f72",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "08",
+    "source": "work/book-summary/assets/scene-08.png",
+    "review_variant": "work/book-summary/assets/review/scene-08-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "7831db480a773c61c99f7dbea2bd9eeb5cb125358ca49028599f030dfe6db217",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "06",
+    "source": "work/book-summary/assets/scene-06.png",
+    "review_variant": "work/book-summary/assets/review/scene-06-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "8df2bac20b66f74fb1f9eb35f636034b081f921003d773b0b04b2e8a9fa22af1",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "09",
+    "source": "work/book-summary/assets/scene-09.png",
+    "review_variant": "work/book-summary/assets/review/scene-09-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "26c6e7640d9f50eafbcae75631cd7213010d497e87ee768f59a56293c43d341f",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "10",
+    "source": "work/book-summary/assets/scene-10.png",
+    "review_variant": "work/book-summary/assets/review/scene-10-expression-v2.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "ea5851d56788056dbdf01fb72d8d7408564cfa1647442cfd069439508bf26d91",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "11",
+    "source": "work/book-summary/assets/scene-11.png",
+    "review_variant": "work/book-summary/assets/review/scene-11-expression-v2.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "5f7605c9f375cdf4ea0cbfd88855c807f3ecaae4766b2ad748482d88b3344c36",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "14",
+    "source": "work/book-summary/assets/scene-14.png",
+    "review_variant": "work/book-summary/assets/review/scene-14-expression-v2.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "36c47c6efcc438297c0055809916a6fee4ce18b0918f3d9396f6e2e63f2c244f",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "16",
+    "source": "work/book-summary/assets/scene-16.png",
+    "review_variant": "work/book-summary/assets/review/scene-16-expression-v2.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "64f35a3cd96ec2bd444dd27133270f52d471ee8926db4fe628e7efff1300d51a",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "20",
+    "source": "work/book-summary/assets/scene-20.png",
+    "review_variant": "work/book-summary/assets/review/scene-20-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "bd2477ea6a1cf2fafaeed6dcefeee8c3368b83bbd88ae60e961a65de89ee132e",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "21",
+    "source": "work/book-summary/assets/scene-21.png",
+    "review_variant": "work/book-summary/assets/review/scene-21-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "dd5d3a15709e6e8934c742884249ba9b1f5b05bb98cf1087d089ad5a487872ad",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "19",
+    "source": "work/book-summary/assets/scene-19.png",
+    "review_variant": "work/book-summary/assets/review/scene-19-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "06c243044e23cbf164013ae53c20a738ed97161c89ee1dd208b03690232871eb",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  },
+  {
+    "scene_id": "05",
+    "source": "work/book-summary/assets/scene-05.png",
+    "review_variant": "work/book-summary/assets/review/scene-05-expression-v2.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "99fbc31e023896eabd26cac6fd701bcaa83c221df5760cdc8a9ca2a17b3b9666",
+    "acceptance": "solemn, worried, exhausted, grief-struck, or distant as narration context requires; no cheerful smile; preserve composition and identity"
+  }
+]

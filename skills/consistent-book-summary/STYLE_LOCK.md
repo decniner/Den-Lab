@@ -1,6 +1,6 @@
 # Dracula series style lock v0.3
 
-Status: **REFERENCE IDENTITIES LOCKED; DESIGN CALIBRATION PARTIAL**. The filenames and hashes are verified. Do not call this a pixel-exact numeric calibration.
+Status: **APPROVED PRODUCTION BASELINE LOCKED; DESIGN CALIBRATION PARTIAL**. The filenames and hashes are verified. Do not call this a pixel-exact numeric calibration. The approved Frankl production in `baseline/mans-search-for-meaning/approved/` is the series gold standard and its hashes are maintained in `baseline/SHA256SUMS.json`.
 
 ## Verified reference provenance
 Cover design reference: `A Room of One’s Own Legacy.png`
@@ -30,6 +30,7 @@ Representative inspected frame times: 1, 8, 20, 40, 65, 90 seconds. Dracula refe
 - Use one shared caption renderer, shared baseline and shared font asset across all words.
 - Use local Kokoro where available; do not infer the exact reference voice from visual frames.
 - Do not substitute a generic photorealistic image style for the expressive storybook characters.
+- Review each scene's emotional tone against its narration; hardship scenes require solemn expressions/body language/environment unless an explicitly justified story contrast is human-approved.
 
 ## Still unverified
 Exact font family/file and SHA256, font metrics, RGB/HEX palette, title box dimensions, animation curves, narration voice/speed, audio normalization, and exact numerical layout measurements. Caption values are approximate visual estimates from decoded frames (see CAPTION_SPEC.md), not pixel-exact recovered source parameters. The A Room cover reference is 941×1671 and places a large two-line title above a burgundy rule and centered author, with the illustrated scene below.

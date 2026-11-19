@@ -39,6 +39,35 @@ def _png_dimensions(path: Path):
         return None
 
 
+def _validate_emotional_review(scenes):
+    """Require a human-reviewed emotional context record for every scene."""
+    errors = []
+    if not isinstance(scenes, list) or not scenes:
+        return ["Emotional review requires a non-empty scene list"]
+    for index, scene in enumerate(scenes):
+        review = scene.get("emotional_review") if isinstance(scene, dict) else None
+        if not isinstance(review, dict):
+            errors.append(f"Scene {index} requires an emotional_review record")
+            continue
+        for key in ("narration_meaning", "intended_tone", "facial_expression", "body_language", "environmental_mood"):
+            if not isinstance(review.get(key), str) or not review[key].strip():
+                errors.append(f"Scene {index} emotional_review.{key} is required")
+        if review.get("human_review_status") != "approved":
+            errors.append(f"Scene {index} emotional review must be human-approved before rendering")
+        if review.get("intentional_contrast") is True and not str(review.get("contrast_justification", "")).strip():
+            errors.append(f"Scene {index} intentional emotional contrast requires a story-based justification")
+        tone = str(review.get("intended_tone", "")).lower()
+        expressions = str(review.get("facial_expression", "")).lower()
+        body = str(review.get("body_language", "")).lower()
+        hardship = any(term in tone for term in ("hardship", "grief", "separation", "imprison", "illness", "suffering", "trauma"))
+        cheerful = any(term in expressions for term in ("smile", "smiling", "grin", "cheerful", "happy", "joyful"))
+        if hardship and cheerful and not (review.get("intentional_contrast") is True and str(review.get("contrast_justification", "")).strip()):
+            errors.append(f"Scene {index} pairs hardship with a cheerful expression without justified intentional contrast")
+        if hardship and not body.strip():
+            errors.append(f"Scene {index} hardship body language must be explicitly reviewed")
+    return errors
+
+
 def validate_manifest(data, root: Path, check_imagegen=True, which=shutil.which):
     errors = []
     refs = data.get("references", {})
@@ -102,6 +131,7 @@ def validate_manifest(data, root: Path, check_imagegen=True, which=shutil.which)
         expected_end = expected_frames * 1000 / 30 if expected_frames else None
         if expected_end and expected_start != expected_end:
             errors.append("Still-image scene plan must cover the approved runtime without gaps or extension")
+    errors.extend(_validate_emotional_review(scenes))
     review = artwork.get("review", {})
     checks = {"status": "approved", "premium_illustration": True, "consistent_character": True,
               "no_primitive_vectors": True}
@@ -118,6 +148,12 @@ def validate_manifest(data, root: Path, check_imagegen=True, which=shutil.which)
         errors.append("narration_provider must be kokoro")
     if not isinstance(narration, str) or not resolve_path(root, narration).is_file():
         errors.append(f"Kokoro narration file missing: {narration}")
+    voice = data.get("narration_voice")
+    settings = data.get("narration_settings", {})
+    if not isinstance(voice, str) or not voice.strip():
+        errors.append("narration_voice must explicitly name the approved Kokoro voice")
+    if settings.get("lang_code") != "a" or not isinstance(settings.get("speed"), (int, float)) or settings.get("speed") <= 0:
+        errors.append("narration_settings must explicitly pin Kokoro lang_code and positive speed")
     visuals = data.get("visuals", {})
     if visuals.get("mode") != "still_images":
         errors.append("visuals.mode must be still_images")
@@ -137,8 +173,9 @@ def validate_manifest(data, root: Path, check_imagegen=True, which=shutil.which)
     expected_hook_frames = round(hook * 30) if isinstance(hook, (int, float)) and hook > 0 else None
     if expected_hook_frames and abs(timeline.get("hook_frames", 0) - expected_hook_frames) > 1:
         errors.append("timeline.hook_frames must match hook_duration_seconds at 30 fps")
-    if check_imagegen:
-        imagegen = data.get("image_generation", {}).get("executable")
+    image_generation = data.get("image_generation", {})
+    if check_imagegen and image_generation.get("generation_pending") is not False:
+        imagegen = image_generation.get("executable")
         candidate = str(resolve_path(root, imagegen)) if isinstance(imagegen, str) and (Path(imagegen).is_absolute() or Path(imagegen).parent != Path('.')) else imagegen
         if not candidate or not (Path(candidate).is_file() if Path(candidate).is_absolute() else which(candidate)):
             errors.append(f"Image-generation dependency unavailable: configure image_generation.executable (currently {imagegen!r})")

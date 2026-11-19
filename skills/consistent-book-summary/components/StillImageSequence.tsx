@@ -36,10 +36,17 @@ export const StillImageSequence: React.FC<StillImageSequenceProps> = ({
     <AbsoluteFill style={{backgroundColor: '#e8dfd0'}}>
       <Audio src={publicAsset(narrationSrc)} startFrom={0}/>
       {currentScene && (
-        <Img src={publicAsset(currentScene.src)} style={{
-          position: 'absolute', left: 90, top: 300, width: 900, height: 900,
-          objectFit: 'cover',
-        }}/>
+        <>
+          {/* Match the approved short's soft, scene-colored full-frame ground. */}
+          <Img src={publicAsset(currentScene.src)} style={{
+            position: 'absolute', left: '-10%', top: '-5%', width: '120%', height: '110%',
+            objectFit: 'cover', filter: 'blur(42px)', opacity: 0.35,
+          }}/>
+          <Img src={publicAsset(currentScene.src)} style={{
+            position: 'absolute', left: 90, top: 300, width: 900, height: 900,
+            objectFit: 'cover', boxShadow: '0 18px 44px rgba(35,28,24,.22)',
+          }}/>
+        </>
       )}
       {frame < hookFrames && (
         <Img src={publicAsset(hookCoverSrc)} style={{position: 'absolute', inset: 0, width: 1080, height: 1920}}/>

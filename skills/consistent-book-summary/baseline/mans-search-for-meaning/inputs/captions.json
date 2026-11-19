@@ -1,0 +1,3058 @@
+[
+  {
+    "start_ms": 325.0,
+    "end_ms": 1725.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Man’s",
+        "start_ms": 325.0,
+        "end_ms": 712.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "Search",
+        "start_ms": 712.5,
+        "end_ms": 1025.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "for",
+        "start_ms": 1025.0,
+        "end_ms": 1150.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "Meaning,",
+        "start_ms": 1150.0,
+        "end_ms": 1725.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 1825.0,
+    "end_ms": 2537.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "by",
+        "start_ms": 1825.0,
+        "end_ms": 2012.5000000000002,
+        "baseline_px": 1368
+      },
+      {
+        "text": "Viktor",
+        "start_ms": 2012.5000000000002,
+        "end_ms": 2375.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "E.",
+        "start_ms": 2375.0,
+        "end_ms": 2537.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 2537.5,
+    "end_ms": 3225.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Frankl,",
+        "start_ms": 2537.5,
+        "end_ms": 3225.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 3325.0,
+    "end_ms": 4600.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "begins",
+        "start_ms": 3325.0,
+        "end_ms": 3762.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "with",
+        "start_ms": 3762.5,
+        "end_ms": 3887.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 3887.5,
+        "end_ms": 3950.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "question",
+        "start_ms": 3950.0,
+        "end_ms": 4450.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "that",
+        "start_ms": 4450.0,
+        "end_ms": 4600.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 4600.0,
+    "end_ms": 5862.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "is",
+        "start_ms": 4600.0,
+        "end_ms": 4762.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "difficult",
+        "start_ms": 4762.5,
+        "end_ms": 5200.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "to",
+        "start_ms": 5200.0,
+        "end_ms": 5325.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "look",
+        "start_ms": 5325.0,
+        "end_ms": 5500.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "away",
+        "start_ms": 5500.0,
+        "end_ms": 5862.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 5862.5,
+    "end_ms": 7700.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "from:",
+        "start_ms": 5862.5,
+        "end_ms": 6575.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "what",
+        "start_ms": 6712.5,
+        "end_ms": 6900.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "can",
+        "start_ms": 6900.0,
+        "end_ms": 7050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "remain",
+        "start_ms": 7050.0,
+        "end_ms": 7550.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "when",
+        "start_ms": 7550.0,
+        "end_ms": 7700.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 7700.0,
+    "end_ms": 9700.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "nearly",
+        "start_ms": 7700.0,
+        "end_ms": 8087.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "everything",
+        "start_ms": 8087.5,
+        "end_ms": 8600.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "is",
+        "start_ms": 8600.0,
+        "end_ms": 8750.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "taken",
+        "start_ms": 8750.0,
+        "end_ms": 9050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "away?",
+        "start_ms": 9050.0,
+        "end_ms": 9700.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 10200.0,
+    "end_ms": 10900.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Before",
+        "start_ms": 10200.0,
+        "end_ms": 10487.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "the",
+        "start_ms": 10487.5,
+        "end_ms": 10575.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "war,",
+        "start_ms": 10575.0,
+        "end_ms": 10900.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 10987.5,
+    "end_ms": 12075.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Frankl",
+        "start_ms": 10987.5,
+        "end_ms": 11362.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "was",
+        "start_ms": 11362.5,
+        "end_ms": 11487.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 11487.5,
+        "end_ms": 11587.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "Viennese",
+        "start_ms": 11587.5,
+        "end_ms": 12075.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 12075.0,
+    "end_ms": 13387.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "psychiatrist",
+        "start_ms": 12075.0,
+        "end_ms": 12800.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "developing",
+        "start_ms": 12800.0,
+        "end_ms": 13275.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 13275.0,
+        "end_ms": 13387.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 13387.5,
+    "end_ms": 14975.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "therapy",
+        "start_ms": 13387.5,
+        "end_ms": 13825.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "centered",
+        "start_ms": 13825.0,
+        "end_ms": 14112.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "on",
+        "start_ms": 14112.5,
+        "end_ms": 14225.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "meaning.",
+        "start_ms": 14225.0,
+        "end_ms": 14975.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 15112.5,
+    "end_ms": 16375.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "In",
+        "start_ms": 15112.5,
+        "end_ms": 15250.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "1942,",
+        "start_ms": 15250.0,
+        "end_ms": 16375.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 16487.5,
+    "end_ms": 17475.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "he",
+        "start_ms": 16487.5,
+        "end_ms": 16675.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "and",
+        "start_ms": 16675.0,
+        "end_ms": 16787.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "his",
+        "start_ms": 16787.5,
+        "end_ms": 16950.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "family",
+        "start_ms": 16950.0,
+        "end_ms": 17362.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "were",
+        "start_ms": 17362.5,
+        "end_ms": 17475.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 17475.0,
+    "end_ms": 19475.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "deported",
+        "start_ms": 17475.0,
+        "end_ms": 17950.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "by",
+        "start_ms": 17950.0,
+        "end_ms": 18125.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "Nazi",
+        "start_ms": 18125.0,
+        "end_ms": 18500.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "authorities.",
+        "start_ms": 18500.0,
+        "end_ms": 19475.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 19575.0,
+    "end_ms": 21725.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "His",
+        "start_ms": 19575.0,
+        "end_ms": 19775.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "manuscript",
+        "start_ms": 19775.0,
+        "end_ms": 20437.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "was",
+        "start_ms": 20437.5,
+        "end_ms": 20600.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "confiscated.",
+        "start_ms": 20600.0,
+        "end_ms": 21725.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 21850.0,
+    "end_ms": 23300.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "His",
+        "start_ms": 21850.0,
+        "end_ms": 22050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "family",
+        "start_ms": 22050.0,
+        "end_ms": 22475.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "was",
+        "start_ms": 22475.0,
+        "end_ms": 22600.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "separated,",
+        "start_ms": 22600.0,
+        "end_ms": 23300.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 23375.0,
+    "end_ms": 24100.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "and",
+        "start_ms": 23375.0,
+        "end_ms": 23500.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "most",
+        "start_ms": 23500.0,
+        "end_ms": 23762.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "of",
+        "start_ms": 23762.5,
+        "end_ms": 23837.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "them",
+        "start_ms": 23837.5,
+        "end_ms": 23962.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "were",
+        "start_ms": 23962.5,
+        "end_ms": 24100.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 24100.0,
+    "end_ms": 24925.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "murdered.",
+        "start_ms": 24100.0,
+        "end_ms": 24925.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 25125.0,
+    "end_ms": 26925.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Frankl",
+        "start_ms": 25125.0,
+        "end_ms": 25550.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "survived",
+        "start_ms": 25550.0,
+        "end_ms": 26062.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "several",
+        "start_ms": 26062.5,
+        "end_ms": 26425.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "camps,",
+        "start_ms": 26425.0,
+        "end_ms": 26925.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 27000.0,
+    "end_ms": 28175.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "including",
+        "start_ms": 27000.0,
+        "end_ms": 27487.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "Auschwitz",
+        "start_ms": 27487.5,
+        "end_ms": 28050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "and",
+        "start_ms": 28050.0,
+        "end_ms": 28175.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 28175.0,
+    "end_ms": 29075.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Türkheim.",
+        "start_ms": 28175.0,
+        "end_ms": 29075.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 29175.0,
+    "end_ms": 30012.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "He",
+        "start_ms": 29175.0,
+        "end_ms": 29325.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "writes",
+        "start_ms": 29325.0,
+        "end_ms": 29600.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "not",
+        "start_ms": 29600.0,
+        "end_ms": 29812.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "as",
+        "start_ms": 29812.5,
+        "end_ms": 29912.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 29912.5,
+        "end_ms": 30012.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 30012.5,
+    "end_ms": 31175.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "distant",
+        "start_ms": 30012.5,
+        "end_ms": 30337.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "historian,",
+        "start_ms": 30337.5,
+        "end_ms": 31175.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 31250.0,
+    "end_ms": 32475.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "but",
+        "start_ms": 31250.0,
+        "end_ms": 31400.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "as",
+        "start_ms": 31400.0,
+        "end_ms": 31512.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 31512.5,
+        "end_ms": 31575.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "doctor",
+        "start_ms": 31575.0,
+        "end_ms": 32000.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "studying",
+        "start_ms": 32000.0,
+        "end_ms": 32475.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 32475.0,
+    "end_ms": 34200.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "what",
+        "start_ms": 32475.0,
+        "end_ms": 32625.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "captivity",
+        "start_ms": 32625.0,
+        "end_ms": 33237.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "did",
+        "start_ms": 33237.5,
+        "end_ms": 33500.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "to",
+        "start_ms": 33500.0,
+        "end_ms": 33637.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "ordinary",
+        "start_ms": 33637.5,
+        "end_ms": 34200.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 34200.0,
+    "end_ms": 35712.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "people—",
+        "start_ms": 34200.0,
+        "end_ms": 34850.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "and",
+        "start_ms": 34950.0,
+        "end_ms": 35075.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "what",
+        "start_ms": 35075.0,
+        "end_ms": 35275.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "might",
+        "start_ms": 35275.0,
+        "end_ms": 35475.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "help",
+        "start_ms": 35475.0,
+        "end_ms": 35712.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 35712.5,
+    "end_ms": 36625.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "them",
+        "start_ms": 35712.5,
+        "end_ms": 35875.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "endure.",
+        "start_ms": 35875.0,
+        "end_ms": 36625.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 37125.0,
+    "end_ms": 39225.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "He",
+        "start_ms": 37125.0,
+        "end_ms": 37225.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "describes",
+        "start_ms": 37225.0,
+        "end_ms": 37812.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "three",
+        "start_ms": 37812.5,
+        "end_ms": 38087.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "broad",
+        "start_ms": 38087.5,
+        "end_ms": 38400.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "phases.",
+        "start_ms": 38400.0,
+        "end_ms": 39225.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 39337.5,
+    "end_ms": 41050.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "First",
+        "start_ms": 39337.5,
+        "end_ms": 39650.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "came",
+        "start_ms": 39650.0,
+        "end_ms": 39925.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "shock:",
+        "start_ms": 39925.0,
+        "end_ms": 40425.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "arrival,",
+        "start_ms": 40525.0,
+        "end_ms": 41050.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 41100.0,
+    "end_ms": 41800.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "uncertainty,",
+        "start_ms": 41100.0,
+        "end_ms": 41800.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 41850.0,
+    "end_ms": 43150.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "and",
+        "start_ms": 41850.0,
+        "end_ms": 41962.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "the",
+        "start_ms": 41962.5,
+        "end_ms": 42050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "mind’s",
+        "start_ms": 42050.0,
+        "end_ms": 42462.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "desperate",
+        "start_ms": 42462.5,
+        "end_ms": 42875.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "hope",
+        "start_ms": 42875.0,
+        "end_ms": 43150.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 43150.0,
+    "end_ms": 44200.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "that",
+        "start_ms": 43150.0,
+        "end_ms": 43262.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "the",
+        "start_ms": 43262.5,
+        "end_ms": 43350.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "worst",
+        "start_ms": 43350.0,
+        "end_ms": 43700.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "might",
+        "start_ms": 43700.0,
+        "end_ms": 43900.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "somehow",
+        "start_ms": 43900.0,
+        "end_ms": 44200.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 44200.0,
+    "end_ms": 45150.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "be",
+        "start_ms": 44200.0,
+        "end_ms": 44350.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "avoided.",
+        "start_ms": 44350.0,
+        "end_ms": 45150.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 45287.5,
+    "end_ms": 46525.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Then",
+        "start_ms": 45287.5,
+        "end_ms": 45525.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "came",
+        "start_ms": 45525.0,
+        "end_ms": 45750.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "camp",
+        "start_ms": 45750.0,
+        "end_ms": 46050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "routine,",
+        "start_ms": 46050.0,
+        "end_ms": 46525.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 46575.0,
+    "end_ms": 47775.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "where",
+        "start_ms": 46575.0,
+        "end_ms": 46750.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "hunger",
+        "start_ms": 46750.0,
+        "end_ms": 47125.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "and",
+        "start_ms": 47125.0,
+        "end_ms": 47250.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "danger",
+        "start_ms": 47250.0,
+        "end_ms": 47625.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "could",
+        "start_ms": 47625.0,
+        "end_ms": 47775.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 47775.0,
+    "end_ms": 48750.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "numb",
+        "start_ms": 47775.0,
+        "end_ms": 48000.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "feeling.",
+        "start_ms": 48000.0,
+        "end_ms": 48750.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 48887.5,
+    "end_ms": 50100.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Prisoners",
+        "start_ms": 48887.5,
+        "end_ms": 49375.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "tried",
+        "start_ms": 49375.0,
+        "end_ms": 49637.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "to",
+        "start_ms": 49637.5,
+        "end_ms": 49712.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "preserve",
+        "start_ms": 49712.5,
+        "end_ms": 50100.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 50100.0,
+    "end_ms": 51625.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "small",
+        "start_ms": 50100.0,
+        "end_ms": 50400.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "ties",
+        "start_ms": 50400.0,
+        "end_ms": 50750.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "to",
+        "start_ms": 50750.0,
+        "end_ms": 50875.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "life:",
+        "start_ms": 50875.0,
+        "end_ms": 51425.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 51525.0,
+        "end_ms": 51625.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 51625.0,
+    "end_ms": 52075.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "memory,",
+        "start_ms": 51625.0,
+        "end_ms": 52075.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 52150.0,
+    "end_ms": 52675.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "a",
+        "start_ms": 52150.0,
+        "end_ms": 52225.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "promise,",
+        "start_ms": 52225.0,
+        "end_ms": 52675.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 52725.0,
+    "end_ms": 53500.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "a",
+        "start_ms": 52725.0,
+        "end_ms": 52800.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "scrap",
+        "start_ms": 52800.0,
+        "end_ms": 53087.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "of",
+        "start_ms": 53087.5,
+        "end_ms": 53175.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "work,",
+        "start_ms": 53175.0,
+        "end_ms": 53500.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 53575.0,
+    "end_ms": 54725.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "a",
+        "start_ms": 53575.0,
+        "end_ms": 53675.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "moment",
+        "start_ms": 53675.0,
+        "end_ms": 53962.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "of",
+        "start_ms": 53962.5,
+        "end_ms": 54050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "beauty.",
+        "start_ms": 54050.0,
+        "end_ms": 54725.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 54862.5,
+    "end_ms": 56375.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "After",
+        "start_ms": 54862.5,
+        "end_ms": 55175.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "liberation",
+        "start_ms": 55175.0,
+        "end_ms": 55800.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "came",
+        "start_ms": 55800.0,
+        "end_ms": 56025.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "another",
+        "start_ms": 56025.0,
+        "end_ms": 56375.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 56375.0,
+    "end_ms": 57150.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "struggle.",
+        "start_ms": 56375.0,
+        "end_ms": 57150.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 57300.0,
+    "end_ms": 58900.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Freedom",
+        "start_ms": 57300.0,
+        "end_ms": 57700.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "did",
+        "start_ms": 57700.0,
+        "end_ms": 57837.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "not",
+        "start_ms": 57837.5,
+        "end_ms": 58087.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "instantly",
+        "start_ms": 58087.5,
+        "end_ms": 58575.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "erase",
+        "start_ms": 58575.0,
+        "end_ms": 58900.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 58900.0,
+    "end_ms": 59600.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "trauma.",
+        "start_ms": 58900.0,
+        "end_ms": 59600.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 59800.0,
+    "end_ms": 61575.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Some",
+        "start_ms": 59800.0,
+        "end_ms": 60075.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "survivors",
+        "start_ms": 60075.0,
+        "end_ms": 60675.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "felt",
+        "start_ms": 60675.0,
+        "end_ms": 60925.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "detached,",
+        "start_ms": 60925.0,
+        "end_ms": 61575.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 61625.0,
+    "end_ms": 62000.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "bitter,",
+        "start_ms": 61625.0,
+        "end_ms": 62000.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 62075.0,
+    "end_ms": 63375.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "or",
+        "start_ms": 62075.0,
+        "end_ms": 62237.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "lost",
+        "start_ms": 62237.5,
+        "end_ms": 62700.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "as",
+        "start_ms": 62700.0,
+        "end_ms": 62812.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "they",
+        "start_ms": 62812.5,
+        "end_ms": 62950.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "returned",
+        "start_ms": 62950.0,
+        "end_ms": 63375.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 63375.0,
+    "end_ms": 64175.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "to",
+        "start_ms": 63375.0,
+        "end_ms": 63475.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 63475.0,
+        "end_ms": 63575.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "world",
+        "start_ms": 63575.0,
+        "end_ms": 63925.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "that",
+        "start_ms": 63925.0,
+        "end_ms": 64037.49999999999,
+        "baseline_px": 1368
+      },
+      {
+        "text": "had",
+        "start_ms": 64037.49999999999,
+        "end_ms": 64175.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 64175.0,
+    "end_ms": 65000.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "moved",
+        "start_ms": 64175.0,
+        "end_ms": 64450.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "on.",
+        "start_ms": 64450.0,
+        "end_ms": 65000.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 65550.0,
+    "end_ms": 67275.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Frankl’s",
+        "start_ms": 65550.0,
+        "end_ms": 65962.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "central",
+        "start_ms": 65962.5,
+        "end_ms": 66387.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "idea",
+        "start_ms": 66387.5,
+        "end_ms": 66887.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "is",
+        "start_ms": 66887.5,
+        "end_ms": 67050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "not",
+        "start_ms": 67050.0,
+        "end_ms": 67275.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 67275.0,
+    "end_ms": 68725.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "that",
+        "start_ms": 67275.0,
+        "end_ms": 67500.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "suffering",
+        "start_ms": 67500.0,
+        "end_ms": 67950.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "is",
+        "start_ms": 67950.0,
+        "end_ms": 68112.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "good,",
+        "start_ms": 68112.5,
+        "end_ms": 68725.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 68850.0,
+    "end_ms": 70162.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "or",
+        "start_ms": 68850.0,
+        "end_ms": 69000.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "that",
+        "start_ms": 69000.0,
+        "end_ms": 69212.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "attitude",
+        "start_ms": 69212.5,
+        "end_ms": 69800.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "can",
+        "start_ms": 69800.0,
+        "end_ms": 69925.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "make",
+        "start_ms": 69925.0,
+        "end_ms": 70162.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 70162.5,
+    "end_ms": 71725.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "cruelty",
+        "start_ms": 70162.5,
+        "end_ms": 70650.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "acceptable.",
+        "start_ms": 70650.0,
+        "end_ms": 71725.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 71850.0,
+    "end_ms": 72887.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "It",
+        "start_ms": 71850.0,
+        "end_ms": 72000.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "is",
+        "start_ms": 72000.0,
+        "end_ms": 72125.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "that",
+        "start_ms": 72125.0,
+        "end_ms": 72387.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "even",
+        "start_ms": 72387.5,
+        "end_ms": 72687.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "when",
+        "start_ms": 72687.5,
+        "end_ms": 72887.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 72887.5,
+    "end_ms": 74237.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "circumstances",
+        "start_ms": 72887.5,
+        "end_ms": 73750.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "cannot",
+        "start_ms": 73750.0,
+        "end_ms": 74087.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "be",
+        "start_ms": 74087.5,
+        "end_ms": 74237.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 74237.5,
+    "end_ms": 74975.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "changed,",
+        "start_ms": 74237.5,
+        "end_ms": 74975.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 75100.0,
+    "end_ms": 76450.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "a",
+        "start_ms": 75100.0,
+        "end_ms": 75200.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "person",
+        "start_ms": 75200.0,
+        "end_ms": 75650.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "may",
+        "start_ms": 75650.0,
+        "end_ms": 75825.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "still",
+        "start_ms": 75825.0,
+        "end_ms": 76112.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "choose",
+        "start_ms": 76112.5,
+        "end_ms": 76450.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 76450.0,
+    "end_ms": 77700.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "how",
+        "start_ms": 76450.0,
+        "end_ms": 76612.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "to",
+        "start_ms": 76612.5,
+        "end_ms": 76700.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "meet",
+        "start_ms": 76700.0,
+        "end_ms": 76925.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "them—",
+        "start_ms": 76925.0,
+        "end_ms": 77500.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "and",
+        "start_ms": 77600.0,
+        "end_ms": 77700.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 77700.0,
+    "end_ms": 79000.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "must",
+        "start_ms": 77700.0,
+        "end_ms": 77987.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "never",
+        "start_ms": 77987.5,
+        "end_ms": 78237.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "be",
+        "start_ms": 78237.5,
+        "end_ms": 78387.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "blamed",
+        "start_ms": 78387.5,
+        "end_ms": 78875.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "for",
+        "start_ms": 78875.0,
+        "end_ms": 79000.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 79000.0,
+    "end_ms": 80625.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "being",
+        "start_ms": 79000.0,
+        "end_ms": 79275.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "unable",
+        "start_ms": 79275.0,
+        "end_ms": 79775.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "to",
+        "start_ms": 79775.0,
+        "end_ms": 79875.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "do",
+        "start_ms": 79875.0,
+        "end_ms": 80062.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "so.",
+        "start_ms": 80062.5,
+        "end_ms": 80625.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 81175.0,
+    "end_ms": 82375.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "In",
+        "start_ms": 81175.0,
+        "end_ms": 81262.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "the",
+        "start_ms": 81262.5,
+        "end_ms": 81350.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "book’s",
+        "start_ms": 81350.0,
+        "end_ms": 81600.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "second",
+        "start_ms": 81600.0,
+        "end_ms": 81900.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "part,",
+        "start_ms": 81900.0,
+        "end_ms": 82375.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 82487.5,
+    "end_ms": 83700.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Frankl",
+        "start_ms": 82487.5,
+        "end_ms": 82875.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "calls",
+        "start_ms": 82875.0,
+        "end_ms": 83137.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "his",
+        "start_ms": 83137.5,
+        "end_ms": 83275.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "approach",
+        "start_ms": 83275.0,
+        "end_ms": 83700.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 83700.0,
+    "end_ms": 85375.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "logotherapy:",
+        "start_ms": 83700.0,
+        "end_ms": 84650.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "healing",
+        "start_ms": 84787.5,
+        "end_ms": 85175.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "through",
+        "start_ms": 85175.0,
+        "end_ms": 85375.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 85375.0,
+    "end_ms": 86725.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "the",
+        "start_ms": 85375.0,
+        "end_ms": 85512.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "search",
+        "start_ms": 85512.5,
+        "end_ms": 85825.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "for",
+        "start_ms": 85825.0,
+        "end_ms": 85950.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "meaning.",
+        "start_ms": 85950.0,
+        "end_ms": 86725.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 86850.0,
+    "end_ms": 88075.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "He",
+        "start_ms": 86850.0,
+        "end_ms": 87012.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "sees",
+        "start_ms": 87012.5,
+        "end_ms": 87337.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "meaning",
+        "start_ms": 87337.5,
+        "end_ms": 87700.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "in",
+        "start_ms": 87700.0,
+        "end_ms": 87850.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "three",
+        "start_ms": 87850.0,
+        "end_ms": 88075.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 88075.0,
+    "end_ms": 90550.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "places:",
+        "start_ms": 88075.0,
+        "end_ms": 88800.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "work",
+        "start_ms": 88912.5,
+        "end_ms": 89312.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "or",
+        "start_ms": 89312.5,
+        "end_ms": 89475.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "responsibility,",
+        "start_ms": 89475.0,
+        "end_ms": 90550.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 90700.0,
+    "end_ms": 92125.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "love",
+        "start_ms": 90700.0,
+        "end_ms": 91125.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "and",
+        "start_ms": 91125.0,
+        "end_ms": 91237.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "encounter,",
+        "start_ms": 91237.5,
+        "end_ms": 92125.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 92225.0,
+    "end_ms": 93237.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "and",
+        "start_ms": 92225.0,
+        "end_ms": 92337.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "the",
+        "start_ms": 92337.5,
+        "end_ms": 92425.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "stance",
+        "start_ms": 92425.0,
+        "end_ms": 92825.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "we",
+        "start_ms": 92825.0,
+        "end_ms": 92975.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "take",
+        "start_ms": 92975.0,
+        "end_ms": 93237.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 93237.5,
+    "end_ms": 94750.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "toward",
+        "start_ms": 93237.5,
+        "end_ms": 93562.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "suffering",
+        "start_ms": 93562.5,
+        "end_ms": 94075.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "that",
+        "start_ms": 94075.0,
+        "end_ms": 94250.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "cannot",
+        "start_ms": 94250.0,
+        "end_ms": 94600.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "be",
+        "start_ms": 94600.0,
+        "end_ms": 94750.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 94750.0,
+    "end_ms": 95600.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "avoided.",
+        "start_ms": 94750.0,
+        "end_ms": 95600.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 95775.0,
+    "end_ms": 97262.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "These",
+        "start_ms": 95775.0,
+        "end_ms": 96100.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "are",
+        "start_ms": 96100.0,
+        "end_ms": 96200.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "not",
+        "start_ms": 96200.0,
+        "end_ms": 96462.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "slogans",
+        "start_ms": 96462.5,
+        "end_ms": 97050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "that",
+        "start_ms": 97050.0,
+        "end_ms": 97262.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 97262.5,
+    "end_ms": 98825.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "solve",
+        "start_ms": 97262.5,
+        "end_ms": 97662.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "every",
+        "start_ms": 97662.5,
+        "end_ms": 98000.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "hardship.",
+        "start_ms": 98000.0,
+        "end_ms": 98825.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 98925.0,
+    "end_ms": 100025.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "They",
+        "start_ms": 98925.0,
+        "end_ms": 99100.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "are",
+        "start_ms": 99100.0,
+        "end_ms": 99250.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "ways",
+        "start_ms": 99250.0,
+        "end_ms": 99550.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "to",
+        "start_ms": 99550.0,
+        "end_ms": 99675.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "notice",
+        "start_ms": 99675.0,
+        "end_ms": 100025.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 100025.0,
+    "end_ms": 101262.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "what",
+        "start_ms": 100025.0,
+        "end_ms": 100262.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "life",
+        "start_ms": 100262.5,
+        "end_ms": 100550.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "is",
+        "start_ms": 100550.0,
+        "end_ms": 100712.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "asking",
+        "start_ms": 100712.5,
+        "end_ms": 101150.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "of",
+        "start_ms": 101150.0,
+        "end_ms": 101262.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 101262.5,
+    "end_ms": 102850.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "us",
+        "start_ms": 101262.5,
+        "end_ms": 101500.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "in",
+        "start_ms": 101500.0,
+        "end_ms": 101587.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 101587.5,
+        "end_ms": 101650.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "particular",
+        "start_ms": 101650.0,
+        "end_ms": 102200.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "moment.",
+        "start_ms": 102200.0,
+        "end_ms": 102850.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 103375.0,
+    "end_ms": 104950.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "A",
+        "start_ms": 103375.0,
+        "end_ms": 103462.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "task",
+        "start_ms": 103462.5,
+        "end_ms": 103850.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "unfinished",
+        "start_ms": 103850.0,
+        "end_ms": 104525.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "can",
+        "start_ms": 104525.0,
+        "end_ms": 104675.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "call",
+        "start_ms": 104675.0,
+        "end_ms": 104950.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 104950.0,
+    "end_ms": 106100.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "someone",
+        "start_ms": 104950.0,
+        "end_ms": 105262.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "forward.",
+        "start_ms": 105262.5,
+        "end_ms": 106100.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 106275.0,
+    "end_ms": 107962.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Love",
+        "start_ms": 106275.0,
+        "end_ms": 106625.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "can",
+        "start_ms": 106625.0,
+        "end_ms": 106800.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "keep",
+        "start_ms": 106800.0,
+        "end_ms": 107075.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "another",
+        "start_ms": 107075.0,
+        "end_ms": 107487.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "person",
+        "start_ms": 107487.5,
+        "end_ms": 107962.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 107962.5,
+    "end_ms": 108975.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "vividly",
+        "start_ms": 107962.5,
+        "end_ms": 108400.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "present,",
+        "start_ms": 108400.0,
+        "end_ms": 108975.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 109075.0,
+    "end_ms": 110675.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "even",
+        "start_ms": 109075.0,
+        "end_ms": 109375.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "across",
+        "start_ms": 109375.0,
+        "end_ms": 109775.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "distance.",
+        "start_ms": 109775.0,
+        "end_ms": 110675.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 110775.0,
+    "end_ms": 111925.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "And",
+        "start_ms": 110775.0,
+        "end_ms": 110912.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "when",
+        "start_ms": 110912.5,
+        "end_ms": 111087.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "pain",
+        "start_ms": 111087.5,
+        "end_ms": 111450.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "cannot",
+        "start_ms": 111450.0,
+        "end_ms": 111787.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "be",
+        "start_ms": 111787.5,
+        "end_ms": 111925.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 111925.0,
+    "end_ms": 112650.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "escaped,",
+        "start_ms": 111925.0,
+        "end_ms": 112650.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 112762.5,
+    "end_ms": 114162.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "dignity",
+        "start_ms": 112762.5,
+        "end_ms": 113250.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "may",
+        "start_ms": 113250.0,
+        "end_ms": 113425.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "survive",
+        "start_ms": 113425.0,
+        "end_ms": 114000.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "in",
+        "start_ms": 114000.0,
+        "end_ms": 114087.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 114087.5,
+        "end_ms": 114162.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 114162.5,
+    "end_ms": 115550.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "choice",
+        "start_ms": 114162.5,
+        "end_ms": 114462.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "of",
+        "start_ms": 114462.5,
+        "end_ms": 114537.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "response.",
+        "start_ms": 114537.5,
+        "end_ms": 115550.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 115725.0,
+    "end_ms": 117412.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Frankl’s",
+        "start_ms": 115725.0,
+        "end_ms": 116212.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "pages",
+        "start_ms": 116212.5,
+        "end_ms": 116675.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "return",
+        "start_ms": 116675.0,
+        "end_ms": 117100.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "to",
+        "start_ms": 117100.0,
+        "end_ms": 117187.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "these",
+        "start_ms": 117187.5,
+        "end_ms": 117412.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 117412.5,
+    "end_ms": 118850.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "ideas",
+        "start_ms": 117412.5,
+        "end_ms": 118012.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "through",
+        "start_ms": 118012.5,
+        "end_ms": 118262.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "small,",
+        "start_ms": 118262.5,
+        "end_ms": 118850.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 118937.5,
+    "end_ms": 120850.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "concrete",
+        "start_ms": 118937.5,
+        "end_ms": 119450.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "moments—",
+        "start_ms": 119450.0,
+        "end_ms": 120175.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "not",
+        "start_ms": 120300.0,
+        "end_ms": 120525.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "easy",
+        "start_ms": 120525.0,
+        "end_ms": 120850.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 120850.0,
+    "end_ms": 121625.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "victories,",
+        "start_ms": 120850.0,
+        "end_ms": 121625.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 121700.0,
+    "end_ms": 123800.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "but",
+        "start_ms": 121700.0,
+        "end_ms": 121850.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "moments",
+        "start_ms": 121850.0,
+        "end_ms": 122325.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "that",
+        "start_ms": 122325.0,
+        "end_ms": 122500.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "resist",
+        "start_ms": 122500.0,
+        "end_ms": 122950.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "despair.",
+        "start_ms": 122950.0,
+        "end_ms": 123800.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 124400.0,
+    "end_ms": 125775.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Man’s",
+        "start_ms": 124400.0,
+        "end_ms": 124762.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "Search",
+        "start_ms": 124762.5,
+        "end_ms": 125075.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "for",
+        "start_ms": 125075.0,
+        "end_ms": 125200.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "Meaning",
+        "start_ms": 125200.0,
+        "end_ms": 125612.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "is",
+        "start_ms": 125612.5,
+        "end_ms": 125775.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 125775.0,
+    "end_ms": 127425.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "both",
+        "start_ms": 125775.0,
+        "end_ms": 126012.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "a",
+        "start_ms": 126012.5,
+        "end_ms": 126112.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "witness",
+        "start_ms": 126112.5,
+        "end_ms": 126550.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "to",
+        "start_ms": 126550.0,
+        "end_ms": 126675.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "history",
+        "start_ms": 126675.0,
+        "end_ms": 127425.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 127425.0,
+    "end_ms": 128625.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "and",
+        "start_ms": 127425.0,
+        "end_ms": 127662.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "an",
+        "start_ms": 127662.5,
+        "end_ms": 127787.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "argument",
+        "start_ms": 127787.5,
+        "end_ms": 128324.99999999999,
+        "baseline_px": 1368
+      },
+      {
+        "text": "about",
+        "start_ms": 128324.99999999999,
+        "end_ms": 128625.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 128625.0,
+    "end_ms": 130025.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "responsibility.",
+        "start_ms": 128625.0,
+        "end_ms": 130025.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 130150.0,
+    "end_ms": 131312.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "It",
+        "start_ms": 130150.0,
+        "end_ms": 130287.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "does",
+        "start_ms": 130287.5,
+        "end_ms": 130449.99999999999,
+        "baseline_px": 1368
+      },
+      {
+        "text": "not",
+        "start_ms": 130449.99999999999,
+        "end_ms": 130675.00000000001,
+        "baseline_px": 1368
+      },
+      {
+        "text": "promise",
+        "start_ms": 130675.00000000001,
+        "end_ms": 131125.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "that",
+        "start_ms": 131125.0,
+        "end_ms": 131312.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 131312.5,
+    "end_ms": 133075.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "every",
+        "start_ms": 131312.5,
+        "end_ms": 131650.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "life",
+        "start_ms": 131650.0,
+        "end_ms": 131912.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "will",
+        "start_ms": 131912.5,
+        "end_ms": 132087.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "feel",
+        "start_ms": 132087.5,
+        "end_ms": 132350.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "meaningful,",
+        "start_ms": 132350.0,
+        "end_ms": 133075.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 133187.5,
+    "end_ms": 135225.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "or",
+        "start_ms": 133187.5,
+        "end_ms": 133350.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "that",
+        "start_ms": 133350.0,
+        "end_ms": 133550.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "meaning",
+        "start_ms": 133550.0,
+        "end_ms": 133900.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "removes",
+        "start_ms": 133900.0,
+        "end_ms": 134375.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "grief.",
+        "start_ms": 134375.0,
+        "end_ms": 135225.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 135362.5,
+    "end_ms": 136125.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Instead,",
+        "start_ms": 135362.5,
+        "end_ms": 136125.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 136237.5,
+    "end_ms": 137450.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "Frankl",
+        "start_ms": 136237.5,
+        "end_ms": 136650.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "turns",
+        "start_ms": 136650.0,
+        "end_ms": 136962.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "the",
+        "start_ms": 136962.5,
+        "end_ms": 137050.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "question",
+        "start_ms": 137050.0,
+        "end_ms": 137450.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 137450.0,
+    "end_ms": 139575.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "around:",
+        "start_ms": 137450.0,
+        "end_ms": 138200.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "rather",
+        "start_ms": 138337.5,
+        "end_ms": 138662.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "than",
+        "start_ms": 138662.5,
+        "end_ms": 138812.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "asking",
+        "start_ms": 138812.5,
+        "end_ms": 139262.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "only",
+        "start_ms": 139262.5,
+        "end_ms": 139575.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 139575.0,
+    "end_ms": 140950.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "what",
+        "start_ms": 139575.0,
+        "end_ms": 139712.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "we",
+        "start_ms": 139712.5,
+        "end_ms": 139825.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "expect",
+        "start_ms": 139825.0,
+        "end_ms": 140225.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "from",
+        "start_ms": 140225.0,
+        "end_ms": 140400.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "life,",
+        "start_ms": 140400.0,
+        "end_ms": 140950.0,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 141050.0,
+    "end_ms": 142037.5,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "what",
+        "start_ms": 141050.0,
+        "end_ms": 141225.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "answer",
+        "start_ms": 141225.0,
+        "end_ms": 141625.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "can",
+        "start_ms": 141625.0,
+        "end_ms": 141737.5,
+        "baseline_px": 1368
+      },
+      {
+        "text": "we",
+        "start_ms": 141737.5,
+        "end_ms": 141850.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "give",
+        "start_ms": 141850.0,
+        "end_ms": 142037.5,
+        "baseline_px": 1368
+      }
+    ]
+  },
+  {
+    "start_ms": 142037.5,
+    "end_ms": 142800.0,
+    "baseline_px": 1368,
+    "words": [
+      {
+        "text": "it",
+        "start_ms": 142037.5,
+        "end_ms": 142150.0,
+        "baseline_px": 1368
+      },
+      {
+        "text": "today?",
+        "start_ms": 142150.0,
+        "end_ms": 142800.0,
+        "baseline_px": 1368
+      }
+    ]
+  }
+]

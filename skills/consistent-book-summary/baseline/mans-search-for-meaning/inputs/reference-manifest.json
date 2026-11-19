@@ -1,0 +1,14 @@
+{
+  "status": "LOCKED",
+  "reference_video": "references/Dracula_YouTube_Short_Painterly.mp4",
+  "reference_video_sha256": "1c1744612f4d9aebbe37e2b450d843f825fc29ff1650684eba8fe30df3b32a9b",
+  "reference_cover": "references/Dracula_Hook_Cover.png",
+  "reference_cover_sha256": "2f1f7801f6908c62ca75c8b30b454397499bbae465eee21de05e9e322f162100",
+  "cover_style_reference": "references/A Room of One’s Own Legacy.png",
+  "cover_style_reference_sha256": "5a3c4fc5d24ab85e28b909f6247a4116d22e9c53faab4163bbdbfd7fe7f944e0",
+  "frame_samples_seconds": [1, 8, 20, 40, 65, 90],
+  "approved_by": "user-designated reference",
+  "approved_at": "2026-11-18",
+  "style_lock_version": "0.3",
+  "notes": "Exact Dracula video and cover references plus the user-selected A Room of One’s Own Legacy cover-style reference are hash-locked. Use A Room for hook-cover composition, typography, and illustration treatment; use the Dracula short for animation/scene framing. Hashes verify identity only, not automatic visual approval of new art."
+}

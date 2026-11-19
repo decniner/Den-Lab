@@ -17,13 +17,14 @@
     "review": {"status": "pending", "reviewer": "", "premium_illustration": false,
       "consistent_character": false, "palette_tones": 3, "no_primitive_vectors": false}
   },
-  "narration_provider": "kokoro",
+  "narration_provider": "kokoro", "narration_voice": "REQUIRED_APPROVED_VOICE",
+  "narration_settings": {"lang_code": "a", "speed": 1.0},
   "narration": "public/audio/narration.wav",
   "visuals": {"mode": "still_images", "character_animation": false,
     "transitions": ["cut", "crossfade", "subtle_camera_move"]},
   "timeline": {"narration_start_frame": 0, "total_frames": 300, "hook_frames": 75,
     "caption_component": "components/Caption.tsx", "caption_baseline_px": null},
-  "image_generation": {"executable": "imagegen"},
+  "image_generation": {"executable": "imagegen", "generation_pending": true},
   "render": {"remotion_cli": ["node", "node_modules/remotion/cli/index.mjs"],
     "entry_point": "src/index.ts", "hook_composition": "HookCover", "full_composition": "BookSummary",
     "props": "public/project-props.json", "hook_output": "out/hook-cover.mp4", "output": "out/book-summary.mp4"}
