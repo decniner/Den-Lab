@@ -4,28 +4,77 @@
     "video_sha256": "1c1744612f4d9aebbe37e2b450d843f825fc29ff1650684eba8fe30df3b32a9b",
     "cover": "references/Dracula_Hook_Cover.png",
     "cover_sha256": "2f1f7801f6908c62ca75c8b30b454397499bbae465eee21de05e9e322f162100",
-    "cover_style": "references/A Room of One’s Own Legacy.png",
+    "cover_style": "references/A Room of One\u2019s Own Legacy.png",
     "cover_style_sha256": "5a3c4fc5d24ab85e28b909f6247a4116d22e9c53faab4163bbdbfd7fe7f944e0"
   },
   "approved_duration_seconds": 10,
+  "book_title": "REQUIRED_BOOK_TITLE",
+  "author": "REQUIRED_AUTHOR",
+  "narration_script": "narration.txt",
+  "captions": "public/captions.json",
   "hook_duration_seconds": 2.5,
   "artwork": {
     "cover": "assets/hook-cover.png",
     "contact_sheet": "assets/contact-sheet.png",
-    "scenes": [{"image": "assets/scene-01.png", "start_ms": 0, "end_ms": 5000},
-      {"image": "assets/scene-02.png", "start_ms": 5000, "end_ms": 10000}],
-    "review": {"status": "pending", "reviewer": "", "premium_illustration": false,
-      "consistent_character": false, "palette_tones": 3, "no_primitive_vectors": false}
+    "scenes": [
+      {
+        "image": "assets/scene-01.png",
+        "start_ms": 0,
+        "end_ms": 5000
+      },
+      {
+        "image": "assets/scene-02.png",
+        "start_ms": 5000,
+        "end_ms": 10000
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "reviewer": "",
+      "premium_illustration": false,
+      "consistent_character": false,
+      "palette_tones": 3,
+      "no_primitive_vectors": false
+    }
   },
-  "narration_provider": "kokoro", "narration_voice": "REQUIRED_APPROVED_VOICE",
-  "narration_settings": {"lang_code": "a", "speed": 1.0},
+  "narration_provider": "kokoro",
+  "narration_voice": "REQUIRED_APPROVED_VOICE",
+  "narration_settings": {
+    "lang_code": "a",
+    "speed": 1.0
+  },
   "narration": "public/audio/narration.wav",
-  "visuals": {"mode": "still_images", "character_animation": false,
-    "transitions": ["cut", "crossfade", "subtle_camera_move"]},
-  "timeline": {"narration_start_frame": 0, "total_frames": 300, "hook_frames": 75,
-    "caption_component": "components/Caption.tsx", "caption_baseline_px": null},
-  "image_generation": {"executable": "imagegen", "generation_pending": true},
-  "render": {"remotion_cli": ["node", "node_modules/remotion/cli/index.mjs"],
-    "entry_point": "src/index.ts", "hook_composition": "HookCover", "full_composition": "BookSummary",
-    "props": "public/project-props.json", "hook_output": "out/hook-cover.mp4", "output": "out/book-summary.mp4"}
+  "visuals": {
+    "mode": "still_images",
+    "character_animation": false,
+    "transitions": [
+      "cut",
+      "crossfade",
+      "subtle_camera_move"
+    ]
+  },
+  "timeline": {
+    "narration_start_frame": 0,
+    "total_frames": 300,
+    "hook_frames": 75,
+    "caption_component": "components/Caption.tsx",
+    "caption_baseline_px": null
+  },
+  "image_generation": {
+    "executable": "imagegen",
+    "generation_pending": true
+  },
+  "render": {
+    "remotion_cli": [
+      "node",
+      "node_modules/remotion/cli/index.mjs"
+    ],
+    "entry_point": "src/index.ts",
+    "hook_composition": "HookCover",
+    "full_composition": "BookSummary",
+    "props": "public/project-props.json",
+    "hook_output": "out/hook-cover.mp4",
+    "output": "out/book-summary.mp4"
+  },
+  "captions": "public/captions.json"
 }

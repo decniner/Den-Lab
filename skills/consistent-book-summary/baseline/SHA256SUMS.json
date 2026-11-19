@@ -4,8 +4,8 @@
   "immutable_approved_artifacts": true,
   "files": {
     "README.md": {
-      "sha256": "cbb6958df477fbd5a5463ec7d016e2d102ff955d1a96be9d2715cb30268e2976",
-      "bytes": 1040
+      "sha256": "4dbdae0c4177b0a733fc6397c7a82465ccf16d8920c99abd6eaff88799e6e505",
+      "bytes": 2014
     },
     "mans-search-for-meaning/approved/Acceptance_Report.md": {
       "sha256": "bedc01093f67191eb95925befd339da820bf2d7161301a36d7b3d1a4c841df0a",
@@ -318,6 +318,178 @@
     "mans-search-for-meaning/inputs/timing.json": {
       "sha256": "32f21ff4bae98e50c0830eb459db5f3cb1bda629cc1cc46fb9c0eaae2c019cae",
       "bytes": 30764
+    },
+    "meditations/approved/Artwork_Contact_Sheet_Part1.png": {
+      "sha256": "d9cb8053c8d5152b05414827a3f5169ea691b2f6a0625206f99dd8780e1911b1",
+      "bytes": 2558332
+    },
+    "meditations/approved/Artwork_Contact_Sheet_Part2.png": {
+      "sha256": "bf280723f22701a9825aaec8acd699c31e4bdc37852283da28c8eeb6b4f5003b",
+      "bytes": 2515063
+    },
+    "meditations/approved/Artwork_Contact_Sheet_Part3.png": {
+      "sha256": "27c2f10df8775387f8e2ab11de2be1472bb61c87e9fb014042a74ff8217a132c",
+      "bytes": 2540789
+    },
+    "meditations/approved/Meditations_Hook_Cover.png": {
+      "sha256": "bf9855be76000977b9f6f44b121acadc2bf4437f09280258a677ce7e14b592ba",
+      "bytes": 3471076
+    },
+    "meditations/approved/Meditations_Summary_Full.mp4": {
+      "sha256": "3985a448a5d60880c9651e437f98af0a092d25d7a4e0640e57fac787a19e67a4",
+      "bytes": 24528658
+    },
+    "meditations/approved/Rendered_Frame_Review.png": {
+      "sha256": "3c61e73f53d7f7c6003dd01826656ccac022c51a173c12e6784a263eef271b1f",
+      "bytes": 2059178
+    },
+    "meditations/approved/verification.json": {
+      "sha256": "fe8b74145af515e07c098d4540d941acc375872df706992eca082e036a28f2cb",
+      "bytes": 490
+    },
+    "meditations/assets/scenes/scene-01.png": {
+      "sha256": "29947eeac9e2f627ced7eeae9f90ed2889951abd60026c8e6ae73c54f77579e6",
+      "bytes": 3278758
+    },
+    "meditations/assets/scenes/scene-02.png": {
+      "sha256": "69038183083a1711964b4f4ef5be2bbcc8fb4eae07fda09334a7edcddd76acb7",
+      "bytes": 3101938
+    },
+    "meditations/assets/scenes/scene-03.png": {
+      "sha256": "12426e0fe8f34f5102cd2b0679c23610c51bff612f6ed81636b05281d7e565eb",
+      "bytes": 1585003
+    },
+    "meditations/assets/scenes/scene-04.png": {
+      "sha256": "231760a5cb2c16f1f506305b6e29c3aab2a1fdb07678bbe6a4f37d29ff5f1ef4",
+      "bytes": 2802001
+    },
+    "meditations/assets/scenes/scene-05.png": {
+      "sha256": "814d9c5b0e06e7c73d205eea03eb31740e7e667ad08a4dcd6ff6f5bd0e626318",
+      "bytes": 3349716
+    },
+    "meditations/assets/scenes/scene-06.png": {
+      "sha256": "34629ec492447b2af8e0bc4a16562ea05dc470d9fe35710e3998670bbf35106d",
+      "bytes": 3082915
+    },
+    "meditations/assets/scenes/scene-07.png": {
+      "sha256": "202cebd97f9ac1935cc4e9e52a239c32135a19b9bed98d76ba888cdcc236f7ca",
+      "bytes": 3073025
+    },
+    "meditations/assets/scenes/scene-08.png": {
+      "sha256": "aaa2de817cc7c464461990c4d3999b5ae7c5c64ccc1d495e7082cefbe753ff9b",
+      "bytes": 3252326
+    },
+    "meditations/assets/scenes/scene-09.png": {
+      "sha256": "6ec12d358c40e10cce534aa7c407536d28b0bc2b069c7d154016cdfaf9c92ff1",
+      "bytes": 3002138
+    },
+    "meditations/assets/scenes/scene-10.png": {
+      "sha256": "a9e8f277438386c98000e5e40a1ffd560f668a46aa7d047bead2a18fd53bcb05",
+      "bytes": 3017289
+    },
+    "meditations/assets/scenes/scene-11.png": {
+      "sha256": "041944e6da319264cbabb9b497f041be8ff651afb9ae38b82c7aa1602aec322a",
+      "bytes": 3132827
+    },
+    "meditations/assets/scenes/scene-12.png": {
+      "sha256": "d6ae62ac5f0bab483ff1deadd89d1cf7ae1650ad5652046e6d0119fdd70d382b",
+      "bytes": 2945673
+    },
+    "meditations/assets/scenes/scene-13.png": {
+      "sha256": "e2dd9075581eb378bdc9d633233c5cb8f8d85b71e2d75d1a4f5d1194c1c16b45",
+      "bytes": 3004034
+    },
+    "meditations/assets/scenes/scene-14.png": {
+      "sha256": "6f60f7a9b730c388581be39cdbd72d6144a22289272c400c2a4159ab777f2a19",
+      "bytes": 2932058
+    },
+    "meditations/assets/scenes/scene-15.png": {
+      "sha256": "67940e7dce82ed04324b7cce48a204f32b7a6cfa61fe61461378a071f338d8ac",
+      "bytes": 2994027
+    },
+    "meditations/assets/scenes/scene-16.png": {
+      "sha256": "506943b5b99c09a051a4933d05006805c9c76e1b157d49b4ca11e0df85a2dca3",
+      "bytes": 3130876
+    },
+    "meditations/assets/scenes/scene-17.png": {
+      "sha256": "3df18e2bff1bb264cd800d5524535e65a906f5b526c6193f4556225e4e04ac2c",
+      "bytes": 3248201
+    },
+    "meditations/assets/scenes/scene-18.png": {
+      "sha256": "ad6f3d5d5993b0ae88dcf132e86cb3fd85bccd0c1dc87f9b0d24afdec34d81ad",
+      "bytes": 3086688
+    },
+    "meditations/assets/scenes/scene-19.png": {
+      "sha256": "6158b6ffa4e883cca0068fba431fe1ac0d7cad83da55988658a0a380760af505",
+      "bytes": 2919161
+    },
+    "meditations/assets/scenes/scene-20.png": {
+      "sha256": "8f3c269b644f7121615a7b71a8cf8cd1cb85d2337592b3168687e3379965d1f3",
+      "bytes": 3177251
+    },
+    "meditations/assets/scenes/scene-21.png": {
+      "sha256": "4556d68f4e928410c0070345605cd88816a4a8cca984f7377df24e8cf4ccdf2f",
+      "bytes": 3277678
+    },
+    "meditations/assets/scenes/scene-22.png": {
+      "sha256": "faeba0a66bcd4a02e2574612a7b8463bb1fdc1a48ed44b4b45237d9f44864f78",
+      "bytes": 2984088
+    },
+    "meditations/assets/scenes/scene-23.png": {
+      "sha256": "ce6a74ecad63d1c1f8610ca6bb5b0456e1f505f6973965aab78ba74f24818d2f",
+      "bytes": 2851089
+    },
+    "meditations/assets/scenes/scene-24.png": {
+      "sha256": "e308f040fcfd91d846e55626d3ebdbe3f1de995896480b630fd90e3317bc3cd5",
+      "bytes": 3028950
+    },
+    "meditations/assets/scenes/scene-25.png": {
+      "sha256": "609526074dd409792e7f51f8fbfb17ff8dd8d0c51aab9371e1f16359b877235e",
+      "bytes": 3242577
+    },
+    "meditations/assets/scenes/scene-26.png": {
+      "sha256": "a328d65eed1df42b42db2e3b8f934bb051b8b6651da65e236d9e29994dd8d3a8",
+      "bytes": 3409988
+    },
+    "meditations/assets/scenes/scene-27.png": {
+      "sha256": "5dbf84560eb461c760503d145696cf7299483fb4675307a9f5aeea498fac836f",
+      "bytes": 3071922
+    },
+    "meditations/assets/scenes/scene-28.png": {
+      "sha256": "ba6c5cc463300ac25a8be55de16153b8e184439c825359b835457cd0b4dac907",
+      "bytes": 3022483
+    },
+    "meditations/assets/scenes/scene-29.png": {
+      "sha256": "c85ca6c6d08d8de7ed7c88441c8d478a4daa3326b6245da77c24111934f1e822",
+      "bytes": 2967227
+    },
+    "meditations/assets/scenes/scene-30.png": {
+      "sha256": "1055de6790f9a716e6860da57994cf50d1b6bfa50c06f620d4cfa89c90cf1f7e",
+      "bytes": 3281408
+    },
+    "meditations/inputs/caption_style.json": {
+      "sha256": "0306d1942ad772bd2b7dfc1dd218207ab226f79bbfcb9ba5c9d57095319ac173",
+      "bytes": 783
+    },
+    "meditations/inputs/captions.json": {
+      "sha256": "e65684f52eed8d6ea351471d003614dfbec7b7eb56cd932e1a95cd1c9c104b3b",
+      "bytes": 55884
+    },
+    "meditations/inputs/narration.txt": {
+      "sha256": "fb95026a8ece9a4af9c5db1b3a6dc9842e76d70806085d56cf84587c05e53d5c",
+      "bytes": 2241
+    },
+    "meditations/inputs/narration.wav": {
+      "sha256": "b1d9159175210adabf5c44f4000b450ee57ceec26750ffba010428d772aaa8a8",
+      "bytes": 7058444
+    },
+    "meditations/inputs/project-manifest.json": {
+      "sha256": "520ca63f79086a1028f34746a6ba66528792b87028629d496f1c8594be2b825d",
+      "bytes": 17815
     }
+  },
+  "baselines": {
+    "mans-search-for-meaning": "approved immutable golden baseline",
+    "meditations": "approved immutable golden baseline"
   }
 }

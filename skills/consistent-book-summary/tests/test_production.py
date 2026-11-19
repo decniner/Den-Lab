@@ -23,6 +23,7 @@ class ProductionTests(unittest.TestCase):
         png = b"\x89PNG\r\n\x1a\n" + b"\x00\x00\x00\x0dIHDR" + struct.pack(">II", 1080, 1920) + b"\x08\x06\x00\x00\x00"
         (self.root / "cover.png").write_bytes(png)
         self.manifest = {
+            "book_title": "Meditations", "author": "Marcus Aurelius",
             "references": {"video": "Dracula_YouTube_Short_Painterly.mp4", "cover": "Dracula_Hook_Cover.png",
                            "cover_style": "A Room of One’s Own Legacy.png"},
             "approved_duration_seconds": 10,
@@ -34,6 +35,7 @@ class ProductionTests(unittest.TestCase):
                         "review": {"status": "approved", "reviewer": "tester", "premium_illustration": True,
                                    "consistent_character": True, "palette_tones": 3, "no_primitive_vectors": True}},
             "narration": "narration.wav",
+            "narration_script": "narration.txt", "captions": "captions.json",
             "narration_provider": "kokoro",
             "narration_voice": "af_heart",
             "narration_settings": {"lang_code": "a", "speed": 1.0},
@@ -44,6 +46,10 @@ class ProductionTests(unittest.TestCase):
             "render": {"entry_point": "src/index.ts", "hook_composition": "Hook", "full_composition": "Summary",
                        "props": "props.json", "output": "out.mp4", "hook_output": "hook.mp4"},
         }
+        (self.root / "narration.txt").write_text("Meditations by Marcus Aurelius. A book summary in under 3 minutes. Begin.", encoding="utf-8")
+        (self.root / "captions.json").write_text(json.dumps([
+            {"words": [{"text": word} for word in chunk.split()]}
+            for chunk in ("Meditations by Marcus Aurelius.", "A book summary", "in under 3 minutes.", "Begin.")]), encoding="utf-8")
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -67,6 +73,11 @@ class ProductionTests(unittest.TestCase):
         self.manifest["hook_duration_seconds"] = 12
         errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)
         self.assertTrue(any("hook" in e.lower() and "duration" in e.lower() for e in errors))
+
+    def test_rejects_runtime_of_180_seconds_or_more(self):
+        self.manifest["approved_duration_seconds"] = 180
+        errors = production.validate_manifest(self.manifest, self.root, check_imagegen=False)
+        self.assertTrue(any("strictly under 180" in e for e in errors))
 
     def test_still_image_compositor_keeps_audio_captions_and_static_art(self):
         component = (Path(__file__).parents[1] / "components" / "StillImageSequence.tsx").read_text(encoding="utf-8")

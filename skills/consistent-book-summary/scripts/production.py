@@ -9,6 +9,15 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+try:
+    from validate_opening import validate_project
+except ImportError:  # Support importlib-based tests and embedded use.
+    import importlib.util
+    _opening_path = Path(__file__).with_name("validate_opening.py")
+    _opening_spec = importlib.util.spec_from_file_location("consistent_book_summary_opening", _opening_path)
+    _opening_module = importlib.util.module_from_spec(_opening_spec)
+    _opening_spec.loader.exec_module(_opening_module)
+    validate_project = _opening_module.validate_project
 
 
 def resolve_path(root: Path, value: str) -> Path:
@@ -93,6 +102,8 @@ def validate_manifest(data, root: Path, check_imagegen=True, which=shutil.which)
     hook = data.get("hook_duration_seconds")
     if not isinstance(duration, (int, float)) or duration <= 0:
         errors.append("approved_duration_seconds must be positive")
+    elif duration >= 180:
+        errors.append("approved_duration_seconds must be strictly under 180 seconds")
     if not isinstance(hook, (int, float)) or hook <= 0 or (isinstance(duration, (int, float)) and hook >= duration):
         errors.append("Hook duration must be positive and shorter than approved video duration")
     artwork = data.get("artwork", {})
@@ -148,6 +159,7 @@ def validate_manifest(data, root: Path, check_imagegen=True, which=shutil.which)
         errors.append("narration_provider must be kokoro")
     if not isinstance(narration, str) or not resolve_path(root, narration).is_file():
         errors.append(f"Kokoro narration file missing: {narration}")
+    errors.extend(validate_project(data, root))
     voice = data.get("narration_voice")
     settings = data.get("narration_settings", {})
     if not isinstance(voice, str) or not voice.strip():
@@ -215,6 +227,8 @@ def probe_video(path: Path, ffprobe="ffprobe", run=subprocess.run):
     if not audio:
         raise RuntimeError(f"Video has no narration/audio stream: {path}")
     duration = float(metadata.get("format", {}).get("duration", 0))
+    if duration >= 180:
+        raise RuntimeError(f"Book-summary video runtime must be strictly under 180 seconds: {path}")
     return {"duration_seconds": duration, "width": video["width"], "height": video["height"],
             "frame_rate": video["r_frame_rate"], "audio": True}
 
@@ -232,6 +246,8 @@ def render(data, root: Path, ffprobe="ffprobe", run=subprocess.run):
             raise RuntimeError(f"Remotion did not produce output: {dest}")
         meta = probe_video(dest, ffprobe, run=run)
         limit = min(data["approved_duration_seconds"], data["hook_duration_seconds"]) if comp == cfg["hook_composition"] else data["approved_duration_seconds"]
+        if comp == cfg["full_composition"] and meta["duration_seconds"] >= 180:
+            raise RuntimeError("Rendered book summary must remain strictly under 180 seconds")
         if meta["duration_seconds"] > limit + 1 / 30:
             raise RuntimeError(f"Rendered {comp} exceeds its approved duration; hook must replace visual frames inside the existing timeline")
         if comp == cfg["full_composition"] and abs(meta["duration_seconds"] - data["approved_duration_seconds"]) > 1 / 30:

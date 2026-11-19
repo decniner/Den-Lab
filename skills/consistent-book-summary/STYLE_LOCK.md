@@ -1,6 +1,6 @@
 # Dracula series style lock v0.3
 
-Status: **APPROVED PRODUCTION BASELINE LOCKED; DESIGN CALIBRATION PARTIAL**. The filenames and hashes are verified. Do not call this a pixel-exact numeric calibration. The approved Frankl production in `baseline/mans-search-for-meaning/approved/` is the series gold standard and its hashes are maintained in `baseline/SHA256SUMS.json`.
+Status: **APPROVED PRODUCTION BASELINE LOCKED; DESIGN CALIBRATION PARTIAL**. The filenames and hashes are verified. Do not call this a pixel-exact numeric calibration. The approved Frankl and *Meditations* productions in `baseline/mans-search-for-meaning/approved/` and `baseline/meditations/approved/` are the series gold standards, hash-locked in `baseline/SHA256SUMS.json`.
 
 ## Verified reference provenance
 Cover design reference: `A Room of One’s Own Legacy.png`
@@ -31,6 +31,9 @@ Representative inspected frame times: 1, 8, 20, 40, 65, 90 seconds. Dracula refe
 - Use local Kokoro where available; do not infer the exact reference voice from visual frames.
 - Do not substitute a generic photorealistic image style for the expressive storybook characters.
 - Review each scene's emotional tone against its narration; hardship scenes require solemn expressions/body language/environment unless an explicitly justified story contrast is human-approved.
+- Use the user-approved Kokoro female voice `af_heart` with `lang_code: "a"` and speed `1.0` unless the user explicitly approves a new baseline voice. Start narration at frame zero.
+- Every new production starts with `[Book Title] by [Author]. A book summary in under 3 minutes.` and proceeds immediately into the summary. The phrase, punctuation, and caption tokens are enforced by `NARRATION_SPEC.md` and `scripts/validate_opening.py`.
+- Keep complete runtime strictly below 180 seconds.
 
 ## Still unverified
 Exact font family/file and SHA256, font metrics, RGB/HEX palette, title box dimensions, animation curves, narration voice/speed, audio normalization, and exact numerical layout measurements. Caption values are approximate visual estimates from decoded frames (see CAPTION_SPEC.md), not pixel-exact recovered source parameters. The A Room cover reference is 941×1671 and places a large two-line title above a burgundy rule and centered author, with the illustrated scene below.

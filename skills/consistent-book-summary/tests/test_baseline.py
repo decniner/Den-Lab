@@ -75,6 +75,31 @@ class ApprovedBaselineTests(unittest.TestCase):
                 self.assertTrue(review[field].strip(), (scene["image"], field))
             self.assertEqual(review["human_review_status"], "approved")
 
+    def test_meditations_second_golden_master_and_opening_are_locked(self):
+        root = BASELINE / "meditations"
+        for name in ("approved/Meditations_Summary_Full.mp4", "approved/Meditations_Hook_Cover.png",
+                     "approved/Artwork_Contact_Sheet_Part1.png", "approved/Artwork_Contact_Sheet_Part2.png",
+                     "approved/Artwork_Contact_Sheet_Part3.png", "approved/Rendered_Frame_Review.png",
+                     "inputs/narration.txt", "inputs/narration.wav", "inputs/captions.json", "inputs/caption_style.json",
+                     "inputs/project-manifest.json"):
+            self.assertTrue((root / name).is_file(), name)
+        manifest = json.loads((root / "inputs/project-manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["narration_voice"], "af_heart")
+        self.assertLess(manifest["approved_duration_seconds"], 180)
+        self.assertEqual(manifest["timeline"]["narration_start_frame"], 0)
+        text = (root / "inputs/narration.txt").read_text(encoding="utf-8")
+        self.assertTrue(text.startswith("Meditations by Marcus Aurelius. A book summary in under 3 minutes:"))
+        captions = json.loads((root / "inputs/captions.json").read_text(encoding="utf-8"))
+        first = [word["text"] for cue in captions[:3] for word in cue["words"]]
+        self.assertEqual(first, ["Meditations", "by", "Marcus", "Aurelius.", "A", "book", "summary", "in", "under", "3", "minutes:"])
+        self.assertGreater((root / "approved/Meditations_Summary_Full.mp4").stat().st_size, 0)
+        verification = json.loads((root / "approved/verification.json").read_text(encoding="utf-8"))
+        self.assertEqual(verification["master_sha256"], hashlib.sha256((root / "approved/Meditations_Summary_Full.mp4").read_bytes()).hexdigest())
+        self.assertEqual(verification["metadata"]["narration_voice"], "af_heart")
+        self.assertEqual(verification["metadata"]["width:height"], "1080:1920")
+        self.assertEqual(verification["metadata"]["fps"], 30.0)
+        self.assertEqual(verification["metadata"]["duration_seconds"], 147.072)
+
 
 if __name__ == "__main__":
     unittest.main()

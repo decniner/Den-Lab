@@ -1,5 +1,15 @@
 # Reproducible production specification
 
+## Golden production baselines
+
+Two user-approved immutable masters establish this production: Frankl and *Meditations*. Their approved videos, covers, review sheets, artwork, narration, captions, and project inputs are individually SHA-256 locked in `baseline/SHA256SUMS.json`. Run `python scripts/verify_baseline.py` before using them. Never overwrite either approved package. The *Meditations* input manifest pins Kokoro `af_heart`, 1080×1920, 30 fps, narration at frame zero, and 147.067 seconds.
+
+## Narration opening
+
+Every new book starts with the exact spoken and captioned sentence `[Book Title] by [Author]. A book summary in under 3 minutes.` and immediately proceeds into the summary. The shared validator is `scripts/validate_opening.py`; production runs it automatically. Existing approved narration remains unchanged, including the *Meditations* master’s historical colon after `minutes`.
+
+All new project and rendered video durations must be strictly below 180 seconds.
+
 ## Reference lock
 
 The required reference inputs are exactly `Dracula_Hook_Cover.png`, `Dracula_YouTube_Short_Painterly.mp4`, and `A Room of One’s Own Legacy.png`, identified by the hashes in `reference-manifest.example.json`. Keep user-supplied reference files in a project-local `references/` folder; do not commit copyrighted media or private machine paths. Use `A Room of One’s Own Legacy.png` as the hook-cover look and feel: top-positioned large serif title, burgundy divider, author line beneath, warm textured ground, and a premium illustrated scene. Keep the exact Dracula cover as a secondary series reference. Use the short's inspected frames to set still-image art, scene pacing, framing, and caption quality. Do not copy geometric placeholder art from any reference as production artwork.
@@ -22,7 +32,7 @@ The JSON manifest is project-root-relative. This implementation uses the existin
 
 Pin `narration_voice`, `narration_settings.lang_code`, and `narration_settings.speed` in every project manifest. Never assume a global default voice: reproduce the approved project’s recorded voice. Keep the skill’s immutable style/caption rules separate from each book’s story, narration, scene plan, artwork prompts, and project-relative asset paths. Platform render settings belong in the project manifest; the vertical baseline is 1080×1920 at 30 fps.
 
-The approved production reference package lives in `baseline/mans-search-for-meaning/`. Its `approved/` files are immutable golden artifacts. `baseline/SHA256SUMS.json` records hashes for those deliverables and all staged production inputs, scene artwork, and local reference assets. Verify the manifest before use; never write a render to an approved path. The baseline is protection and provenance, not a replacement for fresh-session human artwork review.
+The approved production packages live in `baseline/mans-search-for-meaning/` and `baseline/meditations/`. Their `approved/` files are immutable golden artifacts. `baseline/SHA256SUMS.json` records hashes for both deliverables and all staged production inputs and scene artwork. Verify the manifest before use; never write a render to an approved path. The baselines are protection and provenance, not a replacement for fresh-session human artwork review.
 
 ## Explicit failures
 

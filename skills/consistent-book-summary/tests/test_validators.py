@@ -54,6 +54,16 @@ class ValidatorTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError, "no narration/audio"):
             production.probe_video(Path("render.mp4"), run=run)
 
+    def test_probe_rejects_180_second_runtime(self):
+        payload = {"streams": [
+            {"codec_type": "video", "width": 1080, "height": 1920, "r_frame_rate": "30/1"},
+            {"codec_type": "audio", "codec_name": "aac"}],
+            "format": {"duration": "180.0"}}
+        def run(*args, **kwargs):
+            return subprocess.CompletedProcess(args[0], 0, stdout=json.dumps(payload), stderr="")
+        with self.assertRaisesRegex(RuntimeError, "strictly under 180"):
+            production.probe_video(Path("render.mp4"), run=run)
+
     def test_caption_cues_must_share_one_baseline(self):
         self.assertTrue(any("no caption" in e.lower() for e in caption_validator.validate([])))
         cues = [
