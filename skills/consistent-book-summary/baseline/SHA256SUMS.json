@@ -1,0 +1,495 @@
+{
+  "schema_version": 1,
+  "baseline": "Mans Search for Meaning approved production",
+  "immutable_approved_artifacts": true,
+  "files": {
+    "README.md": {
+      "sha256": "4dbdae0c4177b0a733fc6397c7a82465ccf16d8920c99abd6eaff88799e6e505",
+      "bytes": 2014
+    },
+    "mans-search-for-meaning/approved/Acceptance_Report.md": {
+      "sha256": "bedc01093f67191eb95925befd339da820bf2d7161301a36d7b3d1a4c841df0a",
+      "bytes": 4826
+    },
+    "mans-search-for-meaning/approved/Artwork_Contact_Sheet.png": {
+      "sha256": "b0ab55de6a6ecbc2cb43064d3e1ec3dfc7879f83c2d3b49adae0b6c5b6c902c3",
+      "bytes": 10545183
+    },
+    "mans-search-for-meaning/approved/Artwork_Contact_Sheet_Part1.png": {
+      "sha256": "17570ec3700a2dd4c044f33e271dbe5795f16a15da709084f95a180d03d470ae",
+      "bytes": 3292781
+    },
+    "mans-search-for-meaning/approved/Artwork_Contact_Sheet_Part2.png": {
+      "sha256": "12c764952ab48a7add1e18a5acb9b7c1acb1ab3d1817249926e08426f6507220",
+      "bytes": 3953283
+    },
+    "mans-search-for-meaning/approved/Artwork_Contact_Sheet_Part3.png": {
+      "sha256": "300e1ae1939becd044d8a0a868fb24552e28809f7cf7b4c851d935db22436b94",
+      "bytes": 3298890
+    },
+    "mans-search-for-meaning/approved/Expression_Correction_Contact_Sheet_Part1.png": {
+      "sha256": "524c5a49f9f742ad18bbc6e042d8ff3deeb6faf1bb0134816d34957f9ccb8802",
+      "bytes": 4233434
+    },
+    "mans-search-for-meaning/approved/Expression_Correction_Contact_Sheet_Part2.png": {
+      "sha256": "c2a49d55d431fab6f8585ff72257735e449634f9f49ad17a294964be444b1e53",
+      "bytes": 3136370
+    },
+    "mans-search-for-meaning/approved/Expression_Correction_Contact_Sheet_Part3.png": {
+      "sha256": "30ce372ccaed04075f2a4e93a9de480ad872b8dcde2269cfa497bfda76ecb1ac",
+      "bytes": 2921899
+    },
+    "mans-search-for-meaning/approved/Mans_Search_for_Meaning.mp4": {
+      "sha256": "50119c570eba6ff0099b56f7ec3aeb47e072a5d12e71d4b21b080a37c48efd14",
+      "bytes": 22969866
+    },
+    "mans-search-for-meaning/approved/Mans_Search_for_Meaning_Hook_Cover.png": {
+      "sha256": "0ab755be779b294585cb8ac3f93d5be96caeca5a7a800fdfed21abffdaa08b2c",
+      "bytes": 2957376
+    },
+    "mans-search-for-meaning/approved/Rendered_Frame_Review_Part1.png": {
+      "sha256": "a97abdab09a71ee8e30673df893b2e50fcd781aa7b3cc1a77fa3ceec47f2472d",
+      "bytes": 2441823
+    },
+    "mans-search-for-meaning/approved/Rendered_Frame_Review_Part2.png": {
+      "sha256": "2fe05d4524bbd1a2cdab2f96ca40439c5f8ab3143c1ed11532706e04fa38003a",
+      "bytes": 2281207
+    },
+    "mans-search-for-meaning/approved/Rendered_Frame_Review_Part3.png": {
+      "sha256": "c0c0841e191dcfd4493319d71db0dd9caff7de3b8eacd4aad102bdbc3ec47a9e",
+      "bytes": 1949125
+    },
+    "mans-search-for-meaning/approved/Rendered_Frame_Review_Sheet.png": {
+      "sha256": "58bd0f3a7feff1605d7e0f833e28406940dc65e21e12fbcbb530f0af394b67b5",
+      "bytes": 1539070
+    },
+    "mans-search-for-meaning/approved/verification.json": {
+      "sha256": "5c0fd22cc2e6249ddf5e073659c33383ece90cb3be4474f3d589bbc954fa971c",
+      "bytes": 910
+    },
+    "mans-search-for-meaning/assets/review/scene-03-expression-v2.png": {
+      "sha256": "2ca34ce72a87c7726d746441b216e913e285739f5879e614a0daa822e5e9acb5",
+      "bytes": 2698826
+    },
+    "mans-search-for-meaning/assets/review/scene-04-expression-v2.png": {
+      "sha256": "7da330c3598b22122878b184d26fc14da43207725c8c089e0e89ecc1c7a31e04",
+      "bytes": 2749866
+    },
+    "mans-search-for-meaning/assets/review/scene-05-expression-v2.png": {
+      "sha256": "ba84759e6f7ade7081c03ffe228d494e532965fb575c55c7d94f39a0f1aa6654",
+      "bytes": 2664493
+    },
+    "mans-search-for-meaning/assets/review/scene-06-expression-v2.png": {
+      "sha256": "dcf8a3a38b6ac803866936ab9ee37fecb719091a8ac0ee2a9bd2d5043091a5b8",
+      "bytes": 2842155
+    },
+    "mans-search-for-meaning/assets/review/scene-07-expression-v2.png": {
+      "sha256": "755b429c299be3d5612a26643837a4a7959d79dfa0ffb73b7a7f92e5c6a00ef6",
+      "bytes": 2574971
+    },
+    "mans-search-for-meaning/assets/review/scene-08-expression-v2.png": {
+      "sha256": "2eea5e96cb7c7da2a15dd54e8af8802046796fab95ea2c56c68a1ab20f3626a2",
+      "bytes": 2841835
+    },
+    "mans-search-for-meaning/assets/review/scene-09-expression-v2.png": {
+      "sha256": "9ce31708aae25b0f78c337242042c81cd6a446cd52c7eedaeabb456b9f69df1a",
+      "bytes": 2911424
+    },
+    "mans-search-for-meaning/assets/review/scene-10-expression-v2.png": {
+      "sha256": "7924812e02b5456dbee691972fa86061bb9841166840fe1d27f800851242a318",
+      "bytes": 2160700
+    },
+    "mans-search-for-meaning/assets/review/scene-11-expression-v2.png": {
+      "sha256": "3a7d2599152e620ed302d7cb3bb179cae69900e2ee30b84278f6c8ead10baace",
+      "bytes": 2746598
+    },
+    "mans-search-for-meaning/assets/review/scene-14-expression-v2.png": {
+      "sha256": "b8701f1ad0b17f9c60acb02dfec976821c1b407617203362bfc4812d7cc45053",
+      "bytes": 2548915
+    },
+    "mans-search-for-meaning/assets/review/scene-16-expression-v2.png": {
+      "sha256": "f9d09080d0309120938435e7f8f28089cce3600c877f686061cb8855bafc66b9",
+      "bytes": 2494910
+    },
+    "mans-search-for-meaning/assets/review/scene-19-expression-v2.png": {
+      "sha256": "c407edd452e7630a608de89441cbde85f27f61f3b676c842f7a03c81ecb70826",
+      "bytes": 2903371
+    },
+    "mans-search-for-meaning/assets/review/scene-20-expression-v2.png": {
+      "sha256": "807eed3175e38cb9cd0ad5fd9314ae3aa001469af0c167d8a55fa669eecd81f6",
+      "bytes": 2820119
+    },
+    "mans-search-for-meaning/assets/review/scene-21-expression-v2.png": {
+      "sha256": "4e90e4d724af7718e03f761e7c2193c895ee91f2ad04ffe30376bb12c6b2ffa6",
+      "bytes": 2509106
+    },
+    "mans-search-for-meaning/assets/scenes/scene-01.png": {
+      "sha256": "5256250673a3d6a23cefd4fcde46d46b58f145df4745dc38d39a89a2c6b1cb1a",
+      "bytes": 3061914
+    },
+    "mans-search-for-meaning/assets/scenes/scene-02.png": {
+      "sha256": "08710c5276ec4be85e5e05d9d0cfbdde12b1b04af9967c5248e99158bfa9d473",
+      "bytes": 3034386
+    },
+    "mans-search-for-meaning/assets/scenes/scene-03.png": {
+      "sha256": "2ca34ce72a87c7726d746441b216e913e285739f5879e614a0daa822e5e9acb5",
+      "bytes": 2698826
+    },
+    "mans-search-for-meaning/assets/scenes/scene-04.png": {
+      "sha256": "7da330c3598b22122878b184d26fc14da43207725c8c089e0e89ecc1c7a31e04",
+      "bytes": 2749866
+    },
+    "mans-search-for-meaning/assets/scenes/scene-05.png": {
+      "sha256": "ba84759e6f7ade7081c03ffe228d494e532965fb575c55c7d94f39a0f1aa6654",
+      "bytes": 2664493
+    },
+    "mans-search-for-meaning/assets/scenes/scene-06.png": {
+      "sha256": "dcf8a3a38b6ac803866936ab9ee37fecb719091a8ac0ee2a9bd2d5043091a5b8",
+      "bytes": 2842155
+    },
+    "mans-search-for-meaning/assets/scenes/scene-07.png": {
+      "sha256": "755b429c299be3d5612a26643837a4a7959d79dfa0ffb73b7a7f92e5c6a00ef6",
+      "bytes": 2574971
+    },
+    "mans-search-for-meaning/assets/scenes/scene-08.png": {
+      "sha256": "2eea5e96cb7c7da2a15dd54e8af8802046796fab95ea2c56c68a1ab20f3626a2",
+      "bytes": 2841835
+    },
+    "mans-search-for-meaning/assets/scenes/scene-09.png": {
+      "sha256": "9ce31708aae25b0f78c337242042c81cd6a446cd52c7eedaeabb456b9f69df1a",
+      "bytes": 2911424
+    },
+    "mans-search-for-meaning/assets/scenes/scene-10.png": {
+      "sha256": "7924812e02b5456dbee691972fa86061bb9841166840fe1d27f800851242a318",
+      "bytes": 2160700
+    },
+    "mans-search-for-meaning/assets/scenes/scene-11.png": {
+      "sha256": "3a7d2599152e620ed302d7cb3bb179cae69900e2ee30b84278f6c8ead10baace",
+      "bytes": 2746598
+    },
+    "mans-search-for-meaning/assets/scenes/scene-12.png": {
+      "sha256": "f84fcf09c4f884faf1514f2fee4e335cb0f99ae97a59d5d4d6552d0dbcba9bc1",
+      "bytes": 2570181
+    },
+    "mans-search-for-meaning/assets/scenes/scene-13.png": {
+      "sha256": "5869d0b2771cec33bee2c1e1a4df05863ae3676bf64e90b2c76c07ef0a0714ca",
+      "bytes": 3375378
+    },
+    "mans-search-for-meaning/assets/scenes/scene-14.png": {
+      "sha256": "b8701f1ad0b17f9c60acb02dfec976821c1b407617203362bfc4812d7cc45053",
+      "bytes": 2548915
+    },
+    "mans-search-for-meaning/assets/scenes/scene-15.png": {
+      "sha256": "11bb6ec0422ce8cd0610cc5897642cbcfd0b6f1bc96bb5154e58832851d0c961",
+      "bytes": 2746443
+    },
+    "mans-search-for-meaning/assets/scenes/scene-16.png": {
+      "sha256": "f9d09080d0309120938435e7f8f28089cce3600c877f686061cb8855bafc66b9",
+      "bytes": 2494910
+    },
+    "mans-search-for-meaning/assets/scenes/scene-17.png": {
+      "sha256": "7e9d94fa805f0cab449a1abd3909955765a3bfcceb9d3d2bf023db0d10494c97",
+      "bytes": 2427245
+    },
+    "mans-search-for-meaning/assets/scenes/scene-18.png": {
+      "sha256": "4510999ee2803e24c84e128a8ff231ed1ced51b15abd592d151a82d4fe77004d",
+      "bytes": 2467191
+    },
+    "mans-search-for-meaning/assets/scenes/scene-19.png": {
+      "sha256": "c407edd452e7630a608de89441cbde85f27f61f3b676c842f7a03c81ecb70826",
+      "bytes": 2903371
+    },
+    "mans-search-for-meaning/assets/scenes/scene-20.png": {
+      "sha256": "807eed3175e38cb9cd0ad5fd9314ae3aa001469af0c167d8a55fa669eecd81f6",
+      "bytes": 2820119
+    },
+    "mans-search-for-meaning/assets/scenes/scene-21.png": {
+      "sha256": "4e90e4d724af7718e03f761e7c2193c895ee91f2ad04ffe30376bb12c6b2ffa6",
+      "bytes": 2509106
+    },
+    "mans-search-for-meaning/assets/scenes/scene-22.png": {
+      "sha256": "e42c6ffaf390a829870b283c26e7f00a124b5502a493573bc90f8afe2ac2080f",
+      "bytes": 3114213
+    },
+    "mans-search-for-meaning/assets/scenes/scene-23.png": {
+      "sha256": "f670a0ee0dedc070bfd281c083d259b2cb76e8bdaf10d14e30305fdd57eed434",
+      "bytes": 3652156
+    },
+    "mans-search-for-meaning/assets/scenes/scene-24.png": {
+      "sha256": "ab8a12689e539bea4764e9fef700e60b49e2864af95d4888b774095a84654864",
+      "bytes": 3361418
+    },
+    "mans-search-for-meaning/assets/scenes/scene-25.png": {
+      "sha256": "42c2bd582159c7273aefb1ac64dbb86dca7c20a028b88ede6d228560d9773b2a",
+      "bytes": 3226285
+    },
+    "mans-search-for-meaning/assets/scenes/scene-26.png": {
+      "sha256": "7758f6658513839b96feac0bedc34d78c524fe60dad4518d8f14fd641337abcb",
+      "bytes": 2644050
+    },
+    "mans-search-for-meaning/assets/scenes/scene-27.png": {
+      "sha256": "37475212ee7a04c0bf7991ea092a48cb136cd9b34a69b7dea8f6c21545f43f27",
+      "bytes": 3220843
+    },
+    "mans-search-for-meaning/assets/scenes/scene-28.png": {
+      "sha256": "93cb050de4d8e35f46d45eae199c3f1a30cb229f84c4f1b28a365896fbd130c3",
+      "bytes": 2974460
+    },
+    "mans-search-for-meaning/assets/scenes/scene-29.png": {
+      "sha256": "d9b539ce3cada3b27e8099a11ee395fc9c27383be144e67946f47704b558da03",
+      "bytes": 2556535
+    },
+    "mans-search-for-meaning/assets/scenes/scene-30.png": {
+      "sha256": "a9e68b048a82c096f75960b41f52a9e41e9fe2d2248fc17acd305d6eb08b5eff",
+      "bytes": 2591962
+    },
+    "mans-search-for-meaning/assets/scenes/scene-31.png": {
+      "sha256": "342b2a41a1e81a5f0feca6e07048b83ce1fac55fab15a68d03dee18841ace138",
+      "bytes": 2613555
+    },
+    "mans-search-for-meaning/assets/scenes/scene-32.png": {
+      "sha256": "d816eec113dd8f271cc40e9e9721dee235b8a439589b3d0fccf11b44e79eddef",
+      "bytes": 3032951
+    },
+    "mans-search-for-meaning/inputs/Arial-Bold.ttf": {
+      "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0",
+      "bytes": 750984
+    },
+    "mans-search-for-meaning/inputs/caption_style.json": {
+      "sha256": "0306d1942ad772bd2b7dfc1dd218207ab226f79bbfcb9ba5c9d57095319ac173",
+      "bytes": 783
+    },
+    "mans-search-for-meaning/inputs/captions.json": {
+      "sha256": "8b301db6c2d91100d8520223b9d83388a9085f9d1123da3c362c0b04dc576648",
+      "bytes": 59839
+    },
+    "mans-search-for-meaning/inputs/components/Caption.tsx": {
+      "sha256": "d8b5ec859d889dc8680c70ae79dedbd13b7bdd6fcbe2ac72818789d420f67add",
+      "bytes": 1293
+    },
+    "mans-search-for-meaning/inputs/components/StillImageSequence.tsx": {
+      "sha256": "2ccfaef1b69c08c38f5df6e5ed9cf86936e067abd1dba638798d44642b9d8f53",
+      "bytes": 2472
+    },
+    "mans-search-for-meaning/inputs/expression-review-source-inventory.json": {
+      "sha256": "f54bd0f5881fc2d56f533601f9a25efcde8e8bf2c802bfd823686847b8756f39",
+      "bytes": 6271
+    },
+    "mans-search-for-meaning/inputs/hook-cover.png": {
+      "sha256": "0ab755be779b294585cb8ac3f93d5be96caeca5a7a800fdfed21abffdaa08b2c",
+      "bytes": 2957376
+    },
+    "mans-search-for-meaning/inputs/narration.txt": {
+      "sha256": "f39d5678232963163e7952a85349a6f0536ceca7a89ecc0395e11ee227aef635",
+      "bytes": 2359
+    },
+    "mans-search-for-meaning/inputs/narration.wav": {
+      "sha256": "60e0568851aa66a2d89b28efc59c6921e59591b8e1f243150690f8bc26d8338b",
+      "bytes": 6867644
+    },
+    "mans-search-for-meaning/inputs/package-lock.json": {
+      "sha256": "40fc918b73004ba5a754d15b31d3923ba49a9842610b568005170d32226b1724",
+      "bytes": 267323
+    },
+    "mans-search-for-meaning/inputs/package.json": {
+      "sha256": "028fe271d3c77bc5289dbec1829bef045cb3c54289fd585fd5964fc937e54a78",
+      "bytes": 445
+    },
+    "mans-search-for-meaning/inputs/project-manifest.json": {
+      "sha256": "442774e6da41520b082b6755213d958696e4b6799d9883ec3eaae4a5b945f1f5",
+      "bytes": 26163
+    },
+    "mans-search-for-meaning/inputs/public/project-props.json": {
+      "sha256": "901deb78a79153eaa6185e2e5a3db9b66cd7d676fd89edfae35b09ee15354422",
+      "bytes": 53055
+    },
+    "mans-search-for-meaning/inputs/reference-manifest.json": {
+      "sha256": "0cd41fc80c3ad28db4b4bf6c210a14c8e32a47684d6505a3967a97f12b379f51",
+      "bytes": 1028
+    },
+    "mans-search-for-meaning/inputs/source-contact-sheet.png": {
+      "sha256": "b0ab55de6a6ecbc2cb43064d3e1ec3dfc7879f83c2d3b49adae0b6c5b6c902c3",
+      "bytes": 10545183
+    },
+    "mans-search-for-meaning/inputs/src/index.ts": {
+      "sha256": "2e0e358282a1b998a65387c653b97c2bb2eb7aae94cf200fc0b8d919f7be73a6",
+      "bytes": 88
+    },
+    "mans-search-for-meaning/inputs/timing.json": {
+      "sha256": "32f21ff4bae98e50c0830eb459db5f3cb1bda629cc1cc46fb9c0eaae2c019cae",
+      "bytes": 30764
+    },
+    "meditations/approved/Artwork_Contact_Sheet_Part1.png": {
+      "sha256": "d9cb8053c8d5152b05414827a3f5169ea691b2f6a0625206f99dd8780e1911b1",
+      "bytes": 2558332
+    },
+    "meditations/approved/Artwork_Contact_Sheet_Part2.png": {
+      "sha256": "bf280723f22701a9825aaec8acd699c31e4bdc37852283da28c8eeb6b4f5003b",
+      "bytes": 2515063
+    },
+    "meditations/approved/Artwork_Contact_Sheet_Part3.png": {
+      "sha256": "27c2f10df8775387f8e2ab11de2be1472bb61c87e9fb014042a74ff8217a132c",
+      "bytes": 2540789
+    },
+    "meditations/approved/Meditations_Hook_Cover.png": {
+      "sha256": "bf9855be76000977b9f6f44b121acadc2bf4437f09280258a677ce7e14b592ba",
+      "bytes": 3471076
+    },
+    "meditations/approved/Meditations_Summary_Full.mp4": {
+      "sha256": "3985a448a5d60880c9651e437f98af0a092d25d7a4e0640e57fac787a19e67a4",
+      "bytes": 24528658
+    },
+    "meditations/approved/Rendered_Frame_Review.png": {
+      "sha256": "3c61e73f53d7f7c6003dd01826656ccac022c51a173c12e6784a263eef271b1f",
+      "bytes": 2059178
+    },
+    "meditations/approved/verification.json": {
+      "sha256": "fe8b74145af515e07c098d4540d941acc375872df706992eca082e036a28f2cb",
+      "bytes": 490
+    },
+    "meditations/assets/scenes/scene-01.png": {
+      "sha256": "29947eeac9e2f627ced7eeae9f90ed2889951abd60026c8e6ae73c54f77579e6",
+      "bytes": 3278758
+    },
+    "meditations/assets/scenes/scene-02.png": {
+      "sha256": "69038183083a1711964b4f4ef5be2bbcc8fb4eae07fda09334a7edcddd76acb7",
+      "bytes": 3101938
+    },
+    "meditations/assets/scenes/scene-03.png": {
+      "sha256": "12426e0fe8f34f5102cd2b0679c23610c51bff612f6ed81636b05281d7e565eb",
+      "bytes": 1585003
+    },
+    "meditations/assets/scenes/scene-04.png": {
+      "sha256": "231760a5cb2c16f1f506305b6e29c3aab2a1fdb07678bbe6a4f37d29ff5f1ef4",
+      "bytes": 2802001
+    },
+    "meditations/assets/scenes/scene-05.png": {
+      "sha256": "814d9c5b0e06e7c73d205eea03eb31740e7e667ad08a4dcd6ff6f5bd0e626318",
+      "bytes": 3349716
+    },
+    "meditations/assets/scenes/scene-06.png": {
+      "sha256": "34629ec492447b2af8e0bc4a16562ea05dc470d9fe35710e3998670bbf35106d",
+      "bytes": 3082915
+    },
+    "meditations/assets/scenes/scene-07.png": {
+      "sha256": "202cebd97f9ac1935cc4e9e52a239c32135a19b9bed98d76ba888cdcc236f7ca",
+      "bytes": 3073025
+    },
+    "meditations/assets/scenes/scene-08.png": {
+      "sha256": "aaa2de817cc7c464461990c4d3999b5ae7c5c64ccc1d495e7082cefbe753ff9b",
+      "bytes": 3252326
+    },
+    "meditations/assets/scenes/scene-09.png": {
+      "sha256": "6ec12d358c40e10cce534aa7c407536d28b0bc2b069c7d154016cdfaf9c92ff1",
+      "bytes": 3002138
+    },
+    "meditations/assets/scenes/scene-10.png": {
+      "sha256": "a9e8f277438386c98000e5e40a1ffd560f668a46aa7d047bead2a18fd53bcb05",
+      "bytes": 3017289
+    },
+    "meditations/assets/scenes/scene-11.png": {
+      "sha256": "041944e6da319264cbabb9b497f041be8ff651afb9ae38b82c7aa1602aec322a",
+      "bytes": 3132827
+    },
+    "meditations/assets/scenes/scene-12.png": {
+      "sha256": "d6ae62ac5f0bab483ff1deadd89d1cf7ae1650ad5652046e6d0119fdd70d382b",
+      "bytes": 2945673
+    },
+    "meditations/assets/scenes/scene-13.png": {
+      "sha256": "e2dd9075581eb378bdc9d633233c5cb8f8d85b71e2d75d1a4f5d1194c1c16b45",
+      "bytes": 3004034
+    },
+    "meditations/assets/scenes/scene-14.png": {
+      "sha256": "6f60f7a9b730c388581be39cdbd72d6144a22289272c400c2a4159ab777f2a19",
+      "bytes": 2932058
+    },
+    "meditations/assets/scenes/scene-15.png": {
+      "sha256": "67940e7dce82ed04324b7cce48a204f32b7a6cfa61fe61461378a071f338d8ac",
+      "bytes": 2994027
+    },
+    "meditations/assets/scenes/scene-16.png": {
+      "sha256": "506943b5b99c09a051a4933d05006805c9c76e1b157d49b4ca11e0df85a2dca3",
+      "bytes": 3130876
+    },
+    "meditations/assets/scenes/scene-17.png": {
+      "sha256": "3df18e2bff1bb264cd800d5524535e65a906f5b526c6193f4556225e4e04ac2c",
+      "bytes": 3248201
+    },
+    "meditations/assets/scenes/scene-18.png": {
+      "sha256": "ad6f3d5d5993b0ae88dcf132e86cb3fd85bccd0c1dc87f9b0d24afdec34d81ad",
+      "bytes": 3086688
+    },
+    "meditations/assets/scenes/scene-19.png": {
+      "sha256": "6158b6ffa4e883cca0068fba431fe1ac0d7cad83da55988658a0a380760af505",
+      "bytes": 2919161
+    },
+    "meditations/assets/scenes/scene-20.png": {
+      "sha256": "8f3c269b644f7121615a7b71a8cf8cd1cb85d2337592b3168687e3379965d1f3",
+      "bytes": 3177251
+    },
+    "meditations/assets/scenes/scene-21.png": {
+      "sha256": "4556d68f4e928410c0070345605cd88816a4a8cca984f7377df24e8cf4ccdf2f",
+      "bytes": 3277678
+    },
+    "meditations/assets/scenes/scene-22.png": {
+      "sha256": "faeba0a66bcd4a02e2574612a7b8463bb1fdc1a48ed44b4b45237d9f44864f78",
+      "bytes": 2984088
+    },
+    "meditations/assets/scenes/scene-23.png": {
+      "sha256": "ce6a74ecad63d1c1f8610ca6bb5b0456e1f505f6973965aab78ba74f24818d2f",
+      "bytes": 2851089
+    },
+    "meditations/assets/scenes/scene-24.png": {
+      "sha256": "e308f040fcfd91d846e55626d3ebdbe3f1de995896480b630fd90e3317bc3cd5",
+      "bytes": 3028950
+    },
+    "meditations/assets/scenes/scene-25.png": {
+      "sha256": "609526074dd409792e7f51f8fbfb17ff8dd8d0c51aab9371e1f16359b877235e",
+      "bytes": 3242577
+    },
+    "meditations/assets/scenes/scene-26.png": {
+      "sha256": "a328d65eed1df42b42db2e3b8f934bb051b8b6651da65e236d9e29994dd8d3a8",
+      "bytes": 3409988
+    },
+    "meditations/assets/scenes/scene-27.png": {
+      "sha256": "5dbf84560eb461c760503d145696cf7299483fb4675307a9f5aeea498fac836f",
+      "bytes": 3071922
+    },
+    "meditations/assets/scenes/scene-28.png": {
+      "sha256": "ba6c5cc463300ac25a8be55de16153b8e184439c825359b835457cd0b4dac907",
+      "bytes": 3022483
+    },
+    "meditations/assets/scenes/scene-29.png": {
+      "sha256": "c85ca6c6d08d8de7ed7c88441c8d478a4daa3326b6245da77c24111934f1e822",
+      "bytes": 2967227
+    },
+    "meditations/assets/scenes/scene-30.png": {
+      "sha256": "1055de6790f9a716e6860da57994cf50d1b6bfa50c06f620d4cfa89c90cf1f7e",
+      "bytes": 3281408
+    },
+    "meditations/inputs/caption_style.json": {
+      "sha256": "0306d1942ad772bd2b7dfc1dd218207ab226f79bbfcb9ba5c9d57095319ac173",
+      "bytes": 783
+    },
+    "meditations/inputs/captions.json": {
+      "sha256": "e65684f52eed8d6ea351471d003614dfbec7b7eb56cd932e1a95cd1c9c104b3b",
+      "bytes": 55884
+    },
+    "meditations/inputs/narration.txt": {
+      "sha256": "fb95026a8ece9a4af9c5db1b3a6dc9842e76d70806085d56cf84587c05e53d5c",
+      "bytes": 2241
+    },
+    "meditations/inputs/narration.wav": {
+      "sha256": "b1d9159175210adabf5c44f4000b450ee57ceec26750ffba010428d772aaa8a8",
+      "bytes": 7058444
+    },
+    "meditations/inputs/project-manifest.json": {
+      "sha256": "520ca63f79086a1028f34746a6ba66528792b87028629d496f1c8594be2b825d",
+      "bytes": 17815
+    }
+  },
+  "baselines": {
+    "mans-search-for-meaning": "approved immutable golden baseline",
+    "meditations": "approved immutable golden baseline"
+  }
+}

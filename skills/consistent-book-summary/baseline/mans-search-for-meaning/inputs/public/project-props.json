@@ -1,0 +1,2733 @@
+{
+  "narrationSrc": "assets/narration.wav",
+  "hookCoverSrc": "assets/hook-cover.png",
+  "hookFrames": 75,
+  "scenes": [
+    {
+      "src": "assets/scenes/scene-01.png",
+      "startFrame": 0,
+      "endFrame": 134
+    },
+    {
+      "src": "assets/scenes/scene-02.png",
+      "startFrame": 134,
+      "endFrame": 268
+    },
+    {
+      "src": "assets/scenes/scene-03.png",
+      "startFrame": 268,
+      "endFrame": 402
+    },
+    {
+      "src": "assets/scenes/scene-04.png",
+      "startFrame": 402,
+      "endFrame": 537
+    },
+    {
+      "src": "assets/scenes/scene-07.png",
+      "startFrame": 537,
+      "endFrame": 671
+    },
+    {
+      "src": "assets/scenes/scene-08.png",
+      "startFrame": 671,
+      "endFrame": 805
+    },
+    {
+      "src": "assets/scenes/scene-06.png",
+      "startFrame": 805,
+      "endFrame": 939
+    },
+    {
+      "src": "assets/scenes/scene-09.png",
+      "startFrame": 939,
+      "endFrame": 1073
+    },
+    {
+      "src": "assets/scenes/scene-10.png",
+      "startFrame": 1073,
+      "endFrame": 1207
+    },
+    {
+      "src": "assets/scenes/scene-11.png",
+      "startFrame": 1207,
+      "endFrame": 1341
+    },
+    {
+      "src": "assets/scenes/scene-13.png",
+      "startFrame": 1341,
+      "endFrame": 1475
+    },
+    {
+      "src": "assets/scenes/scene-14.png",
+      "startFrame": 1475,
+      "endFrame": 1610
+    },
+    {
+      "src": "assets/scenes/scene-22.png",
+      "startFrame": 1610,
+      "endFrame": 1744
+    },
+    {
+      "src": "assets/scenes/scene-23.png",
+      "startFrame": 1744,
+      "endFrame": 1878
+    },
+    {
+      "src": "assets/scenes/scene-24.png",
+      "startFrame": 1878,
+      "endFrame": 2012
+    },
+    {
+      "src": "assets/scenes/scene-25.png",
+      "startFrame": 2012,
+      "endFrame": 2146
+    },
+    {
+      "src": "assets/scenes/scene-29.png",
+      "startFrame": 2146,
+      "endFrame": 2280
+    },
+    {
+      "src": "assets/scenes/scene-16.png",
+      "startFrame": 2280,
+      "endFrame": 2414
+    },
+    {
+      "src": "assets/scenes/scene-26.png",
+      "startFrame": 2414,
+      "endFrame": 2548
+    },
+    {
+      "src": "assets/scenes/scene-20.png",
+      "startFrame": 2548,
+      "endFrame": 2683
+    },
+    {
+      "src": "assets/scenes/scene-21.png",
+      "startFrame": 2683,
+      "endFrame": 2817
+    },
+    {
+      "src": "assets/scenes/scene-27.png",
+      "startFrame": 2817,
+      "endFrame": 2951
+    },
+    {
+      "src": "assets/scenes/scene-30.png",
+      "startFrame": 2951,
+      "endFrame": 3085
+    },
+    {
+      "src": "assets/scenes/scene-17.png",
+      "startFrame": 3085,
+      "endFrame": 3219
+    },
+    {
+      "src": "assets/scenes/scene-18.png",
+      "startFrame": 3219,
+      "endFrame": 3353
+    },
+    {
+      "src": "assets/scenes/scene-12.png",
+      "startFrame": 3353,
+      "endFrame": 3487
+    },
+    {
+      "src": "assets/scenes/scene-19.png",
+      "startFrame": 3487,
+      "endFrame": 3621
+    },
+    {
+      "src": "assets/scenes/scene-05.png",
+      "startFrame": 3621,
+      "endFrame": 3756
+    },
+    {
+      "src": "assets/scenes/scene-31.png",
+      "startFrame": 3756,
+      "endFrame": 3890
+    },
+    {
+      "src": "assets/scenes/scene-15.png",
+      "startFrame": 3890,
+      "endFrame": 4024
+    },
+    {
+      "src": "assets/scenes/scene-28.png",
+      "startFrame": 4024,
+      "endFrame": 4158
+    },
+    {
+      "src": "assets/scenes/scene-32.png",
+      "startFrame": 4158,
+      "endFrame": 4293
+    }
+  ],
+  "captions": [
+    {
+      "startFrame": 10,
+      "endFrame": 52,
+      "words": [
+        {
+          "text": "Man’s",
+          "startFrame": 10,
+          "endFrame": 21
+        },
+        {
+          "text": "Search",
+          "startFrame": 21,
+          "endFrame": 31
+        },
+        {
+          "text": "for",
+          "startFrame": 31,
+          "endFrame": 34
+        },
+        {
+          "text": "Meaning,",
+          "startFrame": 34,
+          "endFrame": 52
+        }
+      ]
+    },
+    {
+      "startFrame": 55,
+      "endFrame": 76,
+      "words": [
+        {
+          "text": "by",
+          "startFrame": 55,
+          "endFrame": 60
+        },
+        {
+          "text": "Viktor",
+          "startFrame": 60,
+          "endFrame": 71
+        },
+        {
+          "text": "E.",
+          "startFrame": 71,
+          "endFrame": 76
+        }
+      ]
+    },
+    {
+      "startFrame": 76,
+      "endFrame": 97,
+      "words": [
+        {
+          "text": "Frankl,",
+          "startFrame": 76,
+          "endFrame": 97
+        }
+      ]
+    },
+    {
+      "startFrame": 100,
+      "endFrame": 138,
+      "words": [
+        {
+          "text": "begins",
+          "startFrame": 100,
+          "endFrame": 113
+        },
+        {
+          "text": "with",
+          "startFrame": 113,
+          "endFrame": 117
+        },
+        {
+          "text": "a",
+          "startFrame": 117,
+          "endFrame": 118
+        },
+        {
+          "text": "question",
+          "startFrame": 118,
+          "endFrame": 134
+        },
+        {
+          "text": "that",
+          "startFrame": 134,
+          "endFrame": 138
+        }
+      ]
+    },
+    {
+      "startFrame": 138,
+      "endFrame": 176,
+      "words": [
+        {
+          "text": "is",
+          "startFrame": 138,
+          "endFrame": 143
+        },
+        {
+          "text": "difficult",
+          "startFrame": 143,
+          "endFrame": 156
+        },
+        {
+          "text": "to",
+          "startFrame": 156,
+          "endFrame": 160
+        },
+        {
+          "text": "look",
+          "startFrame": 160,
+          "endFrame": 165
+        },
+        {
+          "text": "away",
+          "startFrame": 165,
+          "endFrame": 176
+        }
+      ]
+    },
+    {
+      "startFrame": 176,
+      "endFrame": 231,
+      "words": [
+        {
+          "text": "from:",
+          "startFrame": 176,
+          "endFrame": 197
+        },
+        {
+          "text": "what",
+          "startFrame": 201,
+          "endFrame": 207
+        },
+        {
+          "text": "can",
+          "startFrame": 207,
+          "endFrame": 212
+        },
+        {
+          "text": "remain",
+          "startFrame": 212,
+          "endFrame": 226
+        },
+        {
+          "text": "when",
+          "startFrame": 226,
+          "endFrame": 231
+        }
+      ]
+    },
+    {
+      "startFrame": 231,
+      "endFrame": 291,
+      "words": [
+        {
+          "text": "nearly",
+          "startFrame": 231,
+          "endFrame": 243
+        },
+        {
+          "text": "everything",
+          "startFrame": 243,
+          "endFrame": 258
+        },
+        {
+          "text": "is",
+          "startFrame": 258,
+          "endFrame": 262
+        },
+        {
+          "text": "taken",
+          "startFrame": 262,
+          "endFrame": 272
+        },
+        {
+          "text": "away?",
+          "startFrame": 272,
+          "endFrame": 291
+        }
+      ]
+    },
+    {
+      "startFrame": 306,
+      "endFrame": 327,
+      "words": [
+        {
+          "text": "Before",
+          "startFrame": 306,
+          "endFrame": 315
+        },
+        {
+          "text": "the",
+          "startFrame": 315,
+          "endFrame": 317
+        },
+        {
+          "text": "war,",
+          "startFrame": 317,
+          "endFrame": 327
+        }
+      ]
+    },
+    {
+      "startFrame": 330,
+      "endFrame": 362,
+      "words": [
+        {
+          "text": "Frankl",
+          "startFrame": 330,
+          "endFrame": 341
+        },
+        {
+          "text": "was",
+          "startFrame": 341,
+          "endFrame": 345
+        },
+        {
+          "text": "a",
+          "startFrame": 345,
+          "endFrame": 348
+        },
+        {
+          "text": "Viennese",
+          "startFrame": 348,
+          "endFrame": 362
+        }
+      ]
+    },
+    {
+      "startFrame": 362,
+      "endFrame": 402,
+      "words": [
+        {
+          "text": "psychiatrist",
+          "startFrame": 362,
+          "endFrame": 384
+        },
+        {
+          "text": "developing",
+          "startFrame": 384,
+          "endFrame": 398
+        },
+        {
+          "text": "a",
+          "startFrame": 398,
+          "endFrame": 402
+        }
+      ]
+    },
+    {
+      "startFrame": 402,
+      "endFrame": 449,
+      "words": [
+        {
+          "text": "therapy",
+          "startFrame": 402,
+          "endFrame": 415
+        },
+        {
+          "text": "centered",
+          "startFrame": 415,
+          "endFrame": 423
+        },
+        {
+          "text": "on",
+          "startFrame": 423,
+          "endFrame": 427
+        },
+        {
+          "text": "meaning.",
+          "startFrame": 427,
+          "endFrame": 449
+        }
+      ]
+    },
+    {
+      "startFrame": 453,
+      "endFrame": 491,
+      "words": [
+        {
+          "text": "In",
+          "startFrame": 453,
+          "endFrame": 458
+        },
+        {
+          "text": "1942,",
+          "startFrame": 458,
+          "endFrame": 491
+        }
+      ]
+    },
+    {
+      "startFrame": 495,
+      "endFrame": 524,
+      "words": [
+        {
+          "text": "he",
+          "startFrame": 495,
+          "endFrame": 500
+        },
+        {
+          "text": "and",
+          "startFrame": 500,
+          "endFrame": 504
+        },
+        {
+          "text": "his",
+          "startFrame": 504,
+          "endFrame": 508
+        },
+        {
+          "text": "family",
+          "startFrame": 508,
+          "endFrame": 521
+        },
+        {
+          "text": "were",
+          "startFrame": 521,
+          "endFrame": 524
+        }
+      ]
+    },
+    {
+      "startFrame": 524,
+      "endFrame": 584,
+      "words": [
+        {
+          "text": "deported",
+          "startFrame": 524,
+          "endFrame": 538
+        },
+        {
+          "text": "by",
+          "startFrame": 538,
+          "endFrame": 544
+        },
+        {
+          "text": "Nazi",
+          "startFrame": 544,
+          "endFrame": 555
+        },
+        {
+          "text": "authorities.",
+          "startFrame": 555,
+          "endFrame": 584
+        }
+      ]
+    },
+    {
+      "startFrame": 587,
+      "endFrame": 652,
+      "words": [
+        {
+          "text": "His",
+          "startFrame": 587,
+          "endFrame": 593
+        },
+        {
+          "text": "manuscript",
+          "startFrame": 593,
+          "endFrame": 613
+        },
+        {
+          "text": "was",
+          "startFrame": 613,
+          "endFrame": 618
+        },
+        {
+          "text": "confiscated.",
+          "startFrame": 618,
+          "endFrame": 652
+        }
+      ]
+    },
+    {
+      "startFrame": 656,
+      "endFrame": 699,
+      "words": [
+        {
+          "text": "His",
+          "startFrame": 656,
+          "endFrame": 662
+        },
+        {
+          "text": "family",
+          "startFrame": 662,
+          "endFrame": 674
+        },
+        {
+          "text": "was",
+          "startFrame": 674,
+          "endFrame": 678
+        },
+        {
+          "text": "separated,",
+          "startFrame": 678,
+          "endFrame": 699
+        }
+      ]
+    },
+    {
+      "startFrame": 701,
+      "endFrame": 723,
+      "words": [
+        {
+          "text": "and",
+          "startFrame": 701,
+          "endFrame": 705
+        },
+        {
+          "text": "most",
+          "startFrame": 705,
+          "endFrame": 713
+        },
+        {
+          "text": "of",
+          "startFrame": 713,
+          "endFrame": 715
+        },
+        {
+          "text": "them",
+          "startFrame": 715,
+          "endFrame": 719
+        },
+        {
+          "text": "were",
+          "startFrame": 719,
+          "endFrame": 723
+        }
+      ]
+    },
+    {
+      "startFrame": 723,
+      "endFrame": 748,
+      "words": [
+        {
+          "text": "murdered.",
+          "startFrame": 723,
+          "endFrame": 748
+        }
+      ]
+    },
+    {
+      "startFrame": 754,
+      "endFrame": 808,
+      "words": [
+        {
+          "text": "Frankl",
+          "startFrame": 754,
+          "endFrame": 766
+        },
+        {
+          "text": "survived",
+          "startFrame": 766,
+          "endFrame": 782
+        },
+        {
+          "text": "several",
+          "startFrame": 782,
+          "endFrame": 793
+        },
+        {
+          "text": "camps,",
+          "startFrame": 793,
+          "endFrame": 808
+        }
+      ]
+    },
+    {
+      "startFrame": 810,
+      "endFrame": 845,
+      "words": [
+        {
+          "text": "including",
+          "startFrame": 810,
+          "endFrame": 825
+        },
+        {
+          "text": "Auschwitz",
+          "startFrame": 825,
+          "endFrame": 842
+        },
+        {
+          "text": "and",
+          "startFrame": 842,
+          "endFrame": 845
+        }
+      ]
+    },
+    {
+      "startFrame": 845,
+      "endFrame": 872,
+      "words": [
+        {
+          "text": "Türkheim.",
+          "startFrame": 845,
+          "endFrame": 872
+        }
+      ]
+    },
+    {
+      "startFrame": 875,
+      "endFrame": 900,
+      "words": [
+        {
+          "text": "He",
+          "startFrame": 875,
+          "endFrame": 880
+        },
+        {
+          "text": "writes",
+          "startFrame": 880,
+          "endFrame": 888
+        },
+        {
+          "text": "not",
+          "startFrame": 888,
+          "endFrame": 894
+        },
+        {
+          "text": "as",
+          "startFrame": 894,
+          "endFrame": 897
+        },
+        {
+          "text": "a",
+          "startFrame": 897,
+          "endFrame": 900
+        }
+      ]
+    },
+    {
+      "startFrame": 900,
+      "endFrame": 935,
+      "words": [
+        {
+          "text": "distant",
+          "startFrame": 900,
+          "endFrame": 910
+        },
+        {
+          "text": "historian,",
+          "startFrame": 910,
+          "endFrame": 935
+        }
+      ]
+    },
+    {
+      "startFrame": 938,
+      "endFrame": 974,
+      "words": [
+        {
+          "text": "but",
+          "startFrame": 938,
+          "endFrame": 942
+        },
+        {
+          "text": "as",
+          "startFrame": 942,
+          "endFrame": 945
+        },
+        {
+          "text": "a",
+          "startFrame": 945,
+          "endFrame": 947
+        },
+        {
+          "text": "doctor",
+          "startFrame": 947,
+          "endFrame": 960
+        },
+        {
+          "text": "studying",
+          "startFrame": 960,
+          "endFrame": 974
+        }
+      ]
+    },
+    {
+      "startFrame": 974,
+      "endFrame": 1026,
+      "words": [
+        {
+          "text": "what",
+          "startFrame": 974,
+          "endFrame": 979
+        },
+        {
+          "text": "captivity",
+          "startFrame": 979,
+          "endFrame": 997
+        },
+        {
+          "text": "did",
+          "startFrame": 997,
+          "endFrame": 1005
+        },
+        {
+          "text": "to",
+          "startFrame": 1005,
+          "endFrame": 1009
+        },
+        {
+          "text": "ordinary",
+          "startFrame": 1009,
+          "endFrame": 1026
+        }
+      ]
+    },
+    {
+      "startFrame": 1026,
+      "endFrame": 1071,
+      "words": [
+        {
+          "text": "people—",
+          "startFrame": 1026,
+          "endFrame": 1046
+        },
+        {
+          "text": "and",
+          "startFrame": 1048,
+          "endFrame": 1052
+        },
+        {
+          "text": "what",
+          "startFrame": 1052,
+          "endFrame": 1058
+        },
+        {
+          "text": "might",
+          "startFrame": 1058,
+          "endFrame": 1064
+        },
+        {
+          "text": "help",
+          "startFrame": 1064,
+          "endFrame": 1071
+        }
+      ]
+    },
+    {
+      "startFrame": 1071,
+      "endFrame": 1099,
+      "words": [
+        {
+          "text": "them",
+          "startFrame": 1071,
+          "endFrame": 1076
+        },
+        {
+          "text": "endure.",
+          "startFrame": 1076,
+          "endFrame": 1099
+        }
+      ]
+    },
+    {
+      "startFrame": 1114,
+      "endFrame": 1177,
+      "words": [
+        {
+          "text": "He",
+          "startFrame": 1114,
+          "endFrame": 1117
+        },
+        {
+          "text": "describes",
+          "startFrame": 1117,
+          "endFrame": 1134
+        },
+        {
+          "text": "three",
+          "startFrame": 1134,
+          "endFrame": 1143
+        },
+        {
+          "text": "broad",
+          "startFrame": 1143,
+          "endFrame": 1152
+        },
+        {
+          "text": "phases.",
+          "startFrame": 1152,
+          "endFrame": 1177
+        }
+      ]
+    },
+    {
+      "startFrame": 1180,
+      "endFrame": 1232,
+      "words": [
+        {
+          "text": "First",
+          "startFrame": 1180,
+          "endFrame": 1190
+        },
+        {
+          "text": "came",
+          "startFrame": 1190,
+          "endFrame": 1198
+        },
+        {
+          "text": "shock:",
+          "startFrame": 1198,
+          "endFrame": 1213
+        },
+        {
+          "text": "arrival,",
+          "startFrame": 1216,
+          "endFrame": 1232
+        }
+      ]
+    },
+    {
+      "startFrame": 1233,
+      "endFrame": 1254,
+      "words": [
+        {
+          "text": "uncertainty,",
+          "startFrame": 1233,
+          "endFrame": 1254
+        }
+      ]
+    },
+    {
+      "startFrame": 1256,
+      "endFrame": 1294,
+      "words": [
+        {
+          "text": "and",
+          "startFrame": 1256,
+          "endFrame": 1259
+        },
+        {
+          "text": "the",
+          "startFrame": 1259,
+          "endFrame": 1262
+        },
+        {
+          "text": "mind’s",
+          "startFrame": 1262,
+          "endFrame": 1274
+        },
+        {
+          "text": "desperate",
+          "startFrame": 1274,
+          "endFrame": 1286
+        },
+        {
+          "text": "hope",
+          "startFrame": 1286,
+          "endFrame": 1294
+        }
+      ]
+    },
+    {
+      "startFrame": 1294,
+      "endFrame": 1326,
+      "words": [
+        {
+          "text": "that",
+          "startFrame": 1294,
+          "endFrame": 1298
+        },
+        {
+          "text": "the",
+          "startFrame": 1298,
+          "endFrame": 1300
+        },
+        {
+          "text": "worst",
+          "startFrame": 1300,
+          "endFrame": 1311
+        },
+        {
+          "text": "might",
+          "startFrame": 1311,
+          "endFrame": 1317
+        },
+        {
+          "text": "somehow",
+          "startFrame": 1317,
+          "endFrame": 1326
+        }
+      ]
+    },
+    {
+      "startFrame": 1326,
+      "endFrame": 1354,
+      "words": [
+        {
+          "text": "be",
+          "startFrame": 1326,
+          "endFrame": 1330
+        },
+        {
+          "text": "avoided.",
+          "startFrame": 1330,
+          "endFrame": 1354
+        }
+      ]
+    },
+    {
+      "startFrame": 1359,
+      "endFrame": 1396,
+      "words": [
+        {
+          "text": "Then",
+          "startFrame": 1359,
+          "endFrame": 1366
+        },
+        {
+          "text": "came",
+          "startFrame": 1366,
+          "endFrame": 1372
+        },
+        {
+          "text": "camp",
+          "startFrame": 1372,
+          "endFrame": 1382
+        },
+        {
+          "text": "routine,",
+          "startFrame": 1382,
+          "endFrame": 1396
+        }
+      ]
+    },
+    {
+      "startFrame": 1397,
+      "endFrame": 1433,
+      "words": [
+        {
+          "text": "where",
+          "startFrame": 1397,
+          "endFrame": 1402
+        },
+        {
+          "text": "hunger",
+          "startFrame": 1402,
+          "endFrame": 1414
+        },
+        {
+          "text": "and",
+          "startFrame": 1414,
+          "endFrame": 1418
+        },
+        {
+          "text": "danger",
+          "startFrame": 1418,
+          "endFrame": 1429
+        },
+        {
+          "text": "could",
+          "startFrame": 1429,
+          "endFrame": 1433
+        }
+      ]
+    },
+    {
+      "startFrame": 1433,
+      "endFrame": 1462,
+      "words": [
+        {
+          "text": "numb",
+          "startFrame": 1433,
+          "endFrame": 1440
+        },
+        {
+          "text": "feeling.",
+          "startFrame": 1440,
+          "endFrame": 1462
+        }
+      ]
+    },
+    {
+      "startFrame": 1467,
+      "endFrame": 1503,
+      "words": [
+        {
+          "text": "Prisoners",
+          "startFrame": 1467,
+          "endFrame": 1481
+        },
+        {
+          "text": "tried",
+          "startFrame": 1481,
+          "endFrame": 1489
+        },
+        {
+          "text": "to",
+          "startFrame": 1489,
+          "endFrame": 1491
+        },
+        {
+          "text": "preserve",
+          "startFrame": 1491,
+          "endFrame": 1503
+        }
+      ]
+    },
+    {
+      "startFrame": 1503,
+      "endFrame": 1549,
+      "words": [
+        {
+          "text": "small",
+          "startFrame": 1503,
+          "endFrame": 1512
+        },
+        {
+          "text": "ties",
+          "startFrame": 1512,
+          "endFrame": 1522
+        },
+        {
+          "text": "to",
+          "startFrame": 1522,
+          "endFrame": 1526
+        },
+        {
+          "text": "life:",
+          "startFrame": 1526,
+          "endFrame": 1543
+        },
+        {
+          "text": "a",
+          "startFrame": 1546,
+          "endFrame": 1549
+        }
+      ]
+    },
+    {
+      "startFrame": 1549,
+      "endFrame": 1562,
+      "words": [
+        {
+          "text": "memory,",
+          "startFrame": 1549,
+          "endFrame": 1562
+        }
+      ]
+    },
+    {
+      "startFrame": 1564,
+      "endFrame": 1580,
+      "words": [
+        {
+          "text": "a",
+          "startFrame": 1564,
+          "endFrame": 1567
+        },
+        {
+          "text": "promise,",
+          "startFrame": 1567,
+          "endFrame": 1580
+        }
+      ]
+    },
+    {
+      "startFrame": 1582,
+      "endFrame": 1605,
+      "words": [
+        {
+          "text": "a",
+          "startFrame": 1582,
+          "endFrame": 1584
+        },
+        {
+          "text": "scrap",
+          "startFrame": 1584,
+          "endFrame": 1593
+        },
+        {
+          "text": "of",
+          "startFrame": 1593,
+          "endFrame": 1595
+        },
+        {
+          "text": "work,",
+          "startFrame": 1595,
+          "endFrame": 1605
+        }
+      ]
+    },
+    {
+      "startFrame": 1607,
+      "endFrame": 1642,
+      "words": [
+        {
+          "text": "a",
+          "startFrame": 1607,
+          "endFrame": 1610
+        },
+        {
+          "text": "moment",
+          "startFrame": 1610,
+          "endFrame": 1619
+        },
+        {
+          "text": "of",
+          "startFrame": 1619,
+          "endFrame": 1622
+        },
+        {
+          "text": "beauty.",
+          "startFrame": 1622,
+          "endFrame": 1642
+        }
+      ]
+    },
+    {
+      "startFrame": 1646,
+      "endFrame": 1691,
+      "words": [
+        {
+          "text": "After",
+          "startFrame": 1646,
+          "endFrame": 1655
+        },
+        {
+          "text": "liberation",
+          "startFrame": 1655,
+          "endFrame": 1674
+        },
+        {
+          "text": "came",
+          "startFrame": 1674,
+          "endFrame": 1681
+        },
+        {
+          "text": "another",
+          "startFrame": 1681,
+          "endFrame": 1691
+        }
+      ]
+    },
+    {
+      "startFrame": 1691,
+      "endFrame": 1714,
+      "words": [
+        {
+          "text": "struggle.",
+          "startFrame": 1691,
+          "endFrame": 1714
+        }
+      ]
+    },
+    {
+      "startFrame": 1719,
+      "endFrame": 1767,
+      "words": [
+        {
+          "text": "Freedom",
+          "startFrame": 1719,
+          "endFrame": 1731
+        },
+        {
+          "text": "did",
+          "startFrame": 1731,
+          "endFrame": 1735
+        },
+        {
+          "text": "not",
+          "startFrame": 1735,
+          "endFrame": 1743
+        },
+        {
+          "text": "instantly",
+          "startFrame": 1743,
+          "endFrame": 1757
+        },
+        {
+          "text": "erase",
+          "startFrame": 1757,
+          "endFrame": 1767
+        }
+      ]
+    },
+    {
+      "startFrame": 1767,
+      "endFrame": 1788,
+      "words": [
+        {
+          "text": "trauma.",
+          "startFrame": 1767,
+          "endFrame": 1788
+        }
+      ]
+    },
+    {
+      "startFrame": 1794,
+      "endFrame": 1847,
+      "words": [
+        {
+          "text": "Some",
+          "startFrame": 1794,
+          "endFrame": 1802
+        },
+        {
+          "text": "survivors",
+          "startFrame": 1802,
+          "endFrame": 1820
+        },
+        {
+          "text": "felt",
+          "startFrame": 1820,
+          "endFrame": 1828
+        },
+        {
+          "text": "detached,",
+          "startFrame": 1828,
+          "endFrame": 1847
+        }
+      ]
+    },
+    {
+      "startFrame": 1849,
+      "endFrame": 1860,
+      "words": [
+        {
+          "text": "bitter,",
+          "startFrame": 1849,
+          "endFrame": 1860
+        }
+      ]
+    },
+    {
+      "startFrame": 1862,
+      "endFrame": 1901,
+      "words": [
+        {
+          "text": "or",
+          "startFrame": 1862,
+          "endFrame": 1867
+        },
+        {
+          "text": "lost",
+          "startFrame": 1867,
+          "endFrame": 1881
+        },
+        {
+          "text": "as",
+          "startFrame": 1881,
+          "endFrame": 1884
+        },
+        {
+          "text": "they",
+          "startFrame": 1884,
+          "endFrame": 1888
+        },
+        {
+          "text": "returned",
+          "startFrame": 1888,
+          "endFrame": 1901
+        }
+      ]
+    },
+    {
+      "startFrame": 1901,
+      "endFrame": 1925,
+      "words": [
+        {
+          "text": "to",
+          "startFrame": 1901,
+          "endFrame": 1904
+        },
+        {
+          "text": "a",
+          "startFrame": 1904,
+          "endFrame": 1907
+        },
+        {
+          "text": "world",
+          "startFrame": 1907,
+          "endFrame": 1918
+        },
+        {
+          "text": "that",
+          "startFrame": 1918,
+          "endFrame": 1921
+        },
+        {
+          "text": "had",
+          "startFrame": 1921,
+          "endFrame": 1925
+        }
+      ]
+    },
+    {
+      "startFrame": 1925,
+      "endFrame": 1950,
+      "words": [
+        {
+          "text": "moved",
+          "startFrame": 1925,
+          "endFrame": 1934
+        },
+        {
+          "text": "on.",
+          "startFrame": 1934,
+          "endFrame": 1950
+        }
+      ]
+    },
+    {
+      "startFrame": 1966,
+      "endFrame": 2018,
+      "words": [
+        {
+          "text": "Frankl’s",
+          "startFrame": 1966,
+          "endFrame": 1979
+        },
+        {
+          "text": "central",
+          "startFrame": 1979,
+          "endFrame": 1992
+        },
+        {
+          "text": "idea",
+          "startFrame": 1992,
+          "endFrame": 2007
+        },
+        {
+          "text": "is",
+          "startFrame": 2007,
+          "endFrame": 2012
+        },
+        {
+          "text": "not",
+          "startFrame": 2012,
+          "endFrame": 2018
+        }
+      ]
+    },
+    {
+      "startFrame": 2018,
+      "endFrame": 2062,
+      "words": [
+        {
+          "text": "that",
+          "startFrame": 2018,
+          "endFrame": 2025
+        },
+        {
+          "text": "suffering",
+          "startFrame": 2025,
+          "endFrame": 2038
+        },
+        {
+          "text": "is",
+          "startFrame": 2038,
+          "endFrame": 2043
+        },
+        {
+          "text": "good,",
+          "startFrame": 2043,
+          "endFrame": 2062
+        }
+      ]
+    },
+    {
+      "startFrame": 2066,
+      "endFrame": 2105,
+      "words": [
+        {
+          "text": "or",
+          "startFrame": 2066,
+          "endFrame": 2070
+        },
+        {
+          "text": "that",
+          "startFrame": 2070,
+          "endFrame": 2076
+        },
+        {
+          "text": "attitude",
+          "startFrame": 2076,
+          "endFrame": 2094
+        },
+        {
+          "text": "can",
+          "startFrame": 2094,
+          "endFrame": 2098
+        },
+        {
+          "text": "make",
+          "startFrame": 2098,
+          "endFrame": 2105
+        }
+      ]
+    },
+    {
+      "startFrame": 2105,
+      "endFrame": 2152,
+      "words": [
+        {
+          "text": "cruelty",
+          "startFrame": 2105,
+          "endFrame": 2120
+        },
+        {
+          "text": "acceptable.",
+          "startFrame": 2120,
+          "endFrame": 2152
+        }
+      ]
+    },
+    {
+      "startFrame": 2156,
+      "endFrame": 2187,
+      "words": [
+        {
+          "text": "It",
+          "startFrame": 2156,
+          "endFrame": 2160
+        },
+        {
+          "text": "is",
+          "startFrame": 2160,
+          "endFrame": 2164
+        },
+        {
+          "text": "that",
+          "startFrame": 2164,
+          "endFrame": 2172
+        },
+        {
+          "text": "even",
+          "startFrame": 2172,
+          "endFrame": 2181
+        },
+        {
+          "text": "when",
+          "startFrame": 2181,
+          "endFrame": 2187
+        }
+      ]
+    },
+    {
+      "startFrame": 2187,
+      "endFrame": 2227,
+      "words": [
+        {
+          "text": "circumstances",
+          "startFrame": 2187,
+          "endFrame": 2212
+        },
+        {
+          "text": "cannot",
+          "startFrame": 2212,
+          "endFrame": 2223
+        },
+        {
+          "text": "be",
+          "startFrame": 2223,
+          "endFrame": 2227
+        }
+      ]
+    },
+    {
+      "startFrame": 2227,
+      "endFrame": 2249,
+      "words": [
+        {
+          "text": "changed,",
+          "startFrame": 2227,
+          "endFrame": 2249
+        }
+      ]
+    },
+    {
+      "startFrame": 2253,
+      "endFrame": 2294,
+      "words": [
+        {
+          "text": "a",
+          "startFrame": 2253,
+          "endFrame": 2256
+        },
+        {
+          "text": "person",
+          "startFrame": 2256,
+          "endFrame": 2270
+        },
+        {
+          "text": "may",
+          "startFrame": 2270,
+          "endFrame": 2275
+        },
+        {
+          "text": "still",
+          "startFrame": 2275,
+          "endFrame": 2283
+        },
+        {
+          "text": "choose",
+          "startFrame": 2283,
+          "endFrame": 2294
+        }
+      ]
+    },
+    {
+      "startFrame": 2294,
+      "endFrame": 2331,
+      "words": [
+        {
+          "text": "how",
+          "startFrame": 2294,
+          "endFrame": 2298
+        },
+        {
+          "text": "to",
+          "startFrame": 2298,
+          "endFrame": 2301
+        },
+        {
+          "text": "meet",
+          "startFrame": 2301,
+          "endFrame": 2308
+        },
+        {
+          "text": "them—",
+          "startFrame": 2308,
+          "endFrame": 2325
+        },
+        {
+          "text": "and",
+          "startFrame": 2328,
+          "endFrame": 2331
+        }
+      ]
+    },
+    {
+      "startFrame": 2331,
+      "endFrame": 2370,
+      "words": [
+        {
+          "text": "must",
+          "startFrame": 2331,
+          "endFrame": 2340
+        },
+        {
+          "text": "never",
+          "startFrame": 2340,
+          "endFrame": 2347
+        },
+        {
+          "text": "be",
+          "startFrame": 2347,
+          "endFrame": 2352
+        },
+        {
+          "text": "blamed",
+          "startFrame": 2352,
+          "endFrame": 2366
+        },
+        {
+          "text": "for",
+          "startFrame": 2366,
+          "endFrame": 2370
+        }
+      ]
+    },
+    {
+      "startFrame": 2370,
+      "endFrame": 2419,
+      "words": [
+        {
+          "text": "being",
+          "startFrame": 2370,
+          "endFrame": 2378
+        },
+        {
+          "text": "unable",
+          "startFrame": 2378,
+          "endFrame": 2393
+        },
+        {
+          "text": "to",
+          "startFrame": 2393,
+          "endFrame": 2396
+        },
+        {
+          "text": "do",
+          "startFrame": 2396,
+          "endFrame": 2402
+        },
+        {
+          "text": "so.",
+          "startFrame": 2402,
+          "endFrame": 2419
+        }
+      ]
+    },
+    {
+      "startFrame": 2435,
+      "endFrame": 2471,
+      "words": [
+        {
+          "text": "In",
+          "startFrame": 2435,
+          "endFrame": 2438
+        },
+        {
+          "text": "the",
+          "startFrame": 2438,
+          "endFrame": 2440
+        },
+        {
+          "text": "book’s",
+          "startFrame": 2440,
+          "endFrame": 2448
+        },
+        {
+          "text": "second",
+          "startFrame": 2448,
+          "endFrame": 2457
+        },
+        {
+          "text": "part,",
+          "startFrame": 2457,
+          "endFrame": 2471
+        }
+      ]
+    },
+    {
+      "startFrame": 2475,
+      "endFrame": 2511,
+      "words": [
+        {
+          "text": "Frankl",
+          "startFrame": 2475,
+          "endFrame": 2486
+        },
+        {
+          "text": "calls",
+          "startFrame": 2486,
+          "endFrame": 2494
+        },
+        {
+          "text": "his",
+          "startFrame": 2494,
+          "endFrame": 2498
+        },
+        {
+          "text": "approach",
+          "startFrame": 2498,
+          "endFrame": 2511
+        }
+      ]
+    },
+    {
+      "startFrame": 2511,
+      "endFrame": 2561,
+      "words": [
+        {
+          "text": "logotherapy:",
+          "startFrame": 2511,
+          "endFrame": 2540
+        },
+        {
+          "text": "healing",
+          "startFrame": 2544,
+          "endFrame": 2555
+        },
+        {
+          "text": "through",
+          "startFrame": 2555,
+          "endFrame": 2561
+        }
+      ]
+    },
+    {
+      "startFrame": 2561,
+      "endFrame": 2602,
+      "words": [
+        {
+          "text": "the",
+          "startFrame": 2561,
+          "endFrame": 2565
+        },
+        {
+          "text": "search",
+          "startFrame": 2565,
+          "endFrame": 2575
+        },
+        {
+          "text": "for",
+          "startFrame": 2575,
+          "endFrame": 2578
+        },
+        {
+          "text": "meaning.",
+          "startFrame": 2578,
+          "endFrame": 2602
+        }
+      ]
+    },
+    {
+      "startFrame": 2606,
+      "endFrame": 2642,
+      "words": [
+        {
+          "text": "He",
+          "startFrame": 2606,
+          "endFrame": 2610
+        },
+        {
+          "text": "sees",
+          "startFrame": 2610,
+          "endFrame": 2620
+        },
+        {
+          "text": "meaning",
+          "startFrame": 2620,
+          "endFrame": 2631
+        },
+        {
+          "text": "in",
+          "startFrame": 2631,
+          "endFrame": 2636
+        },
+        {
+          "text": "three",
+          "startFrame": 2636,
+          "endFrame": 2642
+        }
+      ]
+    },
+    {
+      "startFrame": 2642,
+      "endFrame": 2716,
+      "words": [
+        {
+          "text": "places:",
+          "startFrame": 2642,
+          "endFrame": 2664
+        },
+        {
+          "text": "work",
+          "startFrame": 2667,
+          "endFrame": 2679
+        },
+        {
+          "text": "or",
+          "startFrame": 2679,
+          "endFrame": 2684
+        },
+        {
+          "text": "responsibility,",
+          "startFrame": 2684,
+          "endFrame": 2716
+        }
+      ]
+    },
+    {
+      "startFrame": 2721,
+      "endFrame": 2764,
+      "words": [
+        {
+          "text": "love",
+          "startFrame": 2721,
+          "endFrame": 2734
+        },
+        {
+          "text": "and",
+          "startFrame": 2734,
+          "endFrame": 2737
+        },
+        {
+          "text": "encounter,",
+          "startFrame": 2737,
+          "endFrame": 2764
+        }
+      ]
+    },
+    {
+      "startFrame": 2767,
+      "endFrame": 2797,
+      "words": [
+        {
+          "text": "and",
+          "startFrame": 2767,
+          "endFrame": 2770
+        },
+        {
+          "text": "the",
+          "startFrame": 2770,
+          "endFrame": 2773
+        },
+        {
+          "text": "stance",
+          "startFrame": 2773,
+          "endFrame": 2785
+        },
+        {
+          "text": "we",
+          "startFrame": 2785,
+          "endFrame": 2789
+        },
+        {
+          "text": "take",
+          "startFrame": 2789,
+          "endFrame": 2797
+        }
+      ]
+    },
+    {
+      "startFrame": 2797,
+      "endFrame": 2842,
+      "words": [
+        {
+          "text": "toward",
+          "startFrame": 2797,
+          "endFrame": 2807
+        },
+        {
+          "text": "suffering",
+          "startFrame": 2807,
+          "endFrame": 2822
+        },
+        {
+          "text": "that",
+          "startFrame": 2822,
+          "endFrame": 2828
+        },
+        {
+          "text": "cannot",
+          "startFrame": 2828,
+          "endFrame": 2838
+        },
+        {
+          "text": "be",
+          "startFrame": 2838,
+          "endFrame": 2842
+        }
+      ]
+    },
+    {
+      "startFrame": 2842,
+      "endFrame": 2868,
+      "words": [
+        {
+          "text": "avoided.",
+          "startFrame": 2842,
+          "endFrame": 2868
+        }
+      ]
+    },
+    {
+      "startFrame": 2873,
+      "endFrame": 2918,
+      "words": [
+        {
+          "text": "These",
+          "startFrame": 2873,
+          "endFrame": 2883
+        },
+        {
+          "text": "are",
+          "startFrame": 2883,
+          "endFrame": 2886
+        },
+        {
+          "text": "not",
+          "startFrame": 2886,
+          "endFrame": 2894
+        },
+        {
+          "text": "slogans",
+          "startFrame": 2894,
+          "endFrame": 2912
+        },
+        {
+          "text": "that",
+          "startFrame": 2912,
+          "endFrame": 2918
+        }
+      ]
+    },
+    {
+      "startFrame": 2918,
+      "endFrame": 2965,
+      "words": [
+        {
+          "text": "solve",
+          "startFrame": 2918,
+          "endFrame": 2930
+        },
+        {
+          "text": "every",
+          "startFrame": 2930,
+          "endFrame": 2940
+        },
+        {
+          "text": "hardship.",
+          "startFrame": 2940,
+          "endFrame": 2965
+        }
+      ]
+    },
+    {
+      "startFrame": 2968,
+      "endFrame": 3001,
+      "words": [
+        {
+          "text": "They",
+          "startFrame": 2968,
+          "endFrame": 2973
+        },
+        {
+          "text": "are",
+          "startFrame": 2973,
+          "endFrame": 2978
+        },
+        {
+          "text": "ways",
+          "startFrame": 2978,
+          "endFrame": 2986
+        },
+        {
+          "text": "to",
+          "startFrame": 2986,
+          "endFrame": 2990
+        },
+        {
+          "text": "notice",
+          "startFrame": 2990,
+          "endFrame": 3001
+        }
+      ]
+    },
+    {
+      "startFrame": 3001,
+      "endFrame": 3038,
+      "words": [
+        {
+          "text": "what",
+          "startFrame": 3001,
+          "endFrame": 3008
+        },
+        {
+          "text": "life",
+          "startFrame": 3008,
+          "endFrame": 3016
+        },
+        {
+          "text": "is",
+          "startFrame": 3016,
+          "endFrame": 3021
+        },
+        {
+          "text": "asking",
+          "startFrame": 3021,
+          "endFrame": 3034
+        },
+        {
+          "text": "of",
+          "startFrame": 3034,
+          "endFrame": 3038
+        }
+      ]
+    },
+    {
+      "startFrame": 3038,
+      "endFrame": 3086,
+      "words": [
+        {
+          "text": "us",
+          "startFrame": 3038,
+          "endFrame": 3045
+        },
+        {
+          "text": "in",
+          "startFrame": 3045,
+          "endFrame": 3048
+        },
+        {
+          "text": "a",
+          "startFrame": 3048,
+          "endFrame": 3050
+        },
+        {
+          "text": "particular",
+          "startFrame": 3050,
+          "endFrame": 3066
+        },
+        {
+          "text": "moment.",
+          "startFrame": 3066,
+          "endFrame": 3086
+        }
+      ]
+    },
+    {
+      "startFrame": 3101,
+      "endFrame": 3148,
+      "words": [
+        {
+          "text": "A",
+          "startFrame": 3101,
+          "endFrame": 3104
+        },
+        {
+          "text": "task",
+          "startFrame": 3104,
+          "endFrame": 3116
+        },
+        {
+          "text": "unfinished",
+          "startFrame": 3116,
+          "endFrame": 3136
+        },
+        {
+          "text": "can",
+          "startFrame": 3136,
+          "endFrame": 3140
+        },
+        {
+          "text": "call",
+          "startFrame": 3140,
+          "endFrame": 3148
+        }
+      ]
+    },
+    {
+      "startFrame": 3148,
+      "endFrame": 3183,
+      "words": [
+        {
+          "text": "someone",
+          "startFrame": 3148,
+          "endFrame": 3158
+        },
+        {
+          "text": "forward.",
+          "startFrame": 3158,
+          "endFrame": 3183
+        }
+      ]
+    },
+    {
+      "startFrame": 3188,
+      "endFrame": 3239,
+      "words": [
+        {
+          "text": "Love",
+          "startFrame": 3188,
+          "endFrame": 3199
+        },
+        {
+          "text": "can",
+          "startFrame": 3199,
+          "endFrame": 3204
+        },
+        {
+          "text": "keep",
+          "startFrame": 3204,
+          "endFrame": 3212
+        },
+        {
+          "text": "another",
+          "startFrame": 3212,
+          "endFrame": 3225
+        },
+        {
+          "text": "person",
+          "startFrame": 3225,
+          "endFrame": 3239
+        }
+      ]
+    },
+    {
+      "startFrame": 3239,
+      "endFrame": 3269,
+      "words": [
+        {
+          "text": "vividly",
+          "startFrame": 3239,
+          "endFrame": 3252
+        },
+        {
+          "text": "present,",
+          "startFrame": 3252,
+          "endFrame": 3269
+        }
+      ]
+    },
+    {
+      "startFrame": 3272,
+      "endFrame": 3320,
+      "words": [
+        {
+          "text": "even",
+          "startFrame": 3272,
+          "endFrame": 3281
+        },
+        {
+          "text": "across",
+          "startFrame": 3281,
+          "endFrame": 3293
+        },
+        {
+          "text": "distance.",
+          "startFrame": 3293,
+          "endFrame": 3320
+        }
+      ]
+    },
+    {
+      "startFrame": 3323,
+      "endFrame": 3358,
+      "words": [
+        {
+          "text": "And",
+          "startFrame": 3323,
+          "endFrame": 3327
+        },
+        {
+          "text": "when",
+          "startFrame": 3327,
+          "endFrame": 3333
+        },
+        {
+          "text": "pain",
+          "startFrame": 3333,
+          "endFrame": 3344
+        },
+        {
+          "text": "cannot",
+          "startFrame": 3344,
+          "endFrame": 3354
+        },
+        {
+          "text": "be",
+          "startFrame": 3354,
+          "endFrame": 3358
+        }
+      ]
+    },
+    {
+      "startFrame": 3358,
+      "endFrame": 3380,
+      "words": [
+        {
+          "text": "escaped,",
+          "startFrame": 3358,
+          "endFrame": 3380
+        }
+      ]
+    },
+    {
+      "startFrame": 3383,
+      "endFrame": 3425,
+      "words": [
+        {
+          "text": "dignity",
+          "startFrame": 3383,
+          "endFrame": 3398
+        },
+        {
+          "text": "may",
+          "startFrame": 3398,
+          "endFrame": 3403
+        },
+        {
+          "text": "survive",
+          "startFrame": 3403,
+          "endFrame": 3420
+        },
+        {
+          "text": "in",
+          "startFrame": 3420,
+          "endFrame": 3423
+        },
+        {
+          "text": "a",
+          "startFrame": 3423,
+          "endFrame": 3425
+        }
+      ]
+    },
+    {
+      "startFrame": 3425,
+      "endFrame": 3466,
+      "words": [
+        {
+          "text": "choice",
+          "startFrame": 3425,
+          "endFrame": 3434
+        },
+        {
+          "text": "of",
+          "startFrame": 3434,
+          "endFrame": 3436
+        },
+        {
+          "text": "response.",
+          "startFrame": 3436,
+          "endFrame": 3466
+        }
+      ]
+    },
+    {
+      "startFrame": 3472,
+      "endFrame": 3522,
+      "words": [
+        {
+          "text": "Frankl’s",
+          "startFrame": 3472,
+          "endFrame": 3486
+        },
+        {
+          "text": "pages",
+          "startFrame": 3486,
+          "endFrame": 3500
+        },
+        {
+          "text": "return",
+          "startFrame": 3500,
+          "endFrame": 3513
+        },
+        {
+          "text": "to",
+          "startFrame": 3513,
+          "endFrame": 3516
+        },
+        {
+          "text": "these",
+          "startFrame": 3516,
+          "endFrame": 3522
+        }
+      ]
+    },
+    {
+      "startFrame": 3522,
+      "endFrame": 3566,
+      "words": [
+        {
+          "text": "ideas",
+          "startFrame": 3522,
+          "endFrame": 3540
+        },
+        {
+          "text": "through",
+          "startFrame": 3540,
+          "endFrame": 3548
+        },
+        {
+          "text": "small,",
+          "startFrame": 3548,
+          "endFrame": 3566
+        }
+      ]
+    },
+    {
+      "startFrame": 3568,
+      "endFrame": 3626,
+      "words": [
+        {
+          "text": "concrete",
+          "startFrame": 3568,
+          "endFrame": 3584
+        },
+        {
+          "text": "moments—",
+          "startFrame": 3584,
+          "endFrame": 3605
+        },
+        {
+          "text": "not",
+          "startFrame": 3609,
+          "endFrame": 3616
+        },
+        {
+          "text": "easy",
+          "startFrame": 3616,
+          "endFrame": 3626
+        }
+      ]
+    },
+    {
+      "startFrame": 3626,
+      "endFrame": 3649,
+      "words": [
+        {
+          "text": "victories,",
+          "startFrame": 3626,
+          "endFrame": 3649
+        }
+      ]
+    },
+    {
+      "startFrame": 3651,
+      "endFrame": 3714,
+      "words": [
+        {
+          "text": "but",
+          "startFrame": 3651,
+          "endFrame": 3656
+        },
+        {
+          "text": "moments",
+          "startFrame": 3656,
+          "endFrame": 3670
+        },
+        {
+          "text": "that",
+          "startFrame": 3670,
+          "endFrame": 3675
+        },
+        {
+          "text": "resist",
+          "startFrame": 3675,
+          "endFrame": 3688
+        },
+        {
+          "text": "despair.",
+          "startFrame": 3688,
+          "endFrame": 3714
+        }
+      ]
+    },
+    {
+      "startFrame": 3732,
+      "endFrame": 3773,
+      "words": [
+        {
+          "text": "Man’s",
+          "startFrame": 3732,
+          "endFrame": 3743
+        },
+        {
+          "text": "Search",
+          "startFrame": 3743,
+          "endFrame": 3752
+        },
+        {
+          "text": "for",
+          "startFrame": 3752,
+          "endFrame": 3756
+        },
+        {
+          "text": "Meaning",
+          "startFrame": 3756,
+          "endFrame": 3768
+        },
+        {
+          "text": "is",
+          "startFrame": 3768,
+          "endFrame": 3773
+        }
+      ]
+    },
+    {
+      "startFrame": 3773,
+      "endFrame": 3823,
+      "words": [
+        {
+          "text": "both",
+          "startFrame": 3773,
+          "endFrame": 3780
+        },
+        {
+          "text": "a",
+          "startFrame": 3780,
+          "endFrame": 3783
+        },
+        {
+          "text": "witness",
+          "startFrame": 3783,
+          "endFrame": 3796
+        },
+        {
+          "text": "to",
+          "startFrame": 3796,
+          "endFrame": 3800
+        },
+        {
+          "text": "history",
+          "startFrame": 3800,
+          "endFrame": 3823
+        }
+      ]
+    },
+    {
+      "startFrame": 3823,
+      "endFrame": 3859,
+      "words": [
+        {
+          "text": "and",
+          "startFrame": 3823,
+          "endFrame": 3830
+        },
+        {
+          "text": "an",
+          "startFrame": 3830,
+          "endFrame": 3834
+        },
+        {
+          "text": "argument",
+          "startFrame": 3834,
+          "endFrame": 3850
+        },
+        {
+          "text": "about",
+          "startFrame": 3850,
+          "endFrame": 3859
+        }
+      ]
+    },
+    {
+      "startFrame": 3859,
+      "endFrame": 3901,
+      "words": [
+        {
+          "text": "responsibility.",
+          "startFrame": 3859,
+          "endFrame": 3901
+        }
+      ]
+    },
+    {
+      "startFrame": 3904,
+      "endFrame": 3939,
+      "words": [
+        {
+          "text": "It",
+          "startFrame": 3904,
+          "endFrame": 3909
+        },
+        {
+          "text": "does",
+          "startFrame": 3909,
+          "endFrame": 3913
+        },
+        {
+          "text": "not",
+          "startFrame": 3913,
+          "endFrame": 3920
+        },
+        {
+          "text": "promise",
+          "startFrame": 3920,
+          "endFrame": 3934
+        },
+        {
+          "text": "that",
+          "startFrame": 3934,
+          "endFrame": 3939
+        }
+      ]
+    },
+    {
+      "startFrame": 3939,
+      "endFrame": 3992,
+      "words": [
+        {
+          "text": "every",
+          "startFrame": 3939,
+          "endFrame": 3950
+        },
+        {
+          "text": "life",
+          "startFrame": 3950,
+          "endFrame": 3957
+        },
+        {
+          "text": "will",
+          "startFrame": 3957,
+          "endFrame": 3963
+        },
+        {
+          "text": "feel",
+          "startFrame": 3963,
+          "endFrame": 3970
+        },
+        {
+          "text": "meaningful,",
+          "startFrame": 3970,
+          "endFrame": 3992
+        }
+      ]
+    },
+    {
+      "startFrame": 3996,
+      "endFrame": 4057,
+      "words": [
+        {
+          "text": "or",
+          "startFrame": 3996,
+          "endFrame": 4000
+        },
+        {
+          "text": "that",
+          "startFrame": 4000,
+          "endFrame": 4006
+        },
+        {
+          "text": "meaning",
+          "startFrame": 4006,
+          "endFrame": 4017
+        },
+        {
+          "text": "removes",
+          "startFrame": 4017,
+          "endFrame": 4031
+        },
+        {
+          "text": "grief.",
+          "startFrame": 4031,
+          "endFrame": 4057
+        }
+      ]
+    },
+    {
+      "startFrame": 4061,
+      "endFrame": 4084,
+      "words": [
+        {
+          "text": "Instead,",
+          "startFrame": 4061,
+          "endFrame": 4084
+        }
+      ]
+    },
+    {
+      "startFrame": 4087,
+      "endFrame": 4124,
+      "words": [
+        {
+          "text": "Frankl",
+          "startFrame": 4087,
+          "endFrame": 4100
+        },
+        {
+          "text": "turns",
+          "startFrame": 4100,
+          "endFrame": 4109
+        },
+        {
+          "text": "the",
+          "startFrame": 4109,
+          "endFrame": 4112
+        },
+        {
+          "text": "question",
+          "startFrame": 4112,
+          "endFrame": 4124
+        }
+      ]
+    },
+    {
+      "startFrame": 4124,
+      "endFrame": 4187,
+      "words": [
+        {
+          "text": "around:",
+          "startFrame": 4124,
+          "endFrame": 4146
+        },
+        {
+          "text": "rather",
+          "startFrame": 4150,
+          "endFrame": 4160
+        },
+        {
+          "text": "than",
+          "startFrame": 4160,
+          "endFrame": 4164
+        },
+        {
+          "text": "asking",
+          "startFrame": 4164,
+          "endFrame": 4178
+        },
+        {
+          "text": "only",
+          "startFrame": 4178,
+          "endFrame": 4187
+        }
+      ]
+    },
+    {
+      "startFrame": 4187,
+      "endFrame": 4228,
+      "words": [
+        {
+          "text": "what",
+          "startFrame": 4187,
+          "endFrame": 4191
+        },
+        {
+          "text": "we",
+          "startFrame": 4191,
+          "endFrame": 4195
+        },
+        {
+          "text": "expect",
+          "startFrame": 4195,
+          "endFrame": 4207
+        },
+        {
+          "text": "from",
+          "startFrame": 4207,
+          "endFrame": 4212
+        },
+        {
+          "text": "life,",
+          "startFrame": 4212,
+          "endFrame": 4228
+        }
+      ]
+    },
+    {
+      "startFrame": 4232,
+      "endFrame": 4261,
+      "words": [
+        {
+          "text": "what",
+          "startFrame": 4232,
+          "endFrame": 4237
+        },
+        {
+          "text": "answer",
+          "startFrame": 4237,
+          "endFrame": 4249
+        },
+        {
+          "text": "can",
+          "startFrame": 4249,
+          "endFrame": 4252
+        },
+        {
+          "text": "we",
+          "startFrame": 4252,
+          "endFrame": 4256
+        },
+        {
+          "text": "give",
+          "startFrame": 4256,
+          "endFrame": 4261
+        }
+      ]
+    },
+    {
+      "startFrame": 4261,
+      "endFrame": 4284,
+      "words": [
+        {
+          "text": "it",
+          "startFrame": 4261,
+          "endFrame": 4264
+        },
+        {
+          "text": "today?",
+          "startFrame": 4264,
+          "endFrame": 4284
+        }
+      ]
+    }
+  ]
+}

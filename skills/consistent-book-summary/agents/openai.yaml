@@ -1,4 +1,4 @@
 interface:
   display_name: "Consistent Book Summary"
   short_description: "Create matching illustrated book summary Shorts"
-  default_prompt: "Create a book summary video using the established Stickman Storybook style, with distinct story scenes, karaoke captions, and a matching cover. Keep the project usable on macOS and Windows."
+  default_prompt: "Create a book-summary video from premium, consistent AI-generated still illustrations for each narration scene. Match the hook-cover look to A Room of One’s Own Legacy.png, the scene framing and captions to Dracula_YouTube_Short_Painterly.mp4, and use Kokoro narration with synchronized karaoke captions on one fixed baseline. Do not animate characters or require rigs. Keep the project usable on macOS and Windows."

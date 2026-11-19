@@ -1,0 +1,23 @@
+{
+  "path": "/Users/decniner/Documents/Codex/2026-11-19/final-acceptance-test-x20/outputs/Mans_Search_for_Meaning.mp4",
+  "sha256": "50119c570eba6ff0099b56f7ec3aeb47e072a5d12e71d4b21b080a37c48efd14",
+  "metadata": {
+    "codec": "h264",
+    "pix_fmt": "yuv420p",
+    "audio_codec": "aac",
+    "fps": 30.0,
+    "size": [
+      1080,
+      1920
+    ],
+    "duration": 143.104,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "decoded_frames": 4293,
+  "full_decode": "passed",
+  "audio_peak_dbfs": -6.8916,
+  "subjective_playback": "QuickTime session opened the path but displayed a frame inconsistent with direct frame extraction; final-player playback could not be rechecked after Mac locked.",
+  "audio_playback": "AAC stream fully decoded; end-to-end listening not verified",
+  "phonetic_alignment": "cue timings and rendered active-word samples inspected; phonetic alignment not independently verified"
+}
