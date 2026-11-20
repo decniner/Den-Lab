@@ -4,9 +4,9 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 8
+- Total tracked: 9
 - Work in progress: 1
-- New: 0
+- New: 1
 - Closed: 7
 - Timeline gaps: 8
 
@@ -22,6 +22,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-006 — Repeated answer clicks could distort lesson accuracy | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
 | SA-008 — Lesson grammar explanations are too brief and generic | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-009 — Imported progress can inject unsafe settings markup | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -76,6 +77,14 @@ Every published app change must bump the small footer version and its update dat
 - **Resolution:** Locked submitted controls and added explicit retry actions; sentence-builder submissions unlock only when the learner edits the sentence.
 - **Verification:** Browser confirmed listening options disable after a correct answer, the retry control is visible, and no console errors occur.
 - **Fix estimate:** Time not recorded.
+
+### SA-009 — Imported progress can inject unsafe settings markup
+
+- **Status:** New (0%)
+- **Evidence:** Backup import accepts `state.goal` without checking its type or range, and `settings()` interpolates that value directly into an HTML attribute. A crafted JSON backup can supply markup/script text instead of a number. XP also accepts non-finite numeric values such as JSON `1e400`.
+- **Impact:** Importing a crafted backup can inject active markup into the Academy page and corrupt learning statistics.
+- **Why open:** Validate backup data before replacing current progress; add regression tests for unsafe goal values and invalid XP.
+- **Fix estimate:** Not recorded.
 
 ### SA-008 — Lesson grammar explanations are too brief and generic
 
