@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 22
+- Total tracked: 23
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 22
-- Timeline gaps: 22
+- Timeline gaps: 23
 
 ## Issue register
 
@@ -36,6 +36,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-020 — Stroke-order step can carry over to the next character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-022 — Sakura Academy favicon is missing from the built site | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-023 — Vocabulary search placeholder is clipped on mobile | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -368,3 +369,12 @@ Every published app change must bump the small footer version and its update dat
 - **Checks passed:** Online load populated the v1.5.29 service-worker cache and confirmed the page was controlled. With HTTP cache disabled and the network emulated offline, forced reload stayed on the Academy URL and showed the v1.5.29 footer. Offline navigation to Lesson 1 rendered all seven activity tabs and eight vocabulary cards.
 - **Issue covered:** SA-007.
 - **Remaining tracked risk:** None in the current issue register.
+
+
+### SA-023 — Vocabulary search placeholder is clipped on mobile
+
+- **Status:** New (0%)
+- **Evidence:** At a 390px mobile viewport, the Vocabulary tab search input shares a row with the category picker and displays only “Search Japanese or Eng”; the rest of its placeholder is cut off.
+- **Impact:** The search hint looks unfinished and its full instruction is not visible on common phone widths.
+- **Why open:** Use shorter placeholder wording and confirm it fits beside the category picker at mobile width.
+- **Fix estimate:** Small: copy adjustment plus responsive browser check.
