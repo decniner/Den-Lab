@@ -5,9 +5,9 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 22
-- Work in progress: 2
+- Work in progress: 1
 - New: 0
-- Closed: 20
+- Closed: 21
 - Timeline gaps: 22
 
 ## Issue register
@@ -35,7 +35,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-020 — Stroke-order step can carry over to the next character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-022 — Sakura Academy favicon is missing from the built site | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
+| SA-022 — Sakura Academy favicon is missing from the built site | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -349,9 +349,16 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-022 — Sakura Academy favicon is missing from the built site
 
-- **Status:** Work in progress (90%)
-- **Evidence:** The build script now copies `favicon.svg` into the published Academy project. A regression test runs the build in an isolated temporary project and compares the emitted icon byte-for-byte; deployment verification is pending.
-- **Impact:** The browser tab and saved bookmark still lack a Sakura Academy brand icon until the updated build is published.
-- **Implementation:** Added a self-contained SVG icon, app-shell link, offline precache entry, and an explicit build copy step.
-- **Why open:** Verify the hosted favicon returns HTTP 200 after deployment before closure.
-- **Fix estimate:** Small: one build copy step plus regression and deployment checks.
+- **Status:** Closed (100%)
+- **Evidence:** The static build now copies `favicon.svg` into the Academy project. A regression test builds an isolated project and compares the emitted icon byte-for-byte; the published asset returns HTTP 200 with `image/svg+xml`, and the app index links to it.
+- **Impact:** Resolved: Sakura Academy has a branded browser-tab and bookmark icon, and its file is included in the offline shell.
+- **Resolution:** Added the self-contained icon, linked it from the app shell, added it to the service-worker precache, and fixed the build script to copy it into the published project.
+- **Verification:** The build-output regression test, 44 focused tests, content validation, and GitHub Pages deployment pass; the live icon returns HTTP 200.
+- **Fix estimate:** Time not recorded.
+
+
+### Visual polish release · 2026-11-21 · SA-022 closed
+
+- **Checks passed:** Static build integration test confirms `favicon.svg` is emitted into the published project; live asset responds HTTP 200 with SVG content type; index link and service-worker cache versions match v1.5.28.
+- **Issue covered:** SA-022.
+- **Remaining risk:** SA-007 still awaits a real hosted offline refresh/update cycle.
