@@ -97,8 +97,8 @@ test('issue tracker script parses and renders all registered issues', () => {
   const selectors = ['#summary', '#search', '#status', '#rows', '#details'];
   const nodes = Object.fromEntries(selectors.map(selector => [selector, { value: selector === '#status' ? 'all' : '', innerHTML: '', addEventListener() {} }]));
   vm.runInNewContext(script, { document: { querySelector: selector => nodes[selector] } });
-  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">20<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">21<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">1<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">19<\/div>/);
   assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*v1\.5\.9[\s\S]*v1\.5\.17/);
   assert.match(nodes['#rows'].innerHTML, /SA-013/);
@@ -109,6 +109,7 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.match(nodes['#rows'].innerHTML, /SA-018/);
   assert.match(nodes['#rows'].innerHTML, /SA-019[\s\S]*Lesson writing canvas has no target character or stroke guide/);
   assert.match(nodes['#rows'].innerHTML, /SA-020[\s\S]*Stroke-order step can carry over to the next character/);
+  assert.match(nodes['#rows'].innerHTML, /SA-021[\s\S]*Opening a lesson fails on an undefined tab-status helper/);
 
   for (const label of ['Total tracked', 'Work in progress', 'New', 'Closed', 'Timeline gaps']) {
     const sourceValue = progressMarkdown.match(new RegExp(`^- ${label}: (\\d+)$`, 'm'))?.[1];
