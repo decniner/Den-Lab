@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 9
 - Work in progress: 1
-- New: 1
-- Closed: 7
+- New: 0
+- Closed: 8
 - Timeline gaps: 8
 
 ## Issue register
@@ -22,7 +22,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-006 — Repeated answer clicks could distort lesson accuracy | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
 | SA-008 — Lesson grammar explanations are too brief and generic | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-009 — Imported progress can inject unsafe settings markup | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-009 — Imported progress can inject unsafe settings markup | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -80,11 +80,12 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-009 — Imported progress can inject unsafe settings markup
 
-- **Status:** New (0%)
-- **Evidence:** Backup import accepts `state.goal` without checking its type or range, and `settings()` interpolates that value directly into an HTML attribute. A crafted JSON backup can supply markup/script text instead of a number. XP also accepts non-finite numeric values such as JSON `1e400`.
-- **Impact:** Importing a crafted backup can inject active markup into the Academy page and corrupt learning statistics.
-- **Why open:** Validate backup data before replacing current progress; add regression tests for unsafe goal values and invalid XP.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** Backup import now rejects a non-safe or out-of-range goal and any XP value that is not a nonnegative safe integer before asking to replace current progress. Earlier locally stored values are normalized before settings render.
+- **Impact:** Resolved: a crafted backup cannot pass markup as the daily goal, and invalid XP cannot poison progress totals.
+- **Resolution:** Added shared progress-settings validation and startup sanitization; wired the checks into backup import and added regression coverage.
+- **Verification:** 20 content, offline-shell, and backup-validation tests pass. Tests cover markup-like goals, goal bounds, unsafe XP, and stored-progress sanitization.
+- **Fix estimate:** Time not recorded.
 
 ### SA-008 — Lesson grammar explanations are too brief and generic
 
@@ -136,3 +137,10 @@ Every published app change must bump the small footer version and its update dat
 - **Scope:** Reviewed all 95 usage notes; corrected five misleading or overbroad formulations.
 - **Checks passed:** 11 content-quality tests; focused offline-shell checks and version/cache consistency are run for this release.
 - **Remaining risks:** SA-007 still needs a real hosted offline-refresh/update cycle; broader device/browser coverage remains limited.
+
+
+### Security/reliability batch · 2026-11-21 · backup import issue closed
+
+- **Issue covered:** SA-009.
+- **Checks passed:** 20 focused tests; app and validator syntax checks; static project build. The Pages workflow now runs the backup-validation tests.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader device/browser coverage remains limited.

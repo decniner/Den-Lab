@@ -37,6 +37,23 @@
     return errors;
   }
 
-  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent };
-  else root.validateCourseContent = validateCourseContent;
+  function validateProgressBackupSettings(state) {
+    const errors = [];
+    if (!state || typeof state !== 'object' || Array.isArray(state)) return ['Invalid state'];
+    if (!Number.isSafeInteger(state.xp) || state.xp < 0) errors.push('Invalid XP value');
+    if (state.goal !== undefined && (!Number.isSafeInteger(state.goal) || state.goal < 1 || state.goal > 200)) {
+      errors.push('Invalid daily goal');
+    }
+    return errors;
+  }
+
+  function sanitizeStoredProgressSettings(state, defaults = { goal: 15, xp: 0 }) {
+    const errors = validateProgressBackupSettings(state);
+    if (errors.includes('Invalid XP value')) state.xp = defaults.xp;
+    if (errors.includes('Invalid daily goal')) state.goal = defaults.goal;
+    return state;
+  }
+
+  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings };
+  else Object.assign(root, { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings });
 })(typeof globalThis === 'undefined' ? this : globalThis);
