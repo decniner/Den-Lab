@@ -1,14 +1,14 @@
 # Sakura Academy issue tracker
 
-Every published app change must bump the small footer version and its update date. This page is the source of truth for the Sakura Academy reliability audit. Counts and statuses on `issue-tracker.html` mirror this register. Progress is updated in 10% steps; New is 0%, Closed is 100%. Discovery times are marked `Not recorded` when they were not captured at discovery. Fix duration is recorded only after resolution.
+Every published app change must bump the small footer version and its update date, and keep the service-worker cache version in sync. This page is the source of truth for the Sakura Academy reliability audit. Counts and statuses on `issue-tracker.html` mirror this register. Progress is updated in 10% steps; New is 0%, Closed is 100%. Discovery times are marked `Not recorded` when they were not captured at discovery. Fix duration is recorded only after resolution.
 
 ## Summary
 
-- Total tracked: 6
-- Work in progress: 1
+- Total tracked: 7
+- Work in progress: 2
 - New: 0
 - Closed: 5
-- Timeline gaps: 6
+- Timeline gaps: 7
 
 ## Issue register
 
@@ -20,6 +20,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-004 — Vocabulary cards lack practical usage and context guidance | Codex | Work in progress | 80% | 2026-11-20 | Not recorded |
 | SA-005 — Repeatable study actions could award XP repeatedly | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-006 — Repeated answer clicks could distort lesson accuracy | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 80% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -73,6 +74,16 @@ Every published app change must bump the small footer version and its update dat
 - **Resolution:** Locked submitted controls and added explicit retry actions; sentence-builder submissions unlock only when the learner edits the sentence.
 - **Verification:** Browser confirmed listening options disable after a correct answer, the retry control is visible, and no console errors occur.
 - **Fix estimate:** Time not recorded.
+
+### SA-007 — Hosted app shell is not cached for offline use
+
+- **Status:** Work in progress (80%)
+- **Evidence:** The Sakura Academy route advertised “OFFLINE FIRST,” but had no service-worker registration or cache; only browser storage was local. Opening or refreshing the hosted app with no network was not guaranteed to load its HTML, styles, or scripts.
+- **Impact:** Learners may lose access to lessons when offline even though their saved progress remains on the device.
+- **Implementation:** Added an Academy-route service worker, precached the app and tracker shell, provided network-first navigation with offline app fallback, and tied cache version to the visible app version.
+- **Verification:** All 10 content/offline-shell tests pass; service-worker syntax checks; generated project contains every precached runtime asset. A local CUA browser check was unavailable because its browser could not reach the local preview, so hosted registration and offline refresh still need confirmation.
+- **Why open:** Confirm the published service worker installs at the GitHub Pages route and test a real offline refresh/update cycle.
+- **Fix estimate:** Not recorded.
 
 ## Evidence reports
 
