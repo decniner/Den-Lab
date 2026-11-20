@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 10
 - Work in progress: 1
-- New: 1
-- Closed: 8
+- New: 0
+- Closed: 9
 - Timeline gaps: 8
 
 ## Issue register
@@ -23,7 +23,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
 | SA-008 — Lesson grammar explanations are too brief and generic | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-009 — Imported progress can inject unsafe settings markup | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-010 — Imported assessment flag can bypass strict-mode checklist | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-010 — Imported assessment flag can bypass strict-mode checklist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -81,11 +81,12 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-010 — Imported assessment flag can bypass strict-mode checklist
 
-- **Status:** New (0%)
-- **Evidence:** `strictChecklist()` treats any truthy `state.assessments[id].passed` as a completed assessment. Backup import checks only that `assessments` is an object, so `{ "1": { "passed": true } }` can satisfy this strict-mode item without five recorded answers.
-- **Impact:** Strict mode can unlock a lesson whose required mixed-skills assessment has no valid passing result.
-- **Why open:** Require a complete, well-formed five-answer result set with at least four correct before strict mode considers the assessment passed; add a regression test.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** Strict mode now accepts an assessment only when all five skill types are present, two valid lesson vocabulary items are recorded, five boolean results exist, at least four are correct, and the pass flag is true.
+- **Impact:** Resolved: an incomplete or malformed imported assessment cannot satisfy the strict-mode assessment requirement.
+- **Resolution:** Added a shared passing-assessment validator and used it in the strict checklist.
+- **Verification:** Regression tests reject a lone `passed: true` flag, incomplete results, a failing score, invalid type distribution, and unknown vocabulary IDs; a valid 4/5 mixed-skills run passes.
+- **Fix estimate:** Time not recorded.
 
 ### SA-009 — Imported progress can inject unsafe settings markup
 
@@ -152,4 +153,11 @@ Every published app change must bump the small footer version and its update dat
 
 - **Issue covered:** SA-009.
 - **Checks passed:** 20 focused tests; app and validator syntax checks; static project build. The Pages workflow now runs the backup-validation tests.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader device/browser coverage remains limited.
+
+
+### Strict assessment batch · 2026-11-21 · imported assessment issue closed
+
+- **Issue covered:** SA-010.
+- **Checks passed:** 21 focused content, offline-shell, and progress-validation tests; syntax checks; static build.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader device/browser coverage remains limited.

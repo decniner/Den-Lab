@@ -54,6 +54,18 @@
     return state;
   }
 
-  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings };
-  else Object.assign(root, { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings });
+  function isValidPassingAssessment(run, requiredTypes, allowedWordIds) {
+    if (!run || run.passed !== true) return false;
+    const types = run.questionTypes;
+    const words = run.wordIds;
+    const results = run.results;
+    return Array.isArray(types) && types.length === requiredTypes.length &&
+      new Set(types).size === requiredTypes.length && types.every(type => requiredTypes.includes(type)) &&
+      Array.isArray(words) && words.length === 2 && new Set(words).size === 2 && words.every(id => allowedWordIds.includes(id)) &&
+      Array.isArray(results) && results.length === 5 && results.every(result => typeof result === 'boolean') &&
+      results.filter(Boolean).length >= 4;
+  }
+
+  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, isValidPassingAssessment };
+  else Object.assign(root, { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, isValidPassingAssessment });
 })(typeof globalThis === 'undefined' ? this : globalThis);

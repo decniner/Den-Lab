@@ -33,3 +33,18 @@ test('unsafe settings from older local progress are reset before rendering', () 
   assert.equal(state.goal, 15);
   assert.match(appSource, /sanitizeStoredProgressSettings\(state\)/);
 });
+
+const { isValidPassingAssessment } = require('../src/content-validation.js');
+
+test('strict-mode assessment requires a valid mixed-skills run with five recorded answers', () => {
+  const types = ['vocabulary', 'grammar', 'dialogue', 'listening', 'writing'];
+  const wordIds = ['1-0', '1-1', '1-2'];
+  const validRun = { questionTypes: [...types], wordIds: ['1-0', '1-1'], results: [true, true, true, true, false], passed: true };
+  assert.equal(isValidPassingAssessment(validRun, types, wordIds), true);
+  assert.equal(isValidPassingAssessment({ passed: true }, types, wordIds), false);
+  assert.equal(isValidPassingAssessment({ ...validRun, results: [true, true, true, true] }, types, wordIds), false);
+  assert.equal(isValidPassingAssessment({ ...validRun, results: [true, true, true, false, false], passed: true }, types, wordIds), false);
+  assert.equal(isValidPassingAssessment({ ...validRun, questionTypes: ['vocabulary'] }, types, wordIds), false);
+  assert.equal(isValidPassingAssessment({ ...validRun, wordIds: ['unknown', '1-1'] }, types, wordIds), false);
+  assert.match(appSource, /isValidPassingAssessment\(state\.assessments\[id\],ASSESSMENT_TYPES,l\.vocab\.map/);
+});

@@ -118,7 +118,7 @@ function strictChecklist(id){let l=LESSONS[id-1];if(!l)return[];let correct=stat
  {label:'Conversation response correct',done:legacy||correct.some(a=>a.format==='dialogue')},
  {label:'Listening answer correct',done:legacy||correct.some(a=>a.format==='listening')},
  {label:'Writing answer typed correctly',done:legacy||correct.some(a=>a.format==='typing')},
- {label:'Assessment passed (4/5)',done:legacy||!!state.assessments[id]?.passed}
+ {label:'Assessment passed (4/5)',done:legacy||isValidPassingAssessment(state.assessments[id],ASSESSMENT_TYPES,l.vocab.map(w=>w.id))}
 ]}
 function strictLessonComplete(id){return strictChecklist(id).every(x=>x.done)}
 function strictUnlockedLesson(){for(let i=1;i<=LESSONS.length;i++)if(!strictLessonComplete(i))return i;return LESSONS.length+1}
