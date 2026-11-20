@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 16
+- Total tracked: 17
 - Work in progress: 1
 - New: 0
-- Closed: 15
-- Timeline gaps: 16
+- Closed: 16
+- Timeline gaps: 17
 
 ## Issue register
 
@@ -30,6 +30,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-014 — Lesson tabs can inherit unrelated completion evidence | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-015 — Progress summary timeline-gap count disagrees with tracker | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-016 — Imported practice flags can distort progress and reward state | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-017 — Lesson completion can bypass strict-mode skill checkpoints | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -65,6 +66,15 @@ Every published app change must bump the small footer version and its update dat
 - **Impact:** Resolved: malformed backup values cannot fabricate practice progress or suppress legitimate XP rewards.
 - **Resolution:** Added practice-map validation and startup/import sanitization, and replaced key counts with known-true flag counts.
 - **Verification:** Tests cover import rejection, cleanup of malformed local flags, valid flag preservation, and exclusion of false, non-boolean, and unknown keys from progress totals. The full focused Academy suite passes.
+- **Fix estimate:** Time not recorded.
+
+### SA-017 — Lesson completion can bypass strict-mode skill checkpoints
+
+- **Status:** Closed (100%)
+- **Evidence:** The strict milestone evaluator now requires its own evidence for vocabulary, grammar, conversation, listening, writing, and assessment. A lesson-level completion flag no longer satisfies any skill item.
+- **Impact:** Resolved: completing a lesson outside strict mode cannot unlock the next lesson's strict checklist.
+- **Resolution:** Removed the lesson-wide shortcut from strict milestone evaluation; all Next gating still depends on every checklist item passing individually.
+- **Verification:** Regression coverage confirms a completed lesson with no skill evidence leaves all six milestones incomplete. All 38 focused Academy tests pass.
 - **Fix estimate:** Time not recorded.
 
 ### SA-001 — Speaker B replies were identical across lessons
@@ -255,4 +265,11 @@ Every published app change must bump the small footer version and its update dat
 
 - **Issue covered:** SA-016.
 - **Checks passed:** Full focused Academy test suite, JavaScript syntax checks, and standalone build.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
+
+
+### Strict-mode milestone integrity · 2026-11-21 · one issue closed
+
+- **Issue covered:** SA-017.
+- **Checks passed:** All six milestone predicates reject lesson-wide completion without their own evidence; 38 focused tests, syntax checks, and standalone build pass.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.

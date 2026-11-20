@@ -129,7 +129,6 @@
 
   function strictMilestoneDone(state, lesson, milestone, assessmentTypes = []) {
     if (!state || !lesson) return false;
-    if (state.completed?.[lesson.id] === true) return true;
     if (milestone === 'vocabulary') {
       return lesson.vocab.length > 0 && lesson.vocab.every(word => state.learned?.[word.id] === true);
     }

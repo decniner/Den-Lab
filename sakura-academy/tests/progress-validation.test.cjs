@@ -92,7 +92,9 @@ test('strict checklist milestone logic accepts only boolean completion evidence'
   assert.equal(strictMilestoneDone(state, lesson, 'conversation'), false);
   assert.equal(strictMilestoneDone(state, lesson, 'grammar'), false);
   state.completed[1] = true;
-  assert.equal(strictMilestoneDone(state, lesson, 'assessment'), true);
+  for (const milestone of ['vocabulary', 'grammar', 'conversation', 'listening', 'writing', 'assessment']) {
+    assert.equal(strictMilestoneDone(state, lesson, milestone), false, `lesson completion cannot waive ${milestone}`);
+  }
 });
 
 test('practice and reward imports reject truthy non-boolean flags', () => {
