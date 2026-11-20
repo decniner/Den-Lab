@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'genki-interactive-academy.html'
       - '02-my-profile/**'
       - '03-ai-agent-explorer/**'
       - '04-career-guidance/**'
@@ -55,6 +56,7 @@ jobs:
           mkdir -p _site/siphdev
           mkdir -p _site/Tadaima
           mkdir -p _site/tiny-llm-from-scratch
+          cp genki-interactive-academy.html _site/
           cp -R 03-ai-agent-explorer/. _site/
           cp -R 03-ai-agent-explorer/. _site/03-ai-agent-explorer/
           cp -R 02-my-profile/. _site/02-my-profile/
