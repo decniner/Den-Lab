@@ -20,7 +20,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-004 — Vocabulary cards lack practical usage and context guidance | Codex | Closed | 100% | 2026-11-20 | Not recorded |
 | SA-005 — Repeatable study actions could award XP repeatedly | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-006 — Repeated answer clicks could distort lesson accuracy | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 80% | 2026-11-21 | Not recorded |
+| SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
 | SA-008 — Lesson grammar explanations are too brief and generic | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
@@ -88,12 +88,12 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-007 — Hosted app shell is not cached for offline use
 
-- **Status:** Work in progress (80%)
-- **Evidence:** The Sakura Academy route advertised “OFFLINE FIRST,” but had no service-worker registration or cache; only browser storage was local. Opening or refreshing the hosted app with no network was not guaranteed to load its HTML, styles, or scripts.
-- **Impact:** Learners may lose access to lessons when offline even though their saved progress remains on the device.
+- **Status:** Work in progress (90%)
+- **Evidence:** The Academy service worker precaches the app/tracker, uses network-first navigation with an offline app fallback, and versions its cache with the footer. The hosted app loads in the browser; GitHub Pages serves the worker with JavaScript content type and all 13 precached URLs return HTTP 200. Automated tests cover precaching, offline navigation fallback, route registration, and cache version alignment.
+- **Impact:** Without a proven offline refresh cycle, learners could still lose access to lessons when disconnected.
 - **Implementation:** Added an Academy-route service worker, precached the app and tracker shell, provided network-first navigation with offline app fallback, and tied cache version to the visible app version.
-- **Verification:** All 10 content/offline-shell tests pass; service-worker syntax checks; generated project contains every precached runtime asset. A local CUA browser check was unavailable because its browser could not reach the local preview, so hosted registration and offline refresh still need confirmation.
-- **Why open:** Confirm the published service worker installs at the GitHub Pages route and test a real offline refresh/update cycle.
+- **Verification:** 16 content/offline-shell tests pass; service-worker syntax and hosted asset checks pass. Browser controls available in this session block access to internal offline/network controls, so an actual offline refresh/update cycle has not been observed.
+- **Why open:** Run the remaining real offline refresh/update cycle in a browser with network controls.
 - **Fix estimate:** Not recorded.
 
 ## Evidence reports
