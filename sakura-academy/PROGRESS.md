@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 23
+- Total tracked: 24
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 23
-- Timeline gaps: 23
+- Timeline gaps: 24
 
 ## Issue register
 
@@ -37,6 +37,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-022 — Sakura Academy favicon is missing from the built site | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-023 — Vocabulary search placeholder is clipped on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-024 — Learners cannot adjust interface text size | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -386,3 +387,12 @@ Every published app change must bump the small footer version and its update dat
 - **Checks passed:** At 390 × 844, “Search words” measured about 93px within 139px available; the category selector remained visible, the lesson retained seven tabs, and document width matched the viewport.
 - **Issue covered:** SA-023.
 - **Remaining tracked risk:** None in the current issue register.
+
+### SA-024 — Learners cannot adjust interface text size
+
+- **Status:** New (0%)
+- **Evidence:** Settings has no text-size control; learners cannot enlarge instructional text to suit their reading needs.
+- **Impact:** A fixed text size can make extended lessons harder to read, especially on phones.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Small.
