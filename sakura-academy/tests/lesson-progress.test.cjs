@@ -58,13 +58,25 @@ test('grammar review progress drops unknown lessons, invalid indexes, and duplic
 
 test('assessment tab distinguishes passing, active, failed, and forged pass records', () => {
   const state = emptyState();
+  state.learned = { '1-1': true, '1-2': true };
   const pass = { questionTypes: [...types], wordIds: ['1-1', '1-2'], results: [true, true, true, true, false], passed: true };
-  state.assessments[1] = { ...pass, results: [true] };
+  state.assessments[1] = { ...pass, results: [true], passed: false };
   assert.equal(lessonTabStatus('quiz', lesson, state, types), 'in-progress');
   state.assessments[1] = pass;
+  state.learned = { '1-1': true, '1-2': true };
   assert.equal(lessonTabStatus('quiz', lesson, state, types), 'complete');
   state.assessments[1] = { ...pass, results: [true, true, false, false, false], passed: false };
   assert.equal(lessonTabStatus('quiz', lesson, state, types), 'needs-review');
   state.assessments[1] = { passed: true };
   assert.notEqual(lessonTabStatus('quiz', lesson, state, types), 'complete');
+});
+
+test('assessment progress ignores stored results for words that are no longer studied', () => {
+  const state = emptyState();
+  state.assessments[1] = { questionTypes: [...types], wordIds: ['1-1', '1-2'], results: [true], passed: false };
+  assert.equal(lessonTabStatus('quiz', lesson, state, types), 'not-started');
+  state.learned = { '1-1': true, '1-2': true };
+  assert.equal(lessonTabStatus('quiz', lesson, state, types), 'in-progress');
+  state.learned['1-2'] = false;
+  assert.equal(lessonTabStatus('quiz', lesson, state, types), 'not-started');
 });

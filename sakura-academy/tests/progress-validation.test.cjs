@@ -2,7 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, isValidAssessmentRun, ensureAssessmentRun, strictMilestoneDone } = require('../src/content-validation.js');
+const { validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, assessmentWordPool, isValidAssessmentRun, ensureAssessmentRun, strictMilestoneDone } = require('../src/content-validation.js');
 
 const appSource = fs.readFileSync(path.join(__dirname, '..', 'src', 'app.js'), 'utf8');
 
@@ -147,16 +147,44 @@ test('legacy vocabulary-only assessment results are not upgraded to mixed-skill 
   const legacy = { results: [true, true, true, true, false], passed: true };
   const fresh = { questionTypes: [...types], wordIds: ['1-0', '1-1'], results: [], passed: false };
   let created = 0;
+  const learned = { '1-0': true, '1-1': true };
   const reset = ensureAssessmentRun(legacy, lesson, types, currentLesson => {
     assert.equal(currentLesson, lesson);
     created++;
     return fresh;
-  });
+  }, learned);
   assert.equal(isValidAssessmentRun(legacy, types, lesson.vocab.map(word => word.id)), false);
   assert.equal(isValidAssessmentRun(fresh, types, lesson.vocab.map(word => word.id)), true);
   assert.equal(created, 1);
   assert.equal(reset, fresh);
   const currentRun = { ...fresh, results: [true], passed: false };
-  assert.equal(ensureAssessmentRun(currentRun, lesson, types, () => { throw new Error('valid run should be preserved'); }), currentRun);
-  assert.match(appSource, /function assessmentRun\(l\)\{let existing=state\.assessments\[l\.id\],run=ensureAssessmentRun\(existing,l,ASSESSMENT_TYPES,newAssessment\)/);
+  assert.equal(ensureAssessmentRun(currentRun, lesson, types, () => { throw new Error('valid run should be preserved'); }, learned), currentRun);
+  assert.match(appSource, /function assessmentRun\(l\)\{let existing=state\.assessments\[l\.id\],run=ensureAssessmentRun\(existing,l,ASSESSMENT_TYPES,newAssessment,state\.learned\)/);
+});
+
+test('assessment word pool includes only vocabulary explicitly studied in this lesson', () => {
+  const lesson = { id: 1, vocab: [{ id: '1-0' }, { id: '1-1' }, { id: '1-2' }] };
+  assert.deepEqual(assessmentWordPool(lesson, { '1-0': true, '1-1': false, '1-2': 'true' }).map(word => word.id), ['1-0']);
+  assert.deepEqual(assessmentWordPool(lesson, {}).map(word => word.id), []);
+  assert.match(appSource, /function newAssessment\(l\).*assessmentWordPool\(l,state\.learned\)/);
+  assert.match(appSource, /function assessment\(l\).*ASSESSMENT LOCKED/);
+});
+
+test('stored assessment runs with unstudied target words are reset and cannot pass strict mode', () => {
+  const types = ['vocabulary', 'grammar', 'dialogue', 'listening', 'writing'];
+  const lesson = { id: 1, vocab: [{ id: '1-0' }, { id: '1-1' }, { id: '1-2' }] };
+  const learned = { '1-0': true, '1-1': true };
+  const old = { questionTypes: [...types], wordIds: ['1-0', '1-2'], results: [true, true, true, true, true], passed: true };
+  const fresh = { ...old, wordIds: ['1-0', '1-1'], results: [], passed: false };
+  assert.equal(ensureAssessmentRun(old, lesson, types, () => fresh, learned), fresh);
+  assert.equal(strictMilestoneDone({ learned, assessments: { 1: old } }, lesson, 'assessment', types), false);
+  assert.equal(strictMilestoneDone({ learned, assessments: { 1: fresh } }, lesson, 'assessment', types), false);
+  assert.match(appSource, /ensureAssessmentRun\(existing,l,ASSESSMENT_TYPES,newAssessment,state\.learned\)/);
+});
+
+test('lesson example sentence renderers expose full-sentence audio controls', () => {
+  assert.match(appSource, /function wordCards\(list\).*speak\('\$\{w\.example\}'\)/);
+  assert.match(appSource, /function grammar\(l\).*speak\('\$\{l\.jp\}'\)/);
+  assert.match(appSource, /function dialogue\(l\).*speak\('\$\{d\.jp\}'\)/);
+  assert.match(appSource, /function sentenceBuilder\(l\).*speak\('\$\{l\.jp\}'\)/);
 });

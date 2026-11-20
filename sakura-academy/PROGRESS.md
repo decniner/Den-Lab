@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 30
 - Work in progress: 0
-- New: 3
-- Closed: 27
+- New: 0
+- Closed: 30
 - Timeline gaps: 30
 
 ## Issue register
@@ -41,9 +41,9 @@ Every published app change must bump the small footer version and its update dat
 | SA-025 — Text size preference misses inline-styled character samples | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-026 — Mobile navigation labels are clipped at phone widths | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-027 — Resolved issues are mixed with active tracker items | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-028 — Assessment can test lesson vocabulary before it is studied | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-029 — Lesson example sentences lack nearby audio controls | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-030 — Lesson activity tabs disappear while studying long vocabulary lists | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-028 — Assessment can test lesson vocabulary before it is studied | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-029 — Lesson example sentences lack nearby audio controls | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-030 — Lesson activity tabs disappear while studying long vocabulary lists | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -459,27 +459,34 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-028 — Assessment can test lesson vocabulary before it is studied
 
-- **Status:** New (0%)
-- **Evidence:** Assessment currently selects two targets from the full lesson vocabulary even if the learner has not studied or marked those words learned.
-- **Impact:** The assessment may ask learners to translate or type Japanese words that the lesson has not yet taught them.
-- **Resolution:** Pending.
-- **Verification:** Pending.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** Assessment stays locked until at least two words in the current lesson are explicitly marked learned. It selects both target words from that studied set, and a stored run that includes an unlearned word is reset. Strict-mode completion and assessment tab status validate the same studied-word set.
+- **Impact:** Resolved: assessment vocabulary questions follow the learner’s demonstrated lesson study.
+- **Resolution:** Added a shared studied-word pool, a clear review-first state with a Vocabulary shortcut, safe run regeneration, and learned-word-aware progress checks.
+- **Verification:** Regression tests cover filtering, insufficient-study gating, stale runs, strict completion, and tab progress. Full Academy suite: 54 tests passed.
+- **Fix estimate:** Time not recorded.
 
 ### SA-029 — Lesson example sentences lack nearby audio controls
 
-- **Status:** New (0%)
-- **Evidence:** Vocabulary example sentences and Grammar Lab worked examples do not have nearby controls to play the complete Japanese sentence; dialogue playback coverage is inconsistent.
-- **Impact:** Learners lack convenient sentence-level pronunciation and spoken-rhythm modeling as they study examples.
-- **Resolution:** Pending.
-- **Verification:** Pending.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** Vocabulary example sentences and Grammar Lab worked examples now have nearby Japanese playback. Sentence Builder has a model-sentence control, and the dialogue turns already provide individual playback. Mobile browser preview displayed sentence controls beside vocabulary examples.
+- **Impact:** Resolved: learners can hear complete lesson sentences while reviewing their written meaning and usage.
+- **Resolution:** Added complete-sentence audio controls to vocabulary examples, the Grammar Lab worked example, and Sentence Builder.
+- **Verification:** Renderer regression checks cover vocabulary, grammar, dialogue, and builder sentence playback. Full Academy suite: 54 tests passed.
+- **Fix estimate:** Time not recorded.
 
 ### SA-030 — Lesson activity tabs disappear while studying long vocabulary lists
 
-- **Status:** New (0%)
-- **Evidence:** Lesson activity tabs are above vocabulary cards and scroll out of view during review.
-- **Impact:** Learners must scroll back to the top to switch to Grammar Lab, Conversation, or another activity.
-- **Resolution:** Pending.
-- **Verification:** Pending.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** At a 390 × 844 mobile viewport, the activity bar stays pinned at the top after 1,200 pixels of vertical scroll. Tabs use one horizontally scrollable row, the vocabulary examples remain visible beneath it, and the document has no horizontal overflow.
+- **Impact:** Resolved: learners can switch lesson sections without returning to the top of long vocabulary lists.
+- **Resolution:** Made lesson tabs sticky and compacted them into a one-row horizontal scroller on mobile.
+- **Verification:** Mobile browser screenshot and geometry check confirmed pinned tabs at 390px width; responsive CSS regression test passes. Full Academy suite: 54 tests passed.
+- **Fix estimate:** Time not recorded.
+
+
+### Lesson assessment and mobile study flow · 2026-11-21 · v1.5.40
+
+- **Tracker-first record:** SA-028, SA-029, and SA-030 were published as New in v1.5.39 before implementation; all three are now closed.
+- **Changes:** Assessment targets are limited to lesson words marked learned; each lesson example has nearby Japanese sentence playback; activity tabs remain pinned and compact on mobile.
+- **Verification:** 54 Academy tests pass. On a 390 × 844 viewport, assessment first displays a vocabulary-review gate, then uses only the two learned words; sticky tabs remain visible after scrolling with no page-width overflow.
