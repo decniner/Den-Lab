@@ -142,7 +142,7 @@
     "ecoflow:14631174177135:51670338208111": {
       "sale_price": "8300",
       "reference_price": "16910",
-      "sent_at": "2026-11-13T11:19:21+09:00",
+      "sent_at": "2026-11-20T11:49:14+09:00",
       "url": "https://jp.ecoflow.com/products/ecoflow-rapid-magnetic-power-bank-5000mah-rapid-65w-gan?variant=51670338208111"
     },
     "ecoflow:15062073803119:53384583217519": {
@@ -322,7 +322,7 @@
     "toffyjapan:8880113025298:47405993263378": {
       "sale_price": "12880",
       "reference_price": "27500",
-      "sent_at": "2026-11-13T11:19:19+09:00",
+      "sent_at": "2026-11-20T11:49:14+09:00",
       "url": "https://toffy.jp/products/rx39-sb?variant=47405993263378"
     },
     "cotopaxijapan:9242292977852:45979372814524": {
@@ -886,7 +886,7 @@
     "boardriders-co-jp:10631289241881:52412831269145": {
       "sale_price": "32450",
       "reference_price": "64900",
-      "sent_at": "2026-11-13T11:19:21+09:00",
+      "sent_at": "2026-11-20T11:49:14+09:00",
       "url": "https://boardriders.co.jp/products/h0452506?variant=52412831269145"
     },
     "shop-stridelab-jp:7512136450214:50937355108645": {
@@ -976,7 +976,7 @@
     "boardriders-co-jp:10631285145881:52412801679641": {
       "sale_price": "88000",
       "reference_price": "176000",
-      "sent_at": "2026-11-13T11:19:21+09:00",
+      "sent_at": "2026-11-20T11:49:14+09:00",
       "url": "https://boardriders.co.jp/products/g0452500?variant=52412801679641"
     },
     "ecoflow:14684998762863:53522491933039": {
@@ -1005,9 +1005,9 @@
     }
   },
   "last_digest": {
-    "date": "2026-11-19",
-    "coverage_key": "1da6957b56c9089e61b9fd717b4df3824561fb63e1bd07613fbfd8d03d9fd706",
-    "completed_at": "2026-11-19T11:57:23+09:00",
-    "digest_hash": "86ec13102c94a00805004c621eeef1b61a7a58f9342b6b5c1a17ebad181e4f7c"
+    "date": "2026-11-20",
+    "coverage_key": "5d7663c203ea7084c976f427740bfb5304686b950fbad992f97c1247bd9cd472",
+    "completed_at": "2026-11-20T11:49:14+09:00",
+    "digest_hash": "3bcb2f6e17e0160e8f134bfb6ceeafdfb175ff408d667f6f727fb4330704e68b"
   }
 }
