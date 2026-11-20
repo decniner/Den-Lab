@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 23
 - Work in progress: 0
-- New: 1
-- Closed: 22
+- New: 0
+- Closed: 23
 - Timeline gaps: 23
 
 ## Issue register
@@ -36,7 +36,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-020 — Stroke-order step can carry over to the next character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-022 — Sakura Academy favicon is missing from the built site | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-023 — Vocabulary search placeholder is clipped on mobile | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-023 — Vocabulary search placeholder is clipped on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -373,8 +373,16 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-023 — Vocabulary search placeholder is clipped on mobile
 
-- **Status:** New (0%)
-- **Evidence:** At a 390px mobile viewport, the Vocabulary tab search input shares a row with the category picker and displays only “Search Japanese or Eng”; the rest of its placeholder is cut off.
-- **Impact:** The search hint looks unfinished and its full instruction is not visible on common phone widths.
-- **Why open:** Use shorter placeholder wording and confirm it fits beside the category picker at mobile width.
-- **Fix estimate:** Small: copy adjustment plus responsive browser check.
+- **Status:** Closed (100%)
+- **Evidence:** Shortened the hint to “Search words.” At a 390px device viewport, the hint measures about 93px with 139px of available input width; it is fully visible beside the category picker and the page has no horizontal overflow.
+- **Impact:** Resolved: the complete search hint is legible on a common phone width.
+- **Resolution:** Changed the placeholder from “Search Japanese or English” to “Search words.”
+- **Verification:** A 390px headless Chrome view confirms the hint fits, all seven lesson tabs remain available, and the document width stays at 390px. The app integration check and full focused suite pass.
+- **Fix estimate:** Time not recorded.
+
+
+### Mobile polish release · 2026-11-21 · SA-023 closed
+
+- **Checks passed:** At 390 × 844, “Search words” measured about 93px within 139px available; the category selector remained visible, the lesson retained seven tabs, and document width matched the viewport.
+- **Issue covered:** SA-023.
+- **Remaining tracked risk:** None in the current issue register.

@@ -14,3 +14,7 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
   assert.match(indexHtml, /src="src\/lesson-progress\.js"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/app\.js">/);
 });
+
+test('vocabulary search uses a concise mobile-friendly placeholder', () => {
+  assert.match(appSource, /aria-label="Search vocabulary" placeholder="Search words"/);
+});
