@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 26
+- Total tracked: 27
 - Work in progress: 1
-- New: 1
+- New: 2
 - Closed: 24
-- Timeline gaps: 26
+- Timeline gaps: 27
 
 ## Issue register
 
@@ -40,6 +40,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-024 — Learners cannot adjust interface text size | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-025 — Text size preference misses inline-styled character samples | Codex | Work in progress | 50% | 2026-11-21 | Not recorded |
 | SA-026 — Mobile navigation labels are clipped at phone widths | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-027 — Resolved issues are mixed with active tracker items | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -419,6 +420,15 @@ Every published app change must bump the small footer version and its update dat
 - **Status:** New (0%)
 - **Evidence:** At 390px in mobile browser emulation, the bottom bar visibly clips labels including Lessons and Settings when interface text is enlarged; shorter widths increase the truncation.
 - **Impact:** Learners may have difficulty identifying or selecting the bottom navigation destinations.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Small.
+
+### SA-027 — Resolved issues are mixed with active tracker items
+
+- **Status:** New (0%)
+- **Evidence:** The issue register displays all 24 closed items together with open work and has no dedicated archive view.
+- **Impact:** The active queue is harder to scan, and past fixes are not clearly separated from work that still needs attention.
 - **Resolution:** Pending.
 - **Verification:** Pending.
 - **Fix estimate:** Small.
