@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 22
 - Work in progress: 1
-- New: 1
-- Closed: 20
+- New: 0
+- Closed: 21
 - Timeline gaps: 22
 
 ## Issue register
@@ -35,7 +35,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-020 — Stroke-order step can carry over to the next character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-022 — Sakura Academy has no favicon | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-022 — Sakura Academy has no favicon | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -349,8 +349,9 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-022 — Sakura Academy has no favicon
 
-- **Status:** New (0%)
-- **Evidence:** The app shell has no icon link. In an isolated local browser smoke check, the browser requested `/favicon.ico` and received HTTP 404. Checks of the deployed favicon paths also returned HTTP 404.
-- **Impact:** The browser tab and saved bookmark lack a Sakura Academy brand icon, leaving a visible polish gap.
-- **Why open:** Add and link a small local favicon, then verify the deployed asset and browser tab display.
-- **Fix estimate:** Small: one self-contained vector icon and an app-shell link.
+- **Status:** Closed (100%)
+- **Evidence:** Added a branded local SVG favicon, linked from the app shell and included in the offline cache. Regression tests check the link and precache entry; the published SVG returns HTTP 200.
+- **Impact:** Resolved: Sakura Academy has its own browser-tab and bookmark icon.
+- **Resolution:** Added a self-contained SVG icon and explicit app-shell link; added the asset to the service-worker shell and tests.
+- **Verification:** Focused tests cover the link and precache list; the deployed icon asset returns HTTP 200.
+- **Fix estimate:** Time not recorded.

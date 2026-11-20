@@ -51,7 +51,7 @@ test('offline shell precaches the full app and tracker assets', async () => {
   let installPromise;
   worker.listeners.install({ waitUntil(promise) { installPromise = promise; } });
   await installPromise;
-  for (const file of ['./', './index.html', './styles.css', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/app.js', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js', './src/reward-guard.js']) {
+  for (const file of ['./', './index.html', './favicon.svg', './styles.css', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/app.js', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js', './src/reward-guard.js']) {
     assert.ok(worker.added.includes(file), `precache includes ${file}`);
   }
 });
@@ -79,6 +79,7 @@ test('offline navigation falls back to the cached app index', async () => {
 
 test('app registers the worker relative to its own project route', () => {
   assert.match(html, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)/);
+  assert.match(html, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/);
   assert.match(html, /sakura-academy/);
 });
 
@@ -98,8 +99,8 @@ test('issue tracker script parses and renders all registered issues', () => {
   const nodes = Object.fromEntries(selectors.map(selector => [selector, { value: selector === '#status' ? 'all' : '', innerHTML: '', addEventListener() {} }]));
   vm.runInNewContext(script, { document: { querySelector: selector => nodes[selector] } });
   assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">22<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">1<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">20<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">21<\/div>/);
   assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*v1\.5\.17[\s\S]*v1\.5\.23/);
   assert.match(nodes['#rows'].innerHTML, /SA-013/);
   assert.match(nodes['#rows'].innerHTML, /SA-014/);
@@ -110,7 +111,7 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.match(nodes['#rows'].innerHTML, /SA-019[\s\S]*Lesson writing canvas has no target character or stroke guide/);
   assert.match(nodes['#rows'].innerHTML, /SA-020[\s\S]*Stroke-order step can carry over to the next character/);
   assert.match(nodes['#rows'].innerHTML, /SA-021[\s\S]*Opening a lesson fails on an undefined tab-status helper/);
-  assert.match(nodes['#rows'].innerHTML, /SA-022[\s\S]*Sakura Academy has no favicon/);
+  assert.match(nodes['#rows'].innerHTML, /SA-022[\s\S]*Sakura Academy has no favicon[\s\S]*class="pill closed">Closed/);
 
   for (const label of ['Total tracked', 'Work in progress', 'New', 'Closed', 'Timeline gaps']) {
     const sourceValue = progressMarkdown.match(new RegExp(`^- ${label}: (\\d+)$`, 'm'))?.[1];
