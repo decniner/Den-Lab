@@ -4,9 +4,9 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 11
+- Total tracked: 12
 - Work in progress: 1
-- New: 0
+- New: 1
 - Closed: 10
 - Timeline gaps: 8
 
@@ -25,6 +25,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-009 — Imported progress can inject unsafe settings markup | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-010 — Imported assessment flag can bypass strict-mode checklist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-011 — Lesson tabs do not show activity status | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-012 — Non-boolean imported progress can satisfy strict checkpoints | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -79,6 +80,14 @@ Every published app change must bump the small footer version and its update dat
 - **Resolution:** Locked submitted controls and added explicit retry actions; sentence-builder submissions unlock only when the learner edits the sentence.
 - **Verification:** Browser confirmed listening options disable after a correct answer, the retry control is visible, and no console errors occur.
 - **Fix estimate:** Time not recorded.
+
+### SA-012 — Non-boolean imported progress can satisfy strict checkpoints
+
+- **Status:** New (0%)
+- **Evidence:** Backup import checks that `completed` and `learned` are objects but does not validate their values. Strict checklist logic uses truthiness for those maps and for `answer.correct`; a value such as the string `"false"` is treated as completed progress.
+- **Impact:** A malformed backup can unlock strict-mode lessons or inflate learned-word progress without valid completion data.
+- **Why open:** Require booleans for completion/learned flags and answer correctness, normalize older local data safely, and add regression tests.
+- **Fix estimate:** Not recorded.
 
 ### SA-011 — Lesson tabs do not show activity status
 
