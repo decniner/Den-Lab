@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 27
+- Total tracked: 30
 - Work in progress: 0
-- New: 0
+- New: 3
 - Closed: 27
-- Timeline gaps: 27
+- Timeline gaps: 30
 
 ## Issue register
 
@@ -41,6 +41,9 @@ Every published app change must bump the small footer version and its update dat
 | SA-025 — Text size preference misses inline-styled character samples | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-026 — Mobile navigation labels are clipped at phone widths | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-027 — Resolved issues are mixed with active tracker items | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-028 — Assessment can test lesson vocabulary before it is studied | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-029 — Lesson example sentences lack nearby audio controls | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-030 — Lesson activity tabs disappear while studying long vocabulary lists | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -453,3 +456,30 @@ Every published app change must bump the small footer version and its update dat
 - **Checks passed:** 49 Academy tests pass. Mobile browser mode verified 390px and 320px at Standard, Large, and Extra large; handwriting samples, lesson text, bottom navigation, and issue archive remain usable without horizontal page overflow.
 - **Issues covered:** SA-025, SA-026, SA-027.
 - **Version:** v1.5.38.
+
+### SA-028 — Assessment can test lesson vocabulary before it is studied
+
+- **Status:** New (0%)
+- **Evidence:** Assessment currently selects two targets from the full lesson vocabulary even if the learner has not studied or marked those words learned.
+- **Impact:** The assessment may ask learners to translate or type Japanese words that the lesson has not yet taught them.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Not recorded.
+
+### SA-029 — Lesson example sentences lack nearby audio controls
+
+- **Status:** New (0%)
+- **Evidence:** Vocabulary example sentences and Grammar Lab worked examples do not have nearby controls to play the complete Japanese sentence; dialogue playback coverage is inconsistent.
+- **Impact:** Learners lack convenient sentence-level pronunciation and spoken-rhythm modeling as they study examples.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Not recorded.
+
+### SA-030 — Lesson activity tabs disappear while studying long vocabulary lists
+
+- **Status:** New (0%)
+- **Evidence:** Lesson activity tabs are above vocabulary cards and scroll out of view during review.
+- **Impact:** Learners must scroll back to the top to switch to Grammar Lab, Conversation, or another activity.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Not recorded.
