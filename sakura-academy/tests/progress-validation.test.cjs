@@ -2,7 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { validateProgressBackupSettings, sanitizeStoredProgressSettings } = require('../src/content-validation.js');
+const { validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, strictMilestoneDone } = require('../src/content-validation.js');
 
 const appSource = fs.readFileSync(path.join(__dirname, '..', 'src', 'app.js'), 'utf8');
 
@@ -46,5 +46,51 @@ test('strict-mode assessment requires a valid mixed-skills run with five recorde
   assert.equal(isValidPassingAssessment({ ...validRun, results: [true, true, true, false, false], passed: true }, types, wordIds), false);
   assert.equal(isValidPassingAssessment({ ...validRun, questionTypes: ['vocabulary'] }, types, wordIds), false);
   assert.equal(isValidPassingAssessment({ ...validRun, wordIds: ['unknown', '1-1'] }, types, wordIds), false);
-  assert.match(appSource, /isValidPassingAssessment\(state\.assessments\[id\],ASSESSMENT_TYPES,l\.vocab\.map/);
+  assert.match(appSource, /strictMilestoneDone\(state,l,'assessment',ASSESSMENT_TYPES\)/);
+});
+
+test('strict progress import rejects truthy non-boolean flags and answer fields', () => {
+  const malformed = {
+    learned: { '1-1': 'false' },
+    completed: { 1: 'false' },
+    answers: [{ lesson: 1, format: 'ordering', correct: 'false' }],
+  };
+  assert.ok(validateStrictProgressData(malformed).length >= 3);
+  assert.match(appSource, /validateStrictProgressData\(s\)/);
+});
+
+test('valid completion flags and answer records remain importable', () => {
+  const valid = {
+    learned: { '1-1': true, '1-2': false },
+    completed: { 1: false },
+    answers: [{ lesson: 1, format: 'ordering', correct: true }],
+  };
+  assert.deepEqual(validateStrictProgressData(valid), []);
+});
+
+test('older local progress with malformed flags is removed before strict checks', () => {
+  const state = {
+    learned: { '1-1': 'true', '1-2': true },
+    completed: { 1: 'false', 2: true },
+    answers: [
+      { lesson: 1, format: 'ordering', correct: 'true' },
+      { lesson: 1, format: 'dialogue', correct: true },
+    ],
+  };
+  sanitizeStrictProgressData(state);
+  assert.deepEqual(state.learned, { '1-2': true });
+  assert.deepEqual(state.completed, { 2: true });
+  assert.deepEqual(state.answers, [{ lesson: 1, format: 'dialogue', correct: true }]);
+  assert.match(appSource, /sanitizeStrictProgressData\(state\)/);
+});
+
+
+test('strict checklist milestone logic accepts only boolean completion evidence', () => {
+  const lesson = { id: 1, vocab: [{ id: '1-1' }, { id: '1-2' }] };
+  const state = { learned: { '1-1': 'true', '1-2': true }, completed: { 1: 'false' }, answers: [{ lesson: 1, format: 'dialogue', correct: 'true' }], assessments: {} };
+  assert.equal(strictMilestoneDone(state, lesson, 'vocabulary'), false);
+  assert.equal(strictMilestoneDone(state, lesson, 'conversation'), false);
+  assert.equal(strictMilestoneDone(state, lesson, 'grammar'), false);
+  state.completed[1] = true;
+  assert.equal(strictMilestoneDone(state, lesson, 'assessment'), true);
 });

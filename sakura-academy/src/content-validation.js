@@ -54,6 +54,38 @@
     return state;
   }
 
+  const strictAnswerFormats = new Set(['ordering', 'dialogue', 'listening', 'typing', 'assessment-vocabulary', 'assessment-grammar', 'assessment-dialogue', 'assessment-listening', 'assessment-writing']);
+
+  function isValidStrictAnswer(answer) {
+    return !!answer && typeof answer === 'object' && !Array.isArray(answer) &&
+      Number.isInteger(answer.lesson) && answer.lesson >= 1 && answer.lesson <= 12 &&
+      strictAnswerFormats.has(answer.format) && typeof answer.correct === 'boolean';
+  }
+
+  function validateStrictProgressData(state) {
+    const errors = [];
+    if (!state || typeof state !== 'object' || Array.isArray(state)) return ['Invalid state'];
+    for (const key of ['learned', 'completed']) {
+      const flags = state[key];
+      if (!flags || typeof flags !== 'object' || Array.isArray(flags)) {
+        errors.push(`Invalid ${key} progress`);
+        continue;
+      }
+      if (Object.values(flags).some(value => typeof value !== 'boolean')) errors.push(`Invalid ${key} flag`);
+    }
+    if (!Array.isArray(state.answers) || state.answers.some(answer => !isValidStrictAnswer(answer))) errors.push('Invalid answer record');
+    return errors;
+  }
+
+  function sanitizeStrictProgressData(state) {
+    for (const key of ['learned', 'completed']) {
+      if (!state[key] || typeof state[key] !== 'object' || Array.isArray(state[key])) state[key] = {};
+      else for (const [id, value] of Object.entries(state[key])) if (typeof value !== 'boolean') delete state[key][id];
+    }
+    state.answers = Array.isArray(state.answers) ? state.answers.filter(isValidStrictAnswer) : [];
+    return state;
+  }
+
   function isValidPassingAssessment(run, requiredTypes, allowedWordIds) {
     if (!run || run.passed !== true) return false;
     const types = run.questionTypes;
@@ -66,6 +98,20 @@
       results.filter(Boolean).length >= 4;
   }
 
-  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, isValidPassingAssessment };
-  else Object.assign(root, { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, isValidPassingAssessment });
+  function strictMilestoneDone(state, lesson, milestone, assessmentTypes = []) {
+    if (!state || !lesson) return false;
+    if (state.completed?.[lesson.id] === true) return true;
+    if (milestone === 'vocabulary') {
+      return lesson.vocab.length > 0 && lesson.vocab.every(word => state.learned?.[word.id] === true);
+    }
+    if (milestone === 'assessment') {
+      return isValidPassingAssessment(state.assessments?.[lesson.id], assessmentTypes, lesson.vocab.map(word => word.id));
+    }
+    const format = { grammar: 'ordering', conversation: 'dialogue', listening: 'listening', writing: 'typing' }[milestone];
+    return !!format && Array.isArray(state.answers) && state.answers.some(answer =>
+      answer?.lesson === lesson.id && answer.format === format && answer.correct === true);
+  }
+
+  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, isValidPassingAssessment, strictMilestoneDone };
+  else Object.assign(root, { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, isValidPassingAssessment, strictMilestoneDone });
 })(typeof globalThis === 'undefined' ? this : globalThis);

@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 12
 - Work in progress: 1
-- New: 1
-- Closed: 10
+- New: 0
+- Closed: 11
 - Timeline gaps: 8
 
 ## Issue register
@@ -25,7 +25,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-009 — Imported progress can inject unsafe settings markup | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-010 — Imported assessment flag can bypass strict-mode checklist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-011 — Lesson tabs do not show activity status | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-012 — Non-boolean imported progress can satisfy strict checkpoints | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-012 — Non-boolean imported progress can satisfy strict checkpoints | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -83,11 +83,12 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-012 — Non-boolean imported progress can satisfy strict checkpoints
 
-- **Status:** New (0%)
-- **Evidence:** Backup import checks that `completed` and `learned` are objects but does not validate their values. Strict checklist logic uses truthiness for those maps and for `answer.correct`; a value such as the string `"false"` is treated as completed progress.
-- **Impact:** A malformed backup can unlock strict-mode lessons or inflate learned-word progress without valid completion data.
-- **Why open:** Require booleans for completion/learned flags and answer correctness, normalize older local data safely, and add regression tests.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** Import now rejects non-boolean learned/completed flags and malformed answer records. Older local progress drops invalid flags and answers before the app evaluates strict requirements. The checklist uses explicit `=== true` predicates for every milestone.
+- **Impact:** Resolved: truthy strings or malformed records cannot unlock strict-mode sections or inflate learned-word progress.
+- **Resolution:** Added strict progress validation and startup sanitization, then routed each checklist item through typed milestone checks.
+- **Verification:** Regression tests reject string flags and answer correctness, accept valid records, remove malformed stored data, and directly verify strict milestone behavior. The complete focused suite passes.
+- **Fix estimate:** Time not recorded.
 
 ### SA-011 — Lesson tabs do not show activity status
 
@@ -131,7 +132,7 @@ Every published app change must bump the small footer version and its update dat
 - **Evidence:** The Academy service worker precaches the app/tracker, uses network-first navigation with an offline app fallback, and versions its cache with the footer. The hosted app loads in the browser; GitHub Pages serves the worker with JavaScript content type and all 13 precached URLs return HTTP 200. Local lifecycle tests cover online navigation being cached and then served after network loss, offline fallback, and failed shell installation not activating.
 - **Impact:** Without a proven offline refresh cycle, learners could still lose access to lessons when disconnected.
 - **Implementation:** Added an Academy-route service worker, precached the app and tracker shell, provided network-first navigation with offline app fallback, and tied cache version to the visible app version.
-- **Verification:** 27 content, offline-shell, progress-validation, and lesson-progress tests pass; service-worker syntax and hosted asset checks pass. The lifecycle suite now verifies online navigation is cached for a later offline refresh and a failed shell install does not activate. Browser controls available in this session block access to internal offline/network controls, so an actual offline refresh/update cycle has not been observed.
+- **Verification:** 31 content, offline-shell, progress-validation, and lesson-progress tests pass; service-worker syntax and hosted asset checks pass. The lifecycle suite now verifies online navigation is cached for a later offline refresh and a failed shell install does not activate. Browser controls available in this session block access to internal offline/network controls, so an actual offline refresh/update cycle has not been observed.
 - **Why open:** Run the remaining real offline refresh/update cycle in a browser with network controls.
 - **Fix estimate:** Not recorded.
 
@@ -187,3 +188,10 @@ Every published app change must bump the small footer version and its update dat
 - **Issue covered:** SA-011.
 - **Checks passed:** 27 focused tests; JavaScript syntax checks; standalone build with the status helper included.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; browser/device coverage remains limited.
+
+
+### Strict progress validation batch · 2026-11-21 · malformed flag issue closed
+
+- **Issue covered:** SA-012.
+- **Checks passed:** 31 focused tests; JavaScript syntax checks; standalone build.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
