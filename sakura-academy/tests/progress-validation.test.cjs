@@ -34,6 +34,15 @@ test('unsafe settings from older local progress are reset before rendering', () 
   assert.match(appSource, /sanitizeStoredProgressSettings\(state\)/);
 });
 
+test('font size is an enumerated setting with a safe default for old progress', () => {
+  assert.deepEqual(validateProgressBackupSettings({ xp: 0, fontSize: 'large' }), []);
+  for (const fontSize of ['tiny', '<img>', 2, null]) {
+    assert.ok(validateProgressBackupSettings({ xp: 0, fontSize }).includes('Invalid text size'));
+  }
+  assert.equal(sanitizeStoredProgressSettings({ xp: 0, fontSize: '<svg>' }).fontSize, 'standard');
+  assert.equal(sanitizeStoredProgressSettings({ xp: 0 }).fontSize, 'standard');
+});
+
 const { isValidPassingAssessment } = require('../src/content-validation.js');
 
 test('strict-mode assessment requires a valid mixed-skills run with five recorded answers', () => {

@@ -44,13 +44,15 @@
     if (state.goal !== undefined && (!Number.isSafeInteger(state.goal) || state.goal < 1 || state.goal > 200)) {
       errors.push('Invalid daily goal');
     }
+    if (state.fontSize !== undefined && !['standard', 'large', 'extra-large'].includes(state.fontSize)) errors.push('Invalid text size');
     return errors;
   }
 
-  function sanitizeStoredProgressSettings(state, defaults = { goal: 15, xp: 0 }) {
+  function sanitizeStoredProgressSettings(state, defaults = { goal: 15, xp: 0, fontSize: 'standard' }) {
     const errors = validateProgressBackupSettings(state);
     if (errors.includes('Invalid XP value')) state.xp = defaults.xp;
     if (errors.includes('Invalid daily goal')) state.goal = defaults.goal;
+    if (errors.includes('Invalid text size') || state.fontSize === undefined) state.fontSize = defaults.fontSize;
     return state;
   }
 

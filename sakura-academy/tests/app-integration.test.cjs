@@ -7,6 +7,7 @@ const project = path.resolve(__dirname, '..');
 const appSource = fs.readFileSync(path.join(project, 'src', 'app.js'), 'utf8');
 const progressSource = fs.readFileSync(path.join(project, 'src', 'lesson-progress.js'), 'utf8');
 const indexHtml = fs.readFileSync(path.join(project, 'index.html'), 'utf8');
+const styles = fs.readFileSync(path.join(project, 'styles.css'), 'utf8');
 
 test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
@@ -17,4 +18,13 @@ test('lesson renderer calls the helper exported before the app loads', () => {
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
   assert.match(appSource, /aria-label="Search vocabulary" placeholder="Search words"/);
+});
+
+test('Settings exposes a persistent accessible text-size preference', () => {
+  assert.match(appSource, /aria-label="Interface text size"/);
+  assert.match(appSource, /Standard[\s\S]*Large[\s\S]*Extra large/);
+  assert.match(appSource, /state\.fontSize=this\.value;applyTextSize\(\);save\(\)/);
+  assert.match(appSource, /function applyTextSize\(\)/);
+  assert.match(styles, /body\[data-text-size="large"\].*--text-scale:1\.12/);
+  assert.match(styles, /body\[data-text-size="extra-large"\].*--text-scale:1\.24/);
 });

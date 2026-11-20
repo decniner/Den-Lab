@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 24
 - Work in progress: 0
-- New: 1
-- Closed: 23
+- New: 0
+- Closed: 24
 - Timeline gaps: 24
 
 ## Issue register
@@ -37,7 +37,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-022 — Sakura Academy favicon is missing from the built site | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-023 — Vocabulary search placeholder is clipped on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-024 — Learners cannot adjust interface text size | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-024 — Learners cannot adjust interface text size | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -390,9 +390,15 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-024 — Learners cannot adjust interface text size
 
-- **Status:** New (0%)
-- **Evidence:** Settings has no text-size control; learners cannot enlarge instructional text to suit their reading needs.
-- **Impact:** A fixed text size can make extended lessons harder to read, especially on phones.
-- **Resolution:** Pending.
-- **Verification:** Pending.
-- **Fix estimate:** Small.
+- **Status:** Closed (100%)
+- **Evidence:** Settings offers Standard, Large, and Extra large interface text. The choice is saved with local progress, persists after reload, and safely defaults older progress to Standard. Backup imports accept only the three known values.
+- **Impact:** Resolved: learners can enlarge interface and lesson text to suit their reading needs.
+- **Resolution:** Added accessible text-size selection and a shared interface scale for the app typography.
+- **Verification:** Browser confirmed Extra large scales a lesson title from 29px to 35.96px, saves to local progress, restores after reload, and creates no horizontal overflow. All focused settings, backup-validation, integration, and full Academy checks pass.
+- **Fix estimate:** Time not recorded.
+
+### Font size preference release · 2026-11-21 · SA-024 closed
+
+- **Checks passed:** 47 Academy tests pass; browser verified Standard → Extra large, persisted storage and reload restoration, and no horizontal overflow.
+- **Issue covered:** SA-024.
+- **Version:** v1.5.34.
