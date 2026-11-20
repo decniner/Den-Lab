@@ -2,7 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, strictMilestoneDone } = require('../src/content-validation.js');
+const { validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, isValidAssessmentRun, ensureAssessmentRun, strictMilestoneDone } = require('../src/content-validation.js');
 
 const appSource = fs.readFileSync(path.join(__dirname, '..', 'src', 'app.js'), 'utf8');
 
@@ -130,4 +130,24 @@ test('readiness totals count only known true study flags', () => {
   assert.match(appSource, /countKnownFlags\(state\.kana,KANA\.map\(x=>x\.ch\)\)/);
   assert.match(appSource, /countKnownFlags\(state\.kanji,KANJI\.map\(x=>x\.id\)\)/);
   assert.match(appSource, /countKnownFlags\(done,practicePool\(\)\.map\(x=>practiceScript\+':'\+x\.id\)\)/);
+});
+
+test('legacy vocabulary-only assessment results are not upgraded to mixed-skill passes', () => {
+  const types = ['vocabulary', 'grammar', 'dialogue', 'listening', 'writing'];
+  const lesson = { id: 1, vocab: [{ id: '1-0' }, { id: '1-1' }] };
+  const legacy = { results: [true, true, true, true, false], passed: true };
+  const fresh = { questionTypes: [...types], wordIds: ['1-0', '1-1'], results: [], passed: false };
+  let created = 0;
+  const reset = ensureAssessmentRun(legacy, lesson, types, currentLesson => {
+    assert.equal(currentLesson, lesson);
+    created++;
+    return fresh;
+  });
+  assert.equal(isValidAssessmentRun(legacy, types, lesson.vocab.map(word => word.id)), false);
+  assert.equal(isValidAssessmentRun(fresh, types, lesson.vocab.map(word => word.id)), true);
+  assert.equal(created, 1);
+  assert.equal(reset, fresh);
+  const currentRun = { ...fresh, results: [true], passed: false };
+  assert.equal(ensureAssessmentRun(currentRun, lesson, types, () => { throw new Error('valid run should be preserved'); }), currentRun);
+  assert.match(appSource, /function assessmentRun\(l\)\{let existing=state\.assessments\[l\.id\],run=ensureAssessmentRun\(existing,l,ASSESSMENT_TYPES,newAssessment\)/);
 });

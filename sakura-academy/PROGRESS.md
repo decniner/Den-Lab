@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 17
+- Total tracked: 18
 - Work in progress: 1
 - New: 0
-- Closed: 16
-- Timeline gaps: 17
+- Closed: 17
+- Timeline gaps: 18
 
 ## Issue register
 
@@ -31,6 +31,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-015 — Progress summary timeline-gap count disagrees with tracker | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-016 — Imported practice flags can distort progress and reward state | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-017 — Lesson completion can bypass strict-mode skill checkpoints | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-018 — Legacy vocabulary quiz can be migrated as mixed assessment | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -75,6 +76,15 @@ Every published app change must bump the small footer version and its update dat
 - **Impact:** Resolved: completing a lesson outside strict mode cannot unlock the next lesson's strict checklist.
 - **Resolution:** Removed the lesson-wide shortcut from strict milestone evaluation; all Next gating still depends on every checklist item passing individually.
 - **Verification:** Regression coverage confirms a completed lesson with no skill evidence leaves all six milestones incomplete. All 38 focused Academy tests pass.
+- **Fix estimate:** Time not recorded.
+
+### SA-018 — Legacy vocabulary quiz can be migrated as mixed assessment
+
+- **Status:** Closed (100%)
+- **Evidence:** Legacy records without their original skill types or word IDs now fail current-run validation and reset to a fresh mixed-skill assessment. Valid current runs remain unchanged.
+- **Impact:** Resolved: old vocabulary-only results cannot satisfy the new mixed-skills assessment milestone.
+- **Resolution:** Removed the migration that assigned random types/word IDs to legacy results; centralized assessment-run validation and fresh-run fallback.
+- **Verification:** Regression coverage proves a legacy 4/5 pass resets and a valid incomplete current run is preserved. The complete focused Academy suite passes.
 - **Fix estimate:** Time not recorded.
 
 ### SA-001 — Speaker B replies were identical across lessons
@@ -272,4 +282,11 @@ Every published app change must bump the small footer version and its update dat
 
 - **Issue covered:** SA-017.
 - **Checks passed:** All six milestone predicates reject lesson-wide completion without their own evidence; 38 focused tests, syntax checks, and standalone build pass.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
+
+
+### Mixed-assessment evidence integrity · 2026-11-21 · one issue closed
+
+- **Issue covered:** SA-018.
+- **Checks passed:** Legacy pass reset, valid current-run preservation, mixed-skills assessment validation, and full focused Academy test suite.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
