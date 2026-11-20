@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 18
+- Total tracked: 19
 - Work in progress: 1
-- New: 0
+- New: 1
 - Closed: 17
-- Timeline gaps: 18
+- Timeline gaps: 19
 
 ## Issue register
 
@@ -32,6 +32,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-016 — Imported practice flags can distort progress and reward state | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-017 — Lesson completion can bypass strict-mode skill checkpoints | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-018 — Legacy vocabulary quiz can be migrated as mixed assessment | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -297,3 +298,12 @@ Every published app change must bump the small footer version and its update dat
 - **Checks passed:** An existing hosted tab showing v1.5.9 was refreshed and rendered v1.5.17. The live online update path works for a previously open tab.
 - **Still unverified:** Refreshing the hosted app while offline and confirming the cached shell renders.
 - **Status:** SA-007 remains Work in progress at 90%.
+
+
+### SA-019 — Lesson writing canvas has no target character or stroke guide
+
+- **Status:** New (0%)
+- **Evidence:** The lesson Writing tab provides an unlabelled freehand canvas and says verified stroke-order diagrams are not included; it does not show a character to copy. The separate Write characters page has reference glyphs and stroke-order steps.
+- **Impact:** Learners can draw without a clear target or the correct stroke order, weakening the lesson's writing practice.
+- **Why open:** Connect lesson writing practice to the guided character workflow and retain the typing assessment.
+- **Fix estimate:** Not recorded.
