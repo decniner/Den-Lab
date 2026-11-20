@@ -5,9 +5,9 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 22
-- Work in progress: 1
+- Work in progress: 2
 - New: 0
-- Closed: 21
+- Closed: 20
 - Timeline gaps: 22
 
 ## Issue register
@@ -35,7 +35,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-020 — Stroke-order step can carry over to the next character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-022 — Sakura Academy has no favicon | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-022 — Sakura Academy favicon is missing from the built site | Codex | Work in progress | 80% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -347,11 +347,11 @@ Every published app change must bump the small footer version and its update dat
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
 
 
-### SA-022 — Sakura Academy has no favicon
+### SA-022 — Sakura Academy favicon is missing from the built site
 
-- **Status:** Closed (100%)
-- **Evidence:** Added a branded local SVG favicon, linked from the app shell and included in the offline cache. Regression tests check the link and precache entry; the published SVG returns HTTP 200.
-- **Impact:** Resolved: Sakura Academy has its own browser-tab and bookmark icon.
-- **Resolution:** Added a self-contained SVG icon and explicit app-shell link; added the asset to the service-worker shell and tests.
-- **Verification:** Focused tests cover the link and precache list; the deployed icon asset returns HTTP 200.
-- **Fix estimate:** Time not recorded.
+- **Status:** Work in progress (80%)
+- **Evidence:** The app shell links to `favicon.svg` and the service worker precaches it, but the deployed asset returns HTTP 404. The static build script copies an explicit file list and omits `favicon.svg`, so the published icon is missing.
+- **Impact:** The browser tab and saved bookmark still lack a Sakura Academy brand icon.
+- **Implementation:** Added a self-contained SVG icon, app-shell link, and offline precache entry.
+- **Why open:** The build must copy the SVG into the deployed project directory before the issue can close.
+- **Fix estimate:** Small: one build copy step plus regression and deployment checks.
