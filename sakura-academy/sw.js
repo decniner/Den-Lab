@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sakura-academy-shell-v1.5.23';
+const CACHE_NAME = 'sakura-academy-shell-v1.5.24';
 const APP_SHELL = [
   './',
   './index.html',

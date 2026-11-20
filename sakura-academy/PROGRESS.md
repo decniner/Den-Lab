@@ -192,7 +192,7 @@ Every published app change must bump the small footer version and its update dat
 ### SA-007 — Hosted offline refresh/update cycle not fully verified
 
 - **Status:** Work in progress (90%)
-- **Evidence:** The Academy service worker precaches the app/tracker, uses network-first navigation with an offline app fallback, and versions its cache with the footer. GitHub Pages serves the worker with JavaScript content type and all 13 precached URLs return HTTP 200. In the live browser, a previously open v1.5.9 tab loaded v1.5.17 after refresh. Local lifecycle tests cover online navigation being cached and then served after network loss, offline fallback, and failed shell installation not activating.
+- **Evidence:** The Academy service worker precaches the app/tracker, uses network-first navigation with an offline app fallback, and versions its cache with the footer. GitHub Pages serves the worker with JavaScript content type and all 13 precached URLs return HTTP 200. In an earlier live check, a previously open v1.5.9 tab loaded v1.5.17 after refresh. In a fresh check, the live tab initially showed v1.5.17; after manual reload it showed v1.5.23, matching the hosted index. Local lifecycle tests cover online navigation being cached and then served after network loss, offline fallback, and failed shell installation not activating.
 - **Impact:** Without a proven offline refresh cycle, learners could still lose access to lessons when disconnected.
 - **Implementation:** Added an Academy-route service worker, precached the app and tracker shell, provided network-first navigation with offline app fallback, and tied cache version to the visible app version.
 - **Verification:** Focused content, offline-shell, progress-validation, and lesson-progress tests pass; service-worker syntax and hosted asset checks pass. The live refresh confirms an old open tab obtains the current online version. Browser controls available in this session do not expose offline/network emulation, so an actual offline refresh/update cycle has not been observed.
@@ -297,8 +297,8 @@ Every published app change must bump the small footer version and its update dat
 
 ### Offline update verification · 2026-11-21 · SA-007 advanced evidence
 
-- **Checks passed:** An existing hosted tab showing v1.5.9 was refreshed and rendered v1.5.17. The live online update path works for a previously open tab.
-- **Still unverified:** Refreshing the hosted app while offline and confirming the cached shell renders.
+- **Checks passed:** An existing hosted tab showing v1.5.9 was refreshed and rendered v1.5.17. In a later check, a live tab initially showed v1.5.17; manual reload rendered v1.5.23, matching the hosted index. The live online update path works for a previously open tab.
+- **Still unverified:** Refreshing the hosted app while offline and confirming the cached shell renders. Browser controls in this session do not provide offline/network emulation.
 - **Status:** SA-007 remains Work in progress at 90%.
 
 
