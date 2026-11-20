@@ -15,6 +15,8 @@ const app = await readFile(join(projectDir, 'src/app.js'), 'utf8');
 
 await mkdir(outputProject, { recursive: true });
 await cp(join(projectDir, 'index.html'), join(outputProject, 'index.html'));
+await cp(join(projectDir, 'issue-tracker.html'), join(outputProject, 'issue-tracker.html'));
+await cp(join(projectDir, 'PROGRESS.md'), join(outputProject, 'PROGRESS.md'));
 await cp(join(projectDir, 'styles.css'), join(outputProject, 'styles.css'));
 await cp(join(projectDir, 'src'), join(outputProject, 'src'), { recursive: true });
 await writeFile(join(outputProject, 'DATA_SOURCES.md'), dataSources);
