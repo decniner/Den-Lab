@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 24
+- Total tracked: 25
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 24
-- Timeline gaps: 24
+- Timeline gaps: 25
 
 ## Issue register
 
@@ -38,6 +38,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-022 — Sakura Academy favicon is missing from the built site | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-023 — Vocabulary search placeholder is clipped on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-024 — Learners cannot adjust interface text size | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-025 — Text size preference misses inline-styled character samples | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -402,3 +403,12 @@ Every published app change must bump the small footer version and its update dat
 - **Checks passed:** 47 Academy tests pass; browser verified Standard → Extra large, persisted storage and reload restoration, and no horizontal overflow.
 - **Issue covered:** SA-024.
 - **Version:** v1.5.34.
+
+### SA-025 — Text size preference misses inline-styled character samples
+
+- **Status:** New (0%)
+- **Evidence:** At Extra large, browser inspection showed ordinary lesson headings scale from 29px to 35.96px, while inline-styled handwriting model and reference characters stay fixed at 72px and 52px.
+- **Impact:** Character samples and other inline-sized instructional text do not respond to the reading-size preference.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Small.
