@@ -19,3 +19,7 @@ Sakura Academy is independent and is not endorsed by or affiliated with the JLPT
 ## Grammar explanation references
 
 The 12 original lesson explanations are written for Sakura Academy and cross-checked against beginner instructional references: the [Japan Foundation Irodori grammar notes](https://www.irodori.jpf.go.jp/assets/data/Grammar_all.pdf) and [Tokyo Metropolitan University mic-J N5 materials](https://nihongo.hum.tmu.ac.jp/mic-j/N5/index.html). These references inform grammar accuracy; the app's examples and practice items are independently authored.
+
+## Vocabulary usage editorial references
+
+The audited vocabulary notes were cross-checked against [Tokyo Metropolitan University mic-J N5 grammar materials](https://nihongo.hum.tmu.ac.jp/mic-j/N5/index.html) for いくら (price/fare) and いくつ (count), and the [Japan Foundation Irodori beginner grammar notes](https://www.irodori.jpf.go.jp/assets/data/Grammar_all.pdf) for 好き patterns. Family honorific forms were checked against the [Agency for Cultural Affairs learner vocabulary reference](https://www.bunka.go.jp/seisaku/kokugo_nihongo/kyoiku/seikatsusha/h25_nihongo_program_a/pdf/a_28.pdf). These references inform original learner-facing explanations; the app text is independently written.

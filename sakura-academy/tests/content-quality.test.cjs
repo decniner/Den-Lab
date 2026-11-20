@@ -47,6 +47,29 @@ test('every vocabulary example demonstrates its target word', () => {
   assert.equal(new Set(allExamples).size, allExamples.length, 'vocabulary examples should not be copied across words');
 });
 
+test('price and quantity guidance distinguishes いくら from いくつ', () => {
+  assert.match(wordGuidance['いくら'], /いくつ/);
+  assert.doesNotMatch(wordGuidance['いくら'], /not used to ask quantity/i);
+});
+
+test('family guidance uses standard polite terms for another person’s family', () => {
+  assert.match(wordGuidance['かぞく'], /ごかぞく/);
+  assert.doesNotMatch(wordGuidance['かぞく'], /おかぞく/);
+  assert.match(wordGuidance['いもうと'], /いもうとさん/);
+  assert.doesNotMatch(wordGuidance['いもうと'], /おいもうとさん/);
+});
+
+test('window guidance distinguishes a nearby location from an activity location', () => {
+  assert.match(wordGuidance['まど'], /まどのそばに/);
+  assert.match(wordGuidance['まど'], /まどで for an activity/);
+});
+
+test('好き guidance describes the beginner pattern without making an absolute particle rule', () => {
+  assert.match(wordGuidance['すき'], /basic pattern.*が好きです/i);
+  assert.doesNotMatch(wordGuidance['すき'], /not を|not を/i);
+  assert.match(wordGuidance['すき'], /は can mark the topic/i);
+});
+
 test('dialogue replies and answer choices fit each lesson and vary across lessons', () => {
   assert.equal(new Set(lessons.map(l => l.dialogue.find(d => d.who === 'B').jp)).size, lessons.length);
   for (const lesson of lessons) {

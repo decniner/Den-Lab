@@ -5,9 +5,9 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 8
-- Work in progress: 2
+- Work in progress: 1
 - New: 0
-- Closed: 6
+- Closed: 7
 - Timeline gaps: 8
 
 ## Issue register
@@ -17,7 +17,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-001 — Speaker B replies were identical across lessons | Codex | Closed | 100% | Not recorded | Not recorded |
 | SA-002 — Vocabulary examples often did not demonstrate the target word | Codex | Closed | 100% | Not recorded | Not recorded |
 | SA-003 — Content validator falsely reported numeric lesson IDs missing | Codex | Closed | 100% | Not recorded | Not recorded |
-| SA-004 — Vocabulary cards lack practical usage and context guidance | Codex | Work in progress | 80% | 2026-11-20 | Not recorded |
+| SA-004 — Vocabulary cards lack practical usage and context guidance | Codex | Closed | 100% | 2026-11-20 | Not recorded |
 | SA-005 — Repeatable study actions could award XP repeatedly | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-006 — Repeated answer clicks could distort lesson accuracy | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 80% | 2026-11-21 | Not recorded |
@@ -34,11 +34,12 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-004 — Vocabulary cards lack practical usage and context guidance
 
-- **Status:** Work in progress (80%)
-- **Evidence:** All 95 unique vocabulary items now include expandable guidance on when and how to use the word, with particles, common pairings, register, or meaning distinctions where relevant.
-- **Impact:** The core gap is addressed; inaccurate or overly broad notes could still mislead learners until an editorial review is complete.
-- **Why open:** Coverage, rendering, and a phone-width layout are verified. Review the usage wording for accuracy and learner-level fit before closure.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** All 95 unique vocabulary items received an editorial review. Five misleading notes were corrected: いくら now distinguishes prices from counts; family guidance uses ご家族; another person’s younger sister is 妹さん; the window note distinguishes nearby に from activity で; and 好き guidance presents が as the basic pattern while noting は for topic or contrast.
+- **Impact:** Incorrect forms or overbroad rules can teach beginners unnatural Japanese even when the examples are valid.
+- **Resolution:** Corrected the five audited notes, added regression tests, and cross-checked with Tokyo Metropolitan University N5 materials and Japan Foundation Irodori beginner resources.
+- **Verification:** The complete vocabulary content-quality suite passes and independently asserts the corrected distinctions. References are listed in DATA_SOURCES.md.
+- **Fix estimate:** Time not recorded.
 
 ### SA-002 — Vocabulary examples often did not demonstrate the target word
 
@@ -118,3 +119,11 @@ Every published app change must bump the small footer version and its update dat
 - **Checks passed:** 12 content/offline-shell tests; all generated service-worker precache assets exist; live GitHub Pages workflow succeeded.
 - **Browser verification:** Hosted Grammar lab rendered the matching Japanese example, translation, explanation, and token sequence in Lessons 1 and 12.
 - **Remaining risks:** SA-004 vocabulary usage wording still needs a complete editorial review; SA-007 still needs a real offline refresh/update cycle in a browser with network controls.
+
+
+### Content review batch · 2026-11-21 · vocabulary guidance issue closed
+
+- **Issue covered:** SA-004.
+- **Scope:** Reviewed all 95 usage notes; corrected five misleading or overbroad formulations.
+- **Checks passed:** 11 content-quality tests; focused offline-shell checks and version/cache consistency are run for this release.
+- **Remaining risks:** SA-007 still needs a real hosted offline-refresh/update cycle; broader device/browser coverage remains limited.
