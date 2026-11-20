@@ -131,8 +131,13 @@
     return validTypes && validWords && validResults && typeof run.passed === 'boolean' && run.passed === shouldPass;
   }
 
-  function ensureAssessmentRun(run, lesson, requiredTypes, createAssessment) {
-    if (isValidAssessmentRun(run, requiredTypes, lesson.vocab.map(word => word.id))) return run;
+  function assessmentWordPool(lesson, learned = {}) {
+    return Array.isArray(lesson?.vocab) ? lesson.vocab.filter(word => learned?.[word.id] === true) : [];
+  }
+
+  function ensureAssessmentRun(run, lesson, requiredTypes, createAssessment, learned = {}) {
+    const allowedWordIds = assessmentWordPool(lesson, learned).map(word => word.id);
+    if (allowedWordIds.length >= 2 && isValidAssessmentRun(run, requiredTypes, allowedWordIds)) return run;
     return createAssessment(lesson);
   }
 
@@ -147,13 +152,14 @@
       return lesson.vocab.length > 0 && lesson.vocab.every(word => state.learned?.[word.id] === true);
     }
     if (milestone === 'assessment') {
-      return isValidPassingAssessment(state.assessments?.[lesson.id], assessmentTypes, lesson.vocab.map(word => word.id));
+      const studiedIds = assessmentWordPool(lesson, state.learned).map(word => word.id);
+      return studiedIds.length >= 2 && isValidPassingAssessment(state.assessments?.[lesson.id], assessmentTypes, studiedIds);
     }
     const format = { grammar: 'ordering', conversation: 'dialogue', listening: 'listening', writing: 'typing' }[milestone];
     return !!format && Array.isArray(state.answers) && state.answers.some(answer =>
       answer?.lesson === lesson.id && answer.format === format && answer.correct === true);
   }
 
-  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, isValidAssessmentRun, ensureAssessmentRun, isValidPassingAssessment, strictMilestoneDone };
-  else Object.assign(root, { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, isValidAssessmentRun, ensureAssessmentRun, isValidPassingAssessment, strictMilestoneDone });
+  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, assessmentWordPool, isValidAssessmentRun, ensureAssessmentRun, isValidPassingAssessment, strictMilestoneDone };
+  else Object.assign(root, { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, assessmentWordPool, isValidAssessmentRun, ensureAssessmentRun, isValidPassingAssessment, strictMilestoneDone });
 })(typeof globalThis === 'undefined' ? this : globalThis);

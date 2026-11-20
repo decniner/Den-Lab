@@ -1,6 +1,8 @@
 (function exposeLessonTabProgress(root) {
   const isValidPassingAssessment = root.isValidPassingAssessment ||
     (typeof require === 'function' ? require('./content-validation.js').isValidPassingAssessment : () => false);
+  const isValidAssessmentRun = root.isValidAssessmentRun ||
+    (typeof require === 'function' ? require('./content-validation.js').isValidAssessmentRun : () => false);
 
   function lessonTabStatus(tab, lesson, state, assessmentTypes) {
     if (!lesson || !state) return 'not-started';
@@ -31,8 +33,10 @@
       if (hasAnswer(format)) return 'in-progress';
     } else if (tab === 'quiz') {
       const run = state.assessments?.[lesson.id];
-      if (isValidPassingAssessment(run, assessmentTypes, lesson.vocab.map(word => word.id))) return 'complete';
-      const results = run?.results;
+      const studiedIds = lesson.vocab.filter(word => state.learned?.[word.id] === true).map(word => word.id);
+      const validRun = studiedIds.length >= 2 && isValidAssessmentRun(run, assessmentTypes, studiedIds);
+      if (validRun && isValidPassingAssessment(run, assessmentTypes, studiedIds)) return 'complete';
+      const results = validRun ? run.results : null;
       if (Array.isArray(results) && results.length === 5 && results.every(result => typeof result === 'boolean') && results.filter(Boolean).length < 4) return 'needs-review';
       if (Array.isArray(results) && results.length > 0) return 'in-progress';
     }

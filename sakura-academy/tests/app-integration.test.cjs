@@ -44,3 +44,9 @@ test('mobile text-size overrides keep important declarations valid', () => {
   const mobileLabels = [...appSource.matchAll(/\['(?:dashboard|n5|lessons|kana|handwriting|kanji|flashcards|settings)','[^']*','[^']*','([^']*)'\]/g)].map(match => match[1]);
   assert.deepEqual(mobileLabels, ['Home', 'N5', 'Learn', 'Kana', 'Write', 'Kanji', 'Cards', 'Prefs']);
 });
+
+test('lesson activity tabs remain sticky and compact on mobile', () => {
+  assert.match(styles, /\.tabs\{[^}]*position:sticky;[^}]*top:0/);
+  assert.match(styles, /@media\(max-width:760px\)\{\.tabs\{flex-wrap:nowrap;overflow-x:auto/);
+  assert.match(styles, /\.tabs \.tab\{flex:0 0 auto\}/);
+});
