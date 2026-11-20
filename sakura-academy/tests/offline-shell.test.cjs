@@ -116,9 +116,9 @@ test('issue tracker script parses and renders all registered issues', () => {
   vm.runInNewContext(script, { document: { querySelector: selector => nodes[selector] } });
   assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">22<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">1<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">21<\/div>/);
-  assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*v1\.5\.17[\s\S]*v1\.5\.23/);
+  assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">0<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">22<\/div>/);
+  assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*v1\.5\.29[\s\S]*seven tabs and eight vocabulary cards[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-013/);
   assert.match(nodes['#rows'].innerHTML, /SA-014/);
   assert.match(nodes['#rows'].innerHTML, /SA-015/);

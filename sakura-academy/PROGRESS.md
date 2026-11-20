@@ -5,9 +5,9 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 22
-- Work in progress: 1
+- Work in progress: 0
 - New: 0
-- Closed: 21
+- Closed: 22
 - Timeline gaps: 22
 
 ## Issue register
@@ -20,7 +20,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-004 — Vocabulary cards lack practical usage and context guidance | Codex | Closed | 100% | 2026-11-20 | Not recorded |
 | SA-005 — Repeatable study actions could award XP repeatedly | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-006 — Repeated answer clicks could distort lesson accuracy | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-007 — Hosted offline refresh/update cycle not fully verified | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
+| SA-007 — Hosted offline refresh/update cycle not fully verified | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-008 — Lesson grammar explanations are too brief and generic | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-009 — Imported progress can inject unsafe settings markup | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-010 — Imported assessment flag can bypass strict-mode checklist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -192,13 +192,13 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-007 — Hosted offline refresh/update cycle not fully verified
 
-- **Status:** Work in progress (90%)
-- **Evidence:** The Academy service worker precaches the app/tracker, uses network-first navigation with an offline app fallback, and versions its cache with the footer. GitHub Pages serves the worker with JavaScript content type and all 13 precached URLs return HTTP 200. In an earlier live check, a previously open v1.5.9 tab loaded v1.5.17 after refresh. In a fresh check, the live tab initially showed v1.5.17; after manual reload it showed v1.5.23, matching the hosted index. Local lifecycle tests cover online navigation being cached and then served after network loss, offline fallback, and failed shell installation not activating.
-- **Impact:** Without a proven offline refresh cycle, learners could still lose access to lessons when disconnected.
-- **Implementation:** Added an Academy-route service worker, precached the app and tracker shell, provided network-first navigation with offline app fallback, and tied cache version to the visible app version.
-- **Verification:** Focused content, offline-shell, progress-validation, and lesson-progress tests pass; service-worker syntax and hosted asset checks pass. The live refresh confirms an old open tab obtains the current online version. Browser controls available in this session do not expose offline/network emulation, so an actual offline refresh/update cycle has not been observed.
-- **Why open:** Run the remaining real offline refresh/update cycle in a browser with network controls.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** The Academy service worker precaches the full 14-file shell and falls back to cached navigation. In isolated headless Chrome against the live GitHub Pages site, v1.5.29 loaded under an active service worker; with browser HTTP cache disabled and network emulation offline, a forced reload still rendered v1.5.29 with the service worker controlling the page. Lesson 1 then opened offline with all seven tabs and eight vocabulary cards.
+- **Impact:** Resolved: the hosted Academy reloads and lesson activities remain available after network loss.
+- **Implementation:** The Academy-route worker precaches the app shell, provides network-first navigation with a cached fallback, and ties its cache version to the visible app version.
+- **Verification:** Real hosted offline reload and Lesson 1 interaction passed in a clean browser profile. The focused suite passes and covers cache population, fallback navigation, failed installation, and version synchronization.
+- **Resolution:** Confirmed that offline reload uses the active service worker cache, not the browser HTTP cache.
+- **Fix estimate:** Time not recorded.
 
 ## Evidence reports
 
@@ -298,9 +298,8 @@ Every published app change must bump the small footer version and its update dat
 
 ### Offline update verification · 2026-11-21 · SA-007 advanced evidence
 
-- **Checks passed:** An existing hosted tab showing v1.5.9 was refreshed and rendered v1.5.17. In a later check, a live tab initially showed v1.5.17; manual reload rendered v1.5.23, matching the hosted index. The live online update path works for a previously open tab.
-- **Still unverified:** Refreshing the hosted app while offline and confirming the cached shell renders. Browser controls in this session do not provide offline/network emulation.
-- **Status:** SA-007 remains Work in progress at 90%.
+- **Checks passed:** Older open tabs refreshed from v1.5.9 to v1.5.17 and from v1.5.17 to v1.5.23. A separate isolated headless Chrome profile loaded hosted v1.5.29 under its service worker; with HTTP cache disabled and network emulation offline, reload rendered the same app version from the worker cache. Lesson 1 remained interactive offline with seven tabs and eight vocabulary cards.
+- **Status:** SA-007 Closed (100%).
 
 
 ### SA-019 — Lesson writing canvas has no target character or stroke guide
@@ -362,3 +361,10 @@ Every published app change must bump the small footer version and its update dat
 - **Checks passed:** Static build integration test confirms `favicon.svg` is emitted into the published project; live asset responds HTTP 200 with SVG content type; index link and service-worker cache versions match v1.5.28.
 - **Issue covered:** SA-022.
 - **Remaining risk:** SA-007 still awaits a real hosted offline refresh/update cycle.
+
+
+### Hosted offline refresh verification · 2026-11-21 · SA-007 closed
+
+- **Checks passed:** Online load populated the v1.5.29 service-worker cache and confirmed the page was controlled. With HTTP cache disabled and the network emulated offline, forced reload stayed on the Academy URL and showed the v1.5.29 footer. Offline navigation to Lesson 1 rendered all seven activity tabs and eight vocabulary cards.
+- **Issue covered:** SA-007.
+- **Remaining tracked risk:** None in the current issue register.
