@@ -18,6 +18,25 @@ test('lesson data passes the content validator', () => {
   assert.deepEqual(validateCourseContent(lessons, wordGuidance), []);
 });
 
+test('each lesson teaches its grammar with specific usage guidance and a relevant pitfall', () => {
+  assert.equal(lessons.length, 12);
+  for (const lesson of lessons) {
+    assert.ok(lesson.explain.trim().length >= 120, `lesson ${lesson.id} needs a worked, useful explanation`);
+    assert.ok(lesson.mistake.trim().length >= 45, `lesson ${lesson.id} needs a specific pitfall`);
+  }
+  assert.equal(new Set(lessons.map(lesson => lesson.mistake)).size, lessons.length, 'pitfalls should be lesson-specific');
+});
+
+test('grammar examples match the sentence represented by their interactive tokens', () => {
+  for (const lesson of lessons) {
+    assert.equal(lesson.builder.join('').replace(/[\s。！？!?]/g, ''), lesson.jp.replace(/[\s。！？!?]/g, ''), `lesson ${lesson.id} token sequence should match the displayed sentence`);
+    assert.equal(lesson.builderEn, lesson.en, `lesson ${lesson.id} token sequence translation should match the displayed translation`);
+  }
+  const grammarRenderer = appSource.match(/function grammar\(l\)\{[^\n]*/)?.[0] || '';
+  assert.match(grammarRenderer, /esc\(l\.jp\)/);
+  assert.match(grammarRenderer, /esc\(l\.en\)/);
+});
+
 test('every vocabulary example demonstrates its target word', () => {
   const allExamples = [];
   for (const lesson of lessons) for (const word of lesson.vocab) {

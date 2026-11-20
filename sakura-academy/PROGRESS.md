@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 7
-- Work in progress: 2
+- Total tracked: 8
+- Work in progress: 3
 - New: 0
 - Closed: 5
-- Timeline gaps: 7
+- Timeline gaps: 8
 
 ## Issue register
 
@@ -21,6 +21,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-005 — Repeatable study actions could award XP repeatedly | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-006 — Repeated answer clicks could distort lesson accuracy | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 80% | 2026-11-21 | Not recorded |
+| SA-008 — Lesson grammar explanations are too brief and generic | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -74,6 +75,14 @@ Every published app change must bump the small footer version and its update dat
 - **Resolution:** Locked submitted controls and added explicit retry actions; sentence-builder submissions unlock only when the learner edits the sentence.
 - **Verification:** Browser confirmed listening options disable after a correct answer, the retry control is visible, and no console errors occur.
 - **Fix estimate:** Time not recorded.
+
+### SA-008 — Lesson grammar explanations are too brief and generic
+
+- **Status:** Work in progress (90%)
+- **Evidence:** All 12 lesson explanations are one sentence. All 12 lessons repeat the same generic common-mistake warning about particles, verb endings, and polite/plain speech, regardless of the lesson topic. In 8 lessons, the grammar panel shows an example sentence that differs from the sentence represented by its interactive word tiles and English translation. Learners do not consistently get a worked example, when-to-use guidance, or a topic-specific pitfall.
+- **Impact:** Beginners can memorize a translation or pattern without understanding how to form it, when it sounds natural, or which common error to avoid.
+- **Why open:** Review the 12 N5 lesson targets, then write and verify learner-level explanations with a worked example, usage conditions, and a relevant pitfall for each topic.
+- **Fix estimate:** Not recorded.
 
 ### SA-007 — Hosted app shell is not cached for offline use
 
