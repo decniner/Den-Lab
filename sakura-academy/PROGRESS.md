@@ -5,9 +5,9 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 8
-- Work in progress: 3
+- Work in progress: 2
 - New: 0
-- Closed: 5
+- Closed: 6
 - Timeline gaps: 8
 
 ## Issue register
@@ -21,7 +21,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-005 — Repeatable study actions could award XP repeatedly | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-006 — Repeated answer clicks could distort lesson accuracy | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 80% | 2026-11-21 | Not recorded |
-| SA-008 — Lesson grammar explanations are too brief and generic | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
+| SA-008 — Lesson grammar explanations are too brief and generic | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -78,11 +78,12 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-008 — Lesson grammar explanations are too brief and generic
 
-- **Status:** Work in progress (90%)
-- **Evidence:** All 12 lesson explanations are one sentence. All 12 lessons repeat the same generic common-mistake warning about particles, verb endings, and polite/plain speech, regardless of the lesson topic. In 8 lessons, the grammar panel shows an example sentence that differs from the sentence represented by its interactive word tiles and English translation. Learners do not consistently get a worked example, when-to-use guidance, or a topic-specific pitfall.
-- **Impact:** Beginners can memorize a translation or pattern without understanding how to form it, when it sounds natural, or which common error to avoid.
-- **Why open:** Review the 12 N5 lesson targets, then write and verify learner-level explanations with a worked example, usage conditions, and a relevant pitfall for each topic.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** All 12 lesson explanations now describe form and use, all 12 common-mistake notes are specific to their topic, and each grammar panel's interactive tokens and English translation match its displayed Japanese sentence. The earlier 8 mismatched examples have been reconciled.
+- **Impact:** Resolved: learners get a worked example, when-to-use guidance, and a relevant pitfall for each core lesson pattern.
+- **Resolution:** Expanded all 12 explanations; corrected the eight mismatched builder examples/translations; and updated Lesson 12's worked example to demonstrate both reason-giving and advice. The grammar panel now labels the worked example and explains what the interactive tiles show.
+- **Verification:** All 12 course/offline tests pass. The course validator passes. Hosted browser checks confirmed the matching example, translation, explanation, and word tiles in Lessons 1 and 12. Japanese usage was checked against Japan Foundation Irodori grammar notes and Tokyo Metropolitan University mic-J N5 materials.
+- **Fix estimate:** Time not recorded.
 
 ### SA-007 — Hosted app shell is not cached for offline use
 
@@ -110,3 +111,10 @@ Every published app change must bump the small footer version and its update dat
 - **Regressions found:** None remaining after the review fix.
 - **Changes reverted:** None.
 - **Remaining risks:** SA-004 still needs editorial review of the 95 usage notes; user-specific progress migration and broader mobile/browser coverage remain unverified.
+
+### Closure batch 3 · 2026-11-21 · lesson explanation issue closed
+
+- **Issue covered:** SA-008.
+- **Checks passed:** 12 content/offline-shell tests; all generated service-worker precache assets exist; live GitHub Pages workflow succeeded.
+- **Browser verification:** Hosted Grammar lab rendered the matching Japanese example, translation, explanation, and token sequence in Lessons 1 and 12.
+- **Remaining risks:** SA-004 vocabulary usage wording still needs a complete editorial review; SA-007 still needs a real offline refresh/update cycle in a browser with network controls.

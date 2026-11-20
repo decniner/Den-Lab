@@ -15,3 +15,7 @@ OpenJLPT upstream attribution: JMdict and KANJIDIC2 (EDRDG), Jonathan Waller’s
 The 250 ordered character paths in `src/content.js` are from [KanjiVG](https://kanjivg.tagaini.net/) by Ulrich Apel and contributors, licensed CC BY-SA 3.0. The bundled paths remain under CC BY-SA 3.0.
 
 Sakura Academy is independent and is not endorsed by or affiliated with the JLPT organizers.
+
+## Grammar explanation references
+
+The 12 original lesson explanations are written for Sakura Academy and cross-checked against beginner instructional references: the [Japan Foundation Irodori grammar notes](https://www.irodori.jpf.go.jp/assets/data/Grammar_all.pdf) and [Tokyo Metropolitan University mic-J N5 materials](https://nihongo.hum.tmu.ac.jp/mic-j/N5/index.html). These references inform grammar accuracy; the app's examples and practice items are independently authored.
