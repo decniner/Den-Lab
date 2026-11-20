@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 20
 - Work in progress: 1
-- New: 2
-- Closed: 17
+- New: 0
+- Closed: 19
 - Timeline gaps: 20
 
 ## Issue register
@@ -32,8 +32,8 @@ Every published app change must bump the small footer version and its update dat
 | SA-016 — Imported practice flags can distort progress and reward state | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-017 — Lesson completion can bypass strict-mode skill checkpoints | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-018 — Legacy vocabulary quiz can be migrated as mixed assessment | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-020 — Stroke-order step can carry over to the next character | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-020 — Stroke-order step can carry over to the next character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -303,17 +303,26 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-019 — Lesson writing canvas has no target character or stroke guide
 
-- **Status:** New (0%)
-- **Evidence:** The lesson Writing tab provides an unlabelled freehand canvas and says verified stroke-order diagrams are not included; it does not show a character to copy. The separate Write characters page has reference glyphs and stroke-order steps.
-- **Impact:** Learners can draw without a clear target or the correct stroke order, weakening the lesson's writing practice.
-- **Why open:** Connect lesson writing practice to the guided character workflow and retain the typing assessment.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** The lesson Writing tab now preserves its typed-answer activity and directs freehand learners to Write characters, where a reference glyph, stroke-order animation, and drawing canvas stay together.
+- **Impact:** Resolved: learners are no longer invited to draw arbitrary kana/kanji without a visual target or stroke-order reference.
+- **Resolution:** Replaced the empty lesson canvas with a direct link to the guided character practice flow and removed its unused canvas handlers.
+- **Verification:** Regression tests confirm the link routes to handwriting practice and all 92 basic kana plus 84 beginner kanji have stroke paths. The live lesson flow is checked after deployment.
+- **Fix estimate:** Time not recorded.
 
 
 ### SA-020 — Stroke-order step can carry over to the next character
 
-- **Status:** New (0%)
-- **Evidence:** The handwriting screen re-renders the next character at step 0, but `stepPractice` and `finishPractice` do not reset the shared `strokeStep`. Pressing Step afterward can jump into a later stroke instead of starting at stroke 1.
-- **Impact:** Learners can miss the beginning of a character's stroke order after moving between characters.
-- **Why open:** Reset and stop the guide animation whenever the learner changes characters or scripts.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** Previous, Next, Mark practiced, and script changes now stop any running animation and reset the stroke counter to step zero.
+- **Impact:** Resolved: each character’s guide begins at its first stroke after navigation.
+- **Resolution:** Centralized script switching and reset the guide state in all character-change handlers.
+- **Verification:** Regression tests verify each character change resets the guide before rendering. The complete focused Academy suite passes.
+- **Fix estimate:** Time not recorded.
+
+
+### Guided lesson writing · 2026-11-21 · two issues closed
+
+- **Issues covered:** SA-019 and SA-020.
+- **Checks passed:** All 92 basic kana and 84 beginner kanji have stroke paths; lesson writing routes to guided character practice; character navigation resets the stroke guide; 42 focused Academy tests, JavaScript syntax checks, and standalone build pass.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
