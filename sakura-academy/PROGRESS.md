@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 21
 - Work in progress: 1
-- New: 1
-- Closed: 19
+- New: 0
+- Closed: 20
 - Timeline gaps: 21
 
 ## Issue register
@@ -34,7 +34,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-018 — Legacy vocabulary quiz can be migrated as mixed assessment | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-020 — Stroke-order step can carry over to the next character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -331,8 +331,16 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-021 — Opening a lesson fails on an undefined tab-status helper
 
-- **Status:** New (0%)
-- **Evidence:** A browser smoke check opened the lesson library and selected Lesson 1. Rendering the lesson threw `ReferenceError: getLessonTabStatus is not defined`; the progress helper is exported as `lessonTabStatus`.
-- **Impact:** Learners cannot open lesson content or use its activity tabs.
-- **Why open:** Match the lesson renderer to the exported helper and add regression coverage for the app/helper wiring.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed (100%)
+- **Evidence:** The lesson renderer now calls the exported `lessonTabStatus` helper. A local browser entered Lesson 1 and displayed all seven activity tabs without a runtime error.
+- **Impact:** Resolved: learners can open lesson content and use its activity tabs.
+- **Resolution:** Corrected the helper name and added a regression check for helper export, app call, and script loading order.
+- **Verification:** The app/helper integration test passes; browser smoke check opened Lesson 1 and its Writing tab.
+- **Fix estimate:** Time not recorded.
+
+
+### Lesson navigation integration · 2026-11-21 · one issue closed
+
+- **Issue covered:** SA-021.
+- **Checks passed:** Live DOM smoke check opened Lesson 1, rendered all activity tabs, and entered its Writing tab; app/helper wiring test passed.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.

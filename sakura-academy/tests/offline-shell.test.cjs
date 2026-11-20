@@ -98,8 +98,8 @@ test('issue tracker script parses and renders all registered issues', () => {
   const nodes = Object.fromEntries(selectors.map(selector => [selector, { value: selector === '#status' ? 'all' : '', innerHTML: '', addEventListener() {} }]));
   vm.runInNewContext(script, { document: { querySelector: selector => nodes[selector] } });
   assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">21<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">1<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">19<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">20<\/div>/);
   assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*v1\.5\.9[\s\S]*v1\.5\.17/);
   assert.match(nodes['#rows'].innerHTML, /SA-013/);
   assert.match(nodes['#rows'].innerHTML, /SA-014/);
