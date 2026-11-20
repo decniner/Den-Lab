@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 15
+- Total tracked: 16
 - Work in progress: 1
 - New: 0
-- Closed: 14
-- Timeline gaps: 15
+- Closed: 15
+- Timeline gaps: 16
 
 ## Issue register
 
@@ -29,6 +29,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-013 — Published issue tracker script fails to parse | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-014 — Lesson tabs can inherit unrelated completion evidence | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-015 — Progress summary timeline-gap count disagrees with tracker | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-016 — Imported practice flags can distort progress and reward state | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -55,6 +56,15 @@ Every published app change must bump the small footer version and its update dat
 - **Impact:** Resolved: the project register and published tracker no longer show conflicting totals.
 - **Resolution:** Reconciled the source count and added a regression test comparing all five markdown summary metrics with the rendered tracker cards.
 - **Verification:** All 35 focused Academy tests pass, including the cross-summary consistency check.
+- **Fix estimate:** Time not recorded.
+
+### SA-016 — Imported practice flags can distort progress and reward state
+
+- **Status:** Closed (100%)
+- **Evidence:** Backup imports reject non-boolean values in kana, kanji, handwriting, and reward maps. Older stored state drops malformed values before rendering or reward checks. Readiness and handwriting progress count only known characters with explicit `true` flags.
+- **Impact:** Resolved: malformed backup values cannot fabricate practice progress or suppress legitimate XP rewards.
+- **Resolution:** Added practice-map validation and startup/import sanitization, and replaced key counts with known-true flag counts.
+- **Verification:** Tests cover import rejection, cleanup of malformed local flags, valid flag preservation, and exclusion of false, non-boolean, and unknown keys from progress totals. The full focused Academy suite passes.
 - **Fix estimate:** Time not recorded.
 
 ### SA-001 — Speaker B replies were identical across lessons
@@ -238,4 +248,11 @@ Every published app change must bump the small footer version and its update dat
 
 - **Issue covered:** SA-015.
 - **Checks passed:** The focused tracker test compares Total, Work in progress, New, Closed, and Timeline gaps with the rendered issue tracker.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
+
+
+### Practice-progress import validation · 2026-11-21 · one issue closed
+
+- **Issue covered:** SA-016.
+- **Checks passed:** Full focused Academy test suite, JavaScript syntax checks, and standalone build.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.

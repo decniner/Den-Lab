@@ -2,7 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, strictMilestoneDone } = require('../src/content-validation.js');
+const { validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, strictMilestoneDone } = require('../src/content-validation.js');
 
 const appSource = fs.readFileSync(path.join(__dirname, '..', 'src', 'app.js'), 'utf8');
 
@@ -93,4 +93,39 @@ test('strict checklist milestone logic accepts only boolean completion evidence'
   assert.equal(strictMilestoneDone(state, lesson, 'grammar'), false);
   state.completed[1] = true;
   assert.equal(strictMilestoneDone(state, lesson, 'assessment'), true);
+});
+
+test('practice and reward imports reject truthy non-boolean flags', () => {
+  const malformed = {
+    kana: { 'あ': 'false' },
+    kanji: { '一': 1 },
+    handwriting: { 'Hiragana:H0': 'true' },
+    rewarded: { 'kana:あ': 'false' },
+  };
+  assert.equal(validatePracticeProgressData(malformed).length, 4);
+  assert.match(appSource, /validatePracticeProgressData\(s\)/);
+});
+
+test('older local practice data drops malformed flags before rewards or rendering', () => {
+  const state = {
+    kana: { 'あ': true, 'い': 'false' },
+    kanji: { '1': true, '2': null },
+    handwriting: { 'Hiragana:H0': true, 'Hiragana:H1': 'true' },
+    rewarded: { 'kana:あ': true, 'kana:い': 'false' },
+  };
+  sanitizePracticeProgressData(state);
+  assert.deepEqual(state, {
+    kana: { 'あ': true },
+    kanji: { '1': true },
+    handwriting: { 'Hiragana:H0': true },
+    rewarded: { 'kana:あ': true },
+  });
+  assert.match(appSource, /sanitizePracticeProgressData\(state\)/);
+});
+
+test('readiness totals count only known true study flags', () => {
+  assert.equal(countKnownFlags({ a: true, b: false, c: 'true', extra: true }, ['a', 'b', 'c']), 1);
+  assert.match(appSource, /countKnownFlags\(state\.kana,KANA\.map\(x=>x\.ch\)\)/);
+  assert.match(appSource, /countKnownFlags\(state\.kanji,KANJI\.map\(x=>x\.id\)\)/);
+  assert.match(appSource, /countKnownFlags\(done,practicePool\(\)\.map\(x=>practiceScript\+':'\+x\.id\)\)/);
 });

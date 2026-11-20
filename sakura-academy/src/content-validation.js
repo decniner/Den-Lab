@@ -54,6 +54,35 @@
     return state;
   }
 
+  const practiceFlagMaps = ['kana', 'kanji', 'handwriting', 'rewarded'];
+
+  function validatePracticeProgressData(state) {
+    const errors = [];
+    if (!state || typeof state !== 'object' || Array.isArray(state)) return ['Invalid state'];
+    for (const key of practiceFlagMaps) {
+      const flags = state[key];
+      if (flags === undefined && key === 'rewarded') continue;
+      if (!flags || typeof flags !== 'object' || Array.isArray(flags)) {
+        errors.push(`Invalid ${key} progress`);
+        continue;
+      }
+      if (Object.values(flags).some(value => typeof value !== 'boolean')) errors.push(`Invalid ${key} flag`);
+    }
+    return errors;
+  }
+
+  function sanitizePracticeProgressData(state) {
+    for (const key of practiceFlagMaps) {
+      if (!state[key] || typeof state[key] !== 'object' || Array.isArray(state[key])) state[key] = {};
+      else for (const [id, value] of Object.entries(state[key])) if (typeof value !== 'boolean') delete state[key][id];
+    }
+    return state;
+  }
+
+  function countKnownFlags(flags, knownKeys) {
+    return knownKeys.filter(key => flags?.[key] === true).length;
+  }
+
   const strictAnswerFormats = new Set(['ordering', 'dialogue', 'listening', 'typing', 'assessment-vocabulary', 'assessment-grammar', 'assessment-dialogue', 'assessment-listening', 'assessment-writing']);
 
   function isValidStrictAnswer(answer) {
@@ -112,6 +141,6 @@
       answer?.lesson === lesson.id && answer.format === format && answer.correct === true);
   }
 
-  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, isValidPassingAssessment, strictMilestoneDone };
-  else Object.assign(root, { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, isValidPassingAssessment, strictMilestoneDone });
+  if (typeof module !== 'undefined' && module.exports) module.exports = { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, isValidPassingAssessment, strictMilestoneDone };
+  else Object.assign(root, { validateCourseContent, validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, isValidPassingAssessment, strictMilestoneDone });
 })(typeof globalThis === 'undefined' ? this : globalThis);
