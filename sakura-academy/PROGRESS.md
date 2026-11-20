@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 19
+- Total tracked: 20
 - Work in progress: 1
-- New: 1
+- New: 2
 - Closed: 17
-- Timeline gaps: 19
+- Timeline gaps: 20
 
 ## Issue register
 
@@ -33,6 +33,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-017 — Lesson completion can bypass strict-mode skill checkpoints | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-018 — Legacy vocabulary quiz can be migrated as mixed assessment | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-020 — Stroke-order step can carry over to the next character | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -306,4 +307,13 @@ Every published app change must bump the small footer version and its update dat
 - **Evidence:** The lesson Writing tab provides an unlabelled freehand canvas and says verified stroke-order diagrams are not included; it does not show a character to copy. The separate Write characters page has reference glyphs and stroke-order steps.
 - **Impact:** Learners can draw without a clear target or the correct stroke order, weakening the lesson's writing practice.
 - **Why open:** Connect lesson writing practice to the guided character workflow and retain the typing assessment.
+- **Fix estimate:** Not recorded.
+
+
+### SA-020 — Stroke-order step can carry over to the next character
+
+- **Status:** New (0%)
+- **Evidence:** The handwriting screen re-renders the next character at step 0, but `stepPractice` and `finishPractice` do not reset the shared `strokeStep`. Pressing Step afterward can jump into a later stroke instead of starting at stroke 1.
+- **Impact:** Learners can miss the beginning of a character's stroke order after moving between characters.
+- **Why open:** Reset and stop the guide animation whenever the learner changes characters or scripts.
 - **Fix estimate:** Not recorded.
