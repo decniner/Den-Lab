@@ -4,8 +4,8 @@ This page is the source of truth for the Sakura Academy reliability audit. Count
 
 ## Summary
 
-- Total tracked: 3
-- Work in progress: 0
+- Total tracked: 4
+- Work in progress: 1
 - New: 3
 - Closed: 0
 - Timeline gaps: 3
@@ -17,6 +17,7 @@ This page is the source of truth for the Sakura Academy reliability audit. Count
 | SA-001 — Speaker B repeats the same reply in every lesson | Codex | New | 0% | Not recorded | Not recorded |
 | SA-002 — Vocabulary examples often do not demonstrate the target word | Codex | New | 0% | Not recorded | Not recorded |
 | SA-003 — Content validator falsely reports numeric lesson IDs missing | Codex | New | 0% | Not recorded | Not recorded |
+| SA-004 — Vocabulary cards lack practical usage and context guidance | Codex | Work in progress | 80% | 2026-11-20 | Not recorded |
 
 ### SA-001 — Speaker B repeats the same reply in every lesson
 
@@ -24,6 +25,14 @@ This page is the source of truth for the Sakura Academy reliability audit. Count
 - **Evidence:** `src/content.js` gives Speaker B the identical Japanese and English response in all 12 lesson dialogue arrays, regardless of context.
 - **Impact:** Dialogue practice teaches unnatural and contextually incorrect responses and makes the comprehension assessment reuse misleading content.
 - **Why open:** Needs lesson-specific natural replies with accurate translations, followed by dialogue and assessment verification.
+- **Fix estimate:** Not recorded.
+
+### SA-004 — Vocabulary cards lack practical usage and context guidance
+
+- **Status:** Work in progress (80%)
+- **Evidence:** Vocabulary cards display a category, Japanese headword, English gloss, example sentence, and example translation; they have no field or UI explaining when the word is used, how it combines with other words, register, or common usage constraints.
+- **Impact:** Learners see translations but cannot reliably choose or use words in a real sentence or situation.
+- **Why open:** Initial usage notes and the display have been implemented, but the initial rendered view is confirmed; a final editorial review of the usage wording and live build remains before closure.
 - **Fix estimate:** Not recorded.
 
 ### SA-002 — Vocabulary examples often do not demonstrate the target word
