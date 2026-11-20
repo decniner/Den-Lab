@@ -1,6 +1,7 @@
 // JLPT N5 curriculum browser and original practice activities.
 let n5Tab='overview', n5Search='', n5PageIndex=0, n5SelectedKanji=0;
 let n5Question=null, n5PracticeSection='vocabulary', n5Correct=0, n5Attempted=0;
+let n5Mock=null, n5MockTimer=null;
 
 function n5Set(tab){n5Tab=tab;n5PageIndex=0;n5Question=null;render()}
 function n5VocabularyList(){
@@ -23,16 +24,16 @@ function n5Practice(){
  const sec=n5PracticeSection;
  return `<div class="tabs">${[['vocabulary','Vocabulary'],['grammar','Grammar'],['reading','Reading'],['listening','Listening']].map(x=>`<button class="tab ${sec===x[0]?'active':''}" onclick="n5PracticeSection='${x[0]}';n5Question=null;render()">${x[1]}</button>`).join('')}</div><div class="card"><div class="row between"><div><h2>${sec[0].toUpperCase()+sec.slice(1)} practice</h2><p class="notice">Original practice items modeled on JLPT N5 question formats.</p></div><span class="pill">${n5Correct}/${n5Attempted} correct</span></div>${n5Question?`<div class="feedback"><b>${esc(n5Question.type)}</b></div>${n5Question.audio?`<button class="btn secondary" onclick="speak(n5Question.audio)">▶ Play listening prompt</button>`:''}${n5Question.text?`<div class="word jp" style="white-space:pre-line">${esc(n5Question.text)}</div>`:''}<p>${esc(n5Question.prompt)}</p>${n5Question.options.map((o,i)=>`<button class="option" ${n5Question.answered?'disabled':''} onclick="answerN5Question(${i})">${esc(o)}</button>`).join('')}${n5Question.answered?`<div class="feedback ${n5Question.correct===n5Question.selected?'good':'bad'}">${n5Question.correct===n5Question.selected?'Correct.':'Answer: '+esc(n5Question.options[n5Question.correct])}</div>`:''}<button class="btn" onclick="newN5Question('${sec}')">${n5Question.answered?'Next question':'New question'}</button>`:`<p>Practice the N5 ${esc(sec)} section. Questions are original and not taken from JLPT exams.</p><button class="btn" onclick="newN5Question('${sec}')">Start practice</button>`}</div>`
 }
-function newN5Question(section){
+function buildN5Question(section,forced=null){
  let q,question;
  if(section==='reading'){
-  q=N5_READINGS[Math.floor(Math.random()*N5_READINGS.length)];question={...q,type:q.type,prompt:q.question,correct:q.answer};
+  q=forced||N5_READINGS[Math.floor(Math.random()*N5_READINGS.length)];question={...q,type:q.type,prompt:q.question,correct:q.answer};
  }else if(section==='listening'){
-  q=N5_LISTENING[Math.floor(Math.random()*N5_LISTENING.length)];question={...q,prompt:q.question,correct:q.answer};
+  q=forced||N5_LISTENING[Math.floor(Math.random()*N5_LISTENING.length)];question={...q,prompt:q.question,correct:q.answer};
  }else if(section==='grammar'){
   if(Math.random()<.65){q=Math.random()<.5?N5_GRAMMAR_FORM_ITEMS[Math.floor(Math.random()*N5_GRAMMAR_FORM_ITEMS.length)]:N5_TEXT_FLOW_ITEMS[Math.floor(Math.random()*N5_TEXT_FLOW_ITEMS.length)];question={type:q.type,text:q.text,prompt:'Choose the answer that makes a natural sentence or passage.',options:q.options,correct:q.answer}}else{q=N5_GRAMMAR[Math.floor(Math.random()*N5_GRAMMAR.length)];const options=[q,...shuffle(N5_GRAMMAR.filter(x=>x.id!==q.id)).slice(0,3)];const shuffled=shuffle(options);question={type:'Grammar point · choose the meaning',prompt:`What does ${q.pattern} express?`,options:shuffled.map(x=>x.meaning),correct:shuffled.indexOf(q)}}
  }else{
-  q=N5_VOCAB[Math.floor(Math.random()*N5_VOCAB.length)];const type=Math.floor(Math.random()*4),pool=shuffle(N5_VOCAB.filter(x=>x.id!==q.id));let answer,prompt,text='';
+  q=forced||N5_VOCAB[Math.floor(Math.random()*N5_VOCAB.length)];const type=Math.floor(Math.random()*4),pool=shuffle(N5_VOCAB.filter(x=>x.id!==q.id));let answer,prompt,text='';
   if(type===0){answer=q.reading;prompt=`Choose the reading of ${q.word}.`}
   else if(type===1){answer=q.word;prompt=`Which spelling matches ${q.reading}?`}
   else if(type===2){answer=q.meanings[0];text=q.examples?.[0]?.ja||q.word;prompt='Choose the meaning that best fits this expression.'}
@@ -40,18 +41,49 @@ function newN5Question(section){
   const raw=[answer,...pool.map(x=>type===0?x.reading:type===1?x.word:x.meanings[0])].filter((x,i,a)=>x&&a.indexOf(x)===i).slice(0,4);
   const options=shuffle(raw);question={type:['Kanji reading','Orthography','Contextually-defined expression','Paraphrase'][type],prompt,text,options,correct:options.indexOf(answer)};
  }
- n5Question={...question,answered:false,selected:-1};render();
+ return {...question,answered:false,selected:-1};
 }
+function newN5Question(section){n5Question=buildN5Question(section);render()}
 function answerN5Question(i){if(!n5Question||n5Question.answered)return;n5Question.selected=i;n5Question.answered=true;n5Attempted++;if(i===n5Question.correct)n5Correct++;render()}
 function n5Page(){
- const tabs=[['overview','Overview'],['vocabulary','Vocabulary'],['grammar','Grammar'],['kanji','Kanji'],['practice','Practice']];
+ const tabs=[['overview','Overview'],['vocabulary','Vocabulary'],['grammar','Grammar'],['kanji','Kanji'],['practice','Practice'],['mock','Timed mock']];
  let body;
  if(n5Tab==='vocabulary')body=n5VocabularyList();
  else if(n5Tab==='grammar')body=n5GrammarList();
  else if(n5Tab==='kanji')body=n5KanjiList();
  else if(n5Tab==='practice')body=n5Practice();
- else body=`<div class="grid"><div class="card"><div class="stat">${N5_VOCAB.length}</div><div>approximate vocabulary entries</div></div><div class="card"><div class="stat">${N5_GRAMMAR.length}</div><div>grammar reference points</div></div><div class="card"><div class="stat">${N5_KANJI.length}</div><div>approximate N5 kanji</div></div><div class="card"><div class="stat">${N5_READINGS.length+N5_LISTENING.length}</div><div>original reading and listening practices</div></div></div><h2 class="section">Official N5 test structure</h2><div class="grid"><article class="card"><h3>Vocabulary · 20 min</h3><p>Kanji reading · orthography · contextual expressions · paraphrases</p></article><article class="card"><h3>Grammar & reading · 40 min</h3><p>Sentence grammar · sentence composition · text grammar · short and mid-size passages · information retrieval</p></article><article class="card"><h3>Listening · 30 min</h3><p>Task-based comprehension · key points · verbal expressions · quick response</p></article></div><div class="card"><h3>What this alignment means</h3><p>The JLPT describes N5 reading as understanding typical expressions and sentences in hiragana, katakana, and basic kanji; listening focuses on short, slowly spoken everyday and classroom conversations.</p><p>This app maps practice to the JLPT’s published level summary and question types. It does not claim endorsement. JLPT vocabulary, kanji, and grammar lists are not published as a current official specification; the counts here are a community approximation.</p><p class="notice">References: <a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank" rel="noopener">N5 level summary</a> · <a href="https://www.jlpt.jp/e/guideline/testsections.html" target="_blank" rel="noopener">test sections and item types</a> · <a href="https://www.jlpt.jp/e/faq/" target="_blank" rel="noopener">why vocabulary/kanji/grammar lists are not published</a></p><p class="notice">Community-derived study list: OpenJLPT · CC BY-SA 4.0. Word and kanji levels follow Jonathan Waller’s lists; example sentences link to Tatoeba. <a href="DATA_SOURCES.md">Data sources and licenses</a>.</p></div>`;
+ else if(n5Tab==='mock')body=n5MockPage();
+ else body=`<div class="grid"><div class="card"><div class="stat">${N5_VOCAB.length}</div><div>approximate vocabulary entries</div></div><div class="card"><div class="stat">${N5_GRAMMAR.length}</div><div>grammar reference points</div></div><div class="card"><div class="stat">${N5_KANJI.length}</div><div>approximate N5 kanji</div></div><div class="card"><div class="stat">${N5_READINGS.length+N5_LISTENING.length}</div><div>original reading and listening practices</div></div></div><div class="card"><div class="row between"><div><h2>Ready for a timed run?</h2><p>Try a 60-question practice mock across all three N5 sections.</p></div><button class="btn" onclick="startN5Mock()">Start timed mock →</button></div><p class="notice">Practice questions are original. The score is a raw practice result, not a JLPT scaled score or pass prediction.</p></div><h2 class="section">Official N5 test structure</h2><div class="grid"><article class="card"><h3>Vocabulary · 20 min</h3><p>Kanji reading · orthography · contextual expressions · paraphrases</p></article><article class="card"><h3>Grammar & reading · 40 min</h3><p>Sentence grammar · sentence composition · text grammar · short and mid-size passages · information retrieval</p></article><article class="card"><h3>Listening · 30 min</h3><p>Task-based comprehension · key points · verbal expressions · quick response</p></article></div><div class="card"><h3>What this alignment means</h3><p>The JLPT describes N5 reading as understanding typical expressions and sentences in hiragana, katakana, and basic kanji; listening focuses on short, slowly spoken everyday and classroom conversations.</p><p>This app maps practice to the JLPT’s published level summary and question types. It does not claim endorsement. JLPT vocabulary, kanji, and grammar lists are not published as a current official specification; the counts here are a community approximation.</p><p class="notice">References: <a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank" rel="noopener">N5 level summary</a> · <a href="https://www.jlpt.jp/e/guideline/testsections.html" target="_blank" rel="noopener">test sections and item types</a> · <a href="https://www.jlpt.jp/e/faq/" target="_blank" rel="noopener">why vocabulary/kanji/grammar lists are not published</a></p><p class="notice">Community-derived study list: OpenJLPT · CC BY-SA 4.0. Word and kanji levels follow Jonathan Waller’s lists; example sentences link to Tatoeba. <a href="DATA_SOURCES.md">Data sources and licenses</a>.</p></div>`;
  return `${header('JLPT N5 preparation','An N5-focused study hub mapped to published JLPT abilities and item formats. Approximate lists are clearly labeled.','N5 COURSE')}<div class="tabs">${tabs.map(x=>`<button class="tab ${n5Tab===x[0]?'active':''}" onclick="n5Set('${x[0]}')">${x[1]}</button>`).join('')}</div>${body}`;
+}
+const N5_MOCK_SECTIONS=[['Vocabulary','vocabulary',20],['Grammar & reading','grammar-reading',40],['Listening','listening',30]];
+function startN5Mock(){
+ stopN5MockTimer();
+ const vocab=shuffle(N5_VOCAB).slice(0,20).map(w=>buildN5Question('vocabulary',w));
+ const grammar=Array.from({length:10},()=>buildN5Question('grammar'));
+ const readingPool=shuffle(N5_READINGS),reading=Array.from({length:10},(_,i)=>buildN5Question('reading',readingPool[i%readingPool.length]));
+ const listening=Array.from({length:20},(_,i)=>buildN5Question('listening',N5_LISTENING[i%N5_LISTENING.length]));
+ const pools=[vocab,[...grammar,...reading],listening];
+ n5Mock={sections:N5_MOCK_SECTIONS.map((s,i)=>({name:s[0],minutes:s[2],questions:pools[i],answers:Array(pools[i].length).fill(null)})),sectionIndex:0,questionIndex:0,complete:false};
+ beginN5MockSection();n5Tab='mock';render();
+}
+function beginN5MockSection(){n5Mock.endAt=Date.now()+n5Mock.sections[n5Mock.sectionIndex].minutes*60000;stopN5MockTimer();n5MockTimer=setInterval(n5MockTick,1000)}
+function stopN5MockTimer(){if(n5MockTimer){clearInterval(n5MockTimer);n5MockTimer=null}}
+function n5MockTick(){if(!n5Mock||n5Mock.complete)return;if(Date.now()>=n5Mock.endAt){finishN5MockSection();return}if(view==='n5'&&n5Tab==='mock'){const clock=$('n5MockClock');if(clock)clock.textContent=n5MockClock()}}
+function finishN5MockSection(){
+ if(!n5Mock||n5Mock.complete)return;
+ if(n5Mock.sectionIndex<N5_MOCK_SECTIONS.length-1){n5Mock.sectionIndex++;n5Mock.questionIndex=0;beginN5MockSection();render()}
+ else{n5Mock.complete=true;stopN5MockTimer();render()}
+}
+function n5MockMove(delta){const s=n5Mock.sections[n5Mock.sectionIndex];n5Mock.questionIndex=Math.max(0,Math.min(s.questions.length-1,n5Mock.questionIndex+delta));render()}
+function n5MockAnswer(i){if(!n5Mock)return;const s=n5Mock.sections[n5Mock.sectionIndex];s.answers[n5Mock.questionIndex]=i;render()}
+function n5MockPlayAudio(){const q=n5Mock?.sections[n5Mock.sectionIndex]?.questions[n5Mock.questionIndex];if(q?.audio)speak(q.audio)}
+function n5MockClock(){const left=Math.max(0,Math.ceil((n5Mock.endAt-Date.now())/1000));return `${String(Math.floor(left/60)).padStart(2,'0')}:${String(left%60).padStart(2,'0')}`}
+function n5MockPage(){
+ if(!n5Mock)return `<div class="card"><h2>Timed N5 practice mock</h2><p>Work through 60 original practice questions across timed sections. Each section has its own countdown; finishing early moves you forward.</p><div class="grid">${N5_MOCK_SECTIONS.map(s=>`<article class="card"><h3>${s[0]} · ${s[2]} minutes</h3></article>`).join('')}</div><p class="notice">Listening prompts are available with the play button. This is an original practice set, not an official JLPT paper. Raw results cannot predict the JLPT’s scaled score.</p><button class="btn" onclick="startN5Mock()">Begin mock exam</button></div>`;
+ if(n5Mock.complete)return `<div class="card"><div class="eyebrow">MOCK COMPLETE</div><h2>Your practice results</h2><div class="grid">${n5Mock.sections.map(s=>{const correct=s.answers.reduce((n,a,i)=>n+(a===s.questions[i].correct?1:0),0),done=s.answers.filter(a=>a!==null).length;return `<article class="card"><h3>${esc(s.name)}</h3><div class="stat">${correct} / ${s.questions.length}</div><p>${done} answered · ${s.questions.length-done} unanswered</p></article>`}).join('')}</div><div class="feedback"><b>Total:</b> ${n5Mock.sections.reduce((n,s)=>n+s.answers.reduce((m,a,i)=>m+(a===s.questions[i].correct?1:0),0),0)} / 60 correct</div><p class="notice">This is a raw score on original practice items. JLPT results use scaled scoring; this score does not predict a pass or fail.</p><button class="btn" onclick="startN5Mock()">Try another mock</button></div>`;
+ const s=n5Mock.sections[n5Mock.sectionIndex],q=s.questions[n5Mock.questionIndex],selected=s.answers[n5Mock.questionIndex],answered=s.answers.filter(a=>a!==null).length;
+ return `<div class="card"><div class="row between"><div><div class="eyebrow">SECTION ${n5Mock.sectionIndex+1} OF 3</div><h2>${esc(s.name)}</h2><span class="pill">${answered}/${s.questions.length} answered</span></div><div class="stat" id="n5MockClock" aria-label="Time remaining">${n5MockClock()}</div></div><div class="row between"><button class="btn secondary" ${n5Mock.questionIndex===0?'disabled':''} onclick="n5MockMove(-1)">← Previous</button><b>Question ${n5Mock.questionIndex+1} of ${s.questions.length}</b><button class="btn secondary" ${n5Mock.questionIndex===s.questions.length-1?'disabled':''} onclick="n5MockMove(1)">Next →</button></div><article class="feedback" style="margin-top:16px"><b>${esc(q.type)}</b>${q.audio?`<div><button class="btn secondary" onclick="n5MockPlayAudio()">▶ Play listening prompt</button></div>`:''}${q.text?`<div class="word jp" style="white-space:pre-line">${esc(q.text)}</div>`:''}<p>${esc(q.prompt)}</p>${q.options.map((o,i)=>`<button class="option ${selected===i?'selected':''}" aria-pressed="${selected===i}" onclick="n5MockAnswer(${i})">${esc(o)}</button>`).join('')}</article><div class="row between" style="margin-top:14px"><span class="notice">Unanswered questions count as incorrect.</span><button class="btn" onclick="finishN5MockSection()">${n5Mock.sectionIndex===2?'Finish exam':'Finish section →'}</button></div></div>`;
 }
 const N5_GRAMMAR_FORM_ITEMS=[
  {type:'Sentential grammar · select the form',text:'わたし ___ 学生です。',options:['は','を','で','に'],answer:0},

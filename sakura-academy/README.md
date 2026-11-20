@@ -8,7 +8,7 @@ An offline first Japanese beginner learning app, maintained as a small static we
 - `styles.css` — layout, responsive styles, and visual design.
 - `src/content.js` — original lessons, kana, expanded kanji, and ordered stroke paths.
 - `src/n5-data.js` — approximate N5 vocabulary, grammar, kanji, and original reading/listening practice.
-- `src/n5-app.js` — N5 course hub, searchable study lists, and exam-format practice.
+- `src/n5-app.js` — N5 course hub, searchable study lists, exam-format practice, and a timed 60-question mock with 20/40/30-minute sections.
 - `src/data/` — upstream OpenJLPT source data and attribution notice.
 - `DATA_SOURCES.md` — JLPT scope, coverage mapping, data attribution, and licenses.
 - `src/app.js` — navigation, practice interactions, and local progress.
