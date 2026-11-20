@@ -35,7 +35,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-020 — Stroke-order step can carry over to the next character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-022 — Sakura Academy favicon is missing from the built site | Codex | Work in progress | 80% | 2026-11-21 | Not recorded |
+| SA-022 — Sakura Academy favicon is missing from the built site | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -349,9 +349,9 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-022 — Sakura Academy favicon is missing from the built site
 
-- **Status:** Work in progress (80%)
-- **Evidence:** The app shell links to `favicon.svg` and the service worker precaches it, but the deployed asset returns HTTP 404. The static build script copies an explicit file list and omits `favicon.svg`, so the published icon is missing.
-- **Impact:** The browser tab and saved bookmark still lack a Sakura Academy brand icon.
-- **Implementation:** Added a self-contained SVG icon, app-shell link, and offline precache entry.
-- **Why open:** The build must copy the SVG into the deployed project directory before the issue can close.
+- **Status:** Work in progress (90%)
+- **Evidence:** The build script now copies `favicon.svg` into the published Academy project. A regression test runs the build in an isolated temporary project and compares the emitted icon byte-for-byte; deployment verification is pending.
+- **Impact:** The browser tab and saved bookmark still lack a Sakura Academy brand icon until the updated build is published.
+- **Implementation:** Added a self-contained SVG icon, app-shell link, offline precache entry, and an explicit build copy step.
+- **Why open:** Verify the hosted favicon returns HTTP 200 after deployment before closure.
 - **Fix estimate:** Small: one build copy step plus regression and deployment checks.

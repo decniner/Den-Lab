@@ -1,7 +1,9 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
+const os = require('node:os');
 const fs = require('node:fs');
 const path = require('node:path');
+const { spawnSync } = require('node:child_process');
 const vm = require('node:vm');
 
 const project = path.resolve(__dirname, '..');
@@ -81,6 +83,20 @@ test('app registers the worker relative to its own project route', () => {
   assert.match(html, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)/);
   assert.match(html, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/);
   assert.match(html, /sakura-academy/);
+});
+
+test('static build copies the favicon into the published Academy project', () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), 'sakura-build-'));
+  try {
+    const fixtureProject = path.join(fixture, 'sakura-academy');
+    const output = path.join(fixture, 'site');
+    fs.cpSync(project, fixtureProject, { recursive: true });
+    const result = spawnSync(process.execPath, [path.join(fixtureProject, 'build.mjs'), output], { encoding: 'utf8' });
+    assert.equal(result.status, 0, result.stderr || result.stdout);
+    assert.equal(fs.readFileSync(path.join(output, 'sakura-academy', 'favicon.svg'), 'utf8'), fs.readFileSync(path.join(project, 'favicon.svg'), 'utf8'));
+  } finally {
+    fs.rmSync(fixture, { recursive: true, force: true });
+  }
 });
 
 test('visible app version and offline cache version stay in sync', () => {
