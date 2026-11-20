@@ -20,7 +20,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-004 — Vocabulary cards lack practical usage and context guidance | Codex | Closed | 100% | 2026-11-20 | Not recorded |
 | SA-005 — Repeatable study actions could award XP repeatedly | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-006 — Repeated answer clicks could distort lesson accuracy | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
+| SA-007 — Hosted offline refresh/update cycle not fully verified | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
 | SA-008 — Lesson grammar explanations are too brief and generic | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-009 — Imported progress can inject unsafe settings markup | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-010 — Imported assessment flag can bypass strict-mode checklist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -186,13 +186,13 @@ Every published app change must bump the small footer version and its update dat
 - **Verification:** All 12 course/offline tests pass. The course validator passes. Hosted browser checks confirmed the matching example, translation, explanation, and word tiles in Lessons 1 and 12. Japanese usage was checked against Japan Foundation Irodori grammar notes and Tokyo Metropolitan University mic-J N5 materials.
 - **Fix estimate:** Time not recorded.
 
-### SA-007 — Hosted app shell is not cached for offline use
+### SA-007 — Hosted offline refresh/update cycle not fully verified
 
 - **Status:** Work in progress (90%)
-- **Evidence:** The Academy service worker precaches the app/tracker, uses network-first navigation with an offline app fallback, and versions its cache with the footer. The hosted app loads in the browser; GitHub Pages serves the worker with JavaScript content type and all 13 precached URLs return HTTP 200. Local lifecycle tests cover online navigation being cached and then served after network loss, offline fallback, and failed shell installation not activating.
+- **Evidence:** The Academy service worker precaches the app/tracker, uses network-first navigation with an offline app fallback, and versions its cache with the footer. GitHub Pages serves the worker with JavaScript content type and all 13 precached URLs return HTTP 200. In the live browser, a previously open v1.5.9 tab loaded v1.5.17 after refresh. Local lifecycle tests cover online navigation being cached and then served after network loss, offline fallback, and failed shell installation not activating.
 - **Impact:** Without a proven offline refresh cycle, learners could still lose access to lessons when disconnected.
 - **Implementation:** Added an Academy-route service worker, precached the app and tracker shell, provided network-first navigation with offline app fallback, and tied cache version to the visible app version.
-- **Verification:** 31 content, offline-shell, progress-validation, and lesson-progress tests pass; service-worker syntax and hosted asset checks pass. The lifecycle suite now verifies online navigation is cached for a later offline refresh and a failed shell install does not activate. Browser controls available in this session block access to internal offline/network controls, so an actual offline refresh/update cycle has not been observed.
+- **Verification:** Focused content, offline-shell, progress-validation, and lesson-progress tests pass; service-worker syntax and hosted asset checks pass. The live refresh confirms an old open tab obtains the current online version. Browser controls available in this session do not expose offline/network emulation, so an actual offline refresh/update cycle has not been observed.
 - **Why open:** Run the remaining real offline refresh/update cycle in a browser with network controls.
 - **Fix estimate:** Not recorded.
 
@@ -290,3 +290,10 @@ Every published app change must bump the small footer version and its update dat
 - **Issue covered:** SA-018.
 - **Checks passed:** Legacy pass reset, valid current-run preservation, mixed-skills assessment validation, and full focused Academy test suite.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
+
+
+### Offline update verification · 2026-11-21 · SA-007 advanced evidence
+
+- **Checks passed:** An existing hosted tab showing v1.5.9 was refreshed and rendered v1.5.17. The live online update path works for a previously open tab.
+- **Still unverified:** Refreshing the hosted app while offline and confirming the cached shell renders.
+- **Status:** SA-007 remains Work in progress at 90%.
