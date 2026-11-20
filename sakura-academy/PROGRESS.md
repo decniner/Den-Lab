@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 25
-- Work in progress: 0
+- Total tracked: 26
+- Work in progress: 1
 - New: 1
 - Closed: 24
-- Timeline gaps: 25
+- Timeline gaps: 26
 
 ## Issue register
 
@@ -38,7 +38,8 @@ Every published app change must bump the small footer version and its update dat
 | SA-022 — Sakura Academy favicon is missing from the built site | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-023 — Vocabulary search placeholder is clipped on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-024 — Learners cannot adjust interface text size | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-025 — Text size preference misses inline-styled character samples | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-025 — Text size preference misses inline-styled character samples | Codex | Work in progress | 50% | 2026-11-21 | Not recorded |
+| SA-026 — Mobile navigation labels are clipped at phone widths | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -409,6 +410,15 @@ Every published app change must bump the small footer version and its update dat
 - **Status:** New (0%)
 - **Evidence:** At Extra large, browser inspection showed ordinary lesson headings scale from 29px to 35.96px, while inline-styled handwriting model and reference characters stay fixed at 72px and 52px.
 - **Impact:** Character samples and other inline-sized instructional text do not respond to the reading-size preference.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Small.
+
+### SA-026 — Mobile navigation labels are clipped at phone widths
+
+- **Status:** New (0%)
+- **Evidence:** At 390px in mobile browser emulation, the bottom bar visibly clips labels including Lessons and Settings when interface text is enlarged; shorter widths increase the truncation.
+- **Impact:** Learners may have difficulty identifying or selecting the bottom navigation destinations.
 - **Resolution:** Pending.
 - **Verification:** Pending.
 - **Fix estimate:** Small.
