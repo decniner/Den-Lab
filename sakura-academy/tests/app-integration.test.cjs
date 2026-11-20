@@ -28,3 +28,19 @@ test('Settings exposes a persistent accessible text-size preference', () => {
   assert.match(styles, /body\[data-text-size="large"\].*--text-scale:1\.12/);
   assert.match(styles, /body\[data-text-size="extra-large"\].*--text-scale:1\.24/);
 });
+
+test('inline Japanese samples use text-size-aware styles', () => {
+  assert.doesNotMatch(appSource, /style="[^"]*font-size:/);
+  for (const selector of ['.jp-dialogue', '.jp-prompt', '.practice-model', '.practice-reference-char']) {
+    assert.match(styles, new RegExp(`${selector.replace('.', '\\.')}\\{font-size:calc\\(var\\(--text-scale, 1\\) \\*`));
+  }
+});
+
+test('mobile text-size overrides keep important declarations valid', () => {
+  assert.match(styles, /font-size:calc\(var\(--text-scale, 1\) \* 54px\)!important/);
+  assert.doesNotMatch(styles, /calc\(var\(--text-scale, 1\) \* 54px!important\)/);
+  assert.match(styles, /\.sidebar \.navtext\[data-mobile\]\{font-size:0!important\}/);
+  assert.doesNotMatch(styles, /font-size:calc\(var\(--text-scale, 1\) \* 0\)/);
+  const mobileLabels = [...appSource.matchAll(/\['(?:dashboard|n5|lessons|kana|handwriting|kanji|flashcards|settings)','[^']*','[^']*','([^']*)'\]/g)].map(match => match[1]);
+  assert.deepEqual(mobileLabels, ['Home', 'N5', 'Learn', 'Kana', 'Write', 'Kanji', 'Cards', 'Prefs']);
+});

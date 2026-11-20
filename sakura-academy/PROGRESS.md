@@ -5,9 +5,9 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 27
-- Work in progress: 1
-- New: 2
-- Closed: 24
+- Work in progress: 0
+- New: 0
+- Closed: 27
 - Timeline gaps: 27
 
 ## Issue register
@@ -38,9 +38,9 @@ Every published app change must bump the small footer version and its update dat
 | SA-022 — Sakura Academy favicon is missing from the built site | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-023 — Vocabulary search placeholder is clipped on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-024 — Learners cannot adjust interface text size | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-025 — Text size preference misses inline-styled character samples | Codex | Work in progress | 50% | 2026-11-21 | Not recorded |
-| SA-026 — Mobile navigation labels are clipped at phone widths | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-027 — Resolved issues are mixed with active tracker items | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-025 — Text size preference misses inline-styled character samples | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-026 — Mobile navigation labels are clipped at phone widths | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-027 — Resolved issues are mixed with active tracker items | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -408,27 +408,48 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-025 — Text size preference misses inline-styled character samples
 
-- **Status:** New (0%)
-- **Evidence:** At Extra large, browser inspection showed ordinary lesson headings scale from 29px to 35.96px, while inline-styled handwriting model and reference characters stay fixed at 72px and 52px.
-- **Impact:** Character samples and other inline-sized instructional text do not respond to the reading-size preference.
-- **Resolution:** Pending.
-- **Verification:** Pending.
-- **Fix estimate:** Small.
+- **Status:** Closed (100%)
+- **Evidence:** Inline Japanese samples use text-size-aware classes. At 390px and 320px, the handwriting model scales to 54px / 60.48px / 66.96px and the reference to 52px / 58.24px / 64.48px at Standard / Large / Extra large. Lesson headings scale consistently; neither width has horizontal overflow.
+- **Impact:** Resolved: handwriting and reference characters follow the learner’s text-size preference.
+- **Resolution:** Replaced inline font sizes with reusable scaled classes and corrected the mobile important declaration.
+- **Verification:** Mobile browser checks covered both phone widths and all three size settings. Full Academy tests pass.
+- **Fix estimate:** Time not recorded.
 
 ### SA-026 — Mobile navigation labels are clipped at phone widths
 
-- **Status:** New (0%)
-- **Evidence:** At 390px in mobile browser emulation, the bottom bar visibly clips labels including Lessons and Settings when interface text is enlarged; shorter widths increase the truncation.
-- **Impact:** Learners may have difficulty identifying or selecting the bottom navigation destinations.
-- **Resolution:** Pending.
-- **Verification:** Pending.
-- **Fix estimate:** Small.
+- **Status:** Closed (100%)
+- **Evidence:** The bottom bar now displays Home, N5, Learn, Kana, Write, Kanji, Cards, and Prefs; each button keeps its full accessible name. At 390px and 320px, labels fit and document width matches the viewport for all three text-size choices.
+- **Impact:** Resolved: destinations remain identifiable in the mobile navigation.
+- **Resolution:** Restored the zero-size original label rule and shortened visible aliases.
+- **Verification:** Mobile browser checks covered all eight navigation buttons and all text settings without horizontal overflow.
+- **Fix estimate:** Time not recorded.
 
 ### SA-027 — Resolved issues are mixed with active tracker items
 
-- **Status:** New (0%)
-- **Evidence:** The issue register displays all 24 closed items together with open work and has no dedicated archive view.
-- **Impact:** The active queue is harder to scan, and past fixes are not clearly separated from work that still needs attention.
-- **Resolution:** Pending.
-- **Verification:** Pending.
-- **Fix estimate:** Small.
+- **Status:** Closed (100%)
+- **Evidence:** The tracker defaults to Active issues and provides separate Archive and All views. All 27 issues remain searchable; closed items appear in Archive, and summary totals continue to include the full register.
+- **Impact:** Resolved: open work is separated from completed history while past fixes remain available.
+- **Resolution:** Added keyboard-accessible Active / Archive / All controls with live counts and view-specific headings.
+- **Verification:** Regression tests exercise all three scopes and confirm summary values match the register. Mobile browser preview confirms the view controls fit the viewport.
+- **Fix estimate:** Time not recorded.
+
+### Mobile audit issue release · 2026-11-21 · v1.5.35
+
+- **Issue recorded:** SA-025 — text size preference misses inline-styled character samples.
+- **Status at release:** New.
+
+### Mobile browser audit release · 2026-11-21 · v1.5.36
+
+- **Issue recorded:** SA-026 — mobile navigation labels are clipped at phone widths.
+- **SA-025 progress:** Work in progress while mobile text scaling is verified.
+
+### Tracker archive request release · 2026-11-21 · v1.5.37
+
+- **Issue recorded:** SA-027 — resolved issues are mixed with active tracker items.
+- **Status at release:** New.
+
+### Mobile readability and archive release · 2026-11-21 · SA-025–SA-027 closed
+
+- **Checks passed:** 49 Academy tests pass. Mobile browser mode verified 390px and 320px at Standard, Large, and Extra large; handwriting samples, lesson text, bottom navigation, and issue archive remain usable without horizontal page overflow.
+- **Issues covered:** SA-025, SA-026, SA-027.
+- **Version:** v1.5.38.
