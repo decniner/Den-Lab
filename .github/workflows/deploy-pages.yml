@@ -44,7 +44,7 @@ jobs:
       - name: Test SIJ Dev feature loading
         run: node --test tests/feature-loading.test.js tests/planner-review-fixes.test.js
       - name: Validate Sakura Academy course content
-        run: node --test sakura-academy/tests/content-quality.test.cjs sakura-academy/tests/offline-shell.test.cjs sakura-academy/tests/progress-validation.test.cjs
+        run: node --test sakura-academy/tests/content-quality.test.cjs sakura-academy/tests/offline-shell.test.cjs sakura-academy/tests/progress-validation.test.cjs sakura-academy/tests/lesson-progress.test.cjs
       - name: Check Dev Version JavaScript
         run: |
           while IFS= read -r -d '' file; do node --check "$file"; done < <(find sijdev siphdev -type f -name '*.js' -print0)

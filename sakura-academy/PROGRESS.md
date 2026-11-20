@@ -4,10 +4,10 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 10
+- Total tracked: 11
 - Work in progress: 1
 - New: 0
-- Closed: 9
+- Closed: 10
 - Timeline gaps: 8
 
 ## Issue register
@@ -24,6 +24,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-008 — Lesson grammar explanations are too brief and generic | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-009 — Imported progress can inject unsafe settings markup | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-010 — Imported assessment flag can bypass strict-mode checklist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-011 — Lesson tabs do not show activity status | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -79,6 +80,15 @@ Every published app change must bump the small footer version and its update dat
 - **Verification:** Browser confirmed listening options disable after a correct answer, the retry control is visible, and no console errors occur.
 - **Fix estimate:** Time not recorded.
 
+### SA-011 — Lesson tabs do not show activity status
+
+- **Status:** Closed (100%)
+- **Evidence:** Lesson tabs now reflect measured progress: green for completed, amber for active or in-progress, the existing dark style for not started, and red for a failed five-question assessment.
+- **Impact:** Resolved: learners can scan lesson sections to see what is complete, underway, untouched, or needs an assessment retry.
+- **Resolution:** Added persisted tab visits and a shared status evaluator based on learned vocabulary, correct practice answers, and validated assessment results. Statuses include accessible names and hover labels.
+- **Verification:** Four focused tests cover untouched/visited tabs, partial/complete vocabulary, correct/incorrect practice, passing/in-progress/failed assessments, and forged pass flags. The full 27-test focused suite passes.
+- **Fix estimate:** Time not recorded.
+
 ### SA-010 — Imported assessment flag can bypass strict-mode checklist
 
 - **Status:** Closed (100%)
@@ -109,10 +119,10 @@ Every published app change must bump the small footer version and its update dat
 ### SA-007 — Hosted app shell is not cached for offline use
 
 - **Status:** Work in progress (90%)
-- **Evidence:** The Academy service worker precaches the app/tracker, uses network-first navigation with an offline app fallback, and versions its cache with the footer. The hosted app loads in the browser; GitHub Pages serves the worker with JavaScript content type and all 13 precached URLs return HTTP 200. Automated tests cover precaching, offline navigation fallback, route registration, and cache version alignment.
+- **Evidence:** The Academy service worker precaches the app/tracker, uses network-first navigation with an offline app fallback, and versions its cache with the footer. The hosted app loads in the browser; GitHub Pages serves the worker with JavaScript content type and all 13 precached URLs return HTTP 200. Review found local tests did not yet exercise an online navigation being cached and then served after the network drops, or a failed shell install staying unactivated.
 - **Impact:** Without a proven offline refresh cycle, learners could still lose access to lessons when disconnected.
 - **Implementation:** Added an Academy-route service worker, precached the app and tracker shell, provided network-first navigation with offline app fallback, and tied cache version to the visible app version.
-- **Verification:** 16 content/offline-shell tests pass; service-worker syntax and hosted asset checks pass. Browser controls available in this session block access to internal offline/network controls, so an actual offline refresh/update cycle has not been observed.
+- **Verification:** 27 content, offline-shell, progress-validation, and lesson-progress tests pass; service-worker syntax and hosted asset checks pass. The lifecycle suite now verifies online navigation is cached for a later offline refresh and a failed shell install does not activate. Browser controls available in this session block access to internal offline/network controls, so an actual offline refresh/update cycle has not been observed.
 - **Why open:** Run the remaining real offline refresh/update cycle in a browser with network controls.
 - **Fix estimate:** Not recorded.
 
@@ -161,3 +171,10 @@ Every published app change must bump the small footer version and its update dat
 - **Issue covered:** SA-010.
 - **Checks passed:** 21 focused content, offline-shell, and progress-validation tests; syntax checks; static build.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader device/browser coverage remains limited.
+
+
+### Lesson progress batch · 2026-11-21 · tab status issue closed
+
+- **Issue covered:** SA-011.
+- **Checks passed:** 27 focused tests; JavaScript syntax checks; standalone build with the status helper included.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; browser/device coverage remains limited.

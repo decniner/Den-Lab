@@ -12,6 +12,7 @@ const n5Data = await readFile(join(projectDir, 'src/n5-data.js'), 'utf8');
 const dataSources = await readFile(join(projectDir, 'DATA_SOURCES.md'), 'utf8');
 const n5App = await readFile(join(projectDir, 'src/n5-app.js'), 'utf8');
 const validation = await readFile(join(projectDir, 'src/content-validation.js'), 'utf8');
+const lessonProgress = await readFile(join(projectDir, 'src/lesson-progress.js'), 'utf8');
 const rewardGuard = await readFile(join(projectDir, 'src/reward-guard.js'), 'utf8');
 const app = await readFile(join(projectDir, 'src/app.js'), 'utf8');
 
@@ -28,8 +29,8 @@ await writeFile(join(outputDir, 'DATA_SOURCES.md'), dataSources);
 const standalone = html
   .replace('<link rel="stylesheet" href="styles.css">', `<style>\n${css}\n</style>`)
   .replace(
-    '<script src="src/n5-data.js"></script><script src="src/content.js"></script><script src="src/n5-app.js"></script><script src="src/content-validation.js"></script><script src="src/reward-guard.js"></script><script src="src/app.js"></script>',
-    `<script>\n${n5Data}\n${content}\n${n5App}\n${validation}\n${rewardGuard}\n${app}\n</script>`,
+    '<script src="src/n5-data.js"></script><script src="src/content.js"></script><script src="src/n5-app.js"></script><script src="src/content-validation.js"></script><script src="src/lesson-progress.js"></script><script src="src/reward-guard.js"></script><script src="src/app.js"></script>',
+    `<script>\n${n5Data}\n${content}\n${n5App}\n${validation}\n${lessonProgress}\n${rewardGuard}\n${app}\n</script>`,
   );
 await writeFile(join(outputDir, 'genki-interactive-academy.html'), standalone);
 await writeFile(resolve(projectDir, '..', 'genki-interactive-academy.html'), standalone);
