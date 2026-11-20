@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 14
+- Total tracked: 15
 - Work in progress: 1
 - New: 0
-- Closed: 13
-- Timeline gaps: 8
+- Closed: 14
+- Timeline gaps: 15
 
 ## Issue register
 
@@ -28,6 +28,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-012 — Non-boolean imported progress can satisfy strict checkpoints | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-013 — Published issue tracker script fails to parse | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-014 — Lesson tabs can inherit unrelated completion evidence | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-015 — Progress summary timeline-gap count disagrees with tracker | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -45,6 +46,15 @@ Every published app change must bump the small footer version and its update dat
 - **Impact:** Resolved: green tab labels now reflect activity within that specific section.
 - **Resolution:** Added per-lesson grammar-part progress with safe backup sanitization; preserved focus while refreshing the live tab status after each selection.
 - **Verification:** Tests cover unrelated lesson completion, builder/grammar separation, untouched/visited/partial/complete states, and sanitization of duplicate or invalid indexes. All 35 focused Academy tests pass.
+- **Fix estimate:** Time not recorded.
+
+### SA-015 — Progress summary timeline-gap count disagrees with tracker
+
+- **Status:** Closed (100%)
+- **Evidence:** Both summaries now report 15 timeline gaps. The metric counts an issue when its discovery date or fix duration is unrecorded; all 15 issues currently lack a fix duration record.
+- **Impact:** Resolved: the project register and published tracker no longer show conflicting totals.
+- **Resolution:** Reconciled the source count and added a regression test comparing all five markdown summary metrics with the rendered tracker cards.
+- **Verification:** All 35 focused Academy tests pass, including the cross-summary consistency check.
 - **Fix estimate:** Time not recorded.
 
 ### SA-001 — Speaker B replies were identical across lessons
@@ -221,4 +231,11 @@ Every published app change must bump the small footer version and its update dat
 
 - **Issues covered:** SA-013 and SA-014.
 - **Checks passed:** 35 focused tests; tracker inline JavaScript parsed and executed against a DOM stub; application and helper syntax checks; standalone build.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
+
+
+### Audit summary reconciliation · 2026-11-21 · tracker counts synchronized
+
+- **Issue covered:** SA-015.
+- **Checks passed:** The focused tracker test compares Total, Work in progress, New, Closed, and Timeline gaps with the rendered issue tracker.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.

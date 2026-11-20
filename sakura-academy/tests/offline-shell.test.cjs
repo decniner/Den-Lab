@@ -8,6 +8,7 @@ const project = path.resolve(__dirname, '..');
 const workerSource = fs.readFileSync(path.join(project, 'sw.js'), 'utf8');
 const html = fs.readFileSync(path.join(project, 'index.html'), 'utf8');
 const trackerHtml = fs.readFileSync(path.join(project, 'issue-tracker.html'), 'utf8');
+const progressMarkdown = fs.readFileSync(path.join(project, 'PROGRESS.md'), 'utf8');
 
 function makeWorker(fetchImpl = async () => { throw new Error('offline'); }, { failInstall = false } = {}) {
   const listeners = {};
@@ -96,11 +97,18 @@ test('issue tracker script parses and renders all registered issues', () => {
   const selectors = ['#summary', '#search', '#status', '#rows', '#details'];
   const nodes = Object.fromEntries(selectors.map(selector => [selector, { value: selector === '#status' ? 'all' : '', innerHTML: '', addEventListener() {} }]));
   vm.runInNewContext(script, { document: { querySelector: selector => nodes[selector] } });
-  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">14<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">15<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">13<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">14<\/div>/);
   assert.match(nodes['#rows'].innerHTML, /SA-013/);
   assert.match(nodes['#rows'].innerHTML, /SA-014/);
+  assert.match(nodes['#rows'].innerHTML, /SA-015/);
+
+  for (const label of ['Total tracked', 'Work in progress', 'New', 'Closed', 'Timeline gaps']) {
+    const sourceValue = progressMarkdown.match(new RegExp(`^- ${label}: (\\d+)$`, 'm'))?.[1];
+    const trackerValue = nodes['#summary'].innerHTML.match(new RegExp(`${label}[\\s\\S]*?<div class="num">(\\d+)<\\/div>`))?.[1];
+    assert.equal(Number(trackerValue), Number(sourceValue), `${label} matches PROGRESS.md`);
+  }
 });
 
 
