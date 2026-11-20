@@ -4,9 +4,9 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 9
+- Total tracked: 10
 - Work in progress: 1
-- New: 0
+- New: 1
 - Closed: 8
 - Timeline gaps: 8
 
@@ -23,6 +23,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-007 — Hosted app shell is not cached for offline use | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
 | SA-008 — Lesson grammar explanations are too brief and generic | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-009 — Imported progress can inject unsafe settings markup | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-010 — Imported assessment flag can bypass strict-mode checklist | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -77,6 +78,14 @@ Every published app change must bump the small footer version and its update dat
 - **Resolution:** Locked submitted controls and added explicit retry actions; sentence-builder submissions unlock only when the learner edits the sentence.
 - **Verification:** Browser confirmed listening options disable after a correct answer, the retry control is visible, and no console errors occur.
 - **Fix estimate:** Time not recorded.
+
+### SA-010 — Imported assessment flag can bypass strict-mode checklist
+
+- **Status:** New (0%)
+- **Evidence:** `strictChecklist()` treats any truthy `state.assessments[id].passed` as a completed assessment. Backup import checks only that `assessments` is an object, so `{ "1": { "passed": true } }` can satisfy this strict-mode item without five recorded answers.
+- **Impact:** Strict mode can unlock a lesson whose required mixed-skills assessment has no valid passing result.
+- **Why open:** Require a complete, well-formed five-answer result set with at least four correct before strict mode considers the assessment passed; add a regression test.
+- **Fix estimate:** Not recorded.
 
 ### SA-009 — Imported progress can inject unsafe settings markup
 
