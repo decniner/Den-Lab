@@ -1,10 +1,10 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { lessonTabStatus } = require('../src/lesson-progress.js');
+const { lessonTabStatus, sanitizeGrammarParts } = require('../src/lesson-progress.js');
 
 const types = ['vocabulary', 'grammar', 'dialogue', 'listening', 'writing'];
-const lesson = { id: 1, vocab: [{ id: '1-1' }, { id: '1-2' }] };
-const emptyState = () => ({ learned: {}, answers: [], assessments: {}, tabVisits: {} });
+const lesson = { id: 1, vocab: [{ id: '1-1' }, { id: '1-2' }], builder: ['わたし', 'は'] };
+const emptyState = () => ({ learned: {}, completed: {}, answers: [], assessments: {}, tabVisits: {}, grammarParts: {} });
 
 test('untouched tabs stay neutral and visited tabs become in progress', () => {
   const state = emptyState();
@@ -27,7 +27,33 @@ test('practice tabs complete only after a correct response', () => {
   assert.equal(lessonTabStatus('dialogue', lesson, state, types), 'in-progress');
   state.answers.push({ lesson: 1, format: 'dialogue', correct: true });
   assert.equal(lessonTabStatus('dialogue', lesson, state, types), 'complete');
-  assert.equal(lessonTabStatus('grammar', lesson, { ...state, answers: [{ lesson: 1, format: 'ordering', correct: true }] }, types), 'complete');
+  assert.equal(lessonTabStatus('builder', lesson, { ...state, answers: [{ lesson: 1, format: 'ordering', correct: true }] }, types), 'complete');
+});
+
+test('lesson completion and builder results do not mark unrelated tabs complete', () => {
+  const state = emptyState();
+  state.completed[1] = true;
+  state.answers.push({ lesson: 1, format: 'ordering', correct: true });
+  assert.equal(lessonTabStatus('vocab', lesson, state, types), 'not-started');
+  assert.equal(lessonTabStatus('grammar', lesson, state, types), 'not-started');
+  assert.equal(lessonTabStatus('builder', lesson, state, types), 'complete');
+});
+
+test('Grammar Lab progresses from token review separately from Sentence Builder', () => {
+  const grammarLesson = { ...lesson, builder: ['わたし', 'は', 'がくせい', 'です'] };
+  const state = emptyState();
+  state.tabVisits[1] = ['grammar'];
+  state.answers.push({ lesson: 1, format: 'ordering', correct: true });
+  assert.equal(lessonTabStatus('grammar', grammarLesson, state, types), 'in-progress');
+  state.grammarParts = { 1: [0, 1, 2] };
+  assert.equal(lessonTabStatus('grammar', grammarLesson, state, types), 'in-progress');
+  state.grammarParts[1].push(3);
+  assert.equal(lessonTabStatus('grammar', grammarLesson, state, types), 'complete');
+});
+
+test('grammar review progress drops unknown lessons, invalid indexes, and duplicates', () => {
+  const grammarLesson = { ...lesson, builder: ['わたし', 'は'] };
+  assert.deepEqual(sanitizeGrammarParts({ 1: [0, 0, 1, -1, 9, '1'], 99: [0], 2: 'invalid' }, [grammarLesson]), { 1: [0, 1] });
 });
 
 test('assessment tab distinguishes passing, active, failed, and forged pass records', () => {

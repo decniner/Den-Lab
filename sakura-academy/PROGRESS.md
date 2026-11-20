@@ -4,10 +4,10 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 12
+- Total tracked: 14
 - Work in progress: 1
 - New: 0
-- Closed: 11
+- Closed: 13
 - Timeline gaps: 8
 
 ## Issue register
@@ -26,6 +26,26 @@ Every published app change must bump the small footer version and its update dat
 | SA-010 — Imported assessment flag can bypass strict-mode checklist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-011 — Lesson tabs do not show activity status | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-012 — Non-boolean imported progress can satisfy strict checkpoints | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-013 — Published issue tracker script fails to parse | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-014 — Lesson tabs can inherit unrelated completion evidence | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+
+### SA-013 — Published issue tracker script fails to parse
+
+- **Status:** Closed (100%)
+- **Evidence:** Removed the orphaned text after SA-010. The issue tracker script now parses and executes, rendering its summary and all issue rows.
+- **Impact:** Resolved: the reliability tracker and its search controls render again.
+- **Resolution:** Added a regression test that compiles and executes the embedded tracker script and checks totals and newly registered issue rows.
+- **Verification:** All 35 focused Academy tests pass, including tracker parsing and rendering.
+- **Fix estimate:** Time not recorded.
+
+### SA-014 — Lesson tabs can inherit unrelated completion evidence
+
+- **Status:** Closed (100%)
+- **Evidence:** Grammar Lab and Sentence Builder now use independent progress evidence. Lesson-level completion no longer overrides individual tab states. Grammar Lab records each reviewed example part and completes only when all parts have been explored.
+- **Impact:** Resolved: green tab labels now reflect activity within that specific section.
+- **Resolution:** Added per-lesson grammar-part progress with safe backup sanitization; preserved focus while refreshing the live tab status after each selection.
+- **Verification:** Tests cover unrelated lesson completion, builder/grammar separation, untouched/visited/partial/complete states, and sanitization of duplicate or invalid indexes. All 35 focused Academy tests pass.
+- **Fix estimate:** Time not recorded.
 
 ### SA-001 — Speaker B replies were identical across lessons
 
@@ -194,4 +214,11 @@ Every published app change must bump the small footer version and its update dat
 
 - **Issue covered:** SA-012.
 - **Checks passed:** 31 focused tests; JavaScript syntax checks; standalone build.
+- **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
+
+
+### Tracker and lesson-status batch · 2026-11-21 · two issues closed
+
+- **Issues covered:** SA-013 and SA-014.
+- **Checks passed:** 35 focused tests; tracker inline JavaScript parsed and executed against a DOM stub; application and helper syntax checks; standalone build.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.

@@ -7,6 +7,7 @@ const vm = require('node:vm');
 const project = path.resolve(__dirname, '..');
 const workerSource = fs.readFileSync(path.join(project, 'sw.js'), 'utf8');
 const html = fs.readFileSync(path.join(project, 'index.html'), 'utf8');
+const trackerHtml = fs.readFileSync(path.join(project, 'issue-tracker.html'), 'utf8');
 
 function makeWorker(fetchImpl = async () => { throw new Error('offline'); }, { failInstall = false } = {}) {
   const listeners = {};
@@ -84,6 +85,22 @@ test('visible app version and offline cache version stay in sync', () => {
   const version = html.match(/v([0-9]+\.[0-9]+\.[0-9]+) · Updated /)?.[1];
   assert.ok(version, 'app footer has a semantic version');
   assert.ok(workerSource.includes(`sakura-academy-shell-v${version}`), 'service-worker cache uses the visible app version');
+});
+
+test('issue tracker script parses and renders all registered issues', () => {
+  const scripts = [...trackerHtml.matchAll(/<script>([\s\S]*?)<\/script>/g)];
+  assert.equal(scripts.length, 1, 'tracker contains one inline app script');
+  const script = scripts[0][1];
+  assert.doesNotThrow(() => new vm.Script(script), 'tracker script must be valid JavaScript');
+
+  const selectors = ['#summary', '#search', '#status', '#rows', '#details'];
+  const nodes = Object.fromEntries(selectors.map(selector => [selector, { value: selector === '#status' ? 'all' : '', innerHTML: '', addEventListener() {} }]));
+  vm.runInNewContext(script, { document: { querySelector: selector => nodes[selector] } });
+  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">14<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">13<\/div>/);
+  assert.match(nodes['#rows'].innerHTML, /SA-013/);
+  assert.match(nodes['#rows'].innerHTML, /SA-014/);
 });
 
 
