@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 21
+- Total tracked: 22
 - Work in progress: 1
-- New: 0
+- New: 1
 - Closed: 20
-- Timeline gaps: 21
+- Timeline gaps: 22
 
 ## Issue register
 
@@ -35,6 +35,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-019 — Lesson writing canvas has no target character or stroke guide | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-020 — Stroke-order step can carry over to the next character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-021 — Opening a lesson fails on an undefined tab-status helper | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-022 — Sakura Academy has no favicon | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -344,3 +345,12 @@ Every published app change must bump the small footer version and its update dat
 - **Issue covered:** SA-021.
 - **Checks passed:** Live DOM smoke check opened Lesson 1, rendered all activity tabs, and entered its Writing tab; app/helper wiring test passed.
 - **Remaining risks:** SA-007 still needs a real hosted offline refresh/update cycle; broader browser/device coverage remains limited.
+
+
+### SA-022 — Sakura Academy has no favicon
+
+- **Status:** New (0%)
+- **Evidence:** The app shell has no icon link. In an isolated local browser smoke check, the browser requested `/favicon.ico` and received HTTP 404. Checks of the deployed favicon paths also returned HTTP 404.
+- **Impact:** The browser tab and saved bookmark lack a Sakura Academy brand icon, leaving a visible polish gap.
+- **Why open:** Add and link a small local favicon, then verify the deployed asset and browser tab display.
+- **Fix estimate:** Small: one self-contained vector icon and an app-shell link.
