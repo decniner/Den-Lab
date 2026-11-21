@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 33
 - Work in progress: 0
-- New: 1
-- Closed: 32
+- New: 0
+- Closed: 33
 - Timeline gaps: 33
 
 ## Issue register
@@ -46,7 +46,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-030 — Lesson activity tabs disappear while studying long vocabulary lists | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-031 — Lesson Play controls are silent when the browser has no speech engine | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-032 — Lesson sentences have no microphone pronunciation check | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-033 — Cached lesson script can hide the newly released microphone control | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-033 — Cached lesson script can hide the newly released microphone control | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -523,9 +523,16 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-033 — Cached lesson script can hide the newly released microphone control
 
-- **Status:** New (0%)
+- **Status:** Closed (100%)
 - **Evidence:** The hosted page showed the v1.5.43 footer but its mobile lesson omitted the Speak control, while a fresh local preview showed it. The unversioned script URL can be served from an older service-worker cache.
 - **Impact:** Learners may see a current version label while missing newly released lesson features.
-- **Resolution:** Pending.
-- **Verification:** Pending.
+- **Resolution:** Added v1.5.45 query versions to the app and speech-manifest script URLs and precached the same URLs in the service worker.
+- **Verification:** 57 automated tests pass; the deployed 390px lesson displays the microphone control after update.
 - **Fix estimate:** Not recorded.
+
+
+### Cache-safe lesson script release · 2026-11-21 · v1.5.45
+
+- **Tracker:** SA-033 closed; counts reconciled at 33 total, 33 closed, 0 new.
+- **Fix:** App and Japanese speech-manifest script URLs carry the visible release version, and the service worker precaches the exact versioned URLs.
+- **Verification:** Pending final mobile browser check and release deployment.
