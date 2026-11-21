@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 48
+- Total tracked: 51
 - Work in progress: 0
-- New: 2
+- New: 5
 - Closed: 46
-- Timeline gaps: 47
+- Timeline gaps: 50
 
 ## Issue register
 
@@ -60,6 +60,11 @@ Every published app change must bump the small footer version and its update dat
 | SA-044 — Sticky audio controls cover the current translation on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-045 — Audio lesson does not separate conversation practice from the full playlist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-046 — Missing audio and lesson progress helpers crash browser navigation | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-047 — Conversation practice stops after one lesson and both speakers use the same voice | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-048 — Kana Recognition challenge is separated below the character tabs | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-049 — Conversation practice ends after the selected lesson | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-050 — Conversation roles are not voiced distinctly | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-051 — Conversation characters are too small on phone screens | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -719,3 +724,10 @@ Every published app change must bump the small footer version and its update dat
 - **Change:** Added small app-level fallback implementations for checklist navigation/status and audio queue/speaker helpers, plus grammar progress sanitization, so the core screens can render even when an external helper script does not expose its API at runtime.
 - **Validation:** Verified dashboard and audio mode navigation in the mobile browser; no console errors remained.
 - **Tracker:** SA-046 closed; 46 issues tracked, all closed.
+
+
+### Reliability audit intake · 2026-11-21 · v1.5.75
+
+- **Audit:** Recorded the five highest-impact current weaknesses before implementation: cross-lesson conversation continuity, distinct speaker voices, mobile character scale, and the Kana Challenge’s placement alongside the two script tabs. The cross-lesson and Kana-tab findings were already captured as SA-047/SA-048; SA-049–SA-051 clarify the separate fixes.
+- **Tracker:** 51 tracked; 5 New; 46 Closed.
+- **Next:** Fix all five, verify the complete flows on a phone-sized browser, and close each item with evidence.
