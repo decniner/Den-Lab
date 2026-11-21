@@ -71,7 +71,8 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.doesNotMatch(stylesSource, /sakura-talk-mouth|audio-dialogue-person\.is-speaking \.mouth-open\{[^}]*animation/);
   assert.doesNotMatch(stylesSource, /sakura-talk-bob|audio-dialogue-person\.is-speaking \.audio-stick-figure\{animation/);
   assert.match(stylesSource, /mouth-open\{[^}]*transform:scaleY\(var\(--mouth-open/);
-  assert.match(appSource, /mouth-open[^>]*rx=\"4\" ry=\"3\"/);
+  assert.match(stylesSource, /mouth-open\{[^}]*transition:transform 110ms cubic-bezier/);
+  assert.match(appSource, /mouth-open[^>]*rx="3" ry="2"/);
   assert.match(appSource, /prefers-reduced-motion/);
   assert.match(stylesSource, /prefers-reduced-motion:reduce/);
   assert.doesNotMatch(stylesSource, /audio-voice-bars/);

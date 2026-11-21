@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 62
+- Total tracked: 63
 - Work in progress: 0
 - New: 0
-- Closed: 62
-- Timeline gaps: 61
+- Closed: 63
+- Timeline gaps: 62
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-063 — Conversation mouth animation still looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-062 — Kana recognition question opens below the phone fold | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-001 — Speaker B replies were identical across lessons | Codex | Closed | 100% | Not recorded | Not recorded |
 | SA-002 — Vocabulary examples often did not demonstrate the target word | Codex | Closed | 100% | Not recorded | Not recorded |
@@ -886,3 +887,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-062 was recorded before the change and closed after a 320 × 740 mobile check. Total 62 issues; 0 active; 62 closed; 61 timeline gaps because fix durations were not captured.
 - **Change:** After a question renders, scroll its prompt to the top of the viewport. Respect reduced-motion preferences by using an instant scroll.
 - **Verification:** Starting the quiz at 320 × 740 with Extra large text automatically reveals the character, all four answer choices, and the timer. The regression test covers smooth and reduced-motion behavior. All 80 Academy tests pass, the v1.5.94 static build completes, and offline cache/version alignment matches the footer.
+
+
+### SA-063 — Conversation mouth motion remains unnatural · 2026-11-21
+
+- **Evidence:** At 390 × 844 during bundled conversation playback, Speaker A’s mouth opens subtly below the smile while she speaks; Speaker B stays still. Pause returns both faces to a closed smile. Focused audio and tracker tests pass.
+- **Tracker:** SA-063 was recorded before the fix and closed after phone-sized playback review. Total 63; 0 active; 63 Closed; 62 timeline gaps because fix durations were not measured.
+- **Change:** Reduced the mouth opening, placed it below the smile, eased transitions, smoothed analyser response more strongly, and raised its threshold to ignore low-level fluctuations.
+- **Verification:** Built v1.5.95 and checked the speaking scene at 390 × 844; the active speaker animates and the other remains still. Focused audio, offline shell, and tracker checks pass.
