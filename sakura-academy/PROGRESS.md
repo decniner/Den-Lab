@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 56
+- Total tracked: 57
 - Work in progress: 0
 - New: 0
-- Closed: 56
-- Timeline gaps: 55
+- Closed: 57
+- Timeline gaps: 56
 
 ## Issue register
 
@@ -70,6 +70,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-054 — Speaker colors do not match their female and male voices | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-055 — Conversation mouth animation looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-056 — Fresh accounts show unseen vocabulary as reviews due | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-057 — Lesson activity tabs are clipped and hidden on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -810,3 +811,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** Reopened and closed SA-055 after the user reported the original fix remained unnatural. All 56 issues are now Closed.
 - **Change:** Removed full-body bobbing, reduced the mouth opening and slowed its easing, and repaired the reduced-motion CSS rule.
 - **Verification:** Focused conversation and offline shell checks plus the full suite and standalone build passed; phone-sized browser review confirmed the active speaker state and uncluttered character movement.
+
+
+### Mobile lesson-tab navigation refinement · 2026-11-21 · v1.5.86
+
+- **Evidence:** At 390 × 844, the activity strip shows a two-way scroll cue and screen-reader guidance. Selecting the far-right Assessment tab moves it into view after the lesson rerenders. Regression coverage verifies checklist routing triggers that reveal and that reduced-motion preferences avoid smooth scrolling.
+- **Tracker:** SA-057 closed after mobile visual review and navigation regression coverage. Total 57; 0 New; 57 Closed; 56 timeline gaps remain because fix durations were not measured.
+- **Change:** Added a swipe instruction, a two-way visual cue, and automatic horizontal reveal of the active lesson section; reduced-motion settings use immediate movement.
+- **Verification:** Lesson navigation and accessibility integration checks, all Academy tests, standalone build, version/cache alignment, and mobile browser review passed.

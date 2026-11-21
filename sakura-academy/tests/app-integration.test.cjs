@@ -14,8 +14,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.85"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.85"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.85"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.85"><\/script><script src="src\/app\.js\?v=1\.5\.85">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.86"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.86"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.86"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.86"><\/script><script src="src\/app\.js\?v=1\.5\.86">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -51,10 +51,32 @@ test('lesson activity tabs remain sticky and compact on mobile', () => {
   assert.match(styles, /\.tabs\{[^}]*position:sticky;[^}]*top:0/);
   assert.match(styles, /@media\(max-width:760px\)\{\.tabs\{flex-wrap:nowrap;overflow-x:auto/);
   assert.match(styles, /\.tabs \.tab\{flex:0 0 auto\}/);
+  assert.match(appSource, /role="group" aria-label="Lesson sections; swipe horizontally to see all seven sections"/);
+  assert.match(styles, /\.tabs:after\{[^}]*content:'↔'/);
+});
+
+test('checklist navigation scrolls a selected offscreen lesson tab into view', () => {
+  const helper = appSource.split('\n').find(line => line.startsWith('function revealActiveLessonTab'));
+  assert.ok(helper, 'app exposes the selected-tab reveal helper');
+  const calls = [];
+  const active = { getBoundingClientRect: () => ({ left: 470, right: 548 }) };
+  const tabs = {
+    querySelector: () => active,
+    getBoundingClientRect: () => ({ left: 12, right: 372 }),
+    scrollBy: options => calls.push(options),
+  };
+  vm.runInNewContext(`${helper}\nrevealActiveLessonTab()`, { document: { querySelector: () => tabs }, window: { matchMedia: () => ({ matches: false }) } });
+  assert.deepEqual(JSON.parse(JSON.stringify(calls)), [{ left: 208, behavior: 'smooth' }]);
+  const reducedMotionCalls = [];
+  tabs.scrollBy = options => reducedMotionCalls.push(options);
+  vm.runInNewContext(`${helper}\nrevealActiveLessonTab()`, { document: { querySelector: () => tabs }, window: { matchMedia: () => ({ matches: true }) } });
+  assert.deepEqual(JSON.parse(JSON.stringify(reducedMotionCalls)), [{ left: 208, behavior: 'auto' }]);
+  assert.match(appSource, /function openChecklistStep\(tab\)\{selectLessonTab\(tab\)/);
+  assert.match(appSource, /if\(view==='lesson'\)requestAnimationFrame\(revealActiveLessonTab\)/);
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.85"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.86"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -69,7 +91,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.85"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.86"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 

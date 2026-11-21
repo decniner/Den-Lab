@@ -53,7 +53,7 @@ test('offline shell precaches the full app and tracker assets', async () => {
   let installPromise;
   worker.listeners.install({ waitUntil(promise) { installPromise = promise; } });
   await installPromise;
-  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.5.85', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/app.js?v=1.5.85', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js?v=1.5.85', './src/audio-lessons.js?v=1.5.85', './src/reward-guard.js']) {
+  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.5.86', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/app.js?v=1.5.86', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js?v=1.5.86', './src/audio-lessons.js?v=1.5.86', './src/reward-guard.js']) {
     assert.ok(worker.added.includes(file), `precache includes ${file}`);
   }
   const audio = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
@@ -85,9 +85,9 @@ test('app registers the worker relative to its own project route', () => {
   assert.match(html, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)/);
   assert.match(html, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/);
   assert.match(html, /sakura-academy/);
-  assert.match(html, /href="styles\.css\?v=1\.5\.85"/);
-  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.5\.85"><\/script>/);
-  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.5.85'));
+  assert.match(html, /href="styles\.css\?v=1\.5\.86"/);
+  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.5\.86"><\/script>/);
+  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.5.86'));
 });
 
 test('static build copies the favicon into the published Academy project', () => {
@@ -105,7 +105,7 @@ test('static build copies the favicon into the published Academy project', () =>
     const standalone = fs.readFileSync(path.join(output, 'genki-interactive-academy.html'), 'utf8');
     assert.match(standalone, /data:audio\/mpeg;base64,/);
     assert.match(standalone, /\.audio-player-card/);
-    assert.doesNotMatch(standalone, /href="styles\.css\?v=1\.5\.85/);
+    assert.doesNotMatch(standalone, /href="styles\.css\?v=1\.5\.86/);
     assert.match(standalone, /function buildLessonAudioQueue\(lesson\)/);
     assert.match(standalone, /function audioLessons\(\)/);
     assert.doesNotMatch(standalone, /function practiceSentence|SpeechRecognition|🎙/);
@@ -140,14 +140,14 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.equal(nodes['#registerTitle'].textContent, 'Issue archive');
   assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-025[\s\S]*class="pill closed">Closed/);
-  assert.equal(nodes['#scope-archive'].textContent, 'Archive (56)');
+  assert.equal(nodes['#scope-archive'].textContent, 'Archive (57)');
   assert.equal(nodes['#scope-archive']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='all';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'All issues');
-  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">56<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">57<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">0<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">56<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">57<\/div>/);
   assert.match(nodes['#rows'].innerHTML, /SA-035[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-036[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-037[\s\S]*class="pill closed">Closed/);
