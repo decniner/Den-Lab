@@ -98,8 +98,24 @@ test('flashcards use one Study action and explain that unfamiliar cards return l
   const flashcards = appSource.slice(appSource.indexOf('function flashcards()'), appSource.indexOf('\nfunction ', appSource.indexOf('function flashcards()') + 1));
   assert.match(flashcards, /Add to Study/);
   assert.match(flashcards, /studyCard\('\$\{w\.id\}'\)/);
+  const flashCardFace = appSource.match(/function flashCardFace\(w\)\{[^\n]+/)?.[0];
+  assert.match(flashcards, /flashCardFace\(w\)/);
+  assert.match(flashCardFace, /flashCardFront\(w\)/);
+  assert.match(flashCardFace, /flashCardReading\(w\)/);
+  assert.match(flashCardFace, /N5 kanji/);
   for (const rating of ['Again', 'Hard', 'Good', 'Easy']) assert.doesNotMatch(flashcards, new RegExp(rating));
   assert.match(flashcards, /return tomorrow/);
+});
+
+test('N5 flashcard vocabulary uses bundled kanji spellings with kana readings', () => {
+  const match = fs.readFileSync(path.join(project, 'src/n5-data.js'), 'utf8').match(/const N5_VOCAB=(\[[\s\S]*?\]);/);
+  assert.ok(match);
+  const vocabulary = JSON.parse(match[1]);
+  const example = vocabulary.find(word => word.word === '学生');
+  assert.ok(example);
+  assert.equal(example.reading, 'がくせい');
+  assert.match(appSource, /function flashCardFront\(w\)/);
+  assert.match(appSource, /function flashCardReading\(w\)/);
 });
 
 test('flashcards can advance without adding the revealed card to Study', () => {

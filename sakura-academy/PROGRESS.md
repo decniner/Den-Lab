@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 77
+- Total tracked: 78
 - Work in progress: 0
 - New: 0
-- Closed: 77
-- Timeline gaps: 76
+- Closed: 78
+- Timeline gaps: 77
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-078 — Study cards hide N5 kanji spellings and readings | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-077 — Adding a card skips the next ready card | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-076 — Flashcards lack an action for words the learner already knows | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-075 — Flashcard review requires four confusing self-ratings | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -1022,7 +1023,19 @@ Every published app change must bump the small footer version and its update dat
 - **Fix:** Removed the extra index increment after review scheduling.
 - **Verification:** All 91 Academy tests pass. Phone preview confirmed the next ready card appears immediately after saving.
 
+### SA-078 — Study cards hide N5 kanji spellings and readings · 2026-11-21 · v1.5.109
+- **Status:** Closed after implementation and phone verification.
+- **Evidence:** At 390 × 844, after the 96 kana-only lesson words, an N5 vocabulary card displayed 会う. Tapping it revealed “to meet” and the kana reading あう. Automated tests verify N5 vocabulary entries keep their kanji spelling and bundled reading.
+- **Impact:** Learners can practice recognizing kanji vocabulary and reveal its kana reading and English meaning.
+- **Fix:** Preserved the spelling and reading in N5 card mapping; kana-only lesson cards remain unchanged.
+- **Verification:** All 92 Academy tests pass; the offline standalone build succeeds; phone preview confirmed the N5 prompt and reading reveal.
+
 ### v1.5.108 — Clear flashcard progression · 2026-11-21
 - **Changes:** Added Next to mark a familiar word learned; retained Add to Study for unfamiliar words; prevented saved cards from causing a queue skip; updated cache and visible version.
 - **Verification:** All 91 Academy tests pass; the standalone offline build succeeds; the 390 × 844 phone view showed both actions and confirmed correct progression for Next and Add to Study.
-- **Tracker:** SA-076 and SA-077 are closed. Total 77; 0 Work in progress; 0 New; 77 Closed; 76 timeline gaps.
+- **Tracker:** SA-076 and SA-077 are closed. Total 77; 0 Work in progress; 0 New; 78 Closed; 77 timeline gaps.
+
+### v1.5.109 — N5 kanji recognition cards · 2026-11-21
+- **Changes:** N5 vocabulary cards now show kanji spellings when the source entry includes one; reveal shows kana reading and English meaning. Kana-only lesson cards remain kana-only. The visible version and service-worker cache were bumped.
+- **Verification:** All 92 Academy tests pass; offline standalone build succeeds; 390 × 844 preview confirmed 会う → あう · to meet after the 96 kana-only lesson cards.
+- **Tracker:** SA-078 closed. Total 78; 0 Work in progress; 0 New; 78 Closed; 77 timeline gaps.
