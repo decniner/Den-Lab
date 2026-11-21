@@ -53,7 +53,7 @@ test('offline shell precaches the full app and tracker assets', async () => {
   let installPromise;
   worker.listeners.install({ waitUntil(promise) { installPromise = promise; } });
   await installPromise;
-  for (const file of ['./', './index.html', './favicon.svg', './styles.css', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/app.js?v=1.5.51', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js', './src/reward-guard.js']) {
+  for (const file of ['./', './index.html', './favicon.svg', './styles.css', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/app.js?v=1.5.52', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js', './src/reward-guard.js']) {
     assert.ok(worker.added.includes(file), `precache includes ${file}`);
   }
   const audio = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));

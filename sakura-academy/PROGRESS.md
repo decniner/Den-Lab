@@ -597,3 +597,8 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-036 closed; 36 issues tracked, all closed.
 - **Fix:** Removed every lesson mic control and all browser speech-recognition code. Kept bundled Japanese Listen audio. Removed the now-unused recognition helper from online/offline/standalone builds.
 - **Verification:** Automated tests confirm the app and standalone build contain no mic controls, while sentence Listen controls and bundled audio remain.
+
+### Audio-only lesson footer · 2026-11-21 · v1.5.52
+
+- **Update:** Replaced the generic speech-features footer with a clear note that Japanese examples include bundled audio for offline listening.
+- **Tracker:** SA-036 remains closed; all 36 tracked issues are closed.
