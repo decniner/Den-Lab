@@ -133,8 +133,8 @@ test('issue tracker script parses and renders all registered issues', () => {
   const context = { document: { querySelector: selector => nodes[selector] } };
   vm.runInNewContext(script, context);
   assert.equal(nodes['#registerTitle'].textContent, 'Active issues');
-  assert.match(nodes['#rows'].innerHTML, /No open issues/);
-  assert.equal(nodes['#scope-active'].textContent, 'Active (0)');
+  assert.match(nodes['#rows'].innerHTML, /SA-045[\s\S]*Audio lesson does not separate conversation practice from the full playlist/);
+  assert.equal(nodes['#scope-active'].textContent, 'Active (1)');
   assert.equal(nodes['#scope-active']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='archive';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'Issue archive');

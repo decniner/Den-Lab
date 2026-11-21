@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 44
+- Total tracked: 45
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 44
-- Timeline gaps: 44
+- Timeline gaps: 45
 
 ## Issue register
 
@@ -58,6 +58,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-042 — Unversioned stylesheet can keep stale mobile styles after release | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-043 — Audio lessons show conversation as plain text without speaker visuals | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-044 — Sticky audio controls cover the current translation on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-045 — Audio lesson does not separate conversation practice from the full playlist | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
