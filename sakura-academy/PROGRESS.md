@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 33
+- Total tracked: 34
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 33
-- Timeline gaps: 33
+- Timeline gaps: 34
 
 ## Issue register
 
@@ -47,6 +47,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-031 — Lesson Play controls are silent when the browser has no speech engine | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-032 — Lesson sentences have no microphone pronunciation check | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-033 — Cached lesson script can hide the newly released microphone control | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -536,3 +537,13 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-033 closed; counts reconciled at 33 total, 33 closed, 0 new.
 - **Fix:** App and Japanese speech-manifest script URLs carry the visible release version, and the service worker precaches the exact versioned URLs.
 - **Verification:** Pending final mobile browser check and release deployment.
+
+
+### SA-034 — Microphone check discards the transcript from a low-confidence result
+
+- **Status:** New (0%)
+- **Evidence:** The app always shows “I could not match that sentence” from `onnomatch`, but the Web Speech API allows that event to contain a below-threshold transcript. The current handler ignores its event argument.
+- **Impact:** Learners receive no useful feedback even when the browser produced a transcript of what they said.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Not recorded.
