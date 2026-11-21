@@ -706,14 +706,14 @@ Every published app change must bump the small footer version and its update dat
 - **Verification:** 67 Academy tests pass. On a 390 × 844 mobile view, the playback controls, two speakers, current Japanese/English, and progress fit without horizontal overflow or overlay. Standalone build and diff check pass.
 
 
-### SA-045 — Focused conversation practice · 2026-11-21 · v1.5.72
+### SA-045 — Focused conversation practice · 2026-11-21 · v1.5.73
 
 - **Status:** Closed (100%).
-- **Change:** Added separate Conversation practice and Full lesson modes. Conversation mode contains dialogue only, with line replay, conversation replay, optional echo repeats, slower playback, and a listening tip. Full lesson mode retains the original lesson, vocabulary, examples, and dialogue queue.
+- **Change:** Added separate Conversation practice and Full lesson modes. Conversation mode contains dialogue only, with line replay, conversation replay, optional echo repeats, slower playback, romaji display, and a listening tip. Full lesson mode retains the original lesson, vocabulary, examples, and dialogue queue.
 - **Validation:** 69 automated checks pass; verified both modes and the compact 390 × 844 mobile layout.
 - **Tracker:** SA-045 closed.
 
-### SA-046 — Runtime helper availability · 2026-11-21 · v1.5.72
+### SA-046 — Runtime helper availability · 2026-11-21 · v1.5.73
 
 - **Status:** Closed (100%).
 - **Change:** Added small app-level fallback implementations for checklist navigation/status and audio queue/speaker helpers, plus grammar progress sanitization, so the core screens can render even when an external helper script does not expose its API at runtime.

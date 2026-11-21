@@ -88,3 +88,20 @@ test('audio screen separates conversation and full lesson modes with focused pra
   assert.match(appSource, /audioShowContext/);
   assert.match(stylesSource, /audio-mode-switch/);
 });
+
+test('optional romaji helper handles digraphs, doubled consonants, and katakana', () => {
+  const sandbox = {};
+  sandbox.globalThis = sandbox;
+  vm.runInNewContext(helperSource, sandbox);
+  assert.equal(sandbox.audioKanaToRomaji('ちょっとまって'), 'chottomatte');
+  assert.equal(sandbox.audioKanaToRomaji('がっこう'), 'gakkou');
+  assert.equal(sandbox.audioKanaToRomaji('コンニチハ'), 'konnichiwa');
+  assert.equal(sandbox.audioKanaToRomaji('わたしは りなです。'), 'watashi wa rina desu.');
+});
+
+test('conversation view offers optional romaji and renders it on the active transcript', () => {
+  assert.match(appSource, /toggleAudioRomaji\(this\.checked\)/);
+  assert.match(appSource, /audioShowRomaji\?/);
+  assert.match(appSource, /audioKanaToRomaji\(item\.jp\)/);
+  assert.match(stylesSource, /\.audio-romaji/);
+});
