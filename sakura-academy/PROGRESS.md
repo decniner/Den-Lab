@@ -6,15 +6,15 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 69
 - Work in progress: 0
-- New: 1
-- Closed: 68
+- New: 0
+- Closed: 69
 - Timeline gaps: 68
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
-| SA-069 — Home counts an incomplete lesson as complete | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-069 — Home counts an incomplete lesson as complete | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-068 — Conversation character mouth movement looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-067 — Bottom navigation targets are too narrow on small phones | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-066 — Conversation mouth movement still looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -945,9 +945,9 @@ Every published app change must bump the small footer version and its update dat
 - **Verification:** Focused audio checks cover silence, soft/clear/strong levels, bounded opening, and easing. Reviewed live female-voice playback at 390 × 844; Speaker A was marked speaking and the other speaker stayed still. Full suite, standalone build, and offline cache/version alignment pass at v1.5.100.
 
 
-### SA-069 — Home counts an incomplete lesson as complete · 2026-11-21 · New
+### SA-069 — Home counts an incomplete lesson as complete · 2026-11-21 · v1.5.102
 
-- **Evidence:** On the published 390 × 844 phone view with the saved learner profile, Home shows 1/12 lessons complete. Lesson 1 shows 2/6 checklist items complete, Vocabulary marked learned 0/8, and a disabled Next button; strict mode keeps Lesson 2 locked.
-- **Tracker:** SA-069 recorded before changes. Total 69; 1 New; 68 Closed; 68 timeline gaps.
-- **Impact:** Conflicting dashboard mastery and progression state undermines trust and hides why the next lesson remains locked.
-- **Next:** Trace saved completion flags and strict checklist calculation; reconcile the dashboard count to the same validated completion rules used to unlock the next lesson.
+- **Evidence:** On the published 390 × 844 phone view with the saved learner profile, Home now shows 0/12 lessons complete while Lesson 1 shows 2/6 checklist items complete, Vocabulary 0/8, and Next disabled. Strict mode continues to keep Lesson 2 locked until the checklist is complete. The same learner data remained intact through the check.
+- **Tracker:** SA-069 was recorded before changes and closed after same-profile mobile verification. Total 69; 0 New; 69 Closed; 68 timeline gaps because fix durations were not recorded.
+- **Change:** Home now counts checklist-complete lessons in strict mode and saved completion flags when strict mode is off. Readiness uses the same reconciled count.
+- **Verification:** Added regression coverage for stale completion flags with mixed checklist completion and for nonstrict legacy counts. All 84 Academy tests pass; the standalone build and offline cache/version alignment are verified at v1.5.102. Live verification confirmed Home, the Lesson 1 checklist, and strict-mode lock state agree.
