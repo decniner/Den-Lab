@@ -6,9 +6,9 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 84
 - Work in progress: 0
-- New: 1
-- Closed: 83
-- Timeline gaps: 83
+- New: 0
+- Closed: 84
+- Timeline gaps: 82
 
 ## Issue register
 
@@ -1108,15 +1108,15 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-084 — Speech controls ignore explicit Japanese readings across N5 content · 2026-11-21
 
-- **Status:** New · 0%
-- **Evidence:** N5 vocabulary playback sends kanji text to speech despite the catalog’s kana reading; Kanji Explorer sends kanji examples to speech; N5 listening prompts contain kanji but have no explicit spoken reading.
-- **Impact:** Browser speech may guess a reading that disagrees with the reading printed for learners.
-- **Resolution:** Pending.
-- **Verification:** Pending.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed · 100%
+- **Evidence:** N5 vocabulary playback sent kanji text to speech despite the catalog’s kana reading; Kanji Explorer sent raw kanji examples to speech; N5 listening prompts had no paired spoken reading.
+- **Impact:** Resolved: speech now follows the reading shown to learners across N5 vocabulary, all 84 Kanji Explorer examples, and the 16 listening prompts. Kokoro clips are bundled for offline playback.
+- **Resolution:** N5 vocabulary buttons pass their explicit kana readings. Kanji Explorer selects an example with a catalog reading (and supplies 円 → えん). Every listening prompt now has kana transcription. Kokoro generation adds fingerprinted audio for all 674 vocabulary entries and all 16 listening prompts; the app’s speech fallback now accepts an explicit reading. Lesson/story audio remains in the manifest and offline precache.
+- **Verification:** Four pronunciation regression tests pass; broader app and tracker validation and phone-sized playback review are recorded below.
+- **Fix estimate:** 2026-11-21.
 
-### v1.5.114 — Broader Japanese pronunciation issue recorded · 2026-11-21
+### v1.5.115 — Reading-aligned N5 speech · 2026-11-21
 
-- **Changes:** Registered SA-084 before changing any speech behavior. The active tracker now reports 84 total issues, 1 New, and 83 Closed. Updated the site and offline cache version.
-- **Verification:** Focused tracker and release-shell checks pending.
-- **Tracker:** SA-084 remains New pending the broader reading-aligned speech fixes.
+- **Changes:** Added explicit pronunciation paths and bundled Kokoro clips for N5 vocabulary/listening; aligned all Kanji Explorer example audio; bumped the site and offline cache version.
+- **Verification:** All 101 Academy tests pass. The standalone build succeeds; 911 manifest entries point to existing clips. At 390 × 844, the visible mobile preview showed vocabulary readings next to kanji, playback controls responding, and the Kanji Explorer example audio control.
+- **Tracker:** SA-084 closed. Total 84; 0 Work in progress; 0 New; 84 Closed; 82 timeline gaps.

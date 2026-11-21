@@ -108,7 +108,7 @@ test('daily seven o’clock audio has a canonical shichi-ji pronunciation overri
   const overrides = JSON.parse(fs.readFileSync(path.join(project, 'scripts', 'pronunciation-overrides.json'), 'utf8'));
   assert.equal(overrides['あさ7じにおきます。'], 'あさ しちじに おきます。');
   const generator = fs.readFileSync(path.join(project, 'scripts', 'generate_japanese_audio.py'), 'utf8');
-  assert.match(generator, /synthesis_text = PRONUNCIATION_OVERRIDES\.get\(base_key, phrase\)/);
+  assert.match(generator, /synthesis_text = PRONUNCIATION_OVERRIDES\.get\(base_key, reading\)/);
   assert.match(generator, /pipeline\(synthesis_text, voice=voice/);
   assert.match(generator, /key in PRONUNCIATION_OVERRIDES/);
   const audio = JSON.parse(fs.readFileSync(path.join(project, 'src', 'speech-audio-manifest.json'), 'utf8'));

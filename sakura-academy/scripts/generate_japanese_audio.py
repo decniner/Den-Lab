@@ -15,10 +15,16 @@ from kokoro import KPipeline
 
 PROJECT = Path(__file__).resolve().parents[1]
 CONTENT = (PROJECT / "src/content.js").read_text()
+N5_DATA = (PROJECT / "src/n5-data.js").read_text()
 LESSON_DATA = re.search(r"const LESSONS=(\[.*?\]), KANA=", CONTENT, re.S)
 if not LESSON_DATA:
     raise SystemExit("Could not find LESSONS in src/content.js")
 LESSONS = json.loads(LESSON_DATA.group(1))
+N5_VOCAB = json.loads(re.search(r"const N5_VOCAB=(\[.*?\]);\s*const N5_GRAMMAR=", N5_DATA, re.S).group(1))
+N5_LISTENING = [
+    {"audio": audio, "audioReading": reading}
+    for audio, reading in re.findall(r"audio:\x27([^\x27]*)\x27,audioReading:\x27([^\x27]*)\x27", N5_DATA[N5_DATA.index("const N5_LISTENING="):])
+]
 PRONUNCIATION_OVERRIDES = json.loads(
     (PROJECT / "scripts/pronunciation-overrides.json").read_text()
 )
@@ -26,6 +32,10 @@ PRONUNCIATION_OVERRIDES = json.loads(
 
 def audio_key(text: str) -> str:
     return re.sub(r"\s+", "", unicodedata.normalize("NFC", text))
+
+def fingerprinted_filename(key: str, reading: str) -> str:
+    fingerprint = f"{key}|{reading}"
+    return f"ja-{hashlib.sha256(fingerprint.encode('utf-8')).hexdigest()[:14]}.mp3"
 
 
 def pitch_contour(samples: np.ndarray, sample_rate: int = 24000) -> list[float]:
@@ -72,6 +82,13 @@ for lesson in LESSONS:
             voice_key = f"dialogue:B:{base_key}"
             phrases[voice_key] = {"phrase": line["jp"], "voice": "jm_kumo", "base_key": base_key}
 
+for word in N5_VOCAB:
+    key = audio_key(word["word"])
+    phrases[key] = {"phrase": word["word"], "reading": word["reading"], "voice": "jf_alpha", "base_key": key}
+for item in N5_LISTENING:
+    key = audio_key(item["audio"])
+    phrases[key] = {"phrase": item["audio"], "reading": item["audioReading"], "voice": "jf_alpha", "base_key": key}
+
 pipeline = KPipeline(lang_code="j")
 audio_dir = PROJECT / "audio/speech"
 audio_dir.mkdir(parents=True, exist_ok=True)
@@ -81,9 +98,10 @@ with tempfile.TemporaryDirectory(prefix="sakura-kokoro-") as tmp:
     temp_dir = Path(tmp)
     for index, (key, item) in enumerate(phrases.items(), 1):
         phrase, voice, base_key = item["phrase"], item["voice"], item["base_key"]
-        filename = f"ja-{hashlib.sha256(key.encode('utf-8')).hexdigest()[:14]}.mp3"
+        reading = item.get("reading", phrase)
+        filename = fingerprinted_filename(key, reading) if "reading" in item else f"ja-{hashlib.sha256(key.encode('utf-8')).hexdigest()[:14]}.mp3"
         destination = audio_dir / filename
-        synthesis_text = PRONUNCIATION_OVERRIDES.get(base_key, phrase)
+        synthesis_text = PRONUNCIATION_OVERRIDES.get(base_key, reading)
         if not destination.exists() or key in PRONUNCIATION_OVERRIDES:
             chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice=voice, speed=0.9)]
             if not chunks:

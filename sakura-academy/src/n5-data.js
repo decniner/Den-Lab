@@ -24614,22 +24614,22 @@ const N5_READINGS=[
  {type:'Information retrieval · schedule',text:'【日本語クラス】\n場所：2階 201教室\n月曜日・水曜日：午後6時〜7時\n金曜日：午後5時半〜7時\n休み：土曜日・日曜日\n初めての人は、授業の10分前に 来てください。教科書は 受付で 買うことが できます。1,200円です。休むときは、先生に 電話を してください。来月の 5日は クラスが ありません。申込む人は、今週の 金曜日までに 受付で 名前を 書いてください。教室は 5階に あります。',question:'金曜日の クラスは 何時に 始まりますか。',options:['午後5時','午後5時半','午後6時'],answer:1}
 ];
 const N5_LISTENING=[
- {type:'Task-based comprehension',audio:'男の人: すみません、駅はどこですか。女の人: この道をまっすぐ行って、右にまがってください。',question:'男の人は どうしますか。',options:['まっすぐ行って右にまがる','まっすぐ行って左にまがる','ここで電車に乗る'],answer:0},
- {type:'Comprehension of key points',audio:'女の人: あした、何時に来ますか。男の人: 午前は病院へ行きます。午後3時ごろなら大丈夫です。',question:'男の人は いつ来ますか。',options:['午前','午後1時','午後3時ごろ'],answer:2},
- {type:'Verbal expressions',audio:'友だちの家に入ります。最初に何と言いますか。',question:'このとき、何と言いますか。',options:['おじゃまします','いただきます','いってきます'],answer:0},
- {type:'Quick response',audio:'きょうは 何曜日ですか。',question:'質問に 合う答えを 選んでください。',options:['火曜日です','学校へ行きます','7時に起きます'],answer:0}
+ {type:'Task-based comprehension',audio:'男の人: すみません、駅はどこですか。女の人: この道をまっすぐ行って、右にまがってください。',audioReading:'おとこのひと、すみません、えきはどこですか。おんなのひと、このみちをまっすぐいって、みぎにまがってください。',question:'男の人は どうしますか。',options:['まっすぐ行って右にまがる','まっすぐ行って左にまがる','ここで電車に乗る'],answer:0},
+ {type:'Comprehension of key points',audio:'女の人: あした、何時に来ますか。男の人: 午前は病院へ行きます。午後3時ごろなら大丈夫です。',audioReading:'おんなのひと、あした、なんじにきますか。おとこのひと、ごぜんはびょういんへいきます。ごごさんじごろならだいじょうぶです。',question:'男の人は いつ来ますか。',options:['午前','午後1時','午後3時ごろ'],answer:2},
+ {type:'Verbal expressions',audio:'友だちの家に入ります。最初に何と言いますか。',audioReading:'ともだちのいえにはいります。さいしょになんといいますか。',question:'このとき、何と言いますか。',options:['おじゃまします','いただきます','いってきます'],answer:0},
+ {type:'Quick response',audio:'きょうは 何曜日ですか。',audioReading:'きょうはなんようびですか。',question:'質問に 合う答えを 選んでください。',options:['火曜日です','学校へ行きます','7時に起きます'],answer:0}
 ];
 N5_LISTENING.push(
- {type:'Task-based comprehension',audio:'女の人: スーパーで 牛乳と パンを 買ってください。男の人: はい。たまごも 買いますか。女の人: いいえ、たまごは あります。',question:'男の人は 何を 買いますか。',options:['牛乳とパン','牛乳とたまご','パンとたまご'],answer:0},
- {type:'Comprehension of key points',audio:'男の人: 土曜日に いっしょに テニスを しませんか。女の人: 午前は 仕事です。午後なら いいですよ。',question:'女の人は いつテニスができますか。',options:['土曜日の午前','土曜日の午後','日曜日の午後'],answer:1},
- {type:'Verbal expressions',audio:'友だちから 誕生日の プレゼントを もらいました。何と言いますか。',question:'このとき、何と言いますか。',options:['ありがとうございます','おかえりなさい','いってらっしゃい'],answer:0},
- {type:'Quick response',audio:'これは だれの かさですか。',question:'質問に 合う答えを 選んでください。',options:['わたしのです','駅にあります','青いです'],answer:0},
- {type:'Task-based comprehension',audio:'女の人: すみません、301教室はどこですか。男の人: 階段で3階へ行ってください。教室は左にあります。',question:'女の人は どこへ 行きますか。',options:['2階の201教室','3階の301教室','1階の受付'],answer:1},
- {type:'Task-based comprehension',audio:'男の人: 何を買いますか。女の人: たまごと牛乳をお願いします。男の人: パンも買いますか。女の人: いいえ、パンはうちにあります。',question:'男の人は 何を 買いますか。',options:['たまごと牛乳','牛乳とパン','たまごとパン'],answer:0},
- {type:'Comprehension of key points',audio:'女の人: あした、図書館で2時に会いましょう。男の人: 2時は学校があります。3時半のあとなら大丈夫です。女の人: では、4時にしましょう。',question:'二人は 何時に 会いますか。',options:['午後2時','午後3時半','午後4時'],answer:2},
- {type:'Comprehension of key points',audio:'男の人: 日曜日に海へ行きませんか。女の人: 午前は仕事です。午後は大丈夫です。男の人: じゃあ、午後1時に駅で会いましょう。',question:'二人は いつ会いますか。',options:['日曜日の午前','日曜日の午後1時','土曜日の午後1時'],answer:1},
- {type:'Verbal expressions',audio:'友だちの家に着きました。ドアを開けてくれた友だちに、最初に何と言いますか。',question:'友だちの家に 入るとき、何と言いますか。',options:['おじゃまします','いただきます','いってきます'],answer:0},
- {type:'Verbal expressions',audio:'食事の前です。みんなが食べ始めるとき、何と言いますか。',question:'食べる前に 何と言いますか。',options:['ごちそうさまでした','いただきます','おかえりなさい'],answer:1},
- {type:'Quick response',audio:'きのう、どこへ行きましたか。',question:'質問に 合う答えを 選んでください。',options:['デパートへ行きました','三時に行きます','友だちとです'],answer:0},
- {type:'Quick response',audio:'すみません、少し遅れました。',question:'この人に 何と言いますか。',options:['おめでとうございます','だいじょうぶですよ','いってらっしゃい'],answer:1}
+ {type:'Task-based comprehension',audio:'女の人: スーパーで 牛乳と パンを 買ってください。男の人: はい。たまごも 買いますか。女の人: いいえ、たまごは あります。',audioReading:'おんなのひと、スーパーでぎゅうにゅうとパンをかってください。おとこのひと、はい。たまごもかいますか。おんなのひと、いいえ、たまごはあります。',question:'男の人は 何を 買いますか。',options:['牛乳とパン','牛乳とたまご','パンとたまご'],answer:0},
+ {type:'Comprehension of key points',audio:'男の人: 土曜日に いっしょに テニスを しませんか。女の人: 午前は 仕事です。午後なら いいですよ。',audioReading:'おとこのひと、どようびにいっしょにテニスをしませんか。おんなのひと、ごぜんはしごとです。ごごならいいですよ。',question:'女の人は いつテニスができますか。',options:['土曜日の午前','土曜日の午後','日曜日の午後'],answer:1},
+ {type:'Verbal expressions',audio:'友だちから 誕生日の プレゼントを もらいました。何と言いますか。',audioReading:'ともだちからたんじょうびのプレゼントをもらいました。なんといいますか。',question:'このとき、何と言いますか。',options:['ありがとうございます','おかえりなさい','いってらっしゃい'],answer:0},
+ {type:'Quick response',audio:'これは だれの かさですか。',audioReading:'これはだれのかさですか。',question:'質問に 合う答えを 選んでください。',options:['わたしのです','駅にあります','青いです'],answer:0},
+ {type:'Task-based comprehension',audio:'女の人: すみません、301教室はどこですか。男の人: 階段で3階へ行ってください。教室は左にあります。',audioReading:'おんなのひと、すみません、さんまるいちきょうしつはどこですか。おとこのひと、かいだんでさんがいへいってください。きょうしつはひだりにあります。',question:'女の人は どこへ 行きますか。',options:['2階の201教室','3階の301教室','1階の受付'],answer:1},
+ {type:'Task-based comprehension',audio:'男の人: 何を買いますか。女の人: たまごと牛乳をお願いします。男の人: パンも買いますか。女の人: いいえ、パンはうちにあります。',audioReading:'おとこのひと、なにをかいますか。おんなのひと、たまごとぎゅうにゅうをおねがいします。おとこのひと、ぱんもかいますか。おんなのひと、いいえ、ぱんはうちにあります。',question:'男の人は 何を 買いますか。',options:['たまごと牛乳','牛乳とパン','たまごとパン'],answer:0},
+ {type:'Comprehension of key points',audio:'女の人: あした、図書館で2時に会いましょう。男の人: 2時は学校があります。3時半のあとなら大丈夫です。女の人: では、4時にしましょう。',audioReading:'おんなのひと、あした、としょかんでにじにあいましょう。おとこのひと、にじはがっこうがあります。さんじはんのあとならだいじょうぶです。おんなのひと、では、よじにしましょう。',question:'二人は 何時に 会いますか。',options:['午後2時','午後3時半','午後4時'],answer:2},
+ {type:'Comprehension of key points',audio:'男の人: 日曜日に海へ行きませんか。女の人: 午前は仕事です。午後は大丈夫です。男の人: じゃあ、午後1時に駅で会いましょう。',audioReading:'おとこのひと、にちようびにうみへいきませんか。おんなのひと、ごぜんはしごとです。ごごはだいじょうぶです。おとこのひと、じゃあ、ごごいちじにえきであいましょう。',question:'二人は いつ会いますか。',options:['日曜日の午前','日曜日の午後1時','土曜日の午後1時'],answer:1},
+ {type:'Verbal expressions',audio:'友だちの家に着きました。ドアを開けてくれた友だちに、最初に何と言いますか。',audioReading:'ともだちのいえにつきました。ドアをあけてくれたともだちに、さいしょになんといいますか。',question:'友だちの家に 入るとき、何と言いますか。',options:['おじゃまします','いただきます','いってきます'],answer:0},
+ {type:'Verbal expressions',audio:'食事の前です。みんなが食べ始めるとき、何と言いますか。',audioReading:'しょくじのまえです。みんながたべはじめるとき、なんといいますか。',question:'食べる前に 何と言いますか。',options:['ごちそうさまでした','いただきます','おかえりなさい'],answer:1},
+ {type:'Quick response',audio:'きのう、どこへ行きましたか。',audioReading:'きのう、どこへいきましたか。',question:'質問に 合う答えを 選んでください。',options:['デパートへ行きました','三時に行きます','友だちとです'],answer:0},
+ {type:'Quick response',audio:'すみません、少し遅れました。',audioReading:'すみません、すこしおくれました。',question:'この人に 何と言いますか。',options:['おめでとうございます','だいじょうぶですよ','いってらっしゃい'],answer:1}
 );
