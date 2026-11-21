@@ -45,14 +45,18 @@
       errors.push('Invalid daily goal');
     }
     if (state.fontSize !== undefined && !['standard', 'large', 'extra-large'].includes(state.fontSize)) errors.push('Invalid text size');
+    if (state.showGuides !== undefined && typeof state.showGuides !== 'boolean') errors.push('Invalid guide visibility');
+    if (state.guideChoiceMade !== undefined && typeof state.guideChoiceMade !== 'boolean') errors.push('Invalid guide choice state');
     return errors;
   }
 
-  function sanitizeStoredProgressSettings(state, defaults = { goal: 15, xp: 0, fontSize: 'standard' }) {
+  function sanitizeStoredProgressSettings(state, defaults = { goal: 15, xp: 0, fontSize: 'standard', showGuides: true, guideChoiceMade: false }) {
     const errors = validateProgressBackupSettings(state);
     if (errors.includes('Invalid XP value')) state.xp = defaults.xp;
     if (errors.includes('Invalid daily goal')) state.goal = defaults.goal;
     if (errors.includes('Invalid text size') || state.fontSize === undefined) state.fontSize = defaults.fontSize;
+    if (errors.includes('Invalid guide visibility') || state.showGuides === undefined) state.showGuides = defaults.showGuides;
+    if (errors.includes('Invalid guide choice state') || state.guideChoiceMade === undefined) state.guideChoiceMade = defaults.guideChoiceMade;
     return state;
   }
 

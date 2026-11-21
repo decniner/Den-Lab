@@ -15,8 +15,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.118"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.118"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.118"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.118"><\/script><script src="src\/app\.js\?v=1\.5\.118">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.119"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.119"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.119"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.119"><\/script><script src="src\/app\.js\?v=1\.5\.119">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -110,7 +110,7 @@ test('starting a kana recognition question scrolls its prompt into view', () => 
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.118"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.119"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -125,7 +125,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.118"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.119"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -188,6 +188,30 @@ test('main learning routes and lesson tabs explain their purpose and next action
   assert.match(appSource, /section-guide/);
   assert.match(n5Source, /N5_SECTION_GUIDES/);
   for (const key of ['overview','vocabulary','grammar','kanji','stories','practice','mock']) assert.match(n5Source, new RegExp(`${key}:`));
+});
+
+test('learning guidance can be hidden once, persisted, and restored in settings', () => {
+  assert.match(appSource, /showGuides:true,guideChoiceMade:false/);
+  assert.match(appSource, /function sectionGuide\(text\).*?state\.showGuides/);
+  assert.match(appSource, /function promptGuidePreference\(/);
+  assert.match(appSource, /Hide permanently/);
+  assert.match(appSource, /Keep guidance/);
+  assert.match(appSource, /function setGuidePreference\(show\)/);
+  assert.match(appSource, /Show What to do guidance/);
+  assert.match(appSource, /dataset\.guideVisibility/);
+  assert.match(styles, /body\[data-guide-visibility="hidden"\]\s+\.section-guide\{display:none!important\}/);
+});
+
+test('learning screens omit the space-consuming caveat paragraphs', () => {
+  for (const phrase of [
+    'not the historical origin', 'not exhaustive', 'not automatically graded',
+    'not an official JLPT paper', 'cannot predict the JLPT', 'does not predict a pass or fail',
+    'approximate N5 kanji', 'approximate vocabulary entries',
+    'not taken from JLPT exams', 'not a JLPT scaled score', 'not official score sections',
+    'does not claim endorsement', 'not published as a current official specification',
+    'community approximation',
+  ]) assert.doesNotMatch(`${appSource}\n${n5Source}`, new RegExp(phrase, 'i'));
+  assert.doesNotMatch(appSource, /Data is not uploaded anywhere/);
 });
 
 test('N5 app script URL carries the visible release version', () => {

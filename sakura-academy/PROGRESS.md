@@ -4,16 +4,18 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 86
+- Total tracked: 88
 - Work in progress: 0
 - New: 0
-- Closed: 86
+- Closed: 88
 - Timeline gaps: 82
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-088 — Learner-facing disclaimers crowd learning screens | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
+| SA-087 — Learning guidance consumes limited mobile lesson space | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-086 — Cached course content can hide current kanji memory cues | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-085 — Kanji Explorer lacks visual memory cues and a simple study action | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-084 — Speech controls ignore explicit Japanese readings across N5 content | Codex | Closed | 100% | 2026-11-21 | 2026-11-21 |
@@ -1132,6 +1134,25 @@ Every published app change must bump the small footer version and its update dat
 - **Verification:** All 102 Academy tests pass. The standalone build succeeds and `git diff --check` is clean. At 390 × 844, the visible phone preview showed the memory aid and actions; Add to Study updated the saved count and disabled to “In Study,” and Next advanced to character 2 while updating studied progress to 1/84.
 - **Fix estimate:** 2026-11-22.
 
+### SA-087 — Learning guidance consumes limited mobile lesson space · 2026-11-22
+
+- **Status:** Closed · 100%
+- **Evidence:** “What to do” guidance appears throughout learning routes and lesson activities, taking vertical room while learners practice on mobile.
+- **Impact:** Resolved: learners can dismiss all guidance at first use and recover screen space; Settings can restore it.
+- **Resolution:** Added a one-time first-use dialog, saved each learner’s choice locally, and added a reversible Show What to do guidance control in Settings.
+- **Verification:** At 390 × 844, Hide permanently removed lesson guidance; Settings restored it, and it remained visible after navigating between sections.
+- **Fix estimate:** 2026-11-22.
+
+### SA-088 — Learner-facing disclaimers crowd learning screens · 2026-11-22
+
+- **Status:** Closed · 100%
+- **Evidence:** Kanji cards display memory-aid and reading caveats; handwriting and mock-exam pages show grading and score disclaimers that consume room.
+- **Impact:** Resolved: learner-facing caveats are removed from Kanji Explorer, handwriting, mock practice, and progress screens.
+- **Resolution:** Removed memory-origin and reading-range caveats, the grading notice, mock exam score disclaimers, and unnecessary progress-import notice. Preserved required content attribution and data-transfer controls.
+- **Verification:** Regression tests confirm the removed caveats stay out of the learning screens; phone preview shows less vertical clutter.
+- **Fix estimate:** 2026-11-22.
+
+
 ### v1.5.116 — Kanji memory and study flow · 2026-11-22
 
 - **Changes:** Added visual memory aids to all 84 Kanji Explorer cards, a persistent Add to Study action, and Next-to-mark-studied behavior. Bumped the visible app and offline cache versions.
@@ -1158,3 +1179,9 @@ Every published app change must bump the small footer version and its update dat
 - **Resolution:** Versioned `content.js` in the app HTML and standalone build, and updated the offline shell precache to the same versioned URL.
 - **Verification:** GitHub Pages returned HTTP 200 for the v1.5.117 app, versioned content script, and issue tracker. The app HTML references the versioned content script; that response contains the three mountain peaks memory cue, and the live tracker includes SA-086 as Closed.
 - **Fix estimate:** 2026-11-22.
+
+### v1.5.119 — Focused mobile learning space · 2026-11-22
+
+- **Changes:** Added a one-time prompt to keep or hide learning guidance, saved the choice, and added a Settings toggle to restore guidance. Removed caveat paragraphs from kanji, handwriting, and N5 practice screens. Versioned the updated validation script for reliable cache refresh.
+- **Verification:** All 105 Academy tests pass. Standalone build succeeds. At 390 × 844, the prompt fit comfortably; Hide permanently removed guidance from the lesson, the choice persisted after reload without console errors, and Settings restored the guidance. Kanji Explorer retained its memory cue without the caveats.
+- **Tracker:** SA-087 and SA-088 closed. Total 88; 0 Work in progress; 0 New; 88 Closed; 82 timeline gaps.
