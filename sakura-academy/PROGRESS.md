@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 55
 - Work in progress: 0
-- New: 2
-- Closed: 53
+- New: 0
+- Closed: 55
 - Timeline gaps: 54
 
 ## Issue register
@@ -67,8 +67,8 @@ Every published app change must bump the small footer version and its update dat
 | SA-051 — Kana Recognition challenge is hidden below the character grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-052 — Fixed mobile navigation covers audio practice controls | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-053 — Stroke order must be started manually for each handwriting character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-054 — Speaker colors do not match their female and male voices | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-055 — Conversation mouth animation looks unnatural | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-054 — Speaker colors do not match their female and male voices | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-055 — Conversation mouth animation looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -778,3 +778,11 @@ Every published app change must bump the small footer version and its update dat
 
 - **Tracker:** SA-054 records the reversed speaker colors; SA-055 records the unnatural mouth motion. Both were logged before changing the conversation visuals. Total 55; 2 New; 53 Closed.
 - **Next:** Match pink/blue to female/male roles and make mouth motion subtle and speech-like, then verify the conversation scene on mobile.
+
+
+### Conversation visual fixes · 2026-11-21 · v1.5.81
+
+- **Tracker:** SA-054 and SA-055 closed after phone-sized visual verification. All 55 registered issues are Closed; unmeasured fix durations remain “Not recorded.”
+- **Changes:** Female Speaker A is pink on the left; male Speaker B is blue on the right. Speaking uses a smaller, more restrained mouth pulse, with the extra label-side voice bars removed.
+- **Verification:** On the visible 390 × 844 browser preview, the voice labels, character colors, active-speaker state, transcript, and audio controls were checked. Full automated suite and offline version/cache alignment passed for the final source.
+- **Next audit:** Continue tracking and resolving newly found high-impact learning, mobile, accessibility, and offline issues before changing their behavior.
