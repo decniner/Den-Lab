@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 41
 - Work in progress: 0
-- New: 1
-- Closed: 40
+- New: 0
+- Closed: 41
 - Timeline gaps: 41
 
 ## Issue register
@@ -54,7 +54,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-039 — Daily routine audio pronounces 7 o’clock as ななじ | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-040 — Strict mode is off by default | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-041 — No listen-through mode for full lessons | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-041 — No listen-through mode for full lessons | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -676,7 +676,8 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Strict mode starts enabled for fresh progress; a saved explicit opt-out remains respected. Added densanchez@gmail.com as a footer mail link and removed the irrelevant GENKI affiliation disclaimer.
 - **Verification:** 63 Academy tests pass. Standalone build and `git diff --check` pass. A fresh mobile view at 390 × 844 shows Strict mode checked, the contact link present, and the disclaimer absent.
 
-### SA-041 intake · v1.5.62
+### SA-041 — Full lesson audio player · 2026-11-21 · v1.5.63
 
-- **Tracker:** SA-041 published as New before implementation; 41 issues tracked, 1 New and 40 Closed.
-- **Finding:** Lesson audio is available as individual clips, but there is no dedicated listen-through player for reviewing lesson audio in one sequence.
+- **Tracker:** SA-041 closed; 41 issues tracked, all closed. It was published as New in v1.5.62 before implementation.
+- **Changes:** Added a dedicated Audio lessons section with a single lesson selector, one play/pause button, replay, current sentence and translation, and clip progress. It sequences the lesson sentence, vocabulary, example sentences, and conversation using existing bundled audio; playback remains offline-capable.
+- **Verification:** 66 Academy tests pass. The helper test confirms all queued clips are in the offline manifest. On a 390 × 844 browser view, playback advanced from clip 1, pause held the current clip, resume continued, and Start over returned to clip 1. Document width remained 390px. Standalone build and diff check pass.
