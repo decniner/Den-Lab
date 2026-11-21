@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 43
+- Total tracked: 44
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 43
-- Timeline gaps: 43
+- Timeline gaps: 44
 
 ## Issue register
 
@@ -57,6 +57,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-041 — No listen-through mode for full lessons | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-042 — Unversioned stylesheet can keep stale mobile styles after release | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-043 — Audio lessons show conversation as plain text without speaker visuals | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-044 — Sticky audio controls cover the current translation on mobile | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -695,3 +696,8 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-043 closed; 43 issues tracked, all closed. It was published as New in v1.5.66 before implementation.
 - **Changes:** Added two illustrated stickman speakers with speech bubbles in the Audio lessons player. The active dialogue speaker highlights and animates in sync with the bundled audio; reduced-motion preferences disable animation.
 - **Verification:** 67 Academy tests pass, including speaker identification, offline audio coverage, and reduced-motion styling. At 390 × 844, the scene fits the mobile layout and the correct character is emphasized on dialogue clips. Standalone build and diff check pass.
+
+### SA-044 intake · v1.5.68
+
+- **Tracker:** SA-044 published as New before implementation; 44 issues tracked, 1 New and 43 Closed.
+- **Finding:** Mobile Audio lessons sticky controls overlap the translation after the conversation scene is shown.
