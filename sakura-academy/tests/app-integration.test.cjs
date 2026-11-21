@@ -2,6 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const vm = require('node:vm');
 
 const project = path.resolve(__dirname, '..');
 const appSource = fs.readFileSync(path.join(project, 'src', 'app.js'), 'utf8');
@@ -13,8 +14,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.82"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.82"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.82"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.82"><\/script><script src="src\/app\.js\?v=1\.5\.82">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.84"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.84"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.84"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.84"><\/script><script src="src\/app\.js\?v=1\.5\.84">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -53,7 +54,7 @@ test('lesson activity tabs remain sticky and compact on mobile', () => {
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.82"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.84"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -68,7 +69,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.82"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.84"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -84,4 +85,18 @@ test('handwriting stroke order automatically plays for every newly rendered char
   assert.match(appSource, /if\(view==='handwriting'\)\{setupPracticeCanvas\(\);strokeStep=0;stopStrokeGuide\(\);playStrokeOrder\(\)\}/);
   assert.match(appSource, /aria-label="Replay correct stroke order" onclick="playStrokeOrder\(\)">↺ Replay order/);
   assert.match(appSource, /function playStrokeOrder\(\)[\s\S]*?setInterval\(\(\)=>/);
+});
+
+test('dashboard counts only actual scheduled reviews, not unseen cards', () => {
+  assert.match(appSource, /dueCount=dueReviewCount\(allCards\(\),state\.reviews\)/);
+  const helper = appSource.match(/function dueReviewCount\(cards,reviews\)\{[\s\S]*?\.length\}/)?.[0];
+  assert.ok(helper, 'due review counter is present');
+  const sandbox = { today: () => '2026-11-21' };
+  vm.runInNewContext(`${helper};globalThis.count=dueReviewCount`, sandbox);
+  const cards = [{ id: 'new' }, { id: 'due' }, { id: 'future' }, { id: 'bad' }];
+  assert.equal(sandbox.count(cards, {}), 0);
+  assert.equal(sandbox.count(cards, { due: { due: '2026-11-20' }, future: { due: '2026-11-22' }, bad: { due: 'not-a-date' } }), 1);
+  assert.match(appSource, /Flashcard practice/);
+  assert.match(appSource, /cards ready · Card/);
+  assert.match(appSource, /New cards are available right away/);
 });

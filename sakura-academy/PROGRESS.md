@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 56
 - Work in progress: 0
-- New: 1
-- Closed: 55
+- New: 0
+- Closed: 56
 - Timeline gaps: 55
 
 ## Issue register
@@ -69,7 +69,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-053 — Stroke order must be started manually for each handwriting character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-054 — Speaker colors do not match their female and male voices | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-055 — Conversation mouth animation looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-056 — Fresh accounts show unseen vocabulary as reviews due | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-056 — Fresh accounts show unseen vocabulary as reviews due | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -794,3 +794,11 @@ Every published app change must bump the small footer version and its update dat
 - **Evidence:** Fresh mobile state showed no lesson or vocabulary progress but listed all 762 cards as reviews due. The review predicate treats missing schedules as due.
 - **Tracker:** SA-056 recorded as New before changing the stat or card copy. Total 56; 1 New; 55 Closed.
 - **Next:** Separate outstanding scheduled reviews from unseen cards and verify the fresh dashboard plus review flow.
+
+
+### First-run review count fix · 2026-11-21 · v1.5.84
+
+- **Tracker:** SA-056 closed with a fresh 390 × 844 screen check and due-date helper coverage. All 56 issues are Closed; time-to-fix remains “Not recorded” because it was not measured.
+- **Change:** The dashboard counts only valid saved review schedules that are due today or earlier. Flashcards distinguish the 762 available new cards from scheduled reviews.
+- **Verification:** Tests cover no review record, an overdue review, a future review, and malformed date. The fresh mobile dashboard shows 0 Reviews due; the flashcard page says 762 cards ready.
+- **Next audit:** Continue inspecting beginner flow, progress accuracy, mobile controls, accessibility, and offline behavior. Record each new issue before changing its behavior.
