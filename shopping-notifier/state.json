@@ -452,9 +452,9 @@
       "url": "https://saucony.jp/products/womens-tempus-2?variant=45827000467608"
     },
     "saucony-jp:8596861321368:45827008266392": {
-      "sale_price": "13750",
+      "sale_price": "8250",
       "reference_price": "27500",
-      "sent_at": "2026-10-07T10:10:20+09:00",
+      "sent_at": "2026-11-21T11:59:17+09:00",
       "url": "https://saucony.jp/products/hurricane-24?variant=45827008266392"
     },
     "saucony-jp:8596862468248:45827015671960": {
@@ -1032,12 +1032,30 @@
       "reference_price": "30800",
       "sent_at": "2026-11-21T11:59:15+09:00",
       "url": "https://saucony.jp/products/grid-aura-x-n02?variant=45827078684824"
+    },
+    "saucony-jp:8834140766360:47213391544472": {
+      "sale_price": "9240",
+      "reference_price": "30800",
+      "sent_at": "2026-11-21T11:59:17+09:00",
+      "url": "https://saucony.jp/products/586i-s-n02?variant=47213391544472"
+    },
+    "saucony-jp:8836868800664:47220348911768": {
+      "sale_price": "9240",
+      "reference_price": "30800",
+      "sent_at": "2026-11-21T11:59:17+09:00",
+      "url": "https://saucony.jp/products/aura-x-n02?variant=47220348911768"
+    },
+    "saucony-jp:8756884504728:49332600668312": {
+      "sale_price": "8250",
+      "reference_price": "27500",
+      "sent_at": "2026-11-21T11:59:17+09:00",
+      "url": "https://saucony.jp/products/mens-hurricane-25-n02?variant=49332600668312"
     }
   },
   "last_digest": {
-    "date": "2026-11-20",
-    "coverage_key": "5d7663c203ea7084c976f427740bfb5304686b950fbad992f97c1247bd9cd472",
-    "completed_at": "2026-11-20T11:49:14+09:00",
-    "digest_hash": "3bcb2f6e17e0160e8f134bfb6ceeafdfb175ff408d667f6f727fb4330704e68b"
+    "date": "2026-11-21",
+    "coverage_key": "21354eb8420f77c13625548cf3e71bfed4743a12cb62ca1599af642804e99ccb",
+    "completed_at": "2026-11-21T11:59:17+09:00",
+    "digest_hash": "5a5747c498d3de2155c4b958d925fdf54a52d947557490e5cd652c57865de15a"
   }
 }
