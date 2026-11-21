@@ -53,7 +53,7 @@ test('offline shell precaches the full app and tracker assets', async () => {
   let installPromise;
   worker.listeners.install({ waitUntil(promise) { installPromise = promise; } });
   await installPromise;
-  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.5.102', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/app.js?v=1.5.102', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js?v=1.5.102', './src/audio-lessons.js?v=1.5.102', './src/reward-guard.js']) {
+  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.5.103', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/app.js?v=1.5.103', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js?v=1.5.103', './src/audio-lessons.js?v=1.5.103', './src/reward-guard.js']) {
     assert.ok(worker.added.includes(file), `precache includes ${file}`);
   }
   const audio = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
@@ -85,9 +85,9 @@ test('app registers the worker relative to its own project route', () => {
   assert.match(html, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)/);
   assert.match(html, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/);
   assert.match(html, /sakura-academy/);
-  assert.match(html, /href="styles\.css\?v=1\.5\.102"/);
-  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.5\.102"><\/script>/);
-  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.5.102'));
+  assert.match(html, /href="styles\.css\?v=1\.5\.103"/);
+  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.5\.103"><\/script>/);
+  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.5.103'));
 });
 
 test('static build copies the favicon into the published Academy project', () => {
@@ -105,7 +105,7 @@ test('static build copies the favicon into the published Academy project', () =>
     const standalone = fs.readFileSync(path.join(output, 'genki-interactive-academy.html'), 'utf8');
     assert.match(standalone, /data:audio\/mpeg;base64,/);
     assert.match(standalone, /\.audio-player-card/);
-    assert.doesNotMatch(standalone, /href="styles\.css\?v=1\.5\.102/);
+    assert.doesNotMatch(standalone, /href="styles\.css\?v=1\.5\.103/);
     assert.match(standalone, /function buildLessonAudioQueue\(lesson\)/);
     assert.match(standalone, /function audioLessons\(\)/);
     assert.doesNotMatch(standalone, /function practiceSentence|SpeechRecognition|🎙/);
@@ -140,14 +140,14 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.equal(nodes['#registerTitle'].textContent, 'Issue archive');
   assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-025[\s\S]*class="pill closed">Closed/);
-  assert.equal(nodes['#scope-archive'].textContent, 'Archive (69)');
+  assert.equal(nodes['#scope-archive'].textContent, 'Archive (70)');
   assert.equal(nodes['#scope-archive']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='all';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'All issues');
-  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">69<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">70<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">0<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">69<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">70<\/div>/);
   assert.match(nodes['#rows'].innerHTML, /SA-035[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-036[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-037[\s\S]*class="pill closed">Closed/);
@@ -170,6 +170,7 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.match(nodes['#rows'].innerHTML, /SA-054[\s\S]*Speaker colors do not match their female and male voices[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-067[\s\S]*Bottom navigation targets are too narrow on small phones[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-068[\s\S]*Conversation character mouth movement looks unnatural[\s\S]*class="pill closed">Closed/);
+  assert.match(nodes['#rows'].innerHTML, /SA-070[\s\S]*N5 mobile section tabs hide sections and lose the active tab[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-066[\s\S]*Conversation mouth movement still looks unnatural[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-065[\s\S]*Dashboard mastery totals count obsolete progress IDs[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-064[\s\S]*Assessment distractors include untaught answers[\s\S]*class="pill closed">Closed/);

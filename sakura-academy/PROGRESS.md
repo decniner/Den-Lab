@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 69
+- Total tracked: 70
 - Work in progress: 0
 - New: 0
-- Closed: 69
-- Timeline gaps: 68
+- Closed: 70
+- Timeline gaps: 69
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-070 — N5 mobile section tabs hide sections and lose the active tab | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-069 — Home counts an incomplete lesson as complete | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-068 — Conversation character mouth movement looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-067 — Bottom navigation targets are too narrow on small phones | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -951,3 +952,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-069 was recorded before changes and closed after same-profile mobile verification. Total 69; 0 New; 69 Closed; 68 timeline gaps because fix durations were not recorded.
 - **Change:** Home now counts checklist-complete lessons in strict mode and saved completion flags when strict mode is off. Readiness uses the same reconciled count.
 - **Verification:** Added regression coverage for stale completion flags with mixed checklist completion and for nonstrict legacy counts. All 84 Academy tests pass; the standalone build and offline cache/version alignment are verified at v1.5.102. Live verification confirmed Home, the Lesson 1 checklist, and strict-mode lock state agree.
+
+
+### SA-070 — N5 mobile section tabs hide sections and lose the active tab · 2026-11-21 · v1.5.103
+
+- **Evidence:** At 390 × 844, the N5 section strip now has a visible “Swipe to explore all six sections” cue and an accessible group label. Selecting both Kanji and Timed mock keeps the chosen tab centered inside the strip after redraw; the document width stays at 390 px.
+- **Tracker:** SA-070 was recorded before changes and closed after phone-sized browser review. Total 70; 0 New; 70 Closed; 69 timeline gaps because fix durations were not recorded.
+- **Change:** Added a two-way swipe hint and screen-reader instruction, then scroll the active N5 section into view after each render.
+- **Verification:** The phone preview confirmed the overflow affordance and accessible group name; selecting the previously hidden Kanji and Timed mock sections left each active tab visible. All 85 Academy tests pass; standalone build and offline cache/version alignment match v1.5.103.
