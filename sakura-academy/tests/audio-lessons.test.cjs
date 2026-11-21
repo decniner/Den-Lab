@@ -60,4 +60,7 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(appSource, /classList\.toggle\('is-speaking',active\)/);
   assert.match(stylesSource, /audio-dialogue-person\.is-speaking/);
   assert.match(stylesSource, /prefers-reduced-motion:reduce/);
+  const audioScreen = appSource.slice(appSource.indexOf('function audioLessons()'), appSource.indexOf('\n', appSource.indexOf('function audioLessons()')));
+  assert.ok(audioScreen.indexOf('class="audio-controls"') < audioScreen.indexOf('audioDialogueScene(l)'), 'mobile playback controls should appear before the conversation and transcript');
+  assert.doesNotMatch(stylesSource, /\.audio-controls\{position:sticky/);
 });
