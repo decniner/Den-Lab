@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 35
+- Total tracked: 36
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 35
-- Timeline gaps: 35
+- Timeline gaps: 36
 
 ## Issue register
 
@@ -49,6 +49,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-033 — Cached lesson script can hide the newly released microphone control | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-036 — Unreliable sentence microphone controls should be removed | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -576,3 +577,16 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-035 closed; 35 issues tracked, all closed.
 - **Fix:** Keep interim Japanese transcript chunks and use them if final recognition results are absent. If the phone returns no words, explain that the device speech service returned no transcript and give connectivity/language-setting guidance. Network and unsupported-language errors are reported separately.
 - **Verification:** 64 tests pass, including interim chunk capture and mobile fallback coverage.
+
+### SA-036 — Unreliable sentence microphone controls should be removed
+
+- **Status:** New (0%)
+- **Evidence:** The learner reports the microphone option remains unusable and requests that Sakura no longer show or use it.
+- **Impact:** Visible controls invite an unreliable sentence-practice flow on mobile.
+- **Resolution plan:** Remove microphone buttons and browser speech-recognition code from lesson sentences, vocabulary examples, grammar examples, dialogue, and sentence builder. Keep bundled Listen audio.
+- **Fix estimate:** Not recorded.
+
+### Microphone removal issue intake · 2026-11-21 · v1.5.50
+
+- **Tracker:** SA-036 opened; 36 issues tracked, 35 closed, 1 new.
+- **Next:** Remove microphone controls and related recognition logic; retain sentence playback.
