@@ -3,10 +3,11 @@
   function getRecognitionTranscript(event) {
     const results = event?.results;
     if (!results?.length) return '';
-    let bestText = '';
-    let bestConfidence = -1;
+    const transcriptParts = [];
     for (let i = 0; i < results.length; i++) {
       const result = results[i];
+      let bestText = '';
+      let bestConfidence = -1;
       for (let j = 0; j < (result?.length || 0); j++) {
         const alternative = result[j];
         const transcript = String(alternative?.transcript || '').trim();
@@ -16,8 +17,9 @@
           bestConfidence = confidence;
         }
       }
+      if (bestText) transcriptParts.push(bestText);
     }
-    return bestText;
+    return transcriptParts.join('');
   }
 
   function normalizeJapanese(text) {

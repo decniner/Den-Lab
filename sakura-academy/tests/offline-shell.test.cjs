@@ -53,7 +53,7 @@ test('offline shell precaches the full app and tracker assets', async () => {
   let installPromise;
   worker.listeners.install({ waitUntil(promise) { installPromise = promise; } });
   await installPromise;
-  for (const file of ['./', './index.html', './favicon.svg', './styles.css', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/speech-practice.js?v=1.5.48', './src/app.js?v=1.5.48', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js', './src/reward-guard.js']) {
+  for (const file of ['./', './index.html', './favicon.svg', './styles.css', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/speech-practice.js?v=1.5.49', './src/app.js?v=1.5.49', './src/content.js', './src/n5-app.js', './src/content-validation.js', './src/lesson-progress.js', './src/reward-guard.js']) {
     assert.ok(worker.added.includes(file), `precache includes ${file}`);
   }
   const audio = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
@@ -125,22 +125,22 @@ test('issue tracker script parses and renders all registered issues', () => {
   const context = { document: { querySelector: selector => nodes[selector] } };
   vm.runInNewContext(script, context);
   assert.equal(nodes['#registerTitle'].textContent, 'Active issues');
-  assert.match(nodes['#rows'].innerHTML, /SA-035[\s\S]*class="pill[^"]*">New/);
-  assert.equal(nodes['#scope-active'].textContent, 'Active (1)');
+  assert.match(nodes['#rows'].innerHTML, /No open issues/);
+  assert.equal(nodes['#scope-active'].textContent, 'Active (0)');
   assert.equal(nodes['#scope-active']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='archive';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'Issue archive');
   assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-025[\s\S]*class="pill closed">Closed/);
-  assert.equal(nodes['#scope-archive'].textContent, 'Archive (34)');
+  assert.equal(nodes['#scope-archive'].textContent, 'Archive (35)');
   assert.equal(nodes['#scope-archive']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='all';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'All issues');
   assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">35<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">1<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">0<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">34<\/div>/);
-  assert.match(nodes['#rows'].innerHTML, /SA-035[\s\S]*class="pill[^"]*">New/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">35<\/div>/);
+  assert.match(nodes['#rows'].innerHTML, /SA-035[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-031[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-032[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-033[\s\S]*class="pill closed">Closed/);

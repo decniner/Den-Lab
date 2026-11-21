@@ -7,6 +7,14 @@ test('a low-confidence no-match event still provides the transcript for feedback
   assert.equal(getRecognitionTranscript(event), 'わたしは りなです。');
 });
 
+test('interim transcript chunks are retained together for fallback feedback', () => {
+  const event = { results: [
+    Object.assign([{ transcript: 'わたしは', confidence: 0.4 }], { isFinal: false }),
+    Object.assign([{ transcript: 'りなです。', confidence: 0.3 }], { isFinal: false }),
+  ] };
+  assert.equal(getRecognitionTranscript(event), 'わたしはりなです。');
+});
+
 test('sentence scoring ignores Japanese punctuation and whitespace', () => {
   assert.equal(sentenceMatchScore('わたしは りなです。', 'わたしはりなです'), 100);
 });

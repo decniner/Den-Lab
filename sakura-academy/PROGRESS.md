@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 35
 - Work in progress: 0
-- New: 1
-- Closed: 34
+- New: 0
+- Closed: 35
 - Timeline gaps: 35
 
 ## Issue register
@@ -48,7 +48,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-032 — Lesson sentences have no microphone pronunciation check | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-033 — Cached lesson script can hide the newly released microphone control | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -557,10 +557,11 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript
 
-- **Status:** New (0%)
-- **Evidence:** The learner reports microphone permission and audio capture work in mobile Edge and Chrome, but the browser returns no Japanese transcript.
-- **Impact:** Sentence-practice feedback cannot run when the device speech service yields no transcript, regardless of speech clarity.
-- **Investigation:** Check whether interim recognition results can provide usable text before the recognition service ends, and make the remaining device-service limitation explicit.
+- **Status:** Closed (100%)
+- **Evidence:** Recognition now requests interim results, combines transcript chunks, and keeps the latest words until the browser session ends. When the device returns no Japanese text at all, the message clarifies that recognition failed to produce a transcript and offers relevant device checks.
+- **Impact:** Resolved: mobile learners receive feedback from interim speech transcripts or an accurate explanation when the device speech service supplies no text.
+- **Resolution:** Preserve interim Japanese transcripts and use them when final results are absent; report network and unsupported-language failures separately.
+- **Verification:** 64 tests pass, including interim chunk collection and mobile fallback integration coverage.
 - **Fix estimate:** Not recorded.
 
 ### Mobile speech recognition issue intake · 2026-11-21 · v1.5.48
@@ -569,3 +570,9 @@ Every published app change must bump the small footer version and its update dat
 - **Evidence:** On mobile Edge and Chrome, audio capture succeeds but Japanese recognition returns no text.
 - **Next:** Investigate interim transcripts and improve fallback guidance for device speech-service limitations.
 - **Verification:** 62 tests pass; tracker archive and active counts match this register.
+
+### Mobile Japanese transcript fallback · 2026-11-21 · v1.5.49
+
+- **Tracker:** SA-035 closed; 35 issues tracked, all closed.
+- **Fix:** Keep interim Japanese transcript chunks and use them if final recognition results are absent. If the phone returns no words, explain that the device speech service returned no transcript and give connectivity/language-setting guidance. Network and unsupported-language errors are reported separately.
+- **Verification:** 64 tests pass, including interim chunk capture and mobile fallback coverage.
