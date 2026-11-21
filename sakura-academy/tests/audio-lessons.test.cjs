@@ -66,13 +66,14 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.doesNotMatch(stylesSource, /audio-dialogue-bubble\{[^}]*-webkit-line-clamp|audio-dialogue-bubble\{[^}]*overflow:hidden/);
   assert.match(stylesSource, /audio-dialogue-person-a\{color:#b86680\}\.audio-dialogue-person-b\{color:#414a79\}/);
   assert.match(appSource, /getByteTimeDomainData/);
-  assert.match(appSource, /audioMouthLevel/);
+  assert.match(appSource, /audioMouthEnvelope/);
+  assert.match(appSource, /audioMouthOpening/);
   assert.match(stylesSource, /audio-dialogue-person\.mouth-active \.mouth-open\{opacity:1\}/);
   assert.doesNotMatch(stylesSource, /sakura-talk-mouth|audio-dialogue-person\.is-speaking \.mouth-open\{[^}]*animation/);
   assert.doesNotMatch(stylesSource, /sakura-talk-bob|audio-dialogue-person\.is-speaking \.audio-stick-figure\{animation/);
   assert.match(stylesSource, /mouth-open\{[^}]*transform:scaleY\(var\(--mouth-open/);
-  assert.match(stylesSource, /mouth-open\{[^}]*transition:transform 110ms cubic-bezier/);
-  assert.match(appSource, /mouth-open[^>]*rx="3" ry="2"/);
+  assert.match(stylesSource, /mouth-open\{[^}]*transition:transform 150ms cubic-bezier/);
+  assert.match(appSource, /mouth-open[^>]*rx="3\.2" ry="3\.2"/);
   assert.match(appSource, /prefers-reduced-motion/);
   assert.match(stylesSource, /prefers-reduced-motion:reduce/);
   assert.doesNotMatch(stylesSource, /audio-voice-bars/);
@@ -167,4 +168,10 @@ test('audio mouth movement follows clip amplitude and ignores silence', () => {
   assert.equal(sandbox.audioMouthLevel(new Uint8Array(32).fill(127)), 0);
   assert.ok(sandbox.audioMouthLevel(Uint8Array.from({ length: 32 }, (_, i) => i % 2 ? 104 : 152)) > 0.8);
   assert.ok(sandbox.audioMouthLevel(Uint8Array.from({ length: 32 }, (_, i) => i % 2 ? 120 : 136)) < sandbox.audioMouthLevel(Uint8Array.from({ length: 32 }, (_, i) => i % 2 ? 104 : 152)));
+  const rising=sandbox.audioMouthEnvelope(0,1,16);
+  assert.ok(rising>0&&rising<.3,'mouth motion should ease into speech rather than jump open');
+  assert.ok(sandbox.audioMouthEnvelope(.8,0,16)<.8,'mouth release should ease closed');
+  assert.equal(sandbox.audioMouthOpening(.09),0,'quiet audio keeps the mouth closed');
+  assert.ok(sandbox.audioMouthOpening(.14)>.58&&sandbox.audioMouthOpening(.14)<1,'normal Japanese speech opens the mouth clearly');
+  assert.ok(sandbox.audioMouthOpening(.4)>.58&&sandbox.audioMouthOpening(.4)<1,'stronger speech remains within a restrained range');
 });

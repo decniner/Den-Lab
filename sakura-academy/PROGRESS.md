@@ -4,16 +4,18 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 64
+- Total tracked: 66
 - Work in progress: 0
 - New: 0
-- Closed: 64
-- Timeline gaps: 63
+- Closed: 66
+- Timeline gaps: 65
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-066 — Conversation mouth movement still looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-065 — Dashboard mastery totals count obsolete progress IDs | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-064 — Assessment distractors include untaught answers | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-063 — Conversation mouth animation still looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-062 — Kana recognition question opens below the phone fold | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -904,3 +906,21 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-063 was recorded before the fix and closed after phone-sized playback review. Total 63; 0 active; 63 Closed; 62 timeline gaps because fix durations were not measured.
 - **Change:** Reduced the mouth opening, placed it below the smile, eased transitions, smoothed analyser response more strongly, and raised its threshold to ignore low-level fluctuations.
 - **Verification:** Built v1.5.95 and checked the speaking scene at 390 × 844; the active speaker animates and the other remains still. Focused audio, offline shell, and tracker checks pass.
+
+
+
+
+### SA-065 — Dashboard mastery totals counted obsolete progress IDs · 2026-11-21 · v1.5.97
+
+- **Evidence:** Reproduced on the 390 × 844 mobile preview with a synthetic imported backup: one valid and one obsolete vocabulary ID and lesson ID made Home show 2/96 words and 2/12 lessons. With the same saved data after the fix, Home shows 1/96 and 1/12.
+- **Tracker:** SA-065 was recorded before the fix and closed after repeating the import on mobile. Total 65; 0 New; 65 Closed; 64 timeline gaps because fix duration was not recorded.
+- **Change:** Count only current lesson vocabulary IDs and lesson IDs when calculating Home mastery totals.
+- **Verification:** Regression tests include valid and obsolete keys and check the dashboard uses the current catalogs. The 390 × 844 mobile browser confirmed 1/96 words and 1/12 lessons with stale backup flags present. All Academy tests, the standalone build, and offline cache/version alignment pass at v1.5.97.
+
+
+### SA-066 — Conversation mouth movement still looks unnatural · 2026-11-21 · v1.5.98
+
+- **Evidence:** At 390 × 844 during bundled Japanese playback, the active speaker’s rounded mouth opens on voiced portions and eases closed through quiet moments; the other speaker stays still. The live preview showed a 0.75 opening on Speaker B and captured Speaker A mid-speech.
+- **Tracker:** SA-066 recorded before changes and closed after mobile review. Total 66; 0 New; 66 Closed; 65 timeline gaps because fix durations were not recorded.
+- **Change:** Lowered the audio analyser’s noise floor and activation threshold so regular Japanese speech drives the mouth. Added time-based easing for attack and release, bounded the mouth opening, and softened its visual transition.
+- **Verification:** Focused mouth tests cover silence, weak and strong audio, restrained opening, and eased transitions. Reviewed the full speaker scene at 390 × 844.

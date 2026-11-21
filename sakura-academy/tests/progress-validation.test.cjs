@@ -138,8 +138,12 @@ test('older local practice data drops malformed flags before rewards or renderin
 
 test('readiness totals count only known true study flags', () => {
   assert.equal(countKnownFlags({ a: true, b: false, c: 'true', extra: true }, ['a', 'b', 'c']), 1);
+  assert.equal(countKnownFlags({ 'lesson-1-word': true, 'removed-word': true }, ['lesson-1-word', 'lesson-2-word']), 1);
+  assert.equal(countKnownFlags({ 1: true, 99: true }, [1, 2]), 1);
   assert.match(appSource, /countKnownFlags\(state\.kana,KANA\.map\(x=>x\.ch\)\)/);
   assert.match(appSource, /countKnownFlags\(state\.kanji,KANJI\.map\(x=>x\.id\)\)/);
+  assert.match(appSource, /countKnownFlags\(state\.learned,LESSONS\.flatMap\(l=>l\.vocab\.map\(w=>w\.id\)\)\)/);
+  assert.match(appSource, /countKnownFlags\(state\.completed,LESSONS\.map\(l=>l\.id\)\)/);
   assert.match(appSource, /countKnownFlags\(done,practicePool\(\)\.map\(x=>practiceScript\+':'\+x\.id\)\)/);
 });
 

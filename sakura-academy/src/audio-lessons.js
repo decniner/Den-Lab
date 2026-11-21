@@ -45,9 +45,19 @@ function audioMouthLevel(samples) {
     sum += centered * centered;
   }
   const rms = Math.sqrt(sum / samples.length);
-  return Math.max(0, Math.min(1, (rms - 0.012) * 9));
+  return Math.max(0, Math.min(1, (rms - 0.01) * 12));
 }
-Object.assign(globalThis, { audioMouthLevel });
+function audioMouthEnvelope(current, level, deltaMs=16) {
+  const elapsed=Math.max(0,Math.min(50,Number(deltaMs)||0));
+  const timeConstant=level>current?82:145;
+  return current+(level-current)*(1-Math.exp(-elapsed/timeConstant));
+}
+function audioMouthOpening(level) {
+  if(level<.1)return 0;
+  const voiced=Math.max(0,Math.min(1,(level-.1)/.72));
+  return .58+.38*Math.pow(voiced,.72);
+}
+Object.assign(globalThis, { audioMouthLevel, audioMouthEnvelope, audioMouthOpening });
 
 function audioKanaToRomaji(text) {
   const basic = 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ';
