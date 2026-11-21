@@ -71,9 +71,9 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(stylesSource, /audio-dialogue-person\.mouth-active \.mouth-open\{opacity:1\}/);
   assert.doesNotMatch(stylesSource, /sakura-talk-mouth|audio-dialogue-person\.is-speaking \.mouth-open\{[^}]*animation/);
   assert.doesNotMatch(stylesSource, /sakura-talk-bob|audio-dialogue-person\.is-speaking \.audio-stick-figure\{animation/);
-  assert.match(stylesSource, /mouth-open\{[^}]*transform:scaleY\(var\(--mouth-open/);
-  assert.match(stylesSource, /mouth-open\{[^}]*transition:transform 150ms cubic-bezier/);
-  assert.match(appSource, /mouth-open[^>]*rx="3\.2" ry="3\.2"/);
+  assert.match(stylesSource, /mouth-open\{[^}]*transform:scale\(var\(--mouth-wide/);
+  assert.match(stylesSource, /mouth-open\{[^}]*transition:transform 90ms ease-out/);
+  assert.match(appSource, /mouth-open[^>]*rx="3\.6" ry="4\.0"/);
   assert.match(appSource, /prefers-reduced-motion/);
   assert.match(stylesSource, /prefers-reduced-motion:reduce/);
   assert.doesNotMatch(stylesSource, /audio-voice-bars/);
@@ -171,7 +171,7 @@ test('audio mouth movement follows clip amplitude and ignores silence', () => {
   const rising=sandbox.audioMouthEnvelope(0,1,16);
   assert.ok(rising>0&&rising<.3,'mouth motion should ease into speech rather than jump open');
   assert.ok(sandbox.audioMouthEnvelope(.8,0,16)<.8,'mouth release should ease closed');
-  assert.equal(sandbox.audioMouthOpening(.09),0,'quiet audio keeps the mouth closed');
-  assert.ok(sandbox.audioMouthOpening(.14)>.58&&sandbox.audioMouthOpening(.14)<1,'normal Japanese speech opens the mouth clearly');
-  assert.ok(sandbox.audioMouthOpening(.4)>.58&&sandbox.audioMouthOpening(.4)<1,'stronger speech remains within a restrained range');
+  assert.equal(sandbox.audioMouthOpening(.11),0,'quiet audio keeps the mouth closed');
+  const soft=sandbox.audioMouthOpening(.16),clear=sandbox.audioMouthOpening(.3),strong=sandbox.audioMouthOpening(.5);
+  assert.ok(soft>0&&soft<clear&&clear<strong&&strong<=.72,'mouth opening follows changing speech energy smoothly and stays bounded');
 });

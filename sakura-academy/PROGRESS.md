@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 67
+- Total tracked: 68
 - Work in progress: 0
 - New: 0
-- Closed: 67
-- Timeline gaps: 66
+- Closed: 68
+- Timeline gaps: 67
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-068 — Conversation character mouth movement looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-067 — Bottom navigation targets are too narrow on small phones | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-066 — Conversation mouth movement still looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-065 — Dashboard mastery totals count obsolete progress IDs | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -933,3 +934,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-067 was recorded before changes and closed after phone and desktop review. Total 67; 0 New; 67 Closed; 66 timeline gaps because fix durations were not recorded.
 - **Change:** Replaced the squeezed nine-button mobile bar with five primary destinations and a labeled More panel for Write, Kanji, Cards, and Settings. Opening More moves keyboard focus into the panel; choosing a destination closes it.
 - **Verification:** Checked 320 × 740 and 390 × 844 layouts, touch-target dimensions, menu labels, route selection and close behavior, and desktop visibility. Focused integration tests and the complete Academy suite pass. Build and offline cache versions match v1.5.99.
+
+
+### SA-068 — Conversation character mouth movement looks unnatural · 2026-11-21 · v1.5.100
+
+- **Evidence:** At 390 × 844, the active pink speaker’s mouth opens during the female Japanese clip while the blue speaker remains in its closed smile. Repeated live samples show the opening responds continuously to the audio level and remains bounded; the shape no longer expands into a wide circular O. Pause and silence return the character to its resting smile.
+- **Tracker:** SA-068 was recorded before changes and closed after phone-sized playback review. Total 68; 0 New; 68 Closed; 67 timeline gaps because fix durations were not recorded.
+- **Change:** Replaced a near-circular opening with a narrower rounded aperture whose height follows voiced audio energy. Made soft and strong speech produce distinguishable openings, shortened attack/release easing, and kept the non-speaking speaker at rest.
+- **Verification:** Focused audio checks cover silence, soft/clear/strong levels, bounded opening, and easing. Reviewed live female-voice playback at 390 × 844; Speaker A was marked speaking and the other speaker stayed still. Full suite, standalone build, and offline cache/version alignment pass at v1.5.100.

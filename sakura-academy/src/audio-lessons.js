@@ -49,13 +49,13 @@ function audioMouthLevel(samples) {
 }
 function audioMouthEnvelope(current, level, deltaMs=16) {
   const elapsed=Math.max(0,Math.min(50,Number(deltaMs)||0));
-  const timeConstant=level>current?82:145;
+  const timeConstant=level>current?48:105;
   return current+(level-current)*(1-Math.exp(-elapsed/timeConstant));
 }
 function audioMouthOpening(level) {
-  if(level<.1)return 0;
-  const voiced=Math.max(0,Math.min(1,(level-.1)/.72));
-  return .58+.38*Math.pow(voiced,.72);
+  if(level<.12)return 0;
+  const voiced=Math.max(0,Math.min(1,(level-.12)/.34));
+  return .08+.64*(voiced*voiced*(3-2*voiced));
 }
 Object.assign(globalThis, { audioMouthLevel, audioMouthEnvelope, audioMouthOpening });
 
