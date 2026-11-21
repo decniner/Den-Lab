@@ -133,8 +133,8 @@ test('issue tracker script parses and renders all registered issues', () => {
   const context = { document: { querySelector: selector => nodes[selector] } };
   vm.runInNewContext(script, context);
   assert.equal(nodes['#registerTitle'].textContent, 'Active issues');
-  assert.match(nodes['#rows'].innerHTML, /SA-045[\s\S]*Audio lesson does not separate conversation practice from the full playlist/);
-  assert.equal(nodes['#scope-active'].textContent, 'Active (1)');
+  assert.match(nodes['#rows'].innerHTML, /SA-046[\s\S]*Missing audio and lesson progress helpers crash browser navigation/);
+  assert.equal(nodes['#scope-active'].textContent, 'Active (2)');
   assert.equal(nodes['#scope-active']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='archive';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'Issue archive');
@@ -144,8 +144,8 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.equal(nodes['#scope-archive']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='all';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'All issues');
-  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">44<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">46<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">2<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">0<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">44<\/div>/);
   assert.match(nodes['#rows'].innerHTML, /SA-035[\s\S]*class="pill closed">Closed/);

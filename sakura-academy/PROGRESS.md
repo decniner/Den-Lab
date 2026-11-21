@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 45
+- Total tracked: 46
 - Work in progress: 0
-- New: 1
+- New: 2
 - Closed: 44
-- Timeline gaps: 45
+- Timeline gaps: 46
 
 ## Issue register
 
@@ -59,6 +59,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-043 — Audio lessons show conversation as plain text without speaker visuals | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-044 — Sticky audio controls cover the current translation on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-045 — Audio lesson does not separate conversation practice from the full playlist | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-046 — Missing audio and lesson progress helpers crash browser navigation | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
