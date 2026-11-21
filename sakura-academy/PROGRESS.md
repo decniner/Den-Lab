@@ -4,18 +4,19 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 82
+- Total tracked: 83
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 82
-- Timeline gaps: 81
+- Timeline gaps: 82
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
-| SA-081 — Kanji Explorer hides selected-character details below a long grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-083 — Story narration may not follow the displayed kana reading | Codex | New | 0% | 2026-11-21 | Not recorded |
 | SA-082 — Lesson tab accessibility hint lists the wrong section count | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-081 — Kanji Explorer hides selected-character details below a long grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-080 — Learning sections do not consistently explain their purpose or next action | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-079 — N5 reading lacks story mode with synchronized kanji and kana | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-078 — Study cards hide N5 kanji spellings and readings | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -1082,3 +1083,18 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Added short purpose and next-action guidance across learning routes and their lesson/N5 subsections; moved selected-kanji learning content ahead of the collapsible character picker; corrected the lesson tab count announced to assistive technology.
 - **Verification:** All 96 Academy tests pass. JavaScript syntax checks and standalone build pass. Phone preview verified at 390 × 844.
 - **Tracker:** SA-080, SA-081, and SA-082 closed. Total 82; 0 Work in progress; 0 New; 82 Closed; 81 timeline gaps.
+
+### SA-083 — Story narration may not follow the displayed kana reading · 2026-11-21
+
+- **Status:** New · 0%
+- **Evidence:** `scripts/generate_story_audio.py` synthesizes `line["kanji"]` even though each story sentence has an explicit paired `line["kana"]` reading. This leaves compound and counter readings to Kokoro’s kanji inference.
+- **Impact:** A spoken story can disagree with the kana reading shown to the learner.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Not recorded.
+
+### v1.5.112 — Pronunciation audit issue recorded · 2026-11-21
+
+- **Changes:** Registered SA-083 before modifying audio generation. The issue tracker now shows one New issue and 82 Closed issues. Bumped the visible version and offline cache together.
+- **Verification:** Pending full release validation.
+- **Tracker:** SA-083 remains New pending the kana-aligned story narration fix. Total 83; 0 Work in progress; 1 New; 82 Closed; 82 timeline gaps.
