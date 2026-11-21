@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 51
+- Total tracked: 52
 - Work in progress: 0
-- New: 5
-- Closed: 46
-- Timeline gaps: 50
+- New: 1
+- Closed: 51
+- Timeline gaps: 51
 
 ## Issue register
 
@@ -60,11 +60,12 @@ Every published app change must bump the small footer version and its update dat
 | SA-044 — Sticky audio controls cover the current translation on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-045 — Audio lesson does not separate conversation practice from the full playlist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-046 — Missing audio and lesson progress helpers crash browser navigation | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-047 — Conversation practice stops after one lesson and both speakers use the same voice | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-048 — Kana Recognition challenge is separated below the character tabs | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-049 — Conversation practice ends after the selected lesson | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-050 — Conversation roles are not voiced distinctly | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-051 — Conversation characters are too small on phone screens | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-047 — Conversation practice stops after the selected lesson | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-048 — Speaker A and Speaker B use the same voice | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-049 — Conversation characters are too small on phone screens | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-050 — Conversation speaker labels omit voice identity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-051 — Kana Recognition challenge is hidden below the character grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-052 — Fixed mobile navigation covers audio practice controls | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -731,3 +732,18 @@ Every published app change must bump the small footer version and its update dat
 - **Audit:** Recorded the five highest-impact current weaknesses before implementation: cross-lesson conversation continuity, distinct speaker voices, mobile character scale, and the Kana Challenge’s placement alongside the two script tabs. The cross-lesson and Kana-tab findings were already captured as SA-047/SA-048; SA-049–SA-051 clarify the separate fixes.
 - **Tracker:** 51 tracked; 5 New; 46 Closed.
 - **Next:** Fix all five, verify the complete flows on a phone-sized browser, and close each item with evidence.
+
+
+### Reliability audit fixes · 2026-11-21 · v1.5.76
+
+- **Tracker:** SA-047–SA-051 closed with evidence; 51 total issues, all closed. Fix durations remain “Not recorded” because the elapsed implementation time was not measured.
+- **Conversation practice:** Playback starts at the selected lesson and continues to the end of the course. Speaker A uses female Kokoro jf_alpha; Speaker B uses separately generated male Kokoro jm_kumo clips bundled for offline use. The mobile speaker stage now occupies most of the conversation view, and names identify each voice.
+- **Kana studio:** Hiragana, Katakana, and Challenge are adjacent tabs; the challenge replaces the kana grid, and the selected script determines quiz content.
+- **Verification:** Course queue, voice manifest, and tab tests pass. Final verification includes the Academy test suite, standalone build, version/cache alignment, and live 390 × 844 mobile review.
+
+
+### Mobile review finding · 2026-11-21 · v1.5.77
+
+- **Evidence:** On a 390 × 844 view, the fixed bottom navigation overlays the lower edge of the primary audio action row after enlarging the conversation stage.
+- **Tracker:** SA-052 recorded as New before its fix; 52 total, 1 New, 51 Closed.
+- **Next:** Keep the mobile audio controls clear of the navigation and verify their position at phone size.

@@ -65,7 +65,12 @@ for lesson in LESSONS:
     for phrase in candidates:
         key = audio_key(phrase)
         if key:
-            phrases.setdefault(key, phrase)
+            phrases.setdefault(key, {"phrase": phrase, "voice": "jf_alpha", "base_key": key})
+    for line in lesson["dialogue"]:
+        if line["who"] == "B" and line["jp"] and line["en"]:
+            base_key = audio_key(line["jp"])
+            voice_key = f"dialogue:B:{base_key}"
+            phrases[voice_key] = {"phrase": line["jp"], "voice": "jm_kumo", "base_key": base_key}
 
 pipeline = KPipeline(lang_code="j")
 audio_dir = PROJECT / "audio/speech"
@@ -74,12 +79,13 @@ manifest = {}
 
 with tempfile.TemporaryDirectory(prefix="sakura-kokoro-") as tmp:
     temp_dir = Path(tmp)
-    for index, (key, phrase) in enumerate(phrases.items(), 1):
+    for index, (key, item) in enumerate(phrases.items(), 1):
+        phrase, voice, base_key = item["phrase"], item["voice"], item["base_key"]
         filename = f"ja-{hashlib.sha256(key.encode('utf-8')).hexdigest()[:14]}.mp3"
         destination = audio_dir / filename
-        synthesis_text = PRONUNCIATION_OVERRIDES.get(key, phrase)
+        synthesis_text = PRONUNCIATION_OVERRIDES.get(base_key, phrase)
         if not destination.exists() or key in PRONUNCIATION_OVERRIDES:
-            chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice="jf_alpha", speed=0.9)]
+            chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice=voice, speed=0.9)]
             if not chunks:
                 raise RuntimeError(f"Kokoro returned no audio for: {phrase}")
             wav = temp_dir / "speech.wav"

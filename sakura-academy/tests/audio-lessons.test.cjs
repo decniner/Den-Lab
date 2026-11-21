@@ -20,7 +20,10 @@ test('audio lesson queue covers the lesson sentence, vocabulary, examples, and d
   assert.deepEqual(JSON.parse(JSON.stringify(queue[0])), { section: 'Lesson sentence', jp: lessons[0].jp, en: lessons[0].en });
   assert.deepEqual(JSON.parse(JSON.stringify(queue[1])), { section: 'Vocabulary', jp: lessons[0].vocab[0].jp, en: lessons[0].vocab[0].en });
   assert.deepEqual(JSON.parse(JSON.stringify(queue[2])), { section: 'Example', jp: lessons[0].vocab[0].example, en: lessons[0].vocab[0].exampleEn });
-  assert.deepEqual(JSON.parse(JSON.stringify(queue.at(-1))), { section: 'Conversation · Speaker B', jp: lessons[0].dialogue[1].jp, en: lessons[0].dialogue[1].en });
+  assert.equal(queue.at(-1).section, 'Conversation · Speaker B');
+  assert.equal(queue.at(-1).jp, lessons[0].dialogue[1].jp);
+  assert.equal(queue.at(-1).en, lessons[0].dialogue[1].en);
+  assert.equal(queue.at(-1).voice, 'jm_kumo');
   assert.ok(queue.every(item => item.jp && item.en));
 });
 
@@ -60,6 +63,11 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(appSource, /classList\.toggle\('is-speaking',active\)/);
   assert.match(stylesSource, /audio-dialogue-person\.is-speaking/);
   assert.match(stylesSource, /prefers-reduced-motion:reduce/);
+  assert.match(appSource, /Speaker \$\{role\} · \$\{role===/);
+  assert.match(stylesSource, /audio-dialogue-scene\{min-height:clamp\(290px,42vh,480px\)/);
+  assert.match(stylesSource, /audio-stick-figure\{width:auto;height:clamp\(150px,25vh,240px\)/);
+  assert.match(stylesSource, /audio-dialogue-scene\{min-height:clamp\(285px,38svh,380px\)/);
+  assert.match(stylesSource, /audio-stick-figure\{height:clamp\(145px,22svh,185px\)/);
   const audioScreen = appSource.slice(appSource.indexOf('function audioLessons()'), appSource.indexOf('\n', appSource.indexOf('function audioLessons()')));
   assert.ok(audioScreen.indexOf('class="audio-mode-switch"') < audioScreen.indexOf('audioDialogueScene(l)'), 'conversation mode should be selected before its speaker scene');
   assert.doesNotMatch(stylesSource, /\.audio-controls\{position:sticky/);
@@ -72,11 +80,9 @@ test('conversation queue contains only speaker dialogue in lesson order', () => 
   const queue = sandbox.buildLessonConversationQueue(lessons[0]);
   assert.equal(queue.length, lessons[0].dialogue.length);
   assert.ok(queue.every(item => item.section.startsWith('Conversation · Speaker ')));
-  assert.deepEqual(JSON.parse(JSON.stringify(queue[0])), {
-    section: `Conversation · Speaker ${lessons[0].dialogue[0].who}`,
-    jp: lessons[0].dialogue[0].jp,
-    en: lessons[0].dialogue[0].en,
-  });
+  assert.equal(queue[0].section, `Conversation · Speaker ${lessons[0].dialogue[0].who}`);
+  assert.equal(queue[0].jp, lessons[0].dialogue[0].jp);
+  assert.equal(queue[0].en, lessons[0].dialogue[0].en);
 });
 
 test('audio screen separates conversation and full lesson modes with focused practice controls', () => {
@@ -104,4 +110,37 @@ test('conversation view offers optional romaji and renders it on the active tran
   assert.match(appSource, /audioShowRomaji\?/);
   assert.match(appSource, /audioKanaToRomaji\(item\.jp\)/);
   assert.match(stylesSource, /\.audio-romaji/);
+});
+
+test('course conversation queue spans lessons and assigns distinct Japanese Kokoro voices', () => {
+  const sandbox = {};
+  sandbox.globalThis = sandbox;
+  vm.runInNewContext(helperSource, sandbox);
+  const queue = sandbox.buildCourseConversationQueue(lessons, 1);
+  assert.equal(queue.length, lessons.reduce((total, lesson) => total + lesson.dialogue.length, 0));
+  assert.equal(queue[0].lessonId, lessons[0].id);
+  assert.equal(queue.at(-1).lessonId, lessons.at(-1).id);
+  assert.equal(queue.find(item => item.speaker === 'A').voice, 'jf_alpha');
+  assert.equal(queue.find(item => item.speaker === 'B').voice, 'jm_kumo');
+  assert.match(queue.find(item => item.speaker === 'B').audioKey, /^dialogue:B:/);
+  assert.equal(sandbox.buildCourseConversationQueue(lessons, 4)[0].lessonId, lessons[3].id);
+});
+
+test('offline manifest and generator reserve a male Kokoro voice for Speaker B clips', () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
+  const generator = fs.readFileSync(path.join(project, 'scripts/generate_japanese_audio.py'), 'utf8');
+  assert.match(generator, /jm_kumo/);
+  for (const lesson of lessons) for (const line of lesson.dialogue.filter(line => line.who === 'B')) {
+    const key = `dialogue:B:${line.jp.normalize('NFC').replace(/\s+/g, '')}`;
+    assert.ok(manifest[key], `Lesson ${lesson.id} is missing male dialogue audio for ${line.jp}`);
+  }
+});
+
+test('Kana masterclass uses one top row for Hiragana, Katakana, and Challenge tabs', () => {
+  const kanaPage = appSource.slice(appSource.indexOf('function kanaPage()'), appSource.indexOf('\nfunction ', appSource.indexOf('function kanaPage()') + 1));
+  assert.match(kanaPage, /kana-mode-tabs/);
+  assert.match(kanaPage, /onclick=\"setKanaTab/);
+  for (const name of ['Hiragana', 'Katakana', 'Challenge']) assert.match(kanaPage, new RegExp(`'${name}'`));
+  assert.ok(kanaPage.includes("kanaTab==='Challenge'?`<section class=\"card kana-challenge"));
+  assert.ok(kanaPage.includes(':`<div class=\"row kana-filters\"'));
 });

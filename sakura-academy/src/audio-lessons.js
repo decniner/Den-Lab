@@ -8,7 +8,7 @@ function buildLessonAudioQueue(lesson) {
     if (word.example && word.exampleEn) queue.push({ section: 'Example', jp: word.example, en: word.exampleEn });
   }
   for (const line of lesson.dialogue || []) {
-    if (line.jp && line.en) queue.push({ section: `Conversation · Speaker ${line.who}`, jp: line.jp, en: line.en });
+    if (line.jp && line.en) queue.push({ ...conversationItem(lesson, line), section: `Conversation · Speaker ${line.who}` });
   }
   return queue;
 }
@@ -20,15 +20,22 @@ function lessonAudioSpeaker(item) {
 
 Object.assign(globalThis, { buildLessonAudioQueue, lessonAudioSpeaker });
 
-// Keep dialogue practice focused and preserve the original complete lesson playlist.
+function phraseAudioKey(text) { return String(text || '').normalize('NFC').replace(/\s+/g, ''); }
+function conversationItem(lesson, line, lineIndex=0) {
+  const speaker = line.who === 'B' ? 'B' : 'A';
+  const base = phraseAudioKey(line.jp);
+  return { section: `Conversation · Speaker ${speaker}`, jp: line.jp, en: line.en, speaker, voice: speaker === 'A' ? 'jf_alpha' : 'jm_kumo', audioKey: speaker === 'B' ? `dialogue:B:${base}` : base, lessonId: lesson.id, lessonTitle: lesson.title, lineIndex };
+}
 function buildLessonConversationQueue(lesson) {
   if (!lesson) return [];
-  return (lesson.dialogue || [])
-    .filter(line => line.jp && line.en)
-    .map(line => ({ section: `Conversation · Speaker ${line.who}`, jp: line.jp, en: line.en }));
+  return (lesson.dialogue || []).filter(line => line.jp && line.en).map((line, index) => conversationItem(lesson, line, index));
 }
-
-Object.assign(globalThis, { buildLessonConversationQueue });
+function buildCourseConversationQueue(lessons, startLessonId=1) {
+  if (!Array.isArray(lessons)) return [];
+  const start = Math.max(0, lessons.findIndex(lesson => lesson.id === Number(startLessonId)));
+  return lessons.slice(start).flatMap(lesson => buildLessonConversationQueue(lesson));
+}
+Object.assign(globalThis, { buildLessonConversationQueue, buildCourseConversationQueue });
 
 function audioKanaToRomaji(text) {
   const basic = 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ';
