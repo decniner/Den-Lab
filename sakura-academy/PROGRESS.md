@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 39
 - Work in progress: 0
-- New: 1
-- Closed: 38
+- New: 0
+- Closed: 39
 - Timeline gaps: 39
 
 ## Issue register
@@ -52,7 +52,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-036 — Unreliable sentence microphone controls should be removed | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-037 — Strict lesson checklist items cannot open the next activity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-039 — Daily routine audio pronounces 7 o’clock as ななじ | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-039 — Daily routine audio pronounces 7 o’clock as ななじ | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -655,8 +655,15 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-039 — Daily routine audio pronounces 7 o’clock as ななじ
 
-- **Status:** New (0%)
-- **Evidence:** The bundled Kokoro clip for あさ 7じに おきます。 was synthesized from the digit 7 and is heard as nana-ji. Japan Foundation Irodori and MEXT beginner references teach 7時 as しちじ.
-- **Impact:** Learners may copy a less suitable default reading in a beginner time expression.
-- **Cause:** Kokoro’s number normalization chose ななじ for the digit in this sentence.
-- **Next:** Generate this phrase with an explicit kana override for しちじ; keep its on-screen text unchanged.
+- **Status:** Closed (100%)
+- **Evidence:** Regenerated the Kokoro clip using explicit kana あさ しちじに おきます。 while keeping the displayed sentence unchanged. The original manifest key and offline asset path remain stable; the audio and reference pitch contour were refreshed. Regression coverage validates the override and generator behavior.
+- **Impact:** Resolved: learners hear the standard beginner reading しちじ for 7 o’clock.
+- **Resolution:** Added a pronunciation-override file consumed by the audio generator; overridden phrases are regenerated even when their hash-named file already exists.
+- **Verification:** All Academy tests pass, including the new pronunciation-override regression and the bundled-audio/pitch checks.
+- **Fix estimate:** Time not recorded.
+
+### Seven o’clock audio pronunciation · 2026-11-21 · v1.5.60
+
+- **Tracker:** SA-039 closed; 39 issues tracked, all closed.
+- **Changes:** The sentence still displays あさ 7じに おきます。; its offline Kokoro model speech explicitly uses しちじ.
+- **Verification:** All 62 Academy tests pass; the audio manifest and pitch contour rebuild successfully.

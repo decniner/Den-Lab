@@ -19,6 +19,9 @@ LESSON_DATA = re.search(r"const LESSONS=(\[.*?\]), KANA=", CONTENT, re.S)
 if not LESSON_DATA:
     raise SystemExit("Could not find LESSONS in src/content.js")
 LESSONS = json.loads(LESSON_DATA.group(1))
+PRONUNCIATION_OVERRIDES = json.loads(
+    (PROJECT / "scripts/pronunciation-overrides.json").read_text()
+)
 
 
 def audio_key(text: str) -> str:
@@ -74,8 +77,9 @@ with tempfile.TemporaryDirectory(prefix="sakura-kokoro-") as tmp:
     for index, (key, phrase) in enumerate(phrases.items(), 1):
         filename = f"ja-{hashlib.sha256(key.encode('utf-8')).hexdigest()[:14]}.mp3"
         destination = audio_dir / filename
-        if not destination.exists():
-            chunks = [np.asarray(audio) for _, _, audio in pipeline(phrase, voice="jf_alpha", speed=0.9)]
+        synthesis_text = PRONUNCIATION_OVERRIDES.get(key, phrase)
+        if not destination.exists() or key in PRONUNCIATION_OVERRIDES:
+            chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice="jf_alpha", speed=0.9)]
             if not chunks:
                 raise RuntimeError(f"Kokoro returned no audio for: {phrase}")
             wav = temp_dir / "speech.wav"

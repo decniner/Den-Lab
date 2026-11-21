@@ -95,6 +95,17 @@ test('offline Kokoro audio covers lesson vocabulary, examples, and dialogue sent
   }
 });
 
+test('daily seven o’clock audio has a canonical shichi-ji pronunciation override', () => {
+  const overrides = JSON.parse(fs.readFileSync(path.join(project, 'scripts', 'pronunciation-overrides.json'), 'utf8'));
+  assert.equal(overrides['あさ7じにおきます。'], 'あさ しちじに おきます。');
+  const generator = fs.readFileSync(path.join(project, 'scripts', 'generate_japanese_audio.py'), 'utf8');
+  assert.match(generator, /synthesis_text = PRONUNCIATION_OVERRIDES\.get\(key, phrase\)/);
+  assert.match(generator, /pipeline\(synthesis_text, voice="jf_alpha"/);
+  assert.match(generator, /key in PRONUNCIATION_OVERRIDES/);
+  const audio = JSON.parse(fs.readFileSync(path.join(project, 'src', 'speech-audio-manifest.json'), 'utf8'));
+  assert.ok(audio['あさ7じにおきます。']?.src, 'the original displayed sentence keeps a bundled audio entry');
+});
+
 test('validator accepts numeric lesson IDs and rejects malformed lesson data', () => {
   const validLesson = { id: 1, title: 'Valid', description: 'A valid lesson', jp: 'ねこ', en: 'cat', rule: 'noun', explain: 'e', builderEn: 'cat', mistake: 'm', builder: ['ねこ'], vocab: [{ id: '1-0', jp: 'ねこ', en: 'cat', romaji: 'neko', example: 'ねこです。', exampleEn: 'It is a cat.' }], dialogue: [{ who: 'A', jp: 'こんにちは。', en: 'Hello.' }, { who: 'B', jp: 'こんにちは。', en: 'Hello.' }], responseOptions: ['こんにちは。', 'さようなら。', 'ありがとう。'], responseAnswer: 0 };
   assert.deepEqual(validateCourseContent([validLesson], { ねこ: 'Use for a cat.' }), []);
