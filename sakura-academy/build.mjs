@@ -34,7 +34,7 @@ await writeFile(join(outputDir, 'DATA_SOURCES.md'), dataSources);
 const standalone = html
   .replace('<link rel="stylesheet" href="styles.css">', `<style>\n${css}\n</style>`)
   .replace(
-    `<script src="src/n5-data.js"></script><script src="src/content.js"></script><script src="src/n5-app.js"></script><script src="src/content-validation.js"></script><script src="src/lesson-progress.js?v=1.5.61"></script><script src="src/reward-guard.js"></script><script src="src/speech-audio-manifest.js?v=1.5.61"></script><script src="src/app.js?v=1.5.61"></script>`,
+    `<script src="src/n5-data.js"></script><script src="src/content.js"></script><script src="src/n5-app.js"></script><script src="src/content-validation.js"></script><script src="src/lesson-progress.js?v=1.5.62"></script><script src="src/reward-guard.js"></script><script src="src/speech-audio-manifest.js?v=1.5.62"></script><script src="src/app.js?v=1.5.62"></script>`,
     `<script>\n${n5Data}\n${content}\n${n5App}\n${validation}\n${lessonProgress}\n${rewardGuard}\n${inlineAudioScript}\n${app}\n</script>`,
   );
 await writeFile(join(outputDir, 'genki-interactive-academy.html'), standalone);

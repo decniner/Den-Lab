@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 40
+- Total tracked: 41
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 40
-- Timeline gaps: 40
+- Timeline gaps: 41
 
 ## Issue register
 
@@ -54,6 +54,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-039 — Daily routine audio pronounces 7 o’clock as ななじ | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-040 — Strict mode is off by default | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-041 — No listen-through mode for full lessons | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -674,3 +675,8 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-040 closed; 40 issues tracked, all closed.
 - **Changes:** Strict mode starts enabled for fresh progress; a saved explicit opt-out remains respected. Added densanchez@gmail.com as a footer mail link and removed the irrelevant GENKI affiliation disclaimer.
 - **Verification:** 63 Academy tests pass. Standalone build and `git diff --check` pass. A fresh mobile view at 390 × 844 shows Strict mode checked, the contact link present, and the disclaimer absent.
+
+### SA-041 intake · v1.5.62
+
+- **Tracker:** SA-041 published as New before implementation; 41 issues tracked, 1 New and 40 Closed.
+- **Finding:** Lesson audio is available as individual clips, but there is no dedicated listen-through player for reviewing lesson audio in one sequence.
