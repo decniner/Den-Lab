@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 34
 - Work in progress: 0
-- New: 1
-- Closed: 33
+- New: 0
+- Closed: 34
 - Timeline gaps: 34
 
 ## Issue register
@@ -47,7 +47,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-031 — Lesson Play controls are silent when the browser has no speech engine | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-032 — Lesson sentences have no microphone pronunciation check | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-033 — Cached lesson script can hide the newly released microphone control | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -541,9 +541,15 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-034 — Microphone check discards the transcript from a low-confidence result
 
-- **Status:** New (0%)
+- **Status:** Closed (100%)
 - **Evidence:** The app always shows “I could not match that sentence” from `onnomatch`, but the Web Speech API allows that event to contain a below-threshold transcript. The current handler ignores its event argument.
 - **Impact:** Learners receive no useful feedback even when the browser produced a transcript of what they said.
-- **Resolution:** Pending.
-- **Verification:** Pending.
+- **Resolution:** The `nomatch` handler now uses its best transcript alternative, computes a similarity score, and shows the words heard. Matching normalizes kana script, spaces, and punctuation.
+- **Verification:** 62 tests pass, including low-confidence event transcripts and Japanese text normalization.
 - **Fix estimate:** Not recorded.
+
+### Low-confidence speech feedback · 2026-11-21 · v1.5.47
+
+- **Tracker:** SA-034 closed; 34 issues tracked, all 34 closed.
+- **Fix:** Use low-confidence transcripts returned with `nomatch` events instead of discarding them. Show the words heard and a Japanese sentence similarity score; normalize kana script and punctuation.
+- **Verification:** 62 tests pass. Device microphone recognition remains dependent on the phone browser's Japanese speech service.
