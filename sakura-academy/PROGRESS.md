@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 43
 - Work in progress: 0
-- New: 1
-- Closed: 42
+- New: 0
+- Closed: 43
 - Timeline gaps: 43
 
 ## Issue register
@@ -56,7 +56,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-040 — Strict mode is off by default | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-041 — No listen-through mode for full lessons | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-042 — Unversioned stylesheet can keep stale mobile styles after release | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-043 — Audio lessons show conversation as plain text without speaker visuals | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-043 — Audio lessons show conversation as plain text without speaker visuals | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -690,7 +690,8 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Versioned the stylesheet URL and offline precache to match each release, while preserving inline styles in the standalone build.
 - **Verification:** 66 Academy tests pass, including version alignment, offline precaching, standalone CSS, and tracker totals. Hosted mobile view at 390 × 844 now loads the audio player styling with the visible v1.5.65 build.
 
-### SA-043 intake · v1.5.66
+### SA-043 — Audio lesson conversation characters · 2026-11-21 · v1.5.67
 
-- **Tracker:** SA-043 published as New before implementation; 43 issues tracked, 1 New and 42 Closed.
-- **Finding:** Audio lessons display dialogue clips as text without visual speakers or a turn-taking cue.
+- **Tracker:** SA-043 closed; 43 issues tracked, all closed. It was published as New in v1.5.66 before implementation.
+- **Changes:** Added two illustrated stickman speakers with speech bubbles in the Audio lessons player. The active dialogue speaker highlights and animates in sync with the bundled audio; reduced-motion preferences disable animation.
+- **Verification:** 67 Academy tests pass, including speaker identification, offline audio coverage, and reduced-motion styling. At 390 × 844, the scene fits the mobile layout and the correct character is emphasized on dialogue clips. Standalone build and diff check pass.

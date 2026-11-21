@@ -9,6 +9,7 @@ const helperSource = fs.readFileSync(path.join(project, 'src/audio-lessons.js'),
 const contentSource = fs.readFileSync(path.join(project, 'src/content.js'), 'utf8');
 const lessons = JSON.parse(contentSource.match(/const LESSONS=(\[.*?\]), KANA=/s)[1]);
 const appSource = fs.readFileSync(path.join(project, 'src/app.js'), 'utf8');
+const stylesSource = fs.readFileSync(path.join(project, 'styles.css'), 'utf8');
 
 test('audio lesson queue covers the lesson sentence, vocabulary, examples, and dialogue in order', () => {
   const sandbox = {};
@@ -33,6 +34,16 @@ test('every queued clip is present in the offline audio manifest', () => {
   }
 });
 
+test('conversation clips identify the active speaker for synchronized visuals', () => {
+  const sandbox = {};
+  sandbox.globalThis = sandbox;
+  vm.runInNewContext(helperSource, sandbox);
+  assert.equal(sandbox.lessonAudioSpeaker({ section: 'Conversation · Speaker A' }), 'A');
+  assert.equal(sandbox.lessonAudioSpeaker({ section: 'Conversation · Speaker B' }), 'B');
+  assert.equal(sandbox.lessonAudioSpeaker({ section: 'Vocabulary' }), null);
+  assert.equal(sandbox.lessonAudioSpeaker(null), null);
+});
+
 test('audio lesson screen has one-tap play with pause and restart controls', () => {
   assert.match(appSource, /function audioLessons\(\)/);
   assert.match(appSource, /function startAudioLesson\(id=/);
@@ -42,4 +53,11 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(appSource, /audioLessonStatus/);
   assert.match(appSource, /role="progressbar" aria-label="Audio lesson progress"/);
   assert.match(appSource, /if\(view==='audio'&&v!=='audio'\)/);
+  assert.match(appSource, /audio-dialogue-scene/);
+  assert.match(appSource, /audioSpeaker'\+role/);
+  assert.match(appSource, /audioBubble'\+role/);
+  assert.match(appSource, /lessonAudioSpeaker\(entry\)/);
+  assert.match(appSource, /classList\.toggle\('is-speaking',active\)/);
+  assert.match(stylesSource, /audio-dialogue-person\.is-speaking/);
+  assert.match(stylesSource, /prefers-reduced-motion:reduce/);
 });

@@ -13,4 +13,9 @@ function buildLessonAudioQueue(lesson) {
   return queue;
 }
 
-Object.assign(globalThis, { buildLessonAudioQueue });
+function lessonAudioSpeaker(item) {
+  const match = /^Conversation · Speaker ([AB])$/.exec(item?.section || '');
+  return match ? match[1] : null;
+}
+
+Object.assign(globalThis, { buildLessonAudioQueue, lessonAudioSpeaker });
