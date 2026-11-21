@@ -62,6 +62,8 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(appSource, /lessonAudioSpeaker\(entry\)/);
   assert.match(appSource, /classList\.toggle\('is-speaking',active\)/);
   assert.match(stylesSource, /audio-dialogue-person\.is-speaking/);
+  assert.match(stylesSource, /audio-dialogue-bubble\{display:block;[^}]*overflow:visible/);
+  assert.doesNotMatch(stylesSource, /audio-dialogue-bubble\{[^}]*-webkit-line-clamp|audio-dialogue-bubble\{[^}]*overflow:hidden/);
   assert.match(stylesSource, /audio-dialogue-person-a\{color:#b86680\}\.audio-dialogue-person-b\{color:#414a79\}/);
   assert.match(stylesSource, /audio-dialogue-person\.is-speaking \.mouth-open\{opacity:1;animation:sakura-talk-mouth 1\.6s ease-in-out infinite\}/);
   assert.doesNotMatch(stylesSource, /sakura-talk-bob|audio-dialogue-person\.is-speaking \.audio-stick-figure\{animation/);

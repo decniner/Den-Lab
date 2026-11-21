@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 58
+- Total tracked: 59
 - Work in progress: 0
 - New: 0
-- Closed: 58
-- Timeline gaps: 57
+- Closed: 59
+- Timeline gaps: 58
 
 ## Issue register
 
@@ -72,6 +72,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-056 — Fresh accounts show unseen vocabulary as reviews due | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-057 — Lesson activity tabs are clipped and hidden on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-058 — Decorative swipe cue is exposed to assistive technology | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-059 — Long conversation lines are clipped in mobile speaker bubbles | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -842,3 +843,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-055 reopened before implementation and closed after review. Total 58; 0 New; 58 Closed; 57 timeline gaps remain because fix durations were not measured.
 - **Change:** Replaced the continuous uniform mouth pulse with three brief openings at varied heights and longer rests. The existing active-speaker, pause, and reduced-motion behavior remains intact.
 - **Verification:** All 77 Academy checks pass, the standalone build completes, and `git diff --check` is clean. The visible conversation preview shows the active speaker and leaves the other figure still. The source pattern and pause/reduced-motion rules are covered by focused assertions.
+
+
+### SA-059 — Mobile conversation bubbles truncate long lines · 2026-11-21
+
+- **Evidence:** At 390 × 844, the Lesson 1 Speaker B line “はじめまして。わたしは けんです。よろしくおねがいします。” ends in an ellipsis inside the speaker bubble.
+- **Tracker:** SA-059 recorded before implementation and closed after the 390 × 844 visual check. Total 59; 0 New; 59 Closed; 58 timeline gaps because fix durations were not measured.
+- **Change:** Removed the two-line clamp, hidden overflow, and fixed mobile bubble heights; the bubbles now grow to show complete Japanese dialogue turns.
+- **Verification:** The Lesson 1 Speaker B line displays in full with no ellipsis at 390 × 844. The speaker scene remains within the mobile viewport. Full suite, standalone build, offline version alignment, and `git diff --check` are checked for v1.5.89.
