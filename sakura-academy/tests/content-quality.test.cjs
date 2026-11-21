@@ -18,6 +18,15 @@ test('lesson data passes the content validator', () => {
   assert.deepEqual(validateCourseContent(lessons, wordGuidance), []);
 });
 
+test('strict mode starts enabled for new progress and footer shows the contact email', () => {
+  const freshState = appSource.match(/function fresh\(\)\{return \{[^\n]+\}\}/)?.[0] || '';
+  assert.match(freshState, /strictMode:true/);
+  assert.match(appSource, /typeof state\.strictMode!=='boolean'\)state\.strictMode=true/);
+  const html = fs.readFileSync(path.join(project, 'index.html'), 'utf8');
+  assert.match(html, /mailto:densanchez@gmail\.com/);
+  assert.doesNotMatch(html, /not affiliated with GENKI or its publisher/i);
+});
+
 test('each lesson teaches its grammar with specific usage guidance and a relevant pitfall', () => {
   assert.equal(lessons.length, 12);
   for (const lesson of lessons) {

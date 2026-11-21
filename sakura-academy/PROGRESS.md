@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 39
+- Total tracked: 40
 - Work in progress: 0
 - New: 0
-- Closed: 39
-- Timeline gaps: 39
+- Closed: 40
+- Timeline gaps: 40
 
 ## Issue register
 
@@ -53,6 +53,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-037 — Strict lesson checklist items cannot open the next activity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-039 — Daily routine audio pronounces 7 o’clock as ななじ | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-040 — Strict mode is off by default | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -667,3 +668,9 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-039 closed; 39 issues tracked, all closed.
 - **Changes:** The sentence still displays あさ 7じに おきます。; its offline Kokoro model speech explicitly uses しちじ.
 - **Verification:** All 62 Academy tests pass; the audio manifest and pitch contour rebuild successfully.
+
+### Strict mode default and footer contact · 2026-11-21 · v1.5.61
+
+- **Tracker:** SA-040 closed; 40 issues tracked, all closed.
+- **Changes:** Strict mode starts enabled for fresh progress; a saved explicit opt-out remains respected. Added densanchez@gmail.com as a footer mail link and removed the irrelevant GENKI affiliation disclaimer.
+- **Verification:** 63 Academy tests pass. Standalone build and `git diff --check` pass. A fresh mobile view at 390 × 844 shows Strict mode checked, the contact link present, and the disclaimer absent.
