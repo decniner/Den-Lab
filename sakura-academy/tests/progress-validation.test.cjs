@@ -2,9 +2,11 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, assessmentWordPool, isValidAssessmentRun, ensureAssessmentRun, strictMilestoneDone } = require('../src/content-validation.js');
+const { validateProgressBackupSettings, sanitizeStoredProgressSettings, validateStrictProgressData, sanitizeStrictProgressData, validatePracticeProgressData, sanitizePracticeProgressData, countKnownFlags, assessmentWordPool, assessmentOptionCandidates, isValidAssessmentRun, ensureAssessmentRun, strictMilestoneDone } = require('../src/content-validation.js');
 
 const appSource = fs.readFileSync(path.join(__dirname, '..', 'src', 'app.js'), 'utf8');
+const contentSource = fs.readFileSync(path.join(__dirname, '..', 'src', 'content.js'), 'utf8');
+const lessons = JSON.parse(contentSource.match(/const LESSONS=(\[.*?\]), KANA=/s)[1]);
 
 test('crafted goal markup is rejected before backup import replaces progress', () => {
   const errors = validateProgressBackupSettings({ xp: 20, goal: '\"><img src=x onerror=alert(1)>' });
@@ -187,4 +189,32 @@ test('lesson example sentence renderers expose full-sentence audio controls', ()
   assert.match(appSource, /function grammar\(l\).*speak\('\$\{l\.jp\}'\)/);
   assert.match(appSource, /function dialogue\(l\).*speak\('\$\{d\.jp\}'\)/);
   assert.match(appSource, /function sentenceBuilder\(l\).*speak\('\$\{l\.jp\}'\)/);
+});
+
+
+test('assessment distractors stay within learned vocabulary and the current lesson', () => {
+  const lesson = { id: 1, en: 'I go to school.', builder: ['がっこうへ', 'いきます'], dialogue: [{ who: 'A', en: 'Hello.' }, { who: 'B', en: 'Nice to meet you.' }], vocab: [{ id: '1-0', en: 'school', jp: 'がっこう' }, { id: '1-1', en: 'go', jp: 'いきます' }, { id: '1-2', en: 'book', jp: 'ほん' }] };
+  const learned = { '1-0': true, '1-1': false, '1-2': true };
+  assert.deepEqual(assessmentOptionCandidates(lesson, 'vocabulary', learned), ['school', 'book']);
+  assert.deepEqual(assessmentOptionCandidates(lesson, 'dialogue', learned), ['Hello.', 'Nice to meet you.']);
+  assert.deepEqual(assessmentOptionCandidates(lesson, 'listening', learned), ['I go to school.', 'Hello.', 'Nice to meet you.']);
+  const grammarOptions = assessmentOptionCandidates(lesson, 'grammar', learned);
+  assert.deepEqual(grammarOptions, ['いきます がっこうへ']);
+  assert.deepEqual(assessmentOptionCandidates(lesson, 'writing', learned), ['がっこう', 'ほん']);
+  assert.match(appSource, /assessmentOptionCandidates\(l,type,state\.learned\)/);
+  assert.doesNotMatch(appSource, /otherLessons=LESSONS\.filter/);
+});
+
+
+test('all course assessments have lesson-local answer choices for every skill', () => {
+  for (const lesson of lessons) {
+    const learned = Object.fromEntries(lesson.vocab.map(word => [word.id, true]));
+    const required = { vocabulary: lesson.vocab[0].en, grammar: lesson.builder.join(' '), dialogue: (lesson.dialogue.find(line => line.who === 'A') || lesson.dialogue[0]).en, listening: lesson.en, writing: lesson.vocab[1].jp };
+    for (const [type, correct] of Object.entries(required)) {
+      const candidates = assessmentOptionCandidates(lesson, type, learned);
+      const choices = [...new Set([correct, ...candidates])];
+      assert.ok(choices.includes(correct), `Lesson ${lesson.id} ${type} includes its correct response`);
+      assert.ok(choices.some(candidate => candidate !== correct), `Lesson ${lesson.id} ${type} has at least one lesson-based distractor`);
+    }
+  }
 });

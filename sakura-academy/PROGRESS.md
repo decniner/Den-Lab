@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 63
+- Total tracked: 64
 - Work in progress: 0
 - New: 0
-- Closed: 63
-- Timeline gaps: 62
+- Closed: 64
+- Timeline gaps: 63
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-064 — Assessment distractors include untaught answers | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-063 — Conversation mouth animation still looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-062 — Kana recognition question opens below the phone fold | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-001 — Speaker B replies were identical across lessons | Codex | Closed | 100% | Not recorded | Not recorded |
@@ -887,6 +888,14 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-062 was recorded before the change and closed after a 320 × 740 mobile check. Total 62 issues; 0 active; 62 closed; 61 timeline gaps because fix durations were not captured.
 - **Change:** After a question renders, scroll its prompt to the top of the viewport. Respect reduced-motion preferences by using an instant scroll.
 - **Verification:** Starting the quiz at 320 × 740 with Extra large text automatically reveals the character, all four answer choices, and the timer. The regression test covers smooth and reduced-motion behavior. All 80 Academy tests pass, the v1.5.94 static build completes, and offline cache/version alignment matches the footer.
+
+
+### SA-064 — Assessment distractors are outside the lesson · 2026-11-21 · v1.5.96
+
+- **Evidence:** On a 390 × 844 mobile view, Lesson 1 assessment options stayed within that lesson: studied vocabulary, rearranged current-sentence tokens, the lesson’s two dialogue lines, and its main sentence. All 12 lessons have a correct response plus at least one same-lesson distractor for each skill.
+- **Tracker:** SA-064 was recorded before the fix and closed after mobile review and all-course coverage. Total 64; 0 active; 64 Closed; 63 timeline gaps because fix duration was not recorded.
+- **Change:** Added a lesson-scoped answer-option builder; vocabulary and writing use learned words, grammar uses only the lesson sentence tokens, and dialogue/listening use the lesson sentence and dialogue. If fewer than four relevant options exist, fewer are shown rather than introducing another lesson’s material.
+- **Verification:** Tested all five question types across all 12 lessons, reviewed an actual Lesson 1 assessment at 390 × 844, and confirmed no unrelated lesson answer appears. All 82 Academy tests pass; the v1.5.96 build and offline version/cache checks pass.
 
 
 ### SA-063 — Conversation mouth motion remains unnatural · 2026-11-21
