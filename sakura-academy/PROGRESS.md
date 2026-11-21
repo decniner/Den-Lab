@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 32
+- Total tracked: 33
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 32
-- Timeline gaps: 32
+- Timeline gaps: 33
 
 ## Issue register
 
@@ -46,6 +46,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-030 — Lesson activity tabs disappear while studying long vocabulary lists | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-031 — Lesson Play controls are silent when the browser has no speech engine | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-032 — Lesson sentences have no microphone pronunciation check | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-033 — Cached lesson script can hide the newly released microphone control | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -518,3 +519,13 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Bundled 211 Kokoro Japanese clips and 32-point pitch references for offline lesson playback. Added 🎙 sentence practice controls throughout lesson sentences and examples; supported browsers give recognized-text similarity and approximate pitch-pattern similarity, with clear permission and unsupported-browser guidance.
 - **Limitation:** Pitch similarity is an approximate practice cue derived from the recorded voice contour; it is not an authoritative Japanese pitch-accent grade. Learners are prompted to compare against the model audio.
 - **Verification:** 57 tests pass. At 390 × 844, mobile preview confirms lesson and vocabulary mic controls fit within the viewport; native microphone capture requires supported browser APIs and user permission.
+
+
+### SA-033 — Cached lesson script can hide the newly released microphone control
+
+- **Status:** New (0%)
+- **Evidence:** The hosted page showed the v1.5.43 footer but its mobile lesson omitted the Speak control, while a fresh local preview showed it. The unversioned script URL can be served from an older service-worker cache.
+- **Impact:** Learners may see a current version label while missing newly released lesson features.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Not recorded.
