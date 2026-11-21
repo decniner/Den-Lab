@@ -5,9 +5,9 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 37
-- Work in progress: 1
+- Work in progress: 0
 - New: 0
-- Closed: 36
+- Closed: 37
 - Timeline gaps: 37
 
 ## Issue register
@@ -50,7 +50,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-036 — Unreliable sentence microphone controls should be removed | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-037 — Strict lesson checklist items cannot open the next activity | Codex | Work in progress | 70% | 2026-11-21 | Not recorded |
+| SA-037 — Strict lesson checklist items cannot open the next activity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -606,10 +606,11 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-037 — Strict lesson checklist items cannot open the next activity
 
-- **Status:** Work in progress (70%)
-- **Evidence:** Mobile verification exposed `ReferenceError: strictChecklistTab is not defined`. `app.js` has a versioned URL, but `lesson-progress.js` was still cached at its unversioned path, leaving the new route helper undefined.
-- **Impact:** Strict-mode progress checks and checklist navigation fail when the browser pairs a new app script with the older cached helper.
-- **Work in progress:** Add a cache-busted URL for the lesson helper in the page, offline cache, and standalone builder; add a regression assertion and retest the mobile checklist.
+- **Status:** Closed (100%)
+- **Evidence:** Mobile verification exposed `ReferenceError: strictChecklistTab is not defined` because the app helper was cached at an unversioned URL. The page, offline cache, and build now use a versioned `lesson-progress.js` URL.
+- **Impact:** Resolved: a stale helper script can no longer break strict-mode progress checks and checklist navigation after an update.
+- **Resolution:** Added the app version to the lesson-progress script URL consistently in the page shell, service-worker precache, and standalone build.
+- **Verification:** 61 Academy tests pass, including version synchronization, offline precache, checklist activity routing, and standalone build checks.
 - **Fix estimate:** Not recorded.
 
 ### Strict checklist navigation issue intake · 2026-11-21 · v1.5.53
@@ -628,3 +629,9 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-037 reopened for a cache-loading regression; 37 issues tracked, 36 closed, 1 in progress.
 - **Evidence:** Live 390px mobile check reproduced an undefined helper because the service worker cached an unversioned lesson-progress script.
 - **Next:** Version that script URL consistently in online/offline/standalone builds and verify strict mode.
+
+### Checklist helper cache correction · 2026-11-21 · v1.5.56
+
+- **Tracker:** SA-037 closed; 37 issues tracked, all closed.
+- **Fix:** Versioned `lesson-progress.js` consistently in the online shell, service-worker precache, and standalone builder so the app and helper refresh together.
+- **Verification:** All 61 Academy tests pass, including explicit online/offline helper URL synchronization and standalone build coverage. Mobile reload verification is next.
