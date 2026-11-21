@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 41
+- Total tracked: 42
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 41
-- Timeline gaps: 41
+- Timeline gaps: 42
 
 ## Issue register
 
@@ -55,6 +55,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-039 — Daily routine audio pronounces 7 o’clock as ななじ | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-040 — Strict mode is off by default | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-041 — No listen-through mode for full lessons | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-042 — Unversioned stylesheet can keep stale mobile styles after release | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -681,3 +682,8 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-041 closed; 41 issues tracked, all closed. It was published as New in v1.5.62 before implementation.
 - **Changes:** Added a dedicated Audio lessons section with a single lesson selector, one play/pause button, replay, current sentence and translation, and clip progress. It sequences the lesson sentence, vocabulary, example sentences, and conversation using existing bundled audio; playback remains offline-capable.
 - **Verification:** 66 Academy tests pass. The helper test confirms all queued clips are in the offline manifest. On a 390 × 844 browser view, playback advanced from clip 1, pause held the current clip, resume continued, and Start over returned to clip 1. Document width remained 390px. Standalone build and diff check pass.
+
+### SA-042 intake · v1.5.64
+
+- **Tracker:** SA-042 published as New before implementation; 42 issues tracked, 1 New and 41 Closed.
+- **Finding:** The live page requested an unversioned stylesheet and showed stale mobile player styles after the v1.5.63 update.
