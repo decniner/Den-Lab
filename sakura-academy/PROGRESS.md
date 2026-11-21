@@ -4,17 +4,18 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 70
-- Work in progress: 0
-- New: 0
-- Closed: 70
-- Timeline gaps: 69
+- Total tracked: 71
+- Work in progress: 1
+- New: 1
+- Closed: 69
+- Timeline gaps: 70
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
-| SA-070 — N5 mobile section tabs hide sections and lose the active tab | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-071 — N5 app script can stay stale while the footer shows a new release | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-070 — N5 mobile section tabs hide sections and lose the active tab | Codex | Work in progress | 90% | 2026-11-21 | Not recorded |
 | SA-069 — Home counts an incomplete lesson as complete | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-068 — Conversation character mouth movement looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-067 — Bottom navigation targets are too narrow on small phones | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -954,9 +955,16 @@ Every published app change must bump the small footer version and its update dat
 - **Verification:** Added regression coverage for stale completion flags with mixed checklist completion and for nonstrict legacy counts. All 84 Academy tests pass; the standalone build and offline cache/version alignment are verified at v1.5.102. Live verification confirmed Home, the Lesson 1 checklist, and strict-mode lock state agree.
 
 
-### SA-070 — N5 mobile section tabs hide sections and lose the active tab · 2026-11-21 · v1.5.103
+### SA-070 — N5 mobile section tabs hide sections and lose the active tab · 2026-11-21 · Work in progress (90%)
 
-- **Evidence:** At 390 × 844, the N5 section strip now has a visible “Swipe to explore all six sections” cue and an accessible group label. Selecting both Kanji and Timed mock keeps the chosen tab centered inside the strip after redraw; the document width stays at 390 px.
-- **Tracker:** SA-070 was recorded before changes and closed after phone-sized browser review. Total 70; 0 New; 70 Closed; 69 timeline gaps because fix durations were not recorded.
-- **Change:** Added a two-way swipe hint and screen-reader instruction, then scroll the active N5 section into view after each render.
-- **Verification:** The phone preview confirmed the overflow affordance and accessible group name; selecting the previously hidden Kanji and Timed mock sections left each active tab visible. All 85 Academy tests pass; standalone build and offline cache/version alignment match v1.5.103.
+- **Evidence:** The local 390 × 844 preview showed the swipe cue and kept both Kanji and Timed mock visible after selection. A fresh live v1.5.103 page still rendered the old strip without the cue, so production delivery remains unverified; SA-071 tracks the versioned-script cache cause.
+- **Tracker:** SA-070 remains Work in progress at 90%; do not close until the published page shows the cue and keeps the active tab visible. Total 71; 1 Work in progress; 1 New; 69 Closed; 70 timeline gaps.
+- **Change:** Local code adds an accessible two-way swipe hint and scrolls the selected section button into view after each N5 render.
+- **Next:** Version the N5 application script URL in the shell and service worker, publish a new release, and verify the mobile behavior on a fresh hosted page.
+
+### SA-071 — N5 app script can stay stale while the footer shows a new release · 2026-11-21 · New
+
+- **Evidence:** Fresh live v1.5.103 page rendered the old N5 tab strip without `#n5Tabs` or a swipe cue. A direct no-cache fetch of the public `src/n5-app.js` contains the new markup; the page shell and service-worker precache still use an unversioned `src/n5-app.js` URL.
+- **Tracker:** SA-071 recorded before changing the cache URL. Total 71; 1 Work in progress; 1 New; 69 Closed; 70 timeline gaps.
+- **Impact:** The release stamp can look current while a browser reuses stale N5 navigation behavior.
+- **Next:** Add the visible release version to the N5 script URL in the page shell, standalone build, and service-worker precache; test version alignment and a fresh hosted mobile load.
