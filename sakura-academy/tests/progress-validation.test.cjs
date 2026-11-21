@@ -132,6 +132,7 @@ test('older local practice data drops malformed flags before rewards or renderin
     kanji: { '1': true },
     handwriting: { 'Hiragana:H0': true },
     rewarded: { 'kana:あ': true },
+    kanjiStudy: {},
   });
   assert.match(appSource, /sanitizePracticeProgressData\(state\)/);
 });

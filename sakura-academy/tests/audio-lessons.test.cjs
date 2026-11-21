@@ -89,17 +89,41 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.doesNotMatch(stylesSource, /\.audio-controls\{position:sticky/);
 });
 
+test('Kanji Explorer gives every kanji a visual memory cue, saves study picks, and marks Next as studied', () => {
+  const n5Data = fs.readFileSync(path.join(project, 'src/n5-data.js'), 'utf8');
+  const sandbox = {};
+  vm.createContext(sandbox);
+  vm.runInContext(`${n5Data}\n${contentSource}\nglobalThis.kanjiCards=KANJI`, sandbox);
+  const cards = Array.from(sandbox.kanjiCards);
+  assert.equal(cards.length, 84);
+  for (const card of cards) assert.ok(typeof card.memoryTip === 'string' && card.memoryTip.length >= 20, `visual memory cue for ${card.ch}`);
+  assert.match(cards.find(card => card.ch === '山').memoryTip, /three.*peaks|three.*ridge/i);
+  const page = appSource.slice(appSource.indexOf('function kanjiPage()'), appSource.indexOf('\nfunction ', appSource.indexOf('function kanjiPage()') + 1));
+  assert.match(page, /Visual memory/);
+  assert.match(page, /Add to Study/);
+  assert.match(page, /onclick=\"nextKanji\(\)\"/);
+  assert.match(page, /In Study/);
+  const nextFn = appSource.match(/function nextKanji\(\)\{[^}]+\}/)?.[0];
+  assert.ok(nextFn, 'Next action must have a testable implementation');
+  let marked = false, moved = 0;
+  const action = { KANJI: [{ id: 'k7' }], kanjiIndex: 0, recordKanjiStudied(k) { marked = k.id === 'k7'; }, moveKanji(delta) { moved = delta; } };
+  vm.createContext(action);
+  vm.runInContext(nextFn + ';nextKanji()', action);
+  assert.equal(marked, true);
+  assert.equal(moved, 1);
+});
+
 test('Kanji Explorer displays the bundled stroke-order guide for the selected character', () => {
   const kanjiPage = appSource.slice(appSource.indexOf('function kanjiPage()'), appSource.indexOf('\nfunction ', appSource.indexOf('function kanjiPage()') + 1));
   assert.match(kanjiPage, /strokeOrderSvg\(k\.ch\)/);
   assert.ok(kanjiPage.indexOf('kanji-study-card') < kanjiPage.indexOf('kanji-picker'), 'selected kanji lesson appears before the character picker');
   assert.match(kanjiPage, /CHARACTER \$\{kanjiIndex\+1\} OF \$\{KANJI\.length\}/);
-  assert.match(kanjiPage, /Mark studied/);
+  assert.match(kanjiPage, /Finish & mark studied/);
   assert.match(kanjiPage, /Next kanji/);
   assert.match(kanjiPage, /Hear example/);
   assert.match(kanjiPage, /<details class="kanji-stroke-details"><summary>View correct stroke order/);
   assert.match(kanjiPage, /kanjiIndex===0\?'disabled'/);
-  assert.match(kanjiPage, /kanjiIndex===KANJI\.length-1\?'disabled'/);
+  assert.match(kanjiPage, /onclick=\"nextKanji\(\)\"/);
 });
 
 test('flashcards use one Study action and explain that unfamiliar cards return later', () => {

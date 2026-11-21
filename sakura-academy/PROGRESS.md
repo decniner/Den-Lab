@@ -4,17 +4,18 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 84
+- Total tracked: 85
 - Work in progress: 0
 - New: 0
-- Closed: 84
+- Closed: 85
 - Timeline gaps: 82
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
-| SA-084 — Speech controls ignore explicit Japanese readings across N5 content | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-085 — Kanji Explorer lacks visual memory cues and a simple study action | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
+| SA-084 — Speech controls ignore explicit Japanese readings across N5 content | Codex | Closed | 100% | 2026-11-21 | 2026-11-21 |
 | SA-083 — Story narration may not follow the displayed kana reading | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-082 — Lesson tab accessibility hint lists the wrong section count | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-081 — Kanji Explorer hides selected-character details below a long grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -1120,3 +1121,18 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Added explicit pronunciation paths and bundled Kokoro clips for N5 vocabulary/listening; aligned all Kanji Explorer example audio; bumped the site and offline cache version.
 - **Verification:** All 101 Academy tests pass. The standalone build succeeds; 911 manifest entries point to existing clips. At 390 × 844, the visible mobile preview showed vocabulary readings next to kanji, playback controls responding, and the Kanji Explorer example audio control.
 - **Tracker:** SA-084 closed. Total 84; 0 Work in progress; 0 New; 84 Closed; 82 timeline gaps.
+
+### SA-085 — Kanji Explorer lacks visual memory cues and a simple study action · 2026-11-22
+
+- **Status:** Closed · 100%
+- **Evidence:** All 84 approximate N5 Kanji Explorer cards had no visual reminder. Next advanced without recording the kanji as studied, and there was no saved review list.
+- **Impact:** Resolved: every kanji now has a labeled visual memory aid; learners can save cards to revisit them, and Next records the current kanji as studied before advancing.
+- **Resolution:** Added a concise visual cue to every kanji, including 山’s three mountain peaks. Added a persistent “Add to Study” action and picker markers for saved items. Next marks the current character studied and moves on; the final card offers “Finish & mark studied.” Older saves and backups safely default to an empty study list.
+- **Verification:** All 102 Academy tests pass. The standalone build succeeds and `git diff --check` is clean. At 390 × 844, the visible phone preview showed the memory aid and actions; Add to Study updated the saved count and disabled to “In Study,” and Next advanced to character 2 while updating studied progress to 1/84.
+- **Fix estimate:** 2026-11-22.
+
+### v1.5.116 — Kanji memory and study flow · 2026-11-22
+
+- **Changes:** Added visual memory aids to all 84 Kanji Explorer cards, a persistent Add to Study action, and Next-to-mark-studied behavior. Bumped the visible app and offline cache versions.
+- **Verification:** All 102 Academy tests pass. The standalone build succeeds; the visible mobile preview verified the save and Next flows at 390 × 844. Release version and offline cache version match at v1.5.116.
+- **Tracker:** SA-085 closed. Total 85; 0 Work in progress; 0 New; 85 Closed; 82 timeline gaps.
