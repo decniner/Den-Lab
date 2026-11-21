@@ -116,19 +116,20 @@ function percent(a,b){return b?Math.round(100*a/b):0}
 function due(r){return !r||!r.due||r.due<=today()}
 function streak(){let d=new Date(),n=0;for(let i=0;i<365;i++){let s=d.toLocaleDateString('en-CA');if(state.activity[s])n++;else if(i===0){d.setDate(d.getDate()-1);continue}else break;d.setDate(d.getDate()-1)}return n}
 function strictChecklist(id){let l=LESSONS[id-1];if(!l)return[];let learned=l.vocab.filter(w=>state.learned[w.id]===true).length;return[
- {label:`Vocabulary marked learned (${learned}/${l.vocab.length})`,done:strictMilestoneDone(state,l,'vocabulary')},
- {label:'Grammar sentence built correctly',done:strictMilestoneDone(state,l,'grammar')},
- {label:'Conversation response correct',done:strictMilestoneDone(state,l,'conversation')},
- {label:'Listening answer correct',done:strictMilestoneDone(state,l,'listening')},
- {label:'Writing answer typed correctly',done:strictMilestoneDone(state,l,'writing')},
- {label:'Assessment passed (4/5)',done:strictMilestoneDone(state,l,'assessment',ASSESSMENT_TYPES)}
+ {label:`Vocabulary marked learned (${learned}/${l.vocab.length})`,done:strictMilestoneDone(state,l,'vocabulary'),tab:strictChecklistTab('vocabulary')},
+ {label:'Grammar sentence built correctly',done:strictMilestoneDone(state,l,'grammar'),tab:strictChecklistTab('grammar')},
+ {label:'Conversation response correct',done:strictMilestoneDone(state,l,'conversation'),tab:strictChecklistTab('conversation')},
+ {label:'Listening answer correct',done:strictMilestoneDone(state,l,'listening'),tab:strictChecklistTab('listening')},
+ {label:'Writing answer typed correctly',done:strictMilestoneDone(state,l,'writing'),tab:strictChecklistTab('writing')},
+ {label:'Assessment passed (4/5)',done:strictMilestoneDone(state,l,'assessment',ASSESSMENT_TYPES),tab:strictChecklistTab('assessment')}
 ]}
 function strictLessonComplete(id){return strictChecklist(id).every(x=>x.done)}
 function strictUnlockedLesson(){for(let i=1;i<=LESSONS.length;i++)if(!strictLessonComplete(i))return i;return LESSONS.length+1}
 function strictCanNext(id){return id<LESSONS.length&&(!state.strictMode||(strictLessonComplete(id)&&id+1<=strictUnlockedLesson()))}
 function setStrictMode(enabled){let next=!!enabled;if(next!==state.strictMode){quiz=null;quizAnswered=false;quizLesson=0}state.strictMode=next;strictNotice='';save();render()}
 function recordLessonComplete(id){if(state.completed[id]!==true){state.completed[id]=true;reward(30)}}
-function strictChecklistPanel(id){let checks=strictChecklist(id),done=checks.filter(x=>x.done).length;return `<div class="card strict-checklist"><div class="row between"><h2>Lesson checklist</h2><span class="pill">${done}/${checks.length} complete</span></div><ul>${checks.map(x=>`<li class="${x.done?'done':''}"><span aria-hidden="true">${x.done?'✓':'○'}</span>${esc(x.label)}</li>`).join('')}</ul><p class="notice">Freehand writing stays optional because the canvas is not automatically graded.</p></div>`}
+function openChecklistStep(tab){selectLessonTab(tab);requestAnimationFrame(()=>document.querySelector('.tabs')?.scrollIntoView({behavior:'smooth',block:'start'}))}
+function strictChecklistPanel(id){let checks=strictChecklist(id),done=checks.filter(x=>x.done).length,available=checklistStepAvailability(checks);return `<div class="card strict-checklist"><div class="row between"><h2>Lesson checklist</h2><span class="pill">${done}/${checks.length} complete</span></div><ul>${checks.map((x,i)=>`<li class="${x.done?'done':''}"><button class="checklist-step" onclick="openChecklistStep('${x.tab}')" ${available[i]?'':'disabled'} aria-label="${esc(x.label)}${x.done?' · review':' · open next activity'}"><span aria-hidden="true">${x.done?'✓':'○'}</span><span>${esc(x.label)}</span><span class="checklist-action" aria-hidden="true">${x.done?'Review':'Open'} →</span></button></li>`).join('')}</ul><p class="notice">Freehand writing stays optional because the canvas is not automatically graded.</p></div>`}
 function dashboard(){
  let total=LESSONS.reduce((s,l)=>s+l.vocab.length,0),learned=Object.keys(state.learned).filter(k=>state.learned[k]===true).length,completed=Object.values(state.completed).filter(value=>value===true).length,acc=percent(state.answers.filter(x=>x.correct===true).length,state.answers.length),dueCount=allCards().filter(c=>due(state.reviews[c.id])).length,nextLesson=state.strictMode?Math.min(LESSONS.length,strictUnlockedLesson()):Math.min(12,completed+1);
  let days=Array.from({length:14},(_,i)=>{let d=new Date();d.setDate(d.getDate()-(13-i));return {d:d.toLocaleDateString('en-CA'),n:state.activity[d.toLocaleDateString('en-CA')]||0}}),max=Math.max(1,...days.map(x=>x.n)),readiness=Math.round((completed/12*.45+learned/total*.25+countKnownFlags(state.kana,KANA.map(x=>x.ch))/KANA.length*.15+countKnownFlags(state.kanji,KANJI.map(x=>x.id))/KANJI.length*.15)*100);

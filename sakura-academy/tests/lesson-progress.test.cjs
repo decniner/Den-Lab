@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { lessonTabStatus, sanitizeGrammarParts } = require('../src/lesson-progress.js');
+const { lessonTabStatus, sanitizeGrammarParts, checklistStepAvailability, strictChecklistTab } = require('../src/lesson-progress.js');
 
 const types = ['vocabulary', 'grammar', 'dialogue', 'listening', 'writing'];
 const lesson = { id: 1, vocab: [{ id: '1-1' }, { id: '1-2' }], builder: ['わたし', 'は'] };
@@ -79,4 +79,18 @@ test('assessment progress ignores stored results for words that are no longer st
   assert.equal(lessonTabStatus('quiz', lesson, state, types), 'in-progress');
   state.learned['1-2'] = false;
   assert.equal(lessonTabStatus('quiz', lesson, state, types), 'not-started');
+});
+
+test('strict checklist makes only the next incomplete step available and keeps completed steps reviewable', () => {
+  const checks = [{ done: true }, { done: false }, { done: false }, { done: true }, { done: false }];
+  assert.deepEqual(checklistStepAvailability(checks), [true, true, false, true, false]);
+});
+
+test('strict checklist routes each milestone to its lesson activity', () => {
+  assert.equal(strictChecklistTab('vocabulary'), 'vocab');
+  assert.equal(strictChecklistTab('grammar'), 'builder');
+  assert.equal(strictChecklistTab('conversation'), 'dialogue');
+  assert.equal(strictChecklistTab('listening'), 'listening');
+  assert.equal(strictChecklistTab('writing'), 'writing');
+  assert.equal(strictChecklistTab('assessment'), 'quiz');
 });

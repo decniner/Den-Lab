@@ -3,6 +3,27 @@
     (typeof require === 'function' ? require('./content-validation.js').isValidPassingAssessment : () => false);
   const isValidAssessmentRun = root.isValidAssessmentRun ||
     (typeof require === 'function' ? require('./content-validation.js').isValidAssessmentRun : () => false);
+  const STRICT_CHECKLIST_TABS = Object.freeze({
+    vocabulary: 'vocab',
+    grammar: 'builder',
+    conversation: 'dialogue',
+    listening: 'listening',
+    writing: 'writing',
+    assessment: 'quiz',
+  });
+
+  function strictChecklistTab(milestone) {
+    return STRICT_CHECKLIST_TABS[milestone] || null;
+  }
+
+  function checklistStepAvailability(checks) {
+    let previousStepsComplete = true;
+    return checks.map(check => {
+      const available = !!check?.done || previousStepsComplete;
+      previousStepsComplete = previousStepsComplete && !!check?.done;
+      return available;
+    });
+  }
 
   function lessonTabStatus(tab, lesson, state, assessmentTypes) {
     if (!lesson || !state) return 'not-started';
@@ -55,6 +76,6 @@
     return sanitized;
   }
 
-  if (typeof module !== 'undefined' && module.exports) module.exports = { lessonTabStatus, sanitizeGrammarParts };
-  else Object.assign(root, { lessonTabStatus, sanitizeGrammarParts });
+  if (typeof module !== 'undefined' && module.exports) module.exports = { lessonTabStatus, sanitizeGrammarParts, checklistStepAvailability, strictChecklistTab };
+  else Object.assign(root, { lessonTabStatus, sanitizeGrammarParts, checklistStepAvailability, strictChecklistTab });
 })(typeof globalThis === 'undefined' ? this : globalThis);
