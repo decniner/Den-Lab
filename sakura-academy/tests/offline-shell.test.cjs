@@ -53,7 +53,7 @@ test('offline shell precaches the full app and tracker assets', async () => {
   let installPromise;
   worker.listeners.install({ waitUntil(promise) { installPromise = promise; } });
   await installPromise;
-  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.5.117', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/n5-stories.js', './src/app.js?v=1.5.117', './src/content.js?v=1.5.117', './src/n5-app.js?v=1.5.117', './src/content-validation.js', './src/lesson-progress.js?v=1.5.117', './src/audio-lessons.js?v=1.5.117', './src/reward-guard.js']) {
+  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.5.118', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/n5-stories.js', './src/app.js?v=1.5.118', './src/content.js?v=1.5.118', './src/n5-app.js?v=1.5.118', './src/content-validation.js', './src/lesson-progress.js?v=1.5.118', './src/audio-lessons.js?v=1.5.118', './src/reward-guard.js']) {
     assert.ok(worker.added.includes(file), `precache includes ${file}`);
   }
   const audio = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
@@ -85,9 +85,9 @@ test('app registers the worker relative to its own project route', () => {
   assert.match(html, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)/);
   assert.match(html, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/);
   assert.match(html, /sakura-academy/);
-  assert.match(html, /href="styles\.css\?v=1\.5\.117"/);
-  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.5\.117"><\/script>/);
-  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.5.117'));
+  assert.match(html, /href="styles\.css\?v=1\.5\.118"/);
+  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.5\.118"><\/script>/);
+  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.5.118'));
 });
 
 test('static build copies the favicon into the published Academy project', () => {

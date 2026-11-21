@@ -1141,8 +1141,14 @@ Every published app change must bump the small footer version and its update dat
 ### v1.5.117 — Cache-safe kanji memory release · 2026-11-22
 
 - **Changes:** Versioned the Kanji Explorer content script and matched the offline precache URL after live verification showed a stale copy could hide memory cues.
-- **Verification:** All 102 Academy tests pass. Standalone build succeeds, `content.js` is in the offline precache with the same v1.5.117 query as the app HTML; live deployment check pending.
+- **Verification:** All 102 Academy tests pass. Standalone build succeeds. GitHub Pages returned HTTP 200 for the app, versioned content script, and tracker; the content response contains the mountain memory cue.
 - **Tracker:** SA-086 closed. Total 86; 0 Work in progress; 0 New; 86 Closed; 82 timeline gaps.
+
+### v1.5.118 — Verified cache-safe Kanji Explorer · 2026-11-22
+
+- **Changes:** Updated the on-page and offline cache versions for the verification update; the app and service worker remain in sync.
+- **Verification:** All 102 Academy tests pass. Standalone build succeeds. The previous deployed v1.5.117 app, versioned content script, and tracker returned HTTP 200; the content includes the three mountain peaks cue and SA-086 is Closed in the live tracker.
+- **Tracker:** Total 86; 0 Work in progress; 0 New; 86 Closed; 82 timeline gaps.
 
 ### SA-086 — Cached course content can hide current kanji memory cues · 2026-11-22
 
@@ -1150,5 +1156,5 @@ Every published app change must bump the small footer version and its update dat
 - **Evidence:** Live verification showed the new Kanji Explorer controls but omitted the memory cue because `content.js` was not release-versioned and an older cached copy could be reused.
 - **Impact:** Resolved: the course content script URL is versioned with the app, so stale cached content cannot mask the new cue after an update.
 - **Resolution:** Versioned `content.js` in the app HTML and standalone build, and updated the offline shell precache to the same versioned URL.
-- **Verification:** Deployment check pending.
+- **Verification:** GitHub Pages returned HTTP 200 for the v1.5.117 app, versioned content script, and issue tracker. The app HTML references the versioned content script; that response contains the three mountain peaks memory cue, and the live tracker includes SA-086 as Closed.
 - **Fix estimate:** 2026-11-22.
