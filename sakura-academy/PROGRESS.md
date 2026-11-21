@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 36
+- Total tracked: 37
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 36
-- Timeline gaps: 36
+- Timeline gaps: 37
 
 ## Issue register
 
@@ -50,6 +50,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-036 — Unreliable sentence microphone controls should be removed | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-037 — Strict lesson checklist items cannot open the next activity | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -602,3 +603,16 @@ Every published app change must bump the small footer version and its update dat
 
 - **Update:** Replaced the generic speech-features footer with a clear note that Japanese examples include bundled audio for offline listening.
 - **Tracker:** SA-036 remains closed; all 36 tracked issues are closed.
+
+### SA-037 — Strict lesson checklist items cannot open the next activity
+
+- **Status:** New (0%)
+- **Evidence:** The learner wants tapping a checklist row to open its lesson activity; completing all vocabulary should make the Grammar sentence built correctly item lead to Sentence Builder.
+- **Impact:** Learners must scroll back to the tabs and locate the next activity manually.
+- **Resolution plan:** Turn checklist rows into accessible shortcuts. Completed rows remain available for review, the first incomplete row is the next step, and later incomplete rows stay unavailable until earlier milestones are complete.
+- **Fix estimate:** Not recorded.
+
+### Strict checklist navigation issue intake · 2026-11-21 · v1.5.53
+
+- **Tracker:** SA-037 opened; 37 issues tracked, 36 closed, 1 new.
+- **Next:** Add touch-friendly links from checklist rows to their corresponding activity tabs.
