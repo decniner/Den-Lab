@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 30
+- Total tracked: 31
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 30
-- Timeline gaps: 30
+- Timeline gaps: 31
 
 ## Issue register
 
@@ -44,6 +44,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-028 — Assessment can test lesson vocabulary before it is studied | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-029 — Lesson example sentences lack nearby audio controls | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-030 — Lesson activity tabs disappear while studying long vocabulary lists | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-031 — Lesson Play controls are silent when the browser has no speech engine | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -490,3 +491,12 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker-first record:** SA-028, SA-029, and SA-030 were published as New in v1.5.39 before implementation; all three are now closed.
 - **Changes:** Assessment targets are limited to lesson words marked learned; each lesson example has nearby Japanese sentence playback; activity tabs remain pinned and compact on mobile.
 - **Verification:** 54 Academy tests pass. On a 390 × 844 viewport, assessment first displays a vocabulary-review gate, then uses only the two learned words; sticky tabs remain visible after scrolling with no page-width overflow.
+
+### SA-031 — Lesson Play controls are silent when the browser has no speech engine
+
+- **Status:** New (0%)
+- **Evidence:** In the live in-app browser, `window.speechSynthesis` is unavailable. Existing Play controls rely on browser speech and therefore cannot produce Japanese audio in this environment.
+- **Impact:** Learners hear nothing when they press Play for lesson vocabulary and sentences in browsers without built-in speech synthesis.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Not recorded.
