@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 66
+- Total tracked: 67
 - Work in progress: 0
 - New: 0
-- Closed: 66
-- Timeline gaps: 65
+- Closed: 67
+- Timeline gaps: 66
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-067 — Bottom navigation targets are too narrow on small phones | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-066 — Conversation mouth movement still looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-065 — Dashboard mastery totals count obsolete progress IDs | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-064 — Assessment distractors include untaught answers | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -924,3 +925,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-066 recorded before changes and closed after mobile review. Total 66; 0 New; 66 Closed; 65 timeline gaps because fix durations were not recorded.
 - **Change:** Lowered the audio analyser’s noise floor and activation threshold so regular Japanese speech drives the mouth. Added time-based easing for attack and release, bounded the mouth opening, and softened its visual transition.
 - **Verification:** Focused mouth tests cover silence, weak and strong audio, restrained opening, and eased transitions. Reviewed the full speaker scene at 390 × 844.
+
+
+### SA-067 — Bottom navigation targets are too narrow on small phones · 2026-11-21 · v1.5.99
+
+- **Evidence:** At 320 × 740, the five primary sections plus More each measure 50 × 56 px with no horizontal page overflow; at 390 × 844 they measure 61 × 56 px. More exposes four clearly labeled destinations with 48 px minimum button height. Selecting Write opens handwriting practice, closes the panel, and leaves More highlighted. The desktop sidebar still exposes the original nine routes and hides the mobile-only More control.
+- **Tracker:** SA-067 was recorded before changes and closed after phone and desktop review. Total 67; 0 New; 67 Closed; 66 timeline gaps because fix durations were not recorded.
+- **Change:** Replaced the squeezed nine-button mobile bar with five primary destinations and a labeled More panel for Write, Kanji, Cards, and Settings. Opening More moves keyboard focus into the panel; choosing a destination closes it.
+- **Verification:** Checked 320 × 740 and 390 × 844 layouts, touch-target dimensions, menu labels, route selection and close behavior, and desktop visibility. Focused integration tests and the complete Academy suite pass. Build and offline cache versions match v1.5.99.

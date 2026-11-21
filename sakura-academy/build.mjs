@@ -33,9 +33,9 @@ await writeFile(join(outputProject, 'DATA_SOURCES.md'), dataSources);
 await writeFile(join(outputDir, 'DATA_SOURCES.md'), dataSources);
 
 const standalone = html
-  .replace('<link rel="stylesheet" href="styles.css?v=1.5.98">', `<style>\n${css}\n</style>`)
+  .replace('<link rel="stylesheet" href="styles.css?v=1.5.99">', `<style>\n${css}\n</style>`)
   .replace(
-    `<script src="src/n5-data.js"></script><script src="src/content.js"></script><script src="src/n5-app.js"></script><script src="src/content-validation.js"></script><script src="src/lesson-progress.js?v=1.5.98"></script><script src="src/audio-lessons.js?v=1.5.98"></script><script src="src/reward-guard.js"></script><script src="src/speech-audio-manifest.js?v=1.5.98"></script><script src="src/app.js?v=1.5.98"></script>`,
+    `<script src="src/n5-data.js"></script><script src="src/content.js"></script><script src="src/n5-app.js"></script><script src="src/content-validation.js"></script><script src="src/lesson-progress.js?v=1.5.99"></script><script src="src/audio-lessons.js?v=1.5.99"></script><script src="src/reward-guard.js"></script><script src="src/speech-audio-manifest.js?v=1.5.99"></script><script src="src/app.js?v=1.5.99"></script>`,
     `<script>\n${n5Data}\n${content}\n${n5App}\n${validation}\n${lessonProgress}\n${audioLessons}\n${rewardGuard}\n${inlineAudioScript}\n${app}\n</script>`,
   );
 await writeFile(join(outputDir, 'genki-interactive-academy.html'), standalone);

@@ -14,12 +14,25 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.98"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.98"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.98"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.98"><\/script><script src="src\/app\.js\?v=1\.5\.98">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.99"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.99"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.99"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.99"><\/script><script src="src\/app\.js\?v=1\.5\.99">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
   assert.match(appSource, /aria-label="Search vocabulary" placeholder="Search words"/);
+});
+
+test('mobile navigation keeps touch targets wide and groups secondary destinations under More', () => {
+  assert.match(appSource, /function navButton\(x,moreMenu=false\)/);
+  assert.match(appSource, /data-mobile-secondary/);
+  assert.match(appSource, /aria-controls=\"mobileMoreMenu\" aria-expanded=\"\$\{mobileMoreOpen\}\"/);
+  assert.match(appSource, /function toggleMobileMore\(\).*mobile-more-menu \.navbtn.*mobile-more-toggle/);
+  assert.match(appSource, /id=\"mobileMoreMenu\" role=\"group\" aria-label=\"More sections\"/);
+  assert.match(appSource, /settings:'Settings'/);
+  assert.match(styles, /\.mobile-more-toggle\{display:none\}/);
+  assert.match(styles, /\.sidebar \.navbtn\{flex:1 1 0;width:auto;min-width:44px/);
+  assert.match(styles, /\.mobile-more-menu \.navbtn\{flex:initial;min-width:0;min-height:48px/);
+  assert.match(styles, /\.sidebar \.mobile-more-menu \.navtext\[data-mobile\]\{font-size:13px!important/);
 });
 
 test('Settings exposes a persistent accessible text-size preference', () => {
@@ -43,7 +56,8 @@ test('mobile text-size overrides keep important declarations valid', () => {
   assert.doesNotMatch(styles, /calc\(var\(--text-scale, 1\) \* 54px!important\)/);
   assert.match(styles, /\.sidebar \.navtext\[data-mobile\]\{font-size:0!important\}/);
   assert.doesNotMatch(styles, /font-size:calc\(var\(--text-scale, 1\) \* 0\)/);
-  const mobileLabels = [...appSource.matchAll(/\['(?:dashboard|n5|lessons|audio|kana|handwriting|kanji|flashcards|settings)','[^']*','[^']*','([^']*)'\]/g)].map(match => match[1]);
+  const itemList = appSource.slice(appSource.indexOf('let items=['), appSource.indexOf('],secondaryRoute='));
+  const mobileLabels = [...itemList.matchAll(/\['(?:dashboard|n5|lessons|audio|kana|handwriting|kanji|flashcards|settings)','[^']*','[^']*','([^']*)'\]/g)].map(match => match[1]);
   assert.deepEqual(mobileLabels, ['Home', 'N5', 'Learn', 'Audio', 'Kana', 'Write', 'Kanji', 'Cards', 'Prefs']);
 });
 
@@ -95,7 +109,7 @@ test('starting a kana recognition question scrolls its prompt into view', () => 
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.98"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.99"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -110,7 +124,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.98"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.99"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
