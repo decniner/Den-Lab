@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 78
+- Total tracked: 79
 - Work in progress: 0
 - New: 0
-- Closed: 78
-- Timeline gaps: 77
+- Closed: 79
+- Timeline gaps: 78
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-079 — N5 reading lacks story mode with synchronized kanji and kana | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-078 — Study cards hide N5 kanji spellings and readings | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-077 — Adding a card skips the next ready card | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-076 — Flashcards lack an action for words the learner already knows | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -1033,9 +1034,21 @@ Every published app change must bump the small footer version and its update dat
 ### v1.5.108 — Clear flashcard progression · 2026-11-21
 - **Changes:** Added Next to mark a familiar word learned; retained Add to Study for unfamiliar words; prevented saved cards from causing a queue skip; updated cache and visible version.
 - **Verification:** All 91 Academy tests pass; the standalone offline build succeeds; the 390 × 844 phone view showed both actions and confirmed correct progression for Next and Add to Study.
-- **Tracker:** SA-076 and SA-077 are closed. Total 77; 0 Work in progress; 0 New; 78 Closed; 77 timeline gaps.
+- **Tracker:** SA-076 and SA-077 are closed. Total 77; 0 Work in progress; 0 New; 77 Closed; 76 timeline gaps.
 
 ### v1.5.109 — N5 kanji recognition cards · 2026-11-21
 - **Changes:** N5 vocabulary cards now show kanji spellings when the source entry includes one; reveal shows kana reading and English meaning. Kana-only lesson cards remain kana-only. The visible version and service-worker cache were bumped.
 - **Verification:** All 92 Academy tests pass; offline standalone build succeeds; 390 × 844 preview confirmed 会う → あう · to meet after the 96 kana-only lesson cards.
 - **Tracker:** SA-078 closed. Total 78; 0 Work in progress; 0 New; 78 Closed; 77 timeline gaps.
+
+### SA-079 — N5 reading lacks story mode with synchronized kanji and kana · 2026-11-21 · v1.5.110
+- **Status:** Closed after implementation and phone verification.
+- **Evidence:** At 390 × 844, JLPT N5 → Stories offered four readings and Kanji, Hiragana, and Katakana modes. Playing the story highlighted the active sentence and current character while bundled Japanese narration played. All story sentences have offline audio.
+- **Impact:** Learners can read original N5 stories in kanji, use a full kana equivalent, and follow the narration in karaoke format.
+- **Fix:** Added an N5 Stories section with paired kanji/kana lines, English translations, sentence-level audio controls, continuous playback, and synchronized karaoke highlighting.
+- **Verification:** All 95 Academy tests pass; the standalone build succeeds; 390 × 844 preview confirmed the story selector, text modes, and live character highlight.
+
+### v1.5.110 — N5 story reading with karaoke highlighting · 2026-11-21
+- **Changes:** Added four original N5 stories, full kana equivalents, kanji/hiragana/katakana display modes, bundled Japanese narration, and current-character karaoke highlighting. Added the Stories tab to the N5 section strip and updated the service-worker cache.
+- **Verification:** All 95 Academy tests pass. Offline standalone build succeeds. Phone preview verified story selection, kana conversion, and active-character highlighting during narration.
+- **Tracker:** SA-079 closed. Total 79; 0 Work in progress; 0 New; 79 Closed; 78 timeline gaps.
