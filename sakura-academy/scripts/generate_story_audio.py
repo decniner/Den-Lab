@@ -31,10 +31,12 @@ with tempfile.TemporaryDirectory(prefix="sakura-stories-") as tmp:
         for line in story["sentences"]:
             phrase = line["kanji"]
             key = re.sub(r"\s+", "", unicodedata.normalize("NFC", phrase))
-            filename = f"ja-{hashlib.sha256(key.encode('utf-8')).hexdigest()[:14]}.mp3"
+            synthesis_text = line["kana"]
+            fingerprint = f"{key}|{synthesis_text}"
+            filename = f"ja-{hashlib.sha256(fingerprint.encode('utf-8')).hexdigest()[:14]}.mp3"
             destination = audio_dir / filename
             if not destination.exists():
-                chunks = [np.asarray(audio) for _, _, audio in pipeline(phrase, voice="jf_alpha", speed=0.9)]
+                chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice="jf_alpha", speed=0.9)]
                 if not chunks:
                     raise RuntimeError(f"Kokoro returned no audio for: {phrase}")
                 sf.write(wav, np.concatenate(chunks), 24000)

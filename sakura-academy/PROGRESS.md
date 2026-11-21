@@ -6,15 +6,15 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 83
 - Work in progress: 0
-- New: 1
-- Closed: 82
+- New: 0
+- Closed: 83
 - Timeline gaps: 82
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
-| SA-083 — Story narration may not follow the displayed kana reading | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-083 — Story narration may not follow the displayed kana reading | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-082 — Lesson tab accessibility hint lists the wrong section count | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-081 — Kanji Explorer hides selected-character details below a long grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-080 — Learning sections do not consistently explain their purpose or next action | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -1086,15 +1086,21 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-083 — Story narration may not follow the displayed kana reading · 2026-11-21
 
-- **Status:** New · 0%
-- **Evidence:** `scripts/generate_story_audio.py` synthesizes `line["kanji"]` even though each story sentence has an explicit paired `line["kana"]` reading. This leaves compound and counter readings to Kokoro’s kanji inference.
-- **Impact:** A spoken story can disagree with the kana reading shown to the learner.
-- **Resolution:** Pending.
-- **Verification:** Pending.
-- **Fix estimate:** Not recorded.
+- **Status:** Closed · 100%
+- **Evidence:** Each story narration is synthesized from its paired kana reading. Kanji remains the displayed sentence and manifest key. Audio filenames include the reading fingerprint; all 12 regenerated clips exist and are non-empty.
+- **Impact:** Resolved: story audio follows the explicit reading shown to learners, including compounds and counters.
+- **Resolution:** Updated the story audio generator to synthesize `line["kana"]` and fingerprint each file by both kanji key and reading. Added regression checks for kana-only text, manifest mapping, generated filenames, and clip files.
+- **Verification:** Full Academy tests, offline build, version/cache consistency, and phone-sized story playback review pass at v1.5.113.
+- **Fix estimate:** Time not recorded.
 
 ### v1.5.112 — Pronunciation audit issue recorded · 2026-11-21
 
 - **Changes:** Registered SA-083 before modifying audio generation. The issue tracker now shows one New issue and 82 Closed issues. Bumped the visible version and offline cache together.
-- **Verification:** Pending full release validation.
+- **Verification:** Nine focused offline-shell and tracker tests passed; the v1.5.112 static build and version/cache alignment were checked.
 - **Tracker:** SA-083 remains New pending the kana-aligned story narration fix. Total 83; 0 Work in progress; 1 New; 82 Closed; 82 timeline gaps.
+
+### v1.5.113 — Kana-aligned story narration · 2026-11-21
+
+- **Changes:** Kokoro story clips now synthesize from their paired kana readings while keeping the kanji transcript and manifest keys. Rebuilt 12 story clips and updated their offline manifest references.
+- **Verification:** All 97 Academy tests pass; the standalone offline build and footer/cache version alignment pass. All 12 regenerated MP3s decode, and the visible 390 × 844 mobile preview completed the story playback flow.
+- **Tracker:** SA-083 closed. Total 83; 0 Work in progress; 0 New; 83 Closed; 82 timeline gaps.
