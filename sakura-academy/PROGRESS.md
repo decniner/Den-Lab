@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 34
+- Total tracked: 35
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 34
-- Timeline gaps: 34
+- Timeline gaps: 35
 
 ## Issue register
 
@@ -48,6 +48,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-032 — Lesson sentences have no microphone pronunciation check | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-033 — Cached lesson script can hide the newly released microphone control | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -553,3 +554,18 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-034 closed; 34 issues tracked, all 34 closed.
 - **Fix:** Use low-confidence transcripts returned with `nomatch` events instead of discarding them. Show the words heard and a Japanese sentence similarity score; normalize kana script and punctuation.
 - **Verification:** 62 tests pass. Device microphone recognition remains dependent on the phone browser's Japanese speech service.
+
+### SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript
+
+- **Status:** New (0%)
+- **Evidence:** The learner reports microphone permission and audio capture work in mobile Edge and Chrome, but the browser returns no Japanese transcript.
+- **Impact:** Sentence-practice feedback cannot run when the device speech service yields no transcript, regardless of speech clarity.
+- **Investigation:** Check whether interim recognition results can provide usable text before the recognition service ends, and make the remaining device-service limitation explicit.
+- **Fix estimate:** Not recorded.
+
+### Mobile speech recognition issue intake · 2026-11-21 · v1.5.48
+
+- **Tracker:** SA-035 opened; 35 issues tracked, 34 closed, 1 new.
+- **Evidence:** On mobile Edge and Chrome, audio capture succeeds but Japanese recognition returns no text.
+- **Next:** Investigate interim transcripts and improve fallback guidance for device speech-service limitations.
+- **Verification:** 62 tests pass; tracker archive and active counts match this register.
