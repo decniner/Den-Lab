@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 52
+- Total tracked: 53
 - Work in progress: 0
 - New: 1
-- Closed: 51
-- Timeline gaps: 51
+- Closed: 52
+- Timeline gaps: 52
 
 ## Issue register
 
@@ -65,7 +65,8 @@ Every published app change must bump the small footer version and its update dat
 | SA-049 — Conversation characters are too small on phone screens | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-050 — Conversation speaker labels omit voice identity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-051 — Kana Recognition challenge is hidden below the character grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-052 — Fixed mobile navigation covers audio practice controls | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-052 — Fixed mobile navigation covers audio practice controls | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-053 — Stroke order must be started manually for each handwriting character | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -747,3 +748,10 @@ Every published app change must bump the small footer version and its update dat
 - **Evidence:** On a 390 × 844 view, the fixed bottom navigation overlays the lower edge of the primary audio action row after enlarging the conversation stage.
 - **Tracker:** SA-052 recorded as New before its fix; 52 total, 1 New, 51 Closed.
 - **Next:** Keep the mobile audio controls clear of the navigation and verify their position at phone size.
+
+
+### Mobile and handwriting audit intake · 2026-11-21 · v1.5.78
+
+- **Tracker:** SA-052 closed after a 390 × 844 mobile check confirmed the audio controls are clear of the fixed navigation. SA-053 recorded as New before implementation. Total 53; 1 New; 52 Closed.
+- **Evidence for SA-053:** Handwriting initially showed “Ready” and waited for a manual Play order tap, including after advancing to another character.
+- **Next:** Autoplay the stroke sequence for each newly active character and verify both initial entry and character progression.
