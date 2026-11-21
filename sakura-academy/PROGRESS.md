@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 46
+- Total tracked: 48
 - Work in progress: 0
-- New: 0
+- New: 2
 - Closed: 46
-- Timeline gaps: 45
+- Timeline gaps: 47
 
 ## Issue register
 
