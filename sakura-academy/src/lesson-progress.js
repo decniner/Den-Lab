@@ -12,6 +12,13 @@
     assessment: 'quiz',
   });
 
+  function countCompletedLessons(lessons, completedFlags, strictMode, isStrictComplete) {
+    if (!Array.isArray(lessons)) return 0;
+    return lessons.filter(lesson => strictMode
+      ? typeof isStrictComplete === 'function' && isStrictComplete(lesson.id)
+      : completedFlags?.[lesson.id] === true).length;
+  }
+
   function strictChecklistTab(milestone) {
     return STRICT_CHECKLIST_TABS[milestone] || null;
   }
@@ -76,6 +83,6 @@
     return sanitized;
   }
 
-  if (typeof module !== 'undefined' && module.exports) module.exports = { lessonTabStatus, sanitizeGrammarParts, checklistStepAvailability, strictChecklistTab };
-  else Object.assign(root, { lessonTabStatus, sanitizeGrammarParts, checklistStepAvailability, strictChecklistTab });
+  if (typeof module !== 'undefined' && module.exports) module.exports = { lessonTabStatus, sanitizeGrammarParts, checklistStepAvailability, strictChecklistTab, countCompletedLessons };
+  else Object.assign(root, { lessonTabStatus, sanitizeGrammarParts, checklistStepAvailability, strictChecklistTab, countCompletedLessons });
 })(typeof globalThis === 'undefined' ? this : globalThis);

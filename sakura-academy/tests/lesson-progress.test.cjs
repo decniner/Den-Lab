@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { lessonTabStatus, sanitizeGrammarParts, checklistStepAvailability, strictChecklistTab } = require('../src/lesson-progress.js');
+const { lessonTabStatus, sanitizeGrammarParts, checklistStepAvailability, strictChecklistTab, countCompletedLessons } = require('../src/lesson-progress.js');
 
 const types = ['vocabulary', 'grammar', 'dialogue', 'listening', 'writing'];
 const lesson = { id: 1, vocab: [{ id: '1-1' }, { id: '1-2' }], builder: ['わたし', 'は'] };
@@ -93,4 +93,14 @@ test('strict checklist routes each milestone to its lesson activity', () => {
   assert.equal(strictChecklistTab('listening'), 'listening');
   assert.equal(strictChecklistTab('writing'), 'writing');
   assert.equal(strictChecklistTab('assessment'), 'quiz');
+});
+
+
+test('strict dashboard completion count follows checklist readiness, not legacy completion flags', () => {
+  const lessons = [{id:1},{id:2},{id:3}];
+  const completed = {1:true,2:true,99:true};
+  const strictDone = new Set([2]);
+  assert.equal(countCompletedLessons(lessons,completed,true,id=>strictDone.has(id)),1);
+  assert.equal(countCompletedLessons(lessons,completed,false),2);
+  assert.equal(countCompletedLessons(null,completed,true,()=>true),0);
 });

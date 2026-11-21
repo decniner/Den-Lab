@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 68
+- Total tracked: 69
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 68
-- Timeline gaps: 67
+- Timeline gaps: 68
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-069 — Home counts an incomplete lesson as complete | Codex | New | 0% | 2026-11-21 | Not recorded |
 | SA-068 — Conversation character mouth movement looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-067 — Bottom navigation targets are too narrow on small phones | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-066 — Conversation mouth movement still looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -942,3 +943,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-068 was recorded before changes and closed after phone-sized playback review. Total 68; 0 New; 68 Closed; 67 timeline gaps because fix durations were not recorded.
 - **Change:** Replaced a near-circular opening with a narrower rounded aperture whose height follows voiced audio energy. Made soft and strong speech produce distinguishable openings, shortened attack/release easing, and kept the non-speaking speaker at rest.
 - **Verification:** Focused audio checks cover silence, soft/clear/strong levels, bounded opening, and easing. Reviewed live female-voice playback at 390 × 844; Speaker A was marked speaking and the other speaker stayed still. Full suite, standalone build, and offline cache/version alignment pass at v1.5.100.
+
+
+### SA-069 — Home counts an incomplete lesson as complete · 2026-11-21 · New
+
+- **Evidence:** On the published 390 × 844 phone view with the saved learner profile, Home shows 1/12 lessons complete. Lesson 1 shows 2/6 checklist items complete, Vocabulary marked learned 0/8, and a disabled Next button; strict mode keeps Lesson 2 locked.
+- **Tracker:** SA-069 recorded before changes. Total 69; 1 New; 68 Closed; 68 timeline gaps.
+- **Impact:** Conflicting dashboard mastery and progression state undermines trust and hides why the next lesson remains locked.
+- **Next:** Trace saved completion flags and strict checklist calculation; reconcile the dashboard count to the same validated completion rules used to unlock the next lesson.

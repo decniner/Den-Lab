@@ -143,7 +143,7 @@ test('readiness totals count only known true study flags', () => {
   assert.match(appSource, /countKnownFlags\(state\.kana,KANA\.map\(x=>x\.ch\)\)/);
   assert.match(appSource, /countKnownFlags\(state\.kanji,KANJI\.map\(x=>x\.id\)\)/);
   assert.match(appSource, /countKnownFlags\(state\.learned,LESSONS\.flatMap\(l=>l\.vocab\.map\(w=>w\.id\)\)\)/);
-  assert.match(appSource, /countKnownFlags\(state\.completed,LESSONS\.map\(l=>l\.id\)\)/);
+  assert.match(appSource, /countCompletedLessons\(LESSONS,state\.completed,state\.strictMode,strictLessonComplete\)/);
   assert.match(appSource, /countKnownFlags\(done,practicePool\(\)\.map\(x=>practiceScript\+':'\+x\.id\)\)/);
 });
 
