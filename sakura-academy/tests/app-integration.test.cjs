@@ -13,7 +13,7 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.50"><\/script><script src="src\/speech-practice\.js\?v=1\.5\.50"><\/script><script src="src\/app\.js\?v=1\.5\.50">/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.51"><\/script><script src="src\/app\.js\?v=1\.5\.51">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -52,31 +52,16 @@ test('lesson activity tabs remain sticky and compact on mobile', () => {
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.50"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.51"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
 });
 
-test('lesson sentence microphone controls report transcript similarity and capability limits', () => {
-  assert.match(appSource, /function practiceSentence\(text\)/);
-  assert.match(appSource, /window\.SpeechRecognition\|\|window\.webkitSpeechRecognition/);
-  assert.match(appSource, /aria-label="Speak this sentence for feedback"/);
-  assert.match(appSource, /Speech recognition is not available in this browser/);
-  assert.match(appSource, /estimated pitch pattern/);
-  assert.match(appSource, /AudioCtx/);
-  assert.match(appSource, /practiceSentence\('\$\{w\.example\}'\)/);
-});
-
-test('low-confidence recognition results are scored instead of discarded', () => {
-  assert.match(appSource, /getRecognitionTranscript\(e\)/);
-  assert.match(appSource, /Heard:/i);
-  assert.match(indexHtml, /src="src\/speech-practice\.js\?v=1\.5\.50"><\/script>/);
-});
-
-test('mobile speech practice keeps interim text and explains an empty device transcript', () => {
-  assert.match(appSource, /recognition\.interimResults=true/);
-  assert.match(appSource, /lastTranscript/);
-  assert.match(appSource, /Japanese speech-recognition service returned no words/i);
-  assert.match(appSource, /onend=\(\)=>/);
+test('lessons omit microphone practice but retain sentence listening controls', () => {
+  assert.doesNotMatch(appSource, /practiceSentence|SpeechRecognition|webkitSpeechRecognition|AudioCtx/);
+  assert.doesNotMatch(appSource, /🎙|Speak example sentence|Speak this sentence/);
+  assert.match(appSource, /aria-label="Play example sentence"/);
+  assert.match(appSource, /aria-label="Hear the model sentence"/);
+  assert.doesNotMatch(indexHtml, /speech-practice\.js/);
 });

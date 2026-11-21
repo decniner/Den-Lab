@@ -15,7 +15,6 @@ const validation = await readFile(join(projectDir, 'src/content-validation.js'),
 const lessonProgress = await readFile(join(projectDir, 'src/lesson-progress.js'), 'utf8');
 const rewardGuard = await readFile(join(projectDir, 'src/reward-guard.js'), 'utf8');
 const app = await readFile(join(projectDir, 'src/app.js'), 'utf8');
-const speechPractice = await readFile(join(projectDir, 'src/speech-practice.js'), 'utf8');
 const audioManifest = JSON.parse(await readFile(join(projectDir, 'src/speech-audio-manifest.json'), 'utf8'));
 const inlineAudioManifest = Object.fromEntries(await Promise.all(Object.entries(audioManifest).map(async ([phrase, asset]) => [phrase, { ...asset, src: `data:audio/mpeg;base64,${(await readFile(join(projectDir, asset.src.replace(/^\.\//, '')))).toString('base64')}` }])));
 const inlineAudioScript = `globalThis.SAKURA_AUDIO=Object.freeze(${JSON.stringify(inlineAudioManifest)});`;
@@ -35,8 +34,8 @@ await writeFile(join(outputDir, 'DATA_SOURCES.md'), dataSources);
 const standalone = html
   .replace('<link rel="stylesheet" href="styles.css">', `<style>\n${css}\n</style>`)
   .replace(
-    `<script src="src/n5-data.js"></script><script src="src/content.js"></script><script src="src/n5-app.js"></script><script src="src/content-validation.js"></script><script src="src/lesson-progress.js"></script><script src="src/reward-guard.js"></script><script src="src/speech-audio-manifest.js?v=1.5.50"></script><script src="src/speech-practice.js?v=1.5.50"></script><script src="src/app.js?v=1.5.50"></script>`,
-    `<script>\n${n5Data}\n${content}\n${n5App}\n${validation}\n${lessonProgress}\n${rewardGuard}\n${inlineAudioScript}\n${speechPractice}\n${app}\n</script>`,
+    `<script src="src/n5-data.js"></script><script src="src/content.js"></script><script src="src/n5-app.js"></script><script src="src/content-validation.js"></script><script src="src/lesson-progress.js"></script><script src="src/reward-guard.js"></script><script src="src/speech-audio-manifest.js?v=1.5.51"></script><script src="src/app.js?v=1.5.51"></script>`,
+    `<script>\n${n5Data}\n${content}\n${n5App}\n${validation}\n${lessonProgress}\n${rewardGuard}\n${inlineAudioScript}\n${app}\n</script>`,
   );
 await writeFile(join(outputDir, 'genki-interactive-academy.html'), standalone);
 await writeFile(resolve(projectDir, '..', 'genki-interactive-academy.html'), standalone);

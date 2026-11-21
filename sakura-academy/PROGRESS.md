@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 36
 - Work in progress: 0
-- New: 1
-- Closed: 35
+- New: 0
+- Closed: 36
 - Timeline gaps: 36
 
 ## Issue register
@@ -49,7 +49,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-033 — Cached lesson script can hide the newly released microphone control | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-036 — Unreliable sentence microphone controls should be removed | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-036 — Unreliable sentence microphone controls should be removed | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -580,13 +580,20 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-036 — Unreliable sentence microphone controls should be removed
 
-- **Status:** New (0%)
-- **Evidence:** The learner reports the microphone option remains unusable and requests that Sakura no longer show or use it.
-- **Impact:** Visible controls invite an unreliable sentence-practice flow on mobile.
-- **Resolution plan:** Remove microphone buttons and browser speech-recognition code from lesson sentences, vocabulary examples, grammar examples, dialogue, and sentence builder. Keep bundled Listen audio.
+- **Status:** Closed (100%)
+- **Evidence:** All microphone buttons and browser speech-recognition code have been removed from lessons, including vocabulary, grammar, conversation, and sentence builder. Bundled Listen controls remain.
+- **Impact:** Resolved: the unreliable mic option is no longer visible or active, while lesson listening remains available.
+- **Resolution:** Removed microphone UI, speech recognition/pitch analysis logic, helper assets, offline precache entries, and standalone build embedding.
+- **Verification:** Automated tests confirm the app, service worker, and generated standalone page omit microphone controls while retaining audio Listen controls.
 - **Fix estimate:** Not recorded.
 
 ### Microphone removal issue intake · 2026-11-21 · v1.5.50
 
 - **Tracker:** SA-036 opened; 36 issues tracked, 35 closed, 1 new.
 - **Next:** Remove microphone controls and related recognition logic; retain sentence playback.
+
+### Sentence microphone removal · 2026-11-21 · v1.5.51
+
+- **Tracker:** SA-036 closed; 36 issues tracked, all closed.
+- **Fix:** Removed every lesson mic control and all browser speech-recognition code. Kept bundled Japanese Listen audio. Removed the now-unused recognition helper from online/offline/standalone builds.
+- **Verification:** Automated tests confirm the app and standalone build contain no mic controls, while sentence Listen controls and bundled audio remain.
