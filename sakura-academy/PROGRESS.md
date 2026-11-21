@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 60
+- Total tracked: 61
 - Work in progress: 0
 - New: 0
-- Closed: 60
-- Timeline gaps: 59
+- Closed: 61
+- Timeline gaps: 60
 
 ## Issue register
 
@@ -74,6 +74,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-058 — Decorative swipe cue is exposed to assistive technology | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-059 — Long conversation lines are clipped in mobile speaker bubbles | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-060 — Mobile handwriting stroke guide is squeezed beside the canvas | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-061 — Lesson swipe cue overlaps the Conversation tab label on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -860,3 +861,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-060 recorded before implementation and closed after 390 × 844 visual review. Total 60; 0 New; 60 Closed; 59 timeline gaps because fix durations were not measured.
 - **Change:** Stacked the stroke guide above the drawing canvas on screens up to 760px, allowed its controls to wrap, and sized the reference diagram to 190px so the full diagram stays on screen.
 - **Verification:** At 390 × 844 the guide is full-width, its controls fit, and the numbered diagram is fully visible above fixed navigation. All Academy tests, build output, and cache/version alignment are checked for v1.5.91.
+
+
+### SA-061 — Mobile lesson swipe cue covers the Conversation tab label · 2026-11-21
+
+- **Evidence:** At 390 × 844, the sticky ↔ marker overlaps the right side of the visible Conversation tab.
+- **Tracker:** SA-061 recorded before implementation and closed after the 390 × 844 mobile check. Total 61; 0 New; 61 Closed; 60 timeline gaps because fix durations were not measured.
+- **Change:** Moved the decorative swipe cue below the lesson tab strip into its own right-aligned line; it remains hidden from assistive technology.
+- **Verification:** On the phone-sized preview, the Conversation tab is no longer overlapped, the ↔ cue remains visible below it, and the screen-reader group instruction is unchanged. All Academy tests, standalone build, offline cache/version alignment, and `git diff --check` are checked for v1.5.92.
