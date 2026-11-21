@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 61
+- Total tracked: 62
 - Work in progress: 0
 - New: 0
-- Closed: 61
-- Timeline gaps: 60
+- Closed: 62
+- Timeline gaps: 61
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-062 — Kana recognition question opens below the phone fold | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-001 — Speaker B replies were identical across lessons | Codex | Closed | 100% | Not recorded | Not recorded |
 | SA-002 — Vocabulary examples often did not demonstrate the target word | Codex | Closed | 100% | Not recorded | Not recorded |
 | SA-003 — Content validator falsely reported numeric lesson IDs missing | Codex | Closed | 100% | Not recorded | Not recorded |
@@ -877,3 +878,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-055 was reopened at 65% before changes and closed after mobile preview verification. The tracker still has 61 issues, 0 active, and 60 timeline gaps; the original issue record remains in the archive.
 - **Change:** Replaced timer-based motion with an audio analyser that follows the bundled clip’s live amplitude. Enlarged the mouth and leaves both speakers at rest during silence, pause, and reduced-motion preference.
 - **Verification:** At 390 × 844, Speaker B opens while his bundled line plays and Speaker A stays still; pausing returns both faces to their closed-mouth smile. Added amplitude tests for silence, weak signal, and stronger sound. All 79 Academy tests pass; the static build and offline cache/version alignment are checked at v1.5.93.
+
+
+### SA-062 — Reveal kana recognition questions on narrow phones · 2026-11-21 · v1.5.94
+
+- **Evidence:** At 320 × 740 with Extra large text, starting the recognition quiz placed the prompt and answer choices below the fixed navigation; the choices were not visible until scrolling.
+- **Tracker:** SA-062 was recorded before the change and closed after a 320 × 740 mobile check. Total 62 issues; 0 active; 62 closed; 61 timeline gaps because fix durations were not captured.
+- **Change:** After a question renders, scroll its prompt to the top of the viewport. Respect reduced-motion preferences by using an instant scroll.
+- **Verification:** Starting the quiz at 320 × 740 with Extra large text automatically reveals the character, all four answer choices, and the timer. The regression test covers smooth and reduced-motion behavior. All 80 Academy tests pass, the v1.5.94 static build completes, and offline cache/version alignment matches the footer.
