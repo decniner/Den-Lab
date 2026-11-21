@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 38
 - Work in progress: 0
-- New: 1
-- Closed: 37
+- New: 0
+- Closed: 38
 - Timeline gaps: 38
 
 ## Issue register
@@ -51,7 +51,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-036 — Unreliable sentence microphone controls should be removed | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-037 — Strict lesson checklist items cannot open the next activity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -639,8 +639,15 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom
 
-- **Status:** New (0%)
-- **Evidence:** Reproduced on the hosted mobile page at 390 × 844. After a checklist tap, `window.scrollY` was 1,415px; the sticky tabs were at viewport top while the lesson heading was about 1,285px above it.
-- **Impact:** Learner arrives in the activity but remains visually at the bottom, away from lesson context.
-- **Cause:** The shortcut scrolls a sticky tab bar into view. A shorter re-render clamps the document at its previous lower scroll position; the sticky bar masks that the page is still near the bottom.
-- **Next:** Reset the lesson page to its top after rendering the selected activity, then verify on a phone-sized viewport.
+- **Status:** Closed (100%)
+- **Evidence:** Reproduced the 1,415px scroll-position failure. After the fix, a 390 × 844 mobile run completed vocabulary to 8/8, tapped Grammar sentence built correctly, opened Sentence Builder, and measured `window.scrollY` at 0 with the lesson heading visible.
+- **Impact:** Resolved: the checklist shortcut now opens the activity at the top of the lesson page.
+- **Resolution:** Scroll the document to `top: 0` on the next animation frame after rendering the chosen activity. This handles the large layout-height change that made the sticky tab bar an unreliable anchor.
+- **Verification:** Mobile browser screenshot confirms the lesson heading, sentence card, activity tabs, and Sentence Builder are visible in the expected order. The regression test asserts the page-top scroll is scheduled.
+- **Fix estimate:** Time not recorded.
+
+### Checklist shortcut scroll correction · 2026-11-21 · v1.5.58
+
+- **Tracker:** SA-038 closed; 38 issues tracked, all closed.
+- **Changes:** Checklist shortcuts now scroll the document to the lesson’s top after switching activities, avoiding a stale lower scroll position after short content rerenders.
+- **Verification:** 61 Academy tests pass. In mobile browser mode at 390 × 844, Vocabulary marked learned (8/8) → Grammar sentence built correctly opens Sentence Builder with the lesson heading visible and `scrollY = 0`.

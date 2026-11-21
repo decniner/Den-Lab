@@ -13,7 +13,7 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.57"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.57"><\/script><script src="src\/app\.js\?v=1\.5\.57">/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.58"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.58"><\/script><script src="src\/app\.js\?v=1\.5\.58">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -52,7 +52,7 @@ test('lesson activity tabs remain sticky and compact on mobile', () => {
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.57"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.58"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -67,14 +67,14 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.57"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.58"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
-test('strict checklist rows link the next step to its lesson activity and scroll it into view', () => {
+test('strict checklist rows link the next step to its lesson activity and return to page top', () => {
   assert.match(appSource, /function openChecklistStep\(tab\)/);
   assert.match(appSource, /checklistStepAvailability\(checks\)/);
   assert.match(appSource, /strictChecklistTab\('grammar'\)/);
   assert.match(appSource, /openChecklistStep\('\$\{x\.tab\}'\)/);
-  assert.match(appSource, /scrollIntoView\(\{behavior:'smooth',block:'start'\}\)/);
+  assert.match(appSource, /requestAnimationFrame\(\(\)=>window\.scrollTo\(\{top:0,behavior:'smooth'\}\)\)/);
 });
