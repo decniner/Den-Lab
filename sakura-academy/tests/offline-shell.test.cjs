@@ -117,8 +117,8 @@ test('issue tracker script parses and renders all registered issues', () => {
   const context = { document: { querySelector: selector => nodes[selector] } };
   vm.runInNewContext(script, context);
   assert.equal(nodes['#registerTitle'].textContent, 'Active issues');
-  assert.match(nodes['#rows'].innerHTML, /No open issues/);
-  assert.equal(nodes['#scope-active'].textContent, 'Active (0)');
+  assert.match(nodes['#rows'].innerHTML, /SA-031[\s\S]*class="pill ">New/);
+  assert.equal(nodes['#scope-active'].textContent, 'Active (1)');
   assert.equal(nodes['#scope-active']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='archive';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'Issue archive');
@@ -128,8 +128,8 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.equal(nodes['#scope-archive']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='all';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'All issues');
-  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">30<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">31<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">1<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">0<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">30<\/div>/);
   assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*v1\.5\.29[\s\S]*seven tabs and eight vocabulary cards[\s\S]*class="pill closed">Closed/);
@@ -151,6 +151,7 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.match(nodes['#rows'].innerHTML, /SA-028[\s\S]*Assessment is unavailable until two words[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-029[\s\S]*Vocabulary examples and Grammar Lab worked examples[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-030[\s\S]*lesson activity bar now stays pinned[\s\S]*class="pill closed">Closed/);
+  assert.match(nodes['#rows'].innerHTML, /SA-031[\s\S]*Lesson Play controls are silent when the browser has no speech engine[\s\S]*class="pill ">New/);
 
   for (const label of ['Total tracked', 'Work in progress', 'New', 'Closed', 'Timeline gaps']) {
     const sourceValue = progressMarkdown.match(new RegExp(`^- ${label}: (\\d+)$`, 'm'))?.[1];
