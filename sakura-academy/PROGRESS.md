@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 85
+- Total tracked: 86
 - Work in progress: 0
 - New: 0
-- Closed: 85
+- Closed: 86
 - Timeline gaps: 82
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-086 — Cached course content can hide current kanji memory cues | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-085 — Kanji Explorer lacks visual memory cues and a simple study action | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-084 — Speech controls ignore explicit Japanese readings across N5 content | Codex | Closed | 100% | 2026-11-21 | 2026-11-21 |
 | SA-083 — Story narration may not follow the displayed kana reading | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -1136,3 +1137,18 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Added visual memory aids to all 84 Kanji Explorer cards, a persistent Add to Study action, and Next-to-mark-studied behavior. Bumped the visible app and offline cache versions.
 - **Verification:** All 102 Academy tests pass. The standalone build succeeds; the visible mobile preview verified the save and Next flows at 390 × 844. Release version and offline cache version match at v1.5.116.
 - **Tracker:** SA-085 closed. Total 85; 0 Work in progress; 0 New; 85 Closed; 82 timeline gaps.
+
+### v1.5.117 — Cache-safe kanji memory release · 2026-11-22
+
+- **Changes:** Versioned the Kanji Explorer content script and matched the offline precache URL after live verification showed a stale copy could hide memory cues.
+- **Verification:** All 102 Academy tests pass. Standalone build succeeds, `content.js` is in the offline precache with the same v1.5.117 query as the app HTML; live deployment check pending.
+- **Tracker:** SA-086 closed. Total 86; 0 Work in progress; 0 New; 86 Closed; 82 timeline gaps.
+
+### SA-086 — Cached course content can hide current kanji memory cues · 2026-11-22
+
+- **Status:** Closed · 100%
+- **Evidence:** Live verification showed the new Kanji Explorer controls but omitted the memory cue because `content.js` was not release-versioned and an older cached copy could be reused.
+- **Impact:** Resolved: the course content script URL is versioned with the app, so stale cached content cannot mask the new cue after an update.
+- **Resolution:** Versioned `content.js` in the app HTML and standalone build, and updated the offline shell precache to the same versioned URL.
+- **Verification:** Deployment check pending.
+- **Fix estimate:** 2026-11-22.
