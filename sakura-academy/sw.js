@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sakura-academy-shell-v1.5.87';
+const CACHE_NAME = 'sakura-academy-shell-v1.5.88';
 const AUDIO_ASSETS = [
   './audio/speech/ja-001ba7ef732eea.mp3',
   './audio/speech/ja-014a9a7e0cf5fa.mp3',
@@ -228,7 +228,7 @@ const APP_SHELL = [
   './',
   './index.html',
   './favicon.svg',
-  './styles.css?v=1.5.87',
+  './styles.css?v=1.5.88',
   './issue-tracker.html',
   './PROGRESS.md',
   './DATA_SOURCES.md',
@@ -236,11 +236,11 @@ const APP_SHELL = [
   './src/content.js',
   './src/n5-app.js',
   './src/content-validation.js',
-  './src/lesson-progress.js?v=1.5.87',
-  './src/audio-lessons.js?v=1.5.87',
+  './src/lesson-progress.js?v=1.5.88',
+  './src/audio-lessons.js?v=1.5.88',
   './src/reward-guard.js',
-  './src/speech-audio-manifest.js?v=1.5.87',
-  './src/app.js?v=1.5.87',
+  './src/speech-audio-manifest.js?v=1.5.88',
+  './src/app.js?v=1.5.88',
   ...AUDIO_ASSETS,
 ];
 

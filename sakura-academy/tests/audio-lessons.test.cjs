@@ -63,8 +63,9 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(appSource, /classList\.toggle\('is-speaking',active\)/);
   assert.match(stylesSource, /audio-dialogue-person\.is-speaking/);
   assert.match(stylesSource, /audio-dialogue-person-a\{color:#b86680\}\.audio-dialogue-person-b\{color:#414a79\}/);
-  assert.match(stylesSource, /audio-dialogue-person\.is-speaking \.mouth-open\{opacity:1;animation:sakura-talk-mouth \.72s ease-in-out infinite alternate\}/);
+  assert.match(stylesSource, /audio-dialogue-person\.is-speaking \.mouth-open\{opacity:1;animation:sakura-talk-mouth 1\.6s ease-in-out infinite\}/);
   assert.doesNotMatch(stylesSource, /sakura-talk-bob|audio-dialogue-person\.is-speaking \.audio-stick-figure\{animation/);
+  assert.match(stylesSource, /@keyframes sakura-talk-mouth\{0%,9%,23%,34%,49%,76%,89%,100%\{transform:scaleY\(\.2\)\}15%,18%\{transform:scaleY\(\.42\)\}39%,44%\{transform:scaleY\(\.68\)\}81%,85%\{transform:scaleY\(\.35\)\}\}/);
   assert.match(stylesSource, /@media\(prefers-reduced-motion:reduce\)\{\.audio-dialogue-person\.is-speaking \.mouth-open\{animation:none;transform:scaleY\(\.2\)\}\}/);
   assert.match(appSource, /mouth-open[^>]*rx=\"2\.4\" ry=\"1\.4\"/);
   assert.match(stylesSource, /prefers-reduced-motion:reduce/);

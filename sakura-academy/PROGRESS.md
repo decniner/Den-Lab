@@ -828,3 +828,17 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-058 closed after mobile tree and visual verification. Total 58; 0 New; 58 Closed; 57 timeline gaps remain because fix durations were not measured.
 - **Change:** Moved the arrow from generated CSS content to an aria-hidden visual element; retained the scroll cue and accessible group instruction.
 - **Verification:** Full Academy tests, standalone build, version/cache alignment, and phone-sized browser review passed.
+
+
+### SA-055 reopened — conversation mouth motion · 2026-11-21
+
+- **Evidence:** User review reports the mouth animation still looks weird. The current CSS repeats a smooth 0.72-second open-close pulse for the full line, so the motion is uniform instead of speech-like.
+- **Tracker:** SA-055 reopened as New before implementation; 58 total, 1 New, 57 Closed.
+- **Next:** Replace the constant pulse with short varied openings and pauses, then review at phone size.
+
+
+### SA-055 resolved — conversation mouth motion · 2026-11-21 · v1.5.88
+
+- **Tracker:** SA-055 reopened before implementation and closed after review. Total 58; 0 New; 58 Closed; 57 timeline gaps remain because fix durations were not measured.
+- **Change:** Replaced the continuous uniform mouth pulse with three brief openings at varied heights and longer rests. The existing active-speaker, pause, and reduced-motion behavior remains intact.
+- **Verification:** All 77 Academy checks pass, the standalone build completes, and `git diff --check` is clean. The visible conversation preview shows the active speaker and leaves the other figure still. The source pattern and pause/reduced-motion rules are covered by focused assertions.
