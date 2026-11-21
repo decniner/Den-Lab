@@ -4,16 +4,18 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 75
+- Total tracked: 77
 - Work in progress: 0
 - New: 0
-- Closed: 75
-- Timeline gaps: 74
+- Closed: 77
+- Timeline gaps: 76
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-077 — Adding a card skips the next ready card | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-076 — Flashcards lack an action for words the learner already knows | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-075 — Flashcard review requires four confusing self-ratings | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-074 — Lesson audio does not highlight the character being spoken | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-073 — Kanji Explorer promises stroke order but shows no stroke guide | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -1005,3 +1007,22 @@ Every published app change must bump the small footer version and its update dat
 - **Impact:** Resolved: learners can save an unfamiliar word with one clear action and return to it later.
 - **Fix:** Replaced the four self-rating controls with Add to Study, which schedules the word for a later review.
 - **Verification:** All 90 Academy tests pass; one-tap saving and queue advance were confirmed in the phone preview.
+
+### SA-076 — Flashcards lack an action for words the learner already knows · 2026-11-21 · v1.5.108
+- **Status:** Closed after implementation and mobile verification.
+- **Evidence:** At 390 × 844, revealing がくせい showed both Next and Add to Study. Next marked the word learned and displayed せんせい. Automated coverage verifies the learned/mastered state and that mastered words leave the ready queue.
+- **Impact:** Learners can mark familiar words learned and reserve Add to Study for unfamiliar words.
+- **Fix:** Added Next to record the word as learned and mastered; Add to Study continues to schedule later review.
+- **Verification:** All 91 Academy tests pass. The standalone build succeeds; local mobile preview confirmed Next advances and the ready count decreases by one.
+
+### SA-077 — Adding a card skips the next ready card · 2026-11-21 · v1.5.108
+- **Status:** Closed after implementation and mobile verification.
+- **Evidence:** At 390 × 844, saving せんせい displayed ともだち next. Automated coverage verifies the saved card no longer increments the numeric queue index.
+- **Impact:** Every ready card remains reachable after saving an unfamiliar word.
+- **Fix:** Removed the extra index increment after review scheduling.
+- **Verification:** All 91 Academy tests pass. Phone preview confirmed the next ready card appears immediately after saving.
+
+### v1.5.108 — Clear flashcard progression · 2026-11-21
+- **Changes:** Added Next to mark a familiar word learned; retained Add to Study for unfamiliar words; prevented saved cards from causing a queue skip; updated cache and visible version.
+- **Verification:** All 91 Academy tests pass; the standalone offline build succeeds; the 390 × 844 phone view showed both actions and confirmed correct progression for Next and Add to Study.
+- **Tracker:** SA-076 and SA-077 are closed. Total 77; 0 Work in progress; 0 New; 77 Closed; 76 timeline gaps.

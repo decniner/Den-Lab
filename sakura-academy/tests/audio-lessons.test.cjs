@@ -102,6 +102,20 @@ test('flashcards use one Study action and explain that unfamiliar cards return l
   assert.match(flashcards, /return tomorrow/);
 });
 
+test('flashcards can advance without adding the revealed card to Study', () => {
+  const flashcards = appSource.slice(appSource.indexOf('function flashcards()'), appSource.indexOf('\nfunction ', appSource.indexOf('function flashcards()') + 1));
+  const nextStudyCard = appSource.match(/function nextStudyCard\(id\)\{[^\n]+/)?.[0];
+  const reviewCard = appSource.match(/function reviewCard\(id,quality\)\{[^\n]+/)?.[0];
+  assert.match(flashcards, /onclick="nextStudyCard\('\$\{w\.id\}'\)">Next →/);
+  assert.match(nextStudyCard, /state\.learned\[id\]=true/);
+  assert.match(nextStudyCard, /mastered:true/);
+  assert.doesNotMatch(nextStudyCard, /flashIndex\+\+/);
+  assert.match(nextStudyCard, /flashBack=false/);
+  assert.doesNotMatch(reviewCard, /flashIndex\+\+/);
+  const dueFunction = appSource.match(/function due\(r\)\{[^\n]+/)?.[0];
+  assert.match(dueFunction, /!r\.mastered/);
+});
+
 test('lesson playback links audio position to the visible Japanese character', () => {
   assert.match(appSource, /updateJapaneseHighlight/);
   assert.match(appSource, /ontimeupdate/);
