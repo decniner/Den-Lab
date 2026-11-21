@@ -72,7 +72,8 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.doesNotMatch(stylesSource, /sakura-talk-mouth|audio-dialogue-person\.is-speaking \.mouth-open\{[^}]*animation/);
   assert.doesNotMatch(stylesSource, /sakura-talk-bob|audio-dialogue-person\.is-speaking \.audio-stick-figure\{animation/);
   assert.match(stylesSource, /mouth-open\{[^}]*transform:scale\(var\(--mouth-wide/);
-  assert.match(stylesSource, /mouth-open\{[^}]*transition:transform 90ms ease-out/);
+  assert.match(stylesSource, /mouth-open\{[^}]*transition:transform 150ms cubic-bezier/);
+  assert.doesNotMatch(stylesSource, /\.mouth-open\{transition:none\}/, 'phone layout should preserve eased mouth movement');
   assert.match(appSource, /mouth-open[^>]*rx="3\.6" ry="4\.0"/);
   assert.match(appSource, /prefers-reduced-motion/);
   assert.match(stylesSource, /prefers-reduced-motion:reduce/);
@@ -86,6 +87,26 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   const audioScreen = appSource.slice(appSource.indexOf('function audioLessons()'), appSource.indexOf('\n', appSource.indexOf('function audioLessons()')));
   assert.ok(audioScreen.indexOf('class="audio-mode-switch"') < audioScreen.indexOf('audioDialogueScene(l)'), 'conversation mode should be selected before its speaker scene');
   assert.doesNotMatch(stylesSource, /\.audio-controls\{position:sticky/);
+});
+
+test('Kanji Explorer displays the bundled stroke-order guide for the selected character', () => {
+  const kanjiPage = appSource.slice(appSource.indexOf('function kanjiPage()'), appSource.indexOf('\nfunction ', appSource.indexOf('function kanjiPage()') + 1));
+  assert.match(kanjiPage, /strokeOrderSvg\(k\.ch\)/);
+});
+
+test('flashcards use one Study action and explain that unfamiliar cards return later', () => {
+  const flashcards = appSource.slice(appSource.indexOf('function flashcards()'), appSource.indexOf('\nfunction ', appSource.indexOf('function flashcards()') + 1));
+  assert.match(flashcards, /Add to Study/);
+  assert.match(flashcards, /studyCard\('\$\{w\.id\}'\)/);
+  for (const rating of ['Again', 'Hard', 'Good', 'Easy']) assert.doesNotMatch(flashcards, new RegExp(rating));
+  assert.match(flashcards, /return tomorrow/);
+});
+
+test('lesson playback links audio position to the visible Japanese character', () => {
+  assert.match(appSource, /updateJapaneseHighlight/);
+  assert.match(appSource, /ontimeupdate/);
+  assert.match(appSource, /onboundary/);
+  assert.match(stylesSource, /jp-character\.spoken/);
 });
 
 test('conversation queue contains only speaker dialogue in lesson order', () => {
@@ -173,5 +194,16 @@ test('audio mouth movement follows clip amplitude and ignores silence', () => {
   assert.ok(sandbox.audioMouthEnvelope(.8,0,16)<.8,'mouth release should ease closed');
   assert.equal(sandbox.audioMouthOpening(.11),0,'quiet audio keeps the mouth closed');
   const soft=sandbox.audioMouthOpening(.16),clear=sandbox.audioMouthOpening(.3),strong=sandbox.audioMouthOpening(.5);
-  assert.ok(soft>0&&soft<clear&&clear<strong&&strong<=.72,'mouth opening follows changing speech energy smoothly and stays bounded');
+  assert.ok(soft>0&&soft<clear&&clear<strong&&strong<=.4,'mouth opening follows changing speech energy smoothly and stays small');
+});
+
+test('Japanese speech highlighting advances through glyphs and skips spacing and punctuation', () => {
+  const sandbox = {};
+  sandbox.globalThis = sandbox;
+  vm.runInNewContext(helperSource, sandbox);
+  const text='あ い。う';
+  assert.equal(sandbox.japaneseSpeechCharacterIndex(text,0),0);
+  assert.equal(sandbox.japaneseSpeechCharacterIndex(text,.4),2);
+  assert.equal(sandbox.japaneseSpeechCharacterIndex(text,.9),4);
+  assert.equal(sandbox.japaneseSpeechCharacterIndex(text,1),4);
 });

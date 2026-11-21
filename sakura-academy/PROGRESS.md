@@ -4,16 +4,20 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 71
+- Total tracked: 75
 - Work in progress: 0
 - New: 0
-- Closed: 71
-- Timeline gaps: 70
+- Closed: 75
+- Timeline gaps: 74
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-075 — Flashcard review requires four confusing self-ratings | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-074 — Lesson audio does not highlight the character being spoken | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-073 — Kanji Explorer promises stroke order but shows no stroke guide | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-072 — Conversation mouth movement still looks unnatural during Japanese playback | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-071 — N5 app script can stay stale while the footer shows a new release | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-070 — N5 mobile section tabs hide sections and lose the active tab | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-069 — Home counts an incomplete lesson as complete | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -968,3 +972,36 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-071 was recorded before changes and closed after a fresh hosted phone load. Total 71; 0 Work in progress; 0 New; 71 Closed; 70 timeline gaps.
 - **Change:** Versioned the N5 application script consistently in the page shell, standalone build, and offline precache list.
 - **Verification:** Shell, script, and service-worker URL versions align. The complete 86-test suite and standalone build pass at v1.5.105; live 390 × 844 navigation checks confirm the current N5 bundle is active.
+
+### SA-072 — Conversation mouth movement still looks unnatural during Japanese playback · 2026-11-21 · v1.5.107
+- **Status:** Closed; recorded before code changes.
+- **Evidence:** On the local 390 × 844 phone view, the pink speaker’s mouth followed the playing clip with a bounded 0–0.4 opening and eased back to a small smile; the blue listener stayed still. Regression tests cover quiet audio, rising and falling envelope, and bounded opening.
+- **Impact:** Resolved: audio-driven mouth movement is more restrained and visibly eased on phone layouts.
+- **Fix:** Removed the phone override that disabled easing and reduced the maximum mouth opening.
+- **Verification:** All 87 Academy tests pass; the standalone offline build succeeds.
+
+### SA-073 — Kanji Explorer promises stroke order but shows no stroke guide · 2026-11-21 · v1.5.107
+- **Status:** Closed; recorded before code changes.
+- **Evidence:** At 390 × 844, selecting 日 in Kanji Explorer displays the accessible “Stroke order for 日” SVG under “Correct stroke order.” Content tests verify every listed beginner kanji has bundled stroke data.
+- **Impact:** Resolved: learners can view the character’s bundled stroke sequence in the explorer.
+- **Fix:** Added the shared stroke-order diagram to the selected-character detail panel.
+- **Verification:** All 87 Academy tests pass; the standalone offline build succeeds.
+
+### v1.5.107 — Lesson playback and Study flow improvements · 2026-11-21
+- **Changes:** Restored eased mouth transitions on phones and reduced the maximum mouth opening; added the bundled stroke-order SVG to Kanji Explorer; added spoken-character highlighting to lesson playback; replaced four flashcard self-ratings with one Add to Study action.
+- **Verification:** All 90 Academy tests pass. The standalone offline build succeeds. At 390 × 844, lesson playback highlighted the current kana; Study cards advanced with one tap and returned to the review queue the next day.
+- **Tracker:** SA-072 through SA-075 are closed after source, regression, and mobile-preview checks. Total 75; 0 Work in progress; 0 New; 75 Closed; 74 timeline gaps.
+
+### SA-074 — Lesson audio does not highlight the character being spoken · 2026-11-21
+- **Status:** Closed; recorded before code changes.
+- **Evidence:** On the local 390 × 844 Lesson 1 page, pressing Listen lights the current kana in gold as the bundled clip plays. The highlight advances through the sentence, and automated checks cover ordering plus skipping spaces and punctuation.
+- **Impact:** Resolved: learners can follow the Japanese text as the lesson voice speaks.
+- **Fix:** Added audio-position tracking and a current-character highlight to matching lesson text.
+- **Verification:** All 90 Academy tests pass; phone preview showed the highlight during playback.
+
+### SA-075 — Flashcard review requires four confusing self-ratings · 2026-11-21
+- **Status:** Closed; recorded before code changes.
+- **Evidence:** On the phone preview, revealing a card showed one Add to Study action. Tapping it saved the card, advanced to the next card, and reduced the ready count from 762 to 761; saved cards return tomorrow.
+- **Impact:** Resolved: learners can save an unfamiliar word with one clear action and return to it later.
+- **Fix:** Replaced the four self-rating controls with Add to Study, which schedules the word for a later review.
+- **Verification:** All 90 Academy tests pass; one-tap saving and queue advance were confirmed in the phone preview.

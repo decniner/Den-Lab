@@ -55,9 +55,16 @@ function audioMouthEnvelope(current, level, deltaMs=16) {
 function audioMouthOpening(level) {
   if(level<.12)return 0;
   const voiced=Math.max(0,Math.min(1,(level-.12)/.34));
-  return .08+.64*(voiced*voiced*(3-2*voiced));
+  return .04+.36*(voiced*voiced*(3-2*voiced));
 }
-Object.assign(globalThis, { audioMouthLevel, audioMouthEnvelope, audioMouthOpening });
+function japaneseSpeechCharacterIndex(text, progress) {
+  const chars=Array.from(String(text||'')),spoken=[];
+  chars.forEach((ch,index)=>{if(/[ぁ-ゖァ-ヺ一-龯々ー]/.test(ch))spoken.push(index)});
+  if(!spoken.length)return -1;
+  const ratio=Math.max(0,Math.min(1,Number(progress)||0));
+  return spoken[Math.min(spoken.length-1,Math.floor(ratio*spoken.length))];
+}
+Object.assign(globalThis, { audioMouthLevel, audioMouthEnvelope, audioMouthOpening, japaneseSpeechCharacterIndex });
 
 function audioKanaToRomaji(text) {
   const basic = 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ';
