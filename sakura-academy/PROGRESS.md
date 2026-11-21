@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 31
+- Total tracked: 32
 - Work in progress: 0
-- New: 1
+- New: 2
 - Closed: 30
-- Timeline gaps: 31
+- Timeline gaps: 32
 
 ## Issue register
 
@@ -45,6 +45,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-029 — Lesson example sentences lack nearby audio controls | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-030 — Lesson activity tabs disappear while studying long vocabulary lists | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-031 — Lesson Play controls are silent when the browser has no speech engine | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-032 — Lesson sentences have no microphone pronunciation check | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -497,6 +498,15 @@ Every published app change must bump the small footer version and its update dat
 - **Status:** New (0%)
 - **Evidence:** In the live in-app browser, `window.speechSynthesis` is unavailable. Existing Play controls rely on browser speech and therefore cannot produce Japanese audio in this environment.
 - **Impact:** Learners hear nothing when they press Play for lesson vocabulary and sentences in browsers without built-in speech synthesis.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Not recorded.
+
+### SA-032 — Lesson sentences have no microphone pronunciation check
+
+- **Status:** New (0%)
+- **Evidence:** Lesson example audio can be played, but no microphone control lets the learner say the sentence and receive feedback on the recognized words or pitch contour.
+- **Impact:** Learners cannot assess spoken sentence accuracy and intonation against the lesson model.
 - **Resolution:** Pending.
 - **Verification:** Pending.
 - **Fix estimate:** Not recorded.
