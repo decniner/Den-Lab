@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 55
+- Total tracked: 56
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 55
-- Timeline gaps: 54
+- Timeline gaps: 55
 
 ## Issue register
 
@@ -69,6 +69,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-053 — Stroke order must be started manually for each handwriting character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-054 — Speaker colors do not match their female and male voices | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-055 — Conversation mouth animation looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-056 — Fresh accounts show unseen vocabulary as reviews due | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -786,3 +787,10 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Female Speaker A is pink on the left; male Speaker B is blue on the right. Speaking uses a smaller, more restrained mouth pulse, with the extra label-side voice bars removed.
 - **Verification:** On the visible 390 × 844 browser preview, the voice labels, character colors, active-speaker state, transcript, and audio controls were checked. Full automated suite and offline version/cache alignment passed for the final source.
 - **Next audit:** Continue tracking and resolving newly found high-impact learning, mobile, accessibility, and offline issues before changing their behavior.
+
+
+### First-run review count intake · 2026-11-21 · v1.5.82
+
+- **Evidence:** Fresh mobile state showed no lesson or vocabulary progress but listed all 762 cards as reviews due. The review predicate treats missing schedules as due.
+- **Tracker:** SA-056 recorded as New before changing the stat or card copy. Total 56; 1 New; 55 Closed.
+- **Next:** Separate outstanding scheduled reviews from unseen cards and verify the fresh dashboard plus review flow.
