@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 53
+- Total tracked: 55
 - Work in progress: 0
-- New: 1
-- Closed: 52
-- Timeline gaps: 52
+- New: 2
+- Closed: 53
+- Timeline gaps: 54
 
 ## Issue register
 
@@ -66,7 +66,9 @@ Every published app change must bump the small footer version and its update dat
 | SA-050 — Conversation speaker labels omit voice identity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-051 — Kana Recognition challenge is hidden below the character grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-052 — Fixed mobile navigation covers audio practice controls | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-053 — Stroke order must be started manually for each handwriting character | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-053 — Stroke order must be started manually for each handwriting character | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-054 — Speaker colors do not match their female and male voices | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-055 — Conversation mouth animation looks unnatural | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -755,3 +757,24 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-052 closed after a 390 × 844 mobile check confirmed the audio controls are clear of the fixed navigation. SA-053 recorded as New before implementation. Total 53; 1 New; 52 Closed.
 - **Evidence for SA-053:** Handwriting initially showed “Ready” and waited for a manual Play order tap, including after advancing to another character.
 - **Next:** Autoplay the stroke sequence for each newly active character and verify both initial entry and character progression.
+
+
+### Handwriting autoplay fix · 2026-11-21 · v1.5.79
+
+- **Tracker:** SA-053 closed with mobile evidence; all 53 recorded issues are Closed. Fix durations remain “Not recorded” where not timed.
+- **Change:** Correct stroke order starts automatically whenever a character becomes active in handwriting practice. The former Play order action is now an optional Replay order control.
+- **Verification:** At 390 × 844, Hiragana あ automatically advanced through three strokes and switching to Katakana ア automatically started its two-stroke sequence. The app tests, offline cache/version checks, tracker rendering, and standalone build are included in the final validation.
+- **Next audit step:** Continue reviewing lesson flows, mobile controls, accessibility, and offline reliability for new high-impact findings; record each finding before changing its behavior.
+
+
+### Audio speaker color audit · 2026-11-21 · v1.5.79
+
+- **Evidence:** Mobile conversation view showed the female voice on the left in blue and the male voice on the right in pink.
+- **Tracker:** SA-054 recorded as New before changing speaker styles. Total 54; 1 New; 53 Closed.
+- **Next:** Match pink to the female left speaker and blue to the male right speaker, then verify the rendered stage.
+
+
+### Conversation visual audit · 2026-11-21 · v1.5.79
+
+- **Tracker:** SA-054 records the reversed speaker colors; SA-055 records the unnatural mouth motion. Both were logged before changing the conversation visuals. Total 55; 2 New; 53 Closed.
+- **Next:** Match pink/blue to female/male roles and make mouth motion subtle and speech-like, then verify the conversation scene on mobile.
