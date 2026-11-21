@@ -4,16 +4,19 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 79
+- Total tracked: 82
 - Work in progress: 0
 - New: 0
-- Closed: 79
-- Timeline gaps: 78
+- Closed: 82
+- Timeline gaps: 81
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-081 — Kanji Explorer hides selected-character details below a long grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-082 — Lesson tab accessibility hint lists the wrong section count | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-080 — Learning sections do not consistently explain their purpose or next action | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-079 — N5 reading lacks story mode with synchronized kanji and kana | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-078 — Study cards hide N5 kanji spellings and readings | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-077 — Adding a card skips the next ready card | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -1052,3 +1055,30 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Added four original N5 stories, full kana equivalents, kanji/hiragana/katakana display modes, bundled Japanese narration, and current-character karaoke highlighting. Added the Stories tab to the N5 section strip and updated the service-worker cache.
 - **Verification:** All 95 Academy tests pass. Offline standalone build succeeds. Phone preview verified story selection, kana conversion, and active-character highlighting during narration.
 - **Tracker:** SA-079 closed. Total 79; 0 Work in progress; 0 New; 79 Closed; 78 timeline gaps.
+
+### SA-080 — Learning sections do not consistently explain their purpose or next action · 2026-11-21 · v1.5.111
+
+- **Status:** Closed · 100%
+- **Evidence:** Lesson library, each of the seven lesson activities, each of the seven N5 sections, Kana Studio modes, and Kanji Explorer now show concise section-specific instructions. Mobile preview at 390 × 844 confirmed the guidance is visible without displacing the main task.
+- **Fix:** Added compact “What to do” guidance and route descriptions explaining the purpose and next action for each learning area.
+- **Verification:** All 96 Academy tests pass; scripts pass syntax checks; standalone build succeeds; N5 Stories, lesson activity, and Kanji Explorer guidance were verified in a 390 × 844 browser preview.
+
+### SA-081 — Kanji Explorer hides selected-character details below a long grid · 2026-11-21 · v1.5.111
+
+- **Status:** Closed · 100%
+- **Evidence:** At 390 × 844, the selected character, readings, example, study actions, and next control appear before the character picker. The stroke guide and full picker are expandable. Next advances to the following kanji and returns the view to the top; the first Previous control is correctly disabled.
+- **Fix:** Reordered the page around a focused kanji study card, added progress and previous/next controls, exposed example audio, and moved the full grid into a collapsible picker. Stroke order is available on demand.
+- **Verification:** The mobile browser preview and automated integration checks confirm the selected lesson is before the picker and the controls work.
+
+### SA-082 — Lesson tab accessibility hint lists the wrong section count · 2026-11-21 · v1.5.111
+
+- **Status:** Closed · 100%
+- **Evidence:** The lesson activity group now announces seven sections, matching its Vocabulary, Grammar Lab, Conversation, Sentence Builder, Listening, Writing, and Assessment tabs.
+- **Fix:** Corrected the accessible navigation label from six to seven sections and updated its regression assertion.
+- **Verification:** The lesson screen was checked at 390 × 844 and all 96 Academy tests pass.
+
+### v1.5.111 — Section guidance and clearer Kanji Explorer · 2026-11-21
+
+- **Changes:** Added short purpose and next-action guidance across learning routes and their lesson/N5 subsections; moved selected-kanji learning content ahead of the collapsible character picker; corrected the lesson tab count announced to assistive technology.
+- **Verification:** All 96 Academy tests pass. JavaScript syntax checks and standalone build pass. Phone preview verified at 390 × 844.
+- **Tracker:** SA-080, SA-081, and SA-082 closed. Total 82; 0 Work in progress; 0 New; 82 Closed; 81 timeline gaps.

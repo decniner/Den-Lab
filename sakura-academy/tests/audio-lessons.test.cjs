@@ -92,6 +92,14 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
 test('Kanji Explorer displays the bundled stroke-order guide for the selected character', () => {
   const kanjiPage = appSource.slice(appSource.indexOf('function kanjiPage()'), appSource.indexOf('\nfunction ', appSource.indexOf('function kanjiPage()') + 1));
   assert.match(kanjiPage, /strokeOrderSvg\(k\.ch\)/);
+  assert.ok(kanjiPage.indexOf('kanji-study-card') < kanjiPage.indexOf('kanji-picker'), 'selected kanji lesson appears before the character picker');
+  assert.match(kanjiPage, /CHARACTER \$\{kanjiIndex\+1\} OF \$\{KANJI\.length\}/);
+  assert.match(kanjiPage, /Mark studied/);
+  assert.match(kanjiPage, /Next kanji/);
+  assert.match(kanjiPage, /Hear example/);
+  assert.match(kanjiPage, /<details class="kanji-stroke-details"><summary>View correct stroke order/);
+  assert.match(kanjiPage, /kanjiIndex===0\?'disabled'/);
+  assert.match(kanjiPage, /kanjiIndex===KANJI\.length-1\?'disabled'/);
 });
 
 test('flashcards use one Study action and explain that unfamiliar cards return later', () => {
