@@ -5,9 +5,9 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 37
-- Work in progress: 0
+- Work in progress: 1
 - New: 0
-- Closed: 37
+- Closed: 36
 - Timeline gaps: 37
 
 ## Issue register
@@ -50,7 +50,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-034 — Microphone check discards the transcript from a low-confidence result | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-036 — Unreliable sentence microphone controls should be removed | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-037 — Strict lesson checklist items cannot open the next activity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-037 — Strict lesson checklist items cannot open the next activity | Codex | Work in progress | 70% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -606,11 +606,10 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-037 — Strict lesson checklist items cannot open the next activity
 
-- **Status:** Closed (100%)
-- **Evidence:** Checklist rows now route to their activities. Completed rows remain available for review; later incomplete rows are disabled until the previous incomplete activity is completed. Grammar sentence built correctly opens Sentence Builder.
-- **Impact:** Resolved: learners can advance directly from the checklist without scrolling back to the tabs.
-- **Resolution:** Added accessible checklist buttons, sequential availability, activity routes, and smooth scrolling to the activity tabs.
-- **Verification:** Tests cover checklist progression, review availability, all activity routes, scrolling, mobile styles, and standalone output.
+- **Status:** Work in progress (70%)
+- **Evidence:** Mobile verification exposed `ReferenceError: strictChecklistTab is not defined`. `app.js` has a versioned URL, but `lesson-progress.js` was still cached at its unversioned path, leaving the new route helper undefined.
+- **Impact:** Strict-mode progress checks and checklist navigation fail when the browser pairs a new app script with the older cached helper.
+- **Work in progress:** Add a cache-busted URL for the lesson helper in the page, offline cache, and standalone builder; add a regression assertion and retest the mobile checklist.
 - **Fix estimate:** Not recorded.
 
 ### Strict checklist navigation issue intake · 2026-11-21 · v1.5.53
@@ -623,3 +622,9 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-037 closed; 37 issues tracked, all closed.
 - **Update:** Checklist items open the corresponding lesson activity. The next incomplete step is enabled, completed items remain reviewable, and later incomplete activities unlock in sequence. Opening a step scrolls its tabs into view.
 - **Verification:** All 60 Academy tests pass, including checklist sequencing, routes, accessible scrolling, and offline/standalone build checks.
+
+### Cached checklist helper issue intake · 2026-11-21 · v1.5.55
+
+- **Tracker:** SA-037 reopened for a cache-loading regression; 37 issues tracked, 36 closed, 1 in progress.
+- **Evidence:** Live 390px mobile check reproduced an undefined helper because the service worker cached an unversioned lesson-progress script.
+- **Next:** Version that script URL consistently in online/offline/standalone builds and verify strict mode.
