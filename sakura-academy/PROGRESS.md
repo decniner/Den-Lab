@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 83
+- Total tracked: 84
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 83
-- Timeline gaps: 82
+- Timeline gaps: 83
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-084 — Speech controls ignore explicit Japanese readings across N5 content | Codex | New | 0% | 2026-11-21 | Not recorded |
 | SA-083 — Story narration may not follow the displayed kana reading | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-082 — Lesson tab accessibility hint lists the wrong section count | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-081 — Kanji Explorer hides selected-character details below a long grid | Codex | Closed | 100% | 2026-11-21 | Not recorded |
@@ -1104,3 +1105,18 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Kokoro story clips now synthesize from their paired kana readings while keeping the kanji transcript and manifest keys. Rebuilt 12 story clips and updated their offline manifest references.
 - **Verification:** All 97 Academy tests pass; the standalone offline build and footer/cache version alignment pass. All 12 regenerated MP3s decode, and the visible 390 × 844 mobile preview completed the story playback flow.
 - **Tracker:** SA-083 closed. Total 83; 0 Work in progress; 0 New; 83 Closed; 82 timeline gaps.
+
+### SA-084 — Speech controls ignore explicit Japanese readings across N5 content · 2026-11-21
+
+- **Status:** New · 0%
+- **Evidence:** N5 vocabulary playback sends kanji text to speech despite the catalog’s kana reading; Kanji Explorer sends kanji examples to speech; N5 listening prompts contain kanji but have no explicit spoken reading.
+- **Impact:** Browser speech may guess a reading that disagrees with the reading printed for learners.
+- **Resolution:** Pending.
+- **Verification:** Pending.
+- **Fix estimate:** Not recorded.
+
+### v1.5.114 — Broader Japanese pronunciation issue recorded · 2026-11-21
+
+- **Changes:** Registered SA-084 before changing any speech behavior. The active tracker now reports 84 total issues, 1 New, and 83 Closed. Updated the site and offline cache version.
+- **Verification:** Focused tracker and release-shell checks pending.
+- **Tracker:** SA-084 remains New pending the broader reading-aligned speech fixes.
