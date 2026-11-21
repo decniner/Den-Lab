@@ -802,3 +802,11 @@ Every published app change must bump the small footer version and its update dat
 - **Change:** The dashboard counts only valid saved review schedules that are due today or earlier. Flashcards distinguish the 762 available new cards from scheduled reviews.
 - **Verification:** Tests cover no review record, an overdue review, a future review, and malformed date. The fresh mobile dashboard shows 0 Reviews due; the flashcard page says 762 cards ready.
 - **Next audit:** Continue inspecting beginner flow, progress accuracy, mobile controls, accessibility, and offline behavior. Record each new issue before changing its behavior.
+
+
+### Conversation mouth animation refinement · 2026-11-21 · v1.5.85
+
+- **Evidence:** At 390 × 844 during course-conversation playback, the active speaker has a small eased open-close mouth movement while the figure remains still. The inactive speaker stays still; Pause freezes the mouth, and reduced-motion preferences turn the animation off.
+- **Tracker:** Reopened and closed SA-055 after the user reported the original fix remained unnatural. All 56 issues are now Closed.
+- **Change:** Removed full-body bobbing, reduced the mouth opening and slowed its easing, and repaired the reduced-motion CSS rule.
+- **Verification:** Focused conversation and offline shell checks plus the full suite and standalone build passed; phone-sized browser review confirmed the active speaker state and uncluttered character movement.
