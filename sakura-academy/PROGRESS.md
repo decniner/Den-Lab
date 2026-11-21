@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 38
+- Total tracked: 39
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 38
-- Timeline gaps: 38
+- Timeline gaps: 39
 
 ## Issue register
 
@@ -52,6 +52,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-036 — Unreliable sentence microphone controls should be removed | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-037 — Strict lesson checklist items cannot open the next activity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-039 — Daily routine audio pronounces 7 o’clock as ななじ | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -651,3 +652,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-038 closed; 38 issues tracked, all closed.
 - **Changes:** Checklist shortcuts now scroll the document to the lesson’s top after switching activities, avoiding a stale lower scroll position after short content rerenders.
 - **Verification:** 61 Academy tests pass. In mobile browser mode at 390 × 844, Vocabulary marked learned (8/8) → Grammar sentence built correctly opens Sentence Builder with the lesson heading visible and `scrollY = 0`.
+
+### SA-039 — Daily routine audio pronounces 7 o’clock as ななじ
+
+- **Status:** New (0%)
+- **Evidence:** The bundled Kokoro clip for あさ 7じに おきます。 was synthesized from the digit 7 and is heard as nana-ji. Japan Foundation Irodori and MEXT beginner references teach 7時 as しちじ.
+- **Impact:** Learners may copy a less suitable default reading in a beginner time expression.
+- **Cause:** Kokoro’s number normalization chose ななじ for the digit in this sentence.
+- **Next:** Generate this phrase with an explicit kana override for しちじ; keep its on-screen text unchanged.
