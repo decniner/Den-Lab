@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 37
+- Total tracked: 38
 - Work in progress: 0
-- New: 0
+- New: 1
 - Closed: 37
-- Timeline gaps: 37
+- Timeline gaps: 38
 
 ## Issue register
 
@@ -51,6 +51,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-035 — Mobile speech recognition captures audio but returns no Japanese transcript | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-036 — Unreliable sentence microphone controls should be removed | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-037 — Strict lesson checklist items cannot open the next activity | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom | Codex | New | 0% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -635,3 +636,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-037 closed; 37 issues tracked, all closed.
 - **Fix:** Versioned `lesson-progress.js` consistently in the online shell, service-worker precache, and standalone builder so the app and helper refresh together.
 - **Verification:** All 61 Academy tests pass, including explicit online/offline helper URL synchronization and standalone build coverage. Mobile reload verification is next.
+
+### SA-038 — Checklist shortcut leaves the lesson scrolled near the bottom
+
+- **Status:** New (0%)
+- **Evidence:** Reproduced on the hosted mobile page at 390 × 844. After a checklist tap, `window.scrollY` was 1,415px; the sticky tabs were at viewport top while the lesson heading was about 1,285px above it.
+- **Impact:** Learner arrives in the activity but remains visually at the bottom, away from lesson context.
+- **Cause:** The shortcut scrolls a sticky tab bar into view. A shorter re-render clamps the document at its previous lower scroll position; the sticky bar masks that the page is still near the bottom.
+- **Next:** Reset the lesson page to its top after rendering the selected activity, then verify on a phone-sized viewport.
