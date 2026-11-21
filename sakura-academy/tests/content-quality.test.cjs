@@ -79,6 +79,22 @@ test('dialogue replies and answer choices fit each lesson and vary across lesson
   }
 });
 
+test('offline Kokoro audio covers lesson vocabulary, examples, and dialogue sentences', () => {
+  const audio = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
+  const key = text => text.normalize('NFC').replace(/\s+/g, '');
+  const expected = lessons.flatMap(lesson => [
+    lesson.jp,
+    ...lesson.vocab.flatMap(word => [word.jp, word.example]),
+    ...lesson.dialogue.map(line => line.jp),
+  ]);
+  for (const text of expected) {
+    const asset = audio[key(text)];
+    assert.ok(asset?.src, `bundled Japanese speech for ${text}`);
+    assert.equal(asset.pitch.length, 32, `reference pitch contour for ${text}`);
+    assert.ok(fs.statSync(path.join(project, asset.src.replace(/^\.\//, ''))).size > 1000, `audio asset for ${text}`);
+  }
+});
+
 test('validator accepts numeric lesson IDs and rejects malformed lesson data', () => {
   const validLesson = { id: 1, title: 'Valid', description: 'A valid lesson', jp: 'ねこ', en: 'cat', rule: 'noun', explain: 'e', builderEn: 'cat', mistake: 'm', builder: ['ねこ'], vocab: [{ id: '1-0', jp: 'ねこ', en: 'cat', romaji: 'neko', example: 'ねこです。', exampleEn: 'It is a cat.' }], dialogue: [{ who: 'A', jp: 'こんにちは。', en: 'Hello.' }, { who: 'B', jp: 'こんにちは。', en: 'Hello.' }], responseOptions: ['こんにちは。', 'さようなら。', 'ありがとう。'], responseAnswer: 0 };
   assert.deepEqual(validateCourseContent([validLesson], { ねこ: 'Use for a cat.' }), []);

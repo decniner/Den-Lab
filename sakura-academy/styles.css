@@ -6,3 +6,5 @@
 
 .jp-dialogue{font-size:calc(var(--text-scale, 1) * 24px)}.jp-prompt{font-size:calc(var(--text-scale, 1) * 27px)}.practice-model{font-size:calc(var(--text-scale, 1) * 72px);margin:0}.practice-reference-char{font-size:calc(var(--text-scale, 1) * 52px);color:#bd637c}
 @media(max-width:760px){.tabs{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:6px 0}.tabs::-webkit-scrollbar{display:none}.tabs .tab{flex:0 0 auto}}
+
+.speech-toast{position:fixed;top:max(12px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);z-index:200;width:min(540px,calc(100vw - 24px));padding:11px 15px;border-radius:12px;background:var(--indigo);color:white;box-shadow:0 8px 28px #16192b55;font-size:calc(var(--text-scale,1)*14px);text-align:center}

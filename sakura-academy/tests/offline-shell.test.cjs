@@ -57,7 +57,7 @@ test('offline shell precaches the full app and tracker assets', async () => {
     assert.ok(worker.added.includes(file), `precache includes ${file}`);
   }
   const audio = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
-  for (const asset of new Set(Object.values(audio))) assert.ok(worker.added.includes(asset), `precache includes ${asset}`);
+  for (const asset of new Set(Object.values(audio).map(entry => entry.src))) assert.ok(worker.added.includes(asset), `precache includes ${asset}`);
 });
 
 test('worker activation removes only obsolete Sakura cache versions', async () => {
@@ -97,7 +97,7 @@ test('static build copies the favicon into the published Academy project', () =>
     assert.equal(result.status, 0, result.stderr || result.stdout);
     assert.equal(fs.readFileSync(path.join(output, 'sakura-academy', 'favicon.svg'), 'utf8'), fs.readFileSync(path.join(project, 'favicon.svg'), 'utf8'));
     const audio = JSON.parse(fs.readFileSync(path.join(fixtureProject, 'src/speech-audio-manifest.json'), 'utf8'));
-    const sample = Object.values(audio)[0].replace(/^\.\//, '');
+    const sample = Object.values(audio)[0].src.replace(/^\.\//, '');
     assert.equal(fs.readFileSync(path.join(output, 'sakura-academy', sample)).length, fs.readFileSync(path.join(fixtureProject, sample)).length);
     const standalone = fs.readFileSync(path.join(output, 'genki-interactive-academy.html'), 'utf8');
     assert.match(standalone, /data:audio\/mpeg;base64,/);
@@ -124,22 +124,23 @@ test('issue tracker script parses and renders all registered issues', () => {
   const context = { document: { querySelector: selector => nodes[selector] } };
   vm.runInNewContext(script, context);
   assert.equal(nodes['#registerTitle'].textContent, 'Active issues');
-  assert.match(nodes['#rows'].innerHTML, /SA-031[\s\S]*class="pill ">New/);
-  assert.match(nodes['#rows'].innerHTML, /SA-032[\s\S]*class="pill ">New/);
-  assert.equal(nodes['#scope-active'].textContent, 'Active (2)');
+  assert.match(nodes['#rows'].innerHTML, /No open issues/);
+  assert.equal(nodes['#scope-active'].textContent, 'Active (0)');
   assert.equal(nodes['#scope-active']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='archive';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'Issue archive');
   assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-025[\s\S]*class="pill closed">Closed/);
-  assert.equal(nodes['#scope-archive'].textContent, 'Archive (30)');
+  assert.equal(nodes['#scope-archive'].textContent, 'Archive (32)');
   assert.equal(nodes['#scope-archive']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='all';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'All issues');
   assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">32<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">2<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">0<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">30<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">32<\/div>/);
+  assert.match(nodes['#rows'].innerHTML, /SA-031[\s\S]*class="pill closed">Closed/);
+  assert.match(nodes['#rows'].innerHTML, /SA-032[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-007[\s\S]*v1\.5\.29[\s\S]*seven tabs and eight vocabulary cards[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-013/);
   assert.match(nodes['#rows'].innerHTML, /SA-014/);
@@ -159,8 +160,8 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.match(nodes['#rows'].innerHTML, /SA-028[\s\S]*Assessment is unavailable until two words[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-029[\s\S]*Vocabulary examples and Grammar Lab worked examples[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-030[\s\S]*lesson activity bar now stays pinned[\s\S]*class="pill closed">Closed/);
-  assert.match(nodes['#rows'].innerHTML, /SA-031[\s\S]*Lesson Play controls are silent when the browser has no speech engine[\s\S]*class="pill ">New/);
-  assert.match(nodes['#rows'].innerHTML, /SA-032[\s\S]*Lesson sentences have no microphone pronunciation check[\s\S]*class="pill ">New/);
+  assert.match(nodes['#rows'].innerHTML, /SA-031[\s\S]*Lesson Play controls are silent when the browser has no speech engine[\s\S]*class="pill closed">Closed/);
+  assert.match(nodes['#rows'].innerHTML, /SA-032[\s\S]*Lesson sentences have no microphone pronunciation check[\s\S]*class="pill closed">Closed/);
 
   for (const label of ['Total tracked', 'Work in progress', 'New', 'Closed', 'Timeline gaps']) {
     const sourceValue = progressMarkdown.match(new RegExp(`^- ${label}: (\\d+)$`, 'm'))?.[1];

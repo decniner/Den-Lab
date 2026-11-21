@@ -6,8 +6,8 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 32
 - Work in progress: 0
-- New: 2
-- Closed: 30
+- New: 0
+- Closed: 32
 - Timeline gaps: 32
 
 ## Issue register
@@ -44,8 +44,8 @@ Every published app change must bump the small footer version and its update dat
 | SA-028 — Assessment can test lesson vocabulary before it is studied | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-029 — Lesson example sentences lack nearby audio controls | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-030 — Lesson activity tabs disappear while studying long vocabulary lists | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-031 — Lesson Play controls are silent when the browser has no speech engine | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-032 — Lesson sentences have no microphone pronunciation check | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-031 — Lesson Play controls are silent when the browser has no speech engine | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-032 — Lesson sentences have no microphone pronunciation check | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -495,18 +495,26 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-031 — Lesson Play controls are silent when the browser has no speech engine
 
-- **Status:** New (0%)
+- **Status:** Closed (100%)
 - **Evidence:** In the live in-app browser, `window.speechSynthesis` is unavailable. Existing Play controls rely on browser speech and therefore cannot produce Japanese audio in this environment.
 - **Impact:** Learners hear nothing when they press Play for lesson vocabulary and sentences in browsers without built-in speech synthesis.
-- **Resolution:** Pending.
-- **Verification:** Pending.
+- **Resolution:** Added 211 bundled Japanese Kokoro clips and visible playback failure feedback.
+- **Verification:** Offline manifest/content and static build regression checks pass.
 - **Fix estimate:** Not recorded.
 
 ### SA-032 — Lesson sentences have no microphone pronunciation check
 
-- **Status:** New (0%)
-- **Evidence:** Lesson example audio can be played, but no microphone control lets the learner say the sentence and receive feedback on the recognized words or pitch contour.
-- **Impact:** Learners cannot assess spoken sentence accuracy and intonation against the lesson model.
-- **Resolution:** Pending.
-- **Verification:** Pending.
+- **Status:** Closed (100%)
+- **Evidence:** Lesson sentence cards lacked a mic control, transcript match, and pitch comparison against the bundled model audio.
+- **Impact:** Resolved: learners receive a recognized-text match and an approximate pitch-pattern similarity against the lesson model.
+- **Resolution:** Added sentence-level microphone controls, Japanese speech recognition, recognized-text similarity, and an approximate pitch-contour comparison against Kokoro references. This is a practice estimate rather than a clinical or authoritative accent grade; learners are asked to compare with the model audio.
+- **Verification:** 57 tests pass. Mobile browser preview at 390 × 844 shows mic icons beside the main lesson sentence and vocabulary example; actual microphone capture remains browser permission/device dependent.
 - **Fix estimate:** Not recorded.
+
+
+### Sentence audio and microphone practice · 2026-11-21 · v1.5.43
+
+- **Tracker:** SA-031 and SA-032 closed.
+- **Changes:** Bundled 211 Kokoro Japanese clips and 32-point pitch references for offline lesson playback. Added 🎙 sentence practice controls throughout lesson sentences and examples; supported browsers give recognized-text similarity and approximate pitch-pattern similarity, with clear permission and unsupported-browser guidance.
+- **Limitation:** Pitch similarity is an approximate practice cue derived from the recorded voice contour; it is not an authoritative Japanese pitch-accent grade. Learners are prompted to compare against the model audio.
+- **Verification:** 57 tests pass. At 390 × 844, mobile preview confirms lesson and vocabulary mic controls fit within the viewport; native microphone capture requires supported browser APIs and user permission.

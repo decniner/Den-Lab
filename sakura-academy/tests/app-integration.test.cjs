@@ -13,7 +13,7 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/app\.js">/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js"><\/script><script src="src\/app\.js">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -49,4 +49,21 @@ test('lesson activity tabs remain sticky and compact on mobile', () => {
   assert.match(styles, /\.tabs\{[^}]*position:sticky;[^}]*top:0/);
   assert.match(styles, /@media\(max-width:760px\)\{\.tabs\{flex-wrap:nowrap;overflow-x:auto/);
   assert.match(styles, /\.tabs \.tab\{flex:0 0 auto\}/);
+});
+
+test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js"><\/script>/);
+  assert.match(appSource, /SAKURA_AUDIO/);
+  assert.match(appSource, /speech-toast/);
+  assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
+});
+
+test('lesson sentence microphone controls report transcript similarity and capability limits', () => {
+  assert.match(appSource, /function practiceSentence\(text\)/);
+  assert.match(appSource, /window\.SpeechRecognition\|\|window\.webkitSpeechRecognition/);
+  assert.match(appSource, /aria-label="Speak this sentence for feedback"/);
+  assert.match(appSource, /Speech recognition is not available in this browser/);
+  assert.match(appSource, /estimated pitch pattern/);
+  assert.match(appSource, /AudioCtx/);
+  assert.match(appSource, /practiceSentence\('\$\{w\.example\}'\)/);
 });
