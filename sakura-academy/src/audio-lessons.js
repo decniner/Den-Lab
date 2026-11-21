@@ -19,3 +19,13 @@ function lessonAudioSpeaker(item) {
 }
 
 Object.assign(globalThis, { buildLessonAudioQueue, lessonAudioSpeaker });
+
+// Keep dialogue practice focused and preserve the original complete lesson playlist.
+function buildLessonConversationQueue(lesson) {
+  if (!lesson) return [];
+  return (lesson.dialogue || [])
+    .filter(line => line.jp && line.en)
+    .map(line => ({ section: `Conversation · Speaker ${line.who}`, jp: line.jp, en: line.en }));
+}
+
+Object.assign(globalThis, { buildLessonConversationQueue });

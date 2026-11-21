@@ -51,7 +51,7 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(appSource, /function restartAudioLesson\(\)/);
   assert.match(appSource, /Audio lessons/);
   assert.match(appSource, /audioLessonStatus/);
-  assert.match(appSource, /role="progressbar" aria-label="Audio lesson progress"/);
+  assert.match(appSource, /role="progressbar" aria-label="\$\{conversation\?'Conversation':'Audio lesson'\} progress"/);
   assert.match(appSource, /if\(view==='audio'&&v!=='audio'\)/);
   assert.match(appSource, /audio-dialogue-scene/);
   assert.match(appSource, /audioSpeaker'\+role/);
@@ -61,6 +61,30 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(stylesSource, /audio-dialogue-person\.is-speaking/);
   assert.match(stylesSource, /prefers-reduced-motion:reduce/);
   const audioScreen = appSource.slice(appSource.indexOf('function audioLessons()'), appSource.indexOf('\n', appSource.indexOf('function audioLessons()')));
-  assert.ok(audioScreen.indexOf('class="audio-controls"') < audioScreen.indexOf('audioDialogueScene(l)'), 'mobile playback controls should appear before the conversation and transcript');
+  assert.ok(audioScreen.indexOf('class="audio-mode-switch"') < audioScreen.indexOf('audioDialogueScene(l)'), 'conversation mode should be selected before its speaker scene');
   assert.doesNotMatch(stylesSource, /\.audio-controls\{position:sticky/);
+});
+
+test('conversation queue contains only speaker dialogue in lesson order', () => {
+  const sandbox = {};
+  sandbox.globalThis = sandbox;
+  vm.runInNewContext(helperSource, sandbox);
+  const queue = sandbox.buildLessonConversationQueue(lessons[0]);
+  assert.equal(queue.length, lessons[0].dialogue.length);
+  assert.ok(queue.every(item => item.section.startsWith('Conversation · Speaker ')));
+  assert.deepEqual(JSON.parse(JSON.stringify(queue[0])), {
+    section: `Conversation · Speaker ${lessons[0].dialogue[0].who}`,
+    jp: lessons[0].dialogue[0].jp,
+    en: lessons[0].dialogue[0].en,
+  });
+});
+
+test('audio screen separates conversation and full lesson modes with focused practice controls', () => {
+  assert.match(appSource, /setAudioMode\('conversation'\)/);
+  assert.match(appSource, /setAudioMode\('full'\)/);
+  assert.match(appSource, /replayAudioLine\(\)/);
+  assert.match(appSource, /audioEchoEnabled/);
+  assert.match(appSource, /audioSlowPlayback/);
+  assert.match(appSource, /audioShowContext/);
+  assert.match(stylesSource, /audio-mode-switch/);
 });

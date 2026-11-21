@@ -6,9 +6,9 @@ Every published app change must bump the small footer version and its update dat
 
 - Total tracked: 46
 - Work in progress: 0
-- New: 2
-- Closed: 44
-- Timeline gaps: 46
+- New: 0
+- Closed: 46
+- Timeline gaps: 45
 
 ## Issue register
 
@@ -58,8 +58,8 @@ Every published app change must bump the small footer version and its update dat
 | SA-042 — Unversioned stylesheet can keep stale mobile styles after release | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-043 — Audio lessons show conversation as plain text without speaker visuals | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-044 — Sticky audio controls cover the current translation on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
-| SA-045 — Audio lesson does not separate conversation practice from the full playlist | Codex | New | 0% | 2026-11-21 | Not recorded |
-| SA-046 — Missing audio and lesson progress helpers crash browser navigation | Codex | New | 0% | 2026-11-21 | Not recorded |
+| SA-045 — Audio lesson does not separate conversation practice from the full playlist | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-046 — Missing audio and lesson progress helpers crash browser navigation | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -704,3 +704,18 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-044 closed; 44 issues tracked, all closed. It was published as New in v1.5.68 before implementation.
 - **Changes:** Moved playback controls above the conversation scene and transcript. Removed sticky positioning that covered the translated line on small screens.
 - **Verification:** 67 Academy tests pass. On a 390 × 844 mobile view, the playback controls, two speakers, current Japanese/English, and progress fit without horizontal overflow or overlay. Standalone build and diff check pass.
+
+
+### SA-045 — Focused conversation practice · 2026-11-21 · v1.5.72
+
+- **Status:** Closed (100%).
+- **Change:** Added separate Conversation practice and Full lesson modes. Conversation mode contains dialogue only, with line replay, conversation replay, optional echo repeats, slower playback, and a listening tip. Full lesson mode retains the original lesson, vocabulary, examples, and dialogue queue.
+- **Validation:** 69 automated checks pass; verified both modes and the compact 390 × 844 mobile layout.
+- **Tracker:** SA-045 closed.
+
+### SA-046 — Runtime helper availability · 2026-11-21 · v1.5.72
+
+- **Status:** Closed (100%).
+- **Change:** Added small app-level fallback implementations for checklist navigation/status and audio queue/speaker helpers, plus grammar progress sanitization, so the core screens can render even when an external helper script does not expose its API at runtime.
+- **Validation:** Verified dashboard and audio mode navigation in the mobile browser; no console errors remained.
+- **Tracker:** SA-046 closed; 46 issues tracked, all closed.
