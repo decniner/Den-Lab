@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 57
+- Total tracked: 58
 - Work in progress: 0
 - New: 0
-- Closed: 57
-- Timeline gaps: 56
+- Closed: 58
+- Timeline gaps: 57
 
 ## Issue register
 
@@ -71,6 +71,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-055 — Conversation mouth animation looks unnatural | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-056 — Fresh accounts show unseen vocabulary as reviews due | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-057 — Lesson activity tabs are clipped and hidden on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-058 — Decorative swipe cue is exposed to assistive technology | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -819,3 +820,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-057 closed after mobile visual review and navigation regression coverage. Total 57; 0 New; 57 Closed; 56 timeline gaps remain because fix durations were not measured.
 - **Change:** Added a swipe instruction, a two-way visual cue, and automatic horizontal reveal of the active lesson section; reduced-motion settings use immediate movement.
 - **Verification:** Lesson navigation and accessibility integration checks, all Academy tests, standalone build, version/cache alignment, and mobile browser review passed.
+
+
+### Swipe-cue accessibility refinement · 2026-11-21 · v1.5.87
+
+- **Evidence:** At 390 × 844 the visual ↔ cue remains visible, while the accessibility tree contains the lesson-section swipe instruction and no cue text. The cue is now an aria-hidden span; the integration test verifies that markup.
+- **Tracker:** SA-058 closed after mobile tree and visual verification. Total 58; 0 New; 58 Closed; 57 timeline gaps remain because fix durations were not measured.
+- **Change:** Moved the arrow from generated CSS content to an aria-hidden visual element; retained the scroll cue and accessible group instruction.
+- **Verification:** Full Academy tests, standalone build, version/cache alignment, and phone-sized browser review passed.
