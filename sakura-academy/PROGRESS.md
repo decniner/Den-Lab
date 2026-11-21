@@ -4,11 +4,11 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 59
+- Total tracked: 60
 - Work in progress: 0
 - New: 0
-- Closed: 59
-- Timeline gaps: 58
+- Closed: 60
+- Timeline gaps: 59
 
 ## Issue register
 
@@ -73,6 +73,7 @@ Every published app change must bump the small footer version and its update dat
 | SA-057 — Lesson activity tabs are clipped and hidden on mobile | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-058 — Decorative swipe cue is exposed to assistive technology | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 | SA-059 — Long conversation lines are clipped in mobile speaker bubbles | Codex | Closed | 100% | 2026-11-21 | Not recorded |
+| SA-060 — Mobile handwriting stroke guide is squeezed beside the canvas | Codex | Closed | 100% | 2026-11-21 | Not recorded |
 
 ### SA-013 — Published issue tracker script fails to parse
 
@@ -851,3 +852,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-059 recorded before implementation and closed after the 390 × 844 visual check. Total 59; 0 New; 59 Closed; 58 timeline gaps because fix durations were not measured.
 - **Change:** Removed the two-line clamp, hidden overflow, and fixed mobile bubble heights; the bubbles now grow to show complete Japanese dialogue turns.
 - **Verification:** The Lesson 1 Speaker B line displays in full with no ellipsis at 390 × 844. The speaker scene remains within the mobile viewport. Full suite, standalone build, offline version alignment, and `git diff --check` are checked for v1.5.89.
+
+
+### SA-060 — Phone handwriting guide is squeezed by a side-by-side layout · 2026-11-21
+
+- **Evidence:** At 390 × 844, the stroke guide occupies the narrow 0.86fr column while the blank canvas gets 1.14fr. The guide title wraps and the replay/step controls crowd together.
+- **Tracker:** SA-060 recorded before implementation and closed after 390 × 844 visual review. Total 60; 0 New; 60 Closed; 59 timeline gaps because fix durations were not measured.
+- **Change:** Stacked the stroke guide above the drawing canvas on screens up to 760px, allowed its controls to wrap, and sized the reference diagram to 190px so the full diagram stays on screen.
+- **Verification:** At 390 × 844 the guide is full-width, its controls fit, and the numbered diagram is fully visible above fixed navigation. All Academy tests, build output, and cache/version alignment are checked for v1.5.91.

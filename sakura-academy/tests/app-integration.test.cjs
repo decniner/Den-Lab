@@ -14,8 +14,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.89"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.89"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.89"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.89"><\/script><script src="src\/app\.js\?v=1\.5\.89">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.91"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.91"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.91"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.91"><\/script><script src="src\/app\.js\?v=1\.5\.91">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -77,7 +77,7 @@ test('checklist navigation scrolls a selected offscreen lesson tab into view', (
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.89"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.91"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -92,7 +92,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.89"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.91"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -108,6 +108,10 @@ test('handwriting stroke order automatically plays for every newly rendered char
   assert.match(appSource, /if\(view==='handwriting'\)\{setupPracticeCanvas\(\);strokeStep=0;stopStrokeGuide\(\);playStrokeOrder\(\)\}/);
   assert.match(appSource, /aria-label="Replay correct stroke order" onclick="playStrokeOrder\(\)">↺ Replay order/);
   assert.match(appSource, /function playStrokeOrder\(\)[\s\S]*?setInterval\(\(\)=>/);
+});
+
+test('mobile handwriting stacks readable stroke guide above a usable canvas', () => {
+  assert.match(styles, /@media\(max-width:760px\)\{\.practice-workspace\{grid-template-columns:minmax\(0,1fr\)\}\.stroke-card \.row\{flex-wrap:wrap\}\.stroke-card #strokeGuide svg\{width:190px!important;max-width:190px!important;display:block;margin:0 auto\}\.practice-workspace #practiceDraw\{height:clamp\(230px,34vh,300px\)!important\}\}/);
 });
 
 test('dashboard counts only actual scheduled reviews, not unseen cards', () => {
