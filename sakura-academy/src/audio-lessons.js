@@ -37,6 +37,18 @@ function buildCourseConversationQueue(lessons, startLessonId=1) {
 }
 Object.assign(globalThis, { buildLessonConversationQueue, buildCourseConversationQueue });
 
+function audioMouthLevel(samples) {
+  if (!samples?.length) return 0;
+  let sum = 0;
+  for (const sample of samples) {
+    const centered = (sample - 128) / 128;
+    sum += centered * centered;
+  }
+  const rms = Math.sqrt(sum / samples.length);
+  return Math.max(0, Math.min(1, (rms - 0.012) * 9));
+}
+Object.assign(globalThis, { audioMouthLevel });
+
 function audioKanaToRomaji(text) {
   const basic = 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ';
   const sounds = 'a i u e o ka ki ku ke ko sa shi su se so ta chi tsu te to na ni nu ne no ha hi fu he ho ma mi mu me mo ya yu yo ra ri ru re ro wa o n ga gi gu ge go za ji zu ze zo da ji zu de do ba bi bu be bo pa pi pu pe po'.split(' ');

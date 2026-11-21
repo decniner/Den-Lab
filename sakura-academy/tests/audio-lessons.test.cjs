@@ -65,11 +65,14 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(stylesSource, /audio-dialogue-bubble\{display:block;[^}]*overflow:visible/);
   assert.doesNotMatch(stylesSource, /audio-dialogue-bubble\{[^}]*-webkit-line-clamp|audio-dialogue-bubble\{[^}]*overflow:hidden/);
   assert.match(stylesSource, /audio-dialogue-person-a\{color:#b86680\}\.audio-dialogue-person-b\{color:#414a79\}/);
-  assert.match(stylesSource, /audio-dialogue-person\.is-speaking \.mouth-open\{opacity:1;animation:sakura-talk-mouth 1\.6s ease-in-out infinite\}/);
+  assert.match(appSource, /getByteTimeDomainData/);
+  assert.match(appSource, /audioMouthLevel/);
+  assert.match(stylesSource, /audio-dialogue-person\.mouth-active \.mouth-open\{opacity:1\}/);
+  assert.doesNotMatch(stylesSource, /sakura-talk-mouth|audio-dialogue-person\.is-speaking \.mouth-open\{[^}]*animation/);
   assert.doesNotMatch(stylesSource, /sakura-talk-bob|audio-dialogue-person\.is-speaking \.audio-stick-figure\{animation/);
-  assert.match(stylesSource, /@keyframes sakura-talk-mouth\{0%,9%,23%,34%,49%,76%,89%,100%\{transform:scaleY\(\.2\)\}15%,18%\{transform:scaleY\(\.42\)\}39%,44%\{transform:scaleY\(\.68\)\}81%,85%\{transform:scaleY\(\.35\)\}\}/);
-  assert.match(stylesSource, /@media\(prefers-reduced-motion:reduce\)\{\.audio-dialogue-person\.is-speaking \.mouth-open\{animation:none;transform:scaleY\(\.2\)\}\}/);
-  assert.match(appSource, /mouth-open[^>]*rx=\"2\.4\" ry=\"1\.4\"/);
+  assert.match(stylesSource, /mouth-open\{[^}]*transform:scaleY\(var\(--mouth-open/);
+  assert.match(appSource, /mouth-open[^>]*rx=\"4\" ry=\"3\"/);
+  assert.match(appSource, /prefers-reduced-motion/);
   assert.match(stylesSource, /prefers-reduced-motion:reduce/);
   assert.doesNotMatch(stylesSource, /audio-voice-bars/);
   assert.doesNotMatch(appSource, /audio-voice-bars/);
@@ -153,4 +156,14 @@ test('Kana masterclass uses one top row for Hiragana, Katakana, and Challenge ta
   for (const name of ['Hiragana', 'Katakana', 'Challenge']) assert.match(kanaPage, new RegExp(`'${name}'`));
   assert.ok(kanaPage.includes("kanaTab==='Challenge'?`<section class=\"card kana-challenge"));
   assert.ok(kanaPage.includes(':`<div class=\"row kana-filters\"'));
+});
+
+test('audio mouth movement follows clip amplitude and ignores silence', () => {
+  const sandbox = {};
+  sandbox.globalThis = sandbox;
+  vm.runInNewContext(helperSource, sandbox);
+  assert.equal(sandbox.audioMouthLevel(new Uint8Array(32).fill(128)), 0);
+  assert.equal(sandbox.audioMouthLevel(new Uint8Array(32).fill(127)), 0);
+  assert.ok(sandbox.audioMouthLevel(Uint8Array.from({ length: 32 }, (_, i) => i % 2 ? 104 : 152)) > 0.8);
+  assert.ok(sandbox.audioMouthLevel(Uint8Array.from({ length: 32 }, (_, i) => i % 2 ? 120 : 136)) < sandbox.audioMouthLevel(Uint8Array.from({ length: 32 }, (_, i) => i % 2 ? 104 : 152)));
 });

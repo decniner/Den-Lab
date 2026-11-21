@@ -869,3 +869,11 @@ Every published app change must bump the small footer version and its update dat
 - **Tracker:** SA-061 recorded before implementation and closed after the 390 × 844 mobile check. Total 61; 0 New; 61 Closed; 60 timeline gaps because fix durations were not measured.
 - **Change:** Moved the decorative swipe cue below the lesson tab strip into its own right-aligned line; it remains hidden from assistive technology.
 - **Verification:** On the phone-sized preview, the Conversation tab is no longer overlapped, the ↔ cue remains visible below it, and the screen-reader group instruction is unchanged. All Academy tests, standalone build, offline cache/version alignment, and `git diff --check` are checked for v1.5.92.
+
+
+### SA-055 follow-up — audio-synced speaker mouth · 2026-11-21 · v1.5.93
+
+- **Evidence:** Reopened the prior mouth-motion fix after the phone preview still looked unnatural: a fixed 1.6-second animation moved through quiet moments, and the opening was too small to read.
+- **Tracker:** SA-055 was reopened at 65% before changes and closed after mobile preview verification. The tracker still has 61 issues, 0 active, and 60 timeline gaps; the original issue record remains in the archive.
+- **Change:** Replaced timer-based motion with an audio analyser that follows the bundled clip’s live amplitude. Enlarged the mouth and leaves both speakers at rest during silence, pause, and reduced-motion preference.
+- **Verification:** At 390 × 844, Speaker B opens while his bundled line plays and Speaker A stays still; pausing returns both faces to their closed-mouth smile. Added amplitude tests for silence, weak signal, and stronger sound. All 79 Academy tests pass; the static build and offline cache/version alignment are checked at v1.5.93.
