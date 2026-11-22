@@ -16,8 +16,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.126"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.126"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.126"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.126"><\/script><script src="src\/app\.js\?v=1\.5\.126">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.129"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.129"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.129"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.129"><\/script><script src="src\/app\.js\?v=1\.5\.129">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -111,7 +111,7 @@ test('starting a kana recognition question scrolls its prompt into view', () => 
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.126"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.129"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -126,7 +126,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.126"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.129"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -260,4 +260,24 @@ test('N5 vocabulary has a one-card study flow, spoken sentence, and compact brow
   assert.match(appSource, /n5Study:\{\}/);
   assert.match(styles, /n5-vocabulary-study/);
   assert.match(styles, /data-focus-view="n5"\] #content:has\(\.n5-vocabulary-study\)/);
+});
+
+test('N5 vocabulary sentence audio uses the shared scoped character highlighter', () => {
+  assert.match(n5AppSource, /function n5PlayVocabularyExample\(index\).*speak\(example\.ja,\{displayText:example\.ja\}\)/);
+  assert.match(appSource, /activeElement\?\.closest\('\.n5-vocabulary-card,[^']*'\)/);
+  assert.match(appSource, /span\.classList\.toggle\('spoken'/);
+  assert.match(styles, /\.jp-character\.spoken\{[^}]*background:#ffe6a1/);
+});
+
+test('spoken N5 sentence highlights start at speech onset and progress when boundaries are missing', () => {
+  assert.match(appSource, /u\.onstart=\(\)=>\{[^}]*updateJapaneseHighlight\(highlightText,0\)[^}]*startJapaneseHighlightFallback/);
+  assert.match(appSource, /function startJapaneseHighlightFallback/);
+  assert.match(appSource, /speechBoundarySeen=true/);
+  assert.match(appSource, /speechHighlightTimer/);
+});
+
+test('N5 vocabulary study provides a previous-word action with disabled first-item state', () => {
+  assert.match(n5AppSource, /function n5PreviousVocabulary/);
+  assert.match(n5AppSource, /n5-vocabulary-previous/);
+  assert.match(n5AppSource, /n5VocabularyHistory/);
 });

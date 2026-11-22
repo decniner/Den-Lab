@@ -4,16 +4,19 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 93
+- Total tracked: 96
 - Work in progress: 0
 - New: 0
-- Closed: 93
-- Timeline gaps: 82
+- Closed: 96
+- Timeline gaps: 85
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-096 — N5 vocabulary action buttons use long inconsistent labels | Codex | Closed | 100% | 2026-11-22 | Not recorded |
+| SA-095 — N5 vocabulary study cannot move back one word | Codex | Closed | 100% | 2026-11-22 | Not recorded |
+| SA-094 — N5 example sentence does not visibly follow its spoken audio | Codex | Closed | 100% | 2026-11-22 | Not recorded |
 | SA-093 — N5 vocabulary study requires excessive mobile scrolling | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-092 — Kanji Explorer hides readings for compound examples | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-091 — Focus mode is unavailable across most learning activities | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
@@ -1249,8 +1252,32 @@ Every published app change must bump the small footer version and its update dat
 - **Fix:** Provide a one-word Study view with word and sentence audio, Add to Study / Next actions, and a separate compact searchable Browse view.
 - **Verification:** All 115 automated tests pass. At 390 × 844, Focus mode shows the word, revealed reading and meaning, spoken example sentence, and both actions without page scrolling. Browse uses compact searchable rows. All 674 vocabulary entries resolve to a sentence and audio action.
 
-### Release v1.5.126 — 2026-11-22
+### Release v1.5.129 — 2026-11-22
 
-- **Changes:** N5 Vocabulary now opens in a one-word Study flow with word audio, revealed reading and meaning, a spoken example sentence, Add to Study, and learned Next actions. Searchable Browse is separate and uses compact rows. Example sentences are supplied for all 674 entries.
-- **Verification:** All 115 automated tests pass. 390 × 844 mobile preview confirms the active study and spoken sentence fit within Focus mode without scrolling.
-- **Tracker:** SA-093 closed. Total 93; 0 Work in progress; 0 New; 93 Closed; 82 timeline gaps.
+- **Changes:** N5 Vocabulary now opens in a one-word Study flow with short, consistent Study, Previous, Add to Study, Next, Hear, and Reveal controls. Accessible names preserve action detail. Sentence highlighting and Previous navigation are included.
+- **Verification:** All 118 automated tests pass. The 390 × 844 mobile preview confirms concise controls and a compact one-card Study view.
+- **Tracker:** SA-094, SA-095, and SA-096 closed. Total 96; 0 Work in progress; 0 New; 96 Closed; 85 timeline gaps.
+
+### SA-094 — N5 example sentence does not visibly follow its spoken audio · 2026-11-22
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Sentence audio is available on N5 vocabulary cards; playback needs an explicit card-scoped character highlight so learners can follow the spoken text.
+- **Impact:** Learners miss the visual pronunciation cue during sentence listening practice.
+- **Fix:** Include the N5 vocabulary study card in the shared spoken-text highlighter scope and verify the synchronized character state.
+- **Verification:** 34 focused tests pass; 390 × 844 mobile preview shows the current sentence character highlighted during playback.
+
+### SA-095 — N5 vocabulary study cannot move back one word · 2026-11-22
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Study advances on Add to Study or I know this; no control returns to the prior word.
+- **Impact:** Learners cannot correct an accidental advance without leaving the study flow.
+- **Fix:** Add an accessible Previous control that returns to the last word without altering progress.
+- **Verification:** Focused vocabulary tests pass; Previous returns to the prior card without changing learned or saved status.
+
+### SA-096 — N5 vocabulary action buttons use long inconsistent labels · 2026-11-22
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** N5 actions are longer than the established Add to Study and Next labels in Flashcards and Kanji.
+- **Impact:** Labels wrap on mobile and make shared actions feel inconsistent.
+- **Fix:** Adopt concise shared labels for Study, Next, Back, and audio actions while retaining descriptive accessible names.
+- **Verification:** Focused tests pass and a mobile preview confirms the short labels fit the vocabulary study controls.

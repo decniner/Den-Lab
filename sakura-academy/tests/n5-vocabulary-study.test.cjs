@@ -26,8 +26,12 @@ test('N5 vocabulary defaults to a single compact study card with spoken sentence
   assert.match(html, /Study/);
   assert.match(html, /Browse/);
   assert.match(html, /n5AddVocabularyToStudy/);
-  assert.match(html, /Show reading & meaning/);
-  assert.doesNotMatch(html, /Previous<\/button>/);
+  assert.match(html, />Reveal</);
+  assert.match(html, />▶ Hear</);
+  assert.match(html, />＋ Add to Study</);
+  assert.match(html, />Next →</);
+  assert.doesNotMatch(html, /Add to Study · Next|I know this · Next|>▶ Hear word</);
+  assert.match(html, /n5-vocabulary-previous[^>]*disabled/);
   assert.doesNotMatch(html, /n5-example/);
 });
 
@@ -35,9 +39,9 @@ test('N5 vocabulary browsing is separate and searchable without rendering full s
   evaluate("n5VocabularyMode='browse'; n5BrowseFilter='all'");
   const html = evaluate('n5VocabularyList()');
   assert.match(html, /Search word, reading, or meaning/);
-  assert.match(html, /Study this word/);
+  assert.match(html, />Study</);
   assert.match(html, /n5-vocabulary-row/);
-  assert.doesNotMatch(html, /Hear example sentence/);
+  assert.doesNotMatch(html, /▶ Sentence/);
 });
 
 test('N5 vocabulary Next marks the current word learned; Add to Study saves it without marking learned', () => {
@@ -52,6 +56,10 @@ test('N5 vocabulary Next marks the current word learned; Add to Study saves it w
   evaluate('n5NextVocabulary()');
   assert.equal(evaluate(`state.learned['n5-${nextId}']`), true);
   assert.ok(evaluate('n5VocabularyIndex') > afterSave);
+  evaluate('n5PreviousVocabulary()');
+  assert.equal(evaluate('n5VocabularyIndex'), afterSave);
+  assert.equal(evaluate(`state.learned['n5-${nextId}']`), true);
+  assert.match(evaluate('n5VocabularyList()'), /n5-vocabulary-previous[^>]*>← Previous/);
 });
 
 test('saved vocabulary is queued for later and skipped in the new-word queue after reload', () => {

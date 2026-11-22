@@ -68,3 +68,4 @@ body[data-focus-mode="true"][data-focus-view="n5"] .n5-vocabulary-card{flex:1 1 
 body[data-focus-mode="true"][data-focus-view="n5"] .n5-vocabulary-word{font-size:clamp(50px,13vw,76px)}
 body[data-focus-mode="true"][data-focus-view="n5"] .n5-vocabulary-actions{flex:0 0 auto;position:static;padding:8px 0 calc(4px + env(safe-area-inset-bottom))}
 @media(max-width:560px){.n5-vocabulary-switch{gap:6px}.n5-vocabulary-switch .pill{margin-left:auto}.n5-vocabulary-card{min-height:320px}.n5-vocabulary-row{padding:8px 9px}.n5-vocabulary-row-text{gap:8px}.n5-vocabulary-row-text .jp{font-size:21px}.n5-vocabulary-row .btn{padding:8px 9px}}
+.n5-vocabulary-progress{align-items:center}.n5-vocabulary-progress-labels{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap;text-align:right}.n5-vocabulary-previous{min-height:40px;white-space:nowrap}
