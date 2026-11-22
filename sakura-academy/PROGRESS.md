@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 91
+- Total tracked: 92
 - Work in progress: 0
 - New: 0
-- Closed: 91
+- Closed: 92
 - Timeline gaps: 82
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-092 — Kanji Explorer hides readings for compound examples | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-091 — Focus mode is unavailable across most learning activities | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-090 — Lesson activity and navigation compete for mobile screen space | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-089 — Repeated section descriptions use mobile screen space | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
@@ -1224,3 +1225,17 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Extended Focus mode across all active study routes with a shared sticky control, full-screen layout, independently scrolling activity content, and a clear Exit focus action.
 - **Verification:** All 108 automated tests pass. Static build and offline shell validation pass. Live deployment is being prepared.
 - **Tracker:** SA-091 closed. Total 91; 0 Work in progress; 0 New; 91 Closed; 82 timeline gaps.
+
+### SA-092 — Kanji Explorer hides readings for compound examples · 2026-11-22
+
+- **Status:** Closed · 100%
+- **Evidence:** The 日 card selects 明日 as its first matching vocabulary example, which is read あした, but shows only the kanji spelling.
+- **Impact:** Learners may mistake a compound example reading for the standalone kanji reading.
+- **Plan:** Display the example kana alongside the example word and announce it in the audio button label.
+- **Verification:** All 109 automated tests pass. At 390 × 844, the 日 card visibly shows “Example: 明日 (あした)” and its hear button announces “Hear example 明日 (あした)”. The displayed kanji readings remain 日’s own readings.
+
+### Release v1.5.123 — 2026-11-22
+
+- **Changes:** Kanji Explorer now shows each compound example’s kana reading and exposes it in the audio control’s accessible name.
+- **Verification:** All 109 automated tests pass. Mobile visual check confirms the 日 card shows “Example: 明日 (あした)” and the audio button announces both the compound and reading.
+- **Tracker:** SA-092 closed. Total 92; 0 Work in progress; 0 New; 92 Closed; 82 timeline gaps.

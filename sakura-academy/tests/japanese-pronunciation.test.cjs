@@ -47,6 +47,15 @@ test('Kanji Explorer examples expose and use an explicit reading', () => {
   assert.match(appSource, /speak\(\x27\$\{k\.example\}\x27,\{reading:\x27\$\{k\.exampleReading/);
 });
 
+test('Kanji Explorer shows the reading of compound examples beside the kanji', () => {
+  const { explorer } = loadCourse();
+  const sun = explorer.find(entry => entry.ch === '日');
+  assert.equal(sun.example, '明日');
+  assert.equal(sun.exampleReading, 'あした');
+  assert.match(appSource, /k\.exampleReading&&k\.exampleReading!==k\.example/);
+  assert.match(appSource, /Hear example \$\{esc\(k\.example\)\} \(\$\{esc\(k\.exampleReading\)\}\)/);
+});
+
 test('every N5 listening prompt has a paired kana reading and bundled audio', () => {
   const { listening } = loadCourse();
   assert.equal(listening.length, 16);
