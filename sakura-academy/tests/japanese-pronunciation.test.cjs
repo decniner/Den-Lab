@@ -34,7 +34,7 @@ test('all N5 vocabulary playback uses the catalog kana reading and bundled clip'
     assert.equal(path.basename(asset.src), expected, `audio uses the explicit reading for ${word.word}`);
     assert.ok(fs.statSync(path.join(project, asset.src.replace(/^\.\//, ''))).size > 1000, `audio clip for ${word.word}`);
   }
-  assert.match(n5AppSource, /speak\(\x27\$\{w\.word\}\x27,\{reading:\x27\$\{w\.reading/);
+  assert.match(n5AppSource, /function n5PlayVocabularyWord\(index\)\{let w=N5_VOCAB\[index\];if\(w\)speak\(w\.word,\{reading:w\.reading,displayText:w\.word\}\)\}/);
 });
 
 test('Kanji Explorer examples expose and use an explicit reading', () => {

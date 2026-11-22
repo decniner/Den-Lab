@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 92
+- Total tracked: 93
 - Work in progress: 0
 - New: 0
-- Closed: 92
+- Closed: 93
 - Timeline gaps: 82
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-093 — N5 vocabulary study requires excessive mobile scrolling | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-092 — Kanji Explorer hides readings for compound examples | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-091 — Focus mode is unavailable across most learning activities | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-090 — Lesson activity and navigation compete for mobile screen space | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
@@ -1239,3 +1240,17 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Kanji Explorer now shows each compound example’s kana reading and exposes it in the audio control’s accessible name.
 - **Verification:** All 109 automated tests pass. Mobile visual check confirms the 日 card shows “Example: 明日 (あした)” and the audio button announces both the compound and reading.
 - **Tracker:** SA-092 closed. Total 92; 0 Work in progress; 0 New; 92 Closed; 82 timeline gaps.
+
+### SA-093 — N5 vocabulary study requires excessive mobile scrolling · 2026-11-22
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** N5 Vocabulary renders 24 full cards at once; Focus mode hides page chrome but does not reduce the list.
+- **Impact:** Learners scroll through unrelated words to study one entry or hear a complete spoken sentence.
+- **Fix:** Provide a one-word Study view with word and sentence audio, Add to Study / Next actions, and a separate compact searchable Browse view.
+- **Verification:** All 115 automated tests pass. At 390 × 844, Focus mode shows the word, revealed reading and meaning, spoken example sentence, and both actions without page scrolling. Browse uses compact searchable rows. All 674 vocabulary entries resolve to a sentence and audio action.
+
+### Release v1.5.126 — 2026-11-22
+
+- **Changes:** N5 Vocabulary now opens in a one-word Study flow with word audio, revealed reading and meaning, a spoken example sentence, Add to Study, and learned Next actions. Searchable Browse is separate and uses compact rows. Example sentences are supplied for all 674 entries.
+- **Verification:** All 115 automated tests pass. 390 × 844 mobile preview confirms the active study and spoken sentence fit within Focus mode without scrolling.
+- **Tracker:** SA-093 closed. Total 93; 0 Work in progress; 0 New; 93 Closed; 82 timeline gaps.
