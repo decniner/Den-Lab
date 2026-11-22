@@ -8,6 +8,7 @@ const project = path.resolve(__dirname, '..');
 const appSource = fs.readFileSync(path.join(project, 'src', 'app.js'), 'utf8');
 const progressSource = fs.readFileSync(path.join(project, 'src', 'lesson-progress.js'), 'utf8');
 const n5Source = fs.readFileSync(path.join(project, 'src', 'n5-app.js'), 'utf8');
+const n5AppSource = fs.readFileSync(path.join(project, 'src', 'n5-app.js'), 'utf8');
 const indexHtml = fs.readFileSync(path.join(project, 'index.html'), 'utf8');
 const styles = fs.readFileSync(path.join(project, 'styles.css'), 'utf8');
 
@@ -15,8 +16,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.120"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.120"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.120"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.120"><\/script><script src="src\/app\.js\?v=1\.5\.120">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.122"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.122"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.122"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.122"><\/script><script src="src\/app\.js\?v=1\.5\.122">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -110,7 +111,7 @@ test('starting a kana recognition question scrolls its prompt into view', () => 
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.120"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.122"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -125,7 +126,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.120"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.122"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -221,6 +222,15 @@ test('lesson Focus mode keeps activity tabs pinned and hides surrounding app chr
   assert.match(styles, /body\[data-focus-mode="true"\] \.lesson-overview/);
   assert.match(styles, /body\[data-focus-mode="true"\] \.lesson-tabbar/);
   assert.match(styles, /body\[data-focus-mode="true"\] \.lesson-activity/);
+});
+
+test('Focus mode is available on every study and learning route', () => {
+  assert.match(appSource, /const FOCUS_ROUTES=\['lesson','audio','kana','handwriting','kanji','n5','flashcards'\]/);
+  assert.match(appSource, /function focusToolbar\(/);
+  assert.match(appSource, /focusMode&&FOCUS_ROUTES\.includes\(view\)/);
+  for (const route of ['kana', 'handwriting', 'kanji', 'flashcards', 'audio', 'n5']) assert.ok(appSource.includes(`${route}:`));
+  assert.match(n5AppSource, /function n5Page\(/);
+  assert.match(styles, /body\[data-focus-mode="true"\] #content/);
 });
 
 test('learning screens omit the space-consuming caveat paragraphs', () => {

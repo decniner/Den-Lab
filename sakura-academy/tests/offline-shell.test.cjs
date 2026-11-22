@@ -53,7 +53,7 @@ test('offline shell precaches the full app and tracker assets', async () => {
   let installPromise;
   worker.listeners.install({ waitUntil(promise) { installPromise = promise; } });
   await installPromise;
-  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.5.120', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/n5-stories.js', './src/app.js?v=1.5.120', './src/content.js?v=1.5.120', './src/n5-app.js?v=1.5.120', './src/content-validation.js?v=1.5.120', './src/lesson-progress.js?v=1.5.120', './src/audio-lessons.js?v=1.5.120', './src/reward-guard.js']) {
+  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.5.122', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/n5-stories.js', './src/app.js?v=1.5.122', './src/content.js?v=1.5.122', './src/n5-app.js?v=1.5.122', './src/content-validation.js?v=1.5.122', './src/lesson-progress.js?v=1.5.122', './src/audio-lessons.js?v=1.5.122', './src/reward-guard.js']) {
     assert.ok(worker.added.includes(file), `precache includes ${file}`);
   }
   const audio = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
@@ -85,9 +85,9 @@ test('app registers the worker relative to its own project route', () => {
   assert.match(html, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)/);
   assert.match(html, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/);
   assert.match(html, /sakura-academy/);
-  assert.match(html, /href="styles\.css\?v=1\.5\.120"/);
-  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.5\.120"><\/script>/);
-  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.5.120'));
+  assert.match(html, /href="styles\.css\?v=1\.5\.122"/);
+  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.5\.122"><\/script>/);
+  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.5.122'));
 });
 
 test('static build copies the favicon into the published Academy project', () => {
@@ -145,14 +145,15 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.match(nodes['#rows'].innerHTML, /SA-080[\s\S]*sections do not consistently explain[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-079[\s\S]*N5 reading lacks story mode with synchronized kanji and kana[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-078[\s\S]*class="pill closed">Closed/);
-  assert.equal(nodes['#scope-archive'].textContent, 'Archive (90)');
+  assert.equal(nodes['#scope-archive'].textContent, 'Archive (91)');
   assert.equal(nodes['#scope-archive']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='all';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'All issues');
-  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">90<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">91<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">0<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">90<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">91<\/div>/);
+  assert.match(nodes['#rows'].innerHTML, /SA-091[\s\S]*Focus mode is unavailable across most learning activities[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-090[\s\S]*Lesson activity and navigation compete for mobile screen space[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-089[\s\S]*Repeated section descriptions use mobile screen space[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-088[\s\S]*Learner-facing disclaimers crowd learning screens[\s\S]*class="pill closed">Closed/);

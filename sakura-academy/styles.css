@@ -47,3 +47,13 @@ body[data-focus-mode="true"] .lesson-tabbar{flex:0 0 auto;position:relative;z-in
 body[data-focus-mode="true"] .lesson-tabbar .tabs{margin:0;padding:4px 0}
 body[data-focus-mode="true"] .lesson-activity{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;padding:8px 1px 18px}
 body[data-focus-mode="true"] .lesson-activity .section-guide,body[data-focus-mode="true"] .tab-overflow-cue{display:none!important}
+
+/* Shared full-screen study space for every active learning route. */
+body[data-focus-mode="true"] #content{height:100%;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+body[data-focus-mode="true"][data-focus-view="lesson"] #content{overflow:hidden}
+body[data-focus-mode="true"] .focus-toolbar{position:sticky;top:0;z-index:20;min-height:52px;margin:-2px 0 10px;padding:4px 0;background:var(--ivory);box-shadow:0 5px 14px #252e5910}
+body[data-focus-mode="true"] .focus-toolbar .btn{min-height:44px}
+body[data-focus-mode="true"] .page-description,body[data-focus-mode="true"] .section-guide{display:none!important}
+
+body[data-focus-mode="true"] #content>.eyebrow,body[data-focus-mode="true"] #content>.title{display:none!important}
+body[data-focus-mode="true"] .n5-tabs,body[data-focus-mode="true"] .kana-mode-tabs,body[data-focus-mode="true"] .handwriting-script-tabs{position:sticky;top:50px;z-index:15;background:var(--ivory);padding:6px 0;box-shadow:0 5px 14px #252e5910}

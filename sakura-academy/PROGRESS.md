@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 90
+- Total tracked: 91
 - Work in progress: 0
 - New: 0
-- Closed: 90
+- Closed: 91
 - Timeline gaps: 82
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-091 — Focus mode is unavailable across most learning activities | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-090 — Lesson activity and navigation compete for mobile screen space | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-089 — Repeated section descriptions use mobile screen space | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-088 — Learner-facing disclaimers crowd learning screens | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
@@ -1209,3 +1210,17 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Added independently saved section-description visibility and optional mobile lesson Focus mode with pinned tabs and an always-visible exit control.
 - **Verification:** All 107 Academy tests pass; standalone build and `git diff --check` pass. Mobile preview confirmed description preferences persist and Focus mode keeps the active lesson sections accessible without returning to the page top.
 - **Tracker:** SA-089 and SA-090 closed. Total 90; 0 Work in progress; 0 New; 90 Closed; 82 timeline gaps.
+
+### SA-091 — Focus mode is unavailable across most learning activities · 2026-11-22
+
+- **Status:** Closed · 100%
+- **Evidence:** Focus mode is limited to lessons; other activity screens retain full application navigation and require scrolling.
+- **Impact:** Study focus is interrupted by surrounding page chrome, especially on mobile.
+- **Plan:** Add one shared Focus mode affordance and consistent full-screen treatment to all study and learning routes while keeping a clear exit control.
+- **Verification:** All 108 automated tests pass. At 390 × 844, Focus mode was checked on Lessons, Kana challenge/grid, Handwriting, Kanji Explorer, Flashcards, JLPT N5, and Audio lessons. The control stayed fixed while the Kana grid scrolled; its mode tabs remained pinned and Exit focus restored the full app view.
+
+### Release v1.5.122 — 2026-11-22
+
+- **Changes:** Extended Focus mode across all active study routes with a shared sticky control, full-screen layout, independently scrolling activity content, and a clear Exit focus action.
+- **Verification:** All 108 automated tests pass. Static build and offline shell validation pass. Live deployment is being prepared.
+- **Tracker:** SA-091 closed. Total 91; 0 Work in progress; 0 New; 91 Closed; 82 timeline gaps.
