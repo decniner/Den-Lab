@@ -15,8 +15,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.119"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.119"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.119"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.119"><\/script><script src="src\/app\.js\?v=1\.5\.119">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.120"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.120"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.120"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.120"><\/script><script src="src\/app\.js\?v=1\.5\.120">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -110,7 +110,7 @@ test('starting a kana recognition question scrolls its prompt into view', () => 
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.119"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.120"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -125,7 +125,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.119"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.120"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -191,15 +191,36 @@ test('main learning routes and lesson tabs explain their purpose and next action
 });
 
 test('learning guidance can be hidden once, persisted, and restored in settings', () => {
-  assert.match(appSource, /showGuides:true,guideChoiceMade:false/);
+  assert.match(appSource, /showGuides:true,showDescriptions:true,guideChoiceMade:false/);
   assert.match(appSource, /function sectionGuide\(text\).*?state\.showGuides/);
   assert.match(appSource, /function promptGuidePreference\(/);
   assert.match(appSource, /Hide permanently/);
-  assert.match(appSource, /Keep guidance/);
+  assert.match(appSource, /Keep all/);
   assert.match(appSource, /function setGuidePreference\(show\)/);
   assert.match(appSource, /Show What to do guidance/);
   assert.match(appSource, /dataset\.guideVisibility/);
   assert.match(styles, /body\[data-guide-visibility="hidden"\]\s+\.section-guide\{display:none!important\}/);
+});
+
+test('section descriptions have their own persistent mobile-space preference', () => {
+  assert.match(appSource, /showDescriptions:true/);
+  assert.match(appSource, /function header\(title,subtitle.*?state\.showDescriptions/);
+  assert.match(appSource, /function setDescriptionPreference\(show\)/);
+  assert.match(appSource, /Show section descriptions/);
+  assert.match(appSource, /Keep short descriptions and/);
+  assert.match(appSource, /page-description/);
+  assert.match(styles, /body\[data-description-visibility="hidden"\]\s+\.page-description\{display:none!important\}/);
+});
+
+test('lesson Focus mode keeps activity tabs pinned and hides surrounding app chrome', () => {
+  assert.match(appSource, /function toggleFocusMode\(/);
+  assert.match(appSource, /aria-pressed="\$\{focusMode\}"/);
+  assert.match(appSource, /Exit focus/);
+  assert.match(appSource, /LESSON_SECTION_GUIDES\[tab\]/);
+  assert.match(styles, /body\[data-focus-mode="true"\] \.sidebar/);
+  assert.match(styles, /body\[data-focus-mode="true"\] \.lesson-overview/);
+  assert.match(styles, /body\[data-focus-mode="true"\] \.lesson-tabbar/);
+  assert.match(styles, /body\[data-focus-mode="true"\] \.lesson-activity/);
 });
 
 test('learning screens omit the space-consuming caveat paragraphs', () => {

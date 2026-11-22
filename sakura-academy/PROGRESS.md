@@ -4,16 +4,18 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 88
+- Total tracked: 90
 - Work in progress: 0
 - New: 0
-- Closed: 88
+- Closed: 90
 - Timeline gaps: 82
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-090 — Lesson activity and navigation compete for mobile screen space | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
+| SA-089 — Repeated section descriptions use mobile screen space | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-088 — Learner-facing disclaimers crowd learning screens | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-087 — Learning guidance consumes limited mobile lesson space | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
 | SA-086 — Cached course content can hide current kanji memory cues | Codex | Closed | 100% | 2026-11-22 | 2026-11-22 |
@@ -1185,3 +1187,25 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Added a one-time prompt to keep or hide learning guidance, saved the choice, and added a Settings toggle to restore guidance. Removed caveat paragraphs from kanji, handwriting, and N5 practice screens. Versioned the updated validation script for reliable cache refresh.
 - **Verification:** All 105 Academy tests pass. Standalone build succeeds. At 390 × 844, the prompt fit comfortably; Hide permanently removed guidance from the lesson, the choice persisted after reload without console errors, and Settings restored the guidance. Kanji Explorer retained its memory cue without the caveats.
 - **Tracker:** SA-087 and SA-088 closed. Total 88; 0 Work in progress; 0 New; 88 Closed; 82 timeline gaps.
+
+### SA-089 — Repeated section descriptions use mobile screen space · 2026-11-22
+
+- **Status:** Closed · 100%
+- **Evidence:** Page subtitles such as “84 beginner kanji with meanings, readings, examples, visual memory cues, and stroke order” appear every time a learner opens a section.
+- **Impact:** Repeated short descriptions take vertical room during lessons and practice.
+- **Plan:** Add a saved Show section descriptions preference and include it in the first-use choice and Settings.
+- **Verification:** All 107 Academy tests pass. At 390 × 844, the first-run choice hid descriptions while retaining the independent guidance choice; the descriptions preference also toggled correctly in Settings and persisted after reload.
+
+### SA-090 — Lesson activity and navigation compete for mobile screen space · 2026-11-22
+
+- **Status:** Closed · 100%
+- **Evidence:** Learners must scroll between lesson activity content, section tabs, and the checklist during study.
+- **Impact:** Repeated scrolling interrupts practice and hides the active exercise behind unrelated page elements.
+- **Plan:** Add an optional full-screen lesson Focus mode that keeps the active section tabs available and provides a clear way to exit.
+- **Verification:** All 107 Academy tests pass. At 390 × 844, Focus mode hid navigation, intro, checklist, and footer; kept all seven lesson tabs and Exit focus available while changing sections; and confined activity scrolling to the lesson panel.
+
+### Release v1.5.120 — 2026-11-22
+
+- **Changes:** Added independently saved section-description visibility and optional mobile lesson Focus mode with pinned tabs and an always-visible exit control.
+- **Verification:** All 107 Academy tests pass; standalone build and `git diff --check` pass. Mobile preview confirmed description preferences persist and Focus mode keeps the active lesson sections accessible without returning to the page top.
+- **Tracker:** SA-089 and SA-090 closed. Total 90; 0 Work in progress; 0 New; 90 Closed; 82 timeline gaps.

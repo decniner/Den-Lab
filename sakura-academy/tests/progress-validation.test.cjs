@@ -47,12 +47,13 @@ test('font size is an enumerated setting with a safe default for old progress', 
 
 test('guide visibility preference migrates safely and rejects malformed backup values', () => {
   assert.deepEqual(sanitizeStoredProgressSettings({ xp: 0 }), {
-    xp: 0, fontSize: 'standard', showGuides: true, guideChoiceMade: false,
+    xp: 0, fontSize: 'standard', showGuides: true, showDescriptions: true, guideChoiceMade: false,
   });
   assert.deepEqual(validateProgressBackupSettings({ xp: 0, showGuides: false, guideChoiceMade: true }), []);
   assert.deepEqual(validateProgressBackupSettings({ xp: 0, showGuides: 'false', guideChoiceMade: 1 }), [
     'Invalid guide visibility', 'Invalid guide choice state',
   ]);
+  assert.deepEqual(validateProgressBackupSettings({ xp: 0, showDescriptions: 'false' }), ['Invalid description visibility']);
 });
 
 const { isValidPassingAssessment } = require('../src/content-validation.js');
