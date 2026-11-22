@@ -16,8 +16,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.129"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.129"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.129"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.129"><\/script><script src="src\/app\.js\?v=1\.5\.129">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.130"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.130"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.130"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.130"><\/script><script src="src\/app\.js\?v=1\.5\.130">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -111,7 +111,7 @@ test('starting a kana recognition question scrolls its prompt into view', () => 
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.129"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.130"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -126,7 +126,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.129"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.130"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -169,6 +169,18 @@ test('N5 sections announce horizontal navigation and reveal the selected tab', (
   assert.match(n5Source, /function n5RevealActiveTab\(\)[\s\S]*?strip\.scrollTo\(\{left:target/);
   assert.match(appSource, /if\(view==='n5'\)requestAnimationFrame\(n5RevealActiveTab\)/);
   assert.match(styles, /@media\(max-width:760px\)\{\.n5-tabs\{padding-right:8px\}\}/);
+});
+
+test('kanji in learning text opens its matching explorer card and returns to the prior view', () => {
+  assert.match(appSource, /function makeKanjiCharactersTappable\([\s\S]*?role','link'[\s\S]*?tabindex','0'[\s\S]*?aria-label',`Study kanji \$\{ch\}`/);
+  assert.match(appSource, /document\.addEventListener\('click',handleKanjiTextActivation,true\)/);
+  assert.match(appSource, /document\.addEventListener\('keydown',handleKanjiTextActivation,true\)/);
+  assert.match(appSource, /function openKanjiFromStudyText\(index\)[\s\S]*?kanjiTextReturn=\{view,scrollY:window\.scrollY,focusMode/);
+  assert.match(appSource, /function returnFromKanjiText\(\)[\s\S]*?view=previous\.view;focusMode=previous\.focusMode/);
+  assert.match(appSource, /window\.scrollTo\(\{top:previous\.scrollY,behavior:'auto'\}\)/);
+  assert.match(appSource, /Return to previous study section/);
+  assert.match(appSource, /\$\('content'\)\.innerHTML=[\s\S]*?makeKanjiCharactersTappable\(\)/);
+  assert.match(styles, /\.kanji-tap-target\{cursor:pointer;text-decoration:underline dotted/);
 });
 
 test('N5 story reader pairs kanji with kana and sentence-synchronized karaoke playback', () => {

@@ -4,16 +4,18 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 96
+- Total tracked: 98
 - Work in progress: 0
 - New: 0
-- Closed: 96
-- Timeline gaps: 85
+- Closed: 98
+- Timeline gaps: 87
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-098 — Kanji in study text cannot open its Explorer and return to the lesson | Codex | Closed | 100% | 2026-11-23 | Not recorded |
+| SA-097 — N5 Grammar and Kanji study views require excessive scrolling | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-096 — N5 vocabulary action buttons use long inconsistent labels | Codex | Closed | 100% | 2026-11-22 | Not recorded |
 | SA-095 — N5 vocabulary study cannot move back one word | Codex | Closed | 100% | 2026-11-22 | Not recorded |
 | SA-094 — N5 example sentence does not visibly follow its spoken audio | Codex | Closed | 100% | 2026-11-22 | Not recorded |
@@ -1281,3 +1283,28 @@ Every published app change must bump the small footer version and its update dat
 - **Impact:** Labels wrap on mobile and make shared actions feel inconsistent.
 - **Fix:** Adopt concise shared labels for Study, Next, Back, and audio actions while retaining descriptive accessible names.
 - **Verification:** Focused tests pass and a mobile preview confirms the short labels fit the vocabulary study controls.
+
+
+### SA-097 — N5 Grammar and Kanji study views require excessive scrolling · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Grammar rendered twelve full explanation cards together; Kanji rendered the full character grid before the selected character’s detail card, including in Focus mode.
+- **Impact:** Learners had to scroll past unrelated content to work through one grammar point or kanji on a phone.
+- **Fix:** Added one-item Study views with Previous/Next navigation and separate searchable Browse views that retain access to every entry.
+- **Verification:** At 390 × 844, both Study views fit within Focus mode; Browse pagination is reachable with five grammar points or six kanji per page. The full suite passes 123 tests.
+
+
+### Release v1.5.130 — 2026-11-23
+
+- **Changes:** N5 Grammar and Kanji open to a one-item Study view with Previous/Next navigation. Searchable Browse views show five grammar points or six kanji at a time. Kanji glyphs in study text open their matching Explorer card; Return restores the previous section and scroll position.
+- **Verification:** All 123 automated tests pass. At 390 × 844, Grammar and Kanji Study and Browse views were checked in Focus mode. Tapping 学 in a Grammar example opens the correct Explorer card; Return restores the same Grammar point and Focus state.
+- **Tracker:** SA-097 and SA-098 closed. Total 98; 0 Work in progress; 0 New; 98 Closed; 87 timeline gaps.
+
+
+### SA-098 — Kanji in study text cannot open its Explorer and return to the lesson · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Japanese characters in lesson and N5 text are currently plain text; tapping an unfamiliar kanji does not open its Explorer card, and the Explorer has no contextual return action.
+- **Impact:** Learners must leave the current activity and find the kanji manually, then reconstruct where they were studying.
+- **Fix:** Make known kanji tappable, open the matching Explorer entry, and provide a return action that restores the source section and scroll position.
+- **Verification:** At 390 × 844, tapping 学 in the N5 Grammar example opens its matching Kanji Explorer card. Return restores the same Grammar point with Focus mode intact. The full suite passes 123 tests.
