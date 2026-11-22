@@ -1050,6 +1050,42 @@
       "reference_price": "27500",
       "sent_at": "2026-11-21T11:59:17+09:00",
       "url": "https://saucony.jp/products/mens-hurricane-25-n02?variant=49332600668312"
+    },
+    "saucony-jp:8755760005272:46733488685208": {
+      "sale_price": "7920",
+      "reference_price": "26400",
+      "sent_at": "2026-11-22T10:50:04+09:00",
+      "url": "https://saucony.jp/products/womens-triumph-23-n02?variant=46733488685208"
+    },
+    "saucony-jp:8596860797080:45827003875480": {
+      "sale_price": "6600",
+      "reference_price": "22000",
+      "sent_at": "2026-11-22T10:50:04+09:00",
+      "url": "https://saucony.jp/products/womens-ride-18-n02?variant=45827003875480"
+    },
+    "saucony-jp:8596863680664:45827023569048": {
+      "sale_price": "6600",
+      "reference_price": "22000",
+      "sent_at": "2026-11-22T10:50:04+09:00",
+      "url": "https://saucony.jp/products/mens-ride-18-n02?variant=45827023569048"
+    },
+    "saucony-jp:8596871413912:45827095560344": {
+      "sale_price": "6270",
+      "reference_price": "20900",
+      "sent_at": "2026-11-22T10:50:04+09:00",
+      "url": "https://saucony.jp/products/gripper-s?variant=45827095560344"
+    },
+    "saucony-jp:8596866793624:45827055779992": {
+      "sale_price": "5280",
+      "reference_price": "17600",
+      "sent_at": "2026-11-22T10:50:04+09:00",
+      "url": "https://saucony.jp/products/trainer-80-original-n02?variant=45827055779992"
+    },
+    "saucony-jp:8596866924696:45827058598040": {
+      "sale_price": "5115",
+      "reference_price": "17050",
+      "sent_at": "2026-11-22T10:50:04+09:00",
+      "url": "https://saucony.jp/products/trainer-80-n02?variant=45827058598040"
     }
   },
   "last_digest": {
