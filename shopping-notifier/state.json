@@ -202,13 +202,13 @@
     "phenixstore-com:8634451231024:46618175537456": {
       "sale_price": "16650",
       "reference_price": "45000",
-      "sent_at": "2026-11-14T10:58:09+09:00",
+      "sent_at": "2026-11-22T10:50:06+09:00",
       "url": "https://phenixstore.com/products/esw23ot64?variant=46618175537456"
     },
     "phenixstore-com:8720368337200:46824032928048": {
       "sale_price": "1332",
       "reference_price": "3600",
-      "sent_at": "2026-11-14T10:58:09+09:00",
+      "sent_at": "2026-11-22T10:50:06+09:00",
       "url": "https://phenixstore.com/products/esw23hw50?variant=46824032928048"
     },
     "phenixstore-com:9578701553968:49016135745840": {
@@ -514,7 +514,7 @@
     "phenixstore-com:8342010429744:45140288831792": {
       "sale_price": "4810",
       "reference_price": "13000",
-      "sent_at": "2026-11-15T10:29:39+09:00",
+      "sent_at": "2026-11-22T10:50:06+09:00",
       "url": "https://phenixstore.com/products/esa88wz55rc?variant=45140288831792"
     },
     "brooksrunning-co-jp:8897616380201:47369879355689": {
@@ -1086,12 +1086,18 @@
       "reference_price": "17050",
       "sent_at": "2026-11-22T10:50:04+09:00",
       "url": "https://saucony.jp/products/trainer-80-n02?variant=45827058598040"
+    },
+    "saucony-jp:8596871872664:45827098738840": {
+      "sale_price": "21120",
+      "reference_price": "52800",
+      "sent_at": "2026-11-22T10:50:06+09:00",
+      "url": "https://saucony.jp/products/endorphin-elite-2-s-n02?variant=45827098738840"
     }
   },
   "last_digest": {
-    "date": "2026-11-21",
-    "coverage_key": "21354eb8420f77c13625548cf3e71bfed4743a12cb62ca1599af642804e99ccb",
-    "completed_at": "2026-11-21T11:59:17+09:00",
-    "digest_hash": "5a5747c498d3de2155c4b958d925fdf54a52d947557490e5cd652c57865de15a"
+    "date": "2026-11-22",
+    "coverage_key": "52077b8fd7eaa897c62c94a0d7a8ba74355c6f2f39429280301832912f9146ea",
+    "completed_at": "2026-11-22T10:50:06+09:00",
+    "digest_hash": "5e7a74a46f6906a4e96a24389740d992c0095626b995684715b106a84d1f5948"
   }
 }
