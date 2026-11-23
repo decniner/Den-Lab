@@ -30,6 +30,7 @@ def audio_key(text):
 
 
 phrases = []
+FEMALE_VOICES = ("jf_alpha", "jf_gongitsune", "jf_tebukuro")
 for item in items:
     key = audio_key(item["kanji"])
     spoken_text = item.get("audioText", item["kana"])
@@ -42,33 +43,37 @@ for item in items:
     destination = audio_dir / filename
     phrases.append((key, spoken_text, phoneme_replacements, filename, destination))
 
-missing = [item for item in phrases if not item[4].exists()]
-if missing:
-    pipeline = KPipeline(lang_code="j")
-    with tempfile.TemporaryDirectory(prefix="sakura-kanji-listening-") as tmp:
-        wav = Path(tmp) / "kanji-listening.wav"
-        for index, (key, spoken_text, replacements, filename, destination) in enumerate(missing, 1):
-            if replacements:
-                phonemes, _ = pipeline.g2p(spoken_text)
-                for replacement in replacements:
-                    phonemes, count = re.subn(re.escape(replacement["from"]), replacement["to"], phonemes, count=1)
-                    if count != 1:
-                        raise RuntimeError(f"Pronunciation override did not match Kokoro phonemes for: {key}")
-                chunks = [np.asarray(result.audio) for result in pipeline.generate_from_tokens(phonemes, voice="jf_alpha", speed=0.9)]
-            else:
-                chunks = [np.asarray(audio) for _, _, audio in pipeline(spoken_text, voice="jf_alpha", speed=0.9)]
-            if not chunks:
-                raise RuntimeError(f"Kokoro returned no audio for: {key}")
-            sf.write(wav, np.concatenate(chunks), 24000)
-            subprocess.run([
-                "ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(wav),
-                "-ac", "1", "-ar", "24000", "-codec:a", "libmp3lame", "-b:a", "48k", str(destination),
-            ], check=True)
-            if index % 20 == 0 or index == len(missing):
-                print(f"Generated {index}/{len(missing)} kanji clips", flush=True)
+pipeline = KPipeline(lang_code="j")
+def synthesize(spoken_text, replacements, voice):
+    if replacements:
+        phonemes, _ = pipeline.g2p(spoken_text)
+        for replacement in replacements:
+            phonemes, count = re.subn(re.escape(replacement["from"]), replacement["to"], phonemes, count=1)
+            if count != 1:
+                raise RuntimeError(f"Pronunciation override did not match Kokoro phonemes: {replacement}")
+        return [np.asarray(result.audio) for result in pipeline.generate_from_tokens(phonemes, voice=voice, speed=0.9)]
+    return [np.asarray(audio) for _, _, audio in pipeline(spoken_text, voice=voice, speed=0.9)]
 
-for key, spoken_text, replacements, filename, destination in phrases:
-    manifest[key] = {"src": f"./audio/speech/{filename}", "pitch": []}
+with tempfile.TemporaryDirectory(prefix="sakura-kanji-listening-") as tmp:
+    wav = Path(tmp) / "kanji-listening.wav"
+    for index, (key, spoken_text, replacements, filename, destination) in enumerate(phrases, 1):
+        voice_paths = {}
+        for voice in FEMALE_VOICES:
+            variant_filename = filename if voice == "jf_alpha" else f"ja-{hashlib.sha256(f'{key}|{spoken_text}|{json.dumps(replacements, ensure_ascii=False)}|{voice}'.encode('utf-8')).hexdigest()[:14]}.mp3"
+            variant_destination = audio_dir / variant_filename
+            voice_paths[voice] = f"./audio/speech/{variant_filename}"
+            if not variant_destination.exists():
+                chunks = synthesize(spoken_text, replacements, voice)
+                if not chunks:
+                    raise RuntimeError(f"Kokoro returned no audio for: {key} ({voice})")
+                sf.write(wav, np.concatenate(chunks), 24000)
+                subprocess.run([
+                    "ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(wav),
+                    "-ac", "1", "-ar", "24000", "-codec:a", "libmp3lame", "-b:a", "48k", str(variant_destination),
+                ], check=True)
+        manifest[key] = {"src": voice_paths["jf_alpha"], "pitch": [], "voices": voice_paths}
+        if index % 20 == 0 or index == len(phrases):
+            print(f"Bundled voice variants for {index}/{len(phrases)} kanji clips", flush=True)
 
 manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
 (PROJECT / "src/speech-audio-manifest.json").write_text(manifest_json)
@@ -78,10 +83,10 @@ manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
 
 worker_path = PROJECT / "sw.js"
 worker = worker_path.read_text()
-assets = sorted({entry["src"] for entry in manifest.values()})
+assets = sorted({asset for entry in manifest.values() for asset in [entry["src"], *entry.get("voices", {}).values()]})
 declaration = "const AUDIO_ASSETS = [\n" + "".join(f"  '{asset}',\n" for asset in assets) + "];"
 worker, count = re.subn(r"const AUDIO_ASSETS = \[.*?\];", declaration, worker, count=1, flags=re.S)
 if count != 1:
     raise SystemExit("Could not update AUDIO_ASSETS in sw.js")
 worker_path.write_text(worker)
-print(f"Bundled audio for {len(items)} kanji listening samples ({len(missing)} newly generated).")
+print(f"Bundled three voices for {len(items)} kanji listening samples.")

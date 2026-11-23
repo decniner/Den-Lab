@@ -93,36 +93,43 @@ pipeline = KPipeline(lang_code="j")
 audio_dir = PROJECT / "audio/speech"
 audio_dir.mkdir(parents=True, exist_ok=True)
 manifest = {}
+FEMALE_VOICES = ("jf_alpha", "jf_gongitsune", "jf_tebukuro")
 
 with tempfile.TemporaryDirectory(prefix="sakura-kokoro-") as tmp:
     temp_dir = Path(tmp)
     for index, (key, item) in enumerate(phrases.items(), 1):
-        phrase, voice, base_key = item["phrase"], item["voice"], item["base_key"]
+        phrase, default_voice, base_key = item["phrase"], item["voice"], item["base_key"]
         reading = item.get("reading", phrase)
-        filename = fingerprinted_filename(key, reading) if "reading" in item else f"ja-{hashlib.sha256(key.encode('utf-8')).hexdigest()[:14]}.mp3"
-        destination = audio_dir / filename
         synthesis_text = PRONUNCIATION_OVERRIDES.get(base_key, reading)
-        if not destination.exists() or key in PRONUNCIATION_OVERRIDES:
-            chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice=voice, speed=0.9)]
-            if not chunks:
-                raise RuntimeError(f"Kokoro returned no audio for: {phrase}")
-            wav = temp_dir / "speech.wav"
-            sf.write(wav, np.concatenate(chunks), 24000)
-            subprocess.run([
-                "ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(wav),
-                "-ac", "1", "-ar", "24000", "-codec:a", "libmp3lame", "-b:a", "48k", str(destination),
-            ], check=True)
+        voice_names = FEMALE_VOICES if default_voice == "jf_alpha" else (default_voice,)
+        voice_paths = {}
+        for voice in voice_names:
+            if voice == default_voice:
+                filename = fingerprinted_filename(key, reading) if "reading" in item else f"ja-{hashlib.sha256(key.encode('utf-8')).hexdigest()[:14]}.mp3"
+            else:
+                fingerprint = f"{key}|{reading}|{voice}"
+                filename = f"ja-{hashlib.sha256(fingerprint.encode('utf-8')).hexdigest()[:14]}.mp3"
+            destination = audio_dir / filename
+            voice_paths[voice] = f"./audio/speech/{filename}"
+            if not destination.exists() or (voice == default_voice and key in PRONUNCIATION_OVERRIDES):
+                chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice=voice, speed=0.9)]
+                if not chunks:
+                    raise RuntimeError(f"Kokoro returned no audio for: {phrase} ({voice})")
+                wav = temp_dir / "speech.wav"
+                sf.write(wav, np.concatenate(chunks), 24000)
+                subprocess.run([
+                    "ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(wav),
+                    "-ac", "1", "-ar", "24000", "-codec:a", "libmp3lame", "-b:a", "48k", str(destination),
+                ], check=True)
+        default_path = audio_dir / Path(voice_paths[default_voice]).name
         decoded = subprocess.run([
-            "ffmpeg", "-v", "error", "-i", str(destination), "-ac", "1", "-ar", "24000",
+            "ffmpeg", "-v", "error", "-i", str(default_path), "-ac", "1", "-ar", "24000",
             "-f", "f32le", "-",
         ], check=True, stdout=subprocess.PIPE).stdout
         samples = np.frombuffer(decoded, dtype=np.float32)
-        manifest[key] = {
-            "src": f"./audio/speech/{filename}",
-            "pitch": pitch_contour(samples),
-        }
+        manifest[key] = {"src": voice_paths[default_voice], "pitch": pitch_contour(samples), "voices": voice_paths}
         if index % 20 == 0 or index == len(phrases):
-            print(f"Generated {index}/{len(phrases)} phrases", flush=True)
+            print(f"Bundled voice variants for {index}/{len(phrases)} phrases", flush=True)
 
 manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
 (PROJECT / "src/speech-audio-manifest.json").write_text(manifest_json)
@@ -132,7 +139,7 @@ manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
 
 sw_path = PROJECT / "sw.js"
 sw = sw_path.read_text()
-assets = sorted({entry["src"] for entry in manifest.values()})
+assets = sorted({asset for entry in manifest.values() for asset in [entry["src"], *entry.get("voices", {}).values()]})
 asset_declaration = "const AUDIO_ASSETS = [\n" + "".join(f"  '{asset}',\n" for asset in assets) + "];"
 sw = re.sub(r"const AUDIO_ASSETS = \[.*?\];", asset_declaration, sw, count=1, flags=re.S)
 sw_path.write_text(sw)

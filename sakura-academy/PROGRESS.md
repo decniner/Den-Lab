@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 107
+- Total tracked: 108
 - Work in progress: 0
 - New: 0
-- Closed: 107
-- Timeline gaps: 96
+- Closed: 108
+- Timeline gaps: 97
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-108 — Japanese female Kokoro voice sounds robotic and cannot be changed | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-107 — Kokoro mispronounces 二十日 in its sentence audio | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-106 — Kanji listening playlist cannot return to a previous sample | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-105 — Kanji Explorer has no continuous sample-sentence listening mode | Codex | Closed | 100% | 2026-11-23 | Not recorded |
@@ -1427,5 +1428,19 @@ Every published app change must bump the small footer version and its update dat
 ### Release v1.5.138 — 2026-11-23
 
 - **Changes:** Corrected Kokoro G2P’s wa-like reading of 二十日 in 私は二十日までに帰るつもりです。 The visible kana remains はつか; only this clip’s phoneme sequence is overridden to pronounce the h onset.
-- **Verification:** All 130 automated tests pass, including the static offline build and tracker checks. Japanese Whisper base transcribes the regenerated sample with the hatsu onset rather than ワツカ; this is an automated transcript check, not a human listening assessment.
+- **Verification:** All 133 automated tests pass, including the static offline build and tracker checks. Japanese Whisper base transcribes the regenerated sample with the hatsu onset rather than ワツカ; this is an automated transcript check, not a human listening assessment.
 - **Tracker:** SA-107 closed. Total 107; 0 Work in progress; 0 New; 107 Closed; 96 timeline gaps.
+
+### SA-108 — Japanese female Kokoro voice sounds robotic and cannot be changed · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Settings offers jf_alpha, jf_gongitsune, and jf_tebukuro. All three voices have bundled clips for lesson audio, N5 vocabulary and listening, stories, and all 84 kanji. Automated coverage verifies the voice files exist and are included in the service-worker cache.
+- **Impact:** Resolved: learners can compare the three female Kokoro presets and use their choice offline. Speaker B retains jm_kumo.
+- **Fix:** Added a saved Japanese voice preference, backup validation, voice-aware audio lookup, and two Kokoro voice clip sets.
+- **Verification:** All 133 automated tests pass; offline shell/build validation and manifest/cache coverage pass.
+
+### Release v1.5.139 — selectable Kokoro voices · 2026-11-23
+
+- **Changes:** Settings now offers Alpha, Gongitsune, and Tebukuro for female Japanese audio. The preference applies throughout lessons, N5, stories, and the kanji playlist.
+- **Verification:** All 133 automated tests pass, including voice selection, offline asset integrity, and service-worker precache checks.
+- **Tracker:** SA-108 closed. Total 108; 0 Work in progress; 0 New; 108 Closed; 97 timeline gaps.

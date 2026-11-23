@@ -35,7 +35,8 @@ test('story narration uses the paired kana reading while keeping the kanji audio
   const generator = fs.readFileSync(path.join(project, 'scripts/generate_story_audio.py'), 'utf8');
   assert.match(generator, /phrase = line\["kanji"\]/);
   assert.match(generator, /synthesis_text = line\["kana"\]/);
-  assert.match(generator, /pipeline\(synthesis_text, voice="jf_alpha"/);
+  assert.match(generator, /FEMALE_VOICES = \("jf_alpha", "jf_gongitsune", "jf_tebukuro"\)/);
+  assert.match(generator, /pipeline\(synthesis_text, voice=voice/);
   assert.match(generator, /key = re\.sub\(r"\\s\+", "", unicodedata\.normalize\("NFC", phrase\)\)/);
 });
 

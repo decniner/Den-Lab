@@ -271,6 +271,20 @@ test('offline manifest and generator reserve a male Kokoro voice for Speaker B c
   }
 });
 
+test('offline manifest provides selectable female Kokoro voices for every phrase', () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
+  const voices = ['jf_alpha', 'jf_gongitsune', 'jf_tebukuro'];
+  for (const [key, entry] of Object.entries(manifest)) {
+    if (key.startsWith('dialogue:B:')) continue;
+    for (const voice of voices) {
+      assert.ok(entry.voices?.[voice], `${key} has a ${voice} clip`);
+      assert.ok(fs.existsSync(path.join(project, entry.voices[voice].replace(/^\.\//, ''))), `${key} ${voice} clip exists offline`);
+    }
+  }
+  const source = fs.readFileSync(path.join(project, 'src/app.js'), 'utf8');
+  assert.match(source, /function selectedJapaneseAudioSource\(source,voice=state\.japaneseVoice\)/);
+});
+
 test('Kana masterclass uses one top row for Hiragana, Katakana, and Challenge tabs', () => {
   const kanaPage = appSource.slice(appSource.indexOf('function kanaPage()'), appSource.indexOf('\nfunction ', appSource.indexOf('function kanaPage()') + 1));
   assert.match(kanaPage, /kana-mode-tabs/);

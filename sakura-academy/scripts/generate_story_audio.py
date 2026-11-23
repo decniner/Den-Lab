@@ -24,6 +24,7 @@ manifest = json.loads(manifest_path.read_text())
 audio_dir = PROJECT / "audio/speech"
 audio_dir.mkdir(parents=True, exist_ok=True)
 pipeline = KPipeline(lang_code="j")
+FEMALE_VOICES = ("jf_alpha", "jf_gongitsune", "jf_tebukuro")
 
 with tempfile.TemporaryDirectory(prefix="sakura-stories-") as tmp:
     wav = Path(tmp) / "story.wav"
@@ -34,17 +35,21 @@ with tempfile.TemporaryDirectory(prefix="sakura-stories-") as tmp:
             synthesis_text = line["kana"]
             fingerprint = f"{key}|{synthesis_text}"
             filename = f"ja-{hashlib.sha256(fingerprint.encode('utf-8')).hexdigest()[:14]}.mp3"
-            destination = audio_dir / filename
-            if not destination.exists():
-                chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice="jf_alpha", speed=0.9)]
-                if not chunks:
-                    raise RuntimeError(f"Kokoro returned no audio for: {phrase}")
-                sf.write(wav, np.concatenate(chunks), 24000)
-                subprocess.run([
-                    "ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(wav),
-                    "-ac", "1", "-ar", "24000", "-codec:a", "libmp3lame", "-b:a", "48k", str(destination),
-                ], check=True)
-            manifest[key] = {"src": f"./audio/speech/{filename}", "pitch": []}
+            voice_paths = {"jf_alpha": f"./audio/speech/{filename}"}
+            for voice in FEMALE_VOICES[1:]:
+                variant = f"ja-{hashlib.sha256(f'{fingerprint}|{voice}'.encode('utf-8')).hexdigest()[:14]}.mp3"
+                destination = audio_dir / variant
+                voice_paths[voice] = f"./audio/speech/{variant}"
+                if not destination.exists():
+                    chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice=voice, speed=0.9)]
+                    if not chunks:
+                        raise RuntimeError(f"Kokoro returned no audio for: {phrase} ({voice})")
+                    sf.write(wav, np.concatenate(chunks), 24000)
+                    subprocess.run([
+                        "ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(wav),
+                        "-ac", "1", "-ar", "24000", "-codec:a", "libmp3lame", "-b:a", "48k", str(destination),
+                    ], check=True)
+            manifest[key] = {"src": voice_paths["jf_alpha"], "pitch": [], "voices": voice_paths}
 
 manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
 (PROJECT / "src/speech-audio-manifest.json").write_text(manifest_json)
@@ -54,7 +59,7 @@ manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
 
 worker_path = PROJECT / "sw.js"
 worker = worker_path.read_text()
-assets = sorted({entry["src"] for entry in manifest.values()})
+assets = sorted({asset for entry in manifest.values() for asset in [entry["src"], *entry.get("voices", {}).values()]})
 declaration = "const AUDIO_ASSETS = [\n" + "".join(f"  '{asset}',\n" for asset in assets) + "];"
 worker = re.sub(r"const AUDIO_ASSETS = \[.*?\];", declaration, worker, count=1, flags=re.S)
 worker_path.write_text(worker)
