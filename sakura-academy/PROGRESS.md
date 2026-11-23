@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 104
+- Total tracked: 105
 - Work in progress: 0
 - New: 0
-- Closed: 104
-- Timeline gaps: 93
+- Closed: 105
+- Timeline gaps: 94
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-105 — Kanji Explorer has no continuous sample-sentence listening mode | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-104 — Selecting a kanji in Explorer does not autoplay its stroke order | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-103 — Tapping a Kana Masterclass character does not animate its stroke order | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-102 — Context kanji cards omit readings, memory aids, examples, and audio | Codex | Closed | 100% | 2026-11-23 | Not recorded |
@@ -1379,3 +1380,19 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Kanji Explorer shows and autoplays the selected character’s stroke order as soon as it opens or changes. Completed the related Kana autoplay, full context kanji cards, and Home resume-location improvements.
 - **Verification:** Full automated test suite and standalone offline build pass. Phone-width responsive preview confirms stroke guide placement and autoplay behavior.
 - **Tracker:** SA-101 through SA-104 closed. Total 104; 0 Work in progress; 0 New; 104 Closed; 93 timeline gaps.
+
+
+### SA-105 — Kanji Explorer has no continuous sample-sentence listening mode · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** The Kanji listening activity plays sample sentences for all 84 beginner kanji in one continuous queue. Each entry has a large kanji and sentence, optional small kana above kanji, bundled offline Kokoro audio, synced spoken-character highlighting, and linked source attribution where applicable. Four characters without a suitable source example use original beginner sentences.
+- **Impact:** Resolved: learners can listen hands-free and follow sentence readings while each kanji example plays.
+- **Fix:** Added the Kanji mode to Audio lessons with one Play/Pause control, 84 samples, optional kana display, synced highlighting, and offline audio.
+- **Verification:** Playlist coverage and data alignment tests pass; all 128 automated tests pass; standalone offline build succeeds. At 400 × 726 mobile emulation, Kanji mode shows the large character and sentence; Focus mode removes navigation chrome while keeping the player and reference visible.
+
+
+### Release v1.5.136 — 2026-11-23
+
+- **Changes:** Added a continuous offline Kanji listening playlist covering all 84 N5 kanji. The large active character and sentence display karaoke-style kana on request and highlight each character during Kokoro playback. Tatoeba source links accompany sourced examples; four original beginner examples fill coverage gaps.
+- **Verification:** All 128 automated tests pass, including playlist coverage, issue tracker consistency, service-worker precache, and standalone offline build. A 400 × 726 mobile browser preview confirms the Kanji mode and Focus layout keep the active character and full sentence visible.
+- **Tracker:** SA-105 closed. Total 105; 0 Work in progress; 0 New; 105 Closed; 94 timeline gaps.

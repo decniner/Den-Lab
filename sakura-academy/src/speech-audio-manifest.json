@@ -33309,5 +33309,341 @@
   "いっしょにすしを食べて、映画を見ます。": {
     "src": "./audio/speech/ja-58f15535348b33.mp3",
     "pitch": []
+  },
+  "今日は何をしたいですか。": {
+    "src": "./audio/speech/ja-7a9f1781367b14.mp3",
+    "pitch": []
+  },
+  "車にはハンドルが一つある。": {
+    "src": "./audio/speech/ja-3751eaabe9ca58.mp3",
+    "pitch": []
+  },
+  "ひとりで外国へ出かけてみなさい。": {
+    "src": "./audio/speech/ja-a80a27bd3b3814.mp3",
+    "pitch": []
+  },
+  "私は一人の弟がいます。": {
+    "src": "./audio/speech/ja-5ed9eebcf306d6.mp3",
+    "pitch": []
+  },
+  "わたしは去年一年生でした。": {
+    "src": "./audio/speech/ja-c0078212a4e6d0.mp3",
+    "pitch": []
+  },
+  "本を読むことは大切です。": {
+    "src": "./audio/speech/ja-4c6bea9faae099.mp3",
+    "pitch": []
+  },
+  "私は二十日までに帰るつもりです。": {
+    "src": "./audio/speech/ja-f12851bca8460d.mp3",
+    "pitch": []
+  },
+  "このミルクは二日はもつ。": {
+    "src": "./audio/speech/ja-a8fbc79a104609.mp3",
+    "pitch": []
+  },
+  "ジョンは本棚を作った。": {
+    "src": "./audio/speech/ja-4a83312a0c45a7.mp3",
+    "pitch": []
+  },
+  "テントの中ではなくて外で食べよう。": {
+    "src": "./audio/speech/ja-983a6cf68a57b8.mp3",
+    "pitch": []
+  },
+  "長くいらっしゃるつもりですか。": {
+    "src": "./audio/speech/ja-211fd3f1f2d4ce.mp3",
+    "pitch": []
+  },
+  "出口はどちらですか。": {
+    "src": "./audio/speech/ja-ad4dd1d31baeea.mp3",
+    "pitch": []
+  },
+  "コーヒー三つおねがいします。": {
+    "src": "./audio/speech/ja-05118c360d2907.mp3",
+    "pitch": []
+  },
+  "あなたの時計では何時ですか。": {
+    "src": "./audio/speech/ja-b2e89bae03d632.mp3",
+    "pitch": []
+  },
+  "銀行でお金をおろさなくちゃ。": {
+    "src": "./audio/speech/ja-7a9d8544dda78e.mp3",
+    "pitch": []
+  },
+  "わたしはそれを見てぎょっとした。": {
+    "src": "./audio/speech/ja-5d049e4253e09a.mp3",
+    "pitch": []
+  },
+  "今月の売り上げはよくない。": {
+    "src": "./audio/speech/ja-b667a97c76d813.mp3",
+    "pitch": []
+  },
+  "自分のペースでやってください。": {
+    "src": "./audio/speech/ja-3ba8f9a2984b28.mp3",
+    "pitch": []
+  },
+  "雨天の後には晴天が来る。": {
+    "src": "./audio/speech/ja-0507ed3cabdb65.mp3",
+    "pitch": []
+  },
+  "ここにあなたの名前を書きなさい。": {
+    "src": "./audio/speech/ja-58139c81a2d339.mp3",
+    "pitch": []
+  },
+  "留学生も入れるのかしら。": {
+    "src": "./audio/speech/ja-0a2ebac5798ac2.mp3",
+    "pitch": []
+  },
+  "五日待ってくれ。": {
+    "src": "./audio/speech/ja-59bf899ec68cc3.mp3",
+    "pitch": []
+  },
+  "時間がたつのに気がつかなかった。": {
+    "src": "./audio/speech/ja-ad46a07245cd7c.mp3",
+    "pitch": []
+  },
+  "左手を上げなさい。": {
+    "src": "./audio/speech/ja-34b5b229e8515a.mp3",
+    "pitch": []
+  },
+  "東の空が白み始めていた。": {
+    "src": "./audio/speech/ja-52f04d8229c8f8.mp3",
+    "pitch": []
+  },
+  "世界には四つの海洋がある。": {
+    "src": "./audio/speech/ja-93c1f94236fc98.mp3",
+    "pitch": []
+  },
+  "今朝はとても寒かった。": {
+    "src": "./audio/speech/ja-2eed21df3bc14d.mp3",
+    "pitch": []
+  },
+  "金曜日の銀行は遅じまいだ。": {
+    "src": "./audio/speech/ja-881684aac3bad4.mp3",
+    "pitch": []
+  },
+  "九時に学校へ行きます。": {
+    "src": "./audio/speech/ja-bf3a68bb2e9550.mp3",
+    "pitch": []
+  },
+  "本をさかさまに入れないで下さい。": {
+    "src": "./audio/speech/ja-3bb3b73d267dc3.mp3",
+    "pitch": []
+  },
+  "学生の半数が休んでいた。": {
+    "src": "./audio/speech/ja-2bb0371a8d745c.mp3",
+    "pitch": []
+  },
+  "二つのうちでどちらが高いですか。": {
+    "src": "./audio/speech/ja-c21d62e4468f3a.mp3",
+    "pitch": []
+  },
+  "本は百円です。": {
+    "src": "./audio/speech/ja-e8f3fce798f68c.mp3",
+    "pitch": []
+  },
+  "男の子のいたずらはしょうがない。": {
+    "src": "./audio/speech/ja-f341bacfd840a0.mp3",
+    "pitch": []
+  },
+  "外に出してやってくれませんか。": {
+    "src": "./audio/speech/ja-1fc4c182d03475.mp3",
+    "pitch": []
+  },
+  "そこに八つの小石があった。": {
+    "src": "./audio/speech/ja-6a268d42cfe8d3.mp3",
+    "pitch": []
+  },
+  "今日は六時に帰ります。": {
+    "src": "./audio/speech/ja-78ebdc3e661124.mp3",
+    "pitch": []
+  },
+  "この靴下はちぐはぐだ。": {
+    "src": "./audio/speech/ja-d39f0973ac3581.mp3",
+    "pitch": []
+  },
+  "来月タクシー料金があがります。": {
+    "src": "./audio/speech/ja-87a50da3d81f35.mp3",
+    "pitch": []
+  },
+  "電気シェーバーから火が出ました。": {
+    "src": "./audio/speech/ja-d46fe87b4f459b.mp3",
+    "pitch": []
+  },
+  "アンは小さな女の子です。": {
+    "src": "./audio/speech/ja-5f692fd7bb84e2.mp3",
+    "pitch": []
+  },
+  "一週間は七日です。": {
+    "src": "./audio/speech/ja-de2747818a6e99.mp3",
+    "pitch": []
+  },
+  "その山はどれくらいの高さですか。": {
+    "src": "./audio/speech/ja-fb3884237d5a9d.mp3",
+    "pitch": []
+  },
+  "話を聞かせてくれ。": {
+    "src": "./audio/speech/ja-026af3261944f0.mp3",
+    "pitch": []
+  },
+  "人は男か女のどちらかである。": {
+    "src": "./audio/speech/ja-ca7e9a055d68ea.mp3",
+    "pitch": []
+  },
+  "船はまっすぐ北に向かっている。": {
+    "src": "./audio/speech/ja-8a0d925256451b.mp3",
+    "pitch": []
+  },
+  "午後何時ごろうかがいましょうか。": {
+    "src": "./audio/speech/ja-5b6c384d1933cd.mp3",
+    "pitch": []
+  },
+  "私は八百屋の外で彼に出会った。": {
+    "src": "./audio/speech/ja-34e74854538792.mp3",
+    "pitch": []
+  },
+  "葉書をおくれ。": {
+    "src": "./audio/speech/ja-56b88a7948bd3b.mp3",
+    "pitch": []
+  },
+  "先月インフルエンザにかかった。": {
+    "src": "./audio/speech/ja-5272993d08e507.mp3",
+    "pitch": []
+  },
+  "そのホテルは食事で有名である。": {
+    "src": "./audio/speech/ja-6d772b5c4c55e1.mp3",
+    "pitch": []
+  },
+  "その川はあまりきれいではなかった。": {
+    "src": "./audio/speech/ja-7248486030a2b1.mp3",
+    "pitch": []
+  },
+  "千円をください。": {
+    "src": "./audio/speech/ja-ddfe01524c9070.mp3",
+    "pitch": []
+  },
+  "今度の水曜日ならいいですよ。": {
+    "src": "./audio/speech/ja-b9a526f39d0917.mp3",
+    "pitch": []
+  },
+  "それを半分にきりなさい。": {
+    "src": "./audio/speech/ja-0c5f388f637862.mp3",
+    "pitch": []
+  },
+  "あのハンサムな男の子を見て。": {
+    "src": "./audio/speech/ja-93abe8ce899ba0.mp3",
+    "pitch": []
+  },
+  "列車は西へ走っていた。": {
+    "src": "./audio/speech/ja-b91c1a352a39aa.mp3",
+    "pitch": []
+  },
+  "電気をつけていただけませんか。": {
+    "src": "./audio/speech/ja-44de851f81f63a.mp3",
+    "pitch": []
+  },
+  "私はペンを無くしてしまった。": {
+    "src": "./audio/speech/ja-2f9af35de67fdb.mp3",
+    "pitch": []
+  },
+  "学校を出たあと、どうするつもり？": {
+    "src": "./audio/speech/ja-3f2b5225784f87.mp3",
+    "pitch": []
+  },
+  "アメリカでは英語を話します。": {
+    "src": "./audio/speech/ja-eca3aa52e682b7.mp3",
+    "pitch": []
+  },
+  "私は土曜日からここにいます。": {
+    "src": "./audio/speech/ja-382cbd3502b80e.mp3",
+    "pitch": []
+  },
+  "木はたとえあってもほとんどない。": {
+    "src": "./audio/speech/ja-d23a72fa2995e6.mp3",
+    "pitch": []
+  },
+  "ジョンのことが新聞に出ていた。": {
+    "src": "./audio/speech/ja-43917a91a722c5.mp3",
+    "pitch": []
+  },
+  "食堂は何時にあきますか。": {
+    "src": "./audio/speech/ja-c260bf322db940.mp3",
+    "pitch": []
+  },
+  "マユコは自転車で学校にいく。": {
+    "src": "./audio/speech/ja-a3bf9f60cc3662.mp3",
+    "pitch": []
+  },
+  "「ユリ」を英語で何といいますか。": {
+    "src": "./audio/speech/ja-196dd273b45750.mp3",
+    "pitch": []
+  },
+  "フランスは英国の南にある。": {
+    "src": "./audio/speech/ja-95933e8e2eaa30.mp3",
+    "pitch": []
+  },
+  "新しい万年筆をなくしてしまった。": {
+    "src": "./audio/speech/ja-ad55ceac9f5fa9.mp3",
+    "pitch": []
+  },
+  "私は毎晩家にいます。": {
+    "src": "./audio/speech/ja-169b8f4b961195.mp3",
+    "pitch": []
+  },
+  "黒に黒をたしても白にはならぬ。": {
+    "src": "./audio/speech/ja-7d4af522e565e3.mp3",
+    "pitch": []
+  },
+  "一日いい天気になりそうですよ。": {
+    "src": "./audio/speech/ja-456c2a23d4a316.mp3",
+    "pitch": []
+  },
+  "ダンはよくお母さんにしかられる。": {
+    "src": "./audio/speech/ja-655a45a45ee1cf.mp3",
+    "pitch": []
+  },
+  "火曜日に国会が開かれる。": {
+    "src": "./audio/speech/ja-4d3c0eb78ff719.mp3",
+    "pitch": []
+  },
+  "アラビア語は右から左へ書きます。": {
+    "src": "./audio/speech/ja-a8884504243e0d.mp3",
+    "pitch": []
+  },
+  "本を読む時間がほとんどないんだ。": {
+    "src": "./audio/speech/ja-b6804374cbb401.mp3",
+    "pitch": []
+  },
+  "よい友達がたくさんいてうれしい。": {
+    "src": "./audio/speech/ja-2136f66225d491.mp3",
+    "pitch": []
+  },
+  "入るお金が右から左へと出てしまう。": {
+    "src": "./audio/speech/ja-fb4f104fbedc9b.mp3",
+    "pitch": []
+  },
+  "父はまだ休んでいる。": {
+    "src": "./audio/speech/ja-daae57a48c9f5f.mp3",
+    "pitch": []
+  },
+  "お父さんからことづけがあります。": {
+    "src": "./audio/speech/ja-3b218c079d12f0.mp3",
+    "pitch": []
+  },
+  "木のおかげで雨にぬれずにすんだ。": {
+    "src": "./audio/speech/ja-ccf29bee30d517.mp3",
+    "pitch": []
+  },
+  "いや、大丈夫だ。": {
+    "src": "./audio/speech/ja-9bb3f93441b1e8.mp3",
+    "pitch": []
+  },
+  "誰がこれをしたのかはわからない。": {
+    "src": "./audio/speech/ja-a8bf37afa1216a.mp3",
+    "pitch": []
+  },
+  "その写真はアルバムに貼ったほうがよい。": {
+    "src": "./audio/speech/ja-69117dad39b337.mp3",
+    "pitch": []
   }
 }

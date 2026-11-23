@@ -18,7 +18,18 @@ function lessonAudioSpeaker(item) {
   return match ? match[1] : null;
 }
 
-Object.assign(globalThis, { buildLessonAudioQueue, lessonAudioSpeaker });
+function buildKanjiListeningQueue(records = globalThis.SAKURA_KANJI_LISTENING) {
+  if (!Array.isArray(records)) return [];
+  return records.map((item, index) => ({
+    ...item,
+    kind: 'kanji',
+    section: `Kanji ${index + 1} of ${records.length} · ${item.character}`,
+    jp: item.kanji,
+    audioKey: item.kanji.normalize('NFC').replace(/\s+/g, ''),
+  }));
+}
+
+Object.assign(globalThis, { buildLessonAudioQueue, buildKanjiListeningQueue, lessonAudioSpeaker });
 
 function phraseAudioKey(text) { return String(text || '').normalize('NFC').replace(/\s+/g, ''); }
 function conversationItem(lesson, line, lineIndex=0) {

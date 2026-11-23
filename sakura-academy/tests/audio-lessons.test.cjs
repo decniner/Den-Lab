@@ -54,7 +54,7 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(appSource, /function restartAudioLesson\(\)/);
   assert.match(appSource, /Audio lessons/);
   assert.match(appSource, /audioLessonStatus/);
-  assert.match(appSource, /role="progressbar" aria-label="\$\{conversation\?'Conversation':'Audio lesson'\} progress"/);
+  assert.match(appSource, /role="progressbar" aria-label="\$\{kanji\?'Kanji listening':conversation\?'Conversation':'Audio lesson'\} progress"/);
   assert.match(appSource, /if\(view==='audio'&&v!=='audio'\)/);
   assert.match(appSource, /audio-dialogue-scene/);
   assert.match(appSource, /audioSpeaker'\+role/);
@@ -84,8 +84,8 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.match(stylesSource, /audio-stick-figure\{width:auto;height:clamp\(150px,25vh,240px\)/);
   assert.match(stylesSource, /audio-dialogue-scene\{min-height:clamp\(285px,38svh,380px\)/);
   assert.match(stylesSource, /audio-stick-figure\{height:clamp\(145px,22svh,185px\)/);
-  const audioScreen = appSource.slice(appSource.indexOf('function audioLessons()'), appSource.indexOf('\n', appSource.indexOf('function audioLessons()')));
-  assert.ok(audioScreen.indexOf('class="audio-mode-switch"') < audioScreen.indexOf('audioDialogueScene(l)'), 'conversation mode should be selected before its speaker scene');
+  const audioMarkup = appSource.slice(appSource.indexOf("return `${header('Audio lessons'"), appSource.indexOf('\nfunction ', appSource.indexOf("return `${header('Audio lessons'")));
+  assert.ok(audioMarkup.indexOf('class="audio-mode-switch"') < audioMarkup.indexOf('audioDialogueScene(l)'), 'activity selector should precede the speaker scene in the rendered layout');
   assert.doesNotMatch(stylesSource, /\.audio-controls\{position:sticky/);
 });
 
