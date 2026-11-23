@@ -1092,6 +1092,42 @@
       "reference_price": "52800",
       "sent_at": "2026-11-22T10:50:06+09:00",
       "url": "https://saucony.jp/products/endorphin-elite-2-s-n02?variant=45827098738840"
+    },
+    "saucony-jp:8596863680664:45827023601816": {
+      "sale_price": "6600",
+      "reference_price": "22000",
+      "sent_at": "2026-11-23T11:08:42+09:00",
+      "url": "https://saucony.jp/products/mens-ride-18-n02?variant=45827023601816"
+    },
+    "saucony-jp:8596864106648:47078023430296": {
+      "sale_price": "17600",
+      "reference_price": "44000",
+      "sent_at": "2026-11-23T11:08:42+09:00",
+      "url": "https://saucony.jp/products/endorphin-elite-2-n02?variant=47078023430296"
+    },
+    "saucony-jp:8596871184536:45827093561496": {
+      "sale_price": "14080",
+      "reference_price": "35200",
+      "sent_at": "2026-11-23T11:08:42+09:00",
+      "url": "https://saucony.jp/products/grid-x-ultra-s?variant=45827093561496"
+    },
+    "saucony-jp:8834445639832:47213865894040": {
+      "sale_price": "14080",
+      "reference_price": "35200",
+      "sent_at": "2026-11-23T11:08:42+09:00",
+      "url": "https://saucony.jp/products/grid-x-ultra-s-n02?variant=47213865894040"
+    },
+    "saucony-jp:8596859879576:45826996109464": {
+      "sale_price": "13200",
+      "reference_price": "33000",
+      "sent_at": "2026-11-23T11:08:42+09:00",
+      "url": "https://saucony.jp/products/womens-endorphin-pro-4-n02?variant=45826996109464"
+    },
+    "saucony-jp:8596861517976:45827009380504": {
+      "sale_price": "13200",
+      "reference_price": "33000",
+      "sent_at": "2026-11-23T11:08:42+09:00",
+      "url": "https://saucony.jp/products/mens-endorphin-pro-4-n02?variant=45827009380504"
     }
   },
   "last_digest": {
