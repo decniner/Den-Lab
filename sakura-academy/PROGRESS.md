@@ -4,16 +4,18 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 98
+- Total tracked: 100
 - Work in progress: 0
 - New: 0
-- Closed: 98
-- Timeline gaps: 87
+- Closed: 100
+- Timeline gaps: 89
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-100 — Opening a stroke-order guide does not automatically play the sequence | Codex | Closed | 100% | 2026-11-23 | Not recorded |
+| SA-099 — Kanji outside the curated Explorer list are not underlined or tappable in sentences | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-098 — Kanji in study text cannot open its Explorer and return to the lesson | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-097 — N5 Grammar and Kanji study views require excessive scrolling | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-096 — N5 vocabulary action buttons use long inconsistent labels | Codex | Closed | 100% | 2026-11-22 | Not recorded |
@@ -1308,3 +1310,28 @@ Every published app change must bump the small footer version and its update dat
 - **Impact:** Learners must leave the current activity and find the kanji manually, then reconstruct where they were studying.
 - **Fix:** Make known kanji tappable, open the matching Explorer entry, and provide a return action that restores the source section and scroll position.
 - **Verification:** At 390 × 844, tapping 学 in the N5 Grammar example opens its matching Kanji Explorer card. Return restores the same Grammar point with Focus mode intact. The full suite passes 123 tests.
+
+
+### SA-099 — Kanji outside the curated Explorer list are not underlined or tappable in sentences · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** In 私は学生です。, all three kanji are underlined and keyboard/touch accessible. 私 opens a context card with sentence-specific reading わたし; 学 and 生 open their curated Explorer cards. Return restores the Grammar study view.
+- **Impact:** Resolved: learners can open every kanji used in sentence text and return to where they were studying.
+- **Fix:** Wrap every Han character as an accessible link. Curated characters open their full card; other characters open an in-context card with sentence-backed furigana when available.
+- **Verification:** At 390 × 844, all three links were visible in Grammar Study, and tapping 私 opened its context card with わたし. Returning restored the study view. The full suite passes 123 tests.
+
+
+### SA-100 — Opening a stroke-order guide does not automatically play the sequence · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** At 390 × 844, expanding “View correct stroke order” automatically starts the numbered animation; progress advances through Stroke 4 of 4.
+- **Impact:** Resolved: learners see the character’s stroke sequence as soon as they open its guide.
+- **Fix:** Start the KanjiVG stroke-step animation when the Explorer disclosure opens, and stop it when closed.
+- **Verification:** The mobile preview showed all four strokes animated in sequence after opening 日’s guide. The full suite passes 123 tests.
+
+
+### Release v1.5.132 — 2026-11-23
+
+- **Changes:** Every kanji in Japanese sentence text is underlined and opens Kanji Explorer. Curated characters use their full Explorer card; other characters open a sentence context card with source-backed furigana readings where available. Return restores the previous study view. Opening a Kanji Explorer stroke-order disclosure autoplays the sequence and closing it stops playback.
+- **Verification:** All 123 automated tests pass. At 390 × 844, 私は学生です。 exposes tappable 私・学・生; 私 shows the sentence reading わたし and Return restores Grammar Study. Opening 日’s stroke guide autoplays through Stroke 4 of 4.
+- **Tracker:** SA-099 and SA-100 closed. Total 100; 0 Work in progress; 0 New; 100 Closed; 89 timeline gaps.

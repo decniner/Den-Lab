@@ -121,7 +121,7 @@ test('Kanji Explorer displays the bundled stroke-order guide for the selected ch
   assert.match(kanjiPage, /Finish & mark studied/);
   assert.match(kanjiPage, /Next kanji/);
   assert.match(kanjiPage, /Hear example/);
-  assert.match(kanjiPage, /<details class="kanji-stroke-details"><summary>View correct stroke order/);
+  assert.match(kanjiPage, /<details class="kanji-stroke-details" ontoggle="if\(this\.open\)playKanjiStrokeOrder/);
   assert.match(kanjiPage, /kanjiIndex===0\?'disabled'/);
   assert.match(kanjiPage, /onclick=\"nextKanji\(\)\"/);
 });
