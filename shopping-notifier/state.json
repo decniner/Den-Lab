@@ -416,9 +416,9 @@
       "url": "https://saucony.jp/products/mens-endorphin-trainer?variant=45827018424472"
     },
     "saucony-jp:8596880752792:45827129344152": {
-      "sale_price": "15400",
+      "sale_price": "12320",
       "reference_price": "30800",
-      "sent_at": "2026-11-09T10:22:15+09:00",
+      "sent_at": "2026-11-23T11:08:43+09:00",
       "url": "https://saucony.jp/products/womens-endorphin-trainer?variant=45827129344152"
     },
     "brooksrunning-co-jp:8467328172329:45789177250089": {
@@ -1128,12 +1128,30 @@
       "reference_price": "33000",
       "sent_at": "2026-11-23T11:08:42+09:00",
       "url": "https://saucony.jp/products/mens-endorphin-pro-4-n02?variant=45827009380504"
+    },
+    "saucony-jp:8861400105112:47312776069272": {
+      "sale_price": "12760",
+      "reference_price": "31900",
+      "sent_at": "2026-11-23T11:08:43+09:00",
+      "url": "https://saucony.jp/products/grid-aura-x-gtx-n02?variant=47312776069272"
+    },
+    "saucony-jp:8760498389144:46756634165400": {
+      "sale_price": "12320",
+      "reference_price": "30800",
+      "sent_at": "2026-11-23T11:08:43+09:00",
+      "url": "https://saucony.jp/products/mens-triumph-23-gtx-n02?variant=46756634165400"
+    },
+    "saucony-jp:8760503795864:46756652875928": {
+      "sale_price": "12320",
+      "reference_price": "30800",
+      "sent_at": "2026-11-23T11:08:43+09:00",
+      "url": "https://saucony.jp/products/womens-triumph-23-gtx-n02?variant=46756652875928"
     }
   },
   "last_digest": {
-    "date": "2026-11-22",
-    "coverage_key": "52077b8fd7eaa897c62c94a0d7a8ba74355c6f2f39429280301832912f9146ea",
-    "completed_at": "2026-11-22T10:50:06+09:00",
-    "digest_hash": "5e7a74a46f6906a4e96a24389740d992c0095626b995684715b106a84d1f5948"
+    "date": "2026-11-23",
+    "coverage_key": "3d240545dd43303b1e9658b5d0b582a1115602e9c5ac9caed91018a4be59f7a4",
+    "completed_at": "2026-11-23T11:08:43+09:00",
+    "digest_hash": "c49050241a5fcebf40b7a0606f5ccd71e876a5b0f5487acb002b74f6b855e97f"
   }
 }
