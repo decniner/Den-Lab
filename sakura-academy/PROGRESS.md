@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 105
+- Total tracked: 106
 - Work in progress: 0
 - New: 0
-- Closed: 105
-- Timeline gaps: 94
+- Closed: 106
+- Timeline gaps: 95
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-106 — Kanji listening playlist cannot return to a previous sample | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-105 — Kanji Explorer has no continuous sample-sentence listening mode | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-104 — Selecting a kanji in Explorer does not autoplay its stroke order | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-103 — Tapping a Kana Masterclass character does not animate its stroke order | Codex | Closed | 100% | 2026-11-23 | Not recorded |
@@ -1396,3 +1397,19 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Added a continuous offline Kanji listening playlist covering all 84 N5 kanji. The large active character and sentence display karaoke-style kana on request and highlight each character during Kokoro playback. Tatoeba source links accompany sourced examples; four original beginner examples fill coverage gaps.
 - **Verification:** All 128 automated tests pass, including playlist coverage, issue tracker consistency, service-worker precache, and standalone offline build. A 400 × 726 mobile browser preview confirms the Kanji mode and Focus layout keep the active character and full sentence visible.
 - **Tracker:** SA-105 closed. Total 105; 0 Work in progress; 0 New; 105 Closed; 94 timeline gaps.
+
+
+### SA-106 — Kanji listening playlist cannot return to a previous sample · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** The Kanji player now has Play/Pause and a Previous control. Previous goes back one sample and starts it immediately during playback; when paused, it selects the earlier sentence and stays paused, and Resume loads that selected clip. The control is disabled until a previous sample exists. Focused interaction tests cover active and paused transitions.
+- **Impact:** Resolved: learners can revisit the prior kanji sentence during the continuous playlist, including without interrupting a paused listening session.
+- **Fix:** Added the mobile-friendly Previous control and preserved the selected sample when paused.
+- **Verification:** All 129 automated tests pass, including the active and paused rewind transitions. The static offline build succeeds. I could not reopen the responsive Chrome preview this turn because the shared UI returned `noWindowsAvailable`, so the new control row has automated but not visual mobile review.
+
+
+### Release v1.5.137 — 2026-11-23
+
+- **Changes:** Added Previous to the Kanji playlist so learners can rewind one sample sentence; pause/resume preserves the selected earlier sample.
+- **Verification:** All 129 automated tests pass, and the static offline build succeeds. The new rewind controls have automated transition coverage; mobile visual review could not be completed because the shared Chrome UI returned `noWindowsAvailable`.
+- **Tracker:** SA-106 closed. Total 106; 0 Work in progress; 0 New; 106 Closed; 95 timeline gaps.

@@ -89,6 +89,42 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.doesNotMatch(stylesSource, /\.audio-controls\{position:sticky/);
 });
 
+test('Kanji playlist can go back to the previous sentence and resume correctly after a pause', () => {
+  const rewindFunction = appSource.split('\n').find(line => line.startsWith('function rewindKanjiAudio('));
+  assert.ok(rewindFunction, 'Kanji player exposes a previous-sentence action');
+  assert.match(appSource, /aria-label="Previous kanji sentence"/);
+  assert.match(appSource, /!isActive\|\|audioLessonIndex===0\?'disabled':''/);
+
+  let played = 0, updated = 0, paused = 0;
+  const sandbox = {
+    audioMode: 'kanji', audioLessonQueue: [{}, {}, {}], audioLessonIndex: 2,
+    audioLessonPaused: false, audioLessonComplete: true,
+    audioEchoPending: false, audioEchoReplay: false,
+    audioPlayer: { src: 'current.mp3', pause() { paused++; } },
+    playAudioLessonStep() { played++; }, updateAudioLessonStatus() { updated++; },
+  };
+  vm.runInNewContext(`${rewindFunction}\nrewindKanjiAudio()`, sandbox);
+  assert.equal(sandbox.audioLessonIndex, 1);
+  assert.equal(sandbox.audioLessonComplete, false);
+  assert.equal(paused, 1);
+  assert.equal(played, 1);
+
+  sandbox.audioLessonPaused = true;
+  sandbox.audioLessonIndex = 2;
+  sandbox.audioPlayer.src = 'current.mp3';
+  vm.runInNewContext(`${rewindFunction}\nrewindKanjiAudio()`, sandbox);
+  assert.equal(sandbox.audioLessonIndex, 1);
+  assert.equal(sandbox.kanjiAudioResumeFromStart, true);
+  assert.equal(played, 1, 'rewind while paused does not resume audio');
+  assert.equal(updated, 1);
+
+  const toggleFunction = appSource.split('\n').find(line => line.startsWith('function toggleAudioLesson('));
+  vm.runInNewContext(`${toggleFunction}\ntoggleAudioLesson()`, sandbox);
+  assert.equal(sandbox.audioLessonPaused, false);
+  assert.equal(sandbox.kanjiAudioResumeFromStart, false);
+  assert.equal(played, 2, 'resuming after rewind loads the selected previous sentence');
+});
+
 test('Kanji Explorer gives every kanji a visual memory cue, saves study picks, and marks Next as studied', () => {
   const n5Data = fs.readFileSync(path.join(project, 'src/n5-data.js'), 'utf8');
   const sandbox = {};
