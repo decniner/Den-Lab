@@ -32,18 +32,31 @@ def audio_key(text):
 phrases = []
 for item in items:
     key = audio_key(item["kanji"])
-    fingerprint = f"{key}|{item['kana']}"
+    spoken_text = item.get("audioText", item["kana"])
+    phoneme_replacements = item.get("audioPhonemeReplacements", [])
+    override_key = json.dumps(phoneme_replacements, ensure_ascii=False, separators=(",", ":"))
+    fingerprint = f"{key}|{spoken_text}"
+    if phoneme_replacements:
+        fingerprint += f"|{override_key}"
     filename = f"ja-{hashlib.sha256(fingerprint.encode('utf-8')).hexdigest()[:14]}.mp3"
     destination = audio_dir / filename
-    phrases.append((key, item["kana"], filename, destination))
+    phrases.append((key, spoken_text, phoneme_replacements, filename, destination))
 
-missing = [item for item in phrases if not item[3].exists()]
+missing = [item for item in phrases if not item[4].exists()]
 if missing:
     pipeline = KPipeline(lang_code="j")
     with tempfile.TemporaryDirectory(prefix="sakura-kanji-listening-") as tmp:
         wav = Path(tmp) / "kanji-listening.wav"
-        for index, (key, reading, filename, destination) in enumerate(missing, 1):
-            chunks = [np.asarray(audio) for _, _, audio in pipeline(reading, voice="jf_alpha", speed=0.9)]
+        for index, (key, spoken_text, replacements, filename, destination) in enumerate(missing, 1):
+            if replacements:
+                phonemes, _ = pipeline.g2p(spoken_text)
+                for replacement in replacements:
+                    phonemes, count = re.subn(re.escape(replacement["from"]), replacement["to"], phonemes, count=1)
+                    if count != 1:
+                        raise RuntimeError(f"Pronunciation override did not match Kokoro phonemes for: {key}")
+                chunks = [np.asarray(result.audio) for result in pipeline.generate_from_tokens(phonemes, voice="jf_alpha", speed=0.9)]
+            else:
+                chunks = [np.asarray(audio) for _, _, audio in pipeline(spoken_text, voice="jf_alpha", speed=0.9)]
             if not chunks:
                 raise RuntimeError(f"Kokoro returned no audio for: {key}")
             sf.write(wav, np.concatenate(chunks), 24000)
@@ -54,7 +67,7 @@ if missing:
             if index % 20 == 0 or index == len(missing):
                 print(f"Generated {index}/{len(missing)} kanji clips", flush=True)
 
-for key, reading, filename, destination in phrases:
+for key, spoken_text, replacements, filename, destination in phrases:
     manifest[key] = {"src": f"./audio/speech/{filename}", "pitch": []}
 
 manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"

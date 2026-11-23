@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 106
+- Total tracked: 107
 - Work in progress: 0
 - New: 0
-- Closed: 106
-- Timeline gaps: 95
+- Closed: 107
+- Timeline gaps: 96
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-107 — Kokoro mispronounces 二十日 in its sentence audio | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-106 — Kanji listening playlist cannot return to a previous sample | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-105 — Kanji Explorer has no continuous sample-sentence listening mode | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-104 — Selecting a kanji in Explorer does not autoplay its stroke order | Codex | Closed | 100% | 2026-11-23 | Not recorded |
@@ -1413,3 +1414,18 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Added Previous to the Kanji playlist so learners can rewind one sample sentence; pause/resume preserves the selected earlier sample.
 - **Verification:** All 129 automated tests pass, and the static offline build succeeds. The new rewind controls have automated transition coverage; mobile visual review could not be completed because the shared Chrome UI returned `noWindowsAvailable`.
 - **Tracker:** SA-106 closed. Total 106; 0 Work in progress; 0 New; 106 Closed; 95 timeline gaps.
+
+### SA-107 — Kokoro mispronounces 二十日 in its sentence audio · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Kokoro’s G2P was converting the first は in はつか to βa, its wa/particle sound, producing the reported watsuka pronunciation. The generator now applies a sample-specific βaʦɨka → haʦɨka phoneme correction before synthesis. A regenerated offline clip is bundled; Japanese Whisper base now transcribes the phrase as 私は初かまでに帰るつもりです (hatsu onset), no longer ワツカ.
+- **Impact:** Resolved: the sample audio now preserves the hatsu onset while the displayed text and kana reading remain aligned.
+- **Fix:** Added a pronunciation override for the Japanese Kokoro phonemes and regenerated the affected sample clip.
+- **Verification:** Listening-data test confirms the override, manifest clip, and offline asset. A separate Japanese Whisper check no longer transcribes ワツカ.
+
+
+### Release v1.5.138 — 2026-11-23
+
+- **Changes:** Corrected Kokoro G2P’s wa-like reading of 二十日 in 私は二十日までに帰るつもりです。 The visible kana remains はつか; only this clip’s phoneme sequence is overridden to pronounce the h onset.
+- **Verification:** All 130 automated tests pass, including the static offline build and tracker checks. Japanese Whisper base transcribes the regenerated sample with the hatsu onset rather than ワツカ; this is an automated transcript check, not a human listening assessment.
+- **Tracker:** SA-107 closed. Total 107; 0 Work in progress; 0 New; 107 Closed; 96 timeline gaps.

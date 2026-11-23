@@ -58,6 +58,8 @@ globalThis.SAKURA_KANJI_LISTENING=Object.freeze([
     "kanji": "私は二十日までに帰るつもりです。",
     "furigana": "{私|わたし}は{二十日|はつか}までに{帰|かえ}るつもりです。",
     "kana": "わたしははつかまでにかえるつもりです。",
+    "audioText": "わたしは、はつかまでにかえるつもりです。",
+    "audioPhonemeReplacements": [{"from":"βaʦɨka","to":"haʦɨka"}],
     "en": "I expect to be back by the 20th.",
     "tatoebaId": 154765,
     "source": "Tatoeba"

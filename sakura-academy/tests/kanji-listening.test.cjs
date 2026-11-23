@@ -36,6 +36,24 @@ test('Kanji listening queue covers all 84 kanji with aligned sentence readings a
   }
 });
 
+test('the 二十日 Kokoro sample uses an explicit hatsuka reading with a pause', () => {
+  const match = dataSource.match(/globalThis\.SAKURA_KANJI_LISTENING=Object\.freeze\((\[.*?\])\);/s);
+  assert.ok(match, 'listening dataset is parseable');
+  const entries = JSON.parse(match[1]);
+  const item = entries.find(entry => entry.kanji === '私は二十日までに帰るつもりです。');
+  assert.ok(item, 'the 二十日 sample is present');
+  assert.equal(item.kana, 'わたしははつかまでにかえるつもりです。', 'learner reading stays aligned with the sentence');
+  assert.equal(item.audioText, 'わたしは、はつかまでにかえるつもりです。', 'Kokoro receives a prosodic pause before hatsuka');
+  assert.deepEqual(item.audioPhonemeReplacements, [{ from: 'βaʦɨka', to: 'haʦɨka' }], 'G2P receives the correct h onset instead of the particle reading wa');
+  const generator = fs.readFileSync(path.join(project, 'scripts/generate_kanji_listening_audio.py'), 'utf8');
+  assert.match(generator, /item\.get\("audioText",\s*item\["kana"\]\)/);
+  assert.match(generator, /pipeline\.g2p\(spoken_text\)/);
+  assert.match(generator, /pipeline\.generate_from_tokens\(phonemes/);
+  const manifest = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
+  const asset = path.join(project, manifest[item.kanji].src.replace(/^\.\//, ''));
+  assert.ok(fs.statSync(asset).size > 1000, 'the corrected sample is bundled for offline playback');
+});
+
 test('Audio lessons exposes a continuous Kanji listening mode with optional karaoke kana', () => {
   assert.match(appSource, /setAudioMode\('kanji'\)/);
   assert.match(appSource, /Show kana/);
