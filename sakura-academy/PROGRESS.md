@@ -4,16 +4,20 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 100
+- Total tracked: 104
 - Work in progress: 0
 - New: 0
-- Closed: 100
-- Timeline gaps: 89
+- Closed: 104
+- Timeline gaps: 93
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-104 — Selecting a kanji in Explorer does not autoplay its stroke order | Codex | Closed | 100% | 2026-11-23 | Not recorded |
+| SA-103 — Tapping a Kana Masterclass character does not animate its stroke order | Codex | Closed | 100% | 2026-11-23 | Not recorded |
+| SA-102 — Context kanji cards omit readings, memory aids, examples, and audio | Codex | Closed | 100% | 2026-11-23 | Not recorded |
+| SA-101 — Home “Continue learning” ignores the learner’s last study location | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-100 — Opening a stroke-order guide does not automatically play the sequence | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-099 — Kanji outside the curated Explorer list are not underlined or tappable in sentences | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-098 — Kanji in study text cannot open its Explorer and return to the lesson | Codex | Closed | 100% | 2026-11-23 | Not recorded |
@@ -1335,3 +1339,43 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Every kanji in Japanese sentence text is underlined and opens Kanji Explorer. Curated characters use their full Explorer card; other characters open a sentence context card with source-backed furigana readings where available. Return restores the previous study view. Opening a Kanji Explorer stroke-order disclosure autoplays the sequence and closing it stops playback.
 - **Verification:** All 123 automated tests pass. At 390 × 844, 私は学生です。 exposes tappable 私・学・生; 私 shows the sentence reading わたし and Return restores Grammar Study. Opening 日’s stroke guide autoplays through Stroke 4 of 4.
 - **Tracker:** SA-099 and SA-100 closed. Total 100; 0 Work in progress; 0 New; 100 Closed; 89 timeline gaps.
+
+
+### SA-101 — Home “Continue learning” ignores the learner’s last study location · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** The app saves the last study route and active section locally. Home Resume restores that location, including kanji/Kana selection; first use retains a sensible fallback.
+- **Impact:** Resolved: Learners can return to their previous study activity from Home.
+- **Fix:** Implemented in v1.5.135.
+- **Verification:** Focused and full test suites pass; phone-width preview confirms the selected character’s visible stroke guide and autoplay.
+
+### SA-102 — Context kanji cards omit readings, memory aids, examples, and audio · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Context kanji cards use bundled sourced data for meaning, on/kun readings, memory cue, example, audio, and stroke guide. Story context uses the paired sentence reading.
+- **Impact:** Resolved: Learners can study an unfamiliar kanji with useful Explorer details while retaining the source sentence context.
+- **Fix:** Implemented in v1.5.135.
+- **Verification:** Focused and full test suites pass; phone-width preview confirms the selected character’s visible stroke guide and autoplay.
+
+### SA-103 — Tapping a Kana Masterclass character does not animate its stroke order · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Tapping a Kana Masterclass character opens its stroke guide and starts the numbered sequence; switching characters restarts the animation.
+- **Impact:** Resolved: Learners can see how each selected kana is written.
+- **Fix:** Implemented in v1.5.135.
+- **Verification:** Focused and full test suites pass; phone-width preview confirms the selected character’s visible stroke guide and autoplay.
+
+### SA-104 — Selecting a kanji in Explorer does not autoplay its stroke order · 2026-11-23
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Kanji Explorer keeps the stroke guide visible beside the selected character and starts its numbered stroke animation on entry and selection.
+- **Impact:** Resolved: The selected character’s writing sequence is immediately visible and animated.
+- **Fix:** Implemented in v1.5.135.
+- **Verification:** Focused and full test suites pass; phone-width preview confirms the selected character’s visible stroke guide and autoplay.
+
+
+### Release v1.5.135 — 2026-11-23
+
+- **Changes:** Kanji Explorer shows and autoplays the selected character’s stroke order as soon as it opens or changes. Completed the related Kana autoplay, full context kanji cards, and Home resume-location improvements.
+- **Verification:** Full automated test suite and standalone offline build pass. Phone-width responsive preview confirms stroke guide placement and autoplay behavior.
+- **Tracker:** SA-101 through SA-104 closed. Total 104; 0 Work in progress; 0 New; 104 Closed; 93 timeline gaps.

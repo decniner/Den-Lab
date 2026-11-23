@@ -16,8 +16,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.132"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.132"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.132"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.132"><\/script><script src="src\/app\.js\?v=1\.5\.132">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.135"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.135"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.135"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.135"><\/script><script src="src\/app\.js\?v=1\.5\.135">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -111,7 +111,7 @@ test('starting a kana recognition question scrolls its prompt into view', () => 
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.132"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.135"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -126,7 +126,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.132"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.135"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -184,9 +184,28 @@ test('kanji in learning text opens its matching explorer card and returns to the
   assert.match(styles, /\.kanji-tap-target\{cursor:pointer;text-decoration:underline dotted/);
 });
 
+test('Kana Masterclass shows and plays stroke order after a character is selected', () => {
+  assert.match(appSource, /kanaSelectedCharacter=''/);
+  assert.match(appSource, /function kanaPick\(ch\)[\s\S]*?kanaSelectedCharacter=ch/);
+  assert.match(appSource, /if\(view==='kana'&&kanaSelectedCharacter&&STROKES\[kanaSelectedCharacter\]\)requestAnimationFrame\(\(\)=>playKanjiStrokeOrder/);
+  assert.match(appSource, /Selected kana stroke order[\s\S]*?id=\"kanjiStrokeGuide\"/);
+});
+
+test('Kanji Explorer always shows and autoplays the selected stroke order', () => {
+  assert.match(appSource, /function kanjiStrokePaths\(ch\).*SAKURA_KANJI_SUPPLEMENTAL/);
+  assert.match(appSource, /if\(view==='kanji'&&\(kanjiContextCard\|\|KANJI\[kanjiIndex\]\)\)requestAnimationFrame\(\(\)=>playKanjiStrokeOrder/);
+  assert.match(appSource, /id=\"kanjiStrokeGuide\" class=\"kanji-stroke-guide\"/);
+  assert.doesNotMatch(appSource, /<details class=\"kanji-stroke-details\"/);
+  assert.match(appSource, /function playKanjiStrokeOrder\(ch\)[\s\S]*?strokeTimer=setInterval/);
+  assert.match(indexHtml, /src=\"src\/data\/kanji-explorer-supplemental.js\?v=1\.5\.135\"><\/script>/);
+  assert.match(appSource, /function kanjiContextPage\(\)[\s\S]*?On’yomi:[\s\S]*?Kun’yomi:[\s\S]*?Visual memory[\s\S]*?Hear example/);
+  assert.match(appSource, /N5_STORIES\.flatMap/);
+  assert.match(appSource, /\.n5-story-line/);
+});
+
 test('context Explorer readings follow the sentence furigana', () => {
   const helper = appSource.match(/function kanjiContextDetails\(ch,context\)\{[\s\S]*?\nfunction kanjiContextPage/)[0].replace(/\nfunction kanjiContextPage$/, '');
-  const context = { N5_GRAMMAR: [{ examples: [{ ja: '私は学生です。', furigana: '{私|わたし}は{学生|がくせい}です。' }] }], N5_VOCAB: [{ word: '私', meanings: ['I'] }] };
+  const context = { N5_GRAMMAR: [{ examples: [{ ja: '私は学生です。', furigana: '{私|わたし}は{学生|がくせい}です。' }] }], N5_VOCAB: [{ word: '私', reading: 'わたし', meanings: ['I'] }], N5_STORIES: [], KANJI: [], KANJI_MEMORY: {} };
   vm.runInNewContext(`${helper};globalThis.reading=kanjiContextDetails('私','私は学生です。').reading;globalThis.meaning=kanjiContextDetails('私','私は学生です。').meaning`, context);
   assert.equal(context.reading, 'わたし');
   assert.equal(context.meaning, 'I');
