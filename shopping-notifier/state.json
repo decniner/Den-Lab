@@ -1158,12 +1158,36 @@
       "reference_price": "33000",
       "sent_at": "2026-11-24T14:45:26+09:00",
       "url": "https://saucony.jp/products/mens-endorphin-pro-4-n02?variant=45827009446040"
+    },
+    "saucony-jp:8755759906968:46733487046808": {
+      "sale_price": "11880",
+      "reference_price": "29700",
+      "sent_at": "2026-11-24T14:45:28+09:00",
+      "url": "https://saucony.jp/products/womens-endorphin-speed-5-n02?variant=46733487046808"
+    },
+    "saucony-jp:8872047607960:47357620945048": {
+      "sale_price": "11880",
+      "reference_price": "29700",
+      "sent_at": "2026-11-24T14:45:28+09:00",
+      "url": "https://saucony.jp/products/womens-keith-haring-x-endorphin-speed-5-n02?variant=47357620945048"
+    },
+    "saucony-jp:8596869578904:45827083927704": {
+      "sale_price": "11440",
+      "reference_price": "28600",
+      "sent_at": "2026-11-24T14:45:28+09:00",
+      "url": "https://saucony.jp/products/matrix-n02?variant=45827083927704"
+    },
+    "saucony-jp:8596871676056:45827097067672": {
+      "sale_price": "11440",
+      "reference_price": "28600",
+      "sent_at": "2026-11-24T14:45:28+09:00",
+      "url": "https://saucony.jp/products/kinvara-1-s?variant=45827097067672"
     }
   },
   "last_digest": {
-    "date": "2026-11-23",
-    "coverage_key": "3d240545dd43303b1e9658b5d0b582a1115602e9c5ac9caed91018a4be59f7a4",
-    "completed_at": "2026-11-23T11:08:43+09:00",
-    "digest_hash": "c49050241a5fcebf40b7a0606f5ccd71e876a5b0f5487acb002b74f6b855e97f"
+    "date": "2026-11-24",
+    "coverage_key": "0b8260b0443051f494df9083e2c81e99ed0138ae3eeab983415c61152dbb4e62",
+    "completed_at": "2026-11-24T14:45:28+09:00",
+    "digest_hash": "11f95c38e7845e76a83ddae7ecc11aca03222d34f7d9db7a6736fa44be812150"
   }
 }
