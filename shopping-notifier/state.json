@@ -446,9 +446,9 @@
       "url": "https://saucony.jp/products/progrid-triumph-4-n02?variant=45827081666712"
     },
     "saucony-jp:8596860502168:45827000467608": {
-      "sale_price": "13750",
+      "sale_price": "11000",
       "reference_price": "27500",
-      "sent_at": "2026-10-06T11:03:34+09:00",
+      "sent_at": "2026-11-25T13:44:57+09:00",
       "url": "https://saucony.jp/products/womens-tempus-2?variant=45827000467608"
     },
     "saucony-jp:8596861321368:45827008266392": {
@@ -458,15 +458,15 @@
       "url": "https://saucony.jp/products/hurricane-24?variant=45827008266392"
     },
     "saucony-jp:8596862468248:45827015671960": {
-      "sale_price": "13750",
+      "sale_price": "11000",
       "reference_price": "27500",
-      "sent_at": "2026-10-07T10:10:20+09:00",
+      "sent_at": "2026-11-25T13:44:57+09:00",
       "url": "https://saucony.jp/products/mens-tempus-2?variant=45827015671960"
     },
     "saucony-jp:8596866433176:45827052568728": {
-      "sale_price": "13750",
+      "sale_price": "11000",
       "reference_price": "27500",
-      "sent_at": "2026-10-07T10:10:20+09:00",
+      "sent_at": "2026-11-25T13:44:57+09:00",
       "url": "https://saucony.jp/products/progrid-triumph-4-gorpcore?variant=45827052568728"
     },
     "saucony-jp:8596869415064:45827083108504": {
@@ -1212,12 +1212,18 @@
       "reference_price": "28050",
       "sent_at": "2026-11-25T13:44:55+09:00",
       "url": "https://saucony.jp/products/progrid-omni-9-tmy-n02?variant=46756607656088"
+    },
+    "saucony-jp:8596867711128:45827072196760": {
+      "sale_price": "11000",
+      "reference_price": "27500",
+      "sent_at": "2026-11-25T13:44:57+09:00",
+      "url": "https://saucony.jp/products/progrid-omni-9-armor-n02?variant=45827072196760"
     }
   },
   "last_digest": {
-    "date": "2026-11-24",
-    "coverage_key": "0b8260b0443051f494df9083e2c81e99ed0138ae3eeab983415c61152dbb4e62",
-    "completed_at": "2026-11-24T14:45:28+09:00",
-    "digest_hash": "11f95c38e7845e76a83ddae7ecc11aca03222d34f7d9db7a6736fa44be812150"
+    "date": "2026-11-25",
+    "coverage_key": "1a64b30eadb6e1a8703ae7f7699a3f28af258f882b76b0315a1c68bd16c3f5a8",
+    "completed_at": "2026-11-25T13:44:57+09:00",
+    "digest_hash": "9e2448743141a3fe2da13bc1ede1b1d2b3395c325fa6aaded2127d1ec2db324d"
   }
 }
