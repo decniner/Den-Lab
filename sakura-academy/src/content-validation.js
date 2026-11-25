@@ -64,14 +64,14 @@
     return state;
   }
 
-  const practiceFlagMaps = ['kana', 'kanji', 'kanjiStudy', 'handwriting', 'rewarded'];
+  const practiceFlagMaps = ['kana', 'kanji', 'kanjiStudy', 'handwriting', 'rewarded', 'n5Study'];
 
   function validatePracticeProgressData(state) {
     const errors = [];
     if (!state || typeof state !== 'object' || Array.isArray(state)) return ['Invalid state'];
     for (const key of practiceFlagMaps) {
       const flags = state[key];
-      if (flags === undefined && (key === 'rewarded' || key === 'kanjiStudy')) continue;
+      if (flags === undefined && (key === 'rewarded' || key === 'kanjiStudy' || key === 'n5Study')) continue;
       if (!flags || typeof flags !== 'object' || Array.isArray(flags)) {
         errors.push(`Invalid ${key} progress`);
         continue;

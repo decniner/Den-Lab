@@ -4410,13 +4410,13 @@
       3.5,
       3.6,
       3.3,
-      1.8,
-      3.5,
-      2.3,
+      2.2,
+      3.7,
+      1.9,
       2.9,
       3.1,
       2.1,
-      1.6,
+      1.4,
       2.4,
       2.0,
       1.0,
@@ -4425,15 +4425,15 @@
       -0.1,
       -0.5,
       -0.7,
-      -1.1,
-      -0.8,
-      -2.3,
+      -1.3,
+      -0.9,
+      -2.4,
       -3.8,
       -5.0,
-      -5.3,
-      -7.4,
-      -0.8,
-      -12.0
+      -5.4,
+      -7.6,
+      -1.0,
+      -1.1
     ],
     "voices": {
       "jf_alpha": "./audio/speech/ja-9796531be5db50.mp3",
@@ -37733,6 +37733,636 @@
       "jf_tebukuro": "./audio/speech/ja-c88288bd896e51.mp3"
     }
   },
+  "男の人:すみません、郵便局はどこですか。女の人:この道をまっすぐ行って、二つ目の角を左に曲がってください。": {
+    "src": "./audio/speech/ja-5c9e5b378c76ea.mp3",
+    "pitch": [
+      -2.9,
+      2.0,
+      1.1,
+      -1.7,
+      2.1,
+      2.3,
+      -3.5,
+      -2.4,
+      1.7,
+      2.3,
+      0.2,
+      -3.2,
+      -0.2,
+      -2.3,
+      3.5,
+      2.5,
+      -4.3,
+      2.1,
+      2.1,
+      -5.6,
+      -0.4,
+      -1.4,
+      1.9,
+      3.9,
+      -2.2,
+      1.9,
+      0.6,
+      0.2,
+      -5.5,
+      -2.0,
+      -5.5,
+      -6.4
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-5c9e5b378c76ea.mp3",
+      "jf_gongitsune": "./audio/speech/ja-28cc988f168ad6.mp3",
+      "jf_tebukuro": "./audio/speech/ja-1087f93163f34a.mp3"
+    }
+  },
+  "女の人:スーパーで牛乳を買ってください。男の人:はい。パンも買いますか。女の人:いいえ、パンは家にあります。": {
+    "src": "./audio/speech/ja-05113d0da97138.mp3",
+    "pitch": [
+      -3.3,
+      1.9,
+      2.0,
+      0.2,
+      -1.7,
+      0.3,
+      -6.3,
+      0.6,
+      1.0,
+      -1.1,
+      -5.4,
+      -5.5,
+      -3.6,
+      3.7,
+      -0.1,
+      5.1,
+      -4.8,
+      2.8,
+      2.2,
+      0.6,
+      -5.3,
+      1.5,
+      3.2,
+      0.1,
+      -1.5,
+      2.4,
+      2.8,
+      -0.8,
+      -1.0,
+      -0.2,
+      -5.5,
+      -5.0
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-05113d0da97138.mp3",
+      "jf_gongitsune": "./audio/speech/ja-ce2e0d32bdb91b.mp3",
+      "jf_tebukuro": "./audio/speech/ja-9b4461d9eb9a53.mp3"
+    }
+  },
+  "男の人:図書館へ行きます。いっしょに行きませんか。女の人:今日は仕事です。あしたなら大丈夫です。": {
+    "src": "./audio/speech/ja-3d320a7c18e947.mp3",
+    "pitch": [
+      -4.1,
+      2.0,
+      1.9,
+      -1.1,
+      -2.9,
+      0.9,
+      2.3,
+      1.0,
+      -2.2,
+      4.2,
+      -0.2,
+      2.3,
+      1.0,
+      1.0,
+      -0.8,
+      -6.4,
+      0.5,
+      3.2,
+      0.2,
+      -3.4,
+      0.3,
+      1.7,
+      1.2,
+      -3.1,
+      -3.5,
+      1.4,
+      -3.8,
+      -6.6,
+      -2.2,
+      -2.0,
+      -3.3,
+      -6.4
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-3d320a7c18e947.mp3",
+      "jf_gongitsune": "./audio/speech/ja-0ab705dec3e1ed.mp3",
+      "jf_tebukuro": "./audio/speech/ja-47ca7ccac76370.mp3"
+    }
+  },
+  "女の人:ここで写真を撮ってもいいですか。男の人:すみません。この部屋では写真を撮らないでください。": {
+    "src": "./audio/speech/ja-347354f8a1fc82.mp3",
+    "pitch": [
+      -4.0,
+      1.7,
+      1.9,
+      0.1,
+      -1.3,
+      2.3,
+      -2.3,
+      1.2,
+      1.5,
+      -0.3,
+      -6.3,
+      -3.9,
+      -6.9,
+      -3.1,
+      3.3,
+      0.2,
+      -1.7,
+      -0.1,
+      3.1,
+      -5.7,
+      1.1,
+      4.5,
+      1.3,
+      -5.3,
+      0.2,
+      2.0,
+      0.1,
+      1.2,
+      -3.5,
+      -4.9,
+      -3.0,
+      -7.1
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-347354f8a1fc82.mp3",
+      "jf_gongitsune": "./audio/speech/ja-28ea774ae3aec2.mp3",
+      "jf_tebukuro": "./audio/speech/ja-524160e962527e.mp3"
+    }
+  },
+  "女の人:何時に駅へ来ますか。男の人:電車は十時ですから、九時半に駅に着きます。": {
+    "src": "./audio/speech/ja-2ab75b66241a6a.mp3",
+    "pitch": [
+      -4.3,
+      1.2,
+      2.0,
+      1.0,
+      -1.1,
+      -2.7,
+      2.5,
+      1.8,
+      0.8,
+      0.1,
+      -1.5,
+      -5.4,
+      -3.8,
+      2.3,
+      2.5,
+      -0.3,
+      -3.8,
+      0.6,
+      -0.7,
+      -6.9,
+      -1.0,
+      0.9,
+      1.0,
+      -5.9,
+      -2.0,
+      1.1,
+      2.2,
+      -0.1,
+      2.7,
+      -2.9,
+      -5.0,
+      5.0
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-2ab75b66241a6a.mp3",
+      "jf_gongitsune": "./audio/speech/ja-14635b69202323.mp3",
+      "jf_tebukuro": "./audio/speech/ja-a31382acdce87c.mp3"
+    }
+  },
+  "男の人:きょうの晩ごはんは何ですか。女の人:魚とごはんです。サラダも作ります。": {
+    "src": "./audio/speech/ja-ea5d1681e03bdb.mp3",
+    "pitch": [
+      -3.3,
+      2.4,
+      2.9,
+      1.3,
+      -1.1,
+      0.9,
+      2.9,
+      2.7,
+      2.7,
+      2.2,
+      3.1,
+      -0.7,
+      -6.3,
+      -2.1,
+      -0.3,
+      -6.3,
+      -1.2,
+      3.6,
+      3.1,
+      0.3,
+      -0.3,
+      0.7,
+      2.4,
+      -4.6,
+      -4.1,
+      -1.8,
+      2.4,
+      -0.9,
+      2.4,
+      -5.3,
+      -3.8,
+      -4.9
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-ea5d1681e03bdb.mp3",
+      "jf_gongitsune": "./audio/speech/ja-da159fb56d1154.mp3",
+      "jf_tebukuro": "./audio/speech/ja-2e39bdecc0d289.mp3"
+    }
+  },
+  "女の人:あしたは雨です。公園へ行きますか。男の人:いいえ、うちで映画を見ましょう。": {
+    "src": "./audio/speech/ja-d133f8e5179bd8.mp3",
+    "pitch": [
+      0.8,
+      2.3,
+      3.0,
+      2.1,
+      1.0,
+      -2.1,
+      0.3,
+      -6.0,
+      -1.4,
+      -3.2,
+      -1.4,
+      3.0,
+      3.6,
+      3.0,
+      1.8,
+      -1.3,
+      -6.0,
+      2.2,
+      3.5,
+      0.1,
+      -2.0,
+      -1.9,
+      3.3,
+      3.3,
+      -0.1,
+      -6.4,
+      -0.2,
+      1.5,
+      -1.6,
+      -3.7,
+      -4.1,
+      -4.0
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-d133f8e5179bd8.mp3",
+      "jf_gongitsune": "./audio/speech/ja-df1a8309ec23a4.mp3",
+      "jf_tebukuro": "./audio/speech/ja-337b57b4c076bb.mp3"
+    }
+  },
+  "男の人:週末は何をしましたか。女の人:土曜日は友だちと買い物をしました。日曜日は家で休みました。": {
+    "src": "./audio/speech/ja-36c820a805942c.mp3",
+    "pitch": [
+      -2.4,
+      2.5,
+      1.8,
+      -1.4,
+      3.2,
+      1.9,
+      -5.5,
+      -0.6,
+      0.6,
+      -3.7,
+      -1.7,
+      4.1,
+      3.0,
+      -3.0,
+      -2.6,
+      4.7,
+      3.2,
+      -1.8,
+      1.6,
+      -2.9,
+      0.2,
+      1.1,
+      -0.2,
+      -6.0,
+      2.3,
+      4.9,
+      2.0,
+      -4.5,
+      3.4,
+      -4.1,
+      -2.7,
+      -6.6
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-36c820a805942c.mp3",
+      "jf_gongitsune": "./audio/speech/ja-9dd682c687a157.mp3",
+      "jf_tebukuro": "./audio/speech/ja-c2238501e36a55.mp3"
+    }
+  },
+  "友だちの家に入りました。家の人に最初に何と言いますか。": {
+    "src": "./audio/speech/ja-ddc0abfbc4890d.mp3",
+    "pitch": [
+      -0.2,
+      -0.1,
+      3.6,
+      4.0,
+      2.4,
+      -2.3,
+      -1.5,
+      2.5,
+      -0.6,
+      -6.4,
+      -2.7,
+      0.5,
+      0.2,
+      -4.6,
+      -4.9,
+      2.1,
+      4.3,
+      3.4,
+      2.6,
+      -0.3,
+      -2.6,
+      0.9,
+      2.0,
+      2.3,
+      2.0,
+      4.0,
+      0.1,
+      -4.4,
+      -1.1,
+      -0.5,
+      -4.1,
+      -6.2
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-ddc0abfbc4890d.mp3",
+      "jf_gongitsune": "./audio/speech/ja-1b4b155c05800b.mp3",
+      "jf_tebukuro": "./audio/speech/ja-6e29a9c55d470e.mp3"
+    }
+  },
+  "先生に本を借りました。本を返すとき、何と言いますか。": {
+    "src": "./audio/speech/ja-508e8e29709e2f.mp3",
+    "pitch": [
+      2.8,
+      1.9,
+      2.4,
+      3.6,
+      3.0,
+      1.3,
+      -0.9,
+      1.5,
+      1.3,
+      -0.1,
+      -0.5,
+      -1.1,
+      -2.1,
+      -5.7,
+      0.1,
+      3.2,
+      4.0,
+      1.7,
+      1.7,
+      2.3,
+      -1.7,
+      -5.3,
+      -5.1,
+      -3.4,
+      4.0,
+      2.8,
+      -1.0,
+      -1.2,
+      -0.1,
+      -0.8,
+      -5.0,
+      -6.4
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-508e8e29709e2f.mp3",
+      "jf_gongitsune": "./audio/speech/ja-acf19d719fda2b.mp3",
+      "jf_tebukuro": "./audio/speech/ja-e12edc0568a4f0.mp3"
+    }
+  },
+  "友だちに日曜日の予定を聞きます。いっしょに映画へ行きたいです。何と言いますか。": {
+    "src": "./audio/speech/ja-f5d652b55fa785.mp3",
+    "pitch": [
+      -0.6,
+      0.6,
+      3.6,
+      2.9,
+      -1.8,
+      -4.6,
+      2.4,
+      4.4,
+      2.8,
+      -3.1,
+      -6.5,
+      -1.1,
+      -1.4,
+      -3.0,
+      5.8,
+      1.6,
+      3.5,
+      3.2,
+      2.6,
+      2.9,
+      2.1,
+      2.3,
+      0.9,
+      -1.1,
+      -6.0,
+      -1.7,
+      3.4,
+      -1.3,
+      -0.7,
+      -0.8,
+      -2.3,
+      -6.5
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-f5d652b55fa785.mp3",
+      "jf_gongitsune": "./audio/speech/ja-596f3c7a42da27.mp3",
+      "jf_tebukuro": "./audio/speech/ja-2dbbb438625d4b.mp3"
+    }
+  },
+  "教室で先生の声が聞こえません。もう一度ゆっくり話してほしいです。何と言いますか。": {
+    "src": "./audio/speech/ja-8a3abd6734d971.mp3",
+    "pitch": [
+      -1.3,
+      2.7,
+      0.1,
+      1.4,
+      0.8,
+      0.7,
+      1.8,
+      2.1,
+      -1.6,
+      3.0,
+      -0.8,
+      -0.6,
+      -4.9,
+      -3.3,
+      2.4,
+      3.7,
+      2.9,
+      -3.5,
+      1.5,
+      0.8,
+      0.7,
+      -0.1,
+      -5.9,
+      -2.6,
+      -4.9,
+      -2.8,
+      3.2,
+      0.5,
+      -1.6,
+      -1.4,
+      -1.9,
+      -5.5
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-8a3abd6734d971.mp3",
+      "jf_gongitsune": "./audio/speech/ja-51c9b24f0a71fd.mp3",
+      "jf_tebukuro": "./audio/speech/ja-af37de11e377b3.mp3"
+    }
+  },
+  "お名前は何ですか。": {
+    "src": "./audio/speech/ja-3c92ebce62c8c8.mp3",
+    "pitch": [
+      -12.0,
+      -3.0,
+      -1.9,
+      -0.7,
+      0.6,
+      1.6,
+      2.2,
+      2.7,
+      2.6,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      2.7,
+      1.6,
+      0.3,
+      -2.2,
+      -4.0,
+      -4.7,
+      -3.1,
+      -1.7,
+      0.6,
+      1.9,
+      1.7,
+      -0.5,
+      0.4,
+      -0.3,
+      -3.4,
+      -5.6,
+      -6.5,
+      -6.3,
+      -5.8
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-3c92ebce62c8c8.mp3",
+      "jf_gongitsune": "./audio/speech/ja-89eeabfd6ed791.mp3",
+      "jf_tebukuro": "./audio/speech/ja-981e294af907cf.mp3"
+    }
+  },
+  "このりんごはいくらですか。": {
+    "src": "./audio/speech/ja-690bdf9a74828d.mp3",
+    "pitch": [
+      -1.9,
+      -2.1,
+      -0.7,
+      1.3,
+      2.4,
+      2.6,
+      2.2,
+      1.0,
+      1.9,
+      2.0,
+      2.4,
+      1.9,
+      0.7,
+      1.8,
+      1.2,
+      -0.1,
+      -2.4,
+      -5.0,
+      -6.2,
+      -6.6,
+      0.1,
+      1.2,
+      0.8,
+      0.4,
+      -1.3,
+      -0.8,
+      -1.5,
+      -12.0,
+      -5.9,
+      -7.0,
+      -6.9,
+      -7.1
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-690bdf9a74828d.mp3",
+      "jf_gongitsune": "./audio/speech/ja-384b5bda1952a0.mp3",
+      "jf_tebukuro": "./audio/speech/ja-dfb0a5b61ac1bf.mp3"
+    }
+  },
+  "図書館はどこですか。": {
+    "src": "./audio/speech/ja-7c3e70c63d261e.mp3",
+    "pitch": [
+      -1.2,
+      -1.0,
+      0.5,
+      0.8,
+      4.0,
+      3.3,
+      2.5,
+      3.4,
+      2.9,
+      2.6,
+      2.8,
+      2.4,
+      2.0,
+      1.3,
+      -0.5,
+      -2.7,
+      -4.7,
+      -5.6,
+      -2.8,
+      -1.2,
+      -0.0,
+      0.5,
+      2.0,
+      1.0,
+      0.0,
+      -0.3,
+      -1.2,
+      -3.9,
+      -5.3,
+      -6.0,
+      -6.1,
+      -6.9
+    ],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-7c3e70c63d261e.mp3",
+      "jf_gongitsune": "./audio/speech/ja-37f429cdce1df5.mp3",
+      "jf_tebukuro": "./audio/speech/ja-2a3d33e10aed78.mp3"
+    }
+  },
   "田中さんは毎朝七時に起きます。": {
     "src": "./audio/speech/ja-2e4c95c30cd4b4.mp3",
     "pitch": [],
@@ -37839,6 +38469,222 @@
       "jf_alpha": "./audio/speech/ja-58f15535348b33.mp3",
       "jf_gongitsune": "./audio/speech/ja-22edab6fe5582e.mp3",
       "jf_tebukuro": "./audio/speech/ja-4f616fddb3aac3.mp3"
+    }
+  },
+  "はじめまして。田中ゆきです。": {
+    "src": "./audio/speech/ja-285d400a59937d.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-285d400a59937d.mp3",
+      "jf_gongitsune": "./audio/speech/ja-caed64dea12531.mp3",
+      "jf_tebukuro": "./audio/speech/ja-a395349b44bebb.mp3"
+    }
+  },
+  "わたしは学生です。": {
+    "src": "./audio/speech/ja-fcb830d3b389b8.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-fcb830d3b389b8.mp3",
+      "jf_gongitsune": "./audio/speech/ja-1fa6d500d58701.mp3",
+      "jf_tebukuro": "./audio/speech/ja-d10680882ebc37.mp3"
+    }
+  },
+  "これは日本語の本です。": {
+    "src": "./audio/speech/ja-a4056a4e3bedf2.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-a4056a4e3bedf2.mp3",
+      "jf_gongitsune": "./audio/speech/ja-b9a9a4e6c0b840.mp3",
+      "jf_tebukuro": "./audio/speech/ja-636e48cd555c73.mp3"
+    }
+  },
+  "わたしの家族は四人です。": {
+    "src": "./audio/speech/ja-4b1d80a808e023.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-4b1d80a808e023.mp3",
+      "jf_gongitsune": "./audio/speech/ja-8bae3945e1652a.mp3",
+      "jf_tebukuro": "./audio/speech/ja-8881c950af64fc.mp3"
+    }
+  },
+  "父と母と姉とわたしです。": {
+    "src": "./audio/speech/ja-e4be6289e4749e.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-e4be6289e4749e.mp3",
+      "jf_gongitsune": "./audio/speech/ja-935642a11aac0f.mp3",
+      "jf_tebukuro": "./audio/speech/ja-02220f73d32f2f.mp3"
+    }
+  },
+  "日曜日に家族と公園へ行きます。": {
+    "src": "./audio/speech/ja-03b25f1a82eabf.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-03b25f1a82eabf.mp3",
+      "jf_gongitsune": "./audio/speech/ja-874a8f8976968c.mp3",
+      "jf_tebukuro": "./audio/speech/ja-414a575463e1ae.mp3"
+    }
+  },
+  "わたしの家は駅の近くにあります。": {
+    "src": "./audio/speech/ja-ece0f5c8d2d891.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-ece0f5c8d2d891.mp3",
+      "jf_gongitsune": "./audio/speech/ja-4e31a4d8eca1ce.mp3",
+      "jf_tebukuro": "./audio/speech/ja-b9dffe94875141.mp3"
+    }
+  },
+  "家の前に小さい店があります。": {
+    "src": "./audio/speech/ja-4ba47e2eba07b8.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-4ba47e2eba07b8.mp3",
+      "jf_gongitsune": "./audio/speech/ja-a9454cda18d36a.mp3",
+      "jf_tebukuro": "./audio/speech/ja-4f1171d6df2763.mp3"
+    }
+  },
+  "店で水を買います。": {
+    "src": "./audio/speech/ja-a2805e2b20520e.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-a2805e2b20520e.mp3",
+      "jf_gongitsune": "./audio/speech/ja-25614cc0c75d71.mp3",
+      "jf_tebukuro": "./audio/speech/ja-7b2db751076501.mp3"
+    }
+  },
+  "土曜日に友だちと会います。": {
+    "src": "./audio/speech/ja-fde9ccb88491ca.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-fde9ccb88491ca.mp3",
+      "jf_gongitsune": "./audio/speech/ja-6ac24f1e1893bf.mp3",
+      "jf_tebukuro": "./audio/speech/ja-dbe1797b70b96a.mp3"
+    }
+  },
+  "いっしょに映画を見ませんか。": {
+    "src": "./audio/speech/ja-e4f429c42a948e.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-e4f429c42a948e.mp3",
+      "jf_gongitsune": "./audio/speech/ja-0012b18c0d492f.mp3",
+      "jf_tebukuro": "./audio/speech/ja-6d9119d42da5d1.mp3"
+    }
+  },
+  "はい、午後三時に駅で会いましょう。": {
+    "src": "./audio/speech/ja-41b43491ed482b.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-41b43491ed482b.mp3",
+      "jf_gongitsune": "./audio/speech/ja-748c8af52af171.mp3",
+      "jf_tebukuro": "./audio/speech/ja-e29e09aa5f06a7.mp3"
+    }
+  },
+  "あきさんは音楽が好きです。": {
+    "src": "./audio/speech/ja-439efac87e7fc6.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-439efac87e7fc6.mp3",
+      "jf_gongitsune": "./audio/speech/ja-0f74fd811bf496.mp3",
+      "jf_tebukuro": "./audio/speech/ja-5f2c7a30686ab5.mp3"
+    }
+  },
+  "毎晩、家で音楽を聞きます。": {
+    "src": "./audio/speech/ja-922fb7594f59d1.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-922fb7594f59d1.mp3",
+      "jf_gongitsune": "./audio/speech/ja-7167c37d99b666.mp3",
+      "jf_tebukuro": "./audio/speech/ja-cf3e2d8a66fb63.mp3"
+    }
+  },
+  "日曜日は友だちと写真を撮ります。": {
+    "src": "./audio/speech/ja-72cfb7804ec033.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-72cfb7804ec033.mp3",
+      "jf_gongitsune": "./audio/speech/ja-2ba5fd56c69ffb.mp3",
+      "jf_tebukuro": "./audio/speech/ja-7338c3f41d4842.mp3"
+    }
+  },
+  "駅からまっすぐ歩きます。": {
+    "src": "./audio/speech/ja-9ae445e72a4d07.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-9ae445e72a4d07.mp3",
+      "jf_gongitsune": "./audio/speech/ja-308522067fdc48.mp3",
+      "jf_tebukuro": "./audio/speech/ja-ef01876f15822a.mp3"
+    }
+  },
+  "右に小さい本屋があります。": {
+    "src": "./audio/speech/ja-3cca5f6491bea5.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-3cca5f6491bea5.mp3",
+      "jf_gongitsune": "./audio/speech/ja-d49056ccd85036.mp3",
+      "jf_tebukuro": "./audio/speech/ja-bcf33f5909a899.mp3"
+    }
+  },
+  "本屋の前で友だちを待ちます。": {
+    "src": "./audio/speech/ja-802686ffd0f54f.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-802686ffd0f54f.mp3",
+      "jf_gongitsune": "./audio/speech/ja-dcd2848ca33065.mp3",
+      "jf_tebukuro": "./audio/speech/ja-d0e4f40320e134.mp3"
+    }
+  },
+  "今日は雨です。": {
+    "src": "./audio/speech/ja-084b5b0ea8314a.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-084b5b0ea8314a.mp3",
+      "jf_gongitsune": "./audio/speech/ja-2d218a7f697ba4.mp3",
+      "jf_tebukuro": "./audio/speech/ja-56723e56443d6b.mp3"
+    }
+  },
+  "家で本を読んで、音楽を聞きます。": {
+    "src": "./audio/speech/ja-9c9d313be8b030.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-9c9d313be8b030.mp3",
+      "jf_gongitsune": "./audio/speech/ja-9031288c21417f.mp3",
+      "jf_tebukuro": "./audio/speech/ja-4dbf5c2227ff8a.mp3"
+    }
+  },
+  "明日は晴れですから、公園へ行きます。": {
+    "src": "./audio/speech/ja-1c9086dda478db.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-1c9086dda478db.mp3",
+      "jf_gongitsune": "./audio/speech/ja-c1356811bee840.mp3",
+      "jf_tebukuro": "./audio/speech/ja-454ae872120041.mp3"
+    }
+  },
+  "レストランでメニューを見ます。": {
+    "src": "./audio/speech/ja-ffd26c9264927c.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-ffd26c9264927c.mp3",
+      "jf_gongitsune": "./audio/speech/ja-e0bfcbe5712caf.mp3",
+      "jf_tebukuro": "./audio/speech/ja-8972ef1994730f.mp3"
+    }
+  },
+  "水とサンドイッチをください。": {
+    "src": "./audio/speech/ja-6e61321dc8400d.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-6e61321dc8400d.mp3",
+      "jf_gongitsune": "./audio/speech/ja-dbbf43b563aaee.mp3",
+      "jf_tebukuro": "./audio/speech/ja-8bed50a8b77a47.mp3"
+    }
+  },
+  "食事のあとで、友だちと話します。": {
+    "src": "./audio/speech/ja-478ad4d75d2307.mp3",
+    "pitch": [],
+    "voices": {
+      "jf_alpha": "./audio/speech/ja-478ad4d75d2307.mp3",
+      "jf_gongitsune": "./audio/speech/ja-6189a38143f1d2.mp3",
+      "jf_tebukuro": "./audio/speech/ja-e80af586ef501e.mp3"
     }
   },
   "今日は何をしたいですか。": {

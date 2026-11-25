@@ -92,7 +92,8 @@ for item in N5_LISTENING:
 pipeline = KPipeline(lang_code="j")
 audio_dir = PROJECT / "audio/speech"
 audio_dir.mkdir(parents=True, exist_ok=True)
-manifest = {}
+manifest_path = PROJECT / "src/speech-audio-manifest.json"
+manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
 FEMALE_VOICES = ("jf_alpha", "jf_gongitsune", "jf_tebukuro")
 
 with tempfile.TemporaryDirectory(prefix="sakura-kokoro-") as tmp:
@@ -132,7 +133,7 @@ with tempfile.TemporaryDirectory(prefix="sakura-kokoro-") as tmp:
             print(f"Bundled voice variants for {index}/{len(phrases)} phrases", flush=True)
 
 manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
-(PROJECT / "src/speech-audio-manifest.json").write_text(manifest_json)
+manifest_path.write_text(manifest_json)
 (PROJECT / "src/speech-audio-manifest.js").write_text(
     "globalThis.SAKURA_AUDIO=Object.freeze(" + json.dumps(manifest, ensure_ascii=False, separators=(",", ":")) + ");\n"
 )

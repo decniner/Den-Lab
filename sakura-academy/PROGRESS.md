@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 110
+- Total tracked: 111
 - Work in progress: 0
 - New: 0
-- Closed: 110
-- Timeline gaps: 99
+- Closed: 111
+- Timeline gaps: 100
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-111 — N5 content is broad but not organized as a complete guided course | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-110 — Study activities do not open in Focus mode by default | Codex | Closed | 100% | 2026-11-25 | Not recorded |
 | SA-109 — Mobile lesson audio cannot recover when resume is rejected | Codex | Closed | 100% | 2026-11-25 | Not recorded |
 | SA-108 — Japanese female Kokoro voice sounds robotic and cannot be changed | Codex | Closed | 100% | 2026-11-23 | Not recorded |
@@ -1473,3 +1474,20 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Lessons, audio, kana, handwriting, kanji, N5, and flashcard activities now open in Focus mode. Home, Lesson library, and Settings remain in their standard layout. The learner can exit Focus at any time.
 - **Verification:** All 135 automated tests pass; offline single-file build, app syntax, and whitespace checks pass.
 - **Tracker:** SA-110 closed. Total 110; 0 Work in progress; 0 New; 110 Closed; 99 timeline gaps.
+
+### SA-111 — N5 content is broad but not organized as a complete guided course · 2026-11-26
+
+- **Status:** Work in progress · **Progress:** 10%
+- **Evidence:** N5 currently has 674 vocabulary entries, 81 grammar points, 84 kanji, 4 three-sentence stories, 12 reading items, and 16 listening items. Course materials are separate reference tabs, and the 20-question mock repeats 4 listening prompts.
+- **Impact:** Learners lack a sequenced lesson path and integrated progress, with limited reading/listening variety.
+- **Planned fix:** Add a guided 12-unit course using the full grammar/kanji reference, original contextual lessons, more story and test practice, per-unit progress, and offline Kokoro audio. Do not label community vocabulary/kanji lists official.
+
+
+### Release v1.6.0 — Complete guided N5 course · 2026-11-26
+
+- Added 12 sequenced units with usage explanations, examples, and common pitfalls; mapped all 81 grammar points, all 84 N5 kanji, and the full 674-word vocabulary catalog.
+- Expanded original graded stories to 12, readings to 24, and listening prompts to 32. The timed mock now draws 20 unique listening questions.
+- Added per-step progress, 4/5 mixed-skill lesson checks, strict-mode unit unlocking, and saved return location.
+- Bundled Kokoro story/listening audio offline; fixed the phrase-audio generator to preserve existing manifest entries and story narration clips.
+- Tracker: SA-111 closed. Total 111; 0 Work in progress; 0 New; 111 Closed; 100 timeline gaps.
+- Validation: 144 automated tests passed; the 18 MB standalone build contains the course code and v1.6.0 stamp; mobile responsive assertions passed. Visible mobile-browser preview was unavailable in this workspace; Pages deployment status is pending.

@@ -24633,3 +24633,36 @@ N5_LISTENING.push(
  {type:'Quick response',audio:'きのう、どこへ行きましたか。',audioReading:'きのう、どこへいきましたか。',question:'質問に 合う答えを 選んでください。',options:['デパートへ行きました','三時に行きます','友だちとです'],answer:0},
  {type:'Quick response',audio:'すみません、少し遅れました。',audioReading:'すみません、すこしおくれました。',question:'この人に 何と言いますか。',options:['おめでとうございます','だいじょうぶですよ','いってらっしゃい'],answer:1}
 );
+
+N5_READINGS.push(
+ {type:'Short passage · introductions',text:'ミラーさんはアメリカ人です。日本語の学生です。毎日、学校で日本語を勉強します。',question:'ミラーさんは何の学生ですか。',options:['日本語','英語','音楽'],answer:0},
+ {type:'Short passage · daily routine',text:'けんさんは毎朝七時に起きます。朝ごはんを食べて、八時に学校へ行きます。',question:'けんさんは何時に学校へ行きますか。',options:['七時','八時','九時'],answer:1},
+ {type:'Short passage · shopping',text:'きょうは日曜日です。ゆきさんは店でパンと牛乳を買いました。りんごは買いませんでした。',question:'ゆきさんは何を買いましたか。',options:['パンと牛乳','パンとりんご','牛乳とりんご'],answer:0},
+ {type:'Short passage · weather',text:'あしたは雨です。たなかさんは家で本を読みます。日曜日は晴れですから、公園へ行きます。',question:'たなかさんは日曜日にどこへ行きますか。',options:['学校','公園','店'],answer:1},
+ {type:'Mid-size passage · school day',text:'さくらさんは毎朝六時半に起きます。朝ごはんのあとで、七時半に家を出ます。学校まで歩いて二十分です。月曜日と水曜日は授業のあとで図書館へ行きます。火曜日は友だちとテニスをします。きょうは水曜日です。図書館で日本語を勉強してから、午後五時に家へ帰ります。',question:'水曜日、さくらさんは何をしてから家へ帰りますか。',options:['日本語を勉強する','テニスをする','朝ごはんを食べる'],answer:0},
+ {type:'Mid-size passage · family',text:'たけしさんはお父さんとお母さんと妹と住んでいます。お父さんは会社員で、毎朝電車で会社へ行きます。お母さんは家で料理をします。妹は小学生です。日曜日の午後、家族は近くの公園へ行きます。たけしさんは公園で妹とサッカーをします。',question:'日曜日に、たけしさんは公園でだれとサッカーをしますか。',options:['妹','お父さん','友だち'],answer:0},
+ {type:'Mid-size passage · plans',text:'まりさんは来週の土曜日に京都へ行きます。午前九時に駅で友だちと会って、電車に乗ります。京都でお寺を見て、昼ごはんを食べます。午後三時ごろ、駅の近くの店でおみやげを買います。夜は七時に家へ帰ります。',question:'まりさんは午後三時ごろ何をしますか。',options:['電車に乗る','おみやげを買う','家へ帰る'],answer:1},
+ {type:'Mid-size passage · hobbies',text:'なおさんは音楽が好きです。毎晩、家で日本の歌を聞きます。日曜日は友だちと映画を見たり、写真を撮ったりします。友だちはスポーツが好きですから、時々いっしょにテニスもします。きょうは雨です。二人は図書館で本を読んでから、喫茶店へ行きます。',question:'雨の日、二人は何をしてから喫茶店へ行きますか。',options:['本を読む','テニスをする','映画を見る'],answer:0},
+ {type:'Information retrieval · store notice',text:'さくらスーパーのお知らせ\n月曜日から金曜日: 午前九時から午後八時まで\n土曜日: 午前十時から午後六時まで\n日曜日: 休み\n水曜日はパンが安いです。',question:'パンが安いのは何曜日ですか。',options:['月曜日','水曜日','日曜日'],answer:1},
+ {type:'Information retrieval · school timetable',text:'日本語クラス\n月曜日: ひらがな 9:00\n火曜日: 文法 10:00\n水曜日: 聞く練習 9:00\n木曜日: 読む練習 11:00\n金曜日: テスト 10:00',question:'文法のクラスは何曜日ですか。',options:['月曜日','火曜日','木曜日'],answer:1},
+ {type:'Information retrieval · bus schedule',text:'駅前バス\n駅を出ます: 9:00 / 10:00 / 11:00\n図書館まで: 10分\n美術館まで: 25分\n日曜日はバスがありません。',question:'土曜日の十時に駅を出るバスは、何時に図書館に着きますか。',options:['10:10','10:25','11:00'],answer:0},
+ {type:'Information retrieval · event notice',text:'町の日本語まつり\n日時: 10月12日 日曜日 午後1時から4時まで\n場所: 中央公園\n食べ物と音楽があります。\n雨のときは学校でします。',question:'雨のとき、まつりはどこでありますか。',options:['学校','中央公園','図書館'],answer:0}
+);
+N5_LISTENING.push(
+ {type:'Task-based comprehension',audio:'男の人: すみません、郵便局はどこですか。女の人: この道をまっすぐ行って、二つ目の角を左に曲がってください。',audioReading:'おとこのひと、すみません、ゆうびんきょくはどこですか。おんなのひと、このみちをまっすぐいって、ふたつめのかどをひだりにまがってください。',question:'男の人はどうしますか。',options:['二つ目の角を左に曲がる','一つ目の角を右に曲がる','駅までまっすぐ行く'],answer:0},
+ {type:'Task-based comprehension',audio:'女の人: スーパーで牛乳を買ってください。男の人: はい。パンも買いますか。女の人: いいえ、パンは家にあります。',audioReading:'おんなのひと、すーぱーでぎゅうにゅうをかってください。おとこのひと、はい。ぱんもかいますか。おんなのひと、いいえ、ぱんはいえにあります。',question:'男の人は何を買いますか。',options:['牛乳','パン','牛乳とパン'],answer:0},
+ {type:'Task-based comprehension',audio:'男の人: 図書館へ行きます。いっしょに行きませんか。女の人: 今日は仕事です。あしたなら大丈夫です。',audioReading:'おとこのひと、としょかんへいきます。いっしょにいきませんか。おんなのひと、きょうはしごとです。あしたならだいじょうぶです。',question:'二人はいつ図書館へ行きますか。',options:['今日','あした','日曜日'],answer:1},
+ {type:'Task-based comprehension',audio:'女の人: ここで写真を撮ってもいいですか。男の人: すみません。この部屋では写真を撮らないでください。',audioReading:'おんなのひと、ここでしゃしんをとってもいいですか。おとこのひと、すみません。このへやではしゃしんをとらないでください。',question:'女の人は何をしますか。',options:['写真を撮らない','部屋を出る','写真を見せる'],answer:0},
+ {type:'Comprehension of key points',audio:'女の人: 何時に駅へ来ますか。男の人: 電車は十時ですから、九時半に駅に着きます。',audioReading:'おんなのひと、なんじにえきへきますか。おとこのひと、でんしゃはじゅうじですから、くじはんにえきにつきます。',question:'男の人は何時に駅に着きますか。',options:['九時','九時半','十時'],answer:1},
+ {type:'Comprehension of key points',audio:'男の人: きょうの晩ごはんは何ですか。女の人: 魚とごはんです。サラダも作ります。',audioReading:'おとこのひと、きょうのばんごはんはなんですか。おんなのひと、さかなとごはんです。さらだもつくります。',question:'女の人は何を作りますか。',options:['魚とごはんとサラダ','肉とパン','サラダだけ'],answer:0},
+ {type:'Comprehension of key points',audio:'女の人: あしたは雨です。公園へ行きますか。男の人: いいえ、うちで映画を見ましょう。',audioReading:'おんなのひと、あしたはあめです。こうえんへいきますか。おとこのひと、いいえ、うちでえいがをみましょう。',question:'二人はあした何をしますか。',options:['公園へ行く','家で映画を見る','店で買い物をする'],answer:1},
+ {type:'Comprehension of key points',audio:'男の人: 週末は何をしましたか。女の人: 土曜日は友だちと買い物をしました。日曜日は家で休みました。',audioReading:'おとこのひと、しゅうまつはなにをしましたか。おんなのひと、どようびはともだちとかいものをしました。にちようびはいえでやすみました。',question:'女の人は日曜日に何をしましたか。',options:['買い物をした','家で休んだ','友だちに会った'],answer:1},
+ {type:'Verbal expressions',audio:'友だちの家に入りました。家の人に最初に何と言いますか。',audioReading:'ともだちのいえにはいりました。いえのひとにさいしょになんといいますか。',question:'家に入るとき、何と言いますか。',options:['おじゃまします','ただいま','いってきます'],answer:0},
+ {type:'Verbal expressions',audio:'先生に本を借りました。本を返すとき、何と言いますか。',audioReading:'せんせいにほんをかりました。ほんをかえすとき、なんといいますか。',question:'本を返すとき、何と言いますか。',options:['ありがとうございます','いただきます','おやすみなさい'],answer:0},
+ {type:'Verbal expressions',audio:'友だちに日曜日の予定を聞きます。いっしょに映画へ行きたいです。何と言いますか。',audioReading:'ともだちににちようびのよていをききます。いっしょにえいがへいきたいです。なんといいますか。',question:'友だちを映画に誘うとき、何と言いますか。',options:['いっしょに映画を見ませんか','映画を見ました','映画はどこですか'],answer:0},
+ {type:'Verbal expressions',audio:'教室で先生の声が聞こえません。もう一度ゆっくり話してほしいです。何と言いますか。',audioReading:'きょうしつでせんせいのこえがきこえません。もういちどゆっくりはなしてほしいです。なんといいますか。',question:'先生に何と言いますか。',options:['もう一度お願いします','お先にどうぞ','ごちそうさまでした'],answer:0},
+ {type:'Quick response',audio:'お名前は何ですか。',audioReading:'おなまえはなんですか。',question:'質問に合う答えを選んでください。',options:['田中ゆきです','学生です','十時です'],answer:0},
+ {type:'Quick response',audio:'きょうは何曜日ですか。',audioReading:'きょうはなんようびですか。',question:'質問に合う答えを選んでください。',options:['水曜日です','三時です','学校です'],answer:0},
+ {type:'Quick response',audio:'このりんごはいくらですか。',audioReading:'このりんごはいくらですか。',question:'質問に合う答えを選んでください。',options:['百円です','赤いです','店です'],answer:0},
+ {type:'Quick response',audio:'図書館はどこですか。',audioReading:'としょかんはどこですか。',question:'質問に合う答えを選んでください。',options:['駅の前です','午後二時です','友だちです'],answer:0}
+);

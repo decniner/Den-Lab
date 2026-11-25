@@ -35,7 +35,17 @@ with tempfile.TemporaryDirectory(prefix="sakura-stories-") as tmp:
             synthesis_text = line["kana"]
             fingerprint = f"{key}|{synthesis_text}"
             filename = f"ja-{hashlib.sha256(fingerprint.encode('utf-8')).hexdigest()[:14]}.mp3"
+            alpha_destination = audio_dir / filename
             voice_paths = {"jf_alpha": f"./audio/speech/{filename}"}
+            if not alpha_destination.exists():
+                chunks = [np.asarray(audio) for _, _, audio in pipeline(synthesis_text, voice="jf_alpha", speed=0.9)]
+                if not chunks:
+                    raise RuntimeError(f"Kokoro returned no audio: {phrase} (jf_alpha)")
+                sf.write(wav, np.concatenate(chunks), 24000)
+                subprocess.run([
+                    "ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", str(wav),
+                    "-ac", "1", "-ar", "24000", "-codec:a", "libmp3lame", "-b:a", "48k", str(alpha_destination),
+                ], check=True)
             for voice in FEMALE_VOICES[1:]:
                 variant = f"ja-{hashlib.sha256(f'{fingerprint}|{voice}'.encode('utf-8')).hexdigest()[:14]}.mp3"
                 destination = audio_dir / variant

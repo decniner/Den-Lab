@@ -58,7 +58,7 @@ test('Kanji Explorer shows the reading of compound examples beside the kanji', (
 
 test('every N5 listening prompt has a paired kana reading and bundled audio', () => {
   const { listening } = loadCourse();
-  assert.equal(listening.length, 16);
+  assert.equal(listening.length, 32);
   for (const item of listening) {
     if (!item.audio) continue;
     assert.match(item.audioReading, kanaOnly, `listening reading: ${item.audio}`);

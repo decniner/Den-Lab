@@ -125,8 +125,9 @@ test('practice and reward imports reject truthy non-boolean flags', () => {
     kanji: { '一': 1 },
     handwriting: { 'Hiragana:H0': 'true' },
     rewarded: { 'kana:あ': 'false' },
+    n5Study: { 'course_first_learn': 'true' },
   };
-  assert.equal(validatePracticeProgressData(malformed).length, 4);
+  assert.equal(validatePracticeProgressData(malformed).length, 5);
   assert.match(appSource, /validatePracticeProgressData\(s\)/);
 });
 
@@ -136,6 +137,7 @@ test('older local practice data drops malformed flags before rewards or renderin
     kanji: { '1': true, '2': null },
     handwriting: { 'Hiragana:H0': true, 'Hiragana:H1': 'true' },
     rewarded: { 'kana:あ': true, 'kana:い': 'false' },
+    n5Study: { 'course_first_learn': true, 'course_first_words': 'true' },
   };
   sanitizePracticeProgressData(state);
   assert.deepEqual(state, {
@@ -143,6 +145,7 @@ test('older local practice data drops malformed flags before rewards or renderin
     kanji: { '1': true },
     handwriting: { 'Hiragana:H0': true },
     rewarded: { 'kana:あ': true },
+    n5Study: { 'course_first_learn': true },
     kanjiStudy: {},
   });
   assert.match(appSource, /sanitizePracticeProgressData\(state\)/);
