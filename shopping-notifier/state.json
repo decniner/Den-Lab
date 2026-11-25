@@ -440,9 +440,9 @@
       "url": "https://brooksrunning.co.jp/products/bmm0456-gry?variant=47877884346665"
     },
     "saucony-jp:8596869218456:45827081666712": {
-      "sale_price": "14025",
+      "sale_price": "11220",
       "reference_price": "28050",
-      "sent_at": "2026-10-20T09:51:40+09:00",
+      "sent_at": "2026-11-25T13:44:55+09:00",
       "url": "https://saucony.jp/products/progrid-triumph-4-n02?variant=45827081666712"
     },
     "saucony-jp:8596860502168:45827000467608": {
@@ -1182,6 +1182,36 @@
       "reference_price": "28600",
       "sent_at": "2026-11-24T14:45:28+09:00",
       "url": "https://saucony.jp/products/kinvara-1-s?variant=45827097067672"
+    },
+    "saucony-jp:8596864106648:45827026321560": {
+      "sale_price": "17160",
+      "reference_price": "42900",
+      "sent_at": "2026-11-25T13:44:55+09:00",
+      "url": "https://saucony.jp/products/endorphin-elite-2-n02?variant=45827026321560"
+    },
+    "saucony-jp:8834487648408:47213978419352": {
+      "sale_price": "11440",
+      "reference_price": "28600",
+      "sent_at": "2026-11-25T13:44:55+09:00",
+      "url": "https://saucony.jp/products/kinvara-1-s-n02?variant=47213978419352"
+    },
+    "saucony-jp:8760270258328:46755771613336": {
+      "sale_price": "11220",
+      "reference_price": "28050",
+      "sent_at": "2026-11-25T13:44:55+09:00",
+      "url": "https://saucony.jp/products/progrid-omni-9-glowaconstrictor-n02?variant=46755771613336"
+    },
+    "saucony-jp:8760485052568:46756606410904": {
+      "sale_price": "11220",
+      "reference_price": "28050",
+      "sent_at": "2026-11-25T13:44:55+09:00",
+      "url": "https://saucony.jp/products/progrid-omni-9-fade-n02?variant=46756606410904"
+    },
+    "saucony-jp:8760485314712:46756607656088": {
+      "sale_price": "11220",
+      "reference_price": "28050",
+      "sent_at": "2026-11-25T13:44:55+09:00",
+      "url": "https://saucony.jp/products/progrid-omni-9-tmy-n02?variant=46756607656088"
     }
   },
   "last_digest": {
