@@ -90,5 +90,5 @@
 - [x] Rebuild the app shell after TTS generation and confirm the standalone page contains the same N5 course.
 - [x] Run all Sakura Academy tests, `node --check` on changed scripts, `node build.mjs`, and `git diff --check`.
 - [x] Close SA-111 with evidence, update progress counts, and bump the visible and service-worker version to v1.6.0.
-- [ ] Commit and push to `main`.
-- [ ] Verify the GitHub Pages workflow and the live app/tracker. If Pages deployment fails, inspect the exact run logs and report the live version accurately.
+- [x] Commit and push to `main`.
+- [x] Verify GitHub Actions run 45718900977 and the live app/tracker at v1.6.0.
