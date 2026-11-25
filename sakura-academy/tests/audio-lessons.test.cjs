@@ -99,7 +99,7 @@ test('Kanji playlist can go back to the previous sentence and resume correctly a
   const sandbox = {
     audioMode: 'kanji', audioLessonQueue: [{}, {}, {}], audioLessonIndex: 2,
     audioLessonPaused: false, audioLessonComplete: true,
-    audioEchoPending: false, audioEchoReplay: false,
+    audioEchoPending: false, audioEchoReplay: false, audioResumeNeedsRestart: false,
     audioPlayer: { src: 'current.mp3', pause() { paused++; } },
     playAudioLessonStep() { played++; }, updateAudioLessonStatus() { updated++; },
   };
@@ -123,6 +123,30 @@ test('Kanji playlist can go back to the previous sentence and resume correctly a
   assert.equal(sandbox.audioLessonPaused, false);
   assert.equal(sandbox.kanjiAudioResumeFromStart, false);
   assert.equal(played, 2, 'resuming after rewind loads the selected previous sentence');
+});
+
+test('a rejected mobile audio resume returns to a recoverable paused state', async () => {
+  const toggleFunction = appSource.split('\n').find(line => line.startsWith('function toggleAudioLesson('));
+  let played = 0, updated = 0, toast = '';
+  const sandbox = {
+    audioLessonQueue: [{ jp: 'こんにちは' }], audioLessonIndex: 0,
+    audioLessonPaused: true, audioLessonComplete: false,
+    audioEchoPending: false, kanjiAudioResumeFromStart: false, audioResumeNeedsRestart: false,
+    audioPlayer: { src: 'current.mp3', ended: false, play() { return Promise.reject(new Error('NotAllowedError')); } },
+    window: { speechSynthesis: { paused: false, resume() {}, pause() {} } },
+    playAudioLessonStep() { played++; }, updateAudioLessonStatus() { updated++; },
+    speechToast(message) { toast = message; }, clearTimeout() {},
+  };
+  vm.runInNewContext(`${toggleFunction}\ntoggleAudioLesson()`, sandbox);
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(sandbox.audioLessonPaused, true, 'failed resume restores the paused UI state');
+  assert.equal(sandbox.audioResumeNeedsRestart, true, 'next tap is routed to a replay of the active clip');
+  assert.match(toast, /tap Resume to replay this sentence/i);
+  vm.runInNewContext(`${toggleFunction}\ntoggleAudioLesson()`, sandbox);
+  assert.equal(sandbox.audioLessonPaused, false);
+  assert.equal(sandbox.audioResumeNeedsRestart, false);
+  assert.equal(played, 1, 'fresh user gesture restarts the same queue item');
+  assert.ok(updated >= 2);
 });
 
 test('Kanji Explorer gives every kanji a visual memory cue, saves study picks, and marks Next as studied', () => {

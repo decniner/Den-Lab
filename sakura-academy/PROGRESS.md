@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 108
+- Total tracked: 109
 - Work in progress: 0
 - New: 0
-- Closed: 108
-- Timeline gaps: 97
+- Closed: 109
+- Timeline gaps: 98
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-109 — Mobile lesson audio cannot recover when resume is rejected | Codex | Closed | 100% | 2026-11-25 | Not recorded |
 | SA-108 — Japanese female Kokoro voice sounds robotic and cannot be changed | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-107 — Kokoro mispronounces 二十日 in its sentence audio | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-106 — Kanji listening playlist cannot return to a previous sample | Codex | Closed | 100% | 2026-11-23 | Not recorded |
@@ -1444,3 +1445,17 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** Settings now offers Alpha, Gongitsune, and Tebukuro for female Japanese audio. The preference applies throughout lessons, N5, stories, and the kanji playlist.
 - **Verification:** All 133 automated tests pass, including voice selection, offline asset integrity, and service-worker precache checks.
 - **Tracker:** SA-108 closed. Total 108; 0 Work in progress; 0 New; 108 Closed; 97 timeline gaps.
+
+
+### SA-109 — Mobile lesson audio cannot recover when resume is rejected · 2026-11-25
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Regression test simulates a rejected media resume, confirms paused state is restored, and confirms the next user tap replays the same queue item. Focused audio suite passes 22/22.
+- **Impact:** Resolved: the learner can retry the interrupted sentence from its beginning and continue the audio lesson.
+- **Fix:** After resume rejection, restore paused state and mark the active sentence for replay during the next user gesture. Preserve the queue position.
+
+### Release v1.5.140 — mobile audio resume recovery · 2026-11-25
+
+- **Changes:** A rejected mobile media resume restores the Resume state. The next tap replays the current sentence from its beginning and carries on through the lesson.
+- **Verification:** All 134 automated tests pass, including the rejected-resume recovery case. The offline single-file build succeeds; JavaScript syntax and whitespace checks pass. Live mobile-browser inspection was unavailable in this session.
+- **Tracker:** SA-109 closed. Total 109; 0 Work in progress; 0 New; 109 Closed; 98 timeline gaps.
