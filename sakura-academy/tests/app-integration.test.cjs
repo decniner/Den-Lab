@@ -16,8 +16,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.140"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.140"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.140"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.140"><\/script><script src="src\/app\.js\?v=1\.5\.140">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.5\.141"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.141"><\/script><script src="src\/audio-lessons\.js\?v=1\.5\.141"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.5\.141"><\/script><script src="src\/app\.js\?v=1\.5\.141">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -120,7 +120,7 @@ test('starting a kana recognition question scrolls its prompt into view', () => 
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.140"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.5\.141"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -135,7 +135,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.140"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.5\.141"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -206,7 +206,7 @@ test('Kanji Explorer always shows and autoplays the selected stroke order', () =
   assert.match(appSource, /id=\"kanjiStrokeGuide\" class=\"kanji-stroke-guide\"/);
   assert.doesNotMatch(appSource, /<details class=\"kanji-stroke-details\"/);
   assert.match(appSource, /function playKanjiStrokeOrder\(ch\)[\s\S]*?strokeTimer=setInterval/);
-  assert.match(indexHtml, /src=\"src\/data\/kanji-explorer-supplemental.js\?v=1\.5\.140\"><\/script>/);
+  assert.match(indexHtml, /src=\"src\/data\/kanji-explorer-supplemental.js\?v=1\.5\.141\"><\/script>/);
   assert.match(appSource, /function kanjiContextPage\(\)[\s\S]*?On’yomi:[\s\S]*?Kun’yomi:[\s\S]*?Visual memory[\s\S]*?Hear example/);
   assert.match(appSource, /N5_STORIES\.flatMap/);
   assert.match(appSource, /\.n5-story-line/);
@@ -280,6 +280,29 @@ test('Focus mode is available on every study and learning route', () => {
   for (const route of ['kana', 'handwriting', 'kanji', 'flashcards', 'audio', 'n5']) assert.ok(appSource.includes(`${route}:`));
   assert.match(n5AppSource, /function n5Page\(/);
   assert.match(styles, /body\[data-focus-mode="true"\] #content/);
+});
+
+test('study routes open in Focus mode by default while Home and Settings stay regular', () => {
+  const navFunction = appSource.split('\n').find(line => line.startsWith('function nav('));
+  const focusFunction = appSource.split('\n').find(line => line.startsWith('function toggleFocusMode('));
+  assert.ok(navFunction && focusFunction);
+  const sandbox = {
+    FOCUS_ROUTES: ['lesson', 'audio', 'kana', 'handwriting', 'kanji', 'n5', 'flashcards'],
+    view: 'dashboard', focusMode: false, kanjiContextCard: null, mobileMoreOpen: false,
+    feedback: '', builderChecked: false, strictNotice: '',
+    stopStrokeGuide() {}, render() {},
+    window: { scrollTo() {} },
+  };
+  vm.runInNewContext(`${navFunction}\n${focusFunction}\nnav('kanji')`, sandbox);
+  assert.equal(sandbox.focusMode, true, 'entering a study activity starts focused');
+  vm.runInNewContext('toggleFocusMode()', sandbox);
+  assert.equal(sandbox.focusMode, false, 'learner can exit Focus mode');
+  vm.runInNewContext("nav('settings')", sandbox);
+  assert.equal(sandbox.focusMode, false, 'Settings keeps its regular layout');
+  vm.runInNewContext("nav('dashboard')", sandbox);
+  assert.equal(sandbox.focusMode, false, 'Home keeps its regular layout');
+  vm.runInNewContext("nav('audio')", sandbox);
+  assert.equal(sandbox.focusMode, true, 'another study activity starts focused by default');
 });
 
 test('learning screens omit the space-consuming caveat paragraphs', () => {

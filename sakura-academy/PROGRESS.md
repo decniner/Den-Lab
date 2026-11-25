@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 109
+- Total tracked: 110
 - Work in progress: 0
 - New: 0
-- Closed: 109
-- Timeline gaps: 98
+- Closed: 110
+- Timeline gaps: 99
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-110 — Study activities do not open in Focus mode by default | Codex | Closed | 100% | 2026-11-25 | Not recorded |
 | SA-109 — Mobile lesson audio cannot recover when resume is rejected | Codex | Closed | 100% | 2026-11-25 | Not recorded |
 | SA-108 — Japanese female Kokoro voice sounds robotic and cannot be changed | Codex | Closed | 100% | 2026-11-23 | Not recorded |
 | SA-107 — Kokoro mispronounces 二十日 in its sentence audio | Codex | Closed | 100% | 2026-11-23 | Not recorded |
@@ -1459,3 +1460,16 @@ Every published app change must bump the small footer version and its update dat
 - **Changes:** A rejected mobile media resume restores the Resume state. The next tap replays the current sentence from its beginning and carries on through the lesson.
 - **Verification:** All 134 automated tests pass, including the rejected-resume recovery case. The offline single-file build succeeds; JavaScript syntax and whitespace checks pass. Live mobile-browser inspection was unavailable in this session.
 - **Tracker:** SA-109 closed. Total 109; 0 Work in progress; 0 New; 109 Closed; 98 timeline gaps.
+
+### SA-110 — Study activities do not open in Focus mode by default · 2026-11-25
+
+- **Status:** Closed · **Progress:** 100%
+- **Evidence:** Navigation regression test passes for study-route defaults, exiting Focus, and regular Home, Lesson library, and Settings layouts. Full app integration suite passes.
+- **Impact:** Resolved: study routes prioritize learning content by default, with a visible option to exit Focus.
+- **Fix:** Shared navigation enables Focus mode for study routes and leaves app-shell routes in regular layout.
+
+### Release v1.5.141 — Focus mode defaults on for study · 2026-11-25
+
+- **Changes:** Lessons, audio, kana, handwriting, kanji, N5, and flashcard activities now open in Focus mode. Home, Lesson library, and Settings remain in their standard layout. The learner can exit Focus at any time.
+- **Verification:** All 135 automated tests pass; offline single-file build, app syntax, and whitespace checks pass.
+- **Tracker:** SA-110 closed. Total 110; 0 Work in progress; 0 New; 110 Closed; 99 timeline gaps.

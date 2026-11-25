@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sakura-academy-shell-v1.5.140';
+const CACHE_NAME = 'sakura-academy-shell-v1.5.141';
 const AUDIO_ASSETS = [
   './audio/speech/ja-001ba7ef732eea.mp3',
   './audio/speech/ja-002d86196b311a.mp3',
@@ -2966,22 +2966,22 @@ const APP_SHELL = [
   './',
   './index.html',
   './favicon.svg',
-  './styles.css?v=1.5.140',
+  './styles.css?v=1.5.141',
   './issue-tracker.html',
   './PROGRESS.md',
   './DATA_SOURCES.md',
   './src/n5-data.js',
   './src/n5-stories.js',
-  './src/data/kanji-explorer-supplemental.js?v=1.5.140',
-  './src/data/kanji-listening.js?v=1.5.140',
-  './src/content.js?v=1.5.140',
-  './src/n5-app.js?v=1.5.140',
-  './src/content-validation.js?v=1.5.140',
-  './src/lesson-progress.js?v=1.5.140',
-  './src/audio-lessons.js?v=1.5.140',
+  './src/data/kanji-explorer-supplemental.js?v=1.5.141',
+  './src/data/kanji-listening.js?v=1.5.141',
+  './src/content.js?v=1.5.141',
+  './src/n5-app.js?v=1.5.141',
+  './src/content-validation.js?v=1.5.141',
+  './src/lesson-progress.js?v=1.5.141',
+  './src/audio-lessons.js?v=1.5.141',
   './src/reward-guard.js',
-  './src/speech-audio-manifest.js?v=1.5.140',
-  './src/app.js?v=1.5.140',
+  './src/speech-audio-manifest.js?v=1.5.141',
+  './src/app.js?v=1.5.141',
   ...AUDIO_ASSETS,
 ];
 
