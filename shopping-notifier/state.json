@@ -494,9 +494,9 @@
       "url": "https://brooksrunning.co.jp/products/brw4232-w-cr?variant=49571475783977"
     },
     "saucony-jp:8596859945112:45826996469912": {
-      "sale_price": "13200",
+      "sale_price": "10560",
       "reference_price": "26400",
-      "sent_at": "2026-10-07T10:10:22+09:00",
+      "sent_at": "2026-11-26T12:54:38+09:00",
       "url": "https://saucony.jp/products/womens-endorphin-speed-4?variant=45826996469912"
     },
     "saucony-jp:8596861681816:45827010658456": {
@@ -1236,12 +1236,30 @@
       "reference_price": "27500",
       "sent_at": "2026-11-26T12:54:36+09:00",
       "url": "https://saucony.jp/products/progrid-triumph-4-heritage-n02?variant=46756585242776"
+    },
+    "saucony-jp:8838373441688:47225263095960": {
+      "sale_price": "11000",
+      "reference_price": "27500",
+      "sent_at": "2026-11-26T12:54:38+09:00",
+      "url": "https://saucony.jp/products/progrid-triumph-4-winter-n02?variant=47225263095960"
+    },
+    "saucony-jp:8861401514136:47312782885016": {
+      "sale_price": "11000",
+      "reference_price": "27500",
+      "sent_at": "2026-11-26T12:54:38+09:00",
+      "url": "https://saucony.jp/products/progrid-triumph-4-1-n02?variant=47312782885016"
+    },
+    "saucony-jp:8872537063576:47359282512024": {
+      "sale_price": "11000",
+      "reference_price": "27500",
+      "sent_at": "2026-11-26T12:54:38+09:00",
+      "url": "https://saucony.jp/products/keith-haring-x-progrid-triumph-4-n02?variant=47359282512024"
     }
   },
   "last_digest": {
-    "date": "2026-11-25",
-    "coverage_key": "1a64b30eadb6e1a8703ae7f7699a3f28af258f882b76b0315a1c68bd16c3f5a8",
-    "completed_at": "2026-11-25T13:44:57+09:00",
-    "digest_hash": "9e2448743141a3fe2da13bc1ede1b1d2b3395c325fa6aaded2127d1ec2db324d"
+    "date": "2026-11-26",
+    "coverage_key": "bdad011253c0503946e655599474455dcdc29ba8e038e57e8f72bddb05d3e27e",
+    "completed_at": "2026-11-26T12:54:38+09:00",
+    "digest_hash": "3b2fba29c913334565ed01d2db95f6550b8c72e97181ac74fb0d995d73c27364"
   }
 }
