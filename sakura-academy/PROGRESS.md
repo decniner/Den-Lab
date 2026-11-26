@@ -5,16 +5,16 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 114
-- Work in progress: 0
+- Work in progress: 1
 - New: 0
-- Closed: 114
+- Closed: 113
 - Timeline gaps: 103
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
-| SA-114 — Visual-memory tooltip is clipped near the left viewport edge | Codex | Closed | 100% | 2026-11-26 | Not recorded |
+| SA-114 — Visual-memory tooltip is clipped near the left viewport edge | Codex | Work in progress | 90% | 2026-11-26 | Not recorded |
 | SA-113 — Linked kanji give no visual-memory preview before opening | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-112 — Kanji links and visual-memory components are incomplete | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-111 — N5 content is broad but not organized as a complete guided course | Codex | Closed | 100% | 2026-11-26 | Not recorded |
@@ -1528,16 +1528,23 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-114 — Visual-memory tooltip is clipped near the left viewport edge · 2026-11-26
 
-- **Status:** Closed (100%)
-- **Evidence:** The preview is now positioned against the viewport rather than centered over the kanji. It fits near both horizontal edges and flips below the kanji when there is not room above.
-- **Resolution:** Replaced the centered pseudo-element with a reusable fixed tooltip. Placement clamps to viewport margins, the bubble size is constrained to the available viewport, and scrolling or resizing hides the preview cleanly.
-- **Verification:** 148 automated tests pass, including left/right edge placement, narrow viewport width, top flip, bottom fit, and version/cache synchronization.
-- **Fix estimate:** Completed in v1.6.3; elapsed time not recorded.
-
+- **Status:** Work in progress (90%)
+- **Evidence:** Learner reports that v1.6.3 still clips the first-kanji tooltip. Focus mode sets overflow:hidden on body and its content containers. v1.6.4 moves the fixed tooltip overlay to documentElement, outside that clipping context.
+- **Resolution:** Kept the viewport clamp and above/below placement, but attach the overlay to the document root so Focus-mode clipping cannot crop it.
+- **Verification:** 148 automated tests pass, including narrow/wide viewport edge geometry and a regression assertion that the overlay is not attached under body. Visual confirmation in the learner’s browser is pending because browser control is unavailable.
+- **Fix estimate:** Code complete in v1.6.4; awaiting live visual confirmation.
 
 ### Release v1.6.3 — Keep kanji memory previews in view · 2026-11-26
 
 - Replaced centered tooltips with a fixed overlay clamped inside viewport margins; it flips below the kanji near the top edge and remains within the bottom edge.
 - Preserved hover/focus display and full-card click/Enter behavior; hide the preview during scroll or resize.
-- Tracker: SA-114 closed. Total 114; 0 Work in progress; 0 New; 114 Closed; 103 timeline gaps.
+- Tracker: SA-114 was reopened after the learner reported continued clipping in Focus mode.
 - Validation: 148 automated tests pass; Pages deployment verification pending.
+
+
+### Release v1.6.4 — Fix Focus-mode tooltip clipping · 2026-11-26
+
+- Attach the viewport-positioned memory preview to the document root so Focus-mode overflow:hidden cannot crop the overlay.
+- Keep the existing edge clamp and above/below placement behavior.
+- Tracker: SA-114 remains in progress until the learner confirms the clipping is resolved.
+- Validation: 148 automated tests pass; live visual confirmation is pending.
