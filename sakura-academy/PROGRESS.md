@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 115
+- Total tracked: 116
 - Work in progress: 1
 - New: 0
-- Closed: 114
-- Timeline gaps: 104
+- Closed: 115
+- Timeline gaps: 105
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-116 — Kanji tooltip names visual components without explaining them | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-115 — Kanji memory tooltip is too small and omits beginner meaning and reading | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-114 — Visual-memory tooltip is clipped near the left viewport edge | Codex | Work in progress | 90% | 2026-11-26 | Not recorded |
 | SA-113 — Linked kanji give no visual-memory preview before opening | Codex | Closed | 100% | 2026-11-26 | Not recorded |
@@ -1565,3 +1566,18 @@ Every published app change must bump the small footer version and its update dat
 - Added clear fallback labels for readings/meanings not present in the beginner reference.
 - Tracker: SA-115 closed; SA-114 remains open for learner visual confirmation of clipping. Total 115; 1 Work in progress; 0 New; 114 Closed; 104 timeline gaps.
 - Validation: all 149 automated tests pass, including standalone build verification; browser-based visual confirmation and Pages deployment verification pending.
+
+### SA-116 — Kanji tooltip names visual components without explaining them · 2026-11-26
+
+- **Status:** Closed (100%)
+- **Evidence:** The tooltip’s Shapes section identifies each referenced component by character, position, and meaning. For 降, ⻖ is explained as the left-side form of 阜 (こざとへん), meaning hill or mound; 夅 is identified as a rare historical character related to 降 and not a separate beginner vocabulary word. Regression coverage uses the app’s component data.
+- **Impact:** Resolved: beginners can understand the components in the visual memory cue directly from the tooltip.
+- **Resolution:** Added a compact component list below the visual memory cue and reused the existing curated component explanation and position data.
+- **Verification:** All 150 automated tests pass, including a component-tooltip regression that uses the app’s actual component reference and verifies English meaning, こざとへん, romanization, and the right-side component explanation. The static single-file build also passes.
+- **Fix estimate:** In progress.
+
+### Release v1.6.6 — Explain kanji mnemonic components · 2026-11-26
+
+- Added component characters, positions, English descriptions, and Japanese names/reading notes to kanji memory previews.
+- Tracker: SA-116 closed; SA-114 remains open pending learner visual confirmation. Total 116; 1 Work in progress; 0 New; 115 Closed; 105 timeline gaps.
+- Validation: all 150 automated tests pass; Pages workflow and live app/tracker verification pending. Browser visual confirmation is unavailable because the browser bridge is down.
