@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 116
+- Total tracked: 117
 - Work in progress: 1
 - New: 0
-- Closed: 115
-- Timeline gaps: 105
+- Closed: 116
+- Timeline gaps: 106
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-117 — Kanji tooltip leaves unlisted component symbols unexplained | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-116 — Kanji tooltip names visual components without explaining them | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-115 — Kanji memory tooltip is too small and omits beginner meaning and reading | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-114 — Visual-memory tooltip is clipped near the left viewport edge | Codex | Work in progress | 90% | 2026-11-26 | Not recorded |
@@ -1581,3 +1582,18 @@ Every published app change must bump the small footer version and its update dat
 - Added component characters, positions, English descriptions, and Japanese names/reading notes to kanji memory previews.
 - Tracker: SA-116 closed; SA-114 remains open pending learner visual confirmation. Total 116; 1 Work in progress; 0 New; 115 Closed; 105 timeline gaps.
 - Validation: all 150 automated tests pass. GitHub Pages deployment succeeded for commit a62511b1; the hosting workflow confirms the deployed revision. Direct live HTTP checks returned 429 during verification, and browser visual confirmation is unavailable because the browser bridge is down.
+
+### SA-117 — Kanji tooltip leaves unlisted component symbols unexplained · 2026-11-26
+
+- **Status:** Work in progress (10%)
+- **Evidence:** Learner notes that an unfamiliar component remains unexplained when its separate meaning is absent from the reference. The current fallback only says its meaning is not listed.
+- **Impact:** Beginners still cannot identify the component’s role in the parent character.
+- **Planned resolution:** Label the component as the left, right, top, or bottom part of the parent kanji and describe its role as a shape used to build that character, even if the reference has no separate meaning.
+- **Verification:** Pending missing-metadata regression, full test suite, and Pages deployment.
+- **Fix estimate:** In progress.
+
+### Release v1.6.7 — Name components with missing definitions · 2026-11-26
+
+- For components without reference data, identify the glyph as the left/right/top/bottom part of its parent kanji and describe its role as a shape used there.
+- Tracker: SA-117 closed; SA-114 remains open pending learner visual confirmation. Total 117; 1 Work in progress; 0 New; 116 Closed; 106 timeline gaps.
+- Validation: all 150 automated tests pass, including the missing-metadata regression and standalone build. Pages deployment pending; direct Pages requests were rate-limited on the prior release.
