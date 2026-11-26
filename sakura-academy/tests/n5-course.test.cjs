@@ -71,7 +71,7 @@ test('mixed-skill checks vary the position of the correct choice', () => {
 });
 
 test('guided lesson screens page grammar and kanji instead of rendering long lists', () => {
-  const sandbox = vm.createContext({ state: { strictMode: true, n5Study: {} }, window: { scrollTo() {} }, render() {}, save() {}, esc(value) { return String(value ?? ''); }, strokeOrderSvg() { return '<svg></svg>'; } });
+  const sandbox = vm.createContext({ state: { strictMode: true, n5Study: {} }, window: { scrollTo() {} }, render() {}, save() {}, esc(value) { return String(value ?? ''); }, strokeOrderSvg() { return '<svg></svg>'; }, KANJI: [{ ch: '日', memoryTip: 'The sun 日 rises over the horizon.' }] });
   for (const file of ['src/n5-data.js', 'src/n5-stories.js', 'src/n5-course.js', 'src/n5-app.js']) vm.runInContext(fs.readFileSync(path.join(project, file), 'utf8'), sandbox, { filename: file });
   vm.runInContext('n5CourseOpen(0)', sandbox);
   vm.runInContext("n5CourseStep='grammar'", sandbox);
@@ -82,6 +82,19 @@ test('guided lesson screens page grammar and kanji instead of rendering long lis
   const kanjiScreen = vm.runInContext('n5CoursePage()', sandbox);
   assert.match(kanjiScreen, /Kanji 1 of 7/);
   assert.equal((kanjiScreen.match(/class=\"course-kanji-char\"/g) || []).length, 1);
+  assert.match(kanjiScreen, /openCourseKanjiFromStudyText\('/);
+  assert.match(kanjiScreen, /class=\"kanji-memory course-kanji-memory\"/);
+  assert.match(kanjiScreen, /The sun 日 rises over the horizon/);
+  assert.match(kanjiScreen, /Replay stroke order/);
+});
+
+test('guided course character opens a contextual kanji detail with the current lesson sentence', () => {
+  const sandbox = vm.createContext({ openKanjiFromStudyText(...args) { sandbox.opened = args; }, KANJI: [{ ch: '日' }] });
+  for (const file of ['src/n5-data.js', 'src/n5-stories.js', 'src/n5-course.js', 'src/n5-app.js']) vm.runInContext(fs.readFileSync(path.join(project, file), 'utf8'), sandbox, { filename: file });
+  vm.runInContext('n5CourseUnit=0;openCourseKanjiFromStudyText(N5_COURSE_UNITS[0].kanji[0])', sandbox);
+  assert.equal(sandbox.opened[0], 0);
+  assert.equal(sandbox.opened[1], '日');
+  assert.match(sandbox.opened[2], /日/);
 });
 
 test('strict mode off allows previewing any unit while the 20-item mock can draw unique listening prompts', () => {

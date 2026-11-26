@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 111
+- Total tracked: 112
 - Work in progress: 0
 - New: 0
-- Closed: 111
-- Timeline gaps: 100
+- Closed: 112
+- Timeline gaps: 101
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-112 — Kanji links and visual-memory components are incomplete | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-111 — N5 content is broad but not organized as a complete guided course | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-110 — Study activities do not open in Focus mode by default | Codex | Closed | 100% | 2026-11-25 | Not recorded |
 | SA-109 — Mobile lesson audio cannot recover when resume is rejected | Codex | Closed | 100% | 2026-11-25 | Not recorded |
@@ -1477,10 +1478,9 @@ Every published app change must bump the small footer version and its update dat
 
 ### SA-111 — N5 content is broad but not organized as a complete guided course · 2026-11-26
 
-- **Status:** Work in progress · **Progress:** 10%
-- **Evidence:** N5 currently has 674 vocabulary entries, 81 grammar points, 84 kanji, 4 three-sentence stories, 12 reading items, and 16 listening items. Course materials are separate reference tabs, and the 20-question mock repeats 4 listening prompts.
-- **Impact:** Learners lack a sequenced lesson path and integrated progress, with limited reading/listening variety.
-- **Planned fix:** Add a guided 12-unit course using the full grammar/kanji reference, original contextual lessons, more story and test practice, per-unit progress, and offline Kokoro audio. Do not label community vocabulary/kanji lists official.
+- **Status:** Closed (100%)
+- **Evidence:** The guided 12-unit course covers 81 grammar points, all 84 kanji, and the complete 674-word reference, with 12 stories, 24 reading items, 32 listening items, saved progress, mixed-skill checks, and strict unlocking.
+- **Resolution:** Delivered and verified in v1.6.0; see the release record below.
 
 
 ### Release v1.6.0 — Complete guided N5 course · 2026-11-26
@@ -1491,3 +1491,19 @@ Every published app change must bump the small footer version and its update dat
 - Bundled Kokoro story/listening audio offline; fixed the phrase-audio generator to preserve existing manifest entries and story narration clips.
 - Tracker: SA-111 closed. Total 111; 0 Work in progress; 0 New; 111 Closed; 100 timeline gaps.
 - Validation: 144 automated tests passed; the 18 MB standalone build contains the course code and v1.6.0 stamp; mobile responsive assertions passed. Visible mobile-browser preview was unavailable in this workspace; Pages deployment status is pending.
+
+### SA-112 — Kanji links and visual-memory components are incomplete · 2026-11-26
+
+- **Status:** Closed (100%)
+- **Evidence:** Kanji tapped in study text open the contextual detail card. The 降 breakdown explains and links ⻖ and 夅; course kanji memory cues are linked too. Nested kanji cards return to the prior card and then to the original study position.
+- **Resolution:** Added explicit component explanations and detail data, linked course kanji and memory cues, preserved nested return state, and omitted empty stroke diagrams for components without stroke data.
+- **Verification:** 147 automated tests pass, including course link routing, component detail data, and nested return navigation.
+- **Fix estimate:** Completed in v1.6.1; elapsed time not recorded.
+
+### Release v1.6.1 — Linked kanji and explained components · 2026-11-26
+
+- Kanji tapped in lesson, story, course, and visual-memory text now open the “Kanji from your study text” detail card; nested component links return to the prior kanji and then the original lesson location.
+- Guided-course kanji now show tappable visual-memory cues, with a separate stroke-order replay action.
+- Added a plain-language breakdown for 降, linking ⻖ (the 阜/こざとへん radical) and 夅 (a rare historical form associated with 降). The 夅 note was checked against Taiwan Ministry of Education’s Dictionary of Chinese Character Variants.
+- Tracker: SA-112 closed. Total 112; 0 Work in progress; 0 New; 112 Closed; 101 timeline gaps.
+- Validation: 147 automated tests pass and the offline single-file release build contains the v1.6.1 component details; Pages deployment verification pending.

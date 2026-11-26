@@ -14,6 +14,8 @@ OpenJLPT upstream attribution: JMdict and KANJIDIC2 (EDRDG), Jonathan Waller’s
 
 The 250 ordered character paths in `src/content.js` are from [KanjiVG](https://kanjivg.tagaini.net/) by Ulrich Apel and contributors, licensed CC BY-SA 3.0. The bundled paths remain under CC BY-SA 3.0.
 
+The component note for 夅 in 降 follows the Taiwan Ministry of Education [Dictionary of Chinese Character Variants](https://dict.variants.moe.edu.tw/dictView.jsp?ID=-48325&la=0), which records 夅 as a historical variant related to 降 and explains that the two forms had distinct historical uses. The learning cue describes it as a structural aid, not as a standalone N5 vocabulary item.
+
 The bundled `src/data/kanji-explorer-supplemental.js` contains the course characters not limited to the curated 84-card N5 list. Dictionary meanings, readings, and stroke counts are derived from OpenJLPT level data and EDRDG KANJIDIC2; ordered SVG paths are from KanjiVG and remain under CC BY-SA 3.0. Source and license details are recorded in [`src/data/NOTICE.md`](src/data/NOTICE.md). Memory cues are learner-facing visual associations, not etymological claims.
 
 Sakura Academy is independent and is not endorsed by or affiliated with the JLPT organizers.
