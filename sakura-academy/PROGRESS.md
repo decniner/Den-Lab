@@ -1573,11 +1573,11 @@ Every published app change must bump the small footer version and its update dat
 - **Evidence:** The tooltip’s Shapes section identifies each referenced component by character, position, and meaning. For 降, ⻖ is explained as the left-side form of 阜 (こざとへん), meaning hill or mound; 夅 is identified as a rare historical character related to 降 and not a separate beginner vocabulary word. Regression coverage uses the app’s component data.
 - **Impact:** Resolved: beginners can understand the components in the visual memory cue directly from the tooltip.
 - **Resolution:** Added a compact component list below the visual memory cue and reused the existing curated component explanation and position data.
-- **Verification:** All 150 automated tests pass, including a component-tooltip regression that uses the app’s actual component reference and verifies English meaning, こざとへん, romanization, and the right-side component explanation. The static single-file build also passes.
+- **Verification:** All 150 automated tests pass, including component meaning, Japanese name, romanization, and unfamiliar right-side component details; the static single-file build passes. GitHub Pages deployment succeeded for v1.6.6 commit a62511b1. Live HTTP checks were rate-limited with 429 responses, and browser visual confirmation is unavailable in this environment.
 - **Fix estimate:** In progress.
 
 ### Release v1.6.6 — Explain kanji mnemonic components · 2026-11-26
 
 - Added component characters, positions, English descriptions, and Japanese names/reading notes to kanji memory previews.
 - Tracker: SA-116 closed; SA-114 remains open pending learner visual confirmation. Total 116; 1 Work in progress; 0 New; 115 Closed; 105 timeline gaps.
-- Validation: all 150 automated tests pass; Pages workflow and live app/tracker verification pending. Browser visual confirmation is unavailable because the browser bridge is down.
+- Validation: all 150 automated tests pass. GitHub Pages deployment succeeded for commit a62511b1; the hosting workflow confirms the deployed revision. Direct live HTTP checks returned 429 during verification, and browser visual confirmation is unavailable because the browser bridge is down.
