@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 114
+- Total tracked: 115
 - Work in progress: 1
 - New: 0
-- Closed: 113
-- Timeline gaps: 103
+- Closed: 114
+- Timeline gaps: 104
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-115 — Kanji memory tooltip is too small and omits beginner meaning and reading | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-114 — Visual-memory tooltip is clipped near the left viewport edge | Codex | Work in progress | 90% | 2026-11-26 | Not recorded |
 | SA-113 — Linked kanji give no visual-memory preview before opening | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-112 — Kanji links and visual-memory components are incomplete | Codex | Closed | 100% | 2026-11-26 | Not recorded |
@@ -1548,3 +1549,19 @@ Every published app change must bump the small footer version and its update dat
 - Keep the existing edge clamp and above/below placement behavior.
 - Tracker: SA-114 remains in progress until the learner confirms the clipping is resolved.
 - Validation: 148 automated tests pass; live visual confirmation is pending.
+
+### SA-115 — Kanji memory tooltip is too small and omits beginner meaning and reading · 2026-11-26
+
+- **Status:** Closed (100%)
+- **Evidence:** The preview shows a prominent kanji, English meaning, Japanese reading in kana with romanization, and visual memory. It falls back to the kanji’s on’yomi and kun’yomi when no exact reading is available in context; missing fields are labeled clearly. Mobile styles retain a viewport-safe width and larger text.
+- **Impact:** Resolved: beginners can identify an unfamiliar kanji and understand its meaning and reading from the preview without needing to open the full card.
+- **Resolution:** Enlarged the card to up to 540px with 17px base text and a 38px character, responsive phone sizing, and separate meaning, reading, and memory sections. Removed the incorrect use of a whole story sentence’s kana as an individual kanji reading.
+- **Verification:** All 149 automated tests pass, including focused checks for meaning, kana/romaji readings, explicit missing-data text, mobile sizing, viewport placement, and the standalone build. Browser-based visual confirmation remains unavailable in this environment.
+- **Fix estimate:** Resolved in v1.6.5; duration not recorded.
+
+### Release v1.6.5 — Readable beginner kanji previews · 2026-11-26
+
+- Enlarged the kanji preview and added plain-English meaning, Japanese reading in kana and romaji, and visual memory cue.
+- Added clear fallback labels for readings/meanings not present in the beginner reference.
+- Tracker: SA-115 closed; SA-114 remains open for learner visual confirmation of clipping. Total 115; 1 Work in progress; 0 New; 114 Closed; 104 timeline gaps.
+- Validation: all 149 automated tests pass, including standalone build verification; browser-based visual confirmation and Pages deployment verification pending.
