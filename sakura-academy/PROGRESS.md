@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 112
+- Total tracked: 113
 - Work in progress: 0
 - New: 0
-- Closed: 112
-- Timeline gaps: 101
+- Closed: 113
+- Timeline gaps: 102
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-113 — Linked kanji give no visual-memory preview before opening | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-112 — Kanji links and visual-memory components are incomplete | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-111 — N5 content is broad but not organized as a complete guided course | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-110 — Study activities do not open in Focus mode by default | Codex | Closed | 100% | 2026-11-25 | Not recorded |
@@ -1507,3 +1508,19 @@ Every published app change must bump the small footer version and its update dat
 - Added a plain-language breakdown for 降, linking ⻖ (the 阜/こざとへん radical) and 夅 (a rare historical form associated with 降). The 夅 note was checked against Taiwan Ministry of Education’s Dictionary of Chinese Character Variants.
 - Tracker: SA-112 closed. Total 112; 0 Work in progress; 0 New; 112 Closed; 101 timeline gaps.
 - Validation: 147 automated tests pass and the offline single-file release build contains the v1.6.1 component details; Pages deployment verification pending.
+
+### SA-113 — Linked kanji give no visual-memory preview before opening · 2026-11-26
+
+- **Status:** Closed (100%)
+- **Evidence:** Hovering or keyboard-focusing a linked kanji shows its visual-memory cue. Click and Enter continue to open the full contextual detail card.
+- **Resolution:** Added an accessible description, native title, and compact custom tooltip backed by the same memory data as the kanji detail view. Tooltip motion honors reduced-motion preferences.
+- **Verification:** 147 automated tests pass, including tooltip content, focus behavior, click routing, and version/cache synchronization.
+- **Fix estimate:** Completed in v1.6.2; elapsed time not recorded.
+
+
+### Release v1.6.2 — Kanji memory previews · 2026-11-26
+
+- Added compact visual-memory tooltips to linked kanji on pointer hover and keyboard focus; click and Enter still open full kanji details.
+- Reused the same curated memory data as the detail card and honored reduced-motion preferences.
+- Tracker: SA-113 closed. Total 113; 0 Work in progress; 0 New; 113 Closed; 102 timeline gaps.
+- Validation: 147 automated tests pass; Pages deployment verification pending.
