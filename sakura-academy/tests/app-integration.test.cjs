@@ -16,8 +16,8 @@ test('lesson renderer calls the helper exported before the app loads', () => {
   assert.match(progressSource, /Object\.assign\(root,\s*\{\s*lessonTabStatus\s*,/);
   assert.match(appSource, /lessonTabStatus\(t\[0\],l,state,ASSESSMENT_TYPES\)/);
   assert.doesNotMatch(appSource, /getLessonTabStatus\(/);
-  assert.match(indexHtml, /href="styles\.css\?v=1\.6\.7"/);
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.6\.7"><\/script><script src="src\/audio-lessons\.js\?v=1\.6\.7"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.6\.7"><\/script><script src="src\/app\.js\?v=1\.6\.7">/);
+  assert.match(indexHtml, /href="styles\.css\?v=1\.6\.8"/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.6\.8"><\/script><script src="src\/audio-lessons\.js\?v=1\.6\.8"><\/script><script src="src\/reward-guard\.js"><\/script><script src="src\/speech-audio-manifest\.js\?v=1\.6\.8"><\/script><script src="src\/app\.js\?v=1\.6\.8">/);
 });
 
 test('vocabulary search uses a concise mobile-friendly placeholder', () => {
@@ -120,7 +120,7 @@ test('starting a kana recognition question scrolls its prompt into view', () => 
 });
 
 test('Japanese audio prefers bundled clips and gives visible playback failures', () => {
-  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.6\.7"><\/script>/);
+  assert.match(indexHtml, /src="src\/speech-audio-manifest\.js\?v=1\.6\.8"><\/script>/);
   assert.match(appSource, /SAKURA_AUDIO/);
   assert.match(appSource, /speech-toast/);
   assert.match(styles, /\.speech-toast\{[^}]*position:fixed/);
@@ -135,7 +135,7 @@ test('lessons omit microphone practice but retain sentence listening controls', 
 });
 
 test('the lesson progress helper has a versioned offline-safe URL', () => {
-  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.6\.7"><\/script>/);
+  assert.match(indexHtml, /src="src\/lesson-progress\.js\?v=1\.6\.8"><\/script>/);
   assert.doesNotMatch(indexHtml, /src="src\/lesson-progress\.js"><\/script>/);
 });
 
@@ -203,33 +203,24 @@ test('kanji in learning text opens its matching explorer card and returns to the
   assert.match(styles, /body\[data-focus-mode=\"true\"\]\{height:100dvh;overflow:hidden\}/);
 });
 
-test('kanji tooltip explains visual component shapes in beginner language', () => {
+test('kanji tooltip explains visual component shapes simply, including missing definitions', () => {
   const componentContent = fs.readFileSync(path.join(project, 'src', 'content.js'), 'utf8');
   const componentSource = componentContent.match(/globalThis\.SAKURA_KANJI_COMPONENTS=Object\.freeze\(({[\s\S]*})\);/)[1];
   const helper = appSource.match(/function kanjiTooltipComponents\([\s\S]*?\nfunction showKanjiMemoryTooltip/)[0].replace(/\nfunction showKanjiMemoryTooltip$/, '');
   const context = vm.createContext({ globalThis: {}, KANJI: [], SAKURA_KANJI_SUPPLEMENTAL: {}, esc: value => String(value), audioKanaToRomaji: value => value === 'こざとへん' ? 'kozato-hen' : value });
   vm.runInContext(`globalThis.SAKURA_KANJI_COMPONENTS=Object.freeze(${componentSource})\n${helper}`, context);
   const parts = vm.runInContext(`kanjiTooltipComponents([{ch:'⻖',position:'left'},{ch:'夅',position:'right'}],'降')`, context);
-  assert.match(parts, /⻖/);
-  assert.match(parts, /left/);
-  assert.match(parts, /Left-side form of 阜/);
-  assert.match(parts, /こざとへん/);
-  assert.match(parts, /kozato-hen/);
-  assert.match(parts, /hill or mound/);
-  assert.match(parts, /夅/);
-  assert.match(parts, /right/);
-  assert.match(parts, /rare historical character/);
-  assert.match(parts, /not a separate beginner vocabulary word/);
+  assert.match(parts, /⻖<\/span> \(left\): Hill\/mound radical \(阜\), used on the left/);
+  assert.match(parts, /called <span class=jp>こざとへん<\/span> \(kozato-hen\)/);
+  assert.match(parts, /夅<\/span> \(right\): Rare historical form related to 降/);
+  assert.doesNotMatch(parts, /<ul>|<li>|Older dictionaries|not a separate beginner vocabulary word/);
   const fallback = vm.runInContext(`kanjiTooltipComponents([{ch:'未',position:'left'}],'降')`, context);
-  assert.match(fallback, /未/);
-  assert.match(fallback, /left-side component of 降/);
-  assert.match(fallback, /used as the left-side shape in 降/);
-  assert.match(fallback, /No separate meaning is given in this beginner reference/);
+  assert.match(fallback, /未<\/span> \(left\): left-side shape used in 降; separate meaning not listed/);
   assert.match(appSource, /kanjiTooltipComponents\(details\.components,ch\)/);
-  assert.match(appSource, /Shapes in/);
+  assert.match(appSource, /<b>Parts:<\/b>/);
 });
 
-test('kanji tooltip gives beginners a larger meaning, Japanese reading, romanization, and memory cue', () => {
+test('kanji tooltip presents one beginner reading with kana and romaji', () => {
   const details = appSource.match(/function kanjiContextDetails\([\s\S]*?\nfunction kanjiContextPage/)[0].replace(/\nfunction kanjiContextPage$/, '');
   const reading = appSource.match(/function audioKanaToRomaji\([\s\S]*?\nfunction kanaAnswer/)[0].replace(/\nfunction kanaAnswer$/, '');
   const formatter = appSource.match(/function kanjiTooltipReading\([\s\S]*?\nfunction showKanjiMemoryTooltip/)[0].replace(/\nfunction showKanjiMemoryTooltip$/, '');
@@ -243,20 +234,17 @@ test('kanji tooltip gives beginners a larger meaning, Japanese reading, romaniza
   const d = vm.runInContext("kanjiContextDetails('山', '山に行きます')", context);
   assert.equal(d.meaning, 'mountain');
   assert.equal(d.reading, '', 'a whole story line reading must not be mislabeled as this kanji reading');
-  const markup = vm.runInContext('kanjiTooltipReading({on:d.on,kun:d.kun,reading:""})', Object.assign(context, { d }));
-  assert.match(markup, /サン/);
-  assert.match(markup, /san/);
-  assert.match(markup, /やま/);
-  assert.match(markup, /yama/);
+  const common = vm.runInContext('kanjiTooltipReading({on:d.on,kun:d.kun,reading:""})', Object.assign(context, { d }));
+  assert.match(common, /Common reading/);
+  assert.match(common, /やま/);
+  assert.match(common, /yama/);
+  assert.doesNotMatch(common, /サン|On’yomi|Kun’yomi/);
   const direct = vm.runInContext('kanjiTooltipReading({reading:"やま",on:"—",kun:"—"})', context);
-  assert.match(direct, /Reading here/);
+  assert.match(direct, /Reading/);
   assert.match(direct, /yama/);
-  const missing = vm.runInContext('kanjiTooltipReading({reading:"",on:"—",kun:"—"})', context);
-  assert.match(missing, /not listed in this beginner reference yet/);
-  assert.match(styles, /\.kanji-memory-tooltip\{[^}]*width:min\(540px,calc\(100vw - 24px\)\)[^}]*font:500 17px/);
-  assert.match(styles, /\.kanji-tooltip-char\{[^}]*font:600 38px/);
-  assert.match(appSource, /Meaning not listed in this beginner reference yet/);
-  assert.match(appSource, /Visual memory cue not available yet/);
+  assert.match(vm.runInContext('kanjiTooltipReading({reading:"",on:"—",kun:"—"})', context), /Reading not listed/);
+  assert.match(styles, /\.kanji-memory-tooltip\{[^}]*width:min\(480px,calc\(100vw - 24px\)\)[^}]*font:500 16px/);
+  assert.match(styles, /\.kanji-tooltip-char\{[^}]*font:600 34px/);
 });
 
 test('kanji memory tooltip stays within viewport margins and flips below near the top', () => {
@@ -337,7 +325,7 @@ test('Kanji Explorer always shows and autoplays the selected stroke order', () =
   assert.match(appSource, /id=\"kanjiStrokeGuide\" class=\"kanji-stroke-guide\"/);
   assert.doesNotMatch(appSource, /<details class=\"kanji-stroke-details\"/);
   assert.match(appSource, /function playKanjiStrokeOrder\(ch\)[\s\S]*?strokeTimer=setInterval/);
-  assert.match(indexHtml, /src=\"src\/data\/kanji-explorer-supplemental.js\?v=1\.6\.7\"><\/script>/);
+  assert.match(indexHtml, /src=\"src\/data\/kanji-explorer-supplemental.js\?v=1\.6\.8\"><\/script>/);
   assert.match(appSource, /function kanjiContextPage\(\)[\s\S]*?On’yomi:[\s\S]*?Kun’yomi:[\s\S]*?Visual memory[\s\S]*?Hear example/);
   assert.match(appSource, /N5_STORIES\.flatMap/);
   assert.match(appSource, /\.n5-story-line/);

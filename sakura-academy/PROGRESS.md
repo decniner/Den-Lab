@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 117
+- Total tracked: 118
 - Work in progress: 1
 - New: 0
-- Closed: 116
-- Timeline gaps: 106
+- Closed: 117
+- Timeline gaps: 107
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-118 — Kanji tooltip is dense and difficult for beginners to understand | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-117 — Kanji tooltip leaves unlisted component symbols unexplained | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-116 — Kanji tooltip names visual components without explaining them | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-115 — Kanji memory tooltip is too small and omits beginner meaning and reading | Codex | Closed | 100% | 2026-11-26 | Not recorded |
@@ -1597,3 +1598,18 @@ Every published app change must bump the small footer version and its update dat
 - For components without reference data, identify the glyph as the left/right/top/bottom part of its parent kanji and describe its role as a shape used there.
 - Tracker: SA-117 closed; SA-114 remains open pending learner visual confirmation. Total 117; 1 Work in progress; 0 New; 116 Closed; 106 timeline gaps.
 - Validation: all 150 automated tests pass, including the missing-metadata regression and standalone build. The v1.6.7 Pages workflow succeeded for app commit b0eb8ea6; direct Pages fetches were rate-limited (HTTP 429) on the prior release, and browser visual confirmation is unavailable.
+
+### SA-118 — Kanji tooltip is dense and difficult for beginners to understand · 2026-11-26
+
+- **Status:** Work in progress (10%)
+- **Evidence:** Learner reports that the preview is difficult to read and understand. It repeats component details and presents several reading/definition labels in a compact card.
+- **Impact:** Beginners must interpret a dense block before learning what the kanji means or how to read it.
+- **Planned resolution:** Reduce the card to one meaning, one useful reading, one brief memory cue, and a concise component line only when needed. Keep the positional fallback for components without a listed definition.
+- **Verification:** Pending focused wording/fallback regression, full suite, and Pages deployment.
+- **Fix estimate:** In progress.
+
+### Release v1.6.8 — Simplify kanji tooltips · 2026-11-26
+
+- Reduced the tooltip to the kanji/meaning, one reading, one memory cue, and concise component labels.
+- Tracker: SA-118 closed; SA-114 remains open pending learner visual confirmation. Total 118; 1 Work in progress; 0 New; 117 Closed; 107 timeline gaps.
+- Validation: all 150 automated tests pass, including static single-file build checks; Pages deployment pending.
