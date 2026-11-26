@@ -200,9 +200,9 @@
       "url": "https://toffy.jp/products/hw-ds3?variant=51142601113874"
     },
     "phenixstore-com:8634451231024:46618175537456": {
-      "sale_price": "16650",
+      "sale_price": "15750",
       "reference_price": "45000",
-      "sent_at": "2026-11-22T10:50:06+09:00",
+      "sent_at": "2026-11-26T12:54:36+09:00",
       "url": "https://phenixstore.com/products/esw23ot64?variant=46618175537456"
     },
     "phenixstore-com:8720368337200:46824032928048": {
@@ -470,15 +470,15 @@
       "url": "https://saucony.jp/products/progrid-triumph-4-gorpcore?variant=45827052568728"
     },
     "saucony-jp:8596869415064:45827083108504": {
-      "sale_price": "13750",
+      "sale_price": "11000",
       "reference_price": "27500",
-      "sent_at": "2026-10-07T10:10:20+09:00",
+      "sent_at": "2026-11-26T12:54:36+09:00",
       "url": "https://saucony.jp/products/progrid-triumph-4-artsy?variant=45827083108504"
     },
     "saucony-jp:8596870267032:45827087564952": {
-      "sale_price": "13750",
+      "sale_price": "11000",
       "reference_price": "27500",
-      "sent_at": "2026-10-07T10:10:20+09:00",
+      "sent_at": "2026-11-26T12:54:36+09:00",
       "url": "https://saucony.jp/products/progrid-omni-9-metallic?variant=45827087564952"
     },
     "brooksrunning-co-jp:8897620836649:47369901244713": {
@@ -1218,6 +1218,24 @@
       "reference_price": "27500",
       "sent_at": "2026-11-25T13:44:57+09:00",
       "url": "https://saucony.jp/products/progrid-omni-9-armor-n02?variant=45827072196760"
+    },
+    "saucony-jp:8760303976600:46755973693592": {
+      "sale_price": "11000",
+      "reference_price": "27500",
+      "sent_at": "2026-11-26T12:54:36+09:00",
+      "url": "https://saucony.jp/products/womens-hurricane-25-n02?variant=46755973693592"
+    },
+    "saucony-jp:8760471027864:46756584751256": {
+      "sale_price": "11000",
+      "reference_price": "27500",
+      "sent_at": "2026-11-26T12:54:36+09:00",
+      "url": "https://saucony.jp/products/progrid-triumph-4-core-n02?variant=46756584751256"
+    },
+    "saucony-jp:8760471093400:46756585242776": {
+      "sale_price": "11000",
+      "reference_price": "27500",
+      "sent_at": "2026-11-26T12:54:36+09:00",
+      "url": "https://saucony.jp/products/progrid-triumph-4-heritage-n02?variant=46756585242776"
     }
   },
   "last_digest": {
