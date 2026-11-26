@@ -1596,4 +1596,4 @@ Every published app change must bump the small footer version and its update dat
 
 - For components without reference data, identify the glyph as the left/right/top/bottom part of its parent kanji and describe its role as a shape used there.
 - Tracker: SA-117 closed; SA-114 remains open pending learner visual confirmation. Total 117; 1 Work in progress; 0 New; 116 Closed; 106 timeline gaps.
-- Validation: all 150 automated tests pass, including the missing-metadata regression and standalone build. Pages deployment pending; direct Pages requests were rate-limited on the prior release.
+- Validation: all 150 automated tests pass, including the missing-metadata regression and standalone build. The v1.6.7 Pages workflow succeeded for app commit b0eb8ea6; direct Pages fetches were rate-limited (HTTP 429) on the prior release, and browser visual confirmation is unavailable.
