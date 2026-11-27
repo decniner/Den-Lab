@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 122
+- Total tracked: 123
 - Work in progress: 1
 - New: 0
-- Closed: 121
-- Timeline gaps: 111
+- Closed: 122
+- Timeline gaps: 112
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-123 — Kanji Explorer labels prose and isolated words as a sentence | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-122 — Kanji visual memories lack component detail, story, and word examples | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-121 — Kanji audio lessons lack a Show romaji option | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-120 — Kanji audio sentences cannot be saved for later study | Codex | Closed | 100% | 2026-11-27 | Not recorded |
@@ -1682,3 +1683,20 @@ Every published app change must bump the small footer version and its update dat
 - Preserved concise hover tooltips while full Explorer cards show the expanded explanation. The data is included in the offline shell and generated single-file app.
 - Tracker: SA-122 closed; SA-114 remains open pending learner visual confirmation. Total 122; 1 Work in progress; 0 New; 121 Closed; 111 timeline gaps.
 - Validation: all 155 automated tests pass; single-file production build includes the new data and renderer; `git diff --check` passes. Mobile visual inspection was unavailable because this session has no controllable browser.
+
+
+### SA-123 — Kanji Explorer labels prose and isolated words as a sentence · 2026-11-28
+
+- **Status:** Closed (100%)
+- **Evidence:** Sentence is shown only when captured context ends in Japanese sentence punctuation and contains Japanese kana and kanji. The regression check covers 時 as a single character, a complete Japanese sentence, and visual-memory prose.
+- **Impact:** Resolved: study text is no longer mislabeled as a sentence when a learner opens a kanji from memory or component notes.
+- **Resolution:** Added a shared source-sentence check and conditioned the Sentence row on its result; the fix covers every kanji using this flow.
+- **Verification:** All 156 automated tests pass; the v1.7.3 single-file production build and `git diff --check` pass.
+- **Fix estimate:** Resolved in v1.7.3; duration not recorded.
+
+### Release v1.7.3 — Correct Kanji Explorer sentence context · 2026-11-28
+
+- Only show a Sentence row for a complete Japanese sentence; memory prose, component descriptions, isolated words, and single kanji are not presented as sentences.
+- Bumped the visible app and service-worker versions to v1.7.3.
+- Tracker: SA-123 closed; total 123; 1 Work in progress; 0 New; 122 Closed; 112 timeline gaps.
+- Validation: all 156 automated tests pass; single-file build and `git diff --check` pass.
