@@ -98,6 +98,30 @@ test('Kanji playlist offers Previous, Next, and continuous Play all controls', (
   assert.match(stylesSource, /\.audio-controls\.kanji-audio-controls\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/);
 });
 
+test('Kanji audio sentences can be saved and reopened from a review list', () => {
+  assert.match(appSource, /Add to Study/);
+  assert.match(appSource, /Sentences in Study/);
+  assert.match(appSource, /studyKanjiAudioSentence\(/);
+  assert.match(appSource, /kanjiAudioStudy/);
+  const action = appSource.split('\n').find(item => item.startsWith('function addKanjiAudioToStudy('));
+  const review = appSource.split('\n').find(item => item.startsWith('function studyKanjiAudioSentence('));
+  const key = appSource.split('\n').find(item => item.startsWith('function kanjiAudioStudyKey('));
+  assert.ok(action && review && key, 'saved sentence actions are explicit and testable');
+  const item = { character: '山', jp: '山へ行きます。', en: 'I go to the mountain.', tatoebaId: 101 };
+  const sandbox = {
+    state: { kanjiAudioStudy: {} }, audioLessonQueue: [item], audioLessonIndex: 0,
+    audioLessonPaused: false, audioLessonComplete: false, audioEchoPending: false, audioEchoReplay: false,
+    audioResumeNeedsRestart: false, audioPlayer: { onended: null, onerror: null, pause() {} },
+    window: { speechSynthesis: { cancel() {} } }, save() {}, updateKanjiListeningStatus() {},
+  };
+  vm.runInNewContext(`${key}\n${action}\n${review}\naddKanjiAudioToStudy(101)`, sandbox);
+  assert.equal(sandbox.state.kanjiAudioStudy['101'], true, 'Add to Study persists a sentence by stable ID');
+  sandbox.audioLessonIndex = 2;
+  vm.runInContext('studyKanjiAudioSentence(101)', sandbox);
+  assert.equal(sandbox.audioLessonIndex, 0, 'reviewing a saved sentence selects its place in the playlist');
+  assert.equal(sandbox.audioLessonPaused, true, 'opening a saved sentence waits for the learner to press Play');
+});
+
 test('Kanji Previous and Next disable only at the playlist boundaries', () => {
   const navigation = appSource.split('\n').find(line => line.startsWith('function updateKanjiAudioNavigation('));
   assert.ok(navigation);

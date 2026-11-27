@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 119
+- Total tracked: 120
 - Work in progress: 1
 - New: 0
-- Closed: 118
-- Timeline gaps: 108
+- Closed: 119
+- Timeline gaps: 109
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-120 — Kanji audio sentences cannot be saved for later study | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-119 — Kanji listening playlist lacks a Next control | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-118 — Kanji tooltip is dense and difficult for beginners to understand | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-117 — Kanji tooltip leaves unlisted component symbols unexplained | Codex | Closed | 100% | 2026-11-26 | Not recorded |
@@ -1629,3 +1630,20 @@ Every published app change must bump the small footer version and its update dat
 - Added Previous and Next around the continuous Play all kanji control, with pause-aware selection and playlist boundary states.
 - Tracker: SA-119 closed; SA-114 remains open pending learner visual confirmation. Total 119; 1 Work in progress; 0 New; 118 Closed; 108 timeline gaps.
 - Validation: all 152 automated tests pass, including standalone build coverage; Pages deployment pending.
+
+
+### SA-120 — Kanji audio sentences cannot be saved for later study · 2026-11-27
+
+- **Status:** Closed (100%)
+- **Evidence:** The current sample has an Add to Study action. Saved sentences appear in a Sentences in Study list with reading and English meaning. Selecting a saved row returns to that playlist sentence and waits for the learner to press Play; saved rows can also be removed.
+- **Impact:** Resolved: learners can save unfamiliar sentences and return later without losing their place in the 84-sentence playlist.
+- **Resolution:** Added a persistent sentence-level study map keyed by source ID, an in-player review list, and paused sentence selection.
+- **Verification:** All 153 automated tests pass, including save/review transitions and tracker counts. The standalone build and `git diff --check` pass.
+- **Fix estimate:** Resolved in v1.7.0; duration not recorded.
+
+### Release v1.7.0 — Kanji audio sentence Study list · 2026-11-27
+
+- Added “Add to Study” for the active Kanji audio sentence and a saved sentence list with reading, meaning, review, and remove actions.
+- Saved review reselects the sentence in the playlist and waits for Play. Data is included in normal progress backups.
+- Tracker: SA-120 closed; SA-114 remains open pending learner visual confirmation. Total 120; 1 Work in progress; 0 New; 119 Closed; 109 timeline gaps.
+- Validation: all 153 automated tests pass; standalone build and `git diff --check` pass.
