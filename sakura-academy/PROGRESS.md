@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 120
+- Total tracked: 121
 - Work in progress: 1
 - New: 0
-- Closed: 119
-- Timeline gaps: 109
+- Closed: 120
+- Timeline gaps: 110
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-121 — Kanji audio lessons lack a Show romaji option | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-120 — Kanji audio sentences cannot be saved for later study | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-119 — Kanji listening playlist lacks a Next control | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-118 — Kanji tooltip is dense and difficult for beginners to understand | Codex | Closed | 100% | 2026-11-26 | Not recorded |
@@ -1647,3 +1648,19 @@ Every published app change must bump the small footer version and its update dat
 - Saved review reselects the sentence in the playlist and waits for Play. Data is included in normal progress backups.
 - Tracker: SA-120 closed; SA-114 remains open pending learner visual confirmation. Total 120; 1 Work in progress; 0 New; 119 Closed; 109 timeline gaps.
 - Validation: all 153 automated tests pass; standalone build and `git diff --check` pass.
+
+
+### SA-121 — Kanji audio lessons lack a Show romaji option · 2026-11-27
+
+- **Status:** Closed (100%)
+- **Evidence:** Kanji audio has independent Show kana and Show romaji options. Kana furigana appears above the sentence; romaji appears below, converted from the paired kana reading. Both update the active sentence without restarting audio.
+- **Impact:** Resolved: learners can follow sentence pronunciation with kana, romaji, or both.
+- **Resolution:** Added an optional romaji line and Kanji-mode checkbox, using the sentence’s aligned kana source.
+- **Verification:** Focused audio tests verify the two controls, romaji renderer, and toggle behavior. Full-suite/build verification recorded in release notes.
+- **Fix estimate:** Resolved in v1.7.1; duration not recorded.
+
+### Release v1.7.1 — Kanji audio kana and romaji options · 2026-11-27
+
+- Added independent Show kana and Show romaji controls to the Kanji audio player; romaji is derived from each sentence’s aligned kana reading.
+- Tracker: SA-121 closed; SA-114 remains open pending learner visual confirmation. Total 121; 1 Work in progress; 0 New; 120 Closed; 110 timeline gaps.
+- Validation: all 154 automated tests pass; standalone build and `git diff --check` pass.

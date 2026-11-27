@@ -98,6 +98,23 @@ test('Kanji playlist offers Previous, Next, and continuous Play all controls', (
   assert.match(stylesSource, /\.audio-controls\.kanji-audio-controls\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/);
 });
 
+test('Kanji audio offers independent Show kana and Show romaji reading options', () => {
+  const audioMarkup = appSource.slice(appSource.indexOf("return `${header('Audio lessons'"), appSource.indexOf('\nfunction ', appSource.indexOf("return `${header('Audio lessons'")));
+  assert.match(audioMarkup, /toggleKanjiAudioKana\(this\.checked\)/);
+  assert.match(audioMarkup, /Show kana/);
+  assert.match(audioMarkup, /toggleKanjiAudioRomaji\(this\.checked\)/);
+  assert.match(audioMarkup, /kanjiAudioShowRomaji/);
+  assert.match(appSource, /class="kanji-audio-romaji audio-romaji"/);
+  assert.match(appSource, /audioKanaToRomaji\(item\.kana\|\|''\)/);
+  const toggle = appSource.split('\n').find(line => line.startsWith('function toggleKanjiAudioRomaji('));
+  assert.ok(toggle, 'romaji toggle updates the current sentence without restarting playback');
+  let rendered = 0;
+  const sandbox = { kanjiAudioShowRomaji: false, updateAudioLessonStatus() { rendered++; } };
+  vm.runInNewContext(`${toggle}\ntoggleKanjiAudioRomaji(true)`, sandbox);
+  assert.equal(sandbox.kanjiAudioShowRomaji, true);
+  assert.equal(rendered, 1);
+});
+
 test('Kanji audio sentences can be saved and reopened from a review list', () => {
   assert.match(appSource, /Add to Study/);
   assert.match(appSource, /Sentences in Study/);
