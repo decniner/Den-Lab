@@ -1,0 +1,78 @@
+{
+  "approved_video": "outputs/Mans_Search_for_Meaning_Test_10s_CaptionNoBackground.mp4",
+  "approved_video_sha256": "692ff3815eea7bbe23ba4254cd37546afe50d70b0b9d713d2cf6348a4600802d",
+  "authoritative_commit": "2b7f753",
+  "decode_crop_xywh": [
+    40,
+    1295,
+    1000,
+    140
+  ],
+  "fixtures": [
+    {
+      "file": "viktor.png",
+      "time_seconds": 0.4,
+      "active_word": "Viktor",
+      "word_box_crop_xyxy": [
+        38,
+        15,
+        197,
+        90
+      ]
+    },
+    {
+      "file": "frankls.png",
+      "time_seconds": 0.8,
+      "active_word": "Frankl\u2019s",
+      "word_box_crop_xyxy": [
+        213,
+        15,
+        428,
+        90
+      ]
+    },
+    {
+      "file": "mans.png",
+      "time_seconds": 1.2,
+      "active_word": "Man\u2019s",
+      "word_box_crop_xyxy": [
+        444,
+        15,
+        603,
+        90
+      ]
+    },
+    {
+      "file": "search.png",
+      "time_seconds": 1.6,
+      "active_word": "Search",
+      "word_box_crop_xyxy": [
+        619,
+        15,
+        807,
+        90
+      ]
+    },
+    {
+      "file": "for.png",
+      "time_seconds": 1.85,
+      "active_word": "for",
+      "word_box_crop_xyxy": [
+        821,
+        15,
+        898,
+        90
+      ]
+    }
+  ],
+  "expected_ivory_glyph_bounds_crop_xyxy": [
+    34,
+    29,
+    899,
+    78
+  ],
+  "background_probe_crop_xy": [
+    950,
+    60
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "references": {
+    "video": "references/Dracula_YouTube_Short_Painterly.mp4",
+    "video_sha256": "1c1744612f4d9aebbe37e2b450d843f825fc29ff1650684eba8fe30df3b32a9b",
+    "cover": "references/Dracula_Hook_Cover.png",
+    "cover_sha256": "2f1f7801f6908c62ca75c8b30b454397499bbae465eee21de05e9e322f162100",
+    "cover_style": "references/A Room of One’s Own Legacy.png",
+    "cover_style_sha256": "5a3c4fc5d24ab85e28b909f6247a4116d22e9c53faab4163bbdbfd7fe7f944e0"
+  },
+  "approved_duration_seconds": 143.1,
+  "hook_duration_seconds": 2.5,
+  "artwork": {
+    "cover": "assets/hook-cover.png",
+    "contact_sheet": "assets/contact-sheet.png",
+    "scenes": [
+      {
+        "image": "assets/scene-01.png",
+        "start_ms": 0,
+        "end_ms": 4466.666666666667,
+        "emotional_review": {
+          "narration_meaning": "Man’s Search for Meaning, by Viktor E. Frankl, begins with a question",
+          "intended_tone": "reflective, compassionate hope",
+          "facial_expression": "restrained, thoughtful, compassionate; no exaggerated smile",
+          "body_language": "quiet, attentive posture with restrained human warmth",
+          "environmental_mood": "soft, subdued light with a restrained hopeful accent",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-02.png",
+        "start_ms": 4466.666666666667,
+        "end_ms": 8933.333333333334,
+        "emotional_review": {
+          "narration_meaning": "that is difficult to look away from: what can remain when nearly everything is taken",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-03.png",
+        "start_ms": 8933.333333333334,
+        "end_ms": 13400.0,
+        "emotional_review": {
+          "narration_meaning": "away? Before the war, Frankl was a Viennese psychiatrist developing a",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-04.png",
+        "start_ms": 13400.0,
+        "end_ms": 17900.0,
+        "emotional_review": {
+          "narration_meaning": "therapy centered on meaning. In 1942, he and his family were deported",
+          "intended_tone": "reflective, compassionate hope",
+          "facial_expression": "restrained, thoughtful, compassionate; no exaggerated smile",
+          "body_language": "quiet, attentive posture with restrained human warmth",
+          "environmental_mood": "soft, subdued light with a restrained hopeful accent",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-07.png",
+        "start_ms": 17900.0,
+        "end_ms": 22366.666666666668,
+        "emotional_review": {
+          "narration_meaning": "by Nazi authorities. His manuscript was confiscated. His family",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-08.png",
+        "start_ms": 22366.666666666668,
+        "end_ms": 26833.333333333332,
+        "emotional_review": {
+          "narration_meaning": "was separated, and most of them were murdered. Frankl survived several camps,",
+          "intended_tone": "hardship and grief",
+          "facial_expression": "solemn, worried, exhausted, or grief-struck as the scene requires",
+          "body_language": "guarded, weary, restrained posture consistent with hardship",
+          "environmental_mood": "confined, subdued, cold or shadowed atmosphere as shown in the approved scene",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-06.png",
+        "start_ms": 26833.333333333332,
+        "end_ms": 31300.0,
+        "emotional_review": {
+          "narration_meaning": "including Auschwitz and Türkheim. He writes not as a distant historian,",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-09.png",
+        "start_ms": 31300.0,
+        "end_ms": 35766.666666666664,
+        "emotional_review": {
+          "narration_meaning": "but as a doctor studying what captivity did to ordinary people— and what might help",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-10.png",
+        "start_ms": 35766.666666666664,
+        "end_ms": 40233.333333333336,
+        "emotional_review": {
+          "narration_meaning": "them endure. He describes three broad phases. First came shock:",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-11.png",
+        "start_ms": 40233.333333333336,
+        "end_ms": 44700.0,
+        "emotional_review": {
+          "narration_meaning": "arrival, uncertainty, and the mind’s desperate hope that the worst might somehow be",
+          "intended_tone": "reflective, compassionate hope",
+          "facial_expression": "restrained, thoughtful, compassionate; no exaggerated smile",
+          "body_language": "quiet, attentive posture with restrained human warmth",
+          "environmental_mood": "soft, subdued light with a restrained hopeful accent",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-13.png",
+        "start_ms": 44700.0,
+        "end_ms": 49166.666666666664,
+        "emotional_review": {
+          "narration_meaning": "avoided. Then came camp routine, where hunger and danger could numb feeling. Prisoners",
+          "intended_tone": "hardship and grief",
+          "facial_expression": "solemn, worried, exhausted, or grief-struck as the scene requires",
+          "body_language": "guarded, weary, restrained posture consistent with hardship",
+          "environmental_mood": "confined, subdued, cold or shadowed atmosphere as shown in the approved scene",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-14.png",
+        "start_ms": 49166.666666666664,
+        "end_ms": 53666.666666666664,
+        "emotional_review": {
+          "narration_meaning": "tried to preserve small ties to life: a memory, a promise, a scrap of work, a",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-22.png",
+        "start_ms": 53666.666666666664,
+        "end_ms": 58133.333333333336,
+        "emotional_review": {
+          "narration_meaning": "moment of beauty. After liberation came another struggle. Freedom did not",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-23.png",
+        "start_ms": 58133.333333333336,
+        "end_ms": 62600.0,
+        "emotional_review": {
+          "narration_meaning": "instantly erase trauma. Some survivors felt detached, bitter, or lost",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-24.png",
+        "start_ms": 62600.0,
+        "end_ms": 67066.66666666666,
+        "emotional_review": {
+          "narration_meaning": "as they returned to a world that had moved on. Frankl’s central idea is",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-25.png",
+        "start_ms": 67066.66666666666,
+        "end_ms": 71533.33333333333,
+        "emotional_review": {
+          "narration_meaning": "not that suffering is good, or that attitude can make cruelty acceptable.",
+          "intended_tone": "hardship and grief",
+          "facial_expression": "solemn, worried, exhausted, or grief-struck as the scene requires",
+          "body_language": "guarded, weary, restrained posture consistent with hardship",
+          "environmental_mood": "confined, subdued, cold or shadowed atmosphere as shown in the approved scene",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-29.png",
+        "start_ms": 71533.33333333333,
+        "end_ms": 76000.0,
+        "emotional_review": {
+          "narration_meaning": "It is that even when circumstances cannot be changed, a person may still",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-16.png",
+        "start_ms": 76000.0,
+        "end_ms": 80466.66666666667,
+        "emotional_review": {
+          "narration_meaning": "choose how to meet them— and must never be blamed for being unable to do so.",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-26.png",
+        "start_ms": 80466.66666666667,
+        "end_ms": 84933.33333333334,
+        "emotional_review": {
+          "narration_meaning": "In the book’s second part, Frankl calls his approach logotherapy:",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-20.png",
+        "start_ms": 84933.33333333334,
+        "end_ms": 89433.33333333334,
+        "emotional_review": {
+          "narration_meaning": "healing through the search for meaning. He sees meaning in three places: work or",
+          "intended_tone": "reflective, compassionate hope",
+          "facial_expression": "restrained, thoughtful, compassionate; no exaggerated smile",
+          "body_language": "quiet, attentive posture with restrained human warmth",
+          "environmental_mood": "soft, subdued light with a restrained hopeful accent",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-21.png",
+        "start_ms": 89433.33333333334,
+        "end_ms": 93900.0,
+        "emotional_review": {
+          "narration_meaning": "responsibility, love and encounter, and the stance we take toward suffering",
+          "intended_tone": "hardship and grief",
+          "facial_expression": "solemn, worried, exhausted, or grief-struck as the scene requires",
+          "body_language": "guarded, weary, restrained posture consistent with hardship",
+          "environmental_mood": "confined, subdued, cold or shadowed atmosphere as shown in the approved scene",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-27.png",
+        "start_ms": 93900.0,
+        "end_ms": 98366.66666666666,
+        "emotional_review": {
+          "narration_meaning": "that cannot be avoided. These are not slogans that solve every",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-30.png",
+        "start_ms": 98366.66666666666,
+        "end_ms": 102833.33333333333,
+        "emotional_review": {
+          "narration_meaning": "hardship. They are ways to notice what life is asking of us in a particular moment.",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-17.png",
+        "start_ms": 102833.33333333333,
+        "end_ms": 107300.0,
+        "emotional_review": {
+          "narration_meaning": "A task unfinished can call someone forward. Love can keep another",
+          "intended_tone": "reflective, compassionate hope",
+          "facial_expression": "restrained, thoughtful, compassionate; no exaggerated smile",
+          "body_language": "quiet, attentive posture with restrained human warmth",
+          "environmental_mood": "soft, subdued light with a restrained hopeful accent",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-18.png",
+        "start_ms": 107300.0,
+        "end_ms": 111766.66666666667,
+        "emotional_review": {
+          "narration_meaning": "person vividly present, even across distance. And when pain cannot",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-12.png",
+        "start_ms": 111766.66666666667,
+        "end_ms": 116233.33333333333,
+        "emotional_review": {
+          "narration_meaning": "be escaped, dignity may survive in a choice of response. Frankl’s",
+          "intended_tone": "reflective, compassionate hope",
+          "facial_expression": "restrained, thoughtful, compassionate; no exaggerated smile",
+          "body_language": "quiet, attentive posture with restrained human warmth",
+          "environmental_mood": "soft, subdued light with a restrained hopeful accent",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-19.png",
+        "start_ms": 116233.33333333333,
+        "end_ms": 120700.0,
+        "emotional_review": {
+          "narration_meaning": "pages return to these ideas through small, concrete moments— not easy",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-05.png",
+        "start_ms": 120700.0,
+        "end_ms": 125200.0,
+        "emotional_review": {
+          "narration_meaning": "victories, but moments that resist despair. Man’s Search for",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-31.png",
+        "start_ms": 125200.0,
+        "end_ms": 129666.66666666666,
+        "emotional_review": {
+          "narration_meaning": "Meaning is both a witness to history and an argument about responsibility.",
+          "intended_tone": "reflective, compassionate hope",
+          "facial_expression": "restrained, thoughtful, compassionate; no exaggerated smile",
+          "body_language": "quiet, attentive posture with restrained human warmth",
+          "environmental_mood": "soft, subdued light with a restrained hopeful accent",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-15.png",
+        "start_ms": 129666.66666666666,
+        "end_ms": 134133.3333333333,
+        "emotional_review": {
+          "narration_meaning": "It does not promise that every life will feel meaningful, or that meaning",
+          "intended_tone": "reflective, compassionate hope",
+          "facial_expression": "restrained, thoughtful, compassionate; no exaggerated smile",
+          "body_language": "quiet, attentive posture with restrained human warmth",
+          "environmental_mood": "soft, subdued light with a restrained hopeful accent",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-28.png",
+        "start_ms": 134133.3333333333,
+        "end_ms": 138600.0,
+        "emotional_review": {
+          "narration_meaning": "removes grief. Instead, Frankl turns the question around: rather",
+          "intended_tone": "hardship and grief",
+          "facial_expression": "solemn, worried, exhausted, or grief-struck as the scene requires",
+          "body_language": "guarded, weary, restrained posture consistent with hardship",
+          "environmental_mood": "confined, subdued, cold or shadowed atmosphere as shown in the approved scene",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      },
+      {
+        "image": "assets/scene-32.png",
+        "start_ms": 138600.0,
+        "end_ms": 143100.0,
+        "emotional_review": {
+          "narration_meaning": "than asking only what we expect from life, what answer can we give it today?",
+          "intended_tone": "serious reflection",
+          "facial_expression": "thoughtful and composed",
+          "body_language": "still, attentive posture",
+          "environmental_mood": "muted, contemplative atmosphere",
+          "human_review_status": "approved",
+          "review_basis": "User-approved final video and reviewed final artwork sheets; textual descriptors are production notes, not an automated artistic judgment."
+        }
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewer": "User",
+      "premium_illustration": true,
+      "consistent_character": true,
+      "palette_tones": 3,
+      "no_primitive_vectors": true
+    }
+  },
+  "narration_provider": "kokoro",
+  "narration": "public/assets/narration.wav",
+  "visuals": {
+    "mode": "still_images",
+    "character_animation": false,
+    "transitions": [
+      "cut"
+    ]
+  },
+  "timeline": {
+    "narration_start_frame": 0,
+    "total_frames": 4293,
+    "hook_frames": 75,
+    "caption_component": "components/Caption.tsx",
+    "caption_baseline_px": 1368
+  },
+  "image_generation": {
+    "executable": "imagegen",
+    "tool": "Codex native ImageGen",
+    "model_version": "not exposed by tool",
+    "generation_pending": false
+  },
+  "render": {
+    "remotion_cli": [
+      "node",
+      "node_modules/@remotion/cli/remotion-cli.js"
+    ],
+    "entry_point": "src/index.ts",
+    "hook_composition": "HookCover",
+    "full_composition": "BookSummary",
+    "props": "public/project-props.json",
+    "hook_output": "out/hook-cover.mp4",
+    "output": "out/book-summary.mp4"
+  },
+  "narration_voice": "af_heart",
+  "narration_settings": {
+    "lang_code": "a",
+    "speed": 1.0
+  }
+}

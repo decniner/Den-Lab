@@ -1,0 +1,16 @@
+{
+  "master_sha256": "3985a448a5d60880c9651e437f98af0a092d25d7a4e0640e57fac787a19e67a4",
+  "metadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "duration_seconds": 147.072,
+    "frames": 4412,
+    "audio_codec": "aac",
+    "narration_voice": "af_heart",
+    "narration_start_seconds": 0.0,
+    "width:height": "1080:1920"
+  },
+  "approval": "User approved production baseline",
+  "notes": "Original approved files and narration/captions are preserved byte-for-byte."
+}

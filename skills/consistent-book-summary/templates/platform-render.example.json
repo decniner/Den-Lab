@@ -1,0 +1,11 @@
+{
+  "canvas": [1080, 1920],
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "caption_style": "../caption_style.json",
+  "still_image_sequence": true,
+  "character_animation": false,
+  "transitions": ["cut"],
+  "output_path": "out/BOOK_SLUG.mp4"
+}
