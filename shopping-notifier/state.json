@@ -1284,12 +1284,36 @@
       "reference_price": "25850",
       "sent_at": "2026-11-27T12:56:29+09:00",
       "url": "https://saucony.jp/products/progrid-omni-9-og-n02?variant=45827043229848"
+    },
+    "saucony-jp:8596868300952:45827076128920": {
+      "sale_price": "10340",
+      "reference_price": "25850",
+      "sent_at": "2026-11-27T12:56:31+09:00",
+      "url": "https://saucony.jp/products/progrid-omni-9-socktop-n02?variant=45827076128920"
+    },
+    "saucony-jp:8596860076184:45826997190808": {
+      "sale_price": "9680",
+      "reference_price": "24200",
+      "sent_at": "2026-11-27T12:56:31+09:00",
+      "url": "https://saucony.jp/products/womens-triumph-22?variant=45826997190808"
+    },
+    "saucony-jp:8596861845656:45827012001944": {
+      "sale_price": "9680",
+      "reference_price": "24200",
+      "sent_at": "2026-11-27T12:56:31+09:00",
+      "url": "https://saucony.jp/products/mens-triumph-22?variant=45827012001944"
+    },
+    "saucony-jp:8760270422168:46755772891288": {
+      "sale_price": "9240",
+      "reference_price": "23100",
+      "sent_at": "2026-11-27T12:56:31+09:00",
+      "url": "https://saucony.jp/products/progrid-guide-7-n02?variant=46755772891288"
     }
   },
   "last_digest": {
-    "date": "2026-11-26",
-    "coverage_key": "bdad011253c0503946e655599474455dcdc29ba8e038e57e8f72bddb05d3e27e",
-    "completed_at": "2026-11-26T12:54:38+09:00",
-    "digest_hash": "3b2fba29c913334565ed01d2db95f6550b8c72e97181ac74fb0d995d73c27364"
+    "date": "2026-11-27",
+    "coverage_key": "398cff10ad43b3ffdf4ed3b87a0439231af2ec21bda1d48d5de5bb7ad98fe596",
+    "completed_at": "2026-11-27T12:56:31+09:00",
+    "digest_hash": "3237a34870dbb0cbd276dc9f75551dc0c62fc5643799ec31c18fd60bc25de111"
   }
 }
