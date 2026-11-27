@@ -868,7 +868,7 @@
     "shop-orange-info:8599412539591:46105679167687": {
       "sale_price": "1122",
       "reference_price": "3740",
-      "sent_at": "2026-11-20T11:49:13+09:00",
+      "sent_at": "2026-11-27T12:56:29+09:00",
       "url": "https://shop-orange.info/products/1324-0808?variant=46105679167687"
     },
     "shop-orange-info:8467274399943:45556777091271": {
@@ -1254,6 +1254,36 @@
       "reference_price": "27500",
       "sent_at": "2026-11-26T12:54:38+09:00",
       "url": "https://saucony.jp/products/keith-haring-x-progrid-triumph-4-n02?variant=47359282512024"
+    },
+    "saucony-jp:8596860502168:45827000500376": {
+      "sale_price": "11000",
+      "reference_price": "27500",
+      "sent_at": "2026-11-27T12:56:29+09:00",
+      "url": "https://saucony.jp/products/womens-tempus-2?variant=45827000500376"
+    },
+    "saucony-jp:8596861681816:45827010723992": {
+      "sale_price": "10560",
+      "reference_price": "26400",
+      "sent_at": "2026-11-27T12:56:29+09:00",
+      "url": "https://saucony.jp/products/mens-endorphin-speed-4?variant=45827010723992"
+    },
+    "saucony-jp:8755759710360:47272006123672": {
+      "sale_price": "10560",
+      "reference_price": "26400",
+      "sent_at": "2026-11-27T12:56:29+09:00",
+      "url": "https://saucony.jp/products/mens-triumph-23-n02?variant=47272006123672"
+    },
+    "saucony-jp:8899877535896:47445738291352": {
+      "sale_price": "10560",
+      "reference_price": "26400",
+      "sent_at": "2026-11-27T12:56:29+09:00",
+      "url": "https://saucony.jp/products/grid-nxt-n02?variant=47445738291352"
+    },
+    "saucony-jp:8596865581208:45827043229848": {
+      "sale_price": "10340",
+      "reference_price": "25850",
+      "sent_at": "2026-11-27T12:56:29+09:00",
+      "url": "https://saucony.jp/products/progrid-omni-9-og-n02?variant=45827043229848"
     }
   },
   "last_digest": {
