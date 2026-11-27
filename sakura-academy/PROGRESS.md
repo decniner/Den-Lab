@@ -4,16 +4,18 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 124
-- Work in progress: 1
+- Total tracked: 126
+- Work in progress: 2
 - New: 0
-- Closed: 123
-- Timeline gaps: 113
+- Closed: 124
+- Timeline gaps: 115
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-126 — N5 study-text kanji outside the core 84 lack detailed visual memories | Codex | Work in progress | 0% | 2026-11-28 | Not recorded |
+| SA-125 — Supplemental family kanji use generic visual-memory cues | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-124 — N5 kanji 円 has no example word with reading and meaning | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-123 — Kanji Explorer labels prose and isolated words as a sentence | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-122 — Kanji visual memories lack component detail, story, and word examples | Codex | Closed | 100% | 2026-11-27 | Not recorded |
@@ -1718,3 +1720,29 @@ Every published app change must bump the small footer version and its update dat
 - Added regression coverage for all 84 entries.
 - Tracker: SA-124 closed; total 124; 1 Work in progress; 0 New; 123 Closed; 113 timeline gaps.
 - Validation: all 156 automated tests pass; production build and `git diff --check` pass.
+
+
+### SA-125 — Supplemental family kanji use generic visual-memory cues · 2026-11-28
+
+- **Status:** Closed (100%)
+- **Evidence:** 兄・姉・弟・妹 each have multiple named visual parts, descriptions written for beginners, a connected mnemonic story, and example words with kana readings and meanings. Regression coverage checks all four.
+- **Impact:** Resolved: common sibling words in N5 study text no longer rely on a short generic component label.
+- **Resolution:** Added structured memories and examples for the four sibling kanji.
+- **Verification:** All automated tests pass; the production build includes the expanded catalog.
+- **Fix estimate:** Resolved in v1.7.5; duration not recorded.
+
+### SA-126 — N5 study-text kanji outside the core 84 lack detailed visual memories · 2026-11-28
+
+- **Status:** Work in progress (0%)
+- **Evidence:** N5 vocabulary, grammar, and reading content contains 455 distinct kanji. Beyond the 89 with detailed memory records after this release, 366 still have no structured visual entry; 337 use a generic one-line memory tip.
+- **Impact:** Learners may get inconsistent detail when they open kanji from study text outside the 84-character core list.
+- **Next:** Expand the structured catalog in reviewed batches, starting with high-frequency N5 vocabulary and reading characters; require readable parts, stories, and example words with readings and meanings.
+- **Fix estimate:** Not estimated; coverage needs content-quality review.
+
+### Release v1.7.5 — Beginner-friendly sibling kanji memories · 2026-11-28
+
+- Added structured visual breakdowns and mnemonic stories for 兄・姉・弟・妹, with sibling vocabulary examples and readings.
+- Confirmed the remaining disparity comes from broader N5 study text using supplemental dictionary characters beyond the 84-character core list. Opened SA-126 with the coverage audit: 366 kanji still need structured records, including 337 generic one-line tips.
+- Bumped the visible app and service-worker version to v1.7.5.
+- Tracker: SA-125 closed; SA-126 in progress; total 126; 2 Work in progress; 0 New; 124 Closed; 115 timeline gaps.
+- Validation: all 157 automated tests pass; production build and `git diff --check` pass.

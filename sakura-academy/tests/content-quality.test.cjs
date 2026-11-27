@@ -160,3 +160,18 @@ test('every Explorer kanji has detailed visual parts, a mnemonic story, and usef
   assert.match(app, /function kanjiMemoryMarkup\(/);
   assert.match(app, /kanjiMemoryMarkup\(k\.ch/);
 });
+
+test('supplemental sibling kanji have beginner-readable visual memories and examples', () => {
+  const n5Data = fs.readFileSync(path.join(project, 'src/n5-data.js'), 'utf8');
+  const memoryData = fs.readFileSync(path.join(project, 'src/data/kanji-memory.js'), 'utf8');
+  const context = vm.createContext({});
+  vm.runInContext(`${n5Data}\n${memoryData}\nglobalThis.vocab=N5_VOCAB;globalThis.memories=SAKURA_KANJI_MEMORY`, context);
+  for (const character of ['兄', '姉', '弟', '妹']) {
+    const memory = context.memories[character];
+    assert.ok(memory, `supplemental memory exists for ${character}`);
+    assert.ok(memory.parts.length >= 2 && memory.parts.every(part => part.label && part.description), `visual parts are named and explained for ${character}`);
+    assert.ok(memory.story.length >= 90, `a beginner-readable mnemonic story exists for ${character}`);
+    const examples = memory.words || context.vocab.filter(word => word.word.includes(character)).map(word => ({ word: word.word, reading: word.reading, meaning: word.meanings?.[0] }));
+    assert.ok(examples.length && examples.every(word => word.word && word.reading && word.meaning), `examples have readings and meanings for ${character}`);
+  }
+});
