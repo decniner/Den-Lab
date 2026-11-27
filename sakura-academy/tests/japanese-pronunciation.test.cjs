@@ -8,6 +8,7 @@ const vm = require('node:vm');
 const project = path.resolve(__dirname, '..');
 const n5Source = fs.readFileSync(path.join(project, 'src/n5-data.js'), 'utf8');
 const contentSource = fs.readFileSync(path.join(project, 'src/content.js'), 'utf8');
+const kanjiMemorySource = fs.readFileSync(path.join(project, 'src/data/kanji-memory.js'), 'utf8');
 const appSource = fs.readFileSync(path.join(project, 'src/app.js'), 'utf8');
 const n5AppSource = fs.readFileSync(path.join(project, 'src/n5-app.js'), 'utf8');
 const generatorSource = fs.readFileSync(path.join(project, 'scripts/generate_japanese_audio.py'), 'utf8');
@@ -17,7 +18,7 @@ const kanaOnly = /^[ぁ-ゖァ-ヺー・、。！？!?（）() 　0-9０-９〜�
 function loadCourse() {
   const context = {};
   vm.createContext(context);
-  vm.runInContext(`${n5Source}\n${contentSource}\nglobalThis.data={vocab:N5_VOCAB,kanji:N5_KANJI,listening:N5_LISTENING,explorer:KANJI}`, context);
+  vm.runInContext(`${n5Source}\n${kanjiMemorySource}\n${contentSource}\nglobalThis.data={vocab:N5_VOCAB,kanji:N5_KANJI,listening:N5_LISTENING,explorer:KANJI}`, context);
   return context.data;
 }
 

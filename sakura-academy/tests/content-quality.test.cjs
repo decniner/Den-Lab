@@ -2,6 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const vm = require('node:vm');
 const { validateCourseContent } = require('../src/content-validation.js');
 
 const project = path.resolve(__dirname, '..');
@@ -131,4 +132,28 @@ test('first-time reward guard rejects repeated claims', () => {
   assert.equal(claimRewardOnce(state, 'lesson:1:dialogue', 5, award), true);
   assert.equal(claimRewardOnce(state, 'lesson:1:dialogue', 5, award), false);
   assert.equal(xp, 5);
+});
+
+
+test('every Explorer kanji has detailed visual parts, a mnemonic story, and useful word examples', () => {
+  const n5Data = fs.readFileSync(path.join(project, 'src/n5-data.js'), 'utf8');
+  const memoryData = fs.readFileSync(path.join(project, 'src/data/kanji-memory.js'), 'utf8');
+  const context = vm.createContext({});
+  vm.runInContext(`${n5Data}\n${memoryData}\nglobalThis.n5Kanji=N5_KANJI;globalThis.memories=SAKURA_KANJI_MEMORY`, context);
+  assert.equal(context.n5Kanji.length, 84);
+  for (const kanji of context.n5Kanji) {
+    const memory = context.memories[kanji.character];
+    assert.ok(memory, `detailed memory exists for ${kanji.character}`);
+    assert.ok(memory.summary.length >= 45, `visual overview is specific for ${kanji.character}`);
+    assert.ok(memory.parts.length >= 2, `visual breakdown has multiple parts for ${kanji.character}`);
+    assert.ok(memory.parts.every(part => part.glyph && part.label && part.description), `parts are identified and described for ${kanji.character}`);
+    assert.ok(memory.story.length >= 90, `mnemonic story connects details for ${kanji.character}`);
+  }
+  const home = context.memories['帰'];
+  assert.ok(home, 'the linked study-text character 帰 has a detailed memory too');
+  assert.ok(home.parts.some(part => part.glyph === '刂'));
+  assert.ok(home.words.some(word => word.word === '帰国' && word.reading === 'きこく'));
+  const app = fs.readFileSync(path.join(project, 'src/app.js'), 'utf8');
+  assert.match(app, /function kanjiMemoryMarkup\(/);
+  assert.match(app, /kanjiMemoryMarkup\(k\.ch/);
 });

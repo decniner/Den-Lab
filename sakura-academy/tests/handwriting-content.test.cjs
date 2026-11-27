@@ -7,6 +7,7 @@ const vm = require('node:vm');
 const project = path.resolve(__dirname, '..');
 const context = vm.createContext({});
 vm.runInContext(fs.readFileSync(path.join(project, 'src', 'n5-data.js'), 'utf8'), context);
+vm.runInContext(fs.readFileSync(path.join(project, 'src', 'data', 'kanji-memory.js'), 'utf8'), context);
 vm.runInContext(fs.readFileSync(path.join(project, 'src', 'content.js'), 'utf8'), context);
 const strokeCoverage = vm.runInContext(`(() => {
   const kana = KANA.filter(item => !item.extra);

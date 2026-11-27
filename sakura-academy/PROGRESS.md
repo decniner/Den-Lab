@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 121
+- Total tracked: 122
 - Work in progress: 1
 - New: 0
-- Closed: 120
-- Timeline gaps: 110
+- Closed: 121
+- Timeline gaps: 111
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-122 — Kanji visual memories lack component detail, story, and word examples | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-121 — Kanji audio lessons lack a Show romaji option | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-120 — Kanji audio sentences cannot be saved for later study | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-119 — Kanji listening playlist lacks a Next control | Codex | Closed | 100% | 2026-11-27 | Not recorded |
@@ -1664,3 +1665,20 @@ Every published app change must bump the small footer version and its update dat
 - Added independent Show kana and Show romaji controls to the Kanji audio player; romaji is derived from each sentence’s aligned kana reading.
 - Tracker: SA-121 closed; SA-114 remains open pending learner visual confirmation. Total 121; 1 Work in progress; 0 New; 120 Closed; 110 timeline gaps.
 - Validation: all 154 automated tests pass; standalone build and `git diff --check` pass.
+
+
+### SA-122 — Kanji visual memories lack component detail, story, and word examples · 2026-11-27
+
+- **Status:** Closed (100%)
+- **Evidence:** The 84 N5 Explorer kanji now show named visual parts, descriptions of how each part looks, a connected mnemonic story, and common word examples with kana reading, romaji, and English meaning. The linked study-text kanji 帰 also has a detailed visual scene, かえる / き readings, and 帰る, 帰国, 帰り examples.
+- **Impact:** Resolved: learners can understand each shape, remember it through a story, and see the character in readable words.
+- **Resolution:** Added a structured, offline-bundled kanji memory catalog and reused it for full Explorer cards and contextual “Kanji from your study text” cards. Tooltip summaries remain concise.
+- **Verification:** Automated coverage checks all 84 Explorer records plus 帰. Full suite/build verification recorded in release notes.
+- **Fix estimate:** Resolved in v1.7.2; duration not recorded.
+
+### Release v1.7.2 — Detailed kanji visual memories · 2026-11-27
+
+- Expanded all 84 N5 memory cues with component labels and visual descriptions, mnemonic stories, and vocabulary examples with readings and meanings. Added the linked 帰 memory as requested.
+- Preserved concise hover tooltips while full Explorer cards show the expanded explanation. The data is included in the offline shell and generated single-file app.
+- Tracker: SA-122 closed; SA-114 remains open pending learner visual confirmation. Total 122; 1 Work in progress; 0 New; 121 Closed; 111 timeline gaps.
+- Validation: all 155 automated tests pass; single-file production build includes the new data and renderer; `git diff --check` passes. Mobile visual inspection was unavailable because this session has no controllable browser.
