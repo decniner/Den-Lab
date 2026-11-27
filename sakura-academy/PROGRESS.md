@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 123
+- Total tracked: 124
 - Work in progress: 1
 - New: 0
-- Closed: 122
-- Timeline gaps: 112
+- Closed: 123
+- Timeline gaps: 113
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-124 — N5 kanji 円 has no example word with reading and meaning | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-123 — Kanji Explorer labels prose and isolated words as a sentence | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-122 — Kanji visual memories lack component detail, story, and word examples | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-121 — Kanji audio lessons lack a Show romaji option | Codex | Closed | 100% | 2026-11-27 | Not recorded |
@@ -1700,3 +1701,20 @@ Every published app change must bump the small footer version and its update dat
 - Bumped the visible app and service-worker versions to v1.7.3.
 - Tracker: SA-123 closed; total 123; 1 Work in progress; 0 New; 122 Closed; 112 timeline gaps.
 - Validation: all 156 automated tests pass; single-file build and `git diff --check` pass.
+
+
+### SA-124 — N5 kanji 円 has no example word with reading and meaning · 2026-11-28
+
+- **Status:** Closed (100%)
+- **Evidence:** An audit checked detailed parts, labeled descriptions, story length, and at least one example word with reading and meaning for each of the 84 N5 kanji. The audit found 円 had no matching kanji vocabulary source; it now has the explicit example 円（えん, yen）.
+- **Impact:** Resolved: all 84 cards can show the full visual-memory set and useful word examples.
+- **Resolution:** Added an explicit word example for 円 and expanded the content-quality test to require covered, readable example vocabulary on every Explorer character.
+- **Verification:** All automated tests pass; production build includes the new example and the versioned offline shell.
+- **Fix estimate:** Resolved in v1.7.4; duration not recorded.
+
+### Release v1.7.4 — Complete example-word coverage for all N5 kanji · 2026-11-28
+
+- Audited all 84 N5 kanji: detailed breakdowns and mnemonic stories are present across the set. Added the missing 円（えん, yen）example so all 84 also show example words with readings and meanings.
+- Added regression coverage for all 84 entries.
+- Tracker: SA-124 closed; total 124; 1 Work in progress; 0 New; 123 Closed; 113 timeline gaps.
+- Validation: all 156 automated tests pass; production build and `git diff --check` pass.

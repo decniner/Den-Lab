@@ -139,7 +139,7 @@ test('every Explorer kanji has detailed visual parts, a mnemonic story, and usef
   const n5Data = fs.readFileSync(path.join(project, 'src/n5-data.js'), 'utf8');
   const memoryData = fs.readFileSync(path.join(project, 'src/data/kanji-memory.js'), 'utf8');
   const context = vm.createContext({});
-  vm.runInContext(`${n5Data}\n${memoryData}\nglobalThis.n5Kanji=N5_KANJI;globalThis.memories=SAKURA_KANJI_MEMORY`, context);
+  vm.runInContext(`${n5Data}\n${memoryData}\nglobalThis.n5Kanji=N5_KANJI;globalThis.n5Vocab=N5_VOCAB;globalThis.memories=SAKURA_KANJI_MEMORY`, context);
   assert.equal(context.n5Kanji.length, 84);
   for (const kanji of context.n5Kanji) {
     const memory = context.memories[kanji.character];
@@ -148,6 +148,9 @@ test('every Explorer kanji has detailed visual parts, a mnemonic story, and usef
     assert.ok(memory.parts.length >= 2, `visual breakdown has multiple parts for ${kanji.character}`);
     assert.ok(memory.parts.every(part => part.glyph && part.label && part.description), `parts are identified and described for ${kanji.character}`);
     assert.ok(memory.story.length >= 90, `mnemonic story connects details for ${kanji.character}`);
+    const words = memory.words || context.n5Vocab.filter(item => item.level === 'N5' && item.word.includes(kanji.character)).sort((a, b) => Array.from(a.word).length - Array.from(b.word).length).slice(0, 3).map(item => ({ word: item.word, reading: item.reading, meaning: item.meanings?.[0] || '' }));
+    assert.ok(words.length, `at least one example word exists for ${kanji.character}`);
+    assert.ok(words.every(word => word.word && word.reading && word.meaning), `example words have readings and meanings for ${kanji.character}`);
   }
   const home = context.memories['帰'];
   assert.ok(home, 'the linked study-text character 帰 has a detailed memory too');
