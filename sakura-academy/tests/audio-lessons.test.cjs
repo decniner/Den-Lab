@@ -89,40 +89,100 @@ test('audio lesson screen has one-tap play with pause and restart controls', () 
   assert.doesNotMatch(stylesSource, /\.audio-controls\{position:sticky/);
 });
 
-test('Kanji playlist can go back to the previous sentence and resume correctly after a pause', () => {
-  const rewindFunction = appSource.split('\n').find(line => line.startsWith('function rewindKanjiAudio('));
-  assert.ok(rewindFunction, 'Kanji player exposes a previous-sentence action');
+test('Kanji playlist offers Previous, Next, and continuous Play all controls', () => {
   assert.match(appSource, /aria-label="Previous kanji sentence"/);
-  assert.match(appSource, /!isActive\|\|audioLessonIndex===0\?'disabled':''/);
+  assert.match(appSource, /aria-label="Next kanji sentence"/);
+  assert.match(appSource, /onclick="advanceKanjiAudio\(\)"/);
+  assert.match(appSource, /Play all kanji/);
+  assert.match(appSource, /!isActive\|\|audioLessonIndex>=queue.length-1\|\|audioLessonComplete\?'disabled':''/);
+  assert.match(stylesSource, /\.audio-controls\.kanji-audio-controls\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/);
+});
 
-  let played = 0, updated = 0, paused = 0;
+test('Kanji Previous and Next disable only at the playlist boundaries', () => {
+  const navigation = appSource.split('\n').find(line => line.startsWith('function updateKanjiAudioNavigation('));
+  assert.ok(navigation);
+  const previous = { disabled: false }, next = { disabled: false };
+  const sandbox = { audioLessonQueue: [], audioLessonIndex: 0, audioLessonComplete: false, $(id) { return id === 'kanjiAudioPrevious' ? previous : id === 'kanjiAudioNext' ? next : null; } };
+  vm.runInNewContext(`${navigation}\nupdateKanjiAudioNavigation(3)`, sandbox);
+  assert.equal(previous.disabled, true);
+  assert.equal(next.disabled, true);
+  sandbox.audioLessonQueue = [{}, {}, {}];
+  vm.runInContext('updateKanjiAudioNavigation(3)', sandbox);
+  assert.equal(previous.disabled, true);
+  assert.equal(next.disabled, false);
+  sandbox.audioLessonIndex = 1;
+  vm.runInContext('updateKanjiAudioNavigation(3)', sandbox);
+  assert.equal(previous.disabled, false);
+  assert.equal(next.disabled, false);
+  sandbox.audioLessonIndex = 2;
+  vm.runInContext('updateKanjiAudioNavigation(3)', sandbox);
+  assert.equal(next.disabled, true);
+  sandbox.audioLessonIndex = 3;
+  sandbox.audioLessonComplete = true;
+  vm.runInContext('updateKanjiAudioNavigation(3)', sandbox);
+  assert.equal(previous.disabled, false);
+  assert.equal(next.disabled, true);
+});
+
+test('Kanji Previous and Next navigate the playlist while preserving paused playback', () => {
+  const line = name => appSource.split('\n').find(item => item.startsWith(`function ${name}(`));
+  const stepFunction = line('stepKanjiAudio'), rewindFunction = line('rewindKanjiAudio'), nextFunction = line('advanceKanjiAudio');
+  assert.ok(stepFunction && rewindFunction && nextFunction, 'Kanji player exposes previous and next actions');
+  assert.match(appSource, /aria-label="Previous kanji sentence"/);
+  assert.match(appSource, /aria-label="Next kanji sentence"/);
+  assert.match(appSource, /!isActive\|\|audioLessonIndex===0\?'disabled':''/);
+  assert.match(appSource, /!isActive\|\|audioLessonIndex>=queue.length-1\|\|audioLessonComplete\?'disabled':''/);
+
+  let played = 0, updated = 0, paused = 0, cancelled = 0;
   const sandbox = {
     audioMode: 'kanji', audioLessonQueue: [{}, {}, {}], audioLessonIndex: 2,
     audioLessonPaused: false, audioLessonComplete: true,
     audioEchoPending: false, audioEchoReplay: false, audioResumeNeedsRestart: false,
-    audioPlayer: { src: 'current.mp3', pause() { paused++; } },
+    audioPlayer: { src: 'current.mp3', onended: () => {}, onerror: () => {}, pause() { paused++; } },
+    window: { speechSynthesis: { cancel() { cancelled++; } } },
     playAudioLessonStep() { played++; }, updateAudioLessonStatus() { updated++; },
   };
-  vm.runInNewContext(`${rewindFunction}\nrewindKanjiAudio()`, sandbox);
+  vm.runInNewContext(`${stepFunction}\n${rewindFunction}\n${nextFunction}\nrewindKanjiAudio()`, sandbox);
   assert.equal(sandbox.audioLessonIndex, 1);
   assert.equal(sandbox.audioLessonComplete, false);
   assert.equal(paused, 1);
   assert.equal(played, 1);
+  assert.equal(cancelled, 1);
 
   sandbox.audioLessonPaused = true;
   sandbox.audioLessonIndex = 2;
-  sandbox.audioPlayer.src = 'current.mp3';
-  vm.runInNewContext(`${rewindFunction}\nrewindKanjiAudio()`, sandbox);
+  vm.runInContext('rewindKanjiAudio()', sandbox);
   assert.equal(sandbox.audioLessonIndex, 1);
   assert.equal(sandbox.kanjiAudioResumeFromStart, true);
-  assert.equal(played, 1, 'rewind while paused does not resume audio');
+  assert.equal(played, 1, 'previous while paused selects without resuming audio');
   assert.equal(updated, 1);
 
-  const toggleFunction = appSource.split('\n').find(line => line.startsWith('function toggleAudioLesson('));
-  vm.runInNewContext(`${toggleFunction}\ntoggleAudioLesson()`, sandbox);
+  const toggleFunction = line('toggleAudioLesson');
+  vm.runInContext(`${toggleFunction}\ntoggleAudioLesson()`, sandbox);
   assert.equal(sandbox.audioLessonPaused, false);
   assert.equal(sandbox.kanjiAudioResumeFromStart, false);
-  assert.equal(played, 2, 'resuming after rewind loads the selected previous sentence');
+  assert.equal(played, 2, 'resuming starts the selected previous sentence');
+
+  sandbox.audioLessonIndex = 0;
+  sandbox.audioLessonPaused = false;
+  vm.runInContext('advanceKanjiAudio()', sandbox);
+  assert.equal(sandbox.audioLessonIndex, 1);
+  assert.equal(played, 3, 'Next starts the following sample during playback');
+
+  sandbox.audioLessonPaused = true;
+  sandbox.audioLessonIndex = 1;
+  vm.runInContext('advanceKanjiAudio()', sandbox);
+  assert.equal(sandbox.audioLessonIndex, 2);
+  assert.equal(sandbox.kanjiAudioResumeFromStart, true);
+  assert.equal(played, 3, 'Next while paused only changes the selected sample');
+  vm.runInContext('toggleAudioLesson()', sandbox);
+  assert.equal(played, 4, 'resuming after Next starts the selected sample');
+
+  sandbox.audioLessonIndex = 2;
+  sandbox.audioLessonPaused = false;
+  vm.runInContext('advanceKanjiAudio()', sandbox);
+  assert.equal(sandbox.audioLessonIndex, 2, 'Next does not move beyond the last playlist item');
+  assert.equal(played, 4);
 });
 
 test('a rejected mobile audio resume returns to a recoverable paused state', async () => {

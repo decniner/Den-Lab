@@ -4,16 +4,17 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 118
+- Total tracked: 119
 - Work in progress: 1
 - New: 0
-- Closed: 117
-- Timeline gaps: 107
+- Closed: 118
+- Timeline gaps: 108
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
+| SA-119 — Kanji listening playlist lacks a Next control | Codex | Closed | 100% | 2026-11-27 | Not recorded |
 | SA-118 — Kanji tooltip is dense and difficult for beginners to understand | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-117 — Kanji tooltip leaves unlisted component symbols unexplained | Codex | Closed | 100% | 2026-11-26 | Not recorded |
 | SA-116 — Kanji tooltip names visual components without explaining them | Codex | Closed | 100% | 2026-11-26 | Not recorded |
@@ -1613,3 +1614,18 @@ Every published app change must bump the small footer version and its update dat
 - Reduced the tooltip to the kanji/meaning, one reading, one memory cue, and concise component labels.
 - Tracker: SA-118 closed; SA-114 remains open pending learner visual confirmation. Total 118; 1 Work in progress; 0 New; 117 Closed; 107 timeline gaps.
 - Validation: all 150 automated tests pass, including static single-file build checks; Pages deployment pending.
+
+### SA-119 — Kanji listening playlist lacks a Next control · 2026-11-27
+
+- **Status:** Closed (100%)
+- **Evidence:** The controls show Previous, Play all/Pause/Resume, and Next. During playback Next begins the next sample; while paused it only selects it, and Resume starts it. Previous/Next enabled states follow playlist boundaries. Regression tests cover both actions, both boundaries, and pause/resume.
+- **Impact:** Resolved: learners can move through individual samples or listen continuously to all 84 kanji examples.
+- **Resolution:** Added a boundary-aware Next action and live Previous/Next disabled states without changing the continuous queue.
+- **Verification:** All 152 automated tests pass, including active/paused Next and Previous transitions, playlist boundaries, and the three-column control layout. The static single-file build passes.
+- **Fix estimate:** Resolved in v1.6.9; duration not recorded.
+
+### Release v1.6.9 — Kanji audio navigation · 2026-11-27
+
+- Added Previous and Next around the continuous Play all kanji control, with pause-aware selection and playlist boundary states.
+- Tracker: SA-119 closed; SA-114 remains open pending learner visual confirmation. Total 119; 1 Work in progress; 0 New; 118 Closed; 108 timeline gaps.
+- Validation: all 152 automated tests pass, including standalone build coverage; Pages deployment pending.
