@@ -4,14 +4,15 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 127
+- Total tracked: 128
 - Work in progress: 1
 - New: 0
-- Closed: 126
-- Timeline gaps: 116
+- Closed: 127
+- Timeline gaps: 117
 
 ## Issue register
 
+| SA-128 — Kanji Explorer cards lack swipe navigation and a quick reading cue | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-127 — Core N5 kanji cards lack the requested five-part study structure | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
@@ -1779,3 +1780,18 @@ Every published app change must bump the small footer version and its update dat
 - Added the exact five-part study structure to all 84 core cards, including per-word audio, and kept the supplemental study-text memory catalog intact.
 - Tracker: SA-127 closed; total 127; 1 Work in progress; 0 New; 126 Closed; 116 timeline gaps.
 - Validation: 160 automated tests pass; production and offline single-file builds succeed; all 84 cards pass the structured-content audit; mobile preview reviewed at 390 × 844; `git diff --check` is clean.
+
+
+### SA-128 — Kanji Explorer cards lack swipe navigation and a quick reading cue · 2026-11-28
+
+- **Status:** Closed (100%)
+- **Evidence:** Automated checks directly verify that left swipe advances, right swipe returns, and vertical or short movements are ignored. Touch handling is limited to the main Explorer card; movement cancels a long press, contextual cards are excluded, and the cue includes readings and meaning. All project tests pass.
+- **Impact:** Resolved: mobile learners can move naturally between kanji and reveal the selected character’s core readings and meaning with a hold gesture.
+- **Resolution:** Added touch navigation limited to the main study card and a 480 ms press-and-hold cue on the large character. Preserved native vertical scrolling and the existing Previous/Next buttons.
+- **Tracker:** SA-128 closed; total 128; 1 Work in progress; 0 New; 127 Closed; 117 timeline gaps.
+
+### Release v1.7.8 — Kanji Explorer gestures · 2026-11-28
+
+- Added left/right swipe navigation and press-and-hold core reading/meaning reveal in Kanji Explorer.
+- Tracker: SA-128 closed; total 128; 1 Work in progress; 0 New; 127 Closed; 117 timeline gaps.
+- Validation: 161 automated tests pass; offline standalone build succeeds; mobile gesture logic preserves vertical scrolling; `git diff --check` is clean.

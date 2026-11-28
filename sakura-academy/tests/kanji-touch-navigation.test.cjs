@@ -1,0 +1,29 @@
+const test=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const app=fs.readFileSync(path.join(__dirname,'../src/app.js'),'utf8');
+const styles=fs.readFileSync(path.join(__dirname,'../styles.css'),'utf8');
+
+test('Kanji Explorer supports horizontal swipes and a long-press reading cue',()=>{
+  const source=app.match(/function kanjiSwipeDelta\(start,end\)\{[^}]+\}/)?.[0];
+  assert.ok(source,'swipe interpretation is isolated for direct verification');
+  const swipe=vm.runInNewContext(`${source};kanjiSwipeDelta`);
+  assert.equal(swipe({x:200,y:100},{x:100,y:110}),1,'left advances');
+  assert.equal(swipe({x:100,y:100},{x:200,y:110}),-1,'right returns');
+  assert.equal(swipe({x:100,y:100},{x:100,y:180}),0,'vertical scroll is ignored');
+  assert.equal(swipe({x:100,y:100},{x:70,y:102}),0,'short movement is ignored');
+  assert.match(app,/function startKanjiTouch\(event\)/);
+  assert.match(app,/function endKanjiTouch\(event\)/);
+  assert.match(app,/function moveKanjiTouch\(event\)/);
+  assert.match(app,/Math\.abs\(dx\)<Math\.abs\(dy\)\*1\.25/);
+  assert.match(app,/if\(delta\)moveKanji\(delta\)/);
+  assert.match(app,/kanji-study-card:not\(\.kanji-context-card\)/);
+  assert.match(app,/setTimeout\(\(\)=>\{kanjiHoldActive=true/);
+  assert.match(app,/Core readings &amp; meaning:/);
+  assert.match(app,/kun\|\|'—'\).*card\?\.readings\?\.on/);
+  assert.match(app,/touchend',endKanjiTouch/);
+  assert.match(app,/touchcancel/);
+  assert.match(styles,/kanji-study-card:not\(\.kanji-context-card\)\{touch-action:pan-y\}/);
+});
