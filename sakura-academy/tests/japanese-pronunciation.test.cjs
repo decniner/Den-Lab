@@ -45,7 +45,7 @@ test('Kanji Explorer examples expose and use an explicit reading', () => {
     assert.ok(entry.example, `example for ${entry.ch}`);
     assert.match(entry.exampleReading, kanaOnly, `example reading for ${entry.example}`);
   }
-  assert.match(appSource, /speak\(\x27\$\{k\.example\}\x27,\{reading:\x27\$\{k\.exampleReading/);
+  assert.match(appSource, /speak\('\$\{esc\(item\.word\)\}',\{reading:'\$\{esc\(item\.reading\)\}'/);
 });
 
 test('Kanji Explorer shows the reading of compound examples beside the kanji', () => {
@@ -53,8 +53,8 @@ test('Kanji Explorer shows the reading of compound examples beside the kanji', (
   const sun = explorer.find(entry => entry.ch === '日');
   assert.equal(sun.example, '明日');
   assert.equal(sun.exampleReading, 'あした');
-  assert.match(appSource, /k\.exampleReading&&k\.exampleReading!==k\.example/);
-  assert.match(appSource, /Hear example \$\{esc\(k\.example\)\} \(\$\{esc\(k\.exampleReading\)\}\)/);
+  assert.match(appSource, /SAKURA_N5_KANJI_CARDS/);
+  assert.match(appSource, /speak\('\$\{esc\(item\.word\)\}',\{reading:'\$\{esc\(item\.reading\)\}'/);
 });
 
 test('every N5 listening prompt has a paired kana reading and bundled audio', () => {

@@ -194,3 +194,28 @@ test('every learner-facing N5 Han character has structured memory and a readable
     if (memory.wordLabel === 'Representative reading') assert.match(examples[0].reading, /[ぁ-ヿ]/u, `representative reading is written in Japanese for ${character}`);
   }
 });
+
+
+test('all 84 core N5 kanji cards use the five-part study guide', () => {
+  const context = vm.createContext({});
+  for (const file of ['src/n5-data.js', 'src/data/kanji-explorer-supplemental.js', 'src/data/kanji-memory.js', 'src/data/n5-kanji-cards.js']) {
+    const fullPath = path.join(project, file);
+    assert.ok(fs.existsSync(fullPath), `${file} is included in the study guide`);
+    vm.runInContext(fs.readFileSync(fullPath, 'utf8'), context);
+  }
+  vm.runInContext('globalThis.coreKanji=N5_KANJI', context);
+  for (const kanji of context.coreKanji) {
+    const card = context.SAKURA_N5_KANJI_CARDS[kanji.character];
+    assert.ok(card, `five-part card exists for ${kanji.character}`);
+    assert.ok(card.kun.length && card.on.length && card.meaning, `readings and meaning exist for ${kanji.character}`);
+    assert.ok(card.parts.length >= 2 && card.parts.every(part => part.glyph && part.label && part.description), `visual parts are explained for ${kanji.character}`);
+    assert.ok(card.story.length >= 80, `mnemonic story exists for ${kanji.character}`);
+    assert.ok(card.parts.every(part => card.story.includes(part.glyph) && card.story.includes(part.label)), `mnemonic connects the exact visual pieces for ${kanji.character}`);
+    assert.ok(card.lookalike?.kanji && card.lookalike.difference.length >= 30, `look-alike warning explains a visible difference for ${kanji.character}`);
+    assert.equal(card.words.length, 3, `three example words exist for ${kanji.character}`);
+    assert.ok(card.words.every(word => word.word && word.reading && word.meaning), `example readings and meanings exist for ${kanji.character}`);
+  }
+  const markup = fs.readFileSync(path.join(project, 'src/app.js'), 'utf8');
+  for (const heading of ['Core Readings &amp; Meaning', 'Visual Component Breakdown', 'Visual Mnemonic Story', 'Look-Alike Warning', 'Common N5 Words']) assert.ok(markup.includes(heading), `card renders ${heading}`);
+  assert.match(markup, /Compare with/);
+});

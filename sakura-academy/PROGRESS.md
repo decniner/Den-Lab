@@ -4,13 +4,15 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 126
+- Total tracked: 127
 - Work in progress: 1
 - New: 0
-- Closed: 125
-- Timeline gaps: 115
+- Closed: 126
+- Timeline gaps: 116
 
 ## Issue register
+
+| SA-127 — Core N5 kanji cards lack the requested five-part study structure | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
@@ -1763,3 +1765,17 @@ Every published app change must bump the small footer version and its update dat
 - Replaced the contextual Explorer’s generic imported cue priority with the structured memory summary; representative readings are labeled separately from vocabulary words.
 - Tracker: SA-126 closed; total 126; 1 Work in progress; 0 New; 125 Closed; 115 timeline gaps.
 - Validation: 159 automated tests pass; production build and standalone single-file build succeed; `git diff --check` is clean; the exhaustive content audit confirms all 599 learner-facing Han characters have structured memory records.
+
+### SA-127 — Core N5 kanji cards lack the requested five-part study structure · 2026-11-28
+
+- **Evidence:** The 84 core cards have readings, breakdowns, stories, and examples but no consistent five-section sequence or look-alike warning; several show fewer than three readable examples.
+- **Impact:** A learner can review each character using one repeatable layout and distinguish it from a commonly confused shape.
+- **Resolution:** All 84 core kanji cards now show readings and meaning, named visual parts, a story that points to those exact parts, one look-alike distinction, and three words with kana readings and meanings. Example words have individual listen buttons.
+- **Verification:** 160 automated tests pass, including coverage of all 84 cards; production and offline standalone builds succeed; `git diff --check` is clean; mobile layout reviewed at 390 × 844.
+- **Tracker:** SA-127 closed; total 127; 1 Work in progress; 0 New; 126 Closed; 116 timeline gaps.
+
+### Release v1.7.7 — Five-part core N5 kanji cards · 2026-11-28
+
+- Added the exact five-part study structure to all 84 core cards, including per-word audio, and kept the supplemental study-text memory catalog intact.
+- Tracker: SA-127 closed; total 127; 1 Work in progress; 0 New; 126 Closed; 116 timeline gaps.
+- Validation: 160 automated tests pass; production and offline single-file builds succeed; all 84 cards pass the structured-content audit; mobile preview reviewed at 390 × 844; `git diff --check` is clean.

@@ -282,7 +282,7 @@ test('Kanji Explorer displays the bundled stroke-order guide for the selected ch
   assert.match(kanjiPage, /CHARACTER \$\{kanjiIndex\+1\} OF \$\{KANJI\.length\}/);
   assert.match(kanjiPage, /Finish & mark studied/);
   assert.match(kanjiPage, /Next kanji/);
-  assert.match(kanjiPage, /Hear example/);
+  assert.match(appSource, /aria-label="Hear \$\{esc\(item\.word\)\}"/);
   assert.match(kanjiPage, /<div class="kanji-stroke-details" aria-label="Animated stroke order"/);
   assert.match(appSource, /requestAnimationFrame\(\(\)=>playKanjiStrokeOrder\(kanjiContextCard\?\.ch\|\|KANJI\[kanjiIndex\]\.ch\)\)/);
   assert.match(kanjiPage, /kanjiIndex===0\?'disabled'/);

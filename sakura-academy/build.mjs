@@ -12,6 +12,7 @@ const n5Data = await readFile(join(projectDir, 'src/n5-data.js'), 'utf8');
 const n5Stories = await readFile(join(projectDir, 'src/n5-stories.js'), 'utf8');
 const kanjiSupplemental = await readFile(join(projectDir, 'src/data/kanji-explorer-supplemental.js'), 'utf8');
 const kanjiMemory = await readFile(join(projectDir, 'src/data/kanji-memory.js'), 'utf8');
+const n5KanjiCards = await readFile(join(projectDir, 'src/data/n5-kanji-cards.js'), 'utf8');
 const kanjiListening = await readFile(join(projectDir, 'src/data/kanji-listening.js'), 'utf8');
 const dataSources = await readFile(join(projectDir, 'DATA_SOURCES.md'), 'utf8');
 const n5Course = await readFile(join(projectDir, 'src/n5-course.js'), 'utf8');
@@ -38,10 +39,10 @@ await writeFile(join(outputProject, 'DATA_SOURCES.md'), dataSources);
 await writeFile(join(outputDir, 'DATA_SOURCES.md'), dataSources);
 
 const standalone = html
-  .replace('<link rel="stylesheet" href="styles.css?v=1.7.6">', `<style>\n${css}\n</style>`)
+  .replace('<link rel="stylesheet" href="styles.css?v=1.7.7">', `<style>\n${css}\n</style>`)
   .replace(
-    `<script src="src/n5-data.js"></script><script src="src/n5-stories.js"></script><script src="src/n5-course.js?v=1.7.6"></script><script src="src/data/kanji-explorer-supplemental.js?v=1.7.6"></script><script src="src/data/kanji-memory.js?v=1.7.6"></script><script src="src/data/kanji-listening.js?v=1.7.6"></script><script src="src/content.js?v=1.7.6"></script><script src="src/n5-app.js?v=1.7.6"></script><script src="src/content-validation.js?v=1.7.6"></script><script src="src/lesson-progress.js?v=1.7.6"></script><script src="src/audio-lessons.js?v=1.7.6"></script><script src="src/reward-guard.js"></script><script src="src/speech-audio-manifest.js?v=1.7.6"></script><script src="src/app.js?v=1.7.6"></script>`,
-    `<script>\n${n5Data}\n${n5Stories}\n${n5Course}\n${kanjiSupplemental}\n${kanjiMemory}\n${kanjiListening}\n${content}\n${n5App}\n${validation}\n${lessonProgress}\n${audioLessons}\n${rewardGuard}\n${inlineAudioScript}\n${app}\n</script>`,
+    `<script src="src/n5-data.js"></script><script src="src/n5-stories.js"></script><script src="src/n5-course.js?v=1.7.7"></script><script src="src/data/kanji-explorer-supplemental.js?v=1.7.7"></script><script src="src/data/kanji-memory.js?v=1.7.7"></script><script src="src/data/n5-kanji-cards.js?v=1.7.7"></script><script src="src/data/kanji-listening.js?v=1.7.7"></script><script src="src/content.js?v=1.7.7"></script><script src="src/n5-app.js?v=1.7.7"></script><script src="src/content-validation.js?v=1.7.7"></script><script src="src/lesson-progress.js?v=1.7.7"></script><script src="src/audio-lessons.js?v=1.7.7"></script><script src="src/reward-guard.js"></script><script src="src/speech-audio-manifest.js?v=1.7.7"></script><script src="src/app.js?v=1.7.7"></script>`,
+    `<script>\n${n5Data}\n${n5Stories}\n${n5Course}\n${kanjiSupplemental}\n${kanjiMemory}\n${n5KanjiCards}\n${kanjiListening}\n${content}\n${n5App}\n${validation}\n${lessonProgress}\n${audioLessons}\n${rewardGuard}\n${inlineAudioScript}\n${app}\n</script>`,
   );
 await writeFile(join(outputDir, 'genki-interactive-academy.html'), standalone);
 await writeFile(resolve(projectDir, '..', 'genki-interactive-academy.html'), standalone);
