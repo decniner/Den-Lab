@@ -32,6 +32,11 @@ test('Kanji Explorer supports horizontal swipes and a long-press reading cue',()
   assert.match(styles,/kanji-study-card\.kanji-swipe-exit-prev/);
   assert.match(styles,/kanji-study-card\.kanji-swipe-enter-next/);
   assert.match(styles,/kanji-study-card\.kanji-swipe-enter-prev/);
+  assert.match(app,/--kanji-drag-x/);
+  assert.match(app,/is-dragging/);
+  assert.match(app,/is-returning/);
+  assert.match(styles,/kanji-study-card\.is-dragging\{transition:none/);
+  assert.match(styles,/kanji-study-card\.is-returning\{transition:transform/);
   assert.doesNotMatch(styles,/kanji-swipe-(?:exit|enter)-(?:next|prev)\{[^}]*scale\(/);
   assert.match(app,/touchend',endKanjiTouch/);
   assert.match(app,/touchcancel/);

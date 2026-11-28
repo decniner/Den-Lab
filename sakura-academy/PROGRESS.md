@@ -1828,3 +1828,19 @@ Every published app change must bump the small footer version and its update dat
 - Replaced the swipe dismissal effect with a matched directional slide between kanji cards.
 - Tracker: SA-130 closed; total 130; 1 Work in progress; 0 New; 129 Closed; 119 timeline gaps.
 - Validation: 161 automated tests pass; production and offline standalone builds succeed; `git diff --check` is clean.
+
+
+### SA-130 reopened — Swipe still feels detached from touch · 2026-11-28
+
+- **Status:** Closed (100%)
+- **Evidence:** The card now tracks horizontal finger movement with a restrained tilt, incomplete swipes spring smoothly back, and completed swipes settle offscreen in the chosen direction before the next card enters. Vertical drags remain page scrolling; reduced-motion disables the settle transition. All automated tests and production/standalone builds pass.
+- **Impact:** Resolved: Kanji navigation responds to the learner’s gesture as it happens and settles naturally, rather than playing a detached preset animation.
+- **Resolution:** Applied a restrained transform directly from horizontal touch movement, added a spring return below the swipe threshold, and used a directional release transition for completed swipes.
+- **Tracker:** SA-130 closed; total 130; 1 Work in progress; 0 New; 129 Closed; 119 timeline gaps.
+
+### Release v1.8.1 — Finger-tracked Kanji swipe · 2026-11-28
+
+- Replaced the fixed card slide with direct finger tracking, a natural spring back for short drags, and a directional completion transition.
+- Vertical scrolling and reduced-motion preferences remain supported.
+- Tracker: SA-130 closed; total 130; 1 Work in progress; 0 New; 129 Closed; 119 timeline gaps.
+- Validation: 161 automated tests pass; production and offline standalone builds succeed; `git diff --check` is clean.
