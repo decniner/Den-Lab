@@ -4,14 +4,15 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 129
+- Total tracked: 130
 - Work in progress: 1
 - New: 0
-- Closed: 128
-- Timeline gaps: 118
+- Closed: 129
+- Timeline gaps: 119
 
 ## Issue register
 
+| SA-130 — Kanji swipe transition feels cheap and visually dismissive | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-129 — Kanji hold cue hides core readings and gestures lack visual feedback | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-128 — Kanji Explorer cards lack swipe navigation and a quick reading cue | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-127 — Core N5 kanji cards lack the requested five-part study structure | Codex | Closed | 100% | 2026-11-28 | Not recorded |
@@ -1811,4 +1812,19 @@ Every published app change must bump the small footer version and its update dat
 - Fixed the long-press cue to display the card’s actual Kun’yomi, On’yomi, and meaning under explicit labels.
 - Added restrained hold-progress and reveal animations plus directional swipe feedback; reduced-motion preferences remain respected.
 - Tracker: SA-129 closed; total 129; 1 Work in progress; 0 New; 128 Closed; 118 timeline gaps.
+- Validation: 161 automated tests pass; production and offline standalone builds succeed; `git diff --check` is clean.
+
+
+### SA-130 — Kanji swipe transition feels cheap and visually dismissive · 2026-11-28
+
+- **Status:** Closed (100%)
+- **Evidence:** Replaced the scale/opacity exit with a short paired horizontal slide: the current card exits in the swipe direction and the next card enters from the opposite edge. Automated checks cover all four transitions and ensure they do not scale the card. Reduced-motion mode disables them. All 161 tests pass and the standalone build succeeds.
+- **Impact:** Resolved: moving through Kanji Explorer feels like a continuous study deck, without a shrinking or fading effect.
+- **Resolution:** Matched short outgoing and incoming translations with smooth easing, removed scale and opacity changes, and preserved reduced-motion support.
+- **Tracker:** SA-130 closed; total 130; 1 Work in progress; 0 New; 129 Closed; 119 timeline gaps.
+
+### Release v1.8.0 — Kanji swipe transition refinement · 2026-11-28
+
+- Replaced the swipe dismissal effect with a matched directional slide between kanji cards.
+- Tracker: SA-130 closed; total 130; 1 Work in progress; 0 New; 129 Closed; 119 timeline gaps.
 - Validation: 161 automated tests pass; production and offline standalone builds succeed; `git diff --check` is clean.
