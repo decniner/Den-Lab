@@ -1042,13 +1042,13 @@
     "saucony-jp:8836868800664:47220348911768": {
       "sale_price": "9240",
       "reference_price": "30800",
-      "sent_at": "2026-11-21T11:59:17+09:00",
+      "sent_at": "2026-11-28T12:42:27+09:00",
       "url": "https://saucony.jp/products/aura-x-n02?variant=47220348911768"
     },
     "saucony-jp:8756884504728:49332600668312": {
       "sale_price": "8250",
       "reference_price": "27500",
-      "sent_at": "2026-11-21T11:59:17+09:00",
+      "sent_at": "2026-11-28T12:42:27+09:00",
       "url": "https://saucony.jp/products/mens-hurricane-25-n02?variant=49332600668312"
     },
     "saucony-jp:8755760005272:46733488685208": {
@@ -1308,12 +1308,24 @@
       "reference_price": "23100",
       "sent_at": "2026-11-27T12:56:31+09:00",
       "url": "https://saucony.jp/products/progrid-guide-7-n02?variant=46755772891288"
+    },
+    "saucony-jp:8596863680664:45827023667352": {
+      "sale_price": "6600",
+      "reference_price": "22000",
+      "sent_at": "2026-11-28T12:42:27+09:00",
+      "url": "https://saucony.jp/products/mens-ride-18-n02?variant=45827023667352"
+    },
+    "saucony-jp:8596862894232:45827019669656": {
+      "sale_price": "8580",
+      "reference_price": "21450",
+      "sent_at": "2026-11-28T12:42:27+09:00",
+      "url": "https://saucony.jp/products/mens-guide-18-n02?variant=45827019669656"
     }
   },
   "last_digest": {
-    "date": "2026-11-27",
-    "coverage_key": "398cff10ad43b3ffdf4ed3b87a0439231af2ec21bda1d48d5de5bb7ad98fe596",
-    "completed_at": "2026-11-27T12:56:31+09:00",
-    "digest_hash": "3237a34870dbb0cbd276dc9f75551dc0c62fc5643799ec31c18fd60bc25de111"
+    "date": "2026-11-28",
+    "coverage_key": "6a489551a52422ecb3697909fc6633fbe5c2d0d9b4bd2e2d776867c1c59ddce5",
+    "completed_at": "2026-11-28T12:42:27+09:00",
+    "digest_hash": "88e306e74edf7fe83d703edfc136a66faec90ff1015f744e95c00ac010bc71fd"
   }
 }
