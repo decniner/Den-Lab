@@ -175,3 +175,22 @@ test('supplemental sibling kanji have beginner-readable visual memories and exam
     assert.ok(examples.length && examples.every(word => word.word && word.reading && word.meaning), `examples have readings and meanings for ${character}`);
   }
 });
+
+test('every learner-facing N5 Han character has structured memory and a readable example', () => {
+  const sources = ['src/n5-data.js', 'src/n5-stories.js', 'src/n5-course.js', 'src/data/kanji-explorer-supplemental.js', 'src/data/kanji-memory.js'];
+  const context = vm.createContext({});
+  for (const file of sources) vm.runInContext(fs.readFileSync(path.join(project, file), 'utf8'), context);
+  vm.runInContext('globalThis.sources=[N5_VOCAB,N5_GRAMMAR,N5_READINGS,N5_STORIES,N5_COURSE_CONFIG];globalThis.memories=SAKURA_KANJI_MEMORY;globalThis.vocab=N5_VOCAB', context);
+  const characters = new Set(context.sources.flatMap(source => [...JSON.stringify(source)].filter(char => /\p{Script=Han}/u.test(char))));
+  assert.equal(characters.size, 599, 'the tested set includes vocabulary examples, grammar, readings, stories, and course text');
+  for (const character of characters) {
+    const memory = context.memories[character];
+    assert.ok(memory, `visual memory exists for ${character}`);
+    assert.ok(memory.summary?.length >= 45, `visual summary is specific for ${character}`);
+    assert.ok(memory.parts?.length >= 2 && memory.parts.every(part => part.glyph && part.label && part.description?.length >= 20), `beginner-readable visual parts exist for ${character}`);
+    assert.ok(memory.story?.length >= 90, `a detailed mnemonic story exists for ${character}`);
+    const examples = memory.words || context.vocab.filter(item => item.word.includes(character)).map(item => ({ word: item.word, reading: item.reading, meaning: item.meanings?.[0] }));
+    assert.ok(examples.length && examples.every(item => item.word && item.reading && item.meaning), `an example with reading and meaning exists for ${character}`);
+    if (memory.wordLabel === 'Representative reading') assert.match(examples[0].reading, /[ぁ-ヿ]/u, `representative reading is written in Japanese for ${character}`);
+  }
+});

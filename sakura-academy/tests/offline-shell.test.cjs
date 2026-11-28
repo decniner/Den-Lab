@@ -53,7 +53,7 @@ test('offline shell precaches the full app and tracker assets', async () => {
   let installPromise;
   worker.listeners.install({ waitUntil(promise) { installPromise = promise; } });
   await installPromise;
-  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.7.5', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/n5-stories.js', './src/n5-course.js?v=1.7.5', './src/data/kanji-listening.js?v=1.7.5', './src/data/kanji-memory.js?v=1.7.5', './src/app.js?v=1.7.5', './src/content.js?v=1.7.5', './src/n5-app.js?v=1.7.5', './src/content-validation.js?v=1.7.5', './src/lesson-progress.js?v=1.7.5', './src/audio-lessons.js?v=1.7.5', './src/reward-guard.js']) {
+  for (const file of ['./', './index.html', './favicon.svg', './styles.css?v=1.7.6', './issue-tracker.html', './PROGRESS.md', './DATA_SOURCES.md', './src/n5-data.js', './src/n5-stories.js', './src/n5-course.js?v=1.7.6', './src/data/kanji-listening.js?v=1.7.6', './src/data/kanji-memory.js?v=1.7.6', './src/app.js?v=1.7.6', './src/content.js?v=1.7.6', './src/n5-app.js?v=1.7.6', './src/content-validation.js?v=1.7.6', './src/lesson-progress.js?v=1.7.6', './src/audio-lessons.js?v=1.7.6', './src/reward-guard.js']) {
     assert.ok(worker.added.includes(file), `precache includes ${file}`);
   }
   const audio = JSON.parse(fs.readFileSync(path.join(project, 'src/speech-audio-manifest.json'), 'utf8'));
@@ -85,9 +85,9 @@ test('app registers the worker relative to its own project route', () => {
   assert.match(html, /navigator\.serviceWorker\.register\('\.\/sw\.js'\)/);
   assert.match(html, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/);
   assert.match(html, /sakura-academy/);
-  assert.match(html, /href="styles\.css\?v=1\.7\.5"/);
-  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.7\.5"><\/script>/);
-  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.7.5'));
+  assert.match(html, /href="styles\.css\?v=1\.7\.6"/);
+  assert.match(html, /src="src\/audio-lessons\.js\?v=1\.7\.6"><\/script>/);
+  assert.ok(workerSource.includes('./src/audio-lessons.js?v=1.7.6'));
 });
 
 test('static build copies the favicon into the published Academy project', () => {
@@ -135,8 +135,7 @@ test('issue tracker script parses and renders all registered issues', () => {
   vm.runInNewContext(script, context);
   assert.equal(nodes['#registerTitle'].textContent, 'Active issues');
   assert.match(nodes['#rows'].innerHTML, /SA-114[\s\S]*Visual-memory tooltip is clipped near the left viewport edge[\s\S]*class="pill wip">Work in progress/);
-  assert.match(nodes['#rows'].innerHTML, /SA-126[\s\S]*N5 study-text kanji outside the core 84 lack detailed visual memories[\s\S]*class="pill wip">Work in progress/);
-  assert.equal(nodes['#scope-active'].textContent, 'Active (2)');
+  assert.equal(nodes['#scope-active'].textContent, 'Active (1)');
   assert.equal(nodes['#scope-active']['aria-pressed'], 'true');
   vm.runInContext("trackerScope='archive';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'Issue archive');
@@ -147,10 +146,10 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.match(nodes['#rows'].innerHTML, /SA-080[\s\S]*sections do not consistently explain[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-079[\s\S]*N5 reading lacks story mode with synchronized kanji and kana[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-078[\s\S]*class="pill closed">Closed/);
-  assert.equal(nodes['#scope-archive'].textContent, 'Archive (124)');
+  assert.equal(nodes['#scope-archive'].textContent, 'Archive (125)');
   assert.equal(nodes['#scope-archive']['aria-pressed'], 'true');
   assert.match(nodes['#rows'].innerHTML, /SA-094[\s\S]*N5 example sentence does not visibly follow its spoken audio[\s\S]*class="pill closed">Closed/);
-  for (const id of ['SA-097', 'SA-098', 'SA-099', 'SA-100', 'SA-101', 'SA-102', 'SA-103', 'SA-104', 'SA-105', 'SA-106', 'SA-107', 'SA-108', 'SA-109', 'SA-110', 'SA-111', 'SA-112', 'SA-113', 'SA-115', 'SA-116', 'SA-117', 'SA-118', 'SA-119', 'SA-120', 'SA-121', 'SA-122', 'SA-123', 'SA-124', 'SA-125']) assert.match(nodes['#rows'].innerHTML, new RegExp(`${id}[\\s\\S]*class="pill closed">Closed`));
+  for (const id of ['SA-097', 'SA-098', 'SA-099', 'SA-100', 'SA-101', 'SA-102', 'SA-103', 'SA-104', 'SA-105', 'SA-106', 'SA-107', 'SA-108', 'SA-109', 'SA-110', 'SA-111', 'SA-112', 'SA-113', 'SA-115', 'SA-116', 'SA-117', 'SA-118', 'SA-119', 'SA-120', 'SA-121', 'SA-122', 'SA-123', 'SA-124', 'SA-125', 'SA-126']) assert.match(nodes['#rows'].innerHTML, new RegExp(`${id}[\\s\\S]*class="pill closed">Closed`));
   vm.runInContext("trackerScope='all';render()", context);
   assert.equal(nodes['#registerTitle'].textContent, 'All issues');
   assert.match(nodes['#rows'].innerHTML, /SA-114[\s\S]*class="pill wip">Work in progress/);
@@ -165,10 +164,11 @@ test('issue tracker script parses and renders all registered issues', () => {
   assert.match(nodes['#rows'].innerHTML, /SA-123[\s\S]*Kanji Explorer labels prose and isolated words as a sentence[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-124[\s\S]*N5 kanji 円 has no example word[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-125[\s\S]*Supplemental family kanji use generic visual-memory cues[\s\S]*class="pill closed">Closed/);
+  assert.match(nodes['#rows'].innerHTML, /SA-126[\s\S]*N5 study-text kanji outside the core 84 lack detailed visual memories[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#summary'].innerHTML, /Total tracked[\s\S]*?<div class="num">126<\/div>/);
   assert.match(nodes['#summary'].innerHTML, /New[\s\S]*?<div class="num">0<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">2<\/div>/);
-  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">124<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Work in progress[\s\S]*?<div class="num">1<\/div>/);
+  assert.match(nodes['#summary'].innerHTML, /Closed[\s\S]*?<div class="num">125<\/div>/);
   for (const id of ['SA-094', 'SA-095', 'SA-096', 'SA-105', 'SA-106', 'SA-107', 'SA-108', 'SA-109', 'SA-110', 'SA-111', 'SA-112', 'SA-113']) assert.match(nodes['#rows'].innerHTML, new RegExp(`${id}[\\s\\S]*class="pill closed">Closed`));
   assert.match(nodes['#rows'].innerHTML, /SA-093[\s\S]*N5 vocabulary study requires excessive mobile scrolling[\s\S]*class="pill closed">Closed/);
   assert.match(nodes['#rows'].innerHTML, /SA-092[\s\S]*Kanji Explorer hides readings for compound examples[\s\S]*class="pill closed">Closed/);

@@ -5,16 +5,16 @@ Every published app change must bump the small footer version and its update dat
 ## Summary
 
 - Total tracked: 126
-- Work in progress: 2
+- Work in progress: 1
 - New: 0
-- Closed: 124
+- Closed: 125
 - Timeline gaps: 115
 
 ## Issue register
 
 | Issue | Owner | Status | Progress | Discovered | Time to fix |
 |---|---|---|---:|---|---|
-| SA-126 — N5 study-text kanji outside the core 84 lack detailed visual memories | Codex | Work in progress | 0% | 2026-11-28 | Not recorded |
+| SA-126 — N5 study-text kanji outside the core 84 lack detailed visual memories | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-125 — Supplemental family kanji use generic visual-memory cues | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-124 — N5 kanji 円 has no example word with reading and meaning | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-123 — Kanji Explorer labels prose and isolated words as a sentence | Codex | Closed | 100% | 2026-11-28 | Not recorded |
@@ -1746,3 +1746,20 @@ Every published app change must bump the small footer version and its update dat
 - Bumped the visible app and service-worker version to v1.7.5.
 - Tracker: SA-125 closed; SA-126 in progress; total 126; 2 Work in progress; 0 New; 124 Closed; 115 timeline gaps.
 - Validation: all 157 automated tests pass; production build and `git diff --check` pass.
+
+
+### SA-126 — N5 study-text kanji outside the core 84 lack detailed visual memories · 2026-11-28
+
+- **Status:** Closed (100%)
+- **Evidence:** Coverage now includes all 599 Han characters in the full learner-facing N5 vocabulary entries and examples, grammar, readings, stories, and course text. Each entry has a visual summary, at least two named/described parts, a mnemonic story, and either matching vocabulary examples or a clearly labeled representative reading with meaning. Regression checks enumerate every source and fail on any missing record.
+- **Impact:** Resolved: N5 study text no longer opens a supplemental kanji card with the old generic one-line cue or an empty visual-memory section.
+- **Resolution:** Expanded the offline catalog at load time from kanji components, meanings, readings, and N5 vocabulary; added explicit beginner records for source characters missing from the supplemental kanji dictionary. Structured memories take priority over imported tips in linked previews.
+- **Verification:** All automated tests pass; production and standalone builds include all records; exact source scan finds no uncovered Han characters.
+- **Fix estimate:** Resolved in v1.7.6; duration not recorded.
+
+### Release v1.7.6 — Consistent visual memories across N5 content · 2026-11-28
+
+- Expanded the structured memory catalog to every Han character in the learner-facing N5 datasets: 599 source characters now have named visual parts, described shapes, a mnemonic story, and a reading/example with meaning.
+- Replaced the contextual Explorer’s generic imported cue priority with the structured memory summary; representative readings are labeled separately from vocabulary words.
+- Tracker: SA-126 closed; total 126; 1 Work in progress; 0 New; 125 Closed; 115 timeline gaps.
+- Validation: 159 automated tests pass; production build and standalone single-file build succeed; `git diff --check` is clean; the exhaustive content audit confirms all 599 learner-facing Han characters have structured memory records.
