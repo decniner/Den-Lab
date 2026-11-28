@@ -4,14 +4,15 @@ Every published app change must bump the small footer version and its update dat
 
 ## Summary
 
-- Total tracked: 128
+- Total tracked: 129
 - Work in progress: 1
 - New: 0
-- Closed: 127
-- Timeline gaps: 117
+- Closed: 128
+- Timeline gaps: 118
 
 ## Issue register
 
+| SA-129 — Kanji hold cue hides core readings and gestures lack visual feedback | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-128 — Kanji Explorer cards lack swipe navigation and a quick reading cue | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 | SA-127 — Core N5 kanji cards lack the requested five-part study structure | Codex | Closed | 100% | 2026-11-28 | Not recorded |
 
@@ -1795,3 +1796,19 @@ Every published app change must bump the small footer version and its update dat
 - Added left/right swipe navigation and press-and-hold core reading/meaning reveal in Kanji Explorer.
 - Tracker: SA-128 closed; total 128; 1 Work in progress; 0 New; 127 Closed; 117 timeline gaps.
 - Validation: 161 automated tests pass; offline standalone build succeeds; mobile gesture logic preserves vertical scrolling; `git diff --check` is clean.
+
+
+### SA-129 — Kanji hold cue hides core readings and gestures lack visual feedback · 2026-11-28
+
+- **Status:** Closed (100%)
+- **Evidence:** Regression coverage verifies the hold cue uses the study card’s actual Kun’yomi (`kun`) and On’yomi (`on`) fields, displays explicit reading and meaning labels, and animates the reveal. Touch CSS tests verify hold progress, directional swipe classes, and reduced-motion support. All 161 automated tests pass; production and offline standalone builds succeed.
+- **Impact:** Resolved: holding a kanji now reveals its actual Kun’yomi, On’yomi, and meaning, with clear premium feedback for hold and swipe gestures.
+- **Resolution:** Read the data card’s direct kun/on fields rather than a nonexistent nested readings object. Added a subtle hold pulse/ring, animated reading reveal, and brief directional card transition while honoring reduced-motion settings.
+- **Tracker:** SA-129 closed; total 129; 1 Work in progress; 0 New; 128 Closed; 118 timeline gaps.
+
+### Release v1.7.9 — Kanji reading reveal polish · 2026-11-28
+
+- Fixed the long-press cue to display the card’s actual Kun’yomi, On’yomi, and meaning under explicit labels.
+- Added restrained hold-progress and reveal animations plus directional swipe feedback; reduced-motion preferences remain respected.
+- Tracker: SA-129 closed; total 129; 1 Work in progress; 0 New; 128 Closed; 118 timeline gaps.
+- Validation: 161 automated tests pass; production and offline standalone builds succeed; `git diff --check` is clean.
